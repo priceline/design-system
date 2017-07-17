@@ -1,0 +1,30 @@
+{
+  "name": "pcln-ds",
+  "version": "1.0.0-0",
+  "description": "Priceline Design System",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "babel src -d dist",
+    "start": "start-storybook -p 8000 -c storybook",
+    "test": "jest"
+  },
+  "author": "Brent Jackson",
+  "contributors": [],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^20.0.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "styled-components": "^2.1.1"
+  },
+  "jest": {
+    "testRegex": "/test/.*"
+  }
+}
