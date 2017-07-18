@@ -6,6 +6,7 @@
   "scripts": {
     "prepublish": "babel src -d dist --ignore __tests__",
     "start": "start-storybook -p 8000 -c storybook",
+    "coverage": "jest --coverage",
     "test": "jest"
   },
   "author": "Brent Jackson",
@@ -24,5 +25,11 @@
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "styled-components": "^2.1.1"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ]
   }
 }
