@@ -7,16 +7,6 @@ Priceline Design System
 npm i pcln-ds
 ```
 
-```js
-import {
-  theme,
-  colors,
-  mediaQueries,
-  fontSizes,
-  space
-} from 'pcln-ds'
-```
-
 
 ## Motivation
 
@@ -43,5 +33,59 @@ We hope to accomplish these goals by:
 - Serving as the standard for Priceline.com's visual language
 - Providing easy-to-use and extensible components for anyone to consume
 
+
+## Theme
+
+The theme style constants should be used wherever font sizes, margin, padding, media queries, and colors are needed.
+
+```js
+import {
+  theme,
+} from 'pcln-ds'
+
+// or
+import {
+  colors,
+  mediaQueries,
+  fontSizes,
+  space
+} from 'pcln-ds'
+```
+
+### Colors
+
+```js
+import { colors } from 'pcln-ds'
+
+colors.blue // '#0a84c1'
+```
+
+
+### Font Sizes
+
+```js
+import { fontSizes } from 'pcln-ds'
+
+fontSizes[2] // 16
+```
+
+The theme includes a typographic scale as the `fontSizes` array.
+Use these values whenever declaring a font-size in CSS.
+
+### Spacing Scale
+
+The `space` array should be used whenever declaring margin or padding values.
+
+```js
+import { space } from 'pcln-ds'
+
+space[0] // 0
+space[1] // 4
+space[2] // 8
+space[3] // 16
+space[4] // 32
+space[5] // 64
+space[6] // 128
+```
 
 MIT License
