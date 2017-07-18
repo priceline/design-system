@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "babel src -d dist",
+    "prepublish": "babel src -d dist --ignore __tests__",
     "start": "start-storybook -p 8000 -c storybook",
     "test": "jest"
   },
@@ -19,12 +19,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "jest": "^20.0.4",
+    "jest-styled-components": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "styled-components": "^2.1.1"
-  },
-  "jest": {
-    "testRegex": "/test/.*"
   }
 }
