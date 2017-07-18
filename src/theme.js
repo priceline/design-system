@@ -19,6 +19,8 @@ export const space = [
   128
 ]
 
+export const font = `'Helvetica Neue', Helvetica, Arial, sans-serif`
+
 export const fontSizes = [
   12,
   14,
@@ -47,6 +49,7 @@ const theme = {
   breakpoints,
   mediaQueries,
   space,
+  font,
   fontSizes,
   fontWeights,
   regular,
