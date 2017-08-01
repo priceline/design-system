@@ -6,7 +6,9 @@ exports[`Text align prop sets text-align 1`] = `
 }
 
 <div
+  align="center"
   className="c0"
+  is={null}
 />
 `;
 
@@ -16,7 +18,55 @@ exports[`Text bold prop sets font-weight 1`] = `
 }
 
 <div
+  bold={true}
   className="c0"
+  is={null}
+  theme={
+    Object {
+      "bold": 700,
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#0a84c1",
+        "white": "#fff",
+      },
+      "font": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "fontWeights": Array [
+        400,
+        700,
+      ],
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+    }
+  }
 />
 `;
 
@@ -30,12 +80,15 @@ exports[`Text caps prop sets text-transform and letter-spacing 1`] = `
 }
 
 <div
+  caps={true}
   className="c0"
+  is={null}
 />
 `;
 
 exports[`Text renders 1`] = `
 <div
   className=""
+  is={null}
 />
 `;

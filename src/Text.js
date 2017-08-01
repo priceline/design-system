@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { fontSize, color } from 'styled-system'
+import tag from 'tag-hoc'
 
 export const align = props => props.align ? { textAlign: props.align } : null
 
@@ -13,7 +14,9 @@ export const caps = props => props.caps
 
 export const bold = props => props.bold ? { fontWeight: props.theme.bold } : null
 
-const Text = styled.div`
+const Div = tag()('div')
+
+const Text = styled(Div)`
   ${fontSize}
   ${color}
   ${align}
