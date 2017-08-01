@@ -31,5 +31,9 @@
       "lcov",
       "html"
     ]
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "styled-system": "^1.0.0-11"
   }
 }

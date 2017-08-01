@@ -19,7 +19,7 @@ export const space = [
   128
 ]
 
-export const font = `'Helvetica Neue', Helvetica, Arial, sans-serif`
+export const font = `'Helvetica Neue',Helvetica,Arial,sans-serif`
 
 export const fontSizes = [
   12,
