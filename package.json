@@ -31,5 +31,8 @@
       "lcov",
       "html"
     ]
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.4"
   }
 }

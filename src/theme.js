@@ -1,3 +1,5 @@
+import { tint } from './color'
+
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
 export const breakpoints = [
@@ -31,18 +33,45 @@ export const fontSizes = [
   48
 ]
 
-export const fontWeights = [
-  400,
-  700
-]
+export const regular = 400
+export const bold = 700
 
-export const regular = fontWeights[0]
-export const bold = fontWeights[1]
+// next color palette
+const black = '#000'
+const white = '#fff'
+const blue = '#007aff'
+const green = '#0a0'
+const red = '#c00'
+const orange = '#f90'
+const purple = '#7600bb'
+
+// tints
+const tints = [
+  0.2,
+  0.4,
+  0.6,
+  0.8
+]
+// const grays
+const blues = tint.map(tint(blue))
+const greens = tint.map(tint(greens))
+const reds = tint.map(tint(reds))
+const oranges = tint.map(tint(oranges))
+const purples = tint.map(tint(purples))
 
 export const colors = {
-  black: '#000',
-  white: '#fff',
-  blue: '#0a84c1'
+  black,
+  white,
+  blue,
+  green,
+  red,
+  orange,
+  purple,
+  blues,
+  greens,
+  reds,
+  oranges,
+  purples
 }
 
 const theme = {
@@ -51,7 +80,6 @@ const theme = {
   space,
   font,
   fontSizes,
-  fontWeights,
   regular,
   bold,
   colors,
