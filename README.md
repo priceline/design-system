@@ -1,10 +1,8 @@
 
-# pcln-ds
-
-Priceline Design System
+# Priceline Design System
 
 ```sh
-npm i pcln-ds
+npm i pcln-design-system
 ```
 
 
@@ -41,7 +39,7 @@ The theme style constants should be used wherever font sizes, margin, padding, m
 ```js
 import {
   theme,
-} from 'pcln-ds'
+} from 'pcln-design-system'
 
 // or
 import {
@@ -49,7 +47,7 @@ import {
   mediaQueries,
   fontSizes,
   space
-} from 'pcln-ds'
+} from 'pcln-design-system'
 ```
 
 ## ThemeProvider
@@ -58,7 +56,7 @@ To use the design system in a React app, wrap the root component with the ThemeP
 This will set typographic defaults and pass the theme as context, which allows styled-components to consume the theme.
 
 ```jsx
-import { ThemeProvider } from 'pcln-ds'
+import { ThemeProvider } from 'pcln-design-system'
 
 const App = props => (
   <ThemeProvider>
@@ -80,7 +78,7 @@ const Section = styled.section`
 ### Colors
 
 ```js
-import { colors } from 'pcln-ds'
+import { colors } from 'pcln-design-system'
 
 colors.blue // '#0a84c1'
 ```
@@ -89,7 +87,7 @@ colors.blue // '#0a84c1'
 ### Font Sizes
 
 ```js
-import { fontSizes } from 'pcln-ds'
+import { fontSizes } from 'pcln-design-system'
 
 fontSizes[2] // 16
 ```
@@ -102,7 +100,7 @@ Use these values whenever declaring a font-size in CSS.
 The `space` array should be used whenever declaring margin or padding values.
 
 ```js
-import { space } from 'pcln-ds'
+import { space } from 'pcln-design-system'
 
 space[0] // 0
 space[1] // 4
