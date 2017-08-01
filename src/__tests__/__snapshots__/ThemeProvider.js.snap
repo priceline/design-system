@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeProvider Base component includes a font 1`] = `
+.c0 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`ThemeProvider renders 1`] = `
+.c0 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -1,7 +1,7 @@
 import {
   theme,
   colors,
-} from '../src'
+} from '..'
 
 describe('theme', () => {
   test('exports an object', () => {

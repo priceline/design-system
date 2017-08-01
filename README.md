@@ -52,6 +52,31 @@ import {
 } from 'pcln-ds'
 ```
 
+## ThemeProvider
+
+To use the design system in a React app, wrap the root component with the ThemeProvider.
+This will set typographic defaults and pass the theme as context, which allows styled-components to consume the theme.
+
+```jsx
+import { ThemeProvider } from 'pcln-ds'
+
+const App = props => (
+  <ThemeProvider>
+    <h1>Hello</h1>
+  </ThemeProvider>
+)
+```
+
+```jsx
+// Usage in a styled component
+import styled from 'styled-components'
+
+const Section = styled.section`
+  background-color: ${props => props.theme.blue};
+`
+```
+
+
 ### Colors
 
 ```js
