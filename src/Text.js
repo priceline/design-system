@@ -22,6 +22,11 @@ const Text = styled.div`
 `
 
 Text.propTypes = {
+  fontSize: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.array
+  ]),
   align: PropTypes.oneOf([
     'left',
     'center',
