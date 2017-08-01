@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "babel src -d dist --ignore __tests__",
-    "start": "start-storybook -p 8000 -c storybook",
+    "start": "start-storybook -p 8000 -c .storybook",
     "coverage": "jest --coverage",
     "test": "jest"
   },
@@ -13,6 +13,7 @@
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
+    "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
