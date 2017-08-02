@@ -1,4 +1,5 @@
 import { tint } from './color'
+import legacyColors from './legacyColors'
 
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
@@ -46,6 +47,11 @@ const orange = '#f90'
 const purple = '#7600bb'
 
 // tints
+const flatten = (name, colors) => colors
+  .reduce((a, b, i) => Object.assign(a, {
+    [name + i]: b
+  }), {})
+
 const tints = [
   0.2,
   0.4,
@@ -53,13 +59,13 @@ const tints = [
   0.8
 ]
 // const grays
-const blues = tint.map(tint(blue))
-const greens = tint.map(tint(greens))
-const reds = tint.map(tint(reds))
-const oranges = tint.map(tint(oranges))
-const purples = tint.map(tint(purples))
+const blues = tints.map(tint(blue))
+const greens = tints.map(tint(green))
+const reds = tints.map(tint(red))
+const oranges = tints.map(tint(orange))
+const purples = tints.map(tint(purple))
 
-export const colors = {
+export const colors = Object.assign({}, {
   black,
   white,
   blue,
@@ -72,7 +78,13 @@ export const colors = {
   reds,
   oranges,
   purples
-}
+},
+  flatten('blue', blues),
+  flatten('green', greens),
+  flatten('red', reds),
+  flatten('orange', oranges),
+  flatten('purple', purples),
+)
 
 const theme = {
   breakpoints,
@@ -83,6 +95,10 @@ const theme = {
   regular,
   bold,
   colors,
+
+  legacyColors
 }
+
+export { default as legacyColors } from './legacyColors'
 
 export default theme

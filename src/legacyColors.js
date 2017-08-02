@@ -15,20 +15,8 @@ const grays = [
   '#f2f2f2'
 ]
 
-export const colors = {
-  black,
-  white,
-  blue,
-  green,
-  grays,
-  orange,
-  red,
-}
-
-export default colors
-
-/* reference from SITE/design-system
-const color = {
+/* reference from SITE/design-system */
+const dsColors = {
   contrastBlue: '#085397',   // dark blue (headers)
   pricelineBlue: '#0a84c1',   // priceline blue (links & background)
   secondaryBlue: '#60afd7',   // mid blue
@@ -52,8 +40,8 @@ const color = {
   black15: '#d9d9d9',   // used for: input and select borders
   black5: '#f2f2f2',   // light gray (gray background / default hr)
 
-  white: '#fff',
-  black: '#000',
+  // white: '#fff',
+  // black: '#000',
   fadedWhite: '#9dddff', //used for: white button hovers
 
   primaryRed: '#b01408',
@@ -68,4 +56,16 @@ const color = {
   errorBg: '#fedfe1',                  //error background
   errorRed: '#e21408'
 }
-*/
+
+export const colors = Object.assign({}, {
+  black,
+  white,
+  blue,
+  green,
+  grays,
+  orange,
+  red,
+}, dsColors)
+
+export default colors
+
