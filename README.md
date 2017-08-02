@@ -3,7 +3,7 @@
 
 [![Build Status][travis-badge]][travis]
 
-[travis-badge]: https://travis-ci.org/pricelinelabs/design-system.svg?branch=master
+[travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 
 ```sh
@@ -17,7 +17,7 @@ In order to create a consistently great experience for our users,
 the design system is meant to be the single source of truth for user interface standards
 for both designers and developers.
 
-Build off of the work of previous efforts, this project intends
+Built off of the work of previous efforts, this project intends
 to consolidate those ideas into a living, well-documented, and growing system.
 
 
