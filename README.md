@@ -3,6 +3,11 @@
 
 Priceline Design System
 
+[![Build Status][travis-badge]][travis]
+
+[travis-badge]: https://travis-ci.org/pricelinelabs/design-system.svg?branch=master
+[travis]: https://travis-ci.org/pricelinelabs/design-system
+
 ```sh
 npm i pcln-ds
 ```
