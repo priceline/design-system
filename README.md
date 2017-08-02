@@ -99,9 +99,6 @@ Use the `<Text />` component to control font size, weight, alignment, and color.
 
 // Blue text from the color palette
 <Text color='blue' />
-
-// With a <p> HTML tag
-<Text is='p' />
 ```
 
 Prop | Type | Description
@@ -111,7 +108,14 @@ align | string | Sets the `text-align` property
 bold | boolean | Sets `font-weight: props.theme.bold`
 caps | boolean | Sets styles for all-caps type treatments
 color | string | Sets color based on the theme's color palette
-is | string or element | Changes the underlying HTML element
+
+By default, the `<Text />` component renders a `<div>` element.
+To use a `<span>` or `<p>` element, use the following:
+
+```jsx
+<Text.span>This is a span element</Text.span>
+<Text.p>This is a p element</Text.p>
+```
 
 
 ### Colors
