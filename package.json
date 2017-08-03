@@ -1,17 +1,21 @@
 {
-  "name": "pcln-ds",
+  "name": "pcln-design-system",
   "version": "1.0.0-0",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "babel src -d dist",
-    "start": "start-storybook -p 8000 -c storybook",
+    "prepublish": "babel src -d dist --ignore __tests__",
+    "start": "start-storybook -p 8000 -c .storybook",
+    "deploy": "storybook-to-ghpages",
+    "coverage": "jest --coverage",
     "test": "jest"
   },
   "author": "Brent Jackson",
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
+    "@storybook/react": "^3.2.3",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
@@ -19,12 +23,21 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "jest": "^20.0.4",
+    "jest-styled-components": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "styled-components": "^2.1.1"
   },
   "jest": {
-    "testRegex": "/test/.*"
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ]
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.4",
+    "prop-types": "^15.5.10",
+    "styled-system": "^1.0.0-11"
   }
 }
