@@ -1,13 +1,17 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 import { Text } from '../src'
 
 storiesOf('Text', module)
-  .add('default', () => (
+  .add('Typography component', withInfo({
+    inline: true,
+    text: 'A low-level component for setting font-size, typographic styles, margin, and color'
+  })(() => (
     <Text m={3}>
       Hello
     </Text>
-  ))
+  )))
   .add('fontSize', () => (
     <div>
       <Text fontSize={6}>Hello 6</Text>

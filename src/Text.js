@@ -22,6 +22,8 @@ const Text = styled.div`
   ${bold}
 `
 
+Text.displayName = 'Text'
+
 const numberStringOrArray = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.string,

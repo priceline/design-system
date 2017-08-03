@@ -8,6 +8,8 @@ const Box = styled.div`
   ${color}
 `
 
+Box.displayName = 'Box'
+
 const numberStringOrArray = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.string,
