@@ -145,6 +145,20 @@ pl | number, string, or array | Sets padding-left
 px | number, string, or array | Sets padding-left and padding-right
 py | number, string, or array | Sets padding-top and padding-bottom
 
+#### Responsive Widths
+
+The `width` prop accepts an array value to set different widths at different breakpoints with a mobile-first approach.
+
+```jsx
+<Box
+  width={[
+    1,    // Sets width 100% at the smallest breakpoint
+    1/2,  // Sets width 50% at the next breakpoint
+    1/4,  // Sets width 25% at the next breakpoint
+  ]}
+/>
+```
+
 
 ## Theme
 
