@@ -51,4 +51,3 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('margin-top', theme.space[2] + 'px')
   })
 })
-

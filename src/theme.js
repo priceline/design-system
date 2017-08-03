@@ -87,7 +87,7 @@ export const colors = Object.assign({}, {
   flatten('green', greens),
   flatten('red', reds),
   flatten('orange', oranges),
-  flatten('purple', purples),
+  flatten('purple', purples)
 )
 
 const theme = {
@@ -98,7 +98,7 @@ const theme = {
   fontSizes,
   regular,
   bold,
-  colors,
+  colors
 }
 
 export default theme
