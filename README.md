@@ -1,10 +1,13 @@
 
-# pcln-ds
+# Priceline Design System
 
-Priceline Design System
+[![Build Status][travis-badge]][travis]
+
+[travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
+[travis]: https://travis-ci.org/pricelinelabs/design-system
 
 ```sh
-npm i pcln-ds
+npm i pcln-design-system
 ```
 
 
@@ -14,7 +17,7 @@ In order to create a consistently great experience for our users,
 the design system is meant to be the single source of truth for user interface standards
 for both designers and developers.
 
-Build off of the work of previous efforts, this project intends
+Built off of the work of previous efforts, this project intends
 to consolidate those ideas into a living, well-documented, and growing system.
 
 
@@ -40,7 +43,7 @@ The theme style constants should be used wherever font sizes, margin, padding, m
 ```js
 import {
   theme,
-} from 'pcln-ds'
+} from 'pcln-design-system'
 
 // or
 import {
@@ -48,7 +51,7 @@ import {
   mediaQueries,
   fontSizes,
   space
-} from 'pcln-ds'
+} from 'pcln-design-system'
 ```
 
 ## ThemeProvider
@@ -57,7 +60,7 @@ To use the design system in a React app, wrap the root component with the ThemeP
 This will set typographic defaults and pass the theme as context, which allows styled-components to consume the theme.
 
 ```jsx
-import { ThemeProvider } from 'pcln-ds'
+import { ThemeProvider } from 'pcln-design-system'
 
 const App = props => (
   <ThemeProvider>
@@ -99,9 +102,6 @@ Use the `<Text />` component to control font size, weight, alignment, and color.
 
 // Blue text from the color palette
 <Text color='blue' />
-
-// With a <p> HTML tag
-<Text is='p' />
 ```
 
 Prop | Type | Description
@@ -111,13 +111,20 @@ align | string | Sets the `text-align` property
 bold | boolean | Sets `font-weight: props.theme.bold`
 caps | boolean | Sets styles for all-caps type treatments
 color | string | Sets color based on the theme's color palette
-is | string or element | Changes the underlying HTML element
+
+By default, the `<Text />` component renders a `<div>` element.
+To use a `<span>` or `<p>` element, use the following:
+
+```jsx
+<Text.span>This is a span element</Text.span>
+<Text.p>This is a p element</Text.p>
+```
 
 
 ### Colors
 
 ```js
-import { colors } from 'pcln-ds'
+import { colors } from 'pcln-design-system'
 
 colors.blue // '#0a84c1'
 ```
@@ -126,7 +133,7 @@ colors.blue // '#0a84c1'
 ### Font Sizes
 
 ```js
-import { fontSizes } from 'pcln-ds'
+import { fontSizes } from 'pcln-design-system'
 
 fontSizes[2] // 16
 ```
@@ -139,7 +146,7 @@ Use these values whenever declaring a font-size in CSS.
 The `space` array should be used whenever declaring margin or padding values.
 
 ```js
-import { space } from 'pcln-ds'
+import { space } from 'pcln-design-system'
 
 space[0] // 0
 space[1] // 4

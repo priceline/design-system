@@ -1,5 +1,5 @@
 {
-  "name": "pcln-ds",
+  "name": "pcln-design-system",
   "version": "1.0.0-0",
   "description": "Priceline Design System",
   "main": "dist/index.js",
@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "styled-system": "^1.0.0-11",
-    "tag-hoc": "^1.0.0-0"
+    "styled-system": "^1.0.0-11"
   }
 }
