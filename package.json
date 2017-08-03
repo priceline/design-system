@@ -7,6 +7,7 @@
     "prepublish": "babel src -d dist --ignore __tests__",
     "start": "start-storybook -p 8000 -c .storybook",
     "deploy": "storybook-to-ghpages",
+    "storybook": "build-storybook -c .storybook -o .site",
     "coverage": "jest --coverage",
     "codecov": "jest && codecov",
     "standard": "standard",
