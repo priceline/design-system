@@ -3,7 +3,7 @@
 
 [![Build Status][travis-badge]][travis]
 
-[travis-badge]: https://travis-ci.org/pricelinelabs/design-system.svg?branch=master
+[travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 
 ```sh
@@ -17,7 +17,7 @@ In order to create a consistently great experience for our users,
 the design system is meant to be the single source of truth for user interface standards
 for both designers and developers.
 
-Build off of the work of previous efforts, this project intends
+Built off of the work of previous efforts, this project intends
 to consolidate those ideas into a living, well-documented, and growing system.
 
 
@@ -35,7 +35,6 @@ We hope to accomplish these goals by:
 - Reducing the amount of code duplication in our apps
 - Serving as the standard for Priceline.com's visual language
 - Providing easy-to-use and extensible components for anyone to consume
-
 
 ## Theme
 
@@ -77,6 +76,48 @@ import styled from 'styled-components'
 const Section = styled.section`
   background-color: ${props => props.theme.blue};
 `
+```
+
+## Primitive UI Components
+
+The preferred way of using the design system in a React application is with UI primitives.
+With effective use of the UI primitives, you can avoid writing custom CSS in your application altogether.
+
+### `<Text />`
+
+Use the `<Text />` component to control font size, weight, alignment, and color.
+
+```jsx
+// Font size 4 on the typographic scale
+<Text fontSize={4} />
+
+// Center aligned
+<Text align='center' />
+
+// Bold weight
+<Text bold />
+
+// All-caps
+<Text caps />
+
+// Blue text from the color palette
+<Text color='blue' />
+```
+
+Prop | Type | Description
+---|---|---
+fontSize | number or string | Sets font size based on the typographic scale
+align | string | Sets the `text-align` property
+bold | boolean | Sets `font-weight: props.theme.bold`
+caps | boolean | Sets styles for all-caps type treatments
+color | string | Sets color based on the theme's color palette
+
+By default, the `<Text />` component renders a `<div>` element.
+To use a `<span>` or `<p>` element, use the following:
+
+```jsx
+<Text.span>This is a span element</Text.span>
+<Text.p>This is a p element</Text.p>
 ```
 
 

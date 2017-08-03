@@ -2,7 +2,7 @@
 
 exports[`ThemeProvider Base component includes a font 1`] = `
 .c0 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 <div
@@ -12,7 +12,7 @@ exports[`ThemeProvider Base component includes a font 1`] = `
 
 exports[`ThemeProvider renders 1`] = `
 .c0 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 <div
