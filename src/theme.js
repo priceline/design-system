@@ -36,7 +36,7 @@ export const fontSizes = [
 export const regular = 400
 export const bold = 700
 
-// next color palette
+// color palette
 const black = '#000'
 const white = '#fff'
 const text = '#001731'
