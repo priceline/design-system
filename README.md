@@ -11,6 +11,10 @@
 
 https://pricelinelabs.github.io/design-system/
 
+```sh
+npm i pcln-design-system
+```
+
 
 ## Motivation
 
