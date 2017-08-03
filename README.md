@@ -157,4 +157,6 @@ space[5] // 64
 space[6] // 128
 ```
 
+[site]: http://pricelinelabs.github.io/design-system
+
 MIT License
