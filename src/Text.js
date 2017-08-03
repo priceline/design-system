@@ -58,7 +58,7 @@ Text.propTypes = {
   pb: numberStringOrArray,
   pl: numberStringOrArray,
   px: numberStringOrArray,
-  py: numberStringOrArray,
+  py: numberStringOrArray
 }
 
 Text.span = Text.withComponent('span')
