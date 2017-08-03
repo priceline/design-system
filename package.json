@@ -14,7 +14,16 @@
     "test": "jest"
   },
   "author": "Brent Jackson",
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "Brent Jackson",
+      "email": "jxnblk@gmail.com"
+    },
+    {
+      "name": "Malek Hakim",
+      "email": "hakimelek@gmail.com"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-info": "^3.2.0",
@@ -53,5 +62,13 @@
       "test",
       "expect"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pricelinelabs/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pricelinelabs/design-system/issues"
+  },
+  "homepage": "https://github.com/pricelinelabs/design-system#readme"
 }
