@@ -22,7 +22,7 @@ export const space = [
   128
 ]
 
-export const font = `'Helvetica Neue', Helvetica, Arial, sans-serif`
+export const font = `'Helvetica Neue',Helvetica,Arial,sans-serif`
 
 export const fontSizes = [
   12,
@@ -40,7 +40,9 @@ export const bold = 700
 // next color palette
 const black = '#000'
 const white = '#fff'
+const text = '#001731'
 const blue = '#007aff'
+const gray = '#596b7d'
 const green = '#0a0'
 const red = '#c00'
 const orange = '#f90'
@@ -58,8 +60,8 @@ const tints = [
   0.6,
   0.8
 ]
-// const grays
 const blues = tints.map(tint(blue))
+const grays = tints.map(tint(gray))
 const greens = tints.map(tint(green))
 const reds = tints.map(tint(red))
 const oranges = tints.map(tint(orange))
@@ -68,7 +70,9 @@ const purples = tints.map(tint(purple))
 export const colors = Object.assign({}, {
   black,
   white,
+  text,
   blue,
+  gray,
   green,
   red,
   orange,
@@ -80,6 +84,7 @@ export const colors = Object.assign({}, {
   purples
 },
   flatten('blue', blues),
+  flatten('gray', grays),
   flatten('green', greens),
   flatten('red', reds),
   flatten('orange', oranges),

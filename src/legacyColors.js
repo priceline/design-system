@@ -1,44 +1,64 @@
+import { tint } from './color'
 
 const black = '#000'
 const white = '#fff'
 const blue = '#0a84c1'
 const green = '#3c910e'
-const orange = '#f2633a'
-const red = '#b01408'
+const orange = '#ffaf00'
+const red = '#df000f'
+const gray = '#666'
 
-const grays = [
-  '#333',
-  '#666',
-  '#999',
-  '#ccc',
-  '#d9d9d9',
-  '#f2f2f2'
-]
+const blue0 = '#cae4f2'
+// const blue1 =
+// const blue2 =
+// const blue3 =
+
+const gray0 = '#d9d9d9'
+const gray1 = '#ccc'
+const gray2 = '#999'
+const gray3 = '#666'
+
+const green0 = '#ecf9e5'
+const green1 = '#d1efc0'
+const green2 = tint(green)(0.6)
+const green3 = tint(green)(0.8)
+
+const red0 = '#ffced1'
+
+// const grays = [
+//   '#333',
+//   '#666',
+//   '#999',
+//   '#ccc',
+//   '#d9d9d9',
+//   '#f2f2f2'
+// ]
 
 /* reference from SITE/design-system */
 const dsColors = {
-  contrastBlue: '#085397',   // dark blue (headers)
-  pricelineBlue: '#0a84c1',   // priceline blue (links & background)
-  secondaryBlue: '#60afd7',   // mid blue
-  extraBlue: '#cae4f2',   // light blue
-  blueFooterLinks: '#9fddff',   // light blue for links on dark
+  contrastBlue: '#085397',
+    // blue
+    // pricelineBlue: '#0a84c1',
+  secondaryBlue: '#60afd7',
+  extraBlue: '#cae4f2',
+  blueFooterLinks: '#9fddff',
 
-  notification: '#f2633a',   // bright orange (savings)
-  orange2: '#ff9600',   // mid orange
-  orange3: '#ffaf00',   // used for headers on pcln blue background
+  notification: '#f2633a',
+  orange2: '#ff9600',
+  orange3: '#ffaf00',
 
-  primaryGreen: '#3c910e',    // green (prices, buttons)
+  primaryGreen: '#3c910e',
   secondaryGreen: '#47a216',
   tertiaryGreen: '#d1efc0',
   extraGreen: '#8cc36f',
-  successBg: '#ecf9e5',    //background green for success messaging
+  successBg: '#ecf9e5',
 
-  black80: '#333',    // dark gray (default text color)
+  black80: '#333',
   black60: '#666',
-  black40: '#999',    // medium gray (labels)
+  black40: '#999',
   black20: '#ccc',
-  black15: '#d9d9d9',   // used for: input and select borders
-  black5: '#f2f2f2',   // light gray (gray background / default hr)
+  black15: '#d9d9d9',
+  black5: '#f2f2f2',
 
   // white: '#fff',
   // black: '#000',
@@ -61,10 +81,24 @@ export const colors = Object.assign({}, {
   black,
   white,
   blue,
+  gray,
   green,
-  grays,
   orange,
   red,
+
+  blue0,
+
+  gray0,
+  gray1,
+  gray2,
+  gray3,
+
+  green0,
+  green1,
+  green2,
+  green3,
+
+  red0,
 }, dsColors)
 
 export default colors

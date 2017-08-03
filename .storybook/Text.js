@@ -1,0 +1,40 @@
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { Text } from '../src'
+
+storiesOf('Text', module)
+  .add('default', () => (
+    <Text>
+      Hello
+    </Text>
+  ))
+  .add('fontSize', () => (
+    <div>
+      <Text fontSize={6}>Hello 6</Text>
+      <Text fontSize={5}>Hello 5</Text>
+      <Text fontSize={4}>Hello 4</Text>
+      <Text fontSize={3}>Hello 3</Text>
+      <Text fontSize={2}>Hello 2</Text>
+      <Text fontSize={1}>Hello 1</Text>
+      <Text fontSize={0}>Hello 0</Text>
+    </div>
+  ))
+  .add('align', () => (
+    <div>
+      <Text align='left'>Hello Left</Text>
+      <Text align='center'>Hello Center</Text>
+      <Text align='right'>Hello Right</Text>
+    </div>
+  ))
+  .add('bold', () => (
+    <Text bold>Hello Bold</Text>
+  ))
+  .add('caps', () => (
+    <Text caps>Hello Caps</Text>
+  ))
+  .add('color', () => (
+    <div>
+      <Text color='blue'>Hello Blue</Text>
+      <Text color='green'>Hello Green</Text>
+    </div>
+  ))
