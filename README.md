@@ -36,23 +36,6 @@ We hope to accomplish these goals by:
 - Serving as the standard for Priceline.com's visual language
 - Providing easy-to-use and extensible components for anyone to consume
 
-## Theme
-
-The theme style constants should be used wherever font sizes, margin, padding, media queries, and colors are needed.
-
-```js
-import {
-  theme,
-} from 'pcln-design-system'
-
-// or
-import {
-  colors,
-  mediaQueries,
-  fontSizes,
-  space
-} from 'pcln-design-system'
-```
 
 ## ThemeProvider
 
@@ -70,7 +53,7 @@ const App = props => (
 ```
 
 ```jsx
-// Usage in a styled component
+// Usage with styled-components
 import styled from 'styled-components'
 
 const Section = styled.section`
@@ -78,10 +61,11 @@ const Section = styled.section`
 `
 ```
 
+
 ## Primitive UI Components
 
 The preferred way of using the design system in a React application is with UI primitives.
-With effective use of the UI primitives, you can avoid writing custom CSS in your application altogether.
+With effective use of the UI primitives, you can reduce the need to write custom CSS in your application.
 
 ### `<Text />`
 
@@ -160,6 +144,25 @@ pb | number, string, or array | Sets padding-bottom
 pl | number, string, or array | Sets padding-left
 px | number, string, or array | Sets padding-left and padding-right
 py | number, string, or array | Sets padding-top and padding-bottom
+
+
+## Theme
+
+The theme style constants should be used whenever low-level access to font sizes, margin, padding, media queries, and colors are needed.
+
+```js
+import {
+  theme,
+} from 'pcln-design-system'
+
+// or
+import {
+  colors,
+  mediaQueries,
+  fontSizes,
+  space
+} from 'pcln-design-system'
+```
 
 ### Colors
 
