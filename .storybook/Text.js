@@ -4,7 +4,7 @@ import { Text } from '../src'
 
 storiesOf('Text', module)
   .add('default', () => (
-    <Text>
+    <Text m={3}>
       Hello
     </Text>
   ))
@@ -31,6 +31,9 @@ storiesOf('Text', module)
   ))
   .add('caps', () => (
     <Text caps>Hello Caps</Text>
+  ))
+  .add('margin', () => (
+    <Text mt={4} mb={2}>Hello Margin</Text>
   ))
   .add('color', () => (
     <div>
