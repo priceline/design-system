@@ -1,7 +1,7 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { injectGlobal } from 'styled-components'
-import { ThemeProvider } from '../src'
+import { ThemeProvider, Box } from '../src'
 
 injectGlobal([], {
   '*': {
@@ -15,7 +15,9 @@ injectGlobal([], {
 
 const Decorator = props => (
   <ThemeProvider>
-    {props.children}
+    <Box p={3}>
+      {props.children}
+    </Box>
   </ThemeProvider>
 )
 
