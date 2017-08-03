@@ -8,6 +8,7 @@
     "start": "start-storybook -p 8000 -c .storybook",
     "deploy": "storybook-to-ghpages",
     "coverage": "jest --coverage",
+    "codecov": "jest && codecov",
     "test": "jest"
   },
   "author": "Brent Jackson",
@@ -22,6 +23,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "codecov": "^2.3.0",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.0.2",
     "react": "^15.6.1",
@@ -33,7 +35,8 @@
     "coverageReporters": [
       "lcov",
       "html"
-    ]
+    ],
+    "collectCoverage": true
   },
   "dependencies": {
     "chroma-js": "^1.3.4",
