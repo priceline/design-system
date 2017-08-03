@@ -44,5 +44,11 @@ describe('Text', () => {
     expect(f5).toHaveStyleRule('font-size', theme.fontSizes[5] + 'px')
     expect(f6).toHaveStyleRule('font-size', theme.fontSizes[6] + 'px')
   })
+
+  test('mt prop sets margin-top', () => {
+    const json = renderer.create(<Text mt={2} theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('margin-top', theme.space[2] + 'px')
+  })
 })
 
