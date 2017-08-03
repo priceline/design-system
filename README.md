@@ -6,10 +6,6 @@
 [travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 
-```sh
-npm i pcln-design-system
-```
-
 
 ## Motivation
 
@@ -36,23 +32,6 @@ We hope to accomplish these goals by:
 - Serving as the standard for Priceline.com's visual language
 - Providing easy-to-use and extensible components for anyone to consume
 
-## Theme
-
-The theme style constants should be used wherever font sizes, margin, padding, media queries, and colors are needed.
-
-```js
-import {
-  theme,
-} from 'pcln-design-system'
-
-// or
-import {
-  colors,
-  mediaQueries,
-  fontSizes,
-  space
-} from 'pcln-design-system'
-```
 
 ## ThemeProvider
 
@@ -70,7 +49,7 @@ const App = props => (
 ```
 
 ```jsx
-// Usage in a styled component
+// Usage with styled-components
 import styled from 'styled-components'
 
 const Section = styled.section`
@@ -78,10 +57,24 @@ const Section = styled.section`
 `
 ```
 
+
 ## Primitive UI Components
 
 The preferred way of using the design system in a React application is with UI primitives.
-With effective use of the UI primitives, you can avoid writing custom CSS in your application altogether.
+With effective use of the UI primitives, you can reduce the need to write custom CSS in your application.
+
+```jsx
+import React from 'react'
+import { ThemeProvider, Box, Text } from 'pcln-design-system'
+
+const App = props => (
+  <ThemeProvider>
+    <Box p={3}>
+      <Text>Hello</Text>
+    </Box>
+  </ThemeProvider>
+)
+```
 
 ### `<Text />`
 
@@ -120,6 +113,79 @@ To use a `<span>` or `<p>` element, use the following:
 <Text.p>This is a p element</Text.p>
 ```
 
+### `<Box />`
+
+Use the `<Box />` component to control width, margin, padding, and color.
+
+```jsx
+// 50% width
+<Box width={1/2} />
+
+// Padding of `theme.space[3]` (16px)
+<Box p={3} />
+
+// Margin of `theme.space[2]` (8px)
+<Box m={2} />
+
+// Color blue from the theme's color palette
+<Box color='blue' />
+
+// Background color green from the theme's color palette
+<Box bg='green' />
+```
+
+Prop | Type | Description
+---|---|---
+width | number, string, or array | Sets the width of the element
+color | string | Sets color based on the theme's color palette
+bg | string | Sets background-color based on the theme's color palette
+m | number, string, or array | Sets margin based on the `theme.space` scale
+mt | number, string, or array | Sets margin-top
+mr | number, string, or array | Sets margin-right
+mb | number, string, or array | Sets margin-bottom
+ml | number, string, or array | Sets margin-left
+mx | number, string, or array | Sets margin-left and margin-right
+my | number, string, or array | Sets margin-top and margin-bottom
+p | number, string, or array | Sets padding based on the `theme.space` scale
+pt | number, string, or array | Sets padding-top
+pr | number, string, or array | Sets padding-right
+pb | number, string, or array | Sets padding-bottom
+pl | number, string, or array | Sets padding-left
+px | number, string, or array | Sets padding-left and padding-right
+py | number, string, or array | Sets padding-top and padding-bottom
+
+#### Responsive Widths
+
+The `width` prop accepts an array value to set different widths at different breakpoints with a mobile-first approach.
+
+```jsx
+<Box
+  width={[
+    1,    // Sets width 100% at the smallest breakpoint
+    1/2,  // Sets width 50% at the next breakpoint
+    1/4,  // Sets width 25% at the next breakpoint
+  ]}
+/>
+```
+
+
+## Theme
+
+The theme style constants should be used whenever low-level access to font sizes, margin, padding, media queries, and colors are needed.
+
+```js
+import {
+  theme,
+} from 'pcln-design-system'
+
+// or
+import {
+  colors,
+  mediaQueries,
+  fontSizes,
+  space
+} from 'pcln-design-system'
+```
 
 ### Colors
 
