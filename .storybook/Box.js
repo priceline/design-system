@@ -6,7 +6,7 @@ import { Box } from '../src'
 const description = 'A low-level layout component for setting width, margin, padding, and color'
 
 storiesOf('Box', module)
-  .add('Box', withInfo({
+  .add('Layout component', withInfo({
     text: description,
     inline: true
   })(() => (
