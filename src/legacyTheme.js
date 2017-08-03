@@ -10,7 +10,7 @@ const orange = '#ffaf00'
 const red = '#df000f'
 const gray = '#666'
 
-const blue0 = '#cae4f2'
+const blue0 = tint(blue)(0.2)
 const blue1 = tint(blue)(0.4)
 const blue2 = tint(blue)(0.6)
 const blue3 = tint(blue)(0.8)
@@ -21,7 +21,7 @@ const gray2 = '#999'
 const gray3 = '#666'
 
 const green0 = '#ecf9e5'
-const green1 = '#d1efc0'
+const green1 = tint(green)(0.4)
 const green2 = tint(green)(0.6)
 const green3 = tint(green)(0.8)
 

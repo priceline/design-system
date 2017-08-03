@@ -46,15 +46,9 @@ const Comparison = ({ keys }) => (
 )
 
 storiesOf('Color', module)
-  .add('Old vs. New', () => (
+  .add('Palette', () => (
     <div>
-      <h1>Old vs. New</h1>
-      <Comparison keys={keys} />
-    </div>
-  ))
-  .add('New palette', () => (
-    <div>
-      <h1>Next Color Palette</h1>
+      <h1>Color Palette</h1>
       {next.map(color => (
         <Card
           key={color.key}
@@ -74,5 +68,11 @@ storiesOf('Color', module)
           color={color.value}
         />
       ))}
+    </div>
+  ))
+  .add('Old vs. New', () => (
+    <div>
+      <h1>Old vs. New</h1>
+      <Comparison keys={keys} />
     </div>
   ))
