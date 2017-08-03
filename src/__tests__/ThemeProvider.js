@@ -10,8 +10,13 @@ describe('ThemeProvider', () => {
     expect(json).toMatchSnapshot()
   })
 
+  test('renders with legacy prop', () => {
+    const json = renderer.create(<ThemeProvider legacy />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('Base component includes a font', () => {
-    const json = renderer.create(<Base />).toJSON()
+    const json = renderer.create(<Base theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-family', theme.font)
   })

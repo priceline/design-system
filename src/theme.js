@@ -1,3 +1,5 @@
+import { tint } from './color'
+
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
 export const breakpoints = [
@@ -31,19 +33,62 @@ export const fontSizes = [
   48
 ]
 
-export const fontWeights = [
-  400,
-  700
+export const regular = 400
+export const bold = 700
+
+// color palette
+const black = '#000'
+const white = '#fff'
+const text = '#001731'
+const blue = '#007aff'
+const gray = '#596b7d'
+const green = '#0a0'
+const red = '#c00'
+const orange = '#f90'
+const purple = '#7600bb'
+
+// tints
+const flatten = (name, colors) => colors
+  .reduce((a, b, i) => Object.assign(a, {
+    [name + i]: b
+  }), {})
+
+const tints = [
+  0.2,
+  0.4,
+  0.6,
+  0.8
 ]
+const blues = tints.map(tint(blue))
+const grays = tints.map(tint(gray))
+const greens = tints.map(tint(green))
+const reds = tints.map(tint(red))
+const oranges = tints.map(tint(orange))
+const purples = tints.map(tint(purple))
 
-export const regular = fontWeights[0]
-export const bold = fontWeights[1]
-
-export const colors = {
-  black: '#000',
-  white: '#fff',
-  blue: '#0a84c1'
-}
+export const colors = Object.assign({}, {
+  black,
+  white,
+  text,
+  blue,
+  gray,
+  green,
+  red,
+  orange,
+  purple,
+  blues,
+  greens,
+  reds,
+  oranges,
+  purples
+},
+  flatten('blue', blues),
+  flatten('gray', grays),
+  flatten('green', greens),
+  flatten('red', reds),
+  flatten('orange', oranges),
+  flatten('purple', purples),
+)
 
 const theme = {
   breakpoints,
@@ -51,7 +96,6 @@ const theme = {
   space,
   font,
   fontSizes,
-  fontWeights,
   regular,
   bold,
   colors,
