@@ -45,4 +45,3 @@ describe('Text', () => {
     expect(f6).toHaveStyleRule('font-size', theme.fontSizes[6] + 'px')
   })
 })
-

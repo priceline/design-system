@@ -34,7 +34,7 @@ Box.propTypes = {
   pb: numberStringOrArray,
   pl: numberStringOrArray,
   px: numberStringOrArray,
-  py: numberStringOrArray,
+  py: numberStringOrArray
 }
 
 export default Box

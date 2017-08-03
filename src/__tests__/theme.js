@@ -1,6 +1,6 @@
 import {
   theme,
-  colors,
+  colors
 } from '..'
 
 describe('theme', () => {
