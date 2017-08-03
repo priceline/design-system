@@ -6,10 +6,6 @@
 [travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 
-```sh
-npm i pcln-design-system
-```
-
 
 ## Motivation
 
