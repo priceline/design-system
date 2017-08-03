@@ -8,7 +8,7 @@ storiesOf('Text', module)
     inline: true,
     text: 'A low-level component for setting font-size, typographic styles, margin, and color'
   })(() => (
-    <Text>
+    <Text m={3}>
       Hello
     </Text>
   )))
@@ -35,6 +35,9 @@ storiesOf('Text', module)
   ))
   .add('caps', () => (
     <Text caps>Hello Caps</Text>
+  ))
+  .add('margin', () => (
+    <Text mt={4} mb={2}>Hello Margin</Text>
   ))
   .add('color', () => (
     <div>

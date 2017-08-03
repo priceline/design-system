@@ -34,6 +34,16 @@ exports[`Text caps prop sets text-transform and letter-spacing 1`] = `
 />
 `;
 
+exports[`Text mt prop sets margin-top 1`] = `
+.c0 {
+  margin-top: 8px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Text renders 1`] = `
 <div
   className=""

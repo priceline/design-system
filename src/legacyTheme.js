@@ -68,7 +68,7 @@ export const colors = {
   orange0,
   orange1,
   orange2,
-  orange3,
+  orange3
 }
 
 const legacyTheme = Object.assign({}, theme, {
@@ -76,4 +76,3 @@ const legacyTheme = Object.assign({}, theme, {
 })
 
 export default legacyTheme
-

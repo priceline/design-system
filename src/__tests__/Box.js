@@ -10,7 +10,7 @@ describe('Box', () => {
   })
 
   test('width prop sets width', () => {
-    const json = renderer.create(<Box width={1/2} />).toJSON()
+    const json = renderer.create(<Box width={1 / 2} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('width', '50%')
   })
@@ -39,4 +39,3 @@ describe('Box', () => {
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })
 })
-

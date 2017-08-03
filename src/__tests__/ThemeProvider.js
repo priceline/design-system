@@ -21,4 +21,3 @@ describe('ThemeProvider', () => {
     expect(json).toHaveStyleRule('font-family', theme.font)
   })
 })
-
