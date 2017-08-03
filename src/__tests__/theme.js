@@ -8,6 +8,10 @@ describe('theme', () => {
     expect(typeof theme).toBe('object')
   })
 
+  test('snapshot', () => {
+    expect(theme).toMatchSnapshot()
+  })
+
   test('exports colors', () => {
     expect(typeof colors).toBe('object')
   })

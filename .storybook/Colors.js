@@ -1,15 +1,15 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { theme } from '../src'
+import { theme, legacyTheme } from '../src'
 
 const keys = Object.keys(theme.colors)
   .filter(key => !Array.isArray(theme.colors[key]))
 
 const next = keys.map(key => ({ key, value: theme.colors[key] }))
 
-const legacy = Object.keys(theme.legacyColors)
-  .map(key => ({ key, value: theme.legacyColors[key] }))
+const legacy = Object.keys(legacyTheme.colors)
+  .map(key => ({ key, value: legacyTheme.colors[key] }))
   .filter(color => !Array.isArray(color.value))
 
 const Chip = styled.div`
@@ -35,38 +35,24 @@ const Comparison = ({ keys }) => (
       <div key={key}
         style={{
           display: 'inline-block',
-          padding: 16
+          marginRight: 16,
+          marginBottom: 16
         }}>
         <Card name={key} color={theme.colors[key]} />
-        <Card name={key} color={theme.legacyColors[key]} />
+        <Card name={key} color={legacyTheme.colors[key]} />
       </div>
     ))}
   </div>
 )
 
 storiesOf('Color', module)
-  .add('Comparison', () => (
+  .add('Old vs. New', () => (
     <div>
+      <h1>Old vs. New</h1>
       <Comparison keys={keys} />
-      <hr />
-      {next.map(color => (
-        <Card
-          key={color.key}
-          name={color.key}
-          color={color.value}
-        />
-      ))}
-      <hr />
-      {legacy.map(color => (
-        <Card
-          key={color.key}
-          name={color.key}
-          color={color.value}
-        />
-      ))}
     </div>
   ))
-  .add('Next palette', () => (
+  .add('New palette', () => (
     <div>
       <h1>Next Color Palette</h1>
       {next.map(color => (

@@ -1,5 +1,4 @@
 import { tint } from './color'
-import legacyColors from './legacyColors'
 
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
@@ -100,10 +99,6 @@ const theme = {
   regular,
   bold,
   colors,
-
-  legacyColors
 }
-
-export { default as legacyColors } from './legacyColors'
 
 export default theme

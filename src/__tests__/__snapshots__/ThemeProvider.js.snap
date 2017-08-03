@@ -19,3 +19,13 @@ exports[`ThemeProvider renders 1`] = `
   className="c0"
 />
 `;
+
+exports[`ThemeProvider renders with legacy prop 1`] = `
+.c0 {
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;
