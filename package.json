@@ -15,6 +15,7 @@
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
+    "@storybook/addon-info": "^3.2.0",
     "@storybook/react": "^3.2.3",
     "@storybook/storybook-deployer": "^2.0.0",
     "babel-cli": "^6.24.1",
