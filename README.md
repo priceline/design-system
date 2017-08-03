@@ -6,6 +6,8 @@
 [travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 
+[Storybook][site]
+
 
 ## Motivation
 
@@ -223,6 +225,6 @@ space[5] // 64
 space[6] // 128
 ```
 
-[site]: http://pricelinelabs.github.io/design-system
+[site]: http://pricelinelabs.github.io/design-system/
 
 MIT License
