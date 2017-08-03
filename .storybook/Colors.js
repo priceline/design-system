@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { theme, legacyTheme } from '../src'
+import { Box, Text, theme, legacyTheme } from '../src'
 
 const keys = Object.keys(theme.colors)
   .filter(key => !Array.isArray(theme.colors[key]))
@@ -12,35 +12,32 @@ const legacy = Object.keys(legacyTheme.colors)
   .map(key => ({ key, value: legacyTheme.colors[key] }))
   .filter(color => !Array.isArray(color.value))
 
-const Chip = styled.div`
-  padding: 48px;
-  background-color: ${props => props.color};
+const Chip = props => <Box width={1} px={5} py={4} bg={props.color} />
+
+const Pre = Text.withComponent('pre')
+
+const InlineBlock = styled(Box)`
+  display: inline-block;
 `
 
 const Card = props => (
-  <div
-    style={{
-      display: 'inline-block',
-      padding: 16,
-    }}>
+  <InlineBlock p={3}>
     <Chip color={props.color} />
-    <pre>{props.name}</pre>
-    <pre>{props.color}</pre>
-  </div>
+    <Text f={0}>{props.name}</Text>
+    <Pre m={0}>{props.color}</Pre>
+  </InlineBlock>
 )
 
 const Comparison = ({ keys }) => (
   <div>
     {keys.map(key => (
-      <div key={key}
-        style={{
-          display: 'inline-block',
-          marginRight: 16,
-          marginBottom: 16
-        }}>
+      <InlineBlock
+        key={key}
+        mr={3}
+        mb={3}>
         <Card name={key} color={theme.colors[key]} />
         <Card name={key} color={legacyTheme.colors[key]} />
-      </div>
+      </InlineBlock>
     ))}
   </div>
 )
@@ -48,7 +45,9 @@ const Comparison = ({ keys }) => (
 storiesOf('Color', module)
   .add('Palette', () => (
     <div>
-      <h1>Color Palette</h1>
+      <Box p={3}>
+        <h1>Color Palette</h1>
+      </Box>
       {next.map(color => (
         <Card
           key={color.key}
@@ -60,7 +59,9 @@ storiesOf('Color', module)
   ))
   .add('Legacy palette', () => (
     <div>
-      <h1>Legacy Color Palette</h1>
+      <Box p={3}>
+        <h1>Legacy Color Palette</h1>
+      </Box>
       {legacy.map(color => (
         <Card
           key={color.key}
@@ -72,7 +73,9 @@ storiesOf('Color', module)
   ))
   .add('Old vs. New', () => (
     <div>
-      <h1>Old vs. New</h1>
+      <Box p={3}>
+        <h1>Old vs. New</h1>
+      </Box>
       <Comparison keys={keys} />
     </div>
   ))
