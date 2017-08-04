@@ -184,6 +184,22 @@ The `width` prop accepts an array value to set different widths at different bre
 />
 ```
 
+### `<Image />`
+
+Use the `<Image />` component to render a primitive image that saves the aspect ratio.
+
+```jsx
+<Image src='https://priceline.com/myimage.png' />
+
+// Adding fixed width
+<Box src='https://priceline.com/myimage.png' width='300px' />
+```
+
+Prop | Type | Description
+---|---|---
+src | string | Sets the image source of the element
+width | string | Sets the image width
+
 
 ## Theme
 
