@@ -12,7 +12,7 @@ describe('Image', () => {
   })
 
   test('width prop sets width sizing', () => {
-    const json = renderer.create(<Image width='300px' />).toJSON()
+    const json = renderer.create(<Image src={imageSrc} width='300px' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveProperty('props.width', '300px')
   })
