@@ -5,3 +5,4 @@ dist
 yarn.lock
 coverage
 .site
+icons.json
