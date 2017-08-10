@@ -1,4 +1,5 @@
 import { tint } from './color'
+import icons from '../icons.json'
 
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
@@ -98,7 +99,9 @@ const theme = {
   fontSizes,
   regular,
   bold,
+  icons,
   colors
 }
 
+export { default as icons } from '../icons.json'
 export default theme
