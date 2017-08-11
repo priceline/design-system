@@ -8,6 +8,7 @@ const justify = responsiveStyle('justify-content', 'justify')
 const wrap = responsiveStyle('flex-wrap', 'wrap', 'wrap')
 
 const Flex = styled(Box)`
+  display: flex;
   ${align}
   ${justify}
   ${wrap}
