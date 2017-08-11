@@ -3,7 +3,7 @@ const path = require('path')
 const SVGI = require('svgi')
 const camelCase = require('camelcase')
 
-const src = path.join(__dirname, '..', 'src/icons')
+const src = path.join(__dirname, '..', 'icons')
 const filepath = path.join(__dirname, '..', 'icons.json')
 
 const writeFile = data => {
