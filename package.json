@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "babel src -d dist --ignore __tests__",
+    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
     "deploy": "storybook-to-ghpages",
