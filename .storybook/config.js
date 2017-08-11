@@ -13,16 +13,12 @@ injectGlobal([], {
   }
 })
 
-const Decorator = props => (
+addDecorator(story => (
   <ThemeProvider>
     <Box p={3}>
-      {props.children}
+      {story()}
     </Box>
   </ThemeProvider>
-)
-
-addDecorator(story => (
-  <Decorator children={story()} />
 ))
 
 const req = require.context('.', true, /\.js$/)
