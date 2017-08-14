@@ -192,14 +192,8 @@ Use the `<Image />` component to render a primitive image that saves the aspect 
 <Image src='https://priceline.com/myimage.png' />
 
 // Adding fixed width
-<Box src='https://priceline.com/myimage.png' width='300px' />
+<Image src='https://priceline.com/myimage.png' width='300' height='200' alt='My Image'/>
 ```
-
-Prop | Type | Description
----|---|---
-src | string | Sets the image source of the element
-width | string | Sets the image width
-
 
 ## Theme
 

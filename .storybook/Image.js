@@ -12,14 +12,7 @@ storiesOf('Image', module)
   })(() => (
     <Image src='https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg' />
   )))
-
-  .add('Fixed width', () => (
-    <Image
-      src='https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg'
-      width='300px'
-    />
-  ))
-
+  
   .add('Responsive width, with Box', () => (
     <Box width={1/2}>
       <Image
