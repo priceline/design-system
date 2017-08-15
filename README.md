@@ -185,18 +185,6 @@ The `width` prop accepts an array value to set different widths at different bre
 ```
 
 
-### `<Image />`
-
-Use the `<Image />` component to render a primitive image that saves the aspect ratio.
-
-```jsx
-<Image src='https://priceline.com/myimage.png' />
-
-// Adding fixed width
-<Image src='https://priceline.com/myimage.png' width='300' height='200' alt='My Image'/>
-```
-
-
 ### `<Flex />`
 
 The `<Flex />` component is an extension of the `<Box />` component with `display: flex` and props for using flexbox.
@@ -213,6 +201,37 @@ Prop | Type | Description
 align | string | sets `align-items`
 justify | string | sets `justify-content`
 wrap | boolean | sets `flex-wrap: wrap`
+
+
+### `<Image />`
+
+Use the `<Image />` component to render a primitive image that saves the aspect ratio.
+
+```jsx
+<Image src='https://priceline.com/myimage.png' />
+
+// Adding fixed width
+<Image src='https://priceline.com/myimage.png' width='300' height='200' alt='My Image'/>
+```
+
+
+### `<Icon />`
+
+Use the `<Icon />` component for SVG icons.
+
+```jsx
+<Icon
+  name='circlePlus'
+  size={48}
+  color='blue'
+/>
+```
+
+Prop | Type | Description
+---|---|---
+name | string | icon key name
+size | number | width and height in pixels
+color | string | a color key from `theme.colors`
 
 
 ## Theme
