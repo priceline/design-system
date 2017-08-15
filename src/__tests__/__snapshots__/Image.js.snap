@@ -12,17 +12,3 @@ exports[`Image renders 1`] = `
   src="https://www.qaa.priceline.com/home/public/735e9d77a0adaeaf0c46845da8c5db8b.jpg"
 />
 `;
-
-exports[`Image width prop sets width sizing 1`] = `
-.c0 {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-<img
-  className="c0"
-  src="https://www.qaa.priceline.com/home/public/735e9d77a0adaeaf0c46845da8c5db8b.jpg"
-  width="300px"
-/>
-`;
