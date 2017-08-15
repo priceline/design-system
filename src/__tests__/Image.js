@@ -10,3 +10,4 @@ describe('Image', () => {
     const json = renderer.create(<Image src={imageSrc} />).toJSON()
     expect(json).toMatchSnapshot()
   })
+})
