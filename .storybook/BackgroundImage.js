@@ -20,3 +20,20 @@ storiesOf('BackgroundImage', module)
       </BackgroundImage>
     </Box>
   ))
+  .add('Fixed Height', () => (
+    <Box width={320}>
+      <BackgroundImage
+        height='320px'
+        image={image}>
+        <Box p={4}>
+          <Text
+            fontSize={6}
+            bold
+            align='center'
+            color='white'>
+            Hello
+          </Text>
+        </Box>
+      </BackgroundImage>
+    </Box>
+  ))
