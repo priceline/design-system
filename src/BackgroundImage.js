@@ -5,8 +5,13 @@ const image = props => props.image
   ? { backgroundImage: `url(${props.image})` }
   : null
 
+const height = props => props.height
+  ? { height: props.height }
+  : null
+
 const BackgroundImage = styled.div`
   ${image}
+  ${height}
   background-color: ${props => props.theme.colors.gray};
   background-position: center;
   background-size: cover;
