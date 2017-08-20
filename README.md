@@ -246,6 +246,34 @@ size | number | width and height in pixels
 color | string | a color key from `theme.colors`
 
 
+### `<Button />`
+
+Use the `<Button />` component to render a primitive button.
+
+```jsx
+<Button
+  icon='hotel'
+  primary
+  large
+  outline
+/>
+```
+
+Prop | Type | Description
+---|---|---
+bg | string | background color
+bgHover | string | background color when hovered
+radius | string | custom button radius in pixel
+small | boolean | sets button size to small
+medium | boolean | sets button size to medium
+large | boolean | sets button size to large
+fullWidth | boolean | sets button width to fullWidth
+primary | boolean | sets button type to primary
+secondary | boolean | sets button type to secondary
+error | boolean | sets button type to error
+outline | boolean | sets button type to outline
+
+
 ## Theme
 
 The theme style constants should be used whenever low-level access to font sizes, margin, padding, media queries, and colors are needed.
