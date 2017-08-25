@@ -252,26 +252,19 @@ Use the `<Button />` component to render a primitive button.
 
 ```jsx
 <Button
-  icon='hotel'
-  primary
-  large
-  outline
+  size='large'
 />
 ```
 
 Prop | Type | Description
 ---|---|---
-bg | string | background color
-bgHover | string | background color when hovered
 radius | string | custom button radius in pixel
-small | boolean | sets button size to small
-medium | boolean | sets button size to medium
-large | boolean | sets button size to large
+size | string | sets button size to small, medium or large
 fullWidth | boolean | sets button width to fullWidth
-primary | boolean | sets button type to primary
-secondary | boolean | sets button type to secondary
-error | boolean | sets button type to error
-outline | boolean | sets button type to outline
+
+#### Extend `<Button />`
+
+Buttons could be extended to add custom styles. We provide the most common styled buttons such as `<GreenButton />`, `<RedButton />` and `<OutlineButton color='purple' />`.
 
 
 ## Theme
