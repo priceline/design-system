@@ -45,3 +45,9 @@ storiesOf('Text', module)
       <Text color='green'>Hello Green</Text>
     </div>
   ))
+  .add('Using <h3> heading', () => (
+    <div>
+      <Text color='purple'>Hello Blue</Text>
+      <Text color='orange'>Hello Green</Text>
+    </div>
+  ))
