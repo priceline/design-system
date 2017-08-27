@@ -63,6 +63,12 @@ Text.propTypes = {
   py: numberStringOrArray
 }
 
+Text.h1 = Text.withComponent('h1')
+Text.h2 = Text.withComponent('h2')
+Text.h3 = Text.withComponent('h3')
+Text.h4 = Text.withComponent('h4')
+Text.h5 = Text.withComponent('h5')
+Text.h6 = Text.withComponent('h6')
 Text.span = Text.withComponent('span')
 Text.p = Text.withComponent('p')
 

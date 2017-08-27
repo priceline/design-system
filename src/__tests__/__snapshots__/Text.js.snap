@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Text Test with <Text.h1 /> component 1`] = `
+<h1
+  className=""
+/>
+`;
+
+exports[`Text Test with <Text.h1 /> component 2`] = `
+<h2
+  className=""
+/>
+`;
+
+exports[`Text Test with <Text.h1 /> component 3`] = `
+<h3
+  className=""
+/>
+`;
+
+exports[`Text Test with <Text.h1 /> component 4`] = `
+<h4
+  className=""
+/>
+`;
+
+exports[`Text Test with <Text.h1 /> component 5`] = `
+<h5
+  className=""
+/>
+`;
+
+exports[`Text Test with <Text.h1 /> component 6`] = `
+<h6
+  className=""
+/>
+`;
+
 exports[`Text align prop sets text-align 1`] = `
 .c0 {
   text-align: center;
