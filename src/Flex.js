@@ -34,7 +34,7 @@ Flex.propTypes = {
     'stretch'
   ]),
   /** flex-wrap: wrap */
-  wrap: PropTypes.bool,
+  wrap: PropTypes.bool
 }
 
 export default Flex
