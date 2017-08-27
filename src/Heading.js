@@ -1,19 +1,12 @@
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { fontSize } from 'styled-system'
+import Text from './Text'
+import { fontSizes } from './theme'
 
-const Heading = styled.h3`
-  ${fontSize}
-`
+const Heading = Text.withComponent('h3')
 
 Heading.displayName = 'Heading'
 
-Heading.propTypes = {
-  fontSize: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.array
-  ])
+Heading.defaultProps = {
+  fontSize: fontSizes[3]
 }
 
 Heading.h1 = Heading.withComponent('h1')
