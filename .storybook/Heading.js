@@ -17,12 +17,12 @@ storiesOf('Heading', module)
   )))
   .add('Using dot-notation with h1-h6', () => (
     <section>
-      <Heading.h1 fontSize={fontSizes[6]}>Heading h1</Heading.h1>
-      <Heading.h2 fontSize={fontSizes[5]}>Heading h2</Heading.h2>
-      <Heading.h3 fontSize={fontSizes[4]}>Heading h3</Heading.h3>
-      <Heading.h4 fontSize={fontSizes[3]}>Heading h4</Heading.h4>
-      <Heading.h5 fontSize={fontSizes[2]}>Heading h5</Heading.h5>
-      <Heading.h6 fontSize={fontSizes[1]}>Heading h6</Heading.h6>
+      <Heading.h1>Heading h1</Heading.h1>
+      <Heading.h2>Heading h2</Heading.h2>
+      <Heading.h3>Heading h3</Heading.h3>
+      <Heading.h4>Heading h4</Heading.h4>
+      <Heading.h5>Heading h5</Heading.h5>
+      <Heading.h6>Heading h6</Heading.h6>
     </section>
   ))
   .add('Using <Text> properties', () => (

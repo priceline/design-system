@@ -27,34 +27,34 @@ exports[`Heading Heading component with default theme font size, when "fontSize"
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 48px;
 }
 
 <h1
   className="c0"
-  fontSize={20}
+  fontSize={48}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 <h2
   className="c0"
-  fontSize={20}
+  fontSize={32}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 <h3
   className="c0"
-  fontSize={20}
+  fontSize={24}
 />
 `;
 
@@ -71,23 +71,23 @@ exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 <h5
   className="c0"
-  fontSize={20}
+  fontSize={16}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 <h6
   className="c0"
-  fontSize={20}
+  fontSize={14}
 />
 `;
 
