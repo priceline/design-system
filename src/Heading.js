@@ -6,7 +6,7 @@ const Heading = Text.withComponent('h3')
 Heading.displayName = 'Heading'
 
 Heading.defaultProps = {
-  fontSize: fontSizes[3]
+  fontSize: fontSizes[4]
 }
 
 Heading.h1 = Heading.withComponent('h1')
