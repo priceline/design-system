@@ -15,7 +15,7 @@ storiesOf('Heading', module)
   })(() => (
     <Heading m={3}>Heading component</Heading>
   )))
-  .add('Heading with h1-h6 using dot-notation', () => (
+  .add('Using dot-notation with h1-h6', () => (
     <section>
       <Heading.h1 fontSize={fontSizes[6]}>Heading h1</Heading.h1>
       <Heading.h2 fontSize={fontSizes[5]}>Heading h2</Heading.h2>
@@ -25,7 +25,7 @@ storiesOf('Heading', module)
       <Heading.h6 fontSize={fontSizes[1]}>Heading h6</Heading.h6>
     </section>
   ))
-  .add('Heading using <Text> properties', () => (
+  .add('Using <Text> properties', () => (
     <section>
       <Heading align='left' fontSize={fontSizes[6]} color={colors['green']}>
         Heading Left
