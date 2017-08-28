@@ -31,7 +31,7 @@ describe('Heading', () => {
   test(defaultFontSizeTestCase, () => {
     const json = renderer.create(<Heading />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('font-size', theme.fontSizes[3] + 'px')
+    expect(json).toHaveStyleRule('font-size', theme.fontSizes[4] + 'px')
   })
 
   const usingTextPropsTestCase =

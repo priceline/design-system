@@ -2,7 +2,7 @@
 
 exports[`Heading Heading component using <Text> component properties 1`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 24px;
   color: #596b7d;
   text-align: center;
 }
@@ -10,18 +10,18 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
 <h3
   className="c0"
   color="#596b7d"
-  fontSize={20}
+  fontSize={24}
 />
 `;
 
 exports[`Heading Heading component with default theme font size, when "fontSize" prop not used 1`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 <h3
   className="c0"
-  fontSize={20}
+  fontSize={24}
 />
 `;
 
@@ -93,11 +93,11 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 
 exports[`Heading renders 1`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 <h3
   className="c0"
-  fontSize={20}
+  fontSize={24}
 />
 `;
