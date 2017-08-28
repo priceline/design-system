@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import {Heading } from '../src'
+import { Heading } from '../src'
 import { fontSizes, colors } from '../src/theme'
 
 const description = 'A type of the <Text> component' +
