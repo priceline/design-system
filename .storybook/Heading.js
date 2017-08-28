@@ -2,7 +2,6 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Heading } from '../src'
-import { fontSizes, colors } from '../src/theme'
 
 const description = 'A type of the <Text> component' +
   ' using HTML h1-h6 element for setting section headings,' +
@@ -27,13 +26,13 @@ storiesOf('Heading', module)
   ))
   .add('Using <Text> properties', () => (
     <section>
-      <Heading align='left' fontSize={fontSizes[6]} color={colors['green']}>
+      <Heading align='left' fontSize={6} color='green'>
         Heading Left
       </Heading>
-      <Heading align='center' fontSize={fontSizes[5]} color={colors['blue']}>
+      <Heading align='center' fontSize={5} color='blue'>
         Heading Center
       </Heading>
-      <Heading align='right' fontSize={fontSizes[4]} color={colors['orange']}>
+      <Heading align='right' fontSize={4} color='orange'>
         Heading Right
       </Heading>
     </section>
