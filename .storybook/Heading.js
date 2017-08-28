@@ -24,7 +24,7 @@ storiesOf('Heading', module)
       <Heading.h6>Heading h6</Heading.h6>
     </section>
   ))
-  .add('Using <Text> properties', () => (
+  .add('Using <Text> props', () => (
     <section>
       <Heading align='left' fontSize={6} color='green'>
         Heading Left

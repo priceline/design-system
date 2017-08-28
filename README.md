@@ -131,7 +131,7 @@ To use a `<span>` or `<p>` element, use the following:
 
 ### `<Heading />`
 
-Use the `<Heading />` component to use HTML heading h1-h6 element, with all the `<Text>` properties.
+Use the `<Heading />` component to use HTML heading h1-h6 element, with all the `<Text>` props.
 
 ```jsx
 // Heading with default h3 element and style
