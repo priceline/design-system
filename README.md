@@ -215,6 +215,18 @@ Use the `<Image />` component to render a primitive image that saves the aspect 
 ```
 
 
+### `<BackgroundImage />`
+
+Use the `<BackgroundImage />` component to set a background image.
+
+```jsx
+<BackgroundImage
+  image='hello.png'>
+  Hello
+</BackgroundImage>
+```
+
+
 ### `<Icon />`
 
 Use the `<Icon />` component for SVG icons.
