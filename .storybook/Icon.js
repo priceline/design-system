@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Icon, Box } from '../src'
+import { Icon, Flex, Box } from '../src'
 import icons from '../icons.json'
 
 const keys = Object.keys(icons)
@@ -11,17 +11,20 @@ storiesOf('Icon', module)
       p={2}
       color='white'
       bg='blue'>
-      {keys.map(name => (
-        <Box
-          key={name}
-          m={2}>
-          <Icon
-            name={name}
-            size={48}
-          />
-          <pre>{name}</pre>
-        </Box>
-      ))}
+      <Flex wrap>
+        {keys.map(name => (
+          <Box
+            key={name}
+            w={[ 1/3, 1/5, 1/6, 1/8 ]}
+            m={2}>
+            <Icon
+              name={name}
+              size={48}
+            />
+            <pre>{name}</pre>
+          </Box>
+        ))}
+      </Flex>
     </Box>
   ))
   .add('Color', () => (
