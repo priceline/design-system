@@ -6,7 +6,7 @@ import { Link } from '../src'
 const description = 'A type of the <Text> component\' +\n' +
   ' using HTML <a> (anchor) element for creating a hyperlink to other web pages,' +
   ' files, locations within the same page, email addresses, or any other URL.' +
-  ' The <Link> supports all <Text> cprops'
+  ' The <Link> supports all <Text> props'
 
 storiesOf('Link', module)
   .add('Link component', withInfo({
