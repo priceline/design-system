@@ -29,11 +29,11 @@ storiesOf('Link', module)
   ))
   .add('Link using textDecoration prop', () => (
     <Link textDecoration='underline' color='gray'>
-      Link with style - text-docoration: underline
+      Link with style - text-docoration: "underline";
     </Link>
   ))
   .add('Link using display prop', () => (
     <Link display='list-item' color='purple' m={20}>
-      Link with style - display: list-item
+      Link with style - display: "list-item";
     </Link>
   ))
