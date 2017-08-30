@@ -27,12 +27,12 @@ storiesOf('Link', module)
       Hover on the Priceline Home link to see "not-allowed" cursor
     </Link>
   ))
-  .add('Link using textDecoration prop', () => (
+  .add('Link using "textDecoration" prop', () => (
     <Link textDecoration='underline' color='gray'>
       Link with style - text-docoration: "underline";
     </Link>
   ))
-  .add('Link using display prop', () => (
+  .add('Link using "display" prop', () => (
     <Link display='list-item' color='purple' m={20}>
       Link with style - display: "list-item";
     </Link>
