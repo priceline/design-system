@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Link using "cursor" prop 1`] = `
+.c0 {
+  cursor: wait;
+  text-decoration: none;
+  display: inline-block;
+}
+
+<a
+  className="c0 "
+  cursor="wait"
+  display="inline-block"
+  textDecoration="none"
+>
+  Dummy
+</a>
+`;
+
+exports[`Link Link using "display" prop 1`] = `
+.c0 {
+  cursor: pointer;
+  text-decoration: none;
+  display: none;
+}
+
+<a
+  className="c0 "
+  cursor="pointer"
+  display="none"
+  textDecoration="none"
+>
+  Dummy
+</a>
+`;
+
+exports[`Link Link using "textDecoration" prop 1`] = `
+.c0 {
+  cursor: pointer;
+  text-decoration: overline;
+  display: inline-block;
+}
+
+<a
+  className="c0 "
+  cursor="pointer"
+  display="inline-block"
+  textDecoration="overline"
+>
+  Dummy
+</a>
+`;
+
+exports[`Link renders 1`] = `
+.c0 {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+<a
+  className="c0 "
+  cursor="pointer"
+  display="inline-block"
+  textDecoration="none"
+>
+  Dummy
+</a>
+`;
