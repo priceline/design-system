@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Link } from '../src'
 
-const description = 'A type of the <Text> component\' +\n' +
+const description = 'A type of the <Text> component' +
   ' using HTML <a> (anchor) element for creating a hyperlink to other web pages,' +
   ' files, locations within the same page, email addresses, or any other URL.' +
   ' The <Link> supports all <Text> props'
@@ -33,7 +33,7 @@ storiesOf('Link', module)
     </Link>
   ))
   .add('Link using display prop', () => (
-    <Link display='list-item' color='purple'>
+    <Link display='list-item' color='purple' m={20}>
       Link with style - display: list-item
     </Link>
   ))
