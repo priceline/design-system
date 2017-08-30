@@ -15,6 +15,22 @@ https://pricelinelabs.github.io/design-system/
 npm install pcln-design-system
 ```
 
+## Documentation
+
+- [Docs](docs)
+- [Getting Started](docs/GettingStarted.md)
+- [ThemeProvider](docs/ThemeProvider.md)
+- [`<Text />`](docs/Text.md)
+- [`<Heading />`](docs/Heading.md)
+- [`<Box />`](docs/Box.md)
+- [`<Flex />`](docs/Flex.md)
+- [`<Icon />`](docs/Icon.md)
+- [`<Image />`](docs/Image.md)
+- [`<BackgroundImage />`](docs/BackgroundImage.md)
+- [Theme](docs/Theme.md)
+- [Contributing](docs/Contributing.md)
+
+
 ## Motivation
 
 In order to create a consistently great experience for our users,
@@ -39,12 +55,6 @@ We hope to accomplish these goals by:
 - Reducing the amount of code duplication in our apps
 - Serving as the standard for Priceline.com's visual language
 - Providing easy-to-use and extensible components for anyone to consume
-
-
-## Documentation
-
-- [Docs](docs)
-- [Getting Started](docs/GettingStarted.md)
 
 
 [site]: https://pricelinelabs.github.io/design-system/

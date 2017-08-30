@@ -10,5 +10,6 @@
 - [`<Icon />`](Icon.md)
 - [`<Image />`](Image.md)
 - [`<BackgroundImage />`](BackgroundImage.md)
+- [Theme](Theme.md)
 - [Contributing](Contributing.md)
 
