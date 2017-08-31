@@ -221,7 +221,6 @@ The `width` prop accepts an array value to set different widths at different bre
 />
 ```
 
-
 ### `<Flex />`
 
 The `<Flex />` component is an extension of the `<Box />` component with `display: flex` and props for using flexbox.
@@ -239,7 +238,6 @@ align | string | sets `align-items`
 justify | string | sets `justify-content`
 wrap | boolean | sets `flex-wrap: wrap`
 
-
 ### `<Image />`
 
 Use the `<Image />` component to render a primitive image that saves the aspect ratio.
@@ -251,7 +249,6 @@ Use the `<Image />` component to render a primitive image that saves the aspect 
 <Image src='https://priceline.com/myimage.png' width='300' height='200' alt='My Image'/>
 ```
 
-
 ### `<BackgroundImage />`
 
 Use the `<BackgroundImage />` component to set a background image.
@@ -262,7 +259,6 @@ Use the `<BackgroundImage />` component to set a background image.
   Hello
 </BackgroundImage>
 ```
-
 
 ### `<Icon />`
 
@@ -282,6 +278,15 @@ name | string | icon key name
 size | number | width and height in pixels
 color | string | a color key from `theme.colors`
 
+### `<Link />`
+
+Use the `<Link />` component to set the HTML <a> element (or anchor element) to create a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.
+
+```jsx
+<Link href='https://www.priceline.com/home/' target='_blank'>
+  Priceline Home
+</Link>
+```
 
 ## Theme
 
@@ -308,7 +313,6 @@ import { colors } from 'pcln-design-system'
 
 colors.blue // '#0a84c1'
 ```
-
 
 ### Font Sizes
 
