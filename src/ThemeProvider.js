@@ -7,6 +7,11 @@ import legacyTheme from './legacyTheme'
 
 export const Base = styled.div`
   font-family: ${props => props.theme.font};
+  line-height: 1.4;
+
+  * {
+    box-sizing: border-box;
+  }
 `
 
 const ThemeProvider = ({ legacy, ...props }) => {
