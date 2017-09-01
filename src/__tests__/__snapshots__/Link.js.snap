@@ -3,7 +3,10 @@
 exports[`Link renders 1`] = `
 .c0 {
   text-decoration: none;
-  cursor: pointer;
+}
+
+.c0:hover {
+  text-decoration: underline;
 }
 
 <a
