@@ -52,3 +52,21 @@ space[4] // 32
 space[5] // 64
 space[6] // 128
 ```
+
+## Media Queries
+
+The `mediaQueries` array can be used to add styles targeted for different screen sizes. The design system is built for mobile-first design, so all media queries use min-width.
+
+```js
+import { mediaQueries } from 'pcln-design-system'
+
+mediaQueries[0] // @media screen and (min-width:32em)   - approximately phone-sized
+mediaQueries[1] // @media screen and (min-width:40em)   - approximately tablet-sized
+mediaQueries[2] // @media screen and (min-width:48em)   - approximately laptop-sized
+mediaQueries[3] // @media screen and (min-width:64em)   - approximately desktop-sized
+
+mediaQueries.sm // alias for mediaQueries[0]
+mediaQueries.md // alias for mediaQueries[1]
+mediaQueries.lg // alias for mediaQueries[2]
+mediaQueries.xl // alias for mediaQueries[3]
+```
