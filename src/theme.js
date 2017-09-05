@@ -1,7 +1,16 @@
 import { tint } from './color'
-import icons from '../icons.json'
 
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
+
+const addAliases = (arr, aliases) =>
+  aliases.forEach((key, i) =>
+    Object.defineProperty(arr, key, {
+      enumerable: false,
+      get() {
+        return this[i]
+      }
+    })
+  )
 
 export const breakpoints = [
   32,
@@ -11,6 +20,16 @@ export const breakpoints = [
 ]
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
+
+const aliases = [
+  'sm',
+  'md',
+  'lg',
+  'xl'
+]
+
+addAliases(breakpoints, aliases)
+addAliases(mediaQueries, aliases)
 
 export const space = [
   0,
@@ -99,9 +118,7 @@ const theme = {
   fontSizes,
   regular,
   bold,
-  icons,
   colors
 }
 
-export { default as icons } from '../icons.json'
 export default theme
