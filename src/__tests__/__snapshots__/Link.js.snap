@@ -3,6 +3,7 @@
 exports[`Link renders 1`] = `
 .c0 {
   text-decoration: none;
+  color: #007aff;
 }
 
 .c0:hover {
