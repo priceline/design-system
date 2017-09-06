@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Link = styled.a`
   text-decoration: none;
-  ${props => props.theme ? `color: ${props.theme.colors.blue};` : null}
+  color: ${props => props.theme.colors.blue};
   &:hover {
     text-decoration: underline;
   }
