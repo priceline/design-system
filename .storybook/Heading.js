@@ -5,7 +5,7 @@ import { Heading } from '../src'
 
 const description = 'A type of the <Text> component' +
   ' using HTML h1-h6 element for setting section headings,' +
-  ' extending all <Text> properties'
+  ' supporting all <Text> props'
 
 storiesOf('Heading', module)
   .add('Heading component', withInfo({
