@@ -19,6 +19,6 @@ OutlineButton.defaultProps = {
   color: 'blue'
 }
 
-Button.displayName = 'OutlineButton'
+OutlineButton.displayName = 'OutlineButton'
 
 export default OutlineButton

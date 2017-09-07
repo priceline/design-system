@@ -20,10 +20,6 @@ exports[`Button fullWidth prop sets width to 100% 1`] = `
   padding: 0 18px;
 }
 
-.c0:hover {
-  background-color: #99caff;
-}
-
 .c0:disabled {
   opacity: 0.25;
 }
@@ -52,10 +48,6 @@ exports[`Button renders 1`] = `
   padding: 0 18px;
 }
 
-.c0:hover {
-  background-color: #99caff;
-}
-
 .c0:disabled {
   opacity: 0.25;
 }
@@ -82,10 +74,6 @@ exports[`Button size large sets height and font-size 1`] = `
   height: 48px;
   font-size: 16px;
   padding: 0 22px;
-}
-
-.c0:hover {
-  background-color: #99caff;
 }
 
 .c0:disabled {
@@ -117,10 +105,6 @@ exports[`Button size medium sets height and font-size 1`] = `
   padding: 0 18px;
 }
 
-.c0:hover {
-  background-color: #99caff;
-}
-
 .c0:disabled {
   opacity: 0.25;
 }
@@ -148,10 +132,6 @@ exports[`Button size small sets height and font-size 1`] = `
   height: 32px;
   font-size: 12px;
   padding: 0 12px;
-}
-
-.c0:hover {
-  background-color: #99caff;
 }
 
 .c0:disabled {

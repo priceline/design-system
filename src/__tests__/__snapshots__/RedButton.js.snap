@@ -19,20 +19,12 @@ exports[`RedButton renders 1`] = `
   padding: 0 18px;
 }
 
-.c1:hover {
-  background-color: #99caff;
-}
-
 .c1:disabled {
   opacity: 0.25;
 }
 
 .c0 {
   background-color: #c00;
-}
-
-.c0:hover {
-  background-color: #eb9999;
 }
 
 <button

@@ -19,26 +19,20 @@ exports[`OutlineButton renders 1`] = `
   padding: 0 18px;
 }
 
-.c1:hover {
-  background-color: #99caff;
-}
-
 .c1:disabled {
   opacity: 0.25;
 }
 
 .c0 {
-  background-color: #fff;
-  color: #007aff;
+  background-color: transparent;
   border-width: 2px;
-  border-color: #007aff;
-}
-
-.c0:hover {
-  background-color: #fff;
+  border-style: solid;
+  border-color: currentcolor;
+  color: #007aff;
 }
 
 <button
   className="c0 c1"
+  color="blue"
 />
 `;

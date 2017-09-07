@@ -19,20 +19,12 @@ exports[`GreenButton renders 1`] = `
   padding: 0 18px;
 }
 
-.c1:hover {
-  background-color: #99caff;
-}
-
 .c1:disabled {
   opacity: 0.25;
 }
 
 .c0 {
   background-color: #0a0;
-}
-
-.c0:hover {
-  background-color: #99dd99;
 }
 
 <button
