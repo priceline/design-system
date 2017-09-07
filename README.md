@@ -24,6 +24,7 @@ npm install pcln-design-system
 - [`<Heading />`](docs/Heading.md)
 - [`<Box />`](docs/Box.md)
 - [`<Flex />`](docs/Flex.md)
+- [`<Link />`](docs/Link.md)
 - [`<Icon />`](docs/Icon.md)
 - [`<Image />`](docs/Image.md)
 - [`<BackgroundImage />`](docs/BackgroundImage.md)
