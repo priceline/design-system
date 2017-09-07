@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GreenButton renders 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  width: initial;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:hover {
+  background-color: #99caff;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c0 {
+  background-color: #0a0;
+}
+
+.c0:hover {
+  background-color: #99dd99;
+}
+
+<button
+  className="c0 c1"
+/>
+`;

@@ -60,7 +60,10 @@
       "lcov",
       "html"
     ],
-    "collectCoverage": true
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "dist/"
+    ]
   },
   "dependencies": {
     "chroma-js": "^1.3.4",

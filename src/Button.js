@@ -7,36 +7,29 @@ import { theme } from '../'
 const size = props => {
   switch(props.size) {
     case 'small':
-      return { 
+      return {
         height: '32px',
         fontSize: `${theme.fontSizes[0]}px`,
         padding: '0 12px'
       }
-      break
-
     case 'medium':
       return {
         height: '40px',
         fontSize: `${theme.fontSizes[1]}px`,
         padding: '0 18px'
       }
-      break
-
     case 'large':
       return {
         height: '48px',
         fontSize: `${theme.fontSizes[2]}px`,
         padding: '0 22px'
       }
-      break
-
     default:
       return {
         height: '40px',
         fontSize: `${theme.fontSizes[1]}px`,
         padding: '0 18px'
       }
-      break
   }
 }
 
@@ -53,7 +46,7 @@ const Button = styled.button`
   color: ${props => props.theme.colors.white};
   border-width: 0;
   border-style: solid;
-  
+
   &:hover {
     background-color: ${props => props.theme.colors.blue1};
   }
