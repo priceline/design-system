@@ -3,6 +3,11 @@
 exports[`ThemeProvider Base component includes a font 1`] = `
 .c0 {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -13,6 +18,11 @@ exports[`ThemeProvider Base component includes a font 1`] = `
 exports[`ThemeProvider renders 1`] = `
 .c0 {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -23,6 +33,11 @@ exports[`ThemeProvider renders 1`] = `
 exports[`ThemeProvider renders with legacy prop 1`] = `
 .c0 {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
