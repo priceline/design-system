@@ -13,6 +13,7 @@ The following links can be useful to understand how flexbox works:
 - [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 
 Additionally you should be aware of flexbox's bugs and limitations, especially in regards to IE11 support.
+Generally the Design System layout components should work as expected in IE11, but it's always good to test.
 
 See the [Flexbugs](https://github.com/philipwalton/flexbugs) project for more information.
 
@@ -50,10 +51,12 @@ These props are shorthands for `margin-top`, `margin-right`, `margin-bottom`, an
 
 ### Shorthand Syntax
 
-Much like other libraries, including [Tachyons][tachyons] and [Basscss][bass],
+Much like other libraries, including [Tachyons][tachyons], [Bootstrap][bs], and [Basscss][bass],
 the Box component uses a shorthand syntax for margin and padding.
 This has a little bit of a learning curve and requires some internalization,
 but due to the heavy use of these properties it can help with development velocity.
+
+[bs]: https://getbootstrap.com/docs/4.0/utilities/spacing/
 
 Shorthand | Meaning
 ---|---
