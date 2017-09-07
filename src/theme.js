@@ -110,6 +110,8 @@ export const colors = Object.assign({}, {
   flatten('purple', purples)
 )
 
+export const radius = '2px'
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -118,7 +120,8 @@ const theme = {
   fontSizes,
   regular,
   bold,
-  colors
+  colors,
+  radius
 }
 
 export default theme

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutlineButton renders 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c0 {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: currentcolor;
+  color: #007aff;
+}
+
+<button
+  className="c0 c1"
+  color="blue"
+/>
+`;

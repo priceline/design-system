@@ -7,6 +7,7 @@
 - [`<Heading />`](Heading.md)
 - [`<Box />`](Box.md)
 - [`<Flex />`](Flex.md)
+- [`<Button />`](Button.md)
 - [`<Link />`](Link.md)
 - [`<Icon />`](Icon.md)
 - [`<Image />`](Image.md)
