@@ -49,10 +49,6 @@ const Button = styled.button`
   border-width: 0;
   border-style: solid;
 
-  &:hover {
-    background-color: ${props => props.theme.colors.blue1};
-  }
-
   &:disabled {
     opacity: 0.25;
   }
