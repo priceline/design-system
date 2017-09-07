@@ -56,7 +56,6 @@ We hope to accomplish these goals by:
 - Serving as the standard for Priceline.com's visual language
 - Providing easy-to-use and extensible components for anyone to consume
 
-
 [site]: https://pricelinelabs.github.io/design-system/
 
 [MIT License](LICENSE.md)
