@@ -90,6 +90,7 @@ Object {
     "@media screen and (min-width:48em)",
     "@media screen and (min-width:64em)",
   ],
+  "radius": "2px",
   "regular": 400,
   "space": Array [
     0,

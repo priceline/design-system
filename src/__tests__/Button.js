@@ -37,10 +37,4 @@ describe('Button', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('width', '100%')
   })
-
-  test('radius prop sets a custom button radius', () => {
-    const json = renderer.create(<Button radius='5px' theme={theme} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-radius', '5px')
-  })
 })

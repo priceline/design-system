@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { fontSize, space } from 'styled-system'
+import { space } from 'styled-system'
 import { theme } from '../'
 
 const size = props => {
@@ -33,6 +33,8 @@ const size = props => {
   }
 }
 
+const fullWidth = props => props.fullWidth ? ({ width: '100%' }) : null
+
 const Button = styled.button`
   display: inline-block;
   vertical-align: middle;
@@ -41,7 +43,7 @@ const Button = styled.button`
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
-  border-radius: ${props => props.radius ? props.radius : '2px'};
+  border-radius: ${props => props.theme.radius};
   background-color: ${props => props.theme.colors.blue};
   color: ${props => props.theme.colors.white};
   border-width: 0;
@@ -55,8 +57,8 @@ const Button = styled.button`
     opacity: 0.25;
   }
 
-  width: ${props => props.fullWidth ? '100%' : 'initial' };
-
+  ${fullWidth}
+  ${space}
   ${size}
 `
 
@@ -67,12 +69,13 @@ const numberStringOrArray = PropTypes.oneOfType([
 ])
 
 Button.propTypes = {
-  radius: PropTypes.string,
-
   /** Size */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf([
+    'small',
+    'medium',
+    'large'
+  ]),
   fullWidth: PropTypes.bool,
-
   /** Margin */
   m: numberStringOrArray,
   mt: numberStringOrArray,

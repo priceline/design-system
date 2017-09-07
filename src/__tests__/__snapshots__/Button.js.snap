@@ -33,40 +33,6 @@ exports[`Button fullWidth prop sets width to 100% 1`] = `
 />
 `;
 
-exports[`Button radius prop sets a custom button radius 1`] = `
-.c0 {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: #007aff;
-  color: #fff;
-  border-width: 0;
-  border-style: solid;
-  width: initial;
-  height: 40px;
-  font-size: 14px;
-  padding: 0 18px;
-}
-
-.c0:hover {
-  background-color: #99caff;
-}
-
-.c0:disabled {
-  opacity: 0.25;
-}
-
-<button
-  className="c0"
-  radius="5px"
-/>
-`;
-
 exports[`Button renders 1`] = `
 .c0 {
   display: inline-block;
@@ -81,7 +47,6 @@ exports[`Button renders 1`] = `
   color: #fff;
   border-width: 0;
   border-style: solid;
-  width: initial;
   height: 40px;
   font-size: 14px;
   padding: 0 18px;
@@ -114,7 +79,6 @@ exports[`Button size large sets height and font-size 1`] = `
   color: #fff;
   border-width: 0;
   border-style: solid;
-  width: initial;
   height: 48px;
   font-size: 16px;
   padding: 0 22px;
@@ -148,7 +112,6 @@ exports[`Button size medium sets height and font-size 1`] = `
   color: #fff;
   border-width: 0;
   border-style: solid;
-  width: initial;
   height: 40px;
   font-size: 14px;
   padding: 0 18px;
@@ -182,7 +145,6 @@ exports[`Button size small sets height and font-size 1`] = `
   color: #fff;
   border-width: 0;
   border-style: solid;
-  width: initial;
   height: 32px;
   font-size: 12px;
   padding: 0 12px;

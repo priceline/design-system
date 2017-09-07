@@ -14,7 +14,6 @@ exports[`GreenButton renders 1`] = `
   color: #fff;
   border-width: 0;
   border-style: solid;
-  width: initial;
   height: 40px;
   font-size: 14px;
   padding: 0 18px;
