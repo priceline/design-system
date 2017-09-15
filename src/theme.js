@@ -89,7 +89,7 @@ const reds = tints.map(tint(red))
 const oranges = tints.map(tint(orange))
 const purples = tints.map(tint(purple))
 
-export const colors = {...{
+export const colors = {
   black,
   white,
   text,
@@ -103,8 +103,7 @@ export const colors = {...{
   greens,
   reds,
   oranges,
-  purples
-},
+  purples,
   ...flatten('blue', blues),
   ...flatten('gray', grays),
   ...flatten('green', greens),
