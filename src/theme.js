@@ -6,7 +6,7 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get() {
+      get () {
         return this[i]
       }
     })
@@ -69,9 +69,12 @@ const purple = '#7600bb'
 
 // tints
 const flatten = (name, colors) => colors
-  .reduce((a, b, i) => Object.assign(a, {
-    [name + i]: b
-  }), {})
+  .reduce((a, b, i) => {
+    const color = {
+      [name + i]: b
+    }
+    return {...a, ...color}
+  }, {})
 
 const tints = [
   0.2,
@@ -86,7 +89,7 @@ const reds = tints.map(tint(red))
 const oranges = tints.map(tint(orange))
 const purples = tints.map(tint(purple))
 
-export const colors = Object.assign({}, {
+export const colors = {...{
   black,
   white,
   text,
@@ -102,13 +105,13 @@ export const colors = Object.assign({}, {
   oranges,
   purples
 },
-  flatten('blue', blues),
-  flatten('gray', grays),
-  flatten('green', greens),
-  flatten('red', reds),
-  flatten('orange', oranges),
-  flatten('purple', purples)
-)
+  ...flatten('blue', blues),
+  ...flatten('gray', grays),
+  ...flatten('green', greens),
+  ...flatten('red', reds),
+  ...flatten('orange', oranges),
+  ...flatten('purple', purples)
+}
 
 export const radius = '2px'
 

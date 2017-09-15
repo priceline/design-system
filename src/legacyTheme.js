@@ -71,8 +71,6 @@ export const colors = {
   orange3
 }
 
-const legacyTheme = Object.assign({}, theme, {
-  colors
-})
+const legacyTheme = {...theme, colors: {...colors}}
 
 export default legacyTheme
