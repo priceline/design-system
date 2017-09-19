@@ -2,10 +2,13 @@ import styled from 'styled-components'
 import { space, width, color } from 'styled-system'
 import PropTypes from 'prop-types'
 
+const visibility = responsiveStyle('visibility', 'visibility')
+
 const Box = styled.div`
   ${space}
   ${width}
   ${color}
+  ${visibility}
 `
 
 Box.displayName = 'Box'
