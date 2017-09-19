@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { space, width, color } from 'styled-system'
+import { space, width, color, responsiveStyle } from 'styled-system'
 import PropTypes from 'prop-types'
 
 const visibility = responsiveStyle('visibility', 'visibility')
