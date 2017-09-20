@@ -53,6 +53,7 @@
     "react-test-renderer": "^15.6.1",
     "standard": "^10.0.2",
     "styled-components": "^2.1.1",
+    "stylis": "^3.2.16",
     "svgi": "^1.1.0"
   },
   "jest": {
