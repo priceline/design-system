@@ -13,3 +13,8 @@ storiesOf('Link', module)
       Open the Priceline Home in the same window
     </Link>
   ))
+  .add('Color', () => (
+    <Link color='gray3'>
+      I'm a different color!
+    </Link>
+  ))
