@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { fontSize, space, color, responsiveStyle } from 'styled-system'
 
-// export const align = props => props.align ? { textAlign: props.align } : null
-
 export const caps = props => props.caps
   ? {
     textTransform: 'uppercase',
