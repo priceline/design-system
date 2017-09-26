@@ -5,17 +5,12 @@ import {
   detectWebPSupport
 } from './helpers'
 
-const image = props => {
+const image = props => (
   /* istanbul ignore next */
-  const isWebP = props.useWebP && detectWebPSupport()
-  /* istanbul ignore next */
-  const finalImage = isWebP
-    ? props.imageWebP : props.image
-
-  return finalImage
-    ? { backgroundImage: `url(${finalImage})` }
-    : null
-}
+  (props.imageWebP && detectWebPSupport())
+    ? { backgroundImage: `url(${props.imageWebP})` }
+    : { backgroundImage: `url(${props.image})` }
+)
 
 const height = props => props.height
   ? { height: props.height }
@@ -34,12 +29,7 @@ BackgroundImage.displayName = 'BackgroundImage'
 BackgroundImage.propTypes = {
   /** background-image url */
   image: PropTypes.string,
-  imageWebP: PropTypes.string,
-  useWebP: PropTypes.bool
-}
-
-BackgroundImage.defaultProps = {
-  useWebP: false
+  imageWebP: PropTypes.string
 }
 
 export default BackgroundImage
