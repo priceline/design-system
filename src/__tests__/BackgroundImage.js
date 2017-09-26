@@ -9,13 +9,6 @@ describe('BackgroundImage', () => {
     expect(json).toMatchSnapshot()
   })
 
-  // test('renders with image with webp', () => {
-  //   const json = renderer.create(
-  //     <BackgroundImage webP imageWebP='hello.webp' image='hello.png' theme={theme} />
-  //   ).toJSON()
-  //   expect(json).toMatchSnapshot()
-  // })
-
   test('renders with image without webp', () => {
     const json = renderer.create(
       <BackgroundImage webP={false} image='hello.png' theme={theme} />
