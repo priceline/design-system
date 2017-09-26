@@ -7,7 +7,7 @@ import {
 
 const image = props => {
   /* istanbul ignore next */
-  const isWebP = props.webP && detectWebPSupport()
+  const isWebP = props.useWebP && detectWebPSupport()
   /* istanbul ignore next */
   const finalImage = isWebP
     ? props.imageWebP : props.image
@@ -35,11 +35,11 @@ BackgroundImage.propTypes = {
   /** background-image url */
   image: PropTypes.string,
   imageWebP: PropTypes.string,
-  webP: PropTypes.bool
+  useWebP: PropTypes.bool
 }
 
 BackgroundImage.defaultProps = {
-  webP: false
+  useWebP: false
 }
 
 export default BackgroundImage

@@ -28,7 +28,7 @@ exports[`BackgroundImage renders with height 1`] = `
 />
 `;
 
-exports[`BackgroundImage renders with image without webp 1`] = `
+exports[`BackgroundImage renders with image 1`] = `
 .c0 {
   background-image: url(hello.png);
   background-color: #596b7d;

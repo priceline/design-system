@@ -5,7 +5,10 @@ Use the `<BackgroundImage />` component to set a background image.
 
 ```jsx
 <BackgroundImage
-  image='hello.png'>
+  useWebP
+  imageWebP={imageWebP}
+  image={image}
+>
   Hello
 </BackgroundImage>
 ```

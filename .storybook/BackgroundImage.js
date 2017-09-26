@@ -23,7 +23,7 @@ storiesOf('BackgroundImage', module)
   ))
   .add('With WebP Support', () => (
     <Box width={320}>
-      <BackgroundImage webP imageWebP={imageWebP} image={image}>
+      <BackgroundImage useWebP imageWebP={imageWebP} image={image}>
         <Box p={4}>
           <Text
             fontSize={6}
