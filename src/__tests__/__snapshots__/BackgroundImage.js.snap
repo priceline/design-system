@@ -2,6 +2,7 @@
 
 exports[`BackgroundImage renders 1`] = `
 .c0 {
+  background-image: url(undefined);
   background-color: #596b7d;
   background-position: center;
   background-size: cover;
@@ -15,6 +16,7 @@ exports[`BackgroundImage renders 1`] = `
 
 exports[`BackgroundImage renders with height 1`] = `
 .c0 {
+  background-image: url(undefined);
   height: 320px;
   background-color: #596b7d;
   background-position: center;

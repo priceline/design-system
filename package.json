@@ -62,7 +62,8 @@
     ],
     "collectCoverage": true,
     "coveragePathIgnorePatterns": [
-      "dist/"
+      "dist/",
+      "src/helpers/webp-support.js"
     ]
   },
   "dependencies": {

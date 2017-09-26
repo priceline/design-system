@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const image = props => props.image
-  ? { backgroundImage: `url(${props.image})` }
-  : null
+import {
+  detectWebPSupport
+} from './helpers'
+
+const image = props => (
+  /* istanbul ignore next */
+  (props.imageWebP && detectWebPSupport())
+    ? { backgroundImage: `url(${props.imageWebP})` }
+    : { backgroundImage: `url(${props.image})` }
+)
 
 const height = props => props.height
   ? { height: props.height }
@@ -17,10 +24,12 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 `
+BackgroundImage.displayName = 'BackgroundImage'
 
 BackgroundImage.propTypes = {
   /** background-image url */
-  image: PropTypes.string
+  image: PropTypes.string,
+  imageWebP: PropTypes.string
 }
 
 export default BackgroundImage
