@@ -28,6 +28,7 @@ const Comparison = ({ keys }) => (
   <Flex wrap>
     {keys.map(key => (
       <Box
+        w={[1/3, 1/4, 1/5]}
         key={key}
         mr={3}
         mb={3}>
