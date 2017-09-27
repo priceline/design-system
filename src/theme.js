@@ -1,4 +1,4 @@
-import { tint } from './color'
+import { darken, brighten } from './color'
 
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
@@ -76,18 +76,12 @@ const flatten = (name, colors) => colors
     return {...a, ...color}
   }, {})
 
-const tints = [
-  0.2,
-  0.4,
-  0.6,
-  0.8
-]
-const blues = tints.map(tint(blue))
-const grays = tints.map(tint(gray))
-const greens = tints.map(tint(green))
-const reds = tints.map(tint(red))
-const oranges = tints.map(tint(orange))
-const purples = tints.map(tint(purple))
+const blues = [brighten(blue), blue, darken(blue)]
+const grays = [brighten(gray), gray, darken(gray)]
+const greens = [brighten(green), green, darken(green)]
+const reds = [brighten(red), red, darken(red)]
+const oranges = [brighten(orange), orange, darken(orange)]
+const purples = [brighten(purple), purple, darken(purple)]
 
 export const colors = {
   black,

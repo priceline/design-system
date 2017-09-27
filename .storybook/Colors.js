@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { Box, Text, theme, legacyTheme } from '../src'
+import { Box, Flex, Text, theme, legacyTheme } from '../src'
 
 const keys = Object.keys(theme.colors)
   .filter(key => !Array.isArray(theme.colors[key]))
@@ -16,30 +16,26 @@ const Chip = props => <Box width={1} px={5} py={4} bg={props.color} />
 
 const Pre = Text.withComponent('pre')
 
-const InlineBlock = styled(Box)`
-  display: inline-block;
-`
-
 const Card = props => (
-  <InlineBlock p={3}>
+  <Box p={3} w={[1/3, 1/4, 1/5]}>
     <Chip color={props.color} />
     <Text f={0}>{props.name}</Text>
     <Pre m={0}>{props.color}</Pre>
-  </InlineBlock>
+  </Box>
 )
 
 const Comparison = ({ keys }) => (
-  <div>
+  <Flex wrap>
     {keys.map(key => (
-      <InlineBlock
+      <Box
         key={key}
         mr={3}
         mb={3}>
         <Card name={key} color={theme.colors[key]} />
         <Card name={key} color={legacyTheme.colors[key]} />
-      </InlineBlock>
+      </Box>
     ))}
-  </div>
+  </Flex>
 )
 
 storiesOf('Color', module)
@@ -48,13 +44,15 @@ storiesOf('Color', module)
       <Box p={3}>
         <h1>Color Palette</h1>
       </Box>
-      {next.map(color => (
-        <Card
-          key={color.key}
-          name={color.key}
-          color={color.value}
-        />
-      ))}
+      <Flex wrap>
+        {next.map(color => (
+          <Card
+            key={color.key}
+            name={color.key}
+            color={color.value}
+          />
+        ))}
+      </Flex>
     </div>
   ))
   .add('Legacy palette', () => (
@@ -62,13 +60,15 @@ storiesOf('Color', module)
       <Box p={3}>
         <h1>Legacy Color Palette</h1>
       </Box>
-      {legacy.map(color => (
-        <Card
-          key={color.key}
-          name={color.key}
-          color={color.value}
-        />
-      ))}
+      <Flex wrap>
+        {legacy.map(color => (
+          <Card
+            key={color.key}
+            name={color.key}
+            color={color.value}
+          />
+        ))}
+      </Flex>
     </div>
   ))
   .add('Old vs. New', () => (
