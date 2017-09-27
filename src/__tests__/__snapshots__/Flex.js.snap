@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flex align prop 1`] = `
+.c1 {
+  text-align: center;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,7 +17,7 @@ exports[`Flex align prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0 c1"
 />
 `;
 
