@@ -1,5 +1,3 @@
-import { tint } from './color'
-
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
 const addAliases = (arr, aliases) =>
