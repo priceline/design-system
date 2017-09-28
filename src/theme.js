@@ -59,13 +59,25 @@ export const bold = 700
 // color palette
 const black = '#000'
 const white = '#fff'
-const text = '#001731'
-const blue = '#007aff'
-const gray = '#596b7d'
-const green = '#0a0'
-const red = '#c00'
-const orange = '#f90'
-const purple = '#7600bb'
+const text = '#001833'
+const blue = '#007aff' // primary
+const lightBlue = '#cdf'
+const darkBlue = '#049'
+const gray = '#687B8E' // primary
+const lightGray = '#f0f2f4'
+const darkGray = '#364049'
+const green = '#0a0' // secondary
+const lightGreen = '#cec'
+const darkGreen = '#060'
+const red = '#c00' // secondary
+const lightRed = '#fcc'
+const darkRed = '#800'
+const orange = '#f90' // secondary
+const lightOrange = '#fec'
+const darkOrange = '#950'
+const purple = '#70b' // secondary
+const lightPurple = '#ecf'
+const darkPurple = '#407'
 
 // tints
 const flatten = (name, colors) => colors
@@ -82,23 +94,35 @@ const tints = [
   0.6,
   0.8
 ]
-const blues = tints.map(tint(blue))
-const grays = tints.map(tint(gray))
-const greens = tints.map(tint(green))
-const reds = tints.map(tint(red))
-const oranges = tints.map(tint(orange))
-const purples = tints.map(tint(purple))
+const blues = [lightBlue, blue, darkBlue]
+const grays = [lightGray, gray, darkGray]
+const greens = [lightGreen, green, darkGreen]
+const reds = [lightRed, red, darkRed]
+const oranges = [lightOrange, orange, darkOrange]
+const purples = [lightPurple, purple, darkPurple]
 
 export const colors = {
   black,
   white,
   text,
   blue,
+  lightBlue,
+  darkBlue,
   gray,
+  lightGray,
+  darkGray,
   green,
+  lightGreen,
+  darkGreen,
   red,
+  lightRed,
+  darkRed,
   orange,
+  lightOrange,
+  darkOrange,
   purple,
+  lightPurple,
+  darkPurple,
   blues,
   greens,
   reds,
