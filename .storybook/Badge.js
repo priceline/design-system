@@ -3,17 +3,17 @@ import { storiesOf } from '@storybook/react'
 import { Badge } from '../src'
 
 storiesOf('Badge', module)
-  .add('defoult', () => (
+  .add('default', () => (
     <Badge>
-      DEFOULT
+      DEFAULT
     </Badge>
   ))
-  .add('informaton', () => (
+  .add('information', () => (
     <Badge type='information'>
       INFORMATION
     </Badge>
   ))
-  .add('informaton-light', () => (
+  .add('information-light', () => (
     <Badge type='information-light'>
       INFORMATION
     </Badge>
