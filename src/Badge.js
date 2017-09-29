@@ -56,12 +56,8 @@ const type = props => {
 
 
 const Badge = styled.div`
-  height: 24px;
-  line-height:24px;
   border-radius: 99999px; 
   display: inline-block;
-  vertical-align: middle;
-  text-align: center;
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
   ${type}
@@ -69,7 +65,8 @@ const Badge = styled.div`
 `
 
 Badge.defaultProps = {
-  px:2
+  px:2,
+  py:1
 }
 
 const numberStringOrArray = PropTypes.oneOfType([
@@ -80,7 +77,8 @@ const numberStringOrArray = PropTypes.oneOfType([
 
 Badge.propTypes = {
   type: PropTypes.string,
-  px: numberStringOrArray
+  px: numberStringOrArray,
+  py: numberStringOrArray
 }
 
 Badge.displayName = 'Badge'

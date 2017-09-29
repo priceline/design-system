@@ -45,6 +45,6 @@ storiesOf('Badge', module)
   ))
   .add('attention-light', () => (
     <Badge type='attention-light'>
-      ATTENTION
+      ATTENTION 
     </Badge>
   ))
