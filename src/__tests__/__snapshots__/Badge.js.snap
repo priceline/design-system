@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge renders 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge type attention sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #f90;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  type="attention"
+/>
+`;
+
+exports[`Badge type attention-light sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #ffebcc;
+  color: #000;
+}
+
+<div
+  className="c0"
+  type="attention-light"
+/>
+`;
+
+exports[`Badge type information sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  type="information"
+/>
+`;
+
+exports[`Badge type information-light sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #cce4ff;
+  color: #000;
+}
+
+<div
+  className="c0"
+  type="information-light"
+/>
+`;
+
+exports[`Badge type success sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  type="success"
+/>
+`;
+
+exports[`Badge type success-light sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #cceecc;
+  color: #000;
+}
+
+<div
+  className="c0"
+  type="success-light"
+/>
+`;
+
+exports[`Badge type warning sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  type="warning"
+/>
+`;
+
+exports[`Badge type warning-light sets background-color and color 1`] = `
+.c0 {
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #f5cccc;
+  color: #000;
+}
+
+<div
+  className="c0"
+  type="warning-light"
+/>
+`;
