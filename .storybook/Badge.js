@@ -1,50 +1,55 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 import { Badge } from '../src'
+import { YelowBadge } from '../src'
 
 storiesOf('Badge', module)
-  .add('default', () => (
-    <Badge>
-      DEFAULT
+  .add('Typography component', withInfo({
+    inline: true,
+    text: 'Use the <Badge /> component to render a primitive badge.'
+  })(() => (
+    <Badge bg='blue'>
+      INFORMATION
     </Badge>
-  ))
-  .add('information', () => (
-    <Badge type='information'>
+  )))
+  .add('blue', () => (
+    <Badge bg='blue'>
       INFORMATION
     </Badge>
   ))
-  .add('information-light', () => (
-    <Badge type='information-light'>
+  .add('blue-light', () => (
+    <Badge bg='blue-light'>
       INFORMATION
     </Badge>
   ))
-  .add('success', () => (
-    <Badge type='success'>
+  .add('green', () => (
+    <Badge bg='green'>
       SUCCESS
     </Badge>
   ))
-  .add('success-light', () => (
-    <Badge type='success-light'>
+  .add('green-light', () => (
+    <Badge bg='green-light'>
       SUCCESS
     </Badge>
   ))
-  .add('warning', () => (
-    <Badge type='warning'>
+  .add('red', () => (
+    <Badge bg='red'>
       WARNING
     </Badge>
   ))
-  .add('warning-light', () => (
-    <Badge type='warning-light'>
+  .add('red-light', () => (
+    <Badge bg='red-light'>
       WARNING
     </Badge>
   ))
-  .add('attention', () => (
-    <Badge type='attention'>
+  .add('orange', () => (
+    <Badge bg='orange'>
       ATTENTION
     </Badge>
   ))
-  .add('attention-light', () => (
-    <Badge type='attention-light'>
+  .add('orange-light', () => (
+    <Badge bg='orange-light'>
       ATTENTION 
     </Badge>
   ))

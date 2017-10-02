@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge renders 1`] = `
+exports[`Badge bg blue sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -19,67 +19,7 @@ exports[`Badge renders 1`] = `
 />
 `;
 
-exports[`Badge type attention sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  background-color: #f90;
-  color: #fff;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-<div
-  className="c0"
-  type="attention"
-/>
-`;
-
-exports[`Badge type attention-light sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  background-color: #ffebcc;
-  color: #000;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-<div
-  className="c0"
-  type="attention-light"
-/>
-`;
-
-exports[`Badge type information sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  background-color: #007aff;
-  color: #fff;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-<div
-  className="c0"
-  type="information"
-/>
-`;
-
-exports[`Badge type information-light sets background-color and color 1`] = `
+exports[`Badge bg blue-light sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -95,11 +35,10 @@ exports[`Badge type information-light sets background-color and color 1`] = `
 
 <div
   className="c0"
-  type="information-light"
 />
 `;
 
-exports[`Badge type success sets background-color and color 1`] = `
+exports[`Badge bg green sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -115,11 +54,10 @@ exports[`Badge type success sets background-color and color 1`] = `
 
 <div
   className="c0"
-  type="success"
 />
 `;
 
-exports[`Badge type success-light sets background-color and color 1`] = `
+exports[`Badge bg green-light sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -135,11 +73,48 @@ exports[`Badge type success-light sets background-color and color 1`] = `
 
 <div
   className="c0"
-  type="success-light"
 />
 `;
 
-exports[`Badge type warning sets background-color and color 1`] = `
+exports[`Badge bg orange sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #f90;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg orange-light sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ffebcc;
+  color: #000;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg red sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -155,11 +130,10 @@ exports[`Badge type warning sets background-color and color 1`] = `
 
 <div
   className="c0"
-  type="warning"
 />
 `;
 
-exports[`Badge type warning-light sets background-color and color 1`] = `
+exports[`Badge bg red-light sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -175,6 +149,22 @@ exports[`Badge type warning-light sets background-color and color 1`] = `
 
 <div
   className="c0"
-  type="warning-light"
+/>
+`;
+
+exports[`Badge renders 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
 />
 `;

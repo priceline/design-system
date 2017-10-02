@@ -4,54 +4,44 @@ import styled from 'styled-components'
 import { space } from 'styled-system'
 import { theme } from '../'
 
-const type = props => {
-  switch(props.type) {
-    case 'success':
-      return {
-        backgroundColor: theme.colors.green,
-        color: theme.colors.white
-      }
-    case 'success-light':
-      return {
-        backgroundColor: theme.colors.green0,
-        color: theme.colors.black
-      }
-    case 'warning':
-      return {
-        backgroundColor: theme.colors.red,
-        color: theme.colors.white
-      }
-    case 'warning-light':
-      return {
-        backgroundColor: theme.colors.red0,
-        color: theme.colors.black
-      }
-    case 'attention':
-      return {
-        backgroundColor: theme.colors.orange,
-        color: theme.colors.white
-      }
-    case 'attention-light':
-      return {
-        backgroundColor: theme.colors.orange0,
-        color: theme.colors.black
-      }
-    case 'information':
-      return {
-        backgroundColor: theme.colors.blue,
-        color: theme.colors.white
-      }
-    case 'information-light':
-      return {
-        backgroundColor: theme.colors.blue0,
-        color: theme.colors.black
-      }
-    default:
-      return {
-        backgroundColor: theme.colors.blue,
-        color: theme.colors.white
-      }
+
+function type( props ){
+  const badgeColors = {
+    'green': {
+      backgroundColor: theme.colors.green,
+      color: theme.colors.white
+    },
+    'green-light': {
+      backgroundColor: theme.colors.green0,
+      color: theme.colors.black
+    },
+    'red': {
+      backgroundColor: theme.colors.red,
+      color: theme.colors.white
+    },
+    'red-light': {
+      backgroundColor: theme.colors.red0,
+      color: theme.colors.black
+    },
+    'orange': {
+      backgroundColor: theme.colors.orange,
+      color: theme.colors.white
+    },
+    'orange-light': {
+      backgroundColor: theme.colors.orange0,
+      color: theme.colors.black
+    },
+    'blue': {
+      backgroundColor: theme.colors.blue,
+      color: theme.colors.white
+    },
+    'blue-light': {
+      backgroundColor: theme.colors.blue0,
+      color: theme.colors.black
+    }
   }
+
+  return badgeColors[props.bg]
 }
 
 
