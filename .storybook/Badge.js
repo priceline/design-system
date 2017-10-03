@@ -1,10 +1,11 @@
+import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Badge } from '../src'
 import { YelowBadge } from '../src'
 
 storiesOf('Badge', module)
-  .add('Typography component', withInfo({
+  .add('Badge component', withInfo({
     inline: true,
     text: 'Use the <Badge /> component to render a primitive badge.'
   })(() => (
