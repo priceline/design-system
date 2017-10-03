@@ -58,23 +58,24 @@ export const bold = 700
 const black = '#000'
 const white = '#fff'
 const text = '#001833'
-const blue = '#007aff' // primary
 const lightBlue = '#cdf'
+const blue = '#007aff' // primary
 const darkBlue = '#049'
+const lighterGray = '#f0f2f4'
+const lightGray = '#abb7c2'
 const gray = '#687B8E' // primary
-const lightGray = '#f0f2f4'
 const darkGray = '#364049'
-const green = '#0a0' // secondary
 const lightGreen = '#cec'
+const green = '#0a0' // secondary
 const darkGreen = '#060'
-const red = '#c00' // secondary
 const lightRed = '#fcc'
+const red = '#c00' // secondary
 const darkRed = '#800'
-const orange = '#f90' // secondary
 const lightOrange = '#fec'
+const orange = '#f90' // secondary
 const darkOrange = '#950'
-const purple = '#70b' // secondary
 const lightPurple = '#ecf'
+const purple = '#70b' // secondary
 const darkPurple = '#407'
 
 // tints
@@ -93,7 +94,7 @@ const tints = [
   0.8
 ]
 const blues = [lightBlue, blue, darkBlue]
-const grays = [lightGray, gray, darkGray]
+const grays = [lighterGray, lightGray, gray, darkGray]
 const greens = [lightGreen, green, darkGreen]
 const reds = [lightRed, red, darkRed]
 const oranges = [lightOrange, orange, darkOrange]
@@ -107,6 +108,7 @@ export const colors = {
   lightBlue,
   darkBlue,
   gray,
+  lighterGray,
   lightGray,
   darkGray,
   green,
