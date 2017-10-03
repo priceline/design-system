@@ -1,11 +1,9 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space } from 'styled-system'
 import { theme } from '../'
 
-
-function type( props ){
+function type (props) {
   const badgeColors = {
     'green': {
       backgroundColor: theme.colors.green,
@@ -44,7 +42,6 @@ function type( props ){
   return badgeColors[props.bg]
 }
 
-
 const Badge = styled.div`
   border-radius: 99999px; 
   display: inline-block;
@@ -55,8 +52,8 @@ const Badge = styled.div`
 `
 
 Badge.defaultProps = {
-  px:2,
-  py:1
+  px: 2,
+  py: 1
 }
 
 const numberStringOrArray = PropTypes.oneOfType([
@@ -66,7 +63,7 @@ const numberStringOrArray = PropTypes.oneOfType([
 ])
 
 Badge.propTypes = {
-  type: PropTypes.string,
+  bg: PropTypes.string,
   px: numberStringOrArray,
   py: numberStringOrArray
 }
