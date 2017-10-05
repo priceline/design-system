@@ -13,6 +13,7 @@ describe('Truncate', () => {
     const json = renderer.create(<Truncate>generates styles</Truncate>).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('overflow', 'hidden')
+    expect(json).toHaveStyleRule('white-space', 'nowrap')
     expect(json).toHaveStyleRule('text-overflow', 'ellipsis')
   })
 })
