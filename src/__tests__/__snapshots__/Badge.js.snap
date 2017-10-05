@@ -19,7 +19,7 @@ exports[`Badge bg blue sets background-color and color 1`] = `
 />
 `;
 
-exports[`Badge bg blue-light sets background-color and color 1`] = `
+exports[`Badge bg lightBlue sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -57,7 +57,7 @@ exports[`Badge bg green sets background-color and color 1`] = `
 />
 `;
 
-exports[`Badge bg green-light sets background-color and color 1`] = `
+exports[`Badge bg lightGreen sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -95,7 +95,7 @@ exports[`Badge bg orange sets background-color and color 1`] = `
 />
 `;
 
-exports[`Badge bg orange-light sets background-color and color 1`] = `
+exports[`Badge bg lightOrange sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -133,7 +133,7 @@ exports[`Badge bg red sets background-color and color 1`] = `
 />
 `;
 
-exports[`Badge bg red-light sets background-color and color 1`] = `
+exports[`Badge bg lightRed sets background-color and color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;

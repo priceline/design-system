@@ -18,8 +18,8 @@ storiesOf('Badge', module)
       INFORMATION
     </Badge>
   ))
-  .add('blue-light', () => (
-    <Badge bg='blue-light'>
+  .add('lightBlue', () => (
+    <Badge bg='lightBlue'>
       INFORMATION
     </Badge>
   ))
@@ -28,8 +28,8 @@ storiesOf('Badge', module)
       SUCCESS
     </Badge>
   ))
-  .add('green-light', () => (
-    <Badge bg='green-light'>
+  .add('lightGreen', () => (
+    <Badge bg='lightGreen'>
       SUCCESS
     </Badge>
   ))
@@ -38,8 +38,8 @@ storiesOf('Badge', module)
       WARNING
     </Badge>
   ))
-  .add('red-light', () => (
-    <Badge bg='red-light'>
+  .add('lightRed', () => (
+    <Badge bg='lightRed'>
       WARNING
     </Badge>
   ))
@@ -48,8 +48,8 @@ storiesOf('Badge', module)
       ATTENTION
     </Badge>
   ))
-  .add('orange-light', () => (
-    <Badge bg='orange-light'>
+  .add('lightOrange', () => (
+    <Badge bg='lightOrange'>
       ATTENTION 
     </Badge>
   ))
