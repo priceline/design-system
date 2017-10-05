@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { fontSize, space, color } from 'styled-system'
-
-export const align = props => props.align ? { textAlign: props.align } : null
+import { fontSize, space, color, responsiveStyle } from 'styled-system'
 
 export const caps = props => props.caps
   ? {
@@ -13,13 +11,15 @@ export const caps = props => props.caps
 
 export const bold = props => props.bold ? { fontWeight: props.theme.bold } : null
 
+const align = responsiveStyle('text-align', 'align')
+
 const Text = styled.div`
   ${fontSize}
   ${space}
   ${color}
-  ${align}
   ${caps}
   ${bold}
+  ${align}
 `
 
 Text.displayName = 'Text'

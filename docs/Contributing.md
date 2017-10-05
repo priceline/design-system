@@ -61,6 +61,11 @@ open http://localhost:8000/
 ```
 
 
+## Troubleshooting
+
+You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run prepare` should fix the problem.
+
+
 ## GitHub Flow
 
 We follow a loose version of [GitHub Flow][github-flow] where feature branches are created
