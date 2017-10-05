@@ -4,7 +4,8 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
+    "prepublish": "npm run icons && babel src -d dist --ignore __tests__",
+    "precommit": "lint-staged",
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
     "deploy": "storybook-to-ghpages",
@@ -46,8 +47,11 @@
     "babel-preset-stage-0": "^6.24.1",
     "camelcase": "^4.1.0",
     "codecov": "^2.3.0",
+    "husky": "^0.14.3",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.0.2",
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
@@ -76,6 +80,12 @@
       "describe",
       "test",
       "expect"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --no-semi --single-quote --wrtie",
+      "git add"
     ]
   },
   "repository": {
