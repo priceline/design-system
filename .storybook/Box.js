@@ -81,10 +81,3 @@ storiesOf('Box', module)
       <Box my={3} color='white' bg='blue'>Margin Y-Axis</Box>
     </Box>
   ))
-  .add('Visibility', () => (
-    <Box
-      visibility={['hidden', 'visible']}
-      p={3}>
-      Now you see me!
-    </Box>
-  ))
