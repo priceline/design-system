@@ -87,18 +87,12 @@ const flatten = (name, colors) => colors
     return {...a, ...color}
   }, {})
 
-const tints = [
-  0.2,
-  0.4,
-  0.6,
-  0.8
-]
-const blues = [lightBlue, blue, darkBlue]
-const grays = [lighterGray, lightGray, gray, darkGray]
-const greens = [lightGreen, green, darkGreen]
-const reds = [lightRed, red, darkRed]
-const oranges = [lightOrange, orange, darkOrange]
-const purples = [lightPurple, purple, darkPurple]
+const blues = [lightBlue, lightBlue, blue, blue]
+const grays = [lightGray, lightGray, gray, gray]
+const greens = [lightGreen, lightGreen, green, green]
+const reds = [lightRed, lightRed, red, red]
+const oranges = [lightOrange, lightOrange, orange, orange]
+const purples = [lightPurple, lightPurple, purple, purple]
 
 export const colors = {
   black,
