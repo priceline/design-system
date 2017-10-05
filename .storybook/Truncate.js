@@ -19,7 +19,7 @@ storiesOf('Truncate', module)
     <Truncate width={50}>{loripsum}</Truncate>
   ))
   .add('With Container', () => (
-    <Box width='30%'>
+    <Box width={3/10}>
       <Truncate>{loripsum}</Truncate>
     </Box>
   ))
