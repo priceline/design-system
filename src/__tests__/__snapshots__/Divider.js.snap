@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider borderColor prop sets borderColor 1`] = `
+.c0 {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #007aff;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`Divider m prop sets margin 1`] = `
+.c0 {
+  margin: 8px;
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`Divider p prop sets padding 1`] = `
+.c0 {
+  padding: 8px;
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`Divider renders 1`] = `
+.c0 {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`Divider width prop sets width 1`] = `
+.c0 {
+  width: 50%;
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+<hr
+  className="c0"
+  width={0.5}
+/>
+`;
