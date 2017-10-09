@@ -21,12 +21,6 @@ describe('Divider', () => {
     expect(json).toHaveStyleRule('margin', theme.space[2] + 'px')
   })
 
-  test('p prop sets padding', () => {
-    const json = renderer.create(<Divider p={2} theme={theme} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('padding', theme.space[2] + 'px')
-  })
-
   test('borderColor prop sets borderColor', () => {
     const json = renderer.create(<Divider borderColor='blue' theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { space, width, borderColor } from 'styled-system'
-import PropTypes from 'prop-types'
+import { space, width, borderColor, propTypes } from 'styled-system'
 
 const Divider = styled.hr`
   ${space}
@@ -13,32 +12,10 @@ const Divider = styled.hr`
 
 Divider.displayName = 'Divider'
 
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
-
 Divider.propTypes = {
-  borderColor: PropTypes.string,
-  width: numberStringOrArray,
-  w: numberStringOrArray,
-  /** Margin */
-  m: numberStringOrArray,
-  mt: numberStringOrArray,
-  mr: numberStringOrArray,
-  mb: numberStringOrArray,
-  ml: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray,
-  /** Padding */
-  p: numberStringOrArray,
-  pt: numberStringOrArray,
-  pr: numberStringOrArray,
-  pb: numberStringOrArray,
-  pl: numberStringOrArray,
-  px: numberStringOrArray,
-  py: numberStringOrArray
+  ...propTypes.space,
+  ...propTypes.width,
+  ...propTypes.borderColor
 }
 
 export default Divider
