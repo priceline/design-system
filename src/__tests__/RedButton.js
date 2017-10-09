@@ -9,4 +9,3 @@ describe('RedButton', () => {
     expect(json).toMatchSnapshot()
   })
 })
-

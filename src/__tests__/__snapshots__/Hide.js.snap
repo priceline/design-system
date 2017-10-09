@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hide renders 1`] = `
+<div
+  className=""
+/>
+`;
+
+exports[`Hide renders with lg prop 1`] = `
+@media screen and (min-width:48em) and (max-width:64em) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Hide renders with md prop 1`] = `
+@media screen and (min-width:40em) and (max-width:48em) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Hide renders with sm prop 1`] = `
+@media screen and (min-width:32em) and (max-width:40em) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Hide renders with xl prop 1`] = `
+@media screen and (min-width:64em) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Hide renders with xs prop 1`] = `
+@media screen and (max-width:32em) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0 "
+/>
+`;

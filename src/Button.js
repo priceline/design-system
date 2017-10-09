@@ -1,11 +1,10 @@
-import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { space } from 'styled-system'
 import { theme } from '../'
 
 const size = props => {
-  switch(props.size) {
+  switch (props.size) {
     case 'small':
       return {
         height: '32px',

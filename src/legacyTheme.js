@@ -1,4 +1,3 @@
-import { tint } from './color'
 import theme from './theme'
 
 const black = '#000'
@@ -10,10 +9,10 @@ const orange = '#ffaf00'
 const red = '#df000f'
 const gray = '#666'
 
-const blue0 = tint(blue)(0.2)
-const blue1 = tint(blue)(0.4)
-const blue2 = tint(blue)(0.6)
-const blue3 = tint(blue)(0.8)
+const blue0 = '#cee6f3'
+const blue1 = '#9dcee6'
+const blue2 = '#6cb5da'
+const blue3 = '#3b9dcd'
 
 const gray0 = '#d9d9d9'
 const gray1 = '#ccc'
@@ -21,19 +20,19 @@ const gray2 = '#999'
 const gray3 = '#666'
 
 const green0 = '#ecf9e5'
-const green1 = tint(green)(0.4)
-const green2 = tint(green)(0.6)
-const green3 = tint(green)(0.8)
+const green1 = '#b1d39f'
+const green2 = '#8abd6e'
+const green3 = '#63a73e'
 
-const red0 = tint(red)(0.2)
-const red1 = tint(red)(0.4)
-const red2 = tint(red)(0.6)
-const red3 = tint(red)(0.8)
+const red0 = '#f9cccf'
+const red1 = '#f2999f'
+const red2 = '#ec666f'
+const red3 = '#e5333f'
 
-const orange0 = tint(orange)(0.2)
-const orange1 = tint(orange)(0.4)
-const orange2 = tint(orange)(0.6)
-const orange3 = tint(orange)(0.8)
+const orange0 = '#ffefcc'
+const orange1 = '#ffdf99'
+const orange2 = '#ffcf66'
+const orange3 = '#ffbf33'
 
 export const colors = {
   black,

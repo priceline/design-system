@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import { Flex, theme } from '..'
+import { Flex } from '..'
 
 describe('Flex', () => {
   test('renders', () => {

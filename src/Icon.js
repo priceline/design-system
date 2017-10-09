@@ -36,9 +36,9 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   name: PropTypes.oneOf(Object.keys(icons)).isRequired,
-  size:  PropTypes.oneOfType([
+  size: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.number]) 
+    PropTypes.number])
 }
 
 export default Icon

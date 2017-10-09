@@ -81,4 +81,3 @@ storiesOf('Box', module)
       <Box my={3} color='white' bg='blue'>Margin Y-Axis</Box>
     </Box>
   ))
-

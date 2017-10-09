@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge bg blue sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #007aff;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg green sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #0a0;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg lightBlue sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #cdf;
+  color: #000;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg lightGreen sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #cec;
+  color: #000;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg lightOrange sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fec;
+  color: #000;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg lightRed sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fcc;
+  color: #000;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg orange sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #f90;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge bg red sets background-color and color 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #c00;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Badge renders 1`] = `
+.c0 {
+  border-radius: 99999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -48,7 +48,7 @@ const getPath = nodes => nodes.children
 
 const getViewBox = nodes => nodes.properties.viewBox
 
-const removePrefix = str => str.replace(/^ic\-/, '')
+const removePrefix = str => str.replace(/^ic-/, '')
 
 const getData = icons => icons.map(icon => Object.assign({}, icon, parseSVG(icon.svg)))
 
