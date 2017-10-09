@@ -1,5 +1,3 @@
-import { tint } from './color'
-
 const createMediaQuery = n => `@media screen and (min-width:${n}em)`
 
 const addAliases = (arr, aliases) =>
@@ -59,13 +57,26 @@ export const bold = 700
 // color palette
 const black = '#000'
 const white = '#fff'
-const text = '#001731'
-const blue = '#007aff'
-const gray = '#596b7d'
-const green = '#0a0'
-const red = '#c00'
-const orange = '#f90'
-const purple = '#7600bb'
+const text = '#001833'
+const lightBlue = '#cdf'
+const blue = '#007aff' // primary
+const darkBlue = '#049'
+const lighterGray = '#f0f2f4'
+const lightGray = '#abb7c2'
+const gray = '#687B8E' // primary
+const darkGray = '#364049'
+const lightGreen = '#cec'
+const green = '#0a0' // secondary
+const darkGreen = '#060'
+const lightRed = '#fcc'
+const red = '#c00' // secondary
+const darkRed = '#800'
+const lightOrange = '#fec'
+const orange = '#f90' // secondary
+const darkOrange = '#950'
+const lightPurple = '#ecf'
+const purple = '#70b' // secondary
+const darkPurple = '#407'
 
 // tints
 const flatten = (name, colors) => colors
@@ -76,29 +87,36 @@ const flatten = (name, colors) => colors
     return {...a, ...color}
   }, {})
 
-const tints = [
-  0.2,
-  0.4,
-  0.6,
-  0.8
-]
-const blues = tints.map(tint(blue))
-const grays = tints.map(tint(gray))
-const greens = tints.map(tint(green))
-const reds = tints.map(tint(red))
-const oranges = tints.map(tint(orange))
-const purples = tints.map(tint(purple))
+const blues = [lightBlue, lightBlue, blue, blue]
+const grays = [lightGray, lightGray, gray, gray]
+const greens = [lightGreen, lightGreen, green, green]
+const reds = [lightRed, lightRed, red, red]
+const oranges = [lightOrange, lightOrange, orange, orange]
+const purples = [lightPurple, lightPurple, purple, purple]
 
 export const colors = {
   black,
   white,
   text,
   blue,
+  lightBlue,
+  darkBlue,
   gray,
+  lighterGray,
+  lightGray,
+  darkGray,
   green,
+  lightGreen,
+  darkGreen,
   red,
+  lightRed,
+  darkRed,
   orange,
+  lightOrange,
+  darkOrange,
   purple,
+  lightPurple,
+  darkPurple,
   blues,
   greens,
   reds,
