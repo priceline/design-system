@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Truncate generates styles 1`] = `
+.c0 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+<div
+  className="c0"
+>
+  generates styles
+</div>
+`;
+
+exports[`Truncate renders 1`] = `
+.c0 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+<div
+  className="c0"
+>
+  renders
+</div>
+`;

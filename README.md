@@ -19,19 +19,21 @@ npm install pcln-design-system
 
 - [Docs](docs)
 - [Getting Started](docs/GettingStarted.md)
+- [Contributing](docs/Contributing.md)
+- [Theme](docs/Theme.md)
 - [ThemeProvider](docs/ThemeProvider.md)
-- [`<Text />`](docs/Text.md)
-- [`<Heading />`](docs/Heading.md)
+
+- [`<BackgroundImage />`](docs/BackgroundImage.md)
 - [`<Box />`](docs/Box.md)
-- [`<Flex />`](docs/Flex.md)
-- [`<Link />`](docs/Link.md)
 - [`<Button />`](docs/Button.md)
+- [`<Heading />`](docs/Heading.md)
+- [`<Hide />`](docs/Hide.md)
 - [`<Icon />`](docs/Icon.md)
 - [`<Image />`](docs/Image.md)
-- [`<BackgroundImage />`](docs/BackgroundImage.md)
-- [`<Hide />`](docs/Hide.md)
-- [Theme](docs/Theme.md)
-- [Contributing](docs/Contributing.md)
+- [`<Flex />`](docs/Flex.md)
+- [`<Link />`](docs/Link.md)
+- [`<Text />`](docs/Text.md)
+- [`<Truncate />`](docs/Truncate.md)
 
 
 ## Motivation
