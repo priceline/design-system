@@ -29,6 +29,7 @@ npm install pcln-design-system
 - [`<Icon />`](docs/Icon.md)
 - [`<Image />`](docs/Image.md)
 - [`<BackgroundImage />`](docs/BackgroundImage.md)
+- [`<Hide />`](docs/Hide.md)
 - [Theme](docs/Theme.md)
 - [Contributing](docs/Contributing.md)
 
