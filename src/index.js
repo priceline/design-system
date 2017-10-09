@@ -1,5 +1,6 @@
 export { default as Box } from './Box'
 export { default as BackgroundImage } from './BackgroundImage'
+export { default as Badge } from './Badge'
 export { default as Button } from './Button'
 export { default as GreenButton } from './GreenButton'
 export { default as RedButton } from './RedButton'

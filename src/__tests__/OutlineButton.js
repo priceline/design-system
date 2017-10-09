@@ -9,4 +9,3 @@ describe('OutlineButton', () => {
     expect(json).toMatchSnapshot()
   })
 })
-
