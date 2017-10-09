@@ -26,19 +26,6 @@ exports[`Divider m prop sets margin 1`] = `
 />
 `;
 
-exports[`Divider p prop sets padding 1`] = `
-.c0 {
-  padding: 8px;
-  border: 0;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-
-<hr
-  className="c0"
-/>
-`;
-
 exports[`Divider renders 1`] = `
 .c0 {
   border: 0;
