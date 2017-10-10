@@ -38,4 +38,10 @@ describe('Box', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })
+
+  test('boxShadowSize prop sets box shadow', () => {
+    const json = renderer.create(<Box boxShadowSize='small' />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('box-shadow', '0 0 4px 0 rgba(0,0,0,0.08)')
+  })
 })

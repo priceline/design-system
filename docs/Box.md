@@ -1,7 +1,7 @@
 
 # `<Box />`
 
-Use the `<Box />` component to control width, margin, padding, and color.
+Use the `<Box />` component to control width, margin, padding, color and box shadow.
 
 ```jsx
 // 50% width
@@ -39,6 +39,7 @@ pb | number, string, or array | Sets padding-bottom
 pl | number, string, or array | Sets padding-left
 px | number, string, or array | Sets padding-left and padding-right
 py | number, string, or array | Sets padding-top and padding-bottom
+boxShadowSize | string | Sets box shadow to small, medium, large or xlarge
 
 
 ## Responsive Widths
