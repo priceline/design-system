@@ -19,7 +19,7 @@ const Chip = props => props.color ?
 const Pre = Text.withComponent('pre')
 
 const Card = props => (
-  <Box p={3} w={[1/3, 1/4, 1/5]}>
+  <Box>
     <Chip color={props.color} />
     <Text f={0}>{props.name}</Text>
     <Pre m={0}>{props.color}</Pre>
@@ -29,14 +29,17 @@ const Card = props => (
 const Comparison = ({ keys }) => (
   <Flex wrap>
     {keys.map(key => (
-      <Box
-        w={[1/3, 1/4, 1/5]}
+      <Flex
         key={key}
-        mr={3}
-        mb={1}>
-        <Card name={key} color={theme.colors[key]} />
-        <Card name={key} color={legacyTheme.colors[key]} />
-      </Box>
+        w={[1, 1/2, null, 1/3, 1/4]}
+        p={3}>
+        <Box w={1/2}>
+          <Card name={key} color={theme.colors[key]} />
+        </Box>
+        <Box w={1/2}>
+          <Card name={key} color={legacyTheme.colors[key]} />
+        </Box>
+      </Flex>
     ))}
   </Flex>
 )
@@ -49,11 +52,12 @@ storiesOf('Color', module)
       </Box>
       <Flex wrap>
         {next.map(color => (
-          <Card
-            key={color.key}
-            name={color.key}
-            color={color.value}
-          />
+          <Box key={color.key} p={3} width={[1, 1/2, 1/3, 1/4, 1/5]}>
+            <Card
+              name={color.key}
+              color={color.value}
+            />
+          </Box>
         ))}
       </Flex>
     </div>
@@ -65,11 +69,12 @@ storiesOf('Color', module)
       </Box>
       <Flex wrap>
         {legacy.map(color => (
-          <Card
-            key={color.key}
-            name={color.key}
-            color={color.value}
-          />
+          <Box key={color.key} p={3} width={[1, 1/2, 1/3, 1/4, 1/5]}>
+            <Card
+              name={color.key}
+              color={color.value}
+            />
+          </Box>
         ))}
       </Flex>
     </div>
