@@ -23,7 +23,7 @@ const ThemeProvider = ({ legacy, ...props }) => {
   const theme = legacy ? legacyTheme : nextTheme
 
   return (
-    <StyledThemeProvider theme={theme} hello="hello">
+    <StyledThemeProvider theme={theme}>
       <Base {...props} />
     </StyledThemeProvider>
   )
