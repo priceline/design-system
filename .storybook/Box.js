@@ -81,3 +81,12 @@ storiesOf('Box', module)
       <Box my={3} color='white' bg='blue'>Margin Y-Axis</Box>
     </Box>
   ))
+  .add('Box Shadows', () => (
+    <Box>
+      <Box mb={5} p={3} width={200} color='black' bg='white' boxShadowSize='small'>Small Shadow</Box>
+      <Box mb={5} p={3} width={200} color='black' bg='white' boxShadowSize='medium'>Medium Shadow</Box>
+      <Box mb={5} p={3} width={200} color='black' bg='white' boxShadowSize='large'>Large Shadow</Box>
+      <Box mb={5} p={3} width={200} color='black' bg='white' boxShadowSize='xlarge'>XLarge Shadow</Box>
+    </Box>
+  ))
+

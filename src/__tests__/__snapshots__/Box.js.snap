@@ -10,6 +10,16 @@ exports[`Box bg prop sets background color 1`] = `
 />
 `;
 
+exports[`Box boxShadowSize prop sets box shadow 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08);
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Box color prop sets color 1`] = `
 .c0 {
   color: #007aff;

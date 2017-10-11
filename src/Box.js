@@ -4,11 +4,38 @@ import PropTypes from 'prop-types'
 
 const align = responsiveStyle('text-align', 'align')
 
+
+function boxShadow(props) {
+  const shadowColor = 'rgba(0,0,0,0.08)'
+  const shadows = [
+    `0 0 4px 0 ${shadowColor}`, 
+    `0 8px 8px 0 ${shadowColor}`, 
+    `0 16px 16px 0 ${shadowColor}`, 
+    `0 32px 32px 0 ${shadowColor}`
+  ]
+  const boxShadows = {
+    'small': {
+      'box-shadow': shadows[0]
+    },
+    'medium': {
+      'box-shadow': shadows.slice(0,2).join(", ")
+    },
+    'large': {
+      'box-shadow': shadows.slice(0,3).join(", ")
+    },
+    'xlarge': {
+      'box-shadow': shadows.join(", ")
+    }
+  }
+  return boxShadows[props.boxShadowSize]
+}
+
 const Box = styled.div`
   ${space}
   ${width}
   ${color}
   ${align}
+  ${boxShadow}
 `
 
 Box.displayName = 'Box'
@@ -39,7 +66,14 @@ Box.propTypes = {
   pb: numberStringOrArray,
   pl: numberStringOrArray,
   px: numberStringOrArray,
-  py: numberStringOrArray
+  py: numberStringOrArray,
+  /** Box Shadow */
+  boxShadowSize: PropTypes.oneOf([
+    'small',
+    'medium',
+    'large',
+    'xlarge'
+  ])
 }
 
 export default Box
