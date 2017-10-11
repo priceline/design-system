@@ -22,16 +22,16 @@ function boxShadow(props) {
 }
 
 const Card = styled(Box)`
-	${boxShadow}
+  ${boxShadow}
 `
 
 Card.propTypes = {
-	boxShadowSize: PropTypes.oneOf([
-		'sm',
-		'md',
-		'lg',
-		'xl'
-    ])
+  boxShadowSize: PropTypes.oneOf([
+    'sm',
+    'md',
+    'lg',
+    'xl'
+  ])
 }
 
 export default Card
