@@ -1,32 +1,31 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { space } from 'styled-system'
-import { theme } from '../'
 
 const size = props => {
   switch (props.size) {
     case 'small':
       return {
         height: '32px',
-        fontSize: `${theme.fontSizes[0]}px`,
+        fontSize: `${props.theme.fontSizes[0]}px`,
         padding: '0 12px'
       }
     case 'medium':
       return {
         height: '40px',
-        fontSize: `${theme.fontSizes[1]}px`,
+        fontSize: `${props.theme.fontSizes[1]}px`,
         padding: '0 18px'
       }
     case 'large':
       return {
         height: '48px',
-        fontSize: `${theme.fontSizes[2]}px`,
+        fontSize: `${props.theme.fontSizes[2]}px`,
         padding: '0 22px'
       }
     default:
       return {
         height: '40px',
-        fontSize: `${theme.fontSizes[1]}px`,
+        fontSize: `${props.theme.fontSizes[1]}px`,
         padding: '0 18px'
       }
   }
