@@ -10,7 +10,7 @@ storiesOf('Divider', module)
     text: description,
     inline: true
   })(() => (
-    <Divider borderColor='lighterGray' />
+    <Divider borderColor='lightGray' />
   )))
   .add('Margin', () => (
     <Divider m={3} borderColor='blue' />
@@ -19,25 +19,25 @@ storiesOf('Divider', module)
     <Divider
       p={3}
       width={1/2}
-      borderColor='lighterGray' />
+      borderColor='lightGray' />
   ))
   .add('Pixel Width', () => (
     <Divider
       width={256}
-      borderColor='lighterGray' />
+      borderColor='lightGray' />
   ))
   .add('VW Width', () => (
     <Divider
       width='50vw'
-      borderColor='lighterGray' />
+      borderColor='lightGray' />
   ))
   .add('Directional Margin', () => (
     <div>
-      <Divider mt={3} borderColor='lighterGray' />
-      <Divider mr={3} borderColor='lighterGray' />
-      <Divider mb={3} borderColor='lighterGray' />
-      <Divider ml={3} borderColor='lighterGray' />
-      <Divider mx={3} borderColor='lighterGray' />
-      <Divider my={3} borderColor='lighterGray' />
+      <Divider mt={3} borderColor='lightGray' />
+      <Divider mr={3} borderColor='lightGray' />
+      <Divider mb={3} borderColor='lightGray' />
+      <Divider ml={3} borderColor='lightGray' />
+      <Divider mx={3} borderColor='lightGray' />
+      <Divider my={3} borderColor='lightGray' />
     </div>
   ))
