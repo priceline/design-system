@@ -1,6 +1,7 @@
 # `<Card />`
 
 Use `<Card />` component to control box-shadow.
+This component is an extension of the `<Box />` component.
 
 ```jsx
 <Card boxShadowSize='md' />
