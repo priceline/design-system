@@ -3,7 +3,6 @@ import { space, width, color, responsiveStyle } from 'styled-system'
 import PropTypes from 'prop-types'
 
 const align = responsiveStyle('text-align', 'align')
-
 const Box = styled.div`
   ${space}
   ${width}
