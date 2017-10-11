@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Container renders with default align, no max width 1`] = `
+exports[`Container renders with default theme max-width 1`] = `
 .c0 {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1280px;
 }
 
 <div
@@ -13,20 +14,8 @@ exports[`Container renders with default align, no max width 1`] = `
 
 exports[`Container renders with left align 1`] = `
 .c0 {
-  margin-left: 0;
-  margin-right: auto;
-  max-width: 1024px;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Container renders with right align 1`] = `
-.c0 {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   max-width: 1024px;
 }
 

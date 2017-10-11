@@ -97,6 +97,7 @@ Object {
     32,
     48,
   ],
+  "maxContainerWidth": "1280px",
   "mediaQueries": Array [
     "@media screen and (min-width:32em)",
     "@media screen and (min-width:40em)",
