@@ -131,6 +131,7 @@ export const colors = {
 }
 
 export const radius = '2px'
+export const maxContainerWidth = '1280px'
 
 const theme = {
   breakpoints,
@@ -141,7 +142,8 @@ const theme = {
   regular,
   bold,
   colors,
-  radius
+  radius,
+  maxContainerWidth
 }
 
 export default theme
