@@ -61,8 +61,8 @@ const text = '#001833'
 const lightBlue = '#cdf'
 const blue = '#007aff' // primary
 const darkBlue = '#049'
-const lighterGray = '#f0f2f4'
-const lightGray = '#abb7c2'
+const lightGray = '#f0f2f4'
+const borderGray = '#abb7c2'
 const gray = '#687B8E' // primary
 const darkGray = '#364049'
 const lightGreen = '#cec'
@@ -102,8 +102,8 @@ export const colors = {
   lightBlue,
   darkBlue,
   gray,
-  lighterGray,
   lightGray,
+  borderGray,
   darkGray,
   green,
   lightGreen,
