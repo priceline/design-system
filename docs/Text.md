@@ -2,6 +2,12 @@
 
 Use the `<Text />` component to control font size, weight, alignment, and color.
 
+###### Note: To use the `Montserrat` font-family in you project, don't forget to include the following code inside your html `<head>`
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+```
+
 ```jsx
 // Font size 4 on the typographic scale
 <Text fontSize={4} />
@@ -43,4 +49,3 @@ To use a `<span>` or `<p>` element, use the following:
 <Text.span>This is a span element</Text.span>
 <Text.p>This is a p element</Text.p>
 ```
-
