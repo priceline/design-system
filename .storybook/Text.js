@@ -30,6 +30,12 @@ storiesOf('Text', module)
       <Text align='right'>Hello Right</Text>
     </div>
   ))
+  .add('regular', () => (
+    <Text regular>Hello Medium</Text>
+  ))
+  .add('medium', () => (
+    <Text medium>Hello Medium</Text>
+  ))
   .add('bold', () => (
     <Text bold>Hello Bold</Text>
   ))

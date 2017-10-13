@@ -23,6 +23,8 @@ Prop | Type | Description
 ---|---|---
 fontSize | number or string | Sets font size based on the typographic scale
 align | string | Sets the `text-align` property
+regular | boolean | Sets `font-weight: props.theme.regular`
+medium | boolean | Sets `font-weight: props.theme.bold` with font smoothing
 bold | boolean | Sets `font-weight: props.theme.bold`
 caps | boolean | Sets styles for all-caps type treatments
 color | string | Sets color based on the theme's color palette

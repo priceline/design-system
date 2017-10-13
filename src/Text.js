@@ -4,8 +4,17 @@ import { fontSize, space, color, responsiveStyle } from 'styled-system'
 
 export const caps = props => props.caps
   ? {
-    textTransform: 'uppercase',
-    letterSpacing: '0.2em'
+    textTransform: 'uppercase'
+  }
+  : null
+
+export const regular = props => props.regular ? { fontWeight: props.theme.regular} : null
+
+export const medium = props => props.medium
+  ? {
+    fontWeight: props.theme.bold,
+    'text-rendering': 'optimizeLegibility',
+    '-webkit-font-smoothing': 'antialiased'
   }
   : null
 
@@ -18,6 +27,8 @@ const Text = styled.div`
   ${space}
   ${color}
   ${caps}
+  ${regular}
+  ${medium}
   ${bold}
   ${align}
 `
@@ -43,6 +54,8 @@ Text.propTypes = {
     'justify'
   ]),
   caps: PropTypes.bool,
+  regular: PropTypes.bool,
+  medium: PropTypes.bool,
   bold: PropTypes.bool,
   color: PropTypes.string,
   /** Margin */
