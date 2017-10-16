@@ -1,3 +1,6 @@
+---
+layout: docs-layout.jsx
+---
 
 # Getting Started
 

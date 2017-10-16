@@ -1,3 +1,6 @@
+---
+layout: docs-layout.jsx
+---
 # `<Badge />`
 
 Use the `<Badge />` component to render a primitive badge.

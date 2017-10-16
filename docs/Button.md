@@ -1,4 +1,6 @@
-
+---
+layout: docs-layout.jsx
+---
 # `<Button />`
 
 Use the `<Button />` component to render a primitive button.

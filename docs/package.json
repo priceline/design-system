@@ -1,0 +1,18 @@
+{
+  "name": "pcln-design-system-docs",
+  "private": true,
+  "dependencies": {
+    "@compositor/x0": "^2.0.0-3",
+    "gray-matter": "^3.0.8",
+    "pcln-design-system": "^1.0.0-13",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "remark": "^8.0.0",
+    "remark-react": "^4.0.1",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "x0 dev App.js -op 9000"
+  }
+}
