@@ -29,8 +29,8 @@ function boxBorder(props) {
 
 const Card = styled(Box)`
   ${boxShadow}
+  ${boxBorder}
 `
-//${boxBorder}
 
 Card.propTypes = {
   boxShadowSize: PropTypes.oneOf([

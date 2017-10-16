@@ -1,70 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card renders 2px border with small box shadow 1`] = `
-.c0 {
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08);
-  border: 2px solid undefined;
-}
-
-<div
-  className="c0 "
-/>
-`;
-
-exports[`Card renders border and box shadow if specified 1`] = `
-.c0 {
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08);
-  border: 2px solid gray;
-}
-
-<div
-  className="c0 "
-/>
-`;
-
-exports[`Card renders border with default 1px borderGray color 1`] = `
-.c0 {
-  border: 1px solid undefined;
-}
-
-<div
-  className="c0 "
-/>
-`;
-
-exports[`Card renders border with default color if none is specified 1`] = `
-.c0 {
-  border: 2px solid gray;
-}
-
-<div
-  className="c0 "
-/>
-`;
-
-exports[`Card renders border with specific color 1`] = `
-.c0 {
-  border: 2px solid green;
-}
-
-<div
-  className="c0 "
-/>
-`;
-
-exports[`Card renders default 1px borderGray border 1`] = `
-.c0 {
-  border: 1px solid undefined;
-}
-
-<div
-  className="c0 "
-/>
-`;
-
-exports[`Card renders large box shadow 1`] = `
+exports[`Card renders large box shadow with default border 1`] = `
 .c0 {
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
 }
 
 <div
@@ -72,9 +11,10 @@ exports[`Card renders large box shadow 1`] = `
 />
 `;
 
-exports[`Card renders medium box shadow 1`] = `
+exports[`Card renders medium box shadow with default border 1`] = `
 .c0 {
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
 }
 
 <div
@@ -82,9 +22,21 @@ exports[`Card renders medium box shadow 1`] = `
 />
 `;
 
-exports[`Card renders small box shadow 1`] = `
+exports[`Card renders medium box shadow with specified borderWidth 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08);
+  border: 2px solid #abb7c2;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Card renders small box shadow with default border 1`] = `
 .c0 {
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
 }
 
 <div
@@ -92,9 +44,10 @@ exports[`Card renders small box shadow 1`] = `
 />
 `;
 
-exports[`Card renders xlarge box shadow 1`] = `
+exports[`Card renders xlarge box shadow with default border 1`] = `
 .c0 {
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08),0 32px 32px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
 }
 
 <div

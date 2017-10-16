@@ -12,7 +12,7 @@ storiesOf('Card', module)
       <Card boxShadowSize='xl' mb={5} p={3} width={200} color='black' bg='white'>XLarge Shadow</Card>
     </Box>
   ))
-  .add('Box Shadows with focused border (2px)', () => (
+  .add('Box Shadows with focused 2px border', () => (
     <Box>
       <Card boxShadowSize='sm' mb={5} p={3} width={200} color='black' bg='white' borderWidth={2}>Small Shadow</Card>
       <Card boxShadowSize='md' mb={5} p={3} width={200} color='black' bg='white' borderWidth={2}>Medium Shadow</Card>
