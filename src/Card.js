@@ -21,9 +21,16 @@ function boxShadow(props) {
   return boxShadows[props.boxShadowSize]
 }
 
+function boxBorder(props) {
+    return {
+      border: `${props.borderWidth}px solid ${props.theme.colors.borderGray}`
+    }
+}
+
 const Card = styled(Box)`
   ${boxShadow}
 `
+//${boxBorder}
 
 Card.propTypes = {
   boxShadowSize: PropTypes.oneOf([
@@ -31,7 +38,13 @@ Card.propTypes = {
     'md',
     'lg',
     'xl'
-  ])
+  ]),
+  borderColor: PropTypes.string,
+  borderWidth: PropTypes.oneOf([1, 2])
+}
+
+Card.defaultProps = {
+  borderWidth: 1
 }
 
 export default Card
