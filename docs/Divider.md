@@ -2,7 +2,7 @@
 layout: docs-layout.jsx
 ---
 
-# `<Divider />`
+# Divider
 
 `<Divider />` is a styled `<hr />`.
 

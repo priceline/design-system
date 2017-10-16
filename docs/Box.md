@@ -2,7 +2,7 @@
 layout: docs-layout.jsx
 ---
 
-# `<Box />`
+# Box
 
 Use the `<Box />` component to control width, margin, padding, and color.
 
@@ -48,7 +48,7 @@ py | number, string, or array | Sets padding-top and padding-bottom
 
 The `width` prop accepts an array value to set different widths at different breakpoints with a mobile-first approach.
 
-```jsx
+```.jsx
 <Box
   width={[
     1,    // Sets width 100% at the smallest breakpoint

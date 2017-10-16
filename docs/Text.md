@@ -1,7 +1,8 @@
 ---
 layout: docs-layout.jsx
 ---
-# `<Text />`
+
+# Text
 
 Use the `<Text />` component to control font size, weight, alignment, and color.
 

@@ -1,14 +1,15 @@
 ---
 layout: docs-layout.jsx
 ---
-# `<Button />`
+
+# Button
 
 Use the `<Button />` component to render a primitive button.
 
-```jsx
-<Button
-  size='large'
-/>
+```.jsx
+<Button>
+  Hello
+</Button>
 ```
 
 Prop | Type | Description

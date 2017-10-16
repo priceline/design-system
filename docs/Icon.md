@@ -2,7 +2,7 @@
 layout: docs-layout.jsx
 ---
 
-# `<Icon />`
+# Icon
 
 Use the `<Icon />` component for SVG icons.
 

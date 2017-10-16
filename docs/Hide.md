@@ -2,7 +2,7 @@
 layout: docs-layout.jsx
 ---
 
-# `<Hide />`
+# Hide
 
 A Box component extension to set `display: none` between specific breakpoints.
 This component's props work differently than other mobile-first min-width

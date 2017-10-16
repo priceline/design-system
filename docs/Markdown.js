@@ -15,7 +15,12 @@ class Markdown extends React.Component {
       const opts = {
         // design-system components can be passed to
         // remark-react for rending
-        remarkReactComponents: scope
+        remarkReactComponents: scope,
+        toHast: {
+          handlers: {
+            code: codeHandler
+          }
+        }
       }
       const el = remark()
         .use(remarkReact, opts)
@@ -31,6 +36,24 @@ class Markdown extends React.Component {
 
     return el
   }
+}
+
+var detab = require('detab')
+var u = require('unist-builder')
+const codeHandler = (h, node) => {
+  const value = node.value ? detab(node.value + '\n') : ''
+  const lang = node.lang && node.lang.match(/^[^ \t]+(?=[ \t]|$)/)
+  const props = {}
+
+  if (lang) {
+    props.className = ['language-' + lang]
+    props.lang = lang
+  }
+
+  return h(node.position, 'pre', props, [
+    u('text', value)
+    // h(node, 'code', props, [ ])
+  ])
 }
 
 Markdown.propTypes = {

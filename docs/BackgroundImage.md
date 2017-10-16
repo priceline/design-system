@@ -2,7 +2,7 @@
 layout: docs-layout.jsx
 ---
 
-# `<BackgroundImage />`
+# BackgroundImage
 
 Use the `<BackgroundImage />` component to set a background image.
 

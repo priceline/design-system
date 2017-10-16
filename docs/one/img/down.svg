@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45292) - http://www.bohemiancoding.com/sketch -->
+    <title>icons / navigation / white / chevron / down</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-350.000000, -598.000000)" id="Content" stroke-width="1.5" stroke="#FFFFFF">
+            <g transform="translate(50.000000, 150.000000)">
+                <g id="Buttons" transform="translate(0.000000, 303.000000)">
+                    <g transform="translate(0.000000, 129.000000)" id="Layouts">
+                        <g>
+                            <g id="Icon-right" transform="translate(224.000000, 0.000000)">
+                                <g id="icons-/-navigation-/-chevron-down-/-white" transform="translate(71.000000, 8.000000)">
+                                    <polyline id="Shape" points="6 9 12 15 18 9"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

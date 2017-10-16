@@ -2,7 +2,7 @@
 layout: docs-layout.jsx
 ---
 
-# `<Heading />`
+# Heading
 
 Use the `<Heading />` component to use HTML heading h1-h6 element, with all the `<Text>` props.
 
