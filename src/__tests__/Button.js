@@ -1,6 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
+import { mount } from 'enzyme'
 import { Button, theme } from '..'
 
 describe('Button', () => {
@@ -36,5 +37,11 @@ describe('Button', () => {
     const json = renderer.create(<Button fullWidth theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('width', '100%')
+  })
+
+  test('disabled prop sets', () => {
+    const json = renderer.create(<Button disabled theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
   })
 })

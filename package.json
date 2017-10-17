@@ -67,6 +67,7 @@
     ]
   },
   "dependencies": {
+    "enzyme": "^3.1.0",
     "prop-types": "^15.5.10",
     "styled-system": "^1.0.8-0"
   },

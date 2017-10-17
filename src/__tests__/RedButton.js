@@ -8,4 +8,10 @@ describe('RedButton', () => {
     const json = renderer.create(<RedButton theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
   })
+  
+  test('disabled prop sets', () => {
+    const json = renderer.create(<RedButton disabled theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', theme.colors.red)
+  })
 })
