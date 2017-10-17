@@ -131,6 +131,7 @@ export const colors = {
 }
 
 export const radius = '2px'
+export const maxContainerWidth = '1280px'
 
 const shadowColor = 'rgba(0,0,0,0.08)'
 export const boxShadows = [
@@ -149,8 +150,9 @@ const theme = {
   regular,
   bold,
   colors,
+  radius,
   boxShadows,
-  radius
+  maxContainerWidth
 }
 
 export default theme

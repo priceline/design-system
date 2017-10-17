@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "1.0.0-13",
+  "version": "1.0.0-15",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "styled-system": "^1.0.0-11"
+    "styled-system": "^1.0.7"
   },
   "standard": {
     "globals": [
