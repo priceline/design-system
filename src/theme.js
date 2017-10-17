@@ -149,8 +149,8 @@ const theme = {
   regular,
   bold,
   colors,
-  radius,
-  boxShadows
+  boxShadows,
+  radius
 }
 
 export default theme
