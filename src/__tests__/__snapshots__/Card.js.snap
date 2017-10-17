@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders large box shadow with default border 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Card renders medium box shadow with default border 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Card renders medium box shadow with specified borderWidth 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08);
+  border: 2px solid #abb7c2;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Card renders small box shadow with default border 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Card renders xlarge box shadow with default border 1`] = `
+.c0 {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08),0 32px 32px 0 rgba(0,0,0,0.08);
+  border: 1px solid #abb7c2;
+}
+
+<div
+  className="c0 "
+/>
+`;
