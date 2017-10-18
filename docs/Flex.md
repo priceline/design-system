@@ -6,7 +6,7 @@ layout: docs-layout.jsx
 
 The `<Flex />` component is an extension of the `<Box />` component with `display: flex` and props for using flexbox.
 
-```jsx
+```.jsx
 <Flex>
   <Box width={1/2}>Flex</Box>
   <Box width={1/2}>Box</Box>

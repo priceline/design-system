@@ -6,21 +6,37 @@ layout: docs-layout.jsx
 
 Use the `<Text />` component to control font size, weight, alignment, and color.
 
-```jsx
+```.jsx
 // Font size 4 on the typographic scale
 <Text fontSize={4} />
+```
 
+```.jsx
 // Center aligned
-<Text align='center' />
+<Text align='center'>
+  Centered Text
+</Text>
+```
 
+```.jsx
 // Bold weight
-<Text bold />
+<Text bold>
+  Bold Text
+</Text>
+```
 
+```.jsx
 // All-caps
-<Text caps />
+<Text caps>
+  Caps Text
+</Text>
+```
 
+```.jsx
 // Blue text from the color palette
-<Text color='blue' />
+<Text color='blue'>
+  Blue Text
+</Text>
 ```
 
 Prop | Type | Description

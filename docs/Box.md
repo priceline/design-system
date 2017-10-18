@@ -55,7 +55,9 @@ The `width` prop accepts an array value to set different widths at different bre
     1/2,  // Sets width 50% at the next breakpoint
     1/4,  // Sets width 25% at the next breakpoint
   ]}
-/>
+  bg='gray'>
+  Hello
+</Box>
 ```
 
 See [styled-system](https://github.com/jxnblk/styled-system) for more documentation.

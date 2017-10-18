@@ -1,13 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import * as DS from 'pcln-design-system'
+import * as P1 from 'pcln-design-system'
 import {
   LiveProvider,
   LivePreview,
   LiveEditor,
   LiveError
 } from 'react-live'
-import { color, theme } from 'styled-system'
+import {
+  color,
+  space,
+  borderRadius,
+  theme
+} from 'styled-system'
 
 const Preview = styled(LivePreview)`
   padding: 16px;
@@ -30,6 +35,7 @@ const Err = styled(LiveError)`
 const Editor = styled(LiveEditor)`
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
+  margin: 0;
   padding: 8px;
   tab-size: 2;
   ${color}
@@ -49,11 +55,16 @@ const Pre = styled.pre`
   font-size: 14px;
   margin: 0;
   overflow-x: auto;
+  ${space}
   ${color}
+  ${borderRadius}
 `
 
 Pre.defaultProps = {
-  color: 'purple'
+  p: 3,
+  borderRadius: 2,
+  color: 'purple',
+  bg: 'lightGray'
 }
 
 class Catch extends React.Component {
@@ -91,17 +102,28 @@ class CodeBlock extends React.Component {
     const code = this.getCode(this.props)
 
     return (
-      <Catch>
-        <LiveProvider
-          code={code}
-          scope={DS}
-          mountStylesheet={false}>
-          <Preview />
-          <Editor />
-          <DS.Text f={0} color='purple'>Live Code</DS.Text>
-          <Err />
-        </LiveProvider>
-      </Catch>
+      <P1.Box mb={3}>
+        <Catch>
+          <LiveProvider
+            code={code}
+            scope={P1}
+            mountStylesheet={false}>
+            <Preview />
+            <Editor />
+            <P1.Text
+              fontSize='8px'
+              align='right'
+              caps
+              bold
+              mt={-12}
+              mr={1}
+              color='purple'>
+              Live Code
+            </P1.Text>
+            <Err />
+          </LiveProvider>
+        </Catch>
+      </P1.Box>
     )
   }
 }

@@ -9,12 +9,21 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-live": "^1.7.1",
+    "react-router-dom": "^4.2.2",
     "remark": "^8.0.0",
     "remark-react": "^4.0.1",
+    "remark-slug": "^4.2.3",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "x0 dev App.js -op 9000",
-    "build": "x0 build App.js -d ."
+    "build": "x0 build App.js -d site"
+  },
+  "x0": {
+    "xbasename": "/design-system",
+    "routes": [
+      "/",
+      "/GettingStarted"
+    ]
   }
 }
