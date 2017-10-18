@@ -51,7 +51,7 @@ const Button = styled.button`
   }
 
   &:hover {
-    background-color: ${props => props.disabled ? props.theme.colors.blue : props.theme.colors.darkBlue};
+    background-color: ${props => props.disabled ? null : props.theme.colors.darkBlue};
   }
 
   ${fullWidth}

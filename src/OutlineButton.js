@@ -11,8 +11,8 @@ const OutlineButton = styled(Button) `
   border-color: ${props => props.theme.colors.blue};
   
   &:hover {
-    color: ${props => props.disabled ? props.theme.colors.blue : props.theme.colors.darkBlue};
-    border-color: ${props => props.disabled ? props.theme.colors.blue : props.theme.colors.darkBlue};
+    color: ${props => props.disabled ? null : props.theme.colors.darkBlue};
+    border-color: ${props => props.disabled ? null : props.theme.colors.darkBlue};
     background-color: transparent;
   }
 `

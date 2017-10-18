@@ -22,15 +22,7 @@ exports[`RedButton disabled prop sets 1`] = `
   opacity: 0.25;
 }
 
-.c1:hover {
-  background-color: #007aff;
-}
-
 .c0 {
-  background-color: #c00;
-}
-
-.c0:hover {
   background-color: #c00;
 }
 

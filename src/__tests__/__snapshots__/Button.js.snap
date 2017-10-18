@@ -22,10 +22,6 @@ exports[`Button disabled prop sets 1`] = `
   opacity: 0.25;
 }
 
-.c0:hover {
-  background-color: #007aff;
-}
-
 <button
   className="c0"
   disabled={true}

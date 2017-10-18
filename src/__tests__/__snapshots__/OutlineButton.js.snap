@@ -22,10 +22,6 @@ exports[`OutlineButton disabled prop sets 1`] = `
   opacity: 0.25;
 }
 
-.c1:hover {
-  background-color: #007aff;
-}
-
 .c0 {
   background-color: transparent;
   border-width: 2px;
@@ -35,8 +31,6 @@ exports[`OutlineButton disabled prop sets 1`] = `
 }
 
 .c0:hover {
-  color: #007aff;
-  border-color: #007aff;
   background-color: transparent;
 }
 
