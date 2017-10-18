@@ -1,3 +1,4 @@
+export { default as Banner } from './Banner'
 export { default as Box } from './Box'
 export { default as Card } from './Card'
 export { default as BackgroundImage } from './BackgroundImage'
