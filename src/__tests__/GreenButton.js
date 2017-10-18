@@ -14,4 +14,12 @@ describe('GreenButton', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })
+
+  test('without disabled prop sets', () => {
+    const json = renderer.create(<GreenButton theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', theme.colors.darkGreen, {
+      modifier: ':hover',
+    })
+  })
 })

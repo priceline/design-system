@@ -78,3 +78,42 @@ exports[`RedButton renders 1`] = `
   className="c0 c1"
 />
 `;
+
+exports[`RedButton without disabled prop sets 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: #c00;
+}
+
+.c0:hover {
+  background-color: #800;
+}
+
+<button
+  className="c0 c1"
+/>
+`;

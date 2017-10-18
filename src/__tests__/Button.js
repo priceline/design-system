@@ -43,4 +43,12 @@ describe('Button', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.blue)
   })
+
+  test('without disabled prop sets', () => {
+    const json = renderer.create(<Button theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', theme.colors.darkBlue, {
+      modifier: ':hover',
+    })
+  })
 })
