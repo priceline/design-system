@@ -1,7 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import { mount } from 'enzyme'
 import { Button, theme } from '..'
 
 describe('Button', () => {
