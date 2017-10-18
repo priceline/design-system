@@ -1,18 +1,23 @@
----
-layout: docs-layout.jsx
----
 
 # Divider
 
 `<Divider />` is a styled `<hr />`.
 
-```jsx
-// 50% width
-<Divider width={1/2} />
+```.jsx
+<Divider /2} />
+```
 
+```.jsx
+// Half width
+<Divider width={1 / 2} />
+```
+
+```.jsx
 // Margin of `theme.space[2]` (8px)
 <Divider m={2} />
+```
 
+```.jsx
 // Divider will be colored blue from the theme's color palette
 <Divider borderColor='blue' />
 ```

@@ -1,6 +1,3 @@
----
-layout: docs-layout.jsx
----
 
 # BackgroundImage
 
@@ -8,7 +5,7 @@ Use the `<BackgroundImage />` component to set a background image.
 
 ```jsx
 <BackgroundImage
-  image='hello.png'>
+  image='http://www.priceline.com/home/public/assets/images/destinations/orlando.jpg'>
   Hello
 </BackgroundImage>
 ```

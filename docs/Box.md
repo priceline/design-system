@@ -1,26 +1,41 @@
----
-layout: docs-layout.jsx
----
 
 # Box
 
 Use the `<Box />` component to control width, margin, padding, and color.
 
-```jsx
+```.jsx
 // 50% width
-<Box width={1/2} />
+<Box width={1/2} bg='lightGray'>
+  Box
+</Box>
+```
 
+```.jsx
 // Padding of `theme.space[3]` (16px)
-<Box p={3} />
+<Box p={3} bg='lightGray'>
+  Box
+</Box>
+```
 
+```.jsx
 // Margin of `theme.space[2]` (8px)
-<Box m={2} />
+<Box m={4} bg='lightGray'>
+  Box
+</Box>
+```
 
+```.jsx
 // Color blue from the theme's color palette
-<Box color='blue' />
+<Box color='blue'>
+  Box
+</Box>
+```
 
+```.jsx
 // Background color green from the theme's color palette
-<Box bg='green' />
+<Box bg='green'>
+  Box
+</Box>
 ```
 
 Prop | Type | Description

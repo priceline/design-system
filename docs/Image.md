@@ -1,15 +1,21 @@
----
-layout: docs-layout.jsx
----
 
 # Image
 
 Use the `<Image />` component to render a primitive image that saves the aspect ratio.
 
-```jsx
-<Image src='https://priceline.com/myimage.png' />
+```.jsx
+<Image
+  alt='Orlando'
+  src='http://www.priceline.com/home/public/assets/images/destinations/orlando.jpg'
+/>
+```
 
-// Adding fixed width
-<Image src='https://priceline.com/myimage.png' width='300' height='200' alt='My Image'/>
+```.jsx
+<Image
+  alt='Orlando'
+  src='http://www.priceline.com/home/public/assets/images/destinations/orlando.jpg'
+  width='300'
+  height='200'
+/>
 ```
 

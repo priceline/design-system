@@ -1,12 +1,9 @@
----
-layout: docs-layout.jsx
----
 
 # Icon
 
 Use the `<Icon />` component for SVG icons.
 
-```jsx
+```.jsx
 <Icon
   name='circlePlus'
   size={48}

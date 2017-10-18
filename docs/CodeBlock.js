@@ -18,7 +18,7 @@ const Preview = styled(LivePreview)`
   padding: 16px;
   border-width: 1px;
   border-style: solid;
-  border-color: #ddd;
+  border-color: ${theme('colors.lightGray')};
 `
 
 const Err = styled(LiveError)`
@@ -38,6 +38,7 @@ const Editor = styled(LiveEditor)`
   margin: 0;
   padding: 8px;
   tab-size: 2;
+  overflow: auto;
   ${color}
   &:focus {
     outline: none;

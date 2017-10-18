@@ -1,6 +1,3 @@
----
-layout: docs-layout.jsx
----
 
 # Button
 
@@ -18,7 +15,38 @@ radius | string | custom button radius in pixel
 size | string | sets button size to small, medium or large
 fullWidth | boolean | sets button width to fullWidth
 
-## Extend `<Button />`
+## Sizes
 
-Buttons could be extended to add custom styles. We provide the most common styled buttons such as `<GreenButton />`, `<RedButton />` and `<OutlineButton color='purple' />`.
+```.jsx
+<Button size='large' mr={2}>
+  Large
+</Button>
+<Button size='medium' mr={2}>
+  Medium
+</Button>
+<Button size='small'>
+  Small
+</Button>
+```
 
+## Colors
+
+```.jsx
+<GreenButton>
+  GreenButton
+</GreenButton>
+```
+
+```.jsx
+<RedButton>
+  RedButton
+</RedButton>
+```
+
+## OutlineButton
+
+```.jsx
+<OutlineButton>
+  OutlineButton
+</OutlineButton>
+```

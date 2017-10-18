@@ -1,6 +1,3 @@
----
-layout: docs-layout.jsx
----
 
 # Text
 
@@ -8,7 +5,9 @@ Use the `<Text />` component to control font size, weight, alignment, and color.
 
 ```.jsx
 // Font size 4 on the typographic scale
-<Text fontSize={4} />
+<Text fontSize={4}>
+  Text
+</Text>
 ```
 
 ```.jsx

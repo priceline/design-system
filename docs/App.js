@@ -15,6 +15,8 @@ import {
   Heading,
   Text,
   Link,
+  Hide,
+  Button
 } from 'pcln-design-system'
 import { space, color, theme } from 'styled-system'
 
@@ -24,12 +26,13 @@ const NavItem = styled(NavLink)`
   display: block;
   text-decoration: none;
   font-size: ${theme('fontSizes.1')}px;
+  opacity: .75;
   ${space}
   ${color}
+
   &:hover {
     box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, .125);
   }
-  opacity: .75;
   &.active {
     opacity: 1;
   }
@@ -52,13 +55,41 @@ const Font = styled.div`
   color: ${props => props.theme.colors.text};
 `
 
+const StickyBar = styled(Box)`
+  height: 100vh;
+  max-height: ${props => props.open ? '100vh' : '64px'};
+  overflow-y: ${props => props.open ? 'auto' : 'hidden'};
+  transition-property: max-height;
+  transition-timing-function: ease-out;
+  transition-duration: .0625s;
+
+  ${theme('mediaQueries.sm')} {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    flex: none;
+  }
+`
+
 class App extends React.Component {
+  constructor () {
+    super()
+
+    this.state = {
+      menuOpen: false
+    }
+
+    this.update = fn => this.setState(fn)
+  }
+
   render () {
     const {
       sections = [],
       basename,
       pathname
     } = this.props
+    const { menuOpen } = this.state
 
     return [
       <link key='webfont' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono' />,
@@ -67,23 +98,37 @@ class App extends React.Component {
           <Router
             basename={basename}
             location={pathname}>
-            <Flex style={{ minHeight: '100vh' }}>
-              <Box
-                width={320}
-                style={{
-                  flex: 'none'
-                }}
-                py={4}
+            <Flex wrap
+              align='flex-start'
+              style={{ minHeight: '100vh' }}>
+              <StickyBar
+                open={menuOpen}
+                width={[ 1, 256 ]}
+                py={[ 2, 4 ]}
                 color='white'
                 bg='text'>
-                <Heading.h1
-                  fontSize={3}
-                  px={3}
-                  mb={3}>
-                  Priceline One
-                </Heading.h1>
+                <Flex align='center' px={3} py={2}>
+                  <Heading.h1 fontSize={3}>
+                    <NavLink to='/'
+                      style={{
+                        display: 'block',
+                        color: 'inherit',
+                        textDecoration: 'none'
+                      }}>
+                      Priceline One
+                    </NavLink>
+                  </Heading.h1>
+                  <Hide ml='auto' sm md lg xl>
+                    <Button
+                      size='small'
+                      onClick={e => this.update(toggleMenu)}>
+                      Menu
+                    </Button>
+                  </Hide>
+                </Flex>
                 {sections.map(section => (
-                  <Box key={section.name}>
+                  <Box key={section.name}
+                    onClick={e => this.update(closeMenu)}>
                     <NavItem
                       to={'/' + section.name}
                       color='inherit'
@@ -91,7 +136,7 @@ class App extends React.Component {
                     />
                   </Box>
                 ))}
-              </Box>
+              </StickyBar>
               <Box width='calc(100% - 320px)' style={{ flex: '1 1 auto' }}>
                 <Route
                   exact
@@ -101,21 +146,19 @@ class App extends React.Component {
                   )}
                 />
                 <Container>
-                  <Box p={4}>
-                    {sections.map((section, i) => (
-                      <Route
-                        key={section.name}
-                        path={'/' + section.name}
-                        render={() => (
-                          <Detail
-                            {...this.props}
-                            {...section}
-                            index={i}
-                          />
-                        )}
-                      />
-                    ))}
-                  </Box>
+                  {sections.map((section, i) => (
+                    <Route
+                      key={section.name}
+                      path={'/' + section.name}
+                      render={() => (
+                        <Detail
+                          {...this.props}
+                          {...section}
+                          index={i}
+                        />
+                      )}
+                    />
+                  ))}
                 </Container>
               </Box>
             </Flex>
@@ -178,5 +221,9 @@ App.getInitialProps = async (props) => {
     sections
   }
 }
+
+const toggle = key => state => ({ [key]: !state[key] })
+const toggleMenu = toggle('menuOpen')
+const closeMenu = state => ({ menuOpen: false })
 
 export default App
