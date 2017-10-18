@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner renders with attention palette 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #f90;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with attention palette alias 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #f90;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with default palette 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #f0f2f4;
+  color: #001833;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with default palette alias 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #f0f2f4;
+  color: #001833;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with information palette 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with information palette alias 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with no props other than theme 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #f0f2f4;
+  color: #001833;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with success palette 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with success palette alias 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with warning palette 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;
+
+exports[`Banner renders with warning palette alias 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0 "
+/>
+`;

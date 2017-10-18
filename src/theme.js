@@ -141,6 +141,35 @@ export const boxShadows = [
   `0 32px 32px 0 ${shadowColor}`
 ]
 
+const palette = {
+  default: {
+    backgroundColor: lightGray,
+    color: text
+  },
+  information: {
+    backgroundColor: blue,
+    color: white
+  },
+  success: {
+    backgroundColor: green,
+    color: white
+  },
+  attention: {
+    backgroundColor: orange,
+    color: white
+  },
+  warning: {
+    backgroundColor: red,
+    color: white
+  }
+}
+
+palette.gray = palette.default
+palette.blue = palette.information
+palette.green = palette.success
+palette.orange = palette.attention
+palette.red = palette.warning
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -152,7 +181,8 @@ const theme = {
   colors,
   radius,
   boxShadows,
-  maxContainerWidth
+  maxContainerWidth,
+  palette
 }
 
 export default theme

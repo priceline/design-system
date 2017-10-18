@@ -110,6 +110,48 @@ Object {
     "@media screen and (min-width:48em)",
     "@media screen and (min-width:64em)",
   ],
+  "palette": Object {
+    "attention": Object {
+      "backgroundColor": "#f90",
+      "color": "#fff",
+    },
+    "blue": Object {
+      "backgroundColor": "#007aff",
+      "color": "#fff",
+    },
+    "default": Object {
+      "backgroundColor": "#f0f2f4",
+      "color": "#001833",
+    },
+    "gray": Object {
+      "backgroundColor": "#f0f2f4",
+      "color": "#001833",
+    },
+    "green": Object {
+      "backgroundColor": "#0a0",
+      "color": "#fff",
+    },
+    "information": Object {
+      "backgroundColor": "#007aff",
+      "color": "#fff",
+    },
+    "orange": Object {
+      "backgroundColor": "#f90",
+      "color": "#fff",
+    },
+    "red": Object {
+      "backgroundColor": "#c00",
+      "color": "#fff",
+    },
+    "success": Object {
+      "backgroundColor": "#0a0",
+      "color": "#fff",
+    },
+    "warning": Object {
+      "backgroundColor": "#c00",
+      "color": "#fff",
+    },
+  },
   "radius": "2px",
   "regular": 400,
   "space": Array [
