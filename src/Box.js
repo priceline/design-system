@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { space, width, color, responsiveStyle } from 'styled-system'
+import { space, width, color, responsiveStyle, borderRadius } from 'styled-system'
 import PropTypes from 'prop-types'
 
 const align = responsiveStyle('text-align', 'align')
@@ -8,6 +8,7 @@ const Box = styled.div`
   ${width}
   ${color}
   ${align}
+  ${borderRadius}
 `
 
 Box.displayName = 'Box'

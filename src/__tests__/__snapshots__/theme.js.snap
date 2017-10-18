@@ -114,42 +114,52 @@ Object {
     "attention": Object {
       "backgroundColor": "#f90",
       "color": "#fff",
+      "secondaryColor": "#fec",
     },
     "blue": Object {
       "backgroundColor": "#007aff",
       "color": "#fff",
+      "secondaryColor": "#cdf",
     },
     "default": Object {
       "backgroundColor": "#f0f2f4",
       "color": "#001833",
+      "secondaryColor": "#687B8E",
     },
     "gray": Object {
       "backgroundColor": "#f0f2f4",
       "color": "#001833",
+      "secondaryColor": "#687B8E",
     },
     "green": Object {
       "backgroundColor": "#0a0",
       "color": "#fff",
+      "secondaryColor": "#cec",
     },
     "information": Object {
       "backgroundColor": "#007aff",
       "color": "#fff",
+      "secondaryColor": "#cdf",
     },
     "orange": Object {
       "backgroundColor": "#f90",
       "color": "#fff",
+      "secondaryColor": "#fec",
     },
     "red": Object {
       "backgroundColor": "#c00",
       "color": "#fff",
+      "secondaryColor": "#fcc",
     },
     "success": Object {
       "backgroundColor": "#0a0",
       "color": "#fff",
+      "secondaryColor": "#cec",
     },
     "warning": Object {
       "backgroundColor": "#c00",
       "color": "#fff",
+      "secondaryColor": "#fcc",
     },
   },
   "radius": "2px",

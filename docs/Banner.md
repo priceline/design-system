@@ -9,4 +9,7 @@ This component is an extension of the `<Box />` component.
 
 Prop | Type | Description
 ---|---|---
-palette | string | Sets background-color and color. Accepts `default`, `information`, `success`, `attention`, `warning`
+bold | boolean | Sets all text to bold
+palette | string | Sets background-color and color. Accepts `default`, `information`, `success`, `attention`, `warning`, `gray`, `blue`, `green`, `orange`, `red`
+title | string | Sets title text content (in color)
+subtitle | string | Sets subtitle text content (in secondaryColor)

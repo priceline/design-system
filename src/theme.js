@@ -141,26 +141,32 @@ export const boxShadows = [
   `0 32px 32px 0 ${shadowColor}`
 ]
 
-const palette = {
+// correct palette icons are not yet available
+export const palette = {
   default: {
     backgroundColor: lightGray,
-    color: text
+    color: text,
+    secondaryColor: gray
   },
   information: {
     backgroundColor: blue,
-    color: white
+    color: white,
+    secondaryColor: lightBlue
   },
   success: {
     backgroundColor: green,
-    color: white
+    color: white,
+    secondaryColor: lightGreen
   },
   attention: {
     backgroundColor: orange,
-    color: white
+    color: white,
+    secondaryColor: lightOrange
   },
   warning: {
     backgroundColor: red,
-    color: white
+    color: white,
+    secondaryColor: lightRed
   }
 }
 

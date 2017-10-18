@@ -1,69 +1,54 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Banner, Text } from '../src'
+import { Box, Banner } from '../src'
 
 storiesOf('Banner', module)
   .add('All palettes', () => (
     <Box>
-      <Banner align='right' mb={2} p={3}>
-        DEFAULT
-      </Banner>
-      <Banner mb={2} p={3} palette='information'>
-        INFORMATION
-      </Banner>
-      <Banner align='right' mb={2} p={3} palette='success'>
-        SUCCESS
-      </Banner>
-      <Banner mb={2} p={3} palette='attention'>
-        ATTENTION
-      </Banner>
-      <Banner align='right' mb={2} p={3} palette='warning'>
-        WARNING
-      </Banner>
+      <Banner align='right' mb={2} p={3} title='DEFAULT' subtitle='Secondary Text' />
+      <Banner align='left' mb={2} p={3} title='INFORMATION' subtitle='Secondary Text' palette='information' />
+      <Banner align='right' mb={2} p={3} title='SUCCESS' subtitle='Secondary Text' palette='success' />
+      <Banner align='left' mb={2} p={3} title='ATTENTION' subtitle='Secondary Text' palette='attention' />
+      <Banner align='right' mb={2} p={3} title='WARNING' subtitle='Secondary Text' palette='warning' />
+    </Box>
+  ))
+
+  .add('All palettes bold', () => (
+    <Box>
+      <Banner bold align='right' mb={2} p={3} title='DEFAULT' subtitle='Secondary Text' />
+      <Banner bold align='left' mb={2} p={3} title='INFORMATION' subtitle='Secondary Text' palette='information' />
+      <Banner bold align='right' mb={2} p={3} title='SUCCESS' subtitle='Secondary Text' palette='success' />
+      <Banner bold align='left' mb={2} p={3} title='ATTENTION' subtitle='Secondary Text' palette='attention' />
+      <Banner bold align='right' mb={2} p={3} title='WARNING' subtitle='Secondary Text' palette='warning' />
+    </Box>
+  ))
+
+  .add('All palettes title only', () => (
+    <Box>
+      <Banner bold align='right' mb={2} p={3} title='DEFAULT' />
+      <Banner bold align='left' mb={2} p={3} title='INFORMATION' palette='information' />
+      <Banner bold align='right' mb={2} p={3} title='SUCCESS' palette='success' />
+      <Banner bold align='left' mb={2} p={3} title='ATTENTION' palette='attention' />
+      <Banner bold align='right' mb={2} p={3} title='WARNING' palette='warning' />
+    </Box>
+  ))
+
+  .add('All palettes subtitle only', () => (
+    <Box>
+      <Banner bold align='right' mb={2} p={3} subtitle='DEFAULT' />
+      <Banner bold align='left' mb={2} p={3} subtitle='INFORMATION' palette='information' />
+      <Banner bold align='right' mb={2} p={3} subtitle='SUCCESS' palette='success' />
+      <Banner bold align='left' mb={2} p={3} subtitle='ATTENTION' palette='attention' />
+      <Banner bold align='right' mb={2} p={3} subtitle='WARNING' palette='warning' />
     </Box>
   ))
 
   .add('palette aliases', () => (
     <Box>
-      <Banner align='right' mb={2} p={3} palette='gray'>
-        GRAY
-      </Banner>
-      <Banner mb={2} p={3} palette='blue'>
-        BLUE
-      </Banner>
-      <Banner align='right' mb={2} p={3} palette='green'>
-        GREEN
-      </Banner>
-      <Banner mb={2} p={3} palette='orange'>
-        ORANGE
-      </Banner>
-      <Banner align='right' mb={2} p={3} palette='red'>
-        RED
-      </Banner>
-    </Box>
-  ))
-
-  .add('All palettes with Text Children', () => (
-    <Box>
-      <Banner align='right' mb={2} p={3}>
-        <Text bold>DEFAULT</Text>
-        <Text bold color='gray'>Secondary Text</Text>
-      </Banner>
-      <Banner mb={2} p={3} palette='information'>
-        <Text bold>INFORMATION</Text>
-        <Text bold color='lightBlue'>Secondary Text</Text>
-      </Banner>
-      <Banner align='right' mb={2} p={3} palette='success'>
-        <Text bold>SUCCESS</Text>
-        <Text bold color='lightGreen'>Secondary Text</Text>
-      </Banner>
-      <Banner mb={2} p={3} palette='attention'>
-        <Text bold>ATTENTION</Text>
-        <Text bold color='lightOrange'>Secondary Text</Text>
-      </Banner>
-      <Banner align='right' mb={2} p={3} palette='warning'>
-        <Text bold>WARNING</Text>
-        <Text bold color='lightRed'>Secondary Text</Text>
-      </Banner>
+      <Banner align='right' mb={2} p={3} title='GRAY' subtitle='Secondary Text' palette='gray' />
+      <Banner align='left' mb={2} p={3} title='BLUE' subtitle='Secondary Text' palette='blue' />
+      <Banner align='right' mb={2} p={3} title='GREEN' subtitle='Secondary Text' palette='green' />
+      <Banner align='left' mb={2} p={3} title='ORANGE' subtitle='Secondary Text' palette='orange' />
+      <Banner align='right' mb={2} p={3} title='RED' subtitle='Secondary Text' palette='red' />
     </Box>
   ))

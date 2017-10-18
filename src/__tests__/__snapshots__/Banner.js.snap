@@ -7,9 +7,20 @@ exports[`Banner renders with attention palette 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #fec;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with attention palette alias 1`] = `
@@ -19,9 +30,20 @@ exports[`Banner renders with attention palette alias 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #fec;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with default palette 1`] = `
@@ -31,9 +53,20 @@ exports[`Banner renders with default palette 1`] = `
   color: #001833;
 }
 
+.c1 {
+  color: #687B8E;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with default palette alias 1`] = `
@@ -43,9 +76,20 @@ exports[`Banner renders with default palette alias 1`] = `
   color: #001833;
 }
 
+.c1 {
+  color: #687B8E;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with information palette 1`] = `
@@ -55,9 +99,20 @@ exports[`Banner renders with information palette 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #cdf;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with information palette alias 1`] = `
@@ -67,9 +122,20 @@ exports[`Banner renders with information palette alias 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #cdf;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with no props other than theme 1`] = `
@@ -79,9 +145,20 @@ exports[`Banner renders with no props other than theme 1`] = `
   color: #001833;
 }
 
+.c1 {
+  color: #687B8E;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with success palette 1`] = `
@@ -91,9 +168,20 @@ exports[`Banner renders with success palette 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #cec;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with success palette alias 1`] = `
@@ -103,9 +191,20 @@ exports[`Banner renders with success palette alias 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #cec;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with warning palette 1`] = `
@@ -115,9 +214,20 @@ exports[`Banner renders with warning palette 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #fcc;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
 
 exports[`Banner renders with warning palette alias 1`] = `
@@ -127,7 +237,18 @@ exports[`Banner renders with warning palette alias 1`] = `
   color: #fff;
 }
 
+.c1 {
+  color: #fcc;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className=""
+  />
+  <div
+    className="c1 "
+  />
+</div>
 `;
