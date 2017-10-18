@@ -1,6 +1,3 @@
----
-layout: docs-layout.jsx
----
 
 # Hide
 
@@ -9,18 +6,16 @@ This component's props work differently than other mobile-first min-width
 media queries since it's often useful to hide an element only at certain breakpoints.
 
 ```.jsx
-<div>
-  {[
-    // Hidden below the first breakpoint
-    <Hide xs>
-      Hide xs
-    </Hide>,
-    // Hidden at large breakpoints
-    <Hide lg xl>
-      Hide lg xl
-    </Hide>
-  ]}
-</div>
+[
+  // Hidden below the first breakpoint
+  <Hide xs>
+    Hide xs
+  </Hide>,
+  // Hidden at large breakpoints
+  <Hide lg xl>
+    Hide lg xl
+  </Hide>
+]
 ```
 
 Prop | Type | Description

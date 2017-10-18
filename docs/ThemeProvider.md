@@ -1,6 +1,3 @@
----
-layout: docs-layout.jsx
----
 
 # ThemeProvider
 

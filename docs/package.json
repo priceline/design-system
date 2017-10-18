@@ -12,15 +12,13 @@
     "react-router-dom": "^4.2.2",
     "remark": "^8.0.0",
     "remark-react": "^4.0.1",
-    "remark-slug": "^4.2.3",
-    "webfontloader": "^1.6.28"
+    "remark-slug": "^4.2.3"
   },
   "scripts": {
     "start": "x0 dev App.js -op 9000",
-    "build": "x0 build App.js -d site"
+    "build": "x0 build App.js --basename '/design-system' -d site"
   },
   "x0": {
-    "xbasename": "/design-system",
     "routes": [
       "/",
       "/GettingStarted"

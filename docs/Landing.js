@@ -12,7 +12,7 @@ const Landing = props => (
       Priceline One
     </Heading>
     <Text>
-      v{props.pkg.version}
+      v{props.pkg && props.pkg.version}
     </Text>
   </Box>
 )

@@ -87,9 +87,11 @@ class App extends React.Component {
     const {
       sections = [],
       basename,
-      pathname
+      pathname,
+      pkg
     } = this.props
     const { menuOpen } = this.state
+    console.log(pkg)
 
     return [
       <link key='webfont' rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono' />,
