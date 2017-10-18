@@ -5,6 +5,7 @@ import { Icon } from '..'
 import icons from '../../icons.json'
 
 const keys = Object.keys(icons)
+const oldIcons = ['srollLeft', 'chevronLight', 'chevronThick']
 
 describe('Icon', () => {
   keys.forEach(name => {
@@ -13,6 +14,14 @@ describe('Icon', () => {
       expect(icon).toMatchSnapshot()
     })
   })
+
+  oldIcons.forEach(name => {
+    test(`${name} still renders old renamed icons`, () => {
+      const icon = renderer.create(<Icon name={name} />).toJSON()
+      expect(icon).toMatchSnapshot()
+    })
+  })
+
 
   test('returns false for non-existing icons', () => {
     const icon = renderer.create(<Icon name='nope' />).toJSON()

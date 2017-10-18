@@ -3,6 +3,12 @@
 exports[`theme snapshot 1`] = `
 Object {
   "bold": 700,
+  "boxShadows": Array [
+    "0 0 4px 0 rgba(0,0,0,0.08)",
+    "0 8px 8px 0 rgba(0,0,0,0.08)",
+    "0 16px 16px 0 rgba(0,0,0,0.08)",
+    "0 32px 32px 0 rgba(0,0,0,0.08)",
+  ],
   "breakpoints": Array [
     32,
     40,
