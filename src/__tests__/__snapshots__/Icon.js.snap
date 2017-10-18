@@ -344,6 +344,34 @@ exports[`Icon checkLight renders 1`] = `
 </svg>
 `;
 
+exports[`Icon chevronDown renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 20 11"
+  width={24}
+>
+  <path
+    d="M19.998 1.074a.995.995 0 0 0-.437-.836 1.21 1.21 0 0 0-.76-.234 1.113 1.113 0 0 0-.784.368l-7.783 8L1.917.308C1.49-.102.744-.102.319.306.116.5 0 .78 0 1.074c0 .293.116.571.32.767l9.13 8.85c.204.196.495.309.8.309.34 0 .643-.14.843-.387L19.69 1.83c.197-.194.31-.47.31-.757h-.002z"
+  />
+</svg>
+`;
+
+exports[`Icon chevronDownThick renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 20 13"
+  width={24}
+>
+  <path
+    d="M19.703 3.8l-9.04 8.909a1.017 1.017 0 0 1-1.425 0l-.314-.31h-.002l-1.82-1.796c-.012-.01-.015-.024-.024-.032L.295 3.841a.985.985 0 0 1 0-1.406L2.435.327a1.018 1.018 0 0 1 1.424 0l6.1 6.052L16.141.29a1.022 1.022 0 0 1 1.427 0l2.138 2.108a.98.98 0 0 1-.002 1.402z"
+  />
+</svg>
+`;
+
 exports[`Icon chevronLeft renders 1`] = `
 <svg
   className=""
@@ -358,7 +386,7 @@ exports[`Icon chevronLeft renders 1`] = `
 </svg>
 `;
 
-exports[`Icon chevronLight renders 1`] = `
+exports[`Icon chevronLight still renders old renamed icons 1`] = `
 <svg
   className=""
   fill="currentcolor"
@@ -386,7 +414,7 @@ exports[`Icon chevronRight renders 1`] = `
 </svg>
 `;
 
-exports[`Icon chevronThick renders 1`] = `
+exports[`Icon chevronThick still renders old renamed icons 1`] = `
 <svg
   className=""
   fill="currentcolor"
@@ -760,6 +788,20 @@ exports[`Icon sorts renders 1`] = `
 >
   <path
     d="M4.475 19.539l3.129-4.16a.44.44 0 0 0 .038-.472.469.469 0 0 0-.417-.246H5.189V1.055C5.189.473 4.699 0 4.096 0S3.004.473 3.004 1.055v13.606H.968a.468.468 0 0 0-.417.246.445.445 0 0 0 .038.472l3.129 4.159a.472.472 0 0 0 .378.187c.15 0 .29-.07.379-.186zM11.206.186l-3.129 4.16a.441.441 0 0 0-.038.472.47.47 0 0 0 .417.246h2.037V18.67c0 .583.488 1.055 1.092 1.055.602 0 1.091-.472 1.091-1.055V5.064h2.036a.469.469 0 0 0 .418-.246.437.437 0 0 0-.039-.47L11.963.186a.475.475 0 0 0-.756 0z"
+  />
+</svg>
+`;
+
+exports[`Icon srollLeft still renders old renamed icons 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 10 17"
+  width={24}
+>
+  <path
+    d="M8.622.5c.28 0 .528.13.684.35.132.178.2.393.19.61-.01.242-.12.47-.3.626L2.65 8.313l6.598 6.654c.336.34.336.938.002 1.278-.16.162-.39.255-.628.255-.24 0-.468-.093-.627-.255L.753 8.94C.593 8.778.5 8.545.5 8.3c0-.272.115-.514.317-.674L8.002.748C8.162.59 8.387.5 8.622.5z"
   />
 </svg>
 `;
