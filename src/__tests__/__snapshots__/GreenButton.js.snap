@@ -2,6 +2,7 @@
 
 exports[`GreenButton renders 1`] = `
 .c1 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
