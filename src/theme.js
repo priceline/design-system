@@ -131,6 +131,15 @@ export const colors = {
 }
 
 export const radius = '2px'
+export const maxContainerWidth = '1280px'
+
+const shadowColor = 'rgba(0,0,0,0.08)'
+export const boxShadows = [
+  `0 0 4px 0 ${shadowColor}`,
+  `0 8px 8px 0 ${shadowColor}`,
+  `0 16px 16px 0 ${shadowColor}`,
+  `0 32px 32px 0 ${shadowColor}`
+]
 
 const theme = {
   breakpoints,
@@ -141,7 +150,9 @@ const theme = {
   regular,
   bold,
   colors,
-  radius
+  radius,
+  boxShadows,
+  maxContainerWidth
 }
 
 export default theme

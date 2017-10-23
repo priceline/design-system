@@ -39,6 +39,9 @@ storiesOf('Text', module)
   .add('caps', () => (
     <Text caps>Hello Caps</Text>
   ))
+  .add('strikethrough', () => (
+    <Text.s>Hello Strikethrough</Text.s>
+  ))
   .add('margin', () => (
     <Text mt={4} mb={2}>Hello Margin</Text>
   ))
