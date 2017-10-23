@@ -52,7 +52,6 @@
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "standard": "^10.0.2",
-    "styled-components": "^2.1.1",
     "stylis": "^3.2.16",
     "svgi": "^1.1.0"
   },
@@ -68,6 +67,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
+    "styled-components": "^2.1.1",
     "styled-system": "^1.0.8-0"
   },
   "standard": {
