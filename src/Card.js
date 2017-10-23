@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 
-function boxShadow(props) {
+const boxShadow = (props) => {
 
   const boxShadows = {
     'sm': {
@@ -21,10 +21,10 @@ function boxShadow(props) {
   return boxShadows[props.boxShadowSize]
 }
 
-function boxBorder(props) {
-    return {
-      border: `${props.borderWidth}px solid ${props.theme.colors.borderGray}`
-    }
+const boxBorder = (props) => {
+  return {
+    border: `${props.borderWidth}px solid ${props.theme.colors.borderGray}`
+  }
 }
 
 const Card = styled(Box)`

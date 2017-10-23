@@ -4,12 +4,20 @@ import { space, color } from 'styled-system'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
 
+// Support re-named icon names too
+// Should be removed eventually after v1.0.0
+const oldAndNewIcons = Object.assign({}, icons, {
+  srollLeft: icons.chevronLeft,
+  chevronLight: icons.chevronDown,
+  chevronThick: icons.chevronDownThick
+})
+
 const Base = ({
   name,
   size,
   ...props
 }) => {
-  const icon = icons[name]
+  const icon = oldAndNewIcons[name]
   if (!icon) return false
 
   return (
@@ -37,7 +45,7 @@ Icon.defaultProps = {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(Object.keys(icons)).isRequired,
+  name: PropTypes.oneOf(Object.keys(oldAndNewIcons)).isRequired,
   size: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number])
