@@ -21,14 +21,6 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('font-weight', theme.regular.toString())
   })
 
-  test('medium prop sets bold font-weight, and auxiliary styles', () => {
-    const json = renderer.create(<Text medium theme={theme} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('font-weight', theme.bold.toString())
-    expect(json).toHaveStyleRule('text-rendering', 'optimizeLegibility')
-    expect(json).toHaveStyleRule('-webkit-font-smoothing', 'antialiased')
-  })
-
   test('bold prop sets font-weight', () => {
     const json = renderer.create(<Text bold theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()

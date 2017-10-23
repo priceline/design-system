@@ -8,15 +8,7 @@ export const caps = props => props.caps
   }
   : null
 
-export const regular = props => props.regular ? { fontWeight: props.theme.regular} : null
-
-export const medium = props => props.medium
-  ? {
-    fontWeight: props.theme.bold,
-    'text-rendering': 'optimizeLegibility',
-    '-webkit-font-smoothing': 'antialiased'
-  }
-  : null
+export const regular = props => props.regular ? { fontWeight: props.theme.regular } : null
 
 export const bold = props => props.bold ? { fontWeight: props.theme.bold } : null
 
@@ -28,7 +20,6 @@ const Text = styled.div`
   ${color}
   ${caps}
   ${regular}
-  ${medium}
   ${bold}
   ${align}
 `
@@ -55,7 +46,6 @@ Text.propTypes = {
   ]),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
-  medium: PropTypes.bool,
   bold: PropTypes.bool,
   color: PropTypes.string,
   /** Margin */

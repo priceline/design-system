@@ -30,18 +30,6 @@ exports[`Text caps prop sets text-transform 1`] = `
 />
 `;
 
-exports[`Text medium prop sets bold font-weight, and auxiliary styles 1`] = `
-.c0 {
-  font-weight: 600;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-<div
-  className="c0"
-/>
-`;
-
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
   margin-top: 8px;

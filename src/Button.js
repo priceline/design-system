@@ -40,6 +40,8 @@ const Button = styled.button`
   outline: none;
   text-decoration: none;
   font-weight: 600;
+  text-rendering: optimizeLegibility,
+  -webkit-font-smoothing: antialiased
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
   background-color: ${props => props.theme.colors.blue};

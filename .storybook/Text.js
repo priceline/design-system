@@ -31,10 +31,7 @@ storiesOf('Text', module)
     </div>
   ))
   .add('regular', () => (
-    <Text regular>Hello Medium</Text>
-  ))
-  .add('medium', () => (
-    <Text medium>Hello Medium</Text>
+    <Text regular>Hello Regular</Text>
   ))
   .add('bold', () => (
     <Text bold>Hello Bold</Text>
