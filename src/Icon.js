@@ -29,6 +29,8 @@ const Icon = styled(Base)`
   ${color}
 `
 
+Icon.displayName = 'Icon'
+
 Icon.defaultProps = {
   name: 'checkLight',
   size: 24

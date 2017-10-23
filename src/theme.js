@@ -145,36 +145,59 @@ export const boxShadows = [
 export const palette = {
   default: {
     backgroundColor: lightGray,
-    color: text,
-    secondaryColor: gray
+    color: text
   },
   information: {
     backgroundColor: blue,
     color: white,
-    secondaryColor: lightBlue
+    icon: 'information'
   },
   success: {
     backgroundColor: green,
     color: white,
-    secondaryColor: lightGreen
+    icon: 'success'
   },
   attention: {
     backgroundColor: orange,
     color: white,
-    secondaryColor: lightOrange
+    icon: 'attention'
   },
   warning: {
     backgroundColor: red,
     color: white,
-    secondaryColor: lightRed
+    icon: 'warning'
+  },
+  informationLight: {
+    backgroundColor: lightBlue,
+    color: text,
+    icon: 'information'
+  },
+  successLight: {
+    backgroundColor: lightGreen,
+    color: text,
+    icon: 'success'
+  },
+  attentionLight: {
+    backgroundColor: lightOrange,
+    color: text,
+    icon: 'attention'
+  },
+  warningLight: {
+    backgroundColor: lightRed,
+    color: text,
+    icon: 'warning'
   }
 }
 
-palette.gray = palette.default
+palette.lightGray = palette.default
 palette.blue = palette.information
 palette.green = palette.success
 palette.orange = palette.attention
 palette.red = palette.warning
+palette.lightBlue = palette.informationLight
+palette.lightGreen = palette.successLight
+palette.lightOrange = palette.attentionLight
+palette.lightRed = palette.warningLight
 
 const theme = {
   breakpoints,

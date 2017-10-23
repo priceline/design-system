@@ -1,15 +1,24 @@
 # `<Banner />`
 
-Use `<Banner />` component to create a box with a border-radius and palette color scheme.
+Use `<Banner />` component to create a box with a optional header, text, optional left-hand icon, optional right-hand close button, and palette color scheme.
 This component is an extension of the `<Box />` component.
 
 ```jsx
-<Banner palette='success' />
+<Banner
+  palette='success'
+  header='Banner'
+  text='This is a banner'
+  onClose={() => {}}
+  showIcon='false'
+  textAlign='right'
+/>
 ```
 
 Prop | Type | Description
 ---|---|---
-bold | boolean | Sets all text to bold
 palette | string | Sets background-color and color. Accepts `default`, `information`, `success`, `attention`, `warning`, `gray`, `blue`, `green`, `orange`, `red`
-title | string | Sets title text content (in color)
-subtitle | string | Sets subtitle text content (in secondaryColor)
+header | string | Sets header content
+onClose | function | passes onClick functionality to close button / shows close button if provided
+showIcon | boolean | Renders left-hand icon (true by default)
+text | string | Sets text content
+textAlign | string | Sets text alignment for text only (icons not affected)
