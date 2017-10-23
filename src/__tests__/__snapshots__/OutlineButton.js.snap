@@ -2,6 +2,7 @@
 
 exports[`OutlineButton disabled prop sets 1`] = `
 .c1 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -88,6 +89,7 @@ exports[`OutlineButton renders 1`] = `
 
 exports[`OutlineButton without disabled prop sets 1`] = `
 .c1 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;

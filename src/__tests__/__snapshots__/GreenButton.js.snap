@@ -2,6 +2,7 @@
 
 exports[`GreenButton disabled prop sets 1`] = `
 .c1 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -74,6 +75,7 @@ exports[`GreenButton renders 1`] = `
 
 exports[`GreenButton without disabled prop sets 1`] = `
 .c1 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;

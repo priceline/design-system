@@ -2,6 +2,7 @@
 
 exports[`Button disabled prop sets 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -194,6 +195,7 @@ exports[`Button size small sets height and font-size 1`] = `
 
 exports[`Button without disabled prop sets 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
