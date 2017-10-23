@@ -1,12 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`GreenButton disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c0 {
+  background-color: #0a0;
+}
+
+<button
+  className="c0 c1"
+  disabled={true}
+/>
+`;
+
 exports[`GreenButton renders 1`] = `
 .c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  outline: none;
   text-decoration: none;
   font-weight: 600;
   text-rendering: optimizeLegibility, -webkit-font-smoothing:antialiased cursor:pointer;
@@ -24,8 +56,56 @@ exports[`GreenButton renders 1`] = `
   opacity: 0.25;
 }
 
+.c1:hover {
+  background-color: #049;
+}
+
 .c0 {
   background-color: #0a0;
+}
+
+.c0:hover {
+  background-color: #060;
+}
+
+<button
+  className="c0 c1"
+/>
+`;
+
+exports[`GreenButton without disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: #0a0;
+}
+
+.c0:hover {
+  background-color: #060;
 }
 
 <button

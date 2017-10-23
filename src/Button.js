@@ -38,7 +38,6 @@ const Button = styled.button`
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  outline: none;
   text-decoration: none;
   font-weight: 600;
   text-rendering: optimizeLegibility,
@@ -52,6 +51,10 @@ const Button = styled.button`
 
   &:disabled {
     opacity: 0.25;
+  }
+
+  &:hover {
+    background-color: ${props => props.disabled ? null : props.theme.colors.darkBlue};
   }
 
   ${fullWidth}
