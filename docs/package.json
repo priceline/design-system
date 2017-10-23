@@ -2,7 +2,7 @@
   "name": "pcln-design-system-docs",
   "private": true,
   "dependencies": {
-    "@compositor/x0": "^2.0.0-3",
+    "@compositor/x0": "^2.0.0-9",
     "gray-matter": "^3.0.8",
     "pcln-design-system": "^1.0.0-13",
     "prop-types": "^15.6.0",
