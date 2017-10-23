@@ -8,7 +8,7 @@ exports[`RedButton disabled prop sets 1`] = `
   text-align: center;
   text-decoration: none;
   font-weight: 600;
-  cursor: pointer;
+  text-rendering: optimizeLegibility, -webkit-font-smoothing:antialiased cursor:pointer;
   border-radius: 2px;
   background-color: #007aff;
   color: #fff;
@@ -81,7 +81,7 @@ exports[`RedButton without disabled prop sets 1`] = `
   text-align: center;
   text-decoration: none;
   font-weight: 600;
-  cursor: pointer;
+  text-rendering: optimizeLegibility, -webkit-font-smoothing:antialiased cursor:pointer;
   border-radius: 2px;
   background-color: #007aff;
   color: #fff;
