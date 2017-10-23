@@ -35,6 +35,7 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 - [`<Badge />`](docs/Badge.md)
 - [`<Box />`](docs/Box.md)
 - [`<Button />`](docs/Button.md)
+- [`<Card />`](docs/Card.md)
 - [`<Heading />`](docs/Heading.md)
 - [`<Hide />`](docs/Hide.md)
 - [`<Icon />`](docs/Icon.md)

@@ -30,6 +30,7 @@ exports[`Button disabled prop sets 1`] = `
 
 exports[`Button fullWidth prop sets width to 100% 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -62,6 +63,7 @@ exports[`Button fullWidth prop sets width to 100% 1`] = `
 
 exports[`Button renders 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -93,6 +95,7 @@ exports[`Button renders 1`] = `
 
 exports[`Button size large sets height and font-size 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -125,6 +128,7 @@ exports[`Button size large sets height and font-size 1`] = `
 
 exports[`Button size medium sets height and font-size 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -157,6 +161,7 @@ exports[`Button size medium sets height and font-size 1`] = `
 
 exports[`Button size small sets height and font-size 1`] = `
 .c0 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;

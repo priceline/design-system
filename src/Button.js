@@ -34,6 +34,7 @@ const size = props => {
 const fullWidth = props => props.fullWidth ? ({ width: '100%' }) : null
 
 const Button = styled.button`
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
