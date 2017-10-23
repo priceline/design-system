@@ -17,5 +17,5 @@ fullWidth | boolean | sets button width to fullWidth
 
 ## Extend `<Button />`
 
-Buttons could be extended to add custom styles. We provide the most common styled buttons such as `<GreenButton />`, `<RedButton />` and `<OutlineButton color='purple' />`.
+Buttons could be extended to add custom styles. We provide the most common styled buttons such as `<GreenButton />`, `<RedButton />` and `<OutlineButton />`.
 
