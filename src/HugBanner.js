@@ -1,13 +1,17 @@
 import React from 'react'
 import Box from './Box'
-import styled from 'styled-components'
+import Icon from './Icon'
 import PropTypes from 'prop-types'
 
-const HugBanner = styled(Box)`
-`
+const HugBanner = (props) => (
+  <Box>
+    <Icon name={props.iconName} />
+    {props.textNode}
+  </Box>
+)
 
 HugBanner.defaultProps = {
-  iconName:
+  iconName: 'star'
 }
 
 HugBanner.propTypes = {
