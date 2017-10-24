@@ -31,13 +31,13 @@ const size = props => {
   }
 }
 
-const fullWidth = props => props.fullWidth ? ({ width: '100%' }) : null
+const fullWidth = props => (props.fullWidth ? { width: '100%' } : null)
 
 const Button = styled.button`
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  outline: none;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
@@ -51,9 +51,12 @@ const Button = styled.button`
     opacity: 0.25;
   }
 
-  ${fullWidth}
-  ${space}
-  ${size}
+  &:hover {
+    background-color: ${props =>
+      props.disabled ? null : props.theme.colors.darkBlue};
+  }
+
+  ${fullWidth} ${space} ${size};
 `
 
 const numberStringOrArray = PropTypes.oneOfType([
@@ -64,11 +67,7 @@ const numberStringOrArray = PropTypes.oneOfType([
 
 Button.propTypes = {
   /** Size */
-  size: PropTypes.oneOf([
-    'small',
-    'medium',
-    'large'
-  ]),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   fullWidth: PropTypes.bool,
   /** Margin */
   m: numberStringOrArray,

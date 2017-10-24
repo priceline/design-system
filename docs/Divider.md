@@ -4,7 +4,7 @@
 `<Divider />` is a styled `<hr />`.
 
 ```.jsx
-<Divider /2} />
+<Divider />
 ```
 
 ```.jsx

@@ -4,7 +4,7 @@
 Use the `<Badge />` component to render a primitive badge.
 
 ```.jsx
-<Badge bg='blue'
+<Badge bg='blue'>
   Hello
 </Badge>
 ```

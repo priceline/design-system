@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OutlineButton renders 1`] = `
+exports[`OutlineButton disabled prop sets 1`] = `
 .c1 {
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  outline: none;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
@@ -27,12 +27,108 @@ exports[`OutlineButton renders 1`] = `
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: currentcolor;
   color: #007aff;
+  border-color: #007aff;
+}
+
+.c0:hover {
+  background-color: transparent;
 }
 
 <button
   className="c0 c1"
-  color="blue"
+  disabled={true}
+/>
+`;
+
+exports[`OutlineButton renders 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  color: #007aff;
+  border-color: #007aff;
+}
+
+.c0:hover {
+  color: #049;
+  border-color: #049;
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
+/>
+`;
+
+exports[`OutlineButton without disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  color: #007aff;
+  border-color: #007aff;
+}
+
+.c0:hover {
+  color: #049;
+  border-color: #049;
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
 />
 `;

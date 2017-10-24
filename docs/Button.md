@@ -18,15 +18,17 @@ fullWidth | boolean | sets button width to fullWidth
 ## Sizes
 
 ```.jsx
-<Button size='large' mr={2}>
-  Large
-</Button>
-<Button size='medium' mr={2}>
-  Medium
-</Button>
-<Button size='small'>
-  Small
-</Button>
+<div>
+  <Button size='large' mr={2}>
+    Large
+  </Button>
+  <Button size='medium' mr={2}>
+    Medium
+  </Button>
+  <Button size='small'>
+    Small
+  </Button>
+</div>
 ```
 
 ## Colors
