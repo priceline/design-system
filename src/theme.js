@@ -141,63 +141,52 @@ export const boxShadows = [
   `0 32px 32px 0 ${shadowColor}`
 ]
 
-// correct palette icons are not yet available
 export const palette = {
-  default: {
+  lightGray: {
     backgroundColor: lightGray,
     color: text
   },
-  information: {
+  blue: {
     backgroundColor: blue,
     color: white,
     icon: 'information'
   },
-  success: {
+  green: {
     backgroundColor: green,
     color: white,
     icon: 'success'
   },
-  attention: {
+  orange: {
     backgroundColor: orange,
     color: white,
     icon: 'attention'
   },
-  warning: {
+  red: {
     backgroundColor: red,
     color: white,
     icon: 'warning'
   },
-  informationLight: {
+  lightBlue: {
     backgroundColor: lightBlue,
     color: text,
     icon: 'information'
   },
-  successLight: {
+  lightGreen: {
     backgroundColor: lightGreen,
     color: text,
     icon: 'success'
   },
-  attentionLight: {
+  lightOrange: {
     backgroundColor: lightOrange,
     color: text,
     icon: 'attention'
   },
-  warningLight: {
+  lightRed: {
     backgroundColor: lightRed,
     color: text,
     icon: 'warning'
   }
 }
-
-palette.lightGray = palette.default
-palette.blue = palette.information
-palette.green = palette.success
-palette.orange = palette.attention
-palette.red = palette.warning
-palette.lightBlue = palette.informationLight
-palette.lightGreen = palette.successLight
-palette.lightOrange = palette.attentionLight
-palette.lightRed = palette.warningLight
 
 const theme = {
   breakpoints,

@@ -14,3 +14,7 @@ This component extends the `<Icon />` component, by allowing an `onClick` handle
 Prop | Type | Description
 ---|---|---
 onClick | function | sets a function to execute on click
+
+## Extensions
+
+`<CloseButton />`

@@ -111,39 +111,15 @@ Object {
     "@media screen and (min-width:64em)",
   ],
   "palette": Object {
-    "attention": Object {
-      "backgroundColor": "#f90",
-      "color": "#fff",
-      "icon": "attention",
-    },
-    "attentionLight": Object {
-      "backgroundColor": "#fec",
-      "color": "#001833",
-      "icon": "attention",
-    },
     "blue": Object {
       "backgroundColor": "#007aff",
       "color": "#fff",
       "icon": "information",
     },
-    "default": Object {
-      "backgroundColor": "#f0f2f4",
-      "color": "#001833",
-    },
     "green": Object {
       "backgroundColor": "#0a0",
       "color": "#fff",
       "icon": "success",
-    },
-    "information": Object {
-      "backgroundColor": "#007aff",
-      "color": "#fff",
-      "icon": "information",
-    },
-    "informationLight": Object {
-      "backgroundColor": "#cdf",
-      "color": "#001833",
-      "icon": "information",
     },
     "lightBlue": Object {
       "backgroundColor": "#cdf",
@@ -177,26 +153,6 @@ Object {
     "red": Object {
       "backgroundColor": "#c00",
       "color": "#fff",
-      "icon": "warning",
-    },
-    "success": Object {
-      "backgroundColor": "#0a0",
-      "color": "#fff",
-      "icon": "success",
-    },
-    "successLight": Object {
-      "backgroundColor": "#cec",
-      "color": "#001833",
-      "icon": "success",
-    },
-    "warning": Object {
-      "backgroundColor": "#c00",
-      "color": "#fff",
-      "icon": "warning",
-    },
-    "warningLight": Object {
-      "backgroundColor": "#fcc",
-      "color": "#001833",
       "icon": "warning",
     },
   },
