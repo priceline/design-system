@@ -4,12 +4,16 @@ import { space, color } from 'styled-system'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
 
-const Base = ({
-  name,
-  size,
-  ...props
-}) => {
-  const icon = icons[name]
+// Support re-named icon names too
+// Should be removed eventually after v1.0.0
+const oldAndNewIcons = Object.assign({}, icons, {
+  srollLeft: icons.chevronLeft,
+  chevronLight: icons.chevronDown,
+  chevronThick: icons.chevronDownThick
+})
+
+const Base = ({ name, size, ...props }) => {
+  const icon = oldAndNewIcons[name]
   if (!icon) return false
 
   return (
@@ -18,15 +22,15 @@ const Base = ({
       viewBox={icon.viewBox}
       width={size}
       height={size}
-      fill='currentcolor'>
+      fill="currentcolor"
+    >
       <path d={icon.path} />
     </svg>
   )
 }
 
 const Icon = styled(Base)`
-  ${space}
-  ${color}
+  ${space} ${color};
 `
 
 Icon.defaultProps = {
@@ -35,10 +39,8 @@ Icon.defaultProps = {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(Object.keys(icons)).isRequired,
-  size: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number])
+  name: PropTypes.oneOf(Object.keys(oldAndNewIcons)).isRequired,
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default Icon
