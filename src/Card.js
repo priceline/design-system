@@ -23,7 +23,7 @@ function boxShadow(props) {
 
 function boxBorder(props) {
   return {
-    border: `${props.borderWidth}px solid ${props.theme[props.borderColor]}`
+    border: `${props.borderWidth}px solid ${props.theme.colors[props.borderColor]}`
   }
 }
 

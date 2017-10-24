@@ -46,6 +46,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "camelcase": "^4.1.0",
     "codecov": "^2.3.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.2",
+    "enzyme-to-json": "^3.1.4",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.0.2",
     "react": "^15.6.1",
@@ -64,7 +67,8 @@
     "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "dist/"
-    ]
+    ],
+    "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
     "prop-types": "^15.5.10",

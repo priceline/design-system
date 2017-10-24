@@ -1,0 +1,562 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hug renders text when array of nodes is provided 1`] = `
+<Styled(Styled(Box))
+  bg="green"
+  borderColor="green"
+  borderWidth={1}
+  color="white"
+  icon="closeLight"
+  text={
+    Array [
+      <styled.span>
+        Have you seen this 
+        <styled.span
+            bold={true}
+        >
+            card
+        </styled.span>
+         I'm hugging?!
+    </styled.span>,
+      <styled.span>
+        Have you seen this 
+        <styled.span
+            bold={true}
+        >
+            card
+        </styled.span>
+         I'm hugging?!
+    </styled.span>,
+    ]
+  }
+  theme={
+    Object {
+      "bold": 700,
+      "boxShadows": Array [
+        "0 0 4px 0 rgba(0,0,0,0.08)",
+        "0 8px 8px 0 rgba(0,0,0,0.08)",
+        "0 16px 16px 0 rgba(0,0,0,0.08)",
+        "0 32px 32px 0 rgba(0,0,0,0.08)",
+      ],
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#007aff",
+        "blue0": "#cdf",
+        "blue1": "#cdf",
+        "blue2": "#007aff",
+        "blue3": "#007aff",
+        "blues": Array [
+          "#cdf",
+          "#cdf",
+          "#007aff",
+          "#007aff",
+        ],
+        "borderGray": "#abb7c2",
+        "darkBlue": "#049",
+        "darkGray": "#364049",
+        "darkGreen": "#060",
+        "darkOrange": "#950",
+        "darkPurple": "#407",
+        "darkRed": "#800",
+        "gray": "#687B8E",
+        "gray0": "#f0f2f4",
+        "gray1": "#f0f2f4",
+        "gray2": "#687B8E",
+        "gray3": "#687B8E",
+        "green": "#0a0",
+        "green0": "#cec",
+        "green1": "#cec",
+        "green2": "#0a0",
+        "green3": "#0a0",
+        "greens": Array [
+          "#cec",
+          "#cec",
+          "#0a0",
+          "#0a0",
+        ],
+        "lightBlue": "#cdf",
+        "lightGray": "#f0f2f4",
+        "lightGreen": "#cec",
+        "lightOrange": "#fec",
+        "lightPurple": "#ecf",
+        "lightRed": "#fcc",
+        "orange": "#f90",
+        "orange0": "#fec",
+        "orange1": "#fec",
+        "orange2": "#f90",
+        "orange3": "#f90",
+        "oranges": Array [
+          "#fec",
+          "#fec",
+          "#f90",
+          "#f90",
+        ],
+        "purple": "#70b",
+        "purple0": "#ecf",
+        "purple1": "#ecf",
+        "purple2": "#70b",
+        "purple3": "#70b",
+        "purples": Array [
+          "#ecf",
+          "#ecf",
+          "#70b",
+          "#70b",
+        ],
+        "red": "#c00",
+        "red0": "#fcc",
+        "red1": "#fcc",
+        "red2": "#c00",
+        "red3": "#c00",
+        "reds": Array [
+          "#fcc",
+          "#fcc",
+          "#c00",
+          "#c00",
+        ],
+        "text": "#001833",
+        "white": "#fff",
+      },
+      "font": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "radius": "2px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+    }
+  }
+>
+  <HugBanner
+    iconName="star"
+    size={20}
+    text={
+      Array [
+        <styled.span>
+          Have you seen this 
+          <styled.span
+              bold={true}
+          >
+              card
+          </styled.span>
+           I'm hugging?!
+      </styled.span>,
+        <styled.span>
+          Have you seen this 
+          <styled.span
+              bold={true}
+          >
+              card
+          </styled.span>
+           I'm hugging?!
+      </styled.span>,
+      ]
+    }
+  />
+  <Styled(Box)
+    bg="white"
+    borderColor="borderGray"
+    borderWidth={1}
+    color="text"
+    p={3}
+  >
+    I'm a card within a hug!
+  </Styled(Box)>
+</Styled(Styled(Box))>
+`;
+
+exports[`Hug renders text when string is provided 1`] = `
+<Styled(Styled(Box))
+  bg="green"
+  borderColor="green"
+  borderWidth={1}
+  color="white"
+  icon="closeLight"
+  text="I've been known to hug a card from time to time"
+  theme={
+    Object {
+      "bold": 700,
+      "boxShadows": Array [
+        "0 0 4px 0 rgba(0,0,0,0.08)",
+        "0 8px 8px 0 rgba(0,0,0,0.08)",
+        "0 16px 16px 0 rgba(0,0,0,0.08)",
+        "0 32px 32px 0 rgba(0,0,0,0.08)",
+      ],
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#007aff",
+        "blue0": "#cdf",
+        "blue1": "#cdf",
+        "blue2": "#007aff",
+        "blue3": "#007aff",
+        "blues": Array [
+          "#cdf",
+          "#cdf",
+          "#007aff",
+          "#007aff",
+        ],
+        "borderGray": "#abb7c2",
+        "darkBlue": "#049",
+        "darkGray": "#364049",
+        "darkGreen": "#060",
+        "darkOrange": "#950",
+        "darkPurple": "#407",
+        "darkRed": "#800",
+        "gray": "#687B8E",
+        "gray0": "#f0f2f4",
+        "gray1": "#f0f2f4",
+        "gray2": "#687B8E",
+        "gray3": "#687B8E",
+        "green": "#0a0",
+        "green0": "#cec",
+        "green1": "#cec",
+        "green2": "#0a0",
+        "green3": "#0a0",
+        "greens": Array [
+          "#cec",
+          "#cec",
+          "#0a0",
+          "#0a0",
+        ],
+        "lightBlue": "#cdf",
+        "lightGray": "#f0f2f4",
+        "lightGreen": "#cec",
+        "lightOrange": "#fec",
+        "lightPurple": "#ecf",
+        "lightRed": "#fcc",
+        "orange": "#f90",
+        "orange0": "#fec",
+        "orange1": "#fec",
+        "orange2": "#f90",
+        "orange3": "#f90",
+        "oranges": Array [
+          "#fec",
+          "#fec",
+          "#f90",
+          "#f90",
+        ],
+        "purple": "#70b",
+        "purple0": "#ecf",
+        "purple1": "#ecf",
+        "purple2": "#70b",
+        "purple3": "#70b",
+        "purples": Array [
+          "#ecf",
+          "#ecf",
+          "#70b",
+          "#70b",
+        ],
+        "red": "#c00",
+        "red0": "#fcc",
+        "red1": "#fcc",
+        "red2": "#c00",
+        "red3": "#c00",
+        "reds": Array [
+          "#fcc",
+          "#fcc",
+          "#c00",
+          "#c00",
+        ],
+        "text": "#001833",
+        "white": "#fff",
+      },
+      "font": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "radius": "2px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+    }
+  }
+>
+  <HugBanner
+    iconName="star"
+    size={20}
+    text="I've been known to hug a card from time to time"
+  />
+  <Styled(Box)
+    bg="white"
+    borderColor="borderGray"
+    borderWidth={1}
+    color="text"
+    p={3}
+  >
+    I'm a card within a hug!
+  </Styled(Box)>
+</Styled(Styled(Box))>
+`;
+
+exports[`Hug renders text, icon, and Child 1`] = `
+<Styled(Styled(Box))
+  bg="green"
+  borderColor="green"
+  borderWidth={1}
+  color="white"
+  icon="closeLight"
+  text={
+    <styled.span>
+      Have you seen this 
+      <styled.span
+        bold={true}
+      >
+        card
+      </styled.span>
+       I'm hugging?!
+    </styled.span>
+  }
+  theme={
+    Object {
+      "bold": 700,
+      "boxShadows": Array [
+        "0 0 4px 0 rgba(0,0,0,0.08)",
+        "0 8px 8px 0 rgba(0,0,0,0.08)",
+        "0 16px 16px 0 rgba(0,0,0,0.08)",
+        "0 32px 32px 0 rgba(0,0,0,0.08)",
+      ],
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#007aff",
+        "blue0": "#cdf",
+        "blue1": "#cdf",
+        "blue2": "#007aff",
+        "blue3": "#007aff",
+        "blues": Array [
+          "#cdf",
+          "#cdf",
+          "#007aff",
+          "#007aff",
+        ],
+        "borderGray": "#abb7c2",
+        "darkBlue": "#049",
+        "darkGray": "#364049",
+        "darkGreen": "#060",
+        "darkOrange": "#950",
+        "darkPurple": "#407",
+        "darkRed": "#800",
+        "gray": "#687B8E",
+        "gray0": "#f0f2f4",
+        "gray1": "#f0f2f4",
+        "gray2": "#687B8E",
+        "gray3": "#687B8E",
+        "green": "#0a0",
+        "green0": "#cec",
+        "green1": "#cec",
+        "green2": "#0a0",
+        "green3": "#0a0",
+        "greens": Array [
+          "#cec",
+          "#cec",
+          "#0a0",
+          "#0a0",
+        ],
+        "lightBlue": "#cdf",
+        "lightGray": "#f0f2f4",
+        "lightGreen": "#cec",
+        "lightOrange": "#fec",
+        "lightPurple": "#ecf",
+        "lightRed": "#fcc",
+        "orange": "#f90",
+        "orange0": "#fec",
+        "orange1": "#fec",
+        "orange2": "#f90",
+        "orange3": "#f90",
+        "oranges": Array [
+          "#fec",
+          "#fec",
+          "#f90",
+          "#f90",
+        ],
+        "purple": "#70b",
+        "purple0": "#ecf",
+        "purple1": "#ecf",
+        "purple2": "#70b",
+        "purple3": "#70b",
+        "purples": Array [
+          "#ecf",
+          "#ecf",
+          "#70b",
+          "#70b",
+        ],
+        "red": "#c00",
+        "red0": "#fcc",
+        "red1": "#fcc",
+        "red2": "#c00",
+        "red3": "#c00",
+        "reds": Array [
+          "#fcc",
+          "#fcc",
+          "#c00",
+          "#c00",
+        ],
+        "text": "#001833",
+        "white": "#fff",
+      },
+      "font": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "radius": "2px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+    }
+  }
+>
+  <HugBanner
+    iconName="star"
+    size={20}
+    text={
+      <styled.span>
+        Have you seen this 
+        <styled.span
+          bold={true}
+        >
+          card
+        </styled.span>
+         I'm hugging?!
+      </styled.span>
+    }
+  />
+  <Styled(Box)
+    bg="white"
+    borderColor="borderGray"
+    borderWidth={1}
+    color="text"
+    p={3}
+  >
+    I'm a card within a hug!
+  </Styled(Box)>
+</Styled(Styled(Box))>
+`;
+
+exports[`Hug renders with border-radius from theme 1`] = `
+.c2 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+.c4 {
+  padding: 32px;
+}
+
+.c1 {
+  border: 1px solid #0a0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  margin-right: 32px;
+}
+
+.c0 {
+  border-radius: 2px;
+}
+
+<div
+  className="c0 c1 c2"
+  color="white"
+>
+  <div
+    className="c3 c4"
+  >
+    <svg
+      className="c5"
+      fill="currentcolor"
+      height={20}
+      mr={3}
+      viewBox="0 0 20 20"
+      width={20}
+    >
+      <path
+        d="M10.002 0l2.473 7.478L20 7.64l-6 4.783L16.183 20l-6.18-4.522L3.821 20 6 12.422 0 7.64l7.528-.16z"
+      />
+    </svg>
+  </div>
+</div>
+`;
