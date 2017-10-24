@@ -8,25 +8,22 @@ import Heading from './Heading'
 import { palette } from './theme'
 import PropTypes from 'prop-types'
 
-const Banner = (props) => {
-  const icon = palette[props.palette].icon
+const Banner = props => {
+  const icon = props.iconName || palette[props.palette].icon
 
   return (
     <Flex
       {...props}
       bg={palette[props.palette].backgroundColor}
       color={palette[props.palette].color}
-      justify='space-between'
-      align='center'
+      justify="space-between"
+      align="center"
     >
-      {!!icon && !!props.showIcon && <Icon name={icon} mr={3} size={28} />}
+      {!!icon &&
+        !!props.showIcon && <Icon name={icon} mr={3} size={props.iconSize} />}
       <Box width={1} align={props.textAlign}>
-        <Heading.h5>
-          {props.header}
-        </Heading.h5>
-        <Text.span fontSize={1}>
-          {props.text}
-        </Text.span>
+        <Heading.h5>{props.header}</Heading.h5>
+        <Text.span fontSize={1}>{props.text}</Text.span>
       </Box>
       {!!props.onClose && <CloseButton onClick={props.onClose} ml={3} />}
     </Flex>
@@ -38,6 +35,7 @@ Banner.displayName = 'Banner'
 Banner.propTypes = {
   palette: PropTypes.string,
   header: PropTypes.string,
+  iconName: PropTypes.string,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
   text: PropTypes.string.isRequired,
@@ -45,6 +43,7 @@ Banner.propTypes = {
 }
 
 Banner.defaultProps = {
+  iconSize: 28,
   palette: 'lightGray',
   textAlign: 'left',
   showIcon: true
