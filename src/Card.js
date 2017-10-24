@@ -22,9 +22,9 @@ function boxShadow(props) {
 }
 
 function boxBorder(props) {
-    return {
-      border: `${props.borderWidth}px solid ${props.theme.colors.borderGray}`
-    }
+  return {
+    border: `${props.borderWidth}px solid ${props.theme[props.borderColor]}`
+  }
 }
 
 const Card = styled(Box)`
@@ -44,6 +44,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
+  borderColor: 'borderGray',
   borderWidth: 1
 }
 
