@@ -83,43 +83,37 @@ describe('Banner', () => {
 
   test('renders close button if onClose func is provided', () => {
     const wrapper = shallow(<Banner onClose={() => {}} theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const closeButton = bannerRow.dive().find('CloseButton')
+    const closeButton = wrapper.find('CloseButton')
     expect(closeButton).toHaveLength(1)
   })
 
   test('does render blue left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="blue" theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="information"]')
+    const icon = wrapper.find('[name="information"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does render green left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="green" theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="success"]')
+    const icon = wrapper.find('[name="success"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does render orange left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="orange" theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="attention"]')
+    const icon = wrapper.find('[name="attention"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does render red left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="red" theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="warning"]')
+    const icon = wrapper.find('[name="warning"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does not render blue left-hand icon if showIcon is false', () => {
     const wrapper = shallow(<Banner bg="blue" showIcon={false} theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="information"]')
+    const icon = wrapper.find('[name="information"]')
     expect(icon).toHaveLength(0)
   })
 
@@ -127,8 +121,7 @@ describe('Banner', () => {
     const wrapper = shallow(
       <Banner bg="green" showIcon={false} theme={theme} />
     )
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="success"]')
+    const icon = wrapper.find('[name="success"]')
     expect(icon).toHaveLength(0)
   })
 
@@ -136,24 +129,14 @@ describe('Banner', () => {
     const wrapper = shallow(
       <Banner bg="orange" showIcon={false} theme={theme} />
     )
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="attention"]')
+    const icon = wrapper.find('[name="attention"]')
     expect(icon).toHaveLength(0)
   })
 
   test('does not render red left-hand icon if showIcon is false', () => {
     const wrapper = shallow(<Banner bg="red" showIcon={false} theme={theme} />)
-    const bannerRow = wrapper.find('BannerRow')
-    const icon = bannerRow.dive().find('[name="warning"]')
+    const icon = wrapper.find('[name="warning"]')
     expect(icon).toHaveLength(0)
-  })
-
-  test('renders two bannerRows if text and header are present', () => {
-    const wrapper = shallow(
-      <Banner text="text" header="header" showIcon={false} theme={theme} />
-    )
-    const bannerRows = wrapper.find('BannerRow')
-    expect(bannerRows).toHaveLength(2)
   })
 
   test('only accepts preset colors', () => {

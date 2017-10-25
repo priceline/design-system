@@ -1,7 +1,6 @@
 # `<Banner />`
 
 Use `<Banner />` component to create a box with a optional header, text, optional left-hand icon, optional right-hand close button, and palette color scheme.
-Comprised of <BannerRow /> components within <Box />
 
 ```jsx
 <Banner

@@ -2,7 +2,7 @@
 
 exports[`Banner only accepts preset colors 1`] = `
 .c1 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c2 {
@@ -10,23 +10,28 @@ exports[`Banner only accepts preset colors 1`] = `
   text-align: left;
 }
 
-.c3 {
-  font-size: 14px;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c4 {
+  font-size: 14px;
+}
+
+.c3 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -40,8 +45,12 @@ exports[`Banner only accepts preset colors 1`] = `
       className="c2"
       width={1}
     >
-      <span
+      <h5
         className="c3"
+        fontSize={2}
+      />
+      <span
+        className="c4"
         fontSize={1}
       />
     </div>
@@ -51,7 +60,7 @@ exports[`Banner only accepts preset colors 1`] = `
 
 exports[`Banner renders with blue bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -64,27 +73,33 @@ exports[`Banner renders with blue bg 1`] = `
   color: #fff;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -99,6 +114,7 @@ exports[`Banner renders with blue bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -110,8 +126,12 @@ exports[`Banner renders with blue bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -126,7 +146,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
 }
 
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -134,27 +154,33 @@ exports[`Banner renders with custom iconName and size 1`] = `
   text-align: left;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -169,6 +195,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 20 20"
       width={28}
     >
@@ -180,8 +207,12 @@ exports[`Banner renders with custom iconName and size 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -196,7 +227,7 @@ exports[`Banner renders with green bg 1`] = `
 }
 
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -204,27 +235,33 @@ exports[`Banner renders with green bg 1`] = `
   text-align: left;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -239,6 +276,7 @@ exports[`Banner renders with green bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -250,8 +288,12 @@ exports[`Banner renders with green bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -261,7 +303,7 @@ exports[`Banner renders with green bg 1`] = `
 
 exports[`Banner renders with lightBlue bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -274,27 +316,33 @@ exports[`Banner renders with lightBlue bg 1`] = `
   color: #001833;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -309,6 +357,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -320,8 +369,12 @@ exports[`Banner renders with lightBlue bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -331,7 +384,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 exports[`Banner renders with lightGreen bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -344,27 +397,33 @@ exports[`Banner renders with lightGreen bg 1`] = `
   color: #001833;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -379,6 +438,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -390,8 +450,12 @@ exports[`Banner renders with lightGreen bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -401,7 +465,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 exports[`Banner renders with lightOrange bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -414,27 +478,33 @@ exports[`Banner renders with lightOrange bg 1`] = `
   color: #001833;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -449,6 +519,7 @@ exports[`Banner renders with lightOrange bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -460,8 +531,12 @@ exports[`Banner renders with lightOrange bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -471,7 +546,7 @@ exports[`Banner renders with lightOrange bg 1`] = `
 
 exports[`Banner renders with lightRed bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -484,27 +559,33 @@ exports[`Banner renders with lightRed bg 1`] = `
   color: #001833;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -519,6 +600,7 @@ exports[`Banner renders with lightRed bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -530,8 +612,12 @@ exports[`Banner renders with lightRed bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -546,7 +632,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 }
 
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -554,27 +640,33 @@ exports[`Banner renders with no props other than theme 1`] = `
   text-align: left;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -589,6 +681,7 @@ exports[`Banner renders with no props other than theme 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -600,8 +693,12 @@ exports[`Banner renders with no props other than theme 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -611,7 +708,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 exports[`Banner renders with orange bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -624,27 +721,33 @@ exports[`Banner renders with orange bg 1`] = `
   color: #fff;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -659,6 +762,7 @@ exports[`Banner renders with orange bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -670,8 +774,12 @@ exports[`Banner renders with orange bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>
@@ -681,7 +789,7 @@ exports[`Banner renders with orange bg 1`] = `
 
 exports[`Banner renders with red bg 1`] = `
 .c2 {
-  text-align: center;
+  text-align: flex-start;
 }
 
 .c4 {
@@ -694,27 +802,33 @@ exports[`Banner renders with red bg 1`] = `
   color: #fff;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c3 {
-  margin-right: 32px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
 }
 
 <div
@@ -729,6 +843,7 @@ exports[`Banner renders with red bg 1`] = `
       fill="currentcolor"
       height={28}
       mr={3}
+      mt="-2px"
       viewBox="0 0 24 24"
       width={28}
     >
@@ -740,8 +855,12 @@ exports[`Banner renders with red bg 1`] = `
       className="c4"
       width={1}
     >
-      <span
+      <h5
         className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
         fontSize={1}
       />
     </div>

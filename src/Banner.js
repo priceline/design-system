@@ -1,10 +1,10 @@
 import React from 'react'
 import Box from './Box'
+import Flex from './Flex'
 import Text from './Text'
 import Icon from './Icon'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
-import BannerRow from './BannerRow'
 import PropTypes from 'prop-types'
 
 const bannerColors = {
@@ -53,35 +53,20 @@ const bannerColors = {
 const Banner = props => {
   const bannerColor = bannerColors[props.bg] || {}
   const icon = props.iconName || bannerColor.icon
-  const showIcon = !!icon && !!props.showIcon
-  const text = <Text.span fontSize={1}>{props.text}</Text.span>
-  const firstText = props.header ? (
-    <Heading.h5>{props.header}</Heading.h5>
-  ) : (
-    text
-  )
 
   return (
     <Box {...props} bg={bannerColor.backgroundColor} color={bannerColor.color}>
-      <BannerRow
-        showIcon={showIcon}
-        showCloseButton={!!props.onClose}
-        icon={<Icon name={icon} mr={3} size={28} />}
-        text={firstText}
-        closeButton={<CloseButton onClick={props.onClose} ml={3} size={14} />}
-        textAlign={props.textAlign}
-      />
-      {!!props.header &&
-        !!props.text && (
-          <BannerRow
-            showIcon={showIcon}
-            showCloseButton={!!props.onClose}
-            icon={<Box w={28} mr={3} />}
-            text={text}
-            closeButton={<Box w={14} ml={3} />}
-            textAlign={props.textAlign}
-          />
+      <Flex justify="space-between" align="flex-start">
+        {!!icon &&
+          !!props.showIcon && <Icon name={icon} mr={3} size={28} mt="-2px" />}
+        <Box width={1} align={props.textAlign}>
+          <Heading.h5>{props.header}</Heading.h5>
+          <Text.span fontSize={1}>{props.text}</Text.span>
+        </Box>
+        {!!props.onClose && (
+          <CloseButton onClick={props.onClose} ml={3} size={14} mt="6px" />
         )}
+      </Flex>
     </Box>
   )
 }
