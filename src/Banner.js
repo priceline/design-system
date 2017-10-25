@@ -26,14 +26,18 @@ const Banner = props => {
         {!!props.onClose && <CloseButton onClick={props.onClose} ml={3} />}
       </Flex>
       <Flex justify="space-between" align="center">
-        <Box w={props.iconSize} mr={3} />
+        {!!icon && !!props.showIcon && <Box w={props.iconSize} mr={3} />}
         <Box width={1} align={props.textAlign}>
           <Text.span fontSize={1}>{props.text}</Text.span>
         </Box>
+        {!!props.onClose && <Box w={14} mr={3} />}
       </Flex>
     </Box>
   )
 }
+
+// if header does not exist, render text in top, and do not render bottom
+//
 
 Banner.displayName = 'Banner'
 
