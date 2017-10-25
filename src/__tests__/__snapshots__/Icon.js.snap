@@ -288,6 +288,20 @@ exports[`Icon arrowOneWay renders 1`] = `
 </svg>
 `;
 
+exports[`Icon attention renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z"
+  />
+</svg>
+`;
+
 exports[`Icon calendar renders 1`] = `
 <svg
   className=""
@@ -638,6 +652,20 @@ exports[`Icon hotelOutline renders 1`] = `
 </svg>
 `;
 
+exports[`Icon information renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z"
+  />
+</svg>
+`;
+
 exports[`Icon locked renders 1`] = `
 <svg
   className=""
@@ -876,6 +904,20 @@ exports[`Icon star renders 1`] = `
 </svg>
 `;
 
+exports[`Icon success renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
+  />
+</svg>
+`;
+
 exports[`Icon unlocked renders 1`] = `
 <svg
   className=""
@@ -886,6 +928,20 @@ exports[`Icon unlocked renders 1`] = `
 >
   <path
     d="M1,22 L1,11.859389 L15.241836,11.859389 L15.241836,22 L1,22 Z M14.1185855,10.5021972 L11.8720846,10.5021972 L11.8720846,7.34005863 C11.8720846,4.39559501 14.2597208,2 17.1944022,2 C20.1279171,2 22.5155534,4.39559501 22.5155534,7.34005863 L22.5155534,10.4764507 L20.2690524,10.4764507 L20.2690524,7.34005863 C20.2690524,5.63844889 18.8903587,4.25398924 17.1944022,4.25398924 C15.4984456,4.25398924 14.1185855,5.63844889 14.1185855,7.34005863 L14.1185855,10.5021972 Z"
+  />
+</svg>
+`;
+
+exports[`Icon warning renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z"
   />
 </svg>
 `;
