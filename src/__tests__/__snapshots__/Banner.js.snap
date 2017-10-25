@@ -196,11 +196,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
       height={28}
       mr={3}
       mt="-2px"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
       width={28}
     >
       <path
-        d="M10.002 0l2.473 7.478L20 7.64l-6 4.783L16.183 20l-6.18-4.522L3.821 20 6 12.422 0 7.64l7.528-.16z"
+        d="M12,1.54L14.55,9.6,23,9.53l-6.87,4.91,2.67,8-6.8-5-6.8,5,2.67-8L1,9.53,9.45,9.6Z"
       />
     </svg>
     <div
