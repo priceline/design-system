@@ -12,21 +12,26 @@ const Banner = props => {
   const icon = props.iconName || palette[props.palette].icon
 
   return (
-    <Flex
+    <Box
       {...props}
       bg={palette[props.palette].backgroundColor}
       color={palette[props.palette].color}
-      justify="space-between"
-      align="center"
     >
-      {!!icon &&
-        !!props.showIcon && <Icon name={icon} mr={3} size={props.iconSize} />}
-      <Box width={1} align={props.textAlign}>
-        <Heading.h5>{props.header}</Heading.h5>
-        <Text.span fontSize={1}>{props.text}</Text.span>
-      </Box>
-      {!!props.onClose && <CloseButton onClick={props.onClose} ml={3} />}
-    </Flex>
+      <Flex justify="space-between" align="center">
+        {!!icon &&
+          !!props.showIcon && <Icon name={icon} mr={3} size={props.iconSize} />}
+        <Box width={1} align={props.textAlign}>
+          <Heading.h5>{props.header}</Heading.h5>
+        </Box>
+        {!!props.onClose && <CloseButton onClick={props.onClose} ml={3} />}
+      </Flex>
+      <Flex justify="space-between" align="center">
+        <Box w={props.iconSize} mr={3} />
+        <Box width={1} align={props.textAlign}>
+          <Text.span fontSize={1}>{props.text}</Text.span>
+        </Box>
+      </Flex>
+    </Box>
   )
 }
 
