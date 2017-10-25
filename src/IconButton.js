@@ -4,7 +4,7 @@ import Icon from './Icon'
 import Button from './Button'
 import PropTypes from 'prop-types'
 
-const StyledButton = styled(Button)`
+const TransparentButton = styled(Button)`
   padding: 0;
   height: auto;
   background-color: transparent;
@@ -16,9 +16,9 @@ const StyledButton = styled(Button)`
 `
 
 const IconButton = props => (
-  <StyledButton {...props} title={props.title} onClick={props.onClick}>
+  <TransparentButton {...props} title={props.title} onClick={props.onClick}>
     <Icon name={props.name} size={props.size} color={props.color} />
-  </StyledButton>
+  </TransparentButton>
 )
 
 IconButton.displayName = 'IconButton'
