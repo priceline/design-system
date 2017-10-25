@@ -1,48 +1,94 @@
 import React from 'react'
 import Box from './Box'
-import Flex from './Flex'
 import Text from './Text'
 import Icon from './Icon'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
-import { palette } from './theme'
+import BannerRow from './BannerRow'
 import PropTypes from 'prop-types'
 
+const bannerColors = {
+  green: {
+    backgroundColor: 'green',
+    color: 'white',
+    icon: 'success'
+  },
+  lightGreen: {
+    backgroundColor: 'lightGreen',
+    color: 'text',
+    icon: 'success'
+  },
+  red: {
+    backgroundColor: 'red',
+    color: 'white',
+    icon: 'warning'
+  },
+  lightRed: {
+    backgroundColor: 'lightRed',
+    color: 'text',
+    icon: 'warning'
+  },
+  orange: {
+    backgroundColor: 'orange',
+    color: 'white',
+    icon: 'attention'
+  },
+  lightOrange: {
+    backgroundColor: 'lightOrange',
+    color: 'text',
+    icon: 'attention'
+  },
+  blue: {
+    backgroundColor: 'blue',
+    color: 'white',
+    icon: 'information'
+  },
+  lightBlue: {
+    backgroundColor: 'lightBlue',
+    color: 'text',
+    icon: 'information'
+  }
+}
+
 const Banner = props => {
-  const icon = props.iconName || palette[props.palette].icon
+  const bannerColor = bannerColors[props.bg] || {}
+  const icon = props.iconName || bannerColor.icon
+  const showIcon = !!icon && !!props.showIcon
+  const text = <Text.span fontSize={1}>{props.text}</Text.span>
+  const firstText = props.header ? (
+    <Heading.h5>{props.header}</Heading.h5>
+  ) : (
+    text
+  )
 
   return (
-    <Box
-      {...props}
-      bg={palette[props.palette].backgroundColor}
-      color={palette[props.palette].color}
-    >
-      <Flex justify="space-between" align="center">
-        {!!icon &&
-          !!props.showIcon && <Icon name={icon} mr={3} size={props.iconSize} />}
-        <Box width={1} align={props.textAlign}>
-          <Heading.h5>{props.header}</Heading.h5>
-        </Box>
-        {!!props.onClose && <CloseButton onClick={props.onClose} ml={3} />}
-      </Flex>
-      <Flex justify="space-between" align="center">
-        {!!icon && !!props.showIcon && <Box w={props.iconSize} mr={3} />}
-        <Box width={1} align={props.textAlign}>
-          <Text.span fontSize={1}>{props.text}</Text.span>
-        </Box>
-        {!!props.onClose && <Box w={14} mr={3} />}
-      </Flex>
+    <Box {...props} bg={bannerColor.backgroundColor} color={bannerColor.color}>
+      <BannerRow
+        showIcon={showIcon}
+        showCloseButton={!!props.onClose}
+        icon={<Icon name={icon} mr={3} size={28} />}
+        text={firstText}
+        closeButton={<CloseButton onClick={props.onClose} ml={3} size={14} />}
+        textAlign={props.textAlign}
+      />
+      {!!props.header &&
+        !!props.text && (
+          <BannerRow
+            showIcon={showIcon}
+            showCloseButton={!!props.onClose}
+            icon={<Box w={28} mr={3} />}
+            text={text}
+            closeButton={<Box w={14} ml={3} />}
+            textAlign={props.textAlign}
+          />
+        )}
     </Box>
   )
 }
 
-// if header does not exist, render text in top, and do not render bottom
-//
-
 Banner.displayName = 'Banner'
 
 Banner.propTypes = {
-  palette: PropTypes.string,
   header: PropTypes.string,
   iconName: PropTypes.string,
   onClose: PropTypes.func,
@@ -52,8 +98,7 @@ Banner.propTypes = {
 }
 
 Banner.defaultProps = {
-  iconSize: 28,
-  palette: 'lightGray',
+  bg: 'green',
   textAlign: 'left',
   showIcon: true
 }

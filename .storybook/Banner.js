@@ -3,7 +3,7 @@ import { storiesOf, action } from '@storybook/react'
 import { Box, Banner } from '../src'
 
 storiesOf('Banner', module)
-  .add('All palettes', () => (
+  .add('All bgs', () => (
     <Box>
       <Banner
         textAlign="left"
@@ -19,7 +19,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="blue"
+        bg="blue"
         onClose={action('closed')}
       />
       <Banner
@@ -28,7 +28,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare."
-        palette="green"
+        bg="green"
         onClose={action('closed')}
       />
       <Banner
@@ -37,7 +37,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur."
-        palette="orange"
+        bg="orange"
         onClose={action('closed')}
       />
       <Banner
@@ -46,7 +46,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus."
-        palette="red"
+        bg="red"
         onClose={action('closed')}
       />
       <Banner
@@ -55,7 +55,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum."
-        palette="lightBlue"
+        bg="lightBlue"
         onClose={action('closed')}
       />
       <Banner
@@ -64,7 +64,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare."
-        palette="lightGreen"
+        bg="lightGreen"
         onClose={action('closed')}
       />
       <Banner
@@ -73,7 +73,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare. Quisque at quam vel nibh tempor imperdiet vitae non orci. Etiam bibendum sem id nibh finibus interdum."
-        palette="lightOrange"
+        bg="lightOrange"
         onClose={action('closed')}
       />
       <Banner
@@ -82,12 +82,12 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare. Quisque at quam vel nibh tempor imperdiet vitae non orci. Etiam bibendum sem id nibh finibus interdum. Nunc quam neque, tristique porttitor varius a, ultrices a nibh. Nunc et ipsum id eros condimentum convallis. Donec gravida leo facilisis, pharetra tellus eu, dictum mi."
-        palette="lightRed"
+        bg="lightRed"
         onClose={action('closed')}
       />
     </Box>
   ))
-  .add('All palettes header only', () => (
+  .add('All bgs header only', () => (
     <Box>
       <Banner
         textAlign="right"
@@ -101,7 +101,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="blue"
-        palette="blue"
+        bg="blue"
         onClose={action('closed')}
       />
       <Banner
@@ -109,7 +109,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="green"
-        palette="green"
+        bg="green"
         onClose={action('closed')}
       />
       <Banner
@@ -117,7 +117,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="orange"
-        palette="orange"
+        bg="orange"
         onClose={action('closed')}
       />
       <Banner
@@ -125,7 +125,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="red"
-        palette="red"
+        bg="red"
         onClose={action('closed')}
       />
       <Banner
@@ -133,7 +133,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="blue"
-        palette="lightBlue"
+        bg="lightBlue"
         onClose={action('closed')}
       />
       <Banner
@@ -141,7 +141,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="green"
-        palette="lightGreen"
+        bg="lightGreen"
         onClose={action('closed')}
       />
       <Banner
@@ -149,7 +149,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="orange"
-        palette="lightOrange"
+        bg="lightOrange"
         onClose={action('closed')}
       />
       <Banner
@@ -157,12 +157,12 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         header="red"
-        palette="lightRed"
+        bg="lightRed"
         onClose={action('closed')}
       />
     </Box>
   ))
-  .add('All palettes text only', () => (
+  .add('All bgs text only', () => (
     <Box>
       <Banner
         textAlign="right"
@@ -176,7 +176,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="blue"
+        bg="blue"
         onClose={action('closed')}
       />
       <Banner
@@ -184,7 +184,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="green"
+        bg="green"
         onClose={action('closed')}
       />
       <Banner
@@ -192,7 +192,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="orange"
+        bg="orange"
         onClose={action('closed')}
       />
       <Banner
@@ -200,7 +200,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="red"
+        bg="red"
         onClose={action('closed')}
       />
       <Banner
@@ -208,7 +208,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="Secondary Text"
-        palette="lightBlue"
+        bg="lightBlue"
         onClose={action('closed')}
       />
       <Banner
@@ -216,7 +216,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="Secondary Text"
-        palette="lightGreen"
+        bg="lightGreen"
         onClose={action('closed')}
       />
       <Banner
@@ -224,7 +224,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="Secondary Text"
-        palette="lightOrange"
+        bg="lightOrange"
         onClose={action('closed')}
       />
       <Banner
@@ -232,7 +232,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="Secondary Text"
-        palette="lightRed"
+        bg="lightRed"
         onClose={action('closed')}
       />
     </Box>
@@ -252,7 +252,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="blue"
+        bg="blue"
       />
       <Banner
         textAlign="right"
@@ -260,7 +260,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Secondary Text"
-        palette="green"
+        bg="green"
       />
       <Banner
         textAlign="left"
@@ -268,7 +268,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Secondary Text"
-        palette="orange"
+        bg="orange"
       />
       <Banner
         textAlign="right"
@@ -276,7 +276,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Secondary Text"
-        palette="red"
+        bg="red"
       />
       <Banner
         textAlign="left"
@@ -284,7 +284,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="lightBlue"
+        bg="lightBlue"
       />
       <Banner
         textAlign="right"
@@ -292,7 +292,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Secondary Text"
-        palette="lightGreen"
+        bg="lightGreen"
       />
       <Banner
         textAlign="left"
@@ -300,7 +300,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Secondary Text"
-        palette="lightOrange"
+        bg="lightOrange"
       />
       <Banner
         textAlign="right"
@@ -308,7 +308,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Secondary Text"
-        palette="lightRed"
+        bg="lightRed"
       />
     </Box>
   ))
@@ -329,7 +329,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="blue"
+        bg="blue"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -339,7 +339,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Secondary Text"
-        palette="green"
+        bg="green"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -349,7 +349,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Secondary Text"
-        palette="orange"
+        bg="orange"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -359,7 +359,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Secondary Text"
-        palette="red"
+        bg="red"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -369,7 +369,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="lightBlue"
+        bg="lightBlue"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -379,7 +379,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Secondary Text"
-        palette="lightGreen"
+        bg="lightGreen"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -389,7 +389,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Secondary Text"
-        palette="lightOrange"
+        bg="lightOrange"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -399,7 +399,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Secondary Text"
-        palette="lightRed"
+        bg="lightRed"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -421,7 +421,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="blue"
+        bg="blue"
         showIcon={false}
       />
       <Banner
@@ -430,7 +430,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Secondary Text"
-        palette="green"
+        bg="green"
         showIcon={false}
       />
       <Banner
@@ -439,7 +439,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Secondary Text"
-        palette="orange"
+        bg="orange"
         showIcon={false}
       />
       <Banner
@@ -448,7 +448,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Secondary Text"
-        palette="red"
+        bg="red"
         showIcon={false}
       />
       <Banner
@@ -457,7 +457,7 @@ storiesOf('Banner', module)
         p={3}
         header="blue"
         text="Secondary Text"
-        palette="lightBlue"
+        bg="lightBlue"
         showIcon={false}
       />
       <Banner
@@ -466,7 +466,7 @@ storiesOf('Banner', module)
         p={3}
         header="green"
         text="Secondary Text"
-        palette="lightGreen"
+        bg="lightGreen"
         showIcon={false}
       />
       <Banner
@@ -475,7 +475,7 @@ storiesOf('Banner', module)
         p={3}
         header="orange"
         text="Secondary Text"
-        palette="lightOrange"
+        bg="lightOrange"
         showIcon={false}
       />
       <Banner
@@ -484,7 +484,7 @@ storiesOf('Banner', module)
         p={3}
         header="red"
         text="Secondary Text"
-        palette="lightRed"
+        bg="lightRed"
         showIcon={false}
       />
     </Box>
@@ -492,26 +492,14 @@ storiesOf('Banner', module)
   .add('Sans Close Button, Text only', () => (
     <Box>
       <Banner textAlign="right" mb={2} p={2} text="lightGray" />
-      <Banner textAlign="left" mb={2} p={2} text="blue" palette="blue" />
-      <Banner textAlign="right" mb={2} p={2} text="green" palette="green" />
-      <Banner textAlign="left" mb={2} p={2} text="orange" palette="orange" />
-      <Banner textAlign="right" mb={2} p={2} text="red" palette="red" />
-      <Banner textAlign="left" mb={2} p={2} text="blue" palette="lightBlue" />
-      <Banner
-        textAlign="right"
-        mb={2}
-        p={2}
-        text="green"
-        palette="lightGreen"
-      />
-      <Banner
-        textAlign="left"
-        mb={2}
-        p={2}
-        text="orange"
-        palette="lightOrange"
-      />
-      <Banner textAlign="right" mb={2} p={2} text="red" palette="lightRed" />
+      <Banner textAlign="left" mb={2} p={2} text="blue" bg="blue" />
+      <Banner textAlign="right" mb={2} p={2} text="green" bg="green" />
+      <Banner textAlign="left" mb={2} p={2} text="orange" bg="orange" />
+      <Banner textAlign="right" mb={2} p={2} text="red" bg="red" />
+      <Banner textAlign="left" mb={2} p={2} text="blue" bg="lightBlue" />
+      <Banner textAlign="right" mb={2} p={2} text="green" bg="lightGreen" />
+      <Banner textAlign="left" mb={2} p={2} text="orange" bg="lightOrange" />
+      <Banner textAlign="right" mb={2} p={2} text="red" bg="lightRed" />
     </Box>
   ))
   .add('Sans Icon, Text only', () => (
@@ -529,7 +517,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="blue"
+        bg="blue"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -538,7 +526,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="green"
+        bg="green"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -547,7 +535,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="orange"
+        bg="orange"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -556,7 +544,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="red"
+        bg="red"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -565,7 +553,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="lightBlue"
+        bg="lightBlue"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -574,7 +562,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="lightGreen"
+        bg="lightGreen"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -583,7 +571,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="lightOrange"
+        bg="lightOrange"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -592,7 +580,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="lightRed"
+        bg="lightRed"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -612,7 +600,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="blue"
+        bg="blue"
         showIcon={false}
       />
       <Banner
@@ -620,7 +608,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="green"
+        bg="green"
         showIcon={false}
       />
       <Banner
@@ -628,7 +616,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="orange"
+        bg="orange"
         showIcon={false}
       />
       <Banner
@@ -636,7 +624,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="red"
+        bg="red"
         showIcon={false}
       />
       <Banner
@@ -644,7 +632,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="lightBlue"
+        bg="lightBlue"
         showIcon={false}
       />
       <Banner
@@ -652,7 +640,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="lightGreen"
+        bg="lightGreen"
         showIcon={false}
       />
       <Banner
@@ -660,7 +648,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="lightOrange"
+        bg="lightOrange"
         showIcon={false}
       />
       <Banner
@@ -668,7 +656,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="lightRed"
+        bg="lightRed"
         showIcon={false}
       />
     </Box>
@@ -688,7 +676,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="blue"
+        bg="blue"
         iconName="star"
         iconSize={12}
       />
@@ -697,7 +685,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="green"
+        bg="green"
         iconName="star"
         iconSize={14}
       />
@@ -706,7 +694,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="orange"
+        bg="orange"
         iconName="star"
         iconSize={16}
       />
@@ -715,7 +703,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="red"
+        bg="red"
         iconName="star"
         iconSize={18}
       />
@@ -724,7 +712,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="blue"
-        palette="lightBlue"
+        bg="lightBlue"
         iconName="star"
         iconSize={20}
       />
@@ -733,7 +721,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="green"
-        palette="lightGreen"
+        bg="lightGreen"
         iconName="star"
         iconSize={22}
       />
@@ -742,7 +730,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="orange"
-        palette="lightOrange"
+        bg="lightOrange"
         iconName="star"
         iconSize={24}
       />
@@ -751,7 +739,7 @@ storiesOf('Banner', module)
         mb={2}
         p={2}
         text="red"
-        palette="lightRed"
+        bg="lightRed"
         iconName="star"
         iconSize={26}
       />

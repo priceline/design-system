@@ -1,10 +1,11 @@
 # `<Banner />`
 
 Use `<Banner />` component to create a box with a optional header, text, optional left-hand icon, optional right-hand close button, and palette color scheme.
+Comprised of <BannerRow /> components within <Box />
 
 ```jsx
 <Banner
-  palette='success'
+  bg='green'
   header='Banner'
   iconName='star'
   iconSize={20}
@@ -17,7 +18,7 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
 
 Prop | Type | Description
 ---|---|---
-palette | string | Sets background-color and color. Accepts `default`, `information`, `success`, `attention`, `warning`, `gray`, `blue`, `green`, `orange`, `red`
+bg | string | Sets background-color and color. Accepts `blue`, `green`, `orange`, `red`, `lightBlue`, `lightGreen`, `lightOrange`, `lightRed`
 header | string | Sets header content
 iconName | string | Sets left-hand svg icon name
 iconSize | number | Sets left-hand svg icon size

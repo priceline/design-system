@@ -34,6 +34,10 @@ exports[`IconButton renders with theme only 1`] = `
   color: currentcolor;
 }
 
+.c0 hover: {
+  background-color: transparent;
+}
+
 <button
   className="c0 c1"
   onClick={undefined}

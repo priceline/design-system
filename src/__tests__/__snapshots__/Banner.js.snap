@@ -1,15 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner renders with blue palette 1`] = `
-.c3 {
+exports[`Banner only accepts preset colors 1`] = `
+.c1 {
+  text-align: center;
+}
+
+.c2 {
   width: 100%;
   text-align: left;
 }
 
-.c1 {
-  background-color: #007aff;
-  color: #fff;
-  text-align: center;
+.c3 {
+  font-size: 14px;
 }
 
 .c0 {
@@ -27,136 +29,120 @@ exports[`Banner renders with blue palette 1`] = `
   justify-content: space-between;
 }
 
+<div
+  className=""
+  color={undefined}
+>
+  <div
+    className="c0 c1"
+  >
+    <div
+      className="c2"
+      width={1}
+    >
+      <span
+        className="c3"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with blue bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0 {
+  background-color: #007aff;
+  color: #fff;
+}
+
 .c5 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   margin-right: 32px;
 }
 
-.c4 {
-  font-size: 16px;
-  margin: 0px;
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 <div
-  className="c0 c1"
-  color="#fff"
+  className="c0"
+  color="white"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Banner renders with custom iconName and size 1`] = `
-.c1 {
-  background-color: #f0f2f4;
-  color: #001833;
-  text-align: center;
-}
-
-.c3 {
-  width: 100%;
-  text-align: left;
-}
-
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
-<div
-  className="c0 c1"
-  color="#001833"
->
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={20}
-    mr={3}
-    viewBox="0 0 20 20"
-    width={20}
-  >
-    <path
-      d="M10.002 0l2.473 7.478L20 7.64l-6 4.783L16.183 20l-6.18-4.522L3.821 20 6 12.422 0 7.64l7.528-.16z"
-    />
-  </svg>
-  <div
-    className="c3"
-    width={1}
-  >
-    <h5
-      className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
-  </div>
-</div>
-`;
-
-exports[`Banner renders with green palette 1`] = `
-.c3 {
-  width: 100%;
-  text-align: left;
-}
-
-.c1 {
   background-color: #0a0;
   color: #fff;
+}
+
+.c2 {
   text-align: center;
 }
 
-.c0 {
+.c4 {
+  width: 100%;
+  text-align: left;
+}
+
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -171,136 +157,132 @@ exports[`Banner renders with green palette 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#fff"
+  className="c0"
+  color="white"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 20 20"
+      width={28}
+    >
+      <path
+        d="M10.002 0l2.473 7.478L20 7.64l-6 4.783L16.183 20l-6.18-4.522L3.821 20 6 12.422 0 7.64l7.528-.16z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Banner renders with lightBlue palette 1`] = `
-.c3 {
+exports[`Banner renders with green bg 1`] = `
+.c0 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<div
+  className="c0"
+  color="white"
+>
+  <div
+    className="c1 c2"
+  >
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
+      />
+    </svg>
+    <div
+      className="c4"
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders with lightBlue bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0 {
   background-color: #cdf;
   color: #001833;
-  text-align: center;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .c5 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   margin-right: 32px;
 }
 
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
-<div
-  className="c0 c1"
-  color="#001833"
->
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z"
-    />
-  </svg>
-  <div
-    className="c3"
-    width={1}
-  >
-    <h5
-      className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
-  </div>
-</div>
-`;
-
-exports[`Banner renders with lightGray palette 1`] = `
 .c1 {
-  background-color: #f0f2f4;
-  color: #001833;
-  text-align: center;
-}
-
-.c2 {
-  width: 100%;
-  text-align: left;
-}
-
-.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,48 +297,62 @@ exports[`Banner renders with lightGray palette 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
-  font-size: 14px;
-}
-
-.c3 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#001833"
+  className="c0"
+  color="text"
 >
   <div
-    className="c2"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
       className="c3"
-      fontSize={2}
-    />
-    <span
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Banner renders with lightGreen palette 1`] = `
-.c3 {
+exports[`Banner renders with lightGreen bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
-.c1 {
+.c0 {
   background-color: #cec;
   color: #001833;
-  text-align: center;
 }
 
-.c0 {
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -371,64 +367,62 @@ exports[`Banner renders with lightGreen palette 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#001833"
+  className="c0"
+  color="text"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Banner renders with lightOrange palette 1`] = `
-.c3 {
+exports[`Banner renders with lightOrange bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
-.c1 {
+.c0 {
   background-color: #fec;
   color: #001833;
-  text-align: center;
 }
 
-.c0 {
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -443,64 +437,62 @@ exports[`Banner renders with lightOrange palette 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#001833"
+  className="c0"
+  color="text"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Banner renders with lightRed palette 1`] = `
-.c3 {
+exports[`Banner renders with lightRed bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
-.c1 {
+.c0 {
   background-color: #fcc;
   color: #001833;
-  text-align: center;
 }
 
-.c0 {
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -515,64 +507,62 @@ exports[`Banner renders with lightRed palette 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#001833"
+  className="c0"
+  color="text"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Banner renders with no props other than theme 1`] = `
-.c1 {
-  background-color: #f0f2f4;
-  color: #001833;
-  text-align: center;
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
-.c0 {
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -587,48 +577,62 @@ exports[`Banner renders with no props other than theme 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
-  font-size: 14px;
-}
-
-.c3 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#001833"
+  className="c0"
+  color="white"
 >
   <div
-    className="c2"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
       className="c3"
-      fontSize={2}
-    />
-    <span
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Banner renders with orange palette 1`] = `
-.c3 {
+exports[`Banner renders with orange bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
-.c1 {
+.c0 {
   background-color: #f90;
   color: #fff;
-  text-align: center;
 }
 
-.c0 {
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -643,64 +647,62 @@ exports[`Banner renders with orange palette 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#fff"
+  className="c0"
+  color="white"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Banner renders with red palette 1`] = `
-.c3 {
+exports[`Banner renders with red bg 1`] = `
+.c2 {
+  text-align: center;
+}
+
+.c4 {
   width: 100%;
   text-align: left;
 }
 
-.c1 {
+.c0 {
   background-color: #c00;
   color: #fff;
-  text-align: center;
 }
 
-.c0 {
+.c5 {
+  font-size: 14px;
+}
+
+.c3 {
+  margin-right: 32px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -715,47 +717,34 @@ exports[`Banner renders with red palette 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  margin-right: 32px;
-}
-
-.c4 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <div
-  className="c0 c1"
-  color="#fff"
+  className="c0"
+  color="white"
 >
-  <svg
-    className="c2"
-    fill="currentcolor"
-    height={28}
-    mr={3}
-    viewBox="0 0 24 24"
-    width={28}
-  >
-    <path
-      d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z"
-    />
-  </svg>
   <div
-    className="c3"
-    width={1}
+    className="c1 c2"
   >
-    <h5
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={28}
+      mr={3}
+      viewBox="0 0 24 24"
+      width={28}
+    >
+      <path
+        d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z"
+      />
+    </svg>
+    <div
       className="c4"
-      fontSize={2}
-    />
-    <span
-      className="c5"
-      fontSize={1}
-    />
+      width={1}
+    >
+      <span
+        className="c5"
+        fontSize={1}
+      />
+    </div>
   </div>
 </div>
 `;

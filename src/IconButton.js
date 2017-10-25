@@ -9,9 +9,13 @@ const StyledButton = styled(Button)`
   height: auto;
   background-color: transparent;
   color: currentcolor;
+
+  hover: {
+    background-color: transparent;
+  }
 `
 
-const IconButton = (props) => (
+const IconButton = props => (
   <StyledButton {...props} title={props.title} onClick={props.onClick}>
     <Icon name={props.name} size={props.size} color={props.color} />
   </StyledButton>

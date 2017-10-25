@@ -8,8 +8,6 @@ describe('Banner', () => {
   test('renders with no props other than theme', () => {
     const json = renderer.create(<Banner theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightGray)
-    expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
   test('renders with custom iconName and size', () => {
@@ -19,173 +17,148 @@ describe('Banner', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with lightGray palette', () => {
-    const json = renderer
-      .create(<Banner palette="lightGray" theme={theme} />)
-      .toJSON()
+  test('renders with blue bg', () => {
+    const json = renderer.create(<Banner bg="blue" theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.lightGray.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.lightGray.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
-  test('renders with blue palette', () => {
-    const json = renderer
-      .create(<Banner palette="blue" theme={theme} />)
-      .toJSON()
+  test('renders with green bg', () => {
+    const json = renderer.create(<Banner bg="green" theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.blue.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.blue.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.green)
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
-  test('renders with green palette', () => {
-    const json = renderer
-      .create(<Banner palette="green" theme={theme} />)
-      .toJSON()
+  test('renders with orange bg', () => {
+    const json = renderer.create(<Banner bg="orange" theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.green.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.green.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.orange)
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
-  test('renders with orange palette', () => {
-    const json = renderer
-      .create(<Banner palette="orange" theme={theme} />)
-      .toJSON()
+  test('renders with red bg', () => {
+    const json = renderer.create(<Banner bg="red" theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.orange.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.orange.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.red)
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
-  test('renders with red palette', () => {
+  test('renders with lightBlue bg', () => {
     const json = renderer
-      .create(<Banner palette="red" theme={theme} />)
+      .create(<Banner bg="lightBlue" theme={theme} />)
       .toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.red.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.red.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
+    expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
-  test('renders with lightBlue palette', () => {
+  test('renders with lightGreen bg', () => {
     const json = renderer
-      .create(<Banner palette="lightBlue" theme={theme} />)
+      .create(<Banner bg="lightGreen" theme={theme} />)
       .toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.lightBlue.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.lightBlue.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.lightGreen)
+    expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
-  test('renders with lightGreen palette', () => {
+  test('renders with lightOrange bg', () => {
     const json = renderer
-      .create(<Banner palette="lightGreen" theme={theme} />)
+      .create(<Banner bg="lightOrange" theme={theme} />)
       .toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.lightGreen.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.lightGreen.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.lightOrange)
+    expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
-  test('renders with lightOrange palette', () => {
+  test('renders with lightRed bg', () => {
     const json = renderer
-      .create(<Banner palette="lightOrange" theme={theme} />)
+      .create(<Banner bg="lightRed" theme={theme} />)
       .toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.lightOrange.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.lightOrange.color)
-  })
-
-  test('renders with lightRed palette', () => {
-    const json = renderer
-      .create(<Banner palette="lightRed" theme={theme} />)
-      .toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule(
-      'background-color',
-      theme.palette.lightRed.backgroundColor
-    )
-    expect(json).toHaveStyleRule('color', theme.palette.lightRed.color)
+    expect(json).toHaveStyleRule('background-color', theme.colors.lightRed)
+    expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
   test('renders close button if onClose func is provided', () => {
     const wrapper = shallow(<Banner onClose={() => {}} theme={theme} />)
-    const close = wrapper.find('CloseButton')
-    expect(close).toHaveLength(1)
+    const bannerRow = wrapper.find('BannerRow')
+    const closeButton = bannerRow.dive().find('CloseButton')
+    expect(closeButton).toHaveLength(1)
   })
 
   test('does render blue left-hand icon by default', () => {
-    const wrapper = shallow(<Banner palette="blue" theme={theme} />)
-    const icon = wrapper.find('[name="information"]')
+    const wrapper = shallow(<Banner bg="blue" theme={theme} />)
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="information"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does render green left-hand icon by default', () => {
-    const wrapper = shallow(<Banner palette="green" theme={theme} />)
-    const icon = wrapper.find('[name="success"]')
+    const wrapper = shallow(<Banner bg="green" theme={theme} />)
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="success"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does render orange left-hand icon by default', () => {
-    const wrapper = shallow(<Banner palette="orange" theme={theme} />)
-    const icon = wrapper.find('[name="attention"]')
+    const wrapper = shallow(<Banner bg="orange" theme={theme} />)
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="attention"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does render red left-hand icon by default', () => {
-    const wrapper = shallow(<Banner palette="red" theme={theme} />)
-    const icon = wrapper.find('[name="warning"]')
+    const wrapper = shallow(<Banner bg="red" theme={theme} />)
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="warning"]')
     expect(icon).toHaveLength(1)
   })
 
   test('does not render blue left-hand icon if showIcon is false', () => {
-    const wrapper = shallow(
-      <Banner palette="blue" showIcon={false} theme={theme} />
-    )
-    const icon = wrapper.find('[name="information"]')
+    const wrapper = shallow(<Banner bg="blue" showIcon={false} theme={theme} />)
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="information"]')
     expect(icon).toHaveLength(0)
   })
 
   test('does not render green left-hand icon if showIcon is false', () => {
     const wrapper = shallow(
-      <Banner palette="green" showIcon={false} theme={theme} />
+      <Banner bg="green" showIcon={false} theme={theme} />
     )
-    const icon = wrapper.find('[name="success"]')
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="success"]')
     expect(icon).toHaveLength(0)
   })
 
   test('does not render orange left-hand icon if showIcon is false', () => {
     const wrapper = shallow(
-      <Banner palette="orange" showIcon={false} theme={theme} />
+      <Banner bg="orange" showIcon={false} theme={theme} />
     )
-    const icon = wrapper.find('[name="attention"]')
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="attention"]')
     expect(icon).toHaveLength(0)
   })
 
   test('does not render red left-hand icon if showIcon is false', () => {
-    const wrapper = shallow(
-      <Banner palette="red" showIcon={false} theme={theme} />
-    )
-    const icon = wrapper.find('[name="warning"]')
+    const wrapper = shallow(<Banner bg="red" showIcon={false} theme={theme} />)
+    const bannerRow = wrapper.find('BannerRow')
+    const icon = bannerRow.dive().find('[name="warning"]')
     expect(icon).toHaveLength(0)
+  })
+
+  test('renders two bannerRows if text and header are present', () => {
+    const wrapper = shallow(
+      <Banner text="text" header="header" showIcon={false} theme={theme} />
+    )
+    const bannerRows = wrapper.find('BannerRow')
+    expect(bannerRows).toHaveLength(2)
+  })
+
+  test('only accepts preset colors', () => {
+    const json = renderer.create(<Banner bg={'gray'} theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).not.toHaveStyleRule('background-color', theme.colors.gray)
   })
 })
