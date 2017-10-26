@@ -67,8 +67,7 @@
     "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "dist/"
-    ],
-    "setupTestFrameworkScriptFile": "./test-setup.js"
+    ]
   },
   "dependencies": {
     "prop-types": "^15.5.10",
