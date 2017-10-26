@@ -13,7 +13,7 @@ const StyledCard = styled(Card)`
 const Hug = props => (
   <StyledCard {...props} borderColor={props.bg}>
     <Flex p={3} align="center">
-      {!!props.iconName && <Icon mr={3} name={props.iconName} size={17} />}
+      {!!props.icon && <Icon mr={3} name={props.icon} size={16} />}
       <Text.span fontSize={1}>{props.text}</Text.span>
     </Flex>
     {props.children}
@@ -27,7 +27,7 @@ Hug.defaultProps = {
 }
 
 Hug.propTypes = {
-  iconName: PropTypes.string,
+  icon: PropTypes.string,
   text: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
