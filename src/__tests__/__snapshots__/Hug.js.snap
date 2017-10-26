@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hug renders text when array of nodes is provided 1`] = `[Function]`;
+
+exports[`Hug renders text when string is provided 1`] = `[Function]`;
+
+exports[`Hug renders text, icon, and Child 1`] = `[Function]`;
+
+exports[`Hug renders with border-radius from theme 1`] = `
+.c2 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+.c4 {
+  padding: 32px;
+  text-align: center;
+}
+
+.c1 {
+  border: 1px solid #0a0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  font-size: 14px;
+}
+
+.c0 {
+  border-radius: 2px;
+}
+
+<div
+  className="c0 c1 c2"
+  color="white"
+>
+  <div
+    className="c3 c4"
+  >
+    <span
+      className="c5"
+      fontSize={1}
+    />
+  </div>
+</div>
+`;
