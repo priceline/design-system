@@ -11,7 +11,7 @@ Use the `<Heading />` component to use HTML heading h1-h6 element, with all the 
 <Heading.h1>Hello</Heading.h1>
 
 // Heading with <Text> properties
-<Heading.h5 m={3} bold>Hello</Heading.h5>
+<Heading.h4 m={3} bold>Hello</Heading.h4>
 ```
 
 Prop | Type | Description
