@@ -18,7 +18,7 @@ describe('Hug', () => {
 
   test('renders text, icon, and Child', () => {
     const json = renderer.create(
-      <Hug icon="closeLight" text={text} theme={theme}>
+      <Hug iconName="thumbsUp" text={text} theme={theme}>
         <Card p={3} bg="white" color="text" theme={theme}>
           I'm a card within a hug!
         </Card>
@@ -30,7 +30,7 @@ describe('Hug', () => {
   test('renders text when string is provided', () => {
     const json = renderer.create(
       <Hug
-        icon="closeLight"
+        iconName="thumbsUp"
         text="I've been known to hug a card from time to time"
         theme={theme}
       >
@@ -44,7 +44,7 @@ describe('Hug', () => {
 
   test('renders text when array of nodes is provided', () => {
     const json = renderer.create(
-      <Hug icon="closeLight" text={[text, text]} theme={theme}>
+      <Hug iconName="thumbsUp" text={[text, text]} theme={theme}>
         <Card p={3} bg="white" color="text" theme={theme}>
           I'm a card within a hug!
         </Card>

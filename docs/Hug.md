@@ -1,7 +1,6 @@
 # `<Hug />`
 
 Use the `<Hug />` component to surround another component with a border and a banner on top.
-This component has a `<HugBanner />` component nested inside of it to create a banner.
 Pass in `props.children` to be wrapped.
 
 ```jsx

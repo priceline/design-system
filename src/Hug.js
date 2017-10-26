@@ -1,16 +1,21 @@
 import React from 'react'
 import Card from './Card'
-import HugBanner from './HugBanner'
+import Flex from './Flex'
+import Icon from './Icon'
+import Text from './Text'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledCard = styled(Card)`
-  border-radius: ${props => props.theme.radius}
+  border-radius: ${props => props.theme.radius};
 `
 
-const Hug = (props) => (
+const Hug = props => (
   <StyledCard {...props} borderColor={props.bg}>
-    <HugBanner iconName={props.iconName} text={props.text} />
+    <Flex p={3} align="center">
+      {!!props.iconName && <Icon mr={3} name={props.iconName} size={17} />}
+      <Text.span fontSize={1}>{props.text}</Text.span>
+    </Flex>
     {props.children}
   </StyledCard>
 )
