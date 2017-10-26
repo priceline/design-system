@@ -4,55 +4,35 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get () {
+      get() {
         return this[i]
       }
     })
   )
 
-export const breakpoints = [
-  32,
-  40,
-  48,
-  64
-]
+export const breakpoints = [32, 40, 48, 64]
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
-const aliases = [
-  'sm',
-  'md',
-  'lg',
-  'xl'
-]
+const aliases = ['sm', 'md', 'lg', 'xl']
 
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
-export const space = [
-  0,
-  4,
-  8,
-  16,
-  32,
-  64,
-  128
-]
+export const space = [0, 4, 8, 16, 32, 64, 128]
 
 export const font = `'Helvetica Neue',Helvetica,Arial,sans-serif`
 
-export const fontSizes = [
-  12,
-  14,
-  16,
-  20,
-  24,
-  32,
-  48
-]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
 export const bold = 700
+
+// styled-system's `fontWeight` function can hook into the `fontWeights` object
+export const fontWeights = {
+  regular,
+  bold
+}
 
 // color palette
 const black = '#000'
@@ -79,12 +59,12 @@ const purple = '#70b' // secondary
 const darkPurple = '#407'
 
 // tints
-const flatten = (name, colors) => colors
-  .reduce((a, b, i) => {
+const flatten = (name, colors) =>
+  colors.reduce((a, b, i) => {
     const color = {
       [name + i]: b
     }
-    return {...a, ...color}
+    return { ...a, ...color }
   }, {})
 
 const blues = [lightBlue, lightBlue, blue, blue]
@@ -131,6 +111,11 @@ export const colors = {
 }
 
 export const radius = '2px'
+
+// todo: wes can't decide on a size
+// styled-system's `borderRadius` function can hook into the `radii` object/array
+export const radii = [0, 2, 4, 6]
+
 export const maxContainerWidth = '1280px'
 
 const shadowColor = 'rgba(0,0,0,0.08)'
@@ -147,10 +132,12 @@ const theme = {
   space,
   font,
   fontSizes,
+  fontWeights,
   regular,
   bold,
   colors,
   radius,
+  radii,
   boxShadows,
   maxContainerWidth
 }
