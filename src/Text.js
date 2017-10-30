@@ -4,10 +4,11 @@ import { fontSize, space, color, responsiveStyle } from 'styled-system'
 
 export const caps = props => props.caps
   ? {
-    textTransform: 'uppercase',
-    letterSpacing: '0.2em'
+    textTransform: 'uppercase'
   }
   : null
+
+export const regular = props => props.regular ? { fontWeight: props.theme.regular } : null
 
 export const bold = props => props.bold ? { fontWeight: props.theme.bold } : null
 
@@ -18,6 +19,7 @@ const Text = styled.div`
   ${space}
   ${color}
   ${caps}
+  ${regular}
   ${bold}
   ${align}
 `
@@ -43,6 +45,7 @@ Text.propTypes = {
     'justify'
   ]),
   caps: PropTypes.bool,
+  regular: PropTypes.bool,
   bold: PropTypes.bool,
   color: PropTypes.string,
   /** Margin */

@@ -26,13 +26,13 @@ storiesOf('Heading', module)
   ))
   .add('Using <Text> props', () => (
     <section>
-      <Heading align='left' fontSize={6} color='green'>
+      <Heading align='left' bold fontSize={6} color='green'>
         Heading Left
       </Heading>
-      <Heading align='center' fontSize={5} color='blue'>
+      <Heading align='center' medium fontSize={5} color='blue'>
         Heading Center
       </Heading>
-      <Heading align='right' fontSize={4} color='orange'>
+      <Heading align='right' regular fontSize={4} color='orange'>
         Heading Right
       </Heading>
     </section>

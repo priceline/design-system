@@ -2,7 +2,7 @@
 
 exports[`theme snapshot 1`] = `
 Object {
-  "bold": 700,
+  "bold": 600,
   "boxShadows": Array [
     "0 0 4px 0 rgba(0,0,0,0.08)",
     "0 8px 8px 0 rgba(0,0,0,0.08)",
@@ -93,7 +93,7 @@ Object {
     "text": "#001833",
     "white": "#fff",
   },
-  "font": "'Helvetica Neue',Helvetica,Arial,sans-serif",
+  "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
   "fontSizes": Array [
     12,
     14,

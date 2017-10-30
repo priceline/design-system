@@ -39,7 +39,7 @@ export const space = [
   128
 ]
 
-export const font = `'Helvetica Neue',Helvetica,Arial,sans-serif`
+export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
 export const fontSizes = [
   12,
@@ -52,7 +52,7 @@ export const fontSizes = [
 ]
 
 export const regular = 400
-export const bold = 700
+export const bold = 600
 
 // color palette
 const black = '#000'
