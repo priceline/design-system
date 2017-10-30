@@ -24,6 +24,13 @@ storiesOf('Hug', module)
       </Card>
     </Hug>
   ))
+  .add('With an uncropped border', () => (
+    <Hug text={text}>
+      <Card p={3} bg="white" color="text" showChildBorder>
+        I‘m a card within a hug!
+      </Card>
+    </Hug>
+  ))
   .add('With plain text instead of component', () => (
     <Hug text="I am plain ol' text">
       <Card p={3} bg="white" color="text">

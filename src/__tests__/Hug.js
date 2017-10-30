@@ -10,15 +10,18 @@ const text = (
 )
 
 describe('Hug', () => {
-  test('renders with border-radius from theme', () => {
+  test('renders with border-radius from theme on top only', () => {
     const json = renderer.create(<Hug theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-radius', theme.radius)
+    expect(json).toHaveStyleRule('border-top-left-radius', theme.radius)
+    expect(json).toHaveStyleRule('border-top-right-radius', theme.radius)
+    expect(json).not.toHaveStyleRule('border-bottom-left-radius', theme.radius)
+    expect(json).not.toHaveStyleRule('border-bottom-right-radius', theme.radius)
   })
 
-  test('renders text, icon, and Child', () => {
+  test('renders text, icon, and Child with its own border', () => {
     const json = renderer.create(
-      <Hug icon="thumbsUp" text={text} theme={theme}>
+      <Hug showChildBorder icon="thumbsUp" text={text} theme={theme}>
         <Card p={3} bg="white" color="text" theme={theme}>
           I‘m a card within a hug!
         </Card>

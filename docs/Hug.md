@@ -9,5 +9,6 @@ Pass in `props.children` to be wrapped.
 
 Prop | Type | Description
 ---|---|---
+showChildBorder | boolean | prevents 1px of child element being cut off
 icon | string | svg icon name
 text | node, array of nodes, or string | When providing a node, it is highly recommended to use a `<Text.span />` node, to keep text on a single line

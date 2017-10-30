@@ -4,24 +4,25 @@ exports[`Hug renders text when array of nodes is provided 1`] = `[Function]`;
 
 exports[`Hug renders text when string is provided 1`] = `[Function]`;
 
-exports[`Hug renders text, icon, and Child 1`] = `[Function]`;
+exports[`Hug renders text, icon, and Child with its own border 1`] = `[Function]`;
 
-exports[`Hug renders with border-radius from theme 1`] = `
-.c2 {
-  background-color: #0a0;
-  color: #fff;
+exports[`Hug renders with border-radius from theme on top only 1`] = `
+.c3 {
+  padding: 32px;
+  background-color: green;
+  color: white;
+  text-align: center;
 }
 
-.c4 {
-  padding: 32px;
-  text-align: center;
+.c6 {
+  margin: -1px;
 }
 
 .c1 {
   border: 1px solid #0a0;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,25 +33,36 @@ exports[`Hug renders with border-radius from theme 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   font-size: 14px;
 }
 
 .c0 {
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c5 {
+  z-index: -1;
+  position: relative;
 }
 
 <div
-  className="c0 c1 c2"
-  color="white"
+  className="c0 c1 "
 >
   <div
-    className="c3 c4"
+    className="c2 c3"
+    color="white"
   >
     <span
-      className="c5"
+      className="c4"
       fontSize={1}
     />
   </div>
+  <div
+    className="c5 c6"
+  />
 </div>
 `;
