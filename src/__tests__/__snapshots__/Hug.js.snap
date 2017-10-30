@@ -34,6 +34,7 @@ exports[`Hug renders with border-radius from theme 1`] = `
 
 .c1 {
   border: 1px solid #0a0;
+  border-radius: 2px;
 }
 
 .c0 {
