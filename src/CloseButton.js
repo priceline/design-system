@@ -2,9 +2,7 @@ import React from 'react'
 import IconButton from './IconButton'
 import PropTypes from 'prop-types'
 
-const CloseButton = (props) => (
-  <IconButton {...props} name='closeLight' title={props.title} onClick={props.onClick} size={props.size} />
-)
+const CloseButton = props => <IconButton {...props} name="closeLight" />
 
 CloseButton.defaultProps = {
   size: 14,

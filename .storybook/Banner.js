@@ -9,7 +9,7 @@ storiesOf('Banner', module)
         textAlign="left"
         mb={2}
         p={3}
-        header="lightGray"
+        header="default"
         text="Secondary Text"
         onClose={action('closed')}
       />
@@ -93,7 +93,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={2}
-        header="lightGray"
+        header="default"
         onClose={action('closed')}
       />
       <Banner
@@ -168,7 +168,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={2}
-        text="lightGray"
+        text="default"
         onClose={action('closed')}
       />
       <Banner
@@ -243,7 +243,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={3}
-        header="lightGray"
+        header="default"
         text="Secondary Text"
       />
       <Banner
@@ -318,7 +318,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={3}
-        header="lightGray"
+        header="default"
         text="Secondary Text"
         onClose={action('closed')}
         showIcon={false}
@@ -411,7 +411,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={3}
-        header="lightGray"
+        header="default"
         text="Secondary Text"
         showIcon={false}
       />
@@ -491,7 +491,7 @@ storiesOf('Banner', module)
   ))
   .add('Sans Close Button, Text only', () => (
     <Box>
-      <Banner textAlign="right" mb={2} p={2} text="lightGray" />
+      <Banner textAlign="right" mb={2} p={2} text="default" />
       <Banner textAlign="left" mb={2} p={2} text="blue" bg="blue" />
       <Banner textAlign="right" mb={2} p={2} text="green" bg="green" />
       <Banner textAlign="left" mb={2} p={2} text="orange" bg="orange" />
@@ -508,7 +508,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={2}
-        text="lightGray"
+        text="default"
         onClose={action('closed')}
         showIcon={false}
       />
@@ -588,13 +588,7 @@ storiesOf('Banner', module)
   ))
   .add('Without Icon or Close Button, Text only', () => (
     <Box>
-      <Banner
-        textAlign="right"
-        mb={2}
-        p={2}
-        text="lightGray"
-        showIcon={false}
-      />
+      <Banner textAlign="right" mb={2} p={2} text="default" showIcon={false} />
       <Banner
         textAlign="left"
         mb={2}
@@ -667,7 +661,7 @@ storiesOf('Banner', module)
         textAlign="right"
         mb={2}
         p={2}
-        text="lightGray"
+        text="default"
         iconName="star"
         iconSize={10}
       />

@@ -293,11 +293,11 @@ exports[`Icon attention renders 1`] = `
   className=""
   fill="currentcolor"
   height={24}
-  viewBox="0 0 24 24"
+  viewBox="0 0 22 19"
   width={24}
 >
   <path
-    d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z"
+    d="M12,12H10V8h2Zm0,4H10V14h2ZM0,19H22L11,0Z"
   />
 </svg>
 `;
@@ -657,11 +657,11 @@ exports[`Icon information renders 1`] = `
   className=""
   fill="currentcolor"
   height={24}
-  viewBox="0 0 24 24"
+  viewBox="0 0 20 20"
   width={24}
 >
   <path
-    d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z"
+    d="M11,7H9V5h2Zm0,8H9V9h2ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
   />
 </svg>
 `;
@@ -923,11 +923,11 @@ exports[`Icon success renders 1`] = `
   className=""
   fill="currentcolor"
   height={24}
-  viewBox="0 0 24 24"
+  viewBox="0 0 20 20"
   width={24}
 >
   <path
-    d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z"
+    d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
   />
 </svg>
 `;
@@ -965,11 +965,11 @@ exports[`Icon warning renders 1`] = `
   className=""
   fill="currentcolor"
   height={24}
-  viewBox="0 0 24 24"
+  viewBox="0 0 20 20"
   width={24}
 >
   <path
-    d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z"
+    d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm1,11H9V5h2Zm0,4H9V13h2Z"
   />
 </svg>
 `;

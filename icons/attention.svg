@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>alert / attention / dark</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="alert-/-attention-/-dark">
-            <g id="attention">
-                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
-                <path d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z" id="Shape" fill="#001833" fill-rule="nonzero"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 19"><defs><style>.cls-1{fill:#001833;}</style></defs><title>attention_1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path id="attention" class="cls-1" d="M12,12H10V8h2Zm0,4H10V14h2ZM0,19H22L11,0Z"/></g></g></svg>
