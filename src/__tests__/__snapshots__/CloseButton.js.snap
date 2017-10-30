@@ -31,18 +31,15 @@ exports[`CloseButton renders with theme only 1`] = `
   padding: 0;
   height: auto;
   background-color: transparent;
-  color: currentcolor;
+  color: inherit;
 }
 
-.c0 hover: {
+.c0:hover {
   background-color: transparent;
 }
 
 <button
   className="c0 c1"
-  name="closeLight"
-  onClick={undefined}
-  size={14}
   title="close"
 >
   <svg
