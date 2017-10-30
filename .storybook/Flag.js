@@ -26,3 +26,12 @@ storiesOf('Flag', module)
       </Card>
     </Box>
   ))
+  .add('Compensating for 1px border', () => (
+    <Box p={3}>
+      <Card pb={3}>
+        <Flag width={192} ml={-9} mt={2}>
+          <b>Hello</b>
+        </Flag>
+      </Card>
+    </Box>
+  ))

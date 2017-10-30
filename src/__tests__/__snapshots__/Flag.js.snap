@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flag renders 1`] = `
+.c1 {
+  margin-bottom: 8px;
+  margin-left: -8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  display: block;
+  width: 4px;
+  height: 4px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-right: -8px;
+  margin-bottom: -8px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.c4 {
+  display: inline-block;
+  width: 16px;
+  height: 32px;
+  margin-left: -8px;
+  -webkit-transform: skew(-14deg);
+  -ms-transform: skew(-14deg);
+  transform: skew(-14deg);
+}
+
+.c3 {
+  font-size: px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+  background-color: green;
+}
+
+<div
+  className="c0 c1"
+  width={undefined}
+>
+  <div
+    className="c2"
+    color="green"
+  />
+  <div
+    className="c3"
+    color="white"
+  />
+  <div
+    className="c4"
+    color="green"
+  />
+</div>
+`;
+
+exports[`Flag renders with width prop 1`] = `
+.c1 {
+  margin-bottom: 8px;
+  margin-left: -8px;
+  width: 256px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  display: block;
+  width: 4px;
+  height: 4px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-right: -8px;
+  margin-bottom: -8px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.c4 {
+  display: inline-block;
+  width: 16px;
+  height: 32px;
+  margin-left: -8px;
+  -webkit-transform: skew(-14deg);
+  -ms-transform: skew(-14deg);
+  transform: skew(-14deg);
+}
+
+.c3 {
+  font-size: px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  color: white;
+  background-color: green;
+}
+
+<div
+  className="c0 c1"
+  width={256}
+>
+  <div
+    className="c2"
+    color="green"
+  />
+  <div
+    className="c3"
+    color="white"
+  />
+  <div
+    className="c4"
+    color="green"
+  />
+</div>
+`;

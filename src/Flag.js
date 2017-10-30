@@ -33,7 +33,8 @@ const FlagRight = styled('div')`
   margin-left: -8px;
   background-color: ${props => theme(`colors.${props.color}`)(props)};
   border-radius: ${theme('radius')};
-  transform: skew(-15deg);
+  /* for 32 x 8 triangle */
+  transform: skew(-14deg);
 `
 
 const flexAuto = props =>
