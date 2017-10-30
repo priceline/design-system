@@ -10,7 +10,7 @@ const TransparentButton = styled(Button)`
   background-color: transparent;
   color: inherit;
 
-  hover: {
+  &:hover {
     background-color: transparent;
   }
 `

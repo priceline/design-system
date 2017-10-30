@@ -34,7 +34,7 @@ exports[`IconButton renders with theme only 1`] = `
   color: inherit;
 }
 
-.c0 hover: {
+.c0:hover {
   background-color: transparent;
 }
 
