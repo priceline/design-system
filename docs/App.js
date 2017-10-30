@@ -80,7 +80,6 @@ class App extends React.Component {
   render() {
     const { sections = [], basename, pathname, pkg } = this.props
     const { menuOpen } = this.state
-    console.log(pkg)
 
     return [
       <link
@@ -169,6 +168,7 @@ const sectionsOrder = [
   'Box',
   'Flex',
   'Hide',
+  'Container',
   // Typography
   'Text',
   'Heading',
@@ -181,6 +181,10 @@ const sectionsOrder = [
   'Icon',
   'Badge',
   'Divider',
+  'Card',
+  'Hug',
+  // 'Flag',
+  // 'GuestRating',
   // Guides
   'Layout',
   'Contributing'

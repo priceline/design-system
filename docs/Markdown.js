@@ -5,21 +5,18 @@ import remark from 'remark'
 import remarkSlug from 'remark-slug'
 import remarkReact from 'remark-react'
 import { color, space, theme } from 'styled-system'
-import {
-  Heading,
-  Text,
-  Link,
-} from 'pcln-design-system'
+import { Heading, Text, Link } from 'pcln-design-system'
 import CodeBlock from './CodeBlock'
 
 class Markdown extends React.Component {
-  constructor () {
+  constructor() {
     super()
 
     this.getElement = props => {
       const { children, scope } = props
       const remarkReactComponents = Object.assign({}, defaultScope, scope)
-      const text = React.Children.toArray(children)
+      const text = React.Children
+        .toArray(children)
         .filter(child => typeof child === 'string')
         .join('\n')
       const opts = {
@@ -35,14 +32,13 @@ class Markdown extends React.Component {
       const el = remark()
         .use(remarkSlug)
         .use(remarkReact, opts)
-        .processSync(text)
-        .contents
+        .processSync(text).contents
 
       return el
     }
   }
 
-  render () {
+  render() {
     const el = this.getElement(this.props)
 
     return el
@@ -79,16 +75,16 @@ Markdown.defaultProps = {
 const Code = styled.code`
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
-  ${color}
+  ${color};
 `
 
 Code.defaultProps = {
-  color: 'purple'
+  color: 'darkBlue'
 }
 
 const OverflowAuto = styled.div`
   max-width: 100%;
-  overflow-x:auto;
+  overflow-x: auto;
 `
 
 const Table = styled(props => (
@@ -100,9 +96,7 @@ const Table = styled(props => (
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
-  ${space}
-
-  & th {
+  ${space} & th {
     text-align: left;
     font-weight: bold;
     vertical-align: bottom;
@@ -126,7 +120,7 @@ const Table = styled(props => (
 `
 Table.defaultProps = {
   mt: 3,
-  mb: 3,
+  mb: 3
 }
 
 // move to scope
@@ -134,8 +128,7 @@ const heading = type => props => {
   const Comp = Heading[type]
   return (
     <Comp {...props}>
-      <Link href={'#' + props.id}
-        color='inherit'>
+      <Link href={'#' + props.id} color="inherit">
         {props.children}
       </Link>
     </Comp>
@@ -159,7 +152,7 @@ const defaultScope = {
 
 defaultScope.h1.defaultProps = {
   mt: 4,
-  mb: 3,
+  mb: 3
 }
 defaultScope.h2.defaultProps = {
   fontSize: 4,

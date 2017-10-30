@@ -1,5 +1,5 @@
 
-# `<Container />`
+# Container
 
 The `<Container />` component is used to align the app body at the center of screen.
 

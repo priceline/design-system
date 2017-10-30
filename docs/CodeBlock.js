@@ -1,18 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import * as P1 from 'pcln-design-system'
-import {
-  LiveProvider,
-  LivePreview,
-  LiveEditor,
-  LiveError
-} from 'react-live'
-import {
-  color,
-  space,
-  borderRadius,
-  theme
-} from 'styled-system'
+import { LiveProvider, LivePreview, LiveEditor, LiveError } from 'react-live'
+import { color, space, borderRadius, theme } from 'styled-system'
 
 const Preview = styled(LivePreview)`
   padding: 16px;
@@ -39,15 +29,14 @@ const Editor = styled(LiveEditor)`
   padding: 8px;
   tab-size: 2;
   overflow: auto;
-  ${color}
-  &:focus {
+  ${color} &:focus {
     outline: none;
-    box-shadow: 0 0 0 1px ${theme('colors.purple')};
+    box-shadow: 0 0 0 1px ${theme('colors.lightBlue')};
   }
 `
 
 Editor.defaultProps = {
-  color: 'purple',
+  color: 'blue',
   bg: 'lightGray'
 }
 
@@ -56,29 +45,27 @@ const Pre = styled.pre`
   font-size: 14px;
   margin: 0;
   overflow-x: auto;
-  ${space}
-  ${color}
-  ${borderRadius}
+  ${space} ${color} ${borderRadius};
 `
 
 Pre.defaultProps = {
   p: 3,
   borderRadius: 2,
-  color: 'purple',
+  color: 'blue',
   bg: 'lightGray'
 }
 
 class Catch extends React.Component {
-  constructor () {
+  constructor() {
     super()
     this.state = {
       err: null
     }
   }
-  componentDidCatch (err, info) {
+  componentDidCatch(err, info) {
     this.setState({ err })
   }
-  render () {
+  render() {
     const { err } = this.state
     if (err) return <pre>{err}</pre>
     return this.props.children
@@ -86,14 +73,16 @@ class Catch extends React.Component {
 }
 
 class CodeBlock extends React.Component {
-  constructor () {
+  constructor() {
     super()
-    this.getCode = props => React.Children.toArray(props.children)
-      .filter(child => typeof child === 'string')
-      .join('\n')
+    this.getCode = props =>
+      React.Children
+        .toArray(props.children)
+        .filter(child => typeof child === 'string')
+        .join('\n')
   }
 
-  render () {
+  render() {
     const { lang } = this.props
 
     if (lang !== '.jsx') {
@@ -105,20 +94,18 @@ class CodeBlock extends React.Component {
     return (
       <P1.Box mb={3}>
         <Catch>
-          <LiveProvider
-            code={code}
-            scope={P1}
-            mountStylesheet={false}>
+          <LiveProvider code={code} scope={P1} mountStylesheet={false}>
             <Preview />
             <Editor />
             <P1.Text
-              fontSize='8px'
-              align='right'
+              fontSize="8px"
+              align="right"
               caps
               bold
               mt={-12}
               mr={1}
-              color='purple'>
+              color="blue"
+            >
               Live Code
             </P1.Text>
             <Err />
