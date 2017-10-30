@@ -17,10 +17,6 @@ exports[`Hug renders with border-radius from theme 1`] = `
   text-align: center;
 }
 
-.c1 {
-  border: 1px solid #0a0;
-}
-
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -34,6 +30,10 @@ exports[`Hug renders with border-radius from theme 1`] = `
 
 .c5 {
   font-size: 14px;
+}
+
+.c1 {
+  border: 1px solid #0a0;
 }
 
 .c0 {

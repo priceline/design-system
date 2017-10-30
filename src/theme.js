@@ -4,52 +4,26 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get () {
+      get() {
         return this[i]
       }
     })
   )
 
-export const breakpoints = [
-  32,
-  40,
-  48,
-  64
-]
+export const breakpoints = [32, 40, 48, 64]
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
-const aliases = [
-  'sm',
-  'md',
-  'lg',
-  'xl'
-]
+const aliases = ['sm', 'md', 'lg', 'xl']
 
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
-export const space = [
-  0,
-  4,
-  8,
-  16,
-  32,
-  64,
-  128
-]
+export const space = [0, 4, 8, 16, 32, 64, 128]
 
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
-export const fontSizes = [
-  12,
-  14,
-  16,
-  20,
-  24,
-  32,
-  48
-]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
 export const bold = 600
@@ -79,12 +53,12 @@ const purple = '#70b' // secondary
 const darkPurple = '#407'
 
 // tints
-const flatten = (name, colors) => colors
-  .reduce((a, b, i) => {
+const flatten = (name, colors) =>
+  colors.reduce((a, b, i) => {
     const color = {
       [name + i]: b
     }
-    return {...a, ...color}
+    return { ...a, ...color }
   }, {})
 
 const blues = [lightBlue, lightBlue, blue, blue]
