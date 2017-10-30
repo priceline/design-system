@@ -40,6 +40,7 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 - [`<Hide />`](docs/Hide.md)
 - [`<Hug />`](docs/Hug.md)
 - [`<Icon />`](docs/Icon.md)
+- [`<IconButton />`](docs/IconButton.md)
 - [`<Image />`](docs/Image.md)
 - [`<Flex />`](docs/Flex.md)
 - [`<Link />`](docs/Link.md)
