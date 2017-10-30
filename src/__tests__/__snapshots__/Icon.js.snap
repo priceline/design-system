@@ -288,6 +288,20 @@ exports[`Icon arrowOneWay renders 1`] = `
 </svg>
 `;
 
+exports[`Icon attention renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 22 19"
+  width={24}
+>
+  <path
+    d="M12,12H10V8h2Zm0,4H10V14h2ZM0,19H22L11,0Z"
+  />
+</svg>
+`;
+
 exports[`Icon calendar renders 1`] = `
 <svg
   className=""
@@ -638,6 +652,20 @@ exports[`Icon hotelOutline renders 1`] = `
 </svg>
 `;
 
+exports[`Icon information renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 20 20"
+  width={24}
+>
+  <path
+    d="M11,7H9V5h2Zm0,8H9V9h2ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+  />
+</svg>
+`;
+
 exports[`Icon locked renders 1`] = `
 <svg
   className=""
@@ -890,6 +918,34 @@ exports[`Icon starHalf renders 1`] = `
 </svg>
 `;
 
+exports[`Icon success renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 20 20"
+  width={24}
+>
+  <path
+    d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+  />
+</svg>
+`;
+
+exports[`Icon thumbsUp renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 22 20"
+  width={24}
+>
+  <path
+    d="M22,9a2,2,0,0,0-2-2H13.69l1-4.57,0-.32A1.51,1.51,0,0,0,14.23,1L13.17,0,6.59,6.59A2,2,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.84-1.22l3-7.05A2,2,0,0,0,22,11V9.09h0ZM0,20H4V8H0Z"
+  />
+</svg>
+`;
+
 exports[`Icon unlocked renders 1`] = `
 <svg
   className=""
@@ -900,6 +956,20 @@ exports[`Icon unlocked renders 1`] = `
 >
   <path
     d="M1,22 L1,11.859389 L15.241836,11.859389 L15.241836,22 L1,22 Z M14.1185855,10.5021972 L11.8720846,10.5021972 L11.8720846,7.34005863 C11.8720846,4.39559501 14.2597208,2 17.1944022,2 C20.1279171,2 22.5155534,4.39559501 22.5155534,7.34005863 L22.5155534,10.4764507 L20.2690524,10.4764507 L20.2690524,7.34005863 C20.2690524,5.63844889 18.8903587,4.25398924 17.1944022,4.25398924 C15.4984456,4.25398924 14.1185855,5.63844889 14.1185855,7.34005863 L14.1185855,10.5021972 Z"
+  />
+</svg>
+`;
+
+exports[`Icon warning renders 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 20 20"
+  width={24}
+>
+  <path
+    d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm1,11H9V5h2Zm0,4H9V13h2Z"
   />
 </svg>
 `;
