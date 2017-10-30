@@ -22,9 +22,8 @@ describe('Icon', () => {
     })
   })
 
-
   test('returns false for non-existing icons', () => {
-    const icon = renderer.create(<Icon name='nope' />).toJSON()
+    const icon = renderer.create(<Icon name="nope" />).toJSON()
     expect(icon).toBe(null)
   })
 })

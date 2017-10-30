@@ -89,13 +89,14 @@ exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 .c0 {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0px;
+  text-transform: uppercase;
 }
 
 <h6
   className="c0"
-  fontSize={1}
+  fontSize={0}
 />
 `;
 

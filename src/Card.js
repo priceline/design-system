@@ -20,9 +20,11 @@ const boxShadow = props => {
   return boxShadows[props.boxShadowSize]
 }
 
-const boxBorder = props => {
+function boxBorder(props) {
   return {
-    border: `${props.borderWidth}px solid ${props.theme.colors.borderGray}`
+    border: `${props.borderWidth}px solid ${props.theme.colors[
+      props.borderColor
+    ]}`
   }
 }
 
@@ -37,6 +39,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
+  borderColor: 'borderGray',
   borderWidth: 1
 }
 
