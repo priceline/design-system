@@ -38,6 +38,7 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 - [`<Card />`](docs/Card.md)
 - [`<Heading />`](docs/Heading.md)
 - [`<Hide />`](docs/Hide.md)
+- [`<Hug />`](docs/Hug.md)
 - [`<Icon />`](docs/Icon.md)
 - [`<Image />`](docs/Image.md)
 - [`<Flex />`](docs/Flex.md)

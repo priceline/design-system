@@ -12,11 +12,7 @@ const oldAndNewIcons = Object.assign({}, icons, {
   chevronThick: icons.chevronDownThick
 })
 
-const Base = ({
-  name,
-  size,
-  ...props
-}) => {
+const Base = ({ name, size, ...props }) => {
   const icon = oldAndNewIcons[name]
   if (!icon) return false
 
@@ -26,15 +22,15 @@ const Base = ({
       viewBox={icon.viewBox}
       width={size}
       height={size}
-      fill='currentcolor'>
+      fill="currentcolor"
+    >
       <path d={icon.path} />
     </svg>
   )
 }
 
 const Icon = styled(Base)`
-  ${space}
-  ${color}
+  ${space} ${color};
 `
 
 Icon.displayName = 'Icon'
@@ -46,9 +42,7 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   name: PropTypes.oneOf(Object.keys(oldAndNewIcons)).isRequired,
-  size: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number])
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 export default Icon
