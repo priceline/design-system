@@ -31,7 +31,7 @@ exports[`IconButton renders with theme only 1`] = `
   padding: 0;
   height: auto;
   background-color: transparent;
-  color: currentcolor;
+  color: inherit;
 }
 
 .c0 hover: {
@@ -40,8 +40,6 @@ exports[`IconButton renders with theme only 1`] = `
 
 <button
   className="c0 c1"
-  onClick={undefined}
-  title={undefined}
 >
   <svg
     className=""

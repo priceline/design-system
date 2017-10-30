@@ -8,16 +8,16 @@ const TransparentButton = styled(Button)`
   padding: 0;
   height: auto;
   background-color: transparent;
-  color: currentcolor;
+  color: inherit;
 
   hover: {
     background-color: transparent;
   }
 `
 
-const IconButton = props => (
-  <TransparentButton {...props} title={props.title} onClick={props.onClick}>
-    <Icon name={props.name} size={props.size} color={props.color} />
+const IconButton = ({ name, size, color, ...props }) => (
+  <TransparentButton {...props}>
+    <Icon name={name} size={size} color={color} />
   </TransparentButton>
 )
 
