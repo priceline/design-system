@@ -10,6 +10,7 @@
 - [`<Button />`](Button.md)
 - [`<Link />`](Link.md)
 - [`<Hug />`](Hug.md)
+- [`<Flag />`](Flag.md)
 - [`<Icon />`](Icon.md)
 - [`<Image />`](Image.md)
 - [`<BackgroundImage />`](BackgroundImage.md)
