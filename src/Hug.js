@@ -12,6 +12,7 @@ const HugCard = styled(Card)`
   border-top-right-radius: ${props => props.theme.radius};
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  overflow: hidden;
 `
 
 const BorderConcealer = styled(Box)`
@@ -19,13 +20,13 @@ const BorderConcealer = styled(Box)`
   position: relative;
 `
 
-const Hug = ({ showChildBorder, bg, color, ...props }) => (
+const Hug = ({ showChildBorder, childBorderWidth, bg, color, ...props }) => (
   <HugCard {...props} borderColor={bg}>
     <Flex bg={bg} color={color} p={3} align="center">
       {!!props.icon && <Icon mr={3} mt="-6px" name={props.icon} size={24} />}
       <Text.span fontSize={1}>{props.text}</Text.span>
     </Flex>
-    <BorderConcealer m={showChildBorder ? 0 : '-1px'}>
+    <BorderConcealer m={showChildBorder ? 0 : `-${childBorderWidth}px`}>
       {props.children}
     </BorderConcealer>
   </HugCard>
@@ -34,11 +35,13 @@ const Hug = ({ showChildBorder, bg, color, ...props }) => (
 Hug.defaultProps = {
   bg: 'green',
   borderWidth: 1,
+  childBorderWidth: 1,
   color: 'white'
 }
 
 Hug.propTypes = {
   showChildBorder: PropTypes.bool,
+  childBorderWidth: PropTypes.number,
   icon: PropTypes.string,
   text: PropTypes.oneOfType([
     PropTypes.node,

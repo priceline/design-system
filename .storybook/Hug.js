@@ -31,6 +31,13 @@ storiesOf('Hug', module)
       </Card>
     </Hug>
   ))
+  .add('With a large childBorderWidth', () => (
+    <Hug text={text} childBorderWidth={10}>
+      <Card borderWidth={10} p={3} bg="white" color="text">
+        I‘m a card within a hug!
+      </Card>
+    </Hug>
+  ))
   .add('With plain text instead of component', () => (
     <Hug text="I am plain ol' text">
       <Card p={3} bg="white" color="text">
