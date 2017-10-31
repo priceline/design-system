@@ -25,8 +25,8 @@ storiesOf('Hug', module)
     </Hug>
   ))
   .add('With an uncropped border', () => (
-    <Hug text={text}>
-      <Card p={3} bg="white" color="text" showChildBorder>
+    <Hug text={text} showChildBorder>
+      <Card p={3} bg="white" color="text">
         I‘m a card within a hug!
       </Card>
     </Hug>
