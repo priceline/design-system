@@ -11,5 +11,6 @@ Prop | Type | Description
 ---|---|---
 showChildBorder | boolean | prevents 1px of child element being cut off
 childBorderWidth | number | width in px to cut off of child
+iconDisplay | string or array of strings | responsive display property of icon
 icon | string | svg icon name
 text | node, array of nodes, or string | When providing a node, it is highly recommended to use a `<Text.span />` node, to keep text on a single line
