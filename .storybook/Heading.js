@@ -3,17 +3,19 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Heading } from '../src'
 
-const description = 'A type of the <Text> component' +
+const description =
+  'A type of the <Text> component' +
   ' using HTML h1-h6 element for setting section headings,' +
   ' supporting all <Text> props'
 
 storiesOf('Heading', module)
-  .add('Heading component', withInfo({
-    inline: true,
-    text: description
-  })(() => (
-    <Heading m={3}>Heading component</Heading>
-  )))
+  .add(
+    'Heading component',
+    withInfo({
+      inline: true,
+      text: description
+    })(() => <Heading m={3}>Heading component</Heading>)
+  )
   .add('Using dot-notation with h1-h6', () => (
     <section>
       <Heading.h1>Heading h1</Heading.h1>
@@ -26,13 +28,13 @@ storiesOf('Heading', module)
   ))
   .add('Using <Text> props', () => (
     <section>
-      <Heading align='left' bold fontSize={6} color='green'>
+      <Heading align="left" bold fontSize={6} color="green">
         Heading Left
       </Heading>
-      <Heading align='center' medium fontSize={5} color='blue'>
+      <Heading align="center" medium fontSize={5} color="blue">
         Heading Center
       </Heading>
-      <Heading align='right' regular fontSize={4} color='orange'>
+      <Heading align="right" regular fontSize={4} color="orange">
         Heading Right
       </Heading>
     </section>

@@ -10,7 +10,7 @@ describe('Text', () => {
   })
 
   test('align prop sets text-align', () => {
-    const json = renderer.create(<Text align='center' />).toJSON()
+    const json = renderer.create(<Text align="center" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')
   })
