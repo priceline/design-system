@@ -64,7 +64,13 @@ const Banner = props => {
           <Text.span fontSize={1}>{props.text}</Text.span>
         </Box>
         {!!props.onClose && (
-          <CloseButton onClick={props.onClose} ml={3} size={14} mt="6px" />
+          <CloseButton
+            onClick={props.onClose}
+            ml={3}
+            size={14}
+            mt={1}
+            title="close"
+          />
         )}
       </Flex>
     </Box>
