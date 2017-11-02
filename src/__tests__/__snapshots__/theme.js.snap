@@ -104,7 +104,7 @@ Object {
     48,
   ],
   "fontWeights": Object {
-    "bold": 700,
+    "bold": 600,
     "regular": 400,
   },
   "maxContainerWidth": "1280px",
