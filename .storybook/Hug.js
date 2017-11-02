@@ -33,17 +33,12 @@ storiesOf('Hug', module)
       </Card>
     </Hug>
   ))
-  .add('With an uncropped border', () => (
-    <Hug text={text} showChildBorder>
+  .add('With a card in a card', () => (
+    <Hug text={text}>
       <Card p={3} bg="white" color="text">
-        I‘m a card within a hug!
-      </Card>
-    </Hug>
-  ))
-  .add('With a large childBorderWidth', () => (
-    <Hug text={text} childBorderWidth={10}>
-      <Card borderWidth={10} p={3} bg="white" color="text">
-        I‘m a card within a hug!
+        <Card p={3} bg="white" color="text">
+          I‘m a card within a card within a hug!
+        </Card>
       </Card>
     </Hug>
   ))
@@ -64,7 +59,7 @@ storiesOf('Hug', module)
   .add('With a responsive hug', () => (
     <Hug
       text={responsiveText}
-      p={[2, 3]}
+      p={2}
       fontSize={[0, 1]}
       icon="thumbsUp"
       iconDisplay={['none', 'unset']}

@@ -4,18 +4,14 @@ exports[`Hug renders text when array of nodes is provided 1`] = `[Function]`;
 
 exports[`Hug renders text when string is provided 1`] = `[Function]`;
 
-exports[`Hug renders text, icon, and Child with its own border 1`] = `[Function]`;
+exports[`Hug renders text, icon, and Child 1`] = `[Function]`;
 
 exports[`Hug renders with border-radius from theme on top only 1`] = `
 .c3 {
-  padding: 32px;
+  padding: 16px;
   background-color: green;
   color: white;
   text-align: center;
-}
-
-.c6 {
-  margin: -1px;
 }
 
 .c2 {
@@ -45,9 +41,8 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
   overflow: hidden;
 }
 
-.c5 {
-  z-index: -1;
-  position: relative;
+.c5 > * {
+  border: 0;
 }
 
 <div
@@ -63,7 +58,7 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
     />
   </div>
   <div
-    className="c5 c6"
+    className="c5 "
   />
 </div>
 `;

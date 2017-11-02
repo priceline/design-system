@@ -22,31 +22,23 @@ const HugCard = styled(Card)`
 `
 
 const BorderConcealer = styled(Box)`
-  z-index: -1;
-  position: relative;
+  & > * {
+    border: 0;
+  }
 `
 
 const HideableIcon = styled(Icon)`
   ${display};
 `
 
-const Hug = ({
-  showChildBorder,
-  childBorderWidth,
-  bg,
-  color,
-  p,
-  fontSize,
-  icon,
-  iconDisplay,
-  ...props
-}) => (
+const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
   <HugCard {...props} borderColor={bg}>
     <Flex bg={bg} color={color} p={p} align="center">
       {!!icon && (
         <HideableIcon
-          mr={3}
-          mt="-6px"
+          mr={2}
+          mt="-2px"
+          mb="2px"
           name={icon}
           size={24}
           display={iconDisplay}
@@ -54,24 +46,19 @@ const Hug = ({
       )}
       <Text.span fontSize={fontSize}>{props.text}</Text.span>
     </Flex>
-    <BorderConcealer m={showChildBorder ? 0 : `-${childBorderWidth}px`}>
-      {props.children}
-    </BorderConcealer>
+    <BorderConcealer>{props.children}</BorderConcealer>
   </HugCard>
 )
 
 Hug.defaultProps = {
   bg: 'green',
   borderWidth: 1,
-  childBorderWidth: 1,
   color: 'white',
   fontSize: 1,
-  p: 3
+  p: 2
 }
 
 Hug.propTypes = {
-  showChildBorder: PropTypes.bool,
-  childBorderWidth: PropTypes.number,
   iconDisplay: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.string,
   text: PropTypes.oneOfType([
