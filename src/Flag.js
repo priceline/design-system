@@ -29,7 +29,8 @@ const FlagShadow = styled('div')`
 const FlagRight = styled('div')`
   display: inline-block;
   width: 16px;
-  height: 32px;
+  flex: none;
+  min-height: 32px;
   margin-left: -8px;
   background-color: ${props => theme(`colors.${props.color}`)(props)};
   border-radius: ${theme('radius')};

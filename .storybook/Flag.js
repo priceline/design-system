@@ -35,3 +35,14 @@ storiesOf('Flag', module)
       </Card>
     </Box>
   ))
+  .add('Wrapped text', () => (
+    <Box p={3}>
+      <Card pb={3}>
+        <Flag mt={2}>
+          <b>Hello</b>
+          This is a really long string of text that should wrap when it gets too
+          long. But then the flag part to the right will probably break.
+        </Flag>
+      </Card>
+    </Box>
+  ))
