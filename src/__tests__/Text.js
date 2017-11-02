@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 import { Text, theme } from '..'
 
 describe('Text', () => {
@@ -10,9 +9,15 @@ describe('Text', () => {
   })
 
   test('align prop sets text-align', () => {
-    const json = renderer.create(<Text align='center' />).toJSON()
+    const json = renderer.create(<Text align="center" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')
+  })
+
+  test('regular prop sets font-weight', () => {
+    const json = renderer.create(<Text regular theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('font-weight', theme.regular.toString())
   })
 
   test('bold prop sets font-weight', () => {
@@ -21,11 +26,10 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('font-weight', theme.bold.toString())
   })
 
-  test('caps prop sets text-transform and letter-spacing', () => {
+  test('caps prop sets text-transform', () => {
     const json = renderer.create(<Text caps />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-transform', 'uppercase')
-    expect(json).toHaveStyleRule('letter-spacing', '0.2em')
   })
 
   test('fontSize prop sets font-size', () => {

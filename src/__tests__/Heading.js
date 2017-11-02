@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 import { Heading, theme } from '..'
 
 describe('Heading', () => {
@@ -9,8 +8,7 @@ describe('Heading', () => {
     expect(json).toMatchSnapshot()
   })
 
-  const dotNotationTestCase =
-    'Heading component with h1-h6 dot-notation'
+  const dotNotationTestCase = 'Heading component with h1-h6 dot-notation'
   test(dotNotationTestCase, () => {
     const headingH1json = renderer.create(<Heading.h1 />).toJSON()
     const headingH2json = renderer.create(<Heading.h2 />).toJSON()
@@ -37,9 +35,9 @@ describe('Heading', () => {
   const usingTextPropsTestCase =
     'Heading component using <Text> component properties'
   test(usingTextPropsTestCase, () => {
-    const json = renderer.create(
-      <Heading align='center' color={theme.colors['gray']} />
-    ).toJSON()
+    const json = renderer
+      .create(<Heading align="center" color={theme.colors['gray']} />)
+      .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')
     expect(json).toHaveStyleRule('color', theme.colors['gray'])

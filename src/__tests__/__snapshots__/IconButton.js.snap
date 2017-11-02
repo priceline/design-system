@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton renders with theme only 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  padding: 0;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
+}
+
+.c0:hover {
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
+>
+  <svg
+    className=""
+    color={undefined}
+    fill="currentcolor"
+    height={24}
+    viewBox="0 0 20 19"
+    width={24}
+  >
+    <path
+      d="M19.999 1.42a1.374 1.374 0 0 0-.572-1.117 1.468 1.468 0 0 0-.975-.3c-.386.025-.749.21-.99.51L6.854 15.471l-4.422-4.476c-.556-.543-1.505-.534-2.037.024A1.457 1.457 0 0 0 0 12.055c.008.397.161.77.42 1.028l5.476 5.512c.266.26.637.405 1.031.405A1.353 1.353 0 0 0 8 18.466L19.62 2.439c.25-.26.387-.631.379-1.02h-.001z"
+    />
+  </svg>
+</button>
+`;

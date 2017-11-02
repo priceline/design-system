@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label it renders 1`] = `
+.c0 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  font-size: 10px;
+}
+
+<label
+  className="c0"
+  fontSize="10px"
+/>
+`;
