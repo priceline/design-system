@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 import { Hide, theme } from '..'
 
 describe('Hide', () => {
@@ -33,5 +32,4 @@ describe('Hide', () => {
     const json = renderer.create(<Hide xl theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
   })
-
 })
