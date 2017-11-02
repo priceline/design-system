@@ -15,6 +15,7 @@
 - [`<IconButton />`](IconButton.md)
 - [`<Image />`](Image.md)
 - [`<BackgroundImage />`](BackgroundImage.md)
+- [`<RatingBadge />`](RatingBadge.md)
 - [Theme](Theme.md)
 - [Contributing](Contributing.md)
 
