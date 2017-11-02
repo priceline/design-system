@@ -1,0 +1,711 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField it renders 1`] = `
+.c3 {
+  width: 100%;
+  text-align: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #abb7c2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-color: #abb7c2;
+  box-shadow: 0 0 0 0 #abb7c2;
+  margin-top: -20px;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::-moz-placeholder {
+  color: #abb7c2;
+}
+
+.c4:-ms-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::placeholder {
+  color: #abb7c2;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 1px #007aff;
+}
+
+.c1 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  padding-left: 13px;
+  font-size: 10px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <label
+      className="c1"
+      fontSize="10px"
+      htmlFor={undefined}
+    />
+    <div
+      className="c2 c3"
+      width={1}
+    >
+      <input
+        aria-describedby={undefined}
+        className="c4"
+        color={undefined}
+        id={undefined}
+        width={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputField it renders a form field with a color prop 1`] = `
+.c3 {
+  width: 100%;
+  text-align: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #abb7c2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-color: #007aff;
+  box-shadow: 0 0 0 0 #007aff;
+  margin-top: -20px;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::-moz-placeholder {
+  color: #abb7c2;
+}
+
+.c4:-ms-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::placeholder {
+  color: #abb7c2;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 1px #007aff;
+}
+
+.c1 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  padding-left: 13px;
+  font-size: 10px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <label
+      className="c1"
+      fontSize="10px"
+      htmlFor="form-field-2"
+    >
+      Last name
+    </label>
+    <div
+      className="c2 c3"
+      width={1}
+    >
+      <input
+        aria-describedby={undefined}
+        className="c4"
+        color="blue"
+        defaultValue="Dumoulin"
+        id="form-field-2"
+        placeholder="e.g. Dumoulin"
+        width={1}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputField it renders a form field with a generic message 1`] = `
+.c3 {
+  width: 100%;
+  text-align: center;
+}
+
+.c5 {
+  margin-left: -40px;
+  margin-right: 14px;
+  margin-top: -14px;
+}
+
+.c7 {
+  margin-bottom: -24px;
+  width: 100%;
+  color: #abb7c2;
+  background-color: #abb7c2;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  font-size: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #abb7c2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-color: #abb7c2;
+  box-shadow: 0 0 0 0 #abb7c2;
+  margin-top: -20px;
+  padding-bottom: 8px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::-moz-placeholder {
+  color: #abb7c2;
+}
+
+.c4:-ms-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::placeholder {
+  color: #abb7c2;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 1px #007aff;
+}
+
+.c1 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  padding-left: 13px;
+  font-size: 10px;
+}
+
+.c6 {
+  border-width: 1px;
+  border-radius: 0 0 2px 2px;
+  border-color: #abb7c2;
+  border-style: solid;
+  box-shadow: 0 -1px 0 0 #abb7c2;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <label
+      className="c1"
+      fontSize="10px"
+      htmlFor="form-field-3"
+    >
+      Email Address
+    </label>
+    <div
+      className="c2 c3"
+      width={1}
+    >
+      <input
+        aria-describedby="form-field-3-info"
+        className="c4"
+        color={undefined}
+        id="form-field-3"
+        placeholder="example@test.com"
+        width={1}
+      />
+      <div
+        className="c5"
+      >
+        <svg
+          className=""
+          color={undefined}
+          fill="currentcolor"
+          height={24}
+          viewBox="0 0 20 21"
+          width={24}
+        >
+          <path
+            d="M9.135 9.808c0-.044.037-.08.081-.08h1.552c.045 0 .081.036.081.08v6.987a.081.081 0 0 1-.081.08H9.216a.081.081 0 0 1-.08-.08V9.808zM11.285 6.345a1.25 1.25 0 1 1-2.498-.001 1.25 1.25 0 0 1 2.498 0z M9.992 20.86a9.94 9.94 0 0 1-7.072-2.93 9.94 9.94 0 0 1-2.93-7.072 9.94 9.94 0 0 1 2.93-7.071A9.93 9.93 0 0 1 9.992.857a9.94 9.94 0 0 1 7.071 2.93 9.93 9.93 0 0 1 2.93 7.071 9.94 9.94 0 0 1-2.93 7.072 9.935 9.935 0 0 1-7.071 2.93zm0-18.39c-4.623 0-8.385 3.761-8.385 8.384s3.762 8.39 8.385 8.39c4.623 0 8.389-3.763 8.389-8.39 0-4.627-3.762-8.385-8.39-8.385z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c6 c7"
+      color="#abb7c2"
+      width={1}
+    >
+      <div
+        className="c8"
+        color="white"
+        fontSize={10}
+        id="form-field-3-info"
+      >
+        This is just some info
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputField it renders a form field with an error message 1`] = `
+.c3 {
+  width: 100%;
+  text-align: center;
+}
+
+.c5 {
+  margin-left: -40px;
+  margin-right: 14px;
+  margin-top: -14px;
+}
+
+.c8 {
+  margin-bottom: -24px;
+  width: 100%;
+  color: #c00;
+  background-color: #c00;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  font-size: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.c6 {
+  color: #c00;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #abb7c2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-color: #c00;
+  box-shadow: 0 0 0 0 #c00;
+  margin-top: -20px;
+  padding-bottom: 8px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::-moz-placeholder {
+  color: #abb7c2;
+}
+
+.c4:-ms-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::placeholder {
+  color: #abb7c2;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:focus {
+  outline: 0;
+  border-color: #c00;
+  box-shadow: 0 0 0 1px #c00;
+}
+
+.c1 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  padding-left: 13px;
+  font-size: 10px;
+}
+
+.c7 {
+  border-width: 1px;
+  border-radius: 0 0 2px 2px;
+  border-color: #c00;
+  border-style: solid;
+  box-shadow: 0 -1px 0 0 #c00;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <label
+      className="c1"
+      fontSize="10px"
+      htmlFor="form-field-3"
+    >
+      Email Address
+    </label>
+    <div
+      className="c2 c3"
+      width={1}
+    >
+      <input
+        aria-describedby="form-field-3-info"
+        className="c4"
+        color="red"
+        defaultValue="oliver.dumoulin@priceline.c"
+        id="form-field-3"
+        placeholder="example@test.com"
+        width={1}
+      />
+      <div
+        className="c5"
+      >
+        <svg
+          className="c6"
+          color="red"
+          fill="currentcolor"
+          height={24}
+          viewBox="0 0 20 21"
+          width={24}
+        >
+          <path
+            d="M9.135 9.808c0-.044.037-.08.081-.08h1.552c.045 0 .081.036.081.08v6.987a.081.081 0 0 1-.081.08H9.216a.081.081 0 0 1-.08-.08V9.808zM11.285 6.345a1.25 1.25 0 1 1-2.498-.001 1.25 1.25 0 0 1 2.498 0z M9.992 20.86a9.94 9.94 0 0 1-7.072-2.93 9.94 9.94 0 0 1-2.93-7.072 9.94 9.94 0 0 1 2.93-7.071A9.93 9.93 0 0 1 9.992.857a9.94 9.94 0 0 1 7.071 2.93 9.93 9.93 0 0 1 2.93 7.071 9.94 9.94 0 0 1-2.93 7.072 9.935 9.935 0 0 1-7.071 2.93zm0-18.39c-4.623 0-8.385 3.761-8.385 8.384s3.762 8.39 8.385 8.39c4.623 0 8.389-3.763 8.389-8.39 0-4.627-3.762-8.385-8.39-8.385z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c7 c8"
+      color="#c00"
+      width={1}
+    >
+      <div
+        className="c9"
+        color="white"
+        fontSize={10}
+        id="form-field-3-info"
+      >
+        Please enter a valid email address
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputField it renders a form field wth a label and placeholder 1`] = `
+.c3 {
+  width: 100%;
+  text-align: center;
+}
+
+.c5 {
+  margin-left: -40px;
+  margin-right: 14px;
+  margin-top: -14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #abb7c2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-color: #abb7c2;
+  box-shadow: 0 0 0 0 #abb7c2;
+  margin-top: -20px;
+  padding-bottom: 8px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::-moz-placeholder {
+  color: #abb7c2;
+}
+
+.c4:-ms-input-placeholder {
+  color: #abb7c2;
+}
+
+.c4::placeholder {
+  color: #abb7c2;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 1px #007aff;
+}
+
+.c1 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  padding-left: 13px;
+  font-size: 10px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <label
+      className="c1"
+      fontSize="10px"
+      htmlFor="form-field-3"
+    >
+      Card number
+    </label>
+    <div
+      className="c2 c3"
+      width={1}
+    >
+      <input
+        aria-describedby={undefined}
+        className="c4"
+        color={undefined}
+        id="form-field-3"
+        placeholder="0000 0000 0000 0000"
+        width={1}
+      />
+      <div
+        className="c5"
+      >
+        <svg
+          className=""
+          color={undefined}
+          fill="currentcolor"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+        >
+          <path
+            d="M5,22 L5,11.859389 L19.241836,11.859389 L19.241836,22 L5,22 Z M9.17612777,10.5021972 L6.92962686,10.5021972 L6.92962686,7.34005863 C6.92962686,4.39559501 9.31726308,2 12.2519444,2 C15.1854594,2 17.5730956,4.39559501 17.5730956,7.34005863 L17.5730956,10.4764507 L15.3265947,10.4764507 L15.3265947,7.34005863 C15.3265947,5.63844889 13.947901,4.25398924 12.2519444,4.25398924 C10.5559879,4.25398924 9.17612777,5.63844889 9.17612777,7.34005863 L9.17612777,10.5021972 Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
