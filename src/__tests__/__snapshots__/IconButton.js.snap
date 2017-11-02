@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IconButton renders with theme only 1`] = `
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 .c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -42,7 +48,7 @@ exports[`IconButton renders with theme only 1`] = `
   className="c0 c1"
 >
   <svg
-    className=""
+    className="c2"
     color={undefined}
     fill="currentcolor"
     height={24}
