@@ -313,20 +313,20 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c6 {
-  border-width: 1px;
-  border-radius: 0 0 2px 2px;
-  border-color: #abb7c2;
-  border-style: solid;
-  box-shadow: 0 -1px 0 0 #abb7c2;
-}
-
 .c1 {
   font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
   font-size: 10px;
+}
+
+.c6 {
+  border-width: 1px;
+  border-radius: 0 0 2px 2px;
+  border-color: #abb7c2;
+  border-style: solid;
+  box-shadow: 0 -1px 0 0 #abb7c2;
 }
 
 .c0 {
@@ -491,20 +491,20 @@ exports[`InputField it renders a form field with an error message 1`] = `
   box-shadow: 0 0 0 1px #c00;
 }
 
-.c7 {
-  border-width: 1px;
-  border-radius: 0 0 2px 2px;
-  border-color: #c00;
-  border-style: solid;
-  box-shadow: 0 -1px 0 0 #c00;
-}
-
 .c1 {
   font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
   font-size: 10px;
+}
+
+.c7 {
+  border-width: 1px;
+  border-radius: 0 0 2px 2px;
+  border-color: #c00;
+  border-style: solid;
+  box-shadow: 0 -1px 0 0 #c00;
 }
 
 .c0 {
