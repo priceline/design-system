@@ -4,10 +4,7 @@ import PropTypes from 'prop-types'
 
 const align = responsiveStyle('text-align', 'align')
 const Box = styled.div`
-  ${space}
-  ${width}
-  ${color}
-  ${align}
+  ${space} ${width} ${color} ${align};
 `
 
 Box.displayName = 'Box'

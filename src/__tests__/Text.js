@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 import { Text, theme } from '..'
 
 describe('Text', () => {
@@ -10,7 +9,7 @@ describe('Text', () => {
   })
 
   test('align prop sets text-align', () => {
-    const json = renderer.create(<Text align='center' />).toJSON()
+    const json = renderer.create(<Text align="center" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')
   })
