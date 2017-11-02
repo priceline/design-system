@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import { fontWeight, borderRadius, propTypes } from 'styled-system'
 import Box from './Box'
 
-const GuestRating = styled(Box)`
+const RatingBadge = styled(Box)`
   display: inline-block;
   line-height: 1.5;
   ${fontWeight} ${borderRadius};
 `
 
-GuestRating.defaultProps = {
+RatingBadge.defaultProps = {
   fontWeight: 'bold',
   px: 2,
   color: 'white',
@@ -16,9 +16,9 @@ GuestRating.defaultProps = {
   borderRadius: 2
 }
 
-GuestRating.propTypes = {
+RatingBadge.propTypes = {
   ...propTypes.fontWeight,
   ...propTypes.borderRadius
 }
 
-export default GuestRating
+export default RatingBadge

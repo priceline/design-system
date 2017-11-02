@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GuestRating renders 1`] = `
+exports[`RatingBadge renders 1`] = `
 .c1 {
   padding-left: 16px;
   padding-right: 16px;

@@ -1,11 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import { GuestRating, theme } from '..'
+import { RatingBadge, theme } from '..'
 
-describe('GuestRating', () => {
+describe('RatingBadge', () => {
   test('renders', () => {
-    const json = renderer.create(<GuestRating />).toJSON()
+    const json = renderer.create(<RatingBadge />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })
