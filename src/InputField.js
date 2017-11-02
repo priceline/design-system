@@ -1,14 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Input, Label, Text, Flex, Box, Icon, theme } from '../src'
+import Box from './Box'
+import Flex from './Flex'
+import Text from './Text'
+import Icon from './Icon'
+import Label from './Label'
+import Input from './Input'
+import theme from './theme'
 
 const InfoBox = styled(Box)`
   border-width: 1px;
   border-radius: 0 0 2px 2px;
-  border-color: ${({color}) => color};
+  border-color: ${({ color }) => color};
   border-style: solid;
-  box-shadow: 0 -1px 0 0 ${({color}) => color};
+  box-shadow: 0 -1px 0 0 ${({ color }) => color};
 `
 const propTypes = {
   /** Id passed to the native input element. Necessary to set up aria-describedby and for attributes for accessibility.  */
@@ -22,19 +28,13 @@ const propTypes = {
   /** Additional content to go in the info drawer below the element. This will be replaced by a tooltip later probably.  */
   info: PropTypes.string
 }
-const InputField = ({
-  id,
-  label,
-  color,
-  icon,
-  info,
-  ...props
-}) => {
-
+const InputField = ({ id, label, color, icon, info, ...props }) => {
   return (
     <div>
-      <Label htmlFor={id} pl={13}>{label}</Label>
-      <Flex align='center' width={1}>
+      <Label htmlFor={id} pl={13}>
+        {label}
+      </Label>
+      <Flex align="center" width={1}>
         <Input
           id={id}
           pt={20}
@@ -44,18 +44,33 @@ const InputField = ({
           color={color}
           pr={icon && 40}
           aria-describedby={info && `${id}-info`}
-          {...props} />
-        {icon && <Box ml={-40} mr={14} mt={-14}><Icon name={icon} color={color}/></Box>}
+          {...props}
+        />
+        {icon && (
+          <Box ml={-40} mr={14} mt={-14}>
+            <Icon name={icon} color={color} />
+          </Box>
+        )}
       </Flex>
-      {info &&
+      {info && (
         <InfoBox
           width={1}
           mb={-24}
           color={theme.colors[color] || theme.colors.borderGray}
-          bg={theme.colors[color] || theme.colors.borderGray}>
-          <Text id={`${id}-info`} bold fontSize={10} px={13} py={1} color={'white'}>{info}</Text>
+          bg={theme.colors[color] || theme.colors.borderGray}
+        >
+          <Text
+            id={`${id}-info`}
+            bold
+            fontSize={10}
+            px={13}
+            py={1}
+            color={'white'}
+          >
+            {info}
+          </Text>
         </InfoBox>
-      }
+      )}
     </div>
   )
 }
