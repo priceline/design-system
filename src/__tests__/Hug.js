@@ -19,9 +19,9 @@ describe('Hug', () => {
     expect(json).not.toHaveStyleRule('border-bottom-right-radius', theme.radius)
   })
 
-  test('renders text, icon, and Child with its own border', () => {
+  test('renders text, icon, and Child', () => {
     const json = renderer.create(
-      <Hug showChildBorder icon="thumbsUp" text={text} theme={theme}>
+      <Hug icon="thumbsUp" text={text} theme={theme}>
         <Card p={3} bg="white" color="text" theme={theme}>
           I‘m a card within a hug!
         </Card>

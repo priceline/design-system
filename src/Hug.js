@@ -16,32 +16,28 @@ const HugCard = styled(Card)`
 `
 
 const BorderConcealer = styled(Box)`
-  z-index: -1;
-  position: relative;
+  & > * {
+    border: 0;
+  }
 `
 
-const Hug = ({ showChildBorder, childBorderWidth, bg, color, ...props }) => (
+const Hug = ({ bg, color, ...props }) => (
   <HugCard {...props} borderColor={bg}>
     <Flex bg={bg} color={color} p={3} align="center">
       {!!props.icon && <Icon mr={3} mt="-6px" name={props.icon} size={24} />}
       <Text.span fontSize={1}>{props.text}</Text.span>
     </Flex>
-    <BorderConcealer m={showChildBorder ? 0 : `-${childBorderWidth}px`}>
-      {props.children}
-    </BorderConcealer>
+    <BorderConcealer>{props.children}</BorderConcealer>
   </HugCard>
 )
 
 Hug.defaultProps = {
   bg: 'green',
   borderWidth: 1,
-  childBorderWidth: 1,
   color: 'white'
 }
 
 Hug.propTypes = {
-  showChildBorder: PropTypes.bool,
-  childBorderWidth: PropTypes.number,
   icon: PropTypes.string,
   text: PropTypes.oneOfType([
     PropTypes.node,
