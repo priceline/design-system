@@ -28,10 +28,10 @@ const FlagShadow = styled('div')`
 
 const FlagRight = styled('div')`
   display: inline-block;
-  width: 16px;
+  width: 18px;
   flex: none;
   min-height: 32px;
-  margin-left: -8px;
+  margin-left: -10px;
   background-color: ${props => theme(`colors.${props.color}`)(props)};
   border-radius: ${theme('radius')};
   /* for 32 x 8 triangle */
@@ -51,11 +51,12 @@ const FlagBody = styled('div')`
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
+  border-radius: 0 0 ${theme('radius')} 0;
   ${flexAuto} ${color};
 `
 
 const Flag = ({ color, bg, children, width, ...props }) => (
-  <Flex ml={-2} mb={2} width={width} {...props}>
+  <Flex ml={-2} mr={3} mb={2} width={width} {...props}>
     <FlagShadow color={bg} />
     <FlagBody flexAuto={!!width} color={color} bg={bg}>
       {children}
