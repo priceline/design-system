@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "1.0.0-20",
+  "version": "1.0.0-21",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -32,6 +32,10 @@
     {
       "name": "Evan Pipta",
       "email": "3pipta@gmail.com"
+    },
+    {
+      "name": "Jonathan Schwarz",
+      "email": "jonathan.e.schwarz@gmail.com"
     }
   ],
   "license": "MIT",
@@ -47,6 +51,8 @@
     "babel-preset-stage-0": "^6.24.1",
     "camelcase": "^4.1.0",
     "codecov": "^2.3.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.2",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.7.1",
@@ -68,7 +74,8 @@
     "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "dist/"
-    ]
+    ],
+    "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
     "prop-types": "^15.5.10",

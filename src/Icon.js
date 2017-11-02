@@ -33,6 +33,8 @@ const Icon = styled(Base)`
   ${space} ${color};
 `
 
+Icon.displayName = 'Icon'
+
 Icon.defaultProps = {
   name: 'checkLight',
   size: 24

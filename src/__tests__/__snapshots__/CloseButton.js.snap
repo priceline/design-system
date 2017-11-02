@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CloseButton renders with theme only 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  padding: 0;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
+}
+
+.c0:hover {
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
+  title="close"
+>
+  <svg
+    className=""
+    color={undefined}
+    fill="currentcolor"
+    height={14}
+    viewBox="0 0 20 20"
+    width={14}
+  >
+    <path
+      d="M18.127 19.817c-.33 0-.66-.127-.9-.378L1.031 2.514A1.116 1.116 0 0 1 1.113.882 1.262 1.262 0 0 1 2.83.96l16.196 16.925a1.116 1.116 0 0 1-.082 1.632 1.25 1.25 0 0 1-.818.301v-.001z M1.958 19.747c-.295 0-.59-.101-.824-.306a1.115 1.115 0 0 1-.07-1.632L17.391.997a1.262 1.262 0 0 1 1.717-.066c.494.432.525 1.163.07 1.632L2.852 19.375c-.24.247-.567.372-.894.372z"
+    />
+  </svg>
+</button>
+`;
