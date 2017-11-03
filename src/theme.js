@@ -104,6 +104,7 @@ export const colors = {
   ...flatten('purple', purples)
 }
 
+export const radii = ['0', '2px']
 export const radius = '2px'
 export const maxContainerWidth = '1280px'
 
@@ -124,6 +125,7 @@ const theme = {
   regular,
   bold,
   colors,
+  radii,
   radius,
   boxShadows,
   maxContainerWidth

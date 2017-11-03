@@ -4,14 +4,14 @@ import { withInfo } from '@storybook/addon-info'
 import { Label, Input } from '../src'
 
 storiesOf('Label', module)
-  .add('Label component', withInfo({
-    inline: true,
-    text: 'Simple styled label component that supports a number of the styled-system props.'
-  })(() => (
-    <Label m={3}>
-      Label Component
-    </Label>
-  )))
+  .add(
+    'Label component',
+    withInfo({
+      inline: true,
+      text:
+        'Simple styled label component that supports a number of the styled-system props.'
+    })(() => <Label m={3}>Label Component</Label>)
+  )
   .add('Using fontSize', () => (
     <div>
       <Label fontSize={6}>Label with fontSize 6</Label>
@@ -25,19 +25,25 @@ storiesOf('Label', module)
   ))
   .add('Spacing', () => (
     <div>
-      <Label mt={4} mb={2}>A tish of margin</Label>
+      <Label mt={4} mb={2}>
+        A tish of margin
+      </Label>
       <Label pl={3}>A dash of padding</Label>
     </div>
   ))
   .add('color', () => (
     <div>
-      <Label color='blue'>A blue label</Label>
-      <Label color='green'>a green label</Label>
+      <Label color="blue">A blue label</Label>
+      <Label color="green">a green label</Label>
     </div>
   ))
   .add('htmlFor', () => (
     <div>
-      Clicking <Label fontSize={4} htmlFor="sample-input">here</Label> should focus on the input element.
+      Clicking{' '}
+      <Label fontSize={4} htmlFor="sample-input">
+        here
+      </Label>{' '}
+      should focus on the input element.
       <br />
       <Input id="sample-input" />
     </div>

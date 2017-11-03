@@ -13,6 +13,7 @@ describe('Card', () => {
       'border',
       `1px solid ${theme.colors.borderGray}`
     )
+    expect(json).toHaveStyleRule('border-radius', theme.radius)
   })
 
   test('renders medium box shadow with default border', () => {
@@ -28,6 +29,7 @@ describe('Card', () => {
       'border',
       `1px solid ${theme.colors.borderGray}`
     )
+    expect(json).toHaveStyleRule('border-radius', theme.radius)
   })
 
   test('renders large box shadow with default border', () => {
@@ -43,6 +45,7 @@ describe('Card', () => {
       'border',
       `1px solid ${theme.colors.borderGray}`
     )
+    expect(json).toHaveStyleRule('border-radius', theme.radius)
   })
 
   test('renders xlarge box shadow with default border', () => {
@@ -58,6 +61,7 @@ describe('Card', () => {
       'border',
       `1px solid ${theme.colors.borderGray}`
     )
+    expect(json).toHaveStyleRule('border-radius', theme.radius)
   })
 
   test('renders medium box shadow with specified borderWidth', () => {
@@ -69,6 +73,23 @@ describe('Card', () => {
       'border',
       `2px solid ${theme.colors.borderGray}`
     )
+    expect(json).toHaveStyleRule('border-radius', theme.radius)
+    expect(json).toHaveStyleRule(
+      'box-shadow',
+      '0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08)'
+    )
+  })
+
+  test('renders medium box shadow with specified borderRadius', () => {
+    const json = renderer
+      .create(<Card borderRadius={0} boxShadowSize="md" theme={theme} />)
+      .toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule(
+      'border',
+      `1px solid ${theme.colors.borderGray}`
+    )
+    expect(json).toHaveStyleRule('border-radius', '0')
     expect(json).toHaveStyleRule(
       'box-shadow',
       '0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08)'

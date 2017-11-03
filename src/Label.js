@@ -6,9 +6,7 @@ const Label = styled.label`
   display: block;
   width: 100%;
 
-  ${space}
-  ${fontSize}
-  ${color}
+  ${space} ${fontSize} ${color};
 `
 
 Label.propTypes = {

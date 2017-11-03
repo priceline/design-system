@@ -23,11 +23,11 @@ describe('Icon', () => {
 
   test('returns false for non-existing icons', () => {
     // Mock out console.error since we're expecting a propType warning
-    console.error = jest.genMockFunction();
-    const icon = renderer.create(<Icon name='nope' />).toJSON()
+    console.error = jest.genMockFunction()
+    const icon = renderer.create(<Icon name="nope" />).toJSON()
 
     // We expect one propType warning.
-    expect(console.error.mock.calls.length).toBe(1);
+    expect(console.error.mock.calls.length).toBe(1)
     expect(icon).toBe(null)
     jest.mock
   })

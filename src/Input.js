@@ -3,8 +3,8 @@ import { space, theme, propTypes } from 'styled-system'
 import PropTypes from 'prop-types'
 
 const borders = ({ color, theme }) => {
-  const borderColor = (color) ? theme.colors[color] : theme.colors.borderGray
-  const focusColor = (color) ? borderColor : theme.colors.blue
+  const borderColor = color ? theme.colors[color] : theme.colors.borderGray
+  const focusColor = color ? borderColor : theme.colors.blue
   return {
     'border-color': borderColor,
     'box-shadow': `0 0 0 0 ${borderColor}`,
@@ -41,8 +41,7 @@ const Input = styled.input`
     display: none;
   }
 
-  ${borders}
-  ${space}
+  ${borders} ${space};
 `
 
 Input.displayName = 'Input'

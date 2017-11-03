@@ -110,6 +110,10 @@ Object {
     "@media screen and (min-width:48em)",
     "@media screen and (min-width:64em)",
   ],
+  "radii": Array [
+    "0",
+    "2px",
+  ],
   "radius": "2px",
   "regular": 400,
   "space": Array [
