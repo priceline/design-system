@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders with theme only 1`] = `
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 .c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -43,7 +49,7 @@ exports[`CloseButton renders with theme only 1`] = `
   title="close"
 >
   <svg
-    className=""
+    className="c2"
     color={undefined}
     fill="currentcolor"
     height={14}

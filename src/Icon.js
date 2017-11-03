@@ -36,6 +36,7 @@ const Base = ({ name, size, next, ...props }) => {
 }
 
 const Icon = styled(Base)`
+  flex: none;
   ${space} ${color};
 `
 

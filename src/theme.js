@@ -28,6 +28,12 @@ export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 export const regular = 400
 export const bold = 600
 
+// styled-system's `fontWeight` function can hook into the `fontWeights` object
+export const fontWeights = {
+  regular,
+  bold
+}
+
 // color palette
 const black = '#000'
 const white = '#fff'
@@ -104,7 +110,10 @@ export const colors = {
   ...flatten('purple', purples)
 }
 
+// styled-system's `borderRadius` function can hook into the `radii` object/array
+export const radii = [0, 2, 6]
 export const radius = '2px'
+
 export const maxContainerWidth = '1280px'
 
 const shadowColor = 'rgba(0,0,0,0.08)'
@@ -121,10 +130,13 @@ const theme = {
   space,
   font,
   fontSizes,
+  fontWeights,
   regular,
   bold,
   colors,
+  radii,
   radius,
+  radii,
   boxShadows,
   maxContainerWidth
 }

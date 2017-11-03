@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 import { Divider, theme } from '..'
 
 describe('Divider', () => {
@@ -22,7 +21,9 @@ describe('Divider', () => {
   })
 
   test('borderColor prop sets borderColor', () => {
-    const json = renderer.create(<Divider borderColor='blue' theme={theme} />).toJSON()
+    const json = renderer
+      .create(<Divider borderColor="blue" theme={theme} />)
+      .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-color', theme.colors.blue)
   })

@@ -11,10 +11,12 @@
 - [`<Button />`](Button.md)
 - [`<Link />`](Link.md)
 - [`<Hug />`](Hug.md)
+- [`<Flag />`](Flag.md)
 - [`<Icon />`](Icon.md)
 - [`<IconButton />`](IconButton.md)
 - [`<Image />`](Image.md)
 - [`<BackgroundImage />`](BackgroundImage.md)
+- [`<RatingBadge />`](RatingBadge.md)
 - [Theme](Theme.md)
 - [Contributing](Contributing.md)
 
