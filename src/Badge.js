@@ -2,37 +2,37 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space } from 'styled-system'
 
-function type (props) {
+function type(props) {
   const badgeColors = {
-    'green': {
+    green: {
       backgroundColor: props.theme.colors.green,
       color: props.theme.colors.white
     },
-    'lightGreen': {
+    lightGreen: {
       backgroundColor: props.theme.colors.green0,
       color: props.theme.colors.black
     },
-    'red': {
+    red: {
       backgroundColor: props.theme.colors.red,
       color: props.theme.colors.white
     },
-    'lightRed': {
+    lightRed: {
       backgroundColor: props.theme.colors.red0,
       color: props.theme.colors.black
     },
-    'orange': {
+    orange: {
       backgroundColor: props.theme.colors.orange,
       color: props.theme.colors.white
     },
-    'lightOrange': {
+    lightOrange: {
       backgroundColor: props.theme.colors.orange0,
       color: props.theme.colors.black
     },
-    'blue': {
+    blue: {
       backgroundColor: props.theme.colors.blue,
       color: props.theme.colors.white
     },
-    'lightBlue': {
+    lightBlue: {
       backgroundColor: props.theme.colors.blue0,
       color: props.theme.colors.black
     }
@@ -42,12 +42,11 @@ function type (props) {
 }
 
 const Badge = styled.div`
-  border-radius: 99999px; 
+  border-radius: 99999px;
   display: inline-block;
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
-  ${type}
-  ${space}
+  ${type} ${space};
 `
 
 Badge.defaultProps = {

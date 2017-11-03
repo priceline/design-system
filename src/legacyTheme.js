@@ -70,5 +70,5 @@ export const colors = {
   orange3
 }
 
-const legacyTheme = {...theme, colors}
+const legacyTheme = { ...theme, colors }
 export default legacyTheme
