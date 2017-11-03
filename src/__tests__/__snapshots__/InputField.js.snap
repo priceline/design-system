@@ -234,7 +234,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   margin-top: -14px;
 }
 
-.c7 {
+.c8 {
   margin-bottom: -24px;
   width: 100%;
   color: #abb7c2;
@@ -252,7 +252,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   font-size: 10px;
   padding-left: 13px;
   padding-right: 13px;
@@ -260,6 +260,12 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   padding-bottom: 4px;
   color: #fff;
   font-weight: 600;
+}
+
+.c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c4 {
@@ -313,20 +319,20 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c6 {
-  border-width: 1px;
-  border-radius: 0 0 2px 2px;
-  border-color: #abb7c2;
-  border-style: solid;
-  box-shadow: 0 -1px 0 0 #abb7c2;
-}
-
 .c1 {
   font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
   font-size: 10px;
+}
+
+.c7 {
+  border-width: 1px;
+  border-radius: 0 0 2px 2px;
+  border-color: #abb7c2;
+  border-style: solid;
+  box-shadow: 0 -1px 0 0 #abb7c2;
 }
 
 .c0 {
@@ -365,7 +371,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
         className="c5"
       >
         <svg
-          className=""
+          className="c6"
           color={undefined}
           fill="currentcolor"
           height={24}
@@ -379,12 +385,12 @@ exports[`InputField it renders a form field with a generic message 1`] = `
       </div>
     </div>
     <div
-      className="c6 c7"
+      className="c7 c8"
       color="#abb7c2"
       width={1}
     >
       <div
-        className="c8"
+        className="c9"
         color="white"
         fontSize={10}
         id="form-field-3-info"
@@ -437,6 +443,9 @@ exports[`InputField it renders a form field with an error message 1`] = `
 }
 
 .c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   color: #c00;
 }
 
@@ -491,20 +500,20 @@ exports[`InputField it renders a form field with an error message 1`] = `
   box-shadow: 0 0 0 1px #c00;
 }
 
-.c7 {
-  border-width: 1px;
-  border-radius: 0 0 2px 2px;
-  border-color: #c00;
-  border-style: solid;
-  box-shadow: 0 -1px 0 0 #c00;
-}
-
 .c1 {
   font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
   font-size: 10px;
+}
+
+.c7 {
+  border-width: 1px;
+  border-radius: 0 0 2px 2px;
+  border-color: #c00;
+  border-style: solid;
+  box-shadow: 0 -1px 0 0 #c00;
 }
 
 .c0 {
@@ -596,6 +605,12 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c4 {
@@ -693,7 +708,7 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
         className="c5"
       >
         <svg
-          className=""
+          className="c6"
           color={undefined}
           fill="currentcolor"
           height={24}

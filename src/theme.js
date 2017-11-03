@@ -110,11 +110,9 @@ export const colors = {
   ...flatten('purple', purples)
 }
 
-export const radius = '2px'
-
-// todo: wes can't decide on a size
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
+export const radius = '2px'
 
 export const maxContainerWidth = '1280px'
 
@@ -136,6 +134,7 @@ const theme = {
   regular,
   bold,
   colors,
+  radii,
   radius,
   radii,
   boxShadows,

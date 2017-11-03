@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon airport renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 28 25"
@@ -15,8 +21,14 @@ exports[`Icon airport renders 1`] = `
 `;
 
 exports[`Icon amenityBeachfront renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -29,8 +41,14 @@ exports[`Icon amenityBeachfront renders 1`] = `
 `;
 
 exports[`Icon amenityBedchoice renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 12"
@@ -43,8 +61,14 @@ exports[`Icon amenityBedchoice renders 1`] = `
 `;
 
 exports[`Icon amenityBreakfast renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -57,8 +81,14 @@ exports[`Icon amenityBreakfast renders 1`] = `
 `;
 
 exports[`Icon amenityBusinessCenter renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 18"
@@ -71,8 +101,14 @@ exports[`Icon amenityBusinessCenter renders 1`] = `
 `;
 
 exports[`Icon amenityCasino renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 16"
@@ -85,8 +121,14 @@ exports[`Icon amenityCasino renders 1`] = `
 `;
 
 exports[`Icon amenityFood renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -99,8 +141,14 @@ exports[`Icon amenityFood renders 1`] = `
 `;
 
 exports[`Icon amenityGym renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 8"
@@ -113,8 +161,14 @@ exports[`Icon amenityGym renders 1`] = `
 `;
 
 exports[`Icon amenityHandicap renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 18 20"
@@ -127,8 +181,14 @@ exports[`Icon amenityHandicap renders 1`] = `
 `;
 
 exports[`Icon amenityInclusive renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 8"
@@ -141,8 +201,14 @@ exports[`Icon amenityInclusive renders 1`] = `
 `;
 
 exports[`Icon amenityNonsmoking renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -163,8 +229,14 @@ exports[`Icon amenityNonsmoking renders 1`] = `
 `;
 
 exports[`Icon amenityParking renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 18 20"
@@ -177,8 +249,14 @@ exports[`Icon amenityParking renders 1`] = `
 `;
 
 exports[`Icon amenityPets renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -191,8 +269,14 @@ exports[`Icon amenityPets renders 1`] = `
 `;
 
 exports[`Icon amenityPool renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 12"
@@ -205,8 +289,14 @@ exports[`Icon amenityPool renders 1`] = `
 `;
 
 exports[`Icon amenityShuttle renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 18 20"
@@ -219,8 +309,14 @@ exports[`Icon amenityShuttle renders 1`] = `
 `;
 
 exports[`Icon amenitySpa renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 16"
@@ -233,8 +329,14 @@ exports[`Icon amenitySpa renders 1`] = `
 `;
 
 exports[`Icon amenityWifi renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 14"
@@ -247,8 +349,14 @@ exports[`Icon amenityWifi renders 1`] = `
 `;
 
 exports[`Icon arrowDirectional renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 9"
@@ -261,8 +369,14 @@ exports[`Icon arrowDirectional renders 1`] = `
 `;
 
 exports[`Icon arrowExpander renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -275,8 +389,14 @@ exports[`Icon arrowExpander renders 1`] = `
 `;
 
 exports[`Icon arrowOneWay renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 54 25"
@@ -289,8 +409,14 @@ exports[`Icon arrowOneWay renders 1`] = `
 `;
 
 exports[`Icon attention renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 22 19"
@@ -303,8 +429,14 @@ exports[`Icon attention renders 1`] = `
 `;
 
 exports[`Icon calendar renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 23 25"
@@ -317,8 +449,14 @@ exports[`Icon calendar renders 1`] = `
 `;
 
 exports[`Icon carLine renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 21 15"
@@ -331,8 +469,14 @@ exports[`Icon carLine renders 1`] = `
 `;
 
 exports[`Icon check renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 15"
@@ -345,8 +489,14 @@ exports[`Icon check renders 1`] = `
 `;
 
 exports[`Icon checkLight renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 19"
@@ -359,8 +509,14 @@ exports[`Icon checkLight renders 1`] = `
 `;
 
 exports[`Icon chevronDown renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 11"
@@ -373,8 +529,14 @@ exports[`Icon chevronDown renders 1`] = `
 `;
 
 exports[`Icon chevronDownThick renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 13"
@@ -387,8 +549,14 @@ exports[`Icon chevronDownThick renders 1`] = `
 `;
 
 exports[`Icon chevronLeft renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 10 17"
@@ -401,8 +569,14 @@ exports[`Icon chevronLeft renders 1`] = `
 `;
 
 exports[`Icon chevronLight still renders old renamed icons 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 11"
@@ -415,8 +589,14 @@ exports[`Icon chevronLight still renders old renamed icons 1`] = `
 `;
 
 exports[`Icon chevronRight renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -429,8 +609,14 @@ exports[`Icon chevronRight renders 1`] = `
 `;
 
 exports[`Icon chevronRightThick renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -443,8 +629,14 @@ exports[`Icon chevronRightThick renders 1`] = `
 `;
 
 exports[`Icon chevronThick still renders old renamed icons 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 13"
@@ -457,8 +649,14 @@ exports[`Icon chevronThick still renders old renamed icons 1`] = `
 `;
 
 exports[`Icon circleInfo renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 21"
@@ -471,8 +669,14 @@ exports[`Icon circleInfo renders 1`] = `
 `;
 
 exports[`Icon circleMinus renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -485,8 +689,14 @@ exports[`Icon circleMinus renders 1`] = `
 `;
 
 exports[`Icon circleMinusThin renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -499,8 +709,14 @@ exports[`Icon circleMinusThin renders 1`] = `
 `;
 
 exports[`Icon circlePlus renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -513,8 +729,14 @@ exports[`Icon circlePlus renders 1`] = `
 `;
 
 exports[`Icon circlePlusThin renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -527,8 +749,14 @@ exports[`Icon circlePlusThin renders 1`] = `
 `;
 
 exports[`Icon city renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 25 25"
@@ -541,8 +769,14 @@ exports[`Icon city renders 1`] = `
 `;
 
 exports[`Icon closeLight renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -555,8 +789,14 @@ exports[`Icon closeLight renders 1`] = `
 `;
 
 exports[`Icon closeThick renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -569,8 +809,14 @@ exports[`Icon closeThick renders 1`] = `
 `;
 
 exports[`Icon condo renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -583,8 +829,14 @@ exports[`Icon condo renders 1`] = `
 `;
 
 exports[`Icon cruise renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -597,8 +849,14 @@ exports[`Icon cruise renders 1`] = `
 `;
 
 exports[`Icon cruiseOutline renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 23"
@@ -611,8 +869,14 @@ exports[`Icon cruiseOutline renders 1`] = `
 `;
 
 exports[`Icon dollar renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 12 20"
@@ -625,8 +889,14 @@ exports[`Icon dollar renders 1`] = `
 `;
 
 exports[`Icon hotel renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 25"
@@ -639,8 +909,14 @@ exports[`Icon hotel renders 1`] = `
 `;
 
 exports[`Icon hotelOutline renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 19"
@@ -653,8 +929,14 @@ exports[`Icon hotelOutline renders 1`] = `
 `;
 
 exports[`Icon information renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -667,8 +949,14 @@ exports[`Icon information renders 1`] = `
 `;
 
 exports[`Icon locked renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -681,8 +969,14 @@ exports[`Icon locked renders 1`] = `
 `;
 
 exports[`Icon mapPin renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 15 25"
@@ -695,8 +989,14 @@ exports[`Icon mapPin renders 1`] = `
 `;
 
 exports[`Icon minusSign renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 25 25"
@@ -709,8 +1009,14 @@ exports[`Icon minusSign renders 1`] = `
 `;
 
 exports[`Icon mobileMenu renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -723,8 +1029,14 @@ exports[`Icon mobileMenu renders 1`] = `
 `;
 
 exports[`Icon modeEdit renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -737,8 +1049,14 @@ exports[`Icon modeEdit renders 1`] = `
 `;
 
 exports[`Icon moon renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 26 25"
@@ -751,8 +1069,14 @@ exports[`Icon moon renders 1`] = `
 `;
 
 exports[`Icon pkgLine renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 12 20"
@@ -765,8 +1089,14 @@ exports[`Icon pkgLine renders 1`] = `
 `;
 
 exports[`Icon planeOutline renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -779,8 +1109,14 @@ exports[`Icon planeOutline renders 1`] = `
 `;
 
 exports[`Icon planeOutlineEngine renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -793,8 +1129,14 @@ exports[`Icon planeOutlineEngine renders 1`] = `
 `;
 
 exports[`Icon plusSign renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 25 25"
@@ -807,8 +1149,14 @@ exports[`Icon plusSign renders 1`] = `
 `;
 
 exports[`Icon profile renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 28 25"
@@ -821,8 +1169,14 @@ exports[`Icon profile renders 1`] = `
 `;
 
 exports[`Icon rotationHint renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -835,8 +1189,14 @@ exports[`Icon rotationHint renders 1`] = `
 `;
 
 exports[`Icon search renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -849,8 +1209,14 @@ exports[`Icon search renders 1`] = `
 `;
 
 exports[`Icon smile renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -863,8 +1229,14 @@ exports[`Icon smile renders 1`] = `
 `;
 
 exports[`Icon sorts renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 16 20"
@@ -877,8 +1249,14 @@ exports[`Icon sorts renders 1`] = `
 `;
 
 exports[`Icon srollLeft still renders old renamed icons 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 10 17"
@@ -891,8 +1269,14 @@ exports[`Icon srollLeft still renders old renamed icons 1`] = `
 `;
 
 exports[`Icon star renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -905,8 +1289,14 @@ exports[`Icon star renders 1`] = `
 `;
 
 exports[`Icon starHalf renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -919,8 +1309,14 @@ exports[`Icon starHalf renders 1`] = `
 `;
 
 exports[`Icon success renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"
@@ -933,8 +1329,14 @@ exports[`Icon success renders 1`] = `
 `;
 
 exports[`Icon thumbsUp renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 22 20"
@@ -947,8 +1349,14 @@ exports[`Icon thumbsUp renders 1`] = `
 `;
 
 exports[`Icon unlocked renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -961,8 +1369,14 @@ exports[`Icon unlocked renders 1`] = `
 `;
 
 exports[`Icon warning renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 20 20"

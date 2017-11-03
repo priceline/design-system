@@ -1,7 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Input, Label, Text, Flex, Box, Icon, theme } from '../src'
+import Box from './Box'
+import Flex from './Flex'
+import Text from './Text'
+import Icon from './Icon'
+import Label from './Label'
+import Input from './Input'
+import theme from './theme'
 
 const InfoBox = styled(Box)`
   border-width: 1px;
