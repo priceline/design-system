@@ -4,7 +4,7 @@ import 'jest-styled-components'
 import { Icon } from '..'
 import icons from '../../icons.json'
 
-const keys = Object.keys(icons)
+const keys = Object.keys(icons).filter(name => name !== 'legacy')
 const oldIcons = ['srollLeft', 'chevronLight', 'chevronThick']
 
 describe('Icon', () => {
@@ -20,6 +20,13 @@ describe('Icon', () => {
       const icon = renderer.create(<Icon name={name} />).toJSON()
       expect(icon).toMatchSnapshot()
     })
+  })
+
+  test('The next prop forces using the new icon set', () => {
+    const icon = renderer.create(<Icon name="chevronDown" next />).toJSON()
+    const [path] = icon.children
+    expect(path.props.d).toEqual(icons.chevronDown.path)
+    expect(icon).toMatchSnapshot()
   })
 
   test('returns false for non-existing icons', () => {

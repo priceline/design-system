@@ -62,8 +62,19 @@ const build = () => {
     Object.assign({}, icon, { legacy: true })
   )
   const newIcons = readIcons(newSrc)
-  const icons = [...legacyIcons, ...newIcons]
-  const data = getData(icons).reduce(
+
+  const data = getData(newIcons).reduce(
+    (a, { key, svg, viewBox, path, legacy }) =>
+      Object.assign({}, a, {
+        [key]: {
+          viewBox,
+          path,
+          legacy
+        }
+      }),
+    {}
+  )
+  data.legacy = getData(legacyIcons).reduce(
     (a, { key, svg, viewBox, path, legacy }) =>
       Object.assign({}, a, {
         [key]: {

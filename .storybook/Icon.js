@@ -3,15 +3,16 @@ import { storiesOf } from '@storybook/react'
 import { Icon, Flex, Box, Text } from '../src'
 import icons from '../icons.json'
 
-const keys = Object.keys(icons)
+const keys = Object.keys(icons).filter(name => name !== 'legacy')
+const legacy = Object.keys(icons.legacy)
 
 storiesOf('Icon', module)
   .add('Icons', () => (
     <Box p={2} color="white" bg="blue">
       <Flex wrap>
-        {keys.filter(name => !icons[name].legacy).map(name => (
+        {keys.map(name => (
           <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
-            <Icon name={name} size={48} />
+            <Icon next name={name} size={48} />
             <Text fontSize={0}>{name}</Text>
           </Box>
         ))}
@@ -21,7 +22,7 @@ storiesOf('Icon', module)
   .add('Legacy Icons', () => (
     <Box p={2} color="white" bg="blue">
       <Flex wrap>
-        {keys.filter(name => icons[name].legacy).map(name => (
+        {legacy.map(name => (
           <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
             <Icon name={name} size={48} />
             <Text fontSize={0}>{name}</Text>
