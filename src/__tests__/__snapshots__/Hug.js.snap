@@ -8,7 +8,7 @@ exports[`Hug renders text, icon, and Child 1`] = `[Function]`;
 
 exports[`Hug renders with border-radius from theme on top only 1`] = `
 .c3 {
-  padding: 32px;
+  padding: 16px;
   background-color: green;
   color: white;
   text-align: center;
