@@ -24,6 +24,15 @@ storiesOf('Hug', module)
       </Card>
     </Hug>
   ))
+  .add('With a card in a card', () => (
+    <Hug text={text}>
+      <Card p={3} bg="white" color="text">
+        <Card p={3} bg="white" color="text">
+          I‘m a card within a card within a hug!
+        </Card>
+      </Card>
+    </Hug>
+  ))
   .add('With plain text instead of component', () => (
     <Hug text="I am plain ol' text">
       <Card p={3} bg="white" color="text">

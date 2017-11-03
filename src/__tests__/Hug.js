@@ -10,10 +10,13 @@ const text = (
 )
 
 describe('Hug', () => {
-  test('renders with border-radius from theme', () => {
+  test('renders with border-radius from theme on top only', () => {
     const json = renderer.create(<Hug theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-radius', theme.radius)
+    expect(json).toHaveStyleRule('border-top-left-radius', theme.radius)
+    expect(json).toHaveStyleRule('border-top-right-radius', theme.radius)
+    expect(json).not.toHaveStyleRule('border-bottom-left-radius', theme.radius)
+    expect(json).not.toHaveStyleRule('border-bottom-right-radius', theme.radius)
   })
 
   test('renders text, icon, and Child', () => {

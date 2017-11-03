@@ -93,6 +93,9 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -174,6 +177,9 @@ exports[`Banner renders with custom iconName and size 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -255,6 +261,9 @@ exports[`Banner renders with green bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -336,6 +345,9 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -417,6 +429,9 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -498,6 +513,9 @@ exports[`Banner renders with lightOrange bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -579,6 +597,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -660,6 +681,9 @@ exports[`Banner renders with no props other than theme 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -741,6 +765,9 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
@@ -822,6 +849,9 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   margin-right: 32px;
   margin-top: -2px;
 }
