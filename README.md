@@ -48,6 +48,7 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 - [`<Link />`](docs/Link.md)
 - [`<Text />`](docs/Text.md)
 - [`<Truncate />`](docs/Truncate.md)
+- [`<RatingBadge />`](docs/RatingBadge.md)
 
 
 ## Motivation

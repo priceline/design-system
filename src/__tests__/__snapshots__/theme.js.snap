@@ -103,6 +103,10 @@ Object {
     32,
     48,
   ],
+  "fontWeights": Object {
+    "bold": 600,
+    "regular": 400,
+  },
   "maxContainerWidth": "1280px",
   "mediaQueries": Array [
     "@media screen and (min-width:32em)",
@@ -111,8 +115,9 @@ Object {
     "@media screen and (min-width:64em)",
   ],
   "radii": Array [
-    "0",
-    "2px",
+    0,
+    2,
+    6,
   ],
   "radius": "2px",
   "regular": 400,

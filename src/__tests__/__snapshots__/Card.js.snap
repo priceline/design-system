@@ -28,7 +28,7 @@ exports[`Card renders medium box shadow with specified borderRadius 1`] = `
 .c0 {
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08);
   border: 1px solid #abb7c2;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 <div
