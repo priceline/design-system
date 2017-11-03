@@ -1,32 +1,65 @@
 import React from 'react'
+import Box from './Box'
 import Card from './Card'
 import Flex from './Flex'
 import Icon from './Icon'
 import Text from './Text'
 import styled from 'styled-components'
+import { responsiveStyle } from 'styled-system'
 import PropTypes from 'prop-types'
 
-const StyledCard = styled(Card)`
-  border-radius: ${props => props.theme.radius};
+const display = responsiveStyle({
+  prop: 'display',
+  cssProperty: 'display'
+})
+
+const HugCard = styled(Card)`
+  border-top-left-radius: ${props => props.theme.radius};
+  border-top-right-radius: ${props => props.theme.radius};
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
 `
 
-const Hug = props => (
-  <StyledCard {...props} borderColor={props.bg}>
-    <Flex p={3} align="center">
-      {!!props.icon && <Icon mr={3} name={props.icon} size={16} />}
-      <Text.span fontSize={1}>{props.text}</Text.span>
+const BorderConcealer = styled(Box)`
+  & > * {
+    border: 0;
+  }
+`
+
+const HideableIcon = styled(Icon)`
+  ${display};
+`
+
+const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
+  <HugCard {...props} borderColor={bg}>
+    <Flex bg={bg} color={color} p={p} align="center">
+      {!!icon && (
+        <HideableIcon
+          mr={2}
+          mt="-2px"
+          mb="2px"
+          name={icon}
+          size={24}
+          display={iconDisplay}
+        />
+      )}
+      <Text.span fontSize={fontSize}>{props.text}</Text.span>
     </Flex>
-    {props.children}
-  </StyledCard>
+    <BorderConcealer>{props.children}</BorderConcealer>
+  </HugCard>
 )
 
 Hug.defaultProps = {
   bg: 'green',
   borderWidth: 1,
-  color: 'white'
+  color: 'white',
+  fontSize: 1,
+  p: 2
 }
 
 Hug.propTypes = {
+  iconDisplay: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.string,
   text: PropTypes.oneOfType([
     PropTypes.node,

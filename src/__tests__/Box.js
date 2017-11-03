@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 import { Box, theme } from '..'
 
 describe('Box', () => {
@@ -28,13 +27,13 @@ describe('Box', () => {
   })
 
   test('color prop sets color', () => {
-    const json = renderer.create(<Box color='blue' theme={theme} />).toJSON()
+    const json = renderer.create(<Box color="blue" theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('color', theme.colors.blue)
   })
 
   test('bg prop sets background color', () => {
-    const json = renderer.create(<Box bg='green' theme={theme} />).toJSON()
+    const json = renderer.create(<Box bg="green" theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })

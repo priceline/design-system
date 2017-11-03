@@ -30,8 +30,11 @@ const Base = ({ name, size, ...props }) => {
 }
 
 const Icon = styled(Base)`
+  flex: none;
   ${space} ${color};
 `
+
+Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
   name: 'checkLight',
