@@ -8,9 +8,8 @@ const image = props =>
 const height = props => (props.height ? { height: props.height } : null)
 
 const BackgroundImage = styled.div`
-  ${image} ${height} ${width} background-color: ${props =>
-      props.theme.colors.gray};
-  background-position: center;
+  background-color: ${props => props.theme.colors.gray};
+  ${image} ${height} ${width} background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 `
