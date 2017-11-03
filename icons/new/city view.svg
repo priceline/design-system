@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve">
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#001833;}
 </style>
-<path id="path-1_1_" class="st0" d="M12,9V3L9,0L6,3v2H0v14h18V9H12z M4,17H2v-2h2V17z M4,13H2v-2h2V13z M4,9H2V7h2V9z M10,17H8v-2
-	h2V17z M10,13H8v-2h2V13z M10,9H8V7h2V9z M10,5H8V3h2V5z M16,17h-2v-2h2V17z M16,13h-2v-2h2V13z"/>
+<path id="path-1_1_" class="st0" d="M15,11.5v-6l-3-3l-3,3v2H3v14h18v-10H15z M7,19.5H5v-2h2V19.5z M7,15.5H5v-2h2V15.5z M7,11.5H5
+	v-2h2V11.5z M13,19.5h-2v-2h2V19.5z M13,15.5h-2v-2h2V15.5z M13,11.5h-2v-2h2V11.5z M13,7.5h-2v-2h2V7.5z M19,19.5h-2v-2h2V19.5z
+	 M19,15.5h-2v-2h2V15.5z"/>
 </svg>
