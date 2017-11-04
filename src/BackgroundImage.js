@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, propTypes } from 'styled-system'
+import { width } from 'styled-system'
 
 const image = props =>
   props.image ? { backgroundImage: `url(${props.image})` } : null
@@ -13,11 +13,16 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 `
+const numberStringOrArray = PropTypes.oneOfType([
+  PropTypes.number,
+  PropTypes.string,
+  PropTypes.array
+])
 
 BackgroundImage.propTypes = {
   /** background-image url */
   image: PropTypes.string,
-  ...propTypes.width
+  width: numberStringOrArray
 }
 
 export default BackgroundImage
