@@ -14,6 +14,10 @@ which adds the Design System theme to context for use in styled-components
 and sets typographic defaults.
 This should only be included once in your application.
 
+The ThemeProvider is a wrapper around styled-components' [ThemeProvider][sc-theme].
+
+[sc-theme]: https://www.styled-components.com/docs/advanced#theming
+
 ```jsx
 import React from 'react'
 import { ThemeProvider } from 'pcln-design-system'
