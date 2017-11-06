@@ -15,8 +15,8 @@
     "remark-slug": "^4.2.3"
   },
   "scripts": {
-    "start": "x0 dev App.js -op 9000",
-    "dev-build": "x0 build App.js -d site",
-    "build": "x0 build App.js --basename '/design-system' -d site"
+    "start": "x0 dev src/App.js -op 9000",
+    "dev-build": "x0 build src/App.js -d site",
+    "build": "x0 build src/App.js --basename '/design-system' -d site"
   }
 }

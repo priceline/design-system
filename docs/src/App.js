@@ -121,7 +121,7 @@ class App extends React.Component {
                       </Button>
                     </Hide>
                   </Flex>
-                  {sections.map(section => (
+                  {sections.filter(s => !!s).map(section => (
                     <Box
                       key={section.name}
                       onClick={e => this.update(closeMenu)}
@@ -194,13 +194,13 @@ App.getInitialProps = async props => {
   const fs = require('fs')
   const path = require('path')
   const matter = require('gray-matter')
-  const pkg = require('../package.json')
+  const pkg = require('../../package.json')
   const sectionsSource = fs
-    .readdirSync(__dirname)
+    .readdirSync(path.join(__dirname, '..'))
     .filter(file => /\.md$/.test(file))
     .map(filename => {
       const name = path.basename(filename, '.md')
-      const raw = fs.readFileSync(path.join(__dirname, filename), 'utf8')
+      const raw = fs.readFileSync(path.join(__dirname, '..', filename), 'utf8')
       const { content, data } = matter(raw)
 
       return Object.assign({}, data, {
