@@ -6,7 +6,7 @@ import icons from '../icons.json'
 
 // Should be removed eventually after v1.0.0
 const aliases = {
-  srollLeft: icons.chevronLeft,
+  scrollLeft: icons.chevronLeft,
   chevronLight: icons.chevronDown,
   chevronThick: icons.chevronDownThick
 }
