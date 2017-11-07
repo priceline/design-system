@@ -4,12 +4,15 @@ import Box from './Box'
 
 const breakpoints = props => ({
   xs: `@media screen and (max-width: ${props.theme.breakpoints[0]}em)`,
-  sm: `@media screen and (min-width: ${props.theme
-    .breakpoints[0]}em) and (max-width: ${props.theme.breakpoints[1]}em)`,
-  md: `@media screen and (min-width: ${props.theme
-    .breakpoints[1]}em) and (max-width: ${props.theme.breakpoints[2]}em)`,
-  lg: `@media screen and (min-width: ${props.theme
-    .breakpoints[2]}em) and (max-width: ${props.theme.breakpoints[3]}em)`,
+  sm: `@media screen and (min-width: ${
+    props.theme.breakpoints[0]
+  }em) and (max-width: ${props.theme.breakpoints[1]}em)`,
+  md: `@media screen and (min-width: ${
+    props.theme.breakpoints[1]
+  }em) and (max-width: ${props.theme.breakpoints[2]}em)`,
+  lg: `@media screen and (min-width: ${
+    props.theme.breakpoints[2]
+  }em) and (max-width: ${props.theme.breakpoints[3]}em)`,
   xl: `@media screen and (min-width: ${props.theme.breakpoints[3]}em)`
 })
 
