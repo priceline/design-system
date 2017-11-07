@@ -21,10 +21,21 @@ describe('Icon', () => {
     })
   })
 
-  test('The next prop forces using the new icon set', () => {
-    const icon = renderer.create(<Icon name="chevronDown" next />).toJSON()
+  test('Setting legacy false prefers using the new icon set', () => {
+    const icon = renderer
+      .create(<Icon name="chevronDown" legacy={false} />)
+      .toJSON()
     const [path] = icon.children
     expect(path.props.d).toEqual(icons.chevronDown.path)
+    expect(icon).toMatchSnapshot()
+  })
+
+  test('Setting legacy false falls back to using the legacy set', () => {
+    const icon = renderer
+      .create(<Icon name="amenityPets" legacy={false} />)
+      .toJSON()
+    const [path] = icon.children
+    expect(path.props.d).toEqual(icons.legacy.amenityPets.path)
     expect(icon).toMatchSnapshot()
   })
 

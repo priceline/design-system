@@ -11,15 +11,15 @@ const aliases = {
   chevronThick: icons.chevronDownThick
 }
 
-const getPath = ({ name, next }) => {
-  if (next) {
-    return icons[name]
+const getPath = ({ name, legacy }) => {
+  if (!legacy) {
+    return icons[name] || icons.legacy[name]
   }
   return icons.legacy[name] || icons[name] || aliases[name]
 }
 
-const Base = ({ name, size, next, ...props }) => {
-  const icon = getPath({ name, next })
+const Base = ({ name, size, legacy, ...props }) => {
+  const icon = getPath({ name, legacy })
   if (!icon) return false
 
   return (
@@ -44,7 +44,8 @@ Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
   name: 'checkLight',
-  size: 24
+  size: 24,
+  legacy: true
 }
 
 const allKeys = Object.keys({
@@ -56,7 +57,7 @@ const allKeys = Object.keys({
 Icon.propTypes = {
   name: PropTypes.oneOf(allKeys).isRequired,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  next: PropTypes.bool
+  legacy: PropTypes.bool
 }
 
 export default Icon
