@@ -15,8 +15,8 @@ exports[`BackgroundImage renders 1`] = `
 
 exports[`BackgroundImage renders with height 1`] = `
 .c0 {
-  height: 320px;
   background-color: #687B8E;
+  height: 320px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,8 +30,8 @@ exports[`BackgroundImage renders with height 1`] = `
 
 exports[`BackgroundImage renders with image 1`] = `
 .c0 {
-  background-image: url(hello.png);
   background-color: #687B8E;
+  background-image: url(hello.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
