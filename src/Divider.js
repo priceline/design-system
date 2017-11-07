@@ -5,9 +5,7 @@ const Divider = styled.hr`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  ${space}
-  ${width}
-  ${borderColor}
+  ${space} ${width} ${borderColor};
 `
 
 Divider.displayName = 'Divider'

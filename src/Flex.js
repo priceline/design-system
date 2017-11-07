@@ -9,9 +9,7 @@ const wrap = responsiveStyle('flex-wrap', 'wrap', 'wrap')
 
 const Flex = styled(Box)`
   display: flex;
-  ${align}
-  ${justify}
-  ${wrap}
+  ${align} ${justify} ${wrap};
 `
 
 Flex.propTypes = {

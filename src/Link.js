@@ -4,8 +4,7 @@ import { color } from 'styled-system'
 
 const Link = styled.a`
   text-decoration: none;
-  ${color}
-  &:hover {
+  ${color} &:hover {
     text-decoration: underline;
   }
 `
