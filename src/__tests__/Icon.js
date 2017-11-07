@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer'
 import { Icon } from '..'
 import icons from '../../icons.json'
 
-const keys = Object.keys(icons)
-const oldIcons = ['srollLeft', 'chevronLight', 'chevronThick']
+const keys = Object.keys(icons).filter(name => name !== 'legacy')
+const oldIcons = ['scrollLeft', 'chevronLight', 'chevronThick']
 
 describe('Icon', () => {
   keys.forEach(name => {
@@ -19,6 +19,24 @@ describe('Icon', () => {
       const icon = renderer.create(<Icon name={name} />).toJSON()
       expect(icon).toMatchSnapshot()
     })
+  })
+
+  test('Setting legacy false prefers using the new icon set', () => {
+    const icon = renderer
+      .create(<Icon name="chevronDown" legacy={false} />)
+      .toJSON()
+    const [path] = icon.children
+    expect(path.props.d).toEqual(icons.chevronDown.path)
+    expect(icon).toMatchSnapshot()
+  })
+
+  test('Setting legacy false falls back to using the legacy set', () => {
+    const icon = renderer
+      .create(<Icon name="amenityPets" legacy={false} />)
+      .toJSON()
+    const [path] = icon.children
+    expect(path.props.d).toEqual(icons.legacy.amenityPets.path)
+    expect(icon).toMatchSnapshot()
   })
 
   test('returns false for non-existing icons', () => {

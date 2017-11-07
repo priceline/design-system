@@ -1,19 +1,31 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Icon, Flex, Box } from '../src'
+import { Icon, Flex, Box, Text } from '../src'
 import icons from '../icons.json'
 
-const keys = Object.keys(icons)
-const oldKeys = ['srollLeft', 'chevronLight', 'chevronThick']
+const keys = Object.keys(icons).filter(name => name !== 'legacy')
+const legacy = Object.keys(icons.legacy)
 
 storiesOf('Icon', module)
-  .add('Index', () => (
+  .add('Icons', () => (
     <Box p={2} color="white" bg="blue">
       <Flex wrap>
         {keys.map(name => (
-          <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} m={2}>
+          <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
+            <Icon next name={name} size={48} />
+            <Text fontSize={0}>{name}</Text>
+          </Box>
+        ))}
+      </Flex>
+    </Box>
+  ))
+  .add('Legacy Icons', () => (
+    <Box p={2} color="white" bg="blue">
+      <Flex wrap>
+        {legacy.map(name => (
+          <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
             <Icon name={name} size={48} />
-            <pre>{name}</pre>
+            <Text fontSize={0}>{name}</Text>
           </Box>
         ))}
       </Flex>
@@ -25,16 +37,4 @@ storiesOf('Icon', module)
       <Icon color="green" size={48} m={2} name="hotel" />
       <Icon color="orange" size={48} m={2} name="carLine" />
     </div>
-  ))
-  .add('Legacy icons, will be removed at v1.0.0', () => (
-    <Box p={2} color="white" bg="blue">
-      <Flex wrap>
-        {oldKeys.map(name => (
-          <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} m={2}>
-            <Icon name={name} size={48} />
-            <pre>{name}</pre>
-          </Box>
-        ))}
-      </Flex>
-    </Box>
   ))
