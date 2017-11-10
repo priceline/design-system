@@ -10,7 +10,6 @@ exports[`RadioButton Disabled, rendering 1`] = `
 
 .c0 {
   position: relative;
-  cursor: pointer;
   font-weight: 400;
 }
 
@@ -126,7 +125,6 @@ exports[`RadioButton Selected, rendering 1`] = `
 
 .c0 {
   position: relative;
-  cursor: pointer;
   font-weight: 600;
 }
 

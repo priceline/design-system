@@ -6,17 +6,17 @@ import Icon from './Icon'
 
 const RadioButton = ({
   className,
+  theme,
   onClick,
   isSelected,
   disabled,
-  radioButtonText,
-  theme
+  radioButtonText
 }) => {
   const radioIconName = isSelected ? 'radioFilled' : 'radio'
   const radioIconColor = isSelected ? 'blue' : 'borderGray'
 
   function handleClick() {
-    if (disabled) return
+    if (disabled || isSelected) return
     onClick()
   }
 
@@ -38,7 +38,8 @@ const RadioButton = ({
 
 const RadioButtonWrap = styled.label`
   position: relative;
-  cursor: pointer;
+  cursor: ${props => (props.isSelected || props.disabled ? null : 'pointer')};
+
   font-weight: ${props => (props.isSelected ? '600' : '400')};
 
   &:hover {
