@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import Icon from './Icon'
+import Text from './Text'
 
 const RadioButton = ({
   className,
@@ -31,7 +32,7 @@ const RadioButton = ({
       <RadioIconWrap>
         <Icon name={radioIconName} size={24} color={radioIconColor} />
       </RadioIconWrap>
-      <RadioButtonText>{radioButtonText}</RadioButtonText>
+      <Text.span pl={4}>{radioButtonText}</Text.span>
     </RadioButtonWrap>
   )
 }
@@ -40,7 +41,8 @@ const RadioButtonWrap = styled.label`
   position: relative;
   cursor: ${props => (props.isSelected || props.disabled ? null : 'pointer')};
 
-  font-weight: ${props => (props.isSelected ? '600' : '400')};
+  font-weight: ${props =>
+    props.isSelected ? props.theme.bold : props.theme.regular};
 
   color: ${props => (props.disabled ? props.theme.colors.borderGray : null)};
 
@@ -59,10 +61,6 @@ const RadioIconWrap = styled.span`
   position: absolute;
   height: 24px;
   top: -2px;
-`
-
-const RadioButtonText = styled.span`
-  padding-left: 32px;
 `
 
 export default RadioButton

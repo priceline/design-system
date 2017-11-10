@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import { RadioButton, theme } from '..'
 
 describe('RadioButton', () => {
@@ -40,7 +40,7 @@ describe('RadioButton onClick', () => {
   const onClick = jest.fn()
 
   test('Disabled', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
       <RadioButton
         theme={theme}
         onClick={onClick}
@@ -53,7 +53,7 @@ describe('RadioButton onClick', () => {
   })
 
   test('Not Disabled', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
       <RadioButton
         theme={theme}
         onClick={onClick}
