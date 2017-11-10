@@ -42,6 +42,8 @@ const RadioButtonWrap = styled.label`
 
   font-weight: ${props => (props.isSelected ? '600' : '400')};
 
+  color: ${props => (props.disabled ? props.theme.colors.borderGray : null)};
+
   &:hover {
     color: ${props =>
       props.isSelected || props.disabled ? null : props.theme.colors.blue};
