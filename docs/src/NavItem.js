@@ -6,16 +6,17 @@ const NavItem = styled(NavLink)`
   display: block;
   text-decoration: none;
   font-size: ${theme('fontSizes.1')}px;
-  opacity: 0.75;
+  border-radius: ${theme('radius')};
   ${space} ${color} &:hover {
     box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.125);
   }
   &.active {
     opacity: 1;
+    background-color: rgba(255, 255, 255, 0.16);
   }
 `
 NavItem.defaultProps = {
-  px: 3,
+  px: 2,
   py: 2,
   color: 'inherit'
 }

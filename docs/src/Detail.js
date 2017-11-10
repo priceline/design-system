@@ -9,7 +9,7 @@ const Detail = ({ index, sections, content }) => {
   const next = sections[index + 1]
 
   return (
-    <Box p={4}>
+    <Box p={[2, 4]}>
       <Markdown children={content} />
       <Divider my={4} />
       <Flex>

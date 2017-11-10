@@ -15,8 +15,7 @@ class Markdown extends React.Component {
     this.getElement = props => {
       const { children, scope } = props
       const remarkReactComponents = Object.assign({}, defaultScope, scope)
-      const text = React.Children
-        .toArray(children)
+      const text = React.Children.toArray(children)
         .filter(child => typeof child === 'string')
         .join('\n')
       const opts = {
@@ -102,14 +101,14 @@ const Table = styled(props => (
     vertical-align: bottom;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.borderGray')};
+    border-bottom-color: ${theme('colors.lightGray')};
   }
 
   & td {
     vertical-align: top;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.borderGray')};
+    border-bottom-color: ${theme('colors.lightGray')};
   }
 
   & th,
@@ -144,6 +143,7 @@ const defaultScope = {
   h4: heading('h4'),
   h5: heading('h5'),
   h6: heading('h6'),
+  a: Link,
   p: p => <Text.p {...p} />,
   pre: CodeBlock,
   code: Code,
@@ -151,6 +151,7 @@ const defaultScope = {
 }
 
 defaultScope.h1.defaultProps = {
+  fontSize: [4, 5, null, 6],
   mt: 4,
   mb: 3
 }
@@ -174,7 +175,10 @@ defaultScope.h4.defaultProps = {
 
 defaultScope.p.defaultProps = {
   mt: 0,
-  mb: 3
+  mb: 3,
+  style: {
+    lineHeight: 1.5
+  }
 }
 
 export default Markdown

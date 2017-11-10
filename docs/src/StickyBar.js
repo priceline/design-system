@@ -16,6 +16,9 @@ const StickyBar = styled(Box)`
     max-height: 100vh;
     overflow-y: auto;
     flex: none;
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-left-color: ${theme('colors.blue')};
   }
 `
 

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import * as P1 from 'pcln-design-system'
 import { LiveProvider, LivePreview, LiveEditor, LiveError } from 'react-live'
 import { color, space, borderRadius, theme } from 'styled-system'
+import Pre from './Pre'
 
 const Preview = styled(LivePreview)`
   padding: 16px;
@@ -40,21 +41,6 @@ Editor.defaultProps = {
   bg: 'lightGray'
 }
 
-const Pre = styled.pre`
-  font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
-  margin: 0;
-  overflow-x: auto;
-  ${space} ${color} ${borderRadius};
-`
-
-Pre.defaultProps = {
-  p: 3,
-  borderRadius: 2,
-  color: 'blue',
-  bg: 'lightGray'
-}
-
 class Catch extends React.Component {
   constructor() {
     super()
@@ -76,8 +62,7 @@ class CodeBlock extends React.Component {
   constructor() {
     super()
     this.getCode = props =>
-      React.Children
-        .toArray(props.children)
+      React.Children.toArray(props.children)
         .filter(child => typeof child === 'string')
         .join('\n')
   }
