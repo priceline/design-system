@@ -2,6 +2,8 @@ import React from 'react'
 import {
   Flex,
   Box,
+  Container,
+  BackgroundImage,
   Heading,
   Text,
   Button,
@@ -14,26 +16,28 @@ const Btn = Button.withComponent('a')
 
 const Landing = props => (
   <Box p={[2, 4]}>
-    <Heading.h1 bold mt={[2, 4]} mb={3} fontSize={[3, 4, 6]}>
-      Priceline One
-    </Heading.h1>
-    <Text fontSize={3} mb={2}>
-      {props.pkg.description}
-    </Text>
-    <Text fontSize={0}>v{props.pkg && props.pkg.version}</Text>
-    <Flex align="center" justify="space-around" color="blue" py={5}>
-      <Icon name="hotelOutline" size={64} />
-      <Icon name="planeOutlineEngine" size={64} />
-      <Icon name="carLine" size={64} />
-    </Flex>
-    <Divider my={4} />
-    <Flex align="center" py={3}>
-      <Pre mr={3}>npm install pcln-design-system</Pre>
-      <Btn
-        href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
-        children="Sketch Download"
-      />
-    </Flex>
+    <BackgroundImage
+      height="512px"
+      image="http://source.unsplash.com/featured/1600x900/?travel"
+    />
+    <Container maxWidth={768}>
+      <Heading.h1 bold mt={[2, 4]} mb={3} fontSize={[3, 4, 6]}>
+        Priceline One
+      </Heading.h1>
+      <Text fontSize={3} mb={2}>
+        {props.pkg.description}
+      </Text>
+      <Text fontSize={0}>v{props.pkg && props.pkg.version}</Text>
+      <Divider my={4} />
+      <Flex wrap mx={-2} align="center">
+        <Pre m={2}>npm install pcln-design-system</Pre>
+        <Btn
+          m={2}
+          href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
+          children="Sketch Download"
+        />
+      </Flex>
+    </Container>
   </Box>
 )
 

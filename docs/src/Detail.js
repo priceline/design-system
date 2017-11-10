@@ -1,12 +1,14 @@
 import React from 'react'
-import * as P1 from 'pcln-design-system'
+import * as DS from 'pcln-design-system'
 import { Flex, Box, Divider } from 'pcln-design-system'
 import { Link } from 'react-router-dom'
 import Markdown from './Markdown'
 
-const Detail = ({ index, sections, content }) => {
-  const previous = sections[index - 1]
-  const next = sections[index + 1]
+const PageLink = DS.Link.withComponent(Link)
+
+const Detail = ({ index, pages, content }) => {
+  const previous = pages[index - 1]
+  const next = pages[index + 1]
 
   return (
     <Box p={[2, 4]}>
@@ -14,15 +16,15 @@ const Detail = ({ index, sections, content }) => {
       <Divider my={4} />
       <Flex>
         {previous && (
-          <Link to={'/' + previous.name}>
-            <P1.Link children={previous.name} />
-          </Link>
+          <PageLink to={'/' + previous.name}>
+            <span children={previous.name} />
+          </PageLink>
         )}
         <Box ml="auto" />
         {next && (
-          <Link to={'/' + next.name}>
-            <P1.Link children={next.name} />
-          </Link>
+          <PageLink to={'/' + next.name}>
+            <span children={next.name} />
+          </PageLink>
         )}
       </Flex>
     </Box>

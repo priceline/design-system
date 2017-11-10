@@ -20,6 +20,12 @@ import StickyBar from './StickyBar'
 
 const Router = typeof document !== 'undefined' ? BrowserRouter : StaticRouter
 
+const views = {
+  Color: () => <h1>Color TK</h1>,
+  Typography: () => <h1>Typography TK</h1>,
+  Iconography: () => <h1>Iconography TK</h1>
+}
+
 class App extends React.Component {
   constructor() {
     super()
@@ -83,22 +89,25 @@ class App extends React.Component {
                     </Button>
                   </Hide>
                 </Flex>
-                <Heading
-                  color="rgba(255, 255, 255, .32)"
-                  p={2}
-                  bold
-                  caps
-                  fontSize={0}
-                >
-                  Foundations
-                </Heading>
                 {sections.filter(s => !!s).map(section => (
                   <Box key={section.name} onClick={e => this.update(closeMenu)}>
-                    <NavItem
-                      to={'/' + section.name}
-                      color="inherit"
-                      children={section.title || section.name}
-                    />
+                    <Heading
+                      color="rgba(255, 255, 255, .32)"
+                      p={2}
+                      bold
+                      caps
+                      fontSize={0}
+                    >
+                      {section.name}
+                    </Heading>
+                    {section.pages.map(page => (
+                      <NavItem
+                        key={page.name}
+                        to={'/' + page.name}
+                        color="inherit"
+                        children={page.title || page.name}
+                      />
+                    ))}
                   </Box>
                 ))}
               </StickyBar>
@@ -109,21 +118,32 @@ class App extends React.Component {
                   minHeight: '100vh'
                 }}
               >
+                <Route
+                  exact
+                  path="/"
+                  render={() => <Landing {...this.props} />}
+                />
                 <Container maxWidth={768}>
-                  <Route
-                    exact
-                    path="/"
-                    render={() => <Landing {...this.props} />}
-                  />
-                  {sections.map((section, i) => (
-                    <Route
-                      key={section.name}
-                      path={'/' + section.name}
-                      render={() => (
-                        <Detail {...this.props} {...section} index={i} />
-                      )}
-                    />
-                  ))}
+                  {sections.map(section =>
+                    section.pages.map((page, i) => (
+                      <Route
+                        key={page.name}
+                        path={'/' + page.name}
+                        render={() => {
+                          const Component = views[page.name]
+                          return Component ? (
+                            <Component
+                              {...page}
+                              pages={section.pages}
+                              index={i}
+                            />
+                          ) : (
+                            <Detail {...page} pages={section.pages} index={i} />
+                          )
+                        }}
+                      />
+                    ))
+                  )}
                 </Container>
               </Box>
             </Flex>
@@ -162,7 +182,62 @@ const sectionNames = [
   'Contributing'
 ]
 
-const routes = ['/', ...sectionNames.map(name => '/' + name)]
+const pages = [
+  {
+    name: 'Foundations',
+    pages: ['Color', 'Typography', 'Iconography']
+  },
+  {
+    name: 'Components',
+    pages: [
+      'GettingStarted',
+      'Box',
+      'Flex',
+      'Hide',
+      'Container',
+      // Typography
+      'Text',
+      'Heading',
+      'Link',
+      'Truncate',
+      // UI
+      'Button',
+      'Image',
+      'BackgroundImage',
+      'Icon',
+      'Badge',
+      'Divider',
+      'Card',
+      'Hug'
+    ]
+  },
+  {
+    name: 'Resources',
+    pages: ['Layout', 'Contributing']
+  }
+]
+
+const customPages = {
+  Color: {
+    name: 'Color',
+    route: '/Color',
+    Component: () => <h1>Color TK</h1>
+  },
+  Typography: {
+    name: 'Typography',
+    route: '/Typography',
+    Component: () => <h1>Typography TK</h1>
+  },
+  Iconography: {
+    name: 'Iconography',
+    route: '/Iconography',
+    Component: () => <h1>Iconography TK</h1>
+  }
+}
+
+const routes = pages.reduce((a, b) => [...a, b.pages.map(name => '/' + name)], [
+  '/'
+])
 
 App.defaultProps = {
   routes
@@ -175,7 +250,7 @@ App.getInitialProps = async props => {
   const { ServerStyleSheet } = require('styled-components')
   const pkg = require('../../package.json')
 
-  const sectionsSource = fs
+  const content = fs
     .readdirSync(path.join(__dirname, '..'))
     .filter(file => /\.md$/.test(file))
     .map(filename => {
@@ -186,14 +261,20 @@ App.getInitialProps = async props => {
       return Object.assign({}, data, {
         filename,
         name,
+        route: '/' + name,
         raw,
         content
       })
     })
 
-  const sections = sectionNames.map(key =>
-    sectionsSource.find(s => s.name === key)
-  )
+  const sections = pages.map(page => {
+    return Object.assign({}, page, {
+      pages: page.pages.map(key => {
+        console.log(key, customPages[key])
+        return customPages[key] || content.find(c => c.name === key) || key
+      })
+    })
+  })
 
   const sheet = new ServerStyleSheet()
   sheet.collectStyles(React.createElement(props.Component, props))
