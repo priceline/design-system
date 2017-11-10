@@ -4,13 +4,13 @@ import { RadioButton } from '../src'
 
 storiesOf('RadioButton', module).add('3 states', () => (
   <div>
-    <di>
+    <div>
       <RadioButton
         onClick={action('clicked')}
         isSelected
         radioButtonText="Option Selected"
       />
-    </di>
+    </div>
     <div>
       <RadioButton
         onClick={action('clicked')}
