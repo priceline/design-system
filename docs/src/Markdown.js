@@ -7,6 +7,7 @@ import remarkReact from 'remark-react'
 import { color, space, theme } from 'styled-system'
 import { Heading, Text, Link } from 'pcln-design-system'
 import CodeBlock from './CodeBlock'
+import Code from './Code'
 
 class Markdown extends React.Component {
   constructor() {
@@ -69,16 +70,6 @@ Markdown.propTypes = {
 
 Markdown.defaultProps = {
   scope: {}
-}
-
-const Code = styled.code`
-  font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
-  ${color};
-`
-
-Code.defaultProps = {
-  color: 'darkBlue'
 }
 
 const OverflowAuto = styled.div`

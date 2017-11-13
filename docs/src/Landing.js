@@ -10,6 +10,7 @@ import {
   Divider,
   Icon
 } from 'pcln-design-system'
+import PageTitle from './PageTitle'
 import Pre from './Pre'
 
 const Btn = Button.withComponent('a')
@@ -21,9 +22,7 @@ const Landing = props => (
       image="http://source.unsplash.com/featured/1600x900/?travel"
     />
     <Container maxWidth={768}>
-      <Heading.h1 bold mt={[2, 4]} mb={3} fontSize={[3, 4, 6]}>
-        Priceline One
-      </Heading.h1>
+      <PageTitle>Priceline One</PageTitle>
       <Text fontSize={3} mb={2}>
         {props.pkg.description}
       </Text>

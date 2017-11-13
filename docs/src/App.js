@@ -12,6 +12,9 @@ import {
   Button
 } from 'pcln-design-system'
 import Landing from './Landing'
+import Color from './Color'
+import Typography from './Typography'
+import Iconography from './Iconography'
 import Detail from './Detail'
 import Markdown from './Markdown'
 import ScrollTop from './ScrollTop'
@@ -21,9 +24,9 @@ import StickyBar from './StickyBar'
 const Router = typeof document !== 'undefined' ? BrowserRouter : StaticRouter
 
 const views = {
-  Color: () => <h1>Color TK</h1>,
-  Typography: () => <h1>Typography TK</h1>,
-  Iconography: () => <h1>Iconography TK</h1>
+  Color,
+  Typography,
+  Iconography
 }
 
 class App extends React.Component {
