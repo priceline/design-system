@@ -44,15 +44,20 @@ const RadioButtonWrap = styled.label`
   font-weight: ${props =>
     props.isSelected ? props.theme.bold : props.theme.regular};
 
-  color: ${props => (props.disabled ? props.theme.colors.borderGray : null)};
+  ${props =>
+    props.disabled ? `color: ${props.theme.colors.borderGray};` : null};
 
   &:hover {
-    color: ${props =>
-      props.isSelected || props.disabled ? null : props.theme.colors.blue};
+    ${props =>
+      props.isSelected || props.disabled
+        ? null
+        : `color: ${props.theme.colors.blue};`};
 
     svg {
-      fill: ${props =>
-        props.isSelected || props.disabled ? null : props.theme.colors.blue};
+      ${props =>
+        props.isSelected || props.disabled
+          ? null
+          : `fill: ${props.theme.colors.blue};`};
     }
   }
 `
