@@ -1,8 +1,9 @@
+import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import { space, color, theme } from 'styled-system'
 
-const NavItem = styled(NavLink)`
+const BaseNavItem = styled.a`
   display: block;
   text-decoration: none;
   font-size: ${theme('fontSizes.1')}px;
@@ -15,10 +16,15 @@ const NavItem = styled(NavLink)`
     background-color: rgba(255, 255, 255, 0.16);
   }
 `
-NavItem.defaultProps = {
+BaseNavItem.defaultProps = {
   px: 2,
   py: 2,
   color: 'inherit'
 }
+
+const RouterNavItem = BaseNavItem.withComponent(NavLink)
+
+const NavItem = props =>
+  props.href ? <BaseNavItem {...props} /> : <RouterNavItem {...props} />
 
 export default NavItem

@@ -41,7 +41,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { sections = [], basename, pathname, pkg, styles } = this.props
+    const {
+      sections = [],
+      content = [],
+      basename,
+      pathname,
+      pkg,
+      styles
+    } = this.props
     const { menuOpen } = this.state
 
     return [
@@ -69,11 +76,12 @@ class App extends React.Component {
                 open={menuOpen}
                 width={[1, 256]}
                 px={3}
-                py={[2]}
+                pt={2}
+                pb={5}
                 color="white"
                 bg="text"
               >
-                <Flex align="center" px={2} py={2}>
+                <Flex align="center" px={2} py={2} mb={3}>
                   <Heading.h1 fontSize={3}>
                     <NavLink
                       to="/"
@@ -92,6 +100,9 @@ class App extends React.Component {
                     </Button>
                   </Hide>
                 </Flex>
+                <NavItem to="/" exact>
+                  Getting Started
+                </NavItem>
                 {sections.filter(s => !!s).map(section => (
                   <Box key={section.name} onClick={e => this.update(closeMenu)}>
                     <Heading
@@ -113,6 +124,9 @@ class App extends React.Component {
                     ))}
                   </Box>
                 ))}
+                <NavItem href="https://github.com/pricelinelabs/design-system">
+                  GitHub
+                </NavItem>
               </StickyBar>
               <Box
                 width={[1, 'calc(100% - 320px)']}
@@ -134,6 +148,8 @@ class App extends React.Component {
                         path={'/' + page.name}
                         render={() => {
                           const Component = views[page.name]
+                          const pageContent =
+                            content.find(c => c.name === page.name) || {}
                           return Component ? (
                             <Component
                               {...page}
@@ -141,7 +157,12 @@ class App extends React.Component {
                               index={i}
                             />
                           ) : (
-                            <Detail {...page} pages={section.pages} index={i} />
+                            <Detail
+                              {...page}
+                              content={pageContent.content}
+                              pages={section.pages}
+                              index={i}
+                            />
                           )
                         }}
                       />
@@ -157,34 +178,6 @@ class App extends React.Component {
   }
 }
 
-const sectionNames = [
-  'GettingStarted',
-  // Layout
-  'Box',
-  'Flex',
-  'Hide',
-  'Container',
-  // Typography
-  'Text',
-  'Heading',
-  'Link',
-  'Truncate',
-  // UI
-  'Button',
-  'Image',
-  'BackgroundImage',
-  'Icon',
-  'Badge',
-  'Divider',
-  'Card',
-  'Hug',
-  // 'Flag',
-  // 'GuestRating',
-  // Guides
-  'Layout',
-  'Contributing'
-]
-
 const pages = [
   {
     name: 'Foundations',
@@ -193,7 +186,7 @@ const pages = [
   {
     name: 'Components',
     pages: [
-      'GettingStarted',
+      // 'GettingStarted',
       'Box',
       'Flex',
       'Hide',
@@ -223,18 +216,15 @@ const pages = [
 const customPages = {
   Color: {
     name: 'Color',
-    route: '/Color',
-    Component: () => <h1>Color TK</h1>
+    route: '/color'
   },
   Typography: {
     name: 'Typography',
-    route: '/Typography',
-    Component: () => <h1>Typography TK</h1>
+    route: '/typography'
   },
   Iconography: {
     name: 'Iconography',
-    route: '/Iconography',
-    Component: () => <h1>Iconography TK</h1>
+    route: '/iconography'
   }
 }
 
@@ -265,7 +255,7 @@ App.getInitialProps = async props => {
         filename,
         name,
         route: '/' + name,
-        raw,
+        // raw,
         content
       })
     })
@@ -273,7 +263,8 @@ App.getInitialProps = async props => {
   const sections = pages.map(page => {
     return Object.assign({}, page, {
       pages: page.pages.map(key => {
-        return customPages[key] || content.find(c => c.name === key) || key
+        return customPages[key] || { name: key, route: '/' + key }
+        // content.find(c => c.name === key) || key
       })
     })
   })
@@ -285,6 +276,7 @@ App.getInitialProps = async props => {
   return {
     pkg,
     styles,
+    content,
     sections
   }
 }
