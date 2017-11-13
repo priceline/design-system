@@ -24,15 +24,51 @@ const ColorChip = styled(Box)`
   padding-bottom: 75%;
 `
 
+const HexButton = styled.button`
+  display: inline-block;
+  font-family: inherit;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  appearance: none;
+  opacity: 0.75;
+  transition-property: opacity;
+  transition-duration: 0.125s;
+  transition-timing-function: ease-out;
+
+  &:active {
+    color: ${props => props.theme.colors.blue};
+  }
+
+  & > span {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover > span {
+    opacity: 1;
+  }
+`
+
 const ColorCard = ({ name, value }) => (
   <Box>
     <ColorChip bg={value} mb={1} />
     <Text fontSize={0}>{name}</Text>
-    <Code fontSize={10} color="gray">
-      {value}
-    </Code>
     <CopyButton text={value}>
-      <button>Copy</button>
+      <HexButton>
+        <Code fontSize="inherit" color="inherit">
+          {value}
+        </Code>{' '}
+        <span>
+          <b>Copy</b>
+        </span>
+      </HexButton>
     </CopyButton>
   </Box>
 )
