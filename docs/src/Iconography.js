@@ -11,6 +11,7 @@ import {
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'
+import BlockLink from './BlockLink'
 
 const iconNames = Object.keys(icons).filter(key => key !== 'legacy')
 
@@ -18,12 +19,27 @@ const Column = props => (
   <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 5]} mb={3} px={2} />
 )
 
+const createDataURI = svg => `data:image/svg+xml;utf8,${svg}`
+const createSVG = path =>
+  createDataURI(`<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewbox="0 0 24 24" width="24" height="24">
+  <path d="${path}" />
+</svg>`).replace('\n', ' ')
+
 const IconList = props =>
   props.icons.map(icon => (
     <Column key={icon}>
-      <Flex p={3} align="center" justify="center">
-        <Icon name={icon} size={48} />
-      </Flex>
+      <BlockLink
+        href={createSVG(icons[icon].path)}
+        download={`${icon}.svg`}
+        title={`Download ${icon} as SVG`}
+        hoverColor="blue"
+      >
+        <Flex mb={2} align="center" justify="center">
+          <Icon name={icon} size={48} />
+        </Flex>
+      </BlockLink>
       <Text align="center">
         <Code fontSize={10} align="center" color="text">
           {icon}
