@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@compositor/x0": "^2.0.0-11",
+    "clipboard": "^1.7.1",
     "gray-matter": "^3.0.8",
     "pcln-design-system": "^1.0.0-25",
     "prop-types": "^15.6.0",

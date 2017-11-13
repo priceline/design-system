@@ -273,7 +273,6 @@ App.getInitialProps = async props => {
   const sections = pages.map(page => {
     return Object.assign({}, page, {
       pages: page.pages.map(key => {
-        console.log(key, customPages[key])
         return customPages[key] || content.find(c => c.name === key) || key
       })
     })

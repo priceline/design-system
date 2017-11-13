@@ -4,6 +4,7 @@ import { Box, Flex, Heading, Text, theme } from 'pcln-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'
+import CopyButton from './CopyButton'
 
 const colors = Object.keys(theme.colors)
   .filter(key => !/[0-9]$/.test(key))
@@ -30,6 +31,9 @@ const ColorCard = ({ name, value }) => (
     <Code fontSize={10} color="gray">
       {value}
     </Code>
+    <CopyButton text={value}>
+      <button>Copy</button>
+    </CopyButton>
   </Box>
 )
 
