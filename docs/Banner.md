@@ -7,7 +7,6 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
   bg='green'
   header='Banner'
   iconName='star'
-  iconSize={20}
   text='This is a banner'
   onClose={() => {}}
   showIcon='false'
@@ -24,7 +23,6 @@ Prop | Type | Description
 bg | string | Sets background-color and color. Accepts `blue`, `green`, `orange`, `red`, `lightBlue`, `lightGreen`, `lightOrange`, `lightRed`
 header | string | Sets header content
 iconName | string | Sets left-hand svg icon name
-iconSize | number | Sets left-hand svg icon size
 onClose | function | passes onClick functionality to close button / shows close button if provided
 showIcon | boolean | Renders left-hand icon (true by default)
 text | string | Sets text content
