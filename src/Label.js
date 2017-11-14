@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { space, fontSize, color, propTypes } from 'styled-system'
+import { color, fontSize, propTypes, space, textAlign } from 'styled-system'
 
 const Label = styled.label`
   font-size: 10px;
   display: block;
   width: 100%;
 
-  ${space} ${fontSize} ${color};
+  ${space} ${fontSize} ${color} ${textAlign};
 `
 
 Label.propTypes = {

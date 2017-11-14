@@ -26,6 +26,8 @@ exports[`Flag renders 1`] = `
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
+  border-top-color: undefined;
+  border-right-color: undefined;
 }
 
 .c4 {
@@ -98,6 +100,8 @@ exports[`Flag renders with width prop 1`] = `
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
+  border-top-color: undefined;
+  border-right-color: undefined;
 }
 
 .c4 {

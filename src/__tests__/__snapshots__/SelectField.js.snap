@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectField renders 1`] = `
+.c2 {
+  font-size: 12px;
+}
+
+.c1 {
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  null: null;
+}
+
+.c1:hover {
+  background-color: #007aff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontSize={0}
+    >
+      Test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectField renders with isSelected prop 1`] = `
+.c2 {
+  font-size: 12px;
+}
+
+.c1 {
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c1:hover {
+  background-color: #007aff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontSize={0}
+    >
+      Test
+    </div>
+  </div>
+</div>
+`;

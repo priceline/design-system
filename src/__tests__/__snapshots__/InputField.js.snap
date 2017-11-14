@@ -38,6 +38,7 @@ exports[`InputField it renders 1`] = `
   box-shadow: 0 0 0 0 #abb7c2;
   margin-top: -20px;
   padding-bottom: 8px;
+  padding-right: undefined;
   padding-top: 20px;
 }
 
@@ -147,6 +148,7 @@ exports[`InputField it renders a form field with a color prop 1`] = `
   box-shadow: 0 0 0 0 #007aff;
   margin-top: -20px;
   padding-bottom: 8px;
+  padding-right: undefined;
   padding-top: 20px;
 }
 
@@ -266,6 +268,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  color: undefined;
 }
 
 .c4 {
@@ -611,6 +614,7 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  color: undefined;
 }
 
 .c4 {

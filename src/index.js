@@ -23,6 +23,8 @@ export { default as Link } from './Link'
 export { default as OutlineButton } from './OutlineButton'
 export { default as RatingBadge } from './RatingBadge'
 export { default as RedButton } from './RedButton'
+export { default as Select } from './Select'
+export { default as SelectField } from './SelectField'
 export { default as Text } from './Text'
 export { default as Truncate } from './Truncate'
 

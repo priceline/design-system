@@ -5,6 +5,7 @@ exports[`CloseButton renders with theme only 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  color: undefined;
 }
 
 .c1 {
