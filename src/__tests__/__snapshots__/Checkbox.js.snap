@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders checked when isChecked prop is passed as true 1`] = `
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: #fff;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #abb7c2;
+  background-color: #007aff;
+  border-color: #007aff;
+}
+
+.c0:hover {
+  border-color: #007aff;
+}
+
+<div
+  className="c0"
+  data-test="design-system-checkbox"
+  onClick={[Function]}
+  size={20}
+>
+  <svg
+    className="c1"
+    color="#fff"
+    fill="currentcolor"
+    height={16}
+    viewBox="0 0 20 15"
+    width={16}
+  >
+    <path
+      d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+    />
+  </svg>
+  <input
+    defaultChecked={true}
+    disabled={false}
+    id={undefined}
+    name="random_check_box"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="checkbox"
+    value={undefined}
+  />
+</div>
+`;
+
+exports[`Checkbox renders disabled when isDisabled props is passed as true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #abb7c2;
+  opacity: 0.5;
+  cursor: initial;
+}
+
+<div
+  className="c0"
+  data-test="design-system-checkbox"
+  onClick={[Function]}
+  size={20}
+>
+  <input
+    defaultChecked={undefined}
+    disabled={true}
+    id={undefined}
+    name="random_check_box"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="checkbox"
+    value={undefined}
+  />
+</div>
+`;
+
+exports[`Checkbox renders disabled when isDisabled props is passed as true 2`] = `
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: #fff;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #abb7c2;
+  opacity: 0.5;
+  cursor: initial;
+  background-color: #abb7c2;
+  border-color: #abb7c2;
+}
+
+<div
+  className="c0"
+  data-test="design-system-checkbox"
+  onClick={[Function]}
+  size={20}
+>
+  <svg
+    className="c1"
+    color="#fff"
+    fill="currentcolor"
+    height={16}
+    viewBox="0 0 20 15"
+    width={16}
+  >
+    <path
+      d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+    />
+  </svg>
+  <input
+    defaultChecked={true}
+    disabled={true}
+    id={undefined}
+    name="random_check_box"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="checkbox"
+    value={undefined}
+  />
+</div>
+`;
+
+exports[`Checkbox renders with the theme passed specifically 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #abb7c2;
+}
+
+.c0:hover {
+  border-color: #007aff;
+}
+
+<div
+  className="c0"
+  data-test="design-system-checkbox"
+  onClick={[Function]}
+  size={20}
+>
+  <input
+    defaultChecked={undefined}
+    disabled={false}
+    id={undefined}
+    name="random_check_box"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="checkbox"
+    value={undefined}
+  />
+</div>
+`;
+
+exports[`Checkbox renders without the theme passed specifically 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #abb7c2;
+}
+
+.c0:hover {
+  border-color: #007aff;
+}
+
+<div
+  className="c0"
+  data-test="design-system-checkbox"
+  onClick={[Function]}
+  size={20}
+>
+  <input
+    defaultChecked={undefined}
+    disabled={false}
+    id={undefined}
+    name="random_check_box"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="checkbox"
+    value={undefined}
+  />
+</div>
+`;
+
+exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #abb7c2;
+}
+
+.c0:hover {
+  border-color: #007aff;
+}
+
+<div
+  className="c0"
+  data-test="design-system-checkbox"
+  onClick={[Function]}
+  size={20}
+>
+  <input
+    defaultChecked={undefined}
+    disabled={false}
+    id={undefined}
+    name="random_check_box"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="checkbox"
+    value={undefined}
+  />
+</div>
+`;
