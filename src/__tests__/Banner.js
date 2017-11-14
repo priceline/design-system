@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { shallow } from 'enzyme'
 import 'jest-styled-components'
-import { Banner, theme } from '..'
+import { Banner, Text, theme } from '..'
 
 describe('Banner', () => {
   test('renders with no props other than theme', () => {
@@ -13,6 +13,36 @@ describe('Banner', () => {
   test('renders with custom iconName and size', () => {
     const json = renderer
       .create(<Banner iconName="star" iconSize={20} theme={theme} />)
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders with text string', () => {
+    const json = renderer
+      .create(
+        <Banner
+          header="Header"
+          text="Text"
+          iconName="star"
+          iconSize={20}
+          theme={theme}
+        />
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders with text node', () => {
+    const json = renderer
+      .create(
+        <Banner
+          header="Header"
+          text={<Text>Text</Text>}
+          iconName="star"
+          iconSize={20}
+          theme={theme}
+        />
+      )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
@@ -51,7 +81,7 @@ describe('Banner', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
-    expect(json).toHaveStyleRule('color', theme.colors.text)
+    expect(json).toHaveStyleRule('color', theme.colors.darkBlue)
   })
 
   test('renders with lightGreen bg', () => {
@@ -60,7 +90,7 @@ describe('Banner', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightGreen)
-    expect(json).toHaveStyleRule('color', theme.colors.text)
+    expect(json).toHaveStyleRule('color', theme.colors.darkGreen)
   })
 
   test('renders with lightOrange bg', () => {
@@ -69,7 +99,7 @@ describe('Banner', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightOrange)
-    expect(json).toHaveStyleRule('color', theme.colors.text)
+    expect(json).toHaveStyleRule('color', theme.colors.darkOrange)
   })
 
   test('renders with lightRed bg', () => {
@@ -78,7 +108,7 @@ describe('Banner', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightRed)
-    expect(json).toHaveStyleRule('color', theme.colors.text)
+    expect(json).toHaveStyleRule('color', theme.colors.darkRed)
   })
 
   test('renders close button if onClose func is provided', () => {
