@@ -4,16 +4,6 @@ import { theme } from 'styled-system'
 
 import { Box, Flex, Icon, Label } from '../src'
 
-const parseChevronIcon = isExpanded => {
-  const ChevronIcon = isExpanded
-    ? Icon.extend`
-        transform: rotate(180deg);
-      `
-    : Icon
-
-  return <ChevronIcon name="chevronDown" size={12} color="black" />
-}
-
 const SelectFlex = Flex.extend`
   cursor: pointer;
   height: 48px;
@@ -37,12 +27,16 @@ const Select = props => (
       <Icon name="key" size={24} color="blue" />
     </SelectBox>
     <SelectBox pr={3}>
-      <SelectLabel fontSize={1} ml={2} align="left">
+      <SelectLabel fontSize={1} pl={2} align="left">
         {props.children}
       </SelectLabel>
     </SelectBox>
-    <SelectBox pl={5} pr={3}>
-      {parseChevronIcon(props.isExpanded)}
+    <SelectBox pl={5}>
+      <Icon
+        name={props.isExpanded ? 'chevronUp' : 'chevronDown'}
+        size={props.isExpanded ? 24 : 12}
+        color="black"
+      />
     </SelectBox>
   </SelectFlex>
 )

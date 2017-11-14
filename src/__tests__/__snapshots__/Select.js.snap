@@ -50,15 +50,13 @@ exports[`Select renders 1`] = `
 
 .c6 {
   padding-left: 5px;
-  padding-right: 32px;
   cursor: pointer;
 }
 
 .c5 {
-  font-size: 10px;
   display: block;
   width: 100%;
-  margin-left: 16px;
+  padding-left: 16px;
   font-size: 14px;
   text-align: left;
   cursor: pointer;
@@ -125,6 +123,13 @@ exports[`Select renders with isExpanded prop 1`] = `
   color: blue;
 }
 
+.c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: black;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -156,28 +161,16 @@ exports[`Select renders with isExpanded prop 1`] = `
 
 .c6 {
   padding-left: 5px;
-  padding-right: 32px;
   cursor: pointer;
 }
 
 .c5 {
-  font-size: 10px;
   display: block;
   width: 100%;
-  margin-left: 16px;
+  padding-left: 16px;
   font-size: 14px;
   text-align: left;
   cursor: pointer;
-}
-
-.c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: black;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
 }
 
 <div
@@ -217,12 +210,12 @@ exports[`Select renders with isExpanded prop 1`] = `
       className="c7"
       color="black"
       fill="currentcolor"
-      height={12}
-      viewBox="0 0 20 11"
-      width={12}
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
     >
       <path
-        d="M19.998 1.074a.995.995 0 0 0-.437-.836 1.21 1.21 0 0 0-.76-.234 1.113 1.113 0 0 0-.784.368l-7.783 8L1.917.308C1.49-.102.744-.102.319.306.116.5 0 .78 0 1.074c0 .293.116.571.32.767l9.13 8.85c.204.196.495.309.8.309.34 0 .643-.14.843-.387L19.69 1.83c.197-.194.31-.47.31-.757h-.002z"
+        d="M7.4,15.4l4.6-4.6l4.6,4.6L18,14l-6-6l-6,6L7.4,15.4z"
       />
     </svg>
   </div>

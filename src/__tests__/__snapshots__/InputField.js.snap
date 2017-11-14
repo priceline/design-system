@@ -69,7 +69,6 @@ exports[`InputField it renders 1`] = `
 }
 
 .c1 {
-  font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
@@ -179,7 +178,6 @@ exports[`InputField it renders a form field with a color prop 1`] = `
 }
 
 .c1 {
-  font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
@@ -323,7 +321,6 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 }
 
 .c1 {
-  font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
@@ -504,7 +501,6 @@ exports[`InputField it renders a form field with an error message 1`] = `
 }
 
 .c1 {
-  font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
@@ -669,7 +665,6 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
 }
 
 .c1 {
-  font-size: 10px;
   display: block;
   width: 100%;
   padding-left: 13px;
