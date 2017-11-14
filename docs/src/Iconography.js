@@ -37,7 +37,7 @@ const IconList = props =>
         hoverColor="blue"
       >
         <Flex mb={2} align="center" justify="center">
-          <Icon name={icon} size={48} />
+          <Icon name={icon} legacy={false} size={48} />
         </Flex>
       </BlockLink>
       <Text align="center">
