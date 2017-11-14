@@ -1,11 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf, action } from '@storybook/react'
-import { Checkbox } from '../src'
-
-const checkActionFn = (name, value, isChecked) => {
-  console.log('Checkbox Arguments', name, value, isChecked)
-}
+import { Checkbox, theme } from '../src'
 
 storiesOf('Checkbox', module).add('Checkbox states', () => (
   <div>
@@ -14,7 +10,8 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
       <Checkbox
         name="default_box"
         value="someValue"
-        checkAction={checkActionFn}
+        checkAction={action('checkbox-clicked')}
+        theme={theme}
       />
     </section>
 
@@ -24,7 +21,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
         name="default_box"
         value="someValue"
         isChecked={true}
-        checkAction={checkActionFn}
+        checkAction={action('checkbox-clicked')}
         borderWidth={1}
       />
     </section>
@@ -34,7 +31,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
       <Checkbox
         name="disabled_box"
         isDisabled={true}
-        checkAction={checkActionFn}
+        checkAction={action('checkbox-clicked')}
       />
     </section>
 
@@ -44,7 +41,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
         name="disabled_checked_box"
         isDisabled={true}
         isChecked={true}
-        checkAction={checkActionFn}
+        checkAction={action('checkbox-clicked')}
       />
     </section>
   </div>

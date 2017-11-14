@@ -66,27 +66,29 @@ class Checkbox extends React.Component {
 }
 
 const StyledCheckbox = Box.extend`
-  display: inline-flex
-  justify-content: center
-  align-items: center
-  height: ${props => props.size}px
-  width: ${props => props.size}px
-  background-color: ${props => props.theme.colors.white}
-  border-radius: 4px
-  cursor: pointer
-  border: 2px solid ${props => props.theme.colors.borderGray}
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: ${props => props.size}px;
+  width: ${props => props.size}px;
+  background-color: ${props => props.theme.colors.white};
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid ${props => props.theme.colors.borderGray};
   ${props =>
-    props.isDisabled ? 'opacity: 0.5 cursor: initial' : null} &:hover {
+    props.isDisabled ? 'opacity: 0.5; cursor: initial;' : null} &:hover {
     ${props =>
-      props.isDisabled ? null : 'border-color:' + props.theme.colors.blue}
+      props.isDisabled
+        ? null
+        : 'border-color:' + props.theme.colors.blue + ';'};
   }
 `
 
 const CheckedCheckbox = StyledCheckbox.extend`
   background-color: ${props =>
-    props.isDisabled ? props.theme.colors.borderGray : props.theme.colors.blue}
+    props.isDisabled ? props.theme.colors.borderGray : props.theme.colors.blue};
   border-color: ${props =>
-    props.isDisabled ? props.theme.colors.borderGray : props.theme.colors.blue}
+    props.isDisabled ? props.theme.colors.borderGray : props.theme.colors.blue};
 `
 
 Checkbox.displayName = 'Checkbox'
