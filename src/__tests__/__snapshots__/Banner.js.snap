@@ -1,21 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Banner only accepts preset colors 1`] = `
-.c2 {
+.c1 {
   text-align: flex-start;
 }
 
-.c3 {
+.c2 {
   width: 100%;
   text-align: left;
 }
 
 .c0 {
-  background-color: undefined;
-  color: undefined;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,33 +25,32 @@ exports[`Banner only accepts preset colors 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
   font-size: 14px;
 }
 
-.c4 {
+.c3 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
-  className="c0"
+  className=""
   color={undefined}
 >
   <div
-    className="c1 c2"
+    className="c0 c1"
   >
     <div
-      className="c3"
+      className="c2"
       width={1}
     >
       <h5
-        className="c4"
+        className="c3"
         fontSize={2}
       />
       <span
-        className="c5"
+        className="c4"
         fontSize={1}
       />
     </div>
@@ -109,7 +103,6 @@ exports[`Banner renders with blue bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -194,7 +187,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -279,7 +271,6 @@ exports[`Banner renders with green bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -364,7 +355,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -449,7 +439,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -534,7 +523,6 @@ exports[`Banner renders with lightOrange bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -619,7 +607,6 @@ exports[`Banner renders with lightRed bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -704,7 +691,6 @@ exports[`Banner renders with no props other than theme 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -789,7 +775,6 @@ exports[`Banner renders with orange bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
@@ -874,7 +859,6 @@ exports[`Banner renders with red bg 1`] = `
 .c5 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <div
