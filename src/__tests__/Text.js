@@ -32,7 +32,7 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('text-transform', 'uppercase')
   })
 
-  test('bold prop sets font-weight', () => {
+  test('italic prop sets font-style', () => {
     const json = renderer.create(<Text italic theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-style', 'italic')

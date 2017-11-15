@@ -20,9 +20,9 @@ exports[`Text bold prop sets font-weight 1`] = `
 />
 `;
 
-exports[`Text bold prop sets font-weight 2`] = `
+exports[`Text caps prop sets text-transform 1`] = `
 .c0 {
-  font-style: italic;
+  text-transform: uppercase;
 }
 
 <div
@@ -30,9 +30,9 @@ exports[`Text bold prop sets font-weight 2`] = `
 />
 `;
 
-exports[`Text caps prop sets text-transform 1`] = `
+exports[`Text italic prop sets font-style 1`] = `
 .c0 {
-  text-transform: uppercase;
+  font-style: italic;
 }
 
 <div
