@@ -5,7 +5,6 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
   font-size: 24px;
   margin: 0px;
   color: #687B8E;
-  font-weight: undefined;
   text-align: center;
 }
 
@@ -20,7 +19,6 @@ exports[`Heading Heading component with default theme font size, when "fontSize"
 .c0 {
   font-size: 24px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h3
@@ -33,7 +31,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 .c0 {
   font-size: 48px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h1
@@ -46,7 +43,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 .c0 {
   font-size: 32px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h2
@@ -59,7 +55,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 .c0 {
   font-size: 24px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h3
@@ -72,7 +67,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 .c0 {
   font-size: 20px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h4
@@ -85,7 +79,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 .c0 {
   font-size: 16px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h5
@@ -99,7 +92,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
   font-size: 12px;
   margin: 0px;
   text-transform: uppercase;
-  font-weight: undefined;
 }
 
 <h6
@@ -112,7 +104,6 @@ exports[`Heading renders 1`] = `
 .c0 {
   font-size: 24px;
   margin: 0px;
-  font-weight: undefined;
 }
 
 <h3
