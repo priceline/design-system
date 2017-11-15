@@ -36,9 +36,9 @@ storiesOf('Divider', module)
   .add('Inside Column Flex', () => (
     <ColumnFlex>
       <Divider />
-      <Divider ml={4} mr={4} w={1} />
-      <Divider ml={4} w={1} />
-      <Divider ml={4} mr={5} w={1} />
-      <Divider mx={0} w={1} />
+      <Divider ml={4} mr={4} />
+      <Divider ml={4} />
+      <Divider ml={4} mr={5} />
+      <Divider mx={2} />
     </ColumnFlex>
   ))
