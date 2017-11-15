@@ -29,32 +29,33 @@ exports[`InputField it renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin-top: -20px;
   padding-bottom: 8px;
+  padding-right: undefined;
   padding-top: 20px;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-ms-clear {
@@ -138,7 +139,7 @@ exports[`InputField it renders a form field with a color prop 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -147,23 +148,24 @@ exports[`InputField it renders a form field with a color prop 1`] = `
   box-shadow: 0 0 0 0 #007aff;
   margin-top: -20px;
   padding-bottom: 8px;
+  padding-right: undefined;
   padding-top: 20px;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-ms-clear {
@@ -237,8 +239,8 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 .c8 {
   margin-bottom: -24px;
   width: 100%;
-  color: #abb7c2;
-  background-color: #abb7c2;
+  color: #d1d6db;
+  background-color: #d1d6db;
 }
 
 .c2 {
@@ -266,6 +268,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  color: undefined;
 }
 
 .c4 {
@@ -280,13 +283,13 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin-top: -20px;
   padding-bottom: 8px;
   padding-right: 40px;
@@ -294,19 +297,19 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 }
 
 .c4::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-ms-clear {
@@ -330,9 +333,9 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 .c7 {
   border-width: 1px;
   border-radius: 0 0 2px 2px;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   border-style: solid;
-  box-shadow: 0 -1px 0 0 #abb7c2;
+  box-shadow: 0 -1px 0 0 #d1d6db;
 }
 
 .c0 {
@@ -386,7 +389,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
     </div>
     <div
       className="c7 c8"
-      color="#abb7c2"
+      color="#d1d6db"
       width={1}
     >
       <div
@@ -461,7 +464,7 @@ exports[`InputField it renders a form field with an error message 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -475,19 +478,19 @@ exports[`InputField it renders a form field with an error message 1`] = `
 }
 
 .c4::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-ms-clear {
@@ -611,6 +614,7 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  color: undefined;
 }
 
 .c4 {
@@ -625,13 +629,13 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin-top: -20px;
   padding-bottom: 8px;
   padding-right: 40px;
@@ -639,19 +643,19 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
 }
 
 .c4::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c4::-ms-clear {
