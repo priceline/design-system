@@ -43,7 +43,7 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
 }
 
 .c5 > * {
-  border: 0;
+  border: 0 !important;
 }
 
 <div
