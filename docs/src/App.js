@@ -52,7 +52,11 @@ class App extends React.Component {
     const { menuOpen } = this.state
 
     return [
+      <meta charSet="utf-8" />,
       <title key="title">Priceline One Design System</title>,
+      <meta name="viewport" content="width=device-width,initial-scale=1" />,
+      // styled-components SSR only returns HTML tag strings or React elements,
+      // which isn't ideal here
       <head
         dangerouslySetInnerHTML={{
           __html: styles

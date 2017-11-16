@@ -14,7 +14,7 @@ import PageTitle from './PageTitle'
 import Pre from './Pre'
 import Markdown from './Markdown'
 
-const Btn = Button.withComponent('a')
+Button.a = Button.withComponent('a')
 
 const image = `https://images.unsplash.com/photo-1508522109214-4df07c2e9d90?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=ad8b7153fe7b431953e6d22c3d869960`
 
@@ -43,7 +43,7 @@ const Landing = props => {
           <Divider my={4} />
           <Flex wrap mx={-2} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
-            <Btn
+            <Button.a
               m={2}
               href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
               children="Sketch Download"

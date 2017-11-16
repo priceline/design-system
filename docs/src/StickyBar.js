@@ -6,6 +6,7 @@ const StickyBar = styled(Box)`
   height: 100vh;
   max-height: ${props => (props.open ? '100vh' : '64px')};
   overflow-y: ${props => (props.open ? 'auto' : 'hidden')};
+  -webkit-overflow-scrolling: touch;
   transition-property: max-height;
   transition-timing-function: ease-out;
   transition-duration: 0.0625s;

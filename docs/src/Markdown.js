@@ -20,8 +20,7 @@ class Markdown extends React.Component {
         .filter(child => typeof child === 'string')
         .join('\n')
       const opts = {
-        // design-system components can be passed to
-        // remark-react for rending
+        // pass design-system components to remark-react for rending
         remarkReactComponents,
         toHast: {
           handlers: {
@@ -29,25 +28,25 @@ class Markdown extends React.Component {
           }
         }
       }
-      const el = remark()
+      const element = remark()
         .use(remarkSlug)
         .use(remarkReact, opts)
         .processSync(text).contents
 
-      return el
+      return element
     }
   }
 
   render() {
-    const el = this.getElement(this.props)
+    const element = this.getElement(this.props)
 
-    return el
+    return element
   }
 }
 
-// move
 var detab = require('detab')
 var u = require('unist-builder')
+
 const codeHandler = (h, node) => {
   const value = node.value ? detab(node.value + '\n') : ''
   const lang = node.lang && node.lang.match(/^[^ \t]+(?=[ \t]|$)/)
@@ -58,10 +57,7 @@ const codeHandler = (h, node) => {
     props.lang = lang
   }
 
-  return h(node.position, 'pre', props, [
-    u('text', value)
-    // h(node, 'code', props, [ ])
-  ])
+  return h(node.position, 'pre', props, [u('text', value)])
 }
 
 Markdown.propTypes = {
@@ -77,6 +73,7 @@ const OverflowAuto = styled.div`
   overflow-x: auto;
 `
 
+// Styled table element used for markdown
 const Table = styled(props => (
   <OverflowAuto>
     <table {...props} />
@@ -113,7 +110,6 @@ Table.defaultProps = {
   mb: 3
 }
 
-// move to scope
 const heading = type => props => {
   const Comp = Heading[type]
   return (
@@ -125,9 +121,9 @@ const heading = type => props => {
   )
 }
 
+// Provide remark-react components from the design-system
 const defaultScope = {
   // convert markdown h1 to h2 for site
-  // h1: p => <Heading.h2 {...p} />,
   h1: heading('h2'),
   h2: heading('h2'),
   h3: heading('h3'),
@@ -141,6 +137,8 @@ const defaultScope = {
   table: Table
 }
 
+// Markdown components typography and margins
+// can be set with defaultProps
 defaultScope.h1.defaultProps = {
   fontSize: [4, 5, null, 6],
   mt: 4,
