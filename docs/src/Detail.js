@@ -1,32 +1,14 @@
 import React from 'react'
-import * as DS from 'pcln-design-system'
-import { Flex, Box, Divider } from 'pcln-design-system'
-import { Link } from 'react-router-dom'
+import { Box, Divider } from 'pcln-design-system'
 import Markdown from './Markdown'
-
-const PageLink = DS.Link.withComponent(Link)
+import Pagination from './Pagination'
 
 const Detail = ({ index, pages, content }) => {
-  const previous = pages[index - 1]
-  const next = pages[index + 1]
-
   return (
-    <Box p={[2, 4]}>
+    <Box px={3} pt={4} pb={6}>
       <Markdown children={content} />
       <Divider my={4} />
-      <Flex>
-        {previous && (
-          <PageLink to={'/' + previous.name}>
-            <span children={previous.name} />
-          </PageLink>
-        )}
-        <Box ml="auto" />
-        {next && (
-          <PageLink to={'/' + next.name}>
-            <span children={next.name} />
-          </PageLink>
-        )}
-      </Flex>
+      <Pagination index={index} pages={pages} />
     </Box>
   )
 }

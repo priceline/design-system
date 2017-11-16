@@ -5,6 +5,7 @@ import {
   Heading,
   Text,
   Icon,
+  Divider,
   theme,
   icons
 } from 'pcln-design-system'
@@ -12,6 +13,7 @@ import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'
 import BlockLink from './BlockLink'
+import Pagination from './Pagination'
 
 const iconNames = Object.keys(icons).filter(key => key !== 'legacy')
 
@@ -49,7 +51,7 @@ const IconList = props =>
   ))
 
 const Iconography = props => (
-  <Box px={3} py={4}>
+  <Box px={3} pt={4} pb={6}>
     <PageTitle>Iconography</PageTitle>
     <Description>
       The design system includes icons based on Google's Material Design Icons.
@@ -57,6 +59,8 @@ const Iconography = props => (
     <Flex wrap mx={-2} py={4}>
       <IconList icons={iconNames} />
     </Flex>
+    <Divider my={4} />
+    <Pagination {...props} />
   </Box>
 )
 

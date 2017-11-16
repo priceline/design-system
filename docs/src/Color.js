@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Heading, Text, theme } from 'pcln-design-system'
+import { Box, Flex, Heading, Text, Divider, theme } from 'pcln-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'
 import CopyButton from './CopyButton'
+import Pagination from './Pagination'
 
 const colors = Object.keys(theme.colors)
   .filter(key => !/[0-9]$/.test(key))
@@ -85,7 +86,7 @@ const ColorList = props =>
   ))
 
 const Color = props => (
-  <Box px={3} py={4}>
+  <Box px={3} pt={4} pb={6}>
     <PageTitle>Color</PageTitle>
     <Description>
       The design system includes a color palette of several primary colors,
@@ -96,6 +97,8 @@ const Color = props => (
       <ColorList colors={lights} />
       <ColorList colors={darks} />
     </Flex>
+    <Divider my={4} />
+    <Pagination {...props} />
   </Box>
 )
 

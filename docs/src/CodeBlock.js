@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import * as P1 from 'pcln-design-system'
 import { LiveProvider, LivePreview, LiveEditor, LiveError } from 'react-live'
 import { color, space, borderRadius, theme } from 'styled-system'
+import Catch from './Catch'
 import Pre from './Pre'
 
 const Preview = styled(LivePreview)`
@@ -39,23 +40,6 @@ const Editor = styled(LiveEditor)`
 Editor.defaultProps = {
   color: 'blue',
   bg: 'lightGray'
-}
-
-class Catch extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      err: null
-    }
-  }
-  componentDidCatch(err, info) {
-    this.setState({ err })
-  }
-  render() {
-    const { err } = this.state
-    if (err) return <pre>{err}</pre>
-    return this.props.children
-  }
 }
 
 class CodeBlock extends React.Component {

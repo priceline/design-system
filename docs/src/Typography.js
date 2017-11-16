@@ -1,10 +1,18 @@
 import React from 'react'
-import { Box, Flex, Heading, Truncate, theme } from 'pcln-design-system'
+import {
+  Box,
+  Flex,
+  Heading,
+  Truncate,
+  Divider,
+  theme
+} from 'pcln-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
+import Pagination from './Pagination'
 
 const Typography = props => (
-  <Box px={3} py={4}>
+  <Box px={3} pt={4} pb={6}>
     <PageTitle>Typography</PageTitle>
     <Description>
       The design system includes base styles for typography and a typographic
@@ -19,6 +27,8 @@ const Typography = props => (
         </Heading>
       ))}
     </Box>
+    <Divider my={4} />
+    <Pagination {...props} />
   </Box>
 )
 

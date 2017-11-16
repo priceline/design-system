@@ -185,18 +185,16 @@ const pages = [
   },
   {
     name: 'Components',
+    // Component markdown docs can be added here
     pages: [
-      // 'GettingStarted',
       'Box',
       'Flex',
       'Hide',
       'Container',
-      // Typography
       'Text',
       'Heading',
       'Link',
       'Truncate',
-      // UI
       'Button',
       'Image',
       'BackgroundImage',
@@ -236,6 +234,7 @@ App.defaultProps = {
   routes
 }
 
+// To use a different static site generator, this can be handled in Node
 App.getInitialProps = async props => {
   const fs = require('fs')
   const path = require('path')
@@ -255,7 +254,6 @@ App.getInitialProps = async props => {
         filename,
         name,
         route: '/' + name,
-        // raw,
         content
       })
     })
@@ -264,7 +262,6 @@ App.getInitialProps = async props => {
     return Object.assign({}, page, {
       pages: page.pages.map(key => {
         return customPages[key] || { name: key, route: '/' + key }
-        // content.find(c => c.name === key) || key
       })
     })
   })
