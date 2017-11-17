@@ -5,6 +5,7 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
   font-size: 24px;
   margin: 0px;
   color: #687B8E;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -19,6 +20,7 @@ exports[`Heading Heading component with default theme font size, when "fontSize"
 .c0 {
   font-size: 24px;
   margin: 0px;
+  font-weight: 400;
 }
 
 <h3
@@ -104,6 +106,7 @@ exports[`Heading renders 1`] = `
 .c0 {
   font-size: 24px;
   margin: 0px;
+  font-weight: 400;
 }
 
 <h3

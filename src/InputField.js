@@ -16,18 +16,7 @@ const InfoBox = styled(Box)`
   border-style: solid;
   box-shadow: 0 -1px 0 0 ${({ color }) => color};
 `
-const propTypes = {
-  /** Id passed to the native input element. Necessary to set up aria-describedby and for attributes for accessibility.  */
-  id: PropTypes.string.isRequired,
-  /** Text to be used as the label for the input element. */
-  label: PropTypes.string.isRequired,
-  /** The optional icon that shows up on the right side of the element. */
-  icon: PropTypes.string,
-  /** Optional border and icon color. */
-  color: PropTypes.string,
-  /** Additional content to go in the info drawer below the element. This will be replaced by a tooltip later probably.  */
-  info: PropTypes.string
-}
+
 const InputField = ({ id, label, color, icon, info, ...props }) => {
   return (
     <div>
@@ -73,6 +62,23 @@ const InputField = ({ id, label, color, icon, info, ...props }) => {
       )}
     </div>
   )
+}
+
+InputField.propTypes = {
+  /** Id passed to the native input element. Necessary to set up aria-describedby and for attributes for accessibility.  */
+  id: PropTypes.string.isRequired,
+  /** Text to be used as the label for the input element. */
+  label: PropTypes.string.isRequired,
+  /** The optional icon that shows up on the right side of the element. */
+  icon: PropTypes.string,
+  /** Optional border and icon color. */
+  color: PropTypes.string,
+  /** Additional content to go in the info drawer below the element. This will be replaced by a tooltip later probably.  */
+  info: PropTypes.string
+}
+
+InputField.defaultProps = {
+  theme: theme
 }
 
 export default InputField

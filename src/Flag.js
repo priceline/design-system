@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { color, theme, propTypes } from 'styled-system'
 import Flex from './Flex'
+import defaultTheme from './theme'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
@@ -71,7 +72,10 @@ Flag.propTypes = {
 
 Flag.defaultProps = {
   color: 'white',
-  bg: 'green'
+  bg: 'green',
+  theme: defaultTheme
 }
+
+Flag.displayName = 'Flag'
 
 export default Flag

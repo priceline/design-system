@@ -32,7 +32,7 @@ exports[`Divider renders 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: borderGray;
+  border-color: #abb7c2;
 }
 
 <hr
@@ -46,7 +46,7 @@ exports[`Divider width prop sets width 1`] = `
   border-bottom-style: solid;
   border-bottom-width: 1px;
   width: 50%;
-  border-color: borderGray;
+  border-color: #abb7c2;
 }
 
 <hr

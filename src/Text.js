@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { fontSize, space, color, responsiveStyle } from 'styled-system'
+import theme from './theme'
 
 export const caps = props =>
   props.caps
@@ -56,6 +57,10 @@ Text.propTypes = {
   pl: numberStringOrArray,
   px: numberStringOrArray,
   py: numberStringOrArray
+}
+
+Text.defaultProps = {
+  theme: theme
 }
 
 Text.span = Text.withComponent('span')

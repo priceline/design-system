@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
 import Button from './Button'
+import theme from './theme'
 import PropTypes from 'prop-types'
 
 const TransparentButton = styled(Button)`
@@ -26,6 +27,10 @@ IconButton.displayName = 'IconButton'
 IconButton.propTypes = {
   onClick: PropTypes.func,
   title: PropTypes.string
+}
+
+IconButton.defaultProps = {
+  theme: theme
 }
 
 export default IconButton
