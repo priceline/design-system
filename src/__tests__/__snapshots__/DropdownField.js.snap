@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectField renders 1`] = `
+exports[`DropdownField renders 1`] = `
 .c2 {
   font-size: 12px;
 }
@@ -10,7 +10,6 @@ exports[`SelectField renders 1`] = `
   padding-right: 64px;
   padding-top: 16px;
   padding-bottom: 16px;
-  null: null;
 }
 
 .c1:hover {
@@ -44,7 +43,7 @@ exports[`SelectField renders 1`] = `
 </div>
 `;
 
-exports[`SelectField renders with isSelected prop 1`] = `
+exports[`DropdownField renders with isSelected prop 1`] = `
 .c2 {
   font-size: 12px;
 }
