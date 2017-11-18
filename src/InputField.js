@@ -77,8 +77,4 @@ InputField.propTypes = {
   info: PropTypes.string
 }
 
-InputField.defaultProps = {
-  theme: theme
-}
-
 export default InputField

@@ -3,7 +3,6 @@ import Box from './Box'
 import Flex from './Flex'
 import Text from './Text'
 import Icon from './Icon'
-import theme from './theme'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
 import PropTypes from 'prop-types'
@@ -92,8 +91,7 @@ Banner.propTypes = {
 Banner.defaultProps = {
   bg: 'green',
   textAlign: 'left',
-  showIcon: true,
-  theme: theme
+  showIcon: true
 }
 
 export default Banner
