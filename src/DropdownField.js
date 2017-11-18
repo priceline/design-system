@@ -3,36 +3,36 @@ import PropTypes from 'prop-types'
 
 import { Box, Text } from '../src'
 
-const parseBackgroundColor = props =>
-  props.isSelected ? props.theme.colors['blue'] : null
+const parseIsSelected = props =>
+  props.isSelected
+    ? {
+        backgroundColor: props.theme.colors['blue'],
+        color: props.theme.colors['white']
+      }
+    : null
 
-const parseColor = props =>
-  props.isSelected ? props.theme.colors['white'] : null
+const parseHover = props => ({
+  backgroundColor: props.theme.colors['blue'],
+  color: props.theme.colors['white'],
+  cursor: 'pointer'
+})
 
 const DropdownFieldBox = Box.extend`
-  background-color: ${props => parseBackgroundColor(props)};
-  color: ${props => parseColor(props)};
+  ${props => parseIsSelected(props)}
   &:hover {
-    background-color: ${props => props.theme.colors['blue']};
-    color: ${props => props.theme.colors['white']};
-    cursor: pointer;
-  }
+    ${props => parseHover(props)}
 `
 
-const DropdownField = ({ isSelected, children }) => (
-  <DropdownFieldBox py={3} px={5} isSelected={isSelected}>
-    <Text fontSize={0}>{children}</Text>
+const DropdownField = props => (
+  <DropdownFieldBox py={3} px={5} isSelected={props.isSelected}>
+    <Text fontSize={0}>{props.children}</Text>
   </DropdownFieldBox>
 )
 
 DropdownField.displayName = 'DropdownField'
 
 DropdownField.propTypes = {
-  isSelected: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ])
+  isSelected: PropTypes.bool.isRequired
 }
 
 DropdownField.defaultProps = {

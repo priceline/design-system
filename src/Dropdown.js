@@ -39,11 +39,7 @@ Dropdown.displayName = 'Dropdown'
 
 Dropdown.propTypes = {
   withIcon: PropTypes.bool,
-  open: PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ])
+  open: PropTypes.bool
 }
 
 Dropdown.defaultProps = {
