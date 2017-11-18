@@ -18,9 +18,9 @@ const parseHover = props => ({
 })
 
 const DropdownFieldBox = Box.extend`
-  ${props => parseIsSelected(props)}
-  &:hover {
-    ${props => parseHover(props)}
+  ${props => parseIsSelected(props)} &:hover {
+    ${props => parseHover(props)};
+  }
 `
 
 const DropdownField = props => (
