@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Box from './Box'
+import theme from './theme'
 import PropTypes from 'prop-types'
 import { borderRadius, propTypes } from 'styled-system'
 
@@ -22,9 +23,9 @@ const boxShadow = props => {
 }
 
 const boxBorder = props => ({
-  border: `${props.borderWidth}px solid ${
-    props.theme.colors[props.borderColor]
-  }`
+  border: `${props.borderWidth}px solid ${props.theme.colors[
+    props.borderColor
+  ]}`
 })
 
 const Card = styled(Box)`
@@ -41,7 +42,10 @@ Card.propTypes = {
 Card.defaultProps = {
   borderColor: 'borderGray',
   borderRadius: 1,
-  borderWidth: 1
+  borderWidth: 1,
+  theme: theme
 }
+
+Card.displayName = 'Card'
 
 export default Card

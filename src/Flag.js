@@ -74,4 +74,6 @@ Flag.defaultProps = {
   bg: 'green'
 }
 
+Flag.displayName = 'Flag'
+
 export default Flag

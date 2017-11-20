@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space } from 'styled-system'
+import theme from './theme'
 
 function type(props) {
   const badgeColors = {
@@ -51,7 +52,8 @@ const Badge = styled.div`
 
 Badge.defaultProps = {
   px: 2,
-  py: 1
+  py: 1,
+  theme: theme
 }
 
 const numberStringOrArray = PropTypes.oneOfType([

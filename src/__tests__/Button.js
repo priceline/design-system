@@ -4,12 +4,12 @@ import { Button, theme } from '..'
 
 describe('Button', () => {
   test('renders', () => {
-    const json = renderer.create(<Button theme={theme} />).toJSON()
+    const json = renderer.create(<Button />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('size small sets height and font-size', () => {
-    const json = renderer.create(<Button size="small" theme={theme} />).toJSON()
+    const json = renderer.create(<Button size="small" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('height', '32px')
     expect(json).toHaveStyleRule('font-size', '12px')
@@ -18,35 +18,33 @@ describe('Button', () => {
   })
 
   test('size medium sets height and font-size', () => {
-    const json = renderer
-      .create(<Button size="medium" theme={theme} />)
-      .toJSON()
+    const json = renderer.create(<Button size="medium" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('height', '40px')
     expect(json).toHaveStyleRule('font-size', '14px')
   })
 
   test('size large sets height and font-size', () => {
-    const json = renderer.create(<Button size="large" theme={theme} />).toJSON()
+    const json = renderer.create(<Button size="large" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('height', '48px')
     expect(json).toHaveStyleRule('font-size', '16px')
   })
 
   test('fullWidth prop sets width to 100%', () => {
-    const json = renderer.create(<Button fullWidth theme={theme} />).toJSON()
+    const json = renderer.create(<Button fullWidth />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('width', '100%')
   })
 
   test('disabled prop sets', () => {
-    const json = renderer.create(<Button disabled theme={theme} />).toJSON()
+    const json = renderer.create(<Button disabled />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.blue)
   })
 
   test('without disabled prop sets', () => {
-    const json = renderer.create(<Button theme={theme} />).toJSON()
+    const json = renderer.create(<Button />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.darkBlue, {
       modifier: ':hover'
