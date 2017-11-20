@@ -29,32 +29,32 @@ exports[`InputField it renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin-top: -20px;
   padding-bottom: 8px;
   padding-top: 20px;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-ms-clear {
@@ -125,7 +125,7 @@ exports[`InputField it renders a form field with a color prop 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -138,19 +138,19 @@ exports[`InputField it renders a form field with a color prop 1`] = `
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-ms-clear {
@@ -211,8 +211,8 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 .c7 {
   margin-bottom: -24px;
   width: 100%;
-  color: #abb7c2;
-  background-color: #abb7c2;
+  color: #d1d6db;
+  background-color: #d1d6db;
 }
 
 .c1 {
@@ -254,13 +254,13 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin-top: -20px;
   padding-bottom: 8px;
   padding-right: 40px;
@@ -268,19 +268,19 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-ms-clear {
@@ -304,9 +304,9 @@ exports[`InputField it renders a form field with a generic message 1`] = `
 .c6 {
   border-width: 1px;
   border-radius: 0 0 2px 2px;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   border-style: solid;
-  box-shadow: 0 -1px 0 0 #abb7c2;
+  box-shadow: 0 -1px 0 0 #d1d6db;
 }
 
 <div>
@@ -365,7 +365,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
                 "#007aff",
                 "#007aff",
               ],
-              "borderGray": "#abb7c2",
+              "borderGray": "#d1d6db",
               "darkBlue": "#049",
               "darkGray": "#364049",
               "darkGreen": "#060",
@@ -480,7 +480,7 @@ exports[`InputField it renders a form field with a generic message 1`] = `
   </div>
   <div
     className="c6 c7"
-    color="#abb7c2"
+    color="#d1d6db"
     width={1}
   >
     <div
@@ -554,7 +554,7 @@ exports[`InputField it renders a form field with an error message 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -568,19 +568,19 @@ exports[`InputField it renders a form field with an error message 1`] = `
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-ms-clear {
@@ -666,7 +666,7 @@ exports[`InputField it renders a form field with an error message 1`] = `
                 "#007aff",
                 "#007aff",
               ],
-              "borderGray": "#abb7c2",
+              "borderGray": "#d1d6db",
               "darkBlue": "#049",
               "darkGray": "#364049",
               "darkGreen": "#060",
@@ -837,13 +837,13 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin-top: -20px;
   padding-bottom: 8px;
   padding-right: 40px;
@@ -851,19 +851,19 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c3::-ms-clear {
@@ -940,7 +940,7 @@ exports[`InputField it renders a form field wth a label and placeholder 1`] = `
                 "#007aff",
                 "#007aff",
               ],
-              "borderGray": "#abb7c2",
+              "borderGray": "#d1d6db",
               "darkBlue": "#049",
               "darkGray": "#364049",
               "darkGreen": "#060",
