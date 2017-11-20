@@ -35,4 +35,6 @@ Flex.propTypes = {
   wrap: PropTypes.bool
 }
 
+Flex.displayName = 'Flex'
+
 export default Flex

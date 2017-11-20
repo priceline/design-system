@@ -15,13 +15,13 @@ describe('Text', () => {
   })
 
   test('regular prop sets font-weight', () => {
-    const json = renderer.create(<Text regular theme={theme} />).toJSON()
+    const json = renderer.create(<Text regular />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-weight', theme.regular.toString())
   })
 
   test('bold prop sets font-weight', () => {
-    const json = renderer.create(<Text bold theme={theme} />).toJSON()
+    const json = renderer.create(<Text bold />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-weight', theme.bold.toString())
   })
@@ -50,7 +50,7 @@ describe('Text', () => {
   })
 
   test('mt prop sets margin-top', () => {
-    const json = renderer.create(<Text mt={2} theme={theme} />).toJSON()
+    const json = renderer.create(<Text mt={2} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('margin-top', theme.space[2] + 'px')
   })

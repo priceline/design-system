@@ -1,32 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link renders 1`] = `
-.c1 {
+.c0 {
   text-decoration: none;
   color: #007aff;
 }
 
-.c1:hover {
+.c0:hover {
   text-decoration: underline;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
+<a
   className="c0"
+  color="blue"
 >
-  <a
-    className="c1"
-    color="blue"
-  >
-    Dummy
-  </a>
-</div>
+  Dummy
+</a>
 `;
