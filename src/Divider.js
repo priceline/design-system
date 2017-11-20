@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import theme from './theme'
 import { space, width, borderColor, propTypes } from 'styled-system'
 
 const Divider = styled.hr`
@@ -12,6 +13,7 @@ Divider.displayName = 'Divider'
 
 Divider.defaultProps = {
   borderColor: 'borderGray',
+  theme: theme,
   ml: 0,
   mr: 0
 }

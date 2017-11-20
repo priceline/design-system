@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input it renders 1`] = `
-.c1 {
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -22,52 +22,39 @@ exports[`Input it renders 1`] = `
   box-shadow: 0 0 0 0 #d1d6db;
 }
 
-.c1::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::-moz-placeholder {
+.c0::-moz-placeholder {
   color: #d1d6db;
 }
 
-.c1:-ms-input-placeholder {
+.c0:-ms-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::placeholder {
+.c0::placeholder {
   color: #d1d6db;
 }
 
-.c1::-ms-clear {
+.c0::-ms-clear {
   display: none;
 }
 
-.c1:focus {
+.c0:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
+<input
   className="c0"
->
-  <input
-    className="c1"
-  />
-</div>
+/>
 `;
 
 exports[`Input it renders an input element with a really large padding and margin 1`] = `
-.c1 {
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -90,52 +77,39 @@ exports[`Input it renders an input element with a really large padding and margi
   padding: 32px;
 }
 
-.c1::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::-moz-placeholder {
+.c0::-moz-placeholder {
   color: #d1d6db;
 }
 
-.c1:-ms-input-placeholder {
+.c0:-ms-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::placeholder {
+.c0::placeholder {
   color: #d1d6db;
 }
 
-.c1::-ms-clear {
+.c0::-ms-clear {
   display: none;
 }
 
-.c1:focus {
+.c0:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
+<input
   className="c0"
->
-  <input
-    className="c1"
-  />
-</div>
+/>
 `;
 
 exports[`Input it renders an input element with a red border with a color prop is passed 1`] = `
-.c1 {
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -156,53 +130,40 @@ exports[`Input it renders an input element with a red border with a color prop i
   box-shadow: 0 0 0 0 #c00;
 }
 
-.c1::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::-moz-placeholder {
+.c0::-moz-placeholder {
   color: #d1d6db;
 }
 
-.c1:-ms-input-placeholder {
+.c0:-ms-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::placeholder {
+.c0::placeholder {
   color: #d1d6db;
 }
 
-.c1::-ms-clear {
+.c0::-ms-clear {
   display: none;
 }
 
-.c1:focus {
+.c0:focus {
   outline: 0;
   border-color: #c00;
   box-shadow: 0 0 0 1px #c00;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
+<input
   className="c0"
->
-  <input
-    className="c1"
-    color="red"
-  />
-</div>
+  color="red"
+/>
 `;
 
 exports[`Input it renders an input element with large text 1`] = `
-.c1 {
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -223,47 +184,34 @@ exports[`Input it renders an input element with large text 1`] = `
   box-shadow: 0 0 0 0 #d1d6db;
 }
 
-.c1::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::-moz-placeholder {
+.c0::-moz-placeholder {
   color: #d1d6db;
 }
 
-.c1:-ms-input-placeholder {
+.c0:-ms-input-placeholder {
   color: #d1d6db;
 }
 
-.c1::placeholder {
+.c0::placeholder {
   color: #d1d6db;
 }
 
-.c1::-ms-clear {
+.c0::-ms-clear {
   display: none;
 }
 
-.c1:focus {
+.c0:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
+<input
   className="c0"
->
-  <input
-    className="c1"
-    fontSize={4}
-  />
-</div>
+  fontSize={4}
+/>
 `;
