@@ -1,5 +1,5 @@
 
-# Layout
+# Layout Guide
 
 The [Box](Box.md) and [Flex](Flex.md) components are low-level layout components that can handle virtually
 any layout styling that could be handled with a grid system as well as handle a lot of microlayout styles.
@@ -24,7 +24,7 @@ while adhering to the Design System's spacing scale.
 
 To add margin around a component, wrap it with the Box component and use the `m` (margin) prop.
 
-```jsx
+```.jsx
 <Box m={3}>
   <Text>Hello</Text>
 </Box>
@@ -41,7 +41,7 @@ The spacing scale is an array of numbers that are used as pixel values in the Bo
 To add margin in a particular direction use the `mt`, `mr`, `mb`, or `ml` props.
 These props are shorthands for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left` respectively.
 
-```jsx
+```.jsx
 <Box
   mt={3}
   mb={4}>
@@ -81,7 +81,7 @@ The Box and Flex components can also set padding, using a similar API to the mar
 
 To add padding to a Box, use the `p` (padding) prop.
 
-```jsx
+```.jsx
 <Box p={2}>
   <Text>Hello</Text>
 </Box>
@@ -89,7 +89,7 @@ To add padding to a Box, use the `p` (padding) prop.
 
 To add padding in a single direction, use `pt`, `pr`, `pb`, or `pl` props.
 
-```jsx
+```.jsx
 <Box pt={2} pb={4}>
   <Text>Hello</Text>
 </Box>
@@ -121,7 +121,7 @@ Next add some Box components that will act as "columns",
 setting the `width` prop to `1` to make the Boxes fill the full-width of the container
 and stack on top of each other for small viewports.
 
-```jsx
+```.jsx
 <Box p={4}>
   <Flex wrap>
     <Box width={1}>
@@ -137,7 +137,7 @@ and stack on top of each other for small viewports.
 Next, use the `width` prop's [responsive array](#responsive-widths) feature
 to change the width of the Boxes at the *small* breakpoint and up.
 
-```jsx
+```.jsx
 <Box p={4}>
   <Flex wrap>
     <Box width={[ 1, 1/2 ]}>
@@ -160,7 +160,7 @@ This is how many CSS grid systems compensate for gutters.
 Add an equal amount of padding to the Box components (`px={3}`) to create gutters between their child components.
 A bottom margin (`mb={4}`) can also be added to the Box components to handle spacing when stacked.
 
-```jsx
+```.jsx
 <Box p={4}>
   <Flex
     wrap
@@ -225,7 +225,7 @@ Start with a Flex container and set its color to white with a blue background.
 Next, add an Icon and some placeholder Text components for demonstration.
 In a real application, these would likely be links and buttons.
 
-```jsx
+```.jsx
 <Flex
   color='white'
   bg='blue'>
@@ -252,7 +252,7 @@ in this case moving the item to the right side of the navbar.
 
 Next, add some padding and use the `align` prop on the parent Flex component to control the layout.
 
-```jsx
+```.jsx
 <Flex
   p={2}
   align='center'
@@ -288,7 +288,7 @@ and the `wrap` prop on the Flex component, this sort of layout can be achieved w
       key={item.id}
       p={3}
       width={[ 1/2, 1/3, 1/4 ]}>
-      <Card {...item} />
+      <ProductCard {...item} />
     </Box>
   ))}
 </Flex>
