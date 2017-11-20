@@ -13,7 +13,9 @@ Divider.displayName = 'Divider'
 
 Divider.defaultProps = {
   borderColor: 'borderGray',
-  theme: theme
+  theme: theme,
+  ml: 0,
+  mr: 0
 }
 
 Divider.propTypes = {

@@ -5,6 +5,8 @@ exports[`Divider borderColor prop sets borderColor 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
   border-color: #007aff;
 }
 
@@ -19,6 +21,8 @@ exports[`Divider m prop sets margin 1`] = `
   border-bottom-style: solid;
   border-bottom-width: 1px;
   margin: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
   border-color: #d1d6db;
 }
 
@@ -32,6 +36,8 @@ exports[`Divider renders 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
   border-color: #d1d6db;
 }
 
@@ -45,6 +51,8 @@ exports[`Divider width prop sets width 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
   width: 50%;
   border-color: #d1d6db;
 }
