@@ -1,37 +1,69 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Card, Dropdown, DropdownField } from '../src'
+import {
+  Box,
+  Card,
+  Container,
+  DropdownButton,
+  DropdownItem,
+  Icon,
+  Label
+} from '../src'
 
 const DropdownMenu = Card.extend`
   height: 200px;
   overflow: scroll;
+  -webkit-overflow-scrolling: scroll;
 `
 
 storiesOf('Dropdown', module)
   .add('Dropdown - Closed', () => (
     <Box width={220}>
-      <Dropdown># Rooms</Dropdown>
+      <DropdownButton>
+        <Box>
+          <Icon name="key" size={24} color="blue" />
+        </Box>
+        <Box pr={3}>
+          <Container maxWidth="80">
+            <Label fontSize={1} pl={2} align="left">
+              # Rooms
+            </Label>
+          </Container>
+        </Box>
+        <Box pl={5}>
+          <Icon name="chevronDown" size={12} color="black" />
+        </Box>
+      </DropdownButton>
     </Box>
   ))
   .add('Dropdown - Open', () => (
     <Box width={220}>
-      <Dropdown open># Rooms</Dropdown>
+      <DropdownButton open>
+        <Box>
+          <Icon name="key" size={24} color="blue" />
+        </Box>
+        <Box pr={3}>
+          <Container maxWidth="80">
+            <Label fontSize={1} pl={2} align="left">
+              # Rooms
+            </Label>
+          </Container>
+        </Box>
+        <Box pl={5}>
+          <Icon name="chevronUp" size={24} color="black" />
+        </Box>
+      </DropdownButton>
       <DropdownMenu borderWidth={0} boxShadowSize="lg" mt={2}>
-        <DropdownField isSelected>1 Room</DropdownField>
-        <DropdownField>2 Rooms</DropdownField>
-        <DropdownField>3 Rooms</DropdownField>
-        <DropdownField>4 Rooms</DropdownField>
-        <DropdownField>5 Rooms</DropdownField>
-        <DropdownField>6 Rooms</DropdownField>
-        <DropdownField>7 Rooms</DropdownField>
-        <DropdownField>8 Rooms</DropdownField>
-        <DropdownField>9 Rooms</DropdownField>
-        <DropdownField>10+ Rooms</DropdownField>
+        <DropdownItem isSelected>1 Room</DropdownItem>
+        <DropdownItem>2 Rooms</DropdownItem>
+        <DropdownItem>3 Rooms</DropdownItem>
+        <DropdownItem>4 Rooms</DropdownItem>
+        <DropdownItem>5 Rooms</DropdownItem>
+        <DropdownItem>6 Rooms</DropdownItem>
+        <DropdownItem>7 Rooms</DropdownItem>
+        <DropdownItem>8 Rooms</DropdownItem>
+        <DropdownItem>9 Rooms</DropdownItem>
+        <DropdownItem>10+ Rooms</DropdownItem>
       </DropdownMenu>
-    </Box>
-  ))
-  .add('Dropdown - Without Icon', () => (
-    <Box width={220}>
-      <Dropdown withIcon={false}># Rooms</Dropdown>
     </Box>
   ))

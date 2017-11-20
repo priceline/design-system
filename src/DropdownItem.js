@@ -23,20 +23,20 @@ const DropdownFieldBox = Box.extend`
   }
 `
 
-const DropdownField = props => (
+const DropdownItem = props => (
   <DropdownFieldBox py={3} px={5} isSelected={props.isSelected}>
     <Text fontSize={0}>{props.children}</Text>
   </DropdownFieldBox>
 )
 
-DropdownField.displayName = 'DropdownField'
+DropdownItem.displayName = 'DropdownItem'
 
-DropdownField.propTypes = {
-  isSelected: PropTypes.bool.isRequired
+DropdownItem.propTypes = {
+  isSelected: PropTypes.bool
 }
 
-DropdownField.defaultProps = {
+DropdownItem.defaultProps = {
   isSelected: false
 }
 
-export default DropdownField
+export default DropdownItem

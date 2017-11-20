@@ -1,13 +1,13 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { ThemeProvider, DropdownField } from '..'
+import { ThemeProvider, DropdownItem } from '..'
 
-describe('DropdownField', () => {
+describe('DropdownItem', () => {
   test('renders', () => {
     const json = renderer
       .create(
         <ThemeProvider>
-          <DropdownField>Test</DropdownField>
+          <DropdownItem>Test</DropdownItem>
         </ThemeProvider>
       )
       .toJSON()
@@ -18,7 +18,7 @@ describe('DropdownField', () => {
     const json = renderer
       .create(
         <ThemeProvider>
-          <DropdownField isSelected>Test</DropdownField>
+          <DropdownItem isSelected>Test</DropdownItem>
         </ThemeProvider>
       )
       .toJSON()
