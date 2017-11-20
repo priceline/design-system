@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { ThemeProvider, theme, Box } from '..'
-import { Base, pxToEm } from '../ThemeProvider'
+import { Base } from '../ThemeProvider'
 
 describe('ThemeProvider', () => {
   test('renders', () => {
@@ -20,15 +20,10 @@ describe('ThemeProvider', () => {
     expect(json).toHaveStyleRule('font-family', theme.font)
   })
 
-  test('pxToEm converts pixel values to em', () => {
-    const em = pxToEm(256)
-    expect(em).toEqual(16)
-  })
-
   test('accepts a custom breakpoints prop', () => {
     const json = renderer
       .create(
-        <ThemeProvider customBreakpoints={[320, 512, 768, 1024]}>
+        <ThemeProvider customBreakpoints={[20, 32, 48, 64]}>
           <Box width={[1, 1 / 2, 1 / 4]} />
         </ThemeProvider>
       )

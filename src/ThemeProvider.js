@@ -20,13 +20,9 @@ export const Base = styled.div`
   }
 `
 
-export const pxToEm = n => n / 16
-
 const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {
   const baseTheme = legacy ? legacyTheme : nextTheme
-  const breakpoints = customBreakpoints
-    ? customBreakpoints.map(pxToEm)
-    : baseTheme.breakpoints
+  const breakpoints = customBreakpoints || baseTheme.breakpoints
   const theme = {
     ...baseTheme,
     breakpoints
