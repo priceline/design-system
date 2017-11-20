@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { ThemeProvider, theme } from '..'
+import { ThemeProvider, theme, Box } from '..'
 import { Base } from '../ThemeProvider'
 
 describe('ThemeProvider', () => {
@@ -18,5 +18,24 @@ describe('ThemeProvider', () => {
     const json = renderer.create(<Base theme={theme} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-family', theme.font)
+  })
+
+  test('accepts a custom breakpoints prop', () => {
+    const json = renderer
+      .create(
+        <ThemeProvider customBreakpoints={[20, 32, 48, 64]}>
+          <Box width={[1, 1 / 2, 1 / 4]} />
+        </ThemeProvider>
+      )
+      .toJSON()
+    const [box] = json.children
+    expect(json).toMatchSnapshot()
+    expect(box).toHaveStyleRule('width', '100%')
+    expect(box).toHaveStyleRule('width', '50%', {
+      media: 'screen and (min-width:20em)'
+    })
+    expect(box).toHaveStyleRule('width', '25%', {
+      media: 'screen and (min-width:32em)'
+    })
   })
 })
