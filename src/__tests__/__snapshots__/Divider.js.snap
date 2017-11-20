@@ -23,7 +23,7 @@ exports[`Divider m prop sets margin 1`] = `
   margin: 8px;
   margin-left: 0px;
   margin-right: 0px;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
 }
 
 <hr

@@ -13,29 +13,29 @@ exports[`Input it renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-ms-clear {
@@ -79,31 +79,31 @@ exports[`Input it renders an input element with a really large padding and margi
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
   margin: 32px;
   padding: 32px;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-ms-clear {
@@ -147,7 +147,7 @@ exports[`Input it renders an input element with a red border with a color prop i
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -157,19 +157,19 @@ exports[`Input it renders an input element with a red border with a color prop i
 }
 
 .c1::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-ms-clear {
@@ -214,29 +214,29 @@ exports[`Input it renders an input element with large text 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-moz-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::placeholder {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1::-ms-clear {

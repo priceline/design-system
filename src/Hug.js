@@ -23,7 +23,7 @@ const HugCard = styled(Card)`
 
 const BorderConcealer = styled(Box)`
   & > * {
-    border: 0;
+    border: 0 !important;
   }
 `
 
