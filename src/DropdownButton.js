@@ -4,7 +4,12 @@ import { theme } from 'styled-system'
 
 import { Flex, OutlineButton } from '../src'
 
-const OutlineButtonExtended = OutlineButton.extend`
+const DropdownOutlineButton = OutlineButton.extend.attrs({
+  id: 'dropdownButton',
+  type: 'button',
+  'aria-haspopup': 'false',
+  'aria-expanded': props => (props.open ? 'true' : 'false')
+})`
   cursor: pointer;
   width: 100%;
   min-height: 44px;
@@ -15,11 +20,11 @@ const OutlineButtonExtended = OutlineButton.extend`
 `
 
 const DropdownButton = props => (
-  <OutlineButtonExtended>
+  <DropdownOutlineButton open={props.open}>
     <Flex justify="center" align="center" mx={-2}>
       {props.children}
     </Flex>
-  </OutlineButtonExtended>
+  </DropdownOutlineButton>
 )
 
 DropdownButton.displayName = 'DropdownButton'

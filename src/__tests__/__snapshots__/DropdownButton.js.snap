@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownButton DropdownButton renders 1`] = `
+exports[`DropdownButton DropdownButton with "open" renders 1`] = `
 .c3 {
   margin-left: -8px;
   margin-right: -8px;
@@ -71,7 +71,98 @@ exports[`DropdownButton DropdownButton renders 1`] = `
 }
 
 <button
+  aria-expanded="true"
+  aria-haspopup="false"
   className="c0 c1"
+  id="dropdownButton"
+  open={true}
+  type="button"
+>
+  <div
+    className="c2 c3"
+  >
+    Dropdown Button
+  </div>
+</button>
+`;
+
+exports[`DropdownButton DropdownButton without any prop renders 1`] = `
+.c3 {
+  margin-left: -8px;
+  margin-right: -8px;
+  text-align: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  color: #007aff;
+  border-color: #007aff;
+  cursor: pointer;
+  width: 100%;
+  min-height: 44px;
+  border-color: #d1d6db;
+}
+
+.c0:hover {
+  color: #049;
+  border-color: #049;
+  background-color: transparent;
+}
+
+.c0:hover {
+  border-color: #007aff;
+}
+
+<button
+  aria-expanded="false"
+  aria-haspopup="false"
+  className="c0 c1"
+  id="dropdownButton"
+  open={false}
+  type="button"
 >
   <div
     className="c2 c3"

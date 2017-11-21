@@ -12,6 +12,9 @@ import {
 } from '../src'
 
 const numOfRooms = 1
+const DropdownLabel = Label.extend`
+  cursor: pointer;
+`
 const LabelTextContainer = Container.extend`
   overflow-wrap: break-word;
 `
@@ -23,11 +26,11 @@ storiesOf('Dropdown', module)
         <Box>
           <Icon name="key" size={24} color="blue" />
         </Box>
-        <Label width={4} fontSize={1} px={2} align="left" color="black">
+        <DropdownLabel width={4} fontSize={1} px={2} align="left" color="black">
           <LabelTextContainer maxWidth={155}>
             {numOfRooms} Room
           </LabelTextContainer>
-        </Label>
+        </DropdownLabel>
         <Box>
           <Icon name="chevronDown" size={12} color="black" />
         </Box>
@@ -36,15 +39,15 @@ storiesOf('Dropdown', module)
   ))
   .add('Dropdown - Expanded', () => (
     <Dropdown width={220}>
-      <DropdownButton>
+      <DropdownButton open>
         <Box>
           <Icon name="key" size={24} color="blue" />
         </Box>
-        <Label width={4} fontSize={1} pl={2} align="left" color="black">
+        <DropdownLabel width={4} fontSize={1} pl={2} align="left" color="black">
           <LabelTextContainer maxWidth={155}>
             {numOfRooms} Room
           </LabelTextContainer>
-        </Label>
+        </DropdownLabel>
         <Box mr={-2}>
           <Icon name="chevronUp" size={24} color="black" />
         </Box>

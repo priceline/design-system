@@ -10,6 +10,7 @@ exports[`DropdownMenu DropdownMenu renders 1`] = `
 }
 
 <div
+  aria-labelledby="dropdownButton"
   className="c0 "
 >
   DropdownMenu Button
