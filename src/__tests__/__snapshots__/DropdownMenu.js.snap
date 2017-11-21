@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownMenu DropdownMenu renders 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  height: 200px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: scroll;
+}
+
+<div
+  className="c0 "
+>
+  DropdownMenu Button
+</div>
+`;

@@ -25,7 +25,9 @@ const DropdownFieldBox = Box.extend`
 
 const DropdownItem = props => (
   <DropdownFieldBox py={3} px={5} isSelected={props.isSelected}>
-    <Text fontSize={0}>{props.children}</Text>
+    <Text fontSize={0} align="left">
+      {props.children}
+    </Text>
   </DropdownFieldBox>
 )
 

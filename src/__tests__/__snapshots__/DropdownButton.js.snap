@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dropdown DropdownButton renders 1`] = `
-.c1 {
+exports[`DropdownButton DropdownButton renders 1`] = `
+.c3 {
+  margin-left: -8px;
+  margin-right: -8px;
   text-align: center;
 }
 
-.c0 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,15 +20,63 @@ exports[`Dropdown DropdownButton renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: pointer;
-  min-height: 48px;
-  border-width: 1px;
-  border-style: solid;
 }
 
-<div
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  height: 40px;
+  font-size: 14px;
+  padding: 0 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  color: #007aff;
+  border-color: #007aff;
+  cursor: pointer;
+  width: 100%;
+  min-height: 44px;
+  border-color: #d1d6db;
+}
+
+.c0:hover {
+  color: #049;
+  border-color: #049;
+  background-color: transparent;
+}
+
+.c0:hover {
+  border-color: #007aff;
+}
+
+<button
   className="c0 c1"
 >
-  Dropdown Button
-</div>
+  <div
+    className="c2 c3"
+  >
+    Dropdown Button
+  </div>
+</button>
 `;

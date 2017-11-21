@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { DropdownButton } from '..'
 
-describe('Dropdown', () => {
+describe('DropdownButton', () => {
   test('DropdownButton renders', () => {
     const json = renderer
       .create(<DropdownButton>Dropdown Button</DropdownButton>)

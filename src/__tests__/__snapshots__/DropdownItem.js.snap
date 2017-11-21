@@ -3,6 +3,7 @@
 exports[`DropdownItem renders 1`] = `
 .c2 {
   font-size: 12px;
+  text-align: left;
 }
 
 .c1 {
@@ -46,6 +47,7 @@ exports[`DropdownItem renders 1`] = `
 exports[`DropdownItem renders with isSelected prop 1`] = `
 .c2 {
   font-size: 12px;
+  text-align: left;
 }
 
 .c1 {

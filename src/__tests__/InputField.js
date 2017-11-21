@@ -5,7 +5,9 @@ import { InputField } from '..'
 
 describe('InputField', () => {
   test('it renders', () => {
-    const json = renderer.create(<InputField />).toJSON()
+    const json = renderer
+      .create(<InputField label="Test label" id="test-label" />)
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
   test('it renders a form field wth a label and placeholder', () => {
