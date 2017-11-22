@@ -71,8 +71,9 @@ exports[`DropdownButton DropdownButton with "open" renders 1`] = `
 }
 
 <button
+  aria-controls="dropdownMenu"
   aria-expanded="true"
-  aria-haspopup="false"
+  aria-haspopup="true"
   className="c0 c1"
   id="dropdownButton"
   open={true}
@@ -157,8 +158,9 @@ exports[`DropdownButton DropdownButton without any prop renders 1`] = `
 }
 
 <button
+  aria-controls="dropdownMenu"
   aria-expanded="false"
-  aria-haspopup="false"
+  aria-haspopup="true"
   className="c0 c1"
   id="dropdownButton"
   open={false}

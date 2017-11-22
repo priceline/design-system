@@ -7,7 +7,8 @@ import { Flex, OutlineButton } from '../src'
 const DropdownOutlineButton = OutlineButton.extend.attrs({
   id: 'dropdownButton',
   type: 'button',
-  'aria-haspopup': 'false',
+  'aria-haspopup': 'true',
+  'aria-controls': 'dropdownMenu',
   'aria-expanded': props => (props.open ? 'true' : 'false')
 })`
   cursor: pointer;

@@ -12,6 +12,7 @@ import {
 } from '../src'
 
 const numOfRooms = 1
+const trueFlag = true
 const DropdownLabel = Label.extend`
   cursor: pointer;
 `
@@ -35,6 +36,20 @@ storiesOf('Dropdown', module)
           <Icon name="chevronDown" size={12} color="black" />
         </Box>
       </DropdownButton>
+      {!trueFlag && (
+        <DropdownMenu borderWidth={0} boxShadowSize="lg" mt={2} width="100%">
+          <DropdownItem isSelected>1 Room</DropdownItem>
+          <DropdownItem>2 Rooms</DropdownItem>
+          <DropdownItem>3 Rooms</DropdownItem>
+          <DropdownItem>4 Rooms</DropdownItem>
+          <DropdownItem>5 Rooms</DropdownItem>
+          <DropdownItem>6 Rooms</DropdownItem>
+          <DropdownItem>7 Rooms</DropdownItem>
+          <DropdownItem>8 Rooms</DropdownItem>
+          <DropdownItem>9 Rooms</DropdownItem>
+          <DropdownItem>10+ Rooms</DropdownItem>
+        </DropdownMenu>
+      )}
     </Dropdown>
   ))
   .add('Dropdown - Expanded', () => (
@@ -52,17 +67,19 @@ storiesOf('Dropdown', module)
           <Icon name="chevronUp" size={24} color="black" />
         </Box>
       </DropdownButton>
-      <DropdownMenu borderWidth={0} boxShadowSize="lg" mt={2} width="100%">
-        <DropdownItem isSelected>1 Room</DropdownItem>
-        <DropdownItem>2 Rooms</DropdownItem>
-        <DropdownItem>3 Rooms</DropdownItem>
-        <DropdownItem>4 Rooms</DropdownItem>
-        <DropdownItem>5 Rooms</DropdownItem>
-        <DropdownItem>6 Rooms</DropdownItem>
-        <DropdownItem>7 Rooms</DropdownItem>
-        <DropdownItem>8 Rooms</DropdownItem>
-        <DropdownItem>9 Rooms</DropdownItem>
-        <DropdownItem>10+ Rooms</DropdownItem>
-      </DropdownMenu>
+      {trueFlag && (
+        <DropdownMenu borderWidth={0} boxShadowSize="lg" mt={2} width="100%">
+          <DropdownItem isSelected>1 Room</DropdownItem>
+          <DropdownItem>2 Rooms</DropdownItem>
+          <DropdownItem>3 Rooms</DropdownItem>
+          <DropdownItem>4 Rooms</DropdownItem>
+          <DropdownItem>5 Rooms</DropdownItem>
+          <DropdownItem>6 Rooms</DropdownItem>
+          <DropdownItem>7 Rooms</DropdownItem>
+          <DropdownItem>8 Rooms</DropdownItem>
+          <DropdownItem>9 Rooms</DropdownItem>
+          <DropdownItem>10+ Rooms</DropdownItem>
+        </DropdownMenu>
+      )}
     </Dropdown>
   ))

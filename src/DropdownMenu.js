@@ -1,6 +1,7 @@
 import { Card } from './index'
 
 const DropdownMenu = Card.extend.attrs({
+  id: 'dropdownMenu',
   'aria-labelledby': 'dropdownButton'
 })`
   height: 200px;
