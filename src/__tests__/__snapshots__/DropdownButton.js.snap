@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownButton DropdownButton with "open" renders 1`] = `
+exports[`DropdownButton renders with "open" props 1`] = `
 .c3 {
   margin-left: -8px;
   margin-right: -8px;
@@ -87,7 +87,7 @@ exports[`DropdownButton DropdownButton with "open" renders 1`] = `
 </button>
 `;
 
-exports[`DropdownButton DropdownButton without any prop renders 1`] = `
+exports[`DropdownButton renders without any prop 1`] = `
 .c3 {
   margin-left: -8px;
   margin-right: -8px;

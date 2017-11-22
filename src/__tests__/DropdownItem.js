@@ -7,7 +7,7 @@ describe('DropdownItem', () => {
     const json = renderer
       .create(
         <ThemeProvider>
-          <DropdownItem>Test</DropdownItem>
+          <DropdownItem itemIdenx={1}>Test</DropdownItem>
         </ThemeProvider>
       )
       .toJSON()
@@ -18,7 +18,9 @@ describe('DropdownItem', () => {
     const json = renderer
       .create(
         <ThemeProvider>
-          <DropdownItem isSelected>Test</DropdownItem>
+          <DropdownItem isSelected itemIdenx={1}>
+            Test
+          </DropdownItem>
         </ThemeProvider>
       )
       .toJSON()

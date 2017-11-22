@@ -8,11 +8,11 @@ import {
   DropdownItem,
   DropdownMenu,
   Icon,
-  Label
+  Label,
+  Text
 } from '../src'
 
 const numOfRooms = 1
-const trueFlag = true
 const DropdownLabel = Label.extend`
   cursor: pointer;
 `
@@ -36,23 +36,9 @@ storiesOf('Dropdown', module)
           <Icon name="chevronDown" size={12} color="black" />
         </Box>
       </DropdownButton>
-      {!trueFlag && (
-        <DropdownMenu borderWidth={0} boxShadowSize="lg" mt={2} width="100%">
-          <DropdownItem isSelected>1 Room</DropdownItem>
-          <DropdownItem>2 Rooms</DropdownItem>
-          <DropdownItem>3 Rooms</DropdownItem>
-          <DropdownItem>4 Rooms</DropdownItem>
-          <DropdownItem>5 Rooms</DropdownItem>
-          <DropdownItem>6 Rooms</DropdownItem>
-          <DropdownItem>7 Rooms</DropdownItem>
-          <DropdownItem>8 Rooms</DropdownItem>
-          <DropdownItem>9 Rooms</DropdownItem>
-          <DropdownItem>10+ Rooms</DropdownItem>
-        </DropdownMenu>
-      )}
     </Dropdown>
   ))
-  .add('Dropdown - Expanded', () => (
+  .add('Dropdown - Expanded With Simple Options', () => (
     <Dropdown width={220}>
       <DropdownButton open>
         <Box>
@@ -67,19 +53,82 @@ storiesOf('Dropdown', module)
           <Icon name="chevronUp" size={24} color="black" />
         </Box>
       </DropdownButton>
-      {trueFlag && (
-        <DropdownMenu borderWidth={0} boxShadowSize="lg" mt={2} width="100%">
-          <DropdownItem isSelected>1 Room</DropdownItem>
-          <DropdownItem>2 Rooms</DropdownItem>
-          <DropdownItem>3 Rooms</DropdownItem>
-          <DropdownItem>4 Rooms</DropdownItem>
-          <DropdownItem>5 Rooms</DropdownItem>
-          <DropdownItem>6 Rooms</DropdownItem>
-          <DropdownItem>7 Rooms</DropdownItem>
-          <DropdownItem>8 Rooms</DropdownItem>
-          <DropdownItem>9 Rooms</DropdownItem>
-          <DropdownItem>10+ Rooms</DropdownItem>
-        </DropdownMenu>
-      )}
+      <DropdownMenu
+        borderWidth={0}
+        boxShadowSize="lg"
+        width="100%"
+        activeDescendantIndex={1}
+      >
+        <DropdownItem itemIdenx={1} isSelected>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              1 Room
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={2}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              2 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={3}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              3 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={4}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              4 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={5}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              5 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={6}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              6 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={7}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              7 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={8}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              8 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={9}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              9 Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+        <DropdownItem itemIdenx={10}>
+          <Box py={3} px={4} mx={3}>
+            <Text fontSize={0} align="left">
+              10+ Rooms
+            </Text>
+          </Box>
+        </DropdownItem>
+      </DropdownMenu>
     </Dropdown>
   ))

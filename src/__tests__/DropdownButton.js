@@ -3,14 +3,14 @@ import renderer from 'react-test-renderer'
 import { DropdownButton } from '..'
 
 describe('DropdownButton', () => {
-  test('DropdownButton without any prop renders', () => {
+  test('renders without any prop', () => {
     const json = renderer
       .create(<DropdownButton>Dropdown Button</DropdownButton>)
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('DropdownButton with "open" renders', () => {
+  test('renders with "open" props', () => {
     const json = renderer
       .create(<DropdownButton open>Dropdown Button</DropdownButton>)
       .toJSON()

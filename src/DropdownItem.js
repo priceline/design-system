@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import { Box, Text } from '../src'
+import styled from 'styled-components'
 
 const parseIsSelected = props =>
   props.isSelected
@@ -17,23 +16,33 @@ const parseHover = props => ({
   cursor: 'pointer'
 })
 
-const DropdownFieldBox = Box.extend`
+const DropdownItemLI = styled.li.attrs({
+  id: props => `mi${props.itemIdenx}`,
+  role: 'menuitem',
+  tabIndex: -1
+})`
+  list-style: none;
+
   ${props => parseIsSelected(props)} &:hover {
     ${props => parseHover(props)};
   }
 `
 
 const DropdownItem = props => (
-  <DropdownFieldBox py={3} px={5} isSelected={props.isSelected}>
-    <Text fontSize={0} align="left">
-      {props.children}
-    </Text>
-  </DropdownFieldBox>
+  <DropdownItemLI
+    itemIdenx={props.itemIdenx}
+    py={3}
+    px={5}
+    isSelected={props.isSelected}
+  >
+    {props.children}
+  </DropdownItemLI>
 )
 
 DropdownItem.displayName = 'DropdownItem'
 
 DropdownItem.propTypes = {
+  itemIdenx: PropTypes.number.isRequired,
   isSelected: PropTypes.bool
 }
 

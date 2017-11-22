@@ -1,19 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownMenu DropdownMenu renders 1`] = `
+exports[`DropdownMenu renders "activeDescendantIndex" prop 1`] = `
 .c0 {
   border: 1px solid #d1d6db;
   border-radius: 2px;
   height: 200px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
   overflow: scroll;
   -webkit-overflow-scrolling: scroll;
 }
 
-<div
+<ul
+  aria-activedescendant="mi1"
   aria-labelledby="dropdownButton"
-  className="c0 "
+  className="c0"
   id="dropdownMenu"
+  role="menu"
+  tabIndex={0}
 >
   DropdownMenu Button
-</div>
+</ul>
+`;
+
+exports[`DropdownMenu renders 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  height: 200px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: scroll;
+}
+
+<ul
+  aria-activedescendant="miundefined"
+  aria-labelledby="dropdownButton"
+  className="c0"
+  id="dropdownMenu"
+  role="menu"
+  tabIndex={0}
+>
+  DropdownMenu Button
+</ul>
 `;

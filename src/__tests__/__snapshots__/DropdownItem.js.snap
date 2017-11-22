@@ -1,16 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropdownItem renders 1`] = `
-.c2 {
-  font-size: 12px;
-  text-align: left;
-}
-
 .c1 {
-  padding-left: 64px;
-  padding-right: 64px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  list-style: none;
 }
 
 .c1:hover {
@@ -31,30 +23,20 @@ exports[`DropdownItem renders 1`] = `
 <div
   className="c0"
 >
-  <div
+  <li
     className="c1"
+    id="mi1"
+    role="menuitem"
+    tabIndex={-1}
   >
-    <div
-      className="c2"
-      fontSize={0}
-    >
-      Test
-    </div>
-  </div>
+    Test
+  </li>
 </div>
 `;
 
 exports[`DropdownItem renders with isSelected prop 1`] = `
-.c2 {
-  font-size: 12px;
-  text-align: left;
-}
-
 .c1 {
-  padding-left: 64px;
-  padding-right: 64px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  list-style: none;
   background-color: #007aff;
   color: #fff;
 }
@@ -77,15 +59,13 @@ exports[`DropdownItem renders with isSelected prop 1`] = `
 <div
   className="c0"
 >
-  <div
+  <li
     className="c1"
+    id="mi1"
+    role="menuitem"
+    tabIndex={-1}
   >
-    <div
-      className="c2"
-      fontSize={0}
-    >
-      Test
-    </div>
-  </div>
+    Test
+  </li>
 </div>
 `;
