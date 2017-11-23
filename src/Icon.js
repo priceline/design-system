@@ -19,7 +19,7 @@ const getPath = ({ name, legacy }) => {
   return icons.legacy[name] || icons[name] || aliases[name]
 }
 
-const Base = ({ name, size, legacy, ...props }) => {
+const Base = ({ name, size, legacy, theme, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
