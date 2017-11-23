@@ -35,7 +35,7 @@ exports[`DropdownMenu renders 1`] = `
 }
 
 <ul
-  aria-activedescendant="miundefined"
+  aria-activedescendant={null}
   aria-labelledby="dropdownButton"
   className="c0"
   id="dropdownMenu"

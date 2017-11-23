@@ -1,8 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const parseIsSelected = props =>
+const parseIsSelectedStyles = props =>
   props.isSelected
     ? {
         backgroundColor: props.theme.colors['blue'],
@@ -10,39 +9,29 @@ const parseIsSelected = props =>
       }
     : null
 
-const parseHover = props => ({
+const parseHoverStyles = props => ({
   backgroundColor: props.theme.colors['blue'],
-  color: props.theme.colors['white'],
-  cursor: 'pointer'
+  color: props.theme.colors['white']
 })
 
-const DropdownItemLI = styled.li.attrs({
-  id: props => `mi${props.itemIdenx}`,
+const DropdownItem = styled.li.attrs({
+  id: props => (props.itemIndex ? `mi${props.itemIndex}` : null),
   role: 'menuitem',
   tabIndex: -1
 })`
   list-style: none;
 
-  ${props => parseIsSelected(props)} &:hover {
-    ${props => parseHover(props)};
+  ${props => parseIsSelectedStyles(props)} &:hover {
+    ${props => parseHoverStyles(props)};
   }
 `
 
-const DropdownItem = props => (
-  <DropdownItemLI
-    itemIdenx={props.itemIdenx}
-    py={3}
-    px={5}
-    isSelected={props.isSelected}
-  >
-    {props.children}
-  </DropdownItemLI>
-)
-
 DropdownItem.displayName = 'DropdownItem'
 
+const numberOrString = PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+
 DropdownItem.propTypes = {
-  itemIdenx: PropTypes.number.isRequired,
+  itemIndex: numberOrString,
   isSelected: PropTypes.bool
 }
 

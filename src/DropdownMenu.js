@@ -1,15 +1,18 @@
-import { width } from 'styled-system'
-import { Card } from './index'
 import PropTypes from 'prop-types'
+import { width } from 'styled-system'
+import Card from './Card'
 
-const CardUL = Card.withComponent('ul')
+const CardWithUL = Card.withComponent('ul')
 
-const DropdownMenu = CardUL.extend.attrs({
+const DropdownMenu = CardWithUL.extend.attrs({
   id: 'dropdownMenu',
   role: 'menu',
   tabIndex: 0,
   'aria-labelledby': 'dropdownButton',
-  'aria-activedescendant': props => `mi${props.activeDescendantIndex}`
+  'aria-activedescendant': props =>
+    typeof props.activeDescendantIndex === 'number'
+      ? `mi${props.activeDescendantIndex}`
+      : null
 })`
   height: 200px;
   -moz-padding-start: 0;
@@ -22,8 +25,10 @@ const DropdownMenu = CardUL.extend.attrs({
 
 DropdownMenu.displayName = 'DropdownMenu'
 
+const numberOrString = PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+
 DropdownMenu.propTypes = {
-  activeDescendantIndex: PropTypes.number
+  activeDescendantIndex: numberOrString
 }
 
 export default DropdownMenu

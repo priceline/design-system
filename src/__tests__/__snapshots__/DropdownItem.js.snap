@@ -1,39 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownItem renders 1`] = `
-.c1 {
-  list-style: none;
-}
-
-.c1:hover {
-  background-color: #007aff;
-  color: #fff;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
-  className="c0"
->
-  <li
-    className="c1"
-    id="mi1"
-    role="menuitem"
-    tabIndex={-1}
-  >
-    Test
-  </li>
-</div>
-`;
-
 exports[`DropdownItem renders with isSelected prop 1`] = `
 .c1 {
   list-style: none;
@@ -44,7 +10,41 @@ exports[`DropdownItem renders with isSelected prop 1`] = `
 .c1:hover {
   background-color: #007aff;
   color: #fff;
-  cursor: pointer;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <li
+    className="c1"
+    id={null}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    Test 2
+  </li>
+</div>
+`;
+
+exports[`DropdownItem renders with itemIdenx prop 1`] = `
+.c1 {
+  list-style: none;
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c1:hover {
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0 {
@@ -65,7 +65,40 @@ exports[`DropdownItem renders with isSelected prop 1`] = `
     role="menuitem"
     tabIndex={-1}
   >
-    Test
+    Test 1
+  </li>
+</div>
+`;
+
+exports[`DropdownItem renders without any prop 1`] = `
+.c1 {
+  list-style: none;
+}
+
+.c1:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <li
+    className="c1"
+    id={null}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    Test 3
   </li>
 </div>
 `;

@@ -5,12 +5,11 @@ import PropTypes from 'prop-types'
 
 const align = responsiveStyle('align-items', 'align')
 const justify = responsiveStyle('justify-content', 'justify')
-const direction = responsiveStyle('flex-direction', 'direction')
 const wrap = responsiveStyle('flex-wrap', 'wrap', 'wrap')
 
 const Flex = styled(Box)`
   display: flex;
-  ${align} ${justify} ${direction} ${wrap};
+  ${align} ${justify} ${wrap};
 `
 
 Flex.propTypes = {
@@ -31,12 +30,6 @@ Flex.propTypes = {
     'space-between',
     'space-evenly',
     'stretch'
-  ]),
-  direction: PropTypes.oneOf([
-    'row',
-    'row-reverse',
-    'column',
-    'column-reverse'
   ]),
   /** flex-wrap: wrap */
   wrap: PropTypes.bool

@@ -1,23 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Flex } from '../src'
+import { flexDirection } from 'styled-system'
+import Flex from './Flex'
 
-const Dropdown = props => (
-  <Flex justify="center" align="center" direction="column" width={props.width}>
-    {props.children}
-  </Flex>
-)
+const Dropdown = Flex.extend`
+  ${flexDirection};
+`
 
 Dropdown.displayName = 'Dropdown'
-
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
-
-Dropdown.propTypes = {
-  width: numberStringOrArray
-}
 
 export default Dropdown
