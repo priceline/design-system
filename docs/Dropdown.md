@@ -1,7 +1,4 @@
-# `<Dropdown />`
-# `<DropdownButton />`
-# `<DropdownMenu />`
-# `<DropdownItem />`
+# Dropdown Components
 
 Use the `<Dropdown />`, `<DropdownButton />`, `<DropdownMenu />` and `<DropdownItem />` components to compose a dropdown button with a menu and item, with ARIA support.
 
@@ -24,7 +21,7 @@ Use the `<Dropdown />`, `<DropdownButton />`, `<DropdownMenu />` and `<DropdownI
   </Dropdown>
 ```
 
-`<Dropdown />`
+# `<Dropdown />`
 
 Prop | Type | Description
 ---|---|---
@@ -32,7 +29,7 @@ flexDirection | string | Set `flex-direction` css rule
 
 * Extends `Flex` with all `Flex` prop support.
 
-`<DropdownButton />`
+# `<DropdownButton />`
 
 Prop | Type | Description
 ---|---|---
@@ -40,7 +37,7 @@ open | boolean | Support `aria-expanded` attribute with either `true` or `false`
 
 * Extends `OutlineButton` with original `OutlineButton` prop support.
 
-`<DropdownMenu />`
+# `<DropdownMenu />`
 
 Prop | Type | Description
 ---|---|---
@@ -48,7 +45,7 @@ activeDescendantIndex | number | Support `aria-activedescendant` attribute with 
 
 * Extends `Card` with `ul` tag, with original `Card` prop support.
 
-`<DropdownItem />`
+# `<DropdownItem />`
 
 Prop | Type | Description
 ---|---|---
