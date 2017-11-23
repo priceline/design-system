@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { width } from 'styled-system'
+import { width, height } from 'styled-system'
 import Card from './Card'
 
 const CardWithUL = Card.withComponent('ul')
@@ -12,7 +12,7 @@ const DropdownMenu = CardWithUL.extend.attrs({
   'aria-activedescendant': props =>
     props.activeDescendantIndex ? `mi${props.activeDescendantIndex}` : null
 })`
-  height: 200px;
+  height: ${props => props.height}px;
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
   overflow: scroll;
@@ -26,6 +26,7 @@ DropdownMenu.displayName = 'DropdownMenu'
 const numberOrString = PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 
 DropdownMenu.propTypes = {
+  height: numberOrString,
   activeDescendantIndex: numberOrString
 }
 

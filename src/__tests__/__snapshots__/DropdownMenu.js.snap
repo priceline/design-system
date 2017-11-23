@@ -4,7 +4,7 @@ exports[`DropdownMenu renders "activeDescendantIndex" prop 1`] = `
 .c0 {
   border: 1px solid #d1d6db;
   border-radius: 2px;
-  height: 200px;
+  height: px;
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
   overflow: scroll;
@@ -19,7 +19,31 @@ exports[`DropdownMenu renders "activeDescendantIndex" prop 1`] = `
   role="menu"
   tabIndex={0}
 >
-  DropdownMenu Button
+  DropdownMenu Button 3
+</ul>
+`;
+
+exports[`DropdownMenu renders "height" prop 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  height: 50px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: scroll;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby="dropdownButton"
+  className="c0"
+  height={50}
+  id="dropdownMenu"
+  role="menu"
+  tabIndex={0}
+>
+  DropdownMenu Button 2
 </ul>
 `;
 
@@ -27,7 +51,7 @@ exports[`DropdownMenu renders 1`] = `
 .c0 {
   border: 1px solid #d1d6db;
   border-radius: 2px;
-  height: 200px;
+  height: px;
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
   overflow: scroll;
@@ -42,6 +66,6 @@ exports[`DropdownMenu renders 1`] = `
   role="menu"
   tabIndex={0}
 >
-  DropdownMenu Button
+  DropdownMenu Button 1
 </ul>
 `;

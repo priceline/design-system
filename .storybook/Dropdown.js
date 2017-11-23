@@ -65,6 +65,7 @@ storiesOf('Dropdown', module)
         </Flex>
       </DropdownButton>
       <DropdownMenu
+        height={200}
         activeDescendantIndex={1}
         borderWidth={0}
         boxShadowSize="lg"

@@ -41,6 +41,7 @@ open | boolean | Support `aria-expanded` attribute with either `true` or `false`
 
 Prop | Type | Description
 ---|---|---
+height | number or string | Set `height` css rule with `px`
 activeDescendantIndex | number | Support `aria-activedescendant` attribute with value convention as `mi{activeDescendantIndex}`
 
 * Extends `Card` with `ul` tag, with original `Card` prop support.
