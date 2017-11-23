@@ -36,6 +36,7 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 - [`<Banner />`](docs/Banner.md)
 - [`<Box />`](docs/Box.md)
 - [`<Button />`](docs/Button.md)
+- [Dropdown Components](docs/Dropdown.md#dropdown-components)
 - [`<Dropdown />`](docs/Dropdown.md#dropdown-)
 - [`<DropdownButton />`](docs/Dropdown.md#dropdownbutton-)
 - [`<DropdownMenu />`](docs/Dropdown.md#dropdownmenu-)
