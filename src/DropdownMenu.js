@@ -10,9 +10,7 @@ const DropdownMenu = CardWithUL.extend.attrs({
   tabIndex: 0,
   'aria-labelledby': 'dropdownButton',
   'aria-activedescendant': props =>
-    typeof props.activeDescendantIndex === 'number'
-      ? `mi${props.activeDescendantIndex}`
-      : null
+    props.activeDescendantIndex ? `mi${props.activeDescendantIndex}` : null
 })`
   height: 200px;
   -moz-padding-start: 0;
