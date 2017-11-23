@@ -1,71 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownMenu renders "activeDescendantIndex" prop 1`] = `
-.c0 {
-  border: 1px solid #d1d6db;
-  border-radius: 2px;
-  height: px;
-  -moz-padding-start: 0;
-  -webkit-padding-start: 0;
-  overflow: scroll;
-  -webkit-overflow-scrolling: scroll;
-}
-
-<ul
-  aria-activedescendant="mi1"
-  aria-labelledby="dropdownButton"
-  className="c0"
-  id="dropdownMenu"
-  role="menu"
-  tabIndex={0}
->
-  DropdownMenu Button 3
-</ul>
-`;
-
-exports[`DropdownMenu renders "height" prop 1`] = `
-.c0 {
-  border: 1px solid #d1d6db;
-  border-radius: 2px;
-  height: 50px;
-  -moz-padding-start: 0;
-  -webkit-padding-start: 0;
-  overflow: scroll;
-  -webkit-overflow-scrolling: scroll;
-}
-
-<ul
-  aria-activedescendant={null}
-  aria-labelledby="dropdownButton"
-  className="c0"
-  height={50}
-  id="dropdownMenu"
-  role="menu"
-  tabIndex={0}
->
-  DropdownMenu Button 2
-</ul>
-`;
-
 exports[`DropdownMenu renders 1`] = `
 .c0 {
   border: 1px solid #d1d6db;
   border-radius: 2px;
-  height: px;
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
-  overflow: scroll;
-  -webkit-overflow-scrolling: scroll;
 }
 
 <ul
   aria-activedescendant={null}
-  aria-labelledby="dropdownButton"
+  aria-labelledby={undefined}
   className="c0"
-  id="dropdownMenu"
+  id={undefined}
+  role={undefined}
+  tabIndex={undefined}
+>
+  DropdownMenu
+</ul>
+`;
+
+exports[`DropdownMenu renders with "ariaActiveDescendantIndex" prop with invalid value 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+<ul
+  aria-activedescendant="mi5"
+  aria-labelledby={undefined}
+  className="c0"
+  id={undefined}
+  role={undefined}
+  tabIndex={undefined}
+>
+  Dropdown Button With "ariaActiveDescendantIndex" Prop
+</ul>
+`;
+
+exports[`DropdownMenu renders with "ariaLabelledBy" prop with valid value, e.g. "true" or "false" 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby="test"
+  className="c0"
+  id={undefined}
+  role={undefined}
+  tabIndex={undefined}
+>
+  Dropdown Menu With "ariaLabelledBy" Prop
+</ul>
+`;
+
+exports[`DropdownMenu renders with "height" prop 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  height: 88em;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby={undefined}
+  className="c0"
+  height="88em"
+  id={undefined}
+  role={undefined}
+  tabIndex={undefined}
+>
+  Dropdown Button With Cursor
+</ul>
+`;
+
+exports[`DropdownMenu renders with "id" prop 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby={undefined}
+  className="c0"
+  id="test"
+  role={undefined}
+  tabIndex={undefined}
+>
+  Dropdown Menu With "id" Prop
+</ul>
+`;
+
+exports[`DropdownMenu renders with "overflow" prop 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: hidden;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby={undefined}
+  className="c0"
+  id={undefined}
+  overflow="hidden"
+  role={undefined}
+  tabIndex={undefined}
+>
+  Dropdown Button With Cursor
+</ul>
+`;
+
+exports[`DropdownMenu renders with "role" prop 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby={undefined}
+  className="c0"
+  id={undefined}
   role="menu"
+  tabIndex={undefined}
+>
+  Dropdown Menu With "role" Prop
+</ul>
+`;
+
+exports[`DropdownMenu renders with "tabIndex" prop 1`] = `
+.c0 {
+  border: 1px solid #d1d6db;
+  border-radius: 2px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+<ul
+  aria-activedescendant={null}
+  aria-labelledby={undefined}
+  className="c0"
+  id={undefined}
+  role={undefined}
   tabIndex={0}
 >
-  DropdownMenu Button 1
+  Dropdown Menu With "tabIndex" Prop
 </ul>
 `;

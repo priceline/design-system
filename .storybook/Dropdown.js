@@ -45,7 +45,13 @@ storiesOf('Dropdown', module)
   ))
   .add('Dropdown - Expanded With Simple Options', () => (
     <Dropdown flexDirection="column" width={220}>
-      <DropdownButton open>
+      <DropdownButton
+        id="roomDropdown"
+        ariaHaspopup="ariaHaspopup"
+        ariaControls="roomDropdownMenu"
+        ariaExpanded="true"
+        cursor="wait"
+      >
         <Flex justify="space-between" align="center" mx={-2}>
           <Icon name="key" size={24} color="blue" />
           <LabelExtended
@@ -65,74 +71,123 @@ storiesOf('Dropdown', module)
         </Flex>
       </DropdownButton>
       <DropdownMenu
-        height={200}
-        activeDescendantIndex={1}
+        id="roomDropdownMenu"
+        ariaLabelledBy="roomDropdown"
+        ariaActiveDescendantIndex={1}
+        role="menu"
+        tabIndex={0}
+        overflow="scroll"
+        height="200px"
         borderWidth={0}
         boxShadowSize="lg"
-        width="100%"
       >
-        <DropdownItem itemIndex={1} isSelected>
+        <DropdownItem itemIndex={1} role="menuitem" listStyle="none" isSelected>
           <Text py={3} px={4} mx={3} fontSize={0} align="left">
             1 Room
           </Text>
         </DropdownItem>
-        <DropdownItem itemIndex={2}>
+        <DropdownItem
+          itemIndex={2}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               2 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={3}>
+        <DropdownItem
+          itemIndex={3}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               3 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={4}>
+        <DropdownItem
+          itemIndex={4}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={2}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               4 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={5}>
+        <DropdownItem
+          itemIndex={5}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               5 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={6}>
+        <DropdownItem
+          itemIndex={6}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               6 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={7}>
+        <DropdownItem
+          itemIndex={7}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               7 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={8}>
+        <DropdownItem
+          itemIndex={8}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               8 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={9}>
+        <DropdownItem
+          itemIndex={9}
+          role="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               9 Rooms
             </Text>
           </Box>
         </DropdownItem>
-        <DropdownItem itemIndex={10}>
+        <DropdownItem
+          itemIndex={10}
+          ole="menuitem"
+          listStyle="none"
+          tabIndex={-1}
+        >
           <Box py={3} px={4} mx={3}>
             <Text fontSize={0} align="left">
               10+ Rooms

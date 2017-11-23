@@ -1,33 +1,35 @@
 import PropTypes from 'prop-types'
-import { width, height } from 'styled-system'
 import Card from './Card'
 
 const CardWithUL = Card.withComponent('ul')
 
 const DropdownMenu = CardWithUL.extend.attrs({
-  id: 'dropdownMenu',
-  role: 'menu',
-  tabIndex: 0,
-  'aria-labelledby': 'dropdownButton',
+  id: props => props.id,
+  role: props => props.role,
+  tabIndex: props => props.tabIndex,
+  'aria-labelledby': props => props.ariaLabelledBy,
   'aria-activedescendant': props =>
-    props.activeDescendantIndex ? `mi${props.activeDescendantIndex}` : null
+    props.ariaActiveDescendantIndex
+      ? `mi${props.ariaActiveDescendantIndex}`
+      : null
 })`
-  height: ${props => props.height}px;
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
-  overflow: scroll;
-  -webkit-overflow-scrolling: scroll;
-
-  ${width}
+  overflow: ${props => props.overflow};
+  -webkit-overflow-scrolling: ${props => props.overflow};
+  height: ${props => (props.height ? props.height : null)};
 `
 
 DropdownMenu.displayName = 'DropdownMenu'
 
-const numberOrString = PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-
 DropdownMenu.propTypes = {
-  height: numberOrString,
-  activeDescendantIndex: numberOrString
+  id: PropTypes.string,
+  role: PropTypes.string,
+  tabIndex: PropTypes.number,
+  ariaLabelledBy: PropTypes.string,
+  ariaActiveDescendantIndex: PropTypes.number,
+  overflow: PropTypes.string,
+  height: PropTypes.string
 }
 
 export default DropdownMenu

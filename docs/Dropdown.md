@@ -25,7 +25,7 @@ Use the `<Dropdown />`, `<DropdownButton />`, `<DropdownMenu />` and `<DropdownI
 
 Prop | Type | Description
 ---|---|---
-flexDirection | string | Set `flex-direction` css rule
+flexDirection | string | Set `flex-direction` CSS rule
 
 * Extends `Flex` with all `Flex` prop support.
 
@@ -33,7 +33,10 @@ flexDirection | string | Set `flex-direction` css rule
 
 Prop | Type | Description
 ---|---|---
-open | boolean | Support `aria-expanded` attribute with either `true` or `false` value
+id | string | Set `id` attribute
+ariaHaspopup | string | Set `aria-haspopup` attribute
+ariaControls | string | Set `aria-controls` attribute
+ariaExpanded | string | Set `aria-expanded` attribute; only "true" or "false" are valid values
 
 * Extends `OutlineButton` with original `OutlineButton` prop support.
 
@@ -41,8 +44,13 @@ open | boolean | Support `aria-expanded` attribute with either `true` or `false`
 
 Prop | Type | Description
 ---|---|---
-height | number or string | Set `height` css rule with `px`
-activeDescendantIndex | number | Support `aria-activedescendant` attribute with value convention as `mi{activeDescendantIndex}`
+id | string | Set `id` attribute
+role | string | Set `role` attribute
+tabIndex | number | Set `tabindex` attribute
+ariaLabelledBy | string | Set `aria-labelledby` attribute
+ariaActiveDescendantIndex | string | Set `aria-activedescendant` attribute
+overflow | string | Set `overflow` & `-webkit-overflow-scrolling` CSS rules
+height | string | Set `height` css rule
 
 * Extends `Card` with `ul` tag, with original `Card` prop support.
 
@@ -51,6 +59,9 @@ activeDescendantIndex | number | Support `aria-activedescendant` attribute with 
 Prop | Type | Description
 ---|---|---
 itemIndex | number | Support `id` attribute with correct item index
+role | string | Set `role` attribute
+tabIndex | number | Set `tabindex` attribute
+listStyle | string | Set `list-style` CSS rule
 isSelected | boolean | Support hover styles
 
 ### Built-In ARIA Support

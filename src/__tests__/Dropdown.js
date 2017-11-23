@@ -7,4 +7,12 @@ describe('Dropdown', () => {
     const json = renderer.create(<Dropdown>Dropdown</Dropdown>).toJSON()
     expect(json).toMatchSnapshot()
   })
+
+  test('renders with "flexDirection" prop', () => {
+    const json = renderer
+      .create(<Dropdown flexDirection="column">Flex Column Dropdown</Dropdown>)
+      .toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('flex-direction', 'column')
+  })
 })

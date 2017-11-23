@@ -1,104 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropdownItem renders with isSelected prop 1`] = `
-.c1 {
-  list-style: none;
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c1:hover {
-  background-color: #007aff;
-  color: #fff;
-}
-
 .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
+  background-color: #007aff;
+  color: #fff;
 }
 
-.c0 * {
-  box-sizing: border-box;
+.c0:hover {
+  background-color: #007aff;
+  color: #fff;
 }
 
-<div
+<li
   className="c0"
+  id={null}
+  role={undefined}
+  tabIndex={undefined}
 >
-  <li
-    className="c1"
-    id={null}
-    role="menuitem"
-    tabIndex={-1}
-  >
-    Test 2
-  </li>
-</div>
+  Test 2
+</li>
 `;
 
 exports[`DropdownItem renders with itemIdenx prop 1`] = `
-.c1 {
-  list-style: none;
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c1:hover {
-  background-color: #007aff;
-  color: #fff;
-}
-
 .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
+  background-color: #007aff;
+  color: #fff;
 }
 
-.c0 * {
-  box-sizing: border-box;
+.c0:hover {
+  background-color: #007aff;
+  color: #fff;
 }
 
-<div
+<li
   className="c0"
+  id="mi1"
+  role={undefined}
+  tabIndex={undefined}
 >
-  <li
-    className="c1"
-    id="mi1"
-    role="menuitem"
-    tabIndex={-1}
-  >
-    Test 1
-  </li>
-</div>
+  Test 1
+</li>
 `;
 
-exports[`DropdownItem renders without any prop 1`] = `
-.c1 {
-  list-style: none;
-}
-
-.c1:hover {
+exports[`DropdownItem renders with itemIndex prop 1`] = `
+.c0:hover {
   background-color: #007aff;
   color: #fff;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
+<li
   className="c0"
+  id="mi8"
+  role={undefined}
+  tabIndex={undefined}
 >
-  <li
-    className="c1"
-    id={null}
-    role="menuitem"
-    tabIndex={-1}
-  >
-    Test 3
-  </li>
-</div>
+  Test 2
+</li>
+`;
+
+exports[`DropdownItem renders with listStyle prop 1`] = `
+.c0 {
+  list-style: bisque;
+}
+
+.c0:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+<li
+  className="c0"
+  id={null}
+  role={undefined}
+  tabIndex={undefined}
+>
+  Test 2
+</li>
+`;
+
+exports[`DropdownItem renders with role prop 1`] = `
+.c0:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+<li
+  className="c0"
+  id={null}
+  role="menuitem"
+  tabIndex={undefined}
+>
+  Test 2
+</li>
+`;
+
+exports[`DropdownItem renders with tabIndex prop 1`] = `
+.c0:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+<li
+  className="c0"
+  id={null}
+  role={undefined}
+  tabIndex={-1}
+>
+  Test 2
+</li>
 `;

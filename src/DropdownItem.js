@@ -1,42 +1,39 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import theme from './theme'
 
 const parseIsSelectedStyles = props =>
   props.isSelected
     ? {
-        backgroundColor: props.theme.colors['blue'],
-        color: props.theme.colors['white']
+        backgroundColor: theme.colors['blue'],
+        color: theme.colors['white']
       }
     : null
 
-const parseHoverStyles = props => ({
-  backgroundColor: props.theme.colors['blue'],
-  color: props.theme.colors['white']
+const parseHoverStyles = () => ({
+  backgroundColor: theme.colors['blue'],
+  color: theme.colors['white']
 })
 
 const DropdownItem = styled.li.attrs({
   id: props => (props.itemIndex ? `mi${props.itemIndex}` : null),
-  role: 'menuitem',
-  tabIndex: -1
+  role: props => props.role,
+  tabIndex: props => props.tabIndex
 })`
-  list-style: none;
-
+  list-style: ${props => props.listStyle};
   ${props => parseIsSelectedStyles(props)} &:hover {
-    ${props => parseHoverStyles(props)};
+    ${parseHoverStyles()};
   }
 `
 
 DropdownItem.displayName = 'DropdownItem'
 
-const numberOrString = PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-
 DropdownItem.propTypes = {
-  itemIndex: numberOrString,
+  itemIndex: PropTypes.number,
+  role: PropTypes.string,
+  tabIndex: PropTypes.number,
+  listStyle: PropTypes.string,
   isSelected: PropTypes.bool
-}
-
-DropdownItem.defaultProps = {
-  isSelected: false
 }
 
 export default DropdownItem
