@@ -52,8 +52,10 @@ Prop | Type | Description
 itemIndex | number | Support `id` attribute with correct item index
 isSelected | boolean | Support hover styles
 
-###### Built-In ARIA Support
+### Built-In ARIA Support
 
-`<DropdownButton />` - e.g. `id="dropdownButton"`, `type="button"` `aria-haspopup="true"`, `aria-controls="dropdownMenu"`, `aria-expanded="true"` or `aria-expanded="false"`
-`<DropdownMenu />` - e.g. `id="dropdownMenu"`, `role="menu"`, `tabindex="0"`, `aria-labelledby="dropdownButton"`, `aria-activedescendant="mi1"`
-`<DropdownItem />` - e.g. `id="mi1"`, `role="menuitem"`, `tabindex="-1"`
+* `<DropdownButton />` - e.g. `id="dropdownButton"`, `type="button"` `aria-haspopup="true"`, `aria-controls="dropdownMenu"`, `aria-expanded="true"` or `aria-expanded="false"`
+
+* `<DropdownMenu />` - e.g. `id="dropdownMenu"`, `role="menu"`, `tabindex="0"`, `aria-labelledby="dropdownButton"`, `aria-activedescendant="mi1"`
+
+* `<DropdownItem />` - e.g. `id="mi1"`, `role="menuitem"`, `tabindex="-1"`
