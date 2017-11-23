@@ -8,6 +8,8 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       .create(<DropdownButton>Dropdown Button</DropdownButton>)
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
     expect(json).toHaveStyleRule('min-height', '44px')
   })
 
