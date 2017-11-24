@@ -2,6 +2,7 @@
 
 exports[`DropdownItem renders with isSelected prop 1`] = `
 .c0 {
+  list-style: none;
   background-color: #007aff;
   color: #fff;
 }
@@ -23,6 +24,7 @@ exports[`DropdownItem renders with isSelected prop 1`] = `
 
 exports[`DropdownItem renders with itemIdenx prop 1`] = `
 .c0 {
+  list-style: none;
   background-color: #007aff;
   color: #fff;
 }
@@ -43,6 +45,10 @@ exports[`DropdownItem renders with itemIdenx prop 1`] = `
 `;
 
 exports[`DropdownItem renders with itemIndex prop 1`] = `
+.c0 {
+  list-style: none;
+}
+
 .c0:hover {
   background-color: #007aff;
   color: #fff;
@@ -58,27 +64,11 @@ exports[`DropdownItem renders with itemIndex prop 1`] = `
 </li>
 `;
 
-exports[`DropdownItem renders with listStyle prop 1`] = `
-.c0 {
-  list-style: bisque;
-}
-
-.c0:hover {
-  background-color: #007aff;
-  color: #fff;
-}
-
-<li
-  className="c0"
-  id={null}
-  role={undefined}
-  tabIndex={undefined}
->
-  Test 2
-</li>
-`;
-
 exports[`DropdownItem renders with role prop 1`] = `
+.c0 {
+  list-style: none;
+}
+
 .c0:hover {
   background-color: #007aff;
   color: #fff;
@@ -95,6 +85,10 @@ exports[`DropdownItem renders with role prop 1`] = `
 `;
 
 exports[`DropdownItem renders with tabIndex prop 1`] = `
+.c0 {
+  list-style: none;
+}
+
 .c0:hover {
   background-color: #007aff;
   color: #fff;

@@ -35,14 +35,6 @@ describe('DropdownItem', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with listStyle prop', () => {
-    const json = renderer
-      .create(<DropdownItem listStyle="bisque">Test 2</DropdownItem>)
-      .toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('list-style', 'bisque')
-  })
-
   test('renders with isSelected prop', () => {
     const json = renderer
       .create(<DropdownItem isSelected>Test 2</DropdownItem>)
