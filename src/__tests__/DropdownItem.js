@@ -12,6 +12,7 @@ describe('DropdownItem', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('list-style', 'none')
   })
 
   test('renders with itemIndex prop', () => {
@@ -19,6 +20,7 @@ describe('DropdownItem', () => {
       .create(<DropdownItem itemIndex={8}>Test 2</DropdownItem>)
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('list-style', 'none')
   })
 
   test('renders with role prop', () => {
@@ -26,6 +28,7 @@ describe('DropdownItem', () => {
       .create(<DropdownItem role="menuitem">Test 2</DropdownItem>)
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('list-style', 'none')
   })
 
   test('renders with tabIndex prop', () => {
@@ -33,6 +36,7 @@ describe('DropdownItem', () => {
       .create(<DropdownItem tabIndex={-1}>Test 2</DropdownItem>)
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('list-style', 'none')
   })
 
   test('renders with isSelected prop', () => {
@@ -40,6 +44,7 @@ describe('DropdownItem', () => {
       .create(<DropdownItem isSelected>Test 2</DropdownItem>)
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('list-style', 'none')
     expect(json).toHaveStyleRule('background-color', theme.colors['blue'])
     expect(json).toHaveStyleRule('color', theme.colors['white'])
   })

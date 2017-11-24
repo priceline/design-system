@@ -22,6 +22,9 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
+    expect(json).toHaveStyleRule('min-height', '44px')
   })
 
   test('renders with "ariaHaspopup" prop', () => {
@@ -33,6 +36,9 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
+    expect(json).toHaveStyleRule('min-height', '44px')
   })
 
   test('renders with "ariaControls" prop', () => {
@@ -44,6 +50,9 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
+    expect(json).toHaveStyleRule('min-height', '44px')
   })
 
   test('renders with "ariaExpanded" prop with valid value, e.g. "true" or "false"', () => {
@@ -55,6 +64,9 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
+    expect(json).toHaveStyleRule('min-height', '44px')
   })
 
   test('renders with "ariaExpanded" prop with invalid value', () => {
@@ -66,6 +78,9 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
+    expect(json).toHaveStyleRule('min-height', '44px')
   })
 
   test('renders with "cursor" prop', () => {
@@ -77,6 +92,9 @@ describe('<DropdownButton /> tested by react-test-renderer', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('width', '100%')
+    expect(json).toHaveStyleRule('height', '100%')
+    expect(json).toHaveStyleRule('min-height', '44px')
     expect(json).toHaveStyleRule('cursor', 'wait')
   })
 })

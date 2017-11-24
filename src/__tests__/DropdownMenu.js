@@ -8,6 +8,8 @@ describe('DropdownMenu', () => {
       .create(<DropdownMenu>DropdownMenu</DropdownMenu>)
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
   })
 
   test('renders with "id" prop', () => {
@@ -17,6 +19,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
   })
 
   test('renders with "role" prop', () => {
@@ -26,6 +30,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
   })
 
   test('renders with "tabIndex" prop', () => {
@@ -37,6 +43,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
   })
 
   test('renders with "ariaLabelledBy" prop with valid value, e.g. "true" or "false"', () => {
@@ -48,6 +56,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
   })
 
   test('renders with "ariaActiveDescendantIndex" prop with invalid value', () => {
@@ -59,6 +69,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
   })
 
   test('renders with "overflow" prop', () => {
@@ -70,6 +82,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
     expect(json).toHaveStyleRule('overflow', 'hidden')
     expect(json).toHaveStyleRule('-webkit-overflow-scrolling', 'hidden')
   })
@@ -81,6 +95,8 @@ describe('DropdownMenu', () => {
       )
       .toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('-moz-padding-start', '0')
+    expect(json).toHaveStyleRule('-webkit-padding-start', '0')
     expect(json).toHaveStyleRule('height', '88em')
   })
 })
