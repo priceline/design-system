@@ -15,7 +15,8 @@ const DropdownMenu = CardWithUL.extend.attrs({
 })`
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
-  overflow: ${props => props.overflow};
+  overflow-x: ${props => props.overflow};
+  overflow-y: ${props => props.overflow};
   -webkit-overflow-scrolling: ${props => props.overflow};
   height: ${props => (props.height ? props.height : null)};
 `

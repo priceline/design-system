@@ -108,7 +108,8 @@ exports[`DropdownMenu renders with "overflow" prop 1`] = `
   border-radius: 2px;
   -moz-padding-start: 0;
   -webkit-padding-start: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: hidden;
 }
 

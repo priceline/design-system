@@ -84,7 +84,8 @@ describe('DropdownMenu', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('-moz-padding-start', '0')
     expect(json).toHaveStyleRule('-webkit-padding-start', '0')
-    expect(json).toHaveStyleRule('overflow', 'hidden')
+    expect(json).toHaveStyleRule('overflow-x', 'hidden')
+    expect(json).toHaveStyleRule('overflow-y', 'hidden')
     expect(json).toHaveStyleRule('-webkit-overflow-scrolling', 'hidden')
   })
 
