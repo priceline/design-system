@@ -2,7 +2,7 @@
 
 exports[`DropdownItem renders with isSelected prop 1`] = `
 .c0 {
-  list-style: none;
+  list-style-type: none;
   background-color: #007aff;
   color: #fff;
 }
@@ -24,7 +24,7 @@ exports[`DropdownItem renders with isSelected prop 1`] = `
 
 exports[`DropdownItem renders with itemIdenx prop 1`] = `
 .c0 {
-  list-style: none;
+  list-style-type: none;
   background-color: #007aff;
   color: #fff;
 }
@@ -46,7 +46,7 @@ exports[`DropdownItem renders with itemIdenx prop 1`] = `
 
 exports[`DropdownItem renders with itemIndex prop 1`] = `
 .c0 {
-  list-style: none;
+  list-style-type: none;
 }
 
 .c0:hover {
@@ -66,7 +66,7 @@ exports[`DropdownItem renders with itemIndex prop 1`] = `
 
 exports[`DropdownItem renders with role prop 1`] = `
 .c0 {
-  list-style: none;
+  list-style-type: none;
 }
 
 .c0:hover {
@@ -86,7 +86,7 @@ exports[`DropdownItem renders with role prop 1`] = `
 
 exports[`DropdownItem renders with tabIndex prop 1`] = `
 .c0 {
-  list-style: none;
+  list-style-type: none;
 }
 
 .c0:hover {

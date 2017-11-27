@@ -20,7 +20,7 @@ const DropdownItem = styled.li.attrs({
   role: props => props.role,
   tabIndex: props => props.tabIndex
 })`
-  list-style: none;
+  list-style-type: none;
   ${props => parseIsSelectedStyles(props)} &:hover {
     ${parseHoverStyles()};
   }
