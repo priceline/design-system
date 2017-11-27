@@ -20,6 +20,9 @@ const LabelExtended = Label.extend`
 const LabelTextContainer = Container.extend`
   overflow-wrap: break-word;
 `
+const DropdownMenuExtended = DropdownMenu.extend`
+  cursor: pointer;
+`
 
 storiesOf('Dropdown', module)
   .add('Dropdown - Collapsed', () => (
@@ -43,112 +46,74 @@ storiesOf('Dropdown', module)
       </DropdownButton>
     </Dropdown>
   ))
-  .add('Dropdown - Expanded With Simple Options', () => (
-    <Dropdown flexDirection="column" width={220}>
-      <DropdownButton
-        id="roomDropdown"
-        ariaHaspopup="ariaHaspopup"
-        ariaControls="roomDropdownMenu"
-        ariaExpanded="true"
-        cursor="pointer"
-      >
-        <Flex justify="space-between" align="center" mx={-2}>
-          <Icon name="key" size={24} color="blue" />
-          <LabelExtended
-            width={4}
-            fontSize={1}
-            pl={2}
-            align="left"
-            color="black"
-          >
-            <LabelTextContainer maxWidth={135}>
-              {numOfRooms} Room
-            </LabelTextContainer>
-          </LabelExtended>
-          <Box mr={-2}>
-            <Icon name="chevronUp" size={24} color="black" />
-          </Box>
-        </Flex>
-      </DropdownButton>
-      <DropdownMenu
-        id="roomDropdownMenu"
-        ariaLabelledBy="roomDropdown"
-        ariaActiveDescendantIndex={1}
-        role="menu"
-        tabIndex={0}
-        overflow="scroll"
-        height="200px"
-        borderWidth={0}
-        boxShadowSize="lg"
-      >
-        <DropdownItem itemIndex={1} role="menuitem" isSelected>
-          <Text py={3} px={4} mx={3} fontSize={0} align="left">
-            1 Room
-          </Text>
-        </DropdownItem>
-        <DropdownItem itemIndex={2} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              2 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={3} role="menuitem" tabIndex={1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              3 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={4} role="menuitem" tabIndex={2}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              4 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={5} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              5 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={6} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              6 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={7} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              7 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={8} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              8 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={9} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              9 Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-        <DropdownItem itemIndex={10} role="menuitem" tabIndex={-1}>
-          <Box py={3} px={4} mx={3}>
-            <Text fontSize={0} align="left">
-              10+ Rooms
-            </Text>
-          </Box>
-        </DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-  ))
+  .add('Dropdown - Expanded With Simple Options', () => {
+    const roomItems = [
+      '1 Room',
+      '2 Rooms',
+      '3 Rooms',
+      '4 Rooms',
+      '5 Rooms',
+      '6 Rooms',
+      '7 Rooms',
+      '8 Rooms',
+      '9 Rooms',
+      '10+ Rooms'
+    ]
+    const selectedItemIndex = 0
+
+    return (
+      <Dropdown flexDirection="column" width={220}>
+        <DropdownButton
+          id="roomDropdown"
+          ariaHaspopup="ariaHaspopup"
+          ariaControls="roomDropdownMenu"
+          ariaExpanded="true"
+          cursor="pointer"
+        >
+          <Flex justify="space-between" align="center" mx={-2}>
+            <Icon name="key" size={24} color="blue" />
+            <LabelExtended
+              width={4}
+              fontSize={1}
+              pl={2}
+              align="left"
+              color="black"
+            >
+              <LabelTextContainer maxWidth={135}>
+                {numOfRooms} Room
+              </LabelTextContainer>
+            </LabelExtended>
+            <Box mr={-2}>
+              <Icon name="chevronUp" size={24} color="black" />
+            </Box>
+          </Flex>
+        </DropdownButton>
+        <DropdownMenuExtended
+          id="roomDropdownMenu"
+          ariaLabelledBy="roomDropdown"
+          ariaActiveDescendantIndex={1}
+          role="menu"
+          tabIndex={0}
+          overflow="scroll"
+          height="200px"
+          borderWidth={0}
+          boxShadowSize="lg"
+        >
+          {roomItems.map((value, index) => (
+            <DropdownItem
+              key={`RoomMenu-DropdownItem-${index}`}
+              itemIndex={1}
+              role="menuitem"
+              isSelected={index === selectedItemIndex}
+            >
+              <Box py={3} px={4} mx={3}>
+                <Text fontSize={0} align="left">
+                  {value}
+                </Text>
+              </Box>
+            </DropdownItem>
+          ))}
+        </DropdownMenuExtended>
+      </Dropdown>
+    )
+  })
