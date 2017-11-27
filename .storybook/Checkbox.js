@@ -1,48 +1,62 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf, action } from '@storybook/react'
-import { Checkbox, theme } from '../src'
+import { Checkbox, Text, Box, Heading, theme } from '../src'
+
+const Wrapper = props => (
+  <Box p="12px" my="6px">
+    <Heading.h6 mb="12px">Checkbox</Heading.h6>
+    {props.children}
+  </Box>
+)
 
 storiesOf('Checkbox', module).add('Checkbox states', () => (
   <div>
-    <section>
-      <h4>Checkbox</h4>
+    <Wrapper>
       <Checkbox
         name="default_box"
         value="someValue"
-        checkAction={action('checkbox-clicked')}
+        onClick={action('checkbox-clicked')}
         theme={theme}
       />
-    </section>
+    </Wrapper>
 
-    <section>
-      <h4>Checkbox - pre-checked</h4>
+    <Wrapper>
       <Checkbox
-        name="default_box"
+        name="pre_checked_box"
         value="someValue"
-        isChecked={true}
-        checkAction={action('checkbox-clicked')}
-        borderWidth={1}
+        defaultChecked={true}
+        onClick={action('checkbox-clicked')}
       />
-    </section>
+    </Wrapper>
 
-    <section>
-      <h4>Disabled (cannot change)</h4>
+    <Wrapper>
+      <Checkbox
+        name="labeled_box"
+        value="someValue"
+        onClick={action('checkbox-clicked')}
+      >
+        <Text.p p="8px" m="0" fontSize={14} style={{ display: 'inline-block' }}>
+          Label Here
+        </Text.p>
+      </Checkbox>
+    </Wrapper>
+
+    <Wrapper>
       <Checkbox
         name="disabled_box"
-        isDisabled={true}
-        checkAction={action('checkbox-clicked')}
+        disabled={true}
+        onClick={action('checkbox-clicked')}
       />
-    </section>
+    </Wrapper>
 
-    <section>
-      <h4>Disabled & Checked (cannot change)</h4>
+    <Wrapper>
       <Checkbox
         name="disabled_checked_box"
-        isDisabled={true}
-        isChecked={true}
-        checkAction={action('checkbox-clicked')}
+        disabled={true}
+        checked={true}
+        onClick={action('checkbox-clicked')}
       />
-    </section>
+    </Wrapper>
   </div>
 ))

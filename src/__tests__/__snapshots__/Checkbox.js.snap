@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox renders checked when isChecked prop is passed as true 1`] = `
-.c1 {
+exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`] = `
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,68 +9,36 @@ exports[`Checkbox renders checked when isChecked prop is passed as true 1`] = `
 }
 
 .c0 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  font-size: 10px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 4px;
+  width: auto;
   cursor: pointer;
-  border: 2px solid #abb7c2;
+}
+
+.c0 input:not(:checked) + [data-test="checkbox-facade"] {
+  background-color: #fff;
+}
+
+.c0 input:not(:checked) + [data-test="checkbox-facade"]:hover {
+  border-color: #007aff;
+}
+
+.c0 input:checked + [data-test="checkbox-facade"] {
   background-color: #007aff;
   border-color: #007aff;
 }
 
-.c0:hover {
-  border-color: #007aff;
-}
-
-<div
-  className="c0"
-  data-test="design-system-checkbox"
-  onClick={[Function]}
-  size={20}
->
-  <svg
-    className="c1"
-    color="#fff"
-    fill="currentcolor"
-    height={16}
-    viewBox="0 0 20 15"
-    width={16}
-  >
-    <path
-      d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
-    />
-  </svg>
-  <input
-    defaultChecked={true}
-    disabled={false}
-    id={undefined}
-    name="random_check_box"
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-    type="checkbox"
-    value={undefined}
-  />
-</div>
-`;
-
-exports[`Checkbox renders disabled when isDisabled props is passed as true 1`] = `
-.c0 {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -85,38 +53,188 @@ exports[`Checkbox renders disabled when isDisabled props is passed as true 1`] =
   align-items: center;
   height: 20px;
   width: 20px;
-  background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  border: 2px solid #abb7c2;
-  opacity: 0.5;
-  cursor: initial;
+  border: 2px solid #d1d6db;
 }
 
-<div
+<label
   className="c0"
   data-test="design-system-checkbox"
-  onClick={[Function]}
-  size={20}
+  disabled={false}
+  fontSize="10px"
+  htmlFor="random_check_box"
 >
   <input
-    defaultChecked={undefined}
-    disabled={true}
-    id={undefined}
+    defaultChecked={true}
+    disabled={false}
+    id="random_check_box"
     name="random_check_box"
+    onChange={[Function]}
     style={
       Object {
-        "display": "none",
+        "opacity": 0,
+        "zIndex": -1,
       }
     }
     type="checkbox"
-    value={undefined}
   />
-</div>
+  <div
+    className="c1"
+    data-test="checkbox-facade"
+    disabled={false}
+    size={20}
+  >
+    <svg
+      className="c2"
+      color="#fff"
+      fill="currentcolor"
+      height={16}
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
+      viewBox="0 0 20 15"
+      width={16}
+    >
+      <path
+        d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+      />
+    </svg>
+  </div>
+</label>
 `;
 
-exports[`Checkbox renders disabled when isDisabled props is passed as true 2`] = `
-.c1 {
+exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -124,6 +242,33 @@ exports[`Checkbox renders disabled when isDisabled props is passed as true 2`] =
 }
 
 .c0 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  opacity: 0.7;
+}
+
+.c0 input:not(:checked) + [data-test="checkbox-facade"] {
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.c0 input:checked + [data-test="checkbox-facade"] {
+  background-color: #d1d6db;
+  border-color: #d1d6db;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -138,148 +283,4353 @@ exports[`Checkbox renders disabled when isDisabled props is passed as true 2`] =
   align-items: center;
   height: 20px;
   width: 20px;
-  background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  border: 2px solid #abb7c2;
-  opacity: 0.5;
-  cursor: initial;
-  background-color: #abb7c2;
-  border-color: #abb7c2;
+  border: 2px solid #d1d6db;
 }
 
-<div
+<label
   className="c0"
   data-test="design-system-checkbox"
-  onClick={[Function]}
-  size={20}
+  disabled={true}
+  fontSize="10px"
+  htmlFor="random_check_box"
 >
-  <svg
+  <input
+    defaultChecked={undefined}
+    disabled={true}
+    id="random_check_box"
+    name="random_check_box"
+    onChange={[Function]}
+    style={
+      Object {
+        "opacity": 0,
+        "zIndex": -1,
+      }
+    }
+    type="checkbox"
+  />
+  <div
     className="c1"
-    color="#fff"
-    fill="currentcolor"
-    height={16}
-    viewBox="0 0 20 15"
-    width={16}
+    data-test="checkbox-facade"
+    disabled={true}
+    size={20}
   >
-    <path
-      d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
-    />
-  </svg>
+    <svg
+      className="c2"
+      color="#fff"
+      fill="currentcolor"
+      height={16}
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
+      viewBox="0 0 20 15"
+      width={16}
+    >
+      <path
+        d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
+<label
+  className="sc-kafWEX jCdTwb"
+  data-test="design-system-checkbox"
+  disabled={true}
+  fontSize="10px"
+  htmlFor="random_check_box"
+>
+  <input
+    defaultChecked={undefined}
+    disabled={true}
+    id="random_check_box"
+    name="random_check_box"
+    onChange={[Function]}
+    style={
+      Object {
+        "opacity": 0,
+        "zIndex": -1,
+      }
+    }
+    type="checkbox"
+  />
+  <div
+    className="sc-feJyhm eMnecj"
+    data-test="checkbox-facade"
+    disabled={true}
+    size={20}
+  >
+    <svg
+      className="sc-hzDkRC gUAcnl"
+      color="#fff"
+      fill="currentcolor"
+      height={16}
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
+      viewBox="0 0 20 15"
+      width={16}
+    >
+      <path
+        d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+      />
+    </svg>
+  </div>
+</label>
+`;
+
+exports[`Checkbox renders disabled when disabled props is passed as true 3`] = `
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: #fff;
+}
+
+.c0 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  opacity: 0.7;
+}
+
+.c0 input:not(:checked) + [data-test="checkbox-facade"] {
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.c0 input:checked + [data-test="checkbox-facade"] {
+  background-color: #d1d6db;
+  border-color: #d1d6db;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #d1d6db;
+}
+
+<label
+  className="c0"
+  data-test="design-system-checkbox"
+  disabled={true}
+  fontSize="10px"
+  htmlFor="random_check_box"
+>
   <input
     defaultChecked={true}
     disabled={true}
-    id={undefined}
+    id="random_check_box"
     name="random_check_box"
+    onChange={[Function]}
     style={
       Object {
-        "display": "none",
+        "opacity": 0,
+        "zIndex": -1,
       }
     }
     type="checkbox"
-    value={undefined}
   />
-</div>
+  <div
+    className="c1"
+    data-test="checkbox-facade"
+    disabled={true}
+    size={20}
+  >
+    <svg
+      className="c2"
+      color="#fff"
+      fill="currentcolor"
+      height={16}
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
+      viewBox="0 0 20 15"
+      width={16}
+    >
+      <path
+        d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+      />
+    </svg>
+  </div>
+</label>
 `;
 
 exports[`Checkbox renders with the theme passed specifically 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 2px solid #abb7c2;
-}
-
-.c0:hover {
-  border-color: #007aff;
-}
-
-<div
-  className="c0"
-  data-test="design-system-checkbox"
-  onClick={[Function]}
-  size={20}
->
-  <input
-    defaultChecked={undefined}
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Checkbox
     disabled={false}
-    id={undefined}
     name="random_check_box"
-    style={
-      Object {
-        "display": "none",
-      }
+    onClick={[Function]}
+    size={20}
+    theme={
+        Object {
+            "bold": 600,
+            "boxShadows": Array [
+              "0 0 4px 0 rgba(0,0,0,0.08)",
+              "0 8px 8px 0 rgba(0,0,0,0.08)",
+              "0 16px 16px 0 rgba(0,0,0,0.08)",
+              "0 32px 32px 0 rgba(0,0,0,0.08)",
+            ],
+            "breakpoints": Array [
+              32,
+              40,
+              48,
+              64,
+            ],
+            "colors": Object {
+              "black": "#000",
+              "blue": "#007aff",
+              "blue0": "#cdf",
+              "blue1": "#cdf",
+              "blue2": "#007aff",
+              "blue3": "#007aff",
+              "blues": Array [
+                "#cdf",
+                "#cdf",
+                "#007aff",
+                "#007aff",
+              ],
+              "borderGray": "#d1d6db",
+              "darkBlue": "#049",
+              "darkGray": "#364049",
+              "darkGreen": "#060",
+              "darkOrange": "#950",
+              "darkPurple": "#407",
+              "darkRed": "#800",
+              "gray": "#687B8E",
+              "gray0": "#f0f2f4",
+              "gray1": "#f0f2f4",
+              "gray2": "#687B8E",
+              "gray3": "#687B8E",
+              "green": "#0a0",
+              "green0": "#cec",
+              "green1": "#cec",
+              "green2": "#0a0",
+              "green3": "#0a0",
+              "greens": Array [
+                "#cec",
+                "#cec",
+                "#0a0",
+                "#0a0",
+              ],
+              "lightBlue": "#cdf",
+              "lightGray": "#f0f2f4",
+              "lightGreen": "#cec",
+              "lightOrange": "#fec",
+              "lightPurple": "#ecf",
+              "lightRed": "#fcc",
+              "orange": "#f90",
+              "orange0": "#fec",
+              "orange1": "#fec",
+              "orange2": "#f90",
+              "orange3": "#f90",
+              "oranges": Array [
+                "#fec",
+                "#fec",
+                "#f90",
+                "#f90",
+              ],
+              "purple": "#70b",
+              "purple0": "#ecf",
+              "purple1": "#ecf",
+              "purple2": "#70b",
+              "purple3": "#70b",
+              "purples": Array [
+                "#ecf",
+                "#ecf",
+                "#70b",
+                "#70b",
+              ],
+              "red": "#c00",
+              "red0": "#fcc",
+              "red1": "#fcc",
+              "red2": "#c00",
+              "red3": "#c00",
+              "reds": Array [
+                "#fcc",
+                "#fcc",
+                "#c00",
+                "#c00",
+              ],
+              "text": "#001833",
+              "white": "#fff",
+            },
+            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "fontSizes": Array [
+              12,
+              14,
+              16,
+              20,
+              24,
+              32,
+              48,
+            ],
+            "fontWeights": Object {
+              "bold": 600,
+              "regular": 400,
+            },
+            "maxContainerWidth": "1280px",
+            "mediaQueries": Array [
+              "@media screen and (min-width:32em)",
+              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:48em)",
+              "@media screen and (min-width:64em)",
+            ],
+            "radii": Array [
+              0,
+              2,
+              6,
+            ],
+            "radius": "2px",
+            "regular": 400,
+            "space": Array [
+              0,
+              4,
+              8,
+              16,
+              32,
+              64,
+              128,
+            ],
+          }
     }
-    type="checkbox"
-    value={undefined}
-  />
-</div>
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <input
+          defaultChecked={undefined}
+          disabled={false}
+          id="random_check_box"
+          name="random_check_box"
+          onChange={[Function]}
+          style={
+                    Object {
+                              "opacity": 0,
+                              "zIndex": -1,
+                            }
+          }
+          type="checkbox"
+/>,
+        <styled.div
+          data-test="checkbox-facade"
+          disabled={false}
+          size={20}
+          theme={
+                    Object {
+                              "bold": 600,
+                              "boxShadows": Array [
+                                "0 0 4px 0 rgba(0,0,0,0.08)",
+                                "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                "0 32px 32px 0 rgba(0,0,0,0.08)",
+                              ],
+                              "breakpoints": Array [
+                                32,
+                                40,
+                                48,
+                                64,
+                              ],
+                              "colors": Object {
+                                "black": "#000",
+                                "blue": "#007aff",
+                                "blue0": "#cdf",
+                                "blue1": "#cdf",
+                                "blue2": "#007aff",
+                                "blue3": "#007aff",
+                                "blues": Array [
+                                  "#cdf",
+                                  "#cdf",
+                                  "#007aff",
+                                  "#007aff",
+                                ],
+                                "borderGray": "#d1d6db",
+                                "darkBlue": "#049",
+                                "darkGray": "#364049",
+                                "darkGreen": "#060",
+                                "darkOrange": "#950",
+                                "darkPurple": "#407",
+                                "darkRed": "#800",
+                                "gray": "#687B8E",
+                                "gray0": "#f0f2f4",
+                                "gray1": "#f0f2f4",
+                                "gray2": "#687B8E",
+                                "gray3": "#687B8E",
+                                "green": "#0a0",
+                                "green0": "#cec",
+                                "green1": "#cec",
+                                "green2": "#0a0",
+                                "green3": "#0a0",
+                                "greens": Array [
+                                  "#cec",
+                                  "#cec",
+                                  "#0a0",
+                                  "#0a0",
+                                ],
+                                "lightBlue": "#cdf",
+                                "lightGray": "#f0f2f4",
+                                "lightGreen": "#cec",
+                                "lightOrange": "#fec",
+                                "lightPurple": "#ecf",
+                                "lightRed": "#fcc",
+                                "orange": "#f90",
+                                "orange0": "#fec",
+                                "orange1": "#fec",
+                                "orange2": "#f90",
+                                "orange3": "#f90",
+                                "oranges": Array [
+                                  "#fec",
+                                  "#fec",
+                                  "#f90",
+                                  "#f90",
+                                ],
+                                "purple": "#70b",
+                                "purple0": "#ecf",
+                                "purple1": "#ecf",
+                                "purple2": "#70b",
+                                "purple3": "#70b",
+                                "purples": Array [
+                                  "#ecf",
+                                  "#ecf",
+                                  "#70b",
+                                  "#70b",
+                                ],
+                                "red": "#c00",
+                                "red0": "#fcc",
+                                "red1": "#fcc",
+                                "red2": "#c00",
+                                "red3": "#c00",
+                                "reds": Array [
+                                  "#fcc",
+                                  "#fcc",
+                                  "#c00",
+                                  "#c00",
+                                ],
+                                "text": "#001833",
+                                "white": "#fff",
+                              },
+                              "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                              "fontSizes": Array [
+                                12,
+                                14,
+                                16,
+                                20,
+                                24,
+                                32,
+                                48,
+                              ],
+                              "fontWeights": Object {
+                                "bold": 600,
+                                "regular": 400,
+                              },
+                              "maxContainerWidth": "1280px",
+                              "mediaQueries": Array [
+                                "@media screen and (min-width:32em)",
+                                "@media screen and (min-width:40em)",
+                                "@media screen and (min-width:48em)",
+                                "@media screen and (min-width:64em)",
+                              ],
+                              "radii": Array [
+                                0,
+                                2,
+                                6,
+                              ],
+                              "radius": "2px",
+                              "regular": 400,
+                              "space": Array [
+                                0,
+                                4,
+                                8,
+                                16,
+                                32,
+                                64,
+                                128,
+                              ],
+                            }
+          }
+>
+          <Icon
+                    color="#fff"
+                    legacy={true}
+                    name="check"
+                    size={16}
+                    theme={
+                              Object {
+                                        "bold": 600,
+                                        "boxShadows": Array [
+                                          "0 0 4px 0 rgba(0,0,0,0.08)",
+                                          "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                          "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                          "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                        ],
+                                        "breakpoints": Array [
+                                          32,
+                                          40,
+                                          48,
+                                          64,
+                                        ],
+                                        "colors": Object {
+                                          "black": "#000",
+                                          "blue": "#007aff",
+                                          "blue0": "#cdf",
+                                          "blue1": "#cdf",
+                                          "blue2": "#007aff",
+                                          "blue3": "#007aff",
+                                          "blues": Array [
+                                            "#cdf",
+                                            "#cdf",
+                                            "#007aff",
+                                            "#007aff",
+                                          ],
+                                          "borderGray": "#d1d6db",
+                                          "darkBlue": "#049",
+                                          "darkGray": "#364049",
+                                          "darkGreen": "#060",
+                                          "darkOrange": "#950",
+                                          "darkPurple": "#407",
+                                          "darkRed": "#800",
+                                          "gray": "#687B8E",
+                                          "gray0": "#f0f2f4",
+                                          "gray1": "#f0f2f4",
+                                          "gray2": "#687B8E",
+                                          "gray3": "#687B8E",
+                                          "green": "#0a0",
+                                          "green0": "#cec",
+                                          "green1": "#cec",
+                                          "green2": "#0a0",
+                                          "green3": "#0a0",
+                                          "greens": Array [
+                                            "#cec",
+                                            "#cec",
+                                            "#0a0",
+                                            "#0a0",
+                                          ],
+                                          "lightBlue": "#cdf",
+                                          "lightGray": "#f0f2f4",
+                                          "lightGreen": "#cec",
+                                          "lightOrange": "#fec",
+                                          "lightPurple": "#ecf",
+                                          "lightRed": "#fcc",
+                                          "orange": "#f90",
+                                          "orange0": "#fec",
+                                          "orange1": "#fec",
+                                          "orange2": "#f90",
+                                          "orange3": "#f90",
+                                          "oranges": Array [
+                                            "#fec",
+                                            "#fec",
+                                            "#f90",
+                                            "#f90",
+                                          ],
+                                          "purple": "#70b",
+                                          "purple0": "#ecf",
+                                          "purple1": "#ecf",
+                                          "purple2": "#70b",
+                                          "purple3": "#70b",
+                                          "purples": Array [
+                                            "#ecf",
+                                            "#ecf",
+                                            "#70b",
+                                            "#70b",
+                                          ],
+                                          "red": "#c00",
+                                          "red0": "#fcc",
+                                          "red1": "#fcc",
+                                          "red2": "#c00",
+                                          "red3": "#c00",
+                                          "reds": Array [
+                                            "#fcc",
+                                            "#fcc",
+                                            "#c00",
+                                            "#c00",
+                                          ],
+                                          "text": "#001833",
+                                          "white": "#fff",
+                                        },
+                                        "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                        "fontSizes": Array [
+                                          12,
+                                          14,
+                                          16,
+                                          20,
+                                          24,
+                                          32,
+                                          48,
+                                        ],
+                                        "fontWeights": Object {
+                                          "bold": 600,
+                                          "regular": 400,
+                                        },
+                                        "maxContainerWidth": "1280px",
+                                        "mediaQueries": Array [
+                                          "@media screen and (min-width:32em)",
+                                          "@media screen and (min-width:40em)",
+                                          "@media screen and (min-width:48em)",
+                                          "@media screen and (min-width:64em)",
+                                        ],
+                                        "radii": Array [
+                                          0,
+                                          2,
+                                          6,
+                                        ],
+                                        "radius": "2px",
+                                        "regular": 400,
+                                        "space": Array [
+                                          0,
+                                          4,
+                                          8,
+                                          16,
+                                          32,
+                                          64,
+                                          128,
+                                        ],
+                                      }
+                    }
+          />
+</styled.div>,
+        undefined,
+      ],
+      "data-test": "design-system-checkbox",
+      "disabled": false,
+      "fontSize": "10px",
+      "htmlFor": "random_check_box",
+      "theme": Object {
+        "bold": 600,
+        "boxShadows": Array [
+          "0 0 4px 0 rgba(0,0,0,0.08)",
+          "0 8px 8px 0 rgba(0,0,0,0.08)",
+          "0 16px 16px 0 rgba(0,0,0,0.08)",
+          "0 32px 32px 0 rgba(0,0,0,0.08)",
+        ],
+        "breakpoints": Array [
+          32,
+          40,
+          48,
+          64,
+        ],
+        "colors": Object {
+          "black": "#000",
+          "blue": "#007aff",
+          "blue0": "#cdf",
+          "blue1": "#cdf",
+          "blue2": "#007aff",
+          "blue3": "#007aff",
+          "blues": Array [
+            "#cdf",
+            "#cdf",
+            "#007aff",
+            "#007aff",
+          ],
+          "borderGray": "#d1d6db",
+          "darkBlue": "#049",
+          "darkGray": "#364049",
+          "darkGreen": "#060",
+          "darkOrange": "#950",
+          "darkPurple": "#407",
+          "darkRed": "#800",
+          "gray": "#687B8E",
+          "gray0": "#f0f2f4",
+          "gray1": "#f0f2f4",
+          "gray2": "#687B8E",
+          "gray3": "#687B8E",
+          "green": "#0a0",
+          "green0": "#cec",
+          "green1": "#cec",
+          "green2": "#0a0",
+          "green3": "#0a0",
+          "greens": Array [
+            "#cec",
+            "#cec",
+            "#0a0",
+            "#0a0",
+          ],
+          "lightBlue": "#cdf",
+          "lightGray": "#f0f2f4",
+          "lightGreen": "#cec",
+          "lightOrange": "#fec",
+          "lightPurple": "#ecf",
+          "lightRed": "#fcc",
+          "orange": "#f90",
+          "orange0": "#fec",
+          "orange1": "#fec",
+          "orange2": "#f90",
+          "orange3": "#f90",
+          "oranges": Array [
+            "#fec",
+            "#fec",
+            "#f90",
+            "#f90",
+          ],
+          "purple": "#70b",
+          "purple0": "#ecf",
+          "purple1": "#ecf",
+          "purple2": "#70b",
+          "purple3": "#70b",
+          "purples": Array [
+            "#ecf",
+            "#ecf",
+            "#70b",
+            "#70b",
+          ],
+          "red": "#c00",
+          "red0": "#fcc",
+          "red1": "#fcc",
+          "red2": "#c00",
+          "red3": "#c00",
+          "reds": Array [
+            "#fcc",
+            "#fcc",
+            "#c00",
+            "#c00",
+          ],
+          "text": "#001833",
+          "white": "#fff",
+        },
+        "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+        ],
+        "fontWeights": Object {
+          "bold": 600,
+          "regular": 400,
+        },
+        "maxContainerWidth": "1280px",
+        "mediaQueries": Array [
+          "@media screen and (min-width:32em)",
+          "@media screen and (min-width:40em)",
+          "@media screen and (min-width:48em)",
+          "@media screen and (min-width:64em)",
+        ],
+        "radii": Array [
+          0,
+          2,
+          6,
+        ],
+        "radius": "2px",
+        "regular": 400,
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+        ],
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "defaultChecked": undefined,
+          "disabled": false,
+          "id": "random_check_box",
+          "name": "random_check_box",
+          "onChange": [Function],
+          "style": Object {
+            "opacity": 0,
+            "zIndex": -1,
+          },
+          "type": "checkbox",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Icon
+            color="#fff"
+            legacy={true}
+            name="check"
+            size={16}
+            theme={
+                        Object {
+                                    "bold": 600,
+                                    "boxShadows": Array [
+                                      "0 0 4px 0 rgba(0,0,0,0.08)",
+                                      "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                      "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                      "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                    ],
+                                    "breakpoints": Array [
+                                      32,
+                                      40,
+                                      48,
+                                      64,
+                                    ],
+                                    "colors": Object {
+                                      "black": "#000",
+                                      "blue": "#007aff",
+                                      "blue0": "#cdf",
+                                      "blue1": "#cdf",
+                                      "blue2": "#007aff",
+                                      "blue3": "#007aff",
+                                      "blues": Array [
+                                        "#cdf",
+                                        "#cdf",
+                                        "#007aff",
+                                        "#007aff",
+                                      ],
+                                      "borderGray": "#d1d6db",
+                                      "darkBlue": "#049",
+                                      "darkGray": "#364049",
+                                      "darkGreen": "#060",
+                                      "darkOrange": "#950",
+                                      "darkPurple": "#407",
+                                      "darkRed": "#800",
+                                      "gray": "#687B8E",
+                                      "gray0": "#f0f2f4",
+                                      "gray1": "#f0f2f4",
+                                      "gray2": "#687B8E",
+                                      "gray3": "#687B8E",
+                                      "green": "#0a0",
+                                      "green0": "#cec",
+                                      "green1": "#cec",
+                                      "green2": "#0a0",
+                                      "green3": "#0a0",
+                                      "greens": Array [
+                                        "#cec",
+                                        "#cec",
+                                        "#0a0",
+                                        "#0a0",
+                                      ],
+                                      "lightBlue": "#cdf",
+                                      "lightGray": "#f0f2f4",
+                                      "lightGreen": "#cec",
+                                      "lightOrange": "#fec",
+                                      "lightPurple": "#ecf",
+                                      "lightRed": "#fcc",
+                                      "orange": "#f90",
+                                      "orange0": "#fec",
+                                      "orange1": "#fec",
+                                      "orange2": "#f90",
+                                      "orange3": "#f90",
+                                      "oranges": Array [
+                                        "#fec",
+                                        "#fec",
+                                        "#f90",
+                                        "#f90",
+                                      ],
+                                      "purple": "#70b",
+                                      "purple0": "#ecf",
+                                      "purple1": "#ecf",
+                                      "purple2": "#70b",
+                                      "purple3": "#70b",
+                                      "purples": Array [
+                                        "#ecf",
+                                        "#ecf",
+                                        "#70b",
+                                        "#70b",
+                                      ],
+                                      "red": "#c00",
+                                      "red0": "#fcc",
+                                      "red1": "#fcc",
+                                      "red2": "#c00",
+                                      "red3": "#c00",
+                                      "reds": Array [
+                                        "#fcc",
+                                        "#fcc",
+                                        "#c00",
+                                        "#c00",
+                                      ],
+                                      "text": "#001833",
+                                      "white": "#fff",
+                                    },
+                                    "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                    "fontSizes": Array [
+                                      12,
+                                      14,
+                                      16,
+                                      20,
+                                      24,
+                                      32,
+                                      48,
+                                    ],
+                                    "fontWeights": Object {
+                                      "bold": 600,
+                                      "regular": 400,
+                                    },
+                                    "maxContainerWidth": "1280px",
+                                    "mediaQueries": Array [
+                                      "@media screen and (min-width:32em)",
+                                      "@media screen and (min-width:40em)",
+                                      "@media screen and (min-width:48em)",
+                                      "@media screen and (min-width:64em)",
+                                    ],
+                                    "radii": Array [
+                                      0,
+                                      2,
+                                      6,
+                                    ],
+                                    "radius": "2px",
+                                    "regular": 400,
+                                    "space": Array [
+                                      0,
+                                      4,
+                                      8,
+                                      16,
+                                      32,
+                                      64,
+                                      128,
+                                    ],
+                                  }
+            }
+/>,
+          "data-test": "checkbox-facade",
+          "disabled": false,
+          "size": 20,
+          "theme": Object {
+            "bold": 600,
+            "boxShadows": Array [
+              "0 0 4px 0 rgba(0,0,0,0.08)",
+              "0 8px 8px 0 rgba(0,0,0,0.08)",
+              "0 16px 16px 0 rgba(0,0,0,0.08)",
+              "0 32px 32px 0 rgba(0,0,0,0.08)",
+            ],
+            "breakpoints": Array [
+              32,
+              40,
+              48,
+              64,
+            ],
+            "colors": Object {
+              "black": "#000",
+              "blue": "#007aff",
+              "blue0": "#cdf",
+              "blue1": "#cdf",
+              "blue2": "#007aff",
+              "blue3": "#007aff",
+              "blues": Array [
+                "#cdf",
+                "#cdf",
+                "#007aff",
+                "#007aff",
+              ],
+              "borderGray": "#d1d6db",
+              "darkBlue": "#049",
+              "darkGray": "#364049",
+              "darkGreen": "#060",
+              "darkOrange": "#950",
+              "darkPurple": "#407",
+              "darkRed": "#800",
+              "gray": "#687B8E",
+              "gray0": "#f0f2f4",
+              "gray1": "#f0f2f4",
+              "gray2": "#687B8E",
+              "gray3": "#687B8E",
+              "green": "#0a0",
+              "green0": "#cec",
+              "green1": "#cec",
+              "green2": "#0a0",
+              "green3": "#0a0",
+              "greens": Array [
+                "#cec",
+                "#cec",
+                "#0a0",
+                "#0a0",
+              ],
+              "lightBlue": "#cdf",
+              "lightGray": "#f0f2f4",
+              "lightGreen": "#cec",
+              "lightOrange": "#fec",
+              "lightPurple": "#ecf",
+              "lightRed": "#fcc",
+              "orange": "#f90",
+              "orange0": "#fec",
+              "orange1": "#fec",
+              "orange2": "#f90",
+              "orange3": "#f90",
+              "oranges": Array [
+                "#fec",
+                "#fec",
+                "#f90",
+                "#f90",
+              ],
+              "purple": "#70b",
+              "purple0": "#ecf",
+              "purple1": "#ecf",
+              "purple2": "#70b",
+              "purple3": "#70b",
+              "purples": Array [
+                "#ecf",
+                "#ecf",
+                "#70b",
+                "#70b",
+              ],
+              "red": "#c00",
+              "red0": "#fcc",
+              "red1": "#fcc",
+              "red2": "#c00",
+              "red3": "#c00",
+              "reds": Array [
+                "#fcc",
+                "#fcc",
+                "#c00",
+                "#c00",
+              ],
+              "text": "#001833",
+              "white": "#fff",
+            },
+            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "fontSizes": Array [
+              12,
+              14,
+              16,
+              20,
+              24,
+              32,
+              48,
+            ],
+            "fontWeights": Object {
+              "bold": 600,
+              "regular": 400,
+            },
+            "maxContainerWidth": "1280px",
+            "mediaQueries": Array [
+              "@media screen and (min-width:32em)",
+              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:48em)",
+              "@media screen and (min-width:64em)",
+            ],
+            "radii": Array [
+              0,
+              2,
+              6,
+            ],
+            "radius": "2px",
+            "regular": 400,
+            "space": Array [
+              0,
+              4,
+              8,
+              16,
+              32,
+              64,
+              128,
+            ],
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "color": "#fff",
+            "legacy": true,
+            "name": "check",
+            "size": 16,
+            "theme": Object {
+              "bold": 600,
+              "boxShadows": Array [
+                "0 0 4px 0 rgba(0,0,0,0.08)",
+                "0 8px 8px 0 rgba(0,0,0,0.08)",
+                "0 16px 16px 0 rgba(0,0,0,0.08)",
+                "0 32px 32px 0 rgba(0,0,0,0.08)",
+              ],
+              "breakpoints": Array [
+                32,
+                40,
+                48,
+                64,
+              ],
+              "colors": Object {
+                "black": "#000",
+                "blue": "#007aff",
+                "blue0": "#cdf",
+                "blue1": "#cdf",
+                "blue2": "#007aff",
+                "blue3": "#007aff",
+                "blues": Array [
+                  "#cdf",
+                  "#cdf",
+                  "#007aff",
+                  "#007aff",
+                ],
+                "borderGray": "#d1d6db",
+                "darkBlue": "#049",
+                "darkGray": "#364049",
+                "darkGreen": "#060",
+                "darkOrange": "#950",
+                "darkPurple": "#407",
+                "darkRed": "#800",
+                "gray": "#687B8E",
+                "gray0": "#f0f2f4",
+                "gray1": "#f0f2f4",
+                "gray2": "#687B8E",
+                "gray3": "#687B8E",
+                "green": "#0a0",
+                "green0": "#cec",
+                "green1": "#cec",
+                "green2": "#0a0",
+                "green3": "#0a0",
+                "greens": Array [
+                  "#cec",
+                  "#cec",
+                  "#0a0",
+                  "#0a0",
+                ],
+                "lightBlue": "#cdf",
+                "lightGray": "#f0f2f4",
+                "lightGreen": "#cec",
+                "lightOrange": "#fec",
+                "lightPurple": "#ecf",
+                "lightRed": "#fcc",
+                "orange": "#f90",
+                "orange0": "#fec",
+                "orange1": "#fec",
+                "orange2": "#f90",
+                "orange3": "#f90",
+                "oranges": Array [
+                  "#fec",
+                  "#fec",
+                  "#f90",
+                  "#f90",
+                ],
+                "purple": "#70b",
+                "purple0": "#ecf",
+                "purple1": "#ecf",
+                "purple2": "#70b",
+                "purple3": "#70b",
+                "purples": Array [
+                  "#ecf",
+                  "#ecf",
+                  "#70b",
+                  "#70b",
+                ],
+                "red": "#c00",
+                "red0": "#fcc",
+                "red1": "#fcc",
+                "red2": "#c00",
+                "red3": "#c00",
+                "reds": Array [
+                  "#fcc",
+                  "#fcc",
+                  "#c00",
+                  "#c00",
+                ],
+                "text": "#001833",
+                "white": "#fff",
+              },
+              "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+              "fontSizes": Array [
+                12,
+                14,
+                16,
+                20,
+                24,
+                32,
+                48,
+              ],
+              "fontWeights": Object {
+                "bold": 600,
+                "regular": 400,
+              },
+              "maxContainerWidth": "1280px",
+              "mediaQueries": Array [
+                "@media screen and (min-width:32em)",
+                "@media screen and (min-width:40em)",
+                "@media screen and (min-width:48em)",
+                "@media screen and (min-width:64em)",
+              ],
+              "radii": Array [
+                0,
+                2,
+                6,
+              ],
+              "radius": "2px",
+              "regular": 400,
+              "space": Array [
+                0,
+                4,
+                8,
+                16,
+                32,
+                64,
+                128,
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <input
+            defaultChecked={undefined}
+            disabled={false}
+            id="random_check_box"
+            name="random_check_box"
+            onChange={[Function]}
+            style={
+                        Object {
+                                    "opacity": 0,
+                                    "zIndex": -1,
+                                  }
+            }
+            type="checkbox"
+/>,
+          <styled.div
+            data-test="checkbox-facade"
+            disabled={false}
+            size={20}
+            theme={
+                        Object {
+                                    "bold": 600,
+                                    "boxShadows": Array [
+                                      "0 0 4px 0 rgba(0,0,0,0.08)",
+                                      "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                      "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                      "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                    ],
+                                    "breakpoints": Array [
+                                      32,
+                                      40,
+                                      48,
+                                      64,
+                                    ],
+                                    "colors": Object {
+                                      "black": "#000",
+                                      "blue": "#007aff",
+                                      "blue0": "#cdf",
+                                      "blue1": "#cdf",
+                                      "blue2": "#007aff",
+                                      "blue3": "#007aff",
+                                      "blues": Array [
+                                        "#cdf",
+                                        "#cdf",
+                                        "#007aff",
+                                        "#007aff",
+                                      ],
+                                      "borderGray": "#d1d6db",
+                                      "darkBlue": "#049",
+                                      "darkGray": "#364049",
+                                      "darkGreen": "#060",
+                                      "darkOrange": "#950",
+                                      "darkPurple": "#407",
+                                      "darkRed": "#800",
+                                      "gray": "#687B8E",
+                                      "gray0": "#f0f2f4",
+                                      "gray1": "#f0f2f4",
+                                      "gray2": "#687B8E",
+                                      "gray3": "#687B8E",
+                                      "green": "#0a0",
+                                      "green0": "#cec",
+                                      "green1": "#cec",
+                                      "green2": "#0a0",
+                                      "green3": "#0a0",
+                                      "greens": Array [
+                                        "#cec",
+                                        "#cec",
+                                        "#0a0",
+                                        "#0a0",
+                                      ],
+                                      "lightBlue": "#cdf",
+                                      "lightGray": "#f0f2f4",
+                                      "lightGreen": "#cec",
+                                      "lightOrange": "#fec",
+                                      "lightPurple": "#ecf",
+                                      "lightRed": "#fcc",
+                                      "orange": "#f90",
+                                      "orange0": "#fec",
+                                      "orange1": "#fec",
+                                      "orange2": "#f90",
+                                      "orange3": "#f90",
+                                      "oranges": Array [
+                                        "#fec",
+                                        "#fec",
+                                        "#f90",
+                                        "#f90",
+                                      ],
+                                      "purple": "#70b",
+                                      "purple0": "#ecf",
+                                      "purple1": "#ecf",
+                                      "purple2": "#70b",
+                                      "purple3": "#70b",
+                                      "purples": Array [
+                                        "#ecf",
+                                        "#ecf",
+                                        "#70b",
+                                        "#70b",
+                                      ],
+                                      "red": "#c00",
+                                      "red0": "#fcc",
+                                      "red1": "#fcc",
+                                      "red2": "#c00",
+                                      "red3": "#c00",
+                                      "reds": Array [
+                                        "#fcc",
+                                        "#fcc",
+                                        "#c00",
+                                        "#c00",
+                                      ],
+                                      "text": "#001833",
+                                      "white": "#fff",
+                                    },
+                                    "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                    "fontSizes": Array [
+                                      12,
+                                      14,
+                                      16,
+                                      20,
+                                      24,
+                                      32,
+                                      48,
+                                    ],
+                                    "fontWeights": Object {
+                                      "bold": 600,
+                                      "regular": 400,
+                                    },
+                                    "maxContainerWidth": "1280px",
+                                    "mediaQueries": Array [
+                                      "@media screen and (min-width:32em)",
+                                      "@media screen and (min-width:40em)",
+                                      "@media screen and (min-width:48em)",
+                                      "@media screen and (min-width:64em)",
+                                    ],
+                                    "radii": Array [
+                                      0,
+                                      2,
+                                      6,
+                                    ],
+                                    "radius": "2px",
+                                    "regular": 400,
+                                    "space": Array [
+                                      0,
+                                      4,
+                                      8,
+                                      16,
+                                      32,
+                                      64,
+                                      128,
+                                    ],
+                                  }
+            }
+>
+            <Icon
+                        color="#fff"
+                        legacy={true}
+                        name="check"
+                        size={16}
+                        theme={
+                                    Object {
+                                                "bold": 600,
+                                                "boxShadows": Array [
+                                                  "0 0 4px 0 rgba(0,0,0,0.08)",
+                                                  "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                                  "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                                  "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                                ],
+                                                "breakpoints": Array [
+                                                  32,
+                                                  40,
+                                                  48,
+                                                  64,
+                                                ],
+                                                "colors": Object {
+                                                  "black": "#000",
+                                                  "blue": "#007aff",
+                                                  "blue0": "#cdf",
+                                                  "blue1": "#cdf",
+                                                  "blue2": "#007aff",
+                                                  "blue3": "#007aff",
+                                                  "blues": Array [
+                                                    "#cdf",
+                                                    "#cdf",
+                                                    "#007aff",
+                                                    "#007aff",
+                                                  ],
+                                                  "borderGray": "#d1d6db",
+                                                  "darkBlue": "#049",
+                                                  "darkGray": "#364049",
+                                                  "darkGreen": "#060",
+                                                  "darkOrange": "#950",
+                                                  "darkPurple": "#407",
+                                                  "darkRed": "#800",
+                                                  "gray": "#687B8E",
+                                                  "gray0": "#f0f2f4",
+                                                  "gray1": "#f0f2f4",
+                                                  "gray2": "#687B8E",
+                                                  "gray3": "#687B8E",
+                                                  "green": "#0a0",
+                                                  "green0": "#cec",
+                                                  "green1": "#cec",
+                                                  "green2": "#0a0",
+                                                  "green3": "#0a0",
+                                                  "greens": Array [
+                                                    "#cec",
+                                                    "#cec",
+                                                    "#0a0",
+                                                    "#0a0",
+                                                  ],
+                                                  "lightBlue": "#cdf",
+                                                  "lightGray": "#f0f2f4",
+                                                  "lightGreen": "#cec",
+                                                  "lightOrange": "#fec",
+                                                  "lightPurple": "#ecf",
+                                                  "lightRed": "#fcc",
+                                                  "orange": "#f90",
+                                                  "orange0": "#fec",
+                                                  "orange1": "#fec",
+                                                  "orange2": "#f90",
+                                                  "orange3": "#f90",
+                                                  "oranges": Array [
+                                                    "#fec",
+                                                    "#fec",
+                                                    "#f90",
+                                                    "#f90",
+                                                  ],
+                                                  "purple": "#70b",
+                                                  "purple0": "#ecf",
+                                                  "purple1": "#ecf",
+                                                  "purple2": "#70b",
+                                                  "purple3": "#70b",
+                                                  "purples": Array [
+                                                    "#ecf",
+                                                    "#ecf",
+                                                    "#70b",
+                                                    "#70b",
+                                                  ],
+                                                  "red": "#c00",
+                                                  "red0": "#fcc",
+                                                  "red1": "#fcc",
+                                                  "red2": "#c00",
+                                                  "red3": "#c00",
+                                                  "reds": Array [
+                                                    "#fcc",
+                                                    "#fcc",
+                                                    "#c00",
+                                                    "#c00",
+                                                  ],
+                                                  "text": "#001833",
+                                                  "white": "#fff",
+                                                },
+                                                "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                                "fontSizes": Array [
+                                                  12,
+                                                  14,
+                                                  16,
+                                                  20,
+                                                  24,
+                                                  32,
+                                                  48,
+                                                ],
+                                                "fontWeights": Object {
+                                                  "bold": 600,
+                                                  "regular": 400,
+                                                },
+                                                "maxContainerWidth": "1280px",
+                                                "mediaQueries": Array [
+                                                  "@media screen and (min-width:32em)",
+                                                  "@media screen and (min-width:40em)",
+                                                  "@media screen and (min-width:48em)",
+                                                  "@media screen and (min-width:64em)",
+                                                ],
+                                                "radii": Array [
+                                                  0,
+                                                  2,
+                                                  6,
+                                                ],
+                                                "radius": "2px",
+                                                "regular": 400,
+                                                "space": Array [
+                                                  0,
+                                                  4,
+                                                  8,
+                                                  16,
+                                                  32,
+                                                  64,
+                                                  128,
+                                                ],
+                                              }
+                        }
+            />
+</styled.div>,
+          undefined,
+        ],
+        "data-test": "design-system-checkbox",
+        "disabled": false,
+        "fontSize": "10px",
+        "htmlFor": "random_check_box",
+        "theme": Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "defaultChecked": undefined,
+            "disabled": false,
+            "id": "random_check_box",
+            "name": "random_check_box",
+            "onChange": [Function],
+            "style": Object {
+              "opacity": 0,
+              "zIndex": -1,
+            },
+            "type": "checkbox",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Icon
+              color="#fff"
+              legacy={true}
+              name="check"
+              size={16}
+              theme={
+                            Object {
+                                          "bold": 600,
+                                          "boxShadows": Array [
+                                            "0 0 4px 0 rgba(0,0,0,0.08)",
+                                            "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                            "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                            "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                          ],
+                                          "breakpoints": Array [
+                                            32,
+                                            40,
+                                            48,
+                                            64,
+                                          ],
+                                          "colors": Object {
+                                            "black": "#000",
+                                            "blue": "#007aff",
+                                            "blue0": "#cdf",
+                                            "blue1": "#cdf",
+                                            "blue2": "#007aff",
+                                            "blue3": "#007aff",
+                                            "blues": Array [
+                                              "#cdf",
+                                              "#cdf",
+                                              "#007aff",
+                                              "#007aff",
+                                            ],
+                                            "borderGray": "#d1d6db",
+                                            "darkBlue": "#049",
+                                            "darkGray": "#364049",
+                                            "darkGreen": "#060",
+                                            "darkOrange": "#950",
+                                            "darkPurple": "#407",
+                                            "darkRed": "#800",
+                                            "gray": "#687B8E",
+                                            "gray0": "#f0f2f4",
+                                            "gray1": "#f0f2f4",
+                                            "gray2": "#687B8E",
+                                            "gray3": "#687B8E",
+                                            "green": "#0a0",
+                                            "green0": "#cec",
+                                            "green1": "#cec",
+                                            "green2": "#0a0",
+                                            "green3": "#0a0",
+                                            "greens": Array [
+                                              "#cec",
+                                              "#cec",
+                                              "#0a0",
+                                              "#0a0",
+                                            ],
+                                            "lightBlue": "#cdf",
+                                            "lightGray": "#f0f2f4",
+                                            "lightGreen": "#cec",
+                                            "lightOrange": "#fec",
+                                            "lightPurple": "#ecf",
+                                            "lightRed": "#fcc",
+                                            "orange": "#f90",
+                                            "orange0": "#fec",
+                                            "orange1": "#fec",
+                                            "orange2": "#f90",
+                                            "orange3": "#f90",
+                                            "oranges": Array [
+                                              "#fec",
+                                              "#fec",
+                                              "#f90",
+                                              "#f90",
+                                            ],
+                                            "purple": "#70b",
+                                            "purple0": "#ecf",
+                                            "purple1": "#ecf",
+                                            "purple2": "#70b",
+                                            "purple3": "#70b",
+                                            "purples": Array [
+                                              "#ecf",
+                                              "#ecf",
+                                              "#70b",
+                                              "#70b",
+                                            ],
+                                            "red": "#c00",
+                                            "red0": "#fcc",
+                                            "red1": "#fcc",
+                                            "red2": "#c00",
+                                            "red3": "#c00",
+                                            "reds": Array [
+                                              "#fcc",
+                                              "#fcc",
+                                              "#c00",
+                                              "#c00",
+                                            ],
+                                            "text": "#001833",
+                                            "white": "#fff",
+                                          },
+                                          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                          "fontSizes": Array [
+                                            12,
+                                            14,
+                                            16,
+                                            20,
+                                            24,
+                                            32,
+                                            48,
+                                          ],
+                                          "fontWeights": Object {
+                                            "bold": 600,
+                                            "regular": 400,
+                                          },
+                                          "maxContainerWidth": "1280px",
+                                          "mediaQueries": Array [
+                                            "@media screen and (min-width:32em)",
+                                            "@media screen and (min-width:40em)",
+                                            "@media screen and (min-width:48em)",
+                                            "@media screen and (min-width:64em)",
+                                          ],
+                                          "radii": Array [
+                                            0,
+                                            2,
+                                            6,
+                                          ],
+                                          "radius": "2px",
+                                          "regular": 400,
+                                          "space": Array [
+                                            0,
+                                            4,
+                                            8,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                          ],
+                                        }
+              }
+/>,
+            "data-test": "checkbox-facade",
+            "disabled": false,
+            "size": 20,
+            "theme": Object {
+              "bold": 600,
+              "boxShadows": Array [
+                "0 0 4px 0 rgba(0,0,0,0.08)",
+                "0 8px 8px 0 rgba(0,0,0,0.08)",
+                "0 16px 16px 0 rgba(0,0,0,0.08)",
+                "0 32px 32px 0 rgba(0,0,0,0.08)",
+              ],
+              "breakpoints": Array [
+                32,
+                40,
+                48,
+                64,
+              ],
+              "colors": Object {
+                "black": "#000",
+                "blue": "#007aff",
+                "blue0": "#cdf",
+                "blue1": "#cdf",
+                "blue2": "#007aff",
+                "blue3": "#007aff",
+                "blues": Array [
+                  "#cdf",
+                  "#cdf",
+                  "#007aff",
+                  "#007aff",
+                ],
+                "borderGray": "#d1d6db",
+                "darkBlue": "#049",
+                "darkGray": "#364049",
+                "darkGreen": "#060",
+                "darkOrange": "#950",
+                "darkPurple": "#407",
+                "darkRed": "#800",
+                "gray": "#687B8E",
+                "gray0": "#f0f2f4",
+                "gray1": "#f0f2f4",
+                "gray2": "#687B8E",
+                "gray3": "#687B8E",
+                "green": "#0a0",
+                "green0": "#cec",
+                "green1": "#cec",
+                "green2": "#0a0",
+                "green3": "#0a0",
+                "greens": Array [
+                  "#cec",
+                  "#cec",
+                  "#0a0",
+                  "#0a0",
+                ],
+                "lightBlue": "#cdf",
+                "lightGray": "#f0f2f4",
+                "lightGreen": "#cec",
+                "lightOrange": "#fec",
+                "lightPurple": "#ecf",
+                "lightRed": "#fcc",
+                "orange": "#f90",
+                "orange0": "#fec",
+                "orange1": "#fec",
+                "orange2": "#f90",
+                "orange3": "#f90",
+                "oranges": Array [
+                  "#fec",
+                  "#fec",
+                  "#f90",
+                  "#f90",
+                ],
+                "purple": "#70b",
+                "purple0": "#ecf",
+                "purple1": "#ecf",
+                "purple2": "#70b",
+                "purple3": "#70b",
+                "purples": Array [
+                  "#ecf",
+                  "#ecf",
+                  "#70b",
+                  "#70b",
+                ],
+                "red": "#c00",
+                "red0": "#fcc",
+                "red1": "#fcc",
+                "red2": "#c00",
+                "red3": "#c00",
+                "reds": Array [
+                  "#fcc",
+                  "#fcc",
+                  "#c00",
+                  "#c00",
+                ],
+                "text": "#001833",
+                "white": "#fff",
+              },
+              "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+              "fontSizes": Array [
+                12,
+                14,
+                16,
+                20,
+                24,
+                32,
+                48,
+              ],
+              "fontWeights": Object {
+                "bold": 600,
+                "regular": 400,
+              },
+              "maxContainerWidth": "1280px",
+              "mediaQueries": Array [
+                "@media screen and (min-width:32em)",
+                "@media screen and (min-width:40em)",
+                "@media screen and (min-width:48em)",
+                "@media screen and (min-width:64em)",
+              ],
+              "radii": Array [
+                0,
+                2,
+                6,
+              ],
+              "radius": "2px",
+              "regular": 400,
+              "space": Array [
+                0,
+                4,
+                8,
+                16,
+                32,
+                64,
+                128,
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "color": "#fff",
+              "legacy": true,
+              "name": "check",
+              "size": 16,
+              "theme": Object {
+                "bold": 600,
+                "boxShadows": Array [
+                  "0 0 4px 0 rgba(0,0,0,0.08)",
+                  "0 8px 8px 0 rgba(0,0,0,0.08)",
+                  "0 16px 16px 0 rgba(0,0,0,0.08)",
+                  "0 32px 32px 0 rgba(0,0,0,0.08)",
+                ],
+                "breakpoints": Array [
+                  32,
+                  40,
+                  48,
+                  64,
+                ],
+                "colors": Object {
+                  "black": "#000",
+                  "blue": "#007aff",
+                  "blue0": "#cdf",
+                  "blue1": "#cdf",
+                  "blue2": "#007aff",
+                  "blue3": "#007aff",
+                  "blues": Array [
+                    "#cdf",
+                    "#cdf",
+                    "#007aff",
+                    "#007aff",
+                  ],
+                  "borderGray": "#d1d6db",
+                  "darkBlue": "#049",
+                  "darkGray": "#364049",
+                  "darkGreen": "#060",
+                  "darkOrange": "#950",
+                  "darkPurple": "#407",
+                  "darkRed": "#800",
+                  "gray": "#687B8E",
+                  "gray0": "#f0f2f4",
+                  "gray1": "#f0f2f4",
+                  "gray2": "#687B8E",
+                  "gray3": "#687B8E",
+                  "green": "#0a0",
+                  "green0": "#cec",
+                  "green1": "#cec",
+                  "green2": "#0a0",
+                  "green3": "#0a0",
+                  "greens": Array [
+                    "#cec",
+                    "#cec",
+                    "#0a0",
+                    "#0a0",
+                  ],
+                  "lightBlue": "#cdf",
+                  "lightGray": "#f0f2f4",
+                  "lightGreen": "#cec",
+                  "lightOrange": "#fec",
+                  "lightPurple": "#ecf",
+                  "lightRed": "#fcc",
+                  "orange": "#f90",
+                  "orange0": "#fec",
+                  "orange1": "#fec",
+                  "orange2": "#f90",
+                  "orange3": "#f90",
+                  "oranges": Array [
+                    "#fec",
+                    "#fec",
+                    "#f90",
+                    "#f90",
+                  ],
+                  "purple": "#70b",
+                  "purple0": "#ecf",
+                  "purple1": "#ecf",
+                  "purple2": "#70b",
+                  "purple3": "#70b",
+                  "purples": Array [
+                    "#ecf",
+                    "#ecf",
+                    "#70b",
+                    "#70b",
+                  ],
+                  "red": "#c00",
+                  "red0": "#fcc",
+                  "red1": "#fcc",
+                  "red2": "#c00",
+                  "red3": "#c00",
+                  "reds": Array [
+                    "#fcc",
+                    "#fcc",
+                    "#c00",
+                    "#c00",
+                  ],
+                  "text": "#001833",
+                  "white": "#fff",
+                },
+                "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                "fontSizes": Array [
+                  12,
+                  14,
+                  16,
+                  20,
+                  24,
+                  32,
+                  48,
+                ],
+                "fontWeights": Object {
+                  "bold": 600,
+                  "regular": 400,
+                },
+                "maxContainerWidth": "1280px",
+                "mediaQueries": Array [
+                  "@media screen and (min-width:32em)",
+                  "@media screen and (min-width:40em)",
+                  "@media screen and (min-width:48em)",
+                  "@media screen and (min-width:64em)",
+                ],
+                "radii": Array [
+                  0,
+                  2,
+                  6,
+                ],
+                "radius": "2px",
+                "regular": 400,
+                "space": Array [
+                  0,
+                  4,
+                  8,
+                  16,
+                  32,
+                  64,
+                  128,
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
 `;
 
 exports[`Checkbox renders without the theme passed specifically 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 2px solid #abb7c2;
-}
-
-.c0:hover {
-  border-color: #007aff;
-}
-
-<div
-  className="c0"
-  data-test="design-system-checkbox"
-  onClick={[Function]}
-  size={20}
->
-  <input
-    defaultChecked={undefined}
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Checkbox
     disabled={false}
-    id={undefined}
     name="random_check_box"
-    style={
+    onClick={[Function]}
+    size={20}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <input
+          defaultChecked={undefined}
+          disabled={false}
+          id="random_check_box"
+          name="random_check_box"
+          onChange={[Function]}
+          style={
+                    Object {
+                              "opacity": 0,
+                              "zIndex": -1,
+                            }
+          }
+          type="checkbox"
+/>,
+        <styled.div
+          data-test="checkbox-facade"
+          disabled={false}
+          size={20}
+          theme={
+                    Object {
+                              "bold": 600,
+                              "boxShadows": Array [
+                                "0 0 4px 0 rgba(0,0,0,0.08)",
+                                "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                "0 32px 32px 0 rgba(0,0,0,0.08)",
+                              ],
+                              "breakpoints": Array [
+                                32,
+                                40,
+                                48,
+                                64,
+                              ],
+                              "colors": Object {
+                                "black": "#000",
+                                "blue": "#007aff",
+                                "blue0": "#cdf",
+                                "blue1": "#cdf",
+                                "blue2": "#007aff",
+                                "blue3": "#007aff",
+                                "blues": Array [
+                                  "#cdf",
+                                  "#cdf",
+                                  "#007aff",
+                                  "#007aff",
+                                ],
+                                "borderGray": "#d1d6db",
+                                "darkBlue": "#049",
+                                "darkGray": "#364049",
+                                "darkGreen": "#060",
+                                "darkOrange": "#950",
+                                "darkPurple": "#407",
+                                "darkRed": "#800",
+                                "gray": "#687B8E",
+                                "gray0": "#f0f2f4",
+                                "gray1": "#f0f2f4",
+                                "gray2": "#687B8E",
+                                "gray3": "#687B8E",
+                                "green": "#0a0",
+                                "green0": "#cec",
+                                "green1": "#cec",
+                                "green2": "#0a0",
+                                "green3": "#0a0",
+                                "greens": Array [
+                                  "#cec",
+                                  "#cec",
+                                  "#0a0",
+                                  "#0a0",
+                                ],
+                                "lightBlue": "#cdf",
+                                "lightGray": "#f0f2f4",
+                                "lightGreen": "#cec",
+                                "lightOrange": "#fec",
+                                "lightPurple": "#ecf",
+                                "lightRed": "#fcc",
+                                "orange": "#f90",
+                                "orange0": "#fec",
+                                "orange1": "#fec",
+                                "orange2": "#f90",
+                                "orange3": "#f90",
+                                "oranges": Array [
+                                  "#fec",
+                                  "#fec",
+                                  "#f90",
+                                  "#f90",
+                                ],
+                                "purple": "#70b",
+                                "purple0": "#ecf",
+                                "purple1": "#ecf",
+                                "purple2": "#70b",
+                                "purple3": "#70b",
+                                "purples": Array [
+                                  "#ecf",
+                                  "#ecf",
+                                  "#70b",
+                                  "#70b",
+                                ],
+                                "red": "#c00",
+                                "red0": "#fcc",
+                                "red1": "#fcc",
+                                "red2": "#c00",
+                                "red3": "#c00",
+                                "reds": Array [
+                                  "#fcc",
+                                  "#fcc",
+                                  "#c00",
+                                  "#c00",
+                                ],
+                                "text": "#001833",
+                                "white": "#fff",
+                              },
+                              "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                              "fontSizes": Array [
+                                12,
+                                14,
+                                16,
+                                20,
+                                24,
+                                32,
+                                48,
+                              ],
+                              "fontWeights": Object {
+                                "bold": 600,
+                                "regular": 400,
+                              },
+                              "maxContainerWidth": "1280px",
+                              "mediaQueries": Array [
+                                "@media screen and (min-width:32em)",
+                                "@media screen and (min-width:40em)",
+                                "@media screen and (min-width:48em)",
+                                "@media screen and (min-width:64em)",
+                              ],
+                              "radii": Array [
+                                0,
+                                2,
+                                6,
+                              ],
+                              "radius": "2px",
+                              "regular": 400,
+                              "space": Array [
+                                0,
+                                4,
+                                8,
+                                16,
+                                32,
+                                64,
+                                128,
+                              ],
+                            }
+          }
+>
+          <Icon
+                    color="#fff"
+                    legacy={true}
+                    name="check"
+                    size={16}
+                    theme={
+                              Object {
+                                        "bold": 600,
+                                        "boxShadows": Array [
+                                          "0 0 4px 0 rgba(0,0,0,0.08)",
+                                          "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                          "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                          "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                        ],
+                                        "breakpoints": Array [
+                                          32,
+                                          40,
+                                          48,
+                                          64,
+                                        ],
+                                        "colors": Object {
+                                          "black": "#000",
+                                          "blue": "#007aff",
+                                          "blue0": "#cdf",
+                                          "blue1": "#cdf",
+                                          "blue2": "#007aff",
+                                          "blue3": "#007aff",
+                                          "blues": Array [
+                                            "#cdf",
+                                            "#cdf",
+                                            "#007aff",
+                                            "#007aff",
+                                          ],
+                                          "borderGray": "#d1d6db",
+                                          "darkBlue": "#049",
+                                          "darkGray": "#364049",
+                                          "darkGreen": "#060",
+                                          "darkOrange": "#950",
+                                          "darkPurple": "#407",
+                                          "darkRed": "#800",
+                                          "gray": "#687B8E",
+                                          "gray0": "#f0f2f4",
+                                          "gray1": "#f0f2f4",
+                                          "gray2": "#687B8E",
+                                          "gray3": "#687B8E",
+                                          "green": "#0a0",
+                                          "green0": "#cec",
+                                          "green1": "#cec",
+                                          "green2": "#0a0",
+                                          "green3": "#0a0",
+                                          "greens": Array [
+                                            "#cec",
+                                            "#cec",
+                                            "#0a0",
+                                            "#0a0",
+                                          ],
+                                          "lightBlue": "#cdf",
+                                          "lightGray": "#f0f2f4",
+                                          "lightGreen": "#cec",
+                                          "lightOrange": "#fec",
+                                          "lightPurple": "#ecf",
+                                          "lightRed": "#fcc",
+                                          "orange": "#f90",
+                                          "orange0": "#fec",
+                                          "orange1": "#fec",
+                                          "orange2": "#f90",
+                                          "orange3": "#f90",
+                                          "oranges": Array [
+                                            "#fec",
+                                            "#fec",
+                                            "#f90",
+                                            "#f90",
+                                          ],
+                                          "purple": "#70b",
+                                          "purple0": "#ecf",
+                                          "purple1": "#ecf",
+                                          "purple2": "#70b",
+                                          "purple3": "#70b",
+                                          "purples": Array [
+                                            "#ecf",
+                                            "#ecf",
+                                            "#70b",
+                                            "#70b",
+                                          ],
+                                          "red": "#c00",
+                                          "red0": "#fcc",
+                                          "red1": "#fcc",
+                                          "red2": "#c00",
+                                          "red3": "#c00",
+                                          "reds": Array [
+                                            "#fcc",
+                                            "#fcc",
+                                            "#c00",
+                                            "#c00",
+                                          ],
+                                          "text": "#001833",
+                                          "white": "#fff",
+                                        },
+                                        "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                        "fontSizes": Array [
+                                          12,
+                                          14,
+                                          16,
+                                          20,
+                                          24,
+                                          32,
+                                          48,
+                                        ],
+                                        "fontWeights": Object {
+                                          "bold": 600,
+                                          "regular": 400,
+                                        },
+                                        "maxContainerWidth": "1280px",
+                                        "mediaQueries": Array [
+                                          "@media screen and (min-width:32em)",
+                                          "@media screen and (min-width:40em)",
+                                          "@media screen and (min-width:48em)",
+                                          "@media screen and (min-width:64em)",
+                                        ],
+                                        "radii": Array [
+                                          0,
+                                          2,
+                                          6,
+                                        ],
+                                        "radius": "2px",
+                                        "regular": 400,
+                                        "space": Array [
+                                          0,
+                                          4,
+                                          8,
+                                          16,
+                                          32,
+                                          64,
+                                          128,
+                                        ],
+                                      }
+                    }
+          />
+</styled.div>,
+        undefined,
+      ],
+      "data-test": "design-system-checkbox",
+      "disabled": false,
+      "fontSize": "10px",
+      "htmlFor": "random_check_box",
+      "theme": Object {
+        "bold": 600,
+        "boxShadows": Array [
+          "0 0 4px 0 rgba(0,0,0,0.08)",
+          "0 8px 8px 0 rgba(0,0,0,0.08)",
+          "0 16px 16px 0 rgba(0,0,0,0.08)",
+          "0 32px 32px 0 rgba(0,0,0,0.08)",
+        ],
+        "breakpoints": Array [
+          32,
+          40,
+          48,
+          64,
+        ],
+        "colors": Object {
+          "black": "#000",
+          "blue": "#007aff",
+          "blue0": "#cdf",
+          "blue1": "#cdf",
+          "blue2": "#007aff",
+          "blue3": "#007aff",
+          "blues": Array [
+            "#cdf",
+            "#cdf",
+            "#007aff",
+            "#007aff",
+          ],
+          "borderGray": "#d1d6db",
+          "darkBlue": "#049",
+          "darkGray": "#364049",
+          "darkGreen": "#060",
+          "darkOrange": "#950",
+          "darkPurple": "#407",
+          "darkRed": "#800",
+          "gray": "#687B8E",
+          "gray0": "#f0f2f4",
+          "gray1": "#f0f2f4",
+          "gray2": "#687B8E",
+          "gray3": "#687B8E",
+          "green": "#0a0",
+          "green0": "#cec",
+          "green1": "#cec",
+          "green2": "#0a0",
+          "green3": "#0a0",
+          "greens": Array [
+            "#cec",
+            "#cec",
+            "#0a0",
+            "#0a0",
+          ],
+          "lightBlue": "#cdf",
+          "lightGray": "#f0f2f4",
+          "lightGreen": "#cec",
+          "lightOrange": "#fec",
+          "lightPurple": "#ecf",
+          "lightRed": "#fcc",
+          "orange": "#f90",
+          "orange0": "#fec",
+          "orange1": "#fec",
+          "orange2": "#f90",
+          "orange3": "#f90",
+          "oranges": Array [
+            "#fec",
+            "#fec",
+            "#f90",
+            "#f90",
+          ],
+          "purple": "#70b",
+          "purple0": "#ecf",
+          "purple1": "#ecf",
+          "purple2": "#70b",
+          "purple3": "#70b",
+          "purples": Array [
+            "#ecf",
+            "#ecf",
+            "#70b",
+            "#70b",
+          ],
+          "red": "#c00",
+          "red0": "#fcc",
+          "red1": "#fcc",
+          "red2": "#c00",
+          "red3": "#c00",
+          "reds": Array [
+            "#fcc",
+            "#fcc",
+            "#c00",
+            "#c00",
+          ],
+          "text": "#001833",
+          "white": "#fff",
+        },
+        "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+        ],
+        "fontWeights": Object {
+          "bold": 600,
+          "regular": 400,
+        },
+        "maxContainerWidth": "1280px",
+        "mediaQueries": Array [
+          "@media screen and (min-width:32em)",
+          "@media screen and (min-width:40em)",
+          "@media screen and (min-width:48em)",
+          "@media screen and (min-width:64em)",
+        ],
+        "radii": Array [
+          0,
+          2,
+          6,
+        ],
+        "radius": "2px",
+        "regular": 400,
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+        ],
+      },
+    },
+    "ref": null,
+    "rendered": Array [
       Object {
-        "display": "none",
-      }
-    }
-    type="checkbox"
-    value={undefined}
-  />
-</div>
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "defaultChecked": undefined,
+          "disabled": false,
+          "id": "random_check_box",
+          "name": "random_check_box",
+          "onChange": [Function],
+          "style": Object {
+            "opacity": 0,
+            "zIndex": -1,
+          },
+          "type": "checkbox",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Icon
+            color="#fff"
+            legacy={true}
+            name="check"
+            size={16}
+            theme={
+                        Object {
+                                    "bold": 600,
+                                    "boxShadows": Array [
+                                      "0 0 4px 0 rgba(0,0,0,0.08)",
+                                      "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                      "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                      "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                    ],
+                                    "breakpoints": Array [
+                                      32,
+                                      40,
+                                      48,
+                                      64,
+                                    ],
+                                    "colors": Object {
+                                      "black": "#000",
+                                      "blue": "#007aff",
+                                      "blue0": "#cdf",
+                                      "blue1": "#cdf",
+                                      "blue2": "#007aff",
+                                      "blue3": "#007aff",
+                                      "blues": Array [
+                                        "#cdf",
+                                        "#cdf",
+                                        "#007aff",
+                                        "#007aff",
+                                      ],
+                                      "borderGray": "#d1d6db",
+                                      "darkBlue": "#049",
+                                      "darkGray": "#364049",
+                                      "darkGreen": "#060",
+                                      "darkOrange": "#950",
+                                      "darkPurple": "#407",
+                                      "darkRed": "#800",
+                                      "gray": "#687B8E",
+                                      "gray0": "#f0f2f4",
+                                      "gray1": "#f0f2f4",
+                                      "gray2": "#687B8E",
+                                      "gray3": "#687B8E",
+                                      "green": "#0a0",
+                                      "green0": "#cec",
+                                      "green1": "#cec",
+                                      "green2": "#0a0",
+                                      "green3": "#0a0",
+                                      "greens": Array [
+                                        "#cec",
+                                        "#cec",
+                                        "#0a0",
+                                        "#0a0",
+                                      ],
+                                      "lightBlue": "#cdf",
+                                      "lightGray": "#f0f2f4",
+                                      "lightGreen": "#cec",
+                                      "lightOrange": "#fec",
+                                      "lightPurple": "#ecf",
+                                      "lightRed": "#fcc",
+                                      "orange": "#f90",
+                                      "orange0": "#fec",
+                                      "orange1": "#fec",
+                                      "orange2": "#f90",
+                                      "orange3": "#f90",
+                                      "oranges": Array [
+                                        "#fec",
+                                        "#fec",
+                                        "#f90",
+                                        "#f90",
+                                      ],
+                                      "purple": "#70b",
+                                      "purple0": "#ecf",
+                                      "purple1": "#ecf",
+                                      "purple2": "#70b",
+                                      "purple3": "#70b",
+                                      "purples": Array [
+                                        "#ecf",
+                                        "#ecf",
+                                        "#70b",
+                                        "#70b",
+                                      ],
+                                      "red": "#c00",
+                                      "red0": "#fcc",
+                                      "red1": "#fcc",
+                                      "red2": "#c00",
+                                      "red3": "#c00",
+                                      "reds": Array [
+                                        "#fcc",
+                                        "#fcc",
+                                        "#c00",
+                                        "#c00",
+                                      ],
+                                      "text": "#001833",
+                                      "white": "#fff",
+                                    },
+                                    "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                    "fontSizes": Array [
+                                      12,
+                                      14,
+                                      16,
+                                      20,
+                                      24,
+                                      32,
+                                      48,
+                                    ],
+                                    "fontWeights": Object {
+                                      "bold": 600,
+                                      "regular": 400,
+                                    },
+                                    "maxContainerWidth": "1280px",
+                                    "mediaQueries": Array [
+                                      "@media screen and (min-width:32em)",
+                                      "@media screen and (min-width:40em)",
+                                      "@media screen and (min-width:48em)",
+                                      "@media screen and (min-width:64em)",
+                                    ],
+                                    "radii": Array [
+                                      0,
+                                      2,
+                                      6,
+                                    ],
+                                    "radius": "2px",
+                                    "regular": 400,
+                                    "space": Array [
+                                      0,
+                                      4,
+                                      8,
+                                      16,
+                                      32,
+                                      64,
+                                      128,
+                                    ],
+                                  }
+            }
+/>,
+          "data-test": "checkbox-facade",
+          "disabled": false,
+          "size": 20,
+          "theme": Object {
+            "bold": 600,
+            "boxShadows": Array [
+              "0 0 4px 0 rgba(0,0,0,0.08)",
+              "0 8px 8px 0 rgba(0,0,0,0.08)",
+              "0 16px 16px 0 rgba(0,0,0,0.08)",
+              "0 32px 32px 0 rgba(0,0,0,0.08)",
+            ],
+            "breakpoints": Array [
+              32,
+              40,
+              48,
+              64,
+            ],
+            "colors": Object {
+              "black": "#000",
+              "blue": "#007aff",
+              "blue0": "#cdf",
+              "blue1": "#cdf",
+              "blue2": "#007aff",
+              "blue3": "#007aff",
+              "blues": Array [
+                "#cdf",
+                "#cdf",
+                "#007aff",
+                "#007aff",
+              ],
+              "borderGray": "#d1d6db",
+              "darkBlue": "#049",
+              "darkGray": "#364049",
+              "darkGreen": "#060",
+              "darkOrange": "#950",
+              "darkPurple": "#407",
+              "darkRed": "#800",
+              "gray": "#687B8E",
+              "gray0": "#f0f2f4",
+              "gray1": "#f0f2f4",
+              "gray2": "#687B8E",
+              "gray3": "#687B8E",
+              "green": "#0a0",
+              "green0": "#cec",
+              "green1": "#cec",
+              "green2": "#0a0",
+              "green3": "#0a0",
+              "greens": Array [
+                "#cec",
+                "#cec",
+                "#0a0",
+                "#0a0",
+              ],
+              "lightBlue": "#cdf",
+              "lightGray": "#f0f2f4",
+              "lightGreen": "#cec",
+              "lightOrange": "#fec",
+              "lightPurple": "#ecf",
+              "lightRed": "#fcc",
+              "orange": "#f90",
+              "orange0": "#fec",
+              "orange1": "#fec",
+              "orange2": "#f90",
+              "orange3": "#f90",
+              "oranges": Array [
+                "#fec",
+                "#fec",
+                "#f90",
+                "#f90",
+              ],
+              "purple": "#70b",
+              "purple0": "#ecf",
+              "purple1": "#ecf",
+              "purple2": "#70b",
+              "purple3": "#70b",
+              "purples": Array [
+                "#ecf",
+                "#ecf",
+                "#70b",
+                "#70b",
+              ],
+              "red": "#c00",
+              "red0": "#fcc",
+              "red1": "#fcc",
+              "red2": "#c00",
+              "red3": "#c00",
+              "reds": Array [
+                "#fcc",
+                "#fcc",
+                "#c00",
+                "#c00",
+              ],
+              "text": "#001833",
+              "white": "#fff",
+            },
+            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "fontSizes": Array [
+              12,
+              14,
+              16,
+              20,
+              24,
+              32,
+              48,
+            ],
+            "fontWeights": Object {
+              "bold": 600,
+              "regular": 400,
+            },
+            "maxContainerWidth": "1280px",
+            "mediaQueries": Array [
+              "@media screen and (min-width:32em)",
+              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:48em)",
+              "@media screen and (min-width:64em)",
+            ],
+            "radii": Array [
+              0,
+              2,
+              6,
+            ],
+            "radius": "2px",
+            "regular": 400,
+            "space": Array [
+              0,
+              4,
+              8,
+              16,
+              32,
+              64,
+              128,
+            ],
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "color": "#fff",
+            "legacy": true,
+            "name": "check",
+            "size": 16,
+            "theme": Object {
+              "bold": 600,
+              "boxShadows": Array [
+                "0 0 4px 0 rgba(0,0,0,0.08)",
+                "0 8px 8px 0 rgba(0,0,0,0.08)",
+                "0 16px 16px 0 rgba(0,0,0,0.08)",
+                "0 32px 32px 0 rgba(0,0,0,0.08)",
+              ],
+              "breakpoints": Array [
+                32,
+                40,
+                48,
+                64,
+              ],
+              "colors": Object {
+                "black": "#000",
+                "blue": "#007aff",
+                "blue0": "#cdf",
+                "blue1": "#cdf",
+                "blue2": "#007aff",
+                "blue3": "#007aff",
+                "blues": Array [
+                  "#cdf",
+                  "#cdf",
+                  "#007aff",
+                  "#007aff",
+                ],
+                "borderGray": "#d1d6db",
+                "darkBlue": "#049",
+                "darkGray": "#364049",
+                "darkGreen": "#060",
+                "darkOrange": "#950",
+                "darkPurple": "#407",
+                "darkRed": "#800",
+                "gray": "#687B8E",
+                "gray0": "#f0f2f4",
+                "gray1": "#f0f2f4",
+                "gray2": "#687B8E",
+                "gray3": "#687B8E",
+                "green": "#0a0",
+                "green0": "#cec",
+                "green1": "#cec",
+                "green2": "#0a0",
+                "green3": "#0a0",
+                "greens": Array [
+                  "#cec",
+                  "#cec",
+                  "#0a0",
+                  "#0a0",
+                ],
+                "lightBlue": "#cdf",
+                "lightGray": "#f0f2f4",
+                "lightGreen": "#cec",
+                "lightOrange": "#fec",
+                "lightPurple": "#ecf",
+                "lightRed": "#fcc",
+                "orange": "#f90",
+                "orange0": "#fec",
+                "orange1": "#fec",
+                "orange2": "#f90",
+                "orange3": "#f90",
+                "oranges": Array [
+                  "#fec",
+                  "#fec",
+                  "#f90",
+                  "#f90",
+                ],
+                "purple": "#70b",
+                "purple0": "#ecf",
+                "purple1": "#ecf",
+                "purple2": "#70b",
+                "purple3": "#70b",
+                "purples": Array [
+                  "#ecf",
+                  "#ecf",
+                  "#70b",
+                  "#70b",
+                ],
+                "red": "#c00",
+                "red0": "#fcc",
+                "red1": "#fcc",
+                "red2": "#c00",
+                "red3": "#c00",
+                "reds": Array [
+                  "#fcc",
+                  "#fcc",
+                  "#c00",
+                  "#c00",
+                ],
+                "text": "#001833",
+                "white": "#fff",
+              },
+              "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+              "fontSizes": Array [
+                12,
+                14,
+                16,
+                20,
+                24,
+                32,
+                48,
+              ],
+              "fontWeights": Object {
+                "bold": 600,
+                "regular": 400,
+              },
+              "maxContainerWidth": "1280px",
+              "mediaQueries": Array [
+                "@media screen and (min-width:32em)",
+                "@media screen and (min-width:40em)",
+                "@media screen and (min-width:48em)",
+                "@media screen and (min-width:64em)",
+              ],
+              "radii": Array [
+                0,
+                2,
+                6,
+              ],
+              "radius": "2px",
+              "regular": 400,
+              "space": Array [
+                0,
+                4,
+                8,
+                16,
+                32,
+                64,
+                128,
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <input
+            defaultChecked={undefined}
+            disabled={false}
+            id="random_check_box"
+            name="random_check_box"
+            onChange={[Function]}
+            style={
+                        Object {
+                                    "opacity": 0,
+                                    "zIndex": -1,
+                                  }
+            }
+            type="checkbox"
+/>,
+          <styled.div
+            data-test="checkbox-facade"
+            disabled={false}
+            size={20}
+            theme={
+                        Object {
+                                    "bold": 600,
+                                    "boxShadows": Array [
+                                      "0 0 4px 0 rgba(0,0,0,0.08)",
+                                      "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                      "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                      "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                    ],
+                                    "breakpoints": Array [
+                                      32,
+                                      40,
+                                      48,
+                                      64,
+                                    ],
+                                    "colors": Object {
+                                      "black": "#000",
+                                      "blue": "#007aff",
+                                      "blue0": "#cdf",
+                                      "blue1": "#cdf",
+                                      "blue2": "#007aff",
+                                      "blue3": "#007aff",
+                                      "blues": Array [
+                                        "#cdf",
+                                        "#cdf",
+                                        "#007aff",
+                                        "#007aff",
+                                      ],
+                                      "borderGray": "#d1d6db",
+                                      "darkBlue": "#049",
+                                      "darkGray": "#364049",
+                                      "darkGreen": "#060",
+                                      "darkOrange": "#950",
+                                      "darkPurple": "#407",
+                                      "darkRed": "#800",
+                                      "gray": "#687B8E",
+                                      "gray0": "#f0f2f4",
+                                      "gray1": "#f0f2f4",
+                                      "gray2": "#687B8E",
+                                      "gray3": "#687B8E",
+                                      "green": "#0a0",
+                                      "green0": "#cec",
+                                      "green1": "#cec",
+                                      "green2": "#0a0",
+                                      "green3": "#0a0",
+                                      "greens": Array [
+                                        "#cec",
+                                        "#cec",
+                                        "#0a0",
+                                        "#0a0",
+                                      ],
+                                      "lightBlue": "#cdf",
+                                      "lightGray": "#f0f2f4",
+                                      "lightGreen": "#cec",
+                                      "lightOrange": "#fec",
+                                      "lightPurple": "#ecf",
+                                      "lightRed": "#fcc",
+                                      "orange": "#f90",
+                                      "orange0": "#fec",
+                                      "orange1": "#fec",
+                                      "orange2": "#f90",
+                                      "orange3": "#f90",
+                                      "oranges": Array [
+                                        "#fec",
+                                        "#fec",
+                                        "#f90",
+                                        "#f90",
+                                      ],
+                                      "purple": "#70b",
+                                      "purple0": "#ecf",
+                                      "purple1": "#ecf",
+                                      "purple2": "#70b",
+                                      "purple3": "#70b",
+                                      "purples": Array [
+                                        "#ecf",
+                                        "#ecf",
+                                        "#70b",
+                                        "#70b",
+                                      ],
+                                      "red": "#c00",
+                                      "red0": "#fcc",
+                                      "red1": "#fcc",
+                                      "red2": "#c00",
+                                      "red3": "#c00",
+                                      "reds": Array [
+                                        "#fcc",
+                                        "#fcc",
+                                        "#c00",
+                                        "#c00",
+                                      ],
+                                      "text": "#001833",
+                                      "white": "#fff",
+                                    },
+                                    "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                    "fontSizes": Array [
+                                      12,
+                                      14,
+                                      16,
+                                      20,
+                                      24,
+                                      32,
+                                      48,
+                                    ],
+                                    "fontWeights": Object {
+                                      "bold": 600,
+                                      "regular": 400,
+                                    },
+                                    "maxContainerWidth": "1280px",
+                                    "mediaQueries": Array [
+                                      "@media screen and (min-width:32em)",
+                                      "@media screen and (min-width:40em)",
+                                      "@media screen and (min-width:48em)",
+                                      "@media screen and (min-width:64em)",
+                                    ],
+                                    "radii": Array [
+                                      0,
+                                      2,
+                                      6,
+                                    ],
+                                    "radius": "2px",
+                                    "regular": 400,
+                                    "space": Array [
+                                      0,
+                                      4,
+                                      8,
+                                      16,
+                                      32,
+                                      64,
+                                      128,
+                                    ],
+                                  }
+            }
+>
+            <Icon
+                        color="#fff"
+                        legacy={true}
+                        name="check"
+                        size={16}
+                        theme={
+                                    Object {
+                                                "bold": 600,
+                                                "boxShadows": Array [
+                                                  "0 0 4px 0 rgba(0,0,0,0.08)",
+                                                  "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                                  "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                                  "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                                ],
+                                                "breakpoints": Array [
+                                                  32,
+                                                  40,
+                                                  48,
+                                                  64,
+                                                ],
+                                                "colors": Object {
+                                                  "black": "#000",
+                                                  "blue": "#007aff",
+                                                  "blue0": "#cdf",
+                                                  "blue1": "#cdf",
+                                                  "blue2": "#007aff",
+                                                  "blue3": "#007aff",
+                                                  "blues": Array [
+                                                    "#cdf",
+                                                    "#cdf",
+                                                    "#007aff",
+                                                    "#007aff",
+                                                  ],
+                                                  "borderGray": "#d1d6db",
+                                                  "darkBlue": "#049",
+                                                  "darkGray": "#364049",
+                                                  "darkGreen": "#060",
+                                                  "darkOrange": "#950",
+                                                  "darkPurple": "#407",
+                                                  "darkRed": "#800",
+                                                  "gray": "#687B8E",
+                                                  "gray0": "#f0f2f4",
+                                                  "gray1": "#f0f2f4",
+                                                  "gray2": "#687B8E",
+                                                  "gray3": "#687B8E",
+                                                  "green": "#0a0",
+                                                  "green0": "#cec",
+                                                  "green1": "#cec",
+                                                  "green2": "#0a0",
+                                                  "green3": "#0a0",
+                                                  "greens": Array [
+                                                    "#cec",
+                                                    "#cec",
+                                                    "#0a0",
+                                                    "#0a0",
+                                                  ],
+                                                  "lightBlue": "#cdf",
+                                                  "lightGray": "#f0f2f4",
+                                                  "lightGreen": "#cec",
+                                                  "lightOrange": "#fec",
+                                                  "lightPurple": "#ecf",
+                                                  "lightRed": "#fcc",
+                                                  "orange": "#f90",
+                                                  "orange0": "#fec",
+                                                  "orange1": "#fec",
+                                                  "orange2": "#f90",
+                                                  "orange3": "#f90",
+                                                  "oranges": Array [
+                                                    "#fec",
+                                                    "#fec",
+                                                    "#f90",
+                                                    "#f90",
+                                                  ],
+                                                  "purple": "#70b",
+                                                  "purple0": "#ecf",
+                                                  "purple1": "#ecf",
+                                                  "purple2": "#70b",
+                                                  "purple3": "#70b",
+                                                  "purples": Array [
+                                                    "#ecf",
+                                                    "#ecf",
+                                                    "#70b",
+                                                    "#70b",
+                                                  ],
+                                                  "red": "#c00",
+                                                  "red0": "#fcc",
+                                                  "red1": "#fcc",
+                                                  "red2": "#c00",
+                                                  "red3": "#c00",
+                                                  "reds": Array [
+                                                    "#fcc",
+                                                    "#fcc",
+                                                    "#c00",
+                                                    "#c00",
+                                                  ],
+                                                  "text": "#001833",
+                                                  "white": "#fff",
+                                                },
+                                                "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                                "fontSizes": Array [
+                                                  12,
+                                                  14,
+                                                  16,
+                                                  20,
+                                                  24,
+                                                  32,
+                                                  48,
+                                                ],
+                                                "fontWeights": Object {
+                                                  "bold": 600,
+                                                  "regular": 400,
+                                                },
+                                                "maxContainerWidth": "1280px",
+                                                "mediaQueries": Array [
+                                                  "@media screen and (min-width:32em)",
+                                                  "@media screen and (min-width:40em)",
+                                                  "@media screen and (min-width:48em)",
+                                                  "@media screen and (min-width:64em)",
+                                                ],
+                                                "radii": Array [
+                                                  0,
+                                                  2,
+                                                  6,
+                                                ],
+                                                "radius": "2px",
+                                                "regular": 400,
+                                                "space": Array [
+                                                  0,
+                                                  4,
+                                                  8,
+                                                  16,
+                                                  32,
+                                                  64,
+                                                  128,
+                                                ],
+                                              }
+                        }
+            />
+</styled.div>,
+          undefined,
+        ],
+        "data-test": "design-system-checkbox",
+        "disabled": false,
+        "fontSize": "10px",
+        "htmlFor": "random_check_box",
+        "theme": Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "defaultChecked": undefined,
+            "disabled": false,
+            "id": "random_check_box",
+            "name": "random_check_box",
+            "onChange": [Function],
+            "style": Object {
+              "opacity": 0,
+              "zIndex": -1,
+            },
+            "type": "checkbox",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Icon
+              color="#fff"
+              legacy={true}
+              name="check"
+              size={16}
+              theme={
+                            Object {
+                                          "bold": 600,
+                                          "boxShadows": Array [
+                                            "0 0 4px 0 rgba(0,0,0,0.08)",
+                                            "0 8px 8px 0 rgba(0,0,0,0.08)",
+                                            "0 16px 16px 0 rgba(0,0,0,0.08)",
+                                            "0 32px 32px 0 rgba(0,0,0,0.08)",
+                                          ],
+                                          "breakpoints": Array [
+                                            32,
+                                            40,
+                                            48,
+                                            64,
+                                          ],
+                                          "colors": Object {
+                                            "black": "#000",
+                                            "blue": "#007aff",
+                                            "blue0": "#cdf",
+                                            "blue1": "#cdf",
+                                            "blue2": "#007aff",
+                                            "blue3": "#007aff",
+                                            "blues": Array [
+                                              "#cdf",
+                                              "#cdf",
+                                              "#007aff",
+                                              "#007aff",
+                                            ],
+                                            "borderGray": "#d1d6db",
+                                            "darkBlue": "#049",
+                                            "darkGray": "#364049",
+                                            "darkGreen": "#060",
+                                            "darkOrange": "#950",
+                                            "darkPurple": "#407",
+                                            "darkRed": "#800",
+                                            "gray": "#687B8E",
+                                            "gray0": "#f0f2f4",
+                                            "gray1": "#f0f2f4",
+                                            "gray2": "#687B8E",
+                                            "gray3": "#687B8E",
+                                            "green": "#0a0",
+                                            "green0": "#cec",
+                                            "green1": "#cec",
+                                            "green2": "#0a0",
+                                            "green3": "#0a0",
+                                            "greens": Array [
+                                              "#cec",
+                                              "#cec",
+                                              "#0a0",
+                                              "#0a0",
+                                            ],
+                                            "lightBlue": "#cdf",
+                                            "lightGray": "#f0f2f4",
+                                            "lightGreen": "#cec",
+                                            "lightOrange": "#fec",
+                                            "lightPurple": "#ecf",
+                                            "lightRed": "#fcc",
+                                            "orange": "#f90",
+                                            "orange0": "#fec",
+                                            "orange1": "#fec",
+                                            "orange2": "#f90",
+                                            "orange3": "#f90",
+                                            "oranges": Array [
+                                              "#fec",
+                                              "#fec",
+                                              "#f90",
+                                              "#f90",
+                                            ],
+                                            "purple": "#70b",
+                                            "purple0": "#ecf",
+                                            "purple1": "#ecf",
+                                            "purple2": "#70b",
+                                            "purple3": "#70b",
+                                            "purples": Array [
+                                              "#ecf",
+                                              "#ecf",
+                                              "#70b",
+                                              "#70b",
+                                            ],
+                                            "red": "#c00",
+                                            "red0": "#fcc",
+                                            "red1": "#fcc",
+                                            "red2": "#c00",
+                                            "red3": "#c00",
+                                            "reds": Array [
+                                              "#fcc",
+                                              "#fcc",
+                                              "#c00",
+                                              "#c00",
+                                            ],
+                                            "text": "#001833",
+                                            "white": "#fff",
+                                          },
+                                          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                                          "fontSizes": Array [
+                                            12,
+                                            14,
+                                            16,
+                                            20,
+                                            24,
+                                            32,
+                                            48,
+                                          ],
+                                          "fontWeights": Object {
+                                            "bold": 600,
+                                            "regular": 400,
+                                          },
+                                          "maxContainerWidth": "1280px",
+                                          "mediaQueries": Array [
+                                            "@media screen and (min-width:32em)",
+                                            "@media screen and (min-width:40em)",
+                                            "@media screen and (min-width:48em)",
+                                            "@media screen and (min-width:64em)",
+                                          ],
+                                          "radii": Array [
+                                            0,
+                                            2,
+                                            6,
+                                          ],
+                                          "radius": "2px",
+                                          "regular": 400,
+                                          "space": Array [
+                                            0,
+                                            4,
+                                            8,
+                                            16,
+                                            32,
+                                            64,
+                                            128,
+                                          ],
+                                        }
+              }
+/>,
+            "data-test": "checkbox-facade",
+            "disabled": false,
+            "size": 20,
+            "theme": Object {
+              "bold": 600,
+              "boxShadows": Array [
+                "0 0 4px 0 rgba(0,0,0,0.08)",
+                "0 8px 8px 0 rgba(0,0,0,0.08)",
+                "0 16px 16px 0 rgba(0,0,0,0.08)",
+                "0 32px 32px 0 rgba(0,0,0,0.08)",
+              ],
+              "breakpoints": Array [
+                32,
+                40,
+                48,
+                64,
+              ],
+              "colors": Object {
+                "black": "#000",
+                "blue": "#007aff",
+                "blue0": "#cdf",
+                "blue1": "#cdf",
+                "blue2": "#007aff",
+                "blue3": "#007aff",
+                "blues": Array [
+                  "#cdf",
+                  "#cdf",
+                  "#007aff",
+                  "#007aff",
+                ],
+                "borderGray": "#d1d6db",
+                "darkBlue": "#049",
+                "darkGray": "#364049",
+                "darkGreen": "#060",
+                "darkOrange": "#950",
+                "darkPurple": "#407",
+                "darkRed": "#800",
+                "gray": "#687B8E",
+                "gray0": "#f0f2f4",
+                "gray1": "#f0f2f4",
+                "gray2": "#687B8E",
+                "gray3": "#687B8E",
+                "green": "#0a0",
+                "green0": "#cec",
+                "green1": "#cec",
+                "green2": "#0a0",
+                "green3": "#0a0",
+                "greens": Array [
+                  "#cec",
+                  "#cec",
+                  "#0a0",
+                  "#0a0",
+                ],
+                "lightBlue": "#cdf",
+                "lightGray": "#f0f2f4",
+                "lightGreen": "#cec",
+                "lightOrange": "#fec",
+                "lightPurple": "#ecf",
+                "lightRed": "#fcc",
+                "orange": "#f90",
+                "orange0": "#fec",
+                "orange1": "#fec",
+                "orange2": "#f90",
+                "orange3": "#f90",
+                "oranges": Array [
+                  "#fec",
+                  "#fec",
+                  "#f90",
+                  "#f90",
+                ],
+                "purple": "#70b",
+                "purple0": "#ecf",
+                "purple1": "#ecf",
+                "purple2": "#70b",
+                "purple3": "#70b",
+                "purples": Array [
+                  "#ecf",
+                  "#ecf",
+                  "#70b",
+                  "#70b",
+                ],
+                "red": "#c00",
+                "red0": "#fcc",
+                "red1": "#fcc",
+                "red2": "#c00",
+                "red3": "#c00",
+                "reds": Array [
+                  "#fcc",
+                  "#fcc",
+                  "#c00",
+                  "#c00",
+                ],
+                "text": "#001833",
+                "white": "#fff",
+              },
+              "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+              "fontSizes": Array [
+                12,
+                14,
+                16,
+                20,
+                24,
+                32,
+                48,
+              ],
+              "fontWeights": Object {
+                "bold": 600,
+                "regular": 400,
+              },
+              "maxContainerWidth": "1280px",
+              "mediaQueries": Array [
+                "@media screen and (min-width:32em)",
+                "@media screen and (min-width:40em)",
+                "@media screen and (min-width:48em)",
+                "@media screen and (min-width:64em)",
+              ],
+              "radii": Array [
+                0,
+                2,
+                6,
+              ],
+              "radius": "2px",
+              "regular": 400,
+              "space": Array [
+                0,
+                4,
+                8,
+                16,
+                32,
+                64,
+                128,
+              ],
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "color": "#fff",
+              "legacy": true,
+              "name": "check",
+              "size": 16,
+              "theme": Object {
+                "bold": 600,
+                "boxShadows": Array [
+                  "0 0 4px 0 rgba(0,0,0,0.08)",
+                  "0 8px 8px 0 rgba(0,0,0,0.08)",
+                  "0 16px 16px 0 rgba(0,0,0,0.08)",
+                  "0 32px 32px 0 rgba(0,0,0,0.08)",
+                ],
+                "breakpoints": Array [
+                  32,
+                  40,
+                  48,
+                  64,
+                ],
+                "colors": Object {
+                  "black": "#000",
+                  "blue": "#007aff",
+                  "blue0": "#cdf",
+                  "blue1": "#cdf",
+                  "blue2": "#007aff",
+                  "blue3": "#007aff",
+                  "blues": Array [
+                    "#cdf",
+                    "#cdf",
+                    "#007aff",
+                    "#007aff",
+                  ],
+                  "borderGray": "#d1d6db",
+                  "darkBlue": "#049",
+                  "darkGray": "#364049",
+                  "darkGreen": "#060",
+                  "darkOrange": "#950",
+                  "darkPurple": "#407",
+                  "darkRed": "#800",
+                  "gray": "#687B8E",
+                  "gray0": "#f0f2f4",
+                  "gray1": "#f0f2f4",
+                  "gray2": "#687B8E",
+                  "gray3": "#687B8E",
+                  "green": "#0a0",
+                  "green0": "#cec",
+                  "green1": "#cec",
+                  "green2": "#0a0",
+                  "green3": "#0a0",
+                  "greens": Array [
+                    "#cec",
+                    "#cec",
+                    "#0a0",
+                    "#0a0",
+                  ],
+                  "lightBlue": "#cdf",
+                  "lightGray": "#f0f2f4",
+                  "lightGreen": "#cec",
+                  "lightOrange": "#fec",
+                  "lightPurple": "#ecf",
+                  "lightRed": "#fcc",
+                  "orange": "#f90",
+                  "orange0": "#fec",
+                  "orange1": "#fec",
+                  "orange2": "#f90",
+                  "orange3": "#f90",
+                  "oranges": Array [
+                    "#fec",
+                    "#fec",
+                    "#f90",
+                    "#f90",
+                  ],
+                  "purple": "#70b",
+                  "purple0": "#ecf",
+                  "purple1": "#ecf",
+                  "purple2": "#70b",
+                  "purple3": "#70b",
+                  "purples": Array [
+                    "#ecf",
+                    "#ecf",
+                    "#70b",
+                    "#70b",
+                  ],
+                  "red": "#c00",
+                  "red0": "#fcc",
+                  "red1": "#fcc",
+                  "red2": "#c00",
+                  "red3": "#c00",
+                  "reds": Array [
+                    "#fcc",
+                    "#fcc",
+                    "#c00",
+                    "#c00",
+                  ],
+                  "text": "#001833",
+                  "white": "#fff",
+                },
+                "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+                "fontSizes": Array [
+                  12,
+                  14,
+                  16,
+                  20,
+                  24,
+                  32,
+                  48,
+                ],
+                "fontWeights": Object {
+                  "bold": 600,
+                  "regular": 400,
+                },
+                "maxContainerWidth": "1280px",
+                "mediaQueries": Array [
+                  "@media screen and (min-width:32em)",
+                  "@media screen and (min-width:40em)",
+                  "@media screen and (min-width:48em)",
+                  "@media screen and (min-width:64em)",
+                ],
+                "radii": Array [
+                  0,
+                  2,
+                  6,
+                ],
+                "radius": "2px",
+                "regular": 400,
+                "space": Array [
+                  0,
+                  4,
+                  8,
+                  16,
+                  32,
+                  64,
+                  128,
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
 `;
 
 exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: #fff;
+}
+
 .c0 {
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  cursor: pointer;
+}
+
+.c0 input:not(:checked) + [data-test="checkbox-facade"] {
+  background-color: #fff;
+}
+
+.c0 input:not(:checked) + [data-test="checkbox-facade"]:hover {
+  border-color: #007aff;
+}
+
+.c0 input:checked + [data-test="checkbox-facade"] {
+  background-color: #007aff;
+  border-color: #007aff;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -294,34 +4644,182 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
   align-items: center;
   height: 20px;
   width: 20px;
-  background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  border: 2px solid #abb7c2;
+  border: 2px solid #d1d6db;
 }
 
-.c0:hover {
-  border-color: #007aff;
-}
-
-<div
+<label
   className="c0"
   data-test="design-system-checkbox"
-  onClick={[Function]}
-  size={20}
+  disabled={false}
+  fontSize="10px"
+  htmlFor="random_check_box"
 >
   <input
     defaultChecked={undefined}
     disabled={false}
-    id={undefined}
+    id="random_check_box"
     name="random_check_box"
+    onChange={[Function]}
     style={
       Object {
-        "display": "none",
+        "opacity": 0,
+        "zIndex": -1,
       }
     }
     type="checkbox"
-    value={undefined}
   />
-</div>
+  <div
+    className="c1"
+    data-test="checkbox-facade"
+    disabled={false}
+    size={20}
+  >
+    <svg
+      className="c2"
+      color="#fff"
+      fill="currentcolor"
+      height={16}
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 4px 0 rgba(0,0,0,0.08)",
+            "0 8px 8px 0 rgba(0,0,0,0.08)",
+            "0 16px 16px 0 rgba(0,0,0,0.08)",
+            "0 32px 32px 0 rgba(0,0,0,0.08)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#950",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f0f2f4",
+            "gray1": "#f0f2f4",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f0f2f4",
+            "lightGreen": "#cec",
+            "lightOrange": "#fec",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#f90",
+            "orange0": "#fec",
+            "orange1": "#fec",
+            "orange2": "#f90",
+            "orange3": "#f90",
+            "oranges": Array [
+              "#fec",
+              "#fec",
+              "#f90",
+              "#f90",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
+      viewBox="0 0 20 15"
+      width={16}
+    >
+      <path
+        d="M9.26 12.53l10.188-9.55a1.657 1.657 0 0 0 0-2.469c-.736-.681-1.93-.681-2.665 0l-10.188 9.55-3.378-3.13c-.735-.682-1.93-.682-2.665 0a1.657 1.657 0 0 0 0 2.469l3.379 3.13L6.595 15l2.665-2.47z"
+      />
+    </svg>
+  </div>
+</label>
 `;

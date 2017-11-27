@@ -3,132 +3,132 @@ import renderer from 'react-test-renderer'
 import { Checkbox, theme } from '..'
 import { shallow, mount, render } from 'enzyme'
 
-let checkActionFn
+const fakeEvent = { target: { checked: true } }
+let onClickFn = jest.fn()
 const name = 'random_check_box'
 const value = 'priceline rules'
+const facadeSelector = '[data-test="checkbox-facade"]'
+const checkboxSelector = 'input[type="checkbox"]'
 
 describe('Checkbox', () => {
   beforeEach(() => {
-    checkActionFn = jest.fn(() => void 0)
+    onClickFn.mockReset()
   })
 
   test('renders without the theme passed specifically', () => {
-    const component = <Checkbox name={name} checkAction={checkActionFn} />
-    const json = renderer.create(component).toJSON()
+    const component = <Checkbox name={name} onClick={onClickFn} />
     const wrapper = shallow(component)
+    const facade = wrapper.find(facadeSelector)
+    const input = wrapper.find(checkboxSelector)
 
-    expect(json).toHaveStyleRule('display', 'inline-flex')
-    expect(json).toHaveStyleRule(
+    // @TODO: test the onClick prop
+    expect(input).toBeDefined()
+    expect(input.prop('style')).toEqual({ opacity: 0, zIndex: -1 })
+    expect(facade).toBeDefined()
+    expect(facade).toHaveStyleRule('display', 'inline-flex')
+    expect(facade).toHaveStyleRule(
       'border',
       '2px solid ' + theme.colors.borderGray
     )
-    expect(wrapper.children().length).toEqual(1)
-    expect(wrapper.find('input').length).toEqual(1)
-    expect(wrapper.find('svg').length).toEqual(0)
-    expect(json.props.onClick).toBeDefined()
-    expect(json).toMatchSnapshot()
+    expect(wrapper.children().length).toEqual(2)
+    expect(wrapper).toMatchSnapshot()
   })
 
   test('renders with the theme passed specifically', () => {
-    const component = (
-      <Checkbox name={name} checkAction={checkActionFn} theme={theme} />
+    const wrapper = shallow(
+      <Checkbox name={name} onClick={onClickFn} theme={theme} />
     )
-    const json = renderer.create(component).toJSON()
-    const wrapper = shallow(component)
+    const facade = wrapper.find(facadeSelector)
 
-    expect(json).toHaveStyleRule('display', 'inline-flex')
-    expect(json).toHaveStyleRule(
+    expect(wrapper).toHaveStyleRule('display', 'inline-flex')
+    expect(facade).toHaveStyleRule(
       'border',
       '2px solid ' + theme.colors.borderGray
     )
-    expect(json).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 
-  test('renders checked when isChecked prop is passed as true', () => {
+  test('renders checked when defaultChecked prop is passed as true', () => {
     const component = (
-      <Checkbox name={name} isChecked={true} checkAction={checkActionFn} />
+      <Checkbox name={name} defaultChecked={true} onClick={onClickFn} />
     )
-    const wrapper = render(component)
+    const wrapper = mount(component)
+    const input = wrapper.find(checkboxSelector)
     const json = renderer.create(component).toJSON()
 
-    expect(json.children.length).toEqual(2)
-    expect(wrapper.find('svg').length).toEqual(1)
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
-    expect(json).toHaveStyleRule('border-color', theme.colors.blue)
+    expect(input.prop('defaultChecked')).toBe(true)
+    expect(wrapper).toHaveStyleRule('border-color', theme.colors.blue, {
+      modifier: ` input:checked + ${facadeSelector}`
+    })
+
+    expect(wrapper).toHaveStyleRule('background-color', theme.colors.blue, {
+      modifier: ` input:checked + ${facadeSelector}`
+    })
     expect(json).toMatchSnapshot()
   })
 
-  test('renders disabled when isDisabled props is passed as true', () => {
+  test('renders disabled when disabled props is passed as true', () => {
     const component = (
-      <Checkbox name={name} isDisabled={true} checkAction={checkActionFn} />
+      <Checkbox name={name} disabled={true} onClick={onClickFn} />
     )
     const componentChecked = (
       <Checkbox
         name={name}
-        isDisabled={true}
-        isChecked={true}
-        checkAction={checkActionFn}
+        disabled={true}
+        defaultChecked={true}
+        onClick={onClickFn}
       />
     )
-    const wrapper = render(component)
-    const wrapperChecked = render(componentChecked)
+    const wrapper = shallow(component)
+    const wrapperChecked = shallow(componentChecked)
     const json = renderer.create(component).toJSON()
     const jsonChecked = renderer.create(componentChecked).toJSON()
 
-    expect(json.children.length).toEqual(1)
-    expect(wrapper.find('svg').length).toEqual(0)
-    expect(json).toHaveStyleRule('background-color', theme.colors.white)
-    expect(json).toHaveStyleRule(
-      'border',
-      '2px solid ' + theme.colors.borderGray
+    expect(wrapper).toHaveStyleRule('opacity', '0.7')
+    expect(wrapper).toHaveStyleRule(
+      'background-color',
+      theme.colors.borderGray,
+      {
+        modifier: ` input:checked + ${facadeSelector}`
+      }
     )
-    expect(json).toHaveStyleRule('opacity', '0.5')
+
+    expect(wrapper).toHaveStyleRule('border-color', theme.colors.borderGray, {
+      modifier: ` input:checked + ${facadeSelector}`
+    })
+    expect(wrapper).toHaveStyleRule('opacity', '0.7')
     expect(json).toMatchSnapshot()
 
-    expect(jsonChecked.children.length).toEqual(2)
-    expect(wrapperChecked.find('svg').length).toEqual(1)
-    expect(jsonChecked).toHaveStyleRule(
+    expect(wrapperChecked).toHaveStyleRule('opacity', '0.7')
+    expect(wrapperChecked).toHaveStyleRule(
       'background-color',
-      theme.colors.borderGray
+      theme.colors.borderGray,
+      {
+        modifier: ` input:checked + ${facadeSelector}`
+      }
     )
-    expect(jsonChecked).toHaveStyleRule(
-      'border',
-      '2px solid ' + theme.colors.borderGray
+
+    expect(wrapperChecked).toHaveStyleRule(
+      'border-color',
+      theme.colors.borderGray,
+      { modifier: ` input:checked + ${facadeSelector}` }
     )
-    expect(jsonChecked).toHaveStyleRule('opacity', '0.5')
+    expect(wrapperChecked).toHaveStyleRule('opacity', '0.7')
+    expect(json).toMatchSnapshot()
     expect(jsonChecked).toMatchSnapshot()
   })
 
+  /** Not Testing wrapper.simulate('click) because enzyme won't pass it through to the checkbox
+   * We have to test the actual element receiving the event and the label 'click' causes a 'change'
+   * for the nested input. This also means we cannot accurately test that disabled checkboxes ignore clicks.
+   */
   test('updates and fires callback when clicked (when enabled)', () => {
-    const component = <Checkbox name={name} checkAction={checkActionFn} />
+    const component = <Checkbox name={name} onClick={onClickFn} />
     const wrapper = shallow(component)
     const json = renderer.create(component).toJSON()
 
-    expect(json.children.length).toEqual(1)
-    expect(wrapper.find('svg').length).toEqual(0)
-    expect(json).toHaveStyleRule('background-color', theme.colors.white)
-    expect(json).toHaveStyleRule(
-      'border',
-      '2px solid ' + theme.colors.borderGray
-    )
+    wrapper.find('input').simulate('change', fakeEvent)
+    expect(onClickFn).toHaveBeenCalled()
     expect(json).toMatchSnapshot()
-
-    wrapper.simulate('click')
-    expect(checkActionFn).toHaveBeenCalled()
-  })
-
-  test('does not fire callback when clicked (when disabled)', () => {
-    const component = (
-      <Checkbox
-        name={name}
-        isDisabled={true}
-        isChecked={false}
-        checkAction={checkActionFn}
-      />
-    )
-    const wrapper = shallow(component)
-
-    wrapper.simulate('click')
-    expect(checkActionFn).not.toHaveBeenCalled()
   })
 })
