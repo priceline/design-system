@@ -20,7 +20,7 @@ const DropdownButton = OutlineButton.extend.attrs({
   border-bottom-color: ${props => props.theme.colors.borderGray};
   border-left-color: ${props => props.theme.colors.borderGray};
   &:hover {
-    border-color: ${theme('colors.blue')};
+    border-color: ${props => props.theme.colors.blue};
   }
 `
 
