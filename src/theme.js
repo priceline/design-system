@@ -62,7 +62,21 @@ const darkPurple = '#407'
 const flatten = (name, colors) =>
   colors.reduce((a, b, i) => {
     const color = {
-      [name + i]: b
+      [name + i]: {
+        enumerable: true,
+        get() {
+          console.warn(
+            `Priceline Design System Warning: Using numbered colors like ${[
+              name + i
+            ]} will be deprecated in the next theme. Use light${name
+              .charAt(0)
+              .toUpperCase() + name.slice(1)}, ${name} or dark${name
+              .charAt(0)
+              .toUpperCase() + name.slice(1)} instead.`
+          )
+          return b
+        }
+      }
     }
     return { ...a, ...color }
   }, {})
@@ -74,7 +88,7 @@ const reds = [lightRed, lightRed, red, red]
 const oranges = [lightOrange, lightOrange, orange, orange]
 const purples = [lightPurple, lightPurple, purple, purple]
 
-export const colors = {
+const colors = {
   black,
   white,
   text,
@@ -101,14 +115,19 @@ export const colors = {
   greens,
   reds,
   oranges,
-  purples,
+  purples
+}
+
+Object.defineProperties(colors, {
   ...flatten('blue', blues),
   ...flatten('gray', grays),
   ...flatten('green', greens),
   ...flatten('red', reds),
   ...flatten('orange', oranges),
   ...flatten('purple', purples)
-}
+})
+
+export { colors }
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
@@ -136,7 +155,6 @@ const theme = {
   colors,
   radii,
   radius,
-  radii,
   boxShadows,
   maxContainerWidth
 }
