@@ -10,7 +10,7 @@ function type(props) {
       color: props.theme.colors.white
     },
     lightGreen: {
-      backgroundColor: props.theme.colors.green0,
+      backgroundColor: props.theme.colors.lightGreen,
       color: props.theme.colors.black
     },
     red: {
@@ -18,7 +18,7 @@ function type(props) {
       color: props.theme.colors.white
     },
     lightRed: {
-      backgroundColor: props.theme.colors.red0,
+      backgroundColor: props.theme.colors.lightRed,
       color: props.theme.colors.black
     },
     orange: {
@@ -26,7 +26,7 @@ function type(props) {
       color: props.theme.colors.white
     },
     lightOrange: {
-      backgroundColor: props.theme.colors.orange0,
+      backgroundColor: props.theme.colors.lightOrange,
       color: props.theme.colors.black
     },
     blue: {
@@ -34,7 +34,7 @@ function type(props) {
       color: props.theme.colors.white
     },
     lightBlue: {
-      backgroundColor: props.theme.colors.blue0,
+      backgroundColor: props.theme.colors.lightBlue,
       color: props.theme.colors.black
     }
   }
