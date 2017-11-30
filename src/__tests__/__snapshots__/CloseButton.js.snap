@@ -13,6 +13,7 @@ exports[`CloseButton renders without props 1`] = `
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
