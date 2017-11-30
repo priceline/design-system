@@ -4,6 +4,7 @@ import Card from './Card'
 import Flex from './Flex'
 import Icon from './Icon'
 import Text from './Text'
+import theme from './theme'
 import styled from 'styled-components'
 import { responsiveStyle } from 'styled-system'
 import PropTypes from 'prop-types'
@@ -23,7 +24,7 @@ const HugCard = styled(Card)`
 
 const BorderConcealer = styled(Box)`
   & > * {
-    border: 0;
+    border: 0 !important;
   }
 `
 
@@ -55,7 +56,8 @@ Hug.defaultProps = {
   borderWidth: 1,
   color: 'white',
   fontSize: 1,
-  p: 2
+  p: 2,
+  theme: theme
 }
 
 Hug.propTypes = {

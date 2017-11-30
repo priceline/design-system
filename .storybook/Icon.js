@@ -12,7 +12,7 @@ storiesOf('Icon', module)
       <Flex wrap>
         {keys.map(name => (
           <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
-            <Icon next name={name} size={48} />
+            <Icon legacy={false} name={name} size={48} />
             <Text fontSize={0}>{name}</Text>
           </Box>
         ))}

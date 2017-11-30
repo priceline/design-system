@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { space, fontSize, color, propTypes } from 'styled-system'
+import theme from './theme'
 
 const Label = styled.label`
   font-size: 10px;
@@ -16,7 +17,8 @@ Label.propTypes = {
 }
 
 Label.defaultProps = {
-  fontSize: '10px'
+  fontSize: '10px',
+  theme: theme
 }
 
 export default Label

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { space, theme, propTypes } from 'styled-system'
 import PropTypes from 'prop-types'
+import defaultTheme from './theme'
 
 const borders = ({ color, theme }) => {
   const borderColor = color ? theme.colors[color] : theme.colors.borderGray
@@ -49,6 +50,10 @@ Input.propTypes = {
   color: PropTypes.string,
   ...propTypes.borders,
   ...propTypes.space
+}
+
+Input.defaultProps = {
+  theme: defaultTheme
 }
 
 export default Input
