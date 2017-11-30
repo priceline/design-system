@@ -186,6 +186,26 @@ exports[`Icon arrowUp renders 1`] = `
 </svg>
 `;
 
+exports[`Icon attention renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 22 19"
+  width={24}
+>
+  <path
+    d="M12,12H10V8h2Zm0,4H10V14h2ZM0,19H22L11,0Z"
+  />
+</svg>
+`;
+
 exports[`Icon automatic renders 1`] = `
 .c0 {
   -webkit-flex: none;
