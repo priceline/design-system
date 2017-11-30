@@ -33,6 +33,7 @@ storiesOf('Text', module)
   .add('regular', () => <Text regular>Hello Regular</Text>)
   .add('bold', () => <Text bold>Hello Bold</Text>)
   .add('caps', () => <Text caps>Hello Caps</Text>)
+  .add('italic', () => <Text italic>Hello italic</Text>)
   .add('strikethrough', () => <Text.s>Hello Strikethrough</Text.s>)
   .add('margin', () => (
     <Text mt={4} mb={2}>
