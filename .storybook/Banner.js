@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf, action } from '@storybook/react'
-import { Box, Banner } from '../src'
+import { Box, Banner, Flex, Text } from '../src'
 
 storiesOf('Banner', module)
   .add('All bgs', () => (
@@ -737,5 +737,30 @@ storiesOf('Banner', module)
         iconName="star"
         iconSize={26}
       />
+    </Box>
+  ))
+  .add('With children', () => (
+    <Box>
+      <Banner p={2} mb={2} onClose={action('closed')}>
+        <Flex>
+          <Box bg={'pink'} p={2} width={1 / 2}>
+            Pink box!
+          </Box>
+          <Box bg={'red'} p={2} width={1 / 2}>
+            Red box!
+          </Box>
+        </Flex>
+      </Banner>
+      <Banner
+        textAlign="left"
+        mb={2}
+        p={2}
+        header="default"
+        onClose={action('closed')}
+      >
+        <Text bold italic>
+          I am a text component!
+        </Text>
+      </Banner>
     </Box>
   ))

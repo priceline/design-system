@@ -132,4 +132,15 @@ describe('Banner', () => {
     expect(json).toMatchSnapshot()
     expect(json).not.toHaveStyleRule('background-color', theme.colors.gray)
   })
+
+  test('renders content from children props', () => {
+    const json = renderer
+      .create(
+        <Banner>
+          <span>123</span>
+        </Banner>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
 })

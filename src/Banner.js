@@ -62,6 +62,7 @@ const Banner = props => {
         <Box width={1} align={props.textAlign}>
           <Heading.h5>{props.header}</Heading.h5>
           <Text.span fontSize={1}>{props.text}</Text.span>
+          {props.children}
         </Box>
         {!!props.onClose && (
           <CloseButton
@@ -84,7 +85,7 @@ Banner.propTypes = {
   iconName: PropTypes.string,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   textAlign: PropTypes.string
 }
 

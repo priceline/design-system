@@ -58,6 +58,93 @@ exports[`Banner only accepts preset colors 1`] = `
 </div>
 `;
 
+exports[`Banner renders content from children props 1`] = `
+.c0 {
+  background-color: #0a0;
+  color: #fff;
+}
+
+.c2 {
+  text-align: flex-start;
+}
+
+.c4 {
+  width: 100%;
+  text-align: left;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 32px;
+  margin-top: -2px;
+}
+
+.c5 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+<div
+  className="c0"
+  color="white"
+>
+  <div
+    className="c1 c2"
+  >
+    <svg
+      className="c3"
+      fill="currentcolor"
+      height={24}
+      mr={3}
+      mt="-2px"
+      viewBox="0 0 20 20"
+      width={24}
+    >
+      <path
+        d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+      />
+    </svg>
+    <div
+      className="c4"
+      width={1}
+    >
+      <h5
+        className="c5"
+        fontSize={2}
+      />
+      <span
+        className="c6"
+        fontSize={1}
+      />
+      <span>
+        123
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Banner renders with blue bg 1`] = `
 .c2 {
   text-align: flex-start;

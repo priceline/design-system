@@ -13,6 +13,10 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
   showIcon='false'
   textAlign='right'
 />
+
+<Banner>
+  This banner is rendering children instead of the text prop
+</Banner>
 ```
 
 Prop | Type | Description
