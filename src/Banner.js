@@ -61,7 +61,7 @@ const Banner = props => {
           !!props.showIcon && <Icon name={icon} mr={3} size={24} mt="-2px" />}
         <Box width={1} align={props.textAlign}>
           <Heading.h5>{props.header}</Heading.h5>
-          <Text.span fontSize={1}>{props.text}</Text.span>
+          <Text.span fontSize={1}>{props.children || props.text}</Text.span>
         </Box>
         {!!props.onClose && (
           <CloseButton

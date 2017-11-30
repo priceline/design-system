@@ -737,3 +737,11 @@ storiesOf('Banner', module)
       }
     />
   ))
+  .add('With text node child', () => (
+    <Banner textAlign="center" mb={2} p={2} header="custom text">
+      <Text.span>
+        this is pretty&nbsp;
+        <Text.span bold>COOL</Text.span>
+      </Text.span>
+    </Banner>
+  ))
