@@ -114,7 +114,7 @@ class App extends React.Component {
                       textDecoration: 'none'
                     }}
                   >
-                    <Image src="../logo.svg" MaxWidth="200" />
+                    <Image src="../logo.svg" />
                   </NavLink>
                   <Hide ml="auto" sm md lg xl>
                     <Button size="small" onClick={e => this.update(toggleMenu)}>
