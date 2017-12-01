@@ -2,7 +2,7 @@
 
 This component extends the `<Icon />` component, by allowing an `onClick` handler to be passed in as a prop. Hovering over the `<IconButton />` changes the cursor to a pointer.
 
-```jsx
+```.jsx
 <IconButton
   name='closeLight'
   size={14}

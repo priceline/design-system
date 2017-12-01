@@ -7,7 +7,7 @@ Use the `<BackgroundImage />` component to set a background image.
 <BackgroundImage
   height='256px'
   image='https://source.unsplash.com/bITjK6W2Alw/3200x1800'>
-  <Text color="white">Hello</Text>
+  <Heading.h2 color="white">Hello</Heading.h2>
 </BackgroundImage>
 ```
 

@@ -3,7 +3,7 @@
 
 Use `<Banner />` component to create a box with a optional header, text, optional left-hand icon, optional right-hand close button, and palette color scheme.
 
-```jsx
+```.jsx
 <Banner
   bg='green'
   header='Banner'
@@ -11,8 +11,8 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
   iconSize={20}
   text='This is a banner'
   onClose={() => {}}
-  showIcon='false'
-  textAlign='right'
+  showIcon={false}
+  textAlign='left'
 />
 ```
 
