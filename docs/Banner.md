@@ -11,7 +11,7 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
   iconSize={20}
   text='This is a banner'
   onClose={() => {}}
-  showIcon={false}
+  showIcon={true}
   textAlign='left'
 />
 ```
