@@ -98,6 +98,7 @@ const Table = styled(props => (
   }
 
   & td {
+    font-size: 14px;
     color: ${theme('colors.gray')};
     vertical-align: top;
     padding-right: 16px !important;

@@ -7,7 +7,7 @@ const Code = styled.code`
 `
 
 Code.defaultProps = {
-  fontSize: 2,
+  fontSize: 1,
   color: 'blue'
 }
 

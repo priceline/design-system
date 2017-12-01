@@ -105,7 +105,6 @@ const Color = props => (
       <ColorList colors={lights} />
       <ColorList colors={darks} />
     </Flex>
-    <Divider my={4} />
     <Pagination {...props} />
   </Box>
 )

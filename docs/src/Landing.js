@@ -34,7 +34,7 @@ const Landing = props => {
       <Box p={[2, 4]}>
         <Container maxWidth={768}>
           <PageTitle>Priceline One</PageTitle>
-          <Text fontSize={3} mb={2}>
+          <Text fontSize={3} mb={2} color="gray">
             {props.pkg.description}
           </Text>
           <Text fontSize={1}>v{props.pkg && props.pkg.version}</Text>
@@ -44,7 +44,7 @@ const Landing = props => {
             <Button.a
               m={2}
               href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
-              children="Sketch Download"
+              children="Sketch Library Download"
               target="_blank"
               style={{ lineHeight: '40px', fontWeight: '500' }}
             />

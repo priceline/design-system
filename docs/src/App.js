@@ -156,7 +156,7 @@ class App extends React.Component {
                   path="/"
                   render={() => <Landing {...this.props} />}
                 />
-                <Container maxWidth={768}>
+                <Container maxWidth={868}>
                   {sections.map(section =>
                     section.pages.map((page, i) => (
                       <Route

@@ -27,7 +27,6 @@ const Typography = props => (
         </Heading>
       ))}
     </Box>
-    <Divider my={4} />
     <Pagination {...props} />
   </Box>
 )
