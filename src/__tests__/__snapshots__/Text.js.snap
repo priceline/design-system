@@ -30,6 +30,16 @@ exports[`Text caps prop sets text-transform 1`] = `
 />
 `;
 
+exports[`Text italic prop sets font-style 1`] = `
+.c0 {
+  font-style: italic;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
   margin-top: 8px;
