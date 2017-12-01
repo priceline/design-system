@@ -1,5 +1,5 @@
 
-# Contributing
+# Contributing 
 
 If you'd like to contribute to the design system, we'd love to have your help.
 As with any open source project, we ask that you be nice, professional, and courteous towards others.

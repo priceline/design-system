@@ -9,15 +9,16 @@ const BaseNavItem = styled.a`
   font-size: ${theme('fontSizes.1')}px;
   border-radius: ${theme('radius')};
   ${space} ${color} &:hover {
-    box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 0 0 9999px rgba(0, 122, 255, 0.16);
   }
   &.active {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: #07f;
   }
 `
 BaseNavItem.defaultProps = {
-  px: 2,
+  pl: 3,
+  pr: 2,
   py: 2,
   color: 'inherit'
 }

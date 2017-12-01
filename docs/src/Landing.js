@@ -16,7 +16,7 @@ import Markdown from './Markdown'
 
 Button.a = Button.withComponent('a')
 
-const image = `https://images.unsplash.com/photo-1508522109214-4df07c2e9d90?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=ad8b7153fe7b431953e6d22c3d869960`
+const image = `https://source.unsplash.com/bITjK6W2Alw/3200x1800`
 
 const Landing = props => {
   const gettingStarted = props.content.find(c => c.name === 'GettingStarted')
@@ -26,12 +26,10 @@ const Landing = props => {
       <BackgroundImage
         height="50vh"
         image={image}
-        style={
-          {
-            // backgroundPosition: 'bottom center',
-            // backgroundAttachment: 'fixed'
-          }
-        }
+        style={{
+          backgroundPosition: '50% 100%',
+          backgroundAttachment: 'fixed'
+        }}
       />
       <Box p={[2, 4]}>
         <Container maxWidth={768}>
@@ -39,7 +37,7 @@ const Landing = props => {
           <Text fontSize={3} mb={2}>
             {props.pkg.description}
           </Text>
-          <Text fontSize={0}>v{props.pkg && props.pkg.version}</Text>
+          <Text fontSize={1}>v{props.pkg && props.pkg.version}</Text>
           <Divider my={4} />
           <Flex wrap mx={-2} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
@@ -47,6 +45,8 @@ const Landing = props => {
               m={2}
               href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
               children="Sketch Download"
+              target="_blank"
+              style={{ lineHeight: '40px', fontWeight: '500' }}
             />
           </Flex>
           <Box py={5}>

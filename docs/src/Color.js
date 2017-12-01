@@ -21,28 +21,34 @@ const darks = colors.filter(color => /^dark/.test(color.name))
 const lights = colors.filter(color => /^light/.test(color.name))
 
 const ColorChip = styled(Box)`
-  height: 0;
-  padding-bottom: 75%;
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  transition: all 0.1s ease;
 `
 
 const HexButton = styled.button`
   display: inline-block;
   font-family: inherit;
-  font-size: 10px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   color: inherit;
+  text-align: left;
   background-color: transparent;
   border: 0;
   border-radius: 0;
   appearance: none;
-  opacity: 0.75;
   transition-property: opacity;
   transition-duration: 0.125s;
   transition-timing-function: ease-out;
 
   &:active {
     color: ${props => props.theme.colors.blue};
+  }
+
+  &:active > ${ColorChip} {
+    transform: scale(0.9);
   }
 
   & > span {
@@ -59,11 +65,13 @@ const HexButton = styled.button`
 
 const ColorCard = ({ name, value }) => (
   <Box>
-    <ColorChip bg={value} mb={1} />
-    <Text fontSize={0}>{name}</Text>
     <CopyButton text={value}>
       <HexButton>
-        <Code fontSize="inherit" color="inherit">
+        <ColorChip bg={value} mb={1} />
+        <Text fontSize={1} align="left" color="text">
+          {name}
+        </Text>
+        <Code fontSize={1} align="left" color="gray">
           {value}
         </Code>{' '}
         <span>

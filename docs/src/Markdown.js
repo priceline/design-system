@@ -85,23 +85,30 @@ const Table = styled(props => (
   width: 100%;
   ${space} & th {
     text-align: left;
-    font-weight: bold;
-    vertical-align: bottom;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.lightGray')};
+    border-bottom-color: ${theme('colors.borderGray')};
+  }
+
+  & td:first-child {
+    font-family: 'Roboto Mono', Menlo, monospace;
+    font-size: 14px;
+    min-width: 150px;
+    color: ${theme('colors.blue')};
   }
 
   & td {
+    color: ${theme('colors.gray')};
     vertical-align: top;
+    padding-right: 16px !important;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.lightGray')};
+    border-bottom-color: ${theme('colors.borderGray')};
   }
 
   & th,
   & td {
-    padding: 4px;
+    padding: 16px 0;
     line-height: inherit;
   }
 `
@@ -131,7 +138,7 @@ const defaultScope = {
   h5: heading('h5'),
   h6: heading('h6'),
   a: Link,
-  p: p => <Text.p {...p} />,
+  p: p => <Text.p color="gray" {...p} />,
   pre: CodeBlock,
   code: Code,
   table: Table
@@ -140,7 +147,7 @@ const defaultScope = {
 // Markdown components typography and margins
 // can be set with defaultProps
 defaultScope.h1.defaultProps = {
-  fontSize: [4, 5, null, 6],
+  fontSize: 5,
   mt: 4,
   mb: 3
 }

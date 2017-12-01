@@ -15,7 +15,7 @@ import Code from './Code'
 import BlockLink from './BlockLink'
 import Pagination from './Pagination'
 
-const iconNames = Object.keys(icons).filter(key => key !== 'legacy')
+// const iconNames = Object.keys(icons).filter(key => key !== 'legacy')
 
 const Column = props => (
   <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 5]} mb={3} px={2} />
@@ -54,7 +54,7 @@ const Iconography = props => (
   <Box px={3} pt={4} pb={6}>
     <PageTitle>Iconography</PageTitle>
     <Description>
-      The design system includes icons based on Google's Material Design Icons.
+      The design system includes icons based on Googles Material Design Icons.
     </Description>
     <Flex wrap mx={-2} py={4}>
       <IconList icons={iconNames} />

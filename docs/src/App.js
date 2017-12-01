@@ -9,7 +9,9 @@ import {
   Link,
   Hide,
   Container,
-  Button
+  Button,
+  Image,
+  colors
 } from 'pcln-design-system'
 import Landing from './Landing'
 import Color from './Color'
@@ -78,26 +80,42 @@ class App extends React.Component {
             >
               <StickyBar
                 open={menuOpen}
-                width={[1, 256]}
+                width={[1, 240]}
                 px={3}
-                pt={2}
+                pt={0}
                 pb={5}
                 color="white"
                 bg="text"
+                style={{
+                  WebkitFontSmoothing: 'antialiased',
+                  MozOsxFontSmoothing: 'grayscale'
+                }}
               >
-                <Flex align="center" px={2} py={2} mb={3}>
-                  <Heading.h1 fontSize={3}>
-                    <NavLink
-                      to="/"
-                      style={{
-                        display: 'block',
-                        color: 'inherit',
-                        textDecoration: 'none'
-                      }}
-                    >
-                      Priceline One
-                    </NavLink>
-                  </Heading.h1>
+                <Flex
+                  align="center"
+                  px={2}
+                  pt={4}
+                  pb={3}
+                  mb={3}
+                  bg="text"
+                  style={{
+                    position: 'sticky',
+                    top: '0',
+                    borderBottomColor: 'rgba(255,255,255,0.2)',
+                    borderBottomWidth: '1px',
+                    borderBottomStyle: 'solid'
+                  }}
+                >
+                  <NavLink
+                    to="/"
+                    style={{
+                      display: 'block',
+                      color: 'inherit',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    <Image src="../logo.svg" MaxWidth="200" />
+                  </NavLink>
                   <Hide ml="auto" sm md lg xl>
                     <Button size="small" onClick={e => this.update(toggleMenu)}>
                       Menu
@@ -109,15 +127,9 @@ class App extends React.Component {
                 </NavItem>
                 {sections.filter(s => !!s).map(section => (
                   <Box key={section.name} onClick={e => this.update(closeMenu)}>
-                    <Heading
-                      color="rgba(255, 255, 255, .32)"
-                      p={2}
-                      bold
-                      caps
-                      fontSize={0}
-                    >
+                    <Heading.h6 color="gray" p={2}>
                       {section.name}
-                    </Heading>
+                    </Heading.h6>
                     {section.pages.map(page => (
                       <NavItem
                         key={page.name}
@@ -191,22 +203,25 @@ const pages = [
     name: 'Components',
     // Component markdown docs can be added here
     pages: [
-      'Box',
-      'Flex',
-      'Hide',
-      'Container',
-      'Text',
-      'Heading',
-      'Link',
-      'Truncate',
-      'Button',
-      'Image',
       'BackgroundImage',
-      'Icon',
       'Badge',
-      'Divider',
+      'Banner',
+      'Box',
+      'Button',
       'Card',
-      'Hug'
+      'Container',
+      'Divider',
+      'Flag',
+      'Flex',
+      'Heading',
+      'Hide',
+      'Hug',
+      'Icon',
+      'Input',
+      'Image',
+      'Link',
+      'Text',
+      'Truncate'
     ]
   },
   {
