@@ -21,6 +21,9 @@ Use the `<Text />` component to control font size, weight, alignment, and color.
 // All-caps
 <Text caps />
 
+// Italic style
+<Text italic />
+
 // Blue text from the color palette
 <Text color='blue' />
 ```
@@ -32,6 +35,7 @@ align | string | Sets the `text-align` property
 regular | boolean | Sets `font-weight: props.theme.regular`
 bold | boolean | Sets `font-weight: props.theme.bold`
 caps | boolean | Sets styles for all-caps type treatments
+italic | boolean | Sets styles for italic type treatments
 color | string | Sets color based on the theme's color palette
 m | number, string, or array | Sets margin based on the `theme.space` scale
 mt | number, string, or array | Sets margin-top
