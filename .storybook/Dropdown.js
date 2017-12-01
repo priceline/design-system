@@ -30,17 +30,13 @@ storiesOf('Dropdown', module)
       <DropdownButton>
         <Flex justify="space-between" align="center" mx={-2}>
           <Icon name="key" size={24} color="blue" />
-          <LabelExtended
-            width={4}
-            fontSize={1}
-            px={2}
-            align="left"
-            color="black"
-          >
-            <LabelTextContainer maxWidth={135}>
-              {numOfRooms} Room
-            </LabelTextContainer>
-          </LabelExtended>
+          <Box align="left" width="100%">
+            <LabelExtended width={4} fontSize={1} px={2} color="black">
+              <LabelTextContainer maxWidth={135}>
+                {numOfRooms} Room
+              </LabelTextContainer>
+            </LabelExtended>
+          </Box>
           <Icon name="chevronDown" size={12} color="black" />
         </Flex>
       </DropdownButton>
@@ -72,17 +68,13 @@ storiesOf('Dropdown', module)
         >
           <Flex justify="space-between" align="center" mx={-2}>
             <Icon name="key" size={24} color="blue" />
-            <LabelExtended
-              width={4}
-              fontSize={1}
-              pl={2}
-              align="left"
-              color="black"
-            >
-              <LabelTextContainer maxWidth={135}>
-                {numOfRooms} Room
-              </LabelTextContainer>
-            </LabelExtended>
+            <Box align="left" width="100%">
+              <LabelExtended width={4} fontSize={1} pl={2} color="black">
+                <LabelTextContainer maxWidth={135}>
+                  {numOfRooms} Room
+                </LabelTextContainer>
+              </LabelExtended>
+            </Box>
             <Box mr={-2}>
               <Icon name="chevronUp" size={24} color="black" />
             </Box>

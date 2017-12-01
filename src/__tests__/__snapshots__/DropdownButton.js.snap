@@ -7,6 +7,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders with "ariaCont
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -70,6 +71,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders with "ariaExpa
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -133,6 +135,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders with "ariaExpa
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -196,6 +199,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders with "ariaHasp
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -259,6 +263,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders with "cursor" 
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -324,6 +329,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders with "id" prop
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -387,6 +393,7 @@ exports[`<DropdownButton /> tested by react-test-renderer renders without any pr
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
