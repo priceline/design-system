@@ -32,6 +32,12 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('text-transform', 'uppercase')
   })
 
+  test('italic prop sets font-style', () => {
+    const json = renderer.create(<Text italic theme={theme} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('font-style', 'italic')
+  })
+
   test('fontSize prop sets font-size', () => {
     const f0 = renderer.create(<Text fontSize={0} />).toJSON()
     const f1 = renderer.create(<Text fontSize={1} />).toJSON()

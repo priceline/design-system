@@ -2,118 +2,161 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import styled from 'styled-components'
-import { Box, Flex, Text, InputField, Input } from '../src'
+import { Box, Flex, Text, InputField, Label, Input, Icon } from '../src'
 
 storiesOf('InputField', module)
   .add(
-    'InputField component',
-    withInfo({
-      inline: true,
-      text:
-        'This component renders an input element with a built-in label and optional icon. It makes use of the Input and Label components.'
-    })(() => (
-      <Box width={500} pr={3}>
-        <Text bold pt={4} pb={2}>
-          Hey, ya turkey! Enter a word that has 5 characters in it.
+  'InputField component',
+  withInfo({
+    inline: true,
+    text:
+      'This component renders an input element with a built-in label and optional icon. It makes use of the Input and Label components.'
+  })(() => (
+    <Box width={500} pr={3}>
+      <Text bold pt={4} pb={2}>
+        Hey, ya turkey! Enter a word that has 5 characters in it.
         </Text>
-        <InputController>
-          <InputField
-            icon="amenityPool"
-            label="A 5 Letter Word"
-            id="form-field-3"
-            placeholder="e.g. Berry"
-          />
-        </InputController>
-      </Box>
-    ))
+      <InputController>
+        <InputField onChange={() => {}}>
+          <Label>5 Letter Word</Label>
+          <Icon name="amenityPool" />
+          <Input id="form-field" placeholder="Enter a 5 letter word" />
+          <Icon name="fitness" />
+        </InputField>
+      </InputController>
+    </Box>
+  ))
   )
   .add(
-    'Sample States',
-    withInfo('Renders a styled Input element')(() => (
-      <div>
-        <Flex width={900}>
-          <Box width={1 / 2} pr={3}>
-            <Text bold pt={4} pb={2}>
-              Credit Card
+  'Sample States',
+  withInfo('Renders a styled Input element')(() => (
+    <div>
+      <Flex width={900}>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            Placeholder with Chevron
             </Text>
-            <InputField
-              icon="locked"
-              label="Card number"
-              id="form-field-3"
-              placeholder="0000 0000 0000 0000"
-            />
-          </Box>
-          <Box width={1 / 2} pl={3}>
-            <Text bold pt={4} pb={2}>
-              Credit Card Number
+          <InputField onChange={() => {}}>
+            <Input id="form-field-1" placeholder="Placeholder" />
+            <Icon name="chevronDown" size="12" />
+          </InputField>
+        </Box>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            Placeholder with Icon
             </Text>
-            <InputField
-              icon="locked"
-              id="form-field-4"
-              label="Card number"
-              placeholder="0000 0000 0000 0000"
-              defaultValue="4193 8827 0316 3529"
-            />
-          </Box>
-        </Flex>
+          <InputField onChange={() => {}}>
+            <Icon name="search" color="blue" size="18" />
+            <Input id="form-field-3" placeholder="Placeholder with Icon" />
+          </InputField>
+        </Box>
+      </Flex>
+      <Flex width={900}>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            Plain Text
+            </Text>
+          <InputField onChange={() => {}}>
+            <Input id="form-field-1" defaultValue="Plain text" />
+            <Icon name="chevronDown" size="12" />
+          </InputField>
+        </Box>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            Plain Text with Icon
+            </Text>
+          <InputField onChange={() => {}}>
+            <Icon name="user" color="blue" />
+            <Input id="form-field-1" defaultValue="Plain text with Icon" />
+            <Icon name="chevronDown" size="12" />
+          </InputField>
+        </Box>
+      </Flex>
+      <Flex width={900}>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            With Label and Blue Outline
+            </Text>
+          <InputField color="blue" onChange={() => {}}>
+            <Label>Label</Label>
+            <Input id="form-field-3" defaultValue="Typing Text" />
+          </InputField>
+        </Box>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            With Label, Icon, and Chevron
+            </Text>
+          <InputField color="blue" onChange={() => {}}>
+            <Icon name="user" color="blue" />
+            <Label>Label</Label>
+            <Input id="form-field-3" defaultValue="Typing text with Icon" />
+            <Icon name="chevronDown" size="12" />
+          </InputField>
+        </Box>
+      </Flex>
 
-        <Flex width={900}>
-          <Box width={1 / 2} pr={3}>
-            <Text bold pt={4} pb={2}>
-              Unfocused Field
+      <Flex width={900}>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            Email Address with Form Validation
             </Text>
-            <InputField
-              id="form-field-1"
-              label="First name"
-              defaultValue="Oliver"
-              placeholder="e.g. Oliver"
-            />
-          </Box>
-          <Box width={1 / 2} pl={3}>
-            <Text bold pt={4} pb={2}>
-              Focused Field or Passed Blue
+          <InputField color="red" onChange={() => {}}>
+            <Label>Email address</Label>
+            <Input id="form-field-3" defaultValue="olvier@examp" />
+            <Icon name="warning" color="red" size="20" />
+          </InputField>
+        </Box>
+        <Box width={1 / 2} pl={3}>
+          <Text bold pt={4} pb={2}>
+            Email Address with Form Validation 2
             </Text>
-            <InputField
-              id="form-field-2"
-              label="Last name"
-              defaultValue="Dumoulin"
-              placeholder="e.g. Dumoulin"
-              color="blue"
-            />
-          </Box>
-        </Flex>
+          <InputField color="green" onChange={() => {}}>
+            <Label>Email address</Label>
+            <Input id="form-field-3" defaultValue="olvier@example.com" />
+            <Icon name="success" color="green" size="20" />
+          </InputField>
+        </Box>
+      </Flex>
+    </div>
+  ))
+  )
 
-        <Flex width={900}>
-          <Box width={1 / 2} pr={3}>
-            <Text bold pt={4} pb={2}>
-              Validation Error
+  .add(
+  'State Flow',
+  withInfo('This example demonstrates how the input will behave as the user interacts with it step by step')(() => (
+    <Flex width={900}>
+      <Box width={1 / 3} pl={3}>
+        <Text bold pt={4} pb={2}>
+          No User Interaction
             </Text>
-            <InputField
-              icon="circleInfo"
-              color="red"
-              info="Please enter a valid email address"
-              label="Email Address"
-              defaultValue="oliver.dumoulin@priceline.c"
-              id="form-field-3"
-              placeholder="example@test.com"
-            />
-          </Box>
-          <Box width={1 / 2} pl={3}>
-            <Text bold pt={4} pb={2}>
-              Validation Success
-            </Text>
-            <InputField
-              icon="checkLight"
-              color="darkGreen"
-              label="Email Address"
-              defaultValue="oliver.dumoulin@priceline.com"
-              id="form-field-3"
-              placeholder="example@test.com"
-            />
-          </Box>
-        </Flex>
-      </div>
-    ))
+        <InputField onChange={() => {}}>
+          <Label>Drop-off Location</Label>
+          <Icon name='search' color="blue" size="18" />
+          <Input id="drop-off" placeholder="Enter a drop-off location" />
+        </InputField>
+      </Box>
+      <Box width={1 / 3} pl={3}>
+        <Text bold pt={4} pb={2}>
+          User Clicks in Box
+          </Text>
+        <InputField onChange={() => {}}>
+          <Label>Drop-off Location</Label>
+          <Icon name='search' color="blue" size="18" />
+          <Input id="drop-off" color="blue" placeholder="Enter a drop-off location" />
+        </InputField>
+      </Box>
+      <Box width={1 / 3} pl={3}>
+        <Text bold pt={4} pb={2}>
+          User Types a Value
+        </Text>
+        <InputField onChange={() => {}}>
+          <Label>Drop-off Location</Label>
+          <Icon name='search' color="blue" size="18" />
+          <Input id="drop-off" color="blue" defaultValue="New York" placeholder="Enter a drop-off location" />
+        </InputField>
+      </Box>
+    </Flex>
+  ))
   )
 
 class InputController extends React.PureComponent {
@@ -142,7 +185,7 @@ class InputController extends React.PureComponent {
     }
   }
 
-  render() {
+  render () {
     return React.cloneElement(React.Children.only(this.props.children), {
       onChange: this.onChange,
       color: this.getBorderColor(),

@@ -40,6 +40,7 @@ const Button = styled.button`
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
