@@ -20,50 +20,46 @@ describe('Checkbox', () => {
     const wrapper = shallow(component)
     const facade = wrapper.find(facadeSelector)
     const input = wrapper.find(checkboxSelector)
+    const json = renderer.create(component).toJSON()
 
-    // @TODO: test the onClick prop
-    expect(input).toBeDefined()
-    expect(input.prop('style')).toEqual({ opacity: 0, zIndex: -1 })
-    expect(facade).toBeDefined()
-    expect(facade).toHaveStyleRule('display', 'inline-flex')
-    expect(facade).toHaveStyleRule(
-      'border',
-      '2px solid ' + theme.colors.borderGray
-    )
-    expect(wrapper.children().length).toEqual(2)
-    expect(wrapper).toMatchSnapshot()
+    expect(json.type).toBe('label')
+    expect(input.prop('style')).toEqual({
+      opacity: 0,
+      zIndex: -1,
+      position: 'absolute'
+    })
+    expect(wrapper.children().length).toBe(2)
+    expect(facade.children().length).toBe(1)
+    expect(json).toMatchSnapshot()
   })
 
   test('renders with the theme passed specifically', () => {
-    const wrapper = shallow(
-      <Checkbox name={name} onClick={onClickFn} theme={theme} />
-    )
+    const component = <Checkbox name={name} onClick={onClickFn} theme={theme} />
+    const wrapper = shallow(component)
     const facade = wrapper.find(facadeSelector)
+    const input = wrapper.find(checkboxSelector)
+    const json = renderer.create(component).toJSON()
 
-    expect(wrapper).toHaveStyleRule('display', 'inline-flex')
-    expect(facade).toHaveStyleRule(
-      'border',
-      '2px solid ' + theme.colors.borderGray
-    )
-    expect(wrapper).toMatchSnapshot()
+    expect(json.type).toBe('label')
+    expect(input.prop('style')).toEqual({
+      opacity: 0,
+      zIndex: -1,
+      position: 'absolute'
+    })
+    expect(wrapper.children().length).toBe(2)
+    expect(facade.children().length).toBe(1)
+    expect(json).toMatchSnapshot()
   })
 
   test('renders checked when defaultChecked prop is passed as true', () => {
     const component = (
       <Checkbox name={name} defaultChecked={true} onClick={onClickFn} />
     )
-    const wrapper = mount(component)
+    const wrapper = shallow(component)
     const input = wrapper.find(checkboxSelector)
     const json = renderer.create(component).toJSON()
 
     expect(input.prop('defaultChecked')).toBe(true)
-    expect(wrapper).toHaveStyleRule('border-color', theme.colors.blue, {
-      modifier: ` input:checked + ${facadeSelector}`
-    })
-
-    expect(wrapper).toHaveStyleRule('background-color', theme.colors.blue, {
-      modifier: ` input:checked + ${facadeSelector}`
-    })
     expect(json).toMatchSnapshot()
   })
 
@@ -79,41 +75,10 @@ describe('Checkbox', () => {
         onClick={onClickFn}
       />
     )
-    const wrapper = shallow(component)
-    const wrapperChecked = shallow(componentChecked)
+
     const json = renderer.create(component).toJSON()
     const jsonChecked = renderer.create(componentChecked).toJSON()
 
-    expect(wrapper).toHaveStyleRule('opacity', '0.7')
-    expect(wrapper).toHaveStyleRule(
-      'background-color',
-      theme.colors.borderGray,
-      {
-        modifier: ` input:checked + ${facadeSelector}`
-      }
-    )
-
-    expect(wrapper).toHaveStyleRule('border-color', theme.colors.borderGray, {
-      modifier: ` input:checked + ${facadeSelector}`
-    })
-    expect(wrapper).toHaveStyleRule('opacity', '0.7')
-    expect(json).toMatchSnapshot()
-
-    expect(wrapperChecked).toHaveStyleRule('opacity', '0.7')
-    expect(wrapperChecked).toHaveStyleRule(
-      'background-color',
-      theme.colors.borderGray,
-      {
-        modifier: ` input:checked + ${facadeSelector}`
-      }
-    )
-
-    expect(wrapperChecked).toHaveStyleRule(
-      'border-color',
-      theme.colors.borderGray,
-      { modifier: ` input:checked + ${facadeSelector}` }
-    )
-    expect(wrapperChecked).toHaveStyleRule('opacity', '0.7')
     expect(json).toMatchSnapshot()
     expect(jsonChecked).toMatchSnapshot()
   })

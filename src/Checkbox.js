@@ -40,7 +40,7 @@ class Checkbox extends React.Component {
           defaultChecked={checked || defaultChecked}
           {...restProps}
           onChange={e => this.handleClick(e)}
-          style={{ opacity: 0, zIndex: -1 }}
+          style={{ opacity: 0, zIndex: -1, position: 'absolute' }}
         />
         <StyledCheckbox
           data-test="checkbox-facade"
@@ -66,7 +66,6 @@ const droppedOpacity = css`
 const StyledLabel = Label.extend`
   display: inline-flex;
   align-items: center;
-  width: auto;
   ${props => (props.disabled ? droppedOpacity : 'cursor: pointer;')};
 
   input:not(:checked) + [data-test='checkbox-facade'] {
