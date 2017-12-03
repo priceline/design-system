@@ -4,17 +4,30 @@ import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import Icon from './Icon'
 import Text from './Text'
+import Input from './Input'
+
+const propTypes = {
+  onClick: PropTypes.func,
+  isSelected: PropTypes.bool,
+  disabled: PropTypes.bool,
+  name: PropTypes.string,
+  value: PropTypes.string
+}
 
 const RadioButton = ({
   className,
-  theme,
   onClick,
   isSelected,
   disabled,
-  radioButtonText
+  name,
+  value
 }) => {
   const radioIconName = isSelected ? 'radioFilled' : 'radio'
   const radioIconColor = isSelected ? 'blue' : 'borderGray'
+
+  const testID = isSelected
+    ? 'SELECTED'
+    : disabled ? 'DISABLED' : 'NOT_SELECTED'
 
   function handleClick() {
     if (disabled || isSelected) return
@@ -22,37 +35,21 @@ const RadioButton = ({
   }
 
   return (
-    <RadioButtonWrap
+    <div
       className={className}
       onClick={handleClick}
-      isSelected={isSelected}
-      disabled={disabled}
-      theme={theme}
+      data-test-id={`RADIO_BUTTON_${testID}`}
     >
-      <RadioIconWrap>
+      <IconWrap isSelected={isSelected} disabled={disabled}>
         <Icon name={radioIconName} size={24} color={radioIconColor} />
-      </RadioIconWrap>
-      <Text.span pl={4}>{radioButtonText}</Text.span>
-    </RadioButtonWrap>
+      </IconWrap>
+      <RadioInput type="radio" name={name} value={value} />
+    </div>
   )
 }
 
-const RadioButtonWrap = styled.label`
-  position: relative;
-  cursor: ${props => (props.isSelected || props.disabled ? null : 'pointer')};
-
-  font-weight: ${props =>
-    props.isSelected ? props.theme.bold : props.theme.regular};
-
-  ${props =>
-    props.disabled ? `color: ${props.theme.colors.borderGray};` : null};
-
+const IconWrap = styled.span`
   &:hover {
-    ${props =>
-      props.isSelected || props.disabled
-        ? null
-        : `color: ${props.theme.colors.blue};`};
-
     svg {
       ${props =>
         props.isSelected || props.disabled
@@ -62,10 +59,11 @@ const RadioButtonWrap = styled.label`
   }
 `
 
-const RadioIconWrap = styled.span`
-  position: absolute;
-  height: 24px;
-  top: -2px;
+const RadioInput = styled(Input)`
+  visibility: hidden;
+  display: inline;
 `
+
+RadioButton.propTypes = propTypes
 
 export default RadioButton
