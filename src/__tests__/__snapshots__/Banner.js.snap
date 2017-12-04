@@ -576,8 +576,8 @@ exports[`Banner renders with lightOrange bg 1`] = `
 }
 
 .c0 {
-  background-color: #fec;
-  color: #950;
+  background-color: #feb;
+  color: #a50;
 }
 
 .c1 {
@@ -828,7 +828,7 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c0 {
-  background-color: #f90;
+  background-color: #fa0;
   color: #fff;
 }
 
