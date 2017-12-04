@@ -100,10 +100,7 @@ class App extends React.Component {
                   bg="text"
                   style={{
                     position: 'sticky',
-                    top: '0',
-                    borderBottomColor: 'rgba(255,255,255,0.2)',
-                    borderBottomWidth: '1px',
-                    borderBottomStyle: 'solid'
+                    top: '0'
                   }}
                 >
                   <NavLink
@@ -140,7 +137,10 @@ class App extends React.Component {
                     ))}
                   </Box>
                 ))}
-                <NavItem href="https://github.com/pricelinelabs/design-system">
+                <NavItem
+                  href="https://github.com/pricelinelabs/design-system"
+                  style={{ marginBottom: '24px' }}
+                >
                   GitHub
                 </NavItem>
               </StickyBar>
@@ -218,6 +218,7 @@ const pages = [
       'Hug',
       'Icon',
       'Input',
+      'InputField',
       'Image',
       'Link',
       'Text',

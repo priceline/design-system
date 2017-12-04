@@ -14,11 +14,10 @@ const BaseNavItem = styled.a`
   &.active {
     opacity: 1;
     background-color: #07f;
-    font-weight: bold;
   }
 `
 BaseNavItem.defaultProps = {
-  pl: 3,
+  pl: 4,
   pr: 2,
   py: 2,
   color: 'inherit'

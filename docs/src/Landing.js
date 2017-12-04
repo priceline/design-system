@@ -24,6 +24,7 @@ const Landing = props => {
   return (
     <Box>
       <Box
+        px={[2, 4]}
         height="50vh"
         style={{
           background: 'linear-gradient(45deg, #07f 40%, #049)'

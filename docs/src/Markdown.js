@@ -99,7 +99,7 @@ const Table = styled(props => (
 
   & td {
     font-size: 14px;
-    color: ${theme('colors.gray')};
+    color: ${theme('colors.text')};
     vertical-align: top;
     padding-right: 16px !important;
     border-bottom-width: 1px;
@@ -139,7 +139,7 @@ const defaultScope = {
   h5: heading('h5'),
   h6: heading('h6'),
   a: Link,
-  p: p => <Text.p color="gray" {...p} />,
+  p: p => <Text.p {...p} />,
   pre: CodeBlock,
   code: Code,
   table: Table
