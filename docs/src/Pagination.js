@@ -7,7 +7,7 @@ const Pagination = ({ index, pages }) => {
   const next = pages[index + 1]
 
   return (
-    <Card boxShadowSize="md" borderWidth="0" px={4} py={4} mt={4}>
+    <Card borderWidth="0" bg="lightGray" px={4} py={4} mt={4}>
       <Flex>
         {previous && (
           <Link to={'/' + previous.name}>

@@ -23,33 +23,49 @@ const Landing = props => {
     .content
   return (
     <Box>
-      <BackgroundImage
+      <Box
         height="50vh"
-        image={image}
         style={{
-          backgroundPosition: '50% 100%',
-          backgroundAttachment: 'fixed'
+          background: 'linear-gradient(45deg, #07f 40%, #049)'
         }}
-      />
+      >
+        <Flex
+          align="center"
+          style={{
+            height: '50vh',
+            textAlign: 'left'
+          }}
+        >
+          <Container
+            maxWidth={768}
+            style={{
+              width: '100%'
+            }}
+          >
+            <PageTitle mt={0} color="white">
+              Priceline One
+            </PageTitle>
+            <Text fontSize={4} mb={2}>
+              {props.pkg.description}
+            </Text>
+            <Text fontSize={2}>v{props.pkg && props.pkg.version}</Text>
+          </Container>
+        </Flex>
+      </Box>
       <Box p={[2, 4]}>
         <Container maxWidth={768}>
-          <PageTitle>Priceline One</PageTitle>
-          <Text fontSize={3} mb={2} color="gray">
-            {props.pkg.description}
-          </Text>
-          <Text fontSize={1}>v{props.pkg && props.pkg.version}</Text>
-          <Divider my={4} />
-          <Flex wrap mx={-2} align="center">
+          <Flex wrap mx={-2} my={4} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
             <Button.a
               m={2}
               href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
               children="Sketch Library Download"
               target="_blank"
-              style={{ lineHeight: '40px', fontWeight: '500' }}
+              style={{ lineHeight: '40px' }}
             />
           </Flex>
-          <Box py={5}>
+          <Divider />
+          <Box py={2}>
             <Markdown children={gettingStarted} />
           </Box>
         </Container>
