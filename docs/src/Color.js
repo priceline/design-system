@@ -22,7 +22,7 @@ const lights = colors.filter(color => /^light/.test(color.name))
 
 const ColorChip = styled(Box)`
   height: 100px;
-  width: 100px;
+  width: 125px;
   border-radius: 4px;
   transition: all 0.1s ease;
 `

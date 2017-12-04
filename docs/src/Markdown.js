@@ -154,19 +154,19 @@ defaultScope.h1.defaultProps = {
 }
 defaultScope.h2.defaultProps = {
   fontSize: 4,
-  mt: 3,
+  mt: 4,
   mb: 2
 }
 
 defaultScope.h3.defaultProps = {
   fontSize: 3,
-  mt: 3,
+  mt: 4,
   mb: 2
 }
 
 defaultScope.h4.defaultProps = {
   fontSize: 3,
-  mt: 3,
+  mt: 4,
   mb: 2
 }
 
