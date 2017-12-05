@@ -25,7 +25,6 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
         name="default_box"
         value="someValue"
         onClick={action('checkbox-clicked')}
-        theme={theme}
       />
     </Wrapper>
 

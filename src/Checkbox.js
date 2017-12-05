@@ -30,7 +30,6 @@ class Checkbox extends React.Component {
         htmlFor={name}
         data-test="design-system-checkbox"
         disabled={disabled}
-        theme={currentTheme}
       >
         <input
           type="checkbox"
@@ -46,7 +45,6 @@ class Checkbox extends React.Component {
           data-test="checkbox-facade"
           disabled={disabled}
           size={size}
-          theme={currentTheme}
         >
           <Icon
             name="check"
