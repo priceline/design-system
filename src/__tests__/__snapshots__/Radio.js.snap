@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio Disabled, rendering 1`] = `
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -14,34 +8,34 @@ exports[`Radio Disabled, rendering 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::-ms-clear {
@@ -55,7 +49,7 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c1 {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c2 {
@@ -72,7 +66,7 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c0 {
@@ -97,29 +91,11 @@ exports[`Radio Disabled, rendering 1`] = `
       disabled={true}
       type="radio"
     />
-    <svg
-      className="c4"
-      fill="currentcolor"
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
-      	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
-      />
-    </svg>
   </span>
 </div>
 `;
 
 exports[`Radio Not Selected, rendering 1`] = `
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -127,34 +103,34 @@ exports[`Radio Not Selected, rendering 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::-ms-clear {
@@ -168,7 +144,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c1 {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c1:hover {
@@ -189,7 +165,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c0 {
@@ -213,29 +189,11 @@ exports[`Radio Not Selected, rendering 1`] = `
       className="c2 c3"
       type="radio"
     />
-    <svg
-      className="c4"
-      fill="currentcolor"
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
-      	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
-      />
-    </svg>
   </span>
 </div>
 `;
 
 exports[`Radio Selected, rendering 1`] = `
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -243,34 +201,34 @@ exports[`Radio Selected, rendering 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #abb7c2;
+  border-color: #d1d6db;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  border-color: #abb7c2;
-  box-shadow: 0 0 0 0 #abb7c2;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::-moz-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3:-ms-input-placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::placeholder {
-  color: #abb7c2;
+  color: #687B8E;
 }
 
 .c3::-ms-clear {
@@ -284,7 +242,7 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c1 {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c2 {
@@ -301,7 +259,7 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #abb7c2;
+  color: #d1d6db;
 }
 
 .c0 {
@@ -326,18 +284,6 @@ exports[`Radio Selected, rendering 1`] = `
       className="c2 c3"
       type="radio"
     />
-    <svg
-      className="c4"
-      fill="currentcolor"
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M12,7c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S14.8,7,12,7z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10
-      	s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
-      />
-    </svg>
   </span>
 </div>
 `;
