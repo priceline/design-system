@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CloseButton renders with theme only 1`] = `
+exports[`CloseButton renders without props 1`] = `
 .c2 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -13,6 +13,7 @@ exports[`CloseButton renders with theme only 1`] = `
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
