@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Heading, Text, Divider, theme } from 'pcln-design-system'
+import {
+  Box,
+  Card,
+  Flex,
+  Heading,
+  Text,
+  Divider,
+  theme
+} from 'pcln-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'
@@ -22,13 +30,15 @@ const lights = colors.filter(color => /^light/.test(color.name))
 
 const ColorChip = styled(Box)`
   height: 100px;
-  width: 125px;
-  border-radius: 4px;
+  width: 100%;
+  border-radius: 2px 2px 0 0;
   transition: all 0.1s ease;
 `
 
 const HexButton = styled.button`
+  width: 100%;
   display: inline-block;
+  position: relative;
   font-family: inherit;
   font-size: 12px;
   margin: 0;
@@ -48,10 +58,15 @@ const HexButton = styled.button`
   }
 
   &:active > ${ColorChip} {
-    transform: scale(0.9);
+    border: 5px solid #fff;
   }
 
   & > span {
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.125s;
@@ -64,22 +79,22 @@ const HexButton = styled.button`
 `
 
 const ColorCard = ({ name, value }) => (
-  <Box>
+  <Card boxShadowSize="md" borderWidth={0} m={1}>
     <CopyButton text={value}>
       <HexButton>
-        <ColorChip bg={value} mb={1} />
-        <Text fontSize={1} align="left" color="text">
-          {name}
-        </Text>
-        <Code fontSize={1} align="left" color="gray">
-          {value}
-        </Code>{' '}
-        <span>
-          <b>Copy</b>
-        </span>
+        <ColorChip bg={value} />
+        <span>Click to copy</span>
+        <Box p={3}>
+          <Text fontSize={1} align="left" color="text">
+            {name}
+          </Text>
+          <Code fontSize={1} align="left" color="gray">
+            {value}
+          </Code>
+        </Box>
       </HexButton>
     </CopyButton>
-  </Box>
+  </Card>
 )
 
 const Column = props => (

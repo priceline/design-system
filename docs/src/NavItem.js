@@ -14,6 +14,7 @@ const BaseNavItem = styled.a`
   &.active {
     opacity: 1;
     background-color: #07f;
+    color: #fff;
   }
 `
 BaseNavItem.defaultProps = {

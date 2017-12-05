@@ -83,24 +83,25 @@ class App extends React.Component {
                 width={[1, 240]}
                 px={3}
                 pt={0}
-                pb={5}
-                color="white"
-                bg="text"
+                color="text"
+                bg="white"
                 style={{
                   WebkitFontSmoothing: 'antialiased',
-                  MozOsxFontSmoothing: 'grayscale'
+                  MozOsxFontSmoothing: 'grayscale',
+                  boxShadow: '0 0 20px 0 rgba(0,0,0,0.08)'
                 }}
               >
                 <Flex
                   align="center"
-                  px={2}
-                  pt={4}
-                  pb={3}
+                  px="24px"
+                  py="24px"
+                  mx={-3}
                   mb={3}
-                  bg="text"
+                  bg="white"
                   style={{
                     position: 'sticky',
-                    top: '0'
+                    top: '0',
+                    boxShadow: '0 0 8px 0 rgba(0,0,0,0.16)'
                   }}
                 >
                   <NavLink
@@ -137,12 +138,6 @@ class App extends React.Component {
                     ))}
                   </Box>
                 ))}
-                <NavItem
-                  href="https://github.com/pricelinelabs/design-system"
-                  style={{ marginBottom: '24px' }}
-                >
-                  GitHub
-                </NavItem>
               </StickyBar>
               <Box
                 width={[1, 'calc(100% - 320px)']}

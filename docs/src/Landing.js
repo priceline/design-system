@@ -16,8 +16,6 @@ import Markdown from './Markdown'
 
 Button.a = Button.withComponent('a')
 
-const image = `https://source.unsplash.com/KZa4fREZoKk/3200x1800`
-
 const Landing = props => {
   const gettingStarted = props.content.find(c => c.name === 'GettingStarted')
     .content
@@ -27,7 +25,7 @@ const Landing = props => {
         px={[2, 4]}
         height="50vh"
         style={{
-          background: 'linear-gradient(45deg, #07f, #0af)'
+          background: 'linear-gradient(45deg, #07f 40%, #0af 100%)'
         }}
       >
         <Flex
