@@ -1,5 +1,5 @@
 
-# `<RatingBadge />`
+# RatingBadge
 
 Used in the hotel listing for guest ratings.
 

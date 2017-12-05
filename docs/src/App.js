@@ -217,10 +217,13 @@ const pages = [
       'Hide',
       'Hug',
       'Icon',
+      'IconButton',
+      'Image',
       'Input',
       'InputField',
-      'Image',
+      'Layout',
       'Link',
+      'RatingBadge',
       'Text',
       'Truncate'
     ]
