@@ -4,6 +4,7 @@ import {
   ThemeProvider,
   Flex,
   Box,
+  Card,
   Heading,
   Text,
   Link,
@@ -11,7 +12,7 @@ import {
   Container,
   Button,
   Image,
-  colors
+  theme
 } from 'pcln-design-system'
 import Landing from './Landing'
 import Color from './Color'
@@ -88,7 +89,7 @@ class App extends React.Component {
                 style={{
                   WebkitFontSmoothing: 'antialiased',
                   MozOsxFontSmoothing: 'grayscale',
-                  boxShadow: '0 0 20px 0 rgba(0,0,0,0.08)'
+                  boxShadow: theme.boxShadows.slice(0, 2).join(', ')
                 }}
               >
                 <Flex
@@ -101,7 +102,7 @@ class App extends React.Component {
                   style={{
                     position: 'sticky',
                     top: '0',
-                    boxShadow: '0 0 8px 0 rgba(0,0,0,0.16)'
+                    boxShadow: theme.boxShadows[0]
                   }}
                 >
                   <NavLink
@@ -143,7 +144,8 @@ class App extends React.Component {
                 width={[1, 'calc(100% - 320px)']}
                 style={{
                   flex: '1 1 auto',
-                  minHeight: '100vh'
+                  minHeight: '100vh',
+                  backgroundColor: '#f6f8fa'
                 }}
               >
                 <Route
@@ -151,40 +153,51 @@ class App extends React.Component {
                   path="/"
                   render={() => <Landing {...this.props} />}
                 />
-                <Container
-                  maxWidth={960}
+                <Card
+                  boxShadowSize="sm"
+                  bg="white"
+                  borderRadius={1}
+                  borderWidth={0}
                   style={{
-                    width: '100%'
+                    maxWidth: '1060px',
+                    margin: '64px auto'
                   }}
                 >
-                  {sections.map(section =>
-                    section.pages.map((page, i) => (
-                      <Route
-                        key={page.name}
-                        path={'/' + page.name}
-                        render={() => {
-                          const Component = views[page.name]
-                          const pageContent =
-                            content.find(c => c.name === page.name) || {}
-                          return Component ? (
-                            <Component
-                              {...page}
-                              pages={section.pages}
-                              index={i}
-                            />
-                          ) : (
-                            <Detail
-                              {...page}
-                              content={pageContent.content}
-                              pages={section.pages}
-                              index={i}
-                            />
-                          )
-                        }}
-                      />
-                    ))
-                  )}
-                </Container>
+                  <Container
+                    maxWidth={868}
+                    style={{
+                      width: '100%'
+                    }}
+                  >
+                    {sections.map(section =>
+                      section.pages.map((page, i) => (
+                        <Route
+                          key={page.name}
+                          path={'/' + page.name}
+                          render={() => {
+                            const Component = views[page.name]
+                            const pageContent =
+                              content.find(c => c.name === page.name) || {}
+                            return Component ? (
+                              <Component
+                                {...page}
+                                pages={section.pages}
+                                index={i}
+                              />
+                            ) : (
+                              <Detail
+                                {...page}
+                                content={pageContent.content}
+                                pages={section.pages}
+                                index={i}
+                              />
+                            )
+                          }}
+                        />
+                      ))
+                    )}
+                  </Container>
+                </Card>
               </Box>
             </Flex>
           </ScrollTop>

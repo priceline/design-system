@@ -1,5 +1,5 @@
 
-# Getting Started
+## Getting Started
 
 Install the Design System in your application
 
@@ -59,4 +59,3 @@ const SomeView = props => (
   </Box>
 )
 ```
-

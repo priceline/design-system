@@ -92,15 +92,15 @@ const Table = styled(props => (
 
   & td:first-child {
     font-family: 'Roboto Mono', Menlo, monospace;
-    font-size: 14px;
+    font-size: 16px;
     min-width: 150px;
     color: ${theme('colors.blue')};
   }
 
   & td {
-    font-size: 14px;
-    color: ${theme('colors.text')};
-    vertical-align: top;
+    font-size: 16px;
+    color: ${theme('colors.gray')};
+    vertical-align: middle;
     padding-right: 16px !important;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -109,7 +109,7 @@ const Table = styled(props => (
 
   & th,
   & td {
-    padding: 16px 0;
+    height: 72px;
     line-height: inherit;
   }
 `
@@ -139,7 +139,7 @@ const defaultScope = {
   h5: heading('h5'),
   h6: heading('h6'),
   a: Link,
-  p: p => <Text.p {...p} />,
+  p: p => <Text.p color="gray" {...p} />,
   pre: CodeBlock,
   code: Code,
   table: Table
@@ -148,18 +148,18 @@ const defaultScope = {
 // Markdown components typography and margins
 // can be set with defaultProps
 defaultScope.h1.defaultProps = {
-  fontSize: 5,
-  mt: 4,
-  mb: 3
+  fontSize: 6,
+  mt: 0,
+  mb: 2
 }
 defaultScope.h2.defaultProps = {
-  fontSize: 4,
+  fontSize: 5,
   mt: 4,
   mb: 2
 }
 
 defaultScope.h3.defaultProps = {
-  fontSize: 3,
+  fontSize: 4,
   mt: 4,
   mb: 2
 }
@@ -174,7 +174,7 @@ defaultScope.p.defaultProps = {
   mt: 0,
   mb: 3,
   style: {
-    lineHeight: 1.5
+    lineHeight: 1.6
   }
 }
 

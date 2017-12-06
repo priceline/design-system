@@ -2,6 +2,7 @@ import React from 'react'
 import {
   Flex,
   Box,
+  Card,
   Container,
   BackgroundImage,
   Heading,
@@ -36,7 +37,7 @@ const Landing = props => {
           }}
         >
           <Container
-            maxWidth={960}
+            maxWidth={868}
             style={{
               width: '100%'
             }}
@@ -51,9 +52,19 @@ const Landing = props => {
           </Container>
         </Flex>
       </Box>
-      <Box p={[2, 4]}>
-        <Container maxWidth={960}>
-          <Flex wrap mx={-2} my={4} align="center">
+      <Card
+        bg="white"
+        boxShadowSize="md"
+        borderRadius={1}
+        borderWidth={0}
+        pt={4}
+        style={{
+          maxWidth: '1060px',
+          margin: '64px auto'
+        }}
+      >
+        <Container maxWidth={868}>
+          <Flex wrap mx={-2} py={4} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
             <Button.a
               m={2}
@@ -64,11 +75,11 @@ const Landing = props => {
             />
           </Flex>
           <Divider />
-          <Box py={2}>
+          <Box pb={5}>
             <Markdown children={gettingStarted} />
           </Box>
         </Container>
-      </Box>
+      </Card>
     </Box>
   )
 }

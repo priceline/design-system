@@ -1,5 +1,13 @@
 import React from 'react'
-import { Flex, Box, Button, Card, OutlineButton } from 'pcln-design-system'
+import {
+  Flex,
+  Box,
+  Button,
+  Card,
+  OutlineButton,
+  Icon,
+  colors
+} from 'pcln-design-system'
 import Link from './Link'
 
 const Pagination = ({ index, pages }) => {
@@ -7,21 +15,37 @@ const Pagination = ({ index, pages }) => {
   const next = pages[index + 1]
 
   return (
-    <Card borderWidth="0" bg="lightGray" px={4} py={4} mt={4}>
-      <Flex>
-        {previous && (
-          <Link to={'/' + previous.name}>
-            <OutlineButton>Previous: {previous.name}</OutlineButton>
-          </Link>
-        )}
-        <Box ml="auto" />
-        {next && (
-          <Link to={'/' + next.name}>
-            <Button bg="blue">Next: {next.name}</Button>
-          </Link>
-        )}
-      </Flex>
-    </Card>
+    <Flex py={5}>
+      {previous && (
+        <Link to={'/' + previous.name}>
+          <Icon
+            name="arrowLeft"
+            size={24}
+            color="blue"
+            mr={2}
+            style={{
+              verticalAlign: 'bottom'
+            }}
+          />
+          {previous.name}
+        </Link>
+      )}
+      <Box ml="auto" />
+      {next && (
+        <Link to={'/' + next.name}>
+          {next.name}
+          <Icon
+            name="arrowRight"
+            size={24}
+            color="blue"
+            ml={2}
+            style={{
+              verticalAlign: 'bottom'
+            }}
+          />
+        </Link>
+      )}
+    </Flex>
   )
 }
 
