@@ -36,7 +36,7 @@ const Landing = props => {
           }}
         >
           <Container
-            maxWidth={768}
+            maxWidth={960}
             style={{
               width: '100%'
             }}
@@ -52,7 +52,7 @@ const Landing = props => {
         </Flex>
       </Box>
       <Box p={[2, 4]}>
-        <Container maxWidth={768}>
+        <Container maxWidth={960}>
           <Flex wrap mx={-2} my={4} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
             <Button.a
