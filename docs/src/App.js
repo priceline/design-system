@@ -51,134 +51,134 @@ class App extends React.Component {
     } = this.props
     const { menuOpen } = this.state
 
-    return [
-      <meta charSet="utf-8" />,
-      <title key="title">Priceline One Design System</title>,
-      <meta name="viewport" content="width=device-width,initial-scale=1" />,
-      // styled-components SSR only returns HTML tag strings or React elements,
-      // which isn't ideal here
-      <head
-        dangerouslySetInnerHTML={{
-          __html: styles
-        }}
-      />,
-      <link
-        key="webfont"
-        rel="stylesheet"
-        href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Mono"
-      />,
-      <ThemeProvider key="main">
-        <Router basename={basename} location={pathname}>
-          <ScrollTop>
-            <Flex
-              wrap
-              align="flex-start"
-              color="text"
-              style={{ minHeight: '100vh' }}
-            >
-              <StickyBar
-                open={menuOpen}
-                width={[1, 256]}
-                px={3}
-                pt={2}
-                pb={5}
-                color="white"
-                bg="text"
+    return (
+      <React.Fragment>
+        <title key="title">Priceline One Design System</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link
+          key="webfont"
+          rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Mono"
+        />
+        <ThemeProvider key="main">
+          <Router basename={basename} location={pathname}>
+            <ScrollTop>
+              <Flex
+                wrap
+                align="flex-start"
+                color="text"
+                style={{ minHeight: '100vh' }}
               >
-                <Flex align="center" px={2} py={2} mb={3}>
-                  <Heading.h1 fontSize={3}>
-                    <NavLink
-                      to="/"
-                      style={{
-                        display: 'block',
-                        color: 'inherit',
-                        textDecoration: 'none'
-                      }}
-                    >
-                      Priceline One
-                    </NavLink>
-                  </Heading.h1>
-                  <Hide ml="auto" sm md lg xl>
-                    <Button size="small" onClick={e => this.update(toggleMenu)}>
-                      Menu
-                    </Button>
-                  </Hide>
-                </Flex>
-                <NavItem to="/" exact>
-                  Getting Started
-                </NavItem>
-                {sections.filter(s => !!s).map(section => (
-                  <Box key={section.name} onClick={e => this.update(closeMenu)}>
-                    <Heading
-                      color="rgba(255, 255, 255, .32)"
-                      p={2}
-                      bold
-                      caps
-                      fontSize={0}
-                    >
-                      {section.name}
-                    </Heading>
-                    {section.pages.map(page => (
-                      <NavItem
-                        key={page.name}
-                        to={'/' + page.name}
-                        color="inherit"
-                        children={page.title || page.name}
-                      />
-                    ))}
-                  </Box>
-                ))}
-                <NavItem href="https://github.com/pricelinelabs/design-system">
-                  GitHub
-                </NavItem>
-              </StickyBar>
-              <Box
-                width={[1, 'calc(100% - 320px)']}
-                style={{
-                  flex: '1 1 auto',
-                  minHeight: '100vh'
-                }}
-              >
-                <Route
-                  exact
-                  path="/"
-                  render={() => <Landing {...this.props} />}
-                />
-                <Container maxWidth={768}>
-                  {sections.map(section =>
-                    section.pages.map((page, i) => (
-                      <Route
-                        key={page.name}
-                        path={'/' + page.name}
-                        render={() => {
-                          const Component = views[page.name]
-                          const pageContent =
-                            content.find(c => c.name === page.name) || {}
-                          return Component ? (
-                            <Component
-                              {...page}
-                              pages={section.pages}
-                              index={i}
-                            />
-                          ) : (
-                            <Detail
-                              {...page}
-                              content={pageContent.content}
-                              pages={section.pages}
-                              index={i}
-                            />
-                          )
+                <StickyBar
+                  open={menuOpen}
+                  width={[1, 256]}
+                  px={3}
+                  pt={2}
+                  pb={5}
+                  color="white"
+                  bg="text"
+                >
+                  <Flex align="center" px={2} py={2} mb={3}>
+                    <Heading.h1 fontSize={3}>
+                      <NavLink
+                        to="/"
+                        style={{
+                          display: 'block',
+                          color: 'inherit',
+                          textDecoration: 'none'
                         }}
-                      />
-                    ))
-                  )}
-                </Container>
-              </Box>
-            </Flex>
-          </ScrollTop>
-        </Router>
-      </ThemeProvider>
-    ]
+                      >
+                        Priceline One
+                      </NavLink>
+                    </Heading.h1>
+                    <Hide ml="auto" sm md lg xl>
+                      <Button
+                        size="small"
+                        onClick={e => this.update(toggleMenu)}
+                      >
+                        Menu
+                      </Button>
+                    </Hide>
+                  </Flex>
+                  <NavItem to="/" exact>
+                    Getting Started
+                  </NavItem>
+                  {sections.filter(s => !!s).map(section => (
+                    <Box
+                      key={section.name}
+                      onClick={e => this.update(closeMenu)}
+                    >
+                      <Heading
+                        color="rgba(255, 255, 255, .32)"
+                        p={2}
+                        bold
+                        caps
+                        fontSize={0}
+                      >
+                        {section.name}
+                      </Heading>
+                      {section.pages.map(page => (
+                        <NavItem
+                          key={page.name}
+                          to={'/' + page.name}
+                          color="inherit"
+                          children={page.title || page.name}
+                        />
+                      ))}
+                    </Box>
+                  ))}
+                  <NavItem href="https://github.com/pricelinelabs/design-system">
+                    GitHub
+                  </NavItem>
+                </StickyBar>
+                <Box
+                  width={[1, 'calc(100% - 320px)']}
+                  style={{
+                    flex: '1 1 auto',
+                    minHeight: '100vh'
+                  }}
+                >
+                  <Route
+                    exact
+                    path="/"
+                    render={() => <Landing {...this.props} />}
+                  />
+                  <Container maxWidth={768}>
+                    {sections.map(section =>
+                      section.pages.map((page, i) => (
+                        <Route
+                          key={page.name}
+                          path={'/' + page.name}
+                          render={() => {
+                            const Component = views[page.name]
+                            const pageContent =
+                              content.find(c => c.name === page.name) || {}
+                            return Component ? (
+                              <Component
+                                {...page}
+                                pages={section.pages}
+                                index={i}
+                              />
+                            ) : (
+                              <Detail
+                                {...page}
+                                content={pageContent.content}
+                                pages={section.pages}
+                                index={i}
+                              />
+                            )
+                          }}
+                        />
+                      ))
+                    )}
+                  </Container>
+                </Box>
+              </Flex>
+            </ScrollTop>
+          </Router>
+        </ThemeProvider>
+      </React.Fragment>
+    )
   }
 }
 
@@ -235,7 +235,9 @@ const routes = pages.reduce((a, b) => [...a, b.pages.map(name => '/' + name)], [
 ])
 
 App.defaultProps = {
-  routes
+  routes,
+  content: [],
+  sections: []
 }
 
 // To use a different static site generator, this can be handled in Node
@@ -270,13 +272,16 @@ App.getInitialProps = async props => {
     })
   })
 
+  /* this api is garbage
   const sheet = new ServerStyleSheet()
   sheet.collectStyles(React.createElement(props.Component, props))
-  const styles = sheet.getStyleTags()
+  const styles = sheet.getStyleElement()
+  console.log('initial props', pkg, styles, content, sections)
+  */
 
   return {
     pkg,
-    styles,
+    // styles,
     content,
     sections
   }
