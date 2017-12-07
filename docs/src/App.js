@@ -41,14 +41,7 @@ class App extends React.Component {
   }
 
   render() {
-    const {
-      sections = [],
-      content = [],
-      basename,
-      pathname,
-      pkg,
-      styles
-    } = this.props
+    const { sections = [], content = [], basename, pathname, pkg } = this.props
     const { menuOpen } = this.state
 
     return (
@@ -230,14 +223,13 @@ const customPages = {
   }
 }
 
-const routes = pages.reduce((a, b) => [...a, b.pages.map(name => '/' + name)], [
-  '/'
-])
+const routes = pages.reduce(
+  (a, b) => [...a, ...b.pages.map(name => '/' + name)],
+  ['/']
+)
 
 App.defaultProps = {
-  routes,
-  content: [],
-  sections: []
+  routes
 }
 
 // To use a different static site generator, this can be handled in Node
@@ -272,16 +264,8 @@ App.getInitialProps = async props => {
     })
   })
 
-  /* this api is garbage
-  const sheet = new ServerStyleSheet()
-  sheet.collectStyles(React.createElement(props.Component, props))
-  const styles = sheet.getStyleElement()
-  console.log('initial props', pkg, styles, content, sections)
-  */
-
   return {
     pkg,
-    // styles,
     content,
     sections
   }
