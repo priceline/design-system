@@ -14,13 +14,13 @@ const propTypes = {
 const Radio = props => {
   const { checked, disabled } = props
 
-  const radioIconName = checked ? 'radioFilled' : 'radio'
+  const radioIconName = checked ? 'radioChecked' : 'radioEmpty'
 
   const testID = checked ? 'SELECTED' : disabled ? 'DISABLED' : 'NOT_SELECTED'
 
   return (
     <RadioWrap checked={checked} disabled={disabled}>
-      <RadioInput type="radio" {...props} />
+      <RadioInput id="radio-input" type="radio" {...props} />
       <Icon name={radioIconName} size={24} />
     </RadioWrap>
   )
