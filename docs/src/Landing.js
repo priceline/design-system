@@ -22,36 +22,34 @@ const Landing = props => {
     .content
   return (
     <Box>
-      <Box
-        px={[2, 4]}
-        height="50vh"
+      <Card
+        bg="white"
+        boxShadowSize="md"
+        borderRadius={1}
+        borderWidth={0}
+        py={6}
         style={{
-          background: 'linear-gradient(45deg, #07f 40%, #0af 100%)'
+          maxWidth: '1060px',
+          width: '100%',
+          margin: '64px auto',
+          background: 'linear-gradient(45deg, #07f, #0af)'
         }}
       >
-        <Flex
-          align="center"
+        <Container
+          maxWidth={868}
           style={{
-            height: '50vh',
-            textAlign: 'left'
+            width: '100%'
           }}
         >
-          <Container
-            maxWidth={868}
-            style={{
-              width: '100%'
-            }}
-          >
-            <PageTitle mt={0} color="white">
-              Priceline One
-            </PageTitle>
-            <Text fontSize={4} mb={2}>
-              {props.pkg.description}
-            </Text>
-            <Text fontSize={2}>v{props.pkg && props.pkg.version}</Text>
-          </Container>
-        </Flex>
-      </Box>
+          <PageTitle mt={0} color="white">
+            Priceline One
+          </PageTitle>
+          <Text fontSize={4} mb={2}>
+            {props.pkg.description}
+          </Text>
+          <Text fontSize={2}>v{props.pkg && props.pkg.version}</Text>
+        </Container>
+      </Card>
       <Card
         bg="white"
         boxShadowSize="md"
