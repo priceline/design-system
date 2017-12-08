@@ -2017,6 +2017,26 @@ exports[`Icon mileage renders 1`] = `
 </svg>
 `;
 
+exports[`Icon minus renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7,11v2h10v-2H7z"
+  />
+</svg>
+`;
+
 exports[`Icon overnight renders 1`] = `
 .c0 {
   -webkit-flex: none;
@@ -2144,6 +2164,26 @@ exports[`Icon pin renders 1`] = `
   <path
     d="M12,2C8.1,2,5,5.1,5,9c0,5.2,7,13,7,13s7-7.8,7-13C19,5.1,15.9,2,12,2z M12,11.5
   	c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S13.4,11.5,12,11.5z"
+  />
+</svg>
+`;
+
+exports[`Icon plus renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13,7h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"
   />
 </svg>
 `;
