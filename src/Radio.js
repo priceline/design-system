@@ -8,20 +8,18 @@ import Input from './Input'
 
 const propTypes = {
   checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  name: PropTypes.string,
-  value: PropTypes.string
+  disabled: PropTypes.bool
 }
 
 const Radio = props => {
-  const { className, checked, disabled, name, value } = props
+  const { checked, disabled } = props
 
   const radioIconName = checked ? 'radioFilled' : 'radio'
 
   const testID = checked ? 'SELECTED' : disabled ? 'DISABLED' : 'NOT_SELECTED'
 
   return (
-    <RadioWrap className={className} checked={checked} disabled={disabled}>
+    <RadioWrap checked={checked} disabled={disabled}>
       <RadioInput type="radio" {...props} />
       <Icon name={radioIconName} size={24} />
     </RadioWrap>
