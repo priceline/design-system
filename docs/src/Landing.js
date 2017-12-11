@@ -21,18 +21,19 @@ const Landing = props => {
   const gettingStarted = props.content.find(c => c.name === 'GettingStarted')
     .content
   return (
-    <Box>
+    <Box px={3}>
       <Card
         bg="white"
-        boxShadowSize="md"
+        boxShadowSize="sm"
         borderRadius={1}
         borderWidth={0}
         py={6}
+        px={3}
         style={{
           maxWidth: '1060px',
           width: '100%',
           margin: '64px auto',
-          background: 'linear-gradient(45deg, #07f, #0af)'
+          background: 'linear-gradient(45deg, #07f, #0df)'
         }}
       >
         <Container
@@ -52,10 +53,11 @@ const Landing = props => {
       </Card>
       <Card
         bg="white"
-        boxShadowSize="md"
+        boxShadowSize="sm"
         borderRadius={1}
         borderWidth={0}
         pt={4}
+        px={3}
         style={{
           maxWidth: '1060px',
           margin: '64px auto'
