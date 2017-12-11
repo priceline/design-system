@@ -40,7 +40,13 @@ Box.propTypes = {
   pb: numberStringOrArray,
   pl: numberStringOrArray,
   px: numberStringOrArray,
-  py: numberStringOrArray
+  py: numberStringOrArray,
+  align: (props, name, component) => {
+    if (!props[name]) return
+    return new Error(
+      'The Box `align` prop will deprecated. Please use Text instead.'
+    )
+  }
 }
 
 export default Box
