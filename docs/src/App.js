@@ -85,10 +85,10 @@ class App extends React.Component {
                 px={3}
                 pt={0}
                 color="text"
+                bg="lightGray"
                 style={{
                   WebkitFontSmoothing: 'antialiased',
-                  MozOsxFontSmoothing: 'grayscale',
-                  backgroundColor: '#f6f8fa'
+                  MozOsxFontSmoothing: 'grayscale'
                 }}
               >
                 <Flex
@@ -96,8 +96,8 @@ class App extends React.Component {
                   px="24px"
                   py="24px"
                   mx={-3}
+                  bg="lightGray"
                   style={{
-                    backgroundColor: '#f6f8fa',
                     position: 'sticky',
                     top: '0'
                   }}
