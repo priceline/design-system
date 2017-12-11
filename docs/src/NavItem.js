@@ -9,7 +9,7 @@ const BaseNavItem = styled.a`
   font-size: ${theme('fontSizes.1')}px;
   border-radius: ${theme('radius')};
   ${space} ${color} &:hover {
-    box-shadow: inset 0 0 0 9999px rgba(0, 122, 255, 0.16);
+    box-shadow: inset 0 0 0 9999px #cdf;
   }
   &.active {
     opacity: 1;

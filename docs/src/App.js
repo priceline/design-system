@@ -85,11 +85,10 @@ class App extends React.Component {
                 px={3}
                 pt={0}
                 color="text"
-                bg="white"
                 style={{
                   WebkitFontSmoothing: 'antialiased',
                   MozOsxFontSmoothing: 'grayscale',
-                  boxShadow: theme.boxShadows.slice(0, 2).join(', ')
+                  backgroundColor: '#f6f8fa'
                 }}
               >
                 <Flex
@@ -97,12 +96,10 @@ class App extends React.Component {
                   px="24px"
                   py="24px"
                   mx={-3}
-                  mb={3}
-                  bg="white"
                   style={{
+                    backgroundColor: '#f6f8fa',
                     position: 'sticky',
-                    top: '0',
-                    boxShadow: theme.boxShadows[0]
+                    top: '0'
                   }}
                 >
                   <NavLink
@@ -145,7 +142,7 @@ class App extends React.Component {
                 style={{
                   flex: '1 1 auto',
                   minHeight: '100vh',
-                  backgroundColor: '#f6f8fa'
+                  backgroundColor: '#fff'
                 }}
               >
                 <Route
@@ -153,16 +150,7 @@ class App extends React.Component {
                   path="/"
                   render={() => <Landing {...this.props} />}
                 />
-                <Card
-                  boxShadowSize="sm"
-                  bg="white"
-                  borderRadius={1}
-                  borderWidth={0}
-                  style={{
-                    maxWidth: '1060px',
-                    margin: '64px auto'
-                  }}
-                >
+                <Box>
                   <Container
                     maxWidth={868}
                     style={{
@@ -197,7 +185,7 @@ class App extends React.Component {
                       ))
                     )}
                   </Container>
-                </Card>
+                </Box>
               </Box>
             </Flex>
           </ScrollTop>
@@ -234,7 +222,6 @@ const pages = [
       'Image',
       'Input',
       'InputField',
-      'Layout',
       'Link',
       'RatingBadge',
       'Text',

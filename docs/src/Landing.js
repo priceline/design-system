@@ -21,18 +21,12 @@ const Landing = props => {
   const gettingStarted = props.content.find(c => c.name === 'GettingStarted')
     .content
   return (
-    <Box px={3}>
-      <Card
-        bg="white"
-        boxShadowSize="sm"
-        borderRadius={1}
-        borderWidth={0}
-        py={6}
-        px={3}
+    <Box>
+      <Flex
+        align="center"
         style={{
-          maxWidth: '1060px',
-          width: '100%',
-          margin: '64px auto',
+          textAlign: 'left',
+          height: '50vh',
           background: 'linear-gradient(45deg, #07f, #0df)'
         }}
       >
@@ -50,19 +44,8 @@ const Landing = props => {
           </Text>
           <Text fontSize={2}>v{props.pkg && props.pkg.version}</Text>
         </Container>
-      </Card>
-      <Card
-        bg="white"
-        boxShadowSize="sm"
-        borderRadius={1}
-        borderWidth={0}
-        pt={4}
-        px={3}
-        style={{
-          maxWidth: '1060px',
-          margin: '64px auto'
-        }}
-      >
+      </Flex>
+      <Box>
         <Container maxWidth={868}>
           <Flex wrap mx={-2} py={4} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
@@ -79,7 +62,7 @@ const Landing = props => {
             <Markdown children={gettingStarted} />
           </Box>
         </Container>
-      </Card>
+      </Box>
     </Box>
   )
 }
