@@ -1,38 +1,31 @@
 import styled from 'styled-components'
-import { responsiveStyle } from 'styled-system'
-import Box from './Box'
-import PropTypes from 'prop-types'
+import {
+  space,
+  width,
+  color,
+  alignItems,
+  justifyContent,
+  flexWrap,
+  propTypes
+} from 'styled-system'
+import theme from './theme'
 
-const align = responsiveStyle('align-items', 'align')
-const justify = responsiveStyle('justify-content', 'justify')
-const wrap = responsiveStyle('flex-wrap', 'wrap', 'wrap')
-
-const Flex = styled(Box)`
+const Flex = styled.div`
   display: flex;
-  ${align} ${justify} ${wrap};
+  ${space} ${width} ${color} ${alignItems} ${justifyContent} ${flexWrap};
 `
 
+Flex.defaultProps = {
+  theme
+}
+
 Flex.propTypes = {
-  /** align-items */
-  align: PropTypes.oneOf([
-    'center',
-    'flex-start',
-    'flex-end',
-    'baseline',
-    'stretch'
-  ]),
-  /** justify-content */
-  justify: PropTypes.oneOf([
-    'center',
-    'flex-start',
-    'flex-end',
-    'space-around',
-    'space-between',
-    'space-evenly',
-    'stretch'
-  ]),
-  /** flex-wrap: wrap */
-  wrap: PropTypes.bool
+  ...propTypes.space,
+  ...propTypes.width,
+  ...propTypes.color,
+  ...propTypes.alignItems,
+  ...propTypes.justifyContent,
+  ...propTypes.flexWrap
 }
 
 Flex.displayName = 'Flex'
