@@ -53,7 +53,7 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
     className="c2 c3"
     color="white"
   >
-    <span
+    <div
       className="c4"
       fontSize={1}
     />
