@@ -20,8 +20,14 @@ export const Base = styled.div`
   }
 `
 
-const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {
-  const baseTheme = legacy ? legacyTheme : nextTheme
+const ThemeProvider = ({
+  legacy,
+  customTheme,
+  customBreakpoints,
+  ...props
+}) => {
+  const baseTheme = legacy ? legacyTheme : customTheme ? customTheme : nextTheme
+
   const breakpoints = customBreakpoints || baseTheme.breakpoints
   const theme = {
     ...baseTheme,
