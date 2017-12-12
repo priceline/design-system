@@ -6,13 +6,14 @@ import {
   alignItems,
   justifyContent,
   flexWrap,
+  flexDirection,
   propTypes
 } from 'styled-system'
 import theme from './theme'
 
 const Flex = styled.div`
   display: flex;
-  ${space} ${width} ${color} ${alignItems} ${justifyContent} ${flexWrap};
+  ${space} ${width} ${color} ${alignItems} ${justifyContent} ${flexWrap} ${flexDirection};
 `
 
 Flex.defaultProps = {
@@ -25,7 +26,8 @@ Flex.propTypes = {
   ...propTypes.color,
   ...propTypes.alignItems,
   ...propTypes.justifyContent,
-  ...propTypes.flexWrap
+  ...propTypes.flexWrap,
+  ...propTypes.flexDirection
 }
 
 Flex.displayName = 'Flex'
