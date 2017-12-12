@@ -96,8 +96,7 @@ const propTypes = {
   top: PropTypes.bool,
   center: PropTypes.bool,
   left: PropTypes.bool,
-  right: PropTypes.bool,
-  isVisible: PropTypes.bool
+  right: PropTypes.bool
 }
 
 const defaultProps = {
@@ -109,13 +108,13 @@ const defaultProps = {
 }
 
 const Tooltip = ({ children, ...props }) => {
-  return props.isVisible ? (
+  return (
     <div style={{ position: 'relative' }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>
         {children}
       </TooltipContent>
     </div>
-  ) : null
+  )
 }
 
 Tooltip.propTypes = propTypes

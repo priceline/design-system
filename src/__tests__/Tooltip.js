@@ -5,26 +5,15 @@ import { Tooltip, theme } from '..'
 describe('Tooltip', () => {
   test('renders', () => {
     const json = renderer
-      .create(
-        <Tooltip isVisible theme={theme}>
-          A Tooltip
-        </Tooltip>
-      )
+      .create(<Tooltip theme={theme}>A Tooltip</Tooltip>)
       .toJSON()
     expect(json).toMatchSnapshot()
-  })
-
-  test('returns null if not visible', () => {
-    const json = renderer
-      .create(<Tooltip theme={theme}>Tooltip?</Tooltip>)
-      .toJSON()
-    expect(json).toBe(null)
   })
 
   test('top left', () => {
     const json = renderer
       .create(
-        <Tooltip bg="blue" color="white" theme={theme} isVisible top left>
+        <Tooltip bg="blue" color="white" theme={theme} top left>
           left tooltip
         </Tooltip>
       )
@@ -34,7 +23,7 @@ describe('Tooltip', () => {
   test('top center', () => {
     const json = renderer
       .create(
-        <Tooltip bg="black" color="white" theme={theme} isVisible top center>
+        <Tooltip bg="black" color="white" theme={theme} top center>
           centered tooltip
         </Tooltip>
       )
@@ -44,7 +33,7 @@ describe('Tooltip', () => {
   test('top right', () => {
     const json = renderer
       .create(
-        <Tooltip bg="red" color="white" theme={theme} isVisible top right>
+        <Tooltip bg="red" color="white" theme={theme} top right>
           right tooltip
         </Tooltip>
       )
@@ -54,7 +43,7 @@ describe('Tooltip', () => {
   test('bottom left', () => {
     const json = renderer
       .create(
-        <Tooltip theme={theme} isVisible bottom left>
+        <Tooltip theme={theme} bottom left>
           left tooltip
         </Tooltip>
       )
@@ -64,7 +53,7 @@ describe('Tooltip', () => {
   test('bottom center', () => {
     const json = renderer
       .create(
-        <Tooltip theme={theme} isVisible bottom center>
+        <Tooltip theme={theme} bottom center>
           centered tooltip
         </Tooltip>
       )
@@ -74,7 +63,7 @@ describe('Tooltip', () => {
   test('bottom right', () => {
     const json = renderer
       .create(
-        <Tooltip theme={theme} isVisible bottom right>
+        <Tooltip theme={theme} bottom right>
           right tooltip
         </Tooltip>
       )

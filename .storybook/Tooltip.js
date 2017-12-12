@@ -10,23 +10,23 @@ const FlexColumn = styled(Flex)`
 storiesOf('Tooltip', module)
   .add('Without Anchors', () => (
     <Box mt={5} width={500}>
-      <Tooltip bg="blue" color="white" isVisible top left>
+      <Tooltip bg="blue" color="white" top left>
         left tooltip
       </Tooltip>
-      <Tooltip bg="black" color="white" isVisible top center>
+      <Tooltip bg="black" color="white" top center>
         centered tooltip
       </Tooltip>
-      <Tooltip bg="red" color="white" isVisible top right>
+      <Tooltip bg="red" color="white" top right>
         right tooltip
       </Tooltip>
       <br />
-      <Tooltip isVisible bottom left>
+      <Tooltip bottom left>
         left tooltip
       </Tooltip>
-      <Tooltip isVisible bottom center>
+      <Tooltip bottom center>
         centered tooltip
       </Tooltip>
-      <Tooltip isVisible bottom right>
+      <Tooltip bottom right>
         right tooltip
       </Tooltip>
     </Box>
@@ -34,14 +34,14 @@ storiesOf('Tooltip', module)
   .add('With Anchors', () => (
     <FlexColumn justify={'space-between'} wrap={'wrap'}>
       <Box width={'300px'} p={2} my={2}>
-        <Tooltip isVisible top left bg="blue" color="white">
+        <Tooltip top left bg="blue" color="white">
           top left tooltip
         </Tooltip>
         <div>some text</div>
       </Box>
       <Box width={'300px'} p={2} mb={5}>
         <div>some text</div>
-        <Tooltip isVisible bottom left bg="red" color="white">
+        <Tooltip bottom left bg="red" color="white">
           bottom left tooltip
         </Tooltip>
       </Box>
@@ -54,7 +54,7 @@ storiesOf('Tooltip', module)
           id="form-field-3"
           placeholder="example@test.com"
         />
-        <Tooltip isVisible bottom left bg="blue" color="white">
+        <Tooltip bottom left bg="blue" color="white">
           bottom left tooltip
         </Tooltip>
       </Box>
@@ -67,7 +67,7 @@ storiesOf('Tooltip', module)
           id="form-field-3"
           placeholder="example@test.com"
         />
-        <Tooltip isVisible bottom center bg="blue" color="white">
+        <Tooltip bottom center bg="blue" color="white">
           bottom center tooltip
         </Tooltip>
       </Box>
@@ -80,12 +80,12 @@ storiesOf('Tooltip', module)
           id="form-field-3"
           placeholder="example@test.com"
         />
-        <Tooltip isVisible bottom right bg="red" color="white">
+        <Tooltip bottom right bg="red" color="white">
           Email Address Invalid
         </Tooltip>
       </Box>
       <Box width={'300px'} p={2} mb={5}>
-        <Tooltip isVisible top left bg="blue" color="white">
+        <Tooltip top left bg="blue" color="white">
           top left tooltip
         </Tooltip>
         <InputField
@@ -98,7 +98,7 @@ storiesOf('Tooltip', module)
         />
       </Box>
       <Box width={'300px'} p={2} mb={5}>
-        <Tooltip isVisible top center bg="blue" color="white">
+        <Tooltip top center bg="blue" color="white">
           top center tooltip
         </Tooltip>
         <InputField
@@ -111,7 +111,7 @@ storiesOf('Tooltip', module)
         />
       </Box>
       <Box width={'300px'} p={2}>
-        <Tooltip isVisible top right bg="blue" color="white">
+        <Tooltip top right bg="blue" color="white">
           top right tooltip
         </Tooltip>
         <InputField
