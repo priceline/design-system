@@ -41,7 +41,7 @@ const text = '#001833'
 const lightBlue = '#cdf'
 const blue = '#007aff' // primary
 const darkBlue = '#049'
-const lightGray = '#f0f2f4'
+const lightGray = '#f6f8fa'
 const borderGray = '#d1d6db'
 const gray = '#687B8E' // primary
 const darkGray = '#364049'
@@ -51,9 +51,9 @@ const darkGreen = '#060'
 const lightRed = '#fcc'
 const red = '#c00' // secondary
 const darkRed = '#800'
-const lightOrange = '#fec'
-const orange = '#f90' // secondary
-const darkOrange = '#950'
+const lightOrange = '#feb'
+const orange = '#fa0' // secondary
+const darkOrange = '#a50'
 const lightPurple = '#ecf'
 const purple = '#70b' // secondary
 const darkPurple = '#407'
@@ -62,7 +62,21 @@ const darkPurple = '#407'
 const flatten = (name, colors) =>
   colors.reduce((a, b, i) => {
     const color = {
-      [name + i]: b
+      [name + i]: {
+        enumerable: true,
+        get() {
+          console.warn(
+            `Priceline Design System Warning: Using numbered colors like ${[
+              name + i
+            ]} will be deprecated in the next theme. Use light${name
+              .charAt(0)
+              .toUpperCase() + name.slice(1)}, ${name} or dark${name
+              .charAt(0)
+              .toUpperCase() + name.slice(1)} instead.`
+          )
+          return b
+        }
+      }
     }
     return { ...a, ...color }
   }, {})
@@ -74,7 +88,7 @@ const reds = [lightRed, lightRed, red, red]
 const oranges = [lightOrange, lightOrange, orange, orange]
 const purples = [lightPurple, lightPurple, purple, purple]
 
-export const colors = {
+const colors = {
   black,
   white,
   text,
@@ -101,14 +115,19 @@ export const colors = {
   greens,
   reds,
   oranges,
-  purples,
+  purples
+}
+
+Object.defineProperties(colors, {
   ...flatten('blue', blues),
   ...flatten('gray', grays),
   ...flatten('green', greens),
   ...flatten('red', reds),
   ...flatten('orange', oranges),
   ...flatten('purple', purples)
-}
+})
+
+export { colors }
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
@@ -136,7 +155,6 @@ const theme = {
   colors,
   radii,
   radius,
-  radii,
   boxShadows,
   maxContainerWidth
 }

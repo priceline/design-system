@@ -45,7 +45,7 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
           display={iconDisplay}
         />
       )}
-      <Text.span fontSize={fontSize}>{props.text}</Text.span>
+      <Text fontSize={fontSize}>{props.text}</Text>
     </Flex>
     <BorderConcealer>{props.children}</BorderConcealer>
   </HugCard>

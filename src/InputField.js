@@ -22,18 +22,18 @@ const labelStyles = {
   animation: fadeIn + ' 0.3s'
 }
 
-const getInputStyles = (showLabel) => {
-  return (showLabel) ?
-    {
-      paddingTop: '20px',
-      paddingBottom: '8px',
-      transition: 'padding-top 0.1s, padding-bottom 0.1s'
-    } :
-    {
-      paddingTop: '14px',
-      paddingBottom: '14px',
-      transition: 'padding-top 0.1s, padding-bottom 0.1s'
-    }
+const getInputStyles = showLabel => {
+  return showLabel
+    ? {
+        paddingTop: '20px',
+        paddingBottom: '8px',
+        transition: 'padding-top 0.1s, padding-bottom 0.1s'
+      }
+    : {
+        paddingTop: '14px',
+        paddingBottom: '14px',
+        transition: 'padding-top 0.1s, padding-bottom 0.1s'
+      }
 }
 
 class InputField extends React.Component {
@@ -42,7 +42,7 @@ class InputField extends React.Component {
 
     let hasDefaultValue
 
-    React.Children.forEach(props.children, (child) => {
+    React.Children.forEach(props.children, child => {
       if (child && child.type === Input) {
         hasDefaultValue = child.props.defaultValue
       }
@@ -53,8 +53,7 @@ class InputField extends React.Component {
     }
   }
 
-
-  onInputChange = (event) => {
+  onInputChange = event => {
     this.setState({
       showLabel: event.target.value
     })
@@ -126,14 +125,17 @@ class InputField extends React.Component {
             </Box>
           )}
           {React.cloneElement(InputChild, {
-            'aria-label': (!showLabel && inputPlaceholder) ? inputPlaceholder : null,
+            'aria-label':
+              !showLabel && inputPlaceholder ? inputPlaceholder : null,
             mt: showLabel && -20,
             pl: BeforeIcon ? 40 : 2,
             pr: AfterIcon && 40,
             style: getInputStyles(showLabel),
             onChange: this.onInputChange,
             width: 1,
-            innerRef: (elem) => { this.inputRef = elem },
+            innerRef: elem => {
+              this.inputRef = elem
+            },
             ...props
           })}
           {AfterIcon && (
@@ -158,6 +160,7 @@ InputField.propTypes = {
     let secondIconPosition = 999
     let iconCount = 0
     React.Children.forEach(prop, function(child, index) {
+      if (child === null) return
       switch (child.type) {
         case Input:
           inputPosition = index
