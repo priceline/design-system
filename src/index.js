@@ -25,6 +25,7 @@ export { default as Radio } from './Radio'
 export { default as RatingBadge } from './RatingBadge'
 export { default as RedButton } from './RedButton'
 export { default as Text } from './Text'
+export { default as Tooltip } from './Tooltip'
 export { default as Truncate } from './Truncate'
 
 export { default as theme } from './theme'
