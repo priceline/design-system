@@ -1,11 +1,10 @@
-import {
-  theme,
-  colors
-} from '..'
+import { theme, colors } from '..'
 
 const aliases = ['sm', 'md', 'lg', 'xl']
 
 describe('theme', () => {
+  console.warn = jest.genMockFunction()
+
   test('exports an object', () => {
     expect(typeof theme).toBe('object')
   })
@@ -19,10 +18,14 @@ describe('theme', () => {
   })
 
   test('breakpoints have aliases', () => {
-    aliases.forEach((alias, i) => expect(theme.breakpoints[alias]).toEqual(theme.breakpoints[i]))
+    aliases.forEach((alias, i) =>
+      expect(theme.breakpoints[alias]).toEqual(theme.breakpoints[i])
+    )
   })
 
   test('media queries have aliases', () => {
-    aliases.forEach((alias, i) => expect(theme.mediaQueries[alias]).toEqual(theme.mediaQueries[i]))
+    aliases.forEach((alias, i) =>
+      expect(theme.mediaQueries[alias]).toEqual(theme.mediaQueries[i])
+    )
   })
 })

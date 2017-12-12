@@ -11,7 +11,7 @@ const text = (
 
 describe('Hug', () => {
   test('renders with border-radius from theme on top only', () => {
-    const json = renderer.create(<Hug theme={theme} />).toJSON()
+    const json = renderer.create(<Hug />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-top-left-radius', theme.radius)
     expect(json).toHaveStyleRule('border-top-right-radius', theme.radius)
@@ -21,8 +21,8 @@ describe('Hug', () => {
 
   test('renders text, icon, and Child', () => {
     const json = renderer.create(
-      <Hug icon="thumbsUp" text={text} theme={theme}>
-        <Card p={3} bg="white" color="text" theme={theme}>
+      <Hug icon="thumbsUp" text={text}>
+        <Card p={3} bg="white" color="text">
           I‘m a card within a hug!
         </Card>
       </Hug>
@@ -35,9 +35,8 @@ describe('Hug', () => {
       <Hug
         icon="thumbsUp"
         text="I've been known to hug a card from time to time"
-        theme={theme}
       >
-        <Card p={3} bg="white" color="text" theme={theme}>
+        <Card p={3} bg="white" color="text">
           I‘m a card within a hug!
         </Card>
       </Hug>
@@ -47,8 +46,8 @@ describe('Hug', () => {
 
   test('renders text when array of nodes is provided', () => {
     const json = renderer.create(
-      <Hug icon="thumbsUp" text={[text, text]} theme={theme}>
-        <Card p={3} bg="white" color="text" theme={theme}>
+      <Hug icon="thumbsUp" text={[text, text]}>
+        <Card p={3} bg="white" color="text">
           I‘m a card within a hug!
         </Card>
       </Hug>
