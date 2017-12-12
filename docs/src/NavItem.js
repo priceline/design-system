@@ -18,7 +18,7 @@ const BaseNavItem = styled.a`
   }
 `
 BaseNavItem.defaultProps = {
-  pl: 4,
+  pl: 3,
   pr: 2,
   py: 2,
   color: 'inherit'

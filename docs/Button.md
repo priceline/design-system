@@ -15,7 +15,7 @@ radius | string | custom button radius in pixel
 size | string | sets button size to small, medium or large
 fullWidth | boolean | sets button width to fullWidth
 
-## Sizes
+### Sizes
 
 ```.jsx
 <div>
@@ -31,7 +31,7 @@ fullWidth | boolean | sets button width to fullWidth
 </div>
 ```
 
-## Colors
+### Colors
 
 ```.jsx
 <GreenButton>
@@ -45,7 +45,7 @@ fullWidth | boolean | sets button width to fullWidth
 </RedButton>
 ```
 
-## OutlineButton
+### OutlineButton
 
 ```.jsx
 <OutlineButton>

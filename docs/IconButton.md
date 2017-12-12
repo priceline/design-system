@@ -16,6 +16,6 @@ Prop | Type | Description
 ---|---|---
 onClick | function | sets a function to execute on click
 
-## Extensions
+### Extensions
 
 `<CloseButton />`

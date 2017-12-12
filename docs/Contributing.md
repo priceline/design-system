@@ -1,5 +1,5 @@
 
-# Contributing 
+# Contributing
 
 If you'd like to contribute to the design system, we'd love to have your help.
 As with any open source project, we ask that you be nice, professional, and courteous towards others.
@@ -12,7 +12,7 @@ Contributing doesn't necessarily mean commiting code, we also encourage you to:
 - Use the Design System in your project and provide feedback
 
 
-## Local Development
+### Local Development
 
 To contribute code to the Design System, first you'll need to set it up for local development.
 
@@ -61,12 +61,12 @@ open http://localhost:8000/
 ```
 
 
-## Troubleshooting
+### Troubleshooting
 
 You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run prepare` should fix the problem.
 
 
-## GitHub Flow
+### GitHub Flow
 
 We follow a loose version of [GitHub Flow][github-flow] where feature branches are created
 from master, submitted as pull requests, given time for review and discussion,
@@ -89,7 +89,7 @@ Generally the workflow looks like this:
 10. Push the git tags created with the npm CLI to GitHub with `git push --tags`
 
 
-## Beta Version
+### Beta Version
 
 As of the date this was written, the Design System is currently in a beta.
 The package versioning reflects this with the version `1.0.0-x` convention.
@@ -97,7 +97,7 @@ Once the library is in a more stable and mature state, we will release a stable 
 and strictly follow sematic versioning from that point on.
 
 
-## Pull Requests
+### Pull Requests
 
 All changes to the code base should be reviewed in a PR before merging to master.
 This gives contributors and the team a chance to review and discuss changes and helps create a record of the project's history.

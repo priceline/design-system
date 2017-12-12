@@ -85,7 +85,7 @@ const Table = styled(props => (
   width: 100%;
   ${space} & th {
     text-align: left;
-    border-bottom-width: 3px;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: ${theme('colors.borderGray')};
   }
@@ -99,7 +99,7 @@ const Table = styled(props => (
 
   & td {
     font-size: 16px;
-    color: ${theme('colors.gray')};
+    color: ${theme('colors.text')};
     vertical-align: middle;
     padding-right: 16px !important;
     border-bottom-width: 1px;
@@ -139,7 +139,7 @@ const defaultScope = {
   h5: heading('h5'),
   h6: heading('h6'),
   a: Link,
-  p: p => <Text.p color="gray" {...p} />,
+  p: p => <Text.p {...p} />,
   pre: CodeBlock,
   code: Code,
   table: Table
@@ -155,19 +155,22 @@ defaultScope.h1.defaultProps = {
 defaultScope.h2.defaultProps = {
   fontSize: 5,
   mt: 4,
-  mb: 2
+  mb: 3
 }
 
 defaultScope.h3.defaultProps = {
   fontSize: 4,
   mt: 4,
-  mb: 2
+  mb: 3,
+  style: {
+    fontWeight: '700'
+  }
 }
 
 defaultScope.h4.defaultProps = {
   fontSize: 3,
   mt: 4,
-  mb: 2
+  mb: 3
 }
 
 defaultScope.p.defaultProps = {
