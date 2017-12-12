@@ -4,17 +4,13 @@ import { Link } from '../src'
 
 storiesOf('Link', module)
   .add('Link component', () => (
-    <Link href='https://www.priceline.com/home/' target='_blank'>
+    <Link href="https://www.priceline.com/home/" target="_blank">
       Priceline Home
     </Link>
   ))
   .add('Link open self', () => (
-    <Link href='https://www.priceline.com/home/' target='_self'>
+    <Link href="https://www.priceline.com/home/" target="_self">
       Open the Priceline Home in the same window
     </Link>
   ))
-  .add('Color', () => (
-    <Link color='gray3'>
-      I'm a different color!
-    </Link>
-  ))
+  .add('Color', () => <Link color="darkGray">I'm a different color!</Link>)
