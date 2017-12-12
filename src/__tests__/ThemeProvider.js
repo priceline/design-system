@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { ThemeProvider, theme, Box } from '..'
+import { ThemeProvider, theme, Box, legacyTheme } from '..'
 import { Base } from '../ThemeProvider'
 
 describe('ThemeProvider', () => {
@@ -11,6 +11,20 @@ describe('ThemeProvider', () => {
 
   test('renders with legacy prop', () => {
     const json = renderer.create(<ThemeProvider legacy />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('accept a custom theme', () => {
+    const customColors = Object.assign({}, legacyTheme.colors, {
+      borderGray: '#d1d6db',
+      lightGreen: '#cec'
+    })
+    const customTheme = Object.assign({}, theme, {
+      colors: customColors
+    })
+    const json = renderer
+      .create(<ThemeProvider customTheme={customTheme} />)
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 
