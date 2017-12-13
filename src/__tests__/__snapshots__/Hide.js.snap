@@ -7,7 +7,7 @@ exports[`Hide renders 1`] = `
 `;
 
 exports[`Hide renders with lg prop 1`] = `
-@media screen and (min-width:48em) and (max-width:64em) {
+@media screen and (min-width:48em) and (max-width:63.99em) {
   .c0 {
     display: none;
   }
@@ -19,7 +19,7 @@ exports[`Hide renders with lg prop 1`] = `
 `;
 
 exports[`Hide renders with md prop 1`] = `
-@media screen and (min-width:40em) and (max-width:48em) {
+@media screen and (min-width:40em) and (max-width:47.99em) {
   .c0 {
     display: none;
   }
@@ -31,7 +31,7 @@ exports[`Hide renders with md prop 1`] = `
 `;
 
 exports[`Hide renders with sm prop 1`] = `
-@media screen and (min-width:32em) and (max-width:40em) {
+@media screen and (min-width:32em) and (max-width:39.99em) {
   .c0 {
     display: none;
   }
@@ -55,7 +55,7 @@ exports[`Hide renders with xl prop 1`] = `
 `;
 
 exports[`Hide renders with xs prop 1`] = `
-@media screen and (max-width:32em) {
+@media screen and (max-width:31.99em) {
   .c0 {
     display: none;
   }

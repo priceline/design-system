@@ -14,6 +14,7 @@
 - [`<Flag />`](Flag.md)
 - [`<Icon />`](Icon.md)
 - [`<IconButton />`](IconButton.md)
+- [`<InputField />`](InputField.md)
 - [`<Image />`](Image.md)
 - [`<BackgroundImage />`](BackgroundImage.md)
 - [`<RatingBadge />`](RatingBadge.md)

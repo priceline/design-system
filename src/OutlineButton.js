@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import Button from './Button'
+import theme from './theme'
 
 const OutlineButton = styled(Button)`
   background-color: transparent;
@@ -17,6 +18,11 @@ const OutlineButton = styled(Button)`
     background-color: transparent;
   }
 `
+
+OutlineButton.defaultProps = {
+  theme: theme
+}
+
 OutlineButton.displayName = 'OutlineButton'
 
 export default OutlineButton

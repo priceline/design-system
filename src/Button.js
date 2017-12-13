@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { space } from 'styled-system'
+import theme from './theme'
 
 const size = props => {
   switch (props.size) {
@@ -41,6 +42,7 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   line-height: 1.5;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
@@ -87,6 +89,10 @@ Button.propTypes = {
   pl: numberStringOrArray,
   px: numberStringOrArray,
   py: numberStringOrArray
+}
+
+Button.defaultProps = {
+  theme: theme
 }
 
 Button.displayName = 'Button'

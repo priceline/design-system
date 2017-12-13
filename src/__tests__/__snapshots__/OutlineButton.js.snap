@@ -7,6 +7,7 @@ exports[`OutlineButton disabled prop sets 1`] = `
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -48,6 +49,7 @@ exports[`OutlineButton renders 1`] = `
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
@@ -94,6 +96,7 @@ exports[`OutlineButton without disabled prop sets 1`] = `
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: 2px;
