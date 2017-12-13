@@ -6,8 +6,8 @@ Use the `<BackgroundImage />` component to set a background image.
 ```.jsx
 <BackgroundImage
   height='256px'
-  image='http://www.priceline.com/home/public/assets/images/destinations/orlando.jpg'>
-  Hello
+  image='https://source.unsplash.com/bITjK6W2Alw/3200x1800'>
+  <Heading.h2 color="white">Hello</Heading.h2>
 </BackgroundImage>
 ```
 

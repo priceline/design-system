@@ -3,9 +3,10 @@ import { space, color, borderRadius, propsTypes } from 'styled-system'
 
 const Pre = styled.pre`
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  margin-bottom: 16px;
   overflow-x: auto;
   ${space} ${color} ${borderRadius};
 `
