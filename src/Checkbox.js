@@ -1,115 +1,69 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { Icon, Flex, Box, Label, theme } from '..'
+import { Icon, Box } from '..'
 
-class Checkbox extends React.Component {
-  handleClick(e) {
-    const { name, value, onClick } = this.props
-    const checked = e.target.checked
-    onClick(name, value, checked)
-  }
-
-  render() {
-    const {
-      name,
-      id,
-      disabled,
-      size,
-      fontSize,
-      children,
-      onClick,
-      checked,
-      defaultChecked,
-      theme: themeProp,
-      ...restProps
-    } = this.props
-    const currentTheme = themeProp || theme
-    return (
-      <StyledLabel
-        htmlFor={name}
-        data-test="design-system-checkbox"
-        disabled={disabled}
-      >
-        <input
-          type="checkbox"
-          name={name}
-          id={this.props.id || name}
-          disabled={disabled}
-          defaultChecked={checked || defaultChecked}
-          {...restProps}
-          onChange={e => this.handleClick(e)}
-          style={{ opacity: 0, zIndex: -1, position: 'absolute' }}
-        />
-        <StyledCheckbox
-          data-test="checkbox-facade"
-          disabled={disabled}
-          size={size}
-        >
-          <Icon
-            name="check"
-            size={size - 4}
-            color={currentTheme.colors.white}
-          />
-        </StyledCheckbox>
-        {children}
-      </StyledLabel>
-    )
-  }
+const Checkbox = props => {
+  const { disabled, size } = props
+  return (
+    <CheckBoxWrapper disabled={disabled}>
+      <StyledInput type="checkbox" {...props} />
+      <Icon name="boxChecked" size={size} data-name="checked" />
+      <Icon name="boxEmpty" size={size} data-name="empty" />
+    </CheckBoxWrapper>
+  )
 }
 
-const droppedOpacity = css`
-  opacity: 0.7;
-`
-const StyledLabel = Label.extend`
-  display: inline-flex;
-  align-items: center;
-  ${props => (props.disabled ? droppedOpacity : 'cursor: pointer;')};
+const CheckBoxWrapper = Box.extend`
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  color: ${props =>
+    props.disabled ? props.theme.colors.borderGray : props.theme.colors.gray};
 
-  input:not(:checked) + [data-test='checkbox-facade'] {
-    background-color: ${props => props.theme.colors.white};
-    ${props => (props.disabled ? droppedOpacity : null)} &:hover {
-      ${props =>
+  svg[data-name='checked'] {
+    display: none;
+  }
+
+  > input:checked {
+    & ~ svg[data-name='checked'] {
+      display: inline-block;
+      color: ${props =>
         props.disabled
-          ? null
-          : 'border-color:' + props.theme.colors.blue + ';'};
+          ? props.theme.colors.borderGray
+          : props.theme.colors.blue};
+    }
+
+    & ~ svg[data-name='empty'] {
+      display: none;
     }
   }
-
-  input:checked + [data-test='checkbox-facade'] {
-    background-color: ${props =>
-      props.disabled ? props.theme.colors.borderGray : props.theme.colors.blue};
-    border-color: ${props =>
-      props.disabled ? props.theme.colors.borderGray : props.theme.colors.blue};
-  }
 `
 
-const StyledCheckbox = Box.extend`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: ${props => props.size}px;
-  width: ${props => props.size}px;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 2px solid ${props => props.theme.colors.borderGray};
+const StyledInput = styled.input`
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 `
 
 Checkbox.displayName = 'Checkbox'
-Checkbox.defaultProps = {
-  size: 20,
-  disabled: false
-}
 
 Checkbox.propTypes = {
-  name: PropTypes.string.isRequired,
-  id: PropTypes.string,
+  name: PropTypes.string,
+  id: PropTypes.string.isRequired,
   size: PropTypes.number,
-  checked: PropTypes.bool,
+  defaultChecked: PropTypes.bool,
   disabled: PropTypes.bool,
-  value: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   theme: PropTypes.object
+}
+
+Checkbox.defaultProps = {
+  size: 20,
+  disabled: false,
+  defaultChecked: false
 }
 
 export default Checkbox

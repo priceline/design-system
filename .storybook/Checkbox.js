@@ -1,11 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
-import { storiesOf, action, decorateAction } from '@storybook/react'
-import { Checkbox, Text, Box, Heading, Button, theme } from '../src'
+import { storiesOf, action } from '@storybook/react'
+import {
+  Checkbox,
+  Text,
+  Box,
+  Heading,
+  Button,
+  OutlineButton,
+  Label,
+  theme
+} from '../src'
+
+const StyledLabel = Label.extend`
+  cursor: pointer;
+  font-size: 12px;
+  vertical-align: middle;
+`
 
 const Wrapper = props => (
-  <Box p="12px" my="6px">
-    <Heading.h6 mb="12px">{props.title}</Heading.h6>
+  <Box p="12px" my="6px" fontSize="12px">
+    {props.title ? <Heading.h6 mb="12px">{props.title}</Heading.h6> : null}
     {props.children}
   </Box>
 )
@@ -13,94 +28,70 @@ const Wrapper = props => (
 const formAction = e => {
   e.preventDefault()
   action('form was submitted, is checkbox checked?')(
-    e.target[1].value,
+    e.target[1].id,
     e.target[1].checked
   )
 }
 
+const checkAction = e => {
+  action(`${e.target.id} was clicked`)(e.target.value, e.target.checked)
+}
+
 storiesOf('Checkbox', module).add('Checkbox states', () => (
   <div>
-    <Wrapper title="Default">
-      <Checkbox
-        name="default_box"
-        value="someValue"
-        onClick={action('checkbox-clicked')}
-      />
+    <Wrapper>
+      <StyledLabel htmlFor="unchecked_box">
+        <Checkbox id="unchecked_box" onChange={checkAction} />
+        Unchecked by default
+      </StyledLabel>
     </Wrapper>
 
-    <Wrapper title="Pre Checked">
-      <Checkbox
-        name="pre_checked_box"
-        value="someValue"
-        defaultChecked={true}
-        onClick={action('checkbox-clicked')}
-      />
+    <Wrapper>
+      <StyledLabel htmlFor="checked_box">
+        <Checkbox id="checked_box" defaultChecked onChange={checkAction} />
+        Checked by Default
+      </StyledLabel>
     </Wrapper>
 
-    <Wrapper title="With a label">
-      <Checkbox
-        name="labeled_box"
-        value="someValue"
-        onClick={action('checkbox-clicked')}
-      >
-        <Text.p p="8px" m="0" fontSize={14} style={{ display: 'inline-block' }}>
-          Some Clickable Label
-        </Text.p>
-      </Checkbox>
+    <Wrapper>
+      <StyledLabel htmlFor="disabled_box">
+        <Checkbox id="disabled_box" disabled onChange={checkAction} />
+        <Text.span color={theme.colors.borderGray}>Disabled</Text.span>
+      </StyledLabel>
     </Wrapper>
 
-    <Wrapper title="Disabled">
-      <Checkbox
-        name="disabled_box"
-        disabled={true}
-        onClick={action('checkbox-clicked')}
-      />
-    </Wrapper>
-
-    <Wrapper title="Disabled and checked">
-      <Checkbox
-        name="disabled_checked_box"
-        disabled={true}
-        checked={true}
-        onClick={action('checkbox-clicked')}
-      />
-    </Wrapper>
-
-    <Wrapper title="Disabled with Label">
-      <Checkbox
-        name="disabled_labeled_checked_box"
-        disabled={true}
-        checked={true}
-        onClick={action('checkbox-clicked')}
-      >
-        <Text.p p="8px" m="0" fontSize={14} style={{ display: 'inline-block' }}>
-          Some Disabled Label
-        </Text.p>
-      </Checkbox>
+    <Wrapper>
+      <StyledLabel htmlFor="disabled_checked_box">
+        <Checkbox
+          id="disabled_checked_box"
+          disabled
+          defaultChecked
+          onChange={checkAction}
+        />
+        <Text.span color={theme.colors.borderGray}>
+          Disabled & Checked
+        </Text.span>
+      </StyledLabel>
     </Wrapper>
 
     <Wrapper title="In A Form">
       <form onSubmit={e => formAction(e)}>
         <fieldset style={{ display: 'inline-block', padding: '16px' }}>
           <legend>Fancy Form</legend>
-          <Box>
-            <Checkbox
-              name="form_checkbox"
-              value="someValue"
-              onClick={action('checkbox-clicked')}
-            >
-              <Text.p
-                p="8px"
-                m="0"
-                fontSize={14}
-                style={{ display: 'inline-block' }}
-              >
-                Vote For Me
-              </Text.p>
-            </Checkbox>
-          </Box>
+
+          <Wrapper>
+            <StyledLabel fontSize="14px" htmlFor="form_checkbox">
+              <Checkbox id="form_checkbox" size={30} onChange={checkAction} />
+              &nbsp;In This Form
+            </StyledLabel>
+          </Wrapper>
 
           <Button type="submit">Submit Me</Button>
+          <br />
+          <br />
+          <OutlineButton color={theme.colors.gray} type="reset">
+            Reset Me
+          </OutlineButton>
         </fieldset>
       </form>
     </Wrapper>

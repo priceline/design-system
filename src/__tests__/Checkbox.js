@@ -1,62 +1,40 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Checkbox, theme } from '..'
+import { Checkbox, Icon, theme } from '..'
 import { shallow, mount, render } from 'enzyme'
 
 const fakeEvent = { target: { checked: true } }
-let onClickFn = jest.fn()
+let onChangeFn = jest.fn()
 const name = 'random_check_box'
-const value = 'priceline rules'
-const facadeSelector = '[data-test="checkbox-facade"]'
-const checkboxSelector = 'input[type="checkbox"]'
+const checkBoxSelector = `#${name}`
 
 describe('Checkbox', () => {
   beforeEach(() => {
-    onClickFn.mockReset()
+    onChangeFn.mockReset()
   })
 
   test('renders without the theme passed specifically', () => {
-    const component = <Checkbox name={name} onClick={onClickFn} />
-    const wrapper = shallow(component)
-    const facade = wrapper.find(facadeSelector)
-    const input = wrapper.find(checkboxSelector)
+    const component = <Checkbox id={name} onChange={onChangeFn} />
+    const wrapper = mount(component)
     const json = renderer.create(component).toJSON()
 
-    expect(json.type).toBe('label')
-    expect(input.prop('style')).toEqual({
-      opacity: 0,
-      zIndex: -1,
-      position: 'absolute'
-    })
-    expect(wrapper.children().length).toBe(2)
-    expect(facade.children().length).toBe(1)
     expect(json).toMatchSnapshot()
   })
 
   test('renders with the theme passed specifically', () => {
-    const component = <Checkbox name={name} onClick={onClickFn} theme={theme} />
+    const component = <Checkbox id={name} onChange={onChangeFn} theme={theme} />
     const wrapper = shallow(component)
-    const facade = wrapper.find(facadeSelector)
-    const input = wrapper.find(checkboxSelector)
     const json = renderer.create(component).toJSON()
 
-    expect(json.type).toBe('label')
-    expect(input.prop('style')).toEqual({
-      opacity: 0,
-      zIndex: -1,
-      position: 'absolute'
-    })
-    expect(wrapper.children().length).toBe(2)
-    expect(facade.children().length).toBe(1)
     expect(json).toMatchSnapshot()
   })
 
   test('renders checked when defaultChecked prop is passed as true', () => {
     const component = (
-      <Checkbox name={name} defaultChecked={true} onClick={onClickFn} />
+      <Checkbox id={name} defaultChecked onChange={onChangeFn} />
     )
     const wrapper = shallow(component)
-    const input = wrapper.find(checkboxSelector)
+    const input = wrapper.find(checkBoxSelector)
     const json = renderer.create(component).toJSON()
 
     expect(input.prop('defaultChecked')).toBe(true)
@@ -65,14 +43,14 @@ describe('Checkbox', () => {
 
   test('renders disabled when disabled props is passed as true', () => {
     const component = (
-      <Checkbox name={name} disabled={true} onClick={onClickFn} />
+      <Checkbox id={name} disabled={true} onChange={onChangeFn} />
     )
     const componentChecked = (
       <Checkbox
-        name={name}
+        id={name}
         disabled={true}
         defaultChecked={true}
-        onClick={onClickFn}
+        onChange={onChangeFn}
       />
     )
 
@@ -88,12 +66,12 @@ describe('Checkbox', () => {
    * for the nested input. This also means we cannot accurately test that disabled checkboxes ignore clicks.
    */
   test('updates and fires callback when clicked (when enabled)', () => {
-    const component = <Checkbox name={name} onClick={onClickFn} />
+    const component = <Checkbox id={name} onChange={onChangeFn} />
     const wrapper = shallow(component)
     const json = renderer.create(component).toJSON()
 
-    wrapper.find('input').simulate('change', fakeEvent)
-    expect(onClickFn).toHaveBeenCalled()
+    wrapper.find(checkBoxSelector).simulate('change', fakeEvent)
+    expect(onChangeFn).toHaveBeenCalled()
     expect(json).toMatchSnapshot()
   })
 })
