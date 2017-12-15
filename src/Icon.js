@@ -22,7 +22,8 @@ const aliases = {
   add: icons.radioPlus,
   minus: icons.radioMinus,
   businessSeat: icons.seatBusiness,
-  economySeat: icons.seatEconomy
+  economySeat: icons.seatEconomy,
+  plane: icons.flights
 }
 
 const getPath = ({ name, legacy }) => {
