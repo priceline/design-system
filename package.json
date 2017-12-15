@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "1.0.0-33",
+  "version": "1.0.0-34",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
