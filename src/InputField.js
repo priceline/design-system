@@ -186,12 +186,16 @@ InputField.propTypes = {
 
     if (!inputCount) {
       return new Error(
-        `No 'Input' child found for '${componentName}'. Please update your component to use the compound version of this component and pass an 'Input' component as the child`
+        `No 'Input' child found for '${
+          componentName
+        }'. Please update your component to use the compound version of this component and pass an 'Input' component as the child`
       )
     }
     if (labelCount > 1) {
       return new Error(
-        `Exactly 0 or 1 'Label' children should be supplied to '${componentName}'`
+        `Exactly 0 or 1 'Label' children should be supplied to '${
+          componentName
+        }'`
       )
     }
     if (iconCount > 2) {
@@ -204,7 +208,9 @@ InputField.propTypes = {
       (firstIconPosition > inputPosition || secondIconPosition < inputPosition)
     ) {
       return new Error(
-        `If 2 'Icons' are provided, the 'Input' component must be positioned between them as children of '${componentName}'`
+        `If 2 'Icons' are provided, the 'Input' component must be positioned between them as children of '${
+          componentName
+        }'`
       )
     }
   }

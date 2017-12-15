@@ -15,4 +15,3 @@ Prop | Type | Description
 align | string | sets `align-items`
 justify | string | sets `justify-content`
 wrap | boolean | sets `flex-wrap: wrap`
-
