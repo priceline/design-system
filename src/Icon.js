@@ -8,7 +8,21 @@ import icons from '../icons.json'
 const aliases = {
   scrollLeft: icons.chevronLeft,
   chevronLight: icons.chevronDown,
-  chevronThick: icons.chevronDownThick
+  chevronThick: icons.chevronDownThick,
+  // aliases for breaking changes from #153
+  // should add propType warnings similar to the color name deprecation getters
+  box: icons.boxEmpty,
+  car: icons.cars,
+  cruise: icons.cruises,
+  description: icons.document,
+  hotel: icons.hotels,
+  allInclusive: icons.inclusive,
+  radioFilled: icons.radioChecked,
+  radio: icons.radioEmpty,
+  add: icons.radioPlus,
+  minus: icons.radioMinus,
+  businessSeat: icons.seatBusiness,
+  economySeat: icons.seatEconomy
 }
 
 const getPath = ({ name, legacy }) => {
