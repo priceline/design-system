@@ -26,7 +26,7 @@ export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
-export const bold = 700
+export const bold = 600
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
