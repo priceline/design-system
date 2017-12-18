@@ -9,11 +9,11 @@ import {
   Text,
   Link,
   Hide,
-  Container,
   Button,
   Image,
   theme
 } from 'pcln-design-system'
+import Container from './Container'
 import Landing from './Landing'
 import Color from './Color'
 import Typography from './Typography'
@@ -141,7 +141,7 @@ class App extends React.Component {
                     path="/"
                     render={() => <Landing {...this.props} />}
                   />
-                  <Container maxWidth={868}>
+                  <Container>
                     {sections.map(section =>
                       section.pages.map((page, i) => (
                         <Route

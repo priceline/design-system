@@ -109,7 +109,7 @@ const ColorList = props =>
   ))
 
 const Color = props => (
-  <Box px={3} pt={4} pb={6}>
+  <Box pt={4} pb={6}>
     <PageTitle>Color</PageTitle>
     <Description>
       The design system includes a color palette of several primary colors,

@@ -12,7 +12,7 @@ import Description from './Description'
 import Pagination from './Pagination'
 
 const Typography = props => (
-  <Box px={3} pt={4} pb={6}>
+  <Box pt={4} pb={6}>
     <PageTitle>Typography</PageTitle>
     <Description>
       The design system includes base styles for typography and a typographic
