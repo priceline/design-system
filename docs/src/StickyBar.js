@@ -1,8 +1,21 @@
+import React from 'react'
 import styled from 'styled-components'
 import { theme } from 'styled-system'
 import { Box } from 'pcln-design-system'
 
-const StickyBar = styled(Box)`
+class Root extends React.Component {
+  componentWillReceiveProps(next) {
+    if (next.open !== this.props.open) {
+      this.root.scrollTop = 0
+    }
+  }
+
+  render() {
+    return <Box {...this.props} innerRef={ref => (this.root = ref)} />
+  }
+}
+
+const StickyBar = styled(Root)`
   height: 100vh;
   max-height: ${props => (props.open ? '100vh' : '64px')};
   overflow-y: ${props => (props.open ? 'auto' : 'hidden')};
