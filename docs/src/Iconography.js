@@ -6,9 +6,9 @@ import {
   Text,
   Icon,
   Divider,
-  theme,
-  icons
+  theme
 } from 'pcln-design-system'
+import icons from 'pcln-design-system/icons.json'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'

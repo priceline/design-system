@@ -31,6 +31,5 @@ export { default as Truncate } from './Truncate'
 export { default as theme } from './theme'
 export { default as legacyTheme } from './legacyTheme'
 export { default as ThemeProvider } from './ThemeProvider'
-export { default as icons } from '../icons.json'
 
 export * from './theme'
