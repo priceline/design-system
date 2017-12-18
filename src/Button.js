@@ -7,28 +7,27 @@ const size = props => {
   switch (props.size) {
     case 'small':
       return {
-        fontSize: `${props.theme.fontSizes[0]}px`, // 12px / 18
-        paddingLeft: '12px',
-        paddingRight: '12px',
-        paddingTop: '7px', // 18px + 14px = 32px
-        paddingBottom: '7px'
+        height: '32px',
+        fontSize: `${props.theme.fontSizes[0]}px`,
+        padding: '0 12px'
+      }
+    case 'medium':
+      return {
+        height: '40px',
+        fontSize: `${props.theme.fontSizes[1]}px`,
+        padding: '0 18px'
       }
     case 'large':
       return {
-        fontSize: `${props.theme.fontSizes[2]}px`, // 16px / 24
-        paddingLeft: '22px',
-        paddingRight: '22px',
-        paddingTop: '12px', // 24px + 24px = 48px
-        paddingBottom: '12px'
+        height: '48px',
+        fontSize: `${props.theme.fontSizes[2]}px`,
+        padding: '0 22px'
       }
-    case 'medium':
     default:
       return {
-        fontSize: `${props.theme.fontSizes[1]}px`, // 14px / 21
-        paddingLeft: '18px',
-        paddingRight: '18px',
-        paddingTop: '9.5px', // 21px + 19px = 40px
-        paddingBottom: '9.5px'
+        height: '40px',
+        fontSize: `${props.theme.fontSizes[1]}px`,
+        padding: '0 18px'
       }
   }
 }
@@ -41,7 +40,6 @@ const Button = styled.button`
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  line-height: 1.5;
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
@@ -60,7 +58,7 @@ const Button = styled.button`
       props.disabled ? null : props.theme.colors.darkBlue};
   }
 
-  ${fullWidth} ${space} ${size};
+  ${fullWidth} ${size} ${space};
 `
 
 const numberStringOrArray = PropTypes.oneOfType([
