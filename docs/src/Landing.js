@@ -1,9 +1,9 @@
 import React from 'react'
+import styled from 'styled-components'
 import {
   Flex,
   Box,
   Card,
-  Container,
   BackgroundImage,
   Heading,
   Text,
@@ -14,24 +14,33 @@ import {
 import PageTitle from './PageTitle'
 import Pre from './Pre'
 import Markdown from './Markdown'
+import Container from './Container'
 
-Button.a = Button.withComponent('a')
+// This will require a fix in the Button component
+Button.a = Button.withComponent('a').extend`
+  line-height: 1.5;
+  height: auto !important;
+`
+
+Button.a.defaultProps = {
+  py: 9.5
+}
+
+const Banner = styled(Flex)`
+  min-height: 50vh;
+  background-image: linear-gradient(45deg, #07f, #0df);
+
+  /* Note: this should be removed after mergining #177 */
+  text-align: left;
+`
 
 const Landing = props => {
   const gettingStarted = props.content.find(c => c.name === 'GettingStarted')
     .content
   return (
     <Box>
-      <Flex
-        align="center"
-        px={3}
-        style={{
-          textAlign: 'left',
-          height: '50vh',
-          background: 'linear-gradient(45deg, #07f, #0df)'
-        }}
-      >
-        <Container maxWidth={868} width={1}>
+      <Banner align="center" justify="flex-start">
+        <Container>
           <PageTitle mt={0} color="white">
             Priceline One
           </PageTitle>
@@ -40,23 +49,19 @@ const Landing = props => {
           </Text>
           <Text fontSize={2}>v{props.pkg && props.pkg.version}</Text>
         </Container>
-      </Flex>
-      <Container maxWidth={868}>
-        <Box px={3}>
-          <Flex wrap mx={-2} py={4} align="center">
-            <Pre m={2}>npm install pcln-design-system</Pre>
-            <Button.a
-              m={2}
-              href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
-              children="Sketch Library Download"
-              target="_blank"
-              style={{ lineHeight: '40px' }}
-            />
-          </Flex>
-          <Divider />
-          <Box pb={5}>
-            <Markdown children={gettingStarted} />
-          </Box>
+      </Banner>
+      <Container>
+        <Flex wrap mx={-2} py={4} align="center">
+          <Pre m={2}>npm install pcln-design-system</Pre>
+          <Button.a
+            m={2}
+            href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
+            children="Sketch Library Download"
+          />
+        </Flex>
+        <Divider />
+        <Box pb={5}>
+          <Markdown children={gettingStarted} />
         </Box>
       </Container>
     </Box>
