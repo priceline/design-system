@@ -71,17 +71,17 @@ class App extends React.Component {
                   open={menuOpen}
                   width={[1, 256]}
                   px={3}
-                  pt={2}
                   pb={5}
                   color="text"
                   bg="lightGray"
                 >
-                  <Flex align="center" px={24} py={24} mb={3}>
+                  <Flex align="center" px={[0, 3]} py={[3, 4]}>
                     <Heading.h1 fontSize={3}>
                       <NavLink
                         to="/"
                         style={{
-                          display: 'block',
+                          display: 'flex',
+                          alignItems: 'center',
                           color: 'inherit',
                           textDecoration: 'none'
                         }}

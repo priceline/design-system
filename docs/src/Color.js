@@ -98,7 +98,7 @@ const ColorCard = ({ name, value }) => (
 )
 
 const Column = props => (
-  <Box {...props} width={[1 / 3, null, null, 1 / 6]} mb={3} px={2} />
+  <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 6]} mb={3} px={2} />
 )
 
 const ColorList = props =>

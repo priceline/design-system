@@ -148,7 +148,7 @@ const defaultScope = {
 // Markdown components typography and margins
 // can be set with defaultProps
 defaultScope.h1.defaultProps = {
-  fontSize: 6,
+  fontSize: [5, 5, 6],
   mt: 0,
   mb: 2
 }

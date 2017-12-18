@@ -18,7 +18,7 @@ import Pagination from './Pagination'
 const iconNames = Object.keys(icons).filter(key => key !== 'legacy')
 
 const Column = props => (
-  <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 5]} mb={3} px={2} />
+  <Box {...props} width={[1 / 3, null, 1 / 3, 1 / 5]} mb={3} px={2} />
 )
 
 const createDataURI = svg => `data:image/svg+xml;utf8,${svg}`

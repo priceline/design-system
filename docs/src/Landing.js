@@ -24,18 +24,14 @@ const Landing = props => {
     <Box>
       <Flex
         align="center"
+        px={3}
         style={{
           textAlign: 'left',
           height: '50vh',
           background: 'linear-gradient(45deg, #07f, #0df)'
         }}
       >
-        <Container
-          maxWidth={868}
-          style={{
-            width: '100%'
-          }}
-        >
+        <Container maxWidth={868} width={1}>
           <PageTitle mt={0} color="white">
             Priceline One
           </PageTitle>
@@ -45,8 +41,8 @@ const Landing = props => {
           <Text fontSize={2}>v{props.pkg && props.pkg.version}</Text>
         </Container>
       </Flex>
-      <Box>
-        <Container maxWidth={868}>
+      <Container maxWidth={868}>
+        <Box px={3}>
           <Flex wrap mx={-2} py={4} align="center">
             <Pre m={2}>npm install pcln-design-system</Pre>
             <Button.a
@@ -61,8 +57,8 @@ const Landing = props => {
           <Box pb={5}>
             <Markdown children={gettingStarted} />
           </Box>
-        </Container>
-      </Box>
+        </Box>
+      </Container>
     </Box>
   )
 }
