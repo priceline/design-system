@@ -22,12 +22,12 @@ const Typography = props => (
       {[...theme.fontSizes].reverse().map((fontSize, i) => (
         <Heading key={fontSize} fontSize={fontSize} mb={3} bold>
           <Truncate>
-            {fontSize}px ({theme.fontSizes.length - i - 1}) Aa Hello
+            {fontSize}px ({theme.fontSizes.length - i - 1}) Discover new deals
+            every day.
           </Truncate>
         </Heading>
       ))}
     </Box>
-    <Divider my={4} />
     <Pagination {...props} />
   </Box>
 )

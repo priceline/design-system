@@ -17,7 +17,7 @@ import {
 } from 'pcln-design-system'
 ```
 
-## Colors
+### Colors
 
 ```js
 import { colors } from 'pcln-design-system'
@@ -26,7 +26,7 @@ colors.blue // '#0a84c1'
 ```
 
 
-## Font Sizes
+### Font Sizes
 
 ```js
 import { fontSizes } from 'pcln-design-system'
@@ -37,7 +37,7 @@ fontSizes[2] // 16
 The theme includes a typographic scale as the `fontSizes` array.
 Use these values whenever declaring a font-size in CSS.
 
-## Spacing Scale
+### Spacing Scale
 
 The `space` array should be used whenever declaring margin or padding values.
 
@@ -53,7 +53,7 @@ space[5] // 64
 space[6] // 128
 ```
 
-## Media Queries
+### Media Queries
 
 The `mediaQueries` array can be used to add styles targeted for different screen sizes. The design system is built for mobile-first design, so all media queries use min-width.
 

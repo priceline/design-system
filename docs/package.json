@@ -2,12 +2,12 @@
   "name": "pcln-design-system-docs",
   "private": true,
   "dependencies": {
-    "@compositor/x0": "^2.0.0-11",
+    "@compositor/x0": "^3.0.2",
     "gray-matter": "^3.0.8",
-    "pcln-design-system": "^1.0.0-25",
+    "pcln-design-system": "^1.0.0-29",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-live": "^1.7.1",
     "react-router-dom": "^4.2.2",
     "remark": "^8.0.0",
@@ -18,5 +18,8 @@
     "start": "x0 dev src/App.js -op 9000",
     "dev-build": "x0 build src/App.js -d site",
     "build": "x0 build src/App.js --basename '/design-system' -d site"
+  },
+  "x0": {
+    "cssLibrary": "styled-components"
   }
 }

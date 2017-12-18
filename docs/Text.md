@@ -37,7 +37,6 @@ Use the `<Text />` component to control font size, weight, alignment, and color.
 </Text>
 ```
 
-
 ```.jsx
 // Blue text from the color palette
 <Text color='blue'>
@@ -65,7 +64,7 @@ my | number, string, or array | Sets margin-top and margin-bottom
 By default, the `<Text />` component renders a `<div>` element.
 To use a `<span>` or `<p>` element, use the following:
 
-```jsx
+```.jsx
 <Text.span>This is a span element</Text.span>
 <Text.p>This is a p element</Text.p>
 <Text.s>This is an s element</Text.s>

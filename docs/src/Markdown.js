@@ -85,23 +85,31 @@ const Table = styled(props => (
   width: 100%;
   ${space} & th {
     text-align: left;
-    font-weight: bold;
-    vertical-align: bottom;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.lightGray')};
+    border-bottom-color: ${theme('colors.borderGray')};
+  }
+
+  & td:first-child {
+    font-family: 'Roboto Mono', Menlo, monospace;
+    font-size: 16px;
+    min-width: 150px;
+    color: ${theme('colors.blue')};
   }
 
   & td {
-    vertical-align: top;
+    font-size: 16px;
+    color: ${theme('colors.text')};
+    vertical-align: middle;
+    padding-right: 16px !important;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.lightGray')};
+    border-bottom-color: ${theme('colors.borderGray')};
   }
 
   & th,
   & td {
-    padding: 4px;
+    height: 72px;
     line-height: inherit;
   }
 `
@@ -140,33 +148,36 @@ const defaultScope = {
 // Markdown components typography and margins
 // can be set with defaultProps
 defaultScope.h1.defaultProps = {
-  fontSize: [4, 5, null, 6],
+  fontSize: 6,
+  mt: 0,
+  mb: 2
+}
+defaultScope.h2.defaultProps = {
+  fontSize: 5,
   mt: 4,
   mb: 3
 }
-defaultScope.h2.defaultProps = {
-  fontSize: 4,
-  mt: 3,
-  mb: 2
-}
 
 defaultScope.h3.defaultProps = {
-  fontSize: 3,
-  mt: 3,
-  mb: 2
+  fontSize: 4,
+  mt: 4,
+  mb: 3,
+  style: {
+    fontWeight: '700'
+  }
 }
 
 defaultScope.h4.defaultProps = {
   fontSize: 3,
-  mt: 3,
-  mb: 2
+  mt: 4,
+  mb: 3
 }
 
 defaultScope.p.defaultProps = {
   mt: 0,
   mb: 3,
   style: {
-    lineHeight: 1.5
+    lineHeight: 1.6
   }
 }
 

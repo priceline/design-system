@@ -54,7 +54,7 @@ const Iconography = props => (
   <Box px={3} pt={4} pb={6}>
     <PageTitle>Iconography</PageTitle>
     <Description>
-      The design system includes icons based on Google's Material Design Icons.
+      The design system includes icons based on Googles Material Design Icons.
     </Description>
     <Flex wrap mx={-2} py={4}>
       <IconList icons={iconNames} />

@@ -1,12 +1,12 @@
-# `<InputField />`
+# InputField
 
 Use `<InputField />` component to combine `<Input />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
 
-```jsx
+```.jsx
 <InputField onChange={() => {}}>
   <Label>Email address</Label>
-  <Icon name='email' size='20'>
-  <Input id='form-field-3' defaultValue='olvier@examp' placeholder='Please enter an email address'/>
+  <Icon name='email' size='20' />
+  <Input id='form-field-3' defaultValue='oliver@example.com' placeholder='Please enter an email address' />
   <Icon name='warning' color='red' size='20' />
 </InputField>
 ```

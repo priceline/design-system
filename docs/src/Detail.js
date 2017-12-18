@@ -5,9 +5,9 @@ import Pagination from './Pagination'
 
 const Detail = ({ index, pages, content }) => {
   return (
-    <Box px={3} pt={4} pb={6}>
+    <Box px={3}>
+      <Pagination index={index} pages={pages} />
       <Markdown children={content} />
-      <Divider my={4} />
       <Pagination index={index} pages={pages} />
     </Box>
   )

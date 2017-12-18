@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Heading, Text, Divider, theme } from 'pcln-design-system'
+import {
+  Box,
+  Card,
+  Flex,
+  Heading,
+  Text,
+  Divider,
+  theme
+} from 'pcln-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'
@@ -21,22 +29,26 @@ const darks = colors.filter(color => /^dark/.test(color.name))
 const lights = colors.filter(color => /^light/.test(color.name))
 
 const ColorChip = styled(Box)`
-  height: 0;
-  padding-bottom: 75%;
+  height: 100px;
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  transition: all 0.1s ease;
 `
 
 const HexButton = styled.button`
+  width: 100%;
   display: inline-block;
+  position: relative;
   font-family: inherit;
-  font-size: 10px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   color: inherit;
+  text-align: left;
   background-color: transparent;
   border: 0;
   border-radius: 0;
   appearance: none;
-  opacity: 0.75;
   transition-property: opacity;
   transition-duration: 0.125s;
   transition-timing-function: ease-out;
@@ -45,7 +57,16 @@ const HexButton = styled.button`
     color: ${props => props.theme.colors.blue};
   }
 
+  &:active > ${ColorChip} {
+    border: 5px solid #fff;
+  }
+
   & > span {
+    top: 8px;
+    left: 8px;
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.125s;
@@ -58,20 +79,22 @@ const HexButton = styled.button`
 `
 
 const ColorCard = ({ name, value }) => (
-  <Box>
-    <ColorChip bg={value} mb={1} />
-    <Text fontSize={0}>{name}</Text>
+  <Card boxShadowSize="md" borderWidth={0} m={1}>
     <CopyButton text={value}>
       <HexButton>
-        <Code fontSize="inherit" color="inherit">
-          {value}
-        </Code>{' '}
-        <span>
-          <b>Copy</b>
-        </span>
+        <ColorChip bg={value} />
+        <span>Click to copy</span>
+        <Box p={3}>
+          <Text fontSize={1} align="left" color="text">
+            {name}
+          </Text>
+          <Code fontSize={1} align="left" color="gray">
+            {value}
+          </Code>
+        </Box>
       </HexButton>
     </CopyButton>
-  </Box>
+  </Card>
 )
 
 const Column = props => (
@@ -97,7 +120,6 @@ const Color = props => (
       <ColorList colors={lights} />
       <ColorList colors={darks} />
     </Flex>
-    <Divider my={4} />
     <Pagination {...props} />
   </Box>
 )

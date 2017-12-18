@@ -42,6 +42,7 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   line-height: 1.5;
+  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
