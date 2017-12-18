@@ -22,6 +22,7 @@ import Detail from './Detail'
 import ScrollTop from './ScrollTop'
 import NavItem from './NavItem'
 import StickyBar from './StickyBar'
+import Logo from './Logo'
 
 const Router = typeof document !== 'undefined' ? BrowserRouter : StaticRouter
 
@@ -48,13 +49,15 @@ class App extends React.Component {
 
     return (
       <React.Fragment>
-        <title key="title">Priceline One Design System</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link
-          key="webfont"
-          rel="stylesheet"
-          href="http://fonts.googleapis.com/css?family=Montserrat:500,700|Roboto+Mono"
-        />
+        <head>
+          <title key="title">Priceline One Design System</title>
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
+          <link
+            key="webfont"
+            rel="stylesheet"
+            href="http://fonts.googleapis.com/css?family=Montserrat:500,700|Roboto+Mono"
+          />
+        </head>
         <ThemeProvider key="main">
           <Router basename={basename} location={pathname}>
             <ScrollTop>
@@ -83,7 +86,7 @@ class App extends React.Component {
                           textDecoration: 'none'
                         }}
                       >
-                        <Image alt="Priceline One Logo" src="../logo.svg" />
+                        <Logo />
                       </NavLink>
                     </Heading.h1>
                     <Hide ml="auto" sm md lg xl>
