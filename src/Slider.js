@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Range } from 'rc-slider'
-import { space, color, theme as getTheme } from 'styled-system'
+import { space, color, theme as getTheme, propTypes } from 'styled-system'
 import theme from './theme'
 
 const Slider = styled(Range)`
@@ -68,6 +68,11 @@ Slider.defaultProps = {
   allowCross: false,
   color: 'blue',
   theme
+}
+
+Slider.propTypes = {
+  ...propTypes.space,
+  ...propTypes.color
 }
 
 export default Slider
