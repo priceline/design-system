@@ -5,7 +5,7 @@
     "@compositor/x0": "^3.0.2",
     "detab": "^2.0.1",
     "gray-matter": "^3.0.8",
-    "pcln-design-system": "^1.0.0-29",
+    "pcln-design-system": "^1.0.0-34",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
