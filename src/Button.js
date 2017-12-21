@@ -58,7 +58,7 @@ const Button = styled.button`
       props.disabled ? null : props.theme.colors.darkBlue};
   }
 
-  ${fullWidth} ${space} ${size};
+  ${fullWidth} ${size} ${space};
 `
 
 const numberStringOrArray = PropTypes.oneOfType([
