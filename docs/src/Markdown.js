@@ -6,6 +6,9 @@ import remarkSlug from 'remark-slug'
 import remarkReact from 'remark-react'
 import { color, space, theme } from 'styled-system'
 import { Heading, Text, Link } from 'pcln-design-system'
+import detab from 'detab'
+import unist from 'unist-builder'
+
 import CodeBlock from './CodeBlock'
 import Code from './Code'
 
@@ -44,9 +47,6 @@ class Markdown extends React.Component {
   }
 }
 
-var detab = require('detab')
-var u = require('unist-builder')
-
 const codeHandler = (h, node) => {
   const value = node.value ? detab(node.value + '\n') : ''
   const lang = node.lang && node.lang.match(/^[^ \t]+(?=[ \t]|$)/)
@@ -57,7 +57,7 @@ const codeHandler = (h, node) => {
     props.lang = lang
   }
 
-  return h(node.position, 'pre', props, [u('text', value)])
+  return h(node.position, 'pre', props, [unist('text', value)])
 }
 
 Markdown.propTypes = {
