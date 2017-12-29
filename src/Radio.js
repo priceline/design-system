@@ -21,12 +21,13 @@ const Radio = props => {
   return (
     <RadioWrap checked={checked} disabled={disabled}>
       <RadioInput id="radio-input" type="radio" {...props} />
-      <Icon name={radioIconName} size={24} />
+      <RadioIcon name={radioIconName} size={24} />
     </RadioWrap>
   )
 }
 
-const RadioWrap = styled.span`
+const RadioWrap = styled.div`
+  display: inline-block;
   color: ${props => props.theme.colors.borderGray};
   &:hover {
     ${props =>
@@ -37,8 +38,7 @@ const RadioWrap = styled.span`
 `
 
 const RadioInput = styled(Input)`
-  border-style: none;
-  display: inline;
+  display: none;
   &:focus {
     box-shadow: none;
   }
@@ -48,6 +48,10 @@ const RadioInput = styled(Input)`
   &:disabled ~ svg {
     color: ${props => props.theme.colors.borderGray};
   }
+`
+
+const RadioIcon = styled(Icon)`
+  vertical-align: middle;
 `
 
 Radio.propTypes = propTypes
