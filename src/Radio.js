@@ -38,7 +38,9 @@ const RadioWrap = styled.div`
 `
 
 const RadioInput = styled(Input)`
-  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
   &:focus {
     box-shadow: none;
   }

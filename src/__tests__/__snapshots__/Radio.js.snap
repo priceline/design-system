@@ -60,7 +60,9 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c2 {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .c2:focus {
@@ -182,7 +184,9 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c2 {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .c2:focus {
@@ -299,7 +303,9 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c2 {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .c2:focus {
