@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import Icon from './Icon'
 import Text from './Text'
-import Input from './Input'
 
 const propTypes = {
   checked: PropTypes.bool,
@@ -15,8 +14,6 @@ const Radio = props => {
   const { checked, disabled } = props
 
   const radioIconName = checked ? 'radioChecked' : 'radioEmpty'
-
-  const testID = checked ? 'SELECTED' : disabled ? 'DISABLED' : 'NOT_SELECTED'
 
   return (
     <RadioWrap checked={checked} disabled={disabled}>
@@ -37,7 +34,8 @@ const RadioWrap = styled.div`
   }
 `
 
-const RadioInput = styled(Input)`
+const RadioInput = styled.input`
+  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
