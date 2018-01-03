@@ -6,31 +6,31 @@ import icons from '../icons.json'
 
 // Should be removed eventually after v1.0.0
 const aliases = {
-  scrollLeft: icons.chevronLeft,
-  chevronLight: icons.chevronDown,
-  chevronThick: icons.chevronDownThick,
+  scrollLeft: 'chevronLeft',
+  chevronLight: 'chevronDown',
+  chevronThick: 'chevronDownThick',
   // aliases for breaking changes from #153
   // should add propType warnings similar to the color name deprecation getters
-  box: icons.boxEmpty,
-  car: icons.cars,
-  cruise: icons.cruises,
-  description: icons.document,
-  hotel: icons.hotels,
-  allInclusive: icons.inclusive,
-  radioFilled: icons.radioChecked,
-  radio: icons.radioEmpty,
-  add: icons.radioPlus,
-  minus: icons.radioMinus,
-  businessSeat: icons.seatBusiness,
-  economySeat: icons.seatEconomy,
-  plane: icons.flights
+  box: 'boxEmpty',
+  car: 'cars',
+  cruise: 'cruises',
+  description: 'document',
+  hotel: 'hotels',
+  allInclusive: 'inclusive',
+  radioFilled: 'radioChecked',
+  radio: 'radioEmpty',
+  add: 'radioPlus',
+  minus: 'radioMinus',
+  businessSeat: 'seatBusiness',
+  economySeat: 'seatEconomy',
+  plane: 'flights'
 }
 
 const getPath = ({ name, legacy }) => {
   if (!legacy) {
     return icons[name] || icons.legacy[name]
   }
-  return icons.legacy[name] || icons[name] || aliases[name]
+  return icons.legacy[name] || icons[name] || icons[aliases[name]]
 }
 
 const Base = ({ name, size, legacy, ...props }) => {
@@ -70,10 +70,13 @@ const allKeys = Object.keys({
 })
 
 Icon.propTypes = {
-  name: props => {
-    const name = props.name
+  name: ({ name }) => {
     if (aliases[name] && !icons[name] && !icons.legacy[name]) {
-      console.warn(`Using '${name}' as an Icon name has been deprecated.`)
+      console.warn(
+        `Using '${name}' as an Icon name has been deprecated. Use '${aliases[
+          name
+        ]}' instead.`
+      )
     }
 
     if (!allKeys.includes(name)) {
