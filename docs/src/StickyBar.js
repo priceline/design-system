@@ -23,6 +23,7 @@ const StickyBar = styled(Root)`
   transition-property: max-height;
   transition-timing-function: ease-out;
   transition-duration: 0.0625s;
+  border-left: 8px solid #007aff;
 
   ${theme('mediaQueries.sm')} {
     position: sticky;
