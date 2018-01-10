@@ -14,7 +14,8 @@ const BaseNavItem = styled.a`
     color: ${theme('colors.blue')};
     font-weight: ${theme('bold')};
     border-left: 4px solid #007aff;
-    margin-left: -4px;
+    margin-left: -16px;
+    padding-left: 28px;
   }
 `
 BaseNavItem.defaultProps = {
