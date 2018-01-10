@@ -69,8 +69,8 @@ class App extends React.Component {
               >
                 <StickyBar
                   open={menuOpen}
-                  width={[1, 280]}
-                  px={3}
+                  width={[1, 256]}
+                  px={1}
                   pb={5}
                   color="text"
                   bg="lightGray"
