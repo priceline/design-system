@@ -85,9 +85,8 @@ const Table = styled(props => (
   width: 100%;
   ${space} & th {
     text-align: left;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.borderGray')};
+    background-color: #f6f8fa;
+    padding: 0 16px;
   }
 
   & td:first-child {
@@ -101,7 +100,7 @@ const Table = styled(props => (
     font-size: 16px;
     color: ${theme('colors.text')};
     vertical-align: middle;
-    padding-right: 16px !important;
+    padding: 0 16px !important;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: ${theme('colors.borderGray')};
@@ -114,8 +113,7 @@ const Table = styled(props => (
   }
 `
 Table.defaultProps = {
-  mt: 3,
-  mb: 3
+  my: 3
 }
 
 const heading = type => props => {
@@ -148,13 +146,13 @@ const defaultScope = {
 // Markdown components typography and margins
 // can be set with defaultProps
 defaultScope.h1.defaultProps = {
-  fontSize: [5, 5, 6],
-  mt: 0,
-  mb: 2
+  fontSize: 5,
+  mt: 5,
+  mb: 3
 }
 defaultScope.h2.defaultProps = {
   fontSize: 5,
-  mt: 4,
+  mt: 5,
   mb: 3
 }
 
@@ -174,6 +172,7 @@ defaultScope.h4.defaultProps = {
 }
 
 defaultScope.p.defaultProps = {
+  fontSize: 2,
   mt: 0,
   mb: 3,
   style: {

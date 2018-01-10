@@ -31,19 +31,19 @@ const createSVG = path =>
 
 const IconList = props =>
   props.icons.map(icon => (
-    <Column key={icon}>
+    <Column key={icon} py={4} bg="lightGray">
       <BlockLink
         href={createSVG(icons[icon].path)}
         download={`${icon}.svg`}
         title={`Download ${icon} as SVG`}
         hoverColor="blue"
       >
-        <Flex mb={2} align="center" justify="center">
+        <Flex mb={3} align="center" justify="center">
           <Icon name={icon} legacy={false} size={48} />
         </Flex>
       </BlockLink>
       <Text align="center">
-        <Code fontSize={10} align="center" color="text">
+        <Code fontSize={0} color="gray">
           {icon}
         </Code>
       </Text>
@@ -51,15 +51,14 @@ const IconList = props =>
   ))
 
 const Iconography = props => (
-  <Box pt={4} pb={6}>
+  <Box>
     <PageTitle>Iconography</PageTitle>
     <Description>
       The design system includes icons based on Googles Material Design Icons.
     </Description>
-    <Flex wrap mx={-2} py={4}>
+    <Flex wrap pt={4}>
       <IconList icons={iconNames} />
     </Flex>
-    <Divider my={4} />
     <Pagination {...props} />
   </Box>
 )

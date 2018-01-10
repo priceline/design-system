@@ -3,7 +3,7 @@ import { Container } from 'pcln-design-system'
 import { space, width } from 'styled-system'
 
 const DocsContainer = Container.extend`
-  max-width: 868px;
+  max-width: 780px;
   ${space} ${width};
 `
 

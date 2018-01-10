@@ -5,10 +5,10 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
 
 ```.jsx
 <Banner
-  bg='blue'
-  header='Are Your Dates Correct? '
-  iconName='calendar'
-  iconSize={20}
+  bg='lightBlue'
+  header='Are Your Dates Correct?'
+  iconName='flame'
+  iconSize={24}
   text='Remember to double check the calendar because availability may change depending on your dates.'
   onClose={() => {}}
   showIcon={true}
