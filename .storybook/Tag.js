@@ -1,8 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Tag } from '../src'
-import { Icon } from '../src'
+import { Tag, Icon } from '../src'
 
 storiesOf('Tag', module)
   .add(
