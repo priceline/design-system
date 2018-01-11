@@ -35,13 +35,13 @@ const type = props => {
 }
 
 const Tag = styled.div`
-  border-radius: 2px;
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   border-color: ${props =>
