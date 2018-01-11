@@ -69,6 +69,7 @@ const HexButton = styled.button`
     padding: 8px 0;
     width: 100%;
     color: #fff;
+    border-radius: 2px 2px 0 0;
     background-color: #001833;
     text-align: center;
     opacity: 0;
