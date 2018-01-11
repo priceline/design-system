@@ -18,22 +18,22 @@ storiesOf('Tag', module)
   .add('All colors', () => (
     <div>
       <Tag color="gray" mr={2}>
-        <Icon name="flame" size={20} /> gray
+        default tag
       </Tag>
       <Tag color="blue" mr={2}>
-        <Icon name="flame" size={20} /> blue
+        <Icon name="pin" size={16} mr={1} /> top location
       </Tag>
       <Tag color="green" mr={2}>
-        <Icon name="flame" size={20} /> green
+        <Icon name="discount" size={16} mr={1} /> free cancellation
       </Tag>
       <Tag color="red" mr={2}>
-        <Icon name="flame" size={20} /> red
+        <Icon name="clock" size={16} mr={1} /> just booked
       </Tag>
       <Tag color="orange" mr={2}>
-        <Icon name="flame" size={20} /> orange
+        <Icon name="earlyBird" size={16} mr={1} /> early bird flight
       </Tag>
       <Tag color="purple" mr={2}>
-        <Icon name="flame" size={20} /> purple
+        <Icon name="trendingUp" size={16} mr={1} /> top booked hotel
       </Tag>
     </div>
   ))

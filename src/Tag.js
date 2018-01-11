@@ -37,6 +37,8 @@ const type = props => {
 const Tag = styled.div`
   display: inline-flex;
   align-items: center;
+  vertical-align: top;
+  min-height: 24px;
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
   text-transform: uppercase;
@@ -64,8 +66,8 @@ Tag.propTypes = {
 }
 
 Tag.defaultProps = {
-  px: 2,
-  py: 1,
+  px: 1,
+  py: 0,
   theme: theme,
   color: 'text'
 }
