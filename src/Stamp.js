@@ -5,7 +5,7 @@ import { space } from 'styled-system'
 import theme from './theme'
 
 const type = props => {
-  const tagColors = {
+  const StampColors = {
     gray: {
       backgroundColor: props.theme.colors.lightGray,
       color: props.theme.colors.gray
@@ -31,10 +31,10 @@ const type = props => {
       color: props.theme.colors.purple
     }
   }
-  return tagColors[props.color]
+  return StampColors[props.color]
 }
 
-const Tag = styled.div`
+const Stamp = styled.div`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -51,7 +51,7 @@ const Tag = styled.div`
   ${space} ${type};
 `
 
-Tag.displayName = 'Tag'
+Stamp.displayName = 'Stamp'
 
 const numberStringOrArray = PropTypes.oneOfType([
   PropTypes.number,
@@ -59,17 +59,17 @@ const numberStringOrArray = PropTypes.oneOfType([
   PropTypes.array
 ])
 
-Tag.propTypes = {
+Stamp.propTypes = {
   bg: PropTypes.string,
   px: numberStringOrArray,
   py: numberStringOrArray
 }
 
-Tag.defaultProps = {
+Stamp.defaultProps = {
   px: 1,
   py: 0,
   theme: theme,
   color: 'text'
 }
 
-export default Tag
+export default Stamp
