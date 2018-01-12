@@ -3,12 +3,12 @@
 exports[`theme snapshot 1`] = `
 Object {
   "bold": 600,
-  "boxShadows": Array [
-    "0 0 4px 0 rgba(0,0,0,0.08)",
-    "0 8px 8px 0 rgba(0,0,0,0.08)",
-    "0 16px 16px 0 rgba(0,0,0,0.08)",
-    "0 32px 32px 0 rgba(0,0,0,0.08)",
-  ],
+  "boxShadows": Object {
+    "boxShadowLg": "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+    "boxShadowMd": "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+    "boxShadowSm": "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+    "boxShadowXl": "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+  },
   "breakpoints": Array [
     32,
     40,

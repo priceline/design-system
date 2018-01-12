@@ -3,6 +3,54 @@ import { storiesOf } from '@storybook/react'
 import { Box, Card } from '../src'
 
 storiesOf('Card', module)
+  .add('Box Shadows without border', () => (
+    <Box>
+      <Card
+        boxShadowSize="sm"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
+        bg="white"
+        borderWidth={0}
+      >
+        Small Shadow
+      </Card>
+      <Card
+        boxShadowSize="md"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
+        bg="white"
+        borderWidth={0}
+      >
+        Medium Shadow
+      </Card>
+      <Card
+        boxShadowSize="lg"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
+        bg="white"
+        borderWidth={0}
+      >
+        Large Shadow
+      </Card>
+      <Card
+        boxShadowSize="xl"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
+        bg="white"
+        borderWidth={0}
+      >
+        XLarge Shadow
+      </Card>
+    </Box>
+  ))
   .add('Box Shadows with default border', () => (
     <Box>
       <Card

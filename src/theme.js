@@ -135,13 +135,20 @@ export const radius = '2px'
 
 export const maxContainerWidth = '1280px'
 
-const shadowColor = 'rgba(0,0,0,0.08)'
-export const boxShadows = [
-  `0 0 4px 0 ${shadowColor}`,
-  `0 8px 8px 0 ${shadowColor}`,
-  `0 16px 16px 0 ${shadowColor}`,
-  `0 32px 32px 0 ${shadowColor}`
-]
+// boxShadows
+const boxShadowSm = '0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)'
+const boxShadowMd = '0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)'
+const boxShadowLg = '0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)'
+const boxShadowXl = '0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)'
+
+const boxShadows = {
+  boxShadowSm,
+  boxShadowMd,
+  boxShadowLg,
+  boxShadowXl
+}
+
+export { boxShadows }
 
 const theme = {
   breakpoints,
