@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag color blue sets color 1`] = `
+exports[`Stamp color blue sets color 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -37,7 +37,7 @@ exports[`Tag color blue sets color 1`] = `
 />
 `;
 
-exports[`Tag color gray sets color 1`] = `
+exports[`Stamp color gray sets color 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -74,7 +74,7 @@ exports[`Tag color gray sets color 1`] = `
 />
 `;
 
-exports[`Tag color green sets color 1`] = `
+exports[`Stamp color green sets color 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -111,7 +111,7 @@ exports[`Tag color green sets color 1`] = `
 />
 `;
 
-exports[`Tag color orange sets color 1`] = `
+exports[`Stamp color orange sets color 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -148,7 +148,7 @@ exports[`Tag color orange sets color 1`] = `
 />
 `;
 
-exports[`Tag color purple sets color 1`] = `
+exports[`Stamp color purple sets color 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -185,7 +185,7 @@ exports[`Tag color purple sets color 1`] = `
 />
 `;
 
-exports[`Tag color red sets color 1`] = `
+exports[`Stamp color red sets color 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -222,7 +222,7 @@ exports[`Tag color red sets color 1`] = `
 />
 `;
 
-exports[`Tag renders 1`] = `
+exports[`Stamp renders 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
