@@ -17,7 +17,7 @@ const Radio = props => {
 
   return (
     <RadioWrap checked={checked} disabled={disabled}>
-      <RadioInput id="radio-input" type="radio" {...props} />
+      <RadioInput type="radio" {...props} />
       <RadioIcon name={radioIconName} size={24} />
     </RadioWrap>
   )

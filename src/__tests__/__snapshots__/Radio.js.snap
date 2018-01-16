@@ -57,7 +57,6 @@ exports[`Radio Disabled, rendering 1`] = `
     <input
       className="c2"
       disabled={true}
-      id="radio-input"
       type="radio"
     />
     <svg
@@ -136,7 +135,6 @@ exports[`Radio Not Selected, rendering 1`] = `
   >
     <input
       className="c2"
-      id="radio-input"
       type="radio"
     />
     <svg
@@ -212,7 +210,6 @@ exports[`Radio Selected, rendering 1`] = `
     <input
       checked={true}
       className="c2"
-      id="radio-input"
       type="radio"
     />
     <svg
