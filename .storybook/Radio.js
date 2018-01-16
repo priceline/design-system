@@ -1,20 +1,26 @@
 import React from 'react'
 import { storiesOf, action } from '@storybook/react'
+import styled from 'styled-components'
 import { Radio, Label } from '../src'
+
+const LabelText = styled.span`
+  vertical-align: middle;
+  margin-left: 8px;
+`
 
 storiesOf('Radio', module).add('3 states', () => (
   <div onChange={action('changed')}>
     <Label fontSize="14px">
       <Radio checked />
-      selected
+      <LabelText>selected</LabelText>
     </Label>
     <Label fontSize="14px">
       <Radio />
-      not selected
+      <LabelText>not selected</LabelText>
     </Label>
     <Label fontSize="14px">
       <Radio disabled />
-      disabled
+      <LabelText>disabled</LabelText>
     </Label>
   </div>
 ))
