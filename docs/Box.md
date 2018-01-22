@@ -76,4 +76,3 @@ The `width` prop accepts an array value to set different widths at different bre
 ```
 
 See [styled-system](https://github.com/jxnblk/styled-system) for more documentation.
-

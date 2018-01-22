@@ -55,7 +55,7 @@ class App extends React.Component {
           <link
             key="webfont"
             rel="stylesheet"
-            href="http://fonts.googleapis.com/css?family=Montserrat:500,700|Roboto+Mono"
+            href="http://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono"
           />
         </head>
         <ThemeProvider key="main">
@@ -99,33 +99,30 @@ class App extends React.Component {
                     </Hide>
                   </Flex>
                   <NavItem to="/" exact>
-                    Getting Started
+                    Overview
                   </NavItem>
                   {sections.filter(s => !!s).map(section => (
                     <Box
                       key={section.name}
                       onClick={e => this.update(closeMenu)}
                     >
-                      <Heading
-                        color="rgba(255, 255, 255, .32)"
-                        p={2}
-                        bold
-                        caps
-                        fontSize={0}
-                      >
+                      <Heading color="text" p={3} bold caps fontSize={0}>
                         {section.name}
                       </Heading>
                       {section.pages.map(page => (
                         <NavItem
                           key={page.name}
                           to={'/' + page.name}
-                          color="inherit"
+                          color="gray"
                           children={page.title || page.name}
                         />
                       ))}
                     </Box>
                   ))}
-                  <NavItem href="https://github.com/pricelinelabs/design-system">
+                  <NavItem
+                    href="https://github.com/pricelinelabs/design-system"
+                    mb={4}
+                  >
                     GitHub
                   </NavItem>
                 </StickyBar>

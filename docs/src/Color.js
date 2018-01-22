@@ -49,24 +49,29 @@ const HexButton = styled.button`
   border: 0;
   border-radius: 0;
   appearance: none;
-  transition-property: opacity;
-  transition-duration: 0.125s;
-  transition-timing-function: ease-out;
+  transition: all 0.125s ease;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
 
-  &:active {
-    color: ${props => props.theme.colors.blue};
+  &:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08),
+      0 16px 16px 0 rgba(0, 0, 0, 0.08);
   }
 
-  &:active > ${ColorChip} {
-    border: 5px solid #fff;
+  &:active {
+    transform: scale(0.9);
   }
 
   & > span {
-    top: 8px;
-    left: 8px;
+    top: 0;
+    left: 0;
     position: absolute;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 8px 0;
+    width: 100%;
     color: #fff;
+    border-radius: 2px 2px 0 0;
+    background-color: #001833;
+    text-align: center;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.125s;
@@ -79,13 +84,13 @@ const HexButton = styled.button`
 `
 
 const ColorCard = ({ name, value }) => (
-  <Card boxShadowSize="md" borderWidth={0} m={1}>
+  <Card borderWidth={0} m={0}>
     <CopyButton text={value}>
       <HexButton>
         <ColorChip bg={value} />
-        <span>Click to copy</span>
-        <Box p={3}>
-          <Text fontSize={1} align="left" color="text">
+        <span>Press to copy</span>
+        <Box p={2}>
+          <Text fontSize={1} mb={1} align="left">
             {name}
           </Text>
           <Code fontSize={1} align="left" color="gray">
@@ -98,7 +103,7 @@ const ColorCard = ({ name, value }) => (
 )
 
 const Column = props => (
-  <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 6]} mb={3} px={2} />
+  <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 6]} mb={4} px={2} />
 )
 
 const ColorList = props =>
@@ -109,13 +114,13 @@ const ColorList = props =>
   ))
 
 const Color = props => (
-  <Box pt={4} pb={6}>
+  <Box>
     <PageTitle>Color</PageTitle>
     <Description>
       The design system includes a color palette of several primary colors,
       along with light and dark variations.
     </Description>
-    <Flex wrap mx={-2} py={4}>
+    <Flex wrap mx={-2} pt={4}>
       <ColorList colors={primaries} />
       <ColorList colors={lights} />
       <ColorList colors={darks} />

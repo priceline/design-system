@@ -6,22 +6,23 @@ import { space, color, theme } from 'styled-system'
 const BaseNavItem = styled.a`
   display: block;
   text-decoration: none;
-  font-size: ${theme('fontSizes.1')}px;
-  border-radius: ${theme('radius')};
+  font-size: ${theme('fontSizes.2')}px;
   ${space} ${color} &:hover {
-    box-shadow: inset 0 0 0 9999px #cdf;
+    color: ${theme('colors.text')};
   }
   &.active {
-    opacity: 1;
-    background-color: #07f;
-    color: #fff;
+    color: ${theme('colors.blue')};
+    font-weight: ${theme('bold')};
+    border-left: 4px solid #007aff;
+    margin-left: -16px;
+    padding-left: 28px;
   }
 `
 BaseNavItem.defaultProps = {
   pl: 3,
   pr: 2,
-  py: 2,
-  color: 'inherit'
+  py: 1,
+  color: 'gray'
 }
 
 const RouterNavItem = BaseNavItem.withComponent(NavLink)

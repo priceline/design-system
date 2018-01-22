@@ -6,6 +6,7 @@ import {
   Card,
   OutlineButton,
   Icon,
+  Text,
   colors
 } from 'pcln-design-system'
 import Link from './Link'
@@ -15,32 +16,59 @@ const Pagination = ({ index, pages }) => {
   const next = pages[index + 1]
 
   return (
-    <Flex py={5}>
+    <Flex
+      p={3}
+      my={5}
+      bg="lightGray"
+      style={{
+        borderRadius: '2px'
+      }}
+    >
       {previous && (
         <Link to={'/' + previous.name}>
           <Icon
-            name="arrowLeft"
-            size={24}
+            name="chevronLeft"
+            size={48}
             color="blue"
+            legacy={false}
             mr={2}
             style={{
-              verticalAlign: 'bottom'
+              verticalAlign: 'middle'
             }}
           />
-          {previous.name}
+          <Text
+            fontSize={3}
+            color="blue"
+            style={{
+              display: 'inline-block',
+              verticalAlign: 'middle'
+            }}
+          >
+            <b>Previous:</b> {previous.name}
+          </Text>
         </Link>
       )}
       <Box ml="auto" />
       {next && (
         <Link to={'/' + next.name}>
-          {next.name}
-          <Icon
-            name="arrowRight"
-            size={24}
+          <Text
+            fontSize={3}
             color="blue"
+            style={{
+              display: 'inline-block',
+              verticalAlign: 'middle'
+            }}
+          >
+            <b>Next:</b> {next.name}
+          </Text>
+          <Icon
+            name="chevronRight"
+            size={48}
+            color="blue"
+            legacy={false}
             ml={2}
             style={{
-              verticalAlign: 'bottom'
+              verticalAlign: 'middle'
             }}
           />
         </Link>

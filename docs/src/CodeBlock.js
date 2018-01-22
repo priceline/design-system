@@ -8,14 +8,14 @@ import Pre from './Pre'
 
 const Preview = styled(LivePreview)`
   padding: 16px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: ${theme('colors.lightGray')};
+  margin-bottom: 16px;
+  background-color: #f6f8fa;
+  border-radius: 2px;
+  border: 1px solid #d1d6db;
 `
 
 const Err = styled(LiveError)`
   font-family: 'Roboto Mono', Menlo, monospace;
-  font-size: 12px;
   top: 0;
   right: 0;
   left: 0;
@@ -26,23 +26,22 @@ const Err = styled(LiveError)`
 
 const Editor = styled(LiveEditor)`
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
   margin: 0;
-  padding: 8px;
+  padding: 16px;
   tab-size: 2;
   -moz-tab-size: 2;
   -o-tab-size: 2;
   white-space: pre-wrap;
   overflow: auto;
+  border-radius: 2px;
   ${color} &:focus {
     outline: none;
-    box-shadow: 0 0 0 1px ${theme('colors.lightBlue')};
   }
 `
 
 Editor.defaultProps = {
   color: 'blue',
-  bg: 'lightGray'
+  bg: 'text'
 }
 
 class CodeBlock extends React.Component {
@@ -70,13 +69,13 @@ class CodeBlock extends React.Component {
             <Preview />
             <Editor />
             <P1.Text
-              fontSize="8px"
+              fontSize={10}
               align="right"
               caps
               bold
-              mt={-12}
+              mt={-16}
               mr={1}
-              color="blue"
+              color="white"
             >
               Live Code
             </P1.Text>
