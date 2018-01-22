@@ -13,18 +13,38 @@ import {
   Image,
   theme
 } from 'pcln-design-system'
+import Loadable from 'react-loadable'
+
 import Container from './Container'
-import Landing from './Landing'
-import Color from './Color'
-import Typography from './Typography'
-import Iconography from './Iconography'
-import Detail from './Detail'
 import ScrollTop from './ScrollTop'
 import NavItem from './NavItem'
 import StickyBar from './StickyBar'
 import Logo from './Logo'
 
-const Router = typeof document !== 'undefined' ? BrowserRouter : StaticRouter
+const isBrowser = typeof document !== 'undefined'
+const Router = isBrowser ? BrowserRouter : StaticRouter
+
+const loading = () => <Box p={4} bg="lightGray" />
+const Landing = Loadable({
+  loader: () => import('./Landing'),
+  loading
+})
+const Color = Loadable({
+  loader: () => import('./Color'),
+  loading
+})
+const Typography = Loadable({
+  loader: () => import('./Typography'),
+  loading
+})
+const Iconography = Loadable({
+  loader: () => import('./Iconography'),
+  loading
+})
+const Detail = Loadable({
+  loader: () => import('./Detail'),
+  loading
+})
 
 const views = {
   Color,
