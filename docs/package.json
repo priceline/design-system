@@ -2,7 +2,7 @@
   "name": "pcln-design-system-docs",
   "private": true,
   "dependencies": {
-    "@compositor/x0": "^3.1.0",
+    "@compositor/x0": "^3.1.1",
     "detab": "^2.0.1",
     "gray-matter": "^3.0.8",
     "pcln-design-system": "^1.0.0-34",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "x0 dev src/App.js -op 9000",
-    "dev-build": "x0 build src/App.js -d site",
+    "dev-build": "x0 build src/App.js --basename '/site' -d site",
     "build": "x0 build src/App.js --basename '/design-system' -d site"
   },
   "x0": {
