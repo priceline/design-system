@@ -7,6 +7,7 @@ const Label = styled.label`
   letter-spacing: 0.2px;
   display: block;
   width: 100%;
+  margin: 0;
 
   ${space} ${fontSize} ${color} ${fontWeight};
 `
