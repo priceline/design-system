@@ -32,7 +32,16 @@ const HideableIcon = styled(Icon)`
   ${display};
 `
 
-const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
+const Hug = ({
+  bg,
+  color,
+  p,
+  fontSize,
+  icon,
+  iconDisplay,
+  legacy,
+  ...props
+}) => (
   <HugCard {...props} borderColor={bg}>
     <Flex bg={bg} color={color} p={p} align="center">
       {!!icon && (
@@ -43,6 +52,7 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
           name={icon}
           size={24}
           display={iconDisplay}
+          legacy={legacy}
         />
       )}
       <Text fontSize={fontSize}>{props.text}</Text>

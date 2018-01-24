@@ -1,7 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "1.0.0-34",
-  "description": "A unified Design System and React component library",
+  "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "npm run icons && babel src -d dist --ignore __tests__",

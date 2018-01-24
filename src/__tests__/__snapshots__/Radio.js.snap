@@ -7,60 +7,18 @@ exports[`Radio Disabled, rendering 1`] = `
   flex: none;
 }
 
-.c3 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d1d6db;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::-moz-placeholder {
-  color: #687B8E;
-}
-
-.c3:-ms-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::placeholder {
-  color: #687B8E;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
-}
-
 .c1 {
+  display: inline-block;
   color: #d1d6db;
 }
 
 .c2 {
-  border-style: none;
-  display: inline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .c2:focus {
@@ -75,6 +33,10 @@ exports[`Radio Disabled, rendering 1`] = `
   color: #d1d6db;
 }
 
+.c3 {
+  vertical-align: middle;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -87,19 +49,18 @@ exports[`Radio Disabled, rendering 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     checked={undefined}
     className="c1"
     disabled={true}
   >
     <input
-      className="c2 c3"
+      className="c2"
       disabled={true}
-      id="radio-input"
       type="radio"
     />
     <svg
-      className="c4"
+      className="c3 c4"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"
@@ -110,7 +71,7 @@ exports[`Radio Disabled, rendering 1`] = `
       	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
       />
     </svg>
-  </span>
+  </div>
 </div>
 `;
 
@@ -121,54 +82,8 @@ exports[`Radio Not Selected, rendering 1`] = `
   flex: none;
 }
 
-.c3 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d1d6db;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::-moz-placeholder {
-  color: #687B8E;
-}
-
-.c3:-ms-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::placeholder {
-  color: #687B8E;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
-}
-
 .c1 {
+  display: inline-block;
   color: #d1d6db;
 }
 
@@ -177,8 +92,12 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c2 {
-  border-style: none;
-  display: inline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .c2:focus {
@@ -193,6 +112,10 @@ exports[`Radio Not Selected, rendering 1`] = `
   color: #d1d6db;
 }
 
+.c3 {
+  vertical-align: middle;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -205,18 +128,17 @@ exports[`Radio Not Selected, rendering 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     checked={undefined}
     className="c1"
     disabled={undefined}
   >
     <input
-      className="c2 c3"
-      id="radio-input"
+      className="c2"
       type="radio"
     />
     <svg
-      className="c4"
+      className="c3 c4"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"
@@ -227,7 +149,7 @@ exports[`Radio Not Selected, rendering 1`] = `
       	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
       />
     </svg>
-  </span>
+  </div>
 </div>
 `;
 
@@ -238,60 +160,18 @@ exports[`Radio Selected, rendering 1`] = `
   flex: none;
 }
 
-.c3 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d1d6db;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::-moz-placeholder {
-  color: #687B8E;
-}
-
-.c3:-ms-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::placeholder {
-  color: #687B8E;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
-}
-
 .c1 {
+  display: inline-block;
   color: #d1d6db;
 }
 
 .c2 {
-  border-style: none;
-  display: inline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
 }
 
 .c2:focus {
@@ -306,6 +186,10 @@ exports[`Radio Selected, rendering 1`] = `
   color: #d1d6db;
 }
 
+.c3 {
+  vertical-align: middle;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -318,19 +202,18 @@ exports[`Radio Selected, rendering 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     checked={true}
     className="c1"
     disabled={undefined}
   >
     <input
       checked={true}
-      className="c2 c3"
-      id="radio-input"
+      className="c2"
       type="radio"
     />
     <svg
-      className="c4"
+      className="c3 c4"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"
@@ -341,6 +224,6 @@ exports[`Radio Selected, rendering 1`] = `
       	s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
       />
     </svg>
-  </span>
+  </div>
 </div>
 `;
