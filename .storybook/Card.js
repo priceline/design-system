@@ -3,93 +3,49 @@ import { storiesOf } from '@storybook/react'
 import { Box, Card } from '../src'
 
 storiesOf('Card', module)
-  .add('Box Shadows without border', () => (
-    <Box>
-      <Card
-        boxShadowSize="sm"
-        m={4}
-        p={4}
-        width={1 / 2}
-        color="text"
-        bg="white"
-        borderWidth={0}
-      >
-        Small Shadow
-      </Card>
-      <Card
-        boxShadowSize="md"
-        m={4}
-        p={4}
-        width={1 / 2}
-        color="text"
-        bg="white"
-        borderWidth={0}
-      >
-        Medium Shadow
-      </Card>
-      <Card
-        boxShadowSize="lg"
-        m={4}
-        p={4}
-        width={1 / 2}
-        color="text"
-        bg="white"
-        borderWidth={0}
-      >
-        Large Shadow
-      </Card>
-      <Card
-        boxShadowSize="xl"
-        m={4}
-        p={4}
-        width={1 / 2}
-        color="text"
-        bg="white"
-        borderWidth={0}
-      >
-        XLarge Shadow
-      </Card>
-    </Box>
-  ))
   .add('Box Shadows with default border', () => (
     <Box>
       <Card
         boxShadowSize="sm"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
+        borderWidth={1}
       >
         Small Shadow
       </Card>
       <Card
         boxShadowSize="md"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
+        borderWidth={1}
       >
         Medium Shadow
       </Card>
       <Card
         boxShadowSize="lg"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
+        borderWidth={1}
       >
         Large Shadow
       </Card>
       <Card
         boxShadowSize="xl"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
+        borderWidth={1}
       >
         XLarge Shadow
       </Card>
@@ -99,10 +55,10 @@ storiesOf('Card', module)
     <Box>
       <Card
         boxShadowSize="sm"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
         borderWidth={2}
       >
@@ -110,10 +66,10 @@ storiesOf('Card', module)
       </Card>
       <Card
         boxShadowSize="md"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
         borderWidth={2}
       >
@@ -121,10 +77,10 @@ storiesOf('Card', module)
       </Card>
       <Card
         boxShadowSize="lg"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
         borderWidth={2}
       >
@@ -132,10 +88,10 @@ storiesOf('Card', module)
       </Card>
       <Card
         boxShadowSize="xl"
-        mb={5}
-        p={3}
-        width={200}
-        color="black"
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="text"
         bg="white"
         borderWidth={2}
       >
@@ -147,47 +103,47 @@ storiesOf('Card', module)
     <Box>
       <Card
         boxShadowSize="sm"
-        mb={5}
-        p={3}
-        width={200}
+        m={4}
+        p={4}
+        width={1 / 2}
         color="black"
         bg="white"
         borderRadius={0}
       >
-        Small Shadow
+        Small Shadow - 0px
       </Card>
       <Card
         boxShadowSize="md"
-        mb={5}
-        p={3}
-        width={200}
+        m={4}
+        p={4}
+        width={1 / 2}
         color="black"
         bg="white"
         borderRadius={10}
       >
-        Medium Shadow
+        Medium Shadow - 10px
       </Card>
       <Card
         boxShadowSize="lg"
-        mb={5}
-        p={3}
-        width={200}
+        m={4}
+        p={4}
+        width={1 / 2}
         color="black"
         bg="white"
         borderRadius={20}
       >
-        Large Shadow
+        Large Shadow - 20px
       </Card>
       <Card
         boxShadowSize="xl"
-        mb={5}
-        p={3}
-        width={200}
+        m={4}
+        p={4}
+        width={1 / 2}
         color="black"
         bg="white"
         borderRadius="30px"
       >
-        XLarge Shadow
+        XLarge Shadow - 30px
       </Card>
     </Box>
   ))
