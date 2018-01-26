@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader renders 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 40px;
+  height: 24px;
+}
+
+.c2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bUGbIo 1.6s infinite ease-in-out both;
+  animation: bUGbIo 1.6s infinite ease-in-out both;
+  -webkit-animation-delay: 32ms;
+  animation-delay: 32ms;
+}
+
+.c3 {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bUGbIo 1.6s infinite ease-in-out both;
+  animation: bUGbIo 1.6s infinite ease-in-out both;
+  -webkit-animation-delay: 96ms;
+  animation-delay: 96ms;
+}
+
+.c4 {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bUGbIo 1.6s infinite ease-in-out both;
+  animation: bUGbIo 1.6s infinite ease-in-out both;
+  -webkit-animation-delay: 160ms;
+  animation-delay: 160ms;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2 "
+  />
+  <div
+    className="c3 "
+  />
+  <div
+    className="c4 "
+  />
+</div>
+`;
