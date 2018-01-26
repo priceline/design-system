@@ -19,8 +19,10 @@ const bounce = keyframes`
 
 const LoaderFrame = styled(Flex)`
   display: flex;
+  align-items: flex-end;
   justify-content: space-around;
   width: 32px;
+  height: 24px;
 `
 
 const Ball = styled.div`
