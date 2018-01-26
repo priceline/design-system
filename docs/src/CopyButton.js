@@ -1,5 +1,5 @@
 import React from 'react'
-// import select from 'select'
+import select from 'select'
 
 class CopyButton extends React.Component {
   constructor() {
