@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { color } from 'styled-system'
 import Flex from './Flex'
+import Box from './Box'
 import theme from './theme'
 
 const getAnimationDelay = props => ({
@@ -10,36 +11,38 @@ const getAnimationDelay = props => ({
 
 const bounce = keyframes`
   0% {
-    -webkit-transform: translateY(0) scale(0) }
+    -webkit-transform: translateY(8px) scale(0.1) }
   50% {
-    -webkit-transform: translateY(-16px) scale(1) }
+    -webkit-transform: translateY(-8px) scale(1) }
   100% {
-    -webkit-transform: translateY(0) scale(0) }
+    -webkit-transform: translateY(8px) scale(0.1) }
 `
 
 const LoaderFrame = styled(Flex)`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
-  width: 32px;
+  width: 40px;
   height: 24px;
 `
 
-const Ball = styled.div`
+const Ball = styled(Box)`
   width: 8px;
   height: 8px;
-  background-color: ${props => props.theme.colors.blue};
   border-radius: 100%;
   display: inline-block;
   animation: ${bounce} 1.6s infinite ease-in-out both;
-  ${getAnimationDelay};
+  ${getAnimationDelay} ${color};
+  ${props => ({
+    backgroundColor: props.theme.color
+  })};
 `
 
-const Loader = () => (
+const Loader = ({ color }) => (
   <LoaderFrame>
-    <Ball index={0} />
-    <Ball index={1} />
-    <Ball index={2} />
+    <Ball index={0} bg={color} />
+    <Ball index={1} bg={color} />
+    <Ball index={2} bg={color} />
   </LoaderFrame>
 )
 

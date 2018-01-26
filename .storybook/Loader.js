@@ -8,7 +8,7 @@ const description = 'An animated loading state.'
 storiesOf('Loader', module).add('Examples', () => (
   <div>
     <Box m={4}>
-      <Loader />
+      <Loader color="blue" />
     </Box>
 
     <Box m={4}>
