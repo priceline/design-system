@@ -40,16 +40,16 @@ class InputField extends React.Component {
   constructor(props) {
     super(props)
 
-    let hasDefaultValue
+    let hasInitialValue
 
     React.Children.forEach(props.children, child => {
       if (child && child.type === Input) {
-        hasDefaultValue = child.props.defaultValue
+        hasInitialValue = !!child.props.value
       }
     })
 
     this.state = {
-      showLabel: hasDefaultValue
+      showLabel: hasInitialValue
     }
   }
 
