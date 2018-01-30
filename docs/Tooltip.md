@@ -24,3 +24,4 @@ top | bool | tooltip is above content
 center | bool | centered horizontally
 left | bool | towards the left above/below content
 right | bool | towards the right above/below content
+zIndex | number or String | ( default is auto )
