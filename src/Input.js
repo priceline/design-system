@@ -34,6 +34,8 @@ const Input = styled.input`
   padding-left: 12px;
   padding-right: 12px;
 
+  margin: 0;
+
   ::placeholder {
     color: ${theme('colors.gray')};
   }

@@ -48,6 +48,7 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 40px;
@@ -185,6 +186,7 @@ exports[`InputField it renders a with a both icons 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 40px;
@@ -305,6 +307,7 @@ exports[`InputField it renders a with a conditional right side icon 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 8px;
@@ -404,6 +407,7 @@ exports[`InputField it renders a with a left side icon 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 40px;
@@ -518,6 +522,7 @@ exports[`InputField it renders a with a right side icon 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 8px;
