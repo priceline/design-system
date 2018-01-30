@@ -3,10 +3,10 @@
 Use `<InputField />` component to combine `<Input />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
 
 ```jsx
-<InputField onChange={() => {}}>
+<InputField onChange={(e) => {this.setState({someValue: e.target.value})}}>
   <Label>Email address</Label>
   <Icon name='email' size='20'>
-  <Input id='form-field-3' defaultValue='olvier@examp' placeholder='Please enter an email address'/>
+  <Input id='form-field-3' value={this.state.someValue} placeholder='Please enter an email address'/>
   <Icon name='warning' color='red' size='20' />
 </InputField>
 ```
