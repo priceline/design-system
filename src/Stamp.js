@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space } from 'styled-system'
+import { space, fontSize, color } from 'styled-system'
 import theme from './theme'
 
-const type = props => {
+const getColorCombination = props => {
   const StampColors = {
     gray: {
       backgroundColor: props.theme.colors.lightGray,
@@ -39,7 +39,6 @@ const Stamp = styled.div`
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -48,7 +47,7 @@ const Stamp = styled.div`
   border-style: solid;
   border-color: ${props =>
     props.disabled ? null : props.theme.colors.borderGray};
-  ${space} ${type};
+  ${space} ${fontSize} ${color};
 `
 
 Stamp.displayName = 'Stamp'
@@ -69,7 +68,9 @@ Stamp.defaultProps = {
   px: 1,
   py: 0,
   theme: theme,
-  color: 'text'
+  color: 'gray',
+  bg: 'lightGray',
+  fontSize: 0
 }
 
 export default Stamp

@@ -8,8 +8,9 @@ storiesOf('Stamp', module)
     'Default Stamp',
     withInfo({
       inline: true,
-      text: 'Use the <Stamp /> component to render a primitive Stamp.'
-    })(() => <Stamp color="gray">default stamp</Stamp>)
+      text:
+        'Use the <Stamp /> component to subtly display attributes alongside listing cells and on product detail pages. Use it in conjunction with an <Icon /> component to give it more context. An Icon placed within a Stamp will inherit the assigned Stamp color.'
+    })(() => <Stamp>default stamp</Stamp>)
   )
   .add('All Colors', () => (
     <div>
@@ -20,7 +21,7 @@ storiesOf('Stamp', module)
         <Icon name="pin" size={16} mr={1} /> top location
       </Stamp>
       <Stamp color="green" mr={2}>
-        <Icon name="discount" size={16} mr={1} /> free cancellation
+        <Icon name="discount" size={16} mr={1} /> lowest price
       </Stamp>
       <Stamp color="red" mr={2}>
         <Icon name="clock" size={16} mr={1} /> just booked
@@ -33,9 +34,3 @@ storiesOf('Stamp', module)
       </Stamp>
     </div>
   ))
-  .add('gray', () => <Stamp color="gray">blue</Stamp>)
-  .add('blue', () => <Stamp color="blue">blue</Stamp>)
-  .add('green', () => <Stamp color="green">green</Stamp>)
-  .add('red', () => <Stamp color="red">red</Stamp>)
-  .add('orange', () => <Stamp color="orange">orange</Stamp>)
-  .add('purple', () => <Stamp color="purple">lightOrange</Stamp>)
