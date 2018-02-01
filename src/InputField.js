@@ -19,7 +19,8 @@ const fadeIn = keyframes`
   }
 `
 const labelStyles = {
-  animation: fadeIn + ' 0.3s'
+  animation: fadeIn + ' 0.3s',
+  border: '1px solid transparent'
 }
 
 const getInputStyles = showLabel => {
