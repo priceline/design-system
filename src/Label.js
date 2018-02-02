@@ -28,4 +28,13 @@ Label.defaultProps = {
 
 Label.displayName = 'Label'
 
+Label.nowrap = Label.extend`
+  white-space: nowrap;
+`
+
+Label.hidden = Label.extend`
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+`
+
 export default Label
