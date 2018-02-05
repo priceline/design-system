@@ -35,7 +35,7 @@ exports[`Select renders 1`] = `
   border-color: #d1d6db;
   margin: 0px;
   padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 32px;
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 14px;
