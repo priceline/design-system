@@ -143,6 +143,8 @@ export const boxShadows = [
   `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`
 ]
 
+export const zIndex = [0, 1, 2, 3, 4]
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -156,6 +158,7 @@ const theme = {
   radii,
   radius,
   boxShadows,
+  zIndex,
   maxContainerWidth
 }
 

@@ -9,6 +9,7 @@ const rootPosition = props =>
   props.open
     ? {
         position: 'fixed',
+        zIndex: system.theme('zIndex.2')(props),
         top: props.top || 0,
         display: 'flex',
         flexDirection: 'column',
@@ -68,7 +69,6 @@ Popover.Body = styled(Box)`
   -webkit-overflow-scrolling: touch;
   ${system.theme('mediaQueries.1')} {
     position: absolute;
-    z-index: 1;
     left: 0;
     box-shadow: ${system.theme('boxShadows.2')};
   }

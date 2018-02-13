@@ -57,8 +57,15 @@ const Stateful = withState(props => (
             <Label>Popover demo</Label>
             <Input
               type="number"
+              aria-haspopup="true"
               placeholder="Popover demo"
               value={props.count || ''}
+              onFocus={e => {
+                props.update({ open: true })
+              }}
+              onKeyDown={e => {
+                if (e.key === 'Escape') props.update({ open: false })
+              }}
               onChange={e => {
                 const val = e.target.value
                 const n = val === '' ? '' : parseInt(val)
@@ -104,11 +111,11 @@ const Stateful = withState(props => (
 ))
 
 storiesOf('Popover', module)
-  .add('basic', () => <Stateful count={0} open={false} />)
+  .add('stateful', () => <Stateful count={0} open={false} />)
   .add('open', () => (
     <Box>
       <Popover open={true}>
-        <Button>Button</Button>
+        <Button m={[2, 2, 0]}>Button</Button>
         <Popover.Body>Popover.Body</Popover.Body>
       </Popover>
       <Box py={3}>
@@ -119,7 +126,7 @@ storiesOf('Popover', module)
   .add('offset top', () => (
     <Box>
       <Popover top="128px" open={true}>
-        <Button>Button</Button>
+        <Button m={[2, 2, 0]}>Button</Button>
         <Popover.Body>
           <Heading>Popover.Body</Heading>
           <Text>
@@ -128,5 +135,39 @@ storiesOf('Popover', module)
           </Text>
         </Popover.Body>
       </Popover>
+    </Box>
+  ))
+  .add('competing z-index', () => (
+    <Box>
+      <Popover open={true}>
+        <Button m={[2, 2, 0]}>Button</Button>
+        <Popover.Body>
+          <Heading>Popover.Body</Heading>
+          <Text>
+            This Popover has a top value on small viewports to compensate for
+            other fixed positioned elements
+          </Text>
+        </Popover.Body>
+      </Popover>
+      <div
+        style={{
+          // controls the offensive z-index value
+          position: 'relative',
+          zIndex: 1
+        }}
+      >
+        <Box
+          my={2}
+          p={3}
+          color="white"
+          bg="red"
+          style={{
+            position: 'relative',
+            zIndex: 2000
+          }}
+        >
+          This element has an unnecessarily high z-index of 2000
+        </Box>
+      </div>
     </Box>
   ))
