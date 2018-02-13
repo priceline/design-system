@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover Popover.Body renders 1`] = `
+.c1 {
+  margin-top: 8px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c0 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+<div
+  className="c0 c1"
+/>
+`;
+
+exports[`Popover renders 1`] = `
+.c0 {
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+<div
+  className="c0 "
+  open={false}
+/>
+`;
+
+exports[`Popover renders open 1`] = `
+.c0 {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    position: relative;
+    top: auto;
+    display: block;
+  }
+}
+
+<div
+  className="c0 "
+  open={true}
+/>
+`;
