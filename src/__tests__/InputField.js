@@ -8,7 +8,14 @@ describe('InputField', () => {
   test('it renders using the old api, but should throw a prop-type warning', () => {
     console.error = jest.fn()
 
-    const test = mount(<InputField label="test" icon="lock" id="test-input" onChange={() => {}}/>)
+    const test = mount(
+      <InputField
+        label="test"
+        icon="lock"
+        id="test-input"
+        onChange={() => {}}
+      />
+    )
 
     expect(
       console.error.mock.calls
@@ -75,12 +82,25 @@ describe('InputField', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
   })
-  test('it calls the `onChange` handler passed into `InputField` when the child `Input` component\'s value updates', () => {
+  test('it always renders a label when `alwaysShowLabel` is true', () => {
+    const json = renderer
+      .create(
+        <InputField alwaysShowLabel onChange={() => {}}>
+          <Label>A Label</Label>
+          <Icon name="email" />
+          <Input id="with-both-icons" />
+          <Icon name="email" />
+        </InputField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+  test("it calls the `onChange` handler passed into `InputField` when the child `Input` component's value updates", () => {
     const mockChange = jest.fn()
     const test = mount(
       <InputField onChange={mockChange}>
         <Label>A Label</Label>
-        <Input id="caller" placeholder='placeholder text'/>
+        <Input id="caller" placeholder="placeholder text" />
       </InputField>
     )
 
@@ -93,7 +113,7 @@ describe('InputField', () => {
       <InputField onChange={() => {}}>
         <Label>A Label</Label>
         <Icon name="email" />
-        <Input id="with-both-icons" placeholder='placeholder text'/>
+        <Input id="with-both-icons" placeholder="placeholder text" />
         <Icon name="email" />
       </InputField>
     )
@@ -103,7 +123,9 @@ describe('InputField', () => {
     expect(label.length).toBe(0)
 
     let input = test.find(Input)
-    expect(input.getDOMNode().getAttribute('aria-label')).toBe('placeholder text')
+    expect(input.getDOMNode().getAttribute('aria-label')).toBe(
+      'placeholder text'
+    )
 
     input.simulate('change', { target: { value: 'asdf' } })
 

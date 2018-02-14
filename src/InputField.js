@@ -107,7 +107,8 @@ class InputField extends React.Component {
       InputChild = <Input />
     }
 
-    const showLabel = LabelChild && this.state.showLabel
+    const showLabel =
+      this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
 
     return (
       <Box>
@@ -151,6 +152,7 @@ class InputField extends React.Component {
 
 InputField.propTypes = {
   onChange: PropTypes.func.isRequired,
+  alwaysShowLabel: PropTypes.bool,
   children: function(props, propName, componentName) {
     const prop = props[propName]
     let inputCount = 0
