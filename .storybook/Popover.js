@@ -34,14 +34,14 @@ const inc = sum(1)
 const dec = sum(-1)
 
 const Stateful = withState(props => (
-  <Box px={3} py={6}>
+  <Box px={3} bg="lightGray" style={{ minHeight: '100vh' }} py={6}>
     <Popover
       open={props.open}
       onDismiss={e => {
         props.update(toggle('open'))
       }}
     >
-      <Flex p={[2, 2, 0]} align="center">
+      <Flex p={props.open ? [2, 2, 0] : 0} align="center">
         <Box width={1}>
           <InputField
             onChange={e => {
@@ -85,6 +85,7 @@ const Stateful = withState(props => (
           </Hide>
         )}
       </Flex>
+
       {props.open && (
         <Popover.Body width={[1, 1, 320]}>
           <Heading mb={3}>Stateful Popover Example</Heading>
@@ -104,6 +105,7 @@ const Stateful = withState(props => (
         </Popover.Body>
       )}
     </Popover>
+
     <Box p={2}>
       <Text>Some text under the Popover</Text>
     </Box>

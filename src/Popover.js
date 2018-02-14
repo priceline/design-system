@@ -13,7 +13,8 @@ const rootPosition = props =>
         top: props.top || 0,
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'white',
+        backgroundColor: system.theme('colors.' + props.bg, 'white'),
+
         [system.theme('mediaQueries.1')(props)]: {
           position: 'relative',
           top: 'auto',

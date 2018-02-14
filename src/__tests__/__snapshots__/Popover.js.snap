@@ -17,7 +17,6 @@ exports[`Popover Popover.Body renders 1`] = `
 
 .c0 {
   position: absolute;
-  z-index: 1;
   left: 0;
 }
 
@@ -45,6 +44,7 @@ exports[`Popover renders open 1`] = `
   bottom: 0;
   left: 0;
   position: fixed;
+  z-index: 2;
   top: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -53,7 +53,10 @@ exports[`Popover renders open 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: white;
+}
+
+.c0 background-color:function (props) {
+  return: get(props.theme,keys,fallback);
 }
 
 @media screen and (min-width:40em) {
