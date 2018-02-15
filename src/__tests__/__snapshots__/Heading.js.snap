@@ -33,6 +33,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 .c0 {
   font-size: 48px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <h1
@@ -45,6 +46,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 .c0 {
   font-size: 32px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <h2
@@ -57,6 +59,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 .c0 {
   font-size: 24px;
   margin: 0px;
+  font-weight: 400;
 }
 
 <h3
@@ -69,6 +72,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 .c0 {
   font-size: 20px;
   margin: 0px;
+  font-weight: 400;
 }
 
 <h4
@@ -81,6 +85,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 .c0 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <h5
@@ -94,6 +99,7 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
   font-size: 12px;
   margin: 0px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 <h6

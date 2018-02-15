@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import { space, width, color, responsiveStyle } from 'styled-system'
+import { space, width, color, textAlign } from 'styled-system'
 import PropTypes from 'prop-types'
 import theme from './theme'
 
-const align = responsiveStyle('text-align', 'align')
 const Box = styled.div`
-  ${space} ${width} ${color} ${align};
+  ${space} ${width} ${color} ${textAlign};
 `
 
 Box.displayName = 'Box'
@@ -41,12 +40,8 @@ Box.propTypes = {
   pl: numberStringOrArray,
   px: numberStringOrArray,
   py: numberStringOrArray,
-  align: (props, name, component) => {
-    if (!props[name]) return
-    return new Error(
-      'The Box `align` prop will deprecated. Please use Text instead.'
-    )
-  }
+  // deprecated
+  ...textAlign.propTypes
 }
 
 export default Box

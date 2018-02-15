@@ -1,12 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Banner only accepts preset colors 1`] = `
-.c1 {
+.c2 {
   width: 100%;
   text-align: left;
 }
 
 .c0 {
+  text-align: left;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,32 +25,33 @@ exports[`Banner only accepts preset colors 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
-  className=""
+  className="c0"
   color={undefined}
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
       width={1}
     >
       <h5
-        className="c2"
+        className="c3"
         fontSize={2}
       />
       <span
-        className="c3"
+        className="c4"
         fontSize={1}
       />
     </div>
@@ -56,8 +61,9 @@ exports[`Banner only accepts preset colors 1`] = `
 
 exports[`Banner renders content from children props 1`] = `
 .c0 {
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
+  text-align: left;
 }
 
 .c3 {
@@ -88,13 +94,14 @@ exports[`Banner renders content from children props 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -110,6 +117,138 @@ exports[`Banner renders content from children props 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -144,8 +283,9 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c0 {
-  background-color: #007aff;
   color: #fff;
+  background-color: #007aff;
+  text-align: left;
 }
 
 .c1 {
@@ -171,13 +311,14 @@ exports[`Banner renders with blue bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -193,6 +334,138 @@ exports[`Banner renders with blue bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -219,8 +492,9 @@ exports[`Banner renders with blue bg 1`] = `
 
 exports[`Banner renders with custom iconName and size 1`] = `
 .c0 {
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
+  text-align: left;
 }
 
 .c3 {
@@ -251,13 +525,14 @@ exports[`Banner renders with custom iconName and size 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -273,6 +548,138 @@ exports[`Banner renders with custom iconName and size 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 24 24"
       width={24}
     >
@@ -299,8 +706,9 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 exports[`Banner renders with green bg 1`] = `
 .c0 {
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
+  text-align: left;
 }
 
 .c3 {
@@ -331,13 +739,14 @@ exports[`Banner renders with green bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -353,6 +762,138 @@ exports[`Banner renders with green bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -384,8 +925,9 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c0 {
-  background-color: #cdf;
   color: #049;
+  background-color: #cdf;
+  text-align: left;
 }
 
 .c1 {
@@ -411,13 +953,14 @@ exports[`Banner renders with lightBlue bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -433,6 +976,138 @@ exports[`Banner renders with lightBlue bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -464,8 +1139,9 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c0 {
-  background-color: #cec;
   color: #060;
+  background-color: #cec;
+  text-align: left;
 }
 
 .c1 {
@@ -491,13 +1167,14 @@ exports[`Banner renders with lightGreen bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -513,6 +1190,138 @@ exports[`Banner renders with lightGreen bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -544,8 +1353,9 @@ exports[`Banner renders with lightOrange bg 1`] = `
 }
 
 .c0 {
-  background-color: #feb;
   color: #a50;
+  background-color: #feb;
+  text-align: left;
 }
 
 .c1 {
@@ -571,13 +1381,14 @@ exports[`Banner renders with lightOrange bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -593,6 +1404,138 @@ exports[`Banner renders with lightOrange bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 22 19"
       width={24}
     >
@@ -624,8 +1567,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c0 {
-  background-color: #fcc;
   color: #800;
+  background-color: #fcc;
+  text-align: left;
 }
 
 .c1 {
@@ -651,13 +1595,14 @@ exports[`Banner renders with lightRed bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -673,6 +1618,138 @@ exports[`Banner renders with lightRed bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -699,8 +1776,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 exports[`Banner renders with no props other than theme 1`] = `
 .c0 {
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
+  text-align: left;
 }
 
 .c3 {
@@ -731,13 +1809,14 @@ exports[`Banner renders with no props other than theme 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -753,6 +1832,138 @@ exports[`Banner renders with no props other than theme 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -784,8 +1995,9 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c0 {
-  background-color: #fa0;
   color: #fff;
+  background-color: #fa0;
+  text-align: left;
 }
 
 .c1 {
@@ -811,13 +2023,14 @@ exports[`Banner renders with orange bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -833,6 +2046,138 @@ exports[`Banner renders with orange bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 22 19"
       width={24}
     >
@@ -864,8 +2209,9 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c0 {
-  background-color: #c00;
   color: #fff;
+  background-color: #c00;
+  text-align: left;
 }
 
 .c1 {
@@ -891,13 +2237,14 @@ exports[`Banner renders with red bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -913,6 +2260,138 @@ exports[`Banner renders with red bg 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -939,8 +2418,9 @@ exports[`Banner renders with red bg 1`] = `
 
 exports[`Banner renders with text node 1`] = `
 .c0 {
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
+  text-align: left;
 }
 
 .c3 {
@@ -971,13 +2451,14 @@ exports[`Banner renders with text node 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -993,6 +2474,138 @@ exports[`Banner renders with text node 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 24 24"
       width={24}
     >
@@ -1027,8 +2640,9 @@ exports[`Banner renders with text node 1`] = `
 
 exports[`Banner renders with text string 1`] = `
 .c0 {
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
+  text-align: left;
 }
 
 .c3 {
@@ -1059,13 +2673,14 @@ exports[`Banner renders with text string 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-top: -2px;
 }
 
 .c4 {
   font-size: 16px;
   margin: 0px;
+  font-weight: 600;
 }
 
 <div
@@ -1081,6 +2696,138 @@ exports[`Banner renders with text string 1`] = `
       height={24}
       mr={3}
       mt="-2px"
+      theme={
+        Object {
+          "bold": 600,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            48,
+          ],
+          "fontWeights": Object {
+            "bold": 600,
+            "regular": 400,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 400,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+        }
+      }
       viewBox="0 0 24 24"
       width={24}
     >
