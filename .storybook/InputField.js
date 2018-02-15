@@ -110,6 +110,26 @@ storiesOf('InputField', module)
             </InputField>
           </Box>
         </Flex>
+        <Flex width={900}>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              With Label Always Shown
+            </Text>
+            <InputField alwaysShowLabel onChange={() => {}}>
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+            </InputField>
+          </Box>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              Without Label Always Shown (requires typing)
+            </Text>
+            <InputField onChange={() => {}}>
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+            </InputField>
+          </Box>
+        </Flex>
       </div>
     ))
   )
