@@ -5,7 +5,9 @@ exports[`RedButton disabled prop sets 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
+  -webkit-text-align: center;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -39,7 +41,9 @@ exports[`RedButton renders 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
+  -webkit-text-align: center;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -80,7 +84,9 @@ exports[`RedButton without disabled prop sets 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
+  -webkit-text-align: center;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;

@@ -7,6 +7,7 @@ exports[`Tooltip bottom center 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -18,6 +19,7 @@ exports[`Tooltip bottom center 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
+  -webkit-text-align: center;
   text-align: center;
   top: 0;
   left: 50%;
@@ -76,6 +78,7 @@ exports[`Tooltip bottom left 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -87,6 +90,7 @@ exports[`Tooltip bottom left 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
+  -webkit-text-align: center;
   text-align: center;
   top: 0;
 }
@@ -140,6 +144,7 @@ exports[`Tooltip bottom right 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -151,6 +156,7 @@ exports[`Tooltip bottom right 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
+  -webkit-text-align: center;
   text-align: center;
   top: 0;
   right: 0;
@@ -205,6 +211,7 @@ exports[`Tooltip renders 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -216,6 +223,7 @@ exports[`Tooltip renders 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
+  -webkit-text-align: center;
   text-align: center;
   top: 0;
 }
@@ -269,6 +277,7 @@ exports[`Tooltip top center 1`] = `
   padding: 8px;
   background-color: #000;
   color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -280,6 +289,7 @@ exports[`Tooltip top center 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #000;
+  -webkit-text-align: center;
   text-align: center;
   bottom: -8px;
   left: 50%;
@@ -338,6 +348,7 @@ exports[`Tooltip top left 1`] = `
   padding: 8px;
   background-color: #007aff;
   color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -349,6 +360,7 @@ exports[`Tooltip top left 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #007aff;
+  -webkit-text-align: center;
   text-align: center;
   bottom: -8px;
 }
@@ -402,6 +414,7 @@ exports[`Tooltip top right 1`] = `
   padding: 8px;
   background-color: #c00;
   color: #fff;
+  -webkit-text-align: right;
   text-align: right;
 }
 
@@ -413,6 +426,7 @@ exports[`Tooltip top right 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #c00;
+  -webkit-text-align: center;
   text-align: center;
   bottom: -8px;
   right: 0;

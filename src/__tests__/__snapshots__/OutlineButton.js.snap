@@ -5,7 +5,9 @@ exports[`OutlineButton disabled prop sets 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
+  -webkit-text-align: center;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -47,7 +49,9 @@ exports[`OutlineButton renders 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
+  -webkit-text-align: center;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -94,7 +98,9 @@ exports[`OutlineButton without disabled prop sets 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
+  -webkit-text-align: center;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
