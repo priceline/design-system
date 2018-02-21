@@ -77,7 +77,7 @@ Popover.Body = styled(Box)`
 
 Popover.Body.defaultProps = {
   p: 3,
-  mt: 2,
+  mt: [0, null, 2],
   bg: 'white'
 }
 
