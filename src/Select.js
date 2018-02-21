@@ -6,6 +6,10 @@ import theme from './theme'
 import Flex from './Flex'
 import Icon from './Icon'
 
+const ClickableIcon = Icon.extend`
+  pointer-events: none;
+`
+
 const SelectBase = styled.select`
   appearance: none;
   display: block;
@@ -35,7 +39,7 @@ SelectBase.defaultProps = {
 const Select = styled(props => (
   <Flex align="center">
     <SelectBase {...props} />
-    <Icon legacy={false} ml={-32} name="chevronDown" color="gray" />
+    <ClickableIcon legacy={false} ml={-32} name="chevronDown" color="gray" />
   </Flex>
 ))``
 
