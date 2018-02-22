@@ -5,17 +5,17 @@
 
 - [Props](#props)
 
-[Style](#style)
+  * [Style](#style)
 
-[Timing](#timing)
+  * [Timing](#timing)
 
-[Easing](#easing)
+  * [Easing](#easing)
 
-[Delay](#delay)
+  * [Delay](#delay)
 
-[Movement](#movement)
+  * [Movement](#movement)
 
-[Patterns](#patterns)
+- [Patterns](#patterns)
 
 ## Benefits
 ### Feedback
