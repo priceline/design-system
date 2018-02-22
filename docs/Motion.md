@@ -5,13 +5,13 @@
 
 - [Props](#props)
 
-  * [Style](#style)
+  * [Style](#style-2)
 
-  * [Timing](#timing)
+  * [Timing](#timing-2)
 
-  * [Easing](#easing)
+  * [Easing](#easing-2)
 
-  * [Delay](#delay)
+  * [Delay](#delay-2)
 
   * [Movement](#movement)
 
