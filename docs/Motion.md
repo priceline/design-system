@@ -15,7 +15,7 @@
 
 [Movement](#Movement)
 
-[Patterns](#Patterns)
+[Patterns](##Patterns)
 ## Benefits
 ### Feedback
 _Response to a user action_
