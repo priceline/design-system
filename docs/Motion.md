@@ -1,21 +1,22 @@
 # Motion
-[Benefits](#Benefits)
+- [Benefits](#benefits)
 
-[Standards](#Standards)
+- [Standards](#standards)
 
-[Props](#Props)
+- [Props](#props)
 
-[Style](#Style)
+[Style](#style)
 
-[Timing](#Timing)
+[Timing](#timing)
 
-[Easing](#Easing)
+[Easing](#easing)
 
-[Delay](#Delay)
+[Delay](#delay)
 
-[Movement](#Movement)
+[Movement](#movement)
 
-[Patterns](##Patterns)
+[Patterns](#patterns)
+
 ## Benefits
 ### Feedback
 _Response to a user action_
