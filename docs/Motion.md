@@ -22,18 +22,30 @@
 _Response to a user action_
 
 Providing feedback helps reinforce user actions: someone does something, something happens. Things like hover states, click states, dropdowns, etc. can all give the user helpful context relating to how or why an element responded to a tap or click.
+
+<img src="https://media.giphy.com/media/55s4WWPA6eil3ylcxN/giphy.gif" width="200" height="200" />
+
 ### Emphasis
 _Attention focus without action_
 
 We know what we want our users to see, and can use motion to draw their eye to it. Calling out key elements can help convey important information or highlight a specific instance that is noteworthy on the page.
+
+<img src="https://media.giphy.com/media/wsUvWIyRLHqAvGFDuG/giphy.gif" width="200" height="200" />
+
 ### Context
 _Giving the user hints_
 
 The user isn’t as familiar with our path as we are. We can use motion to explain why things are acting the way they are, and give hints as to what will happen next. This is useful for transition states: showing a standard loading indicator, or staggering content load to properly convey information hierarchy.
+
+<img src="https://media.giphy.com/media/2zcmVA2eKBUrR2pmha/giphy.gif" width="200" height="200" />
+
 ### Delight
 _Make the experience feel unique_
 
 Let’s have some fun with it! There are a million opportunities to add enjoyable instances of animation to enhance the user experience and bring a little life to the site.
+
+<img src="https://media.giphy.com/media/9Vx2KxaxT5PKDEAviN/giphy.gif" width="200" height="200" />
+
 ## Standards
 For the site to behave in that uniquely Priceline-y way, we need to adhere to a set of standards off which we shall build our formula.
 ### Short & Sweet
