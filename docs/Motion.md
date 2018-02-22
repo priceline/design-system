@@ -75,12 +75,12 @@ These are the fundamental elements of motion that we can employ throughout the s
 ### `Move`
 Position change
 
-<img src="https://media.giphy.com/media/7vAQRLyHaYLUraxxGm/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/4KFxddfxFmzfo4NXXP/giphy.gif" width="200" height="200" />
 
 ### `Scale`
 Scale change
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/1pA5jpVWErR4nilxMc/giphy.gif" width="200" height="200" />
 
 ### `Fade`
 Opacity change
