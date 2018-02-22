@@ -222,13 +222,30 @@ These patterns help paint the picture of our product to the user. Proper executi
 
 ### Determinate Load
 The determinate loader is used in instances when load time can be determined.
+
+<img src="https://media.giphy.com/media/RK97a5MgzmLAbCTKfu/giphy.gif" width="200" height="200" />
+
 ### Indeterminate Load
 The indeterminate loader is used in instances when load times cannot be determined.
+
+<img src="https://media.giphy.com/media/fs8Q2BjQhBHYEb7i4i/giphy.gif" width="200" height="200" />
+
 ### Skeleton Load
 A visualization of elements with in a component - gives the user an understanding of what will populate once loading concludes.
+
+<img src="https://media.giphy.com/media/yxssBV7cDdodbt8dqs/giphy.gif" width="200" height="200" />
+
 ### Staggering
 Staggering content as it loads in helps establish an information hierarchy to an unfamiliar user
+
+<img src="https://media.giphy.com/media/1dMQq2n2F8L9PegxE3/giphy.gif" width="200" height="200" />
+
 ### Directionality
 Objects should enter the screen from a logical origin and exit accordingly.
+
+<img src="https://media.giphy.com/media/5eF6VSGWQTDZsexouU/giphy.gif" width="200" height="200" />
+
 ### Parenting
 Parenting helps the user develop relationships between two or more objects on-screen.
+
+<img src="https://media.giphy.com/media/sRFvyiYaZBd4mng4yE/giphy.gif" width="200" height="200" />
