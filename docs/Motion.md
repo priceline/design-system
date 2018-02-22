@@ -123,45 +123,87 @@ For any given distance an object must move, the time it takes to achieve the tra
 
 ### `durationFast` _150ms_
 Used in small animations like button presses
+
+<img src="https://media.giphy.com/media/waciFN9SipaANM3gR7/giphy.gif" width="200" height="200" />
+
 ### `durationNormal` _300ms_
 Used in medium animations like popovers and tooltips
+
+<img src="https://media.giphy.com/media/oyZURoMMT4hEe8ylFW/giphy.gif" width="200" height="200" />
+
 ### `durationSlow` _450ms_
 Used for larger components like modals
+
+<img src="https://media.giphy.com/media/QMI917NgswtunziaD1/giphy.gif" width="200" height="200" />
+
 ### `durationSlowest` _600ms_
 Used in the largest animations like page transitions
+
+<img src="https://media.giphy.com/media/XJ1bv1TM9wh6HVmHXt/giphy.gif" width="200" height="200" />
 
 ## Easing
 As an object moves a given distance at a given time, its displacement is influenced by the spacing influence between its origin and destination. By creating easing buckets, we can standardize the physics of our motion and define its use relative to the context of the movement.
 
 ### `easeInOut` _0.50, 0.00, 0.25, 1.00_
 The primary easing curve. Used for any core animation not entering/exiting the screen or a component
+
+<img src="https://media.giphy.com/media/MTKgDtHhgNQUeIFmW7/giphy.gif" width="200" height="200" />
+
 ### `easeOut` _0.00, 0.00, 0.25, 1.00_
 EaseOut is used when an element is appearing on-screen or within a component
+
+<img src="https://media.giphy.com/media/MTtG1t251Be5PiNlPF/giphy.gif" width="200" height="200" />
+
 ### `easeIn` _0.50, 0.00, 1.00, 1.00_
 EaseIn is used when an element is removed from the screen or within a component
+
+<img src="https://media.giphy.com/media/3LOppJME3EtwHCUiUw/giphy.gif" width="200" height="200" />
+
 
 ## Delay
 
 ### `delayShort` _60ms_
 Used in animations within components
+
+<img src="https://media.giphy.com/media/5zvQrIlegXCi0LfqQc/giphy.gif" width="200" height="200" />
+
 ### `delayMedium` _100ms_
 Used in animations of smaller components
+
+<img src="https://media.giphy.com/media/5QVZX285rkl69yOTMP/giphy.gif" width="200" height="200" />
+
 ### `delayLong` _140ms_
 Used in animations of larger components
+
+<img src="https://media.giphy.com/media/1isegV9N3qb2XmUBU3/giphy.gif" width="200" height="200" />
+
 ### `delayLongest` _180ms_
 Used in animations involving multiple components
+
+<img src="https://media.giphy.com/media/1zKRlqQeRv2sVdp6PK/giphy.gif" width="200" height="200" />
 
 ## Movement
 For elements that are changing position, we have defined some set distances they can travel.
 
 ### `moveSmall` _8px_
 Used in animations involving parts of a component
+
+<img src="https://media.giphy.com/media/1k1yrM7mcJFvSljGpJ/giphy.gif" width="200" height="200" />
+
 ### `moveMedium` _16px_
 Used in animations of smaller components
+
+<img src="https://media.giphy.com/media/1ZAzUVPcrSsLn1lq03/giphy.gif" width="200" height="200" />
+
 ### `moveLarge` _24px_
 Used in animations of larger components
+
+<img src="https://media.giphy.com/media/ksEDCeV1QfZtjfpHzH/giphy.gif" width="200" height="200" />
+
 ### `moveXLarge` _32px_
 Used in animations involving the largest components
+
+<img src="https://media.giphy.com/media/7J1lqx4jzQnmRq7N7y/giphy.gif" width="200" height="200" />
 
 ## Patterns
 These patterns help paint the picture of our product to the user. Proper execution and repetition of these elements will create a uniquely branded behavior for Priceline.
