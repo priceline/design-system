@@ -75,24 +75,48 @@ These are the fundamental elements of motion that we can employ throughout the s
 ### `Move`
 Position change
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="250" height="250" />
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
 
 ### `Scale`
 Scale change
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Fade`
 Opacity change
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Spin`
 Rotation
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Color`
 Color change
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Float`
 Z-space change
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Morph`
 Scale & Position
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Slide`
 Position & Opacity
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 ### `Grow`
 Scale & Opacity
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+
 
 ## Timing
 For any given distance an object must move, the time it takes to achieve the transition determines how fast its movement is. Bucketing these durations allows us to assign them to components, creating a timing standard.
