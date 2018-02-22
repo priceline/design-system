@@ -1,4 +1,6 @@
 # Motion
+[Benefits](#Benefits)
+[Standards](#Standards)
 ## Benefits
 ### Feedback
 _Response to a user action_
@@ -71,46 +73,46 @@ Scale & Opacity
 ## Timing
 For any given distance an object must move, the time it takes to achieve the transition determines how fast its movement is. Bucketing these durations allows us to assign them to components, creating a timing standard.
 
-### `durationFast`_150ms_
+### `durationFast` _150ms_
 Used in small animations like button presses
-### `durationNormal`_300ms_
+### `durationNormal` _300ms_
 Used in medium animations like popovers and tooltips
-### `durationSlow`_450ms_
+### `durationSlow` _450ms_
 Used for larger components like modals
-### `durationSlowest`_600ms_
+### `durationSlowest` _600ms_
 Used in the largest animations like page transitions
 
 ## Easing
 As an object moves a given distance at a given time, its displacement is influenced by the spacing influence between its origin and destination. By creating easing buckets, we can standardize the physics of our motion and define its use relative to the context of the movement.
 
-### `easeInOut`_0.50, 0.00, 0.25, 1.00_
+### `easeInOut` _0.50, 0.00, 0.25, 1.00_
 The primary easing curve. Used for any core animation not entering/exiting the screen or a component
-### `easeOut`_0.00, 0.00, 0.25, 1.00_
+### `easeOut` _0.00, 0.00, 0.25, 1.00_
 EaseOut is used when an element is appearing on-screen or within a component
-### `easeIn`_0.50, 0.00, 1.00, 1.00_
+### `easeIn` _0.50, 0.00, 1.00, 1.00_
 EaseIn is used when an element is removed from the screen or within a component
 
 ## Delay
 
-### `delayShort`_60ms_
+### `delayShort` _60ms_
 Used in animations within components
-### `delayMedium`_100ms_
+### `delayMedium` _100ms_
 Used in animations of smaller components
-### `delayLong`_140ms_
+### `delayLong` _140ms_
 Used in animations of larger components
-### `delayLongest`_180ms_
+### `delayLongest` _180ms_
 Used in animations involving multiple components
 
 ## Movement
 For elements that are changing position, we have defined some set distances they can travel.
 
-### `moveSmall`_8px_
+### `moveSmall` _8px_
 Used in animations involving parts of a component
-### `moveMedium`_16px_
+### `moveMedium` _16px_
 Used in animations of smaller components
-### `moveLarge`_24px_
+### `moveLarge` _24px_
 Used in animations of larger components
-### `moveXLarge`_32px_
+### `moveXLarge` _32px_
 Used in animations involving the largest components
 
 ## Patterns
