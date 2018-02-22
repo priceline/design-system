@@ -5,13 +5,13 @@
 
 - [Props](#props)
 
-  * [Style](#style-2)
+  * [Style](#style)
 
-  * [Timing](#timing-2)
+  * [Timing](#timing)
 
-  * [Easing](#easing-2)
+  * [Easing](#easing)
 
-  * [Delay](#delay-2)
+  * [Delay](#delay)
 
   * [Movement](#movement)
 
@@ -51,6 +51,7 @@ These are the 4 main building blocks we can build our motion standards off of. D
 Defining standard types of motion
 
 Example: `scaleIn`
+![ScaleIn](https://gfycat.com/PerfectImmediateGuanaco)
 ### Timing
 Defining standard transition durations
 
@@ -63,6 +64,11 @@ Example: `easeInOut`
 Defining standard transition delay
 
 Example: `delayMedium`
+
+### Movement
+Defining standard movement distances
+
+Example: `moveLarge`
 
 ## Style
 These are the fundamental elements of motion that we can employ throughout the system. They are the first building blocks to deliver the user the feedback, emphasis, context and delight that they deserve.
