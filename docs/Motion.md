@@ -75,7 +75,7 @@ These are the fundamental elements of motion that we can employ throughout the s
 ### `Move`
 Position change
 
-<img src="https://gfycat.com/gifs/detail/PerfectImmediateGuanaco" width="200" height="200" />
+<img src="https://media.giphy.com/media/7vAQRLyHaYLUraxxGm/giphy.gif" width="200" height="200" />
 
 ### `Scale`
 Scale change
@@ -85,37 +85,37 @@ Scale change
 ### `Fade`
 Opacity change
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/kEpqquVWNhPgFGn7e6/giphy.gif" width="200" height="200" />
 
 ### `Spin`
 Rotation
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/9JcIGYVGu1EtEGc7tk/giphy.gif" width="200" height="200" />
 
 ### `Color`
 Color change
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/27tDIBdk5NlfBVZEXY/giphy.gif" width="200" height="200" />
 
 ### `Float`
 Z-space change
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/QKiWGIJPcIGgUn0xuF/giphy.gif" width="200" height="200" />
 
 ### `Morph`
 Scale & Position
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/5b0l39kESYVX9tAg3j/giphy.gif" width="200" height="200" />
 
 ### `Slide`
 Position & Opacity
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/1eulEvLxmZ9u6AzKzi/giphy.gif" width="200" height="200" />
 
 ### `Grow`
 Scale & Opacity
 
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="200" height="200" />
+<img src="https://media.giphy.com/media/1VV3zzKHqbq28rKlqd/giphy.gif" width="200" height="200" />
 
 
 ## Timing
