@@ -52,7 +52,7 @@ Defining standard types of motion
 
 Example: `scaleIn`
 
-![scaleIn](https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif)
+<img src="https://giphy.com/gifs/2SXXWRycnQOUlSIznx/html5" width="100" height="100" />
 ### Timing
 Defining standard transition durations
 
