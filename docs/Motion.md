@@ -52,8 +52,7 @@ Defining standard types of motion
 
 Example: `scaleIn`
 
-<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/PerfectImmediateGuanaco' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
-
+![scaleIn](https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif)
 ### Timing
 Defining standard transition durations
 
