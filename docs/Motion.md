@@ -51,8 +51,6 @@ These are the 4 main building blocks we can build our motion standards off of. D
 Defining standard types of motion
 
 Example: `scaleIn`
-
-<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="100" height="100" />
 ### Timing
 Defining standard transition durations
 
@@ -76,6 +74,9 @@ These are the fundamental elements of motion that we can employ throughout the s
 
 ### `Move`
 Position change
+
+<img src="https://media.giphy.com/media/2SXXWRycnQOUlSIznx/giphy.gif" width="250" height="250" />
+
 ### `Scale`
 Scale change
 ### `Fade`
