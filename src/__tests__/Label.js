@@ -8,13 +8,13 @@ describe('Label', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('Label.hidden renders', () => {
-    const json = renderer.create(<Label.hidden />).toJSON()
+  test('Label hidden renders', () => {
+    const json = renderer.create(<Label hidden />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('Label.nowrap renders', () => {
-    const json = renderer.create(<Label.nowrap />).toJSON()
+  test('Label nowrap renders', () => {
+    const json = renderer.create(<Label nowrap />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

@@ -50,17 +50,17 @@ storiesOf('Label', module)
   ))
   .add('nowrap', () => (
     <Flex>
-      <Label.nowrap>
+      <Label nowrap>
         <Radio checked />
         Round-trip
-      </Label.nowrap>
-      <Label.nowrap>
+      </Label>
+      <Label nowrap>
         <Radio checked />
         One-way
-      </Label.nowrap>
-      <Label.nowrap>
+      </Label>
+      <Label nowrap>
         <Radio checked />
         Multi-destination
-      </Label.nowrap>
+      </Label>
     </Flex>
   ))

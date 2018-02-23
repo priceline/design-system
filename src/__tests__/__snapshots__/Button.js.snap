@@ -6,6 +6,7 @@ exports[`Button disabled prop sets 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -36,6 +37,7 @@ exports[`Button fullWidth prop sets width to 100% 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -70,6 +72,7 @@ exports[`Button renders 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -103,6 +106,7 @@ exports[`Button size large sets height and font-size 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -137,6 +141,7 @@ exports[`Button size medium sets height and font-size 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -171,6 +176,7 @@ exports[`Button size small sets height and font-size 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
@@ -205,6 +211,7 @@ exports[`Button without disabled prop sets 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
