@@ -5,15 +5,15 @@
 
 - [Props](#props)
 
-  * [Style](#style)
+  * [Style](#style-1)
 
-  * [Timing](#timing)
+  * [Timing](#timing-1)
 
-  * [Easing](#easing)
+  * [Easing](#easing-1)
 
-  * [Delay](#delay)
+  * [Delay](#delay-1)
 
-  * [Movement](#movement)
+  * [Movement](#movement-1)
 
 - [Patterns](#patterns)
 
@@ -62,24 +62,24 @@ These are the 4 main building blocks we can build our motion standards off of. D
 ### Style
 Defining standard types of motion
 
-Example: `scaleIn`
+- Example: `scaleIn`
 ### Timing
 Defining standard transition durations
 
-Example: `durationFast`
+- Example: `durationFast`
 ### Easing
 Defining standard spacing values
 
-Example: `easeInOut`
+- Example: `easeInOut`
 ### Delay
 Defining standard transition delay
 
-Example: `delayMedium`
+- Example: `delayMedium`
 
 ### Movement
 Defining standard movement distances
 
-Example: `moveLarge`
+- Example: `moveLarge`
 
 ## Style
 These are the fundamental elements of motion that we can employ throughout the system. They are the first building blocks to deliver the user the feedback, emphasis, context and delight that they deserve.
@@ -174,7 +174,7 @@ EaseIn is used when an element is removed from the screen or within a component
 
 ## Delay
 
-### `delayShort` _60ms_
+### `delaySmall` _60ms_
 Used in animations within components
 
 <img src="https://media.giphy.com/media/5zvQrIlegXCi0LfqQc/giphy.gif" width="200" height="200" />
@@ -184,12 +184,12 @@ Used in animations of smaller components
 
 <img src="https://media.giphy.com/media/5QVZX285rkl69yOTMP/giphy.gif" width="200" height="200" />
 
-### `delayLong` _140ms_
+### `delayLarge` _140ms_
 Used in animations of larger components
 
 <img src="https://media.giphy.com/media/1isegV9N3qb2XmUBU3/giphy.gif" width="200" height="200" />
 
-### `delayLongest` _180ms_
+### `delayXLarge` _180ms_
 Used in animations involving multiple components
 
 <img src="https://media.giphy.com/media/1zKRlqQeRv2sVdp6PK/giphy.gif" width="200" height="200" />
@@ -231,7 +231,7 @@ The indeterminate loader is used in instances when load times cannot be determin
 <img src="https://media.giphy.com/media/fs8Q2BjQhBHYEb7i4i/giphy.gif" width="200" height="200" />
 
 ### Skeleton Load
-A visualization of elements with in a component - gives the user an understanding of what will populate once loading concludes.
+Skeleton loading is used in instances where dynamic content is loading.
 
 <img src="https://media.giphy.com/media/yxssBV7cDdodbt8dqs/giphy.gif" width="200" height="200" />
 
@@ -246,6 +246,6 @@ Objects should enter the screen from a logical origin and exit accordingly.
 <img src="https://media.giphy.com/media/5eF6VSGWQTDZsexouU/giphy.gif" width="200" height="200" />
 
 ### Parenting
-Parenting helps the user develop relationships between two or more objects on-screen.
+Parenting helps the user develop relationships and hierarchy between two or more objects on-screen.
 
 <img src="https://media.giphy.com/media/sRFvyiYaZBd4mng4yE/giphy.gif" width="200" height="200" />
