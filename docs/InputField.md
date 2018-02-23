@@ -32,4 +32,5 @@ This will throw a prop-types warning, though, since you should really be using t
 Prop | Type | Description
 ---|---|---
 children | array of components | Up to 4 components, two of which can be `<Icon/>`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported.
+alwaysShowLabel | boolean | determines whether or not the label shows up statically
 onChange | function | change handler that is passed into the `<Input />` component. This needs to be passed in explicitly into `<InputField/>` so that the label can update when the user interacts with the '<Input />` component.

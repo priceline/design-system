@@ -15,6 +15,7 @@
 - [`<Icon />`](Icon.md)
 - [`<IconButton />`](IconButton.md)
 - [`<InputField />`](InputField.md)
+- [`<InputGroup />`](InputGroup.md)
 - [`<Image />`](Image.md)
 - [`<BackgroundImage />`](BackgroundImage.md)
 - [`<RatingBadge />`](RatingBadge.md)

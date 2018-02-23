@@ -3,11 +3,14 @@
 
 [![Build Status][travis-badge]][travis]
 [![Coverage][coverage-badge]][coverage]
+[![npm version][npm version]][npm version]
 
 [travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 [coverage-badge]: https://img.shields.io/codecov/c/github/pricelinelabs/design-system.svg?style=flat-square
 [coverage]: https://codecov.io/github/pricelinelabs/design-system
+[npm version]: https://img.shields.io/npm/v/pcln-design-system.svg?style=flat-square
+
 
 https://pricelinelabs.github.io/design-system/
 
