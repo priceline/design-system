@@ -5,7 +5,6 @@ exports[`Button disabled prop sets 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -37,7 +36,6 @@ exports[`Button fullWidth prop sets width to 100% 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -73,7 +71,6 @@ exports[`Button renders 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -108,7 +105,6 @@ exports[`Button size large sets height and font-size 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -144,7 +140,6 @@ exports[`Button size medium sets height and font-size 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -180,7 +175,6 @@ exports[`Button size small sets height and font-size 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -216,7 +210,6 @@ exports[`Button without disabled prop sets 1`] = `
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;

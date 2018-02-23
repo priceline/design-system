@@ -2,7 +2,6 @@
 
 exports[`Text align prop sets text-align 1`] = `
 .c0 {
-  -webkit-text-align: center;
   text-align: center;
 }
 
@@ -23,7 +22,6 @@ exports[`Text bold prop sets font-weight 1`] = `
 
 exports[`Text caps prop sets text-transform 1`] = `
 .c0 {
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
 }
 

@@ -6,7 +6,6 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
   margin: 0px;
   color: #687B8E;
   font-weight: 400;
-  -webkit-text-align: center;
   text-align: center;
 }
 
@@ -94,7 +93,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 .c0 {
   font-size: 12px;
   margin: 0px;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
 }
 

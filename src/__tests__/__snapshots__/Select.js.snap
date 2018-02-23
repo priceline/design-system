@@ -18,6 +18,7 @@ exports[`Select renders 1`] = `
   flex: none;
   margin-left: -32px;
   color: gray;
+  pointer-events: none;
 }
 
 .c1 {
