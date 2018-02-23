@@ -12,7 +12,7 @@ exports[`Tooltip bottom center 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
@@ -81,7 +81,7 @@ exports[`Tooltip bottom left 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
@@ -145,7 +145,7 @@ exports[`Tooltip bottom right 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
@@ -210,7 +210,7 @@ exports[`Tooltip renders 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
@@ -274,7 +274,7 @@ exports[`Tooltip top center 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
@@ -343,7 +343,7 @@ exports[`Tooltip top left 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
@@ -407,7 +407,7 @@ exports[`Tooltip top right 1`] = `
 
 .c0 {
   display: inline;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
   position: absolute;
   border-radius: 2px;
