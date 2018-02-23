@@ -40,21 +40,17 @@ class Popover extends React.Component {
     onDismiss: PropTypes.func.isRequired
   }
 
-  constructor() {
-    super()
-
-    this.handleDismiss = e => {
-      if (!this.props.open || !this.root || this.root.contains(e.target)) return
-      this.props.onDismiss(e)
-    }
+  handleDismiss(e) {
+    if (!this.props.open || !this.root || this.root.contains(e.target)) return
+    this.props.onDismiss(e)
   }
 
   componentDidMount() {
-    document.addEventListener('click', this.handleDismiss)
+    document.addEventListener('click', this.handleDismiss.bind(this))
   }
 
   componentWillUnmount() {
-    document.removeEventListener('click', this.handleDismiss)
+    document.removeEventListener('click', this.handleDismiss.bind(this))
   }
 
   render() {
