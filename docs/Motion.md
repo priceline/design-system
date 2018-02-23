@@ -3,7 +3,7 @@
 
 - [Standards](#standards)
 
-- [Props](#props)
+- [Foundations](#foundations)
 
   * [Style](#style-1)
 
@@ -47,7 +47,7 @@ Let’s have some fun with it! There are a million opportunities to add enjoyabl
 <img src="https://media.giphy.com/media/9Vx2KxaxT5PKDEAviN/giphy.gif" width="200" height="200" />
 
 ## Standards
-For the site to behave in that uniquely Priceline-y way, we need to adhere to a set of standards off which we shall build our formula.
+To behave in that uniquely Priceline-y way, we need to adhere to a set of standards upon which we shall build our formula for animation.
 ### Short & Sweet
 Animations should be executed quickly, but deliver their important benefit in a short period of time.
 ### Decisive & with Purpose
@@ -57,7 +57,7 @@ Gentle easing should allow the user to have the perception of a comfortable envi
 ### Subtle but Powerful
 Animation should not be the center of attention. The user should be able to navigate as usual without distraction, but have the added benefit.
 
-## Props
+## Foundations
 These are the 4 main building blocks we can build our motion standards off of. Defining and combining motion styles, transition durations, easing curves, and delays will allow our products to move much more fluidly.
 ### Style
 Defining standard types of motion
