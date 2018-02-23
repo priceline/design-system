@@ -4,7 +4,6 @@ exports[`Truncate generates styles 1`] = `
 .c0 {
   overflow: hidden;
   white-space: nowrap;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
@@ -19,7 +18,6 @@ exports[`Truncate renders 1`] = `
 .c0 {
   overflow: hidden;
   white-space: nowrap;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 

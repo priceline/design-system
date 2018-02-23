@@ -6,7 +6,6 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -32,7 +31,6 @@ exports[`Badge bg green sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -58,7 +56,6 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -84,7 +81,6 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -110,7 +106,6 @@ exports[`Badge bg lightOrange sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -136,7 +131,6 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -162,7 +156,6 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -188,7 +181,6 @@ exports[`Badge bg red sets background-color and color 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
@@ -214,7 +206,6 @@ exports[`Badge renders 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  -webkit-text-transform: uppercase;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.05em;
   -moz-letter-spacing: 0.05em;
