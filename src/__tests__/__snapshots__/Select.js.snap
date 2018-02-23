@@ -60,7 +60,6 @@ exports[`Select renders 1`] = `
     color="gray"
     fill="currentcolor"
     height={24}
-    ml={-32}
     viewBox="0 0 24 24"
     width={24}
   >
