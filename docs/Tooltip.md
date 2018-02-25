@@ -16,6 +16,7 @@ Use `<Tooltip />` component to create a tooltip positioned around any element.
 ### Props
 Prop | Type | Description
 ---|---|---
+width | number, string, or array | Sets the width of the 'content' element
 children | any (Required) | anything you put inside the tags to render
 bg | string | background color
 color | string | font color
@@ -24,4 +25,3 @@ top | bool | tooltip is above content
 center | bool | centered horizontally
 left | bool | towards the left above/below content
 right | bool | towards the right above/below content
-zIndex | number or String | ( default is auto )

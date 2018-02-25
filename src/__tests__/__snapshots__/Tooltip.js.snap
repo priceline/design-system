@@ -21,7 +21,6 @@ exports[`Tooltip bottom center 1`] = `
   text-align: center;
   top: 0;
   left: 50%;
-  width: auto;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -57,7 +56,6 @@ exports[`Tooltip bottom center 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
@@ -122,7 +120,6 @@ exports[`Tooltip bottom left 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
@@ -188,13 +185,104 @@ exports[`Tooltip bottom right 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
   <div
     className="c0 c1"
     color="text"
+  >
+    right tooltip
+  </div>
+</div>
+`;
+
+exports[`Tooltip bottom right including width 1`] = `
+.c1 {
+  margin-bottom: 16px;
+  margin-top: 8px;
+  padding: 8px;
+  width: 100px;
+  color: #001833;
+  background-color: #fff;
+  text-align: right;
+}
+
+.c0 {
+  display: inline;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
+  font-size: 12px;
+  position: absolute;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff #fff;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: 0;
+  right: 16px;
+  margin-right: -10px;
+  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
+}
+
+@media screen and (min-width:32em) {
+  .c1 {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width:48em) {
+  .c1 {
+    width: 400px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="c0 c1"
+    color="text"
+    width={
+      Array [
+        "100px",
+        "200px",
+        "300px",
+        "400px",
+      ]
+    }
   >
     right tooltip
   </div>
@@ -253,7 +341,6 @@ exports[`Tooltip renders 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
@@ -287,7 +374,6 @@ exports[`Tooltip top center 1`] = `
   text-align: center;
   bottom: -8px;
   left: 50%;
-  width: auto;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -323,7 +409,6 @@ exports[`Tooltip top center 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
@@ -388,7 +473,6 @@ exports[`Tooltip top left 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
@@ -454,7 +538,6 @@ exports[`Tooltip top right 1`] = `
   style={
     Object {
       "position": "relative",
-      "zIndex": "auto",
     }
   }
 >
