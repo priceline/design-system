@@ -94,7 +94,7 @@ Generally the workflow looks like this:
 As of the date this was written, the Design System is currently in a beta.
 The package versioning reflects this with the version `1.0.0-x` convention.
 Once the library is in a more stable and mature state, we will release a stable `1.0.0`
-and strictly follow sematic versioning from that point on.
+and strictly follow semantic versioning from that point on.
 
 
 ### Pull Requests
