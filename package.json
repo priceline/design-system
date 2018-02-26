@@ -12,7 +12,7 @@
     "storybook": "build-storybook -c .storybook -o .site/storybook",
     "coverage": "jest --coverage",
     "codecov": "jest && codecov",
-    "chromatic": "chromatic test --storybook-addon --script-name start",
+    "chromatic": "chromatic test --exit-zero-on-changes --storybook-addon --script-name start",
     "standard": "standard",
     "test": "jest"
   },
@@ -80,7 +80,6 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "babel-runtime": "^6.26.0",
     "prop-types": "^15.5.10",
     "styled-components": "^2.1.1",
     "styled-system": "^1.0.8"
