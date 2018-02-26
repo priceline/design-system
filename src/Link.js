@@ -4,6 +4,7 @@ import { color } from 'styled-system'
 import theme from './theme'
 
 const Link = styled.a`
+  cursor: pointer;
   text-decoration: none;
   ${color} &:hover {
     text-decoration: underline;

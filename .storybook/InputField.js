@@ -16,14 +16,7 @@ storiesOf('InputField', module)
         <Text bold pt={4} pb={2}>
           Hey, ya turkey! Enter a word that has 5 characters in it.
         </Text>
-        <InputController>
-          <InputField onChange={() => {}}>
-            <Label>5 Letter Word</Label>
-            <Icon name="amenityPool" />
-            <Input id="form-field" placeholder="Enter a 5 letter word" />
-            <Icon name="fitness" />
-          </InputField>
-        </InputController>
+        <InputFieldWithController />
       </Box>
     ))
   )
@@ -57,7 +50,7 @@ storiesOf('InputField', module)
               Plain Text
             </Text>
             <InputField onChange={() => {}}>
-              <Input id="form-field-1" defaultValue="Plain text" />
+              <Input id="form-field-1" value="Plain text" />
               <Icon name="chevronDown" size="12" />
             </InputField>
           </Box>
@@ -67,7 +60,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField onChange={() => {}}>
               <Icon name="user" color="blue" />
-              <Input id="form-field-1" defaultValue="Plain text with Icon" />
+              <Input id="form-field-1" value="Plain text with Icon" />
               <Icon name="chevronDown" size="12" />
             </InputField>
           </Box>
@@ -79,7 +72,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField color="blue" onChange={() => {}}>
               <Label>Label</Label>
-              <Input id="form-field-3" defaultValue="Typing Text" />
+              <Input id="form-field-3" value="Typing Text" />
             </InputField>
           </Box>
           <Box width={1 / 2} pl={3}>
@@ -89,12 +82,11 @@ storiesOf('InputField', module)
             <InputField color="blue" onChange={() => {}}>
               <Icon name="user" color="blue" />
               <Label>Label</Label>
-              <Input id="form-field-3" defaultValue="Typing text with Icon" />
+              <Input id="form-field-3" value="Typing text with Icon" />
               <Icon name="chevronDown" size="12" />
             </InputField>
           </Box>
         </Flex>
-
         <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
@@ -102,7 +94,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField color="red" onChange={() => {}}>
               <Label>Email address</Label>
-              <Input id="form-field-3" defaultValue="olvier@examp" />
+              <Input id="form-field-3" value="olvier@examp" />
               <Icon name="warning" color="red" size="20" />
             </InputField>
           </Box>
@@ -112,15 +104,34 @@ storiesOf('InputField', module)
             </Text>
             <InputField color="green" onChange={() => {}}>
               <Label>Email address</Label>
-              <Input id="form-field-3" defaultValue="olvier@example.com" />
+              <Input id="form-field-3" value="olvier@example.com" />
               <Icon name="success" color="green" size="20" />
+            </InputField>
+          </Box>
+        </Flex>
+        <Flex width={900}>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              With Label Always Shown
+            </Text>
+            <InputField alwaysShowLabel onChange={() => {}}>
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+            </InputField>
+          </Box>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              Without Label Always Shown (requires typing)
+            </Text>
+            <InputField onChange={() => {}}>
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
             </InputField>
           </Box>
         </Flex>
       </div>
     ))
   )
-
   .add(
     'State Flow',
     withInfo(
@@ -161,7 +172,6 @@ storiesOf('InputField', module)
             <Input
               id="drop-off"
               color="blue"
-              defaultValue="New York"
               placeholder="Enter a drop-off location"
             />
           </InputField>
@@ -170,7 +180,7 @@ storiesOf('InputField', module)
     ))
   )
 
-class InputController extends React.PureComponent {
+class InputFieldWithController extends React.PureComponent {
   state = {
     value: '',
     isValid: false,
@@ -197,14 +207,27 @@ class InputController extends React.PureComponent {
   }
 
   render() {
-    return React.cloneElement(React.Children.only(this.props.children), {
-      onChange: this.onChange,
-      color: this.getBorderColor(),
-      info:
-        !this.state.isValid && this.state.isDirty
-          ? "That's not 5 letters!"
-          : null,
-      ...this.state
-    })
+    return (
+      <InputField
+        onChange={this.onChange}
+        color={this.getBorderColor()}
+        info={
+          !this.state.isValid && this.state.isDirty
+            ? "That's not 5 letters!"
+            : null
+        }
+        isDirty={this.state.isDirty}
+        isValid={this.state.isValid}
+      >
+        <Label>5 Letter Word</Label>
+        <Icon name="amenityPool" />
+        <Input
+          id="form-field"
+          value={this.state.value}
+          placeholder="Enter a 5 letter word"
+        />
+        <Icon name="fitness" />
+      </InputField>
+    )
   }
 }

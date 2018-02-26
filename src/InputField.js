@@ -40,16 +40,16 @@ class InputField extends React.Component {
   constructor(props) {
     super(props)
 
-    let hasDefaultValue
+    let hasInitialValue
 
     React.Children.forEach(props.children, child => {
       if (child && child.type === Input) {
-        hasDefaultValue = child.props.defaultValue
+        hasInitialValue = !!child.props.value
       }
     })
 
     this.state = {
-      showLabel: hasDefaultValue
+      showLabel: hasInitialValue
     }
   }
 
@@ -107,14 +107,15 @@ class InputField extends React.Component {
       InputChild = <Input />
     }
 
-    const showLabel = LabelChild && this.state.showLabel
+    const showLabel =
+      this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
 
     return (
       <Box>
         {showLabel &&
           React.cloneElement(LabelChild, {
             pl: BeforeIcon ? 40 : 2,
-            mt: '6px',
+            mt: '5px',
             style: labelStyles,
             htmlFor: inputId
           })}
@@ -151,6 +152,7 @@ class InputField extends React.Component {
 
 InputField.propTypes = {
   onChange: PropTypes.func.isRequired,
+  alwaysShowLabel: PropTypes.bool,
   children: function(props, propName, componentName) {
     const prop = props[propName]
     let inputCount = 0
