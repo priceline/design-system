@@ -15,8 +15,7 @@ const Stamp = styled.div`
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${props =>
-    props.disabled ? null : props.theme.colors.borderGray};
+  border-color: ${props => theme.colors.borderGray};
   ${space} ${fontSize} ${color};
 `
 
