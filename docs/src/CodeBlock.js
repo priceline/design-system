@@ -29,8 +29,6 @@ const Editor = styled(LiveEditor)`
   margin: 0;
   padding: 16px;
   tab-size: 2;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
   white-space: pre-wrap;
   overflow: auto;
   border-radius: 2px;
