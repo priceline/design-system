@@ -66,7 +66,7 @@ const tooltipAlign = props => {
 
 const TooltipContent = styled(Box)`
   display: inline;
-  box-shadow: ${({ theme }) => theme.boxShadows.slice(0, 3).join(', ')};
+  box-shadow: ${({ theme }) => theme.boxShadows[1]};
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
   position: absolute;
   border-radius: ${({ theme }) => theme.radii[1]}px;
@@ -96,7 +96,8 @@ const propTypes = {
   top: PropTypes.bool,
   center: PropTypes.bool,
   left: PropTypes.bool,
-  right: PropTypes.bool
+  right: PropTypes.bool,
+  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 }
 
 const defaultProps = {
@@ -104,12 +105,13 @@ const defaultProps = {
   color: 'text',
   bg: 'white',
   align: 'right',
-  theme: theme
+  theme: theme,
+  zIndex: 'auto'
 }
 
 const Tooltip = ({ children, ...props }) => {
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>
         {children}
       </TooltipContent>

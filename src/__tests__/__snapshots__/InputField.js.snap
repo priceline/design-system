@@ -1,28 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputField it renders a form field wth a label and icons 1`] = `
-.c1 {
-  margin-top: 0px;
-  width: 100%;
-  text-align: center;
+exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1`] = `
+.c2 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: -12px;
 }
 
 .c5 {
   margin-left: -32px;
-  margin-top: 8px;
+  margin-top: -12px;
 }
 
-.c2 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: 8px;
-}
-
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -52,8 +48,10 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
+  margin-top: -20px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -84,11 +82,41 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
   box-shadow: 0 0 0 1px #007aff;
 }
 
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
+  padding-left: 40px;
+  font-size: 10px;
+  color: #687B8E;
+  font-weight: 600;
+}
+
 <div
   className=""
 >
+  <label
+    className="c0"
+    color="gray"
+    fontSize="10px"
+    fontWeight="bold"
+    htmlFor="with-both-icons"
+    style={
+      Object {
+        "animation": "eMLfYp 0.3s",
+      }
+    }
+  >
+    A Label
+  </label>
   <div
-    className="c0 c1"
+    className="c1"
     width={1}
   >
     <div
@@ -114,8 +142,8 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
       onChange={[Function]}
       style={
         Object {
-          "paddingBottom": "14px",
-          "paddingTop": "14px",
+          "paddingBottom": "8px",
+          "paddingTop": "20px",
           "transition": "padding-top 0.1s, padding-bottom 0.1s",
         }
       }
@@ -126,6 +154,144 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
     >
       <svg
         className="c3"
+        fill="currentcolor"
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+      >
+        <path
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
+        	l-8,5L4,8V6l8,5l8-5V8z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputField it renders a form field wth a label and icons 1`] = `
+.c4 {
+  margin-left: -32px;
+  margin-top: 8px;
+}
+
+.c1 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: 8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d1d6db;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 0 #d1d6db;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #687B8E;
+}
+
+.c3::-moz-placeholder {
+  color: #687B8E;
+}
+
+.c3:-ms-input-placeholder {
+  color: #687B8E;
+}
+
+.c3::placeholder {
+  color: #687B8E;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 1px #007aff;
+}
+
+<div
+  className=""
+>
+  <div
+    className="c0"
+    width={1}
+  >
+    <div
+      className="c1"
+    >
+      <svg
+        className="c2"
+        fill="currentcolor"
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+      >
+        <path
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
+        	l-8,5L4,8V6l8,5l8-5V8z"
+        />
+      </svg>
+    </div>
+    <input
+      aria-label={null}
+      className="c3"
+      id="with-both-icons"
+      onChange={[Function]}
+      style={
+        Object {
+          "paddingBottom": "14px",
+          "paddingTop": "14px",
+          "transition": "padding-top 0.1s, padding-bottom 0.1s",
+        }
+      }
+      width={1}
+    />
+    <div
+      className="c4"
+    >
+      <svg
+        className="c2"
         fill="currentcolor"
         height={24}
         viewBox="0 0 24 24"
@@ -142,18 +308,12 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
 `;
 
 exports[`InputField it renders a with a both icons 1`] = `
-.c1 {
-  margin-top: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-.c5 {
+.c4 {
   margin-left: -32px;
   margin-top: 8px;
 }
 
-.c2 {
+.c1 {
   margin-left: 8px;
   margin-right: -32px;
   margin-top: 8px;
@@ -164,19 +324,21 @@ exports[`InputField it renders a with a both icons 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c4 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -193,33 +355,34 @@ exports[`InputField it renders a with a both icons 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #687B8E;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #687B8E;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #687B8E;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #687B8E;
 }
 
-.c4::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c4:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
@@ -229,14 +392,14 @@ exports[`InputField it renders a with a both icons 1`] = `
   className=""
 >
   <div
-    className="c0 c1"
+    className="c0"
     width={1}
   >
     <div
-      className="c2"
+      className="c1"
     >
       <svg
-        className="c3"
+        className="c2"
         fill="currentcolor"
         height={24}
         viewBox="0 0 24 24"
@@ -250,7 +413,7 @@ exports[`InputField it renders a with a both icons 1`] = `
     </div>
     <input
       aria-label={null}
-      className="c4"
+      className="c3"
       id="with-both-icons"
       onChange={[Function]}
       style={
@@ -263,10 +426,10 @@ exports[`InputField it renders a with a both icons 1`] = `
       width={1}
     />
     <div
-      className="c5"
+      className="c4"
     >
       <svg
-        className="c3"
+        className="c2"
         fill="currentcolor"
         height={24}
         viewBox="0 0 24 24"
@@ -283,24 +446,20 @@ exports[`InputField it renders a with a both icons 1`] = `
 `;
 
 exports[`InputField it renders a with a conditional right side icon 1`] = `
-.c1 {
-  margin-top: 0px;
-  width: 100%;
-  text-align: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -317,32 +476,33 @@ exports[`InputField it renders a with a conditional right side icon 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 8px;
 }
 
-.c2::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #687B8E;
 }
 
-.c2::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #687B8E;
 }
 
-.c2:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #687B8E;
 }
 
-.c2::placeholder {
+.c1::placeholder {
   color: #687B8E;
 }
 
-.c2::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c2:focus {
+.c1:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
@@ -352,12 +512,12 @@ exports[`InputField it renders a with a conditional right side icon 1`] = `
   className=""
 >
   <div
-    className="c0 c1"
+    className="c0"
     width={1}
   >
     <input
       aria-label={null}
-      className="c2"
+      className="c1"
       id="with-right-icon"
       onChange={[Function]}
       style={
@@ -375,12 +535,6 @@ exports[`InputField it renders a with a conditional right side icon 1`] = `
 
 exports[`InputField it renders a with a left side icon 1`] = `
 .c1 {
-  margin-top: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-.c2 {
   margin-left: 8px;
   margin-right: -32px;
   margin-top: 8px;
@@ -391,19 +545,21 @@ exports[`InputField it renders a with a left side icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c4 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -420,32 +576,33 @@ exports[`InputField it renders a with a left side icon 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 40px;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #687B8E;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #687B8E;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #687B8E;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #687B8E;
 }
 
-.c4::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c4:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
@@ -455,14 +612,14 @@ exports[`InputField it renders a with a left side icon 1`] = `
   className=""
 >
   <div
-    className="c0 c1"
+    className="c0"
     width={1}
   >
     <div
-      className="c2"
+      className="c1"
     >
       <svg
-        className="c3"
+        className="c2"
         fill="currentcolor"
         height={24}
         viewBox="0 0 24 24"
@@ -476,7 +633,7 @@ exports[`InputField it renders a with a left side icon 1`] = `
     </div>
     <input
       aria-label={null}
-      className="c4"
+      className="c3"
       id="with-left-icon"
       onChange={[Function]}
       style={
@@ -493,13 +650,7 @@ exports[`InputField it renders a with a left side icon 1`] = `
 `;
 
 exports[`InputField it renders a with a right side icon 1`] = `
-.c1 {
-  margin-top: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-.c3 {
+.c2 {
   margin-left: -32px;
   margin-top: 8px;
 }
@@ -509,19 +660,21 @@ exports[`InputField it renders a with a right side icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c4 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -538,33 +691,34 @@ exports[`InputField it renders a with a right side icon 1`] = `
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
+  margin: 0;
   border-color: #d1d6db;
   box-shadow: 0 0 0 0 #d1d6db;
   padding-left: 8px;
   padding-right: 40px;
 }
 
-.c2::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #687B8E;
 }
 
-.c2::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #687B8E;
 }
 
-.c2:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #687B8E;
 }
 
-.c2::placeholder {
+.c1::placeholder {
   color: #687B8E;
 }
 
-.c2::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c2:focus {
+.c1:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
@@ -574,12 +728,12 @@ exports[`InputField it renders a with a right side icon 1`] = `
   className=""
 >
   <div
-    className="c0 c1"
+    className="c0"
     width={1}
   >
     <input
       aria-label={null}
-      className="c2"
+      className="c1"
       id="with-right-icon"
       onChange={[Function]}
       style={
@@ -592,10 +746,10 @@ exports[`InputField it renders a with a right side icon 1`] = `
       width={1}
     />
     <div
-      className="c3"
+      className="c2"
     >
       <svg
-        className="c4"
+        className="c3"
         fill="currentcolor"
         height={24}
         viewBox="0 0 24 24"

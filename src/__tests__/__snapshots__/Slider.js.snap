@@ -67,7 +67,6 @@ exports[`Slider renders 1`] = `
   onFocus={[Function]}
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  onMouseUp={[Function]}
   onTouchStart={[Function]}
   style={undefined}
 >
@@ -80,7 +79,6 @@ exports[`Slider renders 1`] = `
     style={
       Object {
         "left": "0%",
-        "visibility": "visible",
         "width": "0%",
       }
     }
@@ -100,7 +98,7 @@ exports[`Slider renders 1`] = `
         "left": "0%",
       }
     }
-    tabIndex="0"
+    tabIndex={0}
   />
   <div
     aria-disabled={false}
@@ -114,7 +112,7 @@ exports[`Slider renders 1`] = `
         "left": "0%",
       }
     }
-    tabIndex="0"
+    tabIndex={0}
   />
   <div
     className="rc-slider-mark"

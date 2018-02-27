@@ -4,7 +4,7 @@ import { Icon } from '..'
 import icons from '../../icons.json'
 
 const keys = Object.keys(icons).filter(name => name !== 'legacy')
-const oldIcons = ['scrollLeft', 'chevronLight', 'chevronThick']
+const oldIcons = ['moon', 'amenityWifi', 'chevronDownThick']
 
 describe('Icon', () => {
   keys.forEach(name => {
@@ -47,6 +47,14 @@ describe('Icon', () => {
     // We expect one propType warning.
     expect(console.error.mock.calls.length).toBe(1)
     expect(icon).toBe(null)
-    jest.mock
+  })
+
+  test('Setting a deprecated icon name should throw a warning', () => {
+    console.warn = jest.genMockFunction()
+    const icon = renderer.create(<Icon name="description" />).toJSON()
+
+    // We expect one propType warning.
+    expect(console.warn.mock.calls.length).toBe(1)
+    expect(icon).not.toBe(null)
   })
 })
