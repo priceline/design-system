@@ -4,36 +4,6 @@ import styled from 'styled-components'
 import { space, fontSize, color } from 'styled-system'
 import theme from './theme'
 
-const getColorCombination = props => {
-  const StampColors = {
-    gray: {
-      backgroundColor: props.theme.colors.lightGray,
-      color: props.theme.colors.gray
-    },
-    blue: {
-      backgroundColor: props.theme.colors.lightGray,
-      color: props.theme.colors.blue
-    },
-    green: {
-      backgroundColor: props.theme.colors.lightGray,
-      color: props.theme.colors.green
-    },
-    red: {
-      backgroundColor: props.theme.colors.lightGray,
-      color: props.theme.colors.red
-    },
-    orange: {
-      backgroundColor: props.theme.colors.lightGray,
-      color: props.theme.colors.orange
-    },
-    purple: {
-      backgroundColor: props.theme.colors.lightGray,
-      color: props.theme.colors.purple
-    }
-  }
-  return StampColors[props.color]
-}
-
 const Stamp = styled.div`
   display: inline-flex;
   align-items: center;
