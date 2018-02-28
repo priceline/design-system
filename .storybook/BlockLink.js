@@ -1,6 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import styled from 'styled-components'
 import { BackgroundImage, BlockLink, Box, Flex, Text } from '../src'
 
 const image =
