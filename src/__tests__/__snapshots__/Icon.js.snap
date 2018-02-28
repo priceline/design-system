@@ -1398,6 +1398,27 @@ exports[`Icon flights renders 1`] = `
 </svg>
 `;
 
+exports[`Icon freeCancellation renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23,12h-3c0,4.4-3.6,8-8,8c-1.6,0-3-0.5-4.3-1.2l1.5-1.5C10,17.8,11,18,12,18c3.3,0,6-2.7,6-6h-3l4-4L23,12z M6,12
+  	c0-3.3,2.7-6,6-6c1,0,2,0.2,2.8,0.7l1.5-1.5C15,4.5,13.6,4,12,4c-4.4,0-8,3.6-8,8H1l4,4l4-4H6z"
+  />
+</svg>
+`;
+
 exports[`Icon fridge renders 1`] = `
 .c0 {
   -webkit-flex: none;
@@ -1985,6 +2006,26 @@ exports[`Icon map renders 1`] = `
   <path
     d="M20.5,3h-0.2L15,5.1L9,3L3.4,4.9C3.2,5,3,5.2,3,5.4v15.1C3,20.8,3.2,21,3.5,21h0.2L9,18.9l6,2.1
   	l5.6-1.9c0.2-0.1,0.4-0.2,0.4-0.5V3.5C21,3.2,20.8,3,20.5,3z M15,19l-6-2.1V5l6,2.1V19z"
+  />
+</svg>
+`;
+
+exports[`Icon menu renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3,13h18v-2H3V13z M3,18h18v-2H3V18z M3,6v2h18V6H3z"
   />
 </svg>
 `;
