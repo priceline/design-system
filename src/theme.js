@@ -63,36 +63,6 @@ const lightPurple = '#ecf'
 const purple = '#70b' // secondary
 const darkPurple = '#407'
 
-// tints
-const flatten = (name, colors) =>
-  colors.reduce((a, b, i) => {
-    const color = {
-      [name + i]: {
-        enumerable: true,
-        get() {
-          console.warn(
-            `Priceline Design System Warning: Using numbered colors like ${[
-              name + i
-            ]} will be deprecated in the next theme. Use light${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)}, ${name} or dark${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)} instead.`
-          )
-          return b
-        }
-      }
-    }
-    return { ...a, ...color }
-  }, {})
-
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [lightGray, lightGray, gray, gray]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
-
 const colors = {
   black,
   white,
@@ -115,22 +85,8 @@ const colors = {
   darkOrange,
   purple,
   lightPurple,
-  darkPurple,
-  blues,
-  greens,
-  reds,
-  oranges,
-  purples
+  darkPurple
 }
-
-Object.defineProperties(colors, {
-  ...flatten('blue', blues),
-  ...flatten('gray', grays),
-  ...flatten('green', greens),
-  ...flatten('red', reds),
-  ...flatten('orange', oranges),
-  ...flatten('purple', purples)
-})
 
 export { colors }
 
