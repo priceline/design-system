@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { Box, Flex, Text, theme, legacyTheme } from '../src'
+import { Box, Flex, Text, theme } from '../src'
 
 const Deprecated = styled.div`
   position: absolute;
@@ -24,8 +24,8 @@ const keys = Object.keys(theme.colors).filter(
 
 const next = keys.map(key => ({ key, value: theme.colors[key] }))
 
-const legacy = Object.keys(legacyTheme.colors)
-  .map(key => ({ key, value: legacyTheme.colors[key] }))
+const legacy = Object.keys(theme.colors)
+  .map(key => ({ key, value: theme.colors[key] }))
   .filter(color => !Array.isArray(color.value))
 
 const Chip = props =>
@@ -61,7 +61,7 @@ const Comparison = ({ keys }) => (
           <Card name={key} color={theme.colors[key]} />
         </Box>
         <Box w={1 / 2}>
-          <Card name={key} color={legacyTheme.colors[key]} />
+          <Card name={key} color={theme.colors[key]} />
         </Box>
       </Flex>
     ))}
