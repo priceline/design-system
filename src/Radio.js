@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import Icon from './Icon'
-import Text from './Text'
 
 const propTypes = {
   checked: PropTypes.bool,
