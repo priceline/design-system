@@ -3,8 +3,9 @@
 exports[`Heading Heading component using <Text> component properties 1`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
+  line-height: 1.25;
   margin: 0px;
   color: #687B8E;
 }
@@ -20,7 +21,8 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
 exports[`Heading Heading component with default theme font size, when "fontSize" prop not used 1`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -34,7 +36,8 @@ exports[`Heading Heading component with default theme font size, when "fontSize"
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -48,7 +51,8 @@ exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -62,7 +66,8 @@ exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -76,7 +81,8 @@ exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -90,7 +96,8 @@ exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -104,7 +111,8 @@ exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -118,7 +126,8 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 exports[`Heading renders 1`] = `
 .c0 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 

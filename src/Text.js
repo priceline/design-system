@@ -4,6 +4,7 @@ import {
   fontSize,
   fontWeight,
   textAlign,
+  lineHeight,
   space,
   color,
   propTypes
@@ -27,6 +28,7 @@ const Text = styled.div`
   ${fontSize}
   ${fontWeight}
   ${textAlign}
+  ${lineHeight}
   ${space}
   ${color}
   ${caps}
@@ -40,6 +42,7 @@ Text.propTypes = {
   ...propTypes.fontSize,
   ...propTypes.fontWeight,
   ...propTypes.textAlign,
+  ...propTypes.lineHeight,
   ...propTypes.space,
   ...propTypes.color,
   caps: PropTypes.bool,

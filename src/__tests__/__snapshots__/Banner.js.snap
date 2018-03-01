@@ -27,7 +27,8 @@ exports[`Banner only accepts preset colors 1`] = `
 
 .c2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -96,7 +97,8 @@ exports[`Banner renders content from children props 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -179,7 +181,8 @@ exports[`Banner renders with blue bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -259,7 +262,8 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -339,7 +343,8 @@ exports[`Banner renders with green bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -419,7 +424,8 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -499,7 +505,8 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -579,7 +586,8 @@ exports[`Banner renders with lightOrange bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -659,7 +667,8 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -739,7 +748,8 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -819,7 +829,8 @@ exports[`Banner renders with orange bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -899,7 +910,8 @@ exports[`Banner renders with red bg 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -979,7 +991,8 @@ exports[`Banner renders with text node 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
@@ -1067,7 +1080,8 @@ exports[`Banner renders with text string 1`] = `
 
 .c4 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
 }
 
