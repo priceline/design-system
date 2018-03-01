@@ -3,7 +3,11 @@ node_js:
   - 8
 after_success:
   - npm run codecov
+before_deploy:
   - npm run storybook
+  - cd docs
+  - npm install
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
