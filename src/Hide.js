@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Box from './Box'
 import theme from './theme'
 
-const getMaxWidth = em => em - 0.01
+const getMaxWidth = em => parseInt(em) - 0.01
 
 const breakpoints = props => ({
   xs: `@media screen and (max-width: ${getMaxWidth(
@@ -11,14 +11,14 @@ const breakpoints = props => ({
   )}em)`,
   sm: `@media screen and (min-width: ${
     props.theme.breakpoints[0]
-  }em) and (max-width: ${getMaxWidth(props.theme.breakpoints[1])}em)`,
+  }) and (max-width: ${getMaxWidth(props.theme.breakpoints[1])}em)`,
   md: `@media screen and (min-width: ${
     props.theme.breakpoints[1]
-  }em) and (max-width: ${getMaxWidth(props.theme.breakpoints[2])}em)`,
+  }) and (max-width: ${getMaxWidth(props.theme.breakpoints[2])}em)`,
   lg: `@media screen and (min-width: ${
     props.theme.breakpoints[2]
-  }em) and (max-width: ${getMaxWidth(props.theme.breakpoints[3])}em)`,
-  xl: `@media screen and (min-width: ${props.theme.breakpoints[3]}em)`
+  }) and (max-width: ${getMaxWidth(props.theme.breakpoints[3])}em)`,
+  xl: `@media screen and (min-width: ${props.theme.breakpoints[3]})`
 })
 
 const hidden = key => props =>
@@ -32,8 +32,8 @@ const hidden = key => props =>
 
 const Hide = styled(Box)`
   ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')} ${hidden(
-      'xl'
-    )};
+  'xl'
+)};
 `
 
 Hide.propTypes = {

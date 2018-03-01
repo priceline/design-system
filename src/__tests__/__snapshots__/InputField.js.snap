@@ -29,6 +29,8 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
+  height: 24px;
 }
 
 .c4 {
@@ -194,6 +196,8 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
+  height: 24px;
 }
 
 .c3 {
@@ -328,6 +332,8 @@ exports[`InputField it renders a with a both icons 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
+  height: 24px;
 }
 
 .c3 {
@@ -545,6 +551,8 @@ exports[`InputField it renders a with a left side icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
+  height: 24px;
 }
 
 .c3 {
@@ -658,6 +666,8 @@ exports[`InputField it renders a with a right side icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
+  height: 24px;
 }
 
 .c1 {
