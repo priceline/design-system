@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { color, theme, propTypes } from 'styled-system'
+import { color, themeGet, propTypes } from 'styled-system'
 import Flex from './Flex'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const darkBorderColor = props => {
-  const darkColor = theme(`colors.dark${capitalize(props.color)}`)(props)
+  const darkColor = themeGet(`colors.dark${capitalize(props.color)}`)(props)
   return {
     borderTopColor: darkColor,
     borderRightColor: darkColor
@@ -32,8 +32,8 @@ const FlagRight = styled('div')`
   flex: none;
   min-height: 32px;
   margin-left: -10px;
-  background-color: ${props => theme(`colors.${props.color}`)(props)};
-  border-radius: ${theme('radius')};
+  background-color: ${props => themeGet(`colors.${props.color}`)(props)};
+  border-radius: ${themeGet('radius')};
   /* for 32 x 8 triangle */
   transform: skew(-14deg);
 `
@@ -46,12 +46,12 @@ const flexAuto = props =>
     : null
 
 const FlagBody = styled('div')`
-  font-size: ${theme('fontSizes.0')}px;
+  font-size: ${themeGet('fontSizes.0')}px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
-  border-radius: 0 0 ${theme('radius')} 0;
+  border-radius: 0 0 ${themeGet('radius')} 0;
   ${flexAuto} ${color};
 `
 

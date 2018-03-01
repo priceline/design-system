@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { space, theme, propTypes } from 'styled-system'
+import { space, themeGet, propTypes } from 'styled-system'
 import PropTypes from 'prop-types'
 import defaultTheme from './theme'
 
@@ -22,12 +22,12 @@ const Input = styled.input`
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: ${theme('fontSizes.1')}px;
+  font-size: ${themeGet('fontSizes.1')}px;
   background-color: transparent;
-  border-radius: ${theme('radius')};
+  border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${theme('colors.borderGray')};
+  border-color: ${themeGet('colors.borderGray')};
 
   padding-top: 14px;
   padding-bottom: 14px;
@@ -37,7 +37,7 @@ const Input = styled.input`
   margin: 0;
 
   ::placeholder {
-    color: ${theme('colors.gray')};
+    color: ${themeGet('colors.gray')};
   }
 
   ::-ms-clear {
