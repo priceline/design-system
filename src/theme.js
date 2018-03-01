@@ -1,4 +1,4 @@
-const createMediaQuery = n => `@media screen and (min-width:${n}em)`
+const createMediaQuery = n => `@media screen and (min-width:${n})`
 
 const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
@@ -10,7 +10,7 @@ const addAliases = (arr, aliases) =>
     })
   )
 
-export const breakpoints = [32, 40, 48, 64]
+export const breakpoints = [32, 40, 48, 64].map(n => n + 'em')
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 

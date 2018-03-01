@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import theme from './theme'
 
 const Box = styled.div`
-  ${space} ${width} ${color} ${textAlign};
+  ${space} ${width} ${color} ${textAlign}
 `
 
 Box.displayName = 'Box'
@@ -13,34 +13,10 @@ Box.defaultProps = {
   theme: theme
 }
 
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
-
 Box.propTypes = {
-  color: PropTypes.string,
-  bg: PropTypes.string,
-  width: numberStringOrArray,
-  w: numberStringOrArray,
-  /** Margin */
-  m: numberStringOrArray,
-  mt: numberStringOrArray,
-  mr: numberStringOrArray,
-  mb: numberStringOrArray,
-  ml: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray,
-  /** Padding */
-  p: numberStringOrArray,
-  pt: numberStringOrArray,
-  pr: numberStringOrArray,
-  pb: numberStringOrArray,
-  pl: numberStringOrArray,
-  px: numberStringOrArray,
-  py: numberStringOrArray,
-  // deprecated
+  ...space.propTypes,
+  ...width.propTypes,
+  ...color.propTypes,
   ...textAlign.propTypes
 }
 
