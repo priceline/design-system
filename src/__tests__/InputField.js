@@ -82,6 +82,7 @@ describe('InputField', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
   })
+
   test('it always renders a label when `alwaysShowLabel` is true', () => {
     const json = renderer
       .create(
@@ -95,6 +96,7 @@ describe('InputField', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
   })
+
   test("it calls the `onChange` handler passed into `InputField` when the child `Input` component's value updates", () => {
     const mockChange = jest.fn()
     const test = mount(

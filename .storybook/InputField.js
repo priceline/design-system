@@ -87,7 +87,6 @@ storiesOf('InputField', module)
             </InputField>
           </Box>
         </Flex>
-
         <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
@@ -133,7 +132,6 @@ storiesOf('InputField', module)
       </div>
     ))
   )
-
   .add(
     'State Flow',
     withInfo(
