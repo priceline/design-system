@@ -40,7 +40,8 @@ const Base = ({ name, size, legacy, ...props }) => {
   if (!icon) return false
 
   return (
-    <svg
+    <Tag
+      is="svg"
       {...props}
       viewBox={icon.viewBox}
       width={size}
@@ -48,7 +49,7 @@ const Base = ({ name, size, legacy, ...props }) => {
       fill="currentcolor"
     >
       <path d={icon.path} />
-    </svg>
+    </Tag>
   )
 }
 
