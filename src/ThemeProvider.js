@@ -13,7 +13,8 @@ injectGlobal`body {
 
 export const Base = styled.div`
   font-family: ${props => props.theme.font};
-  line-height: 1.4;
+  line-height: ${props => props.theme.lineHeights.standard};
+  font-weight: ${props => props.theme.fontWeights.medium};
 
   * {
     box-sizing: border-box;

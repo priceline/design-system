@@ -23,7 +23,7 @@ export const space = [0, 4, 8, 16, 32, 64, 128]
 
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 40, 56, 72]
 
 export const medium = 500
 export const bold = 700
@@ -36,6 +36,11 @@ export const fontWeights = {
   bold,
   // alias
   regular
+}
+
+export const lineHeights = {
+  standard: 1.5,
+  display: 1.25
 }
 
 // color palette
@@ -154,6 +159,7 @@ const theme = {
   font,
   fontSizes,
   fontWeights,
+  lineHeights,
   regular,
   bold,
   colors,
