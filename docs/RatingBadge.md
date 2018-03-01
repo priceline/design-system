@@ -1,9 +1,9 @@
 
-# `<RatingBadge />`
+# RatingBadge
 
 Used in the hotel listing for guest ratings.
 
-```jsx
+```.jsx
 <RatingBadge>
   9.0
 </RatingBadge>
