@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, color } from 'styled-system'
+import { space, size, color } from 'styled-system'
 import Tag from 'clean-tag'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
@@ -35,19 +35,12 @@ const getPath = ({ name, legacy }) => {
   return icons.legacy[name] || icons[name] || icons[aliases[name]]
 }
 
-const Base = ({ name, size, legacy, ...props }) => {
+const Base = ({ name, legacy, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
   return (
-    <Tag
-      is="svg"
-      {...props}
-      viewBox={icon.viewBox}
-      width={size}
-      height={size}
-      fill="currentcolor"
-    >
+    <Tag is="svg" {...props} viewBox={icon.viewBox} fill="currentcolor">
       <path d={icon.path} />
     </Tag>
   )
@@ -55,7 +48,7 @@ const Base = ({ name, size, legacy, ...props }) => {
 
 const Icon = styled(Base)`
   flex: none;
-  ${space} ${color};
+  ${space} ${size} ${color};
 `
 
 Icon.displayName = 'Icon'
