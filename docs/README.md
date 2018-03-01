@@ -30,7 +30,7 @@ To build the docs site for production, run:
 npm run build
 ```
 
-This will generate a static site in the `site/` folder.
+This will generate a static site in the `.site/` folder.
 
 To build the site for testing locally, run:
 
@@ -38,8 +38,13 @@ To build the site for testing locally, run:
 npm run dev-build
 ```
 
-Then run a local server in the `docs/` folder.
-The site should be available at `http://localhost:8000/site`, where `8000` is the port for your local server.
+Then run a local server in the root folder.
+
+```sh
+python -m SimpleHTTPServer
+```
+
+The site should be available at `http://localhost:8000/.site`, where `8000` is the port for your local server.
 
 ## Developing
 
