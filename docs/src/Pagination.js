@@ -1,14 +1,5 @@
 import React from 'react'
-import {
-  Flex,
-  Box,
-  Button,
-  Card,
-  OutlineButton,
-  Icon,
-  Text,
-  colors
-} from 'pcln-design-system'
+import { Flex, Box, Icon, Text } from 'pcln-design-system'
 import Link from './Link'
 
 const Pagination = ({ index, pages }) => {
@@ -30,7 +21,6 @@ const Pagination = ({ index, pages }) => {
             name="chevronLeft"
             size={48}
             color="blue"
-            legacy={false}
             mr={2}
             style={{
               verticalAlign: 'middle'
@@ -65,7 +55,6 @@ const Pagination = ({ index, pages }) => {
             name="chevronRight"
             size={48}
             color="blue"
-            legacy={false}
             ml={2}
             style={{
               verticalAlign: 'middle'

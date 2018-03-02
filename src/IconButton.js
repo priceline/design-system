@@ -15,9 +15,9 @@ const TransparentButton = styled(Button)`
   }
 `
 
-const IconButton = ({ name, size, legacy, color, ...props }) => (
+const IconButton = ({ name, size, color, ...props }) => (
   <TransparentButton {...props}>
-    <Icon name={name} size={size} color={color} legacy={legacy} />
+    <Icon name={name} size={size} color={color} />
   </TransparentButton>
 )
 
