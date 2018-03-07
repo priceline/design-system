@@ -1,12 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner only accepts preset colors 1`] = `
-.c1 {
+exports[`Banner accepts non-preset colors 1`] = `
+.c2 {
   width: 100%;
   text-align: left;
 }
 
 .c0 {
+  background-color: #687B8E;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,32 +25,32 @@ exports[`Banner only accepts preset colors 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   font-size: 16px;
   margin: 0px;
 }
 
 <div
-  className=""
+  className="c0"
   color={undefined}
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
       width={1}
     >
       <h5
-        className="c2"
+        className="c3"
         fontSize={2}
       />
       <span
-        className="c3"
+        className="c4"
         fontSize={1}
       />
     </div>

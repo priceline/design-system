@@ -3,13 +3,11 @@
 exports[`Link renders 1`] = `
 .c0 {
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: #007aff;
 }
 
 .c0:hover {
-  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 

@@ -55,7 +55,11 @@ const Banner = props => {
   const icon = props.iconName || bannerColor.icon
 
   return (
-    <Box {...props} bg={bannerColor.backgroundColor} color={bannerColor.color}>
+    <Box
+      {...props}
+      bg={bannerColor.backgroundColor || props.bg}
+      color={bannerColor.color || props.color}
+    >
       <Flex justify="space-between" align="flex-start">
         {!!icon &&
           !!props.showIcon && <Icon name={icon} mr={3} size={24} mt="-2px" />}
