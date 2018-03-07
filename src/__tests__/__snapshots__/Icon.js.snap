@@ -1805,6 +1805,26 @@ exports[`Icon lateNight renders 1`] = `
 </svg>
 `;
 
+exports[`Icon legacy renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox={undefined}
+  width={24}
+>
+  <path
+    d={undefined}
+  />
+</svg>
+`;
+
 exports[`Icon list renders 1`] = `
 .c0 {
   -webkit-flex: none;
