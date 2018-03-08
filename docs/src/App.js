@@ -75,7 +75,7 @@ class App extends React.Component {
           <link
             key="webfont"
             rel="stylesheet"
-            href="http://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono"
+            href="//fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono"
           />
         </head>
         <ThemeProvider key="main">
