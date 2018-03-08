@@ -9,7 +9,7 @@
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
     "deploy": "storybook-to-ghpages",
-    "storybook": "build-storybook -c .storybook -o .site",
+    "storybook": "build-storybook -c .storybook -o .site/storybook",
     "coverage": "jest --coverage",
     "codecov": "jest && codecov",
     "standard": "standard",
