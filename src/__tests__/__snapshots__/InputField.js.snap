@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1`] = `
+.c2 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: -12px;
+}
+
+.c5 {
+  margin-left: -32px;
+  margin-top: -12px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,17 +29,6 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c2 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: -12px;
-}
-
-.c5 {
-  margin-left: -32px;
-  margin-top: -12px;
 }
 
 .c4 {
@@ -170,6 +170,17 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
 `;
 
 exports[`InputField it renders a form field wth a label and icons 1`] = `
+.c4 {
+  margin-left: -32px;
+  margin-top: 8px;
+}
+
+.c1 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -187,17 +198,6 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c4 {
-  margin-left: -32px;
-  margin-top: 8px;
-}
-
-.c1 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: 8px;
 }
 
 .c3 {
@@ -308,6 +308,17 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
 `;
 
 exports[`InputField it renders a with a both icons 1`] = `
+.c4 {
+  margin-left: -32px;
+  margin-top: 8px;
+}
+
+.c1 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -325,17 +336,6 @@ exports[`InputField it renders a with a both icons 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c4 {
-  margin-left: -32px;
-  margin-top: 8px;
-}
-
-.c1 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: 8px;
 }
 
 .c3 {
@@ -534,6 +534,12 @@ exports[`InputField it renders a with a conditional right side icon 1`] = `
 `;
 
 exports[`InputField it renders a with a left side icon 1`] = `
+.c1 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -551,12 +557,6 @@ exports[`InputField it renders a with a left side icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c1 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: 8px;
 }
 
 .c3 {
@@ -650,6 +650,11 @@ exports[`InputField it renders a with a left side icon 1`] = `
 `;
 
 exports[`InputField it renders a with a right side icon 1`] = `
+.c2 {
+  margin-left: -32px;
+  margin-top: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -667,11 +672,6 @@ exports[`InputField it renders a with a right side icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c2 {
-  margin-left: -32px;
-  margin-top: 8px;
 }
 
 .c1 {

@@ -16,7 +16,7 @@ exports[`InputGroup renders 1`] = `
   border-color: #d1d6db;
 }
 
-.c0 > .sc-cSHVUG {
+.c0 > .sc-htpNat {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;

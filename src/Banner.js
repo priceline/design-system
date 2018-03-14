@@ -1,4 +1,5 @@
 import React from 'react'
+import Box from './Box'
 import Flex from './Flex'
 import Text from './Text'
 import Icon from './Icon'
@@ -54,7 +55,7 @@ const Banner = props => {
   const icon = props.iconName || bannerColor.icon
 
   return (
-    <Text
+    <Box
       {...props}
       bg={bannerColor.backgroundColor || props.bg}
       color={bannerColor.color || props.color}
@@ -62,22 +63,24 @@ const Banner = props => {
       <Flex justify="space-between" align="flex-start">
         {!!icon &&
           !!props.showIcon && <Icon name={icon} mr={2} size={24} mt="-2px" />}
-        <Text width={1} align={props.textAlign}>
-          <Heading.h5>{props.header}</Heading.h5>
-          <Text.span fontSize={1}>{props.text}</Text.span>
-          {props.children}
-        </Text>
+        <Box w={1}>
+          <Text align={props.textAlign}>
+            <Heading.h5>{props.header}</Heading.h5>
+            <Text.span fontSize={1}>{props.text}</Text.span>
+            {props.children}
+          </Text>
+        </Box>
         {!!props.onClose && (
           <CloseButton
             onClick={props.onClose}
             ml={2}
-            size={14}
-            mt={1}
+            size={24}
             title="close"
+            mt="-2px"
           />
         )}
       </Flex>
-    </Text>
+    </Box>
   )
 }
 
