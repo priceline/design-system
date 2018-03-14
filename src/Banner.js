@@ -55,7 +55,7 @@ const Banner = props => {
   const icon = props.iconName || bannerColor.icon
 
   return (
-    <Box
+    <Text
       {...props}
       bg={bannerColor.backgroundColor || props.bg}
       color={bannerColor.color || props.color}
@@ -78,7 +78,7 @@ const Banner = props => {
           />
         )}
       </Flex>
-    </Box>
+    </Text>
   )
 }
 

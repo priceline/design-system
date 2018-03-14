@@ -6,10 +6,6 @@ exports[`Banner accepts non-preset colors 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #687B8E;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,6 +19,10 @@ exports[`Banner accepts non-preset colors 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #687B8E;
 }
 
 .c4 {
@@ -59,11 +59,6 @@ exports[`Banner accepts non-preset colors 1`] = `
 `;
 
 exports[`Banner renders content from children props 1`] = `
-.c0 {
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c3 {
   width: 100%;
   text-align: left;
@@ -82,6 +77,11 @@ exports[`Banner renders content from children props 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c5 {
@@ -145,11 +145,6 @@ exports[`Banner renders with blue bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #007aff;
-  color: #fff;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -163,6 +158,11 @@ exports[`Banner renders with blue bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c5 {
@@ -218,11 +218,6 @@ exports[`Banner renders with blue bg 1`] = `
 `;
 
 exports[`Banner renders with custom iconName and size 1`] = `
-.c0 {
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c3 {
   width: 100%;
   text-align: left;
@@ -241,6 +236,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c5 {
@@ -296,11 +296,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
 `;
 
 exports[`Banner renders with green bg 1`] = `
-.c0 {
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c3 {
   width: 100%;
   text-align: left;
@@ -319,6 +314,11 @@ exports[`Banner renders with green bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c5 {
@@ -379,11 +379,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #cdf;
-  color: #049;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -397,6 +392,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #cdf;
+  color: #049;
 }
 
 .c5 {
@@ -457,11 +457,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #cec;
-  color: #060;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -475,6 +470,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #cec;
+  color: #060;
 }
 
 .c5 {
@@ -535,11 +535,6 @@ exports[`Banner renders with lightOrange bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #feb;
-  color: #a50;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -553,6 +548,11 @@ exports[`Banner renders with lightOrange bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #feb;
+  color: #a50;
 }
 
 .c5 {
@@ -613,11 +613,6 @@ exports[`Banner renders with lightRed bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #fcc;
-  color: #800;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -631,6 +626,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #fcc;
+  color: #800;
 }
 
 .c5 {
@@ -686,11 +686,6 @@ exports[`Banner renders with lightRed bg 1`] = `
 `;
 
 exports[`Banner renders with no props other than theme 1`] = `
-.c0 {
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c3 {
   width: 100%;
   text-align: left;
@@ -709,6 +704,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c5 {
@@ -769,11 +769,6 @@ exports[`Banner renders with orange bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #fa0;
-  color: #fff;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -787,6 +782,11 @@ exports[`Banner renders with orange bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #fa0;
+  color: #fff;
 }
 
 .c5 {
@@ -847,11 +847,6 @@ exports[`Banner renders with red bg 1`] = `
   text-align: left;
 }
 
-.c0 {
-  background-color: #c00;
-  color: #fff;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -865,6 +860,11 @@ exports[`Banner renders with red bg 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #c00;
+  color: #fff;
 }
 
 .c5 {
@@ -920,11 +920,6 @@ exports[`Banner renders with red bg 1`] = `
 `;
 
 exports[`Banner renders with text node 1`] = `
-.c0 {
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c3 {
   width: 100%;
   text-align: left;
@@ -943,6 +938,11 @@ exports[`Banner renders with text node 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c5 {
@@ -1006,11 +1006,6 @@ exports[`Banner renders with text node 1`] = `
 `;
 
 exports[`Banner renders with text string 1`] = `
-.c0 {
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c3 {
   width: 100%;
   text-align: left;
@@ -1029,6 +1024,11 @@ exports[`Banner renders with text string 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c0 {
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c5 {
