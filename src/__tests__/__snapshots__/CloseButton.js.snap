@@ -48,6 +48,11 @@ exports[`CloseButton renders without props 1`] = `
 
 <button
   className="c0 c1"
+  style={
+    Object {
+      "height": "24px",
+    }
+  }
   title="close"
 >
   <svg

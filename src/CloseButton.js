@@ -3,7 +3,12 @@ import IconButton from './IconButton'
 import PropTypes from 'prop-types'
 
 const CloseButton = props => (
-  <IconButton {...props} legacy={false} name="close" />
+  <IconButton
+    {...props}
+    style={{ height: `${props.size}px` }}
+    legacy={false}
+    name="close"
+  />
 )
 
 CloseButton.defaultProps = {
