@@ -6,9 +6,9 @@ exports[`Flag renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8px;
-  margin-left: -8px;
-  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: -16px;
+  margin-right: 32px;
 }
 
 .c1 {
@@ -74,9 +74,9 @@ exports[`Flag renders with width prop 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8px;
-  margin-left: -8px;
-  margin-right: 16px;
+  margin-bottom: 16px;
+  margin-left: -16px;
+  margin-right: 32px;
   width: 256px;
 }
 
