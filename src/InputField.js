@@ -128,7 +128,7 @@ class InputField extends React.Component {
           {React.cloneElement(InputChild, {
             'aria-label':
               !showLabel && inputPlaceholder ? inputPlaceholder : null,
-            mt: showLabel && -20,
+            mt: showLabel ? -20 : 0,
             pl: BeforeIcon ? 40 : 2,
             pr: AfterIcon && 40,
             style: getInputStyles(showLabel),
