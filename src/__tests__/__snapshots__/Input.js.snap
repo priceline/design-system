@@ -11,7 +11,7 @@ exports[`Input it renders 1`] = `
   font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: #d1d6db;
   padding-top: 14px;
@@ -20,7 +20,7 @@ exports[`Input it renders 1`] = `
   padding-right: 12px;
   margin: 0;
   border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 1px #d1d6db;
 }
 
 .c0::-webkit-input-placeholder {
@@ -46,7 +46,7 @@ exports[`Input it renders 1`] = `
 .c0:focus {
   outline: 0;
   border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  box-shadow: 0 0 0 2px #007aff;
 }
 
 <input
@@ -65,7 +65,7 @@ exports[`Input it renders an input element with a really large padding and margi
   font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: #d1d6db;
   padding-top: 14px;
@@ -74,7 +74,7 @@ exports[`Input it renders an input element with a really large padding and margi
   padding-right: 12px;
   margin: 0;
   border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 1px #d1d6db;
   margin: 32px;
   padding: 32px;
 }
@@ -102,7 +102,7 @@ exports[`Input it renders an input element with a really large padding and margi
 .c0:focus {
   outline: 0;
   border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  box-shadow: 0 0 0 2px #007aff;
 }
 
 <input
@@ -121,7 +121,7 @@ exports[`Input it renders an input element with a red border with a color prop i
   font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: #d1d6db;
   padding-top: 14px;
@@ -130,7 +130,7 @@ exports[`Input it renders an input element with a red border with a color prop i
   padding-right: 12px;
   margin: 0;
   border-color: #c00;
-  box-shadow: 0 0 0 0 #c00;
+  box-shadow: 0 0 0 1px #c00;
 }
 
 .c0::-webkit-input-placeholder {
@@ -156,7 +156,7 @@ exports[`Input it renders an input element with a red border with a color prop i
 .c0:focus {
   outline: 0;
   border-color: #c00;
-  box-shadow: 0 0 0 1px #c00;
+  box-shadow: 0 0 0 2px #c00;
 }
 
 <input
@@ -176,7 +176,7 @@ exports[`Input it renders an input element with large text 1`] = `
   font-size: 14px;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: #d1d6db;
   padding-top: 14px;
@@ -185,7 +185,7 @@ exports[`Input it renders an input element with large text 1`] = `
   padding-right: 12px;
   margin: 0;
   border-color: #d1d6db;
-  box-shadow: 0 0 0 0 #d1d6db;
+  box-shadow: 0 0 0 1px #d1d6db;
 }
 
 .c0::-webkit-input-placeholder {
@@ -211,7 +211,7 @@ exports[`Input it renders an input element with large text 1`] = `
 .c0:focus {
   outline: 0;
   border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  box-shadow: 0 0 0 2px #007aff;
 }
 
 <input
