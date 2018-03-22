@@ -49,13 +49,13 @@ class InputField extends React.Component {
     })
 
     this.state = {
-      showLabel: hasInitialValue
+      hasInputValue: hasInitialValue
     }
   }
 
   onInputChange = event => {
     this.setState({
-      showLabel: event.target.value
+      hasInputValue: !!event.target.value
     })
 
     this.props.onChange(event)
@@ -108,7 +108,7 @@ class InputField extends React.Component {
     }
 
     const showLabel =
-      this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
+      LabelChild && (!this.props.autoHide || this.state.hasInputValue)
 
     return (
       <Box>
@@ -152,7 +152,7 @@ class InputField extends React.Component {
 
 InputField.propTypes = {
   onChange: PropTypes.func.isRequired,
-  alwaysShowLabel: PropTypes.bool,
+  autoHide: PropTypes.bool,
   children: function(props, propName, componentName) {
     const prop = props[propName]
     let inputCount = 0
