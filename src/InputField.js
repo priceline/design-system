@@ -115,7 +115,7 @@ class InputField extends React.Component {
         {showLabel &&
           React.cloneElement(LabelChild, {
             pl: BeforeIcon ? 40 : 2,
-            mt: '5px',
+            mt: '6px',
             style: labelStyles,
             htmlFor: inputId
           })}
