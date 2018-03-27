@@ -38,6 +38,7 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 - [`<Badge />`](docs/Badge.md)
 - [`<Banner />`](docs/Banner.md)
 - [`<Box />`](docs/Box.md)
+- [`<BlockLink />`](docs/BlockLink.md)
 - [`<Button />`](docs/Button.md)
 - [`<Card />`](docs/Card.md)
 - [`<Flag />`](docs/Flag.md)
