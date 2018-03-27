@@ -63,6 +63,7 @@
     "react-chromatic": "^0.7.10",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
+    "recompose": "^0.26.0",
     "standard": "^10.0.2",
     "stylis": "^3.4.9",
     "svgi": "^1.1.0"
@@ -81,6 +82,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
+    "rc-slider": "^8.5.0",
     "styled-components": "^2.1.1",
     "styled-system": "^1.0.8"
   },
