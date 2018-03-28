@@ -209,7 +209,6 @@ class InputFieldWithController extends React.PureComponent {
   render() {
     return (
       <InputField
-        onChange={this.onChange}
         color={this.getBorderColor()}
         info={
           !this.state.isValid && this.state.isDirty
@@ -225,6 +224,7 @@ class InputFieldWithController extends React.PureComponent {
           id="form-field"
           value={this.state.value}
           placeholder="Enter a 5 letter word"
+          onChange={this.onChange}
         />
         <Icon name="fitness" />
       </InputField>
