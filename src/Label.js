@@ -13,6 +13,8 @@ const accessiblyHide = props =>
   props.hidden
     ? {
         position: 'absolute',
+        width: '1px',
+        height: '1px',
         clip: 'rect(1px, 1px, 1px, 1px)'
       }
     : null
