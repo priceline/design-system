@@ -178,7 +178,7 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
 .c1 {
   margin-left: 8px;
   margin-right: -32px;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 .c0 {
@@ -316,7 +316,7 @@ exports[`InputField it renders a with a both icons 1`] = `
 .c1 {
   margin-left: 8px;
   margin-right: -32px;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 .c0 {
@@ -537,7 +537,7 @@ exports[`InputField it renders a with a left side icon 1`] = `
 .c1 {
   margin-left: 8px;
   margin-right: -32px;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 .c0 {

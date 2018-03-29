@@ -88,7 +88,7 @@ class InputField extends React.Component {
         if (child.type === Icon) {
           if (inputPosition < 0) {
             BeforeIcon = child
-            iconAdjustment = child.props.size - Icon.defaultProps.size
+            iconAdjustment = child.props.size - 24
           } else {
             AfterIcon = child
           }
@@ -121,7 +121,11 @@ class InputField extends React.Component {
           })}
         <Flex align="center" width={1} mt={0}>
           {BeforeIcon && (
-            <Box mr={-4} ml={8 - iconAdjustment} mt={showLabel ? -12 : 2}>
+            <Box
+              mr={-4}
+              ml={`${8 - iconAdjustment}px`}
+              mt={showLabel ? '-12px' : '2px'}
+            >
               {BeforeIcon}
             </Box>
           )}
