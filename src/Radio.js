@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import Icon from './Icon'
 import Text from './Text'
+import theme from './theme'
 
 const propTypes = {
   checked: PropTypes.bool,
@@ -53,6 +54,9 @@ const RadioInput = styled.input`
 const RadioIcon = styled(Icon)`
   vertical-align: middle;
 `
+Radio.defaultProps = {
+  theme: theme
+}
 
 Radio.propTypes = propTypes
 
