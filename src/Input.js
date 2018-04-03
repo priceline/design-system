@@ -22,6 +22,7 @@ const Input = styled.input`
   display: block;
   width: 100%;
   font-family: inherit;
+  color: inherit;
   font-size: ${theme('fontSizes.1')}px;
   background-color: transparent;
   border-radius: ${theme('radius')};
