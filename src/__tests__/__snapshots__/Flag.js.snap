@@ -9,8 +9,7 @@ exports[`Flag renders 1`] = `
 }
 
 .c6 {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
   color: #fff;
@@ -44,13 +43,15 @@ exports[`Flag renders 1`] = `
 }
 
 .c7 {
-  display: inline-block;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
   transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
 }
 
 .c5 {
@@ -58,6 +59,7 @@ exports[`Flag renders 1`] = `
   border-radius: 0 0 0;
   color: white;
   background-color: green;
+  z-index: 2;
 }
 
 .c1 {
@@ -67,7 +69,6 @@ exports[`Flag renders 1`] = `
 @media screen and (min-width:32em) {
   .c6 {
     padding-left: 16px;
-    padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
@@ -119,8 +120,7 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 .c6 {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
   color: #fff;
@@ -155,13 +155,15 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 .c7 {
-  display: inline-block;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
   transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
 }
 
 .c5 {
@@ -172,6 +174,7 @@ exports[`Flag renders with width prop 1`] = `
   flex: 1 1 auto;
   color: white;
   background-color: green;
+  z-index: 2;
 }
 
 .c1 {
@@ -181,7 +184,6 @@ exports[`Flag renders with width prop 1`] = `
 @media screen and (min-width:32em) {
   .c6 {
     padding-left: 16px;
-    padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
