@@ -41,9 +41,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@storybook/addon-info": "^3.4.0",
-    "@storybook/react": "^3.4.0",
-    "@storybook/storybook-deployer": "^2.3.0",
+    "@storybook/addon-info": "^3.2.0",
+    "@storybook/react": "^3.2.3",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
@@ -52,13 +52,13 @@
     "babel-preset-stage-0": "^6.24.1",
     "camelcase": "^4.1.0",
     "codecov": "^2.3.0",
-    "enzyme": "^3.3.0",
+    "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.2",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
-    "jest-styled-components": "^4.10.0",
+    "jest-styled-components": "^4.7.1",
     "lint-staged": "^4.2.3",
-    "prettier": "^1.11.1",
+    "prettier": "^1.7.4",
     "react": "^15.6.1",
     "react-chromatic": "^0.7.10",
     "react-dom": "^15.6.1",
@@ -81,10 +81,10 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "prop-types": "^15.6.1",
+    "prop-types": "^15.5.10",
     "rc-slider": "^8.5.0",
-    "styled-components": "^2.4.0",
-    "styled-system": "^1.1.7"
+    "styled-components": "^2.1.1",
+    "styled-system": "^1.0.8"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0"
