@@ -226,7 +226,10 @@ const pages = [
       'InputField',
       'Link',
       'RatingBadge',
+      'Select',
+      'Slider',
       'Text',
+      'Tooltip',
       'Truncate'
     ]
   },
