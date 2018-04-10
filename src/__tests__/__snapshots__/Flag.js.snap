@@ -1,52 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flag renders 1`] = `
+.c4 {
+  margin-bottom: -8px;
+  margin-right: -8px;
+  width: 4px;
+  color: #0a0;
+}
+
+.c6 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #fff;
+  background-color: #0a0;
+}
+
+.c8 {
+  margin-left: -8px;
+  width: 18px;
+  color: #0a0;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8px;
-  margin-left: -8px;
-  margin-right: 16px;
+  margin-left: 0px;
 }
 
-.c1 {
-  display: block;
-  width: 4px;
+.c3 {
   height: 4px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  margin-right: -8px;
-  margin-bottom: -8px;
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
+  position: absolute;
+  bottom: 0;
 }
 
-.c3 {
-  display: inline-block;
-  width: 18px;
+.c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  min-height: 32px;
-  margin-left: -10px;
+  border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
   transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
 }
 
-.c2 {
+.c5 {
   font-size: px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 0 0 0;
   color: white;
   background-color: green;
+  z-index: 2;
+}
+
+.c1 {
+  position: relative;
+}
+
+@media screen and (min-width:32em) {
+  .c6 {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
+@media screen and (max-width:31.99em) {
+  .c2 {
+    display: none;
+  }
 }
 
 <div
@@ -54,71 +91,114 @@ exports[`Flag renders 1`] = `
   width={undefined}
 >
   <div
-    className="c1"
-    color="green"
-  />
+    className="c1 c2 "
+  >
+    <div
+      className="c3 c4"
+      color="green"
+      width="4px"
+    />
+  </div>
   <div
-    className="c2"
+    className="c5 c6"
     color="white"
   />
   <div
-    className="c3"
+    className="c7 c8"
     color="green"
+    width="18px"
   />
 </div>
 `;
 
 exports[`Flag renders with width prop 1`] = `
+.c4 {
+  margin-bottom: -8px;
+  margin-right: -8px;
+  width: 4px;
+  color: #0a0;
+}
+
+.c6 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #fff;
+  background-color: #0a0;
+}
+
+.c8 {
+  margin-left: -8px;
+  width: 18px;
+  color: #0a0;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8px;
-  margin-left: -8px;
-  margin-right: 16px;
+  margin-left: 0px;
   width: 256px;
 }
 
-.c1 {
-  display: block;
-  width: 4px;
+.c3 {
   height: 4px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  margin-right: -8px;
-  margin-bottom: -8px;
   border-width: 4px;
   border-style: solid;
   border-color: transparent;
+  position: absolute;
+  bottom: 0;
 }
 
-.c3 {
-  display: inline-block;
-  width: 18px;
+.c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  min-height: 32px;
-  margin-left: -10px;
+  border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
   transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
 }
 
-.c2 {
+.c5 {
   font-size: px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 0 0 0;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   color: white;
   background-color: green;
+  z-index: 2;
+}
+
+.c1 {
+  position: relative;
+}
+
+@media screen and (min-width:32em) {
+  .c6 {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
+@media screen and (max-width:31.99em) {
+  .c2 {
+    display: none;
+  }
 }
 
 <div
@@ -126,16 +206,22 @@ exports[`Flag renders with width prop 1`] = `
   width={256}
 >
   <div
-    className="c1"
-    color="green"
-  />
+    className="c1 c2 "
+  >
+    <div
+      className="c3 c4"
+      color="green"
+      width="4px"
+    />
+  </div>
   <div
-    className="c2"
+    className="c5 c6"
     color="white"
   />
   <div
-    className="c3"
+    className="c7 c8"
     color="green"
+    width="18px"
   />
 </div>
 `;
