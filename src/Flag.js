@@ -27,12 +27,13 @@ const FlagShadow = styled(Box)`
 `
 
 const FlagRight = styled(Box)`
-  display: inline-block;
   flex: none;
   background-color: ${props => theme(`colors.${props.color}`)(props)};
-  border-radius: ${theme('radius')};
+  border-radius: 0 ${theme('radius')} ${theme('radius')} 0;
   /* for 32 x 8 triangle */
   transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
 `
 
 const flexAuto = props =>
@@ -46,6 +47,7 @@ const FlagBody = styled(Box)`
   font-size: ${theme('fontSizes.0')}px;
   border-radius: 0 0 ${theme('radius')} 0;
   ${flexAuto} ${color};
+  z-index: 2;
 `
 
 const RelativeHide = styled(Hide)`
@@ -57,7 +59,7 @@ const Flag = ({ color, bg, children, width, ...props }) => (
     <RelativeHide xs>
       <FlagShadow width="4px" mr={-2} mb={-2} color={bg} />
     </RelativeHide>
-    <FlagBody flexAuto={!!width} color={color} bg={bg} py={[1, 2]} px={[2, 3]}>
+    <FlagBody flexAuto={!!width} color={color} bg={bg} py={[1, 2]} pl={[1, 3]}>
       {children}
     </FlagBody>
     <FlagRight width="18px" color={bg} ml={-2} />
