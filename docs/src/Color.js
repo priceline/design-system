@@ -77,7 +77,7 @@ const HexButton = styled.button`
     transition-duration: 0.125s;
     transition-timing-function: ease-out;
   }
-  
+
   &:hover > span {
     opacity: 1;
   }
