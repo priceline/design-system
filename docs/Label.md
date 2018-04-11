@@ -3,13 +3,11 @@
 Styled form `<label>` element.
 
 ```.jsx
-<Box>
-  <Label htmlFor='email'>Email</Label>
-  <Input
-    id='email'
-    name='email'
-  />
-</Box>
+<Label htmlFor='email'>Email</Label>
+<Input
+  id='email'
+  name='email'
+/>
 ```
 
 ```.jsx
@@ -30,11 +28,9 @@ See the following for more info:
 - [How-to: Hide Content](https://a11yproject.com/posts/how-to-hide-content/)
 
 ```.jsx
-<Box>
-  <Label hidden htmlFor='email'>Email</Label>
-  <Input
-    id='email'
-    name='email'
-  />
-</Box>
+<Label hidden htmlFor='email'>Email</Label>
+<Input
+  id='email'
+  name='email'
+/>
 ```
