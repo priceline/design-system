@@ -65,9 +65,7 @@ By default, the `<Text />` component renders a `<div>` element.
 To use a `<span>` or `<p>` element, use the following:
 
 ```.jsx
-<Box>
-  <Text.span>This is a span element</Text.span>
-  <Text.p>This is a p element</Text.p>
-  <Text.s>This is an s element</Text.s>
-</Box>
+<Text.span>This is a span element</Text.span>
+<Text.p>This is a p element</Text.p>
+<Text.s>This is an s element</Text.s>
 ```
