@@ -17,14 +17,16 @@ import Pagination from './Pagination'
 
 const colors = Object.keys(theme.colors)
   .filter(key => !/[0-9]$/.test(key))
+  .filter(key => !/^(text|black|white|borderGray)$/.test(key))
   .map(key => ({
     name: key,
     value: theme.colors[key]
   }))
   .filter(color => !Array.isArray(color.value))
 
-const primaries = colors.filter(color => !/^(lightGray|gray|borderGray|darkGray)$/.test(color.name))
-const grays = colors.filter(color => /^(lightGray|gray|borderGray|darkGray)$/.test(color.name))
+const primaries = colors.filter(color => !/^(light|dark)/.test(color.name))
+const darks = colors.filter(color => /^dark/.test(color.name))
+const lights = colors.filter(color => /^light/.test(color.name))
 
 const ColorChip = styled(Box)`
   height: 100px;
@@ -49,16 +51,13 @@ const HexButton = styled.button`
   appearance: none;
   transition: all 0.125s ease;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
-
   &:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08),
       0 16px 16px 0 rgba(0, 0, 0, 0.08);
   }
-
   &:active {
     transform: scale(0.9);
   }
-
   & > span {
     top: 0;
     left: 0;
@@ -75,7 +74,6 @@ const HexButton = styled.button`
     transition-duration: 0.125s;
     transition-timing-function: ease-out;
   }
-
   &:hover > span {
     opacity: 1;
   }
@@ -120,7 +118,8 @@ const Color = props => (
     </Description>
     <Flex wrap mx={-2} pt={4}>
       <ColorList colors={primaries} />
-      <ColorList colors={grays} />
+      <ColorList colors={lights} />
+      <ColorList colors={darks} />
     </Flex>
     <Pagination {...props} />
   </Box>

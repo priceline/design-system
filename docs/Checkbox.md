@@ -1,4 +1,4 @@
-# `<Checkbox />
+# Checkbox
 
 Use the `<Checkbox />` component as a styled version of the HTML <input type="checkbox">
 
@@ -7,32 +7,24 @@ Use the `<Checkbox />` component as a styled version of the HTML <input type="ch
 * Works as expected in forms.
 * "defaultChecked" is used instead of "checked" because it's an uncontrolled compoment
 
-```jsx
-<Checkbox id="some_checkbox" />
+```.jsx
+<Box>
 
-<Label htmlFor="another_checkbox">
-  <Checkbox id="another_checkbox" />
-</Label>
-
-<Label htmlFor="pre_checked">
-  <Checkbox defaultChecked id="pre_checked" />
-  Text Next to Checkbox
-</Label>
-
-<Label htmlFor="pre_checked">
-  <Checkbox disabled id="pre_checked" />
-  I am Disabled
-</Label>
-
-//use just like a normal checkbox
-<form onSubmit={submitFn}>
-  <Label htmlFor="normal_checkbox">
-    <Checkbox id="normal_checkbox" />
-    Option in Form
+  <Label htmlFor="another_checkbox">
+    <Checkbox id="another_checkbox" />
   </Label>
-  <button type="submit">submit</button>
-  <button tpe="reset">clear</button>
-</form>
+
+  <Label htmlFor="pre_checked">
+    <Checkbox defaultChecked id="pre_checked" />
+    Text Next to Checkbox
+  </Label>
+
+  <Label htmlFor="pre_checked">
+    <Checkbox disabled id="pre_checked" />
+    I am Disabled
+  </Label>
+
+</Box>
 ```
 
 

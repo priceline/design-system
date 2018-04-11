@@ -4,9 +4,9 @@
 
 ```.jsx
 <BlockLink href="https://www.priceline.com" target="_blank">
-  <BackgroundImage image={image} width="640px">
+  <BackgroundImage image='https://source.unsplash.com/bITjK6W2Alw/1024x768?q=20' width="640px">
     <Box p={4}>
-      <Text align="center">Click to open priceline.com in new tab!</Text>
+      <Text align="center" color="white">Click to open priceline.com in new tab!</Text>
     </Box>
   </BackgroundImage>
 </BlockLink>

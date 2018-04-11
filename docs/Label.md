@@ -2,15 +2,17 @@
 
 Styled form `<label>` element.
 
-```jsx
-<Label htmlFor='email'>Email</Label>
-<Input
-  id='email'
-  name='email'
-/>
+```.jsx
+<Box>
+  <Label htmlFor='email'>Email</Label>
+  <Input
+    id='email'
+    name='email'
+  />
+</Box>
 ```
 
-```jsx
+```.jsx
 <Label nowrap>
   <Radio />
   This label will not wrap
@@ -27,11 +29,12 @@ See the following for more info:
 - [How-to: Use Placeholder Attributes](https://a11yproject.com/posts/placeholder-input-elements/)
 - [How-to: Hide Content](https://a11yproject.com/posts/how-to-hide-content/)
 
-```jsx
-<Label hidden htmlFor='email'>Email</Label>
-<Input
-  id='email'
-  name='email'
-/>
+```.jsx
+<Box>
+  <Label hidden htmlFor='email'>Email</Label>
+  <Input
+    id='email'
+    name='email'
+  />
+</Box>
 ```
-
