@@ -51,13 +51,16 @@ const HexButton = styled.button`
   appearance: none;
   transition: all 0.125s ease;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+
   &:hover {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08),
       0 16px 16px 0 rgba(0, 0, 0, 0.08);
   }
+
   &:active {
     transform: scale(0.9);
   }
+
   & > span {
     top: 0;
     left: 0;
@@ -74,6 +77,7 @@ const HexButton = styled.button`
     transition-duration: 0.125s;
     transition-timing-function: ease-out;
   }
+  
   &:hover > span {
     opacity: 1;
   }
