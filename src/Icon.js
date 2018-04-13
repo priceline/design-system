@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, color } from 'styled-system'
+import { space, color, propTypes, cleanElement } from 'styled-system'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
 
@@ -33,12 +33,18 @@ const getPath = ({ name, legacy }) => {
   return icons.legacy[name] || icons[name] || icons[aliases[name]]
 }
 
+// Remove `space` props from the `svg` element prevents react warnings
+const CleanSvg = cleanElement('svg')
+CleanSvg.propTypes = {
+  ...propTypes.space
+}
+
 const Base = ({ name, size, legacy, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
   return (
-    <svg
+    <CleanSvg
       {...props}
       viewBox={icon.viewBox}
       width={size}
@@ -46,7 +52,7 @@ const Base = ({ name, size, legacy, ...props }) => {
       fill="currentcolor"
     >
       <path d={icon.path} />
-    </svg>
+    </CleanSvg>
   )
 }
 
@@ -73,9 +79,9 @@ Icon.propTypes = {
   name: ({ name }) => {
     if (aliases[name] && !icons[name] && !icons.legacy[name]) {
       console.warn(
-        `Using '${name}' as an Icon name has been deprecated. Use '${aliases[
-          name
-        ]}' instead.`
+        `Using '${name}' as an Icon name has been deprecated. Use '${
+          aliases[name]
+        }' instead.`
       )
     }
 
@@ -86,7 +92,8 @@ Icon.propTypes = {
     }
   },
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  legacy: PropTypes.bool
+  legacy: PropTypes.bool,
+  color: PropTypes.string
 }
 
 export default Icon

@@ -1,5 +1,5 @@
 
-# Getting Started
+### Getting Started
 
 Install the Design System in your application
 
@@ -7,12 +7,16 @@ Install the Design System in your application
 npm install --save pcln-design-system
 ```
 
-## ThemeProvider
+### ThemeProvider
 
 Wrap the root of your application with the `ThemeProvider` component,
 which adds the Design System theme to context for use in styled-components
 and sets typographic defaults.
 This should only be included once in your application.
+
+The ThemeProvider is a wrapper around styled-components' [ThemeProvider][sc-theme].
+
+[sc-theme]: https://www.styled-components.com/docs/advanced#theming
 
 ```jsx
 import React from 'react'
@@ -39,7 +43,7 @@ const Section = styled.section`
 `
 ```
 
-## Primitive UI Components
+### Primitive UI Components
 
 The preferred way of using the design system in a React application is with UI primitives.
 With effective use of the UI primitives, you can reduce the need to write custom CSS in your application.
@@ -55,4 +59,3 @@ const SomeView = props => (
   </Box>
 )
 ```
-

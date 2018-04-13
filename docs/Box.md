@@ -1,23 +1,41 @@
 
-# `<Box />`
+# Box
 
 Use the `<Box />` component to control width, margin, padding, and color.
 
-```jsx
+```.jsx
 // 50% width
-<Box width={1/2} />
+<Box width={1/2} bg='lightGray'>
+  Box
+</Box>
+```
 
+```.jsx
 // Padding of `theme.space[3]` (16px)
-<Box p={3} />
+<Box p={3} bg='lightGray'>
+  Box
+</Box>
+```
 
+```.jsx
 // Margin of `theme.space[2]` (8px)
-<Box m={2} />
+<Box m={4} bg='lightGray'>
+  Box
+</Box>
+```
 
+```.jsx
 // Color blue from the theme's color palette
-<Box color='blue' />
+<Box color='blue'>
+  Box
+</Box>
+```
 
+```.jsx
 // Background color green from the theme's color palette
-<Box bg='green' />
+<Box bg='green'>
+  Box
+</Box>
 ```
 
 Prop | Type | Description
@@ -45,15 +63,16 @@ py | number, string, or array | Sets padding-top and padding-bottom
 
 The `width` prop accepts an array value to set different widths at different breakpoints with a mobile-first approach.
 
-```jsx
+```.jsx
 <Box
   width={[
     1,    // Sets width 100% at the smallest breakpoint
     1/2,  // Sets width 50% at the next breakpoint
     1/4,  // Sets width 25% at the next breakpoint
   ]}
-/>
+  bg='gray'>
+  Hello
+</Box>
 ```
 
 See [styled-system](https://github.com/jxnblk/styled-system) for more documentation.
-

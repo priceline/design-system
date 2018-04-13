@@ -2,6 +2,7 @@ import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { injectGlobal } from 'styled-components'
 import { ThemeProvider, Box } from '../src'
+import 'react-chromatic/storybook-addon'
 
 injectGlobal([], {
   '*': {
@@ -15,9 +16,7 @@ injectGlobal([], {
 
 addDecorator(story => (
   <ThemeProvider>
-    <Box p={3}>
-      {story()}
-    </Box>
+    <Box p={3}>{story()}</Box>
   </ThemeProvider>
 ))
 

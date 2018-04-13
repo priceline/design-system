@@ -57,6 +57,7 @@ exports[`Tooltip bottom center 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
@@ -121,6 +122,7 @@ exports[`Tooltip bottom left 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
@@ -186,6 +188,7 @@ exports[`Tooltip bottom right 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
@@ -250,6 +253,7 @@ exports[`Tooltip renders 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
@@ -319,6 +323,7 @@ exports[`Tooltip top center 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
@@ -383,6 +388,7 @@ exports[`Tooltip top left 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
@@ -448,6 +454,7 @@ exports[`Tooltip top right 1`] = `
   style={
     Object {
       "position": "relative",
+      "zIndex": "auto",
     }
   }
 >
