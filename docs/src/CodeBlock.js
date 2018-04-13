@@ -63,7 +63,12 @@ class CodeBlock extends React.Component {
     return (
       <P1.Box mb={3}>
         <Catch>
-          <LiveProvider code={code} scope={P1} mountStylesheet={false}>
+          <LiveProvider
+            code={code}
+            scope={P1}
+            mountStylesheet={false}
+            transformCode={code => `<React.Fragment>${code}</React.Fragment>`}
+          >
             <Preview />
             <Editor />
             <P1.Text
