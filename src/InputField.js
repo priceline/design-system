@@ -9,6 +9,12 @@ import Label from './Label'
 import Input from './Input'
 import theme from './theme'
 
+const Root = styled(Box)`
+  & ${Box} {
+    pointer-events: none;
+  }
+`
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -111,7 +117,7 @@ class InputField extends React.Component {
       this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
 
     return (
-      <Box>
+      <Root>
         {showLabel &&
           React.cloneElement(LabelChild, {
             pl: BeforeIcon ? 40 : 2,
@@ -149,7 +155,7 @@ class InputField extends React.Component {
             </Box>
           )}
         </Flex>
-      </Box>
+      </Root>
     )
   }
 }
