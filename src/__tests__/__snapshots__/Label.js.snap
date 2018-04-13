@@ -14,6 +14,8 @@ exports[`Label Label hidden renders 1`] = `
   color: #687B8E;
   font-weight: 600;
   position: absolute;
+  width: 1px;
+  height: 1px;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
 }
