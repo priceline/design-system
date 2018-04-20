@@ -81,7 +81,10 @@
     "coveragePathIgnorePatterns": [
       "dist/"
     ],
-    "setupTestFrameworkScriptFile": "./test-setup.js"
+    "setupTestFrameworkScriptFile": "./test-setup.js",
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "lint-staged": {
     "*.js": [
