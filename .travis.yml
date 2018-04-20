@@ -4,8 +4,19 @@ node_js:
 test: npm test -- --ci --runInBand --debug
 after_success:
   - npm run codecov
+  - 'if [ $TRAVIS_EVENT_TYPE = 'push' ]
+    then
+      npm run chromatic -- --app-code=$CHROMATIC_APPCODE
+    fi'
+before_deploy:
   - npm run storybook
+  - cd docs
+  - npm install
+  - npm run build
+  - cd ..
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN

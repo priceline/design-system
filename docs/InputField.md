@@ -1,13 +1,12 @@
-# `<InputField />`
+# InputField
 
 Use `<InputField />` component to combine `<Input />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
 
-```jsx
-<InputField onChange={(e) => {this.setState({someValue: e.target.value})}}>
+```.jsx
+<InputField onChange={() => {}}>
   <Label>Email address</Label>
-  <Icon name='email' size='20'>
-  <Input id='form-field-3' value={this.state.someValue} placeholder='Please enter an email address'/>
-  <Icon name='warning' color='red' size='20' />
+  <Icon name='email' size='20' />
+  <Input id='form-field-3' defaultValue='oliver@example.com' placeholder='Please enter an email address' />
 </InputField>
 ```
 
@@ -19,6 +18,52 @@ Make sure to provide an `id` prop to this component, otherwise you will run into
 
 ### `<Icon />`
 One `<Icon />` can go _before_, and one `<Icon />` can go _after_ the `<Input />` component. Anything else will result in a prop-type warning.
+
+## Error Handling
+All error handling should be performed by the parent component. An example of how one might accomplish this is below.
+
+```jsx
+<Box
+  width={'50%'}
+  bg='white'
+>
+  <InputField onChange={this.props.onChange}>
+    <Icon name='search' color='blue' size={18} />
+    <Input
+      id='some-input'
+      autoComplete='off'
+      color={this.props.errorMessage ? 'red' : null}
+      placeholder='Placeholder text'
+      label='Some Input Field'
+      hasError={!!this.props.errorMessage}
+      aria-describedby={
+        this.props.errorMessage && this.props.isUsingErrorMessage
+          ? 'some-input-error'
+          : null
+      }
+      aria-invalid={!!this.props.errorMessage}
+      maxLength={60}
+      value={this.state.typeAheadContent}
+      onChange={this.handleInputChange}
+      onKeyDown={this.handleInputKeyDown}
+      onClick={this.handleInputClick}
+    />
+    {this.props.errorMessage && <Icon name='warning' color='red' size={20} />}
+  </InputField>
+  {this.props.errorMessage &&
+    <Tooltip
+      id='some-input-error'
+      bottom
+      right
+      color='white'
+      bg='red'
+    >
+      {this.props.errorMessage}
+    </Tooltip>
+  }
+</Box>
+
+```
 
 ### Legacy Support
 This component can also be used in the form:

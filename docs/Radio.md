@@ -1,23 +1,20 @@
-### `<Radio />`
+# Radio
 
-Use the `<Radio />` component to set the HTML `<input type='radio' />` element
+Use the `<Radio />` component to set the HTML `<input type='radio' />` element. Use it with `<Label />` .
 
-use it with `<Label />` 
-```
-<div onChage={onChange}>
-  <Label fontSize="14px">
-    <Radio checked />
-    selected
-  </Label>
-  <Label fontSize="14px">
-    <Radio disabled />
-    can't choose this one
-  </Label>
-  <Label fontSize="14px">
-    <Radio />
-    not selected
-  </Label>
-</div>
+```.jsx
+<Label fontSize="14px">
+  <Radio checked />
+  selected
+</Label>
+<Label fontSize="14px">
+  <Radio disabled />
+  can't choose this one
+</Label>
+<Label fontSize="14px">
+  <Radio />
+  not selected
+</Label>
 ```
 
 Prop | Type | Description

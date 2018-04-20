@@ -9,6 +9,12 @@ import Label from './Label'
 import Input from './Input'
 import theme from './theme'
 
+const Root = styled(Box)`
+  & ${Box} {
+    pointer-events: none;
+  }
+`
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -88,7 +94,7 @@ class InputField extends React.Component {
         if (child.type === Icon) {
           if (inputPosition < 0) {
             BeforeIcon = child
-            iconAdjustment = child.props.size - Icon.defaultProps.size
+            iconAdjustment = child.props.size - 24
           } else {
             AfterIcon = child
           }
@@ -111,17 +117,21 @@ class InputField extends React.Component {
       this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
 
     return (
-      <Box>
+      <Root>
         {showLabel &&
           React.cloneElement(LabelChild, {
             pl: BeforeIcon ? 40 : 2,
-            mt: '5px',
+            mt: '6px',
             style: labelStyles,
             htmlFor: inputId
           })}
         <Flex align="center" width={1} mt={0}>
           {BeforeIcon && (
-            <Box mr={-4} ml={8 - iconAdjustment} mt={showLabel ? -12 : 2}>
+            <Box
+              mr={-4}
+              ml={`${8 - iconAdjustment}px`}
+              mt={showLabel ? '-12px' : '2px'}
+            >
               {BeforeIcon}
             </Box>
           )}
@@ -145,7 +155,7 @@ class InputField extends React.Component {
             </Box>
           )}
         </Flex>
-      </Box>
+      </Root>
     )
   }
 }

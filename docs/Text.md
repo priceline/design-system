@@ -1,31 +1,47 @@
-# `<Text />`
+
+# Text
 
 Use the `<Text />` component to control font size, weight, alignment, and color.
 
-###### Note: To use the `Montserrat` font-family in you project, don't forget to include the following code inside your html `<head>`
+**Note:** To use the `Montserrat` font-family in you project, don't forget to include the following code inside your html `<head>`
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 ```
 
-```jsx
+```.jsx
 // Font size 4 on the typographic scale
-<Text fontSize={4} />
+<Text fontSize={4}>
+  Text
+</Text>
+```
 
+```.jsx
 // Center aligned
-<Text align='center' />
+<Text align='center'>
+  Centered Text
+</Text>
+```
 
+```.jsx
 // Bold weight
-<Text bold />
+<Text bold>
+  Bold Text
+</Text>
+```
 
+```.jsx
 // All-caps
-<Text caps />
+<Text caps>
+  Caps Text
+</Text>
+```
 
-// Italic style
-<Text italic />
-
+```.jsx
 // Blue text from the color palette
-<Text color='blue' />
+<Text color='blue'>
+  Blue Text
+</Text>
 ```
 
 Prop | Type | Description
@@ -48,7 +64,7 @@ my | number, string, or array | Sets margin-top and margin-bottom
 By default, the `<Text />` component renders a `<div>` element.
 To use a `<span>` or `<p>` element, use the following:
 
-```jsx
+```.jsx
 <Text.span>This is a span element</Text.span>
 <Text.p>This is a p element</Text.p>
 <Text.s>This is an s element</Text.s>

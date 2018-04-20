@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "1.0.0-44",
+  "version": "1.0.0-51",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -9,9 +9,10 @@
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
     "deploy": "storybook-to-ghpages",
-    "storybook": "build-storybook -c .storybook -o .site",
+    "storybook": "build-storybook -c .storybook -o .site/storybook",
     "coverage": "jest --coverage",
     "codecov": "codecov",
+    "chromatic": "chromatic test --exit-zero-on-changes --storybook-addon --script-name start",
     "test": "jest"
   },
   "author": "Brent Jackson",
@@ -40,7 +41,8 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.5.10",
-    "styled-system": "^1.0.8-0"
+    "rc-slider": "^8.5.0",
+    "styled-system": "^1.0.8"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0"
@@ -61,13 +63,15 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "husky": "^0.14.3",
     "jest": "^22.4.2",
-    "jest-styled-components": "^5.0.0",
+    "jest-styled-components": "^5.0.1",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
     "react": "^16.2.0",
+    "react-chromatic": "^0.7.10",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
-    "styled-components": "^3.1.6",
+    "recompose": "^0.26.0",
+    "styled-components": "^3.2.4",
     "stylis": "^3.2.16",
     "svgi": "^1.1.0"
   },

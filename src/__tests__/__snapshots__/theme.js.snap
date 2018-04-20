@@ -93,6 +93,12 @@ Object {
     "text": "#001833",
     "white": "#fff",
   },
+  "duration": Object {
+    "fast": 150,
+    "normal": 300,
+    "slow": 450,
+    "slowest": 600,
+  },
   "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
   "fontSizes": Array [
     12,

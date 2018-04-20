@@ -143,6 +143,14 @@ export const boxShadows = [
   `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`
 ]
 
+// animation duration
+export const duration = {
+  fast: 150,
+  normal: 300,
+  slow: 450,
+  slowest: 600
+}
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -156,7 +164,8 @@ const theme = {
   radii,
   radius,
   boxShadows,
-  maxContainerWidth
+  maxContainerWidth,
+  duration
 }
 
 export default theme

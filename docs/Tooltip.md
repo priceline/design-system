@@ -1,10 +1,10 @@
-# `<Tooltip />`
+# Tooltip
 
 Use `<Tooltip />` component to create a tooltip positioned around any element.
 
-```jsx
-<Tooltip top right isVisible>
-  Lorem ipsum
+```.jsx
+<Tooltip bg="red" color="white" bottom left isVisible>
+  Nullam id dolor id nibh ultricies vehicula ut id elit.
 </Tooltip>
 ```
 
