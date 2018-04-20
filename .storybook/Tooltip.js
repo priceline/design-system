@@ -1,10 +1,13 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Tooltip, InputField, Box, Flex } from '../src'
+import { Tooltip, InputField, Box, Flex, Banner } from '../src'
 import styled from 'styled-components'
 
 const FlexColumn = styled(Flex)`
   flex-direction: column;
+`
+const loripsum = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est, qui non oderit libidinosam, protervam adolescentiam? Sed ego in hoc resisto; Ratio enim nostra consentit, pugnat oratio. Nihil enim hoc differt.
 `
 
 storiesOf('Tooltip', module)
@@ -124,4 +127,90 @@ storiesOf('Tooltip', module)
         />
       </Box>
     </FlexColumn>
+  ))
+  .add('With Width', () => (
+    <Box>
+      <Box width={'600px'} p={2} mt={5} ml={3} mb={'150px'}>
+        <Banner text="Very large tooltip (bottom left) " bg={'orange'} p={3} />
+        <Tooltip
+          bottom
+          left
+          bg="green"
+          color="white"
+          width={['200px', '400px']}
+        >
+          {loripsum}
+        </Tooltip>
+      </Box>
+      <Box width={'600px'} p={2} mt={5} ml={3}>
+        <Tooltip
+          top
+          left
+          bg="black"
+          color="white"
+          width={['200px', '400px', '500px', '600px']}
+        >
+          {loripsum}
+        </Tooltip>
+        <Banner text="Very large tooltip (top left)" bg={'orange'} p={3} />
+      </Box>
+
+      <Box width={'600px'} p={2} mt={5} ml={3} mb={'150px'}>
+        <Banner text="Very large tooltip (bottom right)" bg={'blue'} p={3} />
+        <Tooltip
+          bottom
+          right
+          bg="green"
+          color="white"
+          width={['200px', '400px', '550px']}
+        >
+          {loripsum}
+        </Tooltip>
+      </Box>
+      <Box width={'600px'} p={2} mt={5} ml={3}>
+        <Tooltip
+          top
+          right
+          bg="black"
+          color="white"
+          width={['200px', '400px', '500px']}
+        >
+          {loripsum}
+        </Tooltip>
+        <Banner text="Very large tooltip (top right)" bg={'blue'} p={3} />
+      </Box>
+
+      <Box width={'600px'} p={2} mt={5} ml={3} mb={'150px'}>
+        <Banner
+          text="Very large tooltip (bottom center)"
+          bg={'lightGreen'}
+          p={3}
+        />
+        <Tooltip
+          bottom
+          center
+          bg="green"
+          color="white"
+          width={['200px', '400px', '500px', '510px']}
+        >
+          {loripsum}
+        </Tooltip>
+      </Box>
+      <Box width={'600px'} p={2} mt={5} ml={3}>
+        <Tooltip
+          top
+          center
+          bg="black"
+          color="white"
+          width={['200px', '400px', '500px', '600px']}
+        >
+          {loripsum}
+        </Tooltip>
+        <Banner
+          text="Very large tooltip (top center)"
+          bg={'lightGreen'}
+          p={3}
+        />
+      </Box>
+    </Box>
   ))

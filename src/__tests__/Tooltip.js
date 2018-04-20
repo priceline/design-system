@@ -70,4 +70,19 @@ describe('Tooltip', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
   })
+  test('bottom right including width', () => {
+    const json = renderer
+      .create(
+        <Tooltip
+          theme={theme}
+          bottom
+          right
+          width={['100px', '200px', '300px', '400px']}
+        >
+          right tooltip
+        </Tooltip>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
 })
