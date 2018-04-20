@@ -6,7 +6,6 @@ import Icon from './Icon'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
 import PropTypes from 'prop-types'
-import theme from './theme'
 
 const bannerColors = {
   green: {
@@ -99,8 +98,7 @@ Banner.propTypes = {
 Banner.defaultProps = {
   bg: 'green',
   textAlign: 'left',
-  showIcon: true,
-  theme: theme
+  showIcon: true
 }
 
 export default Banner
