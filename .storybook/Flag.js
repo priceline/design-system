@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Card, Flag } from '../src'
+import { Box, Card, Flag, Flex, Icon, Text } from '../src'
 
 storiesOf('Flag', module)
   .add('Default', () => (
@@ -42,6 +42,18 @@ storiesOf('Flag', module)
           <b>Hello</b>
           This is a really long string of text that should wrap when it gets too
           long. But then the flag part to the right will probably break.
+        </Flag>
+      </Card>
+    </Box>
+  ))
+  .add('With Icon', () => (
+    <Box p={3}>
+      <Card pb={3}>
+        <Flag mt={2}>
+          <Flex>
+            <Icon size={14} mr={1} name="loyalty" />
+            <Text>Hello World</Text>
+          </Flex>
         </Flag>
       </Card>
     </Box>

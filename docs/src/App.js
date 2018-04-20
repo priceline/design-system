@@ -75,7 +75,7 @@ class App extends React.Component {
           <link
             key="webfont"
             rel="stylesheet"
-            href="http://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono"
+            href="//fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono"
           />
         </head>
         <ThemeProvider key="main">
@@ -210,8 +210,10 @@ const pages = [
       'Badge',
       'Banner',
       'Box',
+      'BlockLink',
       'Button',
       'Card',
+      'Checkbox',
       'Container',
       'Divider',
       'Flag',
@@ -224,9 +226,16 @@ const pages = [
       'Image',
       'Input',
       'InputField',
+      'InputGroup',
+      'Label',
       'Link',
+      'Radio',
       'RatingBadge',
+      'Select',
+      'Slider',
+      'Stamp',
       'Text',
+      'Tooltip',
       'Truncate'
     ]
   },

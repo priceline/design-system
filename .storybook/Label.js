@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Label, Input } from '../src'
+import { Label, Input, Radio, Flex } from '../src'
 
 storiesOf('Label', module)
   .add(
@@ -47,4 +47,20 @@ storiesOf('Label', module)
       <br />
       <Input id="sample-input" />
     </div>
+  ))
+  .add('nowrap', () => (
+    <Flex>
+      <Label nowrap>
+        <Radio checked />
+        Round-trip
+      </Label>
+      <Label nowrap>
+        <Radio checked />
+        One-way
+      </Label>
+      <Label nowrap>
+        <Radio checked />
+        Multi-destination
+      </Label>
+    </Flex>
   ))

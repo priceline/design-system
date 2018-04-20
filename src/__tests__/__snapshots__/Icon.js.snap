@@ -1617,6 +1617,28 @@ exports[`Icon help renders 1`] = `
 </svg>
 `;
 
+exports[`Icon history renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22,12c0,4.7-3.8,8.6-8.6,8.6c-2.4,0-4.5-1-6.1-2.5l1.4-1.4c1.2,1.2,2.9,2,4.7,2c3.7,0,6.7-3,6.7-6.7
+  	s-3-6.7-6.7-6.7c-3.7,0-6.7,3-6.7,6.7h2.9l-3.8,3.8l-0.1-0.1L2,12h2.9c0-4.7,3.8-8.6,8.6-8.6S22,7.3,22,12z M12.5,8.2V13l4.1,2.4
+  	l0.7-1.2l-3.3-2v-4H12.5z"
+  />
+</svg>
+`;
+
 exports[`Icon home renders 1`] = `
 .c0 {
   -webkit-flex: none;
