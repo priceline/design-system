@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 8
-test: npm test -- --runInBand
+test: npm test -- --ci --runInBand --debug
 after_success:
   - npm run codecov
   - npm run storybook
