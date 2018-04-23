@@ -151,6 +151,17 @@ export const duration = {
   slowest: 600
 }
 
+// animation easing curves
+const easeInOut = `cubic-bezier(0.5, 0, 0.25, 1)`
+const easeOut = `cubic-bezier(0, 0, 0.25, 1)`
+const easeIn = `cubic-bezier(0.5, 0, 1, 1)`
+
+const easing = {
+  easeInOut,
+  easeOut,
+  easeIn
+}
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -165,7 +176,8 @@ const theme = {
   radius,
   boxShadows,
   maxContainerWidth,
-  duration
+  duration,
+  easing
 }
 
 export default theme
