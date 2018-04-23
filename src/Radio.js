@@ -57,7 +57,7 @@ const RadioIcon = styled(Icon)`
 
 Radio.propTypes = propTypes
 
-const defaultProps = {
+Radio.defaultProps = {
   theme: theme
 }
 
