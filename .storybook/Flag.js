@@ -26,6 +26,16 @@ storiesOf('Flag', module)
       </Card>
     </Box>
   ))
+
+  .add('with darkBgColors', () => (
+    <Box p={3}>
+      <Card pb={3}>
+        <Flag width={192} mt={2} bg="#085397" darkBgColor="#022647">
+          <b>Hello</b> with custom hex colors
+        </Flag>
+      </Card>
+    </Box>
+  ))
   .add('Compensating for 1px border', () => (
     <Box p={3}>
       <Card pb={3}>

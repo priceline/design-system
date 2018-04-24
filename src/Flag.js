@@ -8,7 +8,8 @@ import Box from './Box'
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const darkBorderColor = props => {
-  const darkColor = theme(`colors.dark${capitalize(props.color)}`)(props)
+  const darkColor =
+    props.darkBgColor || theme(`colors.dark${capitalize(props.color)}`)(props)
   return {
     borderTopColor: darkColor,
     borderRightColor: darkColor
@@ -54,10 +55,16 @@ const RelativeHide = styled(Hide)`
   position: relative;
 `
 
-const Flag = ({ color, bg, children, width, ...props }) => (
+const Flag = ({ color, bg, darkBgColor, children, width, ...props }) => (
   <Flex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
-      <FlagShadow width="4px" mr={-2} mb={-2} color={bg} />
+      <FlagShadow
+        width="4px"
+        mr={-2}
+        mb={-2}
+        color={bg}
+        darkBgColor={darkBgColor}
+      />
     </RelativeHide>
     <FlagBody flexAuto={!!width} color={color} bg={bg} py={[1, 2]} pl={[1, 3]}>
       {children}
