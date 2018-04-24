@@ -29,7 +29,8 @@ const FlagShadow = styled(Box)`
 
 const FlagRight = styled(Box)`
   flex: none;
-  background-color: ${props => theme(`colors.${props.color}`)(props)};
+  background-color: ${props =>
+    theme(`colors.${props.color}`)(props) || props.color};
   border-radius: 0 ${theme('radius')} ${theme('radius')} 0;
   /* for 32 x 8 triangle */
   transform: skew(-14deg);

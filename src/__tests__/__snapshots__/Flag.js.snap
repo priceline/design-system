@@ -46,6 +46,7 @@ exports[`Flag renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  background-color: green;
   border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
@@ -160,6 +161,7 @@ exports[`Flag renders with darkBgColor prop 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  background-color: #085397;
   border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
@@ -275,6 +277,7 @@ exports[`Flag renders with width prop 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  background-color: green;
   border-radius: 0 0;
   -webkit-transform: skew(-14deg);
   -ms-transform: skew(-14deg);
