@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { color, theme, propTypes } from 'styled-system'
-import theme from './theme'
 import Flex from './Flex'
 import Hide from './Hide'
 import Box from './Box'
@@ -73,8 +72,7 @@ Flag.propTypes = {
 
 Flag.defaultProps = {
   color: 'white',
-  bg: 'green',
-  theme: theme
+  bg: 'green'
 }
 
 Flag.displayName = 'Flag'
