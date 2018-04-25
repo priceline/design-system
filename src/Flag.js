@@ -7,28 +7,32 @@ import Box from './Box'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
-const darkBorderColor = props => {
+const shadowColor = props => {
   const darkColor = theme(`colors.dark${capitalize(props.color)}`)(props)
+
   return {
-    borderTopColor: darkColor,
-    borderRightColor: darkColor
+    backgroundImage: !darkColor
+      ? `
+        linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.5) 50%),
+        linear-gradient(45deg, transparent 50%, ${props.color} 50%)
+      `
+      : `linear-gradient(45deg, transparent 50%, ${darkColor} 50%)`
   }
 }
 
 const FlagShadow = styled(Box)`
-  height: 4px;
+  width: 8px;
+  height: 8px;
   align-self: flex-end;
-  border-width: 4px;
-  border-style: solid;
-  border-color: transparent;
-  ${darkBorderColor};
+  ${shadowColor};
   position: absolute;
   bottom: 0;
 `
 
 const FlagRight = styled(Box)`
   flex: none;
-  background-color: ${props => theme(`colors.${props.color}`)(props)};
+  background-color: ${props =>
+    theme(`colors.${props.color}`, props.color)(props)};
   border-radius: 0 ${theme('radius')} ${theme('radius')} 0;
   /* for 32 x 8 triangle */
   transform: skew(-14deg);
