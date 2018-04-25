@@ -23,4 +23,3 @@ Prop | Type | Description
 ---|---|---
 color | string | text color
 bg | string | background color
-darkBgColor | string | background color for flag shadow

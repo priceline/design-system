@@ -7,22 +7,28 @@ import Box from './Box'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
-const darkBorderColor = props => {
-  const darkColor =
-    props.darkBgColor || theme(`colors.dark${capitalize(props.color)}`)(props)
+const shadowColor = props => {
+  const darkColor = theme(`colors.dark${capitalize(props.color)}`)(props)
+
+  if (!darkColor) {
+    return {
+      backgroundImage: `
+        linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.5) 50%),
+        linear-gradient(45deg, transparent 50%, ${props.color} 50%)
+      `
+    }
+  }
+
   return {
-    borderTopColor: darkColor,
-    borderRightColor: darkColor
+    backgroundImage: `linear-gradient(45deg, transparent 50%, ${darkColor} 50%)`
   }
 }
 
 const FlagShadow = styled(Box)`
-  height: 4px;
+  width: 8px;
+  height: 8px;
   align-self: flex-end;
-  border-width: 4px;
-  border-style: solid;
-  border-color: transparent;
-  ${darkBorderColor};
+  ${shadowColor};
   position: absolute;
   bottom: 0;
 `
@@ -30,7 +36,7 @@ const FlagShadow = styled(Box)`
 const FlagRight = styled(Box)`
   flex: none;
   background-color: ${props =>
-    theme(`colors.${props.color}`)(props) || props.color};
+    theme(`colors.${props.color}`, props.color)(props)};
   border-radius: 0 ${theme('radius')} ${theme('radius')} 0;
   /* for 32 x 8 triangle */
   transform: skew(-14deg);
@@ -56,16 +62,10 @@ const RelativeHide = styled(Hide)`
   position: relative;
 `
 
-const Flag = ({ color, bg, darkBgColor, children, width, ...props }) => (
+const Flag = ({ color, bg, children, width, ...props }) => (
   <Flex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
-      <FlagShadow
-        width="4px"
-        mr={-2}
-        mb={-2}
-        color={bg}
-        darkBgColor={darkBgColor}
-      />
+      <FlagShadow width="4px" mr={-2} mb={-2} color={bg} />
     </RelativeHide>
     <FlagBody flexAuto={!!width} color={color} bg={bg} py={[1, 2]} pl={[1, 3]}>
       {children}
