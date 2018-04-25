@@ -10,17 +10,13 @@ const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 const shadowColor = props => {
   const darkColor = theme(`colors.dark${capitalize(props.color)}`)(props)
 
-  if (!darkColor) {
-    return {
-      backgroundImage: `
+  return {
+    backgroundImage: !darkColor
+      ? `
         linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.5) 50%),
         linear-gradient(45deg, transparent 50%, ${props.color} 50%)
       `
-    }
-  }
-
-  return {
-    backgroundImage: `linear-gradient(45deg, transparent 50%, ${darkColor} 50%)`
+      : `linear-gradient(45deg, transparent 50%, ${darkColor} 50%)`
   }
 }
 
