@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 8
-script: npm test -- --runInBand --verbose --debug
+script: npm test -- --runInBand
 after_success:
   - npm run codecov
   - "if [ $TRAVIS_EVENT_TYPE = 'push' ]
