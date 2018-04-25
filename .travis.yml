@@ -1,12 +1,13 @@
 language: node_js
 node_js:
   - 8
+script: npm test -- --runInBand
 after_success:
   - npm run codecov
-  - 'if [ $TRAVIS_EVENT_TYPE = 'push' ]
+  - "if [ $TRAVIS_EVENT_TYPE = 'push' ]
     then
       npm run chromatic -- --app-code=$CHROMATIC_APPCODE
-    fi'
+    fi"
 before_deploy:
   - npm run storybook
   - cd docs
@@ -14,8 +15,6 @@ before_deploy:
   - npm run build
   - cd ..
 deploy:
-  edge:
-    branch: v1.8.47
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN

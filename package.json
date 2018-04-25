@@ -11,7 +11,7 @@
     "deploy": "storybook-to-ghpages",
     "storybook": "build-storybook -c .storybook -o .site/storybook",
     "coverage": "jest --coverage",
-    "codecov": "jest && codecov",
+    "codecov": "codecov",
     "chromatic": "chromatic test --exit-zero-on-changes --storybook-addon --script-name start",
     "standard": "standard",
     "test": "jest"
