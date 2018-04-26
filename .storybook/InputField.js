@@ -40,7 +40,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField onChange={() => {}}>
               <Icon name="search" color="blue" size="18" />
-              <Input id="form-field-3" placeholder="Placeholder with Icon" />
+              <Input id="form-field-2" placeholder="Placeholder with Icon" />
             </InputField>
           </Box>
         </Flex>
@@ -50,7 +50,7 @@ storiesOf('InputField', module)
               Plain Text
             </Text>
             <InputField onChange={() => {}}>
-              <Input id="form-field-1" value="Plain text" />
+              <Input id="form-field-3" value="Plain text" />
               <Icon name="chevronDown" size="12" />
             </InputField>
           </Box>
@@ -60,7 +60,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField onChange={() => {}}>
               <Icon name="user" color="blue" />
-              <Input id="form-field-1" value="Plain text with Icon" />
+              <Input id="form-field-4" value="Plain text with Icon" />
               <Icon name="chevronDown" size="12" />
             </InputField>
           </Box>
@@ -72,7 +72,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField color="blue" onChange={() => {}}>
               <Label>Label</Label>
-              <Input id="form-field-3" value="Typing Text" />
+              <Input id="form-field-5" value="Typing Text" />
             </InputField>
           </Box>
           <Box width={1 / 2} pl={3}>
@@ -82,7 +82,7 @@ storiesOf('InputField', module)
             <InputField color="blue" onChange={() => {}}>
               <Icon name="user" color="blue" />
               <Label>Label</Label>
-              <Input id="form-field-3" value="Typing text with Icon" />
+              <Input id="form-field-6" value="Typing text with Icon" />
               <Icon name="chevronDown" size="12" />
             </InputField>
           </Box>
@@ -94,7 +94,7 @@ storiesOf('InputField', module)
             </Text>
             <InputField color="red" onChange={() => {}}>
               <Label>Email address</Label>
-              <Input id="form-field-3" value="olvier@examp" />
+              <Input id="form-field-7" value="olvier@examp" />
               <Icon name="warning" color="red" size="20" />
             </InputField>
           </Box>
@@ -104,28 +104,65 @@ storiesOf('InputField', module)
             </Text>
             <InputField color="green" onChange={() => {}}>
               <Label>Email address</Label>
-              <Input id="form-field-3" value="olvier@example.com" />
+              <Input id="form-field-8" value="olvier@example.com" />
               <Icon name="success" color="green" size="20" />
+            </InputField>
+          </Box>
+        </Flex>
+      </div>
+    ))
+  )
+  .add(
+    'Label with autoHide',
+    withInfo(
+      'These examples demonstrate how the label will behave with prop "autoHide"'
+    )(() => (
+      <div>
+        <Flex width={900}>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              Without AutoHide (Default)
+            </Text>
+            <InputField onChange={() => {}}>
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-1" placeholder="Same as pick-up" />
+            </InputField>
+          </Box>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              With AutoHide (requires typing)
+            </Text>
+            <InputField autoHide onChange={() => {}}>
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-2" placeholder="Same as pick-up" />
             </InputField>
           </Box>
         </Flex>
         <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
-              With Label Always Shown
+              Default with Default Text (without AutoHide)
             </Text>
-            <InputField alwaysShowLabel onChange={() => {}}>
+            <InputField onChange={() => {}}>
               <Label>Pick-up Location</Label>
-              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+              <Input
+                id="form-field-3"
+                placeholder="Same as pick-up"
+                value="Default Text Here"
+              />
             </InputField>
           </Box>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
-              Without Label Always Shown (requires typing)
+              With AutoHide and Default Text (requires typing)
             </Text>
-            <InputField onChange={() => {}}>
+            <InputField autoHide onChange={() => {}}>
               <Label>Pick-up Location</Label>
-              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+              <Input
+                id="form-field-4"
+                placeholder="Same as pick-up"
+                value="Default Text Here"
+              />
             </InputField>
           </Box>
         </Flex>

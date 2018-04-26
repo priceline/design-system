@@ -55,13 +55,13 @@ class InputField extends React.Component {
     })
 
     this.state = {
-      showLabel: hasInitialValue
+      hasInputValue: hasInitialValue
     }
   }
 
   onInputChange = event => {
     this.setState({
-      showLabel: event.target.value
+      hasInputValue: !!event.target.value
     })
 
     this.props.onChange(event)
@@ -114,7 +114,7 @@ class InputField extends React.Component {
     }
 
     const showLabel =
-      this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
+      LabelChild && (!this.props.autoHide || this.state.hasInputValue)
 
     return (
       <Root>
@@ -138,7 +138,7 @@ class InputField extends React.Component {
           {React.cloneElement(InputChild, {
             'aria-label':
               !showLabel && inputPlaceholder ? inputPlaceholder : null,
-            mt: showLabel && -20,
+            mt: showLabel ? -20 : 0,
             pl: BeforeIcon ? 40 : 2,
             pr: AfterIcon && 40,
             style: getInputStyles(showLabel),
@@ -162,7 +162,7 @@ class InputField extends React.Component {
 
 InputField.propTypes = {
   onChange: PropTypes.func.isRequired,
-  alwaysShowLabel: PropTypes.bool,
+  autoHide: PropTypes.bool,
   children: function(props, propName, componentName) {
     const prop = props[propName]
     let inputCount = 0
