@@ -112,7 +112,7 @@ describe('InputField', () => {
   })
   test('it correctly places an aria-label with the placeholder value before user has interacted with the input', () => {
     const test = mount(
-      <InputField onChange={() => {}}>
+      <InputField>
         <Label>A Label</Label>
         <Icon name="email" />
         <Input id="with-both-icons" placeholder="placeholder text" />
@@ -128,15 +128,33 @@ describe('InputField', () => {
     expect(input.getDOMNode().getAttribute('aria-label')).toBe(
       'placeholder text'
     )
+  })
 
-    input.simulate('change', { target: { value: 'asdf' } })
-
-    // After user interaction the Label component should be there, so we no longer need the aria-label attribute
-    label = test.find(Label)
+  test('it shows a label when the input has a value', () => {
+    const wrapper = mount(
+      <InputField>
+        <Label>Hello</Label>
+        <Input placeholder="Hello" value="Howdy" />
+      </InputField>
+    )
+    const label = wrapper.find(Label)
+    const input = wrapper.find(Input)
     expect(label.length).toBe(1)
-    input = test.find(Input)
     expect(input.getDOMNode().getAttribute('aria-label')).toBeFalsy()
   })
+
+  test('it calls onChange prop if provided', () => {
+    const onChange = jest.fn()
+    const wrapper = mount(
+      <InputField>
+        <Input onChange={onChange} />
+      </InputField>
+    )
+    const input = wrapper.find(Input)
+    input.simulate('change', { target: { value: 'hi' } })
+    expect(onChange).toHaveBeenCalledTimes(1)
+  })
+
   test('it triggers a prop-type warning when 3 icons are provided', () => {
     console.error = jest.fn()
 

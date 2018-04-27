@@ -42,29 +42,27 @@ const getInputStyles = showLabel => {
       }
 }
 
+const noop = () => {}
+
 class InputField extends React.Component {
-  constructor(props) {
-    super(props)
-
-    let hasInitialValue
-
-    React.Children.forEach(props.children, child => {
-      if (child && child.type === Input) {
-        hasInitialValue = !!child.props.value
-      }
-    })
-
-    this.state = {
-      showLabel: hasInitialValue
-    }
+  static defaultProps = {
+    // for backwards-compatibility
+    onChange: noop
   }
 
-  onInputChange = event => {
-    this.setState({
-      showLabel: event.target.value
-    })
+  // for backwards-compatibility
+  handleChange = onChange => e => {
+    this.props.onChange(e)
+    if (typeof onChange !== 'function') return
+    onChange(e)
+  }
 
-    this.props.onChange(event)
+  hasValue = () => {
+    const { children } = this.props
+    return React.Children.toArray(children).reduce(
+      (a, child) => a || (child && child.type === Input && !!child.props.value),
+      false
+    )
   }
 
   render() {
@@ -114,7 +112,7 @@ class InputField extends React.Component {
     }
 
     const showLabel =
-      this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
+      this.props.alwaysShowLabel || (LabelChild && this.hasValue())
 
     return (
       <Root>
@@ -142,11 +140,12 @@ class InputField extends React.Component {
             pl: BeforeIcon ? 40 : 2,
             pr: AfterIcon && 40,
             style: getInputStyles(showLabel),
-            onChange: this.onInputChange,
             width: 1,
             innerRef: elem => {
               this.inputRef = elem
             },
+            // for backwards compatibility
+            onChange: this.handleChange(InputChild.props.onChange),
             ...props
           })}
           {AfterIcon && (
@@ -161,7 +160,6 @@ class InputField extends React.Component {
 }
 
 InputField.propTypes = {
-  onChange: PropTypes.func.isRequired,
   alwaysShowLabel: PropTypes.bool,
   children: function(props, propName, componentName) {
     const prop = props[propName]
