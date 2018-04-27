@@ -191,6 +191,11 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -342,6 +347,11 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -546,6 +556,11 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -697,6 +712,11 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -901,6 +921,11 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -1052,6 +1077,11 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -1256,6 +1286,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -1407,6 +1442,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -1611,6 +1651,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -1762,6 +1807,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -1966,6 +2016,11 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
@@ -2117,6 +2172,11 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           64,
           128,
         ],
+        "timingFunctions": Object {
+          "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+          "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
       }
     }
     viewBox="0 0 24 24"
