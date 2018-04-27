@@ -47,7 +47,8 @@ const noop = () => {}
 class InputField extends React.Component {
   static defaultProps = {
     // for backwards-compatibility
-    onChange: noop
+    onChange: noop,
+    theme: theme
   }
 
   // for backwards-compatibility

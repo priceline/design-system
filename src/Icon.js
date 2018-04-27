@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { space, color, propTypes, cleanElement } from 'styled-system'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
+import theme from './theme'
 
 // Should be removed eventually after v1.0.0
 const aliases = {
@@ -66,7 +67,8 @@ Icon.displayName = 'Icon'
 Icon.defaultProps = {
   name: 'checkLight',
   size: 24,
-  legacy: true
+  legacy: true,
+  theme: theme
 }
 
 const allKeys = Object.keys({

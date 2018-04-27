@@ -1,6 +1,7 @@
 import React from 'react'
 import IconButton from './IconButton'
 import PropTypes from 'prop-types'
+import theme from './theme'
 
 const CloseButton = props => (
   <IconButton
@@ -13,7 +14,8 @@ const CloseButton = props => (
 
 CloseButton.defaultProps = {
   size: 24,
-  title: 'close'
+  title: 'close',
+  theme: theme
 }
 
 CloseButton.propTypes = {
