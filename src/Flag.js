@@ -76,8 +76,7 @@ Flag.propTypes = {
 
 Flag.defaultProps = {
   color: 'white',
-  bg: 'green',
-  theme: theme
+  bg: 'green'
 }
 
 Flag.displayName = 'Flag'
