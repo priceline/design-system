@@ -74,9 +74,9 @@ exports[`Flag renders 1`] = `
   }
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:32em) {
   .c0 {
-    margin-left: -16px;
+    margin-left: -8px;
   }
 }
 
@@ -189,9 +189,9 @@ exports[`Flag renders with hex value as bg color 1`] = `
   }
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:32em) {
   .c0 {
-    margin-left: -16px;
+    margin-left: -8px;
   }
 }
 
@@ -313,9 +313,9 @@ exports[`Flag renders with theme color as bg color 1`] = `
   }
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:32em) {
   .c1 {
-    margin-left: -16px;
+    margin-left: -8px;
   }
 }
 
@@ -432,9 +432,9 @@ exports[`Flag renders with width prop 1`] = `
   }
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:32em) {
   .c0 {
-    margin-left: -16px;
+    margin-left: -8px;
   }
 }
 
