@@ -162,7 +162,7 @@ const timingFunctions = {
   easeIn
 }
 
-// animation delays
+// animation delay
 const transitionDelays = {
   small: `60ms`,
   medium: `160ms`,
