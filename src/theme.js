@@ -145,10 +145,10 @@ export const boxShadows = [
 
 // animation duration
 export const duration = {
-  fast: 150,
-  normal: 300,
-  slow: 450,
-  slowest: 600
+  fast: `150ms`,
+  normal: `300ms`,
+  slow: `450ms`,
+  slowest: `600ms`
 }
 
 // animation easing curves
@@ -160,6 +160,14 @@ const timingFunctions = {
   easeInOut,
   easeOut,
   easeIn
+}
+
+// animation delays
+const transitionDelays = {
+  small: `60ms`,
+  medium: `160ms`,
+  large: `260ms`,
+  xLarge: `360ms`
 }
 
 const theme = {
@@ -177,7 +185,8 @@ const theme = {
   boxShadows,
   maxContainerWidth,
   duration,
-  timingFunctions
+  timingFunctions,
+  transitionDelays
 }
 
 export default theme
