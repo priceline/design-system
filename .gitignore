@@ -7,3 +7,4 @@ coverage
 .site
 icons.json
 .DS_Store
+.idea

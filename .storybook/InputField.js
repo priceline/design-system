@@ -2,9 +2,9 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import styled from 'styled-components'
-import { Box, Flex, Text, InputField, Label, Input, Icon } from '../src'
+import { Box, Flex, Text, InputField, Label, Input, Icon, Select } from '../src'
 
-storiesOf('InputField', module)
+storiesOf('FormField', module)
   .add(
     'InputField component',
     withInfo({
@@ -174,6 +174,72 @@ storiesOf('InputField', module)
               color="blue"
               placeholder="Enter a drop-off location"
             />
+          </InputField>
+        </Box>
+      </Flex>
+    ))
+  )
+  .add(
+    'Select',
+    withInfo(
+      'This example demonstrates how the input field will behave with a select dropdown'
+    )(() => (
+      <Flex width={900}>
+        <Box width={1 / 3} pl={3}>
+          <Text bold pt={4} pb={2}>
+            User Types a Value
+          </Text>
+          <InputField onChange={() => {}}>
+            <Label>Cabin Class</Label>
+            <Icon name="key" color="blue" size="18" />
+            <Select
+              id="cabinClass"
+              name="cabinClass"
+              defaultValue="Premium Economy"
+              prefixIcon="key"
+            >
+              <option>Economy</option>
+              <option>Premium Economy</option>
+              <option>Business</option>
+              <option>First Class</option>
+              <option>
+                With a super long label that doesn't get clobbered by the
+                chevron
+              </option>
+            </Select>
+          </InputField>
+        </Box>
+      </Flex>
+    ))
+  )
+  .add(
+    'Select with label',
+    withInfo(
+      'This example demonstrates how the input field will behave with a select dropdown'
+    )(() => (
+      <Flex width={900}>
+        <Box width={1 / 3} pl={3}>
+          <Text bold pt={4} pb={2}>
+            User Types a Value
+          </Text>
+          <InputField onChange={() => {}} alwaysShowLabel>
+            <Label>Cabin Class</Label>
+            <Icon name="key" color="blue" size="18" />
+            <Select
+              id="cabinClass"
+              name="cabinClass"
+              defaultValue="Premium Economy"
+              prefixIcon="key"
+            >
+              <option>Economy</option>
+              <option>Premium Economy</option>
+              <option>Business</option>
+              <option>First Class</option>
+              <option>
+                With a super long label that doesn't get clobbered by the
+                chevron
+              </option>
+            </Select>
           </InputField>
         </Box>
       </Flex>
