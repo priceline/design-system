@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import styled from 'styled-components'
 import { Box, Flex, Text, InputField, Label, Input, Icon, Select } from '../src'
 
 storiesOf('FormField', module)
