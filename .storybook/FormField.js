@@ -1,11 +1,21 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, Flex, Text, InputField, Label, Input, Icon, Select } from '../src'
+import {
+  Box,
+  Flex,
+  Text,
+  InputField,
+  FormField,
+  Label,
+  Input,
+  Icon,
+  Select
+} from '../src'
 
 storiesOf('FormField', module)
   .add(
-    'InputField component',
+    'FormField component',
     withInfo({
       inline: true,
       text:
@@ -179,7 +189,7 @@ storiesOf('FormField', module)
     ))
   )
   .add(
-    'Select',
+    'FormField composed with Select',
     withInfo(
       'This example demonstrates how the input field will behave with a select dropdown'
     )(() => (
@@ -188,7 +198,7 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <InputField onChange={() => {}}>
+          <FormField onChange={() => {}}>
             <Label>Cabin Class</Label>
             <Icon name="key" color="blue" size="18" />
             <Select
@@ -206,13 +216,13 @@ storiesOf('FormField', module)
                 chevron
               </option>
             </Select>
-          </InputField>
+          </FormField>
         </Box>
       </Flex>
     ))
   )
   .add(
-    'Select with label',
+    'FormField composed with Select and label',
     withInfo(
       'This example demonstrates how the input field will behave with a select dropdown'
     )(() => (
@@ -221,7 +231,7 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <InputField onChange={() => {}} alwaysShowLabel>
+          <FormField onChange={() => {}} alwaysShowLabel>
             <Label>Cabin Class</Label>
             <Icon name="key" color="blue" size="18" />
             <Select
@@ -239,7 +249,7 @@ storiesOf('FormField', module)
                 chevron
               </option>
             </Select>
-          </InputField>
+          </FormField>
         </Box>
       </Flex>
     ))
