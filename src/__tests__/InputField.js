@@ -52,7 +52,7 @@ describe('InputField', () => {
       .create(
         <FormField onChange={() => {}}>
           <Icon name="email" />
-          <Select id="with-left-icon" />
+          <Select id="with-no-options" />
         </FormField>
       )
       .toJSON()
