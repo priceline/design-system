@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import { action } from '@storybook/addon-actions'
 import {
   Box,
   Flex,
@@ -38,7 +39,9 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Placeholder with Chevron
             </Text>
-            <InputField onChange={() => {}}>
+            <InputField
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Input id="form-field-1" placeholder="Placeholder" />
               <Icon name="chevronDown" size="12" />
             </InputField>
@@ -47,7 +50,9 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Placeholder with Icon
             </Text>
-            <InputField onChange={() => {}}>
+            <InputField
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Icon name="search" color="blue" size="18" />
               <Input id="form-field-3" placeholder="Placeholder with Icon" />
             </InputField>
@@ -58,7 +63,9 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Plain Text
             </Text>
-            <InputField onChange={() => {}}>
+            <InputField
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Input id="form-field-1" value="Plain text" />
               <Icon name="chevronDown" size="12" />
             </InputField>
@@ -67,7 +74,9 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Plain Text with Icon
             </Text>
-            <InputField onChange={() => {}}>
+            <InputField
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Icon name="user" color="blue" />
               <Input id="form-field-1" value="Plain text with Icon" />
               <Icon name="chevronDown" size="12" />
@@ -79,7 +88,10 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               With Label and Blue Outline
             </Text>
-            <InputField color="blue" onChange={() => {}}>
+            <InputField
+              color="blue"
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Label>Label</Label>
               <Input id="form-field-3" value="Typing Text" />
             </InputField>
@@ -88,7 +100,10 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               With Label, Icon, and Chevron
             </Text>
-            <InputField color="blue" onChange={() => {}}>
+            <InputField
+              color="blue"
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Icon name="user" color="blue" />
               <Label>Label</Label>
               <Input id="form-field-3" value="Typing text with Icon" />
@@ -101,7 +116,10 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Email Address with Form Validation
             </Text>
-            <InputField color="red" onChange={() => {}}>
+            <InputField
+              color="red"
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Label>Email address</Label>
               <Input id="form-field-3" value="olvier@examp" />
               <Icon name="warning" color="red" size="20" />
@@ -111,7 +129,10 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Email Address with Form Validation 2
             </Text>
-            <InputField color="green" onChange={() => {}}>
+            <InputField
+              color="green"
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Label>Email address</Label>
               <Input id="form-field-3" value="olvier@example.com" />
               <Icon name="success" color="green" size="20" />
@@ -123,7 +144,10 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               With Label Always Shown
             </Text>
-            <InputField alwaysShowLabel onChange={() => {}}>
+            <InputField
+              alwaysShowLabel
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Label>Pick-up Location</Label>
               <Input id="form-field-3" placeholder="Same as pick-up" value="" />
             </InputField>
@@ -132,7 +156,9 @@ storiesOf('FormField', module)
             <Text bold pt={4} pb={2}>
               Without Label Always Shown (requires typing)
             </Text>
-            <InputField onChange={() => {}}>
+            <InputField
+              onChange={action('onChange event is triggered in FormField')}
+            >
               <Label>Pick-up Location</Label>
               <Input id="form-field-3" placeholder="Same as pick-up" value="" />
             </InputField>
@@ -151,7 +177,9 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             No User Interaction
           </Text>
-          <InputField onChange={() => {}}>
+          <InputField
+            onChange={action('onChange event is triggered in FormField')}
+          >
             <Label>Drop-off Location</Label>
             <Icon name="search" color="blue" size="18" />
             <Input id="drop-off" placeholder="Enter a drop-off location" />
@@ -161,7 +189,9 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Clicks in Box
           </Text>
-          <InputField onChange={() => {}}>
+          <InputField
+            onChange={action('onChange event is triggered in FormField')}
+          >
             <Label>Drop-off Location</Label>
             <Icon name="search" color="blue" size="18" />
             <Input
@@ -175,7 +205,9 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <InputField onChange={() => {}}>
+          <InputField
+            onChange={action('onChange event is triggered in FormField')}
+          >
             <Label>Drop-off Location</Label>
             <Icon name="search" color="blue" size="18" />
             <Input
@@ -198,7 +230,9 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <FormField onChange={() => {}}>
+          <FormField
+            onChange={action('onChange event is triggered in FormField')}
+          >
             <Label>Cabin Class</Label>
             <Icon name="key" color="blue" size="18" />
             <Select
@@ -231,7 +265,10 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <FormField onChange={() => {}} alwaysShowLabel>
+          <FormField
+            onChange={action('onChange event is triggered in FormField')}
+            alwaysShowLabel
+          >
             <Label>Cabin Class</Label>
             <Icon name="key" color="blue" size="18" />
             <Select
