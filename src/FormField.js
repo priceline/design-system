@@ -44,6 +44,19 @@ const getFieldStyles = showLabel => {
 
 const noop = () => {}
 
+const isFormElement = element => {
+  const typesOfElements = [Input, Select]
+  let isElement = false
+
+  typesOfElements.forEach(type => {
+    if (type === element) {
+      isElement = true
+    }
+  })
+
+  return isElement
+}
+
 class FormField extends React.Component {
   static defaultProps = {
     // for backwards-compatibility
@@ -64,9 +77,7 @@ class FormField extends React.Component {
       .toArray(children)
       .reduce(
         (a, child) =>
-          a ||
-          (((child && child.type === Input) || child.type === Select) &&
-            child.props.value),
+          a || (child && isFormElement(child.type) && child.props.value),
         false
       )
   }
@@ -84,24 +95,30 @@ class FormField extends React.Component {
     let iconAdjustment
 
     React.Children.forEach(children, (child, index) => {
-      if (child) {
-        if (child.type === Label) {
-          LabelChild = child
-        }
-        if (child.type === Input || child.type === Select) {
-          position = index
-          FieldChild = child
-          fieldId = child.props.id
-          // For aria-label when Label child is not rendered
-          fieldPlaceholder = child.props.placeholder
-        }
-        if (child.type === Icon) {
-          if (position < 0) {
-            BeforeIcon = child
-            iconAdjustment = child.props.size - 24
-          } else {
-            AfterIcon = child
-          }
+      if (!child) {
+        return
+      }
+
+      const { type, props } = child
+
+      if (type === Label) {
+        LabelChild = child
+      }
+
+      if (type === Input || type === Select) {
+        position = index
+        FieldChild = child
+        fieldId = props.id
+        // For aria-label when Label child is not rendered
+        fieldPlaceholder = props.placeholder
+      }
+
+      if (type === Icon) {
+        if (position < 0) {
+          BeforeIcon = child
+          iconAdjustment = props.size - 24
+        } else {
+          AfterIcon = child
         }
       }
     })
