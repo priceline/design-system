@@ -11,7 +11,7 @@ const Stamp = styled.div`
   min-height: 24px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: ${props => props.theme.letterSpacings.caps};
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;

@@ -48,7 +48,7 @@ const Badge = styled.div`
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: ${props => props.theme.letterSpacings.caps};
   ${space} ${type};
 `
 

@@ -34,6 +34,11 @@ export const fontWeights = {
   bold
 }
 
+const letterSpacings = {
+  normal: 'normal',
+  caps: '0.025em'
+}
+
 // color palette
 const black = '#000'
 const white = '#fff'
@@ -169,6 +174,7 @@ const theme = {
   font,
   fontSizes,
   fontWeights,
+  letterSpacings,
   regular,
   bold,
   colors,
