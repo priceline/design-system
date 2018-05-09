@@ -215,6 +215,8 @@ exports[`Badge renders 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  background-color: #f6f8fa;
+  color: #001833;
 }
 
 <div
