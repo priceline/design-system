@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize, color } from 'styled-system'
+import { theme as themeGet, space, fontSize, color } from 'styled-system'
 import theme from './theme'
 
 const Stamp = styled.div`
@@ -11,7 +11,7 @@ const Stamp = styled.div`
   min-height: 24px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: ${props => props.theme.letterSpacings.caps};
+  letter-spacing: ${themeGet('letterSpacings.caps')};
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
