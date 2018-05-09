@@ -15,6 +15,100 @@ Object {
     "48em",
     "64em",
   ],
+  "colorStyles": Object {
+    "blueOnLightBlue": Object {
+      "backgroundColor": "#cdf",
+      "color": "#007aff",
+    },
+    "blueOnWhite": Object {
+      "backgroundColor": "#fff",
+      "color": "#007aff",
+    },
+    "danger": Object {
+      "backgroundColor": "#c00",
+      "color": "#fff",
+    },
+    "grayOnWhite": Object {
+      "backgroundColor": "#fff",
+      "color": "#687B8E",
+    },
+    "greenOnLightGreen": Object {
+      "backgroundColor": "#cec",
+      "color": "#0a0",
+    },
+    "greenOnWhite": Object {
+      "backgroundColor": "#fff",
+      "color": "#0a0",
+    },
+    "info": Object {
+      "backgroundColor": "#f6f8fa",
+      "color": "#001833",
+    },
+    "purpleOnLightPurple": Object {
+      "backgroundColor": "#ecf",
+      "color": "#70b",
+    },
+    "purpleOnWhite": Object {
+      "backgroundColor": "#fff",
+      "color": "#70b",
+    },
+    "redOnLightRed": Object {
+      "backgroundColor": "#fcc",
+      "color": "#c00",
+    },
+    "redOnWhite": Object {
+      "backgroundColor": "#fff",
+      "color": "#c00",
+    },
+    "success": Object {
+      "backgroundColor": "#0a0",
+      "color": "#fff",
+    },
+    "textOnLightGray": Object {
+      "backgroundColor": "#f6f8fa",
+      "color": "#001833",
+    },
+    "textOnLightOrange": Object {
+      "backgroundColor": "#feb",
+      "color": "#001833",
+    },
+    "textOnOrange": Object {
+      "backgroundColor": "#fa0",
+      "color": "#001833",
+    },
+    "textOnWhite": Object {
+      "backgroundColor": "#fff",
+      "color": "#001833",
+    },
+    "warning": Object {
+      "backgroundColor": "#fa0",
+      "color": "#001833",
+    },
+    "whiteOnBlue": Object {
+      "backgroundColor": "#007aff",
+      "color": "#fff",
+    },
+    "whiteOnGray": Object {
+      "backgroundColor": "#687B8E",
+      "color": "#fff",
+    },
+    "whiteOnGreen": Object {
+      "backgroundColor": "#0a0",
+      "color": "#fff",
+    },
+    "whiteOnPurple": Object {
+      "backgroundColor": "#70b",
+      "color": "#fff",
+    },
+    "whiteOnRed": Object {
+      "backgroundColor": "#c00",
+      "color": "#fff",
+    },
+    "whiteOnText": Object {
+      "backgroundColor": "#001833",
+      "color": "#fff",
+    },
+  },
   "colors": Object {
     "black": "#000",
     "blue": "#007aff",
