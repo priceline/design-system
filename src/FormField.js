@@ -44,18 +44,9 @@ const getFieldStyles = showLabel => {
 
 const noop = () => {}
 
-const isFormElement = element => {
-  const typesOfElements = [Input, Select]
-  let isElement = false
+const formElements = [Input, Select]
 
-  typesOfElements.forEach(type => {
-    if (type === element) {
-      isElement = true
-    }
-  })
-
-  return isElement
-}
+const isFormElement = element => formElements.includes(element)
 
 class FormField extends React.Component {
   static defaultProps = {
@@ -219,7 +210,7 @@ FormField.propTypes = {
 
     if (!count) {
       return new Error(
-        `No 'Input' child found for '${componentName}'. Please update your component to use the compound version of this component and pass an 'Input' component as the child`
+        `No 'Input or Select' child found for '${componentName}'. Please update your component to use the compound version of this component and pass an Input or Select component as the child`
       )
     }
     if (labelCount > 1) {
@@ -237,7 +228,7 @@ FormField.propTypes = {
       (firstIconPosition > position || secondIconPosition < position)
     ) {
       return new Error(
-        `If 2 'Icons' are provided, the 'Input' component must be positioned between them as children of '${componentName}'`
+        `If 2 'Icons' are provided, the 'Field' component must be positioned between them as children of '${componentName}'`
       )
     }
   }
