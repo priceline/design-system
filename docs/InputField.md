@@ -1,13 +1,13 @@
-#FormField alias FormField
+# FormField 
 
-Use `<FormField />` component to combine `<Input />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
+Use `<FormField />` alias `<InputField/>` component to combine `<Input />` or `<Select />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
 
 ```.jsx
 <FormField>
-  <Label>Email address</Label>
+  <Label htmlFor='email'>Email address</Label>
   <Icon name='email' size='20' />
   <Input
-    id='form-field-3'
+    id='email'
     defaultValue='oliver@example.com'
     placeholder='Please enter an email address'
   />
@@ -15,8 +15,8 @@ Use `<FormField />` component to combine `<Input />`, `<Label />`, and `<Icon />
 ```
 ```.jsx
 <FormField>
-  <Label>Select One</Label>
-  <Icon name='email' size='20' />
+  <Label htmlFor='form-field-4'>Select One</Label>
+  <Icon name='key' size='20' />
   <Select
     id='form-field-4'
   >
