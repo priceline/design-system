@@ -1,0 +1,29 @@
+{
+  "name": "pcln-design-system-docs",
+  "private": true,
+  "dependencies": {
+    "@compositor/x0": "^4.0.1",
+    "detab": "^2.0.1",
+    "gray-matter": "^3.0.8",
+    "pcln-design-system": "^1.0.0-34",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-live": "^1.7.1",
+    "react-loadable": "^5.3.1",
+    "react-router-dom": "^4.2.2",
+    "remark": "^8.0.0",
+    "remark-react": "^4.0.1",
+    "remark-slug": "^4.2.3",
+    "select": "^1.1.2",
+    "unist-builder": "^1.0.2"
+  },
+  "scripts": {
+    "start": "x0 dev src/App.js",
+    "dev-build": "x0 build src/App.js --basename '/.site' -d ../.site",
+    "build": "x0 build src/App.js --basename '/design-system' -d ../.site"
+  },
+  "x0": {
+    "cssLibrary": "styled-components"
+  }
+}

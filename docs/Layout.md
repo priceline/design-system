@@ -1,10 +1,10 @@
 
-# Layout
+# Layout Guide
 
 The [Box](Box.md) and [Flex](Flex.md) components are low-level layout components that can handle virtually
 any layout styling that could be handled with a grid system as well as handle a lot of microlayout styles.
 
-## Flexbox
+### Flexbox
 
 To effectively use the Flex component, you should be familiar with Flexible Box (flexbox) Layout.
 The following links can be useful to understand how flexbox works:
@@ -17,14 +17,14 @@ Generally the Design System layout components should work as expected in IE11, b
 
 See the [Flexbugs](https://github.com/philipwalton/flexbugs) project for more information.
 
-## Margins
+### Margins
 
 Using the [styled-system][system] library, the Box and Flex components have several style props for handling margins,
 while adhering to the Design System's spacing scale.
 
 To add margin around a component, wrap it with the Box component and use the `m` (margin) prop.
 
-```jsx
+```.jsx
 <Box m={3}>
   <Text>Hello</Text>
 </Box>
@@ -41,7 +41,7 @@ The spacing scale is an array of numbers that are used as pixel values in the Bo
 To add margin in a particular direction use the `mt`, `mr`, `mb`, or `ml` props.
 These props are shorthands for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left` respectively.
 
-```jsx
+```.jsx
 <Box
   mt={3}
   mb={4}>
@@ -75,13 +75,13 @@ Shorthand | Meaning
 `px` | `padding-left` and `padding-right` (x-axis)
 `py` | `padding-top` and `padding-top` (y-axis)
 
-## Padding
+### Padding
 
 The Box and Flex components can also set padding, using a similar API to the margin props.
 
 To add padding to a Box, use the `p` (padding) prop.
 
-```jsx
+```.jsx
 <Box p={2}>
   <Text>Hello</Text>
 </Box>
@@ -89,13 +89,13 @@ To add padding to a Box, use the `p` (padding) prop.
 
 To add padding in a single direction, use `pt`, `pr`, `pb`, or `pl` props.
 
-```jsx
+```.jsx
 <Box pt={2} pb={4}>
   <Text>Hello</Text>
 </Box>
 ```
 
-## Creating a responsive grid layout
+### Creating a responsive grid layout
 
 The Flex and Box components can be used to create a flexbox-based grid layout,
 using the same principles used in other grid systems such as [Bootstrap][boot].
@@ -121,7 +121,7 @@ Next add some Box components that will act as "columns",
 setting the `width` prop to `1` to make the Boxes fill the full-width of the container
 and stack on top of each other for small viewports.
 
-```jsx
+```.jsx
 <Box p={4}>
   <Flex wrap>
     <Box width={1}>
@@ -137,7 +137,7 @@ and stack on top of each other for small viewports.
 Next, use the `width` prop's [responsive array](#responsive-widths) feature
 to change the width of the Boxes at the *small* breakpoint and up.
 
-```jsx
+```.jsx
 <Box p={4}>
   <Flex wrap>
     <Box width={[ 1, 1/2 ]}>
@@ -160,7 +160,7 @@ This is how many CSS grid systems compensate for gutters.
 Add an equal amount of padding to the Box components (`px={3}`) to create gutters between their child components.
 A bottom margin (`mb={4}`) can also be added to the Box components to handle spacing when stacked.
 
-```jsx
+```.jsx
 <Box p={4}>
   <Flex
     wrap
@@ -189,7 +189,7 @@ Since the spacing scale is based on powers of two, that amount of space is equal
 which is why the margin bottom is set to `4`.
 
 
-## Creating a two-column layout
+### Creating a two-column layout
 
 Often pages will have a two column layout, where the left column contains subnavigation or filters and the right column contains the main content for the page.
 Using some of the same techniques from above, this can be achieved using the Flex and Box components.
@@ -209,7 +209,7 @@ Using some of the same techniques from above, this can be achieved using the Fle
 </Flex>
 ```
 
-## Creating a navbar
+### Creating a navbar
 
 The Flex and Box components are also well-suited to create things like navbars and toolbars.
 
@@ -225,7 +225,7 @@ Start with a Flex container and set its color to white with a blue background.
 Next, add an Icon and some placeholder Text components for demonstration.
 In a real application, these would likely be links and buttons.
 
-```jsx
+```.jsx
 <Flex
   color='white'
   bg='blue'>
@@ -252,7 +252,7 @@ in this case moving the item to the right side of the navbar.
 
 Next, add some padding and use the `align` prop on the parent Flex component to control the layout.
 
-```jsx
+```.jsx
 <Flex
   p={2}
   align='center'
@@ -275,7 +275,7 @@ Next, add some padding and use the `align` prop on the parent Flex component to 
 </Flex>
 ```
 
-## Creating tiled layout
+### Creating tiled layout
 
 Often you'll see cards representing an list of items arranged in a tiled layout.
 Using the [responsive width](#responsive-widths) feature of the Box component
@@ -288,14 +288,14 @@ and the `wrap` prop on the Flex component, this sort of layout can be achieved w
       key={item.id}
       p={3}
       width={[ 1/2, 1/3, 1/4 ]}>
-      <Card {...item} />
+      <ProductCard {...item} />
     </Box>
   ))}
 </Flex>
 ```
 
 
-## Responsive Widths
+### Responsive Widths
 
 The [styled-system][system] library supports setting responsive widths that change per breakpoint with a mobile-first approach.
 

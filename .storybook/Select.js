@@ -27,3 +27,16 @@ storiesOf('Select', module)
       </Select>
     </Box>
   ))
+  .add('hidden label', () => (
+    <Box width={[1, 320]}>
+      <Label hidden htmlFor="cabinClass">
+        Cabin Class
+      </Label>
+      <Select id="cabinClass" name="cabinClass" defaultValue="">
+        <option>Economy</option>
+        <option>Premium Economy</option>
+        <option>Business</option>
+        <option>First Class</option>
+      </Select>
+    </Box>
+  ))

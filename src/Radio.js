@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { color } from 'styled-system'
+import theme from './theme'
 import Icon from './Icon'
 import Text from './Text'
 
@@ -55,5 +56,8 @@ const RadioIcon = styled(Icon)`
 `
 
 Radio.propTypes = propTypes
+Radio.defaultProps = {
+  theme: theme
+}
 
 export default Radio

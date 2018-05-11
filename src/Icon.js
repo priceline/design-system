@@ -57,7 +57,8 @@ Icon.defaultProps = {
   theme,
   name: 'checkLight',
   size: 24,
-  legacy: true
+  legacy: true,
+  theme: theme
 }
 
 const allKeys = Object.keys({

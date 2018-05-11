@@ -14,7 +14,7 @@ RatingBadge.defaultProps = {
   px: 2,
   color: 'white',
   bg: 'orange',
-  borderRadius: 2,
+  borderRadius: 1,
   theme: theme
 }
 

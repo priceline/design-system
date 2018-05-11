@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { mount } from 'enzyme'
 import 'jest-styled-components'
-import { InputField, Label, Icon, Input } from '..'
+import { InputField, FormField, Label, Icon, Input, Select } from '..'
 
 describe('InputField', () => {
   test('it renders using the old api, but should throw a prop-type warning', () => {
@@ -24,6 +24,105 @@ describe('InputField', () => {
     )
     console.error.mockRestore()
   })
+  test('it renders using FormField alias', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="email" />
+          <Input id="with-left-icon" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select ', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Select id="with-no-options" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select and Icon', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="email" />
+          <Select id="with-no-options" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select and Options', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select icons on both sides', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="key" />
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+          <Icon name="email" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select icons on the left side', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="key" />
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select icons on the right side', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+          <Icon name="email" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('it renders a with a left side icon', () => {
     const json = renderer
       .create(
@@ -82,6 +181,7 @@ describe('InputField', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
   })
+
   test('it always renders a label when `alwaysShowLabel` is true', () => {
     const json = renderer
       .create(
@@ -95,6 +195,7 @@ describe('InputField', () => {
       .toJSON()
     expect(json).toMatchSnapshot()
   })
+
   test("it calls the `onChange` handler passed into `InputField` when the child `Input` component's value updates", () => {
     const mockChange = jest.fn()
     const test = mount(
@@ -110,7 +211,7 @@ describe('InputField', () => {
   })
   test('it correctly places an aria-label with the placeholder value before user has interacted with the input', () => {
     const test = mount(
-      <InputField onChange={() => {}}>
+      <InputField>
         <Label>A Label</Label>
         <Icon name="email" />
         <Input id="with-both-icons" placeholder="placeholder text" />
@@ -126,15 +227,33 @@ describe('InputField', () => {
     expect(input.getDOMNode().getAttribute('aria-label')).toBe(
       'placeholder text'
     )
+  })
 
-    input.simulate('change', { target: { value: 'asdf' } })
-
-    // After user interaction the Label component should be there, so we no longer need the aria-label attribute
-    label = test.find(Label)
+  test('it shows a label when the input has a value', () => {
+    const wrapper = mount(
+      <InputField>
+        <Label>Hello</Label>
+        <Input placeholder="Hello" value="Howdy" />
+      </InputField>
+    )
+    const label = wrapper.find(Label)
+    const input = wrapper.find(Input)
     expect(label.length).toBe(1)
-    input = test.find(Input)
     expect(input.getDOMNode().getAttribute('aria-label')).toBeFalsy()
   })
+
+  test('it calls onChange prop if provided', () => {
+    const onChange = jest.fn()
+    const wrapper = mount(
+      <InputField>
+        <Input onChange={onChange} />
+      </InputField>
+    )
+    const input = wrapper.find(Input)
+    input.simulate('change', { target: { value: 'hi' } })
+    expect(onChange).toHaveBeenCalledTimes(1)
+  })
+
   test('it triggers a prop-type warning when 3 icons are provided', () => {
     console.error = jest.fn()
 

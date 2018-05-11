@@ -8,11 +8,11 @@ const borders = ({ color, theme }) => {
   const focusColor = color ? borderColor : theme.colors.blue
   return {
     'border-color': borderColor,
-    'box-shadow': `0 0 0 0 ${borderColor}`,
+    'box-shadow': `0 0 0 1px ${borderColor}`,
     ':focus': {
       outline: 0,
       'border-color': focusColor,
-      'box-shadow': `0 0 0 1px ${focusColor}`
+      'box-shadow': `0 0 0 2px ${focusColor}`
     }
   }
 }
@@ -23,9 +23,10 @@ const Input = styled.input`
   width: 100%;
   font-family: inherit;
   font-size: ${themeGet('fontSizes.1')}px;
+  color: inherit;
   background-color: transparent;
   border-radius: ${themeGet('radius')};
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: ${themeGet('colors.borderGray')};
 
