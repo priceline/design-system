@@ -173,6 +173,10 @@ exports[`Select renders 1`] = `
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",

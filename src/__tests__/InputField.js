@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { mount } from 'enzyme'
 import 'jest-styled-components'
-import { InputField, Label, Icon, Input } from '..'
+import { InputField, FormField, Label, Icon, Input, Select } from '..'
 
 describe('InputField', () => {
   test('it renders using the old api, but should throw a prop-type warning', () => {
@@ -24,6 +24,105 @@ describe('InputField', () => {
     )
     console.error.mockRestore()
   })
+  test('it renders using FormField alias', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="email" />
+          <Input id="with-left-icon" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select ', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Select id="with-no-options" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select and Icon', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="email" />
+          <Select id="with-no-options" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select and Options', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select icons on both sides', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="key" />
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+          <Icon name="email" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select icons on the left side', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Icon name="key" />
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('it renders using FormField alias with Select icons on the right side', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Select id="with-options">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </Select>
+          <Icon name="email" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('it renders a with a left side icon', () => {
     const json = renderer
       .create(
