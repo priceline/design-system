@@ -124,6 +124,10 @@ exports[`Icon Setting legacy false falls back to using the legacy set 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -287,6 +291,10 @@ exports[`Icon Setting legacy false prefers using the new icon set 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -449,6 +457,10 @@ exports[`Icon ac renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -614,6 +626,10 @@ exports[`Icon accessible renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -781,6 +797,10 @@ exports[`Icon amenityWifi still renders old renamed icons 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -943,6 +963,10 @@ exports[`Icon arrival renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -1108,6 +1132,10 @@ exports[`Icon arrowDown renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -1270,6 +1298,10 @@ exports[`Icon arrowLeft renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -1434,6 +1466,10 @@ exports[`Icon arrowRight renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -1596,6 +1632,10 @@ exports[`Icon arrowUp renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -1760,6 +1800,10 @@ exports[`Icon attention renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -1922,6 +1966,10 @@ exports[`Icon automatic renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -2088,6 +2136,10 @@ exports[`Icon bag renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -2251,6 +2303,10 @@ exports[`Icon beach renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -2417,6 +2473,10 @@ exports[`Icon bed renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -2580,6 +2640,10 @@ exports[`Icon boxChecked renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -2745,6 +2809,10 @@ exports[`Icon boxEmpty renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -2908,6 +2976,10 @@ exports[`Icon boxMinus renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -3073,6 +3145,10 @@ exports[`Icon boxPlus renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -3236,6 +3312,10 @@ exports[`Icon breakfast renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -3401,6 +3481,10 @@ exports[`Icon build renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -3564,6 +3648,10 @@ exports[`Icon business renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -3729,6 +3817,10 @@ exports[`Icon cake renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -3892,6 +3984,10 @@ exports[`Icon calendar renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -4054,6 +4150,10 @@ exports[`Icon carCircle renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -4222,6 +4322,10 @@ exports[`Icon carDoor renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -4385,6 +4489,10 @@ exports[`Icon carriage renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -4552,6 +4660,10 @@ exports[`Icon cars renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -4716,6 +4828,10 @@ exports[`Icon casino renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -4883,6 +4999,10 @@ exports[`Icon chart renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -5046,6 +5166,10 @@ exports[`Icon chat renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -5211,6 +5335,10 @@ exports[`Icon check renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -5373,6 +5501,10 @@ exports[`Icon chevronDown renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -5537,6 +5669,10 @@ exports[`Icon chevronDownThick still renders old renamed icons 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -5699,6 +5835,10 @@ exports[`Icon chevronLeft renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -5863,6 +6003,10 @@ exports[`Icon chevronRight renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -6026,6 +6170,10 @@ exports[`Icon chevronUp renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -6188,6 +6336,10 @@ exports[`Icon cityView renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -6354,6 +6506,10 @@ exports[`Icon clock renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -6518,6 +6674,10 @@ exports[`Icon close renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -6680,6 +6840,10 @@ exports[`Icon cloud renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -6845,6 +7009,10 @@ exports[`Icon collisionCoverage renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -7012,6 +7180,10 @@ exports[`Icon coupon renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -7177,6 +7349,10 @@ exports[`Icon creditCard renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -7340,6 +7516,10 @@ exports[`Icon cruises renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -7508,6 +7688,10 @@ exports[`Icon departure renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -7671,6 +7855,10 @@ exports[`Icon devices renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -7837,6 +8025,10 @@ exports[`Icon directions renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -8000,6 +8192,10 @@ exports[`Icon discount renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -8168,6 +8364,10 @@ exports[`Icon document renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -8332,6 +8532,10 @@ exports[`Icon dollar renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -8494,6 +8698,10 @@ exports[`Icon dollarCircle renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -8661,6 +8869,10 @@ exports[`Icon earlyBird renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -8824,6 +9036,10 @@ exports[`Icon edit renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -8989,6 +9205,10 @@ exports[`Icon electric renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -9151,6 +9371,10 @@ exports[`Icon email renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -9316,6 +9540,10 @@ exports[`Icon event renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -9480,6 +9708,10 @@ exports[`Icon eventAvailable renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -9643,6 +9875,10 @@ exports[`Icon eventBusy renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -9809,6 +10045,10 @@ exports[`Icon facebook renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -9973,6 +10213,10 @@ exports[`Icon favoriteHotel renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -10139,6 +10383,10 @@ exports[`Icon filter renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -10301,6 +10549,10 @@ exports[`Icon fitness renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -10465,6 +10717,10 @@ exports[`Icon flame renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -10631,6 +10887,10 @@ exports[`Icon flightCircle renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -10794,6 +11054,10 @@ exports[`Icon flightCoverage renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -10959,6 +11223,10 @@ exports[`Icon flights renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -11122,6 +11390,10 @@ exports[`Icon freeCancellation renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -11287,6 +11559,10 @@ exports[`Icon fridge renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -11451,6 +11727,10 @@ exports[`Icon gallery renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -11614,6 +11894,10 @@ exports[`Icon gas renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -11780,6 +12064,10 @@ exports[`Icon globe renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -11950,6 +12238,10 @@ exports[`Icon gps renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -12115,6 +12407,10 @@ exports[`Icon graph renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -12277,6 +12573,10 @@ exports[`Icon grid renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -12441,6 +12741,10 @@ exports[`Icon guests renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -12607,6 +12911,10 @@ exports[`Icon help renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -12771,6 +13079,10 @@ exports[`Icon history renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -12937,6 +13249,10 @@ exports[`Icon home renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -13099,6 +13415,10 @@ exports[`Icon hotelCircle renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -13265,6 +13585,10 @@ exports[`Icon hotels renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -13430,6 +13754,10 @@ exports[`Icon hybrid renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -13593,6 +13921,10 @@ exports[`Icon inclusive renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -13759,6 +14091,10 @@ exports[`Icon information renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -13921,6 +14257,10 @@ exports[`Icon informationOutline renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -14085,6 +14425,10 @@ exports[`Icon instagram renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -14259,6 +14603,10 @@ exports[`Icon key renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -14422,6 +14770,10 @@ exports[`Icon kitchenette renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -14589,6 +14941,10 @@ exports[`Icon laptop renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -14752,6 +15108,10 @@ exports[`Icon lateNight renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -14917,6 +15277,10 @@ exports[`Icon list renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -15080,6 +15444,10 @@ exports[`Icon lock renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -15245,6 +15613,10 @@ exports[`Icon loyalty renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -15412,6 +15784,10 @@ exports[`Icon luggage renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -15575,6 +15951,10 @@ exports[`Icon manual renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -15740,6 +16120,10 @@ exports[`Icon map renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -15904,6 +16288,10 @@ exports[`Icon menu renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -16066,6 +16454,10 @@ exports[`Icon microwave renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -16233,6 +16625,10 @@ exports[`Icon mileage renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -16399,6 +16795,10 @@ exports[`Icon minus renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -16561,6 +16961,10 @@ exports[`Icon moon still renders old renamed icons 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -16725,6 +17129,10 @@ exports[`Icon notification renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -16887,6 +17295,10 @@ exports[`Icon overnight renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -17053,6 +17465,10 @@ exports[`Icon parking renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -17216,6 +17632,10 @@ exports[`Icon pets renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -17385,6 +17805,10 @@ exports[`Icon phone renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -17548,6 +17972,10 @@ exports[`Icon picture renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -17713,6 +18141,10 @@ exports[`Icon pin renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -17877,6 +18309,10 @@ exports[`Icon plus renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -18039,6 +18475,10 @@ exports[`Icon pool renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -18215,6 +18655,10 @@ exports[`Icon printer renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -18379,6 +18823,10 @@ exports[`Icon quilt renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -18541,6 +18989,10 @@ exports[`Icon radioChecked renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -18706,6 +19158,10 @@ exports[`Icon radioEmpty renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -18869,6 +19325,10 @@ exports[`Icon radioMinus renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -19034,6 +19494,10 @@ exports[`Icon radioPlus renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -19197,6 +19661,10 @@ exports[`Icon refresh renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -19362,6 +19830,10 @@ exports[`Icon restaurant renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -19525,6 +19997,10 @@ exports[`Icon ribbon renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -19700,6 +20176,10 @@ exports[`Icon roomSize renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -19864,6 +20344,10 @@ exports[`Icon search renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -20026,6 +20510,10 @@ exports[`Icon searchRecent renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -20192,6 +20680,10 @@ exports[`Icon seat renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -20355,6 +20847,10 @@ exports[`Icon seatBusiness renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -20522,6 +21018,10 @@ exports[`Icon seatEconomy renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -20688,6 +21188,10 @@ exports[`Icon security renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -20851,6 +21355,10 @@ exports[`Icon shuttle renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -21018,6 +21526,10 @@ exports[`Icon smoking renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -21183,6 +21695,10 @@ exports[`Icon spa renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -21351,6 +21867,10 @@ exports[`Icon splitTicket renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -21516,6 +22036,10 @@ exports[`Icon star renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -21679,6 +22203,10 @@ exports[`Icon starHalf renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -21841,6 +22369,10 @@ exports[`Icon steeringWheel renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -22007,6 +22539,10 @@ exports[`Icon success renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -22169,6 +22705,10 @@ exports[`Icon successOutline renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -22334,6 +22874,10 @@ exports[`Icon swap renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -22496,6 +23040,10 @@ exports[`Icon thumbsDown renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -22662,6 +23210,10 @@ exports[`Icon thumbsUp renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -22824,6 +23376,10 @@ exports[`Icon timer renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -22990,6 +23546,10 @@ exports[`Icon trendingUp renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -23152,6 +23712,10 @@ exports[`Icon trophy renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -23319,6 +23883,10 @@ exports[`Icon tune renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -23482,6 +24050,10 @@ exports[`Icon twitter renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -23649,6 +24221,10 @@ exports[`Icon unlock renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -23814,6 +24390,10 @@ exports[`Icon user renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -23977,6 +24557,10 @@ exports[`Icon verified renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -24142,6 +24726,10 @@ exports[`Icon warning renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -24304,6 +24892,10 @@ exports[`Icon warningOutline renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -24469,6 +25061,10 @@ exports[`Icon web renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -24632,6 +25228,10 @@ exports[`Icon whirlpool renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -24801,6 +25401,10 @@ exports[`Icon wifi renders 1`] = `
         "bold": 600,
         "regular": 400,
       },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
         "@media screen and (min-width:32em)",
@@ -24964,6 +25568,10 @@ exports[`Icon youtube renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [
@@ -25129,6 +25737,10 @@ exports[`Icon zoomOut renders 1`] = `
       "fontWeights": Object {
         "bold": 600,
         "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
       },
       "maxContainerWidth": "1280px",
       "mediaQueries": Array [

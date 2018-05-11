@@ -168,6 +168,10 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",
@@ -323,6 +327,10 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
         "fontWeights": Object {
           "bold": 600,
           "regular": 400,
+        },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
         },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
@@ -533,6 +541,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",
@@ -688,6 +700,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
         "fontWeights": Object {
           "bold": 600,
           "regular": 400,
+        },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
         },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
@@ -898,6 +914,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",
@@ -1053,6 +1073,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
         "fontWeights": Object {
           "bold": 600,
           "regular": 400,
+        },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
         },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
@@ -1263,6 +1287,10 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",
@@ -1418,6 +1446,10 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
         "fontWeights": Object {
           "bold": 600,
           "regular": 400,
+        },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
         },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
@@ -1628,6 +1660,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",
@@ -1783,6 +1819,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
         "fontWeights": Object {
           "bold": 600,
           "regular": 400,
+        },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
         },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
@@ -1993,6 +2033,10 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           "bold": 600,
           "regular": 400,
         },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
+        },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
           "@media screen and (min-width:32em)",
@@ -2148,6 +2192,10 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
         "fontWeights": Object {
           "bold": 600,
           "regular": 400,
+        },
+        "letterSpacings": Object {
+          "caps": "0.025em",
+          "normal": "normal",
         },
         "maxContainerWidth": "1280px",
         "mediaQueries": Array [
