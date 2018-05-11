@@ -43,6 +43,11 @@ export const lineHeights = {
   display: 1.25
 }
 
+const letterSpacings = {
+  normal: 'normal',
+  caps: '0.025em'
+}
+
 // color palette
 const black = '#000'
 const white = '#fff'
@@ -152,6 +157,25 @@ export const boxShadows = [
   `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`
 ]
 
+// animation duration
+export const duration = {
+  fast: 150,
+  normal: 300,
+  slow: 450,
+  slowest: 600
+}
+
+// animation easing curves
+const easeInOut = 'cubic-bezier(0.5, 0, 0.25, 1)'
+const easeOut = 'cubic-bezier(0, 0, 0.25, 1)'
+const easeIn = 'cubic-bezier(0.5, 0, 1, 1)'
+
+const timingFunctions = {
+  easeInOut,
+  easeOut,
+  easeIn
+}
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -160,13 +184,16 @@ const theme = {
   fontSizes,
   fontWeights,
   lineHeights,
+  letterSpacings,
   regular,
   bold,
   colors,
   radii,
   radius,
   boxShadows,
-  maxContainerWidth
+  maxContainerWidth,
+  duration,
+  timingFunctions
 }
 
 export default theme

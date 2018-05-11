@@ -17,16 +17,18 @@ import Pagination from './Pagination'
 
 const colors = Object.keys(theme.colors)
   .filter(key => !/[0-9]$/.test(key))
-  .filter(key => !/^(text|black|white|borderGray)$/.test(key))
   .map(key => ({
     name: key,
     value: theme.colors[key]
   }))
   .filter(color => !Array.isArray(color.value))
 
-const primaries = colors.filter(color => !/^(light|dark)/.test(color.name))
-const darks = colors.filter(color => /^dark/.test(color.name))
-const lights = colors.filter(color => /^light/.test(color.name))
+const primaries = colors.filter(
+  color => !/^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
+)
+const grays = colors.filter(color =>
+  /^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
+)
 
 const ColorChip = styled(Box)`
   height: 100px;
@@ -122,8 +124,7 @@ const Color = props => (
     </Description>
     <Flex wrap mx={-2} pt={4}>
       <ColorList colors={primaries} />
-      <ColorList colors={lights} />
-      <ColorList colors={darks} />
+      <ColorList colors={grays} />
     </Flex>
     <Pagination {...props} />
   </Box>

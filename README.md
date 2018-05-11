@@ -11,7 +11,6 @@
 [coverage]: https://codecov.io/github/pricelinelabs/design-system
 [npm version]: https://img.shields.io/npm/v/pcln-design-system.svg?style=flat-square
 
-
 https://pricelinelabs.github.io/design-system/
 
 ```sh
@@ -27,32 +26,8 @@ For all contributors, please be sure to read the [Contributing](docs/Contributin
 
 ## Documentation
 
-- [Docs](docs)
-- [Getting Started](docs/GettingStarted.md)
-- [Contributing](docs/Contributing.md)
-- [Theme](docs/Theme.md)
-- [ThemeProvider](docs/ThemeProvider.md)
-
-**Components**
-- [`<BackgroundImage />`](docs/BackgroundImage.md)
-- [`<Badge />`](docs/Badge.md)
-- [`<Banner />`](docs/Banner.md)
-- [`<Box />`](docs/Box.md)
-- [`<Button />`](docs/Button.md)
-- [`<Card />`](docs/Card.md)
-- [`<Flag />`](docs/Flag.md)
-- [`<Heading />`](docs/Heading.md)
-- [`<Hide />`](docs/Hide.md)
-- [`<Hug />`](docs/Hug.md)
-- [`<Icon />`](docs/Icon.md)
-- [`<IconButton />`](docs/IconButton.md)
-- [`<Image />`](docs/Image.md)
-- [`<Flex />`](docs/Flex.md)
-- [`<Link />`](docs/Link.md)
-- [`<Text />`](docs/Text.md)
-- [`<Truncate />`](docs/Truncate.md)
-- [`<RatingBadge />`](docs/RatingBadge.md)
-
+- [Docs][site]
+- [Storybook][storybook]
 
 ## Motivation
 
@@ -62,7 +37,6 @@ for both designers and developers.
 
 Built off of the work of previous efforts, this project intends
 to consolidate those ideas into a living, well-documented, and growing system.
-
 
 ## Goals
 
@@ -80,5 +54,6 @@ We hope to accomplish these goals by:
 - Providing easy-to-use and extensible components for anyone to consume
 
 [site]: https://pricelinelabs.github.io/design-system/
+[storybook]: https://pricelinelabs.github.io/design-system/storybook/
 
 [MIT License](LICENSE.md)

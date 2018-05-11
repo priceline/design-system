@@ -1,12 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner only accepts preset colors 1`] = `
-.c1 {
+exports[`Banner accepts non-preset colors 1`] = `
+.c2 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
+  background-color: #687B8E;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,10 +25,14 @@ exports[`Banner only accepts preset colors 1`] = `
 }
 
 .c3 {
+  text-align: left;
+}
+
+.c5 {
   font-size: 14px;
 }
 
-.c2 {
+.c4 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -33,25 +40,28 @@ exports[`Banner only accepts preset colors 1`] = `
 }
 
 <div
-  className=""
+  className="c0"
   color={undefined}
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
-      width={1}
+      className="c2"
     >
-      <h5
-        className="c2"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
+      <div
         className="c3"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c4"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c5"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -65,7 +75,6 @@ exports[`Banner renders content from children props 1`] = `
 
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c1 {
@@ -83,7 +92,11 @@ exports[`Banner renders content from children props 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -91,11 +104,11 @@ exports[`Banner renders content from children props 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -113,6 +126,160 @@ exports[`Banner renders content from children props 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -122,20 +289,23 @@ exports[`Banner renders content from children props 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
-      <span>
-        123
-      </span>
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+        <span>
+          123
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -144,7 +314,6 @@ exports[`Banner renders content from children props 1`] = `
 exports[`Banner renders with blue bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -167,7 +336,11 @@ exports[`Banner renders with blue bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -175,11 +348,11 @@ exports[`Banner renders with blue bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -197,6 +370,160 @@ exports[`Banner renders with blue bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -206,17 +533,20 @@ exports[`Banner renders with blue bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -230,7 +560,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c1 {
@@ -248,7 +577,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -256,11 +589,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -278,6 +611,160 @@ exports[`Banner renders with custom iconName and size 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 24 24"
       width={24}
     >
@@ -287,17 +774,20 @@ exports[`Banner renders with custom iconName and size 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -311,7 +801,6 @@ exports[`Banner renders with green bg 1`] = `
 
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c1 {
@@ -329,7 +818,11 @@ exports[`Banner renders with green bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -337,11 +830,11 @@ exports[`Banner renders with green bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -359,6 +852,160 @@ exports[`Banner renders with green bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -368,17 +1015,20 @@ exports[`Banner renders with green bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -387,7 +1037,6 @@ exports[`Banner renders with green bg 1`] = `
 exports[`Banner renders with lightBlue bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -410,7 +1059,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -418,11 +1071,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -440,6 +1093,160 @@ exports[`Banner renders with lightBlue bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -449,17 +1256,20 @@ exports[`Banner renders with lightBlue bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -468,7 +1278,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
 exports[`Banner renders with lightGreen bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -491,7 +1300,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -499,11 +1312,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -521,6 +1334,160 @@ exports[`Banner renders with lightGreen bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -530,17 +1497,20 @@ exports[`Banner renders with lightGreen bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -549,7 +1519,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
 exports[`Banner renders with lightOrange bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -572,7 +1541,11 @@ exports[`Banner renders with lightOrange bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -580,11 +1553,11 @@ exports[`Banner renders with lightOrange bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -602,6 +1575,160 @@ exports[`Banner renders with lightOrange bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 22 19"
       width={24}
     >
@@ -611,17 +1738,20 @@ exports[`Banner renders with lightOrange bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -630,7 +1760,6 @@ exports[`Banner renders with lightOrange bg 1`] = `
 exports[`Banner renders with lightRed bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -653,7 +1782,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -661,11 +1794,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -683,6 +1816,160 @@ exports[`Banner renders with lightRed bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -692,17 +1979,20 @@ exports[`Banner renders with lightRed bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -716,7 +2006,6 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c1 {
@@ -734,7 +2023,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -742,11 +2035,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -764,6 +2057,160 @@ exports[`Banner renders with no props other than theme 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -773,17 +2220,20 @@ exports[`Banner renders with no props other than theme 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -792,7 +2242,6 @@ exports[`Banner renders with no props other than theme 1`] = `
 exports[`Banner renders with orange bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -815,7 +2264,11 @@ exports[`Banner renders with orange bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -823,11 +2276,11 @@ exports[`Banner renders with orange bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -845,6 +2298,160 @@ exports[`Banner renders with orange bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 22 19"
       width={24}
     >
@@ -854,17 +2461,20 @@ exports[`Banner renders with orange bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -873,7 +2483,6 @@ exports[`Banner renders with orange bg 1`] = `
 exports[`Banner renders with red bg 1`] = `
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c0 {
@@ -896,7 +2505,11 @@ exports[`Banner renders with red bg 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -904,11 +2517,11 @@ exports[`Banner renders with red bg 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -926,6 +2539,160 @@ exports[`Banner renders with red bg 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 20 20"
       width={24}
     >
@@ -935,17 +2702,20 @@ exports[`Banner renders with red bg 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
-      />
-      <span
-        className="c5"
-        fontSize={1}
-      />
+      >
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        />
+        <span
+          className="c6"
+          fontSize={1}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -959,7 +2729,6 @@ exports[`Banner renders with text node 1`] = `
 
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c1 {
@@ -977,7 +2746,11 @@ exports[`Banner renders with text node 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -985,11 +2758,11 @@ exports[`Banner renders with text node 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -1007,6 +2780,160 @@ exports[`Banner renders with text node 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 24 24"
       width={24}
     >
@@ -1016,25 +2943,28 @@ exports[`Banner renders with text node 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
       >
-        Header
-      </h5>
-      <span
-        className="c5"
-        fontSize={1}
-      >
-        <div
-          className=""
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
         >
-          Text
-        </div>
-      </span>
+          Header
+        </h5>
+        <span
+          className="c6"
+          fontSize={1}
+        >
+          <div
+            className=""
+          >
+            Text
+          </div>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1048,7 +2978,6 @@ exports[`Banner renders with text string 1`] = `
 
 .c3 {
   width: 100%;
-  text-align: left;
 }
 
 .c1 {
@@ -1066,7 +2995,11 @@ exports[`Banner renders with text string 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 {
+  text-align: left;
+}
+
+.c6 {
   font-size: 14px;
 }
 
@@ -1074,11 +3007,11 @@ exports[`Banner renders with text string 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  margin-right: 32px;
+  margin-right: 8px;
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
@@ -1096,6 +3029,160 @@ exports[`Banner renders with text string 1`] = `
       className="c2"
       fill="currentcolor"
       height={24}
+      theme={
+        Object {
+          "bold": 700,
+          "boxShadows": Array [
+            "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+            "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+          ],
+          "breakpoints": Array [
+            32,
+            40,
+            48,
+            64,
+          ],
+          "colors": Object {
+            "black": "#000",
+            "blue": "#007aff",
+            "blue0": "#cdf",
+            "blue1": "#cdf",
+            "blue2": "#007aff",
+            "blue3": "#007aff",
+            "blues": Array [
+              "#cdf",
+              "#cdf",
+              "#007aff",
+              "#007aff",
+            ],
+            "borderGray": "#d1d6db",
+            "darkBlue": "#049",
+            "darkGray": "#364049",
+            "darkGreen": "#060",
+            "darkOrange": "#a50",
+            "darkPurple": "#407",
+            "darkRed": "#800",
+            "gray": "#687B8E",
+            "gray0": "#f6f8fa",
+            "gray1": "#f6f8fa",
+            "gray2": "#687B8E",
+            "gray3": "#687B8E",
+            "green": "#0a0",
+            "green0": "#cec",
+            "green1": "#cec",
+            "green2": "#0a0",
+            "green3": "#0a0",
+            "greens": Array [
+              "#cec",
+              "#cec",
+              "#0a0",
+              "#0a0",
+            ],
+            "lightBlue": "#cdf",
+            "lightGray": "#f6f8fa",
+            "lightGreen": "#cec",
+            "lightOrange": "#feb",
+            "lightPurple": "#ecf",
+            "lightRed": "#fcc",
+            "orange": "#fa0",
+            "orange0": "#feb",
+            "orange1": "#feb",
+            "orange2": "#fa0",
+            "orange3": "#fa0",
+            "oranges": Array [
+              "#feb",
+              "#feb",
+              "#fa0",
+              "#fa0",
+            ],
+            "purple": "#70b",
+            "purple0": "#ecf",
+            "purple1": "#ecf",
+            "purple2": "#70b",
+            "purple3": "#70b",
+            "purples": Array [
+              "#ecf",
+              "#ecf",
+              "#70b",
+              "#70b",
+            ],
+            "red": "#c00",
+            "red0": "#fcc",
+            "red1": "#fcc",
+            "red2": "#c00",
+            "red3": "#c00",
+            "reds": Array [
+              "#fcc",
+              "#fcc",
+              "#c00",
+              "#c00",
+            ],
+            "text": "#001833",
+            "white": "#fff",
+          },
+          "duration": Object {
+            "fast": 150,
+            "normal": 300,
+            "slow": 450,
+            "slowest": 600,
+          },
+          "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+          "fontSizes": Array [
+            12,
+            14,
+            16,
+            20,
+            24,
+            32,
+            40,
+            56,
+            72,
+          ],
+          "fontWeights": Object {
+            "bold": 700,
+            "medium": 500,
+            "regular": 500,
+          },
+          "letterSpacings": Object {
+            "caps": "0.025em",
+            "normal": "normal",
+          },
+          "lineHeights": Object {
+            "display": 1.25,
+            "standard": 1.5,
+          },
+          "maxContainerWidth": "1280px",
+          "mediaQueries": Array [
+            "@media screen and (min-width:32em)",
+            "@media screen and (min-width:40em)",
+            "@media screen and (min-width:48em)",
+            "@media screen and (min-width:64em)",
+          ],
+          "radii": Array [
+            0,
+            2,
+            6,
+          ],
+          "radius": "2px",
+          "regular": 500,
+          "space": Array [
+            0,
+            4,
+            8,
+            16,
+            32,
+            64,
+            128,
+          ],
+          "timingFunctions": Object {
+            "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+            "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+        }
+      }
       viewBox="0 0 24 24"
       width={24}
     >
@@ -1105,21 +3192,24 @@ exports[`Banner renders with text string 1`] = `
     </svg>
     <div
       className="c3"
-      width={1}
     >
-      <h5
+      <div
         className="c4"
-        fontSize={4}
-        fontWeight="bold"
       >
-        Header
-      </h5>
-      <span
-        className="c5"
-        fontSize={1}
-      >
-        Text
-      </span>
+        <h5
+          className="c5"
+          fontSize={4}
+          fontWeight="bold"
+        >
+          Header
+        </h5>
+        <span
+          className="c6"
+          fontSize={1}
+        >
+          Text
+        </span>
+      </div>
     </div>
   </div>
 </div>

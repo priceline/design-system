@@ -3,10 +3,17 @@ import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 import Box from './Box'
 import Flex from './Flex'
+import Select from './Select'
 import Icon from './Icon'
 import Label from './Label'
 import Input from './Input'
 import theme from './theme'
+
+const Root = styled(Box)`
+  & ${Box} {
+    pointer-events: none;
+  }
+`
 
 const fadeIn = keyframes`
   from {
@@ -21,7 +28,7 @@ const labelStyles = {
   animation: fadeIn + ' 0.3s'
 }
 
-const getInputStyles = showLabel => {
+const getFieldStyles = showLabel => {
   return showLabel
     ? {
         paddingTop: '20px',
@@ -35,62 +42,72 @@ const getInputStyles = showLabel => {
       }
 }
 
-class InputField extends React.Component {
-  constructor(props) {
-    super(props)
+const noop = () => {}
 
-    let hasInitialValue
+const formElements = [Input, Select]
 
-    React.Children.forEach(props.children, child => {
-      if (child && child.type === Input) {
-        hasInitialValue = !!child.props.value
-      }
-    })
+const isFormElement = element => formElements.includes(element)
 
-    this.state = {
-      showLabel: hasInitialValue
-    }
+class FormField extends React.Component {
+  static defaultProps = {
+    // for backwards-compatibility
+    onChange: noop,
+    theme: theme
   }
 
-  onInputChange = event => {
-    this.setState({
-      showLabel: event.target.value
-    })
+  // for backwards-compatibility
+  handleChange = onChange => e => {
+    this.props.onChange(e)
+    if (typeof onChange !== 'function') return
+    onChange(e)
+  }
 
-    this.props.onChange(event)
+  hasValue = () => {
+    const { children } = this.props
+    return React.Children.toArray(children).reduce(
+      (a, child) =>
+        a || (child && isFormElement(child.type) && child.props.value),
+      false
+    )
   }
 
   render() {
     const { label, icon, children, onChange, ...props } = this.props
 
-    let InputChild
-    let inputPosition = -1
+    let FieldChild
+    let position = -1
     let LabelChild
     let BeforeIcon
     let AfterIcon
-    let inputId
-    let inputPlaceholder
+    let fieldId
+    let fieldPlaceholder
     let iconAdjustment
 
     React.Children.forEach(children, (child, index) => {
-      if (child) {
-        if (child.type === Label) {
-          LabelChild = child
-        }
-        if (child.type === Input) {
-          inputPosition = index
-          InputChild = child
-          inputId = child.props.id
-          // For aria-label when Label child is not rendered
-          inputPlaceholder = child.props.placeholder
-        }
-        if (child.type === Icon) {
-          if (inputPosition < 0) {
-            BeforeIcon = child
-            iconAdjustment = child.props.size - Icon.defaultProps.size
-          } else {
-            AfterIcon = child
-          }
+      if (!child) {
+        return
+      }
+
+      const { type, props } = child
+
+      if (type === Label) {
+        LabelChild = child
+      }
+
+      if (type === Input || type === Select) {
+        position = index
+        FieldChild = child
+        fieldId = props.id
+        // For aria-label when Label child is not rendered
+        fieldPlaceholder = props.placeholder
+      }
+
+      if (type === Icon) {
+        if (position < 0) {
+          BeforeIcon = child
+          iconAdjustment = props.size - 24
+        } else {
+          AfterIcon = child
         }
       }
     })
@@ -102,40 +119,45 @@ class InputField extends React.Component {
     if (label) {
       LabelChild = <Label>{label}</Label>
     }
-    if (!InputChild) {
-      InputChild = <Input />
+    if (!FieldChild) {
+      FieldChild = <Input />
     }
 
     const showLabel =
-      this.props.alwaysShowLabel || (LabelChild && this.state.showLabel)
+      this.props.alwaysShowLabel || (LabelChild && this.hasValue())
 
     return (
-      <Box>
+      <Root>
         {showLabel &&
           React.cloneElement(LabelChild, {
             pl: BeforeIcon ? 40 : 2,
-            mt: '5px',
+            mt: '6px',
             style: labelStyles,
-            htmlFor: inputId
+            htmlFor: fieldId
           })}
         <Flex align="center" width={1} mt={0}>
           {BeforeIcon && (
-            <Box mr={-4} ml={8 - iconAdjustment} mt={showLabel ? -12 : 2}>
+            <Box
+              mr={-4}
+              ml={`${8 - iconAdjustment}px`}
+              mt={showLabel ? '-12px' : '2px'}
+            >
               {BeforeIcon}
             </Box>
           )}
-          {React.cloneElement(InputChild, {
+          {React.cloneElement(FieldChild, {
             'aria-label':
-              !showLabel && inputPlaceholder ? inputPlaceholder : null,
+              !showLabel && fieldPlaceholder ? fieldPlaceholder : null,
             mt: showLabel && -20,
             pl: BeforeIcon ? 40 : 2,
             pr: AfterIcon && 40,
-            style: getInputStyles(showLabel),
-            onChange: this.onInputChange,
+            style: getFieldStyles(showLabel),
             width: 1,
             innerRef: elem => {
-              this.inputRef = elem
+              this.fieldRef = elem
             },
+            // for backwards compatibility
+            onChange: this.handleChange(FieldChild.props.onChange),
             ...props
           })}
           {AfterIcon && (
@@ -144,18 +166,17 @@ class InputField extends React.Component {
             </Box>
           )}
         </Flex>
-      </Box>
+      </Root>
     )
   }
 }
 
-InputField.propTypes = {
-  onChange: PropTypes.func.isRequired,
+FormField.propTypes = {
   alwaysShowLabel: PropTypes.bool,
   children: function(props, propName, componentName) {
     const prop = props[propName]
-    let inputCount = 0
-    let inputPosition = 0
+    let count = 0
+    let position = 0
     let labelCount = 0
     let firstIconPosition = -1
     let secondIconPosition = 999
@@ -164,8 +185,8 @@ InputField.propTypes = {
       if (child === null) return
       switch (child.type) {
         case Input:
-          inputPosition = index
-          inputCount++
+          position = index
+          count++
           break
         case Icon:
           if (iconCount === 0) {
@@ -185,9 +206,9 @@ InputField.propTypes = {
       }
     })
 
-    if (!inputCount) {
+    if (!count) {
       return new Error(
-        `No 'Input' child found for '${componentName}'. Please update your component to use the compound version of this component and pass an 'Input' component as the child`
+        `No 'Input or Select' child found for '${componentName}'. Please update your component to use the compound version of this component and pass an Input or Select component as the child`
       )
     }
     if (labelCount > 1) {
@@ -202,13 +223,13 @@ InputField.propTypes = {
     }
     if (
       iconCount === 2 &&
-      (firstIconPosition > inputPosition || secondIconPosition < inputPosition)
+      (firstIconPosition > position || secondIconPosition < position)
     ) {
       return new Error(
-        `If 2 'Icons' are provided, the 'Input' component must be positioned between them as children of '${componentName}'`
+        `If 2 'Icons' are provided, the 'Field' component must be positioned between them as children of '${componentName}'`
       )
     }
   }
 }
 
-export default InputField
+export default FormField
