@@ -11,7 +11,6 @@ describe('Button', () => {
   test('size small sets height and font-size', () => {
     const json = renderer.create(<Button size="small" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('height', '32px')
     expect(json).toHaveStyleRule('font-size', '12px')
     expect(json).toHaveStyleRule('background-color', theme.colors.blue)
     expect(json).toHaveStyleRule('color', theme.colors.white)
@@ -20,14 +19,12 @@ describe('Button', () => {
   test('size medium sets height and font-size', () => {
     const json = renderer.create(<Button size="medium" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('height', '40px')
     expect(json).toHaveStyleRule('font-size', '14px')
   })
 
   test('size large sets height and font-size', () => {
     const json = renderer.create(<Button size="large" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('height', '48px')
     expect(json).toHaveStyleRule('font-size', '16px')
   })
 

@@ -10,15 +10,15 @@ exports[`OutlineButton disabled prop sets 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
+  line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
   background-color: #007aff;
   color: #fff;
   border-width: 0;
   border-style: solid;
-  height: 40px;
   font-size: 14px;
-  padding: 0 18px;
+  padding: 9.5px 18px;
 }
 
 .c1:disabled {
@@ -53,15 +53,15 @@ exports[`OutlineButton renders 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
+  line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
   background-color: #007aff;
   color: #fff;
   border-width: 0;
   border-style: solid;
-  height: 40px;
   font-size: 14px;
-  padding: 0 18px;
+  padding: 9.5px 18px;
 }
 
 .c1:disabled {
@@ -101,15 +101,15 @@ exports[`OutlineButton without disabled prop sets 1`] = `
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
+  line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
   background-color: #007aff;
   color: #fff;
   border-width: 0;
   border-style: solid;
-  height: 40px;
   font-size: 14px;
-  padding: 0 18px;
+  padding: 9.5px 18px;
 }
 
 .c1:disabled {
