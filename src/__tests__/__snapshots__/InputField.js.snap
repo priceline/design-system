@@ -225,10 +225,10 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -271,6 +271,12 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -398,10 +404,10 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -444,6 +450,12 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -654,10 +666,10 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -700,6 +712,12 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -827,10 +845,10 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -873,6 +891,12 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -1083,10 +1107,10 @@ exports[`InputField it renders a with a both icons 1`] = `
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -1129,6 +1153,12 @@ exports[`InputField it renders a with a both icons 1`] = `
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -1256,10 +1286,10 @@ exports[`InputField it renders a with a both icons 1`] = `
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -1302,6 +1332,12 @@ exports[`InputField it renders a with a both icons 1`] = `
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -1599,10 +1635,10 @@ exports[`InputField it renders a with a left side icon 1`] = `
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -1645,6 +1681,12 @@ exports[`InputField it renders a with a left side icon 1`] = `
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }
@@ -1877,10 +1919,10 @@ exports[`InputField it renders a with a right side icon 1`] = `
               "white": "#fff",
             },
             "duration": Object {
-              "fast": 150,
-              "normal": 300,
-              "slow": 450,
-              "slowest": 600,
+              "fast": "150ms",
+              "normal": "300ms",
+              "slow": "450ms",
+              "slowest": "600ms",
             },
             "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
@@ -1923,6 +1965,12 @@ exports[`InputField it renders a with a right side icon 1`] = `
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
               "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+            },
+            "transitionDelays": Object {
+              "large": "260ms",
+              "medium": "160ms",
+              "small": "60ms",
+              "xLarge": "360ms",
             },
           }
         }

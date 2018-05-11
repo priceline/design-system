@@ -105,10 +105,10 @@ exports[`Icon Setting legacy false falls back to using the legacy set 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -151,6 +151,12 @@ exports[`Icon Setting legacy false falls back to using the legacy set 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -268,10 +274,10 @@ exports[`Icon Setting legacy false prefers using the new icon set 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -314,6 +320,12 @@ exports[`Icon Setting legacy false prefers using the new icon set 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -431,10 +443,10 @@ exports[`Icon ac renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -477,6 +489,12 @@ exports[`Icon ac renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -596,10 +614,10 @@ exports[`Icon accessible renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -642,6 +660,12 @@ exports[`Icon accessible renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -762,10 +786,10 @@ exports[`Icon amenityWifi still renders old renamed icons 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -808,6 +832,12 @@ exports[`Icon amenityWifi still renders old renamed icons 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -925,10 +955,10 @@ exports[`Icon arrival renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -971,6 +1001,12 @@ exports[`Icon arrival renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -1089,10 +1125,10 @@ exports[`Icon arrowDown renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -1135,6 +1171,12 @@ exports[`Icon arrowDown renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -1252,10 +1294,10 @@ exports[`Icon arrowLeft renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -1298,6 +1340,12 @@ exports[`Icon arrowLeft renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -1415,10 +1463,10 @@ exports[`Icon arrowRight renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -1461,6 +1509,12 @@ exports[`Icon arrowRight renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -1578,10 +1632,10 @@ exports[`Icon arrowUp renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -1624,6 +1678,12 @@ exports[`Icon arrowUp renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -1741,10 +1801,10 @@ exports[`Icon attention renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -1787,6 +1847,12 @@ exports[`Icon attention renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -1904,10 +1970,10 @@ exports[`Icon automatic renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -1950,6 +2016,12 @@ exports[`Icon automatic renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -2069,10 +2141,10 @@ exports[`Icon bag renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -2115,6 +2187,12 @@ exports[`Icon bag renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -2233,10 +2311,10 @@ exports[`Icon beach renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -2279,6 +2357,12 @@ exports[`Icon beach renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -2398,10 +2482,10 @@ exports[`Icon bed renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -2444,6 +2528,12 @@ exports[`Icon bed renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -2562,10 +2652,10 @@ exports[`Icon boxChecked renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -2608,6 +2698,12 @@ exports[`Icon boxChecked renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -2726,10 +2822,10 @@ exports[`Icon boxEmpty renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -2772,6 +2868,12 @@ exports[`Icon boxEmpty renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -2890,10 +2992,10 @@ exports[`Icon boxMinus renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -2936,6 +3038,12 @@ exports[`Icon boxMinus renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -3054,10 +3162,10 @@ exports[`Icon boxPlus renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -3100,6 +3208,12 @@ exports[`Icon boxPlus renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -3218,10 +3332,10 @@ exports[`Icon breakfast renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -3264,6 +3378,12 @@ exports[`Icon breakfast renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -3382,10 +3502,10 @@ exports[`Icon build renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -3428,6 +3548,12 @@ exports[`Icon build renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -3546,10 +3672,10 @@ exports[`Icon business renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -3592,6 +3718,12 @@ exports[`Icon business renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -3710,10 +3842,10 @@ exports[`Icon cake renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -3756,6 +3888,12 @@ exports[`Icon cake renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -3873,10 +4011,10 @@ exports[`Icon calendar renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -3919,6 +4057,12 @@ exports[`Icon calendar renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -4036,10 +4180,10 @@ exports[`Icon carCircle renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -4082,6 +4226,12 @@ exports[`Icon carCircle renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -4203,10 +4353,10 @@ exports[`Icon carDoor renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -4249,6 +4399,12 @@ exports[`Icon carDoor renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -4367,10 +4523,10 @@ exports[`Icon carriage renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -4413,6 +4569,12 @@ exports[`Icon carriage renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -4533,10 +4695,10 @@ exports[`Icon cars renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -4579,6 +4741,12 @@ exports[`Icon cars renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -4698,10 +4866,10 @@ exports[`Icon casino renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -4744,6 +4912,12 @@ exports[`Icon casino renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -4864,10 +5038,10 @@ exports[`Icon chart renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -4910,6 +5084,12 @@ exports[`Icon chart renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -5028,10 +5208,10 @@ exports[`Icon chat renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -5074,6 +5254,12 @@ exports[`Icon chat renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -5192,10 +5378,10 @@ exports[`Icon check renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -5238,6 +5424,12 @@ exports[`Icon check renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -5355,10 +5547,10 @@ exports[`Icon chevronDown renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -5401,6 +5593,12 @@ exports[`Icon chevronDown renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -5518,10 +5716,10 @@ exports[`Icon chevronDownThick still renders old renamed icons 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -5564,6 +5762,12 @@ exports[`Icon chevronDownThick still renders old renamed icons 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -5681,10 +5885,10 @@ exports[`Icon chevronLeft renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -5727,6 +5931,12 @@ exports[`Icon chevronLeft renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -5844,10 +6054,10 @@ exports[`Icon chevronRight renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -5890,6 +6100,12 @@ exports[`Icon chevronRight renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6007,10 +6223,10 @@ exports[`Icon chevronUp renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -6053,6 +6269,12 @@ exports[`Icon chevronUp renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6170,10 +6392,10 @@ exports[`Icon cityView renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -6216,6 +6438,12 @@ exports[`Icon cityView renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6335,10 +6563,10 @@ exports[`Icon clock renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -6381,6 +6609,12 @@ exports[`Icon clock renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6499,10 +6733,10 @@ exports[`Icon close renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -6545,6 +6779,12 @@ exports[`Icon close renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6662,10 +6902,10 @@ exports[`Icon cloud renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -6708,6 +6948,12 @@ exports[`Icon cloud renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6827,10 +7073,10 @@ exports[`Icon collisionCoverage renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -6873,6 +7119,12 @@ exports[`Icon collisionCoverage renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -6993,10 +7245,10 @@ exports[`Icon coupon renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -7039,6 +7291,12 @@ exports[`Icon coupon renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -7158,10 +7416,10 @@ exports[`Icon creditCard renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -7204,6 +7462,12 @@ exports[`Icon creditCard renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -7322,10 +7586,10 @@ exports[`Icon cruises renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -7368,6 +7632,12 @@ exports[`Icon cruises renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -7489,10 +7759,10 @@ exports[`Icon departure renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -7535,6 +7805,12 @@ exports[`Icon departure renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -7653,10 +7929,10 @@ exports[`Icon devices renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -7699,6 +7975,12 @@ exports[`Icon devices renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -7818,10 +8100,10 @@ exports[`Icon directions renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -7864,6 +8146,12 @@ exports[`Icon directions renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -7982,10 +8270,10 @@ exports[`Icon discount renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -8028,6 +8316,12 @@ exports[`Icon discount renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -8149,10 +8443,10 @@ exports[`Icon document renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -8195,6 +8489,12 @@ exports[`Icon document renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -8313,10 +8613,10 @@ exports[`Icon dollar renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -8359,6 +8659,12 @@ exports[`Icon dollar renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -8476,10 +8782,10 @@ exports[`Icon dollarCircle renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -8522,6 +8828,12 @@ exports[`Icon dollarCircle renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -8642,10 +8954,10 @@ exports[`Icon earlyBird renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -8688,6 +9000,12 @@ exports[`Icon earlyBird renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -8806,10 +9124,10 @@ exports[`Icon edit renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -8852,6 +9170,12 @@ exports[`Icon edit renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -8970,10 +9294,10 @@ exports[`Icon electric renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -9016,6 +9340,12 @@ exports[`Icon electric renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -9133,10 +9463,10 @@ exports[`Icon email renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -9179,6 +9509,12 @@ exports[`Icon email renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -9297,10 +9633,10 @@ exports[`Icon event renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -9343,6 +9679,12 @@ exports[`Icon event renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -9461,10 +9803,10 @@ exports[`Icon eventAvailable renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -9507,6 +9849,12 @@ exports[`Icon eventAvailable renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -9625,10 +9973,10 @@ exports[`Icon eventBusy renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -9671,6 +10019,12 @@ exports[`Icon eventBusy renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -9790,10 +10144,10 @@ exports[`Icon facebook renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -9836,6 +10190,12 @@ exports[`Icon facebook renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -9955,10 +10315,10 @@ exports[`Icon favoriteHotel renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10001,6 +10361,12 @@ exports[`Icon favoriteHotel renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -10120,10 +10486,10 @@ exports[`Icon filter renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10166,6 +10532,12 @@ exports[`Icon filter renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -10283,10 +10655,10 @@ exports[`Icon fitness renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10329,6 +10701,12 @@ exports[`Icon fitness renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -10447,10 +10825,10 @@ exports[`Icon flame renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10493,6 +10871,12 @@ exports[`Icon flame renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -10612,10 +10996,10 @@ exports[`Icon flightCircle renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10658,6 +11042,12 @@ exports[`Icon flightCircle renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -10776,10 +11166,10 @@ exports[`Icon flightCoverage renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10822,6 +11212,12 @@ exports[`Icon flightCoverage renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -10940,10 +11336,10 @@ exports[`Icon flights renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -10986,6 +11382,12 @@ exports[`Icon flights renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -11104,10 +11506,10 @@ exports[`Icon freeCancellation renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -11150,6 +11552,12 @@ exports[`Icon freeCancellation renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -11268,10 +11676,10 @@ exports[`Icon fridge renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -11314,6 +11722,12 @@ exports[`Icon fridge renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -11432,10 +11846,10 @@ exports[`Icon gallery renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -11478,6 +11892,12 @@ exports[`Icon gallery renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -11596,10 +12016,10 @@ exports[`Icon gas renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -11642,6 +12062,12 @@ exports[`Icon gas renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -11762,10 +12188,10 @@ exports[`Icon globe renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -11808,6 +12234,12 @@ exports[`Icon globe renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -11931,10 +12363,10 @@ exports[`Icon gps renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -11977,6 +12409,12 @@ exports[`Icon gps renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -12096,10 +12534,10 @@ exports[`Icon graph renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -12142,6 +12580,12 @@ exports[`Icon graph renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -12259,10 +12703,10 @@ exports[`Icon grid renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -12305,6 +12749,12 @@ exports[`Icon grid renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -12423,10 +12873,10 @@ exports[`Icon guests renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -12469,6 +12919,12 @@ exports[`Icon guests renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -12588,10 +13044,10 @@ exports[`Icon help renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -12634,6 +13090,12 @@ exports[`Icon help renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -12753,10 +13215,10 @@ exports[`Icon history renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -12799,6 +13261,12 @@ exports[`Icon history renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -12918,10 +13386,10 @@ exports[`Icon home renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -12964,6 +13432,12 @@ exports[`Icon home renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -13081,10 +13555,10 @@ exports[`Icon hotelCircle renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -13127,6 +13601,12 @@ exports[`Icon hotelCircle renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -13246,10 +13726,10 @@ exports[`Icon hotels renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -13292,6 +13772,12 @@ exports[`Icon hotels renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -13411,10 +13897,10 @@ exports[`Icon hybrid renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -13457,6 +13943,12 @@ exports[`Icon hybrid renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -13575,10 +14067,10 @@ exports[`Icon inclusive renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -13621,6 +14113,12 @@ exports[`Icon inclusive renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -13740,10 +14238,10 @@ exports[`Icon information renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -13786,6 +14284,12 @@ exports[`Icon information renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -13903,10 +14407,10 @@ exports[`Icon informationOutline renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -13949,6 +14453,12 @@ exports[`Icon informationOutline renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -14067,10 +14577,10 @@ exports[`Icon instagram renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -14113,6 +14623,12 @@ exports[`Icon instagram renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -14240,10 +14756,10 @@ exports[`Icon key renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -14286,6 +14802,12 @@ exports[`Icon key renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -14404,10 +14926,10 @@ exports[`Icon kitchenette renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -14450,6 +14972,12 @@ exports[`Icon kitchenette renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -14570,10 +15098,10 @@ exports[`Icon laptop renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -14616,6 +15144,12 @@ exports[`Icon laptop renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -14734,10 +15268,10 @@ exports[`Icon lateNight renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -14780,6 +15314,12 @@ exports[`Icon lateNight renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -14898,10 +15438,10 @@ exports[`Icon list renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -14944,6 +15484,12 @@ exports[`Icon list renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -15062,10 +15608,10 @@ exports[`Icon lock renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -15108,6 +15654,12 @@ exports[`Icon lock renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -15227,10 +15779,10 @@ exports[`Icon loyalty renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -15273,6 +15825,12 @@ exports[`Icon loyalty renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -15393,10 +15951,10 @@ exports[`Icon luggage renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -15439,6 +15997,12 @@ exports[`Icon luggage renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -15557,10 +16121,10 @@ exports[`Icon manual renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -15603,6 +16167,12 @@ exports[`Icon manual renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -15721,10 +16291,10 @@ exports[`Icon map renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -15767,6 +16337,12 @@ exports[`Icon map renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -15885,10 +16461,10 @@ exports[`Icon menu renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -15931,6 +16507,12 @@ exports[`Icon menu renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -16048,10 +16630,10 @@ exports[`Icon microwave renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -16094,6 +16676,12 @@ exports[`Icon microwave renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -16214,10 +16802,10 @@ exports[`Icon mileage renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -16260,6 +16848,12 @@ exports[`Icon mileage renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -16380,10 +16974,10 @@ exports[`Icon minus renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -16426,6 +17020,12 @@ exports[`Icon minus renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -16543,10 +17143,10 @@ exports[`Icon moon still renders old renamed icons 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -16589,6 +17189,12 @@ exports[`Icon moon still renders old renamed icons 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -16706,10 +17312,10 @@ exports[`Icon overnight renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -16752,6 +17358,12 @@ exports[`Icon overnight renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -16871,10 +17483,10 @@ exports[`Icon parking renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -16917,6 +17529,12 @@ exports[`Icon parking renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -17035,10 +17653,10 @@ exports[`Icon pets renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -17081,6 +17699,12 @@ exports[`Icon pets renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -17203,10 +17827,10 @@ exports[`Icon phone renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -17249,6 +17873,12 @@ exports[`Icon phone renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -17367,10 +17997,10 @@ exports[`Icon picture renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -17413,6 +18043,12 @@ exports[`Icon picture renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -17531,10 +18167,10 @@ exports[`Icon pin renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -17577,6 +18213,12 @@ exports[`Icon pin renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -17695,10 +18337,10 @@ exports[`Icon plus renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -17741,6 +18383,12 @@ exports[`Icon plus renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -17858,10 +18506,10 @@ exports[`Icon pool renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -17904,6 +18552,12 @@ exports[`Icon pool renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -18033,10 +18687,10 @@ exports[`Icon printer renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -18079,6 +18733,12 @@ exports[`Icon printer renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -18197,10 +18857,10 @@ exports[`Icon quilt renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -18243,6 +18903,12 @@ exports[`Icon quilt renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -18360,10 +19026,10 @@ exports[`Icon radioChecked renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -18406,6 +19072,12 @@ exports[`Icon radioChecked renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -18524,10 +19196,10 @@ exports[`Icon radioEmpty renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -18570,6 +19242,12 @@ exports[`Icon radioEmpty renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -18688,10 +19366,10 @@ exports[`Icon radioMinus renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -18734,6 +19412,12 @@ exports[`Icon radioMinus renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -18852,10 +19536,10 @@ exports[`Icon radioPlus renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -18898,6 +19582,12 @@ exports[`Icon radioPlus renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -19016,10 +19706,10 @@ exports[`Icon refresh renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -19062,6 +19752,12 @@ exports[`Icon refresh renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -19180,10 +19876,10 @@ exports[`Icon restaurant renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -19226,6 +19922,12 @@ exports[`Icon restaurant renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -19344,10 +20046,10 @@ exports[`Icon ribbon renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -19390,6 +20092,12 @@ exports[`Icon ribbon renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -19518,10 +20226,10 @@ exports[`Icon roomSize renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -19564,6 +20272,12 @@ exports[`Icon roomSize renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -19682,10 +20396,10 @@ exports[`Icon search renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -19728,6 +20442,12 @@ exports[`Icon search renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -19845,10 +20565,10 @@ exports[`Icon searchRecent renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -19891,6 +20611,12 @@ exports[`Icon searchRecent renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -20010,10 +20736,10 @@ exports[`Icon seat renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -20056,6 +20782,12 @@ exports[`Icon seat renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -20174,10 +20906,10 @@ exports[`Icon seatBusiness renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -20220,6 +20952,12 @@ exports[`Icon seatBusiness renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -20340,10 +21078,10 @@ exports[`Icon seatEconomy renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -20386,6 +21124,12 @@ exports[`Icon seatEconomy renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -20506,10 +21250,10 @@ exports[`Icon security renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -20552,6 +21296,12 @@ exports[`Icon security renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -20670,10 +21420,10 @@ exports[`Icon shuttle renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -20716,6 +21466,12 @@ exports[`Icon shuttle renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -20836,10 +21592,10 @@ exports[`Icon smoking renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -20882,6 +21638,12 @@ exports[`Icon smoking renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21002,10 +21764,10 @@ exports[`Icon spa renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -21048,6 +21810,12 @@ exports[`Icon spa renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21169,10 +21937,10 @@ exports[`Icon splitTicket renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -21215,6 +21983,12 @@ exports[`Icon splitTicket renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21334,10 +22108,10 @@ exports[`Icon star renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -21380,6 +22154,12 @@ exports[`Icon star renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21497,10 +22277,10 @@ exports[`Icon starHalf renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -21543,6 +22323,12 @@ exports[`Icon starHalf renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21660,10 +22446,10 @@ exports[`Icon steeringWheel renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -21706,6 +22492,12 @@ exports[`Icon steeringWheel renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21825,10 +22617,10 @@ exports[`Icon success renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -21871,6 +22663,12 @@ exports[`Icon success renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -21988,10 +22786,10 @@ exports[`Icon successOutline renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -22034,6 +22832,12 @@ exports[`Icon successOutline renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -22152,10 +22956,10 @@ exports[`Icon swap renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -22198,6 +23002,12 @@ exports[`Icon swap renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -22315,10 +23125,10 @@ exports[`Icon thumbsDown renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -22361,6 +23171,12 @@ exports[`Icon thumbsDown renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -22480,10 +23296,10 @@ exports[`Icon thumbsUp renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -22526,6 +23342,12 @@ exports[`Icon thumbsUp renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -22643,10 +23465,10 @@ exports[`Icon timer renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -22689,6 +23511,12 @@ exports[`Icon timer renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -22808,10 +23636,10 @@ exports[`Icon trendingUp renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -22854,6 +23682,12 @@ exports[`Icon trendingUp renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -22971,10 +23805,10 @@ exports[`Icon trophy renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -23017,6 +23851,12 @@ exports[`Icon trophy renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -23137,10 +23977,10 @@ exports[`Icon tune renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -23183,6 +24023,12 @@ exports[`Icon tune renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -23301,10 +24147,10 @@ exports[`Icon twitter renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -23347,6 +24193,12 @@ exports[`Icon twitter renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -23467,10 +24319,10 @@ exports[`Icon unlock renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -23513,6 +24365,12 @@ exports[`Icon unlock renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -23632,10 +24490,10 @@ exports[`Icon user renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -23678,6 +24536,12 @@ exports[`Icon user renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -23796,10 +24660,10 @@ exports[`Icon verified renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -23842,6 +24706,12 @@ exports[`Icon verified renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -23960,10 +24830,10 @@ exports[`Icon warning renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24006,6 +24876,12 @@ exports[`Icon warning renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -24123,10 +24999,10 @@ exports[`Icon warningOutline renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24169,6 +25045,12 @@ exports[`Icon warningOutline renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -24287,10 +25169,10 @@ exports[`Icon web renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24333,6 +25215,12 @@ exports[`Icon web renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -24451,10 +25339,10 @@ exports[`Icon whirlpool renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24497,6 +25385,12 @@ exports[`Icon whirlpool renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -24619,10 +25513,10 @@ exports[`Icon wifi renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24665,6 +25559,12 @@ exports[`Icon wifi renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -24783,10 +25683,10 @@ exports[`Icon youtube renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24829,6 +25729,12 @@ exports[`Icon youtube renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }
@@ -24948,10 +25854,10 @@ exports[`Icon zoomOut renders 1`] = `
         "white": "#fff",
       },
       "duration": Object {
-        "fast": 150,
-        "normal": 300,
-        "slow": 450,
-        "slowest": 600,
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
       },
       "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
       "fontSizes": Array [
@@ -24994,6 +25900,12 @@ exports[`Icon zoomOut renders 1`] = `
         "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
         "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
         "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
       },
     }
   }

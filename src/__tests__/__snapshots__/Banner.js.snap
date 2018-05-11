@@ -215,10 +215,10 @@ exports[`Banner renders content from children props 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -261,6 +261,12 @@ exports[`Banner renders content from children props 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -445,10 +451,10 @@ exports[`Banner renders with blue bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -491,6 +497,12 @@ exports[`Banner renders with blue bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -672,10 +684,10 @@ exports[`Banner renders with custom iconName and size 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -718,6 +730,12 @@ exports[`Banner renders with custom iconName and size 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -899,10 +917,10 @@ exports[`Banner renders with green bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -945,6 +963,12 @@ exports[`Banner renders with green bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -1126,10 +1150,10 @@ exports[`Banner renders with lightBlue bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -1172,6 +1196,12 @@ exports[`Banner renders with lightBlue bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -1353,10 +1383,10 @@ exports[`Banner renders with lightGreen bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -1399,6 +1429,12 @@ exports[`Banner renders with lightGreen bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -1580,10 +1616,10 @@ exports[`Banner renders with lightOrange bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -1626,6 +1662,12 @@ exports[`Banner renders with lightOrange bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -1807,10 +1849,10 @@ exports[`Banner renders with lightRed bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -1853,6 +1895,12 @@ exports[`Banner renders with lightRed bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -2034,10 +2082,10 @@ exports[`Banner renders with no props other than theme 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -2080,6 +2128,12 @@ exports[`Banner renders with no props other than theme 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -2261,10 +2315,10 @@ exports[`Banner renders with orange bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -2307,6 +2361,12 @@ exports[`Banner renders with orange bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -2488,10 +2548,10 @@ exports[`Banner renders with red bg 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -2534,6 +2594,12 @@ exports[`Banner renders with red bg 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -2715,10 +2781,10 @@ exports[`Banner renders with text node 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -2761,6 +2827,12 @@ exports[`Banner renders with text node 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
@@ -2950,10 +3022,10 @@ exports[`Banner renders with text string 1`] = `
             "white": "#fff",
           },
           "duration": Object {
-            "fast": 150,
-            "normal": 300,
-            "slow": 450,
-            "slowest": 600,
+            "fast": "150ms",
+            "normal": "300ms",
+            "slow": "450ms",
+            "slowest": "600ms",
           },
           "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
           "fontSizes": Array [
@@ -2996,6 +3068,12 @@ exports[`Banner renders with text string 1`] = `
             "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
             "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
             "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+          },
+          "transitionDelays": Object {
+            "large": "260ms",
+            "medium": "160ms",
+            "small": "60ms",
+            "xLarge": "360ms",
           },
         }
       }
