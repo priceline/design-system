@@ -2178,6 +2178,10 @@ exports[`InputField it renders using FormField alias 1`] = `
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -2443,6 +2447,10 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -2689,6 +2697,10 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -2863,6 +2875,10 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
             "fontWeights": Object {
               "bold": 600,
               "regular": 400,
+            },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
             },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
@@ -3124,6 +3140,10 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -3375,6 +3395,10 @@ exports[`InputField it renders using FormField alias with Select icons on both s
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -3560,6 +3584,10 @@ exports[`InputField it renders using FormField alias with Select icons on both s
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -3717,6 +3745,10 @@ exports[`InputField it renders using FormField alias with Select icons on both s
             "fontWeights": Object {
               "bold": 600,
               "regular": 400,
+            },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
             },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
@@ -3965,6 +3997,10 @@ exports[`InputField it renders using FormField alias with Select icons on the le
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -4149,6 +4185,10 @@ exports[`InputField it renders using FormField alias with Select icons on the le
             "fontWeights": Object {
               "bold": 600,
               "regular": 400,
+            },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
             },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
@@ -4421,6 +4461,10 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
               "bold": 600,
               "regular": 400,
             },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
+            },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
               "@media screen and (min-width:32em)",
@@ -4578,6 +4622,10 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
             "fontWeights": Object {
               "bold": 600,
               "regular": 400,
+            },
+            "letterSpacings": Object {
+              "caps": "0.025em",
+              "normal": "normal",
             },
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
