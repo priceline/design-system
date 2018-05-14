@@ -30,9 +30,10 @@ const Landing = props => {
         <Text fontSize={1} color="gray">
           v{props.pkg && props.pkg.version}
         </Text>
-        <Flex py={4} align="center">
+        <Flex wrap py={4} align="center">
           <Pre
             my={2}
+            mr={2}
             style={{
               lineHeight: '16px'
             }}
@@ -40,7 +41,6 @@ const Landing = props => {
             npm install pcln-design-system
           </Pre>
           <Button.a
-            mx={3}
             size="large"
             href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
           >

@@ -82,6 +82,7 @@ class App extends React.Component {
           <Router basename={basename} location={pathname}>
             <ScrollTop>
               <Flex
+                wrap
                 align="flex-start"
                 color="text"
                 style={{ minHeight: '100vh' }}
