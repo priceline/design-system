@@ -149,10 +149,10 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -199,6 +199,12 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -309,10 +315,10 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -359,6 +365,12 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -522,10 +534,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -572,6 +584,12 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -682,10 +700,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -732,6 +750,12 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -895,10 +919,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -945,6 +969,12 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -1055,10 +1085,10 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -1105,6 +1135,12 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -1268,10 +1304,10 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -1318,6 +1354,12 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -1428,10 +1470,10 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -1478,6 +1520,12 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -1641,10 +1689,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -1691,6 +1739,12 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -1801,10 +1855,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -1851,6 +1905,12 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -2014,10 +2074,10 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -2064,6 +2124,12 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
@@ -2174,10 +2240,10 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           "white": "#fff",
         },
         "duration": Object {
-          "fast": 150,
-          "normal": 300,
-          "slow": 450,
-          "slowest": 600,
+          "fast": "150ms",
+          "normal": "300ms",
+          "slow": "450ms",
+          "slowest": "600ms",
         },
         "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
         "fontSizes": Array [
@@ -2224,6 +2290,12 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
           "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
           "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+        },
+        "transitionDelays": Object {
+          "large": "260ms",
+          "medium": "160ms",
+          "small": "60ms",
+          "xLarge": "360ms",
         },
       }
     }
