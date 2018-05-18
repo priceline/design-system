@@ -3,19 +3,11 @@ import IconButton from './IconButton'
 import PropTypes from 'prop-types'
 import theme from './theme'
 
-const CloseButton = props => (
-  <IconButton
-    {...props}
-    style={{ height: `${props.size}px` }}
-    legacy={false}
-    name="close"
-  />
-)
+const CloseButton = props => <IconButton {...props} name="close" />
 
 CloseButton.defaultProps = {
   size: 24,
-  title: 'close',
-  theme: theme
+  title: 'close'
 }
 
 CloseButton.propTypes = {

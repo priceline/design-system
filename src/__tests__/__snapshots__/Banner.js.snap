@@ -126,10 +126,11 @@ exports[`Banner renders content from children props 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
+      	l3.1,3.1l6.5-6.5L18,8.8L10.3,16.5z"
       />
     </svg>
     <div
@@ -215,10 +216,11 @@ exports[`Banner renders with blue bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M11,7H9V5h2Zm0,8H9V9h2ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,17h-2v-6h2V17z M13,9h-2V7
+      	h2V9z"
       />
     </svg>
     <div
@@ -304,7 +306,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
       viewBox="0 0 24 24"
     >
       <path
-        d="M12,1.54L14.55,9.6,23,9.53l-6.87,4.91,2.67,8-6.8-5-6.8,5,2.67-8L1,9.53,9.45,9.6Z"
+        d="M12,17.8l6.2,3.7l-1.6-7L22,9.7l-7.2-0.6L12,2.5L9.2,9.1L2,9.7l5.5,4.8l-1.6,7L12,17.8z"
       />
     </svg>
     <div
@@ -387,10 +389,11 @@ exports[`Banner renders with green bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
+      	l3.1,3.1l6.5-6.5L18,8.8L10.3,16.5z"
       />
     </svg>
     <div
@@ -473,10 +476,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M11,7H9V5h2Zm0,8H9V9h2ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,17h-2v-6h2V17z M13,9h-2V7
+      	h2V9z"
       />
     </svg>
     <div
@@ -559,10 +563,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
+      	l3.1,3.1l6.5-6.5L18,8.8L10.3,16.5z"
       />
     </svg>
     <div
@@ -645,10 +650,10 @@ exports[`Banner renders with lightOrange bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 22 19"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M12,12H10V8h2Zm0,4H10V14h2ZM0,19H22L11,0Z"
+        d="M1,21.5h22l-11-19L1,21.5z M13,18.5h-2v-2h2V18.5z M13,14.5h-2v-4h2V14.5z"
       />
     </svg>
     <div
@@ -731,10 +736,11 @@ exports[`Banner renders with lightRed bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm1,11H9V5h2Zm0,4H9V13h2Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,13h-2V7h2V13z M13,17h-2v-2
+      	h2V17z"
       />
     </svg>
     <div
@@ -817,10 +823,11 @@ exports[`Banner renders with no props other than theme 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M8,15,3,10,4.41,8.59,8,12.17l7.59-7.59L17,6ZM10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
+      	l3.1,3.1l6.5-6.5L18,8.8L10.3,16.5z"
       />
     </svg>
     <div
@@ -903,10 +910,10 @@ exports[`Banner renders with orange bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 22 19"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M12,12H10V8h2Zm0,4H10V14h2ZM0,19H22L11,0Z"
+        d="M1,21.5h22l-11-19L1,21.5z M13,18.5h-2v-2h2V18.5z M13,14.5h-2v-4h2V14.5z"
       />
     </svg>
     <div
@@ -989,10 +996,11 @@ exports[`Banner renders with red bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      viewBox="0 0 20 20"
+      viewBox="0 0 24 24"
     >
       <path
-        d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm1,11H9V5h2Zm0,4H9V13h2Z"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,13h-2V7h2V13z M13,17h-2v-2
+      	h2V17z"
       />
     </svg>
     <div
@@ -1078,7 +1086,7 @@ exports[`Banner renders with text node 1`] = `
       viewBox="0 0 24 24"
     >
       <path
-        d="M12,1.54L14.55,9.6,23,9.53l-6.87,4.91,2.67,8-6.8-5-6.8,5,2.67-8L1,9.53,9.45,9.6Z"
+        d="M12,17.8l6.2,3.7l-1.6-7L22,9.7l-7.2-0.6L12,2.5L9.2,9.1L2,9.7l5.5,4.8l-1.6,7L12,17.8z"
       />
     </svg>
     <div
@@ -1172,7 +1180,7 @@ exports[`Banner renders with text string 1`] = `
       viewBox="0 0 24 24"
     >
       <path
-        d="M12,1.54L14.55,9.6,23,9.53l-6.87,4.91,2.67,8-6.8-5-6.8,5,2.67-8L1,9.53,9.45,9.6Z"
+        d="M12,17.8l6.2,3.7l-1.6-7L22,9.7l-7.2-0.6L12,2.5L9.2,9.1L2,9.7l5.5,4.8l-1.6,7L12,17.8z"
       />
     </svg>
     <div
