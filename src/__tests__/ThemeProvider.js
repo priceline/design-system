@@ -23,7 +23,7 @@ describe('ThemeProvider', () => {
   test('accepts a custom breakpoints prop', () => {
     const json = renderer
       .create(
-        <ThemeProvider customBreakpoints={[20, 32, 48, 64]}>
+        <ThemeProvider customBreakpoints={['20em', '32em', '48em', '64em']}>
           <Box width={[1, 1 / 2, 1 / 4]} />
         </ThemeProvider>
       )

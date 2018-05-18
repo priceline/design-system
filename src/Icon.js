@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, color, propTypes, cleanElement } from 'styled-system'
+import { space, size, color } from 'styled-system'
+import Tag from 'clean-tag'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
 import theme from './theme'
@@ -34,37 +35,26 @@ const getPath = ({ name, legacy }) => {
   return icons.legacy[name] || icons[name] || icons[aliases[name]]
 }
 
-// Remove `space` props from the `svg` element prevents react warnings
-const CleanSvg = cleanElement('svg')
-CleanSvg.propTypes = {
-  ...propTypes.space
-}
-
-const Base = ({ name, size, legacy, ...props }) => {
+const Base = ({ name, legacy, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
   return (
-    <CleanSvg
-      {...props}
-      viewBox={icon.viewBox}
-      width={size}
-      height={size}
-      fill="currentcolor"
-    >
+    <Tag is="svg" {...props} viewBox={icon.viewBox} fill="currentcolor">
       <path d={icon.path} />
-    </CleanSvg>
+    </Tag>
   )
 }
 
 const Icon = styled(Base)`
   flex: none;
-  ${space} ${color};
+  ${space} ${size} ${color};
 `
 
 Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
+  theme,
   name: 'checkLight',
   size: 24,
   legacy: true,
@@ -78,6 +68,7 @@ const allKeys = Object.keys({
 })
 
 Icon.propTypes = {
+  ...space.propTypes,
   name: ({ name }) => {
     if (aliases[name] && !icons[name] && !icons.legacy[name]) {
       console.warn(

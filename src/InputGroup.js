@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import system, { space, borderColor, propTypes } from 'styled-system'
+import { space, borderColor, themeGet, propTypes } from 'styled-system'
 import theme from './theme'
 import Box from './Box'
 import Input from './Input'
@@ -7,7 +7,7 @@ import Input from './Input'
 const InputGroup = styled.div`
   display: flex;
   align-items: center;
-  border-radius: ${system.theme('radius')};
+  border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
   ${borderColor}

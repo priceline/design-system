@@ -8,8 +8,8 @@ exports[`Input it renders 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -63,8 +63,8 @@ exports[`Input it renders an input element with a really large padding and margi
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -120,8 +120,8 @@ exports[`Input it renders an input element with a red border with a color prop i
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -176,8 +176,8 @@ exports[`Input it renders an input element with large text 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;

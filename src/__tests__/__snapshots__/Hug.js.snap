@@ -13,8 +13,8 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
   display: -ms-flexbox;
   display: flex;
   padding: 8px;
-  background-color: #0a0;
   color: #fff;
+  background-color: #0a0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
