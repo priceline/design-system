@@ -10,9 +10,11 @@ The `<Flex />` component is an extension of the `<Box />` component with `displa
 </Flex>
 ```
 
+Flex uses the same props as the Box component, plus the following.
+
 Prop | Type | Description
 ---|---|---
-align | string | sets `align-items`
-justify | string | sets `justify-content`
-wrap | boolean | sets `flex-wrap: wrap`
+alignItems | string | sets `align-items`
+justifyContent | string | sets `justify-content`
+flexWrap | string | sets `flex-wrap`
 flexDirection | string | sets `flex-direction` (either `row` or `column`)

@@ -1,42 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, color, propTypes, cleanElement } from 'styled-system'
+import { space, size, color } from 'styled-system'
+import Tag from 'clean-tag'
 import PropTypes from 'prop-types'
 import icons from '../icons.json'
+import theme from './theme'
 
 const getPath = ({ name }) => icons[name]
-
-// Remove `space` props from the `svg` element prevents react warnings
-const CleanSvg = cleanElement('svg')
-CleanSvg.propTypes = {
-  ...propTypes.space
-}
 
 const Base = ({ name, size, ...props }) => {
   const icon = getPath({ name })
   if (!icon) return false
 
   return (
-    <CleanSvg
-      {...props}
-      viewBox={icon.viewBox}
-      width={size}
-      height={size}
-      fill="currentcolor"
-    >
+    <Tag is="svg" {...props} viewBox={icon.viewBox} fill="currentcolor">
       <path d={icon.path} />
-    </CleanSvg>
+    </Tag>
   )
 }
 
 const Icon = styled(Base)`
   flex: none;
-  ${space} ${color};
+  ${space} ${size} ${color};
 `
 
 Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
+  theme,
   name: 'checkLight',
   size: 24
 }
@@ -46,6 +37,7 @@ const keys = Object.keys({
 })
 
 Icon.propTypes = {
+  ...space.propTypes,
   name: ({ name }) => {
     if (!keys.includes(name)) {
       return new Error(

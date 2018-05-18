@@ -17,7 +17,9 @@ exports[`Select renders 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: gray;
+  width: 24px;
+  height: 24px;
+  color: #687B8E;
   pointer-events: none;
 }
 
@@ -57,11 +59,8 @@ exports[`Select renders 1`] = `
   />
   <svg
     className="c2"
-    color="gray"
     fill="currentcolor"
-    height={24}
     viewBox="0 0 24 24"
-    width={24}
   >
     <path
       d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"

@@ -7,27 +7,23 @@ const size = props => {
   switch (props.size) {
     case 'small':
       return {
-        height: '32px',
         fontSize: `${props.theme.fontSizes[0]}px`,
-        padding: '0 12px'
+        padding: '7px 12px'
       }
     case 'medium':
       return {
-        height: '40px',
         fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '0 18px'
+        padding: '9.5px 18px'
       }
     case 'large':
       return {
-        height: '48px',
         fontSize: `${props.theme.fontSizes[2]}px`,
-        padding: '0 22px'
+        padding: '12px 22px'
       }
     default:
       return {
-        height: '40px',
         fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '0 18px'
+        padding: '9.5px 18px'
       }
   }
 }
@@ -42,6 +38,7 @@ const Button = styled.button`
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
+  line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
   background-color: ${props => props.theme.colors.blue};

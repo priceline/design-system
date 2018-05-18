@@ -20,8 +20,8 @@
   },
   "scripts": {
     "start": "x0 dev src/App.js",
-    "dev-build": "x0 build src/App.js --basename '/site' -d site",
-    "build": "x0 build src/App.js --basename '/design-system' -d site"
+    "dev-build": "x0 build src/App.js --basename '/.site' -d ../.site",
+    "build": "x0 build src/App.js --basename '/design-system' -d ../.site"
   },
   "x0": {
     "cssLibrary": "styled-components"
