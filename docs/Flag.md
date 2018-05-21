@@ -3,7 +3,7 @@
 
 Use the `<Flag />` component for stylized merchandising messages.
 
-```jsx
+```.jsx
 <Card>
   <Flag>
     Hello
@@ -11,7 +11,7 @@ Use the `<Flag />` component for stylized merchandising messages.
 </Card>
 ```
 
-```jsx
+```.jsx
 <Card>
   <Flag width={192} bg='purple'>
     Hello
@@ -23,4 +23,3 @@ Prop | Type | Description
 ---|---|---
 color | string | text color
 bg | string | background color
-
