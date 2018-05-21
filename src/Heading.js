@@ -6,9 +6,7 @@ const Heading = Text.withComponent('h3')
 Heading.displayName = 'Heading'
 
 Heading.defaultProps = {
-  fontSize: 4,
-  fontWeight: 'bold',
-  lineHeight: 'display',
+  textStyle: 'display4',
   m: 0,
   theme
 }
