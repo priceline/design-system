@@ -55,8 +55,6 @@ exports[`Banner accepts non-preset colors 1`] = `
       >
         <h5
           className="c4"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c5"
@@ -144,8 +142,6 @@ exports[`Banner renders content from children props 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -236,8 +232,6 @@ exports[`Banner renders with blue bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -324,8 +318,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -413,8 +405,6 @@ exports[`Banner renders with green bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -502,8 +492,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -591,8 +579,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -679,8 +665,6 @@ exports[`Banner renders with lightOrange bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -768,8 +752,6 @@ exports[`Banner renders with lightRed bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -857,8 +839,6 @@ exports[`Banner renders with no props other than theme 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -945,8 +925,6 @@ exports[`Banner renders with orange bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -1034,8 +1012,6 @@ exports[`Banner renders with red bg 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         />
         <span
           className="c6"
@@ -1122,8 +1098,6 @@ exports[`Banner renders with text node 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         >
           Header
         </h5>
@@ -1218,8 +1192,6 @@ exports[`Banner renders with text string 1`] = `
       >
         <h5
           className="c5"
-          fontSize={4}
-          fontWeight="bold"
         >
           Header
         </h5>
