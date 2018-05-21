@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { color, theme, propTypes } from 'styled-system'
+import { color, themeGet, propTypes } from 'styled-system'
 import Flex from './Flex'
 import Hide from './Hide'
 import Box from './Box'
@@ -8,7 +8,7 @@ import Box from './Box'
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const shadowColor = props => {
-  const darkColor = theme(`colors.dark${capitalize(props.color)}`)(props)
+  const darkColor = themeGet(`colors.dark${capitalize(props.color)}`)(props)
 
   return {
     backgroundImage: !darkColor
@@ -32,8 +32,8 @@ const FlagShadow = styled(Box)`
 const FlagRight = styled(Box)`
   flex: none;
   background-color: ${props =>
-    theme(`colors.${props.color}`, props.color)(props)};
-  border-radius: 0 ${theme('radius')} ${theme('radius')} 0;
+    themeGet(`colors.${props.color}`, props.color)(props)};
+  border-radius: 0 ${themeGet('radius')} ${themeGet('radius')} 0;
   /* for 32 x 8 triangle */
   transform: skew(-14deg);
   position: relative;
@@ -48,8 +48,8 @@ const flexAuto = props =>
     : null
 
 const FlagBody = styled(Box)`
-  font-size: ${theme('fontSizes.0')}px;
-  border-radius: 0 0 ${theme('radius')} 0;
+  font-size: ${themeGet('fontSizes.0')}px;
+  border-radius: 0 0 ${themeGet('radius')} 0;
   ${flexAuto} ${color};
   z-index: 2;
 `

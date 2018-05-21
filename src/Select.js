@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import system, { space, fontSize } from 'styled-system'
+import { space, fontSize, themeGet } from 'styled-system'
 
 import theme from './theme'
 import Flex from './Flex'
@@ -17,14 +17,14 @@ const SelectBase = styled.select`
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: ${system.theme('radius')};
+  border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${system.theme('colors.borderGray')};
+  border-color: ${themeGet('colors.borderGray')};
   ${space} ${fontSize} &:focus {
     outline: none;
-    border-color: ${system.theme('colors.blue')};
-    box-shadow: 0 0 0 1px ${system.theme('colors.blue')};
+    border-color: ${themeGet('colors.blue')};
+    box-shadow: 0 0 0 1px ${themeGet('colors.blue')};
   }
 `
 SelectBase.defaultProps = {
@@ -39,7 +39,7 @@ SelectBase.defaultProps = {
 const Select = styled(props => (
   <Flex align="center">
     <SelectBase {...props} />
-    <ClickableIcon legacy={false} ml={-32} name="chevronDown" color="gray" />
+    <ClickableIcon ml={-32} name="chevronDown" color="gray" />
   </Flex>
 ))``
 

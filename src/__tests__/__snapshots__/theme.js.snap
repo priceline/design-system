@@ -10,10 +10,10 @@ Object {
     "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
   ],
   "breakpoints": Array [
-    32,
-    40,
-    48,
-    64,
+    "32em",
+    "40em",
+    "48em",
+    "64em",
   ],
   "colors": Object {
     "black": "#000",
