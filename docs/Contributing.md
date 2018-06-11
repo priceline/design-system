@@ -62,14 +62,13 @@ open http://localhost:8000/
 
 ### Static Docs Site
 
-Markdown and source code for the [static docs site](https://pricelinelabs.github.io/design-system/) is located in
+Markdown and source code for the [static docs site](https://pricelinelabs.github.io/design-system/) are located in
 `docs/`. This [x0](https://www.npmjs.com/package/@compositor/x0) project requires Node 7+.
 
 To run the static docs locally:
 
 ```sh
 cd docs
-npm install -g @compositor/x0
 npm install
 npm start
 ```
