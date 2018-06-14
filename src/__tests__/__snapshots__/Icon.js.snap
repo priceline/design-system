@@ -9057,6 +9057,179 @@ exports[`Icon dollarCircle renders 1`] = `
 </svg>
 `;
 
+exports[`Icon doubleOccupancy renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  theme={
+    Object {
+      "bold": 600,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+      ],
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#007aff",
+        "blue0": "#cdf",
+        "blue1": "#cdf",
+        "blue2": "#007aff",
+        "blue3": "#007aff",
+        "blues": Array [
+          "#cdf",
+          "#cdf",
+          "#007aff",
+          "#007aff",
+        ],
+        "borderGray": "#d1d6db",
+        "darkBlue": "#049",
+        "darkGray": "#364049",
+        "darkGreen": "#060",
+        "darkOrange": "#a50",
+        "darkPurple": "#407",
+        "darkRed": "#800",
+        "gray": "#687B8E",
+        "gray0": "#f6f8fa",
+        "gray1": "#f6f8fa",
+        "gray2": "#687B8E",
+        "gray3": "#687B8E",
+        "green": "#0a0",
+        "green0": "#cec",
+        "green1": "#cec",
+        "green2": "#0a0",
+        "green3": "#0a0",
+        "greens": Array [
+          "#cec",
+          "#cec",
+          "#0a0",
+          "#0a0",
+        ],
+        "lightBlue": "#cdf",
+        "lightGray": "#f6f8fa",
+        "lightGreen": "#cec",
+        "lightOrange": "#feb",
+        "lightPurple": "#ecf",
+        "lightRed": "#fcc",
+        "orange": "#fa0",
+        "orange0": "#feb",
+        "orange1": "#feb",
+        "orange2": "#fa0",
+        "orange3": "#fa0",
+        "oranges": Array [
+          "#feb",
+          "#feb",
+          "#fa0",
+          "#fa0",
+        ],
+        "purple": "#70b",
+        "purple0": "#ecf",
+        "purple1": "#ecf",
+        "purple2": "#70b",
+        "purple3": "#70b",
+        "purples": Array [
+          "#ecf",
+          "#ecf",
+          "#70b",
+          "#70b",
+        ],
+        "red": "#c00",
+        "red0": "#fcc",
+        "red1": "#fcc",
+        "red2": "#c00",
+        "red3": "#c00",
+        "reds": Array [
+          "#fcc",
+          "#fcc",
+          "#c00",
+          "#c00",
+        ],
+        "text": "#001833",
+        "white": "#fff",
+      },
+      "duration": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
+      },
+      "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "fontWeights": Object {
+        "bold": 600,
+        "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "radii": Array [
+        0,
+        2,
+        6,
+      ],
+      "radius": "2px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+      "timingFunctions": Object {
+        "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+        "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
+      },
+    }
+  }
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.0664,3.6 C9.0664,4.484 8.3504,5.2 7.4664,5.2 C6.5824,5.2 5.8664,4.484 5.8664,3.6 C5.8664,2.716 6.5824,2 7.4664,2 C8.3504,2 9.0664,2.716 9.0664,3.6 Z M9.2,5.9336 L9.1992,5.9336 C10.1992,5.9336 11.0664,6.8 11.1328,7.8 L11.1328,12.3336 L9.4664,13.9336 C9.4664,14.0008 9.4664,14.0008 9.4664,14.0672 L9.4664,20.7336 C9.4664,21.4 8.9328,22 8.2664,22 L6.8,22 C6.1328,22 5.6,21.4 5.6664,20.7336 L5.6664,14.0672 C5.6664,14 5.6664,14 5.6664,13.9336 L4,12.3336 L4,7.8 C4,6.8 4.8,5.9336 5.8,5.9336 L9.2,5.9336 Z M17.488887,3.6 C17.488887,4.484 16.772887,5.2 15.888887,5.2 C15.004887,5.2 14.288887,4.484 14.288887,3.6 C14.288887,2.716 15.004887,2 15.888887,2 C16.772887,2 17.488887,2.716 17.488887,3.6 Z M17.6886243,5.9336 C18.6886243,5.9336 19.4886243,6.8 19.5550243,7.8 L19.5550243,12.3336 L17.8886243,13.9336 C17.8886243,14.0008 17.8886243,14.0008 17.8886243,14.0672 L17.8886243,20.7336 C17.8886243,21.4 17.3550243,22 16.6886243,22 L15.2222243,22 C14.5550243,22 14.0886243,21.4 14.0886243,20.7336 L14.0886243,14.0672 C14.0886243,14 14.0886243,14 14.0886243,13.9336 L12.4222243,12.3336 L12.4222243,7.8 C12.4222243,6.8 13.2222243,5.9336 14.2222243,5.9336 L17.6886243,5.9336 Z"
+  />
+</svg>
+`;
+
 exports[`Icon earlyBird renders 1`] = `
 .c0 {
   -webkit-flex: none;
@@ -18306,6 +18479,179 @@ exports[`Icon moon still renders old renamed icons 1`] = `
 </svg>
 `;
 
+exports[`Icon multiOccupancy renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  theme={
+    Object {
+      "bold": 600,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+      ],
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#007aff",
+        "blue0": "#cdf",
+        "blue1": "#cdf",
+        "blue2": "#007aff",
+        "blue3": "#007aff",
+        "blues": Array [
+          "#cdf",
+          "#cdf",
+          "#007aff",
+          "#007aff",
+        ],
+        "borderGray": "#d1d6db",
+        "darkBlue": "#049",
+        "darkGray": "#364049",
+        "darkGreen": "#060",
+        "darkOrange": "#a50",
+        "darkPurple": "#407",
+        "darkRed": "#800",
+        "gray": "#687B8E",
+        "gray0": "#f6f8fa",
+        "gray1": "#f6f8fa",
+        "gray2": "#687B8E",
+        "gray3": "#687B8E",
+        "green": "#0a0",
+        "green0": "#cec",
+        "green1": "#cec",
+        "green2": "#0a0",
+        "green3": "#0a0",
+        "greens": Array [
+          "#cec",
+          "#cec",
+          "#0a0",
+          "#0a0",
+        ],
+        "lightBlue": "#cdf",
+        "lightGray": "#f6f8fa",
+        "lightGreen": "#cec",
+        "lightOrange": "#feb",
+        "lightPurple": "#ecf",
+        "lightRed": "#fcc",
+        "orange": "#fa0",
+        "orange0": "#feb",
+        "orange1": "#feb",
+        "orange2": "#fa0",
+        "orange3": "#fa0",
+        "oranges": Array [
+          "#feb",
+          "#feb",
+          "#fa0",
+          "#fa0",
+        ],
+        "purple": "#70b",
+        "purple0": "#ecf",
+        "purple1": "#ecf",
+        "purple2": "#70b",
+        "purple3": "#70b",
+        "purples": Array [
+          "#ecf",
+          "#ecf",
+          "#70b",
+          "#70b",
+        ],
+        "red": "#c00",
+        "red0": "#fcc",
+        "red1": "#fcc",
+        "red2": "#c00",
+        "red3": "#c00",
+        "reds": Array [
+          "#fcc",
+          "#fcc",
+          "#c00",
+          "#c00",
+        ],
+        "text": "#001833",
+        "white": "#fff",
+      },
+      "duration": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
+      },
+      "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "fontWeights": Object {
+        "bold": 600,
+        "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "radii": Array [
+        0,
+        2,
+        6,
+      ],
+      "radius": "2px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+      "timingFunctions": Object {
+        "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+        "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
+      },
+    }
+  }
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.2366651,11.7134731 L23.4985331,11.7134731 L23.4985331,13.4601385 L21.2366651,13.4601385 L21.2366651,15.7279206 L19.4899998,15.7279206 L19.4899998,13.4601385 L17.2199993,13.4601385 L17.2199993,11.7134731 L19.4899998,11.7134731 L19.4899998,9.44495183 L21.2366651,9.44495183 L21.2366651,11.7134731 Z M10.3678561,4.30104833 C10.3678561,5.18509899 9.65085844,5.90209661 8.76680777,5.90209661 C7.88275711,5.90209661 7.16575949,5.18509899 7.16575949,4.30104833 C7.16575949,3.41699766 7.88275711,2.70000005 8.76680777,2.70000005 C9.65085844,2.70000005 10.3678561,3.41699766 10.3678561,4.30104833 Z M5.25128674,5.90357495 C5.25128674,6.652357 4.64442587,7.25921786 3.89564383,7.25921786 C3.14686178,7.25921786 2.54000092,6.652357 2.54000092,5.90357495 C2.54000092,5.15479291 3.14686178,4.54793204 3.89564383,4.54793204 C4.64442587,4.54793204 5.25128674,5.15479291 5.25128674,5.90357495 Z M4.69586399,12.3713369 L4.69512482,12.3713369 L4.69512482,12.4289924 L6.05076773,13.7846353 L5.43429761,14.4011054 L5.43429761,19.9493365 C5.43429761,20.5037161 5.0026207,20.9960051 4.4482411,20.9960051 L3.27960891,20.9960051 C2.72522931,20.9960051 2.2935524,20.5037161 2.2935524,19.9493365 L2.2935524,14.4055405 L1,13.1119881 L1,9.35403357 C1,8.55277026 1.7391728,7.81359746 2.54043611,7.81359746 L4.7579545,7.81359746 C4.69586399,7.87420963 4.69586399,7.99839066 4.69586399,8.12109335 L4.69586399,12.3713369 Z M14.931287,5.90357495 C14.931287,6.652357 14.3244262,7.25921786 13.5756441,7.25921786 C12.8268621,7.25921786 12.2200012,6.652357 12.2200012,5.90357495 C12.2200012,5.15479291 12.8268621,4.54793204 13.5756441,4.54793204 C14.3244262,4.54793204 14.931287,5.15479291 14.931287,5.90357495 Z M15.0558646,7.81211912 L15.0551254,7.81285829 C16.533471,7.81285829 16.533471,9.3532944 16.533471,9.3532944 L16.533471,13.0491584 L15.1800456,14.4025838 L15.1800456,19.9463798 C15.1800456,20.5007594 14.7483687,20.9930484 14.1939891,20.9930484 L13.0231394,20.9930484 C12.529372,20.9930484 12.0370829,20.5007594 12.0370829,19.9463798 L12.0370829,14.4025838 L11.3600006,13.7255015 L12.7156435,12.3698586 L12.7156435,8.119615 C12.7156435,7.99691232 12.7156435,7.9348218 12.7156435,7.81211912 L15.0558646,7.81211912 Z M10.3700736,6.58065724 C11.8506367,6.58065724 11.8484192,8.12109335 11.8462016,8.12109335 L11.8462016,12.2486342 L10.3678561,13.7269798 C10.3678561,13.787592 10.3678561,13.787592 10.3678561,13.8496825 L10.3678561,19.9478581 C10.3678561,20.5643282 10.0603602,21.2414105 9.44389006,21.2414105 L8.15033766,21.2414105 C7.59595806,21.2414105 6.97948795,20.5643282 6.97948795,19.9478581 L6.97948795,13.8496825 C6.97948795,13.7890704 6.97948795,13.7890704 6.97948795,13.7269798 L6.85678526,13.6042772 L5.44053018,12.2486342 L5.44053018,8.12109335 C5.44053018,7.99691232 5.74802607,6.58065724 7.28846218,6.58065724 L10.3700736,6.58065724 Z"
+  />
+</svg>
+`;
+
 exports[`Icon notification renders 1`] = `
 .c0 {
   -webkit-flex: none;
@@ -23030,6 +23376,179 @@ exports[`Icon shuttle renders 1`] = `
   	c0,1.5,1.2,2.8,2.7,2.8s2.7-1.3,2.7-2.8H22v-4.6L16.5,5.5z M3.8,11.1V7.4h3.6v3.7H3.8z M6.5,17.1c-0.7,0-1.4-0.6-1.4-1.4
   	c0-0.7,0.6-1.4,1.4-1.4s1.4,0.7,1.4,1.4C7.9,16.5,7.3,17.1,6.5,17.1z M12.9,11.1H9.3V7.4h3.6V11.1z M17,17.1c-0.7,0-1.4-0.6-1.4-1.4
   	c0-0.7,0.6-1.4,1.4-1.4s1.4,0.7,1.4,1.4C18.4,16.5,17.7,17.1,17,17.1z M14.7,11.1V7.4h0.9l3.6,3.7H14.7z"
+  />
+</svg>
+`;
+
+exports[`Icon singleOccupancy renders 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  theme={
+    Object {
+      "bold": 600,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+      ],
+      "breakpoints": Array [
+        32,
+        40,
+        48,
+        64,
+      ],
+      "colors": Object {
+        "black": "#000",
+        "blue": "#007aff",
+        "blue0": "#cdf",
+        "blue1": "#cdf",
+        "blue2": "#007aff",
+        "blue3": "#007aff",
+        "blues": Array [
+          "#cdf",
+          "#cdf",
+          "#007aff",
+          "#007aff",
+        ],
+        "borderGray": "#d1d6db",
+        "darkBlue": "#049",
+        "darkGray": "#364049",
+        "darkGreen": "#060",
+        "darkOrange": "#a50",
+        "darkPurple": "#407",
+        "darkRed": "#800",
+        "gray": "#687B8E",
+        "gray0": "#f6f8fa",
+        "gray1": "#f6f8fa",
+        "gray2": "#687B8E",
+        "gray3": "#687B8E",
+        "green": "#0a0",
+        "green0": "#cec",
+        "green1": "#cec",
+        "green2": "#0a0",
+        "green3": "#0a0",
+        "greens": Array [
+          "#cec",
+          "#cec",
+          "#0a0",
+          "#0a0",
+        ],
+        "lightBlue": "#cdf",
+        "lightGray": "#f6f8fa",
+        "lightGreen": "#cec",
+        "lightOrange": "#feb",
+        "lightPurple": "#ecf",
+        "lightRed": "#fcc",
+        "orange": "#fa0",
+        "orange0": "#feb",
+        "orange1": "#feb",
+        "orange2": "#fa0",
+        "orange3": "#fa0",
+        "oranges": Array [
+          "#feb",
+          "#feb",
+          "#fa0",
+          "#fa0",
+        ],
+        "purple": "#70b",
+        "purple0": "#ecf",
+        "purple1": "#ecf",
+        "purple2": "#70b",
+        "purple3": "#70b",
+        "purples": Array [
+          "#ecf",
+          "#ecf",
+          "#70b",
+          "#70b",
+        ],
+        "red": "#c00",
+        "red0": "#fcc",
+        "red1": "#fcc",
+        "red2": "#c00",
+        "red3": "#c00",
+        "reds": Array [
+          "#fcc",
+          "#fcc",
+          "#c00",
+          "#c00",
+        ],
+        "text": "#001833",
+        "white": "#fff",
+      },
+      "duration": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
+      },
+      "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+      ],
+      "fontWeights": Object {
+        "bold": 600,
+        "regular": 400,
+      },
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:32em)",
+        "@media screen and (min-width:40em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:64em)",
+      ],
+      "radii": Array [
+        0,
+        2,
+        6,
+      ],
+      "radius": "2px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+      "timingFunctions": Object {
+        "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+        "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
+      },
+    }
+  }
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.0664,3.6 C13.0664,4.484 12.3504,5.2 11.4664,5.2 C10.5824,5.2 9.8664,4.484 9.8664,3.6 C9.8664,2.716 10.5824,2 11.4664,2 C12.3504,2 13.0664,2.716 13.0664,3.6 Z M13.2,5.9336 L13.1992,5.9336 C14.1992,5.9336 15.0664,6.8 15.1328,7.8 L15.1328,12.3336 L13.4664,13.9336 C13.4664,14.0008 13.4664,14.0008 13.4664,14.0672 L13.4664,20.7336 C13.4664,21.4 12.9328,22 12.2664,22 L10.8,22 C10.1328,22 9.6,21.4 9.6664,20.7336 L9.6664,14.0672 C9.6664,14 9.6664,14 9.6664,13.9336 L8,12.3336 L8,7.8 C8,6.8 8.8,5.9336 9.8,5.9336 L13.2,5.9336 Z"
   />
 </svg>
 `;
