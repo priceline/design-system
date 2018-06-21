@@ -164,6 +164,32 @@ storiesOf('FormField', module)
             </InputField>
           </Box>
         </Flex>
+        <Flex width={900}>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              Label component has hidden prop
+            </Text>
+            <InputField
+              alwaysShowLabel
+              onChange={action('onChange event is triggered in FormField')}
+            >
+              <Label hidden>Pick-up Location</Label>
+              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+            </InputField>
+          </Box>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              Label component without hidden prop
+            </Text>
+            <InputField
+              alwaysShowLabel
+              onChange={action('onChange event is triggered in FormField')}
+            >
+              <Label>Pick-up Location</Label>
+              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
+            </InputField>
+          </Box>
+        </Flex>
       </div>
     ))
   )

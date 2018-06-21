@@ -64,13 +64,11 @@ class FormField extends React.Component {
 
   hasValue = () => {
     const { children } = this.props
-    return React.Children
-      .toArray(children)
-      .reduce(
-        (a, child) =>
-          a || (child && isFormElement(child.type) && child.props.value),
-        false
-      )
+    return React.Children.toArray(children).reduce(
+      (a, child) =>
+        a || (child && isFormElement(child.type) && child.props.value),
+      false
+    )
   }
 
   render() {
@@ -126,7 +124,9 @@ class FormField extends React.Component {
     }
 
     const showLabel =
-      this.props.alwaysShowLabel || (LabelChild && this.hasValue())
+      LabelChild && LabelChild.props.hidden
+        ? false
+        : this.props.alwaysShowLabel || (LabelChild && this.hasValue())
 
     return (
       <Root>
