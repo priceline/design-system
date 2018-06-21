@@ -245,7 +245,7 @@ describe('InputField', () => {
   test('it does not display a label when Label has `hidden` prop', () => {
     const json = renderer
       .create(
-        <InputField alwaysShowLabel onChange={() => {}}>
+        <InputField onChange={() => {}}>
           <Label hidden>A Label</Label>
           <Icon name="email" />
           <Input id="with-both-icons" />
