@@ -170,7 +170,6 @@ storiesOf('FormField', module)
               Label component has hidden prop
             </Text>
             <InputField
-              alwaysShowLabel
               onChange={action('onChange event is triggered in FormField')}
             >
               <Label hidden>Pick-up Location</Label>
