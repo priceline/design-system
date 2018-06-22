@@ -5,8 +5,8 @@ exports[`Icon ac renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -27,8 +27,8 @@ exports[`Icon accessible renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -50,8 +50,8 @@ exports[`Icon arrival renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -71,8 +71,8 @@ exports[`Icon arrowDown renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -91,8 +91,8 @@ exports[`Icon arrowLeft renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -111,8 +111,8 @@ exports[`Icon arrowRight renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -131,8 +131,8 @@ exports[`Icon arrowUp renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -151,8 +151,8 @@ exports[`Icon attention renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -171,8 +171,8 @@ exports[`Icon automatic renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -193,8 +193,8 @@ exports[`Icon bag renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -214,8 +214,8 @@ exports[`Icon beach renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -236,8 +236,8 @@ exports[`Icon bed renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -257,8 +257,8 @@ exports[`Icon boxChecked renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -278,8 +278,8 @@ exports[`Icon boxEmpty renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -299,8 +299,8 @@ exports[`Icon boxMinus renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -320,8 +320,8 @@ exports[`Icon boxPlus renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -341,8 +341,8 @@ exports[`Icon breakfast renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -362,8 +362,8 @@ exports[`Icon build renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -383,8 +383,8 @@ exports[`Icon business renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -404,8 +404,8 @@ exports[`Icon calendar renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -425,8 +425,8 @@ exports[`Icon carCircle renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -449,8 +449,8 @@ exports[`Icon carDoor renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -470,8 +470,8 @@ exports[`Icon carriage renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -493,8 +493,8 @@ exports[`Icon cars renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -515,8 +515,8 @@ exports[`Icon casino renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -538,8 +538,8 @@ exports[`Icon chart renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -559,8 +559,8 @@ exports[`Icon chat renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -580,8 +580,8 @@ exports[`Icon check renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -600,8 +600,8 @@ exports[`Icon chevronDown renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -620,8 +620,8 @@ exports[`Icon chevronLeft renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -640,8 +640,8 @@ exports[`Icon chevronRight renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -660,8 +660,8 @@ exports[`Icon chevronUp renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -680,8 +680,8 @@ exports[`Icon cityView renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -702,8 +702,8 @@ exports[`Icon clock renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -723,8 +723,8 @@ exports[`Icon close renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -743,8 +743,8 @@ exports[`Icon cloud renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -765,8 +765,8 @@ exports[`Icon collisionCoverage renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -788,8 +788,8 @@ exports[`Icon coupon renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -810,8 +810,8 @@ exports[`Icon creditCard renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -831,8 +831,8 @@ exports[`Icon cruises renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -855,8 +855,8 @@ exports[`Icon departure renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -876,8 +876,8 @@ exports[`Icon devices renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -898,8 +898,8 @@ exports[`Icon directions renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -919,8 +919,8 @@ exports[`Icon discount renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -943,8 +943,8 @@ exports[`Icon document renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -964,8 +964,8 @@ exports[`Icon dollar renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -986,8 +986,8 @@ exports[`Icon dollarCircle renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1009,8 +1009,8 @@ exports[`Icon earlyBird renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1030,8 +1030,8 @@ exports[`Icon edit renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1051,8 +1051,8 @@ exports[`Icon electric renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1071,8 +1071,8 @@ exports[`Icon email renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1092,8 +1092,8 @@ exports[`Icon event renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1113,8 +1113,8 @@ exports[`Icon eventAvailable renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1134,8 +1134,8 @@ exports[`Icon eventBusy renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1156,8 +1156,8 @@ exports[`Icon facebook renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1178,8 +1178,8 @@ exports[`Icon favoriteHotel renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1200,8 +1200,8 @@ exports[`Icon filter renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1220,8 +1220,8 @@ exports[`Icon fitness renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1241,8 +1241,8 @@ exports[`Icon flame renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1263,8 +1263,8 @@ exports[`Icon flightCircle renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1284,8 +1284,8 @@ exports[`Icon flightCoverage renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1305,8 +1305,8 @@ exports[`Icon flights renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1326,8 +1326,8 @@ exports[`Icon freeCancellation renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1347,8 +1347,8 @@ exports[`Icon fridge renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1368,8 +1368,8 @@ exports[`Icon gallery renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1389,8 +1389,8 @@ exports[`Icon gas renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1412,8 +1412,8 @@ exports[`Icon globe renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1438,8 +1438,8 @@ exports[`Icon gps renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1460,8 +1460,8 @@ exports[`Icon graph renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1480,8 +1480,8 @@ exports[`Icon grid renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1501,8 +1501,8 @@ exports[`Icon guests renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1523,8 +1523,8 @@ exports[`Icon help renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1545,8 +1545,8 @@ exports[`Icon home renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1565,8 +1565,8 @@ exports[`Icon hotelCircle renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1587,8 +1587,8 @@ exports[`Icon hotels renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1609,8 +1609,8 @@ exports[`Icon hybrid renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1630,8 +1630,8 @@ exports[`Icon inclusive renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1652,8 +1652,8 @@ exports[`Icon information renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1673,8 +1673,8 @@ exports[`Icon informationOutline renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1694,8 +1694,8 @@ exports[`Icon instagram renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1724,8 +1724,8 @@ exports[`Icon key renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1745,8 +1745,8 @@ exports[`Icon kitchenette renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1768,8 +1768,8 @@ exports[`Icon laptop renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1789,8 +1789,8 @@ exports[`Icon lateNight renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1810,8 +1810,8 @@ exports[`Icon list renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1831,8 +1831,8 @@ exports[`Icon lock renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1853,8 +1853,8 @@ exports[`Icon loyalty renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1876,8 +1876,8 @@ exports[`Icon luggage renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1897,8 +1897,8 @@ exports[`Icon manual renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1918,8 +1918,8 @@ exports[`Icon map renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1939,8 +1939,8 @@ exports[`Icon menu renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1959,8 +1959,8 @@ exports[`Icon microwave renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -1982,8 +1982,8 @@ exports[`Icon mileage renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2005,8 +2005,8 @@ exports[`Icon minus renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2025,8 +2025,8 @@ exports[`Icon overnight renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2047,8 +2047,8 @@ exports[`Icon parking renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2068,8 +2068,8 @@ exports[`Icon pets renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2093,8 +2093,8 @@ exports[`Icon phone renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2114,8 +2114,8 @@ exports[`Icon picture renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2135,8 +2135,8 @@ exports[`Icon pin renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2156,8 +2156,8 @@ exports[`Icon plus renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2176,8 +2176,8 @@ exports[`Icon pool renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2208,8 +2208,8 @@ exports[`Icon printer renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2229,8 +2229,8 @@ exports[`Icon quilt renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2249,8 +2249,8 @@ exports[`Icon radioChecked renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2270,8 +2270,8 @@ exports[`Icon radioEmpty renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2291,8 +2291,8 @@ exports[`Icon radioMinus renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2312,8 +2312,8 @@ exports[`Icon radioPlus renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2333,8 +2333,8 @@ exports[`Icon refresh renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2354,8 +2354,8 @@ exports[`Icon restaurant renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2375,8 +2375,8 @@ exports[`Icon ribbon renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2406,8 +2406,8 @@ exports[`Icon roomSize renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2427,8 +2427,8 @@ exports[`Icon search renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2448,8 +2448,8 @@ exports[`Icon searchRecent renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2470,8 +2470,8 @@ exports[`Icon seat renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2491,8 +2491,8 @@ exports[`Icon seatBusiness renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2514,8 +2514,8 @@ exports[`Icon seatEconomy renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2537,8 +2537,8 @@ exports[`Icon security renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2558,8 +2558,8 @@ exports[`Icon shuttle renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2581,8 +2581,8 @@ exports[`Icon smoking renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2604,8 +2604,8 @@ exports[`Icon spa renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2628,8 +2628,8 @@ exports[`Icon splitTicket renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2650,8 +2650,8 @@ exports[`Icon star renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2670,8 +2670,8 @@ exports[`Icon starHalf renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2690,8 +2690,8 @@ exports[`Icon steeringWheel renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2712,8 +2712,8 @@ exports[`Icon success renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2733,8 +2733,8 @@ exports[`Icon successOutline renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2754,8 +2754,8 @@ exports[`Icon swap renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2774,8 +2774,8 @@ exports[`Icon thumbsDown renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2796,8 +2796,8 @@ exports[`Icon thumbsUp renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2818,8 +2818,8 @@ exports[`Icon timer renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2840,8 +2840,8 @@ exports[`Icon trendingUp renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2860,8 +2860,8 @@ exports[`Icon trophy renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2883,8 +2883,8 @@ exports[`Icon tune renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2904,8 +2904,8 @@ exports[`Icon twitter renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2927,8 +2927,8 @@ exports[`Icon unlock renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2949,8 +2949,8 @@ exports[`Icon user renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2970,8 +2970,8 @@ exports[`Icon verified renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -2991,8 +2991,8 @@ exports[`Icon warning renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -3012,8 +3012,8 @@ exports[`Icon warningOutline renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -3033,8 +3033,8 @@ exports[`Icon web renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -3054,8 +3054,8 @@ exports[`Icon whirlpool renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -3079,8 +3079,8 @@ exports[`Icon wifi renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -3100,8 +3100,8 @@ exports[`Icon youtube renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg
@@ -3122,8 +3122,8 @@ exports[`Icon zoomOut renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 <svg

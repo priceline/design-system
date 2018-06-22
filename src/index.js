@@ -36,7 +36,6 @@ export { default as Truncate } from './Truncate'
 export { default as Checkbox } from './Checkbox'
 
 export { default as theme } from './theme'
-export { default as legacyTheme } from './legacyTheme'
 export { default as ThemeProvider } from './ThemeProvider'
 
 export * from './theme'

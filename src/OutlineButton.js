@@ -5,16 +5,14 @@ import Button from './Button'
 import theme from './theme'
 
 const OutlineButton = styled(Button)`
-  background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
   color: ${props => props.theme.colors.blue};
-  border-color: ${props => props.theme.colors.blue};
+  box-shadow: inset 0 0 0 2px ${props => props.theme.colors.blue};
+  background-color: transparent;
 
   &:hover {
     color: ${props => (props.disabled ? null : props.theme.colors.darkBlue)};
-    border-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkBlue};
+    box-shadow: inset 0 0 0 2px
+      ${props => (props.disabled ? null : props.theme.colors.darkBlue)};
     background-color: transparent;
   }
 `
