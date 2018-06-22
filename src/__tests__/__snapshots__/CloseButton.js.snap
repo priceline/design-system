@@ -5,8 +5,8 @@ exports[`CloseButton renders without props 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 .c1 {

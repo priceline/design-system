@@ -10,35 +10,35 @@ Use the `<Text />` component to control font size, weight, alignment, and color.
 ```
 
 ```.jsx
-// Font size 4 on the typographic scale
+{/* Font size 4 on the typographic scale */}
 <Text fontSize={4}>
   Text
 </Text>
 ```
 
 ```.jsx
-// Center aligned
+{/* Center aligned */}
 <Text align='center'>
   Centered Text
 </Text>
 ```
 
 ```.jsx
-// Bold weight
+{/* Bold weight */}
 <Text bold>
   Bold Text
 </Text>
 ```
 
 ```.jsx
-// All-caps
+{/* All-caps */}
 <Text caps>
   Caps Text
 </Text>
 ```
 
 ```.jsx
-// Blue text from the color palette
+{/* Blue text from the color palette */}
 <Text color='blue'>
   Blue Text
 </Text>
