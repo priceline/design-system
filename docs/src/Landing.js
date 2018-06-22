@@ -17,10 +17,7 @@ import Markdown from './Markdown'
 import Container from './Container'
 import Description from './Description'
 
-// This will require a fix in the Button component
-Button.a = Button.withComponent('a').extend`
-  line-height: 48px;
-`
+Button.a = Button.withComponent('a')
 
 const Landing = props => {
   const gettingStarted = props.content.find(c => c.name === 'GettingStarted')
@@ -36,6 +33,7 @@ const Landing = props => {
         <Flex wrap py={4} align="center">
           <Pre
             my={2}
+            mr={2}
             style={{
               lineHeight: '16px'
             }}
@@ -43,11 +41,11 @@ const Landing = props => {
             npm install pcln-design-system
           </Pre>
           <Button.a
-            mx={3}
             size="large"
             href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
-            children="Download Sketch Kit"
-          />
+          >
+            Download Sketch Kit
+          </Button.a>
         </Flex>
         <Divider />
         <Box pb={5}>
