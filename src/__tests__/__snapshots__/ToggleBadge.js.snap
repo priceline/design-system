@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleBadge selected one has light blue background-color 1`] = `
+.c0 {
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #cdf;
+  color: #049;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c0:hover {
+  background-color: #cdf;
+}
+
+<div
+  className="c0"
+  selected={true}
+/>
+`;
+
+exports[`ToggleBadge unselected one has white background-color and hover state 1`] = `
+.c0 {
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #049;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c0:hover {
+  background-color: #cdf;
+}
+
+<div
+  className="c0"
+  selected={false}
+/>
+`;
