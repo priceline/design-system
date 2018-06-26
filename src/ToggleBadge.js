@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme as themeGet, space, fontSize } from 'styled-system'
+import { theme as themeGet, space, fontSize, propTypes } from 'styled-system'
 import theme from './theme'
 
 const ToggleBadge = styled.div`
@@ -19,21 +19,13 @@ const ToggleBadge = styled.div`
 
 ToggleBadge.displayName = 'ToggleBadge'
 
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
-
 ToggleBadge.propTypes = {
-  fontSize: numberStringOrArray,
   bg: PropTypes.string,
   color: PropTypes.string,
   selected: PropTypes.bool,
-  px: numberStringOrArray,
-  py: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray
+  ...propTypes.space,
+  ...propTypes.fontSize,
+  ...propTypes.color
 }
 
 ToggleBadge.defaultProps = {
