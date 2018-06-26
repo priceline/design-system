@@ -1,18 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme as themeGet, space } from 'styled-system'
+import { theme as themeGet, space, fontSize } from 'styled-system'
 import theme from './theme'
 
 const ToggleBadge = styled.div`
-  border-radius: 2px;
+  border-radius: ${props => props.theme.radius};
   display: inline-block;
-  font-size: ${props => props.theme.fontSizes[0]}px;
-  font-weight: 600;
+  font-weight: ${props => props.theme.bold};
   background-color: ${props =>
     props.selected ? props.theme.colors[props.bg] : null};
   color: ${props => props.theme.colors[props.color]};
-  ${space};
+  ${space} ${fontSize};
   &:hover {
     background-color: ${props => props.theme.colors[props.bg]};
   }
@@ -27,6 +26,7 @@ const numberStringOrArray = PropTypes.oneOfType([
 ])
 
 ToggleBadge.propTypes = {
+  fontSize: numberStringOrArray,
   bg: PropTypes.string,
   color: PropTypes.string,
   selected: PropTypes.bool,
@@ -42,6 +42,7 @@ ToggleBadge.defaultProps = {
   py: 1,
   mx: 1,
   my: 1,
+  fontSize: 0,
   theme: theme,
   color: 'darkBlue',
   bg: 'lightBlue'

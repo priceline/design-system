@@ -4,7 +4,6 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 .c0 {
   border-radius: 2px;
   display: inline-block;
-  font-size: 12px;
   font-weight: 600;
   background-color: #cdf;
   color: #049;
@@ -16,6 +15,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 12px;
 }
 
 .c0:hover {
@@ -25,6 +25,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 <div
   className="c0"
   color="darkBlue"
+  fontSize={0}
   selected={true}
 />
 `;
@@ -33,7 +34,6 @@ exports[`ToggleBadge selected one with background-color and text color passed as
 .c0 {
   border-radius: 2px;
   display: inline-block;
-  font-size: 12px;
   font-weight: 600;
   background-color: #0a0;
   color: #c00;
@@ -45,6 +45,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 14px;
 }
 
 .c0:hover {
@@ -54,6 +55,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
 <div
   className="c0"
   color="red"
+  fontSize={1}
   selected={true}
 />
 `;
@@ -62,7 +64,6 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 .c0 {
   border-radius: 2px;
   display: inline-block;
-  font-size: 12px;
   font-weight: 600;
   color: #049;
   margin-left: 4px;
@@ -73,6 +74,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 12px;
 }
 
 .c0:hover {
@@ -82,6 +84,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 <div
   className="c0"
   color="darkBlue"
+  fontSize={0}
   selected={false}
 />
 `;

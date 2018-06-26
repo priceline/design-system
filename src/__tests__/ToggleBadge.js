@@ -18,7 +18,7 @@ describe('ToggleBadge', () => {
 
   test('selected one with background-color and text color passed as props hover state', () => {
     const json = renderer
-      .create(<ToggleBadge selected bg="green" color="red" />)
+      .create(<ToggleBadge selected bg="green" color="red" fontSize={1} />)
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
