@@ -6,7 +6,7 @@ describe('ToggleBadge', () => {
   test('selected one has light blue background-color', () => {
     const json = renderer.create(<ToggleBadge selected />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.light)
+    expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
     expect(json).toHaveStyleRule('color', theme.colors.darkBlue)
   })
 
