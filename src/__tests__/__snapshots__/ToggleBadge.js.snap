@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
 .c0 {
   border-radius: 2px;
   display: inline-block;
@@ -22,8 +58,8 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   background-color: #cdf;
 }
 
-<div
-  className="c0"
+<button
+  className="c0 c1"
   color="darkBlue"
   fontSize={0}
   selected={true}
@@ -31,6 +67,42 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 `;
 
 exports[`ToggleBadge selected one with background-color and text color passed as props hover state 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
 .c0 {
   border-radius: 2px;
   display: inline-block;
@@ -52,8 +124,8 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   background-color: #0a0;
 }
 
-<div
-  className="c0"
+<button
+  className="c0 c1"
   color="red"
   fontSize={1}
   selected={true}
@@ -61,10 +133,47 @@ exports[`ToggleBadge selected one with background-color and text color passed as
 `;
 
 exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
 .c0 {
   border-radius: 2px;
   display: inline-block;
   font-weight: 600;
+  background-color: #fff;
   color: #049;
   margin-left: 4px;
   margin-right: 4px;
@@ -81,8 +190,8 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   background-color: #cdf;
 }
 
-<div
-  className="c0"
+<button
+  className="c0 c1"
   color="darkBlue"
   fontSize={0}
   selected={false}

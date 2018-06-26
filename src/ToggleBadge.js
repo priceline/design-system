@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { theme as themeGet, space, fontSize, propTypes } from 'styled-system'
 import theme from './theme'
+import Button from './Button'
 
-const ToggleBadge = styled.div`
+const ToggleBadge = styled(Button)`
   border-radius: ${props => props.theme.radius};
   display: inline-block;
   font-weight: ${props => props.theme.bold};
   background-color: ${props =>
-    props.selected ? props.theme.colors[props.bg] : null};
+    props.selected ? props.theme.colors[props.bg] : props.theme.colors.white};
   color: ${props => props.theme.colors[props.color]};
   ${space} ${fontSize};
   &:hover {
