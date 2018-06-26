@@ -20,8 +20,6 @@ const ToggleBadge = styled.div`
 ToggleBadge.displayName = 'ToggleBadge'
 
 ToggleBadge.propTypes = {
-  bg: PropTypes.string,
-  color: PropTypes.string,
   selected: PropTypes.bool,
   ...propTypes.space,
   ...propTypes.fontSize,
