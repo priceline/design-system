@@ -10,11 +10,11 @@ const ToggleBadge = styled.div`
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;
   background-color: ${props =>
-    props.selected ? props.theme.colors.lightBlue : props.theme.colors.white};
-  color: ${props => props.theme.colors.darkBlue};
+    props.selected ? props.theme.colors[props.bg] : null};
+  color: ${props => props.theme.colors[props.color]};
   ${space};
   &:hover {
-    background-color: ${props => props.theme.colors.lightBlue};
+    background-color: ${props => props.theme.colors[props.bg]};
   }
 `
 
@@ -27,6 +27,8 @@ const numberStringOrArray = PropTypes.oneOfType([
 ])
 
 ToggleBadge.propTypes = {
+  bg: PropTypes.string,
+  color: PropTypes.string,
   selected: PropTypes.bool,
   px: numberStringOrArray,
   py: numberStringOrArray,
@@ -40,7 +42,9 @@ ToggleBadge.defaultProps = {
   py: 1,
   mx: 1,
   my: 1,
-  theme: theme
+  theme: theme,
+  color: 'darkBlue',
+  bg: 'lightBlue'
 }
 
 export default ToggleBadge
