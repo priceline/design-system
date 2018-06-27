@@ -7,13 +7,13 @@ describe('ToggleBadge', () => {
     const json = renderer.create(<ToggleBadge selected />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
-    expect(json).toHaveStyleRule('color', theme.colors.darkBlue)
+    expect(json).toHaveStyleRule('color', theme.colors.blue)
   })
 
   test('unselected ToggleBadge renders with default props', () => {
     const json = renderer.create(<ToggleBadge />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.darkBlue)
+    expect(json).toHaveStyleRule('color', theme.colors.blue)
   })
 
   test('selected one with background-color and text color passed as props hover state', () => {

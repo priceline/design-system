@@ -8,7 +8,8 @@ const ToggleBadge = styled.button`
   border-radius: ${props => props.theme.radius};
   border: 0;
   display: inline-block;
-  font-weight: ${props => props.theme.bold};
+  font-weight: ${props =>
+    props.selected ? props.theme.bold : props.theme.regular};
   font-family: inherit;
   cursor: pointer;
   background-color: ${props =>
@@ -37,7 +38,7 @@ ToggleBadge.defaultProps = {
   my: 1,
   fontSize: 0,
   theme: theme,
-  color: 'darkBlue',
+  color: 'blue',
   bg: 'lightBlue'
 }
 
