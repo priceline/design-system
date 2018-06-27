@@ -206,6 +206,7 @@ const pages = [
     name: 'Components',
     // Component markdown docs can be added here
     pages: [
+      'Absolute',
       'BackgroundImage',
       'Badge',
       'Banner',
