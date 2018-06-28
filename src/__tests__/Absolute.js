@@ -14,13 +14,13 @@ describe('Absolute', () => {
   })
 
   test('renders with flag and Child', () => {
-    const json2 = renderer.create(
+    const json = renderer.create(
       <Absolute top={10} left={0}>
         <Flag>
           <Icon name="coupon" /> <Text.span>EXCLUSIVE</Text.span>
         </Flag>
       </Absolute>
     ).toJSON
-    expect(json2).toMatchSnapshot()
+    expect(json).toMatchSnapshot()
   })
 })

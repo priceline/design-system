@@ -43,7 +43,7 @@ storiesOf('Absolute', module)
   .add('Positioning an icon', () => (
     <Box p={3}>
       <RelativeCard p={4}>
-        <Text mt="8px" align="justify">
+        <Text mt={2} align="justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
           nisl dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Donec quis nisi ac est elementum consequat a eu risus. Phasellus id
