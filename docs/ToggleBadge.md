@@ -15,7 +15,7 @@ Use the `<ToggleBadge />` component to render a primitive badge.
 
 Prop | Type | Description
 ---|---|---
-selected | boolean | gives different background color and makes font bold
+selected | boolean | gives different background color
 color | string | text color
 bg | string | background color of the toggle badge
 fontSize | number or array | text font size
