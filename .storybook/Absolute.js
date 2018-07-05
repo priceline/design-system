@@ -1,17 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { Absolute, Box, Card, Flag, Flex, Icon, Image, Text } from '../src'
+import { Absolute, Card, Flag, Icon, Image, Relative, Text } from '../src'
 
-const RelativeBox = styled(Box)`
-  position: relative;
-`
-
-const RelativeCard = styled(Card)`
-  position: relative;
-`
-
-const TallCard = styled(RelativeCard)`
+const TallCard = styled(Card)`
   height: 420px;
 `
 
@@ -33,16 +25,16 @@ const ExtraLargeAbsolute = styled(Absolute)`
 
 storiesOf('Absolute', module)
   .add('Over an image', () => (
-    <RelativeBox width={1 / 2}>
+    <Relative width={1 / 2}>
       <Absolute top={8} left={0}>
         <Flag>Hello Flag</Flag>
       </Absolute>
       <Image src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg" />
-    </RelativeBox>
+    </Relative>
   ))
   .add('Positioning an icon', () => (
-    <Box p={3}>
-      <RelativeCard p={4}>
+    <Card m={2}>
+      <Relative p={4}>
         <Text mt={2} align="justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
           nisl dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -54,12 +46,12 @@ storiesOf('Absolute', module)
         <Absolute top="10px" right="10px">
           <Icon name="close" color="gray" size={24} />
         </Absolute>
-      </RelativeCard>
-    </Box>
+      </Relative>
+    </Card>
   ))
   .add('Multiple absolutely positioned boxes', () => (
-    <Box p={3}>
-      <TallCard pb={3}>
+    <TallCard pb={3}>
+      <Relative p={3}>
         <ExtraLargeAbsolute
           pl={2}
           top={0}
@@ -108,6 +100,6 @@ storiesOf('Absolute', module)
             z-index 4
           </Text.span>
         </SmallAbsolute>
-      </TallCard>
-    </Box>
+      </Relative>
+    </TallCard>
   ))

@@ -232,6 +232,7 @@ const pages = [
       'Link',
       'Radio',
       'RatingBadge',
+      'Relative',
       'Select',
       'Slider',
       'Stamp',
