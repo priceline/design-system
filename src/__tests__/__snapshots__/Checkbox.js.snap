@@ -70,6 +70,7 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -236,6 +237,7 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -455,6 +457,7 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -621,6 +624,7 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -840,6 +844,7 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -1006,6 +1011,7 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -1225,6 +1231,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -1391,6 +1398,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -1610,6 +1618,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -1776,6 +1785,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -1995,6 +2005,7 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",
@@ -2161,6 +2172,7 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",

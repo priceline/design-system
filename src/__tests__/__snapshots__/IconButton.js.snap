@@ -69,6 +69,7 @@ exports[`IconButton renders without props 1`] = `
           48,
           64,
         ],
+        "breakpointsUnit": "em",
         "colors": Object {
           "black": "#000",
           "blue": "#007aff",

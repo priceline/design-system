@@ -3,23 +3,26 @@ import PropTypes from 'prop-types'
 import Box from './Box'
 import theme from './theme'
 
-const getMaxWidth = em => em - 0.01
+const getMaxWidth = width => width - 0.01
 
-const breakpoints = props => ({
-  xs: `@media screen and (max-width: ${getMaxWidth(
-    props.theme.breakpoints[0]
-  )}em)`,
-  sm: `@media screen and (min-width: ${
-    props.theme.breakpoints[0]
-  }em) and (max-width: ${getMaxWidth(props.theme.breakpoints[1])}em)`,
-  md: `@media screen and (min-width: ${
-    props.theme.breakpoints[1]
-  }em) and (max-width: ${getMaxWidth(props.theme.breakpoints[2])}em)`,
-  lg: `@media screen and (min-width: ${
-    props.theme.breakpoints[2]
-  }em) and (max-width: ${getMaxWidth(props.theme.breakpoints[3])}em)`,
-  xl: `@media screen and (min-width: ${props.theme.breakpoints[3]}em)`
-})
+const breakpoints = props => {
+  const unit = props.theme.breakpointsUnit
+  return {
+    xs: `@media screen and (max-width: ${getMaxWidth(
+      props.theme.breakpoints[0]
+    )}${unit})`,
+    sm: `@media screen and (min-width: ${
+      props.theme.breakpoints[0]
+    }${unit}) and (max-width: ${getMaxWidth(props.theme.breakpoints[1])}${unit})`,
+    md: `@media screen and (min-width: ${
+      props.theme.breakpoints[1]
+    }${unit}) and (max-width: ${getMaxWidth(props.theme.breakpoints[2])}${unit})`,
+    lg: `@media screen and (min-width: ${
+      props.theme.breakpoints[2]
+    }${unit}) and (max-width: ${getMaxWidth(props.theme.breakpoints[3])}${unit})`,
+    xl: `@media screen and (min-width: ${props.theme.breakpoints[3]}${unit})`
+  }
+}
 
 const hidden = key => props =>
   props[key]

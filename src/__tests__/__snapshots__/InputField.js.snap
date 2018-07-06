@@ -146,6 +146,7 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -329,6 +330,7 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -595,6 +597,7 @@ exports[`InputField it does not display a label when Label has \`hidden\` prop 1
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -778,6 +781,7 @@ exports[`InputField it does not display a label when Label has \`hidden\` prop 1
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -1044,6 +1048,7 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -1227,6 +1232,7 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -1493,6 +1499,7 @@ exports[`InputField it renders a with a both icons 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -1676,6 +1683,7 @@ exports[`InputField it renders a with a both icons 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -2029,6 +2037,7 @@ exports[`InputField it renders a with a left side icon 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -2317,6 +2326,7 @@ exports[`InputField it renders a with a right side icon 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -2577,6 +2587,7 @@ exports[`InputField it renders using FormField alias 1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -2852,6 +2863,7 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -3108,6 +3120,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -3293,6 +3306,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -3563,6 +3577,7 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -3824,6 +3839,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -4019,6 +4035,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -4187,6 +4204,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -4444,6 +4462,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -4639,6 +4658,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -4920,6 +4940,7 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
@@ -5088,6 +5109,7 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
               48,
               64,
             ],
+            "breakpointsUnit": "em",
             "colors": Object {
               "black": "#000",
               "blue": "#007aff",
