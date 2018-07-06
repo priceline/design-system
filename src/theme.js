@@ -12,6 +12,8 @@ const addAliases = (arr, aliases) =>
 
 export const breakpoints = [32, 40, 48, 64]
 
+export const breakpointsUnit = 'em'
+
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
 const aliases = ['sm', 'md', 'lg', 'xl']
@@ -177,6 +179,7 @@ const transitionDelays = {
 
 const theme = {
   breakpoints,
+  breakpointsUnit,
   mediaQueries,
   space,
   font,
