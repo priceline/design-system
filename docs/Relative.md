@@ -1,9 +1,11 @@
+# Relative
 
-# Absolute
+Use `<Relative />` component to control position and to act as a
+parent/ancestor to an `<Absolute>` element.
 
-Use `<Absolute />` component to control position.  Use with a `<Relative>` parent/ancestor.
-
-This component is an extension of the [`<Box />`](https://pricelinelabs.github.io/design-system/Box) component.   It inherits `<Box />` props.
+This component is an extension of the
+[`<Box />`](https://pricelinelabs.github.io/design-system/Box) component.
+It inherits `<Box />` props.
 
 ```.jsx
 <Card>
