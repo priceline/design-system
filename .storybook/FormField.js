@@ -2,17 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
-import {
-  Box,
-  Flex,
-  Text,
-  InputField,
-  FormField,
-  Label,
-  Input,
-  Icon,
-  Select
-} from '../src'
+import { Box, Flex, Text, FormField, Label, Input, Icon, Select } from '../src'
 
 storiesOf('FormField', module)
   .add(
@@ -26,7 +16,7 @@ storiesOf('FormField', module)
         <Text bold pt={4} pb={2}>
           Hey, ya turkey! Enter a word that has 5 characters in it.
         </Text>
-        <InputFieldWithController />
+        <FormFieldWithController />
       </Box>
     ))
   )
@@ -34,159 +24,147 @@ storiesOf('FormField', module)
     'Sample States',
     withInfo('Renders a styled Input element')(() => (
       <div>
-        <Flex width={900}>
-          <Box width={1 / 2} pl={3}>
-            <Text bold pt={4} pb={2}>
-              Placeholder with Chevron
-            </Text>
-            <InputField
-              onChange={action('onChange event is triggered in FormField')}
-            >
-              <Input id="form-field-1" placeholder="Placeholder" />
-              <Icon name="chevronDown" size="12" />
-            </InputField>
-          </Box>
+        <Flex wrap width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               Placeholder with Icon
             </Text>
-            <InputField
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField>
               <Icon name="search" color="blue" size="18" />
               <Input id="form-field-3" placeholder="Placeholder with Icon" />
-            </InputField>
-          </Box>
-        </Flex>
-        <Flex width={900}>
-          <Box width={1 / 2} pl={3}>
-            <Text bold pt={4} pb={2}>
-              Plain Text
-            </Text>
-            <InputField
-              onChange={action('onChange event is triggered in FormField')}
-            >
-              <Input id="form-field-1" value="Plain text" />
-              <Icon name="chevronDown" size="12" />
-            </InputField>
+            </FormField>
           </Box>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
-              Plain Text with Icon
+              With Value
             </Text>
-            <InputField
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField>
+              <Input id="form-field-1" defaultValue="With value" />
+            </FormField>
+          </Box>
+          <Box width={1 / 2} pl={3}>
+            <Text bold pt={4} pb={2}>
+              With value and Icon
+            </Text>
+            <FormField>
               <Icon name="user" color="blue" />
-              <Input id="form-field-1" value="Plain text with Icon" />
-              <Icon name="chevronDown" size="12" />
-            </InputField>
+              <Input
+                id="form-field-1"
+                value="With value and Icon"
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
-        </Flex>
-        <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               With Label and Blue Outline
             </Text>
-            <InputField
-              color="blue"
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField color="blue">
               <Label>Label</Label>
-              <Input id="form-field-3" value="Typing Text" />
-            </InputField>
+              <Input
+                id="form-field-3"
+                value="Typing Text"
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
-              With Label, Icon, and Chevron
+              With Label and Icon
             </Text>
-            <InputField
-              color="blue"
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField color="blue">
               <Icon name="user" color="blue" />
               <Label>Label</Label>
-              <Input id="form-field-3" value="Typing text with Icon" />
-              <Icon name="chevronDown" size="12" />
-            </InputField>
+              <Input
+                id="form-field-3"
+                value="Typing text with Icon"
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
-        </Flex>
-        <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               Email Address with Form Validation
             </Text>
-            <InputField
-              color="red"
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField color="red">
               <Label>Email address</Label>
-              <Input id="form-field-3" value="olvier@examp" />
+              <Input
+                id="form-field-3"
+                value="olvier@examp"
+                onChange={action('onChange event is triggered in FormField')}
+              />
               <Icon name="warning" color="red" size="20" />
-            </InputField>
+            </FormField>
           </Box>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               Email Address with Form Validation 2
             </Text>
-            <InputField
-              color="green"
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField color="green">
               <Label>Email address</Label>
-              <Input id="form-field-3" value="olvier@example.com" />
+              <Input
+                id="form-field-3"
+                value="olvier@example.com"
+                onChange={action('onChange event is triggered in FormField')}
+              />
               <Icon name="success" color="green" size="20" />
-            </InputField>
+            </FormField>
           </Box>
-        </Flex>
-        <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               With Label Always Shown
             </Text>
-            <InputField
-              alwaysShowLabel
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField alwaysShowLabel>
               <Label>Pick-up Location</Label>
-              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
-            </InputField>
+              <Input
+                id="form-field-3"
+                placeholder="Same as pick-up"
+                value=""
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               Without Label Always Shown (requires typing)
             </Text>
-            <InputField
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField>
               <Label>Pick-up Location</Label>
-              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
-            </InputField>
+              <Input
+                id="form-field-3"
+                placeholder="Same as pick-up"
+                value=""
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
-        </Flex>
-        <Flex width={900}>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               Label component has hidden prop
             </Text>
-            <InputField
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField>
               <Label hidden>Pick-up Location</Label>
-              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
-            </InputField>
+              <Input
+                id="form-field-3"
+                placeholder="Same as pick-up"
+                value=""
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
           <Box width={1 / 2} pl={3}>
             <Text bold pt={4} pb={2}>
               Label component without hidden prop
             </Text>
-            <InputField
-              alwaysShowLabel
-              onChange={action('onChange event is triggered in FormField')}
-            >
+            <FormField alwaysShowLabel>
               <Label>Pick-up Location</Label>
-              <Input id="form-field-3" placeholder="Same as pick-up" value="" />
-            </InputField>
+              <Input
+                id="form-field-3"
+                placeholder="Same as pick-up"
+                value=""
+                onChange={action('onChange event is triggered in FormField')}
+              />
+            </FormField>
           </Box>
         </Flex>
       </div>
@@ -202,45 +180,45 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             No User Interaction
           </Text>
-          <InputField
-            onChange={action('onChange event is triggered in FormField')}
-          >
+          <FormField>
             <Label>Drop-off Location</Label>
             <Icon name="search" color="blue" size="18" />
-            <Input id="drop-off" placeholder="Enter a drop-off location" />
-          </InputField>
+            <Input
+              id="drop-off"
+              placeholder="Enter a drop-off location"
+              onChange={action('onChange event is triggered in FormField')}
+            />
+          </FormField>
         </Box>
         <Box width={1 / 3} pl={3}>
           <Text bold pt={4} pb={2}>
             User Clicks in Box
           </Text>
-          <InputField
-            onChange={action('onChange event is triggered in FormField')}
-          >
+          <FormField>
             <Label>Drop-off Location</Label>
             <Icon name="search" color="blue" size="18" />
             <Input
               id="drop-off"
               color="blue"
               placeholder="Enter a drop-off location"
+              onChange={action('onChange event is triggered in FormField')}
             />
-          </InputField>
+          </FormField>
         </Box>
         <Box width={1 / 3} pl={3}>
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <InputField
-            onChange={action('onChange event is triggered in FormField')}
-          >
+          <FormField>
             <Label>Drop-off Location</Label>
             <Icon name="search" color="blue" size="18" />
             <Input
               id="drop-off"
               color="blue"
               placeholder="Enter a drop-off location"
+              onChange={action('onChange event is triggered in FormField')}
             />
-          </InputField>
+          </FormField>
         </Box>
       </Flex>
     ))
@@ -255,9 +233,7 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <FormField
-            onChange={action('onChange event is triggered in FormField')}
-          >
+          <FormField>
             <Label>Cabin Class</Label>
             <Icon name="key" color="blue" size="18" />
             <Select
@@ -265,6 +241,7 @@ storiesOf('FormField', module)
               name="cabinClass"
               defaultValue="Premium Economy"
               prefixIcon="key"
+              onChange={action('onChange event is triggered in FormField')}
             >
               <option>Economy</option>
               <option>Premium Economy</option>
@@ -290,10 +267,7 @@ storiesOf('FormField', module)
           <Text bold pt={4} pb={2}>
             User Types a Value
           </Text>
-          <FormField
-            onChange={action('onChange event is triggered in FormField')}
-            alwaysShowLabel
-          >
+          <FormField alwaysShowLabel>
             <Label>Cabin Class</Label>
             <Icon name="key" color="blue" size="18" />
             <Select
@@ -301,6 +275,7 @@ storiesOf('FormField', module)
               name="cabinClass"
               defaultValue="Premium Economy"
               prefixIcon="key"
+              onChange={action('onChange event is triggered in FormField')}
             >
               <option>Economy</option>
               <option>Premium Economy</option>
@@ -316,8 +291,36 @@ storiesOf('FormField', module)
       </Flex>
     ))
   )
+  .add('FormField with Select in Flex container', () => (
+    <Flex wrap mx={-2} mb={-3}>
+      <Box px={2} mb={3} width={[1, 1 / 2]}>
+        <FormField>
+          <Icon legacy={false} color="blue" name="search" />
+          <Label htmlFor="location">Where are you going?</Label>
+          <Select id="location" name="location" defaultValue="">
+            <option disabled value="">
+              Where are you going?
+            </option>
+            <option>Caribbean</option>
+          </Select>
+        </FormField>
+      </Box>
+      <Box px={2} mb={3} width={[1, 1 / 2]}>
+        <FormField>
+          <Icon legacy={false} color="blue" name="cruises" />
+          <Label htmlFor="cruiseLine">Which cruise line?</Label>
+          <Select id="cruiseLine" name="cruiseLine" defaultValue="">
+            <option disabled value="">
+              Which cruise line?
+            </option>
+            <option>All cruise lines</option>
+          </Select>
+        </FormField>
+      </Box>
+    </Flex>
+  ))
 
-class InputFieldWithController extends React.PureComponent {
+class FormFieldWithController extends React.Component {
   state = {
     value: '',
     isValid: false,
@@ -345,7 +348,7 @@ class InputFieldWithController extends React.PureComponent {
 
   render() {
     return (
-      <InputField
+      <FormField
         color={this.getBorderColor()}
         info={
           !this.state.isValid && this.state.isDirty
@@ -364,7 +367,7 @@ class InputFieldWithController extends React.PureComponent {
           onChange={this.onChange}
         />
         <Icon name="fitness" />
-      </InputField>
+      </FormField>
     )
   }
 }
