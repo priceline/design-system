@@ -2761,6 +2761,7 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2816,6 +2817,7 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
   >
     <div
       className="c3"
+      width={1}
     >
       <select
         aria-label={null}
@@ -3027,6 +3029,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3257,6 +3260,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
     </div>
     <div
       className="c5"
+      width={1}
     >
       <select
         aria-label={null}
@@ -3462,6 +3466,7 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3517,6 +3522,7 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
   >
     <div
       className="c3"
+      width={1}
     >
       <select
         aria-label={null}
@@ -3743,6 +3749,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3973,6 +3980,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
     </div>
     <div
       className="c5"
+      width={1}
     >
       <select
         aria-label={null}
@@ -4363,6 +4371,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -4593,6 +4602,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
     </div>
     <div
       className="c5"
+      width={1}
     >
       <select
         aria-label={null}
@@ -4813,6 +4823,7 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -4874,6 +4885,7 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
   >
     <div
       className="c3"
+      width={1}
     >
       <select
         aria-label={null}
