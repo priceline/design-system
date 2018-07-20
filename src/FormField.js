@@ -48,51 +48,6 @@ const formElements = [Input, Select]
 
 const isFormElement = element => formElements.includes(element)
 
-const cloneElement = (element, props) => React.cloneElement(element, [props])
-
-let FieldChild
-let position = -1
-let LabelChild
-let BeforeIcon
-let AfterIcon
-let fieldId
-let fieldPlaceholder
-let iconAdjustment
-
-const parseInputOrSelect = (child, props, index) => {
-  position = index
-  FieldChild = cloneElement(child)
-  fieldId = props.id
-  // For aria-label when Label child is not rendered
-  fieldPlaceholder = props.placeholder
-}
-
-const parseIcon = (child, props) => {
-  if (position < 0) {
-    BeforeIcon = cloneElement(child)
-    iconAdjustment = props.size - 24
-  } else {
-    AfterIcon = cloneElement(child)
-  }
-}
-
-const parseChild = (child, index) => {
-  const { type, props } = child
-
-  switch (type) {
-    case Label:
-      LabelChild = cloneElement(child)
-      break
-    case Input:
-    case Select:
-      parseInputOrSelect(child, props, index)
-      break
-    case Icon:
-      parseIcon(child, props)
-      break
-  }
-}
-
 class FormField extends React.Component {
   static defaultProps = {
     // for backwards-compatibility
@@ -118,6 +73,49 @@ class FormField extends React.Component {
 
   render() {
     const { label, icon, children, onChange, ...props } = this.props
+
+    let FieldChild
+    let position = -1
+    let LabelChild
+    let BeforeIcon
+    let AfterIcon
+    let fieldId
+    let fieldPlaceholder
+    let iconAdjustment
+
+    const parseInputOrSelect = (child, props, index) => {
+      position = index
+      FieldChild = React.cloneElement(child, [props])
+      fieldId = props.id
+      // For aria-label when Label child is not rendered
+      fieldPlaceholder = props.placeholder
+    }
+
+    const parseIcon = (child, props) => {
+      if (position < 0) {
+        BeforeIcon = React.cloneElement(child, [props])
+        iconAdjustment = props.size - 24
+      } else {
+        AfterIcon = React.cloneElement(child, [props])
+      }
+    }
+
+    const parseChild = (child, index) => {
+      const { type, props } = child
+
+      switch (type) {
+        case Label:
+          LabelChild = React.cloneElement(child, [props])
+          break
+        case Input:
+        case Select:
+          parseInputOrSelect(child, props, index)
+          break
+        case Icon:
+          parseIcon(child, props)
+          break
+      }
+    }
 
     React.Children.forEach(children, (child, index) => {
       if (!child) return
