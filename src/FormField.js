@@ -83,33 +83,49 @@ class FormField extends React.Component {
     let fieldPlaceholder
     let iconAdjustment
 
-    React.Children.forEach(children, (child, index) => {
-      if (!child) {
-        return
-      }
+    const parseLabel = child => {
+      LabelChild = child
+    }
 
+    const parseInputOrSelect = (child, props, index) => {
+      position = index
+      FieldChild = child
+      fieldId = props.id
+      // For aria-label when Label child is not rendered
+      fieldPlaceholder = props.placeholder
+    }
+
+    const parseIcon = (child, props) => {
+      if (position < 0) {
+        BeforeIcon = child
+        iconAdjustment = props.size - 24
+      } else {
+        AfterIcon = child
+      }
+    }
+
+    const parseChild = (child, index) => {
       const { type, props } = child
 
-      if (type === Label) {
-        LabelChild = child
+      switch (type) {
+        case Label:
+          parseLabel(child)
+          break
+        case Input:
+          parseInputOrSelect(child, props, index)
+          break
+        case Select:
+          parseInputOrSelect(child, props)
+          break
+        case Icon:
+          parseIcon(child, props)
+          break
       }
+    }
 
-      if (type === Input || type === Select) {
-        position = index
-        FieldChild = child
-        fieldId = props.id
-        // For aria-label when Label child is not rendered
-        fieldPlaceholder = props.placeholder
-      }
-
-      if (type === Icon) {
-        if (position < 0) {
-          BeforeIcon = child
-          iconAdjustment = props.size - 24
-        } else {
-          AfterIcon = child
-        }
-      }
+    React.Children.forEach(children, (child, index) => {
+      if (!child) return
+      parseChild(child, index)
     })
 
     // Handle old version on component's api
