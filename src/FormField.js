@@ -83,43 +83,31 @@ class FormField extends React.Component {
     let fieldPlaceholder
     let iconAdjustment
 
-    const parseInputOrSelect = (child, props, index) => {
-      position = index
-      FieldChild = React.cloneElement(child, [props])
-      fieldId = props.id
-      // For aria-label when Label child is not rendered
-      fieldPlaceholder = props.placeholder
-    }
+    React.Children.forEach(children, (child, index) => {
+      if (!child) return
 
-    const parseIcon = (child, props) => {
-      if (position < 0) {
-        BeforeIcon = React.cloneElement(child, [props])
-        iconAdjustment = props.size - 24
-      } else {
-        AfterIcon = React.cloneElement(child, [props])
-      }
-    }
-
-    const parseChild = (child, index) => {
       const { type, props } = child
-
       switch (type) {
         case Label:
           LabelChild = React.cloneElement(child, [props])
           break
         case Input:
         case Select:
-          parseInputOrSelect(child, props, index)
+          position = index
+          FieldChild = React.cloneElement(child, [props])
+          fieldId = props.id
+          // For aria-label when Label child is not rendered
+          fieldPlaceholder = props.placeholder
           break
         case Icon:
-          parseIcon(child, props)
+          if (position < 0) {
+            BeforeIcon = React.cloneElement(child, [props])
+            iconAdjustment = props.size - 24
+          } else {
+            AfterIcon = React.cloneElement(child, [props])
+          }
           break
       }
-    }
-
-    React.Children.forEach(children, (child, index) => {
-      if (!child) return
-      parseChild(child, index)
     })
 
     // Handle old version on component's api
