@@ -89,22 +89,22 @@ class FormField extends React.Component {
       const { type, props } = child
       switch (type) {
         case Label:
-          LabelChild = React.cloneElement(child, [props])
+          LabelChild = child
           break
         case Input:
         case Select:
           position = index
-          FieldChild = React.cloneElement(child, [props])
+          FieldChild = child
           fieldId = props.id
           // For aria-label when Label child is not rendered
           fieldPlaceholder = props.placeholder
           break
         case Icon:
           if (position < 0) {
-            BeforeIcon = React.cloneElement(child, [props])
+            BeforeIcon = child
             iconAdjustment = props.size - 24
           } else {
-            AfterIcon = React.cloneElement(child, [props])
+            AfterIcon = child
           }
           break
       }
