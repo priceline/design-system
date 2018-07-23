@@ -242,6 +242,20 @@ describe('InputField', () => {
     expect(input.getDOMNode().getAttribute('aria-label')).toBeFalsy()
   })
 
+  test('it does not display a label when Label has `hidden` prop', () => {
+    const json = renderer
+      .create(
+        <InputField onChange={() => {}}>
+          <Label hidden>A Label</Label>
+          <Icon name="email" />
+          <Input id="with-both-icons" />
+          <Icon name="email" />
+        </InputField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('it calls onChange prop if provided', () => {
     const onChange = jest.fn()
     const wrapper = mount(

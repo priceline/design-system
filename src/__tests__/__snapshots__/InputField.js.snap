@@ -172,6 +172,147 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
 </div>
 `;
 
+exports[`InputField it does not display a label when Label has \`hidden\` prop 1`] = `
+.c6 {
+  margin-left: -32px;
+  margin-top: 8px;
+}
+
+.c3 {
+  margin-left: 8px;
+  margin-right: -32px;
+  margin-top: 2px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 24px;
+  width: 24px;
+}
+
+.c5 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #d1d6db;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 1px #d1d6db;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.c5::-webkit-input-placeholder {
+  color: #687B8E;
+}
+
+.c5::-moz-placeholder {
+  color: #687B8E;
+}
+
+.c5:-ms-input-placeholder {
+  color: #687B8E;
+}
+
+.c5::placeholder {
+  color: #687B8E;
+}
+
+.c5::-ms-clear {
+  display: none;
+}
+
+.c5:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+.c0 .c1 {
+  pointer-events: none;
+}
+
+<div
+  className="c0 c1 "
+>
+  <div
+    className="c2"
+    width={1}
+  >
+    <div
+      className="c1 c3"
+    >
+      <svg
+        className="c4"
+        fill="currentcolor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
+        	l-8,5L4,8V6l8,5l8-5V8z"
+        />
+      </svg>
+    </div>
+    <input
+      aria-label={null}
+      className="c5"
+      id="with-both-icons"
+      onChange={[Function]}
+      style={
+        Object {
+          "paddingBottom": "14px",
+          "paddingTop": "14px",
+          "transition": "padding-top 0.1s, padding-bottom 0.1s",
+        }
+      }
+      width={1}
+    />
+    <div
+      className="c1 c6"
+    >
+      <svg
+        className="c4"
+        fill="currentcolor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
+        	l-8,5L4,8V6l8,5l8-5V8z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`InputField it renders a form field wth a label and icons 1`] = `
 .c6 {
   margin-left: -32px;
@@ -929,6 +1070,7 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -986,6 +1128,7 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
   >
     <div
       className="c3"
+      width={1}
     >
       <select
         aria-label={null}
@@ -1041,6 +1184,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1120,6 +1264,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
     </div>
     <div
       className="c5"
+      width={1}
     >
       <select
         aria-label={null}
@@ -1169,6 +1314,7 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1226,6 +1372,7 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
   >
     <div
       className="c3"
+      width={1}
     >
       <select
         aria-label={null}
@@ -1296,6 +1443,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1375,6 +1523,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
     </div>
     <div
       className="c5"
+      width={1}
     >
       <select
         aria-label={null}
@@ -1454,6 +1603,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1533,6 +1683,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
     </div>
     <div
       className="c5"
+      width={1}
     >
       <select
         aria-label={null}
@@ -1597,6 +1748,7 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1662,6 +1814,7 @@ exports[`InputField it renders using FormField alias with Select icons on the ri
   >
     <div
       className="c3"
+      width={1}
     >
       <select
         aria-label={null}

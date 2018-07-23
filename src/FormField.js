@@ -124,7 +124,9 @@ class FormField extends React.Component {
     }
 
     const showLabel =
-      this.props.alwaysShowLabel || (LabelChild && this.hasValue())
+      LabelChild && LabelChild.props.hidden
+        ? false
+        : this.props.alwaysShowLabel || (LabelChild && this.hasValue())
 
     return (
       <Root>

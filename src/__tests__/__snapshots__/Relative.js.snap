@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Relative renders with flag and Child 1`] = `[Function]`;
+
+exports[`Relative renders with top, left and zIndex props 1`] = `
+.c0 {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  z-index: 2;
+}
+
+<div
+  className="c0 "
+/>
+`;
