@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1`] = `
+exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`] = `
 .c4 {
   margin-left: 8px;
   margin-right: -32px;
@@ -480,7 +480,7 @@ exports[`InputField it always renders a label when \`alwaysShowLabel\` is true 1
 </div>
 `;
 
-exports[`InputField it does not display a label when Label has \`hidden\` prop 1`] = `
+exports[`FormField it does not display a label when Label has \`hidden\` prop 1`] = `
 .c6 {
   margin-left: -32px;
   margin-top: 8px;
@@ -929,7 +929,7 @@ exports[`InputField it does not display a label when Label has \`hidden\` prop 1
 </div>
 `;
 
-exports[`InputField it renders a form field wth a label and icons 1`] = `
+exports[`FormField it renders a form field wth a label and icons 1`] = `
 .c6 {
   margin-left: -32px;
   margin-top: 8px;
@@ -1378,7 +1378,7 @@ exports[`InputField it renders a form field wth a label and icons 1`] = `
 </div>
 `;
 
-exports[`InputField it renders a with a both icons 1`] = `
+exports[`FormField it renders a with a both icons 1`] = `
 .c6 {
   margin-left: -32px;
   margin-top: 8px;
@@ -1827,7 +1827,7 @@ exports[`InputField it renders a with a both icons 1`] = `
 </div>
 `;
 
-exports[`InputField it renders a with a conditional right side icon 1`] = `
+exports[`FormField it renders a with a conditional right side icon 1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1920,7 +1920,7 @@ exports[`InputField it renders a with a conditional right side icon 1`] = `
 </div>
 `;
 
-exports[`InputField it renders a with a left side icon 1`] = `
+exports[`FormField it renders a with a left side icon 1`] = `
 .c3 {
   margin-left: 8px;
   margin-right: -32px;
@@ -2194,7 +2194,7 @@ exports[`InputField it renders a with a left side icon 1`] = `
 </div>
 `;
 
-exports[`InputField it renders a with a right side icon 1`] = `
+exports[`FormField it renders a with a right side icon 1`] = `
 .c4 {
   margin-left: -32px;
   margin-top: 8px;
@@ -2468,7 +2468,7 @@ exports[`InputField it renders a with a right side icon 1`] = `
 </div>
 `;
 
-exports[`InputField it renders using FormField alias 1`] = `
+exports[`FormField it renders using FormField alias 1`] = `
 .c3 {
   margin-left: 8px;
   margin-right: -32px;
@@ -2742,7 +2742,7 @@ exports[`InputField it renders using FormField alias 1`] = `
 </div>
 `;
 
-exports[`InputField it renders using FormField alias with Select  1`] = `
+exports[`FormField it renders using FormField alias with Select  1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3004,7 +3004,7 @@ exports[`InputField it renders using FormField alias with Select  1`] = `
 </div>
 `;
 
-exports[`InputField it renders using FormField alias with Select and Icon 1`] = `
+exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
 .c3 {
   margin-left: 8px;
   margin-right: -32px;
@@ -3447,7 +3447,7 @@ exports[`InputField it renders using FormField alias with Select and Icon 1`] = 
 </div>
 `;
 
-exports[`InputField it renders using FormField alias with Select and Options 1`] = `
+exports[`FormField it renders using FormField alias with Select and Options 1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3719,7 +3719,7 @@ exports[`InputField it renders using FormField alias with Select and Options 1`]
 </div>
 `;
 
-exports[`InputField it renders using FormField alias with Select icons on both sides 1`] = `
+exports[`FormField it renders using FormField alias with Select icons on both sides 1`] = `
 .c8 {
   margin-left: -32px;
   margin-top: 8px;
@@ -4346,7 +4346,7 @@ exports[`InputField it renders using FormField alias with Select icons on both s
 </div>
 `;
 
-exports[`InputField it renders using FormField alias with Select icons on the left side 1`] = `
+exports[`FormField it renders using FormField alias with Select icons on the left side 1`] = `
 .c3 {
   margin-left: 8px;
   margin-right: -32px;
@@ -4799,7 +4799,7 @@ exports[`InputField it renders using FormField alias with Select icons on the le
 </div>
 `;
 
-exports[`InputField it renders using FormField alias with Select icons on the right side 1`] = `
+exports[`FormField it renders using FormField alias with Select icons on the right side 1`] = `
 .c6 {
   margin-left: -32px;
   margin-top: 8px;
