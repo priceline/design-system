@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { ToggleBadge } from '../src'
+import { Box, ToggleBadge } from '../src'
 
 storiesOf('ToggleBadge', module)
   .add(
@@ -14,6 +14,9 @@ storiesOf('ToggleBadge', module)
   )
   .add('Selected', () => <ToggleBadge selected>Selected - Badge</ToggleBadge>)
   .add('Unselected', () => <ToggleBadge>Un - Selected - Badge</ToggleBadge>)
+  .add('Unselected with different background color', () => (
+    <ToggleBadge unSelectedBg="yellow">Un - Selected - Badge</ToggleBadge>
+  ))
   .add('A group', () => (
     <div>
       <ToggleBadge selected>Flight + Hotel</ToggleBadge>
