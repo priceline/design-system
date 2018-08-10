@@ -84,31 +84,29 @@ class FormField extends React.Component {
     let iconAdjustment
 
     React.Children.forEach(children, (child, index) => {
-      if (!child) {
-        return
-      }
+      if (!child) return
 
       const { type, props } = child
-
-      if (type === Label) {
-        LabelChild = child
-      }
-
-      if (type === Input || type === Select) {
-        position = index
-        FieldChild = child
-        fieldId = props.id
-        // For aria-label when Label child is not rendered
-        fieldPlaceholder = props.placeholder
-      }
-
-      if (type === Icon) {
-        if (position < 0) {
-          BeforeIcon = child
-          iconAdjustment = props.size - 24
-        } else {
-          AfterIcon = child
-        }
+      switch (type) {
+        case Label:
+          LabelChild = child
+          break
+        case Input:
+        case Select:
+          position = index
+          FieldChild = child
+          fieldId = props.id
+          // For aria-label when Label child is not rendered
+          fieldPlaceholder = props.placeholder
+          break
+        case Icon:
+          if (position < 0) {
+            BeforeIcon = child
+            iconAdjustment = props.size - 24
+          } else {
+            AfterIcon = child
+          }
+          break
       }
     })
 
