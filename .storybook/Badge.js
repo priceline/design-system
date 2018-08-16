@@ -26,6 +26,7 @@ storiesOf('Badge', module)
       </Badge>
     </div>
   ))
+  .add('default', () => <Badge>default</Badge>)
   .add('blue', () => <Badge bg="blue">blue</Badge>)
   .add('lightBlue', () => <Badge bg="lightBlue">lightBlue</Badge>)
   .add('green', () => <Badge bg="green">green</Badge>)
@@ -37,5 +38,10 @@ storiesOf('Badge', module)
   .add('text (custom)', () => (
     <Badge bg="text" color="white">
       text (custom)
+    </Badge>
+  ))
+  .add('lightBlue and text (custom)', () => (
+    <Badge bg="lightBlue" color="text">
+      lightBlue and text (custom)
     </Badge>
   ))
