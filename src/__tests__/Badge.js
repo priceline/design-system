@@ -50,13 +50,6 @@ describe('Badge', () => {
     expect(json).toHaveStyleRule('color', theme.colors.darkOrange)
   })
 
-  test('bg text sets background-color and color', () => {
-    const json = renderer.create(<Badge bg="text" />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.text)
-    expect(json).toHaveStyleRule('color', theme.colors.white)
-  })
-
   test('bg blue sets background-color and color', () => {
     const json = renderer.create(<Badge bg="blue" />).toJSON()
     expect(json).toMatchSnapshot()
@@ -69,5 +62,12 @@ describe('Badge', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
     expect(json).toHaveStyleRule('color', theme.colors.darkBlue)
+  })
+
+  test('non-preset: bg text sets background-color and color white sets color', () => {
+    const json = renderer.create(<Badge bg="text" color="white" />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', theme.colors.text)
+    expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 })

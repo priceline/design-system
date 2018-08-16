@@ -16,6 +16,8 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #007aff;
+  color: #001833;
+  background-color: #007aff;
   color: #fff;
 }
 
@@ -40,6 +42,8 @@ exports[`Badge bg green sets background-color and color 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  background-color: #0a0;
+  color: #001833;
   background-color: #0a0;
   color: #fff;
 }
@@ -66,6 +70,8 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #cdf;
+  color: #001833;
+  background-color: #cdf;
   color: #049;
 }
 
@@ -90,6 +96,8 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  background-color: #cec;
+  color: #001833;
   background-color: #cec;
   color: #060;
 }
@@ -116,6 +124,8 @@ exports[`Badge bg lightOrange sets background-color and color 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #feb;
+  color: #001833;
+  background-color: #feb;
   color: #a50;
 }
 
@@ -140,6 +150,8 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  background-color: #fcc;
+  color: #001833;
   background-color: #fcc;
   color: #800;
 }
@@ -167,6 +179,8 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   padding-bottom: 4px;
   background-color: #fa0;
   color: #001833;
+  background-color: #fa0;
+  color: #001833;
 }
 
 <div
@@ -191,6 +205,8 @@ exports[`Badge bg red sets background-color and color 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #c00;
+  color: #001833;
+  background-color: #c00;
   color: #fff;
 }
 
@@ -200,7 +216,7 @@ exports[`Badge bg red sets background-color and color 1`] = `
 />
 `;
 
-exports[`Badge bg text sets background-color and color 1`] = `
+exports[`Badge non-preset: bg text sets background-color and color white sets color 1`] = `
 .c0 {
   border-radius: 99999px;
   display: inline-block;
@@ -221,7 +237,7 @@ exports[`Badge bg text sets background-color and color 1`] = `
 
 <div
   className="c0"
-  color="text"
+  color="white"
 />
 `;
 
@@ -240,6 +256,8 @@ exports[`Badge renders 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  color: #001833;
+  background-color: #f6f8fa;
   background-color: #f6f8fa;
   color: #001833;
 }

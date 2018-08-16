@@ -15,21 +15,27 @@ storiesOf('Badge', module)
     <div>
       <Badge bg="blue">blue</Badge>
       <Badge bg="lightBlue">lightBlue</Badge>
-      <Badge bg="text">text</Badge>
       <Badge bg="green">green</Badge>
       <Badge bg="lightGreen">lightGreen</Badge>
       <Badge bg="red">red</Badge>
       <Badge bg="lightRed">lightRed</Badge>
       <Badge bg="orange">orange</Badge>
       <Badge bg="lightOrange">lightOrange</Badge>
+      <Badge bg="text" color="white">
+        text (custom)
+      </Badge>
     </div>
   ))
   .add('blue', () => <Badge bg="blue">blue</Badge>)
   .add('lightBlue', () => <Badge bg="lightBlue">lightBlue</Badge>)
-  .add('text', () => <Badge bg="text">text</Badge>)
   .add('green', () => <Badge bg="green">green</Badge>)
   .add('lightGreen', () => <Badge bg="lightGreen">lightGreen</Badge>)
   .add('red', () => <Badge bg="red">red</Badge>)
   .add('lightRed', () => <Badge bg="lightRed">lightRed</Badge>)
   .add('orange', () => <Badge bg="orange">orange</Badge>)
   .add('lightOrange', () => <Badge bg="lightOrange">lightOrange</Badge>)
+  .add('text (custom)', () => (
+    <Badge bg="text" color="white">
+      text (custom)
+    </Badge>
+  ))
