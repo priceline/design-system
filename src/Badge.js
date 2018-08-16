@@ -14,6 +14,10 @@ const type = props => {
       backgroundColor: props.theme.colors.lightBlue,
       color: props.theme.colors.darkBlue
     },
+    text: {
+      backgroundColor: props.theme.colors.text,
+      color: props.theme.colors.white
+    },
     green: {
       backgroundColor: props.theme.colors.green,
       color: props.theme.colors.white
