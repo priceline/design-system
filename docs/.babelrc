@@ -1,10 +1,6 @@
 {
-  "presets": [
-    "env",
-    "stage-0",
-    "react"
+  presets: [
+    'next/babel'
   ],
-  "plugins": [
-    "transform-runtime"
-  ]
+  plugins: []
 }
