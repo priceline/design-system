@@ -73,6 +73,9 @@ export default class MyApp extends App {
           <Layout
             {...this.props}
             components={components}
+            theme={{
+              font: 'Montserrat, sans-serif'
+            }}
             routes={routes}
             sidebar={<SideNav />}
             footer={<Pagination />}

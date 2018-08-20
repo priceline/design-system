@@ -31,6 +31,10 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="generator" content="mdx-docs" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat:500,700"
+          />
           <BaseCSS />
           {styles}
         </Head>
