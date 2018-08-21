@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme as themeGet, space } from 'styled-system'
+import { theme as themeGet, space, color } from 'styled-system'
 import theme from './theme'
 
 const type = props => {
@@ -47,7 +47,10 @@ const type = props => {
       color: props.theme.colors.text
     }
   }
-  return badgeColors[props.bg]
+  return (
+    !(props.bg && props.color) &&
+    (badgeColors[props.bg] || badgeColors.lightGray)
+  )
 }
 
 const Badge = styled.div`
@@ -57,7 +60,7 @@ const Badge = styled.div`
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
-  ${space} ${type};
+  ${space} ${type} ${color};
 `
 
 Badge.displayName = 'Badge'
@@ -77,9 +80,7 @@ Badge.propTypes = {
 Badge.defaultProps = {
   px: 2,
   py: 1,
-  theme: theme,
-  color: 'text',
-  bg: 'lightGray'
+  theme: theme
 }
 
 export default Badge
