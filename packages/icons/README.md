@@ -12,11 +12,17 @@ npm i pcln-icons
 ```js
 import React from 'react'
 import ACUnitIcon from 'pcln-icons/lib/AcUnit'
+
+export default props =>
+  <ACUnitIcon
+    mr={2}
+    color='blue'
+  />
 ```
 
 For a complete list of all icons, see:
 
-TK
+[ICONS.md](ICONS.md)
 
 ## Development
 
