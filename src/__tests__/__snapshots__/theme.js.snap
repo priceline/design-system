@@ -2,7 +2,7 @@
 
 exports[`theme snapshot 1`] = `
 Object {
-  "bold": 600,
+  "bold": 700,
   "boxShadows": Array [
     "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
     "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
@@ -53,15 +53,22 @@ Object {
     20,
     24,
     32,
-    48,
+    40,
+    56,
+    72,
   ],
   "fontWeights": Object {
-    "bold": 600,
-    "regular": 400,
+    "bold": 700,
+    "medium": 500,
+    "regular": 500,
   },
   "letterSpacings": Object {
     "caps": "0.025em",
     "normal": "normal",
+  },
+  "lineHeights": Object {
+    "display": 1.25,
+    "standard": 1.5,
   },
   "maxContainerWidth": "1280px",
   "mediaQueries": Array [
@@ -76,7 +83,7 @@ Object {
     6,
   ],
   "radius": "2px",
-  "regular": 400,
+  "regular": 500,
   "space": Array [
     0,
     4,

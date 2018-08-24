@@ -11,7 +11,7 @@ exports[`RatingBadge renders 1`] = `
 .c0 {
   display: inline-block;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 2px;
 }
 

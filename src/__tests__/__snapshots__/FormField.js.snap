@@ -98,7 +98,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
   padding-left: 40px;
   font-size: 10px;
   color: #687B8E;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .c0 .c1 {

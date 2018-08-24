@@ -12,7 +12,7 @@ exports[`Text align prop sets text-align 1`] = `
 
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 <div
@@ -23,16 +23,6 @@ exports[`Text bold prop sets font-weight 1`] = `
 exports[`Text caps prop sets text-transform 1`] = `
 .c0 {
   text-transform: uppercase;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Text italic prop sets font-style 1`] = `
-.c0 {
-  font-style: italic;
 }
 
 <div
@@ -52,7 +42,7 @@ exports[`Text mt prop sets margin-top 1`] = `
 
 exports[`Text regular prop sets font-weight 1`] = `
 .c0 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 <div

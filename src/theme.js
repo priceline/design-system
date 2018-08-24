@@ -23,15 +23,24 @@ export const space = [0, 4, 8, 16, 32, 64, 128]
 
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 40, 56, 72]
 
-export const regular = 400
-export const bold = 600
+export const medium = 500
+export const bold = 700
+// alias
+export const regular = medium
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
-  regular,
-  bold
+  medium,
+  bold,
+  // alias
+  regular
+}
+
+export const lineHeights = {
+  standard: 1.5,
+  display: 1.25
 }
 
 const letterSpacings = {
@@ -138,6 +147,7 @@ const theme = {
   font,
   fontSizes,
   fontWeights,
+  lineHeights,
   letterSpacings,
   regular,
   bold,

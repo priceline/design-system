@@ -3,120 +3,137 @@
 exports[`Heading Heading component using <Text> component properties 1`] = `
 .c0 {
   font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
   margin: 0px;
   color: #687B8E;
-  font-weight: 400;
-  text-align: center;
 }
 
 <h3
   className="c0"
   color="#687B8E"
   fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with default theme font size, when "fontSize" prop not used 1`] = `
 .c0 {
   font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 400;
 }
 
 <h3
   className="c0"
   fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 600;
 }
 
 <h1
   className="c0"
-  fontSize={6}
+  fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 .c0 {
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 600;
 }
 
 <h2
   className="c0"
-  fontSize={5}
+  fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 .c0 {
   font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 400;
 }
 
 <h3
   className="c0"
   fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 .c0 {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 400;
 }
 
 <h4
   className="c0"
-  fontSize={3}
+  fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 600;
 }
 
 <h5
   className="c0"
-  fontSize={2}
+  fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 .c0 {
-  font-size: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  text-transform: uppercase;
-  font-weight: 600;
 }
 
 <h6
   className="c0"
-  fontSize={0}
+  fontSize={4}
+  fontWeight="bold"
 />
 `;
 
 exports[`Heading renders 1`] = `
 .c0 {
   font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0px;
-  font-weight: 400;
 }
 
 <h3
   className="c0"
   fontSize={4}
+  fontWeight="bold"
 />
 `;
