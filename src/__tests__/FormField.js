@@ -2,25 +2,20 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { mount } from 'enzyme'
 import 'jest-styled-components'
-import { InputField, FormField, Label, Icon, Input, Select } from '..'
+import { FormField, Icon, Input, Label, Select } from '..'
 
-describe('InputField', () => {
+describe('FormField', () => {
   test('it renders using the old api, but should throw a prop-type warning', () => {
     console.error = jest.fn()
 
     const test = mount(
-      <InputField
-        label="test"
-        icon="lock"
-        id="test-input"
-        onChange={() => {}}
-      />
+      <FormField label="test" icon="lock" id="test-input" onChange={() => {}} />
     )
 
     expect(
       console.error.mock.calls
         .toString()
-        .indexOf("No 'Input' child found for 'InputField'") !== -1
+        .indexOf("No 'Input' child found for 'FormField'") !== -1
     )
     console.error.mockRestore()
   })
@@ -126,10 +121,10 @@ describe('InputField', () => {
   test('it renders a with a left side icon', () => {
     const json = renderer
       .create(
-        <InputField onChange={() => {}}>
+        <FormField onChange={() => {}}>
           <Icon name="email" />
           <Input id="with-left-icon" />
-        </InputField>
+        </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
@@ -137,10 +132,10 @@ describe('InputField', () => {
   test('it renders a with a right side icon', () => {
     const json = renderer
       .create(
-        <InputField onChange={() => {}}>
+        <FormField onChange={() => {}}>
           <Input id="with-right-icon" />
           <Icon name="email" />
-        </InputField>
+        </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
@@ -148,10 +143,10 @@ describe('InputField', () => {
   test('it renders a with a conditional right side icon', () => {
     const json = renderer
       .create(
-        <InputField onChange={() => {}}>
+        <FormField onChange={() => {}}>
           <Input id="with-right-icon" />
           {false && <Icon name="email" />}
-        </InputField>
+        </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
@@ -159,11 +154,11 @@ describe('InputField', () => {
   test('it renders a with a both icons', () => {
     const json = renderer
       .create(
-        <InputField onChange={() => {}}>
+        <FormField onChange={() => {}}>
           <Icon name="email" />
           <Input id="with-both-icons" />
           <Icon name="email" />
-        </InputField>
+        </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
@@ -171,12 +166,12 @@ describe('InputField', () => {
   test('it renders a form field wth a label and icons', () => {
     const json = renderer
       .create(
-        <InputField onChange={() => {}}>
+        <FormField onChange={() => {}}>
           <Label>A Label</Label>
           <Icon name="email" />
           <Input id="with-both-icons" />
           <Icon name="email" />
-        </InputField>
+        </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
@@ -185,24 +180,24 @@ describe('InputField', () => {
   test('it always renders a label when `alwaysShowLabel` is true', () => {
     const json = renderer
       .create(
-        <InputField alwaysShowLabel onChange={() => {}}>
+        <FormField alwaysShowLabel onChange={() => {}}>
           <Label>A Label</Label>
           <Icon name="email" />
           <Input id="with-both-icons" />
           <Icon name="email" />
-        </InputField>
+        </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test("it calls the `onChange` handler passed into `InputField` when the child `Input` component's value updates", () => {
+  test("it calls the `onChange` handler passed into `FormField` when the child `Input` component's value updates", () => {
     const mockChange = jest.fn()
     const test = mount(
-      <InputField onChange={mockChange}>
+      <FormField onChange={mockChange}>
         <Label>A Label</Label>
         <Input id="caller" placeholder="placeholder text" />
-      </InputField>
+      </FormField>
     )
 
     let input = test.find(Input)
@@ -211,12 +206,12 @@ describe('InputField', () => {
   })
   test('it correctly places an aria-label with the placeholder value before user has interacted with the input', () => {
     const test = mount(
-      <InputField>
+      <FormField>
         <Label>A Label</Label>
         <Icon name="email" />
         <Input id="with-both-icons" placeholder="placeholder text" />
         <Icon name="email" />
-      </InputField>
+      </FormField>
     )
 
     // before user interaction the Label element should not be rendered
@@ -231,10 +226,10 @@ describe('InputField', () => {
 
   test('it shows a label when the input has a value', () => {
     const wrapper = mount(
-      <InputField>
+      <FormField>
         <Label>Hello</Label>
         <Input placeholder="Hello" value="Howdy" />
-      </InputField>
+      </FormField>
     )
     const label = wrapper.find(Label)
     const input = wrapper.find(Input)
@@ -242,12 +237,26 @@ describe('InputField', () => {
     expect(input.getDOMNode().getAttribute('aria-label')).toBeFalsy()
   })
 
+  test('it does not display a label when Label has `hidden` prop', () => {
+    const json = renderer
+      .create(
+        <FormField onChange={() => {}}>
+          <Label hidden>A Label</Label>
+          <Icon name="email" />
+          <Input id="with-both-icons" />
+          <Icon name="email" />
+        </FormField>
+      )
+      .toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('it calls onChange prop if provided', () => {
     const onChange = jest.fn()
     const wrapper = mount(
-      <InputField>
+      <FormField>
         <Input onChange={onChange} />
-      </InputField>
+      </FormField>
     )
     const input = wrapper.find(Input)
     input.simulate('change', { target: { value: 'hi' } })
@@ -258,14 +267,14 @@ describe('InputField', () => {
     console.error = jest.fn()
 
     const test = mount(
-      <InputField onChange={() => {}}>
+      <FormField onChange={() => {}}>
         <Label>A Label</Label>
 
         <Icon name="email" />
         <Icon name="email" />
         <Input id="with-both-icons" />
         <Icon name="email" />
-      </InputField>
+      </FormField>
     )
 
     expect(
@@ -279,7 +288,7 @@ describe('InputField', () => {
     console.error = jest.fn()
 
     const test = mount(
-      <InputField onChange={() => {}}>
+      <FormField onChange={() => {}}>
         <span>Extra stuff not supported</span>
         <Label>A Label</Label>
 
@@ -287,7 +296,7 @@ describe('InputField', () => {
         <Icon name="email" />
         <Input id="with-both-icons" />
         <Icon name="email" />
-      </InputField>
+      </FormField>
     )
 
     expect(
@@ -301,11 +310,11 @@ describe('InputField', () => {
     console.error = jest.fn()
 
     const test = mount(
-      <InputField onChange={() => {}}>
+      <FormField onChange={() => {}}>
         <Label>A Label</Label>
         <Label>Another Label</Label>
         <Input id="with-both-icons" />
-      </InputField>
+      </FormField>
     )
 
     expect(
@@ -320,14 +329,14 @@ describe('InputField', () => {
     console.error = jest.fn()
 
     const test = mount(
-      <InputField onChange={() => {}}>
+      <FormField onChange={() => {}}>
         <span>Extra stuff not supported</span>
         <Label>A Label</Label>
 
         <Icon name="email" />
         <Icon name="email" />
         <Input id="with-both-icons" />
-      </InputField>
+      </FormField>
     )
 
     expect(
