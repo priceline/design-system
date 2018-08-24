@@ -1,7 +1,6 @@
 
 # Icons (970)
 
-- `3d_rotation`
 - `ac_unit`
 - `access_alarm`
 - `access_alarms`
@@ -875,6 +874,7 @@
 - `textsms`
 - `texture`
 - `theaters`
+- `three-d_rotation`
 - `thumb_down`
 - `thumb_up`
 - `thumbs_up_down`

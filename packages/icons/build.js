@@ -23,7 +23,7 @@ const rename = filename =>
     .basename(filename, path.extname(filename))
     .replace(/^ic_/, '')
     .replace(/_24px$/, '')
-// .replace(/^3d/, 'ThreeD') // remove number from beginning
+    .replace(/^3d/, 'three-d') // remove number from beginning
 
 const readFile = filename => {
   const content = fs.readFileSync(filename, 'utf8')
