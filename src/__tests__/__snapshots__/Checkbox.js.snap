@@ -5,8 +5,8 @@ exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`]
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .c0 {
@@ -82,8 +82,8 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .c0 {
@@ -159,8 +159,8 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .c0 {
@@ -236,8 +236,8 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .c0 {
@@ -313,8 +313,8 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .c0 {
@@ -390,8 +390,8 @@ exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .c0 {
