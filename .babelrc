@@ -1,38 +1,9 @@
 {
-  "env": {
-    "es": {
-      "presets": [
-        [
-          'env',
-          {
-            "targets": {
-              "browsers": ["last 2 Chrome versions", "safari >=11"]
-            },
-            "loose": false,
-            "modules": false,
-            "useBuiltIns": false
-          }
-        ],
-        'stage-0',
-        'react'
-      ]
-    },
-    "cjs": {
-      "presets": [
-        [
-          'env',
-          {
-            "targets": {
-              "browsers": ["last 2 Chrome versions", "safari >=11"]
-            },
-            "loose": false,
-            "modules": false,
-            "useBuiltIns": false
-          }
-        ],
-        'stage-0',
-        'react'
-      ]
-    }
+  presets: [
+    [ 'env', { modules: false } ],
+    'stage-0',
+    'react'
+  ],
+  env: {
   }
 }
