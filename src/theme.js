@@ -137,36 +137,6 @@ const lightPurple = '#ecf'
 const purple = '#70b' // secondary
 const darkPurple = '#407'
 
-// tints
-const flatten = (name, colors) =>
-  colors.reduce((a, b, i) => {
-    const color = {
-      [name + i]: {
-        enumerable: true,
-        get() {
-          console.warn(
-            `Priceline Design System Warning: Using numbered colors like ${[
-              name + i
-            ]} will be deprecated in the next theme. Use light${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)}, ${name} or dark${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)} instead.`
-          )
-          return b
-        }
-      }
-    }
-    return { ...a, ...color }
-  }, {})
-
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [lightGray, lightGray, gray, gray]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
-
 const colors = {
   black,
   white,
@@ -189,24 +159,94 @@ const colors = {
   darkOrange,
   purple,
   lightPurple,
-  darkPurple,
-  blues,
-  greens,
-  reds,
-  oranges,
-  purples
+  darkPurple
 }
 
-Object.defineProperties(colors, {
-  ...flatten('blue', blues),
-  ...flatten('gray', grays),
-  ...flatten('green', greens),
-  ...flatten('red', reds),
-  ...flatten('orange', oranges),
-  ...flatten('purple', purples)
-})
-
 export { colors }
+
+export const colorStyles = {
+  whiteOnText: {
+    color: colors.white,
+    backgroundColor: colors.text
+  },
+  whiteOnGray: {
+    color: colors.white,
+    backgroundColor: colors.gray
+  },
+  textOnLightGray: {
+    color: colors.text,
+    backgroundColor: colors.lightGray
+  },
+  whiteOnBlue: {
+    color: colors.white,
+    backgroundColor: colors.blue
+  },
+  blueOnLightBlue: {
+    color: colors.blue,
+    backgroundColor: colors.lightBlue
+  },
+  whiteOnGreen: {
+    color: colors.white,
+    backgroundColor: colors.green
+  },
+  greenOnLightGreen: {
+    color: colors.green,
+    backgroundColor: colors.lightGreen
+  },
+  whiteOnRed: {
+    color: colors.white,
+    backgroundColor: colors.red
+  },
+  redOnLightRed: {
+    color: colors.red,
+    backgroundColor: colors.lightRed
+  },
+  textOnOrange: {
+    color: colors.text,
+    backgroundColor: colors.orange
+  },
+  textOnLightOrange: {
+    color: colors.text,
+    backgroundColor: colors.lightOrange
+  },
+  whiteOnPurple: {
+    color: colors.white,
+    backgroundColor: colors.purple
+  },
+  purpleOnLightPurple: {
+    color: colors.purple,
+    backgroundColor: colors.lightPurple
+  },
+  textOnWhite: {
+    color: colors.text,
+    backgroundColor: colors.white
+  },
+  grayOnWhite: {
+    color: colors.gray,
+    backgroundColor: colors.white
+  },
+  blueOnWhite: {
+    color: colors.blue,
+    backgroundColor: colors.white
+  },
+  greenOnWhite: {
+    color: colors.green,
+    backgroundColor: colors.white
+  },
+  redOnWhite: {
+    color: colors.red,
+    backgroundColor: colors.white
+  },
+  purpleOnWhite: {
+    color: colors.purple,
+    backgroundColor: colors.white
+  }
+}
+
+colorStyles.info = colorStyles.textOnLightGray
+colorStyles.success = colorStyles.whiteOnGreen
+colorStyles.warning = colorStyles.textOnOrange
+colorStyles.danger = colorStyles.whiteOnRed
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
@@ -224,10 +264,10 @@ export const boxShadows = [
 
 // animation duration
 export const duration = {
-  fast: 150,
-  normal: 300,
-  slow: 450,
-  slowest: 600
+  fast: `150ms`,
+  normal: `300ms`,
+  slow: `450ms`,
+  slowest: `600ms`
 }
 
 // animation easing curves
@@ -239,6 +279,14 @@ const timingFunctions = {
   easeInOut,
   easeOut,
   easeIn
+}
+
+// animation delay
+const transitionDelays = {
+  small: `60ms`,
+  medium: `160ms`,
+  large: `260ms`,
+  xLarge: `360ms`
 }
 
 const theme = {
@@ -254,12 +302,14 @@ const theme = {
   bold,
   textStyles,
   colors,
+  colorStyles,
   radii,
   radius,
   boxShadows,
   maxContainerWidth,
   duration,
-  timingFunctions
+  timingFunctions,
+  transitionDelays
 }
 
 export default theme

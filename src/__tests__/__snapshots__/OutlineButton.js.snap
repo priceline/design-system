@@ -26,14 +26,13 @@ exports[`OutlineButton disabled prop sets 1`] = `
 }
 
 .c0 {
-  background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
   color: #007aff;
-  border-color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
 }
 
 .c0:hover {
+  box-shadow: inset 0 0 0 2px;
   background-color: transparent;
 }
 
@@ -73,16 +72,14 @@ exports[`OutlineButton renders 1`] = `
 }
 
 .c0 {
-  background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
   color: #007aff;
-  border-color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
 }
 
 .c0:hover {
   color: #049;
-  border-color: #049;
+  box-shadow: inset 0 0 0 2px #049;
   background-color: transparent;
 }
 
@@ -121,16 +118,14 @@ exports[`OutlineButton without disabled prop sets 1`] = `
 }
 
 .c0 {
-  background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
   color: #007aff;
-  border-color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
 }
 
 .c0:hover {
   color: #049;
-  border-color: #049;
+  box-shadow: inset 0 0 0 2px #049;
   background-color: transparent;
 }
 
