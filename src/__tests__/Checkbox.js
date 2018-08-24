@@ -34,7 +34,7 @@ describe('Checkbox', () => {
       <Checkbox id={name} defaultChecked onChange={onChangeFn} />
     )
     const wrapper = shallow(component)
-    const input = wrapper.find(checkBoxSelector)
+    const input = wrapper.find('input')
     const json = renderer.create(component).toJSON()
 
     expect(input.prop('defaultChecked')).toBe(true)
@@ -70,7 +70,7 @@ describe('Checkbox', () => {
     const wrapper = shallow(component)
     const json = renderer.create(component).toJSON()
 
-    wrapper.find(checkBoxSelector).simulate('change', fakeEvent)
+    wrapper.find('input').simulate('change', fakeEvent)
     expect(onChangeFn).toHaveBeenCalled()
     expect(json).toMatchSnapshot()
   })

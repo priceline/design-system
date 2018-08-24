@@ -6,7 +6,7 @@ import theme from './theme'
 import Flex from './Flex'
 import Icon from './Icon'
 
-const ClickableIcon = Icon.extend`
+const ClickableIcon = styled(Icon)`
   pointer-events: none;
 `
 
