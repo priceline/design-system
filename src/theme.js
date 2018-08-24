@@ -99,6 +99,90 @@ const colors = {
 
 export { colors }
 
+export const colorStyles = {
+  whiteOnText: {
+    color: colors.white,
+    backgroundColor: colors.text
+  },
+  whiteOnGray: {
+    color: colors.white,
+    backgroundColor: colors.gray
+  },
+  textOnLightGray: {
+    color: colors.text,
+    backgroundColor: colors.lightGray
+  },
+  whiteOnBlue: {
+    color: colors.white,
+    backgroundColor: colors.blue
+  },
+  blueOnLightBlue: {
+    color: colors.blue,
+    backgroundColor: colors.lightBlue
+  },
+  whiteOnGreen: {
+    color: colors.white,
+    backgroundColor: colors.green
+  },
+  greenOnLightGreen: {
+    color: colors.green,
+    backgroundColor: colors.lightGreen
+  },
+  whiteOnRed: {
+    color: colors.white,
+    backgroundColor: colors.red
+  },
+  redOnLightRed: {
+    color: colors.red,
+    backgroundColor: colors.lightRed
+  },
+  textOnOrange: {
+    color: colors.text,
+    backgroundColor: colors.orange
+  },
+  textOnLightOrange: {
+    color: colors.text,
+    backgroundColor: colors.lightOrange
+  },
+  whiteOnPurple: {
+    color: colors.white,
+    backgroundColor: colors.purple
+  },
+  purpleOnLightPurple: {
+    color: colors.purple,
+    backgroundColor: colors.lightPurple
+  },
+  textOnWhite: {
+    color: colors.text,
+    backgroundColor: colors.white
+  },
+  grayOnWhite: {
+    color: colors.gray,
+    backgroundColor: colors.white
+  },
+  blueOnWhite: {
+    color: colors.blue,
+    backgroundColor: colors.white
+  },
+  greenOnWhite: {
+    color: colors.green,
+    backgroundColor: colors.white
+  },
+  redOnWhite: {
+    color: colors.red,
+    backgroundColor: colors.white
+  },
+  purpleOnWhite: {
+    color: colors.purple,
+    backgroundColor: colors.white
+  }
+}
+
+colorStyles.info = colorStyles.textOnLightGray
+colorStyles.success = colorStyles.whiteOnGreen
+colorStyles.warning = colorStyles.textOnOrange
+colorStyles.danger = colorStyles.whiteOnRed
+
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
 export const radius = '2px'
@@ -152,6 +236,7 @@ const theme = {
   regular,
   bold,
   colors,
+  colorStyles,
   radii,
   radius,
   boxShadows,
