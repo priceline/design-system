@@ -48,9 +48,10 @@ npm test
 ### Directory Structure
 
 ```sh
-icons/      Custom icon SVGs
-src/        React components for icons
-svg/        SVGs from material-design-icons
-test/       Unit tests
-lib/        Icon components compiled to commonjs format
+svg/                SVGs source
+  custom/           Custom icon SVGs
+  material-design/  SVGsfrom material-design-icons
+src/                React components for icons
+test/               Unit tests
+lib/                Icon components compiled to commonjs format
 ```

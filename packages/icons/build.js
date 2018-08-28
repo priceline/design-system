@@ -7,7 +7,7 @@ const upperFirst = require('lodash.upperfirst')
 const uniqBy = require('lodash.uniqby')
 
 const pkgPath = path.join(__dirname, './node_modules/material-design-icons')
-const outDir = path.join(__dirname, './svg')
+const outDir = path.join(__dirname, './svg/material-design')
 
 const ignore = (file, stats) => {
   if (stats.isDirectory()) return false

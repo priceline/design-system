@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "babel src -d lib",
-    "clean": "rm -rf svg src lib",
-    "build": "npm run clean && ./build.js && pixo svg --template styledSystem -icd src",
+    "clean": "rm -rf svg/material-design src/material-design src/custom lib",
+    "build": "npm run clean && ./build.js && pixo svg/material-design -d src/material-design && pixo svg/custom -d src/custom",
     "test": "jest"
   },
   "author": "Priceline",
@@ -32,5 +32,10 @@
   },
   "dependencies": {
     "styled-system": "^3.0.2"
+  },
+  "pixo": {
+    "template": "styledSystem",
+    "outDir": "src/icons",
+    "index": true
   }
 }
