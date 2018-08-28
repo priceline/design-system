@@ -21,6 +21,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "jest": "^23.5.0",
+    "jest-styled-components": "^6.1.1",
     "lodash.camelcase": "^4.3.0",
     "lodash.uniqby": "^4.7.0",
     "material-design-icons": "^3.0.1",

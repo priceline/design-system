@@ -2,7 +2,7 @@
 
 exports[`renders AcUnit 1`] = `
 <svg
-  className="sc-brqgnP SqPLV"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -16,35 +16,35 @@ exports[`renders AcUnit 1`] = `
 
 exports[`renders AccessTime 1`] = `
 <svg
-  className="sc-cMljjf eTbdzc"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
   width={24}
 >
   <path
-    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
   />
 </svg>
 `;
 
 exports[`renders Accessible 1`] = `
 <svg
-  className="sc-jAaTju fNCBho"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
   width={24}
 >
   <path
-    d="M 12 2 A 2 2 0 0 1 12 6 A 2 2 0 0 1 12 2 M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z"
+    d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z M 12 2 A 2 2 0 0 1 12 6 A 2 2 0 0 1 12 2"
   />
 </svg>
 `;
 
 exports[`renders Add 1`] = `
 <svg
-  className="sc-jDwBTQ dWtMUn"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -58,7 +58,7 @@ exports[`renders Add 1`] = `
 
 exports[`renders AddBox 1`] = `
 <svg
-  className="sc-gPEVay eQYmiW"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ exports[`renders AddBox 1`] = `
 
 exports[`renders AddCircleOutline 1`] = `
 <svg
-  className="sc-iRbamj blSEcj"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ exports[`renders AddCircleOutline 1`] = `
 
 exports[`renders AirlineSeatReclineExtra 1`] = `
 <svg
-  className="sc-jlyJG bbyJzT"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -100,7 +100,7 @@ exports[`renders AirlineSeatReclineExtra 1`] = `
 
 exports[`renders AirlineSeatReclineNormal 1`] = `
 <svg
-  className="sc-gipzik iyhjGb"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -114,7 +114,7 @@ exports[`renders AirlineSeatReclineNormal 1`] = `
 
 exports[`renders Airplane 1`] = `
 <svg
-  className="sc-bdVaJa bDWFJH"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -128,7 +128,7 @@ exports[`renders Airplane 1`] = `
 
 exports[`renders AirportShuttle 1`] = `
 <svg
-  className="sc-csuQGl CQhxV"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -142,7 +142,7 @@ exports[`renders AirportShuttle 1`] = `
 
 exports[`renders Apps 1`] = `
 <svg
-  className="sc-Rmtcm gwGgYM"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -156,7 +156,7 @@ exports[`renders Apps 1`] = `
 
 exports[`renders ArrowBack 1`] = `
 <svg
-  className="sc-bRBYWo ccSRck"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -170,7 +170,7 @@ exports[`renders ArrowBack 1`] = `
 
 exports[`renders ArrowDownward 1`] = `
 <svg
-  className="sc-hzDkRC kpsoyz"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -184,7 +184,7 @@ exports[`renders ArrowDownward 1`] = `
 
 exports[`renders ArrowForward 1`] = `
 <svg
-  className="sc-jhAzac hmXDXQ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -198,7 +198,7 @@ exports[`renders ArrowForward 1`] = `
 
 exports[`renders ArrowUpward 1`] = `
 <svg
-  className="sc-fBuWsC eeihxG"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -212,7 +212,7 @@ exports[`renders ArrowUpward 1`] = `
 
 exports[`renders AttachMoney 1`] = `
 <svg
-  className="sc-fMiknA bxZCMx"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -226,7 +226,7 @@ exports[`renders AttachMoney 1`] = `
 
 exports[`renders Automatic 1`] = `
 <svg
-  className="sc-bwzfXH uTxCW"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -240,7 +240,7 @@ exports[`renders Automatic 1`] = `
 
 exports[`renders Bag 1`] = `
 <svg
-  className="sc-htpNat KtFsv"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -254,7 +254,7 @@ exports[`renders Bag 1`] = `
 
 exports[`renders BeachAccess 1`] = `
 <svg
-  className="sc-dVhcbM fghLuF"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -268,7 +268,7 @@ exports[`renders BeachAccess 1`] = `
 
 exports[`renders Brightness5 1`] = `
 <svg
-  className="sc-eqIVtm kRufpp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -282,7 +282,7 @@ exports[`renders Brightness5 1`] = `
 
 exports[`renders Build 1`] = `
 <svg
-  className="sc-fAjcbJ byigni"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -296,7 +296,7 @@ exports[`renders Build 1`] = `
 
 exports[`renders Business 1`] = `
 <svg
-  className="sc-caSCKo jjNSwx"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -310,7 +310,7 @@ exports[`renders Business 1`] = `
 
 exports[`renders BusinessCenter 1`] = `
 <svg
-  className="sc-gisBJw kDlVKO"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -324,7 +324,7 @@ exports[`renders BusinessCenter 1`] = `
 
 exports[`renders Cached 1`] = `
 <svg
-  className="sc-kjoXOD hpTAeq"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -338,7 +338,7 @@ exports[`renders Cached 1`] = `
 
 exports[`renders Cake 1`] = `
 <svg
-  className="sc-cHGsZl bHiaRe"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -352,7 +352,7 @@ exports[`renders Cake 1`] = `
 
 exports[`renders Call 1`] = `
 <svg
-  className="sc-TOsTZ kjYrri"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -366,7 +366,7 @@ exports[`renders Call 1`] = `
 
 exports[`renders CarCircle 1`] = `
 <svg
-  className="sc-bxivhb bUZGRr"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -380,7 +380,7 @@ exports[`renders CarCircle 1`] = `
 
 exports[`renders CarDoor 1`] = `
 <svg
-  className="sc-ifAKCX cFlEyZ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -394,7 +394,7 @@ exports[`renders CarDoor 1`] = `
 
 exports[`renders Casino 1`] = `
 <svg
-  className="sc-kgAjT cuzzPp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -408,7 +408,7 @@ exports[`renders Casino 1`] = `
 
 exports[`renders Chat 1`] = `
 <svg
-  className="sc-cJSrbW dLwzxs"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -422,7 +422,7 @@ exports[`renders Chat 1`] = `
 
 exports[`renders Check 1`] = `
 <svg
-  className="sc-ksYbfQ jHwjmi"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -436,7 +436,7 @@ exports[`renders Check 1`] = `
 
 exports[`renders CheckBox 1`] = `
 <svg
-  className="sc-hmzhuo eRtqMp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -450,7 +450,7 @@ exports[`renders CheckBox 1`] = `
 
 exports[`renders CheckBoxOutlineBlank 1`] = `
 <svg
-  className="sc-frDJqD gCEYuZ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -464,7 +464,7 @@ exports[`renders CheckBoxOutlineBlank 1`] = `
 
 exports[`renders ChevronLeft 1`] = `
 <svg
-  className="sc-kvZOFW eiPhbT"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -478,7 +478,7 @@ exports[`renders ChevronLeft 1`] = `
 
 exports[`renders ChevronRight 1`] = `
 <svg
-  className="sc-hqyNC keRCOE"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -492,7 +492,7 @@ exports[`renders ChevronRight 1`] = `
 
 exports[`renders ChildFriendly 1`] = `
 <svg
-  className="sc-jbKcbu cWSlbe"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -506,7 +506,7 @@ exports[`renders ChildFriendly 1`] = `
 
 exports[`renders Close 1`] = `
 <svg
-  className="sc-dNLxif KzmkZ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -520,7 +520,7 @@ exports[`renders Close 1`] = `
 
 exports[`renders CloudQueue 1`] = `
 <svg
-  className="sc-jqCOkK heXNii"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -534,7 +534,7 @@ exports[`renders CloudQueue 1`] = `
 
 exports[`renders CollisionCoverage 1`] = `
 <svg
-  className="sc-EHOje jvzENE"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -548,7 +548,7 @@ exports[`renders CollisionCoverage 1`] = `
 
 exports[`renders Coupon 1`] = `
 <svg
-  className="sc-bZQynM bOrPFB"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -562,7 +562,7 @@ exports[`renders Coupon 1`] = `
 
 exports[`renders Create 1`] = `
 <svg
-  className="sc-uJMKN jsQhVl"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -576,7 +576,7 @@ exports[`renders Create 1`] = `
 
 exports[`renders CreditCard 1`] = `
 <svg
-  className="sc-bbmXgH fNYDXK"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -590,7 +590,7 @@ exports[`renders CreditCard 1`] = `
 
 exports[`renders Cruises 1`] = `
 <svg
-  className="sc-gzVnrw ibZhkv"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -604,7 +604,7 @@ exports[`renders Cruises 1`] = `
 
 exports[`renders DateRange 1`] = `
 <svg
-  className="sc-gGBfsJ eaQlFN"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -618,7 +618,7 @@ exports[`renders DateRange 1`] = `
 
 exports[`renders Description 1`] = `
 <svg
-  className="sc-jnlKLf jKMWma"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -632,7 +632,7 @@ exports[`renders Description 1`] = `
 
 exports[`renders Devices 1`] = `
 <svg
-  className="sc-fYxtnH hSLfWw"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -646,7 +646,7 @@ exports[`renders Devices 1`] = `
 
 exports[`renders Directions 1`] = `
 <svg
-  className="sc-tilXH jMVAVb"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -660,7 +660,7 @@ exports[`renders Directions 1`] = `
 
 exports[`renders DirectionsCar 1`] = `
 <svg
-  className="sc-hEsumM epeevU"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -674,7 +674,7 @@ exports[`renders DirectionsCar 1`] = `
 
 exports[`renders Discount 1`] = `
 <svg
-  className="sc-htoDjs bZzhDu"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -688,7 +688,7 @@ exports[`renders Discount 1`] = `
 
 exports[`renders DoubleOccupancy 1`] = `
 <svg
-  className="sc-dnqmqq bDsesi"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -702,7 +702,7 @@ exports[`renders DoubleOccupancy 1`] = `
 
 exports[`renders Email 1`] = `
 <svg
-  className="sc-ktHwxA bwPBzM"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -716,7 +716,7 @@ exports[`renders Email 1`] = `
 
 exports[`renders Error 1`] = `
 <svg
-  className="sc-cIShpX krSiat"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -730,7 +730,7 @@ exports[`renders Error 1`] = `
 
 exports[`renders ErrorOutline 1`] = `
 <svg
-  className="sc-kafWEX dNChzQ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -744,7 +744,7 @@ exports[`renders ErrorOutline 1`] = `
 
 exports[`renders Event 1`] = `
 <svg
-  className="sc-feJyhm fRrBax"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -758,7 +758,7 @@ exports[`renders Event 1`] = `
 
 exports[`renders EventAvailable 1`] = `
 <svg
-  className="sc-iELTvK fyBIax"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -772,7 +772,7 @@ exports[`renders EventAvailable 1`] = `
 
 exports[`renders EventBusy 1`] = `
 <svg
-  className="sc-cmTdod kHxQNt"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -786,7 +786,7 @@ exports[`renders EventBusy 1`] = `
 
 exports[`renders EventSeat 1`] = `
 <svg
-  className="sc-jwKygS fBWxJW"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -798,9 +798,23 @@ exports[`renders EventSeat 1`] = `
 </svg>
 `;
 
+exports[`renders Facebook 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.9,22H3.1C2.5,22,2,21.5,2,20.9V3.1C2,2.5,2.5,2,3.1,2h17.8C21.5,2,22,2.5,22,3.1v17.8 C22,21.5,21.5,22,20.9,22z M15.8,22v-7.7h2.6l0.4-3h-3V9.3c0-0.9,0.2-1.5,1.5-1.5l1.6,0V5.1c-0.3,0-1.2-0.1-2.3-0.1 c-2.3,0-3.9,1.4-3.9,4v2.2h-2.6v3h2.6V22H15.8z"
+  />
+</svg>
+`;
+
 exports[`renders FavoriteHotel 1`] = `
 <svg
-  className="sc-iwsKbI jQhHGA"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -814,7 +828,7 @@ exports[`renders FavoriteHotel 1`] = `
 
 exports[`renders FilterList 1`] = `
 <svg
-  className="sc-btzYZH dcBPpq"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -828,7 +842,7 @@ exports[`renders FilterList 1`] = `
 
 exports[`renders FitnessCenter 1`] = `
 <svg
-  className="sc-lhVmIH iBkPsG"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -842,7 +856,7 @@ exports[`renders FitnessCenter 1`] = `
 
 exports[`renders FlashOn 1`] = `
 <svg
-  className="sc-bYSBpT dTBkYG"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -856,7 +870,7 @@ exports[`renders FlashOn 1`] = `
 
 exports[`renders Flight 1`] = `
 <svg
-  className="sc-elJkPf jRsZyA"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -870,7 +884,7 @@ exports[`renders Flight 1`] = `
 
 exports[`renders FlightCircle 1`] = `
 <svg
-  className="sc-gZMcBi giNnHm"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -884,7 +898,7 @@ exports[`renders FlightCircle 1`] = `
 
 exports[`renders FlightCoverage 1`] = `
 <svg
-  className="sc-gqjmRU hnZXkc"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -898,7 +912,7 @@ exports[`renders FlightCoverage 1`] = `
 
 exports[`renders FlightLand 1`] = `
 <svg
-  className="sc-jtRfpW erOyyR"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -912,7 +926,7 @@ exports[`renders FlightLand 1`] = `
 
 exports[`renders FlightTakeoff 1`] = `
 <svg
-  className="sc-kTUwUJ ljwnSF"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -926,7 +940,7 @@ exports[`renders FlightTakeoff 1`] = `
 
 exports[`renders FreeBreakfast 1`] = `
 <svg
-  className="sc-dqBHgY fJPQKI"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -940,7 +954,7 @@ exports[`renders FreeBreakfast 1`] = `
 
 exports[`renders Fridge 1`] = `
 <svg
-  className="sc-VigVT fIhGog"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -954,7 +968,7 @@ exports[`renders Fridge 1`] = `
 
 exports[`renders GolfCourse 1`] = `
 <svg
-  className="sc-gxMtzJ kLFfvI"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -968,7 +982,7 @@ exports[`renders GolfCourse 1`] = `
 
 exports[`renders GpsFixed 1`] = `
 <svg
-  className="sc-dfVpRl iTthma"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -982,7 +996,7 @@ exports[`renders GpsFixed 1`] = `
 
 exports[`renders GuestScore 1`] = `
 <svg
-  className="sc-jTzLTM eCMmlJ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -996,7 +1010,7 @@ exports[`renders GuestScore 1`] = `
 
 exports[`renders Guests 1`] = `
 <svg
-  className="sc-fjdhpX nsimD"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1010,7 +1024,7 @@ exports[`renders Guests 1`] = `
 
 exports[`renders Help 1`] = `
 <svg
-  className="sc-gzOgki ehNPHd"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1024,7 +1038,7 @@ exports[`renders Help 1`] = `
 
 exports[`renders History 1`] = `
 <svg
-  className="sc-iyvyFf kwHKAa"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1038,7 +1052,7 @@ exports[`renders History 1`] = `
 
 exports[`renders Home 1`] = `
 <svg
-  className="sc-hwwEjo kIFSBP"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1052,7 +1066,7 @@ exports[`renders Home 1`] = `
 
 exports[`renders HotTub 1`] = `
 <svg
-  className="sc-kPVwWT bqsfkj"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1066,7 +1080,7 @@ exports[`renders HotTub 1`] = `
 
 exports[`renders Hotel 1`] = `
 <svg
-  className="sc-kfGgVZ eravuG"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1080,7 +1094,7 @@ exports[`renders Hotel 1`] = `
 
 exports[`renders HotelCircle 1`] = `
 <svg
-  className="sc-jzJRlG enxKql"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1094,7 +1108,7 @@ exports[`renders HotelCircle 1`] = `
 
 exports[`renders House 1`] = `
 <svg
-  className="sc-cSHVUG CAuLq"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1108,7 +1122,7 @@ exports[`renders House 1`] = `
 
 exports[`renders Hybrid 1`] = `
 <svg
-  className="sc-kAzzGY jHprQs"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1122,7 +1136,7 @@ exports[`renders Hybrid 1`] = `
 
 exports[`renders Image 1`] = `
 <svg
-  className="sc-esjQYD ikJPMC"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1136,7 +1150,7 @@ exports[`renders Image 1`] = `
 
 exports[`renders IndeterminateCheckBox 1`] = `
 <svg
-  className="sc-kIPQKe jgMiIX"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1150,7 +1164,7 @@ exports[`renders IndeterminateCheckBox 1`] = `
 
 exports[`renders Info 1`] = `
 <svg
-  className="sc-eXEjpC fuVqJC"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1164,7 +1178,7 @@ exports[`renders Info 1`] = `
 
 exports[`renders InfoOutline 1`] = `
 <svg
-  className="sc-ibxdXY clQDsv"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1178,7 +1192,7 @@ exports[`renders InfoOutline 1`] = `
 
 exports[`renders InsertEmoticon 1`] = `
 <svg
-  className="sc-RefOD kzCQXs"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1190,9 +1204,23 @@ exports[`renders InsertEmoticon 1`] = `
 </svg>
 `;
 
+exports[`renders Instagram 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.9,7.9c0-1.1-0.2-1.8-0.5-2.4c-0.3-0.7-0.6-1.2-1.2-1.8s-1.1-0.9-1.8-1.2c-0.6-0.2-1.4-0.4-2.4-0.5 C15.1,2,14.7,2,12,2S8.9,2,7.9,2.1c-1.1,0-1.8,0.2-2.4,0.5C4.8,2.8,4.2,3.1,3.7,3.7S2.8,4.8,2.5,5.5C2.3,6.1,2.1,6.8,2.1,7.9 C2,8.9,2,9.3,2,12s0,3.1,0.1,4.1c0,1.1,0.2,1.8,0.5,2.4c0.3,0.7,0.6,1.2,1.2,1.8s1.1,0.9,1.8,1.2c0.6,0.2,1.4,0.4,2.4,0.5 C8.9,22,9.3,22,12,22s3.1,0,4.1-0.1c1.1,0,1.8-0.2,2.4-0.5c0.7-0.3,1.2-0.6,1.8-1.2s0.9-1.1,1.2-1.8c0.2-0.6,0.4-1.4,0.5-2.4 c0-1.1,0.1-1.4,0.1-4.1S22,8.9,21.9,7.9z M20.1,16c0,1-0.2,1.5-0.3,1.9c-0.2,0.5-0.4,0.8-0.7,1.1c-0.3,0.3-0.7,0.6-1.1,0.7 c-0.4,0.1-0.9,0.3-1.9,0.3c-1.1,0-1.4,0.1-4,0.1c-2.7,0-3,0-4-0.1c-1,0-1.5-0.2-1.9-0.3C5.6,19.6,5.3,19.4,5,19 c-0.3-0.3-0.6-0.7-0.7-1.1C4.1,17.5,3.9,17,3.9,16c0-1.1-0.1-1.4-0.1-4s0-3,0.1-4c0-1,0.2-1.5,0.3-1.9C4.4,5.6,4.6,5.3,5,5 c0.3-0.3,0.7-0.6,1.1-0.7C6.5,4.1,7,3.9,8,3.9c1.1,0,1.4-0.1,4-0.1s3,0,4,0.1c1,0,1.5,0.2,1.9,0.3C18.4,4.4,18.7,4.6,19,5 c0.3,0.3,0.6,0.7,0.7,1.1C19.9,6.5,20.1,7,20.1,8c0,1.1,0.1,1.4,0.1,4S20.2,15,20.1,16z M12,6.9c-2.8,0-5.1,2.3-5.1,5.1 s2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1S14.8,6.9,12,6.9z M12,15.3c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3 S13.8,15.3,12,15.3z M18.5,6.7c0,0.7-0.5,1.2-1.2,1.2c-0.7,0-1.2-0.5-1.2-1.2s0.5-1.2,1.2-1.2C18,5.5,18.5,6,18.5,6.7z"
+  />
+</svg>
+`;
+
 exports[`renders KeyboardArrowDown 1`] = `
 <svg
-  className="sc-iQKALj ftJWrM"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1206,7 +1234,7 @@ exports[`renders KeyboardArrowDown 1`] = `
 
 exports[`renders KeyboardArrowUp 1`] = `
 <svg
-  className="sc-bwCtUz kLbHbK"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1220,7 +1248,7 @@ exports[`renders KeyboardArrowUp 1`] = `
 
 exports[`renders Kitchenette 1`] = `
 <svg
-  className="sc-chPdSV byfFmt"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1234,7 +1262,7 @@ exports[`renders Kitchenette 1`] = `
 
 exports[`renders Language 1`] = `
 <svg
-  className="sc-hrWEMg fOsrtz"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1248,7 +1276,7 @@ exports[`renders Language 1`] = `
 
 exports[`renders Laptop 1`] = `
 <svg
-  className="sc-eTuwsz jtSbhi"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1262,7 +1290,7 @@ exports[`renders Laptop 1`] = `
 
 exports[`renders LateNight 1`] = `
 <svg
-  className="sc-kgoBCf kVSTZj"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1276,7 +1304,7 @@ exports[`renders LateNight 1`] = `
 
 exports[`renders List 1`] = `
 <svg
-  className="sc-gwVKww eWCHnX"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1290,7 +1318,7 @@ exports[`renders List 1`] = `
 
 exports[`renders LocalBar 1`] = `
 <svg
-  className="sc-hXRMBi kcwAsj"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1304,7 +1332,7 @@ exports[`renders LocalBar 1`] = `
 
 exports[`renders LocalDining 1`] = `
 <svg
-  className="sc-epnACN hsXqzQ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1318,7 +1346,7 @@ exports[`renders LocalDining 1`] = `
 
 exports[`renders LocalGasStation 1`] = `
 <svg
-  className="sc-iQNlJl jxLqkS"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1332,7 +1360,7 @@ exports[`renders LocalGasStation 1`] = `
 
 exports[`renders LocalParking 1`] = `
 <svg
-  className="sc-bsbRJL kfmymT"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1346,7 +1374,7 @@ exports[`renders LocalParking 1`] = `
 
 exports[`renders LocalPhone 1`] = `
 <svg
-  className="sc-hZSUBg VKktY"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1360,7 +1388,7 @@ exports[`renders LocalPhone 1`] = `
 
 exports[`renders LocationCity 1`] = `
 <svg
-  className="sc-cMhqgX dwYjBs"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1374,7 +1402,7 @@ exports[`renders LocationCity 1`] = `
 
 exports[`renders LocationOn 1`] = `
 <svg
-  className="sc-iuJeZd guOzZL"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1388,7 +1416,7 @@ exports[`renders LocationOn 1`] = `
 
 exports[`renders Lock 1`] = `
 <svg
-  className="sc-esOvli bMqLzo"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1402,7 +1430,7 @@ exports[`renders Lock 1`] = `
 
 exports[`renders Manual 1`] = `
 <svg
-  className="sc-kGXeez eIIwaK"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1416,7 +1444,7 @@ exports[`renders Manual 1`] = `
 
 exports[`renders Map 1`] = `
 <svg
-  className="sc-cmthru hjHKVg"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1430,7 +1458,7 @@ exports[`renders Map 1`] = `
 
 exports[`renders Menu 1`] = `
 <svg
-  className="sc-hMFtBS ibPiQm"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1444,7 +1472,7 @@ exports[`renders Menu 1`] = `
 
 exports[`renders Microwave 1`] = `
 <svg
-  className="sc-kpOJdX kAzjOl"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1458,7 +1486,7 @@ exports[`renders Microwave 1`] = `
 
 exports[`renders Mileage 1`] = `
 <svg
-  className="sc-dxgOiQ hTjMfW"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1472,7 +1500,7 @@ exports[`renders Mileage 1`] = `
 
 exports[`renders ModeEdit 1`] = `
 <svg
-  className="sc-cLQEGU laMIkr"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1486,7 +1514,7 @@ exports[`renders ModeEdit 1`] = `
 
 exports[`renders MonetizationOn 1`] = `
 <svg
-  className="sc-gqPbQI lnbsjh"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1500,7 +1528,7 @@ exports[`renders MonetizationOn 1`] = `
 
 exports[`renders Mood 1`] = `
 <svg
-  className="sc-hORach jBrJiT"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1514,7 +1542,7 @@ exports[`renders Mood 1`] = `
 
 exports[`renders MultiOccupancy 1`] = `
 <svg
-  className="sc-ckVGcZ foYhJp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1528,7 +1556,7 @@ exports[`renders MultiOccupancy 1`] = `
 
 exports[`renders NotificationsActive 1`] = `
 <svg
-  className="sc-bMVAic bLqoya"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1542,7 +1570,7 @@ exports[`renders NotificationsActive 1`] = `
 
 exports[`renders Overnight 1`] = `
 <svg
-  className="sc-jKJlTe loXQau"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1556,7 +1584,7 @@ exports[`renders Overnight 1`] = `
 
 exports[`renders Person 1`] = `
 <svg
-  className="sc-bAeIUo hyslBV"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1570,7 +1598,7 @@ exports[`renders Person 1`] = `
 
 exports[`renders Pets 1`] = `
 <svg
-  className="sc-iujRgT jeaRWG"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1584,7 +1612,7 @@ exports[`renders Pets 1`] = `
 
 exports[`renders PhotoLibrary 1`] = `
 <svg
-  className="sc-GMQeP jXMCGy"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1598,7 +1626,7 @@ exports[`renders PhotoLibrary 1`] = `
 
 exports[`renders Poll 1`] = `
 <svg
-  className="sc-exAgwC kvVgIg"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1612,7 +1640,7 @@ exports[`renders Poll 1`] = `
 
 exports[`renders Pool 1`] = `
 <svg
-  className="sc-cQFLBn jkOaFm"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1626,7 +1654,7 @@ exports[`renders Pool 1`] = `
 
 exports[`renders Print 1`] = `
 <svg
-  className="sc-gojNiO jknDzv"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1640,21 +1668,21 @@ exports[`renders Print 1`] = `
 
 exports[`renders QueryBuilder 1`] = `
 <svg
-  className="sc-daURTG cmTGTe"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
   width={24}
 >
   <path
-    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
   />
 </svg>
 `;
 
 exports[`renders RadioButtonChecked 1`] = `
 <svg
-  className="sc-bXGyLb eATyCf"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1668,7 +1696,7 @@ exports[`renders RadioButtonChecked 1`] = `
 
 exports[`renders RadioButtonUnchecked 1`] = `
 <svg
-  className="sc-lkqHmb fgSdED"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1682,7 +1710,7 @@ exports[`renders RadioButtonUnchecked 1`] = `
 
 exports[`renders Refresh 1`] = `
 <svg
-  className="sc-eLExRp lfgpeQ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1696,7 +1724,7 @@ exports[`renders Refresh 1`] = `
 
 exports[`renders Remove 1`] = `
 <svg
-  className="sc-cbkKFq bIUkjW"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1710,7 +1738,7 @@ exports[`renders Remove 1`] = `
 
 exports[`renders RemoveCircleOutline 1`] = `
 <svg
-  className="sc-krvtoX fMwaVV"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1724,7 +1752,7 @@ exports[`renders RemoveCircleOutline 1`] = `
 
 exports[`renders ReportProblem 1`] = `
 <svg
-  className="sc-fYiAbW isVHhR"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1738,7 +1766,7 @@ exports[`renders ReportProblem 1`] = `
 
 exports[`renders Restaurant 1`] = `
 <svg
-  className="sc-fOKMvo cxpccT"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1752,7 +1780,7 @@ exports[`renders Restaurant 1`] = `
 
 exports[`renders Ribbon 1`] = `
 <svg
-  className="sc-eNQAEJ fAbPPh"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1766,7 +1794,7 @@ exports[`renders Ribbon 1`] = `
 
 exports[`renders RoomSize 1`] = `
 <svg
-  className="sc-hMqMXs cPxEnv"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1780,7 +1808,7 @@ exports[`renders RoomSize 1`] = `
 
 exports[`renders Rowing 1`] = `
 <svg
-  className="sc-dUjcNx cmeQJL"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1794,21 +1822,21 @@ exports[`renders Rowing 1`] = `
 
 exports[`renders Schedule 1`] = `
 <svg
-  className="sc-gHboQg eLpzfs"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
   width={24}
 >
   <path
-    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
   />
 </svg>
 `;
 
 exports[`renders Search 1`] = `
 <svg
-  className="sc-eilVRo frMzxF"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1822,7 +1850,7 @@ exports[`renders Search 1`] = `
 
 exports[`renders Security 1`] = `
 <svg
-  className="sc-eerKOB eFhTIp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1836,7 +1864,7 @@ exports[`renders Security 1`] = `
 
 exports[`renders ShowChart 1`] = `
 <svg
-  className="sc-emmjRN bTNvq"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1850,7 +1878,7 @@ exports[`renders ShowChart 1`] = `
 
 exports[`renders SingleOccupancy 1`] = `
 <svg
-  className="sc-kEYyzF gfWKdx"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1864,7 +1892,7 @@ exports[`renders SingleOccupancy 1`] = `
 
 exports[`renders SmokeFree 1`] = `
 <svg
-  className="sc-cpmLhU dpVsHD"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1878,7 +1906,7 @@ exports[`renders SmokeFree 1`] = `
 
 exports[`renders Spa 1`] = `
 <svg
-  className="sc-dymIpo kdtjOQ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1892,7 +1920,7 @@ exports[`renders Spa 1`] = `
 
 exports[`renders SplitTicket 1`] = `
 <svg
-  className="sc-kkGfuU gqJIVH"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1906,7 +1934,7 @@ exports[`renders SplitTicket 1`] = `
 
 exports[`renders Star 1`] = `
 <svg
-  className="sc-bnXvFD iypPKo"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1920,7 +1948,7 @@ exports[`renders Star 1`] = `
 
 exports[`renders StarHalf 1`] = `
 <svg
-  className="sc-iAyFgw gPlgsX"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1934,7 +1962,7 @@ exports[`renders StarHalf 1`] = `
 
 exports[`renders SteeringWheel 1`] = `
 <svg
-  className="sc-hSdWYo bIQQAp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1948,7 +1976,7 @@ exports[`renders SteeringWheel 1`] = `
 
 exports[`renders SuccessOutline 1`] = `
 <svg
-  className="sc-eHgmQL gmKbQu"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1962,7 +1990,7 @@ exports[`renders SuccessOutline 1`] = `
 
 exports[`renders SwapVert 1`] = `
 <svg
-  className="sc-gFaPwZ fanOyy"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1976,7 +2004,7 @@ exports[`renders SwapVert 1`] = `
 
 exports[`renders ThumbDown 1`] = `
 <svg
-  className="sc-fhYwyz nrlUF"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1990,7 +2018,7 @@ exports[`renders ThumbDown 1`] = `
 
 exports[`renders ThumbUp 1`] = `
 <svg
-  className="sc-jzgbtB gtmFkE"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2004,7 +2032,7 @@ exports[`renders ThumbUp 1`] = `
 
 exports[`renders Timer 1`] = `
 <svg
-  className="sc-gJWqzi jOJgYp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2018,7 +2046,7 @@ exports[`renders Timer 1`] = `
 
 exports[`renders TrendingUp 1`] = `
 <svg
-  className="sc-rBLzX gcgxuO"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2032,7 +2060,7 @@ exports[`renders TrendingUp 1`] = `
 
 exports[`renders Trophy 1`] = `
 <svg
-  className="sc-cvbbAY dbHDoR"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2046,7 +2074,7 @@ exports[`renders Trophy 1`] = `
 
 exports[`renders Tune 1`] = `
 <svg
-  className="sc-bMvGRv jKmwkI"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2058,9 +2086,23 @@ exports[`renders Tune 1`] = `
 </svg>
 `;
 
+exports[`renders Twitter 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.3,19.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5c0.8-0.6,1.5-1.3,2-2.1c-0.7,0.3-1.5,0.5-2.4,0.6 c0.9-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-1.3-1.4-3.3-1.7-4.9-0.8s-2.5,2.7-2.1,4.5C8.5,8.4,5.5,6.8,3.4,4.2 C2.3,6.1,2.9,8.5,4.7,9.7C4,9.7,3.4,9.5,2.8,9.2c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.6,0.2-1.2,0.2-1.9,0.1c0.5,1.7,2.1,2.8,3.8,2.8 C6.6,17.3,4.8,18,3,18c-0.3,0-0.7,0-1-0.1C3.9,19.1,6.1,19.8,8.3,19.8"
+  />
+</svg>
+`;
+
 exports[`renders Unlock 1`] = `
 <svg
-  className="sc-jWBwVP fDrbnp"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2074,7 +2116,7 @@ exports[`renders Unlock 1`] = `
 
 exports[`renders VerifiedUser 1`] = `
 <svg
-  className="sc-CtfFt efFpcB"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2088,7 +2130,7 @@ exports[`renders VerifiedUser 1`] = `
 
 exports[`renders ViewQuilt 1`] = `
 <svg
-  className="sc-laTMn fJphvA"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2102,7 +2144,7 @@ exports[`renders ViewQuilt 1`] = `
 
 exports[`renders VpnKey 1`] = `
 <svg
-  className="sc-hGoxap irFVct"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2116,7 +2158,7 @@ exports[`renders VpnKey 1`] = `
 
 exports[`renders Web 1`] = `
 <svg
-  className="sc-fjmCvl jmdDbZ"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2130,7 +2172,7 @@ exports[`renders Web 1`] = `
 
 exports[`renders Wifi 1`] = `
 <svg
-  className="sc-TFwJa gzYRmt"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2144,7 +2186,7 @@ exports[`renders Wifi 1`] = `
 
 exports[`renders Work 1`] = `
 <svg
-  className="sc-bHwgHz ePnYhO"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2156,9 +2198,23 @@ exports[`renders Work 1`] = `
 </svg>
 `;
 
+exports[`renders Youtube 1`] = `
+<svg
+  className=""
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.5,6.8c0.4,1.6,0.4,4.8,0.4,4.8s0,3.2-0.4,4.8c-0.2,0.9-0.9,1.5-1.8,1.8 c-1.6,0.4-7.8,0.4-7.8,0.4s-6.2,0-7.8-0.4c-0.9-0.2-1.5-0.9-1.8-1.8C2,14.9,2,11.6,2,11.6s0-3.2,0.4-4.8C2.6,6,3.3,5.3,4.2,5.1 C5.7,4.7,12,4.7,12,4.7s6.2,0,7.8,0.4C20.6,5.3,21.3,6,21.5,6.8z M10,14.6l5.2-3l-5.2-3V14.6z"
+  />
+</svg>
+`;
+
 exports[`renders YoutubeSearchedFor 1`] = `
 <svg
-  className="sc-krDsej kKJBHx"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2172,7 +2228,7 @@ exports[`renders YoutubeSearchedFor 1`] = `
 
 exports[`renders ZoomOutMap 1`] = `
 <svg
-  className="sc-dTdPqK cWIThu"
+  className=""
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"

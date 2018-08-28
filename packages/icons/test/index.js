@@ -1,5 +1,6 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
+import 'jest-styled-components'
 import * as customIcons from '../src/custom'
 import * as mdIcons from '../src/material-design'
 
