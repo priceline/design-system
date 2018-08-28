@@ -11,7 +11,7 @@ npm i pcln-icons
 
 ```js
 import React from 'react'
-import ACUnitIcon from 'pcln-icons/lib/AcUnit'
+import ACIcon from 'pcln-icons/lib/AcUnit'
 
 export default props =>
   <ACUnitIcon

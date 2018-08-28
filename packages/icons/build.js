@@ -58,17 +58,153 @@ const build = async () => {
   const files = await readdir(pkgPath, [ignore])
   const icons = uniqBy(files, file => path.basename(file))
     .filter(is24px)
+    .filter(filename => {
+      const name = upperFirst(camelCase(rename(filename)))
+      console.log(name, whitelist.includes(name))
+      return whitelist.includes(name)
+    })
     .map(readFile)
     .sort((a, b) => (a.name < b.name ? -1 : 1))
 
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir)
-  // if (!fs.existsSync(examplesDir)) fs.mkdirSync(examplesDir)
 
   icons.forEach(writeFile)
-  // icons.forEach(createExample)
   createDoc(icons)
 
   console.log(icons.length, ' icons copied')
 }
 
 build()
+
+// whitelist of icons to include from material design icons
+const whitelist = [
+  // build from aliases object
+  'AcUnit',
+  'FlightLand',
+  'ArrowDownward',
+  'ArrowBack',
+  'ArrowForward',
+  'ArrowUpward',
+  'ReportProblem',
+  'BeachAccess',
+  'Hotel',
+  'CheckBox',
+  'CheckBoxOutlineBlank',
+  'IndeterminateCheckBox',
+  'AddBox',
+  'FreeBreakfast',
+  'BusinessCenter',
+  'DateRange',
+  'ChildFriendly',
+  'DirectionsCar',
+  'Poll',
+  'KeyboardArrowDown',
+  'KeyboardArrowUp',
+  'LocationCity',
+  'Schedule',
+  'AccessTime',
+  'QueryBuilder',
+  'CloudQueue',
+  'FlightTakeoff',
+  'Description',
+  'AttachMoney',
+  'MonetizationOn',
+  'Brightness5',
+  'Create',
+  'ModeEdit',
+  'FlashOn',
+  'InsertEmoticon',
+  'Mood',
+  'FilterList',
+  'FitnessCenter',
+  'WhatsHot',
+  'Flight',
+  'Cached',
+  'PhotoLibrary',
+  'LocalGasStation',
+  'Language',
+  'GolfCourse',
+  'GpsFixed',
+  'ShowChart',
+  'Apps',
+  'Business',
+  'LocalDining',
+  'Info',
+  'InfoOutline',
+  'VpnKey',
+  'Work',
+  'Remove',
+  'NotificationsActive',
+  'LocalParking',
+  'Call',
+  'LocalPhone',
+  'Image',
+  'LocationOn',
+  'Add',
+  'Print',
+  'ViewQuilt',
+  'RadioButtonChecked',
+  'RadioButtonUnchecked',
+  'RemoveCircleOutline',
+  'AddCircleOutline',
+  'YoutubeSearchedFor',
+  'EventSeat',
+  'AirlineSeatReclineExtra',
+  'AirlineSeatReclineNormal',
+  'AirportShuttle',
+  'SmokeFree',
+  'CheckCirle',
+  'SwapVert',
+  'ThumbDown',
+  'ThumbUp',
+  'Person',
+  'VerifiedUser',
+  'Error',
+  'ErrorOutline',
+  'HotTub',
+  'ZoomOutMap',
+
+  // non-aliased
+  'Star',
+  'Accessible',
+  'Build',
+  'Cake',
+  'Casino',
+  'Chat',
+  'Check',
+  'ChevronLeft',
+  'ChevronRight',
+  'Close',
+  'CreditCard',
+  'Devices',
+  'Directions',
+  // 'Discount',
+  'Email',
+  'Event',
+  'EventAvailable',
+  'EventBusy',
+  'Help',
+  'History',
+  'Home',
+  'Laptop',
+  'List',
+  'LocalBar',
+  'Lock',
+  'Map',
+  'Menu',
+  'Parking',
+  'Pets',
+  'Pool',
+  'Refresh',
+  'Restaurant',
+  'Rowing',
+  'Search',
+  'Security',
+  'Spa',
+  'Star',
+  'Timer',
+  'TrendingUp',
+  'Tune',
+  'Web',
+  'Wifi'
+]
