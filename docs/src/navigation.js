@@ -1,5 +1,5 @@
 export default [
-  { name: 'Overview', path: '/' },
+  { name: 'Getting Started', path: '/' },
   {
     section: 'Foundations',
     links: [
@@ -24,7 +24,6 @@ export default [
       { name: 'Divider', path: '/Divider' },
       { name: 'Flag', path: '/Flag' },
       { name: 'Flex', path: '/Flex' },
-      { name: 'GettingStarted', path: '/GettingStarted' },
       { name: 'Heading', path: '/Heading' },
       { name: 'Hide', path: '/Hide' },
       { name: 'Hug', path: '/Hug' },
@@ -37,7 +36,6 @@ export default [
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
       { name: 'Motion', path: '/Motion' },
-      { name: 'README', path: '/README' },
       { name: 'Radio', path: '/Radio' },
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },

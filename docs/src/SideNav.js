@@ -26,7 +26,9 @@ export default props => (
             ))}
           </Box>
         ) : (
-          <NavLink key={section.name}>{section.name}</NavLink>
+          <NavLink key={section.name} href={section.path}>
+            {section.name}
+          </NavLink>
         )
     )}
   </Box>

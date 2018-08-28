@@ -12,7 +12,16 @@ export default {
   lineHeight: 1.6,
   code: {
     fontFamily: monospace,
+    fontSize: '14px',
     color: blue
+  },
+  pre: {
+    fontFamily: monospace,
+    fontSize: '14px',
+    padding: '16px',
+    color: blue,
+    backgroundColor: lightGray,
+    borderRadius: '2px'
   },
   LayoutSidebar: {
     backgroundColor: lightGray
@@ -27,7 +36,7 @@ export default {
   },
 
   LiveCode: {
-    border: `1px solid ${borderGray}`,
+    border: `1px solid ${lightGray}`,
     borderRadius: '2px',
     marginBottom: '32px'
   },
@@ -36,6 +45,7 @@ export default {
   },
   LiveEditor: {
     fontFamily: monospace,
+    fontSize: '14px',
     padding: '16px',
     color: blue,
     backgroundColor: lightGray

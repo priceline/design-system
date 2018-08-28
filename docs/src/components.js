@@ -14,8 +14,6 @@ const heading = type => props => {
   )
 }
 
-// const h1 = props => <Heading.h1 {...props} />
-
 const OverflowAuto = styled.div`
   max-width: 100%;
   overflow-x: auto;
@@ -63,7 +61,7 @@ Table.defaultProps = {
 }
 
 export const PageTitle = props => (
-  <Heading.h1 fontSize={5} bold mt={[2, 5]} mb={3} {...props} />
+  <Heading.h1 fontSize={[5, 6]} bold mt={[2, 5]} mb={3} {...props} />
 )
 
 export const Description = props => (
@@ -82,8 +80,7 @@ Code.defaultProps = {
 
 const components = {
   ...DS,
-  // inlineCode: Code,
-  h1: heading('h2'),
+  h1: heading('h1'),
   h2: heading('h2'),
   h3: heading('h3'),
   h4: heading('h4'),
@@ -91,14 +88,11 @@ const components = {
   h6: heading('h6'),
   a: Link,
   p: p => <Text.p {...p} />,
-  // todo
-  // pre: CodeBlock,
-  // code: Code,
   table: Table
 }
 
 components.h1.defaultProps = {
-  fontSize: 5,
+  fontSize: [5, 6],
   mt: 5,
   mb: 3
 }
