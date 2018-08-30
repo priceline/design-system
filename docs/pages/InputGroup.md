@@ -23,6 +23,8 @@ This can be used for date range inputs that look like a single input.
 
 **Note:** Focus and validation states will need to pass a value to the `borderColor` prop
 
+## Props
+
 Prop | Type | Description
 ---|---|---
-borderColor | string | Override the default border color
+`borderColor` | string | Override the default border color

@@ -7,7 +7,6 @@ Use the `<ToggleBadge />` component to render a primitive badge.
 <ToggleBadge selected>
   Selected
 </ToggleBadge>
-
 <ToggleBadge>
   Unselected
 </ToggleBadge>
@@ -15,8 +14,8 @@ Use the `<ToggleBadge />` component to render a primitive badge.
 
 Prop | Type | Description
 ---|---|---
-selected | boolean | gives different background color
-unSelectedBg | string | background color for unselected toggle, transparent by default
-color | string | text color
-bg | string | background color of the toggle badge
-fontSize | number or array | text font size
+`selected` | boolean | Gives different background color
+`unSelectedBg` | string | Background color for unselected toggle, transparent by default
+`color` | string | Text color
+`bg` | string | Background color of the toggle badge
+`fontSize` | number or array | Text font size

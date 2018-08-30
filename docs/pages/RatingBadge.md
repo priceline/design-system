@@ -9,7 +9,9 @@ Used in the hotel listing for guest ratings.
 </RatingBadge>
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
-color | string | sets text color
-bg | string | sets background color
+`color` | string | Sets text color
+`bg` | string | Sets background color

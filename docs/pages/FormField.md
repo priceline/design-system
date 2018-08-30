@@ -30,22 +30,23 @@ Use the `<FormField />` component to combine `<Input />` or `<Select />`, `<Labe
 ```
 
 ## Usage Notes
+
 This component accepts up to 4 components as children. Up to two of them can be `<Icon />`s, one can be an `<Input />` or `<Select />`, and one can be a `<Label />`.
 
 ### `<Input />` or `<Select />`
+
 Make sure to provide an `id` prop to this component, otherwise you will run into accessibility issues.
 
 ### `<Icon />`
+
 One `<Icon />` can go _before_, and one `<Icon />` can go _after_ the `<Input />` component. Anything else will result in a prop-type warning.
 
 ## Error Handling
+
 All error handling should be performed by the parent component. An example of how one might accomplish this is below.
 
 ```jsx
-<Box
-  width={'50%'}
-  bg='white'
->
+<Box width={1/2} bg='white'>
   <FormField>
     <Icon name='search' color='blue' size={18} />
     <Input
@@ -81,11 +82,12 @@ All error handling should be performed by the parent component. An example of ho
     </Tooltip>
   }
 </Box>
-
 ```
 
-### Props
+## Props
+
 Prop | Type | Description
 ---|---|---
-children | array of components | Up to 4 components, two of which can be `<Icon/>`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported.
-alwaysShowLabel | boolean | determines whether or not the label shows up statically
+`children` | array of components | Up to 4 components, two of which can be `<Icon/>`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported.
+`alwaysShowLabel` | boolean | Determines whether or not the label shows up statically
+

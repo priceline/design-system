@@ -1,7 +1,8 @@
 
 # IconButton
 
-This component extends the `<Icon />` component, by allowing an `onClick` handler to be passed in as a prop. Hovering over the `<IconButton />` changes the cursor to a pointer.
+This component extends the `<Icon />` component, by allowing an `onClick` handler to be passed in as a prop.
+Hovering over the `<IconButton />` changes the cursor to a pointer.
 
 ```.jsx
 <IconButton
@@ -12,10 +13,12 @@ This component extends the `<Icon />` component, by allowing an `onClick` handle
 />
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
-onClick | function | sets a function to execute on click
+`onClick` | function | Sets a function to execute on click
 
-### Extensions
+## Extensions
 
-`<CloseButton />`
+[`<CloseButton />`](/CloseButton)

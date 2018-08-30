@@ -3,21 +3,20 @@
 Use the `<Radio />` component to set the HTML `<input type='radio' />` element. Use it with `<Label />` .
 
 ```.jsx
-<Label fontSize="14px">
+<Label fontSize={1}>
   <Radio checked />
-  selected
+  {' '}
+  Selected
 </Label>
-<Label fontSize="14px">
+<Label fontSize={1}>
   <Radio disabled />
-  can't choose this one
+  {' '}
+  Can't choose this one
 </Label>
-<Label fontSize="14px">
+<Label fontSize={1}>
   <Radio />
-  not selected
+  {' '}
+  Not selected
 </Label>
 ```
 
-Prop | Type | Description
----|---|---
-checked | boolean | item checked
-disabled | boolean | item disabled

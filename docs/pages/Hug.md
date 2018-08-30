@@ -4,15 +4,17 @@ Use the `<Hug />` component to surround another component with a border and a ba
 Pass in `props.children` to be wrapped.
 
 ```.jsx
-  <Hug icon='check' text={<Text.span>I hug my props.children</Text.span>}>
-    <Card p={4}>
-      Hello
-    </Card>
-  </Hug>
+<Hug icon='check' text={<Text.span>I hug my props.children</Text.span>}>
+  <Card p={4}>
+    Hello
+  </Card>
+</Hug>
 ```
+
+## Props
 
 Prop | Type | Description
 ---|---|---
-iconDisplay | string or array of strings | responsive display property of icon
-icon | string | svg icon name
-text | node, array of nodes, or string | When providing a node, it is highly recommended to use a `<Text.span />` node, to keep text on a single line
+`iconDisplay` | string or array of strings | Responsive display property of icon
+`icon` | string | SVG icon name
+`text` | node, array of nodes, or string | When providing a node, it is highly recommended to use a `<Text.span />` node, to keep text on a single line

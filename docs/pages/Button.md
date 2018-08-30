@@ -11,9 +11,9 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 Prop | Type | Description
 ---|---|---
-radius | string | custom button radius in pixel
-size | string | sets button size to small, medium or large
-fullWidth | boolean | sets button width to fullWidth
+radius | string | Custom button radius in pixel
+size | string | Sets button size to small, medium or large
+fullWidth | boolean | Sets button width to fullWidth
 
 ### Sizes
 

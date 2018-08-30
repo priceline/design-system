@@ -4,9 +4,7 @@
 The theme style constants should be used whenever low-level access to font sizes, margin, padding, media queries, and colors are needed.
 
 ```js
-import {
-  theme,
-} from 'pcln-design-system'
+import { theme } from 'pcln-design-system'
 
 // or
 import {

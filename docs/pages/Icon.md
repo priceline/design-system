@@ -19,9 +19,11 @@ To force the component to prefer using new icons, set the `legacy` prop to `fals
 <Icon legacy={false} name='flame' />
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
-name | string | icon key name
-size | number | width and height in pixels
-color | string | a color key from `theme.colors`
-legacy | boolean | force component to prefer using icons from the legacy set
+`name` | string | Icon key name
+`size` | number | Width and height in pixels
+`color` | string | A color key from `theme.colors`
+`legacy` | boolean | Force component to prefer using icons from the legacy set

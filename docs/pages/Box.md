@@ -3,36 +3,41 @@
 
 Use the `<Box />` component to control width, margin, padding, and color.
 
+50% width
+
 ```.jsx
-// 50% width
 <Box width={1/2} bg='lightGray'>
   Box
 </Box>
 ```
 
+Padding of `theme.space[3]` (16px)
+
 ```.jsx
-// Padding of `theme.space[3]` (16px)
 <Box p={3} bg='lightGray'>
   Box
 </Box>
 ```
 
+Margin of `theme.space[2]` (8px)
+
 ```.jsx
-// Margin of `theme.space[2]` (8px)
 <Box m={4} bg='lightGray'>
   Box
 </Box>
 ```
 
+Color blue from the theme's color palette
+
 ```.jsx
-// Color blue from the theme's color palette
 <Box color='blue'>
   Box
 </Box>
 ```
 
+Background color green from the theme's color palette
+
 ```.jsx
-// Background color green from the theme's color palette
 <Box bg='green'>
   Box
 </Box>

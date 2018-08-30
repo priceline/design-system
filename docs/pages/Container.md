@@ -15,4 +15,4 @@ If there is no `maxWidth` prop, `theme.maxContainerWidth` - `1280px` will be use
 
 Prop | Type | Description
 ---|---|--- | ---
-maxWidth | Number | sets `max-width`
+`maxWidth` | Number | Sets `max-width`

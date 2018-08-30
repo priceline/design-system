@@ -21,5 +21,5 @@ Use the `<Flag />` component for stylized merchandising messages.
 
 Prop | Type | Description
 ---|---|---
-color | string | text color
-bg | string | background color
+`color` | string | Text color
+`bg` | string | Background color

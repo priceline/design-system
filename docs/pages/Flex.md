@@ -12,7 +12,7 @@ The `<Flex />` component is an extension of the `<Box />` component with `displa
 
 Prop | Type | Description
 ---|---|---
-align | string | sets `align-items`
-justify | string | sets `justify-content`
-wrap | boolean | sets `flex-wrap: wrap`
-flexDirection | string | sets `flex-direction` (either `row` or `column`)
+`align` | string | Sets `align-items`
+`justify` | string | Sets `justify-content`
+`wrap` | boolean | Sets `flex-wrap: wrap`
+`flexDirection` | string | Sets `flex-direction` (either `row` or `column`)

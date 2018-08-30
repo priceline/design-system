@@ -1,14 +1,22 @@
 
 # Input
 
-Use `<Input />` component to create an input a user can type into.
+Use `<Input />` component to create a styled `<input>` element.
+It accepts all native HTML attributes for the element.
 
 ```.jsx
 <Input
-  placeholder="Email address"
+  id='email'
+  name='email'
+  defaultValue='hello@example.com'
 />
 ```
 
-Prop | Type | Description
----|---|---
-placeholder | string | Sets placeholder text
+```.jsx
+<Label htmlFor='email'>Email Address</Label>
+<Input
+  id='email'
+  name='email'
+  defaultValue='hello@example.com'
+/>
+```

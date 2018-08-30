@@ -35,7 +35,6 @@ export default [
       { name: 'InputGroup', path: '/InputGroup' },
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
-      { name: 'Motion', path: '/Motion' },
       { name: 'Radio', path: '/Radio' },
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
@@ -43,15 +42,16 @@ export default [
       { name: 'Slider', path: '/Slider' },
       { name: 'Stamp', path: '/Stamp' },
       { name: 'Text', path: '/Text' },
-      { name: 'Theme', path: '/Theme' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
-      { name: 'Truncate', path: '/Truncate' }
+      { name: 'Truncate', path: '/Truncate' },
+      { name: 'Theme', path: '/Theme' }
     ]
   },
   {
     section: 'Resources',
     links: [
+      { name: 'Motion', path: '/Motion' },
       { name: 'Layout', path: '/Layout' },
       { name: 'Contributing', path: '/Contributing' },
       { name: 'GitHub', path: 'https://github.com/pricelinelabs/design-system' }
