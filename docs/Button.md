@@ -13,7 +13,7 @@ Prop | Type | Description
 ---|---|---
 radius | string | custom button radius in pixel
 size | string | sets button size to small, medium or large
-fullWidth | boolean | sets button width to fullWidth
+width | number string or array | sets button width
 
 ### Sizes
 

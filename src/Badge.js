@@ -65,16 +65,9 @@ const Badge = styled.div`
 
 Badge.displayName = 'Badge'
 
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
-
 Badge.propTypes = {
-  bg: PropTypes.string,
-  px: numberStringOrArray,
-  py: numberStringOrArray
+  ...space.propTypes,
+  ...color.propTypes
 }
 
 Badge.defaultProps = {

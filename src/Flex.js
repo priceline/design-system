@@ -9,13 +9,19 @@ import {
   flexDirection
 } from 'styled-system'
 import theme from './theme'
+import mapProps from './mapProps'
 
-const Flex = styled.div`
+const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
+  flexWrap: wrap ? 'wrap' : undefined,
+  alignItems: align,
+  justifyContent: justify,
+  ...props
+}))(styled.div`
   display: flex;
   ${space} ${width} ${color} ${alignItems} ${justifyContent}
   ${flexDirection}
   ${flexWrap}
-`
+`)
 
 Flex.defaultProps = {
   theme

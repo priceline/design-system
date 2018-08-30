@@ -15,7 +15,7 @@ const Checkbox = props => {
   )
 }
 
-const CheckBoxWrapper = Box.extend`
+const CheckBoxWrapper = styled(Box)`
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -41,6 +41,9 @@ const CheckBoxWrapper = Box.extend`
     }
   }
 `
+CheckBoxWrapper.defaultProps = {
+  theme
+}
 
 const StyledInput = styled.input`
   appearance: none;
@@ -52,20 +55,13 @@ const StyledInput = styled.input`
 Checkbox.displayName = 'Checkbox'
 
 Checkbox.propTypes = {
-  name: PropTypes.string,
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
-  defaultChecked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func.isRequired,
-  theme: PropTypes.object
+  onChange: PropTypes.func.isRequired
 }
 
 Checkbox.defaultProps = {
-  size: 20,
-  disabled: false,
-  defaultChecked: false,
-  theme: theme
+  size: 20
 }
 
 export default Checkbox

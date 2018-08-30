@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "npm run icons && babel src -d dist --ignore __tests__",
+    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
     "precommit": "lint-staged",
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
@@ -83,9 +83,10 @@
   },
   "dependencies": {
     "clean-tag": "^1.0.4",
+    "hoist-non-react-statics": "^3.0.1",
     "prop-types": "^15.5.10",
-    "styled-system": "^2.1.0",
-    "rc-slider": "^8.5.0"
+    "rc-slider": "^8.5.0",
+    "styled-system": "^3.0.2"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0"

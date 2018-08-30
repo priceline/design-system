@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { space, borderColor, themeGet, propTypes } from 'styled-system'
+import { space, borderColor, themeGet } from 'styled-system'
 import theme from './theme'
 import Box from './Box'
 import Input from './Input'
@@ -25,8 +25,8 @@ const InputGroup = styled.div`
 `
 
 InputGroup.propTypes = {
-  ...propTypes.space,
-  ...propTypes.borderColor
+  ...space.propTypes,
+  ...borderColor.propTypes
 }
 
 InputGroup.defaultProps = {

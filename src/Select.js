@@ -6,7 +6,7 @@ import theme from './theme'
 import Flex from './Flex'
 import Icon from './Icon'
 
-const ClickableIcon = Icon.extend`
+const ClickableIcon = styled(Icon)`
   pointer-events: none;
 `
 
@@ -34,6 +34,11 @@ SelectBase.defaultProps = {
   pl: 12,
   pr: 32,
   py: 14
+}
+
+SelectBase.propTypes = {
+  ...space.propTypes,
+  ...fontSize.propTypes
 }
 
 const Select = styled(props => (

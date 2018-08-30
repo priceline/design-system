@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { space, size, color } from 'styled-system'
 import Tag from 'clean-tag'
-import PropTypes from 'prop-types'
 import icons from '../icons.json'
 import theme from './theme'
 
@@ -38,15 +37,15 @@ const keys = Object.keys({
 
 Icon.propTypes = {
   ...space.propTypes,
+  ...size.propTypes,
+  ...color.propTypes,
   name: ({ name }) => {
     if (!keys.includes(name)) {
       return new Error(
         `Failed prop type: Invalid prop name of value '${name}' supplied to Icon, expected one of ${keys.toString()} is expected`
       )
     }
-  },
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  color: PropTypes.string
+  }
 }
 
 export default Icon

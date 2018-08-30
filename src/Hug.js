@@ -6,13 +6,8 @@ import Icon from './Icon'
 import Text from './Text'
 import theme from './theme'
 import styled from 'styled-components'
-import { responsiveStyle } from 'styled-system'
+import { display } from 'styled-system'
 import PropTypes from 'prop-types'
-
-const display = responsiveStyle({
-  prop: 'display',
-  cssProperty: 'display'
-})
 
 const HugCard = styled(Card)`
   border-top-left-radius: ${props => props.theme.radius};

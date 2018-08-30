@@ -14,7 +14,7 @@ const Link = styled.a`
 Link.displayName = 'Link'
 
 Link.propTypes = {
-  color: PropTypes.string
+  ...color.propTypes
 }
 
 Link.defaultProps = {
