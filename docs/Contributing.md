@@ -12,7 +12,7 @@ Contributing doesn't necessarily mean commiting code, we also encourage you to:
 - Use the Design System in your project and provide feedback
 
 
-### Local Development
+## Development
 
 To contribute code to the Design System, first you'll need to set it up for local development.
 
@@ -23,10 +23,18 @@ git clone https://github.com/pricelinelabs/design-system.git
 cd design-system
 ```
 
+### Lerna
+
+This repository uses [Lerna][] and is set up as a monorepo, with multiple npm packages in the `packages/` folder.
+
+[Lerna]: https://lernajs.io
+
 ### Install dependencies:
 
+In the root directory, use the Lerna `bootstrap` command to install dependencies and `npm link` any cross dependencies.
+
 ```sh
-npm install
+npm run bootstrap
 ```
 
 ### Running tests
@@ -60,10 +68,20 @@ npm start
 open http://localhost:8000/
 ```
 
+### Publishing
+
+To publish the packages to npm, you'll need to be added as an owner for the packages you're publishing. Use the #design-system Slack channel for more information.
+
+These Lerna commands can be helpful when publishing:
+
+- Run `npm run changed` to see which packages have changed since the last release.
+- Run `npm run diff` to see a diff of all packages since the last release.
+- Run `npm run publish` to publish the updated packages with Lerna.
+
+
 ### Static Docs Site
 
-Markdown and source code for the [static docs site](https://pricelinelabs.github.io/design-system/) are located in
-`docs/`. This [x0](https://www.npmjs.com/package/@compositor/x0) project requires Node 8+.
+Markdown and source code for the [static docs site](https://pricelinelabs.github.io/design-system/) are located in `docs/`.
 
 To run the static docs locally:
 

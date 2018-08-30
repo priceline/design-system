@@ -2,6 +2,10 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
+    "bootstrap": "lerna bootstrap",
+    "changed": "lerna changed",
+    "diff": "lerna diff",
+    "publish": "lerna publish",
     "test": "lerna run test"
   },
   "devDependencies": {
