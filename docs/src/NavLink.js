@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import NextLink from 'next/link'
 import { space, color, theme } from 'styled-system'
+import { withDocs } from 'mdx-docs'
 
 const Base = styled.a`
   display: block;
@@ -25,8 +26,12 @@ Base.defaultProps = {
   color: 'gray'
 }
 
-export default props => (
-  <NextLink {...props} passHref>
-    <Base>{props.children}</Base>
-  </NextLink>
+export default withDocs(
+  ({ basepath, menu, toggleMenu, closeMenu, routes, route, ...props }) => (
+    <NextLink {...props} passHref>
+      <Base className={props.href === route.path ? 'active' : undefined}>
+        {props.children}
+      </Base>
+    </NextLink>
+  )
 )

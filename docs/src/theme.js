@@ -31,8 +31,8 @@ export default {
   },
 
   MenuButton: {
-    color: blue,
-    backgroundColor: 'tomato'
+    padding: '8px',
+    color: blue
   },
 
   LiveCode: {

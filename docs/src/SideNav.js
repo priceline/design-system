@@ -1,13 +1,18 @@
 import React from 'react'
 import { Heading, Box } from 'pcln-design-system'
+import Link from 'next/link'
 import NavLink from './NavLink'
 import Logo from './Logo'
 import navigation from './navigation'
 
 export default props => (
   <Box px={3} pb={5} color="text" bg="lightGray">
-    <Box px={3} py={4}>
-      <Logo />
+    <Box px={3} pb={4}>
+      <Link href="/">
+        <div>
+          <Logo />
+        </div>
+      </Link>
     </Box>
     {navigation.map(
       section =>

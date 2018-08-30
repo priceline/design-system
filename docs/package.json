@@ -1,14 +1,15 @@
 {
   "private": true,
+  "name": "pcln-design-system-docs",
   "version": "1.0.0",
   "scripts": {
-    "start": "next",
+    "start": "next -p 3030",
     "build": "next build && next export"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0",
     "babel-loader": "^7.1.5",
-    "mdx-docs": "^1.0.0-3",
+    "mdx-docs": "^1.0.0-9",
     "next": "^6.1.1",
     "next-mdx-docs": "0.0.1-0",
     "pcln-design-system": "^1.0.0-69",
@@ -17,5 +18,7 @@
     "react-dom": "^16.4.1",
     "styled-components": "^3.3.3"
   },
-  "name": "docs"
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.5.1"
+  }
 }
