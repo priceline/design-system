@@ -1,6 +1,6 @@
-# FormField 
+# FormField
 
-Use `<FormField />` alias `<InputField/>` component to combine `<Input />` or `<Select />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
+Use the `<FormField />` component to combine `<Input />` or `<Select />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
 
 ```.jsx
 <FormField>
@@ -8,18 +8,20 @@ Use `<FormField />` alias `<InputField/>` component to combine `<Input />` or `<
   <Icon name='email' size='20' />
   <Input
     id='email'
+    name='email'
     defaultValue='oliver@example.com'
-    placeholder='Please enter an email address'
+    placeholder='hello@example.com'
   />
 </FormField>
 ```
+
 ```.jsx
 <FormField>
-  <Label htmlFor='form-field-4'>Select One</Label>
+  <Label htmlFor='options'>Select One</Label>
   <Icon name='key' size='20' />
   <Select
-    id='form-field-4'
-  >
+    id='options'
+    name='options'>
     <Option>A</Option>
     <Option>B</Option>
     <Option>C</Option>
@@ -81,14 +83,6 @@ All error handling should be performed by the parent component. An example of ho
 </Box>
 
 ```
-
-### Legacy Support
-This component can also be used in the form:
-```jsx
-  <FormField icon='email' label='Email Address' id='email-address-field'/>
-```
-
-This will throw a prop-types warning, though, since you should really be using the compound version of the component.
 
 ### Props
 Prop | Type | Description
