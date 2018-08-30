@@ -16,7 +16,7 @@ const Typography = props => (
       The design system includes base styles for typography and a typographic
       scale for determining font sizes.
     </Description>
-    <Box pt={4}>
+    <Box py={4}>
       {[...theme.fontSizes].reverse().map((fontSize, i) => (
         <Heading key={fontSize} fontSize={fontSize} mb={4} bold>
           <Truncate>
@@ -25,6 +25,12 @@ const Typography = props => (
           </Truncate>
         </Heading>
       ))}
+    </Box>
+    <Box py={4}>
+      <Heading mb={4}>Font Weight Regular</Heading>
+      <Heading bold mb={4}>
+        Font Weight Bold
+      </Heading>
     </Box>
   </Box>
 )

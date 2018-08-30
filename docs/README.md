@@ -1,5 +1,7 @@
 
-# mdx-docs
+# Priceline Design System Docs
+
+https://pricelinelabs.github.io/design-system/
 
 This project was built with [mdx-docs][] and [Next.js][]
 
@@ -21,21 +23,18 @@ npm start
 npm run build
 ```
 
+## Automatic deploys
+
+The docs site is automatically built with Travis CI on all merges into master.
+
 ## Adding Routes & Navigation
 
-Each file in the `pages/` directory will create a route for your application.
-To edit the navigation in the sidebar, change the `routes` array in the [`pages/_app.js`](pages/_app.js) component.
+Each file in the `pages/` directory will create a route.
+To update the navigation in the sidebar and pagination,
+edit the [`src/navigation.js`](src/navigation.js) module.
 
 For more information on how Next.js works, see the [Next.js Docs][Next.js].
 
-## Customizing
-
-To customize the look at feel of your application see the docs for mdx-docs:
-
-- [Theming Docs][docs-theming]
-- [Components Docs][docs-components]
-
-Built with [mdx-docs][]
 
 [mdx-docs]: https://github.com/jxnblk/mdx-docs
 [Next.js]: https://github.com/zeit/next.js/

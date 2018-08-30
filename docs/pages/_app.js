@@ -1,7 +1,7 @@
 import React from 'react'
 import App, { Container } from 'next/app'
 import { Layout, Pagination } from 'mdx-docs'
-import { ThemeProvider, Box, Relative } from 'pcln-design-system'
+import { ThemeProvider, Box } from 'pcln-design-system'
 import components from '../src/components'
 import docsTheme from '../src/theme'
 import navigation from '../src/navigation'
@@ -41,9 +41,7 @@ export default class MyApp extends App {
             }
             footer={<Pagination />}
           >
-            <Relative zIndex={-1}>
-              <Component {...page} />
-            </Relative>
+            <Component {...page} />
           </Layout>
         </ThemeProvider>
       </Container>

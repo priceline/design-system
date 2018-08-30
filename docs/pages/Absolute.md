@@ -7,7 +7,7 @@ This component is an extension of the [`<Box />`](https://pricelinelabs.github.i
 
 ```.jsx
 <Card>
-  <Relative p={2}>
+  <Relative p={2} zIndex={-1}>
     <Absolute top={10} right={2} zIndex={2}>X</Absolute>
     <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
   </Relative>

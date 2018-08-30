@@ -1,5 +1,5 @@
 import * as DS from 'pcln-design-system'
-import { Heading, Text, Link, BlockLink } from 'pcln-design-system'
+import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space, fontSize, color, theme } from 'styled-system'
 
@@ -77,6 +77,8 @@ Code.defaultProps = {
   fontSize: 2,
   color: 'blue'
 }
+
+export const ButtonLink = Button.withComponent('a')
 
 const components = {
   ...DS,

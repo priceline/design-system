@@ -1,17 +1,21 @@
 import { version } from '../../package.json'
-import Button from '../src/ButtonLink'
+import {
+  ButtonLink,
+  Code,
+  Description
+} from '../src/components'
 
 # Priceline One
 
-<p>
-  Priceline Design System <samp>v{version}</samp>
-</p>
+<Description>
+  Priceline Design System <Code>v{version}</Code>
+</Description>
 
 ## Sketch Kit
 
-<Button href='https://github.com/pricelinelabs/design-system-sketch/releases/latest'>
+<ButtonLink href='https://github.com/pricelinelabs/design-system-sketch/releases/latest'>
   Download Sketch Kit
-</Button>
+</ButtonLink>
 
 
 ## Getting Started
