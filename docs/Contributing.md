@@ -34,7 +34,7 @@ This repository uses [Lerna][] and is set up as a monorepo, with multiple npm pa
 In the root directory, use the Lerna `bootstrap` command to install dependencies and `npm link` any cross dependencies.
 
 ```sh
-npm run bootstrap
+npm install && npm run bootstrap
 ```
 
 ### Running tests
