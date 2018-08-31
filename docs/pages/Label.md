@@ -11,8 +11,9 @@ Styled form `<label>` element.
 ```
 
 ```.jsx
-<Label nowrap>
+<Label fontSize={1} nowrap>
   <Radio />
+  {' '}
   This label will not wrap
 </Label>
 ```

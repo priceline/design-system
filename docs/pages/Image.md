@@ -1,7 +1,7 @@
 
 # Image
 
-Use the `Image` component to render a primitive image that saves the aspect ratio.
+The `Image` component is a styled `<image>` element with `max-width: 100%`.
 
 ```.jsx
 <Image

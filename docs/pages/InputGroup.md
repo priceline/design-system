@@ -1,23 +1,23 @@
 
 # InputGroup
 
-Use the `InputGroup` component to wrap multiple Input or InputField components with only a single border style around child elements.
+Use the `InputGroup` component to wrap multiple `Input` or `FormField` components with only a single border style around child elements.
 This can be used for date range inputs that look like a single input.
 
 ```.jsx
 <InputGroup>
-  <InputField>
+  <FormField>
     <Label>Where from?</Label>
     <Input
       placeholder='Where from?'
     />
-  </InputField>
-  <InputField>
+  </FormField>
+  <FormField>
     <Label>Where to?</Label>
     <Input
       placeholder='Where to?'
     />
-  </InputField>
+  </FormField>
 </InputGroup>
 ```
 

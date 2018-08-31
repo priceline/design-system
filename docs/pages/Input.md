@@ -1,7 +1,7 @@
 
 # Input
 
-Use `Input` component to create a styled `<input>` element.
+The `Input` component is a styled `<input>` element.
 It accepts all native HTML attributes for the element.
 
 ```.jsx

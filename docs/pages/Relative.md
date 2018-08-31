@@ -7,17 +7,9 @@ This component is an extension of the
 [`Box`](https://pricelinelabs.github.io/design-system/Box) component and inherits its props.
 
 ```.jsx
-<Card>
-  <Relative p={2}>
-    <Absolute top={10} right={2} zIndex={2}>
-      <CloseButton />
-    </Absolute>
-    <Text pr={2}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </Text>
-  </Relative>
-</Card>
+<Relative p={2}>
+  Relative postioned
+</Relative>
 ```
 
 ## Props

@@ -1,24 +1,28 @@
 
 # IconButton
 
-This component extends the `Icon` component, by allowing an `onClick` handler to be passed in as a prop.
-Hovering over the `IconButton` changes the cursor to a pointer.
+The `IconButton` component is a `<button>` element with icon.
 
 ```.jsx
 <IconButton
   name='flame'
   size={24}
-  color='blue'
+  color='orange'
+  title='Set on fire'
   onClick={() => {}}
 />
 ```
+
+Be sure to include a `title` attribute for accessibility.
 
 ## Props
 
 Prop | Type | Description
 ---|---|---
+`title` | string | HTML `title` attribute
 `onClick` | function | Sets a function to execute on click
 
-## Extensions
+### Related
 
-- [`CloseButton`](/CloseButton)
+- [Icon](/Icon)
+- [CloseButton](/CloseButton)
