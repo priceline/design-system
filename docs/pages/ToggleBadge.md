@@ -12,6 +12,8 @@ Use the `ToggleBadge` component to render a primitive badge.
 </ToggleBadge>
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
 `selected` | boolean | Gives different background color

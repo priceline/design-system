@@ -3,6 +3,8 @@
 
 The `Heading` component is an extension of the [`Text`](/Text) component intended for headings.
 
+**Extends: [Text](/Text)**
+
 ```.jsx
 <Heading>Hello</Heading>
 ```

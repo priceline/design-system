@@ -19,6 +19,8 @@ Use the `Flag` component for stylized merchandising messages.
 </Card>
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
 `color` | string | Text color

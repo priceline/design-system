@@ -17,7 +17,8 @@ and setting `bottom` will render the arrow pointing up.
 The physical position of the tooltip is dependent on its place in the code.
 Put it directly before the element to go on top, after it to go on bottom.
 
-### Props
+## Props
+
 Prop | Type | Description
 ---|---|---
 `bg` | string | Background color

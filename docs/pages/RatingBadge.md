@@ -3,6 +3,8 @@
 
 Used in the hotel listing for guest ratings.
 
+**Extends: [Box](/Box)**
+
 ```.jsx
 <RatingBadge>
   9.0

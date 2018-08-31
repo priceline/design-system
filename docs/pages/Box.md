@@ -43,6 +43,26 @@ Background color green from the theme's color palette
 </Box>
 ```
 
+## Responsive Widths
+
+The `width` prop accepts an array value to set different widths at different breakpoints with a mobile-first approach.
+
+```.jsx
+<Box
+  width={[
+    1,    // Sets width 100% at the smallest breakpoint
+    1/2,  // Sets width 50% at the next breakpoint
+    1/4,  // Sets width 25% at the next breakpoint
+  ]}
+  bg='gray'>
+  Hello
+</Box>
+```
+
+See [styled-system](https://github.com/jxnblk/styled-system) for more documentation.
+
+## Props
+
 Prop | Type | Description
 ---|---|---
 `width` | number, string, or array | Sets the width of the element
@@ -64,20 +84,3 @@ Prop | Type | Description
 `py` | number, string, or array | Sets padding-top and padding-bottom
 
 
-## Responsive Widths
-
-The `width` prop accepts an array value to set different widths at different breakpoints with a mobile-first approach.
-
-```.jsx
-<Box
-  width={[
-    1,    // Sets width 100% at the smallest breakpoint
-    1/2,  // Sets width 50% at the next breakpoint
-    1/4,  // Sets width 25% at the next breakpoint
-  ]}
-  bg='gray'>
-  Hello
-</Box>
-```
-
-See [styled-system](https://github.com/jxnblk/styled-system) for more documentation.

@@ -17,6 +17,8 @@ Use the `BackgroundImage` component to set a background image.
 </BackgroundImage>
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
 `image` | string | URI for background image

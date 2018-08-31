@@ -1,7 +1,9 @@
 
 # Truncate
 
-Use the `Truncate` component is an extension of the `Text` component to truncate long strings of text with an ellipsis.
+Truncates long strings of text with an ellipsis.
+
+**Extends: [Text](/Text)**
 
 ```.jsx
 <Truncate>

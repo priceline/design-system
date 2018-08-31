@@ -11,6 +11,8 @@ Use the `Container` component to center content horizontally with a max-width.
 </Container>
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|--- | ---
 `maxWidth` | Number | Sets `max-width` (default `1280px`)

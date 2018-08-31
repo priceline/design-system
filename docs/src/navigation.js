@@ -44,8 +44,7 @@ export default [
       { name: 'Text', path: '/Text' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
-      { name: 'Truncate', path: '/Truncate' },
-      { name: 'Theme', path: '/Theme' }
+      { name: 'Truncate', path: '/Truncate' }
     ]
   },
   {

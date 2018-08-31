@@ -25,6 +25,8 @@ Divider will be colored blue from the theme's color palette
 <Divider borderColor='blue' />
 ```
 
+## Props
+
 Prop | Type | Description
 ---|---|---
 `width` | number, string, or array | Sets the width of the element

@@ -3,15 +3,11 @@
 
 Use the `Text` component to control font size, weight, alignment, and color.
 
-Font size 4 on the typographic scale
-
 ```.jsx
 <Text fontSize={4}>
   Text
 </Text>
 ```
-
-Center aligned
 
 ```.jsx
 <Text textAlign='center'>
@@ -19,15 +15,11 @@ Center aligned
 </Text>
 ```
 
-Bold weight
-
 ```.jsx
 <Text bold>
   Bold Text
 </Text>
 ```
-
-All-caps
 
 ```.jsx
 <Text caps>
@@ -35,12 +27,21 @@ All-caps
 </Text>
 ```
 
-Blue text from the color palette
-
 ```.jsx
 <Text color='blue'>
   Blue Text
 </Text>
+```
+
+## HTML Elements
+
+By default, the `<Text />` component renders a `<div>` element.
+To use a `<span>` or `<p>` element, use the following:
+
+```.jsx
+<Text.span>This is a span element</Text.span>
+<Text.p>This is a p element</Text.p>
+<Text.s>This is an s element</Text.s>
 ```
 
 ## Props
@@ -62,13 +63,3 @@ Prop | Type | Description
 `mx` | number, string, or array | Sets margin-left and margin-right
 `my` | number, string, or array | Sets margin-top and margin-bottom
 
-## HTML Elements
-
-By default, the `<Text />` component renders a `<div>` element.
-To use a `<span>` or `<p>` element, use the following:
-
-```.jsx
-<Text.span>This is a span element</Text.span>
-<Text.p>This is a p element</Text.p>
-<Text.s>This is an s element</Text.s>
-```

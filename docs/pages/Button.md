@@ -9,14 +9,6 @@ Buttons make common actions immediately visible and easy to perform with one cli
 </Button>
 ```
 
-Prop | Type | Description
----|---|---
-`radius` | string | Custom button radius in pixel
-`size` | string | Sets button size to small, medium or large
-`fullWidth` | boolean | Sets button width to fullWidth
-
-### Sizes
-
 ```.jsx
 <div>
   <Button size='large' mr={2}>
@@ -31,7 +23,15 @@ Prop | Type | Description
 </div>
 ```
 
-### Colors
+## Props
+
+Prop | Type | Description
+---|---|---
+`radius` | string | Custom button radius in pixel
+`size` | string | Sets button size to small, medium or large
+`fullWidth` | boolean | Sets button width to fullWidth
+
+## GreenButton
 
 ```.jsx
 <GreenButton>
@@ -39,13 +39,15 @@ Prop | Type | Description
 </GreenButton>
 ```
 
+## RedButton
+
 ```.jsx
 <RedButton>
   RedButton
 </RedButton>
 ```
 
-### OutlineButton
+## OutlineButton
 
 ```.jsx
 <OutlineButton>

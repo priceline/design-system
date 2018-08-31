@@ -2,7 +2,8 @@
 # Card
 
 Use `Card` component to control box-shadow.
-This component is an extension of the `Box` component.
+
+**Extends: [Box](/Box)**
 
 ```.jsx
 <Card p={4}>
@@ -19,6 +20,8 @@ This component is an extension of the `Box` component.
   With box shadow
 </Card>
 ```
+
+## Props
 
 Prop | Type | Description
 ---|---|---

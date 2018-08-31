@@ -61,9 +61,7 @@ export const PageTitle = props => (
   <Heading.h1 fontSize={[5, 6]} bold mt={[2, 5]} mb={3} {...props} />
 )
 
-export const Description = props => (
-  <Text fontSize={[2, 3]} mb={3} color="gray" {...props} />
-)
+export const Description = props => <Text fontSize={[2, 3]} mb={3} {...props} />
 
 export const Code = styled.code`
   font-family: 'Roboto Mono', monospace;

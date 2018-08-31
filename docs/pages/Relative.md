@@ -3,8 +3,7 @@
 Use `Relative` component to control position and to act as a
 parent/ancestor to an `Absolute` element.
 
-This component is an extension of the
-[`Box`](https://pricelinelabs.github.io/design-system/Box) component and inherits its props.
+**Extends: [Box](/Box)**
 
 ```.jsx
 <Relative p={2}>

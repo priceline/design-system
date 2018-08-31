@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0",
+    "@mdx-js/tag": "^0.15.0",
     "mdx-docs": "^1.0.0-9",
     "pcln-design-system": "^1.0.0-69",
     "prop-types": "^15.6.2",
@@ -16,9 +17,14 @@
     "styled-components": "^3.3.3"
   },
   "devDependencies": {
+    "@mdx-js/loader": "^0.15.0",
     "babel-loader": "^7.1.5",
     "babel-plugin-styled-components": "^1.5.1",
     "next": "^6.1.1",
-    "next-mdx-docs": "0.0.1-0"
+    "next-mdx-docs": "0.0.1-0",
+    "remark-autolink-headings": "^5.0.0",
+    "remark-emoji": "^2.0.1",
+    "remark-images": "^0.8.1",
+    "remark-slug": "^5.1.0"
   }
 }

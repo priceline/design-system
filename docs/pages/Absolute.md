@@ -1,9 +1,9 @@
 
 # Absolute
 
-Use `Absolute` component to control position. Use with a `<Relative>` parent/ancestor.
+Use `Absolute` component to control position. Use with a `Relative` parent/ancestor.
 
-This component is an extension of the [`Box`](https://pricelinelabs.github.io/design-system/Box) component. It inherits `Box` props.
+**Extends: [Box](/Box)**
 
 ```.jsx
 <Relative
@@ -22,6 +22,8 @@ This component is an extension of the [`Box`](https://pricelinelabs.github.io/de
 ```
 
 Note: `zIndex` is set for documentation purposes only. Generally you should avoid using `zIndex` with positioning.
+
+## Props
 
 Prop | Type | Description
 ---|---|---
