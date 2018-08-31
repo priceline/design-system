@@ -1,36 +1,16 @@
 
 # Heading
 
-Use the `Heading` component to use HTML heading h1-h6 element, with all the `Text` props.
-
-Heading with default h3 element and style
+The `Heading` component is an extension of the [`Text`](/Text) component intended for headings.
 
 ```.jsx
 <Heading>Hello</Heading>
 ```
 
-Heading with h1 element
-
-```.jsx
-<Heading.h1>Hello</Heading.h1>
-```
-
-Heading with `<Text />` props
-
-```.jsx
-<Heading.h5 m={3} bold>Hello</Heading.h5>
-```
-
-## Props
-
-Prop | Type | Description
----|---|---
-`fontSize` | number or string | Sets heading font size based on the typographic scale
-
-## Heading Elements
+## HTML Heading Elements
 
 By default, the `Heading` component renders an `<h3>` element with default font size 24px.
-To use h1-h5 element, use the following:
+To use a different heading level, use the following:
 
 ```.jsx
 <Heading.h1>This is a h1 element</Heading.h1>
@@ -41,7 +21,15 @@ To use h1-h5 element, use the following:
 <Heading.h6>This is a h6 element</Heading.h6>
 ```
 
-All the `Text` component props are supported. For example:
+## Examples
+
+```.jsx
+<Heading.h1>Hello</Heading.h1>
+```
+
+```.jsx
+<Heading.h5 m={3} bold>Hello</Heading.h5>
+```
 
 ```.jsx
 <Heading.h2 color='purple'>Purple</Heading.h2>

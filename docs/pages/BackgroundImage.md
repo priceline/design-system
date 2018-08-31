@@ -5,13 +5,19 @@ Use the `BackgroundImage` component to set a background image.
 
 ```.jsx
 <BackgroundImage
-  height='256px'
-  image='https://source.unsplash.com/bITjK6W2Alw/1024x768?q=20'>
-  <Heading color="white">Hello</Heading>
+  image='https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1024&q=20'>
+  <Box p={4}>
+    <Heading
+      fontSize={6}
+      align='center'
+      color='white'>
+      Hello
+    </Heading>
+  </Box>
 </BackgroundImage>
 ```
 
 Prop | Type | Description
 ---|---|---
-image | string | URI for background image
-height | string | CSS value for height
+`image` | string | URI for background image
+`height` | string | CSS value for height

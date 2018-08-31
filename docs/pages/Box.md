@@ -45,23 +45,23 @@ Background color green from the theme's color palette
 
 Prop | Type | Description
 ---|---|---
-width | number, string, or array | Sets the width of the element
-color | string | Sets color based on the theme's color palette
-bg | string | Sets background-color based on the theme's color palette
-m | number, string, or array | Sets margin based on the `theme.space` scale
-mt | number, string, or array | Sets margin-top
-mr | number, string, or array | Sets margin-right
-mb | number, string, or array | Sets margin-bottom
-ml | number, string, or array | Sets margin-left
-mx | number, string, or array | Sets margin-left and margin-right
-my | number, string, or array | Sets margin-top and margin-bottom
-p | number, string, or array | Sets padding based on the `theme.space` scale
-pt | number, string, or array | Sets padding-top
-pr | number, string, or array | Sets padding-right
-pb | number, string, or array | Sets padding-bottom
-pl | number, string, or array | Sets padding-left
-px | number, string, or array | Sets padding-left and padding-right
-py | number, string, or array | Sets padding-top and padding-bottom
+`width` | number, string, or array | Sets the width of the element
+`color` | string | Sets color based on the theme's color palette
+`bg` | string | Sets background-color based on the theme's color palette
+`m` | number, string, or array | Sets margin based on the `theme.space` scale
+`mt` | number, string, or array | Sets margin-top
+`mr` | number, string, or array | Sets margin-right
+`mb` | number, string, or array | Sets margin-bottom
+`ml` | number, string, or array | Sets margin-left
+`mx` | number, string, or array | Sets margin-left and margin-right
+`my` | number, string, or array | Sets margin-top and margin-bottom
+`p` | number, string, or array | Sets padding based on the `theme.space` scale
+`pt` | number, string, or array | Sets padding-top
+`pr` | number, string, or array | Sets padding-right
+`pb` | number, string, or array | Sets padding-bottom
+`pl` | number, string, or array | Sets padding-left
+`px` | number, string, or array | Sets padding-left and padding-right
+`py` | number, string, or array | Sets padding-top and padding-bottom
 
 
 ## Responsive Widths

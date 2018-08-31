@@ -22,14 +22,14 @@ Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon
   <Select
     id='options'
     name='options'>
-    <Option>A</Option>
-    <Option>B</Option>
-    <Option>C</Option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
   </Select>
 </FormField>
 ```
 
-## Usage Notes
+## Usage
 
 This component accepts up to 4 components as children.
 Up to two of them can be `Icon`s, one `Input` or `Select`, and one `Label`.
@@ -43,54 +43,30 @@ Make sure to provide an `id` prop to this component, otherwise you will run into
 One `Icon` can go _before_, and one `Icon` can go _after_ the `Input` component.
 Anything else will result in a prop-type warning.
 
-## Error Handling
+## Error Messages
 
-All error handling should be performed by the parent component.
-An example of how one might accomplish this is below.
+Error messages can be displayed using the [`Tooltip`](/Tooltip) component.
 
-```jsx
-<Box width={1/2} bg='white'>
-  <FormField>
-    <Icon name='search' color='blue' size={18} />
-    <Input
-      id='some-input'
-      autoComplete='off'
-      color={this.props.errorMessage ? 'red' : null}
-      placeholder='Placeholder text'
-      label='Some Input Field'
-      hasError={!!this.props.errorMessage}
-      aria-describedby={
-        this.props.errorMessage && this.props.isUsingErrorMessage
-          ? 'some-input-error'
-          : null
-      }
-      aria-invalid={!!this.props.errorMessage}
-      maxLength={60}
-      value={this.state.typeAheadContent}
-      onChange={this.handleInputChange}
-      onKeyDown={this.handleInputKeyDown}
-      onClick={this.handleInputClick}
-    />
-    {this.props.errorMessage && <Icon name='warning' color='red' size={20} />}
-  </FormField>
-  {this.props.errorMessage &&
-    <Tooltip
-      id='some-input-error'
-      bottom
-      right
-      color='white'
-      bg='red'
-    >
-      {this.props.errorMessage}
-    </Tooltip>
-  }
-</Box>
+```.jsx
+<FormField>
+  <Input
+    value='hello@example'
+  />
+  <Icon name='warning' color='red' />
+</FormField>
+<Tooltip
+  bottom
+  right
+  color='white'
+  bg='red'>
+  Invalid Email Address
+</Tooltip>
 ```
 
 ## Props
 
 Prop | Type | Description
 ---|---|---
-`children` | array of components | Up to 4 components, two of which can be `<Icon/>`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported.
+`children` | React elements | Up to 4 components, two of which can be `<Icon/>`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported.
 `alwaysShowLabel` | boolean | Determines whether or not the label shows up statically
 

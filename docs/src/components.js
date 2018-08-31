@@ -27,33 +27,30 @@ const Table = styled(props => (
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
+
   ${space} & th {
     text-align: left;
     background-color: #f6f8fa;
-    padding: 0 16px;
-  }
-
-  & td:first-child {
-    font-family: 'Roboto Mono', Menlo, monospace;
-    font-size: 16px;
-    min-width: 150px;
-    color: ${theme('colors.blue')};
+    vertical-align: bottom;
   }
 
   & td {
-    font-size: 16px;
-    color: ${theme('colors.text')};
-    vertical-align: middle;
-    padding: 0 16px !important;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.borderGray')};
+    vertical-align: top;
+    &:first-child {
+      min-width: 128px;
+    }
   }
 
   & th,
   & td {
-    height: 72px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     line-height: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: ${theme('colors.borderGray')};
   }
 `
 Table.defaultProps = {
