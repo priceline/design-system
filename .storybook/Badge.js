@@ -21,8 +21,12 @@ storiesOf('Badge', module)
       <Badge bg="lightRed">lightRed</Badge>
       <Badge bg="orange">orange</Badge>
       <Badge bg="lightOrange">lightOrange</Badge>
+      <Badge bg="text" color="white">
+        text (custom)
+      </Badge>
     </div>
   ))
+  .add('default', () => <Badge>default</Badge>)
   .add('blue', () => <Badge bg="blue">blue</Badge>)
   .add('lightBlue', () => <Badge bg="lightBlue">lightBlue</Badge>)
   .add('green', () => <Badge bg="green">green</Badge>)
@@ -31,3 +35,13 @@ storiesOf('Badge', module)
   .add('lightRed', () => <Badge bg="lightRed">lightRed</Badge>)
   .add('orange', () => <Badge bg="orange">orange</Badge>)
   .add('lightOrange', () => <Badge bg="lightOrange">lightOrange</Badge>)
+  .add('text (custom)', () => (
+    <Badge bg="text" color="white">
+      text (custom)
+    </Badge>
+  ))
+  .add('lightBlue and text (custom)', () => (
+    <Badge bg="lightBlue" color="text">
+      lightBlue and text (custom)
+    </Badge>
+  ))
