@@ -1,7 +1,8 @@
 
 # Link
 
-Use the `<Link />` component to set the HTML `<a>` element (or anchor element) to create a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.
+The `Link` component is a styled `<a>` element.
+Use it as you would use any other link.
 
 ```.jsx
 <Link href='https://www.priceline.com/home/'>

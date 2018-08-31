@@ -1,7 +1,7 @@
 
 # Hide
 
-A Box component extension to set `display: none` between specific breakpoints.
+A `Box` component extension to set `display: none` between specific breakpoints.
 This component's props work differently than other mobile-first min-width
 media queries since it's often useful to hide an element only at certain breakpoints.
 

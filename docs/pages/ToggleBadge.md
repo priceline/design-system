@@ -1,7 +1,7 @@
 
 # ToggleBadge
 
-Use the `<ToggleBadge />` component to render a primitive badge.
+Use the `ToggleBadge` component to render a primitive badge.
 
 ```.jsx
 <ToggleBadge selected>

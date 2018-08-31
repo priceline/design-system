@@ -1,7 +1,7 @@
 
 # Divider
 
-`<Divider />` is a styled `<hr />`.
+The `Divider` component is a styled `<hr>`.
 
 ```.jsx
 <Divider />

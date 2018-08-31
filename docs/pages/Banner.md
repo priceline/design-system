@@ -1,21 +1,27 @@
 
 # Banner
 
-Use `<Banner />` component to create a box with a optional header, text, optional left-hand icon, optional right-hand close button, and palette color scheme.
+Use `Banner` component to create a box with a optional header, text, optional left-hand icon, optional right-hand close button, and palette color scheme.
 
 ```.jsx
 <Banner
+  showIcon={false}
   bg='lightBlue'
-  onClose={() => {}}
   p={2}>
-  <Icon name='flame' />
-  Are Your Dates Correct?
-  Remember to double check the calendar because availability may change depending on your dates.
+  <Flex>
+    <Icon name='flame' />
+    <Box pl={2}>
+      <Heading fontSize={2} bold>Are Your Dates Correct?</Heading>
+      <Text>
+        Remember to double check the calendar because availability may change depending on your dates.
+      </Text>
+    </Box>
+  </Flex>
 </Banner>
 ```
 
 ```.jsx
-<Banner p={2} showIcon={false}>
+<Banner px={3} py={2} showIcon={false}>
   This banner is rendering children instead of the text prop
 </Banner>
 ```

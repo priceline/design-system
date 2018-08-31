@@ -53,20 +53,17 @@ class App extends React.Component {
 }
 ```
 
-```jsx
-// Example usage with styled-components
-import styled from 'styled-components'
+## Montserrat font
 
-const Section = styled.section`
-  background-color: ${props => props.theme.blue};
-`
+To use the Montserrat font-family in you project, be sure to include a link in your document `<head>`.
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 ```
 
 ## Primitive UI Components
 
-The preferred way of using the design system in a React application is with UI primitives.
-With effective use of the UI primitives, you can reduce the need to write custom CSS in your application.
-
+Import and use the design system UI components in your application.
 
 ```jsx
 import React from 'react'

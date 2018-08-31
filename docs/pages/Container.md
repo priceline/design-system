@@ -1,9 +1,9 @@
 
 # Container
 
-The `<Container />` component is used to align the app body at the center of screen.
+The `Container` component is used to align the app body at the center of screen.
 
-If you'd like to add padding or margin, please use `<Box />` inside it.
+If you'd like to add padding or margin, please use `Box` inside it.
 
 ```.jsx
 <Container maxWidth={786} >

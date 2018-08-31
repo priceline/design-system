@@ -1,7 +1,7 @@
 
 # BackgroundImage
 
-Use the `<BackgroundImage />` component to set a background image.
+Use the `BackgroundImage` component to set a background image.
 
 ```.jsx
 <BackgroundImage

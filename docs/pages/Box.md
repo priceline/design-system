@@ -1,12 +1,12 @@
 
 # Box
 
-Use the `<Box />` component to control width, margin, padding, and color.
+Use the `Box` component to control width, margin, padding, and color.
 
 50% width
 
 ```.jsx
-<Box width={1/2} bg='lightGray'>
+<Box width={1/2} bg='blue'>
   Box
 </Box>
 ```
@@ -14,7 +14,7 @@ Use the `<Box />` component to control width, margin, padding, and color.
 Padding of `theme.space[3]` (16px)
 
 ```.jsx
-<Box p={3} bg='lightGray'>
+<Box p={3} bg='blue'>
   Box
 </Box>
 ```
@@ -22,7 +22,7 @@ Padding of `theme.space[3]` (16px)
 Margin of `theme.space[2]` (8px)
 
 ```.jsx
-<Box m={4} bg='lightGray'>
+<Box m={4} bg='blue'>
   Box
 </Box>
 ```

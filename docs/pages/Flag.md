@@ -1,10 +1,10 @@
 
 # Flag
 
-Use the `<Flag />` component for stylized merchandising messages.
+Use the `Flag` component for stylized merchandising messages.
 
 ```.jsx
-<Card>
+<Card py={3}>
   <Flag>
     Hello
   </Flag>
@@ -12,7 +12,7 @@ Use the `<Flag />` component for stylized merchandising messages.
 ```
 
 ```.jsx
-<Card>
+<Card py={3}>
   <Flag width={192} bg='purple'>
     Hello
   </Flag>

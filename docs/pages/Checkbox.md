@@ -1,25 +1,25 @@
 # Checkbox
 
-Use the `<Checkbox />` component as a styled version of the HTML <input type="checkbox">
+Use the `Checkbox` component as a styled version of the HTML `<input type="checkbox">`
 
-## Usage Notes
+## Usage
 
-- Labels will "naturally" pass through a click to the input (standard HTML)
-- Works as expected in forms.
-- "defaultChecked" is used instead of "checked" because it's an uncontrolled compoment
+Wrap the `Radio` component with the `Label` component to create a form control.
+
+Note: `defaultChecked` is used in the example as an uncontrolled component.
 
 ```.jsx
-<Label htmlFor="another_checkbox">
-  <Checkbox id="another_checkbox" />
+<Label htmlFor='another_checkbox'>
+  <Checkbox id='another_checkbox' />
 </Label>
 
-<Label htmlFor="pre_checked">
-  <Checkbox defaultChecked id="pre_checked" />
+<Label htmlFor='pre_checked'>
+  <Checkbox defaultChecked id='pre_checked' />
   Text Next to Checkbox
 </Label>
 
-<Label htmlFor="pre_checked">
-  <Checkbox disabled id="pre_checked" />
+<Label htmlFor='pre_checked'>
+  <Checkbox disabled id='pre_checked' />
   I am Disabled
 </Label>
 ```

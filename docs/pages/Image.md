@@ -1,7 +1,7 @@
 
 # Image
 
-Use the `<Image />` component to render a primitive image that saves the aspect ratio.
+Use the `Image` component to render a primitive image that saves the aspect ratio.
 
 ```.jsx
 <Image

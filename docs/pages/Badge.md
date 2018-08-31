@@ -1,7 +1,7 @@
 
 # Badge
 
-Use the `<Badge />` component to render a primitive badge.
+Use the `Badge` component to render a primitive badge.
 
 ```.jsx
 <Badge bg='blue'>

@@ -1,6 +1,6 @@
 # Radio
 
-Use the `<Radio />` component to set the HTML `<input type='radio' />` element. Use it with `<Label />` .
+Use the `Radio` component to set the HTML `<input type='radio' />` element. Use it with `Label` .
 
 ```.jsx
 <Label fontSize={1}>

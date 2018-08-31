@@ -1,6 +1,6 @@
 # FormField
 
-Use the `<FormField />` component to combine `<Input />` or `<Select />`, `<Label />`, and `<Icon />` components into a flexible input field that matches the style guide.
+Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon` components into a single input field.
 
 ```.jsx
 <FormField>
@@ -31,19 +31,22 @@ Use the `<FormField />` component to combine `<Input />` or `<Select />`, `<Labe
 
 ## Usage Notes
 
-This component accepts up to 4 components as children. Up to two of them can be `<Icon />`s, one can be an `<Input />` or `<Select />`, and one can be a `<Label />`.
+This component accepts up to 4 components as children.
+Up to two of them can be `Icon`s, one `Input` or `Select`, and one `Label`.
 
-### `<Input />` or `<Select />`
+### `Input` or `Select`
 
 Make sure to provide an `id` prop to this component, otherwise you will run into accessibility issues.
 
-### `<Icon />`
+### `Icon`
 
-One `<Icon />` can go _before_, and one `<Icon />` can go _after_ the `<Input />` component. Anything else will result in a prop-type warning.
+One `Icon` can go _before_, and one `Icon` can go _after_ the `Input` component.
+Anything else will result in a prop-type warning.
 
 ## Error Handling
 
-All error handling should be performed by the parent component. An example of how one might accomplish this is below.
+All error handling should be performed by the parent component.
+An example of how one might accomplish this is below.
 
 ```jsx
 <Box width={1/2} bg='white'>

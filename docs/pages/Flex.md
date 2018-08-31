@@ -1,7 +1,7 @@
 
 # Flex
 
-The `<Flex />` component is an extension of the `<Box />` component with `display: flex` and props for using flexbox.
+The `Flex` component is an extension of the `Box` component with `display: flex` and props for using flexbox.
 
 ```.jsx
 <Flex>

@@ -1,7 +1,7 @@
 
 # Heading
 
-Use the `<Heading />` component to use HTML heading h1-h6 element, with all the `<Text />` props.
+Use the `Heading` component to use HTML heading h1-h6 element, with all the `Text` props.
 
 Heading with default h3 element and style
 
@@ -29,7 +29,7 @@ Prop | Type | Description
 
 ## Heading Elements
 
-By default, the `<Heading />` component renders a `<h3>` element with default font size 24px.
+By default, the `Heading` component renders an `<h3>` element with default font size 24px.
 To use h1-h5 element, use the following:
 
 ```.jsx
@@ -41,7 +41,7 @@ To use h1-h5 element, use the following:
 <Heading.h6>This is a h6 element</Heading.h6>
 ```
 
-All the `<Text />` component props are supported. For example:
+All the `Text` component props are supported. For example:
 
 ```.jsx
 <Heading.h2 color='purple'>Purple</Heading.h2>

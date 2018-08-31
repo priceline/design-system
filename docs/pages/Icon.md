@@ -1,7 +1,7 @@
 
 # Icon
 
-Use the `<Icon />` component for SVG icons.
+Use the `Icon` component for SVG icons.
 
 ```.jsx
 <Icon

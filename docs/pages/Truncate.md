@@ -1,7 +1,7 @@
 
 # Truncate
 
-Use the `<Truncate />` component is an extension of the `Text` component with pure CSS solution to truncate long string with ellipsis.
+Use the `Truncate` component is an extension of the `Text` component to truncate long strings of text with an ellipsis.
 
 ```.jsx
 <Truncate>
