@@ -20,6 +20,7 @@ export default [
       { name: 'Button', path: '/Button' },
       { name: 'Card', path: '/Card' },
       { name: 'Checkbox', path: '/Checkbox' },
+      { name: 'CloseButton', path: '/CloseButton' },
       { name: 'Container', path: '/Container' },
       { name: 'Divider', path: '/Divider' },
       { name: 'Flag', path: '/Flag' },

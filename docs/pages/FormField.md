@@ -34,13 +34,8 @@ Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon
 This component accepts up to 4 components as children.
 Up to two of them can be `Icon`s, one `Input` or `Select`, and one `Label`.
 
-### `Input` or `Select`
-
-Make sure to provide an `id` prop to this component, otherwise you will run into accessibility issues.
-
-### `Icon`
-
-One `Icon` can go _before_, and one `Icon` can go _after_ the `Input` component.
+- `Input` or `Select`: Make sure to provide an `id` prop to this component, otherwise you will run into accessibility issues.
+- `Icon`: One `Icon` can go _before_, and one `Icon` can go _after_ the `Input` component.
 Anything else will result in a prop-type warning.
 
 ## Error Messages
