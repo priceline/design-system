@@ -29,25 +29,11 @@ describe('Badge', () => {
     expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
-  test('bg lightRed sets background-color and color', () => {
-    const json = renderer.create(<Badge bg="lightRed" />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightRed)
-    expect(json).toHaveStyleRule('color', theme.colors.darkRed)
-  })
-
   test('bg orange sets background-color and color', () => {
     const json = renderer.create(<Badge bg="orange" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.orange)
     expect(json).toHaveStyleRule('color', theme.colors.text)
-  })
-
-  test('bg lightOrange sets background-color and color', () => {
-    const json = renderer.create(<Badge bg="lightOrange" />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightOrange)
-    expect(json).toHaveStyleRule('color', theme.colors.darkOrange)
   })
 
   test('bg blue sets background-color and color', () => {

@@ -2,9 +2,9 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Box, Flex, Text, theme } from '../src'
 
-const keys = Object.keys(theme.colors).filter(
-  key => !Array.isArray(theme.colors[key])
-)
+const blacklist = ['lightOrange', 'darkPurple', 'darkRed']
+
+const keys = Object.keys(theme.colors).filter(key => !blacklist.includes(key))
 
 const next = keys.map(key => ({ key, value: theme.colors[key] }))
 

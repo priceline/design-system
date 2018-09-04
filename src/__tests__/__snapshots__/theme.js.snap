@@ -17,7 +17,7 @@ Object {
   ],
   "colorStyles": Object {
     "blueOnLightBlue": Object {
-      "backgroundColor": "#cdf",
+      "backgroundColor": "#e8f2ff",
       "color": "#007aff",
     },
     "blueOnWhite": Object {
@@ -30,10 +30,10 @@ Object {
     },
     "grayOnWhite": Object {
       "backgroundColor": "#fff",
-      "color": "#687B8E",
+      "color": "#4f6f8f",
     },
     "greenOnLightGreen": Object {
-      "backgroundColor": "#cec",
+      "backgroundColor": "#ecf7ec",
       "color": "#0a0",
     },
     "greenOnWhite": Object {
@@ -41,11 +41,11 @@ Object {
       "color": "#0a0",
     },
     "info": Object {
-      "backgroundColor": "#f6f8fa",
+      "backgroundColor": "#f4f6f8",
       "color": "#001833",
     },
     "purpleOnLightPurple": Object {
-      "backgroundColor": "#ecf",
+      "backgroundColor": "#f5ebfa",
       "color": "#70b",
     },
     "purpleOnWhite": Object {
@@ -53,7 +53,7 @@ Object {
       "color": "#70b",
     },
     "redOnLightRed": Object {
-      "backgroundColor": "#fcc",
+      "backgroundColor": "#fbebeb",
       "color": "#c00",
     },
     "redOnWhite": Object {
@@ -65,15 +65,15 @@ Object {
       "color": "#fff",
     },
     "textOnLightGray": Object {
-      "backgroundColor": "#f6f8fa",
+      "backgroundColor": "#f4f6f8",
       "color": "#001833",
     },
     "textOnLightOrange": Object {
-      "backgroundColor": "#feb",
+      "backgroundColor": "#f68013",
       "color": "#001833",
     },
     "textOnOrange": Object {
-      "backgroundColor": "#fa0",
+      "backgroundColor": "#f68013",
       "color": "#001833",
     },
     "textOnWhite": Object {
@@ -81,7 +81,7 @@ Object {
       "color": "#001833",
     },
     "warning": Object {
-      "backgroundColor": "#fa0",
+      "backgroundColor": "#f68013",
       "color": "#001833",
     },
     "whiteOnBlue": Object {
@@ -89,7 +89,7 @@ Object {
       "color": "#fff",
     },
     "whiteOnGray": Object {
-      "backgroundColor": "#687B8E",
+      "backgroundColor": "#4f6f8f",
       "color": "#fff",
     },
     "whiteOnGreen": Object {
@@ -112,22 +112,22 @@ Object {
   "colors": Object {
     "black": "#000",
     "blue": "#007aff",
-    "borderGray": "#d1d6db",
+    "borderGray": "#c0cad5",
     "darkBlue": "#049",
     "darkGray": "#364049",
     "darkGreen": "#060",
-    "darkOrange": "#a50",
-    "darkPurple": "#407",
-    "darkRed": "#800",
-    "gray": "#687B8E",
+    "darkOrange": "#f06f20",
+    "darkPurple": "#70b",
+    "darkRed": "#c00",
+    "gray": "#4f6f8f",
     "green": "#0a0",
-    "lightBlue": "#cdf",
-    "lightGray": "#f6f8fa",
-    "lightGreen": "#cec",
-    "lightOrange": "#feb",
-    "lightPurple": "#ecf",
-    "lightRed": "#fcc",
-    "orange": "#fa0",
+    "lightBlue": "#e8f2ff",
+    "lightGray": "#f4f6f8",
+    "lightGreen": "#ecf7ec",
+    "lightOrange": "#f68013",
+    "lightPurple": "#f5ebfa",
+    "lightRed": "#fbebeb",
+    "orange": "#f68013",
     "purple": "#70b",
     "red": "#c00",
     "text": "#001833",

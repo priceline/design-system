@@ -8,7 +8,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
-  background-color: #cdf;
+  background-color: #e8f2ff;
   color: #007aff;
   margin-left: 4px;
   margin-right: 4px;
@@ -22,7 +22,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 }
 
 .c0:hover {
-  background-color: #cdf;
+  background-color: #e8f2ff;
 }
 
 <button
@@ -88,7 +88,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 }
 
 .c0:hover {
-  background-color: #cdf;
+  background-color: #e8f2ff;
 }
 
 <button

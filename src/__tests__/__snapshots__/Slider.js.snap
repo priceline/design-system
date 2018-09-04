@@ -25,7 +25,7 @@ exports[`Slider renders 1`] = `
 .c0 .rc-slider-rail {
   position: absolute;
   width: 100%;
-  background-color: #f6f8fa;
+  background-color: #f4f6f8;
   border-radius: 9999px;
 }
 
@@ -53,7 +53,7 @@ exports[`Slider renders 1`] = `
 }
 
 .c0.rc-slider-disabled {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0.rc-slider-disabled .rc-slider-handle {

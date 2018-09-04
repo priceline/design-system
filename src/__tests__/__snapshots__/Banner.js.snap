@@ -6,7 +6,7 @@ exports[`Banner accepts non-preset colors 1`] = `
 }
 
 .c0 {
-  background-color: #687B8E;
+  background-color: #4f6f8f;
   text-align: left;
 }
 
@@ -433,7 +433,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 .c0 {
   color: #049;
-  background-color: #cdf;
+  background-color: #e8f2ff;
   text-align: left;
 }
 
@@ -522,7 +522,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 .c0 {
   color: #060;
-  background-color: #cec;
+  background-color: #ecf7ec;
   text-align: left;
 }
 
@@ -581,183 +581,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
       	l3.1,3.1l6.5-6.5L18,8.8L10.3,16.5z"
-      />
-    </svg>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        <h5
-          className="c5"
-          fontSize={4}
-          fontWeight="bold"
-        />
-        <span
-          className="c6"
-          fontSize={1}
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with lightOrange bg 1`] = `
-.c3 {
-  width: 100%;
-}
-
-.c0 {
-  color: #a50;
-  background-color: #feb;
-  text-align: left;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c4 {
-  text-align: left;
-}
-
-.c6 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  margin-right: 8px;
-  margin-top: -2px;
-  height: 24px;
-  width: 24px;
-}
-
-.c5 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
-<div
-  className="c0"
-  color="darkOrange"
->
-  <div
-    className="c1"
-  >
-    <svg
-      className="c2"
-      fill="currentcolor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M1,21.5h22l-11-19L1,21.5z M13,18.5h-2v-2h2V18.5z M13,14.5h-2v-4h2V14.5z"
-      />
-    </svg>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        <h5
-          className="c5"
-          fontSize={4}
-          fontWeight="bold"
-        />
-        <span
-          className="c6"
-          fontSize={1}
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders with lightRed bg 1`] = `
-.c3 {
-  width: 100%;
-}
-
-.c0 {
-  color: #800;
-  background-color: #fcc;
-  text-align: left;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c4 {
-  text-align: left;
-}
-
-.c6 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  margin-right: 8px;
-  margin-top: -2px;
-  height: 24px;
-  width: 24px;
-}
-
-.c5 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
-<div
-  className="c0"
-  color="darkRed"
->
-  <div
-    className="c1"
-  >
-    <svg
-      className="c2"
-      fill="currentcolor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,13h-2V7h2V13z M13,17h-2v-2
-      	h2V17z"
       />
     </svg>
     <div
@@ -877,7 +700,7 @@ exports[`Banner renders with orange bg 1`] = `
 
 .c0 {
   color: #fff;
-  background-color: #fa0;
+  background-color: #f68013;
   text-align: left;
 }
 

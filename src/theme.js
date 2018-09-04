@@ -52,25 +52,29 @@ const letterSpacings = {
 const black = '#000'
 const white = '#fff'
 const text = '#001833'
-const lightBlue = '#cdf'
-const blue = '#007aff' // primary
+const lightBlue = '#e8f2ff'
+const blue = '#007aff'
 const darkBlue = '#049'
-const lightGray = '#f6f8fa'
-const borderGray = '#d1d6db'
-const gray = '#687B8E' // primary
+const lightGray = '#f4f6f8'
+const borderGray = '#c0cad5'
+const gray = '#4f6f8f'
 const darkGray = '#364049'
-const lightGreen = '#cec'
-const green = '#0a0' // secondary
+const lightGreen = '#ecf7ec'
+const green = '#0a0'
 const darkGreen = '#060'
-const lightRed = '#fcc'
-const red = '#c00' // secondary
-const darkRed = '#800'
-const lightOrange = '#feb'
-const orange = '#fa0' // secondary
-const darkOrange = '#a50'
-const lightPurple = '#ecf'
-const purple = '#70b' // secondary
-const darkPurple = '#407'
+const lightRed = '#fbebeb'
+const red = '#c00'
+const orange = '#f68013'
+const darkOrange = '#f06f20'
+const lightPurple = '#f5ebfa'
+const purple = '#70b'
+const lightYellow = '#fedc2a'
+const yellow = '#fff3c0'
+
+// deprecated aliases
+const darkRed = red
+const darkPurple = purple
+const lightOrange = orange
 
 const colors = {
   black,
@@ -88,13 +92,15 @@ const colors = {
   darkGreen,
   red,
   lightRed,
-  darkRed,
   orange,
-  lightOrange,
   darkOrange,
   purple,
   lightPurple,
-  darkPurple
+
+  // deprecated
+  lightOrange,
+  darkPurple,
+  darkRed
 }
 
 export { colors }

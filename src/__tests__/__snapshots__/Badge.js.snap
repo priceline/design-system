@@ -65,9 +65,9 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #cdf;
+  background-color: #e8f2ff;
   color: #049;
-  background-color: #cdf;
+  background-color: #e8f2ff;
 }
 
 <div
@@ -90,59 +90,9 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #cec;
+  background-color: #ecf7ec;
   color: #060;
-  background-color: #cec;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Badge bg lightOrange sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #feb;
-  color: #a50;
-  background-color: #feb;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Badge bg lightRed sets background-color and color 1`] = `
-.c0 {
-  border-radius: 99999px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #fcc;
-  color: #800;
-  background-color: #fcc;
+  background-color: #ecf7ec;
 }
 
 <div
@@ -165,9 +115,9 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #fa0;
+  background-color: #f68013;
   color: #001833;
-  background-color: #fa0;
+  background-color: #f68013;
 }
 
 <div
@@ -216,7 +166,7 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   padding-top: 4px;
   padding-bottom: 4px;
   color: #001833;
-  background-color: #cdf;
+  background-color: #e8f2ff;
 }
 
 <div
@@ -265,7 +215,7 @@ exports[`Badge renders 1`] = `
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #f6f8fa;
+  background-color: #f4f6f8;
   color: #001833;
 }
 

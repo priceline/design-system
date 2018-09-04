@@ -25,7 +25,7 @@ Use `<Banner />` component to create a box with a optional header, text, optiona
 
 Prop | Type | Description
 ---|---|---
-bg | string | Sets background-color and color. Accepts `blue`, `green`, `orange`, `red`, `lightBlue`, `lightGreen`, `lightOrange`, `lightRed`
+bg | string | Sets background-color and color. Accepts `blue`, `green`, `orange`, `red`, `lightBlue`, `lightGreen`, `lightRed`
 header | string | Sets header content
 iconName | string | Sets left-hand svg icon name
 onClose | function | passes onClick functionality to close button / shows close button if provided
