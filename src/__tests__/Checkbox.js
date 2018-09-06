@@ -29,36 +29,34 @@ describe('Checkbox', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders checked when defaultChecked prop is passed as true', () => {
-    const component = (
-      <Checkbox id={name} defaultChecked onChange={onChangeFn} />
-    )
-    const wrapper = shallow(component)
-    const input = wrapper.find('input')
-    const json = renderer.create(component).toJSON()
+  test.only('renders checked when defaultChecked prop is passed as true', () => {
+    const json = renderer
+      .create(<Checkbox id={name} defaultChecked onChange={onChangeFn} />)
+      .toJSON()
+    const [input] = json.children
 
-    expect(input.prop('defaultChecked')).toBe(true)
+    expect(input.props.defaultChecked).toBe(true)
+  })
+
+  test('renders disabled with disabled prop', () => {
+    const json = renderer
+      .create(<Checkbox id={name} disabled={true} onChange={onChangeFn} />)
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('renders disabled when disabled props is passed as true', () => {
-    const component = (
-      <Checkbox id={name} disabled={true} onChange={onChangeFn} />
-    )
-    const componentChecked = (
-      <Checkbox
-        id={name}
-        disabled={true}
-        defaultChecked={true}
-        onChange={onChangeFn}
-      />
-    )
-
-    const json = renderer.create(component).toJSON()
-    const jsonChecked = renderer.create(componentChecked).toJSON()
-
+  test('renders disabled with defaultChecked', () => {
+    const json = renderer
+      .create(
+        <Checkbox
+          id={name}
+          disabled={true}
+          defaultChecked={true}
+          onChange={onChangeFn}
+        />
+      )
+      .toJSON()
     expect(json).toMatchSnapshot()
-    expect(jsonChecked).toMatchSnapshot()
   })
 
   /** Not Testing wrapper.simulate('click) because enzyme won't pass it through to the checkbox
