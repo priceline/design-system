@@ -3,8 +3,7 @@ const path = require('path')
 const SVGI = require('svgi')
 const camelCase = require('camelcase')
 
-const legacySrc = path.join(__dirname, '..', 'icons/legacy')
-const newSrc = path.join(__dirname, '..', 'icons/new')
+const src = path.join(__dirname, '..', 'icons')
 const filepath = path.join(__dirname, '..', 'icons.json')
 
 const writeFile = data => {
@@ -58,29 +57,14 @@ const getData = icons =>
   icons.map(icon => Object.assign({}, icon, parseSVG(icon.svg)))
 
 const build = () => {
-  const legacyIcons = readIcons(legacySrc).map(icon =>
-    Object.assign({}, icon, { legacy: true })
-  )
-  const newIcons = readIcons(newSrc)
+  const icons = readIcons(src)
 
-  const data = getData(newIcons).reduce(
-    (a, { key, svg, viewBox, path, legacy }) =>
+  const data = getData(icons).reduce(
+    (a, { key, svg, viewBox, path }) =>
       Object.assign({}, a, {
         [key]: {
           viewBox,
-          path,
-          legacy
-        }
-      }),
-    {}
-  )
-  data.legacy = getData(legacyIcons).reduce(
-    (a, { key, svg, viewBox, path, legacy }) =>
-      Object.assign({}, a, {
-        [key]: {
-          viewBox,
-          path,
-          legacy
+          path
         }
       }),
     {}

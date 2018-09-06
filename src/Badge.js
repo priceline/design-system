@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme as themeGet, space, color } from 'styled-system'
+import { themeGet, space, color } from 'styled-system'
 import theme from './theme'
 
 const type = props => {

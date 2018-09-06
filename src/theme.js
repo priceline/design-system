@@ -1,4 +1,4 @@
-const createMediaQuery = n => `@media screen and (min-width:${n}em)`
+const createMediaQuery = n => `@media screen and (min-width:${n})`
 
 const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
@@ -10,7 +10,7 @@ const addAliases = (arr, aliases) =>
     })
   )
 
-export const breakpoints = [32, 40, 48, 64]
+export const breakpoints = [32, 40, 48, 64].map(n => n + 'em')
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
@@ -23,15 +23,24 @@ export const space = [0, 4, 8, 16, 32, 64, 128]
 
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 40, 56, 72]
 
-export const regular = 400
-export const bold = 600
+export const medium = 500
+export const bold = 700
+// alias
+export const regular = medium
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
-  regular,
-  bold
+  medium,
+  bold,
+  // alias
+  regular
+}
+
+export const lineHeights = {
+  standard: 1.5,
+  display: 1.25
 }
 
 const letterSpacings = {
@@ -63,36 +72,6 @@ const lightPurple = '#ecf'
 const purple = '#70b' // secondary
 const darkPurple = '#407'
 
-// tints
-const flatten = (name, colors) =>
-  colors.reduce((a, b, i) => {
-    const color = {
-      [name + i]: {
-        enumerable: true,
-        get() {
-          console.warn(
-            `Priceline Design System Warning: Using numbered colors like ${[
-              name + i
-            ]} will be deprecated in the next theme. Use light${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)}, ${name} or dark${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)} instead.`
-          )
-          return b
-        }
-      }
-    }
-    return { ...a, ...color }
-  }, {})
-
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [lightGray, lightGray, gray, gray]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
-
 const colors = {
   black,
   white,
@@ -115,24 +94,94 @@ const colors = {
   darkOrange,
   purple,
   lightPurple,
-  darkPurple,
-  blues,
-  greens,
-  reds,
-  oranges,
-  purples
+  darkPurple
 }
 
-Object.defineProperties(colors, {
-  ...flatten('blue', blues),
-  ...flatten('gray', grays),
-  ...flatten('green', greens),
-  ...flatten('red', reds),
-  ...flatten('orange', oranges),
-  ...flatten('purple', purples)
-})
-
 export { colors }
+
+export const colorStyles = {
+  whiteOnText: {
+    color: colors.white,
+    backgroundColor: colors.text
+  },
+  whiteOnGray: {
+    color: colors.white,
+    backgroundColor: colors.gray
+  },
+  textOnLightGray: {
+    color: colors.text,
+    backgroundColor: colors.lightGray
+  },
+  whiteOnBlue: {
+    color: colors.white,
+    backgroundColor: colors.blue
+  },
+  blueOnLightBlue: {
+    color: colors.blue,
+    backgroundColor: colors.lightBlue
+  },
+  whiteOnGreen: {
+    color: colors.white,
+    backgroundColor: colors.green
+  },
+  greenOnLightGreen: {
+    color: colors.green,
+    backgroundColor: colors.lightGreen
+  },
+  whiteOnRed: {
+    color: colors.white,
+    backgroundColor: colors.red
+  },
+  redOnLightRed: {
+    color: colors.red,
+    backgroundColor: colors.lightRed
+  },
+  textOnOrange: {
+    color: colors.text,
+    backgroundColor: colors.orange
+  },
+  textOnLightOrange: {
+    color: colors.text,
+    backgroundColor: colors.lightOrange
+  },
+  whiteOnPurple: {
+    color: colors.white,
+    backgroundColor: colors.purple
+  },
+  purpleOnLightPurple: {
+    color: colors.purple,
+    backgroundColor: colors.lightPurple
+  },
+  textOnWhite: {
+    color: colors.text,
+    backgroundColor: colors.white
+  },
+  grayOnWhite: {
+    color: colors.gray,
+    backgroundColor: colors.white
+  },
+  blueOnWhite: {
+    color: colors.blue,
+    backgroundColor: colors.white
+  },
+  greenOnWhite: {
+    color: colors.green,
+    backgroundColor: colors.white
+  },
+  redOnWhite: {
+    color: colors.red,
+    backgroundColor: colors.white
+  },
+  purpleOnWhite: {
+    color: colors.purple,
+    backgroundColor: colors.white
+  }
+}
+
+colorStyles.info = colorStyles.textOnLightGray
+colorStyles.success = colorStyles.whiteOnGreen
+colorStyles.warning = colorStyles.textOnOrange
+colorStyles.danger = colorStyles.whiteOnRed
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
@@ -182,10 +231,12 @@ const theme = {
   font,
   fontSizes,
   fontWeights,
+  lineHeights,
   letterSpacings,
   regular,
   bold,
   colors,
+  colorStyles,
   radii,
   radius,
   boxShadows,

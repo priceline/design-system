@@ -215,8 +215,8 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #cdf;
   color: #001833;
+  background-color: #cdf;
 }
 
 <div
@@ -240,8 +240,8 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #001833;
   color: #fff;
+  background-color: #001833;
 }
 
 <div

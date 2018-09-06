@@ -29,6 +29,8 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c6 {
@@ -38,8 +40,8 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -96,7 +98,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
   padding-left: 40px;
   font-size: 10px;
   color: #687B8E;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .c0 .c1 {
@@ -130,162 +132,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
       <svg
         className="c5"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -313,162 +160,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
       <svg
         className="c5"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -509,6 +201,8 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c5 {
@@ -518,8 +212,8 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -579,162 +273,7 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -762,162 +301,7 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -958,6 +342,8 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c5 {
@@ -967,8 +353,8 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -1028,162 +414,7 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -1211,162 +442,7 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -1407,6 +483,8 @@ exports[`FormField it renders a with a both icons 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c5 {
@@ -1416,8 +494,8 @@ exports[`FormField it renders a with a both icons 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -1477,162 +555,7 @@ exports[`FormField it renders a with a both icons 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -1660,162 +583,7 @@ exports[`FormField it renders a with a both icons 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -1848,8 +616,8 @@ exports[`FormField it renders a with a conditional right side icon 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -1944,6 +712,8 @@ exports[`FormField it renders a with a left side icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c5 {
@@ -1953,8 +723,8 @@ exports[`FormField it renders a with a left side icon 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -2013,162 +783,7 @@ exports[`FormField it renders a with a left side icon 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -2217,6 +832,8 @@ exports[`FormField it renders a with a right side icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c3 {
@@ -2226,8 +843,8 @@ exports[`FormField it renders a with a right side icon 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -2301,162 +918,7 @@ exports[`FormField it renders a with a right side icon 1`] = `
       <svg
         className="c5"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -2492,6 +954,8 @@ exports[`FormField it renders using FormField alias 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
 .c5 {
@@ -2501,8 +965,8 @@ exports[`FormField it renders using FormField alias 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
   font-size: 14px;
+  color: inherit;
   background-color: transparent;
   border-radius: 2px;
   border-width: 0px;
@@ -2561,162 +1025,7 @@ exports[`FormField it renders using FormField alias 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -2768,12 +1077,17 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  height: 24px;
+  width: 24px;
   color: #687B8E;
+}
+
+.c5 {
   pointer-events: none;
 }
 
@@ -2835,165 +1149,9 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
         width={1}
       />
       <svg
-        className="c5"
-        color="gray"
+        className="c5 c6"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
@@ -3040,14 +1198,21 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  height: 24px;
+  width: 24px;
   color: #687B8E;
+}
+
+.c7 {
   pointer-events: none;
 }
 
@@ -3095,162 +1260,7 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -3278,165 +1288,9 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
         width={1}
       />
       <svg
-        className="c7"
-        color="gray"
+        className="c7 c8"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
@@ -3473,12 +1327,17 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
   align-items: center;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  height: 24px;
+  width: 24px;
   color: #687B8E;
+}
+
+.c5 {
   pointer-events: none;
 }
 
@@ -3550,165 +1409,9 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
         </option>
       </select>
       <svg
-        className="c5"
-        color="gray"
+        className="c5 c6"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
@@ -3720,7 +1423,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
 `;
 
 exports[`FormField it renders using FormField alias with Select icons on both sides 1`] = `
-.c8 {
+.c9 {
   margin-left: -32px;
   margin-top: 8px;
 }
@@ -3760,14 +1463,21 @@ exports[`FormField it renders using FormField alias with Select icons on both si
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  height: 24px;
+  width: 24px;
   color: #687B8E;
+}
+
+.c7 {
   pointer-events: none;
 }
 
@@ -3815,162 +1525,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M12.6,10.1C11.8,8,9.8,6.5,7.5,6.5C4.4,6.5,2,8.9,2,12s2.4,5.5,5.5,5.5c2.4,0,4.4-1.5,5.1-3.6h4
@@ -4008,165 +1563,9 @@ exports[`FormField it renders using FormField alias with Select icons on both si
         </option>
       </select>
       <svg
-        className="c7"
-        color="gray"
+        className="c7 c8"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
@@ -4174,167 +1573,12 @@ exports[`FormField it renders using FormField alias with Select icons on both si
       </svg>
     </div>
     <div
-      className="c1 c8"
+      className="c1 c9"
     >
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
@@ -4382,14 +1626,21 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  height: 24px;
+  width: 24px;
   color: #687B8E;
+}
+
+.c7 {
   pointer-events: none;
 }
 
@@ -4437,162 +1688,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
       <svg
         className="c4"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M12.6,10.1C11.8,8,9.8,6.5,7.5,6.5C4.4,6.5,2,8.9,2,12s2.4,5.5,5.5,5.5c2.4,0,4.4-1.5,5.1-3.6h4
@@ -4630,165 +1726,9 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
         </option>
       </select>
       <svg
-        className="c7"
-        color="gray"
+        className="c7 c8"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
@@ -4800,7 +1740,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
 `;
 
 exports[`FormField it renders using FormField alias with Select icons on the right side 1`] = `
-.c6 {
+.c7 {
   margin-left: -32px;
   margin-top: 8px;
 }
@@ -4830,18 +1770,25 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   align-items: center;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  height: 24px;
+  width: 24px;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  height: 24px;
+  width: 24px;
   color: #687B8E;
+}
+
+.c5 {
   pointer-events: none;
 }
 
@@ -4913,165 +1860,9 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
         </option>
       </select>
       <svg
-        className="c5"
-        color="gray"
+        className="c5 c6"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
@@ -5079,167 +1870,12 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
       </svg>
     </div>
     <div
-      className="c1 c6"
+      className="c1 c7"
     >
       <svg
-        className="c7"
+        className="c8"
         fill="currentcolor"
-        height={24}
-        theme={
-          Object {
-            "bold": 600,
-            "boxShadows": Array [
-              "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
-              "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
-            ],
-            "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
-            ],
-            "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "borderGray": "#d1d6db",
-              "darkBlue": "#049",
-              "darkGray": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "lightGray": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
-            },
-            "duration": Object {
-              "fast": "150ms",
-              "normal": "300ms",
-              "slow": "450ms",
-              "slowest": "600ms",
-            },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-            "fontSizes": Array [
-              12,
-              14,
-              16,
-              20,
-              24,
-              32,
-              48,
-            ],
-            "fontWeights": Object {
-              "bold": 600,
-              "regular": 400,
-            },
-            "letterSpacings": Object {
-              "caps": "0.025em",
-              "normal": "normal",
-            },
-            "maxContainerWidth": "1280px",
-            "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
-              "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
-            ],
-            "radii": Array [
-              0,
-              2,
-              6,
-            ],
-            "radius": "2px",
-            "regular": 400,
-            "space": Array [
-              0,
-              4,
-              8,
-              16,
-              32,
-              64,
-              128,
-            ],
-            "timingFunctions": Object {
-              "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
-              "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
-              "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
-            },
-            "transitionDelays": Object {
-              "large": "260ms",
-              "medium": "160ms",
-              "small": "60ms",
-              "xLarge": "360ms",
-            },
-          }
-        }
         viewBox="0 0 24 24"
-        width={24}
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
