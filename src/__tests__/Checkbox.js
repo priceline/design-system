@@ -3,7 +3,6 @@ import renderer from 'react-test-renderer'
 import { Checkbox, Icon, theme } from '..'
 import { shallow, mount, render } from 'enzyme'
 
-const fakeEvent = { target: { checked: true } }
 let onChangeFn = jest.fn()
 const name = 'random_check_box'
 const checkBoxSelector = `#${name}`
@@ -29,7 +28,7 @@ describe('Checkbox', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test.only('renders checked when defaultChecked prop is passed as true', () => {
+  test('renders checked when defaultChecked prop is passed as true', () => {
     const json = renderer
       .create(<Checkbox id={name} defaultChecked onChange={onChangeFn} />)
       .toJSON()
@@ -67,9 +66,11 @@ describe('Checkbox', () => {
     const component = <Checkbox id={name} onChange={onChangeFn} />
     const wrapper = shallow(component)
     const json = renderer.create(component).toJSON()
-
-    wrapper.find('input').simulate('change', fakeEvent)
+    wrapper.find('[type="checkbox"]').simulate('change', {
+      target: {
+        checked: true
+      }
+    })
     expect(onChangeFn).toHaveBeenCalled()
-    expect(json).toMatchSnapshot()
   })
 })
