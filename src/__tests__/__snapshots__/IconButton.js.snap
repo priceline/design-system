@@ -31,7 +31,6 @@ exports[`IconButton renders without props 1`] = `
 
 .c0 {
   padding: 0;
-  height: auto;
   background-color: transparent;
   color: inherit;
 }
@@ -40,7 +39,16 @@ exports[`IconButton renders without props 1`] = `
   background-color: transparent;
 }
 
+.c0 > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 <button
   className="c0 c1"
-/>
+>
+  <div />
+</button>
 `;

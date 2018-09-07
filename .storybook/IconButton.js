@@ -3,9 +3,13 @@ import { storiesOf, action } from '@storybook/react'
 import { IconButton } from '../src'
 
 storiesOf('IconButton', module)
-  .add('Close Button', () => (
-    <IconButton name="close" onClick={action('clicked')} />
+  .add('default', () => <IconButton name="calendar" title="Choose date" />)
+  .add('with color', () => (
+    <IconButton name="calendar" color="blue" title="Choose date" />
   ))
-  .add('Disabled Close Button', () => (
-    <IconButton disabled name="close" onClick={action('clicked')} />
+  .add('with size', () => (
+    <IconButton name="calendar" size={64} title="Choose date" />
+  ))
+  .add('with other elements', () => (
+    <IconButton name="calendar" size={64} title="Choose date" />
   ))
