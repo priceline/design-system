@@ -26,6 +26,10 @@ const type = props => {
       backgroundColor: props.theme.colors.red,
       color: props.theme.colors.white
     },
+    lightRed: {
+      backgroundColor: props.theme.colors.lightRed,
+      color: props.theme.colors.darkRed
+    },
     orange: {
       backgroundColor: props.theme.colors.orange,
       color: props.theme.colors.text

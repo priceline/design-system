@@ -64,6 +64,7 @@ const green = '#0a0'
 const darkGreen = '#060'
 const lightRed = '#fbebeb'
 const red = '#c00'
+const darkRed = '#800'
 const orange = '#f68013'
 const darkOrange = '#f06f20'
 const lightPurple = '#f5ebfa'
@@ -72,7 +73,6 @@ const lightYellow = '#fedc2a'
 const yellow = '#fff3c0'
 
 // deprecated aliases
-const darkRed = red
 const darkPurple = purple
 const lightOrange = orange
 
@@ -92,6 +92,7 @@ const colors = {
   darkGreen,
   red,
   lightRed,
+  darkRed,
   orange,
   darkOrange,
   purple,
@@ -99,8 +100,7 @@ const colors = {
 
   // deprecated
   lightOrange,
-  darkPurple,
-  darkRed
+  darkPurple
 }
 
 export { colors }
@@ -181,6 +181,10 @@ export const colorStyles = {
   purpleOnWhite: {
     color: colors.purple,
     backgroundColor: colors.white
+  },
+  whiteOnDarkOrange: {
+    color: colors.white,
+    backgroundColor: colors.darkOrange
   }
 }
 

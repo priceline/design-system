@@ -89,6 +89,13 @@ describe('Banner', () => {
     expect(json).toHaveStyleRule('color', theme.colors.darkGreen)
   })
 
+  test('renders with lightRed bg', () => {
+    const json = renderer.create(<Banner bg="lightRed" />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-color', theme.colors.lightRed)
+    expect(json).toHaveStyleRule('color', theme.colors.darkRed)
+  })
+
   test('renders close button if onClose func is provided', () => {
     const wrapper = shallow(<Banner onClose={() => {}} />)
     const closeButton = wrapper.find('CloseButton')

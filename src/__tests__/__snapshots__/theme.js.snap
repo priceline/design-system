@@ -88,6 +88,10 @@ Object {
       "backgroundColor": "#007aff",
       "color": "#fff",
     },
+    "whiteOnDarkOrange": Object {
+      "backgroundColor": "#f06f20",
+      "color": "#fff",
+    },
     "whiteOnGray": Object {
       "backgroundColor": "#4f6f8f",
       "color": "#fff",
@@ -118,7 +122,7 @@ Object {
     "darkGreen": "#060",
     "darkOrange": "#f06f20",
     "darkPurple": "#70b",
-    "darkRed": "#c00",
+    "darkRed": "#800",
     "gray": "#4f6f8f",
     "green": "#0a0",
     "lightBlue": "#e8f2ff",

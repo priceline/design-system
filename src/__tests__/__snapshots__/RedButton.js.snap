@@ -69,7 +69,7 @@ exports[`RedButton renders 1`] = `
 }
 
 .c0:hover {
-  background-color: #c00;
+  background-color: #800;
 }
 
 <button
@@ -111,7 +111,7 @@ exports[`RedButton without disabled prop sets 1`] = `
 }
 
 .c0:hover {
-  background-color: #c00;
+  background-color: #800;
 }
 
 <button
