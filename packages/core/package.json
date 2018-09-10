@@ -78,7 +78,7 @@
   "dependencies": {
     "clean-tag": "^1.0.4",
     "prop-types": "^15.5.10",
-    "rc-slider": "^8.5.0",
+    "rc-slider": "^8.6.2",
     "styled-system": "^2.1.0"
   },
   "peerDependencies": {
