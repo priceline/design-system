@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text align prop sets text-align 1`] = `
-.c0 {
-  text-align: center;
-}
-
-<div
-  className="c0"
-/>
-`;
-
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
   font-weight: 700;
@@ -53,5 +43,15 @@ exports[`Text regular prop sets font-weight 1`] = `
 exports[`Text renders 1`] = `
 <div
   className=""
+/>
+`;
+
+exports[`Text textAlign prop sets text-align 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<div
+  className="c0"
 />
 `;

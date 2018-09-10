@@ -51,6 +51,7 @@ exports[`CloseButton renders without props 1`] = `
 <button
   className="c0 c1"
   title="close"
+  width={undefined}
 >
   <svg
     className="c2"

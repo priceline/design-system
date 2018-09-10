@@ -23,11 +23,11 @@ storiesOf('Text', module)
       <Text fontSize={0}>Hello 0</Text>
     </div>
   ))
-  .add('align', () => (
+  .add('textAlign', () => (
     <div>
-      <Text align="left">Hello Left</Text>
-      <Text align="center">Hello Center</Text>
-      <Text align="right">Hello Right</Text>
+      <Text textAlign="left">Hello Left</Text>
+      <Text textAlign="center">Hello Center</Text>
+      <Text textAlign="right">Hello Right</Text>
     </div>
   ))
   .add('regular', () => <Text regular>Hello Regular</Text>)

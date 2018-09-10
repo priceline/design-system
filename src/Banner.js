@@ -60,11 +60,11 @@ const Banner = props => {
       bg={bannerColor.backgroundColor || props.bg}
       color={bannerColor.color || props.color}
     >
-      <Flex justify="space-between" align="flex-start">
+      <Flex justifyContent="space-between" alignItems="flex-start">
         {!!icon &&
           !!props.showIcon && <Icon name={icon} mr={2} size={24} mt="-2px" />}
         <Box w={1}>
-          <Text align={props.textAlign}>
+          <Text textAlign={props.textAlign}>
             <Heading.h5>{props.header}</Heading.h5>
             <Text.span fontSize={1}>{props.text}</Text.span>
             {props.children}

@@ -39,6 +39,7 @@ exports[`OutlineButton disabled prop sets 1`] = `
 <button
   className="c0 c1"
   disabled={true}
+  width={undefined}
 />
 `;
 
@@ -85,6 +86,7 @@ exports[`OutlineButton renders 1`] = `
 
 <button
   className="c0 c1"
+  width={undefined}
 />
 `;
 
@@ -131,5 +133,6 @@ exports[`OutlineButton without disabled prop sets 1`] = `
 
 <button
   className="c0 c1"
+  width={undefined}
 />
 `;

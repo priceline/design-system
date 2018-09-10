@@ -10,7 +10,7 @@ storiesOf('BackgroundImage', module)
     <Box>
       <BackgroundImage image={image} width="320px">
         <Box p={4}>
-          <Text fontSize={6} bold align="center" color="white">
+          <Text fontSize={6} bold textAlign="center" color="white">
             Hello
           </Text>
         </Box>
@@ -21,7 +21,7 @@ storiesOf('BackgroundImage', module)
     <Box>
       <BackgroundImage height="320px" image={image} width="360px">
         <Box p={4}>
-          <Text fontSize={6} bold align="center" color="white">
+          <Text fontSize={6} bold textAlign="center" color="white">
             Hello
           </Text>
         </Box>
@@ -36,7 +36,7 @@ storiesOf('BackgroundImage', module)
         image={image}
       >
         <Box p={4}>
-          <Text fontSize={6} bold align="center" color="white">
+          <Text fontSize={6} bold textAlign="center" color="white">
             Hello
           </Text>
         </Box>

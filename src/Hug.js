@@ -29,7 +29,7 @@ const HideableIcon = styled(Icon)`
 
 const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
   <HugCard {...props} borderColor={bg}>
-    <Flex bg={bg} color={color} p={p} align="center">
+    <Flex bg={bg} color={color} p={p} alignItems="center">
       {!!icon && (
         <HideableIcon
           mr={2}

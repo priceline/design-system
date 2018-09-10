@@ -9,7 +9,7 @@ import {
   color
 } from 'styled-system'
 import theme from './theme'
-import mapProps from './mapProps'
+import { mapProps, deprecatedPropType } from './utils'
 
 export const caps = props =>
   props.caps
@@ -50,7 +50,8 @@ Text.propTypes = {
   ...color.propTypes,
   caps: PropTypes.bool,
   regular: PropTypes.bool,
-  bold: PropTypes.bool
+  bold: PropTypes.bool,
+  align: deprecatedPropType('textAlign')
 }
 
 Text.defaultProps = {

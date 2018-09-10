@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import {
   space,
   width,
@@ -9,7 +10,7 @@ import {
   flexDirection
 } from 'styled-system'
 import theme from './theme'
-import mapProps from './mapProps'
+import { mapProps, deprecatedPropType } from './utils'
 
 const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
@@ -34,7 +35,11 @@ Flex.propTypes = {
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,
-  ...flexDirection.propTypes
+  ...flexDirection.propTypes,
+  // deprecated
+  wrap: deprecatedPropType('flexWrap'),
+  align: deprecatedPropType('alignItems'),
+  justify: deprecatedPropType('justifyContent')
 }
 
 Flex.displayName = 'Flex'

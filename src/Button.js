@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { width, space } from 'styled-system'
 import theme from './theme'
+import { mapProps, deprecatedPropType } from './utils'
 
 const size = props => {
   switch (props.size) {
@@ -28,9 +29,10 @@ const size = props => {
   }
 }
 
-const fullWidth = props => (props.fullWidth ? { width: '100%' } : null)
-
-const Button = styled.button`
+const Button = mapProps(({ fullWidth, ...props }) => ({
+  width: fullWidth ? 1 : undefined,
+  ...props
+}))(styled.button`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -55,14 +57,14 @@ const Button = styled.button`
       props.disabled ? null : props.theme.colors.darkBlue};
   }
 
-  ${fullWidth} ${width} ${size} ${space};
-`
+  ${width} ${size} ${space};
+`)
 
 Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   ...width.propTypes,
   ...space.propTypes,
-  fullWidth: PropTypes.bool
+  fullWidth: deprecatedPropType('width')
 }
 
 Button.defaultProps = {

@@ -28,41 +28,7 @@ exports[`Button disabled prop sets 1`] = `
 <button
   className="c0"
   disabled={true}
-/>
-`;
-
-exports[`Button fullWidth prop sets width to 100% 1`] = `
-.c0 {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 1.5;
-  cursor: pointer;
-  border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
-  border-width: 0;
-  border-style: solid;
-  width: 100%;
-  font-size: 14px;
-  padding: 9.5px 18px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
-}
-
-.c0:hover {
-  background-color: #049;
-}
-
-<button
-  className="c0"
+  width={undefined}
 />
 `;
 
@@ -97,6 +63,7 @@ exports[`Button renders 1`] = `
 
 <button
   className="c0"
+  width={undefined}
 />
 `;
 
@@ -132,6 +99,7 @@ exports[`Button size large sets height and font-size 1`] = `
 <button
   className="c0"
   size="large"
+  width={undefined}
 />
 `;
 
@@ -167,6 +135,7 @@ exports[`Button size medium sets height and font-size 1`] = `
 <button
   className="c0"
   size="medium"
+  width={undefined}
 />
 `;
 
@@ -202,6 +171,43 @@ exports[`Button size small sets height and font-size 1`] = `
 <button
   className="c0"
   size="small"
+  width={undefined}
+/>
+`;
+
+exports[`Button width prop sets width to 100% 1`] = `
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  width: 100%;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c0:disabled {
+  opacity: 0.25;
+}
+
+.c0:hover {
+  background-color: #049;
+}
+
+<button
+  className="c0"
+  width={1}
 />
 `;
 
@@ -236,5 +242,6 @@ exports[`Button without disabled prop sets 1`] = `
 
 <button
   className="c0"
+  width={undefined}
 />
 `;

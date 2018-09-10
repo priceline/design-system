@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Flex align prop 1`] = `
+exports[`Flex alignItems prop 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -17,7 +17,23 @@ exports[`Flex align prop 1`] = `
 />
 `;
 
-exports[`Flex justify prop 1`] = `
+exports[`Flex flexWrap prop 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Flex justifyContent prop 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -40,22 +56,6 @@ exports[`Flex renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Flex wrap prop 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 <div
