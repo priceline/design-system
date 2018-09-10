@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
+  textStyle,
   fontSize,
   fontWeight,
   textAlign,
@@ -28,6 +29,7 @@ const Text = mapProps(({ align, ...props }) => ({
   textAlign: align,
   ...props
 }))(styled.div`
+  ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${textAlign}
@@ -42,6 +44,7 @@ const Text = mapProps(({ align, ...props }) => ({
 Text.displayName = 'Text'
 
 Text.propTypes = {
+  ...textStyle.propTypes,
   ...fontSize.propTypes,
   ...fontWeight.propTypes,
   ...textAlign.propTypes,
