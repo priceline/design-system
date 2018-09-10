@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
+  textStyle,
   fontSize,
   fontWeight,
   textAlign,
@@ -25,6 +26,7 @@ export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
 const Text = styled.div`
+  ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${textAlign}
@@ -39,6 +41,7 @@ const Text = styled.div`
 Text.displayName = 'Text'
 
 Text.propTypes = {
+  ...propTypes.textStyle,
   ...propTypes.fontSize,
   ...propTypes.fontWeight,
   ...propTypes.textAlign,
