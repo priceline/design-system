@@ -4,8 +4,8 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
 .c0 {
   font-size: 24px;
   font-weight: 700;
-  text-align: center;
   line-height: 1.25;
+  text-align: center;
   margin: 0px;
   color: #4f6f8f;
 }
@@ -13,8 +13,6 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
 <h3
   className="c0"
   color="#4f6f8f"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -28,8 +26,6 @@ exports[`Heading Heading component with default theme font size, when "fontSize"
 
 <h3
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -43,8 +39,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 
 <h1
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -58,8 +52,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
 
 <h2
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -73,8 +65,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
 
 <h3
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -88,8 +78,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
 
 <h4
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -103,8 +91,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
 
 <h5
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -118,8 +104,6 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
 
 <h6
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;
 
@@ -133,7 +117,5 @@ exports[`Heading renders 1`] = `
 
 <h3
   className="c0"
-  fontSize={4}
-  fontWeight="bold"
 />
 `;

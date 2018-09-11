@@ -48,6 +48,71 @@ const letterSpacings = {
   caps: '0.025em'
 }
 
+export const textStyles = {
+  display8: {
+    fontSize: fontSizes[8] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display7: {
+    fontSize: fontSizes[7] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display6: {
+    fontSize: fontSizes[6] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display5: {
+    fontSize: fontSizes[5] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display4: {
+    fontSize: fontSizes[4] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display3: {
+    fontSize: fontSizes[3] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display2: {
+    fontSize: fontSizes[2] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display1: {
+    fontSize: fontSizes[1] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display0: {
+    fontSize: fontSizes[0] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display,
+    letterSpacing: letterSpacings.caps,
+    textTransform: 'uppercase'
+  },
+  body2: {
+    fontSize: fontSizes[2] + 'px',
+    fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.standard
+  },
+  body1: {
+    fontSize: fontSizes[1] + 'px',
+    fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.standard
+  },
+  body0: {
+    fontSize: fontSizes[0] + 'px',
+    fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.standard
+  }
+}
+
 // color palette
 const black = '#000'
 const white = '#fff'
@@ -245,6 +310,7 @@ const theme = {
   letterSpacings,
   regular,
   bold,
+  textStyles,
   colors,
   colorStyles,
   radii,
