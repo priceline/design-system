@@ -49,6 +49,7 @@ const Input = styled.input`
 `
 
 Input.displayName = 'Input'
+Input.isField = true
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   color: PropTypes.string,

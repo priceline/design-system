@@ -26,6 +26,8 @@ const Icon = styled(Base)`
 
 Icon.displayName = 'Icon'
 
+Icon.isIcon = true
+
 Icon.defaultProps = {
   theme,
   name: 'checkLight',
