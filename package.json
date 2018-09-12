@@ -75,7 +75,6 @@
       "lcov",
       "html"
     ],
-    "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "dist/"
     ],

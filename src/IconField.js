@@ -10,6 +10,7 @@ const IconField = props => {
     if (child.type.isIcon) {
       return React.cloneElement(child, {
         style: {
+          ...child.props.style,
           flex: 'none',
           alignSelf: 'center',
           pointerEvents: 'none',
@@ -20,6 +21,7 @@ const IconField = props => {
     }
     return React.cloneElement(child, {
       style: {
+        ...child.props.style,
         paddingLeft: i === 0 ? undefined : 40,
         paddingRight: i === children.length - 1 ? undefined : 40
       }

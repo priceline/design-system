@@ -1,209 +1,86 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { mount } from 'enzyme'
+import { renderIntoDocument } from 'react-dom/test-utils'
 import 'jest-styled-components'
 import { FormField, Icon, Input, Label, Select } from '..'
 
 describe('FormField', () => {
-  test('it renders using the old api, but should throw a prop-type warning', () => {
-    console.error = jest.fn()
-
-    const test = mount(
-      <FormField label="test" icon="lock" id="test-input" onChange={() => {}} />
-    )
-
-    expect(
-      console.error.mock.calls
-        .toString()
-        .indexOf("No 'Input' child found for 'FormField'") !== -1
-    )
-    console.error.mockRestore()
-  })
-  test('it renders using FormField alias', () => {
+  test('renders', () => {
     const json = renderer
       .create(
-        <FormField onChange={() => {}}>
-          <Icon name="email" />
-          <Input id="with-left-icon" />
+        <FormField>
+          <Label htmlFor="email">Email Address</Label>
+          <Input id="email" />
         </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('it renders using FormField alias with Select ', () => {
+  test('renders with Icon', () => {
     const json = renderer
       .create(
-        <FormField onChange={() => {}}>
-          <Select id="with-no-options" />
+        <FormField>
+          <Label htmlFor="email">Email Address</Label>
+          <Icon id="email" />
+          <Input id="email" />
         </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('it renders using FormField alias with Select and Icon', () => {
+  test('renders with Select ', () => {
     const json = renderer
       .create(
-        <FormField onChange={() => {}}>
-          <Icon name="email" />
-          <Select id="with-no-options" />
+        <FormField>
+          <Select />
         </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('it renders using FormField alias with Select and Options', () => {
+  test('renders with Select and Icon', () => {
     const json = renderer
       .create(
-        <FormField onChange={() => {}}>
-          <Select id="with-options">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </Select>
+        <FormField>
+          <Icon name="email" />
+          <Select />
         </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('it renders using FormField alias with Select icons on both sides', () => {
+  test('renders with showLabel prop', () => {
     const json = renderer
       .create(
-        <FormField onChange={() => {}}>
-          <Icon name="key" />
-          <Select id="with-options">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </Select>
+        <FormField showLabel>
+          <Label htmlFor="email">Email</Label>
           <Icon name="email" />
+          <Input id="email" />
         </FormField>
       )
       .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('it renders using FormField alias with Select icons on the left side', () => {
+  test('shows label with field value', () => {
     const json = renderer
       .create(
-        <FormField onChange={() => {}}>
-          <Icon name="key" />
-          <Select id="with-options">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </Select>
+        <FormField>
+          <Label htmlFor="email">Email</Label>
+          <Icon name="email" />
+          <Input id="email" value="hello@example.com" />
         </FormField>
       )
       .toJSON()
-    expect(json).toMatchSnapshot()
+    const [label] = json.children
+    expect(label.props.style.opacity).toBe(1)
   })
 
-  test('it renders using FormField alias with Select icons on the right side', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Select id="with-options">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </Select>
-          <Icon name="email" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-
-  test('it renders a with a left side icon', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Icon name="email" />
-          <Input id="with-left-icon" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-  test('it renders a with a right side icon', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Input id="with-right-icon" />
-          <Icon name="email" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-  test('it renders a with a conditional right side icon', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Input id="with-right-icon" />
-          {false && <Icon name="email" />}
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-  test('it renders a with a both icons', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Icon name="email" />
-          <Input id="with-both-icons" />
-          <Icon name="email" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-  test('it renders a form field wth a label and icons', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Label>A Label</Label>
-          <Icon name="email" />
-          <Input id="with-both-icons" />
-          <Icon name="email" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-
-  test('it always renders a label when `alwaysShowLabel` is true', () => {
-    const json = renderer
-      .create(
-        <FormField alwaysShowLabel onChange={() => {}}>
-          <Label>A Label</Label>
-          <Icon name="email" />
-          <Input id="with-both-icons" />
-          <Icon name="email" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-
-  test("it calls the `onChange` handler passed into `FormField` when the child `Input` component's value updates", () => {
-    const mockChange = jest.fn()
-    const test = mount(
-      <FormField onChange={mockChange}>
-        <Label>A Label</Label>
-        <Input id="caller" placeholder="placeholder text" />
-      </FormField>
-    )
-
-    let input = test.find(Input)
-    input.simulate('change', { target: { value: 'asdf' } })
-    expect(mockChange).toHaveBeenCalledTimes(1)
-  })
+  /*
   test('it correctly places an aria-label with the placeholder value before user has interacted with the input', () => {
     const test = mount(
       <FormField>
@@ -224,66 +101,31 @@ describe('FormField', () => {
     )
   })
 
-  test('it shows a label when the input has a value', () => {
-    const wrapper = mount(
+  */
+
+  test('warns when there is no form field', () => {
+    const spy = jest.spyOn(global.console, 'error')
+    renderIntoDocument(
       <FormField>
-        <Label>Hello</Label>
-        <Input placeholder="Hello" value="Howdy" />
+        <Label>Email Address</Label>
       </FormField>
     )
-    const label = wrapper.find(Label)
-    const input = wrapper.find(Input)
-    expect(label.length).toBe(1)
-    expect(input.getDOMNode().getAttribute('aria-label')).toBeFalsy()
+    expect(spy).toHaveBeenCalledTimes(1)
+    spy.mockRestore()
   })
 
-  test('it does not display a label when Label has `hidden` prop', () => {
-    const json = renderer
-      .create(
-        <FormField onChange={() => {}}>
-          <Label hidden>A Label</Label>
-          <Icon name="email" />
-          <Input id="with-both-icons" />
-          <Icon name="email" />
-        </FormField>
-      )
-      .toJSON()
-    expect(json).toMatchSnapshot()
-  })
-
-  test('it calls onChange prop if provided', () => {
-    const onChange = jest.fn()
-    const wrapper = mount(
+  test('warns when there is no label', () => {
+    const spy = jest.spyOn(global.console, 'error')
+    renderIntoDocument(
       <FormField>
-        <Input onChange={onChange} />
+        <Input />
       </FormField>
     )
-    const input = wrapper.find(Input)
-    input.simulate('change', { target: { value: 'hi' } })
-    expect(onChange).toHaveBeenCalledTimes(1)
+    expect(spy).toHaveBeenCalledTimes(1)
+    spy.mockRestore()
   })
 
-  test('it triggers a prop-type warning when 3 icons are provided', () => {
-    console.error = jest.fn()
-
-    const test = mount(
-      <FormField onChange={() => {}}>
-        <Label>A Label</Label>
-
-        <Icon name="email" />
-        <Icon name="email" />
-        <Input id="with-both-icons" />
-        <Icon name="email" />
-      </FormField>
-    )
-
-    expect(
-      console.error.mock.calls
-        .toString()
-        .indexOf('Warning: Failed prop type: Up to 2') !== -1
-    )
-    console.error.mockRestore()
-  })
+  /*
   test('it triggers a prop-type warning when any element besides Label, Icon, and Input is provided as a child.', () => {
     console.error = jest.fn()
 
@@ -347,4 +189,5 @@ describe('FormField', () => {
     )
     console.error.mockRestore()
   })
+  */
 })
