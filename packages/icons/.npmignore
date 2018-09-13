@@ -1,5 +1,6 @@
 src
 svg
 test
-build.js
+./build.js
 babel.config.js
+!lib/
