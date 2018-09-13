@@ -6,8 +6,9 @@ const camelCase = require('lodash.camelcase')
 const upperFirst = require('lodash.upperfirst')
 const uniqBy = require('lodash.uniqby')
 
-const pkgPath = path.join(__dirname, './node_modules/material-design-icons')
-const outDir = path.join(__dirname, './svg/material-design')
+const mdPkg = path.join(__dirname, './node_modules/material-design-icons')
+const pclnSVGs = path.join(__dirname, './svg/custom')
+const mdOutDir = path.join(__dirname, './svg/material-design')
 
 const ignore = (file, stats) => {
   if (stats.isDirectory()) return false
@@ -28,50 +29,59 @@ const rename = filename =>
 const readFile = filename => {
   const content = fs.readFileSync(filename, 'utf8')
   const name = rename(filename)
+  const capitalName = upperFirst(camelCase(name))
   return {
     filename,
     name,
+    capitalName,
     content
   }
 }
 
 const writeFile = ({ name, content }) => {
-  const filename = path.join(outDir, name + '.svg')
+  const filename = path.join(mdOutDir, name + '.svg')
   fs.writeFileSync(filename, content)
 }
 
-const docTemplate = ({ icons = [] }) => `
-# Icons (${icons.length})
+const docTemplate = ({ mdIcons, pclnIcons }) => `
+## Material Design Icons (${mdIcons.length})
 
-${icons.map(({ name }) => `- \`${name}\``).join('\n')}
+${mdIcons.map(({ capitalName }) => `- \`${capitalName}\``).join('\n')}
+
+## Priceline Icons (${pclnIcons.length})
+
+${pclnIcons.map(name => `- \`${name}\``).join('\n')}
 `
 
 const createDoc = icons => {
   const filename = path.join(__dirname, './ICONS.md')
-  const content = docTemplate({ icons })
+  const content = docTemplate(icons)
   fs.writeFileSync(filename, content)
 }
 
-// todo: copy icons/ directory
-
 const build = async () => {
-  const files = await readdir(pkgPath, [ignore])
+  const files = await readdir(mdPkg, [ignore])
   const icons = uniqBy(files, file => path.basename(file))
     .filter(is24px)
     .filter(filename => {
       const name = upperFirst(camelCase(rename(filename)))
-      console.log(name, whitelist.includes(name))
       return whitelist.includes(name)
     })
     .map(readFile)
     .sort((a, b) => (a.name < b.name ? -1 : 1))
 
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir)
+  const pclnIconFiles = await readdir(pclnSVGs)
+  const pclnIcons = pclnIconFiles.map(filename =>
+    path.basename(filename, 'svg')
+  )
+
+  if (!fs.existsSync(mdOutDir)) fs.mkdirSync(mdOutDir)
 
   icons.forEach(writeFile)
-  createDoc(icons)
-
-  console.log(icons.length, ' icons copied')
+  createDoc({
+    mdIcons: icons,
+    pclnIcons
+  })
 }
 
 build()
