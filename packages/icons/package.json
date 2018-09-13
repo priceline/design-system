@@ -4,7 +4,7 @@
   "description": "Priceline React icons based on Material Design Icons",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "babel src -d lib",
+    "prepare": "npm run build && babel src -d lib",
     "clean": "rm -rf svg/material-design src/material-design src/custom lib",
     "build": "npm run clean && ./build.js && pixo svg/material-design -d src/material-design && pixo svg/custom -d src/custom",
     "test": "jest"
