@@ -7,6 +7,8 @@ import docsTheme from '../src/theme'
 import navigation from '../src/navigation'
 import SideNav from '../src/SideNav'
 
+const basepath = process.env.NODE_ENV === 'production' ? '/design-system' : ''
+
 const routes = navigation.reduce(
   (a, item) => [...a, ...(item.links || [item])],
   []
@@ -33,6 +35,7 @@ export default class MyApp extends App {
             {...this.props}
             components={components}
             theme={docsTheme}
+            basepath={basepath}
             routes={routes}
             sidebar={
               <Box py={4}>

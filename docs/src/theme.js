@@ -47,6 +47,7 @@ export default {
     fontFamily: monospace,
     fontSize: '14px',
     padding: '16px',
+    overflowX: 'auto',
     color: blue,
     backgroundColor: lightGray
   },
