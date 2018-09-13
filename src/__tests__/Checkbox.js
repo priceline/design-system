@@ -3,7 +3,6 @@ import renderer from 'react-test-renderer'
 import { Checkbox, Icon, theme } from '..'
 import { shallow, mount, render } from 'enzyme'
 
-const fakeEvent = { target: { checked: true } }
 let onChangeFn = jest.fn()
 const name = 'random_check_box'
 const checkBoxSelector = `#${name}`
@@ -30,35 +29,33 @@ describe('Checkbox', () => {
   })
 
   test('renders checked when defaultChecked prop is passed as true', () => {
-    const component = (
-      <Checkbox id={name} defaultChecked onChange={onChangeFn} />
-    )
-    const wrapper = shallow(component)
-    const input = wrapper.find(checkBoxSelector)
-    const json = renderer.create(component).toJSON()
+    const json = renderer
+      .create(<Checkbox id={name} defaultChecked onChange={onChangeFn} />)
+      .toJSON()
+    const [input] = json.children
 
-    expect(input.prop('defaultChecked')).toBe(true)
+    expect(input.props.defaultChecked).toBe(true)
+  })
+
+  test('renders disabled with disabled prop', () => {
+    const json = renderer
+      .create(<Checkbox id={name} disabled={true} onChange={onChangeFn} />)
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('renders disabled when disabled props is passed as true', () => {
-    const component = (
-      <Checkbox id={name} disabled={true} onChange={onChangeFn} />
-    )
-    const componentChecked = (
-      <Checkbox
-        id={name}
-        disabled={true}
-        defaultChecked={true}
-        onChange={onChangeFn}
-      />
-    )
-
-    const json = renderer.create(component).toJSON()
-    const jsonChecked = renderer.create(componentChecked).toJSON()
-
+  test('renders disabled with defaultChecked', () => {
+    const json = renderer
+      .create(
+        <Checkbox
+          id={name}
+          disabled={true}
+          defaultChecked={true}
+          onChange={onChangeFn}
+        />
+      )
+      .toJSON()
     expect(json).toMatchSnapshot()
-    expect(jsonChecked).toMatchSnapshot()
   })
 
   /** Not Testing wrapper.simulate('click) because enzyme won't pass it through to the checkbox
@@ -69,9 +66,11 @@ describe('Checkbox', () => {
     const component = <Checkbox id={name} onChange={onChangeFn} />
     const wrapper = shallow(component)
     const json = renderer.create(component).toJSON()
-
-    wrapper.find(checkBoxSelector).simulate('change', fakeEvent)
+    wrapper.find('[type="checkbox"]').simulate('change', {
+      target: {
+        checked: true
+      }
+    })
     expect(onChangeFn).toHaveBeenCalled()
-    expect(json).toMatchSnapshot()
   })
 })
