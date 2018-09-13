@@ -1077,7 +1077,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1085,6 +1085,9 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
   height: 24px;
   width: 24px;
   color: #4f6f8f;
+}
+
+.c5 {
   pointer-events: none;
 }
 
@@ -1146,7 +1149,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
         width={1}
       />
       <svg
-        className="c5"
+        className="c5 c6"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -1199,7 +1202,7 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
   width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1207,6 +1210,9 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
   height: 24px;
   width: 24px;
   color: #4f6f8f;
+}
+
+.c7 {
   pointer-events: none;
 }
 
@@ -1282,7 +1288,7 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
         width={1}
       />
       <svg
-        className="c7"
+        className="c7 c8"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -1321,7 +1327,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
   align-items: center;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1329,6 +1335,9 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
   height: 24px;
   width: 24px;
   color: #4f6f8f;
+}
+
+.c5 {
   pointer-events: none;
 }
 
@@ -1400,7 +1409,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
         </option>
       </select>
       <svg
-        className="c5"
+        className="c5 c6"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -1414,7 +1423,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
 `;
 
 exports[`FormField it renders using FormField alias with Select icons on both sides 1`] = `
-.c8 {
+.c9 {
   margin-left: -32px;
   margin-top: 8px;
 }
@@ -1458,7 +1467,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
   width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1466,6 +1475,9 @@ exports[`FormField it renders using FormField alias with Select icons on both si
   height: 24px;
   width: 24px;
   color: #4f6f8f;
+}
+
+.c7 {
   pointer-events: none;
 }
 
@@ -1551,7 +1563,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
         </option>
       </select>
       <svg
-        className="c7"
+        className="c7 c8"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -1561,7 +1573,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
       </svg>
     </div>
     <div
-      className="c1 c8"
+      className="c1 c9"
     >
       <svg
         className="c4"
@@ -1618,7 +1630,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
   width: 24px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1626,6 +1638,9 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
   height: 24px;
   width: 24px;
   color: #4f6f8f;
+}
+
+.c7 {
   pointer-events: none;
 }
 
@@ -1711,7 +1726,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
         </option>
       </select>
       <svg
-        className="c7"
+        className="c7 c8"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -1725,7 +1740,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
 `;
 
 exports[`FormField it renders using FormField alias with Select icons on the right side 1`] = `
-.c6 {
+.c7 {
   margin-left: -32px;
   margin-top: 8px;
 }
@@ -1755,7 +1770,7 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   align-items: center;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1763,7 +1778,7 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   width: 24px;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1771,6 +1786,9 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   height: 24px;
   width: 24px;
   color: #4f6f8f;
+}
+
+.c5 {
   pointer-events: none;
 }
 
@@ -1842,7 +1860,7 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
         </option>
       </select>
       <svg
-        className="c5"
+        className="c5 c6"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -1852,10 +1870,10 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
       </svg>
     </div>
     <div
-      className="c1 c6"
+      className="c1 c7"
     >
       <svg
-        className="c7"
+        className="c8"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
