@@ -13,7 +13,7 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -21,6 +21,9 @@ exports[`Select renders 1`] = `
   height: 24px;
   width: 24px;
   color: #687B8E;
+}
+
+.c2 {
   pointer-events: none;
 }
 
@@ -60,7 +63,7 @@ exports[`Select renders 1`] = `
     fontSize={1}
   />
   <svg
-    className="c2"
+    className="c2 c3"
     fill="currentcolor"
     viewBox="0 0 24 24"
   >
