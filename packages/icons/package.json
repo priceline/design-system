@@ -26,7 +26,7 @@
     "lodash.uniqby": "^4.7.0",
     "material-design-icons": "^3.0.1",
     "pcln-design-system": "^1.0.0-70",
-    "pixo": "^1.1.0",
+    "pixo": "^1.1.1-0",
     "react": "^16.4.2",
     "react-test-renderer": "^16.4.2",
     "styled-components": "^3.4.5"
