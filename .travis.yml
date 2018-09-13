@@ -9,11 +9,11 @@ after_success:
       npm run chromatic -- --app-code=$CHROMATIC_APPCODE
     fi"
 before_deploy:
-  - npm run storybook
   - cd docs
   - npm install
   - npm run build
   - touch out/.nojekyll
+  - npm run storybook
 deploy:
   provider: pages
   skip_cleanup: true
