@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "npm run build && babel src -d lib",
-    "clean": "rm -rf svg/material-design src/material-design src/custom lib",
-    "build": "npm run clean && ./build.js && pixo svg/material-design -d src/material-design && pixo svg/custom -d src/custom",
+    "clean": "find src/ -type f -not -name 'Icon.js' -delete && rm -rf svg/md lib",
+    "build": "./build.js && pixo svg/md -d src && pixo svg/pcln -d src",
     "test": "jest"
   },
   "author": "Priceline",
@@ -40,8 +40,6 @@
     ]
   },
   "pixo": {
-    "template": "styledSystem",
-    "outDir": "src/icons",
-    "index": true
+    "template": "styledSystem"
   }
 }

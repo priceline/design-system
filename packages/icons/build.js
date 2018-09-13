@@ -5,10 +5,11 @@ const readdir = require('recursive-readdir')
 const camelCase = require('lodash.camelcase')
 const upperFirst = require('lodash.upperfirst')
 const uniqBy = require('lodash.uniqby')
+const iconList = require('./icons')
 
 const mdPkg = path.join(__dirname, './node_modules/material-design-icons')
-const pclnSVGs = path.join(__dirname, './svg/custom')
-const mdOutDir = path.join(__dirname, './svg/material-design')
+const pclnSVGs = path.join(__dirname, './svg/pcln')
+const mdOutDir = path.join(__dirname, './svg/md')
 
 const ignore = (file, stats) => {
   if (stats.isDirectory()) return false
@@ -43,21 +44,24 @@ const writeFile = ({ name, content }) => {
   fs.writeFileSync(filename, content)
 }
 
-const docTemplate = ({ mdIcons, pclnIcons }) => `
-## Material Design Icons (${mdIcons.length})
+const docTemplate = ({ md, pcln }) => `
+## Material Design Icons (${md.length})
 
-${mdIcons.map(({ capitalName }) => `- \`${capitalName}\``).join('\n')}
+${md.map(name => `- \`${name}\``).join('\n')}
 
-## Priceline Icons (${pclnIcons.length})
+## Priceline Icons (${pcln.length})
 
-${pclnIcons.map(name => `- \`${name}\``).join('\n')}
+${pcln.map(name => `- \`${name}\``).join('\n')}
 `
 
-const createDoc = icons => {
-  const filename = path.join(__dirname, './ICONS.md')
-  const content = docTemplate(icons)
+const createFile = (name, template) => context => {
+  const filename = path.join(__dirname, './' + name)
+  const content = template(context)
   fs.writeFileSync(filename, content)
 }
+
+const barrelTemplate = icons =>
+  icons.map(name => `export { default as ${name} } from './${name}'`).join('\n')
 
 const build = async () => {
   const files = await readdir(mdPkg, [ignore])
@@ -65,156 +69,17 @@ const build = async () => {
     .filter(is24px)
     .filter(filename => {
       const name = upperFirst(camelCase(rename(filename)))
-      return whitelist.includes(name)
+      return iconList.md.includes(name)
     })
     .map(readFile)
     .sort((a, b) => (a.name < b.name ? -1 : 1))
 
-  const pclnIconFiles = await readdir(pclnSVGs)
-  const pclnIcons = pclnIconFiles.map(filename =>
-    path.basename(filename, 'svg')
-  )
-
   if (!fs.existsSync(mdOutDir)) fs.mkdirSync(mdOutDir)
 
   icons.forEach(writeFile)
-  createDoc({
-    mdIcons: icons,
-    pclnIcons
-  })
+
+  createFile('ICONS.md', docTemplate)(iconList)
+  createFile('src/icons.js', barrelTemplate)(iconList.all)
 }
 
 build()
-
-// whitelist of icons to include from material design icons
-const whitelist = [
-  // build from aliases object
-  'AcUnit',
-  'FlightLand',
-  'ArrowDownward',
-  'ArrowBack',
-  'ArrowForward',
-  'ArrowUpward',
-  'ReportProblem',
-  'BeachAccess',
-  'Hotel',
-  'CheckBox',
-  'CheckBoxOutlineBlank',
-  'IndeterminateCheckBox',
-  'AddBox',
-  'FreeBreakfast',
-  'BusinessCenter',
-  'DateRange',
-  'ChildFriendly',
-  'DirectionsCar',
-  'Poll',
-  'KeyboardArrowDown',
-  'KeyboardArrowUp',
-  'LocationCity',
-  'Schedule',
-  'AccessTime',
-  'QueryBuilder',
-  'CloudQueue',
-  'FlightTakeoff',
-  'Description',
-  'AttachMoney',
-  'MonetizationOn',
-  'Brightness5',
-  'Create',
-  'ModeEdit',
-  'FlashOn',
-  'InsertEmoticon',
-  'Mood',
-  'FilterList',
-  'FitnessCenter',
-  'WhatsHot',
-  'Flight',
-  'Cached',
-  'PhotoLibrary',
-  'LocalGasStation',
-  'Language',
-  'GolfCourse',
-  'GpsFixed',
-  'ShowChart',
-  'Apps',
-  'Business',
-  'LocalDining',
-  'Info',
-  'InfoOutline',
-  'VpnKey',
-  'Work',
-  'Remove',
-  'NotificationsActive',
-  'LocalParking',
-  'Call',
-  'LocalPhone',
-  'Image',
-  'LocationOn',
-  'Add',
-  'Print',
-  'ViewQuilt',
-  'RadioButtonChecked',
-  'RadioButtonUnchecked',
-  'RemoveCircleOutline',
-  'AddCircleOutline',
-  'YoutubeSearchedFor',
-  'EventSeat',
-  'AirlineSeatReclineExtra',
-  'AirlineSeatReclineNormal',
-  'AirportShuttle',
-  'SmokeFree',
-  'CheckCirle',
-  'SwapVert',
-  'ThumbDown',
-  'ThumbUp',
-  'Person',
-  'VerifiedUser',
-  'Error',
-  'ErrorOutline',
-  'HotTub',
-  'ZoomOutMap',
-
-  // non-aliased
-  'Star',
-  'Accessible',
-  'Build',
-  'Cake',
-  'Casino',
-  'Chat',
-  'Check',
-  'ChevronLeft',
-  'ChevronRight',
-  'Close',
-  'CreditCard',
-  'Devices',
-  'Directions',
-  // 'Discount',
-  'Email',
-  'Event',
-  'EventAvailable',
-  'EventBusy',
-  'Help',
-  'History',
-  'Home',
-  'Laptop',
-  'List',
-  'LocalBar',
-  'Lock',
-  'Map',
-  'Menu',
-  'Parking',
-  'Pets',
-  'Pool',
-  'Refresh',
-  'Restaurant',
-  'Rowing',
-  'Search',
-  'Security',
-  'Spa',
-  'Star',
-  'Timer',
-  'TrendingUp',
-  'Tune',
-  'Web',
-  'Wifi'
-]

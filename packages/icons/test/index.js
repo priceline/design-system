@@ -1,18 +1,14 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
 import 'jest-styled-components'
-import * as customIcons from '../src/custom'
-import * as mdIcons from '../src/material-design'
+import * as icons from '../src/icons'
 import Icon from '../src/Icon'
-import AirplaneIcon from '../src/custom/Airplane'
-import AcUnitIcon from '../src/material-design/AcUnit'
+import AirplaneIcon from '../src/Airplane'
+import AcUnitIcon from '../src/AcUnit'
 
-const icons = [
-  ...Object.keys(customIcons).map(key => [key, customIcons[key]]),
-  ...Object.keys(mdIcons).map(key => [key, mdIcons[key]])
-]
+const iconList = Object.keys(icons).map(key => [key, icons[key]])
 
-test.each(icons)('renders %s', (key, Component) => {
+test.each(iconList)('renders %s', (key, Component) => {
   const json = TestRenderer.create(<Component />).toJSON()
   expect(json).toMatchSnapshot()
 })
