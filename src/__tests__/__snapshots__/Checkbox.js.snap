@@ -1,82 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox renders checked when defaultChecked prop is passed as true 1`] = `
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  height: 20px;
-  width: 20px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #687B8E;
-}
-
-.c0 svg[data-name='checked'] {
-  display: none;
-}
-
-.c0 > input:checked ~ svg[data-name='checked'] {
-  display: inline-block;
-  color: #007aff;
-}
-
-.c0 > input:checked ~ svg[data-name='empty'] {
-  display: none;
-}
-
-.c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-<div
-  className="c0 "
-  disabled={undefined}
->
-  <input
-    className="c1"
-    defaultChecked={true}
-    id="random_check_box"
-    onChange={[Function]}
-    size={20}
-    type="checkbox"
-  />
-  <svg
-    className="c2"
-    data-name="checked"
-    fill="currentcolor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M6,3h12c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z M10,17
-    	l9-8.6L17.6,7L10,14.3l-3.6-3.5L5,12.2L10,17z"
-    />
-  </svg>
-  <svg
-    className="c2"
-    data-name="empty"
-    fill="currentcolor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M6,5C5.4,5,5,5.4,5,6v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6c0-0.6-0.4-1-1-1H6z M6,3h12
-    	c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
+exports[`Checkbox renders disabled with defaultChecked 1`] = `
 .c2 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -121,6 +45,7 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
 >
   <input
     className="c1"
+    defaultChecked={true}
     disabled={true}
     id="random_check_box"
     onChange={[Function]}
@@ -152,7 +77,7 @@ exports[`Checkbox renders disabled when disabled props is passed as true 1`] = `
 </div>
 `;
 
-exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
+exports[`Checkbox renders disabled with disabled prop 1`] = `
 .c2 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -197,7 +122,6 @@ exports[`Checkbox renders disabled when disabled props is passed as true 2`] = `
 >
   <input
     className="c1"
-    defaultChecked={true}
     disabled={true}
     id="random_check_box"
     onChange={[Function]}
@@ -305,81 +229,6 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 `;
 
 exports[`Checkbox renders without the theme passed specifically 1`] = `
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  height: 20px;
-  width: 20px;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #687B8E;
-}
-
-.c0 svg[data-name='checked'] {
-  display: none;
-}
-
-.c0 > input:checked ~ svg[data-name='checked'] {
-  display: inline-block;
-  color: #007aff;
-}
-
-.c0 > input:checked ~ svg[data-name='empty'] {
-  display: none;
-}
-
-.c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-<div
-  className="c0 "
-  disabled={undefined}
->
-  <input
-    className="c1"
-    id="random_check_box"
-    onChange={[Function]}
-    size={20}
-    type="checkbox"
-  />
-  <svg
-    className="c2"
-    data-name="checked"
-    fill="currentcolor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M6,3h12c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z M10,17
-    	l9-8.6L17.6,7L10,14.3l-3.6-3.5L5,12.2L10,17z"
-    />
-  </svg>
-  <svg
-    className="c2"
-    data-name="empty"
-    fill="currentcolor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M6,5C5.4,5,5,5.4,5,6v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6c0-0.6-0.4-1-1-1H6z M6,3h12
-    	c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Checkbox updates and fires callback when clicked (when enabled) 1`] = `
 .c2 {
   -webkit-flex: none;
   -ms-flex: none;

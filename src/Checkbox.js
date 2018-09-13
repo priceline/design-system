@@ -2,7 +2,8 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from './theme'
-import { Icon, Box } from '..'
+import Icon from './Icon'
+import Box from './Box'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -41,6 +42,10 @@ const CheckBoxWrapper = styled(Box)`
     }
   }
 `
+CheckBoxWrapper.defaultProps = {
+  theme
+}
+
 CheckBoxWrapper.defaultProps = {
   theme
 }

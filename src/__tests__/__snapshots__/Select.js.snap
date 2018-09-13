@@ -65,6 +65,7 @@ exports[`Select renders 1`] = `
   <svg
     className="c2 c3"
     fill="currentcolor"
+    ml={-32}
     viewBox="0 0 24 24"
   >
     <path
