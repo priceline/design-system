@@ -42,6 +42,12 @@ Run tests:
 npm test
 ```
 
+To build for publishing:
+
+```sh
+npm run prepare
+```
+
 [material-design-icons]: https://github.com/google/material-design-icons
 [pixo]: https://github.com/c8r/pixo
 
