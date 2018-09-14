@@ -82,7 +82,6 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "clean-tag": "^1.0.4",
     "hoist-non-react-statics": "^3.0.1",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.6.2",

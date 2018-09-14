@@ -98,8 +98,6 @@ exports[`Banner renders content from children props 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -119,9 +117,9 @@ exports[`Banner renders content from children props 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
@@ -186,8 +184,6 @@ exports[`Banner renders with blue bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -207,9 +203,9 @@ exports[`Banner renders with blue bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,17h-2v-6h2V17z M13,9h-2V7
@@ -271,8 +267,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -292,9 +286,9 @@ exports[`Banner renders with custom iconName and size 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,17.8l6.2,3.7l-1.6-7L22,9.7l-7.2-0.6L12,2.5L9.2,9.1L2,9.7l5.5,4.8l-1.6,7L12,17.8z"
@@ -355,8 +349,6 @@ exports[`Banner renders with green bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -376,9 +368,9 @@ exports[`Banner renders with green bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
@@ -440,8 +432,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -461,9 +451,9 @@ exports[`Banner renders with lightBlue bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,17h-2v-6h2V17z M13,9h-2V7
@@ -525,8 +515,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -546,9 +534,9 @@ exports[`Banner renders with lightGreen bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
@@ -610,8 +598,6 @@ exports[`Banner renders with lightOrange bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -631,9 +617,9 @@ exports[`Banner renders with lightOrange bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M1,21.5h22l-11-19L1,21.5z M13,18.5h-2v-2h2V18.5z M13,14.5h-2v-4h2V14.5z"
@@ -694,8 +680,6 @@ exports[`Banner renders with lightRed bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -715,9 +699,9 @@ exports[`Banner renders with lightRed bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,13h-2V7h2V13z M13,17h-2v-2
@@ -779,8 +763,6 @@ exports[`Banner renders with no props other than theme 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -800,9 +782,9 @@ exports[`Banner renders with no props other than theme 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.3,16.5L6,12.2L7.2,11
@@ -864,8 +846,6 @@ exports[`Banner renders with orange bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -885,9 +865,9 @@ exports[`Banner renders with orange bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M1,21.5h22l-11-19L1,21.5z M13,18.5h-2v-2h2V18.5z M13,14.5h-2v-4h2V14.5z"
@@ -948,8 +928,6 @@ exports[`Banner renders with red bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -969,9 +947,9 @@ exports[`Banner renders with red bg 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13,13h-2V7h2V13z M13,17h-2v-2
@@ -1033,8 +1011,6 @@ exports[`Banner renders with text node 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -1054,9 +1030,9 @@ exports[`Banner renders with text node 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,17.8l6.2,3.7l-1.6-7L22,9.7l-7.2-0.6L12,2.5L9.2,9.1L2,9.7l5.5,4.8l-1.6,7L12,17.8z"
@@ -1125,8 +1101,6 @@ exports[`Banner renders with text string 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
-  height: 24px;
-  width: 24px;
 }
 
 .c4 {
@@ -1146,9 +1120,9 @@ exports[`Banner renders with text string 1`] = `
     <svg
       className="c2"
       fill="currentcolor"
-      mr={2}
-      mt="-2px"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,17.8l6.2,3.7l-1.6-7L22,9.7l-7.2-0.6L12,2.5L9.2,9.1L2,9.7l5.5,4.8l-1.6,7L12,17.8z"

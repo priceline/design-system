@@ -1,27 +1,33 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, size, color } from 'styled-system'
-import Tag from 'clean-tag'
+import { space, color } from 'styled-system'
 import icons from '../icons.json'
 import theme from './theme'
 
 const getPath = ({ name }) => icons[name]
 
-const Base = ({ name, size, ...props }) => {
+const Svg = styled.svg`
+  flex: none;
+  ${space} ${color};
+`
+
+const Icon = ({ name, size, ...props }) => {
   const icon = getPath({ name })
   if (!icon) return false
 
   return (
-    <Tag is="svg" {...props} viewBox={icon.viewBox} fill="currentcolor">
+    <Svg
+      {...props}
+      viewBox={icon.viewBox}
+      width={size}
+      height={size}
+      fill="currentcolor"
+    >
       <path d={icon.path} />
-    </Tag>
+    </Svg>
   )
 }
-
-const Icon = styled(Base)`
-  flex: none;
-  ${space} ${size} ${color};
-`
 
 Icon.displayName = 'Icon'
 
@@ -36,8 +42,8 @@ const keys = Object.keys({
 })
 
 Icon.propTypes = {
+  size: PropTypes.number,
   ...space.propTypes,
-  ...size.propTypes,
   ...color.propTypes,
   name: ({ name }) => {
     if (!keys.includes(name)) {
