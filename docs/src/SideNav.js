@@ -24,7 +24,7 @@ export default props => (
             {section.links.map(link => (
               <NavLink
                 key={link.name}
-                href={link.path}
+                href={props.basepath + link.path}
                 color="gray"
                 children={link.title || link.name}
               />
