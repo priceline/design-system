@@ -28,7 +28,7 @@ export const CreditCardInput = props => (
   <MaskedInput
     format={formatCreditCard}
     autoComplete="cc-number"
-    placeholder="5555-5555-5555-5555"
+    placeholder="4242-4242-4242-4242"
     {...props}
   />
 )

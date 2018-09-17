@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MaskedInput renders 1`] = `
+<input
+  className="sc-jWBwVP civhqK"
+  id="test"
+  onChange={[Function]}
+  type="text"
+  value="12/20"
+/>
+`;
