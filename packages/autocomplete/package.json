@@ -1,0 +1,38 @@
+{
+  "name": "pcln-autocomplete",
+  "version": "1.0.0-0",
+  "description": "React autocomplete component built with Downshift",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "babel src -d dist",
+    "start": "start-storybook -p 8002 -c storybook",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Priceline",
+  "license": "MIT",
+  "dependencies": {
+    "downshift": "^2.2.2",
+    "pcln-design-system": "^1.0.0-70",
+    "prop-types": "^15.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^4.0.0-alpha.21",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.2",
+    "jest": "^23.6.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-test-renderer": "^16.5.1",
+    "styled-components": "^3.4.7"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.js"
+    ]
+  }
+}
