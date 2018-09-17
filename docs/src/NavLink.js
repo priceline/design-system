@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import NextLink from 'next/link'
 import { space, color, theme } from 'styled-system'
 import { withDocs } from 'mdx-docs'
+import isAbsoluteURL from 'is-absolute-url'
 
 const Base = styled.a`
   display: block;
@@ -27,8 +28,22 @@ Base.defaultProps = {
 }
 
 export default withDocs(
-  ({ basepath, menu, toggleMenu, closeMenu, routes, route, ...props }) => (
-    <NextLink {...props} passHref>
+  ({
+    basepath,
+    href,
+    menu,
+    toggleMenu,
+    closeMenu,
+    routes,
+    route,
+    ...props
+  }) => (
+    <NextLink
+      {...props}
+      href={href}
+      as={!isAbsoluteURL(href) && !!basepath ? basepath + href : href}
+      passHref
+    >
       <Base className={props.href === route.path ? 'active' : undefined}>
         {props.children}
       </Base>

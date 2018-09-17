@@ -39,7 +39,7 @@ export default class MyApp extends App {
             routes={routes}
             sidebar={
               <Box py={4}>
-                <SideNav basepath={basepath} />
+                <SideNav />
               </Box>
             }
             footer={<Pagination />}

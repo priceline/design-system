@@ -9,6 +9,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0",
     "@mdx-js/tag": "^0.15.0",
+    "is-absolute-url": "^2.1.0",
     "mdx-docs": "^1.0.0-9",
     "pcln-design-system": "^1.0.0-69",
     "prop-types": "^15.6.2",
