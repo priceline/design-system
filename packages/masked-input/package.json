@@ -33,6 +33,10 @@
   "jest": {
     "testMatch": [
       "**/test/**/*.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "html"
     ]
   }
 }

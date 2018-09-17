@@ -3,7 +3,7 @@ import { Rifm } from 'rifm'
 import { Input } from 'pcln-design-system'
 import creditcards from 'creditcards'
 
-export const MaskedInput = ({ value, onChange, format, ...props }) => (
+export const MaskedInput = ({ value, onChange, format, ...props }, ref) => (
   <Rifm
     value={value}
     onChange={onChange}

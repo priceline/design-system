@@ -1,6 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MaskedInput renders 1`] = `
+exports[`pcln-masked-input CreditCardInput renders 1`] = `
+<input
+  autoComplete="cc-number"
+  className="sc-jWBwVP civhqK"
+  id="test"
+  onChange={[Function]}
+  placeholder="4242-4242-4242-4242"
+  type="text"
+  value="4242"
+/>
+`;
+
+exports[`pcln-masked-input ExpirationDateInput renders 1`] = `
+<input
+  autoComplete="cc-exp"
+  className="sc-jWBwVP civhqK"
+  id="test"
+  maxLength="5"
+  onChange={[Function]}
+  placeholder="MM/YY"
+  type="text"
+  value="1020"
+/>
+`;
+
+exports[`pcln-masked-input MaskedInput renders 1`] = `
 <input
   className="sc-jWBwVP civhqK"
   id="test"
