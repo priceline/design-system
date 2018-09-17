@@ -1,0 +1,78 @@
+import Component from '@reach/component-component'
+import {
+  Label,
+  FormField,
+  Input,
+  Flex,
+  Box,
+} from 'pcln-design-system'
+import { AsYouType } from 'libphonenumber-js'
+import {
+  MaskedInput,
+  CreditCardInput,
+  ExpirationDateInput,
+} from '../src'
+
+# pcln-masked-input
+
+<Component
+  initialState={{
+    phone: '',
+    ccNumber: '',
+    ccExpiration: '',
+  }}
+  children={({ state, setState }) => (
+    <Box>
+      <Box mb={3}>
+        <Label
+          mb={1}
+          fontSize={1}
+          htmlFor='phone'>
+          Phone Number
+        </Label>
+        <MaskedInput
+          value={state.phone}
+          onChange={value => {
+            setState({ phone: value })
+          }}
+          format={str => new AsYouType('US').input(str)}
+          placeholder='(555) 555-5555'
+        />
+      </Box>
+      <Flex mx={-2}>
+        <Box width={3/4} px={2} mb={3}>
+          <Label
+            mb={1}
+            fontSize={1}
+            htmlFor='credit-card-number'>
+            Credit Card Number
+          </Label>
+          <CreditCardInput
+            id='credit-card-number'
+            name='credit-card-number'
+            value={state.ccNumber}
+            onChange={value => {
+              setState({ ccNumber: value })
+            }}
+          />
+        </Box>
+        <Box width={1/4} px={2} mb={3}>
+          <Label
+            mb={1}
+            fontSize={1}
+            htmlFor='cc-exp'>
+            Expiration Date
+          </Label>
+          <ExpirationDateInput
+            id='cc-exp'
+            name='cc-exp'
+            value={state.ccExpiration}
+            onChange={value => {
+              setState({ ccExpiration: value })
+            }}
+          />
+        </Box>
+      </Flex>
+    </Box>
+  )}
+/>
