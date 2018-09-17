@@ -8,7 +8,7 @@ exports[`Truncate generates styles 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   generates styles
 </div>
@@ -22,7 +22,7 @@ exports[`Truncate renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   renders
 </div>

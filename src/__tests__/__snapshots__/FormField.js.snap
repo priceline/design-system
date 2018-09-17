@@ -246,7 +246,7 @@ exports[`FormField renders with Select  1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -254,6 +254,9 @@ exports[`FormField renders with Select  1`] = `
   height: 24px;
   width: 24px;
   color: #687B8E;
+}
+
+.c3 {
   pointer-events: none;
 }
 
@@ -307,7 +310,7 @@ exports[`FormField renders with Select  1`] = `
         }
       />
       <svg
-        className="c3"
+        className="c3 c4"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
@@ -348,7 +351,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 24px;
 }
 
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -356,6 +359,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   height: 24px;
   width: 24px;
   color: #687B8E;
+}
+
+.c4 {
   pointer-events: none;
 }
 
@@ -428,7 +434,7 @@ exports[`FormField renders with Select and Icon 1`] = `
         }
       />
       <svg
-        className="c4"
+        className="c4 c5"
         fill="currentcolor"
         viewBox="0 0 24 24"
       >
