@@ -68,10 +68,6 @@ Object {
       "backgroundColor": "#f4f6f8",
       "color": "#001833",
     },
-    "textOnLightOrange": Object {
-      "backgroundColor": "#f68013",
-      "color": "#001833",
-    },
     "textOnOrange": Object {
       "backgroundColor": "#f68013",
       "color": "#001833",

@@ -211,10 +211,6 @@ export const colorStyles = {
     color: colors.text,
     backgroundColor: colors.orange
   },
-  textOnLightOrange: {
-    color: colors.text,
-    backgroundColor: colors.lightOrange
-  },
   whiteOnPurple: {
     color: colors.white,
     backgroundColor: colors.purple
