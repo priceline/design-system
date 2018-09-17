@@ -52,19 +52,6 @@ export default {
     backgroundColor: lightGray
   },
 
-  // unused
-  NavLink: {
-    fontSize: fontSizes[2] + 'px',
-    fontWeight: fontWeights.regular,
-    paddingLeft: space[4] + 'px',
-    paddingRight: space[4] + 'px',
-    color: colors.text,
-    '&.active': {
-      color: blue,
-      fontWeight: fontWeights.bold,
-      borderLeft: `4px solid ${blue}`
-    }
-  },
   PaginationLink: {
     color: blue,
     fontSize: fontSizes[3] + 'px'
