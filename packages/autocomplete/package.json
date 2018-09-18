@@ -25,6 +25,7 @@
     "@storybook/react": "^4.0.0-alpha.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.2",
+    "cat-names": "^2.0.0",
     "jest": "^23.6.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",

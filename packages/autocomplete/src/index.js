@@ -64,24 +64,41 @@ export const Input = withAutocomplete(PclnInput, ({ getInputProps }) =>
 )
 Input.isField = true
 
+const MenuCard = styled(Card)`
+  max-height: 256px;
+  overflow-y: auto;
+  opacity: ${props => (props.open ? 1 : 0)};
+`
+
+MenuCard.defaultProps = {
+  borderWidth: 0,
+  boxShadowSize: 'lg',
+  mt: 1
+}
+
+const MenuRoot = React.forwardRef((props, ref) => (
+  <MenuCard {...props} innerRef={ref} />
+))
+
 export const Menu = ({ children, ...props }) => (
   <AutocompleteContext.Consumer
-    children={({ match, isOpen, getMenuProps, inputValue }) =>
-      isOpen ? (
-        <Card
-          {...getMenuProps()}
-          {...props}
-          borderWidth={0}
-          boxShadowSize="lg"
-          mt={1}
-          children={React.Children.toArray(children)
-            .filter(el => match(el.props.item, inputValue))
-            .map((el, index) => React.cloneElement(el, { index }))}
-        />
-      ) : (
-        false
-      )
-    }
+    children={({ match, isOpen, getMenuProps, inputValue }) => (
+      <div
+        {...getMenuProps({
+          ...props,
+          isOpen,
+          style: {
+            opacity: isOpen ? 1 : 0.25,
+            maxHeight: 256,
+            overflowY: 'auto',
+            backgroundColor: '#eee'
+          }
+        })}
+        children={React.Children.toArray(children)
+          .filter(el => match(el.props.item, inputValue))
+          .map((el, index) => React.cloneElement(el, { index }))}
+      />
+    )}
   />
 )
 
