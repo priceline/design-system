@@ -4,9 +4,11 @@ import Downshift from 'downshift'
 import styled from 'styled-components'
 import {
   Flex,
+  Card,
   Label as PclnLabel,
   Input as PclnInput
 } from 'pcln-design-system'
+import { themeGet } from 'styled-system'
 
 export const AutocompleteContext = React.createContext()
 
@@ -55,18 +57,23 @@ export const withAutocomplete = (Component, mapProps) =>
 export const Label = withAutocomplete(PclnLabel, ({ getLabelProps }) =>
   getLabelProps()
 )
+Label.isLabel = true
 
 export const Input = withAutocomplete(PclnInput, ({ getInputProps }) =>
   getInputProps()
 )
+Input.isField = true
 
 export const Menu = ({ children, ...props }) => (
   <AutocompleteContext.Consumer
     children={({ match, isOpen, getMenuProps, inputValue }) =>
       isOpen ? (
-        <div
+        <Card
           {...getMenuProps()}
           {...props}
+          borderWidth={0}
+          boxShadowSize="lg"
+          mt={1}
           children={React.Children.toArray(children)
             .filter(el => match(el.props.item, inputValue))
             .map((el, index) => React.cloneElement(el, { index }))}
@@ -78,14 +85,26 @@ export const Menu = ({ children, ...props }) => (
   />
 )
 
-const ItemRoot = styled(Flex)({
-  '&[data-selected]': {
-    backgroundColor: 'blue'
-  },
-  '&[data-highlighted]': {
-    backgroundColor: 'yellow'
+const ItemRoot = styled(Flex)`
+  &[data-selected] {
+    color: ${themeGet('colors.white')};
+    background-color: ${themeGet('colors.blue')};
+    & svg {
+      color: ${themeGet('colors.white')};
+    }
   }
-})
+  &[data-highlighted] {
+    color: ${themeGet('colors.white')};
+    background-color: ${themeGet('colors.blue')};
+    & svg {
+      color: ${themeGet('colors.white')};
+    }
+  }
+`
+
+ItemRoot.defaultProps = {
+  alignItems: 'center'
+}
 
 export const Item = withAutocomplete(
   ItemRoot,
