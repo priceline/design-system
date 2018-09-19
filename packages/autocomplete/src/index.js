@@ -27,13 +27,13 @@ export class Autocomplete extends React.Component {
   }
 
   render() {
-    const { children, render, ...props } = this.props
+    const { children, render, style, ...props } = this.props
 
     return (
       <Downshift
         {...props}
         children={state => (
-          <div>
+          <div style={{ position: 'relative', ...style }}>
             <AutocompleteContext.Provider
               value={{ ...props, ...state }}
               children={typeof render === 'function' ? render(state) : children}
@@ -65,12 +65,18 @@ export const Input = withAutocomplete(PclnInput, ({ getInputProps }) =>
 Input.isField = true
 
 const MenuCard = styled(Card)`
-  max-height: 256px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: ${props => props.height};
   overflow-y: auto;
   opacity: ${props => (props.isOpen ? 1 : 0)};
 `
 
 MenuCard.defaultProps = {
+  bg: 'white',
+  height: '256px',
   borderWidth: 0,
   boxShadowSize: 'lg',
   mt: 1
