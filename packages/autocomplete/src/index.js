@@ -27,7 +27,7 @@ export class Autocomplete extends React.Component {
   }
 
   render() {
-    const { children, ...props } = this.props
+    const { children, render, ...props } = this.props
 
     return (
       <Downshift
@@ -36,7 +36,7 @@ export class Autocomplete extends React.Component {
           <div>
             <AutocompleteContext.Provider
               value={{ ...props, ...state }}
-              children={children}
+              children={typeof render === 'function' ? render(state) : children}
             />
           </div>
         )}
@@ -49,7 +49,7 @@ export const withAutocomplete = (Component, mapProps) =>
   React.forwardRef((props, ref) => (
     <AutocompleteContext.Consumer
       children={state => (
-        <Component ref={ref} {...mapProps({ ...props, ...state })} {...props} />
+        <Component ref={ref} {...props} {...mapProps({ ...props, ...state })} />
       )}
     />
   ))
@@ -67,7 +67,7 @@ Input.isField = true
 const MenuCard = styled(Card)`
   max-height: 256px;
   overflow-y: auto;
-  opacity: ${props => (props.open ? 1 : 0)};
+  opacity: ${props => (props.isOpen ? 1 : 0)};
 `
 
 MenuCard.defaultProps = {
@@ -83,17 +83,8 @@ const MenuRoot = React.forwardRef((props, ref) => (
 export const Menu = ({ children, ...props }) => (
   <AutocompleteContext.Consumer
     children={({ match, isOpen, getMenuProps, inputValue }) => (
-      <div
-        {...getMenuProps({
-          ...props,
-          isOpen,
-          style: {
-            opacity: isOpen ? 1 : 0.25,
-            maxHeight: 256,
-            overflowY: 'auto',
-            backgroundColor: '#eee'
-          }
-        })}
+      <MenuRoot
+        {...getMenuProps({ ...props, isOpen })}
         children={React.Children.toArray(children)
           .filter(el => match(el.props.item, inputValue))
           .map((el, index) => React.cloneElement(el, { index }))}
@@ -123,22 +114,20 @@ ItemRoot.defaultProps = {
   alignItems: 'center'
 }
 
-export const Item = withAutocomplete(
-  ItemRoot,
-  ({
-    item,
-    index,
-    getItemProps,
-    selectedItem,
-    highlightedIndex,
-    children,
-    ...props
-  }) => ({
-    px: 2,
-    py: 1,
-    ...getItemProps({ item, index, ...props }),
-    children,
-    'data-selected': selectedItem === item ? true : undefined,
-    'data-highlighted': highlightedIndex === index ? true : undefined
-  })
+export const Item = props => (
+  <AutocompleteContext.Consumer
+    children={({ item, getItemProps, selectedItem, highlightedIndex }) => (
+      <ItemRoot
+        {...getItemProps({
+          item,
+          px: 2,
+          py: 1,
+          'data-selected': selectedItem === item ? true : undefined,
+          'data-highlighted':
+            highlightedIndex === props.index ? true : undefined,
+          ...props
+        })}
+      />
+    )}
+  />
 )
