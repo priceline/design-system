@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Autocomplete renders 1`] = `
+<div
+  aria-expanded={false}
+  aria-haspopup="listbox"
+  aria-labelledby="downshift-0-label"
+  aria-owns={null}
+  role="combobox"
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <label
+    className="sc-jDwBTQ dddmWw"
+    color="gray"
+    fontSize="10px"
+    fontWeight="bold"
+    htmlFor="downshift-0-input"
+    id="downshift-0-label"
+  >
+    Test
+  </label>
+  <input
+    aria-activedescendant={null}
+    aria-autocomplete="list"
+    aria-controls={null}
+    aria-labelledby="downshift-0-label"
+    autoComplete="off"
+    className="sc-jWBwVP civhqK"
+    id="downshift-0-input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    value=""
+  />
+  <div
+    aria-labelledby="downshift-0-label"
+    className="sc-cHGsZl bUynPD sc-kGXeez jtQTmY sc-bdVaJa dtXoMn"
+    height="256px"
+    id="downshift-0-menu"
+    role="listbox"
+  />
+</div>
+`;

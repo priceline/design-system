@@ -12,39 +12,6 @@ import { themeGet } from 'styled-system'
 
 export const AutocompleteContext = React.createContext()
 
-export class Autocomplete extends React.Component {
-  static Label = Label
-  static Input = Input
-  static Menu = Menu
-  static Item = Item
-
-  static propTypes = {
-    match: PropTypes.func
-  }
-
-  static defaultProps = {
-    match: () => true
-  }
-
-  render() {
-    const { children, render, style, ...props } = this.props
-
-    return (
-      <Downshift
-        {...props}
-        children={state => (
-          <div style={{ position: 'relative', ...style }}>
-            <AutocompleteContext.Provider
-              value={{ ...props, ...state }}
-              children={typeof render === 'function' ? render(state) : children}
-            />
-          </div>
-        )}
-      />
-    )
-  }
-}
-
 export const withAutocomplete = (Component, mapProps) =>
   React.forwardRef((props, ref) => (
     <AutocompleteContext.Consumer
@@ -71,7 +38,6 @@ const MenuCard = styled(Card)`
   right: 0;
   max-height: ${props => props.height};
   overflow-y: auto;
-  opacity: ${props => (props.isOpen ? 1 : 0)};
 `
 
 MenuCard.defaultProps = {
@@ -90,17 +56,24 @@ export const Menu = ({ children, ...props }) => (
   <AutocompleteContext.Consumer
     children={({ match, isOpen, getMenuProps, inputValue }) => (
       <MenuRoot
-        {...getMenuProps({ ...props, isOpen })}
-        children={React.Children.toArray(children)
-          .filter(el => match(el.props.item, inputValue))
-          .map((el, index) => React.cloneElement(el, { index }))}
+        {...getMenuProps({
+          ...props,
+          isOpen
+        })}
+        children={
+          isOpen
+            ? React.Children.toArray(children)
+                .filter(el => match(el.props.item, inputValue))
+                .map((el, index) => React.cloneElement(el, { index }))
+            : false
+        }
       />
     )}
   />
 )
 
 const ItemRoot = styled(Flex)`
-  &[data-selected] {
+  &[aria-selected] {
     color: ${themeGet('colors.white')};
     background-color: ${themeGet('colors.blue')};
     & svg {
@@ -122,13 +95,12 @@ ItemRoot.defaultProps = {
 
 export const Item = props => (
   <AutocompleteContext.Consumer
-    children={({ item, getItemProps, selectedItem, highlightedIndex }) => (
+    children={({ item, getItemProps, highlightedIndex }) => (
       <ItemRoot
         {...getItemProps({
           item,
           px: 2,
           py: 1,
-          'data-selected': selectedItem === item ? true : undefined,
           'data-highlighted':
             highlightedIndex === props.index ? true : undefined,
           ...props
@@ -137,3 +109,36 @@ export const Item = props => (
     )}
   />
 )
+
+export class Autocomplete extends React.Component {
+  static Label = Label
+  static Input = Input
+  static Menu = Menu
+  static Item = Item
+
+  static propTypes = {
+    match: PropTypes.func
+  }
+
+  static defaultProps = {
+    match: () => true
+  }
+
+  render() {
+    const { children, style, ...props } = this.props
+
+    return (
+      <Downshift
+        {...props}
+        children={state => (
+          <div style={{ position: 'relative', ...style }}>
+            <AutocompleteContext.Provider
+              value={{ ...props, ...state }}
+              children={children}
+            />
+          </div>
+        )}
+      />
+    )
+  }
+}
