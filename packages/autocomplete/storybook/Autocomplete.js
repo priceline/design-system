@@ -17,8 +17,6 @@ export default props => (
             setState({ value: item })
           }}
           match={match}
-          defaultIsOpen
-          defaultSelectedItem={cats[0]}
         >
           <Label mb={1}>Cat</Label>
           <Input />

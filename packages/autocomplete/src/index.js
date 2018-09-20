@@ -73,12 +73,9 @@ export const Menu = ({ children, ...props }) => (
 )
 
 const ItemRoot = styled(Flex)`
-  &[aria-selected] {
-    color: ${themeGet('colors.white')};
-    background-color: ${themeGet('colors.blue')};
-    & svg {
-      color: ${themeGet('colors.white')};
-    }
+  cursor: pointer;
+  &[aria-selected='true'] {
+    background-color: ${themeGet('colors.lightBlue')};
   }
   &[data-highlighted] {
     color: ${themeGet('colors.white')};
