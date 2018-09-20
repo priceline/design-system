@@ -1,21 +1,44 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Box, FormField, Label, Input, Icon, Select, Tooltip } from '../src'
+import {
+  Flex,
+  Box,
+  FormField,
+  Label,
+  Input,
+  Icon,
+  Select,
+  Tooltip
+} from '../src'
 
 storiesOf('FormField', module)
   .add('with Icon', () => (
-    <FormField showLabel>
+    <FormField>
       <Label htmlFor="demo">Email Address</Label>
       <Icon name="email" color="blue" />
       <Input id="demo" name="demo" defaultValue="hello@example.com" />
     </FormField>
   ))
   .add('dynamic label', () => (
-    <FormField>
-      <Label htmlFor="demo">Email Address</Label>
-      <Input id="demo" name="demo" placeholder="hello@example.com" />
-    </FormField>
+    <Flex>
+      <Box px={2} width={1 / 2}>
+        <FormField>
+          <Label autoHide htmlFor="demo">
+            No value
+          </Label>
+          <Input id="demo" name="demo" placeholder="Without a value" />
+        </FormField>
+      </Box>
+      <Box px={2} width={1 / 2}>
+        <FormField>
+          <Label autoHide htmlFor="demo">
+            With value
+          </Label>
+          <Input id="demo" name="demo" value="hello@example.com" />
+        </FormField>
+      </Box>
+    </Flex>
   ))
   .add('dynamic label with value', () => (
     <FormField>
@@ -29,7 +52,7 @@ storiesOf('FormField', module)
     </FormField>
   ))
   .add('Icon to the right', () => (
-    <FormField showLabel>
+    <FormField>
       <Label htmlFor="demo">Email Address</Label>
       <Input
         id="demo"
@@ -41,7 +64,7 @@ storiesOf('FormField', module)
     </FormField>
   ))
   .add('with Select', () => (
-    <FormField showLabel>
+    <FormField>
       <Label htmlFor="demo">State</Label>
       <Icon name="pin" color="blue" />
       <Select id="demo" name="demo">
@@ -51,7 +74,7 @@ storiesOf('FormField', module)
     </FormField>
   ))
   .add('with successful validation', () => (
-    <FormField showLabel>
+    <FormField>
       <Label htmlFor="demo">Email Address</Label>
       <Input
         id="demo"
@@ -64,7 +87,7 @@ storiesOf('FormField', module)
   ))
   .add('with error Tooltip', () => (
     <Box>
-      <FormField showLabel>
+      <FormField>
         <Label htmlFor="demo">Email Address</Label>
         <Input
           id="demo"

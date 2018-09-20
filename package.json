@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "2.0.0-0",
+  "version": "1.0.0-70",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
     "deploy": "storybook-to-ghpages",
-    "storybook": "build-storybook -c .storybook -o .site/storybook",
+    "storybook": "build-storybook -c .storybook -o docs/out/storybook",
     "coverage": "jest --coverage",
     "codecov": "codecov",
     "chromatic": "chromatic test --exit-zero-on-changes --storybook-addon --script-name start",
@@ -75,16 +75,17 @@
       "lcov",
       "html"
     ],
+    "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "dist/"
     ],
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "clean-tag": "^1.0.4",
+    "clean-tag": "^1.1.0",
     "prop-types": "^15.5.10",
-    "rc-slider": "^8.6.2",
-    "styled-system": "^2.1.0"
+    "rc-slider": "^8.5.0",
+    "styled-system": "^2.3.6"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0"

@@ -8,7 +8,8 @@ const FormField = props => {
 
   const children = React.Children.toArray(props.children)
   const [field] = children.filter(child => child.type.isField)
-  const showLabel = props.showLabel || (field && !!field.props.value)
+  const [label] = children.filter(child => child.type.isLabel)
+  const showLabel = !label.props.autoHide || (field && !!field.props.value)
 
   const styled = children.map((child, i, arr) => {
     if (child.type.isField && arr[i - 1] && arr[i - 1].type.isIcon)
@@ -27,25 +28,23 @@ const FormField = props => {
     return child
   })
 
-  const [label] = children.filter(child => child.type.isLabel).map(label =>
-    React.cloneElement(label, {
-      fontSize: 10,
-      ml: iconBefore ? '40px' : '12px',
-      pt: '6px',
-      mb: '-20px',
-      style: {
-        ...label.props.style,
-        height: 20,
-        transitionProperty: 'opacity',
-        transitionDuration: '.1s',
-        opacity: showLabel ? 1 : 0
-      }
-    })
-  )
+  const styledLabel = React.cloneElement(label, {
+    fontSize: 10,
+    ml: iconBefore ? '40px' : '12px',
+    pt: '6px',
+    mb: '-20px',
+    style: {
+      ...label.props.style,
+      height: 20,
+      transitionProperty: 'opacity',
+      transitionDuration: '.1s',
+      opacity: showLabel ? 1 : 0
+    }
+  })
 
   return (
     <div>
-      {label}
+      {styledLabel}
       <IconField>{styled}</IconField>
     </div>
   )
@@ -68,7 +67,6 @@ const childrenPropType = (props, propName, componentName) => {
 }
 
 FormField.propTypes = {
-  showLabel: PropTypes.bool,
   children: childrenPropType
 }
 
