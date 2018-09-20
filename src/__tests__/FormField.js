@@ -53,11 +53,13 @@ describe('FormField', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with showLabel prop', () => {
+  test('renders with Label autoHide prop', () => {
     const json = renderer
       .create(
-        <FormField showLabel>
-          <Label htmlFor="email">Email</Label>
+        <FormField>
+          <Label autoHide htmlFor="email">
+            Email
+          </Label>
           <Icon name="email" />
           <Input id="email" />
         </FormField>
@@ -66,11 +68,13 @@ describe('FormField', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('shows label with field value', () => {
+  test('shows Label with autoHide prop and field value', () => {
     const json = renderer
       .create(
         <FormField>
-          <Label htmlFor="email">Email</Label>
+          <Label autoHide htmlFor="email">
+            Email
+          </Label>
           <Icon name="email" />
           <Input id="email" value="hello@example.com" />
         </FormField>

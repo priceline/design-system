@@ -84,7 +84,7 @@ exports[`FormField renders 1`] = `
     style={
       Object {
         "height": 20,
-        "opacity": 0,
+        "opacity": 1,
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
       }
@@ -100,10 +100,10 @@ exports[`FormField renders 1`] = `
       id="email"
       style={
         Object {
-          "paddingBottom": 14,
+          "paddingBottom": 8,
           "paddingLeft": undefined,
           "paddingRight": undefined,
-          "paddingTop": 14,
+          "paddingTop": 20,
           "transitionDuration": ".1s",
           "transitionProperty": "padding-top, padding-bottom",
         }
@@ -197,7 +197,7 @@ exports[`FormField renders with Icon 1`] = `
     style={
       Object {
         "height": 20,
-        "opacity": 0,
+        "opacity": 1,
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
       }
@@ -210,6 +210,146 @@ exports[`FormField renders with Icon 1`] = `
   >
     <input
       className="c2"
+      id="email"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 40,
+          "paddingRight": undefined,
+          "paddingTop": 20,
+          "transitionDuration": ".1s",
+          "transitionProperty": "padding-top, padding-bottom",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`FormField renders with Label autoHide prop 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 24px;
+  width: 24px;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #d1d6db;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #d1d6db;
+  box-shadow: 0 0 0 1px #d1d6db;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #687B8E;
+}
+
+.c3::-moz-placeholder {
+  color: #687B8E;
+}
+
+.c3:-ms-input-placeholder {
+  color: #687B8E;
+}
+
+.c3::placeholder {
+  color: #687B8E;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: -20px;
+  margin-left: 40px;
+  padding-top: 6px;
+  font-size: 10px;
+  color: #687B8E;
+  font-weight: 700;
+}
+
+<div>
+  <label
+    className="c0"
+    color="gray"
+    fontSize={10}
+    fontWeight="bold"
+    htmlFor="email"
+    style={
+      Object {
+        "height": 20,
+        "opacity": 0,
+        "transitionDuration": ".1s",
+        "transitionProperty": "opacity",
+      }
+    }
+  >
+    Email
+  </label>
+  <div
+    className="c1"
+  >
+    <svg
+      className="c2"
+      fill="currentcolor"
+      style={
+        Object {
+          "alignSelf": "center",
+          "flex": "none",
+          "marginLeft": 8,
+          "marginRight": -32,
+          "pointerEvents": "none",
+        }
+      }
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
+      	l-8,5L4,8V6l8,5l8-5V8z"
+      />
+    </svg>
+    <input
+      className="c3"
       id="email"
       style={
         Object {
@@ -443,146 +583,6 @@ exports[`FormField renders with Select and Icon 1`] = `
         />
       </svg>
     </div>
-  </div>
-</div>
-`;
-
-exports[`FormField renders with showLabel prop 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  height: 24px;
-  width: 24px;
-}
-
-.c3 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 0px;
-  border-style: solid;
-  border-color: #d1d6db;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::-moz-placeholder {
-  color: #687B8E;
-}
-
-.c3:-ms-input-placeholder {
-  color: #687B8E;
-}
-
-.c3::placeholder {
-  color: #687B8E;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
-}
-
-.c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: -20px;
-  margin-left: 40px;
-  padding-top: 6px;
-  font-size: 10px;
-  color: #687B8E;
-  font-weight: 700;
-}
-
-<div>
-  <label
-    className="c0"
-    color="gray"
-    fontSize={10}
-    fontWeight="bold"
-    htmlFor="email"
-    style={
-      Object {
-        "height": 20,
-        "opacity": 1,
-        "transitionDuration": ".1s",
-        "transitionProperty": "opacity",
-      }
-    }
-  >
-    Email
-  </label>
-  <div
-    className="c1"
-  >
-    <svg
-      className="c2"
-      fill="currentcolor"
-      style={
-        Object {
-          "alignSelf": "center",
-          "flex": "none",
-          "marginLeft": 8,
-          "marginRight": -32,
-          "pointerEvents": "none",
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-      	l-8,5L4,8V6l8,5l8-5V8z"
-      />
-    </svg>
-    <input
-      className="c3"
-      id="email"
-      style={
-        Object {
-          "paddingBottom": 8,
-          "paddingLeft": 40,
-          "paddingRight": undefined,
-          "paddingTop": 20,
-          "transitionDuration": ".1s",
-          "transitionProperty": "padding-top, padding-bottom",
-        }
-      }
-    />
   </div>
 </div>
 `;
