@@ -28,8 +28,8 @@ describe('Button', () => {
     expect(json).toHaveStyleRule('font-size', '16px')
   })
 
-  test('fullWidth prop sets width to 100%', () => {
-    const json = renderer.create(<Button fullWidth />).toJSON()
+  test('width prop sets width to 100%', () => {
+    const json = renderer.create(<Button width={1} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('width', '100%')
   })
@@ -45,6 +45,13 @@ describe('Button', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.darkBlue, {
       modifier: ':hover'
+    })
+  })
+
+  describe('deprecated props', () => {
+    test('shims deprecated fullWidth prop', () => {
+      const json = renderer.create(<Button fullWidth />).toJSON()
+      expect(json).toHaveStyleRule('width', '100%')
     })
   })
 })

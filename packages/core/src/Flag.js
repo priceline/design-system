@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { color, themeGet, propTypes } from 'styled-system'
+import { color, themeGet } from 'styled-system'
 import Flex from './Flex'
 import Hide from './Hide'
 import Box from './Box'
@@ -71,7 +71,7 @@ const Flag = ({ color, bg, children, width, ...props }) => (
 )
 
 Flag.propTypes = {
-  ...propTypes.color
+  ...color.propTypes
 }
 
 Flag.defaultProps = {

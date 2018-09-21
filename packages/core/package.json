@@ -6,12 +6,8 @@
   "scripts": {
     "prepare": "npm run icons && babel src -d dist --ignore __tests__",
     "icons": "node scripts/parse-icons.js",
-    "start": "start-storybook -p 8000 -c .storybook",
-    "deploy": "storybook-to-ghpages",
-    "storybook": "build-storybook -c .storybook -o .site/storybook",
     "coverage": "jest --coverage",
     "codecov": "codecov",
-    "chromatic": "chromatic test --exit-zero-on-changes --storybook-addon --script-name start",
     "test": "jest"
   },
   "author": "Priceline",
@@ -39,9 +35,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@storybook/addon-info": "^3.2.0",
-    "@storybook/react": "^3.2.3",
-    "@storybook/storybook-deployer": "^2.0.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-jest": "^20.0.3",
@@ -55,7 +48,6 @@
     "jest": "^20.0.4",
     "jest-styled-components": "^5.0.1",
     "react": "^15.6.1",
-    "react-chromatic": "^0.7.10",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "recompose": "^0.26.0",

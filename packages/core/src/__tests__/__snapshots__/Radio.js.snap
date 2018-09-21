@@ -5,13 +5,11 @@ exports[`Radio Disabled, rendering 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 24px;
-  width: 24px;
 }
 
 .c1 {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c2 {
@@ -32,7 +30,7 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c3 {
@@ -65,7 +63,9 @@ exports[`Radio Disabled, rendering 1`] = `
     <svg
       className="c3 c4"
       fill="currentcolor"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
@@ -81,13 +81,11 @@ exports[`Radio Not Selected, rendering 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 24px;
-  width: 24px;
 }
 
 .c1 {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c1:hover {
@@ -112,7 +110,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c3 {
@@ -144,7 +142,9 @@ exports[`Radio Not Selected, rendering 1`] = `
     <svg
       className="c3 c4"
       fill="currentcolor"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
@@ -160,13 +160,11 @@ exports[`Radio Selected, rendering 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 24px;
-  width: 24px;
 }
 
 .c1 {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c2 {
@@ -187,7 +185,7 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c3 {
@@ -220,7 +218,9 @@ exports[`Radio Selected, rendering 1`] = `
     <svg
       className="c3 c4"
       fill="currentcolor"
+      height={24}
       viewBox="0 0 24 24"
+      width={24}
     >
       <path
         d="M12,7c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S14.8,7,12,7z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10

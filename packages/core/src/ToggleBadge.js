@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme as themeGet, space, fontSize, propTypes } from 'styled-system'
+import { themeGet, space, fontSize } from 'styled-system'
 import theme from './theme'
 
 const ToggleBadge = styled.button`
@@ -24,9 +24,8 @@ ToggleBadge.displayName = 'ToggleBadge'
 
 ToggleBadge.propTypes = {
   selected: PropTypes.bool,
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  ...propTypes.color
+  ...space.propTypes,
+  ...fontSize.propTypes
 }
 
 ToggleBadge.defaultProps = {

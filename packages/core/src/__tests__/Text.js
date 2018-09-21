@@ -8,8 +8,8 @@ describe('Text', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('align prop sets text-align', () => {
-    const json = renderer.create(<Text align="center" />).toJSON()
+  test('textAlign prop sets text-align', () => {
+    const json = renderer.create(<Text textAlign="center" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')
   })
@@ -53,5 +53,12 @@ describe('Text', () => {
     const json = renderer.create(<Text mt={2} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('margin-top', theme.space[2] + 'px')
+  })
+
+  describe('deprecated props', () => {
+    test('shims deprecated align prop', () => {
+      const json = renderer.create(<Text align="center" />).toJSON()
+      expect(json).toHaveStyleRule('text-align', 'center')
+    })
   })
 })

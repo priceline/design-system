@@ -4,20 +4,17 @@ node_js:
 before_script: npm run bootstrap
 after_success:
   - npm run codecov
-  - "if [ $TRAVIS_EVENT_TYPE = 'push' ]
-    then
-      npm run chromatic -- --app-code=$CHROMATIC_APPCODE
-    fi"
 before_deploy:
-  - npm run storybook
   - cd docs
   - npm install
   - npm run build
+  - touch out/.nojekyll
   - cd ..
+  - npm run storybook
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN
-  local_dir: .site
+  local_dir: docs/out
   on:
     branch: master

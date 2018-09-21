@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Range } from 'rc-slider'
-import { space, color, theme as getTheme, propTypes } from 'styled-system'
+import { space, color, themeGet } from 'styled-system'
 import theme from './theme'
 
 const Slider = styled(Range)`
@@ -24,7 +24,7 @@ const Slider = styled(Range)`
   & .rc-slider-rail {
     position: absolute;
     width: 100%;
-    background-color: ${getTheme('colors.lightGray')};
+    background-color: ${themeGet('colors.lightGray')};
     border-radius: 9999px;
   }
 
@@ -49,12 +49,12 @@ const Slider = styled(Range)`
     &:active {
     }
     &:focus {
-      box-shadow: 0 0 0 2px ${getTheme('colors.alphablue')};
+      box-shadow: 0 0 0 2px ${themeGet('colors.alphablue')};
     }
   }
 
   &.rc-slider-disabled {
-    color: ${getTheme('colors.borderGray')};
+    color: ${themeGet('colors.borderGray')};
     .rc-slider-track {
     }
     .rc-slider-handle {
@@ -71,8 +71,8 @@ Slider.defaultProps = {
 }
 
 Slider.propTypes = {
-  ...propTypes.space,
-  ...propTypes.color
+  ...space.propTypes,
+  ...color.propTypes
 }
 
 export default Slider
