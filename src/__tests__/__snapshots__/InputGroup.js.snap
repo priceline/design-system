@@ -13,7 +13,7 @@ exports[`InputGroup renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
 }
 
 .c0 > .sc-bdVaJa {

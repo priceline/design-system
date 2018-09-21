@@ -20,7 +20,7 @@ exports[`Select renders 1`] = `
   margin-left: -32px;
   height: 24px;
   width: 24px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c2 {
@@ -39,7 +39,7 @@ exports[`Select renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 12px;
   padding-right: 32px;

@@ -11,7 +11,7 @@ exports[`Label Label hidden renders 1`] = `
   width: 100%;
   margin: 0;
   font-size: 10px;
-  color: #687B8E;
+  color: #4f6f8f;
   font-weight: 700;
   position: absolute;
   width: 1px;
@@ -40,7 +40,7 @@ exports[`Label Label nowrap renders 1`] = `
   width: 100%;
   margin: 0;
   font-size: 10px;
-  color: #687B8E;
+  color: #4f6f8f;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -64,7 +64,7 @@ exports[`Label it renders 1`] = `
   width: 100%;
   margin: 0;
   font-size: 10px;
-  color: #687B8E;
+  color: #4f6f8f;
   font-weight: 700;
 }
 
