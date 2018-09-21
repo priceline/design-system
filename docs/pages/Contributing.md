@@ -60,8 +60,7 @@ npm test -- -u
 ### Storybook
 
 We use [Storybook][storybook] for isolated UI component development.
-
-To run storybook locally:
+To run storybook locally from the root directory:
 
 ```sh
 npm start
