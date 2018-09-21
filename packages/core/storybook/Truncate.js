@@ -15,11 +15,9 @@ Duo Reges: constructio interrete. Mihi enim satis est, ipsis non satis. Si enim 
 `
 
 storiesOf('Truncate', module)
-  .add('Without Container', () => (
-    <Truncate width={50}>{loripsum}</Truncate>
-  ))
+  .add('Without Container', () => <Truncate width={50}>{loripsum}</Truncate>)
   .add('With Container', () => (
-    <Box width={3/10}>
+    <Box width={3 / 10}>
       <Truncate>{loripsum}</Truncate>
     </Box>
   ))

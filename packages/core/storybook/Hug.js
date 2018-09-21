@@ -14,7 +14,8 @@ Hide.span = Hide.withComponent('span')
 const responsiveText = (
   <Text.span>
     Today‘s best deal! You save <Text.span bold>$300</Text.span>
-    <Hide.span xs> for your party of 2</Hide.span>.&nbsp;
+    <Hide.span xs> for your party of 2</Hide.span>
+    .&nbsp;
   </Text.span>
 )
 
