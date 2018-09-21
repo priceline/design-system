@@ -1,4 +1,5 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 import { Box, Text, Icon } from 'pcln-design-system'
 import catNames from 'cat-names'
 import Component from '@reach/component-component'
@@ -7,7 +8,7 @@ import { Autocomplete, Label, Input, Menu, Item } from '../src'
 const cats = catNames.all
 const match = (item, value) => item.includes(value)
 
-export default props => (
+storiesOf('Autocomplete', module).add('default', () => (
   <Component
     initialState={{ value: '' }}
     children={({ state, setState }) => (
@@ -38,4 +39,4 @@ export default props => (
       </Box>
     )}
   />
-)
+))

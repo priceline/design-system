@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "babel src -d dist",
-    "start": "start-storybook -p 8002 -c storybook",
     "test": "jest"
   },
   "keywords": [],
@@ -24,7 +23,6 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@reach/component-component": "^0.1.1",
-    "@storybook/react": "^4.0.0-alpha.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.2",
     "cat-names": "^2.0.0",
