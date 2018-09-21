@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconField renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #c0cad5;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c2::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c2:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c2::placeholder {
+  color: #4f6f8f;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    fill="currentcolor"
+    height={24}
+    style={
+      Object {
+        "alignSelf": "center",
+        "flex": "none",
+        "marginLeft": 8,
+        "marginRight": -32,
+        "pointerEvents": "none",
+      }
+    }
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M9,11H7v2h2V11z M13,11h-2v2h2V11z M17,11h-2v2h2V11z M19,4h-1V2h-2v2H8V2H6v2H5
+    	C3.9,4,3,4.9,3,6v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V6C21,4.9,20.1,4,19,4z M19,20H5V9h14V20z"
+    />
+  </svg>
+  <input
+    className="c2"
+    id="test"
+    style={
+      Object {
+        "paddingLeft": 40,
+        "paddingRight": undefined,
+      }
+    }
+  />
+</div>
+`;

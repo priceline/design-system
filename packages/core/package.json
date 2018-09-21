@@ -1,0 +1,87 @@
+{
+  "name": "pcln-design-system",
+  "version": "2.0.0-0",
+  "description": "Priceline Design System",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
+    "icons": "node scripts/parse-icons.js",
+    "coverage": "jest --coverage",
+    "codecov": "codecov",
+    "test": "jest"
+  },
+  "author": "Priceline",
+  "contributors": [
+    {
+      "name": "Brent Jackson",
+      "email": "jxnblk@gmail.com"
+    },
+    {
+      "name": "Malek Hakim",
+      "email": "hakimelek@gmail.com"
+    },
+    {
+      "name": "Ben Chen",
+      "email": "benjaminlchen@gmail.com"
+    },
+    {
+      "name": "Evan Pipta",
+      "email": "3pipta@gmail.com"
+    },
+    {
+      "name": "Jonathan Schwarz",
+      "email": "jonathan.e.schwarz@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "camelcase": "^4.1.0",
+    "codecov": "^2.3.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.2",
+    "jest": "^20.0.4",
+    "jest-styled-components": "^5.0.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "recompose": "^0.26.0",
+    "styled-components": "^3.2.4",
+    "stylis": "^3.4.9",
+    "svgi": "^1.1.0"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "dist/"
+    ],
+    "setupTestFrameworkScriptFile": "./test-setup.js"
+  },
+  "dependencies": {
+    "clean-tag": "^1.0.4",
+    "prop-types": "^15.5.10",
+    "rc-slider": "^8.6.2",
+    "styled-system": "^2.1.0"
+  },
+  "peerDependencies": {
+    "styled-components": ">=2.0.0 || >=3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pricelinelabs/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pricelinelabs/design-system/issues"
+  },
+  "homepage": "https://github.com/pricelinelabs/design-system#readme"
+}

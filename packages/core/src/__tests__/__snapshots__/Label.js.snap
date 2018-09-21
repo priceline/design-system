@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Label hidden renders 1`] = `
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+  color: #4f6f8f;
+  font-weight: 700;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+<label
+  className="c0"
+  color="gray"
+  fontSize="10px"
+  fontWeight="bold"
+  hidden={true}
+/>
+`;
+
+exports[`Label Label nowrap renders 1`] = `
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+  color: #4f6f8f;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+<label
+  className="c0"
+  color="gray"
+  fontSize="10px"
+  fontWeight="bold"
+/>
+`;
+
+exports[`Label it renders 1`] = `
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+  color: #4f6f8f;
+  font-weight: 700;
+}
+
+<label
+  className="c0"
+  color="gray"
+  fontSize="10px"
+  fontWeight="bold"
+/>
+`;
