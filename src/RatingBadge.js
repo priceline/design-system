@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { fontWeight, borderRadius, propTypes } from 'styled-system'
+import { fontWeight, borderRadius } from 'styled-system'
 import Box from './Box'
 import theme from './theme'
 
@@ -19,8 +19,8 @@ RatingBadge.defaultProps = {
 }
 
 RatingBadge.propTypes = {
-  ...propTypes.fontWeight,
-  ...propTypes.borderRadius
+  ...fontWeight.propTypes,
+  ...borderRadius.propTypes
 }
 
 export default RatingBadge

@@ -7,20 +7,22 @@ const image =
 
 storiesOf('BlockLink', module)
   .add('containing BackgroundImage', () => (
-    <Flex justify="center" align="center" color="white">
+    <Flex justifyContent="center" alignItems="center" color="white">
       <BlockLink href="https://www.priceline.com" target="_blank">
         <BackgroundImage image={image} width="640px">
           <Box p={4}>
-            <Text align="center">Click to open priceline.com in new tab!</Text>
+            <Text textAlign="center">
+              Click to open priceline.com in new tab!
+            </Text>
           </Box>
         </BackgroundImage>
       </BlockLink>
     </Flex>
   ))
   .add('composition without container', () => (
-    <Flex justify="center" align="center" color="purple">
+    <Flex justifyContent="center" alignItems="center" color="purple">
       <BlockLink href="https://www.google.com">
-        <Text fontSize={2} bold align="center">
+        <Text fontSize={2} bold textAlign="center">
           Click to go to google.com!
         </Text>
       </BlockLink>

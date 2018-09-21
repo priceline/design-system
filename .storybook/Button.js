@@ -33,5 +33,5 @@ storiesOf('Button', module)
       </Button>
     </div>
   ))
-  .add('fullWidth', () => <Button fullWidth>Full Width</Button>)
+  .add('width', () => <Button width={1}>Full Width</Button>)
   .add('disabled', () => <Button disabled>Disabled</Button>)

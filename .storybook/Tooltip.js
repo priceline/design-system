@@ -32,8 +32,8 @@ storiesOf('Tooltip', module)
     </Box>
   ))
   .add('With Anchors', () => (
-    <FlexColumn justify={'space-between'} wrap={'wrap'}>
-      <Box width={'300px'} p={2} my={2}>
+    <FlexColumn justifyContent="space-between" wrap="wrap">
+      <Box width={300} p={2} my={2}>
         <Tooltip top left bg="blue" color="white">
           top left tooltip
         </Tooltip>

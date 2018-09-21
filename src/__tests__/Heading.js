@@ -36,7 +36,7 @@ describe('Heading', () => {
     'Heading component using <Text> component properties'
   test(usingTextPropsTestCase, () => {
     const json = renderer
-      .create(<Heading align="center" color={theme.colors['gray']} />)
+      .create(<Heading textAlign="center" color={theme.colors['gray']} />)
       .toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')

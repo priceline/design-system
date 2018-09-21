@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme as themeGet, space, fontSize, color } from 'styled-system'
+import { themeGet, space, fontSize, color } from 'styled-system'
 import theme from './theme'
 
 const Stamp = styled.div`
@@ -21,16 +20,10 @@ const Stamp = styled.div`
 
 Stamp.displayName = 'Stamp'
 
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
-
 Stamp.propTypes = {
-  bg: PropTypes.string,
-  px: numberStringOrArray,
-  py: numberStringOrArray
+  ...space.propTypes,
+  ...fontSize.propTypes,
+  ...color.propTypes
 }
 
 Stamp.defaultProps = {

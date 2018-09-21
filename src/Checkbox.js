@@ -42,6 +42,9 @@ const CheckBoxWrapper = styled(Box)`
     }
   }
 `
+CheckBoxWrapper.defaultProps = {
+  theme
+}
 
 CheckBoxWrapper.defaultProps = {
   theme
@@ -57,18 +60,13 @@ const StyledInput = styled.input`
 Checkbox.displayName = 'Checkbox'
 
 Checkbox.propTypes = {
-  name: PropTypes.string,
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
-  defaultChecked: PropTypes.bool,
-  disabled: PropTypes.bool,
   onChange: PropTypes.func.isRequired
 }
 
 Checkbox.defaultProps = {
-  size: 20,
-  disabled: false,
-  defaultChecked: false
+  size: 20
 }
 
 export default Checkbox

@@ -29,7 +29,7 @@ Prop | Type | Description
 ---|---|---
 `radius` | string | Custom button radius in pixel
 `size` | string | Sets button size to small, medium or large
-`fullWidth` | boolean | Sets button width to fullWidth
+`width` | number, string, or array | Sets button width
 
 ## GreenButton
 
