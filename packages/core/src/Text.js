@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
+  textStyle,
   fontSize,
   fontWeight,
   textAlign,
   lineHeight,
   space,
-  color,
-  propTypes
+  color
 } from 'styled-system'
 import theme from './theme'
+import { mapProps, deprecatedPropType } from './utils'
 
 export const caps = props =>
   props.caps
@@ -24,7 +25,11 @@ export const regular = props =>
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
-const Text = styled.div`
+const Text = mapProps(({ align, ...props }) => ({
+  textAlign: align,
+  ...props
+}))(styled.div`
+  ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${textAlign}
@@ -34,20 +39,22 @@ const Text = styled.div`
   ${caps}
   ${regular}
   ${bold}
-`
+`)
 
 Text.displayName = 'Text'
 
 Text.propTypes = {
-  ...propTypes.fontSize,
-  ...propTypes.fontWeight,
-  ...propTypes.textAlign,
-  ...propTypes.lineHeight,
-  ...propTypes.space,
-  ...propTypes.color,
+  ...textStyle.propTypes,
+  ...fontSize.propTypes,
+  ...fontWeight.propTypes,
+  ...textAlign.propTypes,
+  ...lineHeight.propTypes,
+  ...space.propTypes,
+  ...color.propTypes,
   caps: PropTypes.bool,
   regular: PropTypes.bool,
-  bold: PropTypes.bool
+  bold: PropTypes.bool,
+  align: deprecatedPropType('textAlign')
 }
 
 Text.defaultProps = {

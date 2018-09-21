@@ -5,7 +5,7 @@ exports[`RatingBadge renders 1`] = `
   padding-left: 8px;
   padding-right: 8px;
   color: #fff;
-  background-color: #fa0;
+  background-color: #f68013;
 }
 
 .c0 {

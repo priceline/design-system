@@ -48,29 +48,98 @@ const letterSpacings = {
   caps: '0.025em'
 }
 
+export const textStyles = {
+  display8: {
+    fontSize: fontSizes[8] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display7: {
+    fontSize: fontSizes[7] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display6: {
+    fontSize: fontSizes[6] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display5: {
+    fontSize: fontSizes[5] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display4: {
+    fontSize: fontSizes[4] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display3: {
+    fontSize: fontSizes[3] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display2: {
+    fontSize: fontSizes[2] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display1: {
+    fontSize: fontSizes[1] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display
+  },
+  display0: {
+    fontSize: fontSizes[0] + 'px',
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.display,
+    letterSpacing: letterSpacings.caps,
+    textTransform: 'uppercase'
+  },
+  body2: {
+    fontSize: fontSizes[2] + 'px',
+    fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.standard
+  },
+  body1: {
+    fontSize: fontSizes[1] + 'px',
+    fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.standard
+  },
+  body0: {
+    fontSize: fontSizes[0] + 'px',
+    fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.standard
+  }
+}
+
 // color palette
 const black = '#000'
 const white = '#fff'
 const text = '#001833'
-const lightBlue = '#cdf'
-const blue = '#007aff' // primary
+const lightBlue = '#e8f2ff'
+const blue = '#007aff'
 const darkBlue = '#049'
-const lightGray = '#f6f8fa'
-const borderGray = '#d1d6db'
-const gray = '#687B8E' // primary
+const lightGray = '#f4f6f8'
+const borderGray = '#c0cad5'
+const gray = '#4f6f8f'
 const darkGray = '#364049'
-const lightGreen = '#cec'
-const green = '#0a0' // secondary
+const lightGreen = '#ecf7ec'
+const green = '#0a0'
 const darkGreen = '#060'
-const lightRed = '#fcc'
-const red = '#c00' // secondary
+const lightRed = '#fbebeb'
+const red = '#c00'
 const darkRed = '#800'
-const lightOrange = '#feb'
-const orange = '#fa0' // secondary
-const darkOrange = '#a50'
-const lightPurple = '#ecf'
-const purple = '#70b' // secondary
-const darkPurple = '#407'
+const orange = '#f68013'
+const darkOrange = '#f06f20'
+const lightPurple = '#f5ebfa'
+const purple = '#70b'
+const lightYellow = '#fedc2a'
+const yellow = '#fff3c0'
+
+// deprecated aliases
+const darkPurple = purple
+const lightOrange = orange
 
 const colors = {
   black,
@@ -90,10 +159,12 @@ const colors = {
   lightRed,
   darkRed,
   orange,
-  lightOrange,
   darkOrange,
   purple,
   lightPurple,
+
+  // deprecated
+  lightOrange,
   darkPurple
 }
 
@@ -140,10 +211,6 @@ export const colorStyles = {
     color: colors.text,
     backgroundColor: colors.orange
   },
-  textOnLightOrange: {
-    color: colors.text,
-    backgroundColor: colors.lightOrange
-  },
   whiteOnPurple: {
     color: colors.white,
     backgroundColor: colors.purple
@@ -175,6 +242,10 @@ export const colorStyles = {
   purpleOnWhite: {
     color: colors.purple,
     backgroundColor: colors.white
+  },
+  whiteOnDarkOrange: {
+    color: colors.white,
+    backgroundColor: colors.darkOrange
   }
 }
 
@@ -235,6 +306,7 @@ const theme = {
   letterSpacings,
   regular,
   bold,
+  textStyles,
   colors,
   colorStyles,
   radii,

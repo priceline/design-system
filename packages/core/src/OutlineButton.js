@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { color } from 'styled-system'
 import Button from './Button'
 import theme from './theme'
 

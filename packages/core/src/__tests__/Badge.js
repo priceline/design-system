@@ -43,13 +43,6 @@ describe('Badge', () => {
     expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
-  test('bg lightOrange sets background-color and color', () => {
-    const json = renderer.create(<Badge bg="lightOrange" />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightOrange)
-    expect(json).toHaveStyleRule('color', theme.colors.darkOrange)
-  })
-
   test('bg blue sets background-color and color', () => {
     const json = renderer.create(<Badge bg="blue" />).toJSON()
     expect(json).toMatchSnapshot()

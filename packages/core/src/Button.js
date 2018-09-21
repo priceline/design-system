@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { space } from 'styled-system'
+import { width, space } from 'styled-system'
 import theme from './theme'
+import { mapProps, deprecatedPropType } from './utils'
 
 const size = props => {
   switch (props.size) {
@@ -28,9 +29,10 @@ const size = props => {
   }
 }
 
-const fullWidth = props => (props.fullWidth ? { width: '100%' } : null)
-
-const Button = styled.button`
+const Button = mapProps(({ fullWidth, ...props }) => ({
+  width: fullWidth ? 1 : undefined,
+  ...props
+}))(styled.button`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -55,35 +57,14 @@ const Button = styled.button`
       props.disabled ? null : props.theme.colors.darkBlue};
   }
 
-  ${fullWidth} ${size} ${space};
-`
-
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array
-])
+  ${width} ${size} ${space};
+`)
 
 Button.propTypes = {
-  /** Size */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  fullWidth: PropTypes.bool,
-  /** Margin */
-  m: numberStringOrArray,
-  mt: numberStringOrArray,
-  mr: numberStringOrArray,
-  mb: numberStringOrArray,
-  ml: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray,
-  /** Padding */
-  p: numberStringOrArray,
-  pt: numberStringOrArray,
-  pr: numberStringOrArray,
-  pb: numberStringOrArray,
-  pl: numberStringOrArray,
-  px: numberStringOrArray,
-  py: numberStringOrArray
+  ...width.propTypes,
+  ...space.propTypes,
+  fullWidth: deprecatedPropType('width')
 }
 
 Button.defaultProps = {
