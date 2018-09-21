@@ -5,7 +5,7 @@ exports[`BackgroundImage renders 1`] = `
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #687B8E;
+  background-color: #4f6f8f;
 }
 
 <div
@@ -18,7 +18,7 @@ exports[`BackgroundImage renders with height 1`] = `
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #687B8E;
+  background-color: #4f6f8f;
   height: 320px;
 }
 
@@ -33,7 +33,7 @@ exports[`BackgroundImage renders with image 1`] = `
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #687B8E;
+  background-color: #4f6f8f;
   background-image: url(hello.png);
 }
 

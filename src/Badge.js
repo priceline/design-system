@@ -34,10 +34,6 @@ const type = props => {
       backgroundColor: props.theme.colors.orange,
       color: props.theme.colors.text
     },
-    lightOrange: {
-      backgroundColor: props.theme.colors.lightOrange,
-      color: props.theme.colors.darkOrange
-    },
     gray: {
       backgroundColor: props.theme.colors.gray,
       color: props.theme.colors.white

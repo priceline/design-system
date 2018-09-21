@@ -44,33 +44,33 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   margin-top: -20px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c6::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c6:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c6::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c6::-ms-clear {
@@ -95,7 +95,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
   margin-top: 6px;
   padding-left: 40px;
   font-size: 10px;
-  color: #687B8E;
+  color: #4f6f8f;
   font-weight: 700;
 }
 
@@ -218,32 +218,32 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .c5::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-ms-clear {
@@ -361,32 +361,32 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .c5::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-ms-clear {
@@ -504,32 +504,32 @@ exports[`FormField it renders a with a both icons 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .c5::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-ms-clear {
@@ -630,31 +630,31 @@ exports[`FormField it renders a with a conditional right side icon 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 8px;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3::-ms-clear {
@@ -735,31 +735,31 @@ exports[`FormField it renders a with a left side icon 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 40px;
 }
 
 .c5::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-ms-clear {
@@ -855,32 +855,32 @@ exports[`FormField it renders a with a right side icon 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 8px;
   padding-right: 40px;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c3::-ms-clear {
@@ -977,31 +977,31 @@ exports[`FormField it renders using FormField alias 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
   padding-left: 40px;
 }
 
 .c5::-webkit-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-moz-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5:-ms-input-placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::placeholder {
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5::-ms-clear {
@@ -1090,7 +1090,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5 {
@@ -1109,7 +1109,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 8px;
   padding-right: 32px;
@@ -1214,7 +1214,7 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c7 {
@@ -1233,7 +1233,7 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 40px;
   padding-right: 32px;
@@ -1342,7 +1342,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5 {
@@ -1361,7 +1361,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 8px;
   padding-right: 32px;
@@ -1481,7 +1481,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c7 {
@@ -1500,7 +1500,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 40px;
   padding-right: 40px;
@@ -1647,7 +1647,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c7 {
@@ -1666,7 +1666,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 40px;
   padding-right: 32px;
@@ -1796,7 +1796,7 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c5 {
@@ -1815,7 +1815,7 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   margin: 0px;
   padding-left: 8px;
   padding-right: 40px;

@@ -9,7 +9,7 @@ exports[`Radio Disabled, rendering 1`] = `
 
 .c1 {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c2 {
@@ -30,7 +30,7 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c3 {
@@ -85,7 +85,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 
 .c1 {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c1:hover {
@@ -110,7 +110,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c3 {
@@ -164,7 +164,7 @@ exports[`Radio Selected, rendering 1`] = `
 
 .c1 {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c2 {
@@ -185,7 +185,7 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c2:disabled ~ svg {
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c3 {

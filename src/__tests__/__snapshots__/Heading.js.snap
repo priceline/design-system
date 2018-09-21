@@ -7,12 +7,12 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
   line-height: 1.25;
   text-align: center;
   margin: 0px;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 <h3
   className="c0"
-  color="#687B8E"
+  color="#4f6f8f"
 />
 `;
 

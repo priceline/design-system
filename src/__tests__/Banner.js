@@ -89,13 +89,6 @@ describe('Banner', () => {
     expect(json).toHaveStyleRule('color', theme.colors.darkGreen)
   })
 
-  test('renders with lightOrange bg', () => {
-    const json = renderer.create(<Banner bg="lightOrange" />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightOrange)
-    expect(json).toHaveStyleRule('color', theme.colors.darkOrange)
-  })
-
   test('renders with lightRed bg', () => {
     const json = renderer.create(<Banner bg="lightRed" />).toJSON()
     expect(json).toMatchSnapshot()

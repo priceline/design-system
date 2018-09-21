@@ -12,7 +12,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 svg[data-name='checked'] {
@@ -21,7 +21,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 > input:checked ~ svg[data-name='empty'] {
@@ -91,7 +91,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 svg[data-name='checked'] {
@@ -100,7 +100,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 > input:checked ~ svg[data-name='empty'] {
@@ -169,7 +169,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c0 svg[data-name='checked'] {
@@ -246,7 +246,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c0 svg[data-name='checked'] {

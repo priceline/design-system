@@ -33,11 +33,6 @@ const bannerColors = {
     color: 'white',
     icon: 'attention'
   },
-  lightOrange: {
-    backgroundColor: 'lightOrange',
-    color: 'darkOrange',
-    icon: 'attention'
-  },
   blue: {
     backgroundColor: 'blue',
     color: 'white',

@@ -2,7 +2,7 @@
 
 exports[`Banner accepts non-preset colors 1`] = `
 .c0 {
-  background-color: #687B8E;
+  background-color: #4f6f8f;
   text-align: left;
 }
 
@@ -399,7 +399,7 @@ exports[`Banner renders with green bg 1`] = `
 exports[`Banner renders with lightBlue bg 1`] = `
 .c0 {
   color: #049;
-  background-color: #cdf;
+  background-color: #e8f2ff;
   text-align: left;
 }
 
@@ -482,7 +482,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 exports[`Banner renders with lightGreen bg 1`] = `
 .c0 {
   color: #060;
-  background-color: #cec;
+  background-color: #ecf7ec;
   text-align: left;
 }
 
@@ -562,92 +562,10 @@ exports[`Banner renders with lightGreen bg 1`] = `
 </div>
 `;
 
-exports[`Banner renders with lightOrange bg 1`] = `
-.c0 {
-  color: #a50;
-  background-color: #feb;
-  text-align: left;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c3 {
-  text-align: left;
-}
-
-.c5 {
-  font-size: 14px;
-}
-
-.c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  margin-right: 8px;
-  margin-top: -2px;
-}
-
-.c4 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
-<div
-  className="c0"
-  color="darkOrange"
->
-  <div
-    className="c1"
-  >
-    <svg
-      className="c2"
-      fill="currentcolor"
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-    >
-      <path
-        d="M1,21.5h22l-11-19L1,21.5z M13,18.5h-2v-2h2V18.5z M13,14.5h-2v-4h2V14.5z"
-      />
-    </svg>
-    <div
-      className=""
-    >
-      <div
-        className="c3"
-      >
-        <h5
-          className="c4"
-        />
-        <span
-          className="c5"
-          fontSize={1}
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Banner renders with lightRed bg 1`] = `
 .c0 {
   color: #800;
-  background-color: #fcc;
+  background-color: #fbebeb;
   text-align: left;
 }
 
@@ -813,7 +731,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 exports[`Banner renders with orange bg 1`] = `
 .c0 {
   color: #fff;
-  background-color: #fa0;
+  background-color: #f68013;
   text-align: left;
 }
 
