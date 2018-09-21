@@ -1,8 +1,7 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { injectGlobal } from 'styled-components'
-import { ThemeProvider, Box } from '../src'
-import 'react-chromatic/storybook-addon'
+import { ThemeProvider, Box } from '../packages/core/src'
 
 injectGlobal([], {
   '*': {
@@ -20,10 +19,12 @@ addDecorator(story => (
   </ThemeProvider>
 ))
 
-const req = require.context('.', true, /\.js$/)
+const req = require.context('../packages', true, /storybook\/[\w\d\s]+\.js$/)
 
 const load = () => {
-  req.keys().forEach(req)
+  req.keys().forEach(key => {
+    req(key)
+  })
 }
 
 configure(load, module)
