@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { Hide, Flex } from '../src'
 
 storiesOf('Hide', module).add('Hide', () => (
-  <Flex justify="space-between">
+  <Flex justifyContent="space-between">
     <Hide xs p={2} bg="red">
       Hide xs
     </Hide>

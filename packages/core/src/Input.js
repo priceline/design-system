@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { space, themeGet, propTypes } from 'styled-system'
+import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 import defaultTheme from './theme'
 
@@ -52,8 +52,8 @@ Input.displayName = 'Input'
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   color: PropTypes.string,
-  ...propTypes.borders,
-  ...propTypes.space
+  ...borders.propTypes,
+  ...space.propTypes
 }
 
 Input.defaultProps = {

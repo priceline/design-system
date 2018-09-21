@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { space, fontSize, fontWeight, color, propTypes } from 'styled-system'
+import { space, fontSize, fontWeight, color } from 'styled-system'
 import theme from './theme'
 
 const nowrap = props =>
@@ -32,10 +32,10 @@ const Label = styled.label`
 `
 
 Label.propTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  ...propTypes.color,
-  ...propTypes.fontWeight
+  ...space.propTypes,
+  ...fontSize.propTypes,
+  ...color.propTypes,
+  ...fontWeight.propTypes
 }
 
 Label.defaultProps = {

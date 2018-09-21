@@ -5,8 +5,6 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 20px;
-  width: 20px;
 }
 
 .c0 {
@@ -14,7 +12,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 svg[data-name='checked'] {
@@ -23,7 +21,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 > input:checked ~ svg[data-name='empty'] {
@@ -56,7 +54,9 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,3h12c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z M10,17
@@ -67,7 +67,9 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,5C5.4,5,5,5.4,5,6v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6c0-0.6-0.4-1-1-1H6z M6,3h12
@@ -82,8 +84,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 20px;
-  width: 20px;
 }
 
 .c0 {
@@ -91,7 +91,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 svg[data-name='checked'] {
@@ -100,7 +100,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
-  color: #d1d6db;
+  color: #c0cad5;
 }
 
 .c0 > input:checked ~ svg[data-name='empty'] {
@@ -122,7 +122,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 >
   <input
     className="c1"
-    defaultChecked={false}
     disabled={true}
     id="random_check_box"
     onChange={[Function]}
@@ -133,7 +132,9 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,3h12c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z M10,17
@@ -144,7 +145,9 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,5C5.4,5,5,5.4,5,6v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6c0-0.6-0.4-1-1-1H6z M6,3h12
@@ -159,8 +162,6 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 20px;
-  width: 20px;
 }
 
 .c0 {
@@ -168,7 +169,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c0 svg[data-name='checked'] {
@@ -195,12 +196,10 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 <div
   className="c0 "
-  disabled={false}
+  disabled={undefined}
 >
   <input
     className="c1"
-    defaultChecked={false}
-    disabled={false}
     id="random_check_box"
     onChange={[Function]}
     size={20}
@@ -210,7 +209,9 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,3h12c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z M10,17
@@ -221,7 +222,9 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,5C5.4,5,5,5.4,5,6v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6c0-0.6-0.4-1-1-1H6z M6,3h12
@@ -236,8 +239,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  height: 20px;
-  width: 20px;
 }
 
 .c0 {
@@ -245,7 +246,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  color: #687B8E;
+  color: #4f6f8f;
 }
 
 .c0 svg[data-name='checked'] {
@@ -272,12 +273,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 
 <div
   className="c0 "
-  disabled={false}
+  disabled={undefined}
 >
   <input
     className="c1"
-    defaultChecked={false}
-    disabled={false}
     id="random_check_box"
     onChange={[Function]}
     size={20}
@@ -287,7 +286,9 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,3h12c1.7,0,3,1.3,3,3v12c0,1.7-1.3,3-3,3H6c-1.7,0-3-1.3-3-3V6C3,4.3,4.3,3,6,3z M10,17
@@ -298,7 +299,9 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    height={20}
     viewBox="0 0 24 24"
+    width={20}
   >
     <path
       d="M6,5C5.4,5,5,5.4,5,6v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6c0-0.6-0.4-1-1-1H6z M6,3h12

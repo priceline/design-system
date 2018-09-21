@@ -21,14 +21,14 @@ exports[`Stamp color blue sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
   color: #007aff;
-  background-color: #f6f8fa;
+  background-color: #f4f6f8;
 }
 
 <div
@@ -59,14 +59,14 @@ exports[`Stamp color gray sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
-  color: #687B8E;
-  background-color: #f6f8fa;
+  color: #4f6f8f;
+  background-color: #f4f6f8;
 }
 
 <div
@@ -97,14 +97,14 @@ exports[`Stamp color green sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
   color: #0a0;
-  background-color: #f6f8fa;
+  background-color: #f4f6f8;
 }
 
 <div
@@ -135,14 +135,14 @@ exports[`Stamp color orange sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
-  color: #fa0;
-  background-color: #f6f8fa;
+  color: #f68013;
+  background-color: #f4f6f8;
 }
 
 <div
@@ -173,14 +173,14 @@ exports[`Stamp color purple sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
   color: #70b;
-  background-color: #f6f8fa;
+  background-color: #f4f6f8;
 }
 
 <div
@@ -211,14 +211,14 @@ exports[`Stamp color red sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
   color: #c00;
-  background-color: #f6f8fa;
+  background-color: #f4f6f8;
 }
 
 <div
@@ -249,14 +249,14 @@ exports[`Stamp renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d1d6db;
+  border-color: #c0cad5;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
-  color: #687B8E;
-  background-color: #f6f8fa;
+  color: #4f6f8f;
+  background-color: #f4f6f8;
 }
 
 <div
