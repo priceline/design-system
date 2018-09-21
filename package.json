@@ -18,9 +18,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "husky": "^0.14.3",
-    "lerna": "^3.1.4",
+    "lerna": "^3.4.0",
     "lint-staged": "^4.2.3",
-    "prettier": "^1.7.4",
+    "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "styled-components": "^3.4.9"
