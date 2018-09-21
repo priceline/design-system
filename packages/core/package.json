@@ -83,5 +83,6 @@
   "bugs": {
     "url": "https://github.com/pricelinelabs/design-system/issues"
   },
-  "homepage": "https://github.com/pricelinelabs/design-system#readme"
+  "homepage": "https://github.com/pricelinelabs/design-system#readme",
+  "gitHead": "00d4cc1e965c5835a224422f3d774a31db9e5b90"
 }
