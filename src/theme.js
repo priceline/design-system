@@ -67,21 +67,7 @@ const darkPurple = '#407'
 const flatten = (name, colors) =>
   colors.reduce((a, b, i) => {
     const color = {
-      [name + i]: {
-        enumerable: true,
-        get() {
-          console.warn(
-            `Priceline Design System Warning: Using numbered colors like ${[
-              name + i
-            ]} will be deprecated in the next theme. Use light${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)}, ${name} or dark${name
-              .charAt(0)
-              .toUpperCase() + name.slice(1)} instead.`
-          )
-          return b
-        }
-      }
+      [name + i]: b
     }
     return { ...a, ...color }
   }, {})
@@ -120,17 +106,14 @@ const colors = {
   greens,
   reds,
   oranges,
-  purples
-}
-
-Object.defineProperties(colors, {
+  purples,
   ...flatten('blue', blues),
   ...flatten('gray', grays),
   ...flatten('green', greens),
   ...flatten('red', reds),
   ...flatten('orange', oranges),
   ...flatten('purple', purples)
-})
+}
 
 export { colors }
 
