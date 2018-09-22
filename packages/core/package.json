@@ -67,10 +67,9 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "clean-tag": "^1.0.4",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.6.3",
-    "styled-system": "^2.1.0"
+    "styled-system": "^3.1.4"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0"
