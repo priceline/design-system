@@ -16,14 +16,14 @@ exports[`InputGroup renders 1`] = `
   border-color: #c0cad5;
 }
 
-.c0 > .sc-bdVaJa {
+.c0 > .c1 {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c0 .sc-jWBwVP {
+.c0 .c2 {
   border: 0;
   box-shadow: none;
 }
