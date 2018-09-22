@@ -15,7 +15,7 @@ describe('Icon', () => {
 
   test('returns false for non-existing icons', () => {
     // Mock out console.error since we're expecting a propType warning
-    console.error = jest.genMockFunction()
+    console.error = jest.fn()
     const icon = renderer.create(<Icon name="nope" />).toJSON()
 
     // We expect one propType warning.

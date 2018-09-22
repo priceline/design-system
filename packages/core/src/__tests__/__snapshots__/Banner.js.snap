@@ -42,7 +42,6 @@ exports[`Banner accepts non-preset colors 1`] = `
 
 <div
   className="c0"
-  color={undefined}
 >
   <div
     className="c1"

@@ -3,7 +3,7 @@ import { theme, colors } from '..'
 const aliases = ['sm', 'md', 'lg', 'xl']
 
 describe('theme', () => {
-  console.warn = jest.genMockFunction()
+  console.warn = jest.fn()
 
   test('exports an object', () => {
     expect(typeof theme).toBe('object')

@@ -32,7 +32,6 @@ exports[`RedButton disabled prop sets 1`] = `
 <button
   className="c0 c1"
   disabled={true}
-  width={undefined}
 />
 `;
 
@@ -75,7 +74,6 @@ exports[`RedButton renders 1`] = `
 
 <button
   className="c0 c1"
-  width={undefined}
 />
 `;
 
@@ -118,6 +116,5 @@ exports[`RedButton without disabled prop sets 1`] = `
 
 <button
   className="c0 c1"
-  width={undefined}
 />
 `;
