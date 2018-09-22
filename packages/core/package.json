@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "2.0.0-0",
+  "version": "2.0.0-beta.3",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -37,21 +37,20 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
-    "babel-jest": "^20.0.3",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "camelcase": "^4.1.0",
-    "codecov": "^2.3.0",
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-15": "^1.0.2",
-    "jest": "^20.0.4",
-    "jest-styled-components": "^5.0.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1",
-    "recompose": "^0.26.0",
-    "styled-components": "^3.2.4",
+    "camelcase": "^5.0.0",
+    "codecov": "^3.1.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
+    "jest-styled-components": "^6.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "recompose": "^0.30.0",
+    "styled-components": "^3.4.9",
     "stylis": "^3.4.9",
     "svgi": "^1.1.0"
   },
@@ -68,10 +67,9 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "clean-tag": "^1.0.4",
     "prop-types": "^15.5.10",
-    "rc-slider": "^8.6.2",
-    "styled-system": "^2.1.0"
+    "rc-slider": "^8.6.3",
+    "styled-system": "^3.1.4"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0"

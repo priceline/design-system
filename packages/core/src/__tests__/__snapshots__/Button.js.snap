@@ -28,7 +28,6 @@ exports[`Button disabled prop sets 1`] = `
 <button
   className="c0"
   disabled={true}
-  width={undefined}
 />
 `;
 
@@ -63,7 +62,6 @@ exports[`Button renders 1`] = `
 
 <button
   className="c0"
-  width={undefined}
 />
 `;
 
@@ -99,7 +97,6 @@ exports[`Button size large sets height and font-size 1`] = `
 <button
   className="c0"
   size="large"
-  width={undefined}
 />
 `;
 
@@ -135,7 +132,6 @@ exports[`Button size medium sets height and font-size 1`] = `
 <button
   className="c0"
   size="medium"
-  width={undefined}
 />
 `;
 
@@ -171,7 +167,6 @@ exports[`Button size small sets height and font-size 1`] = `
 <button
   className="c0"
   size="small"
-  width={undefined}
 />
 `;
 
@@ -242,6 +237,5 @@ exports[`Button without disabled prop sets 1`] = `
 
 <button
   className="c0"
-  width={undefined}
 />
 `;

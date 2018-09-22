@@ -88,7 +88,6 @@ exports[`Flag renders 1`] = `
 
 <div
   className="c0"
-  width={undefined}
 >
   <div
     className="c1 c2 "
