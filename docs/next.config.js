@@ -1,3 +1,5 @@
+const path = require('path')
+
 const mdPlugins = [
   require('remark-images'),
   require('remark-emoji'),
@@ -12,6 +14,12 @@ module.exports = {
   assetPrefix: IS_PROD ? 'https://pricelinelabs.github.io/design-system/' : '',
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({
+      test: /\.js$/,
+      exclude: /node_modules/,
+      include: path.join(__dirname, '../packages'),
+      use: [defaultLoaders.babel]
+    })
+    config.module.rules.push({
       test: /\.mdx?$/,
       use: [
         defaultLoaders.babel,
@@ -23,6 +31,11 @@ module.exports = {
         }
       ]
     })
+
+    config.resolve.alias['pcln-design-system'] = path.join(
+      __dirname,
+      '../packages/core/src'
+    )
 
     return config
   }

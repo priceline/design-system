@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Flex, Heading, Text, Icon, BlockLink } from 'pcln-design-system'
-import icons from 'pcln-design-system/icons.json'
+import icons from '../packages/core/icons.json'
 import { PageTitle, Description, Code } from '../src/components'
 
 const iconNames = Object.keys(icons)

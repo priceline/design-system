@@ -1,4 +1,4 @@
-import { version } from '../../package.json'
+import { version } from '../../packages/core/package.json'
 import {
   ButtonLink,
   Code,
