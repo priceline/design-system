@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Range } from 'rc-slider'
 import { space, color, themeGet } from 'styled-system'
-import theme from './theme'
+import { theme } from 'pcln-design-system'
 
-const Slider = styled(Range)`
+export const Slider = styled(Range)`
   position: relative;
   height: 32px;
   padding-top: 12px;
