@@ -2,7 +2,7 @@
   "name": "pcln-slider",
   "version": "2.0.0-beta.3",
   "description": "React component for range sliders",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prepare": "babel src -d dist",
     "test": "jest"
