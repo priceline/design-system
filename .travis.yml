@@ -3,6 +3,7 @@ node_js:
   - 10
 before_script: npm run bootstrap
 after_success:
+  - npm run coverage
   - npm run codecov
 before_deploy:
   - cd docs
