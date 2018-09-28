@@ -6,15 +6,19 @@ Wrap the `Radio` component with the `Label` component to create a form control.
 ```.jsx
 <Label fontSize={1}>
   <Radio
-    defaultChecked
-  />
+    checked name="radioOptions" />
   {' '}
-  One
+  Option One
 </Label>
 <Label fontSize={1}>
-  <Radio />
+  <Radio name="radioOptions" />
   {' '}
-  Two
+  Option Two
+</Label>
+<Label fontSize={1}>
+  <Radio name="radioOptions" />
+  {' '}
+  Option Three
 </Label>
 <Label fontSize={1}>
   <Radio disabled />
@@ -24,4 +28,3 @@ Wrap the `Radio` component with the `Label` component to create a form control.
 ```
 
 Note: `defaultChecked` is used in the example as an uncontrolled component.
-
