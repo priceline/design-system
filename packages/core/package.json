@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
+    "prepare": "npm run icons && babel src -d dist",
     "icons": "node scripts/parse-icons.js",
     "test": "jest"
   },
