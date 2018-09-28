@@ -9,6 +9,9 @@ const Link = styled.a`
   ${color} &:hover {
     text-decoration: underline;
   }
+  &:visited {
+    text-decoration: none;
+  }
 `
 
 Link.displayName = 'Link'
