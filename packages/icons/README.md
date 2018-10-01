@@ -11,29 +11,40 @@ npm i pcln-icons
 
 ```js
 import React from 'react'
-import ACIcon from 'pcln-icons/lib/AcUnit'
+import FlightsIcon from 'pcln-icons/lib/Flights'
 
 export default props =>
-  <ACUnitIcon
+  <FlightsIcon
     mr={2}
     color='blue'
   />
 ```
 
-For a complete list of all icons, see:
+For a complete list of all icons, see: [the iconography docs](https://pricelinelabs.github.io/design-system/iconography)
 
-[ICONS.md](ICONS.md)
+For backwards compatibility, the `Icon` component can be used in the same way as in the Design System v1.
+
+**Note:** The `Icon` component will be deprecated. Prefer using individual imports as shown above.
+
+```js
+import React from 'react'
+import Icon from 'pcln-icons'
+
+export default props =>
+  <Icon
+    name='Flights'
+    color='blue'
+  />
+```
 
 ## Development
 
-Most of the icons are generated from [material-design-icons][]
-and converted to React components with [pixo][].
-Custom icon SVGs are included in the `icons/` directory.
+Custom icon SVGs are included in the `svg/` directory.
 
 To build the icons locally, run:
 
 ```sh
-npm run build
+npm run prepare
 ```
 
 Run tests:
@@ -42,26 +53,15 @@ Run tests:
 npm test
 ```
 
-To build for publishing:
-
-```sh
-npm run prepare
-```
-
 ### Directory Structure
 
 ```sh
-svg/      Source for custom SVG icons
-icons/    SVG files including custom pcln icons and icons copied from MD
-src/      React components for icons
-test/     Unit tests
-lib/      Icon components compiled to commonjs format
-names.js  List of custom and material design icons
-build.js  Build script to copy MD icons to the icons/ directory
+svg/        Source for custom SVG icons
+src/        Source for wrapper Icon component
+components/ React components for icons
+test/       Unit tests
+lib/        Icon components compiled to commonjs format
 ```
-
-- [ ] Add IconButton component
 
 [material-design-icons]: https://github.com/google/material-design-icons
 [pixo]: https://github.com/c8r/pixo
-
