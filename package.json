@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
-    "prepare": "lerna bootstrap",
+    "_prepare": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
     "changed": "lerna changed",
     "diff": "lerna diff",
@@ -14,7 +14,7 @@
     "storybook": "build-storybook -c storybook -o docs/out/storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
@@ -23,7 +23,7 @@
     "@storybook/addon-info": "^3.4.11",
     "@storybook/react": "^4.0.0-alpha.23",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-loader": "^8.0.2",
+    "babel-loader": "^8.0.4",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "husky": "^0.14.3",
