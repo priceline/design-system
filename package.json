@@ -2,28 +2,57 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
+    "prepare": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
     "changed": "lerna changed",
     "diff": "lerna diff",
     "publish": "lerna publish",
-    "test": "lerna run test",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "codecov": "npx codecov",
     "start": "start-storybook -p 8000 -c storybook",
     "storybook": "build-storybook -c storybook -o docs/out/storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-info": "^3.4.11",
-    "@storybook/react": "^3.4.11",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "@storybook/react": "^4.0.0-alpha.23",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "husky": "^0.14.3",
+    "jest": "^23.6.0",
+    "jest-styled-components": "^6.2.1",
     "lerna": "^3.4.0",
     "lint-staged": "^4.2.3",
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "styled-components": "^3.4.9"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test-setup.js",
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "testMatch": [
+      "<rootDir>/packages/**/test/**/*.js"
+    ]
   },
   "lint-staged": {
     "*.js": [
