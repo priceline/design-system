@@ -50,6 +50,7 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.1.2",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.6.3",
     "styled-system": "^3.1.4"

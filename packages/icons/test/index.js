@@ -21,7 +21,24 @@ describe('Icon', () => {
 
   test('renders material design icon', () => {
     const expected = TestRenderer.create(<AcIcon />).toJSON()
-    const json = TestRenderer.create(<Icon name="ac" />).toJSON()
+    const json = TestRenderer.create(<Icon name="Ac" />).toJSON()
     expect(json).toEqual(expected)
+  })
+
+  test('renders null for missing icons', () => {
+    const json = TestRenderer.create(<Icon name="foo" />).toJSON()
+    expect(json).toBe(null)
+  })
+
+  describe('propTypes', () => {
+    test('warns with incorrect name', () => {
+      const err = Icon.propTypes.name({ name: 'foo' }, 'name', 'Test')
+      expect(err instanceof Error).toBe(true)
+    })
+
+    test('warns with lowercase name', () => {
+      const err = Icon.propTypes.name({ name: 'ac' }, 'name', 'Test')
+      expect(err instanceof Error).toBe(true)
+    })
   })
 })
