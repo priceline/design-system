@@ -1,10 +1,9 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
-import 'jest-styled-components'
-import * as icons from '../src'
-import Icon from '../src/Icon'
-import AirplaneIcon from '../src/Airplane'
-import AcUnitIcon from '../src/AcUnit'
+import * as icons from '../lib'
+import Icon from '../lib/Icon'
+import AirplaneIcon from '../lib/Airplane'
+import AcIcon from '../lib/Ac'
 
 const iconList = Object.keys(icons).map(key => [key, icons[key]])
 
@@ -21,8 +20,8 @@ describe('Icon', () => {
   })
 
   test('renders material design icon', () => {
-    const expected = TestRenderer.create(<AcUnitIcon />).toJSON()
-    const json = TestRenderer.create(<Icon name="AcUnit" />).toJSON()
+    const expected = TestRenderer.create(<AcIcon />).toJSON()
+    const json = TestRenderer.create(<Icon name="ac" />).toJSON()
     expect(json).toEqual(expected)
   })
 })

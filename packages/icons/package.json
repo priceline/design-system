@@ -2,11 +2,10 @@
   "name": "pcln-icons",
   "version": "2.0.0-beta.3",
   "description": "Priceline React icons based on Material Design Icons",
-  "main": "dist/Icon.js",
+  "main": "lib/Icon.js",
   "scripts": {
-    "prepare": "npm run build && babel src -d lib",
-    "clean": "find src/ -type f -not -name 'Icon.js' -delete && rm -rf icons/* lib",
-    "build": "cp svg/* icons && ./build.js && pixo icons -d src",
+    "prepare": "npm run clean && pixo svg -d components && cp src/Icon.js components && babel components -d lib",
+    "clean": "rm -rf components lib",
     "test": "jest"
   },
   "author": "Priceline",
@@ -18,9 +17,6 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "lodash.camelcase": "^4.3.0",
-    "lodash.uniqby": "^4.7.0",
-    "material-design-icons": "^3.0.1",
     "pixo": "^1.1.1-0",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2"

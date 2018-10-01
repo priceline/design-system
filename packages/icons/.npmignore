@@ -1,7 +1,6 @@
-src
+components
 svg
 icons
 test
-./build.js
 babel.config.js
 !lib/

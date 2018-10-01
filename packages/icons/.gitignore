@@ -1,6 +1,3 @@
 node_modules
 lib
-icons/
-src/*
-!src/names.js
-!src/Icon.js
+components
