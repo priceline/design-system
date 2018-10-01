@@ -1,4 +1,1 @@
-module.exports = {
-  presets: ['@babel/env', '@babel/react'],
-  plugins: ['@babel/plugin-proposal-class-properties']
-}
+module.exports = require('../../babel.config')
