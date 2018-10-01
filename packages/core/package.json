@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist",
+    "prepare": "babel src -d dist",
     "test": "jest"
   },
   "author": "Priceline",
