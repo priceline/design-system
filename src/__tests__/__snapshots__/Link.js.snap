@@ -13,6 +13,11 @@ exports[`Link renders 1`] = `
   text-decoration: underline;
 }
 
+.c0:visited {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <a
   className="c0"
   color="blue"
