@@ -1,0 +1,6 @@
+src
+svg
+test
+./build.js
+babel.config.js
+!lib/
