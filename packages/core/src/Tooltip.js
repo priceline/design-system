@@ -104,7 +104,6 @@ const defaultProps = {
   position: 'bottom',
   color: 'text',
   bg: 'white',
-  align: 'right',
   theme: theme,
   zIndex: 'auto'
 }

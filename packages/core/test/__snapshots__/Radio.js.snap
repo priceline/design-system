@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio Disabled, rendering 1`] = `
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1 {
+  display: inline-block;
+  color: #c0cad5;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:checked ~ svg {
+  color: #007aff;
+}
+
+.c2:disabled ~ svg {
+  color: #c0cad5;
+}
+
+.c3 {
+  vertical-align: middle;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    disabled={true}
+  >
+    <input
+      className="c2"
+      disabled={true}
+      type="radio"
+    />
+    <svg
+      className="c3 c4"
+      fill="currentcolor"
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
+	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Radio Not Selected, rendering 1`] = `
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1 {
+  display: inline-block;
+  color: #c0cad5;
+}
+
+.c1:hover {
+  color: #007aff;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:checked ~ svg {
+  color: #007aff;
+}
+
+.c2:disabled ~ svg {
+  color: #c0cad5;
+}
+
+.c3 {
+  vertical-align: middle;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      type="radio"
+    />
+    <svg
+      className="c3 c4"
+      fill="currentcolor"
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8
+	s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Radio Selected, rendering 1`] = `
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1 {
+  display: inline-block;
+  color: #c0cad5;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:checked ~ svg {
+  color: #007aff;
+}
+
+.c2:disabled ~ svg {
+  color: #c0cad5;
+}
+
+.c3 {
+  vertical-align: middle;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    checked={true}
+    className="c1"
+  >
+    <input
+      checked={true}
+      className="c2"
+      type="radio"
+    />
+    <svg
+      className="c3 c4"
+      fill="currentcolor"
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <path
+        d="M12,7c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S14.8,7,12,7z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10
+	s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z"
+      />
+    </svg>
+  </div>
+</div>
+`;

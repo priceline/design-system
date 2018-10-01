@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutlineButton disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c0 {
+  color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
+}
+
+.c0:hover {
+  box-shadow: inset 0 0 0 2px;
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
+  disabled={true}
+/>
+`;
+
+exports[`OutlineButton renders 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
+}
+
+.c0:hover {
+  color: #049;
+  box-shadow: inset 0 0 0 2px #049;
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
+/>
+`;
+
+exports[`OutlineButton without disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
+}
+
+.c0:hover {
+  color: #049;
+  box-shadow: inset 0 0 0 2px #049;
+  background-color: transparent;
+}
+
+<button
+  className="c0 c1"
+/>
+`;
