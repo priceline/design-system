@@ -61,3 +61,5 @@ src/      React components for icons
 test/     Unit tests
 lib/      Icon components compiled to commonjs format
 ```
+
+- [ ] Add IconButton component
