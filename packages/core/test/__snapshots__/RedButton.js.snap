@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedButton disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c0 {
+  background-color: #c00;
+}
+
+<button
+  className="c0 c1"
+  disabled={true}
+/>
+`;
+
+exports[`RedButton renders 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: #c00;
+}
+
+.c0:hover {
+  background-color: #800;
+}
+
+<button
+  className="c0 c1"
+/>
+`;
+
+exports[`RedButton without disabled prop sets 1`] = `
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #007aff;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+}
+
+.c1:disabled {
+  opacity: 0.25;
+}
+
+.c1:hover {
+  background-color: #049;
+}
+
+.c0 {
+  background-color: #c00;
+}
+
+.c0:hover {
+  background-color: #800;
+}
+
+<button
+  className="c0 c1"
+/>
+`;
