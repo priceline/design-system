@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "babel src -d dist",
+    "clean": "rm -rf node_modules dist icons.json",
     "test": "jest"
   },
   "author": "Priceline",
