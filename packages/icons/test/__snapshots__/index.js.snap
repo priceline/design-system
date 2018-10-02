@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Ac 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -15,8 +21,14 @@ exports[`renders Ac 1`] = `
 `;
 
 exports[`renders Accessible 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -29,8 +41,14 @@ exports[`renders Accessible 1`] = `
 `;
 
 exports[`renders Airplane 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -43,8 +61,14 @@ exports[`renders Airplane 1`] = `
 `;
 
 exports[`renders Arrival 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -57,8 +81,14 @@ exports[`renders Arrival 1`] = `
 `;
 
 exports[`renders ArrowDown 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -71,8 +101,14 @@ exports[`renders ArrowDown 1`] = `
 `;
 
 exports[`renders ArrowLeft 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -85,8 +121,14 @@ exports[`renders ArrowLeft 1`] = `
 `;
 
 exports[`renders ArrowRight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -99,8 +141,14 @@ exports[`renders ArrowRight 1`] = `
 `;
 
 exports[`renders ArrowUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -113,8 +161,14 @@ exports[`renders ArrowUp 1`] = `
 `;
 
 exports[`renders Attention 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -127,8 +181,14 @@ exports[`renders Attention 1`] = `
 `;
 
 exports[`renders Automatic 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -141,8 +201,14 @@ exports[`renders Automatic 1`] = `
 `;
 
 exports[`renders Bag 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -155,8 +221,14 @@ exports[`renders Bag 1`] = `
 `;
 
 exports[`renders Beach 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -169,8 +241,14 @@ exports[`renders Beach 1`] = `
 `;
 
 exports[`renders Bed 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -183,8 +261,14 @@ exports[`renders Bed 1`] = `
 `;
 
 exports[`renders BoxChecked 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -197,8 +281,14 @@ exports[`renders BoxChecked 1`] = `
 `;
 
 exports[`renders BoxEmpty 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -211,8 +301,14 @@ exports[`renders BoxEmpty 1`] = `
 `;
 
 exports[`renders BoxMinus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -225,8 +321,14 @@ exports[`renders BoxMinus 1`] = `
 `;
 
 exports[`renders BoxPlus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -239,8 +341,14 @@ exports[`renders BoxPlus 1`] = `
 `;
 
 exports[`renders Breakfast 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -253,8 +361,14 @@ exports[`renders Breakfast 1`] = `
 `;
 
 exports[`renders Build 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -267,8 +381,14 @@ exports[`renders Build 1`] = `
 `;
 
 exports[`renders Business 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -281,8 +401,14 @@ exports[`renders Business 1`] = `
 `;
 
 exports[`renders Cake 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -295,8 +421,14 @@ exports[`renders Cake 1`] = `
 `;
 
 exports[`renders Calendar 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -309,8 +441,14 @@ exports[`renders Calendar 1`] = `
 `;
 
 exports[`renders CarCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -323,8 +461,14 @@ exports[`renders CarCircle 1`] = `
 `;
 
 exports[`renders CarDoor 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -337,8 +481,14 @@ exports[`renders CarDoor 1`] = `
 `;
 
 exports[`renders Carriage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -351,8 +501,14 @@ exports[`renders Carriage 1`] = `
 `;
 
 exports[`renders Cars 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -365,8 +521,14 @@ exports[`renders Cars 1`] = `
 `;
 
 exports[`renders Casino 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -379,8 +541,14 @@ exports[`renders Casino 1`] = `
 `;
 
 exports[`renders Chart 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -393,8 +561,14 @@ exports[`renders Chart 1`] = `
 `;
 
 exports[`renders Chat 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -407,8 +581,14 @@ exports[`renders Chat 1`] = `
 `;
 
 exports[`renders Check 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -421,8 +601,14 @@ exports[`renders Check 1`] = `
 `;
 
 exports[`renders ChevronDown 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -435,8 +621,14 @@ exports[`renders ChevronDown 1`] = `
 `;
 
 exports[`renders ChevronLeft 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -449,8 +641,14 @@ exports[`renders ChevronLeft 1`] = `
 `;
 
 exports[`renders ChevronRight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -463,8 +661,14 @@ exports[`renders ChevronRight 1`] = `
 `;
 
 exports[`renders ChevronUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -477,8 +681,14 @@ exports[`renders ChevronUp 1`] = `
 `;
 
 exports[`renders CityView 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -491,8 +701,14 @@ exports[`renders CityView 1`] = `
 `;
 
 exports[`renders Clock 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -505,8 +721,14 @@ exports[`renders Clock 1`] = `
 `;
 
 exports[`renders Close 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -519,8 +741,14 @@ exports[`renders Close 1`] = `
 `;
 
 exports[`renders Cloud 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -533,8 +761,14 @@ exports[`renders Cloud 1`] = `
 `;
 
 exports[`renders CollisionCoverage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -547,8 +781,14 @@ exports[`renders CollisionCoverage 1`] = `
 `;
 
 exports[`renders Coupon 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -561,8 +801,14 @@ exports[`renders Coupon 1`] = `
 `;
 
 exports[`renders CreditCard 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -575,8 +821,14 @@ exports[`renders CreditCard 1`] = `
 `;
 
 exports[`renders Cruises 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -589,8 +841,14 @@ exports[`renders Cruises 1`] = `
 `;
 
 exports[`renders Departure 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -603,8 +861,14 @@ exports[`renders Departure 1`] = `
 `;
 
 exports[`renders Devices 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -617,8 +881,14 @@ exports[`renders Devices 1`] = `
 `;
 
 exports[`renders Directions 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -631,8 +901,14 @@ exports[`renders Directions 1`] = `
 `;
 
 exports[`renders Discount 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -645,8 +921,14 @@ exports[`renders Discount 1`] = `
 `;
 
 exports[`renders Document 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -659,8 +941,14 @@ exports[`renders Document 1`] = `
 `;
 
 exports[`renders Dollar 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -673,8 +961,14 @@ exports[`renders Dollar 1`] = `
 `;
 
 exports[`renders DollarCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -687,8 +981,14 @@ exports[`renders DollarCircle 1`] = `
 `;
 
 exports[`renders DoubleOccupancy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -701,8 +1001,14 @@ exports[`renders DoubleOccupancy 1`] = `
 `;
 
 exports[`renders EarlyBird 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -715,8 +1021,14 @@ exports[`renders EarlyBird 1`] = `
 `;
 
 exports[`renders Edit 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -729,8 +1041,14 @@ exports[`renders Edit 1`] = `
 `;
 
 exports[`renders Electric 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -743,8 +1061,14 @@ exports[`renders Electric 1`] = `
 `;
 
 exports[`renders Email 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -757,8 +1081,14 @@ exports[`renders Email 1`] = `
 `;
 
 exports[`renders Emoticon 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -771,8 +1101,14 @@ exports[`renders Emoticon 1`] = `
 `;
 
 exports[`renders Event 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -785,8 +1121,14 @@ exports[`renders Event 1`] = `
 `;
 
 exports[`renders EventAvailable 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -799,8 +1141,14 @@ exports[`renders EventAvailable 1`] = `
 `;
 
 exports[`renders EventBusy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -813,8 +1161,14 @@ exports[`renders EventBusy 1`] = `
 `;
 
 exports[`renders Facebook 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -827,8 +1181,14 @@ exports[`renders Facebook 1`] = `
 `;
 
 exports[`renders FavoriteHotel 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -841,8 +1201,14 @@ exports[`renders FavoriteHotel 1`] = `
 `;
 
 exports[`renders Filter 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -855,8 +1221,14 @@ exports[`renders Filter 1`] = `
 `;
 
 exports[`renders Fitness 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -869,8 +1241,14 @@ exports[`renders Fitness 1`] = `
 `;
 
 exports[`renders Flame 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -883,8 +1261,14 @@ exports[`renders Flame 1`] = `
 `;
 
 exports[`renders FlightCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -897,8 +1281,14 @@ exports[`renders FlightCircle 1`] = `
 `;
 
 exports[`renders FlightCoverage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -911,8 +1301,14 @@ exports[`renders FlightCoverage 1`] = `
 `;
 
 exports[`renders Flights 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -925,8 +1321,14 @@ exports[`renders Flights 1`] = `
 `;
 
 exports[`renders FreeCancellation 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -939,8 +1341,14 @@ exports[`renders FreeCancellation 1`] = `
 `;
 
 exports[`renders Fridge 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -953,8 +1361,14 @@ exports[`renders Fridge 1`] = `
 `;
 
 exports[`renders Gallery 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -967,8 +1381,14 @@ exports[`renders Gallery 1`] = `
 `;
 
 exports[`renders Gas 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -981,8 +1401,14 @@ exports[`renders Gas 1`] = `
 `;
 
 exports[`renders Globe 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -995,8 +1421,14 @@ exports[`renders Globe 1`] = `
 `;
 
 exports[`renders Golf 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1009,8 +1441,14 @@ exports[`renders Golf 1`] = `
 `;
 
 exports[`renders Gps 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1023,8 +1461,14 @@ exports[`renders Gps 1`] = `
 `;
 
 exports[`renders Graph 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1037,8 +1481,14 @@ exports[`renders Graph 1`] = `
 `;
 
 exports[`renders Grid 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1051,8 +1501,14 @@ exports[`renders Grid 1`] = `
 `;
 
 exports[`renders GuestScore 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1065,8 +1521,14 @@ exports[`renders GuestScore 1`] = `
 `;
 
 exports[`renders Guests 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1079,8 +1541,14 @@ exports[`renders Guests 1`] = `
 `;
 
 exports[`renders Help 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1093,8 +1561,14 @@ exports[`renders Help 1`] = `
 `;
 
 exports[`renders History 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1107,8 +1581,14 @@ exports[`renders History 1`] = `
 `;
 
 exports[`renders Home 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1121,8 +1601,14 @@ exports[`renders Home 1`] = `
 `;
 
 exports[`renders HotelCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1135,8 +1621,14 @@ exports[`renders HotelCircle 1`] = `
 `;
 
 exports[`renders Hotels 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1149,8 +1641,14 @@ exports[`renders Hotels 1`] = `
 `;
 
 exports[`renders House 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1163,8 +1661,14 @@ exports[`renders House 1`] = `
 `;
 
 exports[`renders Hybrid 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1177,8 +1681,14 @@ exports[`renders Hybrid 1`] = `
 `;
 
 exports[`renders Inclusive 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1191,8 +1701,14 @@ exports[`renders Inclusive 1`] = `
 `;
 
 exports[`renders Information 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1205,8 +1721,14 @@ exports[`renders Information 1`] = `
 `;
 
 exports[`renders InformationOutline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1219,8 +1741,14 @@ exports[`renders InformationOutline 1`] = `
 `;
 
 exports[`renders Instagram 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1233,8 +1761,14 @@ exports[`renders Instagram 1`] = `
 `;
 
 exports[`renders Key 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1247,8 +1781,14 @@ exports[`renders Key 1`] = `
 `;
 
 exports[`renders Kitchenette 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1261,8 +1801,14 @@ exports[`renders Kitchenette 1`] = `
 `;
 
 exports[`renders Laptop 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1275,8 +1821,14 @@ exports[`renders Laptop 1`] = `
 `;
 
 exports[`renders LateNight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1289,8 +1841,14 @@ exports[`renders LateNight 1`] = `
 `;
 
 exports[`renders List 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1303,8 +1861,14 @@ exports[`renders List 1`] = `
 `;
 
 exports[`renders LocalBar 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1317,8 +1881,14 @@ exports[`renders LocalBar 1`] = `
 `;
 
 exports[`renders Lock 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1331,8 +1901,14 @@ exports[`renders Lock 1`] = `
 `;
 
 exports[`renders Loyalty 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1345,8 +1921,14 @@ exports[`renders Loyalty 1`] = `
 `;
 
 exports[`renders Luggage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1359,8 +1941,14 @@ exports[`renders Luggage 1`] = `
 `;
 
 exports[`renders Manual 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1373,8 +1961,14 @@ exports[`renders Manual 1`] = `
 `;
 
 exports[`renders Map 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1387,8 +1981,14 @@ exports[`renders Map 1`] = `
 `;
 
 exports[`renders Menu 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1401,8 +2001,14 @@ exports[`renders Menu 1`] = `
 `;
 
 exports[`renders Microwave 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1415,8 +2021,14 @@ exports[`renders Microwave 1`] = `
 `;
 
 exports[`renders Mileage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1429,8 +2041,14 @@ exports[`renders Mileage 1`] = `
 `;
 
 exports[`renders Minus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1443,8 +2061,14 @@ exports[`renders Minus 1`] = `
 `;
 
 exports[`renders MultiOccupancy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1457,8 +2081,14 @@ exports[`renders MultiOccupancy 1`] = `
 `;
 
 exports[`renders Notification 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1471,8 +2101,14 @@ exports[`renders Notification 1`] = `
 `;
 
 exports[`renders Overnight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1485,8 +2121,14 @@ exports[`renders Overnight 1`] = `
 `;
 
 exports[`renders Parking 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1499,8 +2141,14 @@ exports[`renders Parking 1`] = `
 `;
 
 exports[`renders Pets 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1513,8 +2161,14 @@ exports[`renders Pets 1`] = `
 `;
 
 exports[`renders Phone 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1527,8 +2181,14 @@ exports[`renders Phone 1`] = `
 `;
 
 exports[`renders Picture 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1541,8 +2201,14 @@ exports[`renders Picture 1`] = `
 `;
 
 exports[`renders Pin 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1555,8 +2221,14 @@ exports[`renders Pin 1`] = `
 `;
 
 exports[`renders Plus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1569,8 +2241,14 @@ exports[`renders Plus 1`] = `
 `;
 
 exports[`renders Pool 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1583,8 +2261,14 @@ exports[`renders Pool 1`] = `
 `;
 
 exports[`renders Printer 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1597,8 +2281,14 @@ exports[`renders Printer 1`] = `
 `;
 
 exports[`renders Quilt 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1611,8 +2301,14 @@ exports[`renders Quilt 1`] = `
 `;
 
 exports[`renders RadioChecked 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1625,8 +2321,14 @@ exports[`renders RadioChecked 1`] = `
 `;
 
 exports[`renders RadioEmpty 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1639,8 +2341,14 @@ exports[`renders RadioEmpty 1`] = `
 `;
 
 exports[`renders RadioMinus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1653,8 +2361,14 @@ exports[`renders RadioMinus 1`] = `
 `;
 
 exports[`renders RadioPlus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1667,8 +2381,14 @@ exports[`renders RadioPlus 1`] = `
 `;
 
 exports[`renders Refresh 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1681,8 +2401,14 @@ exports[`renders Refresh 1`] = `
 `;
 
 exports[`renders Restaurant 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1695,8 +2421,14 @@ exports[`renders Restaurant 1`] = `
 `;
 
 exports[`renders Ribbon 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1709,8 +2441,14 @@ exports[`renders Ribbon 1`] = `
 `;
 
 exports[`renders RoomSize 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1723,8 +2461,14 @@ exports[`renders RoomSize 1`] = `
 `;
 
 exports[`renders Rowing 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1737,8 +2481,14 @@ exports[`renders Rowing 1`] = `
 `;
 
 exports[`renders Search 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1751,8 +2501,14 @@ exports[`renders Search 1`] = `
 `;
 
 exports[`renders SearchRecent 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1765,8 +2521,14 @@ exports[`renders SearchRecent 1`] = `
 `;
 
 exports[`renders Seat 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1779,8 +2541,14 @@ exports[`renders Seat 1`] = `
 `;
 
 exports[`renders SeatBusiness 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1793,8 +2561,14 @@ exports[`renders SeatBusiness 1`] = `
 `;
 
 exports[`renders SeatEconomy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1807,8 +2581,14 @@ exports[`renders SeatEconomy 1`] = `
 `;
 
 exports[`renders Security 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1821,8 +2601,14 @@ exports[`renders Security 1`] = `
 `;
 
 exports[`renders Shuttle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1835,8 +2621,14 @@ exports[`renders Shuttle 1`] = `
 `;
 
 exports[`renders SingleOccupancy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1849,8 +2641,14 @@ exports[`renders SingleOccupancy 1`] = `
 `;
 
 exports[`renders Smoking 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1863,8 +2661,14 @@ exports[`renders Smoking 1`] = `
 `;
 
 exports[`renders Spa 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1877,8 +2681,14 @@ exports[`renders Spa 1`] = `
 `;
 
 exports[`renders SplitTicket 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1891,8 +2701,14 @@ exports[`renders SplitTicket 1`] = `
 `;
 
 exports[`renders Star 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1905,8 +2721,14 @@ exports[`renders Star 1`] = `
 `;
 
 exports[`renders StarHalf 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1919,8 +2741,14 @@ exports[`renders StarHalf 1`] = `
 `;
 
 exports[`renders SteeringWheel 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1933,8 +2761,14 @@ exports[`renders SteeringWheel 1`] = `
 `;
 
 exports[`renders Success 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1947,8 +2781,14 @@ exports[`renders Success 1`] = `
 `;
 
 exports[`renders SuccessOutline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1961,8 +2801,14 @@ exports[`renders SuccessOutline 1`] = `
 `;
 
 exports[`renders Swap 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1975,8 +2821,14 @@ exports[`renders Swap 1`] = `
 `;
 
 exports[`renders ThumbsDown 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -1989,8 +2841,14 @@ exports[`renders ThumbsDown 1`] = `
 `;
 
 exports[`renders ThumbsUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2003,8 +2861,14 @@ exports[`renders ThumbsUp 1`] = `
 `;
 
 exports[`renders Timer 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2017,8 +2881,14 @@ exports[`renders Timer 1`] = `
 `;
 
 exports[`renders TrendingUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2031,8 +2901,14 @@ exports[`renders TrendingUp 1`] = `
 `;
 
 exports[`renders Trophy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2045,8 +2921,14 @@ exports[`renders Trophy 1`] = `
 `;
 
 exports[`renders Tune 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2059,8 +2941,14 @@ exports[`renders Tune 1`] = `
 `;
 
 exports[`renders Twitter 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2073,8 +2961,14 @@ exports[`renders Twitter 1`] = `
 `;
 
 exports[`renders Unlock 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2087,8 +2981,14 @@ exports[`renders Unlock 1`] = `
 `;
 
 exports[`renders User 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2101,8 +3001,14 @@ exports[`renders User 1`] = `
 `;
 
 exports[`renders Verified 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2115,8 +3021,14 @@ exports[`renders Verified 1`] = `
 `;
 
 exports[`renders Warning 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2129,8 +3041,14 @@ exports[`renders Warning 1`] = `
 `;
 
 exports[`renders WarningOutline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2143,8 +3061,14 @@ exports[`renders WarningOutline 1`] = `
 `;
 
 exports[`renders Web 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2157,8 +3081,14 @@ exports[`renders Web 1`] = `
 `;
 
 exports[`renders Whirlpool 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2171,8 +3101,14 @@ exports[`renders Whirlpool 1`] = `
 `;
 
 exports[`renders Wifi 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2185,8 +3121,14 @@ exports[`renders Wifi 1`] = `
 `;
 
 exports[`renders Youtube 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
@@ -2199,8 +3141,14 @@ exports[`renders Youtube 1`] = `
 `;
 
 exports[`renders ZoomOut 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <svg
-  className=""
+  className="c0"
   fill="currentcolor"
   height={24}
   viewBox="0 0 24 24"
