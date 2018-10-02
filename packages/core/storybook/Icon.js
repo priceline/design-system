@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Icon, Flex, Box, Text } from '../src'
-import icons from '../icons.json'
+import * as icons from 'pcln-icons'
 
 const keys = Object.keys(icons)
 

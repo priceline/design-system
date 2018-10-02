@@ -18,7 +18,7 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "pixo": "^1.1.1-0",
+    "pixo": "^1.1.1",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2"
   },

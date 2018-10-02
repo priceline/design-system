@@ -4,8 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist",
-    "icons": "node scripts/parse-icons.js",
+    "prepare": "babel src -d dist",
     "test": "jest"
   },
   "author": "Priceline",
@@ -40,8 +39,7 @@
     "react-dom": "^16.5.2",
     "react-test-renderer": "^16.5.2",
     "recompose": "^0.30.0",
-    "stylis": "^3.4.9",
-    "svgi": "^1.1.0"
+    "stylis": "^3.4.9"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",
@@ -51,6 +49,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
+    "pcln-icons": "^2.0.0-beta.3",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.6.3",
     "styled-system": "^3.1.4"
