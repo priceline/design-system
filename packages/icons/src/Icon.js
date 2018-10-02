@@ -8,6 +8,10 @@ const Icon = ({ name, ...props }) => {
   return <Component {...props} />
 }
 
+Icon.defaultProps = {
+  size: 24
+}
+
 Icon.displayName = 'Icon'
 
 Icon.propTypes = {
