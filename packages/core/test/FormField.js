@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import renderer from 'react-test-renderer'
 import { renderIntoDocument } from 'react-dom/test-utils'
 import { FormField, Icon, Input, Label, Select } from '../src'
@@ -8,7 +9,7 @@ describe('FormField', () => {
     const json = renderer
       .create(
         <FormField>
-          <Label htmlFor="email">Email Address</Label>
+          <Label>Email Address</Label>
           <Input id="email" />
         </FormField>
       )
@@ -20,9 +21,9 @@ describe('FormField', () => {
     const json = renderer
       .create(
         <FormField>
-          <Label htmlFor="email">Email Address</Label>
-          <Icon id="email" />
-          <Input id="email" />
+          <Label>Email Address</Label>
+          <Icon name="email" />
+          <Input name="email" />
         </FormField>
       )
       .toJSON()
@@ -56,11 +57,9 @@ describe('FormField', () => {
     const json = renderer
       .create(
         <FormField>
-          <Label autoHide htmlFor="email">
-            Email
-          </Label>
+          <Label autoHide>Email</Label>
           <Icon name="email" />
-          <Input id="email" />
+          <Input name="email" />
         </FormField>
       )
       .toJSON()
@@ -71,11 +70,9 @@ describe('FormField', () => {
     const json = renderer
       .create(
         <FormField>
-          <Label autoHide htmlFor="email">
-            Email
-          </Label>
+          <Label autoHide>Email</Label>
           <Icon name="email" />
-          <Input id="email" value="hello@example.com" />
+          <Input name="email" value="hello@example.com" />
         </FormField>
       )
       .toJSON()
@@ -83,25 +80,46 @@ describe('FormField', () => {
     expect(label.props.style.opacity).toBe(1)
   })
 
-  test('warns when there is no form field', () => {
-    const spy = jest.spyOn(global.console, 'error')
-    renderIntoDocument(
-      <FormField>
-        <Label>Email Address</Label>
-      </FormField>
-    )
-    expect(spy).toHaveBeenCalledTimes(1)
-    spy.mockRestore()
+  test('adds htmlFor prop to Label', () => {
+    const json = renderer
+      .create(
+        <FormField>
+          <Label />
+          <Input name="hello" />
+        </FormField>
+      )
+      .toJSON()
+    const [label] = json.children
+    expect(label.props.htmlFor).toBe('hello')
   })
 
-  test('warns when there is no label', () => {
-    const spy = jest.spyOn(global.console, 'error')
-    renderIntoDocument(
-      <FormField>
-        <Input />
-      </FormField>
-    )
-    expect(spy).toHaveBeenCalledTimes(1)
-    spy.mockRestore()
+  describe('propTypes', () => {
+    test('warns when field is missing', () => {
+      const spy = jest.spyOn(global.console, 'error')
+      const err = PropTypes.checkPropTypes(
+        FormField.propTypes,
+        {
+          children: [<Label />]
+        },
+        'children',
+        'FormField'
+      )
+      expect(spy).toHaveBeenCalledTimes(1)
+      spy.mockRestore()
+    })
+
+    test('warns when Label is missing', () => {
+      const spy = jest.spyOn(global.console, 'error')
+      PropTypes.checkPropTypes(
+        FormField.propTypes,
+        {
+          children: [<Input />]
+        },
+        'children',
+        'FormField'
+      )
+      expect(spy).toHaveBeenCalledTimes(1)
+      spy.mockRestore()
+    })
   })
 })

@@ -11,12 +11,15 @@ const FormField = props => {
   const [label] = children.filter(child => child.type.isLabel)
   const showLabel =
     (label && !label.props.autoHide) || (field && !!field.props.value)
+  const id = field && (field.props.id || field.props.name)
 
   const styled = children.map((child, i, arr) => {
-    if (child.type.isField && arr[i - 1] && arr[i - 1].type.isIcon)
+    if (child.type.isField && arr[i - 1] && arr[i - 1].type.isIcon) {
       iconBefore = true
+    }
     if (child === field) {
       return React.cloneElement(child, {
+        id,
         style: {
           ...child.props.style,
           transitionProperty: 'padding-top, padding-bottom',
@@ -32,6 +35,7 @@ const FormField = props => {
   const styledLabel =
     label &&
     React.cloneElement(label, {
+      htmlFor: label.props.htmlFor || id,
       fontSize: 10,
       ml: iconBefore ? '40px' : '12px',
       pt: '6px',
