@@ -32,6 +32,11 @@ module.exports = {
       ]
     })
 
+    config.resolve.alias['styled-components'] = path.join(
+      __dirname,
+      './node_modules/styled-components'
+    )
+
     config.resolve.alias['pcln-design-system'] = path.join(
       __dirname,
       '../packages/core/src'
