@@ -61,6 +61,7 @@ const childrenPropType = (props, propName, componentName) => {
   const children = React.Children.toArray(props.children)
   const [label] = children.filter(child => child.type.isLabel)
   const [field] = children.filter(child => child.type.isField)
+
   if (!field) {
     return new Error(
       `No form field found for ${componentName}. Please include an Input, Select, or other form field as a child.`

@@ -4,6 +4,11 @@ import renderer from 'react-test-renderer'
 import { renderIntoDocument } from 'react-dom/test-utils'
 import { FormField, Icon, Input, Label, Select } from '../src'
 
+afterEach(() => {
+  // bust cache for propTypes
+  FormField.displayName = 'FormField' + Math.random()
+})
+
 describe('FormField', () => {
   test('renders', () => {
     const json = renderer
@@ -113,7 +118,7 @@ describe('FormField', () => {
       PropTypes.checkPropTypes(
         FormField.propTypes,
         {
-          children: [<Input />]
+          children: [<Input name="test" />]
         },
         'children',
         'FormField'
