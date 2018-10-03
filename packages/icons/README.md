@@ -63,5 +63,4 @@ test/       Unit tests
 lib/        Icon components compiled to commonjs format
 ```
 
-[material-design-icons]: https://github.com/google/material-design-icons
 [pixo]: https://github.com/c8r/pixo
