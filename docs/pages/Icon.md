@@ -31,4 +31,4 @@ Prop | Type | Description
 `color` | string | A color key from `theme.colors`
 `legacy` | boolean | Force component to prefer using icons from the legacy set
 
-For a full list of available icons, see [Iconography](/iconography).
+For a full list of available icons, see [Iconography](/design-system/iconography).
