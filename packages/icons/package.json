@@ -4,8 +4,7 @@
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
-    "prepare": "npm run clean && svgr svg -d components && babel components -d lib",
-    "_prepare": "npm run clean && pixo svg --icon -d components && cp src/Icon.js components && babel components -d lib",
+    "prepare": "npm run clean && svgr svg -d components && cp src/* components && babel components -d lib",
     "clean": "rm -rf components lib",
     "test": "jest"
   },
@@ -20,7 +19,6 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@svgr/cli": "^3.1.0",
-    "pixo": "^1.1.1",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2"
   },
@@ -32,9 +30,5 @@
     "testMatch": [
       "<rootDir>/test/**/*.js"
     ]
-  },
-  "pixo": {
-    "index": true,
-    "template": "styledSystem"
   }
 }

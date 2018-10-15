@@ -1,13 +1,11 @@
 const { getProps } = require('@svgr/core')
 
 const template = (code, config, state) => {
-  const props = getProps(config)
-
   return `import React from 'react'
 import Svg from './Svg'
 
-const ${state.componentName} = ${props} =>
-  <Svg {...props}>
+const ${state.componentName} = props =>
+  <Svg viewBox='0 0 24 24' {...props}>
     ${code}
   </Svg>
 
@@ -21,7 +19,7 @@ module.exports = {
   svgoConfig: {
     plugins: [
       {
-        removeAttrs: { attrs: '(fill)' }
+        removeAttrs: { attrs: '(fill|width|height)' }
       }
     ]
   }
