@@ -33,18 +33,6 @@
       "<rootDir>/test/**/*.js"
     ]
   },
-  "svgr": {
-    "icon": true,
-    "svgoConfig": {
-      "plugins": [
-        {
-          "removeAttrs": {
-            "attrs": "(fill)"
-          }
-        }
-      ]
-    }
-  },
   "pixo": {
     "index": true,
     "template": "styledSystem"
