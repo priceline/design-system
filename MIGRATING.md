@@ -8,6 +8,7 @@ Follow these steps to migrate from v1 to v2
 - Remove any references to legacy color values
 - Remove the `legacy` prop from ThemeProvider
 - Remove the `legacy` prop from Icon
+- Ensure no imports are targeting files within the `dist/` directory (e.g. use `import { Box } from 'pcln-design-system'`; *NOT* `import Box from 'pcln-design-system/dist/Box'`)
 - Replace any legacy icons with new ones
 - Change Flex `align` prop to `alignItems`
 - Change Flex `justify` prop to `justifyContent`
