@@ -5,7 +5,6 @@ import * as icons from 'pcln-icons/lib'
 
 const keys = Object.keys(icons)
 
-console.log(keys)
 
 storiesOf('Icon', module)
   .add('Icons', () => (
