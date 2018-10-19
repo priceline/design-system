@@ -1,0 +1,44 @@
+{
+  "name": "pcln-slider",
+  "version": "2.0.0-beta.3",
+  "description": "React component for range sliders",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "babel src -d dist",
+    "test": "jest"
+  },
+  "author": "Priceline",
+  "license": "MIT",
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "rc-slider": "^8.6.3",
+    "styled-system": "^3.1.6"
+  },
+  "peerDependencies": {
+    "pcln-design-system": "^1.0.1",
+    "styled-components": "^3.4.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@reach/component-component": "^0.1.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^23.6.0",
+    "jest-styled-components": "^6.2.1",
+    "pcln-design-system": "^1.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "styled-components": "^3.4.9"
+  }
+}

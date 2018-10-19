@@ -39,7 +39,6 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-test-renderer": "^16.5.2",
-    "recompose": "^0.30.0",
     "stylis": "^3.4.9"
   },
   "jest": {
@@ -50,12 +49,12 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "pcln-icons": "^2.0.0-beta.3",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.6.3",
     "styled-system": "^3.1.4"
   },
   "peerDependencies": {
+    "pcln-icons": "^2.0.0-beta.3",
     "styled-components": ">=2.0.0 || >=3.0.0"
   },
   "repository": {
