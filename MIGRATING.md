@@ -16,6 +16,7 @@ Follow these steps to migrate from v1 to v2
 - Change Box `align` prop to `textAlign`
 - Change Text `bold` prop to `fontWeight='bold'`
 - The Text `italic` prop has been removed. Use styled-components or the `<i>` tag to use italic styles.
+- Change Flex and Box prop `w` with `width`
 - Change Button `fullWidth` prop to `width={1}`
 - If you're using the `customBreakpoints` prop in the ThemeProvider, ensure the values in the array are strings with `em` units
 - Ensure Heading component has appropriately set styles. If your application relied on the styles with the `Heading.h1` – `Heading.h6` semantic components, use the new `textStyle` prop to set styles (e.g. `<Heading.h1 textStyle='display6' />`)
