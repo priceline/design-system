@@ -40,7 +40,6 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-test-renderer": "^16.5.2",
-    "recompose": "^0.30.0",
     "stylis": "^3.4.9",
     "svgi": "^1.1.0"
   },
