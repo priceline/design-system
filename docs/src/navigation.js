@@ -53,7 +53,7 @@ export default [
     links: [
       { name: 'Motion', path: '/Motion' },
       { name: 'Layout', path: '/Layout' },
-      { name: 'Contributing', path: '/Contributing' },
+      { name: 'Contributing', path: 'https://github.com/pricelinelabs/design-system/blob/master/CONTRIBUTING.md' },
       { name: 'GitHub', path: 'https://github.com/pricelinelabs/design-system' }
     ]
   }
