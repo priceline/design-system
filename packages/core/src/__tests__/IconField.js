@@ -7,7 +7,7 @@ describe('IconField', () => {
     const json = TestRenderer.create(
       <IconField>
         <Icon name="calendar" />
-        <Input id="test" placholder="IconField" />
+        <Input id="test" placeholder="IconField" />
       </IconField>
     ).toJSON()
     expect(json).toMatchSnapshot()
