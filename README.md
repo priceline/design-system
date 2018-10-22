@@ -1,5 +1,5 @@
 
-# Priceline Design System
+# Cinderblock - Knotel Design System
 
 [![Build Status][travis-badge]][travis]
 [![Coverage][coverage-badge]][coverage]
