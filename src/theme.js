@@ -21,7 +21,7 @@ addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128]
 
-export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
+export const font = `'Halyard Text', 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
