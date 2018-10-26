@@ -135,8 +135,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -165,8 +164,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -278,8 +276,7 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -308,8 +305,7 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -421,8 +417,7 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -451,8 +446,7 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -564,8 +558,7 @@ exports[`FormField it renders a with a both icons 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -594,8 +587,7 @@ exports[`FormField it renders a with a both icons 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -794,8 +786,7 @@ exports[`FormField it renders a with a left side icon 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -929,8 +920,7 @@ exports[`FormField it renders a with a right side icon 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -1036,8 +1026,7 @@ exports[`FormField it renders using FormField alias 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -1090,7 +1079,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
 }
 
 .c5 {
@@ -1203,18 +1192,18 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
   align-items: center;
 }
 
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c7 {
@@ -1270,8 +1259,7 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -1342,7 +1330,7 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
 }
 
 .c5 {
@@ -1470,18 +1458,24 @@ exports[`FormField it renders using FormField alias with Select icons on both si
   align-items: center;
 }
 
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
+}
+
+.c10 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c7 {
@@ -1537,8 +1531,7 @@ exports[`FormField it renders using FormField alias with Select icons on both si
         width={24}
       >
         <path
-          d="M12.6,10.1C11.8,8,9.8,6.5,7.5,6.5C4.4,6.5,2,8.9,2,12s2.4,5.5,5.5,5.5c2.4,0,4.4-1.5,5.1-3.6h4
-	v3.6h3.6v-3.7H22v-3.7H12.6z M7.5,13.8c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8S9.3,11,9.3,12S8.5,13.8,7.5,13.8z"
+          d="M12.6,10.1C11.8,8,9.8,6.5,7.5,6.5C4.4,6.5,2,8.9,2,12s2.4,5.5,5.5,5.5c2.4,0,4.4-1.5,5.1-3.6h4 v3.6h3.6v-3.7H22v-3.7H12.6z M7.5,13.8c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8S9.3,11,9.3,12S8.5,13.8,7.5,13.8z"
         />
       </svg>
     </div>
@@ -1588,15 +1581,14 @@ exports[`FormField it renders using FormField alias with Select icons on both si
       className="c1 c9"
     >
       <svg
-        className="c4"
+        className="c10"
         fill="currentcolor"
         height={24}
         viewBox="0 0 24 24"
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -1636,18 +1628,18 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
   align-items: center;
 }
 
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c7 {
@@ -1703,8 +1695,7 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
         width={24}
       >
         <path
-          d="M12.6,10.1C11.8,8,9.8,6.5,7.5,6.5C4.4,6.5,2,8.9,2,12s2.4,5.5,5.5,5.5c2.4,0,4.4-1.5,5.1-3.6h4
-	v3.6h3.6v-3.7H22v-3.7H12.6z M7.5,13.8c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8S9.3,11,9.3,12S8.5,13.8,7.5,13.8z"
+          d="M12.6,10.1C11.8,8,9.8,6.5,7.5,6.5C4.4,6.5,2,8.9,2,12s2.4,5.5,5.5,5.5c2.4,0,4.4-1.5,5.1-3.6h4 v3.6h3.6v-3.7H22v-3.7H12.6z M7.5,13.8c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8S9.3,11,9.3,12S8.5,13.8,7.5,13.8z"
         />
       </svg>
     </div>
@@ -1785,18 +1776,18 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
   align-items: center;
 }
 
-.c8 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
+}
+
+.c8 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c5 {
@@ -1894,8 +1885,7 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
         width={24}
       >
         <path
-          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-	l-8,5L4,8V6l8,5l8-5V8z"
+          d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
