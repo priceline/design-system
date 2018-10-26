@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
+import fileSize from 'rollup-plugin-filesize'
 
 module.exports = {
   input: 'src/index.js',
@@ -21,7 +22,14 @@ module.exports = {
     }),
     commonjs(),
     json(),
-    resolve()
+    resolve(),
+    fileSize()
   ],
-  external: ['styled-components', 'react', 'react-dom']
+  external: [
+    'styled-components',
+    'react',
+    'react-dom',
+    'prop-types',
+    'styled-system'
+  ]
 }
