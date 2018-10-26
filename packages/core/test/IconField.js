@@ -1,6 +1,6 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
-import { IconField, Icon, Input } from '..'
+import { IconField, Icon, Input } from '../src'
 
 describe('IconField', () => {
   test('renders', () => {
