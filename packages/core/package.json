@@ -1,12 +1,11 @@
 {
   "name": "pcln-design-system",
-  "version": "2.0.0-beta.3",
+  "version": "2.0.0-beta.5",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run icons && babel src -d dist",
+    "prepare": "babel src -d dist",
     "clean": "rm -rf node_modules dist icons.json",
-    "icons": "node scripts/parse-icons.js",
     "test": "jest"
   },
   "author": "Priceline",
@@ -40,8 +39,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-test-renderer": "^16.5.2",
-    "stylis": "^3.4.9",
-    "svgi": "^1.1.0"
+    "stylis": "^3.4.9"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",
@@ -50,11 +48,13 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.1.2",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.6.3",
     "styled-system": "^3.1.4"
   },
   "peerDependencies": {
+    "pcln-icons": "^2.0.0-beta.3",
     "styled-components": ">=2.0.0 || >=3.0.0"
   },
   "repository": {
