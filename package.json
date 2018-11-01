@@ -12,7 +12,8 @@
     "coverage": "jest --coverage",
     "codecov": "npx codecov",
     "start": "start-storybook -p 8000 -c storybook",
-    "storybook": "build-storybook -c storybook -o docs/out/storybook"
+    "storybook": "build-storybook -c storybook -o docs/out/storybook",
+    "build": "node ./tasks/build.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -36,6 +37,8 @@
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.66.6",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-filesize": "^5.0.1",
