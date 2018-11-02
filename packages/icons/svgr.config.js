@@ -14,6 +14,8 @@ export const ${state.componentName} = ({
     ${code}
   </Svg>
 
+${state.componentName}.isIcon = true
+
 export default ${state.componentName}`
 
 module.exports = {
