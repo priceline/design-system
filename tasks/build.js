@@ -6,6 +6,11 @@ const json = require('rollup-plugin-json')
 const fileSize = require('rollup-plugin-filesize')
 const rimraf = require('rimraf')
 const bundles = require('./bundles')
+const chalk = require('chalk')
+
+function getBundleLabel(argv) {
+  return argv.slice(2)[0]
+}
 
 function asyncRimRaf(filepath) {
   return new Promise((resolve, reject) =>
@@ -20,10 +25,8 @@ function asyncRimRaf(filepath) {
 }
 
 async function createBundle(bundle, format) {
-  await asyncRimRaf(`packages/${bundle.label}/dist/${format}`)
-
   const inputOptions = {
-    input: `packages/${bundle.label}/${bundle.entry}`,
+    input: `${bundle.entry}`,
     plugins: [
       babel({
         exclude: 'node_modules/**',
@@ -38,7 +41,7 @@ async function createBundle(bundle, format) {
   }
 
   const outputOptions = {
-    file: `packages/${bundle.label}/dist/${format}/index.js`,
+    file: `dist/index.${format}.js`,
     format: format
   }
 
@@ -46,11 +49,14 @@ async function createBundle(bundle, format) {
   await result.write(outputOptions)
 }
 
-async function build() {
-  for (const bundle of bundles) {
-    await createBundle(bundle, 'esm')
-    await createBundle(bundle, 'cjs')
-  }
+async function build(bundleLabel) {
+  await asyncRimRaf(`dist`)
+  await createBundle(bundles[bundleLabel], 'esm')
+  console.log(chalk.green(`Finish compile ${bundleLabel} es module version`))
+  await createBundle(bundles[bundleLabel], 'cjs')
+  console.log(
+    chalk.green(`Finish compile ${bundleLabel} commonjs module version`)
+  )
 }
 
-build()
+build(getBundleLabel(process.argv))

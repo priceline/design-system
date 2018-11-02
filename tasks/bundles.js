@@ -1,6 +1,5 @@
-const bundles = [
-  {
-    label: 'core',
+const bundles = {
+  core: {
     entry: 'src/index.js',
     external: [
       'styled-components',
@@ -11,11 +10,16 @@ const bundles = [
       'pcln-icons'
     ]
   },
-  {
-    label: 'icons',
-    entry: 'src/Icon.js',
-    external: ['styled-components']
+  slider: {
+    entry: 'src/index.js',
+    external: [
+      'pcln-design-system',
+      'styled-components',
+      'styled-system',
+      'react',
+      'react-dom'
+    ]
   }
-]
+}
 
 module.exports = bundles
