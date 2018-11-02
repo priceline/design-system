@@ -69,6 +69,7 @@ open http://localhost:8000/
 
 - Storybook stories are in the following directories:
   - `packages/core/storybook`
+  - `packages/slider/storybook`
 
 ### Publishing
 
