@@ -22,6 +22,7 @@ Follow these steps to migrate from v1 to v2
 - Ensure Heading component has appropriately set styles. If your application relied on the styles with the `Heading.h1` – `Heading.h6` semantic components, use the new `textStyle` prop to set styles (e.g. `<Heading.h1 textStyle='display6' />`)
 - Account for other typographic changes (#231)
 - Update dependencies if your application has the following in its `package.json`:
-  - `styled-components` >=3.0.0
+  - `styled-components` >=2.0.0 || >=3.0.0 || >=4.0.0
   - `styled-system` >=3.0.0
+- Account for ThemeProvider no longer using the deprecated `injectGlobal` therby not setting `body { margin: 0 }`
 
