@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "npm run icons && babel src -d dist --ignore __tests__",
+    "prepare": "npm run icons && babel src -d dist --ignore __tests__",
     "precommit": "lint-staged",
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
