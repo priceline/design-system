@@ -16,6 +16,10 @@ export const ${state.componentName} = ({
 
 ${state.componentName}.isIcon = true
 
+${state.componentName}.defaultProps = {
+  size: 24
+}
+
 export default ${state.componentName}`
 
 module.exports = {
