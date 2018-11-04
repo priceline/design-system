@@ -70,9 +70,21 @@ const mintGreen = '#1ABC9C'
 const brightGreen = '#2ECC71'
 const darkGreen = '#27AE60'
 
-// priceline legacy colors
+// grayscale
 const black = '#000'
+const gray900 = '#1F1F1F'
+const gray800 = '#333333'
+const gray700 = '#4F4F4F'
+const gray600 = '#666666'
+const gray500 = '#A3A3A3'
+const gray400 = '#BABABA'
+const gray300 = '#D1D1D1'
+const gray200 = '#E8E8E8'
+const gray100 = '#F0F0F0'
+const gray50 = '#F7F7F7'
 const white = '#fff'
+
+// priceline legacy colors
 const text = '#001833'
 const lightGray = '#f6f8fa'
 const borderGray = '#d1d6db'
@@ -123,6 +135,16 @@ const colors = {
   brightGreen,
   darkGreen,
   black,
+  gray900,
+  gray800,
+  gray700,
+  gray600,
+  gray500,
+  gray400,
+  gray300,
+  gray200,
+  gray100,
+  gray50,
   white,
   text,
   gray,

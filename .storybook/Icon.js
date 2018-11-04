@@ -8,7 +8,7 @@ const legacy = Object.keys(icons.legacy)
 
 storiesOf('Icon', module)
   .add('Icons', () => (
-    <Box p={2} color="white" bg="blue">
+    <Box p={2} color="#424242" bg="white">
       <Flex wrap>
         {keys.map(name => (
           <Box key={name} w={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>

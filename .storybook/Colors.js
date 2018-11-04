@@ -30,13 +30,7 @@ const legacy = Object.keys(legacyTheme.colors)
 
 const Chip = props =>
   props.color ? (
-    <RelativeBox width={1} px={5} py={4} bg={props.color}>
-      {!props.legacy ? (
-        <Deprecated>
-          {props.name[props.name.length - 1].match(/^\d+$/) ? 'deprecated' : ''}
-        </Deprecated>
-      ) : null}
-    </RelativeBox>
+    <RelativeBox width={1} px={5} py={4} bg={props.color} />
   ) : (
     <Box width={1} px={5} py={4}>
       N/A
@@ -77,7 +71,7 @@ storiesOf('Color', module)
       <Flex wrap>
         {next.map(
           color =>
-            !color.key[color.key.length - 1].match(/^\d+$/) ? (
+            !color.key[color.key.length - 1].match(/d/) ? (
               <Box
                 key={color.key}
                 p={3}
