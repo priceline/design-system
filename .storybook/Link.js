@@ -13,4 +13,4 @@ storiesOf('Link', module)
       Open the Priceline Home in the same window
     </Link>
   ))
-  .add('Color', () => <Link color="darkGray">I'm a different color!</Link>)
+  .add('Color', () => <Link color="gray800">I'm a different color!</Link>)

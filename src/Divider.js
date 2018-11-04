@@ -12,7 +12,7 @@ const Divider = styled.hr`
 Divider.displayName = 'Divider'
 
 Divider.defaultProps = {
-  borderColor: 'borderGray',
+  borderColor: 'gray300',
   theme: theme,
   ml: 0,
   mr: 0

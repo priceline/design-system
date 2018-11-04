@@ -39,17 +39,17 @@ const type = props => {
       color: props.theme.colors.darkOrange
     },
     gray: {
-      backgroundColor: props.theme.colors.gray,
+      backgroundColor: props.theme.colors.gray600,
       color: props.theme.colors.white
     },
-    lightGray: {
-      backgroundColor: props.theme.colors.lightGray,
+    gray50: {
+      backgroundColor: props.theme.colors.gray50,
       color: props.theme.colors.text
     }
   }
   return (
     !(props.bg && props.color) &&
-    (badgeColors[props.bg] || badgeColors.lightGray)
+    (badgeColors[props.bg] || badgeColors.gray50)
   )
 }
 

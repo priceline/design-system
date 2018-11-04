@@ -28,7 +28,7 @@ const createSVG = path =>
 
 const IconList = props =>
   props.icons.map(icon => (
-    <Column key={icon} py={4} bg="lightGray">
+    <Column key={icon} py={4} bg="gray50">
       <BlockLink
         href={createSVG(icons[icon].path)}
         download={`${icon}.svg`}

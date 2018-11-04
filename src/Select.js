@@ -20,7 +20,7 @@ const SelectBase = styled.select`
   border-radius: ${system.theme('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${system.theme('colors.borderGray')};
+  border-color: ${system.theme('colors.gray300')};
   ${space} ${fontSize} &:focus {
     outline: none;
     border-color: ${system.theme('colors.primary')};

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import defaultTheme from './theme'
 
 const borders = ({ color, theme }) => {
-  const borderColor = color ? theme.colors[color] : theme.colors.borderGray
+  const borderColor = color ? theme.colors[color] : theme.colors.gray300
   const focusColor = color ? borderColor : theme.colors.primary
   return {
     'border-color': borderColor,
@@ -28,7 +28,7 @@ const Input = styled.input`
   border-radius: ${theme('radius')};
   border-width: 0px;
   border-style: solid;
-  border-color: ${theme('colors.borderGray')};
+  border-color: ${theme('colors.gray300')};
 
   padding-top: 14px;
   padding-bottom: 14px;
@@ -38,7 +38,7 @@ const Input = styled.input`
   margin: 0;
 
   ::placeholder {
-    color: ${theme('colors.gray')};
+    color: ${theme('colors.gray600')};
   }
 
   ::-ms-clear {

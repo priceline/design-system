@@ -6,7 +6,7 @@ import Logo from './Logo'
 import navigation from './navigation'
 
 export default props => (
-  <Box px={3} pb={5} color="text" bg="lightGray">
+  <Box px={3} pb={5} color="text" bg="gray50">
     <Box px={3} pb={4}>
       <Link href="/">
         <div>

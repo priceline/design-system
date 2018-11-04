@@ -11,7 +11,7 @@ describe('Stamp', () => {
   test('color gray sets text and icon color', () => {
     const json = renderer.create(<Stamp color="gray" />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.gray)
+    expect(json).toHaveStyleRule('color', theme.colors.gray600)
   })
 
   test('color blue sets text and icon color', () => {

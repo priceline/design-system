@@ -86,10 +86,6 @@ const white = '#fff'
 
 // priceline legacy colors
 const text = '#001833'
-const lightGray = '#f6f8fa'
-const borderGray = '#d1d6db'
-const gray = '#687B8E' // primary
-const darkGray = '#364049'
 const lightGreen = '#cec'
 const green = '#0a0' // secondary
 const lightRed = '#fcc'
@@ -111,7 +107,7 @@ const flatten = (name, colors) =>
 const warmColors = [yellow, lightOrange, orange, darkOrange, darkPink, crimsonRed, darkPurple, purple]
 
 const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [lightGray, lightGray, gray, gray]
+const grays = [gray50]
 const greens = [lightGreen, lightGreen, green, green]
 const reds = [lightRed, lightRed, red, red]
 const oranges = [lightOrange, lightOrange, orange, orange]
@@ -147,10 +143,6 @@ const colors = {
   gray50,
   white,
   text,
-  gray,
-  lightGray,
-  borderGray,
-  darkGray,
   green,
   lightGreen,
   red,

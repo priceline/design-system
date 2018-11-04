@@ -9,7 +9,7 @@ storiesOf('Badge', module)
     withInfo({
       inline: true,
       text: 'Use the <Badge /> component to render a primitive badge.'
-    })(() => <Badge bg="lightGray">badge</Badge>)
+    })(() => <Badge bg="gray50">badge</Badge>)
   )
   .add('All colors', () => (
     <div>
