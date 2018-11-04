@@ -22,6 +22,10 @@ export const Base = styled.div`
   * {
     box-sizing: border-box;
   }
+
+  body {
+    font-family: ${props => props.theme.font};
+  }
 `
 
 const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {

@@ -9,21 +9,21 @@ describe('Button', () => {
   })
 
   test('size small sets height and font-size', () => {
-    const json = renderer.create(<Button size="small" />).toJSON()
+    const json = renderer.create(<Button size='small' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-size', '12px')
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
+    expect(json).toHaveStyleRule('background-color', theme.colors.primary)
     expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('size medium sets height and font-size', () => {
-    const json = renderer.create(<Button size="medium" />).toJSON()
+    const json = renderer.create(<Button size='medium' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-size', '14px')
   })
 
   test('size large sets height and font-size', () => {
-    const json = renderer.create(<Button size="large" />).toJSON()
+    const json = renderer.create(<Button size='large' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-size', '16px')
   })
@@ -37,7 +37,7 @@ describe('Button', () => {
   test('disabled prop sets', () => {
     const json = renderer.create(<Button disabled />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
+    expect(json).toHaveStyleRule('background-color', theme.colors.primary)
   })
 
   test('without disabled prop sets', () => {

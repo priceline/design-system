@@ -42,6 +42,7 @@
     "jest": "^20.0.4",
     "jest-styled-components": "^5.0.1",
     "lint-staged": "^4.2.3",
+    "polished": "^2.3.0",
     "prettier": "^1.7.4",
     "react": "^15.6.1",
     "react-chromatic": "^0.7.10",

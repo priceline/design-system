@@ -11,7 +11,7 @@ export const caps = props =>
     : null
 
 export const fontFamily = props =>
-    props.fontFamily ? { fontFamily: props.fontFamily } : null
+    props.fontFamily ? { fontFamily: props.fontFamily } : { fontFamily: props.theme.font }
 
 export const regular = props =>
   props.regular ? { fontWeight: props.theme.regular } : null

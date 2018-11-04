@@ -23,8 +23,8 @@ const SelectBase = styled.select`
   border-color: ${system.theme('colors.borderGray')};
   ${space} ${fontSize} &:focus {
     outline: none;
-    border-color: ${system.theme('colors.blue')};
-    box-shadow: 0 0 0 1px ${system.theme('colors.blue')};
+    border-color: ${system.theme('colors.primary')};
+    box-shadow: 0 0 0 1px ${system.theme('colors.primary')};
   }
 `
 SelectBase.defaultProps = {
@@ -37,9 +37,9 @@ SelectBase.defaultProps = {
 }
 
 const Select = styled(props => (
-  <Flex width={1} align="center">
+  <Flex width={1} align='center'>
     <SelectBase {...props} />
-    <ClickableIcon legacy={false} ml={-32} name="chevronDown" color="gray" />
+    <ClickableIcon legacy={false} ml={-32} name='chevronDown' color='gray' />
   </Flex>
 ))``
 

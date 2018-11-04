@@ -11,7 +11,7 @@ describe('OutlineButton', () => {
   test('disabled prop sets', () => {
     const json = renderer.create(<OutlineButton disabled />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.blue)
+    expect(json).toHaveStyleRule('color', theme.colors.primary)
   })
 
   test('without disabled prop sets', () => {
