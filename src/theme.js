@@ -4,33 +4,44 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get() {
+      get () {
         return this[i]
       }
     })
   )
 
-export const breakpoints = [32, 40, 48, 64]
+export const breakpoints = [36, 48, 62, 75]
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
 const aliases = ['sm', 'md', 'lg', 'xl']
+
+/*
+Small devices (landscape phones, 576px and up)
+Medium devices (tablets, 768px and up)
+Large devices (desktops, 992px and up)
+Extra large devices (large desktops, 1200px and up)
+*/
 
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128]
 
-export const font = `'Helvetica Neue',Helvetica,Arial,sans-serif`
+export const font = `'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif`
+
+export const headingFont = 'halyard-display'
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
+export const medium = 500
 export const bold = 600
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
   regular,
+  medium,
   bold
 }
 
@@ -163,10 +174,12 @@ const theme = {
   mediaQueries,
   space,
   font,
+  headingFont,
   fontSizes,
   fontWeights,
   letterSpacings,
   regular,
+  medium,
   bold,
   colors,
   radii,

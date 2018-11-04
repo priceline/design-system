@@ -12,6 +12,10 @@ injectGlobal`body {
 }`
 
 export const Base = styled.div`
+
+  @import url(‘https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+  @import url("https://use.typekit.net/pch6hwb.css");
+
   font-family: ${props => props.theme.font};
   line-height: 1.4;
 

@@ -6,12 +6,18 @@ import theme from './theme'
 export const caps = props =>
   props.caps
     ? {
-        textTransform: 'uppercase'
-      }
+      textTransform: 'uppercase'
+    }
     : null
+
+export const fontFamily = props =>
+    props.fontFamily ? { fontFamily: props.fontFamily } : null
 
 export const regular = props =>
   props.regular ? { fontWeight: props.theme.regular } : null
+
+export const medium = props =>
+  props.medium ? { fontWeight: props.theme.medium } : null
 
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
@@ -21,7 +27,7 @@ export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
 const align = responsiveStyle('text-align', 'align')
 
 const Text = styled.div`
-  ${italic} ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
+  ${italic} ${fontSize} ${space} ${color} ${caps} ${regular} ${medium} ${fontFamily} ${bold} ${align};
 `
 
 Text.displayName = 'Text'
@@ -41,6 +47,8 @@ Text.propTypes = {
   align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
+  fontFamily: PropTypes.string,
+  medium: PropTypes.bool,
   bold: PropTypes.bool,
   italic: PropTypes.bool,
   color: PropTypes.string,
