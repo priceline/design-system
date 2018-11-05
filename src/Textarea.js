@@ -17,7 +17,7 @@ const borders = ({ color, theme }) => {
   }
 }
 
-const Input = styled.input`
+const Textarea = styled.textarea`
   appearance: none;
   display: block;
   width: 100%;
@@ -38,6 +38,7 @@ const Input = styled.input`
 
   margin: 0;
 
+  resize: none;
   ::placeholder {
     color: ${theme('colors.gray600')};
   }
@@ -49,16 +50,16 @@ const Input = styled.input`
   ${borders} ${space};
 `
 
-Input.displayName = 'Input'
-Input.propTypes = {
+Textarea.displayName = 'Textarea'
+Textarea.propTypes = {
   id: PropTypes.string.isRequired,
   color: PropTypes.string,
   ...propTypes.borders,
   ...propTypes.space
 }
 
-Input.defaultProps = {
+Textarea.defaultProps = {
   theme: defaultTheme
 }
 
-export default Input
+export default Textarea
