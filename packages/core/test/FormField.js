@@ -1,13 +1,15 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { mount } from 'enzyme'
+import { render, fireEvent, cleanup } from 'react-testing-library'
 import { FormField, Icon, Input, Label, Select } from '../src'
+
+afterEach(cleanup)
 
 describe('FormField', () => {
   test('it renders using the old api, but should throw a prop-type warning', () => {
     console.error = jest.fn()
 
-    const test = mount(
+    const test = render(
       <FormField label="test" icon="lock" id="test-input" onChange={() => {}} />
     )
 
@@ -18,6 +20,7 @@ describe('FormField', () => {
     )
     console.error.mockRestore()
   })
+
   test('it renders using FormField alias', () => {
     const json = renderer
       .create(
@@ -190,21 +193,22 @@ describe('FormField', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test("it calls the `onChange` handler passed into `FormField` when the child `Input` component's value updates", () => {
-    const mockChange = jest.fn()
-    const test = mount(
-      <FormField onChange={mockChange}>
+  test('it calls the `onChange` handler passed into `FormField` when the child `Input` components value updates', () => {
+    const onChange = jest.fn()
+    const { container } = render(
+      <FormField onChange={onChange}>
         <Label>A Label</Label>
         <Input id="caller" placeholder="placeholder text" />
       </FormField>
     )
+    const input = container.querySelector('input')
+    fireEvent.change(input, { target: { value: 'hello' } })
 
-    let input = test.find(Input)
-    input.simulate('change', { target: { value: 'asdf' } })
-    expect(mockChange).toHaveBeenCalledTimes(1)
+    expect(onChange).toHaveBeenCalledTimes(1)
   })
+
   test('it correctly places an aria-label with the placeholder value before user has interacted with the input', () => {
-    const test = mount(
+    const { container } = render(
       <FormField>
         <Label>A Label</Label>
         <Icon name="email" />
@@ -212,28 +216,23 @@ describe('FormField', () => {
         <Icon name="email" />
       </FormField>
     )
-
-    // before user interaction the Label element should not be rendered
-    let label = test.find(Label)
-    expect(label.length).toBe(0)
-
-    let input = test.find(Input)
-    expect(input.getDOMNode().getAttribute('aria-label')).toBe(
-      'placeholder text'
-    )
+    const label = container.querySelector('label')
+    const input = container.querySelector('input')
+    expect(label).toBeFalsy()
+    expect(input.getAttribute('aria-label')).toBe('placeholder text')
   })
 
   test('it shows a label when the input has a value', () => {
-    const wrapper = mount(
+    const { container } = render(
       <FormField>
         <Label>Hello</Label>
         <Input placeholder="Hello" value="Howdy" />
       </FormField>
     )
-    const label = wrapper.find(Label)
-    const input = wrapper.find(Input)
-    expect(label.length).toBe(1)
-    expect(input.getDOMNode().getAttribute('aria-label')).toBeFalsy()
+    const label = container.querySelector('label')
+    const input = container.querySelector('input')
+    expect(label).toBeTruthy()
+    expect(input.getAttribute('aria-label')).toBeFalsy()
   })
 
   test('it does not display a label when Label has `hidden` prop', () => {
@@ -252,20 +251,19 @@ describe('FormField', () => {
 
   test('it calls onChange prop if provided', () => {
     const onChange = jest.fn()
-    const wrapper = mount(
+    const { container } = render(
       <FormField>
         <Input onChange={onChange} />
       </FormField>
     )
-    const input = wrapper.find(Input)
-    input.simulate('change', { target: { value: 'hi' } })
+    const input = container.querySelector('input')
+    fireEvent.change(input, { target: { value: 'hi' } })
     expect(onChange).toHaveBeenCalledTimes(1)
   })
 
   test('it triggers a prop-type warning when 3 icons are provided', () => {
     console.error = jest.fn()
-
-    const test = mount(
+    render(
       <FormField onChange={() => {}}>
         <Label>A Label</Label>
 
@@ -275,7 +273,6 @@ describe('FormField', () => {
         <Icon name="email" />
       </FormField>
     )
-
     expect(
       console.error.mock.calls
         .toString()
@@ -283,10 +280,10 @@ describe('FormField', () => {
     )
     console.error.mockRestore()
   })
+
   test('it triggers a prop-type warning when any element besides Label, Icon, and Input is provided as a child.', () => {
     console.error = jest.fn()
-
-    const test = mount(
+    render(
       <FormField onChange={() => {}}>
         <span>Extra stuff not supported</span>
         <Label>A Label</Label>
@@ -297,7 +294,6 @@ describe('FormField', () => {
         <Icon name="email" />
       </FormField>
     )
-
     expect(
       console.error.mock.calls
         .toString()
@@ -305,17 +301,16 @@ describe('FormField', () => {
     )
     console.error.mockRestore()
   })
+
   test('it triggers a prop-type warning when more than one Label is provided', () => {
     console.error = jest.fn()
-
-    const test = mount(
+    render(
       <FormField onChange={() => {}}>
         <Label>A Label</Label>
         <Label>Another Label</Label>
         <Input id="with-both-icons" />
       </FormField>
     )
-
     expect(
       console.error.mock.calls
         .toString()
@@ -324,10 +319,10 @@ describe('FormField', () => {
     )
     console.error.mockRestore()
   })
+
   test('it triggers a prop-type warning when there is more than one icon before or after the Input element', () => {
     console.error = jest.fn()
-
-    const test = mount(
+    render(
       <FormField onChange={() => {}}>
         <span>Extra stuff not supported</span>
         <Label>A Label</Label>
@@ -337,7 +332,6 @@ describe('FormField', () => {
         <Input id="with-both-icons" />
       </FormField>
     )
-
     expect(
       console.error.mock.calls
         .toString()
