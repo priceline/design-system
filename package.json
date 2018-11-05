@@ -1,6 +1,6 @@
 {
   "name": "@knotel/cinderblock",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Knotel Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -45,7 +45,6 @@
     "jest": "^20.0.4",
     "jest-styled-components": "^5.0.1",
     "lint-staged": "^4.2.3",
-    "polished": "^2.3.0",
     "prettier": "^1.7.4",
     "react": "^16.5.2",
     "react-chromatic": "^0.7.10",
@@ -75,6 +74,7 @@
     "styled-system": "^1.0.8"
   },
   "peerDependencies": {
+    "polished": "^2.3.0",
     "styled-components": ">=2.0.0 || >=3.0.0"
   },
   "standard": {
