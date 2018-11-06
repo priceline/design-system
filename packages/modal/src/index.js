@@ -5,50 +5,14 @@ import { color } from 'styled-system'
 import { Transition } from 'react-spring'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, Text, CloseButton, Flex } from 'pcln-design-system'
-
-const getWidth = props => {
-  if (props.size === 'lg') {
-    return '960px'
-  } else if (props.size === 'sm') {
-    return '400px'
-  } else {
-    return '480px'
-  }
-}
-
-const getTopbarHeight = props => {
-  if (props.size === 'lg') {
-    return '48px'
-  } else if (props.size === 'sm') {
-    return '8px'
-  } else {
-    return '40px'
-  }
-}
-
-const getVertical = props => {
-  if (props.size === 'lg') {
-    return `
-      height: 100vh;
-      ${props.theme.mediaQueries['lg']}{
-        height: calc(100vh - 48px);
-      }
-    `
-  } else if (props.size === 'md') {
-    return 'min-height: 360px;'
-  } else {
-    return `
-    min-height: 240px;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    `
-  }
-}
+import {
+  getHorizontal,
+  getInnerHeight,
+  getVertical,
+  getTopbarHeight
+} from './helpers'
 
 const Overlay = styled(DialogOverlay)`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7);
   bottom: 0;
   left: 0;
@@ -62,24 +26,18 @@ const Overlay = styled(DialogOverlay)`
 
 const Dialog = styled(DialogContent)`
   ${color} position: relative;
-  width: ${getWidth};
-  margin-left: auto;
+  ${getHorizontal} margin-left: auto;
   margin-right: auto;
   box-shadow: ${props => props.theme.boxShadows[3]};
-  max-width: calc(100vw - 32px);
   ${getVertical} &:focus {
     outline: none;
   }
-
-  ${props => `${props.theme.mediaQueries['lg']}{
-    
-  }`};
 `
 
 const StyledHeader = styled(Flex)`
-  height: ${getTopbarHeight}
-    ${props => `${props.theme.mediaQueries['lg']}{
-    height: ${props => (props.size === 'sm' ? '8px' : '40px')}
+  height: ${getTopbarHeight};
+  ${props => `${props.theme.mediaQueries['lg']}{
+    height: ${props.size === 'sm' ? '8px' : '40px'};
   }`};
 `
 
@@ -103,6 +61,24 @@ const FloatCloseButton = styled(CloseButton)`
 
 const ContentWrapper = styled(Box)`
   position: relative;
+  ${getInnerHeight};
+`
+
+const OverlayWrapper = styled.div`
+  display: table;
+  height: 100%;
+  width: 100%;
+`
+
+const DialogWrapper = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+  ${props =>
+    props.size === 'sm' &&
+    `
+    padding-top: 24px;
+    padding-bottom: 24px;
+  `};
 `
 
 const Modal = ({
@@ -126,29 +102,33 @@ const Modal = ({
       isOpen &&
       (styles => (
         <Overlay onDismiss={onClose} zIndex={zIndex} style={styles}>
-          <Dialog size={size} bg={bg || 'white'}>
-            <StyledHeader
-              size={size}
-              align="center"
-              color="white"
-              bg={headerBg || 'blue'}
-              pl="16px"
-            >
-              {size !== 'sm' &&
-                title && (
-                  <Text fontSize={1} bold>
-                    {title}
-                  </Text>
-                )}
-              {size !== 'sm' && (
-                <StyledCloseButton onClick={onClose} ml="auto" />
-              )}
-            </StyledHeader>
-            <ContentWrapper p={imgMode || 16}>
-              {size === 'sm' && <FloatCloseButton onClick={onClose} />}
-              {children}
-            </ContentWrapper>
-          </Dialog>
+          <OverlayWrapper>
+            <DialogWrapper size={size}>
+              <Dialog size={size} bg="white">
+                <StyledHeader
+                  size={size}
+                  align="center"
+                  color="white"
+                  bg={headerBg || 'blue'}
+                  pl="16px"
+                >
+                  {size !== 'sm' &&
+                    title && (
+                      <Text fontSize={1} bold>
+                        {title}
+                      </Text>
+                    )}
+                  {size !== 'sm' && (
+                    <StyledCloseButton onClick={onClose} ml="auto" />
+                  )}
+                </StyledHeader>
+                <ContentWrapper p={imgMode || 16} size={size}>
+                  {size === 'sm' && <FloatCloseButton onClick={onClose} />}
+                  {children}
+                </ContentWrapper>
+              </Dialog>
+            </DialogWrapper>
+          </OverlayWrapper>
         </Overlay>
       ))
     }
