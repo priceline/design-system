@@ -15,7 +15,7 @@ const Checkbox = props => {
   )
 }
 
-const CheckBoxWrapper = Box.extend`
+const CheckBoxWrapper = styled(Box)`
   display: inline-block;
   position: relative;
   vertical-align: middle;

@@ -13,7 +13,7 @@ import {
   theme
 } from '../src'
 
-const StyledLabel = Label.extend`
+const StyledLabel = styled(Label)`
   cursor: pointer;
   font-size: 12px;
   vertical-align: middle;
