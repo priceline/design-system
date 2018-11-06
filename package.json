@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
-    "prepare": "lerna bootstrap",
+    "prepare": "npm run bootstrap",
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna run clean",
     "changed": "lerna changed",
