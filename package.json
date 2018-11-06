@@ -34,6 +34,7 @@
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-testing-library": "^5.2.3",
     "styled-components": "^3.4.9"
   },
   "jest": {
@@ -63,8 +64,5 @@
       "prettier --no-semi --single-quote --write",
       "git add"
     ]
-  },
-  "dependencies": {
-    "react-testing-library": "^5.2.3"
   }
 }
