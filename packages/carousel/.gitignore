@@ -1,5 +1,4 @@
 node_modules
-lerna-debug.log
-coverage
+npm-debug.log
 dist
 .DS_Store
