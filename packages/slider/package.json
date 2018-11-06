@@ -34,7 +34,6 @@
     "@reach/component-component": "^0.1.1",
     "babel-core": "^7.0.0-bridge.0",
     "jest": "^23.6.0",
-    "jest-styled-components": "^6.2.1",
     "pcln-design-system": "^1.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
