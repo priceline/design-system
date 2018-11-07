@@ -11,6 +11,7 @@ createGlobalStyle([], {
   },
   body: {
     lineHeight: 1.5,
+    fontFamily: 'Open Sans',
     margin: 0
   }
 })
