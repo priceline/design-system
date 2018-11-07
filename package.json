@@ -73,8 +73,7 @@
     "global": "^4.3.2",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.5.0",
-    "styled-system": "^1.0.8",
-    "webpack": "^4.25.1"
+    "styled-system": "^1.0.8"
   },
   "peerDependencies": {
     "polished": "^2.3.0",
