@@ -19,7 +19,7 @@ export default class Header extends React.Component {
         align='center'
         color={theme.colors.text}
         bg={theme.colors.white}
-        px={3}
+        px={4}
 
       >
         <a href='/'>
