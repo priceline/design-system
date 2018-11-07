@@ -23,7 +23,7 @@ export default class Header extends React.Component {
 
       >
         <a href='/'>
-          <Icon name='kLogo' size={52} color={theme.colors.gray800} />
+          <Icon name='knotelLogo' size={80} color={theme.colors.gray800} />
         </a>
       </Nav>
     )
