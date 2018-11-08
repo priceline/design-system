@@ -1,73 +1,78 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import Success from 'pcln-icons/lib/Success'
+import Warning from 'pcln-icons/lib/Warning'
+import Attention from 'pcln-icons/lib/Attention'
+import Information from 'pcln-icons/lib/Information'
 import Box from './Box'
 import Flex from './Flex'
 import Text from './Text'
-import Icon from './Icon'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
-import PropTypes from 'prop-types'
 
-const bannerColors = {
+const rootColors = {
   green: {
-    backgroundColor: 'green',
-    color: 'white',
-    icon: 'success'
+    bg: 'green',
+    color: 'white'
   },
   lightGreen: {
-    backgroundColor: 'lightGreen',
-    color: 'darkGreen',
-    icon: 'success'
+    bg: 'lightGreen',
+    color: 'darkGreen'
   },
   red: {
-    backgroundColor: 'red',
-    color: 'white',
-    icon: 'warning'
+    bg: 'red',
+    color: 'white'
   },
   lightRed: {
-    backgroundColor: 'lightRed',
-    color: 'darkRed',
-    icon: 'warning'
+    bg: 'lightRed',
+    color: 'darkRed'
   },
   orange: {
-    backgroundColor: 'orange',
-    color: 'white',
-    icon: 'attention'
+    bg: 'orange',
+    color: 'white'
   },
   blue: {
-    backgroundColor: 'blue',
-    color: 'white',
-    icon: 'information'
+    bg: 'blue',
+    color: 'white'
   },
   lightBlue: {
-    backgroundColor: 'lightBlue',
-    color: 'darkBlue',
-    icon: 'information'
+    bg: 'lightBlue',
+    color: 'darkBlue'
   }
 }
 
-const Banner = props => {
-  const bannerColor = bannerColors[props.bg] || {}
-  const icon = props.iconName || bannerColor.icon
+const icons = {
+  green: <Success />,
+  lightGreen: <Success />,
+  red: <Warning />,
+  lightRed: <Warning />,
+  orange: <Attention />,
+  blue: <Information />,
+  lightBlue: <Information />
+}
+
+const Banner = ({ icon, onClose, textAlign, header, text, ...props }) => {
+  const rootProps = rootColors[props.bg] || {}
+  icon = icon || icons[props.bg]
 
   return (
-    <Box
-      {...props}
-      bg={bannerColor.backgroundColor || props.bg}
-      color={bannerColor.color || props.color}
-    >
+    <Box {...props} {...rootProps}>
       <Flex justifyContent="space-between" alignItems="flex-start">
         {!!icon &&
-          !!props.showIcon && <Icon name={icon} mr={2} size={24} mt="-2px" />}
-        <Box w={1}>
-          <Text textAlign={props.textAlign}>
-            <Heading.h5>{props.header}</Heading.h5>
-            <Text.span fontSize={1}>{props.text}</Text.span>
+          React.cloneElement(icon, {
+            mr: 2,
+            mt: '-2px'
+          })}
+        <Box width={1}>
+          <Text textAlign={textAlign}>
+            {header && <Heading.h5 fontSize={2}>{header}</Heading.h5>}
+            {text && <Text.span fontSize={1}>{text}</Text.span>}
             {props.children}
           </Text>
         </Box>
-        {!!props.onClose && (
+        {!!onClose && (
           <CloseButton
-            onClick={props.onClose}
+            onClick={onClose}
             ml={2}
             size={24}
             title="close"
@@ -82,18 +87,15 @@ const Banner = props => {
 Banner.displayName = 'Banner'
 
 Banner.propTypes = {
-  header: PropTypes.string,
-  iconName: PropTypes.string,
+  icon: PropTypes.node,
   onClose: PropTypes.func,
-  showIcon: PropTypes.bool,
+  header: PropTypes.string,
   text: PropTypes.string,
   textAlign: PropTypes.string
 }
 
 Banner.defaultProps = {
-  bg: 'green',
-  textAlign: 'left',
-  showIcon: true
+  bg: 'green'
 }
 
 export default Banner
