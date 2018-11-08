@@ -4,10 +4,12 @@ import styled, { keyframes } from 'styled-components'
 import Box from './Box'
 import Flex from './Flex'
 import Select from './Select'
-import Icon from './Icon'
 import Label from './Label'
 import Input from './Input'
 import theme from './theme'
+
+// todo: this will not be needed after changes in #361
+import Icon from 'pcln-icons'
 
 const Root = styled(Box)`
   & ${Box} {

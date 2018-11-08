@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+import Star from 'pcln-icons/lib/Star'
 import { Box, Banner, Flex, Text } from '../src'
 
 storiesOf('Banner', module)
@@ -605,7 +606,7 @@ storiesOf('Banner', module)
         p={2}
         text="blue"
         bg="blue"
-        iconName="star"
+        icon={<Star />}
       />
       <Banner
         textAlign="right"
@@ -613,6 +614,7 @@ storiesOf('Banner', module)
         p={2}
         text="green"
         bg="green"
+        icon={<Star />}
         iconName="star"
       />
       <Banner
@@ -621,7 +623,7 @@ storiesOf('Banner', module)
         p={2}
         text="orange"
         bg="orange"
-        iconName="star"
+        icon={<Star />}
       />
       <Banner
         textAlign="right"
@@ -629,7 +631,7 @@ storiesOf('Banner', module)
         p={2}
         text="red"
         bg="red"
-        iconName="star"
+        icon={<Star />}
       />
       <Banner
         textAlign="left"
@@ -637,7 +639,7 @@ storiesOf('Banner', module)
         p={2}
         text="blue"
         bg="lightBlue"
-        iconName="star"
+        icon={<Star />}
       />
       <Banner
         textAlign="right"
@@ -645,7 +647,7 @@ storiesOf('Banner', module)
         p={2}
         text="green"
         bg="lightGreen"
-        iconName="star"
+        icon={<Star />}
       />
       <Banner
         textAlign="right"
@@ -653,7 +655,7 @@ storiesOf('Banner', module)
         p={2}
         text="red"
         bg="lightRed"
-        iconName="star"
+        icon={<Star />}
       />
     </Box>
   ))
