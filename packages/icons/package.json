@@ -1,6 +1,6 @@
 {
   "name": "pcln-icons",
-  "version": "2.0.0-beta.5",
+  "version": "2.0.0-beta.6",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "react-test-renderer": "^16.5.2"
   },
   "peerDependencies": {
-    "styled-components": ">=3.x"
+    "styled-components": ">=3.x || >=4.x"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",
