@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Hug, Hide, Card, Text } from '../src'
+import ThumbsUp from 'pcln-icons/lib/ThumbsUp'
 
 const text = (
   <Text.span>
@@ -28,7 +29,7 @@ storiesOf('Hug', module)
     </Hug>
   ))
   .add('With icon and a card inside', () => (
-    <Hug text={text} icon="thumbsUp">
+    <Hug text={text} icon={<ThumbsUp />}>
       <Card p={3} bg="white" color="text">
         I‘m a card within a hug!
       </Card>
@@ -58,13 +59,7 @@ storiesOf('Hug', module)
     </Hug>
   ))
   .add('With a responsive hug', () => (
-    <Hug
-      text={responsiveText}
-      p={2}
-      fontSize={[0, 1]}
-      icon="thumbsUp"
-      iconDisplay={['none', 'unset']}
-    >
+    <Hug text={responsiveText} p={2} fontSize={[0, 1]} icon={<ThumbsUp />}>
       <Card p={3} bg="white" color="text">
         I‘m a card within a hug!
       </Card>

@@ -2,11 +2,9 @@ import React from 'react'
 import Box from './Box'
 import Card from './Card'
 import Flex from './Flex'
-import Icon from './Icon'
 import Text from './Text'
 import theme from './theme'
 import styled from 'styled-components'
-import { display } from 'styled-system'
 import PropTypes from 'prop-types'
 
 const HugCard = styled(Card)`
@@ -23,23 +21,15 @@ const BorderConcealer = styled(Box)`
   }
 `
 
-const HideableIcon = styled(Icon)`
-  ${display};
-`
-
-const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
+const Hug = ({ bg, color, p, fontSize, icon, ...props }) => (
   <HugCard {...props} borderColor={bg}>
     <Flex bg={bg} color={color} p={p} alignItems="center">
-      {!!icon && (
-        <HideableIcon
-          mr={2}
-          mt="-2px"
-          mb="2px"
-          name={icon}
-          size={24}
-          display={iconDisplay}
-        />
-      )}
+      {!!icon &&
+        React.cloneElement(icon, {
+          mr: 2,
+          mt: '-2px',
+          mb: '2px'
+        })}
       <Text fontSize={fontSize}>{props.text}</Text>
     </Flex>
     <BorderConcealer>{props.children}</BorderConcealer>
@@ -56,8 +46,7 @@ Hug.defaultProps = {
 }
 
 Hug.propTypes = {
-  iconDisplay: PropTypes.arrayOf(PropTypes.string),
-  icon: PropTypes.string,
+  icon: PropTypes.node,
   text: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
