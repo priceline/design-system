@@ -1,14 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, {
-  ThemeProvider as StyledThemeProvider,
-  injectGlobal
-} from 'styled-components'
+import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import nextTheme from './theme'
-
-injectGlobal`body {
-  margin: 0;
-}`
 
 export const Base = styled.div`
   font-family: ${props => props.theme.font};
