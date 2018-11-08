@@ -1,7 +1,7 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { createGlobalStyle } from 'styled-components'
-import { ThemeProvider, Box } from '../src'
+import { ThemeProviderBase as ThemeProvider, Box } from '../src'
 import 'react-chromatic/storybook-addon'
 import '@storybook/addon-actions/register';
 

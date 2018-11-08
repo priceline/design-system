@@ -1,3 +1,5 @@
+import styled from 'styled-components'
+
 export { default as Absolute } from './Absolute'
 export { default as BackgroundImage } from './BackgroundImage'
 export { default as Badge } from './Badge'
@@ -41,6 +43,10 @@ export { default as Checkbox } from './Checkbox'
 
 export { default as theme } from './theme'
 export { default as legacyTheme } from './legacyTheme'
-export { default as ThemeProvider } from './ThemeProvider'
+export { default as ThemeProviderBase } from './ThemeProvider'
+
+export * from 'styled-components'
+
+export { styled as default }
 
 export * from './theme'
