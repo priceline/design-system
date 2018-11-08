@@ -23,7 +23,7 @@
     "react-test-renderer": "^16.5.2"
   },
   "peerDependencies": {
-    "styled-components": ">=3.x"
+    "styled-components": ">=3.x || >=4.x"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",

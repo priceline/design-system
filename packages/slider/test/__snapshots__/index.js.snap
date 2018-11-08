@@ -1,8 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Slider renders 1`] = `
+.c0 {
+  position: relative;
+  height: 32px;
+  padding-top: 12px;
+  border-radius: 9999px;
+  touch-action: none;
+  color: #007aff;
+}
+
+.c0 .rc-slider-rail,
+.c0 .rc-slider-track {
+  height: 8px;
+}
+
+.c0 .rc-slider-handle {
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  margin-top: -12px;
+}
+
+.c0 .rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  background-color: #f6f8fa;
+  border-radius: 9999px;
+}
+
+.c0 .rc-slider-track {
+  position: absolute;
+  left: 0;
+  border-radius: 9999px;
+  background-color: currentcolor;
+}
+
+.c0 .rc-slider-handle {
+  position: absolute;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  border-radius: 9999px;
+  border: solid 4px currentcolor;
+  background-color: #fff;
+  touch-action: pan-x;
+}
+
+.c0 .rc-slider-handle:focus {
+  box-shadow: 0 0 0 2px;
+}
+
+.c0.rc-slider-disabled {
+  color: #d1d6db;
+}
+
+.c0.rc-slider-disabled .rc-slider-handle {
+  box-shadow: none;
+  cursor: default;
+}
+
 <div
-  className="rc-slider sc-cHGsZl fRGVED"
+  className="rc-slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
