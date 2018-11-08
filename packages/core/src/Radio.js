@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import RadioChecked from 'pcln-icons/lib/RadioChecked'
+import RadioEmpty from 'pcln-icons/lib/RadioEmpty'
 import theme from './theme'
-import Icon from './Icon'
 
 const RadioWrap = styled.div`
   display: inline-block;
@@ -12,13 +13,16 @@ const RadioWrap = styled.div`
         ? null
         : `color: ${props.theme.colors.blue};`};
   }
+  & svg {
+    vertical-align: middle;
+  }
 `
 
 const RadioInput = styled.input`
   appearance: none;
   opacity: 0;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   &:focus {
     box-shadow: none;
   }
@@ -30,19 +34,14 @@ const RadioInput = styled.input`
   }
 `
 
-const RadioIcon = styled(Icon)`
-  vertical-align: middle;
-`
-
 const Radio = props => {
   const { checked, disabled } = props
-
-  const radioIconName = checked ? 'radioChecked' : 'radioEmpty'
+  const icon = checked ? <RadioChecked /> : <RadioEmpty />
 
   return (
     <RadioWrap checked={checked} disabled={disabled}>
       <RadioInput type="radio" {...props} />
-      <RadioIcon name={radioIconName} size={24} />
+      {icon}
     </RadioWrap>
   )
 }

@@ -1,19 +1,16 @@
 import React from 'react'
+import CloseIcon from 'pcln-icons/lib/Close'
 import IconButton from './IconButton'
-import PropTypes from 'prop-types'
 import theme from './theme'
 
-const CloseButton = props => <IconButton {...props} name="close" />
+const CloseButton = props => (
+  <IconButton {...props}>
+    <CloseIcon />
+  </IconButton>
+)
 
 CloseButton.defaultProps = {
-  size: 24,
   title: 'close'
-}
-
-CloseButton.propTypes = {
-  onClick: PropTypes.func,
-  size: PropTypes.number,
-  title: PropTypes.string
 }
 
 CloseButton.displayName = 'CloseButton'

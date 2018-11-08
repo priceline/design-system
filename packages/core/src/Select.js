@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
+import ChevronDown from 'pcln-icons/lib/ChevronDown'
 
 import theme from './theme'
 import Flex from './Flex'
-import Icon from './Icon'
 
-const ClickableIcon = styled(Icon)`
+const ClickableChevron = styled(ChevronDown)`
   pointer-events: none;
 `
 
@@ -44,7 +44,7 @@ SelectBase.propTypes = {
 const Select = styled(props => (
   <Flex width={1} alignItems="center">
     <SelectBase {...props} />
-    <ClickableIcon ml={-32} name="chevronDown" color="gray" />
+    <ClickableChevron ml={-32} color="gray" />
   </Flex>
 ))``
 

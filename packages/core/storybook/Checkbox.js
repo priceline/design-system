@@ -49,7 +49,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
 
     <Wrapper>
       <StyledLabel htmlFor="checked_box">
-        <Checkbox id="checked_box" defaultChecked onChange={checkAction} />
+        <Checkbox id="checked_box" checked onChange={checkAction} />
         Checked by Default
       </StyledLabel>
     </Wrapper>
@@ -66,7 +66,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
         <Checkbox
           id="disabled_checked_box"
           disabled
-          defaultChecked
+          checked
           onChange={checkAction}
         />
         <Text.span color={theme.colors.borderGray}>
