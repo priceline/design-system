@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio Disabled, rendering 1`] = `
-.c4 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -12,13 +12,17 @@ exports[`Radio Disabled, rendering 1`] = `
   color: #c0cad5;
 }
 
+.c1 svg {
+  vertical-align: middle;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   opacity: 0;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .c2:focus {
@@ -31,10 +35,6 @@ exports[`Radio Disabled, rendering 1`] = `
 
 .c2:disabled ~ svg {
   color: #c0cad5;
-}
-
-.c3 {
-  vertical-align: middle;
 }
 
 .c0 {
@@ -60,7 +60,7 @@ exports[`Radio Disabled, rendering 1`] = `
       type="radio"
     />
     <svg
-      className="c3 c4"
+      className="c3"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ exports[`Radio Disabled, rendering 1`] = `
 `;
 
 exports[`Radio Not Selected, rendering 1`] = `
-.c4 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -90,13 +90,17 @@ exports[`Radio Not Selected, rendering 1`] = `
   color: #007aff;
 }
 
+.c1 svg {
+  vertical-align: middle;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   opacity: 0;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .c2:focus {
@@ -109,10 +113,6 @@ exports[`Radio Not Selected, rendering 1`] = `
 
 .c2:disabled ~ svg {
   color: #c0cad5;
-}
-
-.c3 {
-  vertical-align: middle;
 }
 
 .c0 {
@@ -136,7 +136,7 @@ exports[`Radio Not Selected, rendering 1`] = `
       type="radio"
     />
     <svg
-      className="c3 c4"
+      className="c3"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"
@@ -151,7 +151,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 `;
 
 exports[`Radio Selected, rendering 1`] = `
-.c4 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -162,13 +162,17 @@ exports[`Radio Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
+.c1 svg {
+  vertical-align: middle;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   opacity: 0;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .c2:focus {
@@ -181,10 +185,6 @@ exports[`Radio Selected, rendering 1`] = `
 
 .c2:disabled ~ svg {
   color: #c0cad5;
-}
-
-.c3 {
-  vertical-align: middle;
 }
 
 .c0 {
@@ -210,7 +210,7 @@ exports[`Radio Selected, rendering 1`] = `
       type="radio"
     />
     <svg
-      className="c3 c4"
+      className="c3"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"

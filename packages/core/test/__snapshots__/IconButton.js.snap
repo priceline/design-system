@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconButton renders without props 1`] = `
+exports[`IconButton renders 1`] = `
 .c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;

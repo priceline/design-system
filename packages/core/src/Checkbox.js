@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import BoxChecked from 'pcln-icons/lib/BoxChecked'
 import BoxEmpty from 'pcln-icons/lib/BoxEmpty'
-import theme from './theme'
 import Box from './Box'
 
 const Root = styled(Box)`
@@ -21,14 +20,15 @@ const Input = styled.input`
 `
 
 const Checkbox = ({ checked, disabled, size, ...props }) => {
-  const color = disabled ? 'borderGray' : checked ? 'blue' : undefined
+  const checkedColor = disabled ? 'borderGray' : 'blue'
+  const uncheckedColor = disabled ? 'borderGray' : undefined
   return (
     <Root>
       <Input type="checkbox" checked={checked} disabled={disabled} {...props} />
       {checked ? (
-        <BoxChecked color={color} size={size} />
+        <BoxChecked color={checkedColor} size={size} />
       ) : (
-        <BoxEmpty color={color} size={size} />
+        <BoxEmpty color={uncheckedColor} size={size} />
       )}
     </Root>
   )

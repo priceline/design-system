@@ -1,5 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import ThumbsUp from 'pcln-icons/lib/ThumbsUp'
 import { Hug, Text, Card, theme } from '../src'
 
 const text = (
@@ -20,7 +21,7 @@ describe('Hug', () => {
 
   test('renders text, icon, and Child', () => {
     const json = renderer.create(
-      <Hug icon="thumbsUp" text={text}>
+      <Hug icon={<ThumbsUp />} text={text}>
         <Card p={3} bg="white" color="text">
           I‘m a card within a hug!
         </Card>
@@ -32,7 +33,7 @@ describe('Hug', () => {
   test('renders text when string is provided', () => {
     const json = renderer.create(
       <Hug
-        icon="thumbsUp"
+        icon={<ThumbsUp />}
         text="I've been known to hug a card from time to time"
       >
         <Card p={3} bg="white" color="text">
@@ -45,7 +46,7 @@ describe('Hug', () => {
 
   test('renders text when array of nodes is provided', () => {
     const json = renderer.create(
-      <Hug icon="thumbsUp" text={[text, text]}>
+      <Hug icon={<ThumbsUp />} text={[text, text]}>
         <Card p={3} bg="white" color="text">
           I‘m a card within a hug!
         </Card>

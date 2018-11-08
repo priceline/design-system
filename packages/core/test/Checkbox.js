@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Checkbox, Icon, theme } from '../src'
+import { Checkbox, theme } from '../src'
 import { shallow, mount, render } from 'enzyme'
 
 let onChangeFn = jest.fn()
@@ -12,17 +12,9 @@ describe('Checkbox', () => {
     onChangeFn.mockReset()
   })
 
-  test('renders without the theme passed specifically', () => {
+  test('renders', () => {
     const component = <Checkbox id={name} onChange={onChangeFn} />
     const wrapper = mount(component)
-    const json = renderer.create(component).toJSON()
-
-    expect(json).toMatchSnapshot()
-  })
-
-  test('renders with the theme passed specifically', () => {
-    const component = <Checkbox id={name} onChange={onChangeFn} theme={theme} />
-    const wrapper = shallow(component)
     const json = renderer.create(component).toJSON()
 
     expect(json).toMatchSnapshot()

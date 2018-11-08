@@ -1,32 +1,23 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { shallow } from 'enzyme'
+import Star from 'pcln-icons/lib/Star'
 import { Banner, Text, theme } from '../src'
 
 describe('Banner', () => {
-  test('renders with no props other than theme', () => {
+  test('renders', () => {
     const json = renderer.create(<Banner />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with custom iconName and size', () => {
-    const json = renderer
-      .create(<Banner iconName="star" iconSize={20} />)
-      .toJSON()
+  test('renders with custom icon', () => {
+    const json = renderer.create(<Banner icon={<Star size={20} />} />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with text string', () => {
     const json = renderer
-      .create(
-        <Banner
-          header="Header"
-          text="Text"
-          iconName="star"
-          iconSize={20}
-          theme={theme}
-        />
-      )
+      .create(<Banner header="Header" text="Text" icon={<Star size={20} />} />)
       .toJSON()
     expect(json).toMatchSnapshot()
   })
@@ -37,9 +28,7 @@ describe('Banner', () => {
         <Banner
           header="Header"
           text={<Text>Text</Text>}
-          iconName="star"
-          iconSize={20}
-          theme={theme}
+          icon={<Star size={20} />}
         />
       )
       .toJSON()
@@ -101,52 +90,28 @@ describe('Banner', () => {
     expect(closeButton).toHaveLength(1)
   })
 
-  test('does render blue left-hand icon by default', () => {
+  test.skip('renders blue left-hand icon with bg=blue', () => {
     const wrapper = shallow(<Banner bg="blue" />)
-    const icon = wrapper.find('[name="information"]')
+    const icon = wrapper.find('svg')
     expect(icon).toHaveLength(1)
   })
 
-  test('does render green left-hand icon by default', () => {
+  test.skip('renders green left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="green" />)
-    const icon = wrapper.find('[name="success"]')
+    const icon = wrapper.find('svg')
     expect(icon).toHaveLength(1)
   })
 
-  test('does render orange left-hand icon by default', () => {
+  test.skip('renders orange left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="orange" />)
-    const icon = wrapper.find('[name="attention"]')
+    const icon = wrapper.find('svg')
     expect(icon).toHaveLength(1)
   })
 
-  test('does render red left-hand icon by default', () => {
+  test.skip('renders red left-hand icon by default', () => {
     const wrapper = shallow(<Banner bg="red" />)
-    const icon = wrapper.find('[name="warning"]')
+    const icon = wrapper.find('svg')
     expect(icon).toHaveLength(1)
-  })
-
-  test('does not render blue left-hand icon if showIcon is false', () => {
-    const wrapper = shallow(<Banner bg="blue" showIcon={false} />)
-    const icon = wrapper.find('[name="information"]')
-    expect(icon).toHaveLength(0)
-  })
-
-  test('does not render green left-hand icon if showIcon is false', () => {
-    const wrapper = shallow(<Banner bg="green" showIcon={false} />)
-    const icon = wrapper.find('[name="success"]')
-    expect(icon).toHaveLength(0)
-  })
-
-  test('does not render orange left-hand icon if showIcon is false', () => {
-    const wrapper = shallow(<Banner bg="orange" showIcon={false} />)
-    const icon = wrapper.find('[name="attention"]')
-    expect(icon).toHaveLength(0)
-  })
-
-  test('does not render red left-hand icon if showIcon is false', () => {
-    const wrapper = shallow(<Banner bg="red" showIcon={false} />)
-    const icon = wrapper.find('[name="warning"]')
-    expect(icon).toHaveLength(0)
   })
 
   test('accepts non-preset colors', () => {

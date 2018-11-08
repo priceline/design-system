@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Absolute, Flag, Icon, Text } from '../src'
+import { Absolute, Flag, Text } from '../src'
 
 describe('Absolute', () => {
   test('renders with top, left and zIndex props', () => {
@@ -18,7 +18,7 @@ describe('Absolute', () => {
     const json = renderer.create(
       <Absolute top={10} left={0}>
         <Flag>
-          <Icon name="coupon" /> <Text.span>EXCLUSIVE</Text.span>
+          <Text.span>EXCLUSIVE</Text.span>
         </Flag>
       </Absolute>
     ).toJSON

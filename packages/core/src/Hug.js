@@ -46,7 +46,7 @@ Hug.defaultProps = {
 }
 
 Hug.propTypes = {
-  icon: PropTypes.node,
+  icon: PropTypes.element,
   text: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
