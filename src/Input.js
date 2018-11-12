@@ -17,6 +17,31 @@ const borders = ({ color, theme }) => {
   }
 }
 
+const size = props => {
+  switch (props.size) {
+    case 'small':
+      return {
+        fontSize: `${props.theme.fontSizes[0]}px`,
+        padding: '7px 12px'
+      }
+    case 'medium':
+      return {
+        fontSize: `${props.theme.fontSizes[1]}px`,
+        padding: '9.5px 18px'
+      }
+    case 'large':
+      return {
+        fontSize: `${props.theme.fontSizes[2]}px`,
+        padding: '12px 22px'
+      }
+    default:
+      return {
+        fontSize: `${props.theme.fontSizes[1]}px`,
+        padding: '9.5px 18px'
+      }
+  }
+}
+
 const Input = styled.input`
   appearance: none;
   display: block;
@@ -46,11 +71,12 @@ const Input = styled.input`
     display: none;
   }
 
-  ${borders} ${space};
+  ${borders} ${space} ${size};
 `
 
 Input.displayName = 'Input'
 Input.propTypes = {
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   id: PropTypes.string.isRequired,
   color: PropTypes.string,
   ...propTypes.borders,

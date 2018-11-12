@@ -9,6 +9,30 @@ import Icon from './Icon'
 const ClickableIcon = styled(Icon)`
   pointer-events: none;
 `
+const size = props => {
+  switch (props.size) {
+    case 'small':
+      return {
+        fontSize: `${props.theme.fontSizes[0]}px`,
+        padding: '7px 12px'
+      }
+    case 'medium':
+      return {
+        fontSize: `${props.theme.fontSizes[1]}px`,
+        padding: '9.5px 18px'
+      }
+    case 'large':
+      return {
+        fontSize: `${props.theme.fontSizes[2]}px`,
+        padding: '12px 22px'
+      }
+    default:
+      return {
+        fontSize: `${props.theme.fontSizes[1]}px`,
+        padding: '9.5px 18px'
+      }
+  }
+}
 
 const SelectBase = styled.select`
   appearance: none;
@@ -26,7 +50,7 @@ const SelectBase = styled.select`
     border-color: ${system.theme('colors.primary')};
     box-shadow: 0 0 0 1px ${system.theme('colors.primary')};
   }
-  ${space}
+  ${space} ${size}
 `
 SelectBase.defaultProps = {
   theme,
