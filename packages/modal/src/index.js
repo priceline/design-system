@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { color } from 'styled-system'
-import { Transition } from 'react-spring'
+import { Transition, config } from 'react-spring'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, Text, CloseButton, Flex } from 'pcln-design-system'
 import {
@@ -94,17 +94,26 @@ const Modal = ({
 }) => (
   <Transition
     items={isOpen}
-    from={{ opacity: 0 }}
-    enter={{ opacity: 1 }}
-    leave={{ opacity: 0 }}
+    config={config.gentle}
+    from={{ opacity: 0, transform: 'scale(0.5)' }}
+    enter={{ opacity: 1, transform: 'scale(1)' }}
+    leave={{ opacity: 0, transform: 'scale(0.5)' }}
   >
     {isOpen =>
       isOpen &&
       (styles => (
-        <Overlay onDismiss={onClose} zIndex={zIndex} style={styles}>
+        <Overlay
+          onDismiss={onClose}
+          zIndex={zIndex}
+          style={{ opacity: styles.opacity }}
+        >
           <OverlayWrapper>
             <DialogWrapper size={size}>
-              <Dialog size={size} bg="white">
+              <Dialog
+                size={size}
+                bg={bg || 'white'}
+                style={{ transform: styles.transform }}
+              >
                 <StyledHeader
                   size={size}
                   align="center"

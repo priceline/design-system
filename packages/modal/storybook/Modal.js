@@ -30,7 +30,7 @@ class ModalStory extends React.Component {
           }}
           title="Modal title"
         >
-          <div style={{ height: '100px' }}>lalala</div>
+          <div style={{ height: '1000px' }}>lalala</div>
         </Modal>
       </div>
     )

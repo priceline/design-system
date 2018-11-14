@@ -4,7 +4,8 @@
   "description": "React component for modal",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "babel src -d dist"
   },
   "author": "Priceline",
   "license": "MIT",
