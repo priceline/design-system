@@ -13,12 +13,15 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
   color: #687B8E;
+}
+
+.c2 {
   pointer-events: none;
 }
 
@@ -58,7 +61,7 @@ exports[`Select renders 1`] = `
     fontSize={1}
   />
   <svg
-    className="c2"
+    className="c2 c3"
     color="gray"
     fill="currentcolor"
     height={24}
