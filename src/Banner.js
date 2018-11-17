@@ -91,7 +91,7 @@ Banner.propTypes = {
   iconName: PropTypes.string,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
-  text: PropTypes.string,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   textAlign: PropTypes.string
 }
 
