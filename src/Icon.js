@@ -44,9 +44,11 @@ const Base = ({ name, size, legacy, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
+  const { theme, ..._props } = props
+
   return (
     <CleanSvg
-      {...props}
+      {..._props}
       viewBox={icon.viewBox}
       width={size}
       height={size}
