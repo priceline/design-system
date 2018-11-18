@@ -90,4 +90,10 @@ describe('Card', () => {
       '0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)'
     )
   })
+
+  test('renders border 0 without warning', () => {
+    const json = renderer.create(<Card borderWidth={0} />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('border', '0')
+  })
 })
