@@ -7,7 +7,10 @@ exports[`Tooltip bottom center 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -18,7 +21,6 @@ exports[`Tooltip bottom center 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
-  text-align: center;
   top: 0;
   left: 50%;
   width: auto;
@@ -65,7 +67,11 @@ exports[`Tooltip bottom center 1`] = `
     className="c0 c1"
     color="text"
   >
-    centered tooltip
+    <div
+      className="c2"
+    >
+      centered tooltip
+    </div>
   </div>
 </div>
 `;
@@ -77,7 +83,10 @@ exports[`Tooltip bottom left 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -88,7 +97,6 @@ exports[`Tooltip bottom left 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
-  text-align: center;
   top: 0;
 }
 
@@ -130,7 +138,11 @@ exports[`Tooltip bottom left 1`] = `
     className="c0 c1"
     color="text"
   >
-    left tooltip
+    <div
+      className="c2"
+    >
+      left tooltip
+    </div>
   </div>
 </div>
 `;
@@ -142,7 +154,10 @@ exports[`Tooltip bottom right 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -153,7 +168,6 @@ exports[`Tooltip bottom right 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
-  text-align: center;
   top: 0;
   right: 0;
 }
@@ -196,7 +210,11 @@ exports[`Tooltip bottom right 1`] = `
     className="c0 c1"
     color="text"
   >
-    right tooltip
+    <div
+      className="c2"
+    >
+      right tooltip
+    </div>
   </div>
 </div>
 `;
@@ -208,7 +226,10 @@ exports[`Tooltip renders 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -219,7 +240,6 @@ exports[`Tooltip renders 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #fff;
-  text-align: center;
   top: 0;
 }
 
@@ -261,7 +281,11 @@ exports[`Tooltip renders 1`] = `
     className="c0 c1"
     color="text"
   >
-    A Tooltip
+    <div
+      className="c2"
+    >
+      A Tooltip
+    </div>
   </div>
 </div>
 `;
@@ -273,7 +297,10 @@ exports[`Tooltip top center 1`] = `
   padding: 8px;
   background-color: #000;
   color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -284,7 +311,6 @@ exports[`Tooltip top center 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #000;
-  text-align: center;
   bottom: -8px;
   left: 50%;
   width: auto;
@@ -331,7 +357,11 @@ exports[`Tooltip top center 1`] = `
     className="c0 c1"
     color="white"
   >
-    centered tooltip
+    <div
+      className="c2"
+    >
+      centered tooltip
+    </div>
   </div>
 </div>
 `;
@@ -343,7 +373,10 @@ exports[`Tooltip top left 1`] = `
   padding: 8px;
   background-color: #007aff;
   color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -354,7 +387,6 @@ exports[`Tooltip top left 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #007aff;
-  text-align: center;
   bottom: -8px;
 }
 
@@ -396,7 +428,11 @@ exports[`Tooltip top left 1`] = `
     className="c0 c1"
     color="white"
   >
-    left tooltip
+    <div
+      className="c2"
+    >
+      left tooltip
+    </div>
   </div>
 </div>
 `;
@@ -408,7 +444,10 @@ exports[`Tooltip top right 1`] = `
   padding: 8px;
   background-color: #c00;
   color: #fff;
-  text-align: right;
+}
+
+.c2 {
+  text-align: center;
 }
 
 .c0 {
@@ -419,7 +458,6 @@ exports[`Tooltip top right 1`] = `
   border-radius: 2px;
   box-sizing: border-box;
   background: #c00;
-  text-align: center;
   bottom: -8px;
   right: 0;
 }
@@ -462,7 +500,11 @@ exports[`Tooltip top right 1`] = `
     className="c0 c1"
     color="white"
   >
-    right tooltip
+    <div
+      className="c2"
+    >
+      right tooltip
+    </div>
   </div>
 </div>
 `;

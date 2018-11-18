@@ -37,4 +37,9 @@ describe('Box', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })
+
+  test('align prop triggers warning', () => {
+    const json = renderer.create(<Box align="center" />).toJSON()
+    expect(json).toThrowErrorMatchingSnapshot()
+  })
 })

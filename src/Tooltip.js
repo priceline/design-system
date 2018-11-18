@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Box from './Box'
+import Text from './Text'
 
 import theme from './theme'
 
@@ -72,7 +73,6 @@ const TooltipContent = styled(Box)`
   border-radius: ${({ theme }) => theme.radii[1]}px;
   box-sizing: border-box;
   background: ${({ theme, bg }) => theme.colors[bg]};
-  text-align: center;
 
   ${tooltipPosition} ${tooltipAlign} &::after {
     content: '';
@@ -110,10 +110,12 @@ const defaultProps = {
 }
 
 const Tooltip = ({ children, ...props }) => {
+  const { align, ..._props } = props
+
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
-      <TooltipContent p={2} mb={3} mt={2} {...props}>
-        {children}
+      <TooltipContent p={2} mb={3} mt={2} {..._props}>
+        <Text align={'center'}>{children}</Text>
       </TooltipContent>
     </div>
   )
