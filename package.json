@@ -28,6 +28,8 @@
     "@babel/core": "^7.1.2",
     "@storybook/addon-actions": "^4.0.2",
     "@storybook/addon-info": "^4.0.2",
+    "@storybook/addon-knobs": "^4.0.7",
+    "@storybook/addons": "^4.0.7",
     "@storybook/react": "^4.0.2",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.24.1",
@@ -71,9 +73,12 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.4.1",
     "global": "^4.3.2",
+    "mapbox": "^1.0.0-beta10",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.5.0",
+    "react-map-gl": "^4.0.2",
     "styled-system": "^1.0.8"
   },
   "peerDependencies": {
