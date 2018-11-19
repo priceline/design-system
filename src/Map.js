@@ -7,7 +7,7 @@ import theme from './theme'
 import Icon from './Icon'
 
 const mapboxApiAccessToken = 'pk.eyJ1Ijoia25vdGVsIiwiYSI6ImNqb2tpdnQ3eDBnaG0zd21oeHJ5M2VtbGsifQ.2UspOJExjaZu1c6YE9g91w'
-const mapStyle = 'mapbox://styles/knotel/cjoln9rol0swl2ro8dgge593e'
+const mapStyle = 'mapbox://styles/knotel/cjono6h6i1i8v2sqd3re802w7'
 
 const client = new MapboxClient(mapboxApiAccessToken)
 
@@ -17,7 +17,7 @@ const MapLoader = styled.div`
   width: ${props => `${props.width}px`};
 `
 
-class Map extends Component {
+class MapImage extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -79,15 +79,15 @@ class Map extends Component {
   }
 }
 
-Map.displayName = 'Map'
+MapImage.displayName = 'MapImage'
 
-Map.defaultProps = {
+MapImage.defaultProps = {
   theme: theme,
   height: 200,
   width: 200
 }
 
-Map.propTypes = {
+MapImage.propTypes = {
   address: PropTypes.string,
   latitude: PropTypes.number,
   longitude: PropTypes.number,
@@ -95,4 +95,4 @@ Map.propTypes = {
   width: PropTypes.number
 }
 
-export default Map
+export default MapImage
