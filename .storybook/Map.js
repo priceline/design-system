@@ -15,6 +15,7 @@ storiesOf('Map', module)
       height={number('Height', 200)}
       width={number('Width', 200)}
       address={text('Address', '137 Varick Street, New York, NY')}
+      pinColor={text('Pin Color')}
     />
   )))
 

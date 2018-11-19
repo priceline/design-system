@@ -68,6 +68,7 @@ class MapImage extends Component {
             offsetTop={-48}
           >
             <Icon
+              color={this.props.pinColor}
               name='pin'
               size={48}
             />
@@ -82,6 +83,7 @@ class MapImage extends Component {
 MapImage.displayName = 'MapImage'
 
 MapImage.defaultProps = {
+  pinColor: theme.colors.primary,
   theme: theme,
   height: 200,
   width: 200
@@ -89,6 +91,7 @@ MapImage.defaultProps = {
 
 MapImage.propTypes = {
   address: PropTypes.string,
+  pinColor: PropTypes.string,
   latitude: PropTypes.number,
   longitude: PropTypes.number,
   height: PropTypes.number,
