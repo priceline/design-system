@@ -79,7 +79,7 @@ class Map extends Component {
   }
 }
 
-Map.displayName = 'StaticMap'
+Map.displayName = 'Map'
 
 Map.defaultProps = {
   theme: theme,
