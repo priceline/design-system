@@ -1,6 +1,6 @@
 {
   "name": "@knotel/cinderblock",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Knotel Design System",
   "main": "dist/index.js",
   "scripts": {
