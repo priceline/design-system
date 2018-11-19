@@ -40,15 +40,13 @@ CleanSvg.propTypes = {
   ...propTypes.space
 }
 
-const Base = ({ name, size, legacy, ...props }) => {
+const Base = ({ name, size, legacy, theme, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
-  const { theme, ..._props } = props
-
   return (
     <CleanSvg
-      {..._props}
+      {...props}
       viewBox={icon.viewBox}
       width={size}
       height={size}
