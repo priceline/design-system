@@ -13,7 +13,7 @@ createGlobalStyle`body {
 
 export const Base = styled.div`
 
-  @import url(‘https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
   @import url("https://use.typekit.net/pch6hwb.css");
 
   font-family: ${props => props.theme.font};
@@ -25,6 +25,12 @@ export const Base = styled.div`
 
   body {
     font-family: ${props => props.theme.font};
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
 
