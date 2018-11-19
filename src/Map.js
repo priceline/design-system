@@ -12,8 +12,9 @@ const mapStyle = 'mapbox://styles/knotel/cjoln9rol0swl2ro8dgge593e'
 const client = new MapboxClient(mapboxApiAccessToken)
 
 const MapLoader = styled.div`
-  height: ${props => props.height};
-  height: ${props => props.width};
+  background: ${theme.colors.gray100};
+  height: ${props => `${props.height}px`};
+  width: ${props => `${props.width}px`};
 `
 
 class Map extends Component {
@@ -21,8 +22,7 @@ class Map extends Component {
     super(props)
     this.state = {
       latitude: undefined,
-      longitude: undefined,
-      loading: true
+      longitude: undefined
     }
   }
   componentDidMount () {
