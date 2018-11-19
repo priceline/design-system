@@ -67,8 +67,6 @@ const blue = '#1379C1'
 const lightBlue = '#4F9FD5'
 const blueGreen = '#16A085'
 const mintGreen = '#1ABC9C'
-const brightGreen = '#2ECC71'
-const darkGreen = '#27AE60'
 
 // grayscale
 const black = '#000'
@@ -84,14 +82,7 @@ const gray100 = '#F0F0F0'
 const gray50 = '#F7F7F7'
 const white = '#fff'
 
-// priceline legacy colors
-const text = '#001833'
-const lightGreen = '#cec'
-const green = '#0a0' // secondary
-const lightRed = '#fcc'
-const red = '#c00' // secondary
-const darkRed = '#800'
-const lightPurple = '#ecf'
+const text = gray800
 
 const primary = purple
 
@@ -103,15 +94,6 @@ const flatten = (name, colors) =>
     }
     return { ...a, ...color }
   }, {})
-
-const warmColors = [yellow, lightOrange, orange, darkOrange, darkPink, crimsonRed, darkPurple, purple]
-
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [gray50]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
 
 const colors = {
   yellow,
@@ -128,8 +110,6 @@ const colors = {
   lightBlue,
   blueGreen,
   mintGreen,
-  brightGreen,
-  darkGreen,
   black,
   gray900,
   gray800,
@@ -143,24 +123,7 @@ const colors = {
   gray50,
   white,
   text,
-  green,
-  lightGreen,
-  red,
-  lightRed,
-  darkRed,
-  lightPurple,
-  primary,
-  blues,
-  greens,
-  reds,
-  oranges,
-  purples,
-  ...flatten('blue', blues),
-  ...flatten('gray', grays),
-  ...flatten('green', greens),
-  ...flatten('red', reds),
-  ...flatten('orange', oranges),
-  ...flatten('purple', purples)
+  primary
 }
 
 export { colors }
