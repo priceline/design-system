@@ -31,7 +31,7 @@ InputGroup.propTypes = {
 
 InputGroup.defaultProps = {
   theme,
-  borderColor: 'borderGray'
+  borderColor: 'gray300'
 }
 
 export default InputGroup

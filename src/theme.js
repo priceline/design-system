@@ -10,27 +10,38 @@ const addAliases = (arr, aliases) =>
     })
   )
 
-export const breakpoints = [32, 40, 48, 64]
+export const breakpoints = [36, 48, 62, 75]
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
 const aliases = ['sm', 'md', 'lg', 'xl']
+
+/*
+Small devices (landscape phones, 576px and up)
+Medium devices (tablets, 768px and up)
+Large devices (desktops, 992px and up)
+Extra large devices (large desktops, 1200px and up)
+*/
 
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128]
 
-export const font = `'Halyard Text', 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
+export const font = `'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif`
+
+export const headingFont = 'halyard-display'
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
+export const medium = 500
 export const bold = 600
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
   regular,
+  medium,
   bold
 }
 
@@ -39,29 +50,41 @@ const letterSpacings = {
   caps: '0.025em'
 }
 
-// color palette
+// warm color palette
+const yellow = '#F1C40F'
+const lightOrange = '#F39C12'
+const orange = '#E67E22'
+const darkOrange = '#D35400'
+const darkPink = '#E74C3C'
+const crimsonRed = '#C0392B'
+const darkPurple = '#641F71'
+const purple = '#8B2D9C'
+
+// cool color palette
+const darkBlue = '#022D41'
+const blueGray = '#34495E'
+const blue = '#1379C1'
+const lightBlue = '#4F9FD5'
+const blueGreen = '#16A085'
+const mintGreen = '#1ABC9C'
+
+// grayscale
 const black = '#000'
+const gray900 = '#1F1F1F'
+const gray800 = '#333333'
+const gray700 = '#4F4F4F'
+const gray600 = '#666666'
+const gray500 = '#A3A3A3'
+const gray400 = '#BABABA'
+const gray300 = '#D1D1D1'
+const gray200 = '#E8E8E8'
+const gray100 = '#F0F0F0'
+const gray50 = '#F7F7F7'
 const white = '#fff'
-const text = '#001833'
-const lightBlue = '#cdf'
-const blue = '#007aff' // primary
-const darkBlue = '#049'
-const lightGray = '#f6f8fa'
-const borderGray = '#d1d6db'
-const gray = '#687B8E' // primary
-const darkGray = '#364049'
-const lightGreen = '#cec'
-const green = '#0a0' // secondary
-const darkGreen = '#060'
-const lightRed = '#fcc'
-const red = '#c00' // secondary
-const darkRed = '#800'
-const lightOrange = '#feb'
-const orange = '#fa0' // secondary
-const darkOrange = '#a50'
-const lightPurple = '#ecf'
-const purple = '#70b' // secondary
-const darkPurple = '#407'
+
+const text = gray800
+
+const primary = purple
 
 // tints
 const flatten = (name, colors) =>
@@ -72,47 +95,35 @@ const flatten = (name, colors) =>
     return { ...a, ...color }
   }, {})
 
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [lightGray, lightGray, gray, gray]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
-
 const colors = {
-  black,
-  white,
-  text,
+  yellow,
+  lightOrange,
+  orange,
+  darkOrange,
+  darkPink,
+  crimsonRed,
+  darkPurple,
+  purple,
+  darkBlue,
+  blueGray,
   blue,
   lightBlue,
-  darkBlue,
-  gray,
-  lightGray,
-  borderGray,
-  darkGray,
-  green,
-  lightGreen,
-  darkGreen,
-  red,
-  lightRed,
-  darkRed,
-  orange,
-  lightOrange,
-  darkOrange,
-  purple,
-  lightPurple,
-  darkPurple,
-  blues,
-  greens,
-  reds,
-  oranges,
-  purples,
-  ...flatten('blue', blues),
-  ...flatten('gray', grays),
-  ...flatten('green', greens),
-  ...flatten('red', reds),
-  ...flatten('orange', oranges),
-  ...flatten('purple', purples)
+  blueGreen,
+  mintGreen,
+  black,
+  gray900,
+  gray800,
+  gray700,
+  gray600,
+  gray500,
+  gray400,
+  gray300,
+  gray200,
+  gray100,
+  gray50,
+  white,
+  text,
+  primary
 }
 
 export { colors }
@@ -163,10 +174,12 @@ const theme = {
   mediaQueries,
   space,
   font,
+  headingFont,
   fontSizes,
   fontWeights,
   letterSpacings,
   regular,
+  medium,
   bold,
   colors,
   radii,

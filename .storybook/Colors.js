@@ -30,13 +30,7 @@ const legacy = Object.keys(legacyTheme.colors)
 
 const Chip = props =>
   props.color ? (
-    <RelativeBox width={1} px={5} py={4} bg={props.color}>
-      {!props.legacy ? (
-        <Deprecated>
-          {props.name[props.name.length - 1].match(/^\d+$/) ? 'deprecated' : ''}
-        </Deprecated>
-      ) : null}
-    </RelativeBox>
+    <RelativeBox width={1} px={5} py={4} bg={props.color} />
   ) : (
     <Box width={1} px={5} py={4}>
       N/A
@@ -68,50 +62,20 @@ const Comparison = ({ keys }) => (
   </Flex>
 )
 
-storiesOf('Color', module)
-  .add('Palette', () => (
-    <div>
-      <Box p={3}>
-        <h1>Color Palette</h1>
-      </Box>
-      <Flex wrap>
-        {next.map(
-          color =>
-            !color.key[color.key.length - 1].match(/^\d+$/) ? (
-              <Box
-                key={color.key}
-                p={3}
-                width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
-              >
-                <Card name={color.key} color={color.value} />
-              </Box>
-            ) : null
-        )}
-      </Flex>
-    </div>
-  ))
-  .add('Legacy palette', () => (
-    <div>
-      <Box p={3}>
-        <h1>Legacy Color Palette</h1>
-      </Box>
-      <Flex wrap>
-        {legacy.map(color => (
-          <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-            <Card name={color.key} color={color.value} legacy />
-          </Box>
-        ))}
-      </Flex>
-    </div>
-  ))
-  .add('New vs. Old', () => (
-    <div>
-      <Box p={3}>
-        <h1>New vs. Old</h1>
-      </Box>
-      <Comparison keys={keys} />
-      <Text fontSize={0}>
-        Numbered colors will be deprecated in the next theme
-      </Text>
-    </div>
-  ))
+storiesOf('Color', module).add('Palette', () => (
+  <div>
+    <Box p={3}>
+      <h1>Color Palette</h1>
+    </Box>
+    <Flex wrap>
+      {next.map(
+        color =>
+          !color.key[color.key.length - 1].match(/d/) ? (
+            <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
+              <Card name={color.key} color={color.value} />
+            </Box>
+          ) : null
+      )}
+    </Flex>
+  </div>
+))

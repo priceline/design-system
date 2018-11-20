@@ -12,7 +12,7 @@ describe('Button', () => {
     const json = renderer.create(<Button size="small" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-size', '12px')
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
+    expect(json).toHaveStyleRule('background-color', theme.colors.primary)
     expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
@@ -37,7 +37,7 @@ describe('Button', () => {
   test('disabled prop sets', () => {
     const json = renderer.create(<Button disabled />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
+    expect(json).toHaveStyleRule('background-color', theme.colors.primary)
   })
 
   test('without disabled prop sets', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import { ThemeProvider, Flag } from '..'
+import { ThemeProviderBase as ThemeProvider, Flag } from '..'
 
 describe('Flag', () => {
   test('renders', () => {

@@ -1,7 +1,8 @@
 import Text from './Text'
 import theme from './theme'
+import styled from 'styled-components'
 
-const Truncate = Text.extend`
+const Truncate = styled(Text)`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

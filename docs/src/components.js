@@ -65,7 +65,7 @@ const Table = styled(props => (
     line-height: inherit;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${theme('colors.borderGray')};
+    border-bottom-color: ${theme('colors.gray300')};
   }
 `
 Table.defaultProps = {

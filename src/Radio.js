@@ -26,12 +26,12 @@ const Radio = props => {
 
 const RadioWrap = styled.div`
   display: inline-block;
-  color: ${props => props.theme.colors.borderGray};
+  color: ${props => props.theme.colors.gray300};
   &:hover {
     ${props =>
       props.checked || props.disabled
         ? null
-        : `color: ${props.theme.colors.blue};`};
+        : `color: ${props.theme.colors.primary};`};
   }
 `
 
@@ -44,10 +44,10 @@ const RadioInput = styled.input`
     box-shadow: none;
   }
   &:checked ~ svg {
-    color: ${props => props.theme.colors.blue};
+    color: ${props => props.theme.colors.primary};
   }
   &:disabled ~ svg {
-    color: ${props => props.theme.colors.borderGray};
+    color: ${props => props.theme.colors.gray300};
   }
 `
 

@@ -37,7 +37,6 @@ export default [
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
       { name: 'Radio', path: '/Radio' },
-      { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
       { name: 'Select', path: '/Select' },
       { name: 'Slider', path: '/Slider' },
@@ -53,7 +52,11 @@ export default [
     links: [
       { name: 'Motion', path: '/Motion' },
       { name: 'Layout', path: '/Layout' },
-      { name: 'Contributing', path: 'https://github.com/pricelinelabs/design-system/blob/master/CONTRIBUTING.md' },
+      {
+        name: 'Contributing',
+        path:
+          'https://github.com/pricelinelabs/design-system/blob/master/CONTRIBUTING.md'
+      },
       { name: 'GitHub', path: 'https://github.com/pricelinelabs/design-system' }
     ]
   }

@@ -52,10 +52,10 @@ const colors = Object.keys(theme.colors)
   .filter(color => !Array.isArray(color.value))
 
 const primaries = colors.filter(
-  color => !/^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
+  color => !/^(gray50|gray|gray300|gray800)$/.test(color.name)
 )
 const grays = colors.filter(color =>
-  /^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
+  /^(gray50|gray|gray300|gray800)$/.test(color.name)
 )
 
 const ColorChip = styled(Box)`

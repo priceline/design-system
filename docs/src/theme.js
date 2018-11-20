@@ -3,7 +3,7 @@ import { theme } from 'pcln-design-system'
 
 const { space, colors, fontSizes, fontWeights } = theme
 
-const { blue, lightGray, borderGray } = colors
+const { blue, gray50, gray300 } = colors
 
 const monospace = '"Roboto Mono", Menlo, monospace'
 
@@ -20,11 +20,11 @@ export default {
     fontSize: '14px',
     padding: '16px',
     color: blue,
-    backgroundColor: lightGray,
+    backgroundColor: gray50,
     borderRadius: '2px'
   },
   LayoutSidebar: {
-    backgroundColor: lightGray
+    backgroundColor: gray50
   },
   LayoutContainer: {
     paddingBottom: '128px'
@@ -36,7 +36,7 @@ export default {
   },
 
   LiveCode: {
-    border: `1px solid ${lightGray}`,
+    border: `1px solid ${gray50}`,
     borderRadius: '2px',
     marginBottom: '32px'
   },
@@ -49,7 +49,7 @@ export default {
     padding: '16px',
     overflowX: 'auto',
     color: blue,
-    backgroundColor: lightGray
+    backgroundColor: gray50
   },
 
   PaginationLink: {

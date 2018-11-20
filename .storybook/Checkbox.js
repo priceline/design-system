@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { storiesOf, action } from '@storybook/react'
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import {
   Checkbox,
   Text,
@@ -12,7 +13,7 @@ import {
   theme
 } from '../src'
 
-const StyledLabel = Label.extend`
+const StyledLabel = styled(Label)`
   cursor: pointer;
   font-size: 12px;
   vertical-align: middle;
@@ -56,7 +57,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
     <Wrapper>
       <StyledLabel htmlFor="disabled_box">
         <Checkbox id="disabled_box" disabled onChange={checkAction} />
-        <Text.span color={theme.colors.borderGray}>Disabled</Text.span>
+        <Text.span color={theme.colors.gray300}>Disabled</Text.span>
       </StyledLabel>
     </Wrapper>
 
@@ -68,9 +69,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
           defaultChecked
           onChange={checkAction}
         />
-        <Text.span color={theme.colors.borderGray}>
-          Disabled & Checked
-        </Text.span>
+        <Text.span color={theme.colors.gray300}>Disabled & Checked</Text.span>
       </StyledLabel>
     </Wrapper>
 
@@ -89,7 +88,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
           <Button type="submit">Submit Me</Button>
           <br />
           <br />
-          <OutlineButton color={theme.colors.gray} type="reset">
+          <OutlineButton color={theme.colors.gray600} type="reset">
             Reset Me
           </OutlineButton>
         </fieldset>

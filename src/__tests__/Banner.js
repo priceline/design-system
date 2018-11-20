@@ -160,7 +160,7 @@ describe('Banner', () => {
   test('accepts non-preset colors', () => {
     const json = renderer.create(<Banner bg={'gray'} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.gray)
+    expect(json).toHaveStyleRule('background-color', theme.colors.gray600)
   })
 
   test('renders content from children props', () => {

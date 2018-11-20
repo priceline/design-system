@@ -24,7 +24,7 @@ const Slider = styled(Range)`
   & .rc-slider-rail {
     position: absolute;
     width: 100%;
-    background-color: ${getTheme('colors.lightGray')};
+    background-color: ${getTheme('colors.gray50')};
     border-radius: 9999px;
   }
 
@@ -54,7 +54,7 @@ const Slider = styled(Range)`
   }
 
   &.rc-slider-disabled {
-    color: ${getTheme('colors.borderGray')};
+    color: ${getTheme('colors.gray300')};
     .rc-slider-track {
     }
     .rc-slider-handle {

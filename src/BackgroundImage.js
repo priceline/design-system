@@ -12,7 +12,7 @@ const BackgroundImage = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: ${props => props.theme.colors.gray};
+  background-color: ${props => props.theme.colors.gray600};
   ${image} ${height} ${width};
 `
 const numberStringOrArray = PropTypes.oneOfType([

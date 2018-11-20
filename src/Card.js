@@ -40,7 +40,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-  borderColor: 'borderGray',
+  borderColor: 'gray300',
   borderRadius: 1,
   borderWidth: 1,
   theme: theme

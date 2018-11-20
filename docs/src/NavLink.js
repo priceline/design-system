@@ -13,7 +13,7 @@ const Base = styled.a`
     color: ${theme('colors.text')};
   }
   &.active {
-    color: ${theme('colors.blue')};
+    color: ${theme('colors.primary')};
     font-weight: ${theme('bold')};
     border-left: 4px solid #007aff;
     margin-left: -16px;

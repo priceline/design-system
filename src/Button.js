@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { space } from 'styled-system'
+import { darken } from 'polished'
 import theme from './theme'
 
 const size = props => {
@@ -37,14 +38,15 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
-  background-color: ${props => props.theme.colors.blue};
+  background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.white};
   border-width: 0;
   border-style: solid;
+  text-transform: uppercase;
 
   &:disabled {
     opacity: 0.25;
@@ -52,7 +54,7 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkBlue};
+      props.disabled ? null : darken(0.075, props.theme.colors.primary)};
   }
 
   ${fullWidth} ${size} ${space};

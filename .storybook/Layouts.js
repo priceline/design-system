@@ -8,12 +8,12 @@ storiesOf('Layout Examples', module)
     <Box p={4}>
       <Flex wrap mx={-3}>
         <Box width={[1, 1 / 2]} px={3} mb={4}>
-          <Box bg="lightGray">
+          <Box bg="gray50">
             <Text>Hello</Text>
           </Box>
         </Box>
         <Box width={[1, 1 / 2]} px={3} mb={4}>
-          <Box bg="lightGray">
+          <Box bg="gray50">
             <Text>Hello</Text>
           </Box>
         </Box>
@@ -24,7 +24,7 @@ storiesOf('Layout Examples', module)
     <Flex>
       <Box px={3} width={1 / 4}>
         <Box
-          bg="lightGray"
+          bg="gray50"
           style={{
             minHeight: '50vh'
           }}
@@ -34,7 +34,7 @@ storiesOf('Layout Examples', module)
       </Box>
       <Box px={3} width={3 / 4}>
         <Box
-          bg="lightGray"
+          bg="gray50"
           style={{
             minHeight: '50vh'
           }}
@@ -67,7 +67,7 @@ storiesOf('Layout Examples', module)
   ))
 
 const Border = styled(Box)`
-  border: 1px solid ${props => props.theme.colors.lightGray};
+  border: 1px solid ${props => props.theme.colors.gray50};
   border-radius: 3px;
 `
 

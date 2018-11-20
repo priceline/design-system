@@ -6,7 +6,8 @@ import theme from './theme'
 const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
-  ${color} &:hover {
+  color: ${props => props.theme.colors.primary}
+  &:hover {
     text-decoration: underline;
   }
 `
