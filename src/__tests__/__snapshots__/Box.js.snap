@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box align prop triggers warning 1`] = `"received is not a function"`;
-
 exports[`Box bg prop sets background color 1`] = `
 .c0 {
   background-color: #0a0;
