@@ -73,6 +73,7 @@ const TooltipContent = styled(Box)`
   border-radius: ${({ theme }) => theme.radii[1]}px;
   box-sizing: border-box;
   background: ${({ theme, bg }) => theme.colors[bg]};
+  text-align: center;
 
   ${tooltipPosition} ${tooltipAlign} &::after {
     content: '';
@@ -113,7 +114,7 @@ const Tooltip = ({ children, align, ...props }) => {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>
-        <Text align="center">{children}</Text>
+        {children}
       </TooltipContent>
     </div>
   )
