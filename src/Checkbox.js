@@ -7,7 +7,7 @@ import { Icon, Box } from '..'
 const Checkbox = props => {
   const { disabled, size } = props
   return (
-    <CheckBoxWrapper disabled={disabled} theme={props.theme}>
+    <CheckBoxWrapper disabled={disabled}>
       <StyledInput type="checkbox" {...props} />
       <Icon name="boxChecked" size={size} data-name="checked" />
       <Icon name="boxEmpty" size={size} data-name="empty" />
@@ -41,6 +41,7 @@ const CheckBoxWrapper = styled(Box)`
     }
   }
 `
+CheckBoxWrapper.defaultProps = { theme }
 
 const StyledInput = styled.input`
   appearance: none;
