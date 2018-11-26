@@ -4,7 +4,7 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get () {
+      get() {
         return this[i]
       }
     })
@@ -104,7 +104,16 @@ const flatten = (name, colors) =>
     return { ...a, ...color }
   }, {})
 
-const warmColors = [yellow, lightOrange, orange, darkOrange, darkPink, crimsonRed, darkPurple, purple]
+const warmColors = [
+  yellow,
+  lightOrange,
+  orange,
+  darkOrange,
+  darkPink,
+  crimsonRed,
+  darkPurple,
+  purple
+]
 
 const blues = [lightBlue, lightBlue, blue, blue]
 const grays = [gray50]
@@ -167,7 +176,7 @@ export { colors }
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
-export const radius = '2px'
+export const radius = '4px'
 
 export const maxContainerWidth = '1280px'
 

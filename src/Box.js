@@ -6,6 +6,7 @@ import theme from './theme'
 const align = responsiveStyle('text-align', 'align')
 const Box = styled.div`
   ${space} ${width} ${color} ${align};
+  box-sizing: border-box;
 `
 
 Box.displayName = 'Box'

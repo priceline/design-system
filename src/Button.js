@@ -46,7 +46,6 @@ const Button = styled.button`
   color: ${props => props.theme.colors.white};
   border-width: 0;
   border-style: solid;
-  text-transform: uppercase;
 
   &:disabled {
     opacity: 0.25;
@@ -55,6 +54,10 @@ const Button = styled.button`
   &:hover {
     background-color: ${props =>
       props.disabled ? null : darken(0.075, props.theme.colors.primary)};
+  }
+
+  &:focus {
+    outline: none;
   }
 
   ${fullWidth} ${size} ${space};
