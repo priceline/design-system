@@ -8,7 +8,7 @@ const { blue, gray50, gray300 } = colors
 const monospace = '"Roboto Mono", Menlo, monospace'
 
 export default {
-  font: 'Montserrat, sans-serif',
+  font: 'Halyard Text, Montserrat, sans-serif',
   lineHeight: 1.6,
   code: {
     fontFamily: monospace,

@@ -4,14 +4,12 @@ import { fontSize, space, color, responsiveStyle } from 'styled-system'
 import theme from './theme'
 
 export const caps = props =>
-  props.caps
-    ? {
-      textTransform: 'uppercase'
-    }
-    : null
+  props.caps ? { textTransform: 'uppercase' } : null
 
 export const fontFamily = props =>
-    props.fontFamily ? { fontFamily: props.fontFamily } : { fontFamily: props.theme.font }
+  props.fontFamily
+    ? { fontFamily: props.fontFamily }
+    : { fontFamily: props.theme.font }
 
 export const regular = props =>
   props.regular ? { fontWeight: props.theme.regular } : null

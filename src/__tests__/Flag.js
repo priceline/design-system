@@ -15,7 +15,7 @@ describe('Flag', () => {
   })
 
   test('renders with hex value as bg color', () => {
-    const json = renderer.create(<Flag width={256} bg='#085397' />).toJSON()
+    const json = renderer.create(<Flag width={256} bg="#085397" />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
@@ -23,7 +23,7 @@ describe('Flag', () => {
     const json = renderer
       .create(
         <ThemeProvider>
-          <Flag width={256} bg='purple' />
+          <Flag width={256} bg="purple" />
         </ThemeProvider>
       )
       .toJSON()

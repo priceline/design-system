@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions';
+import { action } from '@storybook/addon-actions'
 import {
   Checkbox,
   Text,
@@ -69,9 +69,7 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
           defaultChecked
           onChange={checkAction}
         />
-        <Text.span color={theme.colors.gray300}>
-          Disabled & Checked
-        </Text.span>
+        <Text.span color={theme.colors.gray300}>Disabled & Checked</Text.span>
       </StyledLabel>
     </Wrapper>
 

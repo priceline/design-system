@@ -13,7 +13,7 @@ import select from 'select'
 import { PageTitle, Description, Code } from '../src/components'
 
 class CopyButton extends React.Component {
-  constructor () {
+  constructor() {
     super()
 
     this.handleClick = e => {
@@ -22,7 +22,7 @@ class CopyButton extends React.Component {
     }
   }
 
-  render () {
+  render() {
     const child = React.Children.only(this.props.children)
     const clone = React.cloneElement(child, {
       onClick: this.handleClick
@@ -120,10 +120,10 @@ const ColorCard = ({ name, value }) => (
         <ColorChip bg={value} />
         <span>Press to copy</span>
         <Box p={2}>
-          <Text fontSize={1} mb={1} align='left'>
+          <Text fontSize={1} mb={1} align="left">
             {name}
           </Text>
-          <Code fontSize={1} align='left' color='gray'>
+          <Code fontSize={1} align="left" color="gray">
             {value}
           </Code>
         </Box>

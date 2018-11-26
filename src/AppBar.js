@@ -11,26 +11,31 @@ const AppBar = styled(Flex)`
   height: 48px;
   ${props => props.theme.mediaQueries['md']} {
     height: 60px;
-  } 
+  }
   a {
-    color: ${props => props.inverse ? props.theme.colors.white : props.theme.colors.text}
+    color: ${props =>
+      props.inverse ? props.theme.colors.white : props.theme.colors.text};
   }
 `
 
 export default class AppBarWrapper extends React.Component {
-  render () {
+  render() {
     return (
       <AppBar
-        align='center'
+        align="center"
         bg={this.props.inverse ? this.props.color : theme.colors.white}
         color={this.props.inverse ? theme.colors.white : theme.colors.text}
-        justify='space-between'
+        justify="space-between"
         px={4}
         inverse={this.props.inverse}
       >
         <Box>
-          <a href='/'>
-            <Icon name='knotelLogo' size={80} color={this.props.inverse ? theme.colors.white : this.props.color} />
+          <a href="/">
+            <Icon
+              name="knotelLogo"
+              size={80}
+              color={this.props.inverse ? theme.colors.white : this.props.color}
+            />
           </a>
         </Box>
         <Flex>{this.props.children}</Flex>

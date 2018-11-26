@@ -22,7 +22,7 @@ const heading = type => props => {
   const Comp = Heading[type]
   return (
     <Comp {...props}>
-      <Link href={'#' + props.id} color='inherit'>
+      <Link href={'#' + props.id} color="inherit">
         {props.children}
       </Link>
     </Comp>

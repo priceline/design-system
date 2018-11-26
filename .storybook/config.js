@@ -1,6 +1,6 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs'
 import { createGlobalStyle } from 'styled-components'
 import { ThemeProviderBase as ThemeProvider, Box } from '../src'
 
@@ -21,7 +21,7 @@ addDecorator(story => (
   </ThemeProvider>
 ))
 
-addDecorator(withKnobs);
+addDecorator(withKnobs)
 
 const req = require.context('.', true, /\.js$/)
 

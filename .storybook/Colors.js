@@ -62,25 +62,19 @@ const Comparison = ({ keys }) => (
   </Flex>
 )
 
-storiesOf('Color', module)
-  .add('Palette', () => (
-    <div>
-      <Box p={3}>
-        <h1>Color Palette</h1>
-      </Box>
-      <Flex wrap>
-        {next.map(
-          color =>
-            !color.key[color.key.length - 1].match(/d/) ? (
-              <Box
-                key={color.key}
-                p={3}
-                width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
-              >
-                <Card name={color.key} color={color.value} />
-              </Box>
-            ) : null
-        )}
-      </Flex>
-    </div>
-  ))
+storiesOf('Color', module).add('Palette', () => (
+  <div>
+    <Box p={3}>
+      <h1>Color Palette</h1>
+    </Box>
+    <Flex wrap>
+      {next.map(color =>
+        !color.key[color.key.length - 1].match(/d/) ? (
+          <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
+            <Card name={color.key} color={color.value} />
+          </Box>
+        ) : null
+      )}
+    </Flex>
+  </div>
+))

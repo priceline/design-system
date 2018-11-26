@@ -48,8 +48,7 @@ const type = props => {
     }
   }
   return (
-    !(props.bg && props.color) &&
-    (badgeColors[props.bg] || badgeColors.gray50)
+    !(props.bg && props.color) && (badgeColors[props.bg] || badgeColors.gray50)
   )
 }
 

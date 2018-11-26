@@ -24,8 +24,8 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
-const labelStyles = css `
-  animation: fadeIn + ' 0.3s'
+const labelStyles = css`
+  animation: fadeIn + ' 0.3s';
 `
 
 const getFieldStyles = showLabel => {

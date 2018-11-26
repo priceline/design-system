@@ -50,7 +50,7 @@ const SelectBase = styled.select`
     border-color: ${system.theme('colors.primary')};
     box-shadow: 0 0 0 1px ${system.theme('colors.primary')};
   }
-  ${space} ${size}
+  ${space} ${size};
 `
 SelectBase.defaultProps = {
   theme,
@@ -62,9 +62,14 @@ SelectBase.defaultProps = {
 }
 
 const Select = styled(props => (
-  <Flex width={1} align='center'>
+  <Flex width={1} align="center">
     <SelectBase {...props} />
-    <ClickableIcon ml={-32} name='chevronDown' color={theme.colors.gray500} size={12} />
+    <ClickableIcon
+      ml={-32}
+      name="chevronDown"
+      color={theme.colors.gray500}
+      size={12}
+    />
   </Flex>
 ))``
 

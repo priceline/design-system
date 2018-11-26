@@ -17,7 +17,12 @@ storiesOf('Textarea', module)
       <Textarea mb={3} id="input-colors-1" placeholder="No color" />
       <Textarea mb={3} id="input-colors-2" color="red" placeholder="Red" />
       <Textarea mb={3} id="input-colors-3" color="green" placeholder="Green" />
-      <Textarea mb={3} id="input-colors-4" color="orange" placeholder="Orange" />
+      <Textarea
+        mb={3}
+        id="input-colors-4"
+        color="orange"
+        placeholder="Orange"
+      />
       <Textarea mb={3} id="input-colors-5" color="blue" placeholder="Blue" />
     </Box>
   ))

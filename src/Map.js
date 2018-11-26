@@ -6,7 +6,8 @@ import styled from 'styled-components'
 import theme from './theme'
 import Icon from './Icon'
 
-const mapboxApiAccessToken = 'pk.eyJ1Ijoia25vdGVsIiwiYSI6ImNqb2tpdnQ3eDBnaG0zd21oeHJ5M2VtbGsifQ.2UspOJExjaZu1c6YE9g91w'
+const mapboxApiAccessToken =
+  'pk.eyJ1Ijoia25vdGVsIiwiYSI6ImNqb2tpdnQ3eDBnaG0zd21oeHJ5M2VtbGsifQ.2UspOJExjaZu1c6YE9g91w'
 const mapStyle = 'mapbox://styles/knotel/cjono6h6i1i8v2sqd3re802w7'
 
 const client = new MapboxClient(mapboxApiAccessToken)
@@ -18,63 +19,60 @@ const MapLoader = styled.div`
 `
 
 class MapImage extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       latitude: undefined,
       longitude: undefined
     }
   }
-  componentDidMount () {
+  componentDidMount() {
     this.fetchCoordinates()
   }
-  componentDidUpdate () {
+  componentDidUpdate() {
     this.fetchCoordinates()
   }
-  fetchCoordinates () {
+  fetchCoordinates() {
     if (this.props.address) {
-      client.geocodeForward(this.props.address)
-      .then((data) => {
-        console.log(data)
-        this.setState({
-          latitude: data.entity.features[0].center[1],
-          longitude: data.entity.features[0].center[0],
-          loading: false
+      client
+        .geocodeForward(this.props.address)
+        .then(data => {
+          console.log(data)
+          this.setState({
+            latitude: data.entity.features[0].center[1],
+            longitude: data.entity.features[0].center[0],
+            loading: false
+          })
         })
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+        .catch(err => {
+          console.log(err)
+        })
     }
   }
-  render () {
+  render() {
     const { height, width } = this.props
-    return (
-      this.state.latitude ? (
-        <StaticMap
-          mapboxApiAccessToken={mapboxApiAccessToken}
-          mapStyle={mapStyle}
-          attributionControl={false}
-          width={width}
-          height={height}
+    return this.state.latitude ? (
+      <StaticMap
+        mapboxApiAccessToken={mapboxApiAccessToken}
+        mapStyle={mapStyle}
+        attributionControl={false}
+        width={width}
+        height={height}
+        latitude={this.props.latitude || this.state.latitude}
+        longitude={this.props.longitutde || this.state.longitude}
+        zoom={15}
+      >
+        <Marker
           latitude={this.props.latitude || this.state.latitude}
-          longitude={this.props.longitutde || this.state.longitude}
-          zoom={15}
+          longitude={this.props.longitude || this.state.longitude}
+          offsetLeft={-20}
+          offsetTop={-48}
         >
-          <Marker
-            latitude={this.props.latitude || this.state.latitude}
-            longitude={this.props.longitude || this.state.longitude}
-            offsetLeft={-20}
-            offsetTop={-48}
-          >
-            <Icon
-              name='pin'
-              size={48}
-            />
-          </Marker>
-        </StaticMap>
-      )
-      : <MapLoader height={height} width={width} />
+          <Icon color={this.props.pinColor} name="pin" size={48} />
+        </Marker>
+      </StaticMap>
+    ) : (
+      <MapLoader height={height} width={width} />
     )
   }
 }
@@ -82,6 +80,7 @@ class MapImage extends Component {
 MapImage.displayName = 'MapImage'
 
 MapImage.defaultProps = {
+  pinColor: theme.colors.primary,
   theme: theme,
   height: 200,
   width: 200
@@ -89,6 +88,7 @@ MapImage.defaultProps = {
 
 MapImage.propTypes = {
   address: PropTypes.string,
+  pinColor: PropTypes.string,
   latitude: PropTypes.number,
   longitude: PropTypes.number,
   height: PropTypes.number,

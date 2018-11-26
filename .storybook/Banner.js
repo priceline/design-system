@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions';
+import { action } from '@storybook/addon-actions'
 import { Box, Banner, Flex, Text } from '../src'
 
 storiesOf('Banner', module)
