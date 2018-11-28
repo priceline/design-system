@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Box from './Box'
+import Text from './Text'
 
 import theme from './theme'
 
@@ -109,7 +110,7 @@ const defaultProps = {
   zIndex: 'auto'
 }
 
-const Tooltip = ({ children, ...props }) => {
+const Tooltip = ({ children, align, ...props }) => {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>

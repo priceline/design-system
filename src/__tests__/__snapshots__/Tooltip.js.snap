@@ -7,7 +7,6 @@ exports[`Tooltip bottom center 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
 }
 
 .c0 {
@@ -77,7 +76,6 @@ exports[`Tooltip bottom left 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
 }
 
 .c0 {
@@ -142,7 +140,6 @@ exports[`Tooltip bottom right 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
 }
 
 .c0 {
@@ -208,7 +205,6 @@ exports[`Tooltip renders 1`] = `
   padding: 8px;
   color: #001833;
   background-color: #fff;
-  text-align: right;
 }
 
 .c0 {
@@ -273,7 +269,6 @@ exports[`Tooltip top center 1`] = `
   padding: 8px;
   background-color: #000;
   color: #fff;
-  text-align: right;
 }
 
 .c0 {
@@ -343,7 +338,6 @@ exports[`Tooltip top left 1`] = `
   padding: 8px;
   background-color: #007aff;
   color: #fff;
-  text-align: right;
 }
 
 .c0 {
@@ -408,7 +402,6 @@ exports[`Tooltip top right 1`] = `
   padding: 8px;
   background-color: #c00;
   color: #fff;
-  text-align: right;
 }
 
 .c0 {

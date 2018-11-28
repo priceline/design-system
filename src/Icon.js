@@ -40,7 +40,7 @@ CleanSvg.propTypes = {
   ...propTypes.space
 }
 
-const Base = ({ name, size, legacy, ...props }) => {
+const Base = ({ name, size, legacy, theme, ...props }) => {
   const icon = getPath({ name, legacy })
   if (!icon) return false
 
