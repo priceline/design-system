@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { fontSize, space, color, responsiveStyle } from 'styled-system'
+import {
+  fontSize,
+  lineHeight,
+  space,
+  color,
+  responsiveStyle
+} from 'styled-system'
 import theme from './theme'
 
 export const caps = props =>
@@ -21,7 +27,7 @@ export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
 const align = responsiveStyle('text-align', 'align')
 
 const Text = styled.div`
-  ${italic} ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
+  ${italic} ${fontSize} ${lineHeight} ${space} ${color} ${caps} ${regular} ${bold} ${align};
 `
 
 Text.displayName = 'Text'
@@ -33,11 +39,8 @@ const numberStringOrArray = PropTypes.oneOfType([
 ])
 
 Text.propTypes = {
-  fontSize: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  fontSize: numberStringOrArray,
+  lineHeight: numberStringOrArray,
   align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
   caps: PropTypes.bool,
   regular: PropTypes.bool,

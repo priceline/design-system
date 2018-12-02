@@ -55,6 +55,25 @@ describe('Text', () => {
     expect(f6).toHaveStyleRule('font-size', theme.fontSizes[6] + 'px')
   })
 
+  test('lineHeight prop sets line-height', () => {
+    const f0 = renderer.create(<Text lineHeight={0} />).toJSON()
+    const f1 = renderer.create(<Text lineHeight={1} />).toJSON()
+    const f2 = renderer.create(<Text lineHeight={2} />).toJSON()
+    const f3 = renderer.create(<Text lineHeight={3} />).toJSON()
+    const f4 = renderer.create(<Text lineHeight={4} />).toJSON()
+    const f5 = renderer.create(<Text lineHeight={5} />).toJSON()
+    const f6 = renderer.create(<Text lineHeight={6} />).toJSON()
+    const f7 = renderer.create(<Text lineHeight="16px" />).toJSON()
+    expect(f0).toHaveStyleRule('line-height', theme.lineHeights[0])
+    expect(f1).toHaveStyleRule('line-height', theme.lineHeights[1])
+    expect(f2).toHaveStyleRule('line-height', theme.lineHeights[2])
+    expect(f3).toHaveStyleRule('line-height', theme.lineHeights[3])
+    expect(f4).toHaveStyleRule('line-height', theme.lineHeights[4])
+    expect(f5).toHaveStyleRule('line-height', theme.lineHeights[5])
+    expect(f6).toHaveStyleRule('line-height', theme.lineHeights[6])
+    expect(f7).toHaveStyleRule('line-height', '16px')
+  })
+
   test('mt prop sets margin-top', () => {
     const json = renderer.create(<Text mt={2} />).toJSON()
     expect(json).toMatchSnapshot()
