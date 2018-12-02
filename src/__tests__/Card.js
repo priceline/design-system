@@ -92,8 +92,20 @@ describe('Card', () => {
   })
 
   test('renders border 0 without warning', () => {
+    console.error = jest.fn()
     const json = renderer.create(<Card borderWidth={0} />).toJSON()
+
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border', '0')
+
+    expect(
+      console.error.mock.calls
+        .toString()
+        .indexOf(
+          `Failed prop type: Invalid prop 'borderWidth' of value '0' supplied to 'Card', expected one of [1,2].`
+        ) === -1
+    )
+
+    console.error.mockRestore()
   })
 })
