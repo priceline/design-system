@@ -1,31 +1,62 @@
-const template = (code, config, state) => `import React from 'react'
+const replaceSvgPlugin = ({ types: t }) => {
+  const replaceSvg = {
+    JSXElement(path) {
+      if (!path.get('openingElement.name').isJSXIdentifier({ name: 'svg' })) {
+        return
+      }
+      const openingElementName = path.get('openingElement.name')
+      openingElementName.replaceWith(t.jsxIdentifier('Svg'))
+      if (path.has('closingElement')) {
+        const closingElementName = path.get('closingElement.name')
+        closingElementName.replaceWith(t.jsxIdentifier('Svg'))
+      }
+    }
+  }
+
+  return {
+    visitor: {
+      Program(path) {
+        path.traverse(replaceSvg)
+      }
+    }
+  }
+}
+
+const template = (
+  { template },
+  opts,
+  { imports, componentName, props, jsx, exports }
+) => template.ast`import React from 'react'
 import Svg from './Svg'
 
-export const ${state.componentName} = ({
+export const ${componentName} = ({
   size,
   ...props
-}) =>
-  <Svg
-    {...props}
-    viewBox='0 0 24 24'
-    width={size}
-    height={size}
-    fill='currentcolor'>
-    ${code}
-  </Svg>
+}) => (
+  ${jsx}
+)
 
-${state.componentName}.isIcon = true
+${componentName}.isIcon = true
 
-${state.componentName}.defaultProps = {
+${componentName}.defaultProps = {
   size: 24
 }
 
-export default ${state.componentName}`
+export default ${componentName}`
 
 module.exports = {
   template,
-  expandProps: false,
-  dimensions: false,
+  jsx: {
+    babelConfig: {
+      plugins: [replaceSvgPlugin]
+    }
+  },
+  svgProps: {
+    viewBox: '0 0 24 24',
+    height: '{size}',
+    width: '{size}',
+    fill: 'currentcolor'
+  },
   svgoConfig: {
     plugins: {
       removeAttrs: { attrs: '(fill|viewBox)' }

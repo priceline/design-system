@@ -134,11 +134,9 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <input
@@ -165,11 +163,9 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>
@@ -279,11 +275,9 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <input
@@ -310,11 +304,9 @@ exports[`FormField it does not display a label when Label has \`hidden\` prop 1`
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>
@@ -424,11 +416,9 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <input
@@ -455,11 +445,9 @@ exports[`FormField it renders a form field wth a label and icons 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>
@@ -569,11 +557,9 @@ exports[`FormField it renders a with a both icons 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <input
@@ -600,11 +586,9 @@ exports[`FormField it renders a with a both icons 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>
@@ -801,11 +785,9 @@ exports[`FormField it renders a with a left side icon 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <input
@@ -937,11 +919,9 @@ exports[`FormField it renders a with a right side icon 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>
@@ -1045,11 +1025,9 @@ exports[`FormField it renders using FormField alias 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <input
@@ -1173,11 +1151,9 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
       </svg>
     </div>
   </div>
@@ -1282,11 +1258,9 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
     <div
@@ -1316,11 +1290,9 @@ exports[`FormField it renders using FormField alias with Select and Icon 1`] = `
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
       </svg>
     </div>
   </div>
@@ -1440,11 +1412,9 @@ exports[`FormField it renders using FormField alias with Select and Options 1`] 
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
       </svg>
     </div>
   </div>
@@ -1554,11 +1524,9 @@ exports[`FormField it renders using FormField alias with Select icons on both si
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M12.6 10.1C11.8 8 9.8 6.5 7.5 6.5 4.4 6.5 2 8.9 2 12s2.4 5.5 5.5 5.5c2.4 0 4.4-1.5 5.1-3.6h4v3.6h3.6v-3.7H22v-3.7h-9.4zm-5.1 3.7c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z"
-          />
-        </svg>
+        <path
+          d="M12.6 10.1C11.8 8 9.8 6.5 7.5 6.5 4.4 6.5 2 8.9 2 12s2.4 5.5 5.5 5.5c2.4 0 4.4-1.5 5.1-3.6h4v3.6h3.6v-3.7H22v-3.7h-9.4zm-5.1 3.7c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z"
+        />
       </svg>
     </div>
     <div
@@ -1598,11 +1566,9 @@ exports[`FormField it renders using FormField alias with Select icons on both si
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
       </svg>
     </div>
     <div
@@ -1615,11 +1581,9 @@ exports[`FormField it renders using FormField alias with Select icons on both si
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>
@@ -1724,11 +1688,9 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M12.6 10.1C11.8 8 9.8 6.5 7.5 6.5 4.4 6.5 2 8.9 2 12s2.4 5.5 5.5 5.5c2.4 0 4.4-1.5 5.1-3.6h4v3.6h3.6v-3.7H22v-3.7h-9.4zm-5.1 3.7c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z"
-          />
-        </svg>
+        <path
+          d="M12.6 10.1C11.8 8 9.8 6.5 7.5 6.5 4.4 6.5 2 8.9 2 12s2.4 5.5 5.5 5.5c2.4 0 4.4-1.5 5.1-3.6h4v3.6h3.6v-3.7H22v-3.7h-9.4zm-5.1 3.7c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z"
+        />
       </svg>
     </div>
     <div
@@ -1768,11 +1730,9 @@ exports[`FormField it renders using FormField alias with Select icons on the lef
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
       </svg>
     </div>
   </div>
@@ -1903,11 +1863,9 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-          />
-        </svg>
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
       </svg>
     </div>
     <div
@@ -1920,11 +1878,9 @@ exports[`FormField it renders using FormField alias with Select icons on the rig
         viewBox="0 0 24 24"
         width={24}
       >
-        <svg>
-          <path
-            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-          />
-        </svg>
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+        />
       </svg>
     </div>
   </div>

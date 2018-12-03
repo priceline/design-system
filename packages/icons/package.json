@@ -20,9 +20,9 @@
     "styled-system": "^3.1.6"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@svgr/cli": "^3.1.0",
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@svgr/cli": "^4.1.0",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2"
   },

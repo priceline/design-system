@@ -58,11 +58,9 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
-      />
-    </svg>
+    <path
+      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+    />
   </svg>
   <svg
     className="c2"
@@ -72,11 +70,9 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-      />
-    </svg>
+    <path
+      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+    />
   </svg>
 </div>
 `;
@@ -138,11 +134,9 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
-      />
-    </svg>
+    <path
+      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+    />
   </svg>
   <svg
     className="c2"
@@ -152,11 +146,9 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-      />
-    </svg>
+    <path
+      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+    />
   </svg>
 </div>
 `;
@@ -216,11 +208,9 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
-      />
-    </svg>
+    <path
+      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+    />
   </svg>
   <svg
     className="c2"
@@ -230,11 +220,9 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-      />
-    </svg>
+    <path
+      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+    />
   </svg>
 </div>
 `;
@@ -294,11 +282,9 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
-      />
-    </svg>
+    <path
+      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+    />
   </svg>
   <svg
     className="c2"
@@ -308,11 +294,9 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     viewBox="0 0 24 24"
     width={20}
   >
-    <svg>
-      <path
-        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-      />
-    </svg>
+    <path
+      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+    />
   </svg>
 </div>
 `;
