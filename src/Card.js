@@ -23,9 +23,10 @@ const boxShadow = props => {
 }
 
 const boxBorder = props => ({
-  border: `${props.borderWidth}px solid ${
-    props.theme.colors[props.borderColor]
-  }`
+  border:
+    props.borderWidth === 0
+      ? '0'
+      : `${props.borderWidth}px solid ${props.theme.colors[props.borderColor]}`
 })
 
 const Card = styled(Box)`
@@ -36,7 +37,7 @@ Card.propTypes = {
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   borderColor: PropTypes.string,
   ...propTypes.borderRadius,
-  borderWidth: PropTypes.oneOf([1, 2])
+  borderWidth: PropTypes.oneOf([0, 1, 2])
 }
 
 Card.defaultProps = {
