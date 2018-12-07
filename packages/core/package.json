@@ -4,7 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/index.esm.js",
   "scripts": {
-    "prepare": "node ../../tasks/build.js core",
+    "prepare": "node ../../tasks/build.js",
     "clean": "rm -rf node_modules dist icons.json",
     "test": "jest"
   },

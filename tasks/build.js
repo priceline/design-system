@@ -5,14 +5,22 @@ const commonjs = require('rollup-plugin-commonjs')
 const json = require('rollup-plugin-json')
 const fileSize = require('rollup-plugin-filesize')
 const rimraf = require('rimraf')
-const bundles = require('./bundles')
 const chalk = require('chalk')
+const path = require('path')
 
-function getBundleLabel(argv) {
-  return argv.slice(2)[0]
+function getConfigFile() {
+  try {
+    return require(path.join(process.cwd(), 'bundle.config.js'))
+  } catch {
+    console.log(
+      chalk.red(`bundle.config.js file is missing for ${process.cwd()}`)
+    )
+    console.log(chalk.red('build bundle failed'))
+    process.exit()
+  }
 }
 
-function asyncRimRaf(filepath) {
+async function asyncRimRaf(filepath) {
   return new Promise((resolve, reject) =>
     rimraf(filepath, error => {
       if (error) {
@@ -29,12 +37,11 @@ async function createBundle(bundle, format) {
     input: `${bundle.entry}`,
     plugins: [
       babel({
-        exclude: 'node_modules/**',
-        runtimeHelpers: true
+        exclude: 'node_modules/**'
       }),
+      resolve(),
       commonjs(),
       json(),
-      resolve(),
       fileSize()
     ],
     external: bundle.external
@@ -51,12 +58,13 @@ async function createBundle(bundle, format) {
 
 async function build(bundleLabel) {
   await asyncRimRaf(`dist`)
-  await createBundle(bundles[bundleLabel], 'esm')
+  const bundleConfig = getConfigFile()
+  await createBundle(bundleConfig, 'esm')
   console.log(chalk.green(`Finish compile ${bundleLabel} es module version`))
-  await createBundle(bundles[bundleLabel], 'cjs')
+  await createBundle(bundleConfig, 'cjs')
   console.log(
     chalk.green(`Finish compile ${bundleLabel} commonjs module version`)
   )
 }
 
-build(getBundleLabel(process.argv))
+build()

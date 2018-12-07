@@ -4,7 +4,7 @@
   "description": "React component for range sliders",
   "main": "dist/index.esm.js",
   "scripts": {
-    "prepare": "node ../../tasks/build.js slider",
+    "prepare": "babel src -d dist",
     "test": "jest"
   },
   "author": "Priceline",
