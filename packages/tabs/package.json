@@ -1,0 +1,41 @@
+{
+  "name": "pcln-tabs",
+  "version": "2.0.0-beta.6",
+  "description": "React component for tabs",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "babel src -d dist",
+    "test": "jest"
+  },
+  "author": "Priceline",
+  "license": "MIT",
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "pcln-design-system": ">=1.x || >=2.x",
+    "prop-types": ">=15.0.0",
+    "styled-components": ">=3.x || >= 4.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^23.6.0",
+    "pcln-design-system": "^1.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "styled-components": "^3.4.9"
+  }
+}
