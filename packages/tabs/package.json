@@ -4,22 +4,10 @@
   "description": "React component for tabs",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "babel src -d dist",
-    "test": "jest"
+    "prepare": "babel src -d dist"
   },
   "author": "Priceline",
   "license": "MIT",
-  "jest": {
-    "coverageReporters": [
-      "lcov",
-      "html"
-    ],
-    "testMatch": [
-      "<rootDir>/test/**/*.js"
-    ]
-  },
-  "dependencies": {
-  },
   "peerDependencies": {
     "pcln-design-system": ">=1.x || >=2.x",
     "prop-types": ">=15.0.0",

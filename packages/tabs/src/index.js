@@ -19,7 +19,8 @@ class Tabs extends React.Component {
   }
 
   render() {
-    const { activeColor, children, defaultColor, tabs } = this.props
+    const { activeColor, defaultColor, tabs } = this.props
+    const children = React.Children.toArray(this.props.children)
 
     return (
       <React.Fragment>
@@ -47,7 +48,8 @@ class Tabs extends React.Component {
 }
 
 Tabs.defaultProps = {
-  tabs: []
+  tabs: [],
+  children: []
 }
 
 Tabs.propTypes = {
@@ -57,7 +59,8 @@ Tabs.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  children: PropTypes.arrayOf(PropTypes.node).isRequired
 }
 
 export default Tabs

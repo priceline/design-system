@@ -1,6 +1,6 @@
 import React from 'react'
-import { mount, shallow } from 'enzyme'
-import { Box, Link, Text, ThemeProvider } from 'pcln-design-system'
+import { mount } from 'enzyme'
+import { Box, Flex, Heading, ThemeProvider } from 'pcln-design-system'
 import renderer from 'react-test-renderer'
 import Tabs from '../src'
 
@@ -81,8 +81,6 @@ const RoomTab = props => <Box>{props.hotelName}</Box>
 
 const ImportantInfoTab = props => <Box>{props.importantInfo}</Box>
 
-// content is not tied to tabs array
-
 const HardCodedTabContent = withTheme(
   <Tabs {...props}>
     <Box>Test 1</Box>
@@ -139,36 +137,96 @@ describe('Tab Navigation', () => {
   test('default activeTab should be first index of tabs array', () => {
     const wrapper = mount(HotelTabs)
     const manageTabHeading = wrapper.find('Styled(Text)').first()
-    // const manageTabContent = wrapper.find('ManageTab')
-    console.log(wrapper.debug())
+    const manageTabContent = wrapper.find('Box')
     expect(manageTabHeading.prop('isActive')).toBe(true)
-    // expect(manageTabContent).toHaveLength(1)
+    expect(manageTabContent.text()).toBe('123-TEST')
   })
 
   test('on click of 2nd tab title should switch activeTab to index 1 of tab array', () => {
-    const wrapper = mount(ThemedTabs)
-    const roomsTabHeading = wrapper.find('Styled(Text)').at(1)
-    expect(roomsTabHeading.prop('isActive')).toBe(false)
-
-    // write test to make sure 2nd child component is displayed
-    // write test to test color change of active Tab
-
-    roomsTabHeading.simulate('click')
-    const manageTabHeading = wrapper.find('Styled(Text)').first()
-    const manageTabContent = wrapper.find('ManageTab')
-    const postClickRoomsTab = wrapper.find('Styled(Text)').at(1)
-    const hotelImage = wrapper.find('Image')
-    expect(manageTabHeading.prop('isActive')).toBe(false)
-    expect(manageTabContent).toHaveLength(0)
-    expect(postClickRoomsTab.prop('isActive')).toBe(true)
-    expect(hotelImage.prop('src')).toBe(
-      'https://mobileimg.priceline.com/htlimg/50/50564/thumbnail-150-square.jpg'
-    )
+    const wrapper = mount(HotelTabs)
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(0)
+        .prop('isActive')
+    ).toBe(true)
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(1)
+        .prop('isActive')
+    ).toBe(false)
+    wrapper
+      .find('Styled(Text)')
+      .at(1)
+      .simulate('click')
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(0)
+        .prop('isActive')
+    ).toBe(false)
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(1)
+        .prop('isActive')
+    ).toBe(true)
   })
 
-  test('on click of 2nd tab title should display 2nd child of the component', () => {})
+  test('on click of 2nd tab title should display 2nd child of the component', () => {
+    const wrapper = mount(HotelTabs)
+    expect(wrapper.find('Box').text()).toBe('123-TEST')
+    wrapper
+      .find('Styled(Text)')
+      .at(1)
+      .simulate('click')
+    expect(wrapper.find('Box').text()).toBe('Venetian Las Vegas')
+  })
 
-  test("on click of tab title should update active tab title's styles", () => {})
+  test("on click of tab title should update active tab title's styles", () => {
+    const wrapper = mount(HotelTabs)
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(1)
+        .prop('color')
+    ).toBe('blue')
+    wrapper
+      .find('Styled(Text)')
+      .at(1)
+      .simulate('click')
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(1)
+        .prop('color')
+    ).toBe('darkBlue')
+  })
 
-  test('tab title text defaultColor and activeColor can be customized via props', () => {})
+  test('tab title text defaultColor and activeColor can be customized via props', () => {
+    const wrapper = mount(
+      <Tabs {...mockHotelProps} activeColor="darkGreen" defaultColor="green">
+        <ManageTab {...mockHotelProps.tabs[0].content} />
+        <RoomTab {...mockHotelProps.tabs[1].content} />
+        <ImportantInfoTab {...mockHotelProps.tabs[2].content} />
+      </Tabs>
+    )
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(1)
+        .prop('color')
+    ).toBe('green')
+    wrapper
+      .find('Styled(Text)')
+      .at(1)
+      .simulate('click')
+    expect(
+      wrapper
+        .find('Styled(Text)')
+        .at(1)
+        .prop('color')
+    ).toBe('darkGreen')
+  })
 })

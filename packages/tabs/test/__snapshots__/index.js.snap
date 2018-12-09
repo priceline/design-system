@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab Navigation renders with composite components consuming props 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #f6f8fa;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+}
+
+.c3 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #049;
+}
+
+.c5 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #007aff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 4px solid darkBlue;
+  cursor: pointer;
+}
+
+.c4 {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+      color="darkBlue"
+      onClick={[Function]}
+    >
+      Tab 1
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 2
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 3
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className=""
+    >
+      123-TEST
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tab Navigation renders with hardcoded elements 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #f6f8fa;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+}
+
+.c3 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #049;
+}
+
+.c5 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #007aff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 4px solid darkBlue;
+  cursor: pointer;
+}
+
+.c4 {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+      color="darkBlue"
+      onClick={[Function]}
+    >
+      Tab 1
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 2
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 3
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className=""
+    >
+      Test 1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tab Navigation renders with mapped elements 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #f6f8fa;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+}
+
+.c3 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #049;
+}
+
+.c5 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #007aff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 4px solid darkBlue;
+  cursor: pointer;
+}
+
+.c4 {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+      color="darkBlue"
+      onClick={[Function]}
+    >
+      Tab 1
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 2
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 3
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className=""
+    >
+      Child 1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tab Navigation renders with mapped props 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #f6f8fa;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #049;
+}
+
+.c5 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #007aff;
+}
+
+.c8 {
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 4px solid darkBlue;
+  cursor: pointer;
+}
+
+.c4 {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+      color="darkBlue"
+      onClick={[Function]}
+    >
+      Tab 1
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 2
+    </div>
+    <div
+      className="c4 c5"
+      color="blue"
+      onClick={[Function]}
+    >
+      Tab 3
+    </div>
+  </div>
+  <div
+    className="c6"
+  >
+    <div
+      className="c7"
+    >
+      <h3
+        className="c8"
+        fontSize={4}
+      >
+        Mapped content 1
+      </h3>
+      <div
+        className=""
+      >
+        Body Text 1
+      </div>
+    </div>
+  </div>
+</div>
+`;
