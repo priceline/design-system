@@ -6,7 +6,7 @@ after_success:
   - npm run codecov
 before_deploy:
   - cd docs
-  - npm install
+  - npm ci
   - npm run build
   - touch out/.nojekyll
   - cd ..

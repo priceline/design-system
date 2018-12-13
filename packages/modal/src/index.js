@@ -83,14 +83,15 @@ const DialogWrapper = styled.div`
 
 const Modal = ({
   isOpen,
+  onClose,
   size,
   bg,
   zIndex,
-  onClose,
   children,
   title,
   headerBg,
-  imgMode
+  imgMode,
+  width
 }) => (
   <Transition
     items={isOpen}
@@ -111,6 +112,7 @@ const Modal = ({
             <DialogWrapper size={size}>
               <Dialog
                 size={size}
+                width={width}
                 bg={bg || 'white'}
                 style={{ transform: styles.transform }}
               >
@@ -121,12 +123,11 @@ const Modal = ({
                   bg={headerBg || 'blue'}
                   pl="16px"
                 >
-                  {size !== 'sm' &&
-                    title && (
-                      <Text fontSize={1} bold>
-                        {title}
-                      </Text>
-                    )}
+                  {size !== 'sm' && title && (
+                    <Text fontSize={1} bold>
+                      {title}
+                    </Text>
+                  )}
                   {size !== 'sm' && (
                     <StyledCloseButton onClick={onClose} ml="auto" />
                   )}

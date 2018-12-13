@@ -23,7 +23,9 @@ class ModalStory extends React.Component {
         </Button>
         <Modal
           isOpen={this.state.isOpen}
-          bg="white"
+          bg="red"
+          headerBg="green"
+          width="50vw"
           {...this.props}
           onClose={() => {
             this.setState({ isOpen: false })

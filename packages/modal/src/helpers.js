@@ -1,17 +1,20 @@
 export const getHorizontal = props => {
   if (props.size === 'lg') {
     return `
-      width: 960px;
+      width: 100vw;
+      ${props.theme.mediaQueries['lg']}{
+        width: ${props.width || '960px'};
+      }
       max-width: 100vw;
     `
   } else if (props.size === 'sm') {
     return `
-      width: 400px;
+      width: ${props.width || '400px'};
       max-width: calc(100vw - 32px);
     `
   } else {
     return `
-      width: 480px;
+      width: ${props.width || '480px'};
       max-width: calc(100vw - 32px);
     `
   }

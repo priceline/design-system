@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Range } from 'rc-slider'
+import Range from 'rc-slider/lib/Range'
 import { space, color, themeGet } from 'styled-system'
 import { theme } from 'pcln-design-system'
 

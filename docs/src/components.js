@@ -2,6 +2,21 @@ import * as DS from 'pcln-design-system'
 import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space, fontSize, color, theme } from 'styled-system'
+import { components as mdxDocsComponents } from 'mdx-docs'
+
+const RouterLink = styled(mdxDocsComponents.a)(
+  {
+    textDecoration: 'none',
+    '&:hover': {
+      textDecoration: 'underline'
+    }
+  },
+  color
+)
+
+RouterLink.defaultProps = {
+  color: 'blue'
+}
 
 const heading = type => props => {
   const Comp = Heading[type]
@@ -83,7 +98,7 @@ const components = {
   h4: heading('h4'),
   h5: heading('h5'),
   h6: heading('h6'),
-  a: Link,
+  a: RouterLink,
   p: p => <Text.p {...p} />,
   table: Table
 }
