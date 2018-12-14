@@ -1,16 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { color } from 'styled-system'
+import { color, width } from 'styled-system'
 import { Transition, config } from 'react-spring'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, Text, CloseButton, Flex } from 'pcln-design-system'
-import {
-  getHorizontal,
-  getInnerHeight,
-  getVertical,
-  getTopbarHeight
-} from './helpers'
 
 const Overlay = styled(DialogOverlay)`
   background-color: rgba(0, 0, 0, 0.7);
@@ -25,20 +19,32 @@ const Overlay = styled(DialogOverlay)`
 `
 
 const Dialog = styled(DialogContent)`
-  ${color} position: relative;
-  ${getHorizontal} margin-left: auto;
+  ${color} 
+  ${width}
+  max-width: calc(100vw - 32px);
+  position: relative;
+  margin-left: auto;
   margin-right: auto;
   box-shadow: ${props => props.theme.boxShadows[3]};
-  ${getVertical} &:focus {
+  &:focus {
     outline: none;
   }
+  ${props =>
+    !props.enableOverflow &&
+    `
+    max-height: 100vh;
+    height: 420px;s
+  `}
 `
 
 const StyledHeader = styled(Flex)`
-  height: ${getTopbarHeight};
-  ${props => `${props.theme.mediaQueries['lg']}{
-    height: ${props.size === 'sm' ? '8px' : '40px'};
-  }`};
+  ${props => {
+    if (props.header === 1) {
+      return `height: 8px;`
+    } else if (props.header === 2) {
+      return `height: 40px;`
+    }
+  }}
 `
 
 const StyledCloseButton = styled(CloseButton)`
@@ -47,21 +53,49 @@ const StyledCloseButton = styled(CloseButton)`
   svg {
     vertical-align: top;
   }
+
+  &:focus {
+    outline: none;
+  }
 `
 
 const FloatCloseButton = styled(CloseButton)`
   position: absolute;
-  top: 16px;
+  top: ${props => (props.header ? '24px' : '16px')};
   right: 16px;
+  z-index: 2;
 
   svg {
     vertical-align: top;
+  }
+
+  &:focus {
+    outline: none;
   }
 `
 
 const ContentWrapper = styled(Box)`
   position: relative;
-  ${getInnerHeight};
+  ${props => {
+    if (!props.enableOverflow) {
+      if (props.header === 1) {
+        return `
+          overflow: scroll;
+          height: calc(100% - 8px);
+        `
+      } else if (props.header === 2) {
+        return `
+          overflow: scroll;
+          height: calc(100% - 40px);
+        `
+      } else {
+        return `
+          overflow: scroll;
+          height: 100%;
+        `
+      }
+    }
+  }}
 `
 
 const OverlayWrapper = styled.div`
@@ -74,7 +108,7 @@ const DialogWrapper = styled.div`
   display: table-cell;
   vertical-align: middle;
   ${props =>
-    props.size === 'sm' &&
+    props.enableOverflow &&
     `
     padding-top: 24px;
     padding-bottom: 24px;
@@ -84,14 +118,17 @@ const DialogWrapper = styled.div`
 const Modal = ({
   isOpen,
   onClose,
-  size,
   bg,
   zIndex,
   children,
   title,
   headerBg,
   imgMode,
-  width
+  width,
+  className,
+  header,
+  disableCloseButton,
+  enableOverflow
 }) => (
   <Transition
     items={isOpen}
@@ -109,31 +146,49 @@ const Modal = ({
           style={{ opacity: styles.opacity }}
         >
           <OverlayWrapper>
-            <DialogWrapper size={size}>
+            <DialogWrapper enableOverflow={enableOverflow}>
               <Dialog
-                size={size}
                 width={width}
                 bg={bg || 'white'}
                 style={{ transform: styles.transform }}
+                className={className}
+                enableOverflow={enableOverflow}
               >
-                <StyledHeader
-                  size={size}
-                  align="center"
-                  color="white"
-                  bg={headerBg || 'blue'}
-                  pl="16px"
+                {header && (
+                  <StyledHeader
+                    id="pcln-modal-header"
+                    header={header}
+                    align="center"
+                    color="white"
+                    bg={headerBg || 'blue'}
+                    pl="16px"
+                  >
+                    {header === 2 && title && (
+                      <Text fontSize={1} bold>
+                        {title}
+                      </Text>
+                    )}
+                    {!disableCloseButton && header === 2 && (
+                      <StyledCloseButton
+                        id="pcln-modal-close"
+                        onClick={onClose}
+                        ml="auto"
+                      />
+                    )}
+                  </StyledHeader>
+                )}
+                {header !== 2 && !disableCloseButton && (
+                  <FloatCloseButton
+                    id="pcln-modal-close"
+                    header={header}
+                    onClick={onClose}
+                  />
+                )}
+                <ContentWrapper
+                  p={imgMode || 16}
+                  header={header}
+                  enableOverflow={enableOverflow}
                 >
-                  {size !== 'sm' && title && (
-                    <Text fontSize={1} bold>
-                      {title}
-                    </Text>
-                  )}
-                  {size !== 'sm' && (
-                    <StyledCloseButton onClick={onClose} ml="auto" />
-                  )}
-                </StyledHeader>
-                <ContentWrapper p={imgMode || 16} size={size}>
-                  {size === 'sm' && <FloatCloseButton onClick={onClose} />}
                   {children}
                 </ContentWrapper>
               </Dialog>
@@ -147,12 +202,25 @@ const Modal = ({
 
 Modal.defaultProps = {
   isOpen: false,
-  size: 'md'
+  disableCloseButton: false,
+  enableOverflow: false,
+  header: null
 }
 
 Modal.propTypes = {
+  ...width.propTypes,
   isOpen: PropTypes.bool,
-  type: PropTypes.string
+  disableCloseButton: PropTypes.bool,
+  enableOverflow: PropTypes.bool,
+  onClose: PropTypes.func,
+  bg: PropTypes.string,
+  zIndex: PropTypes.number,
+  children: PropTypes.children,
+  title: PropTypes.string,
+  headerBg: PropTypes.string,
+  imgMode: PropTypes.bool,
+  className: PropTypes.string,
+  header: PropTypes.number
 }
 
 export default Modal
