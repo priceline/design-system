@@ -14,7 +14,7 @@ const Overlay = styled(DialogOverlay)`
   position: fixed;
   right: 0;
   top: 0;
-  z-index: ${props => props.zIndex || 100};
+  z-index: ${props => props.zindex || 100};
   font-family: ${props => props.theme.font};
 `
 
@@ -77,7 +77,7 @@ const FloatCloseButton = styled(CloseButton)`
 const ContentWrapper = styled(Box)`
   position: relative;
   ${props => {
-    if (!props.enableOverflow) {
+    if (!props.enableoverflow) {
       if (props.header === 1) {
         return `
           overflow: scroll;
@@ -108,7 +108,7 @@ const DialogWrapper = styled.div`
   display: table-cell;
   vertical-align: middle;
   ${props =>
-    props.enableOverflow &&
+    props.enableoverflow &&
     `
     padding-top: 24px;
     padding-bottom: 24px;
@@ -142,11 +142,11 @@ const Modal = ({
       (styles => (
         <Overlay
           onDismiss={onClose}
-          zIndex={zIndex}
+          zindex={zIndex}
           style={{ opacity: styles.opacity }}
         >
           <OverlayWrapper>
-            <DialogWrapper enableOverflow={enableOverflow}>
+            <DialogWrapper enableoverflow={enableOverflow}>
               <Dialog
                 width={width}
                 bg={bg || 'white'}
@@ -187,7 +187,7 @@ const Modal = ({
                 <ContentWrapper
                   p={imgMode || 16}
                   header={header}
-                  enableOverflow={enableOverflow}
+                  enableoverflow={enableOverflow}
                 >
                   {children}
                 </ContentWrapper>
@@ -215,7 +215,6 @@ Modal.propTypes = {
   onClose: PropTypes.func,
   bg: PropTypes.string,
   zIndex: PropTypes.number,
-  children: PropTypes.children,
   title: PropTypes.string,
   headerBg: PropTypes.string,
   imgMode: PropTypes.bool,

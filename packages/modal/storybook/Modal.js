@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Modal from '../src'
+import Modal from '../src/Modal'
 import Button from '../../core/src/Button'
 import styled from 'styled-components'
 
