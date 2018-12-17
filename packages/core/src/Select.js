@@ -48,4 +48,6 @@ const Select = styled(props => (
   </Flex>
 ))``
 
+Select.isField = true
+
 export default Select

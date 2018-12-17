@@ -5,7 +5,6 @@ import * as icons from 'pcln-icons/lib'
 
 const keys = Object.keys(icons)
 
-
 storiesOf('Icon', module)
   .add('Icons', () => (
     <Box p={2} color="white" bg="blue">

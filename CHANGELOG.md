@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adjust styles for `IconButton` #362
 - Update colors #355
 - Use Lerna to reorganize repo into a monorepo #353
+- Removes FormField `alwaysShowLabel` prop
 
 ## [2.0.0-0] 2018-09-14
 
