@@ -67,6 +67,10 @@ npm start
 open http://localhost:8000/
 ```
 
+- Storybook stories are in the following directories:
+  - `packages/core/storybook`
+  - `packages/slider/storybook`
+
 ### Publishing
 
 To publish the packages to npm, you'll need to be added as an owner for the packages you're publishing. Use the #design-system Slack channel for more information.

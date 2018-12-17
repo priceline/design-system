@@ -231,7 +231,7 @@ exports[`FormField renders with Icon 1`] = `
       width={24}
     >
       <path
-        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
+        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
       />
     </svg>
     <input
@@ -371,7 +371,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       width={24}
     >
       <path
-        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
+        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
       />
     </svg>
     <input
@@ -483,7 +483,7 @@ exports[`FormField renders with Select  1`] = `
         width={24}
       >
         <path
-          d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
         />
       </svg>
     </div>
@@ -511,18 +511,18 @@ exports[`FormField renders with Select and Icon 1`] = `
   align-items: center;
 }
 
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
   color: gray;
-}
-
-.c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c4 {
@@ -577,7 +577,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       width={24}
     >
       <path
-        d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8 l-8,5L4,8V6l8,5l8-5V8z"
+        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
       />
     </svg>
     <div
@@ -607,7 +607,7 @@ exports[`FormField renders with Select and Icon 1`] = `
         width={24}
       >
         <path
-          d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
         />
       </svg>
     </div>
