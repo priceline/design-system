@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "2.0.0-beta.6",
+  "version": "2.0.0-beta.7",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -49,12 +49,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
+    "pcln-icons": "^2.0.0-beta.7",
     "prop-types": "^15.5.10",
-    "rc-slider": "^8.6.3",
     "styled-system": "^3.1.4"
   },
   "peerDependencies": {
-    "pcln-icons": "^2.0.0-beta.3",
     "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
   },
   "repository": {

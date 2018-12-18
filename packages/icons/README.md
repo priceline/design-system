@@ -63,4 +63,3 @@ test/       Unit tests
 lib/        Icon components compiled to commonjs format
 ```
 
-[pixo]: https://github.com/c8r/pixo

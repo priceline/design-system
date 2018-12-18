@@ -46,5 +46,6 @@ Label.defaultProps = {
 }
 
 Label.displayName = 'Label'
+Label.isLabel = true
 
 export default Label

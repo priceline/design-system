@@ -18,4 +18,4 @@ Prop | Type | Description
 `size` | number | Width and height in pixels
 `color` | string | A color key from `theme.colors`
 
-For a full list of available icons, see [Iconography](/design-system/iconography).
+For a full list of available icons, see [Iconography](/iconography).

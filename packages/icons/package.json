@@ -1,11 +1,15 @@
 {
   "name": "pcln-icons",
-  "version": "2.0.0-beta.6",
+  "version": "2.0.0-beta.7",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
-    "prepare": "npm run clean && pixo svg -d components && cp src/Icon.js components && babel components -d lib",
+    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
     "clean": "rm -rf components lib",
+    "build:svg": "svgr svg -d components",
+    "build:index": "node ./create-index.js",
+    "build:copy": "cp src/Icon.js src/Svg.js src/index.js components",
+    "build:babel": "babel components -d lib",
     "test": "jest"
   },
   "author": "Priceline",
@@ -16,23 +20,19 @@
     "styled-system": "^3.1.6"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "pixo": "^1.1.2",
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@svgr/cli": "^4.1.0",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2"
   },
   "peerDependencies": {
-    "styled-components": ">=3.x"
+    "styled-components": ">=3.x || >=4.x"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",
     "testMatch": [
       "<rootDir>/test/**/*.js"
     ]
-  },
-  "pixo": {
-    "index": true,
-    "template": "styledSystem"
   }
 }
