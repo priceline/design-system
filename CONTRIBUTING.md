@@ -180,11 +180,10 @@ Generally follow these rules for creating a PR:
 - Allow for enough time for everyone to review and discuss your PR
 - Remember that not every PR will be merged, but that's okay
 
-
-[semver]: http://semver.org
-[issue]: https://github.com/pricelinelabs/design-system/issues/new
 [github-flow]: https://guides.github.com/introduction/flow/
+[issue]: https://github.com/pricelinelabs/design-system/issues/new
 [jest]: https://facebook.github.io/jest/
+[semver]: http://semver.org
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content
 [static-docs-site]: https://pricelinelabs.github.io/design-system/
 [storybook]: https://storybook.js.org
