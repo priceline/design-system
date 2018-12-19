@@ -53,7 +53,7 @@ npm install && npm run prepare
 ```
 
 Please be mindful that any deletion, or edit, of `package-lock.json`
-would cause issue dependencies, between packages within the design system.
+would cause issue in dependencies of packages within the design system.
 
 ### Running tests
 
