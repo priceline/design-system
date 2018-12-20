@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Box from './Box'
+import Text from './Text'
 
 import theme from './theme'
 
@@ -22,8 +23,8 @@ const arrowAlign = props => {
   return props.left
     ? { left: '16px', 'margin-left': props.top ? 0 : '15px' }
     : props.center
-      ? { left: '50%', 'margin-left': props.top ? '-7px' : '7px' }
-      : { right: '16px', 'margin-right': props.top ? '5px' : '-10px' }
+    ? { left: '50%', 'margin-left': props.top ? '-7px' : '7px' }
+    : { right: '16px', 'margin-right': props.top ? '5px' : '-10px' }
 }
 
 const arrowPosition = props => {
@@ -60,8 +61,8 @@ const tooltipAlign = props => {
   return props.right
     ? { right: 0 }
     : props.center
-      ? { left: '50%', width: 'auto', transform: 'translateX(-50%)' }
-      : null
+    ? { left: '50%', width: 'auto', transform: 'translateX(-50%)' }
+    : null
 }
 
 const TooltipContent = styled(Box)`
@@ -108,7 +109,7 @@ const defaultProps = {
   zIndex: 'auto'
 }
 
-const Tooltip = ({ children, ...props }) => {
+const Tooltip = ({ children, align, ...props }) => {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>

@@ -56,8 +56,9 @@ const Banner = props => {
       color={bannerColor.color || props.color}
     >
       <Flex justifyContent="space-between" alignItems="flex-start">
-        {!!icon &&
-          !!props.showIcon && <Icon name={icon} mr={2} size={24} mt="-2px" />}
+        {!!icon && !!props.showIcon && (
+          <Icon name={icon} mr={2} size={24} mt="-2px" />
+        )}
         <Box w={1}>
           <Text textAlign={props.textAlign}>
             <Heading.h5>{props.header}</Heading.h5>
@@ -86,7 +87,7 @@ Banner.propTypes = {
   iconName: PropTypes.string,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
-  text: PropTypes.string,
+  text: PropTypes.node,
   textAlign: PropTypes.string
 }
 
