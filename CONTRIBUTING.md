@@ -1,5 +1,17 @@
 # Contributing
 
+- [Development](#development)
+- [Clone the repo](#clone-the-repo)
+- [Lerna](#lerna)
+- [Install dependencies](#install-dependencies)
+- [Running tests](#running-tests)
+- [Storybook](#storybook)
+- [Publishing](#publishing)
+- [Static Docs Site](#static-docs-site)
+- [Troubleshooting](#troubleshooting)
+- [Beta Version](#beta-version)
+- [Pull Requests](#pull-requests)
+
 If you'd like to contribute to the design system, we'd love to have your help.
 As with any open source project, we ask that you be nice, professional, and
 courteous towards others.
@@ -10,19 +22,6 @@ Contributing doesn't necessarily mean commiting code, we also encourage you to:
 - Join in on discussions in issues and PRs
 - Help write documentation
 - Use the Design System in your project and provide feedback
-
-Highlight topics:
-
-* [Development](#development)
-* [Lerna](#lerna)
-* [Install dependencies](#install-dependencies)
-* [Running tests](#running-tests)
-* [Storybook](#storybook)
-* [Publishing](#publishing)
-* [Static Docs Site](#static-docs-site)
-* [Troubleshooting](#troubleshooting)
-* [Beta Version](#beta-version)
-* [Pull Requests](#pull-request)
 
 ## Development
 
@@ -45,11 +44,10 @@ packages in the `packages/` folder.
 
 ### Install dependencies
 
-In the root directory, use the npm `prepare` run-script to install dependencies
-, and `npm link` any cross dependencies.
+In the root directory, use `npm install` command to install dependencies.
 
 ```sh
-npm install && npm run prepare
+npm install
 ```
 
 Please be mindful that any deletion, or edit, of `package-lock.json`
@@ -180,10 +178,10 @@ Generally follow these rules for creating a PR:
 - Allow for enough time for everyone to review and discuss your PR
 - Remember that not every PR will be merged, but that's okay
 
+[docs site]: https://pricelinelabs.github.io/design-system/
 [github-flow]: https://guides.github.com/introduction/flow/
 [issue]: https://github.com/pricelinelabs/design-system/issues/new
 [jest]: https://facebook.github.io/jest/
 [semver]: http://semver.org
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content
- [docs site]: https://pricelinelabs.github.io/design-system/
 [storybook]: https://storybook.js.org

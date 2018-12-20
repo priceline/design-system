@@ -20,16 +20,16 @@ For all contributors, please be sure to read the
 [Contributing](CONTRIBUTING.md) doc.
 
 Highlight topics:
-* [Development](./CONTRIBUTING.md#development)
-* [Lerna](./CONTRIBUTING.md#lerna)
-* [Install dependencies](./CONTRIBUTING.md#install-dependencies)
-* [Running tests](./CONTRIBUTING.md#running-tests)
-* [Storybook](./CONTRIBUTING.md#storybook)
-* [Publishing](./CONTRIBUTING.md#publishing)
-* [Static Docs Site](./CONTRIBUTING.md#static-docs-site)
-* [Troubleshooting](./CONTRIBUTING.md#troubleshooting)
-* [Beta Version](./CONTRIBUTING.md#beta-version)
-* [Pull Requests](#pull-request)
+- [Development](./CONTRIBUTING.md#development)
+- [Lerna](./CONTRIBUTING.md#lerna)
+- [Install dependencies](./CONTRIBUTING.md#install-dependencies)
+- [Running tests](./CONTRIBUTING.md#running-tests)
+- [Storybook](./CONTRIBUTING.md#storybook)
+- [Publishing](./CONTRIBUTING.md#publishing)
+- [Static Docs Site](./CONTRIBUTING.md#static-docs-site)
+- [Troubleshooting](./CONTRIBUTING.md#troubleshooting)
+- [Beta Version](./CONTRIBUTING.md#beta-version)
+- [Pull Requests](./CONTRIBUTING.md#pull-requests)
 
 ## Documentation
 
