@@ -185,5 +185,5 @@ Generally follow these rules for creating a PR:
 [jest]: https://facebook.github.io/jest/
 [semver]: http://semver.org
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content
-[static-docs-site]: https://pricelinelabs.github.io/design-system/
+ [docs site]: https://pricelinelabs.github.io/design-system/
 [storybook]: https://storybook.js.org
