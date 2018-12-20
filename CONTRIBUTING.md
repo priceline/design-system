@@ -106,7 +106,7 @@ release.
 
 ### Static Docs Site
 
-Markdown and source code for the [static docs site][static-docs-site] are
+ Markdown and source code for the [docs site][] are
 located in `docs/`.
 
 To run the static docs locally:
