@@ -1,8 +1,8 @@
 import { version } from '../../package.json'
 import {
-  ButtonLink,
-  Code,
-  Description
+ButtonLink,
+Code,
+Description
 } from '../src/components'
 
 # Priceline One
@@ -16,7 +16,6 @@ import {
 <ButtonLink href='https://github.com/pricelinelabs/design-system-sketch/releases/latest'>
   Download Sketch Kit
 </ButtonLink>
-
 
 ## Getting Started
 
@@ -43,7 +42,7 @@ import { ThemeProvider } from 'pcln-design-system'
 import SomeView from './SomeView'
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <ThemeProvider>
         <h1>Hello</h1>
@@ -71,7 +70,7 @@ import { Box, Text } from 'pcln-design-system'
 
 const SomeView = props => (
   <Box p={3}>
-    <Text color='blue'>Hello</Text>
+    <Text color="blue">Hello</Text>
   </Box>
 )
 ```

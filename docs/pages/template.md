@@ -1,4 +1,3 @@
-
 # Title: Docs Template
 
 Description: This is a template for new docs.
@@ -19,9 +18,9 @@ Description: This is a template for new docs.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`propName` | prop type | What the prop is for
+| Prop       | Type      | Description          |
+| ---------- | --------- | -------------------- |
+| `propName` | prop type | What the prop is for |
 
 ### Related
 

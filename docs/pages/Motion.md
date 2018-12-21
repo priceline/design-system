@@ -14,7 +14,7 @@
 
 ### Feedback
 
-*Response to a user action*
+_Response to a user action_
 
 Providing feedback helps reinforce user actions: someone does something, something happens. Things like hover states, click states, dropdowns, etc. can all give the user helpful context relating to how or why an element responded to a tap or click.
 
@@ -22,7 +22,7 @@ Providing feedback helps reinforce user actions: someone does something, somethi
 
 ### Emphasis
 
-*Attention focus without action*
+_Attention focus without action_
 
 We know what we want our users to see, and can use motion to draw their eye to it. Calling out key elements can help convey important information or highlight a specific instance that is noteworthy on the page.
 
@@ -30,7 +30,7 @@ We know what we want our users to see, and can use motion to draw their eye to i
 
 ### Context
 
-*Giving the user hints*
+_Giving the user hints_
 
 The user isn’t as familiar with our path as we are. We can use motion to explain why things are acting the way they are, and give hints as to what will happen next. This is useful for transition states: showing a standard loading indicator, or staggering content load to properly convey information hierarchy.
 
@@ -38,7 +38,7 @@ The user isn’t as familiar with our path as we are. We can use motion to expla
 
 ### Delight
 
-*Make the experience feel unique*
+_Make the experience feel unique_
 
 Let’s have some fun with it! There are a million opportunities to add enjoyable instances of animation to enhance the user experience and bring a little life to the site.
 
@@ -156,7 +156,6 @@ Scale & Opacity
 
 <img src="https://media.giphy.com/media/1VV3zzKHqbq28rKlqd/giphy.gif" width="200" height="200" />
 
-
 ## Timing
 
 For any given distance an object must move, the time it takes to achieve the transition determines how fast its movement is. Bucketing these durations allows us to assign them to components, creating a timing standard.
@@ -206,7 +205,6 @@ EaseOut is used when an element is appearing on-screen or within a component
 EaseIn is used when an element is removed from the screen or within a component
 
 <img src="https://media.giphy.com/media/3LOppJME3EtwHCUiUw/giphy.gif" width="200" height="200" />
-
 
 ## Delay
 
@@ -301,4 +299,3 @@ Objects should enter the screen from a logical origin and exit accordingly.
 Parenting helps the user develop relationships and hierarchy between two or more objects on-screen.
 
 <img src="https://media.giphy.com/media/sRFvyiYaZBd4mng4yE/giphy.gif" width="200" height="200" />
-

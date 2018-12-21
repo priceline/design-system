@@ -1,4 +1,3 @@
-
 # Hide
 
 Conditionally hides content based on viewport width.
@@ -26,10 +25,10 @@ Hidden at large breakpoints
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`xs` | boolean | Sets display: none below the sm breakpoint
-`sm` | boolean | Sets display: none between the sm and md breakpoint
-`md` | boolean | Sets display: none between the md and lg breakpoint
-`lg` | boolean | Sets display: none between the lg and xl breakpoint
-`xl` | boolean | Sets display: none above the xl breakpoint
+| Prop | Type    | Description                                         |
+| ---- | ------- | --------------------------------------------------- |
+| `xs` | boolean | Sets display: none below the sm breakpoint          |
+| `sm` | boolean | Sets display: none between the sm and md breakpoint |
+| `md` | boolean | Sets display: none between the md and lg breakpoint |
+| `lg` | boolean | Sets display: none between the lg and xl breakpoint |
+| `xl` | boolean | Sets display: none above the xl breakpoint          |

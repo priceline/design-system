@@ -1,4 +1,3 @@
-
 # Contributing
 
 If you'd like to contribute to the design system, we'd love to have your help.
@@ -10,7 +9,6 @@ Contributing doesn't necessarily mean commiting code, we also encourage you to:
 - Join in on discussions in issues and PRs
 - Help write documentation
 - Use the Design System in your project and provide feedback
-
 
 ### Local Development
 
@@ -73,11 +71,9 @@ npm install
 npm start
 ```
 
-
 ### Troubleshooting
 
 You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run prepare` should fix the problem.
-
 
 ### GitHub Flow
 
@@ -94,13 +90,12 @@ Generally the workflow looks like this:
 2. Create a new feature branch (pick a name that clearly describes the feature)
 3. Commit changes to your feature branch (smaller commits with clear messages are best)
 4. Push your branch to origin
-5. Open a Pull Request with a clear description of the change (Answering *what*, *why*, and *how* is a good place to start)
+5. Open a Pull Request with a clear description of the change (Answering _what_, _why_, and _how_ is a good place to start)
 6. Allow for some time for discussion
 7. (optional) If your PR has merge conflicts, pull the latest from master, then merge those changes into your PR branch, resolving conflicts in the process
 8. Once there is a general consensus on the change and all tests have passed, merge the PR into master
 9. Use the npm CLI to appropriately version and publish the package
 10. Push the git tags created with the npm CLI to GitHub with `git push --tags`
-
 
 ### Beta Version
 
@@ -108,7 +103,6 @@ As of the date this was written, the Design System is currently in a beta.
 The package versioning reflects this with the version `1.0.0-x` convention.
 Once the library is in a more stable and mature state, we will release a stable `1.0.0`
 and strictly follow semantic versioning from that point on.
-
 
 ### Pull Requests
 
@@ -128,7 +122,6 @@ Generally follow these rules for creating a PR:
 - Announce your PR to the appropriate channels in Slack
 - Allow for enough time for everyone to review and discuss your PR
 - Remember that not every PR will be merged, but that's okay
-
 
 [semver]: http://semver.org
 [issue]: https://github.com/pricelinelabs/design-system/issues/new

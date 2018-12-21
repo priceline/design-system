@@ -1,4 +1,3 @@
-
 # Priceline Design System
 
 [![Build Status][travis-badge]][travis]
