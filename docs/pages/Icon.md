@@ -1,4 +1,3 @@
-
 # Icon
 
 Use the `Icon` component for SVG icons.
@@ -24,11 +23,11 @@ To force the component to prefer using new icons, set the `legacy` prop to `fals
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`name` | string | Icon key name
-`size` | number | Width and height in pixels
-`color` | string | A color key from `theme.colors`
-`legacy` | boolean | Force component to prefer using icons from the legacy set
+| Prop     | Type    | Description                                               |
+| -------- | ------- | --------------------------------------------------------- |
+| `name`   | string  | Icon key name                                             |
+| `size`   | number  | Width and height in pixels                                |
+| `color`  | string  | A color key from `theme.colors`                           |
+| `legacy` | boolean | Force component to prefer using icons from the legacy set |
 
 For a full list of available icons, see [Iconography](/iconography).

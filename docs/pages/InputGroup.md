@@ -1,4 +1,3 @@
-
 # InputGroup
 
 Use the `InputGroup` component to wrap multiple `Input` or `FormField` components with only a single border style around child elements.
@@ -25,6 +24,6 @@ This can be used for date range inputs that look like a single input.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`borderColor` | string | Override the default border color
+| Prop          | Type   | Description                       |
+| ------------- | ------ | --------------------------------- |
+| `borderColor` | string | Override the default border color |

@@ -50,7 +50,6 @@ See the following for more info:
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`hidden` | boolean | Visually hide the label
-
+| Prop     | Type    | Description             |
+| -------- | ------- | ----------------------- |
+| `hidden` | boolean | Visually hide the label |
