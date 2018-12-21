@@ -6,7 +6,8 @@ import theme from './theme'
 export const caps = props =>
   props.caps
     ? {
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        letterSpacing: theme.letterSpacings.caps
       }
     : null
 

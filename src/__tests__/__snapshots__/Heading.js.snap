@@ -94,6 +94,10 @@ exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
   font-size: 12px;
   margin: 0px;
   text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
 }
 
 <h6
