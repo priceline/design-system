@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "rc-slider": "^8.6.3",
-    "styled-system": "^3.1.6"
+    "styled-system": "^3.1.11"
   },
   "peerDependencies": {
     "pcln-design-system": ">=1.x || >=2.x",

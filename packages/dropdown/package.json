@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "@reach/menu-button": "^0.1.7",
-    "styled-system": "^3.1.6"
+    "styled-system": "^3.1.11"
   }
 }
