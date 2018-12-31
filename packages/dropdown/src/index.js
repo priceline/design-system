@@ -43,7 +43,7 @@ const DropdownButton = props => (
   <DropdownContext.Consumer>
     {({ identifier }) => (
       <DropdownButtonCore
-        id={identifier}
+        id={`${identifier}-button`}
         color={props.color}
         height={props.height}
         width={props.width}
@@ -77,7 +77,9 @@ class DropdownListImpl extends React.Component {
   }
 
   componentDidMount() {
-    const dropdownButton = document.getElementById(this.props.identifier)
+    const dropdownButton = document.getElementById(
+      `${this.props.identifier}-button`
+    )
     if (dropdownButton) {
       const dropdownButtonOffsetBottom =
         dropdownButton.offsetTop + dropdownButton.offsetHeight
