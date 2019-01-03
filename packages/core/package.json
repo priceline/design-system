@@ -3,8 +3,9 @@
   "version": "2.0.0-beta.7",
   "description": "Priceline Design System",
   "main": "dist/index.js",
+  "module": "dist/my-package.esm.js",
   "scripts": {
-    "prepare": "babel src -d dist",
+    "prepare": "rollup --config",
     "clean": "rm -rf node_modules dist icons.json",
     "test": "jest"
   },
