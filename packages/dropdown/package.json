@@ -19,7 +19,6 @@
     ]
   },
   "peerDependencies": {
-    "pcln-design-system": ">=1.x || >=2.x",
     "styled-components": ">=3.x || >= 4.x"
   },
   "devDependencies": {
