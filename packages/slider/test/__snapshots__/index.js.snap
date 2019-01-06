@@ -7,7 +7,7 @@ exports[`Slider renders 1`] = `
   padding-top: 12px;
   border-radius: 9999px;
   touch-action: none;
-  color: #007aff;
+  color: blue;
 }
 
 .c0 .rc-slider-rail,
@@ -25,7 +25,6 @@ exports[`Slider renders 1`] = `
 .c0 .rc-slider-rail {
   position: absolute;
   width: 100%;
-  background-color: #f6f8fa;
   border-radius: 9999px;
 }
 
@@ -50,10 +49,6 @@ exports[`Slider renders 1`] = `
 
 .c0 .rc-slider-handle:focus {
   box-shadow: 0 0 0 2px;
-}
-
-.c0.rc-slider-disabled {
-  color: #d1d6db;
 }
 
 .c0.rc-slider-disabled .rc-slider-handle {
