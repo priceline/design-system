@@ -2,7 +2,7 @@
 
 - [Development](#development)
 - [Clone the repo](#clone-the-repo)
-- [Lerna](#lerna)
+- [Lerna & Rollup](#rollup)
 - [Install dependencies](#install-dependencies)
 - [Running tests](#running-tests)
 - [Storybook](#storybook)
@@ -35,12 +35,13 @@ git clone https://github.com/pricelinelabs/design-system.git
 cd design-system
 ```
 
-### Lerna
+### Lerna & Rollup
 
-This repository uses [Lerna][] and is set up as a monorepo, with multiple npm
-packages in the `packages/` folder.
+This repository uses [Lerna][] & [Rollup][] and is set up as a monorepo, with
+multiple npm packages in the `packages/` folder.
 
 [Lerna]: https://lernajs.io
+[Rollup]: https://rollupjs.org
 
 ### Install dependencies
 
