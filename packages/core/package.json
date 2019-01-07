@@ -6,7 +6,7 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "prepare": "rollup --config",
-    "clean": "rm -rf node_modules dist icons.json",
+    "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
   "author": "Priceline",
