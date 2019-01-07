@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Icon, Flex, Box, Truncate } from '../src'
+import { Box, Flex, Icon, Truncate } from '../src'
 import * as icons from 'pcln-icons/lib'
 
 const keys = Object.keys(icons)
