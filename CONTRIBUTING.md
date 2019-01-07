@@ -2,7 +2,7 @@
 
 - [Development](#development)
 - [Clone the repo](#clone-the-repo)
-- [Lerna & Rollup](#rollup)
+- [Lerna & Rollup](#lerna-and-rollup)
 - [Install dependencies](#install-dependencies)
 - [Running tests](#running-tests)
 - [Storybook](#storybook)
