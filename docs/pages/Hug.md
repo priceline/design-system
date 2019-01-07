@@ -15,8 +15,8 @@ Pass in `props.children` to be wrapped.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`iconDisplay` | string or array of strings | Responsive display property of icon
-`icon` | string | SVG icon name
-`text` | node, array of nodes, or string | When providing a node, it is highly recommended to use a `<Text.span />` node, to keep text on a single line
+| Prop          | Type                            | Description                                                                                                  |
+| ------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `iconDisplay` | string or array of strings      | Responsive display property of icon                                                                          |
+| `icon`        | string                          | SVG icon name                                                                                                |
+| `text`        | node, array of nodes, or string | When providing a node, it is highly recommended to use a `<Text.span />` node, to keep text on a single line |

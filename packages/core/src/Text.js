@@ -7,7 +7,8 @@ import {
   textAlign,
   lineHeight,
   space,
-  color
+  color,
+  themeGet
 } from 'styled-system'
 import theme from './theme'
 import { mapProps, deprecatedPropType } from './utils'
@@ -15,7 +16,8 @@ import { mapProps, deprecatedPropType } from './utils'
 export const caps = props =>
   props.caps
     ? {
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        letterSpacing: themeGet('letterSpacings.caps')(props)
       }
     : null
 
