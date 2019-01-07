@@ -10,7 +10,6 @@
     "build:index": "node ./create-index.js",
     "build:copy": "cp src/Icon.js src/Svg.js src/index.js components",
     "build:babel": "babel components -d lib",
-    "build:rollup": "rollup --config",
     "test": "jest"
   },
   "author": "Priceline",
