@@ -1,4 +1,3 @@
-
 # BackgroundImage
 
 Use the `BackgroundImage` component to set a background image.
@@ -19,7 +18,7 @@ Use the `BackgroundImage` component to set a background image.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`image` | string | URI for background image
-`height` | string | CSS value for height
+| Prop     | Type   | Description              |
+| -------- | ------ | ------------------------ |
+| `image`  | string | URI for background image |
+| `height` | string | CSS value for height     |

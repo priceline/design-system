@@ -1,4 +1,3 @@
-
 # Flag
 
 Use the `Flag` component for stylized merchandising messages.
@@ -21,7 +20,7 @@ Use the `Flag` component for stylized merchandising messages.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`color` | string | Text color
-`bg` | string | Background color
+| Prop    | Type   | Description      |
+| ------- | ------ | ---------------- |
+| `color` | string | Text color       |
+| `bg`    | string | Background color |

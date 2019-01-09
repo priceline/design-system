@@ -1,4 +1,3 @@
-
 # Priceline Design System Docs
 
 https://pricelinelabs.github.io/design-system/
@@ -35,7 +34,7 @@ edit the [`src/navigation.js`](src/navigation.js) module.
 
 To create a new doc for a component, use the [template](pages/template.md) as a starting point.
 
-For more information on how Next.js works, see the [Next.js Docs][Next.js].
+For more information on how Next.js works, see the [Next.js Docs][next.js].
 
 ## Editing Pages
 
@@ -53,6 +52,6 @@ This will render as a live code example:
 ````
 
 [mdx-docs]: https://github.com/jxnblk/mdx-docs
-[Next.js]: https://github.com/zeit/next.js/
+[next.js]: https://github.com/zeit/next.js/
 [docs-components]: https://github.com/jxnblk/mdx-docs/blob/master/docs/components.md
 [docs-theming]: https://github.com/jxnblk/mdx-docs/blob/master/docs/theming.md

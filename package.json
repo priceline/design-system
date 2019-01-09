@@ -20,9 +20,9 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-info": "^3.4.11",
-    "@storybook/react": "^4.0.0-alpha.23",
+    "@storybook/addon-actions": "^4.1.4",
+    "@storybook/addon-info": "^4.1.4",
+    "@storybook/react": "^4.1.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.2",
     "enzyme": "^3.6.0",
@@ -67,7 +67,7 @@
     ]
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,md}": [
       "prettier --no-semi --single-quote --write",
       "git add"
     ]

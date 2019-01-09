@@ -1,4 +1,3 @@
-
 # Heading
 
 The `Heading` component is an extension of the [`Text`](/Text) component intended for headings.
@@ -36,4 +35,3 @@ To use a different heading level, use the following:
 ```.jsx
 <Heading.h2 color='purple'>Purple</Heading.h2>
 ```
-
