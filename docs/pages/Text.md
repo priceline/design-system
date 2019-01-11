@@ -9,7 +9,7 @@ Use the `Text` component to control font size, weight, alignment, and color.
 ```
 
 ```.jsx
-<Text textAlign='center'>
+<Text align='center'>
   Centered Text
 </Text>
 ```
