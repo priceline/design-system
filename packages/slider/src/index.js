@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Range from 'rc-slider/lib/Range'
 import { space, color, themeGet } from 'styled-system'
-import { theme } from 'pcln-design-system'
 
 export const Slider = styled(Range)`
   position: relative;
@@ -66,8 +65,7 @@ export const Slider = styled(Range)`
 
 Slider.defaultProps = {
   allowCross: false,
-  color: 'blue',
-  theme
+  color: 'blue'
 }
 
 Slider.propTypes = {

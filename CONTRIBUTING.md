@@ -2,7 +2,7 @@
 
 - [Development](#development)
 - [Clone the repo](#clone-the-repo)
-- [Lerna](#lerna)
+- [Lerna and Rollup](#lerna-and-rollup)
 - [Install dependencies](#install-dependencies)
 - [Running tests](#running-tests)
 - [Storybook](#storybook)
@@ -25,7 +25,8 @@ Contributing doesn't necessarily mean commiting code, we also encourage you to:
 
 ### Local Development
 
-To contribute code to the Design System, first you'll need to set it up for local development.
+To contribute code to the Design System, first you'll need to set it up for
+local development.
 
 ### Clone the repo
 
@@ -34,12 +35,13 @@ git clone https://github.com/pricelinelabs/design-system.git
 cd design-system
 ```
 
-### Lerna
+### Lerna and Rollup
 
-This repository uses [Lerna][] and is set up as a monorepo, with multiple npm
-packages in the `packages/` folder.
+This repository uses [Lerna][] & [Rollup][] and is set up as a monorepo, with
+multiple npm packages in the `packages/` folder.
 
 [lerna]: https://lernajs.io
+[rollup]: https://rollupjs.org
 
 ### Install dependencies
 
@@ -116,7 +118,9 @@ npm start
 
 ### Troubleshooting
 
-You may run into the following error `ERROR in ./icons.json` when running storybook. The problem occur when the icons.json is not built yet. Running `npm run prepare` should fix the problem.
+You may run into the following error `ERROR in ./icons.json` when running
+storybook. The problem occur when the icons.json is not built yet. Running
+`npm run prepare` should fix the problem.
 
 ### GitHub Flow
 
@@ -135,7 +139,8 @@ Generally the workflow looks like this:
 3. Commit changes to your feature branch (smaller commits with clear messages
    are best)
 4. Push your branch to origin
-5. Open a Pull Request with a clear description of the change (Answering _what_, _why_, and _how_ is a good place to start)
+5. Open a Pull Request with a clear description of the change (Answering
+   _what_, _why_, and _how_ is a good place to start)
 6. Allow for some time for discussion
 7. (optional) If your PR has merge conflicts, pull the latest from master, then
    merge those changes into your PR branch, resolving conflicts in the process
