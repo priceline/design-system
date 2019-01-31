@@ -124,7 +124,7 @@ const Modal = ({
               <Dialog
                 width={width}
                 bg={bg}
-                height={enableOverflow ? 'auto' : height}
+                height={enableOverflow ? null : height}
                 style={{ transform: styles.transform }}
                 className={className}
                 enableOverflow={enableOverflow}

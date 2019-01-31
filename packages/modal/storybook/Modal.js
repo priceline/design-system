@@ -33,7 +33,7 @@ class ModalStory extends React.Component {
           }}
           {...this.props}
         >
-          <div style={{ height: '1000px' }}>lalala</div>
+          <div style={{ height: '1000px' }}>Content with 1000px height</div>
         </StyledModal>
       </div>
     )
@@ -42,12 +42,7 @@ class ModalStory extends React.Component {
 
 storiesOf('Modal', module)
   .add('Raw', () => (
-    <ModalStory
-      title="Modal title"
-      headerBg="green"
-      width={['100px', '200px', '500px']}
-      disableCloseButton
-    />
+    <ModalStory width={['100px', '200px', '500px']} disableCloseButton />
   ))
   .add('With SmallModalHeader', () => (
     <ModalStory
@@ -67,10 +62,8 @@ storiesOf('Modal', module)
   ))
   .add('With imagemode and colorful', () => (
     <ModalStory
-      title="Modal title"
       bg="orange"
-      headerBg="blue"
-      header={1}
+      header={<SmallModalHeader />}
       width={['100px', '200px', '500px']}
       imgMode
       disableCloseButton
