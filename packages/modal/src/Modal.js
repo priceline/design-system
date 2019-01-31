@@ -44,7 +44,7 @@ const HeaderWrapper = styled.div`
 
 const FloatCloseButton = styled(CloseButton)`
   position: absolute;
-  top: ${props => (props.header ? '24px' : '16px')};
+  top: 16px;
   right: 16px;
   z-index: 2;
 
@@ -62,8 +62,10 @@ const ContentWrapper = styled(Box)`
   ${props => {
     if (!props.enableoverflow) {
       return `
-        overflow-y: auto;
+        overflow-y: scroll;
         overflow-x: hidden;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
       `
     }
   }}
@@ -75,7 +77,7 @@ const OverlayWrapper = styled.div`
   width: 100%;
 `
 
-const DialogWrapper = styled.div`
+const DialogWrapper = styled(Box)`
   display: table-cell;
   vertical-align: middle;
   ${props =>
@@ -87,6 +89,7 @@ const DialogWrapper = styled.div`
 `
 
 const DialogInnerWrapper = styled(Flex)`
+  position: relative;
   height: 100%;
 `
 
@@ -136,6 +139,9 @@ const Modal = ({
                     header={header}
                     enableoverflow={enableOverflow}
                   >
+                    {enableOverflow && !disableCloseButton && (
+                      <FloatCloseButton header={header} onClick={onClose} />
+                    )}
                     {children}
                   </ContentWrapper>
                 </DialogInnerWrapper>

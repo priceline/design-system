@@ -58,7 +58,11 @@ storiesOf('Modal', module)
     />
   ))
   .add('With Overflow', () => (
-    <ModalStory width={['80vw', '400px', '500px']} enableOverflow />
+    <ModalStory
+      header={<SmallModalHeader />}
+      width={['80vw', '400px', '500px']}
+      enableOverflow
+    />
   ))
   .add('With imagemode and colorful', () => (
     <ModalStory
