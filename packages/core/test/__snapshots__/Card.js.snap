@@ -7,7 +7,7 @@ exports[`Card renders border 0 without warning 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -19,7 +19,7 @@ exports[`Card renders large box shadow with default border 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -31,7 +31,7 @@ exports[`Card renders medium box shadow with default border 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -43,7 +43,7 @@ exports[`Card renders medium box shadow with specified borderRadius 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -55,7 +55,7 @@ exports[`Card renders medium box shadow with specified borderWidth 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -67,7 +67,7 @@ exports[`Card renders small box shadow with default border 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -79,6 +79,6 @@ exports[`Card renders xlarge box shadow with default border 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
