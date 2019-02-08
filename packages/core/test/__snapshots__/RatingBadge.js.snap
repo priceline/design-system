@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatingBadge renders 1`] = `
+.c1 {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #fff;
+  background-color: #f68013;
+}
+
+.c0 {
+  display: inline-block;
+  line-height: 1.5;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+<div
+  className="c0 c1"
+  color="white"
+  fontWeight="bold"
+/>
+`;

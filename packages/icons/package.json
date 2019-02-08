@@ -1,0 +1,36 @@
+{
+  "name": "pcln-icons",
+  "version": "2.0.0-beta.7",
+  "description": "Priceline React icons based on Material Design Icons",
+  "main": "lib/Icon.js",
+  "scripts": {
+    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
+    "clean": "rm -rf node_modules components lib",
+    "build:svg": "svgr svg -d components",
+    "build:index": "node ./create-index.js",
+    "build:copy": "cp src/Icon.js src/Svg.js src/index.js components",
+    "build:babel": "babel components -d lib",
+    "test": "jest"
+  },
+  "author": "Priceline",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.upperfirst": "^4.3.1",
+    "styled-system": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@svgr/cli": "^4.1.0",
+    "react": "^16.5.2",
+    "react-test-renderer": "^16.5.2"
+  },
+  "peerDependencies": {
+    "styled-components": ">=3.x || >=4.x"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "../../test-setup.js",
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  }
+}

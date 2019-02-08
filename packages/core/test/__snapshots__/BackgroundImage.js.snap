@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage renders 1`] = `
+.c0 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4f6f8f;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`BackgroundImage renders with height 1`] = `
+.c0 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4f6f8f;
+  height: 320px;
+}
+
+<div
+  className="c0"
+  height="320px"
+/>
+`;
+
+exports[`BackgroundImage renders with image 1`] = `
+.c0 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4f6f8f;
+  background-image: url(hello.png);
+}
+
+<div
+  className="c0"
+/>
+`;

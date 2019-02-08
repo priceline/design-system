@@ -1,0 +1,6 @@
+components
+svg
+icons
+test
+babel.config.js
+!lib/

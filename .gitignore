@@ -1,8 +1,6 @@
 node_modules
 npm-debug.log
-dist
+lerna-debug.log
 yarn.lock
 coverage
-.site
-icons.json
-.DS_Store
+dist

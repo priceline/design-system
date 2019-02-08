@@ -1,18 +1,9 @@
 import React from 'react'
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  Icon,
-  BlockLink,
-  Divider,
-  theme
-} from 'pcln-design-system'
+import { Box, Flex, Heading, Text, Icon, BlockLink } from 'pcln-design-system'
 import icons from 'pcln-design-system/icons.json'
 import { PageTitle, Description, Code } from '../src/components'
 
-const iconNames = Object.keys(icons).filter(key => key !== 'legacy')
+const iconNames = Object.keys(icons)
 
 const Column = props => (
   <Box {...props} width={[1 / 3, null, 1 / 3, 1 / 5]} mb={3} px={2} />
@@ -36,7 +27,7 @@ const IconList = props =>
         hoverColor="blue"
       >
         <Flex mb={3} align="center" justify="center">
-          <Icon name={icon} legacy={false} size={48} />
+          <Icon name={icon} size={48} />
         </Flex>
       </BlockLink>
       <Text align="center">

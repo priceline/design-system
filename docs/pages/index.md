@@ -57,7 +57,10 @@ class App extends React.Component {
 To use the Montserrat font-family in you project, be sure to include a link in your document `<head>`.
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Montserrat:400,600"
+  rel="stylesheet"
+/>
 ```
 
 ## Primitive UI Components
