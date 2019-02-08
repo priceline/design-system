@@ -32,9 +32,9 @@ const Dialog = styled(DialogContent)`
   }
   max-height: 100vh;
   ${props =>
-    props.enableOverflow &&
+    props.enableoverflow &&
     `
-    max-height: initial;
+    max-height: none;
   `}
 `
 
@@ -130,12 +130,12 @@ const Modal = ({
                 height={enableOverflow ? null : height}
                 style={{ transform: styles.transform }}
                 className={className}
-                enableOverflow={enableOverflow}
+                enableoverflow={enableOverflow ? 'true' : null}
               >
                 <DialogInnerWrapper flexDirection="column">
                   {header && <HeaderWrapper>{header}</HeaderWrapper>}
                   <ContentWrapper
-                    p={imgMode || 16}
+                    p={imgMode ? 0 : 16}
                     header={header}
                     enableoverflow={enableOverflow}
                   >

@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Modal, SmallModalHeader, ModalHeader } from '../src/index'
+import { Modal, SmallModalHeader, ModalHeader, ScrollLock } from '../src/index'
 import Button from '../../core/src/Button'
 import styled from 'styled-components'
 
@@ -14,13 +14,17 @@ class ModalStory extends React.Component {
     this.state = {
       isOpen: false
     }
+    this.scrollLock = new ScrollLock()
   }
 
   render() {
     return (
-      <div>
+      <div style={{ height: '1500px' }}>
         <Button
           onClick={() => {
+            if (this.props.lock) {
+              this.scrollLock.on()
+            }
             this.setState({ isOpen: true })
           }}
         >
@@ -30,6 +34,9 @@ class ModalStory extends React.Component {
           isOpen={this.state.isOpen}
           onClose={() => {
             this.setState({ isOpen: false })
+            if (this.props.lock) {
+              this.scrollLock.off()
+            }
           }}
           {...this.props}
         >
@@ -50,11 +57,12 @@ storiesOf('Modal', module)
       width={['80vw', '400px', '500px']}
     />
   ))
-  .add('With ModalHeader', () => (
+  .add('With ModalHeader (and scrollLock!)', () => (
     <ModalStory
       header={<ModalHeader title="Modal title" />}
       height={['90vh', '460px', '560px']}
       width={['80vw', '400px', '500px']}
+      lock={true}
     />
   ))
   .add('With Overflow', () => (
