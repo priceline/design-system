@@ -1,4 +1,3 @@
-
 # Image
 
 The `Image` component is a styled `<image>` element with `max-width: 100%`.

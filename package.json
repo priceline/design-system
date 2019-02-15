@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
-    "prepare": "lerna bootstrap",
+    "prepare": "lerna bootstrap --hoist",
     "clean": "lerna run clean",
     "changed": "lerna changed",
     "diff": "lerna diff",
@@ -14,26 +14,35 @@
     "storybook": "build-storybook -c storybook -o docs/out/storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-info": "^3.4.11",
-    "@storybook/react": "^4.0.0-alpha.23",
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-info": "^4.1.11",
+    "@storybook/react": "^4.1.11",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-loader": "^8.0.2",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
     "husky": "^0.14.3",
     "jest": "^23.6.0",
     "jest-styled-components": "^6.2.1",
-    "lerna": "^3.4.0",
+    "lerna": "^3.10.7",
     "lint-staged": "^4.2.3",
-    "prettier": "^1.14.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "prettier": "^1.16.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-testing-library": "^5.2.3",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-babel-runtime-external": "^2.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^5.0.1",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
     "styled-components": "^3.4.9"
   },
   "jest": {
@@ -59,7 +68,7 @@
     ]
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,md}": [
       "prettier --no-semi --single-quote --write",
       "git add"
     ]

@@ -1,4 +1,3 @@
-
 # Select
 
 The `Select` component is a styled `<select>` form element designed to match the look of the `Input` component.

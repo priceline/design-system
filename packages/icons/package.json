@@ -5,7 +5,7 @@
   "main": "lib/Icon.js",
   "scripts": {
     "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
-    "clean": "rm -rf components lib",
+    "clean": "rm -rf node_modules components lib",
     "build:svg": "svgr svg -d components",
     "build:index": "node ./create-index.js",
     "build:copy": "cp src/Icon.js src/Svg.js src/index.js components",
@@ -15,13 +15,11 @@
   "author": "Priceline",
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.1.2",
     "lodash.upperfirst": "^4.3.1",
-    "styled-system": "^3.1.6"
+    "styled-system": "^3.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
+    "@babel/cli": "^7.2.3",
     "@svgr/cli": "^4.1.0",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2"

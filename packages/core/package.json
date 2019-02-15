@@ -2,10 +2,11 @@
   "name": "pcln-design-system",
   "version": "2.0.0-beta.7",
   "description": "Priceline Design System",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "scripts": {
-    "prepare": "babel src -d dist",
-    "clean": "rm -rf node_modules dist icons.json",
+    "prepare": "rollup --config",
+    "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
   "author": "Priceline",
@@ -33,7 +34,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
     "camelcase": "^5.0.0",
     "jest": "^23.6.0",
     "react": "^16.5.2",
@@ -48,10 +48,9 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.2",
     "pcln-icons": "^2.0.0-beta.7",
     "prop-types": "^15.5.10",
-    "styled-system": "^3.1.4"
+    "styled-system": "^3.2.0"
   },
   "peerDependencies": {
     "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
