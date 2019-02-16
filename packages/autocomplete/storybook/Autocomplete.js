@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Text, Icon } from 'pcln-design-system'
+import { Box, Text, Icon } from '../../core/src/index'
 import catNames from 'cat-names'
 import Component from '@reach/component-component'
 import { Autocomplete, Label, Input, Menu, Item } from '../src'

@@ -7,7 +7,7 @@ import {
   Card,
   Label as PclnLabel,
   Input as PclnInput
-} from 'pcln-design-system'
+} from '../../core/src/index'
 import { themeGet } from 'styled-system'
 
 export const AutocompleteContext = React.createContext()
