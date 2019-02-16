@@ -37,4 +37,19 @@ describe('Box', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })
+
+  test('align prop triggers warning', () => {
+    console.error = jest.fn()
+
+    const json = renderer.create(<Box align="center" />).toJSON()
+
+    expect(
+      console.error.mock.calls
+        .toString()
+        .indexOf(
+          'The Box `align` prop will deprecated. Please use Text instead.'
+        ) !== -1
+    )
+    console.error.mockRestore()
+  })
 })

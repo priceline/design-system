@@ -1,4 +1,3 @@
-
 # IconButton
 
 The `IconButton` component is a `<button>` element with icon.
@@ -17,13 +16,13 @@ Be sure to include a `title` attribute for accessibility.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`name` | string | Icon component `name` prop
-`legacy` | boolean | Icon component `legacy` prop
-`color` | string | Icon color
-`title` | string | HTML `title` attribute
-`onClick` | function | Sets a function to execute on click
+| Prop      | Type     | Description                         |
+| --------- | -------- | ----------------------------------- |
+| `name`    | string   | Icon component `name` prop          |
+| `legacy`  | boolean  | Icon component `legacy` prop        |
+| `color`   | string   | Icon color                          |
+| `title`   | string   | HTML `title` attribute              |
+| `onClick` | function | Sets a function to execute on click |
 
 ### Related
 

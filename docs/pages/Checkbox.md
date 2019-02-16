@@ -26,4 +26,3 @@ Wrap the `Checkbox` component with the `Label` component to create a form contro
   Three
 </Label>
 ```
-

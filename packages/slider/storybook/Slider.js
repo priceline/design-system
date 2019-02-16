@@ -1,12 +1,24 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withState } from 'recompose'
-import { Slider } from '../src'
-
-const DemoSlider = withState('value', 'onChange', [32, 64])(Slider)
+import Component from '@reach/component-component'
+import Slider from '../src'
 
 storiesOf('Slider', module)
-  .add('Basic', () => <DemoSlider />)
+  .add('Basic', () => (
+    <Component
+      initialState={{
+        value: [32, 64]
+      }}
+      children={({ state, setState }) => (
+        <Slider
+          value={state.value}
+          onChange={value => {
+            setState({ value })
+          }}
+        />
+      )}
+    />
+  ))
   .add('Single value', () => <Slider value={[32]} />)
   .add('Multiple values', () => <Slider value={[16, 32, 64, 128]} max={256} />)
   .add('Colors', () => (

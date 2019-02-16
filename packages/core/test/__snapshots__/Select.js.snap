@@ -18,7 +18,7 @@ exports[`Select renders 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: #4f6f8f;
+  color: gray;
 }
 
 .c2 {
@@ -69,7 +69,7 @@ exports[`Select renders 1`] = `
     width={24}
   >
     <path
-      d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"
+      d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
     />
   </svg>
 </div>

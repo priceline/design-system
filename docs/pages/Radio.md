@@ -24,4 +24,3 @@ Wrap the `Radio` component with the `Label` component to create a form control.
 ```
 
 Note: `defaultChecked` is used in the example as an uncontrolled component.
-

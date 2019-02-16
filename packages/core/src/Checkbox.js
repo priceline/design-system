@@ -42,9 +42,6 @@ const CheckBoxWrapper = styled(Box)`
     }
   }
 `
-CheckBoxWrapper.defaultProps = {
-  theme
-}
 
 CheckBoxWrapper.defaultProps = {
   theme

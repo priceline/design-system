@@ -1,0 +1,3161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Ac 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 11h-4.2L21 7.8l-1.4-1.4L15 11h-2V9l4.7-4.7-1.4-1.4L13 6.2V2h-2v4.2L7.8 2.9 6.3 4.3 11 9v2H9L4.3 6.3 2.9 7.8 6.2 11H2v2h4.2L3 16.2l1.4 1.4L9 13h2v2l-4.7 4.7 1.4 1.4 3.3-3.3V22h2v-4.2l3.2 3.2 1.4-1.4L13 15v-2h2l4.7 4.7 1.4-1.4-3.3-3.3H22v-2z"
+  />
+</svg>
+`;
+
+exports[`renders Accessible 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 13v-2c-1.5 0-3.1-.8-4.1-1.8l-1.3-1.5c-.1-.1-.3-.3-.6-.4-.3-.2-.8-.3-1.2-.3-1 .1-1.8 1-1.8 2.1V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.4c1.3 1 3.2 1.9 5 1.9zm-6.2 5h2.1c-.5 2.3-2.5 4-4.9 4-2.8 0-5-2.2-5-5 0-2.4 1.7-4.4 4-4.9v2.1c-1.2.4-2 1.5-2 2.8 0 1.7 1.3 3 3 3 1.3 0 2.4-.8 2.8-2zM12 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+  />
+</svg>
+`;
+
+exports[`renders Airplane 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6.568 4.675l6.302 2.76-2.228 2.326-4.78-4.224a.25.25 0 0 1-.042-.387l.44-.44a.251.251 0 0 1 .308-.035zm10.403 6.847l2.76 6.315a.252.252 0 0 1-.036.309l-.44.439a.25.25 0 0 1-.387-.042l-4.23-4.8 2.333-2.221zM6.84 15.22l-2.692-2.262a.25.25 0 0 1-.074-.404l.56-.56a.25.25 0 0 1 .31-.034l3.147.82-1.16 2.249c-.028.056-.064.12-.091.19zm4.794 1.102l.894 3.183c.024.087 0 .18-.064.245l-.598.596a.25.25 0 0 1-.404-.072l-2.275-2.707.17-.085 2.277-1.16zm8.426-12.025l.041.044.017.02c.22.273.25.64.266.864.074 1.216-.075 2.074-.47 2.698l-.036.06a1.713 1.713 0 0 1-.327.407l-7.48 7.127-.054.051-.065.033-2.817 1.437c-.346.188-1.266.442-1.737-.03-.51-.509-.192-1.438-.028-1.748l1.435-2.807.033-.065.05-.052 7.125-7.479c.303-.322.633-.48.951-.606.637-.24 1.447-.307 2.566-.205a.898.898 0 0 1 .53.251zm-1.172 7.585a.248.248 0 0 1 .354 0l1.06 1.061a.247.247 0 0 1 0 .353l-1.385 1.386-.87-1.959.841-.84zM11.11 4.104a.248.248 0 0 1 .354 0l1.06 1.061a.247.247 0 0 1 0 .353l-.842.841-1.958-.869 1.386-1.386z"
+  />
+</svg>
+`;
+
+exports[`renders Arrival 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2.5 19.5h19v2h-19v-2zm7.2-5.7L14 15l5.3 1.4c.8.2 1.6-.3 1.8-1.1.2-.8-.3-1.6-1.1-1.8l-5.3-1.4-2.8-9-1.8-.6v8.3l-5-1.3-.9-2.4-1.4-.4v5.2l1.6.4 5.3 1.5z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowDown 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 12l-1.4-1.4-5.6 5.6V4h-2v12.2l-5.6-5.6L4 12l8 8 8-8z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowLeft 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowRight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8-8-8z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 12l1.4 1.4L11 7.8V20h2V7.8l5.6 5.6L20 12l-8-8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders Attention 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M1 21.5h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+  />
+</svg>
+`;
+
+exports[`renders Automatic 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm2.3-4.7H16L12.9 8h-1.7L8 15.3h1.7l.6-1.4h3.4l.6 1.4zm-3.5-2.7L12 9.7l1.2 2.8h-2.4v.1z"
+  />
+</svg>
+`;
+
+exports[`renders Bag 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 6.5h-3v-2c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-11c0-1.1-.9-2-2-2zm-11-2h6v2H9v-2zm11 15H4v-2h16v2zm0-5H4v-6h3v2h2v-2h6v2h2v-2h3v6z"
+  />
+</svg>
+`;
+
+exports[`renders Beach 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.2 14.6l1.4-1.4 6.4 6.4-1.3 1.4-6.5-6.4zm4.3-5.8L20.4 6c-4-4-10.4-4-14.3-.1 3.9-1.3 8.3-.2 11.4 2.9zM6 6c-3.9 3.9-3.9 10.3.1 14.3L9 17.4C5.8 14.3 4.7 9.9 6 6zm.1 0c-.4 3 1.1 6.8 4.3 10l5.7-5.7C13 7.1 9.1 5.6 6.1 6z"
+  />
+</svg>
+`;
+
+exports[`renders Bed 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.5 12.3c1.5 0 2.7-1.2 2.7-2.7S9 6.8 7.5 6.8 4.7 8 4.7 9.5s1.2 2.8 2.8 2.8zm10.9-5.5h-7.3v6.4H3.8V5H2v13.6h1.8v-2.7h16.4v2.7H22v-8.1c0-2-1.6-3.7-3.6-3.7z"
+  />
+</svg>
+`;
+
+exports[`renders BoxChecked 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+  />
+</svg>
+`;
+
+exports[`renders BoxEmpty 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+  />
+</svg>
+`;
+
+exports[`renders BoxMinus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm1 8v2h10v-2H7z"
+  />
+</svg>
+`;
+
+exports[`renders BoxPlus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm7 4h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"
+  />
+</svg>
+`;
+
+exports[`renders Breakfast 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H3v10c0 2.2 1.8 4 4 4h6c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM3 19h16v2H3v-2z"
+  />
+</svg>
+`;
+
+exports[`renders Build 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.7 18.3L13.5 10c.8-2.1.4-4.6-1.4-6.3-1.8-1.8-4.5-2.2-6.7-1.2l3.9 3.9-2.7 2.8-4-3.9c-1.1 2.2-.7 4.9 1.2 6.7 1.7 1.7 4.2 2.2 6.3 1.4l8.3 8.3c.4.4.9.4 1.3 0l2.1-2.1c.3-.3.3-1-.1-1.3z"
+  />
+</svg>
+`;
+
+exports[`renders Business 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 16v-1H3v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-7v1h-4zm10-9h-4V5l-2-2h-4L8 5v2H4c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"
+  />
+</svg>
+`;
+
+exports[`renders Cake 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 6a2 2 0 0 0 2-2 1.69 1.69 0 0 0-.3-1L12 0l-1.7 3a1.69 1.69 0 0 0-.3 1 2 2 0 0 0 2 2zm4.6 10l-1.1-1.1-1 1.1a3.57 3.57 0 0 1-4.9 0l-1.1-1.1L7.4 16A3.49 3.49 0 0 1 5 17a3.61 3.61 0 0 1-2-.6V21a1.08 1.08 0 0 0 1 1h16a1.08 1.08 0 0 0 1-1v-4.6a3.38 3.38 0 0 1-2 .6 3.5 3.5 0 0 1-2.4-1zM18 9h-5V7h-2v2H6a3 3 0 0 0-3 3v1.5a2 2 0 0 0 2 2 2 2 0 0 0 1.4-.6l2.1-2.1 2.1 2.1a2.13 2.13 0 0 0 2.8 0l2.1-2.1 2.1 2.1a2 2 0 0 0 1.4.6 2 2 0 0 0 2-2V12a3 3 0 0 0-3-3z"
+  />
+</svg>
+`;
+
+exports[`renders Calendar 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders CarCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm4.2 5.6c-.1-.3-.4-.6-.8-.6H8.6c-.4 0-.7.3-.8.6l-1.3 3.7v5c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-.6h7.3v.6c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-5l-1.2-3.7zm-7.6 6.3c-.5 0-.9-.4-.9-.9s.4-1 .9-1 .9.4.9.9-.4 1-.9 1zm6.8 0c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9zm-7.7-3.1L8.6 8h6.7l.9 2.8H7.7z"
+  />
+</svg>
+`;
+
+exports[`renders CarDoor 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 2h-6.9c-.7 0-1.3.3-1.7.9l-5 7.6c-.3.3-.4.7-.4 1.1V20c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 9H6.7l4.7-7H18v7z"
+  />
+</svg>
+`;
+
+exports[`renders Carriage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.5 2v8h8c0-4.4-3.6-8-8-8zm6.3 13.9c1.1-1.4 1.7-3.1 1.7-4.9H6.9L6 9H2.5v2h2.2s1.9 4.1 2.1 4.4C5.7 16 5 17.2 5 18.5 5 20.4 6.6 22 8.5 22c1.8 0 3.2-1.3 3.5-3h2c.2 1.7 1.7 3 3.5 3 1.9 0 3.5-1.6 3.5-3.5 0-1-.5-2-1.2-2.6zM8.5 20c-.8 0-1.5-.7-1.5-1.5S7.7 17 8.5 17s1.5.7 1.5 1.5S9.3 20 8.5 20zm9 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Cars 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.9 5c-.2-.6-.8-1-1.4-1h-11c-.7 0-1.2.4-1.4 1L3 11v8c0 .6.4 1 1 1h1c.5 0 1-.4 1-1v-1h12v1c0 .6.4 1 1 1h1c.5 0 1-.4 1-1v-8l-2.1-6zM6.5 15c-.8 0-1.5-.7-1.5-1.5S5.7 12 6.5 12s1.5.7 1.5 1.5S7.3 15 6.5 15zm11 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"
+  />
+</svg>
+`;
+
+exports[`renders Casino 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18c-.8 0-1.5-.7-1.5-1.5S6.7 15 7.5 15s1.5.7 1.5 1.5S8.3 18 7.5 18zm0-9C6.7 9 6 8.3 6 7.5S6.7 6 7.5 6 9 6.7 9 7.5 8.3 9 7.5 9zm4.5 4.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4.5 4.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm0-9c-.8 0-1.5-.7-1.5-1.5S15.7 6 16.5 6s1.5.7 1.5 1.5S17.3 9 16.5 9z"
+  />
+</svg>
+`;
+
+exports[`renders Chart 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+  />
+</svg>
+`;
+
+exports[`renders Chat 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"
+  />
+</svg>
+`;
+
+exports[`renders Check 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronDown 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronLeft 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.4 16.6L10.8 12l4.6-4.6L14 6l-6 6 6 6 1.4-1.4z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronRight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8 16.6l4.6-4.6L8 7.4 9.4 6l6 6-6 6L8 16.6z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.4 15.4l4.6-4.6 4.6 4.6L18 14l-6-6-6 6 1.4 1.4z"
+  />
+</svg>
+`;
+
+exports[`renders CityView 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 11.5v-6l-3-3-3 3v2H3v14h18v-10h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5v-2h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders Clock 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-7.8l4.5 2.7-.8 1.2L11 13V7h1.5v5.2z"
+  />
+</svg>
+`;
+
+exports[`renders Close 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+  />
+</svg>
+`;
+
+exports[`renders Cloud 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.1 10C17.6 7.2 15 5 12 5 9.6 5 7.5 6.4 6.5 8.4 4 8.6 2 10.8 2 13.3c0 2.8 2.2 5 5 5h10.8c2.3 0 4.2-1.9 4.2-4.2 0-2.1-1.7-3.9-3.9-4.1zm-.3 6.7H7c-1.8 0-3.3-1.5-3.3-3.3S5.2 10 7 10h.6c.5-1.9 2.3-3.3 4.4-3.3 2.5 0 4.6 2.1 4.6 4.6v.4h1.2c1.4 0 2.5 1.1 2.5 2.5s-1.1 2.5-2.5 2.5z"
+  />
+</svg>
+`;
+
+exports[`renders CollisionCoverage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 1l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4zm4.2 6.6c-.1-.3-.4-.6-.8-.6H8.6c-.4 0-.7.3-.8.6l-1.3 3.7v5c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-.6h7.3v.6c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-5l-1.2-3.7zm-7.6 6.3c-.5 0-.9-.4-.9-.9s.4-1 .9-1 .9.4.9.9-.4 1-.9 1zm6.8 0c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9zm-7.7-3.1L8.6 8h6.7l.9 2.8H7.7z"
+  />
+</svg>
+`;
+
+exports[`renders Coupon 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.4 11.6l-9-9c-.3-.4-.8-.6-1.4-.6H4c-1.1 0-2 .9-2 2v7c0 .6.2 1.1.6 1.4l9 9c.4.4.9.6 1.4.6s1.1-.2 1.4-.6l7-7c.4-.4.6-.9.6-1.4s-.2-1.1-.6-1.4zM5.5 7C4.7 7 4 6.3 4 5.5S4.7 4 5.5 4 7 4.7 7 5.5 6.3 7 5.5 7z"
+  />
+</svg>
+`;
+
+exports[`renders CreditCard 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+  />
+</svg>
+`;
+
+exports[`renders Cruises 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.2 20.2c-1.3 0-2.5-.5-3.6-1.2-2.2 1.5-5 1.5-7.2 0-1.1.7-2.3 1.2-3.6 1.2H3V22h1.8c1.3 0 2.4-.4 3.6-.9 2.2 1.2 5 1.2 7.2 0 1.2.5 2.3.9 3.6.9H21v-1.8h-1.8zM4.8 18.4c1.4 0 2.7-.8 3.6-1.8.9 1 2.2 1.8 3.6 1.8s2.7-.8 3.6-1.8c.9 1 2.2 1.8 3.6 1.8l1.7-6.1c.1-.3.1-.5-.1-.7-.1-.2-.3-.4-.5-.5l-1.1-.4V6.5c0-1-.8-1.8-1.8-1.8h-2.7V2H9.3v2.7H6.6c-1 0-1.8.8-1.8 1.8v4.2l-1.2.4c-.3.1-.5.3-.5.5-.1.1-.1.5-.1.7l1.8 6.1zM6.6 6.5h10.8v3.6L12 8.4l-5.4 1.8V6.5z"
+  />
+</svg>
+`;
+
+exports[`renders Departure 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2.5 19h19v2h-19v-2zm19.6-9.9c-.2-.8-1-1.3-1.8-1.1l-5.4 1.5L8 3.1l-1.9.5 4.1 7.2-5 1.3-1.9-1.6-1.5.4 1.8 3.2.8 1.3L6 15l5.3-1.4 4.3-1.2L21 11c.8-.2 1.3-1.1 1.1-1.9z"
+  />
+</svg>
+`;
+
+exports[`renders Devices 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M5.4 6.8h15V5h-15c-.9 0-1.7.7-1.7 1.8v9.6H2V19h11.6v-2.6H5.4V6.8zm15.8 1.7h-5c-.5 0-.8.4-.8.8v8.8c0 .5.4.8.8.8h5c.5 0 .8-.4.8-.8V9.4c0-.5-.4-.9-.8-.9zm-.8 7.9H17v-6.2h3.4v6.2z"
+  />
+</svg>
+`;
+
+exports[`renders Directions 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.7 11.3l-9-9c-.4-.4-1-.4-1.4 0l-9 9c-.4.4-.4 1 0 1.4l9 9c.4.4 1 .4 1.4 0l9-9c.4-.4.4-1 0-1.4zM14 14.5V12h-4v3H8v-4c0-.5.5-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"
+  />
+</svg>
+`;
+
+exports[`renders Discount 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 12l-2.4 2.7.3 3.5-3.6.8-1.9 3-3.4-1.4L8.6 22l-1.9-3-3.6-.8.3-3.5L1 12l2.4-2.7-.3-3.5L6.7 5l1.9-3L12 3.4 15.4 2l1.9 3 3.6.8-.3 3.5L23 12zm-10.8-.6c-1.3-.3-1.8-.7-1.8-1.3 0-.6.6-1.1 1.6-1.1s1.4.5 1.5 1.2h1.3c0-1-.7-1.9-1.9-2.2V6.7h-1.8V8c-1.1.2-2 1-2 2.1 0 1.3 1.1 2 2.8 2.4 1.5.4 1.8.9 1.8 1.4 0 .4-.3 1-1.6 1-1.2 0-1.7-.5-1.8-1.2H9c.1 1.3 1 2 2.2 2.2v1.3H13V16c1.1-.2 2.1-.9 2.1-2.1-.1-1.6-1.5-2.2-2.9-2.5z"
+  />
+</svg>
+`;
+
+exports[`renders Document 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+  />
+</svg>
+`;
+
+exports[`renders Dollar 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 10.9c-2.3-.6-3-1.2-3-2.1C9 7.7 10 7 11.7 7c1.8 0 2.4.8 2.5 2.1h2.2c-.1-1.7-1.1-3.3-3.2-3.8V3h-3v2.2c-1.9.4-3.5 1.6-3.5 3.6 0 2.3 1.9 3.5 4.7 4.1 2.5.6 3 1.5 3 2.4 0 .7-.5 1.8-2.7 1.8-2.1 0-2.9-.9-3-2.1H6.5c.1 2.2 1.8 3.4 3.7 3.8V21h3v-2.1c1.9-.4 3.5-1.5 3.5-3.6 0-2.8-2.4-3.8-4.7-4.4z"
+  />
+</svg>
+`;
+
+exports[`renders DollarCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1.4 16.1V20h-2.7v-1.9c-1.7-.4-3.2-1.5-3.3-3.4h2c.1 1.1.8 1.9 2.6 1.9 2 0 2.4-1 2.4-1.6 0-.8-.4-1.6-2.7-2.1-2.5-.6-4.2-1.6-4.2-3.7 0-1.7 1.4-2.8 3.1-3.2V4h2.7v1.9c1.9.5 2.8 1.9 2.9 3.4h-2c-.1-1.1-.6-1.9-2.2-1.9-1.5 0-2.4.7-2.4 1.6 0 .8.6 1.4 2.7 1.9 2 .5 4.2 1.4 4.2 3.9 0 2-1.4 3-3.1 3.3z"
+  />
+</svg>
+`;
+
+exports[`renders DoubleOccupancy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.066 3.6a1.6 1.6 0 1 1-3.199 0 1.6 1.6 0 0 1 3.2 0zM9.2 5.934c1 0 1.866.866 1.933 1.866v4.534l-1.667 1.6v6.8c0 .666-.533 1.266-1.2 1.266H6.8c-.667 0-1.2-.6-1.134-1.266v-6.667-.133L4 12.334V7.8c0-1 .8-1.866 1.8-1.866h3.4zM17.489 3.6a1.6 1.6 0 1 1-3.2 0 1.6 1.6 0 0 1 3.2 0zm.2 2.334c1 0 1.8.866 1.866 1.866v4.534l-1.666 1.6v6.8c0 .666-.534 1.266-1.2 1.266h-1.467c-.667 0-1.133-.6-1.133-1.266v-6.667-.133l-1.667-1.6V7.8c0-1 .8-1.866 1.8-1.866h3.467z"
+  />
+</svg>
+`;
+
+exports[`renders EarlyBird 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.1 14.9L22 12l-2.9-2.9V4.9H15L12 2 9.1 4.9H4.9V9L2 12l2.9 2.9V19H9l3 3 2.9-2.9H19v-4.2zM12 17.3c-2.9 0-5.3-2.4-5.3-5.3S9.1 6.7 12 6.7s5.3 2.4 5.3 5.3-2.4 5.3-5.3 5.3z"
+  />
+</svg>
+`;
+
+exports[`renders Edit 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 17.2V21h3.8l11-11.1L14 6.1 3 17.2zM20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9 20.7 7z"
+  />
+</svg>
+`;
+
+exports[`renders Electric 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7 2v11h3v9l7-12h-4l4-8H7z"
+  />
+</svg>
+`;
+
+exports[`renders Email 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+  />
+</svg>
+`;
+
+exports[`renders Emoticon 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm3.5-9c.8 0 1.5-.7 1.5-1.5S16.3 8 15.5 8 14 8.7 14 9.5s.7 1.5 1.5 1.5zm-7 0c.8 0 1.5-.7 1.5-1.5S9.3 8 8.5 8 7 8.7 7 9.5 7.7 11 8.5 11zm3.5 6.5c2.3 0 4.3-1.5 5.1-3.5H6.9c.8 2 2.8 3.5 5.1 3.5z"
+  />
+</svg>
+`;
+
+exports[`renders Event 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 13h-5v5h5v-5zM16 2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-1V2h-2zm3 18H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders EventAvailable 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.5 12.1l-1-1.1-4.9 4.9-2.1-2.1-1.1 1.1 3.2 3.2 5.9-6zM19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders EventBusy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.3 18l2.4-2.4 2.4 2.4 1.1-1.1-2.4-2.4 2.4-2.4-1-1.1-2.4 2.4L9.3 11l-1.1 1.1 2.4 2.4-2.4 2.4L9.3 18zM19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders Facebook 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.9 22H3.1c-.6 0-1.1-.5-1.1-1.1V3.1C2 2.5 2.5 2 3.1 2h17.8c.6 0 1.1.5 1.1 1.1v17.8c0 .6-.5 1.1-1.1 1.1zm-5.1 0v-7.7h2.6l.4-3h-3v-2c0-.9.2-1.5 1.5-1.5h1.6V5.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2h-2.6v3h2.6V22h3.1z"
+  />
+</svg>
+`;
+
+exports[`renders FavoriteHotel 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 20.9l-1.4-1.3C5.4 14.9 2 11.8 2 8c0-3.1 2.4-5.5 5.5-5.5 1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1C19.6 2.5 22 4.9 22 8c0 3.8-3.4 6.9-8.6 11.5L12 20.9zM9.7 10.7c.8 0 1.4-.6 1.4-1.4s-.6-1.4-1.4-1.4c-.7 0-1.3.7-1.3 1.4s.6 1.4 1.3 1.4zm5.5-2.8h-3.6v3.3H7.9V7H7v7h.9v-1.4h8.2V14h.9V9.8c0-1-.8-1.9-1.8-1.9z"
+  />
+</svg>
+`;
+
+exports[`renders Filter 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+  />
+</svg>
+`;
+
+exports[`renders Fitness 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.6 14.9l1.4-1.4-1.4-1.5-3.6 3.6L8.4 7 12 3.4 10.6 2 9.1 3.4 7.7 2 5.6 4.1 4.1 2.7 2.7 4.1l1.4 1.4L2 7.7l1.4 1.4L2 10.6 3.4 12 7 8.4l8.6 8.6-3.6 3.6 1.4 1.4 1.4-1.4 1.4 1.4 2.1-2.1 1.4 1.4 1.4-1.4-1.4-1.4 2.1-2.1-1.2-1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Flame 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.5 1s.7 2.7.7 4.8c0 2.1-1.3 3.7-3.4 3.7-2.1 0-3.6-1.7-3.6-3.7v-.4C5.2 7.8 4 10.9 4 14.3c0 4.4 3.6 8 8 8s8-3.6 8-8C20 8.9 17.4 4.1 13.5 1zm-1.8 18.3c-1.8 0-3.2-1.4-3.2-3.1 0-1.6 1.1-2.8 2.8-3.1 1.8-.4 3.6-1.2 4.6-2.6.4 1.3.6 2.7.6 4 0 2.7-2.1 4.8-4.8 4.8z"
+  />
+</svg>
+`;
+
+exports[`renders FlightCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm5 12.2v-1.1l-4.2-2.8v-3c0-.5-.4-.8-.8-.8s-.8.4-.8.8v3L7 13.1v1.1l4.2-1.4v3l-1.1.8v.8L12 17l1.8.5v-.8l-1.1-.8v-3l4.3 1.3z"
+  />
+</svg>
+`;
+
+exports[`renders FlightCoverage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 1l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4zm5 12.7v-1.1l-4.2-2.8v-3c0-.4-.4-.8-.8-.8s-.8.4-.8.8v3L7 12.6v1.1l4.2-1.4v3l-1.1.8v.9l1.8-.5 1.8.5v-.8l-1.1-.8v-3l4.4 1.3z"
+  />
+</svg>
+`;
+
+exports[`renders Flights 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.5 16v-2l-8-5V3.5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z"
+  />
+</svg>
+`;
+
+exports[`renders FreeCancellation 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 12h-3c0 4.4-3.6 8-8 8-1.6 0-3-.5-4.3-1.2l1.5-1.5c.8.5 1.8.7 2.8.7 3.3 0 6-2.7 6-6h-3l4-4 4 4zM6 12c0-3.3 2.7-6 6-6 1 0 2 .2 2.8.7l1.5-1.5C15 4.5 13.6 4 12 4c-4.4 0-8 3.6-8 8H1l4 4 4-4H6z"
+  />
+</svg>
+`;
+
+exports[`renders Fridge 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 21c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1h12c.6 0 1 .4 1 1v17c0 .6-.4 1-1 1v1h-2v-1H8v1H6v-1zM19 9V8H5v1h14zM7 4v2h2V4H7zm0 7v6h2v-6H7z"
+  />
+</svg>
+`;
+
+exports[`renders Gallery 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2 2.7 3-3.7 4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"
+  />
+</svg>
+`;
+
+exports[`renders Gas 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.8 7.2l-3.7-3.7L15 4.6l2.1 2.1c-.9.3-1.6 1.2-1.6 2.3 0 1.4 1.1 2.5 2.5 2.5.4 0 .7-.1 1-.2v7.2c0 .5-.4 1-1 1s-1-.5-1-1V14c0-1.1-.9-2-2-2h-1V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v5c0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5V9c0-.7-.3-1.3-.7-1.8zM12 10H6V5h6v5zm6 0c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"
+  />
+</svg>
+`;
+
+exports[`renders Globe 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm6.9 6H16c-.3-1.2-.8-2.5-1.4-3.6 1.8.7 3.4 1.9 4.3 3.6zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.4 1.1-2.8 1.9-4zM4.3 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2h3.4c-.1.7-.1 1.3-.1 2s.1 1.3.1 2H4.3zm.8 2h3c.3 1.2.8 2.5 1.4 3.6-1.9-.7-3.5-1.9-4.4-3.6zM8 8H5c1-1.7 2.5-2.9 4.3-3.6C8.8 5.5 8.3 6.8 8 8zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.4-1.1 2.8-1.9 4zm2.3-6H9.7c-.1-.7-.2-1.3-.2-2s.1-1.4.2-2h4.7c.1.6.2 1.3.2 2s-.2 1.3-.3 2zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9c-.9 1.6-2.5 2.9-4.3 3.6zm1.8-5.6c.1-.7.1-1.3.1-2s-.1-1.3-.1-2h3.4c.2.6.3 1.3.3 2s-.1 1.4-.3 2h-3.4z"
+  />
+</svg>
+`;
+
+exports[`renders Golf 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.5 18c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zM17 5.9L9 2v18H7v-1.7c-1.8.4-3 1-3 1.7 0 1.1 2.7 2 6 2s6-.9 6-2c0-1-2.2-1.8-5-2V9l6-3.1z"
+  />
+</svg>
+`;
+
+exports[`renders Gps 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 8.4c-2 0-3.6 1.6-3.6 3.6s1.6 3.6 3.6 3.6 3.6-1.6 3.6-3.6S14 8.4 12 8.4zm8.1 2.7c-.5-3.8-3.5-6.8-7.2-7.2V2h-1.8v1.9c-3.8.4-6.8 3.4-7.2 7.2H2v1.8h1.9c.5 3.8 3.5 6.8 7.2 7.2V22h1.8v-1.9c3.8-.5 6.8-3.5 7.2-7.2H22v-1.8h-1.9zM12 18.4c-3.5 0-6.4-2.8-6.4-6.4S8.5 5.6 12 5.6s6.4 2.8 6.4 6.4-2.9 6.4-6.4 6.4z"
+  />
+</svg>
+`;
+
+exports[`renders Graph 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3.5 18.5l6-6 4 4L22 6.9l-1.4-1.4-7.1 8-4-4L2 17l1.5 1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Grid 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+  />
+</svg>
+`;
+
+exports[`renders GuestScore 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-1.105 0-2 .895-2 2v18l4-4h14c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zm-4.898 12.398L12 12.602 8.898 14.5 9.7 11 7 8.602l3.602-.301L12 5l1.398 3.3L17 8.603 14.3 11z"
+  />
+</svg>
+`;
+
+exports[`renders Guests 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.5 12c1.4 0 2.5-1.1 2.5-2.5S17.9 7 16.5 7 14 8.1 14 9.5s1.1 2.5 2.5 2.5zM9 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm7.5 3c-1.8 0-5.5.9-5.5 2.8V19h11v-2.2c0-1.9-3.7-2.8-5.5-2.8zM9 13c-2.3 0-7 1.2-7 3.5V19h7v-2.2c0-.9.3-2.3 2.4-3.5-.9-.2-1.7-.3-2.4-.3z"
+  />
+</svg>
+`;
+
+exports[`renders Help 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 17h-2v-2h2v2zm2.1-7.8l-.9.9c-.8.8-1.2 1.4-1.2 2.9h-2v-.5c0-1.1.4-2.1 1.2-2.8l1.2-1.3c.4-.3.6-.8.6-1.4 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.2 1.8-4 4-4s4 1.8 4 4c0 .9-.4 1.7-.9 2.2z"
+  />
+</svg>
+`;
+
+exports[`renders History 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 12c0 4.7-3.8 8.6-8.6 8.6-2.4 0-4.5-1-6.1-2.5l1.4-1.4c1.2 1.2 2.9 2 4.7 2A6.7 6.7 0 1 0 6.7 12h2.9l-3.8 3.8-.1-.1L2 12h2.9c0-4.7 3.8-8.6 8.6-8.6S22 7.3 22 12zm-9.5-3.8V13l4.1 2.4.7-1.2-3.3-2v-4h-1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Home 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8h5z"
+  />
+</svg>
+`;
+
+exports[`renders HotelCircle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zM9.7 12.2c.8 0 1.4-.6 1.4-1.4s-.6-1.4-1.4-1.4c-.8 0-1.4.6-1.4 1.4s.7 1.4 1.4 1.4zm5.5-2.8h-3.6v3.3H7.9V8.5H7v7h.9v-1.4h8.2v1.4h.9v-4.2c0-1-.8-1.9-1.8-1.9z"
+  />
+</svg>
+`;
+
+exports[`renders Hotels 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+  />
+</svg>
+`;
+
+exports[`renders House 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4.5 3a.83.83 0 0 0-.81.63L2 10.29a.83.83 0 0 0 .81 1v8.33a1.68 1.68 0 0 0 1.69 1.71h15a1.68 1.68 0 0 0 1.67-1.67v-8.33a.83.83 0 0 0 .81-1l-1.67-6.7A.83.83 0 0 0 19.5 3h-15zM12 6.33l5 5h2.5v8.33h-5.83V15.5a1.67 1.67 0 0 0-3.33 0v4.17H4.5v-8.34H7zm-5.83 7.5v2.5h2.5v-2.5h-2.5zm9.17 0v2.5h2.5v-2.5h-2.5z"
+  />
+</svg>
+`;
+
+exports[`renders Hybrid 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 7.5c-9 2-11.1 8.2-13.2 13.3l1.9.7.9-2.3c.5.2 1 .3 1.4.3 11 0 14-17 14-17-1 2-8 2.2-13 3.2s-7 5.2-7 7.2 1.8 3.8 1.8 3.8C7 7.5 17 7.5 17 7.5z"
+  />
+</svg>
+`;
+
+exports[`renders Inclusive 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.8 13.1l2.8-2.8-7-7C2 4.9 2 7.4 3.6 9l4.2 4.1zm6.8-1.8c1.5.7 3.7.2 5.3-1.4 1.9-1.9 2.2-4.6.8-6.1-1.5-1.5-4.2-1.1-6.1.8-1.6 1.6-2.1 3.7-1.4 5.3l-9.8 9.8 1.4 1.4 6.9-6.9 6.9 6.9 1.4-1.4-6.9-6.9 1.5-1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Information 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders InformationOutline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 17h2v-6h-2v6zm1-15C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM11 9h2V7h-2v2z"
+  />
+</svg>
+`;
+
+exports[`renders Instagram 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.9 7.9c0-1.1-.2-1.8-.5-2.4-.3-.7-.6-1.2-1.2-1.8s-1.1-.9-1.8-1.2c-.6-.2-1.4-.4-2.4-.5h-4c-2.7 0-3.1 0-4.1.1-1.1 0-1.8.2-2.4.5-.7.2-1.3.5-1.8 1.1s-.9 1.1-1.2 1.8c-.2.6-.4 1.3-.4 2.4C2 8.9 2 9.3 2 12s0 3.1.1 4.1c0 1.1.2 1.8.5 2.4.3.7.6 1.2 1.2 1.8s1.1.9 1.8 1.2c.6.2 1.4.4 2.4.5h4c2.7 0 3.1 0 4.1-.1 1.1 0 1.8-.2 2.4-.5.7-.3 1.2-.6 1.8-1.2s.9-1.1 1.2-1.8c.2-.6.4-1.4.5-2.4 0-1.1.1-1.4.1-4.1s-.1-3-.2-4zM20.1 16c0 1-.2 1.5-.3 1.9-.2.5-.4.8-.7 1.1-.3.3-.7.6-1.1.7-.4.1-.9.3-1.9.3-1.1 0-1.4.1-4 .1-2.7 0-3 0-4-.1-1 0-1.5-.2-1.9-.3-.6-.1-.9-.3-1.2-.7-.3-.3-.6-.7-.7-1.1-.2-.4-.4-.9-.4-1.9 0-1.1-.1-1.4-.1-4s0-3 .1-4c0-1 .2-1.5.3-1.9.2-.5.4-.8.8-1.1.3-.3.7-.6 1.1-.7.4-.2.9-.4 1.9-.4 1.1 0 1.4-.1 4-.1s3 0 4 .1c1 0 1.5.2 1.9.3.5.2.8.4 1.1.8.3.3.6.7.7 1.1.2.4.4.9.4 1.9 0 1.1.1 1.4.1 4s0 3-.1 4zM12 6.9c-2.8 0-5.1 2.3-5.1 5.1s2.3 5.1 5.1 5.1 5.1-2.3 5.1-5.1-2.3-5.1-5.1-5.1zm0 8.4c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3zm6.5-8.6c0 .7-.5 1.2-1.2 1.2s-1.2-.5-1.2-1.2.5-1.2 1.2-1.2 1.2.5 1.2 1.2z"
+  />
+</svg>
+`;
+
+exports[`renders Key 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12.6 10.1C11.8 8 9.8 6.5 7.5 6.5 4.4 6.5 2 8.9 2 12s2.4 5.5 5.5 5.5c2.4 0 4.4-1.5 5.1-3.6h4v3.6h3.6v-3.7H22v-3.7h-9.4zm-5.1 3.7c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z"
+  />
+</svg>
+`;
+
+exports[`renders Kitchenette 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-.6 0-1 .4-1 1v3h18V3c0-.6-.4-1-1-1zM6 5c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm4 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm4 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm4 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zM3 20c0 .6.4 1 1 1h1v1h2v-1h10v1h2v-1h1c.6 0 1-.4 1-1V7H3v13zM7 8h10v1H7V8zm-2 2h14v9H5v-9z"
+  />
+</svg>
+`;
+
+exports[`renders Laptop 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.6 17.2c.9 0 1.6-.8 1.6-1.8V6.8c0-1-.7-1.8-1.6-1.8H5.4c-.9 0-1.7.8-1.7 1.8v8.8c0 1 .7 1.8 1.6 1.8H2V19h20v-1.8h-3.4zM5.4 6.8h13.4v8.8H5.4V6.8z"
+  />
+</svg>
+`;
+
+exports[`renders LateNight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm.8 5c-2.9 0-5.3 2.2-5.3 5s2.4 5 5.3 5c1 0 1.9-.2 2.7-.7-1.6-.9-2.7-2.5-2.7-4.3s1.1-3.5 2.7-4.3c-.8-.5-1.7-.7-2.7-.7z"
+  />
+</svg>
+`;
+
+exports[`renders List 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+  />
+</svg>
+`;
+
+exports[`renders LocalBar 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 5V3H3v2l8 9v5H6v2h12v-2h-5v-5l8-9zM7.4 7L5.7 5h12.7l-1.8 2H7.4z"
+  />
+</svg>
+`;
+
+exports[`renders Lock 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 9.5h-1v-2c0-2.8-2.2-5-5-5s-5 2.2-5 5v2H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-6 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-8H8.9v-2c0-1.7 1.4-3.1 3.1-3.1s3.1 1.4 3.1 3.1v2z"
+  />
+</svg>
+`;
+
+exports[`renders Loyalty 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.4 11.6l-9-9c-.3-.4-.8-.6-1.4-.6H4c-1.1 0-2 .9-2 2v7c0 .6.2 1.1.6 1.4l9 9c.4.4.9.6 1.4.6s1.1-.2 1.4-.6l7-7c.4-.4.6-.9.6-1.4s-.2-1.1-.6-1.4zM5.5 7C4.7 7 4 6.3 4 5.5S4.7 4 5.5 4 7 4.7 7 5.5 6.3 7 5.5 7zm11.8 8.3L13 19.5l-4.3-4.3c-.4-.4-.7-1-.7-1.7 0-1.4 1.1-2.5 2.5-2.5.7 0 1.3.3 1.8.7l.7.7.7-.7c.5-.4 1.1-.7 1.8-.7 1.4 0 2.5 1.1 2.5 2.5 0 .7-.3 1.3-.7 1.8z"
+  />
+</svg>
+`;
+
+exports[`renders Luggage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 6.5h-4v-2c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-11c0-1.1-.9-2-2-2zm-6 0h-4v-2h4v2z"
+  />
+</svg>
+`;
+
+exports[`renders Manual 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM7.4 8h2l2.5 4.9L14.4 8h2v8h-1.6v-5.4l-2.3 4.6h-1.1l-2.3-4.6V16H7.4V8z"
+  />
+</svg>
+`;
+
+exports[`renders Map 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.5 3h-.2L15 5.1 9 3 3.4 4.9c-.2.1-.4.3-.4.5v15.1c0 .3.2.5.5.5h.2L9 18.9l6 2.1 5.6-1.9c.2-.1.4-.2.4-.5V3.5c0-.3-.2-.5-.5-.5zM15 19l-6-2.1V5l6 2.1V19z"
+  />
+</svg>
+`;
+
+exports[`renders Menu 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 13h18v-2H3v2zm0 5h18v-2H3v2zM3 6v2h18V6H3z"
+  />
+</svg>
+`;
+
+exports[`renders Microwave 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 5.5H3c-.6 0-1 .4-1 1v10c0 .6.4 1 1 1h1v1h2v-1h12v1h2v-1h1c.6 0 1-.4 1-1v-10c0-.6-.4-1-1-1zm-6 10H4v-8h11v8zm2 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm0-3c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm0-3c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm3 6h-1v-8h1v8z"
+  />
+</svg>
+`;
+
+exports[`renders Mileage 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 16c-1.7 0-3-1.3-3-3 0-1.1.6-2.1 1.5-2.6l9.7-5.6-5.5 9.6c-.5.9-1.5 1.6-2.7 1.6zm0-13c1.8 0 3.5.5 5 1.3l-2.1 1.2C14 5.2 13 5 12 5c-4.4 0-8 3.6-8 8 0 2.2.9 4.2 2.3 5.6.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0C3.1 18.3 2 15.8 2 13 2 7.5 6.5 3 12 3zm10 10c0 2.8-1.1 5.3-2.9 7.1-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4 1.5-1.4 2.3-3.4 2.3-5.6 0-1-.2-2-.5-2.9L20.7 8c.8 1.5 1.3 3.2 1.3 5z"
+  />
+</svg>
+`;
+
+exports[`renders Minus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7 11v2h10v-2H7z"
+  />
+</svg>
+`;
+
+exports[`renders MultiOccupancy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.237 11.713h2.262v1.747h-2.262v2.268H19.49V13.46h-2.27v-1.747h2.27V9.445h1.747v2.268zm-10.87-7.412a1.601 1.601 0 1 1-3.202 0 1.601 1.601 0 0 1 3.203 0zM5.252 5.904a1.356 1.356 0 1 1-2.71 0 1.356 1.356 0 0 1 2.71 0zm-.555 6.467v.058l1.355 1.356-.617.616v5.548c0 .555-.431 1.047-.986 1.047H3.28c-.555 0-.986-.492-.986-1.047v-5.543L1 13.112V9.354c0-.801.74-1.54 1.54-1.54h2.218c-.062.06-.062.184-.062.307v4.25zM14.93 5.904a1.356 1.356 0 1 1-2.71 0 1.356 1.356 0 0 1 2.71 0zm.125 1.908c1.477 0 1.477 1.541 1.477 1.541v3.696l-1.353 1.354v5.543c0 .555-.432 1.047-.986 1.047h-1.17c-.495 0-.987-.492-.987-1.047v-5.543l-.677-.677 1.356-1.356V8.12v-.308h2.34zM10.37 6.581c1.48 0 1.478 1.54 1.476 1.54v4.128l-1.478 1.478v6.221c0 .616-.308 1.293-.924 1.293H8.15c-.554 0-1.17-.677-1.17-1.293V13.85v-.123l-.123-.123L5.44 12.25V8.12c0-.124.307-1.54 1.847-1.54h3.082z"
+  />
+</svg>
+`;
+
+exports[`renders Notification 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2a8.445 8.445 0 0 1 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43a8.495 8.495 0 0 1 3.54 6.42zM18 11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-6 11c.14 0 .27-.01.4-.04.65-.14 1.18-.58 1.44-1.18.1-.24.15-.5.15-.78h-4c.01 1.1.9 2 2.01 2z"
+  />
+</svg>
+`;
+
+exports[`renders Overnight 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17.6 8.2l.6 2L16.5 9l-1.7 1.2.6-2-1.7-1.3h2.1l.7-2 .7 2h2.1l-1.7 1.3zM19.4 19C15.4 23 9 23 5 19S1 8.6 5 4.6C6.3 3.3 7.9 2.4 9.5 2c-.9 3.4 0 7.2 2.6 9.8 2.7 2.7 6.4 3.5 9.8 2.6-.3 1.7-1.2 3.3-2.5 4.6z"
+  />
+</svg>
+`;
+
+exports[`renders Parking 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12.5 3h-7v18h4v-6h3c3.3 0 6-2.7 6-6s-2.7-6-6-6zm.2 8H9.5V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"
+  />
+</svg>
+`;
+
+exports[`renders Pets 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4.5 11.5C3.1 11.5 2 10.4 2 9s1.1-2.5 2.5-2.5S7 7.6 7 9s-1.1 2.5-2.5 2.5zm4.5-4C7.6 7.5 6.5 6.4 6.5 5S7.6 2.5 9 2.5s2.5 1.1 2.5 2.5S10.4 7.5 9 7.5zm6 0c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm4.5 4c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5S22 7.6 22 9s-1.1 2.5-2.5 2.5zm-2.2 2.9c1.3 1.3 2.9 2.8 2.6 4.8-.3 1-1 2-2.3 2.3-.7.1-3.1-.4-5.5-.4h-.2c-2.5 0-4.8.6-5.5.4-1.3-.3-2-1.3-2.3-2.3-.3-2 1.3-3.5 2.6-4.8.9-1 1.6-1.9 2.5-2.9.5-.5 1.1-1.1 1.8-1.3.1 0 .2-.1.3-.1.2-.1.4-.1.7-.1h.8c.1 0 .2.1.3.1.7.2 1.3.8 1.8 1.3.8 1.1 1.6 1.9 2.4 3z"
+  />
+</svg>
+`;
+
+exports[`renders Phone 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.5 0 1 .4 1 1V20c0 .5-.5 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"
+  />
+</svg>
+`;
+
+exports[`renders Picture 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"
+  />
+</svg>
+`;
+
+exports[`renders Pin 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"
+  />
+</svg>
+`;
+
+exports[`renders Plus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"
+  />
+</svg>
+`;
+
+exports[`renders Pool 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 21c-1.1 0-1.7-.4-2.2-.6-.4-.2-.6-.4-1.1-.4-.6 0-.8.1-1.1.4-.5.3-1.1.6-2.2.6s-1.7-.4-2.2-.6c-.4-.3-.6-.4-1.2-.4s-.8.1-1.2.4c-.4.2-1 .6-2.1.6s-1.7-.4-2.2-.6c-.4-.3-.6-.4-1.2-.4s-.8.1-1.1.4c-.5.2-1.1.6-2.2.6v-2c.6 0 .8-.1 1.1-.4.5-.2 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.3.6.4 1.2.4s.8-.1 1.2-.4c.4-.2 1-.6 2.1-.6s1.7.4 2.2.6c.4.2.6.4 1.2.4s.8-.1 1.1-.4c.4-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4v2zm0-4.5c-1.1 0-1.7-.4-2.2-.6-.4-.2-.6-.4-1.1-.4-.6 0-.8.1-1.1.4-.5.3-1.1.6-2.2.6s-1.7-.4-2.2-.6c-.4-.2-.6-.4-1.1-.4-.6 0-.8.1-1.2.4-.4.3-1.1.6-2.2.6s-1.7-.4-2.2-.6c-.4-.2-.6-.4-1.2-.4s-.8.1-1.1.4c-.5.3-1.1.6-2.2.6v-2c.6 0 .8-.1 1.1-.4.5-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4.6 0 .8-.1 1.2-.4.5-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4.6 0 .8-.1 1.2-.4.4-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4v2zM8.7 12c-.6 0-.8-.1-1.2-.4-.2-.1-.4-.2-.7-.4L10 8 9 7C7.9 5.9 6.8 5.5 5 5.5V3c2.5 0 3.9.4 5.5 2l6.4 6.4c-.1.1-.3.2-.4.2-.4.3-.6.4-1.2.4s-.8-.1-1.2-.4c-.4-.2-1-.6-2.1-.6s-1.7.4-2.2.6c-.4.3-.6.4-1.1.4zm7.8-4C15.1 8 14 6.9 14 5.5S15.1 3 16.5 3 19 4.1 19 5.5 17.9 8 16.5 8z"
+  />
+</svg>
+`;
+
+exports[`renders Printer 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 8H5c-1.7 0-3 1.3-3 3v6h4v4h12v-4h4v-6c0-1.7-1.3-3-3-3zm-3 11H8v-5h8v5zm3-7c-.5 0-1-.4-1-1s.5-1 1-1 1 .4 1 1-.5 1-1 1zm-1-9H6v4h12V3z"
+  />
+</svg>
+`;
+
+exports[`renders Quilt 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.4 19h5.3v-6.5H9.4V19zM3 19h5.3V5H3v14zm12.7 0H21v-6.5h-5.3V19zM9.4 5v6.5H21V5H9.4z"
+  />
+</svg>
+`;
+
+exports[`renders RadioChecked 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders RadioEmpty 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders RadioMinus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7 11v2h10v-2H7zm5-9C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders RadioPlus 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders Refresh 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17.6 6.3C16.2 4.9 14.2 4 12 4c-4.4 0-8 3.6-8 8s3.6 8 8 8c3.7 0 6.8-2.6 7.7-6h-2.1c-.8 2.3-3 4-5.6 4-3.3 0-6-2.7-6-6s2.7-6 6-6c1.7 0 3.1.7 4.2 1.8L13 11h7V4l-2.4 2.3z"
+  />
+</svg>
+`;
+
+exports[`renders Restaurant 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 9H9V2H7v7H5V2H3v7c0 2.1 1.7 3.8 3.8 4v9h2.5v-9c2-.2 3.7-1.9 3.7-4V2h-2v7zm5-3v8h2.5v8H21V2c-2.8 0-5 2.2-5 4z"
+  />
+</svg>
+`;
+
+exports[`renders Ribbon 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 17.5c.1 0 .1 0 .2-.1L9 22l-1.5-2-2.5.2 2.1-4.4h.1c.2.2.4.4.6.7.4.5.8 1 1.4 1.2.2.1.4.1.5.1.5 0 .9-.1 1.3-.3zm5.8-1.7c-.2.2-.4.4-.6.7-.4.5-.8 1-1.4 1.2-.6.2-1.2 0-1.8-.2-.1 0-.1 0-.2-.1L15 22l1.5-2 2.5.2-2.2-4.4zM20 9.4c0 .3-.3.7-.6 1.1-.2.3-.5.7-.6 1-.1.4-.1.8-.1 1.2 0 .5 0 .9-.2 1.2s-.6.4-1.1.6c-.4.1-.8.3-1.2.5-.3.2-.6.6-.8.9-.3.4-.6.7-.9.8-.3.1-.7 0-1.2-.2-.4-.1-.8-.2-1.3-.2-.4 0-.9.1-1.3.2-.5.1-.9.3-1.2.2-.3-.1-.6-.5-.9-.8-.3-.3-.5-.7-.8-.9s-.8-.4-1.2-.5c-.5-.2-.9-.3-1.1-.6s-.2-.7-.2-1.2c0-.4 0-.8-.1-1.2s-.4-.7-.6-1c-.3-.4-.6-.7-.6-1.1s.3-.7.6-1.1c.2-.3.4-.6.6-1 .1-.4.1-.9.1-1.3 0-.5 0-.9.2-1.2.2-.3.6-.4 1.1-.6.4 0 .8-.2 1.2-.4.3-.2.6-.6.8-.9.3-.4.6-.8.9-.9h.2c.3 0 .6.1.9.2.4.1.8.2 1.3.2.4 0 .9-.1 1.3-.2.5-.1.9-.3 1.2-.2s.6.5.9.8c.3.3.5.7.8.9.5.3.9.5 1.3.6.5.2.9.3 1.1.6.2.3.2.7.2 1.2 0 .4 0 .8.1 1.2.1.4.4.7.6 1 .3.4.6.8.6 1.1zm-3.5-1.8l-.9-.9-4.9 4.9-2.3-2.3-.9.9 3.2 3.2 5.8-5.8z"
+  />
+</svg>
+`;
+
+exports[`renders RoomSize 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 13H9.6v3L6 12l3.6-4v3h4.8V8l3.6 4-3.6 4v-3H12zM3 3h18c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1zm1 2v14h16V5H4z"
+  />
+</svg>
+`;
+
+exports[`renders Rowing 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.5 14.5L4 19l1.5 1.5L9 17h2l-2.5-2.5zM15 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 20l-3 3-3-3v-1.5l-7.1-7.1c-.3.1-.6.1-.9.1v-2.2c1.7 0 3.6-.9 4.7-2l1.4-1.6c.2-.2.4-.4.7-.5.2-.1.6-.2.9-.2C16 6 17 7 17 8.3V14c0 .8-.4 1.6-.9 2.2l-3.6-3.6v-2.3c-.6.5-1.4 1-2.3 1.4l6.3 6.3H18l3 3z"
+  />
+</svg>
+`;
+
+exports[`renders Search 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.5 14h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C16 5.9 13.1 3 9.5 3S3 5.9 3 9.5 5.9 16 9.5 16c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14z"
+  />
+</svg>
+`;
+
+exports[`renders SearchRecent 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 14h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C17.5 5.9 14.6 3 11 3S4.5 6 4.5 9.5H2l3.8 4 4.2-4H6.5C6.5 7 8.5 5 11 5s4.5 2 4.5 4.5-2 4.5-4.5 4.5c-.7 0-1.3-.1-1.8-.4l-1.5 1.5c1 .6 2.1.9 3.3.9 1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5L22 19l-5-5z"
+  />
+</svg>
+`;
+
+exports[`renders Seat 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 18v3h3v-3h10v3h3v-6H4v3zm15-8h3v3h-3v-3zM2 10h3v3H2v-3zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"
+  />
+</svg>
+`;
+
+exports[`renders SeatBusiness 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M5.3 6.1c-.8-.6-1.1-1.8-.4-2.7.6-.9 1.9-1.1 2.8-.5.9.6 1.1 1.8.4 2.8-.6.9-1.8 1.1-2.8.4zM16 19.5H8.9c-1.5 0-2.7-1.1-3-2.5L4 7.5H2l2 9.8c.4 2.4 2.5 4.2 4.9 4.2H16v-2zm.2-4h-4.8l-1-4.1c1.6.9 3.3 1.5 5.2 1.2v-2.1c-1.8.3-3.6-.3-4.8-1.3L9.1 8c-.2-.2-.4-.3-.7-.4-.3-.1-.7-.1-1-.1-1.2.2-2 1.4-1.8 2.6L7 16c.2 1.5 1.4 2.5 2.8 2.5h6.9l3.8 3L22 20l-5.8-4.5z"
+  />
+</svg>
+`;
+
+exports[`renders SeatEconomy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.6 5.4c-.8-.8-.8-2 0-2.8s2-.8 2.8 0c.8.8.8 2.1 0 2.8-.8.8-2 .8-2.8 0zM6 16V7H4v9c0 2.8 2.2 5 5 5h6v-2H9c-1.7 0-3-1.3-3-3zm14 4.1L14.9 15h-3.4v-3.7c1.4 1.2 3.6 2.2 5.5 2.2v-2.2c-1.7 0-3.6-.9-4.7-2l-1.4-1.6c-.2-.2-.4-.4-.7-.5-.3-.1-.6-.2-.9-.2C8 7 7 8 7 9.2V15c0 1.7 1.3 3 3 3h5.1l3.5 3.5 1.4-1.4z"
+  />
+</svg>
+`;
+
+exports[`renders Security 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2L4 5.6v5.5c0 5 3.4 9.8 8 10.9 4.6-1.1 8-5.9 8-10.9V5.6L12 2zm0 10h6.2c-.5 3.7-2.9 7.1-6.2 8.1V12H5.8V6.8L12 4v8z"
+  />
+</svg>
+`;
+
+exports[`renders Shuttle 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.5 5.5H3.8c-1 0-1.8.8-1.8 1.9v8.4h1.8c0 1.5 1.2 2.8 2.7 2.8s2.7-1.3 2.7-2.8h5c0 1.5 1.2 2.8 2.7 2.8s2.7-1.3 2.7-2.8H22v-4.6l-5.5-5.7zM3.8 11.1V7.4h3.6v3.7H3.8zm2.7 6c-.7 0-1.4-.6-1.4-1.4 0-.7.6-1.4 1.4-1.4s1.4.7 1.4 1.4c0 .8-.6 1.4-1.4 1.4zm6.4-6H9.3V7.4h3.6v3.7zm4.1 6c-.7 0-1.4-.6-1.4-1.4 0-.7.6-1.4 1.4-1.4s1.4.7 1.4 1.4c0 .8-.7 1.4-1.4 1.4zm-2.3-6V7.4h.9l3.6 3.7h-4.5z"
+  />
+</svg>
+`;
+
+exports[`renders SingleOccupancy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.066 3.6a1.6 1.6 0 1 1-3.199 0 1.6 1.6 0 0 1 3.2 0zm.134 2.334c1 0 1.866.866 1.933 1.866v4.534l-1.667 1.6v6.8c0 .666-.533 1.266-1.2 1.266H10.8c-.667 0-1.2-.6-1.134-1.266v-6.667-.133L8 12.334V7.8c0-1 .8-1.866 1.8-1.866h3.4z"
+  />
+</svg>
+`;
+
+exports[`renders Smoking 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2 5.5l7 7H2v3h10l7 7 1.3-1.2-17-17L2 5.5zm18.5 7H22v3h-1.5v-3zm-2.5 0h1.5v3H18v-3zm.9-8.1c.6-.6 1-1.5 1-2.4h-1.5c0 1-.8 1.8-1.9 1.8v1.5c2.2 0 4 1.8 4 4.1v2.1H22V9.4c0-2.2-1.3-4.1-3.1-5zm-4.4 3.8H16c1.1 0 2 .7 2 2.1v1.2h1.5V9.9c0-1.8-1.6-3.2-3.5-3.2h-1.5c-1 0-1.9-1-1.9-2s.8-1.8 1.9-1.8V1.5c-1.9 0-3.4 1.5-3.4 3.3s1.5 3.4 3.4 3.4zm2.5 7.2v-2.9h-2.9l2.9 2.9z"
+  />
+</svg>
+`;
+
+exports[`renders Spa 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.5 9.6c-.2-2.8-1.3-5.5-3.4-7.6-2.2 2.1-3.4 4.9-3.6 7.6 1.3.7 2.5 1.6 3.5 2.7 1-1.1 2.2-2 3.5-2.7zM9 12.3c-.1-.1-.3-.2-.4-.3.1.1.2.2.4.3zm6.4-.3c-.1.1-.3.2-.4.3.1-.1.3-.2.4-.3zM12 15.4C9.8 12.2 6.2 10 2 10c0 5.3 3.4 9.8 8 11.5.6.2 1.3.4 2 .5.7-.1 1.3-.3 2-.5 4.7-1.7 8-6.2 8-11.5-4.2 0-7.9 2.2-10 5.4zM8.6 12c-1.1-.7-2.3-1.3-3.6-1.6 1.3.3 2.5.9 3.6 1.6zM19 10.4c-1.3.3-2.5.9-3.6 1.6 1.1-.7 2.3-1.3 3.6-1.6z"
+  />
+</svg>
+`;
+
+exports[`renders SplitTicket 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 12c0 1.1.9 2 2 2v4c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-4c1.1 0 2-.9 2-2s-.9-2-2-2V6c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v4c-1.1 0-2 .9-2 2zm-3 2.2v-1.1l-4.2-2.8v-3c0-.5-.4-.8-.8-.8s-.8.4-.8.8v3L7 13.1v1.1l4.2-1.4v3l-1.1.8v.8L12 17l1.8.5v-.8l-1.1-.8v-3l4.3 1.3z"
+  />
+</svg>
+`;
+
+exports[`renders Star 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 17.8l6.2 3.7-1.6-7L22 9.7l-7.2-.6L12 2.5 9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+  />
+</svg>
+`;
+
+exports[`renders StarHalf 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 17.8V2.5L9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+  />
+</svg>
+`;
+
+exports[`renders SteeringWheel 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 19.9c0-4.6-.7-6.9-2-6.9H4.1c.4 3.6 3.3 6.5 6.9 6.9zM4.1 11C6.7 9.7 9.4 9 12 9s5.3.7 7.9 2c-.5-4-3.8-7-7.9-7s-7.4 3-7.9 7zm15.8 2H15c-1.3 0-2 2.3-2 6.9 3.6-.4 6.5-3.3 6.9-6.9zM12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z"
+  />
+</svg>
+`;
+
+exports[`renders Success 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+  />
+</svg>
+`;
+
+exports[`renders SuccessOutline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1.7-3.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+  />
+</svg>
+`;
+
+exports[`renders Swap 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16 17v-7h-2v7h-3l4 4 4-4h-3zM9 3L5 7h3v7h2V7h3L9 3z"
+  />
+</svg>
+`;
+
+exports[`renders ThumbsDown 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M14.5 4H7.1c-.7 0-1.2.4-1.5 1l-2.5 5.7c-.1.1-.1.3-.1.5v1.6c0 .9.7 1.6 1.6 1.6h5.2l-.7 3.7v.2c0 .3.2.6.3.9l.8.8 5.4-5.3c.3-.3.5-.6.5-1.1v-8c0-.9-.7-1.6-1.6-1.6zm3.2 0v9.6H21V4h-3.3z"
+  />
+</svg>
+`;
+
+exports[`renders ThumbsUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 20h3.3v-9.6H3V20zm18-8.8c0-.9-.7-1.6-1.6-1.6h-5.2l.8-3.7v-.2c0-.3-.2-.6-.3-.9l-.9-.8-5.4 5.3c-.3.2-.5.6-.5 1.1v8c0 .9.7 1.6 1.6 1.6h7.4c.7 0 1.2-.4 1.5-1l2.5-5.7c.1-.1.1-.3.1-.5v-1.6z"
+  />
+</svg>
+`;
+
+exports[`renders Timer 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 1.5H9v2h6v-2zm-4 13h2v-6h-2v6zm8-6.6l1.4-1.4c-.4-.5-.9-1-1.4-1.4l-1.4 1.4c-1.6-1.2-3.5-2-5.6-2-5 0-9 4-9 9s4 9 9 9 9-4 9-9c0-2.1-.7-4.1-2-5.6zm-7 12.6c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"
+  />
+</svg>
+`;
+
+exports[`renders TrendingUp 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16 6l2.3 2.3-4.9 4.9-4-4L2 16.6 3.4 18l6-6 4 4 6.3-6.3L22 12V6h-6z"
+  />
+</svg>
+`;
+
+exports[`renders Trophy 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.4 3h-2c-.8 0-1.8.9-1.8 1.8H8.4c0-.9-1-1.8-1.8-1.8H3v8.1c0 .9.9 1.8 1.8 1.8h2c.4 1.8 1.5 3.3 4.3 3.6v1.9c-2 .2-2.7 1.2-2.7 2.3v.3h7.2v-.3c0-1.2-.7-2.2-2.7-2.3v-1.9c2.8-.3 4-1.8 4.3-3.6h2c.9 0 1.8-.9 1.8-1.8V3h-1.6zM4.8 11.1V4.8h1.8v6.3H4.8zm14.4 0h-1.8V4.8h1.8v6.3z"
+  />
+</svg>
+`;
+
+exports[`renders Tune 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"
+  />
+</svg>
+`;
+
+exports[`renders Twitter 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.3 19.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1-.7.3-1.5.5-2.4.6.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1-1.3-1.4-3.3-1.7-4.9-.8s-2.5 2.7-2.1 4.5c-3.3-.1-6.3-1.7-8.4-4.3-1.1 1.9-.5 4.3 1.3 5.5-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.9.1.5 1.7 2.1 2.8 3.8 2.8C6.6 17.3 4.8 18 3 18c-.3 0-.7 0-1-.1 1.9 1.2 4.1 1.9 6.3 1.9"
+  />
+</svg>
+`;
+
+exports[`renders Unlock 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 9.5c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h9.1v-2c0-1.7-1.4-3.1-3.1-3.1S8.9 5.8 8.9 7.5H7c0-2.8 2.2-5 5-5s5 2.2 5 5v2h1zm-6 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+  />
+</svg>
+`;
+
+exports[`renders User 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"
+  />
+</svg>
+`;
+
+exports[`renders Verified 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2L4 5.6v5.5c0 5 3.4 9.8 8 10.9 4.6-1.1 8-5.9 8-10.9V5.6L12 2zm-1.8 14.5l-3.6-3.6 1.3-1.3 2.3 2.3 5.9-6 1.3 1.3-7.2 7.3z"
+  />
+</svg>
+`;
+
+exports[`renders Warning 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 11h-2V7h2v6zm0 4h-2v-2h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders WarningOutline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm1-7h-2V7h2v6zm0 4h-2v-2h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders Web 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+  />
+</svg>
+`;
+
+exports[`renders Whirlpool 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11.1 11.5c-.3-.2-.6-.5-.8-.7L8.9 9.2c-.2-.2-.4-.3-.7-.5-.3-.1-.6-.2-1-.2C6 8.5 5 9.5 5 10.8v.8H2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8H11.1zm-4.1 8H5v-6h2v6zm4 0H9v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6zm-.4-14.1c-.6-.7-.9-1.5-.7-2.3l.1-.6h-1.9l-.1.4c-.2 1.4.3 2.7 1.3 3.7l.1.1c.6.6.8 1.4.7 2.2l-.1.6h1.9l.1-.4c.2-1.4-.3-2.7-1.4-3.7zm-4 0c1 1 1.5 2.3 1.3 3.7l-.1.4H14l.1-.6c.1-.8-.1-1.6-.7-2.2l-.1-.1c-1-1-1.5-2.4-1.3-3.7l.1-.4H14l-.1.6c-.1.8.1 1.6.7 2.3zM7 7.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+  />
+</svg>
+`;
+
+exports[`renders Wifi 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2 9.1l1.8 1.8c4.5-4.5 11.8-4.5 16.4 0L22 9.1c-5.5-5.5-14.5-5.5-20 0zm7.3 7.2L12 19l2.7-2.7c-1.4-1.5-3.9-1.5-5.4 0zm-3.7-3.6l1.8 1.8c2.5-2.5 6.5-2.5 9.1 0l1.8-1.8c-3.5-3.5-9.1-3.5-12.7 0z"
+  />
+</svg>
+`;
+
+exports[`renders Youtube 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.5 6.8c.4 1.6.4 4.8.4 4.8s0 3.2-.4 4.8c-.2.9-.9 1.5-1.8 1.8-1.6.4-7.8.4-7.8.4s-6.2 0-7.8-.4c-.9-.2-1.5-.9-1.8-1.8-.3-1.5-.3-4.8-.3-4.8s0-3.2.4-4.8c.2-.8.9-1.5 1.8-1.7 1.5-.4 7.8-.4 7.8-.4s6.2 0 7.8.4c.8.2 1.5.9 1.7 1.7zM10 14.6l5.2-3-5.2-3v6z"
+  />
+</svg>
+`;
+
+exports[`renders ZoomOut 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 3l2.3 2.3-2.9 2.9 1.4 1.4 2.9-2.9L21 9V3h-6zM3 9l2.3-2.3 2.9 2.9 1.4-1.4-2.9-2.9L9 3H3v6zm6 12l-2.3-2.3 2.9-2.9-1.4-1.4-2.9 2.9L3 15v6h6zm12-6l-2.3 2.3-2.9-2.9-1.4 1.4 2.9 2.9L15 21h6v-6z"
+  />
+</svg>
+`;

@@ -1,0 +1,39 @@
+{
+  "name": "pcln-slider",
+  "version": "2.0.0-beta.7",
+  "description": "React component for range sliders",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "prepare": "rollup --config",
+    "clean": "rm -rf node_modules dist",
+    "test": "jest"
+  },
+  "author": "Priceline",
+  "license": "MIT",
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "rc-slider": "^8.6.3",
+    "styled-system": "^3.2.0"
+  },
+  "peerDependencies": {
+    "pcln-design-system": ">=1.x || >=2.x",
+    "styled-components": ">=3.x || >= 4.x"
+  },
+  "devDependencies": {
+    "@reach/component-component": "^0.1.1",
+    "jest": "^23.6.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "styled-components": "^3.4.9"
+  }
+}
