@@ -8,7 +8,7 @@ exports[`Autocomplete renders 1`] = `
 
 .c2 {
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16);
-  border: 0px solid #c0cad5;
+  border: 0;
   border-radius: 2px;
 }
 
@@ -112,7 +112,7 @@ exports[`Autocomplete renders 1`] = `
   />
   <div
     aria-labelledby="downshift-0-label"
-    className="kLcFgh c2 sc-bdVaJa c3"
+    className="kLcFgh c2 c3"
     height="256px"
     id="downshift-0-menu"
     role="listbox"
