@@ -43,7 +43,7 @@
     "rollup-plugin-filesize": "^5.0.1",
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^3.4.0",
-    "styled-components": "^3.4.9"
+    "styled-components": "^3.4.10"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./test-setup.js",
