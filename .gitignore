@@ -4,3 +4,5 @@ lerna-debug.log
 yarn.lock
 coverage
 dist
+.idea
+icons.json
