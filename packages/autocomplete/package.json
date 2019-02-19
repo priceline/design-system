@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "2.0.2",
+  "version": "2.0.3-alpha.0",
   "description": "React autocomplete component built with Downshift",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "downshift": "^2.2.2",
-    "pcln-design-system": "^2.0.2",
+    "pcln-design-system": "^2.0.3-alpha.0",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
