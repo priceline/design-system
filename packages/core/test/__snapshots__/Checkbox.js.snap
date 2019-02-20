@@ -45,7 +45,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     className="c1"
     defaultChecked={true}
     disabled={true}
-    id="random_check_box"
+    id="check-box"
     onChange={[MockFunction]}
     size={20}
     type="checkbox"
@@ -121,7 +121,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   <input
     className="c1"
     disabled={true}
-    id="random_check_box"
+    id="check-box"
     onChange={[MockFunction]}
     size={20}
     type="checkbox"
@@ -195,8 +195,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 >
   <input
     className="c1"
-    id="random_check_box"
-    onChange={[MockFunction]}
+    id="check-box"
     size={20}
     type="checkbox"
   />
@@ -269,7 +268,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 >
   <input
     className="c1"
-    id="random_check_box"
+    id="check-box"
     onChange={[MockFunction]}
     size={20}
     type="checkbox"

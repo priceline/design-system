@@ -1,13 +1,15 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { shallow } from 'enzyme'
+import { render, fireEvent, cleanup } from 'react-testing-library'
 import { CloseButton } from '../src'
+
+afterEach(cleanup)
 
 describe('CloseButton', () => {
   test('executes onClick prop on click', () => {
     const handleClick = jest.fn()
-    const wrapper = shallow(<CloseButton onClick={handleClick} />)
-    wrapper.simulate('click')
+    const { container } = render(<CloseButton onClick={handleClick} />)
+    fireEvent.click(container.firstChild)
     expect(handleClick).toBeCalled()
   })
 
