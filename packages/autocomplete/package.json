@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "downshift": "^2.2.2",
-    "pcln-design-system": "^2.0.1",
+    "pcln-design-system": "^2.0.2",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
