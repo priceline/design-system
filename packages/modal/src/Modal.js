@@ -140,7 +140,11 @@ const Modal = ({
                     enableoverflow={enableOverflow}
                   >
                     {enableOverflow && !disableCloseButton && (
-                      <FloatCloseButton header={header} onClick={onClose} />
+                      <FloatCloseButton
+                        data-testid="close"
+                        header={header}
+                        onClick={onClose}
+                      />
                     )}
                     {children}
                   </ContentWrapper>
