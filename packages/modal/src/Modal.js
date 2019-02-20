@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { Transition } from 'react-transition-group'
 import { color, width, height } from 'styled-system'
-import { Transition, config } from 'react-spring'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, Flex } from 'pcln-design-system'
 
@@ -16,6 +16,32 @@ const Overlay = styled(DialogOverlay)`
   top: 0;
   z-index: ${props => props.zindex || 100};
   font-family: ${props => props.theme.font};
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
+
+  ${props =>
+    props.transitionstate === 'entering' &&
+    `
+    opacity: 0;
+  `}
+
+  ${props =>
+    props.transitionstate === 'entered' &&
+    `
+    opacity: 1;
+  `}
+
+  ${props =>
+    props.transitionstate === 'exiting' &&
+    `
+    opacity: 0;
+  `}
+
+  ${props =>
+    props.transitionstate === 'exited' &&
+    `
+    opacity: 0;
+  `}
 `
 
 const Dialog = styled(DialogContent)`
@@ -35,6 +61,33 @@ const Dialog = styled(DialogContent)`
     props.enableoverflow &&
     `
     max-height: none;
+  `}
+
+  transform: scale(0.5);
+  transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
+
+  ${props =>
+    props.transitionstate === 'entering' &&
+    `
+    transform: scale(0.5);
+  `}
+
+  ${props =>
+    props.transitionstate === 'entered' &&
+    `
+    transform: scale(1);
+  `}
+
+  ${props =>
+    props.transitionstate === 'exiting' &&
+    `
+    transform: scale(0.5);
+  `}
+
+  ${props =>
+    props.transitionstate === 'exited' &&
+    `
+    transform: scale(0.5);
   `}
 `
 
@@ -107,54 +160,41 @@ const Modal = ({
   enableOverflow,
   height
 }) => (
-  <Transition
-    items={isOpen}
-    config={config.gentle}
-    from={{ opacity: 0, transform: 'scale(0.5)' }}
-    enter={{ opacity: 1, transform: 'scale(1)' }}
-    leave={{ opacity: 0, transform: 'scale(0.5)' }}
-  >
-    {isOpen =>
-      isOpen &&
-      (styles => (
-        <Overlay
-          onDismiss={onClose}
-          zindex={zIndex}
-          style={{ opacity: styles.opacity }}
-        >
-          <OverlayWrapper>
-            <DialogWrapper enableoverflow={enableOverflow}>
-              <Dialog
-                width={width}
-                bg={bg}
-                height={enableOverflow ? null : height}
-                style={{ transform: styles.transform }}
-                className={className}
-                enableoverflow={enableOverflow ? 'true' : null}
-              >
-                <DialogInnerWrapper flexDirection="column">
-                  {header && <HeaderWrapper>{header}</HeaderWrapper>}
-                  <ContentWrapper
-                    p={imgMode ? 0 : 16}
-                    header={header}
-                    enableoverflow={enableOverflow}
-                  >
-                    {enableOverflow && !disableCloseButton && (
-                      <FloatCloseButton
-                        data-testid="close"
-                        header={header}
-                        onClick={onClose}
-                      />
-                    )}
-                    {children}
-                  </ContentWrapper>
-                </DialogInnerWrapper>
-              </Dialog>
-            </DialogWrapper>
-          </OverlayWrapper>
-        </Overlay>
-      ))
-    }
+  <Transition in={isOpen} unmountOnExit timeout={500}>
+    {state => (
+      <Overlay onDismiss={onClose} zindex={zIndex} transitionstate={state}>
+        <OverlayWrapper>
+          <DialogWrapper enableoverflow={enableOverflow}>
+            <Dialog
+              width={width}
+              bg={bg}
+              height={enableOverflow ? null : height}
+              transitionstate={state}
+              className={className}
+              enableoverflow={enableOverflow ? 'true' : null}
+            >
+              <DialogInnerWrapper flexDirection="column">
+                {header && <HeaderWrapper>{header}</HeaderWrapper>}
+                <ContentWrapper
+                  p={imgMode ? 0 : 16}
+                  header={header}
+                  enableoverflow={enableOverflow}
+                >
+                  {enableOverflow && !disableCloseButton && (
+                    <FloatCloseButton
+                      data-testid="close"
+                      header={header}
+                      onClick={onClose}
+                    />
+                  )}
+                  {children}
+                </ContentWrapper>
+              </DialogInnerWrapper>
+            </Dialog>
+          </DialogWrapper>
+        </OverlayWrapper>
+      </Overlay>
+    )}
   </Transition>
 )
 

@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "@reach/dialog": "^0.1.2",
-    "react-spring": "^6.1.6"
+    "react-transition-group": "^2.5.3"
   },
   "peerDependencies": {
     "pcln-design-system": "^1.0.1",
