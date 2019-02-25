@@ -18,20 +18,12 @@ module.exports = {
   ],
   plugins: [
     babel({
-      exclude: 'node_modules/**',
-      runtimeHelpers: true
+      exclude: 'node_modules/**'
     }),
     commonjs(),
     json(),
     resolve(),
     fileSize()
   ],
-  external: [
-    'styled-components',
-    'react',
-    'react-dom',
-    'prop-types',
-    'styled-system',
-    'pcln-icons'
-  ]
+  external: ['styled-components', 'react', 'react-dom', 'pcln-icons']
 }

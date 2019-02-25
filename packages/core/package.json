@@ -39,7 +39,8 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-test-renderer": "^16.8.2",
-    "stylis": "^3.4.9"
+    "stylis": "^3.4.9",
+    "pcln-icons": "^2.0.1"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",
@@ -48,12 +49,12 @@
     ]
   },
   "dependencies": {
-    "pcln-icons": "^2.0.1",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
   "peerDependencies": {
-    "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
+    "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0",
+    "pcln-icons": "^2.0.1"
   },
   "repository": {
     "type": "git",
