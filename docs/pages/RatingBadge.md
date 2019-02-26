@@ -1,4 +1,3 @@
-
 # RatingBadge
 
 Used in the hotel listing for guest ratings.
@@ -13,7 +12,7 @@ Used in the hotel listing for guest ratings.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`color` | string | Sets text color
-`bg` | string | Sets background color
+| Prop    | Type   | Description           |
+| ------- | ------ | --------------------- |
+| `color` | string | Sets text color       |
+| `bg`    | string | Sets background color |

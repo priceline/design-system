@@ -1,4 +1,3 @@
-
 # Flex
 
 The `Flex` component is an extension of the `Box` component with `display: flex` and props for using flexbox.
@@ -14,9 +13,9 @@ The `Flex` component is an extension of the `Box` component with `display: flex`
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`alignItems` | string | Sets `align-items`
-`justifyContent` | string | Sets `justify-content`
-`flexWrap` | boolean | Sets `flex-wrap: wrap`
-`flexDirection` | string | Sets `flex-direction` (either `row` or `column`)
+| Prop             | Type    | Description                                      |
+| ---------------- | ------- | ------------------------------------------------ |
+| `alignItems`     | string  | Sets `align-items`                               |
+| `justifyContent` | string  | Sets `justify-content`                           |
+| `flexWrap`       | boolean | Sets `flex-wrap: wrap`                           |
+| `flexDirection`  | string  | Sets `flex-direction` (either `row` or `column`) |

@@ -1,4 +1,3 @@
-
 # Input
 
 The `Input` component is a styled `<input>` element.

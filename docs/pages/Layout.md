@@ -1,4 +1,3 @@
-
 # Layout Guide
 
 The [Box](Box.md) and [Flex](Flex.md) components are low-level layout components that can handle virtually
@@ -35,7 +34,7 @@ The spacing scale is an array of numbers that are used as pixel values in the Bo
 
 ```js
 // theme.space
-[ 0, 4, 8, 16, 32, 64, 128 ]
+;[0, 4, 8, 16, 32, 64, 128]
 ```
 
 To add margin in a particular direction use the `mt`, `mr`, `mb`, or `ml` props.
@@ -58,22 +57,22 @@ but due to the heavy use of these properties it can help with development veloci
 
 [bs]: https://getbootstrap.com/docs/4.0/utilities/spacing/
 
-Shorthand | Meaning
----|---
-`m` | `margin`
-`mt` | `margin-top`
-`mr` | `margin-right`
-`mb` | `margin-bottom`
-`ml` | `margin-left`
-`mx` | `margin-left` and `margin-right` (x-axis)
-`my` | `margin-top` and `margin-top` (y-axis)
-`p` | `padding`
-`pt` | `padding-top`
-`pr` | `padding-right`
-`pb` | `padding-bottom`
-`pl` | `padding-left`
-`px` | `padding-left` and `padding-right` (x-axis)
-`py` | `padding-top` and `padding-top` (y-axis)
+| Shorthand | Meaning                                     |
+| --------- | ------------------------------------------- |
+| `m`       | `margin`                                    |
+| `mt`      | `margin-top`                                |
+| `mr`      | `margin-right`                              |
+| `mb`      | `margin-bottom`                             |
+| `ml`      | `margin-left`                               |
+| `mx`      | `margin-left` and `margin-right` (x-axis)   |
+| `my`      | `margin-top` and `margin-top` (y-axis)      |
+| `p`       | `padding`                                   |
+| `pt`      | `padding-top`                               |
+| `pr`      | `padding-right`                             |
+| `pb`      | `padding-bottom`                            |
+| `pl`      | `padding-left`                              |
+| `px`      | `padding-left` and `padding-right` (x-axis) |
+| `py`      | `padding-top` and `padding-top` (y-axis)    |
 
 ### Padding
 
@@ -103,8 +102,7 @@ using the same principles used in other grid systems such as [Bootstrap][boot].
 To start, create a wrapping component with padding.
 
 ```jsx
-<Box p={4}>
-</Box>
+<Box p={4} />
 ```
 
 Next, add a Flex component with the `wrap` prop to set `flex-wrap: wrap`.
@@ -112,8 +110,7 @@ This will work similarly to a "row" in traditional grid systems.
 
 ```jsx
 <Box p={4}>
-  <Flex wrap>
-  </Flex>
+  <Flex wrap />
 </Box>
 ```
 
@@ -135,7 +132,7 @@ and stack on top of each other for small viewports.
 ```
 
 Next, use the `width` prop's [responsive array](#responsive-widths) feature
-to change the width of the Boxes at the *small* breakpoint and up.
+to change the width of the Boxes at the _small_ breakpoint and up.
 
 ```.jsx
 <Box p={4}>
@@ -150,9 +147,8 @@ to change the width of the Boxes at the *small* breakpoint and up.
 </Box>
 ```
 
-Here, the array value (`[ 1, 1/2 ]`) passed to `width` sets its width to `100%` on small viewports and `50%` on viewports wider than the *small* breakpoint.
+Here, the array value (`[ 1, 1/2 ]`) passed to `width` sets its width to `100%` on small viewports and `50%` on viewports wider than the _small_ breakpoint.
 If you resize your browser with this example, the Boxes should stack at narrow viewport widths, and appear side-by-side on wider viewports.
-
 
 Next, to add gutters to the grid, use a combination of padding and negative margins.
 Add `mx={-3}` to the Flex component to set left and right margins to `-theme.space[3]` (-16px).
@@ -188,7 +184,6 @@ the total amount of space between their children will be double that amount.
 Since the spacing scale is based on powers of two, that amount of space is equal to `theme.space[4]`,
 which is why the margin bottom is set to `4`.
 
-
 ### Creating a two-column layout
 
 Often pages will have a two column layout, where the left column contains subnavigation or filters and the right column contains the main content for the page.
@@ -196,14 +191,10 @@ Using some of the same techniques from above, this can be achieved using the Fle
 
 ```jsx
 <Flex>
-  <Box
-    px={3}
-    width={1/4}>
+  <Box px={3} width={1 / 4}>
     <Sidebar />
   </Box>
-  <Box
-    px={3}
-    width={3/4}>
+  <Box px={3} width={3 / 4}>
     <MainContent />
   </Box>
 </Flex>
@@ -216,10 +207,7 @@ The Flex and Box components are also well-suited to create things like navbars a
 Start with a Flex container and set its color to white with a blue background.
 
 ```jsx
-<Flex
-  color='white'
-  bg='blue'>
-</Flex>
+<Flex color="white" bg="blue" />
 ```
 
 Next, add an Icon and some placeholder Text components for demonstration.
@@ -284,16 +272,12 @@ and the `wrap` prop on the Flex component, this sort of layout can be achieved w
 ```jsx
 <Flex wrap>
   {items.map(item => (
-    <Box
-      key={item.id}
-      p={3}
-      width={[ 1/2, 1/3, 1/4 ]}>
+    <Box key={item.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
       <ProductCard {...item} />
     </Box>
   ))}
 </Flex>
 ```
-
 
 ### Responsive Widths
 
@@ -324,11 +308,11 @@ To set a width that changes at different breakpoints, pass an array to the `widt
 ```jsx
 <Box
   width={[
-    1,    // 100% at all viewport widths (xs breakpoint)
-    1/2,  // 50% from the small (sm) breakpoint and up
-    1/3,  // 33% from the medium (md) breakpoint and up
-    1/4,  // 25% from the large (lg) breakpoint and up
-    1/8   // 12.5% from the x-large (xl) breakpoint and up
+    1, // 100% at all viewport widths (xs breakpoint)
+    1 / 2, // 50% from the small (sm) breakpoint and up
+    1 / 3, // 33% from the medium (md) breakpoint and up
+    1 / 4, // 25% from the large (lg) breakpoint and up
+    1 / 8 // 12.5% from the x-large (xl) breakpoint and up
   ]}
 />
 ```
@@ -338,9 +322,9 @@ To skip setting a width at a particular breakpoint, use a `null` value in the ar
 ```jsx
 <Box
   width={[
-    1,    // 100% for all viewport widths
+    1, // 100% for all viewport widths
     null, // skip the sm breakpoint (stays 100%)
-    1/2  // 50% from the md breakpoint and up
+    1 / 2 // 50% from the md breakpoint and up
   ]}
 />
 ```

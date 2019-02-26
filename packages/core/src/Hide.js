@@ -18,7 +18,8 @@ const breakpoints = props => ({
   lg: `@media screen and (min-width: ${
     props.theme.breakpoints[2]
   }) and (max-width: ${getMaxWidth(props.theme.breakpoints[3])}em)`,
-  xl: `@media screen and (min-width: ${props.theme.breakpoints[3]})`
+  xl: `@media screen and (min-width: ${props.theme.breakpoints[3]})`,
+  print: `@media print`
 })
 
 const hidden = key => props =>
@@ -33,7 +34,7 @@ const hidden = key => props =>
 const Hide = styled(Box)`
   ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')} ${hidden(
   'xl'
-)};
+)} ${hidden('print')};
 `
 
 Hide.propTypes = {
@@ -41,7 +42,8 @@ Hide.propTypes = {
   sm: PropTypes.bool,
   md: PropTypes.bool,
   lg: PropTypes.bool,
-  xl: PropTypes.bool
+  xl: PropTypes.bool,
+  print: PropTypes.bool
 }
 
 Hide.defaultProps = {

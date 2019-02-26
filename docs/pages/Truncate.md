@@ -1,4 +1,3 @@
-
 # Truncate
 
 Truncates long strings of text with an ellipsis.

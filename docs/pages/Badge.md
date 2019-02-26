@@ -1,4 +1,3 @@
-
 # Badge
 
 Use the `Badge` component to render a primitive badge.
@@ -25,10 +24,10 @@ Use the `Badge` component to render a primitive badge.
 
 ## Props
 
-Prop | Type | Description
----|---|---
-`bg` | string | Background color
-All space props | number or array | Sets margin and padding
+| Prop            | Type            | Description             |
+| --------------- | --------------- | ----------------------- |
+| `bg`            | string          | Background color        |
+| All space props | number or array | Sets margin and padding |
 
-*Note:* For the `bg` prop, `blue`, `lightBlue`, `green`, `lightGreen`, `red`, `lightRed`, `orange`, and `lightOrange` are presets that will also set `color`.
+_Note:_ For the `bg` prop, `blue`, `lightBlue`, `green`, `lightGreen`, `red`, `lightRed`, `orange`, and `lightOrange` are presets that will also set `color`.
 Any color may be passed in, although `color` should be defined as well when not using one of the aforementioned presets.
