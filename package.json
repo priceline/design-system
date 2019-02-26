@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
-    "prepare": "lerna bootstrap --hoist",
+    "prepare": "lerna bootstrap",
     "clean": "lerna run clean",
     "changed": "lerna changed",
     "diff": "lerna diff",
@@ -42,6 +42,7 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-filesize": "^5.0.1",
     "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-local-resolve": "^1.0.7",
     "rollup-plugin-node-resolve": "^3.4.0",
     "styled-components": "^3.4.10"
   },

@@ -3,6 +3,7 @@ const babel = require('rollup-plugin-babel')
 const commonjs = require('rollup-plugin-commonjs')
 const json = require('rollup-plugin-json')
 const fileSize = require('rollup-plugin-filesize')
+const localResolve = require('rollup-plugin-local-resolve')
 
 module.exports = {
   input: 'src/index.js',
@@ -20,9 +21,10 @@ module.exports = {
     babel({
       exclude: 'node_modules/**'
     }),
+    localResolve(),
+    resolve(),
     commonjs(),
     json(),
-    resolve(),
     fileSize()
   ],
   external: ['styled-components', 'react', 'react-dom', 'pcln-icons']
