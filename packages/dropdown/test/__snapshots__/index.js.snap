@@ -1,22 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dropdown renders 1`] = `
-.c0 {
-  font-size: 12px;
-  font-weight: 500;
-  background-color: transparent;
-  padding: 12px;
-  text-align: left;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
 <button
   aria-expanded={false}
   aria-haspopup="menu"
-  className="c0"
+  className="sc-bdVaJa ldDqpY"
   data-reach-menu-button={true}
   id="test-dropdown-button"
   onClick={[Function]}
