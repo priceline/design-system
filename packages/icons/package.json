@@ -4,7 +4,8 @@
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
-    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
+    "prepare": "npm run prebuld && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
+    "prebuld": "rm -rf components lib",
     "clean": "rm -rf node_modules components lib",
     "build:svg": "svgr svg -d components",
     "build:index": "node ./create-index.js",

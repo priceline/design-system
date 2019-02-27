@@ -36,11 +36,11 @@
   "devDependencies": {
     "camelcase": "^5.0.0",
     "jest": "^24.1.0",
+    "pcln-icons": "^2.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-test-renderer": "^16.8.2",
-    "stylis": "^3.4.9",
-    "pcln-icons": "^2.0.1"
+    "stylis": "^3.4.9"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "../../test-setup.js",
