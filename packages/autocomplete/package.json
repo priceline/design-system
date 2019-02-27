@@ -29,7 +29,9 @@
     "us": "^2.0.0"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "../../test-setup.js",
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
     "testMatch": [
       "<rootDir>/test/**/*.js"
     ]
