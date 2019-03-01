@@ -2,5 +2,8 @@
   "packages": [
     "packages/*"
   ],
+  "commands": {
+    "publish": {}
+  },
   "version": "2.0.1"
 }
