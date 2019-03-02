@@ -46,7 +46,9 @@
     "styled-components": "^3.4.10"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./test-setup.js",
+    "setupFilesAfterEnv": [
+      "./test-setup.js"
+    ],
     "coverageReporters": [
       "lcov",
       "html"

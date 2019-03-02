@@ -42,7 +42,9 @@
     "stylis": "^3.4.9"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "../../test-setup.js",
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
     "testMatch": [
       "<rootDir>/test/**/*.js"
     ]
