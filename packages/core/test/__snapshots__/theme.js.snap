@@ -127,11 +127,13 @@ Object {
     "lightOrange": "#f68013",
     "lightPurple": "#f5ebfa",
     "lightRed": "#fbebeb",
+    "lightYellow": "#fff3c0",
     "orange": "#f68013",
     "purple": "#70b",
     "red": "#c00",
     "text": "#001833",
     "white": "#fff",
+    "yellow": "#fedc2a",
   },
   "duration": Object {
     "fast": "150ms",

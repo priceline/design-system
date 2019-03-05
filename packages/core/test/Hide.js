@@ -32,4 +32,9 @@ describe('Hide', () => {
     const json = renderer.create(<Hide xl />).toJSON()
     expect(json).toMatchSnapshot()
   })
+
+  test('renders with print prop', () => {
+    const json = renderer.create(<Hide print />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
 })

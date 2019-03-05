@@ -30,6 +30,18 @@ exports[`Hide renders with md prop 1`] = `
 />
 `;
 
+exports[`Hide renders with print prop 1`] = `
+@media print {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0 "
+/>
+`;
+
 exports[`Hide renders with sm prop 1`] = `
 @media screen and (min-width:32em) and (max-width:39.99em) {
   .c0 {
