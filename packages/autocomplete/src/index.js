@@ -49,7 +49,7 @@ MenuCard.defaultProps = {
 }
 
 const MenuRoot = React.forwardRef((props, ref) => (
-  <MenuCard {...props} ref={ref} />
+  <MenuCard {...props} innerRef={ref} />
 ))
 
 export const Menu = ({ children, ...props }) => (
