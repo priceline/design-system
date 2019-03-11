@@ -1,0 +1,33 @@
+{
+  "name": "pcln-modal",
+  "version": "1.0.0",
+  "description": "React component for modal",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "rollup --config",
+    "clean": "rm -rf node_modules dist"
+  },
+  "author": "Priceline",
+  "license": "MIT",
+  "dependencies": {
+    "@reach/dialog": "^0.1.2",
+    "react-transition-group": "^2.5.3"
+  },
+  "peerDependencies": {
+    "pcln-design-system": "^1.0.1",
+    "styled-components": "^3.4.9",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "prop-types": "^15.5.10",
+    "styled-system": "^3.1.6"
+  },
+  "devDependencies": {
+    "pcln-design-system": "^1.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "styled-components": "^3.4.9",
+    "prop-types": "^15.5.10"
+  }
+}
