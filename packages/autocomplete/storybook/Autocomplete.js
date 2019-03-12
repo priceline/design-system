@@ -24,7 +24,7 @@ storiesOf('Autocomplete', module).add('default', () => (
           <Menu>
             {cats.map(cat => (
               <Item key={cat} item={cat}>
-                <Icon name="pin" color="blue" mr={2} />
+                <Icon name="Pin" color="blue" mr={2} />
                 <Text fontSize={0}>{cat}</Text>
               </Item>
             ))}
