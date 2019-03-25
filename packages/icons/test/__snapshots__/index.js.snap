@@ -2060,6 +2060,81 @@ exports[`renders Minus 1`] = `
 </svg>
 `;
 
+exports[`renders MultiAirline 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <defs>
+    <path
+      d="M14.333 10.667V9.333L9 6V2.333c0-.533-.467-1-1-1s-1 .467-1 1V6L1.667 9.333v1.334L7 9v3.667l-1.333 1v1L8 14l2.333.667v-1l-1.333-1V9z"
+      id="multiAirline_svg__a"
+    />
+    <path
+      d="M14.333 10.667V9.333L9 6V2.333c0-.533-.467-1-1-1s-1 .467-1 1V6L1.667 9.333v1.334L7 9v3.667l-1.333 1v1L8 14l2.333.667v-1l-1.333-1V9z"
+      id="multiAirline_svg__b"
+    />
+    <mask
+      id="multiAirline_svg__c"
+    >
+      <use
+        xlinkHref="#multiAirline_svg__a"
+      />
+    </mask>
+    <mask
+      id="multiAirline_svg__d"
+    >
+      <use
+        xlinkHref="#multiAirline_svg__b"
+      />
+    </mask>
+  </defs>
+  <g
+    fillRule="evenodd"
+  >
+    <g
+      transform="rotate(90 8 8)"
+    >
+      <use
+        fillRule="nonzero"
+        xlinkHref="#multiAirline_svg__a"
+      />
+      <g
+        mask="url(#multiAirline_svg__c)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+        />
+      </g>
+    </g>
+    <g
+      transform="rotate(90 8 16)"
+    >
+      <use
+        fillRule="nonzero"
+        xlinkHref="#multiAirline_svg__b"
+      />
+      <g
+        mask="url(#multiAirline_svg__d)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+        />
+      </g>
+    </g>
+  </g>
+</svg>
+`;
+
 exports[`renders MultiOccupancy 1`] = `
 .c0 {
   -webkit-flex: none;
