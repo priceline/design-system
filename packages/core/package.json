@@ -50,7 +50,7 @@
     ]
   },
   "dependencies": {
-    "pcln-icons": "^2.0.4-betatest.0",
+    "pcln-icons": "^2.0.4-betatest.1",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
