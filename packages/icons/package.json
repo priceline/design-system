@@ -1,6 +1,6 @@
 {
   "name": "pcln-icons",
-  "version": "2.0.1",
+  "version": "2.0.4-betatest.0",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
