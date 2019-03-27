@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "description": "Priceline Design System",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -50,7 +50,7 @@
     ]
   },
   "dependencies": {
-    "pcln-icons": "^2.0.1",
+    "pcln-icons": "^2.0.4",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
