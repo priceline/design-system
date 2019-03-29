@@ -90,8 +90,9 @@ exports[`ModalHeader render 1`] = `
       test
     </div>
     <button
-      class="heQqam c3 sc-iwsKbI c4"
+      class="bAenKu c3 sc-iwsKbI c4"
       style="height: 24px;"
+      tabindex="1"
       title="close"
     >
       <svg

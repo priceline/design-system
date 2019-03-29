@@ -8,11 +8,12 @@ const HeaderWrapper = styled(Flex)`
 `
 
 const StyledCloseButton = styled(CloseButton)`
-  margin-right: 8px;
   svg {
     vertical-align: top;
   }
+
   &:focus {
+    background-color: ${props => props.theme.colors.darkBlue};
     outline: none;
   }
 `
@@ -24,7 +25,7 @@ const ModalHeader = ({ bg, color, onClose, title }) => (
         {title}
       </Text>
     )}
-    {onClose && <StyledCloseButton onClick={onClose} ml="auto" />}
+    {onClose && <StyledCloseButton onClick={onClose} ml="auto" tabIndex="1" />}
   </HeaderWrapper>
 )
 

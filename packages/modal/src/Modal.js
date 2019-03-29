@@ -106,6 +106,7 @@ const FloatCloseButton = styled(CloseButton)`
   }
 
   &:focus {
+    background-color: ${props => props.theme.colors.borderGray};
     outline: none;
   }
 `
@@ -162,7 +163,12 @@ const Modal = ({
 }) => (
   <Transition in={isOpen} unmountOnExit timeout={500}>
     {state => (
-      <Overlay onDismiss={onClose} zindex={zIndex} transitionstate={state}>
+      <Overlay
+        onDismiss={onClose}
+        zindex={zIndex}
+        transitionstate={state}
+        initialFocusRef={null}
+      >
         <OverlayWrapper>
           <DialogWrapper enableoverflow={enableOverflow}>
             <Dialog
@@ -182,9 +188,10 @@ const Modal = ({
                 >
                   {enableOverflow && !disableCloseButton && (
                     <FloatCloseButton
-                      data-testid="close"
+                      data-testid="pcln-modal-close"
                       header={header}
                       onClick={onClose}
+                      tabIndex="1"
                     />
                   )}
                   {children}
