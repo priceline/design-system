@@ -94,7 +94,13 @@ open http://localhost:8000/
 
 To publish the packages to npm, you'll need to be added as an owner for the
 packages you're publishing. Use the #design-system Slack channel for more
-information. As of v2 __you must be on Node v8+__
+information. 
+
+Before Publishing:
+
+- Know that publishing is very easy once you have access to do so **Please Be Careful** 🤗
+- As of v2 you must be on Node v8+
+- name sure you are logged into NPM properly, if you have multiple logins you can use something like [npmrc]
 
 These Lerna commands can be helpful when publishing:
 
@@ -200,3 +206,4 @@ Generally follow these rules for creating a PR:
 [semver]: http://semver.org
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content
 [storybook]: https://storybook.js.org
+[npmrc]: https://www.npmjs.com/package/npmrc
