@@ -40,7 +40,9 @@ class ModalStory extends React.Component {
           }}
           {...this.props}
         >
-          <div style={{ height: '1000px' }}>Content with 1000px height</div>
+          <div style={{ height: '1000px' }}>
+            Content with 1000px height<button tabIndex="1">Some action</button>
+          </div>
         </StyledModal>
       </div>
     )
@@ -59,7 +61,14 @@ storiesOf('Modal', module)
   ))
   .add('With ModalHeader (and scrollLock!)', () => (
     <ModalStory
-      header={<ModalHeader title="Modal title" />}
+      header={
+        <ModalHeader
+          title="Modal title"
+          onClose={() => {
+            alert('This shuold handle close')
+          }}
+        />
+      }
       height={['90vh', '460px', '560px']}
       width={['80vw', '400px', '500px']}
       lock={true}

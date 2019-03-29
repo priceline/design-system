@@ -57,7 +57,7 @@ describe('Modal', () => {
       </ThemeProvider>
     )
     expect(getByText('Content')).toBeTruthy()
-    expect(getByTestId('close')).toBeTruthy()
+    expect(getByTestId('pcln-modal-close')).toBeTruthy()
     expect(container.firstChild).toMatchSnapshot()
   })
   test('renders when enable header close button', () => {
