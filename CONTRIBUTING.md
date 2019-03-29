@@ -94,7 +94,7 @@ open http://localhost:8000/
 
 To publish the packages to npm, you'll need to be added as an owner for the
 packages you're publishing. Use the #design-system Slack channel for more
-information.
+information. As of v2 __you must be on Node v8+__
 
 These Lerna commands can be helpful when publishing:
 
@@ -102,6 +102,22 @@ These Lerna commands can be helpful when publishing:
   release.
 - Run `npm run diff` to see a diff of all packages since the last release.
 - Run `npm run publish` to publish the updated packages with Lerna.
+- Do not run `npm publish` on it's own.
+
+To set the packages to the same SemVer/custom tag run `npm run publish` and follow the prompts from the lerna-cli.  
+
+To set the SemVer for each package individually run `npm run publish -- --independent` and the lerna-cli will prompt and ask the SemVer/custom tag for each package individually.
+
+
+Both ways of versioning can also be done via the lerna config file.
+```json
+// lerna.json
+{
+  ...config,
+  "version": "independent" // SemVer works here too
+}
+```
+
 
 ### Static Docs Site
 

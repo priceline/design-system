@@ -23,6 +23,7 @@ For all contributors, please be sure to read the
 
 - [Docs][site]
 - [Storybook][storybook]
+- [Publishing][publishing]
 
 ## Motivation
 
@@ -67,3 +68,4 @@ We hope to accomplish these goals by:
 [storybook]: https://pricelinelabs.github.io/design-system/storybook/
 [travis]: https://travis-ci.org/pricelinelabs/design-system
 [travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
+[publishing]: https://github.com/pricelinelabs/design-system/blob/master/CONTRIBUTING.md#publishing
