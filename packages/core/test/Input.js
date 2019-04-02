@@ -21,4 +21,9 @@ describe('Input', () => {
     const json = renderer.create(<Input id={id} fontSize={4} />).toJSON()
     expect(json).toMatchSnapshot()
   })
+  test('it renders an input element with readonly prop', async () => {
+    const json = renderer.create(<Input id={id} readonly />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveProperty(['props', 'readonly'], 'true')
+  })
 })

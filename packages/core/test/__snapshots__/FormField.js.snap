@@ -98,6 +98,7 @@ exports[`FormField renders 1`] = `
     <input
       className="c2"
       id="email"
+      readonly={null}
       style={
         Object {
           "paddingBottom": 8,
@@ -238,6 +239,7 @@ exports[`FormField renders with Icon 1`] = `
       className="c3"
       id="email"
       name="email"
+      readonly={null}
       style={
         Object {
           "paddingBottom": 8,
@@ -378,6 +380,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       className="c3"
       id="email"
       name="email"
+      readonly={null}
       style={
         Object {
           "paddingBottom": 14,

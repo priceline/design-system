@@ -117,6 +117,7 @@ exports[`Autocomplete renders 1`] = `
     onBlur={[Function]}
     onChange={[Function]}
     onKeyDown={[Function]}
+    readonly={true}
     value=""
   />
   <div

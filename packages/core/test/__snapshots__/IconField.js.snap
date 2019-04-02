@@ -90,6 +90,7 @@ exports[`IconField renders 1`] = `
     className="c2"
     id="test"
     placeholder="IconField"
+    readonly={null}
     style={
       Object {
         "paddingLeft": 40,

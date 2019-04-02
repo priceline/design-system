@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 import defaultTheme from './theme'
@@ -17,7 +17,9 @@ const borders = ({ color, theme }) => {
   }
 }
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  readonly: props => (props.readonly ? 'true' : null)
+})`
   appearance: none;
   display: block;
   width: 100%;
@@ -53,12 +55,14 @@ Input.isField = true
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   color: PropTypes.string,
+  readonly: PropTypes.bool,
   ...borders.propTypes,
   ...space.propTypes
 }
 
 Input.defaultProps = {
-  theme: defaultTheme
+  theme: defaultTheme,
+  readonly: false
 }
 
 export default Input

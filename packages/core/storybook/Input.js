@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, Input, Label, theme } from '../src'
+import { Box, Input, Label } from '../src'
 
 storiesOf('Input', module)
   .add(
@@ -12,6 +12,16 @@ storiesOf('Input', module)
         'Simple styled input component that accepts a color and whether or not to show an error container.'
     })(() => <Input my={3} />)
   )
+  .add('Read-only mode', () => (
+    <Box width={400}>
+      <Input
+        mb={3}
+        id="input-read-only"
+        readonly
+        placeholder="Read-only mode"
+      />
+    </Box>
+  ))
   .add('Colors', () => (
     <Box width={400}>
       <Input mb={3} id="input-colors-1" placeholder="No color" />
