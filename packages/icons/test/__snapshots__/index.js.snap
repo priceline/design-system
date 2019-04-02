@@ -2074,64 +2074,9 @@ exports[`renders MultiAirline 1`] = `
   viewBox="0 0 24 24"
   width={24}
 >
-  <defs>
-    <path
-      d="M14.333 10.667V9.333L9 6V2.333c0-.533-.467-1-1-1s-1 .467-1 1V6L1.667 9.333v1.334L7 9v3.667l-1.333 1v1L8 14l2.333.667v-1l-1.333-1V9z"
-      id="multiAirline_svg__a"
-    />
-    <path
-      d="M14.333 10.667V9.333L9 6V2.333c0-.533-.467-1-1-1s-1 .467-1 1V6L1.667 9.333v1.334L7 9v3.667l-1.333 1v1L8 14l2.333.667v-1l-1.333-1V9z"
-      id="multiAirline_svg__b"
-    />
-    <mask
-      id="multiAirline_svg__c"
-    >
-      <use
-        xlinkHref="#multiAirline_svg__a"
-      />
-    </mask>
-    <mask
-      id="multiAirline_svg__d"
-    >
-      <use
-        xlinkHref="#multiAirline_svg__b"
-      />
-    </mask>
-  </defs>
-  <g
-    fillRule="evenodd"
-  >
-    <g
-      transform="rotate(90 8 8)"
-    >
-      <use
-        fillRule="nonzero"
-        xlinkHref="#multiAirline_svg__a"
-      />
-      <g
-        mask="url(#multiAirline_svg__c)"
-      >
-        <path
-          d="M0 0h16v16H0z"
-        />
-      </g>
-    </g>
-    <g
-      transform="rotate(90 8 16)"
-    >
-      <use
-        fillRule="nonzero"
-        xlinkHref="#multiAirline_svg__b"
-      />
-      <g
-        mask="url(#multiAirline_svg__d)"
-      >
-        <path
-          d="M0 0h16v16H0z"
-        />
-      </g>
-    </g>
-  </g>
+  <path
+    d="M5 14.167l1.667-5.334H3l-1 1.334H1l.667-2.334L1 5.5h1l1 1.333h3.667L5 1.5h1.333l3.334 5.333h3.666c.534 0 1 .467 1 1s-.466 1-1 1H9.667l-3.334 5.334zm8.667 8.33l1.666-5.334h-3.666l-1 1.334h-1l.666-2.334-.666-2.333h1l1 1.333h3.666L13.667 9.83H15l3.333 5.333H22c.533 0 1 .467 1 1 0 .534-.467 1-1 1h-3.667L15 22.497z"
+  />
 </svg>
 `;
 
