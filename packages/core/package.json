@@ -3,9 +3,10 @@
   "version": "2.0.4",
   "description": "Priceline Design System",
   "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.js",
+  "sideEffects": false,
   "scripts": {
-    "prepare": "rollup --config",
+    "prepare": "babel src/ --out-dir dist --ignore spec.js,story.js; rollup --config",
     "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
@@ -50,6 +51,7 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.4.2",
     "pcln-icons": "^2.0.4",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
