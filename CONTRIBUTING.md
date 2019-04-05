@@ -100,19 +100,19 @@ Before Publishing:
 
 - Publishing is very easy once you have access to the NPM package **Please Be Careful** 🤗
 - As of v2, Node.js v8+ is required
-- Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc]() tool can be used to switch to NPM public registry.
+- Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc]() tool can be used to switch to NPM public registry
 
 These Lerna commands can be helpful when publishing:
 
 - Run `npm run changed` to see which packages have changed since the last
-  release.
-- Run `npm run diff` to see a diff of all packages since the last release.
-- Run `npm run publish` to publish the updated packages with Lerna.
-- Do not run `npm publish` on it's own.
+  release
+- Run `npm run diff` to see a diff of all packages since the last release
+- Run `npm run publish` to publish the updated packages with Lerna
+- Do not run `npm publish`, because this will run NPM's publish command and not lerna's publish command
 
 To set the packages to the same SemVer/custom tag, run `npm run publish` and follow the prompts from the lerna-cli.  
 
-To set the SemVer for each package individually run `npm run publish -- --independent` and the lerna-cli will prompt and ask the SemVer/custom tag for each package individually.
+To set the SemVer for each package individually run `npm run publish -- --independent`. The lerna-cli will request the SemVer/custom tag for each package individually.
 
 
 Both ways of versioning can also be done via the lerna config file.
