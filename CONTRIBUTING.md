@@ -98,7 +98,7 @@ information.
 
 Before Publishing:
 
-- Know that publishing is very easy once you have access to do so **Please Be Careful** 🤗
+- Publishing is very easy once you have access to the NPM package **Please Be Careful** 🤗
 - As of v2 you must be on Node v8+
 - name sure you are logged into NPM properly, if you have multiple logins you can use something like [npmrc]
 
