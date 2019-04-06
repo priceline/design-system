@@ -15,28 +15,59 @@ const Playground = ({children}) => (
 )
 
 const InnerContent = ({handleClose}) => (
-  <React.Fragment>
-    <Text>Do you accept the terms and conditions?</Text>
+  <Box p={2}>
+    <Text pb={2} pt={2}>Do you accept the terms and conditions?</Text>
     <Flex justifyContent='space-around'>
       <GreenButton onClick={handleClose}>Agree</GreenButton>
       <OutlineButton onClick={handleClose}>Close</OutlineButton>
     </Flex>
-  </React.Fragment>
+  </Box>
 )
 
-storiesOf('PopOver', module)
-  .add('Basic', () => (
-    <Playground>
+const Partial = ({placement}) => (
+  <Playground>
       <PopOver
-        placement='right'
+        placement={placement}
         renderContent={InnerContent}
         allowClose
         ariaLabel={'Test PopOver'}
+        bg={'white'}
+        p={4}
         id={1}
       > 
         <Button>Popover</Button>
       </PopOver>
     </Playground>
+)
+
+storiesOf('PopOver', module)
+  .add('Top', () => (
+    <React.Fragment>
+      <Partial placement='top'/>
+      <Partial placement='top-start'/>
+      <Partial placement='top-end'/>
+    </React.Fragment>
+  ))
+  .add('Bottom', () => (
+    <React.Fragment>
+      <Partial placement='bottom'/>
+      <Partial placement='bottom-start'/>
+      <Partial placement='bottom-end'/>
+    </React.Fragment>
+  ))
+  .add('Left', () => (
+    <React.Fragment>
+      <Partial placement='left'/>
+      <Partial placement='left-start'/>
+      <Partial placement='left-end'/>
+    </React.Fragment>
+  ))
+  .add('Right', () => (
+    <React.Fragment>
+      <Partial placement='right'/>
+      <Partial placement='right-start'/>
+      <Partial placement='right-end'/>
+    </React.Fragment>
   ))
 
 
