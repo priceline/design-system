@@ -1,10 +1,23 @@
+/*
+ * Full List of modifiers
+ * https://popper.js.org/popper-documentation.html#modifiers
+ */
+
 const DEFAULT_MODIFIERS = {
-    preventOverflow: {
-      enabled: true,
-      preventOverflow: 'window'
-    },
-    flip: { enabled: true },
-    arrow: { enabled: true }
+  shift: {
+    enabled: true
+  },
+  preventOverflow: {
+    enabled: true
+  },
+  flip: { 
+    enabled: true,
+    behavior: ['left', 'right','bottom', 'top', 'left']
+  },
+  arrow: { 
+    enabled: true,
+
+  }
   }
 
 
