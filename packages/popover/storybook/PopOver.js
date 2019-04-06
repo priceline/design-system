@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Flex, Button, GreenButton, OutlineButton, Box, Text } from 'pcln-design-system'
+import { Flex, Button, GreenButton, OutlineButton, Box, Text, BackgroundImage } from 'pcln-design-system'
 import PopOver from '../src'
 import styled from 'styled-components';
 
@@ -15,8 +15,21 @@ const Playground = ({children}) => (
 )
 
 const InnerContent = ({handleClose}) => (
-  <Box p={2}>
-    <Text pb={2} pt={2}>Do you accept the terms and conditions?</Text>
+  <Box p={4} pt={0} width={400}>
+    <BackgroundImage 
+      width='100%'
+      height='100px'
+      image='https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
+    />
+    <Text 
+      pb={2} 
+      pt={2}
+      fontSize={16}
+      textAlign='center'
+      bold
+    >
+      Do you accept the terms and conditions?
+    </Text>
     <Flex justifyContent='space-around'>
       <GreenButton onClick={handleClose}>Agree</GreenButton>
       <OutlineButton onClick={handleClose}>Close</OutlineButton>
@@ -31,8 +44,8 @@ const Partial = ({placement}) => (
         renderContent={InnerContent}
         allowClose
         ariaLabel={'Test PopOver'}
-        bg={'white'}
-        p={4}
+        bg={'lightGray'}
+        p={3}
         id={1}
       > 
         <Button>Popover</Button>
