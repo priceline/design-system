@@ -89,6 +89,7 @@ exports[`Slider renders 1`] = `
     className="rc-slider-handle rc-slider-handle-1"
     onBlur={[Function]}
     onKeyDown={[Function]}
+    onMouseDown={[Function]}
     role="slider"
     style={
       Object {
@@ -105,6 +106,7 @@ exports[`Slider renders 1`] = `
     className="rc-slider-handle rc-slider-handle-2"
     onBlur={[Function]}
     onKeyDown={[Function]}
+    onMouseDown={[Function]}
     role="slider"
     style={
       Object {
