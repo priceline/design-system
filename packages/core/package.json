@@ -38,7 +38,7 @@
     "jest": "^24.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.2",
+    "react-test-renderer": "^16.8.6",
     "stylis": "^3.4.9"
   },
   "jest": {
