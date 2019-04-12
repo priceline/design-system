@@ -16,7 +16,7 @@
   },
   "peerDependencies": {
     "pcln-design-system": ">=1.0.0 || >=2.0.0",
-    "styled-components": "^3.4.9",
+    "styled-components": ">=3.x || >= 4.x",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "prop-types": "^15.5.10",
@@ -24,10 +24,10 @@
   },
   "devDependencies": {
     "pcln-design-system": "^1.0.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-test-renderer": "^16.5.2",
-    "styled-components": "^3.4.9",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^3.4.10"
   }
 }
