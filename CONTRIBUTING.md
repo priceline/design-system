@@ -100,29 +100,23 @@ Before Publishing:
 
 - Publishing is very easy once you have access to the NPM package **Please Be Careful** 🤗
 - As of v2, Node.js v8+ is required
-- Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc]() tool can be used to switch to NPM public registry
+- Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc]() tool can be used to switch to NPM public registry.  If 2FA is set up for NPM please see [review their documentation](https://blog.npmjs.org/post/166039777883/protect-your-npm-account-with-two-factor)
 
 These Lerna commands can be helpful when publishing:
 
 - Run `npm run changed` to see which packages have changed since the last
   release
 - Run `npm run diff` to see a diff of all packages since the last release
-- Run `npm run publish` to publish the updated packages with Lerna
-- Do not run `npm publish`, because this will run NPM's publish command and not lerna's publish command
 
-To set the packages to the same SemVer/custom tag, run `npm run publish` and follow the prompts from the lerna-cli.  
+__To publish individual repos:__
+1. After making changes to one or more repos, manually bump the version appropriately, either by hand or running `npm version` and submit a pull request
+2. Once the pull request is merged, the project(s) are ready for publishing
+3. Run `npm run publish -- from-package` to publish the updated packages with Lerna
+  
+Lerna will detect the changed repo versions and push them to NP. Do not run `npm publish`, because this will run NPM's publish command and not Lerna's publish command
 
-To set the SemVer for each package individually run `npm run publish -- --independent`. The lerna-cli will request the SemVer/custom tag for each package individually.
-
-
-Both ways of versioning can also be done via the lerna config file.
-```json
-// lerna.json
-{
-  ...config,
-  "version": "independent" // SemVer works here too
-}
-```
+__To mass publish repos:__
+To set all packages to the same SemVer/custom tag, run `npm run publish` and follow the prompts from the lerna-cli.  
 
 
 ### Static Docs Site
@@ -171,12 +165,6 @@ Generally the workflow looks like this:
 9. Use the npm CLI to appropriately version and publish the package
 10. Push the git tags created with the npm CLI to GitHub with `git push --tags`
 
-### Beta Version
-
-As of the date this was written, the Design System is currently in a beta.
-The package versioning reflects this with the version `1.0.0-x` convention.
-Once the library is in a more stable and mature state, we will release a stable
-`1.0.0` and strictly follow semantic versioning from that point on.
 
 ### Pull Requests
 
