@@ -38,7 +38,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
   disabled={true}
 >
   <input
@@ -115,7 +115,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
   disabled={true}
 >
   <input
@@ -191,7 +191,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <input
     className="c1"
@@ -264,7 +264,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <input
     className="c1"

@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders without props 1`] = `
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c0 {
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -25,17 +25,20 @@ exports[`CloseButton renders without props 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
 }
 
-.c0:disabled {
+.c1:disabled {
   opacity: 0.25;
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #049;
+}
+
+.c0 {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
 }
 
 .c0:hover {
@@ -50,12 +53,12 @@ exports[`CloseButton renders without props 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1"
   title="close"
 >
   <div>
     <svg
-      className="c1"
+      className="c2"
       fill="currentcolor"
       height={24}
       viewBox="0 0 24 24"

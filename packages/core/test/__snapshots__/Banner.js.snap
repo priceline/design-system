@@ -25,8 +25,15 @@ exports[`Banner accepts non-preset colors 1`] = `
   text-align: left;
 }
 
-.c3 {
+.c4 {
   font-size: 14px;
+}
+
+.c3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -42,10 +49,10 @@ exports[`Banner accepts non-preset colors 1`] = `
         className="c2"
       >
         <h5
-          className=""
+          className="c3"
         />
         <span
-          className="c3"
+          className="c4"
           fontSize={1}
         />
       </div>
@@ -80,7 +87,7 @@ exports[`Banner renders content from children props 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -90,6 +97,13 @@ exports[`Banner renders content from children props 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -117,10 +131,10 @@ exports[`Banner renders content from children props 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
         <span>
@@ -158,7 +172,7 @@ exports[`Banner renders with blue bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -168,6 +182,13 @@ exports[`Banner renders with blue bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -195,10 +216,10 @@ exports[`Banner renders with blue bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -233,7 +254,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -243,6 +264,13 @@ exports[`Banner renders with custom iconName and size 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -270,10 +298,10 @@ exports[`Banner renders with custom iconName and size 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -308,7 +336,7 @@ exports[`Banner renders with green bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -318,6 +346,13 @@ exports[`Banner renders with green bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -345,10 +380,10 @@ exports[`Banner renders with green bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -383,7 +418,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -393,6 +428,13 @@ exports[`Banner renders with lightBlue bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -420,10 +462,10 @@ exports[`Banner renders with lightBlue bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -458,7 +500,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -468,6 +510,13 @@ exports[`Banner renders with lightGreen bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -495,10 +544,10 @@ exports[`Banner renders with lightGreen bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -533,7 +582,7 @@ exports[`Banner renders with lightRed bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -543,6 +592,13 @@ exports[`Banner renders with lightRed bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -570,10 +626,10 @@ exports[`Banner renders with lightRed bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -608,7 +664,7 @@ exports[`Banner renders with no props other than theme 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -618,6 +674,13 @@ exports[`Banner renders with no props other than theme 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -645,10 +708,10 @@ exports[`Banner renders with no props other than theme 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -683,7 +746,7 @@ exports[`Banner renders with orange bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -693,6 +756,13 @@ exports[`Banner renders with orange bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -720,10 +790,10 @@ exports[`Banner renders with orange bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -758,7 +828,7 @@ exports[`Banner renders with red bg 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -768,6 +838,13 @@ exports[`Banner renders with red bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -795,10 +872,10 @@ exports[`Banner renders with red bg 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         />
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         />
       </div>
@@ -833,7 +910,7 @@ exports[`Banner renders with text node 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -843,6 +920,13 @@ exports[`Banner renders with text node 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -870,12 +954,12 @@ exports[`Banner renders with text node 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         >
           Header
         </h5>
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         >
           <div
@@ -916,7 +1000,7 @@ exports[`Banner renders with text string 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
 }
 
@@ -926,6 +1010,13 @@ exports[`Banner renders with text string 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+}
+
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
 }
 
 <div
@@ -953,12 +1044,12 @@ exports[`Banner renders with text string 1`] = `
         className="c3"
       >
         <h5
-          className=""
+          className="c4"
         >
           Header
         </h5>
         <span
-          className="c4"
+          className="c5"
           fontSize={1}
         >
           Text
