@@ -9,7 +9,7 @@ exports[`RedButton disabled prop sets 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -44,7 +44,7 @@ exports[`RedButton renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -86,7 +86,7 @@ exports[`RedButton without disabled prop sets 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;

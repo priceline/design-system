@@ -9,7 +9,7 @@ exports[`Button disabled prop sets 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -40,7 +40,7 @@ exports[`Button renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -74,7 +74,7 @@ exports[`Button size large sets height and font-size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -109,7 +109,7 @@ exports[`Button size medium sets height and font-size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -144,7 +144,7 @@ exports[`Button size small sets height and font-size 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -179,7 +179,7 @@ exports[`Button width prop sets width to 100% 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -215,7 +215,7 @@ exports[`Button without disabled prop sets 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;

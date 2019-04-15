@@ -5,7 +5,7 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -30,7 +30,7 @@ exports[`Badge bg green sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -55,7 +55,7 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -80,7 +80,7 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -105,7 +105,7 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -130,7 +130,7 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -155,7 +155,7 @@ exports[`Badge bg red sets background-color and color 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -180,7 +180,7 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -205,7 +205,7 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -230,7 +230,7 @@ exports[`Badge renders 1`] = `
   border-radius: 99999px;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;

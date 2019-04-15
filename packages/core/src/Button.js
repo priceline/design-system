@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, space } from 'styled-system'
+import { width, space, themeGet } from 'styled-system'
 import theme from './theme'
 import { mapProps, deprecatedPropType } from './utils'
 
@@ -39,7 +39,7 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: ${themeGet('fontWeights.regular')};
   line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
