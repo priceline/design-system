@@ -39,7 +39,7 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: ${themeGet('fontWeights.regular')};
+  font-weight: ${themeGet('fontWeights.bold')};
   line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
