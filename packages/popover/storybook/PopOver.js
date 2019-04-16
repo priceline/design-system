@@ -1,89 +1,65 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Flex, Button, GreenButton, OutlineButton, Box, Text, BackgroundImage } from 'pcln-design-system'
+import { DraggableParent, DraggableItem } from 'react-draggable-playground'
+import {
+  Flex,
+  Button,
+  GreenButton,
+  OutlineButton,
+  CloseButton,
+  Box,
+  Text,
+  BackgroundImage
+} from 'pcln-design-system'
 import PopOver from '../src'
-import styled from 'styled-components';
 
-const Playground = ({children}) => (
-  <PlaygroundContainer justifyContent='center' alignItems='center'>
-    <Box width={1/2}>
-      <Flex justifyContent='center'>
-        {children}
-      </Flex>
-    </Box>
-  </PlaygroundContainer>
+storiesOf('PopOver', module).add('Playground', () => (
+  <React.Fragment>
+    <Playground>
+      <PopOver
+        renderContent={InnerContent}
+        placement="top-start"
+        ariaLabel={'Test PopOver'}
+        bg={'lightBlue'}
+        idx={1}
+      >
+        <Button>Popover</Button>
+      </PopOver>
+    </Playground>
+  </React.Fragment>
+))
+
+const Playground = ({ children }) => (
+  <DraggableParent height="100vh" width="100vw">
+    <DraggableItem
+      defaultPosition={{
+        x: window.innerWidth / 2 - 30,
+        y: window.innerHeight / 2 - 10
+      }} //Hard coded positioning
+      onPositionChange={position => {}}
+    >
+      {({ isDragging }) => children}
+    </DraggableItem>
+  </DraggableParent>
 )
 
-const InnerContent = ({handleClose}) => (
-  <Box p={4} pt={0} width={400}>
-    <BackgroundImage 
-      width='100%'
-      height='100px'
-      image='https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
+const InnerContent = ({ handleClose }) => (
+  <Box p={4} width={400}>
+    <Flex p={2} color="blue">
+      <Box mx="auto" />
+      <CloseButton onClick={handleClose} />
+    </Flex>
+    <BackgroundImage
+      width="100%"
+      height="100px"
+      image="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4"
     />
-    <Text 
-      pb={2} 
-      pt={2}
-      fontSize={16}
-      textAlign='center'
-      bold
-    >
+    <Text theme pb={3} pt={3} fontSize={18} textAlign="center" bold>
       Do you accept the terms and conditions?
     </Text>
-    <Flex justifyContent='space-around'>
+    <Flex justifyContent="space-around">
       <GreenButton onClick={handleClose}>Agree</GreenButton>
       <OutlineButton onClick={handleClose}>Close</OutlineButton>
     </Flex>
   </Box>
 )
-
-const Partial = ({placement}) => (
-  <Playground>
-      <PopOver
-        placement={placement}
-        renderContent={InnerContent}
-        allowClose
-        ariaLabel={'Test PopOver'}
-        bg={'lightGray'}
-        p={3}
-        id={1}
-      > 
-        <Button>Popover</Button>
-      </PopOver>
-    </Playground>
-)
-
-storiesOf('PopOver', module)
-  .add('Top', () => (
-    <React.Fragment>
-      <Partial placement='top'/>
-      <Partial placement='top-start'/>
-      <Partial placement='top-end'/>
-    </React.Fragment>
-  ))
-  .add('Bottom', () => (
-    <React.Fragment>
-      <Partial placement='bottom'/>
-      <Partial placement='bottom-start'/>
-      <Partial placement='bottom-end'/>
-    </React.Fragment>
-  ))
-  .add('Left', () => (
-    <React.Fragment>
-      <Partial placement='left'/>
-      <Partial placement='left-start'/>
-      <Partial placement='left-end'/>
-    </React.Fragment>
-  ))
-  .add('Right', () => (
-    <React.Fragment>
-      <Partial placement='right'/>
-      <Partial placement='right-start'/>
-      <Partial placement='right-end'/>
-    </React.Fragment>
-  ))
-
-
-const PlaygroundContainer = styled(Flex)`
-  height: 100vh;
-`

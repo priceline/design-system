@@ -10,16 +10,13 @@ const DEFAULT_MODIFIERS = {
   preventOverflow: {
     enabled: true
   },
-  flip: { 
+  flip: {
     enabled: true,
-    behavior: ['left', 'right','bottom', 'top', 'left']
+    behavior: ['top', 'right', 'bottom', 'left']
   },
-  arrow: { 
-    enabled: true,
-
+  arrow: {
+    enabled: true
   }
-  }
-
+}
 
 export default DEFAULT_MODIFIERS
-  

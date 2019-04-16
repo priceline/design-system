@@ -1,15 +1,15 @@
-import React, { Component } from "react"
-import ReactDOM from "react-dom"
-import { Manager, Reference, Popper } from "react-popper"
-import {Box, Flex, CloseButton, theme} from 'pcln-design-system'
-import styled from "styled-components";
-import DEFAULTS_MODIFIERS from "./helpers/defaultModifiers"
-
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import { Manager, Reference, Popper } from 'react-popper'
+import { Box, Flex, CloseButton, theme } from 'pcln-design-system'
+import styled from 'styled-components'
+import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
 
 const defaultProps = {
   theme: theme,
   p: 2,
-  bg: 'white'
+  bg: 'white',
+  placement: 'top'
 }
 class PopOver extends Component {
   constructor(props) {
@@ -24,6 +24,7 @@ class PopOver extends Component {
     this.handleOpen = this.handleOpen.bind(this)
     this.handleClose = this.handleClose.bind(this)
     this.setFocusToRef = this.setFocusToRef.bind(this)
+    this.calcOffset - this.calcOffset.bind(this)
   }
 
   handleToggle(isOpen) {
@@ -35,27 +36,33 @@ class PopOver extends Component {
   }
 
   handleClose() {
-    this.setState( prevState => {
-      if (prevState.isPopOverOpen) {
-        return {
-          isPopOverOpen: false
+    this.setState(
+      prevState => {
+        if (prevState.isPopOverOpen) {
+          return {
+            isPopOverOpen: false
+          }
         }
+      },
+      () => {
+        this.setFocusToRef(this.triggerRef)
       }
-    }, () => {
-      this.setFocusToRef(this.triggerRef)
-    })
+    )
   }
 
   handleOpen() {
-    this.setState( prevState => {
-      if (!prevState.isPopOverOpen) {
-        return {
-          isPopOverOpen: true
+    this.setState(
+      prevState => {
+        if (!prevState.isPopOverOpen) {
+          return {
+            isPopOverOpen: true
+          }
         }
+      },
+      () => {
+        this.setFocusToRef(this.contentRef)
       }
-    }, () => {
-      this.setFocusToRef(this.contentRef)
-    })
+    )
   }
 
   setFocusToRef(ref) {
@@ -68,96 +75,97 @@ class PopOver extends Component {
     }
   }
 
+  calcOffset(placement) {
+    // Need to account for the padding added around the popover, this fixes the offset at the start and end position
+    if (RegExp('start*').test(placement)) {
+      return '-16px'
+    } else if (RegExp('end*').test(placement)) {
+      return '16px'
+    } else {
+      return 0
+    }
+  }
+
   render() {
     const styleProps = {
       theme: this.props.theme,
-      background: this.props.bg,
-      offset: this.props.p
+      background: this.props.bg
     }
+    const calcOffset = () => {}
 
-    console.log(this.props)
     return (
       <Manager>
         <Reference>
           {({ ref }) => (
-            // Need to be a span, because of ref forwarding limitations with functional components
-            <span ref={ref}>
-              {
-                // Clone element to pass down toggle event so it can be used directly from children as needed
-                React.cloneElement(this.props.children, {
-                  'aria-label': 'Click for more information',
-                  onClick: () => this.handleToggle(this.state.isPopOverOpen),
-                  ref: this.triggerRef //Currently ref only works with native element, if we use a DS core component it does not work.
-                })
-              }
-            </span>
+            // Need to be a native element, because of ref forwarding limitations with DS functional components
+            <div ref={ref}>
+              {// Clone element to pass down toggle event so it can be used directly from children as needed
+              React.cloneElement(this.props.children, {
+                'aria-label': 'Click to open popover with more information',
+                onClick: () => this.handleToggle(this.state.isPopOverOpen),
+                ref: this.triggerRef //Currently ref only works with native element, if we use a DS core component it does not work.
+              })}
+            </div>
           )}
         </Reference>
-        {
-          this.state.isPopOverOpen &&
-            ReactDOM.createPortal(
-              <Popper
-                positionFixed={true}
-                modifiers={{ 
-                  ...DEFAULTS_MODIFIERS // TODO figure the offset logic
-                }}
-                {...this.props}
-              >
-                {({ placement, ref, style, arrowProps }) => (
-                  // Need to be a native element, because of ref forwarding limitations with functional components
-                  <PopperGuide
-                    /*
-                     * NOTE: InnerRef has been depracted in V4 of styled components. Make sure to change this prop once we upgrade to styled components v4
-                     * https://www.styled-components.com/docs/api#deprecated-innerref-prop
-                     */
-                    innerRef={ref}
-                    style={style}
-                    data-placement={placement}
-                    aria-label={this.props.ariaLabel || 'Dialog Title'}
+        {this.state.isPopOverOpen &&
+          ReactDOM.createPortal(
+            <Popper
+              positionFixed={true}
+              modifiers={{
+                ...DEFAULTS_MODIFIERS, // TODO figure the offset logic
+                offset: {
+                  offset: this.calcOffset(this.props.placement)
+                }
+              }}
+              {...this.props}
+            >
+              {({ placement, ref, style, arrowProps }) => (
+                // Need to be a native element, because of ref forwarding limitations with DS functional components
+                <PopperGuide
+                  /*
+                   * NOTE: InnerRef has been depracted in V4 of styled components. Make sure to change this prop once we upgrade to styled components v4
+                   * https://www.styled-components.com/docs/api#deprecated-innerref-prop
+                   */
+                  innerRef={ref}
+                  style={style}
+                  data-placement={placement}
+                  aria-label={this.props.ariaLabel || 'Dialog Title'}
+                  {...styleProps}
+                  role="dialog"
+                  describedby={`dialog-description-${this.props.idx}`}
+                >
+                  <ContentContainer
+                    innerRef={this.contentRef}
                     {...styleProps}
-                    role='dialog'
-                    describedby={`dialog-description-${this.props.id}`}
-                  > 
-                    <ContentContainer 
-                      innerRef={this.contentRef}
-                      {...styleProps}
-                      tabIndex='-1'>
-                      {
-                        this.props.allowClose &&
-                        <Flex p={2} color='blue'>
-                          <Box mx='auto' />
-                          <CloseButton onClick={this.handleClose}/>
-                        </Flex> 
-                      }           
-                      <Box id={`popover-description-${this.props.id}`}>
-                        {
-                          this.props.renderContent({
-                            handleClose: this.handleClose
-                          })
-                        }
-                      </Box>
-                    </ContentContainer>
-                    <Arrow 
-                      innerRef={arrowProps.ref} 
-                      style={arrowProps.style}
-                      data-placement={placement}
-                      {...styleProps}
-                      aria-hidden='true'
-                    />
-                  </PopperGuide>
-                )}
-              </Popper>,
-              // Append each instance of the Popover as portal directly to the body
-              document.querySelector("body")
-            )
-        }
+                    tabIndex="-1"
+                  >
+                    <Box id={`popover-description-${this.props.idx}`}>
+                      {this.props.renderContent({
+                        handleClose: this.handleClose
+                      })}
+                    </Box>
+                  </ContentContainer>
+                  <Arrow
+                    innerRef={arrowProps.ref}
+                    style={arrowProps.style}
+                    data-placement={placement}
+                    {...styleProps}
+                    aria-hidden="true"
+                  />
+                </PopperGuide>
+              )}
+            </Popper>,
+            // Append each instance of the Popover as portal directly to the body
+            document.querySelector('body')
+          )}
       </Manager>
-    );
+    )
   }
 }
 
-const PopperGuide = styled.span`
-  padding: ${({ theme, offset}) => theme.space[offset]}px;
+const PopperGuide = styled.div`
+  padding: 16px;
 `
 const ContentContainer = styled.section`
   box-shadow: ${({ theme }) => theme.boxShadows[1]};
@@ -169,7 +177,7 @@ const ContentContainer = styled.section`
   max-width: 100%;
 `
 
-const ArrowAlignment = () => (
+const ArrowAlignment = () =>
   `
     &[data-placement*="right"] {
       left: 0;
@@ -195,41 +203,34 @@ const ArrowAlignment = () => (
       border-style: solid;
       transform-origin: 0 0;
       transform: rotate(-45deg);
+      border-width: 5px;
     }
   `
-)
 
-const ArrowPlacement = ({theme, background, offset}) => {
-  offset = theme.space[offset]
-  const spacing = `${offset/2}px`
+const ArrowPlacement = ({ theme, background }) => {
   const color = theme.colors[background]
   const shadow = `rgba(0,0,0,0.08)`
 
   return `
-    
     &[data-placement*="right"]::before {
-      left: ${(offset - offset/4)/2}px;
-      border-width: ${spacing};
+      left: 9px;
       border-color: ${color} transparent transparent ${color};
       box-shadow: -2px -2px 2px 0px ${shadow};
     }
     &[data-placement*="left"]::after {
-      right: ${offset - offset/4}px;
-      border-width: ${spacing};
+      right: 14px;
       border-color: transparent ${color} ${color} transparent;
       box-shadow: 2px 2px 2px 0px ${shadow};
     }
     &[data-placement*="top"]::after {
-      top: -${offset}px;
-      margin-left: -${(offset/2)}px;
-      border-width: ${spacing};
+      top: -16px;
+      margin-left: -5px;
       border-color: transparent transparent ${color} ${color};
       box-shadow: -2px 2px 2px 0px ${shadow};
     }
     &[data-placement*="bottom"]::before {
-      top: ${offset}px;
-      margin-left: -${(offset/2)}px;
-      border-width: ${spacing};
+      top: 16px;
+      margin-left: -5px;
       border-color: ${color} ${color} transparent transparent;
       box-shadow: 2px -2px 2px 0px ${shadow};
     }
