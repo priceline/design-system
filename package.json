@@ -34,6 +34,7 @@
     "prettier": "^1.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-draggable-playground": "^1.0.0",
     "react-testing-library": "^5.2.3",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
