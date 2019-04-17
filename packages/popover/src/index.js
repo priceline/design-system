@@ -9,6 +9,7 @@ const defaultProps = {
   theme: theme,
   p: 2,
   bg: 'white',
+  borderColor: 'borderGray',
   placement: 'top'
 }
 
@@ -90,7 +91,8 @@ class PopOver extends Component {
   render() {
     const styleProps = {
       theme: this.props.theme,
-      background: this.props.bg
+      background: this.props.bg,
+      borderColor: this.props.borderColor
     }
 
     return (
@@ -168,7 +170,9 @@ const PopperGuide = styled.div`
   padding: 16px;
 `
 const ContentContainer = styled.section`
-  box-shadow: ${({ theme }) => theme.boxShadows[1]};
+  box-shadow: 0 0 0 1px ${({ theme, borderColor }) => theme.colors[borderColor]},
+    0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08),
+    0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
   border-radius: ${({ theme }) => theme.radii[1]}px;
   background: ${({ theme, background }) => theme.colors[background]};
@@ -204,36 +208,36 @@ const ArrowAlignment = () =>
       border-style: solid;
       transform-origin: 0 0;
       transform: rotate(-45deg);
-      border-width: 5px;
+      border-width: 6px;
     }
   `
 
-const ArrowPlacement = ({ theme, background }) => {
-  const color = theme.colors[background]
-  const shadow = `rgba(0,0,0,0.08)`
+const ArrowPlacement = ({ theme, background, borderColor }) => {
+  const bgColor = theme.colors[background]
+  const brColor = theme.colors[borderColor]
 
   return `
     &[data-placement*="right"]::before {
-      left: 9px;
-      border-color: ${color} transparent transparent ${color};
-      box-shadow: -2px -2px 2px 0px ${shadow};
+      left: 8px;
+      border-color: ${bgColor} transparent transparent ${bgColor};
+      box-shadow: -0.75px -0.75px 0px 0.25px ${brColor};
     }
     &[data-placement*="left"]::after {
-      right: 14px;
-      border-color: transparent ${color} ${color} transparent;
-      box-shadow: 2px 2px 2px 0px ${shadow};
+      right: 13px;
+      border-color: transparent ${bgColor} ${bgColor} transparent;
+      box-shadow: 0.75px 0.75px 0px 0.25px ${brColor};
     }
     &[data-placement*="top"]::after {
       top: -16px;
       margin-left: -5px;
-      border-color: transparent transparent ${color} ${color};
-      box-shadow: -2px 2px 2px 0px ${shadow};
+      border-color: transparent transparent ${bgColor} ${bgColor};
+      box-shadow: -0.75px 0.75px 0px 0.25px ${brColor};
     }
     &[data-placement*="bottom"]::before {
       top: 16px;
       margin-left: -5px;
-      border-color: ${color} ${color} transparent transparent;
-      box-shadow: 2px -2px 2px 0px ${shadow};
+      border-color: ${bgColor} ${bgColor} transparent transparent;
+      box-shadow: 0.75px -0.75px 0px 0.25px ${brColor};
     }
   `
 }

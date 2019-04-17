@@ -9,7 +9,8 @@ import {
   CloseButton,
   Box,
   Text,
-  BackgroundImage
+  BackgroundImage,
+  Absolute
 } from 'pcln-design-system'
 import PopOver from '../src'
 
@@ -18,9 +19,8 @@ storiesOf('PopOver', module).add('Playground', () => (
     <Playground>
       <PopOver
         renderContent={InnerContent}
-        placement="top-start"
+        placement="top"
         ariaLabel={'Test PopOver'}
-        bg={'lightBlue'}
         idx={1}
       >
         <Button>Popover</Button>
@@ -45,10 +45,9 @@ const Playground = ({ children }) => (
 
 const InnerContent = ({ handleClose }) => (
   <Box p={4} width={400}>
-    <Flex p={2} color="blue">
-      <Box mx="auto" />
+    <Absolute color={'blue'} top={25} right={25}>
       <CloseButton onClick={handleClose} />
-    </Flex>
+    </Absolute>
     <BackgroundImage
       width="100%"
       height="100px"
