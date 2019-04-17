@@ -12,7 +12,7 @@ import {
   BackgroundImage,
   Absolute
 } from 'pcln-design-system'
-import PopOver from '../src/Popover'
+import PopOver from '../src/popover'
 
 storiesOf('PopOver', module).add('Playground', () => (
   <React.Fragment>

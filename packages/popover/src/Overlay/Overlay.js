@@ -11,7 +11,7 @@ const StyledOverlay = styled(Link)`
   left: 0;
   right: 0;
   opacity: ${props => (props.popoverOpen ? props.opacity : 0)};
-  z-indexopacity: ${props => props.zIndex};
+  z-index: ${props => props.zIndex};
   cursor: pointer;
 `
 
