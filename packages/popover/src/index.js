@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Manager, Reference, Popper } from 'react-popper'
-import { Box, Flex, CloseButton, theme } from 'pcln-design-system'
+import { Box, theme } from 'pcln-design-system'
 import styled from 'styled-components'
 import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
 
@@ -11,6 +11,7 @@ const defaultProps = {
   bg: 'white',
   placement: 'top'
 }
+
 class PopOver extends Component {
   constructor(props) {
     super(props)
@@ -91,7 +92,6 @@ class PopOver extends Component {
       theme: this.props.theme,
       background: this.props.bg
     }
-    const calcOffset = () => {}
 
     return (
       <Manager>
@@ -113,7 +113,7 @@ class PopOver extends Component {
             <Popper
               positionFixed={true}
               modifiers={{
-                ...DEFAULTS_MODIFIERS, // TODO figure the offset logic
+                ...DEFAULTS_MODIFIERS,
                 offset: {
                   offset: this.calcOffset(this.props.placement)
                 }
@@ -177,6 +177,7 @@ const ContentContainer = styled.section`
   max-width: 100%;
 `
 
+// TODO: Create a separate component for Arrow
 const ArrowAlignment = () =>
   `
     &[data-placement*="right"] {
