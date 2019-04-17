@@ -12,7 +12,7 @@ import {
   BackgroundImage,
   Absolute
 } from 'pcln-design-system'
-import PopOver from '../src'
+import PopOver from '../src/Popover'
 
 storiesOf('PopOver', module).add('Playground', () => (
   <React.Fragment>
@@ -22,6 +22,7 @@ storiesOf('PopOver', module).add('Playground', () => (
         placement="top"
         ariaLabel={'Test PopOver'}
         idx={1}
+        width={400}
       >
         <Button>Popover</Button>
       </PopOver>
@@ -30,7 +31,7 @@ storiesOf('PopOver', module).add('Playground', () => (
 ))
 
 const Playground = ({ children }) => (
-  <DraggableParent height="100vh" width="100vw">
+  <DraggableParent height="calc(100vh - 32px)" width="(100vw - 32px)">
     <DraggableItem
       defaultPosition={{
         x: window.innerWidth / 2 - 30,
@@ -44,7 +45,7 @@ const Playground = ({ children }) => (
 )
 
 const InnerContent = ({ handleClose }) => (
-  <Box p={4} width={400}>
+  <Box p={4}>
     <Absolute color={'blue'} top={25} right={25}>
       <CloseButton onClick={handleClose} />
     </Absolute>

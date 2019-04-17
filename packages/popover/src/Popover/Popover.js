@@ -3,21 +3,24 @@ import ReactDOM from 'react-dom'
 import { Manager, Reference, Popper } from 'react-popper'
 import { Box, theme } from 'pcln-design-system'
 import styled from 'styled-components'
-import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
+import DEFAULTS_MODIFIERS from '../helpers/defaultModifiers'
+import Overlay from '../Overlay'
 
 const defaultProps = {
   theme: theme,
   p: 2,
   bg: 'white',
   borderColor: 'borderGray',
-  placement: 'top'
+  placement: 'top',
+  zIndex: 102,
+  width: 400
 }
 
-class PopOver extends Component {
+class Popover extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isPopOverOpen: false
+      isPopoverOpen: false
     }
 
     this.contentRef = React.createRef()
@@ -40,9 +43,9 @@ class PopOver extends Component {
   handleClose() {
     this.setState(
       prevState => {
-        if (prevState.isPopOverOpen) {
+        if (prevState.isPopoverOpen) {
           return {
-            isPopOverOpen: false
+            isPopoverOpen: false
           }
         }
       },
@@ -55,9 +58,9 @@ class PopOver extends Component {
   handleOpen() {
     this.setState(
       prevState => {
-        if (!prevState.isPopOverOpen) {
+        if (!prevState.isPopoverOpen) {
           return {
-            isPopOverOpen: true
+            isPopoverOpen: true
           }
         }
       },
@@ -92,7 +95,9 @@ class PopOver extends Component {
     const styleProps = {
       theme: this.props.theme,
       background: this.props.bg,
-      borderColor: this.props.borderColor
+      borderColor: this.props.borderColor,
+      zIndex: this.props.zIndex,
+      width: this.props.width
     }
 
     return (
@@ -104,60 +109,66 @@ class PopOver extends Component {
               {// Clone element to pass down toggle event so it can be used directly from children as needed
               React.cloneElement(this.props.children, {
                 'aria-label': 'Click to open popover with more information',
-                onClick: () => this.handleToggle(this.state.isPopOverOpen),
+                onClick: () => this.handleToggle(this.state.isPopoverOpen),
                 ref: this.triggerRef //Currently ref only works with native element, if we use a DS core component it does not work.
               })}
             </div>
           )}
         </Reference>
-        {this.state.isPopOverOpen &&
+        {this.state.isPopoverOpen &&
           ReactDOM.createPortal(
-            <Popper
-              positionFixed={true}
-              modifiers={{
-                ...DEFAULTS_MODIFIERS,
-                offset: {
-                  offset: this.calcOffset(this.props.placement)
-                }
-              }}
-              {...this.props}
-            >
-              {({ placement, ref, style, arrowProps }) => (
-                // Need to be a native element, because of ref forwarding limitations with DS functional components
-                <PopperGuide
-                  /*
-                   * NOTE: InnerRef has been depracted in V4 of styled components. Make sure to change this prop once we upgrade to styled components v4
-                   * https://www.styled-components.com/docs/api#deprecated-innerref-prop
-                   */
-                  innerRef={ref}
-                  style={style}
-                  data-placement={placement}
-                  aria-label={this.props.ariaLabel || 'Dialog Title'}
-                  {...styleProps}
-                  role="dialog"
-                  describedby={`dialog-description-${this.props.idx}`}
-                >
-                  <ContentContainer
-                    innerRef={this.contentRef}
-                    {...styleProps}
-                    tabIndex="-1"
-                  >
-                    <Box id={`popover-description-${this.props.idx}`}>
-                      {this.props.renderContent({
-                        handleClose: this.handleClose
-                      })}
-                    </Box>
-                  </ContentContainer>
-                  <Arrow
-                    innerRef={arrowProps.ref}
-                    style={arrowProps.style}
+            <React.Fragment>
+              <Popper
+                positionFixed={true}
+                modifiers={{
+                  ...DEFAULTS_MODIFIERS,
+                  offset: {
+                    offset: this.calcOffset(this.props.placement)
+                  }
+                }}
+                {...this.props}
+              >
+                {({ placement, ref, style, arrowProps }) => (
+                  // Need to be a native element, because of ref forwarding limitations with DS functional components
+                  <PopperGuide
+                    /*
+                     * NOTE: InnerRef has been depracted in V4 of styled components. Make sure to change this prop once we upgrade to styled components v4
+                     * https://www.styled-components.com/docs/api#deprecated-innerref-prop
+                     */
+                    innerRef={ref}
+                    style={style}
                     data-placement={placement}
+                    aria-label={this.props.ariaLabel || 'Dialog Title'}
                     {...styleProps}
-                    aria-hidden="true"
-                  />
-                </PopperGuide>
-              )}
-            </Popper>,
+                    role="dialog"
+                    describedby={`dialog-description-${this.props.idx}`}
+                  >
+                    <ContentContainer
+                      innerRef={this.contentRef}
+                      {...styleProps}
+                      tabIndex="-1"
+                    >
+                      <Box id={`popover-description-${this.props.idx}`}>
+                        {this.props.renderContent({
+                          handleClose: this.handleClose
+                        })}
+                      </Box>
+                    </ContentContainer>
+                    <Arrow
+                      innerRef={arrowProps.ref}
+                      style={arrowProps.style}
+                      data-placement={placement}
+                      {...styleProps}
+                      aria-hidden="true"
+                    />
+                  </PopperGuide>
+                )}
+              </Popper>
+              <Overlay
+                handleClick={this.handleClose}
+                zIndex={this.props.zIndex - 1}
+              />
+            </React.Fragment>,
             // Append each instance of the Popover as portal directly to the body
             document.querySelector('body')
           )}
@@ -168,6 +179,10 @@ class PopOver extends Component {
 
 const PopperGuide = styled.div`
   padding: 16px;
+  z-index: ${({ zIndex }) => zIndex}
+  max-width: ${({ width }) => width}px;
+  width: 100%;
+  box-sizing: border-box;
 `
 const ContentContainer = styled.section`
   box-shadow: 0 0 0 1px ${({ theme, borderColor }) => theme.colors[borderColor]},
@@ -246,6 +261,6 @@ const Arrow = styled.span`
   ${ArrowAlignment}
   ${ArrowPlacement}
 `
-PopOver.defaultProps = defaultProps
+Popover.defaultProps = defaultProps
 
-export default PopOver
+export default Popover
