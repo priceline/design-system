@@ -41,14 +41,14 @@ Overlay.propTypes = {
   handleClick: PropTypes.func,
   bg: PropTypes.string,
   opacity: PropTypes.number,
-  zIndex: PropTypes.string
+  zIndex: PropTypes.number
 }
 
 Overlay.defaultProps = {
   popoverOpen: true,
   bg: 'black',
   opacity: 0,
-  zIndex: '101'
+  zIndex: 101
 }
 
 export default Overlay

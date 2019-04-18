@@ -19,7 +19,7 @@ storiesOf('PopOver', module).add('Playground', () => (
     <Playground>
       <PopOver
         renderContent={InnerContent}
-        placement="top"
+        placement="auto"
         ariaLabel={'Test PopOver'}
         idx={1}
         width={400}

@@ -61,7 +61,6 @@ class PopoverController extends Component {
 
   render() {
     const { isPopoverOpen } = this.state
-
     return (
       <Manager>
         <Reference>
