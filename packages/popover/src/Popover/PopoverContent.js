@@ -5,6 +5,7 @@ import { Box, theme } from 'pcln-design-system'
 import styled from 'styled-components'
 import DEFAULTS_MODIFIERS from '../helpers/defaultModifiers'
 import Overlay from '../overlay'
+import PopoverArrow from '../arrow'
 
 const defaultProps = {
   theme: theme,
@@ -96,12 +97,11 @@ class PopoverContent extends Component {
                   })}
                 </Box>
               </ContentContainer>
-              <Arrow
-                innerRef={arrowProps.ref}
-                style={arrowProps.style}
-                data-placement={placement}
-                {...styleProps}
-                aria-hidden="true"
+              <PopoverArrow
+                arrowProps={arrowProps}
+                placement={placement}
+                background={styleProps.background}
+                borderColor={styleProps.borderColor}
               />
             </PopperGuide>
           )}
@@ -131,72 +131,6 @@ const ContentContainer = styled.section`
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
-`
-
-// TODO: Create a separate component for Arrow
-const ArrowAlignment = () =>
-  `
-    &[data-placement*="right"] {
-      left: 0;
-    }
-    &[data-placement*="left"] {
-      right: 0;
-    }
-    &[data-placement*="top"] {
-      bottom: 0;
-    }
-    &[data-placement*="bottom"] {
-      top: 0;
-    }
-    &[data-placement*="bottom"]::before,
-    &[data-placement*="right"]::before,
-    &[data-placement*="top"]::after,
-    &[data-placement*="left"]::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      margin: auto;
-      border-style: solid;
-      transform-origin: 0 0;
-      transform: rotate(-45deg);
-      border-width: 6px;
-    }
-  `
-
-const ArrowPlacement = ({ theme, background, borderColor }) => {
-  const bgColor = theme.colors[background]
-  const brColor = theme.colors[borderColor]
-
-  return `
-    &[data-placement*="right"]::before {
-      left: 8px;
-      border-color: ${bgColor} transparent transparent ${bgColor};
-      box-shadow: -0.75px -0.75px 0px 0.25px ${brColor};
-    }
-    &[data-placement*="left"]::after {
-      right: 13px;
-      border-color: transparent ${bgColor} ${bgColor} transparent;
-      box-shadow: 0.75px 0.75px 0px 0.25px ${brColor};
-    }
-    &[data-placement*="top"]::after {
-      top: -16px;
-      margin-left: -5px;
-      border-color: transparent transparent ${bgColor} ${bgColor};
-      box-shadow: -0.75px 0.75px 0px 0.25px ${brColor};
-    }
-    &[data-placement*="bottom"]::before {
-      top: 16px;
-      margin-left: -5px;
-      border-color: ${bgColor} ${bgColor} transparent transparent;
-      box-shadow: 0.75px -0.75px 0px 0.25px ${brColor};
-    }
-  `
-}
-const Arrow = styled.span`
-  position: absolute;
-  ${ArrowAlignment}
-  ${ArrowPlacement}
 `
 
 PopoverContent.defaultProps = defaultProps
