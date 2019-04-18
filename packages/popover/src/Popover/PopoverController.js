@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Manager, Reference } from 'react-popper'
+import { theme } from 'pcln-design-system'
 import PopoverContent from './PopoverContent'
 
 class PopoverController extends Component {
@@ -85,6 +87,25 @@ class PopoverController extends Component {
       </Manager>
     )
   }
+}
+
+PopoverController.propTypes = {
+  idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
+  renderContent: PropTypes.func.isRequired,
+  ariaLabel: PropTypes.string,
+  className: PropTypes.string,
+  theme: PropTypes.object,
+  p: PropTypes.number,
+  bg: PropTypes.string,
+  borderColor: PropTypes.string,
+  placement: PropTypes.string,
+  zIndex: PropTypes.number,
+  width: PropTypes.number
+}
+
+PopoverController.defaultProps = {
+  idx: 1,
+  theme: theme
 }
 
 export default PopoverController

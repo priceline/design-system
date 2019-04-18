@@ -1,21 +1,12 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { Popper } from 'react-popper'
 import { Box, theme } from 'pcln-design-system'
-import styled from 'styled-components'
 import DEFAULTS_MODIFIERS from '../helpers/defaultModifiers'
 import Overlay from '../overlay'
 import PopoverArrow from '../arrow'
-
-const defaultProps = {
-  theme: theme,
-  p: 2,
-  bg: 'white',
-  borderColor: 'borderGray',
-  placement: 'top',
-  zIndex: 102,
-  width: 400
-}
 
 class PopoverContent extends Component {
   componentDidMount() {
@@ -81,13 +72,14 @@ class PopoverContent extends Component {
                * NOTE: InnerRef has been depracted in V4 of styled components. Make sure to change this prop once we upgrade to styled components v4
                * https://www.styled-components.com/docs/api#deprecated-innerref-prop
                */
+              className={this.props.className}
               innerRef={ref}
               style={style}
               data-placement={placement}
-              aria-label={this.props.ariaLabel || 'Dialog Title'}
+              aria-label={this.props.ariaLabel}
               {...styleProps}
               role="dialog"
-              describedby={`dialog-description-${this.props.idx}`}
+              aria-describedby={`dialog-description-${this.props.idx}`}
             >
               <ContentContainer
                 innerRef={this.props.contentRef}
@@ -136,6 +128,31 @@ const ContentContainer = styled.section`
   max-width: 100%;
 `
 
-PopoverContent.defaultProps = defaultProps
+PopoverContent.propTypes = {
+  idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
+  renderContent: PropTypes.func.isRequired,
+  onCloseRequest: PropTypes.func.isRequired,
+  ariaLabel: PropTypes.string,
+  contentRef: PropTypes.object,
+  className: PropTypes.string,
+  theme: PropTypes.object,
+  p: PropTypes.number,
+  bg: PropTypes.string,
+  borderColor: PropTypes.string,
+  placement: PropTypes.string,
+  zIndex: PropTypes.number,
+  width: PropTypes.number
+}
+
+PopoverContent.defaultProps = {
+  ariaLabel: 'Dialog Tile',
+  theme: theme,
+  p: 2,
+  bg: 'white',
+  borderColor: 'borderGray',
+  placement: 'top',
+  zIndex: 102,
+  width: 400
+}
 
 export default PopoverContent

@@ -1,15 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { theme } from 'pcln-design-system'
 
-const defaultProps = {
-  bg: 'white',
-  borderColor: 'borderGray',
-  placement: 'top'
-}
-
-const PopoverArrow = ({ arrowProps, placement, background, borderColor }) => (
+const PopoverArrow = ({
+  arrowProps,
+  placement,
+  background,
+  borderColor,
+  className
+}) => (
   <Arrow
+    className={className}
     innerRef={arrowProps.ref}
     style={arrowProps.style}
     data-placement={placement}
@@ -85,6 +87,21 @@ const Arrow = styled.span`
   ${ArrowPlacement}
 `
 
-PopoverArrow.defaultProps = defaultProps
+PopoverArrow.propTypes = {
+  arrowProps: PropTypes.shape({
+    ref: PropTypes.func,
+    style: PropTypes.object
+  }).isRequired,
+  className: PropTypes.string,
+  bg: PropTypes.string,
+  borderColor: PropTypes.string,
+  placement: PropTypes.string
+}
+
+PopoverArrow.defaultProps = {
+  bg: 'white',
+  borderColor: 'borderGray',
+  placement: 'top'
+}
 
 export default PopoverArrow
