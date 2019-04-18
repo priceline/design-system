@@ -21,7 +21,8 @@ const Overlay = ({
   handleClick,
   bg,
   opacity,
-  zIndex
+  zIndex,
+  overlay
 }) => {
   return (
     <StyledOverlay
@@ -29,7 +30,7 @@ const Overlay = ({
       onClick={handleClick}
       popoverOpen={popoverOpen}
       bg={bg}
-      opacity={opacity}
+      opacity={overlay || opacity}
       zIndex={zIndex}
     />
   )

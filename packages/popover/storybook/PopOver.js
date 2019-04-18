@@ -10,25 +10,55 @@ import {
   Box,
   Text,
   BackgroundImage,
-  Absolute
+  Absolute,
+  Link,
+  Stamp,
+  Icon
 } from 'pcln-design-system'
 import PopOver from '../src/popover'
 
-storiesOf('PopOver', module).add('Playground', () => (
-  <React.Fragment>
-    <Playground>
-      <PopOver
-        renderContent={InnerContent}
-        placement="auto"
-        ariaLabel={'Test PopOver'}
-        idx={1}
-        width={400}
-      >
-        <Button>Popover</Button>
-      </PopOver>
-    </Playground>
-  </React.Fragment>
-))
+storiesOf('PopOver', module)
+  .add('Playground', () => (
+    <React.Fragment>
+      <Playground>
+        <PopOver
+          renderContent={InnerContent}
+          placement="top"
+          ariaLabel={'Test PopOver'}
+          idx={1}
+          width={400}
+        >
+          <Button>Popover</Button>
+        </PopOver>
+      </Playground>
+    </React.Fragment>
+  ))
+  .add('Bottom', () => (
+    <PopOver
+      renderContent={InnerContent}
+      placement="bottom"
+      ariaLabel={'Test PopOver'}
+      idx={1}
+      width={400}
+    >
+      <Link>Open Popover</Link>
+    </PopOver>
+  ))
+  .add('Right with overlay', () => (
+    <PopOver
+      renderContent={InnerContent}
+      placement="right"
+      ariaLabel={'Test PopOver'}
+      idx={1}
+      width={400}
+      overlay={0.3}
+    >
+      <Stamp color="purple">
+        <Icon name="trendingUp" size={16} mr={1} />
+        top booked hotel
+      </Stamp>
+    </PopOver>
+  ))
 
 const Playground = ({ children }) => (
   <DraggableParent height="calc(100vh - 32px)" width="(100vw - 32px)">

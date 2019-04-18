@@ -101,7 +101,11 @@ class PopoverContent extends Component {
             </PopperGuide>
           )}
         </Popper>
-        <Overlay handleClick={onCloseRequest} zIndex={this.props.zIndex - 1} />
+        <Overlay
+          handleClick={onCloseRequest}
+          zIndex={this.props.zIndex - 1}
+          overlay={this.props.overlay}
+        />
       </React.Fragment>,
       // Append each instance of the Popover as portal directly to the body
       document.querySelector('body')
@@ -141,7 +145,8 @@ PopoverContent.propTypes = {
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,
-  width: PropTypes.number
+  width: PropTypes.number,
+  overlay: PropTypes.number
 }
 
 PopoverContent.defaultProps = {

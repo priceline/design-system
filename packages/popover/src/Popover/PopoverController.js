@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
 import { theme } from 'pcln-design-system'
 import PopoverContent from './PopoverContent'
@@ -66,14 +67,14 @@ class PopoverController extends Component {
         <Reference>
           {({ ref }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
-            <div ref={ref}>
+            <InlineContainer innerRef={ref}>
               {// Clone element to pass down toggle event so it can be used directly from children as needed
               React.cloneElement(this.props.children, {
                 'aria-label': 'Click to open popover with more information',
                 onClick: () => this.handleToggle(isPopoverOpen),
                 ref: this.triggerRef //Currently ref only works with native element, if we use a DS core component it does not work.
               })}
-            </div>
+            </InlineContainer>
           )}
         </Reference>
         {isPopoverOpen && (
@@ -88,6 +89,10 @@ class PopoverController extends Component {
   }
 }
 
+const InlineContainer = styled.div`
+  display: inline-block;
+`
+
 PopoverController.propTypes = {
   idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
   renderContent: PropTypes.func.isRequired,
@@ -99,7 +104,8 @@ PopoverController.propTypes = {
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,
-  width: PropTypes.number
+  width: PropTypes.number,
+  overlay: PropTypes.number
 }
 
 PopoverController.defaultProps = {
