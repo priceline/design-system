@@ -22,13 +22,16 @@ class PopoverContent extends Component {
     window.addEventListener('keyup', this.handleKeyUp, false)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('keyup', this.handleKeyUp, false)
+  }
+
   handleKeyUp = evt => {
     const { onCloseRequest } = this.props
     const keys = {
       // Target ESC key
       27: () => {
         evt.preventDefault()
-        window.removeEventListener('keyup', this.handleKeyUp, false)
         onCloseRequest()
       }
     }
