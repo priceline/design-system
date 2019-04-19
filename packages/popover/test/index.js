@@ -64,7 +64,7 @@ describe('Popover', () => {
   describe('UI Positioning', () => {
     test('Content is rendered according to placement prop', async () => {
       rerender(
-        <Popover {...popoverProps} placement="bottom">
+        <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
       )
