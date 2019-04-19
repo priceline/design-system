@@ -9,6 +9,12 @@ import Overlay from '../overlay'
 import PopoverArrow from '../arrow'
 
 class PopoverContent extends Component {
+  constructor(props) {
+    super(props)
+
+    this.handleKeyUp = this.handleKeyUp.bind(this)
+    this.calcOffset = this.calcOffset.bind(this)
+  }
   componentDidMount() {
     window.addEventListener('keyup', this.handleKeyUp, false)
   }
@@ -17,7 +23,7 @@ class PopoverContent extends Component {
     window.removeEventListener('keyup', this.handleKeyUp, false)
   }
 
-  handleKeyUp = evt => {
+  handleKeyUp(evt) {
     const { onCloseRequest } = this.props
     const keys = {
       // Target ESC key
@@ -32,7 +38,7 @@ class PopoverContent extends Component {
     }
   }
 
-  calcOffset = placement => {
+  calcOffset(placement) {
     // Need to account for the padding added around the popover, this fixes the offset at the start and end position
     if (RegExp('start*').test(placement)) {
       return '-16px'

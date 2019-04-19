@@ -6,13 +6,20 @@ import { theme } from 'pcln-design-system'
 import PopoverContent from './PopoverContent'
 
 class PopoverController extends Component {
-  contentRef = React.createRef()
-  triggerRef = React.createRef()
-  state = {
-    isPopoverOpen: false
+  constructor(props) {
+    super(props)
+    this.state = {
+      isPopoverOpen: false
+    }
+    this.contentRef = React.createRef()
+    this.triggerRef = React.createRef()
+    this.handleToggle = this.handleToggle.bind(this)
+    this.handleClose = this.handleClose.bind(this)
+    this.handleOpen = this.handleOpen.bind(this)
+    this.setFocusToRef = this.setFocusToRef.bind(this)
   }
 
-  handleToggle = isOpen => {
+  handleToggle(isOpen) {
     if (isOpen) {
       this.handleClose()
     } else {
@@ -20,7 +27,7 @@ class PopoverController extends Component {
     }
   }
 
-  handleClose = () => {
+  handleClose() {
     this.setState(
       prevState => {
         if (prevState.isPopoverOpen) {
@@ -35,7 +42,7 @@ class PopoverController extends Component {
     )
   }
 
-  handleOpen = () => {
+  handleOpen() {
     this.setState(
       prevState => {
         if (!prevState.isPopoverOpen) {
@@ -50,7 +57,7 @@ class PopoverController extends Component {
     )
   }
 
-  setFocusToRef = ref => {
+  setFocusToRef(ref) {
     if (ref) {
       try {
         ref.current.focus()
