@@ -139,7 +139,7 @@ const lightYellow = '#fff3c0'
 
 // deprecated aliases
 const darkPurple = purple
-const lightOrange = orange
+const lightOrange = lightYellow
 
 const colors = {
   black,
