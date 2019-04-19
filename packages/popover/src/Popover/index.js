@@ -1,2 +1,2 @@
-import Popover from './PopoverController'
-export default Popover
+import PopoverController from './PopoverController'
+export default PopoverController
