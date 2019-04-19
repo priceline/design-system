@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover Trigger Element Renders trigger element and appends action props 1`] = `
-<div>
+.c0 {
+  display: inline-block;
+}
+
+<div
+  class="c0"
+>
   <button
     aria-label="Click to open popover with more information"
   >
