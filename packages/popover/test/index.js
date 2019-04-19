@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent, wait, getByRole } from 'react-testing-library'
-import Popover from '../src/popover'
+import Popover from '../src'
 
 const InnerContent = ({ handleClose }) => (
   <div>
