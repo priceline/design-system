@@ -1,6 +1,6 @@
 {
   "name": "pcln-modal",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "description": "React component for modal",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
