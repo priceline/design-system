@@ -10,7 +10,7 @@ const StyledOverlay = styled(Link)`
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: ${props => (props.popoverOpen ? props.opacity : 0)};
+  opacity: ${props => (props.popoverOpen ? props.overlayOpacity : 0)};
   z-index: ${props => props.zIndex};
   cursor: pointer;
 `
@@ -20,9 +20,8 @@ const Overlay = ({
   popoverOpen,
   handleClick,
   bg,
-  opacity,
-  zIndex,
-  overlay
+  overlayOpacity,
+  zIndex
 }) => {
   return (
     <StyledOverlay
@@ -30,7 +29,7 @@ const Overlay = ({
       onClick={handleClick}
       popoverOpen={popoverOpen}
       bg={bg}
-      opacity={overlay || opacity}
+      overlayOpacity={overlayOpacity}
       zIndex={zIndex}
     />
   )
@@ -41,14 +40,14 @@ Overlay.propTypes = {
   popoverOpen: PropTypes.bool,
   handleClick: PropTypes.func,
   bg: PropTypes.string,
-  opacity: PropTypes.number,
+  overlayOpacity: PropTypes.number,
   zIndex: PropTypes.number
 }
 
 Overlay.defaultProps = {
   popoverOpen: true,
   bg: 'black',
-  opacity: 0,
+  overlayOpacity: 0,
   zIndex: 101
 }
 

@@ -28,42 +28,24 @@ class PopoverController extends Component {
   }
 
   handleClose() {
-    this.setState(
-      prevState => {
-        if (prevState.isPopoverOpen) {
-          return {
-            isPopoverOpen: false
-          }
-        }
-      },
-      () => {
-        this.setFocusToRef(this.triggerRef)
-      }
-    )
+    this.setState({ isPopoverOpen: false }, () => {
+      this.setFocusToRef(this.triggerRef)
+    })
   }
 
   handleOpen() {
-    this.setState(
-      prevState => {
-        if (!prevState.isPopoverOpen) {
-          return {
-            isPopoverOpen: true
-          }
-        }
-      },
-      () => {
-        this.setFocusToRef(this.contentRef)
-      }
-    )
+    this.setState({ isPopoverOpen: true }, () => {
+      this.setFocusToRef(this.contentRef)
+    })
   }
 
   setFocusToRef(ref) {
-    if (ref) {
-      try {
-        ref.current.focus()
-      } catch {
-        return false
-      }
+    try {
+      ref.current.focus()
+    } catch {
+      // We need to be safe in case the ref is inavalid, which will unmount component
+      /*istanbul ignore next*/
+      return false
     }
   }
 
@@ -79,7 +61,8 @@ class PopoverController extends Component {
               React.cloneElement(this.props.children, {
                 'aria-label': 'Click to open popover with more information',
                 onClick: () => this.handleToggle(isPopoverOpen),
-                ref: this.triggerRef //Currently ref only works with native element, if we use a DS core component it does not work.
+                innerRef: this.triggerRef, // Need to use inner ref for DS core components using styled components v4
+                ref: this.triggerRef // Additionally need to add ref, in case native element is used as trigger
               })}
             </InlineContainer>
           )}
@@ -112,7 +95,7 @@ PopoverController.propTypes = {
   placement: PropTypes.string,
   zIndex: PropTypes.number,
   width: PropTypes.number,
-  overlay: PropTypes.number
+  overlayOpacity: PropTypes.number
 }
 
 PopoverController.defaultProps = {

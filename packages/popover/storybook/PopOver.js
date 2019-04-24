@@ -58,7 +58,7 @@ storiesOf('PopOver', module)
           ariaLabel={'Test PopOver'}
           idx={1}
           width={400}
-          overlay={0.2}
+          overlayOpacity={0.2}
           bg="lightRed"
           borderColor="darkRed"
         >
