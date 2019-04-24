@@ -75,5 +75,8 @@
       "prettier --no-semi --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "npm": "^6.9.0"
   }
 }
