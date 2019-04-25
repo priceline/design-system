@@ -105,6 +105,7 @@ const colors = {
   purple,
   lightPurple,
   darkPurple,
+  pink,
   blues,
   greens,
   reds,
@@ -115,8 +116,7 @@ const colors = {
   ...flatten('green', greens),
   ...flatten('red', reds),
   ...flatten('orange', oranges),
-  ...flatten('purple', purples),
-  pink
+  ...flatten('purple', purples)
 }
 
 export { colors }
