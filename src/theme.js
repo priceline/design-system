@@ -47,6 +47,7 @@ const lightBlue = '#cdf'
 const blue = '#007aff' // primary
 const darkBlue = '#049'
 const lightGray = '#f6f8fa'
+const buttonGray = '#edf0f3'
 const borderGray = '#d1d6db'
 const gray = '#687B8E' // primary
 const darkGray = '#364049'
@@ -62,6 +63,7 @@ const darkOrange = '#a50'
 const lightPurple = '#ecf'
 const purple = '#70b' // secondary
 const darkPurple = '#407'
+const pink = '#fe3e81'
 
 // tints
 const flatten = (name, colors) =>
@@ -88,6 +90,7 @@ const colors = {
   darkBlue,
   gray,
   lightGray,
+  buttonGray,
   borderGray,
   darkGray,
   green,
@@ -112,7 +115,8 @@ const colors = {
   ...flatten('green', greens),
   ...flatten('red', reds),
   ...flatten('orange', oranges),
-  ...flatten('purple', purples)
+  ...flatten('purple', purples),
+  pink
 }
 
 export { colors }

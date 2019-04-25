@@ -1,0 +1,13 @@
+14 error Error: Command failed: git rev-list --left-right --count origin/test/publishing...test/publishing
+14 error fatal: ambiguous argument 'origin/test/publishing...test/publishing': unknown revision or path not in the working tree.
+14 error Use '--' to separate paths from revisions, like this:
+14 error 'git <command> [<revision>...] -- [<file>...]'
+14 error
+14 error
+14 error     at makeError (/Users/jschwarz/priceline-web/design-system/node_modules/execa/index.js:174:9)
+14 error     at Function.module.exports.sync (/Users/jschwarz/priceline-web/design-system/node_modules/execa/index.js:338:15)
+14 error     at Object.execSync (/Users/jschwarz/priceline-web/design-system/node_modules/@lerna/child-process/index.js:22:16)
+14 error     at countLeftRight (/Users/jschwarz/priceline-web/design-system/node_modules/@lerna/version/lib/is-behind-upstream.js:30:31)
+14 error     at isBehindUpstream (/Users/jschwarz/priceline-web/design-system/node_modules/@lerna/version/lib/is-behind-upstream.js:14:27)
+14 error     at VersionCommand.initialize (/Users/jschwarz/priceline-web/design-system/node_modules/@lerna/version/index.js:109:7)
+14 error     at Promise.resolve.then (/Users/jschwarz/priceline-web/design-system/node_modules/@lerna/command/index.js:245:24)
