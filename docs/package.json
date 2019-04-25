@@ -11,7 +11,7 @@
     "@mdx-js/tag": "^0.15.0",
     "is-absolute-url": "^2.1.0",
     "mdx-docs": "^1.0.0-9",
-    "pcln-design-system": "^1.0.0-69",
+    "pcln-design-system": "^2.0.5",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
