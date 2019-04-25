@@ -121,6 +121,7 @@ const lightBlue = '#e8f2ff'
 const blue = '#007aff'
 const darkBlue = '#049'
 const lightGray = '#f4f6f8'
+const buttonGray = '#edf0f3'
 const borderGray = '#c0cad5'
 const gray = '#4f6f8f'
 const darkGray = '#364049'
@@ -136,6 +137,7 @@ const lightPurple = '#f5ebfa'
 const purple = '#70b'
 const yellow = '#fedc2a'
 const lightYellow = '#fff3c0'
+const pink = '#fe3e81'
 
 // deprecated aliases
 const darkPurple = purple
@@ -150,6 +152,7 @@ const colors = {
   darkBlue,
   gray,
   lightGray,
+  buttonGray,
   borderGray,
   darkGray,
   green,
@@ -164,6 +167,7 @@ const colors = {
   lightPurple,
   yellow,
   lightYellow,
+  pink,
 
   // deprecated
   lightOrange,
