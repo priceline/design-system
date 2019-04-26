@@ -132,6 +132,7 @@ const red = '#c00'
 const darkRed = '#800'
 const orange = '#f68013'
 const darkOrange = '#f06f20'
+const lightOrange = '#fef2e7'
 const lightPurple = '#f5ebfa'
 const purple = '#70b'
 const yellow = '#fedc2a'
@@ -139,7 +140,6 @@ const lightYellow = '#fff3c0'
 
 // deprecated aliases
 const darkPurple = purple
-const lightOrange = orange
 
 const colors = {
   black,
@@ -160,13 +160,13 @@ const colors = {
   darkRed,
   orange,
   darkOrange,
+  lightOrange,
   purple,
   lightPurple,
   yellow,
   lightYellow,
 
   // deprecated
-  lightOrange,
   darkPurple
 }
 
