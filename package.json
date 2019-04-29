@@ -22,6 +22,7 @@
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^4.1.11",
     "@storybook/addon-info": "^4.1.11",
+    "@storybook/addon-viewport": "3.4.11",
     "@storybook/react": "^4.1.11",
     "babel-loader": "^8.0.5",
     "enzyme": "^3.8.0",
@@ -34,6 +35,7 @@
     "prettier": "^1.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-draggable-playground": "^1.0.0",
     "react-testing-library": "^5.2.3",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2",
@@ -73,5 +75,8 @@
       "prettier --no-semi --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "npm": "^6.9.0"
   }
 }
