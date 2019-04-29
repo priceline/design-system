@@ -22,7 +22,7 @@ exports[`Background Overlay Active overlay 1`] = `
   left: 0;
   right: 0;
   opacity: 0.3;
-  z-index: 101;
+  z-index: 200;
   cursor: pointer;
 }
 
@@ -35,8 +35,7 @@ exports[`Background Overlay Active overlay 1`] = `
 `;
 
 exports[`Background Overlay Inactive overlay 1`] = `
-<div>
-  .c1 {
+.c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -57,11 +56,12 @@ exports[`Background Overlay Inactive overlay 1`] = `
   left: 0;
   right: 0;
   opacity: 0;
-  z-index: 101;
+  z-index: 200;
   cursor: pointer;
 }
 
-<a
+<div>
+  <a
     class="c0 c1"
     color="blue"
   />

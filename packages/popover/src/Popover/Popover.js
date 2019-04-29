@@ -5,7 +5,7 @@ import { Manager, Reference } from 'react-popper'
 import { theme } from 'pcln-design-system'
 import PopoverContent from './PopoverContent'
 
-class PopoverController extends Component {
+class Popover extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -43,7 +43,7 @@ class PopoverController extends Component {
     try {
       ref.current.focus()
     } catch {
-      // We need to be safe in case the ref is inavalid, which will unmount component
+      // We need to be safe in case the ref is invalid, which will unmount component
       /*istanbul ignore next*/
       return false
     }
@@ -83,7 +83,7 @@ const InlineContainer = styled.div`
   display: inline-block;
 `
 
-PopoverController.propTypes = {
+Popover.propTypes = {
   idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
   renderContent: PropTypes.func.isRequired,
   ariaLabel: PropTypes.string,
@@ -98,9 +98,8 @@ PopoverController.propTypes = {
   overlayOpacity: PropTypes.number
 }
 
-PopoverController.defaultProps = {
-  idx: 1,
+Popover.defaultProps = {
   theme: theme
 }
 
-export default PopoverController
+export default Popover

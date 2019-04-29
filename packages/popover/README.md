@@ -7,7 +7,7 @@ npm i pcln-popover
 ```
 
 ```jsx
-import Slider from 'pcln-popover'
+import Popover from 'pcln-popover'
 ```
 
 ```jsx
@@ -19,11 +19,13 @@ import Slider from 'pcln-popover'
     </div>
   ))}
   placement='top'
-  ariaLabel={'Test PopOver'}
+  ariaLabel='Test PopOver'
+  overlayOpacity={0.3}
+  width={350}
+  bg='lightBlue'
+  borderColor='borderGray'
   idx={1}
 >
   <Button>Popover</Button>
 </PopOver>
 ```
-
-## Props

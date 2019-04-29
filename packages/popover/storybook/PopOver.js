@@ -61,9 +61,10 @@ storiesOf('PopOver', module)
           overlayOpacity={0.2}
           bg="lightRed"
           borderColor="darkRed"
+          zIndex={-1}
         >
           <Stamp color="red">
-            <Icon name="warning" size={16} mr={1} />
+            <Icon name="Warning" size={16} mr={1} />
             terms & conditions
           </Stamp>
         </Popover>
@@ -116,7 +117,7 @@ const PriceGuidanceContent = ({ handleClose }) => (
     <Box p={3}>
       <Box p={2} pt={0} pb={3}>
         <Flex>
-          <Icon name="graph" color="blue" size="32px" mr="2" />
+          <Icon name="Graph" color="blue" size="32px" mr="2" />
           <Flex flexDirection="column">
             <Text color="blue" fontSize="24px" bold>
               Price Guidance
@@ -130,7 +131,7 @@ const PriceGuidanceContent = ({ handleClose }) => (
       </Box>
       <StyledBox p={2} pb={0} pt={3}>
         <Flex>
-          <Icon name="pin" color="black" size="32px" mr="2" />
+          <Icon name="Pin" color="black" size="32px" mr="2" />
           <Flex flexDirection="column">
             <Text color="black" fontSize="14px" bold>
               New York City

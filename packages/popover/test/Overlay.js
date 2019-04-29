@@ -1,37 +1,35 @@
 import React from 'react'
-import { render, fireEvent } from 'react-testing-library'
+import { render, fireEvent, cleanup } from 'react-testing-library'
 import Overlay from '../src/overlay'
 
 const overlayProps = {
   overlayOpacity: 0.3,
-  'z-index': 200
+  zIndex: 200
 }
 
-const { rerender, container, debug, unmount } = render(
-  <Overlay popoverOpen opacity={0.3} />
-)
+afterEach(cleanup)
 
 describe('Background Overlay', () => {
   test('Active overlay', () => {
-    rerender(<Overlay {...overlayProps} popoverOpen={true} />)
+    const { container } = render(
+      <Overlay {...overlayProps} popoverOpen={true} />
+    )
     expect(container).toMatchSnapshot()
-    unmount()
   })
 
   test('Inactive overlay', () => {
-    rerender(<Overlay {...overlayProps} popoverOpen={false} />)
+    const { container } = render(
+      <Overlay {...overlayProps} popoverOpen={false} />
+    )
     expect(container).toMatchSnapshot()
-    unmount()
   })
 
-  test('Handle click envent', () => {
+  test('Handle click event', () => {
     const onClick = jest.fn()
-
-    rerender(
-      <Overlay {...overlayProps} popoverOpen={false} handleClick={onClick} />
+    const { container } = render(
+      <Overlay {...overlayProps} popoverOpen={true} handleClick={onClick} />
     )
     fireEvent.click(container.firstChild)
     expect(onClick).toHaveBeenCalled()
-    unmount()
   })
 })
