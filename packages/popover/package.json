@@ -26,7 +26,9 @@
   },
   "peerDependencies": {
     "pcln-design-system": ">=1.x || >=2.x",
-    "styled-components": ">=3.x || >= 4.x"
+    "styled-components": ">=3.x || >= 4.x",
+    "react": ">=16.3.0",
+    "react-dom": ">=16.3.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.4.3",
