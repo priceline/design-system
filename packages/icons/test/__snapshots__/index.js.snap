@@ -980,6 +980,51 @@ exports[`renders DollarCircle 1`] = `
 </svg>
 `;
 
+exports[`renders Dot 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <defs>
+    <path
+      d="M12 7c-2.75 0-5 2.25-5 5s2.25 5 5 5 5-2.25 5-5-2.25-5-5-5z"
+      id="dot_svg__a"
+    />
+  </defs>
+  <g
+    fillRule="evenodd"
+  >
+    <mask
+      id="dot_svg__b"
+    >
+      <use
+        xlinkHref="#dot_svg__a"
+      />
+    </mask>
+    <use
+      fillRule="nonzero"
+      xlinkHref="#dot_svg__a"
+    />
+    <g
+      mask="url(#dot_svg__b)"
+    >
+      <path
+        d="M0 0h24v24H0z"
+      />
+    </g>
+  </g>
+</svg>
+`;
+
 exports[`renders DoubleOccupancy 1`] = `
 .c0 {
   -webkit-flex: none;
