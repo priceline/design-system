@@ -22,7 +22,7 @@ storiesOf('FormField', module)
   ))
   .add('dynamic label', () => (
     <Flex>
-      <Box px={2} width={1 / 2}>
+      <Box px={2} width={1 / 3}>
         <FormField>
           <Label autoHide htmlFor="demo">
             No value
@@ -30,12 +30,17 @@ storiesOf('FormField', module)
           <Input id="demo" name="demo" placeholder="Without a value" />
         </FormField>
       </Box>
-      <Box px={2} width={1 / 2}>
+      <Box px={2} width={1 / 3}>
         <FormField>
           <Label autoHide htmlFor="demo">
             With value
           </Label>
           <Input id="demo" name="demo" value="hello@example.com" />
+        </FormField>
+      </Box>
+      <Box px={2} width={1 / 3}>
+        <FormField>
+          <Input id="demo" name="demo" value="Value without label" />
         </FormField>
       </Box>
     </Flex>
