@@ -9,8 +9,10 @@ const FormField = props => {
   const children = React.Children.toArray(props.children)
   const [field] = children.filter(child => child.type.isField)
   const [label] = children.filter(child => child.type.isLabel)
+  const valueNoLabel = !label && field && !!field.props.value
   const showLabel =
-    (label && !label.props.autoHide) || (field && !!field.props.value)
+    ((label && !label.props.autoHide) || (field && !!field.props.value)) &&
+    !valueNoLabel
   const id = field && (field.props.id || field.props.name)
 
   const styled = children.map((child, i, arr) => {
