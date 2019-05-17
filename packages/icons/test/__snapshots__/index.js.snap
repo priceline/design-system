@@ -980,6 +980,26 @@ exports[`renders DollarCircle 1`] = `
 </svg>
 `;
 
+exports[`renders Dot 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<svg
+  className="c0"
+  fill="currentcolor"
+  height={24}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 7c-2.75 0-5 2.25-5 5s2.25 5 5 5 5-2.25 5-5-2.25-5-5-5z"
+  />
+</svg>
+`;
+
 exports[`renders DoubleOccupancy 1`] = `
 .c0 {
   -webkit-flex: none;
