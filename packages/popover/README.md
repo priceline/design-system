@@ -7,7 +7,7 @@ npm i pcln-popover
 ```
 
 ```jsx
-import Popover from 'pcln-popover'
+import Popover from 'pcln-popover/dist/index.js'
 ```
 
 ```jsx
