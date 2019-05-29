@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent, cleanup } from 'react-testing-library'
-import Overlay from '../src/overlay'
+import Overlay from '../src/Overlay'
 
 const overlayProps = {
   overlayOpacity: 0.3,
