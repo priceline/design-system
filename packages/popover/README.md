@@ -1,4 +1,4 @@
-# pcln-popver
+# pcln-popover
 
 Smart Popover component
 
@@ -7,25 +7,26 @@ npm i pcln-popover
 ```
 
 ```jsx
-import Popover from 'pcln-popover'
+// TODO: triage explicit import path
+import Popover from 'pcln-popover/dist/index.js'
 ```
 
 ```jsx
-<PopOver
-  renderContent={({handleClose}) => (
-    <div>
-      <p>Hello there!</p>
-      <button onClick={handleClose}>Click on me to close popover!</button>
-    </div>
-  ))}
-  placement='top'
-  ariaLabel='Test PopOver'
-  overlayOpacity={0.3}
-  width={350}
-  bg='lightBlue'
-  borderColor='borderGray'
-  idx={1}
->
-  <Button>Popover</Button>
-</PopOver>
+  <Popover
+    renderContent={({handleClose}) => (
+      <div>
+        <p>Hello there!</p>
+        <button onClick={handleClose}>Click on me to close popover!</button>
+      </div>
+    ))}
+    placement='top'
+    ariaLabel='Test Popover'
+    overlayOpacity={0.3}
+    width={350}
+    bg='lightBlue'
+    borderColor='borderGray'
+    zIndex={-1}
+  >
+    <Button>Popover</Button>
+  </PopOver>
 ```

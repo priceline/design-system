@@ -21,7 +21,7 @@ import Component from '@reach/component-component'
 import Slider from '../../slider/src'
 import Popover from '../src'
 
-storiesOf('PopOver', module)
+storiesOf('Popover', module)
   .add('Playground', () => (
     <React.Fragment>
       <Playground>
