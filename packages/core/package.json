@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "2.0.5",
+  "version": "2.0.8",
   "description": "Priceline Design System",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -64,5 +64,9 @@
   "bugs": {
     "url": "https://github.com/pricelinelabs/design-system/issues"
   },
-  "homepage": "https://github.com/pricelinelabs/design-system#readme"
+  "homepage": "https://github.com/pricelinelabs/design-system#readme",
+  "engines": {
+    "node": ">=8.0.0 <9.0.0 || >=10.0.0",
+    "npm": ">=5.10.0 || >=6.0.0"
+  }
 }
