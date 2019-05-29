@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dynamic SVG title plugin should add 'title' and 'desc' as children to the 'svg' element: '<Svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</Svg>' 1`] = `"<Svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</Svg>;"`;
+
+exports[`Dynamic SVG title plugin should remove default 'title & desc' elements and add the 'title and JSX expression': '<Svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</Svg>' 1`] = `"<Svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</Svg>;"`;
+
+exports[`Dynamic SVG title plugin should remove default 'title' element and add the 'title/desc JSX expression': '<Svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</Svg>' 1`] = `"<Svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</Svg>;"`;

@@ -215,8 +215,10 @@ exports[`FormField renders with Icon 1`] = `
     className="c1"
   >
     <svg
+      aria-hidden="true"
       className="c2"
       fill="currentcolor"
+      focusable="false"
       height={24}
       style={
         Object {
@@ -355,8 +357,10 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     className="c1"
   >
     <svg
+      aria-hidden="true"
       className="c2"
       fill="currentcolor"
+      focusable="false"
       height={24}
       style={
         Object {
@@ -475,9 +479,11 @@ exports[`FormField renders with Select  1`] = `
         }
       />
       <svg
+        aria-hidden="true"
         className="c3 c4"
         color="gray"
         fill="currentcolor"
+        focusable="false"
         height={24}
         viewBox="0 0 24 24"
         width={24}
@@ -561,8 +567,10 @@ exports[`FormField renders with Select and Icon 1`] = `
     className="c0"
   >
     <svg
+      aria-hidden="true"
       className="c1"
       fill="currentcolor"
+      focusable="false"
       height={24}
       style={
         Object {
@@ -599,9 +607,11 @@ exports[`FormField renders with Select and Icon 1`] = `
         }
       />
       <svg
+        aria-hidden="true"
         className="c4 c5"
         color="gray"
         fill="currentcolor"
+        focusable="false"
         height={24}
         viewBox="0 0 24 24"
         width={24}

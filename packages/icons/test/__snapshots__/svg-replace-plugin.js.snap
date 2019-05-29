@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`replace svg plugin replace svg with Svg when no closing element is provided: '<Svg />' 1`] = `"<svg />;"`;
+
+exports[`replace svg plugin replace svg with Svg: '<Svg></Svg>' 1`] = `"<svg>{!!title && (<title id={titleId}>{title}</title>)}{!!desc && (<desc id={descId}>{desc}</desc>)}</svg>;"`;
