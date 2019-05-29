@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Popper } from 'react-popper'
 import { Box, theme } from 'pcln-design-system'
-import DEFAULTS_MODIFIERS from '../helpers/defaultModifiers'
-import Overlay from '../overlay'
-import PopoverArrow from '../arrow'
+import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
+import Overlay from './Overlay'
+import PopoverArrow from './Arrow'
 
 class PopoverContent extends Component {
   componentDidMount() {
