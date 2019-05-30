@@ -23,10 +23,12 @@
     "@svgr/cli": "^4.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "styled-components": ">=3.x || >=4.x"
+    "styled-components": ">=3.x || >=4.x",
+    "prop-types": "^15.7.2"
   },
   "jest": {
     "setupFilesAfterEnv": [
