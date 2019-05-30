@@ -117,7 +117,7 @@ describe('Icon', () => {
       console.log('-------START------')
       console.log(testRenderer.toJSON())
       console.log('-------END------')
-      expect(testRenderer.toJSON().props['aria-labelledby']).toBe('')
+      expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
     })
   })
 

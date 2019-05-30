@@ -24,7 +24,10 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
     if (!!desc && !!descId) {
       ariaLabelledBy = `${ariaLabelledBy} ${descId}`
     }
-    props['aria-labelledby'] = ariaLabelledBy
+
+    if (!!ariaLabelledBy) {
+      props['aria-labelledby'] = ariaLabelledBy
+    }
   }
 
   return (
