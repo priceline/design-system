@@ -32,34 +32,57 @@ describe('Icon', () => {
   })
 
   describe('SVG Icon Accessibility', () => {
-    test('render svg icon with accessibility attributes when title and desc is passed', () => {
+    // Test individual icons in './lib'
+    test.each(iconList)(
+      'renders %s with accessibility attributes when title and desc is passed ',
+      (key, Component) => {
+        const testRenderer = TestRenderer.create(
+          <Component
+            title="SVG title"
+            titleId="unique-svg-title-id"
+            desc="SVG icon description"
+            descId="unique-svg-icon-descId"
+          />
+        )
+        const testInstance = testRenderer.root
+
+        expect(testInstance.findByType('title').children[0]).toBe('SVG title')
+        expect(testInstance.findByType('desc').children[0]).toBe(
+          'SVG icon description'
+        )
+      }
+    )
+
+    test(`render svg <Icon /> with accessibility attributes when 'title' and 'desc' props are passed`, () => {
       const testRenderer = TestRenderer.create(
         <Icon
           name="Accessible"
-          title="Airplane Logo"
-          titleId="airplane-logo"
-          desc="Airplane Logo description"
+          title="Accessible Logo"
+          titleId="accessible-logo"
+          desc="Accessible Logo description"
           descId="descId"
         />
       )
       const testInstance = testRenderer.root
 
-      expect(testInstance.findByType('title').children[0]).toBe('Airplane Logo')
+      expect(testInstance.findByType('title').children[0]).toBe(
+        'Accessible Logo'
+      )
       expect(testInstance.findByType('desc').children[0]).toBe(
-        'Airplane Logo description'
+        'Accessible Logo description'
       )
       expect(testRenderer.toJSON().props['aria-hidden']).toBe('false')
       expect(testRenderer.toJSON().props['focusable']).toBe('false')
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
-        'airplane-logo descId'
+        'accessible-logo descId'
       )
     })
 
-    test('render svg icon with aria-hidden as false when title prop is not passed', () => {
+    test(`render svg <Icon /> with 'aria-hidden' as 'true' when 'title' prop is not passed`, () => {
       const testRenderer = TestRenderer.create(
         <Icon
           name="Accessible"
-          desc="Airplane Logo description"
+          desc="Accessible Logo description"
           descId="descId"
         />
       )
@@ -68,10 +91,32 @@ describe('Icon', () => {
       const title = testInstance.findAll(el => el.type == 'title')
       expect(title).toHaveLength(0)
       expect(testInstance.findByType('desc').children[0]).toBe(
-        'Airplane Logo description'
+        'Accessible Logo description'
       )
       expect(testRenderer.toJSON().props['aria-hidden']).toBe('true')
       expect(testRenderer.toJSON().props['focusable']).toBe('false')
+    })
+
+    test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
+      const testRenderer = TestRenderer.create(
+        <Icon
+          name="Accessible"
+          title="Accessible Logo"
+          titleId="accessible-logo"
+        />
+      )
+      const testInstance = testRenderer.root
+      expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
+        'accessible-logo'
+      )
+    })
+
+    test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
+      const testRenderer = TestRenderer.create(
+        <Icon name="Accessible" title="Accessible Logo" />
+      )
+      const testInstance = testRenderer.root
+      expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
     })
   })
 

@@ -11,16 +11,20 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
   /**
    *  To support older browsers, make sure 'titleId' is passed along with 'title' props and
    * 'descid' with 'desc' props
-   * Also, <desc> element should be followed by a title tag for <svg> elements
+   * Also, <desc> element should be followed by a <title> tag for <svg> elements
    * */
-
-  if (!!title && !!titleId) {
+  if (!!title) {
+    let ariaLabelledBy = ''
     props['aria-hidden'] = 'false'
-    props['aria-labelledby'] = titleId
+
+    if (!!titleId) {
+      ariaLabelledBy = titleId
+    }
 
     if (!!desc && !!descId) {
-      props['aria-labelledby'] = `${props['aria-labelledby']} ${descId}`
+      ariaLabelledBy = `${ariaLabelledBy} ${descId}`
     }
+    props['aria-labelledby'] = ariaLabelledBy
   }
 
   return (
