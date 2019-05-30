@@ -105,7 +105,6 @@ describe('Icon', () => {
           titleId="accessible-logo"
         />
       )
-      const testInstance = testRenderer.root
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
         'accessible-logo'
       )
@@ -115,8 +114,10 @@ describe('Icon', () => {
       const testRenderer = TestRenderer.create(
         <Icon name="Accessible" title="Accessible Logo" />
       )
-      const testInstance = testRenderer.root
-      expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
+      console.log('-------START------')
+      console.log(testRenderer.toJSON())
+      console.log('-------END------')
+      expect(testRenderer.toJSON().props['aria-labelledby']).toBe('')
     })
   })
 
