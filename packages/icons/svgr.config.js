@@ -1,26 +1,6 @@
-const replaceSvgPlugin = ({ types: t }) => {
-  const replaceSvg = {
-    JSXElement(path) {
-      if (!path.get('openingElement.name').isJSXIdentifier({ name: 'svg' })) {
-        return
-      }
-      const openingElementName = path.get('openingElement.name')
-      openingElementName.replaceWith(t.jsxIdentifier('Svg'))
-      if (path.has('closingElement')) {
-        const closingElementName = path.get('closingElement.name')
-        closingElementName.replaceWith(t.jsxIdentifier('Svg'))
-      }
-    }
-  }
+const dynamicTitlePlugin = require('./plugins/svg-dynamic-title-plugin')
 
-  return {
-    visitor: {
-      Program(path) {
-        path.traverse(replaceSvg)
-      }
-    }
-  }
-}
+const replaceSvgPlugin = require('./plugins/svg-replace-plugin')
 
 const template = (
   { template },
@@ -31,6 +11,10 @@ import Svg from './Svg'
 
 export const ${componentName} = ({
   size,
+  title,
+  desc,
+  titleId,
+  descId,
   ...props
 }) => (
   ${jsx}
@@ -39,7 +23,9 @@ export const ${componentName} = ({
 ${componentName}.isIcon = true
 
 ${componentName}.defaultProps = {
-  size: 24
+  size: 24,
+  'aria-hidden': 'true',
+  'focusable': 'false'
 }
 
 export default ${componentName}`
@@ -48,7 +34,7 @@ module.exports = {
   template,
   jsx: {
     babelConfig: {
-      plugins: [replaceSvgPlugin]
+      plugins: [replaceSvgPlugin, dynamicTitlePlugin]
     }
   },
   svgProps: {
