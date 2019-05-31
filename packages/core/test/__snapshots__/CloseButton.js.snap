@@ -58,8 +58,10 @@ exports[`CloseButton renders without props 1`] = `
 >
   <div>
     <svg
+      aria-hidden="true"
       className="c2"
       fill="currentcolor"
+      focusable="false"
       height={24}
       viewBox="0 0 24 24"
       width={24}

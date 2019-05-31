@@ -51,9 +51,11 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     type="checkbox"
   />
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -63,9 +65,11 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     />
   </svg>
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -127,9 +131,11 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     type="checkbox"
   />
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -139,9 +145,11 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     />
   </svg>
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -200,9 +208,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     type="checkbox"
   />
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -212,9 +222,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     />
   </svg>
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -274,9 +286,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     type="checkbox"
   />
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="checked"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}
@@ -286,9 +300,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     />
   </svg>
   <svg
+    aria-hidden="true"
     className="c2"
     data-name="empty"
     fill="currentcolor"
+    focusable="false"
     height={20}
     viewBox="0 0 24 24"
     width={20}

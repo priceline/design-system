@@ -67,8 +67,10 @@ exports[`IconField renders 1`] = `
   className="c0"
 >
   <svg
+    aria-hidden="true"
     className="c1"
     fill="currentcolor"
+    focusable="false"
     height={24}
     style={
       Object {
