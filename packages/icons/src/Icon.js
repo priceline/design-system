@@ -10,7 +10,7 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
 
   /**
    *  To support older browsers, make sure 'titleId' is passed along with 'title' props and
-   * 'descid' with 'desc' props
+   * 'descId' with 'desc' props
    * Also, <desc> element should be followed by a <title> tag for <svg> elements
    * */
   if (!!title) {
