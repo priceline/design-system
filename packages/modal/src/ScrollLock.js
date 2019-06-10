@@ -18,7 +18,7 @@ export default class ScrollLock {
       body {
         overflow: hidden !important;
         position: fixed;
-        top: ${this.currentPos}px;
+        top: -${this.currentPos}px;
         left: 0;
         width: 100%;
       }
