@@ -59,21 +59,32 @@ storiesOf('Modal', module)
       width={['80vw', '400px', '500px']}
     />
   ))
-  .add('With ModalHeader (and scrollLock!)', () => (
-    <ModalStory
-      header={
-        <ModalHeader
-          title="Modal title"
-          onClose={() => {
-            alert('This shuold handle close')
-          }}
+  .add('With ModalHeader (and ScrollLock!)', () => {
+    // Generate content to demonstrate a scrollable <body>
+    const contentLines = [...Array(100).keys()]
+
+    return (
+      <div>
+        <h1>Scroll down to open modal</h1>
+        {contentLines.map((i, idx) => (
+          <div key={idx}>Line {idx}</div>
+        ))}
+        <ModalStory
+          header={
+            <ModalHeader
+              title="Modal title"
+              onClose={() => {
+                alert('This should handle close')
+              }}
+            />
+          }
+          height={['90vh', '460px', '560px']}
+          width={['80vw', '400px', '500px']}
+          lock={true}
         />
-      }
-      height={['90vh', '460px', '560px']}
-      width={['80vw', '400px', '500px']}
-      lock={true}
-    />
-  ))
+      </div>
+    )
+  })
   .add('With Overflow', () => (
     <ModalStory
       header={<SmallModalHeader />}
