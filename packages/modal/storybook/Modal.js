@@ -61,10 +61,7 @@ storiesOf('Modal', module)
   ))
   .add('With ModalHeader (and ScrollLock!)', () => {
     // Generate content to demonstrate a scrollable <body>
-    const contentLines = []
-    for (let i = 0; i < 100; i++) {
-      contentLines.push(i)
-    }
+    const contentLines = [...Array(100).keys()]
 
     return (
       <div>
