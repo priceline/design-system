@@ -48,6 +48,7 @@ Icon.defaultProps = {
 }
 
 Icon.displayName = 'Icon'
+Icon.isIcon = true
 
 Icon.propTypes = {
   name: (props, key, componentName) => {
