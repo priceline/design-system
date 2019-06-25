@@ -1,70 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Banner accepts non-preset colors 1`] = `
+.c2 {
+  width: 100%;
+}
+
 .c0 {
   background-color: #4f6f8f;
-  text-align: left;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c2 {
-  text-align: left;
-}
-
-.c4 {
-  font-size: 14px;
-}
-
-.c3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className=""
-    >
-      <div
-        className="c2"
-      >
-        <h5
-          className="c3"
-        />
-        <span
-          className="c4"
-          fontSize={1}
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Banner renders content from children props 1`] = `
-.c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
 }
 
@@ -91,6 +33,75 @@ exports[`Banner renders content from children props 1`] = `
   font-size: 14px;
 }
 
+.c4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 16px;
+  margin: 0px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      width={1}
+    >
+      <div
+        className="c3"
+      >
+        <h5
+          className="c4"
+          fontSize={2}
+        />
+        <span
+          className="c5"
+          fontSize={1}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner renders content from children props 1`] = `
+.c0 {
+  color: #fff;
+  background-color: #0a0;
+  text-align: left;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  text-align: left;
+}
+
+.c6 {
+  font-size: 14px;
+}
+
 .c2 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -99,10 +110,11 @@ exports[`Banner renders content from children props 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -127,16 +139,18 @@ exports[`Banner renders content from children props 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
         <span>
@@ -149,6 +163,10 @@ exports[`Banner renders content from children props 1`] = `
 `;
 
 exports[`Banner renders with blue bg 1`] = `
+.c3 {
+  width: 100%;
+}
+
 .c0 {
   color: #fff;
   background-color: #007aff;
@@ -170,11 +188,11 @@ exports[`Banner renders with blue bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -186,10 +204,11 @@ exports[`Banner renders with blue bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -214,16 +233,18 @@ exports[`Banner renders with blue bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -237,6 +258,10 @@ exports[`Banner renders with custom iconName and size 1`] = `
   color: #fff;
   background-color: #0a0;
   text-align: left;
+}
+
+.c3 {
+  width: 100%;
 }
 
 .c1 {
@@ -254,11 +279,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -270,10 +295,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -298,16 +324,18 @@ exports[`Banner renders with custom iconName and size 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -321,6 +349,10 @@ exports[`Banner renders with green bg 1`] = `
   color: #fff;
   background-color: #0a0;
   text-align: left;
+}
+
+.c3 {
+  width: 100%;
 }
 
 .c1 {
@@ -338,11 +370,11 @@ exports[`Banner renders with green bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -354,10 +386,11 @@ exports[`Banner renders with green bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -382,16 +415,18 @@ exports[`Banner renders with green bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -401,6 +436,10 @@ exports[`Banner renders with green bg 1`] = `
 `;
 
 exports[`Banner renders with lightBlue bg 1`] = `
+.c3 {
+  width: 100%;
+}
+
 .c0 {
   color: #049;
   background-color: #e8f2ff;
@@ -422,11 +461,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -438,10 +477,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -466,16 +506,18 @@ exports[`Banner renders with lightBlue bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -485,6 +527,10 @@ exports[`Banner renders with lightBlue bg 1`] = `
 `;
 
 exports[`Banner renders with lightGreen bg 1`] = `
+.c3 {
+  width: 100%;
+}
+
 .c0 {
   color: #060;
   background-color: #ecf7ec;
@@ -506,11 +552,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -522,10 +568,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -550,16 +597,18 @@ exports[`Banner renders with lightGreen bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -569,6 +618,10 @@ exports[`Banner renders with lightGreen bg 1`] = `
 `;
 
 exports[`Banner renders with lightRed bg 1`] = `
+.c3 {
+  width: 100%;
+}
+
 .c0 {
   color: #800;
   background-color: #fbebeb;
@@ -590,11 +643,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -606,10 +659,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -634,16 +688,18 @@ exports[`Banner renders with lightRed bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -657,6 +713,10 @@ exports[`Banner renders with no props other than theme 1`] = `
   color: #fff;
   background-color: #0a0;
   text-align: left;
+}
+
+.c3 {
+  width: 100%;
 }
 
 .c1 {
@@ -674,11 +734,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -690,10 +750,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -718,16 +779,18 @@ exports[`Banner renders with no props other than theme 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -737,6 +800,10 @@ exports[`Banner renders with no props other than theme 1`] = `
 `;
 
 exports[`Banner renders with orange bg 1`] = `
+.c3 {
+  width: 100%;
+}
+
 .c0 {
   color: #fff;
   background-color: #f68013;
@@ -758,11 +825,11 @@ exports[`Banner renders with orange bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -774,10 +841,11 @@ exports[`Banner renders with orange bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -802,16 +870,18 @@ exports[`Banner renders with orange bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -821,6 +891,10 @@ exports[`Banner renders with orange bg 1`] = `
 `;
 
 exports[`Banner renders with red bg 1`] = `
+.c3 {
+  width: 100%;
+}
+
 .c0 {
   color: #fff;
   background-color: #c00;
@@ -842,11 +916,11 @@ exports[`Banner renders with red bg 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -858,10 +932,11 @@ exports[`Banner renders with red bg 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -886,16 +961,18 @@ exports[`Banner renders with red bg 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         />
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         />
       </div>
@@ -909,6 +986,10 @@ exports[`Banner renders with text node 1`] = `
   color: #fff;
   background-color: #0a0;
   text-align: left;
+}
+
+.c3 {
+  width: 100%;
 }
 
 .c1 {
@@ -926,11 +1007,11 @@ exports[`Banner renders with text node 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -942,10 +1023,11 @@ exports[`Banner renders with text node 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -970,18 +1052,20 @@ exports[`Banner renders with text node 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         >
           Header
         </h5>
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         >
           <div
@@ -1003,6 +1087,10 @@ exports[`Banner renders with text string 1`] = `
   text-align: left;
 }
 
+.c3 {
+  width: 100%;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1018,11 +1106,11 @@ exports[`Banner renders with text string 1`] = `
   justify-content: space-between;
 }
 
-.c3 {
+.c4 {
   text-align: left;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
 }
 
@@ -1034,10 +1122,11 @@ exports[`Banner renders with text string 1`] = `
   margin-top: -2px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -1062,18 +1151,20 @@ exports[`Banner renders with text string 1`] = `
       />
     </svg>
     <div
-      className=""
+      className="c3"
+      width={1}
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h5
-          className="c4"
+          className="c5"
+          fontSize={2}
         >
           Header
         </h5>
         <span
-          className="c5"
+          className="c6"
           fontSize={1}
         >
           Text
