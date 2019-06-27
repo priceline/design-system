@@ -65,6 +65,7 @@ exports[`Radio Disabled, rendering 1`] = `
       fill="currentcolor"
       focusable="false"
       height={24}
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={24}
     >
@@ -143,6 +144,7 @@ exports[`Radio Not Selected, rendering 1`] = `
       fill="currentcolor"
       focusable="false"
       height={24}
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={24}
     >
@@ -219,6 +221,7 @@ exports[`Radio Selected, rendering 1`] = `
       fill="currentcolor"
       focusable="false"
       height={24}
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={24}
     >

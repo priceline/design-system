@@ -81,6 +81,7 @@ exports[`IconField renders 1`] = `
         "pointerEvents": "none",
       }
     }
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={24}
   >
