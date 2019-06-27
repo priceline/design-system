@@ -229,6 +229,7 @@ exports[`FormField renders with Icon 1`] = `
           "pointerEvents": "none",
         }
       }
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={24}
     >
@@ -371,6 +372,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
           "pointerEvents": "none",
         }
       }
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={24}
     >
@@ -485,6 +487,7 @@ exports[`FormField renders with Select  1`] = `
         fill="currentcolor"
         focusable="false"
         height={24}
+        tabIndex="-1"
         viewBox="0 0 24 24"
         width={24}
       >
@@ -581,6 +584,7 @@ exports[`FormField renders with Select and Icon 1`] = `
           "pointerEvents": "none",
         }
       }
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={24}
     >
@@ -613,6 +617,7 @@ exports[`FormField renders with Select and Icon 1`] = `
         fill="currentcolor"
         focusable="false"
         height={24}
+        tabIndex="-1"
         viewBox="0 0 24 24"
         width={24}
       >

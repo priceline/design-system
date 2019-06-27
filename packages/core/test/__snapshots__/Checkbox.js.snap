@@ -57,6 +57,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -71,6 +72,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -137,6 +139,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -151,6 +154,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -214,6 +218,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -228,6 +233,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -292,6 +298,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
@@ -306,6 +313,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     fill="currentcolor"
     focusable="false"
     height={20}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={20}
   >
