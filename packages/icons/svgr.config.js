@@ -25,7 +25,8 @@ ${componentName}.isIcon = true
 ${componentName}.defaultProps = {
   size: 24,
   'aria-hidden': 'true',
-  'focusable': 'false'
+  'focusable': 'false',
+  tabIndex: '-1'
 }
 
 export default ${componentName}`
