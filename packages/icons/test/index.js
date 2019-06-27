@@ -73,6 +73,7 @@ describe('Icon', () => {
       )
       expect(testRenderer.toJSON().props['aria-hidden']).toBe('false')
       expect(testRenderer.toJSON().props['focusable']).toBe('false')
+      expect(testRenderer.toJSON().props['tabIndex']).toBe('-1')
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
         'accessible-logo descId'
       )
@@ -95,6 +96,7 @@ describe('Icon', () => {
       )
       expect(testRenderer.toJSON().props['aria-hidden']).toBe('true')
       expect(testRenderer.toJSON().props['focusable']).toBe('false')
+      expect(testRenderer.toJSON().props['tabIndex']).toBe('-1')
     })
 
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
