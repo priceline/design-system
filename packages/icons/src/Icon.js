@@ -44,7 +44,8 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
 Icon.defaultProps = {
   size: 24,
   'aria-hidden': 'true',
-  focusable: 'false'
+  focusable: 'false',
+  tabIndex: '-1'
 }
 
 Icon.displayName = 'Icon'
