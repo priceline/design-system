@@ -67,6 +67,7 @@ exports[`Select renders 1`] = `
     fill="currentcolor"
     focusable="false"
     height={24}
+    tabIndex="-1"
     viewBox="0 0 24 24"
     width={24}
   >
