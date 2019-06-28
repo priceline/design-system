@@ -18,19 +18,19 @@ storiesOf('Stamp', module)
         default stamp
       </Stamp>
       <Stamp color="blue" mr={2}>
-        <Icon name="pin" size={16} mr={1} /> top location
+        <Icon name="Pin" size={16} mr={1} /> top location
       </Stamp>
       <Stamp color="green" mr={2}>
-        <Icon name="discount" size={16} mr={1} /> lowest price
+        <Icon name="Discount" size={16} mr={1} /> lowest price
       </Stamp>
       <Stamp color="red" mr={2}>
         <Icon name="clock" size={16} mr={1} /> just booked
       </Stamp>
       <Stamp color="orange" mr={2}>
-        <Icon name="earlyBird" size={16} mr={1} /> early bird flight
+        <Icon name="EarlyBird" size={16} mr={1} /> early bird flight
       </Stamp>
       <Stamp color="purple" mr={2}>
-        <Icon name="trendingUp" size={16} mr={1} /> top booked hotel
+        <Icon name="TrendingUp" size={16} mr={1} /> top booked hotel
       </Stamp>
     </div>
   ))

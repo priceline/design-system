@@ -18,7 +18,7 @@ describe('Relative', () => {
     const json = renderer.create(
       <Relative top={10} left={0}>
         <Absolute top={10} right={0} zIndex={2}>
-          <Icon name="coupon" />
+          <Icon name="Coupon" />
           <Text.span>EXCLUSIVE</Text.span>
         </Absolute>
       </Relative>

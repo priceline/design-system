@@ -16,7 +16,7 @@ storiesOf('FormField', module)
   .add('with Icon', () => (
     <FormField>
       <Label htmlFor="demo">Email Address</Label>
-      <Icon name="email" color="blue" />
+      <Icon name="Email" color="blue" />
       <Input id="demo" name="demo" defaultValue="hello@example.com" />
     </FormField>
   ))
@@ -65,13 +65,13 @@ storiesOf('FormField', module)
         placeholder="hello@example.com"
         value="hello@example.com"
       />
-      <Icon name="check" color="green" />
+      <Icon name="Check" color="green" />
     </FormField>
   ))
   .add('with Select', () => (
     <FormField>
       <Label htmlFor="demo">State</Label>
-      <Icon name="pin" color="blue" />
+      <Icon name="Pin" color="blue" />
       <Select id="demo" name="demo">
         <option>New York</option>
         <option>New Jersey</option>
@@ -87,7 +87,7 @@ storiesOf('FormField', module)
         placeholder="hello@example.com"
         color="green"
       />
-      <Icon name="success" color="green" />
+      <Icon name="Success" color="green" />
     </FormField>
   ))
   .add('with error Tooltip', () => (
@@ -101,7 +101,7 @@ storiesOf('FormField', module)
           aria-describedby="demo-error"
           color="red"
         />
-        <Icon name="warning" color="red" />
+        <Icon name="Warning" color="red" />
       </FormField>
       <Tooltip id="demo-error" right color="white" bg="red">
         Email address is required

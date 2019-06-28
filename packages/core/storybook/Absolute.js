@@ -44,7 +44,7 @@ storiesOf('Absolute', module)
           vel sollicitudin lectus viverra. Curabitur sit amet fringilla velit.
         </Text>
         <Absolute top="10px" right="10px">
-          <Icon name="close" color="gray" size={24} />
+          <Icon name="close" color="Gray" size={24} />
         </Absolute>
       </Relative>
     </Card>
