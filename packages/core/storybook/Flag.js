@@ -70,7 +70,7 @@ storiesOf('Flag', module)
       <Card pb={3}>
         <Flag mt={2}>
           <Flex>
-            <Icon size={14} mr={1} name="loyalty" />
+            <Icon size={14} mr={1} name="Loyalty" />
             <Text>Hello World</Text>
           </Flex>
         </Flag>

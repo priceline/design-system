@@ -27,7 +27,7 @@ describe('FormField', () => {
       .create(
         <FormField>
           <Label>Email Address</Label>
-          <Icon name="email" />
+          <Icon name="Email" />
           <Input name="email" />
         </FormField>
       )
@@ -50,7 +50,7 @@ describe('FormField', () => {
     const json = renderer
       .create(
         <FormField>
-          <Icon name="email" />
+          <Icon name="Email" />
           <Select />
         </FormField>
       )
@@ -63,7 +63,7 @@ describe('FormField', () => {
       .create(
         <FormField>
           <Label autoHide>Email</Label>
-          <Icon name="email" />
+          <Icon name="Email" />
           <Input name="email" />
         </FormField>
       )
@@ -76,7 +76,7 @@ describe('FormField', () => {
       .create(
         <FormField>
           <Label autoHide>Email</Label>
-          <Icon name="email" />
+          <Icon name="Email" />
           <Input name="email" value="hello@example.com" />
         </FormField>
       )
