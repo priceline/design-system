@@ -111,7 +111,7 @@ These Lerna commands can be helpful when publishing:
 
 The following process is recommended for publishing packages individually:
 
-1. `npmrc public` - This command may differ based on your setup, but essentially you want to ensure that you are pointing to a public NPM registry)
+1. `npmrc public` - This command may differ based on your setup, but essentially you want to ensure that you are pointing to a public NPM registry
 2. `npm login`
 3. cd into packages/package-you-want-to-update
 4. `npm version patch`
