@@ -6,7 +6,7 @@ describe('IconField', () => {
   test('renders', () => {
     const json = TestRenderer.create(
       <IconField>
-        <Icon name="calendar" />
+        <Icon name="Calendar" />
         <Input id="test" placeholder="IconField" />
       </IconField>
     ).toJSON()
@@ -25,7 +25,7 @@ describe('IconField', () => {
   test('adds styles to icons', () => {
     const json = TestRenderer.create(
       <IconField>
-        <Icon name="calendar" />
+        <Icon name="Calendar" />
         <Input id="test" />
       </IconField>
     ).toJSON()
@@ -39,7 +39,7 @@ describe('IconField', () => {
     const json = TestRenderer.create(
       <IconField>
         <Input id="test" />
-        <Icon name="calendar" />
+        <Icon name="Calendar" />
       </IconField>
     ).toJSON()
     const [input, icon] = json.children
@@ -51,7 +51,7 @@ describe('IconField', () => {
   test('adds styles to the form field', () => {
     const json = TestRenderer.create(
       <IconField>
-        <Icon name="calendar" />
+        <Icon name="Calendar" />
         <Input id="test" />
       </IconField>
     ).toJSON()

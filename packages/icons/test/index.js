@@ -27,7 +27,7 @@ describe('Icon', () => {
   })
 
   test('renders null for missing icons', () => {
-    const json = TestRenderer.create(<Icon name="foo" />).toJSON()
+    const json = TestRenderer.create(<Icon name="Foo" />).toJSON()
     expect(json).toBe(null)
   })
 

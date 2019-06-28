@@ -46,7 +46,7 @@ storiesOf('Layout Examples', module)
   ))
   .add('Navbar', () => (
     <Flex p={2} alignItems="center" color="white" bg="blue">
-      <Icon name="hotel" mr={2} />
+      <Icon name="Hotel" mr={2} />
       <Text bold mx={2}>
         Hello
       </Text>
