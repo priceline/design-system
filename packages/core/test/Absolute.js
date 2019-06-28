@@ -18,7 +18,7 @@ describe('Absolute', () => {
     const json = renderer.create(
       <Absolute top={10} left={0}>
         <Flag>
-          <Icon name="coupon" /> <Text.span>EXCLUSIVE</Text.span>
+          <Icon name="Coupon" /> <Text.span>EXCLUSIVE</Text.span>
         </Flag>
       </Absolute>
     ).toJSON
