@@ -16,20 +16,20 @@ storiesOf('InputGroup', module)
     <InputGroup>
       <InputField>
         <Label>Where from?</Label>
-        <Icon name="departure" color="blue" />
+        <Icon name="Departure" color="blue" />
         <Input placeholder="Where from?" />
       </InputField>
       <Text color="gray">–</Text>
       <InputField>
         <Label>Where to?</Label>
-        <Icon name="arrival" color="blue" />
+        <Icon name="Arrival" color="blue" />
         <Input placeholder="Where to?" />
       </InputField>
     </InputGroup>
   ))
   .add('date input alternative', () => (
     <InputGroup>
-      <Icon name="calendar" color="blue" ml={2} />
+      <Icon name="Calendar" color="blue" ml={2} />
       <InputField>
         <Label>Where from?</Label>
         <Input placeholder="Where from?" />

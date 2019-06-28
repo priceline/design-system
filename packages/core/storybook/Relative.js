@@ -23,7 +23,7 @@ storiesOf('Relative', module)
           vel sollicitudin lectus viverra. Curabitur sit amet fringilla velit.
         </Text>
         <Absolute top="10px" right="10px">
-          <Icon name="close" color="gray" size={24} />
+          <Icon name="Close" color="gray" size={24} />
         </Absolute>
       </Relative>
     </Card>

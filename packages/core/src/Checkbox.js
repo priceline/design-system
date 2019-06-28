@@ -10,8 +10,8 @@ const Checkbox = props => {
   return (
     <CheckBoxWrapper disabled={disabled}>
       <StyledInput type="checkbox" {...props} />
-      <Icon name="boxChecked" size={size} data-name="checked" />
-      <Icon name="boxEmpty" size={size} data-name="empty" />
+      <Icon name="BoxChecked" size={size} data-name="checked" />
+      <Icon name="BoxEmpty" size={size} data-name="empty" />
     </CheckBoxWrapper>
   )
 }

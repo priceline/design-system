@@ -44,7 +44,7 @@ SelectBase.propTypes = {
 const Select = styled(props => (
   <Flex width={1} alignItems="center">
     <SelectBase {...props} />
-    <ClickableIcon ml={-32} name="chevronDown" color="gray" />
+    <ClickableIcon ml={-32} name="ChevronDown" color="gray" />
   </Flex>
 ))``
 
