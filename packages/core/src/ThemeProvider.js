@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import nextTheme from './theme'
+import createTheme from './createTheme'
 
 export const Base = styled.div`
   font-family: ${props => props.theme.font};
@@ -21,7 +22,7 @@ const ThemeProvider = ({ customBreakpoints, ...props }) => {
   }
 
   return (
-    <StyledThemeProvider theme={theme}>
+    <StyledThemeProvider theme={createTheme(theme)}>
       <Base {...props} />
     </StyledThemeProvider>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import hoistStatics from 'hoist-non-react-statics'
+import { themeGet } from 'styled-system'
 
 export const mapProps = map => Component =>
   hoistStatics(props => <Component {...map(props)} />, Component)
@@ -16,3 +17,11 @@ export const deprecatedPropType = replacement => (
     )
   }
 }
+
+export const getVariantStyle = component => props =>
+  themeGet(
+    'componentStyles.' +
+      component +
+      props.variant.charAt(0).toUpperCase() +
+      props.variant.slice(1)
+  )(props)

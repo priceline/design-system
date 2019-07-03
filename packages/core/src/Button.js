@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { width, space } from 'styled-system'
 import theme from './theme'
-import { mapProps, deprecatedPropType } from './utils'
+import createTheme from './createTheme'
+import { mapProps, deprecatedPropType, getVariantStyle } from './utils'
 
 const size = props => {
   switch (props.size) {
@@ -43,19 +44,14 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
-  background-color: ${props => props.theme.colors.blue};
-  color: ${props => props.theme.colors.white};
   border-width: 0;
   border-style: solid;
 
   &:disabled {
     opacity: 0.25;
   }
-
-  &:hover {
-    background-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkBlue};
-  }
+  
+  ${getVariantStyle('button')}
 
   ${width} ${size} ${space};
 `)
@@ -64,11 +60,19 @@ Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   ...width.propTypes,
   ...space.propTypes,
-  fullWidth: deprecatedPropType('width')
+  fullWidth: deprecatedPropType('width'),
+  variant: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'default',
+    'disabled',
+    'negative'
+  ])
 }
 
 Button.defaultProps = {
-  theme: theme
+  theme: createTheme(theme),
+  variant: 'primary'
 }
 
 Button.displayName = 'Button'

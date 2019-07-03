@@ -1,25 +1,24 @@
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { color } from 'styled-system'
+import styled from 'styled-components'
 import theme from './theme'
+import { getVariantStyle } from './utils'
 
 const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
-  ${color} &:hover {
-    text-decoration: underline;
-  }
+
+  ${getVariantStyle('link')}
 `
 
 Link.displayName = 'Link'
 
-Link.propTypes = {
-  ...color.propTypes
+Link.defaultProps = {
+  theme: theme,
+  variant: 'primary'
 }
 
-Link.defaultProps = {
-  color: 'blue',
-  theme: theme
+Link.propTypes = {
+  variant: PropTypes.oneOf(['primary', 'secondary', 'title', 'navigation'])
 }
 
 export default Link
