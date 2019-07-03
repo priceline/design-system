@@ -176,6 +176,27 @@ const colors = {
 
 export { colors }
 
+const palette = {
+  primary: colors.blue,
+  secondary: colors.green,
+  default: colors.blue,
+  textPrimary: colors.text,
+  textSecondary: colors.gray,
+  background: colors.lightGray,
+  warning: colors.yellow,
+  success: colors.green,
+  error: colors.red,
+  pricePrimary: colors.green,
+  priceSecondary: colors.darkBlue,
+  strikePricePrimary: colors.gray,
+  strikePriceSecondary: colors.text,
+  promo1: colors.purple,
+  promo2: colors.pink,
+  border: colors.borderGray
+}
+
+export { palette }
+
 export const colorStyles = {
   whiteOnText: {
     color: colors.white,
@@ -315,6 +336,7 @@ const theme = {
   textStyles,
   colors,
   colorStyles,
+  palette,
   radii,
   radius,
   boxShadows,
