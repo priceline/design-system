@@ -30,8 +30,17 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
     }
   }
 
+  const tabIndexToNum = tabIndex => {
+    return parseInt(tabIndex)
+  }
+
   return (
     <Component
+      style={
+        props.focusable === 'true' && tabIndexToNum(props.tabIndex) >= 0
+          ? null
+          : { outline: 'none' }
+      }
       title={title}
       desc={desc}
       titleId={titleId}

@@ -18,6 +18,7 @@ describe('Icon', () => {
     const expected = TestRenderer.create(<AirplaneIcon />).toJSON()
     const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
     expect(json).toEqual(expected)
+    expect(json).toHaveStyleRule('outline', 'none')
   })
 
   test('renders material design icon', () => {
@@ -118,6 +119,24 @@ describe('Icon', () => {
       )
 
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
+    })
+
+    test('No outline & not focusable', () => {
+      const namedJson = TestRenderer.create(<AirplaneIcon />).toJSON()
+      const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
+      expect(json).toEqual(namedJson)
+      expect(json).toHaveStyleRule('outline', 'none')
+    })
+
+    test('Outline when focusable', () => {
+      const namedJson = TestRenderer.create(
+        <AirplaneIcon focusable="true" tabIndex="1" />
+      ).toJSON()
+      const json = TestRenderer.create(
+        <Icon focusable="true" name="Airplane" tabIndex="1" />
+      ).toJSON()
+      expect(json).toEqual(namedJson)
+      expect(json).not.toHaveStyleRule('outline', 'none')
     })
   })
 

@@ -8,13 +8,17 @@ exports[`IconField renders 1`] = `
   display: flex;
 }
 
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c2 {
+.c1 {
+  outline: none;
+}
+
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -37,27 +41,27 @@ exports[`IconField renders 1`] = `
   box-shadow: 0 0 0 1px #c0cad5;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #4f6f8f;
 }
 
-.c2::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c2:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
@@ -68,7 +72,7 @@ exports[`IconField renders 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="c1"
+    className="c1 c2"
     fill="currentcolor"
     focusable="false"
     height={24}
@@ -90,7 +94,7 @@ exports[`IconField renders 1`] = `
     />
   </svg>
   <input
-    className="c2"
+    className="c3"
     id="test"
     placeholder="IconField"
     style={
