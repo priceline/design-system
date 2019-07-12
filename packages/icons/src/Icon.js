@@ -46,7 +46,7 @@ Icon.defaultProps = {
   'aria-hidden': 'true',
   focusable: 'false',
   tabIndex: '-1',
-  outline: none
+  outline: 'none'
 }
 
 Icon.displayName = 'Icon'
