@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Stamp, Icon } from '../src'
+import { Stamp, Icon, Text } from '../src'
 
 storiesOf('Stamp', module)
   .add(
@@ -31,6 +31,35 @@ storiesOf('Stamp', module)
       </Stamp>
       <Stamp color="purple" mr={2}>
         <Icon name="TrendingUp" size={16} mr={1} /> top booked hotel
+      </Stamp>
+    </div>
+  ))
+  .add('Custom Background and Border Color', () => (
+    <div>
+      <Stamp color="white" bg="blue" borderColor="blue" mr={2}>
+        custom border and background
+      </Stamp>
+      <Stamp color="red" bg="white" borderColor="blue" mr={2}>
+        custom border and background
+      </Stamp>
+    </div>
+  ))
+  .add('Custom Text Size', () => (
+    <div>
+      <Stamp color="white" bg="blue" borderColor="blue" mr={2}>
+        <Text fontSize={0}>Yorkie</Text>
+      </Stamp>
+      <Stamp color="white" bg="blue" borderColor="blue" mr={2}>
+        <Text fontSize={1}>Jack Russell</Text>
+      </Stamp>
+      <Stamp color="white" bg="blue" borderColor="blue" mr={2}>
+        <Text fontSize={2}>Golden Retriever</Text>
+      </Stamp>
+      <Stamp color="white" bg="blue" borderColor="blue" mr={2}>
+        <Text fontSize={3}>Doberman</Text>
+      </Stamp>
+      <Stamp color="white" bg="blue" borderColor="blue" mr={2}>
+        <Text fontSize={4}>Malamute</Text>
       </Stamp>
     </div>
   ))
