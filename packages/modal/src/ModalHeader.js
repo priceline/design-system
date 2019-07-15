@@ -25,7 +25,7 @@ const ModalHeader = ({ bg, color, onClose, title }) => (
         {title}
       </Text>
     )}
-    {onClose && <StyledCloseButton onClick={onClose} ml="auto" tabIndex="1" />}
+    {onClose && <StyledCloseButton onClick={onClose} ml="auto" />}
   </HeaderWrapper>
 )
 
