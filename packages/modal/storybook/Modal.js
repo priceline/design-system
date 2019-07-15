@@ -41,7 +41,7 @@ class ModalStory extends React.Component {
           {...this.props}
         >
           <div style={{ height: '1000px' }}>
-            Content with 1000px height<button tabIndex="1">Some action</button>
+            Content with 1000px height<button>Some action</button>
           </div>
         </StyledModal>
       </div>
