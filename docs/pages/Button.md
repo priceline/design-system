@@ -24,32 +24,41 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ## Props
 
-| Prop     | Type                     | Description                                |
-| -------- | ------------------------ | ------------------------------------------ |
-| `radius` | string                   | Custom button radius in pixel              |
-| `size`   | string                   | Sets button size to small, medium or large |
-| `width`  | number, string, or array | Sets button width                          |
+| Prop      | Type                                                      | Description                                |
+| --------- | --------------------------------------------------------- | ------------------------------------------ |
+| `radius`  | string                                                    | Custom button radius in pixel              |
+| `size`    | string                                                    | Sets button size to small, medium or large |
+| `width`   | number, string, or array                                  | Sets button width                          |
+| `variant` | `primary`, `secondary`, `outline`, `disabled`, `negative` | The button variant                         |
 
-## GreenButton
+## Variants
+
+### primary
 
 ```.jsx
-<GreenButton>
-  GreenButton
-</GreenButton>
+<Button>Primary Button</Button>
 ```
 
-## RedButton
+### secondary
 
 ```.jsx
-<RedButton>
-  RedButton
-</RedButton>
+<Button variant="secondary">Secondary Button</Button>
 ```
 
-## OutlineButton
+### outline
 
 ```.jsx
-<OutlineButton>
-  OutlineButton
-</OutlineButton>
+<Button variant="outline">Outline Button</Button>
+```
+
+### disabled
+
+```.jsx
+<Button variant="disabled">Disabled Button</Button>
+```
+
+### negative
+
+```.jsx
+<Button variant="negative">Negative Button</Button>
 ```

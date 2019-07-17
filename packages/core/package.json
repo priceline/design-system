@@ -50,6 +50,7 @@
     ]
   },
   "dependencies": {
+    "deepmerge": "^4.0.0",
     "pcln-icons": "^2.0.4",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"

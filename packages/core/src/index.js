@@ -40,7 +40,7 @@ export { default as Truncate } from './Truncate'
 export { default as Checkbox } from './Checkbox'
 
 export { default as theme } from './theme'
-export { default as createTheme } from './createTheme'
 export { default as ThemeProvider } from './ThemeProvider'
+export { default as createTheme } from './createTheme'
 
 export * from './theme'

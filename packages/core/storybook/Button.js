@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button, GreenButton, RedButton, OutlineButton } from '../src'
+import { Button } from '../src'
 
 storiesOf('Button', module)
   .add(
@@ -9,15 +9,24 @@ storiesOf('Button', module)
     withInfo({
       inline: true,
       text:
-        'Use the <Button />,  <GreenButton />, <RedButton />,  <OutlineButton/ > components to render a primitive button.'
+        'Use the <Button /> component to render a primitive button. Use the `variant` prop to change the look of the button.'
     })(() => <Button size="large">Button</Button>)
   )
-  .add('color', () => (
+  .add('variants', () => (
     <div>
-      <Button mr={2}>Button</Button>
-      <GreenButton mr={2}>GreenButton</GreenButton>
-      <RedButton mr={2}>RedButton</RedButton>
-      <OutlineButton mr={2}>OutlineButton</OutlineButton>
+      <Button mr={2}>Primary Button</Button>
+      <Button variant="secondary" mr={2}>
+        Secondary Button
+      </Button>
+      <Button variant="outline" mr={2}>
+        Outline Button
+      </Button>
+      <Button variant="disabled" mr={2}>
+        Disabled Button
+      </Button>
+      <Button variant="negative" mr={2}>
+        Negative Button
+      </Button>
     </div>
   ))
   .add('sizes', () => (

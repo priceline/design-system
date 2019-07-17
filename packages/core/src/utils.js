@@ -18,10 +18,25 @@ export const deprecatedPropType = replacement => (
   }
 }
 
-export const getVariantStyle = component => props =>
-  themeGet(
-    'componentStyles.' +
-      component +
-      props.variant.charAt(0).toUpperCase() +
-      props.variant.slice(1)
-  )(props)
+/**
+ * Applies the selected variant style to a styled component.
+ * Combines the variant style with any custom styling from
+ * theme.componentStyles[component][variant]
+ *
+ * Once updated to styled-components v4, componentName is no
+ * longer needed as it is part of forwardedClass.displayName
+ *
+ * @param {string}  componentName The name of the component
+ * @param {Object=} variants      An object of variant styles
+ *
+ * @returns Array
+ */
+export const applyVariant = (componentName, variants = null) => props => {
+  if (variants) {
+    return (variants[props.variant] || []).concat(
+      themeGet(`componentStyles.${componentName}.${props.variant}`, [])(props)
+    )
+  }
+
+  return themeGet(`componentStyles.${componentName}`, {})(props)
+}
