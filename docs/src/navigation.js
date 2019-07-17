@@ -4,8 +4,10 @@ export default [
     section: 'Foundations',
     links: [
       { name: 'Color', path: '/color' },
+      { name: 'Palette', path: '/palette' },
       { name: 'Typography', path: '/typography' },
-      { name: 'Iconography', path: '/iconography' }
+      { name: 'Iconography', path: '/iconography' },
+      { name: 'Theming', path: '/Theming' }
     ]
   },
   {

@@ -48,71 +48,6 @@ const letterSpacings = {
   caps: '0.025em'
 }
 
-export const textStyles = {
-  display8: {
-    fontSize: fontSizes[8] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display7: {
-    fontSize: fontSizes[7] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display6: {
-    fontSize: fontSizes[6] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display5: {
-    fontSize: fontSizes[5] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display4: {
-    fontSize: fontSizes[4] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display3: {
-    fontSize: fontSizes[3] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display2: {
-    fontSize: fontSizes[2] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display1: {
-    fontSize: fontSizes[1] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display
-  },
-  display0: {
-    fontSize: fontSizes[0] + 'px',
-    fontWeight: fontWeights.bold,
-    lineHeight: lineHeights.display,
-    letterSpacing: letterSpacings.caps,
-    textTransform: 'uppercase'
-  },
-  body2: {
-    fontSize: fontSizes[2] + 'px',
-    fontWeight: fontWeights.medium,
-    lineHeight: lineHeights.standard
-  },
-  body1: {
-    fontSize: fontSizes[1] + 'px',
-    fontWeight: fontWeights.medium,
-    lineHeight: lineHeights.standard
-  },
-  body0: {
-    fontSize: fontSizes[0] + 'px',
-    fontWeight: fontWeights.medium,
-    lineHeight: lineHeights.standard
-  }
-}
-
 // color palette
 const black = '#000'
 const white = '#fff'
@@ -176,111 +111,6 @@ const colors = {
 
 export { colors }
 
-const palette = {
-  primary: colors.blue,
-  secondary: colors.green,
-  default: colors.blue,
-  textPrimary: colors.text,
-  textSecondary: colors.gray,
-  background: colors.lightGray,
-  warning: colors.yellow,
-  success: colors.green,
-  error: colors.red,
-  pricePrimary: colors.green,
-  priceSecondary: colors.darkBlue,
-  strikePricePrimary: colors.gray,
-  strikePriceSecondary: colors.text,
-  promo1: colors.purple,
-  promo2: colors.pink,
-  border: colors.borderGray
-}
-
-export { palette }
-
-export const colorStyles = {
-  whiteOnText: {
-    color: colors.white,
-    backgroundColor: colors.text
-  },
-  whiteOnGray: {
-    color: colors.white,
-    backgroundColor: colors.gray
-  },
-  textOnLightGray: {
-    color: colors.text,
-    backgroundColor: colors.lightGray
-  },
-  whiteOnBlue: {
-    color: colors.white,
-    backgroundColor: colors.blue
-  },
-  blueOnLightBlue: {
-    color: colors.blue,
-    backgroundColor: colors.lightBlue
-  },
-  whiteOnGreen: {
-    color: colors.white,
-    backgroundColor: colors.green
-  },
-  greenOnLightGreen: {
-    color: colors.green,
-    backgroundColor: colors.lightGreen
-  },
-  whiteOnRed: {
-    color: colors.white,
-    backgroundColor: colors.red
-  },
-  redOnLightRed: {
-    color: colors.red,
-    backgroundColor: colors.lightRed
-  },
-  textOnOrange: {
-    color: colors.text,
-    backgroundColor: colors.orange
-  },
-  whiteOnPurple: {
-    color: colors.white,
-    backgroundColor: colors.purple
-  },
-  purpleOnLightPurple: {
-    color: colors.purple,
-    backgroundColor: colors.lightPurple
-  },
-  textOnWhite: {
-    color: colors.text,
-    backgroundColor: colors.white
-  },
-  grayOnWhite: {
-    color: colors.gray,
-    backgroundColor: colors.white
-  },
-  blueOnWhite: {
-    color: colors.blue,
-    backgroundColor: colors.white
-  },
-  greenOnWhite: {
-    color: colors.green,
-    backgroundColor: colors.white
-  },
-  redOnWhite: {
-    color: colors.red,
-    backgroundColor: colors.white
-  },
-  purpleOnWhite: {
-    color: colors.purple,
-    backgroundColor: colors.white
-  },
-  whiteOnDarkOrange: {
-    color: colors.white,
-    backgroundColor: colors.darkOrange
-  }
-}
-
-colorStyles.info = colorStyles.textOnLightGray
-colorStyles.success = colorStyles.whiteOnGreen
-colorStyles.warning = colorStyles.textOnOrange
-colorStyles.danger = colorStyles.whiteOnRed
-
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
 export const radius = '2px'
@@ -333,10 +163,7 @@ const theme = {
   letterSpacings,
   regular,
   bold,
-  textStyles,
   colors,
-  colorStyles,
-  palette,
   radii,
   radius,
   boxShadows,

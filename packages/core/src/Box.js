@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 import { space, width, color, textAlign } from 'styled-system'
-import PropTypes from 'prop-types'
-import theme from './theme'
+import { applyVariant } from './utils'
 
 const Box = styled.div`
+  ${applyVariant('Box')}
   ${space} ${width} ${color} ${textAlign}
 `
 
 Box.displayName = 'Box'
-
-Box.defaultProps = {
-  theme: theme
-}
 
 Box.propTypes = {
   ...space.propTypes,

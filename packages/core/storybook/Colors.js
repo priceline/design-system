@@ -1,6 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Flex, Text, Button, GreenButton, Link, theme } from '../src'
+import { Box, Flex, Text, createTheme } from '../src'
+
+const theme = createTheme()
 
 const blacklist = ['darkPurple']
 
@@ -17,7 +19,7 @@ const palette = Object.keys(theme.palette).map(key => ({
   value: theme.palette[key]
 }))
 
-const Card = props => (
+const ColorCard = props => (
   <Box>
     <Chip name={props.name} color={props.color} />
     <Text f={0}>{props.name}</Text>
@@ -34,7 +36,7 @@ storiesOf('Color', module)
       <Flex wrap>
         {next.map(color => (
           <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-            <Card name={color.key} color={color.value} />
+            <ColorCard name={color.key} color={color.value} />
           </Box>
         ))}
       </Flex>
@@ -45,48 +47,42 @@ storiesOf('Color', module)
       <Box p={3}>
         <h1>Palette</h1>
         <p>The palette allows you to change the color of components.</p>
+        <Flex wrap>
+          {palette.map(pal => {
+            if (typeof pal.value === 'object') {
+              return (
+                <div style={{ width: '100%' }}>
+                  <h4>{pal.key}</h4>
+                  <Flex wrap>
+                    {Object.keys(pal.value).map(key => (
+                      <Box
+                        key={key}
+                        p={3}
+                        width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
+                      >
+                        <ColorCard
+                          name={key}
+                          color={theme.palette[pal.key][key]}
+                        />
+                      </Box>
+                    ))}
+                  </Flex>
+                  <hr />
+                </div>
+              )
+            } else {
+              return (
+                <Box
+                  key={pal.key}
+                  p={3}
+                  width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
+                >
+                  <ColorCard name={pal.key} color={pal.value} />
+                </Box>
+              )
+            }
+          })}
+        </Flex>
       </Box>
-      <h2>Default</h2>
-      <Flex wrap>
-        {palette.map(pal => (
-          <Box key={pal.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-            <Card name={pal.key} color={pal.value} />
-          </Box>
-        ))}
-      </Flex>
-      <Box p={3}>
-        <h1>Component Styles</h1>
-        <p>You can customize the style of components.</p>
-      </Box>
-      <h2>Default</h2>
-      <Flex wrap>
-        <Box p={3}>
-          <Button>Button Primary</Button>
-        </Box>
-        <Box p={3}>
-          <GreenButton>Button Secondary</GreenButton>
-        </Box>
-        <Box p={3}>
-          <Button variant="default">Button Default</Button>
-        </Box>
-        <Box p={3}>
-          <Button variant="disabled">Button Disabled</Button>
-        </Box>
-        <Box p={3}>
-          <Button variant="negative">Button Negative</Button>
-        </Box>
-        <Box p={3}>
-          <Link>Link Primary</Link>
-        </Box>
-        <Box p={3}>
-          <Link variant="secondary">Link Secondary</Link>
-        </Box>
-        <Box p={3}>
-          <Link variant="title">Link Title</Link>
-        </Box>
-        <Box p={3}>
-          <Link variant="navigation">Link Navigation</Link>
-        </Box>
-      </Flex>
     </div>
   ))
