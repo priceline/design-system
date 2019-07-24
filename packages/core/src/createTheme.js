@@ -13,28 +13,63 @@ const createPalette = ({ palette = {}, ...theme }) => {
   return deepmerge(
     {
       primary: {
+        light: theme.colors.lightBlue,
         base: theme.colors.blue,
-        hover: theme.colors.darkBlue,
-        contrast: theme.colors.white
+        dark: theme.colors.darkBlue
       },
       secondary: {
+        light: theme.colors.lightGreen,
         base: theme.colors.green,
-        hover: theme.colors.darkGreen,
-        contrast: theme.colors.white
+        dark: theme.colors.darkGreen
       },
-      textPrimary: theme.colors.text,
-      textSecondary: theme.colors.gray,
+      text: {
+        light: theme.colors.white,
+        base: theme.colors.text,
+        dark: '#001023'
+      },
+      warning: {
+        light: theme.colors.lightYellow,
+        base: theme.colors.yellow,
+        dark: '#b19a1d'
+      },
+      success: {
+        light: theme.colors.lightGreen,
+        base: theme.colors.green,
+        dark: theme.colors.darkGreen
+      },
+      error: {
+        light: theme.colors.lightRed,
+        base: theme.colors.red,
+        dark: theme.colors.darkRed
+      },
+      pricePrimary: {
+        light: theme.colors.lightGreen,
+        base: theme.colors.green,
+        dark: theme.colors.darkGreen
+      },
+      priceSecondary: {
+        light: theme.colors.blue,
+        base: theme.colors.darkBlue,
+        dark: '#002f6b'
+      },
+      promoPrimary: {
+        light: theme.colors.lightPurple,
+        base: theme.colors.purple,
+        dark: '#550080'
+      },
+      promoSecondary: {
+        light: '#fe649a',
+        base: theme.colors.pink,
+        dark: '#b12b5a'
+      },
+      border: {
+        light: theme.colors.gray,
+        base: theme.colors.borderGray,
+        dark: theme.colors.darkGray
+      },
       background: theme.colors.lightGray,
-      warning: theme.colors.yellow,
-      success: theme.colors.green,
-      error: theme.colors.red,
-      pricePrimary: theme.colors.green,
-      priceSecondary: theme.colors.darkBlue,
       strikePricePrimary: theme.colors.gray,
-      strikePriceSecondary: theme.colors.text,
-      promo1: theme.colors.purple,
-      promo2: theme.colors.pink,
-      border: theme.colors.borderGray
+      strikePriceSecondary: theme.colors.text
     },
     palette
   )
@@ -47,7 +82,7 @@ const createPalette = ({ palette = {}, ...theme }) => {
  *
  * @returns {Object} The generated textStyles
  */
-const createTextStyles = theme => {
+export const createTextStyles = theme => {
   return {
     display8: {
       fontSize: theme.fontSizes[8] + 'px',
@@ -121,7 +156,7 @@ const createTextStyles = theme => {
  *
  * @returns {Object} The generated colorStyles
  */
-const createColorStyles = theme => {
+export const createColorStyles = theme => {
   return {
     whiteOnText: {
       color: theme.colors.white,
@@ -231,6 +266,7 @@ export default (theme = {}, customBreakpoints = null) => {
 
   return {
     ...mergedTheme,
+    contrastRatio: mergedTheme.contrastRatio || 3,
     breakpoints: customBreakpoints || mergedTheme.breakpoints,
     palette: createPalette(mergedTheme),
     colorStyles: createColorStyles(mergedTheme),

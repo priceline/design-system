@@ -1,14 +1,15 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from './theme'
 import Icon from './Icon'
 import Box from './Box'
+import { getPaletteColor } from './utils'
 
 const Checkbox = props => {
   const { disabled, size } = props
   return (
-    <CheckBoxWrapper disabled={disabled}>
+    <CheckBoxWrapper color={props.color} disabled={disabled}>
       <StyledInput type="checkbox" {...props} />
       <Icon name="BoxChecked" size={size} data-name="checked" />
       <Icon name="BoxEmpty" size={size} data-name="empty" />
@@ -22,7 +23,9 @@ const CheckBoxWrapper = styled(Box)`
   vertical-align: middle;
   cursor: pointer;
   color: ${props =>
-    props.disabled ? props.theme.colors.borderGray : props.theme.colors.gray};
+    props.disabled
+      ? getPaletteColor('border.base')(props)
+      : getPaletteColor('border.light')(props)};
 
   svg[data-name='checked'] {
     display: none;
@@ -33,8 +36,8 @@ const CheckBoxWrapper = styled(Box)`
       display: inline-block;
       color: ${props =>
         props.disabled
-          ? props.theme.colors.borderGray
-          : props.theme.colors.blue};
+          ? getPaletteColor('border.base')(props)
+          : getPaletteColor('base')(props)};
     }
 
     & ~ svg[data-name='empty'] {
@@ -59,11 +62,13 @@ Checkbox.displayName = 'Checkbox'
 Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  color: PropTypes.string
 }
 
 Checkbox.defaultProps = {
-  size: 20
+  size: 20,
+  color: 'primary'
 }
 
 export default Checkbox

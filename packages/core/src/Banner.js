@@ -6,6 +6,8 @@ import Icon from './Icon'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
 import PropTypes from 'prop-types'
+import { withTheme } from 'styled-components'
+import { hasPaletteColor } from './utils'
 
 const bannerColors = {
   green: {
@@ -48,13 +50,13 @@ const bannerColors = {
 const Banner = props => {
   const bannerColor = bannerColors[props.bg] || {}
   const icon = props.iconName || bannerColor.icon
+  const color =
+    hasPaletteColor(props) || !bannerColor.color
+      ? props.color
+      : bannerColor.color
 
   return (
-    <Box
-      {...props}
-      bg={bannerColor.backgroundColor || props.bg}
-      color={bannerColor.color || props.color}
-    >
+    <Box {...props} bg={bannerColor.backgroundColor || props.bg} color={color}>
       <Flex justifyContent="space-between" alignItems="flex-start">
         {!!icon && !!props.showIcon && (
           <Icon name={icon} mr={2} size={24} mt="-2px" />
@@ -88,13 +90,16 @@ Banner.propTypes = {
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
   text: PropTypes.node,
-  textAlign: PropTypes.string
+  textAlign: PropTypes.string,
+  color: PropTypes.string,
+  bg: PropTypes.string
 }
 
 Banner.defaultProps = {
   bg: 'green',
   textAlign: 'left',
-  showIcon: true
+  showIcon: true,
+  color: 'green'
 }
 
-export default Banner
+export default withTheme(Banner)

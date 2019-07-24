@@ -22,9 +22,20 @@ storiesOf('Box', module)
     </Box>
   ))
   .add('Background Color', () => (
-    <Box p={3} color="white" bg="blue">
-      Hello
-    </Box>
+    <React.Fragment>
+      <Box p={3} color="white" bg="blue">
+        Hello
+      </Box>
+      <Box p={3} mt={2} color="primary">
+        Hello
+      </Box>
+      <Box p={3} mt={2} color="error">
+        Hello
+      </Box>
+      <Box p={3} mt={2} color="warning">
+        Hello
+      </Box>
+    </React.Fragment>
   ))
   .add('Width', () => (
     <Box p={3} width={1 / 2} color="white" bg="blue">

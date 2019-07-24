@@ -1,3 +1,5 @@
+import { createTextStyles, createColorStyles } from './createTheme'
+
 const createMediaQuery = n => `@media screen and (min-width:${n})`
 
 const addAliases = (arr, aliases) =>
@@ -152,6 +154,14 @@ const transitionDelays = {
   xLarge: `360ms`
 }
 
+export const textStyles = createTextStyles({
+  fontSizes,
+  fontWeights,
+  lineHeights,
+  letterSpacings
+})
+export const colorStyles = createColorStyles({ colors })
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -163,7 +173,9 @@ const theme = {
   letterSpacings,
   regular,
   bold,
+  textStyles,
   colors,
+  colorStyles,
   radii,
   radius,
   boxShadows,

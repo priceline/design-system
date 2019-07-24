@@ -24,25 +24,20 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ## Props
 
-| Prop      | Type                                                      | Description                                |
-| --------- | --------------------------------------------------------- | ------------------------------------------ |
-| `radius`  | string                                                    | Custom button radius in pixel              |
-| `size`    | string                                                    | Sets button size to small, medium or large |
-| `width`   | number, string, or array                                  | Sets button width                          |
-| `variant` | `primary`, `secondary`, `outline`, `disabled`, `negative` | The button variant                         |
+| Prop      | Type                          | Description                                    |
+| --------- | ----------------------------- | ---------------------------------------------- |
+| `radius`  | string                        | Custom button radius in pixel                  |
+| `size`    | string                        | Sets button size to small, medium or large     |
+| `width`   | number, string, or array      | Sets button width                              |
+| `variant` | `fill`, `outline`, `disabled` | The button variant                             |
+| `color`   | string                        | The color of the button, defaults to `primary` |
 
 ## Variants
 
-### primary
+### fill (default)
 
 ```.jsx
-<Button>Primary Button</Button>
-```
-
-### secondary
-
-```.jsx
-<Button variant="secondary">Secondary Button</Button>
+<Button>Button</Button>
 ```
 
 ### outline
@@ -57,8 +52,24 @@ Buttons make common actions immediately visible and easy to perform with one cli
 <Button variant="disabled">Disabled Button</Button>
 ```
 
-### negative
+## Color
+
+You can choose any palette or theme color for `Button`.
 
 ```.jsx
-<Button variant="negative">Negative Button</Button>
+<Button color="secondary">Button</Button>
 ```
+
+Uses the color from `theme.palette.secondary.base`, and `theme.palette.secondary.dark` for hover.
+
+```.jsx
+<Button variant="outline" color="error">Button</Button>
+```
+
+Uses the color from `theme.palette.error.base`, and `theme.palette.error.dark` for hover.
+
+```.jsx
+<Button variant="disabled" color="purple">Button</Button>
+```
+
+Uses the color from `theme.colors.purple`.

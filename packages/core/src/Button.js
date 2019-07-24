@@ -1,7 +1,13 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, space, themeGet } from 'styled-system'
-import { mapProps, deprecatedPropType, applyVariant } from './utils'
+import { width, space } from 'styled-system'
+import {
+  mapProps,
+  deprecatedPropType,
+  applyVariant,
+  getPaletteColor,
+  getTextColorOn
+} from './utils'
 
 const size = props => {
   switch (props.size) {
@@ -29,48 +35,33 @@ const size = props => {
 }
 
 const variants = {
-  primary: css`
-    background-color: ${themeGet('palette.primary.base')};
-    color: ${themeGet('palette.primary.contrast')};
+  fill: css`
+    background-color: ${getPaletteColor('base')};
+    color: ${getTextColorOn('base')};
 
     &:hover {
-      background-color: ${themeGet('palette.primary.hover')};
-    }
-  `,
-  secondary: css`
-    background-color: ${themeGet('palette.secondary.base')};
-    color: ${themeGet('palette.secondary.contrast')};
-
-    &:hover {
-      background-color: ${themeGet('palette.secondary.hover')};
+      background-color: ${getPaletteColor('dark')};
+      color: ${getTextColorOn('dark')};
     }
   `,
   outline: css`
-    color: ${themeGet('palette.primary.base')};
-    box-shadow: inset 0 0 0 2px ${themeGet('palette.primary.base')};
+    color: ${getPaletteColor('base')};
+    box-shadow: inset 0 0 0 2px ${getPaletteColor('base')};
     background-color: transparent;
 
     &:hover {
-      color: ${themeGet('palette.primary.hover')};
-      box-shadow: inset 0 0 0 2px ${themeGet('palette.primary.hover')};
+      color: ${getPaletteColor('dark')};
+      box-shadow: inset 0 0 0 2px ${getPaletteColor('dark')};
       background-color: transparent;
     }
   `,
   disabled: css`
-    background-color: ${themeGet('colors.lightGray')};
-    color: ${themeGet('palette.textPrimary')};
+    background-color: ${getPaletteColor('light')};
+    color: ${getTextColorOn('light')};
     cursor: default;
 
     &:hover {
       background-color: null;
-    }
-  `,
-  negative: css`
-    background-color: ${themeGet('palette.error')};
-    color: ${themeGet('colors.white')};
-
-    &:hover {
-      background-color: ${themeGet('colors.darkRed')};
     }
   `
 }
@@ -106,11 +97,13 @@ Button.propTypes = {
   ...width.propTypes,
   ...space.propTypes,
   fullWidth: deprecatedPropType('width'),
-  variant: PropTypes.oneOf(Object.keys(variants))
+  variant: PropTypes.oneOf(Object.keys(variants)),
+  color: PropTypes.string
 }
 
 Button.defaultProps = {
-  variant: 'primary'
+  color: 'primary',
+  variant: 'fill'
 }
 
 Button.displayName = 'Button'

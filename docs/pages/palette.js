@@ -1,14 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  Box,
-  Card,
-  Flex,
-  Heading,
-  Text,
-  Divider,
-  createTheme
-} from 'pcln-design-system'
+import { Box, Card, Flex, Heading, Text, Divider } from 'pcln-design-system'
+import { createTheme } from '../../packages/core/dist/index.cjs'
 import select from 'select'
 import { PageTitle, Description, Code } from '../src/components'
 
@@ -138,7 +131,9 @@ export const SectionTitle = props => (
   <Heading.h3 fontSize={[2, 3]} bold mt={[2, 4]} {...props} />
 )
 
-const { primary, secondary, ...rest } = createTheme().palette
+const defaultPalette = createTheme().palette
+
+const rest = {}
 
 const Palette = props => (
   <Box>
@@ -146,16 +141,21 @@ const Palette = props => (
     <Description>
       The design system includes a palette that can be used to theme components.
     </Description>
-    <SectionTitle>primary</SectionTitle>
-    <Flex wrap mx={-2} pt={4}>
-      <ColorList colors={flattenObject(primary)} />
-    </Flex>
-    <Divider />
-    <SectionTitle>secondary</SectionTitle>
-    <Flex wrap mx={-2} pt={4}>
-      <ColorList colors={flattenObject(secondary)} />
-    </Flex>
-    <Divider />
+    {Object.keys(defaultPalette).map(key => {
+      if (typeof defaultPalette[key] === 'object') {
+        return (
+          <React.Fragment>
+            <SectionTitle>{key}</SectionTitle>
+            <Flex wrap mx={-2} pt={4}>
+              <ColorList colors={flattenObject(defaultPalette[key])} />
+            </Flex>
+            <Divider />
+          </React.Fragment>
+        )
+      } else {
+        rest[key] = defaultPalette[key]
+      }
+    })}
     <Flex wrap mx={-2} pt={4}>
       <ColorList colors={flattenObject(rest)} />
     </Flex>

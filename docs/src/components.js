@@ -1,4 +1,5 @@
-import * as DS from 'pcln-design-system'
+// import * as DS from 'pcln-design-system'
+import * as DS from '../../packages/core/dist/index.cjs'
 import Slider from 'pcln-slider'
 import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
 import styled from 'styled-components'
