@@ -15,18 +15,15 @@ storiesOf('Link', module)
   ))
   .add('variants', () => (
     <div>
-      <div>
-        <Link>Primary Link</Link>
-      </div>
-      <div>
-        <Link variant="secondary">Secondary Link</Link>
-      </div>
-      <div>
-        <Link variant="title">Title Link</Link>
-      </div>
-      <div>
-        <Link variant="navigation">Navigation Link</Link>
-      </div>
+      <Link>Link</Link>
     </div>
   ))
-  .add('Color', () => <Link color="darkGray">I'm a different color!</Link>)
+  .add('Color', () => (
+    <div>
+      <Link color="darkGray">I'm a different color!</Link>
+      <br />
+      <Link color="secondary">I'm a different color!</Link>
+      <br />
+      <Link color="error">I'm a different color!</Link>
+    </div>
+  ))

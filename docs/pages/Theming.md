@@ -17,8 +17,8 @@ You can define a new palette to change the colors of components.
   theme={{
     palette: {
       primary: {
-        base: 'red',
-        hover: 'orange'
+        base: '#ff001d',
+        dark: '#ffa52f'
       }
     }
   }}
@@ -34,8 +34,8 @@ As well as the palette, you can also add additional styles to any component and 
   theme={{
     palette: {
       primary: {
-        base: 'red',
-        hover: 'orange'
+        base: '#ff001d',
+        dark: '#ffa52f'
       }
     },
     componentStyles: {
@@ -43,7 +43,7 @@ As well as the palette, you can also add additional styles to any component and 
         backgroundColor: 'gray'
       },
       Button: {
-        primary: {
+        fillPrimary: {
           backgroundImage: 'linear-gradient(135deg, red 0%, orange 100%)',
           '&:hover': {
             backgroundImage: 'linear-gradient(135deg, darkRed 0%, darkOrange 100%)',

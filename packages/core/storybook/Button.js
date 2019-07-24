@@ -14,20 +14,60 @@ storiesOf('Button', module)
   )
   .add('variants', () => (
     <div>
-      <Button mr={2}>Primary Button</Button>
-      <Button variant="secondary" mr={2}>
-        Secondary Button
-      </Button>
+      <Button mr={2}>Button</Button>
       <Button variant="outline" mr={2}>
         Outline Button
       </Button>
       <Button variant="disabled" mr={2}>
         Disabled Button
       </Button>
-      <Button variant="negative" mr={2}>
-        Negative Button
-      </Button>
     </div>
+  ))
+  .add('colors', () => (
+    <React.Fragment>
+      <div>
+        <Button color="secondary" mr={2}>
+          Button
+        </Button>
+        <Button color="error" mr={2}>
+          Button
+        </Button>
+        <Button color="warning" mr={2}>
+          Button
+        </Button>
+        <Button color="orange" mr={2}>
+          Button
+        </Button>
+      </div>
+      <div style={{ marginTop: '5px' }}>
+        <Button variant="outline" color="secondary" mr={2}>
+          Outline Button
+        </Button>
+        <Button variant="outline" color="error" mr={2}>
+          Outline Button
+        </Button>
+        <Button variant="outline" color="warning" mr={2}>
+          Outline Button
+        </Button>
+        <Button variant="outline" color="orange" mr={2}>
+          Outline Button
+        </Button>
+      </div>
+      <div style={{ marginTop: '5px' }}>
+        <Button variant="disabled" color="secondary" mr={2}>
+          Disabled Button
+        </Button>
+        <Button variant="disabled" color="error" mr={2}>
+          Disabled Button
+        </Button>
+        <Button variant="disabled" color="warning" mr={2}>
+          Disabled Button
+        </Button>
+        <Button variant="disabled" color="orange" mr={2}>
+          Disabled Button
+        </Button>
+      </div>
+    </React.Fragment>
   ))
   .add('sizes', () => (
     <div>

@@ -11,32 +11,37 @@ Use it as you would use any other link.
 
 ## Props
 
-| Prop      | Type                                          | Description      |
-| --------- | --------------------------------------------- | ---------------- |
-| `variant` | `primary`, `secondary`, `title`, `navigation` | The link variant |
+| Prop      | Type        | Description      |
+| --------- | ----------- | ---------------- |
+| `variant` | `underline` | The link variant |
+| `color`   | string      | The link color   |
 
 ## Variants
 
-### primary
+### underline (default)
 
 ```.jsx
-<Link>Primary Link</Link>
+<Link>Underline Link</Link>
 ```
 
-### secondary
+## Color
+
+You can choose any palette or theme color for `Link`.
 
 ```.jsx
-<Link variant="secondary">Secondary Link</Link>
+<Link color="secondary">Secondary Link</Link>
 ```
 
-### title
+Uses the color from `theme.palette.secondary.base`.
 
 ```.jsx
-<Link variant="title">Title Link</Link>
+<Link color="error">Error Link</Link>
 ```
 
-### navigation
+Uses the color from `theme.palette.error.base`.
 
 ```.jsx
-<Link variant="navigation">Navigation Link</Link>
+<Link color="purple">Purple Link</Link>
 ```
+
+Uses the color from `theme.colors.purple`.
