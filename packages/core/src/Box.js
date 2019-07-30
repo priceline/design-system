@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, width, textAlign } from 'styled-system'
-import { applyVariant, color } from './utils'
+import { applyVariant, color, deprecatedColorValue } from './utils'
 
 const Box = styled.div`
   ${space} ${width} ${textAlign}
@@ -14,7 +13,7 @@ Box.displayName = 'Box'
 Box.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
-  color: PropTypes.string,
+  color: deprecatedColorValue(),
   ...textAlign.propTypes
 }
 

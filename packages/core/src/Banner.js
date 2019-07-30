@@ -7,7 +7,7 @@ import CloseButton from './CloseButton'
 import Heading from './Heading'
 import PropTypes from 'prop-types'
 import { withTheme } from 'styled-components'
-import { hasPaletteColor } from './utils'
+import { hasPaletteColor, deprecatedColorValue } from './utils'
 
 const bannerColors = {
   green: {
@@ -91,7 +91,7 @@ Banner.propTypes = {
   showIcon: PropTypes.bool,
   text: PropTypes.node,
   textAlign: PropTypes.string,
-  color: PropTypes.string,
+  color: deprecatedColorValue(),
   bg: PropTypes.string
 }
 

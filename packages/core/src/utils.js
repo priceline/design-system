@@ -2,6 +2,7 @@ import React from 'react'
 import hoistStatics from 'hoist-non-react-statics'
 import { themeGet, color as systemColor } from 'styled-system'
 import { css } from 'styled-components'
+import { colors } from './theme'
 
 export const mapProps = map => Component =>
   hoistStatics(props => <Component {...map(props)} />, Component)
@@ -15,6 +16,19 @@ export const deprecatedPropType = replacement => (
   if (props[propName]) {
     return new Error(
       `The \`${propName}\` prop is deprecated and will be removed in a future release. Please use \`${replacement}\` instead.`
+    )
+  }
+}
+
+export const deprecatedColorValue = () => (props, propName, componentName) => {
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    Object.keys(colors).includes(props[propName])
+  ) {
+    return new Error(
+      `The color value of \`${
+        props[propName]
+      }\` for \`${componentName}\` is deprecated and will be removed in a future release. Please use a palette color instead.`
     )
   }
 }
@@ -115,10 +129,10 @@ export const applyVariant = (componentName, variants = null) => props => {
   const { color, variant } = props
 
   if (variants && typeof color === 'string' && typeof variant === 'string') {
-    const keyName = `${variant}${color[0].toUpperCase()}${color.substring(1)}`
-
     return (variants[variant] || []).concat(
-      themeGet(`componentStyles.${componentName}.${keyName}`, [])(props)
+      themeGet(`componentStyles.${componentName}.${variant}.${color}`, [])(
+        props
+      )
     )
   }
 
@@ -139,22 +153,23 @@ export const applyVariant = (componentName, variants = null) => props => {
  */
 export const getPaletteColor = name => props => {
   let { color } = props
+  let finalName = name
   const [match, colorMatch, nameMatch] = name.match(/(.+)\.(.+)/) || []
 
   if (match && colorMatch && nameMatch) {
     color = colorMatch
-    name = nameMatch
+    finalName = nameMatch
   }
-  const paletteColor = themeGet(`palette.${color}.${name}`)(props)
+  const paletteColor = themeGet(`palette.${color}.${finalName}`)(props)
 
   if (paletteColor) {
     return paletteColor
   }
 
   return (
-    themeGet(`colors.${name}${color[0].toUpperCase()}${color.substring(1)}`)(
-      props
-    ) || themeGet(`colors.${color}`)(props)
+    themeGet(
+      `colors.${finalName}${color[0].toUpperCase()}${color.substring(1)}`
+    )(props) || themeGet(`colors.${color}`)(props)
   )
 }
 
@@ -190,6 +205,8 @@ export const getTextColorOn = name => props => {
     const text = theme.palette.text
 
     if (color) {
+      // add warning for contrast
+
       return getContrastRatio(text.light, color) >= theme.contrastRatio
         ? text.light
         : text.base
@@ -210,7 +227,7 @@ export const getTextColorOn = name => props => {
  * @returns {fn|InterpolationValue[]}
  */
 export const color = props => {
-  if (props.theme && typeof props.theme.palette == 'object') {
+  if (props.theme && typeof props.theme.palette === 'object') {
     const paletteColors = Object.keys(props.theme.palette)
 
     if (paletteColors.includes(props.color)) {

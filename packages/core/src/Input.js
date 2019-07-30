@@ -1,11 +1,16 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 import defaultTheme from './theme'
+import { getPaletteColor } from './utils'
 
-const borders = ({ color, theme }) => {
-  const borderColor = color ? theme.colors[color] : theme.colors.borderGray
-  const focusColor = color ? borderColor : theme.colors.blue
+const borders = ({ color, theme, ...props }) => {
+  const borderColor = color
+    ? getPaletteColor('base')({ color, theme, ...props })
+    : getPaletteColor('borders.base')({ theme, ...props })
+  const focusColor = color
+    ? borderColor
+    : getPaletteColor('primary.base')({ theme, ...props })
   return {
     'border-color': borderColor,
     'box-shadow': `0 0 0 1px ${borderColor}`,

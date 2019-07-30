@@ -43,10 +43,12 @@ As well as the palette, you can also add additional styles to any component and 
         backgroundColor: 'gray'
       },
       Button: {
-        fillPrimary: {
-          backgroundImage: 'linear-gradient(135deg, red 0%, orange 100%)',
-          '&:hover': {
-            backgroundImage: 'linear-gradient(135deg, darkRed 0%, darkOrange 100%)',
+        fill: {
+          primary: {
+            backgroundImage: 'linear-gradient(135deg, red 0%, orange 100%)',
+            '&:hover': {
+              backgroundImage: 'linear-gradient(135deg, darkRed 0%, darkOrange 100%)',
+            }
           }
         }
       },

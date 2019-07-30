@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { width } from 'styled-system'
-import theme from './theme'
+import { getPaletteColor } from './utils'
 
 const image = props =>
   props.image ? { backgroundImage: `url(${props.image})` } : null
@@ -12,7 +12,7 @@ const BackgroundImage = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: ${props => props.theme.colors.gray};
+  background-color: ${getPaletteColor('border.light')};
   ${image} ${height} ${width};
 `
 const numberStringOrArray = PropTypes.oneOfType([
@@ -25,10 +25,6 @@ BackgroundImage.propTypes = {
   /** background-image url */
   image: PropTypes.string,
   width: numberStringOrArray
-}
-
-BackgroundImage.defaultProps = {
-  theme: theme
 }
 
 BackgroundImage.displayName = 'BackgroundImage'
