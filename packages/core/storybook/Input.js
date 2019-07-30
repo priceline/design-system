@@ -15,10 +15,12 @@ storiesOf('Input', module)
   .add('Colors', () => (
     <Box width={400}>
       <Input mb={3} id="input-colors-1" placeholder="No color" />
-      <Input mb={3} id="input-colors-2" color="red" placeholder="Red" />
-      <Input mb={3} id="input-colors-3" color="green" placeholder="Green" />
-      <Input mb={3} id="input-colors-4" color="orange" placeholder="Orange" />
-      <Input mb={3} id="input-colors-5" color="blue" placeholder="Blue" />
+      <Input mb={3} id="input-colors-2" color="primary" placeholder="Primary" />
+      <Input mb={3} id="input-colors-3" color="warning" placeholder="Warning" />
+      <Input mb={3} id="input-colors-4" color="red" placeholder="Red" />
+      <Input mb={3} id="input-colors-5" color="green" placeholder="Green" />
+      <Input mb={3} id="input-colors-6" color="orange" placeholder="Orange" />
+      <Input mb={3} id="input-colors-7" color="blue" placeholder="Blue" />
     </Box>
   ))
   .add('With external label', () => (

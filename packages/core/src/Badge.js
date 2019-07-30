@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { themeGet, space, color } from 'styled-system'
-import theme from './theme'
+import { themeGet, space } from 'styled-system'
+import { color, deprecatedColorValue } from './utils'
 
 const type = props => {
   const badgeColors = {
@@ -63,13 +62,12 @@ Badge.displayName = 'Badge'
 
 Badge.propTypes = {
   ...space.propTypes,
-  ...color.propTypes
+  color: deprecatedColorValue()
 }
 
 Badge.defaultProps = {
   px: 2,
-  py: 1,
-  theme: theme
+  py: 1
 }
 
 export default Badge

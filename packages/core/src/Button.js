@@ -6,7 +6,8 @@ import {
   deprecatedPropType,
   applyVariant,
   getPaletteColor,
-  getTextColorOn
+  getTextColorOn,
+  deprecatedColorValue
 } from './utils'
 
 const size = props => {
@@ -98,7 +99,7 @@ Button.propTypes = {
   ...space.propTypes,
   fullWidth: deprecatedPropType('width'),
   variant: PropTypes.oneOf(Object.keys(variants)),
-  color: PropTypes.string
+  color: deprecatedColorValue()
 }
 
 Button.defaultProps = {

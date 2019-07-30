@@ -10,7 +10,7 @@ storiesOf('Card', module)
         m={4}
         p={4}
         width={1 / 2}
-        color="text"
+        color="black"
         bg="white"
         borderWidth={1}
       >
