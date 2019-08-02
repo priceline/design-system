@@ -18,9 +18,6 @@ storiesOf('Button', module)
       <Button variation="outline" mr={2}>
         Outline Button
       </Button>
-      <Button variation="disabled" mr={2}>
-        Disabled Button
-      </Button>
     </div>
   ))
   .add('colors', () => (
@@ -51,20 +48,6 @@ storiesOf('Button', module)
         </Button>
         <Button variation="outline" color="alert" mr={2}>
           Outline Button
-        </Button>
-      </div>
-      <div style={{ marginTop: '5px' }}>
-        <Button variation="disabled" color="secondary" mr={2}>
-          Disabled Button
-        </Button>
-        <Button variation="disabled" color="error" mr={2}>
-          Disabled Button
-        </Button>
-        <Button variation="disabled" color="caution" mr={2}>
-          Disabled Button
-        </Button>
-        <Button variation="disabled" color="alert" mr={2}>
-          Disabled Button
         </Button>
       </div>
     </React.Fragment>

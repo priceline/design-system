@@ -1,12 +1,11 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { Absolute, Flag, Icon, Text } from '../src'
 
 describe('Absolute', () => {
   test('renders with top, left and zIndex props', () => {
-    const json = renderer
-      .create(<Absolute top={10} left={0} zIndex={2} />)
-      .toJSON()
+    const json = rendererCreateWithTheme(
+      <Absolute top={10} left={0} zIndex={2} />
+    ).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('position', 'absolute')
     expect(json).toHaveStyleRule('top', '10px')
@@ -15,7 +14,7 @@ describe('Absolute', () => {
   })
 
   test('renders with flag and Child', () => {
-    const json = renderer.create(
+    const json = rendererCreateWithTheme(
       <Absolute top={10} left={0}>
         <Flag>
           <Icon name="Coupon" /> <Text.span>EXCLUSIVE</Text.span>

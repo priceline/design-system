@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RedButton disabled prop sets 1`] = `
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -11,32 +11,29 @@ exports[`RedButton disabled prop sets 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: pointer;
+  cursor: default;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #fbebeb;
+  color: #001833;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
-.c1:disabled {
-  opacity: 0.25;
-}
-
-.c0 {
-  background-color: #c00;
+.c0:hover {
+  background-color: null;
 }
 
 <button
-  className="c0 c1"
+  className="c0"
+  color="error"
   disabled={true}
 />
 `;
 
 exports[`RedButton renders 1`] = `
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -48,37 +45,27 @@ exports[`RedButton renders 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #c00;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
-.c1:disabled {
-  opacity: 0.25;
-}
-
-.c1:hover {
-  background-color: #049;
-}
-
-.c0 {
-  background-color: #c00;
-}
-
 .c0:hover {
   background-color: #800;
+  color: #fff;
 }
 
 <button
-  className="c0 c1"
+  className="c0"
+  color="error"
 />
 `;
 
 exports[`RedButton without disabled prop sets 1`] = `
-.c1 {
+.c0 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -90,31 +77,21 @@ exports[`RedButton without disabled prop sets 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #c00;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
-.c1:disabled {
-  opacity: 0.25;
-}
-
-.c1:hover {
-  background-color: #049;
-}
-
-.c0 {
-  background-color: #c00;
-}
-
 .c0:hover {
   background-color: #800;
+  color: #fff;
 }
 
 <button
-  className="c0 c1"
+  className="c0"
+  color="error"
 />
 `;

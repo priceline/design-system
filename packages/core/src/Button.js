@@ -37,38 +37,39 @@ const size = props => {
 
 const variations = {
   fill: css`
-    background-color: ${getPaletteColor('base')};
-    color: ${getTextColorOn('base')};
+    background-color: ${props =>
+      getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    color: ${props => getTextColorOn(props.disabled ? 'light' : 'base')(props)};
 
     &:hover {
-      background-color: ${getPaletteColor('dark')};
-      color: ${getTextColorOn('dark')};
+      background-color: ${props =>
+        props.disabled ? 'inherit' : getPaletteColor('dark')(props)};
+      ${props =>
+        props.disabled ? '' : `color: ${getTextColorOn('dark')(props)};`}
     }
   `,
   outline: css`
-    color: ${getPaletteColor('base')};
-    box-shadow: inset 0 0 0 2px ${getPaletteColor('base')};
+    color: ${props =>
+      getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    box-shadow: inset 0 0 0 2px
+      ${props => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
     background-color: transparent;
 
     &:hover {
-      color: ${getPaletteColor('dark')};
-      box-shadow: inset 0 0 0 2px ${getPaletteColor('dark')};
       background-color: transparent;
-    }
-  `,
-  disabled: css`
-    background-color: ${getPaletteColor('light')};
-    color: ${getTextColorOn('light')};
-
-    &:hover {
-      background-color: null;
+      ${props =>
+        props.disabled
+          ? ''
+          : `
+        color: ${getPaletteColor('dark')(props)};
+        box-shadow: inset 0 0 0 2px ${getPaletteColor('dark')(props)};
+      `}
     }
   `
 }
 
-const Button = mapProps(({ fullWidth, disabled, ...props }) => ({
+const Button = mapProps(({ fullWidth, ...props }) => ({
   width: fullWidth ? 1 : undefined,
-  disabled: disabled || props.variation === 'disabled',
   ...props
 }))(styled.button`
   -webkit-font-smoothing: antialiased;

@@ -42,5 +42,11 @@ export { default as Checkbox } from './Checkbox'
 export { default as theme } from './theme'
 export { default as ThemeProvider } from './ThemeProvider'
 export { default as createTheme } from './createTheme'
+export {
+  getPaletteColor,
+  hasPaletteColor,
+  getTextColorOn,
+  color
+} from './utils'
 
 export * from './theme'

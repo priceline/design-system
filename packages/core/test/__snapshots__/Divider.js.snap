@@ -5,13 +5,14 @@ exports[`Divider borderColor prop sets borderColor 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-color: #007aff;
   margin-left: 0px;
   margin-right: 0px;
-  border-color: #007aff;
 }
 
 <hr
   className="c0"
+  color="border"
 />
 `;
 
@@ -20,14 +21,15 @@ exports[`Divider m prop sets margin 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-color: #c0cad5;
   margin: 8px;
   margin-left: 0px;
   margin-right: 0px;
-  border-color: #c0cad5;
 }
 
 <hr
   className="c0"
+  color="border"
 />
 `;
 
@@ -36,13 +38,14 @@ exports[`Divider renders 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-color: #c0cad5;
   margin-left: 0px;
   margin-right: 0px;
-  border-color: #c0cad5;
 }
 
 <hr
   className="c0"
+  color="border"
 />
 `;
 
@@ -51,14 +54,15 @@ exports[`Divider width prop sets width 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-color: #c0cad5;
   margin-left: 0px;
   margin-right: 0px;
   width: 50%;
-  border-color: #c0cad5;
 }
 
 <hr
   className="c0"
+  color="border"
   width={0.5}
 />
 `;

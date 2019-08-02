@@ -62,7 +62,8 @@ Badge.displayName = 'Badge'
 
 Badge.propTypes = {
   ...space.propTypes,
-  color: deprecatedColorValue()
+  color: deprecatedColorValue(),
+  bg: deprecatedColorValue()
 }
 
 Badge.defaultProps = {

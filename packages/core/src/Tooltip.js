@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Box from './Box'
-
-import theme from './theme'
-
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
+import { getPaletteColor, deprecatedColorValue } from './utils'
 
 const arrowShadow = props => {
   return props.top
@@ -71,7 +69,8 @@ const TooltipContent = styled(Box)`
   position: absolute;
   border-radius: ${({ theme }) => theme.radii[1]}px;
   box-sizing: border-box;
-  background: ${({ theme, bg }) => theme.colors[bg]};
+  background: ${({ color, bg, ...props }) =>
+    getPaletteColor('base')({ color: bg || color, ...props })};
   text-align: center;
 
   ${tooltipPosition} ${tooltipAlign} &::after {
@@ -81,8 +80,12 @@ const TooltipContent = styled(Box)`
     height: 0;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent ${({ theme, bg }) => theme.colors[bg]}
-      ${({ theme, bg }) => theme.colors[bg]};
+    border-color: transparent transparent ${({ color, bg, ...props }) =>
+      getPaletteColor('base')({ color: bg || color, ...props })} ${({
+  color,
+  bg,
+  ...props
+}) => getPaletteColor('base')({ color: bg || color, ...props })};
 
     ${arrow} ${arrowPosition} ${arrowAlign} ${arrowShadow};
   }
@@ -90,8 +93,8 @@ const TooltipContent = styled(Box)`
 
 const propTypes = {
   children: PropTypes.any.isRequired,
-  bg: PropTypes.string,
-  color: PropTypes.string,
+  bg: deprecatedColorValue(),
+  color: deprecatedColorValue(),
   bottom: PropTypes.bool,
   top: PropTypes.bool,
   center: PropTypes.bool,
@@ -102,9 +105,7 @@ const propTypes = {
 
 const defaultProps = {
   position: 'bottom',
-  color: 'text',
-  bg: 'white',
-  theme: theme,
+  color: 'background.lightest',
   zIndex: 'auto'
 }
 
@@ -121,4 +122,4 @@ const Tooltip = ({ children, align, ...props }) => {
 Tooltip.propTypes = propTypes
 Tooltip.defaultProps = defaultProps
 
-export default Tooltip
+export default withTheme(Tooltip)

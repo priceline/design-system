@@ -1,10 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
-import { getPaletteColor } from './utils'
-
-import theme from './theme'
+import { getPaletteColor, deprecatedColorValue } from './utils'
 import Flex from './Flex'
 import Icon from './Icon'
 
@@ -30,7 +27,6 @@ const SelectBase = styled.select`
   }
 `
 SelectBase.defaultProps = {
-  theme,
   fontSize: 1,
   m: 0,
   pl: 12,
@@ -42,7 +38,7 @@ SelectBase.defaultProps = {
 SelectBase.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  color: PropTypes.string
+  color: deprecatedColorValue()
 }
 
 const Select = styled(props => (

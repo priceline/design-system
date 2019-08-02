@@ -2,7 +2,6 @@ import React from 'react'
 import hoistStatics from 'hoist-non-react-statics'
 import { themeGet, color as systemColor } from 'styled-system'
 import { css } from 'styled-components'
-import { colors } from './theme'
 
 export const mapProps = map => Component =>
   hoistStatics(props => <Component {...map(props)} />, Component)
@@ -23,7 +22,9 @@ export const deprecatedPropType = replacement => (
 export const deprecatedColorValue = () => (props, propName, componentName) => {
   if (
     process.env.NODE_ENV !== 'production' &&
-    Object.keys(colors).includes(props[propName])
+    props.theme &&
+    props[propName] &&
+    !hasPaletteColor({ color: props[propName], ...props })
   ) {
     return new Error(
       `The color value of \`${

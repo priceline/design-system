@@ -95,7 +95,7 @@ Banner.propTypes = {
   text: PropTypes.node,
   textAlign: PropTypes.string,
   color: deprecatedColorValue(),
-  bg: PropTypes.string
+  bg: deprecatedColorValue()
 }
 
 Banner.defaultProps = {
