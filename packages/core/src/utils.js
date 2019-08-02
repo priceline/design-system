@@ -113,30 +113,35 @@ const getContrastRatio = (colorA, colorB) => {
 }
 
 /**
- * Applies the selected variant style to a styled component.
- * Combines the variant style with any custom styling from
- * theme.componentStyles[component][variant]
+ * Applies the selected variation style to a styled component.
+ * Combines the variation style with any custom styling from
+ * theme.componentStyles[component][variation]
  *
  * Once updated to styled-components v4, componentName is no
  * longer needed as it is part of forwardedClass.displayName
  *
  * @param {string}  componentName The name of the component
- * @param {Object=} variants      An object of variant styles
+ * @param {Object=} variations    An object of variation styles
  *
  * @returns {array}
  */
-export const applyVariant = (componentName, variants = null) => props => {
-  const { color, variant } = props
+export const applyVariations = (componentName, variations = null) => props => {
+  const { color, variation } = props
 
-  if (variants && typeof color === 'string' && typeof variant === 'string') {
-    return (variants[variant] || []).concat(
-      themeGet(`componentStyles.${componentName}.${variant}.${color}`, [])(
-        props
-      )
-    )
+  if (
+    variations &&
+    typeof color === 'string' &&
+    typeof variation === 'string'
+  ) {
+    return css`
+      ${variations[variation] || ''}
+      ${themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
+    `
   }
 
-  return themeGet(`componentStyles.${componentName}`, [])(props)
+  return css`
+    ${themeGet(`componentStyles.${componentName}`, '')}
+  `
 }
 
 /**
@@ -160,16 +165,21 @@ export const getPaletteColor = name => props => {
     color = colorMatch
     finalName = nameMatch
   }
-  const paletteColor = themeGet(`palette.${color}.${finalName}`)(props)
 
-  if (paletteColor) {
-    return paletteColor
+  if (typeof color !== 'string' || color === '') {
+    return ''
   }
 
+  const paletteColor = themeGet(
+    `palette.${color.indexOf('.') !== -1 ? color : color + '.' + finalName}`
+  )(props)
+
   return (
+    paletteColor ||
     themeGet(
       `colors.${finalName}${color[0].toUpperCase()}${color.substring(1)}`
-    )(props) || themeGet(`colors.${color}`)(props)
+    )(props) ||
+    themeGet(`colors.${color}`)(props)
   )
 }
 
@@ -181,13 +191,12 @@ export const getPaletteColor = name => props => {
  * @returns {boolean}
  */
 export const hasPaletteColor = props => {
-  if (props.theme && typeof props.theme.palette === 'object') {
-    const paletteColors = Object.keys(props.theme.palette)
-
-    return paletteColors.includes(props.color)
-  }
-
-  return false
+  return (
+    props.theme &&
+    typeof props.theme.palette === 'object' &&
+    typeof props.color === 'string' &&
+    Object.keys(props.theme.palette).includes(props.color.split('.')[0])
+  )
 }
 
 /**
@@ -227,15 +236,11 @@ export const getTextColorOn = name => props => {
  * @returns {fn|InterpolationValue[]}
  */
 export const color = props => {
-  if (props.theme && typeof props.theme.palette === 'object') {
-    const paletteColors = Object.keys(props.theme.palette)
-
-    if (paletteColors.includes(props.color)) {
-      return css`
-        background-color: ${getPaletteColor('base')};
-        color: ${getTextColorOn('base')};
-      `
-    }
+  if (!props.bg && hasPaletteColor(props)) {
+    return css`
+      background-color: ${getPaletteColor('base')};
+      color: ${getTextColorOn('base')};
+    `
   }
 
   return systemColor

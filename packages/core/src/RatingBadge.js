@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { fontWeight, borderRadius } from 'styled-system'
 import Box from './Box'
-import theme from './theme'
 
 const RatingBadge = styled(Box)`
   display: inline-block;
@@ -12,10 +11,8 @@ const RatingBadge = styled(Box)`
 RatingBadge.defaultProps = {
   fontWeight: 'bold',
   px: 2,
-  color: 'white',
-  bg: 'orange',
-  borderRadius: 1,
-  theme: theme
+  color: 'alert',
+  borderRadius: 1
 }
 
 RatingBadge.propTypes = {

@@ -3,6 +3,7 @@ import Box from './Box'
 import theme from './theme'
 import PropTypes from 'prop-types'
 import { borderRadius } from 'styled-system'
+import { getPaletteColor } from './utils'
 
 const boxShadow = props => {
   const boxShadows = {
@@ -22,15 +23,18 @@ const boxShadow = props => {
   return boxShadows[props.boxShadowSize]
 }
 
-const boxBorder = props => ({
+const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
   border:
-    props.borderWidth === 0
+    borderWidth === 0
       ? '0'
-      : `${props.borderWidth}px solid ${props.theme.colors[props.borderColor]}`
+      : `${borderWidth}px solid ${getPaletteColor('base')({
+          color: color || borderColor,
+          ...props
+        })}`
 })
 
 const Card = styled(Box)`
-  ${boxShadow} ${boxBorder} ${borderRadius};
+  ${boxShadow} ${boxBorder} ${borderRadius}
 `
 
 Card.propTypes = {
@@ -41,7 +45,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-  borderColor: 'borderGray',
+  borderColor: 'border',
   borderRadius: 1,
   borderWidth: 1
 }

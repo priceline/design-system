@@ -46,10 +46,6 @@ Hide.propTypes = {
   print: PropTypes.bool
 }
 
-Hide.defaultProps = {
-  theme: theme
-}
-
 Hide.displayName = 'Hide'
 
 export default Hide

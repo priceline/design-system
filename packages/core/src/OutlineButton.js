@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-const OutlineButton = props => <Button variant="outline" {...props} />
+const OutlineButton = props => <Button variation="outline" {...props} />
 
 OutlineButton.displayName = 'OutlineButton'
 

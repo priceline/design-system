@@ -7,10 +7,14 @@ import {
   textAlign,
   lineHeight,
   space,
-  color,
   themeGet
 } from 'styled-system'
-import { mapProps, deprecatedPropType, applyVariant } from './utils'
+import {
+  mapProps,
+  deprecatedPropType,
+  applyVariations,
+  getPaletteColor
+} from './utils'
 
 export const caps = props =>
   props.caps
@@ -30,14 +34,14 @@ const Text = mapProps(({ align, ...props }) => ({
   textAlign: align,
   ...props
 }))(styled.div`
-  ${applyVariant('Text')}
+  color: ${getPaletteColor('base')};
+  ${applyVariations('Text')}
   ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${textAlign}
   ${lineHeight}
   ${space}
-  ${color}
   ${caps}
   ${regular}
   ${bold}
@@ -52,7 +56,7 @@ Text.propTypes = {
   ...textAlign.propTypes,
   ...lineHeight.propTypes,
   ...space.propTypes,
-  ...color.propTypes,
+  color: PropTypes.string,
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,

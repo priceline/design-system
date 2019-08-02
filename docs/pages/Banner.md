@@ -66,7 +66,7 @@ Uses the color from `theme.palette.error.base`.
 ```.jsx
 <Banner
   p={2}
-  color="warning"
+  color="caution"
   iconName="attention"
   text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
 />

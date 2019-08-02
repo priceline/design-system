@@ -11,18 +11,9 @@ Use it as you would use any other link.
 
 ## Props
 
-| Prop      | Type        | Description      |
-| --------- | ----------- | ---------------- |
-| `variant` | `underline` | The link variant |
-| `color`   | string      | The link color   |
-
-## Variants
-
-### underline (default)
-
-```.jsx
-<Link>Underline Link</Link>
-```
+| Prop    | Type   | Description    |
+| ------- | ------ | -------------- |
+| `color` | string | The link color |
 
 ## Color
 

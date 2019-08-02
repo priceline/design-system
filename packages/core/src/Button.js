@@ -4,7 +4,7 @@ import { width, space } from 'styled-system'
 import {
   mapProps,
   deprecatedPropType,
-  applyVariant,
+  applyVariations,
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue
@@ -35,7 +35,7 @@ const size = props => {
   }
 }
 
-const variants = {
+const variations = {
   fill: css`
     background-color: ${getPaletteColor('base')};
     color: ${getTextColorOn('base')};
@@ -59,7 +59,6 @@ const variants = {
   disabled: css`
     background-color: ${getPaletteColor('light')};
     color: ${getTextColorOn('light')};
-    cursor: default;
 
     &:hover {
       background-color: null;
@@ -67,8 +66,9 @@ const variants = {
   `
 }
 
-const Button = mapProps(({ fullWidth, ...props }) => ({
+const Button = mapProps(({ fullWidth, disabled, ...props }) => ({
   width: fullWidth ? 1 : undefined,
+  disabled: disabled || props.variation === 'disabled',
   ...props
 }))(styled.button`
   -webkit-font-smoothing: antialiased;
@@ -79,16 +79,12 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: pointer;
+  cursor: ${props => (props.disabled ? 'default' : 'pointer')};
   border-radius: ${props => props.theme.radius};
   border-width: 0;
   border-style: solid;
 
-  &:disabled {
-    opacity: 0.25;
-  }
-
-  ${applyVariant('Button', variants)}
+  ${applyVariations('Button', variations)}
 
   ${width} ${size} ${space};
 `)
@@ -98,13 +94,14 @@ Button.propTypes = {
   ...width.propTypes,
   ...space.propTypes,
   fullWidth: deprecatedPropType('width'),
-  variant: PropTypes.oneOf(Object.keys(variants)),
-  color: deprecatedColorValue()
+  variation: PropTypes.oneOf(Object.keys(variations)),
+  color: deprecatedColorValue(),
+  disabled: PropTypes.bool
 }
 
 Button.defaultProps = {
   color: 'primary',
-  variant: 'fill'
+  variation: 'fill'
 }
 
 Button.displayName = 'Button'

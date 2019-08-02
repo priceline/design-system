@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Box from './Box'
 import PropTypes from 'prop-types'
 import {
   space,
@@ -17,21 +18,17 @@ const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
   alignItems: align,
   justifyContent: justify,
   ...props
-}))(styled.div`
+}))(styled(Box)`
   display: flex;
-  ${space} ${width} ${color} ${alignItems} ${justifyContent}
+  ${alignItems} ${justifyContent}
   ${flexDirection}
   ${flexWrap}
 `)
 
-Flex.defaultProps = {
-  theme
-}
-
 Flex.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
-  ...color.propTypes,
+  // color: PropTypes.string,
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,

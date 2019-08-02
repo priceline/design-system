@@ -9,16 +9,16 @@ storiesOf('Button', module)
     withInfo({
       inline: true,
       text:
-        'Use the <Button /> component to render a primitive button. Use the `variant` prop to change the look of the button.'
+        'Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.'
     })(() => <Button size="large">Button</Button>)
   )
-  .add('variants', () => (
+  .add('variations', () => (
     <div>
       <Button mr={2}>Button</Button>
-      <Button variant="outline" mr={2}>
+      <Button variation="outline" mr={2}>
         Outline Button
       </Button>
-      <Button variant="disabled" mr={2}>
+      <Button variation="disabled" mr={2}>
         Disabled Button
       </Button>
     </div>
@@ -32,7 +32,7 @@ storiesOf('Button', module)
         <Button color="error" mr={2}>
           Button
         </Button>
-        <Button color="warning" mr={2}>
+        <Button color="caution" mr={2}>
           Button
         </Button>
         <Button color="orange" mr={2}>
@@ -40,30 +40,30 @@ storiesOf('Button', module)
         </Button>
       </div>
       <div style={{ marginTop: '5px' }}>
-        <Button variant="outline" color="secondary" mr={2}>
+        <Button variation="outline" color="secondary" mr={2}>
           Outline Button
         </Button>
-        <Button variant="outline" color="error" mr={2}>
+        <Button variation="outline" color="error" mr={2}>
           Outline Button
         </Button>
-        <Button variant="outline" color="warning" mr={2}>
+        <Button variation="outline" color="caution" mr={2}>
           Outline Button
         </Button>
-        <Button variant="outline" color="orange" mr={2}>
+        <Button variation="outline" color="alert" mr={2}>
           Outline Button
         </Button>
       </div>
       <div style={{ marginTop: '5px' }}>
-        <Button variant="disabled" color="secondary" mr={2}>
+        <Button variation="disabled" color="secondary" mr={2}>
           Disabled Button
         </Button>
-        <Button variant="disabled" color="error" mr={2}>
+        <Button variation="disabled" color="error" mr={2}>
           Disabled Button
         </Button>
-        <Button variant="disabled" color="warning" mr={2}>
+        <Button variation="disabled" color="caution" mr={2}>
           Disabled Button
         </Button>
-        <Button variant="disabled" color="orange" mr={2}>
+        <Button variation="disabled" color="alert" mr={2}>
           Disabled Button
         </Button>
       </div>

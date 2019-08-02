@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { space, width, textAlign } from 'styled-system'
-import { applyVariant, color, deprecatedColorValue } from './utils'
+import { applyVariations, color, deprecatedColorValue } from './utils'
 
 const Box = styled.div`
   ${space} ${width} ${textAlign}
-  ${applyVariant('Box')}
+  ${applyVariations('Box')}
   ${color}
 `
 

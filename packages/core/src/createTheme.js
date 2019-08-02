@@ -1,5 +1,5 @@
-import deepmerge from 'deepmerge'
 import defaultTheme from './theme'
+const deepmerge = require('deepmerge')
 
 /**
  * Create the palette based on passed in theme
@@ -10,66 +10,112 @@ import defaultTheme from './theme'
  * @returns {Object} The generated palette
  */
 const createPalette = ({ palette = {}, ...theme }) => {
+  const {
+    lightBlue,
+    blue,
+    darkBlue,
+    lightGreen,
+    green,
+    darkGreen,
+    white,
+    text,
+    lightRed,
+    red,
+    darkRed,
+    lightOrange,
+    orange,
+    darkOrange,
+    lightYellow,
+    yellow,
+    lightPurple,
+    purple,
+    pink,
+    gray,
+    borderGray,
+    darkGray,
+    lightGray,
+    buttonGray
+  } = theme.colors
+
   return deepmerge(
     {
       primary: {
-        light: theme.colors.lightBlue,
-        base: theme.colors.blue,
-        dark: theme.colors.darkBlue
+        light: lightBlue,
+        base: blue,
+        dark: darkBlue
       },
       secondary: {
-        light: theme.colors.lightGreen,
-        base: theme.colors.green,
-        dark: theme.colors.darkGreen
+        light: lightGreen,
+        base: green,
+        dark: darkGreen
       },
       text: {
-        light: theme.colors.white,
-        base: theme.colors.text,
+        light: white,
+        base: text,
         dark: '#001023'
       },
-      warning: {
-        light: theme.colors.lightYellow,
-        base: theme.colors.yellow,
-        dark: '#b19a1d'
-      },
       success: {
-        light: theme.colors.lightGreen,
-        base: theme.colors.green,
-        dark: theme.colors.darkGreen
+        light: lightGreen,
+        base: green,
+        dark: darkGreen
       },
       error: {
-        light: theme.colors.lightRed,
-        base: theme.colors.red,
-        dark: theme.colors.darkRed
+        light: lightRed,
+        base: red,
+        dark: darkRed
+      },
+      warning: {
+        light: lightRed,
+        base: red,
+        dark: darkRed
+      },
+      alert: {
+        light: lightOrange,
+        base: orange,
+        dark: darkOrange
+      },
+      caution: {
+        light: lightYellow,
+        base: yellow,
+        dark: '#b19a1d'
+      },
+      notify: {
+        light: lightYellow,
+        base: yellow,
+        dark: '#b19a1d'
       },
       pricePrimary: {
-        light: theme.colors.lightGreen,
-        base: theme.colors.green,
-        dark: theme.colors.darkGreen
+        light: lightGreen,
+        base: green,
+        dark: darkGreen
       },
       priceSecondary: {
-        light: theme.colors.blue,
-        base: theme.colors.darkBlue,
+        light: blue,
+        base: darkBlue,
         dark: '#002f6b'
       },
       promoPrimary: {
-        light: theme.colors.lightPurple,
-        base: theme.colors.purple,
+        light: lightPurple,
+        base: purple,
         dark: '#550080'
       },
       promoSecondary: {
         light: '#fe649a',
-        base: theme.colors.pink,
+        base: pink,
         dark: '#b12b5a'
       },
       border: {
-        light: theme.colors.gray,
-        base: theme.colors.borderGray,
-        dark: theme.colors.darkGray
+        light: gray,
+        base: borderGray,
+        dark: darkGray
       },
-      background: theme.colors.lightGray,
-      strikePricePrimary: theme.colors.gray,
-      strikePriceSecondary: theme.colors.text
+      background: {
+        lightest: white,
+        light: lightGray,
+        base: buttonGray,
+        dark: gray,
+        darkest: text
+      }
     },
     palette
   )
@@ -83,68 +129,70 @@ const createPalette = ({ palette = {}, ...theme }) => {
  * @returns {Object} The generated textStyles
  */
 export const createTextStyles = theme => {
+  const { fontSizes, fontWeights, lineHeights, letterSpacings } = theme
+
   return {
     display8: {
-      fontSize: theme.fontSizes[8] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[8] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display7: {
-      fontSize: theme.fontSizes[7] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[7] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display6: {
-      fontSize: theme.fontSizes[6] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[6] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display5: {
-      fontSize: theme.fontSizes[5] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[5] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display4: {
-      fontSize: theme.fontSizes[4] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[4] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display3: {
-      fontSize: theme.fontSizes[3] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[3] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display2: {
-      fontSize: theme.fontSizes[2] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[2] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display1: {
-      fontSize: theme.fontSizes[1] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display
+      fontSize: fontSizes[1] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display
     },
     display0: {
-      fontSize: theme.fontSizes[0] + 'px',
-      fontWeight: theme.fontWeights.bold,
-      lineHeight: theme.lineHeights.display,
-      letterSpacing: theme.letterSpacings.caps,
+      fontSize: fontSizes[0] + 'px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.display,
+      letterSpacing: letterSpacings.caps,
       textTransform: 'uppercase'
     },
     body2: {
-      fontSize: theme.fontSizes[2] + 'px',
-      fontWeight: theme.fontWeights.medium,
-      lineHeight: theme.lineHeights.standard
+      fontSize: fontSizes[2] + 'px',
+      fontWeight: fontWeights.medium,
+      lineHeight: lineHeights.standard
     },
     body1: {
-      fontSize: theme.fontSizes[1] + 'px',
-      fontWeight: theme.fontWeights.medium,
-      lineHeight: theme.lineHeights.standard
+      fontSize: fontSizes[1] + 'px',
+      fontWeight: fontWeights.medium,
+      lineHeight: lineHeights.standard
     },
     body0: {
-      fontSize: theme.fontSizes[0] + 'px',
-      fontWeight: theme.fontWeights.medium,
-      lineHeight: theme.lineHeights.standard
+      fontSize: fontSizes[0] + 'px',
+      fontWeight: fontWeights.medium,
+      lineHeight: lineHeights.standard
     }
   }
 }
@@ -157,98 +205,115 @@ export const createTextStyles = theme => {
  * @returns {Object} The generated colorStyles
  */
 export const createColorStyles = theme => {
+  const {
+    white,
+    text,
+    gray,
+    lightGray,
+    blue,
+    lightBlue,
+    green,
+    lightGreen,
+    red,
+    lightRed,
+    orange,
+    purple,
+    lightPurple,
+    darkOrange
+  } = theme.colors
+
   return {
     whiteOnText: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.text
+      color: white,
+      backgroundColor: text
     },
     whiteOnGray: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.gray
+      color: white,
+      backgroundColor: gray
     },
     textOnLightGray: {
-      color: theme.colors.text,
-      backgroundColor: theme.colors.lightGray
+      color: text,
+      backgroundColor: lightGray
     },
     whiteOnBlue: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.blue
+      color: white,
+      backgroundColor: blue
     },
     blueOnLightBlue: {
-      color: theme.colors.blue,
-      backgroundColor: theme.colors.lightBlue
+      color: blue,
+      backgroundColor: lightBlue
     },
     whiteOnGreen: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.green
+      color: white,
+      backgroundColor: green
     },
     greenOnLightGreen: {
-      color: theme.colors.green,
-      backgroundColor: theme.colors.lightGreen
+      color: green,
+      backgroundColor: lightGreen
     },
     whiteOnRed: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.red
+      color: white,
+      backgroundColor: red
     },
     redOnLightRed: {
-      color: theme.colors.red,
-      backgroundColor: theme.colors.lightRed
+      color: red,
+      backgroundColor: lightRed
     },
     textOnOrange: {
-      color: theme.colors.text,
-      backgroundColor: theme.colors.orange
+      color: text,
+      backgroundColor: orange
     },
     whiteOnPurple: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.purple
+      color: white,
+      backgroundColor: purple
     },
     purpleOnLightPurple: {
-      color: theme.colors.purple,
-      backgroundColor: theme.colors.lightPurple
+      color: purple,
+      backgroundColor: lightPurple
     },
     textOnWhite: {
-      color: theme.colors.text,
-      backgroundColor: theme.colors.white
+      color: text,
+      backgroundColor: white
     },
     grayOnWhite: {
-      color: theme.colors.gray,
-      backgroundColor: theme.colors.white
+      color: gray,
+      backgroundColor: white
     },
     blueOnWhite: {
-      color: theme.colors.blue,
-      backgroundColor: theme.colors.white
+      color: blue,
+      backgroundColor: white
     },
     greenOnWhite: {
-      color: theme.colors.green,
-      backgroundColor: theme.colors.white
+      color: green,
+      backgroundColor: white
     },
     redOnWhite: {
-      color: theme.colors.red,
-      backgroundColor: theme.colors.white
+      color: red,
+      backgroundColor: white
     },
     purpleOnWhite: {
-      color: theme.colors.purple,
-      backgroundColor: theme.colors.white
+      color: purple,
+      backgroundColor: white
     },
     whiteOnDarkOrange: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.darkOrange
+      color: white,
+      backgroundColor: darkOrange
     },
     info: {
-      color: theme.colors.text,
-      backgroundColor: theme.colors.lightGray
+      color: text,
+      backgroundColor: lightGray
     },
     success: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.green
+      color: white,
+      backgroundColor: green
     },
     warning: {
-      color: theme.colors.text,
-      backgroundColor: theme.colors.orange
+      color: text,
+      backgroundColor: orange
     },
     danger: {
-      color: theme.colors.white,
-      backgroundColor: theme.colors.red
+      color: white,
+      backgroundColor: red
     }
   }
 }
@@ -266,7 +331,7 @@ export default (theme = {}, customBreakpoints = null) => {
 
   return {
     ...mergedTheme,
-    contrastRatio: mergedTheme.contrastRatio || 3,
+    contrastRatio: mergedTheme.contrastRatio || 2.6,
     breakpoints: customBreakpoints || mergedTheme.breakpoints,
     palette: createPalette(mergedTheme),
     colorStyles: createColorStyles(mergedTheme),
