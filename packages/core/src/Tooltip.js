@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Box from './Box'
-import Text from './Text'
 
 import theme from './theme'
 

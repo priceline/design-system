@@ -13,16 +13,20 @@ exports[`Button disabled prop sets 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
 .c0:disabled {
   opacity: 0.25;
+}
+
+.c0:hover {
+  background-color: #049;
 }
 
 <button
@@ -44,10 +48,10 @@ exports[`Button renders 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
@@ -78,10 +82,10 @@ exports[`Button size large sets height and font-size 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 16px;
   padding: 12px 22px;
 }
@@ -113,10 +117,10 @@ exports[`Button size medium sets height and font-size 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
@@ -148,10 +152,10 @@ exports[`Button size small sets height and font-size 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 12px;
   padding: 7px 12px;
 }
@@ -183,10 +187,10 @@ exports[`Button width prop sets width to 100% 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   width: 100%;
   font-size: 14px;
   padding: 9.5px 18px;
@@ -219,10 +223,10 @@ exports[`Button without disabled prop sets 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }

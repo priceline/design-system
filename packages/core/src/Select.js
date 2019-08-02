@@ -1,6 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
+import { getPaletteColor } from './utils'
 
 import theme from './theme'
 import Flex from './Flex'
@@ -20,11 +22,11 @@ const SelectBase = styled.select`
   border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${themeGet('colors.borderGray')};
+  border-color: ${getPaletteColor('border.base')};
   ${space} ${fontSize} &:focus {
     outline: none;
-    border-color: ${themeGet('colors.blue')};
-    box-shadow: 0 0 0 1px ${themeGet('colors.blue')};
+    border-color: ${getPaletteColor('base')};
+    box-shadow: 0 0 0 1px ${getPaletteColor('base')};
   }
 `
 SelectBase.defaultProps = {
@@ -33,12 +35,14 @@ SelectBase.defaultProps = {
   m: 0,
   pl: 12,
   pr: 32,
-  py: 14
+  py: 14,
+  color: 'primary'
 }
 
 SelectBase.propTypes = {
   ...space.propTypes,
-  ...fontSize.propTypes
+  ...fontSize.propTypes,
+  color: PropTypes.string
 }
 
 const Select = styled(props => (

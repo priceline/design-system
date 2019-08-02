@@ -1,16 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import theme from './theme'
 import Icon from './Icon'
+import { getPaletteColor } from './utils'
 
 const RadioWrap = styled.div`
   display: inline-block;
-  color: ${props => props.theme.colors.borderGray};
+  color: ${getPaletteColor('border.base')};
   &:hover {
     ${props =>
       props.checked || props.disabled
         ? null
-        : `color: ${props.theme.colors.blue};`};
+        : `color: ${getPaletteColor('base')(props)};`};
   }
 `
 
@@ -23,10 +25,10 @@ const RadioInput = styled.input`
     box-shadow: none;
   }
   &:checked ~ svg {
-    color: ${props => props.theme.colors.blue};
+    color: ${getPaletteColor('base')};
   }
   &:disabled ~ svg {
-    color: ${props => props.theme.colors.borderGray};
+    color: ${getPaletteColor('border.base')};
   }
 `
 
@@ -40,7 +42,7 @@ const Radio = props => {
   const radioIconName = checked ? 'radioChecked' : 'radioEmpty'
 
   return (
-    <RadioWrap checked={checked} disabled={disabled}>
+    <RadioWrap color={props.color} checked={checked} disabled={disabled}>
       <RadioInput type="radio" {...props} />
       <RadioIcon name={radioIconName} size={24} />
     </RadioWrap>
@@ -48,7 +50,11 @@ const Radio = props => {
 }
 
 Radio.defaultProps = {
-  theme: theme
+  color: 'primary'
+}
+
+Radio.propTypes = {
+  color: PropTypes.string
 }
 
 export default Radio

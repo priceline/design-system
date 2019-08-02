@@ -1,33 +1,22 @@
-import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-import { applyVariant, getPaletteColor } from './utils'
-
-const variants = {
-  underline: css`
-    color: ${getPaletteColor('base')};
-
-    &:hover {
-      text-decoration: underline;
-    }
-  `
-}
+import styled from 'styled-components'
+import { applyVariations, getPaletteColor } from './utils'
 
 const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
+  color: ${getPaletteColor('base')};
 
-  ${applyVariant('Link', variants)}
+  &:hover {
+    text-decoration: underline;
+  }
+
+  ${applyVariations('Link')}
 `
 
 Link.displayName = 'Link'
 
 Link.defaultProps = {
-  variant: 'underline',
   color: 'primary'
-}
-
-Link.propTypes = {
-  variant: PropTypes.oneOf(Object.keys(variants))
 }
 
 export default Link

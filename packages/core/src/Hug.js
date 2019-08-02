@@ -28,7 +28,7 @@ const HideableIcon = styled(Icon)`
 `
 
 const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
-  <HugCard {...props} borderColor={bg}>
+  <HugCard {...props} borderColor={bg || color}>
     <Flex bg={bg} color={color} p={p} alignItems="center">
       {!!icon && (
         <HideableIcon
@@ -47,12 +47,10 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
 )
 
 Hug.defaultProps = {
-  bg: 'green',
   borderWidth: 1,
-  color: 'white',
+  color: 'secondary',
   fontSize: 1,
-  p: 2,
-  theme: theme
+  p: 2
 }
 
 Hug.propTypes = {

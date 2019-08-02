@@ -4,6 +4,7 @@ import { color, themeGet } from 'styled-system'
 import Flex from './Flex'
 import Hide from './Hide'
 import Box from './Box'
+import { getPaletteColor } from './utils'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 

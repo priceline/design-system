@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { space, fontSize, fontWeight, color } from 'styled-system'
 import theme from './theme'
+import { getPaletteColor } from './utils'
 
 const nowrap = props =>
   props.nowrap
@@ -25,8 +26,13 @@ const Label = styled.label`
   display: block;
   width: 100%;
   margin: 0;
+  color: ${getPaletteColor('base')};
+  ${({ bg, color, ...props }) =>
+    bg
+      ? `background-color: ${getPaletteColor('base')({ color: bg, ...props })};`
+      : ''}
 
-  ${space} ${fontSize} ${color} ${fontWeight};
+  ${space} ${fontSize} ${fontWeight};
   ${nowrap}
   ${accessiblyHide}
 `
@@ -41,7 +47,7 @@ Label.propTypes = {
 Label.defaultProps = {
   fontSize: '10px',
   fontWeight: 'bold',
-  color: 'gray',
+  color: 'border.light',
   theme: theme
 }
 

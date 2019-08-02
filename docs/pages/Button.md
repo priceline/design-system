@@ -24,15 +24,15 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ## Props
 
-| Prop      | Type                          | Description                                    |
-| --------- | ----------------------------- | ---------------------------------------------- |
-| `radius`  | string                        | Custom button radius in pixel                  |
-| `size`    | string                        | Sets button size to small, medium or large     |
-| `width`   | number, string, or array      | Sets button width                              |
-| `variant` | `fill`, `outline`, `disabled` | The button variant                             |
-| `color`   | string                        | The color of the button, defaults to `primary` |
+| Prop        | Type                          | Description                                    |
+| ----------- | ----------------------------- | ---------------------------------------------- |
+| `radius`    | string                        | Custom button radius in pixel                  |
+| `size`      | string                        | Sets button size to small, medium or large     |
+| `width`     | number, string, or array      | Sets button width                              |
+| `variation` | `fill`, `outline`, `disabled` | The button variation                           |
+| `color`     | string                        | The color of the button, defaults to `primary` |
 
-## Variants
+## Variations
 
 ### fill (default)
 
@@ -43,13 +43,13 @@ Buttons make common actions immediately visible and easy to perform with one cli
 ### outline
 
 ```.jsx
-<Button variant="outline">Outline Button</Button>
+<Button variation="outline">Outline Button</Button>
 ```
 
 ### disabled
 
 ```.jsx
-<Button variant="disabled">Disabled Button</Button>
+<Button variation="disabled">Disabled Button</Button>
 ```
 
 ## Color
@@ -63,13 +63,13 @@ You can choose any palette or theme color for `Button`.
 Uses the color from `theme.palette.secondary.base`, and `theme.palette.secondary.dark` for hover.
 
 ```.jsx
-<Button variant="outline" color="error">Button</Button>
+<Button variation="outline" color="error">Button</Button>
 ```
 
 Uses the color from `theme.palette.error.base`, and `theme.palette.error.dark` for hover.
 
 ```.jsx
-<Button variant="disabled" color="purple">Button</Button>
+<Button variation="disabled" color="purple">Button</Button>
 ```
 
 Uses the color from `theme.colors.purple`.

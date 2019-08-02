@@ -48,7 +48,10 @@ const bannerColors = {
 }
 
 const Banner = props => {
-  const bannerColor = bannerColors[props.bg] || {}
+  const bannerColor =
+    bannerColors[
+      !props.bg && props.color === 'green' ? props.color : props.bg
+    ] || {}
   const icon = props.iconName || bannerColor.icon
   const color =
     hasPaletteColor(props) || !bannerColor.color
@@ -96,7 +99,6 @@ Banner.propTypes = {
 }
 
 Banner.defaultProps = {
-  bg: 'green',
   textAlign: 'left',
   showIcon: true,
   color: 'green'

@@ -1,4 +1,4 @@
-// import * as DS from 'pcln-design-system'
+import * as Old from 'pcln-design-system'
 import * as DS from '../../packages/core/dist/index.cjs'
 import Slider from 'pcln-slider'
 import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
@@ -94,6 +94,9 @@ export const ButtonLink = Button.withComponent('a')
 
 const components = {
   ...DS,
+  Old: {
+    ...Old
+  },
   h1: heading('h1'),
   h2: heading('h2'),
   h3: heading('h3'),

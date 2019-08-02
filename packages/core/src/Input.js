@@ -1,16 +1,15 @@
 import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
-import defaultTheme from './theme'
 import { getPaletteColor } from './utils'
 
-const borders = ({ color, theme, ...props }) => {
+const borders = ({ color, ...props }) => {
   const borderColor = color
-    ? getPaletteColor('base')({ color, theme, ...props })
-    : getPaletteColor('borders.base')({ theme, ...props })
+    ? getPaletteColor('base')({ color, ...props })
+    : getPaletteColor('border.base')(props)
   const focusColor = color
     ? borderColor
-    : getPaletteColor('primary.base')({ theme, ...props })
+    : getPaletteColor('primary.base')(props)
   return {
     'border-color': borderColor,
     'box-shadow': `0 0 0 1px ${borderColor}`,
@@ -60,10 +59,6 @@ Input.propTypes = {
   color: PropTypes.string,
   ...borders.propTypes,
   ...space.propTypes
-}
-
-Input.defaultProps = {
-  theme: defaultTheme
 }
 
 export default Input

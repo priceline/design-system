@@ -27,7 +27,7 @@ You can define a new palette to change the colors of components.
 </ThemeProvider>
 ```
 
-As well as the palette, you can also add additional styles to any component and it's variants.
+As well as the palette, you can also add additional styles to any component and it's variations.
 
 ```.jsx
 <ThemeProvider
