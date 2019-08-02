@@ -1,17 +1,14 @@
 import styled from 'styled-components'
 import Box from './Box'
-import PropTypes from 'prop-types'
 import {
   space,
   width,
-  color,
   alignItems,
   justifyContent,
   flexWrap,
   flexDirection
 } from 'styled-system'
-import theme from './theme'
-import { mapProps, deprecatedPropType } from './utils'
+import { mapProps, deprecatedPropType, deprecatedColorValue } from './utils'
 
 const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
@@ -28,12 +25,12 @@ const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
 Flex.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
-  // color: PropTypes.string,
+  color: deprecatedColorValue(),
+  bg: deprecatedPropType(),
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,
-  // deprecated
   wrap: deprecatedPropType('flexWrap'),
   align: deprecatedPropType('alignItems'),
   justify: deprecatedPropType('justifyContent')

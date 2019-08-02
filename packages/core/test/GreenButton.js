@@ -1,23 +1,20 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { GreenButton, theme } from '../src'
 
 describe('GreenButton', () => {
   test('renders', () => {
-    const json = renderer.create(<GreenButton theme={theme} />).toJSON()
+    const json = rendererCreateWithTheme(<GreenButton />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('disabled prop sets', () => {
-    const json = renderer
-      .create(<GreenButton disabled theme={theme} />)
-      .toJSON()
+    const json = rendererCreateWithTheme(<GreenButton disabled />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.green)
+    expect(json).toHaveStyleRule('background-color', '#ecf7ec')
   })
 
   test('without disabled prop sets', () => {
-    const json = renderer.create(<GreenButton theme={theme} />).toJSON()
+    const json = rendererCreateWithTheme(<GreenButton />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.darkGreen, {
       modifier: ':hover'

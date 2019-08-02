@@ -64,7 +64,7 @@ exports[`IconField renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <svg
     aria-hidden="true"

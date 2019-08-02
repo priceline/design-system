@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { space, fontSize, fontWeight, color } from 'styled-system'
-import theme from './theme'
-import { getPaletteColor } from './utils'
+import { getPaletteColor, deprecatedColorValue } from './utils'
 
 const nowrap = props =>
   props.nowrap
@@ -40,15 +39,14 @@ const Label = styled.label`
 Label.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  ...color.propTypes,
+  color: deprecatedColorValue(),
   ...fontWeight.propTypes
 }
 
 Label.defaultProps = {
   fontSize: '10px',
   fontWeight: 'bold',
-  color: 'border.light',
-  theme: theme
+  color: 'border.light'
 }
 
 Label.displayName = 'Label'

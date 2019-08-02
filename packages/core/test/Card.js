@@ -1,10 +1,9 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { Card, theme } from '../src'
 
 describe('Card', () => {
   test('renders small box shadow with default border', () => {
-    const json = renderer.create(<Card boxShadowSize="sm" />).toJSON()
+    const json = rendererCreateWithTheme(<Card boxShadowSize="sm" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule(
       'box-shadow',
@@ -18,7 +17,7 @@ describe('Card', () => {
   })
 
   test('renders medium box shadow with default border', () => {
-    const json = renderer.create(<Card boxShadowSize="md" />).toJSON()
+    const json = rendererCreateWithTheme(<Card boxShadowSize="md" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule(
       'box-shadow',
@@ -32,7 +31,7 @@ describe('Card', () => {
   })
 
   test('renders large box shadow with default border', () => {
-    const json = renderer.create(<Card boxShadowSize="lg" />).toJSON()
+    const json = rendererCreateWithTheme(<Card boxShadowSize="lg" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule(
       'box-shadow',
@@ -46,7 +45,7 @@ describe('Card', () => {
   })
 
   test('renders xlarge box shadow with default border', () => {
-    const json = renderer.create(<Card boxShadowSize="xl" />).toJSON()
+    const json = rendererCreateWithTheme(<Card boxShadowSize="xl" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule(
       'box-shadow',
@@ -60,9 +59,9 @@ describe('Card', () => {
   })
 
   test('renders medium box shadow with specified borderWidth', () => {
-    const json = renderer
-      .create(<Card borderWidth={2} boxShadowSize="md" />)
-      .toJSON()
+    const json = rendererCreateWithTheme(
+      <Card borderWidth={2} boxShadowSize="md" />
+    ).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule(
       'border',
@@ -76,9 +75,9 @@ describe('Card', () => {
   })
 
   test('renders medium box shadow with specified borderRadius', () => {
-    const json = renderer
-      .create(<Card borderRadius={0} boxShadowSize="md" />)
-      .toJSON()
+    const json = rendererCreateWithTheme(
+      <Card borderRadius={0} boxShadowSize="md" />
+    ).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule(
       'border',
@@ -93,7 +92,7 @@ describe('Card', () => {
 
   test('renders border 0 without warning', () => {
     console.error = jest.fn()
-    const json = renderer.create(<Card borderWidth={0} />).toJSON()
+    const json = rendererCreateWithTheme(<Card borderWidth={0} />).toJSON()
 
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border', '0')

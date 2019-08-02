@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
-import { getPaletteColor } from './utils'
+import { getPaletteColor, deprecatedColorValue } from './utils'
 
 const borders = ({ color, ...props }) => {
   const borderColor = color
@@ -56,7 +56,7 @@ Input.displayName = 'Input'
 Input.isField = true
 Input.propTypes = {
   id: PropTypes.string.isRequired,
-  color: PropTypes.string,
+  color: deprecatedColorValue(),
   ...borders.propTypes,
   ...space.propTypes
 }

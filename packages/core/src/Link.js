@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { applyVariations, getPaletteColor } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const Link = styled.a`
   cursor: pointer;
@@ -17,6 +17,10 @@ Link.displayName = 'Link'
 
 Link.defaultProps = {
   color: 'primary'
+}
+
+Link.propTypes = {
+  color: deprecatedColorValue()
 }
 
 export default Link

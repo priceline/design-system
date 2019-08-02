@@ -12,6 +12,7 @@ import {
 import {
   mapProps,
   deprecatedPropType,
+  deprecatedColorValue,
   applyVariations,
   getPaletteColor
 } from './utils'
@@ -56,7 +57,7 @@ Text.propTypes = {
   ...textAlign.propTypes,
   ...lineHeight.propTypes,
   ...space.propTypes,
-  color: PropTypes.string,
+  color: deprecatedColorValue(),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,

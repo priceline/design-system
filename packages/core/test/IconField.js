@@ -1,10 +1,9 @@
 import React from 'react'
-import TestRenderer from 'react-test-renderer'
 import { IconField, Icon, Input } from '../src'
 
 describe('IconField', () => {
   test('renders', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <IconField>
         <Icon name="Calendar" />
         <Input id="test" placeholder="IconField" />
@@ -14,7 +13,7 @@ describe('IconField', () => {
   })
 
   test('does not render unknown children', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <IconField>
         <pre>Does not render</pre>
       </IconField>
@@ -23,7 +22,7 @@ describe('IconField', () => {
   })
 
   test('adds styles to icons', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <IconField>
         <Icon name="Calendar" />
         <Input id="test" />
@@ -36,7 +35,7 @@ describe('IconField', () => {
   })
 
   test('adds styles to icons on the right', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <IconField>
         <Input id="test" />
         <Icon name="Calendar" />
@@ -49,7 +48,7 @@ describe('IconField', () => {
   })
 
   test('adds styles to the form field', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <IconField>
         <Icon name="Calendar" />
         <Input id="test" />

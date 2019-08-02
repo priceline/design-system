@@ -15,7 +15,7 @@ exports[`Link renders 1`] = `
 
 <a
   className="c0"
-  color="blue"
+  color="primary"
 >
   Dummy
 </a>

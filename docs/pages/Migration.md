@@ -2,8 +2,8 @@
 
 ## Absolute
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Absolute color="secondary" p={1} mt={-3}>
@@ -20,8 +20,8 @@
 
 ## Badge
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Badge color="primary">primary badge</Badge>
@@ -32,8 +32,8 @@
 
 ## Banner
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Banner color="primary" p={2} mb={1}>Primary banner</Banner>
@@ -48,8 +48,8 @@
 
 ## Box
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Box color="primary" p={2} mb={1}>Primary box</Box>
@@ -60,28 +60,23 @@
 
 ## Button
 
-- Updated to support palette colors with the `color` prop.
-- Updated to support three variations, `fill` (default), `outline` and `disabled`.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Updated to support two variations, `fill` (default) and `outline`.
 
 ```.jsx
 <Button mr={1}>Button</Button>
 <Button color="secondary" mr={1}>Button</Button>
 <Button color="error" mr={1}>Button</Button>
-<Button color="caution">Button</Button>
+<Button color="caution" mr={1}>Button</Button>
+<Button color="error" disabled>Button</Button>
 ```
 
 ```.jsx
 <Button variation="outline" mr={1}>Button</Button>
 <Button variation="outline" color="secondary" mr={1}>Button</Button>
 <Button variation="outline" color="error" mr={1}>Button</Button>
-<Button variation="outline" color="caution">Button</Button>
-```
-
-```.jsx
-<Button variation="disabled" mr={1}>Button</Button>
-<Button variation="disabled" color="secondary" mr={1}>Button</Button>
-<Button variation="disabled" color="error" mr={1}>Button</Button>
-<Button variation="disabled" color="caution">Button</Button>
+<Button variation="outline" color="caution" mr={1}>Button</Button>
+<Button variation="outline" color="error" disabled>Button</Button>
 ```
 
 ## Card
@@ -90,7 +85,7 @@
 
 ## Checkbox
 
-- Updated to support palette colors with the `color` prop.
+- Updated to support [palette](/palette) colors with the `color` prop.
 
 ```.jsx
 <Checkbox color="secondary" />
@@ -101,7 +96,7 @@
 
 ## CloseButton (WIP)
 
-- Updated to support palette colors with the `color` prop.
+- Updated to support [palette](/palette) colors with the `color` prop.
 
 ```.jsx
 <Flex>
@@ -116,8 +111,8 @@
 
 ## Divider
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the prop `borderColor` to `color` with a palette color.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the prop `borderColor` to `color` with a [palette](/palette) color.
 
 ```.jsx
 <Divider color="primary" />
@@ -125,20 +120,29 @@
 <Divider color="error" />
 ```
 
-## Flag (WIP)
+## Flag
+
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Card py={3}>
-  <Flag color="primary">
+  <Flag color="primary" mb={3}>
     Primary flag
   </Flag>
+  <Flag color="error" mb={3}>
+      Error flag
+    </Flag>
+  <Flag color="caution">
+      Caution flag
+    </Flag>
 </Card>
 ```
 
 ## Flex
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Flex color="alert">
@@ -162,8 +166,8 @@
 
 ## Heading
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Heading color="primary">Primary Heading</Heading>
@@ -172,8 +176,8 @@
 
 ## Hide
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Flex justifyContent="space-between">
@@ -188,8 +192,8 @@
 
 ## Hug
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Hug color="primary" text="Primary">
@@ -215,8 +219,8 @@
 
 ## Input
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Input color="primary" defaultValue="Primary" mb={2} />
@@ -225,8 +229,8 @@
 
 ## InputGroup
 
-- Updated to support palette colors with the `borderColor` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `borderColor` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <InputGroup borderColor="primary">
@@ -247,8 +251,8 @@
 
 ## Label
 
-- Updated to support palette colors with the `color` and `bg` props.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` and `bg` props.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Label color="primary" bg="background" p={2}>Primary label</Label>
@@ -256,8 +260,8 @@
 
 ## Link
 
-- Updated to support palette colors with the `color` prop.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` prop.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Link color="secondary">Secondary Link</Link>
@@ -276,7 +280,7 @@
 
 ## Radio
 
-- Updated to support palette colors with the `color` prop.
+- Updated to support [palette](/palette) colors with the `color` prop.
 
 ```.jsx
 <Label fontSize="14px">
@@ -293,20 +297,15 @@
 </Label>
 ```
 
-## RatingBadge (WIP)
+## RatingBadge
 
-- Updated to support palette colors with the `color` prop.
-- `todo` need to add a palette color, or should this even exist here?
-
-```.jsx
-<RatingBadge color="primary">9.0</RatingBadge>
-```
+- No changes required.
 
 ## RedButton
 
 - This component will be deprecated in v3
 - Migrate any uses to use `Button` with the correct `color` prop
-  - Depending on your use case either use the `error` or `warning` palette colors
+  - Depending on your use case either use the `error` or `warning` [palette](/palette) colors
 
 ```.jsx
 <Button color="error">Error Button</Button>
@@ -322,7 +321,7 @@
 
 ## Select
 
-- Updated to support palette colors with the `color` prop.
+- Updated to support [palette](/palette) colors with the `color` prop.
 
 ```.jsx
 <Select color="secondary">
@@ -337,8 +336,8 @@
 
 ## Stamp
 
-- Updated to support palette colors with the `color`, `bg` and `borderColor` props.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color`, `bg` and `borderColor` props.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Stamp color="primary" mr={2}>
@@ -354,8 +353,8 @@
 
 ## Text
 
-- Updated to support palette colors with the `color` props.
-- Migrate any uses of the component to use a palette color instead.
+- Updated to support [palette](/palette) colors with the `color` props.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
 
 ```.jsx
 <Text color="primary">Primary</Text>
@@ -363,9 +362,29 @@
 <Text color="error">Error</Text>
 ```
 
-## ToggleBadge (WIP)
+## ToggleBadge
 
-## Tooltip (WIP)
+- Updated to support [palette](/palette) colors with the `color` and `bg` props.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
+
+```.jsx
+<ToggleBadge color="secondary" selected>Flight + Hotel</ToggleBadge>
+<ToggleBadge color="secondary">Flight + Hotel + Car</ToggleBadge>
+<ToggleBadge color="secondary">Flight + Car</ToggleBadge>
+```
+
+## Tooltip
+
+- Updated to support [palette](/palette) colors with the `color` and `bg` props.
+- Migrate any uses of the component to use a [palette](/palette) color instead.
+
+```.jsx
+<Box mt={4}>
+  <Tooltip color="primary" top left>
+    primary tooltip
+  </Tooltip>
+</Box>
+```
 
 ## Truncate
 

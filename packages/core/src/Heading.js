@@ -1,5 +1,4 @@
 import Text from './Text'
-import theme from './theme'
 
 const Heading = Text.withComponent('h3')
 
@@ -7,8 +6,7 @@ Heading.displayName = 'Heading'
 
 Heading.defaultProps = {
   textStyle: 'display4',
-  m: 0,
-  theme
+  m: 0
 }
 
 Heading.h1 = Heading.withComponent('h1')

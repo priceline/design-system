@@ -24,13 +24,14 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ## Props
 
-| Prop        | Type                          | Description                                    |
-| ----------- | ----------------------------- | ---------------------------------------------- |
-| `radius`    | string                        | Custom button radius in pixel                  |
-| `size`      | string                        | Sets button size to small, medium or large     |
-| `width`     | number, string, or array      | Sets button width                              |
-| `variation` | `fill`, `outline`, `disabled` | The button variation                           |
-| `color`     | string                        | The color of the button, defaults to `primary` |
+| Prop        | Type                     | Description                                    |
+| ----------- | ------------------------ | ---------------------------------------------- |
+| `radius`    | string                   | Custom button radius in pixel                  |
+| `size`      | string                   | Sets button size to small, medium or large     |
+| `width`     | number, string, or array | Sets button width                              |
+| `variation` | `fill`, `outline`        | The button variation                           |
+| `color`     | string                   | The color of the button, defaults to `primary` |
+| `disabled`  | bool                     | Disabled the button and apply light color      |
 
 ## Variations
 
@@ -44,12 +45,6 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ```.jsx
 <Button variation="outline">Outline Button</Button>
-```
-
-### disabled
-
-```.jsx
-<Button variation="disabled">Disabled Button</Button>
 ```
 
 ## Color
@@ -67,9 +62,3 @@ Uses the color from `theme.palette.secondary.base`, and `theme.palette.secondary
 ```
 
 Uses the color from `theme.palette.error.base`, and `theme.palette.error.dark` for hover.
-
-```.jsx
-<Button variation="disabled" color="purple">Button</Button>
-```
-
-Uses the color from `theme.colors.purple`.

@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { space, themeGet } from 'styled-system'
 import { getPaletteColor } from './utils'
-import theme from './theme'
 import Box from './Box'
 import Input from './Input'
 
@@ -31,7 +30,6 @@ InputGroup.propTypes = {
 }
 
 InputGroup.defaultProps = {
-  theme,
   borderColor: 'border'
 }
 

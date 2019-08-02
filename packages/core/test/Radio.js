@@ -1,38 +1,31 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { Radio, ThemeProvider } from '../src'
 
 describe('Radio', () => {
   test('Selected, rendering', () => {
-    const json = renderer
-      .create(
-        <ThemeProvider>
-          <Radio checked />
-        </ThemeProvider>
-      )
-      .toJSON()
+    const json = rendererCreateWithTheme(
+      <ThemeProvider>
+        <Radio checked />
+      </ThemeProvider>
+    ).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('Not Selected, rendering', () => {
-    const json = renderer
-      .create(
-        <ThemeProvider>
-          <Radio />
-        </ThemeProvider>
-      )
-      .toJSON()
+    const json = rendererCreateWithTheme(
+      <ThemeProvider>
+        <Radio />
+      </ThemeProvider>
+    ).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('Disabled, rendering', () => {
-    const json = renderer
-      .create(
-        <ThemeProvider>
-          <Radio disabled />
-        </ThemeProvider>
-      )
-      .toJSON()
+    const json = rendererCreateWithTheme(
+      <ThemeProvider>
+        <Radio disabled />
+      </ThemeProvider>
+    ).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

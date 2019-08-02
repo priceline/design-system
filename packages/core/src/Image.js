@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import theme from './theme'
 
 const Image = styled.img`
   display: block;
@@ -8,9 +7,5 @@ const Image = styled.img`
 `
 
 Image.displayName = 'Image'
-
-Image.defaultProps = {
-  theme: theme
-}
 
 export default Image

@@ -4,10 +4,10 @@ import Card from './Card'
 import Flex from './Flex'
 import Icon from './Icon'
 import Text from './Text'
-import theme from './theme'
 import styled from 'styled-components'
 import { display } from 'styled-system'
 import PropTypes from 'prop-types'
+import { deprecatedColorValue } from './utils'
 
 const HugCard = styled(Card)`
   border-top-left-radius: ${props => props.theme.radius};
@@ -60,7 +60,8 @@ Hug.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.string
-  ])
+  ]),
+  color: deprecatedColorValue()
 }
 
 export default Hug

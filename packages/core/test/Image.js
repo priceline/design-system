@@ -1,5 +1,4 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { Image } from '../src'
 
 const imageSrc =
@@ -7,7 +6,7 @@ const imageSrc =
 
 describe('Image', () => {
   test('renders', () => {
-    const json = renderer.create(<Image src={imageSrc} />).toJSON()
+    const json = rendererCreateWithTheme(<Image src={imageSrc} />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

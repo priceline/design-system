@@ -1,7 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Card, Flex, Heading, Text, Divider } from 'pcln-design-system'
-import { createTheme } from '../../packages/core/dist/index.cjs'
+import {
+  Box,
+  Card,
+  Flex,
+  Heading,
+  Text,
+  Divider,
+  createTheme
+} from 'pcln-design-system'
 import select from 'select'
 import { PageTitle, Description, Code } from '../src/components'
 

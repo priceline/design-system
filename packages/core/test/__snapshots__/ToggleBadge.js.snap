@@ -27,7 +27,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 
 <button
   className="c0"
-  color="blue"
+  color="primary"
   fontSize={0}
   selected={true}
 />
@@ -41,7 +41,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
-  background-color: #0a0;
+  background-color: #ecf7ec;
   color: #c00;
   margin-left: 4px;
   margin-right: 4px;
@@ -55,7 +55,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
 }
 
 .c0:hover {
-  background-color: #0a0;
+  background-color: #ecf7ec;
 }
 
 <button
@@ -93,7 +93,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 
 <button
   className="c0"
-  color="blue"
+  color="primary"
   fontSize={0}
   selected={false}
 />

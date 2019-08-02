@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
 import Button from './Button'
-import theme from './theme'
 
 const TransparentButton = styled(Button)`
   padding: 0;
@@ -26,9 +25,5 @@ const IconButton = ({ name, size, color, ...props }) => (
 )
 
 IconButton.displayName = 'IconButton'
-
-IconButton.defaultProps = {
-  theme: theme
-}
 
 export default IconButton

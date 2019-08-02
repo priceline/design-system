@@ -10,8 +10,8 @@ exports[`Label Label hidden renders 1`] = `
   display: block;
   width: 100%;
   margin: 0;
-  font-size: 10px;
   color: #4f6f8f;
+  font-size: 10px;
   font-weight: 700;
   position: absolute;
   width: 1px;
@@ -22,7 +22,7 @@ exports[`Label Label hidden renders 1`] = `
 
 <label
   className="c0"
-  color="gray"
+  color="border.light"
   fontSize="10px"
   fontWeight="bold"
   hidden={true}
@@ -39,15 +39,15 @@ exports[`Label Label nowrap renders 1`] = `
   display: block;
   width: 100%;
   margin: 0;
-  font-size: 10px;
   color: #4f6f8f;
+  font-size: 10px;
   font-weight: 700;
   white-space: nowrap;
 }
 
 <label
   className="c0"
-  color="gray"
+  color="border.light"
   fontSize="10px"
   fontWeight="bold"
 />
@@ -63,14 +63,14 @@ exports[`Label it renders 1`] = `
   display: block;
   width: 100%;
   margin: 0;
-  font-size: 10px;
   color: #4f6f8f;
+  font-size: 10px;
   font-weight: 700;
 }
 
 <label
   className="c0"
-  color="gray"
+  color="border.light"
   fontSize="10px"
   fontWeight="bold"
 />

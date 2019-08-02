@@ -14,6 +14,7 @@ Box.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
   color: deprecatedColorValue(),
+  bg: deprecatedColorValue(),
   ...textAlign.propTypes
 }
 
