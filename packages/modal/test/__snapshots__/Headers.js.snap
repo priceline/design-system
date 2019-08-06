@@ -105,7 +105,6 @@ exports[`ModalHeader render 1`] = `
     <button
       class="c4 c5 c6"
       style="height: 24px;"
-      tabindex="1"
       title="close"
     >
       <svg

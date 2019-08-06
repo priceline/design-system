@@ -1,5 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Stamp bg blue sets background color 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: top;
+  min-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+  color: #4f6f8f;
+  background-color: #007aff;
+}
+
+<div
+  className="c0"
+  color="gray"
+  fontSize={0}
+/>
+`;
+
+exports[`Stamp borderColor green sets border color 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: top;
+  min-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0a0;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+  color: #4f6f8f;
+  background-color: #f4f6f8;
+}
+
+<div
+  className="c0"
+  color="gray"
+  fontSize={0}
+/>
+`;
+
 exports[`Stamp color blue sets text and icon color 1`] = `
 .c0 {
   display: -webkit-inline-box;
@@ -224,6 +300,44 @@ exports[`Stamp color red sets text and icon color 1`] = `
 <div
   className="c0"
   color="red"
+  fontSize={0}
+/>
+`;
+
+exports[`Stamp has default borderGray border color 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: top;
+  min-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+  color: #4f6f8f;
+  background-color: #f4f6f8;
+}
+
+<div
+  className="c0"
+  color="gray"
   fontSize={0}
 />
 `;
