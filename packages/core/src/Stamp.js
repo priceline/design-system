@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { themeGet, space, fontSize } from 'styled-system'
 import { getPaletteColor, deprecatedColorValue } from './utils'
