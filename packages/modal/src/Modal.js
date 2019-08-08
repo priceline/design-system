@@ -6,6 +6,35 @@ import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, Flex } from 'pcln-design-system'
 
+const OVERLAY_ANIMATION = transitionstate => `
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
+  ${transitionstate === 'entering' ? `opacity: 0;` : ''}
+  ${transitionstate === 'entered' ? `opacity: 1;` : ''}
+  ${transitionstate === 'exiting' ? `opacity: 0;` : ''}
+  ${transitionstate === 'exited' ? `opacity: 0;` : ''}
+`
+
+const DIALOG_ANIMATION = transitionstate => `
+  transform: scale(0.5);
+  transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
+  ${transitionstate === 'entering' ? `transform: scale(0.5);` : ''}
+  ${transitionstate === 'entered' ? `transform: scale(1);` : ''}
+  ${transitionstate === 'exiting' ? `transform: scale(0.5);` : ''}
+  ${transitionstate === 'exited' ? `transform: scale(0.5);` : ''}
+`
+
+const getAnimation = ({
+  transitionstate,
+  defaultAnimation,
+  customAnimation = null
+}) => {
+  if (customAnimation && typeof customAnimation === 'function') {
+    return customAnimation(transitionstate)
+  }
+  return defaultAnimation(transitionstate)
+}
+
 const Overlay = styled(DialogOverlay)`
   background-color: rgba(0, 0, 0, 0.7);
   bottom: 0;
@@ -14,34 +43,11 @@ const Overlay = styled(DialogOverlay)`
   position: fixed;
   right: 0;
   top: 0;
-  z-index: ${props => props.zindex || 100};
-  font-family: ${props => props.theme.font};
-  opacity: 0;
-  transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-
-  ${props =>
-    props.transitionstate === 'entering' &&
-    `
-    opacity: 0;
+  ${props => `
+    z-index: ${props.zindex || 100};
+    font-family: ${props.theme.font};
   `}
-
-  ${props =>
-    props.transitionstate === 'entered' &&
-    `
-    opacity: 1;
-  `}
-
-  ${props =>
-    props.transitionstate === 'exiting' &&
-    `
-    opacity: 0;
-  `}
-
-  ${props =>
-    props.transitionstate === 'exited' &&
-    `
-    opacity: 0;
-  `}
+  ${getAnimation};
 `
 
 const Dialog = styled(DialogContent)`
@@ -62,33 +68,7 @@ const Dialog = styled(DialogContent)`
     `
     max-height: none;
   `}
-
-  transform: scale(0.5);
-  transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-
-  ${props =>
-    props.transitionstate === 'entering' &&
-    `
-    transform: scale(0.5);
-  `}
-
-  ${props =>
-    props.transitionstate === 'entered' &&
-    `
-    transform: scale(1);
-  `}
-
-  ${props =>
-    props.transitionstate === 'exiting' &&
-    `
-    transform: scale(0.5);
-  `}
-
-  ${props =>
-    props.transitionstate === 'exited' &&
-    `
-    transform: scale(0.5);
-  `}
+  ${getAnimation}
 `
 
 const HeaderWrapper = styled.div`
@@ -133,7 +113,7 @@ const OverlayWrapper = styled.div`
 
 const DialogWrapper = styled(Box)`
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: ${({ verticalAlignment }) => verticalAlignment};
   ${props =>
     props.enableoverflow &&
     `
@@ -159,7 +139,10 @@ const Modal = ({
   header,
   disableCloseButton,
   enableOverflow,
-  height
+  height,
+  dialogAnimation,
+  overlayAnimation,
+  verticalAlignment
 }) => (
   <Transition in={isOpen} unmountOnExit timeout={500}>
     {state => (
@@ -168,9 +151,14 @@ const Modal = ({
         zindex={zIndex}
         transitionstate={state}
         initialFocusRef={null}
+        defaultAnimation={OVERLAY_ANIMATION}
+        customAnimation={overlayAnimation}
       >
         <OverlayWrapper>
-          <DialogWrapper enableoverflow={enableOverflow}>
+          <DialogWrapper
+            enableoverflow={enableOverflow}
+            verticalAlignment={verticalAlignment}
+          >
             <Dialog
               width={width}
               bg={bg}
@@ -178,6 +166,8 @@ const Modal = ({
               transitionstate={state}
               className={className}
               enableoverflow={enableOverflow ? 'true' : null}
+              defaultAnimation={DIALOG_ANIMATION}
+              customAnimation={dialogAnimation}
             >
               <DialogInnerWrapper flexDirection="column">
                 {header && <HeaderWrapper>{header}</HeaderWrapper>}
@@ -210,7 +200,10 @@ Modal.defaultProps = {
   enableOverflow: false,
   header: null,
   bg: 'white',
-  height: 420
+  height: 420,
+  overlayAnimation: null,
+  dialogAnimation: null,
+  verticalAlignment: 'middle'
 }
 
 Modal.propTypes = {
@@ -226,7 +219,10 @@ Modal.propTypes = {
   headerBg: PropTypes.string,
   imgMode: PropTypes.bool,
   className: PropTypes.string,
-  header: PropTypes.any
+  header: PropTypes.any,
+  overlayAnimation: PropTypes.func,
+  dialogAnimation: PropTypes.func,
+  verticalAlignment: PropTypes.string
 }
 
 export default Modal
