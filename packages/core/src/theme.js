@@ -1,4 +1,5 @@
-import { createTextStyles, createColorStyles } from './createTheme'
+import createTextStyles from './createTextStyles'
+import createColorStyles from './createColorStyles'
 
 const createMediaQuery = n => `@media screen and (min-width:${n})`
 
