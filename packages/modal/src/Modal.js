@@ -191,7 +191,6 @@ const Modal = ({
                       data-testid="pcln-modal-close"
                       header={header}
                       onClick={onClose}
-                      tabIndex="1"
                     />
                   )}
                   {children}
