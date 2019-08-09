@@ -10,7 +10,7 @@ const StyledModal = styled(Modal)`
 const CUSTOM_ANIMATION = transitionState => `
   transform: translateY(-122%);
   transition: transform 0.3s linear;
-  ${transitionstate === 'entered' ? `transform: translateY(0%);` : ''}
+  ${transitionState === 'entered' ? `transform: translateY(0%);` : ''}
 `
 
 class ModalStory extends React.Component {
