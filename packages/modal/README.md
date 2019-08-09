@@ -26,6 +26,9 @@ import { Modal } from 'pcln-modal'
   disableCloseButton={true} //there will be a floating close button, when enabledOverflow = true, it's there by default
   enableOverflow={false} //when enabled, the modal will extend over the screen based on content, otherwise it will follow height
   height={['100px', '200px']} //responsive height, when enableOverflow={true}, it's not in use
+  verticalAlignment="middle" // Aligns dialog body vertically - options = ['middle', 'top', 'bottom']
+  overlayAnimation={null} // Accepts a function which overwrites default animation
+  dialogAnimation={null} // Accepts a function which overwrites default animation
 >
   <SomeChildComponent />
 </Modal>
@@ -58,4 +61,21 @@ class SomeWrapper extends React.component {
     })
   }
 }
+```
+
+## Overwriting Animations
+
+For its animations, this Modal currently uses `react-transition-group`. This means that the following hooks are exposed during the animation life cycle: [ `entering`, `entered`, `exiting`, `exited`]
+
+We can then use these states to write custom animations, like so:
+
+```javascript
+const MY_ANIMATION = transitionState => `
+  transform: scale(0.5);
+  transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
+  ${transitionState === 'entering' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'entered' ? `transform: scale(1);` : ''}
+  ${transitionState === 'exiting' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'exited' ? `transform: scale(0.5);` : ''}
+`
 ```

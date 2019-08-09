@@ -30,5 +30,6 @@ IconButton.displayName = 'IconButton'
 IconButton.defaultProps = {
   theme: theme
 }
+IconButton.isIconButton = true
 
 export default IconButton

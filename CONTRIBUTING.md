@@ -96,12 +96,30 @@ To publish the packages to npm, you'll need to be added as an owner for the
 packages you're publishing. Use the #design-system Slack channel for more
 information.
 
+Before Publishing:
+
+- Publishing is very easy once you have access to the NPM package. **Please Be Careful** 🤗
+- As of v2, Node.js v8+ is required
+- Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc](https://www.npmjs.com/package/npmrc) tool can be used to switch to NPM public registry.
+
 These Lerna commands can be helpful when publishing:
 
 - Run `npm run changed` to see which packages have changed since the last
   release.
 - Run `npm run diff` to see a diff of all packages since the last release.
 - Run `npm run publish` to publish the updated packages with Lerna.
+
+The following process is recommended for publishing packages individually:
+
+1. `npmrc public` - This command may differ based on your setup, but essentially you want to ensure that you are pointing to a public NPM registry
+2. `npm login`
+3. cd into packages/package-you-want-to-update
+4. `npm version patch`
+5. `cd ../..` - cd back to root directory
+6. `NPM_CONFIG_OTP=XXXXXX npm run publish from-package` - XXXXXX will be a 6-digit number from your authenticator app. If publishing fails, ensure that you are a collaborator on the subpackges you are trying to publish. (Have a maintainer run `npm owner add {your username} {package name (such as pcln-icons)}` on your behalf.)
+7. commit and push your changes to master (Note: you need to be an admin of the design-system GitHub repository to do this).
+
+After publishing please [document your release](https://github.com/pricelinelabs/design-system/releases/new)
 
 ### Static Docs Site
 
