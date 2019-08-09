@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const StyledModal = styled(Modal)`
   height: ${props => props.height};
 `
-const CUSTOM_ANIMATION = transitionstate => `
+const CUSTOM_ANIMATION = transitionState => `
   transform: translateY(-122%);
   transition: transform 0.3s linear;
   ${transitionstate === 'entered' ? `transform: translateY(0%);` : ''}
