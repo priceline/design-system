@@ -9,7 +9,7 @@ export default [
     ]
   },
   {
-    section: 'Components',
+    section: 'Core Components',
     links: [
       { name: 'Absolute', path: '/Absolute' },
       { name: 'BackgroundImage', path: '/BackgroundImage' },
@@ -36,7 +36,6 @@ export default [
       { name: 'InputGroup', path: '/InputGroup' },
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
-      { name: 'Modal', path: '/Modal' },
       { name: 'Radio', path: '/Radio' },
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
@@ -47,6 +46,13 @@ export default [
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
       { name: 'Truncate', path: '/Truncate' }
+    ]
+  },
+  {
+    section: 'Modal Components',
+    links: [
+      { name: 'Modal', path: '/Modal' },
+      { name: 'ScrollLock', path: '/ScrollLock' }
     ]
   },
   {

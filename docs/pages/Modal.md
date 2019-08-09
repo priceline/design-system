@@ -32,5 +32,5 @@ _Note: ModalDemo is a simple class for demonstration that maintains an `isOpen` 
 
 ## Prevent Background Scrolling
 
-Use the [ScrollLock](https://github.com/pricelinelabs/design-system/tree/master/packages/modal#scrolllock-helper) helper
+Use the [ScrollLock](/ScrollLock) helper
 to prevent the background content from scrolling when the modal is open.
