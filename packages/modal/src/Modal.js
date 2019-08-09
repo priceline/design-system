@@ -6,34 +6,31 @@ import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, Flex } from 'pcln-design-system'
 
-const OVERLAY_ANIMATION = transitionstate => `
+const OVERLAY_ANIMATION = transitionState => `
   opacity: 0;
   transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-  ${transitionstate === 'entering' ? `opacity: 0;` : ''}
-  ${transitionstate === 'entered' ? `opacity: 1;` : ''}
-  ${transitionstate === 'exiting' ? `opacity: 0;` : ''}
-  ${transitionstate === 'exited' ? `opacity: 0;` : ''}
+  ${transitionState === 'entering' ? `opacity: 0;` : ''}
+  ${transitionState === 'entered' ? `opacity: 1;` : ''}
+  ${transitionState === 'exiting' ? `opacity: 0;` : ''}
+  ${transitionState === 'exited' ? `opacity: 0;` : ''}
 `
 
-const DIALOG_ANIMATION = transitionstate => `
+const DIALOG_ANIMATION = transitionState => `
   transform: scale(0.5);
   transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-  ${transitionstate === 'entering' ? `transform: scale(0.5);` : ''}
-  ${transitionstate === 'entered' ? `transform: scale(1);` : ''}
-  ${transitionstate === 'exiting' ? `transform: scale(0.5);` : ''}
-  ${transitionstate === 'exited' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'entering' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'entered' ? `transform: scale(1);` : ''}
+  ${transitionState === 'exiting' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'exited' ? `transform: scale(0.5);` : ''}
 `
 
 const getAnimation = ({
   transitionstate,
   defaultAnimation,
   customAnimation = null
-}) => {
-  if (customAnimation && typeof customAnimation === 'function') {
-    return customAnimation(transitionstate)
-  }
-  return defaultAnimation(transitionstate)
-}
+}) => typeof customAnimation === 'function'
+  ? customAnimation(transitionstate)
+  : defaultAnimation(transitionstate)
 
 const Overlay = styled(DialogOverlay)`
   background-color: rgba(0, 0, 0, 0.7);
