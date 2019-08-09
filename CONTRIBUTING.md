@@ -98,7 +98,7 @@ information.
 
 Before Publishing:
 
-- Publishing is very easy once you have access to the NPM package **Please Be Careful** 🤗
+- Publishing is very easy once you have access to the NPM package. **Please Be Careful** 🤗
 - As of v2, Node.js v8+ is required
 - Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc](https://www.npmjs.com/package/npmrc) tool can be used to switch to NPM public registry.
 
