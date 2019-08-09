@@ -117,7 +117,7 @@ The following process is recommended for publishing packages individually:
 4. `npm version patch`
 5. `cd ../..` - cd back to root directory
 6. `NPM_CONFIG_OTP=XXXXXX npm run publish from-package` - XXXXXX will be a 6-digit number from your authenticator app. If publishing fails, ensure that you are a collaborator on the subpackges you are trying to publish. (Have a maintainer run `npm owner add {your username} {package name (such as pcln-icons)}` on your behalf.)
-7. commit and push your changes to master (Note: you need to be an admin of the design-system github repository to do this)
+7. commit and push your changes to master (Note: you need to be an admin of the design-system GitHub repository to do this).
 
 After publishing please [document your release](https://github.com/pricelinelabs/design-system/releases/new)
 
