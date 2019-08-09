@@ -70,12 +70,12 @@ For its animations, this Modal currently uses `react-transition-group`. This mea
 We can then use these states to write custom animations, like so:
 
 ```javascript
-const MY_ANIMATION = transitionstate => `
+const MY_ANIMATION = transitionState => `
   transform: scale(0.5);
   transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-  ${transitionstate === 'entering' ? `transform: scale(0.5);` : ''}
-  ${transitionstate === 'entered' ? `transform: scale(1);` : ''}
-  ${transitionstate === 'exiting' ? `transform: scale(0.5);` : ''}
-  ${transitionstate === 'exited' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'entering' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'entered' ? `transform: scale(1);` : ''}
+  ${transitionState === 'exiting' ? `transform: scale(0.5);` : ''}
+  ${transitionState === 'exited' ? `transform: scale(0.5);` : ''}
 `
 ```
