@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'pcln-design-system'
 
-export default class ModalHandler extends React.Component {
+export default class ModalDemo extends React.Component {
   constructor(props) {
     super(props)
 

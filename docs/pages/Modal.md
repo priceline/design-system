@@ -2,10 +2,10 @@
 
 Use `Modal` to create an a11y-friendly modal dialog.
 
-_Note: ModalHandler is a simple class for demonstration that maintains an `isOpen` variable in its state._
+_Note: ModalDemo is a simple class for demonstration that maintains an `isOpen` variable in its state._
 
 ```.jsx
-<ModalHandler>
+<ModalDemo>
     <Modal
       header={<Heading.h1>Modal Title</Heading.h1>}
       width={["200px", "300px"]}
@@ -13,7 +13,7 @@ _Note: ModalHandler is a simple class for demonstration that maintains an `isOpe
     >
         <Text>Modal Content</Text>
     </Modal>
-</ModalHandler>
+</ModalDemo>
 ```
 
 ## Props

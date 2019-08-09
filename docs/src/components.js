@@ -1,7 +1,7 @@
 import * as DS from 'pcln-design-system'
 import Slider from 'pcln-slider'
 import { Modal } from 'pcln-modal'
-import ModalHandler from './ModalHandler'
+import ModalDemo from './ModalDemo'
 import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space, fontSize, color, theme } from 'styled-system'
@@ -106,7 +106,7 @@ const components = {
   table: Table,
   Slider,
   Modal,
-  ModalHandler
+  ModalDemo
 }
 
 components.h1.defaultProps = {
