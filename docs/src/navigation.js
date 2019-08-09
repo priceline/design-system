@@ -36,6 +36,7 @@ export default [
       { name: 'InputGroup', path: '/InputGroup' },
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
+      { name: 'Modal', path: '/Modal' },
       { name: 'Radio', path: '/Radio' },
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
