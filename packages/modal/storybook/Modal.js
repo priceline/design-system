@@ -7,6 +7,11 @@ import styled from 'styled-components'
 const StyledModal = styled(Modal)`
   height: ${props => props.height};
 `
+const CUSTOM_ANIMATION = transitionState => `
+  transform: translateY(-122%);
+  transition: transform 0.3s linear;
+  ${transitionState === 'entered' ? `transform: translateY(0%);` : ''}
+`
 
 class ModalStory extends React.Component {
   constructor(props) {
@@ -99,5 +104,14 @@ storiesOf('Modal', module)
       width={['100px', '200px', '500px']}
       imgMode
       disableCloseButton
+    />
+  ))
+
+  .add('With custom animation', () => (
+    <ModalStory
+      header={<SmallModalHeader />}
+      width={['100px', '200px', '500px']}
+      dialogAnimation={CUSTOM_ANIMATION}
+      verticalAlignment="top"
     />
   ))
