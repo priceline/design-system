@@ -25,5 +25,6 @@ const IconButton = ({ name, size, color, ...props }) => (
 )
 
 IconButton.displayName = 'IconButton'
+IconButton.isIconButton = true
 
 export default IconButton

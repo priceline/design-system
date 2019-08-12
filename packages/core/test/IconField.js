@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconField, Icon, Input } from '../src'
+import { IconField, Icon, IconButton, Input } from '../src'
 
 describe('IconField', () => {
   test('renders', () => {
@@ -7,6 +7,27 @@ describe('IconField', () => {
       <IconField>
         <Icon name="Calendar" />
         <Input id="test" placeholder="IconField" />
+      </IconField>
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders icon button', () => {
+    const json = rendererCreateWithTheme(
+      <IconField>
+        <Input id="test" placeholder="IconField" />
+        <IconButton name="close" />
+      </IconField>
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders icon, input and icon button together', () => {
+    const json = rendererCreateWithTheme(
+      <IconField>
+        <Icon name="Calendar" />
+        <Input id="test" placeholder="IconField" />
+        <IconButton name="close" />
       </IconField>
     ).toJSON()
     expect(json).toMatchSnapshot()
@@ -57,5 +78,18 @@ describe('IconField', () => {
     const [icon, input] = json.children
     expect(input.props.style.paddingLeft).toBe(40)
     expect(input.props.style.paddingRight).toBe(undefined)
+  })
+
+  test('adds styles to the icon button on the right', () => {
+    const json = rendererCreateWithTheme(
+      <IconField>
+        <Input id="test" />
+        <IconButton name="close" />
+      </IconField>
+    ).toJSON()
+    const [, iconButton] = json.children
+    expect(iconButton.props.style.pointerEvents).toBe('auto')
+    expect(iconButton.props.style.marginLeft).toBe(-32)
+    expect(iconButton.props.style.marginRight).toBe(8)
   })
 })

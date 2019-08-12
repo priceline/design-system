@@ -74,4 +74,34 @@ describe('Modal', () => {
     )
     expect(getByText('header')).toBeTruthy()
   })
+  test('renders with top alignment', () => {
+    const { getByText, getByTestId, container } = rerender(
+      <ThemeProvider>
+        <Modal isOpen verticalAlignment="top">
+          <div data-content>Content</div>
+        </Modal>
+      </ThemeProvider>
+    )
+    expect(getByText('Content')).toBeTruthy()
+    expect(getByTestId('pcln-modal-close')).toBeTruthy()
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
+  test('renders with custom animation', () => {
+    const { getByText, getByTestId, container } = rerender(
+      <ThemeProvider>
+        <Modal
+          isOpen
+          overlayAnimation={transitionstate =>
+            `${transitionstate === 'entering' ? `transform: scale(0.5);` : ''}`
+          }
+        >
+          <div data-content>Content</div>
+        </Modal>
+      </ThemeProvider>
+    )
+    expect(getByText('Content')).toBeTruthy()
+    expect(getByTestId('pcln-modal-close')).toBeTruthy()
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })
