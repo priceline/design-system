@@ -15,10 +15,10 @@ exports[`Button disabled prop sets 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #e8f2ff;
-  color: #001833;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
 }
 
 .c0:hover {
@@ -47,10 +47,10 @@ exports[`Button renders 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
@@ -79,10 +79,10 @@ exports[`Button size large sets height and font-size 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   font-size: 16px;
   padding: 12px 22px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
@@ -112,10 +112,10 @@ exports[`Button size medium sets height and font-size 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
@@ -145,10 +145,10 @@ exports[`Button size small sets height and font-size 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   font-size: 12px;
   padding: 7px 12px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
@@ -178,11 +178,11 @@ exports[`Button width prop sets width to 100% 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   width: 100%;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
@@ -212,10 +212,10 @@ exports[`Button without disabled prop sets 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {

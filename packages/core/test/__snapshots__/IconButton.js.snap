@@ -15,10 +15,10 @@ exports[`IconButton renders without props 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #007aff;
-  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c1:hover {

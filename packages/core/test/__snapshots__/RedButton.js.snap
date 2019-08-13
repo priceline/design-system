@@ -15,10 +15,10 @@ exports[`RedButton disabled prop sets 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #fbebeb;
-  color: #001833;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #fbebeb;
+  color: #001833;
 }
 
 .c0:hover {
@@ -47,10 +47,10 @@ exports[`RedButton renders 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #c00;
-  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #c00;
+  color: #fff;
 }
 
 .c0:hover {
@@ -79,10 +79,10 @@ exports[`RedButton without disabled prop sets 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #c00;
-  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #c00;
+  color: #fff;
 }
 
 .c0:hover {

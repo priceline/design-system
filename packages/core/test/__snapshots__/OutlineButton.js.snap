@@ -15,11 +15,11 @@ exports[`OutlineButton disabled prop sets 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
   color: #e8f2ff;
   box-shadow: inset 0 0 0 2px #e8f2ff;
   background-color: transparent;
-  font-size: 14px;
-  padding: 9.5px 18px;
 }
 
 .c0:hover {
@@ -48,11 +48,11 @@ exports[`OutlineButton renders 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
   color: #007aff;
   box-shadow: inset 0 0 0 2px #007aff;
   background-color: transparent;
-  font-size: 14px;
-  padding: 9.5px 18px;
 }
 
 .c0:hover {
@@ -82,11 +82,11 @@ exports[`OutlineButton without disabled prop sets 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
   color: #007aff;
   box-shadow: inset 0 0 0 2px #007aff;
   background-color: transparent;
-  font-size: 14px;
-  padding: 9.5px 18px;
 }
 
 .c0:hover {
