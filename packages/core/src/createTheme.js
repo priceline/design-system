@@ -4,6 +4,19 @@ import createColorStyles from './createColorStyles'
 const deepmerge = require('deepmerge')
 
 /**
+ * Adds aliases to an array of keys
+ *
+ * @param {Array} arr The array to add aliases to
+ */
+const addAliases = arr => {
+  arr.forEach((val, key) => {
+    arr[['sm', 'md', 'lg', 'xl'][key]] = val
+  })
+
+  return arr
+}
+
+/**
  * Create the palette based on passed in theme
  *
  * @param {Object=} palette The passed in palette
@@ -137,7 +150,8 @@ export default (theme = {}, customBreakpoints = null) => {
   return {
     ...mergedTheme,
     contrastRatio: mergedTheme.contrastRatio || 2.6,
-    breakpoints: customBreakpoints || mergedTheme.breakpoints,
+    breakpoints: addAliases(customBreakpoints || mergedTheme.breakpoints),
+    mediaQueries: addAliases(mergedTheme.mediaQueries),
     palette: createPalette(mergedTheme),
     colorStyles: createColorStyles(mergedTheme),
     textStyles: createTextStyles(mergedTheme)
