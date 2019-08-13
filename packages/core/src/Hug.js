@@ -7,7 +7,7 @@ import Text from './Text'
 import styled from 'styled-components'
 import { display } from 'styled-system'
 import PropTypes from 'prop-types'
-import { deprecatedColorValue } from './utils'
+import { applyVariations, deprecatedColorValue } from './utils'
 
 const HugCard = styled(Card)`
   border-top-left-radius: ${props => props.theme.radius};
@@ -15,6 +15,7 @@ const HugCard = styled(Card)`
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   overflow: hidden;
+  ${applyVariations('Hug')}
 `
 
 const BorderConcealer = styled(Box)`

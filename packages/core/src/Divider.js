@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 import { space, width, borderColor } from 'styled-system'
 
 const Divider = styled.hr`
@@ -10,6 +9,7 @@ const Divider = styled.hr`
   border-color: ${({ color, borderColor, ...props }) =>
       getPaletteColor('base')({ color: borderColor || color, ...props })}
     ${space} ${width};
+  ${applyVariations('Divider')}
 `
 
 Divider.displayName = 'Divider'

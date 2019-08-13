@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { space, fontSize, fontWeight, color } from 'styled-system'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { space, fontSize, fontWeight } from 'styled-system'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const nowrap = props =>
   props.nowrap
@@ -34,6 +34,7 @@ const Label = styled.label`
   ${space} ${fontSize} ${fontWeight};
   ${nowrap}
   ${accessiblyHide}
+  ${applyVariations('Label')}
 `
 
 Label.propTypes = {

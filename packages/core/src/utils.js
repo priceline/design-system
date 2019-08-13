@@ -141,7 +141,7 @@ export const applyVariations = (componentName, variations = null) => props => {
   }
 
   return css`
-    ${themeGet(`componentStyles.${componentName}`, '')}
+    ${themeGet(`componentStyles.${componentName}.${color}`, '')}
   `
 }
 

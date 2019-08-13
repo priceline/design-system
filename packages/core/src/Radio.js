@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
-import { deprecatedColorValue, getPaletteColor } from './utils'
+import { applyVariations, deprecatedColorValue, getPaletteColor } from './utils'
 
 const RadioWrap = styled.div`
   display: inline-block;
@@ -12,6 +12,7 @@ const RadioWrap = styled.div`
         ? null
         : `color: ${getPaletteColor('base')(props)};`};
   }
+  ${applyVariations('Radio')}
 `
 
 const RadioInput = styled.input`

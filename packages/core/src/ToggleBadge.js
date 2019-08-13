@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize } from 'styled-system'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const ToggleBadge = styled.button`
   border-radius: ${props => props.theme.radius};
@@ -21,6 +21,7 @@ const ToggleBadge = styled.button`
     background-color: ${({ color, ...props }) =>
       getPaletteColor('light')({ color: props.bg || color, ...props })};
   }
+  ${applyVariations('ToggleBadge')}
 `
 
 ToggleBadge.displayName = 'ToggleBadge'

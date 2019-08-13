@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 import { borderRadius } from 'styled-system'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const boxShadow = props => {
   const boxShadows = {
@@ -34,6 +34,7 @@ const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
 
 const Card = styled(Box)`
   ${boxShadow} ${boxBorder} ${borderRadius}
+  ${applyVariations('Card')}
 `
 
 Card.propTypes = {
