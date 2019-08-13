@@ -194,7 +194,7 @@ export const getPaletteColor = name => props => {
 export const hasPaletteColor = props => {
   return (
     props.theme &&
-    typeof props.theme.palette === 'object' &&
+    props.theme.palette &&
     typeof props.color === 'string' &&
     Object.keys(props.theme.palette).includes(props.color.split('.')[0])
   )
