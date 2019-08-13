@@ -8,7 +8,12 @@ import {
   flexWrap,
   flexDirection
 } from 'styled-system'
-import { mapProps, deprecatedPropType, deprecatedColorValue } from './utils'
+import {
+  applyVariations,
+  mapProps,
+  deprecatedPropType,
+  deprecatedColorValue
+} from './utils'
 
 const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
@@ -20,6 +25,7 @@ const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
   ${alignItems} ${justifyContent}
   ${flexDirection}
   ${flexWrap}
+  ${applyVariations('Flex')}
 `)
 
 Flex.propTypes = {

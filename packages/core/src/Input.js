@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const borders = ({ color, ...props }) => {
   const borderColor = color
@@ -50,6 +50,7 @@ const Input = styled.input`
   }
 
   ${borders} ${space};
+  ${applyVariations('Input')}
 `
 
 Input.displayName = 'Input'

@@ -6,8 +6,8 @@ import Icon from './Icon'
 import CloseButton from './CloseButton'
 import Heading from './Heading'
 import PropTypes from 'prop-types'
-import { withTheme } from 'styled-components'
-import { hasPaletteColor, deprecatedColorValue } from './utils'
+import styled, { withTheme } from 'styled-components'
+import { applyVariations, hasPaletteColor, deprecatedColorValue } from './utils'
 
 const bannerColors = {
   green: {
@@ -47,6 +47,10 @@ const bannerColors = {
   }
 }
 
+const StyledBox = styled(Box)`
+  ${applyVariations('Banner')}
+`
+
 const Banner = props => {
   const bannerColor =
     bannerColors[
@@ -59,7 +63,11 @@ const Banner = props => {
       : bannerColor.color
 
   return (
-    <Box {...props} bg={bannerColor.backgroundColor || props.bg} color={color}>
+    <StyledBox
+      {...props}
+      bg={bannerColor.backgroundColor || props.bg}
+      color={color}
+    >
       <Flex justifyContent="space-between" alignItems="flex-start">
         {!!icon && !!props.showIcon && (
           <Icon name={icon} mr={2} size={24} mt="-2px" />
@@ -81,7 +89,7 @@ const Banner = props => {
           />
         )}
       </Flex>
-    </Box>
+    </StyledBox>
   )
 }
 

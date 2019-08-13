@@ -4,8 +4,8 @@ import { applyVariations, color, deprecatedColorValue } from './utils'
 
 const Box = styled.div`
   ${space} ${width} ${textAlign}
-  ${applyVariations('Box')}
   ${color}
+  ${applyVariations('Box')}
 `
 
 Box.displayName = 'Box'

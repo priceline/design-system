@@ -84,10 +84,8 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   border-radius: ${props => props.theme.radius};
   border-width: 0;
   border-style: solid;
-
-  ${applyVariations('Button', variations)}
-
   ${width} ${size} ${space};
+  ${applyVariations('Button', variations)}
 `)
 
 Button.propTypes = {

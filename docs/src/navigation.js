@@ -1,6 +1,5 @@
 export default [
   { name: 'Getting Started', path: '/' },
-  { name: 'Theme Migration', path: '/Migration' },
   {
     section: 'Foundations',
     links: [

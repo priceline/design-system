@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 import { fontWeight, borderRadius } from 'styled-system'
 import Box from './Box'
+import { applyVariations } from './utils'
 
 const RatingBadge = styled(Box)`
   display: inline-block;
   line-height: 1.5;
   ${fontWeight} ${borderRadius};
+  ${applyVariations('RatingBadge')}
 `
 
 RatingBadge.defaultProps = {

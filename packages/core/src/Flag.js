@@ -5,6 +5,7 @@ import Flex from './Flex'
 import Hide from './Hide'
 import Box from './Box'
 import {
+  applyVariations,
   getPaletteColor,
   hasPaletteColor,
   color,
@@ -66,8 +67,12 @@ const RelativeHide = styled(Hide)`
   position: relative;
 `
 
+const StyledFlex = styled(Flex)`
+  ${applyVariations('Flag')}
+`
+
 const Flag = ({ color, bg, children, width, ...props }) => (
-  <Flex width={width} {...props} ml={[0, -2]}>
+  <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
       <FlagShadow
         width="4px"
@@ -90,7 +95,7 @@ const Flag = ({ color, bg, children, width, ...props }) => (
       color={hasPaletteColor({ color, ...props }) ? color : bg}
       ml={-2}
     />
-  </Flex>
+  </StyledFlex>
 )
 
 Flag.propTypes = {

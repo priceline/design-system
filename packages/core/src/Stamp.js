@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { themeGet, space, fontSize } from 'styled-system'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const Stamp = styled.div`
   display: inline-flex;
@@ -23,6 +23,7 @@ const Stamp = styled.div`
       : ''}
   
   ${space} ${fontSize};
+  ${applyVariations('Stamp')}
 `
 
 Stamp.displayName = 'Stamp'

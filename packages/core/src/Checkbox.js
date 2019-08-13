@@ -3,7 +3,7 @@ import styled, { withTheme } from 'styled-components'
 import PropTypes from 'prop-types'
 import Icon from './Icon'
 import Box from './Box'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -48,6 +48,8 @@ const CheckBoxWrapper = styled(Box)`
       display: none;
     }
   }
+
+  ${applyVariations('Checkbox')}
 `
 
 const StyledInput = styled.input`
