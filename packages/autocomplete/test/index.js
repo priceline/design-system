@@ -1,11 +1,10 @@
 import React from 'react'
-import TestRenderer from 'react-test-renderer'
 import us from 'us'
 import { Autocomplete } from '../src'
 
 describe('Autocomplete', () => {
   test('renders', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <Autocomplete>
         <Autocomplete.Label>Test</Autocomplete.Label>
         <Autocomplete.Input />
@@ -24,7 +23,7 @@ describe('Autocomplete', () => {
   })
 
   test('renders open', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <Autocomplete defaultIsOpen={true}>
         <Autocomplete.Menu>
           {us.STATES.map(state => (
@@ -42,7 +41,7 @@ describe('Autocomplete', () => {
   })
 
   test('renders with highlightedIndex', () => {
-    const json = TestRenderer.create(
+    const json = rendererCreateWithTheme(
       <Autocomplete defaultIsOpen={true} defaultHighlightedIndex={0}>
         <Autocomplete.Menu>
           {us.STATES.map(state => (

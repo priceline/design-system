@@ -16,6 +16,9 @@
       "lcov",
       "html"
     ],
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
     "testMatch": [
       "<rootDir>/test/**/*.js"
     ]

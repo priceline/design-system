@@ -22,18 +22,18 @@ exports[`Stamp bg blue sets background color 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
+  color: #4f6f8f;
+  background-color: #007aff;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
-  color: #4f6f8f;
-  background-color: #007aff;
 }
 
 <div
   className="c0"
-  color="gray"
+  color="border.light"
   fontSize={0}
 />
 `;
@@ -60,18 +60,18 @@ exports[`Stamp borderColor green sets border color 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #0a0;
+  color: #4f6f8f;
+  background-color: #f4f6f8;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
-  color: #4f6f8f;
-  background-color: #f4f6f8;
 }
 
 <div
   className="c0"
-  color="gray"
+  color="border.light"
   fontSize={0}
 />
 `;
@@ -326,18 +326,18 @@ exports[`Stamp has default borderGray border color 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
+  color: #4f6f8f;
+  background-color: #f4f6f8;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 12px;
-  color: #4f6f8f;
-  background-color: #f4f6f8;
 }
 
 <div
   className="c0"
-  color="gray"
+  color="border.light"
   fontSize={0}
 />
 `;

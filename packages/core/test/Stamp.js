@@ -44,19 +44,19 @@ describe('Stamp', () => {
   })
 
   test('bg blue sets background color', () => {
-    const json = renderer.create(<Stamp bg="blue" />).toJSON()
+    const json = rendererCreateWithTheme(<Stamp bg="blue" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.blue)
   })
 
   test('borderColor green sets border color', () => {
-    const json = renderer.create(<Stamp borderColor="green" />).toJSON()
+    const json = rendererCreateWithTheme(<Stamp borderColor="green" />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-color', theme.colors.green)
   })
 
   test('has default borderGray border color', () => {
-    const json = renderer.create(<Stamp />).toJSON()
+    const json = rendererCreateWithTheme(<Stamp />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-color', theme.colors.borderGray)
   })

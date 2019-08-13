@@ -13,20 +13,17 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
-.c1:disabled {
-  opacity: 0.25;
-}
-
 .c1:hover {
   background-color: #049;
+  color: #fff;
 }
 
 .c0 {
@@ -39,6 +36,7 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   <button
     aria-label="Click to open popover with more information"
     class="c1"
+    color="primary"
   >
     Trigger Button
   </button>
