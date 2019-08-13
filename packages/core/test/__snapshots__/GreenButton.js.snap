@@ -22,7 +22,7 @@ exports[`GreenButton disabled prop sets 1`] = `
 }
 
 .c0:hover {
-  background-color: null;
+  background-color: inherit;
 }
 
 <button

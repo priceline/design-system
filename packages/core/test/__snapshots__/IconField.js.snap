@@ -129,20 +129,17 @@ exports[`IconField renders icon button 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
-.c3:disabled {
-  opacity: 0.25;
-}
-
 .c3:hover {
   background-color: #049;
+  color: #fff;
 }
 
 .c2 {
@@ -212,7 +209,7 @@ exports[`IconField renders icon button 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <input
     className="c1"
@@ -227,6 +224,7 @@ exports[`IconField renders icon button 1`] = `
   />
   <button
     className="c2 c3"
+    color="primary"
     style={
       Object {
         "alignSelf": "center",
@@ -283,20 +281,17 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
+  background-color: #007aff;
+  color: #fff;
   font-size: 14px;
   padding: 9.5px 18px;
 }
 
-.c4:disabled {
-  opacity: 0.25;
-}
-
 .c4:hover {
   background-color: #049;
+  color: #fff;
 }
 
 .c3 {
@@ -366,7 +361,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <svg
     aria-hidden="true"
@@ -404,6 +399,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   />
   <button
     className="c3 c4"
+    color="primary"
     style={
       Object {
         "alignSelf": "center",
