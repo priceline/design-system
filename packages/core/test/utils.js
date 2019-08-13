@@ -1,4 +1,4 @@
-import { mapProps, deprecatedPropType } from '../src/utils'
+import { mapProps, deprecatedPropType, getTextColorOn } from '../src/utils'
 
 describe('utils', () => {
   describe('deprecatedPropType', () => {
@@ -22,6 +22,20 @@ describe('utils', () => {
         'Component'
       )
       expect(err).toBe(undefined)
+    })
+  })
+
+  describe('getTextColorOn', () => {
+    test('returns empty string if no palette', () => {
+      expect(getTextColorOn('test')({ theme: {} })).toEqual('')
+    })
+
+    test('returns default if no color', () => {
+      expect(
+        getTextColorOn('test')({
+          theme: { palette: { text: { base: 'base' } } }
+        })
+      ).toEqual('base')
     })
   })
 })
