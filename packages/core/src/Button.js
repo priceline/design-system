@@ -43,7 +43,7 @@ const variations = {
 
     &:hover {
       background-color: ${props =>
-        props.disabled ? 'inherit' : getPaletteColor('dark')(props)};
+        getPaletteColor(props.disabled ? 'light' : 'dark')(props)};
       ${props =>
         props.disabled ? '' : `color: ${getTextColorOn('dark')(props)};`}
     }
