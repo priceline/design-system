@@ -1,114 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ModalHeader render 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #fff;
-  background-color: #0a0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c6 {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 1.5;
-  cursor: pointer;
-  border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
-  border-width: 0;
-  border-style: solid;
-  font-size: 14px;
-  padding: 9.5px 18px;
-  margin-left: auto;
-}
-
-.c6:disabled {
-  opacity: 0.25;
-}
-
-.c6:hover {
-  background-color: #049;
-}
-
-.c5 {
-  padding: 0;
-  height: auto;
-  background-color: transparent;
-  color: inherit;
-}
-
-.c5:hover {
-  background-color: transparent;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  height: 40px;
-}
-
-.c4 svg {
-  vertical-align: top;
-}
-
-.c4:focus {
-  background-color: #049;
-  outline: none;
-}
-
 <div
-  class="c0"
+  class="sc-cHGsZl dxMwdk"
 >
   <div
-    class="c1 c2"
+    class="sc-dNLxif ucJqe sc-ifAKCX fHzRUi"
     color="white"
   >
     <div
-      class="c3"
+      class="sc-EHOje fJrAdN"
       font-size="1"
     >
       test
     </div>
     <button
-      class="c4 c5 c6"
+      class="sc-jqCOkK jAIGtI sc-gZMcBi cAgNkG sc-iwsKbI XVsKP"
       style="height: 24px;"
       title="close"
     >
       <svg
-        class="c7"
+        class="sc-dnqmqq gCwbKF"
         fill="currentcolor"
         height="24"
         viewBox="0 0 24 24"
@@ -124,28 +36,11 @@ exports[`ModalHeader render 1`] = `
 `;
 
 exports[`SmallModalHeader render 1`] = `
-.c2 {
-  background-color: #0a0;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  height: 8px;
-}
-
 <div
-  class="c0"
+  class="sc-cHGsZl dxMwdk"
 >
   <div
-    class="c1 c2"
+    class="sc-jbKcbu cMHPMg sc-bdVaJa eSHXdW"
   />
 </div>
 `;

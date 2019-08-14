@@ -1,89 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Autocomplete renders 1`] = `
-.c4 {
-  margin-top: 4px;
-  background-color: #fff;
-}
-
-.c3 {
-  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16);
-  border: 0;
-  border-radius: 2px;
-}
-
-.c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 0px;
-  border-style: solid;
-  border-color: #c0cad5;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0;
-  border-color: #c0cad5;
-  box-shadow: 0 0 0 1px #c0cad5;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c1::-moz-placeholder {
-  color: #4f6f8f;
-}
-
-.c1:-ms-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c1::placeholder {
-  color: #4f6f8f;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
-}
-
-.c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.c2 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  max-height: 256px;
-  overflow-y: auto;
-}
-
 <div
   aria-expanded={false}
   aria-haspopup="listbox"
@@ -97,8 +14,8 @@ exports[`Autocomplete renders 1`] = `
   }
 >
   <label
-    className="c0"
-    color="border.light"
+    className="sc-cMljjf fTtdJC"
+    color="gray"
     fontSize="10px"
     fontWeight="bold"
     htmlFor="downshift-0-input"
@@ -112,7 +29,7 @@ exports[`Autocomplete renders 1`] = `
     aria-controls={null}
     aria-labelledby="downshift-0-label"
     autoComplete="off"
-    className="c1"
+    className="sc-jWBwVP iFOPYV"
     id="downshift-0-input"
     onBlur={[Function]}
     onChange={[Function]}
@@ -121,7 +38,7 @@ exports[`Autocomplete renders 1`] = `
   />
   <div
     aria-labelledby="downshift-0-label"
-    className="c2 c3 c4"
+    className="sc-kjoXOD cTsYwp sc-kGXeez dpMHNO sc-bwzfXH cGrtGY"
     height="256px"
     id="downshift-0-menu"
     role="listbox"
