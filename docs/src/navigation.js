@@ -43,6 +43,7 @@ export default [
       { name: 'Relative', path: '/Relative' },
       { name: 'Select', path: '/Select' },
       { name: 'Stamp', path: '/Stamp' },
+      { name: 'Stepper', path: '/Stepper' },
       { name: 'Text', path: '/Text' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
