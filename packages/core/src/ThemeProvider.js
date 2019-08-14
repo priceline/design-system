@@ -24,10 +24,6 @@ const ThemeProvider = ({ theme, customBreakpoints, ...props }) => {
   )
 }
 
-// ThemeProvider.defaultProps = {
-//   theme: defaultTheme
-// }
-
 ThemeProvider.propTypes = {
   /** The theme to drive the look and feel */
   theme: PropTypes.shape({
