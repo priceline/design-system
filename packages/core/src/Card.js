@@ -27,7 +27,7 @@ const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
     borderWidth === 0
       ? '0'
       : `${borderWidth}px solid ${getPaletteColor('base')({
-          color: color || borderColor,
+          color: borderColor,
           ...props
         })}`
 })

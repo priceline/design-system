@@ -171,6 +171,10 @@ export const getPaletteColor = name => props => {
     return ''
   }
 
+  if (/^#[a-z0-9]{3,6}$/i.test(color)) {
+    return color
+  }
+
   const paletteColor = themeGet(
     `palette.${color.indexOf('.') !== -1 ? color : color + '.' + finalName}`
   )(props)

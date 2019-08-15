@@ -21,7 +21,6 @@ exports[`FormField renders 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -140,7 +139,6 @@ exports[`FormField renders with Icon 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -283,7 +281,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;

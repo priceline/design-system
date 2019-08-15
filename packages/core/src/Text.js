@@ -36,6 +36,13 @@ const Text = mapProps(({ align, ...props }) => ({
   ...props
 }))(styled.div`
   color: ${getPaletteColor('base')};
+  ${props =>
+    props.bg
+      ? `background-color: ${getPaletteColor('base')({
+          ...props,
+          color: props.bg
+        })};`
+      : ''}
   ${applyVariations('Text')}
   ${textStyle}
   ${fontSize}
