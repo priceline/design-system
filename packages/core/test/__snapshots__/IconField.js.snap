@@ -27,7 +27,6 @@ exports[`IconField renders 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -172,7 +171,6 @@ exports[`IconField renders icon button 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -324,7 +322,6 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;

@@ -32,7 +32,6 @@ const Input = styled.input`
   border-radius: ${themeGet('radius')};
   border-width: 0px;
   border-style: solid;
-  border-color: ${themeGet('colors.borderGray')};
 
   padding-top: 14px;
   padding-bottom: 14px;
