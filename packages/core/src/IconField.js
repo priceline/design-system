@@ -17,7 +17,8 @@ const IconField = props => {
           alignSelf: 'center',
           pointerEvents: child.type.isIcon ? 'none' : 'auto',
           marginLeft: i === 0 ? 8 : -32,
-          marginRight: i === 0 ? -32 : 8
+          marginRight: i === 0 ? -32 : 8,
+          position: 'relative'
         }
       })
     }
