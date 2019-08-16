@@ -27,6 +27,7 @@ class Checkbox extends Component {
 
   onChange = () => {
     this.setState({ checked: this.checkboxRef.current.checked })
+    this.props.onChange()
   }
 
   render() {
@@ -45,6 +46,8 @@ class Checkbox extends Component {
           {...this.props}
           onChange={this.onChange}
           innerRef={this.checkboxRef}
+          role="checkbox"
+          ariaChecked={checked}
         />
         <Icon name="BoxChecked" size={size} data-name="checked" />
         <Icon name="BoxEmpty" size={size} data-name="empty" />
