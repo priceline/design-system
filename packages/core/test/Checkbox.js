@@ -1,9 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Checkbox, Icon, theme } from '../src'
+import { Checkbox, theme } from '../src'
 import { render, fireEvent, cleanup } from 'react-testing-library'
 
 afterEach(cleanup)
+
+const wrapperTestID = 'checkbox-wrapper'
 
 describe('Checkbox', () => {
   test('renders without the theme passed specifically', () => {
@@ -56,5 +58,45 @@ describe('Checkbox', () => {
     const checkbox = container.querySelector('[type=checkbox]')
     fireEvent.click(checkbox)
     expect(onChange).toHaveBeenCalled()
+  })
+
+  test('renders when checked and focused', () => {
+    const onChange = jest.fn()
+    const { getByRole, getByTestId } = render(
+      <Checkbox
+        id="check-box"
+        onChange={onChange}
+        theme={theme}
+        defaultChecked
+      />
+    )
+
+    fireEvent.focus(getByRole('checkbox'))
+
+    const wrapper = getByTestId(wrapperTestID)
+
+    expect(wrapper).toHaveStyleRule('border', `1px solid ${theme.colors.blue}`)
+    expect(wrapper).toHaveStyleRule('background-color', theme.colors.lightBlue)
+
+    fireEvent.blur(getByRole('checkbox'))
+
+    expect(wrapper).toHaveStyleRule('border', `1px solid transparent`)
+  })
+
+  test('renders when not checked and focused', () => {
+    const onChange = jest.fn()
+    const { getByRole, getByTestId } = render(
+      <Checkbox id="check-box" onChange={onChange} theme={theme} />
+    )
+
+    fireEvent.focus(getByRole('checkbox'))
+
+    const wrapper = getByTestId(wrapperTestID)
+
+    expect(wrapper).toHaveStyleRule(
+      'border',
+      `1px solid ${theme.colors.borderGray}`
+    )
+    expect(wrapper).toHaveStyleRule('background-color', theme.colors.lightGray)
   })
 })
