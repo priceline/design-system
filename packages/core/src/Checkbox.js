@@ -21,11 +21,20 @@ const CheckBoxWrapper = styled(Box)`
   position: relative;
   vertical-align: middle;
   cursor: pointer;
+  padding: 2px;
   color: ${props =>
     props.disabled ? props.theme.colors.borderGray : props.theme.colors.gray};
 
   svg[data-name='checked'] {
     display: none;
+  }
+  
+  > input:hover ~ svg[data-name='empty'] {
+      color: ${props =>
+        props.disabled
+          ? props.theme.colors.borderGray
+          : props.theme.colors.blue};
+          }
   }
 
   > input:checked {
@@ -40,6 +49,13 @@ const CheckBoxWrapper = styled(Box)`
     & ~ svg[data-name='empty'] {
       display: none;
     }
+    
+    &:hover ~ svg[data-name='checked'] {
+      color: ${props =>
+        props.disabled
+          ? props.theme.colors.borderGray
+          : props.theme.colors.darkBlue};
+          }
   }
 `
 
