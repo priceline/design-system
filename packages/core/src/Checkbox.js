@@ -1,29 +1,89 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
+import React, { Component } from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from './theme'
 import Icon from './Icon'
 import Box from './Box'
 
-const Checkbox = props => {
-  const { disabled, size } = props
-  return (
-    <CheckBoxWrapper disabled={disabled}>
-      <StyledInput type="checkbox" {...props} />
-      <Icon name="BoxChecked" size={size} data-name="checked" />
-      <Icon name="BoxEmpty" size={size} data-name="empty" />
-    </CheckBoxWrapper>
-  )
+class Checkbox extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isFocused: false,
+      checked: props.defaultChecked
+    }
+
+    this.checkboxRef = React.createRef()
+  }
+
+  onFocus = () => {
+    this.setState({ isFocused: true })
+  }
+
+  onBlur = () => {
+    this.setState({ isFocused: false })
+  }
+
+  onChange = () => {
+    this.setState({ checked: this.checkboxRef.current.checked })
+  }
+
+  render() {
+    const { disabled, size } = this.props
+    const { isFocused, checked } = this.state
+    return (
+      <CheckBoxWrapper
+        disabled={disabled}
+        focused={isFocused}
+        onFocus={this.onFocus}
+        onBlur={this.onBlur}
+        checked={checked}
+      >
+        <StyledInput
+          type="checkbox"
+          {...this.props}
+          onChange={this.onChange}
+          innerRef={this.checkboxRef}
+        />
+        <Icon name="BoxChecked" size={size} data-name="checked" />
+        <Icon name="BoxEmpty" size={size} data-name="empty" />
+      </CheckBoxWrapper>
+    )
+  }
+}
+
+function getFocusStyles({ theme, focused, checked }) {
+  if (focused) {
+    if (checked) {
+      return `
+      border: 1px solid ${theme.colors.blue};
+      background-color: ${theme.colors.lightBlue};
+      `
+    } else {
+      return `
+      border: 1px solid ${theme.colors.borderGray};
+      background-color: ${theme.colors.lightGray};
+      `
+    }
+  } else {
+    return `border: 1px solid transparent;`
+  }
 }
 
 const CheckBoxWrapper = styled(Box)`
-  display: inline-block;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
   position: relative;
   vertical-align: middle;
-  cursor: pointer;
   padding: 2px;
+  cursor: pointer;
   color: ${props =>
     props.disabled ? props.theme.colors.borderGray : props.theme.colors.gray};
+  
+  
+  ${getFocusStyles};
 
   svg[data-name='checked'] {
     display: none;
