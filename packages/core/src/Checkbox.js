@@ -40,6 +40,7 @@ class Checkbox extends Component {
         onFocus={this.onFocus}
         onBlur={this.onBlur}
         checked={checked}
+        data-testid="checkbox-wrapper"
       >
         <StyledInput
           type="checkbox"

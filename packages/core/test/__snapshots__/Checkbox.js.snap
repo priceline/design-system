@@ -58,6 +58,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 <div
   checked={true}
   className="c0 "
+  data-testid="checkbox-wrapper"
   disabled={true}
   onBlur={[Function]}
   onFocus={[Function]}
@@ -163,6 +164,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 <div
     class="c0 "
+    data-testid="checkbox-wrapper"
     disabled=""
   >
     <input
@@ -265,6 +267,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 <div
     class="c0 "
+    data-testid="checkbox-wrapper"
   >
     <input
       class="c1"
@@ -365,6 +368,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 
 <div
     class="c0 "
+    data-testid="checkbox-wrapper"
   >
     <input
       class="c1"
