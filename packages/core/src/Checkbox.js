@@ -5,23 +5,17 @@ import theme from './theme'
 import Icon from './Icon'
 import Box from './Box'
 
-function Checkbox(props) {
+const Checkbox = props => {
   const { disabled, size } = props
+
+  // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
+  const borderAdjustedSize = size + 4
+
   return (
     <CheckBoxWrapper disabled={disabled}>
       <StyledInput type="checkbox" {...props} role="checkbox" />
-      <Icon
-        name="BoxChecked"
-        size={size}
-        data-name="checked"
-        data-testid="input-checked"
-      />
-      <Icon
-        name="BoxEmpty"
-        size={size}
-        data-name="empty"
-        data-testid="input-empty"
-      />
+      <Icon name="BoxChecked" size={borderAdjustedSize} data-name="checked" />
+      <Icon name="BoxEmpty" size={borderAdjustedSize} data-name="empty" />
     </CheckBoxWrapper>
   )
 }
@@ -39,6 +33,7 @@ const CheckBoxWrapper = styled(Box)`
   svg {
     border: 1px solid transparent;
     border-radius: 4px;
+    padding: 2px;
   }
 
   svg[data-name='checked'] {
@@ -46,11 +41,9 @@ const CheckBoxWrapper = styled(Box)`
   }
   
   > input:hover ~ svg[data-name='empty'] {
-      color: ${props =>
-        props.disabled
-          ? props.theme.colors.borderGray
-          : props.theme.colors.blue};
-          }
+    color: ${props =>
+      props.disabled ? props.theme.colors.borderGray : props.theme.colors.blue};
+      }
   }
   
   > input {
@@ -83,7 +76,7 @@ const CheckBoxWrapper = styled(Box)`
         props.disabled
           ? props.theme.colors.borderGray
           : props.theme.colors.darkBlue};
-          }
+        }
   }
 `
 
