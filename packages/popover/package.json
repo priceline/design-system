@@ -1,6 +1,6 @@
 {
   "name": "pcln-popover",
-  "version": "2.0.3",
+  "version": "2.0.5-alpha.0",
   "description": "React component for popover",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -28,9 +28,9 @@
   },
   "peerDependencies": {
     "pcln-design-system": ">=1.x || >=2.x",
-    "styled-components": ">=3.x || >= 4.x",
     "react": ">=16.3.0",
-    "react-dom": ">=16.3.0"
+    "react-dom": ">=16.3.0",
+    "styled-components": ">=3.x || >= 4.x"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.4.4",

@@ -1,6 +1,6 @@
 {
   "name": "pcln-icons",
-  "version": "2.0.9",
+  "version": "2.0.5-alpha.0",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
@@ -21,14 +21,14 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@svgr/cli": "^4.1.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
-    "prop-types": "^15.7.2"
+    "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "styled-components": ">=3.x || >=4.x",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "styled-components": ">=3.x || >=4.x"
   },
   "jest": {
     "setupFilesAfterEnv": [
