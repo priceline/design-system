@@ -8,7 +8,6 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 .c0 {
-  border-radius: 4px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -22,7 +21,11 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   padding: 2px;
   cursor: pointer;
   color: #c0cad5;
+}
+
+.c0 svg {
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .c0 svg[data-name='checked'] {
@@ -33,6 +36,11 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   color: #c0cad5;
 }
 
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
+}
+
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
   color: #c0cad5;
@@ -40,6 +48,11 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 .c0 > input:checked ~ svg[data-name='empty'] {
   display: none;
+}
+
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
 }
 
 .c0 > input:checked:hover ~ svg[data-name='checked'] {
@@ -56,19 +69,15 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 <div
-  checked={true}
   className="c0 "
-  data-testid="checkbox-wrapper"
   disabled={true}
-  onBlur={[Function]}
-  onFocus={[Function]}
 >
   <input
     className="c1"
     defaultChecked={true}
     disabled={true}
     id="check-box"
-    onChange={[Function]}
+    onChange={[MockFunction]}
     role="checkbox"
     size={20}
     type="checkbox"
@@ -77,6 +86,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     aria-hidden="true"
     className="c2"
     data-name="checked"
+    data-testid="input-checked"
     fill="currentcolor"
     focusable="false"
     height={20}
@@ -92,6 +102,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     aria-hidden="true"
     className="c2"
     data-name="empty"
+    data-testid="input-empty"
     fill="currentcolor"
     focusable="false"
     height={20}
@@ -115,7 +126,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 .c0 {
-  border-radius: 4px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -129,7 +139,11 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   padding: 2px;
   cursor: pointer;
   color: #c0cad5;
+}
+
+.c0 svg {
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .c0 svg[data-name='checked'] {
@@ -140,6 +154,11 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   color: #c0cad5;
 }
 
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
+}
+
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
   color: #c0cad5;
@@ -147,6 +166,11 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 .c0 > input:checked ~ svg[data-name='empty'] {
   display: none;
+}
+
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
 }
 
 .c0 > input:checked:hover ~ svg[data-name='checked'] {
@@ -164,7 +188,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 <div
     class="c0 "
-    data-testid="checkbox-wrapper"
     disabled=""
   >
     <input
@@ -179,6 +202,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
       aria-hidden="true"
       class="c2"
       data-name="checked"
+      data-testid="input-checked"
       fill="currentcolor"
       focusable="false"
       height="20"
@@ -194,6 +218,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
       aria-hidden="true"
       class="c2"
       data-name="empty"
+      data-testid="input-empty"
       fill="currentcolor"
       focusable="false"
       height="20"
@@ -218,7 +243,6 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 .c0 {
-  border-radius: 4px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -232,7 +256,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   padding: 2px;
   cursor: pointer;
   color: #4f6f8f;
+}
+
+.c0 svg {
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .c0 svg[data-name='checked'] {
@@ -243,6 +271,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   color: #007aff;
 }
 
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
+}
+
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
   color: #007aff;
@@ -250,6 +283,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 .c0 > input:checked ~ svg[data-name='empty'] {
   display: none;
+}
+
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
 }
 
 .c0 > input:checked:hover ~ svg[data-name='checked'] {
@@ -267,7 +305,6 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 <div
     class="c0 "
-    data-testid="checkbox-wrapper"
   >
     <input
       class="c1"
@@ -280,6 +317,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
       aria-hidden="true"
       class="c2"
       data-name="checked"
+      data-testid="input-checked"
       fill="currentcolor"
       focusable="false"
       height="20"
@@ -295,6 +333,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
       aria-hidden="true"
       class="c2"
       data-name="empty"
+      data-testid="input-empty"
       fill="currentcolor"
       focusable="false"
       height="20"
@@ -319,7 +358,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 .c0 {
-  border-radius: 4px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -333,7 +371,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   padding: 2px;
   cursor: pointer;
   color: #4f6f8f;
+}
+
+.c0 svg {
   border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .c0 svg[data-name='checked'] {
@@ -344,6 +386,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   color: #007aff;
 }
 
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
+}
+
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
   color: #007aff;
@@ -351,6 +398,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 
 .c0 > input:checked ~ svg[data-name='empty'] {
   display: none;
+}
+
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
 }
 
 .c0 > input:checked:hover ~ svg[data-name='checked'] {
@@ -368,7 +420,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 
 <div
     class="c0 "
-    data-testid="checkbox-wrapper"
   >
     <input
       class="c1"
@@ -381,6 +432,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
       aria-hidden="true"
       class="c2"
       data-name="checked"
+      data-testid="input-checked"
       fill="currentcolor"
       focusable="false"
       height="20"
@@ -396,6 +448,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
       aria-hidden="true"
       class="c2"
       data-name="empty"
+      data-testid="input-empty"
       fill="currentcolor"
       focusable="false"
       height="20"
