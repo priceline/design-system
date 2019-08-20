@@ -65,7 +65,8 @@ const createPalette = ({ palette = {}, ...theme }) => {
         dark: darkGreen
       },
       text: {
-        light: white,
+        lightest: white,
+        light: gray,
         base: text,
         dark: '#001023'
       },

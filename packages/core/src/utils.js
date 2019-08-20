@@ -221,8 +221,8 @@ export const getTextColorOn = name => props => {
     if (color) {
       // add warning for contrast
 
-      return getContrastRatio(text.light, color) >= theme.contrastRatio
-        ? text.light
+      return getContrastRatio(text.lightest, color) >= theme.contrastRatio
+        ? text.lightest
         : text.base
     }
 
