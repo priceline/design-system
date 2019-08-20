@@ -44,8 +44,8 @@ const Overlay = styled(DialogOverlay)`
   ${props => `
     z-index: ${props.zindex || 100};
     font-family: ${props.theme.font};
-    line-height: ${props => props.theme.lineHeights.standard};
-    font-weight: ${props => props.theme.fontWeights.medium};
+    line-height: ${props.theme.lineHeights?.standard};
+    font-weight: ${props.theme.fontWeights?.medium};
   `}
   * {
     box-sizing: border-box;
