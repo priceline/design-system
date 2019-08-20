@@ -267,8 +267,8 @@ exports[`Tooltip top center 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #fff;
   background-color: #000;
+  color: #fff;
 }
 
 .c0 {
@@ -336,8 +336,8 @@ exports[`Tooltip top left 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #fff;
   background-color: #007aff;
+  color: #fff;
 }
 
 .c0 {
@@ -400,8 +400,8 @@ exports[`Tooltip top right 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #fff;
   background-color: #c00;
+  color: #fff;
 }
 
 .c0 {

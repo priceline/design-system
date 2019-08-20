@@ -11,15 +11,15 @@ const ToggleBadge = styled.button`
   font-weight: ${props => props.theme.bold};
   font-family: inherit;
   cursor: pointer;
-  background-color: ${({ color, ...props }) =>
+  background-color: ${props =>
     props.selected
-      ? getPaletteColor('light')({ color: props.bg || color, ...props })
+      ? getPaletteColor(props.bg || props.color, 'light')(props)
       : props.unSelectedBg};
   color: ${getPaletteColor('base')};
   ${space} ${fontSize};
   &:hover {
-    background-color: ${({ color, ...props }) =>
-      getPaletteColor('light')({ color: props.bg || color, ...props })};
+    background-color: ${props =>
+      getPaletteColor(props.bg || props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
 `

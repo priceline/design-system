@@ -1,7 +1,7 @@
-import React from 'react'
+import styled from 'styled-components'
 import Button from './Button'
 
-const OutlineButton = props => <Button variation="outline" {...props} />
+const OutlineButton = styled(Button).attrs({ variation: 'outline' })``
 
 OutlineButton.displayName = 'OutlineButton'
 

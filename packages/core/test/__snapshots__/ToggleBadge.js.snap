@@ -41,7 +41,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
-  background-color: #ecf7ec;
+  background-color: #0a0;
   color: #c00;
   margin-left: 4px;
   margin-right: 4px;
@@ -55,7 +55,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
 }
 
 .c0:hover {
-  background-color: #ecf7ec;
+  background-color: #0a0;
 }
 
 <button

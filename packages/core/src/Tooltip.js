@@ -69,8 +69,8 @@ const TooltipContent = styled(Box)`
   position: absolute;
   border-radius: ${({ theme }) => theme.radii[1]}px;
   box-sizing: border-box;
-  background: ${({ color, bg, ...props }) =>
-    getPaletteColor('base')({ color: bg || color, ...props })};
+  background: ${props =>
+    getPaletteColor(props.bg || props.color, 'base')(props)};
   text-align: center;
 
   ${tooltipPosition} ${tooltipAlign} &::after {
@@ -80,12 +80,9 @@ const TooltipContent = styled(Box)`
     height: 0;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent ${({ color, bg, ...props }) =>
-      getPaletteColor('base')({ color: bg || color, ...props })} ${({
-  color,
-  bg,
-  ...props
-}) => getPaletteColor('base')({ color: bg || color, ...props })};
+    border-color: transparent transparent ${props =>
+      getPaletteColor(props.bg || props.color, 'base')(props)} ${props =>
+  getPaletteColor(props.bg || props.color, 'base')(props)};
 
     ${arrow} ${arrowPosition} ${arrowAlign} ${arrowShadow};
   }

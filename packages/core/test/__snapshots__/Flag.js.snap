@@ -16,8 +16,8 @@ exports[`Flag renders 1`] = `
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c9 {
@@ -61,8 +61,8 @@ exports[`Flag renders 1`] = `
 .c6 {
   font-size: 12px;
   border-radius: 0 0 2px 0;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
   z-index: 2;
 }
 
@@ -131,8 +131,8 @@ exports[`Flag renders with hex value as bg color 1`] = `
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  color: #fff;
   background-color: #085397;
+  color: #fff;
 }
 
 .c9 {
@@ -179,8 +179,8 @@ exports[`Flag renders with hex value as bg color 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  color: #fff;
   background-color: #085397;
+  color: #fff;
   z-index: 2;
 }
 
@@ -250,8 +250,8 @@ exports[`Flag renders with theme color as bg color 1`] = `
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  color: #fff;
   background-color: #70b;
+  color: #fff;
 }
 
 .c10 {
@@ -298,8 +298,8 @@ exports[`Flag renders with theme color as bg color 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  color: #fff;
   background-color: #70b;
+  color: #fff;
   z-index: 2;
 }
 
@@ -378,8 +378,8 @@ exports[`Flag renders with width prop 1`] = `
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c9 {
@@ -431,8 +431,8 @@ exports[`Flag renders with width prop 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
   z-index: 2;
 }
 

@@ -7,8 +7,8 @@ exports[`Banner accepts non-preset colors 1`] = `
 
 .c0 {
   text-align: left;
-  color: #0a0;
   background-color: #4f6f8f;
+  color: #0a0;
 }
 
 .c1 {
@@ -71,8 +71,8 @@ exports[`Banner accepts non-preset colors 1`] = `
 exports[`Banner renders content from children props 1`] = `
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -168,8 +168,8 @@ exports[`Banner renders with blue bg 1`] = `
 
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #007aff;
+  color: #fff;
 }
 
 .c1 {
@@ -254,8 +254,8 @@ exports[`Banner renders with blue bg 1`] = `
 exports[`Banner renders with custom iconName and size 1`] = `
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -344,8 +344,8 @@ exports[`Banner renders with custom iconName and size 1`] = `
 exports[`Banner renders with green bg 1`] = `
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -438,8 +438,8 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 .c0 {
   text-align: left;
-  color: #049;
   background-color: #e8f2ff;
+  color: #049;
 }
 
 .c1 {
@@ -528,8 +528,8 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 .c0 {
   text-align: left;
-  color: #060;
   background-color: #ecf7ec;
+  color: #060;
 }
 
 .c1 {
@@ -618,8 +618,8 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 .c0 {
   text-align: left;
-  color: #800;
   background-color: #fbebeb;
+  color: #800;
 }
 
 .c1 {
@@ -704,8 +704,8 @@ exports[`Banner renders with lightRed bg 1`] = `
 exports[`Banner renders with no props other than theme 1`] = `
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -798,8 +798,8 @@ exports[`Banner renders with orange bg 1`] = `
 
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #f68013;
+  color: #fff;
 }
 
 .c1 {
@@ -888,8 +888,8 @@ exports[`Banner renders with red bg 1`] = `
 
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #c00;
+  color: #fff;
 }
 
 .c1 {
@@ -974,8 +974,8 @@ exports[`Banner renders with red bg 1`] = `
 exports[`Banner renders with text node 1`] = `
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -1072,8 +1072,8 @@ exports[`Banner renders with text node 1`] = `
 exports[`Banner renders with text string 1`] = `
 .c0 {
   text-align: left;
-  color: #fff;
   background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {

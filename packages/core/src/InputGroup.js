@@ -11,8 +11,7 @@ const InputGroup = styled.div`
   border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${props =>
-      getPaletteColor('base')({ color: props.borderColor, ...props })}
+  border-color: ${props => getPaletteColor(props.borderColor, 'base')(props)}
     ${space} & > ${Box} {
     width: 100%;
     flex: 1 1 auto;

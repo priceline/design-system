@@ -38,10 +38,7 @@ const Text = mapProps(({ align, ...props }) => ({
   color: ${getPaletteColor('base')};
   ${props =>
     props.bg
-      ? `background-color: ${getPaletteColor('base')({
-          ...props,
-          color: props.bg
-        })};`
+      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
       : ''}
   ${applyVariations('Text')}
   ${textStyle}
