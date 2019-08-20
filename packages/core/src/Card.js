@@ -26,10 +26,7 @@ const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
   border:
     borderWidth === 0
       ? '0'
-      : `${borderWidth}px solid ${getPaletteColor('base')({
-          color: borderColor,
-          ...props
-        })}`
+      : `${borderWidth}px solid ${getPaletteColor(borderColor, 'base')(props)}`
 })
 
 const Card = styled(Box)`

@@ -20,7 +20,7 @@ describe('ToggleBadge', () => {
       <ToggleBadge selected bg="green" color="red" fontSize={1} />
     ).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightGreen)
+    expect(json).toHaveStyleRule('background-color', theme.colors.green)
     expect(json).toHaveStyleRule('color', theme.colors.red)
   })
 })

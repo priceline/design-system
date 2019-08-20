@@ -3,11 +3,11 @@ import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
-const borders = ({ color, ...props }) => {
-  const borderColor = color
-    ? getPaletteColor('base')({ color, ...props })
+const borders = props => {
+  const borderColor = props.color
+    ? getPaletteColor('base')(props)
     : getPaletteColor('border.base')(props)
-  const focusColor = color
+  const focusColor = props.color
     ? borderColor
     : getPaletteColor('primary.base')(props)
   return {

@@ -14,12 +14,11 @@ const Stamp = styled.div`
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${({ borderColor, color, ...props }) =>
-    getPaletteColor('base')({ color: borderColor, ...props })};
+  border-color: ${props => getPaletteColor(props.borderColor, 'base')(props)};
   color: ${getPaletteColor('base')};
-  ${({ bg, color, ...props }) =>
-    bg
-      ? `background-color: ${getPaletteColor('base')({ color: bg, ...props })};`
+  ${props =>
+    props.bg
+      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
       : ''}
   
   ${space} ${fontSize};

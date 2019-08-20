@@ -26,9 +26,9 @@ const Label = styled.label`
   width: 100%;
   margin: 0;
   color: ${getPaletteColor('base')};
-  ${({ bg, color, ...props }) =>
-    bg
-      ? `background-color: ${getPaletteColor('base')({ color: bg, ...props })};`
+  ${props =>
+    props.bg
+      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
       : ''}
 
   ${space} ${fontSize} ${fontWeight};

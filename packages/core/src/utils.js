@@ -146,45 +146,31 @@ export const applyVariations = (componentName, variations = null) => props => {
 }
 
 /**
- * Gets the color of a palette color, using props.color as
- * the palette key. If palette color does not exist, falls
+ * Gets the color of a palette shade, using props.color as
+ * the palette color. If palette shade does not exist, falls
  * back to theme.colors
  *
- * @example getPaletteColor('dark') => will return the dark
- * color of theme.palette[props.color].dark
- *
- * @param {string} name The name of the palette color
- *
- * @returns {string|null}
+ * @example getPaletteColor('dark')(props) => will return the dark
+ * shade of theme.palette[props.color].dark
+ * @example getPaletteColor('primary.base')(props) => theme.palette.primary.base
+ * @example getPaletteColor('primary', 'base')(props) => theme.palette.primary.base
  */
-export const getPaletteColor = name => props => {
-  let { color } = props
-  let finalName = name
-  const [match, colorMatch, nameMatch] = name.match(/(.+)\.(.+)/) || []
+export const getPaletteColor = (...args) => props => {
+  let color = args.length === 2 ? args[0] : props.color
+  let shade = args.length === 2 ? args[1] : args[0]
 
-  if (match && colorMatch && nameMatch) {
-    color = colorMatch
-    finalName = nameMatch
+  const colorShade = shade.match(/^([a-z]+)\.([a-z]+)$/)
+
+  if (colorShade) {
+    color = colorShade[0]
+    shade = colorShade[1]
   }
-
-  if (typeof color !== 'string' || color === '') {
-    return ''
-  }
-
-  if (/^#[a-z0-9]{3,6}$/i.test(color)) {
-    return color
-  }
-
-  const paletteColor = themeGet(
-    `palette.${color.indexOf('.') !== -1 ? color : color + '.' + finalName}`
-  )(props)
 
   return (
-    paletteColor ||
-    themeGet(
-      `colors.${finalName}${color[0].toUpperCase()}${color.substring(1)}`
-    )(props) ||
-    themeGet(`colors.${color}`)(props)
+    themeGet(`palette.${color}.${shade}`)(props) ||
+    themeGet(`palette.${color}`)(props) ||
+    themeGet(`colors.${color}`)(props) ||
+    color
   )
 }
 
@@ -219,8 +205,6 @@ export const getTextColorOn = name => props => {
     const text = theme.palette.text
 
     if (color) {
-      // add warning for contrast
-
       return getContrastRatio(text.lightest, color) >= theme.contrastRatio
         ? text.lightest
         : text.base
@@ -238,15 +222,28 @@ export const getTextColorOn = name => props => {
  *
  * @param {Object} props
  *
- * @returns {fn|InterpolationValue[]}
+ * @returns {string|css}
  */
 export const color = props => {
-  if (!props.bg && hasPaletteColor(props)) {
+  if (!props.theme || (!props.color && !props.bg)) {
+    return ''
+  } else if (props.color && props.bg) {
     return css`
-      background-color: ${getPaletteColor('base')};
-      color: ${getTextColorOn('base')};
+      background-color: ${getPaletteColor(props.bg, 'base')(props)};
+      color: ${getPaletteColor(props.color, 'base')(props)};
+    `
+  } else if (props.color && hasPaletteColor(props)) {
+    return css`
+      background-color: ${getPaletteColor('base')(props)};
+      color: ${getTextColorOn('base')(props)};
+    `
+  } else if (props.color) {
+    return css`
+      color: ${getPaletteColor('base')(props)};
+    `
+  } else {
+    return css`
+      background-color: ${getPaletteColor(props.bg, 'base')(props)};
     `
   }
-
-  return systemColor
 }

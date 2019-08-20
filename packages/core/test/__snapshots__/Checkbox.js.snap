@@ -198,6 +198,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   vertical-align: middle;
   cursor: pointer;
   background-color: inherit;
+  color: border.light;
 }
 
 .c0 svg[data-name='checked'] {
@@ -206,6 +207,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
+  color: primary;
 }
 
 .c0 > input:checked ~ svg[data-name='empty'] {
