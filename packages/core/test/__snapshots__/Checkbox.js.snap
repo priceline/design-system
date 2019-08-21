@@ -1,28 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders disabled with defaultChecked 1`] = `
-.c1 {
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   vertical-align: middle;
+  padding: 2px;
   cursor: pointer;
-  background-color: inherit;
   color: #c0cad5;
+}
+
+.c0 svg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px;
 }
 
 .c0 svg[data-name='checked'] {
   display: none;
+}
+
+.c0 > input:hover ~ svg[data-name='empty'] {
+  color: #c0cad5;
+}
+
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
 }
 
 .c0 > input:checked ~ svg[data-name='checked'] {
@@ -34,7 +51,16 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   display: none;
 }
 
-.c2 {
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
+}
+
+.c0 > input:checked:hover ~ svg[data-name='checked'] {
+  color: #c0cad5;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -44,30 +70,29 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 <div
-  className="c0 c1"
-  color="primary"
+  className="c0 "
   disabled={true}
 >
   <input
-    className="c2"
-    color="primary"
+    className="c1"
     defaultChecked={true}
     disabled={true}
     id="check-box"
     onChange={[MockFunction]}
+    role="checkbox"
     size={20}
     type="checkbox"
   />
   <svg
     aria-hidden="true"
-    className="c3"
+    className="c2"
     data-name="checked"
     fill="currentcolor"
     focusable="false"
-    height={20}
+    height={24}
     tabIndex="-1"
     viewBox="0 0 24 24"
-    width={20}
+    width={24}
   >
     <path
       d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
@@ -75,14 +100,14 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="c3"
+    className="c2"
     data-name="empty"
     fill="currentcolor"
     focusable="false"
-    height={20}
+    height={24}
     tabIndex="-1"
     viewBox="0 0 24 24"
-    width={20}
+    width={24}
   >
     <path
       d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
@@ -92,28 +117,46 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 `;
 
 exports[`Checkbox renders disabled with disabled prop 1`] = `
-.c1 {
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c3 {
+<DocumentFragment>
+  .c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   vertical-align: middle;
+  padding: 2px;
   cursor: pointer;
-  background-color: inherit;
   color: #c0cad5;
+}
+
+.c0 svg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px;
 }
 
 .c0 svg[data-name='checked'] {
   display: none;
+}
+
+.c0 > input:hover ~ svg[data-name='empty'] {
+  color: #c0cad5;
+}
+
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
 }
 
 .c0 > input:checked ~ svg[data-name='checked'] {
@@ -125,7 +168,16 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   display: none;
 }
 
-.c2 {
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
+}
+
+.c0 > input:checked:hover ~ svg[data-name='checked'] {
+  color: #c0cad5;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -135,161 +187,92 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 <div
-  className="c0 c1"
-  color="primary"
-  disabled={true}
->
-  <input
-    className="c2"
-    color="primary"
-    disabled={true}
-    id="check-box"
-    onChange={[MockFunction]}
-    size={20}
-    type="checkbox"
-  />
-  <svg
-    aria-hidden="true"
-    className="c3"
-    data-name="checked"
-    fill="currentcolor"
-    focusable="false"
-    height={20}
-    tabIndex="-1"
-    viewBox="0 0 24 24"
-    width={20}
+    class="c0 "
+    disabled=""
   >
-    <path
-      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+    <input
+      class="c1"
+      disabled=""
+      id="check-box"
+      role="checkbox"
+      size="20"
+      type="checkbox"
     />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="c3"
-    data-name="empty"
-    fill="currentcolor"
-    focusable="false"
-    height={20}
-    tabIndex="-1"
-    viewBox="0 0 24 24"
-    width={20}
-  >
-    <path
-      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-    />
-  </svg>
-</div>
+    <svg
+      aria-hidden="true"
+      class="c2"
+      data-name="checked"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      class="c2"
+      data-name="empty"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Checkbox renders with the theme passed specifically 1`] = `
-.c1 {
-  color: primary;
-}
-
-.c3 {
+<DocumentFragment>
+  .c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   vertical-align: middle;
+  padding: 2px;
   cursor: pointer;
-  background-color: inherit;
-  color: border.light;
-}
-
-.c0 svg[data-name='checked'] {
-  display: none;
-}
-
-.c0 > input:checked ~ svg[data-name='checked'] {
-  display: inline-block;
-  color: primary;
-}
-
-.c0 > input:checked ~ svg[data-name='empty'] {
-  display: none;
-}
-
-.c2 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-<div
-  className="c0 c1"
-  color="primary"
->
-  <input
-    className="c2"
-    color="primary"
-    id="check-box"
-    size={20}
-    type="checkbox"
-  />
-  <svg
-    aria-hidden="true"
-    className="c3"
-    data-name="checked"
-    fill="currentcolor"
-    focusable="false"
-    height={20}
-    tabIndex="-1"
-    viewBox="0 0 24 24"
-    width={20}
-  >
-    <path
-      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
-    />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="c3"
-    data-name="empty"
-    fill="currentcolor"
-    focusable="false"
-    height={20}
-    tabIndex="-1"
-    viewBox="0 0 24 24"
-    width={20}
-  >
-    <path
-      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Checkbox renders without the theme passed specifically 1`] = `
-.c1 {
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c0 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: inherit;
   color: #4f6f8f;
 }
 
+.c0 svg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px;
+}
+
 .c0 svg[data-name='checked'] {
   display: none;
+}
+
+.c0 > input:hover ~ svg[data-name='empty'] {
+  color: #007aff;
+}
+
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
 }
 
 .c0 > input:checked ~ svg[data-name='checked'] {
@@ -301,7 +284,16 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   display: none;
 }
 
-.c2 {
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
+}
+
+.c0 > input:checked:hover ~ svg[data-name='checked'] {
+  color: #049;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -311,46 +303,159 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 <div
-  className="c0 c1"
-  color="primary"
->
-  <input
-    className="c2"
-    color="primary"
-    id="check-box"
-    onChange={[MockFunction]}
-    size={20}
-    type="checkbox"
-  />
-  <svg
-    aria-hidden="true"
-    className="c3"
-    data-name="checked"
-    fill="currentcolor"
-    focusable="false"
-    height={20}
-    tabIndex="-1"
-    viewBox="0 0 24 24"
-    width={20}
+    class="c0 "
   >
-    <path
-      d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+    <input
+      class="c1"
+      id="check-box"
+      role="checkbox"
+      size="20"
+      type="checkbox"
     />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="c3"
-    data-name="empty"
-    fill="currentcolor"
-    focusable="false"
-    height={20}
-    tabIndex="-1"
-    viewBox="0 0 24 24"
-    width={20}
+    <svg
+      aria-hidden="true"
+      class="c2"
+      data-name="checked"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      class="c2"
+      data-name="empty"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox renders without the theme passed specifically 1`] = `
+<DocumentFragment>
+  .c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+  padding: 2px;
+  cursor: pointer;
+  color: #4f6f8f;
+}
+
+.c0 svg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.c0 svg[data-name='checked'] {
+  display: none;
+}
+
+.c0 > input:hover ~ svg[data-name='empty'] {
+  color: #007aff;
+}
+
+.c0 > input:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
+}
+
+.c0 > input:checked ~ svg[data-name='checked'] {
+  display: inline-block;
+  color: #007aff;
+}
+
+.c0 > input:checked ~ svg[data-name='empty'] {
+  display: none;
+}
+
+.c0 > input:checked:focus ~ svg {
+  border: 1px solid #007aff;
+  background-color: #e8f2ff;
+}
+
+.c0 > input:checked:hover ~ svg[data-name='checked'] {
+  color: #049;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+<div
+    class="c0 "
   >
-    <path
-      d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+    <input
+      class="c1"
+      id="check-box"
+      role="checkbox"
+      size="20"
+      type="checkbox"
     />
-  </svg>
-</div>
+    <svg
+      aria-hidden="true"
+      class="c2"
+      data-name="checked"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      class="c2"
+      data-name="empty"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
 `;
