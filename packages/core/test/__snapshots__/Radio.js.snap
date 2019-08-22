@@ -21,8 +21,19 @@ exports[`Radio Disabled, rendering 1`] = `
   z-index: 0;
 }
 
+.c2 ~ svg {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
+}
+
 .c2:focus {
   box-shadow: none;
+}
+
+.c2:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
 }
 
 .c2:checked ~ svg {
@@ -57,6 +68,7 @@ exports[`Radio Disabled, rendering 1`] = `
     <input
       className="c2"
       disabled={true}
+      size={24}
       type="radio"
     />
     <svg
@@ -64,10 +76,10 @@ exports[`Radio Disabled, rendering 1`] = `
       className="c3 c4"
       fill="currentcolor"
       focusable="false"
-      height={24}
+      height={28}
       tabIndex="-1"
       viewBox="0 0 24 24"
-      width={24}
+      width={28}
     >
       <path
         d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
@@ -89,7 +101,7 @@ exports[`Radio Not Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c1:hover {
+.c1:hover > svg {
   color: #007aff;
 }
 
@@ -102,8 +114,19 @@ exports[`Radio Not Selected, rendering 1`] = `
   z-index: 0;
 }
 
+.c2 ~ svg {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
+}
+
 .c2:focus {
   box-shadow: none;
+}
+
+.c2:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
 }
 
 .c2:checked ~ svg {
@@ -136,6 +159,7 @@ exports[`Radio Not Selected, rendering 1`] = `
   >
     <input
       className="c2"
+      size={24}
       type="radio"
     />
     <svg
@@ -143,10 +167,10 @@ exports[`Radio Not Selected, rendering 1`] = `
       className="c3 c4"
       fill="currentcolor"
       focusable="false"
-      height={24}
+      height={28}
       tabIndex="-1"
       viewBox="0 0 24 24"
-      width={24}
+      width={28}
     >
       <path
         d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
@@ -168,6 +192,10 @@ exports[`Radio Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
+.c1:hover > svg {
+  color: #049 !important;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -177,8 +205,19 @@ exports[`Radio Selected, rendering 1`] = `
   z-index: 0;
 }
 
+.c2 ~ svg {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
+}
+
 .c2:focus {
   box-shadow: none;
+}
+
+.c2:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
 }
 
 .c2:checked ~ svg {
@@ -213,6 +252,7 @@ exports[`Radio Selected, rendering 1`] = `
     <input
       checked={true}
       className="c2"
+      size={24}
       type="radio"
     />
     <svg
@@ -220,10 +260,10 @@ exports[`Radio Selected, rendering 1`] = `
       className="c3 c4"
       fill="currentcolor"
       focusable="false"
-      height={24}
+      height={28}
       tabIndex="-1"
       viewBox="0 0 24 24"
-      width={24}
+      width={28}
     >
       <path
         d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
