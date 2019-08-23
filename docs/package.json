@@ -12,6 +12,7 @@
     "is-absolute-url": "^2.1.0",
     "mdx-docs": "^1.0.0-9",
     "pcln-design-system": "^2.0.5",
+    "pcln-modal": "^2.0.4",
     "pcln-slider": "2.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
