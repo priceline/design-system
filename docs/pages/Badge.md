@@ -24,10 +24,33 @@ Use the `Badge` component to render a primitive badge.
 
 ## Props
 
-| Prop            | Type            | Description             |
-| --------------- | --------------- | ----------------------- |
-| `bg`            | string          | Background color        |
-| All space props | number or array | Sets margin and padding |
+| Prop            | Type            | Description                        |
+| --------------- | --------------- | ---------------------------------- |
+| `bg`            | string          | Background color. To be deprecated |
+| All space props | number or array | Sets margin and padding            |
+| `color`         | string          | The color of the badge             |
 
 _Note:_ For the `bg` prop, `blue`, `lightBlue`, `green`, `lightGreen`, `red`, `lightRed`, `orange`, and `lightOrange` are presets that will also set `color`.
 Any color may be passed in, although `color` should be defined as well when not using one of the aforementioned presets.
+
+## Color
+
+You can choose any palette or theme color for `Badge`.
+
+```.jsx
+<Badge color="primary">primary</Badge>
+```
+
+Uses the color from `theme.palette.primary.base`.
+
+```.jsx
+<Badge color="error">error</Badge>
+```
+
+Uses the color from `theme.palette.error.base`.
+
+```.jsx
+<Badge color="warning">warning</Badge>
+```
+
+Uses the color from `theme.palette.warning.base`.

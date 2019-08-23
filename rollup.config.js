@@ -21,7 +21,11 @@ module.exports = {
       exclude: 'node_modules/**',
       runtimeHelpers: true
     }),
-    commonjs(),
+    commonjs({
+      namedExports: {
+        'node_modules/deepmerge/index.js': ['deepmerge']
+      }
+    }),
     json(),
     resolve(),
     fileSize()

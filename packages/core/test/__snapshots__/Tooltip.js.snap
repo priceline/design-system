@@ -5,8 +5,8 @@ exports[`Tooltip bottom center 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #001833;
   background-color: #fff;
+  color: #001833;
 }
 
 .c0 {
@@ -62,7 +62,7 @@ exports[`Tooltip bottom center 1`] = `
 >
   <div
     className="c0 c1"
-    color="text"
+    color="background.lightest"
   >
     centered tooltip
   </div>
@@ -74,8 +74,8 @@ exports[`Tooltip bottom left 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #001833;
   background-color: #fff;
+  color: #001833;
 }
 
 .c0 {
@@ -126,7 +126,7 @@ exports[`Tooltip bottom left 1`] = `
 >
   <div
     className="c0 c1"
-    color="text"
+    color="background.lightest"
   >
     left tooltip
   </div>
@@ -138,8 +138,8 @@ exports[`Tooltip bottom right 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #001833;
   background-color: #fff;
+  color: #001833;
 }
 
 .c0 {
@@ -191,7 +191,7 @@ exports[`Tooltip bottom right 1`] = `
 >
   <div
     className="c0 c1"
-    color="text"
+    color="background.lightest"
   >
     right tooltip
   </div>
@@ -203,8 +203,8 @@ exports[`Tooltip renders 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #001833;
   background-color: #fff;
+  color: #001833;
 }
 
 .c0 {
@@ -255,7 +255,7 @@ exports[`Tooltip renders 1`] = `
 >
   <div
     className="c0 c1"
-    color="text"
+    color="background.lightest"
   >
     A Tooltip
   </div>
@@ -267,8 +267,8 @@ exports[`Tooltip top center 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #fff;
   background-color: #000;
+  color: #fff;
 }
 
 .c0 {
@@ -336,8 +336,8 @@ exports[`Tooltip top left 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #fff;
   background-color: #007aff;
+  color: #fff;
 }
 
 .c0 {
@@ -400,8 +400,8 @@ exports[`Tooltip top right 1`] = `
   margin-bottom: 16px;
   margin-top: 8px;
   padding: 8px;
-  color: #fff;
   background-color: #c00;
+  color: #fff;
 }
 
 .c0 {

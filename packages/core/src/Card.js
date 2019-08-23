@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import Box from './Box'
-import theme from './theme'
 import PropTypes from 'prop-types'
 import { borderRadius } from 'styled-system'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const boxShadow = props => {
   const boxShadows = {
@@ -22,29 +22,30 @@ const boxShadow = props => {
   return boxShadows[props.boxShadowSize]
 }
 
-const boxBorder = props => ({
+const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
   border:
-    props.borderWidth === 0
+    borderWidth === 0
       ? '0'
-      : `${props.borderWidth}px solid ${props.theme.colors[props.borderColor]}`
+      : `${borderWidth}px solid ${getPaletteColor(borderColor, 'base')(props)}`
 })
 
 const Card = styled(Box)`
-  ${boxShadow} ${boxBorder} ${borderRadius};
+  ${boxShadow} ${boxBorder} ${borderRadius}
+  ${applyVariations('Card')}
 `
 
 Card.propTypes = {
   ...borderRadius.propTypes,
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
-  borderColor: PropTypes.string,
+  borderColor: deprecatedColorValue(),
+  color: deprecatedColorValue(),
   borderWidth: PropTypes.oneOf([0, 1, 2])
 }
 
 Card.defaultProps = {
-  borderColor: 'borderGray',
+  borderColor: 'border',
   borderRadius: 1,
-  borderWidth: 1,
-  theme: theme
+  borderWidth: 1
 }
 
 Card.displayName = 'Card'

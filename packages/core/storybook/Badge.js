@@ -23,6 +23,9 @@ storiesOf('Badge', module)
       <Badge bg="text" color="white">
         text (custom)
       </Badge>
+      <Badge color="primary">primary</Badge>
+      <Badge color="secondary">secondary</Badge>
+      <Badge color="warning">warning</Badge>
     </div>
   ))
   .add('default', () => <Badge>default</Badge>)

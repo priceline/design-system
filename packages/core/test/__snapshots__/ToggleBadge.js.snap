@@ -27,7 +27,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 
 <button
   className="c0"
-  color="blue"
+  color="primary"
   fontSize={0}
   selected={true}
 />
@@ -93,7 +93,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 
 <button
   className="c0"
-  color="blue"
+  color="primary"
   fontSize={0}
   selected={false}
 />

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { themeGet, space, fontSize } from 'styled-system'
-import theme from './theme'
+import { space, fontSize } from 'styled-system'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const ToggleBadge = styled.button`
   border-radius: ${props => props.theme.radius};
@@ -12,12 +12,16 @@ const ToggleBadge = styled.button`
   font-family: inherit;
   cursor: pointer;
   background-color: ${props =>
-    props.selected ? props.theme.colors[props.bg] : props.unSelectedBg};
-  color: ${props => props.theme.colors[props.color]};
+    props.selected
+      ? getPaletteColor(props.bg || props.color, 'light')(props)
+      : props.unSelectedBg};
+  color: ${getPaletteColor('base')};
   ${space} ${fontSize};
   &:hover {
-    background-color: ${props => props.theme.colors[props.bg]};
+    background-color: ${props =>
+      getPaletteColor(props.bg || props.color, 'light')(props)};
   }
+  ${applyVariations('ToggleBadge')}
 `
 
 ToggleBadge.displayName = 'ToggleBadge'
@@ -25,7 +29,9 @@ ToggleBadge.displayName = 'ToggleBadge'
 ToggleBadge.propTypes = {
   selected: PropTypes.bool,
   ...space.propTypes,
-  ...fontSize.propTypes
+  ...fontSize.propTypes,
+  color: deprecatedColorValue(),
+  bg: deprecatedColorValue()
 }
 
 ToggleBadge.defaultProps = {
@@ -35,9 +41,7 @@ ToggleBadge.defaultProps = {
   mx: 1,
   my: 1,
   fontSize: 0,
-  theme: theme,
-  color: 'blue',
-  bg: 'lightBlue',
+  color: 'primary',
   unSelectedBg: 'transparent'
 }
 

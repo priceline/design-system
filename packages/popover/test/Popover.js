@@ -31,7 +31,7 @@ afterEach(cleanup)
 describe('Popover', () => {
   describe('Trigger Element', () => {
     test('Renders trigger element and appends action props', () => {
-      const { container } = render(
+      const { container } = renderWithTheme(
         <Popover {...popoverProps}>
           <Button>{triggerButtonText}</Button>
         </Popover>

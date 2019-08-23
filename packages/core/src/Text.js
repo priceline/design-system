@@ -7,11 +7,15 @@ import {
   textAlign,
   lineHeight,
   space,
-  color,
   themeGet
 } from 'styled-system'
-import theme from './theme'
-import { mapProps, deprecatedPropType } from './utils'
+import {
+  mapProps,
+  deprecatedPropType,
+  deprecatedColorValue,
+  applyVariations,
+  getPaletteColor
+} from './utils'
 
 export const caps = props =>
   props.caps
@@ -31,13 +35,18 @@ const Text = mapProps(({ align, ...props }) => ({
   textAlign: align,
   ...props
 }))(styled.div`
+  color: ${getPaletteColor('base')};
+  ${props =>
+    props.bg
+      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
+      : ''}
+  ${applyVariations('Text')}
   ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${textAlign}
   ${lineHeight}
   ${space}
-  ${color}
   ${caps}
   ${regular}
   ${bold}
@@ -52,15 +61,11 @@ Text.propTypes = {
   ...textAlign.propTypes,
   ...lineHeight.propTypes,
   ...space.propTypes,
-  ...color.propTypes,
+  color: deprecatedColorValue(),
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
   align: deprecatedPropType('textAlign')
-}
-
-Text.defaultProps = {
-  theme: theme
 }
 
 Text.span = Text.withComponent('span')

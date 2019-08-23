@@ -1,18 +1,8 @@
-import styled from 'styled-components'
+import React from 'react'
 import Button from './Button'
-import theme from './theme'
 
-const RedButton = styled(Button)`
-  background-color: ${props => props.theme.colors.red};
+const RedButton = props => <Button color="error" {...props} />
 
-  &:hover {
-    background-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkRed};
-  }
-`
-
-RedButton.defaultProps = {
-  theme: theme
-}
+RedButton.displayName = 'RedButton'
 
 export default RedButton

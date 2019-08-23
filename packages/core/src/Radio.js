@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from './theme'
 import Icon from './Icon'
+import { applyVariations, deprecatedColorValue, getPaletteColor } from './utils'
 
 const RadioWrap = styled.div`
   display: inline-block;
-  color: ${props => props.theme.colors.borderGray};
+  color: ${getPaletteColor('border.base')};
   &:hover > svg {
     ${props => {
       if (props.checked && !props.disabled) {
-        return `color: ${props.theme.colors.darkBlue} !important;`
+        return `color: ${getPaletteColor('dark')(props)} !important;`
       }
 
-      return props.disabled ? null : `color: ${props.theme.colors.blue};`
+      return props.disabled ? null : `color: ${getPaletteColor('base')(props)};`
     }};
   }
+  ${applyVariations('Radio')}
 `
 
 const RadioInput = styled.input`
@@ -32,15 +33,15 @@ const RadioInput = styled.input`
   &:focus {
     box-shadow: none;
     & ~ svg {
-      border: 1px solid ${theme.colors.borderGray};
-      background-color: ${theme.colors.lightGray};
+      border: 1px solid ${getPaletteColor('border.base')};
+      background-color: ${getPaletteColor('background.light')};
     }
   }
   &:checked ~ svg {
-    color: ${props => props.theme.colors.blue};
+    color: ${getPaletteColor('base')};
   }
   &:disabled ~ svg {
-    color: ${props => props.theme.colors.borderGray};
+    color: ${getPaletteColor('border.base')};
   }
 `
 
@@ -56,7 +57,7 @@ const Radio = props => {
   const borderAdjustedSize = size + 4
 
   return (
-    <RadioWrap checked={checked} disabled={disabled}>
+    <RadioWrap color={props.color} checked={checked} disabled={disabled}>
       <RadioInput type="radio" {...props} />
       <RadioIcon name={radioIconName} size={borderAdjustedSize} />
     </RadioWrap>
@@ -64,8 +65,12 @@ const Radio = props => {
 }
 
 Radio.defaultProps = {
-  theme: theme,
+  color: 'primary',
   size: 24
+}
+
+Radio.propTypes = {
+  color: deprecatedColorValue()
 }
 
 export default Radio

@@ -1,42 +1,42 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
+import Box from './Box'
 import {
   space,
   width,
-  color,
   alignItems,
   justifyContent,
   flexWrap,
   flexDirection
 } from 'styled-system'
-import theme from './theme'
-import { mapProps, deprecatedPropType } from './utils'
+import {
+  applyVariations,
+  mapProps,
+  deprecatedPropType,
+  deprecatedColorValue
+} from './utils'
 
 const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
   alignItems: align,
   justifyContent: justify,
   ...props
-}))(styled.div`
+}))(styled(Box)`
   display: flex;
-  ${space} ${width} ${color} ${alignItems} ${justifyContent}
+  ${alignItems} ${justifyContent}
   ${flexDirection}
   ${flexWrap}
+  ${applyVariations('Flex')}
 `)
-
-Flex.defaultProps = {
-  theme
-}
 
 Flex.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
-  ...color.propTypes,
+  color: deprecatedColorValue(),
+  bg: deprecatedPropType(),
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,
-  // deprecated
   wrap: deprecatedPropType('flexWrap'),
   align: deprecatedPropType('alignItems'),
   justify: deprecatedPropType('justifyContent')

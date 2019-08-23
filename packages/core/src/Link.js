@@ -1,25 +1,26 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { color } from 'styled-system'
-import theme from './theme'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
-  ${color} &:hover {
+  color: ${getPaletteColor('base')};
+
+  &:hover {
     text-decoration: underline;
   }
+
+  ${applyVariations('Link')}
 `
 
 Link.displayName = 'Link'
 
-Link.propTypes = {
-  ...color.propTypes
+Link.defaultProps = {
+  color: 'primary'
 }
 
-Link.defaultProps = {
-  color: 'blue',
-  theme: theme
+Link.propTypes = {
+  color: deprecatedColorValue()
 }
 
 export default Link

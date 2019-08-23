@@ -11,22 +11,23 @@ exports[`Button disabled prop sets 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: pointer;
+  cursor: default;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
 }
 
-.c0:disabled {
-  opacity: 0.25;
+.c0:hover {
+  background-color: #e8f2ff;
 }
 
 <button
   className="c0"
+  color="primary"
   disabled={true}
 />
 `;
@@ -44,24 +45,22 @@ exports[`Button renders 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
   background-color: #049;
+  color: #fff;
 }
 
 <button
   className="c0"
+  color="primary"
 />
 `;
 
@@ -78,24 +77,22 @@ exports[`Button size large sets height and font-size 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 16px;
   padding: 12px 22px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
   background-color: #049;
+  color: #fff;
 }
 
 <button
   className="c0"
+  color="primary"
   size="large"
 />
 `;
@@ -113,24 +110,22 @@ exports[`Button size medium sets height and font-size 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
   background-color: #049;
+  color: #fff;
 }
 
 <button
   className="c0"
+  color="primary"
   size="medium"
 />
 `;
@@ -148,24 +143,22 @@ exports[`Button size small sets height and font-size 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 12px;
   padding: 7px 12px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
   background-color: #049;
+  color: #fff;
 }
 
 <button
   className="c0"
+  color="primary"
   size="small"
 />
 `;
@@ -183,25 +176,23 @@ exports[`Button width prop sets width to 100% 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   width: 100%;
   font-size: 14px;
   padding: 9.5px 18px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
   background-color: #049;
+  color: #fff;
 }
 
 <button
   className="c0"
+  color="primary"
   width={1}
 />
 `;
@@ -219,23 +210,21 @@ exports[`Button without disabled prop sets 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-}
-
-.c0:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c0:hover {
   background-color: #049;
+  color: #fff;
 }
 
 <button
   className="c0"
+  color="primary"
 />
 `;

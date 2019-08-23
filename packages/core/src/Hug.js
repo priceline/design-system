@@ -4,10 +4,10 @@ import Card from './Card'
 import Flex from './Flex'
 import Icon from './Icon'
 import Text from './Text'
-import theme from './theme'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import { display } from 'styled-system'
 import PropTypes from 'prop-types'
+import { applyVariations, deprecatedColorValue } from './utils'
 
 const HugCard = styled(Card)`
   border-top-left-radius: ${props => props.theme.radius};
@@ -15,6 +15,7 @@ const HugCard = styled(Card)`
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   overflow: hidden;
+  ${applyVariations('Hug')}
 `
 
 const BorderConcealer = styled(Box)`
@@ -28,7 +29,7 @@ const HideableIcon = styled(Icon)`
 `
 
 const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
-  <HugCard {...props} borderColor={bg}>
+  <HugCard {...props} borderColor={bg || color}>
     <Flex bg={bg} color={color} p={p} alignItems="center">
       {!!icon && (
         <HideableIcon
@@ -47,12 +48,10 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
 )
 
 Hug.defaultProps = {
-  bg: 'green',
   borderWidth: 1,
-  color: 'white',
+  color: 'secondary',
   fontSize: 1,
-  p: 2,
-  theme: theme
+  p: 2
 }
 
 Hug.propTypes = {
@@ -62,7 +61,8 @@ Hug.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.string
-  ])
+  ]),
+  color: deprecatedColorValue()
 }
 
 export default Hug

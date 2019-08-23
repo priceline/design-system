@@ -15,7 +15,7 @@ import Modal from 'pcln-modal'
 ```jsx
 import { Modal } from 'pcln-modal'
 
-<Modal
+;<Modal
   isOpen={true} //boolean for control this status of modal
   onClose={someFunc} //func function for handle close the modal while click on the overlay
   bg="white" //modal background color

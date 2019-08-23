@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders disabled with defaultChecked 1`] = `
-.c2 {
+.c1 {
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -20,6 +25,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   vertical-align: middle;
   padding: 2px;
   cursor: pointer;
+  background-color: inherit;
   color: #c0cad5;
 }
 
@@ -60,7 +66,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   color: #c0cad5;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -70,11 +76,13 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0 c1"
+  color="primary"
   disabled={true}
 >
   <input
-    className="c1"
+    className="c2"
+    color="primary"
     defaultChecked={true}
     disabled={true}
     id="check-box"
@@ -85,7 +93,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   />
   <svg
     aria-hidden="true"
-    className="c2"
+    className="c3"
     data-name="checked"
     fill="currentcolor"
     focusable="false"
@@ -100,7 +108,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="c2"
+    className="c3"
     data-name="empty"
     fill="currentcolor"
     focusable="false"
@@ -118,7 +126,12 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 exports[`Checkbox renders disabled with disabled prop 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c1 {
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -137,6 +150,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   vertical-align: middle;
   padding: 2px;
   cursor: pointer;
+  background-color: inherit;
   color: #c0cad5;
 }
 
@@ -177,7 +191,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   color: #c0cad5;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -187,11 +201,13 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 <div
-    class="c0 "
+    class="c0 c1"
+    color="primary"
     disabled=""
   >
     <input
-      class="c1"
+      class="c2"
+      color="primary"
       disabled=""
       id="check-box"
       role="checkbox"
@@ -200,7 +216,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c2"
+      class="c3"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -215,7 +231,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c2"
+      class="c3"
       data-name="empty"
       fill="currentcolor"
       focusable="false"
@@ -234,7 +250,11 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 exports[`Checkbox renders with the theme passed specifically 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c1 {
+  color: primary;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -253,7 +273,8 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   vertical-align: middle;
   padding: 2px;
   cursor: pointer;
-  color: #4f6f8f;
+  background-color: inherit;
+  color: border.light;
 }
 
 .c0 svg {
@@ -267,17 +288,17 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 .c0 > input:hover ~ svg[data-name='empty'] {
-  color: #007aff;
+  color: primary;
 }
 
 .c0 > input:focus ~ svg {
-  border: 1px solid #c0cad5;
-  background-color: #f4f6f8;
+  border: 1px solid border.base;
+  background-color: background.light;
 }
 
 .c0 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
-  color: #007aff;
+  color: primary;
 }
 
 .c0 > input:checked ~ svg[data-name='empty'] {
@@ -285,15 +306,15 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 .c0 > input:checked:focus ~ svg {
-  border: 1px solid #007aff;
-  background-color: #e8f2ff;
+  border: 1px solid primary;
+  background-color: primary;
 }
 
 .c0 > input:checked:hover ~ svg[data-name='checked'] {
   color: #049;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -303,10 +324,12 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 <div
-    class="c0 "
+    class="c0 c1"
+    color="primary"
   >
     <input
-      class="c1"
+      class="c2"
+      color="primary"
       id="check-box"
       role="checkbox"
       size="20"
@@ -314,7 +337,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c2"
+      class="c3"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -329,7 +352,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c2"
+      class="c3"
       data-name="empty"
       fill="currentcolor"
       focusable="false"
@@ -348,7 +371,12 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 exports[`Checkbox renders without the theme passed specifically 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c1 {
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -367,6 +395,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   vertical-align: middle;
   padding: 2px;
   cursor: pointer;
+  background-color: inherit;
   color: #4f6f8f;
 }
 
@@ -407,7 +436,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   color: #049;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -417,10 +446,12 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 <div
-    class="c0 "
+    class="c0 c1"
+    color="primary"
   >
     <input
-      class="c1"
+      class="c2"
+      color="primary"
       id="check-box"
       role="checkbox"
       size="20"
@@ -428,7 +459,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c2"
+      class="c3"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -443,7 +474,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c2"
+      class="c3"
       data-name="empty"
       fill="currentcolor"
       focusable="false"

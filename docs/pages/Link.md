@@ -8,3 +8,31 @@ Use it as you would use any other link.
   Priceline Home
 </Link>
 ```
+
+## Props
+
+| Prop    | Type   | Description    |
+| ------- | ------ | -------------- |
+| `color` | string | The link color |
+
+## Color
+
+You can choose any palette or theme color for `Link`.
+
+```.jsx
+<Link color="secondary">Secondary Link</Link>
+```
+
+Uses the color from `theme.palette.secondary.base`.
+
+```.jsx
+<Link color="error">Error Link</Link>
+```
+
+Uses the color from `theme.palette.error.base`.
+
+```.jsx
+<Link color="purple">Purple Link</Link>
+```
+
+Uses the color from `theme.colors.purple`.

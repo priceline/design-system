@@ -14,7 +14,6 @@ exports[`Input it renders 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -70,7 +69,6 @@ exports[`Input it renders an input element with a really large padding and margi
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -128,7 +126,6 @@ exports[`Input it renders an input element with a red border with a color prop i
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -185,7 +182,6 @@ exports[`Input it renders an input element with large text 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;

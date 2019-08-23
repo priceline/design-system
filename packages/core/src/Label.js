@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { space, fontSize, fontWeight, color } from 'styled-system'
-import theme from './theme'
+import { space, fontSize, fontWeight } from 'styled-system'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const nowrap = props =>
   props.nowrap
@@ -25,24 +25,29 @@ const Label = styled.label`
   display: block;
   width: 100%;
   margin: 0;
+  color: ${getPaletteColor('base')};
+  ${props =>
+    props.bg
+      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
+      : ''}
 
-  ${space} ${fontSize} ${color} ${fontWeight};
+  ${space} ${fontSize} ${fontWeight};
   ${nowrap}
   ${accessiblyHide}
+  ${applyVariations('Label')}
 `
 
 Label.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  ...color.propTypes,
+  color: deprecatedColorValue(),
   ...fontWeight.propTypes
 }
 
 Label.defaultProps = {
   fontSize: '10px',
   fontWeight: 'bold',
-  color: 'gray',
-  theme: theme
+  color: 'border.light'
 }
 
 Label.displayName = 'Label'

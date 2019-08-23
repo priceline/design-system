@@ -13,20 +13,17 @@ exports[`IconButton renders without props 1`] = `
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #007aff;
-  color: #fff;
   border-width: 0;
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-}
-
-.c1:disabled {
-  opacity: 0.25;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c1:hover {
   background-color: #049;
+  color: #fff;
 }
 
 .c0 {
@@ -48,6 +45,7 @@ exports[`IconButton renders without props 1`] = `
 
 <button
   className="c0 c1"
+  color="primary"
 >
   <div />
 </button>

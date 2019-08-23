@@ -1,9 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import PropTypes from 'prop-types'
-import theme from './theme'
 import Icon from './Icon'
 import Box from './Box'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -12,7 +12,11 @@ const Checkbox = props => {
   const borderAdjustedSize = size + 4
 
   return (
-    <CheckBoxWrapper disabled={disabled}>
+    <CheckBoxWrapper
+      theme={props.theme}
+      color={props.color}
+      disabled={disabled}
+    >
       <StyledInput type="checkbox" {...props} role="checkbox" />
       <Icon name="BoxChecked" size={borderAdjustedSize} data-name="checked" />
       <Icon name="BoxEmpty" size={borderAdjustedSize} data-name="empty" />
@@ -27,8 +31,11 @@ const CheckBoxWrapper = styled(Box)`
   vertical-align: middle;
   padding: 2px;
   cursor: pointer;
+  background-color: inherit;
   color: ${props =>
-    props.disabled ? props.theme.colors.borderGray : props.theme.colors.gray};
+    props.disabled
+      ? getPaletteColor('border.base')(props)
+      : getPaletteColor('border.light')(props)};
 
   svg {
     border: 1px solid transparent;
@@ -42,14 +49,16 @@ const CheckBoxWrapper = styled(Box)`
   
   > input:hover ~ svg[data-name='empty'] {
     color: ${props =>
-      props.disabled ? props.theme.colors.borderGray : props.theme.colors.blue};
+      props.disabled
+        ? getPaletteColor('border.base')(props)
+        : getPaletteColor('base')(props)};
       }
   }
   
   > input {
     &:focus ~ svg {
-      border: 1px solid ${theme.colors.borderGray};
-      background-color: ${theme.colors.lightGray};
+      border: 1px solid ${getPaletteColor('border.base')};
+      background-color: ${getPaletteColor('background.light')};
     }
   }
 
@@ -58,8 +67,8 @@ const CheckBoxWrapper = styled(Box)`
       display: inline-block;
       color: ${props =>
         props.disabled
-          ? props.theme.colors.borderGray
-          : props.theme.colors.blue};
+          ? getPaletteColor('border.base')(props)
+          : getPaletteColor('base')(props)};
     }
 
     & ~ svg[data-name='empty'] {
@@ -67,8 +76,8 @@ const CheckBoxWrapper = styled(Box)`
     }
     
     &:focus ~ svg {
-      border: 1px solid ${theme.colors.blue};
-      background-color: ${theme.colors.lightBlue};
+      border: 1px solid ${getPaletteColor('base')};
+      background-color: ${getPaletteColor('light')};
     }
 
     &:hover ~ svg[data-name='checked'] {
@@ -78,11 +87,9 @@ const CheckBoxWrapper = styled(Box)`
           : props.theme.colors.darkBlue};
         }
   }
-`
 
-CheckBoxWrapper.defaultProps = {
-  theme
-}
+  ${applyVariations('Checkbox')}
+`
 
 const StyledInput = styled.input`
   appearance: none;
@@ -96,11 +103,13 @@ Checkbox.displayName = 'Checkbox'
 Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  color: deprecatedColorValue()
 }
 
 Checkbox.defaultProps = {
-  size: 20
+  size: 20,
+  color: 'primary'
 }
 
-export default Checkbox
+export default withTheme(Checkbox)

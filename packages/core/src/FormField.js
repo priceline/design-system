@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Flex from './Flex'
 import IconField from './IconField'
 
 const FormField = props => {

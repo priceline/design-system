@@ -1,19 +1,21 @@
 import styled from 'styled-components'
-import theme from './theme'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 import { space, width, borderColor } from 'styled-system'
 
 const Divider = styled.hr`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  ${space} ${width} ${borderColor};
+  border-color: ${props =>
+    getPaletteColor(props.borderColor || props.color, 'base')(props)};
+  ${space} ${width};
+  ${applyVariations('Divider')}
 `
 
 Divider.displayName = 'Divider'
 
 Divider.defaultProps = {
-  borderColor: 'borderGray',
-  theme: theme,
+  color: 'border',
   ml: 0,
   mr: 0
 }
@@ -21,7 +23,8 @@ Divider.defaultProps = {
 Divider.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
-  ...borderColor.propTypes
+  ...borderColor.propTypes,
+  color: deprecatedColorValue()
 }
 
 export default Divider

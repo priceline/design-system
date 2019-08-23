@@ -1,8 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import { width, space } from 'styled-system'
-import theme from './theme'
-import { mapProps, deprecatedPropType } from './utils'
+import {
+  mapProps,
+  deprecatedPropType,
+  applyVariations,
+  getPaletteColor,
+  getTextColorOn,
+  deprecatedColorValue
+} from './utils'
 
 const size = props => {
   switch (props.size) {
@@ -29,6 +35,39 @@ const size = props => {
   }
 }
 
+const variations = {
+  fill: css`
+    background-color: ${props =>
+      getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    color: ${props => getTextColorOn(props.disabled ? 'light' : 'base')(props)};
+
+    &:hover {
+      background-color: ${props =>
+        getPaletteColor(props.disabled ? 'light' : 'dark')(props)};
+      ${props =>
+        props.disabled ? '' : `color: ${getTextColorOn('dark')(props)};`}
+    }
+  `,
+  outline: css`
+    color: ${props =>
+      getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    box-shadow: inset 0 0 0 2px
+      ${props => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      ${props =>
+        props.disabled
+          ? ''
+          : `
+        color: ${getPaletteColor('dark')(props)};
+        box-shadow: inset 0 0 0 2px ${getPaletteColor('dark')(props)};
+      `}
+    }
+  `
+}
+
 const Button = mapProps(({ fullWidth, ...props }) => ({
   width: fullWidth ? 1 : undefined,
   ...props
@@ -41,34 +80,27 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: pointer;
+  cursor: ${props => (props.disabled ? 'default' : 'pointer')};
   border-radius: ${props => props.theme.radius};
-  background-color: ${props => props.theme.colors.blue};
-  color: ${props => props.theme.colors.white};
   border-width: 0;
   border-style: solid;
-
-  &:disabled {
-    opacity: 0.25;
-  }
-
-  &:hover {
-    background-color: ${props =>
-      props.disabled ? null : props.theme.colors.darkBlue};
-  }
-
   ${width} ${size} ${space};
+  ${applyVariations('Button', variations)}
 `)
 
 Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   ...width.propTypes,
   ...space.propTypes,
-  fullWidth: deprecatedPropType('width')
+  fullWidth: deprecatedPropType('width'),
+  variation: PropTypes.oneOf(Object.keys(variations)),
+  color: deprecatedColorValue(),
+  disabled: PropTypes.bool
 }
 
 Button.defaultProps = {
-  theme: theme
+  color: 'primary',
+  variation: 'fill'
 }
 
 Button.displayName = 'Button'

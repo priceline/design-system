@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button, GreenButton, RedButton, OutlineButton } from '../src'
+import { Button } from '../src'
 
 storiesOf('Button', module)
   .add(
@@ -9,16 +9,48 @@ storiesOf('Button', module)
     withInfo({
       inline: true,
       text:
-        'Use the <Button />,  <GreenButton />, <RedButton />,  <OutlineButton/ > components to render a primitive button.'
+        'Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.'
     })(() => <Button size="large">Button</Button>)
   )
-  .add('color', () => (
+  .add('variations', () => (
     <div>
       <Button mr={2}>Button</Button>
-      <GreenButton mr={2}>GreenButton</GreenButton>
-      <RedButton mr={2}>RedButton</RedButton>
-      <OutlineButton mr={2}>OutlineButton</OutlineButton>
+      <Button variation="outline" mr={2}>
+        Outline Button
+      </Button>
     </div>
+  ))
+  .add('colors', () => (
+    <React.Fragment>
+      <div>
+        <Button color="secondary" mr={2}>
+          Button
+        </Button>
+        <Button color="error" mr={2}>
+          Button
+        </Button>
+        <Button color="caution" mr={2}>
+          Button
+        </Button>
+        <Button color="orange" mr={2}>
+          Button
+        </Button>
+      </div>
+      <div style={{ marginTop: '5px' }}>
+        <Button variation="outline" color="secondary" mr={2}>
+          Outline Button
+        </Button>
+        <Button variation="outline" color="error" mr={2}>
+          Outline Button
+        </Button>
+        <Button variation="outline" color="caution" mr={2}>
+          Outline Button
+        </Button>
+        <Button variation="outline" color="alert" mr={2}>
+          Outline Button
+        </Button>
+      </div>
+    </React.Fragment>
   ))
   .add('sizes', () => (
     <div>

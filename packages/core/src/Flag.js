@@ -1,14 +1,23 @@
 import React from 'react'
-import styled from 'styled-components'
-import { color, themeGet } from 'styled-system'
+import styled, { withTheme } from 'styled-components'
+import { themeGet } from 'styled-system'
 import Flex from './Flex'
 import Hide from './Hide'
 import Box from './Box'
+import {
+  applyVariations,
+  getPaletteColor,
+  hasPaletteColor,
+  color,
+  deprecatedColorValue
+} from './utils'
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const shadowColor = props => {
-  const darkColor = themeGet(`colors.dark${capitalize(props.color)}`)(props)
+  const darkColor = hasPaletteColor(props)
+    ? getPaletteColor('dark')(props)
+    : themeGet(`colors.dark${capitalize(props.color)}`)(props)
 
   return {
     backgroundImage: !darkColor
@@ -24,6 +33,7 @@ const FlagShadow = styled(Box)`
   width: 8px;
   height: 8px;
   align-self: flex-end;
+  background-color: inherit;
   ${shadowColor};
   position: absolute;
   bottom: 0;
@@ -31,8 +41,7 @@ const FlagShadow = styled(Box)`
 
 const FlagRight = styled(Box)`
   flex: none;
-  background-color: ${props =>
-    themeGet(`colors.${props.color}`, props.color)(props)};
+  background-color: ${props => getPaletteColor('base')(props) || props.color};
   border-radius: 0 ${themeGet('radius')} ${themeGet('radius')} 0;
   /* for 32 x 8 triangle */
   transform: skew(-14deg);
@@ -58,20 +67,40 @@ const RelativeHide = styled(Hide)`
   position: relative;
 `
 
+const StyledFlex = styled(Flex)`
+  ${applyVariations('Flag')}
+`
+
 const Flag = ({ color, bg, children, width, ...props }) => (
-  <Flex width={width} {...props} ml={[0, -2]}>
+  <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
-      <FlagShadow width="4px" mr={-2} mb={-2} color={bg} />
+      <FlagShadow
+        width="4px"
+        mr={-2}
+        mb={-2}
+        color={hasPaletteColor({ color, ...props }) ? color : bg}
+      />
     </RelativeHide>
-    <FlagBody flexAuto={!!width} color={color} bg={bg} py={[1, 2]} pl={[1, 3]}>
+    <FlagBody
+      flexAuto={!!width}
+      color={color}
+      bg={hasPaletteColor({ color, ...props }) ? false : bg}
+      py={[1, 2]}
+      pl={[1, 3]}
+    >
       {children}
     </FlagBody>
-    <FlagRight width="18px" color={bg} ml={-2} />
-  </Flex>
+    <FlagRight
+      width="18px"
+      color={hasPaletteColor({ color, ...props }) ? color : bg}
+      ml={-2}
+    />
+  </StyledFlex>
 )
 
 Flag.propTypes = {
-  ...color.propTypes
+  color: deprecatedColorValue(),
+  bg: deprecatedColorValue()
 }
 
 Flag.defaultProps = {
@@ -81,4 +110,4 @@ Flag.defaultProps = {
 
 Flag.displayName = 'Flag'
 
-export default Flag
+export default withTheme(Flag)

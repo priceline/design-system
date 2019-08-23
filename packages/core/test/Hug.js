@@ -1,5 +1,4 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import { Hug, Text, Card, theme } from '../src'
 
 const text = (
@@ -10,7 +9,7 @@ const text = (
 
 describe('Hug', () => {
   test('renders with border-radius from theme on top only', () => {
-    const json = renderer.create(<Hug />).toJSON()
+    const json = rendererCreateWithTheme(<Hug />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-top-left-radius', theme.radius)
     expect(json).toHaveStyleRule('border-top-right-radius', theme.radius)
@@ -19,7 +18,7 @@ describe('Hug', () => {
   })
 
   test('renders text, icon, and Child', () => {
-    const json = renderer.create(
+    const json = rendererCreateWithTheme(
       <Hug icon="thumbsUp" text={text}>
         <Card p={3} bg="white" color="text">
           I‘m a card within a hug!
@@ -30,7 +29,7 @@ describe('Hug', () => {
   })
 
   test('renders text when string is provided', () => {
-    const json = renderer.create(
+    const json = rendererCreateWithTheme(
       <Hug
         icon="thumbsUp"
         text="I've been known to hug a card from time to time"
@@ -44,7 +43,7 @@ describe('Hug', () => {
   })
 
   test('renders text when array of nodes is provided', () => {
-    const json = renderer.create(
+    const json = rendererCreateWithTheme(
       <Hug icon="thumbsUp" text={[text, text]}>
         <Card p={3} bg="white" color="text">
           I‘m a card within a hug!

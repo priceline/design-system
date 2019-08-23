@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { ThemeProvider, theme, Box } from '../src'
+import { ThemeProvider, theme, createTheme, Box } from '../src'
 import { Base } from '../src/ThemeProvider'
 
 describe('ThemeProvider', () => {
@@ -15,7 +15,7 @@ describe('ThemeProvider', () => {
   })
 
   test('Base component includes a font', () => {
-    const json = renderer.create(<Base theme={theme} />).toJSON()
+    const json = renderer.create(<Base theme={createTheme()} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-family', theme.font)
   })

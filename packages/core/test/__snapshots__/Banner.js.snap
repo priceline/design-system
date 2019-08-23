@@ -6,8 +6,9 @@ exports[`Banner accepts non-preset colors 1`] = `
 }
 
 .c0 {
-  background-color: #4f6f8f;
   text-align: left;
+  background-color: #4f6f8f;
+  color: #0a0;
 }
 
 .c1 {
@@ -42,9 +43,10 @@ exports[`Banner accepts non-preset colors 1`] = `
 
 <div
   className="c0"
+  color="green"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <div
       className="c2"
@@ -68,9 +70,9 @@ exports[`Banner accepts non-preset colors 1`] = `
 
 exports[`Banner renders content from children props 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -120,7 +122,7 @@ exports[`Banner renders content from children props 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -165,9 +167,9 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c0 {
-  color: #fff;
-  background-color: #007aff;
   text-align: left;
+  background-color: #007aff;
+  color: #fff;
 }
 
 .c1 {
@@ -213,7 +215,7 @@ exports[`Banner renders with blue bg 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -251,9 +253,9 @@ exports[`Banner renders with blue bg 1`] = `
 
 exports[`Banner renders with custom iconName and size 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -303,7 +305,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -341,9 +343,9 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 exports[`Banner renders with green bg 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -393,7 +395,7 @@ exports[`Banner renders with green bg 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -435,9 +437,9 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c0 {
-  color: #049;
-  background-color: #e8f2ff;
   text-align: left;
+  background-color: #e8f2ff;
+  color: #049;
 }
 
 .c1 {
@@ -483,7 +485,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
   color="darkBlue"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -525,9 +527,9 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c0 {
-  color: #060;
-  background-color: #ecf7ec;
   text-align: left;
+  background-color: #ecf7ec;
+  color: #060;
 }
 
 .c1 {
@@ -573,7 +575,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
   color="darkGreen"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -615,9 +617,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c0 {
-  color: #800;
-  background-color: #fbebeb;
   text-align: left;
+  background-color: #fbebeb;
+  color: #800;
 }
 
 .c1 {
@@ -663,7 +665,7 @@ exports[`Banner renders with lightRed bg 1`] = `
   color="darkRed"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -701,9 +703,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 exports[`Banner renders with no props other than theme 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -753,7 +755,7 @@ exports[`Banner renders with no props other than theme 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -795,9 +797,9 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c0 {
-  color: #fff;
-  background-color: #f68013;
   text-align: left;
+  background-color: #f68013;
+  color: #fff;
 }
 
 .c1 {
@@ -843,7 +845,7 @@ exports[`Banner renders with orange bg 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -885,9 +887,9 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c0 {
-  color: #fff;
-  background-color: #c00;
   text-align: left;
+  background-color: #c00;
+  color: #fff;
 }
 
 .c1 {
@@ -933,7 +935,7 @@ exports[`Banner renders with red bg 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -971,9 +973,9 @@ exports[`Banner renders with red bg 1`] = `
 
 exports[`Banner renders with text node 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -1023,7 +1025,7 @@ exports[`Banner renders with text node 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -1069,9 +1071,9 @@ exports[`Banner renders with text node 1`] = `
 
 exports[`Banner renders with text string 1`] = `
 .c0 {
-  color: #fff;
-  background-color: #0a0;
   text-align: left;
+  background-color: #0a0;
+  color: #fff;
 }
 
 .c3 {
@@ -1121,7 +1123,7 @@ exports[`Banner renders with text string 1`] = `
   color="white"
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"

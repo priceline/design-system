@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
-import defaultTheme from './theme'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
-const borders = ({ color, theme }) => {
-  const borderColor = color ? theme.colors[color] : theme.colors.borderGray
-  const focusColor = color ? borderColor : theme.colors.blue
+const borders = props => {
+  const borderColor = props.color
+    ? getPaletteColor('base')(props)
+    : getPaletteColor('border.base')(props)
+  const focusColor = props.color
+    ? borderColor
+    : getPaletteColor('primary.base')(props)
   return {
     'border-color': borderColor,
     'box-shadow': `0 0 0 1px ${borderColor}`,
@@ -28,7 +32,6 @@ const Input = styled.input`
   border-radius: ${themeGet('radius')};
   border-width: 0px;
   border-style: solid;
-  border-color: ${themeGet('colors.borderGray')};
 
   padding-top: 14px;
   padding-bottom: 14px;
@@ -46,19 +49,16 @@ const Input = styled.input`
   }
 
   ${borders} ${space};
+  ${applyVariations('Input')}
 `
 
 Input.displayName = 'Input'
 Input.isField = true
 Input.propTypes = {
   id: PropTypes.string.isRequired,
-  color: PropTypes.string,
+  color: deprecatedColorValue(),
   ...borders.propTypes,
   ...space.propTypes
-}
-
-Input.defaultProps = {
-  theme: defaultTheme
 }
 
 export default Input

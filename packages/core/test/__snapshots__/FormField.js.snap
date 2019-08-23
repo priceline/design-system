@@ -21,7 +21,6 @@ exports[`FormField renders 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -66,18 +65,18 @@ exports[`FormField renders 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  color: #4f6f8f;
   margin-bottom: -20px;
   margin-left: 12px;
   padding-top: 6px;
   font-size: 10px;
-  color: #4f6f8f;
   font-weight: 700;
 }
 
 <div>
   <label
     className="c0"
-    color="gray"
+    color="border.light"
     fontSize={10}
     fontWeight="bold"
     htmlFor="email"
@@ -93,7 +92,7 @@ exports[`FormField renders 1`] = `
     Email Address
   </label>
   <div
-    className="c1"
+    className="c1 "
   >
     <input
       className="c2"
@@ -140,7 +139,6 @@ exports[`FormField renders with Icon 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -185,18 +183,18 @@ exports[`FormField renders with Icon 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  color: #4f6f8f;
   margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
   font-size: 10px;
-  color: #4f6f8f;
   font-weight: 700;
 }
 
 <div>
   <label
     className="c0"
-    color="gray"
+    color="border.light"
     fontSize={10}
     fontWeight="bold"
     htmlFor="email"
@@ -212,7 +210,7 @@ exports[`FormField renders with Icon 1`] = `
     Email Address
   </label>
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -283,7 +281,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -328,18 +325,18 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  color: #4f6f8f;
   margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
   font-size: 10px;
-  color: #4f6f8f;
   font-weight: 700;
 }
 
 <div>
   <label
     className="c0"
-    color="gray"
+    color="border.light"
     fontSize={10}
     fontWeight="bold"
     htmlFor="email"
@@ -355,7 +352,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     Email
   </label>
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden="true"
@@ -400,6 +397,10 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
+.c2 {
+  width: 100%;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -412,118 +413,10 @@ exports[`FormField renders with Select  1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  margin-left: -32px;
-  color: gray;
-}
-
-.c3 {
-  pointer-events: none;
-}
-
-.c2 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #c0cad5;
-  margin: 0px;
-  padding-left: 12px;
-  padding-right: 32px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-size: 14px;
-}
-
-.c2:focus {
-  outline: none;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-      width={1}
-    >
-      <select
-        className="c2"
-        fontSize={1}
-        style={
-          Object {
-            "paddingBottom": 14,
-            "paddingLeft": undefined,
-            "paddingRight": undefined,
-            "paddingTop": 14,
-            "transitionDuration": ".1s",
-            "transitionProperty": "padding-top, padding-bottom",
-          }
-        }
-      />
-      <svg
-        aria-hidden="true"
-        className="c3 c4"
-        color="gray"
-        fill="currentcolor"
-        focusable="false"
-        height={24}
-        tabIndex="-1"
-        viewBox="0 0 24 24"
-        width={24}
-      >
-        <path
-          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`FormField renders with Select and Icon 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -531,7 +424,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
-  color: gray;
+  color: #4f6f8f;
 }
 
 .c4 {
@@ -567,7 +460,118 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 <div>
   <div
-    className="c0"
+    className="c0 "
+  >
+    <div
+      className="c1 c2"
+      width={1}
+    >
+      <select
+        className="c3"
+        color="primary"
+        fontSize={1}
+        style={
+          Object {
+            "paddingBottom": 14,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": 14,
+            "transitionDuration": ".1s",
+            "transitionProperty": "padding-top, padding-bottom",
+          }
+        }
+      />
+      <svg
+        aria-hidden="true"
+        className="c4 c5"
+        color="gray"
+        fill="currentcolor"
+        focusable="false"
+        height={24}
+        tabIndex="-1"
+        viewBox="0 0 24 24"
+        width={24}
+      >
+        <path
+          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FormField renders with Select and Icon 1`] = `
+.c3 {
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-left: -32px;
+  color: #4f6f8f;
+}
+
+.c5 {
+  pointer-events: none;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
+  margin: 0px;
+  padding-left: 12px;
+  padding-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+}
+
+.c4:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow: 0 0 0 1px #007aff;
+}
+
+<div>
+  <div
+    className="c0 "
   >
     <svg
       aria-hidden="true"
@@ -593,11 +597,12 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
     </svg>
     <div
-      className="c2"
+      className="c2 c3"
       width={1}
     >
       <select
-        className="c3"
+        className="c4"
+        color="primary"
         fontSize={1}
         style={
           Object {
@@ -612,7 +617,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden="true"
-        className="c4 c5"
+        className="c5 c6"
         color="gray"
         fill="currentcolor"
         focusable="false"
