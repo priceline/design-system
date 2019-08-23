@@ -11,7 +11,7 @@ export default [
     ]
   },
   {
-    section: 'Components',
+    section: 'Core Components',
     links: [
       { name: 'Absolute', path: '/Absolute' },
       { name: 'BackgroundImage', path: '/BackgroundImage' },
@@ -48,6 +48,13 @@ export default [
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
       { name: 'Truncate', path: '/Truncate' }
+    ]
+  },
+  {
+    section: 'Modal Components',
+    links: [
+      { name: 'Modal', path: '/Modal' },
+      { name: 'ScrollLock', path: '/ScrollLock' }
     ]
   },
   {
