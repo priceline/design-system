@@ -110,6 +110,9 @@ const createPalette = ({ palette = {}, ...theme }) => {
         base: darkBlue,
         dark: '#002f6b'
       },
+      strike: {
+        base: red
+      },
       promoPrimary: {
         light: lightPurple,
         base: purple,
