@@ -25,4 +25,5 @@ Follow these steps to migrate from v1 to v2
   - `styled-components` >=2.0.0 || >=3.0.0 || >=4.0.0
   - `styled-system` >=3.0.0
 - The default behavior of FormField labels has changed. Use the Label `autoHide` prop instead of the FormField `alwaysShowLabel` prop.
+  - This also applies to `InputField`, which is just an export alias for `FormField`.
 - Account for ThemeProvider no longer using the deprecated `injectGlobal` therby not setting `body { margin: 0 }`

@@ -24,6 +24,7 @@
     "styled-system": "^3.1.6"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "pcln-design-system": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
