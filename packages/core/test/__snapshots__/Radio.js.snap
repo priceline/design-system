@@ -63,10 +63,12 @@ exports[`Radio Disabled, rendering 1`] = `
 >
   <div
     className="c1"
+    color="primary"
     disabled={true}
   >
     <input
       className="c2"
+      color="primary"
       disabled={true}
       size={24}
       type="radio"
@@ -156,9 +158,11 @@ exports[`Radio Not Selected, rendering 1`] = `
 >
   <div
     className="c1"
+    color="primary"
   >
     <input
       className="c2"
+      color="primary"
       size={24}
       type="radio"
     />
@@ -248,10 +252,12 @@ exports[`Radio Selected, rendering 1`] = `
   <div
     checked={true}
     className="c1"
+    color="primary"
   >
     <input
       checked={true}
       className="c2"
+      color="primary"
       size={24}
       type="radio"
     />
