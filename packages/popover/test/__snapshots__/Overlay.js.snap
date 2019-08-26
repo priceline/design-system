@@ -5,8 +5,7 @@ exports[`Background Overlay Active overlay 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #007aff;
-  background-color: #000;
+  color: primary;
 }
 
 .c1:hover {
@@ -29,7 +28,7 @@ exports[`Background Overlay Active overlay 1`] = `
 <div>
   <a
     class="c0 c1"
-    color="blue"
+    color="primary"
   />
 </div>
 `;
@@ -39,8 +38,7 @@ exports[`Background Overlay Inactive overlay 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #007aff;
-  background-color: #000;
+  color: primary;
 }
 
 .c1:hover {
@@ -63,7 +61,7 @@ exports[`Background Overlay Inactive overlay 1`] = `
 <div>
   <a
     class="c0 c1"
-    color="blue"
+    color="primary"
   />
 </div>
 `;
