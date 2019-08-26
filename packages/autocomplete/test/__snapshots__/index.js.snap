@@ -25,7 +25,6 @@ exports[`Autocomplete renders 1`] = `
   border-radius: 2px;
   border-width: 0px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -70,8 +69,8 @@ exports[`Autocomplete renders 1`] = `
   display: block;
   width: 100%;
   margin: 0;
-  font-size: 10px;
   color: #4f6f8f;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -98,7 +97,7 @@ exports[`Autocomplete renders 1`] = `
 >
   <label
     className="c0"
-    color="gray"
+    color="border.light"
     fontSize="10px"
     fontWeight="bold"
     htmlFor="downshift-0-input"
