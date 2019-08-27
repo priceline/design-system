@@ -23,7 +23,9 @@ module.exports = {
     }),
     commonjs({
       namedExports: {
-        'node_modules/deepmerge/index.js': ['deepmerge']
+        'node_modules/deepmerge/index.js': ['deepmerge'],
+        'node_modules/classnames/index.js': ['classNames'],
+        'node_modules/shallowequal/index.js': ['shallowEqual']
       }
     }),
     json(),
