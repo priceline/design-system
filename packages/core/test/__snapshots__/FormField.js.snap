@@ -84,6 +84,8 @@ exports[`FormField renders 1`] = `
       Object {
         "height": 20,
         "opacity": 1,
+        "pointerEvents": "none",
+        "position": "relative",
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
       }
@@ -202,6 +204,8 @@ exports[`FormField renders with Icon 1`] = `
       Object {
         "height": 20,
         "opacity": 1,
+        "pointerEvents": "none",
+        "position": "relative",
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
       }
@@ -225,6 +229,7 @@ exports[`FormField renders with Icon 1`] = `
           "marginLeft": 8,
           "marginRight": -32,
           "pointerEvents": "none",
+          "position": "relative",
         }
       }
       tabIndex="-1"
@@ -344,6 +349,8 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       Object {
         "height": 20,
         "opacity": 0,
+        "pointerEvents": "none",
+        "position": "relative",
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
       }
@@ -367,6 +374,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
           "marginLeft": 8,
           "marginRight": -32,
           "pointerEvents": "none",
+          "position": "relative",
         }
       }
       tabIndex="-1"
@@ -586,6 +594,7 @@ exports[`FormField renders with Select and Icon 1`] = `
           "marginLeft": 8,
           "marginRight": -32,
           "pointerEvents": "none",
+          "position": "relative",
         }
       }
       tabIndex="-1"

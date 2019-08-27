@@ -17,7 +17,12 @@ storiesOf('FormField', module)
     <FormField>
       <Label htmlFor="demo">Email Address</Label>
       <Icon name="Email" color="blue" />
-      <Input id="demo" name="demo" defaultValue="hello@example.com" />
+      <Input
+        type="email"
+        id="email"
+        name="email"
+        defaultValue="hello@example.com"
+      />
     </FormField>
   ))
   .add('dynamic label', () => (

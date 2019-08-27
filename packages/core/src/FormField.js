@@ -45,7 +45,9 @@ const FormField = props => {
         height: 20,
         transitionProperty: 'opacity',
         transitionDuration: '.1s',
-        opacity: showLabel ? 1 : 0
+        opacity: showLabel ? 1 : 0,
+        pointerEvents: 'none',
+        position: 'relative'
       }
     })
 
