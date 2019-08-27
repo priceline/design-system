@@ -42,7 +42,6 @@ export default [
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
       { name: 'Select', path: '/Select' },
-      { name: 'Slider', path: '/Slider' },
       { name: 'Stamp', path: '/Stamp' },
       { name: 'Text', path: '/Text' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },
@@ -56,6 +55,10 @@ export default [
       { name: 'Modal', path: '/Modal' },
       { name: 'ScrollLock', path: '/ScrollLock' }
     ]
+  },
+  {
+    section: 'Slider',
+    links: [{ name: 'Slider', path: '/Slider' }]
   },
   {
     section: 'Resources',
