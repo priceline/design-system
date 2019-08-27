@@ -78,6 +78,7 @@ exports[`IconField renders 1`] = `
         "marginLeft": 8,
         "marginRight": -32,
         "pointerEvents": "none",
+        "position": "relative",
       }
     }
     tabIndex="-1"
@@ -230,6 +231,7 @@ exports[`IconField renders icon button 1`] = `
         "marginLeft": -32,
         "marginRight": 8,
         "pointerEvents": "auto",
+        "position": "relative",
       }
     }
   >
@@ -373,6 +375,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
         "marginLeft": 8,
         "marginRight": -32,
         "pointerEvents": "none",
+        "position": "relative",
       }
     }
     tabIndex="-1"
@@ -404,6 +407,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
         "marginLeft": -32,
         "marginRight": 8,
         "pointerEvents": "auto",
+        "position": "relative",
       }
     }
   >
