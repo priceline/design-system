@@ -21,8 +21,13 @@
     ]
   },
   "dependencies": {
-    "rc-slider": "^8.6.3",
-    "styled-system": "^3.2.1"
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.4",
+    "rc-tooltip": "^3.7.0",
+    "rc-util": "^4.0.4",
+    "shallowequal": "^1.0.1",
+    "styled-system": "^3.2.1",
+    "warning": "^4.0.3"
   },
   "peerDependencies": {
     "pcln-design-system": ">=1.x || >=2.x",
@@ -31,6 +36,8 @@
   "devDependencies": {
     "@reach/component-component": "^0.1.1",
     "jest": "^24.1.0",
+    "rc-tools": "8.x",
+    "rc-trigger": "^2.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
