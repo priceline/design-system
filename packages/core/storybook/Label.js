@@ -64,3 +64,14 @@ storiesOf('Label', module)
       </Label>
     </Flex>
   ))
+  .add('width', () => (
+    <div>
+      <Label width={1 / 2} color="blue">
+        label with 50% width
+      </Label>
+      <Label width="20px" color="green">
+        label with 20px width
+      </Label>
+      <Label color="orange">default label width</Label>
+    </div>
+  ))

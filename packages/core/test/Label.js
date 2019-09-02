@@ -16,4 +16,11 @@ describe('Label', () => {
     const json = rendererCreateWithTheme(<Label nowrap />).toJSON()
     expect(json).toMatchSnapshot()
   })
+
+  test('Label width renders', () => {
+    const json = rendererCreateWithTheme(
+      <Label width={1 / 2} nowrap />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+  })
 })
