@@ -74,6 +74,7 @@ exports[`Slider renders 1`] = `
     style={
       Object {
         "left": "0%",
+        "right": "auto",
         "width": "0%",
       }
     }
@@ -94,6 +95,8 @@ exports[`Slider renders 1`] = `
     style={
       Object {
         "left": "0%",
+        "right": "auto",
+        "transform": "translateX(-50%)",
       }
     }
     tabIndex={0}
@@ -111,6 +114,8 @@ exports[`Slider renders 1`] = `
     style={
       Object {
         "left": "0%",
+        "right": "auto",
+        "transform": "translateX(-50%)",
       }
     }
     tabIndex={0}
