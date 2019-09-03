@@ -65,13 +65,13 @@ exports[`Select renders 1`] = `
     fontSize={1}
   />
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="c3 c4"
     color="gray"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={24}
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}
   >

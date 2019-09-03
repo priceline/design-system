@@ -92,13 +92,13 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     type="checkbox"
   />
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="c3"
     data-name="checked"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={24}
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}
   >
@@ -107,13 +107,13 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
     />
   </svg>
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="c3"
     data-name="empty"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={24}
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}
   >
