@@ -74,12 +74,12 @@ exports[`Radio Disabled, rendering 1`] = `
       type="radio"
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="c3 c4"
       fill="currentcolor"
-      focusable="false"
+      focusable={false}
       height={28}
-      tabIndex="-1"
+      tabIndex={-1}
       viewBox="0 0 24 24"
       width={28}
     >
@@ -167,12 +167,12 @@ exports[`Radio Not Selected, rendering 1`] = `
       type="radio"
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="c3 c4"
       fill="currentcolor"
-      focusable="false"
+      focusable={false}
       height={28}
-      tabIndex="-1"
+      tabIndex={-1}
       viewBox="0 0 24 24"
       width={28}
     >
@@ -262,12 +262,12 @@ exports[`Radio Selected, rendering 1`] = `
       type="radio"
     />
     <svg
-      aria-hidden="true"
+      aria-hidden={true}
       className="c3 c4"
       fill="currentcolor"
-      focusable="false"
+      focusable={false}
       height={28}
-      tabIndex="-1"
+      tabIndex={-1}
       viewBox="0 0 24 24"
       width={28}
     >
