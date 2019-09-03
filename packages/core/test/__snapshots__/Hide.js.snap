@@ -6,6 +6,12 @@ exports[`Hide renders 1`] = `
 />
 `;
 
+exports[`Hide renders as inline 1`] = `
+<text
+  className=""
+/>
+`;
+
 exports[`Hide renders with lg prop 1`] = `
 @media screen and (min-width:48em) and (max-width:63.99em) {
   .c0 {

@@ -46,5 +46,6 @@ Hide.propTypes = {
 }
 
 Hide.displayName = 'Hide'
+Hide.text = Hide.withComponent('text')
 
 export default Hide
