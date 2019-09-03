@@ -66,10 +66,10 @@ exports[`IconField renders 1`] = `
   className="c0 "
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="c1"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={24}
     style={
       Object {
@@ -81,7 +81,7 @@ exports[`IconField renders 1`] = `
         "position": "relative",
       }
     }
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}
   >
@@ -237,12 +237,12 @@ exports[`IconField renders icon button 1`] = `
   >
     <div>
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="c4"
         fill="currentcolor"
-        focusable="false"
+        focusable={false}
         height={24}
-        tabIndex="-1"
+        tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
       >
@@ -363,10 +363,10 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   className="c0 "
 >
   <svg
-    aria-hidden="true"
+    aria-hidden={true}
     className="c1"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={24}
     style={
       Object {
@@ -378,7 +378,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
         "position": "relative",
       }
     }
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}
   >
@@ -413,12 +413,12 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   >
     <div>
       <svg
-        aria-hidden="true"
+        aria-hidden={true}
         className="c1"
         fill="currentcolor"
-        focusable="false"
+        focusable={false}
         height={24}
-        tabIndex="-1"
+        tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
       >

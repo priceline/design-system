@@ -1,4 +1,3 @@
-
 # pcln-icons
 
 Priceline React icons based on Material Design Icons
@@ -13,11 +12,7 @@ npm i pcln-icons
 import React from 'react'
 import FlightsIcon from 'pcln-icons/lib/Flights'
 
-export default props =>
-  <FlightsIcon
-    mr={2}
-    color='blue'
-  />
+export default props => <FlightsIcon mr={2} />
 ```
 
 For a complete list of all icons, see: [the iconography docs](https://pricelinelabs.github.io/design-system/iconography)
@@ -30,11 +25,7 @@ For backwards compatibility, the `Icon` component can be used in the same way as
 import React from 'react'
 import Icon from 'pcln-icons'
 
-export default props =>
-  <Icon
-    name='Flights'
-    color='blue'
-  />
+export default props => <Icon name="Flights" />
 ```
 
 ## Development
@@ -62,4 +53,3 @@ components/ React components for icons
 test/       Unit tests
 lib/        Icon components compiled to commonjs format
 ```
-
