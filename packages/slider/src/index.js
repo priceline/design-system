@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Range from 'rc-slider/lib/Range'
+import Range from './Range'
 import { space, color, themeGet } from 'styled-system'
 
 export const Slider = styled(Range)`
@@ -48,7 +48,7 @@ export const Slider = styled(Range)`
     &:active {
     }
     &:focus {
-      box-shadow: 0 0 0 2px ${themeGet('colors.alphablue')};
+      box-shadow: 0 0 0 2px ${themeGet('colors.lightBlue')};
     }
   }
 
