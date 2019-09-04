@@ -25,6 +25,9 @@ const SelectBase = styled.select`
     border-color: ${getPaletteColor('base')};
     box-shadow: 0 0 0 1px ${getPaletteColor('base')};
   }
+  ::-ms-expand {
+    display: none;
+  }
 `
 SelectBase.defaultProps = {
   fontSize: 1,
