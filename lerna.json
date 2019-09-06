@@ -1,6 +1,4 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*", "docsite"],
   "version": "2.0.4"
 }

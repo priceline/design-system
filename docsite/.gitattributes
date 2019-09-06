@@ -1,0 +1,27 @@
+# Common .gitattributes file courtesy of
+# https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes
+
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# The above will handle all files NOT found below
+
+# Documents
+*.pdf  diff=astextplain
+*.PDF  diff=astextplain
+*.rtf  diff=astextplain
+*.RTF  diff=astextplain
+*.md   text
+
+# Graphics
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.tif  binary
+*.tiff binary
+*.ico  binary
+# SVG treated as an asset (binary) by default.
+*.svg  binary
+#*.svg text
+*.eps  binary
