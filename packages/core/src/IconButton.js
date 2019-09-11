@@ -19,7 +19,7 @@ const TransparentButton = styled(Button)`
 const IconButton = ({ name, size, color, ...props }) => (
   <TransparentButton {...props}>
     <div>
-      <Icon name={name} size={size} color={color} />
+      <Icon name={name} size={size} color={color} {...props} />
     </div>
   </TransparentButton>
 )
