@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper renders with children 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  color: #007aff;
+  font-size: 14px;
+}
+
+.c6 {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c7 {
+  color: #4f6f8f;
+  font-size: 14px;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 4px;
+  color: #007aff;
+}
+
+.c2 {
+  cursor: default;
+}
+
+.c0 > :not(:last-child) {
+  margin-right: 32px;
+}
+
+<div
+  className="c0 c1 "
+>
+  <div
+    className="c2 c3 "
+  >
+    <svg
+      aria-hidden={true}
+      className="c4"
+      color="primary"
+      fill="currentcolor"
+      focusable={false}
+      height={16}
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={16}
+    >
+      <path
+        d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+      />
+    </svg>
+    <div
+      className="c5"
+      color="primary"
+      fontSize={1}
+    >
+      First Step
+    </div>
+  </div>
+  <div
+    className="c2 c3 "
+  >
+    <div
+      className="c6"
+      color="primary"
+      fontSize={1}
+    >
+      Second Step
+    </div>
+  </div>
+  <div
+    className="c2 c3 "
+  >
+    <div
+      className="c7"
+      color="text.light"
+      fontSize={1}
+    >
+      Third Step
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stepper renders without crashing 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 > :not(:last-child) {
+  margin-right: 32px;
+}
+
+<div
+  className="c0 c1 "
+/>
+`;

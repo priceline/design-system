@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step renders active step 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c0 {
+  cursor: default;
+}
+
+<div
+  className="c0 c1 "
+>
+  <div
+    className="c2"
+    color="primary"
+    fontSize={1}
+  >
+    Step
+  </div>
+</div>
+`;
+
+exports[`Step renders as active and completed 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 4px;
+  color: #007aff;
+}
+
+.c0 {
+  cursor: default;
+}
+
+<div
+  className="c0 c1 "
+>
+  <svg
+    aria-hidden={true}
+    className="c2"
+    color="primary"
+    fill="currentcolor"
+    focusable={false}
+    height={16}
+    tabIndex={-1}
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+    />
+  </svg>
+  <div
+    className="c3"
+    color="primary"
+    fontSize={1}
+  >
+    Step
+  </div>
+</div>
+`;
+
+exports[`Step renders completed step 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  color: #007aff;
+  font-size: 14px;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 4px;
+  color: #007aff;
+}
+
+.c0 {
+  cursor: default;
+}
+
+<div
+  className="c0 c1 "
+>
+  <svg
+    aria-hidden={true}
+    className="c2"
+    color="primary"
+    fill="currentcolor"
+    focusable={false}
+    height={16}
+    tabIndex={-1}
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+    />
+  </svg>
+  <div
+    className="c3"
+    color="primary"
+    fontSize={1}
+  >
+    Step
+  </div>
+</div>
+`;
+
+exports[`Step renders with on click 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  color: #4f6f8f;
+  font-size: 14px;
+}
+
+.c0 {
+  cursor: pointer;
+}
+
+<div
+  className="c0 c1 "
+  onClick={[Function]}
+>
+  <div
+    className="c2"
+    color="text.light"
+    fontSize={1}
+  >
+    Step
+  </div>
+</div>
+`;
+
+exports[`Step renders without crashing 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  color: #4f6f8f;
+  font-size: 14px;
+}
+
+.c0 {
+  cursor: default;
+}
+
+<div
+  className="c0 c1 "
+>
+  <div
+    className="c2"
+    color="text.light"
+    fontSize={1}
+  >
+    Step
+  </div>
+</div>
+`;
