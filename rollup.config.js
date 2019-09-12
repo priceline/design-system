@@ -38,6 +38,9 @@ module.exports = {
     'react-dom',
     'prop-types',
     'styled-system',
-    'pcln-icons'
+    'pcln-icons',
+    'rc-util/lib/KeyCode',
+    'rc-util/lib/Dom/addEventListener',
+    'warning'
   ]
 }
