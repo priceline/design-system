@@ -1,8 +1,8 @@
 /* eslint-disable max-len, no-undef */
 import React from 'react'
 import { mount } from 'enzyme'
-import Slider from '../../src/Slider'
-import Range from '../../src/Range'
+import Slider from '../../../src/rc-slider/Slider'
+import Range from '../../../src/rc-slider/Range'
 
 describe('marks', () => {
   let originGetBoundingClientRect

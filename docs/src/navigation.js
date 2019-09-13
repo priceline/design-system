@@ -58,7 +58,10 @@ export default [
   },
   {
     section: 'Slider',
-    links: [{ name: 'Slider', path: '/Slider' }]
+    links: [
+      { name: 'RangeSlider', path: '/RangeSlider' },
+      { name: 'Slider', path: '/Slider' }
+    ]
   },
   {
     section: 'Resources',
