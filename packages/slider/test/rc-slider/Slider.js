@@ -2,8 +2,8 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 import keyCode from 'rc-util/lib/KeyCode'
-import Slider from '../src/Slider'
-import Range from '../src/Range'
+import Slider from '../../src/rc-slider/Slider'
+import Range from '../../src/rc-slider/Range'
 
 describe('Slider', () => {
   it('should render Slider with correct DOM structure', () => {

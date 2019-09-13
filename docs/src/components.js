@@ -1,5 +1,5 @@
 import * as DS from 'pcln-design-system'
-import Slider from 'pcln-slider'
+import RangeSlider, { Slider } from 'pcln-slider'
 import { Modal } from 'pcln-modal'
 import ModalDemo from './ModalDemo'
 import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
@@ -104,6 +104,7 @@ const components = {
   a: RouterLink,
   p: p => <Text.p {...p} />,
   table: Table,
+  RangeSlider,
   Slider,
   Modal,
   ModalDemo

@@ -2,8 +2,8 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 import keyCode from 'rc-util/lib/KeyCode'
-import Range from '../src/Range'
-import createSliderWithTooltip from '../src/createSliderWithTooltip'
+import Range from '../../src/rc-slider/Range'
+import createSliderWithTooltip from '../../src/rc-slider/createSliderWithTooltip'
 
 const RangeWithTooltip = createSliderWithTooltip(Range)
 

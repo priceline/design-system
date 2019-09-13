@@ -1,5 +1,5 @@
 /* eslint-disable max-len, no-undef */
-import * as utils from '../src/utils'
+import * as utils from '../../src/rc-slider/utils'
 
 describe('utils', () => {
   it('should detect if not in production', () => {
