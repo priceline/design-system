@@ -27,9 +27,7 @@ export const deprecatedColorValue = () => (props, propName, componentName) => {
     !hasPaletteColor({ color: props[propName], ...props })
   ) {
     return new Error(
-      `The color value of \`${
-        props[propName]
-      }\` for \`${componentName}\` is deprecated and will be removed in a future release. Please use a palette color instead.`
+      `The color value of \`${props[propName]}\` for \`${componentName}\` is deprecated and will be removed in a future release. Please use a palette color instead.`
     )
   }
 }
@@ -159,7 +157,7 @@ export const getPaletteColor = (...args) => props => {
   let color = args.length === 2 ? args[0] : props.color
   let shade = args.length === 2 ? args[1] : args[0]
 
-  const colorShade = shade.match(/^([a-z]+)\.([a-z]+)$/)
+  const colorShade = shade.match(/^([a-z]+)\.([a-z]+)$/i)
 
   if (colorShade) {
     color = colorShade[0]
