@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
 import Button from './Button'
+import { applyVariations } from './utils'
 
 const TransparentButton = styled(Button)`
   padding: 0;
@@ -14,6 +15,8 @@ const TransparentButton = styled(Button)`
   & > div {
     display: flex;
   }
+
+  ${applyVariations('IconButton')}
 `
 
 const IconButton = ({ name, size, color, ...props }) => (
