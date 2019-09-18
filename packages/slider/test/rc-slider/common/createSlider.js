@@ -1,8 +1,8 @@
 /* eslint-disable max-len, no-undef */
 import React from 'react'
 import { mount } from 'enzyme'
-import Slider from '../../src/Slider'
-import Range from '../../src/Range'
+import Slider from '../../../src/rc-slider/Slider'
+import Range from '../../../src/rc-slider/Range'
 
 const setWidth = (object, width) => {
   // https://github.com/tmpvar/jsdom/commit/0cdb2efcc69b6672dc2928644fc0172df5521176
