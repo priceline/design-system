@@ -42,7 +42,7 @@ export const fontWeights = {
 }
 
 export const lineHeights = {
-  standard: 1.5,
+  standard: 1.4,
   display: 1.25
 }
 
