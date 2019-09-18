@@ -112,8 +112,8 @@ storiesOf('Box', module)
         <Box mt={3} color="text.lightest" bg="background.dark">
           Theme 1: color="text.lightest" value & bg="background.dark"
         </Box>
-        <Box mt={3} color="text" bg="background.lighted">
-          Theme 2: color="text" & "bg"="background.lighted"
+        <Box mt={3} color="text" bg="background.lightest">
+          Theme 2: color="text" & "bg"="background.lightest"
         </Box>
       </Box>
     </React.Fragment>
