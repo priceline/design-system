@@ -100,7 +100,7 @@ storiesOf('Box', module)
     <React.Fragment>
       <Box p={3}>
         <Box mt={3} color="text">
-          color="text" w/o bg prop: retain the original "text" color from
+          color="text" w/o bg prop: retains the original "text" color from
           original color set as backward compatible: expected style w. "text"
           color and white background
         </Box>
