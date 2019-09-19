@@ -214,6 +214,11 @@ export const getTextColorOn = name => props => {
   return ''
 }
 
+const getByPalette = props => css`
+  background-color: ${getPaletteColor(props.bg, 'base')(props)};
+  color: ${getPaletteColor(props.color, 'base')(props)};
+`
+
 /**
  * Extended color function from styled-system. First checks
  * for a palette color before falling back to styled-system
@@ -225,11 +230,14 @@ export const getTextColorOn = name => props => {
 export const color = props => {
   if (!props.theme || (!props.color && !props.bg)) {
     return ''
+  } else if (props.color === 'text') {
+    return props.color && props.bg
+      ? getByPalette(props)
+      : css`
+          color: ${getPaletteColor('base')(props)};
+        `
   } else if (props.color && props.bg) {
-    return css`
-      background-color: ${getPaletteColor(props.bg, 'base')(props)};
-      color: ${getPaletteColor(props.color, 'base')(props)};
-    `
+    return getByPalette(props)
   } else if (props.color && hasPaletteColor(props)) {
     return css`
       background-color: ${getPaletteColor('base')(props)};
