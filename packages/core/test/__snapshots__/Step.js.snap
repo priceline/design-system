@@ -1,29 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Step renders active step 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   color: #007aff;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c0 {
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
   cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
 }
 
-<div
-  className="c0 c1 "
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  aria-selected={true}
+  className="c0 c1"
+  color="primary"
+  disabled={true}
 >
   <div
     className="c2"
@@ -32,21 +59,10 @@ exports[`Step renders active step 1`] = `
   >
     Step
   </div>
-</div>
+</button>
 `;
 
 exports[`Step renders as active and completed 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c3 {
   color: #007aff;
   font-size: 14px;
@@ -61,15 +77,54 @@ exports[`Step renders as active and completed 1`] = `
   color: #007aff;
 }
 
-.c0 {
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
   cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
 }
 
-<div
-  className="c0 c1 "
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  aria-selected={true}
+  className="c0 c1"
+  color="primary"
+  disabled={true}
 >
   <svg
     aria-hidden={true}
+    aria-label="Step Completed"
     className="c2"
     color="primary"
     fill="currentcolor"
@@ -90,21 +145,10 @@ exports[`Step renders as active and completed 1`] = `
   >
     Step
   </div>
-</div>
+</button>
 `;
 
 exports[`Step renders completed step 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c3 {
   color: #007aff;
   font-size: 14px;
@@ -118,15 +162,54 @@ exports[`Step renders completed step 1`] = `
   color: #007aff;
 }
 
-.c0 {
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
   cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
 }
 
-<div
-  className="c0 c1 "
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  aria-selected={false}
+  className="c0 c1"
+  color="primary"
+  disabled={true}
 >
   <svg
     aria-hidden={true}
+    aria-label="Step Completed"
     className="c2"
     color="primary"
     fill="currentcolor"
@@ -147,32 +230,60 @@ exports[`Step renders completed step 1`] = `
   >
     Step
   </div>
-</div>
+</button>
 `;
 
 exports[`Step renders with on click 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   color: #4f6f8f;
   font-size: 14px;
 }
 
-.c0 {
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
   cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
 }
 
-<div
-  className="c0 c1 "
+.c1:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  aria-selected={false}
+  className="c0 c1"
+  color="primary"
+  disabled={false}
   onClick={[Function]}
 >
   <div
@@ -182,32 +293,59 @@ exports[`Step renders with on click 1`] = `
   >
     Step
   </div>
-</div>
+</button>
 `;
 
 exports[`Step renders without crashing 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   color: #4f6f8f;
   font-size: 14px;
 }
 
-.c0 {
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
   cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
 }
 
-<div
-  className="c0 c1 "
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  aria-selected={false}
+  className="c0 c1"
+  color="primary"
+  disabled={true}
 >
   <div
     className="c2"
@@ -216,5 +354,5 @@ exports[`Step renders without crashing 1`] = `
   >
     Step
   </div>
-</div>
+</button>
 `;

@@ -8,17 +8,6 @@ exports[`Stepper renders with children 1`] = `
   display: flex;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c5 {
   color: #007aff;
   font-size: 14px;
@@ -43,8 +32,43 @@ exports[`Stepper renders with children 1`] = `
   color: #007aff;
 }
 
-.c2 {
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
   cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
+}
+
+.c3:hover {
+  background-color: #e8f2ff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c2:hover {
+  background-color: #fff;
 }
 
 .c0 > :not(:last-child) {
@@ -54,11 +78,15 @@ exports[`Stepper renders with children 1`] = `
 <div
   className="c0 c1 "
 >
-  <div
-    className="c2 c3 "
+  <button
+    aria-selected={false}
+    className="c2 c3"
+    color="primary"
+    disabled={true}
   >
     <svg
       aria-hidden={true}
+      aria-label="Step Completed"
       className="c4"
       color="primary"
       fill="currentcolor"
@@ -79,9 +107,12 @@ exports[`Stepper renders with children 1`] = `
     >
       First Step
     </div>
-  </div>
-  <div
-    className="c2 c3 "
+  </button>
+  <button
+    aria-selected={true}
+    className="c2 c3"
+    color="primary"
+    disabled={true}
   >
     <div
       className="c6"
@@ -90,9 +121,12 @@ exports[`Stepper renders with children 1`] = `
     >
       Second Step
     </div>
-  </div>
-  <div
-    className="c2 c3 "
+  </button>
+  <button
+    aria-selected={false}
+    className="c2 c3"
+    color="primary"
+    disabled={true}
   >
     <div
       className="c7"
@@ -101,7 +135,7 @@ exports[`Stepper renders with children 1`] = `
     >
       Third Step
     </div>
-  </div>
+  </button>
 </div>
 `;
 
