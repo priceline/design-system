@@ -166,7 +166,7 @@ Object {
   },
   "lineHeights": Object {
     "display": 1.25,
-    "standard": 1.5,
+    "standard": 1.4,
   },
   "maxContainerWidth": "1280px",
   "mediaQueries": Array [
@@ -195,17 +195,17 @@ Object {
     "body0": Object {
       "fontSize": "12px",
       "fontWeight": 500,
-      "lineHeight": 1.5,
+      "lineHeight": 1.4,
     },
     "body1": Object {
       "fontSize": "14px",
       "fontWeight": 500,
-      "lineHeight": 1.5,
+      "lineHeight": 1.4,
     },
     "body2": Object {
       "fontSize": "16px",
       "fontWeight": 500,
-      "lineHeight": 1.5,
+      "lineHeight": 1.4,
     },
     "display0": Object {
       "fontSize": "12px",

@@ -489,3 +489,18 @@ global.mountWithTheme = (node, options) => {
 ## Truncate
 
 - No changes required.
+
+## "text" Color Use Case
+
+- If "text" color is used (i.e. `color="text"`), the `bg` prop is required for
+  theming. Palette namespace is also suggested to be provided for both `color` &
+  `bg` props.
+
+```.jsx
+<Box mt={3} color="text.lightest" bg="background.dark">
+  Theme 1: color="text.lightest" value & bg="background.dark"
+</Box>
+<Box mt={3} color="text" bg="background.lighted">
+  Theme 2: color="text" & "bg"="background.lighted"
+</Box>
+```

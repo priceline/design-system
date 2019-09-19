@@ -49,7 +49,7 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
 
 Hug.defaultProps = {
   borderWidth: 1,
-  color: 'secondary',
+  color: 'text.lightest',
   fontSize: 1,
   p: 2
 }
