@@ -6,7 +6,7 @@ import Text from './Text'
 import CheckIcon from 'pcln-icons/lib/Check'
 import { getPaletteColor } from './utils'
 
-const StyledFlex = styled(Button)`
+const StepperFlex = styled(Button)`
   display: flex;
   background-color: ${getPaletteColor('background.lightest')};
   color: ${getPaletteColor('base')};
@@ -23,11 +23,10 @@ function Step({ className, active, completed, children, onClick }) {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (
-    <StyledFlex
+    <StepperFlex
       className={className}
       disabled={!onClick}
       alignItems="center"
-      aria-selected={active}
       onClick={onClick}
     >
       {completed && (
@@ -35,14 +34,14 @@ function Step({ className, active, completed, children, onClick }) {
           color="primary"
           size={16}
           mr={1}
-          legacy={false}
+          aria-hidden={false}
           aria-label="Step Completed"
         />
       )}
-      <Text color={color} bold={active} fontSize={1}>
+      <Text color={color} bold={active} fontSize={1} aria-selected={active}>
         {children}
       </Text>
-    </StyledFlex>
+    </StepperFlex>
   )
 }
 

@@ -47,12 +47,12 @@ exports[`Step renders active step 1`] = `
 }
 
 <button
-  aria-selected={true}
   className="c0 c1"
   color="primary"
   disabled={true}
 >
   <div
+    aria-selected={true}
     className="c2"
     color="primary"
     fontSize={1}
@@ -117,13 +117,12 @@ exports[`Step renders as active and completed 1`] = `
 }
 
 <button
-  aria-selected={true}
   className="c0 c1"
   color="primary"
   disabled={true}
 >
   <svg
-    aria-hidden={true}
+    aria-hidden={false}
     aria-label="Step Completed"
     className="c2"
     color="primary"
@@ -139,6 +138,7 @@ exports[`Step renders as active and completed 1`] = `
     />
   </svg>
   <div
+    aria-selected={true}
     className="c3"
     color="primary"
     fontSize={1}
@@ -202,13 +202,12 @@ exports[`Step renders completed step 1`] = `
 }
 
 <button
-  aria-selected={false}
   className="c0 c1"
   color="primary"
   disabled={true}
 >
   <svg
-    aria-hidden={true}
+    aria-hidden={false}
     aria-label="Step Completed"
     className="c2"
     color="primary"
@@ -224,6 +223,7 @@ exports[`Step renders completed step 1`] = `
     />
   </svg>
   <div
+    aria-selected={false}
     className="c3"
     color="primary"
     fontSize={1}
@@ -280,13 +280,13 @@ exports[`Step renders with on click 1`] = `
 }
 
 <button
-  aria-selected={false}
   className="c0 c1"
   color="primary"
   disabled={false}
   onClick={[Function]}
 >
   <div
+    aria-selected={false}
     className="c2"
     color="text.light"
     fontSize={1}
@@ -342,12 +342,12 @@ exports[`Step renders without crashing 1`] = `
 }
 
 <button
-  aria-selected={false}
   className="c0 c1"
   color="primary"
   disabled={true}
 >
   <div
+    aria-selected={false}
     className="c2"
     color="text.light"
     fontSize={1}

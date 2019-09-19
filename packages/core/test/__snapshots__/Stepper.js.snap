@@ -79,13 +79,12 @@ exports[`Stepper renders with children 1`] = `
   className="c0 c1 "
 >
   <button
-    aria-selected={false}
     className="c2 c3"
     color="primary"
     disabled={true}
   >
     <svg
-      aria-hidden={true}
+      aria-hidden={false}
       aria-label="Step Completed"
       className="c4"
       color="primary"
@@ -101,6 +100,7 @@ exports[`Stepper renders with children 1`] = `
       />
     </svg>
     <div
+      aria-selected={false}
       className="c5"
       color="primary"
       fontSize={1}
@@ -109,12 +109,12 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    aria-selected={true}
     className="c2 c3"
     color="primary"
     disabled={true}
   >
     <div
+      aria-selected={true}
       className="c6"
       color="primary"
       fontSize={1}
@@ -123,12 +123,12 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    aria-selected={false}
     className="c2 c3"
     color="primary"
     disabled={true}
   >
     <div
+      aria-selected={false}
       className="c7"
       color="text.light"
       fontSize={1}
