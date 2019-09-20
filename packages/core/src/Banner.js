@@ -74,7 +74,7 @@ const Banner = props => {
         )}
         <Box width={1}>
           <Text textAlign={props.textAlign}>
-            <Heading.h5 textStyle="display2">{props.header}</Heading.h5>
+            <Text textStyle="display2">{props.header}</Text>
             <Text.span fontSize={1}>{props.text}</Text.span>
             {props.children}
           </Text>
