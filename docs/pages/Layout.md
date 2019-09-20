@@ -1,6 +1,6 @@
 # Layout Guide
 
-The [Box](Box.md) and [Flex](Flex.md) components are low-level layout components that can handle virtually
+The [Box](/Box) and [Flex](/Flex) components are low-level layout components that can handle virtually
 any layout styling that could be handled with a grid system as well as handle a lot of microlayout styles.
 
 ### Flexbox
