@@ -4,7 +4,6 @@ exports[`Image renders 1`] = `
 .c0 {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 <img
