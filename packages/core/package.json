@@ -5,7 +5,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "prepare": "rollup --config",
+    "prepare": "npx rollup --config",
     "clean": "rm -rf node_modules dist",
     "test": "jest"
   },

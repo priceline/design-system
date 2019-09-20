@@ -466,6 +466,10 @@ exports[`FormField renders with Select  1`] = `
   box-shadow: 0 0 0 1px #007aff;
 }
 
+.c3::-ms-expand {
+  display: none;
+}
+
 <div>
   <div
     className="c0 "
@@ -575,6 +579,10 @@ exports[`FormField renders with Select and Icon 1`] = `
   outline: none;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
+}
+
+.c4::-ms-expand {
+  display: none;
 }
 
 <div>

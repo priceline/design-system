@@ -55,6 +55,10 @@ exports[`Select renders 1`] = `
   box-shadow: 0 0 0 1px #007aff;
 }
 
+.c2::-ms-expand {
+  display: none;
+}
+
 <div
   className="c0 c1"
   width={1}
