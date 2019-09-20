@@ -1,0 +1,358 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step renders active step 1`] = `
+.c2 {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
+}
+
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  className="c0 c1"
+  color="primary"
+  disabled={true}
+>
+  <div
+    aria-selected={true}
+    className="c2"
+    color="primary"
+    fontSize={1}
+  >
+    Step
+  </div>
+</button>
+`;
+
+exports[`Step renders as active and completed 1`] = `
+.c3 {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 4px;
+  color: #007aff;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
+}
+
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  className="c0 c1"
+  color="primary"
+  disabled={true}
+>
+  <svg
+    aria-hidden={false}
+    aria-label="Step Completed"
+    className="c2"
+    color="primary"
+    fill="currentcolor"
+    focusable={false}
+    height={16}
+    tabIndex={-1}
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+    />
+  </svg>
+  <div
+    aria-selected={true}
+    className="c3"
+    color="primary"
+    fontSize={1}
+  >
+    Step
+  </div>
+</button>
+`;
+
+exports[`Step renders completed step 1`] = `
+.c3 {
+  color: #007aff;
+  font-size: 14px;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 4px;
+  color: #007aff;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
+}
+
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  className="c0 c1"
+  color="primary"
+  disabled={true}
+>
+  <svg
+    aria-hidden={false}
+    aria-label="Step Completed"
+    className="c2"
+    color="primary"
+    fill="currentcolor"
+    focusable={false}
+    height={16}
+    tabIndex={-1}
+    viewBox="0 0 24 24"
+    width={16}
+  >
+    <path
+      d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+    />
+  </svg>
+  <div
+    aria-selected={false}
+    className="c3"
+    color="primary"
+    fontSize={1}
+  >
+    Step
+  </div>
+</button>
+`;
+
+exports[`Step renders with on click 1`] = `
+.c2 {
+  color: #4f6f8f;
+  font-size: 14px;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c1:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  className="c0 c1"
+  color="primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div
+    aria-selected={false}
+    className="c2"
+    color="text.light"
+    fontSize={1}
+  >
+    Step
+  </div>
+</button>
+`;
+
+exports[`Step renders without crashing 1`] = `
+.c2 {
+  color: #4f6f8f;
+  font-size: 14px;
+}
+
+.c1 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
+}
+
+.c1:hover {
+  background-color: #e8f2ff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c0:hover {
+  background-color: #fff;
+}
+
+<button
+  className="c0 c1"
+  color="primary"
+  disabled={true}
+>
+  <div
+    aria-selected={false}
+    className="c2"
+    color="text.light"
+    fontSize={1}
+  >
+    Step
+  </div>
+</button>
+`;

@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper renders with children 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  color: #007aff;
+  font-size: 14px;
+}
+
+.c6 {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c7 {
+  color: #4f6f8f;
+  font-size: 14px;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 4px;
+  color: #007aff;
+}
+
+.c3 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #e8f2ff;
+  color: #001833;
+}
+
+.c3:hover {
+  background-color: #e8f2ff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  cursor: default;
+  padding: 0;
+  font-weight: unset;
+}
+
+.c2:hover {
+  background-color: #fff;
+}
+
+.c0 > :not(:last-child) {
+  margin-right: 32px;
+}
+
+<div
+  className="c0 c1 "
+>
+  <button
+    className="c2 c3"
+    color="primary"
+    disabled={true}
+  >
+    <svg
+      aria-hidden={false}
+      aria-label="Step Completed"
+      className="c4"
+      color="primary"
+      fill="currentcolor"
+      focusable={false}
+      height={16}
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={16}
+    >
+      <path
+        d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+      />
+    </svg>
+    <div
+      aria-selected={false}
+      className="c5"
+      color="primary"
+      fontSize={1}
+    >
+      First Step
+    </div>
+  </button>
+  <button
+    className="c2 c3"
+    color="primary"
+    disabled={true}
+  >
+    <div
+      aria-selected={true}
+      className="c6"
+      color="primary"
+      fontSize={1}
+    >
+      Second Step
+    </div>
+  </button>
+  <button
+    className="c2 c3"
+    color="primary"
+    disabled={true}
+  >
+    <div
+      aria-selected={false}
+      className="c7"
+      color="text.light"
+      fontSize={1}
+    >
+      Third Step
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Stepper renders without crashing 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 > :not(:last-child) {
+  margin-right: 32px;
+}
+
+<div
+  className="c0 c1 "
+/>
+`;
