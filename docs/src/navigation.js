@@ -38,6 +38,7 @@ export default [
       { name: 'InputGroup', path: '/InputGroup' },
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
+      { name: 'PlaceholderImage', path: '/PlaceholderImage' },
       { name: 'Radio', path: '/Radio' },
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
