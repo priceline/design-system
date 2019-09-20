@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
-const Image = styled.img`
+const Image = styled.img.attrs(props => ({
+  height: 'auto'
+}))`
   display: block;
   max-width: 100%;
-  height: auto;
 `
 
 Image.displayName = 'Image'
