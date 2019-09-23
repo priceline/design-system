@@ -22,5 +22,8 @@ storiesOf('Hide', module).add('Hide', () => (
     <Hide print p={2} bg="yellow">
       Hide print
     </Hide>
+    <Hide inline p={2} bg="blue">
+      Hide inline
+    </Hide>
   </Flex>
 ))

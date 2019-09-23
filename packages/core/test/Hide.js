@@ -36,4 +36,10 @@ describe('Hide', () => {
     const json = rendererCreateWithTheme(<Hide print />).toJSON()
     expect(json).toMatchSnapshot()
   })
+
+  test('renders with inline prop', () => {
+    const json = rendererCreateWithTheme(<Hide inline />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('display', 'inline')
+  })
 })

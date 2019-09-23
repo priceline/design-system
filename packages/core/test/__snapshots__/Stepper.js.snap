@@ -29,7 +29,7 @@ exports[`Stepper renders with children 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
-  color: #007aff;
+  color: primary;
 }
 
 .c3 {
@@ -89,9 +89,9 @@ exports[`Stepper renders with children 1`] = `
       className="c4"
       color="primary"
       fill="currentcolor"
-      focusable={false}
+      focusable="false"
       height={16}
-      tabIndex={-1}
+      tabIndex="-1"
       viewBox="0 0 24 24"
       width={16}
     >
