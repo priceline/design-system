@@ -11,6 +11,7 @@ const TransparentButton = styled(Button)`
 
   &:hover {
     background-color: transparent;
+    color: inherit;
   }
   & > div {
     display: flex;

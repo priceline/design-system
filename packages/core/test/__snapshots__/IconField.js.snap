@@ -150,6 +150,7 @@ exports[`IconField renders icon button 1`] = `
 
 .c2:hover {
   background-color: transparent;
+  color: inherit;
 }
 
 .c2 > div {
@@ -302,6 +303,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 
 .c3:hover {
   background-color: transparent;
+  color: inherit;
 }
 
 .c3 > div {
