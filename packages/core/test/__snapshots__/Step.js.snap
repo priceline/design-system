@@ -74,7 +74,7 @@ exports[`Step renders as active and completed 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
-  color: primary;
+  color: #007aff;
 }
 
 .c1 {
@@ -127,9 +127,9 @@ exports[`Step renders as active and completed 1`] = `
     className="c2"
     color="primary"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={16}
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={16}
   >
@@ -159,7 +159,7 @@ exports[`Step renders completed step 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
-  color: primary;
+  color: #007aff;
 }
 
 .c1 {
@@ -212,9 +212,9 @@ exports[`Step renders completed step 1`] = `
     className="c2"
     color="primary"
     fill="currentcolor"
-    focusable="false"
+    focusable={false}
     height={16}
-    tabIndex="-1"
+    tabIndex={-1}
     viewBox="0 0 24 24"
     width={16}
   >

@@ -30,18 +30,11 @@ const hidden = key => props =>
       }
     : null
 
-const hideInline = props =>
-  props.inline
-    ? {
-        display: 'inline'
-      }
-    : null
-
 const Hide = styled(Box)`
   ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')} ${hidden(
   'xl'
 )} ${hidden('print')};
-${hideInline}
+  display: ${props => (props.inline ? 'inline;' : null)}
 `
 
 Hide.propTypes = {
