@@ -40,6 +40,7 @@ exports[`CloseButton renders without props 1`] = `
 
 .c0:hover {
   background-color: transparent;
+  color: inherit;
 }
 
 .c0 > div {
