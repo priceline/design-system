@@ -57,7 +57,9 @@
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
-      "dist"
+      "dist",
+      "icons/lib/",
+      "slider/src/rc-slider"
     ],
     "coverageThreshold": {
       "global": {

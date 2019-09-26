@@ -8,8 +8,9 @@ const template = (
   { imports, componentName, props, jsx, exports }
 ) => template.ast`import React from 'react'
 import Svg from './Svg'
+import styled from 'styled-components'
 
-export const ${componentName} = ({
+const BaseComponent = ({
   size,
   title,
   desc,
@@ -20,13 +21,18 @@ export const ${componentName} = ({
   ${jsx}
 )
 
+const ${componentName} = styled(BaseComponent)\`
+  outline: none;
+\`
+
 ${componentName}.isIcon = true
 
 ${componentName}.defaultProps = {
   size: 24,
   tabIndex: -1,
   focusable: false,
-  'aria-hidden': true
+  'aria-hidden': true,
+  role: 'img'
 }
 
 export default ${componentName}`

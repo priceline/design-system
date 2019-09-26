@@ -16,12 +16,16 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
   color: #4f6f8f;
+}
+
+.c4 {
+  outline: none;
 }
 
 .c3 {
@@ -70,11 +74,12 @@ exports[`Select renders 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c3 c4"
+    className="c3 c4 c5"
     color="gray"
     fill="currentcolor"
     focusable={false}
     height={24}
+    role="img"
     tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}

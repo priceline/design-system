@@ -67,6 +67,7 @@ describe('Icon', () => {
       )
       expect(testRenderer.toJSON().props['focusable']).toBe(false)
       expect(testRenderer.toJSON().props['tabIndex']).toBe(-1)
+      expect(testRenderer.toJSON().props['role']).toBe('img')
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
         'accessible-logo descId'
       )
@@ -90,6 +91,7 @@ describe('Icon', () => {
       expect(testRenderer.toJSON().props['aria-hidden']).toBe(true)
       expect(testRenderer.toJSON().props['focusable']).toBe(false)
       expect(testRenderer.toJSON().props['tabIndex']).toBe(-1)
+      expect(testRenderer.toJSON().props['role']).toBe('img')
     })
 
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
@@ -111,6 +113,23 @@ describe('Icon', () => {
       )
 
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
+    })
+
+    test.each(iconList)(
+      // Test individual icons in './lib'
+      'Icons should render with no outline ',
+      (key, Component) => {
+        const testRenderer = TestRenderer.create(<Component />)
+        const testInstance = testRenderer.toJSON()
+        expect(testInstance).toHaveStyleRule('outline', 'none')
+      }
+    )
+
+    test('Icon should render with no outline ', () => {
+      const namedJson = TestRenderer.create(<AirplaneIcon />).toJSON()
+      const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
+      expect(json).toEqual(namedJson)
+      expect(json).toHaveStyleRule('outline', 'none')
     })
   })
 
