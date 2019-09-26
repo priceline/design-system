@@ -8,28 +8,32 @@ exports[`Stepper renders with children 1`] = `
   display: flex;
 }
 
-.c5 {
+.c6 {
   color: #007aff;
   font-size: 14px;
 }
 
-.c6 {
+.c7 {
   color: #007aff;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c7 {
+.c8 {
   color: #4f6f8f;
   font-size: 14px;
 }
 
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
   color: #007aff;
+}
+
+.c4 {
+  outline: none;
 }
 
 .c3 {
@@ -86,11 +90,12 @@ exports[`Stepper renders with children 1`] = `
     <svg
       aria-hidden={false}
       aria-label="Step Completed"
-      className="c4"
+      className="c4 c5"
       color="primary"
       fill="currentcolor"
       focusable={false}
       height={16}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={16}
@@ -101,7 +106,7 @@ exports[`Stepper renders with children 1`] = `
     </svg>
     <div
       aria-selected={false}
-      className="c5"
+      className="c6"
       color="primary"
       fontSize={1}
     >
@@ -115,7 +120,7 @@ exports[`Stepper renders with children 1`] = `
   >
     <div
       aria-selected={true}
-      className="c6"
+      className="c7"
       color="primary"
       fontSize={1}
     >
@@ -129,7 +134,7 @@ exports[`Stepper renders with children 1`] = `
   >
     <div
       aria-selected={false}
-      className="c7"
+      className="c8"
       color="text.light"
       fontSize={1}
     >

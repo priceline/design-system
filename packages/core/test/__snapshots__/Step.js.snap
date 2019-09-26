@@ -63,18 +63,22 @@ exports[`Step renders active step 1`] = `
 `;
 
 exports[`Step renders as active and completed 1`] = `
-.c3 {
+.c4 {
   color: #007aff;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
   color: #007aff;
+}
+
+.c2 {
+  outline: none;
 }
 
 .c1 {
@@ -124,11 +128,12 @@ exports[`Step renders as active and completed 1`] = `
   <svg
     aria-hidden={false}
     aria-label="Step Completed"
-    className="c2"
+    className="c2 c3"
     color="primary"
     fill="currentcolor"
     focusable={false}
     height={16}
+    role="img"
     tabIndex={-1}
     viewBox="0 0 24 24"
     width={16}
@@ -139,7 +144,7 @@ exports[`Step renders as active and completed 1`] = `
   </svg>
   <div
     aria-selected={true}
-    className="c3"
+    className="c4"
     color="primary"
     fontSize={1}
   >
@@ -149,17 +154,21 @@ exports[`Step renders as active and completed 1`] = `
 `;
 
 exports[`Step renders completed step 1`] = `
-.c3 {
+.c4 {
   color: #007aff;
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
   color: #007aff;
+}
+
+.c2 {
+  outline: none;
 }
 
 .c1 {
@@ -209,11 +218,12 @@ exports[`Step renders completed step 1`] = `
   <svg
     aria-hidden={false}
     aria-label="Step Completed"
-    className="c2"
+    className="c2 c3"
     color="primary"
     fill="currentcolor"
     focusable={false}
     height={16}
+    role="img"
     tabIndex={-1}
     viewBox="0 0 24 24"
     width={16}
@@ -224,7 +234,7 @@ exports[`Step renders completed step 1`] = `
   </svg>
   <div
     aria-selected={false}
-    className="c3"
+    className="c4"
     color="primary"
     fontSize={1}
   >

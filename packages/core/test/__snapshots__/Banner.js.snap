@@ -75,7 +75,7 @@ exports[`Banner renders content from children props 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -94,15 +94,15 @@ exports[`Banner renders content from children props 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -110,7 +110,11 @@ exports[`Banner renders content from children props 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -126,10 +130,11 @@ exports[`Banner renders content from children props 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -139,17 +144,17 @@ exports[`Banner renders content from children props 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
         <span>
@@ -162,7 +167,7 @@ exports[`Banner renders content from children props 1`] = `
 `;
 
 exports[`Banner renders with blue bg 1`] = `
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -187,15 +192,15 @@ exports[`Banner renders with blue bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -203,7 +208,11 @@ exports[`Banner renders with blue bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -219,10 +228,11 @@ exports[`Banner renders with blue bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -232,17 +242,17 @@ exports[`Banner renders with blue bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -258,7 +268,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -277,15 +287,15 @@ exports[`Banner renders with custom iconName and size 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -293,7 +303,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -309,10 +323,11 @@ exports[`Banner renders with custom iconName and size 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -322,17 +337,17 @@ exports[`Banner renders with custom iconName and size 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -348,7 +363,7 @@ exports[`Banner renders with green bg 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -367,15 +382,15 @@ exports[`Banner renders with green bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -383,7 +398,11 @@ exports[`Banner renders with green bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -399,10 +418,11 @@ exports[`Banner renders with green bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -412,17 +432,17 @@ exports[`Banner renders with green bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -432,7 +452,7 @@ exports[`Banner renders with green bg 1`] = `
 `;
 
 exports[`Banner renders with lightBlue bg 1`] = `
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -457,15 +477,15 @@ exports[`Banner renders with lightBlue bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -473,7 +493,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -489,10 +513,11 @@ exports[`Banner renders with lightBlue bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -502,17 +527,17 @@ exports[`Banner renders with lightBlue bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -522,7 +547,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 `;
 
 exports[`Banner renders with lightGreen bg 1`] = `
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -547,15 +572,15 @@ exports[`Banner renders with lightGreen bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -563,7 +588,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -579,10 +608,11 @@ exports[`Banner renders with lightGreen bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -592,17 +622,17 @@ exports[`Banner renders with lightGreen bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -612,7 +642,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 `;
 
 exports[`Banner renders with lightRed bg 1`] = `
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -637,15 +667,15 @@ exports[`Banner renders with lightRed bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -653,7 +683,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -669,10 +703,11 @@ exports[`Banner renders with lightRed bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -682,17 +717,17 @@ exports[`Banner renders with lightRed bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -708,7 +743,7 @@ exports[`Banner renders with no props other than theme 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -727,15 +762,15 @@ exports[`Banner renders with no props other than theme 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -743,7 +778,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -759,10 +798,11 @@ exports[`Banner renders with no props other than theme 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -772,17 +812,17 @@ exports[`Banner renders with no props other than theme 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -792,7 +832,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 `;
 
 exports[`Banner renders with orange bg 1`] = `
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -817,15 +857,15 @@ exports[`Banner renders with orange bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -833,7 +873,11 @@ exports[`Banner renders with orange bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -849,10 +893,11 @@ exports[`Banner renders with orange bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -862,17 +907,17 @@ exports[`Banner renders with orange bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -882,7 +927,7 @@ exports[`Banner renders with orange bg 1`] = `
 `;
 
 exports[`Banner renders with red bg 1`] = `
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -907,15 +952,15 @@ exports[`Banner renders with red bg 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -923,7 +968,11 @@ exports[`Banner renders with red bg 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -939,10 +988,11 @@ exports[`Banner renders with red bg 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -952,17 +1002,17 @@ exports[`Banner renders with red bg 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         />
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         />
       </div>
@@ -978,7 +1028,7 @@ exports[`Banner renders with text node 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -997,15 +1047,15 @@ exports[`Banner renders with text node 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1013,7 +1063,11 @@ exports[`Banner renders with text node 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -1029,10 +1083,11 @@ exports[`Banner renders with text node 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -1042,19 +1097,19 @@ exports[`Banner renders with text node 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         >
           Header
         </h5>
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         >
           <div
@@ -1076,7 +1131,7 @@ exports[`Banner renders with text string 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -1095,15 +1150,15 @@ exports[`Banner renders with text string 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   text-align: left;
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1111,7 +1166,11 @@ exports[`Banner renders with text string 1`] = `
   margin-top: -2px;
 }
 
-.c5 {
+.c2 {
+  outline: none;
+}
+
+.c6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -1127,10 +1186,11 @@ exports[`Banner renders with text string 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -1140,19 +1200,19 @@ exports[`Banner renders with text string 1`] = `
       />
     </svg>
     <div
-      className="c3"
+      className="c4"
       width={1}
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h5
-          className="c5"
+          className="c6"
         >
           Header
         </h5>
         <span
-          className="c6"
+          className="c7"
           fontSize={1}
         >
           Text
