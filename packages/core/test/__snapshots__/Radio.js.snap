@@ -1,10 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio Disabled, rendering 1`] = `
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c4:focus,
+.c4  :active {
+  outline: none;
 }
 
 .c1 {
@@ -75,7 +80,7 @@ exports[`Radio Disabled, rendering 1`] = `
     />
     <svg
       aria-hidden={true}
-      className="c3 c4"
+      className="c3 c4 c5"
       fill="currentcolor"
       focusable={false}
       height={28}
@@ -92,10 +97,15 @@ exports[`Radio Disabled, rendering 1`] = `
 `;
 
 exports[`Radio Not Selected, rendering 1`] = `
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c4:focus,
+.c4  :active {
+  outline: none;
 }
 
 .c1 {
@@ -168,7 +178,7 @@ exports[`Radio Not Selected, rendering 1`] = `
     />
     <svg
       aria-hidden={true}
-      className="c3 c4"
+      className="c3 c4 c5"
       fill="currentcolor"
       focusable={false}
       height={28}
@@ -185,10 +195,15 @@ exports[`Radio Not Selected, rendering 1`] = `
 `;
 
 exports[`Radio Selected, rendering 1`] = `
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c4:focus,
+.c4  :active {
+  outline: none;
 }
 
 .c1 {
@@ -263,7 +278,7 @@ exports[`Radio Selected, rendering 1`] = `
     />
     <svg
       aria-hidden={true}
-      className="c3 c4"
+      className="c3 c4 c5"
       fill="currentcolor"
       focusable={false}
       height={28}

@@ -6,10 +6,20 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c3:focus,
+.c3  :active {
+  outline: none;
+}
+
+.c5:focus,
+.c5  :active {
+  outline: none;
 }
 
 .c0 {
@@ -93,7 +103,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c3"
+    className="c3 c4"
     data-name="checked"
     fill="currentcolor"
     focusable={false}
@@ -108,7 +118,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   </svg>
   <svg
     aria-hidden={true}
-    className="c3"
+    className="c5 c4"
     data-name="empty"
     fill="currentcolor"
     focusable={false}
@@ -131,10 +141,20 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c3:focus,
+.c3  :active {
+  outline: none;
+}
+
+.c5:focus,
+.c5  :active {
+  outline: none;
 }
 
 .c0 {
@@ -216,7 +236,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c3"
+      class="c3 c4"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -231,7 +251,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c3"
+      class="c5 c4"
       data-name="empty"
       fill="currentcolor"
       focusable="false"
@@ -254,10 +274,20 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   color: primary;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c3:focus,
+.c3  :active {
+  outline: none;
+}
+
+.c5:focus,
+.c5  :active {
+  outline: none;
 }
 
 .c0 {
@@ -337,7 +367,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c3"
+      class="c3 c4"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -352,7 +382,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c3"
+      class="c5 c4"
       data-name="empty"
       fill="currentcolor"
       focusable="false"
@@ -376,10 +406,20 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   color: #fff;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c3:focus,
+.c3  :active {
+  outline: none;
+}
+
+.c5:focus,
+.c5  :active {
+  outline: none;
 }
 
 .c0 {
@@ -459,7 +499,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c3"
+      class="c3 c4"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -474,7 +514,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c3"
+      class="c5 c4"
       data-name="empty"
       fill="currentcolor"
       focusable="false"

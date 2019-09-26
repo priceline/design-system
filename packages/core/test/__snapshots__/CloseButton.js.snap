@@ -1,10 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders without props 1`] = `
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c2:focus,
+.c2  :active {
+  outline: none;
 }
 
 .c1 {
@@ -58,7 +63,7 @@ exports[`CloseButton renders without props 1`] = `
   <div>
     <svg
       aria-hidden={true}
-      className="c2"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}

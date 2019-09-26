@@ -8,8 +8,9 @@ const template = (
   { imports, componentName, props, jsx, exports }
 ) => template.ast`import React from 'react'
 import Svg from './Svg'
+import styled from 'styled-components'
 
-export const ${componentName} = ({
+const BaseComponent = ({
   size,
   title,
   desc,
@@ -19,6 +20,21 @@ export const ${componentName} = ({
 }) => (
   ${jsx}
 )
+
+const showOutline = ({ focusable, tabIndex }) => {
+  if (focusable === 'true' && parseInt(tabIndex, 10) >= 0){
+    return ''
+  }
+  else {
+    return 'outline: none;'
+  }
+}
+
+export const ${componentName} = styled(BaseComponent)\`
+  :focus, :active {
+    \$\{props => showOutline(props)\}
+  }
+\`
 
 ${componentName}.isIcon = true
 

@@ -121,3 +121,46 @@ describe('Icon', () => {
     })
   })
 })
+
+//need to figure out a way to test the icons' outline style when it is active/clicked on
+test.each(iconList)(
+  'testing when focusable false should have outline: none ',
+  (key, Component) => {
+    const testRenderer = TestRenderer.create(
+      <Component focusable="false" tabIndex="-1" />
+    )
+    const testInstance = testRenderer.toJSON()
+    expect(testInstance).toMatchSnapshot()
+  }
+)
+test.each(iconList)(
+  'testing when focusable true should not have outline none ',
+  (key, Component) => {
+    const testRenderer = TestRenderer.create(
+      <Component focusable="true" tabIndex="1" />
+    )
+    const testInstance = testRenderer.toJSON()
+    expect(testInstance).not.toHaveStyleRule('outline', 'none')
+  }
+) //need to figure out a way to test the icon's outline style when it is active/clicked on
+test('Not focusable, tabIndex less than 0 should have an outline of none', () => {
+  const namedJson = TestRenderer.create(
+    <AirplaneIcon focusable="false" tabIndex="-1" />
+  ).toJSON()
+  const json = TestRenderer.create(
+    <Icon name="Airplane" focusable="false" tabIndex="-1" />
+  ).toJSON()
+  expect(json).toEqual(namedJson)
+  expect(json).toMatchSnapshot() // expect(json).toHaveStyleRule('outline', 'none')
+})
+
+test('Focusable, tabIndex greater than or equal to 0, should not have an outline of none', () => {
+  const namedJson = TestRenderer.create(
+    <AirplaneIcon focusable="true" tabIndex="1" />
+  ).toJSON()
+  const json = TestRenderer.create(
+    <Icon focusable="true" name="Airplane" tabIndex="1" />
+  ).toJSON()
+  expect(json).toEqual(namedJson)
+  expect(json).not.toHaveStyleRule('outline', 'none')
+})
