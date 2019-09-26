@@ -8,13 +8,17 @@ exports[`IconField renders 1`] = `
   display: flex;
 }
 
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c2 {
+.c1 {
+  outline: none;
+}
+
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -36,27 +40,27 @@ exports[`IconField renders 1`] = `
   box-shadow: 0 0 0 1px #c0cad5;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #4f6f8f;
 }
 
-.c2::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c2:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
@@ -67,10 +71,11 @@ exports[`IconField renders 1`] = `
 >
   <svg
     aria-hidden={true}
-    className="c1"
+    className="c1 c2"
     fill="currentcolor"
     focusable={false}
     height={24}
+    role="img"
     style={
       Object {
         "alignSelf": "center",
@@ -90,7 +95,7 @@ exports[`IconField renders 1`] = `
     />
   </svg>
   <input
-    className="c2"
+    className="c3"
     id="test"
     placeholder="IconField"
     style={
@@ -111,10 +116,14 @@ exports[`IconField renders icon button 1`] = `
   display: flex;
 }
 
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+
+.c4 {
+  outline: none;
 }
 
 .c3 {
@@ -239,10 +248,11 @@ exports[`IconField renders icon button 1`] = `
     <div>
       <svg
         aria-hidden={true}
-        className="c4"
+        className="c4 c5"
         fill="currentcolor"
         focusable={false}
         height={24}
+        role="img"
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
@@ -264,13 +274,21 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   display: flex;
 }
 
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c4 {
+.c1 {
+  outline: none;
+}
+
+.c6 {
+  outline: none;
+}
+
+.c5 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -290,30 +308,30 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   color: #fff;
 }
 
-.c4:hover {
+.c5:hover {
   background-color: #049;
   color: #fff;
 }
 
-.c3 {
+.c4 {
   padding: 0;
   background-color: transparent;
   color: inherit;
 }
 
-.c3:hover {
+.c4:hover {
   background-color: transparent;
   color: inherit;
 }
 
-.c3 > div {
+.c4 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c2 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -335,27 +353,27 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   box-shadow: 0 0 0 1px #c0cad5;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #4f6f8f;
 }
 
-.c2::-ms-clear {
+.c3::-ms-clear {
   display: none;
 }
 
-.c2:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
@@ -366,10 +384,11 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 >
   <svg
     aria-hidden={true}
-    className="c1"
+    className="c1 c2"
     fill="currentcolor"
     focusable={false}
     height={24}
+    role="img"
     style={
       Object {
         "alignSelf": "center",
@@ -389,7 +408,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     />
   </svg>
   <input
-    className="c2"
+    className="c3"
     id="test"
     placeholder="IconField"
     style={
@@ -400,7 +419,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     }
   />
   <button
-    className="c3 c4"
+    className="c4 c5"
     color="primary"
     style={
       Object {
@@ -416,10 +435,11 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     <div>
       <svg
         aria-hidden={true}
-        className="c1"
+        className="c6 c2"
         fill="currentcolor"
         focusable={false}
         height={24}
+        role="img"
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
