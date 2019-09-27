@@ -14,8 +14,7 @@ exports[`IconField renders 1`] = `
   flex: none;
 }
 
-.c1:focus,
-.c1  :active {
+.c1 {
   outline: none;
 }
 
@@ -76,6 +75,7 @@ exports[`IconField renders 1`] = `
     fill="currentcolor"
     focusable={false}
     height={24}
+    role="img"
     style={
       Object {
         "alignSelf": "center",
@@ -122,8 +122,7 @@ exports[`IconField renders icon button 1`] = `
   flex: none;
 }
 
-.c4:focus,
-.c4  :active {
+.c4 {
   outline: none;
 }
 
@@ -253,6 +252,7 @@ exports[`IconField renders icon button 1`] = `
         fill="currentcolor"
         focusable={false}
         height={24}
+        role="img"
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
@@ -280,13 +280,11 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   flex: none;
 }
 
-.c1:focus,
-.c1  :active {
+.c1 {
   outline: none;
 }
 
-.c6:focus,
-.c6  :active {
+.c6 {
   outline: none;
 }
 
@@ -390,6 +388,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     fill="currentcolor"
     focusable={false}
     height={24}
+    role="img"
     style={
       Object {
         "alignSelf": "center",
@@ -440,6 +439,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
         fill="currentcolor"
         focusable={false}
         height={24}
+        role="img"
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}

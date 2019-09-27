@@ -110,8 +110,7 @@ exports[`Banner renders content from children props 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -135,6 +134,7 @@ exports[`Banner renders content from children props 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -208,8 +208,7 @@ exports[`Banner renders with blue bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -233,6 +232,7 @@ exports[`Banner renders with blue bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -303,8 +303,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -328,6 +327,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -398,8 +398,7 @@ exports[`Banner renders with green bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -423,6 +422,7 @@ exports[`Banner renders with green bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -493,8 +493,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -518,6 +517,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -588,8 +588,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -613,6 +612,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -683,8 +683,7 @@ exports[`Banner renders with lightRed bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -708,6 +707,7 @@ exports[`Banner renders with lightRed bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -778,8 +778,7 @@ exports[`Banner renders with no props other than theme 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -803,6 +802,7 @@ exports[`Banner renders with no props other than theme 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -873,8 +873,7 @@ exports[`Banner renders with orange bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -898,6 +897,7 @@ exports[`Banner renders with orange bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -968,8 +968,7 @@ exports[`Banner renders with red bg 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -993,6 +992,7 @@ exports[`Banner renders with red bg 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -1063,8 +1063,7 @@ exports[`Banner renders with text node 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -1088,6 +1087,7 @@ exports[`Banner renders with text node 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}
@@ -1166,8 +1166,7 @@ exports[`Banner renders with text string 1`] = `
   margin-top: -2px;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -1191,6 +1190,7 @@ exports[`Banner renders with text string 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}

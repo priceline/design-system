@@ -24,8 +24,7 @@ exports[`Select renders 1`] = `
   color: #4f6f8f;
 }
 
-.c4:focus,
-.c4  :active {
+.c4 {
   outline: none;
 }
 
@@ -80,6 +79,7 @@ exports[`Select renders 1`] = `
     fill="currentcolor"
     focusable={false}
     height={24}
+    role="img"
     tabIndex={-1}
     viewBox="0 0 24 24"
     width={24}

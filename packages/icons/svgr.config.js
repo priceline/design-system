@@ -21,19 +21,8 @@ const BaseComponent = ({
   ${jsx}
 )
 
-const showOutline = ({ focusable, tabIndex }) => {
-  if (focusable === 'true' && parseInt(tabIndex, 10) >= 0){
-    return ''
-  }
-  else {
-    return 'outline: none;'
-  }
-}
-
-export const ${componentName} = styled(BaseComponent)\`
-  :focus, :active {
-    \$\{props => showOutline(props)\}
-  }
+const ${componentName} = styled(BaseComponent)\`
+  outline: none;
 \`
 
 ${componentName}.isIcon = true
@@ -42,7 +31,8 @@ ${componentName}.defaultProps = {
   size: 24,
   tabIndex: -1,
   focusable: false,
-  'aria-hidden': true
+  'aria-hidden': true,
+  role: 'img'
 }
 
 export default ${componentName}`

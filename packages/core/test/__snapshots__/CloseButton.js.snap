@@ -7,8 +7,7 @@ exports[`CloseButton renders without props 1`] = `
   flex: none;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -67,6 +66,7 @@ exports[`CloseButton renders without props 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={24}

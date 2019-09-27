@@ -25,33 +25,3 @@ storiesOf('Icon', module)
       <Icon color="orange" size={48} m={2} name="Cars" />
     </div>
   ))
-  .add(
-    'Renders Icon with outline when focusable and tabIndex greater than or equal to 0',
-    () => (
-      <Box p={2} color="white" bg="blue">
-        <Flex wrap>
-          {keys.map(name => (
-            <Box key={name} width={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
-              <Icon name={name} focusable="true" tabIndex="1" size={48} />
-              <Truncate fontSize={0}>{name}</Truncate>
-            </Box>
-          ))}
-        </Flex>
-      </Box>
-    )
-  )
-  .add(
-    'Renders Icon with no outline when not focusable and tabIndex less than 0',
-    () => (
-      <Box p={2} color="white" bg="blue">
-        <Flex wrap>
-          {keys.map(name => (
-            <Box key={name} width={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
-              <Icon name={name} focusable="false" tabIndex="-1" size={48} />
-              <Truncate fontSize={0}>{name}</Truncate>
-            </Box>
-          ))}
-        </Flex>
-      </Box>
-    )
-  )

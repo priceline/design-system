@@ -128,8 +128,7 @@ exports[`FormField renders with Icon 1`] = `
   flex: none;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -227,6 +226,7 @@ exports[`FormField renders with Icon 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       style={
         Object {
           "alignSelf": "center",
@@ -278,8 +278,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   flex: none;
 }
 
-.c2:focus,
-.c2  :active {
+.c2 {
   outline: none;
 }
 
@@ -377,6 +376,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       style={
         Object {
           "alignSelf": "center",
@@ -445,8 +445,7 @@ exports[`FormField renders with Select  1`] = `
   color: #4f6f8f;
 }
 
-.c5:focus,
-.c5  :active {
+.c5 {
   outline: none;
 }
 
@@ -515,6 +514,7 @@ exports[`FormField renders with Select  1`] = `
         fill="currentcolor"
         focusable={false}
         height={24}
+        role="img"
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
@@ -565,13 +565,11 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
 }
 
-.c7:focus,
-.c7  :active {
+.c7 {
   outline: none;
 }
 
-.c1:focus,
-.c1  :active {
+.c1 {
   outline: none;
 }
 
@@ -620,6 +618,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       fill="currentcolor"
       focusable={false}
       height={24}
+      role="img"
       style={
         Object {
           "alignSelf": "center",
@@ -664,6 +663,7 @@ exports[`FormField renders with Select and Icon 1`] = `
         fill="currentcolor"
         focusable={false}
         height={24}
+        role="img"
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
