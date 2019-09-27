@@ -72,12 +72,10 @@ const Banner = props => {
         {!!icon && !!props.showIcon && (
           <Icon name={icon} mr={2} size={24} mt="-2px" />
         )}
-        <Box width={1}>
-          <Text textAlign={props.textAlign}>
-            <Heading.h5 textStyle="display2">{props.header}</Heading.h5>
-            <Text.span fontSize={1}>{props.text}</Text.span>
-            {props.children}
-          </Text>
+        <Box textAlign={props.textAlign} width={1}>
+          <Text textStyle="display2">{props.header}</Text>
+          <Text.span fontSize={1}>{props.text}</Text.span>
+          {props.children}
         </Box>
         {!!props.onClose && (
           <CloseButton
