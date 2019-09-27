@@ -115,29 +115,22 @@ describe('Icon', () => {
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
     })
 
-    // test.each(iconList)(
-    //   // Test individual icons in './lib'
-    //   'Icons should render with no outline ',
-    //   (key, Component) => {
-    //     const testRenderer = TestRenderer.create(
-    //       <Component />
-    //     )
-    //     const testInstance = testRenderer.toJSON()
-    //     expect(testInstance).toHaveStyleRule('outline', 'none')
-    //   }
-    // )
+    test.each(iconList)(
+      // Test individual icons in './lib'
+      'Icons should render with no outline ',
+      (key, Component) => {
+        const testRenderer = TestRenderer.create(<Component />)
+        const testInstance = testRenderer.toJSON()
+        expect(testInstance).toHaveStyleRule('outline', 'none')
+      }
+    )
 
-    // test('Icon should render with no outline ', () => {
-    //   const namedJson = TestRenderer.create(
-    //     <AirplaneIcon  />
-    //   ).toJSON()
-    //   const json = TestRenderer.create(
-    //     <Icon name="Airplane"/>
-    //   ).toJSON()
-    //   expect(json).toEqual(namedJson)
-    //   console.log(json)
-    //   expect(json).toHaveStyleRule('outline', 'none')
-    // })
+    test('Icon should render with no outline ', () => {
+      const namedJson = TestRenderer.create(<AirplaneIcon />).toJSON()
+      const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
+      expect(json).toEqual(namedJson)
+      expect(json).toHaveStyleRule('outline', 'none')
+    })
   })
 
   describe('propTypes', () => {
