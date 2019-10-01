@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Button from './Button'
 import Text from './Text'
-import CheckIcon from 'pcln-icons/lib/Check'
+import Icon from './Icon'
 import { getPaletteColor } from './utils'
 
 const StepperFlex = styled(Button)`
@@ -30,7 +30,8 @@ function Step({ className, active, completed, children, onClick }) {
       onClick={onClick}
     >
       {completed && (
-        <CheckIcon
+        <Icon
+          name="Check"
           color="primary"
           size={16}
           mr={1}
