@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Box from './Box'
+import Text from './Text'
 
 const getMaxWidth = em => parseInt(em) - 0.01
 
@@ -46,5 +47,8 @@ Hide.propTypes = {
 }
 
 Hide.displayName = 'Hide'
+Hide.text = styled(Text)`
+  display: inline;
+`
 
 export default Hide
