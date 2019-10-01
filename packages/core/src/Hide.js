@@ -49,6 +49,9 @@ Hide.propTypes = {
 Hide.displayName = 'Hide'
 Hide.text = styled(Text)`
   display: inline;
+  ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')} ${hidden(
+  'xl'
+)} ${hidden('print')};
 `
 
 export default Hide
