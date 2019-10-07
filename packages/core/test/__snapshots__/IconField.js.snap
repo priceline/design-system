@@ -25,7 +25,6 @@ exports[`IconField renders 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -38,6 +37,7 @@ exports[`IconField renders 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c3::-webkit-input-placeholder {
@@ -64,6 +64,12 @@ exports[`IconField renders 1`] = `
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
+}
+
+@media screen and (min-width:40em) {
+  .c3 {
+    font-size: 14px;
+  }
 }
 
 <div
@@ -96,6 +102,13 @@ exports[`IconField renders 1`] = `
   </svg>
   <input
     className="c3"
+    fontSize={
+      Array [
+        2,
+        null,
+        1,
+      ]
+    }
     id="test"
     placeholder="IconField"
     style={
@@ -166,7 +179,6 @@ exports[`IconField renders icon button 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -179,6 +191,7 @@ exports[`IconField renders icon button 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c1::-webkit-input-placeholder {
@@ -207,11 +220,24 @@ exports[`IconField renders icon button 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
+@media screen and (min-width:40em) {
+  .c1 {
+    font-size: 14px;
+  }
+}
+
 <div
   className="c0"
 >
   <input
     className="c1"
+    fontSize={
+      Array [
+        2,
+        null,
+        1,
+      ]
+    }
     id="test"
     placeholder="IconField"
     style={
@@ -317,7 +343,6 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -330,6 +355,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c3::-webkit-input-placeholder {
@@ -356,6 +382,12 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
+}
+
+@media screen and (min-width:40em) {
+  .c3 {
+    font-size: 14px;
+  }
 }
 
 <div
@@ -388,6 +420,13 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   </svg>
   <input
     className="c3"
+    fontSize={
+      Array [
+        2,
+        null,
+        1,
+      ]
+    }
     id="test"
     placeholder="IconField"
     style={

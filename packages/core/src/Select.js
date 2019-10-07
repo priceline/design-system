@@ -30,7 +30,7 @@ const SelectBase = styled.select`
   }
 `
 SelectBase.defaultProps = {
-  fontSize: 1,
+  fontSize: [2, null, 1],
   m: 0,
   pl: 12,
   pr: 32,

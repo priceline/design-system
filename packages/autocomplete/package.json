@@ -13,7 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "downshift": "^3.2.6",
-    "pcln-design-system": "^2.0.4",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
@@ -22,16 +21,15 @@
     "@babel/core": "^7.6.4",
     "@reach/component-component": "^0.1.1",
     "cat-names": "^2.0.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2",
-    "styled-components": "^4.4.0",
+    "pcln-design-system": "^2.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^3.4.10",
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "react": ">=16.3.0",
-    "react-dom": ">=16.3.0",
-    "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
+    "pcln-design-system": ">=2.0.0"
   },
   "jest": {
     "setupFilesAfterEnv": [
