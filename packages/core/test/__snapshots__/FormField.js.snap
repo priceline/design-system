@@ -15,7 +15,6 @@ exports[`FormField renders 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -28,6 +27,7 @@ exports[`FormField renders 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c2::-webkit-input-placeholder {
@@ -73,6 +73,12 @@ exports[`FormField renders 1`] = `
   font-weight: 700;
 }
 
+@media screen and (min-width:40em) {
+  .c2 {
+    font-size: 14px;
+  }
+}
+
 <div>
   <label
     className="c0"
@@ -98,6 +104,13 @@ exports[`FormField renders 1`] = `
   >
     <input
       className="c2"
+      fontSize={
+        Array [
+          2,
+          null,
+          1,
+        ]
+      }
       id="email"
       style={
         Object {
@@ -139,7 +152,6 @@ exports[`FormField renders with Icon 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -152,6 +164,7 @@ exports[`FormField renders with Icon 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c4::-webkit-input-placeholder {
@@ -195,6 +208,12 @@ exports[`FormField renders with Icon 1`] = `
   padding-top: 6px;
   font-size: 10px;
   font-weight: 700;
+}
+
+@media screen and (min-width:40em) {
+  .c4 {
+    font-size: 14px;
+  }
 }
 
 <div>
@@ -247,6 +266,13 @@ exports[`FormField renders with Icon 1`] = `
     </svg>
     <input
       className="c4"
+      fontSize={
+        Array [
+          2,
+          null,
+          1,
+        ]
+      }
       id="email"
       name="email"
       style={
@@ -289,7 +315,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -302,6 +327,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c4::-webkit-input-placeholder {
@@ -345,6 +371,12 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   padding-top: 6px;
   font-size: 10px;
   font-weight: 700;
+}
+
+@media screen and (min-width:40em) {
+  .c4 {
+    font-size: 14px;
+  }
 }
 
 <div>
@@ -397,6 +429,13 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     </svg>
     <input
       className="c4"
+      fontSize={
+        Array [
+          2,
+          null,
+          1,
+        ]
+      }
       id="email"
       name="email"
       style={
@@ -468,7 +507,7 @@ exports[`FormField renders with Select  1`] = `
   padding-right: 32px;
   padding-top: 14px;
   padding-bottom: 14px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .c2:focus {
@@ -479,6 +518,12 @@ exports[`FormField renders with Select  1`] = `
 
 .c2::-ms-expand {
   display: none;
+}
+
+@media screen and (min-width:40em) {
+  .c3 {
+    font-size: 14px;
+  }
 }
 
 <div>
@@ -492,7 +537,13 @@ exports[`FormField renders with Select  1`] = `
       <select
         className="c2 "
         color="primary"
-        fontSize={1}
+        fontSize={
+          Array [
+            2,
+            null,
+            1,
+          ]
+        }
         style={
           Object {
             "paddingBottom": 14,
@@ -589,7 +640,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   padding-right: 32px;
   padding-top: 14px;
   padding-bottom: 14px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .c4:focus {
@@ -600,6 +651,12 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 .c4::-ms-expand {
   display: none;
+}
+
+@media screen and (min-width:40em) {
+  .c5 {
+    font-size: 14px;
+  }
 }
 
 <div>
@@ -638,7 +695,13 @@ exports[`FormField renders with Select and Icon 1`] = `
       <select
         className="c4 "
         color="primary"
-        fontSize={1}
+        fontSize={
+          Array [
+            2,
+            null,
+            1,
+          ]
+        }
         style={
           Object {
             "paddingBottom": 14,
