@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { space, themeGet } from 'styled-system'
+import { space, fontSize, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
@@ -26,7 +26,6 @@ const Input = styled.input`
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: ${themeGet('fontSizes.1')}px;
   color: inherit;
   background-color: transparent;
   border-radius: ${themeGet('radius')};
@@ -48,17 +47,21 @@ const Input = styled.input`
     display: none;
   }
 
-  ${borders} ${space};
+  ${borders} ${space} ${fontSize};
   ${applyVariations('Input')}
 `
 
 Input.displayName = 'Input'
 Input.isField = true
+Input.defaultProps = {
+  fontSize: [2, null, 1]
+}
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   color: deprecatedColorValue(),
   ...borders.propTypes,
-  ...space.propTypes
+  ...space.propTypes,
+  ...fontSize.propTypes
 }
 
 export default Input
