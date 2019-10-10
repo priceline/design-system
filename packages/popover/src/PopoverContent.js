@@ -22,12 +22,13 @@ class PopoverContent extends Component {
     const keys = {
       // Target ESC key
       27: () => {
-        evt.preventDefault()
         onCloseRequest()
       }
     }
 
     if (keys[evt.keyCode]) {
+      evt.stopPropagation()
+      evt.preventDefault()
       keys[evt.keyCode]()
     }
   }

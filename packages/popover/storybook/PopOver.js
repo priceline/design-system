@@ -49,24 +49,21 @@ storiesOf('Popover', module)
       <Link>Open Popover</Link>
     </Popover>
   ))
-  .add('Right with overlay', () => (
-    <Flex justifyContent="center">
-      <Box mt={4}>
+  .add('Right with overlay on scroll position', () => (
+    <Flex flexDirection="column">
+      <Text mb="2000px">Scroll down, popover trigger is at the end</Text>
+      <Box>
         <Popover
           renderContent={InnerContent}
-          placement="right"
-          ariaLabel={'Test PopOver'}
+          placement="top"
+          ariaLabel="Test PopOver"
           idx={1}
           width={400}
-          overlayOpacity={0.2}
+          overlayOpacity={0.3}
           bg="lightRed"
           borderColor="darkRed"
-          zIndex={-1}
         >
-          <Stamp color="red">
-            <Icon name="Warning" size={16} mr={1} />
-            terms & conditions
-          </Stamp>
+          <Button>Popover</Button>
         </Popover>
       </Box>
     </Flex>

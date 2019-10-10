@@ -1,11 +1,5 @@
 import React from 'react'
-import {
-  render,
-  fireEvent,
-  wait,
-  getByRole,
-  cleanup
-} from 'react-testing-library'
+import { fireEvent, wait, getByRole, cleanup } from 'react-testing-library'
 import Popover from '../src'
 import { Box, Button } from 'pcln-design-system'
 
@@ -40,7 +34,7 @@ describe('Popover', () => {
     })
 
     test('toggle popover from trigger element', () => {
-      const { getByText, queryByText } = render(
+      const { getByText, queryByText } = renderWithTheme(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -52,7 +46,7 @@ describe('Popover', () => {
     })
 
     test('clicking on close element inside popover, closes popover', () => {
-      const { getByText, queryByText } = render(
+      const { getByText, queryByText } = renderWithTheme(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -63,7 +57,7 @@ describe('Popover', () => {
     })
 
     test('pressing ESC key, closes popover', () => {
-      const { getByText, queryByText } = render(
+      const { getByText, queryByText } = renderWithTheme(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -78,7 +72,7 @@ describe('Popover', () => {
     })
 
     test('pressing any other key, does not close popover', () => {
-      const { getByText } = render(
+      const { getByText } = renderWithTheme(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -95,7 +89,7 @@ describe('Popover', () => {
 
   describe('UI Positioning', () => {
     test('Bottom', async () => {
-      const { getByText } = render(
+      const { getByText } = renderWithTheme(
         <Popover {...popoverProps} placement="bottom">
           <button>{triggerButtonText}</button>
         </Popover>
@@ -105,7 +99,7 @@ describe('Popover', () => {
     })
 
     test('Bottom End', async () => {
-      const { getByText } = render(
+      const { getByText } = renderWithTheme(
         <Popover {...popoverProps} placement="bottom-end">
           <button>{triggerButtonText}</button>
         </Popover>
@@ -115,7 +109,7 @@ describe('Popover', () => {
     })
 
     test('Bottom Start', async () => {
-      const { getByText } = render(
+      const { getByText } = renderWithTheme(
         <Popover {...popoverProps} placement="bottom-start">
           <button>{triggerButtonText}</button>
         </Popover>

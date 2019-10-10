@@ -12,7 +12,7 @@ const DEFAULT_MODIFIERS = {
   },
   flip: {
     enabled: true,
-    behavior: ['top', 'right', 'bottom', 'left']
+    behavior: ['top', 'right', 'bottom', 'left', 'top']
   },
   arrow: {
     enabled: true
