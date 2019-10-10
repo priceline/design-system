@@ -1,67 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Background Overlay Active overlay 1`] = `
-.c1 {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: primary;
-}
-
-.c1:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c0 {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #000;
   opacity: 0.3;
   z-index: 200;
   cursor: pointer;
 }
 
 <div>
-  <a
-    class="c0 c1"
-    color="primary"
+  <div
+    aria-hidden="true"
+    class="c0 "
+    tabindex="-1"
   />
 </div>
 `;
 
 exports[`Background Overlay Inactive overlay 1`] = `
-.c1 {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: primary;
-}
-
-.c1:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c0 {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #000;
   opacity: 0;
   z-index: 200;
   cursor: pointer;
 }
 
 <div>
-  <a
-    class="c0 c1"
-    color="primary"
+  <div
+    aria-hidden="true"
+    class="c0 "
+    tabindex="-1"
   />
 </div>
 `;
