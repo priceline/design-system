@@ -1,18 +1,7 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
-import { injectGlobal } from 'styled-components'
 import { ThemeProvider, Box } from '../packages/core/src'
 import { checkA11y } from '@storybook/addon-a11y'
-
-injectGlobal([], {
-  '*': {
-    boxSizing: 'border-box'
-  },
-  body: {
-    lineHeight: 1.5,
-    margin: 0
-  }
-})
 
 addDecorator(checkA11y)
 

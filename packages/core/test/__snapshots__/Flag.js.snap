@@ -1,39 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flag renders 1`] = `
-.c1 {
-  margin-left: 0px;
-}
-
-.c5 {
+.c2 {
   margin-bottom: -8px;
   margin-right: -8px;
   width: 4px;
   color: #0a0;
-}
-
-.c7 {
-  padding-left: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #0a0;
-  color: #fff;
-}
-
-.c9 {
-  margin-left: -8px;
-  width: 18px;
-  color: #0a0;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
   width: 8px;
   height: 8px;
   -webkit-align-self: flex-end;
@@ -45,7 +17,10 @@ exports[`Flag renders 1`] = `
   bottom: 0;
 }
 
-.c8 {
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #0a0;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -58,7 +33,12 @@ exports[`Flag renders 1`] = `
   z-index: 1;
 }
 
-.c6 {
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #0a0;
+  color: #fff;
   font-size: 12px;
   border-radius: 0 0 2px 0;
   background-color: #0a0;
@@ -66,18 +46,20 @@ exports[`Flag renders 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
-@media screen and (min-width:32em) {
-  .c1 {
-    margin-left: -8px;
-  }
+.c0 {
+  margin-left: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:32em) {
-  .c7 {
+  .c3 {
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -85,29 +67,35 @@ exports[`Flag renders 1`] = `
 }
 
 @media screen and (max-width:31.99em) {
-  .c3 {
+  .c1 {
     display: none;
   }
 }
 
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
 <div
-  className="c0 c1"
+  className="c0"
 >
   <div
-    className="c2 c3 "
+    className="c1"
   >
     <div
-      className="c4 c5"
+      className="c2"
       color="green"
       width="4px"
     />
   </div>
   <div
-    className="c6 c7"
+    className="c3"
     color="white"
   />
   <div
-    className="c8 c9"
+    className="c4"
     color="green"
     width="18px"
   />
@@ -115,40 +103,11 @@ exports[`Flag renders 1`] = `
 `;
 
 exports[`Flag renders with hex value as bg color 1`] = `
-.c1 {
-  margin-left: 0px;
-  width: 256px;
-}
-
-.c5 {
+.c2 {
   margin-bottom: -8px;
   margin-right: -8px;
   width: 4px;
   color: #085397;
-}
-
-.c7 {
-  padding-left: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #085397;
-  color: #fff;
-}
-
-.c9 {
-  margin-left: -8px;
-  width: 18px;
-  color: #085397;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
   width: 8px;
   height: 8px;
   -webkit-align-self: flex-end;
@@ -160,7 +119,10 @@ exports[`Flag renders with hex value as bg color 1`] = `
   bottom: 0;
 }
 
-.c8 {
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #085397;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -173,7 +135,12 @@ exports[`Flag renders with hex value as bg color 1`] = `
   z-index: 1;
 }
 
-.c6 {
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #085397;
+  color: #fff;
   font-size: 12px;
   border-radius: 0 0 2px 0;
   -webkit-flex: 1 1 auto;
@@ -184,18 +151,21 @@ exports[`Flag renders with hex value as bg color 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
-@media screen and (min-width:32em) {
-  .c1 {
-    margin-left: -8px;
-  }
+.c0 {
+  margin-left: 0px;
+  width: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:32em) {
-  .c7 {
+  .c3 {
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -203,30 +173,36 @@ exports[`Flag renders with hex value as bg color 1`] = `
 }
 
 @media screen and (max-width:31.99em) {
-  .c3 {
+  .c1 {
     display: none;
   }
 }
 
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
 <div
-  className="c0 c1"
+  className="c0"
   width={256}
 >
   <div
-    className="c2 c3 "
+    className="c1"
   >
     <div
-      className="c4 c5"
+      className="c2"
       color="#085397"
       width="4px"
     />
   </div>
   <div
-    className="c6 c7"
+    className="c3"
     color="white"
   />
   <div
-    className="c8 c9"
+    className="c4"
     color="#085397"
     width="18px"
   />
@@ -234,40 +210,11 @@ exports[`Flag renders with hex value as bg color 1`] = `
 `;
 
 exports[`Flag renders with theme color as bg color 1`] = `
-.c2 {
-  margin-left: 0px;
-  width: 256px;
-}
-
-.c6 {
+.c3 {
   margin-bottom: -8px;
   margin-right: -8px;
   width: 4px;
   color: #70b;
-}
-
-.c8 {
-  padding-left: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #70b;
-  color: #fff;
-}
-
-.c10 {
-  margin-left: -8px;
-  width: 18px;
-  color: #70b;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
   width: 8px;
   height: 8px;
   -webkit-align-self: flex-end;
@@ -279,7 +226,10 @@ exports[`Flag renders with theme color as bg color 1`] = `
   bottom: 0;
 }
 
-.c9 {
+.c5 {
+  margin-left: -8px;
+  width: 18px;
+  color: #70b;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -292,7 +242,12 @@ exports[`Flag renders with theme color as bg color 1`] = `
   z-index: 1;
 }
 
-.c7 {
+.c4 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #70b;
+  color: #fff;
   font-size: 12px;
   border-radius: 0 0 2px 0;
   -webkit-flex: 1 1 auto;
@@ -303,8 +258,17 @@ exports[`Flag renders with theme color as bg color 1`] = `
   z-index: 2;
 }
 
-.c3 {
+.c2 {
   position: relative;
+}
+
+.c1 {
+  margin-left: 0px;
+  width: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -318,13 +282,7 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 @media screen and (min-width:32em) {
-  .c2 {
-    margin-left: -8px;
-  }
-}
-
-@media screen and (min-width:32em) {
-  .c8 {
+  .c4 {
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -332,8 +290,14 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 @media screen and (max-width:31.99em) {
-  .c4 {
+  .c2 {
     display: none;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c1 {
+    margin-left: -8px;
   }
 }
 
@@ -341,24 +305,24 @@ exports[`Flag renders with theme color as bg color 1`] = `
   className="c0"
 >
   <div
-    className="c1 c2"
+    className="c1"
     width={256}
   >
     <div
-      className="c3 c4 "
+      className="c2"
     >
       <div
-        className="c5 c6"
+        className="c3"
         color="purple"
         width="4px"
       />
     </div>
     <div
-      className="c7 c8"
+      className="c4"
       color="white"
     />
     <div
-      className="c9 c10"
+      className="c5"
       color="purple"
       width="18px"
     />
@@ -367,40 +331,11 @@ exports[`Flag renders with theme color as bg color 1`] = `
 `;
 
 exports[`Flag renders with width prop 1`] = `
-.c5 {
+.c2 {
   margin-bottom: -8px;
   margin-right: -8px;
   width: 4px;
   color: #0a0;
-}
-
-.c7 {
-  padding-left: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: #0a0;
-  color: #fff;
-}
-
-.c9 {
-  margin-left: -8px;
-  width: 18px;
-  color: #0a0;
-}
-
-.c1 {
-  margin-left: 0px;
-  width: 256px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c4 {
   width: 8px;
   height: 8px;
   -webkit-align-self: flex-end;
@@ -412,7 +347,10 @@ exports[`Flag renders with width prop 1`] = `
   bottom: 0;
 }
 
-.c8 {
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #0a0;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -425,7 +363,12 @@ exports[`Flag renders with width prop 1`] = `
   z-index: 1;
 }
 
-.c6 {
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #0a0;
+  color: #fff;
   font-size: 12px;
   border-radius: 0 0 2px 0;
   -webkit-flex: 1 1 auto;
@@ -436,49 +379,58 @@ exports[`Flag renders with width prop 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c1 {
   position: relative;
 }
 
+.c0 {
+  margin-left: 0px;
+  width: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width:32em) {
-  .c7 {
+  .c3 {
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
 }
 
-@media screen and (min-width:32em) {
-  .c1 {
-    margin-left: -8px;
-  }
-}
-
 @media screen and (max-width:31.99em) {
-  .c3 {
+  .c1 {
     display: none;
   }
 }
 
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
 <div
-  className="c0 c1"
+  className="c0"
   width={256}
 >
   <div
-    className="c2 c3 "
+    className="c1"
   >
     <div
-      className="c4 c5"
+      className="c2"
       color="green"
       width="4px"
     />
   </div>
   <div
-    className="c6 c7"
+    className="c3"
     color="white"
   />
   <div
-    className="c8 c9"
+    className="c4"
     color="green"
     width="18px"
   />

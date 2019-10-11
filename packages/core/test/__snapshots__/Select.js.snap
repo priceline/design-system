@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select renders 1`] = `
-.c1 {
-  width: 100%;
-}
-
 .c0 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16,7 +13,7 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -24,15 +21,15 @@ exports[`Select renders 1`] = `
   color: #4f6f8f;
 }
 
-.c4 {
+.c3 {
   outline: none;
 }
 
-.c3 {
+.c4 {
   pointer-events: none;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -53,28 +50,28 @@ exports[`Select renders 1`] = `
   font-size: 14px;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c2::-ms-expand {
+.c1::-ms-expand {
   display: none;
 }
 
 <div
-  className="c0 c1"
+  className="c0"
   width={1}
 >
   <select
-    className="c2"
+    className="c1 "
     color="primary"
     fontSize={1}
   />
   <svg
     aria-hidden={true}
-    className="c3 c4 c5"
+    className="c2 c3 c4"
     color="gray"
     fill="currentcolor"
     focusable={false}

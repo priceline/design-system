@@ -1,5 +1,9 @@
 import { ScrollLock } from '../src/index'
 
+beforeEach(() => {
+  global.scrollTo = jest.fn()
+})
+
 describe('ScrollLock', () => {
   test('when called on with document.head, createStyleTag should be called', () => {
     const scrollLock = new ScrollLock()

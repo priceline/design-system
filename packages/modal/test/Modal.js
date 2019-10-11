@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { render } from '@testing-library/react'
 import { Modal } from '../src/index'
 import { ThemeProvider, theme } from 'pcln-design-system'
 
@@ -77,7 +77,7 @@ describe('Modal', () => {
   test('renders with top alignment', () => {
     const { getByText, getByTestId, container } = rerender(
       <ThemeProvider>
-        <Modal isOpen verticalAlignment="top">
+        <Modal isOpen enableOverflow verticalAlignment="top">
           <div data-content>Content</div>
         </Modal>
       </ThemeProvider>
@@ -92,6 +92,7 @@ describe('Modal', () => {
       <ThemeProvider>
         <Modal
           isOpen
+          enableOverflow
           overlayAnimation={transitionstate =>
             `${transitionstate === 'entering' ? `transform: scale(0.5);` : ''}`
           }

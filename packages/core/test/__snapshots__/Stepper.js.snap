@@ -1,30 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper renders with children 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
+.c4 {
   color: #007aff;
   font-size: 14px;
 }
 
-.c7 {
+.c5 {
   color: #007aff;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c8 {
+.c6 {
   color: #4f6f8f;
   font-size: 14px;
 }
 
-.c5 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -32,11 +25,11 @@ exports[`Stepper renders with children 1`] = `
   color: #007aff;
 }
 
-.c4 {
+.c3 {
   outline: none;
 }
 
-.c3 {
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -52,15 +45,6 @@ exports[`Stepper renders with children 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #e8f2ff;
-  color: #001833;
-}
-
-.c3:hover {
-  background-color: #e8f2ff;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -71,8 +55,15 @@ exports[`Stepper renders with children 1`] = `
   font-weight: unset;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #fff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 > :not(:last-child) {
@@ -80,17 +71,16 @@ exports[`Stepper renders with children 1`] = `
 }
 
 <div
-  className="c0 c1 "
+  className="c0"
 >
   <button
-    className="c2 c3"
-    color="primary"
+    className="c1"
     disabled={true}
   >
     <svg
       aria-hidden={false}
       aria-label="Step Completed"
-      className="c4 c5"
+      className="c2 c3"
       color="primary"
       fill="currentcolor"
       focusable={false}
@@ -106,7 +96,7 @@ exports[`Stepper renders with children 1`] = `
     </svg>
     <div
       aria-selected={false}
-      className="c6"
+      className="c4"
       color="primary"
       fontSize={1}
     >
@@ -114,13 +104,12 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c2 c3"
-    color="primary"
+    className="c1"
     disabled={true}
   >
     <div
       aria-selected={true}
-      className="c7"
+      className="c5"
       color="primary"
       fontSize={1}
     >
@@ -128,13 +117,12 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c2 c3"
-    color="primary"
+    className="c1"
     disabled={true}
   >
     <div
       aria-selected={false}
-      className="c8"
+      className="c6"
       color="text.light"
       fontSize={1}
     >
@@ -145,7 +133,7 @@ exports[`Stepper renders with children 1`] = `
 `;
 
 exports[`Stepper renders without crashing 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -157,6 +145,6 @@ exports[`Stepper renders without crashing 1`] = `
 }
 
 <div
-  className="c0 c1 "
+  className="c0"
 />
 `;

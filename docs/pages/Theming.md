@@ -75,10 +75,10 @@ As well as the palette, you can also add additional styles to any component and 
 
 Previously, most components had a default prop for `theme`. This was removed as the value of `theme` should always come from the `ThemeProvider`, and not directly from `theme.js`. Because of this change, some unit tests may now fail. The recommended remedy for this issue is to create a wrapper function for your test renderer that either wraps it's children in the `ThemeProvider` or sets a context value for `theme` from `createTheme()`. Some examples:
 
-`react-testing-library`
+`@testing-library/react`
 
 ```jsx
-import { render } from 'react-testing-library'
+import { render } from '@testing-library/react'
 import { ThemeProvider } from 'pcln-design-system'
 
 global.renderWithTheme = Tree => {

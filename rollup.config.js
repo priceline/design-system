@@ -18,8 +18,7 @@ module.exports = {
   ],
   plugins: [
     babel({
-      exclude: 'node_modules/**',
-      runtimeHelpers: true
+      exclude: 'node_modules/**'
     }),
     commonjs({
       namedExports: {
