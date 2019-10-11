@@ -17,7 +17,6 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
   } else {
     return (
       <Component
-        aria-hidden="true"
         title={title}
         desc={desc}
         titleId={titleId}
