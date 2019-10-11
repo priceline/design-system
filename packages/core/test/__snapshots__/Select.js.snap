@@ -50,7 +50,7 @@ exports[`Select renders 1`] = `
   padding-right: 32px;
   padding-top: 14px;
   padding-bottom: 14px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .c2:focus {
@@ -63,6 +63,12 @@ exports[`Select renders 1`] = `
   display: none;
 }
 
+@media screen and (min-width:40em) {
+  .c2 {
+    font-size: 14px;
+  }
+}
+
 <div
   className="c0 c1"
   width={1}
@@ -70,7 +76,13 @@ exports[`Select renders 1`] = `
   <select
     className="c2"
     color="primary"
-    fontSize={1}
+    fontSize={
+      Array [
+        2,
+        null,
+        1,
+      ]
+    }
   />
   <svg
     aria-hidden={true}

@@ -8,7 +8,6 @@ exports[`Input it renders 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -21,6 +20,7 @@ exports[`Input it renders 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 16px;
 }
 
 .c0::-webkit-input-placeholder {
@@ -49,8 +49,21 @@ exports[`Input it renders 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
 <input
   className="c0"
+  fontSize={
+    Array [
+      2,
+      null,
+      1,
+    ]
+  }
   id="fake-test-id"
 />
 `;
@@ -63,7 +76,6 @@ exports[`Input it renders an input element with a really large padding and margi
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -78,6 +90,7 @@ exports[`Input it renders an input element with a really large padding and margi
   box-shadow: 0 0 0 1px #c0cad5;
   margin: 32px;
   padding: 32px;
+  font-size: 16px;
 }
 
 .c0::-webkit-input-placeholder {
@@ -106,8 +119,21 @@ exports[`Input it renders an input element with a really large padding and margi
   box-shadow: 0 0 0 2px #007aff;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
 <input
   className="c0"
+  fontSize={
+    Array [
+      2,
+      null,
+      1,
+    ]
+  }
   id="fake-test-id"
 />
 `;
@@ -120,7 +146,6 @@ exports[`Input it renders an input element with a red border with a color prop i
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -133,6 +158,7 @@ exports[`Input it renders an input element with a red border with a color prop i
   margin: 0;
   border-color: #c00;
   box-shadow: 0 0 0 1px #c00;
+  font-size: 16px;
 }
 
 .c0::-webkit-input-placeholder {
@@ -161,9 +187,22 @@ exports[`Input it renders an input element with a red border with a color prop i
   box-shadow: 0 0 0 2px #c00;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
 <input
   className="c0"
   color="red"
+  fontSize={
+    Array [
+      2,
+      null,
+      1,
+    ]
+  }
   id="fake-test-id"
 />
 `;
@@ -176,7 +215,6 @@ exports[`Input it renders an input element with large text 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
@@ -189,6 +227,7 @@ exports[`Input it renders an input element with large text 1`] = `
   margin: 0;
   border-color: #c0cad5;
   box-shadow: 0 0 0 1px #c0cad5;
+  font-size: 24px;
 }
 
 .c0::-webkit-input-placeholder {
