@@ -1,6 +1,6 @@
 import React from 'react'
 import hoistStatics from 'hoist-non-react-statics'
-import { themeGet, color as systemColor } from 'styled-system'
+import { themeGet } from 'styled-system'
 import { css } from 'styled-components'
 
 export const mapProps = map => Component =>

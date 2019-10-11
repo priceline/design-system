@@ -1,5 +1,5 @@
 import React from 'react'
-import { fireEvent, wait, getByRole, cleanup } from 'react-testing-library'
+import { fireEvent, wait, getByRole } from '@testing-library/react'
 import Popover from '../src'
 import { Box, Button } from 'pcln-design-system'
 
@@ -19,8 +19,6 @@ const popoverProps = {
 }
 
 const triggerButtonText = 'Trigger Button'
-
-afterEach(cleanup)
 
 describe('Popover', () => {
   describe('Trigger Element', () => {

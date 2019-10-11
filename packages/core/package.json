@@ -35,10 +35,10 @@
   "license": "MIT",
   "devDependencies": {
     "camelcase": "^5.0.0",
-    "jest": "^24.1.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
+    "jest": "^24.9.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
     "stylis": "^3.4.9"
   },
   "jest": {
@@ -56,6 +56,8 @@
     "styled-system": "^3.2.1"
   },
   "peerDependencies": {
+    "react": ">=16.3.0",
+    "react-dom": ">=16.3.0",
     "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
   },
   "repository": {

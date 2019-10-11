@@ -16,19 +16,20 @@
   "license": "MIT",
   "dependencies": {
     "lodash.upperfirst": "^4.3.1",
+    "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
+    "@babel/cli": "^7.6.4",
     "@svgr/cli": "^4.1.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
-    "prop-types": "^15.7.2"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2"
   },
   "peerDependencies": {
-    "styled-components": ">=3.x || >=4.x",
-    "prop-types": "^15.7.2"
+    "react": ">=16.3.0",
+    "react-dom": ">=16.3.0",
+    "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
   },
   "jest": {
     "setupFilesAfterEnv": [

@@ -1,40 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ModalHeader render 1`] = `
-.c9 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c8 {
+.c6 {
   outline: none;
 }
 
-.c3 {
-  padding-left: 16px;
-  padding-right: 16px;
-  background-color: #0a0;
-  color: #fff;
-}
-
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   font-size: 14px;
   font-weight: 700;
 }
 
-.c7 {
+.c3 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -51,27 +33,17 @@ exports[`ModalHeader render 1`] = `
   font-size: 14px;
   padding: 9.5px 18px;
   margin-left: auto;
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c7:hover {
-  background-color: #049;
-  color: #fff;
-}
-
-.c6 {
   padding: 0;
   background-color: transparent;
   color: inherit;
 }
 
-.c6:hover {
+.c3:hover {
   background-color: transparent;
   color: inherit;
 }
 
-.c6 > div {
+.c3 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -89,14 +61,22 @@ exports[`ModalHeader render 1`] = `
 }
 
 .c1 {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #0a0;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 40px;
 }
 
-.c5 svg {
+.c4 svg {
   vertical-align: top;
 }
 
-.c5:focus {
+.c4:focus {
   background-color: #049;
   outline: none;
 }
@@ -105,24 +85,23 @@ exports[`ModalHeader render 1`] = `
   class="c0"
 >
   <div
-    class="c1 c2 c3"
+    class="c1"
     color="white"
   >
     <div
-      class="c4"
+      class="c2"
       font-size="1"
     >
       test
     </div>
     <button
-      class="c5 c6 c7"
-      color="primary"
+      class="c3 c4"
       title="close"
     >
       <div>
         <svg
           aria-hidden="true"
-          class="c8 c9"
+          class="c5 c6"
           fill="currentcolor"
           focusable="false"
           height="24"
@@ -142,10 +121,6 @@ exports[`ModalHeader render 1`] = `
 `;
 
 exports[`SmallModalHeader render 1`] = `
-.c2 {
-  background-color: #0a0;
-}
-
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -157,6 +132,7 @@ exports[`SmallModalHeader render 1`] = `
 }
 
 .c1 {
+  background-color: #0a0;
   height: 8px;
 }
 
@@ -164,7 +140,7 @@ exports[`SmallModalHeader render 1`] = `
   class="c0"
 >
   <div
-    class="c1 c2"
+    class="c1"
   />
 </div>
 `;

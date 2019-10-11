@@ -30,80 +30,38 @@ exports[`Heading Heading component with default theme font size, when "fontSize"
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
 <h1
-  className="c0"
+  className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
 <h2
-  className="c0"
+  className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
 <h3
-  className="c0"
+  className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
 <h4
-  className="c0"
+  className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
 <h5
-  className="c0"
+  className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
-.c0 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
-}
-
 <h6
-  className="c0"
+  className=""
 />
 `;
 

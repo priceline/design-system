@@ -33,14 +33,14 @@
     "react-dom": ">=16.3.0"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@reach/component-component": "^0.1.1",
-    "jest": "^24.1.0",
+    "jest": "^24.9.0",
     "pcln-design-system": "^2.0.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
-    "styled-components": "^3.4.10"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
+    "styled-components": "^4.4.0"
   },
   "engines": {
     "node": ">=8.0.0 <9.0.0 || >=10.0.0",

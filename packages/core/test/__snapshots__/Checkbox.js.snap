@@ -1,12 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders disabled with defaultChecked 1`] = `
-.c1 {
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c4 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -16,11 +11,13 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   outline: none;
 }
 
-.c5 {
+.c4 {
   outline: none;
 }
 
 .c0 {
+  background-color: #007aff;
+  color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -74,7 +71,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   color: #c0cad5;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -84,12 +81,12 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 <div
-  className="c0 c1"
+  className="c0"
   color="primary"
   disabled={true}
 >
   <input
-    className="c2"
+    className="c1"
     color="primary"
     defaultChecked={true}
     disabled={true}
@@ -101,7 +98,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c3 c4"
+    className="c2 c3"
     data-name="checked"
     fill="currentcolor"
     focusable={false}
@@ -117,7 +114,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   </svg>
   <svg
     aria-hidden={true}
-    className="c5 c4"
+    className="c2 c4"
     data-name="empty"
     fill="currentcolor"
     focusable={false}
@@ -136,12 +133,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 exports[`Checkbox renders disabled with disabled prop 1`] = `
 <DocumentFragment>
-  .c1 {
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c4 {
+  .c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -151,11 +143,13 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   outline: none;
 }
 
-.c5 {
+.c4 {
   outline: none;
 }
 
 .c0 {
+  background-color: #007aff;
+  color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -209,7 +203,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   color: #c0cad5;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -219,12 +213,12 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 <div
-    class="c0 c1"
+    class="c0"
     color="primary"
     disabled=""
   >
     <input
-      class="c2"
+      class="c1"
       color="primary"
       disabled=""
       id="check-box"
@@ -234,7 +228,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c3 c4"
+      class="c2 c3"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -250,7 +244,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c5 c4"
+      class="c2 c4"
       data-name="empty"
       fill="currentcolor"
       focusable="false"
@@ -270,11 +264,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 exports[`Checkbox renders with the theme passed specifically 1`] = `
 <DocumentFragment>
-  .c1 {
-  color: primary;
-}
-
-.c4 {
+  .c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -284,11 +274,12 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   outline: none;
 }
 
-.c5 {
+.c4 {
   outline: none;
 }
 
 .c0 {
+  color: primary;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -342,7 +333,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   color: #049;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -352,11 +343,11 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 <div
-    class="c0 c1"
+    class="c0"
     color="primary"
   >
     <input
-      class="c2"
+      class="c1"
       color="primary"
       id="check-box"
       role="checkbox"
@@ -365,7 +356,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c3 c4"
+      class="c2 c3"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -381,7 +372,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c5 c4"
+      class="c2 c4"
       data-name="empty"
       fill="currentcolor"
       focusable="false"
@@ -401,12 +392,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 
 exports[`Checkbox renders without the theme passed specifically 1`] = `
 <DocumentFragment>
-  .c1 {
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c4 {
+  .c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -416,11 +402,13 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   outline: none;
 }
 
-.c5 {
+.c4 {
   outline: none;
 }
 
 .c0 {
+  background-color: #007aff;
+  color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -474,7 +462,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   color: #049;
 }
 
-.c2 {
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -484,11 +472,11 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 <div
-    class="c0 c1"
+    class="c0"
     color="primary"
   >
     <input
-      class="c2"
+      class="c1"
       color="primary"
       id="check-box"
       role="checkbox"
@@ -497,7 +485,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c3 c4"
+      class="c2 c3"
       data-name="checked"
       fill="currentcolor"
       focusable="false"
@@ -513,7 +501,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="c5 c4"
+      class="c2 c4"
       data-name="empty"
       fill="currentcolor"
       focusable="false"

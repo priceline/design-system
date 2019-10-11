@@ -17,8 +17,8 @@
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
     "@reach/component-component": "^0.1.1",
     "cat-names": "^2.0.0",
     "pcln-design-system": "^2.5.1",

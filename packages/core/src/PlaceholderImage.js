@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Image from './Image'
-import theme from './theme'
 
 const RandomImage = styled(Image)`
   height: ${props => props.height}px;
@@ -59,7 +58,6 @@ PlaceholderImage.defaultProps = {
   ariaHidden: true,
   blur: false,
   height: '500',
-  theme: theme,
   width: '500'
 }
 

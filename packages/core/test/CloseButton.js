@@ -1,8 +1,6 @@
 import React from 'react'
-import { fireEvent, cleanup } from 'react-testing-library'
+import { fireEvent } from '@testing-library/react'
 import { CloseButton } from '../src'
-
-afterEach(cleanup)
 
 describe('CloseButton', () => {
   test('executes onClick prop on click', () => {

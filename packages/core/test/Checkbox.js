@@ -1,8 +1,6 @@
 import React from 'react'
 import { Checkbox, theme } from '../src'
-import { fireEvent, cleanup } from 'react-testing-library'
-
-afterEach(cleanup)
+import { fireEvent } from '@testing-library/react'
 
 describe('Checkbox', () => {
   test('renders without the theme passed specifically', () => {

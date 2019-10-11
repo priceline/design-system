@@ -1,7 +1,11 @@
-import styled from 'styled-components'
+import React from 'react'
 import Button from './Button'
 
-const GreenButton = styled(Button).attrs({ color: 'secondary' })``
+const GreenButton = ({ children, ...props }) => (
+  <Button color="secondary" {...props}>
+    {children}
+  </Button>
+)
 
 GreenButton.displayName = 'GreenButton'
 
