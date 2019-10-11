@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea it renders 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c0:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-ms-clear {
+  display: none;
+}
+
+.c0:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+<textarea
+  className="c0"
+  id="fake-test-id"
+/>
+`;
+
+exports[`TextArea it renders an input element with a really large padding and margin 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
+  margin: 32px;
+  padding: 32px;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c0:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-ms-clear {
+  display: none;
+}
+
+.c0:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+<textarea
+  className="c0"
+  id="fake-test-id"
+/>
+`;
+
+exports[`TextArea it renders an input element with a red border with a color prop is passed 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #c00;
+  box-shadow: 0 0 0 1px #c00;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c0:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-ms-clear {
+  display: none;
+}
+
+.c0:focus {
+  outline: 0;
+  border-color: #c00;
+  box-shadow: 0 0 0 2px #c00;
+}
+
+<textarea
+  className="c0"
+  color="error"
+  id="fake-test-id"
+/>
+`;
+
+exports[`TextArea it renders an input element with large text 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0;
+  border-color: #c0cad5;
+  box-shadow: 0 0 0 1px #c0cad5;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c0:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c0::placeholder {
+  color: #4f6f8f;
+}
+
+.c0::-ms-clear {
+  display: none;
+}
+
+.c0:focus {
+  outline: 0;
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+<textarea
+  className="c0"
+  fontSize={4}
+  id="fake-test-id"
+/>
+`;
