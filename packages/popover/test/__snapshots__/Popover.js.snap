@@ -44,34 +44,30 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
 `;
 
 exports[`Popover UI Positioning Bottom 1`] = `
-.c1 {
-  width: 400px;
-}
-
-.c3 {
+.c2 {
   position: absolute;
 }
 
-.c3[data-placement*="right"] {
+.c2[data-placement*="right"] {
   left: 0;
 }
 
-.c3[data-placement*="left"] {
+.c2[data-placement*="left"] {
   right: 0;
 }
 
-.c3[data-placement*="top"] {
+.c2[data-placement*="top"] {
   bottom: 0;
 }
 
-.c3[data-placement*="bottom"] {
+.c2[data-placement*="bottom"] {
   top: 0;
 }
 
-.c3[data-placement*="bottom"]::before,
-.c3[data-placement*="right"]::before,
-.c3[data-placement*="top"]::after,
-.c3[data-placement*="left"]::after {
+.c2[data-placement*="bottom"]::before,
+.c2[data-placement*="right"]::before,
+.c2[data-placement*="top"]::after,
+.c2[data-placement*="left"]::after {
   content: '';
   position: absolute;
   width: 0;
@@ -87,26 +83,26 @@ exports[`Popover UI Positioning Bottom 1`] = `
   border-width: 6px;
 }
 
-.c3[data-placement*="right"]::before {
+.c2[data-placement*="right"]::before {
   left: 8px;
   border-color: #fff transparent transparent #fff;
   box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="left"]::after {
+.c2[data-placement*="left"]::after {
   right: 13px;
   border-color: transparent #fff #fff transparent;
   box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="top"]::after {
+.c2[data-placement*="top"]::after {
   top: -16px;
   margin-left: -5px;
   border-color: transparent transparent #fff #fff;
   box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="bottom"]::before {
+.c2[data-placement*="bottom"]::before {
   top: 16px;
   margin-left: -5px;
   border-color: #fff #fff transparent transparent;
@@ -114,6 +110,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
 }
 
 .c0 {
+  width: 400px;
   padding: 16px;
   z-index: 102;
   max-width: 400px;
@@ -121,7 +118,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   box-sizing: border-box;
 }
 
-.c2 {
+.c1 {
   box-shadow: 0 0 0 1px #c0cad5, 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08), 0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
   border-radius: 2px;
@@ -134,14 +131,13 @@ exports[`Popover UI Positioning Bottom 1`] = `
 <div
   aria-describedby="dialog-description-1"
   aria-label="Top PopOver"
-  class="c0 c1"
-  data-placement="bottom"
+  class="c0"
   role="dialog"
-  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
   width="400"
 >
   <section
-    class="c2"
+    class="c1"
     tabindex="-1"
     width="400"
   >
@@ -163,41 +159,37 @@ exports[`Popover UI Positioning Bottom 1`] = `
   </section>
   <span
     aria-hidden="true"
-    class="c3"
-    data-placement="bottom"
+    class="c2"
+    data-placement="top"
   />
 </div>
 `;
 
 exports[`Popover UI Positioning Bottom End 1`] = `
-.c1 {
-  width: 400px;
-}
-
-.c3 {
+.c2 {
   position: absolute;
 }
 
-.c3[data-placement*="right"] {
+.c2[data-placement*="right"] {
   left: 0;
 }
 
-.c3[data-placement*="left"] {
+.c2[data-placement*="left"] {
   right: 0;
 }
 
-.c3[data-placement*="top"] {
+.c2[data-placement*="top"] {
   bottom: 0;
 }
 
-.c3[data-placement*="bottom"] {
+.c2[data-placement*="bottom"] {
   top: 0;
 }
 
-.c3[data-placement*="bottom"]::before,
-.c3[data-placement*="right"]::before,
-.c3[data-placement*="top"]::after,
-.c3[data-placement*="left"]::after {
+.c2[data-placement*="bottom"]::before,
+.c2[data-placement*="right"]::before,
+.c2[data-placement*="top"]::after,
+.c2[data-placement*="left"]::after {
   content: '';
   position: absolute;
   width: 0;
@@ -213,26 +205,26 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   border-width: 6px;
 }
 
-.c3[data-placement*="right"]::before {
+.c2[data-placement*="right"]::before {
   left: 8px;
   border-color: #fff transparent transparent #fff;
   box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="left"]::after {
+.c2[data-placement*="left"]::after {
   right: 13px;
   border-color: transparent #fff #fff transparent;
   box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="top"]::after {
+.c2[data-placement*="top"]::after {
   top: -16px;
   margin-left: -5px;
   border-color: transparent transparent #fff #fff;
   box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="bottom"]::before {
+.c2[data-placement*="bottom"]::before {
   top: 16px;
   margin-left: -5px;
   border-color: #fff #fff transparent transparent;
@@ -240,6 +232,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 }
 
 .c0 {
+  width: 400px;
   padding: 16px;
   z-index: 102;
   max-width: 400px;
@@ -247,7 +240,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   box-sizing: border-box;
 }
 
-.c2 {
+.c1 {
   box-shadow: 0 0 0 1px #c0cad5, 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08), 0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
   border-radius: 2px;
@@ -260,14 +253,13 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 <div
   aria-describedby="dialog-description-1"
   aria-label="Top PopOver"
-  class="c0 c1"
-  data-placement="bottom-end"
+  class="c0"
   role="dialog"
-  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
   width="400"
 >
   <section
-    class="c2"
+    class="c1"
     tabindex="-1"
     width="400"
   >
@@ -289,41 +281,37 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   </section>
   <span
     aria-hidden="true"
-    class="c3"
-    data-placement="bottom-end"
+    class="c2"
+    data-placement="top"
   />
 </div>
 `;
 
 exports[`Popover UI Positioning Bottom Start 1`] = `
-.c1 {
-  width: 400px;
-}
-
-.c3 {
+.c2 {
   position: absolute;
 }
 
-.c3[data-placement*="right"] {
+.c2[data-placement*="right"] {
   left: 0;
 }
 
-.c3[data-placement*="left"] {
+.c2[data-placement*="left"] {
   right: 0;
 }
 
-.c3[data-placement*="top"] {
+.c2[data-placement*="top"] {
   bottom: 0;
 }
 
-.c3[data-placement*="bottom"] {
+.c2[data-placement*="bottom"] {
   top: 0;
 }
 
-.c3[data-placement*="bottom"]::before,
-.c3[data-placement*="right"]::before,
-.c3[data-placement*="top"]::after,
-.c3[data-placement*="left"]::after {
+.c2[data-placement*="bottom"]::before,
+.c2[data-placement*="right"]::before,
+.c2[data-placement*="top"]::after,
+.c2[data-placement*="left"]::after {
   content: '';
   position: absolute;
   width: 0;
@@ -339,26 +327,26 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   border-width: 6px;
 }
 
-.c3[data-placement*="right"]::before {
+.c2[data-placement*="right"]::before {
   left: 8px;
   border-color: #fff transparent transparent #fff;
   box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="left"]::after {
+.c2[data-placement*="left"]::after {
   right: 13px;
   border-color: transparent #fff #fff transparent;
   box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="top"]::after {
+.c2[data-placement*="top"]::after {
   top: -16px;
   margin-left: -5px;
   border-color: transparent transparent #fff #fff;
   box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c3[data-placement*="bottom"]::before {
+.c2[data-placement*="bottom"]::before {
   top: 16px;
   margin-left: -5px;
   border-color: #fff #fff transparent transparent;
@@ -366,6 +354,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 }
 
 .c0 {
+  width: 400px;
   padding: 16px;
   z-index: 102;
   max-width: 400px;
@@ -373,7 +362,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   box-sizing: border-box;
 }
 
-.c2 {
+.c1 {
   box-shadow: 0 0 0 1px #c0cad5, 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08), 0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
   border-radius: 2px;
@@ -386,14 +375,13 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 <div
   aria-describedby="dialog-description-1"
   aria-label="Top PopOver"
-  class="c0 c1"
-  data-placement="bottom-start"
+  class="c0"
   role="dialog"
-  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
   width="400"
 >
   <section
-    class="c2"
+    class="c1"
     tabindex="-1"
     width="400"
   >
@@ -415,8 +403,8 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   </section>
   <span
     aria-hidden="true"
-    class="c3"
-    data-placement="bottom-start"
+    class="c2"
+    data-placement="top"
   />
 </div>
 `;

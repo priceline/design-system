@@ -14,7 +14,7 @@ exports[`Hide renders with lg prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -26,7 +26,7 @@ exports[`Hide renders with md prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -38,7 +38,7 @@ exports[`Hide renders with print prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -50,7 +50,7 @@ exports[`Hide renders with sm prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -62,7 +62,7 @@ exports[`Hide renders with xl prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -74,6 +74,6 @@ exports[`Hide renders with xs prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;

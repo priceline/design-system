@@ -1,8 +1,5 @@
 import React from 'react'
-import { cleanup } from 'react-testing-library'
 import { Banner, Text, theme } from '../src'
-
-afterEach(cleanup)
 
 describe('Banner', () => {
   test('renders with no props other than theme', () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { render } from '@testing-library/react'
 import { ModalHeader, SmallModalHeader } from '../src/index'
 import { ThemeProvider, theme } from 'pcln-design-system'
 
@@ -17,21 +17,21 @@ const customRender = (node, ...options) => {
 }
 
 describe('SmallModalHeader', () => {
-  const { rerender } = customRender(<SmallModalHeader bg="green" />)
+  const { rerender } = customRender(<SmallModalHeader bg="secondary" />)
 
   test('render', () => {
-    const { container } = rerender(<SmallModalHeader bg="green" />)
+    const { container } = rerender(<SmallModalHeader bg="secondary" />)
     expect(container.firstChild).toMatchSnapshot()
   })
 })
 
 describe('ModalHeader', () => {
-  const { rerender } = customRender(<ModalHeader bg="green" />)
+  const { rerender } = customRender(<ModalHeader bg="secondary" />)
 
   test('render', () => {
     const { container } = rerender(
       <ModalHeader
-        bg="green"
+        bg="secondary"
         title="test"
         onClose={() => {
           console.log('close')

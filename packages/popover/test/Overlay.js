@@ -1,13 +1,11 @@
 import React from 'react'
-import { fireEvent, cleanup } from 'react-testing-library'
+import { fireEvent } from '@testing-library/react'
 import Overlay from '../src/Overlay'
 
 const overlayProps = {
   overlayOpacity: 0.3,
   zIndex: 200
 }
-
-afterEach(cleanup)
 
 describe('Background Overlay', () => {
   test('Active overlay', () => {

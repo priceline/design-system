@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
-import { theme } from 'pcln-design-system'
 import PopoverContent from './PopoverContent'
 
 class Popover extends Component {
@@ -92,7 +91,6 @@ Popover.propTypes = {
   renderContent: PropTypes.func.isRequired,
   ariaLabel: PropTypes.string,
   className: PropTypes.string,
-  theme: PropTypes.object,
   p: PropTypes.number,
   bg: PropTypes.string,
   borderColor: PropTypes.string,
@@ -100,10 +98,6 @@ Popover.propTypes = {
   zIndex: PropTypes.number,
   width: PropTypes.number,
   overlayOpacity: PropTypes.number
-}
-
-Popover.defaultProps = {
-  theme: theme
 }
 
 export default Popover

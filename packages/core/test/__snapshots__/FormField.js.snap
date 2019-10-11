@@ -94,7 +94,7 @@ exports[`FormField renders 1`] = `
     Email Address
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <input
       className="c2"
@@ -122,13 +122,13 @@ exports[`FormField renders with Icon 1`] = `
   display: flex;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c2 {
+.c3 {
   outline: none;
 }
 
@@ -218,7 +218,7 @@ exports[`FormField renders with Icon 1`] = `
     Email Address
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <svg
       aria-hidden={true}
@@ -272,13 +272,13 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: flex;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c2 {
+.c3 {
   outline: none;
 }
 
@@ -368,7 +368,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     Email
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <svg
       aria-hidden={true}
@@ -415,10 +415,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
-.c2 {
-  width: 100%;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -427,6 +423,7 @@ exports[`FormField renders with Select  1`] = `
 }
 
 .c1 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -437,7 +434,7 @@ exports[`FormField renders with Select  1`] = `
   align-items: center;
 }
 
-.c6 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -445,15 +442,15 @@ exports[`FormField renders with Select  1`] = `
   color: #4f6f8f;
 }
 
-.c5 {
+.c4 {
   outline: none;
 }
 
-.c4 {
+.c5 {
   pointer-events: none;
 }
 
-.c3 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -474,26 +471,26 @@ exports[`FormField renders with Select  1`] = `
   font-size: 14px;
 }
 
-.c3:focus {
+.c2:focus {
   outline: none;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c3::-ms-expand {
+.c2::-ms-expand {
   display: none;
 }
 
 <div>
   <div
-    className="c0 "
+    className="c0"
   >
     <div
-      className="c1 c2"
+      className="c1"
       width={1}
     >
       <select
-        className="c3"
+        className="c2 "
         color="primary"
         fontSize={1}
         style={
@@ -509,7 +506,7 @@ exports[`FormField renders with Select  1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c4 c5 c6"
+        className="c3 c4 c5"
         color="gray"
         fill="currentcolor"
         focusable={false}
@@ -529,10 +526,6 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
-.c4 {
-  width: 100%;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -541,6 +534,7 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 .c3 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -551,13 +545,13 @@ exports[`FormField renders with Select and Icon 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c8 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -565,19 +559,19 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
 }
 
-.c7 {
-  outline: none;
-}
-
-.c1 {
-  outline: none;
-}
-
 .c6 {
+  outline: none;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c7 {
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -598,19 +592,19 @@ exports[`FormField renders with Select and Icon 1`] = `
   font-size: 14px;
 }
 
-.c5:focus {
+.c4:focus {
   outline: none;
   border-color: #007aff;
   box-shadow: 0 0 0 1px #007aff;
 }
 
-.c5::-ms-expand {
+.c4::-ms-expand {
   display: none;
 }
 
 <div>
   <div
-    className="c0 "
+    className="c0"
   >
     <svg
       aria-hidden={true}
@@ -638,11 +632,11 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
     </svg>
     <div
-      className="c3 c4"
+      className="c3"
       width={1}
     >
       <select
-        className="c5"
+        className="c4 "
         color="primary"
         fontSize={1}
         style={
@@ -658,7 +652,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c6 c7 c8"
+        className="c5 c6 c7"
         color="gray"
         fill="currentcolor"
         focusable={false}

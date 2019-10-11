@@ -13,24 +13,24 @@
   "license": "MIT",
   "dependencies": {
     "@reach/dialog": "^0.1.2",
+    "prop-types": "^15.7.2",
     "react-transition-group": "^2.5.3"
   },
   "peerDependencies": {
     "pcln-design-system": ">=1.0.0 || >=2.0.0",
-    "prop-types": "^15.5.10",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "styled-components": ">=3.x || >= 4.x",
-    "styled-system": "^3.1.6"
+    "styled-system": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "pcln-design-system": "^2.5.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
-    "styled-components": "^3.4.10",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
+    "styled-components": "^4.4.0",
     "styled-system": "^3.2.1"
   },
   "engines": {

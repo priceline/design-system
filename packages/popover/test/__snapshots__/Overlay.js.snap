@@ -17,7 +17,7 @@ exports[`Background Overlay Active overlay 1`] = `
 <div>
   <div
     aria-hidden="true"
-    class="c0 "
+    class="c0"
     tabindex="-1"
   />
 </div>
@@ -40,7 +40,7 @@ exports[`Background Overlay Inactive overlay 1`] = `
 <div>
   <div
     aria-hidden="true"
-    class="c0 "
+    class="c0"
     tabindex="-1"
   />
 </div>
