@@ -521,7 +521,7 @@ exports[`FormField renders with Select  1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c3 {
+  .c2 {
     font-size: 14px;
   }
 }
@@ -654,7 +654,7 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c5 {
+  .c4 {
     font-size: 14px;
   }
 }

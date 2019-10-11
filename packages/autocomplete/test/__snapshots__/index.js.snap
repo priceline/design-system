@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Autocomplete renders 1`] = `
+.c2 {
+  margin-top: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16);
+  border: 0;
+  border-radius: 2px;
+}
+
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -63,20 +71,6 @@ exports[`Autocomplete renders 1`] = `
   font-weight: 700;
 }
 
-.c2 {
-  margin-top: 4px;
-  background-color: #fff;
-  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16);
-  border: 0;
-  border-radius: 2px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  max-height: 256px;
-  overflow-y: auto;
-}
-
 @media screen and (min-width:40em) {
   .c1 {
     font-size: 14px;
@@ -127,7 +121,7 @@ exports[`Autocomplete renders 1`] = `
   />
   <div
     aria-labelledby="downshift-0-label"
-    className="c2"
+    className="c2 kLcFgh"
     height="256px"
     id="downshift-0-menu"
     role="listbox"
