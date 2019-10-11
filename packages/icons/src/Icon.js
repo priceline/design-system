@@ -16,20 +16,18 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
     return null
   } else {
     return (
-      Component && (
-        <Component
-          aria-hidden="true"
-          title={title}
-          desc={desc}
-          titleId={titleId}
-          descId={descId}
-          aria-hidden={!!ariaLabelledBy || true}
-          aria-labelledby={ariaLabelledBy}
-          tabIndex={-1}
-          focusable={false}
-          {...props}
-        />
-      )
+      <Component
+        aria-hidden="true"
+        title={title}
+        desc={desc}
+        titleId={titleId}
+        descId={descId}
+        aria-hidden={!!ariaLabelledBy || true}
+        aria-labelledby={ariaLabelledBy}
+        tabIndex={-1}
+        focusable={false}
+        {...props}
+      />
     )
   }
 }
