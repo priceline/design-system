@@ -11,8 +11,9 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
   ariaLabelledBy = ariaLabelledBy ? ariaLabelledBy : undefined
 
   if (!Component) {
-    if (process.env.NODE_ENV !== 'production')
+    if (process.env.NODE_ENV !== 'production') {
       console.trace(`icon ${iconName} does not exist`)
+    }
     return null
   } else {
     return (
