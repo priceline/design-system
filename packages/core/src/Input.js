@@ -40,7 +40,7 @@ const Input = styled.input`
   margin: 0;
 
   ::placeholder {
-    color: ${themeGet('colors.gray')};
+    color: ${getPaletteColor('text.light')};
   }
 
   ::-ms-clear {
