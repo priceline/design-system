@@ -5,7 +5,7 @@ Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon
 ```.jsx
 <FormField>
   <Label htmlFor='email'>Email address</Label>
-  <Icon name='email' size='20' />
+  <Icon name='Email' size='20' />
   <Input
     id='email'
     name='email'
@@ -18,7 +18,7 @@ Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon
 ```.jsx
 <FormField>
   <Label htmlFor='options'>Select One</Label>
-  <Icon name='key' size='20' />
+  <Icon name='Key' size='20' />
   <Select
     id='options'
     name='options'>
@@ -47,7 +47,7 @@ Error messages can be displayed using the [`Tooltip`](/Tooltip) component.
   <Input
     value='hello@example'
   />
-  <Icon name='warning' color='red' />
+  <Icon name='Warning' color='red' />
 </FormField>
 <Tooltip
   bottom

@@ -6,7 +6,7 @@ An Icon placed within a Stamp will inherit the assigned Stamp color.
 
 ```.jsx
 <Stamp color='purple'>
-  <Icon name='trendingUp' size={16} mr={1} /> top booked hotel
+  <Icon name='TrendingUp' size={16} mr={1} /> top booked hotel
 </Stamp>
 ```
 

@@ -441,13 +441,13 @@ global.mountWithTheme = (node, options) => {
 
 ```.jsx
 <Stamp color="primary" mr={2}>
-  <Icon name="pin" size={16} mr={1} /> primary stamp
+  <Icon name="Pin" size={16} mr={1} /> primary stamp
 </Stamp>
 <Stamp color="error" mr={2}>
-  <Icon name="warning" size={16} mr={1} /> error stamp
+  <Icon name="Warning" size={16} mr={1} /> error stamp
 </Stamp>
 <Stamp color="caution" bg="background.dark" borderColor="caution">
-  <Icon name="information" size={16} mr={1} /> just booked
+  <Icon name="Information" size={16} mr={1} /> just booked
 </Stamp>
 ```
 

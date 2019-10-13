@@ -4,7 +4,7 @@ Use the `Icon` component for SVG icons.
 
 ```.jsx
 <Icon
-  name='flame'
+  name='Flame'
   color='orange'
 />
 ```

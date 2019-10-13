@@ -218,7 +218,7 @@ In a real application, these would likely be links and buttons.
   color='white'
   bg='blue'>
   <Icon
-    name='hotel'
+    name='Hotels'
     mr={2}
   />
   <Text
@@ -247,7 +247,7 @@ Next, add some padding and use the `align` prop on the parent Flex component to 
   color='white'
   bg='blue'>
   <Icon
-    name='hotel'
+    name='Hotels'
     mr={2}
   />
   <Text

@@ -14,7 +14,7 @@ Use `Banner` component to create a box with a optional header, text, optional le
   bg='lightBlue'
   p={2}>
   <Flex>
-    <Icon name='calendar' />
+    <Icon name='Calendar' />
     <Box pl={2}>
       <Heading fontSize={2} bold>Are Your Dates Correct?</Heading>
       <Text>
@@ -56,7 +56,7 @@ Uses the color from `theme.palette.primary.base`.
 <Banner
   p={2}
   color="error"
-  iconName="warning"
+  iconName="Warning"
   text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
 />
 ```
@@ -67,7 +67,7 @@ Uses the color from `theme.palette.error.base`.
 <Banner
   p={2}
   color="caution"
-  iconName="attention"
+  iconName="Attention"
   text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
 />
 ```
