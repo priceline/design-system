@@ -1,11 +1,10 @@
-
 # IconField
 
 Group Inputs and Selects with Icons.
 
 ```.jsx
 <IconField>
-  <Icon name='calendar' color='blue' />
+  <Icon name='Calendar' color='blue' />
   <Input
     placeholder='Choose Date'
   />
@@ -17,23 +16,23 @@ Group Inputs and Selects with Icons.
   <Input
     placeholder='Choose Date'
   />
-  <Icon name='calendar' color='blue' />
+  <Icon name='Calendar' color='blue' />
 </IconField>
 ```
 
 ```.jsx
 <IconField>
-  <Icon name='calendar' color='blue' />
+  <Icon name='Calendar' color='blue' />
   <Input
     placeholder='Choose Date'
   />
-  <Icon name='check' color='green' />
+  <Icon name='Check' color='green' />
 </IconField>
 ```
 
 ```.jsx
 <IconField>
-  <Icon name='calendar' color='blue' />
+  <Icon name='Calendar' color='blue' />
   <Select>
     <option>Choose Date</option>
     <option>January 2019</option>
@@ -52,9 +51,10 @@ import CustomInput from './CustomInput'
 
 CustomInput.isField = true
 
-export default props =>
+export default props => (
   <IconField>
-    <Icon name='calendar' />
+    <Icon name="Calendar" />
     <CustomInput {...props} />
   </IconField>
+)
 ```
