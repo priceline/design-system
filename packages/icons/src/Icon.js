@@ -10,29 +10,33 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
   ariaLabelledBy += desc && descId ? ` ${descId}` : ''
   ariaLabelledBy = ariaLabelledBy ? ariaLabelledBy : undefined
 
-  return (
-    Component && (
+  if (!Component) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.trace(`icon ${iconName} does not exist`)
+    }
+    return null
+  } else {
+    return (
       <Component
         title={title}
         desc={desc}
         titleId={titleId}
         descId={descId}
-        aria-hidden={!!ariaLabelledBy}
+        aria-hidden={!ariaLabelledBy}
         aria-labelledby={ariaLabelledBy}
+        tabIndex={-1}
+        focusable={false}
         {...props}
       />
     )
-  )
+  }
 }
 
 Icon.isIcon = true
 Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
-  size: 24,
-  tabIndex: -1,
-  focusable: false,
-  'aria-hidden': true
+  size: 24
 }
 
 Icon.propTypes = {

@@ -82,16 +82,18 @@ describe('Icon', () => {
         />
       )
       const testInstance = testRenderer.root
-
       const title = testInstance.findAll(el => el.type == 'title')
       expect(title).toHaveLength(0)
       expect(testInstance.findByType('desc').children[0]).toBe(
         'Accessible Logo description'
       )
-      expect(testRenderer.toJSON().props['aria-hidden']).toBe(true)
-      expect(testRenderer.toJSON().props['focusable']).toBe(false)
-      expect(testRenderer.toJSON().props['tabIndex']).toBe(-1)
       expect(testRenderer.toJSON().props['role']).toBe('img')
+
+      const tree = testRenderer.toTree()
+      const renderedProps = tree.rendered.props
+      expect(renderedProps['aria-hidden']).toBeFalsy()
+      expect(renderedProps['focusable']).toBeFalsy()
+      expect(renderedProps['tabIndex']).toBe(-1)
     })
 
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
