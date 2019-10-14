@@ -22,7 +22,7 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
         desc={desc}
         titleId={titleId}
         descId={descId}
-        aria-hidden={!!ariaLabelledBy || true}
+        aria-hidden={!ariaLabelledBy}
         aria-labelledby={ariaLabelledBy}
         tabIndex={-1}
         focusable={false}
