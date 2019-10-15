@@ -12,7 +12,9 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
 
   if (!Component) {
     if (process.env.NODE_ENV !== 'production') {
-      console.trace(`icon ${iconName} does not exist`)
+      console.trace(
+        name ? `icon ${name} does not exist` : 'icon is missing name prop'
+      )
     }
     return null
   } else {
