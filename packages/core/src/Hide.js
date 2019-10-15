@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Box from './Box'
+import Text from './Text'
 
 const getMaxWidth = em => parseInt(em) - 0.01
 
@@ -31,9 +32,12 @@ const hidden = key => props =>
     : null
 
 const Hide = styled(Box)`
-  ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')} ${hidden(
-  'xl'
-)} ${hidden('print')};
+  ${hidden('xs')}
+  ${hidden('sm')}
+  ${hidden('md')}
+  ${hidden('lg')}
+  ${hidden('xl')}
+  ${hidden('print')};
 `
 
 Hide.propTypes = {
@@ -46,5 +50,14 @@ Hide.propTypes = {
 }
 
 Hide.displayName = 'Hide'
+Hide.text = styled(Text)`
+  display: inline;
+  ${hidden('xs')}
+  ${hidden('sm')}
+  ${hidden('md')}
+  ${hidden('lg')}
+  ${hidden('xl')}
+  ${hidden('print')};
+`
 
 export default Hide
