@@ -47,6 +47,13 @@ describe('Button', () => {
     })
   })
 
+  test('with title prop', () => {
+    const title = 'Hello world'
+    const { asFragment, getByTitle } = renderWithTheme(<Button title={title} />)
+    expect(asFragment()).toMatchSnapshot()
+    expect(getByTitle(title)).toHaveAttribute('aria-label', title)
+  })
+
   describe('deprecated props', () => {
     test('shims deprecated fullWidth prop', () => {
       const json = rendererCreateWithTheme(<Button fullWidth />).toJSON()

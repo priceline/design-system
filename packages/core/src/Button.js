@@ -70,6 +70,7 @@ const variations = {
 
 const Button = mapProps(({ fullWidth, ...props }) => ({
   width: fullWidth ? 1 : undefined,
+  'aria-label': props.title,
   ...props
 }))(styled.button`
   -webkit-font-smoothing: antialiased;
@@ -95,7 +96,8 @@ Button.propTypes = {
   fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  ariaLabel: PropTypes.string
 }
 
 Button.defaultProps = {
