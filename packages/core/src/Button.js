@@ -96,8 +96,7 @@ Button.propTypes = {
   fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
-  disabled: PropTypes.bool,
-  ariaLabel: PropTypes.string
+  disabled: PropTypes.bool
 }
 
 Button.defaultProps = {
