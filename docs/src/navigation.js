@@ -45,6 +45,7 @@ export default [
       { name: 'Select', path: '/Select' },
       { name: 'Stamp', path: '/Stamp' },
       { name: 'Text', path: '/Text' },
+      { name: 'TextArea', path: '/TextArea' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
       { name: 'Truncate', path: '/Truncate' }
