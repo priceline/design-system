@@ -6,6 +6,7 @@ import { createTheme } from './packages/core/src'
 import 'jest-styled-components'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
+import '@testing-library/jest-dom/extend-expect'
 
 global.renderWithTheme = Tree => {
   return render(<ThemeProvider theme={createTheme()} children={Tree} />)

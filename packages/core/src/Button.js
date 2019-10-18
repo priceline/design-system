@@ -70,6 +70,7 @@ const variations = {
 
 const Button = mapProps(({ fullWidth, ...props }) => ({
   width: fullWidth ? 1 : undefined,
+  'aria-label': props.title,
   ...props
 }))(styled.button`
   -webkit-font-smoothing: antialiased;
