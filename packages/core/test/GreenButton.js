@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { GreenButton, theme } from '../src'
 
 describe('GreenButton', () => {
@@ -19,5 +20,19 @@ describe('GreenButton', () => {
     expect(json).toHaveStyleRule('background-color', theme.colors.darkGreen, {
       modifier: ':hover'
     })
+  })
+
+  test('renders with nested style', () => {
+    const Component = styled.div`
+      ${GreenButton} {
+        color: red;
+      }
+    `
+    const wrapper = rendererCreateWithTheme(
+      <Component>
+        <GreenButton />
+      </Component>
+    ).toJSON()
+    expect(wrapper).toMatchSnapshot()
   })
 })

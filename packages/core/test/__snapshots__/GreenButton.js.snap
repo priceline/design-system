@@ -64,6 +64,46 @@ exports[`GreenButton renders 1`] = `
 />
 `;
 
+exports[`GreenButton renders with nested style 1`] = `
+.c2 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+.c2:hover {
+  background-color: #060;
+  color: #fff;
+}
+
+.c0 .c1 {
+  color: red;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1 c2"
+    color="secondary"
+  />
+</div>
+`;
+
 exports[`GreenButton without disabled prop sets 1`] = `
 .c0 {
   -webkit-font-smoothing: antialiased;
