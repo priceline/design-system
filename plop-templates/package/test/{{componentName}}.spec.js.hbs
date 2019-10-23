@@ -1,0 +1,12 @@
+import React from 'react'
+import { fireEvent } from '@testing-library/react'
+
+import {{componentName}} from '../src'
+
+describe('{{componentName}}', () => {
+  it('should render correctly', () => {
+    const { asFragment } = renderWithTheme(<{{componentName}} />)
+
+    expect(asFragment()).toMatchSnapshot()
+  })
+})

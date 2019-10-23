@@ -1,0 +1,26 @@
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import {
+  space,
+  themeGet
+} from 'styled-system'
+import {
+  mapProps,
+  applyVariations,
+  getPaletteColor
+} from './utils'
+
+const {{componentName}} = mapProps(({ align, ...props }) => ({
+  ...props
+}))(styled.{{htmlTag}}`
+  color: ${getPaletteColor('base')};
+
+  ${applyVariations('{{componentName}}')}
+`)
+
+{{componentName}}.displayName = '{{componentName}}'
+
+{{componentName}}.propTypes = {
+}
+
+export default {{componentName}}
