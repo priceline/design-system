@@ -12,7 +12,7 @@ const PopoverArrow = ({
 }) => (
   <Arrow
     className={className}
-    innerRef={arrowProps.ref}
+    ref={arrowProps.ref}
     style={arrowProps.style}
     data-placement={placement}
     theme={theme}

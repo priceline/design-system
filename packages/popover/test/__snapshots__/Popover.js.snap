@@ -132,8 +132,9 @@ exports[`Popover UI Positioning Bottom 1`] = `
   aria-describedby="dialog-description-1"
   aria-label="Top PopOver"
   class="c0"
+  data-placement="bottom"
   role="dialog"
-  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
   width="400"
 >
   <section
@@ -160,7 +161,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   <span
     aria-hidden="true"
     class="c2"
-    data-placement="top"
+    data-placement="bottom"
   />
 </div>
 `;
@@ -254,8 +255,9 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   aria-describedby="dialog-description-1"
   aria-label="Top PopOver"
   class="c0"
+  data-placement="bottom-end"
   role="dialog"
-  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
   width="400"
 >
   <section
@@ -282,7 +284,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   <span
     aria-hidden="true"
     class="c2"
-    data-placement="top"
+    data-placement="bottom-end"
   />
 </div>
 `;
@@ -376,8 +378,9 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   aria-describedby="dialog-description-1"
   aria-label="Top PopOver"
   class="c0"
+  data-placement="bottom-start"
   role="dialog"
-  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
   width="400"
 >
   <section
@@ -404,7 +407,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   <span
     aria-hidden="true"
     class="c2"
-    data-placement="top"
+    data-placement="bottom-start"
   />
 </div>
 `;
