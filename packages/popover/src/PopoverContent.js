@@ -68,8 +68,10 @@ class PopoverContent extends Component {
         >
           {({ placement, ref, style, arrowProps }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
+            // Styled-Components v4 uses regular refs, keep innerRef for v3 peer dependency
             <PopperGuide
               className={this.props.className}
+              innerRef={ref}
               ref={ref}
               style={style}
               data-placement={placement}
@@ -79,6 +81,7 @@ class PopoverContent extends Component {
               aria-describedby={`dialog-description-${this.props.idx}`}
             >
               <ContentContainer
+                innerRef={this.props.contentRef}
                 ref={this.props.contentRef}
                 {...styleProps}
                 tabIndex="-1"
