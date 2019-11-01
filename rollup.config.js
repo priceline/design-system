@@ -7,9 +7,6 @@ const fileSize = require('rollup-plugin-filesize')
 const peerExternal = require('rollup-plugin-peer-deps-external')
 const { terser } = require('rollup-plugin-terser')
 
-const isProd = process.env.NODE_ENV === 'production'
-console.log({ isProd })
-
 const plugins = [
   babel({
     exclude: 'node_modules/**'
@@ -24,12 +21,9 @@ const plugins = [
   }),
   json(),
   resolve(),
-  fileSize()
+  fileSize(),
+  terser()
 ]
-
-if (isProd) {
-  plugins.push(terser())
-}
 
 module.exports = {
   input: 'src/index.js',

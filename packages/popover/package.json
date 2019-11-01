@@ -5,9 +5,9 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "prepare": "NODE_ENV='production' npx rollup -c rollup.config.js",
+    "prepare": "npx rollup -c rollup.config.js",
     "clean": "rm -rf node_modules dist",
-    "build:audit": "NODE_ENV='production' npx rollup -c rollup.config.audit.js",
+    "build:audit": "npx rollup -c rollup.config.audit.js",
     "test": "jest"
   },
   "author": "Priceline",

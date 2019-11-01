@@ -1,11 +1,11 @@
 {
   "name": "pcln-design-system",
-  "version": "2.6.2",
+  "version": "2.7.0-1",
   "description": "Priceline Design System",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "prepare": "NODE_ENV=production npx rollup --config",
+    "prepare": "npx rollup --config",
     "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
