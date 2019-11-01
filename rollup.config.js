@@ -4,6 +4,33 @@ const commonjs = require('rollup-plugin-commonjs')
 const json = require('rollup-plugin-json')
 const fileSize = require('rollup-plugin-filesize')
 
+const peerExternal = require('rollup-plugin-peer-deps-external')
+const { terser } = require('rollup-plugin-terser')
+
+const isProd = process.env.NODE_ENV === 'production'
+console.log({ isProd })
+
+const plugins = [
+  babel({
+    exclude: 'node_modules/**'
+  }),
+  peerExternal(),
+  commonjs({
+    namedExports: {
+      'node_modules/deepmerge/index.js': ['deepmerge'],
+      'node_modules/classnames/index.js': ['classNames'],
+      'node_modules/shallowequal/index.js': ['shallowEqual']
+    }
+  }),
+  json(),
+  resolve(),
+  fileSize()
+]
+
+if (isProd) {
+  plugins.push(terser())
+}
+
 module.exports = {
   input: 'src/index.js',
   output: [
@@ -16,21 +43,7 @@ module.exports = {
       format: 'esm'
     }
   ],
-  plugins: [
-    babel({
-      exclude: 'node_modules/**'
-    }),
-    commonjs({
-      namedExports: {
-        'node_modules/deepmerge/index.js': ['deepmerge'],
-        'node_modules/classnames/index.js': ['classNames'],
-        'node_modules/shallowequal/index.js': ['shallowEqual']
-      }
-    }),
-    json(),
-    resolve(),
-    fileSize()
-  ],
+  plugins,
   external: [
     'styled-components',
     'react',

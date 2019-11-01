@@ -1,0 +1,378 @@
+{
+    "bundleSize": 126165,
+    "bundleOrigSize": 164080,
+    "bundleReduction": 23.11,
+    "modules": [
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/popper.js/dist/esm/popper.js",
+            "size": 88430,
+            "origSize": 88512,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js"
+            ],
+            "percent": 70.09,
+            "reduction": 0.09
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/create-react-context/lib/implementation.js",
+            "size": 6917,
+            "origSize": 6794,
+            "renderedExports": [],
+            "removedExports": [],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/create-react-context/lib/implementation.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/create-react-context/lib/index.js"
+            ],
+            "percent": 5.48,
+            "reduction": 0
+        },
+        {
+            "id": "/src/PopoverContent.js",
+            "size": 6430,
+            "origSize": 5043,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/src/Popover.js"
+            ],
+            "percent": 5.1,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+            "size": 6115,
+            "origSize": 6775,
+            "renderedExports": [
+                "InnerPopper",
+                "default"
+            ],
+            "removedExports": [
+                "placements"
+            ],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/index.js"
+            ],
+            "percent": 4.85,
+            "reduction": 9.74
+        },
+        {
+            "id": "\u0000rollupPluginBabelHelpers.js",
+            "size": 4124,
+            "origSize": 42833,
+            "renderedExports": [
+                "typeof",
+                "classCallCheck",
+                "createClass",
+                "defineProperty",
+                "extends",
+                "objectSpread2",
+                "inherits",
+                "getPrototypeOf",
+                "setPrototypeOf",
+                "assertThisInitialized",
+                "possibleConstructorReturn",
+                "taggedTemplateLiteral"
+            ],
+            "removedExports": [
+                "jsx",
+                "asyncIterator",
+                "AwaitValue",
+                "AsyncGenerator",
+                "wrapAsyncGenerator",
+                "awaitAsyncGenerator",
+                "asyncGeneratorDelegate",
+                "asyncToGenerator",
+                "defineEnumerableProperties",
+                "defaults",
+                "objectSpread",
+                "inheritsLoose",
+                "construct",
+                "isNativeFunction",
+                "wrapNativeSuper",
+                "instanceof",
+                "interopRequireDefault",
+                "interopRequireWildcard",
+                "newArrowCheck",
+                "objectDestructuringEmpty",
+                "objectWithoutPropertiesLoose",
+                "objectWithoutProperties",
+                "superPropBase",
+                "get",
+                "set",
+                "taggedTemplateLiteralLoose",
+                "readOnlyError",
+                "classNameTDZError",
+                "temporalUndefined",
+                "tdz",
+                "temporalRef",
+                "slicedToArray",
+                "slicedToArrayLoose",
+                "toArray",
+                "toConsumableArray",
+                "arrayWithoutHoles",
+                "arrayWithHoles",
+                "iterableToArray",
+                "iterableToArrayLimit",
+                "iterableToArrayLimitLoose",
+                "nonIterableSpread",
+                "nonIterableRest",
+                "skipFirstGeneratorNext",
+                "toPrimitive",
+                "toPropertyKey",
+                "initializerWarningHelper",
+                "initializerDefineProperty",
+                "applyDecoratedDescriptor",
+                "classPrivateFieldLooseKey",
+                "classPrivateFieldLooseBase",
+                "classPrivateFieldGet",
+                "classPrivateFieldSet",
+                "classPrivateFieldDestructureSet",
+                "classStaticPrivateFieldSpecGet",
+                "classStaticPrivateFieldSpecSet",
+                "classStaticPrivateMethodGet",
+                "classStaticPrivateMethodSet",
+                "decorate",
+                "classPrivateMethodGet",
+                "classPrivateMethodSet",
+                "wrapRegExp"
+            ],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/create-react-context/lib/implementation.js",
+                "/src/Overlay.js",
+                "/src/Arrow.js",
+                "/src/PopoverContent.js",
+                "/src/Popover.js"
+            ],
+            "percent": 3.27,
+            "reduction": 90.37
+        },
+        {
+            "id": "/src/Popover.js",
+            "size": 3926,
+            "origSize": 3034,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/src/index.js"
+            ],
+            "percent": 3.11,
+            "reduction": 0
+        },
+        {
+            "id": "/src/Arrow.js",
+            "size": 3021,
+            "origSize": 2531,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/src/PopoverContent.js"
+            ],
+            "percent": 2.39,
+            "reduction": 0
+        },
+        {
+            "id": "/src/Overlay.js",
+            "size": 1439,
+            "origSize": 1108,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/src/PopoverContent.js"
+            ],
+            "percent": 1.14,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js",
+            "size": 1312,
+            "origSize": 1779,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/index.js"
+            ],
+            "percent": 1.04,
+            "reduction": 26.25
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Manager.js",
+            "size": 1098,
+            "origSize": 1506,
+            "renderedExports": [
+                "ManagerContext",
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/index.js"
+            ],
+            "percent": 0.87,
+            "reduction": 27.09
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/utils.js",
+            "size": 641,
+            "origSize": 655,
+            "renderedExports": [
+                "unwrapArray",
+                "safeInvoke"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js"
+            ],
+            "percent": 0.51,
+            "reduction": 2.14
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/@babel/runtime/helpers/extends.js",
+            "size": 489,
+            "origSize": 427,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Manager.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js"
+            ],
+            "percent": 0.39,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/create-react-context/lib/index.js",
+            "size": 486,
+            "origSize": 449,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Manager.js"
+            ],
+            "percent": 0.39,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
+            "size": 402,
+            "origSize": 384,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js"
+            ],
+            "percent": 0.32,
+            "reduction": 0
+        },
+        {
+            "id": "/src/helpers/defaultModifiers.js",
+            "size": 323,
+            "origSize": 360,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/src/PopoverContent.js"
+            ],
+            "percent": 0.26,
+            "reduction": 10.28
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/@babel/runtime/helpers/defineProperty.js",
+            "size": 297,
+            "origSize": 289,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Manager.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js"
+            ],
+            "percent": 0.24,
+            "reduction": 0
+        },
+        {
+            "id": "\u0000commonjsHelpers.js",
+            "size": 255,
+            "origSize": 686,
+            "renderedExports": [
+                "unwrapExports",
+                "createCommonjsModule"
+            ],
+            "removedExports": [
+                "commonjsGlobal",
+                "commonjsRequire",
+                "getCjsExportFromNamespace"
+            ],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/@babel/runtime/helpers/extends.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/create-react-context/lib/index.js"
+            ],
+            "percent": 0.2,
+            "reduction": 62.83
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+            "size": 234,
+            "origSize": 219,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Manager.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js"
+            ],
+            "percent": 0.19,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/@babel/runtime/helpers/inheritsLoose.js",
+            "size": 226,
+            "origSize": 223,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Manager.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Popper.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/react-popper/lib/esm/Reference.js"
+            ],
+            "percent": 0.18,
+            "reduction": 0
+        }
+    ],
+    "moduleCount": 23
+}
