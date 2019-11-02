@@ -1,8 +1,9 @@
 {
   "name": "pcln-icons",
-  "version": "3.0.0-0",
+  "version": "3.0.0-1",
   "description": "Priceline React icons based on Material Design Icons",
-  "main": "lib/Icon.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npx rollup -c -i components/index.js",
     "clean": "rm -rf node_modules components lib",
