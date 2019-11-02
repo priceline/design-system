@@ -1,10 +1,11 @@
 {
   "name": "pcln-icons",
-  "version": "2.2.2",
+  "version": "3.0.0-0",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "lib/Icon.js",
   "scripts": {
-    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
+    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && rollup -c",
+    "r": "npx rollup -c -i components/index.js",
     "clean": "rm -rf node_modules components lib",
     "build:svg": "svgr svg -d components",
     "build:index": "node ./create-index.js",
@@ -32,12 +33,8 @@
     "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
   },
   "jest": {
-    "setupFilesAfterEnv": [
-      "../../test-setup.js"
-    ],
-    "testMatch": [
-      "<rootDir>/test/**/*.js"
-    ]
+    "setupFilesAfterEnv": ["../../test-setup.js"],
+    "testMatch": ["<rootDir>/test/**/*.js"]
   },
   "engines": {
     "node": ">=8.0.0 <9.0.0 || >=10.0.0",
