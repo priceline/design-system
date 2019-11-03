@@ -1,10 +1,21 @@
 import React from 'react'
 import upperFirst from 'lodash.upperfirst'
 import PropTypes from 'prop-types'
-import * as icons from './index'
+// import * as icons from './index'
+
+const importIconDynamic = iconName => {
+  import(`./components/${iconName}.js`)
+    .then(iconComponent => {
+      console.log(iconComponent)
+    })
+    .catch(err => {
+      console.error(`Icon Component import failed for ${iconName}`, err)
+    })
+}
 
 const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
-  const Component = icons[name] || icons[upperFirst(name)]
+  // const Component = icons[name] || icons[upperFirst(name)]
+  const Component = importIconDynamic(name)
 
   let ariaLabelledBy = titleId ? titleId : ''
   ariaLabelledBy += desc && descId ? ` ${descId}` : ''
