@@ -10,9 +10,8 @@ const icons = fs
 const template = icons => {
   icons.map(name => `export { default as ${name} } from './${name}'`)
   const lines = [`export { default as Icon } from './Icon'`, ...icons]
-  const output = lines.join('\n')
 
-  return output
+  return lines.join('\n')
 }
 
 const content = template(icons)
