@@ -1,5 +1,5 @@
 import React from 'react'
-import upperFirst from 'lodash.upperfirst'
+import upperFirst from 'lodash/upperFirst'
 import PropTypes from 'prop-types'
 // import * as icons from './index'
 
