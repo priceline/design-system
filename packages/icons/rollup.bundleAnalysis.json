@@ -1,0 +1,2931 @@
+{
+    "bundleSize": 211705,
+    "bundleOrigSize": 201801,
+    "bundleReduction": 0,
+    "modules": [
+        {
+            "id": "\u0000rollupPluginBabelHelpers.js",
+            "size": 3080,
+            "origSize": 42833,
+            "renderedExports": [
+                "typeof",
+                "defineProperty",
+                "extends",
+                "objectSpread2",
+                "objectWithoutPropertiesLoose",
+                "objectWithoutProperties",
+                "taggedTemplateLiteral"
+            ],
+            "removedExports": [
+                "jsx",
+                "asyncIterator",
+                "AwaitValue",
+                "AsyncGenerator",
+                "wrapAsyncGenerator",
+                "awaitAsyncGenerator",
+                "asyncGeneratorDelegate",
+                "asyncToGenerator",
+                "classCallCheck",
+                "createClass",
+                "defineEnumerableProperties",
+                "defaults",
+                "objectSpread",
+                "inherits",
+                "inheritsLoose",
+                "getPrototypeOf",
+                "setPrototypeOf",
+                "construct",
+                "isNativeFunction",
+                "wrapNativeSuper",
+                "instanceof",
+                "interopRequireDefault",
+                "interopRequireWildcard",
+                "newArrowCheck",
+                "objectDestructuringEmpty",
+                "assertThisInitialized",
+                "possibleConstructorReturn",
+                "superPropBase",
+                "get",
+                "set",
+                "taggedTemplateLiteralLoose",
+                "readOnlyError",
+                "classNameTDZError",
+                "temporalUndefined",
+                "tdz",
+                "temporalRef",
+                "slicedToArray",
+                "slicedToArrayLoose",
+                "toArray",
+                "toConsumableArray",
+                "arrayWithoutHoles",
+                "arrayWithHoles",
+                "iterableToArray",
+                "iterableToArrayLimit",
+                "iterableToArrayLimitLoose",
+                "nonIterableSpread",
+                "nonIterableRest",
+                "skipFirstGeneratorNext",
+                "toPrimitive",
+                "toPropertyKey",
+                "initializerWarningHelper",
+                "initializerDefineProperty",
+                "applyDecoratedDescriptor",
+                "classPrivateFieldLooseKey",
+                "classPrivateFieldLooseBase",
+                "classPrivateFieldGet",
+                "classPrivateFieldSet",
+                "classPrivateFieldDestructureSet",
+                "classStaticPrivateFieldSpecGet",
+                "classStaticPrivateFieldSpecSet",
+                "classStaticPrivateMethodGet",
+                "classStaticPrivateMethodSet",
+                "decorate",
+                "classPrivateMethodGet",
+                "classPrivateMethodSet",
+                "wrapRegExp"
+            ],
+            "dependents": [
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_root.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/isSymbol.js",
+                "/components/Icon.js",
+                "/components/Svg.js",
+                "/components/Ac.js",
+                "/components/Accessible.js",
+                "/components/Airplane.js",
+                "/components/Arrival.js",
+                "/components/ArrowDown.js",
+                "/components/ArrowLeft.js",
+                "/components/ArrowRight.js",
+                "/components/ArrowUp.js",
+                "/components/Attention.js",
+                "/components/Automatic.js",
+                "/components/Bag.js",
+                "/components/Beach.js",
+                "/components/Bed.js",
+                "/components/BoxChecked.js",
+                "/components/BoxEmpty.js",
+                "/components/BoxMinus.js",
+                "/components/BoxPlus.js",
+                "/components/Breakfast.js",
+                "/components/Build.js",
+                "/components/Business.js",
+                "/components/Cake.js",
+                "/components/Calendar.js",
+                "/components/CarCircle.js",
+                "/components/CarDoor.js",
+                "/components/Carriage.js",
+                "/components/Cars.js",
+                "/components/Casino.js",
+                "/components/Chart.js",
+                "/components/Chat.js",
+                "/components/Check.js",
+                "/components/ChevronDown.js",
+                "/components/ChevronLeft.js",
+                "/components/ChevronRight.js",
+                "/components/ChevronUp.js",
+                "/components/CityView.js",
+                "/components/Clock.js",
+                "/components/Close.js",
+                "/components/Cloud.js",
+                "/components/CollisionCoverage.js",
+                "/components/Coupon.js",
+                "/components/CreditCard.js",
+                "/components/Cruises.js",
+                "/components/Departure.js",
+                "/components/Devices.js",
+                "/components/Directions.js",
+                "/components/Discount.js",
+                "/components/Document.js",
+                "/components/Dollar.js",
+                "/components/DollarCircle.js",
+                "/components/Dot.js",
+                "/components/DoubleOccupancy.js",
+                "/components/EarlyBird.js",
+                "/components/Edit.js",
+                "/components/Electric.js",
+                "/components/Email.js",
+                "/components/Emoticon.js",
+                "/components/Event.js",
+                "/components/EventAvailable.js",
+                "/components/EventBusy.js",
+                "/components/Facebook.js",
+                "/components/FavoriteHotel.js",
+                "/components/Filter.js",
+                "/components/Fitness.js",
+                "/components/Flame.js",
+                "/components/FlightCircle.js",
+                "/components/FlightCoverage.js",
+                "/components/Flights.js",
+                "/components/FreeCancellation.js",
+                "/components/Fridge.js",
+                "/components/Gallery.js",
+                "/components/Gas.js",
+                "/components/Globe.js",
+                "/components/Golf.js",
+                "/components/Gps.js",
+                "/components/Graph.js",
+                "/components/Grid.js",
+                "/components/GuestScore.js",
+                "/components/Guests.js",
+                "/components/Help.js",
+                "/components/History.js",
+                "/components/Home.js",
+                "/components/HotelCircle.js",
+                "/components/Hotels.js",
+                "/components/House.js",
+                "/components/Hybrid.js",
+                "/components/Inclusive.js",
+                "/components/Information.js",
+                "/components/InformationOutline.js",
+                "/components/Instagram.js",
+                "/components/Key.js",
+                "/components/Kitchenette.js",
+                "/components/Laptop.js",
+                "/components/LateNight.js",
+                "/components/List.js",
+                "/components/LocalBar.js",
+                "/components/Lock.js",
+                "/components/Loyalty.js",
+                "/components/Luggage.js",
+                "/components/Manual.js",
+                "/components/Map.js",
+                "/components/Menu.js",
+                "/components/Microwave.js",
+                "/components/Mileage.js",
+                "/components/Minus.js",
+                "/components/MultiAirline.js",
+                "/components/MultiOccupancy.js",
+                "/components/Notification.js",
+                "/components/Overnight.js",
+                "/components/Parking.js",
+                "/components/Pets.js",
+                "/components/Phone.js",
+                "/components/Picture.js",
+                "/components/Pin.js",
+                "/components/Plus.js",
+                "/components/Pool.js",
+                "/components/Printer.js",
+                "/components/Quilt.js",
+                "/components/RadioChecked.js",
+                "/components/RadioEmpty.js",
+                "/components/RadioMinus.js",
+                "/components/RadioPlus.js",
+                "/components/Refresh.js",
+                "/components/Restaurant.js",
+                "/components/Ribbon.js",
+                "/components/RoomSize.js",
+                "/components/Rowing.js",
+                "/components/Search.js",
+                "/components/SearchRecent.js",
+                "/components/Seat.js",
+                "/components/SeatBusiness.js",
+                "/components/SeatEconomy.js",
+                "/components/Security.js",
+                "/components/Shuttle.js",
+                "/components/SingleOccupancy.js",
+                "/components/Smoking.js",
+                "/components/Spa.js",
+                "/components/SplitTicket.js",
+                "/components/Star.js",
+                "/components/StarHalf.js",
+                "/components/SteeringWheel.js",
+                "/components/Success.js",
+                "/components/SuccessOutline.js",
+                "/components/Swap.js",
+                "/components/ThumbsDown.js",
+                "/components/ThumbsUp.js",
+                "/components/Timer.js",
+                "/components/TrendingUp.js",
+                "/components/Trophy.js",
+                "/components/Tune.js",
+                "/components/Twitter.js",
+                "/components/Unlock.js",
+                "/components/User.js",
+                "/components/Verified.js",
+                "/components/Warning.js",
+                "/components/WarningOutline.js",
+                "/components/Web.js",
+                "/components/Whirlpool.js",
+                "/components/Wifi.js",
+                "/components/Youtube.js",
+                "/components/ZoomOut.js"
+            ],
+            "percent": 1.45,
+            "reduction": 92.81
+        },
+        {
+            "id": "/components/Pool.js",
+            "size": 2073,
+            "origSize": 1696,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.98,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Instagram.js",
+            "size": 2034,
+            "origSize": 1662,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.96,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Svg.js",
+            "size": 2031,
+            "origSize": 1561,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/Ac.js",
+                "/components/Accessible.js",
+                "/components/Airplane.js",
+                "/components/Arrival.js",
+                "/components/ArrowDown.js",
+                "/components/ArrowLeft.js",
+                "/components/ArrowRight.js",
+                "/components/ArrowUp.js",
+                "/components/Attention.js",
+                "/components/Automatic.js",
+                "/components/Bag.js",
+                "/components/Beach.js",
+                "/components/Bed.js",
+                "/components/BoxChecked.js",
+                "/components/BoxEmpty.js",
+                "/components/BoxMinus.js",
+                "/components/BoxPlus.js",
+                "/components/Breakfast.js",
+                "/components/Build.js",
+                "/components/Business.js",
+                "/components/Cake.js",
+                "/components/Calendar.js",
+                "/components/CarCircle.js",
+                "/components/CarDoor.js",
+                "/components/Carriage.js",
+                "/components/Cars.js",
+                "/components/Casino.js",
+                "/components/Chart.js",
+                "/components/Chat.js",
+                "/components/Check.js",
+                "/components/ChevronDown.js",
+                "/components/ChevronLeft.js",
+                "/components/ChevronRight.js",
+                "/components/ChevronUp.js",
+                "/components/CityView.js",
+                "/components/Clock.js",
+                "/components/Close.js",
+                "/components/Cloud.js",
+                "/components/CollisionCoverage.js",
+                "/components/Coupon.js",
+                "/components/CreditCard.js",
+                "/components/Cruises.js",
+                "/components/Departure.js",
+                "/components/Devices.js",
+                "/components/Directions.js",
+                "/components/Discount.js",
+                "/components/Document.js",
+                "/components/Dollar.js",
+                "/components/DollarCircle.js",
+                "/components/Dot.js",
+                "/components/DoubleOccupancy.js",
+                "/components/EarlyBird.js",
+                "/components/Edit.js",
+                "/components/Electric.js",
+                "/components/Email.js",
+                "/components/Emoticon.js",
+                "/components/Event.js",
+                "/components/EventAvailable.js",
+                "/components/EventBusy.js",
+                "/components/Facebook.js",
+                "/components/FavoriteHotel.js",
+                "/components/Filter.js",
+                "/components/Fitness.js",
+                "/components/Flame.js",
+                "/components/FlightCircle.js",
+                "/components/FlightCoverage.js",
+                "/components/Flights.js",
+                "/components/FreeCancellation.js",
+                "/components/Fridge.js",
+                "/components/Gallery.js",
+                "/components/Gas.js",
+                "/components/Globe.js",
+                "/components/Golf.js",
+                "/components/Gps.js",
+                "/components/Graph.js",
+                "/components/Grid.js",
+                "/components/GuestScore.js",
+                "/components/Guests.js",
+                "/components/Help.js",
+                "/components/History.js",
+                "/components/Home.js",
+                "/components/HotelCircle.js",
+                "/components/Hotels.js",
+                "/components/House.js",
+                "/components/Hybrid.js",
+                "/components/Inclusive.js",
+                "/components/Information.js",
+                "/components/InformationOutline.js",
+                "/components/Instagram.js",
+                "/components/Key.js",
+                "/components/Kitchenette.js",
+                "/components/Laptop.js",
+                "/components/LateNight.js",
+                "/components/List.js",
+                "/components/LocalBar.js",
+                "/components/Lock.js",
+                "/components/Loyalty.js",
+                "/components/Luggage.js",
+                "/components/Manual.js",
+                "/components/Map.js",
+                "/components/Menu.js",
+                "/components/Microwave.js",
+                "/components/Mileage.js",
+                "/components/Minus.js",
+                "/components/MultiAirline.js",
+                "/components/MultiOccupancy.js",
+                "/components/Notification.js",
+                "/components/Overnight.js",
+                "/components/Parking.js",
+                "/components/Pets.js",
+                "/components/Phone.js",
+                "/components/Picture.js",
+                "/components/Pin.js",
+                "/components/Plus.js",
+                "/components/Pool.js",
+                "/components/Printer.js",
+                "/components/Quilt.js",
+                "/components/RadioChecked.js",
+                "/components/RadioEmpty.js",
+                "/components/RadioMinus.js",
+                "/components/RadioPlus.js",
+                "/components/Refresh.js",
+                "/components/Restaurant.js",
+                "/components/Ribbon.js",
+                "/components/RoomSize.js",
+                "/components/Rowing.js",
+                "/components/Search.js",
+                "/components/SearchRecent.js",
+                "/components/Seat.js",
+                "/components/SeatBusiness.js",
+                "/components/SeatEconomy.js",
+                "/components/Security.js",
+                "/components/Shuttle.js",
+                "/components/SingleOccupancy.js",
+                "/components/Smoking.js",
+                "/components/Spa.js",
+                "/components/SplitTicket.js",
+                "/components/Star.js",
+                "/components/StarHalf.js",
+                "/components/SteeringWheel.js",
+                "/components/Success.js",
+                "/components/SuccessOutline.js",
+                "/components/Swap.js",
+                "/components/ThumbsDown.js",
+                "/components/ThumbsUp.js",
+                "/components/Timer.js",
+                "/components/TrendingUp.js",
+                "/components/Trophy.js",
+                "/components/Tune.js",
+                "/components/Twitter.js",
+                "/components/Unlock.js",
+                "/components/User.js",
+                "/components/Verified.js",
+                "/components/Warning.js",
+                "/components/WarningOutline.js",
+                "/components/Web.js",
+                "/components/Whirlpool.js",
+                "/components/Wifi.js",
+                "/components/Youtube.js",
+                "/components/ZoomOut.js"
+            ],
+            "percent": 0.96,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Airplane.js",
+            "size": 1974,
+            "origSize": 1606,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.93,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Ribbon.js",
+            "size": 1905,
+            "origSize": 1530,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.9,
+            "reduction": 0
+        },
+        {
+            "id": "/components/MultiOccupancy.js",
+            "size": 1875,
+            "origSize": 1508,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.89,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Icon.js",
+            "size": 1784,
+            "origSize": 1700,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.84,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_unicodeToArray.js",
+            "size": 1622,
+            "origSize": 1588,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_unicodeToArray.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_stringToArray.js"
+            ],
+            "percent": 0.77,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Globe.js",
+            "size": 1609,
+            "origSize": 1233,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.76,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Pets.js",
+            "size": 1559,
+            "origSize": 1182,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.74,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Whirlpool.js",
+            "size": 1518,
+            "origSize": 1146,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.72,
+            "reduction": 0
+        },
+        {
+            "id": "/components/DoubleOccupancy.js",
+            "size": 1471,
+            "origSize": 1110,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.69,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Cruises.js",
+            "size": 1446,
+            "origSize": 1077,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.68,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Casino.js",
+            "size": 1423,
+            "origSize": 1053,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.67,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Cake.js",
+            "size": 1418,
+            "origSize": 1046,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.67,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Discount.js",
+            "size": 1417,
+            "origSize": 1049,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.67,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Spa.js",
+            "size": 1405,
+            "origSize": 1027,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.66,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Notification.js",
+            "size": 1398,
+            "origSize": 1029,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.66,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Shuttle.js",
+            "size": 1384,
+            "origSize": 1010,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/CollisionCoverage.js",
+            "size": 1379,
+            "origSize": 1020,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Mileage.js",
+            "size": 1376,
+            "origSize": 1002,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SeatBusiness.js",
+            "size": 1371,
+            "origSize": 1002,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/DollarCircle.js",
+            "size": 1369,
+            "origSize": 1005,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Loyalty.js",
+            "size": 1367,
+            "origSize": 993,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Smoking.js",
+            "size": 1366,
+            "origSize": 992,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Carriage.js",
+            "size": 1366,
+            "origSize": 998,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.65,
+            "reduction": 0
+        },
+        {
+            "id": "/components/CarCircle.js",
+            "size": 1360,
+            "origSize": 993,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.64,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Accessible.js",
+            "size": 1357,
+            "origSize": 991,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.64,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Twitter.js",
+            "size": 1349,
+            "origSize": 975,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.64,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Kitchenette.js",
+            "size": 1344,
+            "origSize": 974,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.63,
+            "reduction": 0
+        },
+        {
+            "id": "/components/MultiAirline.js",
+            "size": 1335,
+            "origSize": 966,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.63,
+            "reduction": 0
+        },
+        {
+            "id": "/components/FavoriteHotel.js",
+            "size": 1328,
+            "origSize": 965,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.63,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SeatEconomy.js",
+            "size": 1318,
+            "origSize": 948,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.62,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Gas.js",
+            "size": 1312,
+            "origSize": 934,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.62,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Emoticon.js",
+            "size": 1311,
+            "origSize": 943,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.62,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Gps.js",
+            "size": 1299,
+            "origSize": 921,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.61,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Cars.js",
+            "size": 1293,
+            "origSize": 921,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.61,
+            "reduction": 0
+        },
+        {
+            "id": "/components/House.js",
+            "size": 1292,
+            "origSize": 916,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.61,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Rowing.js",
+            "size": 1290,
+            "origSize": 915,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.61,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Dollar.js",
+            "size": 1289,
+            "origSize": 919,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.61,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Microwave.js",
+            "size": 1282,
+            "origSize": 910,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.61,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SplitTicket.js",
+            "size": 1278,
+            "origSize": 908,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.6,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Trophy.js",
+            "size": 1274,
+            "origSize": 899,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.6,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Cloud.js",
+            "size": 1273,
+            "origSize": 902,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.6,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Guests.js",
+            "size": 1269,
+            "origSize": 894,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.6,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SteeringWheel.js",
+            "size": 1267,
+            "origSize": 899,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.6,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Flame.js",
+            "size": 1258,
+            "origSize": 884,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.59,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SingleOccupancy.js",
+            "size": 1255,
+            "origSize": 889,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.59,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Youtube.js",
+            "size": 1254,
+            "origSize": 880,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.59,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SearchRecent.js",
+            "size": 1252,
+            "origSize": 883,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.59,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Help.js",
+            "size": 1238,
+            "origSize": 861,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/HotelCircle.js",
+            "size": 1237,
+            "origSize": 867,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Facebook.js",
+            "size": 1229,
+            "origSize": 861,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Ac.js",
+            "size": 1228,
+            "origSize": 858,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Fitness.js",
+            "size": 1227,
+            "origSize": 858,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/FreeCancellation.js",
+            "size": 1226,
+            "origSize": 861,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/EventBusy.js",
+            "size": 1221,
+            "origSize": 854,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.58,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Inclusive.js",
+            "size": 1217,
+            "origSize": 845,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Lock.js",
+            "size": 1216,
+            "origSize": 839,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Overnight.js",
+            "size": 1215,
+            "origSize": 843,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Beach.js",
+            "size": 1215,
+            "origSize": 844,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Automatic.js",
+            "size": 1210,
+            "origSize": 843,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/History.js",
+            "size": 1209,
+            "origSize": 835,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/FlightCoverage.js",
+            "size": 1209,
+            "origSize": 842,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Hotels.js",
+            "size": 1207,
+            "origSize": 832,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Unlock.js",
+            "size": 1207,
+            "origSize": 832,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/FlightCircle.js",
+            "size": 1207,
+            "origSize": 838,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Timer.js",
+            "size": 1205,
+            "origSize": 829,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Coupon.js",
+            "size": 1204,
+            "origSize": 834,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ZoomOut.js",
+            "size": 1200,
+            "origSize": 826,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Phone.js",
+            "size": 1200,
+            "origSize": 824,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/SuccessOutline.js",
+            "size": 1200,
+            "origSize": 833,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ThumbsUp.js",
+            "size": 1198,
+            "origSize": 825,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ThumbsDown.js",
+            "size": 1198,
+            "origSize": 827,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.57,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Search.js",
+            "size": 1196,
+            "origSize": 821,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/LateNight.js",
+            "size": 1194,
+            "origSize": 822,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/EventAvailable.js",
+            "size": 1191,
+            "origSize": 829,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Key.js",
+            "size": 1190,
+            "origSize": 812,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/RadioChecked.js",
+            "size": 1190,
+            "origSize": 821,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/GuestScore.js",
+            "size": 1190,
+            "origSize": 819,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Manual.js",
+            "size": 1190,
+            "origSize": 815,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/BoxPlus.js",
+            "size": 1188,
+            "origSize": 819,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/InformationOutline.js",
+            "size": 1188,
+            "origSize": 825,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Wifi.js",
+            "size": 1187,
+            "origSize": 810,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Business.js",
+            "size": 1181,
+            "origSize": 813,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Build.js",
+            "size": 1180,
+            "origSize": 809,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/EarlyBird.js",
+            "size": 1179,
+            "origSize": 812,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Devices.js",
+            "size": 1179,
+            "origSize": 810,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/CityView.js",
+            "size": 1179,
+            "origSize": 811,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Bag.js",
+            "size": 1178,
+            "origSize": 805,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Refresh.js",
+            "size": 1175,
+            "origSize": 801,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.56,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Departure.js",
+            "size": 1174,
+            "origSize": 807,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/WarningOutline.js",
+            "size": 1173,
+            "origSize": 806,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/BoxMinus.js",
+            "size": 1173,
+            "origSize": 805,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Directions.js",
+            "size": 1166,
+            "origSize": 800,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/RadioPlus.js",
+            "size": 1163,
+            "origSize": 791,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Calendar.js",
+            "size": 1161,
+            "origSize": 793,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Golf.js",
+            "size": 1161,
+            "origSize": 784,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/BoxEmpty.js",
+            "size": 1158,
+            "origSize": 790,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Arrival.js",
+            "size": 1154,
+            "origSize": 785,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.55,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Laptop.js",
+            "size": 1151,
+            "origSize": 776,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Clock.js",
+            "size": 1151,
+            "origSize": 780,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Gallery.js",
+            "size": 1149,
+            "origSize": 775,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Hybrid.js",
+            "size": 1149,
+            "origSize": 774,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Map.js",
+            "size": 1148,
+            "origSize": 770,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/RoomSize.js",
+            "size": 1148,
+            "origSize": 775,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Luggage.js",
+            "size": 1147,
+            "origSize": 773,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/RadioMinus.js",
+            "size": 1147,
+            "origSize": 776,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Bed.js",
+            "size": 1146,
+            "origSize": 773,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Printer.js",
+            "size": 1145,
+            "origSize": 771,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/BoxChecked.js",
+            "size": 1142,
+            "origSize": 776,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Pin.js",
+            "size": 1140,
+            "origSize": 762,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Fridge.js",
+            "size": 1135,
+            "origSize": 760,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Verified.js",
+            "size": 1135,
+            "origSize": 762,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Grid.js",
+            "size": 1133,
+            "origSize": 756,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.54,
+            "reduction": 0
+        },
+        {
+            "id": "/components/RadioEmpty.js",
+            "size": 1132,
+            "origSize": 761,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/CarDoor.js",
+            "size": 1130,
+            "origSize": 761,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Restaurant.js",
+            "size": 1130,
+            "origSize": 759,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Security.js",
+            "size": 1129,
+            "origSize": 756,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Flights.js",
+            "size": 1128,
+            "origSize": 754,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Success.js",
+            "size": 1127,
+            "origSize": 753,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Picture.js",
+            "size": 1126,
+            "origSize": 752,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Event.js",
+            "size": 1125,
+            "origSize": 754,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Breakfast.js",
+            "size": 1122,
+            "origSize": 755,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Document.js",
+            "size": 1122,
+            "origSize": 754,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/CreditCard.js",
+            "size": 1120,
+            "origSize": 754,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Chart.js",
+            "size": 1119,
+            "origSize": 748,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Tune.js",
+            "size": 1119,
+            "origSize": 742,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Web.js",
+            "size": 1118,
+            "origSize": 740,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Information.js",
+            "size": 1112,
+            "origSize": 742,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.53,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Edit.js",
+            "size": 1106,
+            "origSize": 734,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Chat.js",
+            "size": 1103,
+            "origSize": 731,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Seat.js",
+            "size": 1101,
+            "origSize": 724,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Warning.js",
+            "size": 1100,
+            "origSize": 726,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/User.js",
+            "size": 1100,
+            "origSize": 723,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Email.js",
+            "size": 1100,
+            "origSize": 729,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Parking.js",
+            "size": 1098,
+            "origSize": 724,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Close.js",
+            "size": 1094,
+            "origSize": 723,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.52,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Quilt.js",
+            "size": 1088,
+            "origSize": 712,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.51,
+            "reduction": 0
+        },
+        {
+            "id": "/components/List.js",
+            "size": 1086,
+            "origSize": 709,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.51,
+            "reduction": 0
+        },
+        {
+            "id": "/components/TrendingUp.js",
+            "size": 1085,
+            "origSize": 714,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.51,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Star.js",
+            "size": 1081,
+            "origSize": 704,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.51,
+            "reduction": 0
+        },
+        {
+            "id": "/components/LocalBar.js",
+            "size": 1079,
+            "origSize": 706,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.51,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ArrowRight.js",
+            "size": 1068,
+            "origSize": 702,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ArrowDown.js",
+            "size": 1066,
+            "origSize": 699,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ChevronLeft.js",
+            "size": 1065,
+            "origSize": 700,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Attention.js",
+            "size": 1065,
+            "origSize": 698,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ArrowLeft.js",
+            "size": 1064,
+            "origSize": 697,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ChevronRight.js",
+            "size": 1062,
+            "origSize": 698,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/StarHalf.js",
+            "size": 1061,
+            "origSize": 688,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ChevronDown.js",
+            "size": 1060,
+            "origSize": 695,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Graph.js",
+            "size": 1060,
+            "origSize": 684,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ChevronUp.js",
+            "size": 1059,
+            "origSize": 692,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/ArrowUp.js",
+            "size": 1057,
+            "origSize": 688,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Check.js",
+            "size": 1054,
+            "origSize": 683,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Swap.js",
+            "size": 1052,
+            "origSize": 675,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Dot.js",
+            "size": 1050,
+            "origSize": 677,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.5,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Filter.js",
+            "size": 1047,
+            "origSize": 677,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.49,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Menu.js",
+            "size": 1045,
+            "origSize": 668,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.49,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Home.js",
+            "size": 1040,
+            "origSize": 663,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.49,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Plus.js",
+            "size": 1034,
+            "origSize": 657,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.49,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Electric.js",
+            "size": 1033,
+            "origSize": 665,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.49,
+            "reduction": 0
+        },
+        {
+            "id": "/components/Minus.js",
+            "size": 1019,
+            "origSize": 643,
+            "renderedExports": [
+                "default"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/index.js"
+            ],
+            "percent": 0.48,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseToString.js",
+            "size": 1017,
+            "origSize": 1154,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseToString.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/toString.js"
+            ],
+            "percent": 0.48,
+            "reduction": 11.87
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_hasUnicode.js",
+            "size": 948,
+            "origSize": 949,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_hasUnicode.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_stringToArray.js",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_createCaseFirst.js"
+            ],
+            "percent": 0.45,
+            "reduction": 0.11
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseSlice.js",
+            "size": 753,
+            "origSize": 756,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseSlice.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_castSlice.js"
+            ],
+            "percent": 0.36,
+            "reduction": 0.4
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/isSymbol.js",
+            "size": 678,
+            "origSize": 682,
+            "renderedExports": [],
+            "removedExports": [],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/isSymbol.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseToString.js"
+            ],
+            "percent": 0.32,
+            "reduction": 0.59
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_createCaseFirst.js",
+            "size": 612,
+            "origSize": 811,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_createCaseFirst.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/upperFirst.js"
+            ],
+            "percent": 0.29,
+            "reduction": 24.54
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_arrayMap.js",
+            "size": 555,
+            "origSize": 556,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_arrayMap.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseToString.js"
+            ],
+            "percent": 0.26,
+            "reduction": 0.18
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/toString.js",
+            "size": 534,
+            "origSize": 580,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/toString.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_createCaseFirst.js"
+            ],
+            "percent": 0.25,
+            "reduction": 7.93
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/isArray.js",
+            "size": 485,
+            "origSize": 488,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/isArray.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseToString.js"
+            ],
+            "percent": 0.23,
+            "reduction": 0.61
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_castSlice.js",
+            "size": 475,
+            "origSize": 517,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_castSlice.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_createCaseFirst.js"
+            ],
+            "percent": 0.22,
+            "reduction": 8.12
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/upperFirst.js",
+            "size": 419,
+            "origSize": 470,
+            "renderedExports": [
+                "default",
+                "__moduleExports"
+            ],
+            "removedExports": [],
+            "dependents": [
+                "/components/Icon.js"
+            ],
+            "percent": 0.2,
+            "reduction": 10.85
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_root.js",
+            "size": 347,
+            "origSize": 300,
+            "renderedExports": [],
+            "removedExports": [],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_root.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_Symbol.js"
+            ],
+            "percent": 0.16,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_stringToArray.js",
+            "size": 308,
+            "origSize": 450,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_stringToArray.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_createCaseFirst.js"
+            ],
+            "percent": 0.15,
+            "reduction": 31.56
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_asciiToArray.js",
+            "size": 259,
+            "origSize": 257,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_asciiToArray.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_stringToArray.js"
+            ],
+            "percent": 0.12,
+            "reduction": 0
+        },
+        {
+            "id": "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_Symbol.js",
+            "size": 88,
+            "origSize": 118,
+            "renderedExports": [
+                "__moduleExports"
+            ],
+            "removedExports": [
+                "default"
+            ],
+            "dependents": [
+                "\u0000/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_Symbol.js?commonjs-proxy",
+                "/Users/sdalonzo/priceline-labs/design-system/node_modules/lodash/_baseToString.js"
+            ],
+            "percent": 0.04,
+            "reduction": 25.42
+        }
+    ],
+    "moduleCount": 193
+}
