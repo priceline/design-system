@@ -1,6 +1,6 @@
 {
   "name": "pcln-icons",
-  "version": "3.0.0-3",
+  "version": "3.0.0-4",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
