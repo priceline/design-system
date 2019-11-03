@@ -8,8 +8,10 @@ const icons = fs
   .map(filename => path.basename(filename, '.js'))
 
 const template = icons => {
-  icons.map(name => `export { default as ${name} } from './${name}'`).join('\n')
-  const output = `export { default as Icon } from './Icon'\n${icons}`
+  icons.map(name => `export { default as ${name} } from './${name}'`)
+  const lines = [`export { default as Icon } from './Icon'`, ...icons]
+  const output = lines.join('\n')
+
   return output
 }
 
