@@ -62,12 +62,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pricelinelabs/design-system.git"
+    "url": "git+https://github.com/priceline/design-system.git"
   },
   "bugs": {
-    "url": "https://github.com/pricelinelabs/design-system/issues"
+    "url": "https://github.com/priceline/design-system/issues"
   },
-  "homepage": "https://github.com/pricelinelabs/design-system#readme",
+  "homepage": "https://github.com/priceline/design-system#readme",
   "engines": {
     "node": ">=8.0.0 <9.0.0 || >=10.0.0",
     "npm": ">=5.10.0 || >=6.0.0"

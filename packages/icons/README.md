@@ -15,7 +15,7 @@ import FlightsIcon from 'pcln-icons/lib/Flights'
 export default props => <FlightsIcon mr={2} />
 ```
 
-For a complete list of all icons, see: [the iconography docs](https://pricelinelabs.github.io/design-system/iconography)
+For a complete list of all icons, see: [the iconography docs](https://priceline.github.io/design-system/iconography)
 
 For backwards compatibility, the `Icon` component can be used in the same way as in the Design System v1.
 

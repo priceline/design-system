@@ -1,6 +1,6 @@
 # Priceline Design System Docs
 
-https://pricelinelabs.github.io/design-system/
+https://priceline.github.io/design-system/
 
 This project was built with [mdx-docs][] and [Next.js][]
 

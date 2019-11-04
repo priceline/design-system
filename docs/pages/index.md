@@ -13,7 +13,7 @@ Description
 
 ## Sketch Kit
 
-<ButtonLink href='https://github.com/pricelinelabs/design-system-sketch/releases/latest'>
+<ButtonLink href='https://github.com/priceline/design-system-sketch/releases/latest'>
   Download Sketch Kit
 </ButtonLink>
 
