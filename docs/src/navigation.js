@@ -73,9 +73,9 @@ export default [
       {
         name: 'Contributing',
         path:
-          'https://github.com/pricelinelabs/design-system/blob/master/CONTRIBUTING.md'
+          'https://github.com/priceline/design-system/blob/master/CONTRIBUTING.md'
       },
-      { name: 'GitHub', path: 'https://github.com/pricelinelabs/design-system' }
+      { name: 'GitHub', path: 'https://github.com/priceline/design-system' }
     ]
   }
 ]

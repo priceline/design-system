@@ -31,7 +31,7 @@ local development.
 ### Clone the repo
 
 ```sh
-git clone https://github.com/pricelinelabs/design-system.git
+git clone https://github.com/priceline/design-system.git
 cd design-system
 ```
 
@@ -119,7 +119,7 @@ The following process is recommended for publishing packages individually:
 6. `NPM_CONFIG_OTP=XXXXXX npm run publish from-package` - XXXXXX will be a 6-digit number from your authenticator app. If publishing fails, ensure that you are a collaborator on the subpackges you are trying to publish. (Have a maintainer run `npm owner add {your username} {package name (such as pcln-icons)}` on your behalf.)
 7. commit and push your changes to master (Note: you need to be an admin of the design-system GitHub repository to do this).
 
-After publishing please [document your release](https://github.com/pricelinelabs/design-system/releases/new)
+After publishing please [document your release](https://github.com/priceline/design-system/releases/new)
 
 ### Static Docs Site
 
@@ -195,9 +195,9 @@ Generally follow these rules for creating a PR:
 - Allow for enough time for everyone to review and discuss your PR
 - Remember that not every PR will be merged, but that's okay
 
-[docs site]: https://pricelinelabs.github.io/design-system/
+[docs site]: https://priceline.github.io/design-system/
 [github-flow]: https://guides.github.com/introduction/flow/
-[issue]: https://github.com/pricelinelabs/design-system/issues/new
+[issue]: https://github.com/priceline/design-system/issues/new
 [jest]: https://facebook.github.io/jest/
 [semver]: http://semver.org
 [snapshots]: https://facebook.github.io/jest/docs/en/snapshot-testing.html#content

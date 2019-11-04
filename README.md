@@ -4,7 +4,7 @@
 [![Coverage][coverage-badge]][coverage]
 [![npm version][npm version]][npm version]
 
-https://pricelinelabs.github.io/design-system/
+https://priceline.github.io/design-system/
 
 ```sh
 npm install pcln-design-system
@@ -60,10 +60,10 @@ We hope to accomplish these goals by:
 | [<img src="https://avatars0.githubusercontent.com/u/5322552?v=4" width="100px;"/><br /><sub><b>ronhenderson</b></sub>](https://github.com/ronhenderson) | [<img src="https://avatars3.githubusercontent.com/u/8871080?v=4" width="100px;"/><br /><sub><b>sagar kaurav</b></sub>](https://github.com/sagarkaurav) | [<img src="https://avatars3.githubusercontent.com/u/15033101?v=4" width="100px;"/><br /><sub><b>sivdahlberg</b></sub>](https://github.com/sivdahlberg) |    [<img src="https://avatars2.githubusercontent.com/u/2132853?v=4" width="100px;"/><br /><sub><b>Steve Dalonzo</b></sub>](https://github.com/sdalonzo)    | [<img src="https://avatars2.githubusercontent.com/u/2953256?v=4" width="100px;"/><br /><sub><b>Stephen Sulik</b></sub>](https://github.com/stephensulik) | [<img src="https://avatars1.githubusercontent.com/u/16071129?v=4" width="100px;"/><br /><sub><b>Torng-Lin (Taffy) Chen</b></sub>](https://github.com/tornglintaffychen) |      [<img src="https://avatars1.githubusercontent.com/u/45636494?v=4" width="100px;"/><br /><sub><b>sqott</b></sub>](https://github.com/sqott)       |
 |   [<img src="https://avatars1.githubusercontent.com/u/862774?v=4" width="100px;"/><br /><sub><b>Tobias Lundgren</b></sub>](https://lundgren.design/)    |   [<img src="https://avatars1.githubusercontent.com/u/3496298?v=4" width="100px;"/><br /><sub><b>zerodom30</b></sub>](https://github.com/zerodom30)    |  [<img src="https://avatars1.githubusercontent.com/u/3157593?v=4" width="100px;"/><br /><sub><b>Kyle Pollock</b></sub>](https://github.com/unixchad)   |
 
-[coverage]: https://codecov.io/github/pricelinelabs/design-system
-[coverage-badge]: https://img.shields.io/codecov/c/github/pricelinelabs/design-system.svg?style=flat-square
+[coverage]: https://codecov.io/github/priceline/design-system
+[coverage-badge]: https://img.shields.io/codecov/c/github/priceline/design-system.svg?style=flat-square
 [npm version]: https://img.shields.io/npm/v/pcln-design-system.svg?style=flat-square
-[site]: https://pricelinelabs.github.io/design-system/
-[storybook]: https://pricelinelabs.github.io/design-system/storybook/
-[travis]: https://travis-ci.org/pricelinelabs/design-system
-[travis-badge]: https://img.shields.io/travis/pricelinelabs/design-system/master.svg?style=flat-square
+[site]: https://priceline.github.io/design-system/
+[storybook]: https://priceline.github.io/design-system/storybook/
+[travis]: https://travis-ci.org/priceline/design-system
+[travis-badge]: https://img.shields.io/travis/priceline/design-system/master.svg?style=flat-square
