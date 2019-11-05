@@ -6,7 +6,7 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "test": "jest",
-    "prepare": "rollup --config",
+    "prepare": "rollup -c",
     "clean": "rm -rf node_modules dist"
   },
   "author": "Priceline",
@@ -17,15 +17,15 @@
     "react-transition-group": "^2.5.3"
   },
   "peerDependencies": {
-    "pcln-design-system": ">=1.0.0 || >=2.0.0",
+    "pcln-design-system": ">=2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "styled-components": ">=3.x || >= 4.x",
+    "styled-components": ">=3.x <5",
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "pcln-design-system": "^2.5.1",
+    "pcln-design-system": "^2.6.2",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

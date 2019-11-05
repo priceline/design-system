@@ -4,7 +4,7 @@
   "description": "React autocomplete component built with Downshift",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "babel src -d dist",
+    "prepare": "rollup -c",
     "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
@@ -21,7 +21,7 @@
     "@babel/core": "^7.6.4",
     "@reach/component-component": "^0.1.1",
     "cat-names": "^2.0.0",
-    "pcln-design-system": "^2.5.1",
+    "pcln-design-system": "^2.6.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-test-renderer": "^16.10.2",
@@ -29,7 +29,7 @@
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": ">=2.0.0"
+    "pcln-design-system": ">=2.x"
   },
   "jest": {
     "setupFilesAfterEnv": ["../../test-setup.js"],
