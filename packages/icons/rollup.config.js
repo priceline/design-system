@@ -1,12 +1,13 @@
-// const svgr = require('@svgr/rollup')
+const svgr = require('@svgr/rollup').default
+const svgSprite = require('rollup-plugin-svg-sprite')
 
-// export default {
-//   input: 'src/index.js',
-//   output: {
-//     file: 'dist/app.js',
-//     format: 'iife'
-//   },
-//   plugins: [svgr()]
-// }
+const config = require('../../rollup.config')
 
-module.exports = require('../../rollup.config')
+config.plugins.push(svgr())
+config.plugins.push(
+  svgSprite({
+    outputFolder: 'dist/public'
+  })
+)
+
+module.exports = config
