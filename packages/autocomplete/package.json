@@ -2,7 +2,8 @@
   "name": "pcln-autocomplete",
   "version": "2.0.5",
   "description": "React autocomplete component built with Downshift",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "prepare": "rollup -c",
     "clean": "rm -rf node_modules dist",
