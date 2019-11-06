@@ -87,6 +87,12 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
   border-style: solid;
   ${width} ${size} ${space};
   ${applyVariations('Button', variations)}
+
+  &:disabled {
+    cursor: not-allowed;
+    color: ${getPaletteColor('text.light')};
+    background-color: ${getPaletteColor('background.base')};
+  }
 `)
 
 Button.propTypes = {

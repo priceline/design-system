@@ -17,7 +17,7 @@ exports[`Step renders active step 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
@@ -33,13 +33,18 @@ exports[`Step renders active step 1`] = `
   font-weight: unset;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: #fff;
 }
 
 <button
   className="c0"
-  disabled={true}
 >
   <div
     aria-selected={true}
@@ -81,7 +86,7 @@ exports[`Step renders as active and completed 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
@@ -97,13 +102,18 @@ exports[`Step renders as active and completed 1`] = `
   font-weight: unset;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: #fff;
 }
 
 <button
   className="c0"
-  disabled={true}
 >
   <svg
     aria-hidden={false}
@@ -161,7 +171,7 @@ exports[`Step renders completed step 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
@@ -177,13 +187,18 @@ exports[`Step renders completed step 1`] = `
   font-weight: unset;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: #fff;
 }
 
 <button
   className="c0"
-  disabled={true}
 >
   <svg
     aria-hidden={false}
@@ -245,13 +260,18 @@ exports[`Step renders with on click 1`] = `
   font-weight: unset;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: #fff;
 }
 
 <button
   className="c0"
-  disabled={false}
   onClick={[Function]}
 >
   <div
@@ -281,7 +301,7 @@ exports[`Step renders without crashing 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
@@ -297,13 +317,18 @@ exports[`Step renders without crashing 1`] = `
   font-weight: unset;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: #fff;
 }
 
 <button
   className="c0"
-  disabled={true}
 >
   <div
     aria-selected={false}

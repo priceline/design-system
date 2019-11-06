@@ -25,6 +25,12 @@ exports[`GreenButton disabled prop sets 1`] = `
   background-color: #ecf7ec;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="secondary"
@@ -58,6 +64,12 @@ exports[`GreenButton renders 1`] = `
   color: #fff;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="secondary"
@@ -88,6 +100,12 @@ exports[`GreenButton renders with nested style 1`] = `
 .c2:hover {
   background-color: #060;
   color: #fff;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 .c0 .c1 {
@@ -128,6 +146,12 @@ exports[`GreenButton without disabled prop sets 1`] = `
 .c0:hover {
   background-color: #060;
   color: #fff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <button

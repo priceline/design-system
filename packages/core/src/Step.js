@@ -23,12 +23,7 @@ function Step({ className, active, completed, children, onClick }) {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (
-    <StepperFlex
-      className={className}
-      disabled={!onClick}
-      alignItems="center"
-      onClick={onClick}
-    >
+    <StepperFlex className={className} alignItems="center" onClick={onClick}>
       {completed && (
         <Icon
           name="Check"

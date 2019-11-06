@@ -32,7 +32,7 @@ storiesOf('Button', module)
         <Button color="caution" mr={2}>
           Button
         </Button>
-        <Button color="orange" mr={2}>
+        <Button color="alert" mr={2}>
           Button
         </Button>
       </div>

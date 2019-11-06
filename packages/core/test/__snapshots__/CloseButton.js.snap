@@ -32,6 +32,12 @@ exports[`CloseButton renders without props 1`] = `
   color: inherit;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: transparent;
   color: inherit;

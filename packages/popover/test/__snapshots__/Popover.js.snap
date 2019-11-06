@@ -26,6 +26,12 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   color: #fff;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c0 {
   display: inline-block;
 }

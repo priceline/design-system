@@ -39,7 +39,7 @@ exports[`Stepper renders with children 1`] = `
   font-family: inherit;
   font-weight: 600;
   line-height: 1.5;
-  cursor: default;
+  cursor: pointer;
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
@@ -53,6 +53,12 @@ exports[`Stepper renders with children 1`] = `
   cursor: default;
   padding: 0;
   font-weight: unset;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 .c1:hover {
@@ -75,7 +81,6 @@ exports[`Stepper renders with children 1`] = `
 >
   <button
     className="c1"
-    disabled={true}
   >
     <svg
       aria-hidden={false}
@@ -105,7 +110,6 @@ exports[`Stepper renders with children 1`] = `
   </button>
   <button
     className="c1"
-    disabled={true}
   >
     <div
       aria-selected={true}
@@ -118,7 +122,6 @@ exports[`Stepper renders with children 1`] = `
   </button>
   <button
     className="c1"
-    disabled={true}
   >
     <div
       aria-selected={false}

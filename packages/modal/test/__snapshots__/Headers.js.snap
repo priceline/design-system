@@ -38,6 +38,12 @@ exports[`ModalHeader render 1`] = `
   color: inherit;
 }
 
+.c3:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c3:hover {
   background-color: transparent;
   color: inherit;
