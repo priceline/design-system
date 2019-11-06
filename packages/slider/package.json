@@ -1,9 +1,10 @@
 {
   "name": "pcln-slider",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "React component for range sliders",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "sideEffects": false,
   "scripts": {
     "prepare": "rollup -c",
     "clean": "rm -rf node_modules dist",
@@ -12,8 +13,13 @@
   "author": "Priceline",
   "license": "MIT",
   "jest": {
-    "coverageReporters": ["lcov", "html"],
-    "testMatch": ["<rootDir>/test/**/*.js"]
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
   },
   "dependencies": {
     "classnames": "^2.2.5",

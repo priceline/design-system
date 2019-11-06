@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Icon from './Icon'
+import PropTypes from 'prop-types'
 import Button from './Button'
 import { applyVariations } from './utils'
 
@@ -20,23 +20,17 @@ const TransparentButton = styled(Button)`
   ${applyVariations('IconButton')}
 `
 
-const IconButton = ({ name, size, color, ...props }) => (
+const IconButton = ({ name, size, color, icon, ...props }) => (
   <TransparentButton {...props}>
-    <div>
-      <Icon
-        name={name}
-        size={size}
-        color={color}
-        title={props.title}
-        desc={props.desc}
-        titleId={props.titleId}
-        descId={props.descId}
-      />
-    </div>
+    <div>{icon}</div>
   </TransparentButton>
 )
 
 IconButton.displayName = 'IconButton'
 IconButton.isIconButton = true
+
+IconButton.propTypes = {
+  icon: PropTypes.node
+}
 
 export default IconButton

@@ -7,8 +7,13 @@ const icons = fs
   .filter(filename => /\.js$/.test(filename))
   .map(filename => path.basename(filename, '.js'))
 
-const template = icons =>
-  icons.map(name => `export { default as ${name} } from './${name}'`).join('\n')
+const template = icons => {
+  const iconsToExport = icons.map(
+    name => `export { default as ${name} } from './${name}'`
+  )
+  iconsToExport.push(`export { default as Icon } from './Icon'`)
+  return iconsToExport.join('\n')
+}
 
 const content = template(icons)
 const filename = path.join(__dirname, './src/index.js')

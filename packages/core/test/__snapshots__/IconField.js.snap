@@ -129,16 +129,6 @@ exports[`IconField renders icon button 1`] = `
   display: flex;
 }
 
-.c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c4 {
-  outline: none;
-}
-
 .c2 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -266,23 +256,7 @@ exports[`IconField renders icon button 1`] = `
       }
     }
   >
-    <div>
-      <svg
-        aria-hidden={true}
-        className="c3 c4"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-      >
-        <path
-          d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
-        />
-      </svg>
-    </div>
+    <div />
   </button>
 </div>
 `;
@@ -302,10 +276,6 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 .c2 {
-  outline: none;
-}
-
-.c5 {
   outline: none;
 }
 
@@ -461,23 +431,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
       }
     }
   >
-    <div>
-      <svg
-        aria-hidden={true}
-        className="c1 c5"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-      >
-        <path
-          d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
-        />
-      </svg>
-    </div>
+    <div />
   </button>
 </div>
 `;

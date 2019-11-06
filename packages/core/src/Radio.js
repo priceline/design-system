@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Icon from './Icon'
+import { RadioChecked, RadioEmpty } from 'pcln-icons'
 import { applyVariations, deprecatedColorValue, getPaletteColor } from './utils'
 
 const RadioWrap = styled.div`
@@ -45,21 +46,31 @@ const RadioInput = styled.input`
   }
 `
 
-const RadioIcon = styled(Icon)`
+const RadioCheckedIcon = styled(RadioChecked)`
   vertical-align: middle;
 `
+const RadioEmptyIcon = styled(RadioEmpty)`
+  vertical-align: middle;
+`
+const getRadioIcon = ({ checked, ...props }) => {
+  return checked ? (
+    <RadioCheckedIcon {...props} />
+  ) : (
+    <RadioEmptyIcon {...props} />
+  )
+}
 
 const Radio = props => {
   const { checked, disabled, size } = props
 
-  const radioIconName = checked ? 'radioChecked' : 'radioEmpty'
-
   const borderAdjustedSize = size + 4
+
+  const radioIcon = getRadioIcon({ checked, size: borderAdjustedSize })
 
   return (
     <RadioWrap color={props.color} checked={checked} disabled={disabled}>
       <RadioInput type="radio" {...props} />
-      <RadioIcon name={radioIconName} size={borderAdjustedSize} />
+      {radioIcon}
     </RadioWrap>
   )
 }
@@ -70,7 +81,8 @@ Radio.defaultProps = {
 }
 
 Radio.propTypes = {
-  color: deprecatedColorValue()
+  color: deprecatedColorValue(),
+  size: PropTypes.number
 }
 
 export default Radio

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
+import { BoxChecked, BoxEmpty } from 'pcln-icons'
 import PropTypes from 'prop-types'
-import Icon from './Icon'
 import Box from './Box'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
@@ -18,8 +18,8 @@ const Checkbox = props => {
       disabled={disabled}
     >
       <StyledInput type="checkbox" {...props} role="checkbox" />
-      <Icon name="BoxChecked" size={borderAdjustedSize} data-name="checked" />
-      <Icon name="BoxEmpty" size={borderAdjustedSize} data-name="empty" />
+      <BoxChecked size={borderAdjustedSize} data-name="checked" />
+      <BoxEmpty size={borderAdjustedSize} data-name="empty" />
     </CheckBoxWrapper>
   )
 }

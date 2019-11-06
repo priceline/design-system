@@ -1,5 +1,13 @@
 module.exports = {
-  presets: ['@babel/env', '@babel/react'],
+  presets: [
+    [
+      '@babel/env',
+      {
+        modules: false
+      }
+    ],
+    '@babel/react'
+  ],
   plugins: [
     '@babel/proposal-class-properties',
     '@babel/proposal-object-rest-spread',
@@ -7,6 +15,7 @@ module.exports = {
   ],
   env: {
     test: {
+      presets: [['@babel/env', { targets: { node: 'current' } }]],
       plugins: ['@babel/transform-runtime']
     }
   }

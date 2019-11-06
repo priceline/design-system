@@ -2380,6 +2380,8 @@ exports[`renders Hybrid 1`] = `
 </svg>
 `;
 
+exports[`renders Icon 1`] = `null`;
+
 exports[`renders Inclusive 1`] = `
 .c0 {
   -webkit-flex: none;

@@ -1,8 +1,11 @@
 import React from 'react'
-import IconButton from './IconButton'
 import PropTypes from 'prop-types'
+import IconButton from './IconButton'
+import { Close } from 'pcln-icons'
 
-const CloseButton = props => <IconButton {...props} name="Close" />
+const CloseButton = props => (
+  <IconButton {...props} icon={<Close size={props.size} />} />
+)
 
 CloseButton.defaultProps = {
   size: 24,
