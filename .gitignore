@@ -20,3 +20,6 @@ known_hosts
 id_rs*
 *ssh*
 packages/**/package-lock.json
+
+packages/**/rollup.bundleAnalysis.json
+packages/**/stats.html

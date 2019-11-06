@@ -5,20 +5,15 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "prepare": "rollup --config",
+    "prepare": "rollup -c",
     "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
   "author": "Priceline",
   "license": "MIT",
   "jest": {
-    "coverageReporters": [
-      "lcov",
-      "html"
-    ],
-    "testMatch": [
-      "<rootDir>/test/**/*.js"
-    ]
+    "coverageReporters": ["lcov", "html"],
+    "testMatch": ["<rootDir>/test/**/*.js"]
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -30,8 +25,8 @@
     "warning": "^4.0.3"
   },
   "peerDependencies": {
-    "pcln-design-system": ">=1.x || >=2.x",
-    "styled-components": ">=3.x || >= 4.x",
+    "pcln-design-system": ">=2.x",
+    "styled-components": ">=3.x <5x",
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0"
   },

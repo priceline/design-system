@@ -5,7 +5,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "prepare": "npx rollup --config",
+    "prepare": "rollup -c",
     "clean": "rm -rf node_modules dist",
     "test": "jest"
   },
@@ -42,12 +42,8 @@
     "stylis": "^3.4.9"
   },
   "jest": {
-    "setupFilesAfterEnv": [
-      "../../test-setup.js"
-    ],
-    "testMatch": [
-      "<rootDir>/test/**/*.js"
-    ]
+    "setupFilesAfterEnv": ["../../test-setup.js"],
+    "testMatch": ["<rootDir>/test/**/*.js"]
   },
   "dependencies": {
     "deepmerge": "^4.0.0",
