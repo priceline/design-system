@@ -1,6 +1,6 @@
 {
   "name": "pcln-popover",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "React component for popover",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -12,9 +12,16 @@
   "author": "Priceline",
   "license": "MIT",
   "jest": {
-    "coverageReporters": ["lcov", "html"],
-    "setupFilesAfterEnv": ["../../test-setup.js"],
-    "testMatch": ["<rootDir>/test/**/*.js"]
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
   },
   "dependencies": {
     "react-popper": "^1.3.3"

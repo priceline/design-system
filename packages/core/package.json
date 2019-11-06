@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "description": "Priceline Design System",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -42,8 +42,12 @@
     "stylis": "^3.4.9"
   },
   "jest": {
-    "setupFilesAfterEnv": ["../../test-setup.js"],
-    "testMatch": ["<rootDir>/test/**/*.js"]
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
   },
   "dependencies": {
     "deepmerge": "^4.0.0",
