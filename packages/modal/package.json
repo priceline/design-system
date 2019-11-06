@@ -1,9 +1,10 @@
 {
   "name": "pcln-modal",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "React component for modal",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "sideEffects": false,
   "scripts": {
     "test": "jest",
     "prepare": "rollup -c",
