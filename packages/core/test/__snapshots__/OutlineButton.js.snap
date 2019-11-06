@@ -26,6 +26,12 @@ exports[`OutlineButton disabled prop sets 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="primary"
@@ -61,6 +67,12 @@ exports[`OutlineButton renders 1`] = `
   box-shadow: inset 0 0 0 2px #049;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="primary"
@@ -93,6 +105,12 @@ exports[`OutlineButton renders with nested style 1`] = `
   background-color: transparent;
   color: #049;
   box-shadow: inset 0 0 0 2px #049;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 .c0 .c1 {
@@ -135,6 +153,12 @@ exports[`OutlineButton without disabled prop sets 1`] = `
   background-color: transparent;
   color: #049;
   box-shadow: inset 0 0 0 2px #049;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <button

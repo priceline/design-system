@@ -25,6 +25,12 @@ exports[`Button disabled prop sets 1`] = `
   background-color: #e8f2ff;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="primary"
@@ -58,6 +64,12 @@ exports[`Button renders 1`] = `
   color: #fff;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="primary"
@@ -88,6 +100,12 @@ exports[`Button size large sets height and font-size 1`] = `
 .c0:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <button
@@ -123,6 +141,12 @@ exports[`Button size medium sets height and font-size 1`] = `
   color: #fff;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="primary"
@@ -154,6 +178,12 @@ exports[`Button size small sets height and font-size 1`] = `
 .c0:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <button
@@ -190,6 +220,12 @@ exports[`Button width prop sets width to 100% 1`] = `
   color: #fff;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 <button
   className="c0"
   color="primary"
@@ -222,6 +258,12 @@ exports[`Button with title prop 1`] = `
 .c0:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <button
@@ -257,6 +299,12 @@ exports[`Button without disabled prop sets 1`] = `
 .c0:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <button

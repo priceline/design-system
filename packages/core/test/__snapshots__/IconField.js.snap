@@ -160,6 +160,12 @@ exports[`IconField renders icon button 1`] = `
   color: inherit;
 }
 
+.c2:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
 .c2:hover {
   background-color: transparent;
   color: inherit;
@@ -322,6 +328,12 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   padding: 0;
   background-color: transparent;
   color: inherit;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 .c4:hover {
