@@ -69,12 +69,9 @@ class PopoverContent extends Component {
           {({ placement, ref, style, arrowProps }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
             <PopperGuide
-              /*
-               * NOTE: InnerRef has been depracted in V4 of styled components. Make sure to change this prop once we upgrade to styled components v4
-               * https://www.styled-components.com/docs/api#deprecated-innerref-prop
-               */
               className={this.props.className}
               innerRef={ref}
+              ref={ref}
               style={style}
               data-placement={placement}
               aria-label={this.props.ariaLabel}
@@ -84,6 +81,7 @@ class PopoverContent extends Component {
             >
               <ContentContainer
                 innerRef={this.props.contentRef}
+                ref={this.props.contentRef}
                 {...styleProps}
                 tabIndex="-1"
               >
