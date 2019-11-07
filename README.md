@@ -3,6 +3,7 @@
 [![Build Status][travis-badge]][travis]
 [![Coverage][coverage-badge]][coverage]
 [![npm version][npm version]][npm version]
+![bundlephobia-badge]
 
 https://priceline.github.io/design-system/
 
@@ -67,3 +68,4 @@ We hope to accomplish these goals by:
 [storybook]: https://priceline.github.io/design-system/storybook/
 [travis]: https://travis-ci.org/priceline/design-system
 [travis-badge]: https://img.shields.io/travis/priceline/design-system/master.svg?style=flat-square
+[bundlephobia-badge]: https://badgen.net/bundlephobia/minzip/pcln-design-system?color=cyan

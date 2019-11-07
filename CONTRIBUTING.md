@@ -1,16 +1,21 @@
 # Contributing
 
-- [Development](#development)
-- [Clone the repo](#clone-the-repo)
-- [Lerna and Rollup](#lerna-and-rollup)
-- [Install dependencies](#install-dependencies)
-- [Running tests](#running-tests)
-- [Storybook](#storybook)
-- [Publishing](#publishing)
-- [Static Docs Site](#static-docs-site)
-- [Troubleshooting](#troubleshooting)
-- [Beta Version](#beta-version)
-- [Pull Requests](#pull-requests)
+- [Contributing](#contributing)
+
+  - [Local Development](#local-development)
+  - [Clone the repo](#clone-the-repo)
+  - [Lerna and Rollup](#lerna-and-rollup)
+  - [Install dependencies](#install-dependencies)
+  - [Running tests](#running-tests)
+  - [Storybook](#storybook)
+  - [Publishing](#publishing)
+  - [Static Docs Site](#static-docs-site)
+  - [Troubleshooting](#troubleshooting)
+  - [GitHub Flow](#github-flow)
+  - [Beta Version](#beta-version)
+  - [Pull Requests](#pull-requests)
+
+  - [Creating Components](COMPONENT_GUIDANCE.md)
 
 If you'd like to contribute to the design system, we'd love to have your help.
 As with any open source project, we ask that you be nice, professional, and
