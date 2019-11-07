@@ -1,0 +1,37 @@
+{
+  "name": "pcln-{{kebabCase componentName}}",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "babel src -d dist",
+    "clean": "rm -rf node_modules dist",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Priceline",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "styled-system": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "pcln-design-system": "^2.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^4.4.0"
+  },
+  "peerDependencies": {
+    "pcln-design-system": ">=2.0.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  }
+}
