@@ -82,7 +82,7 @@ We use [Plop](https://plopjs.com/) to scaffold new components rather than copyin
 The configuration allows you to create new core and package components.
 Follow the steps below to create a new component:
 
-1. Run `npm run plop` and follow the prompts
+1. Run `npm run create-component` and follow the prompts
 2. Run `npm run prepare` to tell Lerna to bootstrap your new component folder
 3. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.js` file
 
