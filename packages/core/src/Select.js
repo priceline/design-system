@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
 import { ChevronDown } from 'pcln-icons'
-import { getPaletteColor, deprecatedColorValue } from './utils'
+import { borders, getPaletteColor, deprecatedColorValue } from './utils'
 import Flex from './Flex'
 
 const ClickableIcon = styled(ChevronDown)`
@@ -20,11 +20,8 @@ const SelectBase = styled.select`
   border-width: 1px;
   border-style: solid;
   border-color: ${getPaletteColor('border.base')};
-  ${space} ${fontSize} &:focus {
-    outline: none;
-    border-color: ${getPaletteColor('base')};
-    box-shadow: 0 0 0 1px ${getPaletteColor('base')};
-  }
+
+  ${borders} ${space} ${fontSize}
   ::-ms-expand {
     display: none;
   }
@@ -41,7 +38,8 @@ SelectBase.defaultProps = {
 SelectBase.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  color: deprecatedColorValue()
+  color: deprecatedColorValue(),
+  ...borders.propTypes
 }
 
 const Select = styled(props => (

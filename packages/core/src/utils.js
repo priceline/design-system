@@ -261,9 +261,9 @@ export const borders = props => {
   const focusColor = props.color
     ? borderColor
     : getPaletteColor('primary.base')(props)
+
   return {
     'border-color': borderColor,
-    'box-shadow': `0 0 0 1px ${borderColor}`,
     ':focus': {
       outline: 0,
       'border-color': focusColor,

@@ -16,8 +16,9 @@ const Input = styled.input`
   color: inherit;
   background-color: transparent;
   border-radius: ${themeGet('radius')};
-  border-width: 0px;
+  border-width: 1px;
   border-style: solid;
+  border-color: ${getPaletteColor('border.base')};
 
   padding-top: 14px;
   padding-bottom: 14px;

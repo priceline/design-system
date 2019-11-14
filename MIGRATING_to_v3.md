@@ -49,3 +49,4 @@ import { ThumbsUp } from 'pcln-icons
 - Link now uses dark shade of `color` prop on hover
 - Banner now supports a node as its `header` prop in addition to strings
 - Popover now supports trapping focus inside of the popup via `trapFocus` prop
+- Input and TextArea now use `borders` instead of `box-shadow`, to prevent misalignments with other components like Select

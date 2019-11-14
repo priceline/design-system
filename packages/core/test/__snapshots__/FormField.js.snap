@@ -18,15 +18,15 @@ exports[`FormField renders 1`] = `
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 0px;
+  border-width: 1px;
   border-style: solid;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
-  box-shadow: 0 0 0 1px #c0cad5;
   font-size: 16px;
 }
 
@@ -155,15 +155,15 @@ exports[`FormField renders with Icon 1`] = `
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 0px;
+  border-width: 1px;
   border-style: solid;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
-  box-shadow: 0 0 0 1px #c0cad5;
   font-size: 16px;
 }
 
@@ -318,15 +318,15 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   color: inherit;
   background-color: transparent;
   border-radius: 2px;
-  border-width: 0px;
+  border-width: 1px;
   border-style: solid;
+  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
-  box-shadow: 0 0 0 1px #c0cad5;
   font-size: 16px;
 }
 
@@ -499,6 +499,7 @@ exports[`FormField renders with Select  1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
+  border-color: #007aff;
   margin: 0px;
   padding-left: 12px;
   padding-right: 32px;
@@ -508,9 +509,9 @@ exports[`FormField renders with Select  1`] = `
 }
 
 .c2:focus {
-  outline: none;
+  outline: 0;
   border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  box-shadow: 0 0 0 2px #007aff;
 }
 
 .c2::-ms-expand {
@@ -629,6 +630,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
+  border-color: #007aff;
   margin: 0px;
   padding-left: 12px;
   padding-right: 32px;
@@ -638,9 +640,9 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 .c4:focus {
-  outline: none;
+  outline: 0;
   border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  box-shadow: 0 0 0 2px #007aff;
 }
 
 .c4::-ms-expand {
