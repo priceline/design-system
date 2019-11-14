@@ -4,7 +4,6 @@ import Flex from './Flex'
 import Text from './Text'
 import Icon from './Icon'
 import CloseButton from './CloseButton'
-import Heading from './Heading'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 import { applyVariations, hasPaletteColor, deprecatedColorValue } from './utils'
@@ -61,6 +60,11 @@ const Banner = props => {
     hasPaletteColor(props) || !bannerColor.color
       ? props.color
       : bannerColor.color
+  const header = React.isValidElement(props.header) ? (
+    props.header
+  ) : (
+    <Text textStyle="display2">{props.header}</Text>
+  )
 
   return (
     <StyledBox
@@ -73,7 +77,7 @@ const Banner = props => {
           <Icon name={icon} mr={2} size={24} mt="-2px" />
         )}
         <Box textAlign={props.textAlign} width={1}>
-          <Text textStyle="display2">{props.header}</Text>
+          {props.header && header}
           <Text.span fontSize={1}>{props.text}</Text.span>
           {props.children}
         </Box>
@@ -94,7 +98,7 @@ const Banner = props => {
 Banner.displayName = 'Banner'
 
 Banner.propTypes = {
-  header: PropTypes.string,
+  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   iconName: PropTypes.string,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
