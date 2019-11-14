@@ -41,3 +41,5 @@ import { ThumbsUp } from 'pcln-icons
   - To use `Icon`, the previous default export, use (`import { Icon } from 'pcln-icons'`) instead.
 
 ## Enhancements
+
+- New Component: Avatar
