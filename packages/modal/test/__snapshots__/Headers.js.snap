@@ -102,6 +102,7 @@ exports[`ModalHeader render 1`] = `
     </div>
     <button
       class="c3 c4"
+      size="24"
       title="close"
     >
       <div>

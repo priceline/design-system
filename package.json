@@ -27,6 +27,7 @@
     "@storybook/addon-a11y": "^4.1.18",
     "@storybook/addon-actions": "^4.1.18",
     "@storybook/addon-info": "^4.1.18",
+    "@storybook/addon-knobs": "^4.1.18",
     "@storybook/addon-viewport": "^4.1.18",
     "@storybook/react": "^4.1.18",
     "@testing-library/jest-dom": "^4.1.2",
