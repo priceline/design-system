@@ -41,3 +41,6 @@ import { ThumbsUp } from 'pcln-icons
   - To use `Icon`, the previous default export, use (`import { Icon } from 'pcln-icons'`) instead.
 
 ## Enhancements
+
+- Link now uses dark shade of `color` prop on hover
+- Banner now supports a node as its `header` prop in addition to strings
