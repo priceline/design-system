@@ -7,6 +7,7 @@ const Link = styled.a`
   color: ${getPaletteColor('base')};
 
   &:hover {
+    color: ${getPaletteColor('dark')};
     text-decoration: underline;
   }
 
