@@ -20,7 +20,7 @@ const TransparentButton = styled(Button)`
   ${applyVariations('IconButton')}
 `
 
-const IconButton = ({ name, size, color, icon, ...props }) => (
+const IconButton = ({ icon, ...props }) => (
   <TransparentButton {...props}>
     <div>{icon}</div>
   </TransparentButton>

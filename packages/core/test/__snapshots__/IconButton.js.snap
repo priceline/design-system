@@ -42,6 +42,7 @@ exports[`IconButton renders without props 1`] = `
 
 <button
   className="c0"
+  name="Key"
 >
   <div />
 </button>

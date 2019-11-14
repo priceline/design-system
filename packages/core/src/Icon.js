@@ -1,3 +1,3 @@
-import Icon from 'pcln-icons/dist/esm/Icon'
+import { Icon } from 'pcln-icons'
 Icon.isIcon = true
 export default Icon

@@ -25,7 +25,6 @@ describe('Icon', () => {
   })
 
   describe.skip('SVG Icon Accessibility', () => {
-    // Test individual icons in './lib'
     test.each(iconList)(
       'renders %s with accessibility attributes when title and desc is passed ',
       (key, Component) => {
@@ -117,7 +116,6 @@ describe('Icon', () => {
     })
 
     test.each(iconList)(
-      // Test individual icons in './lib'
       'Icons should render with no outline ',
       (key, Component) => {
         const testRenderer = TestRenderer.create(<Component />)
