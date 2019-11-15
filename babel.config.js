@@ -17,6 +17,10 @@ module.exports = {
     test: {
       presets: [['@babel/env', { targets: { node: 'current' } }]],
       plugins: ['@babel/transform-runtime']
+    },
+    cjs: {
+      presets: [['@babel/env', { modules: 'cjs' }]],
+      plugins: ['@babel/transform-runtime']
     }
   }
 }
