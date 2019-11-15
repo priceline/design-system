@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Image, Box, Flex } from '../src'
+import { Image } from '../src'
 
 const description = 'A low-level layout component that renders an image'
 
