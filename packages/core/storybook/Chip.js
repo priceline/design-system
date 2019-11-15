@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withActions, action } from '@storybook/addon-actions'
+import { action } from '@storybook/addon-actions'
 import { Close, Search, Edit, ThumbsUp, ChevronDown } from 'pcln-icons'
 import Chip from '../src/Chip'
 import Text from '../src/Text'
@@ -40,8 +40,57 @@ storiesOf('Chip', module)
           >
             Flight + Car
           </Chip>
+          <Chip
+            color="primary"
+            size={size}
+            variation="choice"
+            mr={2}
+            disabled
+            onClick={action('Clicked')}
+          >
+            Boat + Car
+          </Chip>
         </Box>
       ))}
+    </Box>
+  ))
+  .add('choice variation, custom description', () => (
+    <Box>
+      <Chip
+        color="primary"
+        variation="choice"
+        size="large"
+        selected
+        mr={2}
+        onClick={action('Clicked')}
+        description="Description"
+      >
+        Chip Enabled
+      </Chip>
+      <Chip
+        color="primary"
+        variation="choice"
+        size="large"
+        mr={2}
+        onClick={action('Clicked')}
+        description="Description"
+      >
+        Chip Enabled
+      </Chip>
+      <Chip
+        color="primary"
+        variation="choice"
+        size="large"
+        mr={2}
+        onClick={action('Clicked')}
+        description={
+          <Text color="secondary">
+            Custom <Text.span color="warning">description</Text.span>
+          </Text>
+        }
+      >
+        Chip Enabled
+      </Chip>
     </Box>
   ))
   .add('input variation', () => (
@@ -98,41 +147,6 @@ storiesOf('Chip', module)
         Free Breakfast
       </Chip>
     </div>
-  ))
-  .add('choice variation, custom description', () => (
-    <Box>
-      <Chip
-        color="primary"
-        variation="choice"
-        size="large"
-        selected
-        mr={2}
-        onClick={action('Clicked')}
-        description="Description"
-      >
-        Chip Enabled
-      </Chip>
-      <Chip
-        color="primary"
-        variation="choice"
-        size="large"
-        mr={2}
-        onClick={action('Clicked')}
-        description="Description"
-      >
-        Chip Enabled
-      </Chip>
-      <Chip
-        color="primary"
-        variation="choice"
-        size="large"
-        mr={2}
-        onClick={action('Clicked')}
-        description="Description"
-      >
-        Chip Enabled
-      </Chip>
-    </Box>
   ))
   .add('sizes', () => (
     <div>

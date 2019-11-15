@@ -10,17 +10,27 @@ const variations = {
   outline: css`
     color: ${props =>
       getPaletteColor(props.disabled ? 'light' : 'base')(props)};
-    box-shadow: inset 0 0 0 1px
+    box-shadow: inset 0 0 0 0
       ${props => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    border: 1px solid ${props => getPaletteColor('border.base')(props)};
+
+    ${props =>
+      props.disabled &&
+      `
+      box-shadow: unset;
+      border: 1px solid transparent;
+    `}
 
     &:hover {
-      background-color: transparent;
+      &:not(:disabled) {
+        color: ${props =>
+          getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+      }
       ${props =>
         props.disabled
           ? ''
           : `
-        color: ${getPaletteColor('dark')(props)};
-        box-shadow: inset 0 0 0 1px ${getPaletteColor('dark')(props)};
+        box-shadow: inset 0 0 0 1px ${getPaletteColor('border.light')(props)};
       `}
     }
   `,
@@ -54,11 +64,20 @@ const BORDER_RADII = {
 function Chip(props) {
   const { actionIcon, size, description } = props
   let variation
+  let descriptionNode
 
   if (props.variation === 'choice') {
     variation = props.selected ? 'fill' : 'outline'
   } else if (props.variation === 'input') {
     variation = 'input'
+  }
+
+  if (typeof description === 'string') {
+    descriptionNode = <Text fontSize={'12px'}>{description}</Text>
+  } else if (React.isValidElement(description)) {
+    descriptionNode = React.cloneElement(description, {
+      fontSize: '12px'
+    })
   }
 
   return (
@@ -71,7 +90,7 @@ function Chip(props) {
     >
       <Flex flexDirection="column">
         <Flex align="center">
-          {props.children}
+          <Text bold={!!descriptionNode}>{props.children}</Text>
 
           {!!actionIcon &&
             React.cloneElement(actionIcon, {
@@ -79,7 +98,7 @@ function Chip(props) {
               ml: '12px'
             })}
         </Flex>
-        {!!description && <Text fontSize={'12px'}>{description}</Text>}
+        {!!descriptionNode && descriptionNode}
       </Flex>
     </ChipButton>
   )
