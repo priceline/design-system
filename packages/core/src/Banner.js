@@ -2,47 +2,52 @@ import React from 'react'
 import Box from './Box'
 import Flex from './Flex'
 import Text from './Text'
-import Icon from './Icon'
 import CloseButton from './CloseButton'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 import { applyVariations, hasPaletteColor, deprecatedColorValue } from './utils'
+import {
+  Attention as AttentionIcon,
+  Information as InformationIcon,
+  Success as SuccessIcon,
+  Warning as WarningIcon
+} from 'pcln-icons'
 
 const bannerColors = {
   green: {
     backgroundColor: 'green',
     color: 'white',
-    icon: 'success'
+    icon: <SuccessIcon />
   },
   lightGreen: {
     backgroundColor: 'lightGreen',
     color: 'darkGreen',
-    icon: 'success'
+    icon: <SuccessIcon />
   },
   red: {
     backgroundColor: 'red',
     color: 'white',
-    icon: 'warning'
+    icon: <WarningIcon />
   },
   lightRed: {
     backgroundColor: 'lightRed',
     color: 'darkRed',
-    icon: 'warning'
+    icon: <WarningIcon />
   },
   orange: {
     backgroundColor: 'orange',
     color: 'white',
-    icon: 'attention'
+    icon: <AttentionIcon />
   },
   blue: {
     backgroundColor: 'blue',
     color: 'white',
-    icon: 'information'
+    icon: <InformationIcon />
   },
   lightBlue: {
     backgroundColor: 'lightBlue',
     color: 'darkBlue',
-    icon: 'information'
+    icon: <InformationIcon />
   }
 }
 
@@ -55,7 +60,7 @@ const Banner = props => {
     bannerColors[
       !props.bg && props.color === 'green' ? props.color : props.bg
     ] || {}
-  const icon = props.iconName || bannerColor.icon
+  const Icon = props.icon || bannerColor.icon
   const color =
     hasPaletteColor(props) || !bannerColor.color
       ? props.color
@@ -73,9 +78,9 @@ const Banner = props => {
       color={color}
     >
       <Flex justifyContent="space-between" alignItems="flex-start">
-        {!!icon && !!props.showIcon && (
-          <Icon name={icon} mr={2} size={24} mt="-2px" />
-        )}
+        {!!Icon &&
+          !!props.showIcon &&
+          React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
         <Box textAlign={props.textAlign} width={1}>
           {props.header && header}
           <Text.span fontSize={1}>{props.text}</Text.span>
@@ -99,7 +104,7 @@ Banner.displayName = 'Banner'
 
 Banner.propTypes = {
   header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  iconName: PropTypes.string,
+  icon: PropTypes.node,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
   text: PropTypes.node,

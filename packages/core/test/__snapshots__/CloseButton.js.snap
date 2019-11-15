@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders without props 1`] = `
-.c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c2 {
-  outline: none;
-}
-
 .c0 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -48,6 +38,16 @@ exports[`CloseButton renders without props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c2 {
+  outline: none;
 }
 
 <button
