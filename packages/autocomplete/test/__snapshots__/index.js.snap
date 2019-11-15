@@ -4,6 +4,7 @@ exports[`Autocomplete renders 1`] = `
 .c2 {
   margin-top: 4px;
   background-color: #fff;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16);
   border: 0;
   border-radius: 2px;
 }
