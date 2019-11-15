@@ -97,7 +97,8 @@ Popover.propTypes = {
   placement: PropTypes.string,
   zIndex: PropTypes.number,
   width: PropTypes.number,
-  overlayOpacity: PropTypes.number
+  overlayOpacity: PropTypes.number,
+  trapFocus: PropTypes.bool
 }
 
 export default Popover

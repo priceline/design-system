@@ -46,6 +46,7 @@
     "pcln-design-system": "^3.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-focus-lock": "^2.2.1",
     "react-test-renderer": "^16.10.2",
     "rimraf": "^3.0.0",
     "styled-components": "^4.4.0"

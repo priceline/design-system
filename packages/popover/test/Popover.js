@@ -43,6 +43,17 @@ describe('Popover', () => {
       expect(queryByText('Hello there!')).toBeFalsy()
     })
 
+    test('renders with FocusLock', () => {
+      const { getByText, asFragment } = renderWithTheme(
+        <Popover {...popoverProps} trapFocus>
+          <button>{triggerButtonText}</button>
+        </Popover>
+      )
+      fireEvent.click(getByText(triggerButtonText))
+      expect(getByText('Hello there!')).toBeTruthy()
+      expect(asFragment()).toMatchSnapshot()
+    })
+
     test('clicking on close element inside popover, closes popover', () => {
       const { getByText, queryByText } = renderWithTheme(
         <Popover {...popoverProps}>
