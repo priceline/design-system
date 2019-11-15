@@ -483,9 +483,6 @@ exports[`FormField renders with Select  1`] = `
 
 .c4 {
   outline: none;
-}
-
-.c5 {
   pointer-events: none;
 }
 
@@ -557,8 +554,8 @@ exports[`FormField renders with Select  1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c3 c4 c5"
-        color="gray"
+        className="c3 c4"
+        color="text.light"
         fill="currentcolor"
         focusable={false}
         height={24}
@@ -610,15 +607,12 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
 }
 
-.c6 {
-  outline: none;
-}
-
 .c2 {
   outline: none;
 }
 
-.c7 {
+.c6 {
+  outline: none;
   pointer-events: none;
 }
 
@@ -715,8 +709,8 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c5 c6 c7"
-        color="gray"
+        className="c5 c6"
+        color="text.light"
         fill="currentcolor"
         focusable={false}
         height={24}

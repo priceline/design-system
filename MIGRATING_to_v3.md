@@ -31,6 +31,9 @@ import { ThumbsUp } from 'pcln-icons
 } />
 ```
 
+- Hug
+  - Icon prop now takes a `node` instead of an icon name
+
 ### Icons (`pcln-icons`)
 
 - `main` and `module` fields in `package.json` now point to CommonJS (CJS) and ES Modules (ESM) builds, respectively.
