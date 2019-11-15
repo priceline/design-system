@@ -20,7 +20,7 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
   } else {
     return (
       <Component
-        title={title}
+        title={title || name}
         desc={desc}
         titleId={titleId}
         descId={descId}

@@ -1,7 +1,11 @@
 import React from 'react'
 import TestRenderer from 'react-test-renderer'
 
-import { Icon, Airplane as AirplaneIcon, Ac as AcIcon } from '../'
+import {
+  Airplane as AirplaneIcon,
+  Accessible as AccessibleIcon,
+  Icon
+} from '../'
 
 import * as icons from '../'
 const iconList = Object.keys(icons).map(key => [key, icons[key]])
@@ -12,16 +16,10 @@ test.each(iconList)('renders %s', (key, Component) => {
 })
 
 describe('Icon', () => {
-  test('renders custom icon', () => {
-    const expected = TestRenderer.create(<AirplaneIcon />).toJSON()
-    const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
-    expect(json).toEqual(expected)
-  })
-
-  test('renders material design icon', () => {
-    const expected = TestRenderer.create(<AcIcon />).toJSON()
-    const json = TestRenderer.create(<Icon name="Ac" />).toJSON()
-    expect(json).toEqual(expected)
+  test('defaults title to name if not provided', () => {
+    const testRenderer = TestRenderer.create(<Icon name="Accessible" />)
+    const testInstance = testRenderer.root
+    expect(testInstance.children[0].props.title).toBe('Accessible')
   })
 
   describe.skip('SVG Icon Accessibility', () => {
@@ -47,8 +45,7 @@ describe('Icon', () => {
 
     test(`render svg <Icon /> with accessibility attributes when 'title' and 'desc' props are passed`, () => {
       const testRenderer = TestRenderer.create(
-        <Icon
-          name="Accessible"
+        <AccessibleIcon
           title="Accessible Logo"
           titleId="accessible-logo"
           desc="Accessible Logo description"
@@ -73,11 +70,7 @@ describe('Icon', () => {
 
     test(`render svg <Icon /> with 'aria-hidden' as 'true' when 'title' prop is not passed`, () => {
       const testRenderer = TestRenderer.create(
-        <Icon
-          name="Accessible"
-          desc="Accessible Logo description"
-          descId="descId"
-        />
+        <AccessibleIcon desc="Accessible Logo description" descId="descId" />
       )
       const testInstance = testRenderer.root
       const title = testInstance.findAll(el => el.type == 'title')
@@ -109,7 +102,7 @@ describe('Icon', () => {
 
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
       const testRenderer = TestRenderer.create(
-        <Icon name="Accessible" title="Accessible Logo" />
+        <AccessibleIcon title="Accessible Logo" />
       )
 
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
@@ -129,13 +122,6 @@ describe('Icon', () => {
       const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
       expect(json).toEqual(namedJson)
       expect(json).toHaveStyleRule('outline', 'none')
-    })
-  })
-
-  describe('propTypes', () => {
-    it('should warn when provided an invalid name', () => {
-      const err = Icon.propTypes.name({ name: 'foo' }, 'name', 'Test')
-      expect(err instanceof Error).toBe(true)
     })
   })
 })
