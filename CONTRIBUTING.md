@@ -27,6 +27,7 @@ Contributing doesn't necessarily mean commiting code, we also encourage you to:
 - Join in on discussions in issues and PRs
 - Help write documentation
 - Use the Design System in your project and provide feedback
+- Add yourself to our contributors list using `npm run contributors:add` then enter your username and type of contribution.
 
 ### Local Development
 
