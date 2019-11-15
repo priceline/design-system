@@ -13,7 +13,7 @@
     "codecov": "npx codecov",
     "start": "start-storybook -p 8000 -c storybook",
     "storybook": "build-storybook -c storybook -o docs/out/storybook",
-    "create-component": "npm run plop"
+    "create-component": "plop"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
