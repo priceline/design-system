@@ -13,7 +13,9 @@
     "codecov": "npx codecov",
     "start": "start-storybook -p 8000 -c storybook",
     "storybook": "build-storybook -c storybook -o docs/out/storybook",
-    "create-component": "npm run plop"
+    "create-component": "npm run plop",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -32,6 +34,7 @@
     "@storybook/react": "^4.1.18",
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
+    "all-contributors-cli": "^6.11.0",
     "babel-loader": "^8.0.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
