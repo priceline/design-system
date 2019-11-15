@@ -31,6 +31,9 @@ import { ThumbsUp } from 'pcln-icons
 } />
 ```
 
+- Hug
+  - Icon prop now takes a `node` instead of an icon name
+
 ### Icons (`pcln-icons`)
 
 - `main` and `module` fields in `package.json` now point to CommonJS (CJS) and ES Modules (ESM) builds, respectively.
@@ -43,3 +46,6 @@ import { ThumbsUp } from 'pcln-icons
 ## Enhancements
 
 - Image now supports responsive widths via `width` prop
+- Link now uses dark shade of `color` prop on hover
+- Banner now supports a node as its `header` prop in addition to strings
+- Popover now supports trapping focus inside of the popup via `trapFocus` prop
