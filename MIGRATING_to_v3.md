@@ -36,19 +36,12 @@ import { ThumbsUp } from 'pcln-icons
 />
 ```
 
-- Banner and Hug
-  - `iconName` prop are removed
-  - added `icon` prop of type node.
-- Example:
-
-```
-import { Banner } from 'pcln-design-system'
-import { ThumbsUp } from 'pcln-icons'
-
-<Banner
-    icon={<ThumbsUp />}
-/>
-```
+- Components that now take a `node` instead of an icon name
+  - Icon
+  - Hug
+  - Banner
+  - Step
+  - Select
 
 - Text
   - Added `textShadowSize` and `enableTextShadow` props
