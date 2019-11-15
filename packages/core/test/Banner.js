@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner, Text, theme } from '../src'
+import { Banner, Text, Heading, theme } from '../src'
 
 describe('Banner', () => {
   test('renders with no props other than theme', () => {
@@ -143,5 +143,20 @@ describe('Banner', () => {
       </Banner>
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+
+  test('renders with header node', () => {
+    const { asFragment, getByText } = renderWithTheme(
+      <Banner
+        header={<Heading>Hello world</Heading>}
+        text={<Text>Text</Text>}
+        iconName="star"
+        iconSize={20}
+        theme={theme}
+      />
+    )
+
+    getByText(/Hello world/)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

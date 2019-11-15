@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 import { DraggableParent, DraggableItem } from 'react-draggable-playground'
 import styled from 'styled-components'
 import {
@@ -14,7 +15,6 @@ import {
   BackgroundImage,
   Absolute,
   Link,
-  Stamp,
   Icon
 } from 'pcln-design-system'
 import Component from '@reach/component-component'
@@ -22,6 +22,7 @@ import Slider from '../../slider/src'
 import Popover from '../src'
 
 storiesOf('Popover', module)
+  .addDecorator(withKnobs)
   .add('Playground', () => (
     <React.Fragment>
       <Playground>
@@ -31,6 +32,7 @@ storiesOf('Popover', module)
           ariaLabel={'Price Guidance PopOver'}
           idx={1}
           width={370}
+          trapFocus={boolean('Trap focus', false)}
         >
           <Button>Popover</Button>
         </Popover>

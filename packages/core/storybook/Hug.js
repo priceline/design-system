@@ -1,5 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { withKnobs, select } from '@storybook/addon-knobs'
+import { ThumbsUp } from 'pcln-icons'
 import { Hug, Hide, Card, Text } from '../src'
 
 const text = (
@@ -20,6 +22,7 @@ const responsiveText = (
 )
 
 storiesOf('Hug', module)
+  .addDecorator(withKnobs)
   .add('With a card inside', () => (
     <Hug text={text}>
       <Card p={3} bg="white" color="text">
@@ -62,8 +65,11 @@ storiesOf('Hug', module)
       text={responsiveText}
       p={2}
       fontSize={[0, 1]}
-      icon="thumbsUp"
-      iconDisplay={['none', 'unset']}
+      icon={<ThumbsUp />}
+      iconDisplay={select('Display', {
+        Block: 'block',
+        None: 'none'
+      })}
     >
       <Card p={3} bg="white" color="text">
         I‘m a card within a hug!

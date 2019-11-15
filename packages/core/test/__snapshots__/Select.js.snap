@@ -23,9 +23,6 @@ exports[`Select renders 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c4 {
   pointer-events: none;
 }
 
@@ -83,8 +80,8 @@ exports[`Select renders 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3 c4"
-    color="gray"
+    className="c2 c3"
+    color="text.light"
     fill="currentcolor"
     focusable={false}
     height={24}
