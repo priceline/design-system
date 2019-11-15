@@ -21,6 +21,7 @@
   - Use `<Button color='secondary'>...</Button` or `<Button color='error'>...</Button>` instead
 - OutlineButton `<OutlineButton />` has been removed
   - Use `<Button variation='outline'>...</Button>` instead
+- `bg` prop has been marked as deprecated in favor of `color`
 - Icon `<Icon name="iconName" />` has been removed
 - IconButton
   - `name`, `size` and `color` props are removed

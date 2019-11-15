@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
 import PopoverContent from './PopoverContent'
 
+import { deprecatedPropType } from '../../core/src/utils'
+
 class Popover extends Component {
   constructor(props) {
     super(props)
@@ -92,7 +94,7 @@ Popover.propTypes = {
   ariaLabel: PropTypes.string,
   className: PropTypes.string,
   p: PropTypes.number,
-  bg: PropTypes.string,
+  bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,

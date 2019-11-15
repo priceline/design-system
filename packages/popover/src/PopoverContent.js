@@ -5,9 +5,11 @@ import styled from 'styled-components'
 import { Popper } from 'react-popper'
 import { Box, theme } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
+
 import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
 import Overlay from './Overlay'
 import PopoverArrow from './Arrow'
+import { deprecatedPropType } from '../../core/src/utils'
 
 class PopoverContent extends Component {
   componentDidMount() {
@@ -151,7 +153,7 @@ PopoverContent.propTypes = {
   className: PropTypes.string,
   theme: PropTypes.object,
   p: PropTypes.number,
-  bg: PropTypes.string,
+  bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,

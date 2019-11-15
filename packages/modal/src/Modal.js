@@ -6,6 +6,8 @@ import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, Flex } from 'pcln-design-system'
 
+import { deprecatedPropType } from '../../core/src/utils'
+
 const OVERLAY_ANIMATION = transitionState => `
   opacity: 0;
   transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
@@ -216,7 +218,7 @@ Modal.propTypes = {
   disableCloseButton: PropTypes.bool,
   enableOverflow: PropTypes.bool,
   onClose: PropTypes.func,
-  bg: PropTypes.string,
+  bg: deprecatedPropType('color'),
   zIndex: PropTypes.number,
   title: PropTypes.string,
   headerBg: PropTypes.string,

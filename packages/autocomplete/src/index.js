@@ -10,6 +10,8 @@ import {
 } from 'pcln-design-system'
 import { themeGet } from 'styled-system'
 
+import { deprecatedPropType } from '../../core/src/utils'
+
 export const AutocompleteContext = React.createContext()
 
 export const withAutocomplete = (Component, mapProps) =>
@@ -46,6 +48,10 @@ MenuCard.defaultProps = {
   borderWidth: 0,
   boxShadowSize: 'lg',
   mt: 1
+}
+
+MenuCard.propTypes = {
+  bg: deprecatedPropType('color')
 }
 
 const MenuRoot = React.forwardRef((props, ref) => (

@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { themeGet, space } from 'styled-system'
-import { applyVariations, color, deprecatedColorValue } from './utils'
+import {
+  applyVariations,
+  color,
+  deprecatedColorValue,
+  deprecatedPropType
+} from './utils'
 
 const type = props => {
   const badgeColors = {
@@ -64,7 +69,7 @@ Badge.displayName = 'Badge'
 Badge.propTypes = {
   ...space.propTypes,
   color: deprecatedColorValue(),
-  bg: deprecatedColorValue()
+  bg: deprecatedPropType('color')
 }
 
 Badge.defaultProps = {
