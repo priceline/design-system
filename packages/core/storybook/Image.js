@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Image, Box } from '../src'
+import { Image } from '../src'
 
 const description = 'A low-level layout component that renders an image'
 
@@ -16,8 +16,9 @@ storiesOf('Image', module)
     ))
   )
 
-  .add('Responsive width, with Box', () => (
-    <Box width={1 / 2}>
-      <Image src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg" />
-    </Box>
+  .add('Responsive width', () => (
+    <Image
+      width={1 / 2}
+      src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg"
+    />
   ))

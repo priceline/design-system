@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Popper } from 'react-popper'
 import { Box, theme } from 'pcln-design-system'
+import FocusLock from 'react-focus-lock'
 import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
 import Overlay from './Overlay'
 import PopoverArrow from './Arrow'
@@ -45,7 +46,7 @@ class PopoverContent extends Component {
   }
 
   render() {
-    const { onCloseRequest } = this.props
+    const { onCloseRequest, trapFocus, renderContent } = this.props
     const styleProps = {
       theme: this.props.theme,
       background: this.props.bg,
@@ -53,6 +54,18 @@ class PopoverContent extends Component {
       zIndex: this.props.zIndex,
       width: this.props.width
     }
+
+    const content = trapFocus ? (
+      <FocusLock>
+        {renderContent({
+          handleClose: onCloseRequest
+        })}
+      </FocusLock>
+    ) : (
+      renderContent({
+        handleClose: onCloseRequest
+      })
+    )
 
     return ReactDOM.createPortal(
       <React.Fragment>
@@ -86,9 +99,7 @@ class PopoverContent extends Component {
                 tabIndex="-1"
               >
                 <Box id={`popover-description-${this.props.idx}`}>
-                  {this.props.renderContent({
-                    handleClose: onCloseRequest
-                  })}
+                  {content}
                 </Box>
               </ContentContainer>
               <PopoverArrow
@@ -145,7 +156,8 @@ PopoverContent.propTypes = {
   placement: PropTypes.string,
   zIndex: PropTypes.number,
   width: PropTypes.number,
-  overlayOpacity: PropTypes.number
+  overlayOpacity: PropTypes.number,
+  trapFocus: PropTypes.bool
 }
 
 PopoverContent.defaultProps = {
