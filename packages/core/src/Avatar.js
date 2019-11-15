@@ -7,24 +7,27 @@ import Text from './Text'
 import { User } from 'pcln-icons'
 
 const StyledImage = styled(Flex)`
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-size: 40px;
+  width: ${props => props.size || 40}px;
+  height: ${props => props.size || 40}px;
+  background-size: ${props => props.size || 40}px;
   background-image: url(${props => props.src});
 `
 
-function Avatar({ className, title, subTitle, src, color }) {
+function Avatar({ className, title, subtitle, src, initials, size, color }) {
   return (
     <Flex className={className}>
-      <StyledImage src={src} color={color} p={2}>
-        {!src && <User />}
+      <StyledImage src={src} size={size} color={color} p={2}>
+        {!src && initials && <Text fontSize={1}>{initials.toUpperCase()}</Text>}
+        {!src && !initials && <User />}
       </StyledImage>
       {title && (
         <Flex flexDirection="column" justifyContent="center" ml={3}>
           <Heading.h5 m={0}>{title}</Heading.h5>
           <Text color="text.light" fontSize={0}>
-            {subTitle}
+            {subtitle}
           </Text>
         </Flex>
       )}
@@ -37,8 +40,10 @@ Avatar.displayName = 'Avatar'
 Avatar.propTypes = {
   className: PropTypes.string,
   title: PropTypes.string,
-  subTitle: PropTypes.string,
+  subtitle: PropTypes.string,
   src: PropTypes.string,
+  initials: PropTypes.string,
+  size: PropTypes.number,
   color: PropTypes.string
 }
 

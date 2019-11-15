@@ -392,6 +392,13 @@ exports[`Banner renders with header node 1`] = `
   font-size: 14px;
 }
 
+.c5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0px;
+}
+
 .c2 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -408,13 +415,6 @@ exports[`Banner renders with header node 1`] = `
   text-align: left;
   background-color: #0a0;
   color: #fff;
-}
-
-.c5 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
 }
 
 <div

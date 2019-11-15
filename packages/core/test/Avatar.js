@@ -9,11 +9,16 @@ describe('Avatar', () => {
     expect(json).toMatchSnapshot()
   })
 
+  test('renders initials', () => {
+    const json = rendererCreateWithTheme(<Avatar initials="WS" />)
+    expect(json).toMatchSnapshot()
+  })
+
   test('renders mr elon', () => {
     const json = rendererCreateWithTheme(
       <Avatar
         title="Not Elon Musk"
-        subTitle="totally.not.elon@musk.com"
+        subtitle="totally.not.elon@musk.com"
         src={elonJPG}
       />
     ).toJSON()
