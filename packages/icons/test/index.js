@@ -24,6 +24,12 @@ describe('Icon', () => {
     expect(json).toEqual(expected)
   })
 
+  test('defaults title to name if not provided', () => {
+    const testRenderer = TestRenderer.create(<Icon name="Accessible" />)
+    const testInstance = testRenderer.root
+    expect(testInstance.children[0].props.title).toBe('Accessible')
+  })
+
   describe.skip('SVG Icon Accessibility', () => {
     test.each(iconList)(
       'renders %s with accessibility attributes when title and desc is passed ',
