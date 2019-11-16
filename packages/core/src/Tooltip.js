@@ -108,7 +108,7 @@ const defaultProps = {
   zIndex: 'auto'
 }
 
-const Tooltip = ({ children, align, ...props }) => {
+const Tooltip = ({ children, ...props }) => {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>
