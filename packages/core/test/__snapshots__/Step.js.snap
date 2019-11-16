@@ -69,6 +69,7 @@ exports[`Step renders as active and completed 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
+  width: 16px;
   color: #007aff;
 }
 
@@ -154,6 +155,7 @@ exports[`Step renders completed step 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 4px;
+  width: 16px;
   color: #007aff;
 }
 
