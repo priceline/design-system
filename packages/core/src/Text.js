@@ -31,6 +31,13 @@ export const regular = props =>
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
+export const textShadow = props => {
+  const textShadowSize = props.textShadowSize || 'md'
+  return props.enableTextShadow
+    ? { textShadow: props.theme.textShadows[textShadowSize] }
+    : null
+}
+
 const Text = mapProps(({ align, ...props }) => ({
   textAlign: align,
   ...props
@@ -50,6 +57,7 @@ const Text = mapProps(({ align, ...props }) => ({
   ${caps}
   ${regular}
   ${bold}
+  ${textShadow}
 `)
 
 Text.displayName = 'Text'
@@ -65,6 +73,8 @@ Text.propTypes = {
   caps: PropTypes.bool,
   regular: PropTypes.bool,
   bold: PropTypes.bool,
+  enableTextShadow: PropTypes.bool,
+  textShadowSize: PropTypes.oneOf(['sm', 'md']),
   align: deprecatedPropType('textAlign')
 }
 

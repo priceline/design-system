@@ -128,6 +128,11 @@ export const boxShadows = [
   `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`
 ]
 
+export const textShadows = {
+  sm: `0 1px 2px rgba(0,0,0,0.5)`,
+  md: `0 2px 4px rgba(0,0,0,0.5)`
+}
+
 // animation duration
 export const duration = {
   fast: `150ms`,
@@ -180,6 +185,7 @@ const theme = {
   radii,
   radius,
   boxShadows,
+  textShadows,
   maxContainerWidth,
   duration,
   timingFunctions,
