@@ -49,6 +49,10 @@ import { ThumbsUp } from 'pcln-icons'
 />
 ```
 
+- Text
+  - Added `textShadowSize` and `enableTextShadow` props
+  - Changed default fontSize behavior of Heading to be more inline with Heading styles
+
 ### Icons (`pcln-icons`)
 
 - `main` and `module` fields in `package.json` now point to CommonJS (CJS) and ES Modules (ESM) builds, respectively.
@@ -68,5 +72,6 @@ import { ThumbsUp } from 'pcln-icons'
 - Input and TextArea now use `borders` instead of `box-shadow`, to prevent misalignments with other components like Select
 
 ## New Components
+
 - Avatar
 - Breadcrumbs

@@ -143,13 +143,13 @@ exports[`Avatar renders mr elon 1`] = `
   flex-direction: column;
 }
 
+.c3 {
+  margin: 0px;
+}
+
 .c4 {
   color: #4f6f8f;
   font-size: 12px;
-}
-
-.c3 {
-  margin: 0px;
 }
 
 .c1 {

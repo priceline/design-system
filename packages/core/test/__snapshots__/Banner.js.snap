@@ -392,15 +392,8 @@ exports[`Banner renders with header node 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
-  font-size: 14px;
-}
-
 .c5 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0px;
+  font-size: 14px;
 }
 
 .c2 {
@@ -449,12 +442,12 @@ exports[`Banner renders with header node 1`] = `
         width="1"
       >
         <h3
-          class="c5"
+          class=""
         >
           Hello world
         </h3>
         <span
-          class="c6"
+          class="c5"
           font-size="1"
         >
           <div
