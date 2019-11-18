@@ -54,3 +54,4 @@ import { ThumbsUp } from 'pcln-icons
 
 ## New Components
 - Avatar
+- Breadcrumbs
