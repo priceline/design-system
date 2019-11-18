@@ -65,6 +65,7 @@ const Svg = styled('svg')(
 
 Svg.propTypes = {
   ...space.propTypes,
+  ...width.propTypes,
   ...color.propTypes
 }
 
