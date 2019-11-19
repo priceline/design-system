@@ -36,7 +36,8 @@ import { ThumbsUp } from 'pcln-icons
 />
 ```
 
-- Components that now take a `node` instead of an icon name
+- Components that now take an `icon` node instead of an `iconName` string
+
   - Icon
   - Hug
   - Banner
