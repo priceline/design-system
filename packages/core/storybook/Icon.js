@@ -10,10 +10,19 @@ storiesOf('Icon', module)
     <Box p={2} color="primary">
       <Flex wrap>
         {keys.map(name => (
-          <Box key={name} width={[1 / 3, 1 / 5, 1 / 6, 1 / 8]} mx={2} my={3}>
+          <Flex
+            key={name}
+            flexDirection="column"
+            alignItems="center"
+            width={[1 / 3, 1 / 5, 1 / 6, 1 / 8]}
+            mx={2}
+            my={3}
+          >
             <Icon name={name} size={48} />
-            <Truncate fontSize={0}>{name}</Truncate>
-          </Box>
+            <Truncate fontSize={0} mt={1}>
+              {name}
+            </Truncate>
+          </Flex>
         ))}
       </Flex>
     </Box>

@@ -17,6 +17,10 @@
 ### Core (`pcln-design-system`)
 
 - peerDependency increase: `pcln-icons >=3`
+- GreenButton and RedButton have been removed
+  - Use `<Button color='secondary'>...</Button` or `<Button color='error'>...</Button>` instead
+- OutlineButton `<OutlineButton />` has been removed
+  - Use `<Button variation='outline'>...</Button>` instead
 - Icon `<Icon name="iconName" />` has been removed
 - IconButton
   - `name`, `size` and `color` props are removed
@@ -26,13 +30,24 @@
 import { IconButton } from 'pcln-design-system
 import { ThumbsUp } from 'pcln-icons
 
-<IconButton icon={
-  <ThumbsUp size={32} color='primary' />>
-} />
+<IconButton
+    icon={<ThumbsUp size={32} color='primary' />}
+/>
 ```
 
-- Hug
-  - Icon prop now takes a `node` instead of an icon name
+- Banner and Hug
+  - `iconName` prop are removed
+  - added `icon` prop of type node.
+- Example:
+
+```
+import { Banner } from 'pcln-design-system'
+import { ThumbsUp } from 'pcln-icons'
+
+<Banner
+    icon={<ThumbsUp />}
+/>
+```
 
 ### Icons (`pcln-icons`)
 

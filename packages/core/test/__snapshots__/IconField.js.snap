@@ -97,9 +97,6 @@ exports[`IconField renders 1`] = `
     viewBox="0 0 24 24"
     width={24}
   >
-    <title>
-      Calendar
-    </title>
     <path
       d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
     />
@@ -131,6 +128,16 @@ exports[`IconField renders icon button 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c4 {
+  outline: none;
 }
 
 .c2 {
@@ -249,7 +256,6 @@ exports[`IconField renders icon button 1`] = `
   />
   <button
     className="c2"
-    name="close"
     style={
       Object {
         "alignSelf": "center",
@@ -261,7 +267,23 @@ exports[`IconField renders icon button 1`] = `
       }
     }
   >
-    <div />
+    <div>
+      <svg
+        aria-hidden={true}
+        className="c3 c4"
+        fill="currentcolor"
+        focusable={false}
+        height={24}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={24}
+      >
+        <path
+          d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+        />
+      </svg>
+    </div>
   </button>
 </div>
 `;
@@ -282,6 +304,10 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 .c2 {
+  outline: none;
+}
+
+.c5 {
   outline: none;
 }
 
@@ -402,9 +428,6 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     viewBox="0 0 24 24"
     width={24}
   >
-    <title>
-      Calendar
-    </title>
     <path
       d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
     />
@@ -429,7 +452,6 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   />
   <button
     className="c4"
-    name="close"
     style={
       Object {
         "alignSelf": "center",
@@ -441,7 +463,23 @@ exports[`IconField renders icon, input and icon button together 1`] = `
       }
     }
   >
-    <div />
+    <div>
+      <svg
+        aria-hidden={true}
+        className="c1 c5"
+        fill="currentcolor"
+        focusable={false}
+        height={24}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={24}
+      >
+        <path
+          d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+        />
+      </svg>
+    </div>
   </button>
 </div>
 `;
