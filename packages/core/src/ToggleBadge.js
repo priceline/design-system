@@ -2,7 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize } from 'styled-system'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
+import {
+  applyVariations,
+  getPaletteColor,
+  deprecatedColorValue,
+  deprecatedPropType
+} from './utils'
 
 const ToggleBadge = styled.button`
   border-radius: ${props => props.theme.radius};
@@ -31,7 +36,7 @@ ToggleBadge.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
   color: deprecatedColorValue(),
-  bg: deprecatedColorValue()
+  bg: deprecatedPropType('color')
 }
 
 ToggleBadge.defaultProps = {

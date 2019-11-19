@@ -5,13 +5,18 @@ import Text from './Text'
 import CloseButton from './CloseButton'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
-import { applyVariations, hasPaletteColor, deprecatedColorValue } from './utils'
 import {
   Attention as AttentionIcon,
   Information as InformationIcon,
   Success as SuccessIcon,
   Warning as WarningIcon
 } from 'pcln-icons'
+import {
+  applyVariations,
+  hasPaletteColor,
+  deprecatedColorValue,
+  deprecatedPropType
+} from './utils'
 
 const bannerColors = {
   green: {
@@ -110,7 +115,7 @@ Banner.propTypes = {
   text: PropTypes.node,
   textAlign: PropTypes.string,
   color: deprecatedColorValue(),
-  bg: deprecatedColorValue()
+  bg: deprecatedPropType('color')
 }
 
 Banner.defaultProps = {

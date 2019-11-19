@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { fontWeight, borderRadius } from 'styled-system'
 import Box from './Box'
-import { applyVariations } from './utils'
+import { applyVariations, deprecatedPropType } from './utils'
 
 const RatingBadge = styled(Box)`
   display: inline-block;
@@ -20,7 +20,8 @@ RatingBadge.defaultProps = {
 
 RatingBadge.propTypes = {
   ...fontWeight.propTypes,
-  ...borderRadius.propTypes
+  ...borderRadius.propTypes,
+  bg: deprecatedPropType('color')
 }
 
 export default RatingBadge
