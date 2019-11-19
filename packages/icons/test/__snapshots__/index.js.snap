@@ -5,6 +5,7 @@ exports[`renders Ac 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -33,6 +34,7 @@ exports[`renders Accessible 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -61,6 +63,7 @@ exports[`renders Airplane 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -89,6 +92,7 @@ exports[`renders Arrival 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -117,6 +121,7 @@ exports[`renders ArrowDown 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -145,6 +150,7 @@ exports[`renders ArrowLeft 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -173,6 +179,7 @@ exports[`renders ArrowRight 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -201,6 +208,7 @@ exports[`renders ArrowUp 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -229,6 +237,7 @@ exports[`renders Attention 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -257,6 +266,7 @@ exports[`renders Automatic 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -285,6 +295,7 @@ exports[`renders Bag 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -313,6 +324,7 @@ exports[`renders Beach 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -341,6 +353,7 @@ exports[`renders Bed 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -369,6 +382,7 @@ exports[`renders BoxChecked 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -397,6 +411,7 @@ exports[`renders BoxEmpty 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -425,6 +440,7 @@ exports[`renders BoxMinus 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -453,6 +469,7 @@ exports[`renders BoxPlus 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -481,6 +498,7 @@ exports[`renders Breakfast 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -509,6 +527,7 @@ exports[`renders Build 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -537,6 +556,7 @@ exports[`renders Business 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -565,6 +585,7 @@ exports[`renders Cake 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -593,6 +614,7 @@ exports[`renders Calendar 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -621,6 +643,7 @@ exports[`renders CarCircle 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -649,6 +672,7 @@ exports[`renders CarDoor 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -677,6 +701,7 @@ exports[`renders Carriage 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -705,6 +730,7 @@ exports[`renders Cars 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -733,6 +759,7 @@ exports[`renders Casino 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -761,6 +788,7 @@ exports[`renders Chart 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -789,6 +817,7 @@ exports[`renders Chat 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -817,6 +846,7 @@ exports[`renders Check 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -845,6 +875,7 @@ exports[`renders ChevronDown 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -873,6 +904,7 @@ exports[`renders ChevronLeft 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -901,6 +933,7 @@ exports[`renders ChevronRight 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -929,6 +962,7 @@ exports[`renders ChevronUp 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -957,6 +991,7 @@ exports[`renders CityView 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -985,6 +1020,7 @@ exports[`renders Clock 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1013,6 +1049,7 @@ exports[`renders Close 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1041,6 +1078,7 @@ exports[`renders Cloud 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1069,6 +1107,7 @@ exports[`renders CollisionCoverage 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1097,6 +1136,7 @@ exports[`renders Coupon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1125,6 +1165,7 @@ exports[`renders CreditCard 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1153,6 +1194,7 @@ exports[`renders Cruises 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1181,6 +1223,7 @@ exports[`renders Departure 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1209,6 +1252,7 @@ exports[`renders Devices 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1237,6 +1281,7 @@ exports[`renders Directions 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1265,6 +1310,7 @@ exports[`renders Discount 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1293,6 +1339,7 @@ exports[`renders Document 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1321,6 +1368,7 @@ exports[`renders Dollar 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1349,6 +1397,7 @@ exports[`renders DollarCircle 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1377,6 +1426,7 @@ exports[`renders Dot 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1405,6 +1455,7 @@ exports[`renders DoubleOccupancy 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1433,6 +1484,7 @@ exports[`renders EarlyBird 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1461,6 +1513,7 @@ exports[`renders Edit 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1489,6 +1542,7 @@ exports[`renders Electric 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1517,6 +1571,7 @@ exports[`renders Email 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1545,6 +1600,7 @@ exports[`renders Emoticon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1573,6 +1629,7 @@ exports[`renders Event 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1601,6 +1658,7 @@ exports[`renders EventAvailable 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1629,6 +1687,7 @@ exports[`renders EventBusy 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1657,6 +1716,7 @@ exports[`renders ExternalLink 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1686,6 +1746,7 @@ exports[`renders Facebook 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1714,6 +1775,7 @@ exports[`renders FavoriteHotel 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1742,6 +1804,7 @@ exports[`renders Filter 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1770,6 +1833,7 @@ exports[`renders Fitness 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1798,6 +1862,7 @@ exports[`renders Flame 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1826,6 +1891,7 @@ exports[`renders FlightCircle 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1854,6 +1920,7 @@ exports[`renders FlightCoverage 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1882,6 +1949,7 @@ exports[`renders Flights 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1910,6 +1978,7 @@ exports[`renders FreeCancellation 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1938,6 +2007,7 @@ exports[`renders Fridge 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1966,6 +2036,7 @@ exports[`renders Gallery 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -1994,6 +2065,7 @@ exports[`renders Gas 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2022,6 +2094,7 @@ exports[`renders Globe 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2050,6 +2123,7 @@ exports[`renders Golf 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2078,6 +2152,7 @@ exports[`renders Gps 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2106,6 +2181,7 @@ exports[`renders Graph 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2134,6 +2210,7 @@ exports[`renders Grid 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2162,6 +2239,7 @@ exports[`renders GuestScore 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2190,6 +2268,7 @@ exports[`renders Guests 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2218,6 +2297,7 @@ exports[`renders Help 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2246,6 +2326,7 @@ exports[`renders History 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2274,6 +2355,7 @@ exports[`renders Home 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2302,6 +2384,7 @@ exports[`renders HotelCircle 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2330,6 +2413,7 @@ exports[`renders Hotels 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2358,6 +2442,7 @@ exports[`renders House 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2386,6 +2471,7 @@ exports[`renders Hybrid 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2416,6 +2502,7 @@ exports[`renders Inclusive 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2444,6 +2531,7 @@ exports[`renders Information 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2472,6 +2560,7 @@ exports[`renders InformationOutline 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2500,6 +2589,7 @@ exports[`renders Instagram 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2528,6 +2618,7 @@ exports[`renders Key 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2556,6 +2647,7 @@ exports[`renders Kitchenette 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2584,6 +2676,7 @@ exports[`renders Laptop 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2612,6 +2705,7 @@ exports[`renders LateNight 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2640,6 +2734,7 @@ exports[`renders List 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2668,6 +2763,7 @@ exports[`renders LocalBar 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2696,6 +2792,7 @@ exports[`renders Lock 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2724,6 +2821,7 @@ exports[`renders Loyalty 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2752,6 +2850,7 @@ exports[`renders Luggage 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2780,6 +2879,7 @@ exports[`renders Manual 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2808,6 +2908,7 @@ exports[`renders Map 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2836,6 +2937,7 @@ exports[`renders Menu 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2864,6 +2966,7 @@ exports[`renders Microwave 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2892,6 +2995,7 @@ exports[`renders Mileage 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2920,6 +3024,7 @@ exports[`renders Minus 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2948,6 +3053,7 @@ exports[`renders MultiAirline 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -2976,6 +3082,7 @@ exports[`renders MultiOccupancy 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3004,6 +3111,7 @@ exports[`renders Notification 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3032,6 +3140,7 @@ exports[`renders Overnight 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3060,6 +3169,7 @@ exports[`renders Parking 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3088,6 +3198,7 @@ exports[`renders Pets 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3116,6 +3227,7 @@ exports[`renders Phone 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3144,6 +3256,7 @@ exports[`renders Picture 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3172,6 +3285,7 @@ exports[`renders Pin 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3200,6 +3314,7 @@ exports[`renders Plus 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3228,6 +3343,7 @@ exports[`renders Pool 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3256,6 +3372,7 @@ exports[`renders Printer 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3284,6 +3401,7 @@ exports[`renders Quilt 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3312,6 +3430,7 @@ exports[`renders RadioChecked 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3340,6 +3459,7 @@ exports[`renders RadioEmpty 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3368,6 +3488,7 @@ exports[`renders RadioMinus 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3396,6 +3517,7 @@ exports[`renders RadioPlus 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3424,6 +3546,7 @@ exports[`renders Refresh 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3452,6 +3575,7 @@ exports[`renders Restaurant 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3480,6 +3604,7 @@ exports[`renders Ribbon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3508,6 +3633,7 @@ exports[`renders RoomSize 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3536,6 +3662,7 @@ exports[`renders Rowing 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3564,6 +3691,7 @@ exports[`renders Search 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3592,6 +3720,7 @@ exports[`renders SearchRecent 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3620,6 +3749,7 @@ exports[`renders Seat 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3648,6 +3778,7 @@ exports[`renders SeatBusiness 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3676,6 +3807,7 @@ exports[`renders SeatEconomy 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3704,6 +3836,7 @@ exports[`renders Security 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3732,6 +3865,7 @@ exports[`renders Shuttle 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3760,6 +3894,7 @@ exports[`renders SingleOccupancy 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3788,6 +3923,7 @@ exports[`renders Smoking 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3816,6 +3952,7 @@ exports[`renders Spa 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3844,6 +3981,7 @@ exports[`renders SplitTicket 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3872,6 +4010,7 @@ exports[`renders Star 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3900,6 +4039,7 @@ exports[`renders StarHalf 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3928,6 +4068,7 @@ exports[`renders SteeringWheel 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3956,6 +4097,7 @@ exports[`renders Success 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -3984,6 +4126,7 @@ exports[`renders SuccessOutline 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4012,6 +4155,7 @@ exports[`renders Swap 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4040,6 +4184,7 @@ exports[`renders ThumbsDown 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4068,6 +4213,7 @@ exports[`renders ThumbsUp 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4096,6 +4242,7 @@ exports[`renders Timer 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4124,6 +4271,7 @@ exports[`renders TrendingUp 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4152,6 +4300,7 @@ exports[`renders Trophy 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4180,6 +4329,7 @@ exports[`renders Tune 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4208,6 +4358,7 @@ exports[`renders Twitter 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4236,6 +4387,7 @@ exports[`renders Unlock 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4264,6 +4416,7 @@ exports[`renders User 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4292,6 +4445,7 @@ exports[`renders Verified 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4320,6 +4474,7 @@ exports[`renders Warning 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4348,6 +4503,7 @@ exports[`renders WarningOutline 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4376,6 +4532,7 @@ exports[`renders Web 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4404,6 +4561,7 @@ exports[`renders Whirlpool 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4432,6 +4590,7 @@ exports[`renders Wifi 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4460,6 +4619,7 @@ exports[`renders Youtube 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {
@@ -4488,6 +4648,7 @@ exports[`renders ZoomOut 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c1 {

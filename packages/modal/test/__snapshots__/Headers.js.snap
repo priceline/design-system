@@ -5,6 +5,7 @@ exports[`ModalHeader render 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c6 {

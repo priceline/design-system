@@ -18,6 +18,7 @@ exports[`Select renders 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  width: 24px;
   color: #4f6f8f;
 }
 

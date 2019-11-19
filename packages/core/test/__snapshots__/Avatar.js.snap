@@ -12,6 +12,7 @@ exports[`Avatar renders default 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {

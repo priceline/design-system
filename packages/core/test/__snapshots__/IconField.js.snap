@@ -12,6 +12,7 @@ exports[`IconField renders 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c2 {
@@ -277,6 +278,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c2 {

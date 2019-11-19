@@ -139,6 +139,7 @@ exports[`FormField renders with Icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {
@@ -305,6 +306,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {
@@ -484,6 +486,7 @@ exports[`FormField renders with Select  1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  width: 24px;
   color: #4f6f8f;
 }
 
@@ -604,6 +607,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c5 {
@@ -611,6 +615,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  width: 24px;
   color: #4f6f8f;
 }
 
