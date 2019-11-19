@@ -71,6 +71,48 @@ As well as the palette, you can also add additional styles to any component and 
 </ThemeProvider>
 ```
 
+# getPaletteColor
+
+#### getPaletteColor(color)
+
+When passing a color as the only parameter it must follow the `color.shade` pattern.
+
+For example:
+
+```js
+background-color: ${getPaletteColor('error.base')};
+```
+
+#### getPaletteColor(shade)
+
+When passing a shade as the only parameter, color must be a prop that is passed to the component being styled.
+
+For example:
+
+```js
+const StyledButton = styled(Button)`
+    background-color: ${getPaletteColor('dark')};
+`
+
+function Example () {
+    return (
+        ...
+        <StyledButton color='error'>Example Button</StyledButton>
+        ...
+    )
+}
+```
+
+#### getPaletteColor(color, shade)
+
+When passing two parameters: the first should be the color and the second should be the shade.
+
+For example:
+
+```js
+background-color: ${getPaletteColor('error', 'dark')};
+```
+
 # Testing With Theming
 
 Previously, most components had a default prop for `theme`. This was removed as the value of `theme` should always come from the `ThemeProvider`, and not directly from `theme.js`. Because of this change, some unit tests may now fail. The recommended remedy for this issue is to create a wrapper function for your test renderer that either wraps it's children in the `ThemeProvider` or sets a context value for `theme` from `createTheme()`. Some examples:
