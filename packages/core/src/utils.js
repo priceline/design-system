@@ -41,7 +41,7 @@ export const deprecatedColorValue = () => (props, propName, componentName) => {
  *
  * @returns {string} The color in rgb
  */
-const hexToRgb = color => {
+export const hexToRgb = color => {
   color = color.substring(1)
 
   let colors = color.match(new RegExp(`.{1,${color.length / 3}}`, 'g'))
@@ -64,7 +64,7 @@ const hexToRgb = color => {
  *
  * @returns {Array} An array of the color values
  */
-const decomposeColor = color => {
+export const decomposeColor = color => {
   if (color.charAt(0) === '#') {
     return decomposeColor(hexToRgb(color))
   }
@@ -85,7 +85,7 @@ const decomposeColor = color => {
  *
  * @return {Number} The luminance of the color
  */
-const getLuminance = color => {
+export const getLuminance = color => {
   const [r, g, b] = decomposeColor(color).map(val => {
     val = val / 255
     return val <= 0.03928 ? val / 12.92 : ((val + 0.055) / 1.055) ** 2.4
@@ -105,7 +105,7 @@ const getLuminance = color => {
  *
  * @return {Number} The contrast ratio
  */
-const getContrastRatio = (colorA, colorB) => {
+export const getContrastRatio = (colorA, colorB) => {
   const luminA = getLuminance(colorA)
   const luminB = getLuminance(colorB)
   return (Math.max(luminA, luminB) + 0.05) / (Math.min(luminA, luminB) + 0.05)
@@ -214,7 +214,7 @@ export const getTextColorOn = name => props => {
   return ''
 }
 
-const getByPalette = props => css`
+export const getByPalette = props => css`
   background-color: ${getPaletteColor(props.bg, 'base')(props)};
   color: ${getPaletteColor(props.color, 'base')(props)};
 `
