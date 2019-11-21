@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Flex, CloseButton, Text } from 'pcln-design-system'
-
-import { deprecatedPropType } from '../../core/src/utils'
+import { Flex, CloseButton, deprecatedPropType, Text } from 'pcln-design-system'
 
 const HeaderWrapper = styled(Flex)`
   height: 40px;

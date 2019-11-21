@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
-import { Box, CloseButton, Flex } from 'pcln-design-system'
-
-import { deprecatedPropType } from '../../core/src/utils'
+import { Box, CloseButton, deprecatedPropType, Flex } from 'pcln-design-system'
 
 const OVERLAY_ANIMATION = transitionState => `
   opacity: 0;

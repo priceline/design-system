@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
 import PopoverContent from './PopoverContent'
-
-import { deprecatedPropType } from '../../core/src/utils'
+import { deprecatedPropType } from 'pcln-design-system'
 
 class Popover extends Component {
   constructor(props) {
