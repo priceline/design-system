@@ -14,6 +14,7 @@
     "clean": "rimraf dist",
     "test": "jest"
   },
+  "files": ["dist/"],
   "author": "Priceline",
   "license": "MIT",
   "jest": {
@@ -44,12 +45,12 @@
     "jest": "^24.9.0",
     "npm-run-all": "^4.1.5",
     "pcln-design-system": "^3.0.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-focus-lock": "^2.2.1",
-    "react-test-renderer": "^16.10.2",
+    "react-test-renderer": "^16.12.0",
     "rimraf": "^3.0.0",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.1"
   },
   "engines": {
     "node": ">=8.0.0 <9.0.0 || >=10.0.0",

@@ -1,3 +1,1 @@
-const rootBabelConfig = require('../../babel.config')
-
-module.exports = rootBabelConfig
+module.exports = require('../../babel.config')
