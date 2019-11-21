@@ -7,10 +7,8 @@
   - Can now use `import { TrendingUp, Timer } from 'pcln-icons'` import syntax
 - Tree-shaking for the `autocomplete` package (`pcln-autocomplete`)
 - Tree-shaking for the `modal` package (`pcln-modal`)
-- (Need to verify) Tree-shaking for the `popover` package (`pcln-popover`)
-- (Need to verify) Tree-shaking for the `slider` package (`pcln-slider`)
-
-- Import
+- Tree-shaking for the `popover` package (`pcln-popover`)
+- Tree-shaking for the `slider` package (`pcln-slider`)
 
 ## Breaking Changes
 
