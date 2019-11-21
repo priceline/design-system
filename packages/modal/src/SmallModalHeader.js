@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Box } from 'pcln-design-system'
-
-import { deprecatedPropType } from '../../core/src/utils'
+import { Box, deprecatedPropType } from 'pcln-design-system'
 
 const HeaderBar = styled(Box)`
   height: 8px;

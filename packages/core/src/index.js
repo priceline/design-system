@@ -45,6 +45,7 @@ export { default as theme } from './theme'
 export { default as ThemeProvider } from './ThemeProvider'
 export { default as createTheme } from './createTheme'
 export {
+  deprecatedPropType,
   getPaletteColor,
   hasPaletteColor,
   getTextColorOn,

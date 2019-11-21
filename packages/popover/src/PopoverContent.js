@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Popper } from 'react-popper'
-import { Box, theme } from 'pcln-design-system'
+import { Box, theme, deprecatedPropType } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 
 import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
 import Overlay from './Overlay'
 import PopoverArrow from './Arrow'
-import { deprecatedPropType } from '../../core/src/utils'
 
 class PopoverContent extends Component {
   componentDidMount() {

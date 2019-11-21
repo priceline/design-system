@@ -5,12 +5,11 @@ import styled from 'styled-components'
 import {
   Flex,
   Card,
+  deprecatedPropType,
   Label as PclnLabel,
   Input as PclnInput
 } from 'pcln-design-system'
 import { themeGet } from 'styled-system'
-
-import { deprecatedPropType } from '../../core/src/utils'
 
 export const AutocompleteContext = React.createContext()
 
