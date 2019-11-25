@@ -45,3 +45,5 @@ Adding a `color` prop to your component will set the background color to that co
 ```
 
 You can also supply a `bg` prop to force a specified text color and background color, ignoring the recommended text color.
+
+**Note:** The `bg` prop is marked to be deprecated in `v3`.
