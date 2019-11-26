@@ -1,4 +1,5 @@
 export { default as Absolute } from './Absolute'
+export { default as Avatar } from './Avatar'
 export { default as BackgroundImage } from './BackgroundImage'
 export { default as Badge } from './Badge'
 export { default as Banner } from './Banner'
