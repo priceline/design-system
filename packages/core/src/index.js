@@ -48,10 +48,12 @@ export { default as theme } from './theme'
 export { default as ThemeProvider } from './ThemeProvider'
 export { default as createTheme } from './createTheme'
 export {
+  borders,
+  color,
+  getContrastRatio,
   getPaletteColor,
-  hasPaletteColor,
   getTextColorOn,
-  color
+  hasPaletteColor
 } from './utils'
 
 export * from './theme'
