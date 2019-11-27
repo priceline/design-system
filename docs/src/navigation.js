@@ -66,6 +66,15 @@ export default [
     ]
   },
   {
+    section: 'Utilities',
+    links: [
+      { name: 'borders', path: '/utilities/borders' },
+      { name: 'color', path: '/utilities/color' },
+      { name: 'getPaletteColor', path: '/utilities/getPaletteColor' },
+      { name: 'getTextColorOn', path: '/utilities/getTextColorOn' }
+    ]
+  },
+  {
     section: 'Resources',
     links: [
       { name: 'Motion', path: '/Motion' },
