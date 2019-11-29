@@ -21,6 +21,7 @@ exports[`BlockLink renders 1`] = `
 <a
   className="c0"
   color="primary"
+  rel={null}
 >
   raw text
 </a>

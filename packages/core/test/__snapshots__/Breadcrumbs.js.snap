@@ -60,6 +60,7 @@ exports[`Breadcrumbs renders basic 1`] = `
       className="c2"
       color="text.light"
       href="https://www.priceline.com"
+      rel={null}
     >
       Home
     </a>
@@ -77,6 +78,7 @@ exports[`Breadcrumbs renders basic 1`] = `
       className="c2"
       color="text.light"
       href="https://www.priceline.com/flights/"
+      rel={null}
     >
       Flights
     </a>
@@ -94,6 +96,7 @@ exports[`Breadcrumbs renders basic 1`] = `
       className="c4"
       color="text.dark"
       href="https://www.priceline.com/flights/"
+      rel={null}
     >
       Seat Selection
     </a>
@@ -207,6 +210,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
       className="c4"
       color="text.light"
       href="https://www.priceline.com"
+      rel={null}
     >
       Home
     </a>
@@ -240,6 +244,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
       className="c4"
       color="text.light"
       href="https://www.priceline.com/flights/"
+      rel={null}
     >
       Flights
     </a>
@@ -273,6 +278,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
       className="c9"
       color="text.dark"
       href="https://www.priceline.com/flights/"
+      rel={null}
     >
       Seat Selection
     </a>
