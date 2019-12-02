@@ -32,12 +32,14 @@ const FormField = props => {
     return child
   })
 
+  const ml = iconBefore ? '40px' : '12px'
+
   const styledLabel =
     label &&
     React.cloneElement(label, {
       htmlFor: label.props.htmlFor || id,
       fontSize: 10,
-      ml: iconBefore ? '40px' : '12px',
+      ml,
       pt: '6px',
       mb: '-20px',
       style: {
@@ -47,7 +49,8 @@ const FormField = props => {
         transitionDuration: '.1s',
         opacity: showLabel ? 1 : 0,
         pointerEvents: 'none',
-        position: 'relative'
+        position: 'relative',
+        width: `calc(100% - ${ml})`
       }
     })
 
