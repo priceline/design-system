@@ -20,7 +20,6 @@ exports[`FormField renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -158,7 +157,6 @@ exports[`FormField renders with Icon 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -325,7 +323,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;
@@ -508,7 +505,6 @@ exports[`FormField renders with Select  1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
-  border-color: #007aff;
   margin: 0px;
   padding-left: 12px;
   padding-right: 32px;
@@ -543,7 +539,6 @@ exports[`FormField renders with Select  1`] = `
     >
       <select
         className="c2 "
-        color="primary"
         fontSize={
           Array [
             2,
@@ -641,7 +636,6 @@ exports[`FormField renders with Select and Icon 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
-  border-color: #007aff;
   margin: 0px;
   padding-left: 12px;
   padding-right: 32px;
@@ -704,7 +698,6 @@ exports[`FormField renders with Select and Icon 1`] = `
     >
       <select
         className="c4 "
-        color="primary"
         fontSize={
           Array [
             2,

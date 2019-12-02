@@ -19,7 +19,6 @@ const SelectBase = styled.select`
   border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${getPaletteColor('border.base')};
 
   ${borders} ${space} ${fontSize}
   ::-ms-expand {
@@ -31,8 +30,7 @@ SelectBase.defaultProps = {
   m: 0,
   pl: 12,
   pr: 32,
-  py: 14,
-  color: 'primary'
+  py: 14
 }
 
 SelectBase.propTypes = {

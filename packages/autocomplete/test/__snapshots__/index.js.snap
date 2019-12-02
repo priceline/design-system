@@ -13,7 +13,6 @@ exports[`Autocomplete renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #c0cad5;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 12px;

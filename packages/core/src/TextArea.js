@@ -17,7 +17,7 @@ const TextArea = styled.textarea`
   color: inherit;
   background-color: transparent;
   border-radius: ${themeGet('radius')};
-  border-width: 1;
+  border-width: 1px;
   border-style: solid;
 
   padding-top: 14px;
