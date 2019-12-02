@@ -93,6 +93,7 @@ exports[`FormField renders 1`] = `
         "position": "relative",
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
+        "width": "calc(100% - 12px)",
       }
     }
   >
@@ -234,6 +235,7 @@ exports[`FormField renders with Icon 1`] = `
         "position": "relative",
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
+        "width": "calc(100% - 40px)",
       }
     }
   >
@@ -405,6 +407,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
         "position": "relative",
         "transitionDuration": ".1s",
         "transitionProperty": "opacity",
+        "width": "calc(100% - 40px)",
       }
     }
   >
