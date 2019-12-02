@@ -1,7 +1,6 @@
 const fs = require('fs')
 
 const babel = require('rollup-plugin-babel')
-const peerExternal = require('rollup-plugin-peer-deps-external')
 const commonjs = require('rollup-plugin-commonjs')
 const json = require('rollup-plugin-json')
 const resolve = require('rollup-plugin-node-resolve')
@@ -17,7 +16,6 @@ const generatePlugins = () => {
     babel({
       exclude: 'node_modules/**'
     }),
-    peerExternal(),
     commonjs({
       namedExports: {
         'node_modules/deepmerge/index.js': ['deepmerge'],
