@@ -97,7 +97,7 @@ exports[`Banner renders content from children props 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -179,7 +179,7 @@ exports[`Banner renders with blue bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -258,7 +258,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -337,7 +337,7 @@ exports[`Banner renders with green bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -411,13 +411,13 @@ exports[`Banner renders with header node 1`] = `
 
 .c0 {
   text-align: left;
-  background-color: #0a0;
-  color: #fff;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 <div
     class="c0"
-    color="white"
+    color="text.lightest"
   >
     <div
       class="c1"
@@ -508,7 +508,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 <div
   className="c0"
-  color="darkBlue"
+  color="primary.dark"
 >
   <div
     className="c1"
@@ -587,7 +587,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 <div
   className="c0"
-  color="darkGreen"
+  color="secondary.dark"
 >
   <div
     className="c1"
@@ -666,7 +666,7 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 <div
   className="c0"
-  color="darkRed"
+  color="error.dark"
 >
   <div
     className="c1"
@@ -745,7 +745,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -824,7 +824,7 @@ exports[`Banner renders with orange bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -903,7 +903,7 @@ exports[`Banner renders with red bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -982,13 +982,13 @@ exports[`Banner renders with text node 1`] = `
 
 .c0 {
   text-align: left;
-  background-color: #0a0;
-  color: #fff;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -1078,13 +1078,13 @@ exports[`Banner renders with text string 1`] = `
 
 .c0 {
   text-align: left;
-  background-color: #0a0;
-  color: #fff;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
