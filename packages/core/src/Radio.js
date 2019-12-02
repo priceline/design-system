@@ -52,7 +52,7 @@ const RadioCheckedIcon = styled(RadioChecked)`
 const RadioEmptyIcon = styled(RadioEmpty)`
   vertical-align: middle;
 `
-const getRadioIcon = ({ checked, ...props }) => {
+const RadioIcon = ({ checked, ...props }) => {
   return checked ? (
     <RadioCheckedIcon {...props} />
   ) : (
@@ -65,12 +65,10 @@ const Radio = props => {
 
   const borderAdjustedSize = size + 4
 
-  const radioIcon = getRadioIcon({ checked, size: borderAdjustedSize })
-
   return (
     <RadioWrap color={props.color} checked={checked} disabled={disabled}>
       <RadioInput type="radio" {...props} />
-      {radioIcon}
+      <RadioIcon checked={checked} size={borderAdjustedSize} />
     </RadioWrap>
   )
 }
