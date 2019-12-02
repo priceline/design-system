@@ -2,14 +2,7 @@ import * as DS from 'pcln-design-system'
 import RangeSlider, { Slider } from 'pcln-slider'
 import { Modal } from 'pcln-modal'
 import ModalDemo from './ModalDemo'
-import {
-  Heading,
-  Text,
-  Link,
-  Button,
-  getPaletteColor,
-  getTextColorOn
-} from 'pcln-design-system'
+import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space, fontSize, color, theme } from 'styled-system'
 import { components as mdxDocsComponents } from 'mdx-docs'
@@ -100,23 +93,6 @@ Code.defaultProps = {
 
 export const ButtonLink = Button.withComponent('a')
 
-const StaticDemo = styled.div`
-  color: ${getPaletteColor('primary.base')};
-`
-
-const ShadeDemo = styled.div`
-  color: ${getPaletteColor('base')};
-`
-
-const ShadeOtherDemo = styled.div`
-  background-color: ${props => getPaletteColor(props.bgColor, 'base')(props)};
-`
-
-const TextDemo = styled.div`
-  color: ${getTextColorOn('primary.base')};
-  background-color ${getPaletteColor('primary.base')};
-`
-
 const components = {
   ...DS,
   h1: heading('h1'),
@@ -131,11 +107,7 @@ const components = {
   RangeSlider,
   Slider,
   Modal,
-  ModalDemo,
-  StaticDemo,
-  ShadeDemo,
-  ShadeOtherDemo,
-  TextDemo
+  ModalDemo
 }
 
 components.h1.defaultProps = {
