@@ -70,11 +70,16 @@ const Banner = props => {
     hasPaletteColor(props) || !bannerColor.color
       ? props.color
       : bannerColor.color
-  const header = React.isValidElement(props.header) ? (
-    props.header
-  ) : (
-    <Text textStyle="display2">{props.header}</Text>
-  )
+
+  let header = null
+
+  if (props.header) {
+    header = React.isValidElement(props.header) ? (
+      props.header
+    ) : (
+      <Text textStyle="display2">{props.header}</Text>
+    )
+  }
 
   return (
     <StyledBox
@@ -87,7 +92,7 @@ const Banner = props => {
           !!props.showIcon &&
           React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
         <Box textAlign={props.textAlign} width={1}>
-          {props.header && header}
+          {header}
           <Text.span fontSize={1}>{props.text}</Text.span>
           {props.children}
         </Box>
