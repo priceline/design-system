@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { Box, Flex, Icon, Truncate } from '../src'
 import * as icons from 'pcln-icons'
 
+const { Accessible } = icons
 const keys = Object.keys(icons)
 
 storiesOf('Icon', module)
@@ -36,4 +37,25 @@ storiesOf('Icon', module)
   ))
   .add('Responsive', () => (
     <Icon color="primary" size={[100, 200, 300, 50]} name="Flights" />
+  ))
+  .add('a11y', () => (
+    <Box>
+      <Icon
+        color="primary"
+        size={[100, 200, 300, 50]}
+        name="Accessible"
+        title="Accessible Logo"
+        titleId="titleId"
+        desc="Accessible Logo description"
+        descId="descId"
+      />
+      <Accessible
+        color="primary"
+        size={[100, 200, 300, 50]}
+        title="Accessible Logo"
+        titleId="titleId"
+        desc="Accessible Logo description"
+        descId="descId"
+      />
+    </Box>
   ))

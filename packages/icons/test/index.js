@@ -19,27 +19,29 @@ describe('Icon', () => {
   test('defaults title to name if not provided', () => {
     const testRenderer = TestRenderer.create(<Icon name="Accessible" />)
     const testInstance = testRenderer.root
-    expect(testInstance.children[0].props.title).toBe('Accessible')
+    expect(testInstance.findByType('title').children[0]).toBe('Accessible')
   })
 
-  describe.skip('SVG Icon Accessibility', () => {
+  describe('SVG Icon Accessibility', () => {
     test.each(iconList)(
       'renders %s with accessibility attributes when title and desc is passed ',
       (key, Component) => {
-        const testRenderer = TestRenderer.create(
-          <Component
-            title="SVG title"
-            titleId="unique-svg-title-id"
-            desc="SVG icon description"
-            descId="unique-svg-icon-descId"
-          />
-        )
-        const testInstance = testRenderer.root
+        if (key !== 'Icon') {
+          const testRenderer = TestRenderer.create(
+            <Component
+              title="SVG title"
+              titleId="unique-svg-title-id"
+              desc="SVG icon description"
+              descId="unique-svg-icon-descId"
+            />
+          )
+          const testInstance = testRenderer.root
 
-        expect(testInstance.findByType('title').children[0]).toBe('SVG title')
-        expect(testInstance.findByType('desc').children[0]).toBe(
-          'SVG icon description'
-        )
+          expect(testInstance.findByType('title').children[0]).toBe('SVG title')
+          expect(testInstance.findByType('desc').children[0]).toBe(
+            'SVG icon description'
+          )
+        }
       }
     )
 
@@ -47,7 +49,7 @@ describe('Icon', () => {
       const testRenderer = TestRenderer.create(
         <AccessibleIcon
           title="Accessible Logo"
-          titleId="accessible-logo"
+          titleId="titleId"
           desc="Accessible Logo description"
           descId="descId"
         />
@@ -64,7 +66,7 @@ describe('Icon', () => {
       expect(testRenderer.toJSON().props['tabIndex']).toBe(-1)
       expect(testRenderer.toJSON().props['role']).toBe('img')
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
-        'accessible-logo descId'
+        'titleId descId'
       )
     })
 
@@ -82,7 +84,7 @@ describe('Icon', () => {
 
       const tree = testRenderer.toTree()
       const renderedProps = tree.rendered.props
-      expect(renderedProps['aria-hidden']).toBeFalsy()
+      expect(renderedProps['aria-hidden']).toBeTruthy()
       expect(renderedProps['focusable']).toBeFalsy()
       expect(renderedProps['tabIndex']).toBe(-1)
     })
@@ -111,17 +113,19 @@ describe('Icon', () => {
     test.each(iconList)(
       'Icons should render with no outline ',
       (key, Component) => {
-        const testRenderer = TestRenderer.create(<Component />)
-        const testInstance = testRenderer.toJSON()
-        expect(testInstance).toHaveStyleRule('outline', 'none')
+        if (key !== 'Icon') {
+          const testRenderer = TestRenderer.create(<Component />)
+          const testInstance = testRenderer.toJSON()
+          expect(testInstance).toHaveStyleRule('outline', 'none')
+        }
       }
     )
 
     test('Icon should render with no outline ', () => {
       const namedJson = TestRenderer.create(<AirplaneIcon />).toJSON()
       const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
-      expect(json).toEqual(namedJson)
       expect(json).toHaveStyleRule('outline', 'none')
+      expect(namedJson).toHaveStyleRule('outline', 'none')
     })
   })
 })
