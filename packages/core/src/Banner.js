@@ -13,45 +13,44 @@ import {
 } from 'pcln-icons'
 import {
   applyVariations,
-  hasPaletteColor,
   deprecatedColorValue,
   deprecatedPropType
 } from './utils'
 
 const bannerColors = {
   green: {
-    backgroundColor: 'green',
-    color: 'white',
+    backgroundColor: 'secondary.base',
+    color: 'text.lightest',
     icon: <SuccessIcon />
   },
   lightGreen: {
-    backgroundColor: 'lightGreen',
-    color: 'darkGreen',
+    backgroundColor: 'secondary.light',
+    color: 'secondary.dark',
     icon: <SuccessIcon />
   },
   red: {
-    backgroundColor: 'red',
-    color: 'white',
+    backgroundColor: 'error.base',
+    color: 'text.lightest',
     icon: <WarningIcon />
   },
   lightRed: {
-    backgroundColor: 'lightRed',
-    color: 'darkRed',
+    backgroundColor: 'error.light',
+    color: 'error.dark',
     icon: <WarningIcon />
   },
   orange: {
-    backgroundColor: 'orange',
-    color: 'white',
+    backgroundColor: 'alert.base',
+    color: 'text.lightest',
     icon: <AttentionIcon />
   },
   blue: {
-    backgroundColor: 'blue',
-    color: 'white',
+    backgroundColor: 'primary.base',
+    color: 'text.lightest',
     icon: <InformationIcon />
   },
   lightBlue: {
-    backgroundColor: 'lightBlue',
-    color: 'darkBlue',
+    backgroundColor: 'primary.light',
+    color: 'primary.dark',
     icon: <InformationIcon />
   }
 }
@@ -67,7 +66,7 @@ const Banner = props => {
     ] || {}
   const Icon = props.icon || bannerColor.icon
   const color =
-    hasPaletteColor(props) || !bannerColor.color
+    !bannerColor.color
       ? props.color
       : bannerColor.color
 
