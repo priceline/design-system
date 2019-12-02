@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, TextArea, Label, theme } from '../src'
+import { Box, TextArea, Label } from '../src'
 
 storiesOf('TextArea', module)
   .add(
@@ -9,7 +9,7 @@ storiesOf('TextArea', module)
     withInfo({
       inline: true,
       text: 'Simple styled textarea component that accepts a color.'
-    })(() => <TextArea my={3} />)
+    })(() => <TextArea id="textarea-default" my={3} />)
   )
   .add('Colors', () => (
     <Box width={400}>

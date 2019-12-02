@@ -7,8 +7,6 @@ import {
   ThemeProvider,
   Flex,
   Button,
-  GreenButton,
-  OutlineButton,
   CloseButton,
   Box,
   Text,
@@ -100,12 +98,12 @@ const InnerContent = ({ handleClose }) => (
         Do you accept the terms and conditions?
       </Text>
       <Flex justifyContent="center">
-        <GreenButton onClick={handleClose} mr={2}>
+        <Button color="secondary" onClick={handleClose} mr={2}>
           Agree
-        </GreenButton>
-        <OutlineButton onClick={handleClose} ml={2}>
+        </Button>
+        <Button variation="outline" onClick={handleClose} ml={2}>
           Close
-        </OutlineButton>
+        </Button>
       </Flex>
     </Box>
   </ThemeProvider>
@@ -154,10 +152,12 @@ const PriceGuidanceContent = ({ handleClose }) => (
           />
         </Box>
         <Flex pt={4} pb={2} justifyContent="center">
-          <GreenButton mr={2}>Book Now</GreenButton>
-          <OutlineButton onClick={handleClose} ml={2}>
+          <Button color="secondary" mr={2}>
+            Book Now
+          </Button>
+          <Button variation="outline" onClick={handleClose} ml={2}>
             Dismiss
-          </OutlineButton>
+          </Button>
         </Flex>
       </StyledBox>
     </Box>

@@ -40,7 +40,6 @@ exports[`Select renders 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
-  border-color: #007aff;
   margin: 0px;
   padding-left: 12px;
   padding-right: 32px;
@@ -71,7 +70,6 @@ exports[`Select renders 1`] = `
 >
   <select
     className="c1 "
-    color="primary"
     fontSize={
       Array [
         2,
