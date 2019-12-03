@@ -193,6 +193,86 @@ exports[`Button size small sets height and font-size 1`] = `
 />
 `;
 
+exports[`Button variations outline variation default render 1`] = `
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  color: #007aff;
+  box-shadow: inset 0 0 0 2px #007aff;
+  background-color: transparent;
+}
+
+.c0:hover {
+  background-color: transparent;
+  color: #049;
+  box-shadow: inset 0 0 0 2px #049;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
+<button
+  className="c0"
+  color="primary"
+  disabled={false}
+/>
+`;
+
+exports[`Button variations outline variation disabled 1`] = `
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: default;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  color: #e8f2ff;
+  box-shadow: inset 0 0 0 2px #e8f2ff;
+  background-color: transparent;
+}
+
+.c0:hover {
+  background-color: transparent;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
+<button
+  className="c0"
+  color="primary"
+  disabled={true}
+/>
+`;
+
 exports[`Button width prop sets width to 100% 1`] = `
 .c0 {
   -webkit-font-smoothing: antialiased;
