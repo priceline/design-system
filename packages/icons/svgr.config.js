@@ -17,9 +17,15 @@ const BaseComponent = ({
   titleId,
   descId,
   ...props
-}) => (
-  ${jsx}
-)
+}) => {
+  let ariaLabelledBy = titleId ? titleId : ''
+  ariaLabelledBy += desc && descId ? \` \${descId}\` : ''
+  ariaLabelledBy = ariaLabelledBy ? ariaLabelledBy : undefined
+
+  props['aria-labelledby'] = ariaLabelledBy
+
+  return (${jsx})
+}
 
 const ${componentName} = styled(BaseComponent)\`
   outline: none;
@@ -48,6 +54,12 @@ module.exports = {
     viewBox: '0 0 24 24',
     height: '{size}',
     width: '{size}',
+    title: '{title}',
+    titleId: '{titleId}',
+    desc: '{desc}',
+    descId: '{descId}',
+    'aria-labelledby': '{ariaLabelledBy}',
+    'aria-hidden': '{!ariaLabelledBy}',
     fill: 'currentcolor'
   },
   svgoConfig: {
