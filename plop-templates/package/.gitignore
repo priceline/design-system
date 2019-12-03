@@ -16,5 +16,3 @@ id_rsa.pub
 known_hosts
 id_rs*
 *ssh*
-stats.html
-rollup.bundleAnalysis.json

@@ -9,6 +9,7 @@ exports[`Link adds a safe rel when target is blank 1`] = `
 }
 
 .c0:hover {
+  color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -32,6 +33,7 @@ exports[`Link does not add a safe rel when target is not blank 1`] = `
 }
 
 .c0:hover {
+  color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

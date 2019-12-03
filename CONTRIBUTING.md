@@ -4,7 +4,7 @@
 
   - [Local Development](#local-development)
   - [Clone the repo](#clone-the-repo)
-  - [Lerna and Rollup](#lerna-and-rollup)
+  - [Lerna](#lerna)
   - [Install dependencies](#install-dependencies)
   - [Running tests](#running-tests)
   - [Storybook](#storybook)
@@ -43,11 +43,8 @@ cd design-system
 
 ### Lerna and Rollup
 
-This repository uses [Lerna][] & [Rollup][] and is set up as a monorepo, with
+This repository uses [Lerna](https://lernajs.io) and is set up as a monorepo, with
 multiple npm packages in the `packages/` folder.
-
-[lerna]: https://lernajs.io
-[rollup]: https://rollupjs.org
 
 ### Install dependencies
 
@@ -58,7 +55,7 @@ npm install
 ```
 
 Please be mindful that any deletion, or edit, of `package-lock.json`
-would cause issue in dependencies of packages within the design system.
+can cause issues in dependencies of packages within the design system.
 
 ### Running tests
 
