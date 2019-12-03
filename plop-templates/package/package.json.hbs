@@ -5,7 +5,7 @@
   "module": "dist/esm/index.js",
   "sideEffects": false,
   "scripts": {
-    "prepare": "npm run clean && npm run build",
+    "prepare": "npm-run-all clean build",
     "build": "npm-run-all -p build:*",
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm",
