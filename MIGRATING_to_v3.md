@@ -4,7 +4,6 @@
 
 - Tree-shaking for the `core` package (`pcln-design-system`)
 - Tree-shaking for the `icons` package (`pcln-icons`)
-  - Can now use `import { TrendingUp, Timer } from 'pcln-icons'` import syntax
 - Tree-shaking for the `autocomplete` package (`pcln-autocomplete`)
 - Tree-shaking for the `modal` package (`pcln-modal`)
 - Tree-shaking for the `popover` package (`pcln-popover`)
@@ -16,7 +15,7 @@
 
 - peerDependency increase: `pcln-icons >=3`
 - GreenButton and RedButton have been removed
-  - Use `<Button color='secondary'>...</Button` or `<Button color='error'>...</Button>` instead
+  - Use `<Button color='secondary'>...</Button>` or `<Button color='error'>...</Button>` instead
 - OutlineButton `<OutlineButton />` has been removed
   - Use `<Button variation='outline'>...</Button>` instead
 - `bg` prop has been marked as deprecated in favor of `color`
@@ -36,7 +35,7 @@ import { ThumbsUp } from 'pcln-icons
 
 - Components that now take an `icon` node instead of an `iconName` string
 
-  - Icon
+  - IconButton
   - Hug
   - Banner
   - Step
@@ -64,7 +63,41 @@ import { ThumbsUp } from 'pcln-icons
 - Popover now supports trapping focus inside of the popup via `trapFocus` prop
 - Input and TextArea now use `borders` instead of `box-shadow`, to prevent misalignments with other components like Select
 
-## New Components
+## Migration Steps
 
-- Avatar
-- Breadcrumbs
+1. Upgrade all `pcln-*` packages from this monorepo to version `3.0.0` or higher.
+2. Replace usage of removed `<Icon>` component in `pcln-design-system`
+
+- First preference is named imports from `pcln-icons`:
+
+```jsx
+import { ThumbsUp } from 'pcln-icons'
+
+export default <ThumbsUp />
+```
+
+- If required, use the `<Icon>` component from `pcln-icons`. This has one important caveat - bundlers will need to include _ALL_ of the icons that could potentially be used:
+
+```jsx
+import { Icon } from 'pcln-icons'
+
+export default <Icon name="ThumbsUp" />
+```
+
+3. The following components now accept an `icon` prop instead of an `iconName`:
+
+- `IconButton`
+- `Hug`
+- `Banner`
+- `Step`
+- `Select`
+
+4. Simple Replacements
+
+| Before            | After                          |
+| ----------------- | ------------------------------ |
+| `<GreenButton>`   | `<Button color='secondary'>`   |
+| `<RedButton>`     | `<Button color='error'>`       |
+| `<OutlineButton>` | `<Button variation='outline'>` |
+
+5. Recommended Optional Change: Replace object literal syntax for `styled-components` `attr` method with newer [function signature](https://www.styled-components.com/docs/api#attrs) to be ready to benefit from performance improvements in SC v5.
