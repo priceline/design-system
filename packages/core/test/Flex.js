@@ -28,28 +28,41 @@ describe('Flex', () => {
   })
 
   describe('deprecated prop types', () => {
-    test('shims the deprecated align prop', () => {
+    const spy = jest.spyOn(console, 'error')
+
+    test('shims the deprecated `align` prop and warns', () => {
       const json = rendererCreateWithTheme(<Flex align="center" />).toJSON()
       expect(json).toHaveStyleRule('align-items', 'center')
+      expect(spy.mock.calls.length).toBe(1)
+      expect(spy).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `align` prop is deprecated and will be removed in a future release. Please use `alignItems` instead.'
+        )
+      )
     })
 
-    test('shims the deprecated wrap prop', () => {
+    test('shims the deprecated `wrap` prop and warns', () => {
       const json = rendererCreateWithTheme(<Flex wrap />).toJSON()
       expect(json).toHaveStyleRule('flex-wrap', 'wrap')
+      expect(spy.mock.calls.length).toBe(2)
+      expect(spy).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `wrap` prop is deprecated and will be removed in a future release. Please use `flexWrap` instead.'
+        )
+      )
     })
 
-    test('shims the deprecated justify prop', () => {
+    test('shims the deprecated `justify` prop and warns', () => {
       const json = rendererCreateWithTheme(
         <Flex justify="space-between" />
       ).toJSON()
       expect(json).toHaveStyleRule('justify-content', 'space-between')
-    })
-
-    test.skip('warns when using deprecated align prop', () => {
-      // unsure why this isn't being called
-      const spy = jest.spyOn(global.console, 'error')
-      rendererCreateWithTheme(<Flex align="center" />)
-      expect(spy).toHaveBeenCalled()
+      expect(spy.mock.calls.length).toBe(3)
+      expect(spy).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `justify` prop is deprecated and will be removed in a future release. Please use `justifyContent` instead.'
+        )
+      )
     })
   })
 })
