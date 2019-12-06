@@ -47,6 +47,12 @@ Buttons make common actions immediately visible and easy to perform with one cli
 <Button variation="outline">Outline Button</Button>
 ```
 
+### link
+
+```.jsx
+<Button variation="link">Link Button</Button>
+```
+
 ## Color
 
 You can choose any palette or theme color for `Button`.

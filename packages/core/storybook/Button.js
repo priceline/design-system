@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button } from '../src'
+import { action } from '@storybook/addon-actions'
+import { Box, Button, Text } from '../src'
 
 storiesOf('Button', module)
   .add(
@@ -14,10 +15,24 @@ storiesOf('Button', module)
   )
   .add('variations', () => (
     <div>
-      <Button mr={2}>Button</Button>
-      <Button variation="outline" mr={2}>
-        Outline Button
-      </Button>
+      <div>
+        <Button mr={2}>Button</Button>
+        <Button variation="outline" mr={2}>
+          Outline Button
+        </Button>
+        <Button variation="link" mr={2} onClick={action('clicked')}>
+          Link Button
+        </Button>
+      </div>
+      <Box py={2}>
+        <Text fontSize={1}>
+          Button with variation link can be used as a{' '}
+          <Button variation="link" onClick={action('modal opened')}>
+            disclaimer
+          </Button>{' '}
+          to pop a modal.
+        </Text>
+      </Box>
     </div>
   ))
   .add('colors', () => (
