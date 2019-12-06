@@ -89,6 +89,26 @@ describe('Button', () => {
         expect(json).toHaveStyleRule('background-color', 'transparent')
       })
     })
+
+    describe('link variation', () => {
+      test('renders with expected styles', () => {
+        const json = rendererCreateWithTheme(
+          <Button variation="link" />
+        ).toJSON()
+        expect(json).toMatchSnapshot()
+        expect(json).toHaveStyleRule('color', theme.palette.primary.base)
+        expect(json).toHaveStyleRule('vertical-align', 'inherit')
+        expect(json).toHaveStyleRule('line-height', '1.4')
+        expect(json).toHaveStyleRule('padding', '0')
+        expect(json).toHaveStyleRule('background-color', 'transparent')
+        expect(json).toHaveStyleRule('color', theme.palette.primary.dark, {
+          modifier: ':hover'
+        })
+        expect(json).toHaveStyleRule('text-decoration', 'underline', {
+          modifier: ':hover'
+        })
+      })
+    })
   })
 
   describe('deprecated props', () => {
