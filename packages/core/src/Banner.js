@@ -65,10 +65,7 @@ const Banner = props => {
       !props.bg && props.color === 'green' ? props.color : props.bg
     ] || {}
   const Icon = props.icon || bannerColor.icon
-  const color =
-    !bannerColor.color
-      ? props.color
-      : bannerColor.color
+  const color = !bannerColor.color ? props.color : bannerColor.color
 
   let header = null
 

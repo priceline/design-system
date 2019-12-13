@@ -38,6 +38,50 @@ exports[`Button disabled prop sets 1`] = `
 />
 `;
 
+exports[`Button link variation renders with expected styles 1`] = `
+.c0 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  -webkit-font-smoothing: inherit;
+  font-weight: 500;
+  color: #007aff;
+  line-height: 1.4;
+  vertical-align: inherit;
+  padding: 0;
+  background-color: transparent;
+}
+
+.c0:hover {
+  color: #049;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
+<button
+  className="c0"
+  color="primary"
+/>
+`;
+
 exports[`Button renders 1`] = `
 .c0 {
   -webkit-font-smoothing: antialiased;
