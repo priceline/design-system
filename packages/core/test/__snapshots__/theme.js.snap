@@ -191,6 +191,10 @@ Object {
     64,
     128,
   ],
+  "textShadows": Object {
+    "md": "0 2px 4px rgba(0,0,0,0.5)",
+    "sm": "0 1px 2px rgba(0,0,0,0.5)",
+  },
   "textStyles": Object {
     "body0": Object {
       "fontSize": "12px",

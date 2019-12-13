@@ -2,48 +2,56 @@ import React from 'react'
 import Box from './Box'
 import Flex from './Flex'
 import Text from './Text'
-import Icon from './Icon'
 import CloseButton from './CloseButton'
-import Heading from './Heading'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
-import { applyVariations, hasPaletteColor, deprecatedColorValue } from './utils'
+import {
+  Attention as AttentionIcon,
+  Information as InformationIcon,
+  Success as SuccessIcon,
+  Warning as WarningIcon
+} from 'pcln-icons'
+import {
+  applyVariations,
+  deprecatedColorValue,
+  deprecatedPropType
+} from './utils'
 
 const bannerColors = {
   green: {
-    backgroundColor: 'green',
-    color: 'white',
-    icon: 'success'
+    backgroundColor: 'secondary.base',
+    color: 'text.lightest',
+    icon: <SuccessIcon />
   },
   lightGreen: {
-    backgroundColor: 'lightGreen',
-    color: 'darkGreen',
-    icon: 'success'
+    backgroundColor: 'secondary.light',
+    color: 'secondary.dark',
+    icon: <SuccessIcon />
   },
   red: {
-    backgroundColor: 'red',
-    color: 'white',
-    icon: 'warning'
+    backgroundColor: 'error.base',
+    color: 'text.lightest',
+    icon: <WarningIcon />
   },
   lightRed: {
-    backgroundColor: 'lightRed',
-    color: 'darkRed',
-    icon: 'warning'
+    backgroundColor: 'error.light',
+    color: 'error.dark',
+    icon: <WarningIcon />
   },
   orange: {
-    backgroundColor: 'orange',
-    color: 'white',
-    icon: 'attention'
+    backgroundColor: 'alert.base',
+    color: 'text.lightest',
+    icon: <AttentionIcon />
   },
   blue: {
-    backgroundColor: 'blue',
-    color: 'white',
-    icon: 'information'
+    backgroundColor: 'primary.base',
+    color: 'text.lightest',
+    icon: <InformationIcon />
   },
   lightBlue: {
-    backgroundColor: 'lightBlue',
-    color: 'darkBlue',
-    icon: 'information'
+    backgroundColor: 'primary.light',
+    color: 'primary.dark',
+    icon: <InformationIcon />
   }
 }
 
@@ -56,11 +64,21 @@ const Banner = props => {
     bannerColors[
       !props.bg && props.color === 'green' ? props.color : props.bg
     ] || {}
-  const icon = props.iconName || bannerColor.icon
+  const Icon = props.icon || bannerColor.icon
   const color =
-    hasPaletteColor(props) || !bannerColor.color
+    !bannerColor.color
       ? props.color
       : bannerColor.color
+
+  let header = null
+
+  if (props.header) {
+    header = React.isValidElement(props.header) ? (
+      props.header
+    ) : (
+      <Text textStyle="display2">{props.header}</Text>
+    )
+  }
 
   return (
     <StyledBox
@@ -69,11 +87,11 @@ const Banner = props => {
       color={color}
     >
       <Flex justifyContent="space-between" alignItems="flex-start">
-        {!!icon && !!props.showIcon && (
-          <Icon name={icon} mr={2} size={24} mt="-2px" />
-        )}
+        {!!Icon &&
+          !!props.showIcon &&
+          React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
         <Box textAlign={props.textAlign} width={1}>
-          <Text textStyle="display2">{props.header}</Text>
+          {header}
           <Text.span fontSize={1}>{props.text}</Text.span>
           {props.children}
         </Box>
@@ -94,14 +112,14 @@ const Banner = props => {
 Banner.displayName = 'Banner'
 
 Banner.propTypes = {
-  header: PropTypes.string,
-  iconName: PropTypes.string,
+  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  icon: PropTypes.node,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
   text: PropTypes.node,
   textAlign: PropTypes.string,
   color: deprecatedColorValue(),
-  bg: deprecatedColorValue()
+  bg: deprecatedPropType('color')
 }
 
 Banner.defaultProps = {

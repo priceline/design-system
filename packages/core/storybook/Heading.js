@@ -26,6 +26,16 @@ storiesOf('Heading', module)
       <Heading.h6>Heading h6</Heading.h6>
     </section>
   ))
+  .add('With Text Shadows', () => (
+    <section>
+      <Heading.h1 enableTextShadow>Heading h1</Heading.h1>
+      <Heading.h2 enableTextShadow>Heading h2</Heading.h2>
+      <Heading.h3 enableTextShadow>Heading h3</Heading.h3>
+      <Heading.h4 enableTextShadow>Heading h4</Heading.h4>
+      <Heading.h5 enableTextShadow>Heading h5</Heading.h5>
+      <Heading.h6 enableTextShadow>Heading h6</Heading.h6>
+    </section>
+  ))
   .add('Using <Text> props', () => (
     <section>
       <Heading textAlign="left" bold fontSize={6} color="green">

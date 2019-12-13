@@ -2,16 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import {
-  Checkbox,
-  Text,
-  Box,
-  Heading,
-  Button,
-  OutlineButton,
-  Label,
-  theme
-} from '../src'
+import { Checkbox, Text, Box, Heading, Button, Label } from '../src'
 
 const StyledLabel = styled(Label)`
   cursor: pointer;
@@ -51,14 +42,14 @@ storiesOf('Checkbox', module)
       <Wrapper>
         <StyledLabel htmlFor="checked_box">
           <Checkbox id="checked_box" defaultChecked onChange={checkAction} />
-          Checked by Default
+          Checked by default
         </StyledLabel>
       </Wrapper>
 
       <Wrapper>
         <StyledLabel htmlFor="disabled_box">
           <Checkbox id="disabled_box" disabled onChange={checkAction} />
-          <Text.span color={theme.colors.borderGray}>Disabled</Text.span>
+          <Text.span color="border.base">Disabled</Text.span>
         </StyledLabel>
       </Wrapper>
 
@@ -70,9 +61,7 @@ storiesOf('Checkbox', module)
             defaultChecked
             onChange={checkAction}
           />
-          <Text.span color={theme.colors.borderGray}>
-            Disabled & Checked
-          </Text.span>
+          <Text.span color="border.base">Disabled &amp; Checked</Text.span>
         </StyledLabel>
       </Wrapper>
 
@@ -91,9 +80,9 @@ storiesOf('Checkbox', module)
             <Button type="submit">Submit Me</Button>
             <br />
             <br />
-            <OutlineButton color={theme.colors.gray} type="reset">
+            <Button variation="outline" color="border.base" type="reset">
               Reset Me
-            </OutlineButton>
+            </Button>
           </fieldset>
         </form>
       </Wrapper>
@@ -117,7 +106,7 @@ storiesOf('Checkbox', module)
             onChange={checkAction}
             color="secondary"
           />
-          Secondary color checked by Default
+          Secondary color checked by default
         </StyledLabel>
         <StyledLabel htmlFor="secondary_disabled_box">
           <Checkbox
@@ -145,7 +134,7 @@ storiesOf('Checkbox', module)
             onChange={checkAction}
             color="error"
           />
-          Error color checked by Default
+          Error color checked by default
         </StyledLabel>
         <StyledLabel htmlFor="error_disabled_box">
           <Checkbox

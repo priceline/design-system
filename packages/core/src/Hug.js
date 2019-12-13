@@ -2,10 +2,8 @@ import React from 'react'
 import Box from './Box'
 import Card from './Card'
 import Flex from './Flex'
-import Icon from './Icon'
 import Text from './Text'
-import styled, { withTheme } from 'styled-components'
-import { display } from 'styled-system'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { applyVariations, deprecatedColorValue } from './utils'
 
@@ -24,28 +22,25 @@ const BorderConcealer = styled(Box)`
   }
 `
 
-const HideableIcon = styled(Icon)`
-  ${display};
-`
+const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
+  let iconClone
 
-const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => (
-  <HugCard {...props} borderColor={bg || color}>
-    <Flex bg={bg} color={color} p={p} alignItems="center">
-      {!!icon && (
-        <HideableIcon
-          mr={2}
-          mt="-2px"
-          mb="2px"
-          name={icon}
-          size={24}
-          display={iconDisplay}
-        />
-      )}
-      <Text fontSize={fontSize}>{props.text}</Text>
-    </Flex>
-    <BorderConcealer>{props.children}</BorderConcealer>
-  </HugCard>
-)
+  if (React.isValidElement(icon)) {
+    iconClone = React.cloneElement(icon, {
+      style: { display: iconDisplay, mr: 2, mt: '-2px', mb: '2px', size: 24 }
+    })
+  }
+
+  return (
+    <HugCard {...props} borderColor={bg || color}>
+      <Flex bg={bg} color={color} p={p} alignItems="center">
+        {!!iconClone && iconClone}
+        <Text fontSize={fontSize}>{props.text}</Text>
+      </Flex>
+      <BorderConcealer>{props.children}</BorderConcealer>
+    </HugCard>
+  )
+}
 
 Hug.defaultProps = {
   borderWidth: 1,
@@ -56,7 +51,7 @@ Hug.defaultProps = {
 
 Hug.propTypes = {
   iconDisplay: PropTypes.arrayOf(PropTypes.string),
-  icon: PropTypes.string,
+  icon: PropTypes.node,
   text: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),

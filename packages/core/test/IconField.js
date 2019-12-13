@@ -1,11 +1,12 @@
 import React from 'react'
-import { IconField, Icon, IconButton, Input } from '../src'
+import { IconField, IconButton, Input } from '../src'
+import { Calendar as CalendarIcon, Close as CloseIcon } from 'pcln-icons'
 
 describe('IconField', () => {
   test('renders', () => {
     const json = rendererCreateWithTheme(
       <IconField>
-        <Icon name="Calendar" />
+        <CalendarIcon />
         <Input id="test" placeholder="IconField" />
       </IconField>
     ).toJSON()
@@ -16,7 +17,7 @@ describe('IconField', () => {
     const json = rendererCreateWithTheme(
       <IconField>
         <Input id="test" placeholder="IconField" />
-        <IconButton name="close" />
+        <IconButton icon={<CloseIcon />} />
       </IconField>
     ).toJSON()
     expect(json).toMatchSnapshot()
@@ -25,9 +26,9 @@ describe('IconField', () => {
   test('renders icon, input and icon button together', () => {
     const json = rendererCreateWithTheme(
       <IconField>
-        <Icon name="Calendar" />
+        <CalendarIcon />
         <Input id="test" placeholder="IconField" />
-        <IconButton name="close" />
+        <IconButton icon={<CloseIcon />} />
       </IconField>
     ).toJSON()
     expect(json).toMatchSnapshot()
@@ -45,7 +46,7 @@ describe('IconField', () => {
   test('adds styles to icons', () => {
     const json = rendererCreateWithTheme(
       <IconField>
-        <Icon name="Calendar" />
+        <CalendarIcon />
         <Input id="test" />
       </IconField>
     ).toJSON()
@@ -59,7 +60,7 @@ describe('IconField', () => {
     const json = rendererCreateWithTheme(
       <IconField>
         <Input id="test" />
-        <Icon name="Calendar" />
+        <CalendarIcon />
       </IconField>
     ).toJSON()
     const [input, icon] = json.children
@@ -71,7 +72,7 @@ describe('IconField', () => {
   test('adds styles to the form field', () => {
     const json = rendererCreateWithTheme(
       <IconField>
-        <Icon name="Calendar" />
+        <CalendarIcon />
         <Input id="test" />
       </IconField>
     ).toJSON()
@@ -84,7 +85,7 @@ describe('IconField', () => {
     const json = rendererCreateWithTheme(
       <IconField>
         <Input id="test" />
-        <IconButton name="close" />
+        <IconButton icon={<CloseIcon />} />
       </IconField>
     ).toJSON()
     const [, iconButton] = json.children

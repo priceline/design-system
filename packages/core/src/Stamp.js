@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { themeGet, space, fontSize } from 'styled-system'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
+import {
+  applyVariations,
+  getPaletteColor,
+  deprecatedColorValue,
+  deprecatedPropType
+} from './utils'
 
 const Stamp = styled.div`
   display: inline-flex;
@@ -31,7 +36,7 @@ Stamp.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
   color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
+  bg: deprecatedPropType('color'),
   borderColor: deprecatedColorValue()
 }
 

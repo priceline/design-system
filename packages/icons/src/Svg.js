@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { space, themeGet } from 'styled-system'
+import { space, width, themeGet } from 'styled-system'
 
 /**
  * Gets the color of a palette shade, using props.color as
@@ -58,12 +58,14 @@ const Svg = styled('svg')(
     flex: 'none'
   },
   space,
+  width,
   color,
   bg
 )
 
 Svg.propTypes = {
   ...space.propTypes,
+  ...width.propTypes,
   ...color.propTypes
 }
 

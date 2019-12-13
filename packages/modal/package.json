@@ -1,36 +1,43 @@
 {
   "name": "pcln-modal",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "React component for modal",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
   "scripts": {
-    "test": "jest",
-    "prepare": "rollup -c",
-    "clean": "rm -rf node_modules dist"
+    "prepare": "npm run clean && npm run build",
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es",
+    "clean": "rimraf dist",
+    "test": "jest"
   },
   "author": "Priceline",
   "license": "MIT",
   "dependencies": {
     "@reach/dialog": "^0.1.2",
-    "prop-types": "^15.7.2",
     "react-transition-group": "^2.5.3"
   },
   "peerDependencies": {
-    "pcln-design-system": ">=2.0.0",
+    "pcln-design-system": ">=2.x",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "styled-components": ">=3.x <5",
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "pcln-design-system": "^2.6.2",
+    "@babel/cli": "^7.7.0",
+    "cross-env": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "pcln-design-system": "^3.0.0",
     "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2",
-    "styled-components": "^4.4.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "styled-components": "^4.4.1",
     "styled-system": "^3.2.1"
   },
   "engines": {

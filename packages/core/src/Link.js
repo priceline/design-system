@@ -9,6 +9,7 @@ const Link = styled.a.attrs(props => ({
   color: ${getPaletteColor('base')};
 
   &:hover {
+    color: ${getPaletteColor('dark')};
     text-decoration: underline;
   }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { theme } from 'pcln-design-system'
+import { deprecatedPropType, theme } from 'pcln-design-system'
 
 const PopoverArrow = ({
   arrowProps,
@@ -94,7 +94,7 @@ PopoverArrow.propTypes = {
     style: PropTypes.object
   }).isRequired,
   className: PropTypes.string,
-  bg: PropTypes.string,
+  bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string
 }

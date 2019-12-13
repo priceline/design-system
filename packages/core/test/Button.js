@@ -1,5 +1,7 @@
 import React from 'react'
-import { Button, theme } from '../src'
+import { Button, createTheme } from '../src'
+
+const theme = createTheme()
 
 describe('Button', () => {
   test('renders', () => {
@@ -52,6 +54,41 @@ describe('Button', () => {
     const { asFragment, getByTitle } = renderWithTheme(<Button title={title} />)
     expect(asFragment()).toMatchSnapshot()
     expect(getByTitle(title)).toHaveAttribute('aria-label', title)
+  })
+
+  describe('variations', () => {
+    describe('outline variation', () => {
+      test('default render', () => {
+        const json = rendererCreateWithTheme(
+          <Button variation="outline" disabled={false} />
+        ).toJSON()
+        expect(json).toMatchSnapshot()
+        expect(json).toHaveStyleRule('color', theme.palette.primary.base)
+        expect(json).toHaveStyleRule('background-color', 'transparent')
+        expect(json).toHaveStyleRule('background-color', 'transparent', {
+          modifier: ':hover'
+        })
+        expect(json).toHaveStyleRule('color', theme.palette.primary.dark, {
+          modifier: ':hover'
+        })
+        expect(json).toHaveStyleRule(
+          'box-shadow',
+          `inset 0 0 0 2px ${theme.palette.primary.dark}`,
+          {
+            modifier: ':hover'
+          }
+        )
+      })
+
+      test('disabled', () => {
+        const json = rendererCreateWithTheme(
+          <Button variation="outline" disabled />
+        ).toJSON()
+        expect(json).toMatchSnapshot()
+        expect(json).toHaveStyleRule('color', theme.palette.primary.light)
+        expect(json).toHaveStyleRule('background-color', 'transparent')
+      })
+    })
   })
 
   describe('deprecated props', () => {

@@ -32,6 +32,7 @@ exports[`Breadcrumbs renders basic 1`] = `
 }
 
 .c2:hover {
+  color: #4f6f8f;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -44,6 +45,7 @@ exports[`Breadcrumbs renders basic 1`] = `
 }
 
 .c4:hover {
+  color: #001023;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -131,6 +133,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 8px;
+  width: 16px;
   color: #4f6f8f;
 }
 
@@ -139,6 +142,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
   -ms-flex: none;
   flex: none;
   margin-right: 8px;
+  width: 16px;
   color: #001023;
 }
 
@@ -162,6 +166,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
 }
 
 .c4:hover {
+  color: #4f6f8f;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -174,6 +179,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
 }
 
 .c9:hover {
+  color: #001023;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

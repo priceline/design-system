@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Box, Banner, Flex, Text } from '../src'
+import { Box, Banner, Heading } from '../src'
 
 storiesOf('Banner', module)
   .add('All bgs', () => (
@@ -543,6 +543,28 @@ storiesOf('Banner', module)
         p={2}
         text="red"
         bg="lightRed"
+        onClose={action('closed')}
+        showIcon={false}
+      />
+    </Box>
+  ))
+  .add('Custom header as node', () => (
+    <Box>
+      <Banner
+        header={<Heading>LOUD HEADER</Heading>}
+        textAlign="right"
+        mb={2}
+        p={2}
+        text="default"
+        onClose={action('closed')}
+        showIcon={false}
+      />
+      <Banner
+        header={<Heading.h5>quiet header</Heading.h5>}
+        textAlign="right"
+        mb={2}
+        p={2}
+        text="default"
         onClose={action('closed')}
         showIcon={false}
       />

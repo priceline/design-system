@@ -22,12 +22,6 @@ exports[`Banner accepts non-preset colors 1`] = `
 }
 
 .c3 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c4 {
   font-size: 14px;
 }
 
@@ -48,11 +42,8 @@ exports[`Banner accepts non-preset colors 1`] = `
       className="c2"
       width={1}
     >
-      <div
-        className="c3"
-      />
       <span
-        className="c4"
+        className="c3"
         fontSize={1}
       />
     </div>
@@ -82,12 +73,6 @@ exports[`Banner renders content from children props 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -97,6 +82,7 @@ exports[`Banner renders content from children props 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -111,7 +97,7 @@ exports[`Banner renders content from children props 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -135,11 +121,8 @@ exports[`Banner renders content from children props 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
       <span>
@@ -172,12 +155,6 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -187,6 +164,7 @@ exports[`Banner renders with blue bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -201,7 +179,7 @@ exports[`Banner renders with blue bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -225,11 +203,8 @@ exports[`Banner renders with blue bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -259,12 +234,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -274,6 +243,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -288,7 +258,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -305,18 +275,15 @@ exports[`Banner renders with custom iconName and size 1`] = `
       width={24}
     >
       <path
-        d="M12 17.8l6.2 3.7-1.6-7L22 9.7l-7.2-.6L12 2.5 9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
       />
     </svg>
     <div
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -346,12 +313,6 @@ exports[`Banner renders with green bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -361,6 +322,7 @@ exports[`Banner renders with green bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -375,7 +337,7 @@ exports[`Banner renders with green bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -399,16 +361,105 @@ exports[`Banner renders with green bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
   </div>
 </div>
+`;
+
+exports[`Banner renders with header node 1`] = `
+<DocumentFragment>
+  .c4 {
+  width: 100%;
+  text-align: left;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  font-size: 14px;
+}
+
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 8px;
+  margin-top: -2px;
+  width: 24px;
+}
+
+.c3 {
+  outline: none;
+}
+
+.c0 {
+  text-align: left;
+  background-color: secondary.base;
+  color: text.lightest;
+}
+
+<div
+    class="c0"
+    color="text.lightest"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        aria-hidden="true"
+        class="c2 c3"
+        fill="currentcolor"
+        focusable="false"
+        height="24"
+        role="img"
+        tabindex="-1"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+        />
+      </svg>
+      <div
+        class="c4"
+        width="1"
+      >
+        <h3
+          class=""
+        >
+          Hello world
+        </h3>
+        <span
+          class="c5"
+          font-size="1"
+        >
+          <div
+            class=""
+          >
+            Text
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Banner renders with lightBlue bg 1`] = `
@@ -433,12 +484,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -448,6 +493,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -462,7 +508,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 <div
   className="c0"
-  color="darkBlue"
+  color="primary.dark"
 >
   <div
     className="c1"
@@ -486,11 +532,8 @@ exports[`Banner renders with lightBlue bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -520,12 +563,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -535,6 +572,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -549,7 +587,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 <div
   className="c0"
-  color="darkGreen"
+  color="secondary.dark"
 >
   <div
     className="c1"
@@ -573,11 +611,8 @@ exports[`Banner renders with lightGreen bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -607,12 +642,6 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -622,6 +651,7 @@ exports[`Banner renders with lightRed bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -636,7 +666,7 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 <div
   className="c0"
-  color="darkRed"
+  color="error.dark"
 >
   <div
     className="c1"
@@ -660,11 +690,8 @@ exports[`Banner renders with lightRed bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -694,12 +721,6 @@ exports[`Banner renders with no props other than theme 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -709,6 +730,7 @@ exports[`Banner renders with no props other than theme 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -723,7 +745,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -747,11 +769,8 @@ exports[`Banner renders with no props other than theme 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -781,12 +800,6 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -796,6 +809,7 @@ exports[`Banner renders with orange bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -810,7 +824,7 @@ exports[`Banner renders with orange bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -834,11 +848,8 @@ exports[`Banner renders with orange bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -868,12 +879,6 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c5 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c6 {
   font-size: 14px;
 }
 
@@ -883,6 +888,7 @@ exports[`Banner renders with red bg 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -897,7 +903,7 @@ exports[`Banner renders with red bg 1`] = `
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -921,11 +927,8 @@ exports[`Banner renders with red bg 1`] = `
       className="c4"
       width={1}
     >
-      <div
-        className="c5"
-      />
       <span
-        className="c6"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -970,6 +973,7 @@ exports[`Banner renders with text node 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -978,13 +982,13 @@ exports[`Banner renders with text node 1`] = `
 
 .c0 {
   text-align: left;
-  background-color: #0a0;
-  color: #fff;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -1001,7 +1005,7 @@ exports[`Banner renders with text node 1`] = `
       width={24}
     >
       <path
-        d="M12 17.8l6.2 3.7-1.6-7L22 9.7l-7.2-.6L12 2.5 9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
       />
     </svg>
     <div
@@ -1065,6 +1069,7 @@ exports[`Banner renders with text string 1`] = `
   flex: none;
   margin-right: 8px;
   margin-top: -2px;
+  width: 24px;
 }
 
 .c3 {
@@ -1073,13 +1078,13 @@ exports[`Banner renders with text string 1`] = `
 
 .c0 {
   text-align: left;
-  background-color: #0a0;
-  color: #fff;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 <div
   className="c0"
-  color="white"
+  color="text.lightest"
 >
   <div
     className="c1"
@@ -1096,7 +1101,7 @@ exports[`Banner renders with text string 1`] = `
       width={24}
     >
       <path
-        d="M12 17.8l6.2 3.7-1.6-7L22 9.7l-7.2-.6L12 2.5 9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
       />
     </svg>
     <div

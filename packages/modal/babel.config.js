@@ -1,8 +1,1 @@
-module.exports = {
-  presets: ['@babel/env', '@babel/react'],
-  plugins: [
-    '@babel/proposal-class-properties',
-    '@babel/proposal-object-rest-spread',
-    '@babel/plugin-proposal-optional-chaining'
-  ]
-}
+module.exports = require('../../babel.config')

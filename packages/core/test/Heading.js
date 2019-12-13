@@ -24,11 +24,10 @@ describe('Heading', () => {
   })
 
   const defaultFontSizeTestCase =
-    'Heading component with default theme font size, when "fontSize" prop not used'
+    'Heading component with no default font size, when "fontSize" prop not used'
   test(defaultFontSizeTestCase, () => {
     const json = rendererCreateWithTheme(<Heading />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('font-size', theme.fontSizes[4] + 'px')
   })
 
   const usingTextPropsTestCase =

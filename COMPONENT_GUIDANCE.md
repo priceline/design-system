@@ -14,29 +14,27 @@ The decision you have to make is where to add the component to the project.
 
 ## Options
 
-There are two places a component could be added to the Design System. The first one is `/packages/core`.
+There are two places a component could be added to the Design System. The first one is `/packages/core`, also called `core`.
 
-The other option is to create a new package, `/packages/my-new-component`
+The other option is to create a new package, `/packages/my-new-component`.
 
 ## Considerations
 
-- expected usage / nature of component
+- expected usage and nature of the component
 - bundle size
 - DS upgrade process
 
 ### Expected Usage
 
-In general, all of the components in `/packages/core` are primitives, they are building blocks to be used in constructing more complex UI. Packages that exist outside of `/packages/core`, like `/packages/autocomplete`, `/packages/modal` and `/packages/slider` are more complex units of user interface.
+In general, all of the components in `/packages/core` are primitives: they are building blocks for use in constructing more complex UI elements. Packages that exist outside of `/packages/core`, like `/packages/autocomplete`, `/packages/modal` and `/packages/slider` are more complex units of user interface.
 
 ### Bundle Size
 
-Most JavaScript projects are able to take advantage of tree-shaking. Tree-shaking is an optimization performed by a bundler (like webpack) to eliminate dead or unused code at build time. It is done by statically analyzing the source code and looking for exports in included packages that are not imported by the application. From the documentation of [Webpack: Tree-Shaking](https://webpack.js.org/guides/tree-shaking/#root):
+Most JavaScript projects can take advantage of tree-shaking. Tree-shaking is an optimization performed by a bundler (like [Webpack](https://webpack.js.org/)) to eliminate dead or unused code at build time. It is done by statically analyzing the source code and looking for exports in included packages that are not imported by the application. From the documentation of [Webpack: Tree-Shaking](https://webpack.js.org/guides/tree-shaking/#root):
 
-> Tree shaking is a term commonly used in the JavaScript context for dead-code elimination. It relies on the static structure of ES2015 module syntax, i.e. import and export. The name and concept have been popularized by the ES2015 module bundler rollup.
+> Tree-shaking is a term commonly used in the JavaScript context for dead-code elimination. It relies on the static structure of ES2015 module syntax, indicated by keywords like `import` and `export`. The name and concept were popularized by the ES2015 module bundler [Rollup](https://rollupjs.org/guide/en/).
 
-Each package in the monorepo is built with [Rollup](https://rollupjs.org/guide/en/), with exports of `dist/index.cjs.js` for CommonJS and `dist/index.esm.js` for ES Modules. Modern bundling tools like [Webpack](https://webpack.js.org/) and [Parcel](https://parceljs.org/) are able to perform tree-shaking on ES Modules exports.
-
-One of the commands available at the repository level is `npm run bundle:audit`. This command performs the production build for each package, and then uses [rollup-plugin-analyzer](https://github.com/doesdev/rollup-plugin-analyzer) and [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) to provide the developer and understanding of what is bundled with the packages.
+Each package in the monorepo is built with [Babel CLI](https://babeljs.io/docs/en/babel-cli), with exports of `dist/cjs/index.js` for CommonJS and `dist/esm/index.js` for ES Modules. Modern bundling tools like [Webpack](https://webpack.js.org/) and [Parcel](https://parceljs.org/) can perform tree-shaking on ES Modules exports.
 
 ### Design System Upgrade Process
 

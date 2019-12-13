@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Flex from './Flex'
 import Heading from './Heading'
 import Text from './Text'
-import Icon from './Icon'
+import { User } from 'pcln-icons'
 
 const StyledImage = styled(Flex)`
   justify-content: center;
@@ -21,7 +21,7 @@ function Avatar({ className, title, subtitle, src, initials, size, color }) {
     <Flex className={className}>
       <StyledImage src={src} size={size} color={color} p={2}>
         {!src && initials && <Text fontSize={1}>{initials.toUpperCase()}</Text>}
-        {!src && !initials && <Icon name="User" />}
+        {!src && !initials && <User />}
       </StyledImage>
       {title && (
         <Flex flexDirection="column" justifyContent="center" ml={3}>
