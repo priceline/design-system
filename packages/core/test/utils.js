@@ -313,7 +313,6 @@ describe('utils', () => {
       const props = { theme: createTheme() }
       expect(borders(props)).toEqual({
         'border-color': props.theme.palette.border.base,
-        'box-shadow': `0 0 0 1px ${props.theme.palette.border.base}`,
         ':focus': {
           outline: 0,
           'border-color': props.theme.palette.primary.base,
@@ -322,7 +321,6 @@ describe('utils', () => {
       })
       expect(borders({ ...props, color: 'primary' })).toEqual({
         'border-color': props.theme.palette.primary.base,
-        'box-shadow': `0 0 0 1px ${props.theme.palette.primary.base}`,
         ':focus': {
           outline: 0,
           'border-color': props.theme.palette.primary.base,

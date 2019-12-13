@@ -1,20 +1,33 @@
 {
   "name": "pcln-popover",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "description": "React component for popover",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
   "scripts": {
-    "prepare": "rollup -c",
-    "clean": "rm -rf node_modules dist",
+    "prepare": "npm run clean && npm run build",
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es",
+    "clean": "rimraf dist",
     "test": "jest"
   },
+  "files": ["dist/"],
   "author": "Priceline",
   "license": "MIT",
   "jest": {
-    "coverageReporters": ["lcov", "html"],
-    "setupFilesAfterEnv": ["../../test-setup.js"],
-    "testMatch": ["<rootDir>/test/**/*.js"]
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
   },
   "dependencies": {
     "react-popper": "^1.3.3"
@@ -26,13 +39,18 @@
     "react-dom": ">=16.3.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.0",
     "@reach/component-component": "^0.1.1",
+    "cross-env": "^6.0.3",
     "jest": "^24.9.0",
-    "pcln-design-system": "^2.6.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2",
-    "styled-components": "^4.4.0"
+    "npm-run-all": "^4.1.5",
+    "pcln-design-system": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-focus-lock": "^2.2.1",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "styled-components": "^4.4.1"
   },
   "engines": {
     "node": ">=8.0.0 <9.0.0 || >=10.0.0",

@@ -32,7 +32,7 @@ Flex.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType(),
+  bg: deprecatedPropType('color'),
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,

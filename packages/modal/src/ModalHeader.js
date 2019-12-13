@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Flex, CloseButton, Text } from 'pcln-design-system'
+import { Flex, CloseButton, deprecatedPropType, Text } from 'pcln-design-system'
 
 const HeaderWrapper = styled(Flex)`
   height: 40px;
@@ -32,7 +32,7 @@ const ModalHeader = ({ bg, color, onClose, title }) => (
 ModalHeader.displayName = ModalHeader
 
 ModalHeader.propTypes = {
-  bg: PropTypes.string,
+  bg: deprecatedPropType('color'),
   onClose: PropTypes.func,
   color: PropTypes.string,
   title: PropTypes.string

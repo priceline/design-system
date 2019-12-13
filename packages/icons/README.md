@@ -10,22 +10,22 @@ npm i pcln-icons
 
 ```js
 import React from 'react'
-import FlightsIcon from 'pcln-icons/lib/Flights'
+import { Flights as FlightsIcon } from 'pcln-icons'
 
 export default props => <FlightsIcon mr={2} />
 ```
 
 For a complete list of all icons, see: [the iconography docs](https://priceline.github.io/design-system/iconography)
 
-For backwards compatibility, the `Icon` component can be used in the same way as in the Design System v1.
-
-**Note:** The `Icon` component will be deprecated. Prefer using individual imports as shown above.
+**BREAKING CHANGE:** The `Icon` component has been removed from `core` (`pcln-design-system`) in v3.0.0. The optimal
+approach is to use named imports from `pcln-icons`. If you need an `<Icon>` component that supports a `name`
+prop, you can use:
 
 ```js
 import React from 'react'
-import Icon from 'pcln-icons'
+import { Icon } from 'pcln-icons'
 
-export default props => <Icon name="Flights" />
+export default props => <Icon name={iconName} mr={2} />
 ```
 
 ## Development
@@ -51,5 +51,4 @@ svg/        Source for custom SVG icons
 src/        Source for wrapper Icon component
 components/ React components for icons
 test/       Unit tests
-lib/        Icon components compiled to commonjs format
 ```

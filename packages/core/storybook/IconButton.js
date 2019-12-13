@@ -1,16 +1,26 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+import { Calendar } from 'pcln-icons'
+
 import { IconButton } from '../src'
 
 storiesOf('IconButton', module)
-  .add('default', () => <IconButton name="Calendar" title="Choose date" />)
+  .add('default', () => (
+    <IconButton
+      onClick={action('Clicked IconButton')}
+      icon={<Calendar title="Choose date" />}
+    />
+  ))
   .add('with color', () => (
-    <IconButton name="Calendar" color="blue" title="Choose date" />
+    <IconButton
+      onClick={action('Clicked IconButton')}
+      icon={<Calendar title="Choose date" color="primary" />}
+    />
   ))
   .add('with size', () => (
-    <IconButton name="Calendar" size={64} title="Choose date" />
-  ))
-  .add('with other elements', () => (
-    <IconButton name="Calendar" size={64} title="Choose date" />
+    <IconButton
+      onClick={action('Clicked IconButton')}
+      icon={<Calendar title="Choose date" size={64} />}
+    />
   ))

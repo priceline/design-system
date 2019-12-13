@@ -1,17 +1,24 @@
 {
   "name": "pcln-icons",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "Priceline React icons based on Material Design Icons",
-  "main": "lib/Icon.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
   "scripts": {
-    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm run build:babel",
-    "clean": "rm -rf node_modules components lib",
+    "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm-run-all -p build:babel:*",
+    "clean": "rimraf dist components",
     "build:svg": "svgr svg -d components",
     "build:index": "node ./create-index.js",
     "build:copy": "cp src/Icon.js src/Svg.js src/index.js components",
-    "build:babel": "babel components -d lib",
+    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./components --out-dir ./dist/cjs",
+    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./components --out-dir ./dist/esm",
+    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./components --out-dir ./dist/es",
     "test": "jest"
   },
+  "files": [
+    "dist/"
+  ],
   "author": "Priceline",
   "license": "MIT",
   "dependencies": {
@@ -20,16 +27,19 @@
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@svgr/cli": "^4.1.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2"
+    "@babel/cli": "^7.7.0",
+    "@svgr/cli": "^4.3.3",
+    "cross-env": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0"
   },
   "peerDependencies": {
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0",
-    "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
+    "styled-components": ">=3.x <5x"
   },
   "jest": {
     "setupFilesAfterEnv": [

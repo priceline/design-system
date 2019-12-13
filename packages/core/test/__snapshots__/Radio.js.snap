@@ -5,10 +5,7 @@ exports[`Radio Disabled, rendering 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c4 {
-  outline: none;
+  width: 28px;
 }
 
 .c1 {
@@ -48,7 +45,8 @@ exports[`Radio Disabled, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c5 {
+.c4 {
+  outline: none;
   vertical-align: middle;
 }
 
@@ -79,7 +77,7 @@ exports[`Radio Disabled, rendering 1`] = `
     />
     <svg
       aria-hidden={true}
-      className="c3 c4 c5"
+      className="c3 c4"
       fill="currentcolor"
       focusable={false}
       height={28}
@@ -101,10 +99,7 @@ exports[`Radio Not Selected, rendering 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c4 {
-  outline: none;
+  width: 28px;
 }
 
 .c1 {
@@ -148,7 +143,8 @@ exports[`Radio Not Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c5 {
+.c4 {
+  outline: none;
   vertical-align: middle;
 }
 
@@ -177,7 +173,7 @@ exports[`Radio Not Selected, rendering 1`] = `
     />
     <svg
       aria-hidden={true}
-      className="c3 c4 c5"
+      className="c3 c4"
       fill="currentcolor"
       focusable={false}
       height={28}
@@ -199,10 +195,7 @@ exports[`Radio Selected, rendering 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-}
-
-.c4 {
-  outline: none;
+  width: 28px;
 }
 
 .c1 {
@@ -246,7 +239,8 @@ exports[`Radio Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c5 {
+.c4 {
+  outline: none;
   vertical-align: middle;
 }
 
@@ -277,7 +271,7 @@ exports[`Radio Selected, rendering 1`] = `
     />
     <svg
       aria-hidden={true}
-      className="c3 c4 c5"
+      className="c3 c4"
       fill="currentcolor"
       focusable={false}
       height={28}

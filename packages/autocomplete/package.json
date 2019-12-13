@@ -1,14 +1,22 @@
 {
   "name": "pcln-autocomplete",
-  "version": "2.0.5",
+  "version": "3.0.0",
   "description": "React autocomplete component built with Downshift",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
   "scripts": {
-    "prepare": "rollup -c",
-    "clean": "rm -rf node_modules dist",
+    "prepare": "npm run build",
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./dist/es",
+    "clean": "rimraf dist",
     "test": "jest"
   },
+  "files": [
+    "dist/"
+  ],
   "keywords": [],
   "author": "Priceline",
   "license": "MIT",
@@ -18,22 +26,29 @@
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
     "@reach/component-component": "^0.1.1",
     "cat-names": "^2.0.0",
-    "pcln-design-system": "^2.6.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2",
-    "styled-components": "^3.4.10",
+    "cross-env": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "pcln-design-system": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "styled-components": "^4.4.1",
     "us": "^2.0.0"
   },
   "peerDependencies": {
     "pcln-design-system": ">=2.x"
   },
   "jest": {
-    "setupFilesAfterEnv": ["../../test-setup.js"],
-    "testMatch": ["<rootDir>/test/**/*.js"]
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
   }
 }

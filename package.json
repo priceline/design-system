@@ -13,48 +13,44 @@
     "codecov": "npx codecov",
     "start": "start-storybook -p 8000 -c storybook",
     "storybook": "build-storybook -c storybook -o docs/out/storybook",
-    "create-component": "npm run plop"
+    "create-component": "npm run plop",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@babel/runtime": "^7.6.3",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/runtime": "^7.7.2",
     "@storybook/addon-a11y": "^4.1.18",
     "@storybook/addon-actions": "^4.1.18",
     "@storybook/addon-info": "^4.1.18",
+    "@storybook/addon-knobs": "^4.1.18",
     "@storybook/addon-viewport": "^4.1.18",
     "@storybook/react": "^4.1.18",
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
+    "all-contributors-cli": "^6.11.0",
     "babel-loader": "^8.0.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "hoist-non-react-statics": "^3.3.0",
     "husky": "^1.3.1",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.3",
     "lerna": "^3.14.1",
     "lint-staged": "^8.1.3",
+    "npm-run-all": "^4.1.5",
     "plop": "^2.5.2",
     "prettier": "^1.16.4",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-draggable-playground": "^1.0.0",
-    "rollup": "^1.23.1",
-    "rollup-plugin-analyzer": "^3.2.2",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-babel-runtime-external": "^2.0.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-filesize": "^6.0.1",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-terser": "^5.1.2",
-    "rollup-plugin-visualizer": "^2.7.2",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.1"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -67,7 +63,6 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "dist",
-      "icons/lib/",
       "slider/src/rc-slider"
     ],
     "coverageThreshold": {
@@ -90,5 +85,9 @@
   },
   "dependencies": {
     "npm": "^6.9.0"
+  },
+  "engines": {
+    "node": ">=8.16.0",
+    "npm": ">=6.4.1"
   }
 }

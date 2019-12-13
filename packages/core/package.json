@@ -1,14 +1,22 @@
 {
   "name": "pcln-design-system",
-  "version": "2.7.1",
+  "version": "3.0.0",
   "description": "Priceline Design System",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
   "scripts": {
-    "prepare": "rollup -c",
-    "clean": "rm -rf node_modules dist",
+    "prepare": "npm run clean && npm run build",
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es",
+    "clean": "rimraf dist",
     "test": "jest"
   },
+  "files": [
+    "dist/"
+  ],
   "author": "Priceline",
   "contributors": [
     {
@@ -30,16 +38,24 @@
     {
       "name": "Jonathan Schwarz",
       "email": "jonathan.e.schwarz@gmail.com"
+    },
+    {
+      "name": "Steve Dalonzo",
+      "email": "steve.dalonzo@gmail.com"
     }
   ],
   "license": "MIT",
   "devDependencies": {
-    "camelcase": "^5.0.0",
+    "@babel/cli": "^7.7.0",
+    "camelcase": "^5.3.1",
+    "cross-env": "^6.0.3",
     "jest": "^24.9.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-test-renderer": "^16.10.2",
-    "stylis": "^3.4.9"
+    "npm-run-all": "^4.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "stylis": "^3.5.4"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -51,14 +67,14 @@
   },
   "dependencies": {
     "deepmerge": "^4.0.0",
-    "pcln-icons": "^2.2.2",
+    "pcln-icons": "^3.0.0",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
   },
   "peerDependencies": {
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0",
-    "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
+    "styled-components": ">=3.0.0"
   },
   "repository": {
     "type": "git",

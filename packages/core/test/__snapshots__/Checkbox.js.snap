@@ -5,6 +5,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {
@@ -137,6 +138,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {
@@ -268,6 +270,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {
@@ -396,6 +399,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  width: 24px;
 }
 
 .c3 {

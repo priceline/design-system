@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
 import PopoverContent from './PopoverContent'
+import { deprecatedPropType } from 'pcln-design-system'
 
 class Popover extends Component {
   constructor(props) {
@@ -92,12 +93,13 @@ Popover.propTypes = {
   ariaLabel: PropTypes.string,
   className: PropTypes.string,
   p: PropTypes.number,
-  bg: PropTypes.string,
+  bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,
   width: PropTypes.number,
-  overlayOpacity: PropTypes.number
+  overlayOpacity: PropTypes.number,
+  trapFocus: PropTypes.bool
 }
 
 export default Popover

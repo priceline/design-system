@@ -43,3 +43,13 @@ storiesOf('Flex', module)
       </Box>
     </Flex>
   ))
+  .add('deprecated bg shim', () => (
+    <Flex bg="blue">
+      <Box width={1 / 2} p={3} color="white" bg="blue">
+        Flex
+      </Box>
+      <Box width={1 / 2} p={1} color="white" bg="green">
+        Box
+      </Box>
+    </Flex>
+  ))

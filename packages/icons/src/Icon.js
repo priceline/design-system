@@ -1,9 +1,10 @@
 import React from 'react'
+import styled from 'styled-components'
 import upperFirst from 'lodash.upperfirst'
 import PropTypes from 'prop-types'
 import * as icons from './index'
 
-const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
+const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
   const Component = icons[name] || icons[upperFirst(name)]
 
   let ariaLabelledBy = titleId ? titleId : ''
@@ -20,7 +21,7 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
   } else {
     return (
       <Component
-        title={title}
+        title={title || name}
         desc={desc}
         titleId={titleId}
         descId={descId}
@@ -33,6 +34,10 @@ const Icon = ({ name, title, desc, titleId, descId, ...props }) => {
     )
   }
 }
+
+const Icon = styled(BaseIcon)`
+  outline: none;
+`
 
 Icon.isIcon = true
 Icon.displayName = 'Icon'

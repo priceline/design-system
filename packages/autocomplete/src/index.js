@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import {
   Flex,
   Card,
+  deprecatedPropType,
   Label as PclnLabel,
   Input as PclnInput
 } from 'pcln-design-system'
@@ -46,6 +47,10 @@ MenuCard.defaultProps = {
   borderWidth: 0,
   boxShadowSize: 'lg',
   mt: 1
+}
+
+MenuCard.propTypes = {
+  bg: deprecatedPropType('color')
 }
 
 const MenuRoot = React.forwardRef((props, ref) => (

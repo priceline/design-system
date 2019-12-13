@@ -13,6 +13,7 @@ exports[`BlockLink renders 1`] = `
 }
 
 .c0:hover {
+  color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

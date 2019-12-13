@@ -2,7 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Box from './Box'
 import styled, { withTheme } from 'styled-components'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
+import {
+  applyVariations,
+  getPaletteColor,
+  deprecatedColorValue,
+  deprecatedPropType
+} from './utils'
 
 const arrowShadow = props => {
   return props.top
@@ -92,7 +97,7 @@ const TooltipContent = styled(Box)`
 
 const propTypes = {
   children: PropTypes.any.isRequired,
-  bg: deprecatedColorValue(),
+  bg: deprecatedPropType('color'),
   color: deprecatedColorValue(),
   bottom: PropTypes.bool,
   top: PropTypes.bool,
@@ -108,7 +113,7 @@ const defaultProps = {
   zIndex: 'auto'
 }
 
-const Tooltip = ({ children, align, ...props }) => {
+const Tooltip = ({ children, ...props }) => {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} {...props}>

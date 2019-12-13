@@ -4,7 +4,7 @@
 
   - [Local Development](#local-development)
   - [Clone the repo](#clone-the-repo)
-  - [Lerna and Rollup](#lerna-and-rollup)
+  - [Lerna](#lerna)
   - [Install dependencies](#install-dependencies)
   - [Running tests](#running-tests)
   - [Storybook](#storybook)
@@ -17,20 +17,21 @@
 
   - [Creating Components](COMPONENT_GUIDANCE.md)
 
-If you'd like to contribute to the design system, we'd love to have your help.
-As with any open source project, we ask that you be nice, professional, and
+If you'd like to contribute to the Design System, we'd love to have your help.
+As with any open source project, we ask that you be kind, professional, and
 courteous towards others.
 
-Contributing doesn't necessarily mean commiting code, we also encourage you to:
+Contributing doesn't necessarily mean committing code; we also encourage you to:
 
 - Open issues
 - Join in on discussions in issues and PRs
 - Help write documentation
 - Use the Design System in your project and provide feedback
+- Add yourself to our Contributors list using `npm run contributors:add` then enter your username and type of contribution.
 
-### Local Development
+## Local Development
 
-To contribute code to the Design System, first you'll need to set it up for
+To contribute code to the Design System, first, you'll need to set it up for
 local development.
 
 ### Clone the repo
@@ -40,13 +41,10 @@ git clone https://github.com/priceline/design-system.git
 cd design-system
 ```
 
-### Lerna and Rollup
+### Lerna
 
-This repository uses [Lerna][] & [Rollup][] and is set up as a monorepo, with
+This repository uses [Lerna](https://lernajs.io) and is set up as a monorepo, with
 multiple npm packages in the `packages/` folder.
-
-[lerna]: https://lernajs.io
-[rollup]: https://rollupjs.org
 
 ### Install dependencies
 
@@ -57,7 +55,7 @@ npm install
 ```
 
 Please be mindful that any deletion, or edit, of `package-lock.json`
-would cause issue in dependencies of packages within the design system.
+can cause issues in dependencies of packages within the design system.
 
 ### Running tests
 
@@ -107,15 +105,15 @@ open http://localhost:8000/
 
 ### Publishing
 
-To publish the packages to npm, you'll need to be added as an owner for the
-packages you're publishing. Use the #design-system Slack channel for more
+To publish the packages to npm, you have to be an owner of the
+packages you're publishing. Use the `#design-system` Slack channel for more
 information.
 
 Before Publishing:
 
 - Publishing is very easy once you have access to the NPM package. **Please Be Careful** 🤗
 - As of v2, Node.js v8+ is required
-- Ensure NPM login has been authenticated. If multiple NPM registries are used, [npmrc](https://www.npmjs.com/package/npmrc) tool can be used to switch to NPM public registry.
+- Use `npm login` to authenticate against the public NPM registry. If your local environment requires multiple NPM registries, the [npmrc](https://www.npmjs.com/package/npmrc) tool is useful to toggle between registries.
 
 These Lerna commands can be helpful when publishing:
 
@@ -165,7 +163,7 @@ All merges into master should be ready to be published to npm and the person
 merging the PR should use `npm version` to bump the package's version according
 to [Semantic Versioning][semver].
 
-Generally the workflow looks like this:
+Generally, the workflow looks like this:
 
 1. Pull the latest changes from master
 2. Create a new feature branch (pick a name that clearly describes the feature)
@@ -177,29 +175,23 @@ Generally the workflow looks like this:
 6. Allow for some time for discussion
 7. (optional) If your PR has merge conflicts, pull the latest from master, then
    merge those changes into your PR branch, resolving conflicts in the process
-8. Once there is a general consensus on the change and all tests have passed,
+8. Once there is consensus on the changes and all tests have passed,
    merge the PR into master
 9. Use the npm CLI to appropriately version and publish the package
 10. Push the git tags created with the npm CLI to GitHub with `git push --tags`
 
-### Beta Version
-
-As of the date this was written, the Design System is currently in a beta.
-The package versioning reflects this with the version `1.0.0-x` convention.
-Once the library is in a more stable and mature state, we will release a stable
-`1.0.0` and strictly follow semantic versioning from that point on.
-
 ### Pull Requests
 
-All changes to the code base should be reviewed in a PR before merging to
+All changes to the code base must be submitted as a Pull Request (PR) and approved
+by at least two members of the team before it can be merged to
 master. This gives contributors and the team a chance to review and discuss
 changes and helps create a record of the project's history.
 
 If you're unsure about your change, feel free to open a PR for discussion or
-make an RFC (request for comments) PR. PRs can also be in a work in progress
-(WIP) state as long as they are clearly marked.
+make an RFC (request for comments) PR. PRs can also be in a Work In Progress
+(WIP) state as long as they are marked clearly.
 
-Generally follow these rules for creating a PR:
+Generally, follow these rules for creating a PR:
 
 - Keep it simple
 - Keep changes as small as possible

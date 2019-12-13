@@ -13,7 +13,6 @@ export { default as Container } from './Container'
 export { default as Divider } from './Divider'
 export { default as Flag } from './Flag'
 export { default as Flex } from './Flex'
-export { default as GreenButton } from './GreenButton'
 export { default as Heading } from './Heading'
 export { default as Hide } from './Hide'
 export { default as Hug } from './Hug'
@@ -27,11 +26,9 @@ export { default as FormField } from './FormField'
 export { default as InputGroup } from './InputGroup'
 export { default as Label } from './Label'
 export { default as Link } from './Link'
-export { default as OutlineButton } from './OutlineButton'
 export { default as PlaceholderImage } from './PlaceholderImage'
 export { default as Radio } from './Radio'
 export { default as RatingBadge } from './RatingBadge'
-export { default as RedButton } from './RedButton'
 export { default as Relative } from './Relative'
 export { default as Select } from './Select'
 export { default as SrOnly } from './SrOnly'
@@ -50,6 +47,7 @@ export { default as createTheme } from './createTheme'
 export {
   borders,
   color,
+  deprecatedPropType,
   getContrastRatio,
   getPaletteColor,
   getTextColorOn,

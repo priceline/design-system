@@ -18,14 +18,12 @@ exports[`Select renders 1`] = `
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
+  width: 24px;
   color: #4f6f8f;
 }
 
 .c3 {
   outline: none;
-}
-
-.c4 {
   pointer-events: none;
 }
 
@@ -51,9 +49,9 @@ exports[`Select renders 1`] = `
 }
 
 .c1:focus {
-  outline: none;
+  outline: 0;
   border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
+  box-shadow: 0 0 0 2px #007aff;
 }
 
 .c1::-ms-expand {
@@ -72,7 +70,6 @@ exports[`Select renders 1`] = `
 >
   <select
     className="c1 "
-    color="primary"
     fontSize={
       Array [
         2,
@@ -83,8 +80,8 @@ exports[`Select renders 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3 c4"
-    color="gray"
+    className="c2 c3"
+    color="text.light"
     fill="currentcolor"
     focusable={false}
     height={24}

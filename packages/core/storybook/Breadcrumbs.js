@@ -5,7 +5,7 @@ import {
   Flights as FlightsIcon,
   Home as HomeIcon,
   Seat as SeatIcon
-} from 'pcln-icons/lib'
+} from 'pcln-icons'
 
 storiesOf('Breadcrumbs', module)
   .add('Basic', () => (

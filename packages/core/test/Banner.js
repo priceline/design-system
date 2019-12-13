@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner, Text, theme } from '../src'
+import { Banner, Text, Heading, theme } from '../src'
 
 describe('Banner', () => {
   test('renders with no props other than theme', () => {
@@ -102,28 +102,6 @@ describe('Banner', () => {
     expect(icon).toBeTruthy()
   })
 
-  // these won't be needed if Banner is changed to a more composable API
-  test.skip('does render green left-hand icon by default', () => {
-    const { container } = renderWithTheme(<Banner bg="green" />)
-    const icon = container.querySelector('svg')
-    // name=success
-    expect(icon).toBeTruthy()
-  })
-
-  test.skip('does render orange left-hand icon by default', () => {
-    const { container } = renderWithTheme(<Banner bg="orange" />)
-    const icon = container.querySelector('svg')
-    // name=attention
-    expect(icon).toBeTruthy()
-  })
-
-  test.skip('does render red left-hand icon by default', () => {
-    const { container } = renderWithTheme(<Banner bg="red" />)
-    const icon = container.querySelector('svg')
-    // name=warning
-    expect(icon).toBeTruthy()
-  })
-
   test('does not render blue left-hand icon if showIcon is false', () => {
     const { container } = renderWithTheme(<Banner bg="blue" showIcon={false} />)
     const icon = container.querySelector('svg')
@@ -143,5 +121,20 @@ describe('Banner', () => {
       </Banner>
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+
+  test('renders with header node', () => {
+    const { asFragment, getByText } = renderWithTheme(
+      <Banner
+        header={<Heading>Hello world</Heading>}
+        text={<Text>Text</Text>}
+        iconName="star"
+        iconSize={20}
+        theme={theme}
+      />
+    )
+
+    getByText(/Hello world/)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

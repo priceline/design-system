@@ -1,26 +1,31 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { IconField, Input, Select, Icon, IconButton } from '../src'
+import { IconField, Input, Select, IconButton } from '../src'
+import {
+  Calendar as CalendarIcon,
+  Check as CheckIcon,
+  Close as CloseIcon
+} from 'pcln-icons'
 import { action } from '@storybook/addon-actions'
 
 storiesOf('IconField', module)
   .add('Icon and Input', () => (
     <IconField>
-      <Icon name="Calendar" color="blue" />
+      <CalendarIcon color="blue" />
       <Input placeholder="Choose Date" />
     </IconField>
   ))
   .add('Input and Icon', () => (
     <IconField>
       <Input placeholder="Choose Date" />
-      <Icon name="Calendar" color="blue" />
+      <CalendarIcon color="blue" />
     </IconField>
   ))
   .add('Input and Icon Button', () => (
     <IconField>
       <Input placeholder="Choose Date" />
       <IconButton
-        name="close"
+        icon={<CloseIcon />}
         size={24}
         color="gray"
         title="Clear text"
@@ -30,17 +35,17 @@ storiesOf('IconField', module)
   ))
   .add('Icon, Input, and Icon', () => (
     <IconField>
-      <Icon name="Calendar" color="blue" />
+      <CalendarIcon color="blue" />
       <Input placeholder="Choose Date" />
-      <Icon name="Check" color="green" />
+      <CheckIcon color="green" />
     </IconField>
   ))
   .add('Icon, Input and Icon Button', () => (
     <IconField>
-      <Icon name="Calendar" color="blue" />
+      <CalendarIcon color="blue" />
       <Input placeholder="Choose Date" />
       <IconButton
-        name="Close"
+        icon={<CloseIcon />}
         size={24}
         color="gray"
         title="Clear text"
@@ -50,7 +55,7 @@ storiesOf('IconField', module)
   ))
   .add('Icon and Select', () => (
     <IconField>
-      <Icon name="Calendar" color="blue" />
+      <CalendarIcon color="blue" />
       <Select>
         <option>Choose Date</option>
         <option>January 2019</option>

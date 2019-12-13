@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Check } from 'pcln-icons'
 import Button from './Button'
 import Text from './Text'
-import Icon from './Icon'
 import { getPaletteColor } from './utils'
 
 const StepperFlex = styled(Button)`
@@ -25,8 +25,7 @@ function Step({ className, active, completed, children, onClick }) {
   return (
     <StepperFlex className={className} alignItems="center" onClick={onClick}>
       {completed && (
-        <Icon
-          name="Check"
+        <Check
           color="primary"
           size={16}
           mr={1}
