@@ -1,84 +1,135 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
+import { withKnobs, boolean, optionsKnob } from '@storybook/addon-knobs'
+import { withInfo } from '@storybook/addon-info'
+import { Cartesian, Catch, LiveEditor, Markdown, XRay } from '@compositor/kit'
+
 import { Box, Button, Text } from '../src'
 
+const variations = { outline: 'outline', fill: 'fill', link: 'link' }
+const sizes = { small: 'small', medium: 'medium', large: 'large' }
+const colors = {
+  primary: 'primary',
+  secondary: 'secondary',
+  text: 'text',
+  success: 'success',
+  error: 'error',
+  warning: 'warning',
+  alert: 'alert',
+  caution: 'caution',
+  notify: 'notify',
+  pricePrimary: 'pricePrimary',
+  priceSecondary: 'priceSecondary',
+  promoPrimary: 'promoPrimary',
+  promoSecondary: 'promoSecondary',
+  border: 'border',
+  background: 'background'
+}
+
 storiesOf('Button', module)
-  .add(
-    'Button component',
+  .addParameters({ component: Button })
+  .addDecorator(story => (
+    <Box>
+      <Markdown>
+        {`
+Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Use the *variation* prop to change the appearance of the button.
+        `}
+      </Markdown>
+      {story()}
+    </Box>
+  ))
+  .addDecorator(withKnobs)
+  .addDecorator(
     withInfo({
-      inline: true,
-      text:
-        'Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.'
-    })(() => <Button size="large">Button</Button>)
+      inline: false
+    })
   )
-  .add('variations', () => (
-    <div>
-      <div>
-        <Button mr={2}>Button</Button>
-        <Button variation="outline" mr={2}>
-          Outline Button
-        </Button>
-        <Button variation="link" mr={2} onClick={action('clicked')}>
-          Link Button
-        </Button>
-      </div>
-      <Box py={2}>
-        <Text fontSize={1}>
-          Button with variation link can be used as a{' '}
-          <Button variation="link" onClick={action('modal opened')}>
-            disclaimer
-          </Button>{' '}
-          to pop a modal.
-        </Text>
-      </Box>
-    </div>
+  .add('Button', () => {
+    const variation = optionsKnob('Variation', variations, 'fill', {
+      display: 'select'
+    })
+    const size = optionsKnob('Size', sizes, 'medium', {
+      display: 'select'
+    })
+    const color = optionsKnob('Palette Color', colors, 'primary', {
+      display: 'select'
+    })
+    const disabled = boolean('Disabled?', false)
+    const fullWidth = boolean('Full Width?', false)
+
+    return (
+      <Catch>
+        <LiveEditor
+          code={`<Button
+  variation='${variation}'
+  size='${size}'
+  color='${color}'
+  disabled={${disabled}}
+  width={${fullWidth ? 1 : null}}>
+  BUTTON
+</Button>`}
+          scope={{
+            Button
+          }}
+        />
+      </Catch>
+    )
+  })
+  .add('Try It!', () => {
+    const variation = optionsKnob('Variation', variations, 'fill', {
+      display: 'multi-select'
+    })
+    const size = optionsKnob('Size', sizes, 'medium', {
+      display: 'multi-select'
+    })
+    const color = optionsKnob('Palette Color', colors, 'primary', {
+      display: 'multi-select'
+    })
+    const disabled = boolean('Disabled?', false)
+    const fullWidth = boolean('Full Width?', false)
+
+    return (
+      <Cartesian
+        component={Button}
+        m={3}
+        variation={variation}
+        size={size}
+        color={color}
+        disabled={disabled}
+        width={fullWidth ? 1 : null}
+        onClick={action('Clicked button in Try It!')}
+      >
+        Try This Button!
+      </Cartesian>
+    )
+  })
+
+  .add('All', () => {
+    return (
+      <Cartesian
+        component={Button}
+        m={3}
+        color={Object.keys(colors)}
+        variation={Object.keys(variations)}
+        disabled={[false, true]}
+        size={Object.keys(sizes)}
+        onClick={action('Clicked button in All')}
+      >
+        I'm a Button
+      </Cartesian>
+    )
+  })
+
+  .add('Geometry', () => (
+    <XRay>
+      <Cartesian
+        component={Button}
+        m={3}
+        variation={Object.keys(variations)}
+        size={Object.keys(sizes)}
+      >
+        Button Geometry
+      </Cartesian>
+    </XRay>
   ))
-  .add('colors', () => (
-    <React.Fragment>
-      <div>
-        <Button color="secondary" mr={2}>
-          Button
-        </Button>
-        <Button color="error" mr={2}>
-          Button
-        </Button>
-        <Button color="caution" mr={2}>
-          Button
-        </Button>
-        <Button color="alert" mr={2}>
-          Button
-        </Button>
-      </div>
-      <div style={{ marginTop: '5px' }}>
-        <Button variation="outline" color="secondary" mr={2}>
-          Outline Button
-        </Button>
-        <Button variation="outline" color="error" mr={2}>
-          Outline Button
-        </Button>
-        <Button variation="outline" color="caution" mr={2}>
-          Outline Button
-        </Button>
-        <Button variation="outline" color="alert" mr={2}>
-          Outline Button
-        </Button>
-      </div>
-    </React.Fragment>
-  ))
-  .add('sizes', () => (
-    <div>
-      <Button size="large" mr={2}>
-        Large
-      </Button>
-      <Button size="medium" mr={2}>
-        Medium
-      </Button>
-      <Button size="small" mr={2}>
-        Small
-      </Button>
-    </div>
-  ))
-  .add('width', () => <Button width={1}>Full Width</Button>)
-  .add('disabled', () => <Button disabled>Disabled</Button>)
