@@ -40,4 +40,5 @@ Hidden when printing
 | `md`    | boolean | Sets display: none between the md and lg breakpoint |
 | `lg`    | boolean | Sets display: none between the lg and xl breakpoint |
 | `xl`    | boolean | Sets display: none above the xl breakpoint          |
+| `xxl`   | boolean | Sets display: none above the xxl breakpoint         |
 | `print` | boolean | Sets display: none for media print                  |

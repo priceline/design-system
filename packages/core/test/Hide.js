@@ -32,6 +32,11 @@ describe('Hide', () => {
     expect(json).toMatchSnapshot()
   })
 
+  test('renders with xxl prop', () => {
+    const json = rendererCreateWithTheme(<Hide xxl />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('renders with print prop', () => {
     const json = rendererCreateWithTheme(<Hide print />).toJSON()
     expect(json).toMatchSnapshot()
