@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "@reach/dialog": "^0.1.2",
+    "@reach/dialog": "^0.7.0",
     "pcln-design-system": "^2.6.2",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
@@ -37,5 +37,5 @@
     "node": ">=8.0.0 <9.0.0 || >=10.0.0",
     "npm": ">=5.10.0 || >=6.0.0"
   },
-  "gitHead": "ace31502c2df034c46159db05d44836226de543a"
+  "gitHead": "f71c84b222400152f2a5b96a3acdcad0c5fe830c"
 }
