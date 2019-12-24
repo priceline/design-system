@@ -17,7 +17,7 @@
   "author": "Priceline",
   "license": "MIT",
   "peerDependencies": {
-    "@reach/dialog": "^0.1.2",
+    "@reach/dialog": ">=0.x",
     "pcln-design-system": ">=2.x",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
