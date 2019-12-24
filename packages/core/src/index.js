@@ -50,6 +50,7 @@ export { default as createTheme } from './createTheme'
 export {
   borders,
   color,
+  deprecatedPropType,
   getContrastRatio,
   getPaletteColor,
   getTextColorOn,
