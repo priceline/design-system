@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Container, Box, theme } from '../src'
+import { Container, Box } from '../src'
 
 storiesOf('Container', module)
   .add('Default align with theme max width', () => (
