@@ -1,6 +1,6 @@
 import { theme, colors } from '../src'
 
-const aliases = ['sm', 'md', 'lg', 'xl']
+const aliases = ['sm', 'md', 'lg', 'xl', 'xxl']
 
 describe('theme', () => {
   console.warn = jest.fn()

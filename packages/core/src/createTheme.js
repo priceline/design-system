@@ -10,7 +10,7 @@ const deepmerge = require('deepmerge')
  */
 const addAliases = arr => {
   arr.forEach((val, key) => {
-    arr[['sm', 'md', 'lg', 'xl'][key]] = val
+    arr[['sm', 'md', 'lg', 'xl', 'xxl'][key]] = val
   })
 
   return arr

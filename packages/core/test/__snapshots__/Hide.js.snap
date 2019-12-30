@@ -55,7 +55,7 @@ exports[`Hide renders with sm prop 1`] = `
 `;
 
 exports[`Hide renders with xl prop 1`] = `
-@media screen and (min-width:64em) {
+@media screen and (min-width:64em) and (max-width:79.99em) {
   .c0 {
     display: none;
   }
@@ -68,6 +68,18 @@ exports[`Hide renders with xl prop 1`] = `
 
 exports[`Hide renders with xs prop 1`] = `
 @media screen and (max-width:31.99em) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Hide renders with xxl prop 1`] = `
+@media screen and (min-width:80em) {
   .c0 {
     display: none;
   }

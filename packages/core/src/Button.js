@@ -81,6 +81,9 @@ const variations = {
   `
 }
 
+/**
+ * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
+ */
 const Button = mapProps(({ fullWidth, ...props }) => ({
   width: fullWidth ? 1 : undefined,
   'aria-label': props.title,

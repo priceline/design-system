@@ -14,6 +14,7 @@ Object {
     "40em",
     "48em",
     "64em",
+    "80em",
   ],
   "colorStyles": Object {
     "blueOnLightBlue": Object {
@@ -174,6 +175,7 @@ Object {
     "@media screen and (min-width:40em)",
     "@media screen and (min-width:48em)",
     "@media screen and (min-width:64em)",
+    "@media screen and (min-width:80em)",
   ],
   "radii": Array [
     0,
