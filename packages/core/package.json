@@ -46,7 +46,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
+    "@babel/cli": "^7.7.7",
     "camelcase": "^5.3.1",
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "deepmerge": "^4.0.0",
-    "hoist-non-react-statics": "^3.3.0",
+    "hoist-non-react-statics": "^3.3.1",
     "pcln-icons": "^3.0.0",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
@@ -75,7 +75,7 @@
   "peerDependencies": {
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0",
-    "styled-components": ">=3.0.0"
+    "styled-components": ">=3"
   },
   "repository": {
     "type": "git",

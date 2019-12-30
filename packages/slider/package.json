@@ -39,14 +39,14 @@
   },
   "peerDependencies": {
     "pcln-design-system": ">=2.x",
-    "styled-components": ">=3.x <5x",
+    "styled-components": ">=3",
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@reach/component-component": "^0.1.1",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@reach/component-component": "^0.7.0",
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
     "npm-run-all": "^4.1.5",
