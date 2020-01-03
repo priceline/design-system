@@ -64,7 +64,7 @@ storiesOf('Tooltip', module)
           color="blue"
           label="Email Address"
           defaultValue="albus.dumbledore@priceline.com"
-          id="form-field-3"
+          id="form-field-4"
           placeholder="example@test.com"
         />
         <Tooltip bottom center bg="blue" color="white">
@@ -77,7 +77,7 @@ storiesOf('Tooltip', module)
           color="red"
           label="Email Address"
           defaultValue="albus.dumbledore@pr"
-          id="form-field-3"
+          id="form-field-5"
           placeholder="example@test.com"
         />
         <Tooltip bottom right bg="red" color="white">
@@ -93,7 +93,7 @@ storiesOf('Tooltip', module)
           color="blue"
           label="Email Address"
           defaultValue="albus.dumbledore@priceline.com"
-          id="form-field-3"
+          id="form-field-6"
           placeholder="example@test.com"
         />
       </Box>
@@ -106,7 +106,7 @@ storiesOf('Tooltip', module)
           color="blue"
           label="Email Address"
           defaultValue="albus.dumbledore@priceline.com"
-          id="form-field-3"
+          id="form-field-7"
           placeholder="example@test.com"
         />
       </Box>
@@ -119,7 +119,7 @@ storiesOf('Tooltip', module)
           color="blue"
           label="Email Address"
           defaultValue="albus.dumbledore@priceline.com"
-          id="form-field-3"
+          id="form-field-8"
           placeholder="example@test.com"
         />
       </Box>

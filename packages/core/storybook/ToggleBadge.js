@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, ToggleBadge } from '../src'
+import { ToggleBadge } from '../src'
 
 storiesOf('ToggleBadge', module)
   .add(

@@ -69,6 +69,10 @@ storiesOf('Popover', module)
     </Flex>
   ))
 
+const StyledBox = styled(Box)`
+  border-top: 1px solid ${({ theme }) => theme.colors['borderGray']};
+`
+
 const Playground = ({ children }) => (
   <DraggableParent height="calc(100vh - 32px)" width="(100vw - 32px)">
     <DraggableItem
@@ -163,10 +167,3 @@ const PriceGuidanceContent = ({ handleClose }) => (
     </Box>
   </ThemeProvider>
 )
-
-const StyledBox = styled(Box)`
-  border-top: 1px solid ${({ theme }) => theme.colors['borderGray']};
-`
-const BlockFlex = styled(Flex)`
-  display: block;
-`
