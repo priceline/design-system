@@ -12,7 +12,7 @@
   "author": "Priceline",
   "license": "MIT",
   "dependencies": {
-    "@reach/dialog": "^0.1.2",
+    "@reach/dialog": "^0.7.0",
     "prop-types": "^15.7.2",
     "react-transition-group": "^2.5.3"
   },
