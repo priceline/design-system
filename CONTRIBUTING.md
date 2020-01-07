@@ -125,12 +125,12 @@ These Lerna commands can be helpful when publishing:
 The following process is recommended for publishing packages individually:
 
 1. `npmrc public` - This command may differ based on your setup, but essentially you want to ensure that you are pointing to a public NPM registry
-2. `npm login`
-3. cd into packages/package-you-want-to-update
-4. `npm version patch`
-5. `cd ../..` - cd back to root directory
-6. `NPM_CONFIG_OTP=XXXXXX npm run publish from-package` - XXXXXX will be a 6-digit number from your authenticator app. If publishing fails, ensure that you are a collaborator on the subpackges you are trying to publish. (Have a maintainer run `npm owner add {your username} {package name (such as pcln-icons)}` on your behalf.)
-7. commit and push your changes to master (Note: you need to be an admin of the design-system GitHub repository to do this).
+1. `npm login`
+1. cd into packages/package-you-want-to-update
+1. `npm version patch`
+1. `cd ../..` - cd back to root directory
+1. `NPM_CONFIG_OTP=XXXXXX npm run publish from-package` - XXXXXX will be a 6-digit number from your authenticator app. If publishing fails, ensure that you are a collaborator on the subpackges you are trying to publish. (Have a maintainer run `npm owner add <user> [<@scope>/]<pkg>` on your behalf.) If you are publishing a version for testing purposes only, append `--tag beta` to the publish command, so that test versions are not visible on our npmjs pages.
+1. commit and push your changes to master (Note: you need to be an admin of the design-system GitHub repository to do this).
 
 After publishing please [document your release](https://github.com/priceline/design-system/releases/new)
 
