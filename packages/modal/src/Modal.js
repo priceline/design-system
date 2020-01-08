@@ -99,7 +99,7 @@ const ContentWrapper = styled(Box)`
   ${props => {
     if (!props.enableoverflow) {
       return `
-        overflow-y: scroll;
+        overflow-y: auto;
         overflow-x: hidden;
         height: 100%;
         -webkit-overflow-scrolling: touch;
@@ -117,6 +117,8 @@ const OverlayWrapper = styled.div`
 const DialogWrapper = styled(Box)`
   display: table-cell;
   vertical-align: ${({ verticalAlignment }) => verticalAlignment};
+  position: relative;
+  height: 100%;
   ${props =>
     props.enableoverflow &&
     `
