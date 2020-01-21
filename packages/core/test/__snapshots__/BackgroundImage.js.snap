@@ -6,6 +6,7 @@ exports[`BackgroundImage renders 1`] = `
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #4f6f8f;
+  background-attachment: scroll;
 }
 
 <div
@@ -20,6 +21,7 @@ exports[`BackgroundImage renders with height 1`] = `
   background-repeat: no-repeat;
   background-color: #4f6f8f;
   height: 320px;
+  background-attachment: scroll;
 }
 
 <div
@@ -35,6 +37,22 @@ exports[`BackgroundImage renders with image 1`] = `
   background-repeat: no-repeat;
   background-color: #4f6f8f;
   background-image: url(hello.png);
+  background-attachment: scroll;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`BackgroundImage variations parallax variation default render 1`] = `
+.c0 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4f6f8f;
+  background-image: url(hello.png);
+  background-attachment: fixed;
 }
 
 <div

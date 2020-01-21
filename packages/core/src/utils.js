@@ -127,14 +127,11 @@ export const getContrastRatio = (colorA, colorB) => {
 export const applyVariations = (componentName, variations = null) => props => {
   const { color, variation } = props
 
-  if (
-    variations &&
-    typeof color === 'string' &&
-    typeof variation === 'string'
-  ) {
+  if (variations && typeof variation === 'string') {
     return css`
       ${variations[variation] || ''}
-      ${themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
+      ${typeof color === 'string' &&
+        themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
     `
   }
 
