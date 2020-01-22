@@ -20,4 +20,16 @@ describe('BackgroundImage', () => {
     ).toJSON()
     expect(json).toMatchSnapshot()
   })
+
+  describe('variations', () => {
+    describe('parallax variation', () => {
+      test('default render', () => {
+        const json = rendererCreateWithTheme(
+          <BackgroundImage variation="parallax" image="hello.png" />
+        ).toJSON()
+        expect(json).toMatchSnapshot()
+        expect(json).toHaveStyleRule('background-attachment', 'fixed')
+      })
+    })
+  })
 })
