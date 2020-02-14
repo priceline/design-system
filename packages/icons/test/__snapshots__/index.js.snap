@@ -1479,6 +1479,35 @@ exports[`renders DoubleOccupancy 1`] = `
 </svg>
 `;
 
+exports[`renders Download 1`] = `
+.c0 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 24px;
+}
+
+.c1 {
+  outline: none;
+}
+
+<svg
+  aria-hidden={true}
+  className="c0 c1"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+  />
+</svg>
+`;
+
 exports[`renders EarlyBird 1`] = `
 .c0 {
   -webkit-flex: none;
