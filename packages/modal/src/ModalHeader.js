@@ -13,7 +13,7 @@ const StyledCloseButton = styled(CloseButton)`
   }
 
   &:focus {
-    background-color: ${props => props.theme.colors.darkBlue};
+    background-color: ${props => props.theme.palette.primary.dark};
     outline: none;
   }
 `
