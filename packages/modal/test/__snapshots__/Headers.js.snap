@@ -12,11 +12,6 @@ exports[`ModalHeader render 1`] = `
   outline: none;
 }
 
-.c2 {
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .c3 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -76,7 +71,29 @@ exports[`ModalHeader render 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 40px;
+}
+
+.c2 {
+  font-size: 14px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  height: 24px;
+  width: 24px;
 }
 
 .c4 svg {
