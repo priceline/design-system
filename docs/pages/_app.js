@@ -1,5 +1,6 @@
 import React from 'react'
-import App, { Container } from 'next/app'
+import Head from 'next/head'
+import App from 'next/app'
 import { Layout, Pagination } from 'mdx-docs'
 import { ThemeProvider, Box } from 'pcln-design-system'
 import components from '../src/components'
@@ -29,25 +30,26 @@ export default class MyApp extends App {
     const { Component, page } = this.props
 
     return (
-      <Container>
-        <ThemeProvider>
-          <Layout
-            {...this.props}
-            components={components}
-            theme={docsTheme}
-            basepath={basepath}
-            routes={routes}
-            sidebar={
-              <Box py={4}>
-                <SideNav />
-              </Box>
-            }
-            footer={<Pagination />}
-          >
-            <Component {...page} />
-          </Layout>
-        </ThemeProvider>
-      </Container>
+      <ThemeProvider>
+        <Head>
+          <title>Priceline One Design System</title>
+        </Head>
+        <Layout
+          {...this.props}
+          components={components}
+          theme={docsTheme}
+          basepath={basepath}
+          routes={routes}
+          sidebar={
+            <Box py={4}>
+              <SideNav />
+            </Box>
+          }
+          footer={<Pagination />}
+        >
+          <Component {...page} />
+        </Layout>
+      </ThemeProvider>
     )
   }
 }

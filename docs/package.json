@@ -24,7 +24,7 @@
     "@mdx-js/loader": "^0.15.5",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
-    "next": "^7.0.2",
+    "next": "^9.3.1",
     "next-mdx-docs": "0.0.1-0",
     "remark-autolink-headings": "^5.0.0",
     "remark-emoji": "^2.0.2",

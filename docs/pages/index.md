@@ -1,4 +1,4 @@
-import { version } from '../../package.json'
+import packageJson from '../../packages/core/package.json'
 import {
 ButtonLink,
 Code,
@@ -8,7 +8,7 @@ Description
 # Priceline One
 
 <Description>
-  Priceline Design System <Code>v{version}</Code>
+  Priceline Design System <Code>v{packageJson.version}</Code>
 </Description>
 
 ## Sketch Kit
