@@ -60,13 +60,12 @@ class Popover extends Component {
         <Reference>
           {({ ref }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
-            <InlineContainer innerRef={ref} ref={ref}>
+            <InlineContainer innerRef={ref}>
               {// Clone element to pass down toggle event so it can be used directly from children as needed
               React.cloneElement(this.props.children, {
                 'aria-label': 'Click to open popover with more information',
                 onClick: evt => this.handleToggle(evt, isPopoverOpen),
-                innerRef: this.triggerRef,
-                ref: this.triggerRef
+                innerRef: this.triggerRef
               })}
             </InlineContainer>
           )}

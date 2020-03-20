@@ -13,7 +13,8 @@ import {
   BackgroundImage,
   Absolute,
   Link,
-  Icon
+  Icon,
+  getPaletteColor
 } from 'pcln-design-system'
 import Component from '@reach/component-component'
 import Slider from '../../slider/src'
@@ -70,7 +71,7 @@ storiesOf('Popover', module)
   ))
 
 const StyledBox = styled(Box)`
-  border-top: 1px solid ${({ theme }) => theme.colors['borderGray']};
+  border-top: 1px solid ${getPaletteColor('border.base')};
 `
 
 const Playground = ({ children }) => (

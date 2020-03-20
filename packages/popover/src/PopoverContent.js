@@ -85,7 +85,6 @@ class PopoverContent extends Component {
             <PopperGuide
               className={this.props.className}
               innerRef={ref}
-              ref={ref}
               style={style}
               data-placement={placement}
               aria-label={this.props.ariaLabel}
