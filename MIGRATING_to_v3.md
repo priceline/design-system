@@ -19,6 +19,9 @@
 - OutlineButton `<OutlineButton />` has been removed
   - Use `<Button variation='outline'>...</Button>` instead
 - `bg` prop has been marked as deprecated in favor of `color`
+- `xxl` breakpoint added at 80em - this changes the behavior of `<Hide>` when `xl` is specified.
+  - `xl` was `min-width: 64em`, is now `min-width: 64em and max-width: 79.999em`
+  - `xxl` is now `min-width: 80em`
 - Icon `<Icon name="iconName" />` has been removed
 - IconButton
   - `name`, `size` and `color` props are removed
