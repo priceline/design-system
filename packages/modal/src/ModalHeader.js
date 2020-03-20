@@ -7,7 +7,14 @@ const HeaderWrapper = styled(Flex)`
   height: 40px;
 `
 
+const Title = styled(Text)`
+  display: flex;
+  align-items: center;
+`
+
 const StyledCloseButton = styled(CloseButton)`
+  height: 24px;
+  width: 24px;
   svg {
     vertical-align: top;
   }
@@ -19,11 +26,17 @@ const StyledCloseButton = styled(CloseButton)`
 `
 
 const ModalHeader = ({ bg, color, onClose, title }) => (
-  <HeaderWrapper align="center" color={color} bg={bg} px={3}>
+  <HeaderWrapper
+    align="center"
+    alignItems="center"
+    color={color}
+    bg={bg}
+    px={3}
+  >
     {title && (
-      <Text fontSize={1} bold>
+      <Title fontSize={1} bold>
         {title}
-      </Text>
+      </Title>
     )}
     {onClose && <StyledCloseButton onClick={onClose} ml="auto" />}
   </HeaderWrapper>
