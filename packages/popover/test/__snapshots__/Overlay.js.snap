@@ -2,13 +2,13 @@
 
 exports[`Background Overlay Active overlay 1`] = `
 .c0 {
+  background-color: #001833;
   display: block;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000;
   opacity: 0.3;
   z-index: 200;
   cursor: pointer;
@@ -25,13 +25,13 @@ exports[`Background Overlay Active overlay 1`] = `
 
 exports[`Background Overlay Inactive overlay 1`] = `
 .c0 {
+  background-color: #001833;
   display: block;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000;
   opacity: 0;
   z-index: 200;
   cursor: pointer;

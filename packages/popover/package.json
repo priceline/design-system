@@ -28,7 +28,8 @@
       "../../test-setup.js"
     ],
     "testMatch": [
-      "<rootDir>/test/**/*.js"
+      "<rootDir>/test/**/*.js",
+      "<rootDir>/src/**/*.spec.js"
     ]
   },
   "dependencies": {

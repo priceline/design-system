@@ -9,6 +9,7 @@ import FocusLock from 'react-focus-lock'
 import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
 import Overlay from './Overlay'
 import PopoverArrow from './Arrow'
+import getSCMigrationRef from './helpers/getSCMigrationRef'
 
 class PopoverContent extends Component {
   componentDidMount() {
@@ -84,8 +85,7 @@ class PopoverContent extends Component {
             // Need to be a native element, because of ref forwarding limitations with DS functional components
             <PopperGuide
               className={this.props.className}
-              innerRef={ref}
-              ref={ref}
+              {...{ [getSCMigrationRef()]: ref }}
               style={style}
               data-placement={placement}
               aria-label={this.props.ariaLabel}
@@ -94,7 +94,7 @@ class PopoverContent extends Component {
               aria-describedby={`dialog-description-${this.props.idx}`}
             >
               <ContentContainer
-                innerRef={this.props.contentRef}
+                {...{ [getSCMigrationRef()]: this.props.contentRef }}
                 ref={this.props.contentRef}
                 {...styleProps}
                 tabIndex="-1"

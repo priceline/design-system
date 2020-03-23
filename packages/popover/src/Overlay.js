@@ -10,7 +10,6 @@ const StyledOverlay = styled(Box)`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: ${({ theme }) => theme.colors.black};
   opacity: ${({ popoverOpen, overlayOpacity }) =>
     popoverOpen ? overlayOpacity : 0};
   z-index: ${({ zIndex }) => (zIndex < 0 ? 0 : zIndex)};
@@ -33,6 +32,7 @@ const Overlay = ({
       popoverOpen={popoverOpen}
       overlayOpacity={overlayOpacity}
       zIndex={zIndex}
+      bg={'background.darkest'}
     />
   )
 }

@@ -60,7 +60,6 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
   >
     <button
       aria-label="Click to open popover with more information"
-      innerref="[object Object]"
     >
       Trigger Button
     </button>
@@ -187,7 +186,9 @@ exports[`Popover UI Positioning Bottom 1`] = `
     aria-hidden="true"
     class="c2"
     data-placement="bottom"
-  />
+  >
+    <div />
+  </span>
 </div>
 `;
 
@@ -310,7 +311,9 @@ exports[`Popover UI Positioning Bottom End 1`] = `
     aria-hidden="true"
     class="c2"
     data-placement="bottom-end"
-  />
+  >
+    <div />
+  </span>
 </div>
 `;
 
@@ -433,6 +436,8 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
     aria-hidden="true"
     class="c2"
     data-placement="bottom-start"
-  />
+  >
+    <div />
+  </span>
 </div>
 `;
