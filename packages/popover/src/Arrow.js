@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { deprecatedPropType, theme, getPaletteColor } from 'pcln-design-system'
+import { deprecatedPropType, theme } from 'pcln-design-system'
 
 const PopoverArrow = ({
   arrowProps,
@@ -12,14 +12,15 @@ const PopoverArrow = ({
 }) => (
   <Arrow
     className={className}
-    innerRef={arrowProps.ref}
     style={arrowProps.style}
     data-placement={placement}
     theme={theme}
     background={background}
     borderColor={borderColor}
     aria-hidden="true"
-  />
+  >
+    <div ref={arrowProps.ref} />
+  </Arrow>
 )
 
 const ArrowAlignment = () =>

@@ -31,6 +31,7 @@ storiesOf('Popover', module)
           ariaLabel={'Price Guidance PopOver'}
           idx={1}
           width={370}
+          overlayOpacity={0.3}
           trapFocus={boolean('Trap focus', false)}
         >
           <Button>Popover</Button>
