@@ -22,6 +22,7 @@
 - `xxl` breakpoint added at 80em - this changes the behavior of `<Hide>` when `xl` is specified.
   - `xl` was `min-width: 64em`, is now `min-width: 64em and max-width: 79.999em`
   - `xxl` is now `min-width: 80em`
+  - Add the `xxl` prop to all necessary hide components during an upgrade, likely to be hide components using `xl` already
 - Icon `<Icon name="iconName" />` has been removed
 - IconButton
   - `name`, `size` and `color` props are removed
