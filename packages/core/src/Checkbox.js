@@ -83,9 +83,8 @@ const CheckBoxWrapper = styled(Box)`
     &:hover ~ svg[data-name='checked'] {
       color: ${props =>
         props.disabled
-          ? props.theme.colors.borderGray
-          : props.theme.colors.darkBlue};
-        }
+          ? getPaletteColor('border.base')(props)
+          : getPaletteColor('dark')(props)}
   }
 
   ${applyVariations('Checkbox')}

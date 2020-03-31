@@ -333,7 +333,7 @@ exports[`Checkbox renders with the theme passed specifically 1`] = `
 }
 
 .c0 > input:checked:hover ~ svg[data-name='checked'] {
-  color: #049;
+  color: primary;
 }
 
 .c1 {
