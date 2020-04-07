@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "React autocomplete component built with Downshift",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
