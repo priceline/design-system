@@ -41,7 +41,7 @@
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": ">=2.x"
+    "pcln-design-system": ">=2.6.0"
   },
   "jest": {
     "setupFilesAfterEnv": [

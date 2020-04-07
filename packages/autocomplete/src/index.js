@@ -7,7 +7,8 @@ import {
   Card,
   deprecatedPropType,
   Label as PclnLabel,
-  Input as PclnInput
+  Input as PclnInput,
+  getPaletteColor
 } from 'pcln-design-system'
 import { themeGet } from 'styled-system'
 
@@ -80,13 +81,13 @@ export const Menu = ({ children, ...props }) => (
 const ItemRoot = styled(Flex)`
   cursor: pointer;
   &[aria-selected='true'] {
-    background-color: ${themeGet('colors.lightBlue')};
+    background-color: ${getPaletteColor('primary.light')};
   }
   &[data-highlighted] {
     color: ${themeGet('colors.white')};
-    background-color: ${themeGet('colors.blue')};
+    background-color: ${getPaletteColor('primary.base')};
     & svg {
-      color: ${themeGet('colors.white')};
+      color: ${getPaletteColor('background.lightest')};
     }
   }
 `
