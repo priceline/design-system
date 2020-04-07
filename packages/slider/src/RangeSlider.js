@@ -1,18 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Range from './rc-slider/Range'
-import { space, color } from 'styled-system'
+import { space } from 'styled-system'
 import styleSlider from './styleSlider'
 
 const RangeSlider = styleSlider(Range)
 
 RangeSlider.defaultProps = {
   allowCross: false,
-  color: 'blue'
+  color: 'primary'
 }
 
 RangeSlider.propTypes = {
   ...space.propTypes,
-  ...color.propTypes
+  color: PropTypes.string
 }
 
 export default RangeSlider
