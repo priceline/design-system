@@ -10,7 +10,7 @@ class Popover extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isPopoverOpen: false
+      isPopoverOpen: props.openOnMount
     }
     this.contentRef = React.createRef()
     this.triggerRef = React.createRef()
@@ -55,7 +55,9 @@ class Popover extends Component {
   }
 
   render() {
-    const { isPopoverOpen } = this.state
+    const { isPopoverOpen: isOpenState } = this.state
+    const { isOpen: isOpenProp } = this.props
+    const isPopoverOpen = isOpenState || isOpenProp
 
     return (
       <Manager>
@@ -100,7 +102,9 @@ Popover.propTypes = {
   zIndex: PropTypes.number,
   width: PropTypes.number,
   overlayOpacity: PropTypes.number,
-  trapFocus: PropTypes.bool
+  trapFocus: PropTypes.bool,
+  isOpen: PropTypes.bool,
+  openOnMount: PropTypes.bool
 }
 
 export default Popover

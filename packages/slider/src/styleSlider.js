@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { space, color, themeGet } from 'styled-system'
+import { space } from 'styled-system'
+import { getPaletteColor } from 'pcln-design-system'
 
 const styleSlider = Component => styled(Component)`
   position: relative;
@@ -8,7 +9,7 @@ const styleSlider = Component => styled(Component)`
   border-radius: 9999px;
   touch-action: none;
 
-  ${space} ${color} & .rc-slider-rail, & .rc-slider-track {
+  ${space} & .rc-slider-rail, & .rc-slider-track {
     height: 8px;
   }
   & .rc-slider-handle {
@@ -21,7 +22,7 @@ const styleSlider = Component => styled(Component)`
   & .rc-slider-rail {
     position: absolute;
     width: 100%;
-    background-color: ${themeGet('colors.lightGray')};
+    background-color: ${getPaletteColor('background.light')};
     border-radius: 9999px;
   }
 
@@ -29,7 +30,7 @@ const styleSlider = Component => styled(Component)`
     position: absolute;
     left: 0;
     border-radius: 9999px;
-    background-color: currentcolor;
+    background-color: ${getPaletteColor('base')};
   }
 
   & .rc-slider-handle {
@@ -37,8 +38,8 @@ const styleSlider = Component => styled(Component)`
     cursor: pointer;
     cursor: grab;
     border-radius: 9999px;
-    border: solid 4px currentcolor;
-    background-color: #fff;
+    border: solid 4px ${getPaletteColor('base')};
+    background-color: ${getPaletteColor('background.lightest')};
     touch-action: pan-x;
 
     &:hover {
@@ -46,12 +47,12 @@ const styleSlider = Component => styled(Component)`
     &:active {
     }
     &:focus {
-      box-shadow: 0 0 0 2px ${themeGet('colors.lightBlue')};
+      box-shadow: 0 0 0 2px ${getPaletteColor('light')};
     }
   }
 
   &.rc-slider-disabled {
-    color: ${themeGet('colors.borderGray')};
+    color: ${getPaletteColor('border.base')};
     .rc-slider-track {
     }
     .rc-slider-handle {

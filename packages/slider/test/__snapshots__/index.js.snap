@@ -7,7 +7,6 @@ exports[`pcln-slider RangeSlider renders 1`] = `
   padding-top: 12px;
   border-radius: 9999px;
   touch-action: none;
-  color: blue;
 }
 
 .c0 .rc-slider-rail,
@@ -25,6 +24,7 @@ exports[`pcln-slider RangeSlider renders 1`] = `
 .c0 .rc-slider-rail {
   position: absolute;
   width: 100%;
+  background-color: background.light;
   border-radius: 9999px;
 }
 
@@ -32,7 +32,7 @@ exports[`pcln-slider RangeSlider renders 1`] = `
   position: absolute;
   left: 0;
   border-radius: 9999px;
-  background-color: currentcolor;
+  background-color: primary;
 }
 
 .c0 .rc-slider-handle {
@@ -42,13 +42,17 @@ exports[`pcln-slider RangeSlider renders 1`] = `
   cursor: -moz-grab;
   cursor: grab;
   border-radius: 9999px;
-  border: solid 4px currentcolor;
-  background-color: #fff;
+  border: solid 4px primary;
+  background-color: background.lightest;
   touch-action: pan-x;
 }
 
 .c0 .rc-slider-handle:focus {
-  box-shadow: 0 0 0 2px;
+  box-shadow: 0 0 0 2px primary;
+}
+
+.c0.rc-slider-disabled {
+  color: border.base;
 }
 
 .c0.rc-slider-disabled .rc-slider-handle {
@@ -128,7 +132,6 @@ exports[`pcln-slider Slider renders 1`] = `
   padding-top: 12px;
   border-radius: 9999px;
   touch-action: none;
-  color: blue;
 }
 
 .c0 .rc-slider-rail,
@@ -146,6 +149,7 @@ exports[`pcln-slider Slider renders 1`] = `
 .c0 .rc-slider-rail {
   position: absolute;
   width: 100%;
+  background-color: background.light;
   border-radius: 9999px;
 }
 
@@ -153,7 +157,7 @@ exports[`pcln-slider Slider renders 1`] = `
   position: absolute;
   left: 0;
   border-radius: 9999px;
-  background-color: currentcolor;
+  background-color: primary;
 }
 
 .c0 .rc-slider-handle {
@@ -163,13 +167,17 @@ exports[`pcln-slider Slider renders 1`] = `
   cursor: -moz-grab;
   cursor: grab;
   border-radius: 9999px;
-  border: solid 4px currentcolor;
-  background-color: #fff;
+  border: solid 4px primary;
+  background-color: background.lightest;
   touch-action: pan-x;
 }
 
 .c0 .rc-slider-handle:focus {
-  box-shadow: 0 0 0 2px;
+  box-shadow: 0 0 0 2px primary;
+}
+
+.c0.rc-slider-disabled {
+  color: border.base;
 }
 
 .c0.rc-slider-disabled .rc-slider-handle {
