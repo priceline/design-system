@@ -39,6 +39,32 @@ storiesOf('Popover', module)
       </Playground>
     </React.Fragment>
   ))
+  .add('Forced open via prop', () => (
+    <Popover
+      renderContent={InnerContent}
+      placement="bottom"
+      ariaLabel="Bottonm PopOver"
+      idx={2}
+      width={400}
+      borderColor="darkGray"
+      isOpen
+    >
+      <Link>Open Popover</Link>
+    </Popover>
+  ))
+  .add('Opened by default via prop', () => (
+    <Popover
+      renderContent={InnerContent}
+      placement="bottom"
+      ariaLabel="Bottonm PopOver"
+      idx={2}
+      width={400}
+      borderColor="darkGray"
+      openOnMount
+    >
+      <Link>Open Popover</Link>
+    </Popover>
+  ))
   .add('Bottom', () => (
     <Popover
       renderContent={InnerContent}

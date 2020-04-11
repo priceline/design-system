@@ -26,6 +26,8 @@ import Popover from 'pcln-popover/dist/index.js'
     bg='lightBlue'
     borderColor='borderGray'
     zIndex={-1}
+    isOpen={false} // popover will always be open if true
+    openOnMount={false} // popover will be open on mount, but can be closed
   >
     <Button>Popover</Button>
   </PopOver>
