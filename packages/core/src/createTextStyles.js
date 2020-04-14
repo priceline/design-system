@@ -70,6 +70,11 @@ export default (theme = {}) => {
       fontSize: fontSizes[0] + 'px',
       fontWeight: fontWeights.medium,
       lineHeight: lineHeights.standard
+    },
+    small: {
+      fontSize: '10px',
+      fontWeight: fontWeights.bold,
+      lineHeight: lineHeights.standard
     }
   }
 }

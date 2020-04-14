@@ -7,6 +7,11 @@ describe('Stamp', () => {
     expect(json).toMatchSnapshot()
   })
 
+  test('renders small variation', () => {
+    const json = rendererCreateWithTheme(<Stamp variation="small" />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('color gray sets text and icon color', () => {
     const json = rendererCreateWithTheme(<Stamp color="gray" />).toJSON()
     expect(json).toMatchSnapshot()
