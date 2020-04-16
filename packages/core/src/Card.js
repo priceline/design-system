@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 import { borderRadius } from 'styled-system'
+import { shadow } from 'styled-system'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const boxShadow = props => {
@@ -22,6 +23,15 @@ const boxShadow = props => {
   return boxShadows[props.boxShadowSize]
 }
 
+const setResponsiveBoxShadow = props => {
+  const deprecatedValues = ['sm', 'md', 'lg', 'xl']
+  if (deprecatedValues.indexOf(props.boxShadowSize) > -1) {
+    return boxShadow(props)
+  } else {
+    return shadow
+  }
+}
+
 const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
   border:
     borderWidth === 0
@@ -30,7 +40,7 @@ const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
 })
 
 const Card = styled(Box)`
-  ${boxShadow} ${boxBorder} ${borderRadius}
+  ${setResponsiveBoxShadow} ${boxBorder} ${borderRadius}
   ${applyVariations('Card')}
 `
 

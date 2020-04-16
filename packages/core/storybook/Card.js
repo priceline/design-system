@@ -147,3 +147,18 @@ storiesOf('Card', module)
       </Card>
     </Box>
   ))
+  .add('New Responsive Box Shadows', () => (
+    <Box>
+      <Card
+        boxShadowSize={['small', 'medium', 'large']}
+        m={4}
+        p={4}
+        width={1 / 2}
+        color="black"
+        bg="white"
+        borderRadius={0}
+      >
+        Responsive Box Shadows -- ['small', 'medium', 'large']
+      </Card>
+    </Box>
+  ))
