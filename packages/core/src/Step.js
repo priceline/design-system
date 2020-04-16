@@ -19,11 +19,16 @@ const StepperFlex = styled(Button)`
   }
 `
 
-function Step({ className, active, completed, children, onClick }) {
+function Step({ className, active, completed, children, onClick, ...props }) {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (
-    <StepperFlex className={className} alignItems="center" onClick={onClick}>
+    <StepperFlex
+      className={className}
+      alignItems="center"
+      onClick={onClick}
+      {...props}
+    >
       {completed && (
         <Check
           color="primary"
