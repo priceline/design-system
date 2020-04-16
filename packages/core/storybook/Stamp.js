@@ -13,13 +13,25 @@ storiesOf('Stamp', module)
     })(() => <Stamp>default stamp</Stamp>)
   )
   .add('Small Stamp', () => (
-    <Stamp color="primary" variation="small">
+    <Stamp color="primary" size="small">
       <Icon name="Pin" mr={1} />
       Stamp Text
     </Stamp>
   ))
   .add('Regular Stamp', () => (
     <Stamp color="primary">
+      <Icon name="Pin" mr={1} />
+      Stamp Text
+    </Stamp>
+  ))
+  .add('Small Solid Stamp', () => (
+    <Stamp color="primary" size="small" variation="solid">
+      <Icon name="Pin" mr={1} />
+      Stamp Text
+    </Stamp>
+  ))
+  .add('Regular Solid Stamp', () => (
+    <Stamp color="primary" variation="solid">
       <Icon name="Pin" mr={1} />
       Stamp Text
     </Stamp>

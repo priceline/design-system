@@ -2,13 +2,15 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { themeGet, space, fontSize } from 'styled-system'
 import {
+  applySizes,
   applyVariations,
   getPaletteColor,
+  getTextColorOn,
   deprecatedColorValue,
   deprecatedPropType
 } from './utils'
 
-const variations = {
+const sizes = {
   small: css`
     ${themeGet('textStyles.small')}
 
@@ -28,6 +30,21 @@ const variations = {
   `
 }
 
+const variations = {
+  regular: css`
+    color: ${getPaletteColor('base')};
+    border-color: ${props => getPaletteColor(props.borderColor, 'base')(props)};
+    ${props =>
+      props.bg
+        ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
+        : ''}
+  `,
+  solid: css`
+    color: ${getTextColorOn('base')};
+    background-color: ${getPaletteColor('base')};
+  `
+}
+
 const Stamp = styled.div`
   display: inline-flex;
   align-items: center;
@@ -39,14 +56,10 @@ const Stamp = styled.div`
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${props => getPaletteColor(props.borderColor, 'base')(props)};
   color: ${getPaletteColor('base')};
-  ${props =>
-    props.bg
-      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-      : ''}
-  
+
   ${space} ${fontSize};
+  ${applySizes(sizes)}
   ${applyVariations('Stamp', variations)}
 `
 
@@ -55,6 +68,7 @@ Stamp.displayName = 'Stamp'
 Stamp.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
+  size: PropTypes.oneOf(Object.keys(sizes)),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
@@ -67,6 +81,7 @@ Stamp.defaultProps = {
   color: 'border.light',
   bg: 'background.light',
   borderColor: 'border.base',
+  size: 'regular',
   variation: 'regular'
 }
 
