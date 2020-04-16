@@ -11,8 +11,12 @@ const StyledFlex = styled(Flex)`
   }
 `
 
-function Stepper({ className, children }) {
-  return <StyledFlex className={className}>{children}</StyledFlex>
+function Stepper({ className, children, ...props }) {
+  return (
+    <StyledFlex className={className} {...props}>
+      {children}
+    </StyledFlex>
+  )
 }
 
 Stepper.displayName = 'Stepper'
