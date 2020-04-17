@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Priceline Design System",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
