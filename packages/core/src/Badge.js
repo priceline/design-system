@@ -1,6 +1,8 @@
-import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import styled, { css } from 'styled-components'
 import { themeGet, space } from 'styled-system'
 import {
+  applySizes,
   applyVariations,
   color,
   deprecatedColorValue,
@@ -52,14 +54,22 @@ const type = props => {
   )
 }
 
+const sizes = {
+  small: css`
+    ${themeGet('textStyles.small')}
+  `,
+  medium: css`
+    ${themeGet('textStyles.display0')}
+  `
+}
+
 const Badge = styled.div`
   border-radius: 99999px;
   display: inline-block;
-  font-size: ${props => props.theme.fontSizes[0]}px;
-  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${space} ${type} ${color};
+  ${applySizes(sizes)}
   ${applyVariations('Badge')}
 `
 
@@ -67,11 +77,13 @@ Badge.displayName = 'Badge'
 
 Badge.propTypes = {
   ...space.propTypes,
+  size: PropTypes.oneOf(Object.keys(sizes)),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color')
 }
 
 Badge.defaultProps = {
+  size: 'medium',
   px: 2,
   py: 1
 }

@@ -19,7 +19,7 @@ const sizes = {
       height: 12px;
     }
   `,
-  regular: css`
+  medium: css`
     ${themeGet('textStyles.display0')}
     line-height: ${themeGet('lineHeights.standard')};
     
@@ -31,7 +31,7 @@ const sizes = {
 }
 
 const variations = {
-  regular: css`
+  outline: css`
     color: ${getPaletteColor('base')};
     border-color: ${props => getPaletteColor(props.borderColor, 'base')(props)};
     ${props =>
@@ -39,9 +39,10 @@ const variations = {
         ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
         : ''}
   `,
-  solid: css`
+  fill: css`
     color: ${getTextColorOn('base')};
     background-color: ${getPaletteColor('base')};
+    border-color: ${getPaletteColor('base')};
   `
 }
 
@@ -81,8 +82,8 @@ Stamp.defaultProps = {
   color: 'border.light',
   bg: 'background.light',
   borderColor: 'border.base',
-  size: 'regular',
-  variation: 'regular'
+  size: 'medium',
+  variation: 'outline'
 }
 
 export default Stamp

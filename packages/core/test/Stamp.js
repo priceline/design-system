@@ -12,14 +12,14 @@ describe('Stamp', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders regular solid', () => {
-    const json = rendererCreateWithTheme(<Stamp variation="solid" />).toJSON()
+  test('renders medium fill', () => {
+    const json = rendererCreateWithTheme(<Stamp variation="fill" />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('renders small solid', () => {
+  test('renders small fill', () => {
     const json = rendererCreateWithTheme(
-      <Stamp size="small" variation="solid" />
+      <Stamp size="small" variation="fill" />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })

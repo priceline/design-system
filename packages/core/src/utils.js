@@ -118,12 +118,14 @@ export const getContrastRatio = (colorA, colorB) => {
  *
  * @returns {array}
  */
-export const applySizes = (sizes = null) => ({ size }) => {
+export const applySizes = (sizes = null, defaultSize = 'medium') => ({
+  size
+}) => {
   return (
     sizes &&
     typeof size === 'string' &&
     css`
-      ${sizes[size] || ''}
+      ${sizes[size] || sizes[defaultSize] || ''}
     `
   )
 }
