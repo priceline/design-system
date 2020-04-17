@@ -7,6 +7,23 @@ describe('Stamp', () => {
     expect(json).toMatchSnapshot()
   })
 
+  test('renders small size', () => {
+    const json = rendererCreateWithTheme(<Stamp size="small" />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders regular solid', () => {
+    const json = rendererCreateWithTheme(<Stamp variation="solid" />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
+  test('renders small solid', () => {
+    const json = rendererCreateWithTheme(
+      <Stamp size="small" variation="solid" />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('color gray sets text and icon color', () => {
     const json = rendererCreateWithTheme(<Stamp color="gray" />).toJSON()
     expect(json).toMatchSnapshot()

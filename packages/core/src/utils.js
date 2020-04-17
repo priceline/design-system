@@ -112,6 +112,23 @@ export const getContrastRatio = (colorA, colorB) => {
 }
 
 /**
+ * Applies the selected size styles to a styled component.
+ *
+ * @param {Object} sizes An object of size styles
+ *
+ * @returns {array}
+ */
+export const applySizes = (sizes = null) => ({ size }) => {
+  return (
+    sizes &&
+    typeof size === 'string' &&
+    css`
+      ${sizes[size] || ''}
+    `
+  )
+}
+
+/**
  * Applies the selected variation style to a styled component.
  * Combines the variation style with any custom styling from
  * theme.componentStyles[component][variation]
@@ -119,8 +136,8 @@ export const getContrastRatio = (colorA, colorB) => {
  * Once updated to styled-components v4, componentName is no
  * longer needed as it is part of forwardedClass.displayName
  *
- * @param {string}  componentName The name of the component
- * @param {Object=} variations    An object of variation styles
+ * @param {string} componentName The name of the component
+ * @param {Object} variations    An object of variation styles
  *
  * @returns {array}
  */

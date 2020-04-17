@@ -260,6 +260,11 @@ Object {
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
+    "small": Object {
+      "fontSize": "10px",
+      "fontWeight": 700,
+      "lineHeight": 1.4,
+    },
   },
   "timingFunctions": Object {
     "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
