@@ -1,5 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { boolean, withKnobs } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 import { Modal, SmallModalHeader, ModalHeader, ScrollLock } from '../src/index'
 import Button from '../../core/src/Button'
 import styled from 'styled-components'
@@ -17,7 +19,7 @@ class ModalStory extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isOpen: false
+      isOpen: props.isOpen
     }
     this.scrollLock = new ScrollLock()
   }
@@ -45,9 +47,7 @@ class ModalStory extends React.Component {
           }}
           {...this.props}
         >
-          <div style={{ height: '1000px' }}>
-            Content with 1000px height<button>Some action</button>
-          </div>
+          <div style={{ height: '1000px' }}>Content with 1000px height</div>
         </StyledModal>
       </div>
     )
@@ -55,6 +55,7 @@ class ModalStory extends React.Component {
 }
 
 storiesOf('Modal', module)
+  .addDecorator(withKnobs)
   .add('Raw', () => (
     <ModalStory width={['100px', '200px', '500px']} disableCloseButton />
   ))
@@ -78,14 +79,13 @@ storiesOf('Modal', module)
           header={
             <ModalHeader
               title="Modal title"
-              onClose={() => {
-                alert('This should handle close')
-              }}
+              onClose={action('Modal closed!')}
             />
           }
           height={['90vh', '460px', '560px']}
           width={['80vw', '400px', '500px']}
           lock={true}
+          fullScreen={boolean('fullScreen', false)}
         />
       </div>
     )
@@ -106,7 +106,6 @@ storiesOf('Modal', module)
       disableCloseButton
     />
   ))
-
   .add('With custom animation', () => (
     <ModalStory
       header={<SmallModalHeader />}
