@@ -81,14 +81,7 @@ const variations = {
   `
 }
 
-/**
- * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
- */
-const Button = mapProps(({ fullWidth, ...props }) => ({
-  width: fullWidth ? 1 : undefined,
-  'aria-label': props.title,
-  ...props
-}))(styled.button`
+export const buttonStyles = css`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -109,6 +102,17 @@ const Button = mapProps(({ fullWidth, ...props }) => ({
     color: ${getPaletteColor('text.light')};
     background-color: ${getPaletteColor('background.base')};
   }
+`
+
+/**
+ * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
+ */
+const Button = mapProps(({ fullWidth, ...props }) => ({
+  width: fullWidth ? 1 : undefined,
+  'aria-label': props.title,
+  ...props
+}))(styled.button`
+  ${buttonStyles}
 `)
 
 Button.propTypes = {
