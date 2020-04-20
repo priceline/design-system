@@ -43,6 +43,12 @@ const variations = {
     color: ${getTextColorOn('base')};
     background-color: ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
+  `,
+  // todo: remove this copy of the fill variation in v4 as its name does not follow conventions
+  solid: css`
+    color: ${getTextColorOn('base')};
+    background-color: ${getPaletteColor('base')};
+    border-color: ${getPaletteColor('base')};
   `
 }
 
