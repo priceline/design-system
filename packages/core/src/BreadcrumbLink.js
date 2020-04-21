@@ -10,6 +10,7 @@ function BreadcrumbLink({
   href,
   icon,
   label,
+  dsRef,
   onClick
 }) {
   const linkColor = isLastChild ? 'text.dark' : 'text.light'
@@ -17,7 +18,7 @@ function BreadcrumbLink({
   return (
     <Flex className={className} alignItems="center">
       {icon}
-      <Link href={href} color={linkColor} onClick={onClick}>
+      <Link href={href} color={linkColor} onClick={onClick} dsRef={dsRef}>
         {label}
       </Link>
       {!isLastChild && (
