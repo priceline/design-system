@@ -145,11 +145,12 @@ const Modal = ({
   disableCloseButton,
   enableOverflow,
   height,
+  timeout,
   dialogAnimation,
   overlayAnimation,
   verticalAlignment
 }) => (
-  <Transition in={isOpen} unmountOnExit timeout={500}>
+  <Transition in={isOpen} unmountOnExit timeout={timeout}>
     {state => (
       <Overlay
         onDismiss={onClose}
@@ -206,6 +207,7 @@ Modal.defaultProps = {
   header: null,
   bg: 'white',
   height: 420,
+  timeout: 500,
   overlayAnimation: null,
   dialogAnimation: null,
   verticalAlignment: 'middle'
@@ -225,6 +227,7 @@ Modal.propTypes = {
   imgMode: PropTypes.bool,
   className: PropTypes.string,
   header: PropTypes.any,
+  timeout: PropTypes.number,
   overlayAnimation: PropTypes.func,
   dialogAnimation: PropTypes.func,
   verticalAlignment: PropTypes.string

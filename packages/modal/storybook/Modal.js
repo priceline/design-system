@@ -115,3 +115,10 @@ storiesOf('Modal', module)
       verticalAlignment="top"
     />
   ))
+  .add('Zero Timeout', () => (
+    <ModalStory
+      disableCloseButton
+      width={['100px', '200px', '500px']}
+      timeout={0}
+    />
+  ))
