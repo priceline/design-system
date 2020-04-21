@@ -9,6 +9,7 @@ import {
   getTextColorOn,
   deprecatedColorValue
 } from './utils'
+import getSCMigrationRef from "./helpers/getSCMigrationRef";
 
 const size = props => {
   switch (props.size) {
@@ -107,8 +108,9 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button = mapProps(({ fullWidth, ...props }) => ({
+const Button = mapProps(({ fullWidth, dsRef, ...props }) => ({
   width: fullWidth ? 1 : undefined,
+  [getSCMigrationRef()]: dsRef,
   'aria-label': props.title,
   ...props
 }))(styled.button`
