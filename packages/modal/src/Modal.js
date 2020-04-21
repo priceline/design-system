@@ -71,8 +71,8 @@ const Dialog = styled(DialogContent)`
     max-width: calc(100vw - 32px);
   `
       : `
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   `}
   ${props =>
     props.enableoverflow &&
@@ -193,6 +193,7 @@ const Modal = ({
                 defaultAnimation={DIALOG_ANIMATION}
                 customAnimation={dialogAnimation}
                 fullScreen={fullScreen}
+                data-testid="dialog-content"
               >
                 <DialogInnerWrapper flexDirection="column">
                   {header && <HeaderWrapper>{header}</HeaderWrapper>}

@@ -29,6 +29,7 @@ _Note: ModalDemo is a simple class for demonstration that maintains an `isOpen` 
 | `disableCloseButton` | ArrayOf.string | There will be a floating close button. When enabledOverflow = true, it's there by default.            |
 | `enableOverflow`     | boolean        | When enabled, the modal will extend over the screen based on content, otherwise it will follow height |
 | `height`             | ArrayOf.string | Responsive height, when enableOverflow={true}, it's not in use                                        |
+| `fullScreen`         | boolean        | Dialog content should fill entire screen. Not for use with `enableOverflow`.                          |
 
 ## Prevent Background Scrolling
 

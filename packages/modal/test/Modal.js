@@ -105,4 +105,25 @@ describe('Modal', () => {
     expect(getByTestId('pcln-modal-close')).toBeTruthy()
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  test('uses fullScreen styles', () => {
+    const { getByText, getByTestId } = rerender(
+      <ThemeProvider>
+        <Modal isOpen fullScreen>
+          <div data-content>Content</div>
+        </Modal>
+      </ThemeProvider>
+    )
+    const dialogContent = getByTestId('dialog-content')
+
+    expect(getByText('Content')).toBeTruthy()
+    expect(dialogContent).toHaveStyle(`
+      height: 100vh;
+      width: 100vw;
+    `)
+    expect(dialogContent).not.toHaveStyle(`
+      max-height: 100vh;
+      max-width: calc(100vw - 32px);
+    `)
+  })
 })
