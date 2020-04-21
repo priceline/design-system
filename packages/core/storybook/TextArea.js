@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, TextArea, Label } from '../src'
+import { Box, TextArea, Label, Input, Button } from '../src'
 
 storiesOf('TextArea', module)
   .add(
@@ -54,3 +54,36 @@ storiesOf('TextArea', module)
       <TextArea id="sample-textarea" placeholder="Click the label" />
     </Box>
   ))
+  .add('Forward refs', () => {
+    class ForwardRefDemo extends React.Component {
+      constructor(props) {
+        super(props)
+        this.btnRef = React.createRef()
+      }
+
+      componentDidMount() {
+        // For SC3, omit current because SC3 uses innerRef
+        this.btnRef.current.focus()
+      }
+
+      render() {
+        return (
+          <div>
+            {/*
+              // This example is for SC3
+              <Button dsRef={e => this.btnRef = e}>Click me</Button>
+            */}
+            <TextArea dsRef={this.btnRef} value="Sad Panda :(" />
+            <Button
+              onClick={() => (this.btnRef.current.value = 'Happy Panda :D')}
+              mt={4}
+            >
+              Click to change input value via ref
+            </Button>
+          </div>
+        )
+      }
+    }
+
+    return <ForwardRefDemo />
+  })

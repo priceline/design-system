@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, Input, Label } from '../src'
+import { Box, Button, Input, Label } from '../src'
 
 storiesOf('Input', module)
   .add(
@@ -27,6 +27,39 @@ storiesOf('Input', module)
       <Input mb={3} id="input-colors-6" color="caution" placeholder="Caution" />
     </Box>
   ))
+  .add('Forward refs', () => {
+    class ForwardRefDemo extends React.Component {
+      constructor(props) {
+        super(props)
+        this.btnRef = React.createRef()
+      }
+
+      componentDidMount() {
+        // For SC3, omit current because SC3 uses innerRef
+        this.btnRef.current.focus()
+      }
+
+      render() {
+        return (
+          <div>
+            {/*
+              // This example is for SC3
+              <Button dsRef={e => this.btnRef = e}>Click me</Button>
+            */}
+            <Input dsRef={this.btnRef} value="Sad Panda :(" />
+            <Button
+              onClick={() => (this.btnRef.current.value = 'Happy Panda :D')}
+              mt={4}
+            >
+              Click to change input value via ref
+            </Button>
+          </div>
+        )
+      }
+    }
+
+    return <ForwardRefDemo />
+  })
   .add('With external label', () => (
     <Box width={400}>
       <Label fontSize={4} htmlFor="sample-input">
