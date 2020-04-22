@@ -148,3 +148,31 @@ storiesOf('Checkbox', module)
       </Wrapper>
     </div>
   ))
+  .add('Forward refs', () => {
+    class ForwardRefDemo extends React.Component {
+      constructor(props) {
+        super(props)
+        this.dsRef = React.createRef()
+      }
+
+      render() {
+        return (
+          <div>
+            {/*
+              // This example is for SC3
+              <Button dsRef={e => this.btnRef = e}>Click me</Button>
+            */}
+            <StyledLabel htmlFor="check">
+              <Checkbox id="check" dsRef={this.dsRef} />
+              Checkbox with ref
+            </StyledLabel>
+            <Button onClick={() => this.dsRef.current.focus()} mt={4}>
+              Click to focus checkbox via ref
+            </Button>
+          </div>
+        )
+      }
+    }
+
+    return <ForwardRefDemo />
+  })

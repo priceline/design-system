@@ -3,7 +3,13 @@ import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty } from 'pcln-icons'
 import PropTypes from 'prop-types'
 import Box from './Box'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
+import {
+  applyVariations,
+  getPaletteColor,
+  deprecatedColorValue,
+  mapProps
+} from './utils'
+import getSCMigrationRef from './helpers/getSCMigrationRef'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -90,12 +96,15 @@ const CheckBoxWrapper = styled(Box)`
   ${applyVariations('Checkbox')}
 `
 
-const StyledInput = styled.input`
+const StyledInput = mapProps(({ fullWidth, dsRef, ...props }) => ({
+  [getSCMigrationRef()]: dsRef,
+  ...props
+}))(styled.input`
   appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
-`
+`)
 
 Checkbox.displayName = 'Checkbox'
 

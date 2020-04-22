@@ -5,10 +5,15 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  deprecatedPropType
+  deprecatedPropType,
+  mapProps
 } from './utils'
+import getSCMigrationRef from './helpers/getSCMigrationRef'
 
-const ToggleBadge = styled.button`
+const ToggleBadge = mapProps(({ fullWidth, dsRef, ...props }) => ({
+  [getSCMigrationRef()]: dsRef,
+  ...props
+}))(styled.button`
   border-radius: ${props => props.theme.radius};
   border: 0;
   display: inline-block;
@@ -26,7 +31,7 @@ const ToggleBadge = styled.button`
       getPaletteColor(props.bg || props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
-`
+`)
 
 ToggleBadge.displayName = 'ToggleBadge'
 

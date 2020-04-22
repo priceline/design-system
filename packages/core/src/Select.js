@@ -2,14 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
 import { ChevronDown } from 'pcln-icons'
-import { borders, getPaletteColor, deprecatedColorValue } from './utils'
+import {
+  borders,
+  getPaletteColor,
+  deprecatedColorValue,
+  mapProps
+} from './utils'
 import Flex from './Flex'
+import getSCMigrationRef from './helpers/getSCMigrationRef'
 
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
 `
 
-const SelectBase = styled.select`
+const SelectBase = mapProps(({ fullWidth, dsRef, ...props }) => ({
+  [getSCMigrationRef()]: dsRef,
+  ...props
+}))(styled.select`
   appearance: none;
   display: block;
   width: 100%;
@@ -24,7 +33,8 @@ const SelectBase = styled.select`
   ::-ms-expand {
     display: none;
   }
-`
+`)
+
 SelectBase.defaultProps = {
   fontSize: [2, null, 1],
   m: 0,

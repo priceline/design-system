@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Button from './Button'
 import { applyVariations } from './utils'
+import getSCMigrationRef from './helpers/getSCMigrationRef'
 
 const TransparentButton = styled(Button)`
   padding: 0;
@@ -20,11 +21,18 @@ const TransparentButton = styled(Button)`
   ${applyVariations('IconButton')}
 `
 
-const IconButton = ({ icon, ...props }) => (
-  <TransparentButton {...props}>
-    <div>{icon}</div>
-  </TransparentButton>
-)
+const IconButton = ({ icon, ...props }) => {
+  // TODO remove once migrated to SC4
+  const spreadProps = props
+  spreadProps[getSCMigrationRef()] = props.dsRef
+  delete spreadProps.dsRef
+
+  return (
+    <TransparentButton {...spreadProps}>
+      <div>{icon}</div>
+    </TransparentButton>
+  )
+}
 
 IconButton.displayName = 'IconButton'
 IconButton.isIconButton = true

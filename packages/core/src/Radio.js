@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
 import { applyVariations, deprecatedColorValue, getPaletteColor } from './utils'
+import getSCMigrationRef from './helpers/getSCMigrationRef'
 
 const RadioWrap = styled.div`
   display: inline-block;
@@ -65,9 +66,14 @@ const Radio = props => {
 
   const borderAdjustedSize = size + 4
 
+  // TODO remove once migrated to SC4
+  const spreadProps = { ...props }
+  spreadProps[getSCMigrationRef()] = props.dsRef
+  delete spreadProps.dsRef
+
   return (
     <RadioWrap color={props.color} checked={checked} disabled={disabled}>
-      <RadioInput type="radio" {...props} />
+      <RadioInput type="radio" {...spreadProps} />
       <RadioIcon checked={checked} size={borderAdjustedSize} />
     </RadioWrap>
   )
