@@ -7,10 +7,10 @@ import {
   applyVariations,
   getPaletteColor,
   getTextColorOn,
-  deprecatedColorValue
+  deprecatedColorValue,
+  getSCMigrationRef,
+  refPropType
 } from './utils'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
 
 const size = props => {
   switch (props.size) {

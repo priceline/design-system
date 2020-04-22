@@ -2,7 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
-import { Radio, Label, Button, Checkbox } from '../src'
+import { Radio, Label, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const LabelText = styled.span`
   vertical-align: middle;
@@ -74,31 +75,18 @@ storiesOf('Radio', module)
     </div>
   ))
   .add('Mock form', () => <MockForm />)
-  .add('Forward refs', () => {
-    class ForwardRefDemo extends React.Component {
-      constructor(props) {
-        super(props)
-        this.dsRef = React.createRef()
-      }
-
-      render() {
-        return (
-          <div>
-            {/*
-              // This example is for SC3
-              <Button dsRef={e => this.btnRef = e}>Click me</Button>
-            */}
-            <Label fontSize="14px">
-              <Radio checked dsRef={this.dsRef} />
-              <LabelText>selected</LabelText>
-            </Label>
-            <Button onClick={() => this.dsRef.current.focus()} mt={4}>
-              Click to focus radio via ref
-            </Button>
-          </div>
-        )
-      }
-    }
-
-    return <ForwardRefDemo />
-  })
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Label fontSize="14px">
+            <Radio checked dsRef={dsRef} />
+            <LabelText>selected</LabelText>
+          </Label>
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus radio via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

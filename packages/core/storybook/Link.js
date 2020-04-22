@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { Cartesian } from '@compositor/kit'
 
 import { Link, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const variations = { link: 'link', fill: 'fill', outline: 'outline' }
 const colors = {
@@ -35,37 +36,25 @@ storiesOf('Link', module)
       Open the Priceline Home in the same window
     </Link>
   ))
-  .add('Forward refs', () => {
-    class ForwardRefs extends React.Component {
-      constructor(props) {
-        super(props)
-        this.linkRef = React.createRef()
-      }
-      componentDidMount() {
-        // For SC3, omit current because SC3 uses innerRef
-        this.linkRef.current.focus()
-      }
-      render() {
-        return (
-          <div>
-            <Link color="darkGray" dsRef={this.linkRef}>
-              I'm a link!
-            </Link>
-            <br />
-            <Button
-              color="error"
-              onClick={() => (this.linkRef.current.innerHTML = 'Bacon!')}
-              mt={4}
-            >
-              Click to update link text via ref
-            </Button>
-          </div>
-        )
-      }
-    }
-
-    return <ForwardRefs />
-  })
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Link color="darkGray" dsRef={dsRef}>
+            I'm a link!
+          </Link>
+          <br />
+          <Button
+            color="error"
+            onClick={() => (dsRef.current.innerHTML = 'Bacon!')}
+            mt={4}
+          >
+            Click to update link text via ref
+          </Button>
+        </>
+      )}
+    />
+  ))
   .add('Color', () => (
     <div>
       <Link color="darkGray">I'm a different color!</Link>

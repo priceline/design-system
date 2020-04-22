@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Flex from './Flex'
 import Link from './Link'
 import Text from './Text'
-import refPropType from './utils/refPropType'
+import { refPropType } from './utils'
 
 function BreadcrumbLink({
   className,

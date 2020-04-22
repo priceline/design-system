@@ -6,12 +6,12 @@ import {
   getPaletteColor,
   deprecatedColorValue,
   deprecatedPropType,
-  mapProps
+  mapProps,
+  getSCMigrationRef,
+  refPropType
 } from './utils'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
 
-const ToggleBadge = mapProps(({ fullWidth, dsRef, ...props }) => ({
+const ToggleBadge = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
   ...props
 }))(styled.button`

@@ -1,11 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { BlockLink, Breadcrumbs, Button } from '../src'
+import { Breadcrumbs, Button } from '../src'
 import {
   Flights as FlightsIcon,
   Home as HomeIcon,
   Seat as SeatIcon
 } from 'pcln-icons'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 storiesOf('Breadcrumbs', module)
   .add('Basic', () => (
@@ -40,36 +41,32 @@ storiesOf('Breadcrumbs', module)
       />
     </Breadcrumbs>
   ))
-  .add('Forward refs to links', () => {
-    class ForwardRefs extends React.Component {
-      constructor(props) {
-        super(props)
-        this.linkRef = React.createRef()
-      }
-
-      render() {
-        return (
-          <div>
-            <Breadcrumbs>
-              <Breadcrumbs.Link
-                href="https://www.priceline.com"
-                label="Home"
-                dsRef={this.linkRef}
-                icon={<HomeIcon color="text.light" size={16} mr={2} />}
-              />
-              <Breadcrumbs.Link
-                href="https://www.priceline.com/flights/"
-                label="Flights"
-                icon={<FlightsIcon color="text.light" size={16} mr={2} />}
-              />
-            </Breadcrumbs>
-            <button onClick={() => this.linkRef.current.click()}>
-              Click to activate the first link via ref
-            </button>
-          </div>
-        )
-      }
-    }
-
-    return <ForwardRefs />
-  })
+  .add('Forward refs to links', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Breadcrumbs>
+            <Breadcrumbs.Link
+              href="https://www.priceline.com"
+              label="Home"
+              dsRef={dsRef}
+              icon={<HomeIcon color="text.light" size={16} mr={2} />}
+            />
+            <Breadcrumbs.Link
+              href="https://www.priceline.com/flights/"
+              label="Flights"
+              icon={<FlightsIcon color="text.light" size={16} mr={2} />}
+            />
+          </Breadcrumbs>
+          <Button
+            mt={4}
+            onClick={() =>
+              (dsRef.current.innerHTML = "What's the frequency, Kenneth?")
+            }
+          >
+            Click to change the first link via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

@@ -6,6 +6,7 @@ import { withInfo } from '@storybook/addon-info'
 import { Cartesian, Catch, LiveEditor, Markdown, XRay } from '@compositor/kit'
 
 import { Box, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const variations = { outline: 'outline', fill: 'fill', link: 'link' }
 const sizes = { small: 'small', medium: 'medium', large: 'large' }
@@ -134,33 +135,18 @@ Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Us
     </XRay>
   ))
 
-  .add('Forward refs', () => {
-    class ForwardRefDemo extends React.Component {
-      constructor(props) {
-        super(props)
-        this.btnRef = React.createRef()
-      }
-
-      componentDidMount() {
-        // For SC3, omit current because SC3 uses innerRef
-        // this.btnRef.focus()
-
-        this.btnRef.current.focus()
-      }
-
-      render() {
-        return (
-          <div>
-            {/*
-              // This example is for SC3
-              <Button dsRef={e => this.btnRef = e}>Click me</Button>
-            */}
-            <Button dsRef={this.btnRef}>Click me</Button>
-            <button onClick={() => this.btnRef.current.focus()}>focus</button>
-          </div>
-        )
-      }
-    }
-
-    return <ForwardRefDemo />
-  })
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Button dsRef={dsRef} color="error" size="large">
+            PANIC
+          </Button>
+          <br />
+          <Button mt={4} onClick={() => dsRef.current.focus()}>
+            Click to focus PANIC button via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

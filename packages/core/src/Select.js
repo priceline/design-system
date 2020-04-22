@@ -4,19 +4,18 @@ import { space, fontSize, themeGet } from 'styled-system'
 import { ChevronDown } from 'pcln-icons'
 import {
   borders,
-  getPaletteColor,
+  refPropType,
   deprecatedColorValue,
+  getSCMigrationRef,
   mapProps
 } from './utils'
 import Flex from './Flex'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
 
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
 `
 
-const SelectBase = mapProps(({ fullWidth, dsRef, ...props }) => ({
+const SelectBase = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
   ...props
 }))(styled.select`

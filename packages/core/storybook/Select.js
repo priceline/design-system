@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Select, Label, Box, Checkbox, Button } from '../src'
+import { Select, Label, Box, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 storiesOf('Select', module)
   .add('default', () => (
@@ -40,38 +41,25 @@ storiesOf('Select', module)
       </Select>
     </Box>
   ))
-  .add('Forward refs', () => {
-    class ForwardRefDemo extends React.Component {
-      constructor(props) {
-        super(props)
-        this.dsRef = React.createRef()
-      }
-
-      render() {
-        return (
-          <div>
-            {/*
-              // This example is for SC3
-              <Button dsRef={e => this.btnRef = e}>Click me</Button>
-            */}
-            <Select
-              id="cabinClass"
-              name="cabinClass"
-              defaultValue=""
-              dsRef={this.dsRef}
-            >
-              <option>Economy</option>
-              <option>Premium Economy</option>
-              <option>Business</option>
-              <option>First Class</option>
-            </Select>
-            <Button onClick={() => this.dsRef.current.focus()} mt={4}>
-              Click to focus select via ref
-            </Button>
-          </div>
-        )
-      }
-    }
-
-    return <ForwardRefDemo />
-  })
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Select
+            id="cabinClass"
+            name="cabinClass"
+            defaultValue=""
+            dsRef={dsRef}
+          >
+            <option>Economy</option>
+            <option>Premium Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+          </Select>
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus select via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

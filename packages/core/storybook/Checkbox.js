@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { Checkbox, Text, Box, Heading, Button, Label } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const StyledLabel = styled(Label)`
   cursor: pointer;
@@ -148,31 +149,22 @@ storiesOf('Checkbox', module)
       </Wrapper>
     </div>
   ))
-  .add('Forward refs', () => {
-    class ForwardRefDemo extends React.Component {
-      constructor(props) {
-        super(props)
-        this.dsRef = React.createRef()
-      }
-
-      render() {
-        return (
-          <div>
-            {/*
-              // This example is for SC3
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          {/*
+            This example is for SC3
               <Button dsRef={e => this.btnRef = e}>Click me</Button>
-            */}
-            <StyledLabel htmlFor="check">
-              <Checkbox id="check" dsRef={this.dsRef} />
-              Checkbox with ref
-            </StyledLabel>
-            <Button onClick={() => this.dsRef.current.focus()} mt={4}>
-              Click to focus checkbox via ref
-            </Button>
-          </div>
-        )
-      }
-    }
-
-    return <ForwardRefDemo />
-  })
+          */}
+          <StyledLabel htmlFor="check">
+            <Checkbox id="check" dsRef={dsRef} />
+            Checkbox with ref
+          </StyledLabel>
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus checkbox via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

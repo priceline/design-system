@@ -7,10 +7,10 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  mapProps
+  mapProps,
+  getSCMigrationRef,
+  refPropType
 } from './utils'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -97,7 +97,7 @@ const CheckBoxWrapper = styled(Box)`
   ${applyVariations('Checkbox')}
 `
 
-const StyledInput = mapProps(({ fullWidth, dsRef, ...props }) => ({
+const StyledInput = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
   ...props
 }))(styled.input`

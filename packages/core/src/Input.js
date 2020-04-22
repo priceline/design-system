@@ -6,12 +6,12 @@ import {
   getPaletteColor,
   borders,
   deprecatedColorValue,
-  mapProps
+  mapProps,
+  getSCMigrationRef,
+  refPropType
 } from './utils'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
 
-const Input = mapProps(({ fullWidth, dsRef, ...props }) => ({
+const Input = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
   ...props
 }))(

@@ -51,13 +51,13 @@ const Link = mapProps(({ target, dsRef, ...props }) => ({
 Link.displayName = 'Link'
 
 Link.defaultProps = {
-  dsRef: refPropType,
   color: 'primary',
   variation: 'link'
 }
 
 Link.propTypes = {
   color: deprecatedColorValue(),
+  dsRef: refPropType,
   variation: PropTypes.oneOf(Object.keys(variations))
 }
 

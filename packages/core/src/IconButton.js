@@ -2,9 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Button from './Button'
-import { applyVariations } from './utils'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
+import { applyVariations, refPropType, getSCMigrationRef } from './utils'
 
 const TransparentButton = styled(Button)`
   padding: 0;

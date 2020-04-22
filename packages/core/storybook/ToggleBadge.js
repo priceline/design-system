@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button, Checkbox, ToggleBadge } from '../src'
+import { Button, ToggleBadge } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 storiesOf('ToggleBadge', module)
   .add(
@@ -24,32 +25,19 @@ storiesOf('ToggleBadge', module)
       <ToggleBadge>Flight + Car</ToggleBadge>
     </div>
   ))
-  .add('Forward refs', () => {
-    class ForwardRefDemo extends React.Component {
-      constructor(props) {
-        super(props)
-        this.dsRef = React.createRef()
-      }
-
-      render() {
-        return (
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
           <div>
-            {/*
-              // This example is for SC3
-              <Button dsRef={e => this.btnRef = e}>Click me</Button>
-            */}
-            <div>
-              <ToggleBadge selected>Flight + Hotel</ToggleBadge>
-              <ToggleBadge dsRef={this.dsRef}>Flight + Hotel + Car</ToggleBadge>
-              <ToggleBadge>Flight + Car</ToggleBadge>
-            </div>
-            <Button onClick={() => this.dsRef.current.focus()} mt={4}>
-              Click to focus second badge via ref
-            </Button>
+            <ToggleBadge selected>Flight + Hotel</ToggleBadge>
+            <ToggleBadge dsRef={dsRef}>Flight + Hotel + Car</ToggleBadge>
+            <ToggleBadge>Flight + Car</ToggleBadge>
           </div>
-        )
-      }
-    }
-
-    return <ForwardRefDemo />
-  })
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus second badge via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

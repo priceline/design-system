@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import Link from './Link'
-import { mapProps } from './utils'
-import getSCMigrationRef from './utils/getSCMigrationRef'
-import refPropType from './utils/refPropType'
+import { mapProps, refPropType, getSCMigrationRef } from './utils'
 
 const BlockLink = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,

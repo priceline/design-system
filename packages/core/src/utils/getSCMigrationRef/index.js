@@ -1,2 +1,1 @@
-import getSCMigrationRef from './getSCMigrationRef'
-export default getSCMigrationRef
+export { default } from './getSCMigrationRef'
