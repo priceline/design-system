@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
 import { applyVariations, deprecatedColorValue, getPaletteColor } from './utils'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const RadioWrap = styled.div`
   display: inline-block;
@@ -81,6 +82,7 @@ const Radio = props => {
 
 Radio.defaultProps = {
   color: 'primary',
+  dsRef: refPropType,
   size: 24
 }
 

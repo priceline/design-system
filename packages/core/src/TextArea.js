@@ -8,7 +8,8 @@ import {
   deprecatedColorValue,
   mapProps
 } from './utils'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const TextArea = mapProps(({ fullWidth, dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
@@ -49,6 +50,7 @@ TextArea.isField = true
 TextArea.propTypes = {
   id: PropTypes.string.isRequired,
   color: deprecatedColorValue(),
+  dsRef: refPropType,
   ...borders.propTypes,
   ...space.propTypes
 }

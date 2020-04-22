@@ -6,6 +6,7 @@ import {
   getPaletteColor,
   deprecatedColorValue,
   getSCMigrationRef,
+  refPropType,
   mapProps
 } from './utils'
 import { buttonStyles } from './Button'
@@ -50,6 +51,7 @@ const Link = mapProps(({ target, dsRef, ...props }) => ({
 Link.displayName = 'Link'
 
 Link.defaultProps = {
+  dsRef: refPropType,
   color: 'primary',
   variation: 'link'
 }

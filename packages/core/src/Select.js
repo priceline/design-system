@@ -9,7 +9,8 @@ import {
   mapProps
 } from './utils'
 import Flex from './Flex'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
@@ -44,6 +45,7 @@ SelectBase.defaultProps = {
 }
 
 SelectBase.propTypes = {
+  dsRef: refPropType,
   ...space.propTypes,
   ...fontSize.propTypes,
   color: deprecatedColorValue(),

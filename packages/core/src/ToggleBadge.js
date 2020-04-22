@@ -8,7 +8,8 @@ import {
   deprecatedPropType,
   mapProps
 } from './utils'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const ToggleBadge = mapProps(({ fullWidth, dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
@@ -37,6 +38,7 @@ ToggleBadge.displayName = 'ToggleBadge'
 
 ToggleBadge.propTypes = {
   selected: PropTypes.bool,
+  dsRef: refPropType,
   ...space.propTypes,
   ...fontSize.propTypes,
   color: deprecatedColorValue(),

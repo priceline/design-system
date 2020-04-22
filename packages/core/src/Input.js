@@ -8,7 +8,8 @@ import {
   deprecatedColorValue,
   mapProps
 } from './utils'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const Input = mapProps(({ fullWidth, dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
@@ -52,6 +53,7 @@ Input.defaultProps = {
 }
 Input.propTypes = {
   id: PropTypes.string.isRequired,
+  dsRef: refPropType,
   color: deprecatedColorValue(),
   ...borders.propTypes,
   ...space.propTypes,

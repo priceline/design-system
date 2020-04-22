@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Button from './Button'
 import { applyVariations } from './utils'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const TransparentButton = styled(Button)`
   padding: 0;
@@ -38,6 +39,7 @@ IconButton.displayName = 'IconButton'
 IconButton.isIconButton = true
 
 IconButton.propTypes = {
+  dsRef: refPropType,
   icon: PropTypes.node
 }
 

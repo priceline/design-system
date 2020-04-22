@@ -9,7 +9,8 @@ import {
   deprecatedColorValue,
   mapProps
 } from './utils'
-import getSCMigrationRef from './helpers/getSCMigrationRef'
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -112,6 +113,7 @@ Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
   onChange: PropTypes.func.isRequired,
+  dsRef: refPropType,
   color: deprecatedColorValue()
 }
 

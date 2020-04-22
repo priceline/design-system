@@ -9,7 +9,8 @@ import {
   getTextColorOn,
   deprecatedColorValue
 } from './utils'
-import getSCMigrationRef from "./helpers/getSCMigrationRef";
+import getSCMigrationRef from './utils/getSCMigrationRef'
+import refPropType from './utils/refPropType'
 
 const size = props => {
   switch (props.size) {
@@ -124,6 +125,7 @@ Button.propTypes = {
   fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
+  dsRef: refPropType,
   disabled: PropTypes.bool
 }
 

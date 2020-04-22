@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Flex from './Flex'
 import Link from './Link'
 import Text from './Text'
+import refPropType from './utils/refPropType'
 
 function BreadcrumbLink({
   className,
@@ -38,6 +39,7 @@ BreadcrumbLink.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.node,
   label: PropTypes.string,
+  dsRef: refPropType,
   onClick: PropTypes.func
 }
 

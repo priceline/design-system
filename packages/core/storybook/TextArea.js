@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, TextArea, Label, Input, Button } from '../src'
+import { Box, TextArea, Label, Button } from '../src'
 
 storiesOf('TextArea', module)
   .add(
