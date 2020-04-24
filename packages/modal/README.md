@@ -14,7 +14,6 @@ import Modal from 'pcln-modal'
 
 ```jsx
 import { Modal } from 'pcln-modal'
-
 ;<Modal
   isOpen={true} //boolean for control this status of modal
   onClose={someFunc} //func function for handle close the modal while click on the overlay
@@ -29,6 +28,7 @@ import { Modal } from 'pcln-modal'
   verticalAlignment="middle" // Aligns dialog body vertically - options = ['middle', 'top', 'bottom']
   overlayAnimation={null} // Accepts a function which overwrites default animation
   dialogAnimation={null} // Accepts a function which overwrites default animation
+  timeout={500} // Accepts a number which overwrites the default delay for the open animation to begin, default is 500ms
 >
   <SomeChildComponent />
 </Modal>
