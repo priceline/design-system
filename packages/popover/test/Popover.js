@@ -12,7 +12,7 @@ const InnerContent = ({ handleClose }) => (
 
 const popoverProps = {
   renderContent: InnerContent,
-  ariaLabel: 'Top PopOver',
+  ariaLabel: 'Top Popover',
   placement: 'top',
   idx: 1,
   width: 400
@@ -32,14 +32,18 @@ describe('Popover', () => {
     })
 
     test('toggle popover from trigger element', () => {
-      const { getByText, queryByText } = renderWithTheme(
+      const { getByText, getByLabelText, queryByText } = renderWithTheme(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
       )
-      fireEvent.click(getByText(triggerButtonText))
+
+      expect(getByLabelText(popoverProps.ariaLabel)).toBeTruthy()
+
+      const button = getByText(triggerButtonText)
+      fireEvent.click(button)
       expect(getByText('Hello there!')).toBeTruthy()
-      fireEvent.click(getByText(triggerButtonText))
+      fireEvent.click(button)
       expect(queryByText('Hello there!')).toBeFalsy()
     })
 

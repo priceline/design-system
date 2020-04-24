@@ -56,7 +56,7 @@ class Popover extends Component {
 
   render() {
     const { isPopoverOpen: isOpenState } = this.state
-    const { isOpen: isOpenProp } = this.props
+    const { ariaLabel, children, isOpen: isOpenProp } = this.props
     const isPopoverOpen = isOpenState || isOpenProp
 
     return (
@@ -66,8 +66,8 @@ class Popover extends Component {
             // Need to be a native element, because of ref forwarding limitations with DS functional components
             <InlineContainer {...{ [getSCMigrationRef()]: ref }}>
               {// Clone element to pass down toggle event so it can be used directly from children as needed
-              React.cloneElement(this.props.children, {
-                'aria-label': 'Click to open popover with more information',
+              React.cloneElement(children, {
+                'aria-label': ariaLabel,
                 onClick: evt => this.handleToggle(evt, isPopoverOpen),
                 [getSCMigrationRef()]: this.triggerRef
               })}
@@ -105,6 +105,10 @@ Popover.propTypes = {
   trapFocus: PropTypes.bool,
   isOpen: PropTypes.bool,
   openOnMount: PropTypes.bool
+}
+
+Popover.defaultProps = {
+  ariaLabel: 'Click to open popover with more information',
 }
 
 export default Popover

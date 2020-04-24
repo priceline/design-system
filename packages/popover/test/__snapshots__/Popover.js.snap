@@ -40,7 +40,7 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   class="c0"
 >
   <button
-    aria-label="Click to open popover with more information"
+    aria-label="Top Popover"
     class="c1"
     color="primary"
   >
@@ -59,7 +59,7 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
     class="c0"
   >
     <button
-      aria-label="Click to open popover with more information"
+      aria-label="Top Popover"
     >
       Trigger Button
     </button>
@@ -154,7 +154,6 @@ exports[`Popover UI Positioning Bottom 1`] = `
 
 <div
   aria-describedby="dialog-description-1"
-  aria-label="Top PopOver"
   class="c0"
   data-placement="bottom"
   role="dialog"
@@ -279,7 +278,6 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 
 <div
   aria-describedby="dialog-description-1"
-  aria-label="Top PopOver"
   class="c0"
   data-placement="bottom-end"
   role="dialog"
@@ -404,7 +402,6 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 
 <div
   aria-describedby="dialog-description-1"
-  aria-label="Top PopOver"
   class="c0"
   data-placement="bottom-start"
   role="dialog"
