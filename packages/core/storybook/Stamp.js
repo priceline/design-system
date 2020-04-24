@@ -1,7 +1,29 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import { Cartesian } from '@compositor/kit'
+
 import { Stamp, Icon, Text } from '../src'
+
+const sizes = { small: 'small', medium: 'medium' }
+const variations = { outline: 'outline', fill: 'fill' }
+const colors = {
+  primary: 'primary',
+  secondary: 'secondary',
+  text: 'text',
+  success: 'success',
+  error: 'error',
+  warning: 'warning',
+  alert: 'alert',
+  caution: 'caution',
+  notify: 'notify',
+  pricePrimary: 'pricePrimary',
+  priceSecondary: 'priceSecondary',
+  promoPrimary: 'promoPrimary',
+  promoSecondary: 'promoSecondary',
+  border: 'border',
+  background: 'background'
+}
 
 storiesOf('Stamp', module)
   .add(
@@ -12,51 +34,18 @@ storiesOf('Stamp', module)
         'Use the <Stamp /> component to subtly display attributes alongside listing cells and on product detail pages. Use it in conjunction with an <Icon /> component to give it more context. An Icon placed within a Stamp will inherit the assigned Stamp color.'
     })(() => <Stamp>default stamp</Stamp>)
   )
-  .add('Small Stamp', () => (
-    <Stamp color="primary" size="small">
-      <Icon name="Pin" mr={1} />
-      Stamp Text
-    </Stamp>
-  ))
-  .add('Regular Stamp', () => (
-    <Stamp color="primary">
-      <Icon name="Pin" mr={1} />
-      Stamp Text
-    </Stamp>
-  ))
-  .add('Small Solid Stamp', () => (
-    <Stamp color="primary" size="small" variation="solid">
-      <Icon name="Pin" mr={1} />
-      Stamp Text
-    </Stamp>
-  ))
-  .add('Regular Solid Stamp', () => (
-    <Stamp color="primary" variation="solid">
-      <Icon name="Pin" mr={1} />
-      Stamp Text
-    </Stamp>
-  ))
-  .add('All Colors', () => (
-    <div>
-      <Stamp color="text.light" mr={2}>
-        default stamp
-      </Stamp>
-      <Stamp color="primary" mr={2}>
+  .add('All', () => (
+    <Cartesian
+      component={Stamp}
+      color={Object.keys(colors)}
+      variation={Object.keys(variations)}
+      size={Object.keys(sizes)}
+      m={3}
+    >
+      <>
         <Icon name="Pin" mr={1} /> top location
-      </Stamp>
-      <Stamp color="secondary" mr={2}>
-        <Icon name="Discount" mr={1} /> lowest price
-      </Stamp>
-      <Stamp color="error" mr={2}>
-        <Icon name="clock" mr={1} /> just booked
-      </Stamp>
-      <Stamp color="alert" mr={2}>
-        <Icon name="EarlyBird" mr={1} /> early bird flight
-      </Stamp>
-      <Stamp color="promoPrimary" mr={2}>
-        <Icon name="TrendingUp" mr={1} /> top booked hotel
-      </Stamp>
-    </div>
+      </>
+    </Cartesian>
   ))
   .add('Custom Background and Border Color', () => (
     <div>

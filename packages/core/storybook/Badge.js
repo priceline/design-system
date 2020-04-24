@@ -1,7 +1,28 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import { Cartesian } from '@compositor/kit'
+
 import { Badge } from '../src'
+
+const sizes = { small: 'small', medium: 'medium' }
+const colors = {
+  primary: 'primary',
+  secondary: 'secondary',
+  text: 'text',
+  success: 'success',
+  error: 'error',
+  warning: 'warning',
+  alert: 'alert',
+  caution: 'caution',
+  notify: 'notify',
+  pricePrimary: 'pricePrimary',
+  priceSecondary: 'priceSecondary',
+  promoPrimary: 'promoPrimary',
+  promoSecondary: 'promoSecondary',
+  border: 'border',
+  background: 'background'
+}
 
 storiesOf('Badge', module)
   .add(
@@ -11,22 +32,15 @@ storiesOf('Badge', module)
       text: 'Use the <Badge /> component to render a primitive badge.'
     })(() => <Badge bg="lightGray">badge</Badge>)
   )
-  .add('All colors', () => (
-    <div>
-      <Badge bg="blue">blue</Badge>
-      <Badge bg="lightBlue">lightBlue</Badge>
-      <Badge bg="green">green</Badge>
-      <Badge bg="lightGreen">lightGreen</Badge>
-      <Badge bg="red">red</Badge>
-      <Badge bg="lightRed">lightRed</Badge>
-      <Badge bg="orange">orange</Badge>
-      <Badge bg="text" color="white">
-        text (custom)
-      </Badge>
-      <Badge color="primary">primary</Badge>
-      <Badge color="secondary">secondary</Badge>
-      <Badge color="warning">warning</Badge>
-    </div>
+  .add('All', () => (
+    <Cartesian
+      component={Badge}
+      color={Object.keys(colors)}
+      size={Object.keys(sizes)}
+      m={3}
+    >
+      Badge
+    </Cartesian>
   ))
   .add('default', () => <Badge>default</Badge>)
   .add('blue', () => <Badge bg="blue">blue</Badge>)

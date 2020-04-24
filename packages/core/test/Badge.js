@@ -7,6 +7,11 @@ describe('Badge', () => {
     expect(json).toMatchSnapshot()
   })
 
+  test('renders small', () => {
+    const json = rendererCreateWithTheme(<Badge size="small" />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
+
   test('bg green sets background-color and color', () => {
     const json = rendererCreateWithTheme(<Badge bg="green" />).toJSON()
     expect(json).toMatchSnapshot()
