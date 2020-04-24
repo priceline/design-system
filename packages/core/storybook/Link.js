@@ -1,6 +1,28 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import { Cartesian } from '@compositor/kit'
+
 import { Link } from '../src'
+
+const variations = { link: 'link', fill: 'fill', outline: 'outline' }
+const colors = {
+  primary: 'primary',
+  secondary: 'secondary',
+  text: 'text',
+  success: 'success',
+  error: 'error',
+  warning: 'warning',
+  alert: 'alert',
+  caution: 'caution',
+  notify: 'notify',
+  pricePrimary: 'pricePrimary',
+  priceSecondary: 'priceSecondary',
+  promoPrimary: 'promoPrimary',
+  promoSecondary: 'promoSecondary',
+  border: 'border',
+  background: 'background'
+}
 
 storiesOf('Link', module)
   .add('Link component', () => (
@@ -21,4 +43,15 @@ storiesOf('Link', module)
       <br />
       <Link color="error">I'm a different color!</Link>
     </div>
+  ))
+  .add('All', () => (
+    <Cartesian
+      component={Link}
+      color={Object.keys(colors)}
+      variation={Object.keys(variations)}
+      onClick={action('Clicked button in All')}
+      m={3}
+    >
+      Link Text
+    </Cartesian>
   ))
