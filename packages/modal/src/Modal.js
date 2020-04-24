@@ -57,7 +57,6 @@ const Dialog = styled(DialogContent)`
   ${color} 
   ${width}
   ${height}
-  max-width: calc(100vw - 32px);
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +64,16 @@ const Dialog = styled(DialogContent)`
   &:focus {
     outline: none;
   }
-  max-height: 100vh;
+  ${props =>
+    !props.fullScreen
+      ? `
+    max-height: 100vh;
+    max-width: calc(100vw - 32px);
+  `
+      : `
+    width: 100vw;
+    height: 100vh;
+  `}
   ${props =>
     props.enableoverflow &&
     `
@@ -148,57 +156,70 @@ const Modal = ({
   timeout,
   dialogAnimation,
   overlayAnimation,
+  fullScreen,
   verticalAlignment
-}) => (
-  <Transition in={isOpen} unmountOnExit timeout={timeout}>
-    {state => (
-      <Overlay
-        onDismiss={onClose}
-        zindex={zIndex}
-        transitionstate={state}
-        initialFocusRef={null}
-        defaultAnimation={OVERLAY_ANIMATION}
-        customAnimation={overlayAnimation}
-      >
-        <OverlayWrapper>
-          <DialogWrapper
-            enableoverflow={enableOverflow}
-            verticalAlignment={verticalAlignment}
-          >
-            <Dialog
-              width={width}
-              bg={bg}
-              height={enableOverflow ? null : height}
-              transitionstate={state}
-              className={className}
-              enableoverflow={enableOverflow ? 'true' : null}
-              defaultAnimation={DIALOG_ANIMATION}
-              customAnimation={dialogAnimation}
+}) => {
+  let dialogHeight = height
+
+  if (enableOverflow) {
+    dialogHeight = null
+  } else if (fullScreen) {
+    dialogHeight = [1]
+  }
+
+  return (
+    <Transition in={isOpen} unmountOnExit timeout={timeout}>
+      {state => (
+        <Overlay
+          onDismiss={onClose}
+          zindex={zIndex}
+          transitionstate={state}
+          initialFocusRef={null}
+          defaultAnimation={OVERLAY_ANIMATION}
+          customAnimation={overlayAnimation}
+        >
+          <OverlayWrapper>
+            <DialogWrapper
+              enableoverflow={enableOverflow}
+              verticalAlignment={verticalAlignment}
             >
-              <DialogInnerWrapper flexDirection="column">
-                {header && <HeaderWrapper>{header}</HeaderWrapper>}
-                <ContentWrapper
-                  p={imgMode ? 0 : 16}
-                  header={header}
-                  enableoverflow={enableOverflow}
-                >
-                  {enableOverflow && !disableCloseButton && (
-                    <FloatCloseButton
-                      data-testid="pcln-modal-close"
-                      header={header}
-                      onClick={onClose}
-                    />
-                  )}
-                  {children}
-                </ContentWrapper>
-              </DialogInnerWrapper>
-            </Dialog>
-          </DialogWrapper>
-        </OverlayWrapper>
-      </Overlay>
-    )}
-  </Transition>
-)
+              <Dialog
+                width={fullScreen ? 1 : width}
+                bg={bg}
+                height={dialogHeight}
+                transitionstate={state}
+                className={className}
+                enableoverflow={enableOverflow ? 'true' : null}
+                defaultAnimation={DIALOG_ANIMATION}
+                customAnimation={dialogAnimation}
+                fullScreen={fullScreen}
+                data-testid="dialog-content"
+              >
+                <DialogInnerWrapper flexDirection="column">
+                  {header && <HeaderWrapper>{header}</HeaderWrapper>}
+                  <ContentWrapper
+                    p={imgMode ? 0 : 16}
+                    header={header}
+                    enableoverflow={enableOverflow}
+                  >
+                    {enableOverflow && !disableCloseButton && (
+                      <FloatCloseButton
+                        data-testid="pcln-modal-close"
+                        header={header}
+                        onClick={onClose}
+                      />
+                    )}
+                    {children}
+                  </ContentWrapper>
+                </DialogInnerWrapper>
+              </Dialog>
+            </DialogWrapper>
+          </OverlayWrapper>
+        </Overlay>
+      )}
+    </Transition>
+  )
+}
 
 Modal.defaultProps = {
   isOpen: false,
@@ -217,6 +238,7 @@ Modal.propTypes = {
   ...width.propTypes,
   ...height.propTypes,
   isOpen: PropTypes.bool,
+  fullScreen: PropTypes.bool,
   disableCloseButton: PropTypes.bool,
   enableOverflow: PropTypes.bool,
   onClose: PropTypes.func,
