@@ -7,13 +7,15 @@ import {
   getPaletteColor,
   deprecatedColorValue
 } from './utils'
-import { buttonStyles } from '../src/Button'
+import { buttonStyles } from './Button'
 
 const variations = {
   fill: css`
     &:hover {
       text-decoration: none;
     }
+
+    ${buttonStyles}
   `,
   link: css`
     cursor: pointer;
@@ -29,15 +31,17 @@ const variations = {
     &:hover {
       text-decoration: none;
     }
+
+    ${buttonStyles}
   `
 }
 
 const Link = mapProps(({ target, ...props }) => ({
   rel: target === '_blank' ? 'noopener' : null,
+  target,
   ...props
 }))(styled.a`
   ${width} ${space};
-  ${buttonStyles}
   ${applyVariations('Link', variations)}
 `)
 
