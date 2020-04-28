@@ -25,6 +25,28 @@ exports[`Breadcrumbs renders basic 1`] = `
 }
 
 .c2 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  -webkit-font-smoothing: inherit;
+  font-weight: 500;
+  color: #4f6f8f;
+  line-height: 1.4;
+  vertical-align: inherit;
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -37,11 +59,57 @@ exports[`Breadcrumbs renders basic 1`] = `
   text-decoration: underline;
 }
 
+.c2:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
+.c2:hover {
+  color: #4f6f8f;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c4 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  -webkit-font-smoothing: inherit;
+  font-weight: 500;
+  color: #001023;
+  line-height: 1.4;
+  vertical-align: inherit;
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #001023;
+}
+
+.c4:hover {
+  color: #001023;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 .c4:hover {
@@ -159,6 +227,28 @@ exports[`Breadcrumbs renders with icons 1`] = `
 }
 
 .c4 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  -webkit-font-smoothing: inherit;
+  font-weight: 500;
+  color: #4f6f8f;
+  line-height: 1.4;
+  vertical-align: inherit;
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -171,11 +261,57 @@ exports[`Breadcrumbs renders with icons 1`] = `
   text-decoration: underline;
 }
 
+.c4:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
+.c4:hover {
+  color: #4f6f8f;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c9 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
+  -webkit-font-smoothing: inherit;
+  font-weight: 500;
+  color: #001023;
+  line-height: 1.4;
+  vertical-align: inherit;
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #001023;
+}
+
+.c9:hover {
+  color: #001023;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c9:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 .c9:hover {

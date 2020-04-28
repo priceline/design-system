@@ -2,26 +2,35 @@
 
 exports[`BlockLink renders 1`] = `
 .c0 {
-  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #007aff;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 0;
+  border-style: solid;
+  font-size: 14px;
+  padding: 9.5px 18px;
   display: block;
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0:hover {
-  color: #049;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.c0:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
 }
 
 <a
   className="c0"
-  color="primary"
-  rel={null}
 >
   raw text
 </a>

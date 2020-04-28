@@ -7,7 +7,7 @@ import {
   getPaletteColor,
   deprecatedColorValue
 } from './utils'
-import { buttonStyles } from '../src/Button'
+import { buttonStyles } from './Button'
 
 const variations = {
   fill: css`
@@ -34,6 +34,7 @@ const variations = {
 
 const Link = mapProps(({ target, ...props }) => ({
   rel: target === '_blank' ? 'noopener' : null,
+  target,
   ...props
 }))(styled.a`
   ${width} ${space};
