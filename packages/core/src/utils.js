@@ -1,17 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import hoistStatics from 'hoist-non-react-statics'
 import { themeGet } from 'styled-system'
 import { css } from 'styled-components'
+export { default as getSCMigrationRef } from './utils/getSCMigrationRef'
 
 export const mapProps = map => Component =>
   hoistStatics(props => <Component {...map(props)} />, Component)
 
 // Use this to mark props as deprecated
-export const deprecatedPropType = replacement => (
-  props,
-  propName,
-  componentName
-) => {
+export const deprecatedPropType = replacement => (props, propName) => {
   if (props[propName]) {
     return new Error(
       `The \`${propName}\` prop is deprecated and will be removed in a future release. Please use \`${replacement}\` instead.`
@@ -287,3 +285,16 @@ export const borders = props => {
     }
   }
 }
+
+/**
+ * Since PropTypes doesn't ship with a type for React refs, we define one here to
+ * reference throughout the project to describe custom props that expect a ref (e.g. dsRef)
+ *
+ * Source: https://stackoverflow.com/a/51127130
+ */
+export const refPropType = PropTypes.oneOfType([
+  // Either a function
+  PropTypes.func,
+  // Or the instance of a DOM native element (see the note about SSR)
+  PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+])

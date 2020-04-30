@@ -7,7 +7,9 @@ import {
   applyVariations,
   getPaletteColor,
   getTextColorOn,
-  deprecatedColorValue
+  deprecatedColorValue,
+  getSCMigrationRef,
+  refPropType
 } from './utils'
 
 const size = props => {
@@ -107,8 +109,9 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button = mapProps(({ fullWidth, ...props }) => ({
+const Button = mapProps(({ fullWidth, dsRef, ...props }) => ({
   width: fullWidth ? 1 : undefined,
+  [getSCMigrationRef()]: dsRef,
   'aria-label': props.title,
   ...props
 }))(styled.button`
@@ -122,6 +125,7 @@ Button.propTypes = {
   fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
+  dsRef: refPropType,
   disabled: PropTypes.bool
 }
 

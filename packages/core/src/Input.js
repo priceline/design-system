@@ -5,10 +5,17 @@ import {
   applyVariations,
   getPaletteColor,
   borders,
-  deprecatedColorValue
+  deprecatedColorValue,
+  mapProps,
+  getSCMigrationRef,
+  refPropType
 } from './utils'
 
-const Input = styled.input`
+const Input = mapProps(({ dsRef, ...props }) => ({
+  [getSCMigrationRef()]: dsRef,
+  ...props
+}))(
+  styled.input`
   appearance: none;
   display: block;
   width: 100%;
@@ -37,6 +44,7 @@ const Input = styled.input`
   ${borders} ${space} ${fontSize};
   ${applyVariations('Input')}
 `
+)
 
 Input.displayName = 'Input'
 Input.isField = true
@@ -45,6 +53,7 @@ Input.defaultProps = {
 }
 Input.propTypes = {
   id: PropTypes.string.isRequired,
+  dsRef: refPropType,
   color: deprecatedColorValue(),
   ...borders.propTypes,
   ...space.propTypes,

@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, Input, Label } from '../src'
+import { Box, Button, Input, Label } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 storiesOf('Input', module)
   .add(
@@ -26,6 +27,21 @@ storiesOf('Input', module)
       <Input mb={3} id="input-colors-5" color="alert" placeholder="Alert" />
       <Input mb={3} id="input-colors-6" color="caution" placeholder="Caution" />
     </Box>
+  ))
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Input dsRef={dsRef} value="Sad Panda :(" />
+          <Button
+            onClick={() => (dsRef.current.value = 'Happy Panda :D')}
+            mt={4}
+          >
+            Click to change input value via ref
+          </Button>
+        </>
+      )}
+    />
   ))
   .add('With external label', () => (
     <Box width={400}>

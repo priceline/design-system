@@ -3,7 +3,8 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { Cartesian } from '@compositor/kit'
 
-import { Link } from '../src'
+import { Link, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const variations = { link: 'link', fill: 'fill', outline: 'outline' }
 const colors = {
@@ -34,6 +35,25 @@ storiesOf('Link', module)
     <Link href="https://www.priceline.com/home/" target="_self">
       Open the Priceline Home in the same window
     </Link>
+  ))
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Link color="darkGray" dsRef={dsRef}>
+            I'm a link!
+          </Link>
+          <br />
+          <Button
+            color="error"
+            onClick={() => (dsRef.current.innerHTML = 'Bacon!')}
+            mt={4}
+          >
+            Click to update link text via ref
+          </Button>
+        </>
+      )}
+    />
   ))
   .add('Color', () => (
     <div>

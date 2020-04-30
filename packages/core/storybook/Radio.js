@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
 import { Radio, Label, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const LabelText = styled.span`
   vertical-align: middle;
@@ -74,3 +75,18 @@ storiesOf('Radio', module)
     </div>
   ))
   .add('Mock form', () => <MockForm />)
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Label fontSize="14px">
+            <Radio checked dsRef={dsRef} />
+            <LabelText>selected</LabelText>
+          </Label>
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus radio via ref
+          </Button>
+        </>
+      )}
+    />
+  ))

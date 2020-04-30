@@ -5,7 +5,8 @@ import { withKnobs, boolean, optionsKnob } from '@storybook/addon-knobs'
 import { withInfo } from '@storybook/addon-info'
 import { Cartesian, Catch, LiveEditor, Markdown, XRay } from '@compositor/kit'
 
-import { Box, Button, Text } from '../src'
+import { Box, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const variations = { outline: 'outline', fill: 'fill', link: 'link' }
 const sizes = { small: 'small', medium: 'medium', large: 'large' }
@@ -132,4 +133,20 @@ Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Us
         Button Geometry
       </Cartesian>
     </XRay>
+  ))
+
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <Button dsRef={dsRef} color="error" size="large">
+            PANIC
+          </Button>
+          <br />
+          <Button mt={4} onClick={() => dsRef.current.focus()}>
+            Click to focus PANIC button via ref
+          </Button>
+        </>
+      )}
+    />
   ))

@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { ToggleBadge } from '../src'
+import { Button, ToggleBadge } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 storiesOf('ToggleBadge', module)
   .add(
@@ -23,4 +24,20 @@ storiesOf('ToggleBadge', module)
       <ToggleBadge>Flight + Hotel + Car</ToggleBadge>
       <ToggleBadge>Flight + Car</ToggleBadge>
     </div>
+  ))
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <div>
+            <ToggleBadge selected>Flight + Hotel</ToggleBadge>
+            <ToggleBadge dsRef={dsRef}>Flight + Hotel + Car</ToggleBadge>
+            <ToggleBadge>Flight + Car</ToggleBadge>
+          </div>
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus second badge via ref
+          </Button>
+        </>
+      )}
+    />
   ))

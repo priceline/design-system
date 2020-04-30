@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Box, TextArea, Label } from '../src'
+import { Box, TextArea, Label, Button } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 storiesOf('TextArea', module)
   .add(
@@ -53,4 +54,19 @@ storiesOf('TextArea', module)
       </Label>
       <TextArea id="sample-textarea" placeholder="Click the label" />
     </Box>
+  ))
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          <TextArea dsRef={dsRef} value="Sad Panda :(" />
+          <Button
+            onClick={() => (dsRef.current.value = 'Happy Panda :D')}
+            mt={4}
+          >
+            Click to change input value via ref
+          </Button>
+        </>
+      )}
+    />
   ))

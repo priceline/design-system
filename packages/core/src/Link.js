@@ -2,10 +2,12 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { width, space } from 'styled-system'
 import {
-  mapProps,
   applyVariations,
   getPaletteColor,
-  deprecatedColorValue
+  deprecatedColorValue,
+  getSCMigrationRef,
+  refPropType,
+  mapProps
 } from './utils'
 import { buttonStyles } from './Button'
 
@@ -36,7 +38,8 @@ const variations = {
   `
 }
 
-const Link = mapProps(({ target, ...props }) => ({
+const Link = mapProps(({ target, dsRef, ...props }) => ({
+  [getSCMigrationRef()]: dsRef,
   rel: target === '_blank' ? 'noopener' : null,
   target,
   ...props
@@ -54,6 +57,7 @@ Link.defaultProps = {
 
 Link.propTypes = {
   color: deprecatedColorValue(),
+  dsRef: refPropType,
   variation: PropTypes.oneOf(Object.keys(variations))
 }
 

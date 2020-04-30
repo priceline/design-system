@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { Checkbox, Text, Box, Heading, Button, Label } from '../src'
+import ForwardRefDemo from './utils/ForwardRefsDemo'
 
 const StyledLabel = styled(Label)`
   cursor: pointer;
@@ -147,4 +148,23 @@ storiesOf('Checkbox', module)
         </StyledLabel>
       </Wrapper>
     </div>
+  ))
+  .add('Forward refs', () => (
+    <ForwardRefDemo
+      refChild={dsRef => (
+        <>
+          {/*
+            This example is for SC3
+              <Button dsRef={e => this.btnRef = e}>Click me</Button>
+          */}
+          <StyledLabel htmlFor="check">
+            <Checkbox id="check" dsRef={dsRef} />
+            Checkbox with ref
+          </StyledLabel>
+          <Button onClick={() => dsRef.current.focus()} mt={4}>
+            Click to focus checkbox via ref
+          </Button>
+        </>
+      )}
+    />
   ))
