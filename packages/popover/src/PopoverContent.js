@@ -88,7 +88,6 @@ class PopoverContent extends Component {
               {...{ [getSCMigrationRef()]: ref }}
               style={style}
               data-placement={placement}
-              aria-label={this.props.ariaLabel}
               {...styleProps}
               role="dialog"
               aria-describedby={`dialog-description-${this.props.idx}`}
@@ -147,7 +146,6 @@ PopoverContent.propTypes = {
   idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
   renderContent: PropTypes.func.isRequired,
   onCloseRequest: PropTypes.func.isRequired,
-  ariaLabel: PropTypes.string,
   contentRef: PropTypes.object,
   className: PropTypes.string,
   theme: PropTypes.object,
@@ -162,7 +160,6 @@ PopoverContent.propTypes = {
 }
 
 PopoverContent.defaultProps = {
-  ariaLabel: 'Dialog Tile',
   theme: theme,
   p: 2,
   bg: 'white',

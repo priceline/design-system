@@ -28,7 +28,7 @@ storiesOf('Popover', module)
         <Popover
           renderContent={PriceGuidanceContent}
           placement="top"
-          ariaLabel={'Price Guidance PopOver'}
+          ariaLabel="Price Guidance Popover"
           idx={1}
           width={370}
           overlayOpacity={0.3}
@@ -43,7 +43,7 @@ storiesOf('Popover', module)
     <Popover
       renderContent={InnerContent}
       placement="bottom"
-      ariaLabel="Bottonm PopOver"
+      ariaLabel="Bottom Popover"
       idx={2}
       width={400}
       borderColor="darkGray"
@@ -56,7 +56,7 @@ storiesOf('Popover', module)
     <Popover
       renderContent={InnerContent}
       placement="bottom"
-      ariaLabel="Bottonm PopOver"
+      ariaLabel="Bottom Popover"
       idx={2}
       width={400}
       borderColor="darkGray"
@@ -69,7 +69,7 @@ storiesOf('Popover', module)
     <Popover
       renderContent={InnerContent}
       placement="bottom"
-      ariaLabel="Bottonm PopOver"
+      ariaLabel="Bottom Popover"
       idx={2}
       width={400}
       borderColor="darkGray"
@@ -84,7 +84,7 @@ storiesOf('Popover', module)
         <Popover
           renderContent={InnerContent}
           placement="top"
-          ariaLabel="Test PopOver"
+          ariaLabel="Test Popover"
           idx={1}
           width={400}
           overlayOpacity={0.3}
@@ -118,7 +118,7 @@ const Playground = ({ children }) => (
 const InnerContent = ({ handleClose }) => (
   <ThemeProvider>
     <Box p={4}>
-      <Absolute color={'blue'} top={25} right={25}>
+      <Absolute color="primary" top={25} right={25}>
         <CloseButton onClick={handleClose} />
       </Absolute>
       <BackgroundImage
@@ -146,12 +146,12 @@ const PriceGuidanceContent = ({ handleClose }) => (
     <Box p={3}>
       <Box p={2} pt={0} pb={3}>
         <Flex>
-          <Icon name="Graph" color="blue" size="32px" mr="2" />
+          <Icon name="Graph" color="primary" size="32px" mr="2" />
           <Flex flexDirection="column">
-            <Text color="blue" fontSize="24px" bold>
+            <Text color="primary" fontSize="24px" bold>
               Price Guidance
             </Text>
-            <Text color="gray" fontSize="12px">
+            <Text color="text.light" fontSize="12px">
               Lorem ipsum dolor sit amet, consect etur adipiscing elit. Mauris
               nisl sapi
             </Text>
@@ -160,12 +160,12 @@ const PriceGuidanceContent = ({ handleClose }) => (
       </Box>
       <StyledBox p={2} pb={0} pt={3}>
         <Flex>
-          <Icon name="Pin" color="black" size="32px" mr="2" />
+          <Icon name="Pin" color="text.base" size="32px" mr="2" />
           <Flex flexDirection="column">
-            <Text color="black" fontSize="14px" bold>
+            <Text color="text.base" fontSize="14px" bold>
               New York City
             </Text>
-            <Text color="gray" fontSize="12px">
+            <Text color="text.light" fontSize="12px">
               Wed. Jan 24 - Fri. Jan 25
             </Text>
           </Flex>
