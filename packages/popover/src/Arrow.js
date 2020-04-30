@@ -1,22 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { deprecatedPropType, theme } from 'pcln-design-system'
+import { deprecatedPropType, getPaletteColor } from 'pcln-design-system'
 
 const PopoverArrow = ({
   arrowProps,
   placement,
-  background,
   borderColor,
+  color,
   className
 }) => (
   <Arrow
     className={className}
     style={arrowProps.style}
     data-placement={placement}
-    theme={theme}
-    background={background}
     borderColor={borderColor}
+    color={color}
     aria-hidden="true"
   >
     <div ref={arrowProps.ref} />
@@ -53,9 +52,9 @@ const ArrowAlignment = () =>
     }
   `
 
-const ArrowPlacement = ({ background, borderColor }) => {
-  const bgColor = theme.colors[background]
-  const brColor = theme.colors[borderColor]
+const ArrowPlacement = ({ color, borderColor, ...props }) => {
+  const bgColor = getPaletteColor(color, 'base')(props)
+  const brColor = getPaletteColor(borderColor, 'base')(props)
 
   return `
     &[data-placement*="right"]::before {
@@ -82,6 +81,7 @@ const ArrowPlacement = ({ background, borderColor }) => {
     }
   `
 }
+
 const Arrow = styled.span`
   position: absolute;
   ${ArrowAlignment}
@@ -94,14 +94,13 @@ PopoverArrow.propTypes = {
     style: PropTypes.object
   }).isRequired,
   className: PropTypes.string,
+  color: PropTypes.string,
   bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string
 }
 
 PopoverArrow.defaultProps = {
-  bg: 'white',
-  borderColor: 'borderGray',
   placement: 'top'
 }
 
