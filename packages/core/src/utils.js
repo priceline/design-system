@@ -295,6 +295,6 @@ export const borders = props => {
 export const refPropType = PropTypes.oneOfType([
   // Either a function
   PropTypes.func,
-  // Or the instance of a DOM native element (see the note about SSR)
-  PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+  // Or the instance of any prop type on the current property
+  PropTypes.shape({ current: PropTypes.any })
 ])
