@@ -4,17 +4,17 @@ import { withKnobs, boolean } from '@storybook/addon-knobs'
 import { DraggableParent, DraggableItem } from 'react-draggable-playground'
 import styled from 'styled-components'
 import {
-  ThemeProvider,
-  Flex,
+  Absolute,
+  BackgroundImage,
+  Box,
   Button,
   CloseButton,
-  Box,
-  Text,
-  BackgroundImage,
-  Absolute,
-  Link,
+  Flex,
+  getPaletteColor,
   Icon,
-  getPaletteColor
+  Link,
+  Text,
+  ThemeProvider
 } from 'pcln-design-system'
 import Component from '@reach/component-component'
 import Slider from '../../slider/src'
@@ -39,6 +39,53 @@ storiesOf('Popover', module)
       </Playground>
     </React.Fragment>
   ))
+  .add('Colors', () => (
+    <Flex>
+      <Popover
+        renderContent={SimpleTextContent}
+        placement="bottom"
+        ariaLabel="Default Popover"
+        width={130}
+      >
+        <Button color="primary" variation="outline" mx={2}>
+          Default Popover
+        </Button>
+      </Popover>
+      <Popover
+        renderContent={SimpleTextContent}
+        placement="bottom"
+        ariaLabel="Success Popover"
+        width={130}
+        color="success"
+      >
+        <Button color="success" variation="outline" mx={2}>
+          Success Popover
+        </Button>
+      </Popover>
+      <Popover
+        renderContent={SimpleTextContent}
+        placement="bottom"
+        ariaLabel="Alert Popover"
+        width={130}
+        color="alert"
+      >
+        <Button color="alert" variation="outline" mx={2}>
+          Alert Popover
+        </Button>
+      </Popover>
+      <Popover
+        renderContent={SimpleTextContent}
+        placement="bottom"
+        ariaLabel="Error Popover"
+        width={130}
+        color="error"
+      >
+        <Button color="error" variation="outline" mx={2}>
+          Error Popover
+        </Button>
+      </Popover>
+    </Flex>
+  ))
   .add('Forced open via prop', () => (
     <Popover
       renderContent={InnerContent}
@@ -46,7 +93,6 @@ storiesOf('Popover', module)
       ariaLabel="Bottom Popover"
       idx={2}
       width={400}
-      borderColor="darkGray"
       isOpen
     >
       <Link>Open Popover</Link>
@@ -59,7 +105,6 @@ storiesOf('Popover', module)
       ariaLabel="Bottom Popover"
       idx={2}
       width={400}
-      borderColor="darkGray"
       openOnMount
     >
       <Link>Open Popover</Link>
@@ -72,7 +117,6 @@ storiesOf('Popover', module)
       ariaLabel="Bottom Popover"
       idx={2}
       width={400}
-      borderColor="darkGray"
     >
       <Link>Open Popover</Link>
     </Popover>
@@ -88,8 +132,8 @@ storiesOf('Popover', module)
           idx={1}
           width={400}
           overlayOpacity={0.3}
-          bg="lightRed"
-          borderColor="darkRed"
+          color="error.light"
+          borderColor="error.dark"
         >
           <Button>Popover</Button>
         </Popover>
@@ -100,6 +144,14 @@ storiesOf('Popover', module)
 const StyledBox = styled(Box)`
   border-top: 1px solid ${getPaletteColor('border.base')};
 `
+
+const SimpleTextContent = () => (
+  <ThemeProvider>
+    <Box p={2}>
+      <Text textAlign="center">Hello world!</Text>
+    </Box>
+  </ThemeProvider>
+)
 
 const Playground = ({ children }) => (
   <DraggableParent height="calc(100vh - 32px)" width="(100vw - 32px)">
