@@ -4,14 +4,15 @@
   "description": "Priceline Design System",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "prepare": "npm run clean && npm run build",
-    "build": "npm-run-all -p build:*",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "prepare": "run-s clean build",
+    "build": "run-s build:js build:types",
+    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
+    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
+    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "build:js": "run-p build:babel:*",
+    "build:types": "mkdir -p ./dist/types && cp ../types/types/index.d.ts dist/types",
     "clean": "rimraf dist",
     "prepublish": "mkdir dist/types && cp node_modules/pcln-types/index.d.ts dist/types",
     "test": "jest"
@@ -71,7 +72,6 @@
   "dependencies": {
     "deepmerge": "^4.0.0",
     "hoist-non-react-statics": "^3.3.1",
-    "pcln-types": "^0.0.1",
     "pcln-icons": "^3.0.0",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1"
