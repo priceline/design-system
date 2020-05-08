@@ -68,30 +68,30 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
 `;
 
 exports[`Popover UI Positioning Bottom 1`] = `
-.c2 {
+.c3 {
   position: absolute;
 }
 
-.c2[data-placement*="right"] {
+.c3[data-placement*="right"] {
   left: 0;
 }
 
-.c2[data-placement*="left"] {
+.c3[data-placement*="left"] {
   right: 0;
 }
 
-.c2[data-placement*="top"] {
+.c3[data-placement*="top"] {
   bottom: 0;
 }
 
-.c2[data-placement*="bottom"] {
+.c3[data-placement*="bottom"] {
   top: 0;
 }
 
-.c2[data-placement*="bottom"]::before,
-.c2[data-placement*="right"]::before,
-.c2[data-placement*="top"]::after,
-.c2[data-placement*="left"]::after {
+.c3[data-placement*="bottom"]::before,
+.c3[data-placement*="right"]::before,
+.c3[data-placement*="top"]::after,
+.c3[data-placement*="left"]::after {
   content: '';
   position: absolute;
   width: 0;
@@ -107,26 +107,26 @@ exports[`Popover UI Positioning Bottom 1`] = `
   border-width: 6px;
 }
 
-.c2[data-placement*="right"]::before {
+.c3[data-placement*="right"]::before {
   left: 8px;
   border-color: #fff transparent transparent #fff;
   box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="left"]::after {
+.c3[data-placement*="left"]::after {
   right: 13px;
   border-color: transparent #fff #fff transparent;
   box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="top"]::after {
+.c3[data-placement*="top"]::after {
   top: -16px;
   margin-left: -5px;
   border-color: transparent transparent #fff #fff;
   box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="bottom"]::before {
+.c3[data-placement*="bottom"]::before {
   top: 16px;
   margin-left: -5px;
   border-color: #fff #fff transparent transparent;
@@ -146,10 +146,15 @@ exports[`Popover UI Positioning Bottom 1`] = `
   box-shadow: 0 0 0 1px #c0cad5, 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08), 0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
   border-radius: 2px;
-  background: #fff;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+}
+
+.c2 {
+  background-color: #fff;
+  color: #001833;
+  border-radius: 2px;
 }
 
 <div
@@ -166,7 +171,8 @@ exports[`Popover UI Positioning Bottom 1`] = `
     width="400"
   >
     <div
-      class=""
+      class="c2"
+      color="background.lightest"
       id="popover-description-1"
     >
       <div
@@ -183,7 +189,8 @@ exports[`Popover UI Positioning Bottom 1`] = `
   </section>
   <span
     aria-hidden="true"
-    class="c2"
+    class="c3"
+    color="background.lightest"
     data-placement="bottom"
   >
     <div />
@@ -192,30 +199,30 @@ exports[`Popover UI Positioning Bottom 1`] = `
 `;
 
 exports[`Popover UI Positioning Bottom End 1`] = `
-.c2 {
+.c3 {
   position: absolute;
 }
 
-.c2[data-placement*="right"] {
+.c3[data-placement*="right"] {
   left: 0;
 }
 
-.c2[data-placement*="left"] {
+.c3[data-placement*="left"] {
   right: 0;
 }
 
-.c2[data-placement*="top"] {
+.c3[data-placement*="top"] {
   bottom: 0;
 }
 
-.c2[data-placement*="bottom"] {
+.c3[data-placement*="bottom"] {
   top: 0;
 }
 
-.c2[data-placement*="bottom"]::before,
-.c2[data-placement*="right"]::before,
-.c2[data-placement*="top"]::after,
-.c2[data-placement*="left"]::after {
+.c3[data-placement*="bottom"]::before,
+.c3[data-placement*="right"]::before,
+.c3[data-placement*="top"]::after,
+.c3[data-placement*="left"]::after {
   content: '';
   position: absolute;
   width: 0;
@@ -231,26 +238,26 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   border-width: 6px;
 }
 
-.c2[data-placement*="right"]::before {
+.c3[data-placement*="right"]::before {
   left: 8px;
   border-color: #fff transparent transparent #fff;
   box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="left"]::after {
+.c3[data-placement*="left"]::after {
   right: 13px;
   border-color: transparent #fff #fff transparent;
   box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="top"]::after {
+.c3[data-placement*="top"]::after {
   top: -16px;
   margin-left: -5px;
   border-color: transparent transparent #fff #fff;
   box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="bottom"]::before {
+.c3[data-placement*="bottom"]::before {
   top: 16px;
   margin-left: -5px;
   border-color: #fff #fff transparent transparent;
@@ -270,10 +277,15 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   box-shadow: 0 0 0 1px #c0cad5, 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08), 0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
   border-radius: 2px;
-  background: #fff;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+}
+
+.c2 {
+  background-color: #fff;
+  color: #001833;
+  border-radius: 2px;
 }
 
 <div
@@ -290,7 +302,8 @@ exports[`Popover UI Positioning Bottom End 1`] = `
     width="400"
   >
     <div
-      class=""
+      class="c2"
+      color="background.lightest"
       id="popover-description-1"
     >
       <div
@@ -307,7 +320,8 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   </section>
   <span
     aria-hidden="true"
-    class="c2"
+    class="c3"
+    color="background.lightest"
     data-placement="bottom-end"
   >
     <div />
@@ -316,30 +330,30 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 `;
 
 exports[`Popover UI Positioning Bottom Start 1`] = `
-.c2 {
+.c3 {
   position: absolute;
 }
 
-.c2[data-placement*="right"] {
+.c3[data-placement*="right"] {
   left: 0;
 }
 
-.c2[data-placement*="left"] {
+.c3[data-placement*="left"] {
   right: 0;
 }
 
-.c2[data-placement*="top"] {
+.c3[data-placement*="top"] {
   bottom: 0;
 }
 
-.c2[data-placement*="bottom"] {
+.c3[data-placement*="bottom"] {
   top: 0;
 }
 
-.c2[data-placement*="bottom"]::before,
-.c2[data-placement*="right"]::before,
-.c2[data-placement*="top"]::after,
-.c2[data-placement*="left"]::after {
+.c3[data-placement*="bottom"]::before,
+.c3[data-placement*="right"]::before,
+.c3[data-placement*="top"]::after,
+.c3[data-placement*="left"]::after {
   content: '';
   position: absolute;
   width: 0;
@@ -355,26 +369,26 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   border-width: 6px;
 }
 
-.c2[data-placement*="right"]::before {
+.c3[data-placement*="right"]::before {
   left: 8px;
   border-color: #fff transparent transparent #fff;
   box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="left"]::after {
+.c3[data-placement*="left"]::after {
   right: 13px;
   border-color: transparent #fff #fff transparent;
   box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="top"]::after {
+.c3[data-placement*="top"]::after {
   top: -16px;
   margin-left: -5px;
   border-color: transparent transparent #fff #fff;
   box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
 }
 
-.c2[data-placement*="bottom"]::before {
+.c3[data-placement*="bottom"]::before {
   top: 16px;
   margin-left: -5px;
   border-color: #fff #fff transparent transparent;
@@ -394,10 +408,15 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   box-shadow: 0 0 0 1px #c0cad5, 0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08), 0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
   border-radius: 2px;
-  background: #fff;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+}
+
+.c2 {
+  background-color: #fff;
+  color: #001833;
+  border-radius: 2px;
 }
 
 <div
@@ -414,7 +433,8 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
     width="400"
   >
     <div
-      class=""
+      class="c2"
+      color="background.lightest"
       id="popover-description-1"
     >
       <div
@@ -431,7 +451,8 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   </section>
   <span
     aria-hidden="true"
-    class="c2"
+    class="c3"
+    color="background.lightest"
     data-placement="bottom-start"
   >
     <div />

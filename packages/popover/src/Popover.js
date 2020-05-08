@@ -96,6 +96,7 @@ Popover.propTypes = {
   ariaLabel: PropTypes.string,
   className: PropTypes.string,
   p: PropTypes.number,
+  color: PropTypes.string,
   bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
@@ -108,7 +109,7 @@ Popover.propTypes = {
 }
 
 Popover.defaultProps = {
-  ariaLabel: 'Click to open popover with more information',
+  ariaLabel: 'Click to open popover with more information'
 }
 
 export default Popover

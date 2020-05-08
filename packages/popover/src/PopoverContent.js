@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 import { Popper } from 'react-popper'
-import { Box, theme, deprecatedPropType } from 'pcln-design-system'
+import { Box, deprecatedPropType, getPaletteColor } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 
 import DEFAULTS_MODIFIERS from './helpers/defaultModifiers'
@@ -47,15 +48,40 @@ class PopoverContent extends Component {
     }
   }
 
+  getBorderColorName(color, borderColor) {
+    let borderColorName = borderColor
+
+    if (!borderColor) {
+      if (color) {
+        borderColorName = color
+      } else {
+        borderColorName = 'border.base'
+      }
+    }
+
+    return borderColorName
+  }
+
   render() {
-    const { onCloseRequest, trapFocus, renderContent } = this.props
+    const {
+      className,
+      contentRef,
+      idx,
+      onCloseRequest,
+      overlayOpacity,
+      placement,
+      renderContent,
+      trapFocus
+    } = this.props
     const styleProps = {
-      theme: this.props.theme,
-      background: this.props.bg,
-      borderColor: this.props.borderColor,
+      borderColor: this.getBorderColorName(
+        this.props.color,
+        this.props.borderColor
+      ),
       zIndex: this.props.zIndex,
       width: this.props.width
     }
+    let color = this.props.color ? this.props.color : 'background.lightest'
 
     const content = trapFocus ? (
       <FocusLock>
@@ -76,7 +102,7 @@ class PopoverContent extends Component {
           modifiers={{
             ...DEFAULTS_MODIFIERS,
             offset: {
-              offset: this.calcOffset(this.props.placement)
+              offset: this.calcOffset(placement)
             }
           }}
           {...this.props}
@@ -84,28 +110,28 @@ class PopoverContent extends Component {
           {({ placement, ref, style, arrowProps }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
             <PopperGuide
-              className={this.props.className}
+              className={className}
               {...{ [getSCMigrationRef()]: ref }}
               style={style}
               data-placement={placement}
               {...styleProps}
               role="dialog"
-              aria-describedby={`dialog-description-${this.props.idx}`}
+              aria-describedby={`dialog-description-${idx}`}
             >
               <ContentContainer
-                {...{ [getSCMigrationRef()]: this.props.contentRef }}
-                ref={this.props.contentRef}
+                {...{ [getSCMigrationRef()]: contentRef }}
+                ref={contentRef}
                 {...styleProps}
                 tabIndex="-1"
               >
-                <Box id={`popover-description-${this.props.idx}`}>
+                <Content color={color} id={`popover-description-${idx}`}>
                   {content}
-                </Box>
+                </Content>
               </ContentContainer>
               <PopoverArrow
                 arrowProps={arrowProps}
                 placement={placement}
-                background={styleProps.background}
+                color={color}
                 borderColor={styleProps.borderColor}
               />
             </PopperGuide>
@@ -113,8 +139,8 @@ class PopoverContent extends Component {
         </Popper>
         <Overlay
           handleClick={onCloseRequest}
-          zIndex={this.props.zIndex - 1}
-          overlayOpacity={this.props.overlayOpacity}
+          zIndex={styleProps.zIndex - 1}
+          overlayOpacity={overlayOpacity}
         />
       </React.Fragment>,
       // Append each instance of the Popover as portal directly to the body
@@ -131,15 +157,19 @@ const PopperGuide = styled(Box)`
   box-sizing: border-box;
 `
 const ContentContainer = styled.section`
-  box-shadow: 0 0 0 1px ${({ theme, borderColor }) => theme.colors[borderColor]},
+  box-shadow: 0 0 0 1px
+      ${props => getPaletteColor(props.borderColor, 'base')(props)},
     0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08),
     0 16px 16px 0 rgba(0, 0, 0, 0.08);
-  font-size: ${({ theme }) => theme.fontSizes[0]}px;
-  border-radius: ${({ theme }) => theme.radii[1]}px;
-  background: ${({ theme, background }) => theme.colors[background]};
+  font-size: ${themeGet('fontSizes.0')}px;
+  border-radius: ${themeGet('radius')};
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+`
+
+const Content = styled(Box)`
+  border-radius: ${themeGet('radius')};
 `
 
 PopoverContent.propTypes = {
@@ -148,8 +178,8 @@ PopoverContent.propTypes = {
   onCloseRequest: PropTypes.func.isRequired,
   contentRef: PropTypes.object,
   className: PropTypes.string,
-  theme: PropTypes.object,
   p: PropTypes.number,
+  color: PropTypes.string,
   bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
   placement: PropTypes.string,
@@ -160,10 +190,7 @@ PopoverContent.propTypes = {
 }
 
 PopoverContent.defaultProps = {
-  theme: theme,
   p: 2,
-  bg: 'white',
-  borderColor: 'borderGray',
   placement: 'top',
   zIndex: 102,
   width: 400
