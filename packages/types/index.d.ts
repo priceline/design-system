@@ -1,18 +1,17 @@
-// Type definitions for pcln-design-system 3.x.x
+// TypeScript Version: 3.0
 // Project: https://github.com/priceline/design-system
 
 import * as SC from 'styled-components'
 
 /* eslint-disable @typescript-eslint/no-use-before-define */
-export = PCLNDesignSystem
 export as namespace PCLNDesignSystem
 /* eslint-enable @typescript-eslint/no-use-before-define */
 
-declare namespace PCLNDesignSystem {
+export namespace PCLNDesignSystem {
     //
     // pcln-design-system components
     // ------------------------------------------------------------
-    type Box = SC.AnyStyledComponent
+    // type Box = SC.AnyStyledComponent
 
     //
     // pcln-design-system utils
