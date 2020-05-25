@@ -19,7 +19,8 @@
   "types": "types",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/priceline/design-system.git"
+    "url": "github:priceline/design-system",
+    "directory": "packages/types"
   },
   "scripts": {
     "test": "dtslint types"
