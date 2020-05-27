@@ -20,20 +20,20 @@ const boxShadow = props => {
   }
 
   return `
-    @media only screen and (min-width: 1200px)  {
-      box-shadow: ${boxShadows[props.boxShadowSize[3] || 'xl']}
+    @media only screen and (min-width: 520px) {
+      box-shadow: ${boxShadows[props.boxShadowSize[0] || 'sm']}
     }
-    ​
-    @media only screen and (max-width: 992px) {
-      box-shadow: ${boxShadows[props.boxShadowSize[2] || 'lg']}
-    }
-    ​
-    @media only screen and (max-width: 768px) {
+​
+    @media only screen and (min-width: 768px) {
       box-shadow: ${boxShadows[props.boxShadowSize[1] || 'md']}
     }
-
-    @media only screen and (max-width: 520px) {
-      box-shadow: ${boxShadows[props.boxShadowSize[0] || 'sm']}
+​
+    @media only screen and (min-width: 992px) {
+      box-shadow: ${boxShadows[props.boxShadowSize[2] || 'lg']}
+    }
+​
+    @media only screen and (min-width: 1200px)  {
+      box-shadow: ${boxShadows[props.boxShadowSize[3] || 'xl']}
     }
   `
 }
