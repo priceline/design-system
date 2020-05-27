@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flag renders 1`] = `
+.c2 {
+  margin-bottom: -8px;
+  margin-right: -8px;
+  width: 4px;
+  color: #0a0;
+  width: 8px;
+  height: 8px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: inherit;
+  background-image: linear-gradient(45deg,transparent 50%,#060 50%);
+  position: absolute;
+  bottom: 0;
+}
+
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #0a0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: #0a0;
+  border-radius: 0 2px 2px 0;
+  -webkit-transform: skew(-14deg);
+  -ms-transform: skew(-14deg);
+  transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
+}
+
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #0a0;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 0 0 2px 0;
+  background-color: #0a0;
+  color: #fff;
+  z-index: 2;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c0 {
+  margin-left: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:32em) {
+  .c3 {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width:31.99em) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      color="green"
+      width="4px"
+    />
+  </div>
+  <div
+    className="c3"
+    color="white"
+  />
+  <div
+    className="c4"
+    color="green"
+    width="18px"
+  />
+</div>
+`;
+
+exports[`Flag renders with hex value as bg color 1`] = `
+.c2 {
+  margin-bottom: -8px;
+  margin-right: -8px;
+  width: 4px;
+  color: #085397;
+  width: 8px;
+  height: 8px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: inherit;
+  background-image: linear-gradient(45deg,transparent 50%,rgba(0,0,0,0.5) 50%), linear-gradient(45deg,transparent 50%,#085397 50%);
+  position: absolute;
+  bottom: 0;
+}
+
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #085397;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: #085397;
+  border-radius: 0 2px 2px 0;
+  -webkit-transform: skew(-14deg);
+  -ms-transform: skew(-14deg);
+  transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
+}
+
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #085397;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 0 0 2px 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: #085397;
+  color: #fff;
+  z-index: 2;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c0 {
+  margin-left: 0px;
+  width: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:32em) {
+  .c3 {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width:31.99em) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
+<div
+  className="c0"
+  width={256}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      color="#085397"
+      width="4px"
+    />
+  </div>
+  <div
+    className="c3"
+    color="white"
+  />
+  <div
+    className="c4"
+    color="#085397"
+    width="18px"
+  />
+</div>
+`;
+
+exports[`Flag renders with theme color as bg color 1`] = `
+.c2 {
+  margin-bottom: -8px;
+  margin-right: -8px;
+  width: 4px;
+  color: #70b;
+  width: 8px;
+  height: 8px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: inherit;
+  background-image: linear-gradient(45deg,transparent 50%,#70b 50%);
+  position: absolute;
+  bottom: 0;
+}
+
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #70b;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: #70b;
+  border-radius: 0 2px 2px 0;
+  -webkit-transform: skew(-14deg);
+  -ms-transform: skew(-14deg);
+  transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
+}
+
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #70b;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 0 0 2px 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: #70b;
+  color: #fff;
+  z-index: 2;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c0 {
+  margin-left: 0px;
+  width: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:32em) {
+  .c3 {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width:31.99em) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
+<div
+  className="c0"
+  width={256}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      color="purple"
+      width="4px"
+    />
+  </div>
+  <div
+    className="c3"
+    color="white"
+  />
+  <div
+    className="c4"
+    color="purple"
+    width="18px"
+  />
+</div>
+`;
+
+exports[`Flag renders with width prop 1`] = `
+.c2 {
+  margin-bottom: -8px;
+  margin-right: -8px;
+  width: 4px;
+  color: #0a0;
+  width: 8px;
+  height: 8px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: inherit;
+  background-image: linear-gradient(45deg,transparent 50%,#060 50%);
+  position: absolute;
+  bottom: 0;
+}
+
+.c4 {
+  margin-left: -8px;
+  width: 18px;
+  color: #0a0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: #0a0;
+  border-radius: 0 2px 2px 0;
+  -webkit-transform: skew(-14deg);
+  -ms-transform: skew(-14deg);
+  transform: skew(-14deg);
+  position: relative;
+  z-index: 1;
+}
+
+.c3 {
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #0a0;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 0 0 2px 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: #0a0;
+  color: #fff;
+  z-index: 2;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c0 {
+  margin-left: 0px;
+  width: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:32em) {
+  .c3 {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width:31.99em) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c0 {
+    margin-left: -8px;
+  }
+}
+
+<div
+  className="c0"
+  width={256}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      color="green"
+      width="4px"
+    />
+  </div>
+  <div
+    className="c3"
+    color="white"
+  />
+  <div
+    className="c4"
+    color="green"
+    width="18px"
+  />
+</div>
+`;

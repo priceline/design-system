@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import warning from 'warning'
 import Track from './common/Track'
 import createSlider from './common/createSlider'
-import * as utils from './utils'
+import * as utils from '../utils'
 
 class Slider extends React.Component {
   static propTypes = {
@@ -17,7 +17,7 @@ class Slider extends React.Component {
     max: PropTypes.number,
     ariaLabelForHandle: PropTypes.string,
     ariaLabelledByForHandle: PropTypes.string,
-    ariaValueTextFormatterForHandle: PropTypes.func
+    ariaValueTextFormatterForHandle: PropTypes.func,
   }
 
   constructor(props) {
@@ -29,7 +29,7 @@ class Slider extends React.Component {
 
     this.state = {
       value: this.trimAlignValue(value),
-      dragging: false
+      dragging: false,
     }
     if (utils.isDev()) {
       warning(
@@ -88,7 +88,7 @@ class Slider extends React.Component {
     this.onChange({ value })
   }
 
-  onEnd = force => {
+  onEnd = (force) => {
     const { dragging } = this.state
     this.removeDocumentEvents()
     if (dragging || force) {
@@ -160,7 +160,7 @@ class Slider extends React.Component {
       ariaLabelForHandle,
       ariaLabelledByForHandle,
       ariaValueTextFormatterForHandle,
-      handle: handleGenerator
+      handle: handleGenerator,
     } = this.props
     const { value, dragging } = this.state
     const offset = this.calcOffset(value)
@@ -180,7 +180,7 @@ class Slider extends React.Component {
       index: 0,
       tabIndex,
       style: handleStyle[0] || handleStyle,
-      ref: h => this.saveHandle(0, h)
+      ref: (h) => this.saveHandle(0, h),
     })
 
     const _trackStyle = trackStyle[0] || trackStyle
@@ -193,7 +193,7 @@ class Slider extends React.Component {
         length={offset}
         style={{
           ...minimumTrackStyle,
-          ..._trackStyle
+          ..._trackStyle,
         }}
       />
     )
