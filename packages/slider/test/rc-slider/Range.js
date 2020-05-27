@@ -210,10 +210,12 @@ describe('Range', () => {
         value: [2, 4, 6]
       }
       getSlider() {
-        return this.refs.slider
+        return this.sliderRef
       }
       render() {
-        return <Range ref="slider" value={this.state.value} />
+        return (
+          <Range ref={ref => (this.sliderRef = ref)} value={this.state.value} />
+        )
       }
     }
     const wrapper = mount(<TestParent />)
@@ -288,12 +290,12 @@ describe('Range', () => {
         }
       }
       getSlider() {
-        return this.refs.slider
+        return this.sliderRef
       }
       render() {
         return (
           <Range
-            ref="slider"
+            ref={ref => (this.sliderRef = ref)}
             allowCross={false}
             value={this.state.value}
             pushable={10}
@@ -331,12 +333,12 @@ describe('Range', () => {
         })
       }
       getSlider() {
-        return this.refs.slider
+        return this.sliderRef
       }
       render() {
         return (
           <Range
-            ref="slider"
+            ref={ref => (this.sliderRef = ref)}
             allowCross={false}
             value={this.state.value}
             pushable
