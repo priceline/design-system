@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import Box from './Box'
 import PropTypes from 'prop-types'
 import { borderRadius } from 'styled-system'
-import { shadow } from 'styled-system'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from './utils'
 
 const boxShadow = props => {
