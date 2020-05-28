@@ -13,6 +13,7 @@ import {
   FlexWrapProps,
   FontSizeProps,
   FontWeightProps,
+  HeightProps,
   JustifyContentProps,
   LeftProps,
   LineHeightProps,
@@ -47,6 +48,13 @@ type RefPropType = (() => any) | ReactRefObject
  * the component uses
  */
 type AbsoluteProps = TopRightBottomLeft
+
+export interface BackgroundImageProps extends WidthProps {
+  height?: string
+  /** URL of background image */
+  image?: string
+  variation?: 'parallax' | 'static'
+}
 
 export interface BoxProps
   extends ColorProps,
@@ -83,9 +91,30 @@ export interface CardProps
   borderWidth?: 0 | 1 | 2
 }
 
+export interface ImageProps extends WidthProps {
+  height?: string
+  alt?: string
+  src: string
+}
+
 export interface LinkProps extends TextColorProps {
   variation?: 'fill' | 'link' | 'outline'
   dsRef?: RefPropType
+}
+
+export interface PlaceholderImageProps {
+  /** Alternate text */
+  alt?: string
+  /** Sets aria-hidden attribute */
+  ariaHidden?: boolean
+  /** Image should be blurred */
+  blur?: boolean
+  /** Choose a specific placeholder image from the array of default images */
+  chooseSrc?: string
+  /** Sets img height attribute */
+  height?: string
+  /** Sets img width attribute */
+  width?: string
 }
 
 export interface RelativeProps
@@ -124,7 +153,7 @@ export interface ThemeProviderProps {
 
 export class Absolute extends React.Component<AbsoluteProps, any> {}
 export class Avatar extends React.Component<any, any> {}
-export class BackgroundImage extends React.Component<any, any> {}
+export class BackgroundImage extends React.Component<BackgroundImageProps, any> {}
 export class Badge extends React.Component<any, any> {}
 export class Banner extends React.Component<any, any> {}
 export class BlockLink extends React.Component<LinkProps, any> {}
@@ -154,7 +183,7 @@ export class Hug extends React.Component<any, any> {}
 export class Icon extends React.Component<any, any> {}
 export class IconButton extends React.Component<any, any> {}
 export class IconField extends React.Component<any, any> {}
-export class Image extends React.Component<any, any> {}
+export class Image extends React.Component<ImageProps, any> {}
 export class Input extends React.Component<any, any> {
   static isField: boolean
 }
@@ -163,7 +192,7 @@ export class Label extends React.Component<any, any> {
   static isLabel: boolean
 }
 export class Link extends React.Component<LinkProps, any> {}
-export class PlaceholderImage extends React.Component<any, any> {}
+export class PlaceholderImage extends React.Component<PlaceholderImageProps, any> {}
 export class Radio extends React.Component<any, any> {}
 export class RatingBadge extends React.Component<any, any> {}
 export class Relative extends React.Component<RelativeProps, any> {}
