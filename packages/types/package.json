@@ -30,10 +30,9 @@
   },
   "dependencies": {
     "@types/react": "^16.9.34",
-    "@types/styled-system": "ts3.8"
+    "@types/styled-system": "3.2.2"
   },
   "devDependencies": {
-    "dtslint": "^3.5.2",
-    "pcln-design-system": "^3.4.1"
+    "dtslint": "^3.5.2"
   }
 }

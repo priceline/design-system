@@ -5,44 +5,85 @@
 
 import * as React from 'react'
 import {
-  LayoutProps,
-  ColorProps,
-  BackgroundColorProps,
-  SpaceProps,
-  BoxShadowProps,
+  BorderColorProps,
   BorderRadiusProps,
-  Theme,
-  BorderWidthProps,
-  MarginProps,
+  BottomProps,
+  ColorProps,
+  FlexDirectionProps,
+  FlexWrapProps,
   FontSizeProps,
-  TextAlignProps
+  FontWeightProps,
+  JustifyContentProps,
+  LeftProps,
+  LineHeightProps,
+  RightProps,
+  SpaceProps,
+  TextAlignProps,
+  TextColorProps,
+  TextStyleProps,
+  Theme,
+  TopProps,
+  WidthProps,
+  ZIndexProps,
 } from 'styled-system'
+
+export interface TopRightBottomLeft
+  extends TopProps,
+    RightProps,
+    BottomProps,
+    LeftProps {}
 
 /**
  * Combining Styled System interfaces depending on which Styled System functions
  * the component uses
  */
-export interface BoxProps
-  extends LayoutProps,
-    ColorProps,
-    BackgroundColorProps,
-    SpaceProps {}
+type AbsoluteProps = TopRightBottomLeft
 
-/**
- * Extend primitive Design System components to create interfaces for more complex
- * components
- */
+export interface BoxProps
+  extends ColorProps,
+    WidthProps,
+    SpaceProps,
+    TextAlignProps {}
+
+export interface FlexProps
+  extends BoxProps,
+    SpaceProps,
+    WidthProps,
+    TextColorProps,
+    TextAlignProps,
+    JustifyContentProps,
+    FlexWrapProps,
+    FlexDirectionProps {}
+
+export interface HideProps extends BoxProps {
+  xs?: boolean
+  sm?: boolean
+  md?: boolean
+  lg?: boolean
+  xl?: boolean
+  xxl?: boolean
+  print?: boolean
+}
+
 export interface CardProps
   extends BoxProps,
-    BoxShadowProps,
     BorderRadiusProps,
-    BorderWidthProps {}
+    BorderColorProps,
+    TextColorProps {
+  boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl'
+  borderWidth?: 0 | 1 | 2
+}
+
+export interface RelativeProps extends TopRightBottomLeft, BoxProps, ZIndexProps {}
 
 export interface TextProps
-  extends MarginProps,
-    ColorProps,
+  extends TextStyleProps,
     FontSizeProps,
-    TextAlignProps {
+    FontWeightProps,
+    TextAlignProps,
+    LineHeightProps,
+    SpaceProps,
+    TextColorProps {
   /** Sets font-weight: props.theme.regular */
   regular?: boolean
   /** Sets font-weight: props.theme.bold */
@@ -51,13 +92,20 @@ export interface TextProps
   caps?: boolean
   /** Sets styles for italic type treatments */
   italic?: boolean
+  enableTextShadow?: boolean
+  textShadowSize?: 'sm' | 'md'
+}
+
+export interface ThemeProviderProps {
+  theme?: Theme
+  customBreakpoints?: string[]
 }
 
 //
 // pcln-design-system components
 // ------------------------------------------------------------
 
-export class Absolute extends React.Component<any, any> {}
+export class Absolute extends React.Component<AbsoluteProps, any> {}
 export class Avatar extends React.Component<any, any> {}
 export class BackgroundImage extends React.Component<any, any> {}
 export class Badge extends React.Component<any, any> {}
@@ -74,7 +122,7 @@ export class CloseButton extends React.Component<any, any> {}
 export class Container extends React.Component<any, any> {}
 export class Divider extends React.Component<any, any> {}
 export class Flag extends React.Component<any, any> {}
-export class Flex extends React.Component<any, any> {}
+export class Flex extends React.Component<FlexProps, any> {}
 export class FormField extends React.Component<any, any> {}
 export class Heading extends React.Component<any, any> {
   static h1
@@ -84,7 +132,7 @@ export class Heading extends React.Component<any, any> {
   static h5
   static h6
 }
-export class Hide extends React.Component<any, any> {}
+export class Hide extends React.Component<HideProps, any> {}
 export class Hug extends React.Component<any, any> {}
 export class Icon extends React.Component<any, any> {}
 export class IconButton extends React.Component<any, any> {}
@@ -101,7 +149,7 @@ export class Link extends React.Component<any, any> {}
 export class PlaceholderImage extends React.Component<any, any> {}
 export class Radio extends React.Component<any, any> {}
 export class RatingBadge extends React.Component<any, any> {}
-export class Relative extends React.Component<any, any> {}
+export class Relative extends React.Component<RelativeProps, any> {}
 export class Select extends React.Component<any, any> {
   static isField: boolean
 }
@@ -121,7 +169,7 @@ export class Text extends React.Component<TextProps, any> {
 export class TextArea extends React.Component<any, any> {
   static isField: boolean
 }
-export class ThemeProvider extends React.Component<any, any> {}
+export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
 export class ToggleBadge extends React.Component<any, any> {}
 export class Tooltip extends React.Component<any, any> {}
 export class Truncate extends React.Component<any, any> {}
