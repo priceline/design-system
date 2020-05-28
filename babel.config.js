@@ -3,24 +3,24 @@ module.exports = {
     [
       '@babel/env',
       {
-        modules: false
-      }
+        modules: false,
+      },
     ],
-    '@babel/react'
+    '@babel/react',
   ],
   plugins: [
     '@babel/proposal-class-properties',
     '@babel/proposal-object-rest-spread',
-    '@babel/plugin-proposal-optional-chaining'
+    '@babel/plugin-proposal-optional-chaining',
   ],
   env: {
     test: {
       presets: [['@babel/env', { targets: { node: 'current' } }]],
-      plugins: ['@babel/transform-runtime']
+      plugins: ['@babel/transform-runtime'],
     },
     cjs: {
       presets: [['@babel/env', { modules: 'cjs' }]],
-      plugins: ['@babel/transform-runtime']
-    }
-  }
+      plugins: ['@babel/transform-runtime'],
+    },
+  },
 }

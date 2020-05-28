@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeProvider ThemeProvider: Base should render correctly with a "font-family" rule 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ThemeProvider ThemeProvider: ThemeProvider should handle the "customBreakpoints" prop 1`] = `
+<DocumentFragment>
+  .c1 {
+  width: 100%;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:20em) {
+  .c1 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:32em) {
+  .c1 {
+    width: 25%;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="ResponsiveBox"
+      width="1,0.5,0.25"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ThemeProvider ThemeProvider: ThemeProvider should render correctly without throwing 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ThemeProvider ThemeProvider: ThemeProvider should render correctly without throwing with the "legacy" prop 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  />
+</DocumentFragment>
+`;

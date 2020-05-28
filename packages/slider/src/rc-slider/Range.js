@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Track from './common/Track'
 import createSlider from './common/createSlider'
-import * as utils from './utils'
+import * as utils from '../utils'
 const classNames = require('classnames')
 const shallowEqual = require('shallowequal')
 
@@ -22,7 +22,7 @@ class Range extends React.Component {
     max: PropTypes.number,
     ariaLabelGroupForHandles: PropTypes.arrayOf(PropTypes.string),
     ariaLabelledByGroupForHandles: PropTypes.arrayOf(PropTypes.string),
-    ariaValueTextFormattersForHandles: PropTypes.arrayOf(PropTypes.func)
+    ariaValueTextFormattersForHandles: PropTypes.arrayOf(PropTypes.func),
   }
 
   static defaultProps = {
@@ -32,7 +32,7 @@ class Range extends React.Component {
     tabIndex: [],
     ariaLabelGroupForHandles: [],
     ariaLabelledByGroupForHandles: [],
-    ariaValueTextFormattersForHandles: []
+    ariaValueTextFormattersForHandles: [],
   }
 
   constructor(props) {
@@ -49,7 +49,7 @@ class Range extends React.Component {
     this.state = {
       handle: null,
       recent,
-      bounds
+      bounds,
     }
   }
 
@@ -75,8 +75,8 @@ class Range extends React.Component {
 
     this.setState({ bounds: nextBounds })
 
-    if (value.some(v => utils.isValueOutOfRange(v, nextProps))) {
-      const newValues = value.map(v => {
+    if (value.some((v) => utils.isValueOutOfRange(v, nextProps))) {
+      const newValues = value.map((v) => {
         return utils.ensureValueInRange(v, nextProps)
       })
       this.props.onChange(newValues)
@@ -91,7 +91,7 @@ class Range extends React.Component {
     } else {
       const controlledState = {}
 
-      ;['handle', 'recent'].forEach(item => {
+      ;['handle', 'recent'].forEach((item) => {
         if (state[item] !== undefined) {
           controlledState[item] = state[item]
         }
@@ -122,7 +122,7 @@ class Range extends React.Component {
 
     this.setState({
       handle: this.prevMovedHandleIndex,
-      recent: this.prevMovedHandleIndex
+      recent: this.prevMovedHandleIndex,
     })
 
     const prevValue = bounds[this.prevMovedHandleIndex]
@@ -133,7 +133,7 @@ class Range extends React.Component {
     this.onChange({ bounds: nextBounds })
   }
 
-  onEnd = force => {
+  onEnd = (force) => {
     const { handle } = this.state
     this.removeDocumentEvents()
 
@@ -142,7 +142,7 @@ class Range extends React.Component {
     }
 
     this.setState({
-      handle: null
+      handle: null,
     })
   }
 
@@ -255,7 +255,7 @@ class Range extends React.Component {
     this.onChange({
       recent: nextHandle,
       handle: nextHandle,
-      bounds: nextBounds
+      bounds: nextBounds,
     })
     if (isFromKeyboardEvent) {
       // known problem: because setState is async,
@@ -380,10 +380,10 @@ class Range extends React.Component {
       handle: handleGenerator,
       trackStyle,
       handleStyle,
-      tabIndex
+      tabIndex,
     } = this.props
 
-    const offsets = bounds.map(v => this.calcOffset(v))
+    const offsets = bounds.map((v) => this.calcOffset(v))
 
     const handleClassName = `${prefixCls}-handle`
     const handles = bounds.map((v, i) => {
@@ -394,7 +394,7 @@ class Range extends React.Component {
       return handleGenerator({
         className: classNames({
           [handleClassName]: true,
-          [`${handleClassName}-${i + 1}`]: true
+          [`${handleClassName}-${i + 1}`]: true,
         }),
         prefixCls,
         vertical,
@@ -410,7 +410,7 @@ class Range extends React.Component {
         ariaValueTextFormatter: ariaValueTextFormattersForHandles[i],
         disabled,
         style: handleStyle[i],
-        ref: h => this.saveHandle(i, h)
+        ref: (h) => this.saveHandle(i, h),
       })
     })
 
@@ -418,7 +418,7 @@ class Range extends React.Component {
       const i = index + 1
       const trackClassName = classNames({
         [`${prefixCls}-track`]: true,
-        [`${prefixCls}-track-${i}`]: true
+        [`${prefixCls}-track-${i}`]: true,
       })
       return (
         <Track
