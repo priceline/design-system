@@ -1,35 +1,28 @@
-module.exports = function(plop) {
+module.exports = function (plop) {
   plop.setGenerator('core', {
     description: 'Create new core component',
     prompts: [
       {
         type: 'input',
         name: 'componentName',
-        message: 'Please enter component name (ProperCase)'
+        message: 'Please enter component name (ProperCase)',
       },
       {
         type: 'input',
         name: 'htmlTag',
-        message: 'Please enter HTML tag name (e.g. div)'
-      }
+        message: 'Optional: please enter HTML tag name (e.g. div)',
+        default: 'div',
+      },
     ],
     actions: [
       {
-        type: 'add',
-        path: 'packages/core/src/{{componentName}}.js',
-        templateFile: 'plop-templates/core/Component.js.hbs'
+        type: 'addMany',
+        templateFiles: 'plop-templates/core/**',
+        destination: 'packages/core/src/{{properCase componentName}}',
+        base: 'plop-templates/core',
       },
-      {
-        type: 'add',
-        path: 'packages/core/test/{{componentName}}.js',
-        templateFile: 'plop-templates/core/Test.js.hbs'
-      },
-      {
-        type: 'add',
-        path: 'packages/core/storybook/{{componentName}}.js',
-        templateFile: 'plop-templates/core/Story.js.hbs'
-      }
-    ]
+      `Your component is ready! Don't forget to re-export it from packages/core/src/index.js.`,
+    ],
   })
 
   plop.setGenerator('package', {
@@ -38,8 +31,8 @@ module.exports = function(plop) {
       {
         type: 'input',
         name: 'componentName',
-        message: 'Please enter component name (ProperCase)'
-      }
+        message: 'Please enter component name (ProperCase)',
+      },
     ],
     actions: [
       {
@@ -48,8 +41,8 @@ module.exports = function(plop) {
         destination: 'packages/{{kebabCase componentName}}',
         path: '{{componentName}}.js',
         templateFiles: 'plop-templates/package/**',
-        stripExtensions: ['hbs']
-      }
-    ]
+        stripExtensions: ['hbs'],
+      },
+    ],
   })
 }
