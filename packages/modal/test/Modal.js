@@ -12,20 +12,20 @@ const customRender = (node, ...options) => {
   return {
     ...rendered,
     rerender: (ui, options) =>
-      customRender(ui, { container: rendered.container, ...options })
+      customRender(ui, { container: rendered.container, ...options }),
   }
 }
 
 describe('Modal', () => {
   const { rerender } = customRender(
-    <Modal width={['100px', '200px', '500px']}>
+    <Modal ariaLabel='Test Modal.' width={['100px', '200px', '500px']}>
       <div />
     </Modal>
   )
   test('renders when close', () => {
     const { queryByText } = rerender(
       <ThemeProvider>
-        <Modal width={['100px', '200px', '500px']}>
+        <Modal ariaLabel='Test Modal.' width={['100px', '200px', '500px']}>
           <div data-content>Content</div>
         </Modal>
       </ThemeProvider>
@@ -35,7 +35,11 @@ describe('Modal', () => {
   test('renders when open', () => {
     const { getByText, container } = rerender(
       <ThemeProvider>
-        <Modal width={['100px', '200px', '500px']} isOpen>
+        <Modal
+          width={['100px', '200px', '500px']}
+          isOpen
+          ariaLabel='Test Modal.'
+        >
           <div data-content>Content</div>
         </Modal>
       </ThemeProvider>
@@ -47,6 +51,7 @@ describe('Modal', () => {
     const { getByText, getByTestId, container } = rerender(
       <ThemeProvider>
         <Modal
+          ariaLabel='Test Modal.'
           width={['100px', '200px', '500px']}
           isOpen
           enableOverflow
@@ -64,6 +69,7 @@ describe('Modal', () => {
     const { getByText } = rerender(
       <ThemeProvider>
         <Modal
+          ariaLabel='Test Modal.'
           width={['100px', '200px', '500px']}
           isOpen
           header={<div>header</div>}
@@ -77,7 +83,12 @@ describe('Modal', () => {
   test('renders with top alignment', () => {
     const { getByText, getByTestId, container } = rerender(
       <ThemeProvider>
-        <Modal isOpen enableOverflow verticalAlignment="top">
+        <Modal
+          ariaLabel='Test Modal.'
+          isOpen
+          enableOverflow
+          verticalAlignment='top'
+        >
           <div data-content>Content</div>
         </Modal>
       </ThemeProvider>
@@ -91,9 +102,10 @@ describe('Modal', () => {
     const { getByText, getByTestId, container } = rerender(
       <ThemeProvider>
         <Modal
+          ariaLabel='Test Modal.'
           isOpen
           enableOverflow
-          overlayAnimation={transitionstate =>
+          overlayAnimation={(transitionstate) =>
             `${transitionstate === 'entering' ? `transform: scale(0.5);` : ''}`
           }
         >
@@ -109,7 +121,7 @@ describe('Modal', () => {
   test('uses fullScreen styles', () => {
     const { getByText, getByTestId } = rerender(
       <ThemeProvider>
-        <Modal isOpen fullScreen>
+        <Modal ariaLabel='Test Modal.' isOpen fullScreen>
           <div data-content>Content</div>
         </Modal>
       </ThemeProvider>
