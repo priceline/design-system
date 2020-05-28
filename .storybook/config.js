@@ -7,7 +7,7 @@ import viewports from './viewports'
 
 import { ThemeProvider, Box } from '../packages/core/src'
 
-const themeProviderDecorator = story => (
+const themeProviderDecorator = (story) => (
   <ThemeProvider>
     <Box px={5}>{story()}</Box>
   </ThemeProvider>
@@ -15,8 +15,8 @@ const themeProviderDecorator = story => (
 
 addParameters({
   viewport: {
-    ...viewports
-  }
+    ...viewports,
+  },
 })
 
 addParameters({
@@ -34,18 +34,15 @@ addParameters({
           'wcag21aa',
           'section508',
           'best-practice',
-          'experimental'
-        ]
-      }
-    }
-  }
+          'experimental',
+        ],
+      },
+    },
+  },
 })
 
 addDecorator(withA11y)
 
 addDecorator(themeProviderDecorator)
 
-configure(
-  require.context('../packages', true, /storybook\/[\w\d\s]+\.js$/),
-  module
-)
+configure(require.context('../packages', true, /stories.js$/), module)
