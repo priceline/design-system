@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import { Box, deprecatedPropType } from 'pcln-design-system'
 
 const HeaderBar = styled(Box)`
@@ -12,11 +11,11 @@ const SmallModalHeader = ({ bg }) => <HeaderBar bg={bg} />
 SmallModalHeader.displayName = SmallModalHeader
 
 SmallModalHeader.propTypes = {
-  bg: deprecatedPropType('color')
+  bg: deprecatedPropType('color'),
 }
 
 SmallModalHeader.defaultProps = {
-  bg: 'green'
+  bg: 'green',
 }
 
 export default SmallModalHeader
