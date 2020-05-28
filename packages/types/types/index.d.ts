@@ -141,13 +141,13 @@ export class Divider extends React.Component<any, any> {}
 export class Flag extends React.Component<any, any> {}
 export class Flex extends React.Component<FlexProps, any> {}
 export class FormField extends React.Component<any, any> {}
-export class Heading extends React.Component<any, any> {
-  static h1
-  static h2
-  static h3
-  static h4
-  static h5
-  static h6
+export class Heading extends React.Component<TextProps, any> {
+  static h1: typeof Heading
+  static h2: typeof Heading
+  static h3: typeof Heading
+  static h4: typeof Heading
+  static h5: typeof Heading
+  static h6: typeof Heading
 }
 export class Hide extends React.Component<HideProps, any> {}
 export class Hug extends React.Component<any, any> {}
@@ -189,7 +189,7 @@ export class TextArea extends React.Component<any, any> {
 export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
 export class ToggleBadge extends React.Component<any, any> {}
 export class Tooltip extends React.Component<any, any> {}
-export class Truncate extends React.Component<any, any> {}
+export class Truncate extends React.Component<TextProps, any> {}
 
 //
 // pcln-design-system utils

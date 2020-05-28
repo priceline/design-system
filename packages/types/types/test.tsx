@@ -12,6 +12,9 @@ import {
   ThemeProvider,
   Link,
   BlockLink,
+  Heading,
+  Truncate,
+  SrOnly,
 } from 'pcln-types'
 import theme from '../../core/src/theme'
 import * as React from 'react'
@@ -53,5 +56,20 @@ const myLink = (
 )
 // $ExpectType Element
 const myBlockLink = (
-  <BlockLink color={'secondary'} variation={'outline'} dsRef={() => 'ima ref'} />
+  <BlockLink
+    color={'secondary'}
+    variation={'outline'}
+    dsRef={() => 'ima ref'}
+  />
 )
+
+const myHeading = <Heading color={'secondary'} /> // $ExpectType Element
+const myH1 = <Heading.h1 caps /> // $ExpectType Element
+const myH2 = <Heading.h2 fontSize={'300px'} /> // $ExpectType Element
+const myH3 = <Heading.h3 m={4} /> // $ExpectType Element
+const myH4 = <Heading.h4 p={[2, 2, 4]} /> // $ExpectType Element
+const myH5 = <Heading.h5 lineHeight={'12px'} /> // $ExpectType Element
+const myH6 = <Heading.h6 /> // $ExpectType Element
+
+const myTruncate = <Truncate color={'primary'} /> // $ExpectType Element
+const mySrOnly = <SrOnly class='test-class-stuff' /> // $ExpectType Element
