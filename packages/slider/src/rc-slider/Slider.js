@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import warning from 'warning'
 import Track from './common/Track'
 import createSlider from './common/createSlider'
-import * as utils from '../utils'
+import * as utils from './utils'
 
 class Slider extends React.Component {
   static propTypes = {
