@@ -4,6 +4,7 @@
   "description": "Priceline Design System",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "prepare": "run-s clean build",
