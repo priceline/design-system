@@ -4,7 +4,9 @@ import {
   BlockLink,
   borders,
   Box,
+  Button,
   Card,
+  CloseButton,
   color,
   createTheme,
   deprecatedPropType,
@@ -15,7 +17,11 @@ import {
   hasPaletteColor,
   Heading,
   Hide,
+  Icon,
+  IconButton,
+  IconField,
   Image,
+  Input,
   Link,
   PlaceholderImage,
   SrOnly,
@@ -61,8 +67,8 @@ const myThemeProvider = (
   <ThemeProvider theme={theme} customBreakpoints={['100px', '500px']} />
 )
 
-const myBox = <Box width={'1'} bg={'primary'} /> // $ExpectType Element
-const myCard = <Card width={'1'} bg={'primary'} borderRadius={'md'} /> // $ExpectType Element
+const myBox = <Box width='1' bg='primary' /> // $ExpectType Element
+const myCard = <Card width='1' bg='primary' borderRadius='md' /> // $ExpectType Element
 const myText = <Text regular /> // $ExpectType Element
 const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
@@ -70,26 +76,73 @@ const myFlex = <Flex flexDirection={['row', null, 'column']} m={3} /> // $Expect
 const myHide = <Hide xs sm md lg xl xxl m={3} /> // $ExpectType Element
 // $ExpectType Element
 const myLink = (
-  <Link color={'secondary'} variation={'outline'} dsRef={{ current: 'bla' }} />
+  <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
 )
 // $ExpectType Element
 const myBlockLink = (
   <BlockLink
-    color={'secondary'}
-    variation={'outline'}
+    color='secondary'
+    variation='outline'
     dsRef={() => 'ima ref'}
   />
 )
+// $ExpectType Element
+const myButton = (
+  <Button
+    variation='fill'
+    size='medium'
+    color='primary'
+    disabled={false}
+    width={1}
+  >
+    BUTTON
+  </Button>
+)
+// $ExpectType Element
+const myCloseButton = (
+  <CloseButton
+    color='background.darkest'
+    onClick={() => 'ima function'}
+    title='Title'
+  />
+)
+// $ExpectType Element
+const myIcon = (
+  <Icon
+    name='Email'
+    size={48}
+    color='primary'
+    title='Email'
+    titleId='Title ID'
+    desc='Description'
+    descId='Description ID'
+  />
+)
+// $ExpectType Element
+const myIconButton = (
+  <IconButton
+    dsRef={() => 'ima ref'}
+    icon={<Icon name='Calendar' title='Choose date' />}
+    onClick={() => 'ima function'}
+  />
+)
+// $ExpectType Element
+const myIconField = (
+  <IconField flexWrap='wrap' flexDirection={['row', null, 'column']} m={3}>
+    <Icon color='blue' />
+    <Input placeholder='Choose Date' />
+  </IconField>
+)
 
-const myHeading = <Heading color={'secondary'} /> // $ExpectType Element
+const myHeading = <Heading color='secondary' /> // $ExpectType Element
 const myH1 = <Heading.h1 caps /> // $ExpectType Element
-const myH2 = <Heading.h2 fontSize={'300px'} /> // $ExpectType Element
+const myH2 = <Heading.h2 fontSize='300px' /> // $ExpectType Element
 const myH3 = <Heading.h3 m={4} /> // $ExpectType Element
 const myH4 = <Heading.h4 p={[2, 2, 4]} /> // $ExpectType Element
-const myH5 = <Heading.h5 lineHeight={'12px'} /> // $ExpectType Element
+const myH5 = <Heading.h5 lineHeight='12px' /> // $ExpectType Element
 const myH6 = <Heading.h6 /> // $ExpectType Element
 
-const myTruncate = <Truncate color={'primary'} /> // $ExpectType Element
+const myTruncate = <Truncate color='primary' /> // $ExpectType Element
 const mySrOnly = <SrOnly class='test-class-stuff' /> // $ExpectType Element
 // $ExpectType Element
 const myImage = (
