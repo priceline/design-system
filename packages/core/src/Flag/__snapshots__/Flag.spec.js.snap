@@ -34,9 +34,9 @@ exports[`Flag renders 1`] = `
 }
 
 .c3 {
-  padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 4px;
   background-color: #0a0;
   color: #fff;
   font-size: 12px;
@@ -51,7 +51,7 @@ exports[`Flag renders 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,9 +60,9 @@ exports[`Flag renders 1`] = `
 
 @media screen and (min-width:32em) {
   .c3 {
-    padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 16px;
   }
 }
 
@@ -136,9 +136,9 @@ exports[`Flag renders with hex value as bg color 1`] = `
 }
 
 .c3 {
-  padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 4px;
   background-color: #085397;
   color: #fff;
   font-size: 12px;
@@ -156,7 +156,7 @@ exports[`Flag renders with hex value as bg color 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: 0;
   width: 256px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,9 +166,9 @@ exports[`Flag renders with hex value as bg color 1`] = `
 
 @media screen and (min-width:32em) {
   .c3 {
-    padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 16px;
   }
 }
 
@@ -243,9 +243,9 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 .c3 {
-  padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 4px;
   background-color: #70b;
   color: #fff;
   font-size: 12px;
@@ -263,7 +263,7 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: 0;
   width: 256px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -273,9 +273,9 @@ exports[`Flag renders with theme color as bg color 1`] = `
 
 @media screen and (min-width:32em) {
   .c3 {
-    padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 16px;
   }
 }
 
@@ -350,9 +350,9 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 .c3 {
-  padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 4px;
   background-color: #0a0;
   color: #fff;
   font-size: 12px;
@@ -370,7 +370,7 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 .c0 {
-  margin-left: 0px;
+  margin-left: 0;
   width: 256px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -380,9 +380,9 @@ exports[`Flag renders with width prop 1`] = `
 
 @media screen and (min-width:32em) {
   .c3 {
-    padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 16px;
   }
 }
 

@@ -23,7 +23,7 @@
   "dependencies": {
     "downshift": "^3.2.6",
     "prop-types": "^15.7.2",
-    "styled-system": "^3.2.1"
+    "styled-system": "^4.2.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",

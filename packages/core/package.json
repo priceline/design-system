@@ -77,8 +77,8 @@
     "hoist-non-react-statics": "^3.3.2",
     "pcln-icons": "^3.0.0",
     "prop-types": "^15.7.2",
-    "styled-system": "^3.2.1",
-    "@types/styled-system": "^3.2.2"
+    "styled-system": "^4.2.4",
+    "@types/styled-system": "^4.2.2"
   },
   "peerDependencies": {
     "react": ">=16.3.0",

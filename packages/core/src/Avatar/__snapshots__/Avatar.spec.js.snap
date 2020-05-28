@@ -145,7 +145,7 @@ exports[`Avatar renders mr elon 1`] = `
 }
 
 .c4 {
-  margin: 0px;
+  margin: 0;
 }
 
 .c5 {
