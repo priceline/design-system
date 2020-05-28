@@ -15,14 +15,14 @@ const kayakTheme = {
     primary: {
       light: '#ff873f',
       base: '#ff690f',
-      dark: '#b64907'
+      dark: '#b64907',
     },
     secondary: {
       light: '#ff873f',
       base: '#ff690f',
-      dark: '#b64907'
-    }
-  }
+      dark: '#b64907',
+    },
+  },
 }
 
 storiesOf('Autocomplete', module)
@@ -32,7 +32,7 @@ storiesOf('Autocomplete', module)
       children={({ state, setState }) => (
         <Box>
           <Autocomplete
-            onChange={item => {
+            onChange={(item) => {
               setState({ value: item })
             }}
             match={match}
@@ -40,9 +40,9 @@ storiesOf('Autocomplete', module)
             <Label mb={1}>Cat</Label>
             <Input />
             <Menu>
-              {cats.map(cat => (
+              {cats.map((cat) => (
                 <Item key={cat} item={cat}>
-                  <Icon name="Pin" color="primary" mr={2} />
+                  <Icon name='Pin' color='primary' mr={2} />
                   <Text fontSize={0}>{cat}</Text>
                 </Item>
               ))}
@@ -65,7 +65,7 @@ storiesOf('Autocomplete', module)
         children={({ state, setState }) => (
           <Box>
             <Autocomplete
-              onChange={item => {
+              onChange={(item) => {
                 setState({ value: item })
               }}
               match={match}
@@ -73,9 +73,9 @@ storiesOf('Autocomplete', module)
               <Label mb={1}>Cat</Label>
               <Input />
               <Menu>
-                {cats.map(cat => (
+                {cats.map((cat) => (
                   <Item key={cat} item={cat}>
-                    <Icon name="Pin" color="primary" mr={2} />
+                    <Icon name='Pin' color='primary' mr={2} />
                     <Text fontSize={0}>{cat}</Text>
                   </Item>
                 ))}

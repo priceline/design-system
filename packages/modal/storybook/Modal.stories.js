@@ -2,14 +2,15 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
-import { Modal, SmallModalHeader, ModalHeader, ScrollLock } from '../src/index'
-import Button from '../../core/src/Button'
 import styled from 'styled-components'
 
+import { Modal, SmallModalHeader, ModalHeader, ScrollLock } from '../src'
+import { Button } from 'pcln-design-system'
+
 const StyledModal = styled(Modal)`
-  height: ${props => props.height};
+  height: ${(props) => props.height};
 `
-const CUSTOM_ANIMATION = transitionState => `
+const CUSTOM_ANIMATION = (transitionState) => `
   transform: translateY(-122%);
   transition: transform 0.3s linear;
   ${transitionState === 'entered' ? `transform: translateY(0%);` : ''}
@@ -19,7 +20,7 @@ class ModalStory extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isOpen: props.isOpen
+      isOpen: props.isOpen,
     }
     this.scrollLock = new ScrollLock()
   }
@@ -78,7 +79,7 @@ storiesOf('Modal', module)
         <ModalStory
           header={
             <ModalHeader
-              title="Modal title"
+              title='Modal title'
               onClose={action('Modal closed!')}
             />
           }
@@ -99,7 +100,7 @@ storiesOf('Modal', module)
   ))
   .add('With imagemode and colorful', () => (
     <ModalStory
-      bg="orange"
+      bg='orange'
       header={<SmallModalHeader />}
       width={['100px', '200px', '500px']}
       imgMode
@@ -111,7 +112,7 @@ storiesOf('Modal', module)
       header={<SmallModalHeader />}
       width={['100px', '200px', '500px']}
       dialogAnimation={CUSTOM_ANIMATION}
-      verticalAlignment="top"
+      verticalAlignment='top'
     />
   ))
   .add('Zero Timeout', () => (

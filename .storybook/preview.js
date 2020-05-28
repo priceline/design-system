@@ -44,5 +44,3 @@ addParameters({
 addDecorator(withA11y)
 
 addDecorator(themeProviderDecorator)
-
-configure(require.context('../packages', true, /stories.js$/), module)

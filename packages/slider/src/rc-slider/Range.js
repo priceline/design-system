@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import PropTypes from 'prop-types'
-import Track from './common/Track'
-import createSlider from './common/createSlider'
-import * as utils from '../utils'
 const classNames = require('classnames')
 const shallowEqual = require('shallowequal')
+
+import Track from './common/Track'
+import createSlider from './common/createSlider'
+import * as utils from './utils'
 
 class Range extends React.Component {
   static displayName = 'Range'
