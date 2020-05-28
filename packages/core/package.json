@@ -6,11 +6,13 @@
   "module": "dist/esm/index.js",
   "sideEffects": false,
   "scripts": {
-    "prepare": "npm run clean && npm run build",
-    "build": "npm-run-all -p build:*",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "prepare": "run-s clean build",
+    "build": "run-s build:js build:types",
+    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
+    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
+    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "build:js": "run-p build:babel:*",
+    "build:types": "mkdir -p ./dist/types && cp ../types/types/index.d.ts dist/types",
     "clean": "rimraf dist",
     "test": "jest"
   },
@@ -71,7 +73,8 @@
     "hoist-non-react-statics": "^3.3.1",
     "pcln-icons": "^3.0.0",
     "prop-types": "^15.7.2",
-    "styled-system": "^3.2.1"
+    "styled-system": "^3.2.1",
+    "@types/styled-system": "^5.1.9"
   },
   "peerDependencies": {
     "react": ">=16.3.0",

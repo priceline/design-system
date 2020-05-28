@@ -1,0 +1,39 @@
+{
+  "name": "pcln-types",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Type declarations for pcln-design-system and related projects",
+  "keywords": [
+    "typescript",
+    "declarations"
+  ],
+  "author": "Priceline",
+  "contributors": [
+    "Craig Palermo <craig.palermo@priceline.com>"
+  ],
+  "files": [
+    "types/index.d.ts"
+  ],
+  "homepage": "https://github.com/priceline/design-system",
+  "license": "MIT",
+  "types": "types",
+  "repository": {
+    "type": "git",
+    "url": "github:priceline/design-system",
+    "directory": "packages/types"
+  },
+  "scripts": {
+    "test": "dtslint types"
+  },
+  "bugs": {
+    "url": "https://github.com/priceline/design-system/issues"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/styled-system": "ts3.8"
+  },
+  "devDependencies": {
+    "dtslint": "^3.5.2",
+    "pcln-design-system": "^3.4.1"
+  }
+}
