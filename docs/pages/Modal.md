@@ -10,6 +10,7 @@ _Note: ModalDemo is a simple class for demonstration that maintains an `isOpen` 
       header={<Heading.h1>Modal Title</Heading.h1>}
       width={["200px", "300px"]}
       enableOverflow
+      ariaLabel='Aria label'
     >
         <Text>Modal Content</Text>
     </Modal>
@@ -30,6 +31,8 @@ _Note: ModalDemo is a simple class for demonstration that maintains an `isOpen` 
 | `enableOverflow`     | boolean        | When enabled, the modal will extend over the screen based on content, otherwise it will follow height |
 | `height`             | ArrayOf.string | Responsive height, when enableOverflow={true}, it's not in use                                        |
 | `fullScreen`         | boolean        | Dialog content should fill entire screen. Not for use with `enableOverflow`.                          |
+| `ariaLabel`          | string         | aria-label for the DialogContent child component. Required if `ariaLabelledBy` is not defined         |
+| `ariaLabelledBy`     | string         | aria-labelledby for the DialogContent child component. Required if `ariaLabel` is not defined         |
 
 ## Prevent Background Scrolling
 

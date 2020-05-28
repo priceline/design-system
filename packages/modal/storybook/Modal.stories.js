@@ -39,6 +39,7 @@ class ModalStory extends React.Component {
           Open
         </Button>
         <StyledModal
+          ariaLabel='Storybook modal.'
           isOpen={this.state.isOpen}
           onClose={() => {
             this.setState({ isOpen: false })

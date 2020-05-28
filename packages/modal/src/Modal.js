@@ -6,7 +6,7 @@ import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, deprecatedPropType, Flex } from 'pcln-design-system'
 
-const OVERLAY_ANIMATION = transitionState => `
+const OVERLAY_ANIMATION = (transitionState) => `
   opacity: 0;
   transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
   ${transitionState === 'entering' ? `opacity: 0;` : ''}
@@ -15,7 +15,7 @@ const OVERLAY_ANIMATION = transitionState => `
   ${transitionState === 'exited' ? `opacity: 0;` : ''}
 `
 
-const DIALOG_ANIMATION = transitionState => `
+const DIALOG_ANIMATION = (transitionState) => `
   transform: scale(0.5);
   transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
   ${transitionState === 'entering' ? `transform: scale(0.5);` : ''}
@@ -27,7 +27,7 @@ const DIALOG_ANIMATION = transitionState => `
 const getAnimation = ({
   transitionstate,
   defaultAnimation,
-  customAnimation = null
+  customAnimation = null,
 }) =>
   typeof customAnimation === 'function'
     ? customAnimation(transitionstate)
@@ -41,7 +41,7 @@ const Overlay = styled(DialogOverlay)`
   position: fixed;
   right: 0;
   top: 0;
-  ${props => `
+  ${(props) => `
     z-index: ${props.zindex || 100};
     font-family: ${props.theme.font};
     line-height: ${props.theme.lineHeights?.standard};
@@ -60,11 +60,11 @@ const Dialog = styled(DialogContent)`
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: ${props => props.theme.boxShadows[3]};
+  box-shadow: ${(props) => props.theme.boxShadows[3]};
   &:focus {
     outline: none;
   }
-  ${props =>
+  ${(props) =>
     !props.fullScreen
       ? `
     max-height: 100vh;
@@ -74,7 +74,7 @@ const Dialog = styled(DialogContent)`
     width: 100vw;
     height: 100vh;
   `}
-  ${props =>
+  ${(props) =>
     props.enableoverflow &&
     `
     max-height: none;
@@ -97,14 +97,14 @@ const FloatCloseButton = styled(CloseButton)`
   }
 
   &:focus {
-    background-color: ${props => props.theme.colors.borderGray};
+    background-color: ${(props) => props.theme.colors.borderGray};
     outline: none;
   }
 `
 
 const ContentWrapper = styled(Box)`
   position: relative;
-  ${props => {
+  ${(props) => {
     if (!props.enableoverflow) {
       return `
         overflow-y: auto;
@@ -127,7 +127,7 @@ const DialogWrapper = styled(Box)`
   vertical-align: ${({ verticalAlignment }) => verticalAlignment};
   position: relative;
   height: 100%;
-  ${props =>
+  ${(props) =>
     props.enableoverflow &&
     `
     padding-top: 24px;
@@ -141,23 +141,25 @@ const DialogInnerWrapper = styled(Flex)`
 `
 
 const Modal = ({
-  isOpen,
-  onClose,
+  ariaLabel,
+  ariaLabelledBy,
   bg,
-  zIndex,
   children,
-  imgMode,
-  width,
   className,
-  header,
+  dialogAnimation,
   disableCloseButton,
   enableOverflow,
-  height,
-  timeout,
-  dialogAnimation,
-  overlayAnimation,
   fullScreen,
-  verticalAlignment
+  header,
+  height,
+  imgMode,
+  isOpen,
+  onClose,
+  overlayAnimation,
+  timeout,
+  verticalAlignment,
+  width,
+  zIndex,
 }) => {
   let dialogHeight = height
 
@@ -169,7 +171,7 @@ const Modal = ({
 
   return (
     <Transition in={isOpen} unmountOnExit timeout={timeout}>
-      {state => (
+      {(state) => (
         <Overlay
           onDismiss={onClose}
           zindex={zIndex}
@@ -193,9 +195,11 @@ const Modal = ({
                 defaultAnimation={DIALOG_ANIMATION}
                 customAnimation={dialogAnimation}
                 fullScreen={fullScreen}
-                data-testid="dialog-content"
+                data-testid='dialog-content'
+                aria-label={ariaLabel}
+                aria-labelledby={ariaLabelledBy}
               >
-                <DialogInnerWrapper flexDirection="column">
+                <DialogInnerWrapper flexDirection='column'>
                   {header && <HeaderWrapper>{header}</HeaderWrapper>}
                   <ContentWrapper
                     p={imgMode ? 0 : 16}
@@ -204,7 +208,7 @@ const Modal = ({
                   >
                     {enableOverflow && !disableCloseButton && (
                       <FloatCloseButton
-                        data-testid="pcln-modal-close"
+                        data-testid='pcln-modal-close'
                         header={header}
                         onClick={onClose}
                       />
@@ -222,37 +226,47 @@ const Modal = ({
 }
 
 Modal.defaultProps = {
-  isOpen: false,
+  bg: 'white',
+  dialogAnimation: null,
   disableCloseButton: false,
   enableOverflow: false,
   header: null,
-  bg: 'white',
   height: 420,
-  timeout: 500,
+  isOpen: false,
   overlayAnimation: null,
-  dialogAnimation: null,
-  verticalAlignment: 'middle'
+  timeout: 500,
+  verticalAlignment: 'middle',
+}
+
+const validateAriaProps = (props, propName, componentName) => {
+  if (!props.ariaLabel && !props.ariaLabelledBy) {
+    return new Error(
+      `A <${componentName}> must have either an 'ariaLabel' or 'ariaLabelledBy' prop.`
+    )
+  }
 }
 
 Modal.propTypes = {
   ...width.propTypes,
   ...height.propTypes,
-  isOpen: PropTypes.bool,
-  fullScreen: PropTypes.bool,
+  ariaLabel: validateAriaProps,
+  ariaLabelledBy: validateAriaProps,
+  bg: deprecatedPropType('color'),
+  className: PropTypes.string,
+  dialogAnimation: PropTypes.func,
   disableCloseButton: PropTypes.bool,
   enableOverflow: PropTypes.bool,
-  onClose: PropTypes.func,
-  bg: deprecatedPropType('color'),
-  zIndex: PropTypes.number,
-  title: PropTypes.string,
+  fullScreen: PropTypes.bool,
+  header: PropTypes.any,
   headerBg: PropTypes.string,
   imgMode: PropTypes.bool,
-  className: PropTypes.string,
-  header: PropTypes.any,
-  timeout: PropTypes.number,
+  isOpen: PropTypes.bool,
+  onClose: PropTypes.func,
   overlayAnimation: PropTypes.func,
-  dialogAnimation: PropTypes.func,
-  verticalAlignment: PropTypes.string
+  timeout: PropTypes.number,
+  title: PropTypes.string,
+  verticalAlignment: PropTypes.string,
+  zIndex: PropTypes.number,
 }
 
 export default Modal

@@ -15,9 +15,10 @@ import Modal from 'pcln-modal'
 ```jsx
 import { Modal } from 'pcln-modal'
 ;<Modal
+  ariaLabel='This is an example Modal' //sets the aria-label of the DialogContent
   isOpen={true} //boolean for control this status of modal
   onClose={someFunc} //func function for handle close the modal while click on the overlay
-  bg="white" //modal background color
+  bg='white' //modal background color
   zIndex={5} //zIndex
   imgMode={false} //default false, will add padding to the modal, if true, then there will be no padding
   width={['100px', '200px']} //responsive width the modal
@@ -25,7 +26,7 @@ import { Modal } from 'pcln-modal'
   disableCloseButton={true} //there will be a floating close button, when enabledOverflow = true, it's there by default
   enableOverflow={false} //when enabled, the modal will extend over the screen based on content, otherwise it will follow height
   height={['100px', '200px']} //responsive height, when enableOverflow={true}, it's not in use
-  verticalAlignment="middle" // Aligns dialog body vertically - options = ['middle', 'top', 'bottom']
+  verticalAlignment='middle' // Aligns dialog body vertically - options = ['middle', 'top', 'bottom']
   overlayAnimation={null} // Accepts a function which overwrites default animation
   dialogAnimation={null} // Accepts a function which overwrites default animation
   timeout={500} // Accepts a number which overwrites the default delay for the open animation to begin, default is 500ms
@@ -50,14 +51,14 @@ class SomeWrapper extends React.component {
   openModalFunc() {
     this.scrollLock.on()
     this.setState({
-      modalOpen: true
+      modalOpen: true,
     })
   }
 
   closeModalFunc() {
     this.scrollLock.off()
     this.setState({
-      modalOpen: false
+      modalOpen: false,
     })
   }
 }
@@ -70,7 +71,7 @@ For its animations, this Modal currently uses `react-transition-group`. This mea
 We can then use these states to write custom animations, like so:
 
 ```javascript
-const MY_ANIMATION = transitionState => `
+const MY_ANIMATION = (transitionState) => `
   transform: scale(0.5);
   transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
   ${transitionState === 'entering' ? `transform: scale(0.5);` : ''}
