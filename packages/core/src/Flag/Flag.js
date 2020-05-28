@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
-import { themeGet } from 'styled-system'
+import { space, themeGet } from 'styled-system'
 
 import { Flex } from '../Flex'
 import { Hide } from '../Hide'
@@ -73,7 +73,7 @@ const StyledFlex = styled(Flex)`
   ${applyVariations('Flag')}
 `
 
-const Flag = ({ color, bg, children, width, ...props }) => (
+const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
   <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
       <FlagShadow
@@ -87,8 +87,9 @@ const Flag = ({ color, bg, children, width, ...props }) => (
       flexAuto={!!width}
       color={color}
       bg={hasPaletteColor({ color, ...props }) ? false : bg}
-      py={[1, 2]}
-      pl={[1, 3]}
+      pl={pl}
+      pr={pr}
+      py={py}
     >
       {children}
     </FlagBody>
@@ -103,11 +104,15 @@ const Flag = ({ color, bg, children, width, ...props }) => (
 Flag.propTypes = {
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
+  ...space.propTypes,
 }
 
 Flag.defaultProps = {
   color: 'white',
   bg: 'green',
+  pl: [1, 3],
+  pr: null,
+  py: [1, 2],
 }
 
 Flag.displayName = 'Flag'

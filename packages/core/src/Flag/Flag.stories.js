@@ -77,3 +77,14 @@ storiesOf('Flag', module)
       </Card>
     </Box>
   ))
+  .add('With custom padding', () => (
+    <Box p={3}>
+      <Card pb={3}>
+        <Flag mt={2} py={[1, 2, 3]} pl={[2, 3, 4]} pr={[1, 3, 4]}>
+          <Flex>
+            <Text>Hello World</Text>
+          </Flex>
+        </Flag>
+      </Card>
+    </Box>
+  ))
