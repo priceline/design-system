@@ -1,5 +1,5 @@
 import {getContrastRatio, deprecatedPropType, borders, hasPaletteColor, Box, Card, Text} from 'pcln-types'
-import theme from '../../core/src/theme.js'
+import theme from '../../core/src/theme'
 import * as React from "react";
 
 //

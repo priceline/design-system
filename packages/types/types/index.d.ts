@@ -5,17 +5,18 @@
 
 import * as React from 'react'
 import {
-  LayoutProps,
   ColorProps,
-  BackgroundColorProps,
   SpaceProps,
-  BoxShadowProps,
+  BorderColorProps,
   BorderRadiusProps,
   Theme,
-  BorderWidthProps,
-  MarginProps,
   FontSizeProps,
-  TextAlignProps
+  WidthProps,
+  TextAlignProps,
+  TextColorProps,
+  TextStyleProps,
+  FontWeightProps,
+  LineHeightProps,
 } from 'styled-system'
 
 /**
@@ -23,10 +24,10 @@ import {
  * the component uses
  */
 export interface BoxProps
-  extends LayoutProps,
-    ColorProps,
-    BackgroundColorProps,
-    SpaceProps {}
+  extends ColorProps,
+    WidthProps,
+    SpaceProps,
+    TextAlignProps {}
 
 /**
  * Extend primitive Design System components to create interfaces for more complex
@@ -34,15 +35,21 @@ export interface BoxProps
  */
 export interface CardProps
   extends BoxProps,
-    BoxShadowProps,
     BorderRadiusProps,
-    BorderWidthProps {}
+    BorderColorProps,
+    TextColorProps {
+  boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl'
+  borderWidth?: 0 | 1 | 2
+}
 
 export interface TextProps
-  extends MarginProps,
-    ColorProps,
+  extends TextStyleProps,
     FontSizeProps,
-    TextAlignProps {
+    FontWeightProps,
+    TextAlignProps,
+    LineHeightProps,
+    SpaceProps,
+    TextColorProps {
   /** Sets font-weight: props.theme.regular */
   regular?: boolean
   /** Sets font-weight: props.theme.bold */
@@ -51,6 +58,8 @@ export interface TextProps
   caps?: boolean
   /** Sets styles for italic type treatments */
   italic?: boolean
+  enableTextShadow?: boolean
+  textShadowSize?: 'sm' | 'md'
 }
 
 //

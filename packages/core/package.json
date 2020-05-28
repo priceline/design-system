@@ -64,7 +64,10 @@
     "setupFilesAfterEnv": [
       "../../test/test-setup.js"
     ],
-    "moduleDirectories": ["node_modules", "../../test"],
+    "moduleDirectories": [
+      "node_modules",
+      "../../test"
+    ],
     "testMatch": [
       "<rootDir>/src/**/*.spec.js"
     ]
@@ -75,7 +78,7 @@
     "pcln-icons": "^3.0.0",
     "prop-types": "^15.7.2",
     "styled-system": "^3.2.1",
-    "@types/styled-system": "^5.1.9"
+    "@types/styled-system": "^3.2.2"
   },
   "peerDependencies": {
     "react": ">=16.3.0",
