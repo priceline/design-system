@@ -27,11 +27,20 @@ import {
   ZIndexProps,
 } from 'styled-system'
 
+/**
+ * Helper interfaces
+ */
+interface ReactRefObject {
+  current: any
+}
+
 export interface TopRightBottomLeft
   extends TopProps,
     RightProps,
     BottomProps,
     LeftProps {}
+
+type RefPropType = (() => any) | ReactRefObject
 
 /**
  * Combining Styled System interfaces depending on which Styled System functions
@@ -74,7 +83,15 @@ export interface CardProps
   borderWidth?: 0 | 1 | 2
 }
 
-export interface RelativeProps extends TopRightBottomLeft, BoxProps, ZIndexProps {}
+export interface LinkProps extends TextColorProps {
+  variation?: 'fill' | 'link' | 'outline'
+  dsRef?: RefPropType
+}
+
+export interface RelativeProps
+  extends TopRightBottomLeft,
+    BoxProps,
+    ZIndexProps {}
 
 export interface TextProps
   extends TextStyleProps,
@@ -110,7 +127,7 @@ export class Avatar extends React.Component<any, any> {}
 export class BackgroundImage extends React.Component<any, any> {}
 export class Badge extends React.Component<any, any> {}
 export class Banner extends React.Component<any, any> {}
-export class BlockLink extends React.Component<any, any> {}
+export class BlockLink extends React.Component<LinkProps, any> {}
 export class Box extends React.Component<BoxProps, any> {}
 export class Breadcrumbs extends React.Component<any, any> {
   static Link
@@ -124,13 +141,13 @@ export class Divider extends React.Component<any, any> {}
 export class Flag extends React.Component<any, any> {}
 export class Flex extends React.Component<FlexProps, any> {}
 export class FormField extends React.Component<any, any> {}
-export class Heading extends React.Component<any, any> {
-  static h1
-  static h2
-  static h3
-  static h4
-  static h5
-  static h6
+export class Heading extends React.Component<TextProps, any> {
+  static h1: typeof Heading
+  static h2: typeof Heading
+  static h3: typeof Heading
+  static h4: typeof Heading
+  static h5: typeof Heading
+  static h6: typeof Heading
 }
 export class Hide extends React.Component<HideProps, any> {}
 export class Hug extends React.Component<any, any> {}
@@ -145,7 +162,7 @@ export class InputGroup extends React.Component<any, any> {}
 export class Label extends React.Component<any, any> {
   static isLabel: boolean
 }
-export class Link extends React.Component<any, any> {}
+export class Link extends React.Component<LinkProps, any> {}
 export class PlaceholderImage extends React.Component<any, any> {}
 export class Radio extends React.Component<any, any> {}
 export class RatingBadge extends React.Component<any, any> {}
@@ -172,7 +189,7 @@ export class TextArea extends React.Component<any, any> {
 export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
 export class ToggleBadge extends React.Component<any, any> {}
 export class Tooltip extends React.Component<any, any> {}
-export class Truncate extends React.Component<any, any> {}
+export class Truncate extends React.Component<TextProps, any> {}
 
 //
 // pcln-design-system utils
