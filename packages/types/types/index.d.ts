@@ -26,6 +26,7 @@ import {
   TopProps,
   WidthProps,
   ZIndexProps,
+  SizeProps,
 } from 'styled-system'
 
 /**
@@ -62,6 +63,17 @@ export interface BoxProps
     SpaceProps,
     TextAlignProps {}
 
+export interface ButtonProps
+  extends ColorProps,
+  SpaceProps,
+  WidthProps {
+    disabled?: boolean,
+    dsRef?: RefPropType
+    onClick?: React.MouseEventHandler<HTMLElement>
+    size?: 'small' | 'medium' | 'large' | number
+    variation?: 'fill' | 'outline' | 'link'
+}
+
 export interface FlexProps
   extends BoxProps,
     SpaceProps,
@@ -82,6 +94,21 @@ export interface HideProps extends BoxProps {
   print?: boolean
 }
 
+export interface IconProps
+  extends ColorProps,
+  SizeProps {
+  name?: string
+  title?: string
+  titleId?: string
+  desc?: string
+  descId?: string
+}
+
+export interface IconButtonProps extends ButtonProps {
+  icon?: React.ComponentElement<IconProps, any>
+  dsRef?: RefPropType
+}
+
 export interface CardProps
   extends BoxProps,
     BorderRadiusProps,
@@ -89,6 +116,13 @@ export interface CardProps
     TextColorProps {
   boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl'
   borderWidth?: 0 | 1 | 2
+}
+
+export interface CloseButtonProps
+  extends IconButtonProps,
+  ButtonProps {
+  size?: number
+  title?: string
 }
 
 export interface ImageProps extends WidthProps {
@@ -164,10 +198,10 @@ export class Box extends React.Component<BoxProps, any> {}
 export class Breadcrumbs extends React.Component<any, any> {
   static Link
 }
-export class Button extends React.Component<any, any> {}
+export class Button extends React.Component<ButtonProps, any> {}
 export class Card extends React.Component<CardProps, any> {}
 export class Checkbox extends React.Component<any, any> {}
-export class CloseButton extends React.Component<any, any> {}
+export class CloseButton extends React.Component<CloseButtonProps, any> {}
 export class Container extends React.Component<any, any> {}
 export class Divider extends React.Component<any, any> {}
 export class Flag extends React.Component<any, any> {}
@@ -183,9 +217,9 @@ export class Heading extends React.Component<TextProps, any> {
 }
 export class Hide extends React.Component<HideProps, any> {}
 export class Hug extends React.Component<any, any> {}
-export class Icon extends React.Component<any, any> {}
-export class IconButton extends React.Component<any, any> {}
-export class IconField extends React.Component<any, any> {}
+export class Icon extends React.Component<IconProps, any> {}
+export class IconButton extends React.Component<IconButtonProps, any> {}
+export class IconField extends React.Component<FlexProps, any> {}
 export class Image extends React.Component<ImageProps, any> {}
 export class Input extends React.Component<any, any> {
   static isField: boolean
