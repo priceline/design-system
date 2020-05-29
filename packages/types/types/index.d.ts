@@ -5,6 +5,7 @@
 
 import * as React from 'react'
 import {
+  AlignItemsProps,
   BorderColorProps,
   BorderRadiusProps,
   BottomProps,
@@ -16,7 +17,9 @@ import {
   JustifyContentProps,
   LeftProps,
   LineHeightProps,
+  ResponsiveValue,
   RightProps,
+  SizeProps,
   SpaceProps,
   TextAlignProps,
   TextColorProps,
@@ -25,9 +28,6 @@ import {
   TopProps,
   WidthProps,
   ZIndexProps,
-  SizeProps,
-  ResponsiveValue,
-  AlignItemsProps,
 } from 'styled-system'
 import * as CSS from 'csstype'
 
@@ -92,7 +92,7 @@ export interface BreadcrumbLinkProps {
   /** This is the last link in the breadcrumbs list */
   isLastChild?: boolean
   href?: string
-  icon?: typeof Icon
+  icon?: React.ComponentElement<IconProps, any>
   label?: string
   dsRef?: RefPropType
   onClick?: (any) => void
@@ -237,18 +237,80 @@ export interface ThemeProviderProps {
   customBreakpoints?: string[]
 }
 
+export interface DividerProps
+  extends ColorProps,
+    SpaceProps,
+    WidthProps,
+    BorderColorProps {}
+
+export interface AvatarProps extends ClassNameProps, TextColorProps {
+  /** Heading displayed with avatar */
+  title?: string
+  /** Subheading displayed beneath heading */
+  subtitle?: string
+  src?: string
+  /** Alternative initials to display when src is not provided */
+  initials?: string
+  /** Size in px to use for height, width, and background-size */
+  size?: number
+}
+
+export interface BannerProps extends BoxProps {
+  header?: string | React.ReactNode
+  icon?: React.ComponentElement<IconProps, any>
+  onClose?: (any) => void
+  showIcon?: boolean
+  text?: string | React.ReactNode
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
+
+export interface StampProps
+  extends SpaceProps, FontSizeProps, ColorProps {
+    variation?: 'outline' | 'fill' | 'solid',
+    size?: 'small' | 'medium'
+    /** DEPRECATED: Use "color" prop instead */
+    bg?: string
+  }
+
+export interface ContainerProps {
+  maxWidth?: number
+}
+
+export interface FlagProps extends FlexProps, WidthProps {
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
+
+export interface HugProps extends CardProps {
+  iconDisplay?: string[]
+  icon?: React.ComponentElement<IconProps, any>
+  text?: React.ReactNode | string
+}
+
+export interface TooltipProps extends BoxProps {
+  zIndex?: number | string
+  bottom?: boolean
+  top?: boolean
+  center?: boolean
+  left?: boolean
+  right?: boolean
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
+
 //
 // pcln-design-system components
 // ------------------------------------------------------------
 
 export class Absolute extends React.Component<AbsoluteProps, any> {}
-export class Avatar extends React.Component<any, any> {}
+export class Avatar extends React.Component<AvatarProps, any> {}
 export class BackgroundImage extends React.Component<
   BackgroundImageProps,
   any
 > {}
 export class Badge extends React.Component<BadgeProps, any> {}
-export class Banner extends React.Component<any, any> {}
+export class Banner extends React.Component<BannerProps, any> {}
 export class BlockLink extends React.Component<LinkProps, any> {}
 export class Box extends React.Component<BoxProps, any> {}
 export class Breadcrumbs extends React.Component<any, any> {
@@ -259,9 +321,9 @@ export class Button extends React.Component<ButtonProps, any> {}
 export class Card extends React.Component<CardProps, any> {}
 export class Checkbox extends React.Component<any, any> {}
 export class CloseButton extends React.Component<CloseButtonProps, any> {}
-export class Container extends React.Component<any, any> {}
-export class Divider extends React.Component<any, any> {}
-export class Flag extends React.Component<any, any> {}
+export class Container extends React.Component<ContainerProps, any> {}
+export class Divider extends React.Component<DividerProps, any> {}
+export class Flag extends React.Component<FlagProps, any> {}
 export class Flex extends React.Component<FlexProps, any> {}
 export class FormField extends React.Component<any, any> {}
 export class Heading extends React.Component<TextProps, any> {
@@ -296,7 +358,7 @@ export class Relative extends React.Component<RelativeProps, any> {}
 export class Select extends React.Component<any, any> {
   static isField: boolean
 }
-export class Stamp extends React.Component<any, any> {}
+export class Stamp extends React.Component<StampProps, any> {}
 export class Step extends React.Component<StepProps, any> {}
 export class Stepper extends React.Component<ClassNameProps, any> {
   static Step: typeof Step
@@ -315,7 +377,7 @@ export class TextArea extends React.Component<any, any> {
 }
 export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
 export class ToggleBadge extends React.Component<ToggleBadgeProps, any> {}
-export class Tooltip extends React.Component<any, any> {}
+export class Tooltip extends React.Component<TooltipProps, any> {}
 export class Truncate extends React.Component<TextProps, any> {}
 
 //
