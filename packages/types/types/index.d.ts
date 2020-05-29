@@ -26,7 +26,10 @@ import {
   WidthProps,
   ZIndexProps,
   SizeProps,
+  ResponsiveValue,
+  AlignItemsProps,
 } from 'styled-system'
+import * as CSS from 'csstype'
 
 /**
  * Helper interfaces
@@ -60,17 +63,20 @@ export interface BackgroundImageProps extends WidthProps {
   variation?: 'parallax' | 'static'
 }
 
-export interface BadgeProps
-  extends ColorProps,
-  SpaceProps {
-    size?: 'small' | 'medium'
+export interface BadgeProps extends ColorProps, SpaceProps {
+  size?: 'small' | 'medium'
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
 }
 
 export interface BoxProps
   extends ColorProps,
     WidthProps,
     SpaceProps,
-    TextAlignProps {}
+    TextAlignProps {
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
 
 export interface ButtonProps extends ColorProps, SpaceProps, WidthProps {
   disabled?: boolean
@@ -78,6 +84,8 @@ export interface ButtonProps extends ColorProps, SpaceProps, WidthProps {
   onClick?: React.MouseEventHandler<HTMLElement>
   size?: 'small' | 'medium' | 'large' | number
   variation?: 'fill' | 'outline' | 'link'
+  /** DEPRECATED: Use "width" prop instead */
+  fullWidth?: boolean
 }
 
 export interface BreadcrumbLinkProps {
@@ -98,7 +106,17 @@ export interface FlexProps
     TextAlignProps,
     JustifyContentProps,
     FlexWrapProps,
-    FlexDirectionProps {}
+    AlignItemsProps,
+    FlexDirectionProps {
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+  /** DEPRECATED: Use "flexWrap" prop instead */
+  wrap?: ResponsiveValue<CSS.FlexWrapProperty>
+  /** DEPRECATED: Use "alignItems" prop instead */
+  align?: ResponsiveValue<CSS.AlignItemsProperty>
+  /** DEPRECATED: Use "justifyContent" prop instead */
+  justify?: ResponsiveValue<CSS.JustifyContentProperty>
+}
 
 export interface HideProps extends BoxProps {
   xs?: boolean
@@ -165,8 +183,11 @@ export interface PlaceholderImageProps {
 
 export interface RatingBadgeProps
   extends BoxProps,
-  BorderRadiusProps,
-  FontWeightProps {}
+    BorderRadiusProps,
+    FontWeightProps {
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
 
 export interface RelativeProps
   extends TopRightBottomLeft,
@@ -180,11 +201,13 @@ export interface StepProps extends ButtonProps, ClassNameProps {
 
 export interface ToggleBadgeProps
   extends ColorProps,
-  FontSizeProps,
-  SpaceProps {
+    FontSizeProps,
+    SpaceProps {
   dsRef?: RefPropType
   selected?: boolean
   unSelectedBg?: string
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
 }
 
 export interface TextProps
@@ -205,6 +228,8 @@ export interface TextProps
   italic?: boolean
   enableTextShadow?: boolean
   textShadowSize?: 'sm' | 'md'
+  /** DEPRECATED: Use "textAlign" prop instead */
+  align?: ResponsiveValue<CSS.TextAlignProperty>
 }
 
 export interface ThemeProviderProps {
