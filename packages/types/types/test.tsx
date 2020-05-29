@@ -15,6 +15,9 @@ import {
   Heading,
   Truncate,
   SrOnly,
+  Image,
+  BackgroundImage,
+  PlaceholderImage,
 } from 'pcln-types'
 import theme from '../../core/src/theme'
 import * as React from 'react'
@@ -73,3 +76,27 @@ const myH6 = <Heading.h6 /> // $ExpectType Element
 
 const myTruncate = <Truncate color={'primary'} /> // $ExpectType Element
 const mySrOnly = <SrOnly class='test-class-stuff' /> // $ExpectType Element
+// $ExpectType Element
+const myImage = (
+  <Image height={'50px'} width={[1, 1 / 2]} alt={'image'} src={'cat.jpg'} />
+)
+// $ExpectType Element
+const myBackgroundImage = (
+  <BackgroundImage
+    height={'50px'}
+    width={[1, 1 / 2]}
+    variation={'static'}
+    image={'cat.jpg'}
+  />
+)
+// $ExpectType Element
+const myPlaceholderImage = (
+  <PlaceholderImage
+    alt={'Alt text'}
+    height={'50px'}
+    width={'25px'}
+    chooseSrc={'1'}
+    ariaHidden={false}
+    blur
+  />
+)
