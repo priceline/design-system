@@ -2,6 +2,7 @@ import {
   Absolute,
   BackgroundImage,
   BlockLink,
+  Breadcrumbs,
   borders,
   Box,
   Button,
@@ -25,6 +26,7 @@ import {
   Link,
   PlaceholderImage,
   SrOnly,
+  Stepper,
   Text,
   theme as ThemeType,
   ThemeProvider,
@@ -80,11 +82,7 @@ const myLink = (
 )
 // $ExpectType Element
 const myBlockLink = (
-  <BlockLink
-    color='secondary'
-    variation='outline'
-    dsRef={() => 'ima ref'}
-  />
+  <BlockLink color='secondary' variation='outline' dsRef={() => 'ima ref'} />
 )
 // $ExpectType Element
 const myButton = (
@@ -141,6 +139,33 @@ const myH3 = <Heading.h3 m={4} /> // $ExpectType Element
 const myH4 = <Heading.h4 p={[2, 2, 4]} /> // $ExpectType Element
 const myH5 = <Heading.h5 lineHeight='12px' /> // $ExpectType Element
 const myH6 = <Heading.h6 /> // $ExpectType Element
+
+// $ExpectType Element
+const myBreadcrumbs = (
+  <Breadcrumbs>
+    <Breadcrumbs.Link dsRef={() => 'ref1'} />
+    <Breadcrumbs.Link
+      dsRef={{ current: 'ref2' }}
+      href={'priceline.com'}
+      isLastChild={false}
+      label='Label me!'
+      onClick={() => 'bla'}
+    />
+  </Breadcrumbs>
+)
+
+// $ExpectType Element
+const myStepper = (
+  <Stepper className={'my-class'}>
+    <Stepper.Step
+      className={'step'}
+      onClick={() => 'clicked!'}
+      active
+      completed={false}
+    />
+    <Stepper.Step />
+  </Stepper>
+)
 
 const myTruncate = <Truncate color='primary' /> // $ExpectType Element
 const mySrOnly = <SrOnly class='test-class-stuff' /> // $ExpectType Element

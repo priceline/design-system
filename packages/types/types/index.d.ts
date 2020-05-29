@@ -36,6 +36,10 @@ interface ReactRefObject {
   current: any
 }
 
+interface ClassNameProps {
+  className?: string
+}
+
 export interface TopRightBottomLeft
   extends TopProps,
     RightProps,
@@ -63,15 +67,22 @@ export interface BoxProps
     SpaceProps,
     TextAlignProps {}
 
-export interface ButtonProps
-  extends ColorProps,
-  SpaceProps,
-  WidthProps {
-    disabled?: boolean,
-    dsRef?: RefPropType
-    onClick?: React.MouseEventHandler<HTMLElement>
-    size?: 'small' | 'medium' | 'large' | number
-    variation?: 'fill' | 'outline' | 'link'
+export interface ButtonProps extends ColorProps, SpaceProps, WidthProps {
+  disabled?: boolean
+  dsRef?: RefPropType
+  onClick?: React.MouseEventHandler<HTMLElement>
+  size?: 'small' | 'medium' | 'large' | number
+  variation?: 'fill' | 'outline' | 'link'
+}
+
+export interface BreadcrumbLinkProps {
+  /** This is the last link in the breadcrumbs list */
+  isLastChild?: boolean
+  href?: string
+  icon?: typeof Icon
+  label?: string
+  dsRef?: RefPropType
+  onClick?: (any) => void
 }
 
 export interface FlexProps
@@ -94,9 +105,7 @@ export interface HideProps extends BoxProps {
   print?: boolean
 }
 
-export interface IconProps
-  extends ColorProps,
-  SizeProps {
+export interface IconProps extends ColorProps, SizeProps {
   name?: string
   title?: string
   titleId?: string
@@ -118,9 +127,7 @@ export interface CardProps
   borderWidth?: 0 | 1 | 2
 }
 
-export interface CloseButtonProps
-  extends IconButtonProps,
-  ButtonProps {
+export interface CloseButtonProps extends IconButtonProps, ButtonProps {
   size?: number
   title?: string
 }
@@ -155,6 +162,11 @@ export interface RelativeProps
   extends TopRightBottomLeft,
     BoxProps,
     ZIndexProps {}
+
+export interface StepProps extends ButtonProps, ClassNameProps {
+  active?: boolean
+  completed?: boolean
+}
 
 export interface TextProps
   extends TextStyleProps,
@@ -196,8 +208,9 @@ export class Banner extends React.Component<any, any> {}
 export class BlockLink extends React.Component<LinkProps, any> {}
 export class Box extends React.Component<BoxProps, any> {}
 export class Breadcrumbs extends React.Component<any, any> {
-  static Link
+  static Link: typeof BreadcrumbLink
 }
+export class BreadcrumbLink extends React.Component<BreadcrumbLinkProps, any> {}
 export class Button extends React.Component<ButtonProps, any> {}
 export class Card extends React.Component<CardProps, any> {}
 export class Checkbox extends React.Component<any, any> {}
@@ -240,8 +253,9 @@ export class Select extends React.Component<any, any> {
   static isField: boolean
 }
 export class Stamp extends React.Component<any, any> {}
-export class Stepper extends React.Component<any, any> {
-  static Step
+export class Step extends React.Component<StepProps, any> {}
+export class Stepper extends React.Component<ClassNameProps, any> {
+  static Step: typeof Step
 }
 export class SrOnly extends React.Component<any, any> {}
 export class Text extends React.Component<TextProps, any> {
