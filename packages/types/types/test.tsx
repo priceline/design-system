@@ -94,14 +94,25 @@ const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
 const myFlex = <Flex flexDirection={['row', null, 'column']} m={3} /> // $ExpectType Element
 const myHide = <Hide xs sm md lg xl xxl m={3} /> // $ExpectType Element
-const myCheckbox = <Checkbox id="test" size={1} onChange={() => {}}/> // $ExpectType Element
-const myFormField = <FormField /> // $ExpectType Element
-const myLabel = <Label /> // $ExpectType Element
-const myRadio = <Radio /> // $ExpectType Element
-const mySelect = <Select /> // $ExpectType Element
+const myCheckbox = <Checkbox id="test" size={1} onChange={() => 'I changed!'}/> // $ExpectType Element
+// $ExpectType Element
+const myFormField =
+    <FormField>
+      <Label width='1' fontWeight='bold' color='text'>Label</Label>
+      <Input id='myInput' fontSize={1} color='primary' />
+    </FormField>
+const myLabel = <Label width='1' fontWeight='bold' color='text'>Label</Label> // $ExpectType Element
+const myRadio = <Radio size={1} color='primary' /> // $ExpectType Element
+const mySelect = <Select fontSize={1} color='text' /> // $ExpectType Element
 const myTextArea = <TextArea id='test'/> // $ExpectType Element
 const myInput = <Input id='test'/> // $ExpectType Element
-const myInputGroup = <InputGroup /> // $ExpectType Element
+// $ExpectType Element
+const myInputGroup =
+  <InputGroup borderColor='secondary'>
+    <Input id='myInput' fontSize={1} color='primary' />
+    <Input id='myInput' fontSize={1} color='primary' />
+  </InputGroup>
+
 // $ExpectType Element
 const myLink = (
   <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
