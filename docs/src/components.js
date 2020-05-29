@@ -1,38 +1,48 @@
 import * as DS from 'pcln-design-system'
-import RangeSlider, { Slider } from 'pcln-slider'
-import { Modal } from 'pcln-modal'
-import ModalDemo from './ModalDemo'
+import isAbsoluteURL from 'is-absolute-url'
+import styled from 'styled-components'
+import { space, fontSize, color, theme } from 'styled-system'
+import { components as mdxDocsComponents } from 'mdx-docs'
+
 import {
   Heading,
   Text,
   Link,
   Button,
   getPaletteColor,
-  getTextColorOn
+  getTextColorOn,
 } from 'pcln-design-system'
-import styled from 'styled-components'
-import { space, fontSize, color, theme } from 'styled-system'
-import { components as mdxDocsComponents } from 'mdx-docs'
+import RangeSlider, { Slider } from 'pcln-slider'
+import { Modal } from 'pcln-modal'
 
-const RouterLink = styled(mdxDocsComponents.a)(
+import ModalDemo from './ModalDemo'
+
+const StyledRouterLink = styled(mdxDocsComponents.a)(
   {
     textDecoration: 'none',
     '&:hover': {
-      textDecoration: 'underline'
-    }
+      textDecoration: 'underline',
+    },
   },
   color
 )
 
-RouterLink.defaultProps = {
-  color: 'blue'
+const RouterLink = ({ href, ...props }) => {
+  if (isAbsoluteURL(href)) {
+    return <Link href={href} {...props} target='_blank' />
+  }
+  return <StyledRouterLink href={href} {...props} />
 }
 
-const heading = type => props => {
+RouterLink.defaultProps = {
+  color: 'blue',
+}
+
+const heading = (type) => (props) => {
   const Comp = Heading[type]
   return (
     <Comp {...props}>
-      <Link href={'#' + props.id} color="inherit">
+      <Link href={'#' + props.id} color='inherit'>
         {props.children}
       </Link>
     </Comp>
@@ -43,7 +53,7 @@ const OverflowAuto = styled.div`
   max-width: 100%;
   overflow-x: auto;
 `
-const Table = styled(props => (
+const Table = styled((props) => (
   <OverflowAuto>
     <table {...props} />
   </OverflowAuto>
@@ -79,14 +89,16 @@ const Table = styled(props => (
   }
 `
 Table.defaultProps = {
-  my: 3
+  my: 3,
 }
 
-export const PageTitle = props => (
+export const PageTitle = (props) => (
   <Heading.h1 fontSize={[5, 6]} bold mt={[2, 5]} mb={3} {...props} />
 )
 
-export const Description = props => <Text fontSize={[2, 3]} mb={3} {...props} />
+export const Description = (props) => (
+  <Text fontSize={[2, 3]} mb={3} {...props} />
+)
 
 export const Code = styled.code`
   font-family: 'Roboto Mono', monospace;
@@ -95,7 +107,7 @@ export const Code = styled.code`
 
 Code.defaultProps = {
   fontSize: 2,
-  color: 'blue'
+  color: 'blue',
 }
 
 export const ButtonLink = Button.withComponent('a')
@@ -109,7 +121,7 @@ const ShadeDemo = styled.div`
 `
 
 const ShadeOtherDemo = styled.div`
-  background-color: ${props => getPaletteColor(props.bgColor, 'base')(props)};
+  background-color: ${(props) => getPaletteColor(props.bgColor, 'base')(props)};
 `
 
 const TextDemo = styled.div`
@@ -126,7 +138,7 @@ const components = {
   h5: heading('h5'),
   h6: heading('h6'),
   a: RouterLink,
-  p: p => <Text.p {...p} />,
+  p: (p) => <Text.p {...p} />,
   table: Table,
   RangeSlider,
   Slider,
@@ -135,18 +147,18 @@ const components = {
   StaticDemo,
   ShadeDemo,
   ShadeOtherDemo,
-  TextDemo
+  TextDemo,
 }
 
 components.h1.defaultProps = {
   fontSize: [5, 6],
   mt: 5,
-  mb: 3
+  mb: 3,
 }
 components.h2.defaultProps = {
   fontSize: 5,
   mt: 5,
-  mb: 3
+  mb: 3,
 }
 
 components.h3.defaultProps = {
@@ -154,14 +166,14 @@ components.h3.defaultProps = {
   mt: 4,
   mb: 3,
   style: {
-    fontWeight: '700'
-  }
+    fontWeight: '700',
+  },
 }
 
 components.h4.defaultProps = {
   fontSize: 3,
   mt: 4,
-  mb: 3
+  mb: 3,
 }
 
 components.p.defaultProps = {
@@ -169,8 +181,8 @@ components.p.defaultProps = {
   mt: 0,
   mb: 3,
   style: {
-    lineHeight: 1.6
-  }
+    lineHeight: 1.6,
+  },
 }
 
 export default components
