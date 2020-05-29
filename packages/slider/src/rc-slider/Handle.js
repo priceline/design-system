@@ -5,7 +5,7 @@ const classNames = require('classnames')
 
 export default class Handle extends React.Component {
   state = {
-    clickFocused: false
+    clickFocused: false,
   }
 
   componentDidMount() {
@@ -24,7 +24,7 @@ export default class Handle extends React.Component {
     }
   }
 
-  setHandleRef = node => {
+  setHandleRef = (node) => {
     this.handle = node
   }
 
@@ -82,7 +82,7 @@ export default class Handle extends React.Component {
     } = this.props
 
     const className = classNames(this.props.className, {
-      [`${prefixCls}-handle-click-focused`]: this.state.clickFocused
+      [`${prefixCls}-handle-click-focused`]: this.state.clickFocused,
     })
 
     const postionStyle = vertical
@@ -90,7 +90,7 @@ export default class Handle extends React.Component {
       : { left: `${offset}%` }
     const elStyle = {
       ...style,
-      ...postionStyle
+      ...postionStyle,
     }
 
     let _tabIndex = tabIndex || 0
@@ -112,7 +112,7 @@ export default class Handle extends React.Component {
         onKeyDown={this.handleKeyDown}
         onMouseDown={this.handleMouseDown}
         // aria attribute
-        role="slider"
+        role='slider'
         aria-valuemin={min}
         aria-valuemax={max}
         aria-valuenow={value}
@@ -138,5 +138,5 @@ Handle.propTypes = {
   ariaLabelledBy: PropTypes.string,
   ariaValueTextFormatter: PropTypes.func,
   value: PropTypes.number,
-  tabIndex: PropTypes.number
+  tabIndex: PropTypes.number,
 }

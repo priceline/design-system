@@ -4,7 +4,7 @@ import replaceSvgPlugin from '../plugins/svg-replace-plugin'
 const testPlugin = (code, options) => {
   const result = transform(code, {
     plugins: ['@babel/plugin-syntax-jsx', [replaceSvgPlugin, options]],
-    configFile: false
+    configFile: false,
   })
 
   return result.code

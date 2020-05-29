@@ -8,7 +8,7 @@ export function isDev() {
 export function isEventFromHandle(e, handles) {
   try {
     return Object.keys(handles).some(
-      key => e.target === findDOMNode(handles[key])
+      (key) => e.target === findDOMNode(handles[key])
     )
   } catch (error) {
     return false
@@ -34,7 +34,7 @@ export function getClosestPoint(val, { marks, step, min, max }) {
     const closestStep = Math.round(steps) * step + min
     points.push(closestStep)
   }
-  const diffs = points.map(point => Math.abs(val - point))
+  const diffs = points.map((point) => Math.abs(val - point))
   return points[diffs.indexOf(Math.min(...diffs))]
 }
 
@@ -90,7 +90,7 @@ export function pauseEvent(e) {
 export function calculateNextValue(func, value, props) {
   const operations = {
     increase: (a, b) => a + b,
-    decrease: (a, b) => a - b
+    decrease: (a, b) => a - b,
   }
 
   const indexToGet = operations[func](

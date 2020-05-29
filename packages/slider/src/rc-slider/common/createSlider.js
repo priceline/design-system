@@ -35,18 +35,18 @@ export default function createSlider(Component) {
       maximumTrackStyle: PropTypes.object, // just for compatibility, will be deperecate
       handleStyle: PropTypes.oneOfType([
         PropTypes.object,
-        PropTypes.arrayOf(PropTypes.object)
+        PropTypes.arrayOf(PropTypes.object),
       ]),
       trackStyle: PropTypes.oneOfType([
         PropTypes.object,
-        PropTypes.arrayOf(PropTypes.object)
+        PropTypes.arrayOf(PropTypes.object),
       ]),
       railStyle: PropTypes.object,
       dotStyle: PropTypes.object,
       activeDotStyle: PropTypes.object,
       autoFocus: PropTypes.bool,
       onFocus: PropTypes.func,
-      onBlur: PropTypes.func
+      onBlur: PropTypes.func,
     }
 
     static defaultProps = {
@@ -76,7 +76,7 @@ export default function createSlider(Component) {
       handleStyle: [{}],
       railStyle: {},
       dotStyle: {},
-      activeDotStyle: {}
+      activeDotStyle: {},
     }
 
     constructor(props) {
@@ -112,7 +112,7 @@ export default function createSlider(Component) {
       this.removeDocumentEvents()
     }
 
-    onMouseDown = e => {
+    onMouseDown = (e) => {
       if (e.button !== 0) {
         return
       }
@@ -134,7 +134,7 @@ export default function createSlider(Component) {
       this.addDocumentMouseEvents()
     }
 
-    onTouchStart = e => {
+    onTouchStart = (e) => {
       if (utils.isNotTouchEvent(e)) return
 
       const isVertical = this.props.vertical
@@ -154,7 +154,7 @@ export default function createSlider(Component) {
       utils.pauseEvent(e)
     }
 
-    onFocus = e => {
+    onFocus = (e) => {
       const { onFocus, vertical } = this.props
       if (utils.isEventFromHandle(e, this.handlesRefs)) {
         const handlePosition = utils.getHandleCenterPosition(vertical, e.target)
@@ -167,7 +167,7 @@ export default function createSlider(Component) {
       }
     }
 
-    onBlur = e => {
+    onBlur = (e) => {
       const { onBlur } = this.props
       this.onEnd()
       if (onBlur) {
@@ -181,7 +181,7 @@ export default function createSlider(Component) {
       }
     }
 
-    onMouseMove = e => {
+    onMouseMove = (e) => {
       if (!this.sliderRef) {
         this.onEnd()
         return
@@ -190,7 +190,7 @@ export default function createSlider(Component) {
       this.onMove(e, position - this.dragOffset)
     }
 
-    onTouchMove = e => {
+    onTouchMove = (e) => {
       if (utils.isNotTouchEvent(e) || !this.sliderRef) {
         this.onEnd()
         return
@@ -200,7 +200,7 @@ export default function createSlider(Component) {
       this.onMove(e, position - this.dragOffset)
     }
 
-    onKeyDown = e => {
+    onKeyDown = (e) => {
       if (this.sliderRef && utils.isEventFromHandle(e, this.handlesRefs)) {
         this.onKeyboard(e)
       }
@@ -274,7 +274,7 @@ export default function createSlider(Component) {
 
     blur() {
       if (!this.props.disabled) {
-        Object.keys(this.handlesRefs).forEach(key => {
+        Object.keys(this.handlesRefs).forEach((key) => {
           if (this.handlesRefs[key] && this.handlesRefs[key].blur) {
             this.handlesRefs[key].blur()
           }
@@ -303,7 +303,7 @@ export default function createSlider(Component) {
       return ratio * 100
     }
 
-    saveSlider = slider => {
+    saveSlider = (slider) => {
       this.sliderRef = slider
     }
 
@@ -328,7 +328,7 @@ export default function createSlider(Component) {
         style,
         railStyle,
         dotStyle,
-        activeDotStyle
+        activeDotStyle,
       } = this.props
       const { tracks, handles } = super.render()
 
@@ -336,7 +336,7 @@ export default function createSlider(Component) {
         [`${prefixCls}-with-marks`]: Object.keys(marks).length,
         [`${prefixCls}-disabled`]: disabled,
         [`${prefixCls}-vertical`]: vertical,
-        [className]: className
+        [className]: className,
       })
       return (
         <div
@@ -354,7 +354,7 @@ export default function createSlider(Component) {
             className={`${prefixCls}-rail`}
             style={{
               ...maximumTrackStyle,
-              ...railStyle
+              ...railStyle,
             }}
           />
           {tracks}

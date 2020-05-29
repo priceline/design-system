@@ -1,0 +1,5 @@
+docs/.next
+docs/out
+**/dist/*
+package-lock.json
+**/*.hbs

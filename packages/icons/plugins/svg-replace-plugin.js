@@ -11,15 +11,15 @@ const replaceSvgPlugin = ({ types: t }) => {
         const closingElementName = path.get('closingElement.name')
         closingElementName.replaceWith(t.jsxIdentifier('Svg'))
       }
-    }
+    },
   }
 
   return {
     visitor: {
       Program(path) {
         path.traverse(replaceSvg)
-      }
-    }
+      },
+    },
   }
 }
 

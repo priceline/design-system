@@ -5,18 +5,18 @@
 
 const DEFAULT_MODIFIERS = {
   shift: {
-    enabled: true
+    enabled: true,
   },
   preventOverflow: {
-    enabled: true
+    enabled: true,
   },
   flip: {
     enabled: true,
-    behavior: ['top', 'right', 'bottom', 'left', 'top']
+    behavior: ['top', 'right', 'bottom', 'left', 'top'],
   },
   arrow: {
-    enabled: true
-  }
+    enabled: true,
+  },
 }
 
 export default DEFAULT_MODIFIERS

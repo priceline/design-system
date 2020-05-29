@@ -71,9 +71,9 @@ Import and use the design system UI components in your application.
 import React from 'react'
 import { Box, Text } from 'pcln-design-system'
 
-const SomeView = props => (
+const SomeView = (props) => (
   <Box p={3}>
-    <Text color="blue">Hello</Text>
+    <Text color='blue'>Hello</Text>
   </Box>
 )
 ```

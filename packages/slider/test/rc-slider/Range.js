@@ -23,16 +23,12 @@ describe('Range', () => {
     expect(wrapper.state('bounds')[0]).toBe(0)
     expect(wrapper.state('bounds')[1]).toBe(50)
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(0)
-        .props().style.left
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(0).props().style
+        .left
     ).toMatch('0%')
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(1)
-        .props().style.left
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(1).props().style
+        .left
     ).toMatch('50%')
 
     const trackStyle = wrapper
@@ -48,16 +44,10 @@ describe('Range', () => {
       <Range ariaLabelGroupForHandles={['Some Label', 'Some other Label']} />
     )
     expect(
-      wrapper
-        .find('.rc-slider-handle-1')
-        .at(1)
-        .prop('aria-label')
+      wrapper.find('.rc-slider-handle-1').at(1).prop('aria-label')
     ).toEqual('Some Label')
     expect(
-      wrapper
-        .find('.rc-slider-handle-2')
-        .at(1)
-        .prop('aria-label')
+      wrapper.find('.rc-slider-handle-2').at(1).prop('aria-label')
     ).toEqual('Some other Label')
   })
 
@@ -66,16 +56,10 @@ describe('Range', () => {
       <Range ariaLabelledByGroupForHandles={['some_id', 'some_other_id']} />
     )
     expect(
-      wrapper
-        .find('.rc-slider-handle-1')
-        .at(1)
-        .prop('aria-labelledby')
+      wrapper.find('.rc-slider-handle-1').at(1).prop('aria-labelledby')
     ).toEqual('some_id')
     expect(
-      wrapper
-        .find('.rc-slider-handle-2')
-        .at(1)
-        .prop('aria-labelledby')
+      wrapper.find('.rc-slider-handle-2').at(1).prop('aria-labelledby')
     ).toEqual('some_other_id')
   })
 
@@ -86,38 +70,28 @@ describe('Range', () => {
         max={5}
         defaultValue={[1, 3]}
         ariaValueTextFormattersForHandles={[
-          value => `${value} of something`,
-          value => `${value} of something else`
+          (value) => `${value} of something`,
+          (value) => `${value} of something else`,
         ]}
       />
     )
     expect(
-      wrapper
-        .find('.rc-slider-handle-1')
-        .at(1)
-        .prop('aria-valuetext')
+      wrapper.find('.rc-slider-handle-1').at(1).prop('aria-valuetext')
     ).toEqual('1 of something')
     expect(
-      wrapper
-        .find('.rc-slider-handle-2')
-        .at(1)
-        .prop('aria-valuetext')
+      wrapper.find('.rc-slider-handle-2').at(1).prop('aria-valuetext')
     ).toEqual('3 of something else')
   })
 
   it('should render Range with tabIndex correctly', () => {
     const wrapper = mount(<Range tabIndex={[1, 2]} />)
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(0)
-        .props().tabIndex
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(0).props()
+        .tabIndex
     ).toEqual(1)
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(1)
-        .props().tabIndex
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(1).props()
+        .tabIndex
     ).toEqual(2)
   })
 
@@ -157,28 +131,20 @@ describe('Range', () => {
     expect(wrapper.state('bounds')[2]).toBe(50)
     expect(wrapper.state('bounds')[3]).toBe(75)
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(0)
-        .props().style.left
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(0).props().style
+        .left
     ).toMatch('0%')
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(1)
-        .props().style.left
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(1).props().style
+        .left
     ).toMatch('25%')
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(2)
-        .props().style.left
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(2).props().style
+        .left
     ).toMatch('50%')
     expect(
-      wrapper
-        .find('.rc-slider-handle > .rc-slider-handle')
-        .at(3)
-        .props().style.left
+      wrapper.find('.rc-slider-handle > .rc-slider-handle').at(3).props().style
+        .left
     ).toMatch('75%')
 
     const track1Style = wrapper
@@ -207,14 +173,17 @@ describe('Range', () => {
     class TestParent extends React.Component {
       // eslint-disable-line
       state = {
-        value: [2, 4, 6]
+        value: [2, 4, 6],
       }
       getSlider() {
         return this.sliderRef
       }
       render() {
         return (
-          <Range ref={ref => (this.sliderRef = ref)} value={this.state.value} />
+          <Range
+            ref={(ref) => (this.sliderRef = ref)}
+            value={this.state.value}
+          />
         )
       }
     }
@@ -232,7 +201,7 @@ describe('Range', () => {
       min: 0,
       max: 10000,
       value: [0.01, 10000],
-      onChange: jest.fn()
+      onChange: jest.fn(),
     }
     const range = mount(<Range {...props} step={0.1} />)
     range.setProps({ min: 0, max: 500 })
@@ -245,7 +214,7 @@ describe('Range', () => {
       min: 0,
       max: 10000,
       value: [0.01, 10000],
-      onChange: jest.fn()
+      onChange: jest.fn(),
     }
     const range = mount(<Range {...props} />)
     range.setProps({ min: 0, max: 500, value: [0.01, 466] })
@@ -258,25 +227,13 @@ describe('Range', () => {
     const wrapper = mount(
       <RangeWithTooltip min={0} max={1000} defaultValue={[50, 55]} />
     )
-    wrapper
-      .find('.rc-slider-handle')
-      .at(1)
-      .simulate('mouseEnter')
+    wrapper.find('.rc-slider-handle').at(1).simulate('mouseEnter')
     expect(wrapper.state().visibles[0]).toBe(true)
-    wrapper
-      .find('.rc-slider-handle')
-      .at(3)
-      .simulate('mouseEnter')
+    wrapper.find('.rc-slider-handle').at(3).simulate('mouseEnter')
     expect(wrapper.state().visibles[1]).toBe(true)
-    wrapper
-      .find('.rc-slider-handle')
-      .at(1)
-      .simulate('mouseLeave')
+    wrapper.find('.rc-slider-handle').at(1).simulate('mouseLeave')
     expect(wrapper.state().visibles[0]).toBe(false)
-    wrapper
-      .find('.rc-slider-handle')
-      .at(3)
-      .simulate('mouseLeave')
+    wrapper.find('.rc-slider-handle').at(3).simulate('mouseLeave')
     expect(wrapper.state().visibles[1]).toBe(false)
   })
 
@@ -286,7 +243,7 @@ describe('Range', () => {
       constructor(props) {
         super(props)
         this.state = {
-          value: [20, 40]
+          value: [20, 40],
         }
       }
       getSlider() {
@@ -295,7 +252,7 @@ describe('Range', () => {
       render() {
         return (
           <Range
-            ref={ref => (this.sliderRef = ref)}
+            ref={(ref) => (this.sliderRef = ref)}
             allowCross={false}
             value={this.state.value}
             pushable={10}
@@ -323,13 +280,13 @@ describe('Range', () => {
       constructor(props) {
         super(props)
         this.state = {
-          value: [20, 40]
+          value: [20, 40],
         }
         this.onChange = this.onChange.bind(this)
       }
       onChange(value) {
         this.setState({
-          value
+          value,
         })
       }
       getSlider() {
@@ -338,7 +295,7 @@ describe('Range', () => {
       render() {
         return (
           <Range
-            ref={ref => (this.sliderRef = ref)}
+            ref={(ref) => (this.sliderRef = ref)}
             allowCross={false}
             value={this.state.value}
             pushable
@@ -352,10 +309,10 @@ describe('Range', () => {
       map[event] = cb
     })
 
-    const mockRect = wrapper => {
+    const mockRect = (wrapper) => {
       wrapper.instance().getSlider().sliderRef.getBoundingClientRect = () => ({
         left: 0,
-        width: 100
+        width: 100,
       })
     }
 
@@ -398,17 +355,17 @@ describe('Range', () => {
       document.body.removeChild(container)
     })
 
-    const mockRect = wrapper => {
+    const mockRect = (wrapper) => {
       wrapper.instance().sliderRef.getBoundingClientRect = () => ({
         left: 10,
-        width: 100
+        width: 100,
       })
     }
 
     it('focus()', () => {
       const handleFocus = jest.fn()
       const wrapper = mount(<Range min={0} max={20} onFocus={handleFocus} />, {
-        attachTo: container
+        attachTo: container,
       })
       mockRect(wrapper)
       wrapper.instance().focus()
@@ -418,7 +375,7 @@ describe('Range', () => {
     it('blur', () => {
       const handleBlur = jest.fn()
       const wrapper = mount(<Range min={0} max={20} onBlur={handleBlur} />, {
-        attachTo: container
+        attachTo: container,
       })
       mockRect(wrapper)
       wrapper.instance().focus()

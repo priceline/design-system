@@ -64,7 +64,7 @@ If you only pass a shade to the function it assumes that a palette color will be
 
 ```jsx
 const ShadeOtherDemo = styled.div`
-  background-color: ${props => getPaletteColor(props.bgColor, 'base')(props)};
+  background-color: ${(props) => getPaletteColor(props.bgColor, 'base')(props)};
 `
 ```
 

@@ -33,11 +33,11 @@ const Steps = ({
   max,
   min,
   dotStyle,
-  activeDotStyle
+  activeDotStyle,
 }) => {
   const range = max - min
   const elements = calcPoints(vertical, marks, dots, step, min, max).map(
-    point => {
+    (point) => {
       const offset = `${(Math.abs(point - min) / range) * 100}%`
 
       const isActived =
@@ -52,7 +52,7 @@ const Steps = ({
 
       const pointClassName = classNames({
         [`${prefixCls}-dot`]: true,
-        [`${prefixCls}-dot-active`]: isActived
+        [`${prefixCls}-dot-active`]: isActived,
       })
 
       return <span className={pointClassName} style={style} key={point} />
@@ -74,7 +74,7 @@ Steps.propTypes = {
   dots: PropTypes.bool,
   step: PropTypes.number,
   marks: PropTypes.object,
-  vertical: PropTypes.bool
+  vertical: PropTypes.bool,
 }
 
 export default Steps

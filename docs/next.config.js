@@ -2,7 +2,7 @@ const mdPlugins = [
   require('remark-images'),
   require('remark-emoji'),
   require('remark-slug'),
-  require('remark-autolink-headings')
+  require('remark-autolink-headings'),
 ]
 
 const IS_PROD = process.env.NODE_ENV === 'production'
@@ -18,12 +18,12 @@ module.exports = {
         {
           loader: '@mdx-js/loader',
           options: {
-            mdPlugins
-          }
-        }
-      ]
+            mdPlugins,
+          },
+        },
+      ],
     })
 
     return config
-  }
+  },
 }

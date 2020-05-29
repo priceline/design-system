@@ -85,7 +85,7 @@ export default <ThumbsUp />
 ```jsx
 import { Icon } from 'pcln-icons'
 
-export default <Icon name="ThumbsUp" />
+export default <Icon name='ThumbsUp' />
 ```
 
 3. The following components now accept an `icon` prop instead of an `iconName`:

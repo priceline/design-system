@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-const Track = props => {
+const Track = (props) => {
   const { className, included, vertical, offset, length, style } = props
 
   const positonStyle = vertical
     ? {
         bottom: `${offset}%`,
-        height: `${length}%`
+        height: `${length}%`,
       }
     : {
         left: `${offset}%`,
-        width: `${length}%`
+        width: `${length}%`,
       }
 
   const elStyle = {
     ...style,
-    ...positonStyle
+    ...positonStyle,
   }
   return included ? <div className={className} style={elStyle} /> : null
 }
