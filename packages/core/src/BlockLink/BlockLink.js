@@ -5,7 +5,7 @@ import { mapProps, refPropType, getSCMigrationRef } from '../utils'
 
 const BlockLink = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
-  ...props
+  ...props,
 }))(styled(Link)`
   display: block;
   color: inherit;
@@ -15,7 +15,7 @@ const BlockLink = mapProps(({ dsRef, ...props }) => ({
 BlockLink.displayName = 'BlockLink'
 
 BlockLink.propTypes = {
-  dsRef: refPropType
+  dsRef: refPropType,
 }
 
 export default BlockLink

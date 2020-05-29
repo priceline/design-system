@@ -12,7 +12,7 @@ npm i pcln-icons
 import React from 'react'
 import { Flights as FlightsIcon } from 'pcln-icons'
 
-export default props => <FlightsIcon mr={2} />
+export default (props) => <FlightsIcon mr={2} />
 ```
 
 For a complete list of all icons, see: [the iconography docs](https://priceline.github.io/design-system/iconography)
@@ -25,7 +25,7 @@ prop, you can use:
 import React from 'react'
 import { Icon } from 'pcln-icons'
 
-export default props => <Icon name={iconName} mr={2} />
+export default (props) => <Icon name={iconName} mr={2} />
 ```
 
 ## Development

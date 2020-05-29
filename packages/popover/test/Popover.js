@@ -15,7 +15,7 @@ const popoverProps = {
   ariaLabel: 'Top Popover',
   placement: 'top',
   idx: 1,
-  width: 400
+  width: 400,
 }
 
 const triggerButtonText = 'Trigger Button'
@@ -79,7 +79,7 @@ describe('Popover', () => {
       fireEvent.keyUp(document.body, {
         key: 'Escape',
         keyCode: 27,
-        which: 27
+        which: 27,
       })
       expect(queryByText('Hello there!')).toBeFalsy()
     })
@@ -94,7 +94,7 @@ describe('Popover', () => {
       fireEvent.keyUp(document.body, {
         key: 'Enter',
         keyCode: 13,
-        which: 13
+        which: 13,
       })
       expect(getByText('Hello there!')).toBeTruthy()
     })
@@ -103,7 +103,7 @@ describe('Popover', () => {
   describe('UI Positioning', () => {
     test('Bottom', async () => {
       const { getByText } = renderWithTheme(
-        <Popover {...popoverProps} placement="bottom">
+        <Popover {...popoverProps} placement='bottom'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
@@ -113,7 +113,7 @@ describe('Popover', () => {
 
     test('Bottom End', async () => {
       const { getByText } = renderWithTheme(
-        <Popover {...popoverProps} placement="bottom-end">
+        <Popover {...popoverProps} placement='bottom-end'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
@@ -123,7 +123,7 @@ describe('Popover', () => {
 
     test('Bottom Start', async () => {
       const { getByText } = renderWithTheme(
-        <Popover {...popoverProps} placement="bottom-start">
+        <Popover {...popoverProps} placement='bottom-start'>
           <button>{triggerButtonText}</button>
         </Popover>
       )

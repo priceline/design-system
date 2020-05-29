@@ -21,13 +21,13 @@ class PopoverContent extends Component {
     window.removeEventListener('keyup', this.handleKeyUp, false)
   }
 
-  handleKeyUp = evt => {
+  handleKeyUp = (evt) => {
     const { onCloseRequest } = this.props
     const keys = {
       // Target ESC key
       27: () => {
         onCloseRequest()
-      }
+      },
     }
 
     if (keys[evt.keyCode]) {
@@ -37,7 +37,7 @@ class PopoverContent extends Component {
     }
   }
 
-  calcOffset = placement => {
+  calcOffset = (placement) => {
     // Need to account for the padding added around the popover, this fixes the offset at the start and end position
     if (RegExp('start*').test(placement)) {
       return '-16px'
@@ -71,7 +71,7 @@ class PopoverContent extends Component {
       overlayOpacity,
       placement,
       renderContent,
-      trapFocus
+      trapFocus,
     } = this.props
     const styleProps = {
       borderColor: this.getBorderColorName(
@@ -79,19 +79,19 @@ class PopoverContent extends Component {
         this.props.borderColor
       ),
       zIndex: this.props.zIndex,
-      width: this.props.width
+      width: this.props.width,
     }
     let color = this.props.color ? this.props.color : 'background.lightest'
 
     const content = trapFocus ? (
       <FocusLock>
         {renderContent({
-          handleClose: onCloseRequest
+          handleClose: onCloseRequest,
         })}
       </FocusLock>
     ) : (
       renderContent({
-        handleClose: onCloseRequest
+        handleClose: onCloseRequest,
       })
     )
 
@@ -102,8 +102,8 @@ class PopoverContent extends Component {
           modifiers={{
             ...DEFAULTS_MODIFIERS,
             offset: {
-              offset: this.calcOffset(placement)
-            }
+              offset: this.calcOffset(placement),
+            },
           }}
           {...this.props}
         >
@@ -115,14 +115,14 @@ class PopoverContent extends Component {
               style={style}
               data-placement={placement}
               {...styleProps}
-              role="dialog"
+              role='dialog'
               aria-describedby={`dialog-description-${idx}`}
             >
               <ContentContainer
                 {...{ [getSCMigrationRef()]: contentRef }}
                 ref={contentRef}
                 {...styleProps}
-                tabIndex="-1"
+                tabIndex='-1'
               >
                 <Content color={color} id={`popover-description-${idx}`}>
                   {content}
@@ -158,7 +158,7 @@ const PopperGuide = styled(Box)`
 `
 const ContentContainer = styled.section`
   box-shadow: 0 0 0 1px
-      ${props => getPaletteColor(props.borderColor, 'base')(props)},
+      ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
     0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08),
     0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${themeGet('fontSizes.0')}px;
@@ -186,14 +186,14 @@ PopoverContent.propTypes = {
   zIndex: PropTypes.number,
   width: PropTypes.number,
   overlayOpacity: PropTypes.number,
-  trapFocus: PropTypes.bool
+  trapFocus: PropTypes.bool,
 }
 
 PopoverContent.defaultProps = {
   p: 2,
   placement: 'top',
   zIndex: 102,
-  width: 400
+  width: 400,
 }
 
 export default PopoverContent

@@ -5,11 +5,11 @@ import {
   Heading,
   Truncate,
   Divider,
-  theme
+  theme,
 } from 'pcln-design-system'
 import { PageTitle, Description } from '../src/components'
 
-const Typography = props => (
+const Typography = (props) => (
   <Box>
     <PageTitle>Typography</PageTitle>
     <Description>

@@ -4,7 +4,7 @@ import Overlay from '../src/Overlay'
 
 const overlayProps = {
   overlayOpacity: 0.3,
-  zIndex: 200
+  zIndex: 200,
 }
 
 describe('Background Overlay', () => {

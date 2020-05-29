@@ -11,7 +11,7 @@ describe('marks', () => {
     originGetBoundingClientRect = HTMLElement.prototype.getBoundingClientRect
     HTMLElement.prototype.getBoundingClientRect = () => ({
       width: 100,
-      height: 100
+      height: 100,
     })
   })
 
@@ -26,43 +26,25 @@ describe('marks', () => {
     const sliderWrapper = mount(<Slider value={30} marks={marks} />)
     expect(sliderWrapper.find('.rc-slider-mark-text').length).toBe(3)
     expect(
-      sliderWrapper
-        .find('.rc-slider-mark-text')
-        .at(0)
-        .instance().innerHTML
+      sliderWrapper.find('.rc-slider-mark-text').at(0).instance().innerHTML
     ).toBe('0')
     expect(
-      sliderWrapper
-        .find('.rc-slider-mark-text')
-        .at(1)
-        .instance().innerHTML
+      sliderWrapper.find('.rc-slider-mark-text').at(1).instance().innerHTML
     ).toBe('30')
     expect(
-      sliderWrapper
-        .find('.rc-slider-mark-text')
-        .at(2)
-        .instance().innerHTML
+      sliderWrapper.find('.rc-slider-mark-text').at(2).instance().innerHTML
     ).toBe('100')
 
     const rangeWrapper = mount(<Range value={[0, 30]} marks={marks} />)
     expect(rangeWrapper.find('.rc-slider-mark-text').length).toBe(3)
     expect(
-      rangeWrapper
-        .find('.rc-slider-mark-text')
-        .at(0)
-        .instance().innerHTML
+      rangeWrapper.find('.rc-slider-mark-text').at(0).instance().innerHTML
     ).toBe('0')
     expect(
-      rangeWrapper
-        .find('.rc-slider-mark-text')
-        .at(1)
-        .instance().innerHTML
+      rangeWrapper.find('.rc-slider-mark-text').at(1).instance().innerHTML
     ).toBe('30')
     expect(
-      rangeWrapper
-        .find('.rc-slider-mark-text')
-        .at(2)
-        .instance().innerHTML
+      rangeWrapper.find('.rc-slider-mark-text').at(2).instance().innerHTML
     ).toBe('100')
   })
 
@@ -77,7 +59,7 @@ describe('marks', () => {
       pageX: 25,
       button: 0,
       stopPropagation() {},
-      preventDefault() {}
+      preventDefault() {},
     })
     expect(sliderWrapper.state('value')).toBe(30)
   })
@@ -92,7 +74,7 @@ describe('marks', () => {
       pageX: 25,
       button: 0,
       stopPropagation() {},
-      preventDefault() {}
+      preventDefault() {},
     })
     expect(rangeWrapper.state('bounds')).toBe([0, 30])
   })

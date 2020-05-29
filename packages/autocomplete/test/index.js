@@ -9,7 +9,7 @@ describe('Autocomplete', () => {
         <Autocomplete.Label>Test</Autocomplete.Label>
         <Autocomplete.Input />
         <Autocomplete.Menu>
-          {us.STATES.map(state => (
+          {us.STATES.map((state) => (
             <Autocomplete.Item
               key={state.name}
               item={state}
@@ -26,7 +26,7 @@ describe('Autocomplete', () => {
     const json = rendererCreateWithTheme(
       <Autocomplete defaultIsOpen={true}>
         <Autocomplete.Menu>
-          {us.STATES.map(state => (
+          {us.STATES.map((state) => (
             <Autocomplete.Item
               key={state.name}
               item={state}
@@ -44,7 +44,7 @@ describe('Autocomplete', () => {
     const json = rendererCreateWithTheme(
       <Autocomplete defaultIsOpen={true} defaultHighlightedIndex={0}>
         <Autocomplete.Menu>
-          {us.STATES.map(state => (
+          {us.STATES.map((state) => (
             <Autocomplete.Item
               key={state.name}
               item={state}

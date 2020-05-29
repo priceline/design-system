@@ -21,13 +21,13 @@ const Overlay = ({
   popoverOpen,
   handleClick,
   overlayOpacity,
-  zIndex
+  zIndex,
 }) => {
   return (
     <StyledOverlay
       className={className}
-      aria-hidden="true"
-      tabIndex="-1"
+      aria-hidden='true'
+      tabIndex='-1'
       onClick={handleClick}
       popoverOpen={popoverOpen}
       overlayOpacity={overlayOpacity}
@@ -42,13 +42,13 @@ Overlay.propTypes = {
   popoverOpen: PropTypes.bool,
   handleClick: PropTypes.func,
   overlayOpacity: PropTypes.number,
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
 }
 
 Overlay.defaultProps = {
   popoverOpen: true,
   overlayOpacity: 0,
-  zIndex: 101
+  zIndex: 101,
 }
 
 export default Overlay

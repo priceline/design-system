@@ -51,9 +51,9 @@ import CustomInput from './CustomInput'
 
 CustomInput.isField = true
 
-export default props => (
+export default (props) => (
   <IconField>
-    <Icon name="Calendar" />
+    <Icon name='Calendar' />
     <CustomInput {...props} />
   </IconField>
 )

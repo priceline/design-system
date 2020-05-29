@@ -4,11 +4,11 @@ import TestRenderer from 'react-test-renderer'
 import {
   Airplane as AirplaneIcon,
   Accessible as AccessibleIcon,
-  Icon
+  Icon,
 } from '../'
 
 import * as icons from '../'
-const iconList = Object.keys(icons).map(key => [key, icons[key]])
+const iconList = Object.keys(icons).map((key) => [key, icons[key]])
 
 test.each(iconList)('renders %s', (key, Component) => {
   const json = TestRenderer.create(<Component />).toJSON()
@@ -17,7 +17,7 @@ test.each(iconList)('renders %s', (key, Component) => {
 
 describe('Icon', () => {
   test('defaults title to name if not provided', () => {
-    const testRenderer = TestRenderer.create(<Icon name="Accessible" />)
+    const testRenderer = TestRenderer.create(<Icon name='Accessible' />)
     const testInstance = testRenderer.root
     expect(testInstance.findByType('title').children[0]).toBe('Accessible')
   })
@@ -29,10 +29,10 @@ describe('Icon', () => {
         if (key !== 'Icon') {
           const testRenderer = TestRenderer.create(
             <Component
-              title="SVG title"
-              titleId="unique-svg-title-id"
-              desc="SVG icon description"
-              descId="unique-svg-icon-descId"
+              title='SVG title'
+              titleId='unique-svg-title-id'
+              desc='SVG icon description'
+              descId='unique-svg-icon-descId'
             />
           )
           const testInstance = testRenderer.root
@@ -48,10 +48,10 @@ describe('Icon', () => {
     test(`render svg <Icon /> with accessibility attributes when 'title' and 'desc' props are passed`, () => {
       const testRenderer = TestRenderer.create(
         <AccessibleIcon
-          title="Accessible Logo"
-          titleId="titleId"
-          desc="Accessible Logo description"
-          descId="descId"
+          title='Accessible Logo'
+          titleId='titleId'
+          desc='Accessible Logo description'
+          descId='descId'
         />
       )
       const testInstance = testRenderer.root
@@ -72,10 +72,10 @@ describe('Icon', () => {
 
     test(`render svg <Icon /> with 'aria-hidden' as 'true' when 'title' prop is not passed`, () => {
       const testRenderer = TestRenderer.create(
-        <AccessibleIcon desc="Accessible Logo description" descId="descId" />
+        <AccessibleIcon desc='Accessible Logo description' descId='descId' />
       )
       const testInstance = testRenderer.root
-      const title = testInstance.findAll(el => el.type == 'title')
+      const title = testInstance.findAll((el) => el.type == 'title')
       expect(title).toHaveLength(0)
       expect(testInstance.findByType('desc').children[0]).toBe(
         'Accessible Logo description'
@@ -92,9 +92,9 @@ describe('Icon', () => {
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
       const testRenderer = TestRenderer.create(
         <Icon
-          name="Accessible"
-          title="Accessible Logo"
-          titleId="accessible-logo"
+          name='Accessible'
+          title='Accessible Logo'
+          titleId='accessible-logo'
         />
       )
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
@@ -104,7 +104,7 @@ describe('Icon', () => {
 
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
       const testRenderer = TestRenderer.create(
-        <AccessibleIcon title="Accessible Logo" />
+        <AccessibleIcon title='Accessible Logo' />
       )
 
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
@@ -123,7 +123,7 @@ describe('Icon', () => {
 
     test('Icon should render with no outline ', () => {
       const namedJson = TestRenderer.create(<AirplaneIcon />).toJSON()
-      const json = TestRenderer.create(<Icon name="Airplane" />).toJSON()
+      const json = TestRenderer.create(<Icon name='Airplane' />).toJSON()
       expect(json).toHaveStyleRule('outline', 'none')
       expect(namedJson).toHaveStyleRule('outline', 'none')
     })

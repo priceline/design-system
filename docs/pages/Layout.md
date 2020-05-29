@@ -207,7 +207,7 @@ The Flex and Box components are also well-suited to create things like navbars a
 Start with a Flex container and set its color to white with a blue background.
 
 ```jsx
-<Flex color="white" bg="blue" />
+<Flex color='white' bg='blue' />
 ```
 
 Next, add an Icon and some placeholder Text components for demonstration.
@@ -271,7 +271,7 @@ and the `wrap` prop on the Flex component, this sort of layout can be achieved w
 
 ```jsx
 <Flex wrap>
-  {items.map(item => (
+  {items.map((item) => (
     <Box key={item.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
       <ProductCard {...item} />
     </Box>
@@ -312,7 +312,7 @@ To set a width that changes at different breakpoints, pass an array to the `widt
     1 / 2, // 50% from the small (sm) breakpoint and up
     1 / 3, // 33% from the medium (md) breakpoint and up
     1 / 4, // 25% from the large (lg) breakpoint and up
-    1 / 8 // 12.5% from the x-large (xl) breakpoint and up
+    1 / 8, // 12.5% from the x-large (xl) breakpoint and up
   ]}
 />
 ```
@@ -324,7 +324,7 @@ To skip setting a width at a particular breakpoint, use a `null` value in the ar
   width={[
     1, // 100% for all viewport widths
     null, // skip the sm breakpoint (stays 100%)
-    1 / 2 // 50% from the md breakpoint and up
+    1 / 2, // 50% from the md breakpoint and up
   ]}
 />
 ```

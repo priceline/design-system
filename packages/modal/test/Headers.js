@@ -12,27 +12,27 @@ const customRender = (node, ...options) => {
   return {
     ...rendered,
     rerender: (ui, options) =>
-      customRender(ui, { container: rendered.container, ...options })
+      customRender(ui, { container: rendered.container, ...options }),
   }
 }
 
 describe('SmallModalHeader', () => {
-  const { rerender } = customRender(<SmallModalHeader bg="secondary" />)
+  const { rerender } = customRender(<SmallModalHeader bg='secondary' />)
 
   test('render', () => {
-    const { container } = rerender(<SmallModalHeader bg="secondary" />)
+    const { container } = rerender(<SmallModalHeader bg='secondary' />)
     expect(container.firstChild).toMatchSnapshot()
   })
 })
 
 describe('ModalHeader', () => {
-  const { rerender } = customRender(<ModalHeader bg="secondary" />)
+  const { rerender } = customRender(<ModalHeader bg='secondary' />)
 
   test('render', () => {
     const { container } = rerender(
       <ModalHeader
-        bg="secondary"
-        title="test"
+        bg='secondary'
+        title='test'
         onClose={() => {
           console.log('close')
         }}

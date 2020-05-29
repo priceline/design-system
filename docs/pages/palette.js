@@ -7,7 +7,7 @@ import {
   Heading,
   Text,
   Divider,
-  createTheme
+  createTheme,
 } from 'pcln-design-system'
 import select from 'select'
 import { PageTitle, Description, Code } from '../src/components'
@@ -16,7 +16,7 @@ class CopyButton extends React.Component {
   constructor() {
     super()
 
-    this.handleClick = e => {
+    this.handleClick = (e) => {
       select(this.ghost)
       document.execCommand('copy')
     }
@@ -25,28 +25,28 @@ class CopyButton extends React.Component {
   render() {
     const child = React.Children.only(this.props.children)
     const clone = React.cloneElement(child, {
-      onClick: this.handleClick
+      onClick: this.handleClick,
     })
 
     return [
       clone,
       <div
-        ref={ref => (this.ghost = ref)}
+        ref={(ref) => (this.ghost = ref)}
         children={this.props.text}
         style={{
           position: 'absolute',
           zIndex: -1,
-          opacity: 0
+          opacity: 0,
         }}
-      />
+      />,
     ]
   }
 }
 
-const flattenObject = obj =>
-  Object.keys(obj).map(key => ({
+const flattenObject = (obj) =>
+  Object.keys(obj).map((key) => ({
     name: key,
-    value: obj[key]
+    value: obj[key],
   }))
 
 const ColorChip = styled(Box)`
@@ -111,10 +111,10 @@ const ColorCard = ({ name, value }) => (
         <ColorChip bg={value} />
         <span>Press to copy</span>
         <Box p={2}>
-          <Text fontSize={0} mb={1} align="left">
+          <Text fontSize={0} mb={1} align='left'>
             {name}
           </Text>
-          <Code fontSize={0} align="left" color="gray">
+          <Code fontSize={0} align='left' color='gray'>
             {value}
           </Code>
         </Box>
@@ -123,18 +123,18 @@ const ColorCard = ({ name, value }) => (
   </Card>
 )
 
-const Column = props => (
+const Column = (props) => (
   <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 5]} mb={4} px={2} />
 )
 
-const ColorList = props =>
-  props.colors.map(color => (
+const ColorList = (props) =>
+  props.colors.map((color) => (
     <Column key={color.key}>
       <ColorCard {...color} />
     </Column>
   ))
 
-export const SectionTitle = props => (
+export const SectionTitle = (props) => (
   <Heading.h3 fontSize={[2, 3]} bold mt={[2, 4]} {...props} />
 )
 
@@ -142,13 +142,13 @@ const defaultPalette = createTheme().palette
 
 const rest = {}
 
-const Palette = props => (
+const Palette = (props) => (
   <Box>
     <PageTitle>Palette</PageTitle>
     <Description>
       The design system includes a palette that can be used to theme components.
     </Description>
-    {Object.keys(defaultPalette).map(key => {
+    {Object.keys(defaultPalette).map((key) => {
       if (typeof defaultPalette[key] === 'object') {
         return (
           <React.Fragment>

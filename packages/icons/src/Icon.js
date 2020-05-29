@@ -43,7 +43,7 @@ Icon.isIcon = true
 Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
-  size: 24
+  size: 24,
 }
 
 Icon.propTypes = {
@@ -58,7 +58,7 @@ Icon.propTypes = {
   title: PropTypes.string,
   titleId: PropTypes.string,
   desc: PropTypes.string,
-  descId: PropTypes.string
+  descId: PropTypes.string,
 }
 
 export default Icon

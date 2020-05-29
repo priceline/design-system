@@ -17,7 +17,7 @@ describe('utils', () => {
         marks: { 0: 0, 30: 30, 60: 60 },
         step: null,
         min: 0,
-        max: 100
+        max: 100,
       }
 
       expect(utils.getClosestPoint(value, props)).toBe(30)
@@ -29,7 +29,7 @@ describe('utils', () => {
         marks: { 0: 0, 30: 30, 60: 60 },
         step: 3,
         min: 0,
-        max: 100
+        max: 100,
       }
 
       expect(utils.getClosestPoint(value, props)).toBe(39)
@@ -41,7 +41,7 @@ describe('utils', () => {
         marks: {},
         step: 6,
         min: 0,
-        max: 100
+        max: 100,
       }
 
       expect(utils.getClosestPoint(value, props)).toBe(96)

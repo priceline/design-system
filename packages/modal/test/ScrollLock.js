@@ -25,7 +25,7 @@ describe('ScrollLock', () => {
     const scrollLock = new ScrollLock()
     const mockHead = {
       appendChild: jest.fn(),
-      removeChild: jest.fn()
+      removeChild: jest.fn(),
     }
     scrollLock.head = mockHead
     scrollLock.off()
@@ -36,7 +36,7 @@ describe('ScrollLock', () => {
     const scrollLock = new ScrollLock()
     const mockHead = {
       appendChild: jest.fn(),
-      removeChild: jest.fn()
+      removeChild: jest.fn(),
     }
     scrollLock.head = mockHead
     scrollLock.on()

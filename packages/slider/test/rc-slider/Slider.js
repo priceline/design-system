@@ -14,17 +14,11 @@ describe('Slider', () => {
   it('should render Slider with value correctly', () => {
     const wrapper = mount(<Slider value={50} />)
     expect(wrapper.state('value')).toBe(50)
-    expect(
-      wrapper
-        .find('.rc-slider-handle')
-        .at(1)
-        .props().style.left
-    ).toMatch('50%')
+    expect(wrapper.find('.rc-slider-handle').at(1).props().style.left).toMatch(
+      '50%'
+    )
 
-    const trackStyle = wrapper
-      .find('.rc-slider-track')
-      .at(1)
-      .props().style
+    const trackStyle = wrapper.find('.rc-slider-track').at(1).props().style
     expect(trackStyle.left).toMatch('0%')
     expect(trackStyle.width).toMatch('50%')
   })
@@ -35,22 +29,16 @@ describe('Slider', () => {
   })
 
   it('sets aria-label on the handle', () => {
-    const wrapper = mount(<Slider ariaLabelForHandle="Some Label" />)
-    expect(
-      wrapper
-        .find('.rc-slider-handle')
-        .at(1)
-        .prop('aria-label')
-    ).toEqual('Some Label')
+    const wrapper = mount(<Slider ariaLabelForHandle='Some Label' />)
+    expect(wrapper.find('.rc-slider-handle').at(1).prop('aria-label')).toEqual(
+      'Some Label'
+    )
   })
 
   it('sets aria-labelledby on the handle', () => {
-    const wrapper = mount(<Slider ariaLabelledByForHandle="some_id" />)
+    const wrapper = mount(<Slider ariaLabelledByForHandle='some_id' />)
     expect(
-      wrapper
-        .find('.rc-slider-handle')
-        .at(1)
-        .prop('aria-labelledby')
+      wrapper.find('.rc-slider-handle').at(1).prop('aria-labelledby')
     ).toEqual('some_id')
   })
 
@@ -60,7 +48,7 @@ describe('Slider', () => {
         min={0}
         max={5}
         defaultValue={3}
-        ariaValueTextFormatterForHandle={value => `${value} of something`}
+        ariaValueTextFormatterForHandle={(value) => `${value} of something`}
       />
     )
     const handle = wrapper.find('.rc-slider-handle').at(1)
@@ -71,21 +59,13 @@ describe('Slider', () => {
     handle.simulate('keyDown', { keyCode: keyCode.RIGHT })
 
     expect(
-      wrapper
-        .find('.rc-slider-handle')
-        .at(1)
-        .props()['aria-valuetext']
+      wrapper.find('.rc-slider-handle').at(1).props()['aria-valuetext']
     ).toEqual('4 of something')
   })
 
   it('should allow tabIndex to be set on Handle via Slider', () => {
     const wrapper = mount(<Slider tabIndex={1} />)
-    expect(
-      wrapper
-        .find('.rc-slider-handle')
-        .at(1)
-        .props().tabIndex
-    ).toEqual(1)
+    expect(wrapper.find('.rc-slider-handle').at(1).props().tabIndex).toEqual(1)
   })
 
   it('should allow tabIndex to be set on Handle via Slider and be equal null', () => {
@@ -320,10 +300,10 @@ describe('Slider', () => {
       document.body.removeChild(container)
     })
 
-    const mockRect = wrapper => {
+    const mockRect = (wrapper) => {
       wrapper.instance().sliderRef.getBoundingClientRect = () => ({
         left: 10,
-        width: 100
+        width: 100,
       })
     }
 

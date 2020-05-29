@@ -8,7 +8,7 @@ import {
   deprecatedPropType,
   Label as PclnLabel,
   Input as PclnInput,
-  getPaletteColor
+  getPaletteColor,
 } from 'pcln-design-system'
 import { themeGet } from 'styled-system'
 
@@ -17,7 +17,7 @@ export const AutocompleteContext = React.createContext()
 export const withAutocomplete = (Component, mapProps) =>
   React.forwardRef((props, ref) => (
     <AutocompleteContext.Consumer
-      children={state => (
+      children={(state) => (
         <Component ref={ref} {...props} {...mapProps({ ...props, ...state })} />
       )}
     />
@@ -38,7 +38,7 @@ const MenuCard = styled(Card)`
   top: 100%;
   left: 0;
   right: 0;
-  max-height: ${props => props.height};
+  max-height: ${(props) => props.height};
   overflow-y: auto;
 `
 
@@ -47,11 +47,11 @@ MenuCard.defaultProps = {
   height: '256px',
   borderWidth: 0,
   boxShadowSize: 'lg',
-  mt: 1
+  mt: 1,
 }
 
 MenuCard.propTypes = {
-  bg: deprecatedPropType('color')
+  bg: deprecatedPropType('color'),
 }
 
 const MenuRoot = React.forwardRef((props, ref) => (
@@ -64,12 +64,12 @@ export const Menu = ({ children, ...props }) => (
       <MenuRoot
         {...getMenuProps({
           ...props,
-          isOpen
+          isOpen,
         })}
         children={
           isOpen
             ? React.Children.toArray(children)
-                .filter(el => match(el.props.item, inputValue))
+                .filter((el) => match(el.props.item, inputValue))
                 .map((el, index) => React.cloneElement(el, { index }))
             : false
         }
@@ -93,10 +93,10 @@ const ItemRoot = styled(Flex)`
 `
 
 ItemRoot.defaultProps = {
-  alignItems: 'center'
+  alignItems: 'center',
 }
 
-export const Item = props => (
+export const Item = (props) => (
   <AutocompleteContext.Consumer
     children={({ item, getItemProps, highlightedIndex }) => (
       <ItemRoot
@@ -106,7 +106,7 @@ export const Item = props => (
           py: 1,
           'data-highlighted':
             highlightedIndex === props.index ? true : undefined,
-          ...props
+          ...props,
         })}
       />
     )}
@@ -120,11 +120,11 @@ export class Autocomplete extends React.Component {
   static Item = Item
 
   static propTypes = {
-    match: PropTypes.func
+    match: PropTypes.func,
   }
 
   static defaultProps = {
-    match: () => true
+    match: () => true,
   }
 
   render() {
@@ -133,7 +133,7 @@ export class Autocomplete extends React.Component {
     return (
       <Downshift
         {...props}
-        children={state => (
+        children={(state) => (
           <div style={{ position: 'relative', ...style }}>
             <AutocompleteContext.Provider
               value={{ ...props, ...state }}

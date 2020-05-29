@@ -8,7 +8,7 @@ const PopoverArrow = ({
   placement,
   borderColor,
   color,
-  className
+  className,
 }) => (
   <Arrow
     className={className}
@@ -16,7 +16,7 @@ const PopoverArrow = ({
     data-placement={placement}
     borderColor={borderColor}
     color={color}
-    aria-hidden="true"
+    aria-hidden='true'
   >
     <div ref={arrowProps.ref} />
   </Arrow>
@@ -91,17 +91,17 @@ const Arrow = styled.span`
 PopoverArrow.propTypes = {
   arrowProps: PropTypes.shape({
     ref: PropTypes.func,
-    style: PropTypes.object
+    style: PropTypes.object,
   }).isRequired,
   className: PropTypes.string,
   color: PropTypes.string,
   bg: deprecatedPropType('color'),
   borderColor: PropTypes.string,
-  placement: PropTypes.string
+  placement: PropTypes.string,
 }
 
 PopoverArrow.defaultProps = {
-  placement: 'top'
+  placement: 'top',
 }
 
 export default PopoverArrow

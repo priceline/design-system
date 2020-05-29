@@ -123,7 +123,7 @@ Previously, most components had a default prop for `theme`. This was removed as 
 import { render } from '@testing-library/react'
 import { ThemeProvider } from 'pcln-design-system'
 
-global.renderWithTheme = Tree => {
+global.renderWithTheme = (Tree) => {
   return render(<ThemeProvider children={Tree} />)
 }
 ```

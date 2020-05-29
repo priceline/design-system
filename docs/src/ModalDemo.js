@@ -6,25 +6,25 @@ export default class ModalDemo extends React.Component {
     super(props)
 
     this.state = {
-      isOpen: false
+      isOpen: false,
     }
 
     this.toggleModal = this.toggleModal.bind(this)
   }
 
   toggleModal() {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen
+    this.setState((prevState) => ({
+      isOpen: !prevState.isOpen,
     }))
   }
 
   render() {
     return (
       <div>
-        {React.Children.map(this.props.children, child =>
+        {React.Children.map(this.props.children, (child) =>
           React.cloneElement(child, {
             isOpen: this.state.isOpen,
-            onClose: this.toggleModal
+            onClose: this.toggleModal,
           })
         )}
         <Button onClick={this.toggleModal}>Open modal</Button>

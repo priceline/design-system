@@ -4,19 +4,19 @@ import { ServerStyleSheet } from 'styled-components'
 const BaseCSS = ({ css }) => (
   <style
     dangerouslySetInnerHTML={{
-      __html: css
+      __html: css,
     }}
   />
 )
 
 BaseCSS.defaultProps = {
-  css: '*{box-sizing:border-box}body{margin:0}'
+  css: '*{box-sizing:border-box}body{margin:0}',
 }
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
-    const page = renderPage(App => props =>
+    const page = renderPage((App) => (props) =>
       sheet.collectStyles(<App {...props} />)
     )
     const styles = sheet.getStyleElement()
@@ -29,11 +29,11 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="generator" content="mdx-docs" />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <meta name='generator' content='mdx-docs' />
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Montserrat:500,700"
+            rel='stylesheet'
+            href='https://fonts.googleapis.com/css?family=Montserrat:500,700'
           />
           <BaseCSS />
           {styles}

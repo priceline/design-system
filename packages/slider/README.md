@@ -1,4 +1,3 @@
-
 # pcln-slider
 
 React range slider component
@@ -12,12 +11,7 @@ import Slider from 'pcln-slider'
 ```
 
 ```jsx
-<Slider
-  min={0}
-  max={0}
-  value={value}
-  onChange={handleChange}
-/>
+<Slider min={0} max={0} value={value} onChange={handleChange} />
 ```
 
 ## Props

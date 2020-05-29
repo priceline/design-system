@@ -4,7 +4,7 @@ import dynamicTitlePlugin from '../plugins/svg-dynamic-title-plugin'
 const testPlugin = (code, options) => {
   const result = transform(code, {
     plugins: ['@babel/plugin-syntax-jsx', [dynamicTitlePlugin, options]],
-    configFile: false
+    configFile: false,
   })
 
   return result.code

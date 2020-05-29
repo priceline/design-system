@@ -14,7 +14,7 @@ import { space, width, themeGet } from 'styled-system'
  * @example getPaletteColor('primary.base')(props) => theme.palette.primary.base
  * @example getPaletteColor('primary', 'base')(props) => theme.palette.primary.base
  */
-const getPaletteColor = (...args) => props => {
+const getPaletteColor = (...args) => (props) => {
   let color = args.length === 2 ? args[0] : props.color
   let shade = args.length === 2 ? args[1] : args[0]
 
@@ -33,7 +33,7 @@ const getPaletteColor = (...args) => props => {
   )
 }
 
-const color = props => {
+const color = (props) => {
   if (props.color) {
     return css`
       color: ${getPaletteColor('base')(props)};
@@ -43,7 +43,7 @@ const color = props => {
   return null
 }
 
-const bg = props => {
+const bg = (props) => {
   if (props.bg) {
     return css`
       background-color: ${getPaletteColor(props.bg, 'base')(props)};
@@ -55,7 +55,7 @@ const bg = props => {
 
 const Svg = styled('svg')(
   {
-    flex: 'none'
+    flex: 'none',
   },
   space,
   width,
@@ -66,7 +66,7 @@ const Svg = styled('svg')(
 Svg.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
-  ...color.propTypes
+  ...color.propTypes,
 }
 
 export default Svg

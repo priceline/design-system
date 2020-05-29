@@ -20,15 +20,15 @@ const StyledCloseButton = styled(CloseButton)`
   }
 
   &:focus {
-    background-color: ${props => props.theme.palette.primary.dark};
+    background-color: ${(props) => props.theme.palette.primary.dark};
     outline: none;
   }
 `
 
 const ModalHeader = ({ bg, color, onClose, title }) => (
   <HeaderWrapper
-    align="center"
-    alignItems="center"
+    align='center'
+    alignItems='center'
     color={color}
     bg={bg}
     px={3}
@@ -38,7 +38,7 @@ const ModalHeader = ({ bg, color, onClose, title }) => (
         {title}
       </Title>
     )}
-    {onClose && <StyledCloseButton onClick={onClose} ml="auto" />}
+    {onClose && <StyledCloseButton onClick={onClose} ml='auto' />}
   </HeaderWrapper>
 )
 
@@ -48,12 +48,12 @@ ModalHeader.propTypes = {
   bg: deprecatedPropType('color'),
   onClose: PropTypes.func,
   color: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 ModalHeader.defaultProps = {
   bg: 'blue',
-  color: 'white'
+  color: 'white',
 }
 
 export default ModalHeader

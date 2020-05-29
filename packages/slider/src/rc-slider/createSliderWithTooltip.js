@@ -9,28 +9,28 @@ export default function createSliderWithTooltip(Component) {
       tipFormatter: PropTypes.func,
       handleStyle: PropTypes.oneOfType([
         PropTypes.object,
-        PropTypes.arrayOf(PropTypes.object)
+        PropTypes.arrayOf(PropTypes.object),
       ]),
-      tipProps: PropTypes.object
+      tipProps: PropTypes.object,
     }
     static defaultProps = {
       tipFormatter(value) {
         return value
       },
       handleStyle: [{}],
-      tipProps: {}
+      tipProps: {},
     }
     constructor(props) {
       super(props)
       this.state = { visibles: {} }
     }
     handleTooltipVisibleChange = (index, visible) => {
-      this.setState(prevState => {
+      this.setState((prevState) => {
         return {
           visibles: {
             ...prevState.visibles,
-            [index]: visible
-          }
+            [index]: visible,
+          },
         }
       })
     }
@@ -72,7 +72,7 @@ export default function createSliderWithTooltip(Component) {
           <Handle
             {...restProps}
             style={{
-              ...handleStyleWithIndex
+              ...handleStyleWithIndex,
             }}
             value={value}
             onMouseEnter={() => this.handleTooltipVisibleChange(index, true)}

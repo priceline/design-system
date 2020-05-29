@@ -10,7 +10,7 @@ class Popover extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isPopoverOpen: props.openOnMount
+      isPopoverOpen: props.openOnMount,
     }
     this.contentRef = React.createRef()
     this.triggerRef = React.createRef()
@@ -45,7 +45,7 @@ class Popover extends Component {
   setFocusToRef(ref) {
     try {
       ref.current.focus({
-        preventScroll: true
+        preventScroll: true,
       })
     } catch {
       // We need to be safe in case the ref is invalid, which will unmount component
@@ -65,12 +65,14 @@ class Popover extends Component {
           {({ ref }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
             <InlineContainer {...{ [getSCMigrationRef()]: ref }}>
-              {// Clone element to pass down toggle event so it can be used directly from children as needed
-              React.cloneElement(children, {
-                'aria-label': ariaLabel,
-                onClick: evt => this.handleToggle(evt, isPopoverOpen),
-                [getSCMigrationRef()]: this.triggerRef
-              })}
+              {
+                // Clone element to pass down toggle event so it can be used directly from children as needed
+                React.cloneElement(children, {
+                  'aria-label': ariaLabel,
+                  onClick: (evt) => this.handleToggle(evt, isPopoverOpen),
+                  [getSCMigrationRef()]: this.triggerRef,
+                })
+              }
             </InlineContainer>
           )}
         </Reference>
@@ -105,11 +107,11 @@ Popover.propTypes = {
   overlayOpacity: PropTypes.number,
   trapFocus: PropTypes.bool,
   isOpen: PropTypes.bool,
-  openOnMount: PropTypes.bool
+  openOnMount: PropTypes.bool,
 }
 
 Popover.defaultProps = {
-  ariaLabel: 'Click to open popover with more information'
+  ariaLabel: 'Click to open popover with more information',
 }
 
 export default Popover

@@ -47,8 +47,8 @@ module.exports = {
   template,
   jsx: {
     babelConfig: {
-      plugins: [replaceSvgPlugin, dynamicTitlePlugin]
-    }
+      plugins: [replaceSvgPlugin, dynamicTitlePlugin],
+    },
   },
   svgProps: {
     viewBox: '0 0 24 24',
@@ -60,15 +60,15 @@ module.exports = {
     descId: '{descId}',
     'aria-labelledby': '{ariaLabelledBy}',
     'aria-hidden': '{!ariaLabelledBy}',
-    fill: 'currentcolor'
+    fill: 'currentcolor',
   },
   svgoConfig: {
     plugins: {
-      removeAttrs: { attrs: '(fill|viewBox)' }
-    }
+      removeAttrs: { attrs: '(fill|viewBox)' },
+    },
   },
   prettierConfig: {
     semi: false,
-    singleQuote: true
-  }
+    singleQuote: true,
+  },
 }

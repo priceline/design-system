@@ -5,7 +5,7 @@ const dynamicTitlePlugin = ({ types: t }) => {
   const addTitle = {
     JSXElement(path) {
       if (
-        !elements.some(element =>
+        !elements.some((element) =>
           path.get('openingElement.name').isJSXIdentifier({ name: element })
         )
       ) {
@@ -13,7 +13,7 @@ const dynamicTitlePlugin = ({ types: t }) => {
       }
 
       //Remove the Default <title> and <desc> tags if exists
-      path.get('children').forEach(childPath => {
+      path.get('children').forEach((childPath) => {
         if (
           childPath.isJSXElement() &&
           (childPath.node.openingElement.name.name === 'title' ||
@@ -30,15 +30,15 @@ const dynamicTitlePlugin = ({ types: t }) => {
       )
       path.node.children.unshift(descElement)
       path.node.children.unshift(titleElement)
-    }
+    },
   }
 
   return {
     visitor: {
       Program(path) {
         path.traverse(addTitle)
-      }
-    }
+      },
+    },
   }
 }
 

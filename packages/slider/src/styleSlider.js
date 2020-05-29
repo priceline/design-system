@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { space } from 'styled-system'
 import { getPaletteColor } from 'pcln-design-system'
 
-const styleSlider = Component => styled(Component)`
+const styleSlider = (Component) => styled(Component)`
   position: relative;
   height: 32px;
   padding-top: 12px;

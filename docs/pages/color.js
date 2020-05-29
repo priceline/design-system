@@ -7,7 +7,7 @@ import {
   Heading,
   Text,
   Divider,
-  theme
+  theme,
 } from 'pcln-design-system'
 import select from 'select'
 import { PageTitle, Description, Code } from '../src/components'
@@ -16,7 +16,7 @@ class CopyButton extends React.Component {
   constructor() {
     super()
 
-    this.handleClick = e => {
+    this.handleClick = (e) => {
       select(this.ghost)
       document.execCommand('copy')
     }
@@ -25,36 +25,36 @@ class CopyButton extends React.Component {
   render() {
     const child = React.Children.only(this.props.children)
     const clone = React.cloneElement(child, {
-      onClick: this.handleClick
+      onClick: this.handleClick,
     })
 
     return [
       clone,
       <div
-        ref={ref => (this.ghost = ref)}
+        ref={(ref) => (this.ghost = ref)}
         children={this.props.text}
         style={{
           position: 'absolute',
           zIndex: -1,
-          opacity: 0
+          opacity: 0,
         }}
-      />
+      />,
     ]
   }
 }
 
 const colors = Object.keys(theme.colors)
-  .filter(key => !/[0-9]$/.test(key))
-  .map(key => ({
+  .filter((key) => !/[0-9]$/.test(key))
+  .map((key) => ({
     name: key,
-    value: theme.colors[key]
+    value: theme.colors[key],
   }))
-  .filter(color => !Array.isArray(color.value))
+  .filter((color) => !Array.isArray(color.value))
 
 const primaries = colors.filter(
-  color => !/^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
+  (color) => !/^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
 )
-const grays = colors.filter(color =>
+const grays = colors.filter((color) =>
   /^(lightGray|gray|borderGray|darkGray)$/.test(color.name)
 )
 
@@ -120,10 +120,10 @@ const ColorCard = ({ name, value }) => (
         <ColorChip bg={value} />
         <span>Press to copy</span>
         <Box p={2}>
-          <Text fontSize={1} mb={1} align="left">
+          <Text fontSize={1} mb={1} align='left'>
             {name}
           </Text>
-          <Code fontSize={1} align="left" color="gray">
+          <Code fontSize={1} align='left' color='gray'>
             {value}
           </Code>
         </Box>
@@ -132,18 +132,18 @@ const ColorCard = ({ name, value }) => (
   </Card>
 )
 
-const Column = props => (
+const Column = (props) => (
   <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 6]} mb={4} px={2} />
 )
 
-const ColorList = props =>
-  props.colors.map(color => (
+const ColorList = (props) =>
+  props.colors.map((color) => (
     <Column key={color.key}>
       <ColorCard {...color} />
     </Column>
   ))
 
-const Color = props => (
+const Color = (props) => (
   <Box>
     <PageTitle>Color</PageTitle>
     <Description>
