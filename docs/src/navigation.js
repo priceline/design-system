@@ -7,8 +7,8 @@ export default [
       { name: 'Palette', path: '/palette' },
       { name: 'Typography', path: '/typography' },
       { name: 'Iconography', path: '/iconography' },
-      { name: 'Theming', path: '/Theming' }
-    ]
+      { name: 'Theming', path: '/Theming' },
+    ],
   },
   {
     section: 'Core Components',
@@ -48,22 +48,22 @@ export default [
       { name: 'TextArea', path: '/TextArea' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },
       { name: 'Tooltip', path: '/Tooltip' },
-      { name: 'Truncate', path: '/Truncate' }
-    ]
+      { name: 'Truncate', path: '/Truncate' },
+    ],
   },
   {
     section: 'Modal Components',
     links: [
       { name: 'Modal', path: '/Modal' },
-      { name: 'ScrollLock', path: '/ScrollLock' }
-    ]
+      { name: 'ScrollLock', path: '/ScrollLock' },
+    ],
   },
   {
     section: 'Slider',
     links: [
       { name: 'RangeSlider', path: '/RangeSlider' },
-      { name: 'Slider', path: '/Slider' }
-    ]
+      { name: 'Slider', path: '/Slider' },
+    ],
   },
   {
     section: 'Utilities',
@@ -71,8 +71,8 @@ export default [
       { name: 'borders', path: '/utilities/borders' },
       { name: 'color', path: '/utilities/color' },
       { name: 'getPaletteColor', path: '/utilities/getPaletteColor' },
-      { name: 'getTextColorOn', path: '/utilities/getTextColorOn' }
-    ]
+      { name: 'getTextColorOn', path: '/utilities/getTextColorOn' },
+    ],
   },
   {
     section: 'Resources',
@@ -81,10 +81,15 @@ export default [
       { name: 'Layout', path: '/Layout' },
       {
         name: 'Contributing',
+        isExternal: true,
         path:
-          'https://github.com/priceline/design-system/blob/master/CONTRIBUTING.md'
+          'https://github.com/priceline/design-system/blob/master/CONTRIBUTING.md',
       },
-      { name: 'GitHub', path: 'https://github.com/priceline/design-system' }
-    ]
-  }
+      {
+        name: 'GitHub',
+        isExternal: true,
+        path: 'https://github.com/priceline/design-system',
+      },
+    ],
+  },
 ]

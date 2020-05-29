@@ -24,7 +24,7 @@ Base.defaultProps = {
   pl: 3,
   pr: 2,
   py: 1,
-  color: 'gray'
+  color: 'gray',
 }
 
 export default withDocs(
@@ -37,16 +37,25 @@ export default withDocs(
     routes,
     route,
     ...props
-  }) => (
-    <NextLink
-      {...props}
-      href={href}
-      as={!isAbsoluteURL(href) && !!basepath ? basepath + href : href}
-      passHref
-    >
-      <Base className={props.href === route.path ? 'active' : undefined}>
-        {props.children}
-      </Base>
-    </NextLink>
-  )
+  }) => {
+    if (isAbsoluteURL(href)) {
+      return (
+        <Base href={href} target='_blank' rel='noopener'>
+          {props.children}
+        </Base>
+      )
+    }
+    return (
+      <NextLink
+        {...props}
+        href={href}
+        as={!isAbsoluteURL(href) && !!basepath ? basepath + href : href}
+        passHref
+      >
+        <Base className={props.href === route.path ? 'active' : undefined}>
+          {props.children}
+        </Base>
+      </NextLink>
+    )
+  }
 )

@@ -4,6 +4,7 @@
 [![Coverage][coverage-badge]][coverage]
 [![npm version][npm version]][npm version]
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/priceline/design-system.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priceline/design-system/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/priceline/design-system.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priceline/design-system/context:javascript)
 ![bundlephobia-badge]
 
 ```sh
