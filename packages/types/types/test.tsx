@@ -1,10 +1,11 @@
 import {
   Absolute,
   BackgroundImage,
+  Badge,
   BlockLink,
-  Breadcrumbs,
   borders,
   Box,
+  Breadcrumbs,
   Button,
   Card,
   CloseButton,
@@ -30,7 +31,9 @@ import {
   Text,
   theme as ThemeType,
   ThemeProvider,
+  ToggleBadge,
   Truncate,
+  RatingBadge,
 } from 'pcln-types'
 import theme from '../../core/src/theme'
 import * as React from 'react'
@@ -79,6 +82,10 @@ const myHide = <Hide xs sm md lg xl xxl m={3} /> // $ExpectType Element
 // $ExpectType Element
 const myLink = (
   <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
+)
+// $ExpectType Element
+const myBadge = (
+  <Badge color='primary' size='medium' m={1} p={2}>blue</Badge>
 )
 // $ExpectType Element
 const myBlockLink = (
@@ -153,7 +160,17 @@ const myBreadcrumbs = (
     />
   </Breadcrumbs>
 )
-
+// $ExpectType Element
+const myRatingBadge = (
+  <RatingBadge
+    fontWeight='lighter'
+    px={2}
+    color='secondary'
+    borderRadius={1}
+  >
+    9.0
+  </RatingBadge>
+)
 // $ExpectType Element
 const myStepper = (
   <Stepper className={'my-class'}>
@@ -165,6 +182,19 @@ const myStepper = (
     />
     <Stepper.Step />
   </Stepper>
+)
+// $ExpectType Element
+const myToggleBadge = (
+  <ToggleBadge
+    color='primary'
+    fontSize={0}
+    m={1}
+    p={2}
+    selected={false}
+    unSelectedBg='transparent'
+  >
+    ToggleBadge
+  </ToggleBadge>
 )
 
 const myTruncate = <Truncate color='primary' /> // $ExpectType Element

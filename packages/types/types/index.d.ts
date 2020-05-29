@@ -13,7 +13,6 @@ import {
   FlexWrapProps,
   FontSizeProps,
   FontWeightProps,
-  HeightProps,
   JustifyContentProps,
   LeftProps,
   LineHeightProps,
@@ -59,6 +58,12 @@ export interface BackgroundImageProps extends WidthProps {
   /** URL of background image */
   image?: string
   variation?: 'parallax' | 'static'
+}
+
+export interface BadgeProps
+  extends ColorProps,
+  SpaceProps {
+    size?: 'small' | 'medium'
 }
 
 export interface BoxProps
@@ -158,6 +163,11 @@ export interface PlaceholderImageProps {
   width?: string
 }
 
+export interface RatingBadgeProps
+  extends BoxProps,
+  BorderRadiusProps,
+  FontWeightProps {}
+
 export interface RelativeProps
   extends TopRightBottomLeft,
     BoxProps,
@@ -166,6 +176,15 @@ export interface RelativeProps
 export interface StepProps extends ButtonProps, ClassNameProps {
   active?: boolean
   completed?: boolean
+}
+
+export interface ToggleBadgeProps
+  extends ColorProps,
+  FontSizeProps,
+  SpaceProps {
+  dsRef?: RefPropType
+  selected?: boolean
+  unSelectedBg?: string
 }
 
 export interface TextProps
@@ -203,7 +222,7 @@ export class BackgroundImage extends React.Component<
   BackgroundImageProps,
   any
 > {}
-export class Badge extends React.Component<any, any> {}
+export class Badge extends React.Component<BadgeProps, any> {}
 export class Banner extends React.Component<any, any> {}
 export class BlockLink extends React.Component<LinkProps, any> {}
 export class Box extends React.Component<BoxProps, any> {}
@@ -247,7 +266,7 @@ export class PlaceholderImage extends React.Component<
   any
 > {}
 export class Radio extends React.Component<any, any> {}
-export class RatingBadge extends React.Component<any, any> {}
+export class RatingBadge extends React.Component<RatingBadgeProps, any> {}
 export class Relative extends React.Component<RelativeProps, any> {}
 export class Select extends React.Component<any, any> {
   static isField: boolean
@@ -270,7 +289,7 @@ export class TextArea extends React.Component<any, any> {
   static isField: boolean
 }
 export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
-export class ToggleBadge extends React.Component<any, any> {}
+export class ToggleBadge extends React.Component<ToggleBadgeProps, any> {}
 export class Tooltip extends React.Component<any, any> {}
 export class Truncate extends React.Component<TextProps, any> {}
 
