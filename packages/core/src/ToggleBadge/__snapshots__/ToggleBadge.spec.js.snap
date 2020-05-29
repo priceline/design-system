@@ -10,14 +10,14 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   cursor: pointer;
   background-color: #e8f2ff;
   color: #007aff;
-  margin-left: 4px;
-  margin-right: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-size: 12px;
 }
 
@@ -43,14 +43,14 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   cursor: pointer;
   background-color: #0a0;
   color: #c00;
-  margin-left: 4px;
-  margin-right: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-size: 14px;
 }
 
@@ -76,14 +76,14 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   cursor: pointer;
   background-color: transparent;
   color: #007aff;
-  margin-left: 4px;
-  margin-right: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-size: 12px;
 }
 

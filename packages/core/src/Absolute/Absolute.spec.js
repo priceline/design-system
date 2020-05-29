@@ -9,7 +9,7 @@ describe('Absolute', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('position', 'absolute')
     expect(json).toHaveStyleRule('top', '10px')
-    expect(json).toHaveStyleRule('left', '0px')
+    expect(json).toHaveStyleRule('left', '0')
     expect(json).toHaveStyleRule('z-index', '2')
   })
 

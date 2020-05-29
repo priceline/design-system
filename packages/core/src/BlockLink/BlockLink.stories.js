@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import { BackgroundImage, BlockLink, Box, Flex, Text } from '..'
+import { BackgroundImage, BlockLink, Box, Button, Flex, Text } from '..'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 
 const image =

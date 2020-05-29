@@ -34,7 +34,7 @@
     "rc-tooltip": "^3.7.0",
     "rc-util": "^4.0.4",
     "shallowequal": "^1.0.1",
-    "styled-system": "^3.2.1",
+    "styled-system": "^4.2.4",
     "warning": "^4.0.3"
   },
   "peerDependencies": {

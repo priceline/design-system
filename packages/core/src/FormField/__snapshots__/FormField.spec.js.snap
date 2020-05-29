@@ -518,11 +518,11 @@ exports[`FormField renders with Select  1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
-  margin: 0px;
-  padding-left: 12px;
-  padding-right: 32px;
+  margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 32px;
   font-size: 16px;
 }
 
@@ -653,11 +653,11 @@ exports[`FormField renders with Select and Icon 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;
-  margin: 0px;
-  padding-left: 12px;
-  padding-right: 32px;
+  margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 32px;
   font-size: 16px;
 }
 

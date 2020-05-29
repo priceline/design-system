@@ -84,7 +84,7 @@ describe('Card', () => {
       'border',
       `1px solid ${theme.colors.borderGray}`
     )
-    expect(json).toHaveStyleRule('border-radius', '0px')
+    expect(json).toHaveStyleRule('border-radius', '0')
     expect(json).toHaveStyleRule(
       'box-shadow',
       '0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)'

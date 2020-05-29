@@ -6,7 +6,7 @@ exports[`Relative renders with top, left and zIndex props 1`] = `
 .c0 {
   position: relative;
   top: 10px;
-  left: 0px;
+  left: 0;
   z-index: 2;
 }
 
