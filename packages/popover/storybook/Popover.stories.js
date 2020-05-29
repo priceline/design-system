@@ -1,6 +1,12 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withKnobs, boolean } from '@storybook/addon-knobs'
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Props,
+} from '@storybook/addon-docs/blocks'
+import { boolean } from '@storybook/addon-knobs'
 import { DraggableParent, DraggableItem } from 'react-draggable-playground'
 import styled from 'styled-components'
 import {
@@ -20,126 +26,149 @@ import Component from '@reach/component-component'
 import Slider from '../../slider/src'
 import Popover from '../src'
 
-storiesOf('Popover', module)
-  .addDecorator(withKnobs)
-  .add('Playground', () => (
-    <React.Fragment>
-      <Playground>
-        <Popover
-          renderContent={PriceGuidanceContent}
-          placement='top'
-          ariaLabel='Price Guidance Popover'
-          idx={1}
-          width={370}
-          overlayOpacity={0.3}
-          trapFocus={boolean('Trap focus', false)}
-        >
-          <Button>Popover</Button>
-        </Popover>
-      </Playground>
-    </React.Fragment>
-  ))
-  .add('Colors', () => (
-    <Flex>
+export default {
+  title: 'Popover',
+  component: Popover,
+  parameters: {
+    componentSubtitle: 'Used to display some content on top of another',
+    docs: {
+      // Customize Docs page to omit Stories slot due to broken styling from playground
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Primary />
+          <Props />
+        </>
+      ),
+    },
+  },
+}
+
+export const playground = () => (
+  <React.Fragment>
+    <Playground>
       <Popover
-        renderContent={SimpleTextContent}
-        placement='bottom'
-        ariaLabel='Default Popover'
-        width={130}
+        renderContent={PriceGuidanceContent}
+        placement='top'
+        ariaLabel='Price Guidance Popover'
+        idx={1}
+        width={370}
+        overlayOpacity={0.3}
+        trapFocus={boolean('Trap focus', false)}
       >
-        <Button color='primary' variation='outline' mx={2}>
-          Default Popover
-        </Button>
+        <Button>Popover</Button>
       </Popover>
-      <Popover
-        renderContent={SimpleTextContent}
-        placement='bottom'
-        ariaLabel='Success Popover'
-        width={130}
-        color='success'
-      >
-        <Button color='success' variation='outline' mx={2}>
-          Success Popover
-        </Button>
-      </Popover>
-      <Popover
-        renderContent={SimpleTextContent}
-        placement='bottom'
-        ariaLabel='Alert Popover'
-        width={130}
-        color='alert'
-      >
-        <Button color='alert' variation='outline' mx={2}>
-          Alert Popover
-        </Button>
-      </Popover>
-      <Popover
-        renderContent={SimpleTextContent}
-        placement='bottom'
-        ariaLabel='Error Popover'
-        width={130}
-        color='error'
-      >
-        <Button color='error' variation='outline' mx={2}>
-          Error Popover
-        </Button>
-      </Popover>
-    </Flex>
-  ))
-  .add('Forced open via prop', () => (
+    </Playground>
+  </React.Fragment>
+)
+
+export const colors = () => (
+  <Flex>
     <Popover
-      renderContent={InnerContent}
+      renderContent={SimpleTextContent}
       placement='bottom'
-      ariaLabel='Bottom Popover'
-      idx={2}
-      width={400}
-      isOpen
+      ariaLabel='Default Popover'
+      width={130}
     >
-      <Link>Open Popover</Link>
+      <Button color='primary' variation='outline' mx={2}>
+        Default Popover
+      </Button>
     </Popover>
-  ))
-  .add('Opened by default via prop', () => (
     <Popover
-      renderContent={InnerContent}
+      renderContent={SimpleTextContent}
       placement='bottom'
-      ariaLabel='Bottom Popover'
-      idx={2}
-      width={400}
-      openOnMount
+      ariaLabel='Success Popover'
+      width={130}
+      color='success'
     >
-      <Link>Open Popover</Link>
+      <Button color='success' variation='outline' mx={2}>
+        Success Popover
+      </Button>
     </Popover>
-  ))
-  .add('Bottom', () => (
     <Popover
-      renderContent={InnerContent}
+      renderContent={SimpleTextContent}
       placement='bottom'
-      ariaLabel='Bottom Popover'
-      idx={2}
-      width={400}
+      ariaLabel='Alert Popover'
+      width={130}
+      color='alert'
     >
-      <Link>Open Popover</Link>
+      <Button color='alert' variation='outline' mx={2}>
+        Alert Popover
+      </Button>
     </Popover>
-  ))
-  .add('Right with overlay on scroll position', () => (
-    <Flex flexDirection='column'>
-      <Text mb='2000px'>Scroll down, popover trigger is at the end</Text>
-      <Box>
-        <Popover
-          renderContent={InnerContent}
-          placement='top'
-          ariaLabel='Test Popover'
-          idx={1}
-          width={400}
-          overlayOpacity={0.3}
-          color='error.light'
-          borderColor='error.dark'
-        >
-          <Button>Popover</Button>
-        </Popover>
-      </Box>
-    </Flex>
-  ))
+    <Popover
+      renderContent={SimpleTextContent}
+      placement='bottom'
+      ariaLabel='Error Popover'
+      width={130}
+      color='error'
+    >
+      <Button color='error' variation='outline' mx={2}>
+        Error Popover
+      </Button>
+    </Popover>
+  </Flex>
+)
+
+export const forcedOpenViaProp = () => (
+  <Popover
+    renderContent={InnerContent}
+    placement='bottom'
+    ariaLabel='Bottom Popover'
+    idx={2}
+    width={400}
+    isOpen
+  >
+    <Link>Open Popover</Link>
+  </Popover>
+)
+
+export const openByDefault = () => (
+  <Popover
+    renderContent={InnerContent}
+    placement='bottom'
+    ariaLabel='Bottom Popover'
+    idx={2}
+    width={400}
+    openOnMount
+  >
+    <Link>Open Popover</Link>
+  </Popover>
+)
+
+export const bottom = () => (
+  <Popover
+    renderContent={InnerContent}
+    placement='bottom'
+    ariaLabel='Bottom Popover'
+    idx={2}
+    width={400}
+  >
+    <Link>Open Popover</Link>
+  </Popover>
+)
+
+export const rightWithOverlayOnScrollPosition = () => (
+  <Flex flexDirection='column'>
+    <Text mb='2000px'>Scroll down, popover trigger is at the end</Text>
+    <Box>
+      <Popover
+        renderContent={InnerContent}
+        placement='top'
+        ariaLabel='Test Popover'
+        idx={1}
+        width={400}
+        overlayOpacity={0.3}
+        color='error.light'
+        borderColor='error.dark'
+      >
+        <Button>Popover</Button>
+      </Popover>
+    </Box>
+  </Flex>
+)
 
 const StyledBox = styled(Box)`
   border-top: 1px solid ${getPaletteColor('border.base')};
@@ -154,11 +183,11 @@ const SimpleTextContent = () => (
 )
 
 const Playground = ({ children }) => (
-  <DraggableParent height='calc(100vh - 32px)' width='(100vw - 32px)'>
+  <DraggableParent height='300px' width='(100vw - 32px)'>
     <DraggableItem
       defaultPosition={{
-        x: window.innerWidth / 2 - 30,
-        y: window.innerHeight / 2 - 10,
+        x: 100,
+        y: 100,
       }} //Hard coded positioning
       onPositionChange={(position) => {}}
     >
