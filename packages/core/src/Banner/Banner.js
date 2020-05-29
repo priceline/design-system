@@ -114,7 +114,7 @@ Banner.propTypes = {
   icon: PropTypes.node,
   onClose: PropTypes.func,
   showIcon: PropTypes.bool,
-  text: PropTypes.node,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   textAlign: PropTypes.string,
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),

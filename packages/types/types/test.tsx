@@ -1,7 +1,9 @@
 import {
   Absolute,
+  Avatar,
   BackgroundImage,
   Badge,
+  Banner,
   BlockLink,
   borders,
   Box,
@@ -10,8 +12,11 @@ import {
   Card,
   CloseButton,
   color,
+  Container,
   createTheme,
   deprecatedPropType,
+  Divider,
+  Flag,
   Flex,
   getContrastRatio,
   getPaletteColor,
@@ -19,6 +24,7 @@ import {
   hasPaletteColor,
   Heading,
   Hide,
+  Hug,
   Icon,
   IconButton,
   IconField,
@@ -27,11 +33,13 @@ import {
   Link,
   PlaceholderImage,
   SrOnly,
+  Stamp,
   Stepper,
   Text,
   theme as ThemeType,
   ThemeProvider,
   ToggleBadge,
+  Tooltip,
   Truncate,
   RatingBadge,
 } from 'pcln-types'
@@ -223,3 +231,39 @@ const myPlaceholderImage = (
     blur
   />
 )
+ // $ExpectType Element
+const myAvatar = <Avatar
+  className='className'
+  title='Title'
+  subtitle='Subtitle'
+  src='opossum.jpg'
+  initials='TS'
+  size={100}
+/>
+// $ExpectType Element
+const myBanner = <Banner
+  header='Header text'
+  icon={<Icon name='Calendar' title='Choose date' />}
+  onClose={() => {}}
+  showIcon
+  text='Text'
+/>
+const myContainer = <Container maxWidth={100} />  // $ExpectType Element
+const myDivider = <Divider color='primary' borderColor='secondary' />  // $ExpectType Element
+const myFlag = <Flag color='primary' width={100} />  // $ExpectType Element
+// $ExpectType Element
+const myHug = <Hug
+  icon={<Icon name='Calendar' title='Choose date' />}
+  iconDisplay='none'
+  text='Text'
+/>
+const myStamp = <Stamp variation='outline' size='small'  /> // $ExpectType Element
+// $ExpectType Element
+const myToolip = <Tooltip
+  zIndex={1}
+  bottom
+  top
+  center={false}
+  left
+  right
+/>
