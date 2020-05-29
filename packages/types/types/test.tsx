@@ -74,7 +74,7 @@ const myThemeProvider = (
 
 const myBox = <Box width='1' bg='primary' /> // $ExpectType Element
 const myCard = <Card width='1' bg='primary' borderRadius='md' /> // $ExpectType Element
-const myText = <Text regular /> // $ExpectType Element
+const myText = <Text regular align={'center'} textAlign={'center'} /> // $ExpectType Element
 const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
 const myFlex = <Flex flexDirection={['row', null, 'column']} m={3} /> // $ExpectType Element
