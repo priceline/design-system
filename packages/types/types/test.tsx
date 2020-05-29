@@ -1,23 +1,28 @@
 import {
-  getContrastRatio,
-  deprecatedPropType,
+  Absolute,
+  BackgroundImage,
+  BlockLink,
   borders,
-  hasPaletteColor,
   Box,
   Card,
-  Text,
-  Absolute,
+  color,
+  createTheme,
+  deprecatedPropType,
   Flex,
-  Hide,
-  ThemeProvider,
-  Link,
-  BlockLink,
+  getContrastRatio,
+  getPaletteColor,
+  getTextColorOn,
+  hasPaletteColor,
   Heading,
-  Truncate,
-  SrOnly,
+  Hide,
   Image,
-  BackgroundImage,
+  Link,
   PlaceholderImage,
+  SrOnly,
+  Text,
+  theme as ThemeType,
+  ThemeProvider,
+  Truncate,
 } from 'pcln-types'
 import theme from '../../core/src/theme'
 import * as React from 'react'
@@ -36,6 +41,16 @@ borders({
 })
 
 hasPaletteColor({ theme }) // $ExpectType boolean
+
+color({ theme, bg: 'primary', color: 'secondary' }) // $ExpectType string | string[]
+
+getPaletteColor('primary', 'light') // $ExpectType (props: ThemeArgs) => any
+
+getTextColorOn('bla') // $ExpectType (props: ThemeArgs) => any
+
+createTheme(theme, {}) // $ExpectType CreateThemeResult
+
+const myTheme: ThemeType = theme
 
 //
 // Design System Core Components

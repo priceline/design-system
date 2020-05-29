@@ -23,7 +23,8 @@
     "directory": "packages/types"
   },
   "scripts": {
-    "test": "dtslint types"
+    "test": "dtslint types",
+    "format": "prettier --write types"
   },
   "bugs": {
     "url": "https://github.com/priceline/design-system/issues"
@@ -33,6 +34,7 @@
     "@types/styled-system": "^4.2.2"
   },
   "devDependencies": {
-    "dtslint": "^3.5.2"
+    "dtslint": "^3.5.2",
+    "prettier": "^2.0.5"
   }
 }
