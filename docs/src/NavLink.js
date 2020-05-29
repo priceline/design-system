@@ -40,7 +40,7 @@ export default withDocs(
   }) => {
     if (isAbsoluteURL(href)) {
       return (
-        <Base href={href} target='_blank'>
+        <Base href={href} target='_blank' rel='noopener'>
           {props.children}
         </Base>
       )
