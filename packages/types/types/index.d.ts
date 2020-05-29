@@ -153,7 +153,10 @@ export interface ThemeProviderProps {
 
 export class Absolute extends React.Component<AbsoluteProps, any> {}
 export class Avatar extends React.Component<any, any> {}
-export class BackgroundImage extends React.Component<BackgroundImageProps, any> {}
+export class BackgroundImage extends React.Component<
+  BackgroundImageProps,
+  any
+> {}
 export class Badge extends React.Component<any, any> {}
 export class Banner extends React.Component<any, any> {}
 export class BlockLink extends React.Component<LinkProps, any> {}
@@ -192,7 +195,10 @@ export class Label extends React.Component<any, any> {
   static isLabel: boolean
 }
 export class Link extends React.Component<LinkProps, any> {}
-export class PlaceholderImage extends React.Component<PlaceholderImageProps, any> {}
+export class PlaceholderImage extends React.Component<
+  PlaceholderImageProps,
+  any
+> {}
 export class Radio extends React.Component<any, any> {}
 export class RatingBadge extends React.Component<any, any> {}
 export class Relative extends React.Component<RelativeProps, any> {}
@@ -228,7 +234,47 @@ export interface ThemeArgs {
   theme: Theme
 }
 
+export interface ColorArgs extends ThemeArgs {
+  color?: string
+  bg?: string
+}
+
+interface CustomBreakpoints {
+  [key: string]: string | number
+}
+
+interface PaletteColor {
+  lightest?: string
+  light?: string
+  base: string
+  dark?: string
+  darkest?: string
+}
+
+interface Palette {
+  [key: string]: PaletteColor
+}
+
+interface CreateThemeResult extends Theme {
+  contrastRatio: number
+  breakpoints: any[]
+  mediaQueries: any[]
+  palette: Palette
+}
+
 export function getContrastRatio(colorA: string, colorB: string): number
 export function deprecatedPropType(replacement: string): Error | undefined
 export function borders(props: ThemeArgs): object
 export function hasPaletteColor(props: ThemeArgs): boolean
+export function color(props: ColorArgs): string[] | string
+export function getPaletteColor(
+  color: string,
+  shade?: string
+): (props: ThemeArgs) => any
+export function getTextColorOn(name: string): (props: ThemeArgs) => any
+export function createTheme(
+  theme: Theme,
+  customBreakpoints: CustomBreakpoints
+): CreateThemeResult
+
+type theme = Theme
