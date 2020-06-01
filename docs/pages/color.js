@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Box, Flex, theme } from 'pcln-design-system'
 import { PageTitle, Description } from '../src/components'
 import ColorCard from '../src/ColorCard'

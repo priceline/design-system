@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import * as DS from 'pcln-design-system'
 import isAbsoluteURL from 'is-absolute-url'

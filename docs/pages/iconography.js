@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Box, Flex, Text, Icon, BlockLink } from 'pcln-design-system'
 import * as icons from 'pcln-icons'
 import { PageTitle, Description, Code } from '../src/components'

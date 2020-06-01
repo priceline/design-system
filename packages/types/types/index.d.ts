@@ -3,7 +3,7 @@
 
 /// <reference types="@types/styled-system" />
 
-import * as React from 'react'
+import React from 'react'
 import {
   AlignItemsProps,
   BorderColorProps,
@@ -265,13 +265,12 @@ export interface BannerProps extends BoxProps {
   bg?: string
 }
 
-export interface StampProps
-  extends SpaceProps, FontSizeProps, ColorProps {
-    variation?: 'outline' | 'fill' | 'solid',
-    size?: 'small' | 'medium'
-    /** DEPRECATED: Use "color" prop instead */
-    bg?: string
-  }
+export interface StampProps extends SpaceProps, FontSizeProps, ColorProps {
+  variation?: 'outline' | 'fill' | 'solid'
+  size?: 'small' | 'medium'
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
 
 export interface ContainerProps {
   maxWidth?: number

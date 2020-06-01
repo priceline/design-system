@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Heading, Box } from 'pcln-design-system'
 import Link from 'next/link'
 import NavLink from './NavLink'
