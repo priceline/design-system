@@ -15,8 +15,10 @@ import { themeGet } from 'styled-system'
 export const AutocompleteContext = React.createContext()
 
 export const withAutocomplete = (Component, mapProps) =>
+  // eslint-disable-next-line react/display-name
   React.forwardRef((props, ref) => (
     <AutocompleteContext.Consumer
+      // eslint-disable-next-line react/no-children-prop
       children={(state) => (
         <Component ref={ref} {...props} {...mapProps({ ...props, ...state })} />
       )}
@@ -57,15 +59,19 @@ MenuCard.propTypes = {
 const MenuRoot = React.forwardRef((props, ref) => (
   <MenuCard {...props} innerRef={ref} />
 ))
+MenuRoot.displayName = 'Autocomplete_MenuRoot'
 
+// eslint-disable-next-line react/prop-types
 export const Menu = ({ children, ...props }) => (
   <AutocompleteContext.Consumer
+    // eslint-disable-next-line react/no-children-prop
     children={({ match, isOpen, getMenuProps, inputValue }) => (
       <MenuRoot
         {...getMenuProps({
           ...props,
           isOpen,
         })}
+        // eslint-disable-next-line react/no-children-prop
         children={
           isOpen
             ? React.Children.toArray(children)
@@ -98,6 +104,7 @@ ItemRoot.defaultProps = {
 
 export const Item = (props) => (
   <AutocompleteContext.Consumer
+    // eslint-disable-next-line react/no-children-prop
     children={({ item, getItemProps, highlightedIndex }) => (
       <ItemRoot
         {...getItemProps({
@@ -105,6 +112,7 @@ export const Item = (props) => (
           px: 2,
           py: 1,
           'data-highlighted':
+            // eslint-disable-next-line react/prop-types
             highlightedIndex === props.index ? true : undefined,
           ...props,
         })}
@@ -128,15 +136,18 @@ export class Autocomplete extends React.Component {
   }
 
   render() {
+    // eslint-disable-next-line react/prop-types
     const { children, style, ...props } = this.props
 
     return (
       <Downshift
         {...props}
+        // eslint-disable-next-line react/no-children-prop
         children={(state) => (
           <div style={{ position: 'relative', ...style }}>
             <AutocompleteContext.Provider
               value={{ ...props, ...state }}
+              // eslint-disable-next-line react/no-children-prop
               children={children}
             />
           </div>

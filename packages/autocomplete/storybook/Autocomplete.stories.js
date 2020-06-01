@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Box, Text, Icon } from 'pcln-design-system'

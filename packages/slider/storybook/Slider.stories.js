@@ -94,6 +94,20 @@ const untdTheme = {
   },
 }
 
+// eslint-disable-next-line react/prop-types
+const InnerSlider = ({ state, setState }) => (
+  <RangeSlider
+    ariaLabelGroupForHandles={['Handle One', undefined]}
+    ariaLabelledByGroupForHandles={[undefined, 'handle_2']}
+    ariaValueTextFormattersForHandles={[formatValueText, formatValueText]}
+    // eslint-disable-next-line react/prop-types
+    value={state.value}
+    onChange={(value) => {
+      setState({ value })
+    }}
+  />
+)
+
 storiesOf('Slider', module)
   .add('Basic', () => (
     <div>
@@ -104,21 +118,9 @@ storiesOf('Slider', module)
         initialState={{
           value: [32, 64],
         }}
-        children={({ state, setState }) => (
-          <RangeSlider
-            ariaLabelGroupForHandles={['Handle One', undefined]}
-            ariaLabelledByGroupForHandles={[undefined, 'handle_2']}
-            ariaValueTextFormattersForHandles={[
-              formatValueText,
-              formatValueText,
-            ]}
-            value={state.value}
-            onChange={(value) => {
-              setState({ value })
-            }}
-          />
-        )}
-      />
+      >
+        <InnerSlider />
+      </Component>
     </div>
   ))
   .add('RangeSlider with Single value', () => <RangeSlider value={[32]} />)

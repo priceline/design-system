@@ -29,6 +29,7 @@ const determineSRC = (blur, chooseSrc, height, width) => {
 }
 
 const PlaceholderImage = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { alt, ariaHidden, blur, chooseSrc, className, height, width } = props
 
   return (

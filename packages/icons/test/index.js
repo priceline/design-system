@@ -107,7 +107,7 @@ describe('Icon', () => {
         <AccessibleIcon title='Accessible Logo' />
       )
 
-      expect(testRenderer.toJSON().props['aria-labelledby']).toBe(undefined)
+      expect(testRenderer.toJSON().props['aria-labelledby']).toBeUndefined()
     })
 
     test.each(iconList)(

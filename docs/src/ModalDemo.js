@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Button } from 'pcln-design-system'
 
 export default class ModalDemo extends React.Component {
@@ -10,6 +11,10 @@ export default class ModalDemo extends React.Component {
     }
 
     this.toggleModal = this.toggleModal.bind(this)
+  }
+
+  static propTypes = {
+    children: PropTypes.node,
   }
 
   toggleModal() {

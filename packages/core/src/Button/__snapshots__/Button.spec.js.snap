@@ -396,6 +396,7 @@ exports[`Button with title prop 1`] = `
     color="primary"
     title="Hello world"
   />
+   
 </DocumentFragment>
 `;
 

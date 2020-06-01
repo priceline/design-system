@@ -24,20 +24,20 @@ const setWidth = (object, width) => {
 describe('createSlider', () => {
   it('should render vertical Slider/Range, when `vertical` is true', () => {
     const sliderWrapper = mount(<Slider vertical />)
-    expect(sliderWrapper.find('.rc-slider-vertical').length).toBe(1)
+    expect(sliderWrapper.find('.rc-slider-vertical')).toHaveLength(1)
 
     const rangeWrapper = mount(<Range vertical />)
-    expect(rangeWrapper.find('.rc-slider-vertical').length).toBe(1)
+    expect(rangeWrapper.find('.rc-slider-vertical')).toHaveLength(1)
   })
 
   it('should render dots correctly when `dots=true`', () => {
     const sliderWrapper = mount(<Slider value={50} step={10} dots />)
-    expect(sliderWrapper.find('.rc-slider-dot').length).toBe(11)
-    expect(sliderWrapper.find('.rc-slider-dot-active').length).toBe(6)
+    expect(sliderWrapper.find('.rc-slider-dot')).toHaveLength(11)
+    expect(sliderWrapper.find('.rc-slider-dot-active')).toHaveLength(6)
 
     const rangeWrapper = mount(<Range value={[20, 50]} step={10} dots />)
-    expect(rangeWrapper.find('.rc-slider-dot').length).toBe(11)
-    expect(rangeWrapper.find('.rc-slider-dot-active').length).toBe(4)
+    expect(rangeWrapper.find('.rc-slider-dot')).toHaveLength(11)
+    expect(rangeWrapper.find('.rc-slider-dot-active')).toHaveLength(4)
   })
 
   it('should not set value greater than `max` or smaller `min`', () => {

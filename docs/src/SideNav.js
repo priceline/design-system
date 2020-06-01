@@ -1,11 +1,11 @@
 import React from 'react'
-import { Heading, Box, Link as DSLink } from 'pcln-design-system'
+import { Heading, Box } from 'pcln-design-system'
 import Link from 'next/link'
 import NavLink from './NavLink'
 import Logo from './Logo'
 import navigation from './navigation'
 
-export default (props) => (
+const SideNav = () => (
   <Box px={3} pb={5} color='text' bg='lightGray'>
     <Box px={3} pb={4}>
       <Link href='/'>
@@ -21,12 +21,9 @@ export default (props) => (
             {section.section}
           </Heading>
           {section.links.map((link) => (
-            <NavLink
-              key={link.name}
-              href={link.path}
-              color='gray'
-              children={link.title || link.name}
-            />
+            <NavLink key={link.name} href={link.path} color='gray'>
+              {link.title || link.name}
+            </NavLink>
           ))}
         </Box>
       ) : (
@@ -37,3 +34,5 @@ export default (props) => (
     )}
   </Box>
 )
+
+export default SideNav

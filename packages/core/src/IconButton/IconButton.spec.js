@@ -11,7 +11,7 @@ describe('IconButton', () => {
       <IconButton name='Key' onClick={handleClick} />
     )
     fireEvent.click(container.firstChild)
-    expect(handleClick).toBeCalled()
+    expect(handleClick).toHaveBeenCalled()
   })
 
   test('renders without props', () => {

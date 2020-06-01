@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 const dynamicTitlePlugin = require('./plugins/svg-dynamic-title-plugin')
 
 const replaceSvgPlugin = require('./plugins/svg-replace-plugin')
@@ -5,6 +6,7 @@ const replaceSvgPlugin = require('./plugins/svg-replace-plugin')
 const template = (
   { template },
   opts,
+  // eslint-disable-next-line no-unused-vars
   { imports, componentName, props, jsx, exports }
 ) => template.ast`import React from 'react'
 import Svg from './Svg'

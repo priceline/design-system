@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -8,7 +10,9 @@ const BaseCSS = ({ css }) => (
     }}
   />
 )
-
+BaseCSS.propTypes = {
+  css: PropTypes.any,
+}
 BaseCSS.defaultProps = {
   css: '*{box-sizing:border-box}body{margin:0}',
 }

@@ -459,6 +459,7 @@ exports[`Banner renders with header node 1`] = `
       </div>
     </div>
   </div>
+   
 </DocumentFragment>
 `;
 

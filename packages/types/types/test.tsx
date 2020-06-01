@@ -51,7 +51,7 @@ import {
   Truncate,
 } from 'pcln-types'
 import theme from '../../core/src/theme'
-import * as React from 'react'
+import React from 'react'
 
 //
 // Design System Utility Functions
@@ -262,39 +262,38 @@ const myPlaceholderImage = (
     blur
   />
 )
- // $ExpectType Element
-const myAvatar = <Avatar
-  className='className'
-  title='Title'
-  subtitle='Subtitle'
-  src='opossum.jpg'
-  initials='TS'
-  size={100}
-/>
 // $ExpectType Element
-const myBanner = <Banner
-  header='Header text'
-  icon={<Icon name='Calendar' title='Choose date' />}
-  onClose={() => {}}
-  showIcon
-  text='Text'
-/>
-const myContainer = <Container maxWidth={100} />  // $ExpectType Element
-const myDivider = <Divider color='primary' borderColor='secondary' />  // $ExpectType Element
-const myFlag = <Flag color='primary' width={100} />  // $ExpectType Element
+const myAvatar = (
+  <Avatar
+    className='className'
+    title='Title'
+    subtitle='Subtitle'
+    src='opossum.jpg'
+    initials='TS'
+    size={100}
+  />
+)
 // $ExpectType Element
-const myHug = <Hug
-  icon={<Icon name='Calendar' title='Choose date' />}
-  iconDisplay='none'
-  text='Text'
-/>
-const myStamp = <Stamp variation='outline' size='small'  /> // $ExpectType Element
+const myBanner = (
+  <Banner
+    header='Header text'
+    icon={<Icon name='Calendar' title='Choose date' />}
+    onClose={() => {}}
+    showIcon
+    text='Text'
+  />
+)
+const myContainer = <Container maxWidth={100} /> // $ExpectType Element
+const myDivider = <Divider color='primary' borderColor='secondary' /> // $ExpectType Element
+const myFlag = <Flag color='primary' width={100} /> // $ExpectType Element
 // $ExpectType Element
-const myToolip = <Tooltip
-  zIndex={1}
-  bottom
-  top
-  center={false}
-  left
-  right
-/>
+const myHug = (
+  <Hug
+    icon={<Icon name='Calendar' title='Choose date' />}
+    iconDisplay='none'
+    text='Text'
+  />
+)
+const myStamp = <Stamp variation='outline' size='small' /> // $ExpectType Element
+// $ExpectType Element
+const myToolip = <Tooltip zIndex={1} bottom top center={false} left right />

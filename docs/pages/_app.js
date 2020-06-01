@@ -16,7 +16,7 @@ const routes = navigation.reduce(
 )
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let page = {}
 
     if (Component.getInitialProps) {

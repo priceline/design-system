@@ -1,7 +1,7 @@
 // theme for mdx-docs components
 import { theme } from 'pcln-design-system'
 
-const { space, colors, fontSizes, fontWeights } = theme
+const { colors, fontSizes } = theme
 
 const { blue, lightGray, borderGray } = colors
 
@@ -49,7 +49,7 @@ export default {
     padding: '16px',
     overflowX: 'auto',
     color: blue,
-    backgroundColor: lightGray,
+    backgroundColor: `${borderGray}`,
   },
 
   PaginationLink: {

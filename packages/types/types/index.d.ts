@@ -3,7 +3,7 @@
 
 /// <reference types="@types/styled-system" />
 
-import * as React from 'react'
+import React from 'react'
 import {
   AlignItemsProps,
   BorderColorProps,

@@ -107,7 +107,7 @@ describe('Slider', () => {
     wrapper.simulate('focus')
     handler.simulate('keyDown', { keyCode: keyCode.RIGHT })
 
-    expect(onAfterChange).toBeCalled()
+    expect(onAfterChange).toHaveBeenCalled()
   })
 
   it('increases the value when key "page up" is pressed, by a factor 2', () => {
@@ -315,7 +315,7 @@ describe('Slider', () => {
       )
       mockRect(wrapper)
       wrapper.instance().focus()
-      expect(handleFocus).toBeCalled()
+      expect(handleFocus).toHaveBeenCalled()
     })
 
     it('blur', () => {
@@ -327,7 +327,7 @@ describe('Slider', () => {
       mockRect(wrapper)
       wrapper.instance().focus()
       wrapper.instance().blur()
-      expect(handleBlur).toBeCalled()
+      expect(handleBlur).toHaveBeenCalled()
     })
   })
 })

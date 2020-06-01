@@ -27,7 +27,7 @@ const boxShadow = (props) => {
   return boxShadows[props.boxShadowSize]
 }
 
-const boxBorder = ({ borderWidth, color, borderColor, ...props }) => ({
+const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
   border:
     borderWidth === 0
       ? '0'

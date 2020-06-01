@@ -1,15 +1,8 @@
 import React from 'react'
-import {
-  Box,
-  Flex,
-  Heading,
-  Truncate,
-  Divider,
-  theme,
-} from 'pcln-design-system'
+import { Box, Heading, Truncate, theme } from 'pcln-design-system'
 import { PageTitle, Description } from '../src/components'
 
-const Typography = (props) => (
+const Typography = () => (
   <Box>
     <PageTitle>Typography</PageTitle>
     <Description>

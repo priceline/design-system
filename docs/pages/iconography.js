@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Heading, Text, Icon, BlockLink } from 'pcln-design-system'
+import { Box, Flex, Text, Icon, BlockLink } from 'pcln-design-system'
 import * as icons from 'pcln-icons'
 import { PageTitle, Description, Code } from '../src/components'
 
@@ -38,7 +38,7 @@ const IconList = (props) =>
     </Column>
   ))
 
-const Iconography = (props) => (
+const Iconography = () => (
   <Box>
     <PageTitle>Iconography</PageTitle>
     <Description>

@@ -41,7 +41,7 @@ describe('Box', () => {
   test('align prop triggers warning', () => {
     console.error = jest.fn()
 
-    const json = rendererCreateWithTheme(<Box align='center' />).toJSON()
+    rendererCreateWithTheme(<Box align='center' />).toJSON()
 
     expect(
       console.error.mock.calls

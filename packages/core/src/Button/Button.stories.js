@@ -117,7 +117,7 @@ Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Us
         size={Object.keys(sizes)}
         onClick={action('Clicked button in All')}
       >
-        I'm a Button
+        I am a Button
       </Cartesian>
     )
   })

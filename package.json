@@ -10,6 +10,7 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "codecov": "npx codecov",
+    "lint": "eslint .",
     "start": "start-storybook -p 8000",
     "storybook": "build-storybook -o docs/out/storybook",
     "create-component": "npm run plop",
@@ -35,10 +36,20 @@
     "@storybook/react": "^5.3.19",
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^10.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
     "all-contributors-cli": "^6.15.0",
     "babel-loader": "^8.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^7.1.0",
+    "eslint-config-pcln-accessibility": "^1.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
     "hoist-non-react-statics": "^3.3.2",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
@@ -52,10 +63,12 @@
     "react-dom": "^16.13.1",
     "react-draggable-playground": "^1.0.0",
     "storybook-dark-mode": "^0.2.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "typescript": "^3.9.3"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md}": "prettier --write",
+    "*.js": "eslint"
   },
   "engines": {
     "node": ">=10",

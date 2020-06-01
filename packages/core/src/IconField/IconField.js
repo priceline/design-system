@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Flex } from '../Flex'
 
 const IconField = (props) => {
@@ -33,5 +34,6 @@ const IconField = (props) => {
 
   return <Flex>{styledChildren}</Flex>
 }
+IconField.propTypes = { children: PropTypes.node }
 
 export default IconField

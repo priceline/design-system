@@ -41,7 +41,7 @@ storiesOf('Link', module)
       refChild={(dsRef) => (
         <>
           <Link color='darkGray' dsRef={dsRef}>
-            I'm a link!
+            I am a link!
           </Link>
           <br />
           <Button
@@ -57,11 +57,11 @@ storiesOf('Link', module)
   ))
   .add('Color', () => (
     <div>
-      <Link color='darkGray'>I'm a different color!</Link>
+      <Link color='darkGray'>I am a different color!</Link>
       <br />
-      <Link color='secondary'>I'm a different color!</Link>
+      <Link color='secondary'>I am a different color!</Link>
       <br />
-      <Link color='error'>I'm a different color!</Link>
+      <Link color='error'>I am a different color!</Link>
     </div>
   ))
   .add('All', () => (

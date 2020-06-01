@@ -36,7 +36,7 @@ describe('utils', () => {
         'oldProp',
         'Component'
       )
-      expect(err).toBe(undefined)
+      expect(err).toBeUndefined()
     })
   })
 

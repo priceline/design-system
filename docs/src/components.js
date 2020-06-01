@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import * as DS from 'pcln-design-system'
 import isAbsoluteURL from 'is-absolute-url'
 import styled from 'styled-components'
@@ -33,6 +35,7 @@ const RouterLink = ({ href, ...props }) => {
   }
   return <StyledRouterLink href={href} {...props} />
 }
+RouterLink.propTypes = { href: PropTypes.string }
 
 RouterLink.defaultProps = {
   color: 'blue',
@@ -126,8 +129,10 @@ const ShadeOtherDemo = styled.div`
 
 const TextDemo = styled.div`
   color: ${getTextColorOn('primary.base')};
-  background-color ${getPaletteColor('primary.base')};
+  background-color: ${getPaletteColor('primary.base')};
 `
+
+const Paragraph = (p) => <Text.p {...p} />
 
 const components = {
   ...DS,
@@ -138,7 +143,7 @@ const components = {
   h5: heading('h5'),
   h6: heading('h6'),
   a: RouterLink,
-  p: (p) => <Text.p {...p} />,
+  p: Paragraph,
   table: Table,
   RangeSlider,
   Slider,

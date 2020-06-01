@@ -1,20 +1,22 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { render } from '@testing-library/react'
 import { ThemeProvider } from 'styled-components'
-import { createTheme } from '../packages/core/src'
+
+import { render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 import 'jest-styled-components'
+import renderer from 'react-test-renderer'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import '@testing-library/jest-dom/extend-expect'
+
+import { createTheme } from '../packages/core/src'
 
 global.renderWithTheme = (Tree) => {
-  return render(<ThemeProvider theme={createTheme()} children={Tree} />)
+  return render(<ThemeProvider theme={createTheme()}>{Tree} </ThemeProvider>)
 }
 
 global.rendererCreateWithTheme = (Tree) => {
   return renderer.create(
-    <ThemeProvider theme={createTheme()} children={Tree} />
+    <ThemeProvider theme={createTheme()}>{Tree}</ThemeProvider>
   )
 }
 

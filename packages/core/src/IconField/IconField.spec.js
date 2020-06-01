@@ -41,7 +41,7 @@ describe('IconField', () => {
         <pre>Does not render</pre>
       </IconField>
     ).toJSON()
-    expect(json.children).toBe(null)
+    expect(json.children).toBeNull()
   })
 
   test('adds styles to icons', () => {
@@ -64,7 +64,7 @@ describe('IconField', () => {
         <Calendar />
       </IconField>
     ).toJSON()
-    const [input, icon] = json.children
+    const icon = json.children[1]
     expect(icon.props.style.pointerEvents).toBe('none')
     expect(icon.props.style.marginLeft).toBe(-32)
     expect(icon.props.style.marginRight).toBe(8)
@@ -77,9 +77,9 @@ describe('IconField', () => {
         <Input id='test' />
       </IconField>
     ).toJSON()
-    const [icon, input] = json.children
+    const input = json.children[1]
     expect(input.props.style.paddingLeft).toBe(40)
-    expect(input.props.style.paddingRight).toBe(undefined)
+    expect(input.props.style.paddingRight).toBeUndefined()
   })
 
   test('adds styles to the icon button on the right', () => {

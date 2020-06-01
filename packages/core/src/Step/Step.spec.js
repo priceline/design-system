@@ -57,7 +57,7 @@ describe('Step', () => {
   it('should handle onClick', () => {
     const handleClick = jest.fn()
 
-    const { asFragment, container, getByTestId, getByText } = render(
+    const { asFragment, getByTestId, getByText } = render(
       <Step active data-testid='Step' onClick={handleClick}>
         Step
       </Step>

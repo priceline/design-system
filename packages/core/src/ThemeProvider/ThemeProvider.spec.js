@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import renderer from 'react-test-renderer'
 
 import { theme, Box } from '..'
 import { ThemeProvider, Base } from '.'

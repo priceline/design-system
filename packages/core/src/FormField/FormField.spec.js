@@ -86,9 +86,11 @@ describe('FormField', () => {
   describe('propTypes', () => {
     test('warns when field is missing', () => {
       const spy = jest.spyOn(global.console, 'error')
-      const err = PropTypes.checkPropTypes(
+
+      PropTypes.checkPropTypes(
         FormField.propTypes,
         {
+          // eslint-disable-next-line react/jsx-key
           children: [<Label />],
         },
         'children',
@@ -103,6 +105,7 @@ describe('FormField', () => {
       PropTypes.checkPropTypes(
         FormField.propTypes,
         {
+          // eslint-disable-next-line react/jsx-key
           children: [<Input name='test' />],
         },
         'children',
