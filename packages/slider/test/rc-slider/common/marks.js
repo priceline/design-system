@@ -24,7 +24,7 @@ describe('marks', () => {
     const marks = { 0: 0, 30: '30', 99: '', 100: '100' }
 
     const sliderWrapper = mount(<Slider value={30} marks={marks} />)
-    expect(sliderWrapper.find('.rc-slider-mark-text').length).toBe(3)
+    expect(sliderWrapper.find('.rc-slider-mark-text')).toHaveLength(3)
     expect(
       sliderWrapper.find('.rc-slider-mark-text').at(0).instance().innerHTML
     ).toBe('0')
@@ -36,7 +36,7 @@ describe('marks', () => {
     ).toBe('100')
 
     const rangeWrapper = mount(<Range value={[0, 30]} marks={marks} />)
-    expect(rangeWrapper.find('.rc-slider-mark-text').length).toBe(3)
+    expect(rangeWrapper.find('.rc-slider-mark-text')).toHaveLength(3)
     expect(
       rangeWrapper.find('.rc-slider-mark-text').at(0).instance().innerHTML
     ).toBe('0')

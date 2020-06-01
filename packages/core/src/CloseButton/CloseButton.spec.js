@@ -8,7 +8,7 @@ describe('CloseButton', () => {
     const handleClick = jest.fn()
     const { container } = renderWithTheme(<CloseButton onClick={handleClick} />)
     fireEvent.click(container.firstChild)
-    expect(handleClick).toBeCalled()
+    expect(handleClick).toHaveBeenCalled()
   })
 
   test('renders without props', () => {

@@ -45,7 +45,7 @@ It will parse children based on the `isField` and `isIcon` static properties.
 By default the design system `Input`, `Select`, and `Icon` components will work with the `IconField` component, but to allow other children to render, add an appropriate static property.
 
 ```jsx
-import React from 'react'
+import * as React from 'react'
 import { IconField, Icon } from 'pcln-design-system'
 import CustomInput from './CustomInput'
 

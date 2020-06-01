@@ -261,6 +261,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
       />
     </svg>
   </div>
+   
 </DocumentFragment>
 `;
 
@@ -391,5 +392,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
       />
     </svg>
   </div>
+   
 </DocumentFragment>
 `;

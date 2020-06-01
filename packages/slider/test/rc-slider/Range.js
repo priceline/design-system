@@ -121,7 +121,7 @@ describe('Range', () => {
     wrapper.simulate('focus')
     secondHandle.simulate('keyDown', { keyCode: keyCode.RIGHT })
 
-    expect(onAfterChange).toBeCalled()
+    expect(onAfterChange).toHaveBeenCalled()
   })
 
   it('should render Multi-Range with value correctly', () => {
@@ -189,11 +189,15 @@ describe('Range', () => {
     }
     const wrapper = mount(<TestParent />)
 
-    expect(wrapper.instance().getSlider().state.bounds.length).toBe(3)
-    expect(wrapper.find('.rc-slider-handle > .rc-slider-handle').length).toBe(3)
+    expect(wrapper.instance().getSlider().state.bounds).toHaveLength(3)
+    expect(wrapper.find('.rc-slider-handle > .rc-slider-handle')).toHaveLength(
+      3
+    )
     wrapper.setState({ value: [2, 4] })
-    expect(wrapper.instance().getSlider().state.bounds.length).toBe(2)
-    expect(wrapper.find('.rc-slider-handle > .rc-slider-handle').length).toBe(2)
+    expect(wrapper.instance().getSlider().state.bounds).toHaveLength(2)
+    expect(wrapper.find('.rc-slider-handle > .rc-slider-handle')).toHaveLength(
+      2
+    )
   })
 
   it('should only update bounds that are out of range', () => {
@@ -369,7 +373,7 @@ describe('Range', () => {
       })
       mockRect(wrapper)
       wrapper.instance().focus()
-      expect(handleFocus).toBeCalled()
+      expect(handleFocus).toHaveBeenCalled()
     })
 
     it('blur', () => {
@@ -380,7 +384,7 @@ describe('Range', () => {
       mockRect(wrapper)
       wrapper.instance().focus()
       wrapper.instance().blur()
-      expect(handleBlur).toBeCalled()
+      expect(handleBlur).toHaveBeenCalled()
     })
   })
 })

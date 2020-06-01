@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Head from 'next/head'
 import App from 'next/app'
 import { Layout, Pagination } from 'mdx-docs'
@@ -16,7 +16,7 @@ const routes = navigation.reduce(
 )
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let page = {}
 
     if (Component.getInitialProps) {

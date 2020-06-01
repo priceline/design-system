@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
 import { boolean, withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
@@ -23,6 +24,11 @@ class ModalStory extends React.Component {
       isOpen: props.isOpen,
     }
     this.scrollLock = new ScrollLock()
+  }
+
+  static propTypes = {
+    isOpen: PropTypes.bool,
+    lock: PropTypes.bool,
   }
 
   render() {

@@ -37,7 +37,7 @@ The ThemeProvider is a wrapper around styled-components' [ThemeProvider][sc-them
 [sc-theme]: https://www.styled-components.com/docs/advanced#theming
 
 ```jsx
-import React from 'react'
+import * as React from 'react'
 import { ThemeProvider } from 'pcln-design-system'
 import SomeView from './SomeView'
 
@@ -68,7 +68,7 @@ To use the Montserrat font-family in you project, be sure to include a link in y
 Import and use the design system UI components in your application.
 
 ```jsx
-import React from 'react'
+import * as React from 'react'
 import { Box, Text } from 'pcln-design-system'
 
 const SomeView = (props) => (

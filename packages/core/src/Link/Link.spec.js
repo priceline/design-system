@@ -13,9 +13,7 @@ describe('Link', () => {
   })
 
   it('should add rel="noopener" when target="_blank"', () => {
-    const { asFragment, getByText, debug } = render(
-      <Link target='_blank'>Dummy</Link>
-    )
+    const { asFragment, getByText } = render(<Link target='_blank'>Dummy</Link>)
 
     expect(asFragment()).toMatchSnapshot()
 

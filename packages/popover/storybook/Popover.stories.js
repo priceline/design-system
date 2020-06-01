@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react'
 import {
   Title,
@@ -33,6 +35,7 @@ export default {
     componentSubtitle: 'Used to display some content on top of another',
     docs: {
       // Customize Docs page to omit Stories slot due to broken styling from playground
+      // eslint-disable-next-line react/display-name
       page: () => (
         <>
           <Title />
@@ -254,6 +257,7 @@ const PriceGuidanceContent = ({ handleClose }) => (
         <Box pt={2}>
           <Component
             initialState={{ value: [32, 64] }}
+            // eslint-disable-next-line react/no-children-prop
             children={({ state, setState }) => (
               <Slider
                 value={state.value}

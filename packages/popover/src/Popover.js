@@ -108,6 +108,7 @@ Popover.propTypes = {
   trapFocus: PropTypes.bool,
   isOpen: PropTypes.bool,
   openOnMount: PropTypes.bool,
+  children: PropTypes.node,
 }
 
 Popover.defaultProps = {

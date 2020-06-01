@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -23,6 +24,7 @@ const BorderConcealer = styled(Box)`
   }
 `
 
+// eslint-disable-next-line react/prop-types
 const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
   let iconClone
 

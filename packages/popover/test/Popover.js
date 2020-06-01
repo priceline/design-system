@@ -3,6 +3,7 @@ import { fireEvent, wait, getByRole } from '@testing-library/react'
 import Popover from '../src'
 import { Box, Button } from 'pcln-design-system'
 
+// eslint-disable-next-line react/prop-types
 const InnerContent = ({ handleClose }) => (
   <Box>
     <p>Hello there!</p>

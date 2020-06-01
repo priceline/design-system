@@ -13,6 +13,7 @@ import {
 } from '../utils'
 
 const Checkbox = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { disabled, size } = props
 
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
@@ -20,6 +21,7 @@ const Checkbox = (props) => {
 
   return (
     <CheckBoxWrapper
+      // eslint-disable-next-line react/prop-types
       theme={props.theme}
       color={props.color}
       disabled={disabled}

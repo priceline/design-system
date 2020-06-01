@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
+
 import { Flex, Box, Text, Icon, Image, Heading } from '..'
 
 storiesOf('Layout Examples', module)
@@ -71,6 +72,7 @@ const Border = styled(Box)`
   border-radius: 3px;
 `
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ image, title, text }) => (
   <Border p={1}>
     <Image src={image} width='512' height='256' />

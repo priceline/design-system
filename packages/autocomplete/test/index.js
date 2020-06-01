@@ -10,11 +10,9 @@ describe('Autocomplete', () => {
         <Autocomplete.Input />
         <Autocomplete.Menu>
           {us.STATES.map((state) => (
-            <Autocomplete.Item
-              key={state.name}
-              item={state}
-              children={state.name}
-            />
+            <Autocomplete.Item key={state.name} item={state}>
+              {state.name}
+            </Autocomplete.Item>
           ))}
         </Autocomplete.Menu>
       </Autocomplete>
@@ -27,11 +25,9 @@ describe('Autocomplete', () => {
       <Autocomplete defaultIsOpen={true}>
         <Autocomplete.Menu>
           {us.STATES.map((state) => (
-            <Autocomplete.Item
-              key={state.name}
-              item={state}
-              children={state.name}
-            />
+            <Autocomplete.Item key={state.name} item={state}>
+              {state.name}
+            </Autocomplete.Item>
           ))}
         </Autocomplete.Menu>
       </Autocomplete>
@@ -45,11 +41,9 @@ describe('Autocomplete', () => {
       <Autocomplete defaultIsOpen={true} defaultHighlightedIndex={0}>
         <Autocomplete.Menu>
           {us.STATES.map((state) => (
-            <Autocomplete.Item
-              key={state.name}
-              item={state}
-              children={state.name}
-            />
+            <Autocomplete.Item key={state.name} item={state}>
+              {state.name}
+            </Autocomplete.Item>
           ))}
         </Autocomplete.Menu>
       </Autocomplete>

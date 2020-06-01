@@ -26,7 +26,7 @@ storiesOf('BlockLink', module)
       refChild={(dsRef) => (
         <>
           <BlockLink color='darkGray' dsRef={dsRef}>
-            I'm a link!
+            I am a link!
           </BlockLink>
           <br />
           <Button

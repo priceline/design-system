@@ -14,7 +14,7 @@ storiesOf('Select', module)
         <option>Business</option>
         <option>First Class</option>
         <option>
-          With a super long label that doesn't get clobbered by the chevron
+          With a super long label that does not get clobbered by the chevron
         </option>
       </Select>
     </Box>
@@ -24,7 +24,7 @@ storiesOf('Select', module)
       <Label htmlFor='cabinClass'>Cabin Class</Label>
       <Select id='cabinClass' name='cabinClass' defaultValue=''>
         <option>
-          With a super long label that doesn't collide with the chevron
+          With a super long label that does not collide with the chevron
         </option>
       </Select>
     </Box>

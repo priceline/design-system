@@ -1,5 +1,5 @@
 import React from 'react'
-import { Radio, ThemeProvider } from '..'
+import { Radio } from '..'
 
 describe('Radio', () => {
   test('Selected, rendering', () => {

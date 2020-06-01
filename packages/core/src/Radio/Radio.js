@@ -65,6 +65,9 @@ const RadioIcon = ({ checked, ...props }) => {
     <RadioEmptyIcon {...props} />
   )
 }
+RadioIcon.propTypes = {
+  checked: PropTypes.bool,
+}
 
 const Radio = (props) => {
   const { checked, disabled, size } = props
@@ -83,16 +86,16 @@ const Radio = (props) => {
     </RadioWrap>
   )
 }
-
-Radio.defaultProps = {
-  color: 'primary',
-  size: 24,
-}
-
 Radio.propTypes = {
   color: deprecatedColorValue(),
   dsRef: refPropType,
   size: PropTypes.number,
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+}
+Radio.defaultProps = {
+  color: 'primary',
+  size: 24,
 }
 
 export default Radio
