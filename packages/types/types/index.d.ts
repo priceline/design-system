@@ -8,6 +8,7 @@ import {
   AlignItemsProps,
   BorderColorProps,
   BorderRadiusProps,
+  BordersProps,
   BottomProps,
   ColorProps,
   FlexDirectionProps,
@@ -34,11 +35,15 @@ import * as CSS from 'csstype'
 /**
  * Helper interfaces
  */
-interface ReactRefObject {
+export interface ColorValidation {
+  color?: PropValidator
+}
+
+export interface ReactRefObject {
   current: any
 }
 
-interface ClassNameProps {
+export interface ClassNameProps {
   className?: string
 }
 
@@ -48,13 +53,23 @@ export interface TopRightBottomLeft
     BottomProps,
     LeftProps {}
 
-type RefPropType = (() => any) | ReactRefObject
+export type RefPropType = (() => any) | ReactRefObject
+
+export type PropValidator = undefined | never
+
+export interface DsRefProps {
+  dsRef?: (() => any) | ReactRefObject
+}
+
+export interface IdProps {
+  id: string
+}
 
 /**
  * Combining Styled System interfaces depending on which Styled System functions
  * the component uses
  */
-type AbsoluteProps = TopRightBottomLeft
+export type AbsoluteProps = TopRightBottomLeft
 
 export interface BackgroundImageProps extends WidthProps {
   height?: string
@@ -265,13 +280,12 @@ export interface BannerProps extends BoxProps {
   bg?: string
 }
 
-export interface StampProps
-  extends SpaceProps, FontSizeProps, ColorProps {
-    variation?: 'outline' | 'fill' | 'solid',
-    size?: 'small' | 'medium'
-    /** DEPRECATED: Use "color" prop instead */
-    bg?: string
-  }
+export interface StampProps extends SpaceProps, FontSizeProps, ColorProps {
+  variation?: 'outline' | 'fill' | 'solid'
+  size?: 'small' | 'medium'
+  /** DEPRECATED: Use "color" prop instead */
+  bg?: string
+}
 
 export interface ContainerProps {
   maxWidth?: number
@@ -299,6 +313,46 @@ export interface TooltipProps extends BoxProps {
   bg?: string
 }
 
+export interface CheckboxProps extends DsRefProps, ColorValidation {
+  id: string
+  size?: number
+  onChange: () => void
+}
+
+export interface LabelProps
+  extends SpaceProps,
+    FontSizeProps,
+    FontWeightProps,
+    WidthProps,
+    TextColorProps {}
+
+export interface RadioProps extends TextColorProps, DsRefProps {
+  size?: number
+}
+
+export interface SelectProps
+  extends DsRefProps,
+    SpaceProps,
+    FontSizeProps,
+    TextColorProps,
+    BordersProps {}
+
+export interface TextAreaProps
+  extends TextColorProps,
+    DsRefProps,
+    BordersProps,
+    SpaceProps,
+    IdProps {}
+
+export interface InputProps
+  extends DsRefProps,
+    BordersProps,
+    SpaceProps,
+    TextColorProps,
+    FontSizeProps {}
+
+export interface InputGroupProps extends SpaceProps, BorderColorProps {}
+
 //
 // pcln-design-system components
 // ------------------------------------------------------------
@@ -319,7 +373,10 @@ export class Breadcrumbs extends React.Component<any, any> {
 export class BreadcrumbLink extends React.Component<BreadcrumbLinkProps, any> {}
 export class Button extends React.Component<ButtonProps, any> {}
 export class Card extends React.Component<CardProps, any> {}
-export class Checkbox extends React.Component<any, any> {}
+export class Checkbox extends React.Component<
+  CheckboxProps & React.HTMLProps<HTMLInputElement>,
+  any
+> {}
 export class CloseButton extends React.Component<CloseButtonProps, any> {}
 export class Container extends React.Component<ContainerProps, any> {}
 export class Divider extends React.Component<DividerProps, any> {}
@@ -340,11 +397,17 @@ export class Icon extends React.Component<IconProps, any> {}
 export class IconButton extends React.Component<IconButtonProps, any> {}
 export class IconField extends React.Component<FlexProps, any> {}
 export class Image extends React.Component<ImageProps, any> {}
-export class Input extends React.Component<any, any> {
+export class Input extends React.Component<
+  InputProps & React.HTMLProps<HTMLButtonElement>,
+  any
+> {
   static isField: boolean
 }
-export class InputGroup extends React.Component<any, any> {}
-export class Label extends React.Component<any, any> {
+export class InputGroup extends React.Component<InputGroupProps, any> {}
+export class Label extends React.Component<
+  LabelProps & React.HTMLProps<HTMLLabelElement>,
+  any
+> {
   static isLabel: boolean
 }
 export class Link extends React.Component<LinkProps, any> {}
@@ -352,10 +415,16 @@ export class PlaceholderImage extends React.Component<
   PlaceholderImageProps,
   any
 > {}
-export class Radio extends React.Component<any, any> {}
+export class Radio extends React.Component<
+  RadioProps & React.HTMLProps<HTMLInputElement>,
+  any
+> {}
 export class RatingBadge extends React.Component<RatingBadgeProps, any> {}
 export class Relative extends React.Component<RelativeProps, any> {}
-export class Select extends React.Component<any, any> {
+export class Select extends React.Component<
+  SelectProps & React.HTMLProps<HTMLSelectElement>,
+  any
+> {
   static isField: boolean
 }
 export class Stamp extends React.Component<StampProps, any> {}
@@ -372,7 +441,10 @@ export class Text extends React.Component<TextProps, any> {
   /** Strikethrough element */
   static s
 }
-export class TextArea extends React.Component<any, any> {
+export class TextArea extends React.Component<
+  TextAreaProps & React.HTMLProps<HTMLTextAreaElement>,
+  any
+> {
   static isField: boolean
 }
 export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
@@ -393,11 +465,11 @@ export interface ColorArgs extends ThemeArgs {
   bg?: string
 }
 
-interface CustomBreakpoints {
+export interface CustomBreakpoints {
   [key: string]: string | number
 }
 
-interface PaletteColor {
+export interface PaletteColor {
   lightest?: string
   light?: string
   base: string
@@ -405,11 +477,11 @@ interface PaletteColor {
   darkest?: string
 }
 
-interface Palette {
+export interface Palette {
   [key: string]: PaletteColor
 }
 
-interface CreateThemeResult extends Theme {
+export interface CreateThemeResult extends Theme {
   contrastRatio: number
   breakpoints: any[]
   mediaQueries: any[]
@@ -431,4 +503,4 @@ export function createTheme(
   customBreakpoints: CustomBreakpoints
 ): CreateThemeResult
 
-type theme = Theme
+export type theme = Theme

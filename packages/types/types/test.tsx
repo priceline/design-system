@@ -10,6 +10,7 @@ import {
   Breadcrumbs,
   Button,
   Card,
+  Checkbox,
   CloseButton,
   color,
   Container,
@@ -18,6 +19,7 @@ import {
   Divider,
   Flag,
   Flex,
+  FormField,
   getContrastRatio,
   getPaletteColor,
   getTextColorOn,
@@ -30,18 +32,23 @@ import {
   IconField,
   Image,
   Input,
+  InputGroup,
+  Label,
   Link,
   PlaceholderImage,
+  Radio,
+  RatingBadge,
+  Select,
   SrOnly,
   Stamp,
   Stepper,
   Text,
+  TextArea,
   theme as ThemeType,
   ThemeProvider,
   ToggleBadge,
   Tooltip,
   Truncate,
-  RatingBadge,
 } from 'pcln-types'
 import theme from '../../core/src/theme'
 import * as React from 'react'
@@ -87,13 +94,42 @@ const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
 const myFlex = <Flex flexDirection={['row', null, 'column']} m={3} /> // $ExpectType Element
 const myHide = <Hide xs sm md lg xl xxl m={3} /> // $ExpectType Element
+const myCheckbox = <Checkbox id='test' size={1} onChange={() => 'I changed!'} /> // $ExpectType Element
+// $ExpectType Element
+const myFormField = (
+  <FormField>
+    <Label width='1' fontWeight='bold' color='text'>
+      Label
+    </Label>
+    <Input id='myInput' fontSize={1} color='primary' />
+  </FormField>
+)
+const myLabel = (
+  <Label width='1' fontWeight='bold' color='text'>
+    Label
+  </Label>
+) // $ExpectType Element
+const myRadio = <Radio size={1} color='primary' /> // $ExpectType Element
+const mySelect = <Select fontSize={1} color='text' /> // $ExpectType Element
+const myTextArea = <TextArea id='test' /> // $ExpectType Element
+const myInput = <Input id='test' /> // $ExpectType Element
+// $ExpectType Element
+const myInputGroup = (
+  <InputGroup borderColor='secondary'>
+    <Input id='myInput' fontSize={1} color='primary' />
+    <Input id='myInput' fontSize={1} color='primary' />
+  </InputGroup>
+)
+
 // $ExpectType Element
 const myLink = (
   <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
 )
 // $ExpectType Element
 const myBadge = (
-  <Badge color='primary' size='medium' m={1} p={2}>blue</Badge>
+  <Badge color='primary' size='medium' m={1} p={2}>
+    blue
+  </Badge>
 )
 // $ExpectType Element
 const myBlockLink = (
@@ -170,12 +206,7 @@ const myBreadcrumbs = (
 )
 // $ExpectType Element
 const myRatingBadge = (
-  <RatingBadge
-    fontWeight='lighter'
-    px={2}
-    color='secondary'
-    borderRadius={1}
-  >
+  <RatingBadge fontWeight='lighter' px={2} color='secondary' borderRadius={1}>
     9.0
   </RatingBadge>
 )
