@@ -33,7 +33,7 @@ module.exports = {
     'react',
     'jest',
     // '@typescript-eslint',
-    // 'prettier',
+    'prettier',
   ],
   rules: {},
   settings: {
