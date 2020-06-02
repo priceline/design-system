@@ -3,7 +3,7 @@
 
 /// <reference types="@types/styled-system" />
 
-import React from 'react'
+import * as React from 'react'
 import {
   AlignItemsProps,
   BorderColorProps,
@@ -94,9 +94,7 @@ export interface BoxProps
 }
 
 export interface ButtonProps extends ColorProps, SpaceProps, WidthProps {
-  disabled?: boolean
   dsRef?: RefPropType
-  onClick?: React.MouseEventHandler<HTMLElement>
   size?: 'small' | 'medium' | 'large' | number
   variation?: 'fill' | 'outline' | 'link'
   /** DEPRECATED: Use "width" prop instead */
@@ -357,33 +355,31 @@ export interface InputGroupProps extends SpaceProps, BorderColorProps {}
 // pcln-design-system components
 // ------------------------------------------------------------
 
-export class Absolute extends React.Component<AbsoluteProps, any> {}
-export class Avatar extends React.Component<AvatarProps, any> {}
-export class BackgroundImage extends React.Component<
-  BackgroundImageProps,
-  any
-> {}
-export class Badge extends React.Component<BadgeProps, any> {}
-export class Banner extends React.Component<BannerProps, any> {}
-export class BlockLink extends React.Component<LinkProps, any> {}
-export class Box extends React.Component<BoxProps, any> {}
-export class Breadcrumbs extends React.Component<any, any> {
+export class Absolute extends React.Component<AbsoluteProps> {}
+export class Avatar extends React.Component<AvatarProps> {}
+export class BackgroundImage extends React.Component<BackgroundImageProps> {}
+export class Badge extends React.Component<BadgeProps> {}
+export class Banner extends React.Component<BannerProps> {}
+export class BlockLink extends React.Component<LinkProps> {}
+export class Box extends React.Component<BoxProps> {}
+export class Breadcrumbs extends React.Component<any> {
   static Link: typeof BreadcrumbLink
 }
-export class BreadcrumbLink extends React.Component<BreadcrumbLinkProps, any> {}
-export class Button extends React.Component<ButtonProps, any> {}
-export class Card extends React.Component<CardProps, any> {}
-export class Checkbox extends React.Component<
-  CheckboxProps & React.HTMLProps<HTMLInputElement>,
-  any
+export class BreadcrumbLink extends React.Component<BreadcrumbLinkProps> {}
+export class Button extends React.Component<
+  ButtonProps & React.HTMLAttributes<HTMLButtonElement>
 > {}
-export class CloseButton extends React.Component<CloseButtonProps, any> {}
-export class Container extends React.Component<ContainerProps, any> {}
-export class Divider extends React.Component<DividerProps, any> {}
-export class Flag extends React.Component<FlagProps, any> {}
-export class Flex extends React.Component<FlexProps, any> {}
-export class FormField extends React.Component<any, any> {}
-export class Heading extends React.Component<TextProps, any> {
+export class Card extends React.Component<CardProps> {}
+export class Checkbox extends React.Component<
+  CheckboxProps & React.HTMLProps<HTMLInputElement>
+> {}
+export class CloseButton extends React.Component<CloseButtonProps> {}
+export class Container extends React.Component<ContainerProps> {}
+export class Divider extends React.Component<DividerProps> {}
+export class Flag extends React.Component<FlagProps> {}
+export class Flex extends React.Component<FlexProps> {}
+export class FormField extends React.Component<any> {}
+export class Heading extends React.Component<TextProps> {
   static h1: typeof Heading
   static h2: typeof Heading
   static h3: typeof Heading
@@ -391,49 +387,42 @@ export class Heading extends React.Component<TextProps, any> {
   static h5: typeof Heading
   static h6: typeof Heading
 }
-export class Hide extends React.Component<HideProps, any> {}
-export class Hug extends React.Component<any, any> {}
-export class Icon extends React.Component<IconProps, any> {}
-export class IconButton extends React.Component<IconButtonProps, any> {}
-export class IconField extends React.Component<FlexProps, any> {}
-export class Image extends React.Component<ImageProps, any> {}
+export class Hide extends React.Component<HideProps> {}
+export class Hug extends React.Component<any> {}
+export class Icon extends React.Component<IconProps> {}
+export class IconButton extends React.Component<IconButtonProps> {}
+export class IconField extends React.Component<FlexProps> {}
+export class Image extends React.Component<ImageProps> {}
 export class Input extends React.Component<
-  InputProps & React.HTMLProps<HTMLButtonElement>,
-  any
+  InputProps & React.HTMLProps<HTMLButtonElement>
 > {
   static isField: boolean
 }
-export class InputGroup extends React.Component<InputGroupProps, any> {}
+export class InputGroup extends React.Component<InputGroupProps> {}
 export class Label extends React.Component<
-  LabelProps & React.HTMLProps<HTMLLabelElement>,
-  any
+  LabelProps & React.HTMLProps<HTMLLabelElement>
 > {
   static isLabel: boolean
 }
-export class Link extends React.Component<LinkProps, any> {}
-export class PlaceholderImage extends React.Component<
-  PlaceholderImageProps,
-  any
-> {}
+export class Link extends React.Component<LinkProps> {}
+export class PlaceholderImage extends React.Component<PlaceholderImageProps> {}
 export class Radio extends React.Component<
-  RadioProps & React.HTMLProps<HTMLInputElement>,
-  any
+  RadioProps & React.HTMLProps<HTMLInputElement>
 > {}
-export class RatingBadge extends React.Component<RatingBadgeProps, any> {}
-export class Relative extends React.Component<RelativeProps, any> {}
+export class RatingBadge extends React.Component<RatingBadgeProps> {}
+export class Relative extends React.Component<RelativeProps> {}
 export class Select extends React.Component<
-  SelectProps & React.HTMLProps<HTMLSelectElement>,
-  any
+  SelectProps & React.HTMLProps<HTMLSelectElement>
 > {
   static isField: boolean
 }
-export class Stamp extends React.Component<StampProps, any> {}
-export class Step extends React.Component<StepProps, any> {}
-export class Stepper extends React.Component<ClassNameProps, any> {
+export class Stamp extends React.Component<StampProps> {}
+export class Step extends React.Component<StepProps> {}
+export class Stepper extends React.Component<ClassNameProps> {
   static Step: typeof Step
 }
-export class SrOnly extends React.Component<any, any> {}
-export class Text extends React.Component<TextProps, any> {
+export class SrOnly extends React.Component<any> {}
+export class Text extends React.Component<TextProps> {
   /** Span element */
   static span
   /** Paragraph element */
@@ -442,15 +431,14 @@ export class Text extends React.Component<TextProps, any> {
   static s
 }
 export class TextArea extends React.Component<
-  TextAreaProps & React.HTMLProps<HTMLTextAreaElement>,
-  any
+  TextAreaProps & React.HTMLProps<HTMLTextAreaElement>
 > {
   static isField: boolean
 }
-export class ThemeProvider extends React.Component<ThemeProviderProps, any> {}
-export class ToggleBadge extends React.Component<ToggleBadgeProps, any> {}
-export class Tooltip extends React.Component<TooltipProps, any> {}
-export class Truncate extends React.Component<TextProps, any> {}
+export class ThemeProvider extends React.Component<ThemeProviderProps> {}
+export class ToggleBadge extends React.Component<ToggleBadgeProps> {}
+export class Tooltip extends React.Component<TooltipProps> {}
+export class Truncate extends React.Component<TextProps> {}
 
 //
 // pcln-design-system utils
