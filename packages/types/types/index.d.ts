@@ -3,14 +3,16 @@
 
 /// <reference types="@types/styled-system" />
 
+/* Note: Using this syntax instead of synthetic default export because we shouldn't assume the TS compiler
+* options used by DS consumers. */
 import * as React from 'react'
+
 import {
   AlignItemsProps,
   BorderColorProps,
   BorderRadiusProps,
   BordersProps,
   BottomProps,
-  ColorProps,
   FlexDirectionProps,
   FlexWrapProps,
   FontSizeProps,
@@ -26,6 +28,7 @@ import {
   TextColorProps,
   TextStyleProps,
   Theme,
+  TLengthStyledSystem,
   TopProps,
   WidthProps,
   ZIndexProps,
@@ -65,6 +68,27 @@ export interface IdProps {
   id: string
 }
 
+export interface ColorProps<TLength = TLengthStyledSystem> {
+  /**
+   * DEPRECATED: Use "color" prop instead.
+   *
+   * The "bg" prop will be removed in v4 in favor of "color", which sets both the background
+   * and font color. Font color is based on the background color set via the "color" prop. This is
+   * to avoid accessibility issues with certain combinations of text and background colors.
+   *
+   * [See GitHub issue for more details](https://github.com/priceline/design-system/issues/650)
+   * */
+  bg?: ResponsiveValue<CSS.BackgroundProperty<TLength>>
+
+  /**
+   * Sets the background color of the component to the given semantic color. Also sets the text color
+   * based on the theme and the given semantic color name to ensure an accessible contrast level.
+   *
+   * [See the docsite for the list of semantic color names](https://priceline.github.io/design-system/palette)
+   */
+  color?: string // TODO replace with type that enumerates semantic color names, as well as combinations of colors and shades
+}
+
 /**
  * Combining Styled System interfaces depending on which Styled System functions
  * the component uses
@@ -80,18 +104,13 @@ export interface BackgroundImageProps extends WidthProps {
 
 export interface BadgeProps extends ColorProps, SpaceProps {
   size?: 'small' | 'medium'
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
 }
 
 export interface BoxProps
   extends ColorProps,
     WidthProps,
     SpaceProps,
-    TextAlignProps {
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
-}
+    TextAlignProps {}
 
 export interface ButtonProps extends ColorProps, SpaceProps, WidthProps {
   dsRef?: RefPropType
@@ -113,16 +132,10 @@ export interface BreadcrumbLinkProps {
 
 export interface FlexProps
   extends BoxProps,
-    SpaceProps,
-    WidthProps,
-    TextColorProps,
-    TextAlignProps,
     JustifyContentProps,
     FlexWrapProps,
     AlignItemsProps,
     FlexDirectionProps {
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
   /** DEPRECATED: Use "flexWrap" prop instead */
   wrap?: ResponsiveValue<CSS.FlexWrapProperty>
   /** DEPRECATED: Use "alignItems" prop instead */
@@ -157,8 +170,7 @@ export interface IconButtonProps extends ButtonProps {
 export interface CardProps
   extends BoxProps,
     BorderRadiusProps,
-    BorderColorProps,
-    TextColorProps {
+    BorderColorProps {
   boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl'
   borderWidth?: 0 | 1 | 2
 }
@@ -197,10 +209,7 @@ export interface PlaceholderImageProps {
 export interface RatingBadgeProps
   extends BoxProps,
     BorderRadiusProps,
-    FontWeightProps {
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
-}
+    FontWeightProps {}
 
 export interface RelativeProps
   extends TopRightBottomLeft,
@@ -219,11 +228,9 @@ export interface ToggleBadgeProps
   dsRef?: RefPropType
   selected?: boolean
   unSelectedBg?: string
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
 }
 
-export interface TextProps
+export interface TextProps<TLength = TLengthStyledSystem>
   extends TextStyleProps,
     FontSizeProps,
     FontWeightProps,
@@ -243,6 +250,8 @@ export interface TextProps
   textShadowSize?: 'sm' | 'md'
   /** DEPRECATED: Use "textAlign" prop instead */
   align?: ResponsiveValue<CSS.TextAlignProperty>
+  /** Sets background color */
+  bg?: ResponsiveValue<CSS.BackgroundProperty<TLength>>
 }
 
 export interface ThemeProviderProps {
@@ -256,7 +265,7 @@ export interface DividerProps
     WidthProps,
     BorderColorProps {}
 
-export interface AvatarProps extends ClassNameProps, TextColorProps {
+export interface AvatarProps extends ClassNameProps, ColorProps {
   /** Heading displayed with avatar */
   title?: string
   /** Subheading displayed beneath heading */
@@ -274,25 +283,18 @@ export interface BannerProps extends BoxProps {
   onClose?: (any) => void
   showIcon?: boolean
   text?: string | React.ReactNode
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
 }
 
 export interface StampProps extends SpaceProps, FontSizeProps, ColorProps {
   variation?: 'outline' | 'fill' | 'solid'
   size?: 'small' | 'medium'
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
 }
 
 export interface ContainerProps {
   maxWidth?: number
 }
 
-export interface FlagProps extends FlexProps, WidthProps {
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
-}
+export interface FlagProps extends FlexProps, WidthProps {}
 
 export interface HugProps extends CardProps {
   iconDisplay?: string[]
@@ -307,8 +309,6 @@ export interface TooltipProps extends BoxProps {
   center?: boolean
   left?: boolean
   right?: boolean
-  /** DEPRECATED: Use "color" prop instead */
-  bg?: string
 }
 
 export interface CheckboxProps extends DsRefProps, ColorValidation {
@@ -367,7 +367,7 @@ export class Breadcrumbs extends React.Component<any> {
 }
 export class BreadcrumbLink extends React.Component<BreadcrumbLinkProps> {}
 export class Button extends React.Component<
-  ButtonProps & React.HTMLAttributes<HTMLButtonElement>
+  ButtonProps & React.HTMLProps<HTMLButtonElement>
 > {}
 export class Card extends React.Component<CardProps> {}
 export class Checkbox extends React.Component<
