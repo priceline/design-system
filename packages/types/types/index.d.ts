@@ -4,7 +4,7 @@
 /// <reference types="@types/styled-system" />
 
 /* Note: Using this syntax instead of synthetic default export because we shouldn't assume the TS compiler
-* options used by DS consumers. */
+ * options used by DS consumers. */
 import * as React from 'react'
 
 import {
@@ -77,7 +77,7 @@ export interface ColorProps<TLength = TLengthStyledSystem> {
    * to avoid accessibility issues with certain combinations of text and background colors.
    *
    * [See GitHub issue for more details](https://github.com/priceline/design-system/issues/650)
-   * */
+   */
   bg?: ResponsiveValue<CSS.BackgroundProperty<TLength>>
 
   /**
@@ -112,9 +112,16 @@ export interface BoxProps
     SpaceProps,
     TextAlignProps {}
 
-export interface ButtonProps extends ColorProps, SpaceProps, WidthProps {
+export interface ButtonBaseProps
+  extends ColorProps,
+    SpaceProps,
+    WidthProps,
+    React.ButtonHTMLAttributes<any> {
   dsRef?: RefPropType
-  size?: 'small' | 'medium' | 'large' | number
+}
+
+export interface ButtonProps extends ButtonBaseProps {
+  size?: 'small' | 'medium' | 'large'
   variation?: 'fill' | 'outline' | 'link'
   /** DEPRECATED: Use "width" prop instead */
   fullWidth?: boolean
@@ -164,7 +171,6 @@ export interface IconProps extends ColorProps, SizeProps {
 
 export interface IconButtonProps extends ButtonProps {
   icon?: React.ComponentElement<IconProps, any>
-  dsRef?: RefPropType
 }
 
 export interface CardProps
@@ -175,8 +181,16 @@ export interface CardProps
   borderWidth?: 0 | 1 | 2
 }
 
-export interface CloseButtonProps extends IconButtonProps, ButtonProps {
+export interface CloseButtonProps
+  extends ButtonBaseProps,
+    ColorProps,
+    SpaceProps,
+    WidthProps {
+  dsRef?: RefPropType
   size?: number
+  variation?: 'fill' | 'outline' | 'link'
+  /** DEPRECATED: Use "width" prop instead */
+  fullWidth?: boolean
   title?: string
 }
 
@@ -366,9 +380,7 @@ export class Breadcrumbs extends React.Component<any> {
   static Link: typeof BreadcrumbLink
 }
 export class BreadcrumbLink extends React.Component<BreadcrumbLinkProps> {}
-export class Button extends React.Component<
-  ButtonProps & React.HTMLProps<HTMLButtonElement>
-> {}
+export class Button extends React.Component<ButtonProps> {}
 export class Card extends React.Component<CardProps> {}
 export class Checkbox extends React.Component<
   CheckboxProps & React.HTMLProps<HTMLInputElement>
