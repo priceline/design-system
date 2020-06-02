@@ -104,11 +104,12 @@ const myFormField = (
     <Input id='myInput' fontSize={1} color='primary' />
   </FormField>
 )
+// $ExpectType Element
 const myLabel = (
   <Label width='1' fontWeight='bold' color='text'>
     Label
   </Label>
-) // $ExpectType Element
+)
 const myRadio = <Radio size={1} color='primary' /> // $ExpectType Element
 const mySelect = <Select fontSize={1} color='text' /> // $ExpectType Element
 const myTextArea = <TextArea id='test' /> // $ExpectType Element
@@ -139,9 +140,10 @@ const myBlockLink = (
 const myButton = (
   <Button
     variation='fill'
-    size='medium'
+    size={'medium'}
     color='primary'
     disabled={false}
+    onClick={() => 'i did something!'}
     width={1}
   >
     BUTTON
@@ -172,6 +174,7 @@ const myIconButton = (
   <IconButton
     dsRef={() => 'ima ref'}
     icon={<Icon name='Calendar' title='Choose date' />}
+    size='small'
     onClick={() => 'ima function'}
   />
 )
