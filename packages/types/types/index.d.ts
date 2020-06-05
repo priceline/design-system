@@ -68,6 +68,11 @@ export interface IdProps {
   id: string
 }
 
+export interface BoxShadowSizeProps {
+  /** Add a box shadow with a size based on values defined in the theme */
+  boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl'
+}
+
 export interface ColorProps<TLength = TLengthStyledSystem> {
   /**
    * DEPRECATED: Use "color" prop instead.
@@ -108,6 +113,7 @@ export interface BadgeProps extends ColorProps, SpaceProps {
 
 export interface BoxProps
   extends ColorProps,
+    BoxShadowSizeProps,
     WidthProps,
     SpaceProps,
     TextAlignProps {}
@@ -176,8 +182,8 @@ export interface IconButtonProps extends ButtonProps {
 export interface CardProps
   extends BoxProps,
     BorderRadiusProps,
+    BoxShadowSizeProps,
     BorderColorProps {
-  boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl'
   borderWidth?: 0 | 1 | 2
 }
 

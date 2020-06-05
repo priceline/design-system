@@ -3,7 +3,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-import { Box } from '..'
+import { Box, Text } from '..'
 
 const description =
   'A low-level layout component for setting width, margin, padding, and color'
@@ -22,6 +22,21 @@ storiesOf('Box', module)
     <Box p={3} color='blue'>
       Hello
     </Box>
+  ))
+  .add('Box shadow', () => (
+    <div>
+      {['sm', 'md', 'lg', 'xl'].map((boxShadow) => (
+        <Box
+          p={2}
+          mb={'42px'}
+          color='blue'
+          boxShadowSize={boxShadow}
+          key={boxShadow}
+        >
+          box-shadow: <Text bold>{boxShadow}</Text>
+        </Box>
+      ))}
+    </div>
   ))
   .add('Background Color', () => (
     <React.Fragment>

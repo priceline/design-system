@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import { space, width, textAlign } from 'styled-system'
 
 import {
@@ -6,10 +7,11 @@ import {
   color,
   deprecatedColorValue,
   deprecatedPropType,
+  boxShadow,
 } from '../utils'
 
 const Box = styled.div`
-  ${space} ${width} ${textAlign}
+  ${space} ${width} ${textAlign} ${boxShadow}
   ${color}
   ${applyVariations('Box')}
 `
@@ -22,6 +24,7 @@ Box.propTypes = {
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
   ...textAlign.propTypes,
+  boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
 }
 
 export default Box

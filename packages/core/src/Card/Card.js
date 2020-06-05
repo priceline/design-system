@@ -7,25 +7,8 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
+  boxShadow,
 } from '../utils'
-
-const boxShadow = (props) => {
-  const boxShadows = {
-    sm: {
-      'box-shadow': props.theme.boxShadows[0],
-    },
-    md: {
-      'box-shadow': props.theme.boxShadows[1],
-    },
-    lg: {
-      'box-shadow': props.theme.boxShadows[2],
-    },
-    xl: {
-      'box-shadow': props.theme.boxShadows[3],
-    },
-  }
-  return boxShadows[props.boxShadowSize]
-}
 
 const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
   border:
