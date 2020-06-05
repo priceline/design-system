@@ -27,8 +27,8 @@ storiesOf('Box', module)
     <div>
       {['sm', 'md', 'lg', 'xl'].map((boxShadow) => (
         <Box
-          p={3}
-          mb={'40px'}
+          p={2}
+          mb={'42px'}
           color='blue'
           boxShadowSize={boxShadow}
           key={boxShadow}

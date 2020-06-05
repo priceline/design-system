@@ -38,6 +38,12 @@ describe('Box', () => {
     expect(json).toHaveStyleRule('background-color', theme.colors.green)
   })
 
+  test('boxShadowSize prop sets box-shadow', () => {
+    const json = rendererCreateWithTheme(<Box boxShadowSize='sm' />).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('box-shadow', theme.boxShadows[0])
+  })
+
   test('align prop triggers warning', () => {
     console.error = jest.fn()
 
