@@ -87,8 +87,8 @@ const myThemeProvider = (
   <ThemeProvider theme={theme} customBreakpoints={['100px', '500px']} />
 )
 
-const myBox = <Box width='1' bg='primary' /> // $ExpectType Element
-const myCard = <Card width='1' bg='primary' borderRadius='md' /> // $ExpectType Element
+const myBox = <Box width='1' bg='primary' boxShadowSize={'sm'}/> // $ExpectType Element
+const myCard = <Card width='1' bg='primary' borderRadius='md' boxShadowSize={'md'}/> // $ExpectType Element
 const myText = <Text regular align={'center'} textAlign={'center'} /> // $ExpectType Element
 const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
