@@ -65,7 +65,7 @@ exports[`Select renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxirZ c0"
   width={1}
 >
   <select
@@ -80,7 +80,7 @@ exports[`Select renders 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3"
+    className="c2 sc-fzoxKX c3"
     color="text.light"
     fill="currentcolor"
     focusable={false}

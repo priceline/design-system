@@ -82,7 +82,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxirZ c0"
   color="primary"
   disabled={true}
 >
@@ -215,7 +215,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 <div
-    class="c0"
+    class="sc-AxirZ c0"
     color="primary"
     disabled=""
   >
@@ -348,7 +348,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 <div
-    class="c0"
+    class="sc-AxirZ c0"
     color="primary"
   >
     <input

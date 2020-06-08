@@ -13,17 +13,16 @@ exports[`InputGroup renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  border-color: #c0cad5;
 }
 
-.c0 > .c1 {
+border-color:#c0cad5 .c0 > .sc-AxirZ {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c0 .c2 {
+.c0 .sc-qcrrk {
   border: 0;
   box-shadow: none;
 }

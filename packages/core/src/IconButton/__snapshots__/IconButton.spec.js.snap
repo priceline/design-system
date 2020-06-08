@@ -41,7 +41,7 @@ exports[`IconButton renders without props 1`] = `
 }
 
 <button
-  className="c0"
+  className="sc-pdjNk c0"
   name="Key"
 >
   <div />

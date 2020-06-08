@@ -9,7 +9,7 @@ exports[`BlockLink renders 1`] = `
 }
 
 <a
-  className="c0"
+  className="sc-qPXtF c0"
 >
   raw text
 </a>

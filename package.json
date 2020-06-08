@@ -53,7 +53,7 @@
     "hoist-non-react-statics": "^3.3.2",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
-    "jest-styled-components": "^6.3.4",
+    "jest-styled-components": "^7.0.2",
     "lerna": "^3.22.0",
     "lint-staged": "^10.2.7",
     "npm-run-all": "^4.1.5",
@@ -63,7 +63,7 @@
     "react-dom": "^16.13.1",
     "react-draggable-playground": "^1.0.0",
     "storybook-dark-mode": "^0.2.0",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.1.1",
     "typescript": "^3.9.3"
   },
   "lint-staged": {

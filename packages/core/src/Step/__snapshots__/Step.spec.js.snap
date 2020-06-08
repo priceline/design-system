@@ -58,7 +58,7 @@ exports[`Step should handle onClick 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="sc-pdjNk c1"
       data-testid="Step"
     >
       <div
@@ -144,7 +144,7 @@ exports[`Step should render a completed step correctly 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="sc-pdjNk c1"
       data-testid="Step"
     >
       <svg
@@ -248,7 +248,7 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
     class="c0"
   >
     <button
-      class="c1"
+      class="sc-pdjNk c1"
       data-testid="Step"
     >
       <svg
@@ -339,7 +339,7 @@ exports[`Step should render an active step correctly 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="sc-pdjNk c1"
       data-testid="Step"
     >
       <div
@@ -412,7 +412,7 @@ exports[`Step should render correctly with no props without throwing 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="sc-pdjNk c1"
     >
       <div
         aria-selected="false"
