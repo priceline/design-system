@@ -7,7 +7,6 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  boxShadow,
 } from '../utils'
 
 const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
@@ -18,13 +17,12 @@ const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
 })
 
 const Card = styled(Box)`
-  ${boxShadow} ${boxBorder} ${borderRadius}
+  ${boxBorder} ${borderRadius}
   ${applyVariations('Card')}
 `
 
 Card.propTypes = {
   ...borderRadius.propTypes,
-  boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   borderColor: deprecatedColorValue(),
   color: deprecatedColorValue(),
   borderWidth: PropTypes.oneOf([0, 1, 2]),
