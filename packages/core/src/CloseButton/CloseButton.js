@@ -6,17 +6,17 @@ import { refPropType } from '../utils'
 import { IconButton } from '../IconButton'
 
 const CloseButton = (props) => (
-  <IconButton {...props} icon={<Close size={props.size} />} />
+  <IconButton {...props} icon={<Close size={props.iconSize} />} />
 )
 
 CloseButton.defaultProps = {
-  size: 24,
+  iconSize: 24,
   title: 'close',
 }
 
 CloseButton.propTypes = {
   onClick: PropTypes.func,
-  size: PropTypes.number,
+  iconSize: PropTypes.number,
   dsRef: refPropType,
   title: PropTypes.string,
 }

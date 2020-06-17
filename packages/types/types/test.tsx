@@ -153,6 +153,7 @@ const myButton = (
 const myCloseButton = (
   <CloseButton
     color='background.darkest'
+    iconSize={48}
     onClick={() => 'ima function'}
     title='Title'
   />

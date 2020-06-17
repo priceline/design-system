@@ -193,7 +193,7 @@ export interface CloseButtonProps
     SpaceProps,
     WidthProps {
   dsRef?: RefPropType
-  size?: number
+  iconSize?: number
   variation?: 'fill' | 'outline' | 'link'
   /** DEPRECATED: Use "width" prop instead */
   fullWidth?: boolean
