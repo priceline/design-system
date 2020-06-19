@@ -86,9 +86,24 @@ const myTheme: ThemeType = theme
 const myThemeProvider = (
   <ThemeProvider theme={theme} customBreakpoints={['100px', '500px']} />
 )
+const customTheme = {
+  palette: {
+    primary: '#000',
+  },
+}
 
-const myBox = <Box width='1' bg='primary' boxShadowSize={'sm'}/> // $ExpectType Element
-const myCard = <Card width='1' bg='primary' borderRadius='md' boxShadowSize={'md'}/> // $ExpectType Element
+// $ExpectType Element
+const customThemeProvider = (
+  <ThemeProvider theme={customTheme} customBreakpoints={['100px', '500px']} />
+)
+
+const styleBox = <Box style={{ background: 'red' }} /> // $ExpectType Element
+
+const myBox = <Box width='1' bg='primary' boxShadowSize={'sm'} /> // $ExpectType Element
+// $ExpectType Element
+const myCard = (
+  <Card width='1' bg='primary' borderRadius='md' boxShadowSize={'md'} />
+)
 const myText = <Text regular align={'center'} textAlign={'center'} /> // $ExpectType Element
 const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
@@ -112,7 +127,7 @@ const myLabel = (
 )
 const myRadio = <Radio size={1} color='primary' /> // $ExpectType Element
 const mySelect = <Select fontSize={1} color='text' /> // $ExpectType Element
-const myTextArea = <TextArea id='test' /> // $ExpectType Element
+const myTextArea = <TextArea id='test' style={{ borderColor: 'red' }} /> // $ExpectType Element
 const myInput = <Input id='test' /> // $ExpectType Element
 // $ExpectType Element
 const myInputGroup = (
@@ -240,7 +255,7 @@ const myToggleBadge = (
 )
 
 const myTruncate = <Truncate color='primary' /> // $ExpectType Element
-const mySrOnly = <SrOnly class='test-class-stuff' /> // $ExpectType Element
+const mySrOnly = <SrOnly className='test-class-stuff' /> // $ExpectType Element
 // $ExpectType Element
 const myImage = (
   <Image height={'50px'} width={[1, 1 / 2]} alt={'image'} src={'cat.jpg'} />
