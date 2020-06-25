@@ -15,7 +15,8 @@
     "storybook": "build-storybook -o docs/out/storybook",
     "create-component": "npm run plop",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "check-internal-urls": "node ./githooks/no-internal-registry.js"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
@@ -76,7 +77,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run check-internal-urls"
     }
   }
 }
