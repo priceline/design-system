@@ -10,8 +10,7 @@ module.exports = {
     'plugin:jest/style',
     'pcln-accessibility',
     'prettier',
-    // 'plugin:@typescript-eslint/eslint-recommended',
-    // 'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -29,12 +28,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'jest',
-    // '@typescript-eslint',
-    'prettier',
-  ],
+  plugins: ['react', 'jest', '@typescript-eslint', 'prettier'],
   rules: {},
   settings: {
     react: {

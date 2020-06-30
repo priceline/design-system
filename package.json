@@ -26,6 +26,7 @@
     "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-env": "^7.10.1",
     "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.4",
     "@babel/runtime": "^7.10.1",
     "@compositor/kit": "^1.0.47",
     "@storybook/addon-a11y": "^5.3.19",
@@ -37,13 +38,13 @@
     "@storybook/react": "^5.3.19",
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^10.0.4",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
     "all-contributors-cli": "^6.15.0",
     "babel-loader": "^8.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "eslint": "^7.1.0",
+    "eslint": "^7.3.1",
     "eslint-config-pcln-accessibility": "^1.0.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest": "^23.13.2",
@@ -65,7 +66,7 @@
     "react-draggable-playground": "^1.0.0",
     "storybook-dark-mode": "^0.2.0",
     "styled-components": "^4.4.1",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write",

@@ -1,6 +1,13 @@
 module.exports = {
   presets: [
     [
+      '@babel/preset-typescript',
+      {
+        isTSX: true,
+        allExtensions: true,
+      },
+    ],
+    [
       '@babel/env',
       {
         modules: false,
@@ -21,6 +28,7 @@ module.exports = {
     cjs: {
       presets: [['@babel/env', { modules: 'cjs' }]],
       plugins: ['@babel/transform-runtime'],
+      ignore: [/\.(stories|spec)\.(js|tsx?)/],
     },
   },
 }

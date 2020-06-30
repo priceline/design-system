@@ -9,9 +9,9 @@
   "scripts": {
     "prepare": "run-s clean build",
     "build": "run-s build:js build:types",
-    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
-    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs --extensions \".js,.ts,.tsx\"",
+    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm --extensions \".js,.ts,.tsx\"",
+    "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es --extensions \".js,.ts,.tsx\"",
     "build:js": "run-p build:babel:*",
     "build:types": "mkdir -p ./dist/types && cp ../types/types/index.d.ts dist/types",
     "clean": "rimraf dist",
@@ -71,9 +71,6 @@
     "moduleDirectories": [
       "node_modules",
       "../../test"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/*.spec.js"
     ]
   },
   "dependencies": {
