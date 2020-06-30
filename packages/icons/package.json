@@ -59,8 +59,8 @@
   },
   "peerDependencies": {
     "pcln-design-system": "^3.6.1",
-    "react": ">=16.3.0",
-    "react-dom": ">=16.3.0",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
     "styled-components": ">=3"
   }
 }

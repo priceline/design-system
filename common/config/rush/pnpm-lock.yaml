@@ -9778,7 +9778,7 @@ packages:
       cosmiconfig: 5.2.1
       cssnano-preset-default: 4.0.7
       is-resolvable: 1.1.0
-      postcss: 7.0.29
+      postcss: 7.0.34
     dev: false
     engines:
       node: '>=6.9.0'
@@ -19656,7 +19656,7 @@ packages:
   /postcss-modules-values/3.0.0:
     dependencies:
       icss-utils: 4.1.1
-      postcss: 7.0.34
+      postcss: 7.0.29
     dev: false
     resolution:
       integrity: sha512-1//E5jCBrZ9DmRX+zCtmQtRSV6PV42Ix7Bzj9GbwJceduuf7IqP8MgeTXuRDHOWj2m0VzZD5+roFWDuU8RQjcg==
@@ -19847,7 +19847,7 @@ packages:
       integrity: sha512-EEVig1Q2QJ4ELpJXMZR8Vt5DQx8/mo+dGWSR7vWXqcob2gQLyQGsionYcGKATXvQzMPn6DSN1vTN7yFximdIAg==
   /postcss-safe-parser/4.0.2:
     dependencies:
-      postcss: 7.0.29
+      postcss: 7.0.34
     dev: false
     engines:
       node: '>=6.0.0'
