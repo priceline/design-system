@@ -102,8 +102,8 @@
     "styled-components": "^3.4.10"
   },
   "peerDependencies": {
-    "react": ">=16.3.0",
-    "react-dom": ">=16.3.0",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
     "styled-components": ">=3"
   }
 }
