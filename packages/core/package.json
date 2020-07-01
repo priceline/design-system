@@ -14,6 +14,7 @@
     "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es --extensions \".js,.ts,.tsx\"",
     "build:js": "run-p build:babel:*",
     "build:types": "mkdir -p ./dist/types && cp ../types/types/index.d.ts dist/types",
+    "build:types:tsc": "tsc --project ../../tsconfig.json",
     "clean": "rimraf dist",
     "test": "jest"
   },
@@ -66,7 +67,8 @@
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.0",
-    "stylis": "^3.5.4"
+    "stylis": "^3.5.4",
+    "typescript": "^3.9.5"
   },
   "jest": {
     "setupFilesAfterEnv": [

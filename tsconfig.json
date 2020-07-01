@@ -1,17 +1,24 @@
 {
   "compilerOptions": {
-    "module": "ES6",
     "moduleResolution": "node",
     "target": "ES6",
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
     "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "allowJs": true,
-    "jsx": "react"
+    "jsx": "react",
+    "declarationDir": "dist/tsc-types",
+    "skipLibCheck": true
   },
+  "exclude": [
+    "**/node_modules/**",
+    "**/*.spec.ts",
+    "**/*.spec.js",
+    "**/*.stories.js",
+    "**/*.stories.tsx"
+  ],
   "files": ["./packages/core/src/index.ts"],
   "include": ["./packages/core/src/**/*", "./packages/core/test/*"]
 }

@@ -65,6 +65,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable-playground": "^1.0.0",
+    "regenerator-runtime": "^0.13.5",
     "storybook-dark-mode": "^0.2.0",
     "styled-components": "^4.4.1",
     "ts-loader": "^7.0.5",

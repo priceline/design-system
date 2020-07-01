@@ -7,7 +7,7 @@ import renderer, { ReactTestRenderer } from 'react-test-renderer'
 
 import { createTheme } from '../src'
 
-const rendererCreateWithTheme = (Tree: ReactNode): ReactTestRenderer => {
+const rendererCreateWithTheme = (Tree: React.ReactNode): ReactTestRenderer => {
   return renderer.create(
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-call
     <ThemeProvider theme={createTheme()}>{Tree}</ThemeProvider>

@@ -27,8 +27,3 @@ global.requestAnimationFrame =
   }
 
 Enzyme.configure({ adapter: new Adapter() })
-
-// These exports are for TS spec files
-module.exports = {
-  rendererCreateWithTheme: global.rendererCreateWithTheme,
-}
