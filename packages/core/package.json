@@ -59,6 +59,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "@types/jest": "^26.0.3",
     "@types/styled-components": "^4.4.3",
+    "@types/storybook__addon-info": "^5.2.1",
     "camelcase": "^5.3.1",
     "cross-env": "^6.0.3",
     "jest": "^26.0.1",

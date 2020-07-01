@@ -11,6 +11,7 @@ const description =
 storiesOf('Box', module)
   .add(
     'Layout component',
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     withInfo({
       text: description,
       inline: true,

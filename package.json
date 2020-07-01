@@ -68,7 +68,6 @@
     "regenerator-runtime": "^0.13.5",
     "storybook-dark-mode": "^0.2.0",
     "styled-components": "^4.4.1",
-    "ts-loader": "^7.0.5",
     "typescript": "^3.9.5"
   },
   "lint-staged": {

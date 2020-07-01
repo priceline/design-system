@@ -14,10 +14,8 @@
   },
   "exclude": [
     "**/node_modules/**",
-    "**/*.spec.ts",
     "**/*.spec.js",
     "**/*.stories.js",
-    "**/*.stories.tsx"
   ],
   "files": ["./packages/core/src/index.ts"],
   "include": ["./packages/core/src/**/*", "./packages/core/test/*"]

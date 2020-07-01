@@ -44,7 +44,6 @@ module.exports = {
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
       rules: {
-        '@typescript-eslint/ban-ts-comment': 'off',
         'node/no-missing-import': 'off', // Disabled because the import plugin handles this
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': ['error'],

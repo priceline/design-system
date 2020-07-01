@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-member-access */
 /**
  * Create textStyles based on the passed in theme
  *
@@ -5,7 +6,7 @@
  *
  * @returns {Object} The generated textStyles
  */
-export default (theme = {}) => {
+const createTextStyles = (theme: never): never => {
   const { fontSizes, fontWeights, lineHeights, letterSpacings } = theme
 
   return {
@@ -78,3 +79,5 @@ export default (theme = {}) => {
     },
   }
 }
+
+export { createTextStyles }

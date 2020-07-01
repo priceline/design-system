@@ -15,5 +15,5 @@ module.exports = {
       statements: 90,
     },
   },
-  testMatch: ['<rootDir>/packages/**/src/**/*.spec.js'],
+  testMatch: ['<rootDir>/packages/**/src/**/*.spec.[jt]s?(x)'],
 }

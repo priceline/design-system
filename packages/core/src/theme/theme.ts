@@ -1,18 +1,20 @@
 import { createTextStyles, createColorStyles } from '../utils'
 
-const createMediaQuery = (n) => `@media screen and (min-width:${n})`
+const createMediaQuery = (n: string) => `@media screen and (min-width:${n})`
 
-const addAliases = (arr, aliases) =>
+const addAliases = (arr, aliases: string[]) =>
   aliases.forEach((key, i) =>
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     Object.defineProperty(arr, key, {
       enumerable: false,
       get() {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-return
         return this[i]
       },
     })
   )
 
-export const breakpoints = [32, 40, 48, 64, 80].map((n) => n + 'em')
+export const breakpoints = [32, 40, 48, 64, 80].map((n) => `${n}em`)
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
@@ -165,6 +167,7 @@ export const textStyles = createTextStyles({
   lineHeights,
   letterSpacings,
 })
+
 export const colorStyles = createColorStyles({ colors })
 
 const theme = {
