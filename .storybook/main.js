@@ -14,5 +14,5 @@ module.exports = {
       },
     },
   ],
-  stories: ['../packages/**/*.stories.js'],
+  stories: ['../packages/**/*.stories.[jt]sx?'],
 }

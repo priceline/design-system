@@ -51,12 +51,12 @@ describe('Box', () => {
     rendererCreateWithTheme(<Box align='center' />).toJSON()
 
     expect(
-      console.error.mock.calls
+      (console.error as jest.Mock).mock.calls
         .toString()
         .indexOf(
           'The Box `align` prop will deprecated. Please use Text instead.'
         ) !== -1
     )
-    console.error.mockRestore()
+    ;(console.error as jest.Mock).mockRestore()
   })
 })

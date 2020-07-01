@@ -9,8 +9,9 @@
     "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "allowJs": true,
     "jsx": "react"
   },
-  "files": ["src/index.ts"],
-  "include": ["src/**/*", "test/*"]
+  "files": ["./packages/core/src/index.ts"],
+  "include": ["./packages/core/src/**/*", "./packages/core/test/*"]
 }
