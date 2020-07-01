@@ -1,17 +1,18 @@
+const defaultExtends = [
+  'eslint:recommended',
+  'plugin:react/recommended',
+  'plugin:jest/style',
+  'pcln-accessibility',
+  'prettier',
+]
+
 module.exports = {
   env: {
     browser: true,
     es6: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:jest/style',
-    'pcln-accessibility',
-    'prettier',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: defaultExtends,
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -29,7 +30,19 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'jest', '@typescript-eslint', 'prettier'],
-  rules: {},
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [...defaultExtends, 'plugin:@typescript-eslint/recommended'],
+      rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
+        'node/no-missing-import': 'off', // Disabled because the import plugin handles this
+        'no-useless-constructor': 'off',
+        '@typescript-eslint/no-useless-constructor': ['error'],
+        '@typescript-eslint/explicit-function-return-type': 'off',
+      },
+    },
+  ],
   settings: {
     react: {
       version: 'detect',
