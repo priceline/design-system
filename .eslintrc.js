@@ -21,7 +21,7 @@ module.exports = {
     rendererCreateWithTheme: 'readonly',
     renderWithTheme: 'readonly',
   },
-  parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -33,7 +33,16 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: [...defaultExtends, 'plugin:@typescript-eslint/recommended'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: ['./packages/core/tsconfig.json'],
+        tsconfigRootDir: __dirname,
+      },
+      extends: [
+        ...defaultExtends,
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
         'node/no-missing-import': 'off', // Disabled because the import plugin handles this

@@ -1,5 +1,5 @@
 import React from 'react'
-import { rendererCreateWithTheme } from '../../../../test/test-setup.js'
+import rendererCreateWithTheme from '../../test/rendererCreateWithTheme'
 
 import { theme, Box } from '..'
 
@@ -18,13 +18,13 @@ describe('Box', () => {
   test('m prop sets margin', () => {
     const json = rendererCreateWithTheme(<Box m={2} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('margin', theme.space[2] + 'px')
+    expect(json).toHaveStyleRule('margin', `${theme.space[2]}px`)
   })
 
   test('p prop sets padding', () => {
     const json = rendererCreateWithTheme(<Box p={2} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('padding', theme.space[2] + 'px')
+    expect(json).toHaveStyleRule('padding', `${theme.space[2]}px`)
   })
 
   test('color prop sets color', () => {
