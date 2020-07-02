@@ -1,30 +1,44 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { space, width, textAlign } from 'styled-system'
-
+import React from 'react'
 import {
-  applyVariations,
-  color,
-  deprecatedColorValue,
-  deprecatedPropType,
-  boxShadow,
-} from '../utils'
+  space,
+  width,
+  textAlign,
+  SpaceProps,
+  WidthProps,
+  TextAlignProps,
+  AlignItemsProps,
+} from 'styled-system'
 
-const Box = styled.div`
+import { ColorProps } from '../@types/colorProps'
+import { applyVariations, color, boxShadow } from '../utils'
+import { deprecatedPropType } from '../utils'
+
+export type BoxShadowSize = 'sm' | 'md' | 'lg' | 'xl'
+
+interface BoxProps extends SpaceProps, WidthProps, TextAlignProps, ColorProps {
+  /** Size of box shadow */
+  boxShadowSize?: BoxShadowSize
+  /** @deprecated Use 'textAlign' instead */
+  align?: AlignItemsProps['alignItems']
+}
+
+/**
+ * A low-level layout component for setting width, margin, padding, and color
+ */
+export const Box = styled.div<BoxProps>`
   ${space} ${width} ${textAlign} ${boxShadow}
   ${color}
   ${applyVariations('Box')}
-`
+` as React.FunctionComponent<BoxProps>
+
+/**
+ * We can keep the regular prop types around for deprecation warnings at runtime
+ */
+Box.propTypes = {
+  align: deprecatedPropType('textAlign'),
+}
 
 Box.displayName = 'Box'
-
-Box.propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
-  color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
-  ...textAlign.propTypes,
-  boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
-}
 
 export default Box

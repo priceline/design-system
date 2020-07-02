@@ -29,14 +29,14 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', 'jest', '@typescript-eslint', 'prettier'],
+  plugins: ['react', 'jest', 'prettier', '@typescript-eslint'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: ['./tsconfig.json'],
         tsconfigRootDir: __dirname,
+        project: ['./tsconfig.json'],
       },
       extends: [
         ...defaultExtends,

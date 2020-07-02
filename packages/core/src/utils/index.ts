@@ -1,5 +1,0 @@
-export * from './utils'
-export { createColorStyles } from './createColorStyles'
-export { createTextStyles } from './createTextStyles'
-export { default as createTheme } from './createTheme'
-export { default as boxShadow } from './boxShadow'

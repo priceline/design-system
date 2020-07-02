@@ -1,8 +1,8 @@
 const deepmerge = require('deepmerge')
 
 import defaultTheme from '../theme/theme'
-import { createTextStyles } from './createTextStyles'
-import { createColorStyles } from './createColorStyles'
+import createTextStyles from './createTextStyles'
+import createColorStyles from './createColorStyles'
 
 /**
  * Adds aliases to an array of keys

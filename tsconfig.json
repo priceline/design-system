@@ -4,19 +4,11 @@
     "target": "ES6",
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": false,
-    "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "react",
-    "declarationDir": "dist/tsc-types",
     "skipLibCheck": true
   },
-  "exclude": [
-    "**/node_modules/**",
-    "**/*.spec.js",
-    "**/*.stories.js",
-  ],
-  "files": ["./packages/core/src/index.ts"],
-  "include": ["./packages/core/src/**/*", "./packages/core/test/*"]
+  "exclude": ["**/node_modules/**"],
+  "include": ["./packages/core/src", "./packages/core/test"]
 }

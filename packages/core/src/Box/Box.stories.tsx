@@ -2,18 +2,14 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import { BoxShadowSize } from './Box'
 
 import { Box, Text } from '..'
-
-const description =
-  'A low-level layout component for setting width, margin, padding, and color'
 
 storiesOf('Box', module)
   .add(
     'Layout component',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     withInfo({
-      text: description,
       inline: true,
     })(() => <Box p={3}>Hello</Box>)
   )
@@ -31,7 +27,7 @@ storiesOf('Box', module)
           p={2}
           mb={'42px'}
           color='blue'
-          boxShadowSize={boxShadow}
+          boxShadowSize={boxShadow as BoxShadowSize}
           key={boxShadow}
         >
           box-shadow: <Text bold>{boxShadow}</Text>

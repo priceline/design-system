@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /**
  * Create colorStyles based on the passed in theme
  *
@@ -6,7 +5,7 @@
  *
  * @returns {Object} The generated colorStyles
  */
-const createColorStyles = (theme: never): never => {
+export default (theme = {}) => {
   const {
     white,
     text,
@@ -119,5 +118,3 @@ const createColorStyles = (theme: never): never => {
     },
   }
 }
-
-export { createColorStyles }
