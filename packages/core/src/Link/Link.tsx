@@ -42,6 +42,7 @@ export interface LinkProps
     RefProps,
     React.AnchorHTMLAttributes<HTMLAnchorElement> {
   variation?: 'fill' | 'link' | 'outline'
+  onClick?: React.EventHandler<React.MouseEvent>
 }
 
 export const Link: React.FC<LinkProps> = mapProps(
