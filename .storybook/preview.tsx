@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 
-import { addDecorator, addParameters, configure } from '@storybook/react'
+import { addDecorator, addParameters } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 
 import viewports from './viewports'

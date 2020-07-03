@@ -1,3 +1,4 @@
+import { DefaultTheme } from 'styled-components'
 import { createTextStyles, createColorStyles } from '../utils'
 
 const createMediaQuery = (n) => `@media screen and (min-width:${n})`
@@ -167,7 +168,7 @@ export const textStyles = createTextStyles({
 })
 export const colorStyles = createColorStyles({ colors })
 
-const theme = {
+const theme: DefaultTheme = {
   breakpoints,
   mediaQueries,
   space,

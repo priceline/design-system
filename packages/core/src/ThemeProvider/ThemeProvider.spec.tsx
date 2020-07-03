@@ -14,14 +14,6 @@ describe('ThemeProvider', () => {
       }).not.toThrow()
     })
 
-    it('should render correctly without throwing with the "legacy" prop', () => {
-      expect(() => {
-        const { asFragment } = render(<ThemeProvider legacy />)
-
-        expect(asFragment()).toMatchSnapshot()
-      }).not.toThrow()
-    })
-
     it('should handle the "customBreakpoints" prop', () => {
       expect(() => {
         const { asFragment, getByTestId } = render(
