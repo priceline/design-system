@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 import {
   Attention as AttentionIcon,
@@ -8,15 +7,12 @@ import {
   Warning as WarningIcon,
 } from 'pcln-icons'
 
-import { Box } from '../Box'
+import { Box, BoxProps } from '../Box'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
 import { CloseButton } from '../CloseButton'
-import {
-  applyVariations,
-  deprecatedColorValue,
-  deprecatedPropType,
-} from '../utils'
+import { applyVariations } from '../utils'
+import { ColorProps } from '../@types/colorProps'
 
 const bannerColors = {
   green: {
@@ -60,11 +56,18 @@ const StyledBox = styled(Box)`
   ${applyVariations('Banner')}
 `
 
-const Banner = (props) => {
-  const bannerColor =
-    bannerColors[
-      !props.bg && props.color === 'green' ? props.color : props.bg
-    ] || {}
+interface BannerProps extends ColorProps, BoxProps {
+  header?: string | React.ReactNode
+  icon?: React.ReactNode
+  onClose?: Function
+  showIcon?: boolean
+  text?: string | React.ReactNode
+}
+
+export const Banner: React.FC<BannerProps> = (props) => {
+  const bannerIdx =
+    !props.bg && props.color === 'green' ? props.color : props.bg
+  const bannerColor = bannerColors[bannerIdx as any] || {}
   const Icon = props.icon || bannerColor.icon
   const color = !bannerColor.color ? props.color : bannerColor.color
 
@@ -109,22 +112,11 @@ const Banner = (props) => {
 
 Banner.displayName = 'Banner'
 
-Banner.propTypes = {
-  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  icon: PropTypes.node,
-  onClose: PropTypes.func,
-  showIcon: PropTypes.bool,
-  text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  textAlign: PropTypes.string,
-  color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
-  children: PropTypes.node,
-}
-
 Banner.defaultProps = {
   textAlign: 'left',
   showIcon: true,
   color: 'green',
 }
 
-export default withTheme(Banner)
+export default Banner
+

@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-import { themeGet, space } from 'styled-system'
+import styled, {
+  css,
+} from 'styled-components'
+import { themeGet, space, SpaceProps } from 'styled-system'
 import {
   applySizes,
   applyVariations,
   color,
-  deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
+import { ColorProps } from '../@types/colorProps'
 
 const type = (props) => {
   const badgeColors = {
@@ -63,24 +63,21 @@ const sizes = {
   `,
 }
 
-const Badge = styled.div`
+export interface BadgeProps extends SpaceProps, ColorProps {
+  size?: 'small' | 'medium'
+}
+
+export const Badge: React.FC<BadgeProps> = styled.div<BadgeProps>`
   border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${space} ${type} ${color};
-  ${applySizes(sizes)}
+  ${applySizes(sizes) as any}
   ${applyVariations('Badge')}
 `
 
 Badge.displayName = 'Badge'
-
-Badge.propTypes = {
-  ...space.propTypes,
-  size: PropTypes.oneOf(Object.keys(sizes)),
-  color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
-}
 
 Badge.defaultProps = {
   size: 'medium',

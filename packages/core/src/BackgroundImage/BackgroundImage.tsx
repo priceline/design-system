@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
-import { width } from 'styled-system'
+import { width, WidthProps } from 'styled-system'
 import { applyVariations, getPaletteColor, mapProps } from '../utils'
 
 const variations = {
@@ -17,9 +16,17 @@ const image = (props) =>
 
 const height = (props) => (props.height ? { height: props.height } : null)
 
-const BackgroundImage = mapProps(({ ...props }) => ({
-  ...props,
-}))(styled.div`
+interface BackgroundImageProps extends WidthProps {
+  height?: string
+  image?: string
+  variation?: 'parallax' | 'static'
+}
+
+export const BackgroundImage: React.FC<BackgroundImageProps> = mapProps(
+  ({ ...props }) => ({
+    ...props,
+  })
+)(styled.div<BackgroundImageProps>`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,18 +37,6 @@ const BackgroundImage = mapProps(({ ...props }) => ({
 
 BackgroundImage.defaultProps = {
   variation: 'static',
-}
-
-BackgroundImage.propTypes = {
-  /** background-image url */
-  height: PropTypes.string,
-  image: PropTypes.string,
-  variation: PropTypes.oneOf(Object.keys(variations)),
-  width: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.array,
-  ]),
 }
 
 BackgroundImage.displayName = 'BackgroundImage'

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { width, space } from 'styled-system'
 
@@ -6,11 +5,10 @@ import { buttonStyles } from '../Button'
 import {
   applyVariations,
   getPaletteColor,
-  deprecatedColorValue,
   getSCMigrationRef,
-  refPropType,
   mapProps,
 } from '../utils'
+import { ColorProps } from '../@types/colorProps'
 
 const variations = {
   fill: css`
@@ -39,12 +37,21 @@ const variations = {
   `,
 }
 
-const Link = mapProps(({ target, dsRef, ...props }) => ({
-  [getSCMigrationRef()]: dsRef,
-  rel: target === '_blank' ? 'noopener' : null,
-  target,
-  ...props,
-}))(styled.a`
+export interface LinkProps
+  extends ColorProps,
+    RefProps,
+    React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  variation?: 'fill' | 'link' | 'outline'
+}
+
+export const Link: React.FC<LinkProps> = mapProps(
+  ({ target, dsRef, ...props }) => ({
+    [getSCMigrationRef()]: dsRef,
+    rel: target === '_blank' ? 'noopener' : null,
+    target,
+    ...props,
+  })
+)(styled.a<LinkProps>`
   ${width} ${space};
   ${applyVariations('Link', variations)}
 `)
@@ -54,12 +61,6 @@ Link.displayName = 'Link'
 Link.defaultProps = {
   color: 'primary',
   variation: 'link',
-}
-
-Link.propTypes = {
-  color: deprecatedColorValue(),
-  dsRef: refPropType,
-  variation: PropTypes.oneOf(Object.keys(variations)),
 }
 
 export default Link

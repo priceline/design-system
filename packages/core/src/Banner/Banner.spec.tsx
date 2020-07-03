@@ -1,4 +1,6 @@
 import React from 'react'
+import renderWithTheme from '../../test/renderWithTheme'
+import rendererCreateWithTheme from '../../test/rendererCreateWithTheme'
 import { Banner, Text, Heading, theme } from '..'
 
 describe('Banner', () => {
@@ -7,35 +9,16 @@ describe('Banner', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with custom iconName and size', () => {
-    const json = rendererCreateWithTheme(
-      <Banner iconName='star' iconSize={20} />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
-  })
-
   test('renders with text string', () => {
     const json = rendererCreateWithTheme(
-      <Banner
-        header='Header'
-        text='Text'
-        iconName='star'
-        iconSize={20}
-        theme={theme}
-      />
+      <Banner header='Header' text='Text' />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with text node', () => {
     const json = rendererCreateWithTheme(
-      <Banner
-        header='Header'
-        text={<Text>Text</Text>}
-        iconName='star'
-        iconSize={20}
-        theme={theme}
-      />
+      <Banner header='Header' text={<Text>Text</Text>} />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })
@@ -128,9 +111,6 @@ describe('Banner', () => {
       <Banner
         header={<Heading>Hello world</Heading>}
         text={<Text>Text</Text>}
-        iconName='star'
-        iconSize={20}
-        theme={theme}
       />
     )
 

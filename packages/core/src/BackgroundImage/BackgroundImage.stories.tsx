@@ -24,7 +24,7 @@ storiesOf('BackgroundImage', module)
   ))
   .addDecorator(withKnobs)
   .addDecorator(
-    withInfo({
+    (withInfo as any)({
       inline: false,
     })
   )

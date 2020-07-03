@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+import { Star } from 'pcln-icons'
 import { Box, Banner, Flex, Heading, Text } from '..'
 
 storiesOf('Banner', module)
@@ -97,7 +98,6 @@ storiesOf('Banner', module)
         mb={2}
         p={3}
         color='warning'
-        iconName='attention'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare. Quisque at quam vel nibh tempor imperdiet vitae non orci. Etiam bibendum sem id nibh finibus interdum. Nunc quam neque, tristique porttitor varius a, ultrices a nibh. Nunc et ipsum id eros condimentum convallis. Donec gravida leo facilisis, pharetra tellus eu, dictum mi.'
       />
     </Box>
@@ -633,14 +633,14 @@ storiesOf('Banner', module)
   ))
   .add('With custom icons and sizes', () => (
     <Box>
-      <Banner textAlign='right' mb={2} p={2} text='default' iconName='star' />
+      <Banner textAlign='right' mb={2} p={2} text='default' icon={<Star />} />
       <Banner
         textAlign='left'
         mb={2}
         p={2}
         text='blue'
         bg='blue'
-        iconName='star'
+        icon={<Star />}
       />
       <Banner
         textAlign='right'
@@ -648,7 +648,7 @@ storiesOf('Banner', module)
         p={2}
         text='green'
         bg='green'
-        iconName='star'
+        icon={<Star />}
       />
       <Banner
         textAlign='left'
@@ -656,7 +656,7 @@ storiesOf('Banner', module)
         p={2}
         text='orange'
         bg='orange'
-        iconName='star'
+        icon={<Star />}
       />
       <Banner
         textAlign='right'
@@ -664,7 +664,7 @@ storiesOf('Banner', module)
         p={2}
         text='red'
         bg='red'
-        iconName='star'
+        icon={<Star />}
       />
       <Banner
         textAlign='left'
@@ -672,7 +672,7 @@ storiesOf('Banner', module)
         p={2}
         text='blue'
         bg='lightBlue'
-        iconName='star'
+        icon={<Star />}
       />
       <Banner
         textAlign='right'
@@ -680,7 +680,7 @@ storiesOf('Banner', module)
         p={2}
         text='green'
         bg='lightGreen'
-        iconName='star'
+        icon={<Star />}
       />
       <Banner
         textAlign='right'
@@ -688,7 +688,7 @@ storiesOf('Banner', module)
         p={2}
         text='red'
         bg='lightRed'
-        iconName='star'
+        icon={<Star />}
       />
     </Box>
   ))
