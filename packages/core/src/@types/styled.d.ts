@@ -1,19 +1,9 @@
 import 'styled-components'
 
-interface ColorStyle {
-  color: string
-  backgroundColor: string
-}
-
-interface TextStyle {
-  fontSize: string
-  fontWeight: string
-  lineHeight: string
-  letterSpacing?: string
-  textTransform?: string
-}
-
 declare module 'styled-components' {
+  import { ColorStyles } from '../utils/createColorStyles'
+  import { TextStyles } from '../utils/createTextStyles'
+
   export interface DefaultTheme {
     transitionDelays: {
       small: string
@@ -40,31 +30,7 @@ declare module 'styled-components' {
     boxShadows: string[]
     radius: string
     radii: number[]
-    colorStyles: {
-      whiteOnText: ColorStyle
-      whiteOnGray: ColorStyle
-      textOnLightGray: ColorStyle
-      whiteOnBlue: ColorStyle
-      blueOnLightBlue: ColorStyle
-      whiteOnGreen: ColorStyle
-      greenOnLightGreen: ColorStyle
-      whiteOnRed: ColorStyle
-      redOnLightRed: ColorStyle
-      textOnOrange: ColorStyle
-      whiteOnPurple: ColorStyle
-      purpleOnLightPurple: ColorStyle
-      textOnWhite: ColorStyle
-      grayOnWhite: ColorStyle
-      blueOnWhite: ColorStyle
-      greenOnWhite: ColorStyle
-      redOnWhite: ColorStyle
-      purpleOnWhite: ColorStyle
-      whiteOnDarkOrange: ColorStyle
-      info: ColorStyle
-      success: ColorStyle
-      warning: ColorStyle
-      danger: ColorStyle
-    }
+    colorStyles: ColorStyles
     colors: {
       black: string
       white: string
@@ -93,21 +59,7 @@ declare module 'styled-components' {
       pink: string
       darkPurple: string
     }
-    textStyles: {
-      display8: TextStyle
-      display7: TextStyle
-      display6: TextStyle
-      display5: TextStyle
-      display4: TextStyle
-      display3: TextStyle
-      display2: TextStyle
-      display1: TextStyle
-      display0: TextStyle
-      body2: TextStyle
-      body1: TextStyle
-      body0: TextStyle
-      small: TextStyle
-    }
+    textStyles: TextStyles
     fontWeights: {
       bold: number
       medium: number

@@ -1,3 +1,9 @@
+import {CSSObject} from "styled-components";
+
+interface BoxShadow extends CSSObject {
+  'box-shadow': string
+}
+
 /**
  * Replacement for styled-system's boxShadow that maps sizes to the boxShadows values defined
  * in the theme. Returns an object representing the box-shadow CSS rule for use in
@@ -6,7 +12,7 @@
  * @param props
  * @returns {{ 'box-shadow': string }}
  */
-export default (props) => {
+export default (props): BoxShadow => {
   const boxShadows = {
     sm: {
       'box-shadow': props.theme.boxShadows[0],

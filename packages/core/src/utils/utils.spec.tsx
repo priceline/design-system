@@ -22,8 +22,7 @@ describe('utils', () => {
         {
           oldProp: true,
         },
-        'oldProp',
-        'Component'
+        'oldProp'
       )
       expect(err).toBeTruthy()
     })
@@ -33,8 +32,7 @@ describe('utils', () => {
         {
           newProp: true,
         },
-        'oldProp',
-        'Component'
+        'oldProp'
       )
       expect(err).toBeUndefined()
     })
@@ -121,7 +119,7 @@ describe('utils', () => {
         color: 'primary',
       }
       const override = applyVariations('Button')(props)
-      expect(override[1](props)).toEqual(
+      expect((override as any)[1](props)).toEqual(
         props.theme.componentStyles.Button.primary
       )
     })
@@ -137,7 +135,7 @@ describe('utils', () => {
       const variations = { outline: 'color: blue;' }
       const override = applyVariations('Button', variations)(props)
       expect(override[1]).toEqual(variations.outline)
-      expect(override[3](props)).toEqual(
+      expect((override as any)[3](props)).toEqual(
         props.theme.componentStyles.Button.outline.primary
       )
     })

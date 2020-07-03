@@ -1,5 +1,6 @@
 const deepmerge = require('deepmerge')
 
+import { DefaultTheme } from 'styled-components'
 import defaultTheme from '../theme/theme'
 import createTextStyles from './createTextStyles'
 import createColorStyles from './createColorStyles'
@@ -25,7 +26,10 @@ const addAliases = (arr) => {
  *
  * @returns {Object} The generated palette
  */
-const createPalette = ({ palette = {}, ...theme }) => {
+const createPalette = ({
+  palette = {},
+  ...theme
+}): { palette: Palette; theme: DefaultTheme } => {
   const {
     lightBlue,
     blue,
@@ -141,6 +145,39 @@ const createPalette = ({ palette = {}, ...theme }) => {
   )
 }
 
+interface PaletteColor {
+  lightest?: string
+  light?: string
+  base: string
+  dark?: string
+  darkest?: string
+}
+
+interface Palette {
+  primary: PaletteColor
+  secondary: PaletteColor
+  text: PaletteColor
+  success: PaletteColor
+  error: PaletteColor
+  warning: PaletteColor
+  alert: PaletteColor
+  caution: PaletteColor
+  notify: PaletteColor
+  pricePrimary: PaletteColor
+  priceSecondary: PaletteColor
+  strike: PaletteColor
+  promoPrimary: PaletteColor
+  promoSecondary: PaletteColor
+  border: PaletteColor
+  background: PaletteColor
+}
+
+interface CreatedTheme extends DefaultTheme {
+  contrastRatio: number
+  palette: Palette
+  componentStyles: any
+}
+
 /**
  * Create the theme
  *
@@ -149,8 +186,11 @@ const createPalette = ({ palette = {}, ...theme }) => {
  *
  * @returns {Object} The generated theme
  */
-export default (theme = {}, customBreakpoints = null) => {
-  const mergedTheme = deepmerge(defaultTheme, theme)
+export default (
+  theme?: any | undefined,
+  customBreakpoints = null
+): CreatedTheme => {
+  const mergedTheme = deepmerge(defaultTheme, theme || {})
 
   return {
     ...mergedTheme,

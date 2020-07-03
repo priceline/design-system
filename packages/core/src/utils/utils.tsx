@@ -115,6 +115,7 @@ export const getContrastRatio = (colorA, colorB) => {
  *
  * @param {Object} sizes An object of size styles
  *
+ * @param defaultSize
  * @returns {array}
  */
 export const applySizes = (sizes = null, defaultSize = 'medium') => ({
