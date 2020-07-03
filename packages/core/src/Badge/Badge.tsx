@@ -73,7 +73,7 @@ export const Badge: React.FC<BadgeProps> = styled.div<BadgeProps>`
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${space} ${type} ${color};
-  ${applySizes(sizes) as any}
+  ${applySizes(sizes)}
   ${applyVariations('Badge')}
 `
 

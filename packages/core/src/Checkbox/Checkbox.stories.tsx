@@ -14,7 +14,7 @@ const StyledLabel = styled(Label)`
 `
 
 const Wrapper = (props) => (
-  <Box p='12px' my='6px' fontSize='12px'>
+  <Box p='12px' my='6px'>
     {props.title ? <Heading.h6 mb='12px'>{props.title}</Heading.h6> : null}
     {props.children}
   </Box>

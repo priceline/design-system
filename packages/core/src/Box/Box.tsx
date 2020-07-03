@@ -13,15 +13,22 @@ import {
 import { ColorProps } from '../@types/colorProps'
 import { applyVariations, color, boxShadow } from '../utils'
 import { deprecatedPropType } from '../utils'
+import { ThemeProps } from '../@types/theme'
 
 export type BoxShadowSize = 'sm' | 'md' | 'lg' | 'xl'
 
-export interface BoxProps extends SpaceProps, WidthProps, TextAlignProps, ColorProps {
+export interface BoxProps
+  extends SpaceProps,
+    WidthProps,
+    TextAlignProps,
+    ColorProps,
+    ThemeProps {
   /** Size of box shadow */
   boxShadowSize?: BoxShadowSize
   /** @deprecated Use 'textAlign' instead */
   align?: AlignItemsProps['alignItems']
   className?: string
+  style?: React.CSSProperties
 }
 
 /**

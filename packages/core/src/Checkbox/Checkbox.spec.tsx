@@ -1,5 +1,7 @@
 import React from 'react'
 import { fireEvent } from '@testing-library/react'
+import rendererCreateWithTheme from '../../test/rendererCreateWithTheme'
+import renderWithTheme from '../../test/renderWithTheme'
 
 import { Checkbox } from '..'
 
@@ -18,7 +20,7 @@ describe('Checkbox', () => {
       <Checkbox id='check-box' defaultChecked />
     )
     const checkbox = getByRole('checkbox')
-    expect(checkbox.checked).toBe(true)
+    expect((checkbox as any).checked).toBe(true)
   })
 
   test('renders disabled with disabled prop', () => {

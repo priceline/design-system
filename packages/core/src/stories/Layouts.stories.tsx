@@ -7,7 +7,7 @@ import { Flex, Box, Text, Icon, Image, Heading } from '..'
 storiesOf('Layout Examples', module)
   .add('Grid', () => (
     <Box p={4}>
-      <Flex wrap mx={-3}>
+      <Flex wrap='wrap' mx={-3}>
         <Box width={[1, 1 / 2]} px={3} mb={4}>
           <Box bg='lightGray'>
             <Text>Hello</Text>
@@ -58,7 +58,7 @@ storiesOf('Layout Examples', module)
     </Flex>
   ))
   .add('Tiled Cards', () => (
-    <Flex wrap>
+    <Flex wrap='wap'>
       {cards.map((card) => (
         <Box key={card.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
           <Card {...card} />

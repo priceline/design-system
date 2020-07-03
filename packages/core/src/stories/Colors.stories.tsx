@@ -34,7 +34,7 @@ storiesOf('Color', module)
       <Box p={3}>
         <h1>Colors</h1>
       </Box>
-      <Flex wrap>
+      <Flex wrap={'wrap'}>
         {next.map((color) => (
           <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
             <ColorCard name={color.key} color={color.value} />
@@ -48,13 +48,13 @@ storiesOf('Color', module)
       <Box p={3}>
         <h1>Palette</h1>
         <p>The palette allows you to change the color of components.</p>
-        <Flex wrap>
+        <Flex wrap='wrap'>
           {palette.map((pal) => {
             if (typeof pal.value === 'object') {
               return (
                 <div style={{ width: '100%' }}>
                   <h4>{pal.key}</h4>
-                  <Flex wrap>
+                  <Flex wrap='wrap'>
                     {Object.keys(pal.value).map((key) => (
                       <Box
                         key={key}

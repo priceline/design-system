@@ -4,9 +4,23 @@ import {
   getPaletteColor,
   deprecatedColorValue,
 } from '../utils'
-import { space, width, borderColor } from 'styled-system'
+import {
+  space,
+  width,
+  borderColor,
+  SpaceProps,
+  WidthProps,
+  BorderColorProps,
+} from 'styled-system'
+import { ColorProps } from '../@types/colorProps'
 
-const Divider = styled.hr`
+interface DividerProps
+  extends SpaceProps,
+    WidthProps,
+    BorderColorProps,
+    ColorProps {}
+
+export const Divider = styled.hr<DividerProps>`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -14,7 +28,7 @@ const Divider = styled.hr`
     getPaletteColor(props.borderColor || props.color, 'base')(props)};
   ${space} ${width};
   ${applyVariations('Divider')}
-`
+` as React.FC<DividerProps>
 
 Divider.displayName = 'Divider'
 

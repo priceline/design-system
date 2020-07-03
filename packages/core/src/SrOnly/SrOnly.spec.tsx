@@ -1,4 +1,5 @@
 import React from 'react'
+import rendererCreateWithTheme from '../../test/rendererCreateWithTheme'
 
 import { SrOnly } from '..'
 

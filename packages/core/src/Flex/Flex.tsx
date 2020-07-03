@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 import {
-  space,
-  width,
   alignItems,
   justifyContent,
   flexWrap,

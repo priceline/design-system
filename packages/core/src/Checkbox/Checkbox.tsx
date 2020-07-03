@@ -1,18 +1,23 @@
 import React from 'react'
-import styled, { withTheme } from 'styled-components'
+import styled from 'styled-components'
 import { BoxChecked, BoxEmpty } from 'pcln-icons'
-import PropTypes from 'prop-types'
-import { Box } from '../Box'
+import { Box, BoxProps } from '../Box'
 import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
   mapProps,
   getSCMigrationRef,
-  refPropType,
 } from '../utils'
 
-const Checkbox = (props) => {
+interface CheckboxProps
+  extends Omit<BoxProps, 'width'>,
+    RefProps,
+    React.HTMLProps<HTMLInputElement> {
+  size?: number
+}
+
+export const Checkbox: React.FC<CheckboxProps> = (props) => {
   // eslint-disable-next-line react/prop-types
   const { disabled, size } = props
 
@@ -33,7 +38,11 @@ const Checkbox = (props) => {
   )
 }
 
-const CheckBoxWrapper = styled(Box)`
+interface WrapperProps extends BoxProps {
+  disabled?: boolean
+}
+
+const CheckBoxWrapper = styled(Box)<WrapperProps>`
   display: inline-flex;
   align-items: center;
   position: relative;
@@ -97,7 +106,7 @@ const CheckBoxWrapper = styled(Box)`
   }
 
   ${applyVariations('Checkbox')}
-`
+` as React.FC<WrapperProps>
 
 const StyledInput = mapProps(({ dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
@@ -112,10 +121,6 @@ const StyledInput = mapProps(({ dsRef, ...props }) => ({
 Checkbox.displayName = 'Checkbox'
 
 Checkbox.propTypes = {
-  id: PropTypes.string.isRequired,
-  size: PropTypes.number,
-  onChange: PropTypes.func.isRequired,
-  dsRef: refPropType,
   color: deprecatedColorValue(),
 }
 
@@ -124,4 +129,4 @@ Checkbox.defaultProps = {
   color: 'primary',
 }
 
-export default withTheme(Checkbox)
+export default Checkbox

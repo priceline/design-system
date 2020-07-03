@@ -1,20 +1,15 @@
 import styled from 'styled-components'
 import { Box } from '../Box'
 import { top, right, bottom, left, zIndex } from 'styled-system'
+import { AbsoluteProps } from '../Absolute/Absolute'
 
-const Relative = styled(Box)`
+interface RelativeProps extends AbsoluteProps {}
+
+const Relative = styled(Box)<RelativeProps>`
   position: relative;
   ${top} ${bottom} ${left} ${right}
   ${zIndex}
-`
-
-Relative.propTypes = {
-  ...top.propTypes,
-  ...right.propTypes,
-  ...bottom.propTypes,
-  ...left.propTypes,
-  ...zIndex.propTypes,
-}
+` as React.FC<RelativeProps>
 
 Relative.displayName = 'Relative'
 

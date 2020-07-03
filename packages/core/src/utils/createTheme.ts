@@ -172,7 +172,7 @@ interface Palette {
   background: PaletteColor
 }
 
-interface CreatedTheme extends DefaultTheme {
+export interface CreatedTheme extends DefaultTheme {
   contrastRatio: number
   palette: Palette
   componentStyles: any

@@ -1,14 +1,26 @@
 import styled from 'styled-components'
-import { fontWeight, borderRadius } from 'styled-system'
-import { Box } from '../Box'
+import {
+  fontWeight,
+  borderRadius,
+  FontWeightProps,
+  BorderRadiusProps,
+} from 'styled-system'
+import { Box, BoxProps } from '../Box'
 import { applyVariations, deprecatedPropType } from '../utils'
+import { ColorProps } from '../@types/colorProps'
 
-const RatingBadge = styled(Box)`
+interface RatingBadgeProps
+  extends BoxProps,
+    FontWeightProps,
+    BorderRadiusProps,
+    ColorProps {}
+
+const RatingBadge = styled(Box)<RatingBadgeProps>`
   display: inline-block;
   line-height: 1.5;
   ${fontWeight} ${borderRadius};
   ${applyVariations('RatingBadge')}
-`
+` as React.FC<RatingBadgeProps>
 
 RatingBadge.defaultProps = {
   fontWeight: 'bold',
@@ -19,8 +31,6 @@ RatingBadge.defaultProps = {
 }
 
 RatingBadge.propTypes = {
-  ...fontWeight.propTypes,
-  ...borderRadius.propTypes,
   bg: deprecatedPropType('color'),
 }
 
