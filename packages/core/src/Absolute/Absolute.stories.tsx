@@ -92,7 +92,7 @@ storiesOf('Absolute', module)
           pl={2}
           top={0}
           right={0}
-          zIndex='4'
+          zIndex={4}
           width={100}
           bg='#3c910e'
         >

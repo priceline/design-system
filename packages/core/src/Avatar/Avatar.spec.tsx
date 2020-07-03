@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'testing-library'
 
+import rendererCreateWithTheme from "../../test/rendererCreateWithTheme";
 import { Avatar } from '..'
 
 const elonJPG = 'https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg'

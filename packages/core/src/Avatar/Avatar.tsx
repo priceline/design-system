@@ -1,16 +1,30 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Flex } from '../Flex'
+import { Flex, FlexProps } from '../Flex'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
 
-// import { Flex, Heading, Text } from '..'
-
 import { User } from 'pcln-icons'
+import { SpaceProps } from 'styled-system'
 
-const StyledImage = styled(Flex)`
+export interface AvatarProps extends FlexProps {
+  className?: string
+  title?: string
+  subtitle?: string
+  src?: string
+  initials?: string
+  size?: number
+  color?: string
+}
+
+interface StyledImageProps extends SpaceProps {
+  size?: number
+  color?: string
+  src?: string
+}
+
+const StyledImage = styled(Flex)<StyledImageProps>`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -18,9 +32,17 @@ const StyledImage = styled(Flex)`
   height: ${(props) => props.size || 40}px;
   background-size: ${(props) => props.size || 40}px;
   background-image: url(${(props) => props.src});
-`
+` as React.FC<StyledImageProps>
 
-function Avatar({ className, title, subtitle, src, initials, size, color }) {
+export const Avatar: React.FC<AvatarProps> = ({
+  className,
+  title,
+  subtitle,
+  src,
+  initials,
+  size,
+  color,
+}) => {
   return (
     <Flex className={className}>
       <StyledImage src={src} size={size} color={color} p={2}>
@@ -40,16 +62,6 @@ function Avatar({ className, title, subtitle, src, initials, size, color }) {
 }
 
 Avatar.displayName = 'Avatar'
-
-Avatar.propTypes = {
-  className: PropTypes.string,
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  src: PropTypes.string,
-  initials: PropTypes.string,
-  size: PropTypes.number,
-  color: PropTypes.string,
-}
 
 Avatar.defaultProps = {
   className: '',

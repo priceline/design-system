@@ -1,5 +1,6 @@
 import React from 'react'
 
+import rendererCreateWithTheme from "../../test/rendererCreateWithTheme";
 import { Flex } from '..'
 
 describe('Flex', () => {
@@ -43,7 +44,7 @@ describe('Flex', () => {
     })
 
     test('shims the deprecated `wrap` prop and warns', () => {
-      const json = rendererCreateWithTheme(<Flex wrap />).toJSON()
+      const json = rendererCreateWithTheme(<Flex wrap={"wrap"} />).toJSON()
       expect(json).toHaveStyleRule('flex-wrap', 'wrap')
       expect(spy.mock.calls).toHaveLength(2)
       expect(spy).toHaveBeenCalledWith(

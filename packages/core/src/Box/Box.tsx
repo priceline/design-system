@@ -21,6 +21,7 @@ export interface BoxProps extends SpaceProps, WidthProps, TextAlignProps, ColorP
   boxShadowSize?: BoxShadowSize
   /** @deprecated Use 'textAlign' instead */
   align?: AlignItemsProps['alignItems']
+  className?: string
 }
 
 /**
