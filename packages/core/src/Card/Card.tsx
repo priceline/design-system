@@ -1,31 +1,34 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { borderRadius } from 'styled-system'
+import { borderRadius, BorderRadiusProps } from 'styled-system'
 
-import { Box } from '../Box'
+import { Box, BoxProps } from '../Box'
 import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
 } from '../utils'
 
-const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
+const boxBorder = ({ borderWidth, borderColor, ...props }: CardProps) => ({
   border:
     borderWidth === 0
       ? '0'
       : `${borderWidth}px solid ${getPaletteColor(borderColor, 'base')(props)}`,
 })
 
-const Card = styled(Box)`
+interface CardProps extends BoxProps, BorderRadiusProps {
+  borderWidth?: 0 | 1 | 2
+  color?: string
+  borderColor?: string
+}
+
+export const Card = styled(Box)<CardProps>`
   ${boxBorder} ${borderRadius}
   ${applyVariations('Card')}
-`
+` as React.FunctionComponent<CardProps>
 
 Card.propTypes = {
-  ...borderRadius.propTypes,
   borderColor: deprecatedColorValue(),
   color: deprecatedColorValue(),
-  borderWidth: PropTypes.oneOf([0, 1, 2]),
 }
 
 Card.defaultProps = {

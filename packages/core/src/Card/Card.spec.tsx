@@ -1,4 +1,5 @@
 import React from 'react'
+import rendererCreateWithTheme from "../../test/rendererCreateWithTheme";
 
 import { Card, theme } from '..'
 
@@ -99,13 +100,13 @@ describe('Card', () => {
     expect(json).toHaveStyleRule('border', '0')
 
     expect(
-      console.error.mock.calls
+        (console.error as jest.Mock).mock.calls
         .toString()
         .indexOf(
           `Failed prop type: Invalid prop 'borderWidth' of value '0' supplied to 'Card', expected one of [1,2].`
         ) === -1
     )
 
-    console.error.mockRestore()
+    ;(console.error as jest.Mock).mockRestore()
   })
 })

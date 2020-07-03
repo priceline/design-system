@@ -16,7 +16,7 @@ import { deprecatedPropType } from '../utils'
 
 export type BoxShadowSize = 'sm' | 'md' | 'lg' | 'xl'
 
-interface BoxProps extends SpaceProps, WidthProps, TextAlignProps, ColorProps {
+export interface BoxProps extends SpaceProps, WidthProps, TextAlignProps, ColorProps {
   /** Size of box shadow */
   boxShadowSize?: BoxShadowSize
   /** @deprecated Use 'textAlign' instead */
