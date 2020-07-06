@@ -5,11 +5,10 @@ import '@testing-library/jest-dom/extend-expect'
 import 'jest-styled-components'
 
 import { createTheme } from '../src'
-import {render} from "@testing-library/react";
+import { render, RenderResult } from '@testing-library/react'
 
-
-const renderWithTheme = (Tree) => {
-  return render(<ThemeProvider theme={createTheme()}>{Tree} </ThemeProvider>)
+const renderWithTheme = (Tree: React.ReactNode): RenderResult => {
+  return render(<ThemeProvider theme={createTheme()}>{Tree}</ThemeProvider>)
 }
 
 export default renderWithTheme

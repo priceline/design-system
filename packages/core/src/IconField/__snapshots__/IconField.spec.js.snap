@@ -31,7 +31,10 @@ exports[`IconField renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  padding: 14px 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
   font-size: 16px;
@@ -63,7 +66,7 @@ exports[`IconField renders 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:40) {
   .c3 {
     font-size: 14px;
   }
@@ -188,7 +191,10 @@ exports[`IconField renders icon button 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  padding: 14px 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
   font-size: 16px;
@@ -220,7 +226,7 @@ exports[`IconField renders icon button 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:40) {
   .c1 {
     font-size: 14px;
   }
@@ -355,7 +361,10 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  padding: 14px 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0;
   border-color: #c0cad5;
   font-size: 16px;
@@ -387,7 +396,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:40) {
   .c3 {
     font-size: 14px;
   }

@@ -58,7 +58,7 @@ exports[`Select renders 1`] = `
   display: none;
 }
 
-@media screen and (min-width:40em) {
+@media screen and (min-width:40) {
   .c1 {
     font-size: 14px;
   }

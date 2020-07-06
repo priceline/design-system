@@ -1,4 +1,4 @@
-import {CSSObject} from "styled-components";
+import { CSSObject, DefaultTheme } from 'styled-components'
 
 interface BoxShadow extends CSSObject {
   'box-shadow': string
@@ -12,7 +12,10 @@ interface BoxShadow extends CSSObject {
  * @param props
  * @returns {{ 'box-shadow': string }}
  */
-export default (props): BoxShadow => {
+export default (props: {
+  theme: DefaultTheme
+  boxShadowSize: string
+}): BoxShadow => {
   const boxShadows = {
     sm: {
       'box-shadow': props.theme.boxShadows[0],
@@ -27,5 +30,5 @@ export default (props): BoxShadow => {
       'box-shadow': props.theme.boxShadows[3],
     },
   }
-  return boxShadows[props.boxShadowSize]
+  return boxShadows[props.boxShadowSize] as BoxShadow
 }

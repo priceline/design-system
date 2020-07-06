@@ -6,6 +6,11 @@ import styled, {
 
 import { createTheme } from '../utils'
 
+interface BaseProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any
+}
+
 export const Base = styled.div`
   font-family: ${({ theme }: { theme: DefaultTheme }) => theme.font};
   line-height: ${({ theme }: { theme: DefaultTheme }) =>
@@ -16,17 +21,18 @@ export const Base = styled.div`
   * {
     box-sizing: border-box;
   }
-` as React.FunctionComponent<any>
+` as React.FunctionComponent<BaseProps>
 
 interface ThemeProviderProps {
   theme?: DefaultTheme
   customBreakpoints?: string[]
-  props?: any
 }
 
-export const ThemeProvider: React.FC<
-  ThemeProviderProps & React.HTMLProps<HTMLDivElement>
-> = ({ theme, customBreakpoints, ...props }) => {
+export const ThemeProvider: React.FC<ThemeProviderProps> = (
+  props: ThemeProviderProps
+) => {
+  const { theme, customBreakpoints } = props
+
   // Once updated to React 16.8 this should be wrapped in React.useMemo()
   const mergedTheme = createTheme(theme, customBreakpoints)
 

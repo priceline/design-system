@@ -1,5 +1,4 @@
-const deepmerge = require('deepmerge')
-
+import deepmerge from 'deepmerge'
 import { DefaultTheme } from 'styled-components'
 import defaultTheme from '../theme/theme'
 import createTextStyles from './createTextStyles'
@@ -10,7 +9,7 @@ import createColorStyles from './createColorStyles'
  *
  * @param {Array} arr The array to add aliases to
  */
-const addAliases = (arr) => {
+const addAliases = (arr: string[]): string[] => {
   arr.forEach((val, key) => {
     arr[['sm', 'md', 'lg', 'xl', 'xxl'][key]] = val
   })
@@ -26,10 +25,7 @@ const addAliases = (arr) => {
  *
  * @returns {Object} The generated palette
  */
-const createPalette = ({
-  palette = {},
-  ...theme
-}): { palette: Palette; theme: DefaultTheme } => {
+const createPalette = ({ palette = {}, ...theme }): Palette => {
   const {
     lightBlue,
     blue,
@@ -55,7 +51,7 @@ const createPalette = ({
     darkGray,
     lightGray,
     buttonGray,
-  } = theme.colors
+  }: DefaultTheme['colors'] = theme.colors as DefaultTheme['colors']
 
   return deepmerge(
     {
@@ -175,7 +171,6 @@ interface Palette {
 export interface CreatedTheme extends DefaultTheme {
   contrastRatio: number
   palette: Palette
-  componentStyles: any
 }
 
 /**
@@ -187,10 +182,10 @@ export interface CreatedTheme extends DefaultTheme {
  * @returns {Object} The generated theme
  */
 export default (
-  theme?: any | undefined,
+  theme?: DefaultTheme | undefined,
   customBreakpoints = null
 ): CreatedTheme => {
-  const mergedTheme = deepmerge(defaultTheme, theme || {})
+  const mergedTheme = deepmerge(defaultTheme, theme || {}) as CreatedTheme
 
   return {
     ...mergedTheme,

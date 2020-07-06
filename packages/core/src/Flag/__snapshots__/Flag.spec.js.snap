@@ -58,7 +58,7 @@ exports[`Flag renders 1`] = `
   display: flex;
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c3 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -72,7 +72,7 @@ exports[`Flag renders 1`] = `
   }
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c0 {
     margin-left: -8px;
   }
@@ -164,7 +164,7 @@ exports[`Flag renders with hex value as bg color 1`] = `
   display: flex;
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c3 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -178,7 +178,7 @@ exports[`Flag renders with hex value as bg color 1`] = `
   }
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c0 {
     margin-left: -8px;
   }
@@ -271,7 +271,7 @@ exports[`Flag renders with theme color as bg color 1`] = `
   display: flex;
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c3 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -285,7 +285,7 @@ exports[`Flag renders with theme color as bg color 1`] = `
   }
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c0 {
     margin-left: -8px;
   }
@@ -378,7 +378,7 @@ exports[`Flag renders with width prop 1`] = `
   display: flex;
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c3 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -392,7 +392,7 @@ exports[`Flag renders with width prop 1`] = `
   }
 }
 
-@media screen and (min-width:32em) {
+@media screen and (min-width:32) {
   .c0 {
     margin-left: -8px;
   }

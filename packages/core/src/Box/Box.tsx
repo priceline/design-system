@@ -35,16 +35,16 @@ export interface BoxProps
  * A low-level layout component for setting width, margin, padding, and color
  */
 export const Box = styled.div<BoxProps>`
-  ${space} ${width} ${textAlign} ${boxShadow}
+  ${space} ${width} ${textAlign} ${boxShadow as never}
   ${color}
-  ${applyVariations('Box')}
+  ${applyVariations('Box') as never}
 ` as React.FunctionComponent<BoxProps>
 
 /**
  * We can keep the regular prop types around for deprecation warnings at runtime
  */
 Box.propTypes = {
-  align: deprecatedPropType('textAlign'),
+  align: deprecatedPropType('textAlign') as never,
 }
 
 Box.displayName = 'Box'
