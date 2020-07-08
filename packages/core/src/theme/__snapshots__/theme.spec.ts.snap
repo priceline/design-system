@@ -10,11 +10,11 @@ Object {
     "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
   ],
   "breakpoints": Array [
-    "32",
-    "40",
-    "48",
-    "64",
-    "80",
+    "32em",
+    "40em",
+    "48em",
+    "64em",
+    "80em",
   ],
   "colorStyles": Object {
     "blueOnLightBlue": Object {
@@ -171,11 +171,11 @@ Object {
   },
   "maxContainerWidth": "1280px",
   "mediaQueries": Array [
-    "@media screen and (min-width:32)",
-    "@media screen and (min-width:40)",
-    "@media screen and (min-width:48)",
-    "@media screen and (min-width:64)",
-    "@media screen and (min-width:80)",
+    "@media screen and (min-width:32em)",
+    "@media screen and (min-width:40em)",
+    "@media screen and (min-width:48em)",
+    "@media screen and (min-width:64em)",
+    "@media screen and (min-width:80em)",
   ],
   "radii": Array [
     0,

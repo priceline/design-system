@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components'
 import defaultTheme from '../theme/theme'
 import createTextStyles from './createTextStyles'
 import createColorStyles from './createColorStyles'
+import { CreatedTheme } from '../@types/theme'
 
 /**
  * Adds aliases to an array of keys
@@ -139,38 +140,6 @@ const createPalette = ({ palette = {}, ...theme }): Palette => {
     },
     palette
   )
-}
-
-interface PaletteColor {
-  lightest?: string
-  light?: string
-  base: string
-  dark?: string
-  darkest?: string
-}
-
-interface Palette {
-  primary: PaletteColor
-  secondary: PaletteColor
-  text: PaletteColor
-  success: PaletteColor
-  error: PaletteColor
-  warning: PaletteColor
-  alert: PaletteColor
-  caution: PaletteColor
-  notify: PaletteColor
-  pricePrimary: PaletteColor
-  priceSecondary: PaletteColor
-  strike: PaletteColor
-  promoPrimary: PaletteColor
-  promoSecondary: PaletteColor
-  border: PaletteColor
-  background: PaletteColor
-}
-
-export interface CreatedTheme extends DefaultTheme {
-  contrastRatio: number
-  palette: Palette
 }
 
 /**

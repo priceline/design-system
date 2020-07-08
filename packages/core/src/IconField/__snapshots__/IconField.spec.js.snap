@@ -66,7 +66,7 @@ exports[`IconField renders 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c3 {
     font-size: 14px;
   }
@@ -226,7 +226,7 @@ exports[`IconField renders icon button 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c1 {
     font-size: 14px;
   }
@@ -396,7 +396,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   box-shadow: 0 0 0 2px #007aff;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c3 {
     font-size: 14px;
   }

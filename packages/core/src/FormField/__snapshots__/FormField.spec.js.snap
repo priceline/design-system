@@ -72,7 +72,7 @@ exports[`FormField renders 1`] = `
   font-weight: 700;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c2 {
     font-size: 14px;
   }
@@ -214,7 +214,7 @@ exports[`FormField renders with Icon 1`] = `
   font-weight: 700;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c5 {
     font-size: 14px;
   }
@@ -386,7 +386,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   font-weight: 700;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c5 {
     font-size: 14px;
   }
@@ -536,7 +536,7 @@ exports[`FormField renders with Select  1`] = `
   display: none;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c2 {
     font-size: 14px;
   }
@@ -671,7 +671,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: none;
 }
 
-@media screen and (min-width:40) {
+@media screen and (min-width:40em) {
   .c5 {
     font-size: 14px;
   }

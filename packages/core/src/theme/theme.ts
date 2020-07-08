@@ -16,7 +16,7 @@ const addAliases = (arr, aliases: string[]) =>
     })
   )
 
-export const breakpoints = [32, 40, 48, 64, 80].map((n) => `${n}`)
+export const breakpoints = [32, 40, 48, 64, 80].map((n) => `${n}em`)
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
