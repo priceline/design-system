@@ -1,10 +1,9 @@
 {
   "name": "pcln-design-system",
-  "version": "3.5.2",
+  "version": "3.5.3",
   "description": "Priceline Design System",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "prepare": "run-s clean build",
