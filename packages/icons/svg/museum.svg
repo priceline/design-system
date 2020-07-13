@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>museum</title>
+    <g id="museum" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        <path d="M22,11 L22,9 L12,2 L2,9 L2,11 L4,11 L4,20 L2,20 L2,22 L22,22 L22,20 L20,20 L20,11 L22,11 Z M16,18 L14,18 L14,14 L12,17 L10,14 L10,18 L8,18 L8,11 L10,11 L12,14 L14,11 L16,11 L16,18 Z" id="shape" fill="#001833"></path>
+    </g>
+</svg>

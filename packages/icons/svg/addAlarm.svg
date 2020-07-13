@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>addAlarm</title>
+    <g id="addAlarm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        <path d="M7.88,3.39 L6.6,1.86 L2,5.71 L3.29,7.24 L7.88,3.39 Z M22,5.72 L17.4,1.86 L16.11,3.39 L20.71,7.25 L22,5.72 Z M12,4 C7.03,4 3,8.03 3,13 C3,17.97 7.02,22 12,22 C16.97,22 21,17.97 21,13 C21,8.03 16.97,4 12,4 Z M12,20 C8.13,20 5,16.87 5,13 C5,9.13 8.13,6 12,6 C15.87,6 19,9.13 19,13 C19,16.87 15.87,20 12,20 Z M13,9 L11,9 L11,12 L8,12 L8,14 L11,14 L11,17 L13,17 L13,14 L16,14 L16,12 L13,12 L13,9 Z" id="shape" fill="#001833"></path>
+    </g>
+</svg>

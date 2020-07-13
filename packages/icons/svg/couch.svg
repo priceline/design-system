@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>couch</title>
+    <g id="couch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        <path d="M21,10 C19.9,10 19,10.9 19,12 L19,15 L5,15 L5,12 C5,10.9 4.11,10 3,10 C1.89,10 1,10.9 1,12 L1,17 C1,18.1 1.9,19 3,19 L21,19 C22.1,19 23,18.1 23,17 L23,12 C23,10.9 22.1,10 21,10 Z M18,5 L6,5 C4.9,5 4,5.9 4,7 L4,9.15 C5.16,9.56 6,10.67 6,11.96 L6,14 L18,14 L18,11.97 C18,10.67 18.84,9.57 20,9.16 L20,7 C20,5.9 19.1,5 18,5 Z" id="shape" fill="#001833"></path>
+    </g>
+</svg>

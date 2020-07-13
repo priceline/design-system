@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sync</title>
+    <g id="sync" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        <path d="M6,12 L6,15 L21,15 L21,17 L6,17 L6,20 L2,16 L6,12 Z M18,4 L22,8 L18,12 L18,9 L3,9 L3,7 L18,7 L18,4 Z" id="shape" fill="#001833"></path>
+    </g>
+</svg>
