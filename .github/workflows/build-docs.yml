@@ -52,6 +52,6 @@ jobs:
         uses: s0/git-publish-subdir-action@v2.3.0
         env:
           REPO: self
-          BRANCH: actions-docsite
+          BRANCH: gh-pages
           FOLDER: docs/out
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
