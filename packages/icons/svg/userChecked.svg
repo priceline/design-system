@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>userChecked</title>
+    <g id="userChecked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        <path d="M20.6,12.5 L22,13.91 L15.47,20.5 L12,17 L13.4,15.59 L15.47,17.67 L20.6,12.5 Z M11,14 C11.32,14 11.61,14.02 12,14.06 L12,14.06 L9,17 L12,20 L3,20 L3,18 C3,15.34 8.33,14 11,14 Z M11,4 C13.21,4 15,5.79 15,8 C15,10.21 13.21,12 11,12 C8.79,12 7,10.21 7,8 C7,5.79 8.79,4 11,4 Z" id="shape" fill="#001833"></path>
+    </g>
+</svg>
