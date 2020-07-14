@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>luggageNo</title>
     <g id="luggageNo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        
         <path d="M23,21.74 L21.54,20.28 L7.21,5.95 L3.25,1.99 L1.99,3.25 L4.69,5.95 L4.05,5.95 C2.94,5.95 2.06,6.84 2.06,7.95 L2.05,18.95 C2.05,20.06 2.94,20.95 4.05,20.95 L19.69,20.95 L21.74,23 L23,21.74 Z M22,7.95 C22.05,6.84 21.16,5.95 20.05,6 L16.05,6 L16.05,3.95 C16.05,2.84 15.16,1.95 14.05,2 L10.05,2 C8.94,1.95 8.05,2.84 8.05,3.95 L8.05,4.27 L22,18.27 L22,7.95 Z M14.05,6 L10,6 L10,3.95 L14.05,3.95 L14.05,6 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>

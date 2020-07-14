@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>widgets</title>
     <g id="widgets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        
         <path d="M13,13 L13,21 L21,21 L21,13 L13,13 Z M3,21 L11,21 L11,13 L3,13 L3,21 Z M3,3 L3,11 L11,11 L11,3 L3,3 Z M16.66,1.69 L11,7.34 L16.66,13 L22.32,7.34 L16.66,1.69 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>

@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>swapHorizontal</title>
     <g id="swapHorizontal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        
         <path d="M6.99,11 L3,15 L6.99,19 L6.99,16 L14,16 L14,14 L6.99,14 L6.99,11 Z M21,9 L17.01,5 L17.01,8 L10,8 L10,10 L17.01,10 L17.01,13 L21,9 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>

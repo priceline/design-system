@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>bedSingle</title>
     <g id="bedSingle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        
         <path d="M20,12 C20,10.9 19.1,10 18,10 L18,7 C18,5.9 17.1,5 16,5 L8,5 C6.9,5 6,5.9 6,7 L6,10 C4.9,10 4,10.9 4,12 L4,17 L5.33,17 L6,19 L7,19 L7.67,17 L16.34,17 L17,19 L18,19 L18.67,17 L20,17 L20,12 Z M16,10 L13,10 L13,7 L16,7 L16,10 Z M8,7 L11,7 L11,10 L8,10 L8,7 Z M6,12 L18,12 L18,15 L6,15 L6,12 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>
