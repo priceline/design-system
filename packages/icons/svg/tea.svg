@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>tea</title>
     <g id="tea" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        
         <path d="M20,19 L20,21 L4,21 L4,19 L20,19 Z M8,3 L8,5.4 L6.19,6.85 C6.07,6.94 6,7.09 6,7.24 L6,7.24 L6,11.5 C6,11.78 6.22,12 6.5,12 L6.5,12 L10.5,12 C10.78,12 11,11.78 11,11.5 L11,11.5 L11,7.24 C11,7.09 10.93,6.94 10.81,6.85 L10.81,6.85 L9,5.4 L9,3 L20,3 C21.11,3 22,3.89 22,5 L22,5 L22,8 C22,9.1 21.11,10 20,10 L20,10 L18,10 L18,13 C18,15.21 16.21,17 14,17 L14,17 L8,17 C5.79,17 4,15.21 4,13 L4,13 L4,3 L8,3 Z M20,5 L18,5 L18,8 L20,8 L20,5 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
   <g fill="none" fill-rule="evenodd">
     <path fill="#001833" d="M15,8.5 C15.66,9.14 16,9.81 16,10.5 L16,22 L8,22 L8,16 C8,15.72 8.11,15.39 8.3,15 L12,8.5 L15,8.5 Z M15,2 C16.1834673,2 17,2.81653268 17,4 L17,5 L15.5,7 L12,7 L12,6 L8.5,9 L7,9 L9,6.5 L9,5 L7,5 L7,2 L15,2 Z"/>
-    <rect width="24" height="24"/>
+    
   </g>
 </svg>

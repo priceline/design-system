@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>power</title>
     <g id="power" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        
         <path d="M16.01,7 L16,3 L14,3 L14,7 L10,7 L10,3 L8,3 L8,7 L7.99,7 C7,6.99 6,7.99 6,8.99 L6,14.48 L9.5,18 L9.5,21 L14.5,21 L14.5,18 L18,14.49 L18,8.99 C18,7.99 17,6.99 16.01,7 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>

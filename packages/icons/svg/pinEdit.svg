@@ -2,7 +2,7 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>pinEdit</title>
     <g id="pinEdit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        
         <path d="M12,2 C8.14,2 5,5.14 5,9 C5,14.25 12,22 12,22 C12,22 19,14.25 19,9 C19,5.14 15.86,2 12,2 Z M10.44,12 L9,12 L9,10.56 L12.35,7.22 L13.78,8.65 L10.44,12 Z M14.89,7.55 L14.19,8.25 L12.75,6.81 L13.45,6.11 C13.6,5.96 13.84,5.96 13.99,6.11 L14.89,7.01 C15.04,7.16 15.04,7.4 14.89,7.55 L14.89,7.55 Z" id="shape" fill="#001833"></path>
     </g>
 </svg>
