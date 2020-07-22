@@ -41,6 +41,19 @@ exports[`Box m prop sets margin 1`] = `
 />
 `;
 
+exports[`Box maxHeight, maxWidth, minHeight, minWidth 1`] = `
+.c0 {
+  max-height: 250px;
+  max-width: 250px;
+  min-height: 55px;
+  min-width: 55px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Box p prop sets padding 1`] = `
 .c0 {
   padding: 8px;
@@ -57,13 +70,15 @@ exports[`Box renders 1`] = `
 />
 `;
 
-exports[`Box width prop sets width 1`] = `
+exports[`Box width and height props set width/height 1`] = `
 .c0 {
+  height: 50%;
   width: 50%;
 }
 
 <div
   className="c0"
+  height="50%"
   width={0.5}
 />
 `;

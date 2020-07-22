@@ -2,8 +2,8 @@
 
 exports[`Banner accepts non-preset colors 1`] = `
 .c2 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -53,8 +53,8 @@ exports[`Banner accepts non-preset colors 1`] = `
 
 exports[`Banner renders content from children props 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -135,8 +135,8 @@ exports[`Banner renders content from children props 1`] = `
 
 exports[`Banner renders with blue bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -214,8 +214,8 @@ exports[`Banner renders with blue bg 1`] = `
 
 exports[`Banner renders with custom iconName and size 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -293,8 +293,8 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 exports[`Banner renders with green bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -373,8 +373,8 @@ exports[`Banner renders with green bg 1`] = `
 exports[`Banner renders with header node 1`] = `
 <DocumentFragment>
   .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -465,8 +465,8 @@ exports[`Banner renders with header node 1`] = `
 
 exports[`Banner renders with lightBlue bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -544,8 +544,8 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 exports[`Banner renders with lightGreen bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -623,8 +623,8 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 exports[`Banner renders with lightRed bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -702,8 +702,8 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 exports[`Banner renders with no props other than theme 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -781,8 +781,8 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 exports[`Banner renders with orange bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -860,8 +860,8 @@ exports[`Banner renders with orange bg 1`] = `
 
 exports[`Banner renders with red bg 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -939,8 +939,8 @@ exports[`Banner renders with red bg 1`] = `
 
 exports[`Banner renders with text node 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
@@ -1035,8 +1035,8 @@ exports[`Banner renders with text node 1`] = `
 
 exports[`Banner renders with text string 1`] = `
 .c4 {
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 .c1 {
