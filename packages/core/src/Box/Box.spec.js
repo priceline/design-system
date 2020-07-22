@@ -8,9 +8,12 @@ describe('Box', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('width prop sets width', () => {
-    const json = rendererCreateWithTheme(<Box width={1 / 2} />).toJSON()
+  test('width and height props set width/height', () => {
+    const json = rendererCreateWithTheme(
+      <Box width={1 / 2} height='50%' />
+    ).toJSON()
     expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('height', '50%')
     expect(json).toHaveStyleRule('width', '50%')
   })
 
@@ -18,6 +21,17 @@ describe('Box', () => {
     const json = rendererCreateWithTheme(<Box m={2} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('margin', theme.space[2] + 'px')
+  })
+
+  test('maxHeight, maxWidth, minHeight, minWidth', () => {
+    const json = rendererCreateWithTheme(
+      <Box maxHeight={250} maxWidth={250} minHeight={55} minWidth={55} />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('max-height', '250px')
+    expect(json).toHaveStyleRule('max-width', '250px')
+    expect(json).toHaveStyleRule('min-height', '55px')
+    expect(json).toHaveStyleRule('min-width', '55px')
   })
 
   test('p prop sets padding', () => {

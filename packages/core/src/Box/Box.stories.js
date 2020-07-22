@@ -6,7 +6,7 @@ import { withInfo } from '@storybook/addon-info'
 import { Box, Text } from '..'
 
 const description =
-  'A low-level layout component for setting width, margin, padding, and color'
+  'A low-level layout component for setting color, display, height, margin, maxHeight, maxWidth, minHeight, minWidth, padding, size, textAlign, and width.'
 
 storiesOf('Box', module)
   .add(
@@ -16,10 +16,31 @@ storiesOf('Box', module)
       inline: true,
     })(() => <Box p={3}>Hello</Box>)
   )
+  .add('Display and size', () => (
+    <Box color='alert.base' display={['none', null, 'block']} p={3} size={250}>
+      Hello
+    </Box>
+  ))
   .add('Padding', () => <Box p={3}>Hello</Box>)
+  .add('Height', () => (
+    <Box
+      color='warning.base'
+      height={[250, 350, 450, 550]}
+      width={[150, 250, 350, 450]}
+    />
+  ))
+  .add('Max and min values', () => (
+    <Box
+      color='priceSecondary.base'
+      maxHeight={[300, null, 400, null, 500]}
+      maxWidth={[300, null, 400, null, 500]}
+      minHeight={[100, null, 200, null, 300]}
+      minWidth={[300, null, 200, null, 100]}
+    />
+  ))
   .add('Margin', () => <Box m={3}>Hello</Box>)
   .add('Color', () => (
-    <Box p={3} color='blue'>
+    <Box p={3} color='primary.base'>
       Hello
     </Box>
   ))
@@ -54,6 +75,7 @@ storiesOf('Box', module)
       </Box>
     </React.Fragment>
   ))
+  .add('Size', () => <Box p={3} color='secondary.base' size={200} />)
   .add('Width', () => (
     <Box p={3} width={1 / 2} color='white' bg='blue'>
       Half Width

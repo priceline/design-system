@@ -1,6 +1,17 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { space, width, textAlign } from 'styled-system'
+import {
+  display,
+  height,
+  maxHeight,
+  maxWidth,
+  minHeight,
+  minWidth,
+  size,
+  space,
+  textAlign,
+  width,
+} from 'styled-system'
 
 import {
   applyVariations,
@@ -11,20 +22,30 @@ import {
 } from '../utils'
 
 const Box = styled.div`
-  ${space} ${width} ${textAlign} ${boxShadow}
-  ${color}
+  ${display} ${height} ${maxHeight} ${maxWidth}
+  ${minHeight} ${minWidth} ${size} ${space} 
+  ${textAlign} ${width} 
+
   ${applyVariations('Box')}
+  ${boxShadow}
+  ${color}
 `
 
 Box.displayName = 'Box'
 
 Box.propTypes = {
+  ...display.propTypes,
+  ...maxHeight.propTypes,
+  ...maxWidth.propTypes,
+  ...minHeight.propTypes,
+  ...minWidth.propTypes,
+  ...size.propTypes,
   ...space.propTypes,
-  ...width.propTypes,
-  color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
   ...textAlign.propTypes,
+  ...width.propTypes,
+  bg: deprecatedPropType('color'),
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  color: deprecatedColorValue(),
 }
 
 export default Box
