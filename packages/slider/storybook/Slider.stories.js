@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Component from '@reach/component-component'
@@ -94,20 +95,6 @@ const untdTheme = {
   },
 }
 
-// eslint-disable-next-line react/prop-types
-const InnerSlider = ({ state, setState }) => (
-  <RangeSlider
-    ariaLabelGroupForHandles={['Handle One', undefined]}
-    ariaLabelledByGroupForHandles={[undefined, 'handle_2']}
-    ariaValueTextFormattersForHandles={[formatValueText, formatValueText]}
-    // eslint-disable-next-line react/prop-types
-    value={state.value}
-    onChange={(value) => {
-      setState({ value })
-    }}
-  />
-)
-
 storiesOf('Slider', module)
   .add('Basic', () => (
     <div>
@@ -118,29 +105,92 @@ storiesOf('Slider', module)
         initialState={{
           value: [32, 64],
         }}
-      >
-        <InnerSlider />
-      </Component>
+        children={({ state, setState }) => (
+          <RangeSlider
+            ariaLabelGroupForHandles={['Handle One', undefined]}
+            ariaLabelledByGroupForHandles={[undefined, 'handle_2']}
+            ariaValueTextFormattersForHandles={[
+              formatValueText,
+              formatValueText,
+            ]}
+            value={state.value}
+            onChange={(value) => {
+              setState({ value })
+            }}
+          />
+        )}
+      />
     </div>
   ))
-  .add('RangeSlider with Single value', () => <RangeSlider value={[32]} />)
-  .add('Slider', () => <Slider value={[32]} />)
+  .add('RangeSlider with Single value', () => (
+    <RangeSlider ariaLabelGroupForHandles={['Handle One']} value={[32]} />
+  ))
+  .add('Slider', () => <Slider ariaLabelForHandle='Handle' value={[32]} />)
   .add('Multiple values', () => (
-    <RangeSlider value={[16, 32, 64, 128]} max={256} />
+    <RangeSlider
+      ariaLabelGroupForHandles={[
+        'handle_1',
+        'handle_2',
+        'handle_3',
+        'handle_4',
+      ]}
+      value={[16, 32, 64, 128]}
+      max={256}
+    />
   ))
   .add('Colors', () => (
     <div>
-      <RangeSlider value={[8, 16]} color='primary' mb={2} />
-      <RangeSlider value={[16, 32]} color='secondary' mb={2} />
-      <RangeSlider value={[32, 64]} color='alert' mb={2} />
-      <RangeSlider value={[64, 96]} color='error' mb={2} />
+      <RangeSlider
+        value={[8, 16]}
+        color='primary'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
+      <RangeSlider
+        value={[16, 32]}
+        color='secondary'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
+      <RangeSlider
+        value={[32, 64]}
+        color='alert'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
+      <RangeSlider
+        value={[64, 96]}
+        color='error'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
     </div>
   ))
   .add('Themed Colors', () => (
     <ThemeProvider theme={untdTheme}>
-      <RangeSlider value={[8, 16]} color='primary' mb={2} />
-      <RangeSlider value={[16, 32]} color='secondary' mb={2} />
-      <RangeSlider value={[32, 64]} color='alert' mb={2} />
-      <RangeSlider value={[64, 96]} color='error' mb={2} />
+      <RangeSlider
+        value={[8, 16]}
+        color='primary'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
+      <RangeSlider
+        value={[16, 32]}
+        color='secondary'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
+      <RangeSlider
+        value={[32, 64]}
+        color='alert'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
+      <RangeSlider
+        value={[64, 96]}
+        color='error'
+        mb={2}
+        ariaLabelGroupForHandles={['handle_1', 'handle_2']}
+      />
     </ThemeProvider>
   ))
