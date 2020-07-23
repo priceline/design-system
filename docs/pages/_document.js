@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
     const { styles } = this.props
 
     return (
-      <html>
+      <html lang='en-US'>
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <meta name='generator' content='mdx-docs' />
