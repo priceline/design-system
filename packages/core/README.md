@@ -1,6 +1,6 @@
 # Priceline Design System
 
-[![Build Status][travis-badge]][travis]
+![Node.js CI](https://github.com/priceline/design-system/workflows/Node.js%20CI/badge.svg)
 [![Coverage][coverage-badge]][coverage]
 [![npm version][npm version]][npm version]
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/priceline/design-system.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priceline/design-system/alerts/)
@@ -46,6 +46,4 @@ We hope to accomplish these goals by:
 [npm version]: https://img.shields.io/npm/v/pcln-design-system.svg?style=flat-square
 [site]: https://priceline.github.io/design-system/
 [storybook]: https://priceline.github.io/design-system/storybook/
-[travis]: https://travis-ci.org/priceline/design-system
-[travis-badge]: https://img.shields.io/travis/priceline/design-system/master.svg?style=flat-square
 [bundlephobia-badge]: https://badgen.net/bundlephobia/minzip/pcln-design-system?color=cyan

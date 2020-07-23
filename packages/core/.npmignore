@@ -7,4 +7,3 @@ coverage
 scripts
 .site
 .storybook
-.travis.yml
