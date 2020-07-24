@@ -17,9 +17,13 @@ exports[`IconButton renders without props 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c0:hover {
+  background-color: #049;
+  color: #fff;
 }
 
 .c0:disabled {
@@ -28,12 +32,18 @@ exports[`IconButton renders without props 1`] = `
   background-color: #edf0f3;
 }
 
-.c0:hover {
+.c1 {
+  padding: 0;
   background-color: transparent;
   color: inherit;
 }
 
-.c0 > div {
+.c1:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+.c1 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -41,7 +51,8 @@ exports[`IconButton renders without props 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1"
+  color="primary"
   name="Key"
 >
   <div />

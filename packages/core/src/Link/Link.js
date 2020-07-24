@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { width, space } from 'styled-system'
@@ -9,7 +10,6 @@ import {
   deprecatedColorValue,
   getSCMigrationRef,
   refPropType,
-  mapProps,
 } from '../utils'
 
 const variations = {
@@ -39,15 +39,20 @@ const variations = {
   `,
 }
 
-const Link = mapProps(({ target, dsRef, ...props }) => ({
-  [getSCMigrationRef()]: dsRef,
-  rel: target === '_blank' ? 'noopener' : null,
-  target,
-  ...props,
-}))(styled.a`
+const StyledLink = styled.a`
   ${width} ${space};
   ${applyVariations('Link', variations)}
-`)
+`
+const Link = ({ target, dsRef, ...props }) => {
+  const newProps = {
+    [getSCMigrationRef()]: dsRef,
+    rel: target === '_blank' ? 'noopener' : null,
+    target,
+    ...props,
+  }
+
+  return <StyledLink {...newProps} />
+}
 
 Link.displayName = 'Link'
 
@@ -59,6 +64,7 @@ Link.defaultProps = {
 Link.propTypes = {
   color: deprecatedColorValue(),
   dsRef: refPropType,
+  target: PropTypes.string,
   variation: PropTypes.oneOf(Object.keys(variations)),
 }
 

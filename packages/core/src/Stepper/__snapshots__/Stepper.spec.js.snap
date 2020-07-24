@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper renders with children 1`] = `
-.c4 {
+.c5 {
   color: #007aff;
   font-size: 14px;
 }
 
-.c5 {
+.c6 {
   color: #007aff;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c6 {
+.c7 {
   color: #4f6f8f;
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -26,7 +26,7 @@ exports[`Stepper renders with children 1`] = `
   color: #007aff;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
@@ -46,6 +46,22 @@ exports[`Stepper renders with children 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
+}
+
+.c1:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #4f6f8f;
+  background-color: #edf0f3;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -56,13 +72,7 @@ exports[`Stepper renders with children 1`] = `
   font-weight: unset;
 }
 
-.c1:disabled {
-  cursor: not-allowed;
-  color: #4f6f8f;
-  background-color: #edf0f3;
-}
-
-.c1:hover {
+.c2:hover {
   background-color: #fff;
 }
 
@@ -81,12 +91,13 @@ exports[`Stepper renders with children 1`] = `
   className="c0"
 >
   <button
-    className="c1"
+    className="c1 c2"
+    color="primary"
   >
     <svg
       aria-hidden={false}
       aria-label="Step Completed"
-      className="c2 c3"
+      className="c3 c4"
       color="primary"
       fill="currentcolor"
       focusable={false}
@@ -102,7 +113,7 @@ exports[`Stepper renders with children 1`] = `
     </svg>
     <div
       aria-selected={false}
-      className="c4"
+      className="c5"
       color="primary"
       fontSize={1}
     >
@@ -110,11 +121,12 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c1"
+    className="c1 c2"
+    color="primary"
   >
     <div
       aria-selected={true}
-      className="c5"
+      className="c6"
       color="primary"
       fontSize={1}
     >
@@ -122,11 +134,12 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c1"
+    className="c1 c2"
+    color="primary"
   >
     <div
       aria-selected={false}
-      className="c6"
+      className="c7"
       color="text.light"
       fontSize={1}
     >
