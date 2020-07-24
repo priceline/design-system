@@ -1,5 +1,6 @@
 jest.mock('styled-components', () => ({
-  div: () => ({ extend: true }),
+  __esModule: true,
+  injectGlobal: jest.fn(),
 }))
 
 beforeEach(() => {

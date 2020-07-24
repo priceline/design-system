@@ -1,7 +1,5 @@
-import getSCMigrationRef from '.'
-
 jest.mock('styled-components', () => ({
-  div: () => ({}),
+  __esModule: true,
 }))
 
 beforeEach(() => {
@@ -10,6 +8,7 @@ beforeEach(() => {
 
 describe('getSCMigrationRef', function () {
   it('should return innerRef if SC4', function () {
+    const getSCMigrationRef = require('./getSCMigrationRef.js').default
     expect(getSCMigrationRef()).toEqual('ref')
   })
 })
