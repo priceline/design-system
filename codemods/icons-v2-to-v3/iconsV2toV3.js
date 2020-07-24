@@ -1,4 +1,4 @@
-module.exports = function (fileInfo, api, options) {
+module.exports = function (fileInfo) {
   // Sample:
   // import Dollar from 'pcln-icons/lib/Dollar'
   // import Dollar from "pcln-icons/lib/Dollar";
