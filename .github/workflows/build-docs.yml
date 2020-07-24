@@ -8,47 +8,36 @@ on:
     branches: [master]
 
 jobs:
-  storybook:
+  docsite_storybook_build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
 
-      # Build static Storybook and docsite
-      - run: npm install
-      - run: npm run storybook
-
-      # Deploy static Storybook to branch
-      - name: Push static Storybook directory to branch
-        uses: s0/git-publish-subdir-action@v2.3.0
-        env:
-          REPO: self
-          BRANCH: actions-storybook
-          FOLDER: docs/out/storybook
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  docsite:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
+      - name: NPM Install
         working-directory: docs
+        run: npm install
 
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: 10.x
+      - name: Build docsite
+        working-directory: docs
+        env:
+          NODE_ENV: production
+        run: |
+          npm run build
+          touch out/.nojekyll
 
-      # Build static Storybook and docsite
-      - run: npm install
-      - run: npm run build
+      - name: Build static Storybook
+        working-directory: ./
+        run: |
+          npm install
+          npm run storybook
 
-      # Deploy docsite to branch
-      - name: Push docsite build directory to branch
+      - name: Push build directory to GitHub Pages branch
         uses: s0/git-publish-subdir-action@v2.3.0
         env:
           REPO: self
