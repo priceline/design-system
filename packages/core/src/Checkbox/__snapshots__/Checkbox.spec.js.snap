@@ -17,8 +17,6 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 .c0 {
-  background-color: #007aff;
-  color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -150,8 +148,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 .c0 {
-  background-color: #007aff;
-  color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -283,8 +279,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 .c0 {
-  background-color: #007aff;
-  color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
