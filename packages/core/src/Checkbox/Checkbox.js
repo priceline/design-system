@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty } from 'pcln-icons'
 import PropTypes from 'prop-types'
-import { Box } from '../Box'
 import {
   applyVariations,
   getPaletteColor,
@@ -33,7 +32,7 @@ const Checkbox = (props) => {
   )
 }
 
-const CheckBoxWrapper = styled(Box)`
+const CheckBoxWrapper = styled.div`
   display: inline-flex;
   align-items: center;
   position: relative;
