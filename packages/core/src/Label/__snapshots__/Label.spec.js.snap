@@ -22,7 +22,7 @@ exports[`Label Label hidden renders 1`] = `
 
 <label
   className="c0"
-  color="border.light"
+  color="text.light"
   fontSize="10px"
   fontWeight="bold"
   hidden={true}
@@ -47,7 +47,7 @@ exports[`Label Label nowrap renders 1`] = `
 
 <label
   className="c0"
-  color="border.light"
+  color="text.light"
   fontSize="10px"
   fontWeight="bold"
 />
@@ -72,7 +72,7 @@ exports[`Label Label width renders 1`] = `
 
 <label
   className="c0"
-  color="border.light"
+  color="text.light"
   fontSize="10px"
   fontWeight="bold"
   width={0.5}
@@ -96,7 +96,7 @@ exports[`Label it renders 1`] = `
 
 <label
   className="c0"
-  color="border.light"
+  color="text.light"
   fontSize="10px"
   fontWeight="bold"
 />

@@ -52,7 +52,7 @@ Label.propTypes = {
 Label.defaultProps = {
   fontSize: '10px',
   fontWeight: 'bold',
-  color: 'border.light',
+  color: 'text.light',
 }
 
 Label.displayName = 'Label'
