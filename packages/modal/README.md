@@ -35,6 +35,12 @@ import { Modal } from 'pcln-modal'
 </Modal>
 ```
 
+_Note: `<Modal>` relies on values from `theme`, so it must be a descendent of `<ThemeProvider>` in order to work properly. Otherwise, you might experience errors like this:_
+
+```
+Uncaught TypeError: Cannot read property '3' of undefined
+```
+
 ## ScrollLock helper
 
 This helper class will prevent background scroll when modal is open. **However, there can be only one instance of this helper is working in a page since it messes with body style**

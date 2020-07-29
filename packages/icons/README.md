@@ -28,6 +28,12 @@ import { Icon } from 'pcln-icons'
 export default (props) => <Icon name={iconName} mr={2} />
 ```
 
+_Note: Exports from `pcln-icons` rely on values from `theme`, so they must be descendents of `<ThemeProvider>` in order to work properly. Otherwise, you might experience errors like this:_
+
+```
+Uncaught TypeError: Cannot read property '3' of undefined
+```
+
 ## Development
 
 Custom icon SVGs are included in the `svg/` directory.
