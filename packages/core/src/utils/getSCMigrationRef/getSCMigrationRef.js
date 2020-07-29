@@ -1,8 +1,14 @@
-import styled from 'styled-components'
+import * as SC from 'styled-components'
+import moize from 'moize'
 
-const TestComponent = styled.div``
-
-const isStyledComponents3 = !!TestComponent.extend
+const isStyledComponents3 = moize((styled) =>
+  /*
+    We have to use this hack to avoid triggering deprecation warnings we got by checking
+    for the presence of .extend on newly created Styled components, as well as the
+    Webpack warnings raised if we check for a non-existent export directly.
+   */
+  Object.keys(styled).includes('injectGlobal')
+)
 
 /**
  * This function is a bridge from styled-components 3 to 4+. In some cases, it isn't possible
@@ -14,5 +20,5 @@ const isStyledComponents3 = !!TestComponent.extend
  * @returns {string}
  */
 export default function getSCMigrationRef() {
-  return isStyledComponents3 ? 'innerRef' : 'ref'
+  return isStyledComponents3(SC) ? 'innerRef' : 'ref'
 }
