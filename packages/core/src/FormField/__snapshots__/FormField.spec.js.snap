@@ -81,7 +81,7 @@ exports[`FormField renders 1`] = `
 <div>
   <label
     className="c0"
-    color="border.light"
+    color="text.light"
     fontSize={10}
     fontWeight="bold"
     htmlFor="email"
@@ -223,7 +223,7 @@ exports[`FormField renders with Icon 1`] = `
 <div>
   <label
     className="c0"
-    color="border.light"
+    color="text.light"
     fontSize={10}
     fontWeight="bold"
     htmlFor="email"
@@ -395,7 +395,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 <div>
   <label
     className="c0"
-    color="border.light"
+    color="text.light"
     fontSize={10}
     fontWeight="bold"
     htmlFor="email"
