@@ -13,7 +13,7 @@ exports[`RatingBadge renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
   color="white"
   fontWeight="bold"
 />

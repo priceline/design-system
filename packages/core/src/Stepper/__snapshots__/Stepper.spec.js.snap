@@ -78,10 +78,10 @@ exports[`Stepper renders with children 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm sc-AxiKw c0"
 >
   <button
-    className="c1"
+    className="sc-plgXW c1"
   >
     <svg
       aria-hidden={false}
@@ -110,7 +110,7 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c1"
+    className="sc-plgXW c1"
   >
     <div
       aria-selected={true}
@@ -122,7 +122,7 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c1"
+    className="sc-plgXW c1"
   >
     <div
       aria-selected={false}
@@ -149,6 +149,6 @@ exports[`Stepper renders without crashing 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm sc-AxiKw c0"
 />
 `;

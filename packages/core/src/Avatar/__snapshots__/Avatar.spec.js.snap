@@ -43,10 +43,10 @@ exports[`Avatar renders default 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="primary"
   >
     <svg
@@ -104,10 +104,10 @@ exports[`Avatar renders initials 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     color="primary"
   >
     <div
@@ -190,15 +190,15 @@ exports[`Avatar renders mr elon 1`] = `
     class="c0"
   >
     <div
-      class="c1"
+      class="sc-AxjAm c1"
     >
       <div
-        class="c2"
+        class="sc-AxjAm c2"
         color="primary"
         src="https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg"
       />
       <div
-        class="c3"
+        class="sc-AxjAm c3"
       >
         <h5
           class="c4"

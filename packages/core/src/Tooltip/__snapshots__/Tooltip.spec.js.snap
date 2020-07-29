@@ -58,7 +58,7 @@ exports[`Tooltip bottom center 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="background.lightest"
   >
     centered tooltip
@@ -119,7 +119,7 @@ exports[`Tooltip bottom left 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="background.lightest"
   >
     left tooltip
@@ -181,7 +181,7 @@ exports[`Tooltip bottom right 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="background.lightest"
   >
     right tooltip
@@ -242,7 +242,7 @@ exports[`Tooltip renders 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="background.lightest"
   >
     A Tooltip
@@ -308,7 +308,7 @@ exports[`Tooltip top center 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="white"
   >
     centered tooltip
@@ -369,7 +369,7 @@ exports[`Tooltip top left 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="white"
   >
     left tooltip
@@ -431,7 +431,7 @@ exports[`Tooltip top right 1`] = `
   }
 >
   <div
-    className="c0"
+    className="sc-AxjAm c0"
     color="white"
   >
     right tooltip

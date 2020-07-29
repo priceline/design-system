@@ -100,7 +100,7 @@ exports[`FormField renders 1`] = `
     Email Address
   </label>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <input
       className="c2"
@@ -242,7 +242,7 @@ exports[`FormField renders with Icon 1`] = `
     Email Address
   </label>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <svg
       aria-hidden={true}
@@ -414,7 +414,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     Email
   </label>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <svg
       aria-hidden={true}
@@ -544,10 +544,10 @@ exports[`FormField renders with Select  1`] = `
 
 <div>
   <div
-    className="c0"
+    className="sc-AxjAm c0"
   >
     <div
-      className="c1"
+      className="sc-AxjAm c1"
       width={1}
     >
       <select
@@ -572,7 +572,7 @@ exports[`FormField renders with Select  1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c3 sc-fzomuh c4"
         color="text.light"
         fill="currentcolor"
         focusable={false}
@@ -679,7 +679,7 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 <div>
   <div
-    className="c0"
+    className="sc-AxjAm c0"
   >
     <svg
       aria-hidden={true}
@@ -711,7 +711,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
     </svg>
     <div
-      className="c4"
+      className="sc-AxjAm c4"
       width={1}
     >
       <select
@@ -736,7 +736,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c6 c7"
+        className="c6 sc-fzomuh c7"
         color="text.light"
         fill="currentcolor"
         focusable={false}

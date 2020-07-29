@@ -73,7 +73,7 @@ exports[`IconField renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <svg
     aria-hidden={true}
@@ -233,7 +233,7 @@ exports[`IconField renders icon button 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <input
     className="c1"
@@ -254,7 +254,7 @@ exports[`IconField renders icon button 1`] = `
     }
   />
   <button
-    className="c2"
+    className="sc-plgXW c2"
     style={
       Object {
         "alignSelf": "center",
@@ -403,7 +403,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <svg
     aria-hidden={true}
@@ -449,7 +449,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     }
   />
   <button
-    className="c4"
+    className="sc-plgXW c4"
     style={
       Object {
         "alignSelf": "center",

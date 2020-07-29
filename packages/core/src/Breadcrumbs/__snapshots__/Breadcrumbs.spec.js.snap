@@ -51,10 +51,10 @@ exports[`Breadcrumbs renders basic 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <a
       className="c2"
@@ -72,7 +72,7 @@ exports[`Breadcrumbs renders basic 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <a
       className="c2"
@@ -90,7 +90,7 @@ exports[`Breadcrumbs renders basic 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <a
       className="c4"
@@ -185,10 +185,10 @@ exports[`Breadcrumbs renders with icons 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
 >
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <svg
       aria-hidden={true}
@@ -222,7 +222,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <svg
       aria-hidden={true}
@@ -256,7 +256,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="sc-AxjAm c1"
   >
     <svg
       aria-hidden={true}

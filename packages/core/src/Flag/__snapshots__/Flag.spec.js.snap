@@ -79,23 +79,23 @@ exports[`Flag renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm sc-AxiKw c0"
 >
   <div
-    className="c1"
+    className="sc-AxjAm sc-oUAoT c1"
   >
     <div
-      className="c2"
+      className="sc-AxjAm c2"
       color="green"
       width="4px"
     />
   </div>
   <div
-    className="c3"
+    className="sc-AxjAm c3"
     color="white"
   />
   <div
-    className="c4"
+    className="sc-AxjAm c4"
     color="green"
     width="18px"
   />
@@ -185,24 +185,24 @@ exports[`Flag renders with hex value as bg color 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm sc-AxiKw c0"
   width={256}
 >
   <div
-    className="c1"
+    className="sc-AxjAm sc-oUAoT c1"
   >
     <div
-      className="c2"
+      className="sc-AxjAm c2"
       color="#085397"
       width="4px"
     />
   </div>
   <div
-    className="c3"
+    className="sc-AxjAm c3"
     color="white"
   />
   <div
-    className="c4"
+    className="sc-AxjAm c4"
     color="#085397"
     width="18px"
   />
@@ -292,24 +292,24 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm sc-AxiKw c0"
   width={256}
 >
   <div
-    className="c1"
+    className="sc-AxjAm sc-oUAoT c1"
   >
     <div
-      className="c2"
+      className="sc-AxjAm c2"
       color="purple"
       width="4px"
     />
   </div>
   <div
-    className="c3"
+    className="sc-AxjAm c3"
     color="white"
   />
   <div
-    className="c4"
+    className="sc-AxjAm c4"
     color="purple"
     width="18px"
   />
@@ -399,24 +399,24 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm sc-AxiKw c0"
   width={256}
 >
   <div
-    className="c1"
+    className="sc-AxjAm sc-oUAoT c1"
   >
     <div
-      className="c2"
+      className="sc-AxjAm c2"
       color="green"
       width="4px"
     />
   </div>
   <div
-    className="c3"
+    className="sc-AxjAm c3"
     color="white"
   />
   <div
-    className="c4"
+    className="sc-AxjAm c4"
     color="green"
     width="18px"
   />
