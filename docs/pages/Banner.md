@@ -14,9 +14,9 @@ Use `Banner` component to create a box with a optional header, text, optional le
   bg='lightBlue'
   p={2}>
   <Flex>
-    <Icon name='Calendar' />
+    <Calendar />
     <Box pl={2}>
-      <Heading fontSize={2} bold>Are Your Dates Correct?</Heading>
+      <Heading fontSize={2} m={0} bold>Are Your Dates Correct?</Heading>
       <Text>
         Remember to double check the calendar because availability may change depending on your dates.
       </Text>
@@ -45,8 +45,8 @@ You can choose any palette or theme color for `Banner`.
 ```.jsx
 <Banner
   p={2}
-  color="primary"
-  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
+  color='primary'
+  text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. '
 />
 ```
 
@@ -55,9 +55,9 @@ Uses the color from `theme.palette.primary.base`.
 ```.jsx
 <Banner
   p={2}
-  color="error"
-  icon={<Icon name="Warning"/>}
-  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
+  color='error'
+  icon={<Warning />}
+  text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. '
 />
 ```
 
@@ -66,9 +66,9 @@ Uses the color from `theme.palette.error.base`.
 ```.jsx
 <Banner
   p={2}
-  color="caution"
-  icon={<Icon name="Attention"/>}
-  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
+  color='caution'
+  icon={<Attention />}
+  text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. '
 />
 ```
 
@@ -81,9 +81,9 @@ Uses the color from `theme.palette.warning.base`.
 ```.jsx
 <Banner
   p={2}
-  header={<Heading.h4>H4 Heading</Heading.h4>}
-  color="caution"
-  iconName="Attention"
-  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. "
+  header={<Heading.h4 m={0}>H4 Heading</Heading.h4>}
+  color='caution'
+  icon={<Attention />}
+  text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. '
 />
 ```

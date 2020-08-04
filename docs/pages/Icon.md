@@ -1,19 +1,15 @@
 # Icon
 
-Use the `Icon` component for SVG icons.
+Use the named `Icon` components from the `pcln-icons` package for SVG icons.
 
 ```.jsx
-<Icon
-  name='Flame'
-  color='orange'
-/>
+<Flame color='orange' />
 ```
 
 ## Accessibility for Icons
 
 ```.jsx
-<Icon
-  name='Chat'
+<Chat
   color='orange'
   title='Airplane Icon'
   titleId='unique-airplane-title-id'
@@ -27,14 +23,13 @@ When a `title` prop is passed, `aria-hidden` is set to false.
 
 In order to support older browsers, please pass in a `titleId`
 
-To add a descripton, please pass in `desc` and `descId` .
+To add a description, please pass in `desc` and `descId` .
 `<desc id="{unique-desc-id}">{description}</desc>` is generated when `desc` and `descId` props are passed
 
 ## Props
 
 | Prop      | Type   | Description                     |
 | --------- | ------ | ------------------------------- |
-| `name`    | string | Icon key name                   |
 | `size`    | number | Width and height in pixels      |
 | `color`   | string | A color key from `theme.colors` |
 | `title`   | string | Title for to the icon           |
