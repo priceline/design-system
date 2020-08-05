@@ -46,3 +46,28 @@ storiesOf('Text', module)
       <Text color='green'>Hello Green</Text>
     </div>
   ))
+  .add('min/maxHeight', () => (
+    <div>
+      <Text color='blue' minHeight={200} minWidth={300} width={1}>
+        Hello Blue
+      </Text>
+      <Text color='green' maxHeight={200} maxWidth={300}>
+        Hello Green
+      </Text>
+    </div>
+  ))
+  .add('Hide on > lg breakpoints', () => (
+    <div>
+      <Text
+        color='primary'
+        display={[null, null, null, 'none']}
+        fontSize={4}
+        width={1}
+      >
+        Hidden text on larger screens
+      </Text>
+      <Text color='secondary' fontSize={4} width={1}>
+        I am always show. But the text above, hides on larger screens.
+      </Text>
+    </div>
+  ))

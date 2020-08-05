@@ -24,6 +24,45 @@ exports[`Text caps prop sets text-transform 1`] = `
 />
 `;
 
+exports[`Text display and overflow 1`] = `
+.c0 {
+  display: inline-block;
+  overflow: none;
+}
+
+<div
+  className="c0"
+  display="inline-block"
+  overflow="none"
+/>
+`;
+
+exports[`Text height and width 1`] = `
+.c0 {
+  height: 150px;
+  width: 200px;
+}
+
+<div
+  className="c0"
+  height={150}
+  width={200}
+/>
+`;
+
+exports[`Text min/max values 1`] = `
+.c0 {
+  max-height: 400px;
+  max-width: 400px;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
   margin-top: 8px;
