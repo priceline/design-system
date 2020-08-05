@@ -4,7 +4,7 @@ The `IconButton` component is a `<button>` element with icon.
 
 ```.jsx
 <IconButton
-  name='Flame'
+  icon={<Hotels/>}
   size={24}
   color='orange'
   title='Set on fire'

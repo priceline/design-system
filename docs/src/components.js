@@ -134,6 +134,8 @@ const TextDemo = styled.div`
 
 const Paragraph = (p) => <Text.p {...p} />
 
+import { Hotels } from 'pcln-icons'
+
 const components = {
   ...DS,
   h1: heading('h1'),
@@ -153,6 +155,7 @@ const components = {
   ShadeDemo,
   ShadeOtherDemo,
   TextDemo,
+  Hotels,
 }
 
 components.h1.defaultProps = {
