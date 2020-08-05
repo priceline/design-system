@@ -70,7 +70,7 @@ const ColorCard = ({ name, value }) => (
           <Text fontSize={1} mb={1} align='left'>
             {name}
           </Text>
-          <Code fontSize={1} align='left' color='gray'>
+          <Code fontSize={1} align='left' color='text'>
             {value}
           </Code>
         </Box>
