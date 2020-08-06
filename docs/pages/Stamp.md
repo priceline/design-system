@@ -5,8 +5,8 @@ Use it in conjunction with an `Icon` component to give it more context.
 An Icon placed within a Stamp will inherit the assigned Stamp color.
 
 ```.jsx
-<Stamp color='purple'>
-  <Icon name='TrendingUp' size={16} mr={1} /> top booked hotel
+<Stamp color='promoPrimary'>
+  <TrendingUp size={16} mr={1} /> top booked hotel
 </Stamp>
 ```
 

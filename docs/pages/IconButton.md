@@ -1,14 +1,27 @@
 # IconButton
 
-The `IconButton` component is a `<button>` element with icon.
+The `IconButton` component is a transparent `<button>` element with an icon.
 
 ```.jsx
 <IconButton
-  name='Flame'
-  size={24}
-  color='orange'
-  title='Set on fire'
-  onClick={() => {}}
+  title='Search button'
+  onClick={() => {console.log('Search button clicked!')}}
+  mr={2}
+  icon={
+    <Search
+      color='primary'
+      size={36}
+    />
+  }
+/>
+<IconButton
+  disabled
+  mr={2}
+  icon={<Plus />}
+/>
+<IconButton
+  variation='outline'
+  icon={<Bookmark />}
 />
 ```
 
@@ -16,15 +29,15 @@ Be sure to include a `title` attribute for accessibility.
 
 ## Props
 
-| Prop      | Type     | Description                         |
-| --------- | -------- | ----------------------------------- |
-| `name`    | string   | Icon component `name` prop          |
-| `legacy`  | boolean  | Icon component `legacy` prop        |
-| `color`   | string   | Icon color                          |
-| `title`   | string   | HTML `title` attribute              |
-| `onClick` | function | Sets a function to execute on click |
+| Prop        | Type              | Description                                   |
+| ----------- | ----------------- | --------------------------------------------- |
+| `disabled`  | bool              | Disables the button and applies a light color |
+| `icon`      | node              | Sets the button's svg icon                    |
+| `onClick`   | function          | Sets a function to execute on click           |
+| `title`     | string            | HTML `title` attribute                        |
+| `variation` | `fill`, `outline` | The button variation                          |
 
 ### Related
 
-- [Icon](/Icon)
 - [CloseButton](/CloseButton)
+- [Icon](/Icon)

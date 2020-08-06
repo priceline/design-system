@@ -5,7 +5,7 @@ Pass in `props.children` to be wrapped.
 
 ```.jsx
 <Hug
-  icon='check'
+  icon={<Check />}
   text={<Text.span>I hug my props.children</Text.span>}>
   <Card p={4}>
     Hello

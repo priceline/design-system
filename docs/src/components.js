@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as DS from 'pcln-design-system'
+import * as icons from 'pcln-icons'
 import isAbsoluteURL from 'is-absolute-url'
 import styled from 'styled-components'
 import { space, fontSize, color, theme } from 'styled-system'
 import { components as mdxDocsComponents } from 'mdx-docs'
 
 import {
-  Heading,
-  Text,
-  Link,
   Button,
+  Heading,
+  Link,
+  Text,
   getPaletteColor,
   getTextColorOn,
 } from 'pcln-design-system'
@@ -136,6 +137,7 @@ const Paragraph = (p) => <Text.p {...p} />
 
 const components = {
   ...DS,
+  ...icons,
   h1: heading('h1'),
   h2: heading('h2'),
   h3: heading('h3'),

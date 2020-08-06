@@ -5,7 +5,7 @@ Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon
 ```.jsx
 <FormField>
   <Label htmlFor='email'>Email address</Label>
-  <Icon name='Email' size='20' />
+  <Email />
   <Input
     id='email'
     name='email'
@@ -18,7 +18,7 @@ Use the `FormField` component to combine `Input` or `Select`, `Label`, and `Icon
 ```.jsx
 <FormField>
   <Label htmlFor='options'>Select One</Label>
-  <Icon name='Key' size='20' />
+  <Key />
   <Select
     id='options'
     name='options'>
@@ -47,20 +47,27 @@ Error messages can be displayed using the [`Tooltip`](/Tooltip) component.
   <Input
     value='hello@example'
   />
-  <Icon name='Warning' color='red' />
+  <Warning color='error' />
 </FormField>
 <Tooltip
   bottom
   right
-  color='white'
-  bg='red'>
+  color='error'
+>
   Invalid Email Address
 </Tooltip>
 ```
 
 ## Props
 
-| Prop              | Type           | Description                                                                                                                                                      |
-| ----------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `children`        | React elements | Up to 4 components, two of which can be `<Icon/>`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported. |
-| `alwaysShowLabel` | boolean        | Determines whether or not the label shows up statically                                                                                                          |
+| Prop              | Type           | Description                                                                                                                                                       |
+| ----------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `children`        | React elements | Up to 4 components, two of which can be `<Icon />`'s, one of which can be an `<Input />`, and one of which can be a `<Label />`. No other elements are supported. |
+| `alwaysShowLabel` | boolean        | Determines whether or not the label shows up statically                                                                                                           |
+
+### Related
+
+- [Icon](/Icon)
+- [Input](/Input)
+- [Label](/Label)
+- [Select](/Select)

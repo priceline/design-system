@@ -179,8 +179,8 @@ global.mountWithTheme = (node, options) => {
 ```.jsx
 <Banner color="primary" p={2} mb={1}>Primary banner</Banner>
 <Banner color="secondary" p={2} mb={1}>Secondary banner</Banner>
-<Banner color="error" iconName="attention" p={2} mb={1}>Error banner</Banner>
-<Banner color="caution" header="Promo" iconName="dollar" p={2}>Caution banner</Banner>
+<Banner color="error" icon={<Attention />} p={2} mb={1}>Error banner</Banner>
+<Banner color="caution" icon={<Warning />} p={2}>Caution banner</Banner>
 ```
 
 ## BlockLink
@@ -483,13 +483,13 @@ global.mountWithTheme = (node, options) => {
 
 ```.jsx
 <Stamp color="primary" mr={2}>
-  <Icon name="Pin" size={16} mr={1} /> primary stamp
+  <Pin size={16} mr={1} /> primary stamp
 </Stamp>
 <Stamp color="error" mr={2}>
-  <Icon name="Warning" size={16} mr={1} /> error stamp
+  <Warning size={16} mr={1} /> error stamp
 </Stamp>
 <Stamp color="caution" bg="background.dark" borderColor="caution">
-  <Icon name="Information" size={16} mr={1} /> just booked
+  <Information size={16} mr={1} /> just booked
 </Stamp>
 ```
 

@@ -33,6 +33,7 @@ export default [
       { name: 'Hug', path: '/Hug' },
       { name: 'Icon', path: '/Icon' },
       { name: 'IconButton', path: '/IconButton' },
+      { name: 'IconField', path: '/IconField' },
       { name: 'Image', path: '/Image' },
       { name: 'Input', path: '/Input' },
       { name: 'InputGroup', path: '/InputGroup' },

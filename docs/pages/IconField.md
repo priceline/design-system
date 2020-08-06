@@ -4,7 +4,7 @@ Group Inputs and Selects with Icons.
 
 ```.jsx
 <IconField>
-  <Icon name='Calendar' color='blue' />
+  <Calendar color='primary' />
   <Input
     placeholder='Choose Date'
   />
@@ -16,23 +16,23 @@ Group Inputs and Selects with Icons.
   <Input
     placeholder='Choose Date'
   />
-  <Icon name='Calendar' color='blue' />
+  <Calendar color='primary' />
 </IconField>
 ```
 
 ```.jsx
 <IconField>
-  <Icon name='Calendar' color='blue' />
+  <Calendar color='primary' />
   <Input
     placeholder='Choose Date'
   />
-  <Icon name='Check' color='green' />
+  <Check color='secondary' />
 </IconField>
 ```
 
 ```.jsx
 <IconField>
-  <Icon name='Calendar' color='blue' />
+  <Calendar color='primary' />
   <Select>
     <option>Choose Date</option>
     <option>January 2019</option>
@@ -42,19 +42,26 @@ Group Inputs and Selects with Icons.
 
 The `IconField` component accepts children as its only props.
 It will parse children based on the `isField` and `isIcon` static properties.
-By default the design system `Input`, `Select`, and `Icon` components will work with the `IconField` component, but to allow other children to render, add an appropriate static property.
+By default, the design system's `Input` and `Select` and pcln-icon's named icon components will work with the `IconField` component, but to allow other children to render, add an appropriate static property.
 
 ```jsx
 import React from 'react'
-import { IconField, Icon } from 'pcln-design-system'
+import { IconField } from 'pcln-design-system'
+import { Calendar as CalendarIcon } from 'pcln-icons'
 import CustomInput from './CustomInput'
 
 CustomInput.isField = true
 
 export default (props) => (
   <IconField>
-    <Icon name='Calendar' />
+    <CalendarIcon />
     <CustomInput {...props} />
   </IconField>
 )
 ```
+
+### Related
+
+- [Icon](/Icon)
+- [Input](/Input)
+- [Select](/Select)
