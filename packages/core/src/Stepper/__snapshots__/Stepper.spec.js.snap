@@ -8,8 +8,8 @@ exports[`Stepper renders with children 1`] = `
 
 .c5 {
   color: #007aff;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
 }
 
 .c6 {

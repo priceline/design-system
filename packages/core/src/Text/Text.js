@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
-  textStyle,
+  display,
   fontSize,
   fontWeight,
-  textAlign,
+  height,
   lineHeight,
+  maxHeight,
+  maxWidth,
+  minHeight,
+  minWidth,
+  overflow,
   space,
+  textAlign,
+  textStyle,
   themeGet,
+  width,
 } from 'styled-system'
 
 import {
@@ -43,40 +51,59 @@ const Text = mapProps(({ align, ...props }) => ({
   textAlign: align,
   ...props,
 }))(styled.div`
+  ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) =>
     props.bg
       ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
       : ''}
-  ${applyVariations('Text')}
+  
+  ${display}
+  ${height}
+  ${maxHeight}
+  ${maxWidth}
+  ${minHeight}
+  ${minWidth}
+  ${overflow}
+  ${space}
+  ${width}
+
+  ${caps}
+  ${regular}
+  ${bold}
+
   ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${textAlign}
   ${lineHeight}
-  ${space}
-  ${caps}
-  ${regular}
-  ${bold}
   ${textShadow}
 `)
 
 Text.displayName = 'Text'
 
 Text.propTypes = {
-  ...textStyle.propTypes,
+  ...display.propTypes,
   ...fontSize.propTypes,
   ...fontWeight.propTypes,
-  ...textAlign.propTypes,
+  ...height.propTypes,
   ...lineHeight.propTypes,
+  ...maxHeight.propTypes,
+  ...maxWidth.propTypes,
+  ...minHeight.propTypes,
+  ...minWidth.propTypes,
+  ...overflow.propTypes,
   ...space.propTypes,
-  color: deprecatedColorValue(),
-  caps: PropTypes.bool,
-  regular: PropTypes.bool,
-  bold: PropTypes.bool,
-  enableTextShadow: PropTypes.bool,
-  textShadowSize: PropTypes.oneOf(['sm', 'md']),
+  ...textAlign.propTypes,
+  ...textStyle.propTypes,
+  ...width.propTypes,
   align: deprecatedPropType('textAlign'),
+  bold: PropTypes.bool,
+  caps: PropTypes.bool,
+  color: deprecatedColorValue(),
+  enableTextShadow: PropTypes.bool,
+  regular: PropTypes.bool,
+  textShadowSize: PropTypes.oneOf(['sm', 'md']),
 }
 
 Text.span = Text.withComponent('span')

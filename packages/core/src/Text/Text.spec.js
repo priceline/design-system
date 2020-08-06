@@ -55,6 +55,35 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('margin-top', theme.space[2] + 'px')
   })
 
+  test('display and overflow', () => {
+    const json = rendererCreateWithTheme(
+      <Text display='inline-block' overflow='none' />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('display', 'inline-block')
+    expect(json).toHaveStyleRule('overflow', 'none')
+  })
+
+  test('height and width', () => {
+    const json = rendererCreateWithTheme(
+      <Text height={150} width={200} />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('height', '150px')
+    expect(json).toHaveStyleRule('width', '200px')
+  })
+
+  test('min/max values', () => {
+    const json = rendererCreateWithTheme(
+      <Text minHeight={200} maxHeight={400} minWidth={200} maxWidth={400} />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('min-height', '200px')
+    expect(json).toHaveStyleRule('max-height', '400px')
+    expect(json).toHaveStyleRule('min-width', '200px')
+    expect(json).toHaveStyleRule('max-width', '400px')
+  })
+
   describe('deprecated props', () => {
     test('shims deprecated align prop', () => {
       const json = rendererCreateWithTheme(<Text align='center' />).toJSON()
