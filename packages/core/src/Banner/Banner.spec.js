@@ -2,6 +2,10 @@ import React from 'react'
 import { Banner, Text, Heading, theme } from '..'
 
 describe('Banner', () => {
+  const consoleError = console.error
+  console.error = jest.fn()
+  afterAll(() => (console.error = consoleError))
+
   test('renders with no props other than theme', () => {
     const json = rendererCreateWithTheme(<Banner />).toJSON()
     expect(json).toMatchSnapshot()

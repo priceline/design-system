@@ -255,7 +255,7 @@ exports[`Tooltip top center 1`] = `
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
-  background-color: #000;
+  background-color: #007aff;
   color: #fff;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
@@ -263,7 +263,7 @@ exports[`Tooltip top center 1`] = `
   position: absolute;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #000;
+  background: #007aff;
   text-align: center;
   bottom: -8px;
   left: 50%;
@@ -280,7 +280,7 @@ exports[`Tooltip top center 1`] = `
   height: 0;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #000 #000;
+  border-color: transparent transparent #007aff #007aff;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -309,7 +309,7 @@ exports[`Tooltip top center 1`] = `
 >
   <div
     className="c0"
-    color="white"
+    color="primary"
   >
     centered tooltip
   </div>
@@ -370,7 +370,7 @@ exports[`Tooltip top left 1`] = `
 >
   <div
     className="c0"
-    color="white"
+    color="primary"
   >
     left tooltip
   </div>
@@ -432,7 +432,7 @@ exports[`Tooltip top right 1`] = `
 >
   <div
     className="c0"
-    color="white"
+    color="error"
   >
     right tooltip
   </div>

@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box bg prop sets background color 1`] = `
-.c0 {
-  background-color: #0a0;
-}
-
-<div
-  className="c0"
-/>
-`;
-
 exports[`Box boxShadowSize prop sets box-shadow 1`] = `
 .c0 {
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16);

@@ -2,6 +2,10 @@ import React from 'react'
 import { Badge, theme } from '..'
 
 describe('Badge', () => {
+  const consoleError = console.error
+  console.error = jest.fn()
+  afterAll(() => (console.error = consoleError))
+
   test('renders', () => {
     const json = rendererCreateWithTheme(<Badge />).toJSON()
     expect(json).toMatchSnapshot()

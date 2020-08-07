@@ -2,6 +2,10 @@ import React from 'react'
 import { ToggleBadge, theme } from '..'
 
 describe('ToggleBadge', () => {
+  const consoleError = console.error
+  console.error = jest.fn()
+  afterAll(() => (console.error = consoleError))
+
   test('selected ToggleBadge renders with default props', () => {
     const json = rendererCreateWithTheme(<ToggleBadge selected />).toJSON()
     expect(json).toMatchSnapshot()
