@@ -6,7 +6,7 @@ import Logo from './Logo'
 import navigation from './navigation'
 
 const SideNav = () => (
-  <Box px={3} pb={5} color='text' bg='lightGray'>
+  <Box px={3} pb={5} color='background.light'>
     <Box px={3} pb={4}>
       <Link href='/'>
         <div>

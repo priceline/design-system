@@ -106,7 +106,8 @@ export const Description = (props) => (
 
 export const Code = styled.code`
   font-family: 'Roboto Mono', monospace;
-  ${color} ${fontSize};
+  color: ${(props) => getPaletteColor(props.color, 'light')(props)};
+  ${fontSize};
 `
 
 Code.defaultProps = {
