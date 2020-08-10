@@ -86,8 +86,11 @@ describe('FormField', () => {
   })
 
   describe('propTypes', () => {
-    const consoleError = console.error
-    beforeEach(() => (console.error = jest.fn()))
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
     afterEach(() => (console.error = consoleError))
 
     test('warns when field is missing', () => {

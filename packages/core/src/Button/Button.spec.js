@@ -112,8 +112,11 @@ describe('Button', () => {
   })
 
   describe('deprecated prop types', () => {
-    const consoleError = console.error
-    beforeEach(() => (console.error = jest.fn()))
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
     afterEach(() => (console.error = consoleError))
 
     test('shims deprecated fullWidth prop', () => {
