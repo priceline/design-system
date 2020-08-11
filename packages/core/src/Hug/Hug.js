@@ -30,7 +30,11 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
 
   if (React.isValidElement(icon)) {
     iconClone = React.cloneElement(icon, {
-      style: { display: iconDisplay, mr: 2, mt: '-2px', mb: '2px', size: 24 },
+      style: { display: iconDisplay },
+      mr: 2,
+      mt: '-2px',
+      mb: '2px',
+      size: 24,
     })
   }
 
