@@ -6,19 +6,23 @@
  * @param props
  * @returns {{ 'box-shadow': string }}
  */
+
+import { boxShadows as defaultBoxShadowTheme } from '../theme'
+
 export default (props) => {
+  const boxShadowTheme = props.theme.boxShadows || defaultBoxShadowTheme
   const boxShadows = {
     sm: {
-      'box-shadow': props.theme.boxShadows[0],
+      'box-shadow': boxShadowTheme[0],
     },
     md: {
-      'box-shadow': props.theme.boxShadows[1],
+      'box-shadow': boxShadowTheme[1],
     },
     lg: {
-      'box-shadow': props.theme.boxShadows[2],
+      'box-shadow': boxShadowTheme[2],
     },
     xl: {
-      'box-shadow': props.theme.boxShadows[3],
+      'box-shadow': boxShadowTheme[3],
     },
   }
   return boxShadows[props.boxShadowSize]
