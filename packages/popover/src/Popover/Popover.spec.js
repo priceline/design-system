@@ -1,6 +1,6 @@
 import React from 'react'
-import { fireEvent, wait, getByRole } from '@testing-library/react'
-import Popover from '../src'
+import { fireEvent, getByRole } from '@testing-library/react'
+import Popover from './Popover'
 import { Box, Button } from 'pcln-design-system'
 
 // eslint-disable-next-line react/prop-types
@@ -100,7 +100,7 @@ describe('Popover', () => {
       expect(getByText('Hello there!')).toBeTruthy()
     })
 
-    fit('onOpen event', () => {
+    it('onOpen event', () => {
       const mockOnOpen = jest.fn()
       const { getByText } = renderWithTheme(
         <Popover {...popoverProps} onOpen={mockOnOpen}>
@@ -133,33 +133,33 @@ describe('Popover', () => {
   })
 
   describe('UI Positioning', () => {
-    it('Bottom', async () => {
+    it('Bottom', () => {
       const { getByText } = renderWithTheme(
         <Popover {...popoverProps} placement='bottom'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
-      await wait(() => fireEvent.click(getByText(triggerButtonText)))
+      fireEvent.click(getByText(triggerButtonText))
       expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
     })
 
-    it('Bottom End', async () => {
+    it('Bottom End', () => {
       const { getByText } = renderWithTheme(
         <Popover {...popoverProps} placement='bottom-end'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
-      await wait(() => fireEvent.click(getByText(triggerButtonText)))
+      fireEvent.click(getByText(triggerButtonText))
       expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
     })
 
-    it('Bottom Start', async () => {
+    it('Bottom Start', () => {
       const { getByText } = renderWithTheme(
         <Popover {...popoverProps} placement='bottom-start'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
-      await wait(() => fireEvent.click(getByText(triggerButtonText)))
+      fireEvent.click(getByText(triggerButtonText))
       expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
     })
   })
