@@ -163,4 +163,32 @@ describe('Popover', () => {
       expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
     })
   })
+
+  describe('colors', () => {
+    it('renders with background.lightest color as default', () => {
+      const { getByText, getByRole } = renderWithTheme(
+        <Popover {...popoverProps}>
+          <Button>{triggerButtonText}</Button>
+        </Popover>
+      )
+
+      fireEvent.click(getByText(triggerButtonText))
+      expect(getByRole('dialog').firstChild.firstChild).toHaveStyle({
+        'background-color': '#FFF',
+      })
+    })
+
+    it('renders with error color as default', () => {
+      const { getByText, getByRole } = renderWithTheme(
+        <Popover {...popoverProps} color='error'>
+          <Button>{triggerButtonText}</Button>
+        </Popover>
+      )
+
+      fireEvent.click(getByText(triggerButtonText))
+      expect(getByRole('dialog').firstChild.firstChild).toHaveStyle({
+        'background-color': '#C00',
+      })
+    })
+  })
 })
