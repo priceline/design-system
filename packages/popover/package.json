@@ -25,10 +25,13 @@
       "html"
     ],
     "setupFilesAfterEnv": [
-      "../../test-setup.js"
+      "../../test/test-setup.js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "../../test"
     ],
     "testMatch": [
-      "<rootDir>/test/**/*.js",
       "<rootDir>/src/**/*.spec.js"
     ]
   },

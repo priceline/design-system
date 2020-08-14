@@ -34,12 +34,14 @@ class Popover extends Component {
     this.setState({ isPopoverOpen: false }, () => {
       this.setFocusToRef(this.triggerRef)
     })
+    this.props.onClose && this.props.onClose()
   }
 
   handleOpen() {
     this.setState({ isPopoverOpen: true }, () => {
       this.setFocusToRef(this.contentRef)
     })
+    this.props.onOpen && this.props.onOpen()
   }
 
   setFocusToRef(ref) {
@@ -109,6 +111,8 @@ Popover.propTypes = {
   isOpen: PropTypes.bool,
   openOnMount: PropTypes.bool,
   children: PropTypes.node,
+  onOpen: PropTypes.func,
+  onClose: PropTypes.func,
 }
 
 Popover.defaultProps = {
