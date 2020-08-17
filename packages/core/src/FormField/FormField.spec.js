@@ -13,7 +13,7 @@ describe('FormField', () => {
     const json = rendererCreateWithTheme(
       <FormField>
         <Label>Email Address</Label>
-        <Input id='email' />
+        <Input id='email' name='email' />
       </FormField>
     ).toJSON()
     expect(json).toMatchSnapshot()
@@ -24,7 +24,7 @@ describe('FormField', () => {
       <FormField>
         <Label>Email Address</Label>
         <Icon name='Email' />
-        <Input name='email' />
+        <Input id='email' name='email' />
       </FormField>
     ).toJSON()
     expect(json).toMatchSnapshot()
@@ -33,6 +33,7 @@ describe('FormField', () => {
   test('renders with Select ', () => {
     const json = rendererCreateWithTheme(
       <FormField>
+        <Label>Pick Option</Label>
         <Select />
       </FormField>
     ).toJSON()
@@ -42,6 +43,7 @@ describe('FormField', () => {
   test('renders with Select and Icon', () => {
     const json = rendererCreateWithTheme(
       <FormField>
+        <Label>Pick Email Address</Label>
         <Icon name='Email' />
         <Select />
       </FormField>
@@ -54,7 +56,7 @@ describe('FormField', () => {
       <FormField>
         <Label autoHide>Email</Label>
         <Icon name='Email' />
-        <Input name='email' />
+        <Input id='email' name='email' />
       </FormField>
     ).toJSON()
     expect(json).toMatchSnapshot()
@@ -65,7 +67,7 @@ describe('FormField', () => {
       <FormField>
         <Label autoHide>Email</Label>
         <Icon name='Email' />
-        <Input name='email' value='hello@example.com' />
+        <Input id='email' name='email' value='hello@example.com' />
       </FormField>
     ).toJSON()
     const [label] = json.children
@@ -76,7 +78,7 @@ describe('FormField', () => {
     const json = rendererCreateWithTheme(
       <FormField>
         <Label />
-        <Input name='hello' />
+        <Input id='hello' name='hello' />
       </FormField>
     ).toJSON()
     const [label] = json.children
@@ -84,9 +86,14 @@ describe('FormField', () => {
   })
 
   describe('propTypes', () => {
-    test('warns when field is missing', () => {
-      const spy = jest.spyOn(global.console, 'error')
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
+    afterEach(() => (console.error = consoleError))
 
+    test('warns when field is missing', () => {
       PropTypes.checkPropTypes(
         FormField.propTypes,
         {
@@ -96,23 +103,28 @@ describe('FormField', () => {
         'children',
         'FormField'
       )
-      expect(spy).toHaveBeenCalledTimes(1)
-      spy.mockRestore()
+      expect(console.error).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed children type: No form field found for FormField. Please include an Input, Select, or other form field as a child.'
+        )
+      )
     })
 
     test('warns when Label is missing', () => {
-      const spy = jest.spyOn(global.console, 'error')
       PropTypes.checkPropTypes(
         FormField.propTypes,
         {
           // eslint-disable-next-line react/jsx-key
-          children: [<Input name='test' />],
+          children: [<Input id='test' name='test' />],
         },
         'children',
         'FormField'
       )
-      expect(spy).toHaveBeenCalledTimes(1)
-      spy.mockRestore()
+      expect(console.error).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed children type: No label found for FormField. Please include a Label as a child.'
+        )
+      )
     })
   })
 })

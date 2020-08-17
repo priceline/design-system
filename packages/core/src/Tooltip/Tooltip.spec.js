@@ -9,7 +9,7 @@ describe('Tooltip', () => {
 
   test('top left', () => {
     const json = rendererCreateWithTheme(
-      <Tooltip bg='blue' color='white' top left>
+      <Tooltip color='primary' top left>
         left tooltip
       </Tooltip>
     ).toJSON()
@@ -17,7 +17,7 @@ describe('Tooltip', () => {
   })
   test('top center', () => {
     const json = rendererCreateWithTheme(
-      <Tooltip bg='black' color='white' top center>
+      <Tooltip color='primary' top center>
         centered tooltip
       </Tooltip>
     ).toJSON()
@@ -25,7 +25,7 @@ describe('Tooltip', () => {
   })
   test('top right', () => {
     const json = rendererCreateWithTheme(
-      <Tooltip bg='red' color='white' top right>
+      <Tooltip color='error' top right>
         right tooltip
       </Tooltip>
     ).toJSON()
@@ -54,5 +54,27 @@ describe('Tooltip', () => {
       </Tooltip>
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+
+  describe('deprecated prop types', () => {
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
+    afterEach(() => (console.error = consoleError))
+
+    test('bg prop warns', () => {
+      rendererCreateWithTheme(
+        <Tooltip bg='blue' top left>
+          left tooltip
+        </Tooltip>
+      ).toJSON()
+      expect(console.error).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `bg` prop is deprecated and will be removed in a future release. Please use `color` instead.'
+        )
+      )
+    })
   })
 })

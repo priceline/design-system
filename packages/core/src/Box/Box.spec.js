@@ -46,30 +46,28 @@ describe('Box', () => {
     expect(json).toHaveStyleRule('color', theme.colors.blue)
   })
 
-  test('bg prop sets background color', () => {
-    const json = rendererCreateWithTheme(<Box bg='green' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.green)
-  })
-
   test('boxShadowSize prop sets box-shadow', () => {
     const json = rendererCreateWithTheme(<Box boxShadowSize='sm' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('box-shadow', theme.boxShadows[0])
   })
 
-  test('align prop triggers warning', () => {
-    console.error = jest.fn()
+  describe('deprecated prop types', () => {
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
+    afterEach(() => (console.error = consoleError))
 
-    rendererCreateWithTheme(<Box align='center' />).toJSON()
-
-    expect(
-      console.error.mock.calls
-        .toString()
-        .indexOf(
-          'The Box `align` prop will deprecated. Please use Text instead.'
-        ) !== -1
-    )
-    console.error.mockRestore()
+    test('bg prop sets background color and warns', () => {
+      const json = rendererCreateWithTheme(<Box bg='green' />).toJSON()
+      expect(json).toHaveStyleRule('background-color', theme.colors.green)
+      expect(console.error).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `bg` prop is deprecated and will be removed in a future release. Please use `color` instead.'
+        )
+      )
+    })
   })
 })

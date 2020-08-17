@@ -112,6 +112,7 @@ exports[`FormField renders 1`] = `
         ]
       }
       id="email"
+      name="email"
       style={
         Object {
           "paddingBottom": 8,
@@ -472,14 +473,14 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c1 {
+.c2 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -491,7 +492,7 @@ exports[`FormField renders with Select  1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -500,12 +501,29 @@ exports[`FormField renders with Select  1`] = `
   color: #4f6f8f;
 }
 
-.c4 {
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  margin-bottom: -20px;
+  margin-left: 12px;
+  padding-top: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.c5 {
   outline: none;
   pointer-events: none;
 }
 
-.c2 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -526,32 +544,51 @@ exports[`FormField renders with Select  1`] = `
   font-size: 16px;
 }
 
-.c2:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
 }
 
-.c2::-ms-expand {
+.c3::-ms-expand {
   display: none;
 }
 
 @media screen and (min-width:40em) {
-  .c2 {
+  .c3 {
     font-size: 14px;
   }
 }
 
 <div>
-  <div
+  <label
     className="c0"
+    color="text.light"
+    fontSize={10}
+    fontWeight="bold"
+    style={
+      Object {
+        "height": 20,
+        "opacity": 1,
+        "pointerEvents": "none",
+        "position": "relative",
+        "transitionDuration": ".1s",
+        "transitionProperty": "opacity",
+        "width": "calc(100% - 12px)",
+      }
+    }
+  >
+    Pick Option
+  </label>
+  <div
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
       width={1}
     >
       <select
-        className="c2 "
+        className="c3 "
         fontSize={
           Array [
             2,
@@ -561,10 +598,10 @@ exports[`FormField renders with Select  1`] = `
         }
         style={
           Object {
-            "paddingBottom": 14,
+            "paddingBottom": 8,
             "paddingLeft": undefined,
             "paddingRight": undefined,
-            "paddingTop": 14,
+            "paddingTop": 20,
             "transitionDuration": ".1s",
             "transitionProperty": "padding-top, padding-bottom",
           }
@@ -572,7 +609,7 @@ exports[`FormField renders with Select  1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c4 c5"
         color="text.light"
         fill="currentcolor"
         focusable={false}
@@ -592,14 +629,14 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 {
+.c5 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -611,14 +648,14 @@ exports[`FormField renders with Select and Icon 1`] = `
   align-items: center;
 }
 
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c6 {
+.c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -627,20 +664,37 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
 }
 
-.c2 {
-  outline: none;
-}
-
 .c3 {
   outline: none;
 }
 
-.c7 {
+.c4 {
+  outline: none;
+}
+
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  margin-bottom: -20px;
+  margin-left: 40px;
+  padding-top: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.c8 {
   outline: none;
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -661,29 +715,48 @@ exports[`FormField renders with Select and Icon 1`] = `
   font-size: 16px;
 }
 
-.c5:focus {
+.c6:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
 }
 
-.c5::-ms-expand {
+.c6::-ms-expand {
   display: none;
 }
 
 @media screen and (min-width:40em) {
-  .c5 {
+  .c6 {
     font-size: 14px;
   }
 }
 
 <div>
-  <div
+  <label
     className="c0"
+    color="text.light"
+    fontSize={10}
+    fontWeight="bold"
+    style={
+      Object {
+        "height": 20,
+        "opacity": 1,
+        "pointerEvents": "none",
+        "position": "relative",
+        "transitionDuration": ".1s",
+        "transitionProperty": "opacity",
+        "width": "calc(100% - 40px)",
+      }
+    }
+  >
+    Pick Email Address
+  </label>
+  <div
+    className="c1"
   >
     <svg
       aria-hidden={true}
-      className="c1 c2 c3"
+      className="c2 c3 c4"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -711,11 +784,11 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
     </svg>
     <div
-      className="c4"
+      className="c5"
       width={1}
     >
       <select
-        className="c5 "
+        className="c6 "
         fontSize={
           Array [
             2,
@@ -725,10 +798,10 @@ exports[`FormField renders with Select and Icon 1`] = `
         }
         style={
           Object {
-            "paddingBottom": 14,
+            "paddingBottom": 8,
             "paddingLeft": 40,
             "paddingRight": undefined,
-            "paddingTop": 14,
+            "paddingTop": 20,
             "transitionDuration": ".1s",
             "transitionProperty": "padding-top, padding-bottom",
           }
@@ -736,7 +809,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c6 c7"
+        className="c7 c8"
         color="text.light"
         fill="currentcolor"
         focusable={false}

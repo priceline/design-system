@@ -111,10 +111,22 @@ describe('Button', () => {
     })
   })
 
-  describe('deprecated props', () => {
+  describe('deprecated prop types', () => {
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
+    afterEach(() => (console.error = consoleError))
+
     test('shims deprecated fullWidth prop', () => {
       const json = rendererCreateWithTheme(<Button fullWidth />).toJSON()
       expect(json).toHaveStyleRule('width', '100%')
+      expect(console.error).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.'
+        )
+      )
     })
   })
 })

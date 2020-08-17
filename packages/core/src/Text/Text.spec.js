@@ -84,10 +84,22 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('max-width', '400px')
   })
 
-  describe('deprecated props', () => {
+  describe('deprecated prop types', () => {
+    let consoleError
+    beforeEach(() => {
+      consoleError = console.error
+      console.error = jest.fn()
+    })
+    afterEach(() => (console.error = consoleError))
+
     test('shims deprecated align prop', () => {
       const json = rendererCreateWithTheme(<Text align='center' />).toJSON()
       expect(json).toHaveStyleRule('text-align', 'center')
+      expect(console.error).toHaveBeenCalledWith(
+        expect.stringContaining(
+          'Warning: Failed prop type: The `align` prop is deprecated and will be removed in a future release. Please use `textAlign` instead.'
+        )
+      )
     })
   })
 })

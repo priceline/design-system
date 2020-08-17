@@ -3,6 +3,13 @@ import React from 'react'
 import { Stamp, theme } from '..'
 
 describe('Stamp', () => {
+  let consoleError
+  beforeEach(() => {
+    consoleError = console.error
+    console.error = jest.fn()
+  })
+  afterEach(() => (console.error = consoleError))
+
   test('renders', () => {
     const json = rendererCreateWithTheme(<Stamp />).toJSON()
     expect(json).toMatchSnapshot()
