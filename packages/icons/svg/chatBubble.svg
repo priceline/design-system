@@ -3,6 +3,6 @@
     <title>chatBubble</title>
     <g id="chatBubble" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         
-        <path d="M20,2 L4,2 C2.9,2 2,2.9 2,4 L2,22 L6,18 L20,18 C21.1,18 22,17.1 22,16 L22,4 C22,2.9 21.1,2 20,2 Z" id="shape" fill="#001833"></path>
+        <path d="M20,2 L4,2 C2.9,2 2,2.9 2,4 L2,22 L6,18 L20,18 C21.1,18 22,17.1 22,16 L22,4 C22,2.9 21.1,2 20,2 Z"  fill="#001833"></path>
     </g>
 </svg>
