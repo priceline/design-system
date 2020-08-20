@@ -173,6 +173,19 @@ export const rightWithOverlayOnScrollPosition = () => (
   </Flex>
 )
 
+export const hideArrow = () => (
+  <Popover
+    renderContent={SimpleTextContent}
+    placement='bottom'
+    ariaLabel='Test Popover'
+    idx={1}
+    width={150}
+    hideArrow
+  >
+    <Button>Popover</Button>
+  </Popover>
+)
+
 const StyledBox = styled(Box)`
   border-top: 1px solid ${getPaletteColor('border.base')};
 `

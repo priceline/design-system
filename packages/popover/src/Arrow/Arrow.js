@@ -17,6 +17,7 @@ const PopoverArrow = ({
     borderColor={borderColor}
     color={color}
     aria-hidden='true'
+    data-testid='popover-arrow'
   >
     <div ref={arrowProps.ref} />
   </Arrow>
