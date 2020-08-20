@@ -72,6 +72,7 @@ class PopoverContent extends Component {
       placement,
       renderContent,
       trapFocus,
+      hideArrow,
     } = this.props
     const styleProps = {
       borderColor: this.getBorderColorName(
@@ -128,12 +129,14 @@ class PopoverContent extends Component {
                   {content}
                 </Content>
               </ContentContainer>
-              <PopoverArrow
-                arrowProps={arrowProps}
-                placement={placement}
-                color={color}
-                borderColor={styleProps.borderColor}
-              />
+              {!hideArrow && (
+                <PopoverArrow
+                  arrowProps={arrowProps}
+                  placement={placement}
+                  color={color}
+                  borderColor={styleProps.borderColor}
+                />
+              )}
             </PopperGuide>
           )}
         </Popper>
@@ -187,6 +190,7 @@ PopoverContent.propTypes = {
   width: PropTypes.number,
   overlayOpacity: PropTypes.number,
   trapFocus: PropTypes.bool,
+  hideArrow: PropTypes.bool,
 }
 
 PopoverContent.defaultProps = {
