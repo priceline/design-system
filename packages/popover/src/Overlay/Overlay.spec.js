@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent } from '@testing-library/react'
-import Overlay from '../src/Overlay'
+import Overlay from './Overlay'
 
 const overlayProps = {
   overlayOpacity: 0.3,

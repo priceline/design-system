@@ -25,8 +25,8 @@ import {
   ThemeProvider,
 } from 'pcln-design-system'
 import Component from '@reach/component-component'
-import Slider from '../../slider/src'
-import Popover from '../src'
+import Slider from '../../../slider/src'
+import Popover from './Popover'
 
 export default {
   title: 'Popover',

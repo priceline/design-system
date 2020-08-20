@@ -64,6 +64,7 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
       Trigger Button
     </button>
   </div>
+   
 </DocumentFragment>
 `;
 
@@ -160,9 +161,8 @@ exports[`Popover UI Positioning Bottom 1`] = `
 <div
   aria-describedby="dialog-description-1"
   class="c0"
-  data-placement="bottom"
   role="dialog"
-  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
   width="400"
 >
   <section
@@ -191,7 +191,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
     aria-hidden="true"
     class="c3"
     color="background.lightest"
-    data-placement="bottom"
+    data-placement="top"
   >
     <div />
   </span>
@@ -291,9 +291,8 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 <div
   aria-describedby="dialog-description-1"
   class="c0"
-  data-placement="bottom-end"
   role="dialog"
-  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
   width="400"
 >
   <section
@@ -322,7 +321,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
     aria-hidden="true"
     class="c3"
     color="background.lightest"
-    data-placement="bottom-end"
+    data-placement="top"
   >
     <div />
   </span>
@@ -422,9 +421,8 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 <div
   aria-describedby="dialog-description-1"
   class="c0"
-  data-placement="bottom-start"
   role="dialog"
-  style="position: fixed; top: 0px; left: 0px; transform: translate3d(NaNpx, NaNpx, 0); will-change: transform;"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
   width="400"
 >
   <section
@@ -453,7 +451,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
     aria-hidden="true"
     class="c3"
     color="background.lightest"
-    data-placement="bottom-start"
+    data-placement="top"
   >
     <div />
   </span>

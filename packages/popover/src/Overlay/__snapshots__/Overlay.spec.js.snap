@@ -20,6 +20,7 @@ exports[`Background Overlay Active overlay 1`] = `
     class="c0"
     tabindex="-1"
   />
+   
 </div>
 `;
 
@@ -43,5 +44,6 @@ exports[`Background Overlay Inactive overlay 1`] = `
     class="c0"
     tabindex="-1"
   />
+   
 </div>
 `;
