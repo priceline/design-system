@@ -53,7 +53,7 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "hoist-non-react-statics": "^3.3.2",
     "husky": "^4.2.5",
-    "jest": "^26.0.1",
+    "jest": "^26.4.1",
     "jest-styled-components": "^6.3.4",
     "lerna": "^3.22.0",
     "lint-staged": "^10.2.7",

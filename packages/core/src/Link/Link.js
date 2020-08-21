@@ -9,7 +9,6 @@ import {
   deprecatedColorValue,
   getSCMigrationRef,
   refPropType,
-  mapProps,
 } from '../utils'
 
 const variations = {
@@ -39,15 +38,15 @@ const variations = {
   `,
 }
 
-const Link = mapProps(({ target, dsRef, ...props }) => ({
+const Link = styled.a.attrs(({ target, dsRef, ...props }) => ({
   [getSCMigrationRef()]: dsRef,
   rel: target === '_blank' ? 'noopener' : null,
   target,
   ...props,
-}))(styled.a`
+}))`
   ${width} ${space};
   ${applyVariations('Link', variations)}
-`)
+`
 
 Link.displayName = 'Link'
 
