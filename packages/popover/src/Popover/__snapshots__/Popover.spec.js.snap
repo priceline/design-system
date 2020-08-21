@@ -40,7 +40,6 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   class="c0"
 >
   <button
-    aria-label="Top Popover"
     class="c1"
     color="primary"
   >

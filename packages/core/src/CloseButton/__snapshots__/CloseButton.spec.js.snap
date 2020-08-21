@@ -28,9 +28,16 @@ exports[`CloseButton renders without props 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
+  background-color: #007aff;
+  color: #fff;
   padding: 0;
   background-color: transparent;
   color: inherit;
+}
+
+.c0:hover {
+  background-color: #049;
+  color: #fff;
 }
 
 .c0:disabled {
@@ -52,7 +59,9 @@ exports[`CloseButton renders without props 1`] = `
 }
 
 <button
+  aria-label="close"
   className="c0"
+  color="primary"
   size={24}
   title="close"
 >
