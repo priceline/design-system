@@ -7,7 +7,7 @@
     "changed": "lerna changed",
     "diff": "lerna diff",
     "publish": "lerna publish",
-    "test": "jest",
+    "test": "jest --verbose --coverage",
     "coverage": "jest --coverage",
     "codecov": "npx codecov",
     "lint": "eslint .",

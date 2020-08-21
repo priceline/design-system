@@ -1,77 +1,187 @@
 import React from 'react'
+import { render } from 'testing-library'
+
+import styled from 'styled-components'
+
 import { Button, createTheme } from '..'
 
 const theme = createTheme()
 
+const StyledButton = styled(Button)`
+  padding: 100px;
+`
+
+const consoleError = console.error
+afterEach(() => {
+  console.error = consoleError
+})
+
 describe('Button', () => {
-  test('renders', () => {
-    const json = rendererCreateWithTheme(<Button />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+  it('should render correctly with no props', () => {
+    const { getByText } = render(<Button>BUTTON</Button>)
 
-  test('size small sets height and font-size', () => {
-    const json = rendererCreateWithTheme(<Button size='small' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('font-size', '12px')
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
-    expect(json).toHaveStyleRule('color', theme.colors.white)
-  })
+    const button = getByText('BUTTON')
 
-  test('size medium sets height and font-size', () => {
-    const json = rendererCreateWithTheme(<Button size='medium' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('font-size', '14px')
-  })
+    expect(button).toHaveStyleRule(
+      'background-color',
+      theme.palette.primary.base
+    )
+    expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
 
-  test('size large sets height and font-size', () => {
-    const json = rendererCreateWithTheme(<Button size='large' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('font-size', '16px')
-  })
-
-  test('width prop sets width to 100%', () => {
-    const json = rendererCreateWithTheme(<Button width={1} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('width', '100%')
-  })
-
-  test('disabled prop sets', () => {
-    const json = rendererCreateWithTheme(<Button disabled />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', '#e8f2ff')
-  })
-
-  test('without disabled prop sets', () => {
-    const json = rendererCreateWithTheme(<Button />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.darkBlue, {
+    expect(button).toHaveStyleRule(
+      'background-color',
+      theme.palette.primary.dark,
+      {
+        modifier: ':hover',
+      }
+    )
+    expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
       modifier: ':hover',
     })
   })
 
-  test('with title prop', () => {
-    const title = 'Hello world'
-    const { asFragment, getByTitle } = renderWithTheme(<Button title={title} />)
-    expect(asFragment()).toMatchSnapshot()
-    expect(getByTitle(title)).toHaveAttribute('aria-label', title)
+  it('should render correctly when disabled', () => {
+    const { getByText } = render(<Button disabled>BUTTON</Button>)
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule(
+      'background-color',
+      theme.palette.primary.light
+    )
+    expect(button).toHaveStyleRule('color', theme.palette.text.base)
+    expect(button).toHaveStyleRule('cursor', 'not-allowed', {
+      modifier: ':disabled',
+    })
+
+    expect(button).toHaveStyleRule(
+      'background-color',
+      theme.palette.primary.light,
+      {
+        modifier: ':hover',
+      }
+    )
+    expect(button).toHaveStyleRule('color', theme.palette.text.base)
   })
 
+  it('should render correctly for "size" prop', () => {
+    const { getByText, rerender } = render(<Button>BUTTON</Button>)
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule('font-size', '14px')
+    expect(button).toHaveStyleRule('padding', '9.5px 18px')
+
+    rerender(<Button size='small'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '12px')
+    expect(button).toHaveStyleRule('padding', '7px 12px')
+
+    rerender(<Button size='medium'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '14px')
+    expect(button).toHaveStyleRule('padding', '9.5px 18px')
+
+    rerender(<Button size='large'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '12px 22px')
+  })
+
+  it('should render correctly for "width" prop', () => {
+    const { getByText, rerender } = render(<Button>BUTTON</Button>)
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule('width', undefined)
+
+    rerender(<Button width={1}>BUTTON</Button>)
+    expect(button).toHaveStyleRule('width', '100%')
+
+    rerender(<Button width={1 / 2}>BUTTON</Button>)
+    expect(button).toHaveStyleRule('width', '50%')
+
+    rerender(<Button width={100}>BUTTON</Button>)
+    expect(button).toHaveStyleRule('width', '100px')
+
+    rerender(<Button width='3em'>BUTTON</Button>)
+    expect(button).toHaveStyleRule('width', '3em')
+  })
+
+  it('should render correctly for "title" prop', () => {
+    const { getByTitle } = render(<Button title='button title'>BUTTON</Button>)
+
+    expect(getByTitle('button title')).toHaveAttribute(
+      'aria-label',
+      'button title'
+    )
+  })
   describe('variations', () => {
+    describe('fill variation', () => {
+      it('should render correctly', () => {
+        const { getByText } = render(<Button variation='fill'>BUTTON</Button>)
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
+        expect(button).toHaveStyleRule(
+          'background-color',
+          theme.palette.primary.base
+        )
+
+        expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
+          modifier: ':hover',
+        })
+        expect(button).toHaveStyleRule(
+          'background-color',
+          theme.palette.primary.dark,
+          {
+            modifier: ':hover',
+          }
+        )
+      })
+
+      it('should render correctly when disabled', () => {
+        const { getByText } = render(
+          <Button variation='fill' disabled>
+            BUTTON
+          </Button>
+        )
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.text.base)
+        expect(button).toHaveStyleRule(
+          'background-color',
+          theme.palette.primary.light
+        )
+
+        expect(button).toHaveStyleRule(
+          'background-color',
+          theme.palette.primary.light,
+          {
+            modifier: ':hover',
+          }
+        )
+      })
+    })
     describe('outline variation', () => {
-      test('default render', () => {
-        const json = rendererCreateWithTheme(
-          <Button variation='outline' disabled={false} />
-        ).toJSON()
-        expect(json).toMatchSnapshot()
-        expect(json).toHaveStyleRule('color', theme.palette.primary.base)
-        expect(json).toHaveStyleRule('background-color', 'transparent')
-        expect(json).toHaveStyleRule('background-color', 'transparent', {
+      it('should render correctly', () => {
+        const { getByText } = render(
+          <Button variation='outline'>BUTTON</Button>
+        )
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.primary.base)
+        expect(button).toHaveStyleRule('background-color', 'transparent')
+        expect(button).toHaveStyleRule('background-color', 'transparent', {
           modifier: ':hover',
         })
-        expect(json).toHaveStyleRule('color', theme.palette.primary.dark, {
+        expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
-        expect(json).toHaveStyleRule(
+        expect(button).toHaveStyleRule(
           'box-shadow',
           `inset 0 0 0 2px ${theme.palette.primary.dark}`,
           {
@@ -80,53 +190,103 @@ describe('Button', () => {
         )
       })
 
-      test('disabled', () => {
-        const json = rendererCreateWithTheme(
-          <Button variation='outline' disabled />
-        ).toJSON()
-        expect(json).toMatchSnapshot()
-        expect(json).toHaveStyleRule('color', theme.palette.primary.light)
-        expect(json).toHaveStyleRule('background-color', 'transparent')
-      })
-    })
-  })
-
-  describe('link variation', () => {
-    test('renders with expected styles', () => {
-      const json = rendererCreateWithTheme(<Button variation='link' />).toJSON()
-      expect(json).toMatchSnapshot()
-      expect(json).toHaveStyleRule('color', theme.palette.primary.base)
-      expect(json).toHaveStyleRule('vertical-align', 'inherit')
-      expect(json).toHaveStyleRule('font-weight', '500')
-      expect(json).toHaveStyleRule('-webkit-font-smoothing', 'inherit')
-      expect(json).toHaveStyleRule('line-height', '1.4')
-      expect(json).toHaveStyleRule('padding', '0')
-      expect(json).toHaveStyleRule('background-color', 'transparent')
-      expect(json).toHaveStyleRule('color', theme.palette.primary.dark, {
-        modifier: ':hover',
-      })
-      expect(json).toHaveStyleRule('text-decoration', 'underline', {
-        modifier: ':hover',
-      })
-    })
-  })
-
-  describe('deprecated prop types', () => {
-    let consoleError
-    beforeEach(() => {
-      consoleError = console.error
-      console.error = jest.fn()
-    })
-    afterEach(() => (console.error = consoleError))
-
-    test('shims deprecated fullWidth prop', () => {
-      const json = rendererCreateWithTheme(<Button fullWidth />).toJSON()
-      expect(json).toHaveStyleRule('width', '100%')
-      expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed prop type: The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.'
+      it('should render correctly when disabled', () => {
+        const { getByText } = render(
+          <Button variation='outline' disabled>
+            BUTTON
+          </Button>
         )
-      )
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.primary.light)
+        expect(button).toHaveStyleRule('background-color', 'transparent')
+      })
+    })
+
+    describe('link variation', () => {
+      it('should render correctly', () => {
+        const { getByText } = render(<Button variation='link'>BUTTON</Button>)
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.primary.base)
+        expect(button).toHaveStyleRule('vertical-align', 'inherit')
+        expect(button).toHaveStyleRule('font-weight', '500')
+        expect(button).toHaveStyleRule('-webkit-font-smoothing', 'inherit')
+        expect(button).toHaveStyleRule('line-height', '1.4')
+        expect(button).toHaveStyleRule('padding', '0')
+        expect(button).toHaveStyleRule('background-color', 'transparent')
+        expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
+          modifier: ':hover',
+        })
+        expect(button).toHaveStyleRule('text-decoration', 'underline', {
+          modifier: ':hover',
+        })
+      })
+
+      it('should render correctly when disabled', () => {
+        const { getByText } = render(
+          <Button variation='link' disabled>
+            BUTTON
+          </Button>
+        )
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+          modifier: ':disabled',
+        })
+        expect(button).toHaveStyleRule(
+          'background-color',
+          theme.palette.background.base,
+          {
+            modifier: ':disabled',
+          }
+        )
+      })
+    })
+  })
+
+  describe('deprecated props', () => {
+    it('should shim deprecated "fullWidth" prop', () => {
+      console.error = jest.fn()
+
+      expect(() => {
+        const { getByText } = render(<Button fullWidth>BUTTON</Button>)
+
+        expect(getByText('BUTTON')).toHaveStyleRule('width', '100%')
+        expect(console.error).toHaveBeenCalledWith(
+          expect.stringContaining(
+            'Warning: Failed prop type: The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.'
+          )
+        )
+      }).not.toThrow()
+    })
+  })
+
+  // this test detects a current defect that will be fixed properly in DSv4
+  it.skip('should not lose base styles on "styled(Button)"', () => {
+    const { getByText } = render(<StyledButton>BUTTON</StyledButton>)
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule(
+      'background-color',
+      theme.palette.primary.base
+    )
+    expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
+    expect(button).toHaveStyleRule('padding', '100px')
+
+    expect(button).toHaveStyleRule(
+      'background-color',
+      theme.palette.primary.dark,
+      {
+        modifier: ':hover',
+      }
+    )
+    expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
+      modifier: ':hover',
     })
   })
 })

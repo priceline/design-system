@@ -8,9 +8,9 @@
   "scripts": {
     "prepare": "npm run clean && npm run build",
     "build": "npm-run-all -p build:*",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist/cjs",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --out-dir ./dist/esm",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
     "clean": "rimraf dist",
     "test": "jest"
   },
