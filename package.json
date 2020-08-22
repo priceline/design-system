@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "start": "start-storybook -p 8000",
     "storybook": "build-storybook -o docs/out/storybook",
+    "build-storybook": "build-storybook",
     "create-component": "npm run plop",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
