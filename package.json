@@ -8,7 +8,7 @@
     "diff": "lerna diff",
     "publish": "lerna publish",
     "test": "jest --verbose --coverage",
-    "coverage": "jest --coverage",
+    "test:ci": "jest --verbose --coverage --runInBand",
     "codecov": "npx codecov",
     "lint": "eslint .",
     "start": "start-storybook -p 8000",

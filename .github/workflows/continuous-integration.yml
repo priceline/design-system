@@ -7,8 +7,6 @@ on:
   push:
     branches:
       - '*'
-  pull_request:
-    branches: [master]
 
 jobs:
   build:
@@ -26,13 +24,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: npm install
-      - run: npm test
+      - run: npm test:ci
+      - run: npm run lint
 
       - name: Generate and upload coverage report
         if: ${{ matrix.node-version == '10.x' }}
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
-          npm install
-          npm test -- --coverage --runInBand
           npm run codecov
