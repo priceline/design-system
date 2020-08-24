@@ -8,6 +8,7 @@
   "scripts": {
     "prepare": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm-run-all -p build:babel:*",
     "clean": "rimraf dist components",
+    "build": "npm run clean && npm run build:svg && npm run build:index && npm run build:copy && npm-run-all -p build:babel:*",
     "build:svg": "svgr svg -d components",
     "build:index": "node ./create-index.js",
     "build:copy": "cp src/Icon.js src/Svg.js src/index.js components",

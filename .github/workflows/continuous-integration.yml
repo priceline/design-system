@@ -7,8 +7,6 @@ on:
   push:
     branches:
       - '*'
-  pull_request:
-    branches: [master]
 
 jobs:
   build:
@@ -25,14 +23,40 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - run: npm install
-      - run: npm test
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install dependencies and bootstrap lerna
+        run: npm install
+
+      - name: Run Unit Tests
+        run: npm run test:ci
+
+      - name: ESLint
+        run: npm run lint
 
       - name: Generate and upload coverage report
         if: ${{ matrix.node-version == '10.x' }}
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
-          npm install
-          npm test -- --coverage --runInBand
           npm run codecov
+
+      - name: Chromatic Storybook Review
+        if: ${{ matrix.node-version == '12.x' }}
+        uses: chromaui/action@v1
+
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitOnceUploaded: true
