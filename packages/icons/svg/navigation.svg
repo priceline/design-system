@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>navigation</title>
-    <g id="navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="shape" fill="#001833" points="12 2 4.5 20.29 5.21 21 12 18 18.79 21 19.5 20.29"></polygon>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon  fill="#001833" points="12 2 4.5 20.29 5.21 21 12 18 18.79 21 19.5 20.29"></polygon>
     </g>
 </svg>

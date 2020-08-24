@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>newRelease</title>
-    <g id="newRelease" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         
-        <path d="M23,12 L20.56,9.22 L20.9,5.54 L17.29,4.72 L15.4,1.54 L12,3 L8.6,1.54 L6.71,4.72 L3.1,5.53 L3.44,9.21 L1,12 L3.44,14.78 L3.1,18.47 L6.71,19.29 L8.6,22.47 L12,21 L15.4,22.46 L17.29,19.28 L20.9,18.46 L20.56,14.78 L23,12 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z" id="shape" fill="#001833"></path>
+        <path d="M23,12 L20.56,9.22 L20.9,5.54 L17.29,4.72 L15.4,1.54 L12,3 L8.6,1.54 L6.71,4.72 L3.1,5.53 L3.44,9.21 L1,12 L3.44,14.78 L3.1,18.47 L6.71,19.29 L8.6,22.47 L12,21 L15.4,22.46 L17.29,19.28 L20.9,18.46 L20.56,14.78 L23,12 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z"  fill="#001833"></path>
     </g>
 </svg>

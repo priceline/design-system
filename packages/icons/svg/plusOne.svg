@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>plusOne</title>
-    <g id="plusOne" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         
-        <path d="M10,8 L8,8 L8,12 L4,12 L4,14 L8,14 L8,18 L10,18 L10,14 L14,14 L14,12 L10,12 L10,8 Z M14.5,6.08 L14.5,7.9 L17,7.4 L17,18 L19,18 L19,5 L14.5,6.08 Z" id="shape" fill="#001833"></path>
+        <path d="M10,8 L8,8 L8,12 L4,12 L4,14 L8,14 L8,18 L10,18 L10,14 L14,14 L14,12 L10,12 L10,8 Z M14.5,6.08 L14.5,7.9 L17,7.4 L17,18 L19,18 L19,5 L14.5,6.08 Z"  fill="#001833"></path>
     </g>
 </svg>
