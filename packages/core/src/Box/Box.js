@@ -21,15 +21,7 @@ import {
   boxShadow,
 } from '../utils'
 
-const Box = styled.div`
-  ${display} ${height} ${maxHeight} ${maxWidth}
-  ${minHeight} ${minWidth} ${size} ${space} 
-  ${textAlign} ${width} 
-
-  ${applyVariations('Box')}
-  ${boxShadow}
-  ${color}
-`
+const Box = styled.div``
 
 Box.displayName = 'Box'
 
