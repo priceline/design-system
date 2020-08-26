@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Absolute, Icon, Text, Relative } from '..'
+import { Absolute, Text, Relative } from '..'
+import { Coupon as CouponIcon } from 'pcln-icons'
 
 describe('Relative', () => {
   test('renders with top, left and zIndex props', () => {
@@ -18,7 +19,7 @@ describe('Relative', () => {
     const json = rendererCreateWithTheme(
       <Relative top={10} left={0}>
         <Absolute top={10} right={0} zIndex={2}>
-          <Icon name='Coupon' />
+          <CouponIcon />
           <Text.span>EXCLUSIVE</Text.span>
         </Absolute>
       </Relative>

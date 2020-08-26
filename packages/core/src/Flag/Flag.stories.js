@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Card, Flag, Flex, Icon, Text } from '..'
+import { Box, Card, Flag, Flex, Text } from '..'
+import { Loyalty as LoyaltyIcon } from 'pcln-icons'
 
 storiesOf('Flag', module)
   .add('Default', () => (
@@ -70,7 +71,7 @@ storiesOf('Flag', module)
       <Card pb={3}>
         <Flag mt={2}>
           <Flex>
-            <Icon size={14} mr={1} name='Loyalty' />
+            <LoyaltyIcon size={14} mr={1} />
             <Text>Hello World</Text>
           </Flex>
         </Flag>

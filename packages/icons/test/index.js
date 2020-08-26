@@ -4,10 +4,9 @@ import TestRenderer from 'react-test-renderer'
 import {
   Airplane as AirplaneIcon,
   Accessible as AccessibleIcon,
-  Icon,
-} from '../'
+} from 'pcln-icons'
 
-import * as icons from '../'
+import * as icons from 'pcln-icons'
 const iconList = Object.keys(icons).map((key) => [key, icons[key]])
 
 test.each(iconList)('renders %s', (key, Component) => {
@@ -17,7 +16,7 @@ test.each(iconList)('renders %s', (key, Component) => {
 
 describe('Icon', () => {
   test('defaults title to name if not provided', () => {
-    const testRenderer = TestRenderer.create(<Icon name='Accessible' />)
+    const testRenderer = TestRenderer.create(<AccessibleIcon />)
     const testInstance = testRenderer.root
     expect(testInstance.findByType('title').children[0]).toBe('Accessible')
   })
@@ -91,11 +90,7 @@ describe('Icon', () => {
 
     test(`aria-labelledby has only titleId when 'desc' prop is missing in <Icon /> `, () => {
       const testRenderer = TestRenderer.create(
-        <Icon
-          name='Accessible'
-          title='Accessible Logo'
-          titleId='accessible-logo'
-        />
+        <AccessibleIcon title='Accessible Logo' titleId='accessible-logo' />
       )
       expect(testRenderer.toJSON().props['aria-labelledby']).toBe(
         'accessible-logo'
@@ -122,10 +117,8 @@ describe('Icon', () => {
     )
 
     test('Icon should render with no outline ', () => {
-      const namedJson = TestRenderer.create(<AirplaneIcon />).toJSON()
-      const json = TestRenderer.create(<Icon name='Airplane' />).toJSON()
+      const json = TestRenderer.create(<AirplaneIcon />).toJSON()
       expect(json).toHaveStyleRule('outline', 'none')
-      expect(namedJson).toHaveStyleRule('outline', 'none')
     })
   })
 })

@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { Absolute, Card, Flag, Icon, Image, Relative, Text } from '..'
+import { Absolute, Card, Flag, Image, Relative, Text } from '..'
+import { Close as CloseIcon } from 'pcln-icons'
 
 const TallCard = styled(Card)`
   height: 420px;
@@ -44,7 +45,7 @@ storiesOf('Absolute', module)
           vel sollicitudin lectus viverra. Curabitur sit amet fringilla velit.
         </Text>
         <Absolute top='10px' right='10px'>
-          <Icon name='close' color='Gray' size={24} />
+          <CloseIcon color='text.base' size={24} />
         </Absolute>
       </Relative>
     </Card>

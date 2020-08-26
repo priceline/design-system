@@ -2,19 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 
-import { Flex, Box, Text, Icon, Image, Heading } from '..'
+import { Flex, Box, Text, Image, Heading, getPaletteColor } from '..'
+import { Hotels as HotelsIcon } from 'pcln-icons'
 
 storiesOf('Layout Examples', module)
   .add('Grid', () => (
     <Box p={4}>
       <Flex wrap mx={-3}>
         <Box width={[1, 1 / 2]} px={3} mb={4}>
-          <Box bg='lightGray'>
+          <Box bg='background.light'>
             <Text>Hello</Text>
           </Box>
         </Box>
         <Box width={[1, 1 / 2]} px={3} mb={4}>
-          <Box bg='lightGray'>
+          <Box bg='background.light'>
             <Text>Hello</Text>
           </Box>
         </Box>
@@ -25,7 +26,7 @@ storiesOf('Layout Examples', module)
     <Flex>
       <Box px={3} width={1 / 4}>
         <Box
-          bg='lightGray'
+          bg='background.light'
           style={{
             minHeight: '50vh',
           }}
@@ -35,7 +36,7 @@ storiesOf('Layout Examples', module)
       </Box>
       <Box px={3} width={3 / 4}>
         <Box
-          bg='lightGray'
+          bg='background.light'
           style={{
             minHeight: '50vh',
           }}
@@ -46,8 +47,8 @@ storiesOf('Layout Examples', module)
     </Flex>
   ))
   .add('Navbar', () => (
-    <Flex p={2} alignItems='center' color='white' bg='blue'>
-      <Icon name='Hotel' mr={2} />
+    <Flex p={2} alignItems='center' color='primary'>
+      <HotelsIcon mr={2} />
       <Text bold mx={2}>
         Hello
       </Text>
@@ -68,7 +69,7 @@ storiesOf('Layout Examples', module)
   ))
 
 const Border = styled(Box)`
-  border: 1px solid ${(props) => props.theme.colors.lightGray};
+  border: 1px solid ${getPaletteColor('background.base')};
   border-radius: 3px;
 `
 

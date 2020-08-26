@@ -1,11 +1,12 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Text, Icon } from 'pcln-design-system'
+import { Box, Text } from 'pcln-design-system'
 import catNames from 'cat-names'
 import Component from '@reach/component-component'
 import { ThemeProvider } from 'pcln-design-system'
 import { Autocomplete, Label, Input, Menu, Item } from '../src'
+import { Pin as PinIcon } from 'pcln-icons'
 
 const cats = catNames.all
 const match = (item, value) => item.includes(value)
@@ -43,7 +44,7 @@ storiesOf('Autocomplete', module)
             <Menu>
               {cats.map((cat) => (
                 <Item key={cat} item={cat}>
-                  <Icon name='Pin' color='primary' mr={2} />
+                  <PinIcon color='primary' mr={2} />
                   <Text fontSize={0}>{cat}</Text>
                 </Item>
               ))}
@@ -76,7 +77,7 @@ storiesOf('Autocomplete', module)
               <Menu>
                 {cats.map((cat) => (
                   <Item key={cat} item={cat}>
-                    <Icon name='Pin' color='primary' mr={2} />
+                    <PinIcon color='primary' mr={2} />
                     <Text fontSize={0}>{cat}</Text>
                   </Item>
                 ))}
