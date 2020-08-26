@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Absolute, Card, Flag, Icon, Image, Relative, Text } from '..'
+import { Absolute, Card, Flag, Image, Relative, Text } from '..'
+import { Close as CloseIcon } from 'pcln-icons'
 
 storiesOf('Relative', module)
   .add('Around an Image and an absolutely positioned Flag', () => (
@@ -23,7 +24,7 @@ storiesOf('Relative', module)
           vel sollicitudin lectus viverra. Curabitur sit amet fringilla velit.
         </Text>
         <Absolute top='10px' right='10px'>
-          <Icon name='Close' color='gray' size={24} />
+          <CloseIcon color='text.base' size={24} />
         </Absolute>
       </Relative>
     </Card>

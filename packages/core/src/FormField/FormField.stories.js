@@ -1,12 +1,19 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Flex, Box, FormField, Label, Input, Icon, Select, Tooltip } from '..'
+import { Flex, Box, FormField, Label, Input, Select, Tooltip } from '..'
+import {
+  Check as CheckIcon,
+  Email as EmailIcon,
+  Pin as PinIcon,
+  Success as SuccessIcon,
+  Warning as WarningIcon,
+} from 'pcln-icons'
 
 storiesOf('FormField', module)
   .add('with Icon', () => (
     <FormField>
       <Label htmlFor='demo'>Email Address</Label>
-      <Icon name='Email' color='blue' />
+      <EmailIcon color='primary' />
       <Input
         type='email'
         id='email'
@@ -72,13 +79,13 @@ storiesOf('FormField', module)
         placeholder='hello@example.com'
         value='hello@example.com'
       />
-      <Icon name='Check' color='green' />
+      <CheckIcon color='secondary' />
     </FormField>
   ))
   .add('with Select', () => (
     <FormField>
       <Label htmlFor='dynamic-label-state-select'>State</Label>
-      <Icon name='Pin' color='blue' />
+      <PinIcon color='primary' />
       <Select id='dynamic-label-state-select' name='dynamic-label-state-select'>
         <option>New York</option>
         <option>New Jersey</option>
@@ -92,9 +99,9 @@ storiesOf('FormField', module)
         id='valid'
         name='valid'
         placeholder='hello@example.com'
-        color='green'
+        color='success'
       />
-      <Icon name='Success' color='green' />
+      <SuccessIcon color='success' />
     </FormField>
   ))
   .add('with error Tooltip', () => (
@@ -106,11 +113,11 @@ storiesOf('FormField', module)
           name='error-tooltip'
           placeholder='hello@example.com'
           aria-describedby='demo-error'
-          color='red'
+          color='error'
         />
-        <Icon name='Warning' color='red' />
+        <WarningIcon color='error' />
       </FormField>
-      <Tooltip id='demo-error' right color='white' bg='red'>
+      <Tooltip id='demo-error' right color='error'>
         Email address is required
       </Tooltip>
     </Box>

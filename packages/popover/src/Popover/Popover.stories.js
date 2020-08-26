@@ -19,7 +19,6 @@ import {
   CloseButton,
   Flex,
   getPaletteColor,
-  Icon,
   Link,
   Text,
   ThemeProvider,
@@ -27,6 +26,7 @@ import {
 import Component from '@reach/component-component'
 import Slider from '../../../slider/src'
 import Popover from './Popover'
+import { Graph as GraphIcon, Pin as PinIcon } from 'pcln-icons'
 
 export default {
   title: 'Popover',
@@ -243,7 +243,7 @@ const PriceGuidanceContent = ({ handleClose }) => (
     <Box p={3}>
       <Box p={2} pt={0} pb={3}>
         <Flex>
-          <Icon name='Graph' color='primary' size='32px' mr='2' />
+          <GraphIcon color='primary' size='32px' mr='2' />
           <Flex flexDirection='column'>
             <Text color='primary' fontSize='24px' bold>
               Price Guidance
@@ -257,7 +257,7 @@ const PriceGuidanceContent = ({ handleClose }) => (
       </Box>
       <StyledBox p={2} pb={0} pt={3}>
         <Flex>
-          <Icon name='Pin' color='text.base' size='32px' mr='2' />
+          <PinIcon color='text.base' size='32px' mr='2' />
           <Flex flexDirection='column'>
             <Text color='text.base' fontSize='14px' bold>
               New York City

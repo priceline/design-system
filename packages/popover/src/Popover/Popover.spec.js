@@ -22,6 +22,13 @@ const popoverProps = {
 const triggerButtonText = 'Trigger Button'
 
 describe('Popover', () => {
+  let consoleError
+  beforeEach(() => {
+    consoleError = console.error
+    console.error = jest.fn()
+  })
+  afterEach(() => (console.error = consoleError))
+
   describe('Trigger Element', () => {
     it('Renders trigger element and appends action props', () => {
       const { container } = renderWithTheme(
