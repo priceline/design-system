@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+          fetch-depth: 0
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -52,6 +53,11 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
           npm run codecov
+      
+      - name: Build Storybook
+        working-directory: ./
+        run: |
+          npm run storybook
 
       - name: Chromatic Storybook Review
         if: ${{ matrix.node-version == '12.x' }}
@@ -59,4 +65,5 @@ jobs:
 
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: ./docs/out/storybook 
           exitOnceUploaded: true
