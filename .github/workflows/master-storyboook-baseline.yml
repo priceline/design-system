@@ -1,12 +1,13 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# This workflow is to create a baseline for comparison in PRs via Chromatic
+# It is necessary due to our `Squash and merge` strategy, where the head commit changes and
+# Chromatic doesn't have a proper ref to compare changes to.
+# See https://www.chromatic.com/docs/ci#github-squash-rebase-merge-and-the-master-branch for more information
 
-name: Node.js CI
-
+name: Storybook Baseline for Chromatic
 on:
   push:
     branches:
-      - '*'
+      - 'master'
 
 jobs:
   build:
@@ -14,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -40,32 +41,17 @@ jobs:
 
       - name: Install dependencies and bootstrap lerna
         run: npm install
-      
+
       - name: Build Storybook
-        if: ${{ matrix.node-version == '12.x' }}
         working-directory: ./
         run: |
           npm run storybook
 
       - name: Chromatic Storybook Review
-        if: ${{ matrix.node-version == '12.x' }}
         uses: chromaui/action@v1
 
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: ./docs/out/storybook 
           exitOnceUploaded: true
-
-      - name: Run Unit Tests
-        run: npm run test:ci
-
-      - name: ESLint
-        run: npm run lint
-
-      - name: Generate and upload coverage report
-        if: ${{ matrix.node-version == '10.x' }}
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          npm run codecov
-    
+          autoAcceptChanges: true
