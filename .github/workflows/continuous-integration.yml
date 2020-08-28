@@ -40,6 +40,21 @@ jobs:
 
       - name: Install dependencies and bootstrap lerna
         run: npm install
+      
+      - name: Build Storybook
+        if: ${{ matrix.node-version == '12.x' }}
+        working-directory: ./
+        run: |
+          npm run storybook
+
+      - name: Chromatic Storybook Review
+        if: ${{ matrix.node-version == '12.x' }}
+        uses: chromaui/action@v1
+
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: ./docs/out/storybook 
+          exitOnceUploaded: true
 
       - name: Run Unit Tests
         run: npm run test:ci
@@ -53,17 +68,4 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
           npm run codecov
-      
-      - name: Build Storybook
-        working-directory: ./
-        run: |
-          npm run storybook
-
-      - name: Chromatic Storybook Review
-        if: ${{ matrix.node-version == '12.x' }}
-        uses: chromaui/action@v1
-
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          storybookBuildDir: ./docs/out/storybook 
-          exitOnceUploaded: true
+    
