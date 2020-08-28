@@ -41,19 +41,6 @@ jobs:
       - name: Install dependencies and bootstrap lerna
         run: npm install
 
-      - name: Run Unit Tests
-        run: npm run test:ci
-
-      - name: ESLint
-        run: npm run lint
-
-      - name: Generate and upload coverage report
-        if: ${{ matrix.node-version == '10.x' }}
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          npm run codecov
-      
       - name: Build Storybook
         working-directory: ./
         run: |
@@ -67,3 +54,18 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: ./docs/out/storybook 
           exitOnceUploaded: true
+
+      - name: Run Unit Tests
+        run: npm run test:ci
+
+      - name: ESLint
+        run: npm run lint
+
+      - name: Generate and upload coverage report
+        if: ${{ matrix.node-version == '10.x' }}
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          npm run codecov
+      
+      
