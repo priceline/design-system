@@ -1,6 +1,7 @@
 # This workflow is to create a baseline for comparison in PRs via Chromatic
 # It is necessary due to our `Squash and merge` strategy, where the head commit changes and
 # Chromatic doesn't have a proper ref to compare changes to.
+# See https://www.chromatic.com/docs/ci#github-squash-rebase-merge-and-the-master-branch for more information
 
 name: Storybook Baseline for Chromatic
 on:
