@@ -56,7 +56,7 @@ const createPalette = ({ palette = {}, ...theme }) => {
   return deepmerge(
     {
       primary: {
-        light: lightBlue,
+        light: darkRed,
         base: blue,
         dark: darkBlue,
       },
