@@ -3,7 +3,8 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Cartesian } from '@compositor/kit'
 
-import { Stamp, Icon, Text } from '..'
+import { Stamp, Text } from '..'
+import { Pin as PinIcon } from 'pcln-icons'
 
 const sizes = { small: 'small', medium: 'medium' }
 const variations = { outline: 'outline', fill: 'fill' }
@@ -31,7 +32,7 @@ storiesOf('Stamp', module)
     withInfo({
       inline: true,
       text:
-        'Use the <Stamp /> component to subtly display attributes alongside listing cells and on product detail pages. Use it in conjunction with an <Icon /> component to give it more context. An Icon placed within a Stamp will inherit the assigned Stamp color.',
+        'Use the <Stamp /> component to subtly display attributes alongside listing cells and on product detail pages. Use it in conjunction with a named `pcln-icons` icon component to give it more context. An icon placed within a Stamp will inherit the assigned Stamp color.',
     })(() => <Stamp>default stamp</Stamp>)
   )
   .add('All', () => (
@@ -43,7 +44,7 @@ storiesOf('Stamp', module)
       m={3}
     >
       <>
-        <Icon name='Pin' mr={1} /> top location
+        <PinIcon mr={1} /> top location
       </>
     </Cartesian>
   ))

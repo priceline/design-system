@@ -8,6 +8,13 @@ const overlayProps = {
 }
 
 describe('Background Overlay', () => {
+  let consoleError
+  beforeEach(() => {
+    consoleError = console.error
+    console.error = jest.fn()
+  })
+  afterEach(() => (console.error = consoleError))
+
   test('Active overlay', () => {
     const { container } = renderWithTheme(
       <Overlay {...overlayProps} popoverOpen={true} />

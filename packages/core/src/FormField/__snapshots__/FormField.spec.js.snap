@@ -148,10 +148,6 @@ exports[`FormField renders with Icon 1`] = `
 }
 
 .c4 {
-  outline: none;
-}
-
-.c5 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -172,27 +168,27 @@ exports[`FormField renders with Icon 1`] = `
   font-size: 16px;
 }
 
-.c5::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c5:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::placeholder {
+.c4::placeholder {
   color: #4f6f8f;
 }
 
-.c5::-ms-clear {
+.c4::-ms-clear {
   display: none;
 }
 
-.c5:focus {
+.c4:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
@@ -216,7 +212,7 @@ exports[`FormField renders with Icon 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c5 {
+  .c4 {
     font-size: 14px;
   }
 }
@@ -247,7 +243,7 @@ exports[`FormField renders with Icon 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2 c3 c4"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -263,19 +259,15 @@ exports[`FormField renders with Icon 1`] = `
         }
       }
       tabIndex={-1}
-      title="Email"
       viewBox="0 0 24 24"
       width={24}
     >
-      <title>
-        Email
-      </title>
       <path
         d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
       />
     </svg>
     <input
-      className="c5"
+      className="c4"
       fontSize={
         Array [
           2,
@@ -320,10 +312,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 }
 
 .c4 {
-  outline: none;
-}
-
-.c5 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -344,27 +332,27 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   font-size: 16px;
 }
 
-.c5::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c5:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c5::placeholder {
+.c4::placeholder {
   color: #4f6f8f;
 }
 
-.c5::-ms-clear {
+.c4::-ms-clear {
   display: none;
 }
 
-.c5:focus {
+.c4:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
@@ -388,7 +376,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c5 {
+  .c4 {
     font-size: 14px;
   }
 }
@@ -419,7 +407,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2 c3 c4"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -435,19 +423,15 @@ exports[`FormField renders with Label autoHide prop 1`] = `
         }
       }
       tabIndex={-1}
-      title="Email"
       viewBox="0 0 24 24"
       width={24}
     >
-      <title>
-        Email
-      </title>
       <path
         d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
       />
     </svg>
     <input
-      className="c5"
+      className="c4"
       fontSize={
         Array [
           2,
@@ -636,7 +620,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: flex;
 }
 
-.c5 {
+.c4 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -655,7 +639,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 24px;
 }
 
-.c7 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -665,10 +649,6 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 .c3 {
-  outline: none;
-}
-
-.c4 {
   outline: none;
 }
 
@@ -689,12 +669,12 @@ exports[`FormField renders with Select and Icon 1`] = `
   font-weight: 700;
 }
 
-.c8 {
+.c7 {
   outline: none;
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -715,18 +695,18 @@ exports[`FormField renders with Select and Icon 1`] = `
   font-size: 16px;
 }
 
-.c6:focus {
+.c5:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
 }
 
-.c6::-ms-expand {
+.c5::-ms-expand {
   display: none;
 }
 
 @media screen and (min-width:40em) {
-  .c6 {
+  .c5 {
     font-size: 14px;
   }
 }
@@ -756,7 +736,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   >
     <svg
       aria-hidden={true}
-      className="c2 c3 c4"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -772,23 +752,19 @@ exports[`FormField renders with Select and Icon 1`] = `
         }
       }
       tabIndex={-1}
-      title="Email"
       viewBox="0 0 24 24"
       width={24}
     >
-      <title>
-        Email
-      </title>
       <path
         d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
       />
     </svg>
     <div
-      className="c5"
+      className="c4"
       width={1}
     >
       <select
-        className="c6 "
+        className="c5 "
         fontSize={
           Array [
             2,
@@ -809,7 +785,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c7 c8"
+        className="c6 c7"
         color="text.light"
         fill="currentcolor"
         focusable={false}

@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { FormField, Icon, Input, Label, Select } from '..'
+import { FormField, Input, Label, Select } from '..'
+import { Email as EmailIcon } from 'pcln-icons'
 
 afterEach(() => {
   // bust cache for propTypes
@@ -23,7 +24,7 @@ describe('FormField', () => {
     const json = rendererCreateWithTheme(
       <FormField>
         <Label>Email Address</Label>
-        <Icon name='Email' />
+        <EmailIcon />
         <Input id='email' name='email' />
       </FormField>
     ).toJSON()
@@ -44,7 +45,7 @@ describe('FormField', () => {
     const json = rendererCreateWithTheme(
       <FormField>
         <Label>Pick Email Address</Label>
-        <Icon name='Email' />
+        <EmailIcon />
         <Select />
       </FormField>
     ).toJSON()
@@ -55,7 +56,7 @@ describe('FormField', () => {
     const json = rendererCreateWithTheme(
       <FormField>
         <Label autoHide>Email</Label>
-        <Icon name='Email' />
+        <EmailIcon />
         <Input id='email' name='email' />
       </FormField>
     ).toJSON()
@@ -66,7 +67,7 @@ describe('FormField', () => {
     const json = rendererCreateWithTheme(
       <FormField>
         <Label autoHide>Email</Label>
-        <Icon name='Email' />
+        <EmailIcon />
         <Input id='email' name='email' value='hello@example.com' />
       </FormField>
     ).toJSON()
