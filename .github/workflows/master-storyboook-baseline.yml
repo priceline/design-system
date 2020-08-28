@@ -1,0 +1,56 @@
+# This workflow is to create a baseline for comparison in PRs via Chromatic
+# It is necessary due to our `Squash and merge` strategy, where the head commit changes and
+# Chromatic doesn't have a proper ref to compare changes to.
+
+name: Storybook Baseline for Chromatic
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          fetch-depth: 0
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install dependencies and bootstrap lerna
+        run: npm install
+
+      - name: Build Storybook
+        working-directory: ./
+        run: |
+          npm run storybook
+
+      - name: Chromatic Storybook Review
+        uses: chromaui/action@v1
+
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: ./docs/out/storybook 
+          exitOnceUploaded: true
+          autoAcceptChanges: true
