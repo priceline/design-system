@@ -5,6 +5,14 @@ import PropTypes from 'prop-types'
 import * as icons from './index'
 
 const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
+  const isDev = process.env.NODE_ENV !== 'production'
+
+  if (isDev) {
+    console.trace(
+      'The Icon component has been deprecated and will be removed in a future release. Please use named icons instead.'
+    )
+  }
+
   const Component = icons[name] || icons[upperFirst(name)]
 
   let ariaLabelledBy = titleId ? titleId : ''
@@ -12,7 +20,7 @@ const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
   ariaLabelledBy = ariaLabelledBy ? ariaLabelledBy : undefined
 
   if (!Component) {
-    if (process.env.NODE_ENV !== 'production') {
+    if (isDev) {
       console.trace(
         name ? `icon ${name} does not exist` : 'icon is missing name prop'
       )
