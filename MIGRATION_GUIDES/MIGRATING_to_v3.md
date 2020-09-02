@@ -51,7 +51,7 @@ import { ThumbsUp } from 'pcln-icons
 
 ### Icons (`pcln-icons`)
 
-- We have a codemod to make this transition easier. See the [readme](codemods/icons-v2-to-v3/README.md) for usage instructions.
+- We have a codemod to make this transition easier. See the [readme](../codemods/icons-v2-to-v3/README.md) for usage instructions.
 - `main` and `module` fields in `package.json` now point to CommonJS (CJS) and ES Modules (ESM) builds, respectively.
 - Usage: `import { TrendingUp, Timer } from 'pcln-icons'`
   - Imports from `pcln-icons/lib/` are no longer available. This previously contained a CJS build that was incompatible with tree-shaking and dead code elimination in bundlers.
@@ -76,7 +76,7 @@ import { ThumbsUp } from 'pcln-icons
 - First preference is named imports from `pcln-icons`:
 
 ```jsx
-import { ThumbsUp } from 'pcln-icons'
+import { ThumbsUp } from 'packages/icons/dist/esm/index'
 
 export default <ThumbsUp />
 ```
