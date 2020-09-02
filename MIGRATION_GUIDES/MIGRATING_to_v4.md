@@ -4,7 +4,7 @@ See the full [v4 announcement](../v4-announcement.md) for more information about
 
 ## Breaking Changes
 
-After upgrading to React 16.10+ and Styled Components v4, there are no breaking changes! 🎉
+After upgrading to React 16.10+ and Styled Components v4, there are no breaking changes to the `pcln-design-system` API! 🎉
 
 ## Migration Steps
 
