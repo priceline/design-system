@@ -13,6 +13,15 @@ The Design System Working Group proudly presents the next major version of the P
   - Full `StrictMode` compliance for React v16
   - Native support for `ref` on any styled component
 
+## How to upgrade
+
+Prior to the initial DSv4 release, developers can take a few steps to prepare their apps to make upgrading `pcln-design-system` seamless:
+
+- Upgrade to Styled Components v4 by following their [migration guide](https://styled-components.com/docs/faqs#what-do-i-need-to-do-to-migrate-to-v4). The [official codemods](https://github.com/styled-components/styled-components-codemods) should handle most of the heavy lifting.
+- Upgrade to a supported version of React (i.e. `^16.10`)
+
+Once DSv4 is published, you can also refer to our [DS3 to DS4 migration guide](./MIGRATION_GUIDES/MIGRATING_to_v4.md) for more detailed instructions.
+
 ## Benefits of upgrading
 
 ### Performance ⚡️
@@ -26,24 +35,19 @@ Don't take our word for it though; visit the [Styled Components release blog](ht
 \* Note that you need to be on a react version that supports hooks, e.g.
 `react@^16.8 react-dom@^16.8 react-is@^16.8`
 
+While the migration from Styled Components v3 to v4 does include breaking changes, it paves the way for a smoother transition to Styled Components v5. We plan to include the upgrade to Styled Components v5 in Design System v5. 
+
 ### React Hooks 🎣
 
 In v16.8, React introduced a powerful new feature called [Hooks](https://reactjs.org/docs/hooks-intro.html) that allows you to use state without writing a class. This has important implications for the Design System, as it currently consists primarily of function components. This will help us maintain the codebase over time as React continues to move toward functions as the preferred means of creating components.
 
-### New Content (_coming soon_) 🚧🏗
+### New Content (_coming soon_) 🚧 🏗
 
 By raising the minimum allowed peer dependency of React to a version that supports hooks, we can introduce modern components that already exist in the Priceline ecosystem to future minor versions of the Design System. Some components we already have planned for onboarding include:
 
 - [accordion](https://github.com/priceline/design-system/issues/205)
 - [chip](https://github.com/priceline/design-system/issues/646)
 - [media-query-match](https://github.com/priceline/design-system/issues/774)
-
-## Prepare to upgrade
-
-Prior to the initial DSv4 release, developers can take a few steps to prepare their apps to make upgrading `pcln-design-system` seamless:
-
-- Upgrade to Styled Components v4 by following the [migration guide](https://styled-components.com/docs/faqs#what-do-i-need-to-do-to-migrate-to-v4). The [official codemods](https://github.com/styled-components/styled-components-codemods) should handle most of the heavy lifting.
-- Upgrade to a supported version of React (i.e. `^16.10`)
 
 ## Looking forward
 
