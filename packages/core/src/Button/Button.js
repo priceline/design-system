@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import { width, space } from 'styled-system'
 import {
-  mapProps,
   deprecatedPropType,
   applyVariations,
   getPaletteColor,
@@ -114,14 +113,13 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button = mapProps(({ fullWidth, dsRef, ...props }) => ({
-  width: fullWidth ? 1 : undefined,
-  [getSCMigrationRef()]: dsRef,
-  'aria-label': props.title,
-  ...props,
-}))(styled.button`
+const Button = styled.button.attrs({
+  width: ({ fullWidth, width }) => (fullWidth ? 1 : width),
+  [getSCMigrationRef()]: ({ dsRef }) => dsRef,
+  'aria-label': ({ title }) => title,
+})`
   ${buttonStyles}
-`)
+`
 
 Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
