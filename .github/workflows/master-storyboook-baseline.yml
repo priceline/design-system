@@ -30,8 +30,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
-          key: rush-pnpm-cache
-          restore-keys: rush-pnpm-cache
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
@@ -41,13 +42,6 @@ jobs:
 
       - name: Build Storybook
         working-directory: ./
-        run: node common/scripts/install-run-rush.js build:storybook
-
-      - name: Chromatic Storybook Review
-        uses: chromaui/action@v1
-
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          storybookBuildDir: ./docs/out/storybook
-          exitOnceUploaded: true
-          autoAcceptChanges: true
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        run: node common/scripts/install-run-rush.js build:storybook:baseline

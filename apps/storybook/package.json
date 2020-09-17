@@ -11,7 +11,8 @@
     "start": "start-storybook -p 8000",
     "storybook": "run-s storybook:build chromatic",
     "storybook:build": "build-storybook -o ../docs/out/storybook",
-    "chromatic": "CHROMATIC_PROJECT_TOKEN=uf9gdg938po chromatic --storybook-build-dir=../docs/out/storybook"
+    "storybook:baseline": "chromatic --storybook-build-dir=../docs/out/storybook --auto-accept-changes",
+    "chromatic": "chromatic --storybook-build-dir=../docs/out/storybook"
   },
   "author": "Priceline Design System Working Group",
   "license": "MIT",

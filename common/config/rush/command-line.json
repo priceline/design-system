@@ -78,6 +78,14 @@
       "safeForSimultaneousRushProcesses": false,
       "shellCommand": "(cd apps/storybook && rushx storybook)"
     },
+    {
+      "name": "build:storybook:baseline",
+      "commandKind": "global",
+      "summary": "Build the Storybook",
+      "description": "Build the Storybook",
+      "safeForSimultaneousRushProcesses": false,
+      "shellCommand": "(cd apps/storybook && rushx storybook:baseline)"
+    },
 
     {
       "name": "docsite",
@@ -92,8 +100,8 @@
     {
       "name": "build:docsite",
       "commandKind": "global",
-      "summary": "Run the Next.js Docsite",
-      "description": "Run the Next.js Docsite",
+      "summary": "Build the Next.js Docsite",
+      "description": "Build the Next.js Docsite",
       "safeForSimultaneousRushProcesses": false,
       "shellCommand": "(cd apps/docs && rushx build:docs)"
     }
