@@ -32,7 +32,8 @@ const Overlay = ({
       popoverOpen={popoverOpen}
       overlayOpacity={overlayOpacity}
       zIndex={zIndex}
-      bg={'background.darkest'}
+      bg='background.darkest'
+      data-testid='__pcln-popover_Overlay'
     />
   )
 }

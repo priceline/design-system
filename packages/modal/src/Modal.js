@@ -54,7 +54,7 @@ const Overlay = styled(DialogOverlay)`
 `
 
 const Dialog = styled(DialogContent)`
-  ${color} 
+  ${color}
   ${width}
   ${height}
   position: relative;

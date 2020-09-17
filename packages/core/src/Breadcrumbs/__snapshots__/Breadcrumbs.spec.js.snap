@@ -51,10 +51,10 @@ exports[`Breadcrumbs renders basic 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <a
       className="c2"
@@ -72,7 +72,7 @@ exports[`Breadcrumbs renders basic 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="c1 "
   >
     <a
       className="c2"
@@ -90,7 +90,7 @@ exports[`Breadcrumbs renders basic 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="c1 "
   >
     <a
       className="c4"
@@ -128,7 +128,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
   margin: 8px;
 }
 
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -137,7 +137,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
   color: #4f6f8f;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -150,11 +150,11 @@ exports[`Breadcrumbs renders with icons 1`] = `
   outline: none;
 }
 
-.c3 {
+.c2 {
   outline: none;
 }
 
-.c8 {
+.c7 {
   outline: none;
 }
 
@@ -185,10 +185,10 @@ exports[`Breadcrumbs renders with icons 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden={true}
@@ -222,11 +222,11 @@ exports[`Breadcrumbs renders with icons 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden={true}
-      className="c2 c6"
+      className="c6 c3"
       color="text.light"
       fill="currentcolor"
       focusable={false}
@@ -256,7 +256,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="c1 "
   >
     <svg
       aria-hidden={true}

@@ -1,0 +1,49 @@
+{
+  "name": "pcln-{{kebabCase componentName}}",
+  "version": "0.0.1",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "npm-run-all clean build",
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "clean": "rimraf dist",
+    "test": "jest"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [],
+  "author": "Priceline",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "styled-system": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "cross-env": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "pcln-design-system": "^3.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "rimraf": "^3.0.0",
+    "styled-components": "^4.4.1"
+  },
+  "peerDependencies": {
+    "pcln-design-system": "^3.0.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  }
+}

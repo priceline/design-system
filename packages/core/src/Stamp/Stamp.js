@@ -22,7 +22,7 @@ const sizes = {
   medium: css`
     ${themeGet('textStyles.display0')}
     line-height: ${themeGet('lineHeights.standard')};
-    
+
     & > svg {
       width: 14px;
       height: 14px;

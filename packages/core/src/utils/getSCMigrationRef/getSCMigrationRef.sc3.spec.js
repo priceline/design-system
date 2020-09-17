@@ -9,7 +9,8 @@ beforeEach(() => {
 
 describe('getSCMigrationRef', function () {
   it('should return innerRef if SC3', function () {
-    const getSCMigrationRef = require('./getSCMigrationRef.js').default
+    const getSCMigrationRef = require('./getSCMigrationRef.js')
+      .getSCMigrationRef
     expect(getSCMigrationRef()).toEqual('innerRef')
   })
 })

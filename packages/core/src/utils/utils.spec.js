@@ -121,7 +121,8 @@ describe('utils', () => {
         color: 'primary',
       }
       const override = applyVariations('Button')(props)
-      expect(override[1](props)).toEqual(
+
+      expect(override[0](props)).toEqual(
         props.theme.componentStyles.Button.primary
       )
     })
@@ -136,8 +137,8 @@ describe('utils', () => {
       }
       const variations = { outline: 'color: blue;' }
       const override = applyVariations('Button', variations)(props)
-      expect(override[1]).toEqual(variations.outline)
-      expect(override[3](props)).toEqual(
+      expect(override[0]).toEqual(variations.outline)
+      expect(override[2](props)).toEqual(
         props.theme.componentStyles.Button.outline.primary
       )
     })
@@ -240,10 +241,11 @@ describe('utils', () => {
       const props = { theme: createTheme(), bg: 'background', color: 'primary' }
       expect(getByPalette(props)).toEqual(
         expect.arrayContaining([
-          '\n  background-color: ',
+          'background-color:',
           props.theme.palette.background.base,
-          ';\n  color: ',
+          ';color:',
           props.theme.palette.primary.base,
+          ';',
         ])
       )
     })
@@ -261,48 +263,53 @@ describe('utils', () => {
     test('returns the correct style', () => {
       expect(color({ ...props, bg: 'background' })).toEqual(
         expect.arrayContaining([
-          '\n      background-color: ',
+          'background-color:',
           props.theme.palette.background.base,
+          ';',
         ])
       )
       expect(color({ ...props, color: 'primary' })).toEqual(
         expect.arrayContaining([
-          '\n      background-color: ',
+          'background-color:',
           props.theme.palette.primary.base,
-          ';\n      color: ',
+          ';color:',
           props.theme.palette.text.lightest,
+          ';',
         ])
       )
       expect(color({ ...props, color: 'notify' })).toEqual(
         expect.arrayContaining([
-          '\n      background-color: ',
+          'background-color:',
           props.theme.palette.notify.base,
-          ';\n      color: ',
+          ';color:',
           props.theme.palette.text.base,
+          ';',
         ])
       )
       expect(color({ ...props, bg: 'background', color: 'primary' })).toEqual(
         expect.arrayContaining([
-          '\n  background-color: ',
+          'background-color:',
           props.theme.palette.background.base,
-          ';\n  color: ',
+          ';color:',
           props.theme.palette.primary.base,
+          ';',
         ])
       )
 
       // legacy support
       expect(color({ ...props, color: 'text' })).toEqual(
-        expect.arrayContaining(['\n          color: ', props.theme.colors.text])
+        expect.arrayContaining(['color:', props.theme.colors.text, ';'])
       )
       expect(color({ ...props, color: 'blue' })).toEqual(
-        expect.arrayContaining(['\n      color: ', props.theme.colors.blue])
+        expect.arrayContaining(['color:', props.theme.colors.blue, ';'])
       )
       expect(color({ ...props, color: 'blue', bg: 'green' })).toEqual(
         expect.arrayContaining([
-          '\n  background-color: ',
+          'background-color:',
           props.theme.colors.green,
-          ';\n  color: ',
+          ';color:',
           props.theme.colors.blue,
+          ';',
         ])
       )
     })

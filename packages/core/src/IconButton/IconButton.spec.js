@@ -1,16 +1,16 @@
-/* eslint-env jest */
 import React from 'react'
-import { fireEvent } from '@testing-library/react'
+import { render, fireEvent } from 'testing-library'
 
 import { IconButton } from '..'
 
 describe('IconButton', () => {
   test('executes onClick prop on click', () => {
     const handleClick = jest.fn()
-    const { container } = renderWithTheme(
+    const { getByRole } = render(
       <IconButton name='Key' onClick={handleClick} />
     )
-    fireEvent.click(container.firstChild)
+
+    fireEvent.click(getByRole('button'))
     expect(handleClick).toHaveBeenCalled()
   })
 

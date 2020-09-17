@@ -5,6 +5,21 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "sideEffects": false,
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priceline/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/priceline/design-system/issues"
+  },
+  "homepage": "https://github.com/priceline/design-system#readme",
+  "engines": {
+    "node": ">=8.0.0 <9.0.0 || >=10.0.0",
+    "npm": ">=5.10.0 || >=6.0.0"
+  },
   "scripts": {
     "prepare": "run-s clean build",
     "build": "run-s build:js build:types",
@@ -12,13 +27,15 @@
     "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
     "build:babel:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
     "build:js": "run-p build:babel:*",
-    "build:types": "mkdir -p ./dist/types && cp ../types/types/index.d.ts dist/types",
+    "build:types": "mkdir -p ./dist/types && cp ../../tools/types/types/index.d.ts dist/types",
     "clean": "rimraf dist",
-    "test": "jest"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest --verbose --coverage",
+    "test:ci": "jest --silent --coverage --runInBand",
+    "test:update": "jest --updateSnapshot",
+    "test:ci:update": "jest --runInBand --updateSnapshot"
   },
-  "files": [
-    "dist/"
-  ],
   "author": "Priceline",
   "contributors": [
     {
@@ -51,54 +68,42 @@
     }
   ],
   "license": "MIT",
+  "dependencies": {
+    "@types/styled-system": "^4.2.2",
+    "deepmerge": "^4.2.2",
+    "hoist-non-react-statics": "^3.3.2",
+    "moize": "^5.4.7",
+    "pcln-icons": "^3.2.0",
+    "prop-types": "^15.7.2",
+    "styled-system": "^4.2.4"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "camelcase": "^5.3.1",
-    "cross-env": "^6.0.3",
-    "jest": "^26.0.1",
+    "@babel/cli": "^7.11.6",
+    "@compositor/kit": "^1.0.47",
+    "@priceline/babel-preset": "^0.0.1",
+    "@priceline/eslint-config": "^0.0.1",
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/react": "^5.3.21",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "camelcase": "^6.0.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "jest-standard-reporter": "^1.1.1",
+    "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
-    "rimraf": "^3.0.0",
-    "stylis": "^3.5.4"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "../../test/test-setup.js"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "../../test"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/*.spec.js"
-    ]
-  },
-  "dependencies": {
-    "deepmerge": "^4.0.0",
-    "hoist-non-react-statics": "^3.3.2",
-    "moize": "^5.4.7",
-    "pcln-icons": "^3.0.0",
-    "prop-types": "^15.7.2",
-    "styled-system": "^4.2.4",
-    "@types/styled-system": "^4.2.2"
+    "rimraf": "^3.0.2",
+    "stylis": "^3.5.4",
+    "styled-components": "^3.4.10"
   },
   "peerDependencies": {
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0",
     "styled-components": ">=3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/priceline/design-system.git"
-  },
-  "bugs": {
-    "url": "https://github.com/priceline/design-system/issues"
-  },
-  "homepage": "https://github.com/priceline/design-system#readme",
-  "engines": {
-    "node": ">=8.0.0 <9.0.0 || >=10.0.0",
-    "npm": ">=5.10.0 || >=6.0.0"
   }
 }

@@ -1,12 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip bottom center 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -58,7 +61,7 @@ exports[`Tooltip bottom center 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     centered tooltip
@@ -67,12 +70,15 @@ exports[`Tooltip bottom center 1`] = `
 `;
 
 exports[`Tooltip bottom left 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -119,7 +125,7 @@ exports[`Tooltip bottom left 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     left tooltip
@@ -128,12 +134,15 @@ exports[`Tooltip bottom left 1`] = `
 `;
 
 exports[`Tooltip bottom right 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -181,7 +190,7 @@ exports[`Tooltip bottom right 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     right tooltip
@@ -190,12 +199,15 @@ exports[`Tooltip bottom right 1`] = `
 `;
 
 exports[`Tooltip renders 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #fff;
   color: #001833;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -242,7 +254,7 @@ exports[`Tooltip renders 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="background.lightest"
   >
     A Tooltip
@@ -251,12 +263,15 @@ exports[`Tooltip renders 1`] = `
 `;
 
 exports[`Tooltip top center 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #007aff;
   color: #fff;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -308,7 +323,7 @@ exports[`Tooltip top center 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="primary"
   >
     centered tooltip
@@ -317,12 +332,15 @@ exports[`Tooltip top center 1`] = `
 `;
 
 exports[`Tooltip top left 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #007aff;
   color: #fff;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -369,7 +387,7 @@ exports[`Tooltip top left 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="primary"
   >
     left tooltip
@@ -378,12 +396,15 @@ exports[`Tooltip top left 1`] = `
 `;
 
 exports[`Tooltip top right 1`] = `
-.c0 {
+.c1 {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 8px;
   background-color: #c00;
   color: #fff;
+}
+
+.c0 {
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -431,7 +452,7 @@ exports[`Tooltip top right 1`] = `
   }
 >
   <div
-    className="c0"
+    className="c0 c1"
     color="error"
   >
     right tooltip

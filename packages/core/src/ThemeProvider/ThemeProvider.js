@@ -62,4 +62,4 @@ ThemeProvider.propTypes = {
   customBreakpoints: PropTypes.arrayOf(PropTypes.string),
 }
 
-export default ThemeProvider
+export { ThemeProvider }

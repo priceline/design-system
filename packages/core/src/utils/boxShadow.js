@@ -7,9 +7,9 @@
  * @returns {{ 'box-shadow': string }}
  */
 
-import { boxShadows as defaultBoxShadowTheme } from '../theme'
+import { boxShadows as defaultBoxShadowTheme } from '../theme/theme'
 
-export default (props) => {
+function boxShadow(props) {
   const boxShadowTheme = props.theme.boxShadows || defaultBoxShadowTheme
   const boxShadows = {
     sm: {
@@ -27,3 +27,5 @@ export default (props) => {
   }
   return boxShadows[props.boxShadowSize]
 }
+
+export { boxShadow }

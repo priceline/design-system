@@ -6,56 +6,65 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
   text-align: center;
 }
 
-<h3
+<div
+  as="h3"
   className="c0"
   color="gray"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
-<h1
+<div
+  as="h1"
   className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
-<h2
+<div
+  as="h2"
   className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
-<h3
+<div
+  as="h3"
   className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
-<h4
+<div
+  as="h4"
   className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
-<h5
+<div
+  as="h5"
   className=""
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
-<h6
+<div
+  as="h6"
   className=""
 />
 `;
 
 exports[`Heading Heading component with no default font size, when "fontSize" prop not used 1`] = `
-<h3
+<div
+  as="h3"
   className=""
 />
 `;
 
 exports[`Heading renders 1`] = `
-<h3
+<div
+  as="h3"
   className=""
 />
 `;

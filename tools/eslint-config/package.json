@@ -1,0 +1,48 @@
+{
+  "name": "@priceline/eslint-config",
+  "version": "0.0.1",
+  "description": "shared ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test:ci": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:priceline/design-system",
+    "directory": "tools/eslint-config"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Priceline.com Design System Team",
+  "license": "MIT",
+  "dependencies": {
+    "@rushstack/eslint-config": "^1.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-progress": "^0.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "prettier": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.2"
+  },
+  "peerDependencies": {
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.0"
+  }
+}

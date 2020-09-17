@@ -4,8 +4,6 @@ import hoistStatics from 'hoist-non-react-statics'
 import { themeGet } from 'styled-system'
 import { css } from 'styled-components'
 
-export { default as getSCMigrationRef } from '../utils/getSCMigrationRef'
-
 export const mapProps = (map) => (Component) =>
   hoistStatics((props) => <Component {...map(props)} />, Component)
 

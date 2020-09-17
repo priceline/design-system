@@ -1,11 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio Disabled, rendering 1`] = `
-.c2 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 28px;
+}
+
+.c3 {
+  outline: none;
 }
 
 .c0 {
@@ -45,8 +49,7 @@ exports[`Radio Disabled, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c3 {
-  outline: none;
+.c2 {
   vertical-align: middle;
 }
 
@@ -64,7 +67,7 @@ exports[`Radio Disabled, rendering 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3"
+    className="c2 c3 c4"
     fill="currentcolor"
     focusable={false}
     height={28}
@@ -81,11 +84,15 @@ exports[`Radio Disabled, rendering 1`] = `
 `;
 
 exports[`Radio Not Selected, rendering 1`] = `
-.c2 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 28px;
+}
+
+.c3 {
+  outline: none;
 }
 
 .c0 {
@@ -129,8 +136,7 @@ exports[`Radio Not Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c3 {
-  outline: none;
+.c2 {
   vertical-align: middle;
 }
 
@@ -146,7 +152,7 @@ exports[`Radio Not Selected, rendering 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3"
+    className="c2 c3 c4"
     fill="currentcolor"
     focusable={false}
     height={28}
@@ -163,11 +169,15 @@ exports[`Radio Not Selected, rendering 1`] = `
 `;
 
 exports[`Radio Selected, rendering 1`] = `
-.c2 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 28px;
+}
+
+.c3 {
+  outline: none;
 }
 
 .c0 {
@@ -211,8 +221,7 @@ exports[`Radio Selected, rendering 1`] = `
   color: #c0cad5;
 }
 
-.c3 {
-  outline: none;
+.c2 {
   vertical-align: middle;
 }
 
@@ -230,7 +239,7 @@ exports[`Radio Selected, rendering 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3"
+    className="c2 c3 c4"
     fill="currentcolor"
     focusable={false}
     height={28}

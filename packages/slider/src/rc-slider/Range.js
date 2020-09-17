@@ -353,7 +353,7 @@ class Range extends React.Component {
     const { bounds } = state
     handle = handle === undefined ? state.handle : handle
     thershold = Number(thershold)
-    /* eslint-disable eqeqeq */
+
     if (!allowCross && handle != null && bounds !== undefined) {
       if (handle > 0 && val <= bounds[handle - 1] + thershold) {
         return bounds[handle - 1] + thershold

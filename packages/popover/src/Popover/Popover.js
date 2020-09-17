@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
-import { deprecatedPropType } from 'pcln-design-system'
+import { deprecatedPropType, getSCMigrationRef } from 'pcln-design-system'
+
 import PopoverContent from '../PopoverContent'
-import getSCMigrationRef from '../helpers/getSCMigrationRef'
 
 class Popover extends Component {
   constructor(props) {

@@ -11,6 +11,6 @@ exports[`Relative renders with top, left and zIndex props 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 />
 `;

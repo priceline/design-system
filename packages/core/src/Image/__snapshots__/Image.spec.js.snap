@@ -8,7 +8,6 @@ exports[`Image renders 1`] = `
 
 <img
   className="c0"
-  height="auto"
   src="https://www.qaa.priceline.com/home/public/735e9d77a0adaeaf0c46845da8c5db8b.jpg"
 />
 `;

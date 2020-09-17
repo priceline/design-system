@@ -13,27 +13,31 @@ import {
 } from '../utils'
 
 const size = (props) => {
+  const smallSize = {
+    fontSize: `${props.theme.fontSizes[0]}px`,
+    padding: '7px 12px',
+  }
+  const mediumSize = {
+    fontSize: `${props.theme.fontSizes[1]}px`,
+    padding: '9.5px 18px',
+  }
+  const largeSize = {
+    fontSize: `${props.theme.fontSizes[2]}px`,
+    padding: '12px 22px',
+  }
+
   switch (props.size) {
     case 'small':
-      return {
-        fontSize: `${props.theme.fontSizes[0]}px`,
-        padding: '7px 12px',
-      }
+      return smallSize
+
     case 'medium':
-      return {
-        fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '9.5px 18px',
-      }
+      return mediumSize
+
     case 'large':
-      return {
-        fontSize: `${props.theme.fontSizes[2]}px`,
-        padding: '12px 22px',
-      }
+      return largeSize
+
     default:
-      return {
-        fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '9.5px 18px',
-      }
+      return mediumSize
   }
 }
 
