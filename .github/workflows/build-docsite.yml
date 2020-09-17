@@ -39,6 +39,8 @@ jobs:
 
       - name: Build static Storybook
         working-directory: ./
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         run: node common/scripts/install-run-rush.js build:storybook
 
       - name: Push build directory to GitHub Pages branch
