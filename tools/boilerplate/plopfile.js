@@ -1,3 +1,5 @@
+const addProjectToRushJson = require('./actions/addProjectToRushJson')
+
 module.exports = function (plop) {
   plop.setGenerator('core', {
     description: 'Create new core component',
@@ -18,7 +20,7 @@ module.exports = function (plop) {
       {
         type: 'addMany',
         templateFiles: 'plop-templates/core/**',
-        destination: 'packages/core/src/{{properCase componentName}}',
+        destination: '../../packages/core/src/{{properCase componentName}}',
         base: 'plop-templates/core',
       },
       `Your component is ready! Don't forget to re-export it from packages/core/src/index.js.`,
@@ -38,11 +40,12 @@ module.exports = function (plop) {
       {
         type: 'addMany',
         base: 'plop-templates/package',
-        destination: 'packages/{{kebabCase componentName}}',
+        destination: '../../packages/{{kebabCase componentName}}',
         path: '{{componentName}}.js',
         templateFiles: 'plop-templates/package/**',
         stripExtensions: ['hbs'],
       },
+      addProjectToRushJson('packages'),
     ],
   })
 }
