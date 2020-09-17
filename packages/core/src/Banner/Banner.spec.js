@@ -1,4 +1,6 @@
 import React from 'react'
+import { render } from 'testing-library'
+
 import { Banner, Text, Heading, theme } from '..'
 
 describe('Banner', () => {
@@ -97,20 +99,20 @@ describe('Banner', () => {
   })
 
   test('renders close button if onClose func is provided', () => {
-    const { container } = renderWithTheme(<Banner onClose={() => {}} />)
+    const { container } = render(<Banner onClose={() => {}} />)
     const closeButton = container.querySelector('button')
     expect(closeButton).toBeTruthy()
   })
 
   test('does render blue left-hand icon by default', () => {
-    const { container } = renderWithTheme(<Banner bg='blue' />)
+    const { container } = render(<Banner bg='blue' />)
     const icon = container.querySelector('svg')
     // todo: check svg path/attrs for correct icon
     expect(icon).toBeTruthy()
   })
 
   test('does not render blue left-hand icon if showIcon is false', () => {
-    const { container } = renderWithTheme(<Banner bg='blue' showIcon={false} />)
+    const { container } = render(<Banner bg='blue' showIcon={false} />)
     const icon = container.querySelector('svg')
     expect(icon).toBeFalsy()
   })
@@ -131,7 +133,7 @@ describe('Banner', () => {
   })
 
   test('renders with header node', () => {
-    const { asFragment, getByText } = renderWithTheme(
+    const { asFragment, getByText } = render(
       <Banner
         header={<Heading>Hello world</Heading>}
         text={<Text>Text</Text>}

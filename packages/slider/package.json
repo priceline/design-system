@@ -5,28 +5,28 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "sideEffects": false,
-  "scripts": {
-    "prepare": "npm run build",
-    "build": "npm-run-all -p build:*",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --out-dir ./dist/cjs",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --out-dir ./dist/esm",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --out-dir ./dist/es",
-    "clean": "rimraf dist/",
-    "test": "jest"
-  },
   "files": [
     "dist/"
   ],
   "author": "Priceline",
   "license": "MIT",
-  "jest": {
-    "coverageReporters": [
-      "lcov",
-      "html"
-    ],
-    "testMatch": [
-      "<rootDir>/test/**/*.js"
-    ]
+  "engines": {
+    "node": ">=8.0.0 <9.0.0 || >=10.0.0",
+    "npm": ">=5.10.0 || >=6.0.0"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
+    "clean": "rimraf dist/",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest --verbose --coverage",
+    "test:ci": "jest --silent --coverage --runInBand",
+    "test:update": "jest --updateSnapshot",
+    "test:ci:update": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -37,30 +37,34 @@
     "styled-system": "^4.2.4",
     "warning": "^4.0.3"
   },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@priceline/babel-preset": "^0.0.1",
+    "@priceline/eslint-config": "^0.0.1",
+    "@reach/component-component": "^0.7.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "cross-env": "^7.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "jest-standard-reporter": "^1.1.1",
+    "jest-styled-components": "^6.3.4",
+    "npm-run-all": "^4.1.5",
+    "pcln-design-system": "^3.6.1",
+    "rc-tools": "^8.4.5",
+    "rc-trigger": "^2.6.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "styled-components": "^3.4.10"
+  },
   "peerDependencies": {
     "pcln-design-system": "^3.0.0",
     "styled-components": ">=3",
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1",
-    "@reach/component-component": "^0.7.0",
-    "cross-env": "^6.0.3",
-    "jest": "^26.0.1",
-    "npm-run-all": "^4.1.5",
-    "pcln-design-system": "3.6.1",
-    "rc-tools": "8.x",
-    "rc-trigger": "^2.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-test-renderer": "^16.13.1",
-    "rimraf": "^3.0.0",
-    "styled-components": "^4.4.1"
-  },
-  "engines": {
-    "node": ">=8.0.0 <9.0.0 || >=10.0.0",
-    "npm": ">=5.10.0 || >=6.0.0"
   }
 }

@@ -1,1 +1,1 @@
-export { default } from './getSCMigrationRef'
+export { getSCMigrationRef } from './getSCMigrationRef'

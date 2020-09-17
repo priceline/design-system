@@ -1,0 +1,4488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Ac 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gtssRu bIHJgy"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 11h-4.2L21 7.8l-1.4-1.4L15 11h-2V9l4.7-4.7-1.4-1.4L13 6.2V2h-2v4.2L7.8 2.9 6.3 4.3 11 9v2H9L4.3 6.3 2.9 7.8 6.2 11H2v2h4.2L3 16.2l1.4 1.4L9 13h2v2l-4.7 4.7 1.4 1.4 3.3-3.3V22h2v-4.2l3.2 3.2 1.4-1.4L13 15v-2h2l4.7 4.7 1.4-1.4-3.3-3.3H22v-2z"
+  />
+</svg>
+`;
+
+exports[`renders Accessible 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dlnjPT dKewJa"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 13v-2c-1.5 0-3.1-.8-4.1-1.8l-1.3-1.5c-.1-.1-.3-.3-.6-.4-.3-.2-.8-.3-1.2-.3-1 .1-1.8 1-1.8 2.1V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.4c1.3 1 3.2 1.9 5 1.9zm-6.2 5h2.1c-.5 2.3-2.5 4-4.9 4-2.8 0-5-2.2-5-5 0-2.4 1.7-4.4 4-4.9v2.1c-1.2.4-2 1.5-2 2.8 0 1.7 1.3 3 3 3 1.3 0 2.4-.8 2.8-2zM12 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+  />
+</svg>
+`;
+
+exports[`renders AddAlarm 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hKFyIo bJRLVs"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4a9 9 0 00-9 9c0 4.97 4.02 9 9 9a9 9 0 000-18zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Airplane 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eCApGN enGHw"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6.568 4.675l6.302 2.76-2.228 2.326-4.78-4.224a.25.25 0 01-.042-.387l.44-.44a.251.251 0 01.308-.035zm10.403 6.847l2.76 6.315a.252.252 0 01-.036.309l-.44.439a.25.25 0 01-.387-.042l-4.23-4.8 2.333-2.221zM6.84 15.22l-2.692-2.262a.25.25 0 01-.074-.404l.56-.56a.25.25 0 01.31-.034l3.147.82-1.16 2.249c-.028.056-.064.12-.091.19zm4.794 1.102l.894 3.183c.024.087 0 .18-.064.245l-.598.596a.25.25 0 01-.404-.072l-2.275-2.707.17-.085 2.277-1.16zm8.426-12.025l.041.044.017.02c.22.273.25.64.266.864.074 1.216-.075 2.074-.47 2.698l-.036.06a1.713 1.713 0 01-.327.407l-7.48 7.127-.054.051-.065.033-2.817 1.437c-.346.188-1.266.442-1.737-.03-.51-.509-.192-1.438-.028-1.748l1.435-2.807.033-.065.05-.052 7.125-7.479c.303-.322.633-.48.951-.606.637-.24 1.447-.307 2.566-.205a.898.898 0 01.53.251zm-1.172 7.585a.248.248 0 01.354 0l1.06 1.061a.247.247 0 010 .353l-1.385 1.386-.87-1.959.841-.84zM11.11 4.104a.248.248 0 01.354 0l1.06 1.061a.247.247 0 010 .353l-.842.841-1.958-.869 1.386-1.386z"
+  />
+</svg>
+`;
+
+exports[`renders Arrival 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jSFkmK hQWxbc"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2.5 19.5h19v2h-19v-2zm7.2-5.7L14 15l5.3 1.4c.8.2 1.6-.3 1.8-1.1.2-.8-.3-1.6-1.1-1.8l-5.3-1.4-2.8-9-1.8-.6v8.3l-5-1.3-.9-2.4-1.4-.4v5.2l1.6.4 5.3 1.5z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowDown 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gKAblj dcgzRr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 12l-1.4-1.4-5.6 5.6V4h-2v12.2l-5.6-5.6L4 12l8 8 8-8z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowLeft 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iCoHVE UHxho"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowRight 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fujyUd fpdGaf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 4l-1.4 1.4 5.6 5.6H4v2h12.2l-5.6 5.6L12 20l8-8-8-8z"
+  />
+</svg>
+`;
+
+exports[`renders ArrowUp 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-pNWxx dfvMOD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 12l1.4 1.4L11 7.8V20h2V7.8l5.6 5.6L20 12l-8-8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders Attention 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jrsJCI ATQxZ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M1 21.5h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+  />
+</svg>
+`;
+
+exports[`renders Automatic 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kEqYlL fXbJqI"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm2.3-4.7H16L12.9 8h-1.7L8 15.3h1.7l.6-1.4h3.4l.6 1.4zm-3.5-2.7L12 9.7l1.2 2.8h-2.4v.1z"
+  />
+</svg>
+`;
+
+exports[`renders Backpack 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iqAbSa ecNEML"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 8v12c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.86 1.28-3.41 3-3.86V2h3v2h4V2h3v2.14c1.72.45 3 2 3 3.86zM6 12v2h10v2h2v-4H6z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Bag 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-crzoUp fiJtBj"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 6.5h-3v-2c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-11c0-1.1-.9-2-2-2zm-11-2h6v2H9v-2zm11 15H4v-2h16v2zm0-5H4v-6h3v2h2v-2h6v2h2v-2h3v6z"
+  />
+</svg>
+`;
+
+exports[`renders Beach 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dIsAE lmhPxY"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.2 14.6l1.4-1.4 6.4 6.4-1.3 1.4-6.5-6.4zm4.3-5.8L20.4 6c-4-4-10.4-4-14.3-.1 3.9-1.3 8.3-.2 11.4 2.9zM6 6c-3.9 3.9-3.9 10.3.1 14.3L9 17.4C5.8 14.3 4.7 9.9 6 6zm.1 0c-.4 3 1.1 6.8 4.3 10l5.7-5.7C13 7.1 9.1 5.6 6.1 6z"
+  />
+</svg>
+`;
+
+exports[`renders Bed 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bqGHjH iwGgII"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.5 12.3c1.5 0 2.7-1.2 2.7-2.7S9 6.8 7.5 6.8 4.7 8 4.7 9.5s1.2 2.8 2.8 2.8zm10.9-5.5h-7.3v6.4H3.8V5H2v13.6h1.8v-2.7h16.4v2.7H22v-8.1c0-2-1.6-3.7-3.6-3.7z"
+  />
+</svg>
+`;
+
+exports[`renders BedKing 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ksluoS XVpoH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 10V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v3c-1.1 0-2 .9-2 2v5h1.33L4 19h1l.67-2h12.67l.66 2h1l.67-2H22v-5c0-1.1-.9-2-2-2zm-9 0H6V7h5v3zm7 0h-5V7h5v3z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders BedSingle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hBMVcZ juVrvO"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 12c0-1.1-.9-2-2-2V7c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3c-1.1 0-2 .9-2 2v5h1.33L6 19h1l.67-2h8.67l.66 2h1l.67-2H20v-5zm-4-2h-3V7h3v3zM8 7h3v3H8V7zm-2 5h12v3H6v-3z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders BeenHere 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fnVYJo igFJVA"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 1H5c-1.1 0-1.99.9-1.99 2L3 15.93c0 .69.35 1.3.88 1.66L12 23l8.11-5.41c.53-.36.88-.97.88-1.66L21 3c0-1.1-.9-2-2-2zm-9 15l-5-5 1.41-1.41L10 13.17l7.59-7.59L19 7l-9 9z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Bike 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fFSRdu LxrsS"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zm5.8-10l2.4-2.4.8.8c1.3 1.3 3 2.1 5.1 2.1V9c-1.5 0-2.7-.6-3.6-1.5l-1.9-1.9c-.5-.4-1-.6-1.6-.6-.6 0-1.1.2-1.4.6L7.8 8.4c-.4.4-.6.9-.6 1.4 0 .6.2 1.1.6 1.4L11 14v5h2v-6.2l-2.2-2.3zM19 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Bookmark 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bkbjAj bpJbvQ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders BookmarkActivated 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iemXMA epPeHn"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders BoxChecked 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dIvqjp eCHAMS"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+  />
+</svg>
+`;
+
+exports[`renders BoxEmpty 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hHEjAm hOfaJB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+  />
+</svg>
+`;
+
+exports[`renders BoxMinus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dlMBXb kYNuqj"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm1 8v2h10v-2H7z"
+  />
+</svg>
+`;
+
+exports[`renders BoxPlus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kfYqjs cMIagq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm7 4h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"
+  />
+</svg>
+`;
+
+exports[`renders Breakfast 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fKgIGh bbdeIW"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H3v10c0 2.2 1.8 4 4 4h6c2.2 0 4-1.8 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM3 19h16v2H3v-2z"
+  />
+</svg>
+`;
+
+exports[`renders Broom 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bCwgka iAVOEx"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.36 2.72l1.42 1.42-5.72 5.71c1.07 1.54 1.22 3.39.32 4.59l-6.32-6.32c1.2-.9 3.05-.75 4.59.32l5.71-5.72M6.93 17.57c-2.01-2.01-3.24-4.41-3.58-6.65l4.88-2.09 7.44 7.44-2.09 4.88c-2.24-.34-4.64-1.57-6.65-3.58z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Build 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iwaifL kdQQOi"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.7 18.3L13.5 10c.8-2.1.4-4.6-1.4-6.3-1.8-1.8-4.5-2.2-6.7-1.2l3.9 3.9-2.7 2.8-4-3.9c-1.1 2.2-.7 4.9 1.2 6.7 1.7 1.7 4.2 2.2 6.3 1.4l8.3 8.3c.4.4.9.4 1.3 0l2.1-2.1c.3-.3.3-1-.1-1.3z"
+  />
+</svg>
+`;
+
+exports[`renders Bus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cxNIbT dCxXOo"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Business 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-lmgQde ghNQjU"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 16v-1H3v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-7v1h-4zm10-9h-4V5l-2-2h-4L8 5v2H4c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"
+  />
+</svg>
+`;
+
+exports[`renders Cake 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iJCRLp kQPnqQ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 6a2 2 0 002-2 1.69 1.69 0 00-.3-1L12 0l-1.7 3a1.69 1.69 0 00-.3 1 2 2 0 002 2zm4.6 10l-1.1-1.1-1 1.1a3.57 3.57 0 01-4.9 0l-1.1-1.1L7.4 16A3.49 3.49 0 015 17a3.61 3.61 0 01-2-.6V21a1.08 1.08 0 001 1h16a1.08 1.08 0 001-1v-4.6a3.38 3.38 0 01-2 .6 3.5 3.5 0 01-2.4-1zM18 9h-5V7h-2v2H6a3 3 0 00-3 3v1.5a2 2 0 002 2 2 2 0 001.4-.6l2.1-2.1 2.1 2.1a2.13 2.13 0 002.8 0l2.1-2.1 2.1 2.1a2 2 0 001.4.6 2 2 0 002-2V12a3 3 0 00-3-3z"
+  />
+</svg>
+`;
+
+exports[`renders Calendar 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-giAqnE iZVbWX"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders CalendarCheck 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ezzayL fDNWjr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 20H5V9h14m0-5h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2m-2.47 8.06L15.47 11l-4.88 4.88-2.12-2.12-1.06 1.06L10.59 18l5.94-5.94z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders CalendarClock 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bYwzba ibArhf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M14 13h1.5v2.82l2.44 1.41-.75 1.3L14 16.69V13m4-5H4v11h4.67c-.43-.91-.67-1.93-.67-3a7 7 0 017-7c1.07 0 2.09.24 3 .67V8M4 21a2 2 0 01-2-2V5c0-1.11.89-2 2-2h1V1h2v2h8V1h2v2h1a2 2 0 012 2v6.1c1.24 1.26 2 2.99 2 4.9a7 7 0 01-7 7c-1.91 0-3.64-.76-4.9-2H4m11-9.85a4.85 4.85 0 100 9.7 4.85 4.85 0 000-9.7z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders CarCircle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kLokih jmIRfc"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm4.2 5.6c-.1-.3-.4-.6-.8-.6H8.6c-.4 0-.7.3-.8.6l-1.3 3.7v5c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-.6h7.3v.6c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-5l-1.2-3.7zm-7.6 6.3c-.5 0-.9-.4-.9-.9s.4-1 .9-1 .9.4.9.9-.4 1-.9 1zm6.8 0c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9zm-7.7-3.1L8.6 8h6.7l.9 2.8H7.7z"
+  />
+</svg>
+`;
+
+exports[`renders CarDoor 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iklIKw iefuLl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 2h-6.9c-.7 0-1.3.3-1.7.9l-5 7.6c-.3.3-.4.7-.4 1.1V20c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 9H6.7l4.7-7H18v7z"
+  />
+</svg>
+`;
+
+exports[`renders CarWash 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jJMGHv ijIIpu"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 5c.83 0 1.5-.67 1.5-1.5 0-1-1.5-2.7-1.5-2.7s-1.5 1.7-1.5 2.7c0 .83.67 1.5 1.5 1.5zm-5 0c.83 0 1.5-.67 1.5-1.5 0-1-1.5-2.7-1.5-2.7s-1.5 1.7-1.5 2.7c0 .83.67 1.5 1.5 1.5zM7 5c.83 0 1.5-.67 1.5-1.5C8.5 2.5 7 .8 7 .8S5.5 2.5 5.5 3.5C5.5 4.33 6.17 5 7 5zm11.92 3.01C18.72 7.42 18.16 7 17.5 7h-11c-.66 0-1.21.42-1.42 1.01L3 14v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 18c-.83 0-1.5-.67-1.5-1.5S5.67 15 6.5 15s1.5.67 1.5 1.5S7.33 18 6.5 18zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 13l1.5-4.5h11L19 13H5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders CardTravel 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hiKfjK aPhyP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Carriage 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gXfWUo cKrAKq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.5 2v8h8c0-4.4-3.6-8-8-8zm6.3 13.9c1.1-1.4 1.7-3.1 1.7-4.9H6.9L6 9H2.5v2h2.2s1.9 4.1 2.1 4.4C5.7 16 5 17.2 5 18.5 5 20.4 6.6 22 8.5 22c1.8 0 3.2-1.3 3.5-3h2c.2 1.7 1.7 3 3.5 3 1.9 0 3.5-1.6 3.5-3.5 0-1-.5-2-1.2-2.6zM8.5 20c-.8 0-1.5-.7-1.5-1.5S7.7 17 8.5 17s1.5.7 1.5 1.5S9.3 20 8.5 20zm9 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Cars 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cBoprd bxvQri"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.9 5c-.2-.6-.8-1-1.4-1h-11c-.7 0-1.2.4-1.4 1L3 11v8c0 .6.4 1 1 1h1c.5 0 1-.4 1-1v-1h12v1c0 .6.4 1 1 1h1c.5 0 1-.4 1-1v-8l-2.1-6zM6.5 15c-.8 0-1.5-.7-1.5-1.5S5.7 12 6.5 12s1.5.7 1.5 1.5S7.3 15 6.5 15zm11 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"
+  />
+</svg>
+`;
+
+exports[`renders Casino 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ciSmjq kGELYd"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18c-.8 0-1.5-.7-1.5-1.5S6.7 15 7.5 15s1.5.7 1.5 1.5S8.3 18 7.5 18zm0-9C6.7 9 6 8.3 6 7.5S6.7 6 7.5 6 9 6.7 9 7.5 8.3 9 7.5 9zm4.5 4.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4.5 4.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm0-9c-.8 0-1.5-.7-1.5-1.5S15.7 6 16.5 6s1.5.7 1.5 1.5S17.3 9 16.5 9z"
+  />
+</svg>
+`;
+
+exports[`renders ChargeStation 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jcwofb gwIyXT"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.77 7.23l.01-.01-3.72-3.72L15 4.56l2.11 2.11c-.94.36-1.61 1.26-1.61 2.33a2.5 2.5 0 002.5 2.5c.36 0 .69-.08 1-.21v7.21c0 .55-.45 1-1 1s-1-.45-1-1V14c0-1.1-.9-2-2-2h-1V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v5a2.5 2.5 0 005 0V9c0-.69-.28-1.32-.73-1.77zM18 10c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM8 18v-4.5H6L10 6v5h2l-4 7z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Chart 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-carGAA dTEtYl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+  />
+</svg>
+`;
+
+exports[`renders ChartAlt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iTVIwl dKEnUf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Chat 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iBzFoy iFzoIn"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"
+  />
+</svg>
+`;
+
+exports[`renders ChatBubble 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-efHXLn ifwaYD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Check 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cTJmaU hyQqqq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+  />
+</svg>
+`;
+
+exports[`renders Checklist 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jNnnWF huhuRf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13 9.5h5v-2h-5v2zm0 7h5v-2h-5v2zm6 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM6 11h5V6H6v5zm1-4h3v3H7V7zM6 18h5v-5H6v5zm1-4h3v3H7v-3z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ChevronDown 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dPaNSN hqttXo"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronLeft 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bBjRzc gIABGL"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.4 16.6L10.8 12l4.6-4.6L14 6l-6 6 6 6 1.4-1.4z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronRight 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cOigif kgdXmz"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8 16.6l4.6-4.6L8 7.4 9.4 6l6 6-6 6L8 16.6z"
+  />
+</svg>
+`;
+
+exports[`renders ChevronUp 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ArjOu khqwmN"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.4 15.4l4.6-4.6 4.6 4.6L18 14l-6-6-6 6 1.4 1.4z"
+  />
+</svg>
+`;
+
+exports[`renders CityView 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-khIgXV bydlLd"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 11.5v-6l-3-3-3 3v2H3v14h18v-10h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5v-2h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders Clock 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hTRkEk iEddQN"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-7.8l4.5 2.7-.8 1.2L11 13V7h1.5v5.2z"
+  />
+</svg>
+`;
+
+exports[`renders Close 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jgPznn ktCJJN"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+  />
+</svg>
+`;
+
+exports[`renders Cloud 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gSYCTC gyRQAf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.1 10C17.6 7.2 15 5 12 5 9.6 5 7.5 6.4 6.5 8.4 4 8.6 2 10.8 2 13.3c0 2.8 2.2 5 5 5h10.8c2.3 0 4.2-1.9 4.2-4.2 0-2.1-1.7-3.9-3.9-4.1zm-.3 6.7H7c-1.8 0-3.3-1.5-3.3-3.3S5.2 10 7 10h.6c.5-1.9 2.3-3.3 4.4-3.3 2.5 0 4.6 2.1 4.6 4.6v.4h1.2c1.4 0 2.5 1.1 2.5 2.5s-1.1 2.5-2.5 2.5z"
+  />
+</svg>
+`;
+
+exports[`renders CollisionCoverage 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-laZMyp bzkflB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 1l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4zm4.2 6.6c-.1-.3-.4-.6-.8-.6H8.6c-.4 0-.7.3-.8.6l-1.3 3.7v5c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-.6h7.3v.6c0 .3.3.6.6.6h.6c.3 0 .6-.3.6-.6v-5l-1.2-3.7zm-7.6 6.3c-.5 0-.9-.4-.9-.9s.4-1 .9-1 .9.4.9.9-.4 1-.9 1zm6.8 0c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9zm-7.7-3.1L8.6 8h6.7l.9 2.8H7.7z"
+  />
+</svg>
+`;
+
+exports[`renders ContactMail 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iNiQeE eGSJWB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 8V7l-3 2-3-2v1l3 2 3-2zm1-5H2C.9 3 0 3.9 0 5v14c0 1.1.9 2 2 2h20c1.1 0 1.99-.9 1.99-2L24 5c0-1.1-.9-2-2-2zM8 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H2v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1zm8-6h-8V6h8v6z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ContactPhone 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jffIyK gNiCqL"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 3H2C.9 3 0 3.9 0 5v14c0 1.1.9 2 2 2h20c1.1 0 1.99-.9 1.99-2L24 5c0-1.1-.9-2-2-2zM8 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H2v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1zm3.85-4h1.64L21 16l-1.99 1.99A7.512 7.512 0 0116.28 14c-.18-.64-.28-1.31-.28-2s.1-1.36.28-2a7.474 7.474 0 012.73-3.99L21 8l-1.51 2h-1.64c-.22.63-.35 1.3-.35 2s.13 1.37.35 2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ConvenienceStore 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eJoaVz KRpQH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 7V4H5v3H2v13h8v-4h4v4h8V7h-3zm-8 3H9v1h2v1H8V9h2V8H8V7h3v3zm5 2h-1v-2h-2V7h1v2h1V7h1v5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Copy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-oefIU cwdIdi"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 21H9V7h11m0-2H9a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2m-3-4H5a2 2 0 00-2 2v14h2V3h12V1z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Couch 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hhIhEF dSIoxk"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 10c-1.1 0-2 .9-2 2v3H5v-3a2 2 0 10-4 0v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6c-1.1 0-2 .9-2 2v2.15c1.16.41 2 1.52 2 2.81V14h12v-2.03c0-1.3.84-2.4 2-2.81V7c0-1.1-.9-2-2-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Coupon 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eirseW saCjx"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.4 11.6l-9-9c-.3-.4-.8-.6-1.4-.6H4c-1.1 0-2 .9-2 2v7c0 .6.2 1.1.6 1.4l9 9c.4.4.9.6 1.4.6s1.1-.2 1.4-.6l7-7c.4-.4.6-.9.6-1.4s-.2-1.1-.6-1.4zM5.5 7C4.7 7 4 6.3 4 5.5S4.7 4 5.5 4 7 4.7 7 5.5 6.3 7 5.5 7z"
+  />
+</svg>
+`;
+
+exports[`renders CreditCard 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-lbVuaH izAbEO"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+  />
+</svg>
+`;
+
+exports[`renders Cruises 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gGLyOc kxHKn"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.2 20.2c-1.3 0-2.5-.5-3.6-1.2-2.2 1.5-5 1.5-7.2 0-1.1.7-2.3 1.2-3.6 1.2H3V22h1.8c1.3 0 2.4-.4 3.6-.9 2.2 1.2 5 1.2 7.2 0 1.2.5 2.3.9 3.6.9H21v-1.8h-1.8zM4.8 18.4c1.4 0 2.7-.8 3.6-1.8.9 1 2.2 1.8 3.6 1.8s2.7-.8 3.6-1.8c.9 1 2.2 1.8 3.6 1.8l1.7-6.1c.1-.3.1-.5-.1-.7-.1-.2-.3-.4-.5-.5l-1.1-.4V6.5c0-1-.8-1.8-1.8-1.8h-2.7V2H9.3v2.7H6.6c-1 0-1.8.8-1.8 1.8v4.2l-1.2.4c-.3.1-.5.3-.5.5-.1.1-.1.5-.1.7l1.8 6.1zM6.6 6.5h10.8v3.6L12 8.4l-5.4 1.8V6.5z"
+  />
+</svg>
+`;
+
+exports[`renders Departure 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ckTRkR iVvYIB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2.5 19h19v2h-19v-2zm19.6-9.9c-.2-.8-1-1.3-1.8-1.1l-5.4 1.5L8 3.1l-1.9.5 4.1 7.2-5 1.3-1.9-1.6-1.5.4 1.8 3.2.8 1.3L6 15l5.3-1.4 4.3-1.2L21 11c.8-.2 1.3-1.1 1.1-1.9z"
+  />
+</svg>
+`;
+
+exports[`renders Devices 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fbIXFq bILgWw"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M5.4 6.8h15V5h-15c-.9 0-1.7.7-1.7 1.8v9.6H2V19h11.6v-2.6H5.4V6.8zm15.8 1.7h-5c-.5 0-.8.4-.8.8v8.8c0 .5.4.8.8.8h5c.5 0 .8-.4.8-.8V9.4c0-.5-.4-.9-.8-.9zm-.8 7.9H17v-6.2h3.4v6.2z"
+  />
+</svg>
+`;
+
+exports[`renders DevicesImportant 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-FRqcf iEBFGe"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12a2 2 0 002 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4a2 2 0 00-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Directions 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fXazxj kCVeSt"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.7 11.3l-9-9c-.4-.4-1-.4-1.4 0l-9 9c-.4.4-.4 1 0 1.4l9 9c.4.4 1 .4 1.4 0l9-9c.4-.4.4-1 0-1.4zM14 14.5V12h-4v3H8v-4c0-.5.5-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"
+  />
+</svg>
+`;
+
+exports[`renders Discount 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dvXXZy faOLQn"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 12l-2.4 2.7.3 3.5-3.6.8-1.9 3-3.4-1.4L8.6 22l-1.9-3-3.6-.8.3-3.5L1 12l2.4-2.7-.3-3.5L6.7 5l1.9-3L12 3.4 15.4 2l1.9 3 3.6.8-.3 3.5L23 12zm-10.8-.6c-1.3-.3-1.8-.7-1.8-1.3 0-.6.6-1.1 1.6-1.1s1.4.5 1.5 1.2h1.3c0-1-.7-1.9-1.9-2.2V6.7h-1.8V8c-1.1.2-2 1-2 2.1 0 1.3 1.1 2 2.8 2.4 1.5.4 1.8.9 1.8 1.4 0 .4-.3 1-1.6 1-1.2 0-1.7-.5-1.8-1.2H9c.1 1.3 1 2 2.2 2.2v1.3H13V16c1.1-.2 2.1-.9 2.1-2.1-.1-1.6-1.5-2.2-2.9-2.5z"
+  />
+</svg>
+`;
+
+exports[`renders Document 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-TtZHJ gVZcZq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+  />
+</svg>
+`;
+
+exports[`renders Dollar 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jHNhIU kdMFlG"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 10.9c-2.3-.6-3-1.2-3-2.1C9 7.7 10 7 11.7 7c1.8 0 2.4.8 2.5 2.1h2.2c-.1-1.7-1.1-3.3-3.2-3.8V3h-3v2.2c-1.9.4-3.5 1.6-3.5 3.6 0 2.3 1.9 3.5 4.7 4.1 2.5.6 3 1.5 3 2.4 0 .7-.5 1.8-2.7 1.8-2.1 0-2.9-.9-3-2.1H6.5c.1 2.2 1.8 3.4 3.7 3.8V21h3v-2.1c1.9-.4 3.5-1.5 3.5-3.6 0-2.8-2.4-3.8-4.7-4.4z"
+  />
+</svg>
+`;
+
+exports[`renders DollarCircle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-amjdv dVfwNu"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1.4 16.1V20h-2.7v-1.9c-1.7-.4-3.2-1.5-3.3-3.4h2c.1 1.1.8 1.9 2.6 1.9 2 0 2.4-1 2.4-1.6 0-.8-.4-1.6-2.7-2.1-2.5-.6-4.2-1.6-4.2-3.7 0-1.7 1.4-2.8 3.1-3.2V4h2.7v1.9c1.9.5 2.8 1.9 2.9 3.4h-2c-.1-1.1-.6-1.9-2.2-1.9-1.5 0-2.4.7-2.4 1.6 0 .8.6 1.4 2.7 1.9 2 .5 4.2 1.4 4.2 3.9 0 2-1.4 3-3.1 3.3z"
+  />
+</svg>
+`;
+
+exports[`renders Dot 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jOFreG dySPOx"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 7c-2.75 0-5 2.25-5 5s2.25 5 5 5 5-2.25 5-5-2.25-5-5-5z"
+  />
+</svg>
+`;
+
+exports[`renders DoubleOccupancy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hmbsMR hlYVxJ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.066 3.6a1.6 1.6 0 11-3.199 0 1.6 1.6 0 013.2 0zM9.2 5.934c1 0 1.866.866 1.933 1.866v4.534l-1.667 1.6v6.8c0 .666-.533 1.266-1.2 1.266H6.8c-.667 0-1.2-.6-1.134-1.266v-6.667-.133L4 12.334V7.8c0-1 .8-1.866 1.8-1.866h3.4zM17.489 3.6a1.6 1.6 0 11-3.2 0 1.6 1.6 0 013.2 0zm.2 2.334c1 0 1.8.866 1.866 1.866v4.534l-1.666 1.6v6.8c0 .666-.534 1.266-1.2 1.266h-1.467c-.667 0-1.133-.6-1.133-1.266v-6.667-.133l-1.667-1.6V7.8c0-1 .8-1.866 1.8-1.866h3.467z"
+  />
+</svg>
+`;
+
+exports[`renders Download 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eKYRpg diUwqM"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+  />
+</svg>
+`;
+
+exports[`renders DownloadAlt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bTDODP bjJeRb"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3H4.99c-1.11 0-1.98.9-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10zm-3-5h-2V7h-4v3H8l4 4 4-4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders EarlyBird 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kHWWFa eOhqLS"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.1 14.9L22 12l-2.9-2.9V4.9H15L12 2 9.1 4.9H4.9V9L2 12l2.9 2.9V19H9l3 3 2.9-2.9H19v-4.2zM12 17.3c-2.9 0-5.3-2.4-5.3-5.3S9.1 6.7 12 6.7s5.3 2.4 5.3 5.3-2.4 5.3-5.3 5.3z"
+  />
+</svg>
+`;
+
+exports[`renders Edit 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hOPghE fNgVsr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 17.2V21h3.8l11-11.1L14 6.1 3 17.2zM20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9 20.7 7z"
+  />
+</svg>
+`;
+
+exports[`renders Electric 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dsXyEt KLZgl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7 2v11h3v9l7-12h-4l4-8H7z"
+  />
+</svg>
+`;
+
+exports[`renders Email 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-daBvwG doyehj"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+  />
+</svg>
+`;
+
+exports[`renders Emoticon 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jUfxsr ieswfq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm3.5-9c.8 0 1.5-.7 1.5-1.5S16.3 8 15.5 8 14 8.7 14 9.5s.7 1.5 1.5 1.5zm-7 0c.8 0 1.5-.7 1.5-1.5S9.3 8 8.5 8 7 8.7 7 9.5 7.7 11 8.5 11zm3.5 6.5c2.3 0 4.3-1.5 5.1-3.5H6.9c.8 2 2.8 3.5 5.1 3.5z"
+  />
+</svg>
+`;
+
+exports[`renders Event 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jQAyEw bHqXKf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 13h-5v5h5v-5zM16 2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-1V2h-2zm3 18H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders EventAvailable 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fuIRbl ktzbo"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.5 12.1l-1-1.1-4.9 4.9-2.1-2.1-1.1 1.1 3.2 3.2 5.9-6zM19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders EventBusy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fcmNTy gqWQLB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.3 18l2.4-2.4 2.4 2.4 1.1-1.1-2.4-2.4 2.4-2.4-1-1.1-2.4 2.4L9.3 11l-1.1 1.1 2.4 2.4-2.4 2.4L9.3 18zM19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  />
+</svg>
+`;
+
+exports[`renders ExitToApp 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-Gvgqn gGuoTz"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5a2 2 0 00-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 002 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ExternalLink 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gsWdvU kPvkQi"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+</svg>
+`;
+
+exports[`renders Facebook 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bXevSJ itsTIm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.9 22H3.1c-.6 0-1.1-.5-1.1-1.1V3.1C2 2.5 2.5 2 3.1 2h17.8c.6 0 1.1.5 1.1 1.1v17.8c0 .6-.5 1.1-1.1 1.1zm-5.1 0v-7.7h2.6l.4-3h-3v-2c0-.9.2-1.5 1.5-1.5h1.6V5.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2h-2.6v3h2.6V22h3.1z"
+  />
+</svg>
+`;
+
+exports[`renders Family 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eGJXgd hZNJVR"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16 4c0-1.11.89-2 2-2 1.11 0 2 .89 2 2 0 1.11-.89 2-2 2-1.11 0-2-.89-2-2zm4 17v-5h1.11c.68 0 1.16-.67.95-1.32l-2.1-6.31A2.01 2.01 0 0018.06 7h-.12a2 2 0 00-1.9 1.37l-.86 2.58c1.08.6 1.82 1.73 1.82 3.05v8h2c.55 0 1-.45 1-1zm-7.5-9.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2 0-1.11-.89-2-2-2-1.11 0-2 .89-2 2 0 1.11.89 2 2 2zm2 15v-6H8c.55 0 1-.45 1-1V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v5c0 .55.45 1 1 1h.5v6c0 .55.45 1 1 1h2c.55 0 1-.45 1-1zm2.5-7v3c0 .55.45 1 1 1v3c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-3c.55 0 1-.45 1-1v-3c0-.82-.68-1.5-1.5-1.5h-2c-.82 0-1.5.68-1.5 1.5"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders FavoriteHotel 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-csTaMs eiYqCF"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 20.9l-1.4-1.3C5.4 14.9 2 11.8 2 8c0-3.1 2.4-5.5 5.5-5.5 1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1C19.6 2.5 22 4.9 22 8c0 3.8-3.4 6.9-8.6 11.5L12 20.9zM9.7 10.7c.8 0 1.4-.6 1.4-1.4s-.6-1.4-1.4-1.4c-.7 0-1.3.7-1.3 1.4s.6 1.4 1.3 1.4zm5.5-2.8h-3.6v3.3H7.9V7H7v7h.9v-1.4h8.2V14h.9V9.8c0-1-.8-1.9-1.8-1.9z"
+  />
+</svg>
+`;
+
+exports[`renders Filter 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dFRpvv dsrQja"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+  />
+</svg>
+`;
+
+exports[`renders Fitness 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bsatbK bgWwsr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.6 14.9l1.4-1.4-1.4-1.5-3.6 3.6L8.4 7 12 3.4 10.6 2 9.1 3.4 7.7 2 5.6 4.1 4.1 2.7 2.7 4.1l1.4 1.4L2 7.7l1.4 1.4L2 10.6 3.4 12 7 8.4l8.6 8.6-3.6 3.6 1.4 1.4 1.4-1.4 1.4 1.4 2.1-2.1 1.4 1.4 1.4-1.4-1.4-1.4 2.1-2.1-1.2-1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Flame 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gIvpCV eFxuqP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.5 1s.7 2.7.7 4.8c0 2.1-1.3 3.7-3.4 3.7-2.1 0-3.6-1.7-3.6-3.7v-.4C5.2 7.8 4 10.9 4 14.3c0 4.4 3.6 8 8 8s8-3.6 8-8C20 8.9 17.4 4.1 13.5 1zm-1.8 18.3c-1.8 0-3.2-1.4-3.2-3.1 0-1.6 1.1-2.8 2.8-3.1 1.8-.4 3.6-1.2 4.6-2.6.4 1.3.6 2.7.6 4 0 2.7-2.1 4.8-4.8 4.8z"
+  />
+</svg>
+`;
+
+exports[`renders FlightCircle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-euEtjk dycXXq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm5 12.2v-1.1l-4.2-2.8v-3c0-.5-.4-.8-.8-.8s-.8.4-.8.8v3L7 13.1v1.1l4.2-1.4v3l-1.1.8v.8L12 17l1.8.5v-.8l-1.1-.8v-3l4.3 1.3z"
+  />
+</svg>
+`;
+
+exports[`renders FlightCoverage 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fHCHSn fnjrRG"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 1l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4zm5 12.7v-1.1l-4.2-2.8v-3c0-.4-.4-.8-.8-.8s-.8.4-.8.8v3L7 12.6v1.1l4.2-1.4v3l-1.1.8v.9l1.8-.5 1.8.5v-.8l-1.1-.8v-3l4.4 1.3z"
+  />
+</svg>
+`;
+
+exports[`renders Flights 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dtLLyC kXiWBc"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.5 16v-2l-8-5V3.5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z"
+  />
+</svg>
+`;
+
+exports[`renders FreeCancellation 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dkQUut jCskfA"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 12h-3c0 4.4-3.6 8-8 8-1.6 0-3-.5-4.3-1.2l1.5-1.5c.8.5 1.8.7 2.8.7 3.3 0 6-2.7 6-6h-3l4-4 4 4zM6 12c0-3.3 2.7-6 6-6 1 0 2 .2 2.8.7l1.5-1.5C15 4.5 13.6 4 12 4c-4.4 0-8 3.6-8 8H1l4 4 4-4H6z"
+  />
+</svg>
+`;
+
+exports[`renders Fridge 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-WZYaI cvnGUq"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 21c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1h12c.6 0 1 .4 1 1v17c0 .6-.4 1-1 1v1h-2v-1H8v1H6v-1zM19 9V8H5v1h14zM7 4v2h2V4H7zm0 7v6h2v-6H7z"
+  />
+</svg>
+`;
+
+exports[`renders Gallery 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ikXwZx BaOXh"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2 2.7 3-3.7 4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"
+  />
+</svg>
+`;
+
+exports[`renders Gas 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-uxeQQ dPbTzy"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.8 7.2l-3.7-3.7L15 4.6l2.1 2.1c-.9.3-1.6 1.2-1.6 2.3 0 1.4 1.1 2.5 2.5 2.5.4 0 .7-.1 1-.2v7.2c0 .5-.4 1-1 1s-1-.5-1-1V14c0-1.1-.9-2-2-2h-1V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v5c0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5V9c0-.7-.3-1.3-.7-1.8zM12 10H6V5h6v5zm6 0c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"
+  />
+</svg>
+`;
+
+exports[`renders Globe 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-biJoGX dhxFcT"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm6.9 6H16c-.3-1.2-.8-2.5-1.4-3.6 1.8.7 3.4 1.9 4.3 3.6zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.4 1.1-2.8 1.9-4zM4.3 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2h3.4c-.1.7-.1 1.3-.1 2s.1 1.3.1 2H4.3zm.8 2h3c.3 1.2.8 2.5 1.4 3.6-1.9-.7-3.5-1.9-4.4-3.6zM8 8H5c1-1.7 2.5-2.9 4.3-3.6C8.8 5.5 8.3 6.8 8 8zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.4-1.1 2.8-1.9 4zm2.3-6H9.7c-.1-.7-.2-1.3-.2-2s.1-1.4.2-2h4.7c.1.6.2 1.3.2 2s-.2 1.3-.3 2zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9c-.9 1.6-2.5 2.9-4.3 3.6zm1.8-5.6c.1-.7.1-1.3.1-2s-.1-1.3-.1-2h3.4c.2.6.3 1.3.3 2s-.1 1.4-.3 2h-3.4z"
+  />
+</svg>
+`;
+
+exports[`renders Golf 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eHEFXm hKpGOV"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.5 18c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zM17 5.9L9 2v18H7v-1.7c-1.8.4-3 1-3 1.7 0 1.1 2.7 2 6 2s6-.9 6-2c0-1-2.2-1.8-5-2V9l6-3.1z"
+  />
+</svg>
+`;
+
+exports[`renders GolfTee 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hzUJqN eLeVgE"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 17v2h-2c-1.1 0-2 .9-2 2v1h-2v-1c0-1.1-.9-2-2-2H7v-2h10zM12 2c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7zm0 2C9.24 4 7 6.24 7 9s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm-2 3a1 1 0 110 2 1 1 0 010-2zm4 0a1 1 0 110 2 1 1 0 010-2zm-2-2a1 1 0 110 2 1 1 0 010-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Gps 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kYQaHc fKCGpX"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 8.4c-2 0-3.6 1.6-3.6 3.6s1.6 3.6 3.6 3.6 3.6-1.6 3.6-3.6S14 8.4 12 8.4zm8.1 2.7c-.5-3.8-3.5-6.8-7.2-7.2V2h-1.8v1.9c-3.8.4-6.8 3.4-7.2 7.2H2v1.8h1.9c.5 3.8 3.5 6.8 7.2 7.2V22h1.8v-1.9c3.8-.5 6.8-3.5 7.2-7.2H22v-1.8h-1.9zM12 18.4c-3.5 0-6.4-2.8-6.4-6.4S8.5 5.6 12 5.6s6.4 2.8 6.4 6.4-2.9 6.4-6.4 6.4z"
+  />
+</svg>
+`;
+
+exports[`renders Graph 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-xGAYn elaQrP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3.5 18.5l6-6 4 4L22 6.9l-1.4-1.4-7.1 8-4-4L2 17l1.5 1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Grid 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dWBSoC ztYPM"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+  />
+</svg>
+`;
+
+exports[`renders GuestScore 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jHcYrh epSAuM"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-1.105 0-2 .895-2 2v18l4-4h14c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zm-4.898 12.398L12 12.602 8.898 14.5 9.7 11 7 8.602l3.602-.301L12 5l1.398 3.3L17 8.603 14.3 11z"
+  />
+</svg>
+`;
+
+exports[`renders Guests 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bQCGiA eRjYyl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.5 12c1.4 0 2.5-1.1 2.5-2.5S17.9 7 16.5 7 14 8.1 14 9.5s1.1 2.5 2.5 2.5zM9 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm7.5 3c-1.8 0-5.5.9-5.5 2.8V19h11v-2.2c0-1.9-3.7-2.8-5.5-2.8zM9 13c-2.3 0-7 1.2-7 3.5V19h7v-2.2c0-.9.3-2.3 2.4-3.5-.9-.2-1.7-.3-2.4-.3z"
+  />
+</svg>
+`;
+
+exports[`renders Help 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fXgAFM drtiyh"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 17h-2v-2h2v2zm2.1-7.8l-.9.9c-.8.8-1.2 1.4-1.2 2.9h-2v-.5c0-1.1.4-2.1 1.2-2.8l1.2-1.3c.4-.3.6-.8.6-1.4 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.2 1.8-4 4-4s4 1.8 4 4c0 .9-.4 1.7-.9 2.2z"
+  />
+</svg>
+`;
+
+exports[`renders History 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-EZpBh jXPdTD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 12c0 4.7-3.8 8.6-8.6 8.6-2.4 0-4.5-1-6.1-2.5l1.4-1.4c1.2 1.2 2.9 2 4.7 2A6.7 6.7 0 106.7 12h2.9l-3.8 3.8-.1-.1L2 12h2.9c0-4.7 3.8-8.6 8.6-8.6S22 7.3 22 12zm-9.5-3.8V13l4.1 2.4.7-1.2-3.3-2v-4h-1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Home 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jXcwIi bQPcNM"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8h5z"
+  />
+</svg>
+`;
+
+exports[`renders HotelCircle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eEVlDD keWfxs"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zM9.7 12.2c.8 0 1.4-.6 1.4-1.4s-.6-1.4-1.4-1.4c-.8 0-1.4.6-1.4 1.4s.7 1.4 1.4 1.4zm5.5-2.8h-3.6v3.3H7.9V8.5H7v7h.9v-1.4h8.2v1.4h.9v-4.2c0-1-.8-1.9-1.8-1.9z"
+  />
+</svg>
+`;
+
+exports[`renders Hotels 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fmdMXc bIFwRX"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+  />
+</svg>
+`;
+
+exports[`renders House 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ljslrt iomQql"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4.5 3a.83.83 0 00-.81.63L2 10.29a.83.83 0 00.81 1v8.33a1.68 1.68 0 001.69 1.71h15a1.68 1.68 0 001.67-1.67v-8.33a.83.83 0 00.81-1l-1.67-6.7A.83.83 0 0019.5 3h-15zM12 6.33l5 5h2.5v8.33h-5.83V15.5a1.67 1.67 0 00-3.33 0v4.17H4.5v-8.34H7zm-5.83 7.5v2.5h2.5v-2.5h-2.5zm9.17 0v2.5h2.5v-2.5h-2.5z"
+  />
+</svg>
+`;
+
+exports[`renders Hybrid 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jlZIZy bupruI"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 7.5c-9 2-11.1 8.2-13.2 13.3l1.9.7.9-2.3c.5.2 1 .3 1.4.3 11 0 14-17 14-17-1 2-8 2.2-13 3.2s-7 5.2-7 7.2 1.8 3.8 1.8 3.8C7 7.5 17 7.5 17 7.5z"
+  />
+</svg>
+`;
+
+exports[`renders Image 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dTSxUT OXSVI"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 3H3C2 3 1 4 1 5v14c0 1.1.9 2 2 2h18c1 0 2-1 2-2V5c0-1-1-2-2-2zM5 17l3.5-4.5 2.5 3.01L14.5 11l4.5 6H5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ImageWide 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-htmbXw wpBNm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 18V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2zM8.5 12.5l2.5 3.01L14.5 11l4.5 6H5l3.5-4.5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Inclusive 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cbeQSR eHKoYy"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.8 13.1l2.8-2.8-7-7C2 4.9 2 7.4 3.6 9l4.2 4.1zm6.8-1.8c1.5.7 3.7.2 5.3-1.4 1.9-1.9 2.2-4.6.8-6.1-1.5-1.5-4.2-1.1-6.1.8-1.6 1.6-2.1 3.7-1.4 5.3l-9.8 9.8 1.4 1.4 6.9-6.9 6.9 6.9 1.4-1.4-6.9-6.9 1.5-1.5z"
+  />
+</svg>
+`;
+
+exports[`renders Information 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hkePoP bObQlb"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders InformationOutline 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gVFdEO fCTMzz"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 17h2v-6h-2v6zm1-15C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM11 9h2V7h-2v2z"
+  />
+</svg>
+`;
+
+exports[`renders Instagram 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fWWZrV bNWdum"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.9 7.9c0-1.1-.2-1.8-.5-2.4-.3-.7-.6-1.2-1.2-1.8s-1.1-.9-1.8-1.2c-.6-.2-1.4-.4-2.4-.5h-4c-2.7 0-3.1 0-4.1.1-1.1 0-1.8.2-2.4.5-.7.2-1.3.5-1.8 1.1s-.9 1.1-1.2 1.8c-.2.6-.4 1.3-.4 2.4C2 8.9 2 9.3 2 12s0 3.1.1 4.1c0 1.1.2 1.8.5 2.4.3.7.6 1.2 1.2 1.8s1.1.9 1.8 1.2c.6.2 1.4.4 2.4.5h4c2.7 0 3.1 0 4.1-.1 1.1 0 1.8-.2 2.4-.5.7-.3 1.2-.6 1.8-1.2s.9-1.1 1.2-1.8c.2-.6.4-1.4.5-2.4 0-1.1.1-1.4.1-4.1s-.1-3-.2-4zM20.1 16c0 1-.2 1.5-.3 1.9-.2.5-.4.8-.7 1.1-.3.3-.7.6-1.1.7-.4.1-.9.3-1.9.3-1.1 0-1.4.1-4 .1-2.7 0-3 0-4-.1-1 0-1.5-.2-1.9-.3-.6-.1-.9-.3-1.2-.7-.3-.3-.6-.7-.7-1.1-.2-.4-.4-.9-.4-1.9 0-1.1-.1-1.4-.1-4s0-3 .1-4c0-1 .2-1.5.3-1.9.2-.5.4-.8.8-1.1.3-.3.7-.6 1.1-.7.4-.2.9-.4 1.9-.4 1.1 0 1.4-.1 4-.1s3 0 4 .1c1 0 1.5.2 1.9.3.5.2.8.4 1.1.8.3.3.6.7.7 1.1.2.4.4.9.4 1.9 0 1.1.1 1.4.1 4s0 3-.1 4zM12 6.9c-2.8 0-5.1 2.3-5.1 5.1s2.3 5.1 5.1 5.1 5.1-2.3 5.1-5.1-2.3-5.1-5.1-5.1zm0 8.4c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3zm6.5-8.6c0 .7-.5 1.2-1.2 1.2s-1.2-.5-1.2-1.2.5-1.2 1.2-1.2 1.2.5 1.2 1.2z"
+  />
+</svg>
+`;
+
+exports[`renders Key 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fIxnHU bHuVCW"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12.6 10.1C11.8 8 9.8 6.5 7.5 6.5 4.4 6.5 2 8.9 2 12s2.4 5.5 5.5 5.5c2.4 0 4.4-1.5 5.1-3.6h4v3.6h3.6v-3.7H22v-3.7h-9.4zm-5.1 3.7c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8z"
+  />
+</svg>
+`;
+
+exports[`renders Kitchen 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gzcbGf eedvtD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 15v5a2 2 0 01-2 2H10v-7h13zM4.5 2A2.5 2.5 0 017 4.5a.75.75 0 01-1.493.102L5.5 4.5a1 1 0 00-1.993-.117L3.5 4.5V8H9v14H3a2 2 0 01-2-2V10a2 2 0 011-1.732V4.5A2.5 2.5 0 014.5 2zM21 8a2 2 0 012 2v4H10V8h11zM6 10a1 1 0 100 2 1 1 0 000-2zm8 0a1 1 0 100 2 1 1 0 000-2zm5 0a1 1 0 100 2 1 1 0 000-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Kitchenette 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gkCpWe jFqAWz"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 2H4c-.6 0-1 .4-1 1v3h18V3c0-.6-.4-1-1-1zM6 5c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm4 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm4 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm4 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zM3 20c0 .6.4 1 1 1h1v1h2v-1h10v1h2v-1h1c.6 0 1-.4 1-1V7H3v13zM7 8h10v1H7V8zm-2 2h14v9H5v-9z"
+  />
+</svg>
+`;
+
+exports[`renders Laptop 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-flUlJl fYfalL"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.6 17.2c.9 0 1.6-.8 1.6-1.8V6.8c0-1-.7-1.8-1.6-1.8H5.4c-.9 0-1.7.8-1.7 1.8v8.8c0 1 .7 1.8 1.6 1.8H2V19h20v-1.8h-3.4zM5.4 6.8h13.4v8.8H5.4V6.8z"
+  />
+</svg>
+`;
+
+exports[`renders LateNight 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eXuzZk bdIiVl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm.8 5c-2.9 0-5.3 2.2-5.3 5s2.4 5 5.3 5c1 0 1.9-.2 2.7-.7-1.6-.9-2.7-2.5-2.7-4.3s1.1-3.5 2.7-4.3c-.8-.5-1.7-.7-2.7-.7z"
+  />
+</svg>
+`;
+
+exports[`renders List 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iGkqGz fqOjvP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+  />
+</svg>
+`;
+
+exports[`renders ListContained 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-irKEWy gjxpaF"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 5v14H5V5h14m1.1-2H3.9c-.5 0-.9.4-.9.9v16.2c0 .4.4.9.9.9h16.2c.4 0 .9-.5.9-.9V3.9c0-.5-.5-.9-.9-.9zM11 7h6v2h-6V7zm0 4h6v2h-6v-2zm0 4h6v2h-6v-2zM7 7h2v2H7V7zm0 4h2v2H7v-2zm0 4h2v2H7v-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders LocalBar 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eWnSVe bGonVm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 5V3H3v2l8 9v5H6v2h12v-2h-5v-5l8-9zM7.4 7L5.7 5h12.7l-1.8 2H7.4z"
+  />
+</svg>
+`;
+
+exports[`renders Lock 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kTCrpv gWOQta"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 9.5h-1v-2c0-2.8-2.2-5-5-5s-5 2.2-5 5v2H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm-6 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-8H8.9v-2c0-1.7 1.4-3.1 3.1-3.1s3.1 1.4 3.1 3.1v2z"
+  />
+</svg>
+`;
+
+exports[`renders Loyalty 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dvUxUk fcQjSv"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.4 11.6l-9-9c-.3-.4-.8-.6-1.4-.6H4c-1.1 0-2 .9-2 2v7c0 .6.2 1.1.6 1.4l9 9c.4.4.9.6 1.4.6s1.1-.2 1.4-.6l7-7c.4-.4.6-.9.6-1.4s-.2-1.1-.6-1.4zM5.5 7C4.7 7 4 6.3 4 5.5S4.7 4 5.5 4 7 4.7 7 5.5 6.3 7 5.5 7zm11.8 8.3L13 19.5l-4.3-4.3c-.4-.4-.7-1-.7-1.7 0-1.4 1.1-2.5 2.5-2.5.7 0 1.3.3 1.8.7l.7.7.7-.7c.5-.4 1.1-.7 1.8-.7 1.4 0 2.5 1.1 2.5 2.5 0 .7-.3 1.3-.7 1.8z"
+  />
+</svg>
+`;
+
+exports[`renders Luggage 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jtiWoB kNDBVD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 6.5h-4v-2c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-11c0-1.1-.9-2-2-2zm-6 0h-4v-2h4v2z"
+  />
+</svg>
+`;
+
+exports[`renders LuggageNo 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ellfmu eXmmQh"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 21.74l-1.46-1.46L7.21 5.95 3.25 1.99 1.99 3.25l2.7 2.7h-.64c-1.11 0-1.99.89-1.99 2l-.01 11c0 1.11.89 2 2 2h15.64L21.74 23 23 21.74zM22 7.95c.05-1.11-.84-2-1.95-1.95h-4V3.95c0-1.11-.89-2-2-1.95h-4c-1.11-.05-2 .84-2 1.95v.32l13.95 14V7.95zM14.05 6H10V3.95h4.05V6z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Manual 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kizDGL dDoHfp"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM7.4 8h2l2.5 4.9L14.4 8h2v8h-1.6v-5.4l-2.3 4.6h-1.1l-2.3-4.6V16H7.4V8z"
+  />
+</svg>
+`;
+
+exports[`renders Map 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cKRKlA ehSjhm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.5 3h-.2L15 5.1 9 3 3.4 4.9c-.2.1-.4.3-.4.5v15.1c0 .3.2.5.5.5h.2L9 18.9l6 2.1 5.6-1.9c.2-.1.4-.2.4-.5V3.5c0-.3-.2-.5-.5-.5zM15 19l-6-2.1V5l6 2.1V19z"
+  />
+</svg>
+`;
+
+exports[`renders Menu 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iIgiFR fmiVdc"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 13h18v-2H3v2zm0 5h18v-2H3v2zM3 6v2h18V6H3z"
+  />
+</svg>
+`;
+
+exports[`renders Microwave 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gstumO fsjKid"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 5.5H3c-.6 0-1 .4-1 1v10c0 .6.4 1 1 1h1v1h2v-1h12v1h2v-1h1c.6 0 1-.4 1-1v-10c0-.6-.4-1-1-1zm-6 10H4v-8h11v8zm2 0c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm0-3c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm0-3c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1zm3 6h-1v-8h1v8z"
+  />
+</svg>
+`;
+
+exports[`renders Mileage 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-amjij FxVfD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 16c-1.7 0-3-1.3-3-3 0-1.1.6-2.1 1.5-2.6l9.7-5.6-5.5 9.6c-.5.9-1.5 1.6-2.7 1.6zm0-13c1.8 0 3.5.5 5 1.3l-2.1 1.2C14 5.2 13 5 12 5c-4.4 0-8 3.6-8 8 0 2.2.9 4.2 2.3 5.6.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0C3.1 18.3 2 15.8 2 13 2 7.5 6.5 3 12 3zm10 10c0 2.8-1.1 5.3-2.9 7.1-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4 1.5-1.4 2.3-3.4 2.3-5.6 0-1-.2-2-.5-2.9L20.7 8c.8 1.5 1.3 3.2 1.3 5z"
+  />
+</svg>
+`;
+
+exports[`renders Minus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kmIPwp itXnbi"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7 11v2h10v-2H7z"
+  />
+</svg>
+`;
+
+exports[`renders MoreHorizontal 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cwixnI cfbIZA"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders MoreVertical 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dkuHdP eQiDEQ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders MultiAirline 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gJpYue leTCaG"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M5 14.167l1.667-5.334H3l-1 1.334H1l.667-2.334L1 5.5h1l1 1.333h3.667L5 1.5h1.333l3.334 5.333h3.666c.534 0 1 .467 1 1s-.466 1-1 1H9.667l-3.334 5.334zm8.667 8.33l1.666-5.334h-3.666l-1 1.334h-1l.666-2.334-.666-2.333h1l1 1.333h3.666L13.667 9.83H15l3.333 5.333H22c.533 0 1 .467 1 1 0 .534-.467 1-1 1h-3.667L15 22.497z"
+  />
+</svg>
+`;
+
+exports[`renders MultiOccupancy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fyjqTV deFArE"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.237 11.713h2.262v1.747h-2.262v2.268H19.49V13.46h-2.27v-1.747h2.27V9.445h1.747v2.268zm-10.87-7.412a1.601 1.601 0 11-3.202 0 1.601 1.601 0 013.203 0zM5.252 5.904a1.356 1.356 0 11-2.71 0 1.356 1.356 0 012.71 0zm-.555 6.467v.058l1.355 1.356-.617.616v5.548c0 .555-.431 1.047-.986 1.047H3.28c-.555 0-.986-.492-.986-1.047v-5.543L1 13.112V9.354c0-.801.74-1.54 1.54-1.54h2.218c-.062.06-.062.184-.062.307v4.25zM14.93 5.904a1.356 1.356 0 11-2.71 0 1.356 1.356 0 012.71 0zm.125 1.908c1.477 0 1.477 1.541 1.477 1.541v3.696l-1.353 1.354v5.543c0 .555-.432 1.047-.986 1.047h-1.17c-.495 0-.987-.492-.987-1.047v-5.543l-.677-.677 1.356-1.356V8.12v-.308h2.34zM10.37 6.581c1.48 0 1.478 1.54 1.476 1.54v4.128l-1.478 1.478v6.221c0 .616-.308 1.293-.924 1.293H8.15c-.554 0-1.17-.677-1.17-1.293V13.85v-.123l-.123-.123L5.44 12.25V8.12c0-.124.307-1.54 1.847-1.54h3.082z"
+  />
+</svg>
+`;
+
+exports[`renders Museum 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iXeIkk cvWYAb"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 11V9L12 2 2 9v2h2v9H2v2h20v-2h-2v-9h2zm-6 7h-2v-4l-2 3-2-3v4H8v-7h2l2 3 2-3h2v7z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Navigation 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jLqSar loGMzp"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders NewRelease 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bUQzRK hxZtCr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Notification 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-tsHpd OsRfB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2a8.445 8.445 0 013.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43a8.495 8.495 0 013.54 6.42zM18 11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-6 11c.14 0 .27-.01.4-.04.65-.14 1.18-.58 1.44-1.18.1-.24.15-.5.15-.78h-4c.01 1.1.9 2 2.01 2z"
+  />
+</svg>
+`;
+
+exports[`renders NotificationImportant 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dSnYFs gLOACr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-5 0h-2v-2h2v2zm0-4h-2V8h2v4zm-1 10c1.1 0 2-.9 2-2h-4a2 2 0 002 2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Notifications 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hYRTcE dzQNLX"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-6 6c1.1 0 2-.9 2-2h-4a2 2 0 002 2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders NotificationsAdd 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cGKHXZ jQjyPD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10.01 21.01c0 1.1.89 1.99 1.99 1.99s1.99-.89 1.99-1.99h-3.98zm8.87-4.19V11c0-3.25-2.25-5.97-5.29-6.69v-.72C13.59 2.71 12.88 2 12 2c-.88 0-1.59.71-1.59 1.59v.72A6.873 6.873 0 005.12 11v5.82L3 18.94V20h18v-1.06l-2.12-2.12zM16 13.01h-3v3h-2v-3H8V11h3V8h2v3h3v2.01z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders OfflineBolt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-JsfGe fHFKLf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2.02c-5.51 0-9.98 4.47-9.98 9.98 0 5.51 4.47 9.98 9.98 9.98 5.51 0 9.98-4.47 9.98-9.98 0-5.51-4.47-9.98-9.98-9.98zM11.48 20v-6.26H8L13 4v6.26h3.35L11.48 20z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders OnDemand 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gGGEav dSMAqH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 3H3c-1.11 0-2 .89-2 2v12a2 2 0 002 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5a2 2 0 00-2-2zm0 14H3V5h18v12zm-5-6l-7 4V7l7 4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Overnight 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dksuAk cbKBLd"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17.6 8.2l.6 2L16.5 9l-1.7 1.2.6-2-1.7-1.3h2.1l.7-2 .7 2h2.1l-1.7 1.3zM19.4 19C15.4 23 9 23 5 19S1 8.6 5 4.6C6.3 3.3 7.9 2.4 9.5 2c-.9 3.4 0 7.2 2.6 9.8 2.7 2.7 6.4 3.5 9.8 2.6-.3 1.7-1.2 3.3-2.5 4.6z"
+  />
+</svg>
+`;
+
+exports[`renders Palette 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jhGSUB gbQNvH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2.53 19.65l1.34.56v-9.03l-2.43 5.86c-.41 1.02.06 2.19 1.09 2.61m19.5-3.7L17.07 4a2 2 0 00-1.81-1.25c-.26 0-.53.04-.79.15L7.1 5.95a2.02 2.02 0 00-1.23 1.8c-.01.25.04.54.13.8l5 11.95c.29.78 1.03 1.24 1.81 1.25.26 0 .52-.05.77-.15l7.36-3.05a1.994 1.994 0 001.09-2.6M7.88 8.75a1 1 0 110-2 1 1 0 010 2m-2 11a2 2 0 002 2h1.45l-3.45-8.34v6.34z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ParentChild 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hkoqCG iNjRun"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6.5 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5S17.83 8 17 8s-1.5.67-1.5 1.5zm3 2.5h-2.84c-.58.01-1.14.32-1.45.86l-.92 1.32L9.72 8a2.02 2.02 0 00-1.71-1H5c-1.1 0-2 .9-2 2v5c0 .55.45 1 1 1h.5v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-9.39l2.24 3.89c.18.31.51.5.87.5h1.1c.33 0 .63-.16.82-.43l.47-.67V21c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-4c.55 0 1-.45 1-1v-2.5c0-.82-.67-1.5-1.5-1.5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ParentChildCircle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bShfyb kjGblK"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11.99 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm3.61 6.34c1.07 0 1.93.86 1.93 1.93 0 1.07-.86 1.93-1.93 1.93-1.07 0-1.93-.86-1.93-1.93-.01-1.07.86-1.93 1.93-1.93zm-6-1.58c1.3 0 2.36 1.06 2.36 2.36 0 1.3-1.06 2.36-2.36 2.36-1.3 0-2.36-1.06-2.36-2.36 0-1.31 1.05-2.36 2.36-2.36zm0 9.13v3.75c-2.4-.75-4.3-2.6-5.14-4.96 1.05-1.12 3.67-1.69 5.14-1.69.53 0 1.2.08 1.9.22-1.64.87-1.9 2.02-1.9 2.68zM11.99 20c-.27 0-.53-.01-.79-.04v-4.07c0-1.42 2.94-2.13 4.4-2.13 1.07 0 2.92.39 3.84 1.15-1.17 2.97-4.06 5.09-7.45 5.09z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Parking 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-juXuuo doMgfy"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12.5 3h-7v18h4v-6h3c3.3 0 6-2.7 6-6s-2.7-6-6-6zm.2 8H9.5V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"
+  />
+</svg>
+`;
+
+exports[`renders Pets 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ecQjpJ izmaQl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4.5 11.5C3.1 11.5 2 10.4 2 9s1.1-2.5 2.5-2.5S7 7.6 7 9s-1.1 2.5-2.5 2.5zm4.5-4C7.6 7.5 6.5 6.4 6.5 5S7.6 2.5 9 2.5s2.5 1.1 2.5 2.5S10.4 7.5 9 7.5zm6 0c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5zm4.5 4c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5S22 7.6 22 9s-1.1 2.5-2.5 2.5zm-2.2 2.9c1.3 1.3 2.9 2.8 2.6 4.8-.3 1-1 2-2.3 2.3-.7.1-3.1-.4-5.5-.4h-.2c-2.5 0-4.8.6-5.5.4-1.3-.3-2-1.3-2.3-2.3-.3-2 1.3-3.5 2.6-4.8.9-1 1.6-1.9 2.5-2.9.5-.5 1.1-1.1 1.8-1.3.1 0 .2-.1.3-.1.2-.1.4-.1.7-.1h.8c.1 0 .2.1.3.1.7.2 1.3.8 1.8 1.3.8 1.1 1.6 1.9 2.4 3z"
+  />
+</svg>
+`;
+
+exports[`renders Phone 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jlQhLH cYEigx"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.5 0 1 .4 1 1V20c0 .5-.5 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"
+  />
+</svg>
+`;
+
+exports[`renders PhoneActive 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iXqwbG cwNjko"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 12h2a5 5 0 00-5-5v2a3 3 0 013 3m4 0h2c0-5-4.03-9-9-9v2c3.86 0 7 3.13 7 7m1 3.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.25l-2.2 2.2a15.097 15.097 0 01-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 018.5 4a1 1 0 00-1-1H4a1 1 0 00-1 1c0 9.389 7.611 17 17 17a1 1 0 001-1v-3.5a1 1 0 00-1-1z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders PhoneLog 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hYIrON lksHDR"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 15.5a1 1 0 011 1V20a1 1 0 01-1 1C10.611 21 3 13.389 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.01l-2.2 2.21c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25 1.12.37 2.32.57 3.57.57M12 3h2v2h-2m3-2h6v2h-6m-3 1h2v2h-2m3-2h6v2h-6m-3 1h2v2h-2m3-2h6v2h-6"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Picture 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hKiGeM dVeYub"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"
+  />
+</svg>
+`;
+
+exports[`renders PieChart 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-exqJjn gfBJqM"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Pin 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eiQXzm kJYOEo"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"
+  />
+</svg>
+`;
+
+exports[`renders PinAdd 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dkiTmt cmpXtt"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm4 8h-3v3h-2v-3H8V8h3V5h2v3h3v2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders PinEdit 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cVJhCs kZasMB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm-1.56 10H9v-1.44l3.35-3.34 1.43 1.43L10.44 12zm4.45-4.45l-.7.7-1.44-1.44.7-.7a.38.38 0 01.54 0l.9.9c.15.15.15.39 0 .54z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Plus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kHVJdr bFsZnj"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"
+  />
+</svg>
+`;
+
+exports[`renders PlusOne 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ktvXtq jAShEy"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4V8zm4.5-1.92V7.9l2.5-.5V18h2V5l-4.5 1.08z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Pool 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gXZlrW icuQrK"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M22 21c-1.1 0-1.7-.4-2.2-.6-.4-.2-.6-.4-1.1-.4-.6 0-.8.1-1.1.4-.5.3-1.1.6-2.2.6s-1.7-.4-2.2-.6c-.4-.3-.6-.4-1.2-.4s-.8.1-1.2.4c-.4.2-1 .6-2.1.6s-1.7-.4-2.2-.6c-.4-.3-.6-.4-1.2-.4s-.8.1-1.1.4c-.5.2-1.1.6-2.2.6v-2c.6 0 .8-.1 1.1-.4.5-.2 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.3.6.4 1.2.4s.8-.1 1.2-.4c.4-.2 1-.6 2.1-.6s1.7.4 2.2.6c.4.2.6.4 1.2.4s.8-.1 1.1-.4c.4-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4v2zm0-4.5c-1.1 0-1.7-.4-2.2-.6-.4-.2-.6-.4-1.1-.4-.6 0-.8.1-1.1.4-.5.3-1.1.6-2.2.6s-1.7-.4-2.2-.6c-.4-.2-.6-.4-1.1-.4-.6 0-.8.1-1.2.4-.4.3-1.1.6-2.2.6s-1.7-.4-2.2-.6c-.4-.2-.6-.4-1.2-.4s-.8.1-1.1.4c-.5.3-1.1.6-2.2.6v-2c.6 0 .8-.1 1.1-.4.5-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4.6 0 .8-.1 1.2-.4.5-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4.6 0 .8-.1 1.2-.4.4-.3 1.1-.6 2.2-.6s1.7.4 2.2.6c.4.2.6.4 1.1.4v2zM8.7 12c-.6 0-.8-.1-1.2-.4-.2-.1-.4-.2-.7-.4L10 8 9 7C7.9 5.9 6.8 5.5 5 5.5V3c2.5 0 3.9.4 5.5 2l6.4 6.4c-.1.1-.3.2-.4.2-.4.3-.6.4-1.2.4s-.8-.1-1.2-.4c-.4-.2-1-.6-2.1-.6s-1.7.4-2.2.6c-.4.3-.6.4-1.1.4zm7.8-4C15.1 8 14 6.9 14 5.5S15.1 3 16.5 3 19 4.1 19 5.5 17.9 8 16.5 8z"
+  />
+</svg>
+`;
+
+exports[`renders Power 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bFSanr AEkPQ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.01 7L16 3h-2v4h-4V3H8v4h-.01C7 6.99 6 7.99 6 8.99v5.49L9.5 18v3h5v-3l3.5-3.51v-5.5c0-1-1-2-1.99-1.99z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Printer 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fxFQrc htZTlG"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 8H5c-1.7 0-3 1.3-3 3v6h4v4h12v-4h4v-6c0-1.7-1.3-3-3-3zm-3 11H8v-5h8v5zm3-7c-.5 0-1-.4-1-1s.5-1 1-1 1 .4 1 1-.5 1-1 1zm-1-9H6v4h12V3z"
+  />
+</svg>
+`;
+
+exports[`renders Quilt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fyFmx fnJsui"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M9.4 19h5.3v-6.5H9.4V19zM3 19h5.3V5H3v14zm12.7 0H21v-6.5h-5.3V19zM9.4 5v6.5H21V5H9.4z"
+  />
+</svg>
+`;
+
+exports[`renders RadioChecked 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cjzMPC klOzwr"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders RadioEmpty 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-igOljT fHiVGx"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders RadioMinus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-JgrOI eyDEsL"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7 11v2h10v-2H7zm5-9C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders RadioPlus 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gGuQiZ hSFOKZ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+  />
+</svg>
+`;
+
+exports[`renders Railway 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iueMJG bbeqIf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 15.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V5c0-3.5-3.58-4-8-4s-8 .5-8 4v10.5zm8 1.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-7H6V5h12v5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Refresh 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dbXBFb esfSmC"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17.6 6.3C16.2 4.9 14.2 4 12 4c-4.4 0-8 3.6-8 8s3.6 8 8 8c3.7 0 6.8-2.6 7.7-6h-2.1c-.8 2.3-3 4-5.6 4-3.3 0-6-2.7-6-6s2.7-6 6-6c1.7 0 3.1.7 4.2 1.8L13 11h7V4l-2.4 2.3z"
+  />
+</svg>
+`;
+
+exports[`renders Restaurant 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ehAMgd ErugE"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 9H9V2H7v7H5V2H3v7c0 2.1 1.7 3.8 3.8 4v9h2.5v-9c2-.2 3.7-1.9 3.7-4V2h-2v7zm5-3v8h2.5v8H21V2c-2.8 0-5 2.2-5 4z"
+  />
+</svg>
+`;
+
+exports[`renders Ribbon 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hGwdws jApBta"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 17.5c.1 0 .1 0 .2-.1L9 22l-1.5-2-2.5.2 2.1-4.4h.1c.2.2.4.4.6.7.4.5.8 1 1.4 1.2.2.1.4.1.5.1.5 0 .9-.1 1.3-.3zm5.8-1.7c-.2.2-.4.4-.6.7-.4.5-.8 1-1.4 1.2-.6.2-1.2 0-1.8-.2-.1 0-.1 0-.2-.1L15 22l1.5-2 2.5.2-2.2-4.4zM20 9.4c0 .3-.3.7-.6 1.1-.2.3-.5.7-.6 1-.1.4-.1.8-.1 1.2 0 .5 0 .9-.2 1.2s-.6.4-1.1.6c-.4.1-.8.3-1.2.5-.3.2-.6.6-.8.9-.3.4-.6.7-.9.8-.3.1-.7 0-1.2-.2-.4-.1-.8-.2-1.3-.2-.4 0-.9.1-1.3.2-.5.1-.9.3-1.2.2-.3-.1-.6-.5-.9-.8-.3-.3-.5-.7-.8-.9s-.8-.4-1.2-.5c-.5-.2-.9-.3-1.1-.6s-.2-.7-.2-1.2c0-.4 0-.8-.1-1.2s-.4-.7-.6-1c-.3-.4-.6-.7-.6-1.1s.3-.7.6-1.1c.2-.3.4-.6.6-1 .1-.4.1-.9.1-1.3 0-.5 0-.9.2-1.2.2-.3.6-.4 1.1-.6.4 0 .8-.2 1.2-.4.3-.2.6-.6.8-.9.3-.4.6-.8.9-.9h.2c.3 0 .6.1.9.2.4.1.8.2 1.3.2.4 0 .9-.1 1.3-.2.5-.1.9-.3 1.2-.2s.6.5.9.8c.3.3.5.7.8.9.5.3.9.5 1.3.6.5.2.9.3 1.1.6.2.3.2.7.2 1.2 0 .4 0 .8.1 1.2.1.4.4.7.6 1 .3.4.6.8.6 1.1zm-3.5-1.8l-.9-.9-4.9 4.9-2.3-2.3-.9.9 3.2 3.2 5.8-5.8z"
+  />
+</svg>
+`;
+
+exports[`renders RibbonAlt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iuInmz kZdVBm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17.71 5.15c-.25-.77-.92-.94-1.26-1.38-.31-.46-.27-1.15-.92-1.62-.65-.47-1.3-.23-1.83-.38S12.81 1 12 1c-.81 0-1.18.58-1.7.77-.52.19-1.17-.1-1.83.38-.66.48-.61 1.16-.92 1.62-.34.44-1 .61-1.26 1.38-.26.77.21 1.3.21 1.85S6 8.08 6.29 8.85c.29.77.92.94 1.26 1.38.31.46.27 1.15.92 1.62.65.47 1.3.23 1.83.38s.89.77 1.7.77c.81 0 1.18-.58 1.7-.77.52-.19 1.17.1 1.83-.38.66-.48.61-1.16.92-1.62.34-.44 1-.61 1.26-1.38.26-.77-.21-1.3-.21-1.85s.5-1.08.21-1.85M12 11a4 4 0 110-8 4 4 0 010 8m2-4a2 2 0 11-4 0 2 2 0 014 0m-.29 7.56l-.63 3.6-.73 4.13-2.61-2.49-3.3 1.45 1.33-7.5a4 4 0 001.89.42 4.15 4.15 0 001.34.68 3.5 3.5 0 002.71-.29m4.21 3.22l-2.58-.92.51-2.94a3.2 3.2 0 00.85-.45l.12-.1 1.1 4.41z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders RoomSize 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-EhVdS bVrbqO"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 13H9.6v3L6 12l3.6-4v3h4.8V8l3.6 4-3.6 4v-3H12zM3 3h18c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1zm1 2v14h16V5H4z"
+  />
+</svg>
+`;
+
+exports[`renders Rowing 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dwxYxt jdGzrg"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.5 14.5L4 19l1.5 1.5L9 17h2l-2.5-2.5zM15 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 20l-3 3-3-3v-1.5l-7.1-7.1c-.3.1-.6.1-.9.1v-2.2c1.7 0 3.6-.9 4.7-2l1.4-1.6c.2-.2.4-.4.7-.5.2-.1.6-.2.9-.2C16 6 17 7 17 8.3V14c0 .8-.4 1.6-.9 2.2l-3.6-3.6v-2.3c-.6.5-1.4 1-2.3 1.4l6.3 6.3H18l3 3z"
+  />
+</svg>
+`;
+
+exports[`renders SaveAlt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gVtpNI dDuHBA"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Search 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hJFzDP cIyidI"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.5 14h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C16 5.9 13.1 3 9.5 3S3 5.9 3 9.5 5.9 16 9.5 16c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14z"
+  />
+</svg>
+`;
+
+exports[`renders SearchRecent 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-liAQUe ghrtab"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 14h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C17.5 5.9 14.6 3 11 3S4.5 6 4.5 9.5H2l3.8 4 4.2-4H6.5C6.5 7 8.5 5 11 5s4.5 2 4.5 4.5-2 4.5-4.5 4.5c-.7 0-1.3-.1-1.8-.4l-1.5 1.5c1 .6 2.1.9 3.3.9 1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5L22 19l-5-5z"
+  />
+</svg>
+`;
+
+exports[`renders Seat 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cvdZLF hkzpyf"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 18v3h3v-3h10v3h3v-6H4v3zm15-8h3v3h-3v-3zM2 10h3v3H2v-3zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"
+  />
+</svg>
+`;
+
+exports[`renders SeatBusiness 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fTZrbU jgtqFT"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M5.3 6.1c-.8-.6-1.1-1.8-.4-2.7.6-.9 1.9-1.1 2.8-.5.9.6 1.1 1.8.4 2.8-.6.9-1.8 1.1-2.8.4zM16 19.5H8.9c-1.5 0-2.7-1.1-3-2.5L4 7.5H2l2 9.8c.4 2.4 2.5 4.2 4.9 4.2H16v-2zm.2-4h-4.8l-1-4.1c1.6.9 3.3 1.5 5.2 1.2v-2.1c-1.8.3-3.6-.3-4.8-1.3L9.1 8c-.2-.2-.4-.3-.7-.4-.3-.1-.7-.1-1-.1-1.2.2-2 1.4-1.8 2.6L7 16c.2 1.5 1.4 2.5 2.8 2.5h6.9l3.8 3L22 20l-5.8-4.5z"
+  />
+</svg>
+`;
+
+exports[`renders SeatEconomy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bTJPMs eiqhKg"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M7.6 5.4c-.8-.8-.8-2 0-2.8s2-.8 2.8 0c.8.8.8 2.1 0 2.8-.8.8-2 .8-2.8 0zM6 16V7H4v9c0 2.8 2.2 5 5 5h6v-2H9c-1.7 0-3-1.3-3-3zm14 4.1L14.9 15h-3.4v-3.7c1.4 1.2 3.6 2.2 5.5 2.2v-2.2c-1.7 0-3.6-.9-4.7-2l-1.4-1.6c-.2-.2-.4-.4-.7-.5-.3-.1-.6-.2-.9-.2C8 7 7 8 7 9.2V15c0 1.7 1.3 3 3 3h5.1l3.5 3.5 1.4-1.4z"
+  />
+</svg>
+`;
+
+exports[`renders Security 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hQYogJ dxwghk"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2L4 5.6v5.5c0 5 3.4 9.8 8 10.9 4.6-1.1 8-5.9 8-10.9V5.6L12 2zm0 10h6.2c-.5 3.7-2.9 7.1-6.2 8.1V12H5.8V6.8L12 4v8z"
+  />
+</svg>
+`;
+
+exports[`renders Shuttle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fTFLOO kNSSpG"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16.5 5.5H3.8c-1 0-1.8.8-1.8 1.9v8.4h1.8c0 1.5 1.2 2.8 2.7 2.8s2.7-1.3 2.7-2.8h5c0 1.5 1.2 2.8 2.7 2.8s2.7-1.3 2.7-2.8H22v-4.6l-5.5-5.7zM3.8 11.1V7.4h3.6v3.7H3.8zm2.7 6c-.7 0-1.4-.6-1.4-1.4 0-.7.6-1.4 1.4-1.4s1.4.7 1.4 1.4c0 .8-.6 1.4-1.4 1.4zm6.4-6H9.3V7.4h3.6v3.7zm4.1 6c-.7 0-1.4-.6-1.4-1.4 0-.7.6-1.4 1.4-1.4s1.4.7 1.4 1.4c0 .8-.7 1.4-1.4 1.4zm-2.3-6V7.4h.9l3.6 3.7h-4.5z"
+  />
+</svg>
+`;
+
+exports[`renders SingleOccupancy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ByAKj icTjVt"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.066 3.6a1.6 1.6 0 11-3.199 0 1.6 1.6 0 013.2 0zm.134 2.334c1 0 1.866.866 1.933 1.866v4.534l-1.667 1.6v6.8c0 .666-.533 1.266-1.2 1.266H10.8c-.667 0-1.2-.6-1.134-1.266v-6.667-.133L8 12.334V7.8c0-1 .8-1.866 1.8-1.866h3.4z"
+  />
+</svg>
+`;
+
+exports[`renders Sites 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-biHcdI fPzuKj"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21 16H3V4h18m0-2H3c-1.11 0-2 .89-2 2v12a2 2 0 002 2h7v2H8v2h8v-2h-2v-2h7c1.11 0 2-.89 2-2V4a2 2 0 00-2-2m-6 3.5l-.62 1.37L13 7.5l1.38.63L15 9.5l.63-1.37L17 7.5l-1.37-.63L15 5.5m-4.5 2L9.41 9.91 7 11l2.41 1.09 1.09 2.41 1.1-2.41L14 11l-2.4-1.09-1.1-2.41"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Smartphone 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hfVAxZ dzpXEh"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Smoking 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fiCYge ipaFVh"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2 5.5l7 7H2v3h10l7 7 1.3-1.2-17-17L2 5.5zm18.5 7H22v3h-1.5v-3zm-2.5 0h1.5v3H18v-3zm.9-8.1c.6-.6 1-1.5 1-2.4h-1.5c0 1-.8 1.8-1.9 1.8v1.5c2.2 0 4 1.8 4 4.1v2.1H22V9.4c0-2.2-1.3-4.1-3.1-5zm-4.4 3.8H16c1.1 0 2 .7 2 2.1v1.2h1.5V9.9c0-1.8-1.6-3.2-3.5-3.2h-1.5c-1 0-1.9-1-1.9-2s.8-1.8 1.9-1.8V1.5c-1.9 0-3.4 1.5-3.4 3.3s1.5 3.4 3.4 3.4zm2.5 7.2v-2.9h-2.9l2.9 2.9z"
+  />
+</svg>
+`;
+
+exports[`renders SmokingAllowed 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-lfRwAv bbFbIu"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2 16h15v3H2v-3zm18.5 0H22v3h-1.5v-3zM18 16h1.5v3H18v-3zm.85-8.27c.62-.61 1-1.45 1-2.38C19.85 3.5 18.35 2 16.5 2v1.5c1.02 0 1.85.83 1.85 1.85S17.52 7.2 16.5 7.2v1.5c2.24 0 4 1.83 4 4.07V15H22v-2.24c0-2.22-1.28-4.14-3.15-5.03zm-2.82 2.47H14.5c-1.02 0-1.85-.98-1.85-2s.83-1.75 1.85-1.75v-1.5a3.35 3.35 0 000 6.7h1.53c1.05 0 1.97.74 1.97 2.05V15h1.5v-1.64c0-1.81-1.6-3.16-3.47-3.16z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders SoapBar 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hndrU dtHeEz"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M14 8c1.306 0 2.418.835 2.83 2h.67a4.5 4.5 0 014.5 4.5v3a4.5 4.5 0 01-4.5 4.5h-11A4.5 4.5 0 012 17.5v-3A4.5 4.5 0 016.5 10h4.67A3.001 3.001 0 0114 8zm-2.829 4H7a3 3 0 00-.176 5.995L7 18h10a3 3 0 00.176-5.995L17 12h-.171a3.001 3.001 0 01-5.658 0zm-2.512 1.2a.5.5 0 01.09.992l-.09.008H8a1.5 1.5 0 00-1.5 1.5.5.5 0 11-1 0 2.5 2.5 0 012.336-2.495L8 13.2h.66zM14 9a2 2 0 100 4 2 2 0 000-4zM9.5 1a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm0 1a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17 3a2 2 0 110 4 2 2 0 010-4zm0 1a1 1 0 100 2 1 1 0 000-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Spa 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-geBBMl cPCmxl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15.5 9.6c-.2-2.8-1.3-5.5-3.4-7.6-2.2 2.1-3.4 4.9-3.6 7.6 1.3.7 2.5 1.6 3.5 2.7 1-1.1 2.2-2 3.5-2.7zM9 12.3c-.1-.1-.3-.2-.4-.3.1.1.2.2.4.3zm6.4-.3c-.1.1-.3.2-.4.3.1-.1.3-.2.4-.3zM12 15.4C9.8 12.2 6.2 10 2 10c0 5.3 3.4 9.8 8 11.5.6.2 1.3.4 2 .5.7-.1 1.3-.3 2-.5 4.7-1.7 8-6.2 8-11.5-4.2 0-7.9 2.2-10 5.4zM8.6 12c-1.1-.7-2.3-1.3-3.6-1.6 1.3.3 2.5.9 3.6 1.6zM19 10.4c-1.3.3-2.5.9-3.6 1.6 1.1-.7 2.3-1.3 3.6-1.6z"
+  />
+</svg>
+`;
+
+exports[`renders SplitTicket 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-clGIgy fwrWjx"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 12c0 1.1.9 2 2 2v4c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-4c1.1 0 2-.9 2-2s-.9-2-2-2V6c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v4c-1.1 0-2 .9-2 2zm-3 2.2v-1.1l-4.2-2.8v-3c0-.5-.4-.8-.8-.8s-.8.4-.8.8v3L7 13.1v1.1l4.2-1.4v3l-1.1.8v.8L12 17l1.8.5v-.8l-1.1-.8v-3l4.3 1.3z"
+  />
+</svg>
+`;
+
+exports[`renders SprayBottle 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kJNqSH gwNkuH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 8.5c.66.64 1 1.31 1 2V22H8v-6c0-.28.11-.61.3-1L12 8.5h3zM15 2c1.183 0 2 .817 2 2v1l-1.5 2H12V6L8.5 9H7l2-2.5V5H7V2h8z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Star 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ciOMec jPoqvw"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 17.8l6.2 3.7-1.6-7L22 9.7l-7.2-.6L12 2.5 9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+  />
+</svg>
+`;
+
+exports[`renders StarHalf 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kGVuQl dnlVqw"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 17.8V2.5L9.2 9.1 2 9.7l5.5 4.8-1.6 7 6.1-3.7z"
+  />
+</svg>
+`;
+
+exports[`renders SteeringWheel 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bA-DUxO loDmeS"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11 19.9c0-4.6-.7-6.9-2-6.9H4.1c.4 3.6 3.3 6.5 6.9 6.9zM4.1 11C6.7 9.7 9.4 9 12 9s5.3.7 7.9 2c-.5-4-3.8-7-7.9-7s-7.4 3-7.9 7zm15.8 2H15c-1.3 0-2 2.3-2 6.9 3.6-.4 6.5-3.3 6.9-6.9zM12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z"
+  />
+</svg>
+`;
+
+exports[`renders Subway 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jYKDjX jMdqUc"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c-4.42 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-3.58-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-6H6V6h5v5zm5.5 6c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6h-5V6h5v5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders SubwayAlt 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bxLYvs iIdmtI"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <g
+    fillRule="evenodd"
+  >
+    <path
+      d="M0 0v24h24V0H0zm22 22H2V8.86C2 6.05 3.53 3.84 6.2 2.8 8 2.09 10.14 2 12 2c1.86 0 4 .09 5.8.8C20.47 3.84 22 6.05 22 8.86V22z"
+    />
+    <path
+      d="M12 2c1.86 0 4 .09 5.8.8C20.47 3.84 22 6.05 22 8.86V22H2V8.86C2 6.05 3.53 3.84 6.2 2.8 8 2.09 10.14 2 12 2zm.242 4h-.461C8.855 6.02 6 6.435 6 9v6.88c0 1.44 1.18 2.62 2.62 2.62L7.5 19.62V20h1.67l1.5-1.5h2.83L15 20h1.5v-.38l-1.13-1.12c1.45 0 2.63-1.17 2.63-2.62V9c0-2.62-2.68-3-6-3zm3.258 9a1 1 0 110 2 1 1 0 010-2zm-7 0a1 1 0 110 2 1 1 0 010-2zm8.51-6v5h-10V9h10z"
+    />
+  </g>
+</svg>
+`;
+
+exports[`renders Success 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jVSHhB hBZqpT"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+  />
+</svg>
+`;
+
+exports[`renders SuccessOutline 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dHMjyi koeEzB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1.7-3.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+  />
+</svg>
+`;
+
+exports[`renders Swap 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-QxiLv iXxxBI"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16 17v-7h-2v7h-3l4 4 4-4h-3zM9 3L5 7h3v7h2V7h3L9 3z"
+  />
+</svg>
+`;
+
+exports[`renders SwapHorizontal 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jfkKcj bsllab"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Sync 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fnebjS cOqSEk"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 12v3h15v2H6v3l-4-4 4-4zm12-8l4 4-4 4V9H3V7h15V4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders TableChart 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jcsNZN hmlkAm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M10 10.02h5V21h-5V10.02zM17 21h3c1.1 0 2-.9 2-2v-9h-5v11zm3-18H5c-1.1 0-2 .9-2 2v3h19V5c0-1.1-.9-2-2-2zM3 19c0 1.1.9 2 2 2h3V10H3v9z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Task 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fkmfhw fwBqFH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders TaskChecked 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iuhWtz hLoSLv"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Taxi 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eCbnBi bzOMNP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H15V3H9v2H6.5c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Tea 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-irqard cwiwAH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 19v2H4v-2h16zM8 3v2.4L6.19 6.85c-.12.09-.19.24-.19.39v4.26c0 .28.22.5.5.5h4c.28 0 .5-.22.5-.5V7.24c0-.15-.07-.3-.19-.39L9 5.4V3h11c1.11 0 2 .89 2 2v3a2 2 0 01-2 2h-2v3c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4V3h4zm12 2h-2v3h2V5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ThumbsDown 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ezjryM bnVBYp"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M14.5 4H7.1c-.7 0-1.2.4-1.5 1l-2.5 5.7c-.1.1-.1.3-.1.5v1.6c0 .9.7 1.6 1.6 1.6h5.2l-.7 3.7v.2c0 .3.2.6.3.9l.8.8 5.4-5.3c.3-.3.5-.6.5-1.1v-8c0-.9-.7-1.6-1.6-1.6zm3.2 0v9.6H21V4h-3.3z"
+  />
+</svg>
+`;
+
+exports[`renders ThumbsUp 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kBqltT hvEnAi"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 20h3.3v-9.6H3V20zm18-8.8c0-.9-.7-1.6-1.6-1.6h-5.2l.8-3.7v-.2c0-.3-.2-.6-.3-.9l-.9-.8-5.4 5.3c-.3.2-.5.6-.5 1.1v8c0 .9.7 1.6 1.6 1.6h7.4c.7 0 1.2-.4 1.5-1l2.5-5.7c.1-.1.1-.3.1-.5v-1.6z"
+  />
+</svg>
+`;
+
+exports[`renders Timer 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gJjCBC jiMIhL"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 1.5H9v2h6v-2zm-4 13h2v-6h-2v6zm8-6.6l1.4-1.4c-.4-.5-.9-1-1.4-1.4l-1.4 1.4c-1.6-1.2-3.5-2-5.6-2-5 0-9 4-9 9s4 9 9 9 9-4 9-9c0-2.1-.7-4.1-2-5.6zm-7 12.6c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"
+  />
+</svg>
+`;
+
+exports[`renders Traffic 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eKaOPE xwwUj"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 10h-3V8.86c1.72-.45 3-2 3-3.86h-3V4c0-.55-.45-1-1-1H8c-.55 0-1 .45-1 1v1H4c0 1.86 1.28 3.41 3 3.86V10H4c0 1.86 1.28 3.41 3 3.86V15H4c0 1.86 1.28 3.41 3 3.86V20c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1.14c1.72-.45 3-2 3-3.86h-3v-1.14c1.72-.45 3-2 3-3.86zm-8 9a2 2 0 11-.001-3.999A2 2 0 0112 19zm0-5a2 2 0 11-.001-3.999A2 2 0 0112 14zm0-5a2 2 0 01-2-2c0-1.11.89-2 2-2a2 2 0 110 4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Train 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-fGgRdh UFSDO"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h2.23l2-2H14l2 2h2v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-3.58-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-7H6V6h5v4zm2 0V6h5v4h-5zm3.5 7c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Trash 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hmvlTC fOCJmC"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders TrendingUp 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-iiBohf dAoaLt"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M16 6l2.3 2.3-4.9 4.9-4-4L2 16.6 3.4 18l6-6 4 4 6.3-6.3L22 12V6h-6z"
+  />
+</svg>
+`;
+
+exports[`renders Trophy 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-dYYbgU bkiZBu"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.4 3h-2c-.8 0-1.8.9-1.8 1.8H8.4c0-.9-1-1.8-1.8-1.8H3v8.1c0 .9.9 1.8 1.8 1.8h2c.4 1.8 1.5 3.3 4.3 3.6v1.9c-2 .2-2.7 1.2-2.7 2.3v.3h7.2v-.3c0-1.2-.7-2.2-2.7-2.3v-1.9c2.8-.3 4-1.8 4.3-3.6h2c.9 0 1.8-.9 1.8-1.8V3h-1.6zM4.8 11.1V4.8h1.8v6.3H4.8zm14.4 0h-1.8V4.8h1.8v6.3z"
+  />
+</svg>
+`;
+
+exports[`renders Tune 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-eVedux fnzxAt"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"
+  />
+</svg>
+`;
+
+exports[`renders Twitter 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gBsykS bpCDSJ"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M8.3 19.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1-.7.3-1.5.5-2.4.6.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1-1.3-1.4-3.3-1.7-4.9-.8s-2.5 2.7-2.1 4.5c-3.3-.1-6.3-1.7-8.4-4.3-1.1 1.9-.5 4.3 1.3 5.5-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.9.1.5 1.7 2.1 2.8 3.8 2.8C6.6 17.3 4.8 18 3 18c-.3 0-.7 0-1-.1 1.9 1.2 4.1 1.9 6.3 1.9"
+  />
+</svg>
+`;
+
+exports[`renders Unlock 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hxyAyv hVleUB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M18 9.5c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h9.1v-2c0-1.7-1.4-3.1-3.1-3.1S8.9 5.8 8.9 7.5H7c0-2.8 2.2-5 5-5s5 2.2 5 5v2h1zm-6 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+  />
+</svg>
+`;
+
+exports[`renders User 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gggqho hklgaL"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"
+  />
+</svg>
+`;
+
+exports[`renders UserAdd 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hcmsuR cxMCXs"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders UserChecked 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ojhmt hAHsKW"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20.6 12.5l1.4 1.41-6.53 6.59L12 17l1.4-1.41 2.07 2.08 5.13-5.17zM11 14c.32 0 .61.02 1 .06L9 17l3 3H3v-2c0-2.66 5.33-4 8-4zm0-10c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Verified 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hLyhSY kUzHGB"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2L4 5.6v5.5c0 5 3.4 9.8 8 10.9 4.6-1.1 8-5.9 8-10.9V5.6L12 2zm-1.8 14.5l-3.6-3.6 1.3-1.3 2.3 2.3 5.9-6 1.3 1.3-7.2 7.3z"
+  />
+</svg>
+`;
+
+exports[`renders ViewList 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cQDEqr fIgwUm"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders ViewModule 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-knSEWW gBNMRl"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Visibility 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kSCdcF csFCTk"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders VisibilityOff 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-havuko hVjNik"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <g
+    fillRule="evenodd"
+  >
+    <path
+      d="M0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0z"
+    />
+    <path
+      d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46A11.804 11.804 0 001 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"
+    />
+  </g>
+</svg>
+`;
+
+exports[`renders Walk 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-cfAQHH dbznKH"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Warning 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jCPRom eJRDnP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 11h-2V7h2v6zm0 4h-2v-2h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders WarningOutline 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bKoIEd buUNLM"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm1-7h-2V7h2v6zm0 4h-2v-2h2v2z"
+  />
+</svg>
+`;
+
+exports[`renders WashingHands 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-jhDJkI jLOqXg"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M17.42 22.5H5.33C3.5 22.5 2 21 2 19.17v-6.09c0-.9.36-1.75 1-2.37l5.63-5.54s1.03 1.05 1.04 1.08a.985.985 0 01.11 1.16C9.77 7.44 8 10 8 10h10.67a1.25 1.25 0 010 2.5h-5.84v.83h7.92a1.25 1.25 0 010 2.5h-7.92v.84h7.09a1.25 1.25 0 010 2.5h-7.09V20h4.59a1.25 1.25 0 010 2.5M13.5 4.8S12 6.46 12 7.5c0 2 3 2 3 0 0-1.04-1.5-2.7-1.5-2.7m5-3.8S16 3.76 16 5.5c0 3.33 5 3.33 5 0C21 3.76 18.5 1 18.5 1z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Web 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ensa-Dq iTpppz"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+  />
+</svg>
+`;
+
+exports[`renders Whirlpool 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-bwcZQD IQrof"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M11.1 11.5c-.3-.2-.6-.5-.8-.7L8.9 9.2c-.2-.2-.4-.3-.7-.5-.3-.1-.6-.2-1-.2C6 8.5 5 9.5 5 10.8v.8H2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8H11.1zm-4.1 8H5v-6h2v6zm4 0H9v-6h2v6zm4 0h-2v-6h2v6zm4 0h-2v-6h2v6zm-.4-14.1c-.6-.7-.9-1.5-.7-2.3l.1-.6h-1.9l-.1.4c-.2 1.4.3 2.7 1.3 3.7l.1.1c.6.6.8 1.4.7 2.2l-.1.6h1.9l.1-.4c.2-1.4-.3-2.7-1.4-3.7zm-4 0c1 1 1.5 2.3 1.3 3.7l-.1.4H14l.1-.6c.1-.8-.1-1.6-.7-2.2l-.1-.1c-1-1-1.5-2.4-1.3-3.7l.1-.4H14l-.1.6c-.1.8.1 1.6.7 2.3zM7 7.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+  />
+</svg>
+`;
+
+exports[`renders Widgets 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-ekAeAU gtOKJo"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M13 13v8h8v-8h-8zM3 21h8v-8H3v8zM3 3v8h8V3H3zm13.66-1.31L11 7.34 16.66 13l5.66-5.66-5.66-5.65z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
+exports[`renders Wifi 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-btldOh hnpwLP"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M2 9.1l1.8 1.8c4.5-4.5 11.8-4.5 16.4 0L22 9.1c-5.5-5.5-14.5-5.5-20 0zm7.3 7.2L12 19l2.7-2.7c-1.4-1.5-3.9-1.5-5.4 0zm-3.7-3.6l1.8 1.8c2.5-2.5 6.5-2.5 9.1 0l1.8-1.8c-3.5-3.5-9.1-3.5-12.7 0z"
+  />
+</svg>
+`;
+
+exports[`renders Youtube 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-kOolzS gsyFJU"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M21.5 6.8c.4 1.6.4 4.8.4 4.8s0 3.2-.4 4.8c-.2.9-.9 1.5-1.8 1.8-1.6.4-7.8.4-7.8.4s-6.2 0-7.8-.4c-.9-.2-1.5-.9-1.8-1.8-.3-1.5-.3-4.8-.3-4.8s0-3.2.4-4.8c.2-.8.9-1.5 1.8-1.7 1.5-.4 7.8-.4 7.8-.4s6.2 0 7.8.4c.8.2 1.5.9 1.7 1.7zM10 14.6l5.2-3-5.2-3v6z"
+  />
+</svg>
+`;
+
+exports[`renders ZoomOut 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-hWZkNf bfHGVg"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M15 3l2.3 2.3-2.9 2.9 1.4 1.4 2.9-2.9L21 9V3h-6zM3 9l2.3-2.3 2.9 2.9 1.4-1.4-2.9-2.9L9 3H3v6zm6 12l-2.3-2.3 2.9-2.9-1.4-1.4-2.9 2.9L3 15v6h6zm12-6l-2.3 2.3-2.9-2.9-1.4 1.4 2.9 2.9L15 21h6v-6z"
+  />
+</svg>
+`;

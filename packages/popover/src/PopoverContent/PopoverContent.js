@@ -4,13 +4,17 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Popper } from 'react-popper'
-import { Box, deprecatedPropType, getPaletteColor } from 'pcln-design-system'
+import {
+  Box,
+  getPaletteColor,
+  deprecatedPropType,
+  getSCMigrationRef,
+} from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
 import DEFAULTS_MODIFIERS from '../helpers/defaultModifiers'
-import getSCMigrationRef from '../helpers/getSCMigrationRef'
 
 class PopoverContent extends Component {
   componentDidMount() {

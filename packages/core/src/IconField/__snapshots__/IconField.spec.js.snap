@@ -8,14 +8,14 @@ exports[`IconField renders 1`] = `
   display: flex;
 }
 
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c2 {
+.c1 {
   outline: none;
 }
 
@@ -73,7 +73,7 @@ exports[`IconField renders 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <svg
     aria-hidden={true}
@@ -129,7 +129,7 @@ exports[`IconField renders icon button 1`] = `
   display: flex;
 }
 
-.c3 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -140,7 +140,7 @@ exports[`IconField renders icon button 1`] = `
   outline: none;
 }
 
-.c2 {
+.c3 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -156,15 +156,25 @@ exports[`IconField renders icon button 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
+  background-color: #007aff;
+  color: #fff;
 }
 
-.c2:disabled {
+.c3:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c3:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
+}
+
+.c2 {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
 }
 
 .c2:hover {
@@ -233,7 +243,7 @@ exports[`IconField renders icon button 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <input
     className="c1"
@@ -254,7 +264,8 @@ exports[`IconField renders icon button 1`] = `
     }
   />
   <button
-    className="c2"
+    className="c2 c3"
+    color="primary"
     style={
       Object {
         "alignSelf": "center",
@@ -269,7 +280,7 @@ exports[`IconField renders icon button 1`] = `
     <div>
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c4 c5"
         fill="currentcolor"
         focusable={false}
         height={24}
@@ -295,22 +306,22 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   display: flex;
 }
 
-.c1 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c2 {
+.c1 {
+  outline: none;
+}
+
+.c6 {
   outline: none;
 }
 
 .c5 {
-  outline: none;
-}
-
-.c4 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -326,15 +337,25 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
+  background-color: #007aff;
+  color: #fff;
 }
 
-.c4:disabled {
+.c5:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c5:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
+}
+
+.c4 {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
 }
 
 .c4:hover {
@@ -403,7 +424,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
 >
   <svg
     aria-hidden={true}
@@ -449,7 +470,8 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     }
   />
   <button
-    className="c4"
+    className="c4 c5"
+    color="primary"
     style={
       Object {
         "alignSelf": "center",
@@ -464,7 +486,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
     <div>
       <svg
         aria-hidden={true}
-        className="c1 c5"
+        className="c6 c2"
         fill="currentcolor"
         focusable={false}
         height={24}

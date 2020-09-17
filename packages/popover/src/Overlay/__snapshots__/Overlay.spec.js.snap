@@ -1,8 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Background Overlay Active overlay 1`] = `
-.c0 {
+.c2 {
   background-color: #001833;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   position: fixed;
   top: 0;
@@ -16,17 +29,34 @@ exports[`Background Overlay Active overlay 1`] = `
 
 <div>
   <div
-    aria-hidden="true"
     class="c0"
-    tabindex="-1"
-  />
-   
+  >
+    <div
+      aria-hidden="true"
+      class="c1 c2"
+      data-testid="__pcln-popover_Overlay"
+      tabindex="-1"
+    />
+  </div>
 </div>
 `;
 
 exports[`Background Overlay Inactive overlay 1`] = `
-.c0 {
+.c2 {
   background-color: #001833;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   position: fixed;
   top: 0;
@@ -40,10 +70,14 @@ exports[`Background Overlay Inactive overlay 1`] = `
 
 <div>
   <div
-    aria-hidden="true"
     class="c0"
-    tabindex="-1"
-  />
-   
+  >
+    <div
+      aria-hidden="true"
+      class="c1 c2"
+      data-testid="__pcln-popover_Overlay"
+      tabindex="-1"
+    />
+  </div>
 </div>
 `;

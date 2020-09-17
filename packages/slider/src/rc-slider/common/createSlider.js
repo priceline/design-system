@@ -86,7 +86,7 @@ export default function createSlider(Component) {
         const { step, max, min } = props
         const isPointDiffEven = isFinite(max - min)
           ? (max - min) % step === 0
-          : true // eslint-disable-line
+          : true
         warning(
           step && Math.floor(step) === step ? isPointDiffEven : true,
           'Slider[max] - Slider[min] (%s) should be a multiple of Slider[step] (%s)',
@@ -257,13 +257,11 @@ export default function createSlider(Component) {
     }
 
     removeDocumentEvents() {
-      /* eslint-disable no-unused-expressions */
       this.onTouchMoveListener && this.onTouchMoveListener.remove()
       this.onTouchUpListener && this.onTouchUpListener.remove()
 
       this.onMouseMoveListener && this.onMouseMoveListener.remove()
       this.onMouseUpListener && this.onMouseUpListener.remove()
-      /* eslint-enable no-unused-expressions */
     }
 
     focus() {
@@ -285,16 +283,16 @@ export default function createSlider(Component) {
     calcValue(offset) {
       const { vertical, min, max } = this.props
       const ratio = Math.abs(Math.max(offset, 0) / this.getSliderLength())
-      const value = vertical
+
+      return vertical
         ? (1 - ratio) * (max - min) + min
         : ratio * (max - min) + min
-      return value
     }
 
     calcValueByPos(position) {
       const pixelOffset = position - this.getSliderStart()
-      const nextValue = this.trimAlignValue(this.calcValue(pixelOffset))
-      return nextValue
+
+      return this.trimAlignValue(this.calcValue(pixelOffset))
     }
 
     calcOffset(value) {
@@ -339,6 +337,7 @@ export default function createSlider(Component) {
         [className]: className,
       })
       return (
+        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <div
           ref={this.saveSlider}
           className={sliderClassName}

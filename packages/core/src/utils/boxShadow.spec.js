@@ -1,5 +1,5 @@
-import boxShadow from './boxShadow'
 import { boxShadows } from '../theme'
+import { boxShadow } from '.'
 
 const theme = {
   boxShadows: [

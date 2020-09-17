@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/no-identical-functions */
+
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty } from 'pcln-icons'
@@ -60,7 +62,6 @@ const CheckBoxWrapper = styled.div`
       props.disabled
         ? getPaletteColor('border.base')(props)
         : getPaletteColor('base')(props)};
-      }
   }
   
   > input {

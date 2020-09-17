@@ -1,1 +1,1 @@
-module.exports = require('../../babel.config')
+module.exports = { presets: ['@priceline'] }

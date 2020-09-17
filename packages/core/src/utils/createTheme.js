@@ -1,8 +1,7 @@
 const deepmerge = require('deepmerge')
 
-import defaultTheme from '../theme/theme'
-import createTextStyles from './createTextStyles'
-import createColorStyles from './createColorStyles'
+import { theme as defaultTheme } from '../theme/theme'
+import { createTextStyles, createColorStyles } from '.'
 
 /**
  * Adds aliases to an array of keys
@@ -149,7 +148,7 @@ const createPalette = ({ palette = {}, ...theme }) => {
  *
  * @returns {Object} The generated theme
  */
-export default (theme = {}, customBreakpoints = null) => {
+const createTheme = (theme = {}, customBreakpoints = null) => {
   const mergedTheme = deepmerge(defaultTheme, theme)
 
   return {
@@ -162,3 +161,5 @@ export default (theme = {}, customBreakpoints = null) => {
     textStyles: createTextStyles(mergedTheme),
   }
 }
+
+export { createTheme }

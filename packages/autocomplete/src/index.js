@@ -45,7 +45,7 @@ const MenuCard = styled(Card)`
 `
 
 MenuCard.defaultProps = {
-  bg: 'white',
+  color: 'white',
   height: '256px',
   borderWidth: 0,
   boxShadowSize: 'lg',
@@ -61,7 +61,6 @@ const MenuRoot = React.forwardRef((props, ref) => (
 ))
 MenuRoot.displayName = 'Autocomplete_MenuRoot'
 
-// eslint-disable-next-line react/prop-types
 export const Menu = ({ children, ...props }) => (
   <AutocompleteContext.Consumer
     // eslint-disable-next-line react/no-children-prop

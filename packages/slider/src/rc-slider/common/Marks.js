@@ -52,6 +52,7 @@ const Marks = ({
         ? { ...style, ...markPoint.style }
         : style
       return (
+        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <span
           className={markClassName}
           style={markStyle}

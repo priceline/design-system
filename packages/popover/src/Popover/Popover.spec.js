@@ -1,7 +1,8 @@
 import React from 'react'
-import { fireEvent, getByRole } from '@testing-library/react'
-import Popover from './Popover'
+import { render, fireEvent, getByRole } from 'testing-library'
 import { Box, Button } from 'pcln-design-system'
+
+import Popover from './Popover'
 
 // eslint-disable-next-line react/prop-types
 const InnerContent = ({ handleClose }) => (
@@ -31,7 +32,7 @@ describe('Popover', () => {
 
   describe('Trigger Element', () => {
     it('Renders trigger element and appends action props', () => {
-      const { container } = renderWithTheme(
+      const { container } = render(
         <Popover {...popoverProps}>
           <Button>{triggerButtonText}</Button>
         </Popover>
@@ -40,7 +41,7 @@ describe('Popover', () => {
     })
 
     it('toggle popover from trigger element', () => {
-      const { getByText, getByLabelText, queryByText } = renderWithTheme(
+      const { getByText, getByLabelText, queryByText } = render(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -56,7 +57,7 @@ describe('Popover', () => {
     })
 
     it('renders with FocusLock', () => {
-      const { getByText, asFragment } = renderWithTheme(
+      const { getByText, asFragment } = render(
         <Popover {...popoverProps} trapFocus>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -67,7 +68,7 @@ describe('Popover', () => {
     })
 
     it('clicking on close element inside popover, closes popover', () => {
-      const { getByText, queryByText } = renderWithTheme(
+      const { getByText, queryByText } = render(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -78,7 +79,7 @@ describe('Popover', () => {
     })
 
     it('pressing ESC key, closes popover', () => {
-      const { getByText, queryByText } = renderWithTheme(
+      const { getByText, queryByText } = render(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -93,7 +94,7 @@ describe('Popover', () => {
     })
 
     it('pressing any other key, does not close popover', () => {
-      const { getByText } = renderWithTheme(
+      const { getByText } = render(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -109,7 +110,7 @@ describe('Popover', () => {
 
     it('onOpen event', () => {
       const mockOnOpen = jest.fn()
-      const { getByText } = renderWithTheme(
+      const { getByText } = render(
         <Popover {...popoverProps} onOpen={mockOnOpen}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -122,7 +123,7 @@ describe('Popover', () => {
 
     it('onClose event', () => {
       const mockOnClose = jest.fn()
-      const { getByText } = renderWithTheme(
+      const { getByText } = render(
         <Popover {...popoverProps} onClose={mockOnClose}>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -141,7 +142,7 @@ describe('Popover', () => {
 
   describe('UI Positioning', () => {
     it('Bottom', () => {
-      const { getByText } = renderWithTheme(
+      const { getByText } = render(
         <Popover {...popoverProps} placement='bottom'>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -151,7 +152,7 @@ describe('Popover', () => {
     })
 
     it('Bottom End', () => {
-      const { getByText } = renderWithTheme(
+      const { getByText } = render(
         <Popover {...popoverProps} placement='bottom-end'>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -161,7 +162,7 @@ describe('Popover', () => {
     })
 
     it('Bottom Start', () => {
-      const { getByText } = renderWithTheme(
+      const { getByText } = render(
         <Popover {...popoverProps} placement='bottom-start'>
           <button>{triggerButtonText}</button>
         </Popover>
@@ -173,7 +174,7 @@ describe('Popover', () => {
 
   describe('colors', () => {
     it('renders with background.lightest color as default', () => {
-      const { getByText, getByRole } = renderWithTheme(
+      const { getByText, getByRole } = render(
         <Popover {...popoverProps}>
           <Button>{triggerButtonText}</Button>
         </Popover>
@@ -186,7 +187,7 @@ describe('Popover', () => {
     })
 
     it('renders with error color as default', () => {
-      const { getByText, getByRole } = renderWithTheme(
+      const { getByText, getByRole } = render(
         <Popover {...popoverProps} color='error'>
           <Button>{triggerButtonText}</Button>
         </Popover>

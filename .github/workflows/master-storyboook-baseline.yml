@@ -25,33 +25,29 @@ jobs:
           node-version: ${{ matrix.node-version }}
           fetch-depth: 0
 
-      - name: Cache node modules
+      - name: PNPM cache via actions/cache@v2
+        id: pnpm-cache
         uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
         with:
-          path: |
-            node_modules
-            */*/node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+          path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
+          key: rush-pnpm-cache
+          restore-keys: rush-pnpm-cache
 
-      - name: Install dependencies and bootstrap lerna
-        run: npm install
+      - name: Install dependencies
+        run: node common/scripts/install-run-rush.js install
+
+      - name: Build components
+        run: node common/scripts/install-run-rush.js build
 
       - name: Build Storybook
         working-directory: ./
-        run: |
-          npm run storybook
+        run: node common/scripts/install-run-rush.js build:storybook
 
       - name: Chromatic Storybook Review
         uses: chromaui/action@v1
 
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          storybookBuildDir: ./docs/out/storybook 
+          storybookBuildDir: ./docs/out/storybook
           exitOnceUploaded: true
           autoAcceptChanges: true

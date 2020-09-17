@@ -191,4 +191,4 @@ const theme = {
   transitionDelays,
 }
 
-export default theme
+export { theme }

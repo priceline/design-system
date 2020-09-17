@@ -5,7 +5,7 @@
  *
  * @returns {Object} The generated colorStyles
  */
-export default (theme = {}) => {
+const createColorStyles = (theme = {}) => {
   const {
     white,
     text,
@@ -118,3 +118,5 @@ export default (theme = {}) => {
     },
   }
 }
+
+export { createColorStyles }

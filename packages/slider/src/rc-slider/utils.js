@@ -1,3 +1,4 @@
+/* eslint-disable react/no-find-dom-node */
 import { findDOMNode } from 'react-dom'
 import keyCode from 'rc-util/lib/KeyCode'
 
@@ -76,7 +77,8 @@ export function ensureValuePrecision(val, props) {
   const { step } = props
   const closestPoint = isFinite(getClosestPoint(val, props))
     ? getClosestPoint(val, props)
-    : 0 // eslint-disable-line
+    : 0
+
   return step === null
     ? closestPoint
     : parseFloat(closestPoint.toFixed(getPrecision(step)))

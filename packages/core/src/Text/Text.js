@@ -57,7 +57,7 @@ const Text = mapProps(({ align, ...props }) => ({
     props.bg
       ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
       : ''}
-  
+
   ${display}
   ${height}
   ${maxHeight}

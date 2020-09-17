@@ -5,7 +5,7 @@
  *
  * @returns {Object} The generated textStyles
  */
-export default (theme = {}) => {
+const createTextStyles = (theme = {}) => {
   const { fontSizes, fontWeights, lineHeights, letterSpacings } = theme
 
   return {
@@ -78,3 +78,5 @@ export default (theme = {}) => {
     },
   }
 }
+
+export { createTextStyles }

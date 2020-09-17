@@ -16,34 +16,34 @@ const Input = mapProps(({ dsRef, ...props }) => ({
   ...props,
 }))(
   styled.input`
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
-  background-color: transparent;
-  border-radius: ${themeGet('radius')};
-  border-width: 1px;
-  border-style: solid;
+    appearance: none;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: ${themeGet('radius')};
+    border-width: 1px;
+    border-style: solid;
 
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
 
-  margin: 0;
+    margin: 0;
 
-  ::placeholder {
-    color: ${getPaletteColor('text.light')};
-  }
+    ::placeholder {
+      color: ${getPaletteColor('text.light')};
+    }
 
-  ::-ms-clear {
-    display: none;
-  }
+    ::-ms-clear {
+      display: none;
+    }
 
-  ${borders} ${space} ${fontSize};
-  ${applyVariations('Input')}
-`
+    ${borders} ${space} ${fontSize};
+    ${applyVariations('Input')}
+  `
 )
 
 Input.displayName = 'Input'

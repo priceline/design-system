@@ -24,12 +24,12 @@ import {
   ThemeProvider,
 } from 'pcln-design-system'
 import Component from '@reach/component-component'
-import Slider from '../../../slider/src'
+import Slider from 'pcln-slider'
 import Popover from './Popover'
 import { Graph as GraphIcon, Pin as PinIcon } from 'pcln-icons'
 
 export default {
-  title: 'Popover',
+  title: 'pcln-popover / Popover',
   component: Popover,
   parameters: {
     componentSubtitle: 'Used to display some content on top of another',

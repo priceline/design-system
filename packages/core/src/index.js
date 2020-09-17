@@ -43,6 +43,7 @@ export { Checkbox } from './Checkbox'
 
 export { theme } from './theme'
 export { ThemeProvider } from './ThemeProvider'
+
 export {
   borders,
   color,
@@ -52,6 +53,7 @@ export {
   getTextColorOn,
   hasPaletteColor,
   createTheme,
+  getSCMigrationRef,
 } from './utils'
 
 export * from './theme'

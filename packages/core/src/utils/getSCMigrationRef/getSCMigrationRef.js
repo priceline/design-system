@@ -19,6 +19,8 @@ const isStyledComponents3 = moize((styled) =>
  * will not have .extend.
  * @returns {string}
  */
-export default function getSCMigrationRef() {
+function getSCMigrationRef() {
   return isStyledComponents3(SC) ? 'innerRef' : 'ref'
 }
+
+export { getSCMigrationRef }

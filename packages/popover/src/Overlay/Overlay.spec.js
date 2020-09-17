@@ -1,5 +1,6 @@
 import React from 'react'
-import { fireEvent } from '@testing-library/react'
+import { render, fireEvent } from 'testing-library'
+
 import Overlay from './Overlay'
 
 const overlayProps = {
@@ -16,14 +17,14 @@ describe('Background Overlay', () => {
   afterEach(() => (console.error = consoleError))
 
   test('Active overlay', () => {
-    const { container } = renderWithTheme(
+    const { container } = render(
       <Overlay {...overlayProps} popoverOpen={true} />
     )
     expect(container).toMatchSnapshot()
   })
 
   test('Inactive overlay', () => {
-    const { container } = renderWithTheme(
+    const { container } = render(
       <Overlay {...overlayProps} popoverOpen={false} />
     )
     expect(container).toMatchSnapshot()
@@ -31,10 +32,11 @@ describe('Background Overlay', () => {
 
   test('Handle click event', () => {
     const onClick = jest.fn()
-    const { container } = renderWithTheme(
+    const { getByTestId } = render(
       <Overlay {...overlayProps} popoverOpen={true} handleClick={onClick} />
     )
-    fireEvent.click(container.firstChild)
+
+    fireEvent.click(getByTestId('__pcln-popover_Overlay'))
     expect(onClick).toHaveBeenCalled()
   })
 })

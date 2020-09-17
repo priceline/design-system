@@ -1,13 +1,14 @@
 import React from 'react'
-import { fireEvent } from '@testing-library/react'
+import { render, fireEvent } from 'testing-library'
 
 import { CloseButton } from '..'
 
 describe('CloseButton', () => {
   test('executes onClick prop on click', () => {
     const handleClick = jest.fn()
-    const { container } = renderWithTheme(<CloseButton onClick={handleClick} />)
-    fireEvent.click(container.firstChild)
+    const { getByLabelText } = render(<CloseButton onClick={handleClick} />)
+
+    fireEvent.click(getByLabelText('close'))
     expect(handleClick).toHaveBeenCalled()
   })
 

@@ -85,13 +85,13 @@ const TooltipContent = styled(Box)`
     height: 0;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent ${(props) =>
-      getPaletteColor(props.bg || props.color, 'base')(props)} ${(props) =>
-  getPaletteColor(props.bg || props.color, 'base')(props)};
+    border-color: transparent transparent
+      ${(props) => getPaletteColor(props.bg || props.color, 'base')(props)}
+      ${(props) => getPaletteColor(props.bg || props.color, 'base')(props)};
 
     ${arrow} ${arrowPosition} ${arrowAlign} ${arrowShadow};
   }
-  
+
   ${applyVariations('Tooltip')}
 `
 
