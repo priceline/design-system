@@ -13,12 +13,9 @@ npm install pcln-design-system
 
 ## Contributing
 
-If you'd like to contribute to the design system, we'd love to have your help.
-If you work at Priceline.com, please join the #design-system Slack channel and
-let us know what you'd like to work on.
+If you'd like to contribute to the design system, we'd love to have your help. If you work at Priceline.com, please join the #design-system Slack channel and let us know what you'd like to work on.
 
-For all contributors, please be sure to read the
-[Contributing](CONTRIBUTING.md) doc.
+For all contributors, please be sure to read the [Contributing](CONTRIBUTING.md) doc.
 
 ## Documentation
 
@@ -27,12 +24,9 @@ For all contributors, please be sure to read the
 
 ## Motivation
 
-In order to create a consistently great experience for our users, the design
-system is meant to be the single source of truth for user interface standards
-for both designers and developers.
+In order to create a consistently great experience for our users, the design system is meant to be the single source of truth for user interface standards for both designers and developers.
 
-Built off of the work of previous efforts, this project intends
-to consolidate those ideas into a living, well-documented, and growing system.
+Built off of the work of previous efforts, this project intends to consolidate those ideas into a living, well-documented, and growing system.
 
 ## Goals
 

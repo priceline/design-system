@@ -24,8 +24,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
-          key: rush-pnpm-cache
-          restore-keys: rush-pnpm-cache
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
@@ -34,7 +35,7 @@ jobs:
         run: node common/scripts/install-run-rush.js build
 
       - name: Build docsite
-        run: node common/scripts/install-run-rush.js build:docs
+        run: node common/scripts/install-run-rush.js build:docsite
 
       - name: Build static Storybook
         working-directory: ./

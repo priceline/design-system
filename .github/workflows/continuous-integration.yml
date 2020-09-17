@@ -1,7 +1,4 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Rush Design System CI
 
 on:
   push:
@@ -9,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  build:
+  design-system-ci:
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,8 +27,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
-          key: rush-pnpm-cache
-          restore-keys: rush-pnpm-cache
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
