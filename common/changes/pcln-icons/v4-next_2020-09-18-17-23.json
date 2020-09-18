@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "React floor bump to 16.10",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "Steven.Dalonzo@priceline.com"
+}
