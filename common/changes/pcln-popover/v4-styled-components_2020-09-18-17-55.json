@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "use styled-components v4 as dev and peer dependency",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "Steven.Dalonzo@priceline.com"
+}
