@@ -1,19 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlockLink renders 1`] = `
-.c1 {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #007aff;
-}
-
-.c1:hover {
-  color: #049;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .c0 {
   display: block;
   color: inherit;
@@ -22,9 +9,7 @@ exports[`BlockLink renders 1`] = `
 }
 
 <a
-  className="c0 c1"
-  color="primary"
-  rel={null}
+  className="c0"
 >
   raw text
 </a>
