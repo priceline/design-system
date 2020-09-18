@@ -6,9 +6,3 @@ import 'jest-styled-components'
 
 import { createTheme } from '../src'
 
-
-global.requestAnimationFrame =
-  global.requestAnimationFrame ||
-  function _raf(cb) {
-    return setTimeout(cb, 0)
-  }
