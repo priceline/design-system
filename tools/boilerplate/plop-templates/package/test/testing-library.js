@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { render } from '@testing-library/react'
-import { ThemeProvider } from '../src'
+import { ThemeProvider } from 'pcln-design-system'
 
 const WithThemeProvider = ({ children }) => (
   <ThemeProvider>{children}</ThemeProvider>
