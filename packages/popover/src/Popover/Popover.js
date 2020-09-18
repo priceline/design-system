@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Manager, Reference } from 'react-popper'
-import { deprecatedPropType, getSCMigrationRef } from 'pcln-design-system'
+import { deprecatedPropType } from 'pcln-design-system'
 
 import PopoverContent from '../PopoverContent'
 
@@ -66,13 +66,13 @@ class Popover extends Component {
         <Reference>
           {({ ref }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
-            <InlineContainer {...{ [getSCMigrationRef()]: ref }}>
+            <InlineContainer ref={ref}>
               {
                 // Clone element to pass down toggle event so it can be used directly from children as needed
                 React.cloneElement(children, {
                   'aria-label': ariaLabel,
                   onClick: (evt) => this.handleToggle(evt, isPopoverOpen),
-                  [getSCMigrationRef()]: this.triggerRef,
+                  ref: this.triggerRef,
                 })
               }
             </InlineContainer>
