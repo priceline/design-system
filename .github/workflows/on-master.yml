@@ -1,29 +1,22 @@
-# This workflow is to create a baseline for comparison in PRs via Chromatic
-# It is necessary due to our `Squash and merge` strategy, where the head commit changes and
-# Chromatic doesn't have a proper ref to compare changes to.
-# See https://www.chromatic.com/docs/ci#github-squash-rebase-merge-and-the-master-branch for more information
+name: On Master Merge - Build Static Docsite and Storybook
 
-name: Storybook Baseline for Chromatic
 on:
   push:
-    branches:
-      - 'master'
+    branches: [master]
 
 jobs:
-  build:
+  on-master-docsite-storybook:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-          fetch-depth: 0
+          node-version: 12.x
 
       - name: PNPM cache via actions/cache@v2
         id: pnpm-cache
@@ -40,8 +33,19 @@ jobs:
       - name: Build components
         run: node common/scripts/install-run-rush.js build
 
-      - name: Build Storybook
+      - name: Build docsite
+        run: node common/scripts/install-run-rush.js build:docsite
+
+      - name: Build static Storybook
         working-directory: ./
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         run: node common/scripts/install-run-rush.js build:storybook:baseline
+
+      - name: Push build directory to GitHub Pages branch
+        uses: s0/git-publish-subdir-action@v2.3.0
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: apps/docs/out
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
