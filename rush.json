@@ -272,7 +272,7 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    // "url": "https://github.com/microsoft/rush-example",
+    "url": "https://github.com/priceline/design-system"
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
@@ -330,17 +330,14 @@
    * For more details and instructions, see this article:  https://rushjs.io/pages/advanced/installation_variants/
    */
   "variants": [
-    // {
-    //   /**
-    //    * The folder name for this variant.
-    //    */
-    //   "variantName": "old-sdk",
-    //
-    //   /**
-    //    * An informative description
-    //    */
-    //   "description": "Build this repo using the previous release of the SDK"
-    // }
+    {
+      "variantName": "styled-components-v4",
+      "description": "Build this repo using styled-components v4"
+    },
+    {
+      "variantName": "styled-components-v5",
+      "description": "Build this repo using styled-components v5"
+    }
   ],
 
   /**
