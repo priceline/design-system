@@ -13,7 +13,7 @@ exports[`Flex alignItems prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -29,7 +29,7 @@ exports[`Flex flexWrap prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -46,7 +46,7 @@ exports[`Flex justifyContent prop 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;
 
@@ -59,6 +59,6 @@ exports[`Flex renders 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 />
 `;

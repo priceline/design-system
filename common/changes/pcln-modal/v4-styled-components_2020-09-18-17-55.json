@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "use styled-components v4 as dev and peer dependency",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-modal",
+  "email": "Steven.Dalonzo@priceline.com"
+}

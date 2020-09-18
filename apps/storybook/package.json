@@ -37,6 +37,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable-playground": "^1.0.0",
-    "styled-components": "^3.4.10"
+    "styled-components": "^4.4.1"
   }
 }

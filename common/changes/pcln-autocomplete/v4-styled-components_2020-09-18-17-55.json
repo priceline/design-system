@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "use styled-components v4 as dev and peer dependency",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-autocomplete",
+  "email": "Steven.Dalonzo@priceline.com"
+}

@@ -2,14 +2,14 @@
 
 exports[`Checkbox renders disabled with defaultChecked 1`] = `
 <DocumentFragment>
-  .c4 {
+  .c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
@@ -126,7 +126,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="c5 c4"
+        class="c3 c5"
         data-name="empty"
         fill="currentcolor"
         focusable="false"
@@ -147,14 +147,14 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 exports[`Checkbox renders disabled with disabled prop 1`] = `
 <DocumentFragment>
-  .c4 {
+  .c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
@@ -270,7 +270,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="c5 c4"
+        class="c3 c5"
         data-name="empty"
         fill="currentcolor"
         focusable="false"
@@ -291,14 +291,14 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 exports[`Checkbox renders without the theme passed specifically 1`] = `
 <DocumentFragment>
-  .c4 {
+  .c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
@@ -412,7 +412,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="c5 c4"
+        class="c3 c5"
         data-name="empty"
         fill="currentcolor"
         focusable="false"

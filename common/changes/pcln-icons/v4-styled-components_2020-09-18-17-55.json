@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "use styled-components v4 as dev and peer dependency",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "Steven.Dalonzo@priceline.com"
+}

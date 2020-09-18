@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "use styled-components v4 as dev and peer dependency",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "Steven.Dalonzo@priceline.com"
+}
