@@ -21,7 +21,7 @@
       // This will invoke common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
       "shellCommand": "pretty-quick --staged"
     },
-    
+
     {
       "name": "test:ci",
       "commandKind": "bulk",
@@ -43,6 +43,14 @@
       "ignoreMissingScript": true
     },
 
+    {
+      "commandKind": "global",
+      "name": "prepare",
+      "summary": "Install dependencies and build projects",
+      "description": "Prepare for working by getting dependencies and projects built",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "rush install && rush build"
+    },
     {
       "name": "lint",
       "commandKind": "bulk",
@@ -96,7 +104,15 @@
       "shellCommand": "(cd apps/docs && rushx start)"
     },
 
-    
+    {
+      "name": "create",
+      "commandKind": "global",
+      "summary": "Runs the generator",
+      "description": "Run the generator to scaffold new projects, components, etc.",
+      "safeForSimultaneousRushProcesses": false,
+      "shellCommand": "plop --plopfile tools/boilerplate/plopfile.js"
+    },
+
     {
       "name": "build:docsite",
       "commandKind": "global",

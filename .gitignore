@@ -73,3 +73,7 @@ apps/docs/out/
 packages/icons/components/
 
 .vscode
+.idea
+
+package-lock.json
+.npmrc
