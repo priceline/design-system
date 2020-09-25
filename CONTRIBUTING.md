@@ -17,9 +17,7 @@
 
   - [Creating Components](COMPONENT_GUIDANCE.md)
 
-If you'd like to contribute to the Design System, we'd love to have your help.
-As with any open source project, we ask that you be kind, professional, and
-courteous towards others.
+If you'd like to contribute to the Design System, we'd love to have your help. As with any open source project, we ask that you be kind, professional, and courteous towards others.
 
 Contributing doesn't necessarily mean committing code; we also encourage you to:
 
@@ -31,8 +29,11 @@ Contributing doesn't necessarily mean committing code; we also encourage you to:
 
 ## Local Development
 
-To contribute code to the Design System, first, you'll need to set it up for
-local development.
+The Design System is a [Rush](https://rushjs.io/) Monorepo. Install `rush` globally:
+
+```bash
+npm i -g @microsoft/rush
+```
 
 ### Clone the repo
 
@@ -41,42 +42,54 @@ git clone https://github.com/priceline/design-system.git
 cd design-system
 ```
 
-### Lerna
+### Preparation
 
-This repository uses [Lerna](https://lernajs.io) and is set up as a monorepo, with
-multiple npm packages in the `packages/` folder.
-
-### Install dependencies
-
-In the root directory, use `npm install` command to install dependencies.
+To install dependencies:
 
 ```sh
-npm install
+rush install
 ```
 
-Please be mindful that any deletion, or edit, of `package-lock.json`
-can cause issues in dependencies of packages within the design system.
+To build the projects:
+
+```sh
+rush build
+```
+
+As a convenience, `rush prepare` will run `install` and `build`
+
+```sh
+rush prepare
+```
+
+To update the lockfile when you change dependencies in a `package.json`:
+
+```sh
+rush update
+```
 
 ### Running tests
 
-We use [Jest][jest] for testing, including unit tests for functionality and
-[snapshot testing][snapshots] for components.
+We use [Jest][jest] for testing. We intend for all tests to be migrated to [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
 
 ```sh
-npm test
+rush test:ci
 ```
 
-To run tests in watch mode (useful for TDD):
+To update snapshots while running tests:
 
 ```sh
-npm test -- --watch
+rush test:ci:update
 ```
 
-If you make intentional changes to an existing component, you will need to
-update its snapshot:
+### Linting and formatting
+
+Prettier is used for formatting and is run as a pre-commit hook. There is a prettier config file in the root of the repository so that IDE extensions for ESLint can read the configuration.
+
+ESLint is used for static analysis, and is part of the CI process.
 
 ```sh
-npm test -- -u
+rush lint
 ```
 
 ### Creating new components
@@ -85,73 +98,42 @@ We use [Plop](https://plopjs.com/) to scaffold new components rather than copyin
 The configuration allows you to create new core and package components.
 Follow the steps below to create a new component:
 
-1. Run `npm run create-component` and follow the prompts
-2. Run `npm run prepare` to tell Lerna to bootstrap your new component folder
+1. Run `rush create` and follow the prompts for `component` (component in `pcln-design-system` (`packages/core`)) or `package` (new project)
+2. Run `rush update` to update dependencies
 3. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.js` file
 
 ### Storybook
 
 We use [Storybook][storybook] for isolated UI component development.
-To run storybook locally from the root directory:
+
+Storybook stories are in the `src` folder of each project, adjacent to the components they showcase.
 
 ```sh
-npm start
+rush storybook
 open http://localhost:8000/
 ```
 
-- Storybook stories are in the following directories:
-  - `packages/core/storybook`
-  - `packages/slider/storybook`
-
 ### Publishing
 
-To publish the packages to npm, you have to be an owner of the
-packages you're publishing. Use the `#design-system` Slack channel for more
-information.
+An updated publishing process will be documented in detail at the time of the next publish.
 
-Before Publishing:
+To publish the packages to npm, you have to be an owner of the packages you're publishing on the NPM registry. Priceline employees should use the `#design-system` Slack channel for more information.
+
+#### Before Publishing:
 
 - Publishing is very easy once you have access to the NPM package. **Please Be Careful** 🤗
-- As of v2, Node.js v8+ is required
 - Use `npm login` to authenticate against the public NPM registry. If your local environment requires multiple NPM registries, the [npmrc](https://www.npmjs.com/package/npmrc) tool is useful to toggle between registries.
-
-These Lerna commands can be helpful when publishing:
-
-- Run `npm run changed` to see which packages have changed since the last
-  release.
-- Run `npm run diff` to see a diff of all packages since the last release.
-- Run `npm run publish` to publish the updated packages with Lerna.
-
-The following process is recommended for publishing packages individually:
-
-1. `npmrc public` - This command may differ based on your setup, but essentially you want to ensure that you are pointing to a public NPM registry
-1. `npm login`
-1. cd into packages/package-you-want-to-update
-1. `npm version patch`
-1. `cd ../..` - cd back to root directory
-1. `NPM_CONFIG_OTP=XXXXXX npm run publish from-package` - XXXXXX will be a 6-digit number from your authenticator app. If publishing fails, ensure that you are a collaborator on the subpackges you are trying to publish. (Have a maintainer run `npm owner add <user> [<@scope>/]<pkg>` on your behalf.) If you are publishing a version for testing purposes only, append `--tag beta` to the publish command, so that test versions are not visible on our npmjs pages.
-1. commit and push your changes to master (Note: you need to be an admin of the design-system GitHub repository to do this).
-
-After publishing please [document your release](https://github.com/priceline/design-system/releases/new)
+- After publishing please [document your release](https://github.com/priceline/design-system/releases/new)
 
 ### Static Docs Site
 
-Markdown and source code for the [docs site][] are
-located in `docs/`.
+The NextJS docsite is located in `apps/docs`.
 
 To run the static docs locally:
 
 ```sh
-cd docs
-npm install
-npm start
+rush docsite
 ```
-
-### Troubleshooting
-
-You may run into the following error `ERROR in ./icons.json` when running
-storybook. The problem occur when the icons.json is not built yet. Running
-`npm run prepare` should fix the problem.
 
 ### GitHub Flow
 
@@ -159,26 +141,19 @@ We follow a loose version of [GitHub Flow][github-flow] where feature branches
 are created from master, submitted as pull requests, given time for review and
 discussion, then merged into master.
 
-All merges into master should be ready to be published to npm and the person
-merging the PR should use `npm version` to bump the package's version according
-to [Semantic Versioning][semver].
+All merges into master should be ready to be published. The Design System Working Group will batch releases as appropriate.
 
 Generally, the workflow looks like this:
 
 1. Pull the latest changes from master
-2. Create a new feature branch (pick a name that clearly describes the feature)
-3. Commit changes to your feature branch (smaller commits with clear messages
-   are best)
-4. Push your branch to origin
-5. Open a Pull Request with a clear description of the change (Answering
-   _what_, _why_, and _how_ is a good place to start)
-6. Allow for some time for discussion
-7. (optional) If your PR has merge conflicts, pull the latest from master, then
-   merge those changes into your PR branch, resolving conflicts in the process
-8. Once there is consensus on the changes and all tests have passed,
-   merge the PR into master
-9. Use the npm CLI to appropriately version and publish the package
-10. Push the git tags created with the npm CLI to GitHub with `git push --tags`
+1. Create a new feature branch (pick a name that clearly describes the feature)
+1. Commit changes to your feature branch (smaller commits with clear messages are best)
+1. Run `rush change` to document your changes
+1. Push your branch to origin
+1. Open a Pull Request with a clear description of the change (Answering _what_, _why_, and _how_ is a good place to start)
+1. Allow for some time for discussion
+1. (optional) If your PR has merge conflicts, pull the latest from master, then merge those changes into your PR branch, resolving conflicts in the process
+1. Once there is consensus on the changes and all tests have passed, merge the PR into master
 
 ### Pull Requests
 
