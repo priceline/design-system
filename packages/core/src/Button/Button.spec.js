@@ -266,7 +266,7 @@ describe('Button', () => {
   })
 
   // this test detects a current defect that will be fixed properly in DSv4
-  it.skip('should not lose base styles on "styled(Button)"', () => {
+  it('should not lose base styles on "styled(Button)"', () => {
     const { getByText } = render(<StyledButton>BUTTON</StyledButton>)
 
     const button = getByText('BUTTON')

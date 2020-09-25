@@ -7,7 +7,11 @@ import { Cartesian, Catch, LiveEditor, Markdown, XRay } from '@compositor/kit'
 
 import { Box, Button } from '..'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
+import styled from 'styled-components'
 
+const StyledButton = styled(Button)`
+  padding: 100px;
+`
 const variations = { outline: 'outline', fill: 'fill', link: 'link' }
 const sizes = { small: 'small', medium: 'medium', large: 'large' }
 const colors = {
@@ -150,3 +154,10 @@ Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Us
       )}
     />
   ))
+  .add('Styled Button should not lose its styling', () => {
+    return (
+      <Box>
+        <StyledButton>BUTTON</StyledButton>
+      </Box>
+    )
+  })
