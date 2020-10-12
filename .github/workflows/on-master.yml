@@ -36,6 +36,9 @@ jobs:
       - name: Build docsite
         run: node common/scripts/install-run-rush.js build:docsite
 
+      - name: Create .nojekyll file
+        run: touch apps/docs/out/.nojekyll
+
       - name: Build static Storybook
         working-directory: ./
         env:
