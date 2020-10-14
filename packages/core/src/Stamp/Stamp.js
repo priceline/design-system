@@ -58,7 +58,6 @@ const Stamp = styled.div`
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   border-radius: 2px;
