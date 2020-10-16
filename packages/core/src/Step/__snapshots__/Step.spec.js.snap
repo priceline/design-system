@@ -16,7 +16,6 @@ exports[`Step should handle onClick 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -113,7 +112,6 @@ exports[`Step should render a completed step correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -228,7 +226,6 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -330,7 +327,6 @@ exports[`Step should render an active step correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -414,7 +410,6 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;

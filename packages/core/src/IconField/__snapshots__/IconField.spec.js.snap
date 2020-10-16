@@ -148,7 +148,6 @@ exports[`IconField renders icon button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;
@@ -329,7 +328,6 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
   border-radius: 2px;

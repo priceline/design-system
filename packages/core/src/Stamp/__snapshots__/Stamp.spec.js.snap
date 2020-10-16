@@ -12,7 +12,6 @@ exports[`Stamp bg blue sets background color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -64,7 +63,6 @@ exports[`Stamp borderColor green sets border color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -116,7 +114,6 @@ exports[`Stamp color blue sets text and icon color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -168,7 +165,6 @@ exports[`Stamp color gray sets text and icon color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -220,7 +216,6 @@ exports[`Stamp color green sets text and icon color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -272,7 +267,6 @@ exports[`Stamp color orange sets text and icon color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -324,7 +318,6 @@ exports[`Stamp color purple sets text and icon color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -376,7 +369,6 @@ exports[`Stamp color red sets text and icon color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -428,7 +420,6 @@ exports[`Stamp has default borderGray border color 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -480,7 +471,6 @@ exports[`Stamp renders 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -532,7 +522,6 @@ exports[`Stamp renders medium fill 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -584,7 +573,6 @@ exports[`Stamp renders small fill 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
@@ -630,7 +618,6 @@ exports[`Stamp renders small size 1`] = `
   align-items: center;
   vertical-align: top;
   min-height: 24px;
-  font-weight: 600;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
