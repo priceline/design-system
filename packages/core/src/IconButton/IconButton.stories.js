@@ -25,6 +25,13 @@ storiesOf('IconButton', module)
       icon={<Calendar title='Choose date' size={64} />}
     />
   ))
+  .add('with disabled', () => (
+    <IconButton
+      onClick={action('Clicked IconButton')}
+      icon={<Calendar title='Choose date' />}
+      disabled
+    />
+  ))
   .add('Forward refs', () => (
     <ForwardRefDemo
       refChild={(dsRef) => (
