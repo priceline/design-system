@@ -92,7 +92,7 @@
       "summary": "Build the Storybook",
       "description": "Build the Storybook",
       "safeForSimultaneousRushProcesses": false,
-      "shellCommand": "(cd apps/storybook && rushx storybook:baseline)"
+      "shellCommand": "(cd apps/storybook && rushx storybook:baseline:chromatic)"
     },
 
     {
