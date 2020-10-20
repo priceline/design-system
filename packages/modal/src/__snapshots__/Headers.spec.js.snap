@@ -84,6 +84,10 @@ exports[`ModalHeader render 1`] = `
   display: flex;
 }
 
+.c7:disabled {
+  background-color: transparent;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;

@@ -17,6 +17,9 @@ const TransparentButton = styled(Button)`
   & > div {
     display: flex;
   }
+  &:disabled {
+    background-color: transparent;
+  }
 
   ${applyVariations('IconButton')}
 `

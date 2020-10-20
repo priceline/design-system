@@ -60,6 +60,10 @@ exports[`CloseButton renders without props 1`] = `
   display: flex;
 }
 
+.c0:disabled {
+  background-color: transparent;
+}
+
 <button
   aria-label="close"
   className="c0 c1"

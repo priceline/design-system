@@ -188,6 +188,10 @@ exports[`IconField renders icon button 1`] = `
   display: flex;
 }
 
+.c2:disabled {
+  background-color: transparent;
+}
+
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -366,6 +370,10 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c4:disabled {
+  background-color: transparent;
 }
 
 .c3 {
