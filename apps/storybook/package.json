@@ -12,8 +12,8 @@
     "storybook": "run-s storybook:build chromatic",
     "storybook:baseline": "run-s storybook:build storybook:baseline:chromatic",
     "storybook:build": "build-storybook -o ../docs/out/storybook",
-    "storybook:baseline:chromatic": "chromatic --storybook-build-dir=../docs/out/storybook --auto-accept-changes --exit-once-uploaded",
-    "chromatic": "chromatic --storybook-build-dir=../docs/out/storybook --exit-once-uploaded"
+    "storybook:baseline:chromatic": "chromatic --storybook-build-dir=../../docs/out/storybook --auto-accept-changes --exit-once-uploaded",
+    "chromatic": "chromatic --storybook-build-dir=../../docs/out/storybook --exit-once-uploaded"
   },
   "author": "Priceline Design System Working Group",
   "license": "MIT",
