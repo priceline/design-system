@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Remove isRequired from Checkbox's onChange",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "craig.palermo@priceline.com"
+}
