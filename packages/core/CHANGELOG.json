@@ -1,0 +1,26 @@
+{
+  "name": "pcln-design-system",
+  "entries": [
+    {
+      "version": "3.6.2",
+      "tag": "pcln-design-system_v3.6.2",
+      "date": "Fri, 23 Oct 2020 15:15:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove hard coded font-weight from button / stamp"
+          },
+          {
+            "comment": "Fix styling bug in Divider when browser zoomed-in"
+          },
+          {
+            "comment": "Fix styling bug when using styled(Button)"
+          },
+          {
+            "comment": "Revert change to Button that broke refs"
+          }
+        ]
+      }
+    }
+  ]
+}
