@@ -120,6 +120,15 @@
       "description": "Build the Next.js Docsite",
       "safeForSimultaneousRushProcesses": false,
       "shellCommand": "(cd apps/docs && rushx build:docs)"
+    },
+
+    {
+      "name": "create-release-notes",
+      "commandKind": "global",
+      "summary": "Create release notes from changelogs",
+      "description": "Create release notes from changelogs",
+      "safeForSimultaneousRushProcesses": false,
+      "shellCommand": "(cd tools/create-release-notes && rushx run:core)"
     }
 
     // {
