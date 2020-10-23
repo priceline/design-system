@@ -1,9 +1,11 @@
 name: Create release on push of tag
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      versionTag:
+        required: true
+        description: 'Tag for the new release'
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -39,9 +41,9 @@ jobs:
         run: |
           node common/scripts/install-run-rush.js create-release-notes
 
-      - name: NPM Publish
-        run: |
-          node common/scripts/install-run-rush.js publish -p --include-all --npm-auth-token="${{ secrets.NPM_TOKEN }}"
+      #      - name: NPM Publish
+      #        run: |
+      #          node common/scripts/install-run-rush.js publish -p --include-all --npm-auth-token="${{ secrets.NPM_TOKEN }}"
 
       - name: 'Create Release'
         uses: softprops/action-gh-release@v1

@@ -8,8 +8,7 @@ import { Release, Change } from '../types/Release'
 
 const config = RushConfiguration.loadFromDefaultLocation()
 
-const COMMIT_URL_STEM = 'https://github.com/pcln/pcln-web/commit/'
-const JIRA_URL_STEM = 'https://priceline.atlassian.net/browse/'
+const COMMIT_URL_STEM = 'https://github.com/priceline/design-system/commit/'
 
 const _getChangelog = (project: RushConfigurationProject) => {
   const file = fs.readFileSync(join(project.projectFolder, 'CHANGELOG.json'))
@@ -39,17 +38,14 @@ const _parseComment = (comment: string) => {
 
 const _formatChangeRow = (change: Change): string => {
   const author = _parseAuthor(change.author)
-  const comment = _parseComment(change.comment)
   const authorName = author.name !== 'undefined' ? author.name : 'Rush'
   let commitLink = ''
-  let jiraUrl = ''
-  let jiraStr = '-'
 
   if (change.commit) {
     const commitHash = change.commit.slice(0, 8)
-    const commitUrl = _getCommitUrl(change.commit)
 
-    commitLink = `[${commitHash}](${commitUrl})`
+    // TODO figure out how to go to commit page without branch name
+    commitLink = commitHash
   } else {
     commitLink = `n/a`
   }

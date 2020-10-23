@@ -7,7 +7,8 @@
     "demo": "ts-node src/index.ts",
     "postpublish": "slack-component-publish",
     "run:core": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "files": [
     "dist",
@@ -21,6 +22,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@microsoft/rush-lib": "^5.34.1",
+    "@priceline/eslint-config": "^0.0.1",
     "@types/yargs": "^15.0.8",
     "eslint": "^7.10.0",
     "ts-node": "^9.0.0",
