@@ -31,18 +31,22 @@ jobs:
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
 
+      # TODO convert release note tool to auto-installer so we don't have to do full build
       - name: Build components
         run: node common/scripts/install-run-rush.js build
 
-      # TODO generate release markdown
       - name: Create release notes
-        run: node common/scripts/install-run-rush.js create-release-notes
+        run: |
+          node common/scripts/install-run-rush.js create-release-notes
 
-      # - name: "Create Release"
-      #   uses: softprops/action-gh-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     files: |
-      #       ${{ steps.web-ext-sign.outputs.target }}
-      #       chrome.zip
+      - name: NPM Publish
+        run: |
+          node common/scripts/install-run-rush.js publish -p --include-all --npm-auth-token="${{ secrets.NPM_TOKEN }}"
+
+      - name: 'Create Release'
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          body_path: ./RELEASE_NOTES.md
+          name: 'pcln-design-system ${{ github.ref }}'

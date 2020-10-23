@@ -6,7 +6,7 @@
     "build": "tsc",
     "demo": "ts-node src/index.ts",
     "postpublish": "slack-component-publish",
-    "demo:createReleaseNotes": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
+    "run:core": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
     "lint": "eslint ."
   },
   "files": [
@@ -23,7 +23,6 @@
     "@microsoft/rush-lib": "^5.34.1",
     "@types/yargs": "^15.0.8",
     "eslint": "^7.10.0",
-    "j2m": "^1.1.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3",
     "yargs": "^16.0.3"

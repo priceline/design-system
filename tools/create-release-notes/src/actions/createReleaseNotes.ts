@@ -4,7 +4,6 @@ import {
 } from '@microsoft/rush-lib'
 import fs from 'fs'
 import { join } from 'path'
-import J2M from 'j2m'
 import { Release, Change } from '../types/Release'
 
 const config = RushConfiguration.loadFromDefaultLocation()
@@ -55,16 +54,7 @@ const _formatChangeRow = (change: Change): string => {
     commitLink = `n/a`
   }
 
-  // QUESTION: Should we also try to get the JIRA ticket from the commit message?
-  // We'd have to look that up from GitHub via the commit hash.
-  if (comment.jiraId) {
-    jiraUrl = `${JIRA_URL_STEM}${comment.jiraId}`
-    jiraStr = `[${comment.jiraId}](${jiraUrl})`
-  }
-
-  return `|${change.type}|${
-    change.comment
-  }|${authorName.trim()}|${commitLink}|${jiraStr}|`
+  return `|${change.type}|${change.comment}|${authorName.trim()}|${commitLink}|`
 }
 
 export const _transformRushComments = (comments): Change[] => {
@@ -85,15 +75,10 @@ export const formatNotesMarkdown = (notes: Release): string => {
 
 > Created ${notes.date}
 
-|Type | Change | Author | Commit | JIRA |
-|-----|--------|--------|--------|------|
+|Type | Change | Author | Commit |
+|-----|--------|--------|--------|
 ${notes.changes.map(_formatChangeRow).join('\n')}
 `
-}
-
-export const formatNotesJira = (notes: Release): string => {
-  const md = formatNotesMarkdown(notes)
-  return J2M.toJ(md)
 }
 
 export const createReleaseNotes = (packageName): Release => {
