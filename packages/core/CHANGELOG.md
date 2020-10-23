@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 23 Oct 2020 15:15:48 GMT and should not be manually modified.
+This log was last generated on Fri, 23 Oct 2020 16:39:00 GMT and should not be manually modified.
+
+## 3.6.3
+Fri, 23 Oct 2020 16:39:00 GMT
+
+### Patches
+
+- Manually trigger publish of new version
 
 ## 3.6.2
 Fri, 23 Oct 2020 15:15:48 GMT
