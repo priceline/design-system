@@ -415,6 +415,11 @@
       "shouldPublish": false
     },
     {
+      "packageName": "@priceline/create-release-notes",
+      "projectFolder": "tools/create-release-notes",
+      "shouldPublish": false
+    },
+    {
       "packageName": "pcln-types",
       "projectFolder": "tools/types",
       "shouldPublish": false

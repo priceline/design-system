@@ -1,0 +1,31 @@
+{
+  "name": "@priceline/create-release-notes",
+  "version": "0.0.1",
+  "description": "Helps with release management",
+  "scripts": {
+    "build": "tsc",
+    "demo": "ts-node src/index.ts",
+    "postpublish": "slack-component-publish",
+    "demo:createReleaseNotes": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
+    "lint": "eslint ."
+  },
+  "files": [
+    "dist",
+    ".bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github:pcln/pcln-web",
+    "directory": "tools/create-release-notes"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@microsoft/rush-lib": "^5.34.1",
+    "@types/yargs": "^15.0.8",
+    "eslint": "^7.10.0",
+    "j2m": "^1.1.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "yargs": "^16.0.3"
+  }
+}
