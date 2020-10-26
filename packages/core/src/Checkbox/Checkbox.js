@@ -114,7 +114,7 @@ Checkbox.displayName = 'Checkbox'
 Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
   dsRef: refPropType,
   color: deprecatedColorValue(),
 }
