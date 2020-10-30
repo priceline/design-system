@@ -143,7 +143,7 @@ Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Us
     <ForwardRefDemo
       refChild={(dsRef) => (
         <>
-          <Button dsRef={dsRef} color='error' size='large'>
+          <Button ref={dsRef} color='error' size='large'>
             PANIC
           </Button>
           <br />

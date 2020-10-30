@@ -572,7 +572,7 @@ exports[`FormField renders with Select  1`] = `
       width={1}
     >
       <select
-        className="c3 "
+        className="c3"
         fontSize={
           Array [
             2,
@@ -764,7 +764,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       width={1}
     >
       <select
-        className="c5 "
+        className="c5"
         fontSize={
           Array [
             2,

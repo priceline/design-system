@@ -69,7 +69,7 @@ exports[`Select renders 1`] = `
   width={1}
 >
   <select
-    className="c1 "
+    className="c1"
     fontSize={
       Array [
         2,

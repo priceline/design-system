@@ -54,7 +54,6 @@ export {
   getTextColorOn,
   hasPaletteColor,
   createTheme,
-  getSCMigrationRef,
 } from './utils'
 
 export * from './theme'

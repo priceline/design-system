@@ -7,15 +7,9 @@ import {
   getPaletteColor,
   borders,
   deprecatedColorValue,
-  mapProps,
-  getSCMigrationRef,
-  refPropType,
 } from '../utils'
 
-const TextArea = mapProps(({ dsRef, ...props }) => ({
-  [getSCMigrationRef()]: dsRef,
-  ...props,
-}))(styled.textarea`
+const TextArea = styled.textarea`
   appearance: none;
   display: block;
   width: 100%;
@@ -44,14 +38,13 @@ const TextArea = mapProps(({ dsRef, ...props }) => ({
 
   ${borders} ${space};
   ${applyVariations('TextArea')}
-`)
+`
 
 TextArea.displayName = 'TextArea'
 TextArea.isField = true
 TextArea.propTypes = {
   id: PropTypes.string.isRequired,
   color: deprecatedColorValue(),
-  dsRef: refPropType,
   ...borders.propTypes,
   ...space.propTypes,
 }

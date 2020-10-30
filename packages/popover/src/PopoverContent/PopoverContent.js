@@ -4,12 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Popper } from 'react-popper'
-import {
-  Box,
-  getPaletteColor,
-  deprecatedPropType,
-  getSCMigrationRef,
-} from 'pcln-design-system'
+import { Box, getPaletteColor, deprecatedPropType } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 
 import PopoverArrow from '../Arrow'
@@ -113,22 +108,16 @@ class PopoverContent extends Component {
           {...this.props}
         >
           {({ placement, ref, style, arrowProps }) => (
-            // Need to be a native element, because of ref forwarding limitations with DS functional components
             <PopperGuide
               className={className}
-              {...{ [getSCMigrationRef()]: ref }}
+              ref={ref}
               style={style}
               data-placement={placement}
               {...styleProps}
               role='dialog'
               aria-describedby={`dialog-description-${idx}`}
             >
-              <ContentContainer
-                {...{ [getSCMigrationRef()]: contentRef }}
-                ref={contentRef}
-                {...styleProps}
-                tabIndex='-1'
-              >
+              <ContentContainer ref={contentRef} {...styleProps} tabIndex='-1'>
                 <Content color={color} id={`popover-description-${idx}`}>
                   {content}
                 </Content>

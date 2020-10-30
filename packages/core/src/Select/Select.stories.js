@@ -46,12 +46,7 @@ storiesOf('Select', module)
     <ForwardRefDemo
       refChild={(dsRef) => (
         <>
-          <Select
-            id='cabinClass'
-            name='cabinClass'
-            defaultValue=''
-            dsRef={dsRef}
-          >
+          <Select id='cabinClass' name='cabinClass' defaultValue='' ref={dsRef}>
             <option>Economy</option>
             <option>Premium Economy</option>
             <option>Business</option>

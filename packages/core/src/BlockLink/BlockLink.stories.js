@@ -25,7 +25,7 @@ storiesOf('BlockLink', module)
     <ForwardRefDemo
       refChild={(dsRef) => (
         <>
-          <BlockLink color='darkGray' dsRef={dsRef}>
+          <BlockLink color='text.dark' ref={dsRef}>
             I am a link!
           </BlockLink>
           <br />
