@@ -1,0 +1,20 @@
+{
+  "name": "pcln-autocomplete",
+  "entries": [
+    {
+      "version": "3.1.0",
+      "tag": "pcln-autocomplete_v3.1.0",
+      "date": "Fri, 23 Oct 2020 15:15:48 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.6.1` to `^3.6.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.6.1` to `^3.6.3`"
+          }
+        ]
+      }
+    }
+  ]
+}
