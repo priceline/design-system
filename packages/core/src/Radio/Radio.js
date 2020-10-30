@@ -6,8 +6,6 @@ import {
   applyVariations,
   deprecatedColorValue,
   getPaletteColor,
-  refPropType,
-  getSCMigrationRef,
 } from '../utils'
 
 const RadioWrap = styled.div`
@@ -69,26 +67,22 @@ RadioIcon.propTypes = {
   checked: PropTypes.bool,
 }
 
-const Radio = (props) => {
+const Radio = React.forwardRef((props, ref) => {
   const { checked, disabled, size } = props
 
   const borderAdjustedSize = size + 4
 
-  // TODO remove once migrated to SC4
-  const spreadProps = { ...props }
-  spreadProps[getSCMigrationRef()] = props.dsRef
-  delete spreadProps.dsRef
-
   return (
     <RadioWrap color={props.color} checked={checked} disabled={disabled}>
-      <RadioInput type='radio' {...spreadProps} />
+      <RadioInput type='radio' {...props} ref={ref} />
       <RadioIcon checked={checked} size={borderAdjustedSize} />
     </RadioWrap>
   )
-}
+})
+
+Radio.displayName = 'Radio'
 Radio.propTypes = {
   color: deprecatedColorValue(),
-  dsRef: refPropType,
   size: PropTypes.number,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,

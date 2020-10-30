@@ -40,7 +40,7 @@ storiesOf('Link', module)
     <ForwardRefDemo
       refChild={(dsRef) => (
         <>
-          <Link color='darkGray' dsRef={dsRef}>
+          <Link color='text.dark' ref={dsRef}>
             I am a link!
           </Link>
           <br />
@@ -57,7 +57,7 @@ storiesOf('Link', module)
   ))
   .add('Color', () => (
     <div>
-      <Link color='darkGray'>I am a different color!</Link>
+      <Link color='text.dark'>I am a different color!</Link>
       <br />
       <Link color='secondary'>I am a different color!</Link>
       <br />

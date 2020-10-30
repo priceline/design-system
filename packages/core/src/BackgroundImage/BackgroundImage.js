@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import { width } from 'styled-system'
-import { applyVariations, getPaletteColor, mapProps } from '../utils'
+import { applyVariations, getPaletteColor } from '../utils'
 
 const variations = {
   parallax: css`
@@ -17,16 +17,14 @@ const image = (props) =>
 
 const height = (props) => (props.height ? { height: props.height } : null)
 
-const BackgroundImage = mapProps(({ ...props }) => ({
-  ...props,
-}))(styled.div`
+const BackgroundImage = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: ${getPaletteColor('border.light')};
   ${image} ${height} ${width};
   ${applyVariations('BackgroundImage', variations)}
-`)
+`
 
 BackgroundImage.defaultProps = {
   variation: 'static',

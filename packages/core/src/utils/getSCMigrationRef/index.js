@@ -1,1 +1,0 @@
-export { getSCMigrationRef } from './getSCMigrationRef'

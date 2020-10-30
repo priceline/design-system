@@ -160,7 +160,7 @@ storiesOf('Checkbox', module)
               <Button dsRef={e => this.btnRef = e}>Click me</Button>
           */}
           <StyledLabel htmlFor='check'>
-            <Checkbox id='check' dsRef={dsRef} />
+            <Checkbox id='check' ref={dsRef} />
             Checkbox with ref
           </StyledLabel>
           <Button onClick={() => dsRef.current.focus()} mt={4}>

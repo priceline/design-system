@@ -19,7 +19,6 @@ import {
 } from 'styled-system'
 
 import {
-  mapProps,
   deprecatedPropType,
   deprecatedColorValue,
   applyVariations,
@@ -47,10 +46,10 @@ export const textShadow = (props) => {
     : null
 }
 
-const Text = mapProps(({ align, ...props }) => ({
+const Text = styled.div.attrs(({ align, ...props }) => ({
   textAlign: align,
   ...props,
-}))(styled.div`
+}))`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) =>
@@ -78,7 +77,7 @@ const Text = mapProps(({ align, ...props }) => ({
   ${textAlign}
   ${lineHeight}
   ${textShadow}
-`)
+`
 
 Text.displayName = 'Text'
 

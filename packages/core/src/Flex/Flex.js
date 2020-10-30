@@ -12,23 +12,22 @@ import { Box } from '../Box'
 
 import {
   applyVariations,
-  mapProps,
   deprecatedPropType,
   deprecatedColorValue,
 } from '../utils'
 
-const Flex = mapProps(({ wrap, align, justify, ...props }) => ({
+const Flex = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
   alignItems: align,
   justifyContent: justify,
   ...props,
-}))(styled(Box)`
+}))`
   display: flex;
   ${alignItems} ${justifyContent}
   ${flexDirection}
   ${flexWrap}
   ${applyVariations('Flex')}
-`)
+`
 
 Flex.propTypes = {
   ...space.propTypes,

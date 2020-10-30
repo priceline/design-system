@@ -32,7 +32,7 @@ storiesOf('ToggleBadge', module)
         <>
           <div>
             <ToggleBadge selected>Flight + Hotel</ToggleBadge>
-            <ToggleBadge dsRef={dsRef}>Flight + Hotel + Car</ToggleBadge>
+            <ToggleBadge ref={dsRef}>Flight + Hotel + Car</ToggleBadge>
             <ToggleBadge>Flight + Car</ToggleBadge>
           </div>
           <Button onClick={() => dsRef.current.focus()} mt={4}>
