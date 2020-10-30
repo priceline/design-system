@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "3.6.4",
+      "tag": "pcln-design-system_v3.6.4",
+      "date": "Fri, 30 Oct 2020 15:58:40 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove isRequired from Checkbox's onChange",
+            "author": "Benjamin Chen <benjaminlchen@gmail.com>",
+            "commit": "2ad97fd91911cac9e317282612c6401d388fce5f"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.6.3",
       "tag": "pcln-design-system_v3.6.3",
       "date": "Fri, 23 Oct 2020 16:39:00 GMT",
