@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 23 Oct 2020 16:39:00 GMT and should not be manually modified.
+This log was last generated on Fri, 30 Oct 2020 15:58:40 GMT and should not be manually modified.
+
+## 3.6.4
+Fri, 30 Oct 2020 15:58:40 GMT
+
+### Patches
+
+- Remove isRequired from Checkbox's onChange
 
 ## 3.6.3
 Fri, 23 Oct 2020 16:39:00 GMT
