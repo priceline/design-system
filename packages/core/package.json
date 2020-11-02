@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "3.6.4",
+  "version": "4.0.0-beta.0",
   "description": "Priceline Design System",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -73,7 +73,7 @@
     "deepmerge": "^4.2.2",
     "hoist-non-react-statics": "^3.3.2",
     "moize": "^5.4.7",
-    "pcln-icons": "^3.2.0",
+    "pcln-icons": "4.0.0-beta.0",
     "prop-types": "^15.7.2",
     "styled-system": "^4.2.4"
   },
