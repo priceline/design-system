@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { Cartesian } from '@compositor/kit'
@@ -25,6 +26,13 @@ const colors = {
   border: 'border',
   background: 'background',
 }
+
+const BlueStamp = styled(Stamp).attrs({
+  borderColor: 'primary',
+  bg: 'primary',
+  color: 'background.lightest',
+  mr: 2,
+})``
 
 storiesOf('Stamp', module)
   .add(
@@ -85,5 +93,33 @@ storiesOf('Stamp', module)
       <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
         <Text fontSize={4}>Malamute</Text>
       </Stamp>
+    </div>
+  ))
+  .add('Pass an array of sizes', () => (
+    <div>
+      <BlueStamp size={['medium', null, null, null, null, null]}>
+        <PinIcon pr={1} />
+        <Text>Larger at xs</Text>
+      </BlueStamp>
+      <BlueStamp size={['small', 'medium', null, null, null, null]}>
+        <PinIcon pr={1} />
+        <Text>Larger at sm</Text>
+      </BlueStamp>
+      <BlueStamp size={['small', null, 'medium', null, null, null]}>
+        <PinIcon pr={1} />
+        <Text>Larger at md</Text>
+      </BlueStamp>
+      <BlueStamp size={['small', 'small', null, 'medium', null, null]}>
+        <PinIcon pr={1} />
+        <Text>Larger at lg</Text>
+      </BlueStamp>
+      <BlueStamp size={['small', null, null, null, 'medium', null]}>
+        <PinIcon pr={1} />
+        <Text>Larger at xl</Text>
+      </BlueStamp>
+      <BlueStamp size={['small', null, null, null, null, 'medium']}>
+        <PinIcon pr={1} />
+        <Text>Larger at xxl</Text>
+      </BlueStamp>
     </div>
   ))

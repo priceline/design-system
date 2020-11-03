@@ -1,18 +1,20 @@
 import {
-  deprecatedPropType,
-  deprecatedColorValue,
-  hexToRgb,
-  decomposeColor,
-  getLuminance,
-  getContrastRatio,
+  applySizes,
   applyVariations,
-  getPaletteColor,
-  hasPaletteColor,
-  getTextColorOn,
-  getByPalette,
-  color,
   borders,
+  color,
   createTheme,
+  decomposeColor,
+  deprecatedColorValue,
+  deprecatedPropType,
+  getBreakpointSize,
+  getByPalette,
+  getContrastRatio,
+  getLuminance,
+  getPaletteColor,
+  getTextColorOn,
+  hasPaletteColor,
+  hexToRgb,
 } from '.'
 
 describe('utils', () => {
@@ -334,6 +336,67 @@ describe('utils', () => {
           'box-shadow': `0 0 0 2px ${props.theme.palette.primary.base}`,
         },
       })
+    })
+  })
+
+  describe('getBreakpointSize', () => {
+    test('returns the expected result', () => {
+      const testArray1 = ['small', 'medium', null, null, null, null]
+      const testArray2 = [null, 'small', null, null, 'medium', null]
+      expect(getBreakpointSize(testArray1, 2)).toBe('medium')
+      expect(getBreakpointSize(testArray1, 1)).toBe('small')
+      expect(getBreakpointSize(testArray2, 2)).toBe('small')
+      expect(getBreakpointSize(testArray2, 4)).toBe('small')
+      expect(getBreakpointSize(testArray2, 5)).toBe('medium')
+    })
+  })
+
+  describe('applySizes', () => {
+    const sizesCss = {
+      small: 'smaaaallll css',
+      medium: 'medium css',
+    }
+
+    test('returns the expected result when size is an array', () => {
+      const result2Css = [
+        'medium css',
+        ';',
+        '@media screen and (min-width:32em)',
+        '{',
+        'medium css',
+        ';}',
+        '@media screen and (min-width:40em)',
+        '{',
+        'medium css',
+        ';}',
+        '@media screen and (min-width:48em)',
+        '{',
+        'medium css',
+        ';}',
+        '@media screen and (min-width:64em)',
+        '{',
+        'smaaaallll css',
+        ';}',
+        '@media screen and (min-width:80em)',
+        '{',
+        'smaaaallll css',
+        ';}',
+      ]
+
+      const sizeArray1 = ['small', 'medium', null, null, null, null]
+      const sizeArray2 = ['medium', null, null, null, 'small', null]
+
+      const result1 = applySizes(sizesCss)({ size: sizeArray1 })
+      expect(result1[0]).toBe('smaaaallll css')
+      const result2 = applySizes(sizesCss)({ size: sizeArray2 })
+      expect(result2[0]).toBe('medium css')
+      expect(result2).toEqual(result2Css)
+    })
+    test('expected result when size is a string', () => {
+      const result1 = applySizes(sizesCss)({ size: 'medium' })
+      const result2 = applySizes(sizesCss)({ size: 'small' })
+      expect(result1).toEqual(['medium css'])
+      expect(result2).toEqual(['smaaaallll css'])
     })
   })
 })
