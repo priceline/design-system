@@ -14,12 +14,12 @@ function useToggle(initialValue = false) {
 describe('Chip', () => {
   it('renders filter with close icon if selected', () => {
     render(<Chip selected>Free Wifi</Chip>)
-    expect(screen.queryAllByTitle('Close').length).toBe(2)
+    expect(screen.queryAllByTitle('Close')).toHaveLength(2)
   })
 
   it('renders filter without close icon if not selected', () => {
     render(<Chip>Free Wifi</Chip>)
-    expect(screen.queryAllByTitle('Close').length).toBe(0)
+    expect(screen.queryAllByTitle('Close')).toHaveLength(0)
   })
 
   it('updates selected state when clicked', () => {
@@ -38,30 +38,52 @@ describe('Chip', () => {
     expect(result.current[0]).toBe(true)
   })
 
+  it('renders default chip', () => {
+    render(<Chip>Free Wifi</Chip>)
+
+    const Component = screen.getByText('Free Wifi')
+
+    expect(Component).toHaveStyleRule('border', '1px solid #c0cad5')
+    expect(Component).toHaveStyleRule('background-color', '#fff')
+    expect(Component).toHaveStyleRule('color', '#007aff')
+  })
+
   it('renders selected choice chip', () => {
-    const { asFragment } = render(
+    render(
       <Chip variation='choice' selected>
         Free Wifi
       </Chip>
     )
-    expect(asFragment()).toMatchSnapshot()
+    const Component = screen.getByText('Free Wifi')
+
+    expect(Component).toHaveStyleRule('border', '1px solid #007aff')
+    expect(Component).toHaveStyleRule('background-color', '#007aff')
+    expect(Component).toHaveStyleRule('color', '#fff')
   })
 
   it('renders selected filter chip', () => {
-    const { asFragment } = render(
+    render(
       <Chip variation='filter' selected>
         Free Wifi
       </Chip>
     )
-    expect(asFragment()).toMatchSnapshot()
+    const Component = screen.getByText('Free Wifi')
+
+    expect(Component).toHaveStyleRule('border', '1px solid #007aff')
+    expect(Component).toHaveStyleRule('background-color', '#e8f2ff')
+    expect(Component).toHaveStyleRule('color', '#007aff')
   })
 
-  it('renders input chip', () => {
-    const { asFragment } = render(
+  it('renders selected input chip', () => {
+    render(
       <Chip variation='input' selected>
         Free Wifi
       </Chip>
     )
-    expect(asFragment()).toMatchSnapshot()
+    const Component = screen.getByText('Free Wifi')
+
+    expect(Component).toHaveStyleRule('border', '1px solid #c0cad5')
+    expect(Component).toHaveStyleRule('background-color', '#f4f6f8')
+    expect(Component).toHaveStyleRule('color', '#4f6f8f')
   })
 })
