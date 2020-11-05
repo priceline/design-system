@@ -39,6 +39,7 @@ dependencies:
   '@svgr/cli': 4.3.3
   '@testing-library/jest-dom': 5.11.4
   '@testing-library/react': 11.0.4
+  '@testing-library/react-hooks': 3.4.2_react-test-renderer@16.13.1
   '@types/react': 16.9.49
   '@types/styled-system': 4.2.2
   '@typescript-eslint/eslint-plugin': 4.1.1_2157f218bfe5402f8d007bb46b1d4930
@@ -4646,6 +4647,29 @@ packages:
       yarn: '>=1'
     resolution:
       integrity: sha512-6RRn3epuweBODDIv3dAlWjOEHQLpGJHB2i912VS3JQtsD22+ENInhdDNl4ZZQiViLlIfFinkSET/J736ytV9sw==
+  /@testing-library/react-hooks/3.4.2_1fb72ba09e79ce5bfd91e4d67e1015b7:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      '@types/testing-library__react-hooks': 3.4.1
+      react: 16.13.1
+      react-test-renderer: 16.13.1_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: '>=16.9.0'
+      react-test-renderer: '>=16.9.0'
+    resolution:
+      integrity: sha512-RfPG0ckOzUIVeIqlOc1YztKgFW+ON8Y5xaSPbiBkfj9nMkkiLhLeBXT5icfPX65oJV/zCZu4z8EVnUc6GY9C5A==
+  /@testing-library/react-hooks/3.4.2_react-test-renderer@16.13.1:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      '@types/testing-library__react-hooks': 3.4.1
+      react-test-renderer: 16.13.1
+    dev: false
+    peerDependencies:
+      react: '>=16.9.0'
+      react-test-renderer: '>=16.9.0'
+    resolution:
+      integrity: sha512-RfPG0ckOzUIVeIqlOc1YztKgFW+ON8Y5xaSPbiBkfj9nMkkiLhLeBXT5icfPX65oJV/zCZu4z8EVnUc6GY9C5A==
   /@testing-library/react/11.0.4:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -4853,6 +4877,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9GfTo3a0PHwQeTVoqs0g5bS28KkSY48pp5659wA+Dp4MqceDEa8EHBqrllJvvtyusszyJhViUEap0FDvlk/9Zg==
+  /@types/react-test-renderer/16.9.3:
+    dependencies:
+      '@types/react': 16.9.49
+    dev: false
+    resolution:
+      integrity: sha512-wJ7IlN5NI82XMLOyHSa+cNN4Z0I+8/YaLl04uDgcZ+W+ExWCmCiVTLT/7fRNqzy4OhStZcUwIqLNF7q+AdW43Q==
   /@types/react-textarea-autosize/4.3.5:
     dependencies:
       '@types/react': 16.9.49
@@ -4896,6 +4926,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-K7nUSpH/5i8i0NagTJ+uFUDRueDlnMNhJtMjMwTGPPSqyImbWC/hgKPDCKt6Phu2iMJg2kWqlax+Ucj2DKMwpA==
+  /@types/testing-library__react-hooks/3.4.1:
+    dependencies:
+      '@types/react-test-renderer': 16.9.3
+    dev: false
+    resolution:
+      integrity: sha512-G4JdzEcq61fUyV6wVW9ebHWEiLK2iQvaBuCHHn9eMSbZzVh4Z4wHnUGIvQOYCCYeu5DnUtFyNYuAAgbSaO/43Q==
   /@types/uglify-js/3.9.3:
     dependencies:
       source-map: 0.6.1
@@ -26385,7 +26421,7 @@ packages:
     peerDependencies:
       '@babel/core': '*'
     resolution:
-      integrity: sha512-hh8PiJibzXXaOinXXWvgBRiu8wGRm/6nXM9LWkAjAHjiZbZkYHp2M964cdTz04sUyJB/pc0HIeaqCt2IHL47TQ==
+      integrity: sha512-S5C6WV3wUG6dxOWHRXII9zsVCo4oriipqCenlq76C7CjxP7NGiz59cmZKxN9GcQuspGiWxcDYHRHKXp82adLwg==
       tarball: 'file:projects/docs.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':
@@ -26438,7 +26474,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-autocomplete'
     resolution:
-      integrity: sha512-VdAHuKvtVCgehLa9c8pz+yDxHMNIouzkowA11xg3irtwl5UWS9Wl/EtPKgbWDJeBUsmsVuFrU5/RInzZcML3uQ==
+      integrity: sha512-+jqix+DqAVCic/8xebkauxV2XqPb9qfJKOWUcZ3sTIRv6DfmQhplwIGE0oRmAK+XAAIEnujZL8eE7+eYjp/7zQ==
       tarball: 'file:projects/pcln-autocomplete.tgz'
     version: 0.0.0
   'file:projects/pcln-design-system.tgz_5f4e75485d05063debccc2e0651ceb55':
@@ -26450,6 +26486,7 @@ packages:
       '@storybook/react': 5.3.21_859c605ca6661ee792e8f02338da5f92
       '@testing-library/jest-dom': 5.11.4
       '@testing-library/react': 11.0.4_react-dom@16.13.1+react@16.13.1
+      '@testing-library/react-hooks': 3.4.2_1fb72ba09e79ce5bfd91e4d67e1015b7
       '@types/styled-system': 4.2.2
       camelcase: 6.0.0
       cross-env: 7.0.2
@@ -26477,7 +26514,7 @@ packages:
       '@types/react': '*'
       babel-loader: '*'
     resolution:
-      integrity: sha512-vSlxRiMmyvth7Jcf6vbeINx2n6HTmk+aqPKZvtru49LJU+AkgPY2fuV9eBUm6fzgyDBRMeZpMfzcvAkCcTT44Q==
+      integrity: sha512-P7yxA9HjxA9rUF6ZoqVeOcbCSULxld/tE9+0NZ0RhytKHbNKspTfReuKL8ob5/H6zsodriuYjxwzCjYW/BnaZQ==
       tarball: 'file:projects/pcln-design-system.tgz'
     version: 0.0.0
   'file:projects/pcln-icons.tgz_@babel+core@7.11.6':
@@ -26537,7 +26574,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-e5IACfc0cwMxH9uIMj3yfcoJUIH0+zeHy2XJ9zt28thOxA328HZk9P/rUFFq12uCPEjgdmFtsaxjpKFiswE51Q==
+      integrity: sha512-vvnQFHjxbOCUDi+NL48RryQKWjeE7NH/Kt7YwSvmUcYkmtrHcRlEFNlaxErheEI75HNZP2E6XwZCINPEgnF55A==
       tarball: 'file:projects/pcln-modal.tgz'
     version: 0.0.0
   'file:projects/pcln-popover.tgz_df3cdb8411b91d06031563a68743d278':
@@ -26566,7 +26603,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-SRbLUccLxI62VymuQbKJ6SJDNWSJMi7ZSSKjf68U31oCqwOwHHwgwK0o/oyA98Ny+xbIHpbc95YUCgFf0cVbRg==
+      integrity: sha512-5HLG3yhJVGwfLbwzlqDRqVjRf2q2RULWsGjkl9yYlJadhECSo56rKEbk6w+bd2Uz0tf07Lm9NhM+Hkn6dnAR/g==
       tarball: 'file:projects/pcln-popover.tgz'
     version: 0.0.0
   'file:projects/pcln-slider.tgz':
@@ -26600,7 +26637,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-slider'
     resolution:
-      integrity: sha512-bP2NxVL/c+1/bj8ZVriyE0P1IgdWL96GB1q09F4GVONPEGZ3GLxuDXbFFpEpovyvCQknNWBF6z+OnpoRXFcCHg==
+      integrity: sha512-bwuutuXXCjSHfAfDvvHpTUZUlwGWzkRr+xIF4qdvY4J1p7FKVCYS+IyNMsEZqk1PQlFB4fmxsunHtExb65wQwQ==
       tarball: 'file:projects/pcln-slider.tgz'
     version: 0.0.0
   'file:projects/pcln-types.tgz':
@@ -26614,7 +26651,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-types'
     resolution:
-      integrity: sha512-T9hke5KMvg7mn+T7dFc2AK3OeYpWqfJsakeQtYb9Mjm/aI5XPivI4Qvgycqj9hVfG2cMSoHInKoN93vFHiFrMQ==
+      integrity: sha512-iBkSHaZXgtlOLsxYYTo6TKCn47k1Fsaj8xcb3ziVfVVADLbAp5dodCZKAVsUsSxWbzgO5sWYjnu3weUkSOUIVA==
       tarball: 'file:projects/pcln-types.tgz'
     version: 0.0.0
   'file:projects/storybook.tgz_df3cdb8411b91d06031563a68743d278':
@@ -26643,7 +26680,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-jbF+2sE3y2M6GqgPcFjs/KOZzjZb2D/Z84mcC49Ltrn87RrDU0lgFv0f3B6w9fQ9dPtzY4ZEduXSwn5/clvSZw==
+      integrity: sha512-EM47a+EjHNAOMT+U5ZH76TEL9Q/jehpx12uOV9kYM0tcPdN1vIcyjcRc7j4U7ESiOTkBR1laskdiZ36FB9B2Fg==
       tarball: 'file:projects/storybook.tgz'
     version: 0.0.0
 registry: ''
@@ -26688,6 +26725,7 @@ specifiers:
   '@svgr/cli': ^4.3.3
   '@testing-library/jest-dom': ^5.11.4
   '@testing-library/react': ^11.0.4
+  '@testing-library/react-hooks': ^3.4.2
   '@types/react': ^16.9.49
   '@types/styled-system': ^4.2.2
   '@typescript-eslint/eslint-plugin': ^4.1.1

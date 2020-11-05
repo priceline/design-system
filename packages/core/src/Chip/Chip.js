@@ -50,7 +50,7 @@ const StyledChip = styled.button`
   background-color: ${getPaletteColor('background.lightest')};
   border-radius: 2px;
   cursor: pointer;
-  font-family: Montserrat;
+  font-family: inherit;
 
   &:hover {
     border: 1px solid ${getPaletteColor('base')};
@@ -89,7 +89,7 @@ function Chip({ selected, variation, children, ...props }) {
     <StyledChip selected={selected} variation={variation} {...props}>
       {children}
       {selected && (variation === 'filter' || variation === 'input') && (
-        <CloseIcon ml={2} size={16} />
+        <CloseIcon title='Close' ml={2} />
       )}
     </StyledChip>
   )
