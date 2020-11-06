@@ -57,9 +57,11 @@ const type = (props) => {
 const sizes = {
   small: css`
     ${themeGet('textStyles.small')}
+    line-height: ${themeGet('lineHeights.display')};
   `,
   medium: css`
     ${themeGet('textStyles.display0')}
+    line-height: ${themeGet('lineHeights.standard')};
   `,
 }
 

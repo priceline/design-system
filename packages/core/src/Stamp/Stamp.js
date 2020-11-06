@@ -13,7 +13,8 @@ import {
 const sizes = {
   small: css`
     ${themeGet('textStyles.small')}
-
+    line-height: ${themeGet('lineHeights.display')};
+    min-height: 20px;
     & > svg {
       width: 12px;
       height: 12px;
@@ -22,7 +23,7 @@ const sizes = {
   medium: css`
     ${themeGet('textStyles.display0')}
     line-height: ${themeGet('lineHeights.standard')};
-
+    min-height: 24px;
     & > svg {
       width: 14px;
       height: 14px;
