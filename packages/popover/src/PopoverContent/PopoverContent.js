@@ -158,7 +158,7 @@ class PopoverContent extends Component {
 
 const PopperGuide = styled(Box)`
   padding: 16px;
-  z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)}
+  z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
   max-width: ${({ width }) => width}px;
   width: 100%;
   box-sizing: border-box;

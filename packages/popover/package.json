@@ -47,6 +47,7 @@
     "pcln-design-system": "^3.6.4",
     "pcln-icons": "^3.2.0",
     "pcln-slider": "^3.2.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-focus-lock": "^2.2.1",

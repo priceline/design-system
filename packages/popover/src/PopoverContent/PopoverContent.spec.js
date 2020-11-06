@@ -24,4 +24,12 @@ describe('PopoverContent', () => {
     )
     expect(queryByTestId('popover-arrow')).not.toBeInTheDocument()
   })
+
+  it('has the correct z-index', () => {
+    const zIndex = '123'
+    const { getByRole } = render(
+      <PopoverContent zIndex={zIndex} renderContent={() => 'Content'} />
+    )
+    expect(getByRole('dialog')).toHaveStyleRule('z-index', zIndex)
+  })
 })

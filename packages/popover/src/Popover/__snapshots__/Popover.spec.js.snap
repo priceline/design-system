@@ -172,7 +172,8 @@ exports[`Popover UI Positioning Bottom 1`] = `
 
 .c0 {
   padding: 16px;
-  z-index: 102 max-width:400px;
+  z-index: 102;
+  max-width: 400px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -308,7 +309,8 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 
 .c0 {
   padding: 16px;
-  z-index: 102 max-width:400px;
+  z-index: 102;
+  max-width: 400px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -444,7 +446,8 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 
 .c0 {
   padding: 16px;
-  z-index: 102 max-width:400px;
+  z-index: 102;
+  max-width: 400px;
   width: 100%;
   box-sizing: border-box;
 }
