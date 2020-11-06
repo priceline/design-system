@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "allow size prop in Stamp to accept an array",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "gabrielle.bellini@priceline.com"
+}

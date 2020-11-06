@@ -67,8 +67,8 @@ const Stamp = styled.div`
   color: ${getPaletteColor('base')};
 
   ${space} ${fontSize};
-  ${applySizes(sizes)}
-  ${applyVariations('Stamp', variations)}
+  ${applySizes(sizes)};
+  ${applyVariations('Stamp', variations)};
 `
 
 Stamp.displayName = 'Stamp'
@@ -76,7 +76,10 @@ Stamp.displayName = 'Stamp'
 Stamp.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  size: PropTypes.oneOf(Object.keys(sizes)),
+  size: PropTypes.oneOfType([
+    Object.keys(sizes),
+    PropTypes.arrayOf(Object.keys(sizes)),
+  ]),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
