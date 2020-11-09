@@ -8,6 +8,23 @@ exports[`FormField renders 1`] = `
   display: flex;
 }
 
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  margin-bottom: -20px;
+  margin-left: 12px;
+  padding-top: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -53,23 +70,6 @@ exports[`FormField renders 1`] = `
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
-}
-
-.c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  margin-bottom: -20px;
-  margin-left: 12px;
-  padding-top: 6px;
-  font-size: 10px;
-  font-weight: 700;
 }
 
 @media screen and (min-width:40em) {
@@ -147,6 +147,23 @@ exports[`FormField renders with Icon 1`] = `
   outline: none;
 }
 
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  margin-bottom: -20px;
+  margin-left: 40px;
+  padding-top: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -192,23 +209,6 @@ exports[`FormField renders with Icon 1`] = `
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
-}
-
-.c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  margin-bottom: -20px;
-  margin-left: 40px;
-  padding-top: 6px;
-  font-size: 10px;
-  font-weight: 700;
 }
 
 @media screen and (min-width:40em) {
@@ -311,6 +311,23 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   outline: none;
 }
 
+.c0 {
+  font-size: 10px;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  margin-bottom: -20px;
+  margin-left: 40px;
+  padding-top: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -356,23 +373,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
-}
-
-.c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  margin-bottom: -20px;
-  margin-left: 40px;
-  padding-top: 6px;
-  font-size: 10px;
-  font-weight: 700;
 }
 
 @media screen and (min-width:40em) {
