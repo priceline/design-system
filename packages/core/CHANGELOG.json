@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "3.7.0",
+      "tag": "pcln-design-system_v3.7.0",
+      "date": "Mon, 09 Nov 2020 20:23:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "New Chip Component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "fd6b9570e55a4eea5b8aff75eea59707a1305502"
+          },
+          {
+            "comment": "allow size prop in Stamp to accept an array",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "9da981376ffc2aad47475e46e9a4bcb916a2d334"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "update line height for Stamp and Badge",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "e59e96b2103a76f0b1a8380f5ea315a2d19db37d"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.6.4",
       "tag": "pcln-design-system_v3.6.4",
       "date": "Fri, 30 Oct 2020 15:58:40 GMT",

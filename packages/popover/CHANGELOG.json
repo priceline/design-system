@@ -2,6 +2,28 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "3.4.1",
+      "tag": "pcln-popover_v3.4.1",
+      "date": "Mon, 09 Nov 2020 20:23:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix style bug in PopoverContent",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "4347f739f426c628063ff31772cf3e29839169f8"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.6.4` to `^3.7.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.6.4` to `^3.7.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.4.0",
       "tag": "pcln-popover_v3.4.0",
       "date": "Fri, 23 Oct 2020 15:15:48 GMT",

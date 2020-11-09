@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 30 Oct 2020 15:58:40 GMT and should not be manually modified.
+This log was last generated on Mon, 09 Nov 2020 20:23:28 GMT and should not be manually modified.
+
+## 3.7.0
+Mon, 09 Nov 2020 20:23:28 GMT
+
+### Minor changes
+
+- New Chip Component
+- allow size prop in Stamp to accept an array
+
+### Patches
+
+- update line height for Stamp and Badge
 
 ## 3.6.4
 Fri, 30 Oct 2020 15:58:40 GMT
