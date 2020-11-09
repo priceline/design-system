@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Chip from './Chip'
-import { Breakfast, Parking, Whirlpool, Wifi } from 'pcln-icons'
+import { Breakfast, Check, Parking, Whirlpool, Wifi } from 'pcln-icons'
 
 function useToggle(initialValue = false) {
   const [value, setValue] = useState(initialValue)
@@ -11,13 +11,13 @@ function useToggle(initialValue = false) {
 }
 
 export const Choice = () => (
-  <Chip variation='choice'>
+  <Chip id='chip' variation='choice'>
     <Wifi mr={2} /> Free Wifi
   </Chip>
 )
 
 export const ChoiceSelected = () => (
-  <Chip selected variation='choice'>
+  <Chip id='chip' selected variation='choice'>
     <Wifi mr={2} /> Free Wifi
   </Chip>
 )
@@ -48,6 +48,7 @@ export const ChoiceWithState = () => {
   return (
     <>
       <Chip
+        id='chip1'
         selected={breakfastSelected}
         variation='choice'
         onClick={onBreakfastClick}
@@ -57,6 +58,7 @@ export const ChoiceWithState = () => {
         Free Breakfast
       </Chip>
       <Chip
+        id='chip2'
         selected={parkingSelected}
         variation='choice'
         onClick={onParkingSelected}
@@ -66,6 +68,7 @@ export const ChoiceWithState = () => {
         Free Parking
       </Chip>
       <Chip
+        id='chip3'
         selected={wifiSelected}
         variation='choice'
         onClick={onWifiSelected}
@@ -74,7 +77,7 @@ export const ChoiceWithState = () => {
         <Wifi mr={2} />
         Free Wifi
       </Chip>
-      <Chip variation='choice' disabled m={2}>
+      <Chip id='chip4' variation='choice' disabled m={2}>
         <Whirlpool mr={2} /> Free Whirlpool
       </Chip>
     </>
@@ -82,13 +85,19 @@ export const ChoiceWithState = () => {
 }
 
 export const Filter = () => (
-  <Chip variation='filter'>
+  <Chip id='chip' variation='filter'>
     <Wifi mr={2} /> Free Wifi
   </Chip>
 )
 
 export const FilterSelected = () => (
-  <Chip selected variation='filter'>
+  <Chip id='chip' selected variation='filter'>
+    <Wifi mr={2} /> Free Wifi
+  </Chip>
+)
+
+export const FilterWithSelectedIcon = () => (
+  <Chip id='chip' selected variation='filter' selectedIcon={Check}>
     <Wifi mr={2} /> Free Wifi
   </Chip>
 )
@@ -101,6 +110,7 @@ export const FilterWithState = () => {
   return (
     <>
       <Chip
+        id='chip1'
         selected={breakfastSelected}
         variation='filter'
         onClick={toggleBreakfastSelected}
@@ -110,6 +120,7 @@ export const FilterWithState = () => {
         Free Breakfast
       </Chip>
       <Chip
+        id='chip2'
         selected={parkingSelected}
         variation='filter'
         onClick={toggleParkingSelected}
@@ -119,6 +130,7 @@ export const FilterWithState = () => {
         Free Parking
       </Chip>
       <Chip
+        id='chip3'
         selected={wifiSelected}
         variation='filter'
         onClick={toggleWifiSelected}
@@ -127,51 +139,7 @@ export const FilterWithState = () => {
         <Wifi mr={2} />
         Free Wifi
       </Chip>
-      <Chip variation='filter' disabled m={2}>
-        <Whirlpool mr={2} /> Free Whirlpool
-      </Chip>
-    </>
-  )
-}
-
-export const Input = () => (
-  <Chip variation='input'>
-    <Wifi mr={2} /> Free Wifi
-  </Chip>
-)
-
-export const InputSelected = () => (
-  <Chip variation='input' selected>
-    <Wifi mr={2} /> Free Wifi
-  </Chip>
-)
-
-export const InputWithState = () => {
-  const [breakfastEnabled, toggleBreakfast] = useToggle(true)
-  const [parkingEnabled, toggleParking] = useToggle(true)
-  const [wifiEnabled, toggleWifi] = useToggle(true)
-
-  return (
-    <>
-      {breakfastEnabled && (
-        <Chip selected variation='input' onClick={toggleBreakfast} m={2}>
-          <Breakfast mr={2} />
-          Free Breakfast
-        </Chip>
-      )}
-      {parkingEnabled && (
-        <Chip selected variation='input' onClick={toggleParking} m={2}>
-          <Parking mr={2} />
-          Free Parking
-        </Chip>
-      )}
-      {wifiEnabled && (
-        <Chip selected variation='input' onClick={toggleWifi} m={2}>
-          <Wifi mr={2} />
-          Free Wifi
-        </Chip>
-      )}
-      <Chip variation='input' disabled m={2}>
+      <Chip chip='chip4' variation='filter' disabled m={2}>
         <Whirlpool mr={2} /> Free Whirlpool
       </Chip>
     </>
@@ -179,7 +147,7 @@ export const InputWithState = () => {
 }
 
 export const Disabled = () => (
-  <Chip disabled>
+  <Chip id='chip' disabled>
     <Wifi mr={2} /> Free Wifi
   </Chip>
 )
