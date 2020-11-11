@@ -77,3 +77,4 @@ packages/icons/components/
 
 package-lock.json
 .npmrc
+RELEASE_NOTES.md
