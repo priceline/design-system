@@ -213,6 +213,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.primary.base)
         expect(button).toHaveStyleRule('vertical-align', 'inherit')
         expect(button).toHaveStyleRule('-webkit-font-smoothing', 'inherit')
+        expect(button).toHaveStyleRule('font-weight', '500')
         expect(button).toHaveStyleRule('line-height', '1.4')
         expect(button).toHaveStyleRule('padding', '0')
         expect(button).toHaveStyleRule('background-color', 'transparent')
