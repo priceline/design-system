@@ -75,6 +75,7 @@ const variations = {
   `,
   link: css`
     -webkit-font-smoothing: inherit;
+    font-weight: ${(props) => props.theme.fontWeights.medium};
     color: ${getPaletteColor('base')};
     line-height: ${(props) => props.theme.lineHeights.standard};
     vertical-align: inherit;
@@ -94,6 +95,7 @@ export const buttonStyles = css`
   text-align: center;
   text-decoration: none;
   font-family: inherit;
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: 1.5;
   cursor: ${(props) => (props.disabled ? 'default' : 'pointer')};
   border-radius: ${(props) => props.theme.radius};
