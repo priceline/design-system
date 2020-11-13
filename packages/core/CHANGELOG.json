@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "3.7.1",
+      "tag": "pcln-design-system_v3.7.1",
+      "date": "Fri, 13 Nov 2020 20:04:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add font-weight bold back as a default style",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "ad001d5bc7bd677547031728edfa5c28ab509c5b"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.7.0",
       "tag": "pcln-design-system_v3.7.0",
       "date": "Mon, 09 Nov 2020 20:23:28 GMT",

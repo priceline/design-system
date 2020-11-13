@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 09 Nov 2020 20:23:28 GMT and should not be manually modified.
+This log was last generated on Fri, 13 Nov 2020 20:04:31 GMT and should not be manually modified.
+
+## 3.7.1
+Fri, 13 Nov 2020 20:04:31 GMT
+
+### Patches
+
+- Add font-weight bold back as a default style
 
 ## 3.7.0
 Mon, 09 Nov 2020 20:23:28 GMT
