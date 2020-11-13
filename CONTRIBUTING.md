@@ -98,9 +98,10 @@ We use [Plop](https://plopjs.com/) to scaffold new components rather than copyin
 The configuration allows you to create new core and package components.
 Follow the steps below to create a new component:
 
-1. Run `rush create` and follow the prompts for `component` (component in `pcln-design-system` (`packages/core`)) or `package` (new project)
-2. Run `rush update` to update dependencies
-3. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.js` file
+1. Run `npm i -g plop` to install plop globally.
+2. Run `rush create` and follow the prompts for `component` (component in `pcln-design-system` (`packages/core`)) or `package` (new project)
+3. Run `rush update` to update dependencies
+4. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.js` file
 
 ### Storybook
 

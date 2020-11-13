@@ -358,6 +358,14 @@
   // "hotfixChangeEnabled": false,
 
   "projects": [
+
+    {
+      "packageName": "pcln-menu",
+      "projectFolder": "packages/menu",
+      "reviewCategory": "packages",
+      "shouldPublish": true
+    },
+
     // Published Design System packages
     {
       "packageName": "pcln-design-system",

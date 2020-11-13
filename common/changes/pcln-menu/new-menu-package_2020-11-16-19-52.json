@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Create Menu Package",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-menu",
+  "email": "james.stewart@priceline.com"
+}

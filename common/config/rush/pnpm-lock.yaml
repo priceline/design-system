@@ -23,8 +23,9 @@ dependencies:
   '@rush-temp/docs': 'file:projects/docs.tgz_@babel+core@7.11.6'
   '@rush-temp/eslint-config': 'file:projects/eslint-config.tgz'
   '@rush-temp/pcln-autocomplete': 'file:projects/pcln-autocomplete.tgz'
-  '@rush-temp/pcln-design-system': 'file:projects/pcln-design-system.tgz_4a8feeb23025257893b98baa6681d056'
+  '@rush-temp/pcln-design-system': 'file:projects/pcln-design-system.tgz_5f4e75485d05063debccc2e0651ceb55'
   '@rush-temp/pcln-icons': 'file:projects/pcln-icons.tgz_@babel+core@7.11.6'
+  '@rush-temp/pcln-menu': 'file:projects/pcln-menu.tgz_@babel+core@7.11.6'
   '@rush-temp/pcln-modal': 'file:projects/pcln-modal.tgz_df3cdb8411b91d06031563a68743d278'
   '@rush-temp/pcln-popover': 'file:projects/pcln-popover.tgz_df3cdb8411b91d06031563a68743d278'
   '@rush-temp/pcln-slider': 'file:projects/pcln-slider.tgz'
@@ -19793,26 +19794,6 @@ packages:
       styled-components: '>=3'
     resolution:
       integrity: sha512-CBWjkNAyMZhSlQuoZt1quXfMhZ05tdMkAecksMlTf/Humg5BPdQ77SoIxub9vBRThb1GKdY4pDg+XsQiQy7pJQ==
-  /pcln-icons/4.0.0-beta.1_88fb7b1a4b478769c02ff2eb2857c4ba:
-    dependencies:
-      lodash.upperfirst: 4.3.1
-      pcln-design-system: 3.6.1
-      prop-types: 15.7.2
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
-      styled-components: 4.4.1_4f54128445bc6f13bd713dcb3d91e98e
-      styled-system: 4.2.4
-    dev: false
-    engines:
-      node: '>=8.0.0 <9.0.0 || >=10.0.0'
-      npm: '>=5.10.0 || >=6.0.0'
-    peerDependencies:
-      pcln-design-system: ^3.6.1
-      react: ^16.10.0
-      react-dom: ^16.10.0
-      styled-components: '>=4.4.1'
-    resolution:
-      integrity: sha512-g2gX6eZtHay3pGF2gTuJq1XMfDHYMWVFiavn1urlxTRSFSVquthOQBKTueNMrZWaC57TiFAs3VsZQwiWNlYeaQ==
   /performance-now/0.2.0:
     dev: false
     optional: true
@@ -27160,7 +27141,7 @@ packages:
     peerDependencies:
       '@babel/core': '*'
     resolution:
-      integrity: sha512-/RuwLqrFJjWXIavWo9clh9pRyETKPVjEMJggdkNTyLYhyaKBiN9wY9C9dzYOi6anmJu8lLfC07oR2nZkamj5lQ==
+      integrity: sha512-TkWDuF3mDJSFUmdb+I5mOtTYfs74QgFNMGQRk/MqAwqx4W/4pRFBHowFbcHEFmN17084KjLwULYosV2jraxNkw==
       tarball: 'file:projects/docs.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':
@@ -27214,10 +27195,10 @@ packages:
     dev: false
     name: '@rush-temp/pcln-autocomplete'
     resolution:
-      integrity: sha512-WfVBUp5DiYuNiuCjH3P/zYWu3ViSdjcWSbRQ6YwNBslPvn4lgU20UD84zFkqAf65K2bm5N+3mGLEPIgjddhPfg==
+      integrity: sha512-9Cw+nHxxTWoxjv7+z+KvexG6EDD6adzqAYllvmYBv3eYlM10c0V32RPRG+Tn8cOtVFsU0aMgNxIdRnCcgWFVRg==
       tarball: 'file:projects/pcln-autocomplete.tgz'
     version: 0.0.0
-  'file:projects/pcln-design-system.tgz_4a8feeb23025257893b98baa6681d056':
+  'file:projects/pcln-design-system.tgz_5f4e75485d05063debccc2e0651ceb55':
     dependencies:
       '@babel/cli': 7.11.6_@babel+core@7.11.6
       '@compositor/kit': 1.0.47_d68e1dd1e415fe8dfee7ae76effc9703
@@ -27238,7 +27219,6 @@ packages:
       jest-styled-components: 6.3.4_styled-components@4.4.1
       moize: 5.4.7
       npm-run-all: 4.1.5
-      pcln-icons: 4.0.0-beta.1_88fb7b1a4b478769c02ff2eb2857c4ba
       prop-types: 15.7.2
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
@@ -27254,9 +27234,8 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
       babel-loader: '*'
-      pcln-design-system: '*'
     resolution:
-      integrity: sha512-nOWzYt2e7XESIDpp+1g5ukyi9XTX1HBVtLfw4JzGLA5xqr261NnrwI4rf/E6UfWqOqBAX2R+v/HxHCGhbmwcfg==
+      integrity: sha512-rGi7Mr1Ot2AUfEoxDaZnpL/P5Eeorry5dCLo2pgaMNfroR0dRDlbZje+kpaKkSJTauPbWYIsTPz+W23BVrnVyw==
       tarball: 'file:projects/pcln-design-system.tgz'
     version: 0.0.0
   'file:projects/pcln-icons.tgz_@babel+core@7.11.6':
@@ -27290,6 +27269,32 @@ packages:
       integrity: sha512-+tr/c409d33zJcqO1fJv5oTqixXbJXWUqJSdK2jqq/yjhMSQXy/2HL12VNSGJDXc2QTME7rbm4mVSN8oy0MB3A==
       tarball: 'file:projects/pcln-icons.tgz'
     version: 0.0.0
+  'file:projects/pcln-menu.tgz_@babel+core@7.11.6':
+    dependencies:
+      '@babel/cli': 7.11.6_@babel+core@7.11.6
+      '@testing-library/jest-dom': 5.11.4
+      '@testing-library/react': 11.0.4_react-dom@16.13.1+react@16.13.1
+      cross-env: 7.0.2
+      eslint: 7.11.0
+      jest: 26.4.2
+      jest-standard-reporter: 1.1.1
+      jest-styled-components: 6.3.4_styled-components@4.4.1
+      npm-run-all: 4.1.5
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+      rimraf: 3.0.2
+      styled-components: 4.4.1_4f54128445bc6f13bd713dcb3d91e98e
+      styled-system: 4.2.4
+    dev: false
+    id: 'file:projects/pcln-menu.tgz'
+    name: '@rush-temp/pcln-menu'
+    peerDependencies:
+      '@babel/core': '*'
+    resolution:
+      integrity: sha512-tgiAZP34fRYnH/+jaMuC6VqZvYchlojq1us127tLIebkEshk7PvS/ZWDjRHb9EXG+kxG8u3N8yVX6NFK8eZhsQ==
+      tarball: 'file:projects/pcln-menu.tgz'
+    version: 0.0.0
   'file:projects/pcln-modal.tgz_df3cdb8411b91d06031563a68743d278':
     dependencies:
       '@babel/cli': 7.11.6_@babel+core@7.11.6
@@ -27316,7 +27321,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-kBco31VveB4IYYgnECue62fCcKEvumo5CJvQa/YOdWaaLSdhJuFn7NYA0OfbdnRlL2lM1piXV33b15YyqLFCOQ==
+      integrity: sha512-LVLsuPGRNMq2eDN7Ax+uXwJX1VoCRA3Am+jqkFzKWyNvpg2NIEi4oL9L9EshbUsup8hKIshYR6tIYCczGQJaxQ==
       tarball: 'file:projects/pcln-modal.tgz'
     version: 0.0.0
   'file:projects/pcln-popover.tgz_df3cdb8411b91d06031563a68743d278':
@@ -27347,7 +27352,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-IZVDdVgrASk8QRGaZbFx1fCO5flltWGv6FtRyMw7AbMQCQf44TMdOWD229NsH3m8Lp7Ot7yo3HV4EjMQAlogaQ==
+      integrity: sha512-gXai2gd+kn65BAMd7ICiQQWdrl33fCZxW42YNG3i6SJGLGSjHkQ4rT0N77DIsaXwJi6tg1TmU+tzzfeg9H3Msg==
       tarball: 'file:projects/pcln-popover.tgz'
     version: 0.0.0
   'file:projects/pcln-slider.tgz':
@@ -27381,7 +27386,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-slider'
     resolution:
-      integrity: sha512-sl9rM2kBor0ymiq/G/ombSHDwyCIh3nznxaunfIq64uy1dJaD5NNMf+foHFyGk133Zn0l3KgaNiLjWN2J2JoyA==
+      integrity: sha512-qdC7i3jIdZybYWzLcr47nAmmsMtbt6robG4IbqXylrVUc35JyrPI3U8dEvN2Ro/Xb/1ki5v/n80sywsLtvDXKQ==
       tarball: 'file:projects/pcln-slider.tgz'
     version: 0.0.0
   'file:projects/pcln-types.tgz':
@@ -27395,7 +27400,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-types'
     resolution:
-      integrity: sha512-TOnkexXdcK3FT0GO+/tIqs2dSQcm4C9M18EGWD64l5EvhfQhOY1SzYWMIkz3FSjpPhi+L6nZQ1Z4B5yY3l8eZA==
+      integrity: sha512-euIAu208N5VYHsSSagu3oqVUF+TnPaPjejDDWtNjptCSHWF28qya5SbA7RTQqqCYJJLVJT+K21j08Ws6bbkUtA==
       tarball: 'file:projects/pcln-types.tgz'
     version: 0.0.0
   'file:projects/storybook.tgz_df3cdb8411b91d06031563a68743d278':
@@ -27424,7 +27429,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-gHFjTbRfB5ysW90hiW5IK10LkIsFMsQ5+blnee/4G+gXlZ6kTlVgMB/5TGdTLX63Ku4P03/s3ZvXDjfP0fABUA==
+      integrity: sha512-g7VRy3GGWYSFmRCt0tzjCJOjd55LAK9Bts31KJXu76v49a1cDlzK+31AjMmIDBOU2D4JAkjKdIyhX4Pt6Nq1Ew==
       tarball: 'file:projects/storybook.tgz'
     version: 0.0.0
 registry: ''
@@ -27455,6 +27460,7 @@ specifiers:
   '@rush-temp/pcln-autocomplete': 'file:./projects/pcln-autocomplete.tgz'
   '@rush-temp/pcln-design-system': 'file:./projects/pcln-design-system.tgz'
   '@rush-temp/pcln-icons': 'file:./projects/pcln-icons.tgz'
+  '@rush-temp/pcln-menu': 'file:./projects/pcln-menu.tgz'
   '@rush-temp/pcln-modal': 'file:./projects/pcln-modal.tgz'
   '@rush-temp/pcln-popover': 'file:./projects/pcln-popover.tgz'
   '@rush-temp/pcln-slider': 'file:./projects/pcln-slider.tgz'
