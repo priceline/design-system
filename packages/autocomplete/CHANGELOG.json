@@ -2,6 +2,31 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "4.0.0",
+      "tag": "pcln-autocomplete_v4.0.0",
+      "date": "Tue, 17 Nov 2020 21:35:08 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "use styled-components v4 as dev and peer dependency",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "0dc482906d8d580b19da1dec516a440cd43990f6"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.7.1` to `^4.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^3.2.0` to `^4.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.7.1` to `^4.0.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.0",
       "tag": "pcln-autocomplete_v3.1.0",
       "date": "Fri, 23 Oct 2020 15:15:48 GMT",
