@@ -100,7 +100,7 @@ exports[`FormField renders 1`] = `
     Email Address
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <input
       className="c2"
@@ -136,14 +136,14 @@ exports[`FormField renders with Icon 1`] = `
   display: flex;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c2 {
+.c3 {
   outline: none;
 }
 
@@ -239,7 +239,7 @@ exports[`FormField renders with Icon 1`] = `
     Email Address
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <svg
       aria-hidden={true}
@@ -300,14 +300,14 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: flex;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c2 {
+.c3 {
   outline: none;
 }
 
@@ -403,7 +403,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
     Email
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <svg
       aria-hidden={true}
@@ -457,10 +457,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
-.c3 {
-  width: 100%;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -469,6 +465,7 @@ exports[`FormField renders with Select  1`] = `
 }
 
 .c2 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -479,17 +476,13 @@ exports[`FormField renders with Select  1`] = `
   align-items: center;
 }
 
-.c7 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   margin-left: -32px;
   width: 24px;
   color: #4f6f8f;
-}
-
-.c6 {
-  outline: none;
 }
 
 .c0 {
@@ -510,10 +503,11 @@ exports[`FormField renders with Select  1`] = `
 }
 
 .c5 {
+  outline: none;
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -534,18 +528,18 @@ exports[`FormField renders with Select  1`] = `
   font-size: 16px;
 }
 
-.c4:focus {
+.c3:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
 }
 
-.c4::-ms-expand {
+.c3::-ms-expand {
   display: none;
 }
 
 @media screen and (min-width:40em) {
-  .c4 {
+  .c3 {
     font-size: 14px;
   }
 }
@@ -571,14 +565,14 @@ exports[`FormField renders with Select  1`] = `
     Pick Option
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <div
-      className="c2 c3"
+      className="c2"
       width={1}
     >
       <select
-        className="c4"
+        className="c3"
         fontSize={
           Array [
             2,
@@ -599,7 +593,7 @@ exports[`FormField renders with Select  1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c5 c6 c7"
+        className="c4 c5"
         color="text.light"
         fill="currentcolor"
         focusable={false}
@@ -619,10 +613,6 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
-.c5 {
-  width: 100%;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -631,6 +621,7 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 .c4 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -641,14 +632,14 @@ exports[`FormField renders with Select and Icon 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   width: 24px;
 }
 
-.c9 {
+.c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -657,11 +648,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
 }
 
-.c8 {
-  outline: none;
-}
-
-.c2 {
+.c3 {
   outline: none;
 }
 
@@ -683,10 +670,11 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 .c7 {
+  outline: none;
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -707,18 +695,18 @@ exports[`FormField renders with Select and Icon 1`] = `
   font-size: 16px;
 }
 
-.c6:focus {
+.c5:focus {
   outline: 0;
   border-color: #007aff;
   box-shadow: 0 0 0 2px #007aff;
 }
 
-.c6::-ms-expand {
+.c5::-ms-expand {
   display: none;
 }
 
 @media screen and (min-width:40em) {
-  .c6 {
+  .c5 {
     font-size: 14px;
   }
 }
@@ -744,7 +732,7 @@ exports[`FormField renders with Select and Icon 1`] = `
     Pick Email Address
   </label>
   <div
-    className="c1 "
+    className="c1"
   >
     <svg
       aria-hidden={true}
@@ -772,11 +760,11 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
     </svg>
     <div
-      className="c4 c5"
+      className="c4"
       width={1}
     >
       <select
-        className="c6"
+        className="c5"
         fontSize={
           Array [
             2,
@@ -797,7 +785,7 @@ exports[`FormField renders with Select and Icon 1`] = `
       />
       <svg
         aria-hidden={true}
-        className="c7 c8 c9"
+        className="c6 c7"
         color="text.light"
         fill="currentcolor"
         focusable={false}

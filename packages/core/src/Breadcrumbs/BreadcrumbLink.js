@@ -4,33 +4,26 @@ import PropTypes from 'prop-types'
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Text } from '../Text'
-import { refPropType } from '../utils'
 
-function BreadcrumbLink({
-  className,
-  isLastChild,
-  href,
-  icon,
-  label,
-  dsRef,
-  onClick,
-}) {
-  const linkColor = isLastChild ? 'text.dark' : 'text.light'
+const BreadcrumbLink = React.forwardRef(
+  ({ className, isLastChild, href, icon, label, onClick }, ref) => {
+    const linkColor = isLastChild ? 'text.dark' : 'text.light'
 
-  return (
-    <Flex className={className} alignItems='center'>
-      {icon}
-      <Link href={href} color={linkColor} onClick={onClick} dsRef={dsRef}>
-        {label}
-      </Link>
-      {!isLastChild && (
-        <Text m={2} color='text.light'>
-          /
-        </Text>
-      )}
-    </Flex>
-  )
-}
+    return (
+      <Flex className={className} alignItems='center'>
+        {icon}
+        <Link href={href} color={linkColor} onClick={onClick} ref={ref}>
+          {label}
+        </Link>
+        {!isLastChild && (
+          <Text m={2} color='text.light'>
+            /
+          </Text>
+        )}
+      </Flex>
+    )
+  }
+)
 
 BreadcrumbLink.displayName = 'BreadcrumbLink'
 
@@ -40,7 +33,6 @@ BreadcrumbLink.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.node,
   label: PropTypes.string,
-  dsRef: refPropType,
   onClick: PropTypes.func,
 }
 

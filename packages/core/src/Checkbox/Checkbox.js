@@ -8,12 +8,9 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  mapProps,
-  getSCMigrationRef,
-  refPropType,
 } from '../utils'
 
-const Checkbox = (props) => {
+const Checkbox = React.forwardRef((props, ref) => {
   // eslint-disable-next-line react/prop-types
   const { disabled, size } = props
 
@@ -27,12 +24,12 @@ const Checkbox = (props) => {
       color={props.color}
       disabled={disabled}
     >
-      <StyledInput type='checkbox' {...props} role='checkbox' />
+      <StyledInput type='checkbox' {...props} role='checkbox' ref={ref} />
       <BoxChecked size={borderAdjustedSize} data-name='checked' />
       <BoxEmpty size={borderAdjustedSize} data-name='empty' />
     </CheckBoxWrapper>
   )
-}
+})
 
 const CheckBoxWrapper = styled.div`
   display: inline-flex;
@@ -99,15 +96,12 @@ const CheckBoxWrapper = styled.div`
   ${applyVariations('Checkbox')}
 `
 
-const StyledInput = mapProps(({ dsRef, ...props }) => ({
-  [getSCMigrationRef()]: dsRef,
-  ...props,
-}))(styled.input`
+const StyledInput = styled.input`
   appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
-`)
+`
 
 Checkbox.displayName = 'Checkbox'
 
@@ -115,7 +109,6 @@ Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
   onChange: PropTypes.func,
-  dsRef: refPropType,
   color: deprecatedColorValue(),
 }
 

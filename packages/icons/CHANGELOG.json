@@ -1,0 +1,24 @@
+{
+  "name": "pcln-icons",
+  "entries": [
+    {
+      "version": "4.0.0",
+      "tag": "pcln-icons_v4.0.0",
+      "date": "Tue, 17 Nov 2020 21:35:08 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "React floor bump to 16.10",
+            "author": "Dalonzo, Steven <Steven.Dalonzo@priceline.com>",
+            "commit": "6b7189029b6d7d928ee11e4e988262cc665e3f98"
+          },
+          {
+            "comment": "use styled-components v4 as dev and peer dependency",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "0dc482906d8d580b19da1dec516a440cd43990f6"
+          }
+        ]
+      }
+    }
+  ]
+}

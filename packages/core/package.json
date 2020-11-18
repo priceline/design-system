@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "3.7.1",
+  "version": "4.0.0",
   "description": "Priceline Design System",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -73,7 +73,7 @@
     "deepmerge": "^4.2.2",
     "hoist-non-react-statics": "^3.3.2",
     "moize": "^5.4.7",
-    "pcln-icons": "^3.2.0",
+    "pcln-icons": "4.0.0",
     "prop-types": "^15.7.2",
     "styled-system": "^4.2.4"
   },
@@ -100,11 +100,11 @@
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "stylis": "^3.5.4",
-    "styled-components": "^3.4.10"
+    "styled-components": "^4.4.1"
   },
   "peerDependencies": {
-    "react": ">=16.3.0",
-    "react-dom": ">=16.3.0",
-    "styled-components": ">=3"
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
+    "styled-components": ">=4.4.1"
   }
 }

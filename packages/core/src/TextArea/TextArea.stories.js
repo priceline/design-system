@@ -60,7 +60,7 @@ storiesOf('TextArea', module)
     <ForwardRefDemo
       refChild={(dsRef) => (
         <>
-          <TextArea dsRef={dsRef} value='Sad Panda :(' />
+          <TextArea ref={dsRef} value='Sad Panda :(' />
           <Button
             onClick={() => (dsRef.current.value = 'Happy Panda :D')}
             mt={4}

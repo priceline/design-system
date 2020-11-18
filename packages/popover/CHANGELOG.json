@@ -2,6 +2,46 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.0.0",
+      "tag": "pcln-popover_v4.0.0",
+      "date": "Tue, 17 Nov 2020 21:35:08 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "React floor bump to 16.10",
+            "author": "Dalonzo, Steven <Steven.Dalonzo@priceline.com>",
+            "commit": "6b7189029b6d7d928ee11e4e988262cc665e3f98"
+          },
+          {
+            "comment": "use styled-components v4 as dev and peer dependency",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "0dc482906d8d580b19da1dec516a440cd43990f6"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Remove usage of getSCMigrationRef",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a1df40c4378a31475ea0efdf585bb3ff7382daf9"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.7.1` to `^4.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^3.2.0` to `^4.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-slider\" from `^3.2.0` to `^4.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^3.7.1` to `^4.0.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.4.1",
       "tag": "pcln-popover_v3.4.1",
       "date": "Mon, 09 Nov 2020 20:23:28 GMT",

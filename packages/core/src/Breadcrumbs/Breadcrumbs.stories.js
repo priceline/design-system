@@ -50,7 +50,7 @@ storiesOf('Breadcrumbs', module)
             <Breadcrumbs.Link
               href='https://www.priceline.com'
               label='Home'
-              dsRef={dsRef}
+              ref={dsRef}
               icon={<HomeIcon color='text.light' size={16} mr={2} />}
             />
             <Breadcrumbs.Link

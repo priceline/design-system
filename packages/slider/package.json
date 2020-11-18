@@ -1,6 +1,6 @@
 {
   "name": "pcln-slider",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "React component for range sliders",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -53,18 +53,18 @@
     "jest-standard-reporter": "^1.1.1",
     "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "^3.7.1",
+    "pcln-design-system": "^4.0.0",
     "rc-tools": "^8.4.5",
     "rc-trigger": "^2.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rimraf": "^3.0.2",
-    "styled-components": "^3.4.10"
+    "styled-components": "^4.4.1"
   },
   "peerDependencies": {
-    "pcln-design-system": "^3.7.1",
-    "styled-components": ">=3",
-    "react": ">=16.3.0",
-    "react-dom": ">=16.3.0"
+    "pcln-design-system": "^4.0.0",
+    "styled-components": ">=4.4.1",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0"
   }
 }

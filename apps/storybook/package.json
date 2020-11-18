@@ -33,10 +33,10 @@
     "chromatic": "^5.2.0",
     "eslint": "^7.9.0",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "^3.7.1",
+    "pcln-design-system": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable-playground": "^1.0.0",
-    "styled-components": "^3.4.10"
+    "styled-components": "^4.4.1"
   }
 }
