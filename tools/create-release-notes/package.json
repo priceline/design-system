@@ -5,7 +5,6 @@
   "scripts": {
     "build": "tsc",
     "demo": "ts-node src/index.ts",
-    "postpublish": "slack-component-publish",
     "run:core": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
     "run:popover": "ts-node src/cli/releaseNotes.ts --packageName='pcln-popover'",
     "lint": "eslint .",
