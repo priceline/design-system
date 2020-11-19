@@ -67,7 +67,7 @@ const Stamp = styled.div`
   color: ${getPaletteColor('base')};
 
   ${space} ${fontSize};
-  ${applySizes(sizes)};
+  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Stamp', variations)};
 `
 

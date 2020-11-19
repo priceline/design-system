@@ -1,7 +1,7 @@
 const deepmerge = require('deepmerge')
 
 import { theme as defaultTheme } from '../theme/theme'
-import { createTextStyles, createColorStyles } from '.'
+import { createTextStyles, createColorStyles, createMediaQueries } from '.'
 
 /**
  * Adds aliases to an array of keys
@@ -151,11 +151,14 @@ const createPalette = ({ palette = {}, ...theme }) => {
 const createTheme = (theme = {}, customBreakpoints = null) => {
   const mergedTheme = deepmerge(defaultTheme, theme)
 
+  const mediaQueries = customBreakpoints
+    ? createMediaQueries(customBreakpoints)
+    : mergedTheme.mediaQueries
   return {
     ...mergedTheme,
     contrastRatio: mergedTheme.contrastRatio || 2.6,
     breakpoints: addAliases(customBreakpoints || mergedTheme.breakpoints),
-    mediaQueries: addAliases(mergedTheme.mediaQueries),
+    mediaQueries: addAliases(mediaQueries),
     palette: createPalette(mergedTheme),
     colorStyles: createColorStyles(mergedTheme),
     textStyles: createTextStyles(mergedTheme),
