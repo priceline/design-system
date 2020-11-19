@@ -1,6 +1,6 @@
 # Migrate to Design System version 4
 
-See the full [v4 announcement](../v4-announcement.md) for more information about the benefits of upgrading and what's included in v4.
+See the full [v4 announcement](../ANNOUNCING_V4.md) for more information about the benefits of upgrading and what's included in v4.
 
 ## Breaking Changes
 
