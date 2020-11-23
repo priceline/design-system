@@ -1,4 +1,4 @@
-name: Create release on push of tag
+name: Create a new GitHub release for a package
 
 on:
   workflow_dispatch:
@@ -6,13 +6,16 @@ on:
       versionTag:
         required: true
         description: 'Tag for the new release'
+      packageName:
+        required: true
+        description: 'Name of package being released'
 
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
   create-release:
     # Name the Job
-    name: Create release from release branch
+    name: Create GitHub release
     # Set the type of machine to run on
     runs-on: ubuntu-latest
 
@@ -39,7 +42,7 @@ jobs:
 
       - name: Create release notes
         run: |
-          node common/scripts/install-run-rush.js create-release-notes
+          node common/scripts/install-run-rush.js create-release-notes --package-name ${{ github.event.inputs.packageName }}
 
       #      - name: NPM Publish
       #        run: |
@@ -51,4 +54,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           body_path: ./RELEASE_NOTES.md
-          name: 'pcln-design-system ${{ github.ref }}'
+          name: '${{ github.event.inputs.packageName }} ${{ github.event.inputs.versionTag }}'
+          tag_name: ${{ github.event.inputs.versionTag }}
