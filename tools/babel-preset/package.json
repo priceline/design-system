@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@priceline/eslint-config": "^0.0.1",
-    "eslint": "^7.9.0",
+    "eslint": "^7.16.0",
     "jest": "^26.4.2",
     "jest-standard-reporter": "^1.1.1"
   },

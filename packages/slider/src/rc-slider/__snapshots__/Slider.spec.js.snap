@@ -2,19 +2,19 @@
 
 exports[`Slider should render Slider with correct DOM structure 1`] = `
 initialize {
-  "0": Object {
+  "0": Node {
     "attribs": Object {
       "class": "rc-slider",
     },
     "children": Array [
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-rail",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "class": "rc-slider-track",
             "style": "left:0%;width:0%",
@@ -22,14 +22,14 @@ initialize {
           "children": Array [],
           "name": "div",
           "namespace": "http://www.w3.org/1999/xhtml",
-          "next": Object {
+          "next": Node {
             "attribs": Object {
               "class": "rc-slider-step",
             },
             "children": Array [],
             "name": "div",
             "namespace": "http://www.w3.org/1999/xhtml",
-            "next": Object {
+            "next": Node {
               "attribs": Object {
                 "aria-disabled": "false",
                 "aria-valuemax": "100",
@@ -43,7 +43,7 @@ initialize {
               "children": Array [],
               "name": "div",
               "namespace": "http://www.w3.org/1999/xhtml",
-              "next": Object {
+              "next": Node {
                 "attribs": Object {
                   "class": "rc-slider-mark",
                 },
@@ -117,7 +117,7 @@ initialize {
           "class": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-track",
           "style": "left:0%;width:0%",
@@ -125,14 +125,14 @@ initialize {
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "class": "rc-slider-step",
           },
           "children": Array [],
           "name": "div",
           "namespace": "http://www.w3.org/1999/xhtml",
-          "next": Object {
+          "next": Node {
             "attribs": Object {
               "aria-disabled": "false",
               "aria-valuemax": "100",
@@ -146,7 +146,7 @@ initialize {
             "children": Array [],
             "name": "div",
             "namespace": "http://www.w3.org/1999/xhtml",
-            "next": Object {
+            "next": Node {
               "attribs": Object {
                 "class": "rc-slider-mark",
               },
@@ -199,7 +199,7 @@ initialize {
           },
         },
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "class": "rc-slider-rail",
           },
@@ -227,14 +227,14 @@ initialize {
           "style": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-step",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "aria-disabled": "false",
             "aria-valuemax": "100",
@@ -248,7 +248,7 @@ initialize {
           "children": Array [],
           "name": "div",
           "namespace": "http://www.w3.org/1999/xhtml",
-          "next": Object {
+          "next": Node {
             "attribs": Object {
               "class": "rc-slider-mark",
             },
@@ -291,7 +291,7 @@ initialize {
           },
         },
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "class": "rc-slider-track",
             "style": "left:0%;width:0%",
@@ -301,7 +301,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": [Circular],
           "parent": [Circular],
-          "prev": Object {
+          "prev": Node {
             "attribs": Object {
               "class": "rc-slider-rail",
             },
@@ -337,7 +337,7 @@ initialize {
           "class": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "aria-disabled": "false",
           "aria-valuemax": "100",
@@ -351,7 +351,7 @@ initialize {
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "class": "rc-slider-mark",
           },
@@ -370,7 +370,7 @@ initialize {
           },
         },
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "class": "rc-slider-step",
           },
@@ -379,7 +379,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": [Circular],
           "parent": [Circular],
-          "prev": Object {
+          "prev": Node {
             "attribs": Object {
               "class": "rc-slider-track",
               "style": "left:0%;width:0%",
@@ -389,7 +389,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": [Circular],
             "parent": [Circular],
-            "prev": Object {
+            "prev": Node {
               "attribs": Object {
                 "class": "rc-slider-rail",
               },
@@ -447,7 +447,7 @@ initialize {
           "tabindex": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-mark",
         },
@@ -456,7 +456,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": null,
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "aria-disabled": "false",
             "aria-valuemax": "100",
@@ -472,7 +472,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": [Circular],
           "parent": [Circular],
-          "prev": Object {
+          "prev": Node {
             "attribs": Object {
               "class": "rc-slider-step",
             },
@@ -481,7 +481,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": [Circular],
             "parent": [Circular],
-            "prev": Object {
+            "prev": Node {
               "attribs": Object {
                 "class": "rc-slider-track",
                 "style": "left:0%;width:0%",
@@ -491,7 +491,7 @@ initialize {
               "namespace": "http://www.w3.org/1999/xhtml",
               "next": [Circular],
               "parent": [Circular],
-              "prev": Object {
+              "prev": Node {
                 "attribs": Object {
                   "class": "rc-slider-rail",
                 },
@@ -561,22 +561,17 @@ initialize {
     "name": "div",
     "namespace": "http://www.w3.org/1999/xhtml",
     "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
+    "parent": Node {
       "children": Array [
         [Circular],
       ],
       "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
       "next": null,
       "parent": null,
       "prev": null,
       "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
     },
+    "prev": null,
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
@@ -589,8 +584,6 @@ initialize {
   "length": 1,
   "options": Object {
     "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
     "xml": false,
   },
 }
@@ -598,19 +591,19 @@ initialize {
 
 exports[`Slider should render Slider without handle if value is null 1`] = `
 initialize {
-  "0": Object {
+  "0": Node {
     "attribs": Object {
       "class": "rc-slider",
     },
     "children": Array [
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-rail",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "class": "rc-slider-track",
             "style": "left:0%;width:0%",
@@ -618,14 +611,14 @@ initialize {
           "children": Array [],
           "name": "div",
           "namespace": "http://www.w3.org/1999/xhtml",
-          "next": Object {
+          "next": Node {
             "attribs": Object {
               "class": "rc-slider-step",
             },
             "children": Array [],
             "name": "div",
             "namespace": "http://www.w3.org/1999/xhtml",
-            "next": Object {
+            "next": Node {
               "attribs": Object {
                 "class": "rc-slider-mark",
               },
@@ -675,7 +668,7 @@ initialize {
           "class": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-track",
           "style": "left:0%;width:0%",
@@ -683,14 +676,14 @@ initialize {
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "class": "rc-slider-step",
           },
           "children": Array [],
           "name": "div",
           "namespace": "http://www.w3.org/1999/xhtml",
-          "next": Object {
+          "next": Node {
             "attribs": Object {
               "class": "rc-slider-mark",
             },
@@ -719,7 +712,7 @@ initialize {
           },
         },
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "class": "rc-slider-rail",
           },
@@ -747,14 +740,14 @@ initialize {
           "style": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-step",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "next": Object {
+        "next": Node {
           "attribs": Object {
             "class": "rc-slider-mark",
           },
@@ -773,7 +766,7 @@ initialize {
           },
         },
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "class": "rc-slider-track",
             "style": "left:0%;width:0%",
@@ -783,7 +776,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": [Circular],
           "parent": [Circular],
-          "prev": Object {
+          "prev": Node {
             "attribs": Object {
               "class": "rc-slider-rail",
             },
@@ -819,7 +812,7 @@ initialize {
           "class": undefined,
         },
       },
-      Object {
+      Node {
         "attribs": Object {
           "class": "rc-slider-mark",
         },
@@ -828,7 +821,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": null,
         "parent": [Circular],
-        "prev": Object {
+        "prev": Node {
           "attribs": Object {
             "class": "rc-slider-step",
           },
@@ -837,7 +830,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": [Circular],
           "parent": [Circular],
-          "prev": Object {
+          "prev": Node {
             "attribs": Object {
               "class": "rc-slider-track",
               "style": "left:0%;width:0%",
@@ -847,7 +840,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": [Circular],
             "parent": [Circular],
-            "prev": Object {
+            "prev": Node {
               "attribs": Object {
                 "class": "rc-slider-rail",
               },
@@ -895,22 +888,17 @@ initialize {
     "name": "div",
     "namespace": "http://www.w3.org/1999/xhtml",
     "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
+    "parent": Node {
       "children": Array [
         [Circular],
       ],
       "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
       "next": null,
       "parent": null,
       "prev": null,
       "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
     },
+    "prev": null,
     "type": "tag",
     "x-attribsNamespace": Object {
       "class": undefined,
@@ -923,8 +911,6 @@ initialize {
   "length": 1,
   "options": Object {
     "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
     "xml": false,
   },
 }
