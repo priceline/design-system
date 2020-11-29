@@ -1,25 +1,39 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
 
 import { Step } from '.'
 
 const onClick = action('Step Clicked')
 
-storiesOf('Step', module)
-  .add(
-    'Step component',
-    withInfo({
-      inline: true,
-      text: 'Use the <Stepper.Step /> component to render a step.',
-    })(() => <Step>Step</Step>)
-  )
-  .add('Current Step', () => <Step active>Step</Step>)
-  .add('Completed Step', () => <Step completed>Step</Step>)
-  .add('Current and Completed Step', () => (
-    <Step active completed>
-      Step
-    </Step>
-  ))
-  .add('Clickable Step', () => <Step onClick={onClick}>Step</Step>)
+export default {
+  title: 'Step',
+  component: Step,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Use the <Stepper.Step /> component to render a step.',
+      },
+    },
+  },
+}
+
+export const StepComponent = () => <Step>Step</Step>
+
+StepComponent.story = {
+  name: 'Step component',
+}
+
+export const CurrentStep = () => <Step active>Step</Step>
+export const CompletedStep = () => <Step completed>Step</Step>
+
+export const CurrentAndCompletedStep = () => (
+  <Step active completed>
+    Step
+  </Step>
+)
+
+CurrentAndCompletedStep.story = {
+  name: 'Current and Completed Step',
+}
+
+export const ClickableStep = () => <Step onClick={onClick}>Step</Step>
