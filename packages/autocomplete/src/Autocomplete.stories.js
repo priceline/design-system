@@ -1,6 +1,5 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import Component from '@reach/component-component'
 
 import { Box, Text, ThemeProvider } from 'pcln-design-system'
@@ -28,8 +27,50 @@ const kayakTheme = {
   },
 }
 
-storiesOf('pcln-autocomplete/Autocomplete', module)
-  .add('default', () => (
+export default {
+  title: 'pcln-autocomplete/Autocomplete',
+  component: Autocomplete,
+}
+
+export const Default = () => (
+  <Component
+    initialState={{ value: '' }}
+    children={({ state, setState }) => (
+      <Box>
+        <Autocomplete
+          onChange={(item) => {
+            setState({ value: item })
+          }}
+          match={match}
+        >
+          <Label mb={1}>Cat</Label>
+          <Input />
+          <Menu>
+            {cats.map((cat) => (
+              <Item key={cat} item={cat}>
+                <PinIcon color='primary' mr={2} />
+                <Text fontSize={0}>{cat}</Text>
+              </Item>
+            ))}
+          </Menu>
+        </Autocomplete>
+        <Text my={2}>
+          This text should be covered up by the Autocomplete.Menu when open.
+        </Text>
+        <Text my={2}>
+          The current value is <code>{state.value}</code>
+        </Text>
+      </Box>
+    )}
+  />
+)
+
+Default.story = {
+  name: 'default',
+}
+
+export const Themed = () => (
+  <ThemeProvider theme={kayakTheme}>
     <Component
       initialState={{ value: '' }}
       children={({ state, setState }) => (
@@ -60,38 +101,9 @@ storiesOf('pcln-autocomplete/Autocomplete', module)
         </Box>
       )}
     />
-  ))
-  .add('themed', () => (
-    <ThemeProvider theme={kayakTheme}>
-      <Component
-        initialState={{ value: '' }}
-        children={({ state, setState }) => (
-          <Box>
-            <Autocomplete
-              onChange={(item) => {
-                setState({ value: item })
-              }}
-              match={match}
-            >
-              <Label mb={1}>Cat</Label>
-              <Input />
-              <Menu>
-                {cats.map((cat) => (
-                  <Item key={cat} item={cat}>
-                    <PinIcon color='primary' mr={2} />
-                    <Text fontSize={0}>{cat}</Text>
-                  </Item>
-                ))}
-              </Menu>
-            </Autocomplete>
-            <Text my={2}>
-              This text should be covered up by the Autocomplete.Menu when open.
-            </Text>
-            <Text my={2}>
-              The current value is <code>{state.value}</code>
-            </Text>
-          </Box>
-        )}
-      />
-    </ThemeProvider>
-  ))
+  </ThemeProvider>
+)
+
+Themed.story = {
+  name: 'themed',
+}

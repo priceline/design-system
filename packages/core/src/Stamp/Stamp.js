@@ -76,10 +76,7 @@ Stamp.displayName = 'Stamp'
 Stamp.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  size: PropTypes.oneOfType([
-    Object.keys(sizes),
-    PropTypes.arrayOf(Object.keys(sizes)),
-  ]),
+  size: PropTypes.oneOfType([PropTypes.arrayOf(Object.keys(sizes))]),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),

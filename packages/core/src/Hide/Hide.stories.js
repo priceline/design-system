@@ -1,8 +1,12 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { Hide, Box, Flex } from '..'
 
-storiesOf('Hide', module).add('Hide', () => (
+export default {
+  title: 'Hide',
+  component: Hide,
+}
+
+export const _Hide = () => (
   <Flex justifyContent='space-between'>
     <Hide xs sm md lg xl xxl>
       <Box p={2} bg='warning'>
@@ -41,4 +45,4 @@ storiesOf('Hide', module).add('Hide', () => (
     </Hide>
     <Hide.text sm>Hide.text (inline)</Hide.text>
   </Flex>
-))
+)

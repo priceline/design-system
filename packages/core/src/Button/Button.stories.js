@@ -1,8 +1,6 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, boolean, optionsKnob } from '@storybook/addon-knobs'
-import { withInfo } from '@storybook/addon-info'
 import { Cartesian, Catch, LiveEditor, Markdown, XRay } from '@compositor/kit'
 
 import { Box, Button } from '..'
@@ -32,41 +30,45 @@ const colors = {
   background: 'background',
 }
 
-storiesOf('Button', module)
-  .addParameters({ component: Button })
-  .addDecorator((story) => (
-    <Box>
-      <Markdown>
-        {`
-Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Use the *variation* prop to change the appearance of the button.
-        `}
-      </Markdown>
-      {story()}
-    </Box>
-  ))
-  .addDecorator(withKnobs)
-  .addDecorator(
-    withInfo({
-      inline: false,
-    })
-  )
-  .add('Button', () => {
-    const variation = optionsKnob('Variation', variations, 'fill', {
-      display: 'select',
-    })
-    const size = optionsKnob('Size', sizes, 'medium', {
-      display: 'select',
-    })
-    const color = optionsKnob('Palette Color', colors, 'primary', {
-      display: 'select',
-    })
-    const disabled = boolean('Disabled?', false)
-    const fullWidth = boolean('Full Width?', false)
+export default {
+  title: 'Button',
 
-    return (
-      <Catch>
-        <LiveEditor
-          code={`<Button
+  decorators: [
+    (story) => (
+      <Box>
+        <Markdown>
+          {`
+  Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Use the *variation* prop to change the appearance of the button.
+          `}
+        </Markdown>
+        {story()}
+      </Box>
+    ),
+    withKnobs,
+  ],
+
+  parameters: {
+    component: Button,
+  },
+}
+
+export const _Button = () => {
+  const variation = optionsKnob('Variation', variations, 'fill', {
+    display: 'select',
+  })
+  const size = optionsKnob('Size', sizes, 'medium', {
+    display: 'select',
+  })
+  const color = optionsKnob('Palette Color', colors, 'primary', {
+    display: 'select',
+  })
+  const disabled = boolean('Disabled?', false)
+  const fullWidth = boolean('Full Width?', false)
+
+  return (
+    <Catch>
+      <LiveEditor
+        code={`<Button
   variation='${variation}'
   size='${size}'
   color='${color}'
@@ -74,90 +76,104 @@ Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Us
   width={${fullWidth ? 1 : null}}>
   BUTTON
 </Button>`}
-          scope={{
-            Button,
-          }}
-        />
-      </Catch>
-    )
-  })
-  .add('Try It!', () => {
-    const variation = optionsKnob('Variation', variations, 'fill', {
-      display: 'multi-select',
-    })
-    const size = optionsKnob('Size', sizes, 'medium', {
-      display: 'multi-select',
-    })
-    const color = optionsKnob('Palette Color', colors, 'primary', {
-      display: 'multi-select',
-    })
-    const disabled = boolean('Disabled?', false)
-    const fullWidth = boolean('Full Width?', false)
+        scope={{
+          Button,
+        }}
+      />
+    </Catch>
+  )
+}
 
-    return (
-      <Cartesian
-        component={Button}
-        m={3}
-        variation={variation}
-        size={size}
-        color={color}
-        disabled={disabled}
-        width={fullWidth ? 1 : null}
-        onClick={action('Clicked button in Try It!')}
-      >
-        Try This Button!
-      </Cartesian>
-    )
+export const TryIt = () => {
+  const variation = optionsKnob('Variation', variations, 'fill', {
+    display: 'multi-select',
   })
-
-  .add('All', () => {
-    return (
-      <Cartesian
-        component={Button}
-        m={3}
-        color={Object.keys(colors)}
-        variation={Object.keys(variations)}
-        disabled={[false, true]}
-        size={Object.keys(sizes)}
-        onClick={action('Clicked button in All')}
-      >
-        I am a Button
-      </Cartesian>
-    )
+  const size = optionsKnob('Size', sizes, 'medium', {
+    display: 'multi-select',
   })
-
-  .add('Geometry', () => (
-    <XRay>
-      <Cartesian
-        component={Button}
-        m={3}
-        variation={Object.keys(variations)}
-        size={Object.keys(sizes)}
-      >
-        Button Geometry
-      </Cartesian>
-    </XRay>
-  ))
-
-  .add('Forward refs', () => (
-    <ForwardRefDemo
-      refChild={(dsRef) => (
-        <>
-          <Button ref={dsRef} color='error' size='large'>
-            PANIC
-          </Button>
-          <br />
-          <Button mt={4} onClick={() => dsRef.current.focus()}>
-            Click to focus PANIC button via ref
-          </Button>
-        </>
-      )}
-    />
-  ))
-  .add('Styled Button should not lose its styling', () => {
-    return (
-      <Box>
-        <StyledButton>BUTTON</StyledButton>
-      </Box>
-    )
+  const color = optionsKnob('Palette Color', colors, 'primary', {
+    display: 'multi-select',
   })
+  const disabled = boolean('Disabled?', false)
+  const fullWidth = boolean('Full Width?', false)
+
+  return (
+    <Cartesian
+      component={Button}
+      m={3}
+      variation={variation}
+      size={size}
+      color={color}
+      disabled={disabled}
+      width={fullWidth ? 1 : null}
+      onClick={action('Clicked button in Try It!')}
+    >
+      Try This Button!
+    </Cartesian>
+  )
+}
+
+TryIt.story = {
+  name: 'Try It!',
+}
+
+export const All = () => {
+  return (
+    <Cartesian
+      component={Button}
+      m={3}
+      color={Object.keys(colors)}
+      variation={Object.keys(variations)}
+      disabled={[false, true]}
+      size={Object.keys(sizes)}
+      onClick={action('Clicked button in All')}
+    >
+      I am a Button
+    </Cartesian>
+  )
+}
+
+export const Geometry = () => (
+  <XRay>
+    <Cartesian
+      component={Button}
+      m={3}
+      variation={Object.keys(variations)}
+      size={Object.keys(sizes)}
+    >
+      Button Geometry
+    </Cartesian>
+  </XRay>
+)
+
+export const ForwardRefs = () => (
+  <ForwardRefDemo
+    refChild={(dsRef) => (
+      <>
+        <Button ref={dsRef} color='error' size='large'>
+          PANIC
+        </Button>
+        <br />
+        <Button mt={4} onClick={() => dsRef.current.focus()}>
+          Click to focus PANIC button via ref
+        </Button>
+      </>
+    )}
+  />
+)
+
+ForwardRefs.story = {
+  name: 'Forward refs',
+}
+
+export const StyledButtonShouldNotLoseItsStyling = () => {
+  return (
+    <Box>
+      <StyledButton>BUTTON</StyledButton>
+    </Box>
+  )
+}
+
+StyledButtonShouldNotLoseItsStyling.story = {
+  name: 'Styled Button should not lose its styling',
+}

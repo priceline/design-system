@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { Cartesian } from '@compositor/kit'
 
@@ -25,53 +24,73 @@ const colors = {
   background: 'background',
 }
 
-storiesOf('Link', module)
-  .add('Link component', () => (
-    <Link href='https://www.priceline.com/home/' target='_blank'>
-      Priceline Home
-    </Link>
-  ))
-  .add('Link open self', () => (
-    <Link href='https://www.priceline.com/home/' target='_self'>
-      Open the Priceline Home in the same window
-    </Link>
-  ))
-  .add('Forward refs', () => (
-    <ForwardRefDemo
-      refChild={(dsRef) => (
-        <>
-          <Link color='text.dark' ref={dsRef}>
-            I am a link!
-          </Link>
-          <br />
-          <Button
-            color='error'
-            onClick={() => (dsRef.current.innerHTML = 'Bacon!')}
-            mt={4}
-          >
-            Click to update link text via ref
-          </Button>
-        </>
-      )}
-    />
-  ))
-  .add('Color', () => (
-    <div>
-      <Link color='text.dark'>I am a different color!</Link>
-      <br />
-      <Link color='secondary'>I am a different color!</Link>
-      <br />
-      <Link color='error'>I am a different color!</Link>
-    </div>
-  ))
-  .add('All', () => (
-    <Cartesian
-      component={Link}
-      color={Object.keys(colors)}
-      variation={Object.keys(variations)}
-      onClick={action('Clicked button in All')}
-      m={3}
-    >
-      Link Text
-    </Cartesian>
-  ))
+export default {
+  title: 'Link',
+  component: Link,
+}
+
+export const LinkComponent = () => (
+  <Link href='https://www.priceline.com/home/' target='_blank'>
+    Priceline Home
+  </Link>
+)
+
+LinkComponent.story = {
+  name: 'Link component',
+}
+
+export const LinkOpenSelf = () => (
+  <Link href='https://www.priceline.com/home/' target='_self'>
+    Open the Priceline Home in the same window
+  </Link>
+)
+
+LinkOpenSelf.story = {
+  name: 'Link open self',
+}
+
+export const ForwardRefs = () => (
+  <ForwardRefDemo
+    refChild={(dsRef) => (
+      <>
+        <Link color='text.dark' ref={dsRef}>
+          I am a link!
+        </Link>
+        <br />
+        <Button
+          color='error'
+          onClick={() => (dsRef.current.innerHTML = 'Bacon!')}
+          mt={4}
+        >
+          Click to update link text via ref
+        </Button>
+      </>
+    )}
+  />
+)
+
+ForwardRefs.story = {
+  name: 'Forward refs',
+}
+
+export const Color = () => (
+  <div>
+    <Link color='text.dark'>I am a different color!</Link>
+    <br />
+    <Link color='secondary'>I am a different color!</Link>
+    <br />
+    <Link color='error'>I am a different color!</Link>
+  </div>
+)
+
+export const All = () => (
+  <Cartesian
+    component={Link}
+    color={Object.keys(colors)}
+    variation={Object.keys(variations)}
+    onClick={action('Clicked button in All')}
+    m={3}
+  >
+    Link Text
+  </Cartesian>
+)
