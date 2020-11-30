@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-autofocus */
-
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
@@ -30,7 +28,10 @@ const MenuButton = styled(Button)`
       : `background-color: ${getPaletteColor('background.lightest')(props)};`}
 `
 
-function MenuItem({ id, selected, children, handleClose, onClick, ...props }) {
+const MenuItem = React.forwardRef(function MenuItem(
+  { id, selected, children, handleClose, onClick, ...props },
+  ref
+) {
   const handleClick = () => {
     onClick && onClick()
     handleClose && handleClose()
@@ -39,9 +40,9 @@ function MenuItem({ id, selected, children, handleClose, onClick, ...props }) {
   return (
     <MenuButton
       id={id}
+      ref={ref}
       role='option'
       aria-selected={selected}
-      autoFocus={selected}
       selected={selected}
       onClick={handleClick}
       {...props}
@@ -50,7 +51,7 @@ function MenuItem({ id, selected, children, handleClose, onClick, ...props }) {
       {selected && <CheckIcon title='check' size={20} ml={3} />}
     </MenuButton>
   )
-}
+})
 
 MenuItem.displayName = 'MenuItem'
 

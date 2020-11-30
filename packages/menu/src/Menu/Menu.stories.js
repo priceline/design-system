@@ -79,7 +79,7 @@ export const Columns = () => {
   const [currencyCode, setCurrencyCode] = useState('USD')
 
   return (
-    <Menu buttonText={currencyCode} columns={2}>
+    <Menu idx='currency-selector' buttonText={currencyCode} columns={2}>
       {currencies.map((currency, index) => {
         const selected = currencyCode === currency.code
         const onClick = () => setCurrencyCode(currency.code)

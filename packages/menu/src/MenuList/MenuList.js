@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Flex } from 'pcln-design-system'
@@ -7,7 +7,6 @@ const MenuContainer = styled(Flex)`
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-y: scroll;
   height: ${(props) => props.height || 300}px;
-  outline: none;
 
   & > * {
     margin-right: 4px;
@@ -34,13 +33,17 @@ function moveFocus(currentFocus, traversalFunction) {
 
 function MenuList({ children, color, columns, height, handleClose }) {
   const listRef = useRef(null)
+  const currentItemRef = useRef(null)
+
+  useEffect(() => {
+    currentItemRef?.current?.focus()
+  }, [])
 
   function handleKeyDown(evt) {
     const list = listRef.current
     const key = evt.key
 
-    const currentFocus = ((list && list.ownerDocument) || document)
-      .activeElement
+    const currentFocus = list?.ownerDocument?.activeElement
 
     if (key === 'ArrowDown') {
       evt.preventDefault()
@@ -68,6 +71,7 @@ function MenuList({ children, color, columns, height, handleClose }) {
           id: `option${index}`,
           color: child.props.color || color,
           handleClose,
+          ref: child.props.selected ? currentItemRef : null,
         })
       )}
     </MenuContainer>
