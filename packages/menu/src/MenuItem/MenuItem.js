@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Button, Flex, getPaletteColor } from 'pcln-design-system'
@@ -32,10 +32,10 @@ const MenuItem = React.forwardRef(function MenuItem(
   { id, selected, children, handleClose, onClick, ...props },
   ref
 ) {
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     onClick && onClick()
     handleClose && handleClose()
-  }
+  }, [onClick, handleClose])
 
   return (
     <MenuButton

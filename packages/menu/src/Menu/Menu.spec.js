@@ -9,7 +9,7 @@ describe('Menu', () => {
     const onItemTwoClick = jest.fn()
 
     render(
-      <Menu idx='1' buttonText='Click Me'>
+      <Menu id='menu' idx='1' buttonText='Click Me'>
         <MenuItem onClick={onItemOneClick}>Item One</MenuItem>
         <MenuItem onClick={onItemTwoClick}>Item Two</MenuItem>
       </Menu>
@@ -28,7 +28,7 @@ describe('Menu', () => {
 
   it('is a11y friendly', () => {
     render(
-      <Menu idx='1' buttonText='Click Me'>
+      <Menu id='menu' idx='1' buttonText='Click Me'>
         <MenuItem selected>Item One</MenuItem>
         <MenuItem>Item Two</MenuItem>
       </Menu>
@@ -40,12 +40,12 @@ describe('Menu', () => {
     })
 
     expect(screen.getByText('Item One').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('list'), {
+    fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowDown',
       code: 'ArrowDown',
     })
     expect(screen.getByText('Item Two').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('list'), {
+    fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowUp',
       code: 'ArrowUp',
     })

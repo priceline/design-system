@@ -31,17 +31,17 @@ describe('MenuList', () => {
     )
 
     expect(screen.getByText('Item One').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('list'), {
+    fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowDown',
       code: 'ArrowDown',
     })
     expect(screen.getByText('Item Two').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('list'), {
+    fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowUp',
       code: 'ArrowUp',
     })
     expect(screen.getByText('Item One').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('list'), {
+    fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowRight',
       code: 'ArrowRight',
     })

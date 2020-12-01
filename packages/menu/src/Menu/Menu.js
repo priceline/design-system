@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 import { Button } from 'pcln-design-system'
 import { ChevronDown } from 'pcln-icons'
 import Popover from 'pcln-popover'
@@ -9,13 +10,13 @@ import MenuList from '../MenuList'
 const LinkButton = styled(Button)`
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: ${themeGet('space.2')}px;
 `
 
-function Menu({ buttonText, color, height, size, children, ...props }) {
+function Menu({ id, buttonText, color, height, size, children, ...props }) {
   const MenuContent = ({ handleClose }) => (
     <MenuList
-      id='menu-container'
+      id={id}
       color={color}
       size={size}
       height={height}
@@ -29,13 +30,13 @@ function Menu({ buttonText, color, height, size, children, ...props }) {
     handleClose: PropTypes.func,
   }
 
-  const onKeyDown = (evt) => {
+  const onKeyDown = useCallback((evt) => {
     const key = evt.key
     if (key === 'ArrowDown' || key === 'ArrowUp') {
       evt.preventDefault()
       evt.target.click()
     }
-  }
+  }, [])
 
   return (
     <Popover
@@ -44,6 +45,7 @@ function Menu({ buttonText, color, height, size, children, ...props }) {
       width={650}
       zIndex={1600}
       placement='bottom'
+      aria-controls={id}
       renderContent={MenuContent}
       {...props}
     >
@@ -58,6 +60,7 @@ function Menu({ buttonText, color, height, size, children, ...props }) {
 Menu.displayName = 'Menu'
 
 Menu.propTypes = {
+  id: PropTypes.string,
   buttonText: PropTypes.string,
   color: PropTypes.string,
   height: PropTypes.number,

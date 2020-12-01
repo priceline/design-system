@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
+import { themeGet } from 'styled-system'
 import { Flex, applySizes } from 'pcln-design-system'
 
 const sizes = {
@@ -11,7 +12,7 @@ const sizes = {
   `,
   twoColumns: css`
     & > * {
-      width: calc(50% - 4px);
+      width: calc(50% - ${themeGet('space.1')}px);
     }
   `,
 }
@@ -19,38 +20,39 @@ const sizes = {
 const MenuContainer = styled(Flex)`
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-y: scroll;
-  height: ${(props) => props.height || 300}px;
 
   & > * {
-    margin-right: 4px;
-    margin-bottom: 4px;
+    margin-right: ${themeGet('space.1')}px;
+    margin-bottom: ${themeGet('space.1')}px;
   }
 
   ${applySizes(sizes)};
 `
 
 function focusNext(item) {
-  return item && item.nextElementSibling
+  return item?.nextElementSibling
 }
 
 function focusPrevious(item) {
-  return item && item.previousElementSibling
+  return item?.previousElementSibling
 }
 
 function moveFocus(currentFocus, traversalFunction) {
   const nextFocus = traversalFunction(currentFocus)
-  nextFocus && nextFocus.focus()
+  nextFocus?.focus()
 }
 
-function MenuList({ children, color, size, height, handleClose }) {
+function MenuList({ id, children, color, size, height, handleClose }) {
   const listRef = useRef(null)
   const currentItemRef = useRef(null)
+  const [currentItemId, setCurrentItemId] = useState(null)
 
   useEffect(() => {
-    currentItemRef?.current?.focus()
+    setCurrentItemId(currentItemRef.current?.id)
+    currentItemRef.current?.focus()
   }, [])
 
-  function handleKeyDown(evt) {
+  const handleKeyDown = useCallback((evt) => {
     const list = listRef.current
     const key = evt.key
 
@@ -63,12 +65,14 @@ function MenuList({ children, color, size, height, handleClose }) {
       evt.preventDefault()
       moveFocus(currentFocus, focusPrevious)
     }
-  }
+  }, [])
 
   return (
     <MenuContainer
+      id={id}
       ref={listRef}
-      role='list'
+      role='listbox'
+      aria-activedescendant={currentItemId}
       flexWrap='wrap'
       height={height}
       size={size}
@@ -80,9 +84,9 @@ function MenuList({ children, color, size, height, handleClose }) {
       {React.Children.map(children, (child, index) =>
         React.cloneElement(child, {
           id: `option${index}`,
+          ref: child.props.selected ? currentItemRef : null,
           color: child.props.color || color,
           handleClose,
-          ref: child.props.selected ? currentItemRef : null,
         })
       )}
     </MenuContainer>
@@ -92,6 +96,7 @@ function MenuList({ children, color, size, height, handleClose }) {
 MenuList.displayName = 'MenuList'
 
 MenuList.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.node,
   color: PropTypes.string,
   size: PropTypes.string,

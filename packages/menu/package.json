@@ -22,7 +22,6 @@
   "files": [
     "dist/"
   ],
-  "keywords": [],
   "author": "Priceline",
   "license": "MIT",
   "devDependencies": {
