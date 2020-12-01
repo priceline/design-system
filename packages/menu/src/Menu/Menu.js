@@ -12,12 +12,12 @@ const LinkButton = styled(Button)`
   padding: 8px;
 `
 
-function Menu({ buttonText, color, height, columns, children, ...props }) {
+function Menu({ buttonText, color, height, size, children, ...props }) {
   const MenuContent = ({ handleClose }) => (
     <MenuList
       id='menu-container'
       color={color}
-      columns={columns}
+      size={size}
       height={height}
       handleClose={handleClose}
     >
@@ -61,12 +61,12 @@ Menu.propTypes = {
   buttonText: PropTypes.string,
   color: PropTypes.string,
   height: PropTypes.number,
-  columns: PropTypes.number,
+  size: PropTypes.string,
   children: PropTypes.node,
 }
 
 Menu.defaultProps = {
-  columns: 1,
+  size: 'singleColumn',
 }
 
 export default Menu

@@ -1,7 +1,20 @@
 import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { Flex } from 'pcln-design-system'
+import styled, { css } from 'styled-components'
+import { Flex, applySizes } from 'pcln-design-system'
+
+const sizes = {
+  singleColumn: css`
+    & > * {
+      width: 100%;
+    }
+  `,
+  twoColumns: css`
+    & > * {
+      width: calc(50% - 4px);
+    }
+  `,
+}
 
 const MenuContainer = styled(Flex)`
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,11 +24,9 @@ const MenuContainer = styled(Flex)`
   & > * {
     margin-right: 4px;
     margin-bottom: 4px;
-    width: ${(props) => {
-      const columnWidth = 100 / props.columns
-      return `calc(${columnWidth}% - 4px)`
-    }};
   }
+
+  ${applySizes(sizes)};
 `
 
 function focusNext(item) {
@@ -31,7 +42,7 @@ function moveFocus(currentFocus, traversalFunction) {
   nextFocus && nextFocus.focus()
 }
 
-function MenuList({ children, color, columns, height, handleClose }) {
+function MenuList({ children, color, size, height, handleClose }) {
   const listRef = useRef(null)
   const currentItemRef = useRef(null)
 
@@ -60,7 +71,7 @@ function MenuList({ children, color, columns, height, handleClose }) {
       role='list'
       flexWrap='wrap'
       height={height}
-      columns={columns}
+      size={size}
       p={2}
       pr={1}
       pb={1}
@@ -83,13 +94,13 @@ MenuList.displayName = 'MenuList'
 MenuList.propTypes = {
   children: PropTypes.node,
   color: PropTypes.string,
-  columns: PropTypes.number,
+  size: PropTypes.string,
   height: PropTypes.number,
   handleClose: PropTypes.func,
 }
 
 MenuList.defaultProps = {
-  columns: 1,
+  size: 'singleColumn',
 }
 
 export default MenuList

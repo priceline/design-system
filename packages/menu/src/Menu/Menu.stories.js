@@ -79,7 +79,7 @@ export const Columns = () => {
   const [currencyCode, setCurrencyCode] = useState('USD')
 
   return (
-    <Menu idx='currency-selector' buttonText={currencyCode} columns={2}>
+    <Menu idx='currency-selector' buttonText={currencyCode} size='twoColumns'>
       {currencies.map((currency, index) => {
         const selected = currencyCode === currency.code
         const onClick = () => setCurrencyCode(currency.code)
@@ -101,6 +101,31 @@ export const Scrollable = () => {
 
   return (
     <Menu buttonText={currencyCode} width={350} height={300}>
+      {currencies.map((currency, index) => {
+        const selected = currencyCode === currency.code
+        const onClick = () => setCurrencyCode(currency.code)
+        return (
+          <MenuItem key={index} selected={selected} onClick={onClick}>
+            <Text regular width={32} textAlign='center' mr={3}>
+              {currency.symbol}
+            </Text>
+            <Text regular>{currency.label}</Text>
+          </MenuItem>
+        )
+      })}
+    </Menu>
+  )
+}
+
+export const BreakpointColumns = () => {
+  const [currencyCode, setCurrencyCode] = useState('USD')
+
+  return (
+    <Menu
+      idx='currency-selector'
+      buttonText={currencyCode}
+      size={['singleColumn', null, null, 'twoColumns']}
+    >
       {currencies.map((currency, index) => {
         const selected = currencyCode === currency.code
         const onClick = () => setCurrencyCode(currency.code)
