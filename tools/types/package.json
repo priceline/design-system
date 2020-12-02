@@ -38,11 +38,12 @@
     "@types/styled-system": "^4.2.2"
   },
   "devDependencies": {
-    "@priceline/eslint-config": "^0.0.1",
+    "@priceline/eslint-config": "workspace:*",
     "csstype": "^2.6.7",
     "dtslint": "^4.0.0",
-    "eslint": "^7.16.0",
-    "pcln-design-system": "^4.2.1",
-    "prettier": "^2.1.1"
+    "eslint": "^7.9.0",
+    "pcln-design-system": "workspace:*",
+    "prettier": "^2.1.1",
+    "@rushstack/eslint-patch": "^1.0.6"
   }
 }

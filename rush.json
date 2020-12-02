@@ -106,7 +106,7 @@
      *
      * This option is experimental. The default value is false.
      */
-     "useWorkspaces": false
+     "useWorkspaces": true
   },
 
   /**
@@ -358,7 +358,6 @@
   // "hotfixChangeEnabled": false,
 
   "projects": [
-
     {
       "packageName": "pcln-menu",
       "projectFolder": "packages/menu",
