@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.34.1",
+  "rushVersion": "5.35.2",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "5.6.0",
+  "pnpmVersion": "5.13.5",
 
   // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
@@ -35,6 +35,7 @@
    * Options that are only used when the PNPM package manager is selected
    */
   "pnpmOptions": {
+    "useWorkspaces": true
     /**
      * Specifies the location of the PNPM store.  There are two possible values:
      *
@@ -358,7 +359,6 @@
   // "hotfixChangeEnabled": false,
 
   "projects": [
-
     {
       "packageName": "pcln-menu",
       "projectFolder": "packages/menu",
