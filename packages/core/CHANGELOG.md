@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 17 Nov 2020 21:35:08 GMT and should not be manually modified.
+This log was last generated on Wed, 02 Dec 2020 18:39:34 GMT and should not be manually modified.
+
+## 4.1.0
+Wed, 02 Dec 2020 18:39:34 GMT
+
+### Minor changes
+
+- Export applySizes
+
+### Patches
+
+- Fix prop type warning for stamp
 
 ## 4.0.0
 Tue, 17 Nov 2020 21:35:08 GMT

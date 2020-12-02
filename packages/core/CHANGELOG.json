@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.1.0",
+      "tag": "pcln-design-system_v4.1.0",
+      "date": "Wed, 02 Dec 2020 18:39:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix prop type warning for stamp",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "52a66f260c2331d29e1be5f45e140bcc8184d7b9"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Export applySizes",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "52a66f260c2331d29e1be5f45e140bcc8184d7b9"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.0.0",
       "tag": "pcln-design-system_v4.0.0",
       "date": "Tue, 17 Nov 2020 21:35:08 GMT",
