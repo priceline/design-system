@@ -14,10 +14,10 @@
     "@mdx-js/tag": "^0.15.0",
     "is-absolute-url": "^2.1.0",
     "mdx-docs": "^1.0.0-9",
-    "pcln-design-system": "^4.2.1",
-    "pcln-icons": "^4.0.0",
-    "pcln-modal": "^4.0.0",
-    "pcln-slider": "^4.0.0",
+    "pcln-design-system": "workspace:*",
+    "pcln-icons": "workspace:*",
+    "pcln-modal": "workspace:*",
+    "pcln-slider": "workspace:*",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.15.5",
-    "@priceline/eslint-config": "^0.0.1",
+    "@priceline/eslint-config": "workspace:*",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.16.0",
@@ -34,6 +34,7 @@
     "remark-autolink-headings": "^5.0.0",
     "remark-emoji": "^2.0.2",
     "remark-images": "^0.8.1",
-    "remark-slug": "^5.1.0"
+    "remark-slug": "^5.1.0",
+    "@rushstack/eslint-config": "^2.3.1"
   }
 }

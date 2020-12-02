@@ -80,8 +80,8 @@
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@compositor/kit": "^1.0.47",
-    "@priceline/babel-preset": "^0.0.1",
-    "@priceline/eslint-config": "^0.0.1",
+    "@priceline/babel-preset": "workspace:*",
+    "@priceline/eslint-config": "workspace:*",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/react": "^5.3.21",
@@ -100,7 +100,8 @@
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "stylis": "^3.5.4",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "@rushstack/eslint-config": "^2.3.1"
   },
   "peerDependencies": {
     "react": "^16.10.0",

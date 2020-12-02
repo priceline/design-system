@@ -19,8 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "@compositor/kit": "^1.0.47",
-    "@priceline/babel-preset": "^0.0.1",
-    "@priceline/eslint-config": "^0.0.1",
+    "@priceline/babel-preset": "workspace:*",
+    "@priceline/eslint-config": "workspace:*",
     "@storybook/addon-a11y": "^5.3.21",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-docs": "^5.3.21",
@@ -32,10 +32,11 @@
     "chromatic": "^5.2.0",
     "eslint": "^7.16.0",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "^4.2.1",
+    "pcln-design-system": "workspace:*",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable-playground": "^1.0.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "@rushstack/eslint-config": "^2.3.1"
   }
 }
