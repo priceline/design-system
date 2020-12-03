@@ -24,13 +24,13 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule(
       'background-color',
-      theme.palette.primary.base
+      theme.palette.error.base
     )
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
 
     expect(button).toHaveStyleRule(
       'background-color',
-      theme.palette.primary.dark,
+      theme.palette.error.dark,
       {
         modifier: ':hover',
       }
@@ -47,7 +47,7 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule(
       'background-color',
-      theme.palette.primary.light
+      theme.palette.error.light
     )
     expect(button).toHaveStyleRule('color', theme.palette.text.base)
     expect(button).toHaveStyleRule('cursor', 'not-allowed', {
@@ -56,7 +56,7 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule(
       'background-color',
-      theme.palette.primary.light,
+      theme.palette.error.light,
       {
         modifier: ':hover',
       }
@@ -126,7 +126,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
         expect(button).toHaveStyleRule(
           'background-color',
-          theme.palette.primary.base
+          theme.palette.error.base
         )
 
         expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
@@ -134,7 +134,7 @@ describe('Button', () => {
         })
         expect(button).toHaveStyleRule(
           'background-color',
-          theme.palette.primary.dark,
+          theme.palette.error.dark,
           {
             modifier: ':hover',
           }
@@ -153,12 +153,12 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.text.base)
         expect(button).toHaveStyleRule(
           'background-color',
-          theme.palette.primary.light
+          theme.palette.error.light
         )
 
         expect(button).toHaveStyleRule(
           'background-color',
-          theme.palette.primary.light,
+          theme.palette.error.light,
           {
             modifier: ':hover',
           }
@@ -173,17 +173,17 @@ describe('Button', () => {
 
         const button = getByText('BUTTON')
 
-        expect(button).toHaveStyleRule('color', theme.palette.primary.base)
+        expect(button).toHaveStyleRule('color', theme.palette.error.base)
         expect(button).toHaveStyleRule('background-color', 'transparent')
         expect(button).toHaveStyleRule('background-color', 'transparent', {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
+        expect(button).toHaveStyleRule('color', theme.palette.error.dark, {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule(
           'box-shadow',
-          `inset 0 0 0 2px ${theme.palette.primary.dark}`,
+          `inset 0 0 0 2px ${theme.palette.error.dark}`,
           {
             modifier: ':hover',
           }
@@ -199,7 +199,7 @@ describe('Button', () => {
 
         const button = getByText('BUTTON')
 
-        expect(button).toHaveStyleRule('color', theme.palette.primary.light)
+        expect(button).toHaveStyleRule('color', theme.palette.error.light)
         expect(button).toHaveStyleRule('background-color', 'transparent')
       })
     })
@@ -210,14 +210,14 @@ describe('Button', () => {
 
         const button = getByText('BUTTON')
 
-        expect(button).toHaveStyleRule('color', theme.palette.primary.base)
+        expect(button).toHaveStyleRule('color', theme.palette.error.base)
         expect(button).toHaveStyleRule('vertical-align', 'inherit')
         expect(button).toHaveStyleRule('-webkit-font-smoothing', 'inherit')
         expect(button).toHaveStyleRule('font-weight', '500')
         expect(button).toHaveStyleRule('line-height', '1.4')
         expect(button).toHaveStyleRule('padding', '0')
         expect(button).toHaveStyleRule('background-color', 'transparent')
-        expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
+        expect(button).toHaveStyleRule('color', theme.palette.error.dark, {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('text-decoration', 'underline', {
@@ -273,14 +273,14 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule(
       'background-color',
-      theme.palette.primary.base
+      theme.palette.error.base
     )
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
     expect(button).toHaveStyleRule('padding', '100px')
 
     expect(button).toHaveStyleRule(
       'background-color',
-      theme.palette.primary.dark,
+      theme.palette.error.dark,
       {
         modifier: ':hover',
       }

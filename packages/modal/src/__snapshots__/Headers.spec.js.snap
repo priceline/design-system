@@ -29,7 +29,7 @@ exports[`ModalHeader render 1`] = `
   font-size: 14px;
   padding: 9.5px 18px;
   margin-left: auto;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   padding: 0;
   background-color: transparent;
@@ -37,7 +37,7 @@ exports[`ModalHeader render 1`] = `
 }
 
 .c3:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -132,7 +132,7 @@ exports[`ModalHeader render 1`] = `
     <button
       aria-label="close"
       class="c3 c4"
-      color="primary"
+      color="error"
       size="24"
       title="close"
     >

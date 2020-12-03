@@ -129,7 +129,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  color: 'primary',
+  color: 'error',
   variation: 'fill',
 }
 

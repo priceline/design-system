@@ -156,7 +156,7 @@ exports[`IconField renders icon button 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   padding: 0;
   background-color: transparent;
@@ -164,7 +164,7 @@ exports[`IconField renders icon button 1`] = `
 }
 
 .c2:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -266,7 +266,7 @@ exports[`IconField renders icon button 1`] = `
   />
   <button
     className="c2"
-    color="primary"
+    color="error"
     style={
       Object {
         "alignSelf": "center",
@@ -338,7 +338,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   padding: 0;
   background-color: transparent;
@@ -346,7 +346,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 .c4:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -473,7 +473,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   />
   <button
     className="c4"
-    color="primary"
+    color="error"
     style={
       Object {
         "alignSelf": "center",

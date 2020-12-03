@@ -24,21 +24,21 @@ exports[`Step should handle onClick 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #007aff;
+  color: #c00;
   cursor: pointer;
   padding: 0;
   font-weight: unset;
 }
 
 .c1:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -67,7 +67,7 @@ exports[`Step should handle onClick 1`] = `
   >
     <button
       class="c1"
-      color="primary"
+      color="error"
       data-testid="Step"
     >
       <div
@@ -119,21 +119,21 @@ exports[`Step should render a completed step correctly 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #007aff;
+  color: #c00;
   cursor: default;
   padding: 0;
   font-weight: unset;
 }
 
 .c1:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -162,7 +162,7 @@ exports[`Step should render a completed step correctly 1`] = `
   >
     <button
       class="c1"
-      color="primary"
+      color="error"
       data-testid="Step"
     >
       <svg
@@ -232,21 +232,21 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #007aff;
+  color: #c00;
   cursor: default;
   padding: 0;
   font-weight: unset;
 }
 
 .c1:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -275,7 +275,7 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   >
     <button
       class="c1"
-      color="primary"
+      color="error"
       data-testid="Step"
     >
       <svg
@@ -332,21 +332,21 @@ exports[`Step should render an active step correctly 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #007aff;
+  color: #c00;
   cursor: default;
   padding: 0;
   font-weight: unset;
 }
 
 .c1:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -375,7 +375,7 @@ exports[`Step should render an active step correctly 1`] = `
   >
     <button
       class="c1"
-      color="primary"
+      color="error"
       data-testid="Step"
     >
       <div
@@ -414,21 +414,21 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #007aff;
+  color: #c00;
   cursor: default;
   padding: 0;
   font-weight: unset;
 }
 
 .c1:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -457,7 +457,7 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   >
     <button
       class="c1"
-      color="primary"
+      color="error"
     >
       <div
         aria-selected="false"

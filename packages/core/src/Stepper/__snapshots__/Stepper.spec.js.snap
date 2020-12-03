@@ -46,21 +46,21 @@ exports[`Stepper renders with children 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #c00;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #007aff;
+  color: #c00;
   cursor: default;
   padding: 0;
   font-weight: unset;
 }
 
 .c1:hover {
-  background-color: #049;
+  background-color: #800;
   color: #fff;
 }
 
@@ -90,7 +90,7 @@ exports[`Stepper renders with children 1`] = `
 >
   <button
     className="c1"
-    color="primary"
+    color="error"
   >
     <svg
       aria-hidden={false}
@@ -120,7 +120,7 @@ exports[`Stepper renders with children 1`] = `
   </button>
   <button
     className="c1"
-    color="primary"
+    color="error"
   >
     <div
       aria-selected={true}
@@ -133,7 +133,7 @@ exports[`Stepper renders with children 1`] = `
   </button>
   <button
     className="c1"
-    color="primary"
+    color="error"
   >
     <div
       aria-selected={false}
