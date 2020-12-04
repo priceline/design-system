@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.1.1",
+      "tag": "pcln-design-system_v4.1.1",
+      "date": "Fri, 04 Dec 2020 01:33:19 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update createTheme to overwrite MQ based on breakpoints + update applyStyles to read theme from context",
+            "author": "Daniel Giraldo <daniel.giraldo@priceline.com>",
+            "commit": "83e0578c04856e348c3b76ed4142ac551e4b9834"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.0",
       "tag": "pcln-design-system_v4.1.0",
       "date": "Wed, 02 Dec 2020 18:39:34 GMT",
