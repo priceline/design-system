@@ -116,6 +116,16 @@ describe('Button', () => {
       'button title'
     )
   })
+
+  it('should forward the "aria-label" prop', () => {
+    const label = 'i am an aria label'
+    const { getByLabelText } = render(
+      <Button aria-label={label}>BUTTON</Button>
+    )
+
+    expect(getByLabelText(label)).toHaveAttribute('aria-label', label)
+  })
+
   describe('variations', () => {
     describe('fill variation', () => {
       it('should render correctly', () => {

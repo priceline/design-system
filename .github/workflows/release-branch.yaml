@@ -9,6 +9,9 @@ on:
       packageName:
         required: true
         description: 'Name of package being released'
+  push:
+    tags:
+      - v*.*.*
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -55,4 +58,4 @@ jobs:
         with:
           body_path: ./RELEASE_NOTES.md
           name: '${{ github.event.inputs.packageName }} ${{ github.event.inputs.versionTag }}'
-          tag_name: ${{ github.event.inputs.versionTag }}
+          tag_name: ${{ github.event.inputs.versionTag || GITHUB_REF }}
