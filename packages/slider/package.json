@@ -53,7 +53,7 @@
     "jest-standard-reporter": "^1.1.1",
     "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "^4.1.1",
+    "pcln-design-system": "^4.1.2",
     "rc-tools": "^8.4.5",
     "rc-trigger": "^2.6.5",
     "react": "^16.13.1",
@@ -62,7 +62,7 @@
     "styled-components": "^4.4.1"
   },
   "peerDependencies": {
-    "pcln-design-system": "^4.1.1",
+    "pcln-design-system": "^4.1.2",
     "styled-components": ">=4.4.1",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"

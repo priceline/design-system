@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.1.2",
+      "tag": "pcln-design-system_v4.1.2",
+      "date": "Fri, 04 Dec 2020 20:01:32 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Forward aria-label prop to Button and components that extend Button",
+            "author": "Craig Palermo <email@craigp.me>",
+            "commit": "76488304d488ffd757fe6fbeb54b5c1e978e8ef1"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.1",
       "tag": "pcln-design-system_v4.1.1",
       "date": "Fri, 04 Dec 2020 01:33:19 GMT",
