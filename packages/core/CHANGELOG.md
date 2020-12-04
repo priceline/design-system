@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 02 Dec 2020 18:39:34 GMT and should not be manually modified.
+This log was last generated on Fri, 04 Dec 2020 01:33:19 GMT and should not be manually modified.
+
+## 4.1.1
+Fri, 04 Dec 2020 01:33:19 GMT
+
+### Patches
+
+- Update createTheme to overwrite MQ based on breakpoints + update applyStyles to read theme from context
 
 ## 4.1.0
 Wed, 02 Dec 2020 18:39:34 GMT
