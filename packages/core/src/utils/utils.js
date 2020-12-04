@@ -131,9 +131,11 @@ export const getBreakpointSize = (array, length) => {
  * @returns {array}
  */
 
-export const applySizes = (sizes = null, defaultSize = 'medium') => ({
-  size,
-}) => {
+export const applySizes = (
+  sizes = null,
+  defaultSize = 'medium',
+  mediaQueriesOptions = mediaQueries
+) => ({ size }) => {
   if (sizes && typeof size === 'string') {
     return css`
       ${sizes[size] || sizes[defaultSize] || ''}
@@ -142,19 +144,19 @@ export const applySizes = (sizes = null, defaultSize = 'medium') => ({
   if (sizes && Array.isArray(size)) {
     return css`
       ${sizes[getBreakpointSize(size, 1)]};
-      ${mediaQueries.sm} {
+      ${mediaQueriesOptions.sm} {
         ${sizes[getBreakpointSize(size, 2)]};
       }
-      ${mediaQueries.md} {
+      ${mediaQueriesOptions.md} {
         ${sizes[getBreakpointSize(size, 3)]};
       }
-      ${mediaQueries.lg} {
+      ${mediaQueriesOptions.lg} {
         ${sizes[getBreakpointSize(size, 4)]};
       }
-      ${mediaQueries.xl} {
+      ${mediaQueriesOptions.xl} {
         ${sizes[getBreakpointSize(size, 5)]};
       }
-      ${mediaQueries.xxl} {
+      ${mediaQueriesOptions.xxl} {
         ${sizes[getBreakpointSize(size, 6)]};
       }
     `

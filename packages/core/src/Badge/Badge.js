@@ -71,8 +71,8 @@ const Badge = styled.div`
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${space} ${type} ${color};
-  ${applySizes(sizes)}
-  ${applyVariations('Badge')}
+  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
+  ${applyVariations('Badge')};
 `
 
 Badge.displayName = 'Badge'
