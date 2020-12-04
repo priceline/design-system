@@ -113,7 +113,7 @@ export const buttonStyles = css`
  */
 const Button = styled.button.attrs({
   width: ({ fullWidth, width }) => (fullWidth ? 1 : width),
-  'aria-label': ({ title }) => title,
+  'aria-label': ({ title, 'aria-label': ariaLabel }) => ariaLabel || title,
 })`
   ${buttonStyles}
 `

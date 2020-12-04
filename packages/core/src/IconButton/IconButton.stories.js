@@ -13,6 +13,7 @@ export default {
 export const Default = () => (
   <IconButton
     onClick={action('Clicked IconButton')}
+    aria-label={'Click to choose date'}
     icon={<Calendar title='Choose date' />}
   />
 )

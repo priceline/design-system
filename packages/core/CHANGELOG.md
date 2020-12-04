@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 04 Dec 2020 01:33:19 GMT and should not be manually modified.
+This log was last generated on Fri, 04 Dec 2020 20:01:32 GMT and should not be manually modified.
+
+## 4.1.2
+Fri, 04 Dec 2020 20:01:32 GMT
+
+### Patches
+
+- Forward aria-label prop to Button and components that extend Button
 
 ## 4.1.1
 Fri, 04 Dec 2020 01:33:19 GMT
