@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update createTheme to overwrite MQ based on breakpoints + update applyStyles to read theme from context",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "email@craigp.me"
+}
