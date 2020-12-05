@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Pass parent theme to popover content and fix broken styling when content doesn't have its own ThemeProvider",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "email@craigp.me"
+}

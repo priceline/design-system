@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { ThemeConsumer } from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Popper } from 'react-popper'
-import { Box, getPaletteColor, deprecatedPropType } from 'pcln-design-system'
+import {
+  Box,
+  getPaletteColor,
+  deprecatedPropType,
+  ThemeProvider,
+} from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 
 import PopoverArrow from '../Arrow'
@@ -117,11 +122,25 @@ class PopoverContent extends Component {
               role='dialog'
               aria-describedby={`dialog-description-${idx}`}
             >
-              <ContentContainer ref={contentRef} {...styleProps} tabIndex='-1'>
-                <Content color={color} id={`popover-description-${idx}`}>
-                  {content}
-                </Content>
-              </ContentContainer>
+              <ThemeConsumer>
+                {(theme) => (
+                  <ThemeProvider theme={theme}>
+                    <ContentContainer
+                      ref={contentRef}
+                      {...styleProps}
+                      tabIndex='-1'
+                    >
+                      <Content
+                        color={color}
+                        data-testid='dialog-content'
+                        id={`popover-description-${idx}`}
+                      >
+                        {content}
+                      </Content>
+                    </ContentContainer>
+                  </ThemeProvider>
+                )}
+              </ThemeConsumer>
               {!hideArrow && (
                 <PopoverArrow
                   arrowProps={arrowProps}
