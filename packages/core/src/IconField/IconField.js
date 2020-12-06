@@ -6,7 +6,7 @@ const IconField = (props) => {
   const isIcon = (item) => item.type.isIcon || item.type.isIconButton
 
   const children = React.Children.toArray(props.children).filter(
-    (child) => child.type.isField || isIcon(child)
+    (child) => child?.type.isField || isIcon(child)
   )
 
   const styledChildren = children.map((child, i) => {
