@@ -398,6 +398,11 @@
       "projectFolder": "packages/slider",
       "shouldPublish": true
     },
+    {
+      "packageName": "pcln-media-query-match",
+      "projectFolder": "packages/media-query-match",
+      "shouldPublish": true
+    },
 
     // Applications
     {
