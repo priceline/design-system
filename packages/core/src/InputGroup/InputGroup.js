@@ -6,6 +6,9 @@ import { Box } from '../Box'
 import { Input } from '../Input'
 import { getPaletteColor } from '../utils'
 
+// Needed because we can't interpolate Input directly because it's not a styled component
+const StyledInput = styled(Input)``
+
 const InputGroup = styled.div`
   display: flex;
   align-items: center;
@@ -18,7 +21,7 @@ const InputGroup = styled.div`
     flex: 1 1 auto;
   }
 
-  & ${Input} {
+  & ${StyledInput} {
     border: 0;
     box-shadow: none;
   }

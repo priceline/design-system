@@ -1,6 +1,7 @@
 import React from 'react'
+import { render } from 'testing-library'
 
-import { Input } from '..'
+import { Input, theme, createTheme, getPaletteColor } from '..'
 
 const id = 'fake-test-id'
 
@@ -22,5 +23,17 @@ describe('Input', () => {
       <Input id={id} fontSize={4} />
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+  test('it renders an input element with helper text', () => {
+    const helperText = 'hello world'
+    const { getByText } = render(
+      <Input id={id} fontSize={4} helperText={helperText} />
+    )
+    const helperTextNode = getByText(helperText)
+    expect(helperTextNode).not.toBeNull()
+    expect(helperTextNode).toHaveStyleRule(
+      'color',
+      getPaletteColor('error.base')({ theme: createTheme(theme) })
+    )
   })
 })

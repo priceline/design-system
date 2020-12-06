@@ -41,6 +41,19 @@ export const WithExternalLabel = () => (
   </Box>
 )
 
+export const WithHelperText = () => (
+  <Box width={400}>
+    <Label fontSize={4} htmlFor='sample-input'>
+      Label!
+    </Label>
+    <Input
+      id='sample-input'
+      placeholder='Click the label'
+      helperText={'No soup for you!'}
+    />
+  </Box>
+)
+
 WithExternalLabel.story = {
   name: 'With external label',
 }
