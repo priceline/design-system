@@ -1,16 +1,16 @@
 import React from 'react'
 import { fireEvent, render, screen } from 'testing-library'
-import ShadowOverlay from './ShadowOverlay'
+import ShadowEffect from './ShadowEffect'
 import { Input } from '../Input'
 
-describe('ShadowOverlay', () => {
+describe('ShadowEffect', () => {
   it('opens when clicked', () => {
     const mockOnOpen = jest.fn()
     const mockOnClick = jest.fn()
     render(
-      <ShadowOverlay onOpen={mockOnOpen} data-testid='overlay'>
+      <ShadowEffect onOpen={mockOnOpen} data-testid='overlay'>
         <Input onClick={mockOnClick} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(screen.queryByTestId('overlay')).not.toBeInTheDocument()
@@ -25,9 +25,9 @@ describe('ShadowOverlay', () => {
   it('closes if overlay clicked', () => {
     const mockOnClose = jest.fn()
     render(
-      <ShadowOverlay onClose={mockOnClose} data-testid='overlay'>
+      <ShadowEffect onClose={mockOnClose} data-testid='overlay'>
         <Input data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(screen.queryByTestId('overlay')).not.toBeInTheDocument()
@@ -41,13 +41,9 @@ describe('ShadowOverlay', () => {
     const mockOnOpen = jest.fn()
     const mockOnFocus = jest.fn()
     render(
-      <ShadowOverlay
-        shouldOpenOnFocus
-        onOpen={mockOnOpen}
-        data-testid='overlay'
-      >
+      <ShadowEffect shouldOpenOnFocus onOpen={mockOnOpen} data-testid='overlay'>
         <Input onFocus={mockOnFocus} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(mockOnOpen).toHaveBeenCalledTimes(0)
@@ -63,9 +59,9 @@ describe('ShadowOverlay', () => {
     const mockOnOpen = jest.fn()
     const mockOnFocus = jest.fn()
     render(
-      <ShadowOverlay onOpen={mockOnOpen} data-testid='overlay'>
+      <ShadowEffect onOpen={mockOnOpen} data-testid='overlay'>
         <Input onFocus={mockOnFocus} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(mockOnOpen).toHaveBeenCalledTimes(0)
@@ -81,14 +77,14 @@ describe('ShadowOverlay', () => {
     const mockOnClose = jest.fn()
     const mockOnBlur = jest.fn()
     render(
-      <ShadowOverlay
+      <ShadowEffect
         shouldOpenOnFocus
         shouldCloseOnBlur
         onClose={mockOnClose}
         data-testid='overlay'
       >
         <Input onBlur={mockOnBlur} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(screen.queryByTestId('overlay')).not.toBeInTheDocument()
@@ -106,13 +102,13 @@ describe('ShadowOverlay', () => {
     const mockOnClose = jest.fn()
     const mockOnBlur = jest.fn()
     render(
-      <ShadowOverlay
+      <ShadowEffect
         shouldOpenOnFocus
         onClose={mockOnClose}
         data-testid='overlay'
       >
         <Input onBlur={mockOnBlur} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(screen.queryByTestId('overlay')).not.toBeInTheDocument()
@@ -129,9 +125,9 @@ describe('ShadowOverlay', () => {
   it('closes when escape is pressed', () => {
     const mockOnKeyDown = jest.fn()
     render(
-      <ShadowOverlay data-testid='overlay'>
+      <ShadowEffect data-testid='overlay'>
         <Input onKeyDown={mockOnKeyDown} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(screen.queryByTestId('overlay')).not.toBeInTheDocument()
@@ -148,9 +144,9 @@ describe('ShadowOverlay', () => {
   it('does not close for other key presses', () => {
     const mockOnKeyDown = jest.fn()
     render(
-      <ShadowOverlay data-testid='overlay'>
+      <ShadowEffect data-testid='overlay'>
         <Input onKeyDown={mockOnKeyDown} data-testid='input' />
-      </ShadowOverlay>
+      </ShadowEffect>
     )
 
     expect(screen.queryByTestId('overlay')).not.toBeInTheDocument()
@@ -167,10 +163,10 @@ describe('ShadowOverlay', () => {
   it('errors if provided multiple children', () => {
     expect(() => {
       render(
-        <ShadowOverlay>
+        <ShadowEffect>
           <Input />
           <Input />
-        </ShadowOverlay>
+        </ShadowEffect>
       )
     }).toThrowError()
   })

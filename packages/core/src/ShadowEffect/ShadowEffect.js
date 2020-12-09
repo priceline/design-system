@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Overlay = styled.div`
+export const ShadowOverlay = styled.div`
   display: block;
   position: fixed;
   top: 0;
@@ -13,7 +13,7 @@ const Overlay = styled.div`
   z-index: ${(props) => props.zIndex};
 `
 
-function ShadowOverlay({
+function ShadowEffect({
   shouldCloseOnBlur,
   shouldOpenOnFocus,
   zIndex,
@@ -46,7 +46,9 @@ function ShadowOverlay({
 
   return (
     <>
-      {isOpen && <Overlay zIndex={zIndex} onClick={handleClose} {...props} />}
+      {isOpen && (
+        <ShadowOverlay zIndex={zIndex} onClick={handleClose} {...props} />
+      )}
       {React.cloneElement(child, {
         style: { position: 'relative', zIndex: isOpen && zIndex },
         onBlur: () => {
@@ -74,7 +76,7 @@ function ShadowOverlay({
   )
 }
 
-ShadowOverlay.propTypes = {
+ShadowEffect.propTypes = {
   shouldCloseOnBlur: PropTypes.bool,
   shouldOpenOnFocus: PropTypes.bool,
   zIndex: PropTypes.number,
@@ -83,8 +85,8 @@ ShadowOverlay.propTypes = {
   onOpen: PropTypes.func,
 }
 
-ShadowOverlay.defaultProps = {
+ShadowEffect.defaultProps = {
   zIndex: 10,
 }
 
-export default ShadowOverlay
+export default ShadowEffect
