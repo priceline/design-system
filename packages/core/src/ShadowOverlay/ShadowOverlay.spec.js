@@ -164,7 +164,7 @@ describe('ShadowOverlay', () => {
     expect(screen.queryByTestId('overlay')).toBeInTheDocument()
   })
 
-  it('erros if provided multiple children', () => {
+  it('errors if provided multiple children', () => {
     expect(() => {
       render(
         <ShadowOverlay>
