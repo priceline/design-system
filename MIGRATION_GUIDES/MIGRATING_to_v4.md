@@ -6,6 +6,12 @@ See the full [v4 announcement](../ANNOUNCING_V4.md) for more information about t
 
 After upgrading to React 16.10+ and Styled Components v4, there are no breaking changes to the `pcln-design-system` API! 🎉
 
+## UPDATE: Unintended breaking changes
+
+### Styled `Link` loses its default styles when using DS 3 and SC 4 together
+
+**Temporary workaround**: explicitly set prop `variation='link'` on `styled(Link)`s. This issue is no longer present after upgrading to both DS4 and SC4.
+
 ## Migration Steps
 
 1. Upgrade to `react@^16.10`
