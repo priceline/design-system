@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 04 Dec 2020 20:01:32 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Dec 2020 01:11:24 GMT and should not be manually modified.
+
+## 4.2.0
+Fri, 11 Dec 2020 01:11:24 GMT
+
+### Minor changes
+
+- Add ShadowOverlay component
 
 ## 4.1.2
 Fri, 04 Dec 2020 20:01:32 GMT
