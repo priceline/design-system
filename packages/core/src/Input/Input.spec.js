@@ -1,6 +1,7 @@
 import React from 'react'
+import { render } from 'testing-library'
 
-import { Input } from '..'
+import { Input, theme, createTheme, getPaletteColor } from '..'
 
 const id = 'fake-test-id'
 
@@ -22,5 +23,56 @@ describe('Input', () => {
       <Input id={id} fontSize={4} />
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+
+  describe('helper text', function () {
+    test('renders with same color as Input', () => {
+      const helperText = 'hello world'
+      const color = 'error.base'
+      const paletteTheme = createTheme(theme)
+      const { getByText } = render(
+        <Input
+          id={id}
+          color={color}
+          helperText={<Input.HelperText>{helperText}</Input.HelperText>}
+        />
+      )
+      let helperTextNode = getByText(helperText)
+      expect(helperTextNode).not.toBeNull()
+      expect(helperTextNode).toHaveStyleRule(
+        'color',
+        getPaletteColor(color)({ theme: paletteTheme })
+      )
+    })
+
+    test('can override the color from Input', () => {
+      const helperText = 'hello world'
+      const placeholder = 'click me'
+      const color = 'error.base'
+      const helperTextColor = 'secondary.base'
+      const paletteTheme = createTheme(theme)
+      const { getByText, getByPlaceholderText } = render(
+        <Input
+          id={id}
+          color={color}
+          placeholder={placeholder}
+          helperText={
+            <Input.HelperText color={helperTextColor}>
+              {helperText}
+            </Input.HelperText>
+          }
+        />
+      )
+      let helperTextNode = getByText(helperText)
+      expect(helperTextNode).not.toBeNull()
+      expect(helperTextNode).toHaveStyleRule(
+        'color',
+        getPaletteColor(helperTextColor)({ theme: paletteTheme })
+      )
+      expect(getByPlaceholderText(placeholder)).toHaveStyleRule(
+        'border-color',
+        getPaletteColor(color)({ theme: paletteTheme })
+      )
+    })
   })
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Input, Label } from '..'
+import { Box, Input, Label, Divider } from '..'
 
 export default {
   title: 'Input',
@@ -37,7 +37,39 @@ export const WithExternalLabel = () => (
     <Label fontSize={4} htmlFor='sample-input'>
       Label!
     </Label>
-    <Input id='sample-input' placeholder='Click the label' />
+    <Input id='sample-input-1' placeholder='Click the label' />
+  </Box>
+)
+
+export const WithHelperText = () => (
+  <Box width={400}>
+    <Box>
+      <Label fontSize={4} htmlFor='sample-input'>
+        Same color as Input
+      </Label>
+      <Input
+        id='sample-input-2'
+        placeholder='Click the label'
+        color='error.base'
+        helperText={<Input.HelperText>No soup for you!</Input.HelperText>}
+      />
+    </Box>
+    <Divider />
+    <Box>
+      <Label fontSize={4} htmlFor='sample-input'>
+        Override color for helper text
+      </Label>
+      <Input
+        id='sample-input-3'
+        placeholder='Click the label'
+        color='error.base'
+        helperText={
+          <Input.HelperText color='secondary.base'>
+            No soup for you!
+          </Input.HelperText>
+        }
+      />
+    </Box>
   </Box>
 )
 

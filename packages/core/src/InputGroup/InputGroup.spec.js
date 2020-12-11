@@ -1,10 +1,11 @@
 import React from 'react'
+import { render } from 'testing-library'
 
 import { InputGroup } from '..'
 
 describe('InputGroup', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(<InputGroup />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<InputGroup />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Button, Input, Label } from '..'
+import { Box, Button, Input, Label, InputGroup, FormField } from '..'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 
 export default {
@@ -63,3 +63,16 @@ export const WithExternalLabel = () => (
 WithExternalLabel.story = {
   name: 'With external label',
 }
+
+export const GroupedInputs = () => (
+  <InputGroup>
+    <FormField>
+      <Label>Where from?</Label>
+      <Input placeholder='Where from?' />
+    </FormField>
+    <FormField>
+      <Label>Where to?</Label>
+      <Input placeholder='Where to?' />
+    </FormField>
+  </InputGroup>
+)

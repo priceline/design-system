@@ -1,6 +1,8 @@
+import React from 'react'
 import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
+import { Text } from '../Text'
 import {
   applyVariations,
   getPaletteColor,
@@ -8,7 +10,7 @@ import {
   deprecatedColorValue,
 } from '../utils'
 
-const Input = styled.input`
+const StyledInput = styled.input`
   appearance: none;
   display: block;
   width: 100%;
@@ -38,6 +40,33 @@ const Input = styled.input`
   ${applyVariations('Input')}
 `
 
+const INPUT_ERROR_TEXT = 'InputHelperText'
+
+export const Input = (props) => {
+  const { helperText, color, ...restProps } = props
+
+  return (
+    <>
+      <StyledInput {...restProps} color={color} />
+      {helperText &&
+        React.cloneElement(helperText, {
+          color: helperText?.props?.color || color,
+        })}
+    </>
+  )
+}
+
+const HelperText = styled(Text).attrs(() => ({
+  mt: 2,
+  fontSize: 1,
+}))``
+
+Input.HelperText = (props) => (
+  <HelperText {...props}>{props.children}</HelperText>
+)
+
+Input.HelperText.displayName = INPUT_ERROR_TEXT
+
 Input.displayName = 'Input'
 Input.isField = true
 Input.defaultProps = {
@@ -46,6 +75,10 @@ Input.defaultProps = {
 Input.propTypes = {
   id: PropTypes.string.isRequired,
   color: deprecatedColorValue(),
+  /**
+   * Display text below the input and set error color on input
+   */
+  helperText: PropTypes.node,
   ...borders.propTypes,
   ...space.propTypes,
   ...fontSize.propTypes,
