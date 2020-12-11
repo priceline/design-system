@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.2.0",
+      "tag": "pcln-design-system_v4.2.0",
+      "date": "Fri, 11 Dec 2020 01:11:24 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add ShadowOverlay component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "16d23f7d535dc6b11f933ffb40f573ad94e19798"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.2",
       "tag": "pcln-design-system_v4.1.2",
       "date": "Fri, 04 Dec 2020 20:01:32 GMT",
