@@ -67,7 +67,7 @@ describe('Popover', () => {
       expect(asFragment()).toMatchSnapshot()
     })
 
-    it('renders content with correct theme', () => {
+    it('renders content with nested ThemeProviders', () => {
       const expectedColor = 'red'
       const { getByText } = render(
         <ThemeProvider
