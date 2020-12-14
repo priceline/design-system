@@ -8,6 +8,7 @@ export default [
       { name: 'Typography', path: '/typography' },
       { name: 'Iconography', path: '/iconography' },
       { name: 'Theming', path: '/Theming' },
+      { name: 'Breakpoints', path: '/Breakpoints' },
     ],
   },
   {
