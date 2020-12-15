@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 11 Dec 2020 01:11:24 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Dec 2020 01:52:10 GMT and should not be manually modified.
+
+## 4.2.1
+Tue, 15 Dec 2020 01:52:10 GMT
+
+### Patches
+
+- Fix error when using Icon from pcln-icons package with IconField
 
 ## 4.2.0
 Fri, 11 Dec 2020 01:11:24 GMT
