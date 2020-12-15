@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.2.1",
+      "tag": "pcln-design-system_v4.2.1",
+      "date": "Tue, 15 Dec 2020 01:52:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix error when using Icon from pcln-icons package with IconField",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "7287d745fcc4e43b06b89bbe3453116e8996ad4f"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.0",
       "tag": "pcln-design-system_v4.2.0",
       "date": "Fri, 11 Dec 2020 01:11:24 GMT",

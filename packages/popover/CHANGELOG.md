@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Tue, 17 Nov 2020 21:35:08 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Dec 2020 01:52:10 GMT and should not be manually modified.
+
+## 4.0.1
+Tue, 15 Dec 2020 01:52:10 GMT
+
+### Patches
+
+- Pass parent theme to popover content and fix broken styling when content doesn't have its own ThemeProvider
 
 ## 4.0.0
 Tue, 17 Nov 2020 21:35:08 GMT

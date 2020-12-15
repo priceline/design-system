@@ -42,7 +42,7 @@
     "csstype": "^2.6.7",
     "dtslint": "^4.0.0",
     "eslint": "^7.9.0",
-    "pcln-design-system": "^4.2.0",
+    "pcln-design-system": "^4.2.1",
     "prettier": "^2.1.1"
   }
 }

@@ -2,6 +2,28 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.0.1",
+      "tag": "pcln-popover_v4.0.1",
+      "date": "Tue, 15 Dec 2020 01:52:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Pass parent theme to popover content and fix broken styling when content doesn't have its own ThemeProvider",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "cde90823bdcea29bab9cdcf5aa353d53dc36bef9"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.2.0` to `^4.2.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.2.0` to `^4.2.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.0.0",
       "tag": "pcln-popover_v4.0.0",
       "date": "Tue, 17 Nov 2020 21:35:08 GMT",
