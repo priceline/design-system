@@ -120,7 +120,11 @@ Code.defaultProps = {
   color: 'blue',
 }
 
-export const ButtonLink = Button.withComponent('a')
+export const ButtonLink = ({ children, ...props }) => (
+  <Button as='a' {...props}>
+    {children}
+  </Button>
+)
 
 const StaticDemo = styled.div`
   color: ${getPaletteColor('primary.base')};
