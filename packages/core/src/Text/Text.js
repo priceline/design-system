@@ -111,15 +111,20 @@ Text.span = ({ children, ...props }) => (
     {children}
   </Text>
 )
+Text.span.displayName = 'Span'
+
 Text.p = ({ children, ...props }) => (
   <Text as='p' {...props}>
     {children}
   </Text>
 )
+Text.p.displayName = 'Paragraph'
+
 Text.s = ({ children, ...props }) => (
   <Text as='s' {...props}>
     {children}
   </Text>
 )
+Text.s.displayName = 'Strikethrough'
 
 export default Text
