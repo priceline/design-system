@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { ThemeConsumer } from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Popper } from 'react-popper'
 import {
   Box,
   getPaletteColor,
   deprecatedPropType,
-  getSCMigrationRef,
+  ThemeProvider,
 } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 
@@ -113,26 +113,34 @@ class PopoverContent extends Component {
           {...this.props}
         >
           {({ placement, ref, style, arrowProps }) => (
-            // Need to be a native element, because of ref forwarding limitations with DS functional components
             <PopperGuide
               className={className}
-              {...{ [getSCMigrationRef()]: ref }}
+              ref={ref}
               style={style}
               data-placement={placement}
               {...styleProps}
               role='dialog'
               aria-describedby={`dialog-description-${idx}`}
             >
-              <ContentContainer
-                {...{ [getSCMigrationRef()]: contentRef }}
-                ref={contentRef}
-                {...styleProps}
-                tabIndex='-1'
-              >
-                <Content color={color} id={`popover-description-${idx}`}>
-                  {content}
-                </Content>
-              </ContentContainer>
+              <ThemeConsumer>
+                {(theme) => (
+                  <ThemeProvider theme={theme}>
+                    <ContentContainer
+                      ref={contentRef}
+                      {...styleProps}
+                      tabIndex='-1'
+                    >
+                      <Content
+                        color={color}
+                        data-testid='dialog-content'
+                        id={`popover-description-${idx}`}
+                      >
+                        {content}
+                      </Content>
+                    </ContentContainer>
+                  </ThemeProvider>
+                )}
+              </ThemeConsumer>
               {!hideArrow && (
                 <PopoverArrow
                   arrowProps={arrowProps}
@@ -158,7 +166,7 @@ class PopoverContent extends Component {
 
 const PopperGuide = styled(Box)`
   padding: 16px;
-  z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)}
+  z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
   max-width: ${({ width }) => width}px;
   width: 100%;
   box-sizing: border-box;

@@ -1,6 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
 import { Stepper } from '..'
 
@@ -16,10 +14,16 @@ const children = (
   </React.Fragment>
 )
 
-storiesOf('Stepper', module).add(
-  'Stepper component',
-  withInfo({
-    inline: true,
-    text: 'Use the <Stepper> component to render a stepper.',
-  })(() => <Stepper>{children}</Stepper>)
-)
+export default {
+  title: 'Stepper',
+  component: Stepper,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Use the <Stepper> component to render a stepper.',
+      },
+    },
+  },
+}
+
+export const Default = () => <Stepper>{children}</Stepper>

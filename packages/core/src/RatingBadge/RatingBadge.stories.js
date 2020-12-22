@@ -1,7 +1,13 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { RatingBadge } from '..'
 
-storiesOf('RatingBadge', module).add('default', () => (
-  <RatingBadge>9.0</RatingBadge>
-))
+export default {
+  title: 'RatingBadge',
+  component: RatingBadge,
+}
+
+export const Default = () => <RatingBadge>9.0</RatingBadge>
+
+Default.story = {
+  name: 'default',
+}

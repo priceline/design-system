@@ -1,0 +1,27 @@
+{
+  "name": "pcln-menu",
+  "entries": [
+    {
+      "version": "4.0.0",
+      "tag": "pcln-menu_v4.0.0",
+      "date": "Wed, 02 Dec 2020 18:39:34 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Create Menu Package",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "52a66f260c2331d29e1be5f45e140bcc8184d7b9"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.0.0` to `^4.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.0.0` to `^4.1.0`"
+          }
+        ]
+      }
+    }
+  ]
+}

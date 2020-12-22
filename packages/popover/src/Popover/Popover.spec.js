@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent, getByRole } from 'testing-library'
-import { Box, Button } from 'pcln-design-system'
+import { Box, Button, Text, ThemeProvider } from 'pcln-design-system'
 
 import Popover from './Popover'
 
@@ -65,6 +65,30 @@ describe('Popover', () => {
       fireEvent.click(getByText(triggerButtonText))
       expect(getByText('Hello there!')).toBeTruthy()
       expect(asFragment()).toMatchSnapshot()
+    })
+
+    it('renders content with nested ThemeProviders', () => {
+      const expectedColor = 'red'
+      const { getByText } = render(
+        <ThemeProvider
+          theme={{
+            palette: {
+              primary: {
+                base: expectedColor,
+              },
+            },
+          }}
+        >
+          <Popover
+            {...popoverProps}
+            renderContent={() => <Text color='primary.base'>hello world</Text>}
+          >
+            <button>{triggerButtonText}</button>
+          </Popover>
+        </ThemeProvider>
+      )
+      fireEvent.click(getByText(triggerButtonText))
+      expect(getByText('hello world')).toHaveStyleRule('color', 'red')
     })
 
     it('clicking on close element inside popover, closes popover', () => {
@@ -174,27 +198,27 @@ describe('Popover', () => {
 
   describe('colors', () => {
     it('renders with background.lightest color as default', () => {
-      const { getByText, getByRole } = render(
+      const { getByText, getByTestId } = render(
         <Popover {...popoverProps}>
           <Button>{triggerButtonText}</Button>
         </Popover>
       )
 
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByRole('dialog').firstChild.firstChild).toHaveStyle({
+      expect(getByTestId('dialog-content')).toHaveStyle({
         'background-color': '#FFF',
       })
     })
 
     it('renders with error color as default', () => {
-      const { getByText, getByRole } = render(
+      const { getByText, getByTestId } = render(
         <Popover {...popoverProps} color='error'>
           <Button>{triggerButtonText}</Button>
         </Popover>
       )
 
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByRole('dialog').firstChild.firstChild).toHaveStyle({
+      expect(getByTestId('dialog-content')).toHaveStyle({
         'background-color': '#C00',
       })
     })

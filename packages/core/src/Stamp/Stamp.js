@@ -13,7 +13,8 @@ import {
 const sizes = {
   small: css`
     ${themeGet('textStyles.small')}
-
+    line-height: ${themeGet('lineHeights.display')};
+    min-height: 20px;
     & > svg {
       width: 12px;
       height: 12px;
@@ -22,7 +23,7 @@ const sizes = {
   medium: css`
     ${themeGet('textStyles.display0')}
     line-height: ${themeGet('lineHeights.standard')};
-
+    min-height: 24px;
     & > svg {
       width: 14px;
       height: 14px;
@@ -66,8 +67,8 @@ const Stamp = styled.div`
   color: ${getPaletteColor('base')};
 
   ${space} ${fontSize};
-  ${applySizes(sizes)}
-  ${applyVariations('Stamp', variations)}
+  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
+  ${applyVariations('Stamp', variations)};
 `
 
 Stamp.displayName = 'Stamp'
@@ -75,7 +76,10 @@ Stamp.displayName = 'Stamp'
 Stamp.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
-  size: PropTypes.oneOf(Object.keys(sizes)),
+  size: PropTypes.oneOfType([
+    PropTypes.oneOf(Object.keys(sizes)),
+    PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),
+  ]),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),

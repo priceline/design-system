@@ -1,14 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RatingBadge renders 1`] = `
-.c1 {
+.c0 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: #f68013;
   color: #fff;
-}
-
-.c0 {
   display: inline-block;
   line-height: 1.5;
   font-weight: 700;
@@ -16,7 +13,7 @@ exports[`RatingBadge renders 1`] = `
 }
 
 <div
-  className="c0 c1"
+  className="c0"
   color="white"
   fontWeight="bold"
 />

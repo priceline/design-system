@@ -191,11 +191,9 @@ const StyledBox = styled(Box)`
 `
 
 const SimpleTextContent = () => (
-  <ThemeProvider>
-    <Box p={2}>
-      <Text textAlign='center'>Hello world!</Text>
-    </Box>
-  </ThemeProvider>
+  <Box p={2}>
+    <Text textAlign='center'>Hello world!</Text>
+  </Box>
 )
 
 const Playground = ({ children }) => (
@@ -213,83 +211,104 @@ const Playground = ({ children }) => (
 )
 
 const InnerContent = ({ handleClose }) => (
-  <ThemeProvider>
-    <Box p={4}>
-      <Absolute color='primary' top={25} right={25}>
-        <CloseButton onClick={handleClose} />
-      </Absolute>
-      <BackgroundImage
-        width='100%'
-        height='100px'
-        image='https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
-      />
-      <Text theme pb={3} pt={3} fontSize={16} textAlign='center' bold>
-        Do you accept the terms and conditions?
-      </Text>
-      <Flex justifyContent='center'>
-        <Button color='secondary' onClick={handleClose} mr={2}>
-          Agree
-        </Button>
-        <Button variation='outline' onClick={handleClose} ml={2}>
-          Close
-        </Button>
-      </Flex>
-    </Box>
-  </ThemeProvider>
+  <Box p={4}>
+    <Absolute color='primary' top={25} right={25}>
+      <CloseButton onClick={handleClose} />
+    </Absolute>
+    <BackgroundImage
+      width='100%'
+      height='100px'
+      image='https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
+    />
+    <Text theme pb={3} pt={3} fontSize={16} textAlign='center' bold>
+      Do you accept the terms and conditions?
+    </Text>
+    <Flex justifyContent='center'>
+      <Button color='secondary' onClick={handleClose} mr={2}>
+        Agree
+      </Button>
+      <Button variation='outline' onClick={handleClose} ml={2}>
+        Close
+      </Button>
+    </Flex>
+  </Box>
 )
 
 const PriceGuidanceContent = ({ handleClose }) => (
-  <ThemeProvider>
-    <Box p={3}>
-      <Box p={2} pt={0} pb={3}>
-        <Flex>
-          <GraphIcon color='primary' size='32px' mr='2' />
-          <Flex flexDirection='column'>
-            <Text color='primary' fontSize='24px' bold>
-              Price Guidance
-            </Text>
-            <Text color='text.light' fontSize='12px'>
-              Lorem ipsum dolor sit amet, consect etur adipiscing elit. Mauris
-              nisl sapi
-            </Text>
-          </Flex>
+  <Box p={3}>
+    <Box p={2} pt={0} pb={3}>
+      <Flex>
+        <GraphIcon color='primary' size='32px' mr='2' />
+        <Flex flexDirection='column'>
+          <Text color='primary' fontSize='24px' bold>
+            Price Guidance
+          </Text>
+          <Text color='text.light' fontSize='12px'>
+            Lorem ipsum dolor sit amet, consect etur adipiscing elit. Mauris
+            nisl sapi
+          </Text>
         </Flex>
-      </Box>
-      <StyledBox p={2} pb={0} pt={3}>
-        <Flex>
-          <PinIcon color='text.base' size='32px' mr='2' />
-          <Flex flexDirection='column'>
-            <Text color='text.base' fontSize='14px' bold>
-              New York City
-            </Text>
-            <Text color='text.light' fontSize='12px'>
-              Wed. Jan 24 - Fri. Jan 25
-            </Text>
-          </Flex>
-        </Flex>
-        <Box pt={2}>
-          <Component
-            initialState={{ value: [32, 64] }}
-            // eslint-disable-next-line react/no-children-prop
-            children={({ state, setState }) => (
-              <Slider
-                value={state.value}
-                onChange={(value) => {
-                  setState({ value })
-                }}
-              />
-            )}
-          />
-        </Box>
-        <Flex pt={4} pb={2} justifyContent='center'>
-          <Button color='secondary' mr={2}>
-            Book Now
-          </Button>
-          <Button variation='outline' onClick={handleClose} ml={2}>
-            Dismiss
-          </Button>
-        </Flex>
-      </StyledBox>
+      </Flex>
     </Box>
-  </ThemeProvider>
+    <StyledBox p={2} pb={0} pt={3}>
+      <Flex>
+        <PinIcon color='text.base' size='32px' mr='2' />
+        <Flex flexDirection='column'>
+          <Text color='text.base' fontSize='14px' bold>
+            New York City
+          </Text>
+          <Text color='text.light' fontSize='12px'>
+            Wed. Jan 24 - Fri. Jan 25
+          </Text>
+        </Flex>
+      </Flex>
+      <Box pt={2}>
+        <Component
+          initialState={{ value: [32, 64] }}
+          // eslint-disable-next-line react/no-children-prop
+          children={({ state, setState }) => (
+            <Slider
+              value={state.value}
+              onChange={(value) => {
+                setState({ value })
+              }}
+            />
+          )}
+        />
+      </Box>
+      <Flex pt={4} pb={2} justifyContent='center'>
+        <Button color='secondary' mr={2}>
+          Book Now
+        </Button>
+        <Button variation='outline' onClick={handleClose} ml={2}>
+          Dismiss
+        </Button>
+      </Flex>
+    </StyledBox>
+  </Box>
 )
+
+export const PassesThemeToContent = () => {
+  return (
+    <ThemeProvider
+      theme={{
+        palette: {
+          primary: {
+            base: 'red',
+          },
+        },
+      }}
+    >
+      <Popover
+        renderContent={InnerContent}
+        placement='bottom'
+        ariaLabel='Bottom Popover'
+        idx={2}
+        width={400}
+        isOpen
+      >
+        <Text color={'primary.base'}>hello world</Text>
+      </Popover>
+    </ThemeProvider>
+  )
+}

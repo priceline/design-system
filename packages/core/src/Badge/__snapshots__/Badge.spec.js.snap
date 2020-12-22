@@ -24,6 +24,7 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -56,6 +57,7 @@ exports[`Badge bg green sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -88,6 +90,7 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -120,6 +123,7 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -152,6 +156,7 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -184,6 +189,7 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -216,6 +222,7 @@ exports[`Badge bg red sets background-color and color 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -247,6 +254,7 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -279,6 +287,7 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -311,6 +320,7 @@ exports[`Badge renders 1`] = `
   -ms-letter-spacing: 0.025em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 
 <div
@@ -337,6 +347,7 @@ exports[`Badge renders small 1`] = `
   font-size: 10px;
   font-weight: 700;
   line-height: 1.4;
+  line-height: 1.25;
 }
 
 <div

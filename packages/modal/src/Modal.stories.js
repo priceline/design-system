@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { storiesOf } from '@storybook/react'
 import { boolean, withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
@@ -62,70 +61,93 @@ class ModalStory extends React.Component {
   }
 }
 
-storiesOf('pcln-modal/Modal', module)
-  .addDecorator(withKnobs)
-  .add('Raw', () => (
-    <ModalStory width={['100px', '200px', '500px']} disableCloseButton />
-  ))
-  .add('With SmallModalHeader', () => (
-    <ModalStory
-      header={<SmallModalHeader />}
-      width={['80vw', '400px', '500px']}
-    />
-  ))
-  .add('With ModalHeader (and ScrollLock!)', () => {
-    // Generate content to demonstrate a scrollable <body>
-    const contentLines = [...Array(100).keys()]
+export default {
+  title: 'pcln-modal/Modal',
+  decorators: [withKnobs],
+  component: Modal,
+}
 
-    return (
-      <div>
-        <h1>Scroll down to open modal</h1>
-        {contentLines.map((i, idx) => (
-          <div key={idx}>Line {idx}</div>
-        ))}
-        <ModalStory
-          header={
-            <ModalHeader
-              title='Modal title'
-              onClose={action('Modal closed!')}
-            />
-          }
-          height={['90vh', '460px', '560px']}
-          width={['80vw', '400px', '500px']}
-          lock={true}
-          fullScreen={boolean('fullScreen', false)}
-        />
-      </div>
-    )
-  })
-  .add('With Overflow', () => (
-    <ModalStory
-      header={<SmallModalHeader />}
-      width={['80vw', '400px', '500px']}
-      enableOverflow
-    />
-  ))
-  .add('With imagemode and colorful', () => (
-    <ModalStory
-      bg='orange'
-      header={<SmallModalHeader />}
-      width={['100px', '200px', '500px']}
-      imgMode
-      disableCloseButton
-    />
-  ))
-  .add('With custom animation', () => (
-    <ModalStory
-      header={<SmallModalHeader />}
-      width={['100px', '200px', '500px']}
-      dialogAnimation={CUSTOM_ANIMATION}
-      verticalAlignment='top'
-    />
-  ))
-  .add('Zero Timeout', () => (
-    <ModalStory
-      disableCloseButton
-      width={['100px', '200px', '500px']}
-      timeout={0}
-    />
-  ))
+export const Raw = () => (
+  <ModalStory width={['100px', '200px', '500px']} disableCloseButton />
+)
+
+export const WithSmallModalHeader = () => (
+  <ModalStory
+    header={<SmallModalHeader />}
+    width={['80vw', '400px', '500px']}
+  />
+)
+
+WithSmallModalHeader.story = {
+  name: 'With SmallModalHeader',
+}
+
+export const WithModalHeaderAndScrollLock = () => {
+  // Generate content to demonstrate a scrollable <body>
+  const contentLines = [...Array(100).keys()]
+
+  return (
+    <div>
+      <h1>Scroll down to open modal</h1>
+      {contentLines.map((i, idx) => (
+        <div key={idx}>Line {idx}</div>
+      ))}
+      <ModalStory
+        header={
+          <ModalHeader title='Modal title' onClose={action('Modal closed!')} />
+        }
+        height={['90vh', '460px', '560px']}
+        width={['80vw', '400px', '500px']}
+        lock={true}
+        fullScreen={boolean('fullScreen', false)}
+      />
+    </div>
+  )
+}
+
+WithModalHeaderAndScrollLock.story = {
+  name: 'With ModalHeader (and ScrollLock!)',
+}
+
+export const WithOverflow = () => (
+  <ModalStory
+    header={<SmallModalHeader />}
+    width={['80vw', '400px', '500px']}
+    enableOverflow
+  />
+)
+
+export const WithImagemodeAndColorful = () => (
+  <ModalStory
+    bg='orange'
+    header={<SmallModalHeader />}
+    width={['100px', '200px', '500px']}
+    imgMode
+    disableCloseButton
+  />
+)
+
+WithImagemodeAndColorful.story = {
+  name: 'With imagemode and colorful',
+}
+
+export const WithCustomAnimation = () => (
+  <ModalStory
+    header={<SmallModalHeader />}
+    width={['100px', '200px', '500px']}
+    dialogAnimation={CUSTOM_ANIMATION}
+    verticalAlignment='top'
+  />
+)
+
+WithCustomAnimation.story = {
+  name: 'With custom animation',
+}
+
+export const ZeroTimeout = () => (
+  <ModalStory
+    disableCloseButton
+    width={['100px', '200px', '500px']}
+    timeout={0}
+  />
+)

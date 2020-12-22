@@ -1,72 +1,81 @@
 import React from 'react'
 import styled from 'styled-components'
-import { storiesOf } from '@storybook/react'
 
 import { Flex, Box, Text, Image, Heading, getPaletteColor } from '..'
 import { Hotels as HotelsIcon } from 'pcln-icons'
 
-storiesOf('Layout Examples', module)
-  .add('Grid', () => (
-    <Box p={4}>
-      <Flex wrap mx={-3}>
-        <Box width={[1, 1 / 2]} px={3} mb={4}>
-          <Box bg='background.light'>
-            <Text>Hello</Text>
-          </Box>
+export default {
+  title: 'Layout Examples',
+}
+
+export const Grid = () => (
+  <Box p={4}>
+    <Flex wrap mx={-3}>
+      <Box width={[1, 1 / 2]} px={3} mb={4}>
+        <Box bg='background.light'>
+          <Text>Hello</Text>
         </Box>
-        <Box width={[1, 1 / 2]} px={3} mb={4}>
-          <Box bg='background.light'>
-            <Text>Hello</Text>
-          </Box>
+      </Box>
+      <Box width={[1, 1 / 2]} px={3} mb={4}>
+        <Box bg='background.light'>
+          <Text>Hello</Text>
         </Box>
-      </Flex>
+      </Box>
+    </Flex>
+  </Box>
+)
+
+export const TwoColumn = () => (
+  <Flex>
+    <Box px={3} width={1 / 4}>
+      <Box
+        bg='background.light'
+        style={{
+          minHeight: '50vh',
+        }}
+      >
+        <Text>Hello</Text>
+      </Box>
     </Box>
-  ))
-  .add('Two-column', () => (
-    <Flex>
-      <Box px={3} width={1 / 4}>
-        <Box
-          bg='background.light'
-          style={{
-            minHeight: '50vh',
-          }}
-        >
-          <Text>Hello</Text>
-        </Box>
+    <Box px={3} width={3 / 4}>
+      <Box
+        bg='background.light'
+        style={{
+          minHeight: '50vh',
+        }}
+      >
+        <Text>Hello</Text>
       </Box>
-      <Box px={3} width={3 / 4}>
-        <Box
-          bg='background.light'
-          style={{
-            minHeight: '50vh',
-          }}
-        >
-          <Text>Hello</Text>
-        </Box>
+    </Box>
+  </Flex>
+)
+
+TwoColumn.story = {
+  name: 'Two-column',
+}
+
+export const Navbar = () => (
+  <Flex p={2} alignItems='center' color='primary'>
+    <HotelsIcon mr={2} />
+    <Text bold mx={2}>
+      Hello
+    </Text>
+    <Text mx={2}>Navbar</Text>
+    <Text ml='auto' mr={2}>
+      Right Side
+    </Text>
+  </Flex>
+)
+
+export const TiledCards = () => (
+  <Flex wrap>
+    {cards.map((card) => (
+      <Box key={card.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
+        <Card {...card} />
       </Box>
-    </Flex>
-  ))
-  .add('Navbar', () => (
-    <Flex p={2} alignItems='center' color='primary'>
-      <HotelsIcon mr={2} />
-      <Text bold mx={2}>
-        Hello
-      </Text>
-      <Text mx={2}>Navbar</Text>
-      <Text ml='auto' mr={2}>
-        Right Side
-      </Text>
-    </Flex>
-  ))
-  .add('Tiled Cards', () => (
-    <Flex wrap>
-      {cards.map((card) => (
-        <Box key={card.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
-          <Card {...card} />
-        </Box>
-      ))}
-    </Flex>
-  ))
+    ))}
+  </Flex>
+)
 
 const Border = styled(Box)`
   border: 1px solid ${getPaletteColor('background.base')};

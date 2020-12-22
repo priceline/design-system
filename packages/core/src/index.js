@@ -8,6 +8,7 @@ export { Box } from './Box'
 export { Breadcrumbs } from './Breadcrumbs'
 export { Button } from './Button'
 export { Card } from './Card'
+export { Chip } from './Chip'
 export { CloseButton } from './CloseButton'
 export { Container } from './Container'
 export { Divider } from './Divider'
@@ -31,6 +32,8 @@ export { Radio } from './Radio'
 export { RatingBadge } from './RatingBadge'
 export { Relative } from './Relative'
 export { Select } from './Select'
+export { ShadowEffect } from './ShadowEffect'
+export { ShadowOverlay } from './ShadowEffect'
 export { SrOnly } from './SrOnly'
 export { Stamp } from './Stamp'
 export { Stepper } from './Stepper'
@@ -45,6 +48,7 @@ export { theme } from './theme'
 export { ThemeProvider } from './ThemeProvider'
 
 export {
+  applySizes,
   borders,
   color,
   deprecatedPropType,
@@ -53,7 +57,6 @@ export {
   getTextColorOn,
   hasPaletteColor,
   createTheme,
-  getSCMigrationRef,
 } from './utils'
 
 export * from './theme'

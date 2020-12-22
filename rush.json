@@ -358,6 +358,14 @@
   // "hotfixChangeEnabled": false,
 
   "projects": [
+
+    {
+      "packageName": "pcln-menu",
+      "projectFolder": "packages/menu",
+      "reviewCategory": "packages",
+      "shouldPublish": true
+    },
+
     // Published Design System packages
     {
       "packageName": "pcln-design-system",
@@ -412,6 +420,11 @@
     {
       "packageName": "@priceline/eslint-config",
       "projectFolder": "tools/eslint-config",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@priceline/create-release-notes",
+      "projectFolder": "tools/create-release-notes",
       "shouldPublish": false
     },
     {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { Box, Truncate } from '..'
 
 const loripsum = `
@@ -14,10 +13,15 @@ Equidem, sed audistine modo de Carneade? Confecta res esset. Audeo dicere, inqui
 Duo Reges: constructio interrete. Mihi enim satis est, ipsis non satis. Si enim ita est, vide ne facinus facias, cum mori suadeas. Illud dico, ea, quae dicat, praeclare inter se cohaerere. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.
 `
 
-storiesOf('Truncate', module)
-  .add('Without Container', () => <Truncate width={50}>{loripsum}</Truncate>)
-  .add('With Container', () => (
-    <Box width={3 / 10}>
-      <Truncate>{loripsum}</Truncate>
-    </Box>
-  ))
+export default {
+  title: 'Truncate',
+  component: Truncate,
+}
+
+export const WithoutContainer = () => <Truncate width={50}>{loripsum}</Truncate>
+
+export const WithContainer = () => (
+  <Box width={3 / 10}>
+    <Truncate>{loripsum}</Truncate>
+  </Box>
+)

@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders default 1`] = `
-.c2 {
-  padding: 8px;
-  background-color: #007aff;
-  color: #fff;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,7 +8,7 @@ exports[`Avatar renders default 1`] = `
   display: flex;
 }
 
-.c4 {
+.c2 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -26,6 +20,13 @@ exports[`Avatar renders default 1`] = `
 }
 
 .c1 {
+  padding: 8px;
+  background-color: #007aff;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -42,15 +43,15 @@ exports[`Avatar renders default 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 >
   <div
-    className="c1 c0 c2"
+    className="c1"
     color="primary"
   >
     <svg
       aria-hidden={true}
-      className="c3 c4"
+      className="c2 c3"
       fill="currentcolor"
       focusable={false}
       height={24}
@@ -68,12 +69,6 @@ exports[`Avatar renders default 1`] = `
 `;
 
 exports[`Avatar renders initials 1`] = `
-.c2 {
-  padding: 8px;
-  background-color: #007aff;
-  color: #fff;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -81,11 +76,18 @@ exports[`Avatar renders initials 1`] = `
   display: flex;
 }
 
-.c3 {
+.c2 {
   font-size: 14px;
 }
 
 .c1 {
+  padding: 8px;
+  background-color: #007aff;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -102,14 +104,14 @@ exports[`Avatar renders initials 1`] = `
 }
 
 <div
-  className="c0 "
+  className="c0"
 >
   <div
-    className="c1 c0 c2"
+    className="c1"
     color="primary"
   >
     <div
-      className="c3"
+      className="c2"
       fontSize={1}
     >
       WS
@@ -120,24 +122,15 @@ exports[`Avatar renders initials 1`] = `
 
 exports[`Avatar renders mr elon 1`] = `
 <DocumentFragment>
-  .c3 {
-  padding: 8px;
-  background-color: #007aff;
-  color: #fff;
-}
-
-.c5 {
-  margin-left: 16px;
-}
-
-.c1 {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 {
+.c3 {
+  margin-left: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,16 +144,23 @@ exports[`Avatar renders mr elon 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c4 {
   margin: 0;
 }
 
-.c7 {
+.c5 {
   color: #4f6f8f;
   font-size: 12px;
 }
 
 .c2 {
+  padding: 8px;
+  background-color: #007aff;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -190,24 +190,23 @@ exports[`Avatar renders mr elon 1`] = `
     class="c0"
   >
     <div
-      class="c1 "
+      class="c1"
     >
       <div
-        class="c2 c1 c3"
+        class="c2"
         color="primary"
         src="https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg"
       />
       <div
-        class="c4 c5"
+        class="c3"
       >
-        <div
-          as="h5"
-          class="c6"
+        <h5
+          class="c4"
         >
           Not Elon Musk
-        </div>
+        </h5>
         <div
-          class="c7"
+          class="c5"
           color="text.light"
           font-size="0"
         >

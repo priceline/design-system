@@ -1,6 +1,6 @@
-import { createTextStyles, createColorStyles } from '../utils'
-
-const createMediaQuery = (n) => `@media screen and (min-width:${n})`
+import { createTextStyles } from '../utils/createTextStyles'
+import { createColorStyles } from '../utils/createColorStyles'
+import { createMediaQueries } from '../utils/createMediaQueries'
 
 const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
@@ -14,7 +14,7 @@ const addAliases = (arr, aliases) =>
 
 export const breakpoints = [32, 40, 48, 64, 80].map((n) => n + 'em')
 
-export const mediaQueries = breakpoints.map(createMediaQuery)
+export const mediaQueries = createMediaQueries(breakpoints)
 
 const aliases = ['sm', 'md', 'lg', 'xl', 'xxl']
 

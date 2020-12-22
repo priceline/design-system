@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { Box, Flex, Text, createTheme } from '..'
 
 const theme = createTheme()
@@ -28,62 +27,62 @@ const ColorCard = (props) => (
   </Box>
 )
 
-storiesOf('Color', module)
-  .add('Colors', () => (
-    <div>
-      <Box p={3}>
-        <h1>Colors</h1>
-      </Box>
+export default {
+  title: 'Color',
+}
+
+export const Colors = () => (
+  <div>
+    <Box p={3}>
+      <h1>Colors</h1>
+    </Box>
+    <Flex wrap>
+      {next.map((color) => (
+        <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
+          <ColorCard name={color.key} color={color.value} />
+        </Box>
+      ))}
+    </Flex>
+  </div>
+)
+
+export const Palette = () => (
+  <div>
+    <Box p={3}>
+      <h1>Palette</h1>
+      <p>The palette allows you to change the color of components.</p>
       <Flex wrap>
-        {next.map((color) => (
-          <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
-            <ColorCard name={color.key} color={color.value} />
-          </Box>
-        ))}
+        {palette.map((pal) => {
+          if (typeof pal.value === 'object') {
+            return (
+              <div style={{ width: '100%' }}>
+                <h4>{pal.key}</h4>
+                <Flex wrap>
+                  {Object.keys(pal.value).map((key) => (
+                    <Box
+                      key={key}
+                      p={3}
+                      width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
+                    >
+                      <ColorCard
+                        name={key}
+                        color={theme.palette[pal.key][key]}
+                      />
+                    </Box>
+                  ))}
+                </Flex>
+                <hr />
+              </div>
+            )
+          } else {
+            return (
+              <Box key={pal.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
+                <ColorCard name={pal.key} color={pal.value} />
+              </Box>
+            )
+          }
+        })}
       </Flex>
-    </div>
-  ))
-  .add('Palette', () => (
-    <div>
-      <Box p={3}>
-        <h1>Palette</h1>
-        <p>The palette allows you to change the color of components.</p>
-        <Flex wrap>
-          {palette.map((pal) => {
-            if (typeof pal.value === 'object') {
-              return (
-                <div style={{ width: '100%' }}>
-                  <h4>{pal.key}</h4>
-                  <Flex wrap>
-                    {Object.keys(pal.value).map((key) => (
-                      <Box
-                        key={key}
-                        p={3}
-                        width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
-                      >
-                        <ColorCard
-                          name={key}
-                          color={theme.palette[pal.key][key]}
-                        />
-                      </Box>
-                    ))}
-                  </Flex>
-                  <hr />
-                </div>
-              )
-            } else {
-              return (
-                <Box
-                  key={pal.key}
-                  p={3}
-                  width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
-                >
-                  <ColorCard name={pal.key} color={pal.value} />
-                </Box>
-              )
-            }
-          })}
-        </Flex>
-      </Box>
-    </div>
-  ))
+    </Box>
+  </div>
+)

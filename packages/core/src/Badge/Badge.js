@@ -57,9 +57,11 @@ const type = (props) => {
 const sizes = {
   small: css`
     ${themeGet('textStyles.small')}
+    line-height: ${themeGet('lineHeights.display')};
   `,
   medium: css`
     ${themeGet('textStyles.display0')}
+    line-height: ${themeGet('lineHeights.standard')};
   `,
 }
 
@@ -69,8 +71,8 @@ const Badge = styled.div`
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${space} ${type} ${color};
-  ${applySizes(sizes)}
-  ${applyVariations('Badge')}
+  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
+  ${applyVariations('Badge')};
 `
 
 Badge.displayName = 'Badge'

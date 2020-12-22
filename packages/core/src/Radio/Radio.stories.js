@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
 
@@ -58,36 +57,54 @@ class MockForm extends React.Component {
   }
 }
 
-storiesOf('Radio', module)
-  .add('3 states', () => (
-    <div onChange={action('changed')}>
-      <Label fontSize='14px'>
-        <Radio checked />
-        <LabelText>selected</LabelText>
-      </Label>
-      <Label fontSize='14px'>
-        <Radio />
-        <LabelText>not selected</LabelText>
-      </Label>
-      <Label fontSize='14px'>
-        <Radio disabled />
-        <LabelText>disabled</LabelText>
-      </Label>
-    </div>
-  ))
-  .add('Mock form', () => <MockForm />)
-  .add('Forward refs', () => (
-    <ForwardRefDemo
-      refChild={(dsRef) => (
-        <>
-          <Label fontSize='14px'>
-            <Radio checked dsRef={dsRef} />
-            <LabelText>selected</LabelText>
-          </Label>
-          <Button onClick={() => dsRef.current.focus()} mt={4}>
-            Click to focus radio via ref
-          </Button>
-        </>
-      )}
-    />
-  ))
+export default {
+  title: 'Radio',
+  component: Radio,
+}
+
+export const _3States = () => (
+  <div onChange={action('changed')}>
+    <Label fontSize='14px'>
+      <Radio checked />
+      <LabelText>selected</LabelText>
+    </Label>
+    <Label fontSize='14px'>
+      <Radio />
+      <LabelText>not selected</LabelText>
+    </Label>
+    <Label fontSize='14px'>
+      <Radio disabled />
+      <LabelText>disabled</LabelText>
+    </Label>
+  </div>
+)
+
+_3States.story = {
+  name: '3 states',
+}
+
+export const _MockForm = () => <MockForm />
+
+_MockForm.story = {
+  name: 'Mock form',
+}
+
+export const ForwardRefs = () => (
+  <ForwardRefDemo
+    refChild={(dsRef) => (
+      <>
+        <Label fontSize='14px'>
+          <Radio checked dsRef={dsRef} />
+          <LabelText>selected</LabelText>
+        </Label>
+        <Button onClick={() => dsRef.current.focus()} mt={4}>
+          Click to focus radio via ref
+        </Button>
+      </>
+    )}
+  />
+)
+
+ForwardRefs.story = {
+  name: 'Forward refs',
+}

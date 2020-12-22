@@ -2,6 +2,168 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.2.1",
+      "tag": "pcln-design-system_v4.2.1",
+      "date": "Tue, 15 Dec 2020 01:52:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix error when using Icon from pcln-icons package with IconField",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "7287d745fcc4e43b06b89bbe3453116e8996ad4f"
+          }
+        ]
+      }
+    },
+    {
+      "version": "4.2.0",
+      "tag": "pcln-design-system_v4.2.0",
+      "date": "Fri, 11 Dec 2020 01:11:24 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add ShadowOverlay component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "16d23f7d535dc6b11f933ffb40f573ad94e19798"
+          }
+        ]
+      }
+    },
+    {
+      "version": "4.1.2",
+      "tag": "pcln-design-system_v4.1.2",
+      "date": "Fri, 04 Dec 2020 20:01:32 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Forward aria-label prop to Button and components that extend Button",
+            "author": "Craig Palermo <email@craigp.me>",
+            "commit": "76488304d488ffd757fe6fbeb54b5c1e978e8ef1"
+          }
+        ]
+      }
+    },
+    {
+      "version": "4.1.1",
+      "tag": "pcln-design-system_v4.1.1",
+      "date": "Fri, 04 Dec 2020 01:33:19 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update createTheme to overwrite MQ based on breakpoints + update applyStyles to read theme from context",
+            "author": "Daniel Giraldo <daniel.giraldo@priceline.com>",
+            "commit": "83e0578c04856e348c3b76ed4142ac551e4b9834"
+          }
+        ]
+      }
+    },
+    {
+      "version": "4.1.0",
+      "tag": "pcln-design-system_v4.1.0",
+      "date": "Wed, 02 Dec 2020 18:39:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix prop type warning for stamp",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "52a66f260c2331d29e1be5f45e140bcc8184d7b9"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Export applySizes",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "52a66f260c2331d29e1be5f45e140bcc8184d7b9"
+          }
+        ]
+      }
+    },
+    {
+      "version": "4.0.0",
+      "tag": "pcln-design-system_v4.0.0",
+      "date": "Tue, 17 Nov 2020 21:35:08 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "React floor bump to 16.10",
+            "author": "Dalonzo, Steven <Steven.Dalonzo@priceline.com>",
+            "commit": "6b7189029b6d7d928ee11e4e988262cc665e3f98"
+          },
+          {
+            "comment": "use styled-components v4 as dev and peer dependency",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "0dc482906d8d580b19da1dec516a440cd43990f6"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Remove usages of mapProps and getSCMigrationRef",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a1df40c4378a31475ea0efdf585bb3ff7382daf9"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `4.0.0-beta.1` to `4.0.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "3.7.1",
+      "tag": "pcln-design-system_v3.7.1",
+      "date": "Fri, 13 Nov 2020 20:04:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add font-weight bold back as a default style",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "ad001d5bc7bd677547031728edfa5c28ab509c5b"
+          }
+        ]
+      }
+    },
+    {
+      "version": "3.7.0",
+      "tag": "pcln-design-system_v3.7.0",
+      "date": "Mon, 09 Nov 2020 20:23:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "New Chip Component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "fd6b9570e55a4eea5b8aff75eea59707a1305502"
+          },
+          {
+            "comment": "allow size prop in Stamp to accept an array",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "9da981376ffc2aad47475e46e9a4bcb916a2d334"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "update line height for Stamp and Badge",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "e59e96b2103a76f0b1a8380f5ea315a2d19db37d"
+          }
+        ]
+      }
+    },
+    {
+      "version": "3.6.4",
+      "tag": "pcln-design-system_v3.6.4",
+      "date": "Fri, 30 Oct 2020 15:58:40 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove isRequired from Checkbox's onChange",
+            "author": "Benjamin Chen <benjaminlchen@gmail.com>",
+            "commit": "2ad97fd91911cac9e317282612c6401d388fce5f"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.6.3",
       "tag": "pcln-design-system_v3.6.3",
       "date": "Fri, 23 Oct 2020 16:39:00 GMT",

@@ -1,11 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import hoistStatics from 'hoist-non-react-statics'
 import { themeGet } from 'styled-system'
 import { css } from 'styled-components'
-
-export const mapProps = (map) => (Component) =>
-  hoistStatics((props) => <Component {...map(props)} />, Component)
+import { mediaQueries } from '../theme/theme.js'
 
 // Use this to mark props as deprecated
 export const deprecatedPropType = (replacement) => (props, propName) => {
@@ -109,22 +104,63 @@ export const getContrastRatio = (colorA, colorB) => {
 }
 
 /**
+ *
+ * @param {*} array An array of sizes, ex: ['small', null, null, null, null, 'medium']
+ * @param {*} length A number: this will be used to slice the above array
+ *
+ * @returns This function's purpose is to determine which item in the provided array to return at each breakpoint
+ * 1) takes in an array, splits the array at the given length and creates a new smaller array
+ * 2) that new smaller array is then passed into a reduceRight function to determine which value to be returned
+ *  reduceRight is used so that the reduce function reads from right to left
+ */
+export const getBreakpointSize = (array, length) => {
+  const filteredArray = array.slice(0, length)
+  return filteredArray.reduceRight((carry, item) => {
+    return !carry ? item : carry
+  }, null)
+}
+
+/**
  * Applies the selected size styles to a styled component.
+ * if size is a string, it will pass that string into the sizes object to return the correct css
+ * if size is an array, it will determine the current screen size and then utilize the getBreakpointSize
+ * helper to determine the css to return from the sizes object
  *
  * @param {Object} sizes An object of size styles
  *
  * @returns {array}
  */
-export const applySizes = (sizes = null, defaultSize = 'medium') => ({
-  size,
-}) => {
-  return (
-    sizes &&
-    typeof size === 'string' &&
-    css`
+
+export const applySizes = (
+  sizes = null,
+  defaultSize = 'medium',
+  mediaQueriesOptions = mediaQueries
+) => ({ size }) => {
+  if (sizes && typeof size === 'string') {
+    return css`
       ${sizes[size] || sizes[defaultSize] || ''}
     `
-  )
+  }
+  if (sizes && Array.isArray(size)) {
+    return css`
+      ${sizes[getBreakpointSize(size, 1)]};
+      ${mediaQueriesOptions.sm} {
+        ${sizes[getBreakpointSize(size, 2)]};
+      }
+      ${mediaQueriesOptions.md} {
+        ${sizes[getBreakpointSize(size, 3)]};
+      }
+      ${mediaQueriesOptions.lg} {
+        ${sizes[getBreakpointSize(size, 4)]};
+      }
+      ${mediaQueriesOptions.xl} {
+        ${sizes[getBreakpointSize(size, 5)]};
+      }
+      ${mediaQueriesOptions.xxl} {
+        ${sizes[getBreakpointSize(size, 6)]};
+      }
+    `
+  }
 }
 
 /**
@@ -286,16 +322,3 @@ export const borders = (props) => {
     },
   }
 }
-
-/**
- * Since PropTypes doesn't ship with a type for React refs, we define one here to
- * reference throughout the project to describe custom props that expect a ref (e.g. dsRef)
- *
- * Source: https://stackoverflow.com/a/51127130
- */
-export const refPropType = PropTypes.oneOfType([
-  // Either a function
-  PropTypes.func,
-  // Or the instance of any prop type on the current property
-  PropTypes.shape({ current: PropTypes.any }),
-])
