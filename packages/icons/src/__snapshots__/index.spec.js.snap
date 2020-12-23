@@ -3,7 +3,7 @@
 exports[`renders Ac 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jvlMsP"
+  className="sc-bdnylx izwBNV sc-gtssRu bIHJgy"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -21,7 +21,7 @@ exports[`renders Ac 1`] = `
 exports[`renders Accessible 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jLPIAx"
+  className="sc-bdnylx izwBNV sc-dlnjPT dKewJa"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -39,7 +39,7 @@ exports[`renders Accessible 1`] = `
 exports[`renders AddAlarm 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL evoFYU"
+  className="sc-bdnylx izwBNV sc-hKFyIo bJRLVs"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -58,7 +58,7 @@ exports[`renders AddAlarm 1`] = `
 exports[`renders Airplane 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eJUBcr"
+  className="sc-bdnylx izwBNV sc-eCApGN enGHw"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -76,7 +76,7 @@ exports[`renders Airplane 1`] = `
 exports[`renders Arrival 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL imWHNL"
+  className="sc-bdnylx izwBNV sc-jSFkmK hQWxbc"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -94,7 +94,7 @@ exports[`renders Arrival 1`] = `
 exports[`renders ArrowDown 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bXjywp"
+  className="sc-bdnylx izwBNV sc-gKAblj dcgzRr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -112,7 +112,7 @@ exports[`renders ArrowDown 1`] = `
 exports[`renders ArrowLeft 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL izRhDd"
+  className="sc-bdnylx izwBNV sc-iCoHVE UHxho"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -130,7 +130,7 @@ exports[`renders ArrowLeft 1`] = `
 exports[`renders ArrowRight 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gqsym"
+  className="sc-bdnylx izwBNV sc-fujyUd fpdGaf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -148,7 +148,7 @@ exports[`renders ArrowRight 1`] = `
 exports[`renders ArrowUp 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fKLxgS"
+  className="sc-bdnylx izwBNV sc-pNWxx dfvMOD"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -166,7 +166,7 @@ exports[`renders ArrowUp 1`] = `
 exports[`renders Attention 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kSGjXI"
+  className="sc-bdnylx izwBNV sc-jrsJCI ATQxZ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -184,7 +184,7 @@ exports[`renders Attention 1`] = `
 exports[`renders Automatic 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ehkcON"
+  className="sc-bdnylx izwBNV sc-kEqYlL fXbJqI"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -202,7 +202,7 @@ exports[`renders Automatic 1`] = `
 exports[`renders Backpack 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cPoqwx"
+  className="sc-bdnylx izwBNV sc-iqAbSa ecNEML"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -221,7 +221,7 @@ exports[`renders Backpack 1`] = `
 exports[`renders Bag 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cbwjLj"
+  className="sc-bdnylx izwBNV sc-crzoUp fiJtBj"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -239,7 +239,7 @@ exports[`renders Bag 1`] = `
 exports[`renders Beach 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hwzEEW"
+  className="sc-bdnylx izwBNV sc-dIsAE lmhPxY"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -257,7 +257,7 @@ exports[`renders Beach 1`] = `
 exports[`renders Bed 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fuYcGO"
+  className="sc-bdnylx izwBNV sc-bqGHjH iwGgII"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -275,7 +275,7 @@ exports[`renders Bed 1`] = `
 exports[`renders BedKing 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jRogSU"
+  className="sc-bdnylx izwBNV sc-ksluoS XVpoH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -294,7 +294,7 @@ exports[`renders BedKing 1`] = `
 exports[`renders BedSingle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL heSfsF"
+  className="sc-bdnylx izwBNV sc-hBMVcZ juVrvO"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -313,7 +313,7 @@ exports[`renders BedSingle 1`] = `
 exports[`renders BeenHere 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL rpyzZ"
+  className="sc-bdnylx izwBNV sc-fnVYJo igFJVA"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -332,7 +332,7 @@ exports[`renders BeenHere 1`] = `
 exports[`renders Bike 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL Drqsn"
+  className="sc-bdnylx izwBNV sc-fFSRdu LxrsS"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -351,7 +351,7 @@ exports[`renders Bike 1`] = `
 exports[`renders Bookmark 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gumNzb"
+  className="sc-bdnylx izwBNV sc-bkbjAj bpJbvQ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -370,7 +370,7 @@ exports[`renders Bookmark 1`] = `
 exports[`renders BookmarkActivated 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL lfVKae"
+  className="sc-bdnylx izwBNV sc-iemXMA epPeHn"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -389,7 +389,7 @@ exports[`renders BookmarkActivated 1`] = `
 exports[`renders BoxChecked 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jVcEAx"
+  className="sc-bdnylx izwBNV sc-dIvqjp eCHAMS"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -407,7 +407,7 @@ exports[`renders BoxChecked 1`] = `
 exports[`renders BoxEmpty 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kwSgrv"
+  className="sc-bdnylx izwBNV sc-hHEjAm hOfaJB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -425,7 +425,7 @@ exports[`renders BoxEmpty 1`] = `
 exports[`renders BoxMinus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fHMGtc"
+  className="sc-bdnylx izwBNV sc-dlMBXb kYNuqj"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -443,7 +443,7 @@ exports[`renders BoxMinus 1`] = `
 exports[`renders BoxPlus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jmzVgs"
+  className="sc-bdnylx izwBNV sc-kfYqjs cMIagq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -461,7 +461,7 @@ exports[`renders BoxPlus 1`] = `
 exports[`renders Breakfast 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cixLnu"
+  className="sc-bdnylx izwBNV sc-fKgIGh bbdeIW"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -479,7 +479,7 @@ exports[`renders Breakfast 1`] = `
 exports[`renders Broom 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL goIwUi"
+  className="sc-bdnylx izwBNV sc-bCwgka iAVOEx"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -498,7 +498,7 @@ exports[`renders Broom 1`] = `
 exports[`renders Build 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kkkAiT"
+  className="sc-bdnylx izwBNV sc-iwaifL kdQQOi"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -516,7 +516,7 @@ exports[`renders Build 1`] = `
 exports[`renders Bus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kaeVck"
+  className="sc-bdnylx izwBNV sc-cxNIbT dCxXOo"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -535,7 +535,7 @@ exports[`renders Bus 1`] = `
 exports[`renders Business 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL khHqPu"
+  className="sc-bdnylx izwBNV sc-lmgQde ghNQjU"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -553,7 +553,7 @@ exports[`renders Business 1`] = `
 exports[`renders Cake 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dnRWNe"
+  className="sc-bdnylx izwBNV sc-iJCRLp kQPnqQ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -571,7 +571,7 @@ exports[`renders Cake 1`] = `
 exports[`renders Calendar 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jPNQau"
+  className="sc-bdnylx izwBNV sc-giAqnE iZVbWX"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -589,7 +589,7 @@ exports[`renders Calendar 1`] = `
 exports[`renders CalendarCheck 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fxGqWl"
+  className="sc-bdnylx izwBNV sc-ezzayL fDNWjr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -608,7 +608,7 @@ exports[`renders CalendarCheck 1`] = `
 exports[`renders CalendarClock 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL foFlNd"
+  className="sc-bdnylx izwBNV sc-bYwzba ibArhf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -627,7 +627,7 @@ exports[`renders CalendarClock 1`] = `
 exports[`renders CarCircle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gUTxTg"
+  className="sc-bdnylx izwBNV sc-kLokih jmIRfc"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -645,7 +645,7 @@ exports[`renders CarCircle 1`] = `
 exports[`renders CarDoor 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fpGtgU"
+  className="sc-bdnylx izwBNV sc-iklIKw iefuLl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -663,7 +663,7 @@ exports[`renders CarDoor 1`] = `
 exports[`renders CarWash 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL itmzmC"
+  className="sc-bdnylx izwBNV sc-jJMGHv ijIIpu"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -682,7 +682,7 @@ exports[`renders CarWash 1`] = `
 exports[`renders CardTravel 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iKvrTo"
+  className="sc-bdnylx izwBNV sc-hiKfjK aPhyP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -701,7 +701,7 @@ exports[`renders CardTravel 1`] = `
 exports[`renders Carriage 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hgVAtz"
+  className="sc-bdnylx izwBNV sc-gXfWUo cKrAKq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -719,7 +719,7 @@ exports[`renders Carriage 1`] = `
 exports[`renders Cars 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hjPtqu"
+  className="sc-bdnylx izwBNV sc-cBoprd bxvQri"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -737,7 +737,7 @@ exports[`renders Cars 1`] = `
 exports[`renders Casino 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bXcqxb"
+  className="sc-bdnylx izwBNV sc-ciSmjq kGELYd"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -755,7 +755,7 @@ exports[`renders Casino 1`] = `
 exports[`renders ChargeStation 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jclHjt"
+  className="sc-bdnylx izwBNV sc-jcwofb gwIyXT"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -774,7 +774,7 @@ exports[`renders ChargeStation 1`] = `
 exports[`renders Chart 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dhxxtV"
+  className="sc-bdnylx izwBNV sc-carGAA dTEtYl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -792,7 +792,7 @@ exports[`renders Chart 1`] = `
 exports[`renders ChartAlt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bbCvTm"
+  className="sc-bdnylx izwBNV sc-iTVIwl dKEnUf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -811,7 +811,7 @@ exports[`renders ChartAlt 1`] = `
 exports[`renders Chat 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kuaIam"
+  className="sc-bdnylx izwBNV sc-iBzFoy iFzoIn"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -829,7 +829,7 @@ exports[`renders Chat 1`] = `
 exports[`renders ChatBubble 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cDQfaz"
+  className="sc-bdnylx izwBNV sc-efHXLn ifwaYD"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -848,7 +848,7 @@ exports[`renders ChatBubble 1`] = `
 exports[`renders Check 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ftiWfa"
+  className="sc-bdnylx izwBNV sc-cTJmaU hyQqqq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -866,7 +866,7 @@ exports[`renders Check 1`] = `
 exports[`renders Checklist 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL keWoVI"
+  className="sc-bdnylx izwBNV sc-jNnnWF huhuRf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -885,7 +885,7 @@ exports[`renders Checklist 1`] = `
 exports[`renders ChevronDown 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eTBqhq"
+  className="sc-bdnylx izwBNV sc-dPaNSN hqttXo"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -903,7 +903,7 @@ exports[`renders ChevronDown 1`] = `
 exports[`renders ChevronLeft 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dhBNHn"
+  className="sc-bdnylx izwBNV sc-bBjRzc gIABGL"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -921,7 +921,7 @@ exports[`renders ChevronLeft 1`] = `
 exports[`renders ChevronRight 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fzDXsa"
+  className="sc-bdnylx izwBNV sc-cOigif kgdXmz"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -939,7 +939,7 @@ exports[`renders ChevronRight 1`] = `
 exports[`renders ChevronUp 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jZTEXT"
+  className="sc-bdnylx izwBNV sc-ArjOu khqwmN"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -957,7 +957,7 @@ exports[`renders ChevronUp 1`] = `
 exports[`renders CityView 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gjDArn"
+  className="sc-bdnylx izwBNV sc-khIgXV bydlLd"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -975,7 +975,7 @@ exports[`renders CityView 1`] = `
 exports[`renders Clock 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jghRZC"
+  className="sc-bdnylx izwBNV sc-hTRkEk iEddQN"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -993,7 +993,7 @@ exports[`renders Clock 1`] = `
 exports[`renders Close 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cctnWZ"
+  className="sc-bdnylx izwBNV sc-jgPznn ktCJJN"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1011,7 +1011,7 @@ exports[`renders Close 1`] = `
 exports[`renders Cloud 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL SZwsZ"
+  className="sc-bdnylx izwBNV sc-gSYCTC gyRQAf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1029,7 +1029,7 @@ exports[`renders Cloud 1`] = `
 exports[`renders CollisionCoverage 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL BZKMK"
+  className="sc-bdnylx izwBNV sc-laZMyp bzkflB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1047,7 +1047,7 @@ exports[`renders CollisionCoverage 1`] = `
 exports[`renders ContactMail 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hBXkco"
+  className="sc-bdnylx izwBNV sc-iNiQeE eGSJWB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1066,7 +1066,7 @@ exports[`renders ContactMail 1`] = `
 exports[`renders ContactPhone 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fzTlzs"
+  className="sc-bdnylx izwBNV sc-jffIyK gNiCqL"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1085,7 +1085,7 @@ exports[`renders ContactPhone 1`] = `
 exports[`renders ConvenienceStore 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eqJQrh"
+  className="sc-bdnylx izwBNV sc-eJoaVz KRpQH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1104,7 +1104,7 @@ exports[`renders ConvenienceStore 1`] = `
 exports[`renders Copy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cKjNeb"
+  className="sc-bdnylx izwBNV sc-oefIU cwdIdi"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1123,7 +1123,7 @@ exports[`renders Copy 1`] = `
 exports[`renders Couch 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hhXPch"
+  className="sc-bdnylx izwBNV sc-hhIhEF dSIoxk"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1142,7 +1142,7 @@ exports[`renders Couch 1`] = `
 exports[`renders Coupon 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bYZqgh"
+  className="sc-bdnylx izwBNV sc-eirseW saCjx"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1160,7 +1160,7 @@ exports[`renders Coupon 1`] = `
 exports[`renders CreditCard 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eWKggZ"
+  className="sc-bdnylx izwBNV sc-lbVuaH izAbEO"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1178,7 +1178,7 @@ exports[`renders CreditCard 1`] = `
 exports[`renders Cruises 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eeYyDw"
+  className="sc-bdnylx izwBNV sc-gGLyOc kxHKn"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1196,7 +1196,7 @@ exports[`renders Cruises 1`] = `
 exports[`renders Departure 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dFDCee"
+  className="sc-bdnylx izwBNV sc-ckTRkR iVvYIB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1214,7 +1214,7 @@ exports[`renders Departure 1`] = `
 exports[`renders Devices 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ioattl"
+  className="sc-bdnylx izwBNV sc-fbIXFq bILgWw"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1232,7 +1232,7 @@ exports[`renders Devices 1`] = `
 exports[`renders DevicesImportant 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kBijRo"
+  className="sc-bdnylx izwBNV sc-FRqcf iEBFGe"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1251,7 +1251,7 @@ exports[`renders DevicesImportant 1`] = `
 exports[`renders Directions 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bIWoKv"
+  className="sc-bdnylx izwBNV sc-fXazxj kCVeSt"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1269,7 +1269,7 @@ exports[`renders Directions 1`] = `
 exports[`renders Discount 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL liKiMf"
+  className="sc-bdnylx izwBNV sc-dvXXZy faOLQn"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1287,7 +1287,7 @@ exports[`renders Discount 1`] = `
 exports[`renders Document 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fvnpJJ"
+  className="sc-bdnylx izwBNV sc-TtZHJ gVZcZq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1305,7 +1305,7 @@ exports[`renders Document 1`] = `
 exports[`renders Dollar 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fZruHW"
+  className="sc-bdnylx izwBNV sc-jHNhIU kdMFlG"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1323,7 +1323,7 @@ exports[`renders Dollar 1`] = `
 exports[`renders DollarCircle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL lizAjp"
+  className="sc-bdnylx izwBNV sc-amjdv dVfwNu"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1341,7 +1341,7 @@ exports[`renders DollarCircle 1`] = `
 exports[`renders Dot 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fCTSYM"
+  className="sc-bdnylx izwBNV sc-jOFreG dySPOx"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1359,7 +1359,7 @@ exports[`renders Dot 1`] = `
 exports[`renders DoubleOccupancy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fivwvl"
+  className="sc-bdnylx izwBNV sc-hmbsMR hlYVxJ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1377,7 +1377,7 @@ exports[`renders DoubleOccupancy 1`] = `
 exports[`renders Download 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bTGbsK"
+  className="sc-bdnylx izwBNV sc-eKYRpg diUwqM"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1395,7 +1395,7 @@ exports[`renders Download 1`] = `
 exports[`renders DownloadAlt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jvlvgN"
+  className="sc-bdnylx izwBNV sc-bTDODP bjJeRb"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1414,7 +1414,7 @@ exports[`renders DownloadAlt 1`] = `
 exports[`renders EarlyBird 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bfGGeS"
+  className="sc-bdnylx izwBNV sc-kHWWFa eOhqLS"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1432,7 +1432,7 @@ exports[`renders EarlyBird 1`] = `
 exports[`renders Edit 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL grycbS"
+  className="sc-bdnylx izwBNV sc-hOPghE fNgVsr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1450,7 +1450,7 @@ exports[`renders Edit 1`] = `
 exports[`renders Electric 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jPqxRd"
+  className="sc-bdnylx izwBNV sc-dsXyEt KLZgl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1468,7 +1468,7 @@ exports[`renders Electric 1`] = `
 exports[`renders Email 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ggEayf"
+  className="sc-bdnylx izwBNV sc-daBvwG doyehj"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1486,7 +1486,7 @@ exports[`renders Email 1`] = `
 exports[`renders Emoticon 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fyLHOG"
+  className="sc-bdnylx izwBNV sc-jUfxsr ieswfq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1504,7 +1504,7 @@ exports[`renders Emoticon 1`] = `
 exports[`renders Event 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ibTLIH"
+  className="sc-bdnylx izwBNV sc-jQAyEw bHqXKf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1522,7 +1522,7 @@ exports[`renders Event 1`] = `
 exports[`renders EventAvailable 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cjdRzQ"
+  className="sc-bdnylx izwBNV sc-fuIRbl ktzbo"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1540,7 +1540,7 @@ exports[`renders EventAvailable 1`] = `
 exports[`renders EventBusy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kOrMmd"
+  className="sc-bdnylx izwBNV sc-fcmNTy gqWQLB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1558,7 +1558,7 @@ exports[`renders EventBusy 1`] = `
 exports[`renders ExitToApp 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL LkGvB"
+  className="sc-bdnylx izwBNV sc-Gvgqn gGuoTz"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1577,7 +1577,7 @@ exports[`renders ExitToApp 1`] = `
 exports[`renders ExternalLink 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kVFefW"
+  className="sc-bdnylx izwBNV sc-gsWdvU kPvkQi"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1596,7 +1596,7 @@ exports[`renders ExternalLink 1`] = `
 exports[`renders Facebook 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dIrgra"
+  className="sc-bdnylx izwBNV sc-bXevSJ itsTIm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1614,7 +1614,7 @@ exports[`renders Facebook 1`] = `
 exports[`renders Family 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dtysjN"
+  className="sc-bdnylx izwBNV sc-eGJXgd hZNJVR"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1633,7 +1633,7 @@ exports[`renders Family 1`] = `
 exports[`renders FavoriteHotel 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eCKAWX"
+  className="sc-bdnylx izwBNV sc-csTaMs eiYqCF"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1651,7 +1651,7 @@ exports[`renders FavoriteHotel 1`] = `
 exports[`renders Filter 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL boJbVD"
+  className="sc-bdnylx izwBNV sc-dFRpvv dsrQja"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1669,7 +1669,7 @@ exports[`renders Filter 1`] = `
 exports[`renders Fitness 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hnalgi"
+  className="sc-bdnylx izwBNV sc-bsatbK bgWwsr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1687,7 +1687,7 @@ exports[`renders Fitness 1`] = `
 exports[`renders Flame 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kbfNNk"
+  className="sc-bdnylx izwBNV sc-gIvpCV eFxuqP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1705,7 +1705,7 @@ exports[`renders Flame 1`] = `
 exports[`renders FlightCircle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jHeJkE"
+  className="sc-bdnylx izwBNV sc-euEtjk dycXXq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1723,7 +1723,7 @@ exports[`renders FlightCircle 1`] = `
 exports[`renders FlightCoverage 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fpJOGj"
+  className="sc-bdnylx izwBNV sc-fHCHSn fnjrRG"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1741,7 +1741,7 @@ exports[`renders FlightCoverage 1`] = `
 exports[`renders Flights 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gXYBvE"
+  className="sc-bdnylx izwBNV sc-dtLLyC kXiWBc"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1759,7 +1759,7 @@ exports[`renders Flights 1`] = `
 exports[`renders FreeCancellation 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dMGQWJ"
+  className="sc-bdnylx izwBNV sc-dkQUut jCskfA"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1777,7 +1777,7 @@ exports[`renders FreeCancellation 1`] = `
 exports[`renders Fridge 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kBSRss"
+  className="sc-bdnylx izwBNV sc-WZYaI cvnGUq"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1795,7 +1795,7 @@ exports[`renders Fridge 1`] = `
 exports[`renders Gallery 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fcqmZh"
+  className="sc-bdnylx izwBNV sc-ikXwZx BaOXh"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1813,7 +1813,7 @@ exports[`renders Gallery 1`] = `
 exports[`renders Gas 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jjPtAG"
+  className="sc-bdnylx izwBNV sc-uxeQQ dPbTzy"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1831,7 +1831,7 @@ exports[`renders Gas 1`] = `
 exports[`renders Globe 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bXXzrF"
+  className="sc-bdnylx izwBNV sc-biJoGX dhxFcT"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1849,7 +1849,7 @@ exports[`renders Globe 1`] = `
 exports[`renders Golf 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hQksiB"
+  className="sc-bdnylx izwBNV sc-eHEFXm hKpGOV"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1867,7 +1867,7 @@ exports[`renders Golf 1`] = `
 exports[`renders GolfTee 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kWDnSq"
+  className="sc-bdnylx izwBNV sc-hzUJqN eLeVgE"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1886,7 +1886,7 @@ exports[`renders GolfTee 1`] = `
 exports[`renders Gps 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jeCouo"
+  className="sc-bdnylx izwBNV sc-kYQaHc fKCGpX"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1904,7 +1904,7 @@ exports[`renders Gps 1`] = `
 exports[`renders Graph 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ddSJMe"
+  className="sc-bdnylx izwBNV sc-xGAYn elaQrP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1922,7 +1922,7 @@ exports[`renders Graph 1`] = `
 exports[`renders Grid 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fbifYJ"
+  className="sc-bdnylx izwBNV sc-dWBSoC ztYPM"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1940,7 +1940,7 @@ exports[`renders Grid 1`] = `
 exports[`renders GuestScore 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dmRYWa"
+  className="sc-bdnylx izwBNV sc-jHcYrh epSAuM"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1958,7 +1958,7 @@ exports[`renders GuestScore 1`] = `
 exports[`renders Guests 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kmaKiJ"
+  className="sc-bdnylx izwBNV sc-bQCGiA eRjYyl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1976,7 +1976,7 @@ exports[`renders Guests 1`] = `
 exports[`renders Help 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL esVxfd"
+  className="sc-bdnylx izwBNV sc-fXgAFM drtiyh"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -1994,7 +1994,7 @@ exports[`renders Help 1`] = `
 exports[`renders History 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hYPTpT"
+  className="sc-bdnylx izwBNV sc-EZpBh jXPdTD"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2012,7 +2012,7 @@ exports[`renders History 1`] = `
 exports[`renders Home 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dxMYqf"
+  className="sc-bdnylx izwBNV sc-jXcwIi bQPcNM"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2030,7 +2030,7 @@ exports[`renders Home 1`] = `
 exports[`renders HotelCircle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kAhtUQ"
+  className="sc-bdnylx izwBNV sc-eEVlDD keWfxs"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2048,7 +2048,7 @@ exports[`renders HotelCircle 1`] = `
 exports[`renders Hotels 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL YlbBn"
+  className="sc-bdnylx izwBNV sc-fmdMXc bIFwRX"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2066,7 +2066,7 @@ exports[`renders Hotels 1`] = `
 exports[`renders House 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dRWOaD"
+  className="sc-bdnylx izwBNV sc-ljslrt iomQql"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2084,7 +2084,7 @@ exports[`renders House 1`] = `
 exports[`renders Hybrid 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iKZTem"
+  className="sc-bdnylx izwBNV sc-jlZIZy bupruI"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2102,7 +2102,7 @@ exports[`renders Hybrid 1`] = `
 exports[`renders Image 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bxoiBm"
+  className="sc-bdnylx izwBNV sc-dTSxUT OXSVI"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2121,7 +2121,7 @@ exports[`renders Image 1`] = `
 exports[`renders ImageWide 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cXyYEF"
+  className="sc-bdnylx izwBNV sc-htmbXw wpBNm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2140,7 +2140,7 @@ exports[`renders ImageWide 1`] = `
 exports[`renders Inclusive 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eOhyUX"
+  className="sc-bdnylx izwBNV sc-cbeQSR eHKoYy"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2158,7 +2158,7 @@ exports[`renders Inclusive 1`] = `
 exports[`renders Information 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kpvPam"
+  className="sc-bdnylx izwBNV sc-hkePoP bObQlb"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2176,7 +2176,7 @@ exports[`renders Information 1`] = `
 exports[`renders InformationOutline 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gDGMdM"
+  className="sc-bdnylx izwBNV sc-gVFdEO fCTMzz"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2194,7 +2194,7 @@ exports[`renders InformationOutline 1`] = `
 exports[`renders Instagram 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ehhDYg"
+  className="sc-bdnylx izwBNV sc-fWWZrV bNWdum"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2212,7 +2212,7 @@ exports[`renders Instagram 1`] = `
 exports[`renders Key 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ioNkHZ"
+  className="sc-bdnylx izwBNV sc-fIxnHU bHuVCW"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2227,10 +2227,29 @@ exports[`renders Key 1`] = `
 </svg>
 `;
 
+exports[`renders Kitchen 1`] = `
+<svg
+  aria-hidden={true}
+  className="sc-bdnylx izwBNV sc-gzcbGf eedvtD"
+  fill="currentcolor"
+  focusable={false}
+  height={24}
+  role="img"
+  tabIndex={-1}
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M23 15v5a2 2 0 01-2 2H10v-7h13zM4.5 2A2.5 2.5 0 017 4.5a.75.75 0 01-1.493.102L5.5 4.5a1 1 0 00-1.993-.117L3.5 4.5V8H9v14H3a2 2 0 01-2-2V10a2 2 0 011-1.732V4.5A2.5 2.5 0 014.5 2zM21 8a2 2 0 012 2v4H10V8h11zM6 10a1 1 0 100 2 1 1 0 000-2zm8 0a1 1 0 100 2 1 1 0 000-2zm5 0a1 1 0 100 2 1 1 0 000-2z"
+    fillRule="evenodd"
+  />
+</svg>
+`;
+
 exports[`renders Kitchenette 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cJCLAz"
+  className="sc-bdnylx izwBNV sc-gkCpWe jFqAWz"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2248,7 +2267,7 @@ exports[`renders Kitchenette 1`] = `
 exports[`renders Laptop 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gKVWHG"
+  className="sc-bdnylx izwBNV sc-flUlJl fYfalL"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2266,7 +2285,7 @@ exports[`renders Laptop 1`] = `
 exports[`renders LateNight 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL goVWlY"
+  className="sc-bdnylx izwBNV sc-eXuzZk bdIiVl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2284,7 +2303,7 @@ exports[`renders LateNight 1`] = `
 exports[`renders List 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL YhYgq"
+  className="sc-bdnylx izwBNV sc-iGkqGz fqOjvP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2302,7 +2321,7 @@ exports[`renders List 1`] = `
 exports[`renders ListContained 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iWqSNU"
+  className="sc-bdnylx izwBNV sc-irKEWy gjxpaF"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2321,7 +2340,7 @@ exports[`renders ListContained 1`] = `
 exports[`renders LocalBar 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bcIKyZ"
+  className="sc-bdnylx izwBNV sc-eWnSVe bGonVm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2339,7 +2358,7 @@ exports[`renders LocalBar 1`] = `
 exports[`renders Lock 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dQyuwK"
+  className="sc-bdnylx izwBNV sc-kTCrpv gWOQta"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2357,7 +2376,7 @@ exports[`renders Lock 1`] = `
 exports[`renders Loyalty 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gNkKaC"
+  className="sc-bdnylx izwBNV sc-dvUxUk fcQjSv"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2375,7 +2394,7 @@ exports[`renders Loyalty 1`] = `
 exports[`renders Luggage 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iQIHso"
+  className="sc-bdnylx izwBNV sc-jtiWoB kNDBVD"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2393,7 +2412,7 @@ exports[`renders Luggage 1`] = `
 exports[`renders LuggageNo 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iuUBFk"
+  className="sc-bdnylx izwBNV sc-ellfmu eXmmQh"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2412,7 +2431,7 @@ exports[`renders LuggageNo 1`] = `
 exports[`renders Manual 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iMilNM"
+  className="sc-bdnylx izwBNV sc-kizDGL dDoHfp"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2430,7 +2449,7 @@ exports[`renders Manual 1`] = `
 exports[`renders Map 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL isJWZR"
+  className="sc-bdnylx izwBNV sc-cKRKlA ehSjhm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2448,7 +2467,7 @@ exports[`renders Map 1`] = `
 exports[`renders Menu 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dfgJOC"
+  className="sc-bdnylx izwBNV sc-iIgiFR fmiVdc"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2466,7 +2485,7 @@ exports[`renders Menu 1`] = `
 exports[`renders Microwave 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dvhzHf"
+  className="sc-bdnylx izwBNV sc-gstumO fsjKid"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2484,7 +2503,7 @@ exports[`renders Microwave 1`] = `
 exports[`renders Mileage 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jMmMRt"
+  className="sc-bdnylx izwBNV sc-amjij FxVfD"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2502,7 +2521,7 @@ exports[`renders Mileage 1`] = `
 exports[`renders Minus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hrNUPa"
+  className="sc-bdnylx izwBNV sc-kmIPwp itXnbi"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2520,7 +2539,7 @@ exports[`renders Minus 1`] = `
 exports[`renders MoreHorizontal 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jSpjVK"
+  className="sc-bdnylx izwBNV sc-cwixnI cfbIZA"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2539,7 +2558,7 @@ exports[`renders MoreHorizontal 1`] = `
 exports[`renders MoreVertical 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eBEbiC"
+  className="sc-bdnylx izwBNV sc-dkuHdP eQiDEQ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2558,7 +2577,7 @@ exports[`renders MoreVertical 1`] = `
 exports[`renders MultiAirline 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cljpOw"
+  className="sc-bdnylx izwBNV sc-gJpYue leTCaG"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2576,7 +2595,7 @@ exports[`renders MultiAirline 1`] = `
 exports[`renders MultiOccupancy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fHdton"
+  className="sc-bdnylx izwBNV sc-fyjqTV deFArE"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2594,7 +2613,7 @@ exports[`renders MultiOccupancy 1`] = `
 exports[`renders Museum 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL lnuIuT"
+  className="sc-bdnylx izwBNV sc-iXeIkk cvWYAb"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2613,7 +2632,7 @@ exports[`renders Museum 1`] = `
 exports[`renders Navigation 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bMvtrV"
+  className="sc-bdnylx izwBNV sc-jLqSar loGMzp"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2632,7 +2651,7 @@ exports[`renders Navigation 1`] = `
 exports[`renders NewRelease 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL drnzAN"
+  className="sc-bdnylx izwBNV sc-bUQzRK hxZtCr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2651,7 +2670,7 @@ exports[`renders NewRelease 1`] = `
 exports[`renders Notification 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL epcRce"
+  className="sc-bdnylx izwBNV sc-tsHpd OsRfB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2669,7 +2688,7 @@ exports[`renders Notification 1`] = `
 exports[`renders NotificationImportant 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hutwzP"
+  className="sc-bdnylx izwBNV sc-dSnYFs gLOACr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2688,7 +2707,7 @@ exports[`renders NotificationImportant 1`] = `
 exports[`renders Notifications 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dnWlFM"
+  className="sc-bdnylx izwBNV sc-hYRTcE dzQNLX"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2707,7 +2726,7 @@ exports[`renders Notifications 1`] = `
 exports[`renders NotificationsAdd 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fwVkGP"
+  className="sc-bdnylx izwBNV sc-cGKHXZ jQjyPD"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2726,7 +2745,7 @@ exports[`renders NotificationsAdd 1`] = `
 exports[`renders OfflineBolt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fbLwvO"
+  className="sc-bdnylx izwBNV sc-JsfGe fHFKLf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2745,7 +2764,7 @@ exports[`renders OfflineBolt 1`] = `
 exports[`renders OnDemand 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dbRvuM"
+  className="sc-bdnylx izwBNV sc-gGGEav dSMAqH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2764,7 +2783,7 @@ exports[`renders OnDemand 1`] = `
 exports[`renders Overnight 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gWnvFn"
+  className="sc-bdnylx izwBNV sc-dksuAk cbKBLd"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2782,7 +2801,7 @@ exports[`renders Overnight 1`] = `
 exports[`renders Palette 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dzaPAe"
+  className="sc-bdnylx izwBNV sc-jhGSUB gbQNvH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2801,7 +2820,7 @@ exports[`renders Palette 1`] = `
 exports[`renders ParentChild 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL Bvmfv"
+  className="sc-bdnylx izwBNV sc-hkoqCG iNjRun"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2820,7 +2839,7 @@ exports[`renders ParentChild 1`] = `
 exports[`renders ParentChildCircle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hoIlfr"
+  className="sc-bdnylx izwBNV sc-bShfyb kjGblK"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2839,7 +2858,7 @@ exports[`renders ParentChildCircle 1`] = `
 exports[`renders Parking 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ekrXnI"
+  className="sc-bdnylx izwBNV sc-juXuuo doMgfy"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2857,7 +2876,7 @@ exports[`renders Parking 1`] = `
 exports[`renders Pets 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL loGreu"
+  className="sc-bdnylx izwBNV sc-ecQjpJ izmaQl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2875,7 +2894,7 @@ exports[`renders Pets 1`] = `
 exports[`renders Phone 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bOjMtM"
+  className="sc-bdnylx izwBNV sc-jlQhLH cYEigx"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2893,7 +2912,7 @@ exports[`renders Phone 1`] = `
 exports[`renders PhoneActive 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cnDanJ"
+  className="sc-bdnylx izwBNV sc-iXqwbG cwNjko"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2912,7 +2931,7 @@ exports[`renders PhoneActive 1`] = `
 exports[`renders PhoneLog 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hKNMai"
+  className="sc-bdnylx izwBNV sc-hYIrON lksHDR"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2931,7 +2950,7 @@ exports[`renders PhoneLog 1`] = `
 exports[`renders Picture 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kNXnpA"
+  className="sc-bdnylx izwBNV sc-hKiGeM dVeYub"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2949,7 +2968,7 @@ exports[`renders Picture 1`] = `
 exports[`renders PieChart 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kCIbkE"
+  className="sc-bdnylx izwBNV sc-exqJjn gfBJqM"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2968,7 +2987,7 @@ exports[`renders PieChart 1`] = `
 exports[`renders Pin 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fsSDqu"
+  className="sc-bdnylx izwBNV sc-eiQXzm kJYOEo"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -2986,7 +3005,7 @@ exports[`renders Pin 1`] = `
 exports[`renders PinAdd 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL DuDaj"
+  className="sc-bdnylx izwBNV sc-dkiTmt cmpXtt"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3005,7 +3024,7 @@ exports[`renders PinAdd 1`] = `
 exports[`renders PinEdit 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fQDlSV"
+  className="sc-bdnylx izwBNV sc-cVJhCs kZasMB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3024,7 +3043,7 @@ exports[`renders PinEdit 1`] = `
 exports[`renders Plus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iLPuZy"
+  className="sc-bdnylx izwBNV sc-kHVJdr bFsZnj"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3042,7 +3061,7 @@ exports[`renders Plus 1`] = `
 exports[`renders PlusOne 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dTuxRF"
+  className="sc-bdnylx izwBNV sc-ktvXtq jAShEy"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3061,7 +3080,7 @@ exports[`renders PlusOne 1`] = `
 exports[`renders Pool 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ksKwYO"
+  className="sc-bdnylx izwBNV sc-gXZlrW icuQrK"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3079,7 +3098,7 @@ exports[`renders Pool 1`] = `
 exports[`renders Power 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gOMLOM"
+  className="sc-bdnylx izwBNV sc-bFSanr AEkPQ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3098,7 +3117,7 @@ exports[`renders Power 1`] = `
 exports[`renders Printer 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cbeWIO"
+  className="sc-bdnylx izwBNV sc-fxFQrc htZTlG"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3116,7 +3135,7 @@ exports[`renders Printer 1`] = `
 exports[`renders Quilt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kEcXZH"
+  className="sc-bdnylx izwBNV sc-fyFmx fnJsui"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3134,7 +3153,7 @@ exports[`renders Quilt 1`] = `
 exports[`renders RadioChecked 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL djDIgE"
+  className="sc-bdnylx izwBNV sc-cjzMPC klOzwr"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3152,7 +3171,7 @@ exports[`renders RadioChecked 1`] = `
 exports[`renders RadioEmpty 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kztTYO"
+  className="sc-bdnylx izwBNV sc-igOljT fHiVGx"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3170,7 +3189,7 @@ exports[`renders RadioEmpty 1`] = `
 exports[`renders RadioMinus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hfijah"
+  className="sc-bdnylx izwBNV sc-JgrOI eyDEsL"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3188,7 +3207,7 @@ exports[`renders RadioMinus 1`] = `
 exports[`renders RadioPlus 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kGTSbX"
+  className="sc-bdnylx izwBNV sc-gGuQiZ hSFOKZ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3206,7 +3225,7 @@ exports[`renders RadioPlus 1`] = `
 exports[`renders Railway 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jOmGQC"
+  className="sc-bdnylx izwBNV sc-iueMJG bbeqIf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3225,7 +3244,7 @@ exports[`renders Railway 1`] = `
 exports[`renders Refresh 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL klQpiK"
+  className="sc-bdnylx izwBNV sc-dbXBFb esfSmC"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3243,7 +3262,7 @@ exports[`renders Refresh 1`] = `
 exports[`renders Restaurant 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL BhmJr"
+  className="sc-bdnylx izwBNV sc-ehAMgd ErugE"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3261,7 +3280,7 @@ exports[`renders Restaurant 1`] = `
 exports[`renders Ribbon 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL imUPDm"
+  className="sc-bdnylx izwBNV sc-hGwdws jApBta"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3279,7 +3298,7 @@ exports[`renders Ribbon 1`] = `
 exports[`renders RibbonAlt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hYXCmA"
+  className="sc-bdnylx izwBNV sc-iuInmz kZdVBm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3298,7 +3317,7 @@ exports[`renders RibbonAlt 1`] = `
 exports[`renders RoomSize 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dEpzra"
+  className="sc-bdnylx izwBNV sc-EhVdS bVrbqO"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3316,7 +3335,7 @@ exports[`renders RoomSize 1`] = `
 exports[`renders Rowing 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cLmsbJ"
+  className="sc-bdnylx izwBNV sc-dwxYxt jdGzrg"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3334,7 +3353,7 @@ exports[`renders Rowing 1`] = `
 exports[`renders SaveAlt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jBSpIT"
+  className="sc-bdnylx izwBNV sc-gVtpNI dDuHBA"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3353,7 +3372,7 @@ exports[`renders SaveAlt 1`] = `
 exports[`renders Search 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bSXODA"
+  className="sc-bdnylx izwBNV sc-hJFzDP cIyidI"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3371,7 +3390,7 @@ exports[`renders Search 1`] = `
 exports[`renders SearchRecent 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bjbqSE"
+  className="sc-bdnylx izwBNV sc-liAQUe ghrtab"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3389,7 +3408,7 @@ exports[`renders SearchRecent 1`] = `
 exports[`renders Seat 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gUaTMD"
+  className="sc-bdnylx izwBNV sc-cvdZLF hkzpyf"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3407,7 +3426,7 @@ exports[`renders Seat 1`] = `
 exports[`renders SeatBusiness 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iTMfUp"
+  className="sc-bdnylx izwBNV sc-fTZrbU jgtqFT"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3425,7 +3444,7 @@ exports[`renders SeatBusiness 1`] = `
 exports[`renders SeatEconomy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL HOqFG"
+  className="sc-bdnylx izwBNV sc-bTJPMs eiqhKg"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3443,7 +3462,7 @@ exports[`renders SeatEconomy 1`] = `
 exports[`renders Security 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL faExcR"
+  className="sc-bdnylx izwBNV sc-hQYogJ dxwghk"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3461,7 +3480,7 @@ exports[`renders Security 1`] = `
 exports[`renders Shuttle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jJtyDg"
+  className="sc-bdnylx izwBNV sc-fTFLOO kNSSpG"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3479,7 +3498,7 @@ exports[`renders Shuttle 1`] = `
 exports[`renders SingleOccupancy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bWPdYf"
+  className="sc-bdnylx izwBNV sc-ByAKj icTjVt"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3497,7 +3516,7 @@ exports[`renders SingleOccupancy 1`] = `
 exports[`renders Sites 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gYYVam"
+  className="sc-bdnylx izwBNV sc-biHcdI fPzuKj"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3516,7 +3535,7 @@ exports[`renders Sites 1`] = `
 exports[`renders Smartphone 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jHAHZE"
+  className="sc-bdnylx izwBNV sc-hfVAxZ dzpXEh"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3535,7 +3554,7 @@ exports[`renders Smartphone 1`] = `
 exports[`renders Smoking 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eZNdHf"
+  className="sc-bdnylx izwBNV sc-fiCYge ipaFVh"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3553,7 +3572,7 @@ exports[`renders Smoking 1`] = `
 exports[`renders SmokingAllowed 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jmEBVa"
+  className="sc-bdnylx izwBNV sc-lfRwAv bbFbIu"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3572,7 +3591,7 @@ exports[`renders SmokingAllowed 1`] = `
 exports[`renders SoapBar 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dLbjau"
+  className="sc-bdnylx izwBNV sc-hndrU dtHeEz"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3591,7 +3610,7 @@ exports[`renders SoapBar 1`] = `
 exports[`renders Spa 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dTcWPK"
+  className="sc-bdnylx izwBNV sc-geBBMl cPCmxl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3609,7 +3628,7 @@ exports[`renders Spa 1`] = `
 exports[`renders SplitTicket 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cowyOw"
+  className="sc-bdnylx izwBNV sc-clGIgy fwrWjx"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3627,7 +3646,7 @@ exports[`renders SplitTicket 1`] = `
 exports[`renders SprayBottle 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bHADKY"
+  className="sc-bdnylx izwBNV sc-kJNqSH gwNkuH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3646,7 +3665,7 @@ exports[`renders SprayBottle 1`] = `
 exports[`renders Star 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL iLsDbw"
+  className="sc-bdnylx izwBNV sc-ciOMec jPoqvw"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3664,7 +3683,7 @@ exports[`renders Star 1`] = `
 exports[`renders StarHalf 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bCDvyi"
+  className="sc-bdnylx izwBNV sc-kGVuQl dnlVqw"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3682,7 +3701,7 @@ exports[`renders StarHalf 1`] = `
 exports[`renders SteeringWheel 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jzAAHr"
+  className="sc-bdnylx izwBNV sc-bA-DUxO loDmeS"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3700,7 +3719,7 @@ exports[`renders SteeringWheel 1`] = `
 exports[`renders Subway 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL AoDHg"
+  className="sc-bdnylx izwBNV sc-jYKDjX jMdqUc"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3719,7 +3738,7 @@ exports[`renders Subway 1`] = `
 exports[`renders SubwayAlt 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ciVjND"
+  className="sc-bdnylx izwBNV sc-bxLYvs iIdmtI"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3744,7 +3763,7 @@ exports[`renders SubwayAlt 1`] = `
 exports[`renders Success 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fFAyGz"
+  className="sc-bdnylx izwBNV sc-jVSHhB hBZqpT"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3762,7 +3781,7 @@ exports[`renders Success 1`] = `
 exports[`renders SuccessOutline 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL jlYKKV"
+  className="sc-bdnylx izwBNV sc-dHMjyi koeEzB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3780,7 +3799,7 @@ exports[`renders SuccessOutline 1`] = `
 exports[`renders Swap 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fBZCjM"
+  className="sc-bdnylx izwBNV sc-QxiLv iXxxBI"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3798,7 +3817,7 @@ exports[`renders Swap 1`] = `
 exports[`renders SwapHorizontal 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eUuYjW"
+  className="sc-bdnylx izwBNV sc-jfkKcj bsllab"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3817,7 +3836,7 @@ exports[`renders SwapHorizontal 1`] = `
 exports[`renders Sync 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fKddQP"
+  className="sc-bdnylx izwBNV sc-fnebjS cOqSEk"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3836,7 +3855,7 @@ exports[`renders Sync 1`] = `
 exports[`renders TableChart 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL hEozpP"
+  className="sc-bdnylx izwBNV sc-jcsNZN hmlkAm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3855,7 +3874,7 @@ exports[`renders TableChart 1`] = `
 exports[`renders Task 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eSnlTX"
+  className="sc-bdnylx izwBNV sc-fkmfhw fwBqFH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3874,7 +3893,7 @@ exports[`renders Task 1`] = `
 exports[`renders TaskChecked 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dCIOBI"
+  className="sc-bdnylx izwBNV sc-iuhWtz hLoSLv"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3893,7 +3912,7 @@ exports[`renders TaskChecked 1`] = `
 exports[`renders Taxi 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL dHgQYL"
+  className="sc-bdnylx izwBNV sc-eCbnBi bzOMNP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3912,7 +3931,7 @@ exports[`renders Taxi 1`] = `
 exports[`renders Tea 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cCUrok"
+  className="sc-bdnylx izwBNV sc-irqard cwiwAH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3931,7 +3950,7 @@ exports[`renders Tea 1`] = `
 exports[`renders ThumbsDown 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cAUpDN"
+  className="sc-bdnylx izwBNV sc-ezjryM bnVBYp"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3949,7 +3968,7 @@ exports[`renders ThumbsDown 1`] = `
 exports[`renders ThumbsUp 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bDxbG"
+  className="sc-bdnylx izwBNV sc-kBqltT hvEnAi"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3967,7 +3986,7 @@ exports[`renders ThumbsUp 1`] = `
 exports[`renders Timer 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gofOwV"
+  className="sc-bdnylx izwBNV sc-gJjCBC jiMIhL"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -3985,7 +4004,7 @@ exports[`renders Timer 1`] = `
 exports[`renders Traffic 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cxbwwn"
+  className="sc-bdnylx izwBNV sc-eKaOPE xwwUj"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4004,7 +4023,7 @@ exports[`renders Traffic 1`] = `
 exports[`renders Train 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL TkVOF"
+  className="sc-bdnylx izwBNV sc-fGgRdh UFSDO"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4023,7 +4042,7 @@ exports[`renders Train 1`] = `
 exports[`renders Trash 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cKZphJ"
+  className="sc-bdnylx izwBNV sc-hmvlTC fOCJmC"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4042,7 +4061,7 @@ exports[`renders Trash 1`] = `
 exports[`renders TrendingUp 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ciBGqf"
+  className="sc-bdnylx izwBNV sc-iiBohf dAoaLt"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4060,7 +4079,7 @@ exports[`renders TrendingUp 1`] = `
 exports[`renders Trophy 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL egRHal"
+  className="sc-bdnylx izwBNV sc-dYYbgU bkiZBu"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4078,7 +4097,7 @@ exports[`renders Trophy 1`] = `
 exports[`renders Tune 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bePslt"
+  className="sc-bdnylx izwBNV sc-eVedux fnzxAt"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4096,7 +4115,7 @@ exports[`renders Tune 1`] = `
 exports[`renders Twitter 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bIRhKC"
+  className="sc-bdnylx izwBNV sc-gBsykS bpCDSJ"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4114,7 +4133,7 @@ exports[`renders Twitter 1`] = `
 exports[`renders Unlock 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kzkYcu"
+  className="sc-bdnylx izwBNV sc-hxyAyv hVleUB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4132,7 +4151,7 @@ exports[`renders Unlock 1`] = `
 exports[`renders User 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gWNuPB"
+  className="sc-bdnylx izwBNV sc-gggqho hklgaL"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4150,7 +4169,7 @@ exports[`renders User 1`] = `
 exports[`renders UserAdd 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cPtopt"
+  className="sc-bdnylx izwBNV sc-hcmsuR cxMCXs"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4169,7 +4188,7 @@ exports[`renders UserAdd 1`] = `
 exports[`renders UserChecked 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL ktrEUJ"
+  className="sc-bdnylx izwBNV sc-ojhmt hAHsKW"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4188,7 +4207,7 @@ exports[`renders UserChecked 1`] = `
 exports[`renders Verified 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gCQVap"
+  className="sc-bdnylx izwBNV sc-hLyhSY kUzHGB"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4206,7 +4225,7 @@ exports[`renders Verified 1`] = `
 exports[`renders ViewList 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL enLznw"
+  className="sc-bdnylx izwBNV sc-cQDEqr fIgwUm"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4225,7 +4244,7 @@ exports[`renders ViewList 1`] = `
 exports[`renders ViewModule 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kXbmXM"
+  className="sc-bdnylx izwBNV sc-knSEWW gBNMRl"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4244,7 +4263,7 @@ exports[`renders ViewModule 1`] = `
 exports[`renders Visibility 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cdWeVx"
+  className="sc-bdnylx izwBNV sc-kSCdcF csFCTk"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4263,7 +4282,7 @@ exports[`renders Visibility 1`] = `
 exports[`renders VisibilityOff 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL cqwROW"
+  className="sc-bdnylx izwBNV sc-havuko hVjNik"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4288,7 +4307,7 @@ exports[`renders VisibilityOff 1`] = `
 exports[`renders Walk 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eLBXen"
+  className="sc-bdnylx izwBNV sc-cfAQHH dbznKH"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4307,7 +4326,7 @@ exports[`renders Walk 1`] = `
 exports[`renders Warning 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL fjJQG"
+  className="sc-bdnylx izwBNV sc-jCPRom eJRDnP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4325,7 +4344,7 @@ exports[`renders Warning 1`] = `
 exports[`renders WarningOutline 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bXhusn"
+  className="sc-bdnylx izwBNV sc-bKoIEd buUNLM"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4343,7 +4362,7 @@ exports[`renders WarningOutline 1`] = `
 exports[`renders WashingHands 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL flnNRD"
+  className="sc-bdnylx izwBNV sc-jhDJkI jLOqXg"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4362,7 +4381,7 @@ exports[`renders WashingHands 1`] = `
 exports[`renders Web 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL eVgMsY"
+  className="sc-bdnylx izwBNV sc-ensa-Dq iTpppz"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4380,7 +4399,7 @@ exports[`renders Web 1`] = `
 exports[`renders Whirlpool 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bjChjF"
+  className="sc-bdnylx izwBNV sc-bwcZQD IQrof"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4398,7 +4417,7 @@ exports[`renders Whirlpool 1`] = `
 exports[`renders Widgets 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL gaztWK"
+  className="sc-bdnylx izwBNV sc-ekAeAU gtOKJo"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4417,7 +4436,7 @@ exports[`renders Widgets 1`] = `
 exports[`renders Wifi 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL kZqGrw"
+  className="sc-bdnylx izwBNV sc-btldOh hnpwLP"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4435,7 +4454,7 @@ exports[`renders Wifi 1`] = `
 exports[`renders Youtube 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bkuARc"
+  className="sc-bdnylx izwBNV sc-kOolzS gsyFJU"
   fill="currentcolor"
   focusable={false}
   height={24}
@@ -4453,7 +4472,7 @@ exports[`renders Youtube 1`] = `
 exports[`renders ZoomOut 1`] = `
 <svg
   aria-hidden={true}
-  className="fHGoIL bCbnyV"
+  className="sc-bdnylx izwBNV sc-hWZkNf bfHGVg"
   fill="currentcolor"
   focusable={false}
   height={24}

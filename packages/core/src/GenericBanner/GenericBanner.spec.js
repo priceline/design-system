@@ -3,7 +3,7 @@ import { render, fireEvent } from 'testing-library'
 import { Warning, Emoticon } from 'pcln-icons'
 import { Text } from '../Text'
 import { Image } from '../Image'
-import { GenericBanner, theme } from '.'
+import { GenericBanner } from '.'
 
 const props = {
   p: 2,
@@ -19,11 +19,7 @@ const props = {
     </Text.span>
   ),
   ctaText: (
-    <Text.span
-      fontSize={[0, null, null, 1]}
-      textColor='primary.base'
-      fontWeight='bold'
-    >
+    <Text.span textColor='primary.base' fontWeight='bold'>
       Read More
     </Text.span>
   ),
@@ -43,16 +39,19 @@ describe('GenericBanner', () => {
     const { getByText } = render(
       <GenericBanner {...props} buttonClick={buttonClick} />
     )
-    expect(getByText('COVID-19')).toBeTruthy()
-    expect(
-      getByText(
-        'Update: Your travel may be impacted. Please review this hotels important info.'
-      )
-    ).toBeTruthy()
+    const header = getByText('COVID-19')
+    const text = getByText(
+      'Update: Your travel may be impacted. Please review this hotels important info.'
+    )
+    expect(header).toBeTruthy()
+    expect(text).toBeTruthy()
     const readMoreButton = getByText('Read More')
     expect(readMoreButton).toBeTruthy()
     fireEvent.click(readMoreButton)
     expect(buttonClick).toHaveBeenCalled()
+    expect(readMoreButton).toHaveStyleRule('font-size', '12px')
+    expect(header).toHaveStyleRule('font-size', '12px')
+    expect(text).toHaveStyleRule('font-size', '12px')
   })
   test('Renders as expected- url', () => {
     const { getByText, getByRole } = render(
@@ -64,15 +63,18 @@ describe('GenericBanner', () => {
         }}
       />
     )
+    const header = getByText('COVID-19')
+    const text = getByText(
+      'Update: Your travel may be impacted. Please review this hotels important info.'
+    )
     expect(getByRole('img')).toBeTruthy()
-    expect(getByText('COVID-19')).toBeTruthy()
-    expect(
-      getByText(
-        'Update: Your travel may be impacted. Please review this hotels important info.'
-      )
-    ).toBeTruthy()
+    expect(header).toBeTruthy()
+    expect(text).toBeTruthy()
     const readMoreButton = getByText('Read More')
     expect(readMoreButton).toBeTruthy()
     fireEvent.click(readMoreButton)
+    expect(readMoreButton).toHaveStyleRule('font-size', '12px')
+    expect(header).toHaveStyleRule('font-size', '12px')
+    expect(text).toHaveStyleRule('font-size', '12px')
   })
 })

@@ -6,6 +6,11 @@ exports[`GenericBanner renders 1`] = `
   width: 100%;
 }
 
+.c9 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -34,12 +39,6 @@ exports[`GenericBanner renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c9 {
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 12px;
 }
 
 .c7 {
@@ -74,19 +73,12 @@ exports[`GenericBanner renders 1`] = `
   cursor: cursor;
 }
 
-@media screen and (min-width:48em) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
 <div
   className="c0"
 >
   <div
     className="c1 c2"
     color="text.lightest"
-    data-testid="BannerWithRadius"
   >
     <div
       className="c3"
