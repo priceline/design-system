@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Banner } from '../Banner'
-import { Text } from '../Text'
+import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
@@ -26,25 +26,29 @@ const WrapperLink = styled.a`
 const CustomLink = styled(Link)`
   display: inline-flex;
   z-index: 2;
-  padding: 0;
-  background-color: transparent;
 `
 
 const CustomButton = styled(Button)`
   z-index: 2;
-  vertical-align: none;
-  text-decoration: underline;
+  text-decoration: ${(props) =>
+    props.buttonTextUnderline ? 'underline' : 'none'};
 `
+
 const GenericBanner = ({
-  alignment,
+  alignItems,
+  buttonClick,
+  buttonSize,
+  buttonVariation,
   ctaText,
+  fontSize,
   heading,
   iconLeft,
   iconRight,
   imageLeft,
-  buttonClick,
+  justifyContent,
+  linkVariation,
+  linkColor,
   text,
-  textFontSize,
   URLProps,
   ...props
 }) => {
@@ -53,36 +57,56 @@ const GenericBanner = ({
       {URLProps && (
         <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />
       )}
-      <BannerWithRadius
-        {...props}
-        onClick={URLProps ? null : buttonClick}
-        data-testid='BannerWithRadius'
-      >
-        <Flex alignItems='center' justifyContent={alignment}>
+      <BannerWithRadius {...props} onClick={URLProps ? null : buttonClick}>
+        <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
-          <Text px={2} fontSize={textFontSize}>
-            {!!heading && heading}
-            {!!text && text}
+          <Box px={2} fontSize={fontSize}>
+            {!!heading &&
+              React.cloneElement(heading, {
+                fontSize,
+              })}
+            {!!text &&
+              React.cloneElement(text, {
+                fontSize,
+              })}
 
-            {URLProps && ctaText && (
-              <CustomLink fontSize={textFontSize} {...URLProps}>
-                {ctaText}
+            {URLProps && (
+              <CustomLink
+                p={
+                  linkVariation === 'fill' || linkVariation === 'outline'
+                    ? 2
+                    : null
+                }
+                color={linkColor}
+                variation={linkVariation}
+                fontSize={fontSize}
+                {...URLProps}
+              >
+                {ctaText &&
+                  React.cloneElement(ctaText, {
+                    fontSize,
+                    zIndex: 2,
+                  })}
               </CustomLink>
             )}
-            {Boolean(buttonClick) && ctaText && (
+            {Boolean(buttonClick) && (
               <CustomButton
-                fontSize={textFontSize}
-                variation='link'
+                size={buttonSize}
+                buttonTextUnderline={buttonVariation === 'link'}
+                variation={buttonVariation}
                 onClick={(e) => {
                   e.stopPropagation()
                   buttonClick()
                 }}
               >
-                {ctaText}
+                {ctaText &&
+                  React.cloneElement(ctaText, {
+                    fontSize,
+                  })}
               </CustomButton>
             )}
-          </Text>
+          </Box>
           {!!iconRight && iconRight}
         </Flex>
       </BannerWithRadius>
@@ -93,30 +117,63 @@ const GenericBanner = ({
 GenericBanner.displayName = 'GenericBanner'
 
 GenericBanner.propTypes = {
-  alignment: PropTypes.string,
+  alignItems: PropTypes.oneOf([
+    'baseline',
+    'end',
+    'center',
+    'flex-end',
+    'flex-start',
+    'self-end',
+    'self-start',
+    'start',
+    'stretch',
+  ]),
+  buttonClick: PropTypes.func,
+  buttonSize: PropTypes.oneOf(['small', 'medium', 'large']),
+  buttonVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
   ctaText: PropTypes.node,
-  heading: PropTypes.node,
-  iconLeft: PropTypes.node,
-  iconRight: PropTypes.node,
-  imageLeft: PropTypes.node,
-  text: PropTypes.node,
-  textFontSize: PropTypes.oneOfType([
+  fontSize: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
     PropTypes.arrayOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     ),
   ]),
-  buttonClick: PropTypes.func,
+  heading: PropTypes.node,
+  iconLeft: PropTypes.node,
+  iconRight: PropTypes.node,
+  imageLeft: PropTypes.node,
+  justifyContent: PropTypes.oneOf([
+    'end',
+    'center',
+    'left',
+    'right',
+    'flex-end',
+    'flex-start',
+    'space-around',
+    'space-evenly',
+    'space-between',
+    'start',
+    'stretch',
+  ]),
+  linkVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
+  linkColor: PropTypes.string,
+  linkProps: PropTypes.object,
+  text: PropTypes.node,
   URLProps: PropTypes.shape({
     href: PropTypes.string.isRequired,
     target: PropTypes.string,
   }),
+  urlText: PropTypes.string,
 }
 
 GenericBanner.defaultProps = {
-  textFontSize: [0, null, null, 1],
-  alignment: 'center',
+  alignItems: 'center',
+  buttonVariation: 'link',
+  fontSize: [0, null, null, 1],
+  justifyContent: 'center',
+  linkColor: 'primary',
+  linkVariation: 'link',
 }
 
 export default GenericBanner

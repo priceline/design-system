@@ -16,6 +16,7 @@ import {
   textStyle,
   themeGet,
   width,
+  zIndex,
 } from 'styled-system'
 
 import {
@@ -77,6 +78,7 @@ const Text = styled.div.attrs(({ align, ...props }) => ({
   ${textAlign}
   ${lineHeight}
   ${textShadow}
+  ${zIndex}
 `
 
 Text.displayName = 'Text'
@@ -96,6 +98,7 @@ Text.propTypes = {
   ...textAlign.propTypes,
   ...textStyle.propTypes,
   ...width.propTypes,
+  ...zIndex.propTypes,
   align: deprecatedPropType('textAlign'),
   bold: PropTypes.bool,
   caps: PropTypes.bool,
