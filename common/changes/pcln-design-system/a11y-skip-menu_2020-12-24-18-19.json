@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add Accessibility SkipMenu component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "daniel.giraldo@priceline.com"
+}
