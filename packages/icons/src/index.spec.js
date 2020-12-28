@@ -10,8 +10,8 @@ const iconList = Object.keys(icons)
   .map((key) => [key, icons[key]])
 
 test.each(iconList)('renders %s', (key, Component) => {
-  const json = TestRenderer.create(<Component />).toJSON()
-  expect(json).toMatchSnapshot()
+  const { asFragment }= render(<Component />)
+  expect(asFragment()).toMatchSnapshot()
 })
 
 describe('pcln-icons', () => {

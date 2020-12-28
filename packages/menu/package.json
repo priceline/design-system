@@ -31,7 +31,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "cross-env": "^7.0.2",
-    "eslint": "^7.9.0",
+    "eslint": "^7.16.0",
     "jest": "^26.4.2",
     "jest-standard-reporter": "^1.1.1",
     "jest-styled-components": "^6.3.4",

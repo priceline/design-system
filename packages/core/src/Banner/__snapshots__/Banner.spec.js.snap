@@ -77,9 +77,9 @@ exports[`Banner renders content from children props 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -160,9 +160,9 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -240,9 +240,9 @@ exports[`Banner renders with custom iconName and size 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -320,9 +320,9 @@ exports[`Banner renders with green bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -401,9 +401,9 @@ exports[`Banner renders with header node 1`] = `
 }
 
 .c3 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -507,9 +507,9 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -587,9 +587,9 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -667,9 +667,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -747,9 +747,9 @@ exports[`Banner renders with no props other than theme 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -827,9 +827,9 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -907,9 +907,9 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -993,9 +993,9 @@ exports[`Banner renders with text node 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;
@@ -1090,9 +1090,9 @@ exports[`Banner renders with text string 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-top: -2px;
   margin-right: 8px;

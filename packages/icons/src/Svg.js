@@ -54,7 +54,7 @@ const bg = (props) => {
 }
 
 const Svg = styled('svg')`
-  flex: 'none';
+  flex: none;
   line-height: 1;
   
   ${space}

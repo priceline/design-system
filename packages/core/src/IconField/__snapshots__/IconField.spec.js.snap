@@ -9,9 +9,9 @@ exports[`IconField renders 1`] = `
 }
 
 .c1 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   width: 24px;
 }
@@ -131,9 +131,9 @@ exports[`IconField renders icon button 1`] = `
 }
 
 .c3 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   width: 24px;
 }
@@ -310,9 +310,9 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 }
 
 .c1 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   width: 24px;
 }

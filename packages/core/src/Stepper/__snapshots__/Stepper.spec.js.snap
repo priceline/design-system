@@ -18,9 +18,9 @@ exports[`Stepper renders with children 1`] = `
 }
 
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   margin-right: 4px;
   width: 16px;
