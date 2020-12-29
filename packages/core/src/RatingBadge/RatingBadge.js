@@ -1,13 +1,15 @@
 import styled from 'styled-components'
-import { fontWeight, borderRadius } from 'styled-system'
+import PropTypes from 'prop-types'
+import { fontWeight, borderRadius, } from 'styled-system';
 import { Box } from '../Box'
-import { applyVariations, deprecatedPropType } from '../utils'
+import { deprecatedPropType } from '../utils';
 
-const RatingBadge = styled(Box)`
+const RatingBadge = styled(Box).attrs(({color, bg}) => ({
+  bg: color ? "" : bg // TODO delete once we remove the bg prop
+}))`
   display: inline-block;
   line-height: 1.5;
   ${fontWeight} ${borderRadius};
-  ${applyVariations('RatingBadge')}
 `
 
 RatingBadge.defaultProps = {
@@ -22,6 +24,7 @@ RatingBadge.propTypes = {
   ...fontWeight.propTypes,
   ...borderRadius.propTypes,
   bg: deprecatedPropType('color'),
+  color: PropTypes.string
 }
 
 export default RatingBadge

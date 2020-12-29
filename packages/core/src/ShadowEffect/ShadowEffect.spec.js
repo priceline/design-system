@@ -168,6 +168,6 @@ describe('ShadowEffect', () => {
           <Input />
         </ShadowEffect>
       )
-    }).toThrowError()
+    }).toThrow()
   })
 })

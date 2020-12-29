@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix bug when using RatingBadge with color but not bg prop",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "email@craigp.me"
+}
