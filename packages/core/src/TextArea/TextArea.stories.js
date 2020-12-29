@@ -57,10 +57,6 @@ export const WithExternalLabel = () => (
   </Box>
 )
 
-WithExternalLabel.story = {
-  name: 'With external label',
-}
-
 export const ForwardRefs = () => (
   <ForwardRefDemo
     refChild={(dsRef) => (
@@ -73,7 +69,3 @@ export const ForwardRefs = () => (
     )}
   />
 )
-
-ForwardRefs.story = {
-  name: 'Forward refs',
-}

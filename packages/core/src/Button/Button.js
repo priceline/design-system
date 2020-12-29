@@ -111,10 +111,12 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button = styled.button.attrs({
-  width: ({ fullWidth, width }) => (fullWidth ? 1 : width),
-  'aria-label': ({ title, 'aria-label': ariaLabel }) => ariaLabel || title,
-})`
+const Button = styled.button.attrs(
+  ({ width, fullWidth, title, 'aria-label': ariaLabel }) => ({
+    width: fullWidth ? 1 : width,
+    'aria-label': ariaLabel || title,
+  })
+)`
   ${buttonStyles}
 `
 

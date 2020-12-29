@@ -25,12 +25,12 @@ const colors = {
   background: 'background',
 }
 
-const BlueStamp = styled(Stamp).attrs({
+const BlueStamp = styled(Stamp).attrs(() => ({
   borderColor: 'primary',
   bg: 'primary',
   color: 'background.lightest',
   mr: 2,
-})``
+}))``
 
 export default {
   title: 'Stamp',

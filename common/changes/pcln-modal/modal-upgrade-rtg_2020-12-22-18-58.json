@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "Upgrade react-transition-group to resolve warning when running React in strict mode",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal",
+  "email": "email@craigp.me"
+}

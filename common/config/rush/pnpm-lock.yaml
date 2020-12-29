@@ -101,7 +101,7 @@ dependencies:
   react-focus-lock: 2.4.1_@types+react@16.9.49
   react-popper: 1.3.7
   react-test-renderer: 16.13.1
-  react-transition-group: 2.9.0
+  react-transition-group: 4.4.1
   remark-autolink-headings: 5.2.2
   remark-emoji: 2.1.0
   remark-images: 0.8.1
@@ -10576,12 +10576,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==
-  /dom-helpers/3.4.0:
-    dependencies:
-      '@babel/runtime': 7.11.2
-    dev: false
-    resolution:
-      integrity: sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
   /dom-helpers/5.2.0:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -22098,32 +22092,6 @@ packages:
       react: '>=0.14.0 <17.0.0'
     resolution:
       integrity: sha512-uH3ORCsCa3C6LHxExExhF4jHoXYCQwE5oECmrRsunlspaDAbS4mGKNlWZqjLfInWtFQcf0o1n1jC/NGXFdUBCg==
-  /react-transition-group/2.9.0:
-    dependencies:
-      dom-helpers: 3.4.0
-      loose-envify: 1.4.0
-      prop-types: 15.7.2
-      react-lifecycles-compat: 3.0.4
-    dev: false
-    peerDependencies:
-      react: '>=15.0.0'
-      react-dom: '>=15.0.0'
-    resolution:
-      integrity: sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
-  /react-transition-group/2.9.0_react-dom@16.13.1+react@16.13.1:
-    dependencies:
-      dom-helpers: 3.4.0
-      loose-envify: 1.4.0
-      prop-types: 15.7.2
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
-      react-lifecycles-compat: 3.0.4
-    dev: false
-    peerDependencies:
-      react: '>=15.0.0'
-      react-dom: '>=15.0.0'
-    resolution:
-      integrity: sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
   /react-transition-group/4.4.1:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -27141,7 +27109,7 @@ packages:
     peerDependencies:
       '@babel/core': '*'
     resolution:
-      integrity: sha512-TkWDuF3mDJSFUmdb+I5mOtTYfs74QgFNMGQRk/MqAwqx4W/4pRFBHowFbcHEFmN17084KjLwULYosV2jraxNkw==
+      integrity: sha512-Sbe7dR05suThYhtNDHEt6ox/zsYVrj0SFhCh97WhCaSVfrMaNywfCKWhQ6pq1gje/XtwZDwjWK6yPY2YT76FdA==
       tarball: 'file:projects/docs.tgz'
     version: 0.0.0
   'file:projects/eslint-config.tgz':
@@ -27195,7 +27163,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-autocomplete'
     resolution:
-      integrity: sha512-9Cw+nHxxTWoxjv7+z+KvexG6EDD6adzqAYllvmYBv3eYlM10c0V32RPRG+Tn8cOtVFsU0aMgNxIdRnCcgWFVRg==
+      integrity: sha512-9i3ZK9WhF/OrqWR1idDK3o4Aq2oEmXUby3q/NDKl4IDefKNRVEvhKVy/QBrndFLG1nVMe/XweiOCzm5K17D40Q==
       tarball: 'file:projects/pcln-autocomplete.tgz'
     version: 0.0.0
   'file:projects/pcln-design-system.tgz_5f4e75485d05063debccc2e0651ceb55':
@@ -27292,7 +27260,7 @@ packages:
     peerDependencies:
       '@babel/core': '*'
     resolution:
-      integrity: sha512-tgiAZP34fRYnH/+jaMuC6VqZvYchlojq1us127tLIebkEshk7PvS/ZWDjRHb9EXG+kxG8u3N8yVX6NFK8eZhsQ==
+      integrity: sha512-P/5OQ5KPm13Z5nFH0dChDHfO9rL9e5UY4+sNcanOkXUltEUna/oxXEkziwlZ9Kw8cWID0D+oN1JInv8BROgH6A==
       tarball: 'file:projects/pcln-menu.tgz'
     version: 0.0.0
   'file:projects/pcln-modal.tgz_df3cdb8411b91d06031563a68743d278':
@@ -27310,7 +27278,7 @@ packages:
       prop-types: 15.7.2
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
-      react-transition-group: 2.9.0_react-dom@16.13.1+react@16.13.1
+      react-transition-group: 4.4.1_react-dom@16.13.1+react@16.13.1
       rimraf: 3.0.2
       styled-components: 4.4.1_4f54128445bc6f13bd713dcb3d91e98e
       styled-system: 4.2.4
@@ -27321,7 +27289,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-LVLsuPGRNMq2eDN7Ax+uXwJX1VoCRA3Am+jqkFzKWyNvpg2NIEi4oL9L9EshbUsup8hKIshYR6tIYCczGQJaxQ==
+      integrity: sha512-sAZmCaTnHeDvaDamTsD/SpDG/qZDfcDqTgCZfdTRUxd8Vh0gC1jxV9h9k498/zuFFiNahFClwbj0LD4dr+n2fw==
       tarball: 'file:projects/pcln-modal.tgz'
     version: 0.0.0
   'file:projects/pcln-popover.tgz_df3cdb8411b91d06031563a68743d278':
@@ -27352,7 +27320,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-gXai2gd+kn65BAMd7ICiQQWdrl33fCZxW42YNG3i6SJGLGSjHkQ4rT0N77DIsaXwJi6tg1TmU+tzzfeg9H3Msg==
+      integrity: sha512-JYjtFnh6PeVd9LXFnoOMpzsrTweCEQkuZ3PgZjDy6226lcYu2pd/3i3WVmA/dg/M/Uw7iW8848d9g3N78iWW6w==
       tarball: 'file:projects/pcln-popover.tgz'
     version: 0.0.0
   'file:projects/pcln-slider.tgz':
@@ -27386,7 +27354,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-slider'
     resolution:
-      integrity: sha512-qdC7i3jIdZybYWzLcr47nAmmsMtbt6robG4IbqXylrVUc35JyrPI3U8dEvN2Ro/Xb/1ki5v/n80sywsLtvDXKQ==
+      integrity: sha512-RFQvaH9hiYi7we7O5pBDPvE5ZOpCg4aSG0tljZOicHw9DGKmZwt6JizVdyMU2G6IXjO9A9gygYAzjEQ0wO0vmw==
       tarball: 'file:projects/pcln-slider.tgz'
     version: 0.0.0
   'file:projects/pcln-types.tgz':
@@ -27400,7 +27368,7 @@ packages:
     dev: false
     name: '@rush-temp/pcln-types'
     resolution:
-      integrity: sha512-euIAu208N5VYHsSSagu3oqVUF+TnPaPjejDDWtNjptCSHWF28qya5SbA7RTQqqCYJJLVJT+K21j08Ws6bbkUtA==
+      integrity: sha512-dHkca33lx6/uMC4b49/9+A7LDWyJnHrJk01hn+Ve5XyS2qe0abPnMdU5HJsEDa2STsE2kQYCAR6oMtWl7T/enQ==
       tarball: 'file:projects/pcln-types.tgz'
     version: 0.0.0
   'file:projects/storybook.tgz_df3cdb8411b91d06031563a68743d278':
@@ -27429,7 +27397,7 @@ packages:
       '@babel/core': '*'
       '@types/react': '*'
     resolution:
-      integrity: sha512-g7VRy3GGWYSFmRCt0tzjCJOjd55LAK9Bts31KJXu76v49a1cDlzK+31AjMmIDBOU2D4JAkjKdIyhX4Pt6Nq1Ew==
+      integrity: sha512-sq4EwFauf8eLi2aKrMoCyXFii09Oc0Q8NBRT1osflmiis4YtUn51BqtiM42DlSe9UkHeGA4LUp3IylDsZK82fA==
       tarball: 'file:projects/storybook.tgz'
     version: 0.0.0
 registry: ''
@@ -27536,7 +27504,7 @@ specifiers:
   react-focus-lock: ^2.2.1
   react-popper: ^1.3.3
   react-test-renderer: ^16.13.1
-  react-transition-group: ^2.5.3
+  react-transition-group: ^4.4.1
   remark-autolink-headings: ^5.0.0
   remark-emoji: ^2.0.2
   remark-images: ^0.8.1

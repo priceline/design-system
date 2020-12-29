@@ -4,7 +4,7 @@ import { Box, Button, Input, Label } from '..'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 
 export default {
-  title: 'Input',
+  title: 'InputGroup',
   component: Input,
   parameters: {
     docs: {
