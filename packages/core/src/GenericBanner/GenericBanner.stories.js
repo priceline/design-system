@@ -22,7 +22,11 @@ const UnderlinedLinkText = styled(Text)`
 export const basicBannerAllInline = () => (
   <GenericBanner
     p={3}
-    heading={<Text.span fontWeight='bold'>COVID-19&nbsp;</Text.span>}
+    heading={
+      <Text.span fontWeight='bold' mr={1}>
+        COVID-19
+      </Text.span>
+    }
     text={
       <Text.span>
         Update: Your travel may be impacted. Please review this hotels important
@@ -38,8 +42,8 @@ export const basicBannerAllInlineRightIcon = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' color='secondary'>
-        This is a Heading&nbsp;&nbsp;
+      <Text.span fontWeight='bold' color='secondary' mr={1}>
+        This is a Heading
       </Text.span>
     }
     text={
@@ -56,7 +60,11 @@ export const basicBannerAllInlineRightIcon = () => (
 export const basicBannerBlockWithURLPropsCTA = () => (
   <GenericBanner
     p={2}
-    heading={<Text fontWeight='bold'>This is a Heading&nbsp;</Text>}
+    heading={
+      <Text fontWeight='bold' mr={1}>
+        This is a Heading
+      </Text>
+    }
     text={
       <Text>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -86,14 +94,14 @@ export const bannerWithOnClick = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base'>
-        COVID-19&nbsp;
+      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+        COVID-19
       </Text.span>
     }
     text={
-      <Text.span textColor='primary.base'>
+      <Text.span textColor='primary.base' mr={1}>
         Update: Your travel may be impacted. Please review this hotels important
-        info.&nbsp;
+        info.
       </Text.span>
     }
     buttonClick={action('clicked on the banner or the read more link-button')}
@@ -106,14 +114,14 @@ export const bannerWithOnClickAndCTA = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base'>
-        COVID-19&nbsp;
+      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+        COVID-19
       </Text.span>
     }
     text={
-      <Text.span textColor='primary.base'>
+      <Text.span textColor='primary.base' mr={1}>
         Update: Your travel may be impacted. Please review this hotels important
-        info.&nbsp;
+        info.
       </Text.span>
     }
     ctaText={
@@ -133,14 +141,14 @@ export const bannerWithOnClickButtonStyleCta = () => (
     buttonSize='small'
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base'>
-        COVID-19&nbsp;
+      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+        COVID-19
       </Text.span>
     }
     text={
       <Text.span mr={1} textColor='primary.base'>
         Update: Your travel may be impacted. Please review this hotels important
-        info.&nbsp;
+        info.
       </Text.span>
     }
     ctaText={
@@ -158,14 +166,14 @@ export const bannerWithURLPropsAndCta = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base'>
-        This is a Heading&nbsp;
+      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+        This is a Heading
       </Text.span>
     }
     text={
-      <Text.span color='warning'>
+      <Text.span color='warning' mr={1}>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus. &nbsp;
+        elit. Nunc at lacus vel dolor fringilla rhoncus.
       </Text.span>
     }
     URLProps={{
@@ -190,14 +198,14 @@ export const bannerWithURLProps = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base'>
-        This is a Heading&nbsp;
+      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+        This is a Heading
       </Text.span>
     }
     text={
-      <Text.span color='warning'>
+      <Text.span color='warning' mr={1}>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus. &nbsp;
+        elit. Nunc at lacus vel dolor fringilla rhoncus.
       </Text.span>
     }
     URLProps={{
@@ -215,11 +223,15 @@ export const bannerWithURLPropsButtonStyleCta = () => (
     color='alert.light'
     linkColor='secondary'
     linkVariation='fill'
-    heading={<Text.span fontWeight='bold'>This is a Heading&nbsp;</Text.span>}
+    heading={
+      <Text.span fontWeight='bold' mr={1}>
+        This is a Heading
+      </Text.span>
+    }
     text={
-      <Text.span color='warning'>
+      <Text.span color='warning' mr={1}>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus. &nbsp;
+        elit. Nunc at lacus vel dolor fringilla rhoncus.
       </Text.span>
     }
     URLProps={{

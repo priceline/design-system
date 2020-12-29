@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { alignItems, justifyContent } from 'styled-system'
 import PropTypes from 'prop-types'
 import { Banner } from '../Banner'
 import { Box } from '../Box'
@@ -114,20 +115,9 @@ const GenericBanner = ({
   )
 }
 
-GenericBanner.displayName = 'GenericBanner'
-
 GenericBanner.propTypes = {
-  alignItems: PropTypes.oneOf([
-    'baseline',
-    'end',
-    'center',
-    'flex-end',
-    'flex-start',
-    'self-end',
-    'self-start',
-    'start',
-    'stretch',
-  ]),
+  ...alignItems.propTypes,
+  ...justifyContent.propTypes,
   buttonClick: PropTypes.func,
   buttonSize: PropTypes.oneOf(['small', 'medium', 'large']),
   buttonVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
@@ -143,22 +133,8 @@ GenericBanner.propTypes = {
   iconLeft: PropTypes.node,
   iconRight: PropTypes.node,
   imageLeft: PropTypes.node,
-  justifyContent: PropTypes.oneOf([
-    'end',
-    'center',
-    'left',
-    'right',
-    'flex-end',
-    'flex-start',
-    'space-around',
-    'space-evenly',
-    'space-between',
-    'start',
-    'stretch',
-  ]),
   linkVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
   linkColor: PropTypes.string,
-  linkProps: PropTypes.object,
   text: PropTypes.node,
   URLProps: PropTypes.shape({
     href: PropTypes.string.isRequired,

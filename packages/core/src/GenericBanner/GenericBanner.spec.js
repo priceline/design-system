@@ -8,14 +8,14 @@ import { GenericBanner } from '.'
 const props = {
   p: 2,
   heading: (
-    <Text.span fontWeight='bold' textColor='primary.base'>
-      COVID-19&nbsp;&nbsp;
+    <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+      COVID-19
     </Text.span>
   ),
   text: (
-    <Text.span textColor='primary.base'>
+    <Text.span textColor='primary.base' mr={1}>
       Update: Your travel may be impacted. Please review this hotels important
-      info.&nbsp;&nbsp;
+      info.
     </Text.span>
   ),
   ctaText: (
