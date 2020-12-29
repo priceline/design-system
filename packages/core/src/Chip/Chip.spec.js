@@ -13,12 +13,16 @@ function useToggle(initialValue = false) {
 
 describe('Chip', () => {
   it('renders filter with close icon if selected', () => {
-    render(<Chip selected>Free Wifi</Chip>)
+    render(
+      <Chip id='wifi_chip' selected>
+        Free Wifi
+      </Chip>
+    )
     expect(screen.queryAllByTitle('Close')).toHaveLength(2)
   })
 
   it('renders filter without close icon if not selected', () => {
-    render(<Chip>Free Wifi</Chip>)
+    render(<Chip id='wifi_chip'>Free Wifi</Chip>)
     expect(screen.queryAllByTitle('Close')).toHaveLength(0)
   })
 
@@ -26,7 +30,7 @@ describe('Chip', () => {
     const { result } = renderHook(() => useToggle(false))
     const [selected, toggleSelected] = result.current
     render(
-      <Chip selected={selected} onClick={toggleSelected}>
+      <Chip id='wifi_chip' selected={selected} onClick={toggleSelected}>
         Free Wifi
       </Chip>
     )
@@ -39,7 +43,7 @@ describe('Chip', () => {
   })
 
   it('renders filter chip', () => {
-    render(<Chip>Free Wifi</Chip>)
+    render(<Chip id='wifi_chip'>Free Wifi</Chip>)
 
     const Component = screen.getByText('Free Wifi')
 
@@ -50,7 +54,7 @@ describe('Chip', () => {
 
   it('renders selected filter chip', () => {
     render(
-      <Chip variation='filter' selected>
+      <Chip id='wifi_chip' variation='filter' selected>
         Free Wifi
       </Chip>
     )
@@ -62,7 +66,11 @@ describe('Chip', () => {
   })
 
   it('renders disabled chip', () => {
-    render(<Chip disabled>Free Wifi</Chip>)
+    render(
+      <Chip id='wifi_chip' disabled>
+        Free Wifi
+      </Chip>
+    )
 
     const Component = screen.getByText('Free Wifi')
 

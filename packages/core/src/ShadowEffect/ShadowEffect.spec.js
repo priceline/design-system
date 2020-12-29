@@ -9,7 +9,7 @@ describe('ShadowEffect', () => {
     const mockOnClick = jest.fn()
     render(
       <ShadowEffect onOpen={mockOnOpen} data-testid='overlay'>
-        <Input onClick={mockOnClick} data-testid='input' />
+        <Input onClick={mockOnClick} id='input' data-testid='input' />
       </ShadowEffect>
     )
 
@@ -26,7 +26,7 @@ describe('ShadowEffect', () => {
     const mockOnClose = jest.fn()
     render(
       <ShadowEffect onClose={mockOnClose} data-testid='overlay'>
-        <Input data-testid='input' />
+        <Input id='input' data-testid='input' />
       </ShadowEffect>
     )
 
@@ -42,7 +42,7 @@ describe('ShadowEffect', () => {
     const mockOnFocus = jest.fn()
     render(
       <ShadowEffect shouldOpenOnFocus onOpen={mockOnOpen} data-testid='overlay'>
-        <Input onFocus={mockOnFocus} data-testid='input' />
+        <Input id='input' onFocus={mockOnFocus} data-testid='input' />
       </ShadowEffect>
     )
 
@@ -60,7 +60,7 @@ describe('ShadowEffect', () => {
     const mockOnFocus = jest.fn()
     render(
       <ShadowEffect onOpen={mockOnOpen} data-testid='overlay'>
-        <Input onFocus={mockOnFocus} data-testid='input' />
+        <Input onFocus={mockOnFocus} id='input' data-testid='input' />
       </ShadowEffect>
     )
 
@@ -83,7 +83,7 @@ describe('ShadowEffect', () => {
         onClose={mockOnClose}
         data-testid='overlay'
       >
-        <Input onBlur={mockOnBlur} data-testid='input' />
+        <Input id='input' onBlur={mockOnBlur} data-testid='input' />
       </ShadowEffect>
     )
 
@@ -107,7 +107,7 @@ describe('ShadowEffect', () => {
         onClose={mockOnClose}
         data-testid='overlay'
       >
-        <Input onBlur={mockOnBlur} data-testid='input' />
+        <Input id='input' onBlur={mockOnBlur} data-testid='input' />
       </ShadowEffect>
     )
 
@@ -126,7 +126,7 @@ describe('ShadowEffect', () => {
     const mockOnKeyDown = jest.fn()
     render(
       <ShadowEffect data-testid='overlay'>
-        <Input onKeyDown={mockOnKeyDown} data-testid='input' />
+        <Input id='input' onKeyDown={mockOnKeyDown} data-testid='input' />
       </ShadowEffect>
     )
 
@@ -145,7 +145,7 @@ describe('ShadowEffect', () => {
     const mockOnKeyDown = jest.fn()
     render(
       <ShadowEffect data-testid='overlay'>
-        <Input onKeyDown={mockOnKeyDown} data-testid='input' />
+        <Input id='input' onKeyDown={mockOnKeyDown} data-testid='input' />
       </ShadowEffect>
     )
 
@@ -164,8 +164,8 @@ describe('ShadowEffect', () => {
     expect(() => {
       render(
         <ShadowEffect>
-          <Input />
-          <Input />
+          <Input id='input' />
+          <Input id='input2' />
         </ShadowEffect>
       )
     }).toThrow()

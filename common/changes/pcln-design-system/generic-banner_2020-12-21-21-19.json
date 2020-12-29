@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add a new component GenericBanner to core",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "gabrielle.bellini@priceline.com"
+}
