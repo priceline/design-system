@@ -43,7 +43,7 @@ exports[`Banner accepts non-preset colors 1`] = `
       width={1}
     >
       <span
-        className="-span c3"
+        className="c3"
         fontSize={1}
       />
     </div>
@@ -122,7 +122,7 @@ exports[`Banner renders content from children props 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
       <span>
@@ -204,7 +204,7 @@ exports[`Banner renders with blue bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -283,7 +283,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -362,7 +362,7 @@ exports[`Banner renders with green bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -460,7 +460,7 @@ exports[`Banner renders with header node 1`] = `
             Hello world
           </h3>
           <span
-            class="-span c6"
+            class="c6"
             font-size="1"
           >
             <div
@@ -547,7 +547,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -626,7 +626,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -705,7 +705,7 @@ exports[`Banner renders with lightRed bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -784,7 +784,7 @@ exports[`Banner renders with no props other than theme 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -863,7 +863,7 @@ exports[`Banner renders with orange bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -942,7 +942,7 @@ exports[`Banner renders with red bg 1`] = `
       width={1}
     >
       <span
-        className="-span c5"
+        className="c5"
         fontSize={1}
       />
     </div>
@@ -971,14 +971,14 @@ exports[`Banner renders with text node 1`] = `
   justify-content: space-between;
 }
 
+.c6 {
+  font-size: 14px;
+}
+
 .c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
-}
-
-.c6 {
-  font-size: 14px;
 }
 
 .c2 {
@@ -1032,7 +1032,7 @@ exports[`Banner renders with text node 1`] = `
         Header
       </div>
       <span
-        className="-span c6"
+        className="c6"
         fontSize={1}
       >
         <div
@@ -1067,14 +1067,14 @@ exports[`Banner renders with text string 1`] = `
   justify-content: space-between;
 }
 
+.c6 {
+  font-size: 14px;
+}
+
 .c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
-}
-
-.c6 {
-  font-size: 14px;
 }
 
 .c2 {
@@ -1128,7 +1128,7 @@ exports[`Banner renders with text string 1`] = `
         Header
       </div>
       <span
-        className="-span c6"
+        className="c6"
         fontSize={1}
       >
         Text

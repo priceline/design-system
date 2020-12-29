@@ -12,8 +12,6 @@ const next = keys.map((key) => ({ key, value: theme.colors[key] }))
 
 const Chip = (props) => <Box width={1} px={5} py={4} bg={props.color} />
 
-const Pre = Text.withComponent('pre')
-
 const palette = Object.keys(theme.palette).map((key) => ({
   key,
   value: theme.palette[key],
@@ -23,7 +21,9 @@ const ColorCard = (props) => (
   <Box>
     <Chip name={props.name} color={props.color} />
     <Text f={0}>{props.name}</Text>
-    <Pre m={0}>{props.color}</Pre>
+    <Text as='pre' m={0}>
+      {props.color}
+    </Text>
   </Box>
 )
 

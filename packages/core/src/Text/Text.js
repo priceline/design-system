@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
@@ -108,8 +109,25 @@ Text.propTypes = {
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
 }
 
-Text.span = Text.withComponent('span')
-Text.p = Text.withComponent('p')
-Text.s = Text.withComponent('s')
+Text.span = ({ children, ...props }) => (
+  <Text as='span' {...props}>
+    {children}
+  </Text>
+)
+Text.span.displayName = 'Span'
+
+Text.p = ({ children, ...props }) => (
+  <Text as='p' {...props}>
+    {children}
+  </Text>
+)
+Text.p.displayName = 'Paragraph'
+
+Text.s = ({ children, ...props }) => (
+  <Text as='s' {...props}>
+    {children}
+  </Text>
+)
+Text.s.displayName = 'Strikethrough'
 
 export default Text
