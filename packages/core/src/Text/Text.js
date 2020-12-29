@@ -114,20 +114,20 @@ Text.span = ({ children, ...props }) => (
     {children}
   </Text>
 )
-Text.span.displayName = 'Span'
+Text.span.displayName = 'Text.span'
 
 Text.p = ({ children, ...props }) => (
   <Text as='p' {...props}>
     {children}
   </Text>
 )
-Text.p.displayName = 'Paragraph'
+Text.p.displayName = 'Text.p'
 
 Text.s = ({ children, ...props }) => (
   <Text as='s' {...props}>
     {children}
   </Text>
 )
-Text.s.displayName = 'Strikethrough'
+Text.s.displayName = 'Text.s'
 
 export default Text
