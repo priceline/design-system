@@ -3,9 +3,10 @@
 exports[`Checkbox renders disabled with defaultChecked 1`] = `
 <DocumentFragment>
   .c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   width: 24px;
 }
 
@@ -148,9 +149,10 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 exports[`Checkbox renders disabled with disabled prop 1`] = `
 <DocumentFragment>
   .c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   width: 24px;
 }
 
@@ -292,9 +294,10 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 exports[`Checkbox renders without the theme passed specifically 1`] = `
 <DocumentFragment>
   .c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   width: 24px;
 }
 

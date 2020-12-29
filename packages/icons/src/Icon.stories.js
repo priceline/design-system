@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Flex, Truncate } from 'pcln-design-system'
+import { Box, Flex, Truncate, Text } from 'pcln-design-system'
 
 import * as icons from '../components'
 const { Accessible, Cars, Flights, Hotels } = icons
@@ -73,3 +73,10 @@ export const A11Y = () => (
 A11Y.story = {
   name: 'a11y',
 }
+
+export const AlignedWithText = () => (
+  <Flex alignItems='center'>
+    {<icons.WarningOutline/>}
+    <Text ml={1}>Leapin&apos; lizards!</Text>
+  </Flex>
+)

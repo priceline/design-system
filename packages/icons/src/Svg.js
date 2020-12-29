@@ -53,15 +53,15 @@ const bg = (props) => {
   return null
 }
 
-const Svg = styled('svg')(
-  {
-    flex: 'none',
-  },
-  space,
-  width,
-  color,
-  bg
-)
+const Svg = styled('svg')`
+  flex: 'none';
+  line-height: 1;
+  
+  ${space}
+  ${width}
+  ${color}
+  ${bg}
+`
 
 Svg.propTypes = {
   ...space.propTypes,

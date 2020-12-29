@@ -129,18 +129,20 @@ exports[`Breadcrumbs renders with icons 1`] = `
 }
 
 .c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   margin-right: 8px;
   width: 16px;
   color: #4f6f8f;
 }
 
 .c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   margin-right: 8px;
   width: 16px;
   color: #001023;

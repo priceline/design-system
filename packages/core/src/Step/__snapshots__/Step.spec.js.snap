@@ -91,9 +91,10 @@ exports[`Step should render a completed step correctly 1`] = `
 }
 
 .c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   margin-right: 4px;
   width: 16px;
   color: #007aff;
@@ -204,9 +205,10 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 }
 
 .c2 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   margin-right: 4px;
   width: 16px;
   color: #007aff;

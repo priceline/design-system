@@ -2,9 +2,10 @@
 
 exports[`IconButton renders without props 1`] = `
 .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-flex: 'none';
+  -ms-flex: 'none';
+  flex: 'none';
+  line-height: 1;
   width: 24px;
 }
 
