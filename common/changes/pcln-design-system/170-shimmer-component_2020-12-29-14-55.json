@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add Shimmer component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "email@craigp.me"
+}
