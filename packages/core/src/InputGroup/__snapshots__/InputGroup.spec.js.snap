@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputGroup renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,19 +16,34 @@ exports[`InputGroup renders 1`] = `
   border-style: solid;
 }
 
-border-color:#c0cad5 .c0 > .c1 {
+border-color:#c0cad5 .c1 > .c2 {
   width: 100%;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.c0 .c2 {
+.c1 input {
   border: 0;
   box-shadow: none;
 }
 
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;

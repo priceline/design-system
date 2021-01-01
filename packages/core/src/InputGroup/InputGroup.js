@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { space, themeGet } from 'styled-system'
 
 import { Box } from '../Box'
-import { Input } from '../Input'
 import { getPaletteColor } from '../utils'
 
 const InputGroup = styled.div`
@@ -18,7 +17,7 @@ const InputGroup = styled.div`
     flex: 1 1 auto;
   }
 
-  & ${Input} {
+  & input {
     border: 0;
     box-shadow: none;
   }
