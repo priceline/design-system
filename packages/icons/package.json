@@ -1,6 +1,6 @@
 {
   "name": "pcln-icons",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Priceline React icons based on Material Design Icons",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -59,7 +59,7 @@
     "@rushstack/eslint-config": "^2.3.1"
   },
   "peerDependencies": {
-    "pcln-design-system": "^3.6.1",
+    "pcln-design-system": "^3.6.1 || ^4.0.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "styled-components": ">=4.4.1"

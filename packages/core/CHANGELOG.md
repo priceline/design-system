@@ -1,6 +1,23 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 15 Dec 2020 01:52:10 GMT and should not be manually modified.
+This log was last generated on Mon, 11 Jan 2021 14:00:06 GMT and should not be manually modified.
+
+## 4.3.0
+Mon, 11 Jan 2021 14:00:06 GMT
+
+### Minor changes
+
+- Add Shimmer component
+- Add Accessibility SkipMenu component
+- Add helperText prop for showing error messages in forms
+- add a new component GenericBanner to core
+
+### Patches
+
+- Fix bug when using RatingBadge with color but not bg prop
+- Resolve warnings in Storybook and remove use of deprecated styled().attrs({}) syntax
+- Update Text Extension Display Names
+- Change withComponent to as
 
 ## 4.2.1
 Tue, 15 Dec 2020 01:52:10 GMT
