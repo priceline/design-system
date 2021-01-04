@@ -87,3 +87,7 @@ Uses the color from `theme.palette.warning.base`.
   text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. '
 />
 ```
+
+### Related
+
+- [GenericBanner](/GenericBanner)
