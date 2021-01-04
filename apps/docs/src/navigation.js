@@ -29,6 +29,7 @@ export default [
       { name: 'Flag', path: '/Flag' },
       { name: 'Flex', path: '/Flex' },
       { name: 'FormField', path: '/FormField' },
+      { name: 'GenericBanner', path: '/GenericBanner' },
       { name: 'Heading', path: '/Heading' },
       { name: 'Hide', path: '/Hide' },
       { name: 'Hug', path: '/Hug' },

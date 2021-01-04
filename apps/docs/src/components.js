@@ -9,6 +9,7 @@ import { components as mdxDocsComponents } from 'mdx-docs'
 
 import {
   Button,
+  GenericBanner,
   Heading,
   Link,
   Text,
@@ -157,6 +158,7 @@ const components = {
   a: RouterLink,
   p: Paragraph,
   table: Table,
+  GenericBanner,
   RangeSlider,
   Slider,
   Modal,
