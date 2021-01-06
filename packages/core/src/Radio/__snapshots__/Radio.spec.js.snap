@@ -2,9 +2,9 @@
 
 exports[`Radio Disabled, rendering 1`] = `
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   width: 28px;
 }
@@ -83,9 +83,9 @@ exports[`Radio Disabled, rendering 1`] = `
 
 exports[`Radio Not Selected, rendering 1`] = `
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   width: 28px;
 }
@@ -166,9 +166,9 @@ exports[`Radio Not Selected, rendering 1`] = `
 
 exports[`Radio Selected, rendering 1`] = `
 .c2 {
-  -webkit-flex: 'none';
-  -ms-flex: 'none';
-  flex: 'none';
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   line-height: 1;
   width: 28px;
 }

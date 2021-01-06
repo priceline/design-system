@@ -15,12 +15,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-          fetch-depth: 0
 
       - name: PNPM cache via actions/cache@v2
         id: pnpm-cache
