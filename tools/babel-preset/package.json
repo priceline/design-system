@@ -40,10 +40,11 @@
     "minimist": "^1.2.5"
   },
   "devDependencies": {
-    "@priceline/eslint-config": "^0.0.1",
+    "@priceline/eslint-config": "workspace:*",
     "eslint": "^7.16.0",
     "jest": "^26.4.2",
-    "jest-standard-reporter": "^1.1.1"
+    "jest-standard-reporter": "^1.1.1",
+    "@rushstack/eslint-config": "^2.3.1"
   },
   "peerDependencies": {
     "@babel/cli": "^7.11.6",
