@@ -41,6 +41,7 @@
     "@babel/plugin-syntax-jsx": "^7.10.4",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
+    "@rushstack/eslint-config": "^2.3.1",
     "@svgr/cli": "^4.3.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
@@ -55,8 +56,7 @@
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
-    "styled-components": "^4.4.1",
-    "@rushstack/eslint-config": "^2.3.1"
+    "styled-components": "^4.4.1"
   },
   "peerDependencies": {
     "pcln-design-system": "^3.6.1 || ^4.0.0",

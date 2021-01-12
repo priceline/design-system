@@ -128,7 +128,7 @@
       "summary": "Create release notes from changelogs",
       "description": "Create release notes from changelogs",
       "safeForSimultaneousRushProcesses": false,
-      "shellCommand": "cd tools/create-release-notes && ts-node src/cli/releaseNotes.ts"
+      "shellCommand": "cd tools/create-release-notes && node dist/cli/releaseNotes.js"
     }
 
     // {
