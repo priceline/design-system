@@ -28,6 +28,7 @@
     "@babel/cli": "^7.11.6",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
+    "@rushstack/eslint-config": "^2.3.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "cross-env": "^7.0.2",
@@ -44,15 +45,14 @@
     "react-dom": "^16.13.1",
     "rimraf": "^3.0.2",
     "styled-components": "^4.4.1",
-    "styled-system": "^4.2.4",
-    "@rushstack/eslint-config": "^2.3.1"
+    "styled-system": "^4.2.4"
   },
   "peerDependencies": {
     "pcln-design-system": "^4.3.0",
     "pcln-icons": "^4.0.1",
     "pcln-popover": "^4.0.2",
-    "styled-components": ">=4.4.1",
     "react": "^16.10.0",
-    "react-dom": "^16.10.0"
+    "react-dom": "^16.10.0",
+    "styled-components": ">=4.4.1"
   }
 }

@@ -82,6 +82,7 @@
     "@compositor/kit": "^1.0.47",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
+    "@rushstack/eslint-config": "^2.3.1",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/react": "^5.3.21",
@@ -99,9 +100,8 @@
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
-    "stylis": "^3.5.4",
     "styled-components": "^4.4.1",
-    "@rushstack/eslint-config": "^2.3.1"
+    "stylis": "^3.5.4"
   },
   "peerDependencies": {
     "react": "^16.10.0",
