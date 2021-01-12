@@ -2,6 +2,25 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.0.1",
+      "tag": "pcln-icons_v4.0.1",
+      "date": "Mon, 11 Jan 2021 14:00:06 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Set line-height to 1 to fix issues when aligning icons with Text",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "b59ec6db3b0022579859d50a33f97dd3024b83c7"
+          },
+          {
+            "comment": "Upgrade to latest version of DS core",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a48cb6ef05230f13113538899d7319cc8f9e8697"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.0.0",
       "tag": "pcln-icons_v4.0.0",
       "date": "Tue, 17 Nov 2020 21:35:08 GMT",

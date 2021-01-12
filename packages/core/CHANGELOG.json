@@ -2,6 +2,57 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.3.0",
+      "tag": "pcln-design-system_v4.3.0",
+      "date": "Mon, 11 Jan 2021 14:00:06 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add Shimmer component",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a7acba295476b1253620743671c8c7d48ddbfbd0"
+          },
+          {
+            "comment": "Add Accessibility SkipMenu component",
+            "author": "Daniel Giraldo <daniel.giraldo@priceline.com>",
+            "commit": "b661954fd76583a91f1f26e8baa422c93cbd4f3f"
+          },
+          {
+            "comment": "Add helperText prop for showing error messages in forms",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "8ad3195e830e18511ead6cd2f1f14e614dd26025"
+          },
+          {
+            "comment": "add a new component GenericBanner to core",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "f96a31106e53b1f92ea0cad6bae055d497d7e4db"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Fix bug when using RatingBadge with color but not bg prop",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "366e6521107e6ccf61b2c59cfed536067a6eed55"
+          },
+          {
+            "comment": "Resolve warnings in Storybook and remove use of deprecated styled().attrs({}) syntax",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "b83b4e3e9b3ccae91dda80bfc87543b621631698"
+          },
+          {
+            "comment": "Update Text Extension Display Names",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "7096fa92411261a21adf0c11c911d9e4a178c51e"
+          },
+          {
+            "comment": "Change withComponent to as",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "48ba3457565118a7a653248804c152857cbe455d"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.1",
       "tag": "pcln-design-system_v4.2.1",
       "date": "Tue, 15 Dec 2020 01:52:10 GMT",
