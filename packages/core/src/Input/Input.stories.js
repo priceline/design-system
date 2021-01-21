@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Input, Label, Divider } from '..'
+import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
+import { Box, Input, Label, Divider, Button } from '..'
 
 export default {
   title: 'Input',
@@ -73,6 +74,18 @@ export const WithHelperText = () => (
   </Box>
 )
 
-WithExternalLabel.story = {
-  name: 'With external label',
-}
+export const ForwardsRefs = () => (
+  <ForwardRefDemo
+    refChild={(dsRef) => (
+      <>
+        <Input ref={dsRef} placeholder='Priceline!' />
+        <Button
+          onClick={() => dsRef.current.focus()}
+          mt={3}
+        >
+          Click to focus the input via ref
+        </Button>
+      </>
+    )}
+  />
+)

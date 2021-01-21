@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 11 Jan 2021 14:00:06 GMT and should not be manually modified.
+This log was last generated on Thu, 21 Jan 2021 20:58:12 GMT and should not be manually modified.
+
+## 4.3.1
+Thu, 21 Jan 2021 20:58:12 GMT
+
+### Patches
+
+- Fix ref forwarding for Input component
 
 ## 4.3.0
 Mon, 11 Jan 2021 14:00:06 GMT
