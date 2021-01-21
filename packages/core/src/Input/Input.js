@@ -42,19 +42,19 @@ const StyledInput = styled.input`
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
 
-export const Input = (props) => {
+export const Input = React.forwardRef((props, ref) => {
   const { helperText, color, ...restProps } = props
 
   return (
     <>
-      <StyledInput {...restProps} color={color} />
+      <StyledInput {...restProps} color={color} ref={ref}/>
       {helperText &&
         React.cloneElement(helperText, {
           color: helperText?.props?.color || color,
         })}
     </>
   )
-}
+})
 
 const HelperText = styled(Text).attrs(() => ({
   mt: 2,

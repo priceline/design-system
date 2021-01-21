@@ -1,7 +1,8 @@
 import React from 'react'
-import { render } from 'testing-library'
+import { render, fireEvent } from 'testing-library'
+import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 
-import { Input, theme, createTheme, getPaletteColor } from '..'
+import { Button, Input, theme, createTheme, getPaletteColor } from '..'
 
 const id = 'fake-test-id'
 
@@ -23,6 +24,24 @@ describe('Input', () => {
       <Input id={id} fontSize={4} />
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+  test('forwards ref to the input', () => {
+    const target = 'TARGET'
+    const placeholder = 'Apples'
+    const { getByText, getByPlaceholderText } = render(
+      <ForwardRefDemo
+        refChild={(dsRef) => (
+          <>
+            <Input ref={dsRef} placeholder={placeholder} />
+            <Button onClick={() => dsRef.current.focus()} mt={3}>
+              {target}
+            </Button>
+          </>
+        )}
+      />
+    )
+    fireEvent.click(getByText(target))
+    expect(getByPlaceholderText(placeholder)).toHaveFocus()
   })
 
   describe('helper text', function () {
