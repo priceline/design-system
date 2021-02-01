@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update BackgroundImage height prop to accept number",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "james.stewart@priceline.com"
+}

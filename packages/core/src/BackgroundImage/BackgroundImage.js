@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { width } from 'styled-system'
+import { width, height } from 'styled-system'
 import { applyVariations, getPaletteColor } from '../utils'
 
 const variations = {
@@ -14,8 +14,6 @@ const variations = {
 
 const image = (props) =>
   props.image ? { backgroundImage: `url(${props.image})` } : null
-
-const height = (props) => (props.height ? { height: props.height } : null)
 
 const BackgroundImage = styled.div`
   background-position: center;
@@ -31,8 +29,12 @@ BackgroundImage.defaultProps = {
 }
 
 BackgroundImage.propTypes = {
+  height: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.array
+  ]),
   /** background-image url */
-  height: PropTypes.string,
   image: PropTypes.string,
   variation: PropTypes.oneOf(Object.keys(variations)),
   width: PropTypes.oneOfType([

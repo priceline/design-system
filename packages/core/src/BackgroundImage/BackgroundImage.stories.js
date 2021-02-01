@@ -64,6 +64,18 @@ export const FixedHeight = () => (
   </Box>
 )
 
+export const FixedIntHeight = () => (
+  <Box>
+    <BackgroundImage height={400} image={image} width='360px'>
+      <Box p={4}>
+        <Text fontSize={6} bold textAlign='center' color='white'>
+          Hello
+        </Text>
+      </Box>
+    </BackgroundImage>
+  </Box>
+)
+
 export const Responsive = () => (
   <Flex>
     <BackgroundImage
