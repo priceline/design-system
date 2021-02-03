@@ -80,7 +80,7 @@ export const Responsive = () => (
   <Flex>
     <BackgroundImage
       width={['100px', '216px', '260px']}
-      height='320px'
+      height={['100px', '300px', '600px']}
       image={image}
     >
       <Box p={4}>

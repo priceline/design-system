@@ -29,19 +29,11 @@ BackgroundImage.defaultProps = {
 }
 
 BackgroundImage.propTypes = {
-  height: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  ...height.propTypes,
+  ...width.propTypes,
   /** background-image url */
   image: PropTypes.string,
   variation: PropTypes.oneOf(Object.keys(variations)),
-  width: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.array,
-  ]),
 }
 
 BackgroundImage.displayName = 'BackgroundImage'
