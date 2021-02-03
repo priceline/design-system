@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.3.2",
+      "tag": "pcln-design-system_v4.3.2",
+      "date": "Wed, 03 Feb 2021 20:28:22 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update BackgroundImage height prop to accept number",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "b576779f081d6f019c61ad49139ab16241fee9e3"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.3.1",
       "tag": "pcln-design-system_v4.3.1",
       "date": "Thu, 21 Jan 2021 20:58:12 GMT",

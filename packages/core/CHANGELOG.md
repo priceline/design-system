@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 21 Jan 2021 20:58:12 GMT and should not be manually modified.
+This log was last generated on Wed, 03 Feb 2021 20:28:22 GMT and should not be manually modified.
+
+## 4.3.2
+Wed, 03 Feb 2021 20:28:22 GMT
+
+### Patches
+
+- Update BackgroundImage height prop to accept number
 
 ## 4.3.1
 Thu, 21 Jan 2021 20:58:12 GMT
