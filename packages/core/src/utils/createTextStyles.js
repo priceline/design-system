@@ -53,8 +53,8 @@ const createTextStyles = (theme = {}) => {
       fontSize: fontSizes[0] + 'px',
       fontWeight: fontWeights.bold,
       lineHeight: lineHeights.display,
-      letterSpacing: letterSpacings.caps,
-      textTransform: 'uppercase',
+      // letterSpacing: letterSpacings.caps,
+      // textTransform: 'uppercase',
     },
     body2: {
       fontSize: fontSizes[2] + 'px',

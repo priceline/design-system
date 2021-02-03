@@ -25,6 +25,11 @@ const colors = {
   background: 'background',
 }
 
+const TestStamp = styled(Stamp)`
+  text-transform: ${(props) =>
+    props.allCapitalText ? `uppercase` : `capitalize`};
+`
+
 const BlueStamp = styled(Stamp).attrs(() => ({
   borderColor: 'primary',
   bg: 'primary',
@@ -78,6 +83,60 @@ export const CustomBackgroundAndBorderColor = () => (
 CustomBackgroundAndBorderColor.story = {
   name: 'Custom Background and Border Color',
 }
+
+export const TestingSomething = () => (
+  <div>
+    <TestStamp
+      allCapitalText={false}
+      size={['small', null, null, null, null, null]}
+    >
+      <PinIcon pr={1} />
+      <Text>Always small</Text>
+    </TestStamp>
+    <TestStamp
+      allCapitalText={false}
+      size={['medium', null, null, null, null, null]}
+    >
+      <PinIcon pr={1} />
+      <Text>Larger at xs</Text>
+    </TestStamp>
+    <TestStamp
+      allCapitalText={false}
+      size={['small', 'medium', null, null, null, null]}
+    >
+      <PinIcon pr={1} />
+      <Text>Larger at sm</Text>
+    </TestStamp>
+    <TestStamp
+      allCapitalText={false}
+      size={['small', null, 'medium', null, null, null]}
+    >
+      <PinIcon pr={1} />
+      <Text>Larger at md</Text>
+    </TestStamp>
+    <TestStamp
+      allCapitalText={false}
+      size={['small', 'small', null, 'medium', null, null]}
+    >
+      <PinIcon pr={1} />
+      <Text>Larger at lg</Text>
+    </TestStamp>
+    <TestStamp
+      allCapitalText={false}
+      size={['small', null, null, null, 'medium', null]}
+    >
+      <PinIcon pr={1} />
+      <Text>Larger at xl</Text>
+    </TestStamp>
+    <TestStamp
+      allCapitalText={false}
+      size={['small', null, null, null, null, 'medium']}
+    >
+      <PinIcon pr={1} />
+      <Text>Larger at xxl</Text>
+    </TestStamp>
+  </div>
+)
 
 export const CustomTextSize = () => (
   <div>
