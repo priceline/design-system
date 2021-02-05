@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize } from 'styled-system'
-import { Close as CloseIcon } from 'pcln-icons'
+import { ArrowRight } from 'pcln-icons'
 import { getPaletteColor } from '../utils'
 import { Box } from '../Box'
 import { Label } from '../Label'
+import { Text } from '../Text'
 
 const ChipInput = styled.input`
   appearance: none;
@@ -45,24 +46,9 @@ const ChipContent = styled(Box)`
       : `
       &:hover {
         border: 1px solid ${getPaletteColor('base')(props)};
-        background-color: ${getPaletteColor('background.light')(props)};
+        background-color: ${getPaletteColor('background.lightest')(props)};
       }
     `}
-
-  & > svg {
-    width: 20px;
-    height: 20px;
-
-    ${(props) =>
-      props.selected &&
-      `
-      &:last-child {
-          width: 16px;
-          height: 16px;
-      }
-    `}
-  }
-
   ${space};
   ${fontSize};
 `
@@ -75,21 +61,36 @@ const ChipLabel = styled(Label)`
   margin: 0;
 
   > input:focus ~ ${ChipContent} {
-    background-color: ${getPaletteColor('background.base')};
-    border: 1px solid ${getPaletteColor('base')};
+    box-shadow: 0 0 0 1px ${getPaletteColor('base')};
+    border-color: ${getPaletteColor('base')};
   }
 `
 
-function Chip({
+const evaluateFontSize = (size) => (size === 'md' ? 1 : 0)
+
+const evaluateIconSize = (size) => (size === 'md' ? '24px' : '20px')
+
+const evaluateChipHeight = (size) => (size === 'md' ? '38px' : '32px')
+
+const getSize = (size, evaluate) =>
+  typeof size === 'string' ? evaluate(size) : size.map((s) => evaluate(s))
+
+const Chip = ({
   id,
   disabled,
   selected,
-  selectedIcon,
   children,
   onClick,
+  label,
+  Icon,
+  facet,
+  ActionIcon,
+  image,
+  size,
+  bridgeLabel,
   ...props
-}) {
-  const SelectedIcon = selectedIcon || CloseIcon
+}) => {
+  const fontSize = getSize(size, evaluateFontSize)
 
   return (
     <ChipLabel htmlFor={id} {...props}>
@@ -101,9 +102,33 @@ function Chip({
         checked={selected}
         onChange={onClick}
       />
-      <ChipContent disabled={disabled} selected={selected} {...props}>
+      <ChipContent
+        height={!children && getSize(size, evaluateChipHeight)}
+        disabled={disabled}
+        selected={selected}
+        size={size}
+        {...props}
+      >
         {children}
-        {selected && <SelectedIcon title='Close' ml={2} />}
+        {image}
+        {!!Icon && <Icon size={getSize(size, evaluateIconSize)} />}
+        {!!label && (
+          <Text fontSize={fontSize} regular ml={!!Icon || !!image ? 2 : 0}>
+            {label}
+          </Text>
+        )}
+        {!!facet && (
+          <Text fontSize={fontSize} regular ml={1}>
+            {facet}
+          </Text>
+        )}
+        {!!bridgeLabel && <ArrowRight size='16px' ml={2} />}
+        {!!bridgeLabel && (
+          <Text fontSize={fontSize} regular ml={2}>
+            {bridgeLabel}
+          </Text>
+        )}
+        {!!ActionIcon && <ActionIcon size='16px' ml={2} />}
       </ChipContent>
     </ChipLabel>
   )
@@ -117,10 +142,17 @@ Chip.propTypes = {
   id: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   selected: PropTypes.bool,
-  selectedIcon: PropTypes.node,
+  facet: PropTypes.string,
+  label: PropTypes.string,
+  bridgeLabel: PropTypes.string,
+  Icon: PropTypes.node,
+  ActionIcon: PropTypes.node,
+  Image: PropTypes.object,
+  bridgeLabel: PropTypes.string,
 }
 
 Chip.defaultProps = {
+  size: 'sm',
   color: 'primary',
   px: 2,
   py: 1,
