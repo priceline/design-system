@@ -10,7 +10,14 @@ import styled from 'styled-components'
 const StyledButton = styled(Button)`
   padding: 100px;
 `
-const variations = { outline: 'outline', fill: 'fill', link: 'link' }
+const variations = {
+  outline: 'outline',
+  fill: 'fill',
+  link: 'link',
+  subtle: 'subtle',
+  plain: 'plain',
+  lightFill: 'lightFill',
+}
 const sizes = { small: 'small', medium: 'medium', large: 'large' }
 const colors = {
   primary: 'primary',

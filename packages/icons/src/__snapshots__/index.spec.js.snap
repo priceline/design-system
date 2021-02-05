@@ -2,19 +2,7 @@
 
 exports[`renders Ac 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -29,7 +17,7 @@ exports[`renders Ac 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bwzfXH jvlMsP"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -48,19 +36,7 @@ exports[`renders Ac 1`] = `
 
 exports[`renders Accessible 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -75,7 +51,7 @@ exports[`renders Accessible 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-htpNat jLPIAx"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -94,19 +70,7 @@ exports[`renders Accessible 1`] = `
 
 exports[`renders AddAlarm 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -121,7 +85,7 @@ exports[`renders AddAlarm 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bxivhb evoFYU"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -141,19 +105,7 @@ exports[`renders AddAlarm 1`] = `
 
 exports[`renders Airplane 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -168,7 +120,7 @@ exports[`renders Airplane 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ifAKCX eJUBcr"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -187,19 +139,7 @@ exports[`renders Airplane 1`] = `
 
 exports[`renders Arrival 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -214,7 +154,7 @@ exports[`renders Arrival 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-EHOje imWHNL"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -233,19 +173,7 @@ exports[`renders Arrival 1`] = `
 
 exports[`renders ArrowDown 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -260,7 +188,7 @@ exports[`renders ArrowDown 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bZQynM bXjywp"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -279,19 +207,7 @@ exports[`renders ArrowDown 1`] = `
 
 exports[`renders ArrowLeft 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -306,7 +222,7 @@ exports[`renders ArrowLeft 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gzVnrw izRhDd"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -325,19 +241,7 @@ exports[`renders ArrowLeft 1`] = `
 
 exports[`renders ArrowRight 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -352,7 +256,7 @@ exports[`renders ArrowRight 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-htoDjs gqsym"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -371,19 +275,7 @@ exports[`renders ArrowRight 1`] = `
 
 exports[`renders ArrowUp 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -398,7 +290,7 @@ exports[`renders ArrowUp 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dnqmqq fKLxgS"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -417,19 +309,7 @@ exports[`renders ArrowUp 1`] = `
 
 exports[`renders Attention 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -444,7 +324,7 @@ exports[`renders Attention 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iwsKbI kSGjXI"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -463,19 +343,7 @@ exports[`renders Attention 1`] = `
 
 exports[`renders Automatic 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -490,7 +358,7 @@ exports[`renders Automatic 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gZMcBi ehkcON"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -509,19 +377,7 @@ exports[`renders Automatic 1`] = `
 
 exports[`renders Backpack 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -536,7 +392,7 @@ exports[`renders Backpack 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gqjmRU cPoqwx"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -556,19 +412,7 @@ exports[`renders Backpack 1`] = `
 
 exports[`renders Bag 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -583,7 +427,7 @@ exports[`renders Bag 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-VigVT cbwjLj"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -602,19 +446,7 @@ exports[`renders Bag 1`] = `
 
 exports[`renders Beach 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -629,7 +461,7 @@ exports[`renders Beach 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jTzLTM hwzEEW"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -648,19 +480,7 @@ exports[`renders Beach 1`] = `
 
 exports[`renders Bed 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -675,7 +495,7 @@ exports[`renders Bed 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fjdhpX fuYcGO"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -694,19 +514,7 @@ exports[`renders Bed 1`] = `
 
 exports[`renders BedKing 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -721,7 +529,7 @@ exports[`renders BedKing 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jzJRlG jRogSU"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -741,19 +549,7 @@ exports[`renders BedKing 1`] = `
 
 exports[`renders BedSingle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -768,7 +564,7 @@ exports[`renders BedSingle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cSHVUG heSfsF"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -788,19 +584,7 @@ exports[`renders BedSingle 1`] = `
 
 exports[`renders BeenHere 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -815,7 +599,7 @@ exports[`renders BeenHere 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kAzzGY rpyzZ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -835,19 +619,7 @@ exports[`renders BeenHere 1`] = `
 
 exports[`renders Bike 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -862,7 +634,7 @@ exports[`renders Bike 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-chPdSV Drqsn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -882,19 +654,7 @@ exports[`renders Bike 1`] = `
 
 exports[`renders Bookmark 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -909,7 +669,7 @@ exports[`renders Bookmark 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kgoBCf gumNzb"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -929,19 +689,7 @@ exports[`renders Bookmark 1`] = `
 
 exports[`renders BookmarkActivated 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -956,7 +704,7 @@ exports[`renders BookmarkActivated 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kGXeez lfVKae"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -976,19 +724,7 @@ exports[`renders BookmarkActivated 1`] = `
 
 exports[`renders BoxChecked 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1003,7 +739,7 @@ exports[`renders BoxChecked 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kpOJdX jVcEAx"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1022,19 +758,7 @@ exports[`renders BoxChecked 1`] = `
 
 exports[`renders BoxEmpty 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1049,7 +773,7 @@ exports[`renders BoxEmpty 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dxgOiQ kwSgrv"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1068,19 +792,7 @@ exports[`renders BoxEmpty 1`] = `
 
 exports[`renders BoxMinus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1095,7 +807,7 @@ exports[`renders BoxMinus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ckVGcZ fHMGtc"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1114,19 +826,7 @@ exports[`renders BoxMinus 1`] = `
 
 exports[`renders BoxPlus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1141,7 +841,7 @@ exports[`renders BoxPlus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jKJlTe jmzVgs"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1160,19 +860,7 @@ exports[`renders BoxPlus 1`] = `
 
 exports[`renders Breakfast 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1187,7 +875,7 @@ exports[`renders Breakfast 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eNQAEJ cixLnu"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1206,19 +894,7 @@ exports[`renders Breakfast 1`] = `
 
 exports[`renders Broom 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1233,7 +909,7 @@ exports[`renders Broom 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hMqMXs goIwUi"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1253,19 +929,7 @@ exports[`renders Broom 1`] = `
 
 exports[`renders Build 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1280,7 +944,7 @@ exports[`renders Build 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kEYyzF kkkAiT"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1299,19 +963,7 @@ exports[`renders Build 1`] = `
 
 exports[`renders Bus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1326,7 +978,7 @@ exports[`renders Bus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kkGfuU kaeVck"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1346,19 +998,7 @@ exports[`renders Bus 1`] = `
 
 exports[`renders Business 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1373,7 +1013,7 @@ exports[`renders Business 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iAyFgw khHqPu"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1392,19 +1032,7 @@ exports[`renders Business 1`] = `
 
 exports[`renders Cake 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1419,7 +1047,7 @@ exports[`renders Cake 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hSdWYo dnRWNe"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1438,19 +1066,7 @@ exports[`renders Cake 1`] = `
 
 exports[`renders Calendar 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1465,7 +1081,7 @@ exports[`renders Calendar 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eHgmQL jPNQau"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1484,19 +1100,7 @@ exports[`renders Calendar 1`] = `
 
 exports[`renders CalendarCheck 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1511,7 +1115,7 @@ exports[`renders CalendarCheck 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cvbbAY fxGqWl"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1531,19 +1135,7 @@ exports[`renders CalendarCheck 1`] = `
 
 exports[`renders CalendarClock 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1558,7 +1150,7 @@ exports[`renders CalendarClock 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jWBwVP foFlNd"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1578,19 +1170,7 @@ exports[`renders CalendarClock 1`] = `
 
 exports[`renders CarCircle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1605,7 +1185,7 @@ exports[`renders CarCircle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-brqgnP gUTxTg"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1624,19 +1204,7 @@ exports[`renders CarCircle 1`] = `
 
 exports[`renders CarDoor 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1651,7 +1219,7 @@ exports[`renders CarDoor 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cMljjf fpGtgU"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1670,19 +1238,7 @@ exports[`renders CarDoor 1`] = `
 
 exports[`renders CarWash 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1697,7 +1253,7 @@ exports[`renders CarWash 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jAaTju itmzmC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1717,19 +1273,7 @@ exports[`renders CarWash 1`] = `
 
 exports[`renders CardTravel 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1744,7 +1288,7 @@ exports[`renders CardTravel 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jDwBTQ iKvrTo"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1764,19 +1308,7 @@ exports[`renders CardTravel 1`] = `
 
 exports[`renders Carriage 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1791,7 +1323,7 @@ exports[`renders Carriage 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gPEVay hgVAtz"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1810,19 +1342,7 @@ exports[`renders Carriage 1`] = `
 
 exports[`renders Cars 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1837,7 +1357,7 @@ exports[`renders Cars 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iRbamj hjPtqu"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1856,19 +1376,7 @@ exports[`renders Cars 1`] = `
 
 exports[`renders Casino 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1883,7 +1391,7 @@ exports[`renders Casino 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jlyJG bXcqxb"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1902,19 +1410,7 @@ exports[`renders Casino 1`] = `
 
 exports[`renders ChargeStation 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1929,7 +1425,7 @@ exports[`renders ChargeStation 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gipzik jclHjt"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1949,19 +1445,7 @@ exports[`renders ChargeStation 1`] = `
 
 exports[`renders Chart 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -1976,7 +1460,7 @@ exports[`renders Chart 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-csuQGl dhxxtV"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -1995,19 +1479,7 @@ exports[`renders Chart 1`] = `
 
 exports[`renders ChartAlt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2022,7 +1494,7 @@ exports[`renders ChartAlt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-Rmtcm bbCvTm"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2042,19 +1514,7 @@ exports[`renders ChartAlt 1`] = `
 
 exports[`renders Chat 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2069,7 +1529,7 @@ exports[`renders Chat 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bRBYWo kuaIam"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2088,19 +1548,7 @@ exports[`renders Chat 1`] = `
 
 exports[`renders ChatBubble 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2115,7 +1563,7 @@ exports[`renders ChatBubble 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hzDkRC cDQfaz"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2135,19 +1583,7 @@ exports[`renders ChatBubble 1`] = `
 
 exports[`renders Check 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2162,7 +1598,7 @@ exports[`renders Check 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jhAzac ftiWfa"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2181,19 +1617,7 @@ exports[`renders Check 1`] = `
 
 exports[`renders Checklist 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2208,7 +1632,7 @@ exports[`renders Checklist 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fBuWsC keWoVI"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2228,19 +1652,7 @@ exports[`renders Checklist 1`] = `
 
 exports[`renders ChevronDown 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2255,7 +1667,7 @@ exports[`renders ChevronDown 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fMiknA eTBqhq"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2274,19 +1686,7 @@ exports[`renders ChevronDown 1`] = `
 
 exports[`renders ChevronLeft 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2301,7 +1701,7 @@ exports[`renders ChevronLeft 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dVhcbM dhBNHn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2320,19 +1720,7 @@ exports[`renders ChevronLeft 1`] = `
 
 exports[`renders ChevronRight 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2347,7 +1735,7 @@ exports[`renders ChevronRight 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eqIVtm fzDXsa"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2366,19 +1754,7 @@ exports[`renders ChevronRight 1`] = `
 
 exports[`renders ChevronUp 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2393,7 +1769,7 @@ exports[`renders ChevronUp 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fAjcbJ jZTEXT"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2412,19 +1788,7 @@ exports[`renders ChevronUp 1`] = `
 
 exports[`renders CityView 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2439,7 +1803,7 @@ exports[`renders CityView 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-caSCKo gjDArn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2458,19 +1822,7 @@ exports[`renders CityView 1`] = `
 
 exports[`renders Clock 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2485,7 +1837,7 @@ exports[`renders Clock 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gisBJw jghRZC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2504,19 +1856,7 @@ exports[`renders Clock 1`] = `
 
 exports[`renders Close 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2531,7 +1871,7 @@ exports[`renders Close 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kjoXOD cctnWZ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2550,19 +1890,7 @@ exports[`renders Close 1`] = `
 
 exports[`renders Cloud 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2577,7 +1905,7 @@ exports[`renders Cloud 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cHGsZl SZwsZ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2596,19 +1924,7 @@ exports[`renders Cloud 1`] = `
 
 exports[`renders CollisionCoverage 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2623,7 +1939,7 @@ exports[`renders CollisionCoverage 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-TOsTZ BZKMK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2642,19 +1958,7 @@ exports[`renders CollisionCoverage 1`] = `
 
 exports[`renders ContactMail 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2669,7 +1973,7 @@ exports[`renders ContactMail 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kgAjT hBXkco"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2689,19 +1993,7 @@ exports[`renders ContactMail 1`] = `
 
 exports[`renders ContactPhone 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2716,7 +2008,7 @@ exports[`renders ContactPhone 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cJSrbW fzTlzs"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2736,19 +2028,7 @@ exports[`renders ContactPhone 1`] = `
 
 exports[`renders ConvenienceStore 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2763,7 +2043,7 @@ exports[`renders ConvenienceStore 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ksYbfQ eqJQrh"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2783,19 +2063,7 @@ exports[`renders ConvenienceStore 1`] = `
 
 exports[`renders Copy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2810,7 +2078,7 @@ exports[`renders Copy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hmzhuo cKjNeb"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2830,19 +2098,7 @@ exports[`renders Copy 1`] = `
 
 exports[`renders Couch 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2857,7 +2113,7 @@ exports[`renders Couch 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-frDJqD hhXPch"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2877,19 +2133,7 @@ exports[`renders Couch 1`] = `
 
 exports[`renders Coupon 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2904,7 +2148,7 @@ exports[`renders Coupon 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kvZOFW bYZqgh"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2923,19 +2167,7 @@ exports[`renders Coupon 1`] = `
 
 exports[`renders CreditCard 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2950,7 +2182,7 @@ exports[`renders CreditCard 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hqyNC eWKggZ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -2969,19 +2201,7 @@ exports[`renders CreditCard 1`] = `
 
 exports[`renders Cruises 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -2996,7 +2216,7 @@ exports[`renders Cruises 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jbKcbu eeYyDw"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3015,19 +2235,7 @@ exports[`renders Cruises 1`] = `
 
 exports[`renders Departure 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3042,7 +2250,7 @@ exports[`renders Departure 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dNLxif dFDCee"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3061,19 +2269,7 @@ exports[`renders Departure 1`] = `
 
 exports[`renders Devices 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3088,7 +2284,7 @@ exports[`renders Devices 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jqCOkK ioattl"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3107,19 +2303,7 @@ exports[`renders Devices 1`] = `
 
 exports[`renders DevicesImportant 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3134,7 +2318,7 @@ exports[`renders DevicesImportant 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-uJMKN kBijRo"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3154,19 +2338,7 @@ exports[`renders DevicesImportant 1`] = `
 
 exports[`renders Directions 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3181,7 +2353,7 @@ exports[`renders Directions 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bbmXgH bIWoKv"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3200,19 +2372,7 @@ exports[`renders Directions 1`] = `
 
 exports[`renders Discount 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3227,7 +2387,7 @@ exports[`renders Discount 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gGBfsJ liKiMf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3246,19 +2406,7 @@ exports[`renders Discount 1`] = `
 
 exports[`renders Document 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3273,7 +2421,7 @@ exports[`renders Document 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jnlKLf fvnpJJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3292,19 +2440,7 @@ exports[`renders Document 1`] = `
 
 exports[`renders Dollar 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3319,7 +2455,7 @@ exports[`renders Dollar 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fYxtnH fZruHW"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3338,19 +2474,7 @@ exports[`renders Dollar 1`] = `
 
 exports[`renders DollarCircle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3365,7 +2489,7 @@ exports[`renders DollarCircle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-tilXH lizAjp"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3384,19 +2508,7 @@ exports[`renders DollarCircle 1`] = `
 
 exports[`renders Dot 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3411,7 +2523,7 @@ exports[`renders Dot 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hEsumM fCTSYM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3430,19 +2542,7 @@ exports[`renders Dot 1`] = `
 
 exports[`renders DoubleOccupancy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3457,7 +2557,7 @@ exports[`renders DoubleOccupancy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ktHwxA fivwvl"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3476,19 +2576,7 @@ exports[`renders DoubleOccupancy 1`] = `
 
 exports[`renders Download 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3503,7 +2591,7 @@ exports[`renders Download 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cIShpX bTGbsK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3522,19 +2610,7 @@ exports[`renders Download 1`] = `
 
 exports[`renders DownloadAlt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3549,7 +2625,7 @@ exports[`renders DownloadAlt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kafWEX jvlvgN"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3569,19 +2645,7 @@ exports[`renders DownloadAlt 1`] = `
 
 exports[`renders EarlyBird 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3596,7 +2660,7 @@ exports[`renders EarlyBird 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-feJyhm bfGGeS"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3615,19 +2679,7 @@ exports[`renders EarlyBird 1`] = `
 
 exports[`renders Edit 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3642,7 +2694,7 @@ exports[`renders Edit 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iELTvK grycbS"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3661,19 +2713,7 @@ exports[`renders Edit 1`] = `
 
 exports[`renders Electric 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3688,7 +2728,7 @@ exports[`renders Electric 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cmTdod jPqxRd"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3707,19 +2747,7 @@ exports[`renders Electric 1`] = `
 
 exports[`renders Email 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3734,7 +2762,7 @@ exports[`renders Email 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jwKygS ggEayf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3753,19 +2781,7 @@ exports[`renders Email 1`] = `
 
 exports[`renders Emoticon 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3780,7 +2796,7 @@ exports[`renders Emoticon 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-btzYZH fyLHOG"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3799,19 +2815,7 @@ exports[`renders Emoticon 1`] = `
 
 exports[`renders Event 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3826,7 +2830,7 @@ exports[`renders Event 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-lhVmIH ibTLIH"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3845,19 +2849,7 @@ exports[`renders Event 1`] = `
 
 exports[`renders EventAvailable 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3872,7 +2864,7 @@ exports[`renders EventAvailable 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bYSBpT cjdRzQ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3891,19 +2883,7 @@ exports[`renders EventAvailable 1`] = `
 
 exports[`renders EventBusy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3918,7 +2898,7 @@ exports[`renders EventBusy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-elJkPf kOrMmd"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3937,19 +2917,7 @@ exports[`renders EventBusy 1`] = `
 
 exports[`renders ExitToApp 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -3964,7 +2932,7 @@ exports[`renders ExitToApp 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jtRfpW LkGvB"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -3984,19 +2952,7 @@ exports[`renders ExitToApp 1`] = `
 
 exports[`renders ExternalLink 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4011,7 +2967,7 @@ exports[`renders ExternalLink 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kTUwUJ kVFefW"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4031,19 +2987,7 @@ exports[`renders ExternalLink 1`] = `
 
 exports[`renders Facebook 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4058,7 +3002,7 @@ exports[`renders Facebook 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dqBHgY dIrgra"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4077,19 +3021,7 @@ exports[`renders Facebook 1`] = `
 
 exports[`renders Family 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4104,7 +3036,7 @@ exports[`renders Family 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gxMtzJ dtysjN"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4124,19 +3056,7 @@ exports[`renders Family 1`] = `
 
 exports[`renders FavoriteHotel 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4151,7 +3071,7 @@ exports[`renders FavoriteHotel 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dfVpRl eCKAWX"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4170,19 +3090,7 @@ exports[`renders FavoriteHotel 1`] = `
 
 exports[`renders Filter 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4197,7 +3105,7 @@ exports[`renders Filter 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gzOgki boJbVD"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4216,19 +3124,7 @@ exports[`renders Filter 1`] = `
 
 exports[`renders Fitness 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4243,7 +3139,7 @@ exports[`renders Fitness 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iyvyFf hnalgi"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4262,19 +3158,7 @@ exports[`renders Fitness 1`] = `
 
 exports[`renders Flame 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4289,7 +3173,7 @@ exports[`renders Flame 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hwwEjo kbfNNk"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4308,19 +3192,7 @@ exports[`renders Flame 1`] = `
 
 exports[`renders FlightCircle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4335,7 +3207,7 @@ exports[`renders FlightCircle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kPVwWT jHeJkE"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4354,19 +3226,7 @@ exports[`renders FlightCircle 1`] = `
 
 exports[`renders FlightCoverage 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4381,7 +3241,7 @@ exports[`renders FlightCoverage 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kfGgVZ fpJOGj"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4400,19 +3260,7 @@ exports[`renders FlightCoverage 1`] = `
 
 exports[`renders Flights 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4427,7 +3275,7 @@ exports[`renders Flights 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-esjQYD gXYBvE"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4446,19 +3294,7 @@ exports[`renders Flights 1`] = `
 
 exports[`renders FreeCancellation 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4473,7 +3309,7 @@ exports[`renders FreeCancellation 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kIPQKe dMGQWJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4492,19 +3328,7 @@ exports[`renders FreeCancellation 1`] = `
 
 exports[`renders Fridge 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4519,7 +3343,7 @@ exports[`renders Fridge 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eXEjpC kBSRss"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4538,19 +3362,7 @@ exports[`renders Fridge 1`] = `
 
 exports[`renders Gallery 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4565,7 +3377,7 @@ exports[`renders Gallery 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ibxdXY fcqmZh"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4584,19 +3396,7 @@ exports[`renders Gallery 1`] = `
 
 exports[`renders Gas 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4611,7 +3411,7 @@ exports[`renders Gas 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-RefOD jjPtAG"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4630,19 +3430,7 @@ exports[`renders Gas 1`] = `
 
 exports[`renders Globe 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4657,7 +3445,7 @@ exports[`renders Globe 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iQKALj bXXzrF"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4676,19 +3464,7 @@ exports[`renders Globe 1`] = `
 
 exports[`renders Golf 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4703,7 +3479,7 @@ exports[`renders Golf 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bwCtUz hQksiB"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4722,19 +3498,7 @@ exports[`renders Golf 1`] = `
 
 exports[`renders GolfTee 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4749,7 +3513,7 @@ exports[`renders GolfTee 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hrWEMg kWDnSq"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4769,19 +3533,7 @@ exports[`renders GolfTee 1`] = `
 
 exports[`renders Gps 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4796,7 +3548,7 @@ exports[`renders Gps 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eTuwsz jeCouo"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4815,19 +3567,7 @@ exports[`renders Gps 1`] = `
 
 exports[`renders Graph 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4842,7 +3582,7 @@ exports[`renders Graph 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gwVKww ddSJMe"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4861,19 +3601,7 @@ exports[`renders Graph 1`] = `
 
 exports[`renders Grid 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4888,7 +3616,7 @@ exports[`renders Grid 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hXRMBi fbifYJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4907,19 +3635,7 @@ exports[`renders Grid 1`] = `
 
 exports[`renders GuestScore 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4934,7 +3650,7 @@ exports[`renders GuestScore 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-epnACN dmRYWa"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4953,19 +3669,7 @@ exports[`renders GuestScore 1`] = `
 
 exports[`renders Guests 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -4980,7 +3684,7 @@ exports[`renders Guests 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iQNlJl kmaKiJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -4999,19 +3703,7 @@ exports[`renders Guests 1`] = `
 
 exports[`renders Help 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5026,7 +3718,7 @@ exports[`renders Help 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bsbRJL esVxfd"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5045,19 +3737,7 @@ exports[`renders Help 1`] = `
 
 exports[`renders History 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5072,7 +3752,7 @@ exports[`renders History 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hZSUBg hYPTpT"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5091,19 +3771,7 @@ exports[`renders History 1`] = `
 
 exports[`renders Home 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5118,7 +3786,7 @@ exports[`renders Home 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cMhqgX dxMYqf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5137,19 +3805,7 @@ exports[`renders Home 1`] = `
 
 exports[`renders HotelCircle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5164,7 +3820,7 @@ exports[`renders HotelCircle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iuJeZd kAhtUQ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5183,19 +3839,7 @@ exports[`renders HotelCircle 1`] = `
 
 exports[`renders Hotels 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5210,7 +3854,7 @@ exports[`renders Hotels 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-esOvli YlbBn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5229,19 +3873,7 @@ exports[`renders Hotels 1`] = `
 
 exports[`renders House 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5256,7 +3888,7 @@ exports[`renders House 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cmthru dRWOaD"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5275,19 +3907,7 @@ exports[`renders House 1`] = `
 
 exports[`renders Hybrid 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5302,7 +3922,7 @@ exports[`renders Hybrid 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hMFtBS iKZTem"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5321,19 +3941,7 @@ exports[`renders Hybrid 1`] = `
 
 exports[`renders Image 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5348,7 +3956,7 @@ exports[`renders Image 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cLQEGU bxoiBm"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5368,19 +3976,7 @@ exports[`renders Image 1`] = `
 
 exports[`renders ImageWide 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5395,7 +3991,7 @@ exports[`renders ImageWide 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gqPbQI cXyYEF"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5415,19 +4011,7 @@ exports[`renders ImageWide 1`] = `
 
 exports[`renders Inclusive 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5442,7 +4026,7 @@ exports[`renders Inclusive 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hORach eOhyUX"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5461,19 +4045,7 @@ exports[`renders Inclusive 1`] = `
 
 exports[`renders Information 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5488,7 +4060,7 @@ exports[`renders Information 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bMVAic kpvPam"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5507,19 +4079,7 @@ exports[`renders Information 1`] = `
 
 exports[`renders InformationOutline 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5534,7 +4094,7 @@ exports[`renders InformationOutline 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bAeIUo gDGMdM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5553,19 +4113,7 @@ exports[`renders InformationOutline 1`] = `
 
 exports[`renders Instagram 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5580,7 +4128,7 @@ exports[`renders Instagram 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iujRgT ehhDYg"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5599,19 +4147,7 @@ exports[`renders Instagram 1`] = `
 
 exports[`renders Key 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5626,7 +4162,7 @@ exports[`renders Key 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-GMQeP ioNkHZ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5643,68 +4179,9 @@ exports[`renders Key 1`] = `
 </DocumentFragment>
 `;
 
-exports[`renders Kitchen 1`] = `
-<DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
-    class="c0"
-  >
-    <svg
-      aria-hidden="true"
-      class="c1 c2"
-      fill="currentcolor"
-      focusable="false"
-      height="24"
-      role="img"
-      tabindex="-1"
-      viewBox="0 0 24 24"
-      width="24"
-    >
-      <path
-        d="M23 15v5a2 2 0 01-2 2H10v-7h13zM4.5 2A2.5 2.5 0 017 4.5a.75.75 0 01-1.493.102L5.5 4.5a1 1 0 00-1.993-.117L3.5 4.5V8H9v14H3a2 2 0 01-2-2V10a2 2 0 011-1.732V4.5A2.5 2.5 0 014.5 2zM21 8a2 2 0 012 2v4H10V8h11zM6 10a1 1 0 100 2 1 1 0 000-2zm8 0a1 1 0 100 2 1 1 0 000-2zm5 0a1 1 0 100 2 1 1 0 000-2z"
-        fill-rule="evenodd"
-      />
-    </svg>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`renders Kitchenette 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5719,7 +4196,7 @@ exports[`renders Kitchenette 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-exAgwC cJCLAz"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5738,19 +4215,7 @@ exports[`renders Kitchenette 1`] = `
 
 exports[`renders Laptop 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5765,7 +4230,7 @@ exports[`renders Laptop 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cQFLBn gKVWHG"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5784,19 +4249,7 @@ exports[`renders Laptop 1`] = `
 
 exports[`renders LateNight 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5811,7 +4264,7 @@ exports[`renders LateNight 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gojNiO goVWlY"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5830,19 +4283,7 @@ exports[`renders LateNight 1`] = `
 
 exports[`renders List 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5857,7 +4298,7 @@ exports[`renders List 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-daURTG YhYgq"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5876,19 +4317,7 @@ exports[`renders List 1`] = `
 
 exports[`renders ListContained 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5903,7 +4332,7 @@ exports[`renders ListContained 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bXGyLb iWqSNU"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5923,19 +4352,7 @@ exports[`renders ListContained 1`] = `
 
 exports[`renders LocalBar 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5950,7 +4367,7 @@ exports[`renders LocalBar 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-lkqHmb bcIKyZ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -5969,19 +4386,7 @@ exports[`renders LocalBar 1`] = `
 
 exports[`renders Lock 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -5996,7 +4401,7 @@ exports[`renders Lock 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eLExRp dQyuwK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6015,19 +4420,7 @@ exports[`renders Lock 1`] = `
 
 exports[`renders Loyalty 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6042,7 +4435,7 @@ exports[`renders Loyalty 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cbkKFq gNkKaC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6061,19 +4454,7 @@ exports[`renders Loyalty 1`] = `
 
 exports[`renders Luggage 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6088,7 +4469,7 @@ exports[`renders Luggage 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-krvtoX iQIHso"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6107,19 +4488,7 @@ exports[`renders Luggage 1`] = `
 
 exports[`renders LuggageNo 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6134,7 +4503,7 @@ exports[`renders LuggageNo 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fYiAbW iuUBFk"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6154,19 +4523,7 @@ exports[`renders LuggageNo 1`] = `
 
 exports[`renders Manual 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6181,7 +4538,7 @@ exports[`renders Manual 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fOKMvo iMilNM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6200,19 +4557,7 @@ exports[`renders Manual 1`] = `
 
 exports[`renders Map 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6227,7 +4572,7 @@ exports[`renders Map 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dUjcNx isJWZR"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6246,19 +4591,7 @@ exports[`renders Map 1`] = `
 
 exports[`renders Menu 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6273,7 +4606,7 @@ exports[`renders Menu 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gHboQg dfgJOC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6292,19 +4625,7 @@ exports[`renders Menu 1`] = `
 
 exports[`renders Microwave 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6319,7 +4640,7 @@ exports[`renders Microwave 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eilVRo dvhzHf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6338,19 +4659,7 @@ exports[`renders Microwave 1`] = `
 
 exports[`renders Mileage 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6365,7 +4674,7 @@ exports[`renders Mileage 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eerKOB jMmMRt"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6384,19 +4693,7 @@ exports[`renders Mileage 1`] = `
 
 exports[`renders Minus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6411,7 +4708,7 @@ exports[`renders Minus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-emmjRN hrNUPa"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6430,19 +4727,7 @@ exports[`renders Minus 1`] = `
 
 exports[`renders MoreHorizontal 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6457,7 +4742,7 @@ exports[`renders MoreHorizontal 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cpmLhU jSpjVK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6477,19 +4762,7 @@ exports[`renders MoreHorizontal 1`] = `
 
 exports[`renders MoreVertical 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6504,7 +4777,7 @@ exports[`renders MoreVertical 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dymIpo eBEbiC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6524,19 +4797,7 @@ exports[`renders MoreVertical 1`] = `
 
 exports[`renders MultiAirline 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6551,7 +4812,7 @@ exports[`renders MultiAirline 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bnXvFD cljpOw"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6570,19 +4831,7 @@ exports[`renders MultiAirline 1`] = `
 
 exports[`renders MultiOccupancy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6597,7 +4846,7 @@ exports[`renders MultiOccupancy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gFaPwZ fHdton"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6616,19 +4865,7 @@ exports[`renders MultiOccupancy 1`] = `
 
 exports[`renders Museum 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6643,7 +4880,7 @@ exports[`renders Museum 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fhYwyz lnuIuT"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6663,19 +4900,7 @@ exports[`renders Museum 1`] = `
 
 exports[`renders Navigation 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6690,7 +4915,7 @@ exports[`renders Navigation 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jzgbtB bMvtrV"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6710,19 +4935,7 @@ exports[`renders Navigation 1`] = `
 
 exports[`renders NewRelease 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6737,7 +4950,7 @@ exports[`renders NewRelease 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gJWqzi drnzAN"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6757,19 +4970,7 @@ exports[`renders NewRelease 1`] = `
 
 exports[`renders Notification 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6784,7 +4985,7 @@ exports[`renders Notification 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-rBLzX epcRce"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6803,19 +5004,7 @@ exports[`renders Notification 1`] = `
 
 exports[`renders NotificationImportant 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6830,7 +5019,7 @@ exports[`renders NotificationImportant 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bMvGRv hutwzP"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6850,19 +5039,7 @@ exports[`renders NotificationImportant 1`] = `
 
 exports[`renders Notifications 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6877,7 +5054,7 @@ exports[`renders Notifications 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-CtfFt dnWlFM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6897,19 +5074,7 @@ exports[`renders Notifications 1`] = `
 
 exports[`renders NotificationsAdd 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6924,7 +5089,7 @@ exports[`renders NotificationsAdd 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-laTMn fwVkGP"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6944,19 +5109,7 @@ exports[`renders NotificationsAdd 1`] = `
 
 exports[`renders OfflineBolt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -6971,7 +5124,7 @@ exports[`renders OfflineBolt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hGoxap fbLwvO"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -6991,19 +5144,7 @@ exports[`renders OfflineBolt 1`] = `
 
 exports[`renders OnDemand 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7018,7 +5159,7 @@ exports[`renders OnDemand 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fjmCvl dbRvuM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7038,19 +5179,7 @@ exports[`renders OnDemand 1`] = `
 
 exports[`renders Overnight 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7065,7 +5194,7 @@ exports[`renders Overnight 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-TFwJa gWnvFn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7084,19 +5213,7 @@ exports[`renders Overnight 1`] = `
 
 exports[`renders Palette 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7111,7 +5228,7 @@ exports[`renders Palette 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bHwgHz dzaPAe"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7131,19 +5248,7 @@ exports[`renders Palette 1`] = `
 
 exports[`renders ParentChild 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7158,7 +5263,7 @@ exports[`renders ParentChild 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-krDsej Bvmfv"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7178,19 +5283,7 @@ exports[`renders ParentChild 1`] = `
 
 exports[`renders ParentChildCircle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7205,7 +5298,7 @@ exports[`renders ParentChildCircle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dTdPqK hoIlfr"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7225,19 +5318,7 @@ exports[`renders ParentChildCircle 1`] = `
 
 exports[`renders Parking 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7252,7 +5333,7 @@ exports[`renders Parking 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-itybZL ekrXnI"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7271,19 +5352,7 @@ exports[`renders Parking 1`] = `
 
 exports[`renders Pets 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7298,7 +5367,7 @@ exports[`renders Pets 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eMigcr loGreu"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7317,19 +5386,7 @@ exports[`renders Pets 1`] = `
 
 exports[`renders Phone 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7344,7 +5401,7 @@ exports[`renders Phone 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fzsDOv bOjMtM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7363,19 +5420,7 @@ exports[`renders Phone 1`] = `
 
 exports[`renders PhoneActive 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7390,7 +5435,7 @@ exports[`renders PhoneActive 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gPWkxV cnDanJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7410,19 +5455,7 @@ exports[`renders PhoneActive 1`] = `
 
 exports[`renders PhoneLog 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7437,7 +5470,7 @@ exports[`renders PhoneLog 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jVODtj hKNMai"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7457,19 +5490,7 @@ exports[`renders PhoneLog 1`] = `
 
 exports[`renders Picture 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7484,7 +5505,7 @@ exports[`renders Picture 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kUaPvJ kNXnpA"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7503,19 +5524,7 @@ exports[`renders Picture 1`] = `
 
 exports[`renders PieChart 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7530,7 +5539,7 @@ exports[`renders PieChart 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-giadOv kCIbkE"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7550,19 +5559,7 @@ exports[`renders PieChart 1`] = `
 
 exports[`renders Pin 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7577,7 +5574,7 @@ exports[`renders Pin 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fONwsr fsSDqu"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7596,19 +5593,7 @@ exports[`renders Pin 1`] = `
 
 exports[`renders PinAdd 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7623,7 +5608,7 @@ exports[`renders PinAdd 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-VJcYb DuDaj"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7643,19 +5628,7 @@ exports[`renders PinAdd 1`] = `
 
 exports[`renders PinEdit 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7670,7 +5643,7 @@ exports[`renders PinEdit 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ipXKqB fQDlSV"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7690,19 +5663,7 @@ exports[`renders PinEdit 1`] = `
 
 exports[`renders Plus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7717,7 +5678,7 @@ exports[`renders Plus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hmXxxW iLPuZy"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7736,19 +5697,7 @@ exports[`renders Plus 1`] = `
 
 exports[`renders PlusOne 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7763,7 +5712,7 @@ exports[`renders PlusOne 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cqCuEk dTuxRF"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7783,19 +5732,7 @@ exports[`renders PlusOne 1`] = `
 
 exports[`renders Pool 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7810,7 +5747,7 @@ exports[`renders Pool 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dliRfk ksKwYO"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7829,19 +5766,7 @@ exports[`renders Pool 1`] = `
 
 exports[`renders Power 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7856,7 +5781,7 @@ exports[`renders Power 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kLIISr gOMLOM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7876,19 +5801,7 @@ exports[`renders Power 1`] = `
 
 exports[`renders Printer 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7903,7 +5816,7 @@ exports[`renders Printer 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-qrIAp cbeWIO"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7922,19 +5835,7 @@ exports[`renders Printer 1`] = `
 
 exports[`renders Quilt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7949,7 +5850,7 @@ exports[`renders Quilt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iqzUVk kEcXZH"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -7968,19 +5869,7 @@ exports[`renders Quilt 1`] = `
 
 exports[`renders RadioChecked 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -7995,7 +5884,7 @@ exports[`renders RadioChecked 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ipZHIp djDIgE"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8014,19 +5903,7 @@ exports[`renders RadioChecked 1`] = `
 
 exports[`renders RadioEmpty 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8041,7 +5918,7 @@ exports[`renders RadioEmpty 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iGrrsa kztTYO"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8060,19 +5937,7 @@ exports[`renders RadioEmpty 1`] = `
 
 exports[`renders RadioMinus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8087,7 +5952,7 @@ exports[`renders RadioMinus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bmyXtO hfijah"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8106,19 +5971,7 @@ exports[`renders RadioMinus 1`] = `
 
 exports[`renders RadioPlus 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8133,7 +5986,7 @@ exports[`renders RadioPlus 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dEoRIm kGTSbX"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8152,19 +6005,7 @@ exports[`renders RadioPlus 1`] = `
 
 exports[`renders Railway 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8179,7 +6020,7 @@ exports[`renders Railway 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jtggT jOmGQC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8199,19 +6040,7 @@ exports[`renders Railway 1`] = `
 
 exports[`renders Refresh 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8226,7 +6055,7 @@ exports[`renders Refresh 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ebFjAB klQpiK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8245,19 +6074,7 @@ exports[`renders Refresh 1`] = `
 
 exports[`renders Restaurant 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8272,7 +6089,7 @@ exports[`renders Restaurant 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jKVCRD BhmJr"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8291,19 +6108,7 @@ exports[`renders Restaurant 1`] = `
 
 exports[`renders Ribbon 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8318,7 +6123,7 @@ exports[`renders Ribbon 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kaNhvL imUPDm"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8337,19 +6142,7 @@ exports[`renders Ribbon 1`] = `
 
 exports[`renders RibbonAlt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8364,7 +6157,7 @@ exports[`renders RibbonAlt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-LKuAh hYXCmA"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8384,19 +6177,7 @@ exports[`renders RibbonAlt 1`] = `
 
 exports[`renders RoomSize 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8411,7 +6192,7 @@ exports[`renders RoomSize 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iBEsjs dEpzra"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8430,19 +6211,7 @@ exports[`renders RoomSize 1`] = `
 
 exports[`renders Rowing 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8457,7 +6226,7 @@ exports[`renders Rowing 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hzNEM cLmsbJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8476,19 +6245,7 @@ exports[`renders Rowing 1`] = `
 
 exports[`renders SaveAlt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8503,7 +6260,7 @@ exports[`renders SaveAlt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-chbbiW jBSpIT"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8523,19 +6280,7 @@ exports[`renders SaveAlt 1`] = `
 
 exports[`renders Search 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8550,7 +6295,7 @@ exports[`renders Search 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kxynE bSXODA"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8569,19 +6314,7 @@ exports[`renders Search 1`] = `
 
 exports[`renders SearchRecent 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8596,7 +6329,7 @@ exports[`renders SearchRecent 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cooIXK bjbqSE"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8615,19 +6348,7 @@ exports[`renders SearchRecent 1`] = `
 
 exports[`renders Seat 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8642,7 +6363,7 @@ exports[`renders Seat 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fcdeBU gUaTMD"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8661,19 +6382,7 @@ exports[`renders Seat 1`] = `
 
 exports[`renders SeatBusiness 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8688,7 +6397,7 @@ exports[`renders SeatBusiness 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gmeYpB iTMfUp"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8707,19 +6416,7 @@ exports[`renders SeatBusiness 1`] = `
 
 exports[`renders SeatEconomy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8734,7 +6431,7 @@ exports[`renders SeatEconomy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kZmsYB HOqFG"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8753,19 +6450,7 @@ exports[`renders SeatEconomy 1`] = `
 
 exports[`renders Security 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8780,7 +6465,7 @@ exports[`renders Security 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-RcBXQ faExcR"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8799,19 +6484,7 @@ exports[`renders Security 1`] = `
 
 exports[`renders Shuttle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8826,7 +6499,7 @@ exports[`renders Shuttle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iSDuPN jJtyDg"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8845,19 +6518,7 @@ exports[`renders Shuttle 1`] = `
 
 exports[`renders SingleOccupancy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8872,7 +6533,7 @@ exports[`renders SingleOccupancy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fZwumE bWPdYf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8891,19 +6552,7 @@ exports[`renders SingleOccupancy 1`] = `
 
 exports[`renders Sites 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8918,7 +6567,7 @@ exports[`renders Sites 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fQejPQ gYYVam"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8938,19 +6587,7 @@ exports[`renders Sites 1`] = `
 
 exports[`renders Smartphone 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -8965,7 +6602,7 @@ exports[`renders Smartphone 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-clNaTc jHAHZE"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -8985,19 +6622,7 @@ exports[`renders Smartphone 1`] = `
 
 exports[`renders Smoking 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9012,7 +6637,7 @@ exports[`renders Smoking 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-etwtAo eZNdHf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9031,19 +6656,7 @@ exports[`renders Smoking 1`] = `
 
 exports[`renders SmokingAllowed 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9058,7 +6671,7 @@ exports[`renders SmokingAllowed 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jXQZqI jmEBVa"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9078,19 +6691,7 @@ exports[`renders SmokingAllowed 1`] = `
 
 exports[`renders SoapBar 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9105,7 +6706,7 @@ exports[`renders SoapBar 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iGPElx dLbjau"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9125,19 +6726,7 @@ exports[`renders SoapBar 1`] = `
 
 exports[`renders Spa 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9152,7 +6741,7 @@ exports[`renders Spa 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kasBVs dTcWPK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9171,19 +6760,7 @@ exports[`renders Spa 1`] = `
 
 exports[`renders SplitTicket 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9198,7 +6775,7 @@ exports[`renders SplitTicket 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hgHYgh cowyOw"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9217,19 +6794,7 @@ exports[`renders SplitTicket 1`] = `
 
 exports[`renders SprayBottle 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9244,7 +6809,7 @@ exports[`renders SprayBottle 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eInJlc bHADKY"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9264,19 +6829,7 @@ exports[`renders SprayBottle 1`] = `
 
 exports[`renders Star 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9291,7 +6844,7 @@ exports[`renders Star 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gtfDJT iLsDbw"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9310,19 +6863,7 @@ exports[`renders Star 1`] = `
 
 exports[`renders StarHalf 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9337,7 +6878,7 @@ exports[`renders StarHalf 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fOICqy bCDvyi"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9356,19 +6897,7 @@ exports[`renders StarHalf 1`] = `
 
 exports[`renders SteeringWheel 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9383,7 +6912,7 @@ exports[`renders SteeringWheel 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hzDEsm jzAAHr"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9402,19 +6931,7 @@ exports[`renders SteeringWheel 1`] = `
 
 exports[`renders Subway 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9429,7 +6946,7 @@ exports[`renders Subway 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jeCdPy AoDHg"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9449,19 +6966,7 @@ exports[`renders Subway 1`] = `
 
 exports[`renders SubwayAlt 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9476,7 +6981,7 @@ exports[`renders SubwayAlt 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jtRlXQ ciVjND"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9502,19 +7007,7 @@ exports[`renders SubwayAlt 1`] = `
 
 exports[`renders Success 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9529,7 +7022,7 @@ exports[`renders Success 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bGbJRg fFAyGz"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9548,19 +7041,7 @@ exports[`renders Success 1`] = `
 
 exports[`renders SuccessOutline 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9575,7 +7056,7 @@ exports[`renders SuccessOutline 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bEjcJn jlYKKV"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9594,19 +7075,7 @@ exports[`renders SuccessOutline 1`] = `
 
 exports[`renders Swap 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9621,7 +7090,7 @@ exports[`renders Swap 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ePZHVD fBZCjM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9640,19 +7109,7 @@ exports[`renders Swap 1`] = `
 
 exports[`renders SwapHorizontal 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9667,7 +7124,7 @@ exports[`renders SwapHorizontal 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-likbZx eUuYjW"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9687,19 +7144,7 @@ exports[`renders SwapHorizontal 1`] = `
 
 exports[`renders Sync 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9714,7 +7159,7 @@ exports[`renders Sync 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eKZiaR fKddQP"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9734,19 +7179,7 @@ exports[`renders Sync 1`] = `
 
 exports[`renders TableChart 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9761,7 +7194,7 @@ exports[`renders TableChart 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-drMfKT hEozpP"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9781,19 +7214,7 @@ exports[`renders TableChart 1`] = `
 
 exports[`renders Task 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9808,7 +7229,7 @@ exports[`renders Task 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fgfRvd eSnlTX"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9828,19 +7249,7 @@ exports[`renders Task 1`] = `
 
 exports[`renders TaskChecked 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9855,7 +7264,7 @@ exports[`renders TaskChecked 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hIVACf dCIOBI"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9875,19 +7284,7 @@ exports[`renders TaskChecked 1`] = `
 
 exports[`renders Taxi 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9902,7 +7299,7 @@ exports[`renders Taxi 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gpHHfC dHgQYL"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9922,19 +7319,7 @@ exports[`renders Taxi 1`] = `
 
 exports[`renders Tea 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9949,7 +7334,7 @@ exports[`renders Tea 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gVyKpa cCUrok"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -9969,19 +7354,7 @@ exports[`renders Tea 1`] = `
 
 exports[`renders ThumbsDown 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -9996,7 +7369,7 @@ exports[`renders ThumbsDown 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eXNvrr cAUpDN"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10015,19 +7388,7 @@ exports[`renders ThumbsDown 1`] = `
 
 exports[`renders ThumbsUp 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10042,7 +7403,7 @@ exports[`renders ThumbsUp 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cpmKsF bDxbG"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10061,19 +7422,7 @@ exports[`renders ThumbsUp 1`] = `
 
 exports[`renders Timer 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10088,7 +7437,7 @@ exports[`renders Timer 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kQsIoO gofOwV"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10107,19 +7456,7 @@ exports[`renders Timer 1`] = `
 
 exports[`renders Traffic 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10134,7 +7471,7 @@ exports[`renders Traffic 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gPzReC cxbwwn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10154,19 +7491,7 @@ exports[`renders Traffic 1`] = `
 
 exports[`renders Train 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10181,7 +7506,7 @@ exports[`renders Train 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-jrIrqw TkVOF"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10201,19 +7526,7 @@ exports[`renders Train 1`] = `
 
 exports[`renders Trash 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10228,7 +7541,7 @@ exports[`renders Trash 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hjRWVT cKZphJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10248,19 +7561,7 @@ exports[`renders Trash 1`] = `
 
 exports[`renders TrendingUp 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10275,7 +7576,7 @@ exports[`renders TrendingUp 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iybRtq ciBGqf"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10294,19 +7595,7 @@ exports[`renders TrendingUp 1`] = `
 
 exports[`renders Trophy 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10321,7 +7610,7 @@ exports[`renders Trophy 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iQtOjA egRHal"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10340,19 +7629,7 @@ exports[`renders Trophy 1`] = `
 
 exports[`renders Tune 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10367,7 +7644,7 @@ exports[`renders Tune 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fHxwqH bePslt"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10386,19 +7663,7 @@ exports[`renders Tune 1`] = `
 
 exports[`renders Twitter 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10413,7 +7678,7 @@ exports[`renders Twitter 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cEvuZC bIRhKC"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10432,19 +7697,7 @@ exports[`renders Twitter 1`] = `
 
 exports[`renders Unlock 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10459,7 +7712,7 @@ exports[`renders Unlock 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kXeGPI kzkYcu"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10478,19 +7731,7 @@ exports[`renders Unlock 1`] = `
 
 exports[`renders User 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10505,7 +7746,7 @@ exports[`renders User 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-fyjhYU gWNuPB"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10524,19 +7765,7 @@ exports[`renders User 1`] = `
 
 exports[`renders UserAdd 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10551,7 +7780,7 @@ exports[`renders UserAdd 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-ugnQR cPtopt"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10571,19 +7800,7 @@ exports[`renders UserAdd 1`] = `
 
 exports[`renders UserChecked 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10598,7 +7815,7 @@ exports[`renders UserChecked 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eIHaNI ktrEUJ"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10618,19 +7835,7 @@ exports[`renders UserChecked 1`] = `
 
 exports[`renders Verified 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10645,7 +7850,7 @@ exports[`renders Verified 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-eTpRJs gCQVap"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10664,19 +7869,7 @@ exports[`renders Verified 1`] = `
 
 exports[`renders ViewList 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10691,7 +7884,7 @@ exports[`renders ViewList 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dxZgTM enLznw"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10711,19 +7904,7 @@ exports[`renders ViewList 1`] = `
 
 exports[`renders ViewModule 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10738,7 +7919,7 @@ exports[`renders ViewModule 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iomxrj kXbmXM"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10758,19 +7939,7 @@ exports[`renders ViewModule 1`] = `
 
 exports[`renders Visibility 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10785,7 +7954,7 @@ exports[`renders Visibility 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dvCyap cdWeVx"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10805,19 +7974,7 @@ exports[`renders Visibility 1`] = `
 
 exports[`renders VisibilityOff 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10832,7 +7989,7 @@ exports[`renders VisibilityOff 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-iFMziU cqwROW"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10858,19 +8015,7 @@ exports[`renders VisibilityOff 1`] = `
 
 exports[`renders Walk 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10885,7 +8030,7 @@ exports[`renders Walk 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-keVrkP eLBXen"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10905,19 +8050,7 @@ exports[`renders Walk 1`] = `
 
 exports[`renders Warning 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10932,7 +8065,7 @@ exports[`renders Warning 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-gVLVqr fjJQG"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10951,19 +8084,7 @@ exports[`renders Warning 1`] = `
 
 exports[`renders WarningOutline 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -10978,7 +8099,7 @@ exports[`renders WarningOutline 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cBdUnI bXhusn"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -10997,19 +8118,7 @@ exports[`renders WarningOutline 1`] = `
 
 exports[`renders WashingHands 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11024,7 +8133,7 @@ exports[`renders WashingHands 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-exkUMo flnNRD"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -11044,19 +8153,7 @@ exports[`renders WashingHands 1`] = `
 
 exports[`renders Web 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11071,7 +8168,7 @@ exports[`renders Web 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-kcDeIU eVgMsY"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -11090,19 +8187,7 @@ exports[`renders Web 1`] = `
 
 exports[`renders Whirlpool 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11117,7 +8202,7 @@ exports[`renders Whirlpool 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-BngTV bjChjF"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -11136,19 +8221,7 @@ exports[`renders Whirlpool 1`] = `
 
 exports[`renders Widgets 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11163,7 +8236,7 @@ exports[`renders Widgets 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-bFADNz gaztWK"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -11183,19 +8256,7 @@ exports[`renders Widgets 1`] = `
 
 exports[`renders Wifi 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11210,7 +8271,7 @@ exports[`renders Wifi 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-cqpYsc kZqGrw"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -11229,19 +8290,7 @@ exports[`renders Wifi 1`] = `
 
 exports[`renders Youtube 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11256,7 +8305,7 @@ exports[`renders Youtube 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-hBbWxd bkuARc"
       fill="currentcolor"
       focusable="false"
       height="24"
@@ -11275,19 +8324,7 @@ exports[`renders Youtube 1`] = `
 
 exports[`renders ZoomOut 1`] = `
 <DocumentFragment>
-  .c1 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c2 {
-  outline: none;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -11302,7 +8339,7 @@ exports[`renders ZoomOut 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c1 c2"
+      class="sc-bdVaJa fHGoIL sc-dyGzUR bCbnyV"
       fill="currentcolor"
       focusable="false"
       height="24"

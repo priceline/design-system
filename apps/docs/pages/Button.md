@@ -29,7 +29,7 @@ Buttons make common actions immediately visible and easy to perform with one cli
 | `radius`    | string                   | Custom button radius in pixel                  |
 | `size`      | string                   | Sets button size to small, medium or large     |
 | `width`     | number, string, or array | Sets button width                              |
-| `variation` | `fill`, `outline`        | The button variation                           |
+| `variation` | `fill`, `link`, `outline`, `plain`, `primary`, `secondary`, `subtle`, `warning`        | The button variation                           |
 | `color`     | string                   | The color of the button, defaults to `primary` |
 | `disabled`  | bool                     | Disabled the button and apply light color      |
 
