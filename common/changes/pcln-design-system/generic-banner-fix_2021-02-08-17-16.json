@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add cta check and ability to pass in a diff heading font size",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "gabrielle.bellini@priceline.com"
+}

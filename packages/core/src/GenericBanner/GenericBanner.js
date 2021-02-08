@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { alignItems, justifyContent } from 'styled-system'
+import { alignItems, fontSize, justifyContent } from 'styled-system'
 import PropTypes from 'prop-types'
 import { Banner } from '../Banner'
 import { Box } from '../Box'
@@ -65,14 +65,14 @@ const GenericBanner = ({
           <Box px={2} fontSize={fontSize}>
             {!!heading &&
               React.cloneElement(heading, {
-                fontSize,
+                fontSize: heading.props.fontSize || fontSize,
               })}
             {!!text &&
               React.cloneElement(text, {
                 fontSize,
               })}
 
-            {URLProps && (
+            {URLProps && ctaText && (
               <CustomLink
                 p={
                   linkVariation === 'fill' || linkVariation === 'outline'
@@ -84,14 +84,13 @@ const GenericBanner = ({
                 fontSize={fontSize}
                 {...URLProps}
               >
-                {ctaText &&
-                  React.cloneElement(ctaText, {
-                    fontSize,
-                    zIndex: 2,
-                  })}
+                {React.cloneElement(ctaText, {
+                  fontSize,
+                  zIndex: 2,
+                })}
               </CustomLink>
             )}
-            {Boolean(buttonClick) && (
+            {buttonClick && typeof buttonClick === 'function' && ctaText && (
               <CustomButton
                 size={buttonSize}
                 buttonTextUnderline={buttonVariation === 'link'}
@@ -101,10 +100,9 @@ const GenericBanner = ({
                   buttonClick()
                 }}
               >
-                {ctaText &&
-                  React.cloneElement(ctaText, {
-                    fontSize,
-                  })}
+                {React.cloneElement(ctaText, {
+                  fontSize,
+                })}
               </CustomButton>
             )}
           </Box>
@@ -118,17 +116,11 @@ const GenericBanner = ({
 GenericBanner.propTypes = {
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
+  ...fontSize.propTypes,
   buttonClick: PropTypes.func,
   buttonSize: PropTypes.oneOf(['small', 'medium', 'large']),
   buttonVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
   ctaText: PropTypes.node,
-  fontSize: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    ),
-  ]),
   heading: PropTypes.node,
   iconLeft: PropTypes.node,
   iconRight: PropTypes.node,
