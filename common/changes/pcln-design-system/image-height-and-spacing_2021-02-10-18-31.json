@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add height and spacing from styled-system to Image component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "james.stewart@priceline.com"
+}
