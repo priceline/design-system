@@ -1,14 +1,20 @@
 import styled from 'styled-components'
-import { width } from 'styled-system'
+import { width, height, space } from 'styled-system'
 
-const Image = styled.img.attrs((props) => ({
-  height: props.height || 'auto',
-}))`
+const Image = styled.img`
   display: block;
   max-width: 100%;
-  ${width}
+  ${height};
+  ${space};
+  ${width};
 `
 
 Image.displayName = 'Image'
+
+Image.propTypes = {
+  ...height.propTypes,
+  ...space.propTypes,
+  ...width.propTypes,
+}
 
 export default Image

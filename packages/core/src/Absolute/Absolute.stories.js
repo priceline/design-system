@@ -33,7 +33,7 @@ export const OverAnImage = () => (
     <Absolute top={8} left={0}>
       <Flag>Hello Flag</Flag>
     </Absolute>
-    <Image src='https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg' />
+    <Image src='https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg' />
   </Relative>
 )
 
