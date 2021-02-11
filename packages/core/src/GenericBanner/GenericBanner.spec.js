@@ -29,6 +29,15 @@ const props = {
   color: 'caution.light',
 }
 
+const propsUpdatedHeading = {
+  ...props,
+  heading: (
+    <Text.span fontWeight='bold' textColor='primary.base' mr={1} fontSize={4}>
+      COVID-19
+    </Text.span>
+  ),
+}
+
 describe('GenericBanner', () => {
   test('renders', () => {
     const json = rendererCreateWithTheme(<GenericBanner />).toJSON()
@@ -75,6 +84,30 @@ describe('GenericBanner', () => {
     fireEvent.click(readMoreButton)
     expect(readMoreButton).toHaveStyleRule('font-size', '12px')
     expect(header).toHaveStyleRule('font-size', '12px')
+    expect(text).toHaveStyleRule('font-size', '12px')
+  })
+  test('Renders as expected- with different heading size', () => {
+    const { getByText, getByRole } = render(
+      <GenericBanner
+        {...propsUpdatedHeading}
+        URLProps={{
+          href: 'https://www.priceline.com',
+          target: '_blank',
+        }}
+      />
+    )
+    const header = getByText('COVID-19')
+    const text = getByText(
+      'Update: Your travel may be impacted. Please review this hotels important info.'
+    )
+    expect(getByRole('img')).toBeTruthy()
+    expect(header).toBeTruthy()
+    expect(text).toBeTruthy()
+    const readMoreButton = getByText('Read More')
+    expect(readMoreButton).toBeTruthy()
+    fireEvent.click(readMoreButton)
+    expect(readMoreButton).toHaveStyleRule('font-size', '12px')
+    expect(header).toHaveStyleRule('font-size', '24px')
     expect(text).toHaveStyleRule('font-size', '12px')
   })
 })

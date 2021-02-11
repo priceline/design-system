@@ -217,6 +217,29 @@ export const bannerWithURLProps = () => (
   />
 )
 
+export const bannerWithURLPropsAndCustomHeadingSize = () => (
+  <GenericBanner
+    p={2}
+    heading={
+      <Text.span fontWeight='bold' textColor='primary.base' mr={1} fontSize={4}>
+        This is a Heading
+      </Text.span>
+    }
+    text={
+      <Text.span color='warning' mr={1}>
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Nunc at lacus vel dolor fringilla rhoncus.
+      </Text.span>
+    }
+    URLProps={{
+      href: 'https://www.priceline.com',
+      target: '_blank',
+    }}
+    iconLeft={<Emoticon />}
+    color='alert.light'
+  />
+)
+
 export const bannerWithURLPropsButtonStyleCta = () => (
   <GenericBanner
     p={2}
