@@ -42,6 +42,11 @@ exports[`Step should handle onClick 1`] = `
   color: #fff;
 }
 
+.c1:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
@@ -136,6 +141,11 @@ exports[`Step should render a completed step correctly 1`] = `
 .c1:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c1:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
 }
 
 .c1:disabled {
@@ -252,6 +262,11 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   color: #fff;
 }
 
+.c1:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
@@ -352,6 +367,11 @@ exports[`Step should render an active step correctly 1`] = `
   color: #fff;
 }
 
+.c1:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
@@ -432,6 +452,11 @@ exports[`Step should render correctly with no props without throwing 1`] = `
 .c1:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c1:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
 }
 
 .c1:disabled {

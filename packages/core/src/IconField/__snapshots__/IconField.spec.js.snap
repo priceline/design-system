@@ -170,6 +170,11 @@ exports[`IconField renders icon button 1`] = `
   color: #fff;
 }
 
+.c2:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
@@ -351,6 +356,11 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 .c4:hover {
   background-color: #049;
   color: #fff;
+}
+
+.c4:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
 }
 
 .c4:disabled {

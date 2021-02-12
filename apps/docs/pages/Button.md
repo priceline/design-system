@@ -24,14 +24,14 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ## Props
 
-| Prop        | Type                     | Description                                    |
-| ----------- | ------------------------ | ---------------------------------------------- |
-| `radius`    | string                   | Custom button radius in pixel                  |
-| `size`      | string                   | Sets button size to small, medium or large     |
-| `width`     | number, string, or array | Sets button width                              |
-| `variation` | `fill`, `outline`        | The button variation                           |
-| `color`     | string                   | The color of the button, defaults to `primary` |
-| `disabled`  | bool                     | Disabled the button and apply light color      |
+| Prop        | Type                                                                              | Description                                    |
+| ----------- | --------------------------------------------------------------------------------- | ---------------------------------------------- |
+| `radius`    | string                                                                            | Custom button radius in pixel                  |
+| `size`      | string                                                                            | Sets button size to small, medium or large     |
+| `width`     | number, string, or array                                                          | Sets button width                              |
+| `variation` | `fill`, `link`, `outline`, `plain`, `subtle`, `lightFill` | The button variation                           |
+| `color`     | string                                                                            | The color of the button, defaults to `primary` |
+| `disabled`  | bool                                                                              | Disabled the button and apply light color      |
 
 ## Variations
 
@@ -51,6 +51,24 @@ Buttons make common actions immediately visible and easy to perform with one cli
 
 ```.jsx
 <Button variation="link">Link Button</Button>
+```
+
+### plain
+
+```.jsx
+<Button variation="plain">Plain Button</Button>
+```
+
+### subtle
+
+```.jsx
+<Button variation="subtle">Subtle Button</Button>
+```
+
+### lightFill
+
+```.jsx
+<Button variation="lightFill">Light Fill Button</Button>
 ```
 
 ## Color
