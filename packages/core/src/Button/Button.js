@@ -91,11 +91,10 @@ const variations = {
   `,
   plain: css`
     background-color: transparent;
-    color: ${(props) => getPaletteColor('base')(props)};
+    color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${(props) =>
-        getPaletteColor('background.light')(props)};
-      color: ${(props) => getPaletteColor('dark')(props)};
+      background-color: ${getPaletteColor('background.light')};
+      color: ${getPaletteColor('dark')};
     }
     &:focus {
       outline: 0px solid ${getPaletteColor('dark')};
@@ -103,24 +102,23 @@ const variations = {
     }
   `,
   subtle: css`
-    background-color: ${(props) => getPaletteColor('background.base')(props)};
-    color: ${(props) => getPaletteColor('base')(props)};
+    background-color: ${getPaletteColor('background.base')};
+    color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${(props) =>
-        getPaletteColor('background.light')(props)};
-      color: ${(props) => getPaletteColor('dark')(props)};
+      background-color: ${getPaletteColor('background.light')};
+      color: ${getPaletteColor('dark')};
     }
     &:focus {
-      outline: 0px solid ${(props) => getPaletteColor('dark')(props)};
-      box-shadow: 0 0 0 2px ${(props) => getPaletteColor('dark')(props)};
+      outline: 0px solid ${getPaletteColor('dark')};
+      box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
   `,
   lightFill: css`
-    background-color: ${(props) => getPaletteColor('light')(props)};
-    color: ${(props) => getPaletteColor('base')(props)};
+    background-color: ${getPaletteColor('light')};
+    color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${(props) => getPaletteColor('light')(props)};
-      color: ${(props) => getPaletteColor('dark')(props)};
+      background-color: ${getPaletteColor('light')};
+      color: ${getPaletteColor('dark')};
     }
     &:focus {
       outline: ${(props) =>
