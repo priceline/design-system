@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 03 Feb 2021 20:28:22 GMT and should not be manually modified.
+This log was last generated on Tue, 16 Feb 2021 20:20:28 GMT and should not be manually modified.
+
+## 4.4.0
+Tue, 16 Feb 2021 20:20:28 GMT
+
+### Minor changes
+
+- add primary, secondary, subtle, plain and warning variations to Button 
+- Add height and spacing from styled-system to Image component
+
+### Patches
+
+- add cta check and ability to pass in a diff heading font size
 
 ## 4.3.2
 Wed, 03 Feb 2021 20:28:22 GMT

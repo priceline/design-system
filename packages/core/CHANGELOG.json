@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.4.0",
+      "tag": "pcln-design-system_v4.4.0",
+      "date": "Tue, 16 Feb 2021 20:20:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add primary, secondary, subtle, plain and warning variations to Button ",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "6027b21e01275d558e49a1f7a0eab322cbb4009d"
+          },
+          {
+            "comment": "Add height and spacing from styled-system to Image component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "6966790a810edc44c0d71242fe5a888f703273f2"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "add cta check and ability to pass in a diff heading font size",
+            "author": "Gabby Bellini <63808842+gbellini911@users.noreply.github.com>",
+            "commit": "5171afb745789b8293340fc1ca2cb6d793557358"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.3.2",
       "tag": "pcln-design-system_v4.3.2",
       "date": "Wed, 03 Feb 2021 20:28:22 GMT",
