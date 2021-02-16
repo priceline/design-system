@@ -14,6 +14,7 @@ Use it as you would use any other link.
 | Prop    | Type   | Description    |
 | ------- | ------ | -------------- |
 | `color` | string | The link color |
+| `variation` | `fill`, `outline`, `link` | Used to alter the appearance of the link. `fill` and `outline` make the link look like a button. `link` is the default value. |
 
 ## Color
 
@@ -36,3 +37,23 @@ Uses the color from `theme.palette.error.base`.
 ```
 
 Uses the color from `theme.colors.purple`.
+
+## Variations
+
+### link
+
+```.jsx
+<Link variation='link'>Link Variant</Link>
+```
+
+### outline
+
+```.jsx
+<Link variation='outline'>Outline Variant</Link>
+```
+
+### fill
+
+```.jsx
+<Link variation='fill'>Fill Variant</Link>
+```
