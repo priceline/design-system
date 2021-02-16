@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 11 Jan 2021 14:00:06 GMT and should not be manually modified.
+This log was last generated on Tue, 16 Feb 2021 20:20:28 GMT and should not be manually modified.
+
+## 4.1.0
+Tue, 16 Feb 2021 20:20:28 GMT
+
+### Minor changes
+
+- Add Covid related flights icons
 
 ## 4.0.1
 Mon, 11 Jan 2021 14:00:06 GMT
