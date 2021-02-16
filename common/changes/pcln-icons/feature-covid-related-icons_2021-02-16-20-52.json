@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "feat(): Update title for mask and no-seat icons",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "adhagam@gmail.com"
+}
