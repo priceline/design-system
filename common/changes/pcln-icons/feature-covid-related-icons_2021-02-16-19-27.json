@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add Covid related flights icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "adhagam@gmail.com"
+}
