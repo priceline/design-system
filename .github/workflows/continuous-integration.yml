@@ -2,8 +2,7 @@ name: Rush Design System CI
 
 on:
   push:
-    branches:
-      - '*'
+  workflow_dispatch:
 
 jobs:
   design-system-ci:
