@@ -15,7 +15,7 @@ const RatingBadge = styled(Box).attrs(({color, bg}) => ({
 RatingBadge.defaultProps = {
   fontWeight: 'bold',
   px: 2,
-  color: 'white',
+  color: 'alert',
   bg: 'orange',
   borderRadius: 1,
 }
