@@ -4,8 +4,26 @@ import { fontWeight, borderRadius, } from 'styled-system';
 import { Box } from '../Box'
 import { deprecatedPropType } from '../utils';
 
+// TODO remove once we delete deprecated bg prop
+function getBgAndColorProps(color, bg) {
+  const { bg: defaultBg, color: defaultColor} = RatingBadge.defaultProps
+  if (bg && color && bg !== defaultBg && color !== defaultColor) {
+    // bg and color
+    return {bg, color}
+  } else if (bg === defaultBg && color === defaultColor ) {
+    // no bg, no color
+    return {bg: undefined, color}
+  } else if (bg === defaultBg && color !== defaultColor) {
+    // color, no bg
+    return { bg: undefined, color}
+  } else if (bg !== defaultBg && color === defaultColor) {
+    // bg, no color
+    return {color: bg, bg: undefined}
+  }
+}
+
 const RatingBadge = styled(Box).attrs(({color, bg}) => ({
-  bg: color ? "" : bg // TODO delete once we remove the bg prop
+  ...getBgAndColorProps(color, bg)
 }))`
   display: inline-block;
   line-height: 1.5;
