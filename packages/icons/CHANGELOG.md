@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 16 Feb 2021 20:20:28 GMT and should not be manually modified.
+This log was last generated on Wed, 17 Feb 2021 16:29:34 GMT and should not be manually modified.
+
+## 4.1.1
+Wed, 17 Feb 2021 16:29:34 GMT
+
+### Patches
+
+- feat(): Update title for mask and no-seat icons
 
 ## 4.1.0
 Tue, 16 Feb 2021 20:20:28 GMT
