@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Flex, Badge, Box, Text } from 'pcln-design-system'
-import { themeGet } from 'styled-system'
+import { Flex, Box } from 'pcln-design-system'
 
 const CustomBox = styled(Box)`
   border-radius: 2px;
@@ -11,43 +10,58 @@ const CustomBox = styled(Box)`
   margin-right: 4px;
 `
 
-const CustomText = styled(Text)`
-  font-size: ${themeGet('fontSizes.0')}px;
-`
+function ProgressBar({ numberOfSteps }) {
+  const defaultBar = 'background.light'
+  const weakBar = 'warning.base'
+  const fairBar = 'caution.base'
+  const goodBar = 'primary.base'
+  const strongBar = 'secondary.base'
 
-function ProgressBar({
-  stateText,
-  stateColor,
-  firstBarColor,
-  secondBarColor,
-  thirdBarColor,
-  fourthBarColor,
-}) {
+  const steps = [
+    {
+      firstBar: defaultBar,
+      secondBar: defaultBar,
+      thirdBar: defaultBar,
+      fourthBar: defaultBar,
+    },
+    {
+      firstBar: weakBar,
+      secondBar: defaultBar,
+      thirdBar: defaultBar,
+      fourthBar: defaultBar,
+    },
+    {
+      firstBar: fairBar,
+      secondBar: fairBar,
+      thirdBar: defaultBar,
+      fourthBar: defaultBar,
+    },
+    {
+      firstBar: goodBar,
+      secondBar: goodBar,
+      thirdBar: goodBar,
+      fourthBar: defaultBar,
+    },
+    {
+      firstBar: strongBar,
+      secondBar: strongBar,
+      thirdBar: strongBar,
+      fourthBar: strongBar,
+    },
+  ]
+
   return (
-    <Flex flexDirection='column' justifyContents='center'>
-      <Flex alignItems='center' mb={2}>
-        <CustomText color='gray'>Password Strength: </CustomText>
-        <Badge bg={stateColor} ml={2}>
-          {stateText}
-        </Badge>
-      </Flex>
-      <Flex>
-        <CustomBox bg={firstBarColor}></CustomBox>
-        <CustomBox bg={secondBarColor}></CustomBox>
-        <CustomBox bg={thirdBarColor}></CustomBox>
-        <CustomBox bg={fourthBarColor}></CustomBox>
-      </Flex>
+    <Flex>
+      <CustomBox color={steps[numberOfSteps].firstBar}></CustomBox>
+      <CustomBox color={steps[numberOfSteps].secondBar}></CustomBox>
+      <CustomBox color={steps[numberOfSteps].thirdBar}></CustomBox>
+      <CustomBox color={steps[numberOfSteps].fourthBar}></CustomBox>
     </Flex>
   )
 }
 
 ProgressBar.propTypes = {
-  stateText: PropTypes.string,
-  stateColor: PropTypes.string,
-  firstBarColor: PropTypes.string,
-  secondBarColor: PropTypes.string,
-  thirdBarColor: PropTypes.string,
-  fourthBarColor: PropTypes.string,
+  numberOfSteps: PropTypes.oneOf(0, 1, 2, 3, 4),
 }
 
 export default ProgressBar
