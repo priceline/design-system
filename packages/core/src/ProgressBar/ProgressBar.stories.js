@@ -1,26 +1,52 @@
 import React from 'react'
 import { ProgressBar } from '.'
-import { Flex, Divider } from '../../src/'
 
 export default {
   title: 'ProgressBar',
   component: ProgressBar,
 }
 
-export const passwordProgressBar = () => (
-  <Flex flexDirection='column'>
-    <ProgressBar numberOfSteps={0} />
-    <Divider m={4}></Divider>
-    <ProgressBar numberOfSteps={1} />
-    <Divider m={4}></Divider>
-    <ProgressBar numberOfSteps={2} />
-    <Divider m={4}></Divider>
-    <ProgressBar numberOfSteps={3} />
-    <Divider m={4}></Divider>
-    <ProgressBar numberOfSteps={4} />
-  </Flex>
+const basicProps = [
+  { color: 'warning' },
+  { color: 'secondary' },
+  { color: 'secondary' },
+  { color: 'primary' },
+]
+
+const shortProps = [
+  { color: 'secondary' },
+  { color: 'secondary' },
+  { color: 'secondary' },
+  { color: 'secondary' },
+]
+
+const thickProps = [
+  { color: 'primary' },
+  { color: 'primary' },
+  { color: 'primary' },
+  { color: 'secondary' },
+]
+
+export const basicProgressBar = () => (
+  <ProgressBar steps={basicProps} stepIndex={1}></ProgressBar>
 )
 
-passwordProgressBar.story = {
-  name: 'All',
+export const shortProgressBar = () => (
+  <ProgressBar steps={shortProps} stepIndex={4} stepWidth='100px'></ProgressBar>
+)
+
+export const thickProgressBar = () => (
+  <ProgressBar steps={thickProps} stepIndex={3} stepHeight='10px'></ProgressBar>
+)
+
+basicProgressBar.story = {
+  name: 'Basic',
+}
+
+shortProgressBar.story = {
+  name: 'Short',
+}
+
+thickProgressBar.story = {
+  name: 'Thick',
 }

@@ -5,63 +5,47 @@ import { Flex, Box } from 'pcln-design-system'
 
 const CustomBox = styled(Box)`
   border-radius: 2px;
-  width: 163px;
-  height: 4px;
   margin-right: 4px;
 `
 
-function ProgressBar({ numberOfSteps }) {
+function ProgressBar({ steps, stepIndex, stepHeight, stepWidth }) {
   const defaultBar = 'background.light'
-  const weakBar = 'warning.base'
-  const fairBar = 'caution.base'
-  const goodBar = 'primary.base'
-  const strongBar = 'secondary.base'
-
-  const steps = [
-    {
-      firstBar: defaultBar,
-      secondBar: defaultBar,
-      thirdBar: defaultBar,
-      fourthBar: defaultBar,
-    },
-    {
-      firstBar: weakBar,
-      secondBar: defaultBar,
-      thirdBar: defaultBar,
-      fourthBar: defaultBar,
-    },
-    {
-      firstBar: fairBar,
-      secondBar: fairBar,
-      thirdBar: defaultBar,
-      fourthBar: defaultBar,
-    },
-    {
-      firstBar: goodBar,
-      secondBar: goodBar,
-      thirdBar: goodBar,
-      fourthBar: defaultBar,
-    },
-    {
-      firstBar: strongBar,
-      secondBar: strongBar,
-      thirdBar: strongBar,
-      fourthBar: strongBar,
-    },
-  ]
 
   return (
-    <Flex>
-      <CustomBox color={steps[numberOfSteps].firstBar}></CustomBox>
-      <CustomBox color={steps[numberOfSteps].secondBar}></CustomBox>
-      <CustomBox color={steps[numberOfSteps].thirdBar}></CustomBox>
-      <CustomBox color={steps[numberOfSteps].fourthBar}></CustomBox>
-    </Flex>
+    steps &&
+    steps.length > 0 && (
+      <Flex>
+        {steps.map((step, index) => {
+          const color = index < stepIndex ? step.color : defaultBar
+          return (
+            <CustomBox
+              color={color}
+              height={stepHeight}
+              width={stepWidth}
+            ></CustomBox>
+          )
+        })}
+      </Flex>
+    )
   )
 }
 
+ProgressBar.defaultProps = {
+  steps: [
+    { color: 'background.light' },
+    { color: 'background.light' },
+    { color: 'background.light' },
+    { color: 'background.light' },
+  ],
+  stepHeight: '4px',
+  stepWidth: '100%',
+}
+
 ProgressBar.propTypes = {
-  numberOfSteps: PropTypes.oneOf(0, 1, 2, 3, 4),
+  steps: PropTypes.array,
+  stepIndex: PropTypes.number,
+  stepHeight: PropTypes.string,
+  stepWidth: PropTypes.string,
 }
 
 export default ProgressBar
