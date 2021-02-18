@@ -1,52 +1,29 @@
 import React from 'react'
-import { ProgressBar } from '.'
+import { Box } from '../Box'
+import ProgressBar from './ProgressBar'
 
 export default {
   title: 'ProgressBar',
   component: ProgressBar,
 }
 
-const basicProps = [
+const steps = [
   { color: 'warning' },
-  { color: 'secondary' },
-  { color: 'secondary' },
+  { color: 'caution' },
   { color: 'primary' },
-]
-
-const shortProps = [
-  { color: 'secondary' },
-  { color: 'secondary' },
-  { color: 'secondary' },
-  { color: 'secondary' },
-]
-
-const thickProps = [
-  { color: 'primary' },
-  { color: 'primary' },
-  { color: 'primary' },
-  { color: 'secondary' },
+  { color: 'success' },
 ]
 
 export const basicProgressBar = () => (
-  <ProgressBar steps={basicProps} stepIndex={1}></ProgressBar>
+  <ProgressBar steps={steps} stepIndex={3} />
 )
 
-export const shortProgressBar = () => (
-  <ProgressBar steps={shortProps} stepIndex={4} stepWidth='100px'></ProgressBar>
+export const Thick = () => (
+  <ProgressBar steps={steps} stepIndex={3} stepHeight='10px' />
 )
 
-export const thickProgressBar = () => (
-  <ProgressBar steps={thickProps} stepIndex={3} stepHeight='10px'></ProgressBar>
+export const Short = () => (
+  <Box width='300px'>
+    <ProgressBar steps={steps} stepIndex={4} />
+  </Box>
 )
-
-basicProgressBar.story = {
-  name: 'Basic',
-}
-
-shortProgressBar.story = {
-  name: 'Short',
-}
-
-thickProgressBar.story = {
-  name: 'Thick',
-}

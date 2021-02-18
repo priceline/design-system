@@ -1,51 +1,42 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { Flex, Box } from 'pcln-design-system'
 
 const CustomBox = styled(Box)`
+  width: 100%;
   border-radius: 2px;
   margin-right: 4px;
 `
 
-function ProgressBar({ steps, stepIndex, stepHeight, stepWidth }) {
-  const defaultBar = 'background.light'
+const defaultStepColor = 'background.light'
 
+function ProgressBar({ steps, stepIndex, stepHeight }) {
   return (
-    steps &&
-    steps.length > 0 && (
-      <Flex>
-        {steps.map((step, index) => {
-          const color = index < stepIndex ? step.color : defaultBar
-          return (
-            <CustomBox
-              color={color}
-              height={stepHeight}
-              width={stepWidth}
-            ></CustomBox>
-          )
-        })}
-      </Flex>
-    )
+    <Flex>
+      {steps.map((step, index) => {
+        const stepColor =
+          index < stepIndex ? steps[stepIndex - 1].color : defaultStepColor
+        return (
+          <CustomBox key={step.color} color={stepColor} height={stepHeight} />
+        )
+      })}
+    </Flex>
   )
 }
 
-ProgressBar.defaultProps = {
-  steps: [
-    { color: 'background.light' },
-    { color: 'background.light' },
-    { color: 'background.light' },
-    { color: 'background.light' },
-  ],
-  stepHeight: '4px',
-  stepWidth: '100%',
+ProgressBar.propTypes = {
+  steps: PropTypes.arrayOf(
+    PropTypes.shape({
+      color: PropTypes.string,
+    })
+  ).isRequired,
+  stepIndex: PropTypes.number.isRequired,
+  stepHeight: PropTypes.string,
 }
 
-ProgressBar.propTypes = {
-  steps: PropTypes.array,
-  stepIndex: PropTypes.number,
-  stepHeight: PropTypes.string,
-  stepWidth: PropTypes.string,
+ProgressBar.defaultProps = {
+  stepHeight: '4px',
 }
 
 export default ProgressBar
