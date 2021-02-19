@@ -11,7 +11,7 @@ const testProps = [
 
 describe('ProgressBar', () => {
   it('Default progress bar (no colors)', () => {
-    render(<ProgressBar steps={testProps} stepIndex={0} />)
+    render(<ProgressBar steps={testProps} currentStep={0} />)
     const firstBar = screen.getByTestId('test-id-0')
     const secondBar = screen.getByTestId('test-id-1')
     const thirdBar = screen.getByTestId('test-id-2')
@@ -23,7 +23,7 @@ describe('ProgressBar', () => {
   })
 
   it('Basic progress bar with step level 3', () => {
-    render(<ProgressBar steps={testProps} stepIndex={3} />)
+    render(<ProgressBar steps={testProps} currentStep={3} />)
     const firstBar = screen.getByTestId('test-id-0')
     const secondBar = screen.getByTestId('test-id-1')
     const thirdBar = screen.getByTestId('test-id-2')
@@ -35,7 +35,7 @@ describe('ProgressBar', () => {
   })
 
   it('Basic progress bar with step level 4', () => {
-    render(<ProgressBar steps={testProps} stepIndex={4} />)
+    render(<ProgressBar steps={testProps} currentStep={4} />)
     const firstBar = screen.getByTestId('test-id-0')
     const secondBar = screen.getByTestId('test-id-1')
     const thirdBar = screen.getByTestId('test-id-2')

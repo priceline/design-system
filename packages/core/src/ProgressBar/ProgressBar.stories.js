@@ -15,15 +15,15 @@ const steps = [
 ]
 
 export const basicProgressBar = () => (
-  <ProgressBar steps={steps} stepIndex={3} />
+  <ProgressBar steps={steps} currentStep={3} />
 )
 
 export const Thick = () => (
-  <ProgressBar steps={steps} stepIndex={1} stepHeight='10px' />
+  <ProgressBar steps={steps} currentStep={1} stepHeight='10px' />
 )
 
 export const Short = () => (
   <Box width='300px'>
-    <ProgressBar steps={steps} stepIndex={4} />
+    <ProgressBar steps={steps} currentStep={4} />
   </Box>
 )

@@ -4,24 +4,24 @@ import styled from 'styled-components'
 import { Flex, Box } from 'pcln-design-system'
 
 const CustomBox = styled(Box)`
-  width: 100%;
   border-radius: 2px;
-  margin-right: 4px;
 `
 
 const defaultStepColor = 'background.light'
 
-function ProgressBar({ steps, stepIndex, stepHeight }) {
+function ProgressBar({ steps, currentStep, stepHeight }) {
   return (
     <Flex>
       {steps.map((step, index) => {
         const stepColor =
-          index < stepIndex ? steps[stepIndex - 1].color : defaultStepColor
+          index < currentStep ? steps[currentStep - 1].color : defaultStepColor
         return (
           <CustomBox
-            key={step.color}
+            key={index}
             color={stepColor}
             height={stepHeight}
+            width={1}
+            mr={1}
             data-testid={'test-id-' + index}
           />
         )
@@ -36,7 +36,7 @@ ProgressBar.propTypes = {
       color: PropTypes.string,
     })
   ).isRequired,
-  stepIndex: PropTypes.number.isRequired,
+  currentStep: PropTypes.number.isRequired,
   stepHeight: PropTypes.string,
 }
 
