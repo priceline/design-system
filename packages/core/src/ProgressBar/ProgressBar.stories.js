@@ -19,7 +19,7 @@ export const basicProgressBar = () => (
 )
 
 export const Thick = () => (
-  <ProgressBar steps={steps} stepIndex={3} stepHeight='10px' />
+  <ProgressBar steps={steps} stepIndex={1} stepHeight='10px' />
 )
 
 export const Short = () => (

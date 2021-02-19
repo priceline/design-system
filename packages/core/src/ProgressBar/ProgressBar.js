@@ -18,7 +18,12 @@ function ProgressBar({ steps, stepIndex, stepHeight }) {
         const stepColor =
           index < stepIndex ? steps[stepIndex - 1].color : defaultStepColor
         return (
-          <CustomBox key={step.color} color={stepColor} height={stepHeight} />
+          <CustomBox
+            key={step.color}
+            color={stepColor}
+            height={stepHeight}
+            data-testid={'test-id-' + index}
+          />
         )
       })}
     </Flex>

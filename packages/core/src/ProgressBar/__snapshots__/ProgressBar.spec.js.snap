@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  height: 4px;
+  color: primary;
+  width: 100%;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+
+.c2 {
+  height: 4px;
+  color: background.light;
+  width: 100%;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    color="primary"
+    data-testid="test-id-0"
+    height="4px"
+  />
+  <div
+    className="c1"
+    color="primary"
+    data-testid="test-id-1"
+    height="4px"
+  />
+  <div
+    className="c1"
+    color="primary"
+    data-testid="test-id-2"
+    height="4px"
+  />
+  <div
+    className="c2"
+    color="background.light"
+    data-testid="test-id-3"
+    height="4px"
+  />
+</div>
+`;
