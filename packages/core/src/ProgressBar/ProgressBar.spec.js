@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, screen } from 'testing-library'
 import ProgressBar from './ProgressBar'
-import renderer from 'react-test-renderer'
 
 const testProps = [
   { color: 'warning' },
