@@ -9,9 +9,9 @@ const CustomBox = styled(Box)`
 
 const defaultStepColor = 'background.light'
 
-function ProgressBar({ steps, currentStep, stepHeight }) {
+function ProgressBar({ steps, currentStep, stepHeight, className }) {
   return (
-    <Flex>
+    <Flex className={className}>
       {steps.map((step, index) => {
         const stepColor =
           index < currentStep ? steps[currentStep - 1].color : defaultStepColor
@@ -38,6 +38,7 @@ ProgressBar.propTypes = {
   ).isRequired,
   currentStep: PropTypes.number.isRequired,
   stepHeight: PropTypes.string,
+  className: PropTypes.string,
 }
 
 ProgressBar.defaultProps = {
