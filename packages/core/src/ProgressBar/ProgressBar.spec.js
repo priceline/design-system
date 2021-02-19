@@ -9,11 +9,22 @@ const testProps = [
   { color: 'primary' },
   { color: 'success' },
 ]
-const testStepIndex = 3
 
 describe('ProgressBar', () => {
-  it('Basic progress bar', () => {
-    render(<ProgressBar steps={testProps} stepIndex={testStepIndex} />)
+  it('Default progress bar (no colors)', () => {
+    render(<ProgressBar steps={testProps} stepIndex={0} />)
+    const firstBar = screen.getByTestId('test-id-0')
+    const secondBar = screen.getByTestId('test-id-1')
+    const thirdBar = screen.getByTestId('test-id-2')
+    const fourthBar = screen.getByTestId('test-id-3')
+    expect(firstBar).toHaveStyleRule('background-color', '#f4f6f8')
+    expect(secondBar).toHaveStyleRule('background-color', '#f4f6f8')
+    expect(thirdBar).toHaveStyleRule('background-color', '#f4f6f8')
+    expect(fourthBar).toHaveStyleRule('background-color', '#f4f6f8')
+  })
+
+  it('Basic progress bar with step level 3', () => {
+    render(<ProgressBar steps={testProps} stepIndex={3} />)
     const firstBar = screen.getByTestId('test-id-0')
     const secondBar = screen.getByTestId('test-id-1')
     const thirdBar = screen.getByTestId('test-id-2')
@@ -24,10 +35,15 @@ describe('ProgressBar', () => {
     expect(fourthBar).toHaveStyleRule('background-color', '#f4f6f8')
   })
 
-  it('renders correctly', () => {
-    const tree = renderer
-      .create(<ProgressBar steps={testProps} stepIndex={testStepIndex} />)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+  it('Basic progress bar with step level 4', () => {
+    render(<ProgressBar steps={testProps} stepIndex={4} />)
+    const firstBar = screen.getByTestId('test-id-0')
+    const secondBar = screen.getByTestId('test-id-1')
+    const thirdBar = screen.getByTestId('test-id-2')
+    const fourthBar = screen.getByTestId('test-id-3')
+    expect(firstBar).toHaveStyleRule('background-color', '#0a0')
+    expect(secondBar).toHaveStyleRule('background-color', '#0a0')
+    expect(thirdBar).toHaveStyleRule('background-color', '#0a0')
+    expect(fourthBar).toHaveStyleRule('background-color', '#0a0')
   })
 })
