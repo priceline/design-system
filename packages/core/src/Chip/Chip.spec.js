@@ -63,7 +63,7 @@ describe('Chip', () => {
     )
     const Component = screen.getByText('Free Wifi')
 
-    expect(Component).toHaveStyleRule('border', `1px solid ${theme.colors.blue}`)
+    expect(Component).toHaveStyleRule('border', `1px solid ${theme.palette.primary.base}`)
     expect(Component).toHaveStyleRule('background-color', '#e8f2ff')
     expect(Component).toHaveStyleRule('color', theme.colors.blue)
   })
