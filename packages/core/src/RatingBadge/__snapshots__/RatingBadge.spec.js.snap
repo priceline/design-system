@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RatingBadge renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c1 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: #f68013;
@@ -12,9 +13,26 @@ exports[`RatingBadge renders 1`] = `
   border-radius: 2px;
 }
 
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
-  className="c0"
-  color="alert"
-  fontWeight="bold"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+      color="alert"
+      font-weight="bold"
+    >
+      5
+    </div>
+  </div>
+</DocumentFragment>
 `;
