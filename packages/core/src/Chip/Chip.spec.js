@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { fireEvent, render, screen } from 'testing-library'
 import { act, renderHook } from '@testing-library/react-hooks'
-import { theme } from '..'
+import { createTheme } from '..'
+
+const theme = createTheme()
 import Chip from './Chip'
 
 function useToggle(initialValue = false) {
