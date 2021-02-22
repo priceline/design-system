@@ -52,7 +52,7 @@ describe('Chip', () => {
 
     expect(Component).toHaveStyleRule('border', '1px solid #c0cad5')
     expect(Component).toHaveStyleRule('background-color', '#fff')
-    expect(Component).toHaveStyleRule('color', theme.colors.blue)
+    expect(Component).toHaveStyleRule('color', theme.palette.primary.base)
   })
 
   it('renders selected filter chip', () => {
