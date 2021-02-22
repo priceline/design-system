@@ -37,7 +37,7 @@ exports[`Stamp bg blue sets background color 1`] = `
   min-height: 24px;
   color: #4f6f8f;
   border-color: #c0cad5;
-  background-color: #007aff;
+  background-color: #0068EF;
 }
 
 .c0 > svg {
@@ -124,7 +124,7 @@ exports[`Stamp color blue sets text and icon color 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
-  color: #007aff;
+  color: #0068EF;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
@@ -139,7 +139,7 @@ exports[`Stamp color blue sets text and icon color 1`] = `
   text-transform: uppercase;
   line-height: 1.4;
   min-height: 24px;
-  color: #007aff;
+  color: #0068EF;
   border-color: #c0cad5;
   background-color: #f4f6f8;
 }

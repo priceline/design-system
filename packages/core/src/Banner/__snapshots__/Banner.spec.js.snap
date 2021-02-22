@@ -175,7 +175,7 @@ exports[`Banner renders with blue bg 1`] = `
 
 .c0 {
   text-align: left;
-  background-color: #007aff;
+  background-color: #0068EF;
   color: #fff;
 }
 

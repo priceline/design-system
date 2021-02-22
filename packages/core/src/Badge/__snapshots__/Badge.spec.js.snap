@@ -13,9 +13,9 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #007aff;
+  background-color: #0068EF;
   color: #fff;
-  background-color: #007aff;
+  background-color: #0068EF;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.25;

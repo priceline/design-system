@@ -51,8 +51,8 @@ exports[`Select renders 1`] = `
 
 .c1:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 .c1::-ms-expand {

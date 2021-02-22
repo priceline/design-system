@@ -5,8 +5,8 @@ exports[`Divider borderColor prop sets borderColor 1`] = `
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: #007aff;
-  background-color: #007aff;
+  border-color: #0068EF;
+  background-color: #0068EF;
   margin-left: 0;
   margin-right: 0;
 }

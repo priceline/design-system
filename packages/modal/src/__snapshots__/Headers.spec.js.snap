@@ -30,7 +30,7 @@ exports[`ModalHeader render 1`] = `
   font-size: 14px;
   padding: 9.5px 18px;
   margin-left: auto;
-  background-color: #007aff;
+  background-color: #0068EF;
   color: #fff;
   padding: 0;
   background-color: transparent;

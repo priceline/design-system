@@ -17,7 +17,7 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #0068EF;
   color: #fff;
 }
 

@@ -63,8 +63,8 @@ exports[`IconField renders 1`] = `
 
 .c3:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 @media screen and (min-width:40em) {
@@ -158,7 +158,7 @@ exports[`IconField renders icon button 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #0068EF;
   color: #fff;
   padding: 0;
   background-color: transparent;
@@ -240,8 +240,8 @@ exports[`IconField renders icon button 1`] = `
 
 .c1:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 @media screen and (min-width:40em) {
@@ -346,7 +346,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #007aff;
+  background-color: #0068EF;
   color: #fff;
   padding: 0;
   background-color: transparent;
@@ -428,8 +428,8 @@ exports[`IconField renders icon, input and icon button together 1`] = `
 
 .c3:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 @media screen and (min-width:40em) {

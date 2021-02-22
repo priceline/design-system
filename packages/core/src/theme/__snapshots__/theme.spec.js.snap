@@ -19,11 +19,11 @@ Object {
   "colorStyles": Object {
     "blueOnLightBlue": Object {
       "backgroundColor": "#e8f2ff",
-      "color": "#007aff",
+      "color": "#0068EF",
     },
     "blueOnWhite": Object {
       "backgroundColor": "#fff",
-      "color": "#007aff",
+      "color": "#0068EF",
     },
     "danger": Object {
       "backgroundColor": "#c00",
@@ -82,7 +82,7 @@ Object {
       "color": "#001833",
     },
     "whiteOnBlue": Object {
-      "backgroundColor": "#007aff",
+      "backgroundColor": "#0068EF",
       "color": "#fff",
     },
     "whiteOnDarkOrange": Object {
@@ -112,7 +112,7 @@ Object {
   },
   "colors": Object {
     "black": "#000",
-    "blue": "#007aff",
+    "blue": "#0068EF",
     "borderGray": "#c0cad5",
     "buttonGray": "#edf0f3",
     "darkBlue": "#049",
