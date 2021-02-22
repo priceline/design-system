@@ -69,8 +69,8 @@ Menu.displayName = 'Menu'
 
 Menu.propTypes = {
   id: PropTypes.string,
-  buttonText: PropTypes.string,
-  buttonProps: PropTypes.object,
+  buttonText: PropTypes.node,
+  buttonProps: PropTypes.shape(Button.propTypes),
   color: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.number,
