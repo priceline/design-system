@@ -64,7 +64,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 .c1 > input:checked:focus ~ svg {
-  border: 1px solid #007aff;
+  border: 1px solid #0068EF;
   background-color: #e8f2ff;
 }
 
@@ -210,7 +210,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 .c1 > input:checked:focus ~ svg {
-  border: 1px solid #007aff;
+  border: 1px solid #0068EF;
   background-color: #e8f2ff;
 }
 
@@ -337,7 +337,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 .c1 > input:hover ~ svg[data-name='empty'] {
-  color: #007aff;
+  color: #0068EF;
 }
 
 .c1 > input:focus ~ svg {
@@ -347,7 +347,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 
 .c1 > input:checked ~ svg[data-name='checked'] {
   display: inline-block;
-  color: #007aff;
+  color: #0068EF;
 }
 
 .c1 > input:checked ~ svg[data-name='empty'] {
@@ -355,7 +355,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 .c1 > input:checked:focus ~ svg {
-  border: 1px solid #007aff;
+  border: 1px solid #0068EF;
   background-color: #e8f2ff;
 }
 

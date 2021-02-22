@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { fireEvent, render, screen } from 'testing-library'
 import { act, renderHook } from '@testing-library/react-hooks'
+import { theme } from '..'
 import Chip from './Chip'
 
 function useToggle(initialValue = false) {
@@ -49,7 +50,7 @@ describe('Chip', () => {
 
     expect(Component).toHaveStyleRule('border', '1px solid #c0cad5')
     expect(Component).toHaveStyleRule('background-color', '#fff')
-    expect(Component).toHaveStyleRule('color', '#007aff')
+    expect(Component).toHaveStyleRule('color', theme.colors.blue)
   })
 
   it('renders selected filter chip', () => {
@@ -60,9 +61,9 @@ describe('Chip', () => {
     )
     const Component = screen.getByText('Free Wifi')
 
-    expect(Component).toHaveStyleRule('border', '1px solid #007aff')
+    expect(Component).toHaveStyleRule('border', `1px solid ${theme.colors.blue}`)
     expect(Component).toHaveStyleRule('background-color', '#e8f2ff')
-    expect(Component).toHaveStyleRule('color', '#007aff')
+    expect(Component).toHaveStyleRule('color', theme.colors.blue)
   })
 
   it('renders disabled chip', () => {

@@ -68,8 +68,8 @@ exports[`FormField renders 1`] = `
 
 .c2:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 @media screen and (min-width:40em) {
@@ -208,8 +208,8 @@ exports[`FormField renders with Icon 1`] = `
 
 .c4:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 @media screen and (min-width:40em) {
@@ -373,8 +373,8 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 
 .c4:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 @media screen and (min-width:40em) {
@@ -533,8 +533,8 @@ exports[`FormField renders with Select  1`] = `
 
 .c3:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 .c3::-ms-expand {
@@ -702,8 +702,8 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 .c5:focus {
   outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
+  border-color: #0068EF;
+  box-shadow: 0 0 0 2px #0068EF;
 }
 
 .c5::-ms-expand {
