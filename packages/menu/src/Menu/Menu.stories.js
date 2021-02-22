@@ -141,3 +141,20 @@ export const BreakpointColumns = () => {
     </Menu>
   )
 }
+
+export const ButtonProps = () => {
+  return (
+    <Flex flexDirection='column' color='background.darkest' width={1} p={2}>
+      <Text>Pretend Header</Text>
+      <Text>Example</Text>
+      <Menu
+        width={300}
+        buttonText='Menu'
+        buttonProps={{ color: 'text.lightest', size: 'large', width: 1, p: 3 }}
+      >
+        {RenderChildren(listItems)}
+      </Menu>
+      <Text>Example</Text>
+    </Flex>
+  )
+}

@@ -14,10 +14,6 @@ const MenuButton = styled(Button)`
   outline: none;
   padding: 12px;
 
-  &:focus {
-    border: 2px solid ${getPaletteColor('base')};
-  }
-
   &:hover {
     background-color: ${getPaletteColor('base')};
   }

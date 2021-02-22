@@ -11,10 +11,9 @@ import {
   ThemeProvider,
 } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
-
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
-import DEFAULTS_MODIFIERS from '../helpers/defaultModifiers'
+import DEFAULT_MODIFIERS from '../helpers/defaultModifiers'
 
 class PopoverContent extends Component {
   componentDidMount() {
@@ -100,18 +99,16 @@ class PopoverContent extends Component {
       })
     )
 
+    const modifiers = {
+      ...DEFAULT_MODIFIERS,
+      offset: {
+        offset: this.calcOffset(placement),
+      },
+    }
+
     return ReactDOM.createPortal(
       <React.Fragment>
-        <Popper
-          positionFixed={true}
-          modifiers={{
-            ...DEFAULTS_MODIFIERS,
-            offset: {
-              offset: this.calcOffset(placement),
-            },
-          }}
-          {...this.props}
-        >
+        <Popper positionFixed modifiers={modifiers} {...this.props}>
           {({ placement, ref, style, arrowProps }) => (
             <PopperGuide
               className={className}
@@ -167,7 +164,8 @@ class PopoverContent extends Component {
 const PopperGuide = styled(Box)`
   padding: 16px;
   z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
-  max-width: ${({ width }) => width}px;
+  max-width: ${({ width }) =>
+    typeof width === 'number' ? `${width}px` : width};
   width: 100%;
   box-sizing: border-box;
 `
