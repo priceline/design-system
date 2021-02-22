@@ -23,10 +23,10 @@ const Flex = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   ...props,
 }))`
   display: flex;
+  ${applyVariations('Flex')}
   ${alignItems} ${justifyContent}
   ${flexDirection}
   ${flexWrap}
-  ${applyVariations('Flex')}
 `
 
 Flex.propTypes = {

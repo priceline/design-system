@@ -36,8 +36,8 @@ const TextArea = styled.textarea`
     display: none;
   }
 
-  ${borders} ${space};
   ${applyVariations('TextArea')}
+  ${borders} ${space};
 `
 
 TextArea.displayName = 'TextArea'

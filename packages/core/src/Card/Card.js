@@ -17,8 +17,8 @@ const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
 })
 
 const Card = styled(Box)`
-  ${boxBorder} ${borderRadius}
   ${applyVariations('Card')}
+  ${boxBorder} ${borderRadius}
 `
 
 Card.propTypes = {

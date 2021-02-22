@@ -35,10 +35,10 @@ const Label = styled.label`
       ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
       : ''}
 
+  ${applyVariations('Label')}
   ${space} ${fontSize} ${fontWeight} ${width};
   ${nowrap}
   ${accessiblyHide}
-  ${applyVariations('Label')}
 `
 
 Label.propTypes = {

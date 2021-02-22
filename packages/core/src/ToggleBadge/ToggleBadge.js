@@ -20,12 +20,12 @@ const ToggleBadge = styled.button`
       ? getPaletteColor(props.bg || props.color, 'light')(props)
       : props.unSelectedBg};
   color: ${getPaletteColor('base')};
-  ${space} ${fontSize};
   &:hover {
     background-color: ${(props) =>
       getPaletteColor(props.bg || props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
+  ${space} ${fontSize};
 `
 
 ToggleBadge.displayName = 'ToggleBadge'

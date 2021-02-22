@@ -66,9 +66,9 @@ const Stamp = styled.div`
   border-style: solid;
   color: ${getPaletteColor('base')};
 
-  ${space} ${fontSize};
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Stamp', variations)};
+  ${space} ${fontSize};
 `
 
 Stamp.displayName = 'Stamp'

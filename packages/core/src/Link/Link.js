@@ -41,8 +41,8 @@ const Link = styled.a.attrs(({ target, ...props }) => ({
   target,
   ...props,
 }))`
-  ${width} ${space};
   ${applyVariations('Link', variations)}
+  ${width} ${space};
 `
 
 Link.displayName = 'Link'

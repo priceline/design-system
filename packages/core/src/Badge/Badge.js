@@ -70,9 +70,9 @@ const Badge = styled.div`
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
-  ${space} ${type} ${color};
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
+  ${space} ${type} ${color};
 `
 
 Badge.displayName = 'Badge'

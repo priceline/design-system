@@ -14,8 +14,8 @@ const Divider = styled.hr`
     getPaletteColor(props.borderColor || props.color, 'base')(props)};
   background-color: ${(props) =>
     getPaletteColor(props.borderColor || props.color, 'base')(props)};
-  ${space} ${width};
   ${applyVariations('Divider')}
+  ${space} ${width};
 `
 
 Divider.displayName = 'Divider'

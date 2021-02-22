@@ -22,11 +22,10 @@ import {
 } from '../utils'
 
 const Box = styled.div`
+  ${applyVariations('Box')}
   ${display} ${height} ${maxHeight} ${maxWidth}
   ${minHeight} ${minWidth} ${size} ${space} 
   ${textAlign} ${width} 
-
-  ${applyVariations('Box')}
   ${boxShadow}
   ${color}
 `

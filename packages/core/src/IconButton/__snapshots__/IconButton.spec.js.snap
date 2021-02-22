@@ -71,6 +71,7 @@ exports[`IconButton renders without props 1`] = `
 <button
   className="c0"
   color="primary"
+  size="medium"
 >
   <div>
     <svg

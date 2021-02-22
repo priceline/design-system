@@ -20,8 +20,8 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-color: ${getPaletteColor('border.light')};
-  ${image} ${height} ${width};
   ${applyVariations('BackgroundImage', variations)}
+  ${image} ${height} ${width};
 `
 
 BackgroundImage.defaultProps = {
