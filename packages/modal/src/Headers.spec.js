@@ -1,35 +1,17 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render } from 'testing-library'
 import { ModalHeader, SmallModalHeader } from './index'
-import { ThemeProvider, theme } from 'pcln-design-system'
-
-const customRender = (node, ...options) => {
-  const rendered = render(
-    <ThemeProvider theme={theme}>{node}</ThemeProvider>,
-    options
-  )
-
-  return {
-    ...rendered,
-    rerender: (ui, options) =>
-      customRender(ui, { container: rendered.container, ...options }),
-  }
-}
 
 describe('SmallModalHeader', () => {
-  const { rerender } = customRender(<SmallModalHeader bg='secondary' />)
-
   test('render', () => {
-    const { container } = rerender(<SmallModalHeader bg='secondary' />)
-    expect(container.firstChild).toMatchSnapshot()
+    const { container } = render(<SmallModalHeader bg='secondary' />)
+    expect(container).toMatchSnapshot()
   })
 })
 
 describe('ModalHeader', () => {
-  const { rerender } = customRender(<ModalHeader bg='secondary' />)
-
   test('render', () => {
-    const { container } = rerender(
+    const { container } = render(
       <ModalHeader
         bg='secondary'
         title='test'
@@ -38,6 +20,6 @@ describe('ModalHeader', () => {
         }}
       />
     )
-    expect(container.firstChild).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })
