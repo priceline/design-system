@@ -62,6 +62,10 @@ export default [
     ],
   },
   {
+    section: 'Popover',
+    links: [{ name: 'Popover', path: '/Popover' }],
+  },
+  {
     section: 'Slider',
     links: [
       { name: 'RangeSlider', path: '/RangeSlider' },

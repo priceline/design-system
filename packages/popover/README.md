@@ -7,8 +7,7 @@ npm i pcln-popover
 ```
 
 ```jsx
-// TODO: triage explicit import path
-import Popover from 'pcln-popover/dist/index.js'
+import Popover from 'pcln-popover'
 ```
 
 ```jsx
