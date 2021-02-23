@@ -2,6 +2,18 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.2.0",
+      "tag": "pcln-popover_v4.2.0",
+      "date": "Wed, 24 Feb 2021 15:59:40 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "adds hideOverlay prop"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.0",
       "tag": "pcln-popover_v4.1.0",
       "date": "Tue, 23 Feb 2021 15:06:30 GMT",

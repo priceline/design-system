@@ -76,6 +76,7 @@ class PopoverContent extends Component {
       renderContent,
       trapFocus,
       hideArrow,
+      hideOverlay,
     } = this.props
     const styleProps = {
       borderColor: this.getBorderColorName(
@@ -149,11 +150,13 @@ class PopoverContent extends Component {
             </PopperGuide>
           )}
         </Popper>
-        <Overlay
-          handleClick={onCloseRequest}
-          zIndex={styleProps.zIndex - 1}
-          overlayOpacity={overlayOpacity}
-        />
+        {!hideOverlay && (
+          <Overlay
+            handleClick={onCloseRequest}
+            zIndex={styleProps.zIndex - 1}
+            overlayOpacity={overlayOpacity}
+          />
+        )}
       </React.Fragment>,
       // Append each instance of the Popover as portal directly to the body
       document.querySelector('body')
@@ -201,6 +204,7 @@ PopoverContent.propTypes = {
   overlayOpacity: PropTypes.number,
   trapFocus: PropTypes.bool,
   hideArrow: PropTypes.bool,
+  hideOverlay: PropTypes.bool,
 }
 
 PopoverContent.defaultProps = {
