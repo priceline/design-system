@@ -17,6 +17,7 @@
     "pcln-design-system": "workspace:*",
     "pcln-icons": "workspace:*",
     "pcln-modal": "workspace:*",
+    "pcln-popover": "workspace:*",
     "pcln-slider": "workspace:*",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

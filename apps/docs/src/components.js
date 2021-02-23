@@ -19,6 +19,7 @@ import {
 } from 'pcln-design-system'
 import RangeSlider, { Slider } from 'pcln-slider'
 import { Modal } from 'pcln-modal'
+import Popover from 'pcln-popover'
 
 import ModalDemo from './ModalDemo'
 
@@ -163,6 +164,7 @@ const components = {
   Slider,
   Modal,
   ModalDemo,
+  Popover,
   StaticDemo,
   ShadeDemo,
   ShadeOtherDemo,
