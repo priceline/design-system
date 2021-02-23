@@ -41,7 +41,7 @@ describe('RatingBadge', () => {
 
     const computedStyles = window.getComputedStyle(badge)
     expect(computedStyles.color).toEqual('rgb(0, 170, 0)')
-    expect(computedStyles.backgroundColor).toEqual('rgb(0, 122, 255)')
+    expect(computedStyles.backgroundColor).toEqual('rgb(0, 104, 239)')
   })
 
   test('renders bg and no color', () => {

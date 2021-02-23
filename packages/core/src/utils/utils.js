@@ -27,7 +27,7 @@ export const deprecatedColorValue = () => (props, propName, componentName) => {
 /**
  * Converts a hex color to rgb
  *
- * @example hexToRgb('#007aff') => 'rgb(0, 122, 255)'
+ * @example hexToRgb('#0068EF') => 'rgb(0, 104, 239)'
  *
  * @param {string} color The color to transform to rgb
  *
@@ -50,7 +50,7 @@ export const hexToRgb = (color) => {
 /**
  * Decomposes a color into an array of values
  *
- * @example decomposeColor('#007aff') => [0, 122, 255]
+ * @example decomposeColor('#0068EF') => [0, 122, 255]
  *
  * @param {string} color The color to decompose
  *
@@ -70,7 +70,7 @@ export const decomposeColor = (color) => {
 /**
  * Gets the luminance of a color
  *
- * @example getLuminance('#007aff') => 0.211
+ * @example getLuminance('#0068EF') => 0.211
  * @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  *
  * @param {string} color The color to get the luminance of
@@ -89,7 +89,7 @@ export const getLuminance = (color) => {
 /**
  * Gets the contrast ratio between two colors
  *
- * @example getContrastRatio('#007aff', '#fff') => 4.016975780478911
+ * @example getContrastRatio('#0068EF', '#fff') => 4.016975780478911
  * @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  *
  * @param {string} colorA
