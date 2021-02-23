@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.5.0",
+      "tag": "pcln-design-system_v4.5.0",
+      "date": "Tue, 23 Feb 2021 15:06:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update theme blue to accessible alternative",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "517cd819d4017a5ecaaecb00184112e1ceebe2f0"
+          },
+          {
+            "comment": "Fix backward compatibility for props in RatingBadge",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "05e1d7756728a8162e2d5e8f15995e62b8c18d14"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Create new progress bar component",
+            "author": "JonChoi16 <77304994+JonChoi16@users.noreply.github.com>",
+            "commit": "761d993bd87c727d6528de38fd9ccaaf53730ff7"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.4.1",
       "tag": "pcln-design-system_v4.4.1",
       "date": "Wed, 17 Feb 2021 16:29:34 GMT",

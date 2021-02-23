@@ -18,7 +18,7 @@ const Base = styled.a`
   &.active {
     color: ${theme.colors.blue};
     font-weight: ${theme.bold};
-    border-left: 4px solid #007aff;
+    border-left: 4px solid #0068EF;
     margin-left: -16px;
     padding-left: 28px;
   }

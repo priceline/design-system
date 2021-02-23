@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Wed, 17 Feb 2021 16:29:34 GMT and should not be manually modified.
+This log was last generated on Tue, 23 Feb 2021 15:06:30 GMT and should not be manually modified.
+
+## 4.1.0
+Tue, 23 Feb 2021 15:06:30 GMT
+
+### Minor changes
+
+- Add buttonProps prop for controlling the main button props
 
 ## 4.0.5
 Wed, 17 Feb 2021 16:29:34 GMT

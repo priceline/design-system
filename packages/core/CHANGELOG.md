@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 17 Feb 2021 16:29:34 GMT and should not be manually modified.
+This log was last generated on Tue, 23 Feb 2021 15:06:30 GMT and should not be manually modified.
+
+## 4.5.0
+Tue, 23 Feb 2021 15:06:30 GMT
+
+### Minor changes
+
+- Create new progress bar component
+
+### Patches
+
+- Update theme blue to accessible alternative
+- Fix backward compatibility for props in RatingBadge
 
 ## 4.4.1
 Wed, 17 Feb 2021 16:29:34 GMT

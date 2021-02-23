@@ -82,7 +82,7 @@ describe('utils', () => {
 
   describe('hexToRgb', () => {
     test('converts hex to rgb', () => {
-      expect(hexToRgb('#007aff')).toEqual('rgb(0, 122, 255)')
+      expect(hexToRgb('#0068EF')).toEqual('rgb(0, 104, 239)')
       expect(hexToRgb('#000')).toEqual('rgb(0, 0, 0)')
     })
 
@@ -93,15 +93,15 @@ describe('utils', () => {
 
   describe('decomposeColor', () => {
     test('decomposes a hex or rgb', () => {
-      expect(decomposeColor('#007aff')).toEqual([0, 122, 255])
+      expect(decomposeColor('#0068EF')).toEqual([0, 104, 239])
       expect(decomposeColor('#000')).toEqual([0, 0, 0])
-      expect(decomposeColor('rgb(0, 122, 255)')).toEqual([0, 122, 255])
+      expect(decomposeColor('rgb(0, 104, 239)')).toEqual([0, 104, 239])
     })
   })
 
   describe('getLuminance', () => {
     test('returns the luminance of a color', () => {
-      expect(getLuminance('#007aff')).toBeCloseTo(0.21)
+      expect(getLuminance('#0068EF')).toBeCloseTo(0.16132624188259573)
       expect(getLuminance('#000')).toBeCloseTo(0)
       expect(getLuminance('#fff')).toBeCloseTo(1)
     })
@@ -109,8 +109,8 @@ describe('utils', () => {
 
   describe('getContrastRatio', () => {
     test('returns the contrast ratio between two colors', () => {
-      expect(getContrastRatio('#007aff', '#000000')).toBeCloseTo(5.23)
-      expect(getContrastRatio('#007aff', '#ffffff')).toBeCloseTo(4.02)
+      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(4.2265248376519144)
+      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(4.968620984531288)
     })
   })
 

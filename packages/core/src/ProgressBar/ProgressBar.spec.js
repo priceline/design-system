@@ -28,9 +28,9 @@ describe('ProgressBar', () => {
     const secondBar = screen.getByTestId('test-id-1')
     const thirdBar = screen.getByTestId('test-id-2')
     const fourthBar = screen.getByTestId('test-id-3')
-    expect(firstBar).toHaveStyleRule('background-color', '#007aff')
-    expect(secondBar).toHaveStyleRule('background-color', '#007aff')
-    expect(thirdBar).toHaveStyleRule('background-color', '#007aff')
+    expect(firstBar).toHaveStyleRule('background-color', '#0068EF')
+    expect(secondBar).toHaveStyleRule('background-color', '#0068EF')
+    expect(thirdBar).toHaveStyleRule('background-color', '#0068EF')
     expect(fourthBar).toHaveStyleRule('background-color', '#f4f6f8')
   })
 
