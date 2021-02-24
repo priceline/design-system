@@ -153,6 +153,19 @@ export const bottom = () => (
   </Popover>
 )
 
+export const hideOverlay = () => (
+  <Popover
+    renderContent={InnerContent}
+    placement='bottom'
+    ariaLabel='Bottom Popover'
+    hideOverlay
+    idx={2}
+    width={400}
+  >
+    <Link>Open Popover</Link>
+  </Popover>
+)
+
 export const rightWithOverlayOnScrollPosition = () => (
   <Flex flexDirection='column'>
     <Text mb='2000px'>Scroll down, popover trigger is at the end</Text>

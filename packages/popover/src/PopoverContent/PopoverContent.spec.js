@@ -32,4 +32,18 @@ describe('PopoverContent', () => {
     )
     expect(getByRole('dialog')).toHaveStyleRule('z-index', zIndex)
   })
+
+  it('renders with overlay', () => {
+    const { queryByTestId } = render(
+      <PopoverContent renderContent={() => 'Content'} />
+    )
+    expect(queryByTestId('__pcln-popover_Overlay')).toBeInTheDocument()
+  })
+
+  it('does not render with overlay', () => {
+    const { queryByTestId } = render(
+      <PopoverContent hideOverlay renderContent={() => 'Content'} />
+    )
+    expect(queryByTestId('__pcln-popover_Overlay')).not.toBeInTheDocument()
+  })
 })
