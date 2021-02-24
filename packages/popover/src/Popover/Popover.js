@@ -113,6 +113,8 @@ Popover.propTypes = {
   children: PropTypes.node,
   onOpen: PropTypes.func,
   onClose: PropTypes.func,
+  hideArrow: PropTypes.bool,
+  hideOverlay: PropTypes.bool,
 }
 
 Popover.defaultProps = {

@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Tue, 23 Feb 2021 15:06:30 GMT and should not be manually modified.
+This log was last generated on Wed, 24 Feb 2021 15:59:40 GMT and should not be manually modified.
+
+## 4.2.0
+Wed, 24 Feb 2021 15:59:40 GMT
+
+### Minor changes
+
+- adds hideOverlay prop
 
 ## 4.1.0
 Tue, 23 Feb 2021 15:06:30 GMT
