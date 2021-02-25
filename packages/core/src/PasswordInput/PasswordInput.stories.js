@@ -6,15 +6,14 @@ export default {
   component: PasswordInput,
 }
 
-export const Basic = () => <PasswordInput></PasswordInput>
+export const Basic = () => <PasswordInput />
 
-export const WithTitle = () => (
-  <PasswordInput inputBoxTitle='New Password'></PasswordInput>
-)
+export const WithTitle = () => <PasswordInput label='New Password' />
 
 export const WithProgressBar = () => (
   <PasswordInput
-    inputBoxTitle='New Password'
+    label='New Password'
     hasProgressBar={true}
-  ></PasswordInput>
+    progressBarCurrentStep={3}
+  />
 )

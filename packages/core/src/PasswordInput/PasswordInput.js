@@ -1,24 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { Flex, Text, Input, IconField, Badge } from '../../src'
-import { Visibility, Check } from 'pcln-icons'
-import { ProgressBar } from '../ProgressBar'
+import {
+  Flex,
+  Text,
+  Input,
+  IconField,
+  Badge,
+  ProgressBar,
+  IconButton,
+} from '../../src'
+import { Visibility, VisibilityOff, Check } from 'pcln-icons'
 
 function PasswordInput({
-  inputBoxTitle,
+  label,
   hasProgressBar,
   progressBarSteps,
   progressBarCurrentStep,
 }) {
+  const [visibility, setVisibility] = useState(false)
+  const [visibilityIcon, setVisibilityIcon] = useState(
+    <Visibility color='text.light' />
+  )
+  const [inputType, setInputType] = useState('password')
+
+  const changeVisibility = () => {
+    visibility
+      ? setVisibilityIcon(<Visibility color='text.light' />)
+      : setVisibilityIcon(<VisibilityOff color='text.light' />)
+    visibility ? setVisibility(false) : setVisibility(true)
+    visibility ? setInputType('password') : setInputType('text')
+  }
+
   return (
     <Flex flexDirection='column'>
       <Text bold color='text.light' mb={2}>
-        {inputBoxTitle}
+        {label}
       </Text>
       <IconField>
-        <Input />
-        <Check color='secondary' />
+        <Input type={inputType} />
+        <IconButton
+          title='visibility button'
+          icon={visibilityIcon}
+          onClick={changeVisibility}
+        />
       </IconField>
       {hasProgressBar && (
         <Flex flexDirection='column'>
@@ -57,7 +81,7 @@ PasswordInput.defaultProps = {
 }
 
 PasswordInput.prototype = {
-  inputBoxTitle: PropTypes.string,
+  label: PropTypes.string,
   hasProgressBar: PropTypes.bool,
   progressBarSteps: PropTypes.arrayOf(
     PropTypes.shape({ color: PropTypes.string })

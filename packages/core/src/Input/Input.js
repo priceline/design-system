@@ -9,8 +9,6 @@ import {
   borders,
   deprecatedColorValue,
 } from '../utils'
-import { IconField } from '../IconField'
-import { Visibility } from 'pcln-icons'
 
 const StyledInput = styled.input`
   appearance: none;
@@ -46,7 +44,6 @@ const INPUT_ERROR_TEXT = 'InputHelperText'
 
 export const Input = React.forwardRef((props, ref) => {
   const { helperText, color, icon, ...restProps } = props
-
   return (
     <>
       <StyledInput {...restProps} color={color} ref={ref} />
