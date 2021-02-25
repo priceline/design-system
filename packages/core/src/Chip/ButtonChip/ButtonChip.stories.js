@@ -1,5 +1,5 @@
 import React from 'react'
-import { Departure } from 'pcln-icons'
+import { Departure, Broom } from 'pcln-icons'
 import ButtonChip from './ButtonChip'
 import { Box } from '../../Box'
 import { Text } from '../../Text'
@@ -152,6 +152,7 @@ const withImageAndBridgeLabel = [
     showActionIcon: true,
     image: image,
     bridgeLabel: 'Bridge',
+    BridgeIcon: Broom,
   },
   {
     label: 'Active',

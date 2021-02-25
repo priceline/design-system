@@ -1,7 +1,22 @@
-import styled from 'styled-components'
-import { space, fontSize } from 'styled-system'
-import { getPaletteColor } from '../../utils'
+import styled, { css } from 'styled-components'
+import { space, fontSize, themeGet } from 'styled-system'
+import { getPaletteColor, applySizes } from '../../utils'
 import { Box } from '../../Box'
+
+const getSizes = ({ hasChildren }) => ({
+  sm: css`
+    padding-left: 8px;
+    padding-right: 8px;
+    ${hasChildren ? '' : 'height: 32px;'}
+    font-size: ${themeGet('fontSizes.0')}px;
+  `,
+  md: css`
+    padding-left: 16px;
+    padding-right: 16px;
+    ${hasChildren ? '' : 'height: 40px;'}
+    font-size: ${themeGet('fontSizes.1')}px;
+  `,
+})
 
 const getColor = ({ disabled }) => (disabled ? 'text.light' : 'base')
 
@@ -24,8 +39,9 @@ const ChipContentWrapper = styled(Box)`
     background-color: ${getPaletteColor(getBackgroundColor(props))(props)};
     border: 1px solid ${getPaletteColor(getBorderColor(props))(props)};
     ${
-      !props.disabled &&
-      `
+      props.disabled
+        ? ''
+        : `
       &:hover {
         border: 1px solid ${getPaletteColor('base')(props)};
         background-color: ${getPaletteColor('background.lightest')(props)};
@@ -38,6 +54,8 @@ const ChipContentWrapper = styled(Box)`
   align-items: center;
   position: relative;
   border-radius: 2px;
+  ${({ theme, hasChildren }) =>
+    applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
   ${space};
   ${fontSize};
 `

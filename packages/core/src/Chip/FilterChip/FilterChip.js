@@ -6,7 +6,8 @@ import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
 
-const getTitle = ({ disabled }) => (disabled ? 'Disabled' : 'Close')
+const getTitle = ({ disabled, actionTitle }) =>
+  disabled ? 'Disabled' : actionTitle
 
 const FilterChip = ({
   id,
@@ -16,6 +17,7 @@ const FilterChip = ({
   onClick,
   label,
   showActionIcon,
+  actionTitle,
   ...props
 }) => (
   <ChipLabel htmlFor={id} {...props}>
@@ -31,7 +33,12 @@ const FilterChip = ({
       label={label}
       disabled={disabled}
       selected={selected}
-      action={showActionIcon && { Icon: Close, title: getTitle(props) }}
+      action={
+        showActionIcon && {
+          Icon: Close,
+          title: getTitle({ disabled, actionTitle }),
+        }
+      }
       {...props}
     >
       {children}
@@ -50,13 +57,16 @@ FilterChip.propTypes = {
   facet: PropTypes.string,
   label: PropTypes.string,
   bridgeLabel: PropTypes.string,
+  BridgeIcon: PropTypes.node,
   Icon: PropTypes.node,
   showActionIcon: PropTypes.bool,
   Image: PropTypes.object,
+  actionTitle: PropTypes.string,
 }
 
 FilterChip.defaultProps = {
   color: 'primary',
+  actionTitle: 'Close',
 }
 
 export default FilterChip

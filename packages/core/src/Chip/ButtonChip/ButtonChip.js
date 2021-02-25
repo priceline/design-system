@@ -43,7 +43,12 @@ const ButtonChip = ({
       label={label}
       disabled={disabled}
       selected={expanded}
-      action={showActionIcon && { Icon: ChevronDown, title: getTitle(props) }}
+      action={
+        showActionIcon && {
+          Icon: ChevronDown,
+          title: getTitle({ disabled, expanded }),
+        }
+      }
       {...props}
     >
       {children}
@@ -62,6 +67,7 @@ ButtonChip.propTypes = {
   facet: PropTypes.string,
   label: PropTypes.string,
   bridgeLabel: PropTypes.string,
+  BridgeIcon: PropTypes.node,
   Icon: PropTypes.node,
   showActionIcon: PropTypes.bool,
   Image: PropTypes.object,

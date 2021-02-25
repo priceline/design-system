@@ -46,6 +46,7 @@ ChoiceChip.propTypes = {
   facet: PropTypes.string,
   label: PropTypes.string,
   bridgeLabel: PropTypes.string,
+  BridgeIcon: PropTypes.node,
   Icon: PropTypes.node,
   action: PropTypes.shape({
     Icon: PropTypes.node,
