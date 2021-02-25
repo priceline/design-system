@@ -1,6 +1,7 @@
 import React from 'react'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 import { Box, Input, Label, Divider, Button } from '..'
+import { Visibility } from 'pcln-icons'
 
 export default {
   title: 'Input',
@@ -79,10 +80,7 @@ export const ForwardsRefs = () => (
     refChild={(dsRef) => (
       <>
         <Input ref={dsRef} placeholder='Priceline!' />
-        <Button
-          onClick={() => dsRef.current.focus()}
-          mt={3}
-        >
+        <Button onClick={() => dsRef.current.focus()} mt={3}>
           Click to focus the input via ref
         </Button>
       </>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, fontSize, themeGet } from 'styled-system'
+import { space, fontSize, themeGet, style } from 'styled-system'
 import PropTypes from 'prop-types'
 import { Text } from '../Text'
 import {
@@ -9,6 +9,8 @@ import {
   borders,
   deprecatedColorValue,
 } from '../utils'
+import { IconField } from '../IconField'
+import { Visibility } from 'pcln-icons'
 
 const StyledInput = styled.input`
   appearance: none;
@@ -43,7 +45,7 @@ const StyledInput = styled.input`
 const INPUT_ERROR_TEXT = 'InputHelperText'
 
 export const Input = React.forwardRef((props, ref) => {
-  const { helperText, color, ...restProps } = props
+  const { helperText, color, icon, ...restProps } = props
 
   return (
     <>
