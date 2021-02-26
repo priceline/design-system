@@ -31,7 +31,7 @@
     "clean": "rimraf dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "jest --verbose",
+    "test": "jest --verbose --coverage",
     "test:ci": "jest --silent --coverage --runInBand",
     "test:update": "jest --updateSnapshot",
     "test:ci:update": "jest --runInBand --updateSnapshot"
