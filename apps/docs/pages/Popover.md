@@ -21,7 +21,7 @@ Use `Modal` to create an a11y-friendly popover dialog with configurable position
 ## Props
 
 | Prop             | Type           | Description                                                                     |
-| ---------------- | -------------- | ------------------------------------------------------------------------------- | --- |
+| ---------------- | -------------- | ------------------------------------------------------------------------------- |
 | `idx`            | string, number | Set `z-index` of popover dialog                                                 |
 | `renderContent`  | node           | Children to render in the popover                                               |
 | `ariaLabel`      | string         | Apply an `aria-label` to the content of the popover dialog                      |
@@ -34,6 +34,7 @@ Use `Modal` to create an a11y-friendly popover dialog with configurable position
 | `children`       | node           | Render a component that opens the popover dialog on click                       |
 | `onOpen`         | function       | Callback executed when the popover opens                                        |
 | `onClose`        | function       | Callback executed when the popover closes                                       |
+| `hideOverlay`    | boolean        | Do not render the semi-opaque overlay behind the popover                        |
 
 ### Placement values
 
