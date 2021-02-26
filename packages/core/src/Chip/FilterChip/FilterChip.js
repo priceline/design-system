@@ -7,7 +7,7 @@ import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
 
 const getTitle = ({ disabled, actionTitle }) =>
-  disabled ? 'Disabled' : actionTitle
+  `${actionTitle}${disabled ? ' disabled' : ''}`
 
 const FilterChip = ({
   id,
