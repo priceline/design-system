@@ -20,6 +20,7 @@ const ChipContent = ({
   children,
   label,
   Icon,
+  IconTitle,
   facet,
   action,
   image,
@@ -29,6 +30,7 @@ const ChipContent = ({
   ...props
 }) => (
   <ChipContentWrapper
+    data-testid='chipContentWrapper'
     hasChildren={Boolean(children)}
     disabled={disabled}
     selected={selected}
@@ -37,7 +39,7 @@ const ChipContent = ({
   >
     {children}
     {Boolean(image) && <ImageWrapper disabled={disabled}>{image}</ImageWrapper>}
-    {Boolean(Icon) && <Icon size='20px' />}
+    {Boolean(Icon) && <Icon title={IconTitle} size='20px' />}
     {Boolean(label) && (
       <Text regular ml={Boolean(Icon) || Boolean(image) ? 2 : 0}>
         {label}
@@ -73,6 +75,7 @@ ChipContent.propTypes = {
   bridgeLabel: PropTypes.string,
   BridgeIcon: PropTypes.node,
   Icon: PropTypes.node,
+  IconTitle: PropTypes.string,
   action: PropTypes.shape({
     Icon: PropTypes.node,
     title: PropTypes.string,

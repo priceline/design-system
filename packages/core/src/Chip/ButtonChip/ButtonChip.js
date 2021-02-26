@@ -11,6 +11,10 @@ import { getPaletteColor } from '../../utils'
 const ChipButton = styled(Button)`
   border: none;
   padding: 0;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
   &:focus > ${ChipContentWrapper} {
     box-shadow: 0 0 0 1px ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
@@ -34,9 +38,10 @@ const ButtonChip = ({
 }) => (
   <ChipButton
     id={id}
+    data-testid={id}
     disabled={disabled}
-    onChange={onClick}
-    aria-expandaded={expanded}
+    onClick={onClick}
+    aria-expanded={expanded}
     m={m}
   >
     <ChipContent
@@ -62,6 +67,7 @@ ButtonChip.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
   id: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   expanded: PropTypes.bool,
   facet: PropTypes.string,

@@ -23,7 +23,9 @@ const getColor = ({ disabled }) => (disabled ? 'text.light' : 'base')
 const getCursor = ({ disabled }) => (disabled ? 'default' : 'pointer')
 
 const getBorderColor = (props) =>
-  props.disabled ? 'transparent' : props.selected ? 'base' : 'border.base'
+  props.disabled
+    ? 'transparent'
+    : getPaletteColor(props.selected ? 'base' : 'border.base')(props)
 
 const getBackgroundColor = (props) =>
   props.disabled
@@ -37,7 +39,7 @@ const ChipContentWrapper = styled(Box)`
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
     background-color: ${getPaletteColor(getBackgroundColor(props))(props)};
-    border: 1px solid ${getPaletteColor(getBorderColor(props))(props)};
+    border: 1px solid ${getBorderColor(props)};
     ${
       props.disabled
         ? ''

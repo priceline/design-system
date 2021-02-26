@@ -25,6 +25,7 @@ const FilterChip = ({
       type='checkbox'
       role='checkbox'
       id={id}
+      data-testid={id}
       disabled={disabled}
       checked={selected}
       onChange={onClick}

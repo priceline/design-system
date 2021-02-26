@@ -7,6 +7,7 @@ import { ChipInput } from '../ChipInput'
 
 const ChoiceChip = ({
   id,
+  name,
   disabled,
   selected,
   children,
@@ -16,8 +17,10 @@ const ChoiceChip = ({
 }) => (
   <ChipLabel htmlFor={id} {...props}>
     <ChipInput
-      type='checkbox'
-      role='checkbox'
+      data-testid={id}
+      name={name}
+      type='radio'
+      role='radio'
       id={id}
       disabled={disabled}
       checked={selected}
