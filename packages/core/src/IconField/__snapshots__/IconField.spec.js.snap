@@ -274,6 +274,7 @@ exports[`IconField renders icon button 1`] = `
   <button
     className="c2"
     color="primary"
+    size="medium"
     style={
       Object {
         "alignSelf": "center",
@@ -487,6 +488,7 @@ exports[`IconField renders icon, input and icon button together 1`] = `
   <button
     className="c4"
     color="primary"
+    size="medium"
     style={
       Object {
         "alignSelf": "center",

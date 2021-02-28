@@ -97,6 +97,7 @@ exports[`Stepper renders with children 1`] = `
   <button
     className="c1"
     color="primary"
+    size="medium"
   >
     <svg
       aria-hidden={false}
@@ -127,6 +128,7 @@ exports[`Stepper renders with children 1`] = `
   <button
     className="c1"
     color="primary"
+    size="medium"
   >
     <div
       aria-selected={true}
@@ -140,6 +142,7 @@ exports[`Stepper renders with children 1`] = `
   <button
     className="c1"
     color="primary"
+    size="medium"
   >
     <div
       aria-selected={false}

@@ -3,7 +3,7 @@ import { render } from 'testing-library'
 
 import { RatingBadge } from '..'
 
-const text = "123"
+const text = '123'
 
 describe('RatingBadge', () => {
   let consoleError
@@ -21,7 +21,9 @@ describe('RatingBadge', () => {
   test('has correct background and text colors', () => {
     const color = 'secondary'
 
-    const { getByText } = render(<RatingBadge color={color}>{text}</RatingBadge>)
+    const { getByText } = render(
+      <RatingBadge color={color}>{text}</RatingBadge>
+    )
 
     const badge = getByText(text)
 
@@ -35,7 +37,11 @@ describe('RatingBadge', () => {
     const color = 'secondary'
     const bg = 'primary'
 
-    const { getByText } = render(<RatingBadge bg={bg} color={color}>{text}</RatingBadge>)
+    const { getByText } = render(
+      <RatingBadge bg={bg} color={color}>
+        {text}
+      </RatingBadge>
+    )
 
     const badge = getByText(text)
 
@@ -56,11 +62,12 @@ describe('RatingBadge', () => {
     expect(computedStyles.color).toEqual('rgb(255, 255, 255)')
   })
 
-
   test('renders with no bg and color', () => {
     const color = 'secondary'
 
-    const { getByText } = render(<RatingBadge color={color}>{text}</RatingBadge>)
+    const { getByText } = render(
+      <RatingBadge color={color}>{text}</RatingBadge>
+    )
 
     const badge = getByText(text)
 
@@ -70,7 +77,7 @@ describe('RatingBadge', () => {
   })
 
   test('renders default color with no props', () => {
-    const { getByText } = render(<RatingBadge >{text}</RatingBadge>)
+    const { getByText } = render(<RatingBadge>{text}</RatingBadge>)
 
     const badge = getByText(text)
 

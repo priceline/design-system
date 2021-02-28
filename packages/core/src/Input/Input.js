@@ -36,8 +36,8 @@ const StyledInput = styled.input`
     display: none;
   }
 
-  ${borders} ${space} ${fontSize};
   ${applyVariations('Input')}
+  ${borders} ${space} ${fontSize};
 `
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
@@ -47,7 +47,7 @@ export const Input = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <StyledInput {...restProps} color={color} ref={ref}/>
+      <StyledInput {...restProps} color={color} ref={ref} />
       {helperText &&
         React.cloneElement(helperText, {
           color: helperText?.props?.color || color,

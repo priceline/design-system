@@ -1,41 +1,28 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, space } from 'styled-system'
+import { width, space, themeGet } from 'styled-system'
 import {
   deprecatedPropType,
+  applySizes,
   applyVariations,
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
 } from '../utils'
 
-const size = (props) => {
-  const smallSize = {
-    fontSize: `${props.theme.fontSizes[0]}px`,
-    padding: '7px 12px',
-  }
-  const mediumSize = {
-    fontSize: `${props.theme.fontSizes[1]}px`,
-    padding: '9.5px 18px',
-  }
-  const largeSize = {
-    fontSize: `${props.theme.fontSizes[2]}px`,
-    padding: '12px 22px',
-  }
-
-  switch (props.size) {
-    case 'small':
-      return smallSize
-
-    case 'medium':
-      return mediumSize
-
-    case 'large':
-      return largeSize
-
-    default:
-      return mediumSize
-  }
+const sizes = {
+  small: css`
+    font-size: ${themeGet('fontSizes.0')}px;
+    padding: 7px 12px;
+  `,
+  medium: css`
+    font-size: ${themeGet('fontSizes.1')}px;
+    padding: 9.5px 18px;
+  `,
+  large: css`
+    font-size: ${themeGet('fontSizes.2')}px;
+    padding: 12px 22px;
+  `,
 }
 
 const variations = {
@@ -142,8 +129,11 @@ export const buttonStyles = css`
   border-radius: ${(props) => props.theme.radius};
   border-width: 0;
   border-style: solid;
-  ${width} ${size} ${space};
-  ${applyVariations('Button', variations)}
+
+  ${({ theme }) => applySizes(sizes, 'medium', theme.mediaQueries)};
+  ${applyVariations('Button', variations)};
+  ${width};
+  ${space};
 
   &:disabled {
     cursor: not-allowed;
@@ -176,6 +166,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   color: 'primary',
+  size: 'medium',
   variation: 'fill',
 }
 

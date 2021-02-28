@@ -169,6 +169,10 @@ export const ForwardRefs = () => (
   />
 )
 
+export const ResponsiveSize = () => (
+  <Button size={['small', null, 'medium', null, 'large']}>Button Text</Button>
+)
+
 ForwardRefs.story = {
   name: 'Forward refs',
 }

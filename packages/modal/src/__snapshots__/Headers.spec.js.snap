@@ -27,11 +27,9 @@ exports[`ModalHeader render 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  font-size: 14px;
-  padding: 9.5px 18px;
-  margin-left: auto;
   background-color: #0068EF;
   color: #fff;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   color: inherit;
@@ -122,44 +120,46 @@ exports[`ModalHeader render 1`] = `
   outline: none;
 }
 
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
-    color="white"
+    class="c0"
   >
     <div
-      class="c2"
-      font-size="1"
+      class="c1"
+      color="white"
     >
-      test
-    </div>
-    <button
-      aria-label="close"
-      class="c3 c4"
-      color="primary"
-      size="24"
-      title="close"
-    >
-      <div>
-        <svg
-          aria-hidden="true"
-          class="c5 c6"
-          fill="currentcolor"
-          focusable="false"
-          height="24"
-          role="img"
-          tabindex="-1"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <path
-            d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
-          />
-        </svg>
+      <div
+        class="c2"
+        font-size="1"
+      >
+        test
       </div>
-    </button>
+      <button
+        aria-label="close"
+        class="c3 c4"
+        color="primary"
+        size="24"
+        title="close"
+      >
+        <div>
+          <svg
+            aria-hidden="true"
+            class="c5 c6"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -180,11 +180,13 @@ exports[`SmallModalHeader render 1`] = `
   height: 8px;
 }
 
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
-  />
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
 </div>
 `;
