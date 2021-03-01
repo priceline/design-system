@@ -42,6 +42,7 @@ export default [
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
       { name: 'PlaceholderImage', path: '/PlaceholderImage' },
+      { name: 'ProgressBar', path: '/ProgressBar' },
       { name: 'Radio', path: '/Radio' },
       { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },

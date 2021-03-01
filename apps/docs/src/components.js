@@ -16,6 +16,7 @@ import {
   getPaletteColor,
   getTextColorOn,
   createTheme,
+  ProgressBar,
 } from 'pcln-design-system'
 import RangeSlider, { Slider } from 'pcln-slider'
 import { Modal } from 'pcln-modal'
@@ -165,6 +166,7 @@ const components = {
   Modal,
   ModalDemo,
   Popover,
+  ProgressBar,
   StaticDemo,
   ShadeDemo,
   ShadeOtherDemo,
