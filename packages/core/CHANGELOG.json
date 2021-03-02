@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.6.0",
+      "tag": "pcln-design-system_v4.6.0",
+      "date": "Tue, 02 Mar 2021 15:09:04 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Created new variations of the Chip component",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "51d9ce82d73d875b5222fd601102148970b49a6e"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.5.0",
       "tag": "pcln-design-system_v4.5.0",
       "date": "Tue, 23 Feb 2021 15:06:30 GMT",
