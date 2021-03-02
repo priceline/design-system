@@ -1,6 +1,11 @@
 # Change Log - pcln-popover
 
-This log was last generated on Wed, 24 Feb 2021 15:59:40 GMT and should not be manually modified.
+This log was last generated on Tue, 02 Mar 2021 15:09:04 GMT and should not be manually modified.
+
+## 4.2.1
+Tue, 02 Mar 2021 15:09:04 GMT
+
+_Version update only_
 
 ## 4.2.0
 Wed, 24 Feb 2021 15:59:40 GMT
