@@ -9,31 +9,44 @@ const IconField = (props) => {
     (child) => child?.type.isField || isIcon(child)
   )
 
-  const styledChildren = children.map((child, i) => {
-    if (isIcon(child)) {
-      return React.cloneElement(child, {
-        style: {
-          ...child.props.style,
-          flex: 'none',
-          alignSelf: 'center',
-          pointerEvents: child.type.isIcon ? 'none' : 'auto',
-          marginLeft: i === 0 ? 8 : -32,
-          marginRight: i === 0 ? -32 : 8,
-          position: 'relative',
-        },
-      })
-    }
-    return React.cloneElement(child, {
-      style: {
-        ...child.props.style,
-        paddingLeft: i === 0 ? undefined : 40,
-        paddingRight: i === children.length - 1 ? undefined : 40,
-      },
-    })
-  })
+  if (children.length === 0) {
+    return null
+  }
 
-  return <Flex>{styledChildren}</Flex>
+  let inputIndex = children && children.findIndex((child) => child.type.isField)
+
+  const prefixIcons = children.slice(0, inputIndex)
+  const input = children[inputIndex]
+  const suffixIcons = children.slice(inputIndex + 1, children.length)
+
+  const paddingLeft = prefixIcons.length > 0 && prefixIcons.length * 40
+  const paddingRight = suffixIcons.length > 0 && suffixIcons.length * 40
+
+  const marginRight = prefixIcons.length > 0 && -(prefixIcons.length * 40)
+  const marginLeft = suffixIcons.length > 0 && -(suffixIcons.length * 40)
+
+  return (
+    <Flex alignItems='center' {...props}>
+      {prefixIcons.length > 0 && (
+        <Flex mr={marginRight} data-testid='icon-field-prefix-icons'>
+          {prefixIcons.map((icon, index) =>
+            React.cloneElement(icon, { ml: index === 0 ? 2 : 0, mr: 2 })
+          )}
+        </Flex>
+      )}
+      {input &&
+        React.cloneElement(input, { pl: paddingLeft, pr: paddingRight })}
+      {suffixIcons.length > 0 && (
+        <Flex ml={marginLeft} data-testid='icon-field-suffix-icons'>
+          {suffixIcons.map((icon, index) =>
+            React.cloneElement(icon, { ml: 2, mr: index === 0 ? 2 : 0 })
+          )}
+        </Flex>
+      )}
+    </Flex>
+  )
 }
+
 IconField.propTypes = { children: PropTypes.node }
 
 export default IconField

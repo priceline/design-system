@@ -1,97 +1,128 @@
 import React from 'react'
-import { Calendar, Close } from 'pcln-icons'
-
+import { render, screen } from 'testing-library'
+import { Calendar, Close, User, Visibility } from 'pcln-icons'
 import { IconField, IconButton, Input } from '..'
 
 describe('IconField', () => {
-  test('renders', () => {
-    const json = rendererCreateWithTheme(
-      <IconField>
-        <Calendar />
+  it('renders', () => {
+    render(
+      <IconField data-testid='icon-field'>
+        <Calendar title='calendar' />
         <Input id='test' placeholder='IconField' />
       </IconField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+
+    screen.getByTestId('icon-field')
+    screen.getAllByTitle('calendar')
+    screen.getByPlaceholderText('IconField')
   })
 
-  test('renders icon button', () => {
-    const json = rendererCreateWithTheme(
+  it('renders icon button', () => {
+    render(
       <IconField>
         <Input id='test' placeholder='IconField' />
-        <IconButton icon={<Close />} />
+        <IconButton id='test' icon={<Close title='close' />} />
       </IconField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+
+    screen.getByPlaceholderText('IconField')
+    screen.getAllByTitle('close')
+    screen.getByRole('button')
   })
 
-  test('renders icon, input and icon button together', () => {
-    const json = rendererCreateWithTheme(
+  it('renders icon, input and icon button together', () => {
+    render(
       <IconField>
-        <Calendar />
+        <Calendar title='calendar' />
         <Input id='test' placeholder='IconField' />
-        <IconButton icon={<Close />} />
+        <IconButton id='test' icon={<Close title='close' />} />
       </IconField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+
+    screen.getAllByTitle('calendar')
+    screen.getByPlaceholderText('IconField')
+    screen.getAllByTitle('close')
+    screen.getByRole('button')
   })
 
-  test('does not render unknown children', () => {
-    const json = rendererCreateWithTheme(
-      <IconField>
+  it('does not render unknown children', () => {
+    render(
+      <IconField data-testid='icon-field'>
         <pre>Does not render</pre>
       </IconField>
-    ).toJSON()
-    expect(json.children).toBeNull()
+    )
+    expect(screen.queryByTestId('icon-field')).not.toBeInTheDocument()
   })
 
-  test('adds styles to icons', () => {
-    const json = rendererCreateWithTheme(
+  it('does not add styles for no icons', () => {
+    render(
       <IconField>
-        <Calendar />
-        <Input id='test' />
+        <Input id='test' placeholder='IconField' />
       </IconField>
-    ).toJSON()
-    const [icon] = json.children
-    expect(icon.props.style.pointerEvents).toBe('none')
-    expect(icon.props.style.marginLeft).toBe(8)
-    expect(icon.props.style.marginRight).toBe(-32)
+    )
+
+    const prefixIconWrapper = screen.queryByTestId('icon-field-prefix-icons')
+    const suffixIconWrapper = screen.queryByTestId('icon-field-suffix-icons')
+    const input = screen.getByPlaceholderText('IconField')
+
+    expect(prefixIconWrapper).not.toBeInTheDocument()
+    expect(suffixIconWrapper).not.toBeInTheDocument()
+    expect(input).not.toHaveStyleRule('padding-left')
+    expect(input).not.toHaveStyleRule('padding-right')
   })
 
-  test('adds styles to icons on the right', () => {
-    const json = rendererCreateWithTheme(
+  it('adds styles for single icons', () => {
+    render(
       <IconField>
-        <Input id='test' />
-        <Calendar />
+        <Calendar title='calendar' />
+        <Input id='test' placeholder='IconField' />
+        <Close title='close' />
       </IconField>
-    ).toJSON()
-    const icon = json.children[1]
-    expect(icon.props.style.pointerEvents).toBe('none')
-    expect(icon.props.style.marginLeft).toBe(-32)
-    expect(icon.props.style.marginRight).toBe(8)
+    )
+
+    const calendarIcon = screen.getAllByTitle('calendar')[0]
+    const closeIcon = screen.getAllByTitle('close')[0]
+    const prefixIconWrapper = screen.getByTestId('icon-field-prefix-icons')
+    const suffixIconWrapper = screen.getByTestId('icon-field-suffix-icons')
+    const input = screen.getByPlaceholderText('IconField')
+
+    expect(calendarIcon).toHaveStyleRule('margin-left', '8px')
+    expect(calendarIcon).toHaveStyleRule('margin-right', '8px')
+    expect(closeIcon).toHaveStyleRule('margin-left', '8px')
+    expect(closeIcon).toHaveStyleRule('margin-right', '8px')
+
+    expect(prefixIconWrapper).toHaveStyleRule('margin-right', '-40px')
+    expect(suffixIconWrapper).toHaveStyleRule('margin-left', '-40px')
+    expect(input).toHaveStyleRule('padding-left', '40px')
+    expect(input).toHaveStyleRule('padding-right', '40px')
   })
 
-  test('adds styles to the form field', () => {
-    const json = rendererCreateWithTheme(
+  it('adds styles for multiple icons', () => {
+    render(
       <IconField>
-        <Calendar />
-        <Input id='test' />
+        <User title='user' />
+        <Calendar title='calendar' />
+        <Input id='test' placeholder='IconField' />
+        <Visibility title='visibility' />
+        <Close title='close' />
       </IconField>
-    ).toJSON()
-    const input = json.children[1]
-    expect(input.props.style.paddingLeft).toBe(40)
-    expect(input.props.style.paddingRight).toBeUndefined()
-  })
+    )
 
-  test('adds styles to the icon button on the right', () => {
-    const json = rendererCreateWithTheme(
-      <IconField>
-        <Input id='test' />
-        <IconButton icon={<Close />} />
-      </IconField>
-    ).toJSON()
-    const [, iconButton] = json.children
-    expect(iconButton.props.style.pointerEvents).toBe('auto')
-    expect(iconButton.props.style.marginLeft).toBe(-32)
-    expect(iconButton.props.style.marginRight).toBe(8)
+    const prefixIconWrapper = screen.getByTestId('icon-field-prefix-icons')
+    const suffixIconWrapper = screen.getByTestId('icon-field-suffix-icons')
+    const input = screen.getByPlaceholderText('IconField')
+
+    const calendarIcon = screen.getAllByTitle('calendar')[0]
+    const closeIcon = screen.getAllByTitle('close')[0]
+
+    expect(prefixIconWrapper).toHaveStyleRule('margin-right', '-80px')
+    expect(suffixIconWrapper).toHaveStyleRule('margin-left', '-80px')
+    expect(input).toHaveStyleRule('padding-left', '80px')
+    expect(input).toHaveStyleRule('padding-right', '80px')
+
+    expect(calendarIcon).toHaveStyleRule('margin-left', '0')
+    expect(calendarIcon).toHaveStyleRule('margin-right', '8px')
+    expect(closeIcon).toHaveStyleRule('margin-left', '8px')
+    expect(closeIcon).toHaveStyleRule('margin-right', '0')
   })
 })

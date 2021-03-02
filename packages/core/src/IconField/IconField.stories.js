@@ -4,6 +4,7 @@ import {
   Calendar as CalendarIcon,
   Check as CheckIcon,
   Close as CloseIcon,
+  Visibility as VisibilityIcon,
 } from 'pcln-icons'
 import { action } from '@storybook/addon-actions'
 
@@ -32,6 +33,20 @@ export const InputAndIcon = () => (
 
 InputAndIcon.story = {
   name: 'Input and Icon',
+}
+
+export const InputWithMultipleIcons = () => (
+  <IconField>
+    <CheckIcon color='success' />
+    <VisibilityIcon color='text.light' />
+    <Input placeholder='Choose Date' />
+    <VisibilityIcon color='text.light' />
+    <CheckIcon color='success' />
+  </IconField>
+)
+
+InputWithMultipleIcons.story = {
+  name: 'Input with multiple Icons',
 }
 
 export const InputAndIconButton = () => (
