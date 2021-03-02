@@ -11,9 +11,5 @@ export const Basic = () => <PasswordInput />
 export const WithTitle = () => <PasswordInput label='New Password' />
 
 export const WithProgressBar = () => (
-  <PasswordInput
-    label='New Password'
-    hasProgressBar={true}
-    progressBarCurrentStep={3}
-  />
+  <PasswordInput label='New Password' hasProgressBar />
 )

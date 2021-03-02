@@ -15,20 +15,30 @@ function PasswordInput({
   label,
   hasProgressBar,
   progressBarSteps,
-  progressBarCurrentStep,
+  progressBarDefaultStep,
+  regexChecks,
 }) {
-  const [visibility, setVisibility] = useState(false)
-  const [visibilityIcon, setVisibilityIcon] = useState(
+  const [showPassword, setShowPassword] = useState(false)
+  const inputType = showPassword ? 'text' : 'password'
+  const visibilityIcon = showPassword ? (
+    <VisibilityOff color='text.light' />
+  ) : (
     <Visibility color='text.light' />
   )
-  const [inputType, setInputType] = useState('password')
+  const changeVisibility = () => setShowPassword(!showPassword)
 
-  const changeVisibility = () => {
-    visibility
-      ? setVisibilityIcon(<Visibility color='text.light' />)
-      : setVisibilityIcon(<VisibilityOff color='text.light' />)
-    visibility ? setVisibility(false) : setVisibility(true)
-    visibility ? setInputType('password') : setInputType('text')
+  const [inputPassword, setInputPassword] = useState('')
+  const [strengthLevel, setStrengthLevel] = useState(progressBarDefaultStep)
+
+  const handleChange = (event) => {
+    const currentInput = event.target.value
+    setInputPassword(currentInput)
+
+    let strengthPoint = 0
+    regexChecks.forEach((element) => {
+      element.regex.test(currentInput) && strengthPoint++
+    })
+    strengthPoint == 0 ? setStrengthLevel(1) : setStrengthLevel(strengthPoint)
   }
 
   return (
@@ -37,7 +47,7 @@ function PasswordInput({
         {label}
       </Text>
       <IconField>
-        <Input type={inputType} />
+        <Input type={inputType} onChange={handleChange} />
         <IconButton
           title='visibility button'
           icon={visibilityIcon}
@@ -51,18 +61,14 @@ function PasswordInput({
               Password Strength:{' '}
             </Text>
             <Badge
-              bg={progressBarSteps[progressBarCurrentStep - 1].color}
-              color='white'
+              color={progressBarSteps[strengthLevel - 1].color}
               mt={2}
               ml={2}
             >
-              {progressBarSteps[progressBarCurrentStep - 1].text}
+              {progressBarSteps[strengthLevel - 1].text}
             </Badge>
           </Flex>
-          <ProgressBar
-            steps={progressBarSteps}
-            currentStep={progressBarCurrentStep}
-          />
+          <ProgressBar steps={progressBarSteps} currentStep={strengthLevel} />
         </Flex>
       )}
     </Flex>
@@ -77,7 +83,13 @@ PasswordInput.defaultProps = {
     { color: 'primary', text: 'GOOD' },
     { color: 'success', text: 'STRONG' },
   ],
-  progressBarCurrentStep: 1,
+  progressBarDefaultStep: 1,
+  regexChecks: [
+    { label: '1 Uppercase Letter', regex: /(?=.*[A-Z])/ },
+    { label: '1 Lowercase Letter', regex: /(?=.*[a-z])/ },
+    { label: '1 Number', regex: /(?=.*[0-9])/ },
+    { label: '1 Special Charater', regex: /(?=.*[!@#$%^&*()])/ },
+  ],
 }
 
 PasswordInput.prototype = {
@@ -86,7 +98,10 @@ PasswordInput.prototype = {
   progressBarSteps: PropTypes.arrayOf(
     PropTypes.shape({ color: PropTypes.string })
   ),
-  progressBarCurrentStep: PropTypes.number,
+  progressBarDefaultStep: PropTypes.number,
+  regexChecks: PropTypes.arrayOf(
+    PropTypes.shape({ label: PropTypes.string, regex: PropTypes.string })
+  ),
 }
 
 export default PasswordInput
