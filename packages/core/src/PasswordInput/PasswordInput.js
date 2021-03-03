@@ -46,6 +46,7 @@ function PasswordInput({
   progressBarSteps,
   progressBarDefaultStep,
   regexChecks,
+  value,
 }) {
   const [showPassword, setShowPassword] = useState(false)
   const inputType = showPassword ? 'text' : 'password'
@@ -62,9 +63,21 @@ function PasswordInput({
   const [hasNumOrSpecial, setHasNumOrSpecial] = useState(false)
   const [hasMinEightChar, setHasMinEightChar] = useState(false)
 
-  const successIconOn = <Success size='16px' color={'secondary'} mr={1} />
+  const successIconOn = (
+    <Success
+      size='16px'
+      color={'secondary'}
+      mr={1}
+      data-testid='check-icon-on'
+    />
+  )
   const successIconOff = (
-    <SuccessOutline size='16px' color={'text.light'} mr={1} />
+    <SuccessOutline
+      size='16px'
+      color={'text.light'}
+      mr={1}
+      data-testid='check-icon-off'
+    />
   )
 
   const successIconOne = hasNumOrSpecial ? successIconOn : successIconOff
@@ -105,10 +118,16 @@ function PasswordInput({
         {label}
       </Label>
       <IconField>
-        <Input type={inputType} onChange={handleChange} />
-        {showCheckIcon && <Check color='secondary' />}
+        <Input
+          type={inputType}
+          onChange={handleChange}
+          data-testid='input-field'
+        />
+        {showCheckIcon && (
+          <Check color='secondary' data-testid='check-mark-icon' />
+        )}
         <IconButton
-          title='visibility button'
+          title='visibility-button'
           icon={visibilityIcon}
           onClick={changeVisibility}
         />
