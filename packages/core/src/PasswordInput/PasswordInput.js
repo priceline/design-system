@@ -18,15 +18,26 @@ import {
   Badge,
   ProgressBar,
   IconButton,
+  mediaQueries,
 } from '../../src'
 
 const CustomFlex = styled(Flex)`
-  margin-left: ${themeGet('space.3')}px;
-  align-contents: center;
+  margin-top: ${themeGet('space.2')}px;
+  ${mediaQueries[1]} {
+    margin-top: 0;
+  }
 `
 
 const CustomText = styled(Text)`
   font-size: ${themeGet('fontSizes.0')}px;
+`
+
+const FlexDesktopOnly = styled(Flex)`
+  flex-direction: column;
+  ${mediaQueries[1]} {
+    flex-direction: row;
+    margin-bottom: ${themeGet('space.2')}px;
+  }
 `
 
 function PasswordInput({
@@ -51,9 +62,9 @@ function PasswordInput({
   const [hasNumOrSpecial, setHasNumOrSpecial] = useState(false)
   const [hasMinEightChar, setHasMinEightChar] = useState(false)
 
-  const successIconOn = <Success size='12px' color={'secondary'} mr={1} />
+  const successIconOn = <Success size='16px' color={'secondary'} mr={1} />
   const successIconOff = (
-    <SuccessOutline size='12px' color={'text.light'} mr={1} />
+    <SuccessOutline size='16px' color={'text.light'} mr={1} />
   )
 
   const successIconOne = hasNumOrSpecial ? successIconOn : successIconOff
@@ -116,11 +127,13 @@ function PasswordInput({
             </Badge>
           </Flex>
           <ProgressBar steps={progressBarSteps} currentStep={strengthLevel} />
-          <Flex align-items='center' mt={2}>
-            <CustomText color='text.light'>Must contain:</CustomText>
+          <FlexDesktopOnly align-items='center' mt={2}>
+            <CustomText color='text.light' mr={3}>
+              Must contain:
+            </CustomText>
             <CustomFlex alignItems='center'>
               {successIconOne}
-              <CustomText color={requirementOneColor}>
+              <CustomText color={requirementOneColor} mr={3}>
                 1 number or special character
               </CustomText>
             </CustomFlex>
@@ -130,7 +143,7 @@ function PasswordInput({
                 8 characters minimum
               </CustomText>
             </CustomFlex>
-          </Flex>
+          </FlexDesktopOnly>
         </Flex>
       )}
     </Flex>
