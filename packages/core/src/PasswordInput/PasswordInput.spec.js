@@ -30,12 +30,12 @@ describe('PasswordInput', () => {
 
     const checkIconOn = screen.queryAllByTestId('check-icon-on')
     const checkIconOff = screen.queryAllByTestId('check-icon-off')
-    expect(checkIconOn.length).toBe(5)
-    expect(checkIconOff.length).toBe(0)
+    expect(checkIconOn).toHaveLength(5)
+    expect(checkIconOff).toHaveLength(0)
     expect(checkIconOn[0]).toHaveStyleRule('color', '#0a0')
 
     const checkMark = screen.queryAllByTestId('check-mark-icon')
-    expect(checkMark.length).toBe(1)
+    expect(checkMark).toHaveLength(1)
   })
 
   it('test with a no number and special character password', () => {
@@ -51,13 +51,13 @@ describe('PasswordInput', () => {
 
     const checkIconOn = screen.queryAllByTestId('check-icon-on')
     const checkIconOff = screen.queryAllByTestId('check-icon-off')
-    expect(checkIconOn.length).toBe(3)
-    expect(checkIconOff.length).toBe(2)
+    expect(checkIconOn).toHaveLength(3)
+    expect(checkIconOff).toHaveLength(2)
     expect(checkIconOn[0]).toHaveStyleRule('color', '#0a0')
     expect(checkIconOff[0]).toHaveStyleRule('color', '#4f6f8f')
 
     const checkMark = screen.queryAllByTestId('check-mark-icon')
-    expect(checkMark.length).toBe(0)
+    expect(checkMark).toHaveLength(0)
   })
 
   it('test with a weak password', () => {
@@ -73,12 +73,12 @@ describe('PasswordInput', () => {
 
     const checkIconOn = screen.queryAllByTestId('check-icon-on')
     const checkIconOff = screen.queryAllByTestId('check-icon-off')
-    expect(checkIconOn.length).toBe(1)
-    expect(checkIconOff.length).toBe(4)
+    expect(checkIconOn).toHaveLength(1)
+    expect(checkIconOff).toHaveLength(4)
     expect(checkIconOff[0]).toHaveStyleRule('color', '#4f6f8f')
 
     const checkMark = screen.queryAllByTestId('check-mark-icon')
-    expect(checkMark.length).toBe(0)
+    expect(checkMark).toHaveLength(0)
   })
 
   it('test with a manual regex checks', () => {
@@ -100,11 +100,11 @@ describe('PasswordInput', () => {
 
     const checkIconOn = screen.queryAllByTestId('check-icon-on')
     const checkIconOff = screen.queryAllByTestId('check-icon-off')
-    expect(checkIconOn.length).toBe(2)
-    expect(checkIconOff.length).toBe(0)
+    expect(checkIconOn).toHaveLength(2)
+    expect(checkIconOff).toHaveLength(0)
     expect(checkIconOn[0]).toHaveStyleRule('color', '#0a0')
 
     const checkMark = screen.queryAllByTestId('check-mark-icon')
-    expect(checkMark.length).toBe(1)
+    expect(checkMark).toHaveLength(1)
   })
 })

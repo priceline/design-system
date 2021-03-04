@@ -112,7 +112,12 @@ function PasswordInput({
                 const color = didPass ? 'success' : 'text.light'
 
                 return (
-                  <Flex alignItems='center' mt={[2, null, 0]} mb={[0, null, 2]}>
+                  <Flex
+                    alignItems='center'
+                    mt={[2, null, 0]}
+                    mb={[0, null, 2]}
+                    key={'regex-label-' + index}
+                  >
                     <Icon
                       size='16px'
                       color={color}
@@ -157,7 +162,7 @@ PasswordInput.propTypes = {
   label: PropTypes.string,
   hasProgressBar: PropTypes.bool,
   progressBarSteps: PropTypes.arrayOf(
-    PropTypes.shape({ color: PropTypes.string })
+    PropTypes.shape({ color: PropTypes.string, text: PropTypes.string })
   ),
   progressBarDefaultStep: PropTypes.number,
   regexChecks: PropTypes.arrayOf(
