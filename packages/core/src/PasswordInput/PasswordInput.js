@@ -118,7 +118,7 @@ function PasswordInput({
                       color={color}
                       mr={1}
                       data-testid={
-                        Icon == Success ? 'check-icon-on' : 'check-icon-off'
+                        Icon === Success ? 'check-icon-on' : 'check-icon-off'
                       }
                     />
                     <CustomText fontSize={0} color={color} mr={3}>

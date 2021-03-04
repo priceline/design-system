@@ -1,7 +1,6 @@
 import React from 'react'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 import { Box, Input, Label, Divider, Button } from '..'
-import { Visibility } from 'pcln-icons'
 
 export default {
   title: 'Input',

@@ -15,7 +15,6 @@ describe('PasswordInput', () => {
     const visibilityButton = screen.getByTitle('visibility-button')
     expect(inputField).toHaveAttribute('type', 'password')
     fireEvent.click(visibilityButton)
-    fireEvent.change(inputField), { target: { value: 'Password1!' } }
     expect(inputField).toHaveAttribute('type', 'text')
   })
 
