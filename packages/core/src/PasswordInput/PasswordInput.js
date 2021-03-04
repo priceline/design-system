@@ -153,7 +153,7 @@ PasswordInput.defaultProps = {
   ],
 }
 
-PasswordInput.prototype = {
+PasswordInput.propTypes = {
   label: PropTypes.string,
   hasProgressBar: PropTypes.bool,
   progressBarSteps: PropTypes.arrayOf(
@@ -163,6 +163,8 @@ PasswordInput.prototype = {
   regexChecks: PropTypes.arrayOf(
     PropTypes.shape({ label: PropTypes.string, regex: PropTypes.string })
   ),
+  value: PropTypes.string,
+  onChange: PropTypes.func,
 }
 
 export default PasswordInput
