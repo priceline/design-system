@@ -5,12 +5,18 @@ import PasswordInput from './PasswordInput'
 
 describe('PasswordInput', () => {
   it('test show/hide password options', () => {
-    render(<PasswordInput hasProgressBar />)
+    const mockOnChange = jest.fn()
+    render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
     const visibilityButton = screen.getByTitle('visibility-button')
     expect(inputField).toHaveAttribute('type', 'password')
     fireEvent.click(visibilityButton)
+    fireEvent.change(inputField), { target: { value: 'Password1!' } }
     expect(inputField).toHaveAttribute('type', 'text')
+    expect(mockOnChange).toHaveBeenCalledWith({
+      isValid: true,
+      value: 'Password1!',
+    })
   })
 
   it('test with a strong password', () => {
