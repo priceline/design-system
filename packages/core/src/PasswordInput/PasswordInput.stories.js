@@ -16,11 +16,7 @@ export const Basic = () => <PasswordInput />
 export const WithTitle = () => <PasswordInput label='New Password' />
 
 export const WithProgressBar = () => (
-  <PasswordInput
-    label='New Password'
-    hasProgressBar
-    onChange={({ isValid, value }) => console.log(isValid, value)}
-  />
+  <PasswordInput label='New Password' hasProgressBar />
 )
 
 export const WithCustomRegex = () => (

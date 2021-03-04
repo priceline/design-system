@@ -1,6 +1,5 @@
 import React from 'react'
 import { render, screen, fireEvent } from 'testing-library'
-import userEvent from '@testing-library/user-event'
 import PasswordInput from './PasswordInput'
 
 const sampleRegexCheckx = [
@@ -22,7 +21,7 @@ describe('PasswordInput', () => {
     const mockOnChange = jest.fn()
     render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
-    userEvent.type(inputField, 'GoodPassword1!')
+    fireEvent.change(inputField, { target: { value: 'GoodPassword1!' } })
 
     expect(mockOnChange).toHaveBeenLastCalledWith({
       isValid: true,
@@ -43,7 +42,7 @@ describe('PasswordInput', () => {
     const mockOnChange = jest.fn()
     render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
-    userEvent.type(inputField, 'SamplePassword')
+    fireEvent.change(inputField, { target: { value: 'SamplePassword' } })
 
     expect(mockOnChange).toHaveBeenLastCalledWith({
       isValid: false,
@@ -65,7 +64,7 @@ describe('PasswordInput', () => {
     const mockOnChange = jest.fn()
     render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
-    userEvent.type(inputField, 'bad')
+    fireEvent.change(inputField, { target: { value: 'bad' } })
 
     expect(mockOnChange).toHaveBeenLastCalledWith({
       isValid: false,
@@ -92,7 +91,7 @@ describe('PasswordInput', () => {
       />
     )
     const inputField = screen.getByTestId('input-field')
-    userEvent.type(inputField, 'Password')
+    fireEvent.change(inputField, { target: { value: 'Password' } })
 
     expect(mockOnChange).toHaveBeenLastCalledWith({
       isValid: true,
