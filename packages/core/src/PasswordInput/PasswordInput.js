@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { themeGet } from 'styled-system'
 import {
   Visibility,
   VisibilityOff,
@@ -18,7 +17,6 @@ import {
   Badge,
   ProgressBar,
   IconButton,
-  mediaQueries,
 } from '../../src'
 
 const CustomText = styled(Text)`
@@ -51,7 +49,6 @@ function PasswordInput({
     setPassedChecks(passedChecks)
 
     const isValid = passedChecks.length === regexChecks.length
-
     onChange && onChange({ isValid, value: currentInput })
   }
 
@@ -116,7 +113,14 @@ function PasswordInput({
 
                 return (
                   <Flex alignItems='center' mt={[2, null, 0]} mb={[0, null, 2]}>
-                    <Icon size='16px' color={color} mr={1} />
+                    <Icon
+                      size='16px'
+                      color={color}
+                      mr={1}
+                      data-testid={
+                        Icon == Success ? 'check-icon-on' : 'check-icon-off'
+                      }
+                    />
                     <CustomText fontSize={0} color={color} mr={3}>
                       {check.label}
                     </CustomText>
