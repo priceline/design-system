@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.6.1",
+      "tag": "pcln-design-system_v4.6.1",
+      "date": "Thu, 04 Mar 2021 20:25:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "IconField allows multiple Icon components",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "6d9b977aa8c91719d3ed370d276d45d6b62147b3"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.6.0",
       "tag": "pcln-design-system_v4.6.0",
       "date": "Tue, 02 Mar 2021 15:09:04 GMT",
