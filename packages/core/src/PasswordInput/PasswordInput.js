@@ -32,6 +32,7 @@ function PasswordInput({
   regexChecks,
   value,
   onChange,
+  autoComplete,
 }) {
   const [showPassword, setShowPassword] = useState(false)
   const [passedChecks, setPassedChecks] = useState([])
@@ -77,6 +78,7 @@ function PasswordInput({
           value={value}
           onChange={handleChange}
           data-testid='input-field'
+          autoComplete={autoComplete}
         />
         {showCheckIcon && (
           <Check color='secondary' data-testid='check-mark-icon' />
@@ -172,6 +174,7 @@ PasswordInput.propTypes = {
   ),
   value: PropTypes.string,
   onChange: PropTypes.func,
+  autoComplete: PropTypes.string,
 }
 
 export default PasswordInput
