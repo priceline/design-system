@@ -2,6 +2,18 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.6.2",
+      "tag": "pcln-design-system_v4.6.2",
+      "date": "Wed, 10 Mar 2021 15:09:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Export Chip"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.6.1",
       "tag": "pcln-design-system_v4.6.1",
       "date": "Thu, 04 Mar 2021 20:25:55 GMT",
