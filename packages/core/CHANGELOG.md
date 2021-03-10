@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 04 Mar 2021 20:25:55 GMT and should not be manually modified.
+This log was last generated on Wed, 10 Mar 2021 15:09:11 GMT and should not be manually modified.
+
+## 4.6.2
+Wed, 10 Mar 2021 15:09:11 GMT
+
+### Patches
+
+- Export Chip
 
 ## 4.6.1
 Thu, 04 Mar 2021 20:25:55 GMT
