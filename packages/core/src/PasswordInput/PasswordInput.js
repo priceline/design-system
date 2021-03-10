@@ -42,9 +42,11 @@ function PasswordInput({
     const currentInput = event.target.value
     const passedChecks = []
 
-    regexChecks.forEach((element, index) => {
-      element.regex.test(currentInput) && passedChecks.push(index)
-    })
+    regexChecks.reduce(
+      (acc, element, index) =>
+        element.regex.test(currentInput) && passedChecks.push(index),
+      passedChecks
+    )
 
     setPassedChecks(passedChecks)
 
