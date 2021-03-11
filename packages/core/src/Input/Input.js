@@ -44,7 +44,6 @@ const INPUT_ERROR_TEXT = 'InputHelperText'
 
 export const Input = React.forwardRef((props, ref) => {
   const { helperText, color, ...restProps } = props
-
   return (
     <>
       <StyledInput {...restProps} color={color} ref={ref} />

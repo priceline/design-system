@@ -79,10 +79,7 @@ export const ForwardsRefs = () => (
     refChild={(dsRef) => (
       <>
         <Input ref={dsRef} placeholder='Priceline!' />
-        <Button
-          onClick={() => dsRef.current.focus()}
-          mt={3}
-        >
+        <Button onClick={() => dsRef.current.focus()} mt={3}>
           Click to focus the input via ref
         </Button>
       </>
