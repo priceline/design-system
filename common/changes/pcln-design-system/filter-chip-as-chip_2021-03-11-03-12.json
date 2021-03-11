@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Change exported Chip component from ChoiceChip to FilterChip",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "james.stewart@priceline.com"
+}
