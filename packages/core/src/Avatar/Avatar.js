@@ -63,10 +63,7 @@ Avatar.propTypes = {
   src: PropTypes.string,
   altText: PropTypes.string,
   initials: PropTypes.string,
-  size: PropTypes.oneOfType([
-    PropTypes.oneOf(['small', 'medium', 'large']),
-    PropTypes.number,
-  ]),
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   color: PropTypes.string,
 }
 
