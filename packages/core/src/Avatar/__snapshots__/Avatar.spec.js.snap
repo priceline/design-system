@@ -21,6 +21,9 @@ exports[`Avatar renders default 1`] = `
 }
 
 .c1 {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
   padding: 8px;
   background-color: #0068EF;
   color: #fff;
@@ -37,9 +40,7 @@ exports[`Avatar renders default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-size: 40px;
+  background-size: cover;
   background-image: url();
 }
 
@@ -47,8 +48,11 @@ exports[`Avatar renders default 1`] = `
   className="c0"
 >
   <div
+    alt="avatar"
     className="c1"
     color="primary"
+    role="img"
+    size={40}
   >
     <svg
       aria-hidden={true}
@@ -82,6 +86,9 @@ exports[`Avatar renders initials 1`] = `
 }
 
 .c1 {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
   padding: 8px;
   background-color: #0068EF;
   color: #fff;
@@ -98,9 +105,7 @@ exports[`Avatar renders initials 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-size: 40px;
+  background-size: cover;
   background-image: url();
 }
 
@@ -108,8 +113,11 @@ exports[`Avatar renders initials 1`] = `
   className="c0"
 >
   <div
+    alt="avatar"
     className="c1"
     color="primary"
+    role="img"
+    size={40}
   >
     <div
       className="c2"
@@ -155,6 +163,9 @@ exports[`Avatar renders mr elon 1`] = `
 }
 
 .c2 {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
   padding: 8px;
   background-color: #0068EF;
   color: #fff;
@@ -171,9 +182,7 @@ exports[`Avatar renders mr elon 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-size: 40px;
+  background-size: cover;
   background-image: url(https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg);
 }
 
@@ -194,8 +203,11 @@ exports[`Avatar renders mr elon 1`] = `
       class="c1"
     >
       <div
+        alt="papa-elon"
         class="c2"
         color="primary"
+        role="img"
+        size="40"
         src="https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg"
       />
       <div
