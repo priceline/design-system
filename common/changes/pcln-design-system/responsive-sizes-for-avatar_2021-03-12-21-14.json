@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "AltText and Responsive Sizes for Avatar",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "james.stewart@priceline.com"
+}

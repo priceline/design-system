@@ -16,5 +16,16 @@ export const Elon = () => (
     title='Not Elon Musk'
     subtitle='totally.not.elon@musk.com'
     src={elonJPG}
+    altText='papa-elon'
+  />
+)
+
+export const Responsive = () => (
+  <Avatar
+    title='Not Elon Musk'
+    subtitle='totally.not.elon@musk.com'
+    src={elonJPG}
+    altText='papa-elon'
+    size={[40, 50, 64, 85, 104, 130]}
   />
 )
