@@ -1,6 +1,19 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 10 Mar 2021 15:09:11 GMT and should not be manually modified.
+This log was last generated on Thu, 18 Mar 2021 18:51:55 GMT and should not be manually modified.
+
+## 4.7.0
+Thu, 18 Mar 2021 18:51:55 GMT
+
+### Minor changes
+
+- AltText and Responsive Sizes for Avatar
+- created a new passwordInput component
+
+### Patches
+
+- Change exported Chip component from ChoiceChip to FilterChip
+- IconField overwriting pl and pr default props fixed
 
 ## 4.6.2
 Wed, 10 Mar 2021 15:09:11 GMT

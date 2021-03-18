@@ -2,6 +2,37 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.7.0",
+      "tag": "pcln-design-system_v4.7.0",
+      "date": "Thu, 18 Mar 2021 18:51:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Change exported Chip component from ChoiceChip to FilterChip",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "0c8c24d9352abfc3ab9d03107a57f0cdd96d4a0e"
+          },
+          {
+            "comment": "IconField overwriting pl and pr default props fixed",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "04f6af9be05df3b30b8266530ee61c51f739bad6"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "AltText and Responsive Sizes for Avatar",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "046bbaac228137d5497bbb0c9b564a87aaad849c"
+          },
+          {
+            "comment": "created a new passwordInput component",
+            "author": "JonChoi16 <77304994+JonChoi16@users.noreply.github.com>",
+            "commit": "47f6984a75aeba71d49f5264349dcdfeb12cf81b"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.6.2",
       "tag": "pcln-design-system_v4.6.2",
       "date": "Wed, 10 Mar 2021 15:09:11 GMT",
