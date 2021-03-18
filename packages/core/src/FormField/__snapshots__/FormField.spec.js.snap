@@ -548,6 +548,8 @@ exports[`FormField renders with Select  1`] = `
   margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 32px;
   font-size: 16px;
 }
 
@@ -728,6 +730,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 40px;
+  padding-right: 32px;
   font-size: 16px;
 }
 

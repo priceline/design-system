@@ -19,11 +19,15 @@ const IconField = (props) => {
   const input = children[inputIndex]
   const suffixIcons = children.slice(inputIndex + 1, children.length)
 
-  const paddingLeft = prefixIcons.length > 0 && prefixIcons.length * 40
-  const paddingRight = suffixIcons.length > 0 && suffixIcons.length * 40
+  const paddingLeft =
+    prefixIcons.length > 0 ? prefixIcons.length * 40 : undefined
+  const paddingRight =
+    suffixIcons.length > 0 ? suffixIcons.length * 40 : undefined
 
-  const marginRight = prefixIcons.length > 0 && -(prefixIcons.length * 40)
-  const marginLeft = suffixIcons.length > 0 && -(suffixIcons.length * 40)
+  const marginRight =
+    prefixIcons.length > 0 ? -(prefixIcons.length * 40) : undefined
+  const marginLeft =
+    suffixIcons.length > 0 ? -(suffixIcons.length * 40) : undefined
 
   return (
     <Flex alignItems='center' {...props}>
