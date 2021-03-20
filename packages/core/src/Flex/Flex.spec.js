@@ -40,9 +40,10 @@ describe('Flex', () => {
       const json = rendererCreateWithTheme(<Flex align='center' />).toJSON()
       expect(json).toHaveStyleRule('align-items', 'center')
       expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed prop type: The `align` prop is deprecated and will be removed in a future release. Please use `alignItems` instead.'
-        )
+        'Warning: Failed %s type: %s%s',
+        'prop',
+        'The `align` prop is deprecated and will be removed in a future release. Please use `alignItems` instead.',
+        expect.any(String)
       )
     })
 
@@ -50,9 +51,10 @@ describe('Flex', () => {
       const json = rendererCreateWithTheme(<Flex wrap />).toJSON()
       expect(json).toHaveStyleRule('flex-wrap', 'wrap')
       expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed prop type: The `wrap` prop is deprecated and will be removed in a future release. Please use `flexWrap` instead.'
-        )
+        'Warning: Failed %s type: %s%s',
+        'prop',
+        'The `wrap` prop is deprecated and will be removed in a future release. Please use `flexWrap` instead.',
+        expect.any(String)
       )
     })
 
@@ -62,9 +64,10 @@ describe('Flex', () => {
       ).toJSON()
       expect(json).toHaveStyleRule('justify-content', 'space-between')
       expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed prop type: The `justify` prop is deprecated and will be removed in a future release. Please use `justifyContent` instead.'
-        )
+        'Warning: Failed %s type: %s%s',
+        'prop',
+        'The `justify` prop is deprecated and will be removed in a future release. Please use `justifyContent` instead.',
+        expect.any(String)
       )
     })
   })

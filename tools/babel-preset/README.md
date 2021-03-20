@@ -36,8 +36,8 @@ Only a few steps are required to use the preset:
             "@babel/cli": "^7.7.4",
             "@babel/core": "^7.7.4",
             "cross-env": "^6.0.3",
-            "react": ">=16.10.0",
-            "react-dom": ">=16.10.0",
+            "react": ">= 16.10.0",
+            "react-dom": ">= 16.10.0",
             "styled-components": ">=4.4.1"
           },
         ```

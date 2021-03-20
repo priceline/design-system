@@ -12,7 +12,7 @@ module.exports = {
     rendererCreateWithTheme: 'writeable',
   },
   plugins: defaultPlugins,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',

@@ -64,9 +64,10 @@ describe('Box', () => {
       const json = rendererCreateWithTheme(<Box bg='green' />).toJSON()
       expect(json).toHaveStyleRule('background-color', theme.colors.green)
       expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed prop type: The `bg` prop is deprecated and will be removed in a future release. Please use `color` instead.'
-        )
+        'Warning: Failed %s type: %s%s',
+        'prop',
+        'The `bg` prop is deprecated and will be removed in a future release. Please use `color` instead.',
+        expect.any(String)
       )
     })
   })

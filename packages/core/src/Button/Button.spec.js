@@ -472,9 +472,10 @@ describe('Button', () => {
 
         expect(getByText('BUTTON')).toHaveStyleRule('width', '100%')
         expect(console.error).toHaveBeenCalledWith(
-          expect.stringContaining(
-            'Warning: Failed prop type: The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.'
-          )
+          'Warning: Failed %s type: %s%s',
+          'prop',
+          'The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.',
+          expect.any(String)
         )
       }).not.toThrow()
     })
