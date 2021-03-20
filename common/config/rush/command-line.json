@@ -30,7 +30,8 @@
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true
+      "ignoreMissingScript": true,
+      "incremental": true
     },
     {
       "name": "test:ci:update",
@@ -40,7 +41,8 @@
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true
+      "ignoreMissingScript": true,
+      "incremental": true
     },
 
     {
@@ -58,7 +60,8 @@
       "description": "Run ESLint static analysis against all projects",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
-      "ignoreDependencyOrder": true
+      "ignoreDependencyOrder": true,
+      "incremental": true
     },
     {
       "name": "lint:fix",
@@ -67,7 +70,8 @@
       "description": "Run ESLint static analysis against all projects",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
-      "ignoreDependencyOrder": true
+      "ignoreDependencyOrder": true,
+      "incremental": true
     },
 
     {
