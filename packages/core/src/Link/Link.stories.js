@@ -39,6 +39,19 @@ LinkComponent.story = {
   name: 'Link component',
 }
 
+export const AsSmallFilledButton = () => (
+  <>
+    <Link
+      variation='fill'
+      size='small'
+      href='https://www.priceline.com/home/'
+      target='_blank'
+    >
+      Priceline Home
+    </Link>
+  </>
+)
+
 export const LinkOpenSelf = () => (
   <Link href='https://www.priceline.com/home/' target='_self'>
     Open the Priceline Home in the same window
