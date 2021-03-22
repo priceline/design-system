@@ -158,7 +158,7 @@ PasswordInput.defaultProps = {
     { label: '1 Lowercase Letter', regex: /(?=.*[a-z])/ },
     { label: '1 Number', regex: /(?=.*[0-9])/ },
     { label: '1 Special Character', regex: /(?=.*[!@#$%^&*()])/ },
-    { label: 'at least 8 Characters', regex: /.{8,}/ },
+    { label: 'at least 12 Characters', regex: /.{12,}/ },
   ],
 }
 
