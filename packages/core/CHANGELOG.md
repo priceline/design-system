@@ -1,6 +1,15 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 18 Mar 2021 18:51:55 GMT and should not be manually modified.
+This log was last generated on Tue, 23 Mar 2021 18:57:24 GMT and should not be manually modified.
+
+## 4.7.1
+Tue, 23 Mar 2021 18:57:24 GMT
+
+### Patches
+
+- Fix link button variations using size prop
+- Update Password Input Default Requirements
+- Update pcln-icons dependency
 
 ## 4.7.0
 Thu, 18 Mar 2021 18:51:55 GMT
