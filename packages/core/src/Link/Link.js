@@ -50,6 +50,7 @@ Link.displayName = 'Link'
 Link.defaultProps = {
   color: 'primary',
   variation: 'link',
+  size: 'medium',
 }
 
 Link.propTypes = {
