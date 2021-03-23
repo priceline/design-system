@@ -15,7 +15,6 @@ import { CloseButton } from '../CloseButton'
 import {
   applyVariations,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const bannerColors = {
@@ -117,7 +116,6 @@ Banner.propTypes = {
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   textAlign: PropTypes.string,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
   children: PropTypes.node,
 }
 

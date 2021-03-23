@@ -5,7 +5,6 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const ToggleBadge = styled.button`
@@ -35,7 +34,6 @@ ToggleBadge.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
 }
 
 ToggleBadge.defaultProps = {

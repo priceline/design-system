@@ -82,7 +82,7 @@
     "@compositor/kit": "^1.0.47",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
-    "@rushstack/eslint-config": "^2.3.1",
+    "@rushstack/eslint-patch": "^1.0.6",
     "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/react": "^5.3.21",

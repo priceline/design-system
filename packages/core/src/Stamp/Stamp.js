@@ -7,7 +7,6 @@ import {
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const sizes = {
@@ -46,12 +45,6 @@ const variations = {
     background-color: ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
   `,
-  // todo: remove this copy of the fill variation in v4 as its name does not follow conventions
-  solid: css`
-    color: ${getTextColorOn('base')};
-    background-color: ${getPaletteColor('base')};
-    border-color: ${getPaletteColor('base')};
-  `,
 }
 
 const Stamp = styled.div`
@@ -82,7 +75,7 @@ Stamp.propTypes = {
   ]),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
   borderColor: deprecatedColorValue(),
 }
 
@@ -90,7 +83,6 @@ Stamp.defaultProps = {
   px: 1,
   py: 0,
   color: 'border.light',
-  bg: 'background.light',
   borderColor: 'border.base',
   size: 'medium',
   variation: 'outline',

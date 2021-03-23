@@ -6,7 +6,6 @@ import {
   applyVariations,
   color,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const type = (props) => {
@@ -81,7 +80,6 @@ Badge.propTypes = {
   ...space.propTypes,
   size: PropTypes.oneOf(Object.keys(sizes)),
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
 }
 
 Badge.defaultProps = {

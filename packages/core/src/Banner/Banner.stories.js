@@ -21,63 +21,63 @@ export const AllBgs = () => (
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary'
       text='Secondary Text'
-      bg='blue'
+      color='primary'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='green'
+      header='secondary'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare.'
-      bg='green'
+      color='secondary'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='orange'
+      header='alert'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur.'
-      bg='orange'
+      color='alert'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='red'
+      header='error'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus.'
-      bg='red'
+      color='error'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum.'
-      bg='lightBlue'
+      color='primary.light'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='green'
+      header='secondary'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare.'
-      bg='lightGreen'
+      color='secondary.light'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='red'
+      header='error'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare. Quisque at quam vel nibh tempor imperdiet vitae non orci. Etiam bibendum sem id nibh finibus interdum. Nunc quam neque, tristique porttitor varius a, ultrices a nibh. Nunc et ipsum id eros condimentum convallis. Donec gravida leo facilisis, pharetra tellus eu, dictum mi.'
-      bg='lightRed'
+      color='error.light'
       onClose={action('closed')}
     />
     <Banner
@@ -86,8 +86,7 @@ export const AllBgs = () => (
       p={3}
       header='custom'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare. Quisque at quam vel nibh tempor imperdiet vitae non orci. Etiam bibendum sem id nibh finibus interdum. Nunc quam neque, tristique porttitor varius a, ultrices a nibh. Nunc et ipsum id eros condimentum convallis. Donec gravida leo facilisis, pharetra tellus eu, dictum mi.'
-      bg='text'
-      color='white'
+      color='text.lightest'
       onClose={action('closed')}
     />
     <Banner
@@ -123,56 +122,56 @@ export const AllBgsHeaderOnly = () => (
       textAlign='left'
       mb={2}
       p={2}
-      header='blue'
-      bg='blue'
+      header='primary'
+      color='primary'
       onClose={action('closed')}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      header='green'
-      bg='green'
+      header='secondary'
+      alert='secondary'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      header='orange'
-      bg='orange'
+      header='alert'
+      color='alert'
       onClose={action('closed')}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      header='red'
-      bg='red'
+      header='error'
+      color='error'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      header='blue'
-      bg='lightBlue'
+      header='primary.light'
+      color='primary.light'
       onClose={action('closed')}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      header='green'
-      bg='lightGreen'
+      header='secondary.light'
+      color='secondary.light'
       onClose={action('closed')}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      header='red'
-      bg='lightRed'
+      header='error.light'
+      color='error.light'
       onClose={action('closed')}
     />
   </Box>
@@ -195,32 +194,32 @@ export const AllBgsTextOnly = () => (
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='blue'
+      text='primary'
+      color='primary'
       onClose={action('closed')}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='green'
+      text='secondary'
+      color='secondary'
       onClose={action('closed')}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      text='orange'
-      bg='orange'
+      text='alert'
+      color='alert'
       onClose={action('closed')}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='red'
+      text='error'
+      color='error'
       onClose={action('closed')}
     />
     <Banner
@@ -228,7 +227,7 @@ export const AllBgsTextOnly = () => (
       mb={2}
       p={2}
       text='Secondary Text'
-      bg='lightBlue'
+      color='primary.light'
       onClose={action('closed')}
     />
     <Banner
@@ -236,7 +235,7 @@ export const AllBgsTextOnly = () => (
       mb={2}
       p={2}
       text='Secondary Text'
-      bg='lightGreen'
+      color='secondary.light'
       onClose={action('closed')}
     />
     <Banner
@@ -244,7 +243,7 @@ export const AllBgsTextOnly = () => (
       mb={2}
       p={2}
       text='Secondary Text'
-      bg='lightRed'
+      color='error.light'
       onClose={action('closed')}
     />
   </Box>
@@ -267,57 +266,57 @@ export const SansCloseButton = () => (
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary'
       text='Secondary Text'
-      bg='blue'
+      color='primary'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='green'
+      header='secondary'
       text='Secondary Text'
-      bg='green'
+      color='secondary'
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='orange'
+      header='alert'
       text='Secondary Text'
-      bg='orange'
+      color='alert'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='red'
+      header='error'
       text='Secondary Text'
-      bg='red'
+      color='error'
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary.light'
       text='Secondary Text'
-      bg='lightBlue'
+      color='primary.light'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='green'
+      header='secondary.light'
       text='Secondary Text'
-      bg='lightGreen'
+      color='secondary.light'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='red'
+      header='error.light'
       text='Secondary Text'
-      bg='lightRed'
+      color='error.light'
     />
   </Box>
 )
@@ -337,9 +336,9 @@ export const SansIcon = () => (
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary'
       text='Secondary Text'
-      bg='blue'
+      color='primary'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -347,9 +346,9 @@ export const SansIcon = () => (
       textAlign='right'
       mb={2}
       p={3}
-      header='green'
+      header='secondary'
       text='Secondary Text'
-      bg='green'
+      color='secondary'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -357,9 +356,9 @@ export const SansIcon = () => (
       textAlign='left'
       mb={2}
       p={3}
-      header='orange'
+      header='alert'
       text='Secondary Text'
-      bg='orange'
+      color='alert'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -367,9 +366,9 @@ export const SansIcon = () => (
       textAlign='right'
       mb={2}
       p={3}
-      header='red'
+      header='error'
       text='Secondary Text'
-      bg='red'
+      color='error'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -377,9 +376,9 @@ export const SansIcon = () => (
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary.light'
       text='Secondary Text'
-      bg='lightBlue'
+      color='primary.light'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -387,9 +386,9 @@ export const SansIcon = () => (
       textAlign='right'
       mb={2}
       p={3}
-      header='green'
+      header='secondary.light'
       text='Secondary Text'
-      bg='lightGreen'
+      color='secondary.light'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -397,9 +396,9 @@ export const SansIcon = () => (
       textAlign='right'
       mb={2}
       p={3}
-      header='red'
+      header='error.light'
       text='Secondary Text'
-      bg='lightRed'
+      color='error.light'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -420,63 +419,63 @@ export const WithoutIconOrCloseButton = () => (
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary'
       text='Secondary Text'
-      bg='blue'
+      color='primary'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='green'
+      header='secondary'
       text='Secondary Text'
-      bg='green'
+      color='secondary'
       showIcon={false}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='orange'
+      header='alert'
       text='Secondary Text'
-      bg='orange'
+      color='alert'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='red'
+      header='error'
       text='Secondary Text'
-      bg='red'
+      color='error'
       showIcon={false}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={3}
-      header='blue'
+      header='primary.light'
       text='Secondary Text'
-      bg='lightBlue'
+      color='primary.light'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='green'
+      header='secondary.light'
       text='Secondary Text'
-      bg='lightGreen'
+      color='secondary.light'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={3}
-      header='red'
+      header='error.light'
       text='Secondary Text'
-      bg='lightRed'
+      color='error.light'
       showIcon={false}
     />
   </Box>
@@ -489,13 +488,13 @@ WithoutIconOrCloseButton.story = {
 export const SansCloseButtonTextOnly = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' />
-    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' />
-    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' />
-    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' />
-    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' />
-    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' />
-    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' />
-    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' />
+    <Banner textAlign='left' mb={2} p={2} text='primary' color='primary' />
+    <Banner textAlign='right' mb={2} p={2} text='secondary' color='secondary' />
+    <Banner textAlign='left' mb={2} p={2} text='alert' color='alert' />
+    <Banner textAlign='right' mb={2} p={2} text='error' color='error' />
+    <Banner textAlign='left' mb={2} p={2} text='primary.light' color='primary.light' />
+    <Banner textAlign='right' mb={2} p={2} text='secondary.light' color='secondary.light' />
+    <Banner textAlign='right' mb={2} p={2} text='error.light' color='error.light' />
   </Box>
 )
 
@@ -517,8 +516,8 @@ export const SansIconTextOnly = () => (
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='blue'
+      text='primary'
+      color='primary'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -526,8 +525,8 @@ export const SansIconTextOnly = () => (
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='green'
+      text='secondary'
+      color='secondary'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -535,8 +534,8 @@ export const SansIconTextOnly = () => (
       textAlign='left'
       mb={2}
       p={2}
-      text='orange'
-      bg='orange'
+      text='alert'
+      color='alert'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -544,8 +543,8 @@ export const SansIconTextOnly = () => (
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='red'
+      text='error'
+      color='error'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -553,8 +552,8 @@ export const SansIconTextOnly = () => (
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='lightBlue'
+      text='primary.light'
+      color='primary.light'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -562,8 +561,8 @@ export const SansIconTextOnly = () => (
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='lightGreen'
+      text='secondary.light'
+      color='secondary.light'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -571,8 +570,8 @@ export const SansIconTextOnly = () => (
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='lightRed'
+      text='error.light'
+      color='error.light'
       onClose={action('closed')}
       showIcon={false}
     />
@@ -617,56 +616,56 @@ export const WithoutIconOrCloseButtonTextOnly = () => (
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='blue'
+      text='primary'
+      color='primary'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='green'
+      text='secondary'
+      color='secondary'
       showIcon={false}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      text='orange'
-      bg='orange'
+      text='alert'
+      color='alert'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='red'
+      text='error'
+      color='error'
       showIcon={false}
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='lightBlue'
+      text='primary.light'
+      color='primary.light'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='lightGreen'
+      text='secondary.light'
+      color='secondary.light'
       showIcon={false}
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='lightRed'
+      text='error.light'
+      color='error.light'
       showIcon={false}
     />
   </Box>
@@ -683,56 +682,56 @@ export const WithCustomIconsAndSizes = () => (
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='blue'
+      text='primary'
+      color='primary'
       iconName='star'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='green'
+      text='secondary'
+      color='secondary'
       iconName='star'
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      text='orange'
-      bg='orange'
+      text='alert'
+      color='alert'
       iconName='star'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='red'
+      text='error'
+      color='error'
       iconName='star'
     />
     <Banner
       textAlign='left'
       mb={2}
       p={2}
-      text='blue'
-      bg='lightBlue'
+      text='primary.light'
+      color='primary.light'
       iconName='star'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='green'
-      bg='lightGreen'
+      text='secondary.light'
+      color='secondary.light'
       iconName='star'
     />
     <Banner
       textAlign='right'
       mb={2}
       p={2}
-      text='red'
-      bg='lightRed'
+      text='error.light'
+      color='error.light'
       iconName='star'
     />
   </Box>
@@ -746,10 +745,10 @@ export const WithChildren = () => (
   <Box>
     <Banner p={2} mb={2} onClose={action('closed')}>
       <Flex>
-        <Box bg={'pink'} p={2} width={1 / 2}>
+        <Box color={'error.light'} p={2} width={1 / 2}>
           Pink box!
         </Box>
-        <Box bg={'red'} p={2} width={1 / 2}>
+        <Box color={'error'} p={2} width={1 / 2}>
           Red box!
         </Box>
       </Flex>

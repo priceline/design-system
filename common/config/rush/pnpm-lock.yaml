@@ -10,6 +10,7 @@ importers:
       pcln-design-system: 'link:../../packages/core'
       pcln-icons: 'link:../../packages/icons'
       pcln-modal: 'link:../../packages/modal'
+      pcln-popover: 'link:../../packages/popover'
       pcln-slider: 'link:../../packages/slider'
       prop-types: 15.7.2
       react: 16.14.0
@@ -44,6 +45,7 @@ importers:
       pcln-design-system: 'workspace:*'
       pcln-icons: 'workspace:*'
       pcln-modal: 'workspace:*'
+      pcln-popover: 'workspace:*'
       pcln-slider: 'workspace:*'
       prop-types: ^15.7.2
       react: ^16.13.1
@@ -164,7 +166,7 @@ importers:
       '@compositor/kit': 1.0.47_06677a59d5b1ed295fa969e19a0946d4
       '@priceline/babel-preset': 'link:../../tools/babel-preset'
       '@priceline/eslint-config': 'link:../../tools/eslint-config'
-      '@rushstack/eslint-config': 2.3.2_eslint@7.17.0
+      '@rushstack/eslint-patch': 1.0.6
       '@storybook/addon-actions': 5.3.21_react-dom@16.14.0
       '@storybook/addon-info': 5.3.21_react-dom@16.14.0
       '@storybook/react': 5.3.21_react-dom@16.14.0+react@16.14.0
@@ -189,7 +191,7 @@ importers:
       '@compositor/kit': ^1.0.47
       '@priceline/babel-preset': 'workspace:*'
       '@priceline/eslint-config': 'workspace:*'
-      '@rushstack/eslint-config': ^2.3.1
+      '@rushstack/eslint-patch': ^1.0.6
       '@storybook/addon-actions': ^5.3.21
       '@storybook/addon-info': ^5.3.21
       '@storybook/react': ^5.3.21
@@ -3476,21 +3478,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-6FZoQ7pKPY6JhFzuPr4OHWYN3ztbjPu9YDkPTE8wTdlXsCEyyzSDK5DUBx8yTNXwExitRjnZ96Z68bNPeprIIg==
-  /@definitelytyped/header-parser/0.0.65:
+  /@definitelytyped/header-parser/0.0.72:
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.65
+      '@definitelytyped/typescript-versions': 0.0.72
       '@types/parsimmon': 1.10.6
       parsimmon: 1.16.0
     dev: true
     resolution:
-      integrity: sha512-NVB9mCCFAF8fCDTukkynMZ5Jozbnvlxwt4LLielCkDPgMUavuZfpvHK52KiQhI32xXpfVNBKD6/6z+FezFm7tQ==
-  /@definitelytyped/typescript-versions/0.0.65:
+      integrity: sha512-mdvHeRC1vGbl+qhjAJ6fUpcZsrzYr9OBpOeP96ZLJ2NSp4o6EJ8njHjQmAIk8wL+nKNO2D4Ne6i9pV/Q6kS32Q==
+  /@definitelytyped/typescript-versions/0.0.72:
     dev: true
     resolution:
-      integrity: sha512-7chRIxoMxM38okhDA1NARtd4NX5QXVAQe2nfnBTgpOG8VgW/YCqFSeM4Feb+diqglwoxvHJNh7muF7/0VqR+nA==
-  /@definitelytyped/utils/0.0.65:
+      integrity: sha512-kkQ108WlQm27To5LWzixgEaDcY/dfAjU0SSmQJvj9qI8YNh3y6Y5RCe2IZ80s1UB5V3iGrakAMFcGshuB/yGeg==
+  /@definitelytyped/utils/0.0.72:
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.65
+      '@definitelytyped/typescript-versions': 0.0.72
       '@types/node': 12.19.12
       charm: 1.0.2
       fs-extra: 8.1.0
@@ -3500,7 +3502,7 @@ packages:
       tar-stream: 2.2.0
     dev: true
     resolution:
-      integrity: sha512-3I5OsaebF+LXWqS0uZbhmMvUNTRS3vtyoXRvQMGhE0Y6ZSihQgC4LaP12rnixpFVjO0ZrJru3W9DKTaEYJS8Yw==
+      integrity: sha512-zjQkn9WVMPYK7z/rTMgmO9j3TCGybZYki4zObBh5LFQoR7tlNlaEDW3qcBB6T38XGgMUk1Oot8vn6adC12sS3A==
   /@egoist/vue-to-react/1.1.0_react@16.14.0:
     dependencies:
       react: 16.14.0
@@ -11122,7 +11124,7 @@ packages:
       integrity: sha512-dZL3iNL/LbpHNzUQAaVq/eTD1ocnGKKjbAl/848Q0KEp6t81LJbS37w3f93oD6gqqAnjdgM7Use36qZSipHXBw==
   /dts-critic/3.3.4:
     dependencies:
-      '@definitelytyped/header-parser': 0.0.65
+      '@definitelytyped/header-parser': 0.0.72
       command-exists: 1.2.9
       rimraf: 3.0.2
       semver: 6.3.0
@@ -11137,9 +11139,9 @@ packages:
       integrity: sha512-OjLTrSBCFbi1tDAiOXcP7G20W3HI3eIzkpSpLwvH7oDFZYdqFCMe9lsNhMZFXqsNcSTpRg3+PBS4fF27+h1qew==
   /dtslint/4.0.6:
     dependencies:
-      '@definitelytyped/header-parser': 0.0.65
-      '@definitelytyped/typescript-versions': 0.0.65
-      '@definitelytyped/utils': 0.0.65
+      '@definitelytyped/header-parser': 0.0.72
+      '@definitelytyped/typescript-versions': 0.0.72
+      '@definitelytyped/utils': 0.0.72
       dts-critic: 3.3.4
       fs-extra: 6.0.1
       json-stable-stringify: 1.0.1

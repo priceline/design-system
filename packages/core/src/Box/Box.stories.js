@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 
@@ -69,7 +68,7 @@ export const BoxShadow = () => (
       <Box
         p={2}
         mb={'42px'}
-        color='blue'
+        color='primary'
         boxShadowSize={boxShadow}
         key={boxShadow}
       >
@@ -85,7 +84,7 @@ BoxShadow.story = {
 
 export const BackgroundColor = () => (
   <React.Fragment>
-    <Box p={3} color='white' bg='blue'>
+    <Box p={3} color='primary'>
       Hello
     </Box>
     <Box p={3} mt={2} color='primary'>
@@ -103,19 +102,19 @@ export const BackgroundColor = () => (
 export const Size = () => <Box p={3} color='secondary.base' size={200} />
 
 export const Width = () => (
-  <Box p={3} width={1 / 2} color='white' bg='blue'>
+  <Box p={3} width={1 / 2} color='primary'>
     Half Width
   </Box>
 )
 
 export const PixelWidth = () => (
-  <Box p={3} width={256} color='white' bg='blue'>
+  <Box p={3} width={256} color='primary'>
     256px width
   </Box>
 )
 
 export const VwWidth = () => (
-  <Box p={3} width='50vw' color='white' bg='blue'>
+  <Box p={3} width='50vw' color='primary'>
     50vw width
   </Box>
 )
@@ -126,22 +125,22 @@ VwWidth.story = {
 
 export const DirectionalPadding = () => (
   <Box p={3}>
-    <Box m={1} pt={3} color='white' bg='blue'>
+    <Box m={1} pt={3} color='primary'>
       Padding Top
     </Box>
-    <Box m={1} pr={3} color='white' bg='blue'>
+    <Box m={1} pr={3} color='primary'>
       Padding Right
     </Box>
-    <Box m={1} pb={3} color='white' bg='blue'>
+    <Box m={1} pb={3} color='primary'>
       Padding Bottom
     </Box>
-    <Box m={1} pl={3} color='white' bg='blue'>
+    <Box m={1} pl={3} color='primary'>
       Padding Left
     </Box>
-    <Box m={1} px={3} color='white' bg='blue'>
+    <Box m={1} px={3} color='primary'>
       Padding X-Axis
     </Box>
-    <Box m={1} py={3} color='white' bg='blue'>
+    <Box m={1} py={3} color='primary'>
       Padding Y-Axis
     </Box>
   </Box>
@@ -149,50 +148,23 @@ export const DirectionalPadding = () => (
 
 export const DirectionalMargin = () => (
   <Box p={3}>
-    <Box mt={3} color='white' bg='blue'>
+    <Box mt={3} color='primary'>
       Margin Top
     </Box>
-    <Box mr={3} color='white' bg='blue'>
+    <Box mr={3} color='primary'>
       Margin Right
     </Box>
-    <Box mb={3} color='white' bg='blue'>
+    <Box mb={3} color='primary'>
       Margin Bottom
     </Box>
-    <Box ml={3} color='white' bg='blue'>
+    <Box ml={3} color='primary'>
       Margin Left
     </Box>
-    <Box mx={3} color='white' bg='blue'>
+    <Box mx={3} color='primary'>
       Margin X-Axis
     </Box>
-    <Box my={3} color='white' bg='blue'>
+    <Box my={3} color='primary'>
       Margin Y-Axis
     </Box>
   </Box>
 )
-
-export const ThemeUserCaseColorText = () => (
-  <React.Fragment>
-    <Box p={3}>
-      <Box mt={3} color='text'>
-        color="text" w/o bg prop: retains the original "text" color from
-        original color set as backward compatible: expected style w. "text"
-        color and white background
-      </Box>
-      <Box mt={3} color='purple'>
-        color="purple" as none "text" color w/o bg prop
-      </Box>
-    </Box>
-    <Box p={5}>
-      <Box mt={3} color='text.lightest' bg='background.dark'>
-        Theme 1: color="text.lightest" value & bg="background.dark"
-      </Box>
-      <Box mt={3} color='text' bg='background.lightest'>
-        Theme 2: color="text" & "bg"="background.lightest"
-      </Box>
-    </Box>
-  </React.Fragment>
-)
-
-ThemeUserCaseColorText.story = {
-  name: 'Theme user case: color=text',
-}

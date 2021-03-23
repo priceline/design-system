@@ -21,7 +21,6 @@ import {
 } from 'styled-system'
 
 import {
-  deprecatedPropType,
   deprecatedColorValue,
   applyVariations,
   getPaletteColor,
@@ -100,7 +99,6 @@ Text.propTypes = {
   ...textStyle.propTypes,
   ...width.propTypes,
   ...zIndex.propTypes,
-  align: deprecatedPropType('textAlign'),
   bold: PropTypes.bool,
   caps: PropTypes.bool,
   color: deprecatedColorValue(),

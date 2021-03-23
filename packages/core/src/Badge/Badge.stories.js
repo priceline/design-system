@@ -34,7 +34,7 @@ export default {
   },
 }
 
-export const BadgeComponent = () => <Badge bg='lightGray'>badge</Badge>
+export const BadgeComponent = () => <Badge color='background.light'>badge</Badge>
 
 export const All = () => (
   <Cartesian
@@ -53,64 +53,44 @@ Default.story = {
   name: 'default',
 }
 
-export const Blue = () => <Badge bg='blue'>blue</Badge>
+export const Primary = () => <Badge color='primary'>primary</Badge>
 
-Blue.story = {
+Primary.story = {
   name: 'blue',
 }
 
-export const LightBlue = () => <Badge bg='lightBlue'>lightBlue</Badge>
+export const PrimaryLight= () => <Badge color='primary.light'>primary.light</Badge>
 
-LightBlue.story = {
-  name: 'lightBlue',
+PrimaryLight.story = {
+  name: 'primary.light',
 }
 
-export const Green = () => <Badge bg='green'>green</Badge>
+export const Secondary = () => <Badge color='secondary'>secondary</Badge>
 
-Green.story = {
-  name: 'green',
+Secondary.story = {
+  name: 'secondary',
 }
 
-export const LightGreen = () => <Badge bg='lightGreen'>lightGreen</Badge>
+export const SecondaryLight = () => <Badge color='secondary.light'>secondary.light</Badge>
 
-LightGreen.story = {
-  name: 'lightGreen',
+SecondaryLight.story = {
+  name: 'secondary.light',
 }
 
-export const Red = () => <Badge bg='red'>red</Badge>
+export const Error = () => <Badge color='error'>error</Badge>
 
-Red.story = {
-  name: 'red',
+Error.story = {
+  name: 'error',
 }
 
-export const LightRed = () => <Badge bg='lightRed'>lightRed</Badge>
+export const ErrorLight = () => <Badge color='error.light'>error.light</Badge>
 
-LightRed.story = {
-  name: 'lightRed',
+ErrorLight.story = {
+  name: 'error.light',
 }
 
-export const Orange = () => <Badge bg='orange'>orange</Badge>
+export const Alert = () => <Badge color='alert'>alert</Badge>
 
-Orange.story = {
-  name: 'orange',
-}
-
-export const TextCustom = () => (
-  <Badge bg='text' color='white'>
-    text (custom)
-  </Badge>
-)
-
-TextCustom.story = {
-  name: 'text (custom)',
-}
-
-export const LightBlueAndTextCustom = () => (
-  <Badge bg='lightBlue' color='text'>
-    lightBlue and text (custom)
-  </Badge>
-)
-
-LightBlueAndTextCustom.story = {
-  name: 'lightBlue and text (custom)',
+Alert.story = {
+  name: 'alert',
 }

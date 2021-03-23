@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import { width, space, themeGet } from 'styled-system'
 import {
-  deprecatedPropType,
   applySizes,
   applyVariations,
   getPaletteColor,
@@ -158,7 +157,6 @@ Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   ...width.propTypes,
   ...space.propTypes,
-  fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   disabled: PropTypes.bool,

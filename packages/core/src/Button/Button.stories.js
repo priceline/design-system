@@ -70,7 +70,6 @@ export const _Button = () => {
     display: 'select',
   })
   const disabled = boolean('Disabled?', false)
-  const fullWidth = boolean('Full Width?', false)
 
   return (
     <Catch>
@@ -80,7 +79,7 @@ export const _Button = () => {
   size='${size}'
   color='${color}'
   disabled={${disabled}}
-  width={${fullWidth ? 1 : null}}>
+  width={1}>
   BUTTON
 </Button>`}
         scope={{
@@ -102,7 +101,6 @@ export const TryIt = () => {
     display: 'multi-select',
   })
   const disabled = boolean('Disabled?', false)
-  const fullWidth = boolean('Full Width?', false)
 
   return (
     <Cartesian
@@ -112,7 +110,6 @@ export const TryIt = () => {
       size={size}
       color={color}
       disabled={disabled}
-      width={fullWidth ? 1 : null}
       onClick={action('Clicked button in Try It!')}
     >
       Try This Button!

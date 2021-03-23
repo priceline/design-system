@@ -6,7 +6,6 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const arrowShadow = (props) => {
@@ -97,7 +96,6 @@ const TooltipContent = styled(Box)`
 
 const propTypes = {
   children: PropTypes.any.isRequired,
-  bg: deprecatedPropType('color'),
   color: deprecatedColorValue(),
   bottom: PropTypes.bool,
   top: PropTypes.bool,

@@ -55,7 +55,6 @@ export {
   applySizes,
   borders,
   color,
-  deprecatedPropType,
   getContrastRatio,
   getPaletteColor,
   getTextColorOn,

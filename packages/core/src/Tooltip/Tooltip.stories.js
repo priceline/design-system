@@ -13,13 +13,13 @@ export default {
 
 export const WithoutAnchors = () => (
   <Box mt={5} width={500}>
-    <Tooltip bg='blue' color='white' top left>
+    <Tooltip color='primary' top left>
       left tooltip
     </Tooltip>
-    <Tooltip bg='black' color='white' top center>
+    <Tooltip color='text.lightest' top center>
       centered tooltip
     </Tooltip>
-    <Tooltip bg='red' color='white' top right>
+    <Tooltip color='error' top right>
       right tooltip
     </Tooltip>
     <br />

@@ -17,7 +17,6 @@ import {
   applyVariations,
   color,
   deprecatedColorValue,
-  deprecatedPropType,
   boxShadow,
 } from '../utils'
 
@@ -42,7 +41,6 @@ Box.propTypes = {
   ...space.propTypes,
   ...textAlign.propTypes,
   ...width.propTypes,
-  bg: deprecatedPropType('color'),
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   color: deprecatedColorValue(),
 }

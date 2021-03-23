@@ -11,7 +11,6 @@ import {
   hasPaletteColor,
   color,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
@@ -103,7 +102,6 @@ const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
 
 Flag.propTypes = {
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
   ...space.propTypes,
 }
 
