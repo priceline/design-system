@@ -8,11 +8,7 @@ import {
 
 import { Box } from '../Box'
 
-import {
-  applyVariations,
-  deprecatedPropType,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, deprecatedColorValue } from '../utils'
 import propTypes from '@styled-system/prop-types'
 import pick from 'lodash.pick'
 
@@ -33,16 +29,12 @@ Flex.propTypes = {
   ...propTypes.space,
   ...pick(propTypes.layout, ['width']),
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
   ...pick(propTypes.flexbox, [
     'alignItems',
     'justifyContent',
     'flexWrap',
     'flexDirection',
   ]),
-  wrap: deprecatedPropType('flexWrap'),
-  align: deprecatedPropType('alignItems'),
-  justify: deprecatedPropType('justifyContent'),
 }
 
 Flex.displayName = 'Flex'

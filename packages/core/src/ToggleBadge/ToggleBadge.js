@@ -7,7 +7,6 @@ import {
   applyVariations,
   getPaletteColor,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const ToggleBadge = styled.button`
@@ -19,12 +18,12 @@ const ToggleBadge = styled.button`
   cursor: pointer;
   background-color: ${(props) =>
     props.selected
-      ? getPaletteColor(props.bg || props.color, 'light')(props)
+      ? getPaletteColor(props.color, 'light')(props)
       : props.unSelectedBg};
   color: ${getPaletteColor('base')};
   &:hover {
     background-color: ${(props) =>
-      getPaletteColor(props.bg || props.color, 'light')(props)};
+      getPaletteColor(props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
   ${space} ${fontSize};
@@ -37,7 +36,6 @@ ToggleBadge.propTypes = {
   ...propTypes.space,
   ...pick(propTypes.typography, ['fontSize']),
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
 }
 
 ToggleBadge.defaultProps = {

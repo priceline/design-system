@@ -1,12 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import PropTypes from 'prop-types'
 import pick from 'lodash.pick'
 import propTypes from '@styled-system/prop-types'
 import { Transition } from 'react-transition-group'
 import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
-import { Box, CloseButton, deprecatedPropType, Flex } from 'pcln-design-system'
+import { Box, CloseButton, Flex, getPaletteColor } from 'pcln-design-system'
 
 const OVERLAY_ANIMATION = (transitionState) => `
   opacity: 0;
@@ -145,9 +145,9 @@ const DialogInnerWrapper = styled(Flex)`
 const Modal = ({
   ariaLabel,
   ariaLabelledBy,
-  bg,
   children,
   className,
+  color,
   dialogAnimation,
   disableCloseButton,
   enableOverflow,
@@ -160,6 +160,7 @@ const Modal = ({
   overlayAnimation,
   timeout,
   verticalAlignment,
+  theme,
   width,
   zIndex,
 }) => {
@@ -189,7 +190,7 @@ const Modal = ({
             >
               <Dialog
                 width={fullScreen ? 1 : width}
-                bg={bg}
+                bg={getPaletteColor(color)({ theme })}
                 height={dialogHeight}
                 transitionstate={state}
                 className={className}
@@ -228,7 +229,7 @@ const Modal = ({
 }
 
 Modal.defaultProps = {
-  bg: 'white',
+  color: 'background.lightest',
   dialogAnimation: null,
   disableCloseButton: false,
   enableOverflow: false,
@@ -252,7 +253,7 @@ Modal.propTypes = {
   ...pick(propTypes.layout, ['height', 'width']),
   ariaLabel: validateAriaProps,
   ariaLabelledBy: validateAriaProps,
-  bg: deprecatedPropType('color'),
+  color: PropTypes.string,
   className: PropTypes.string,
   dialogAnimation: PropTypes.func,
   disableCloseButton: PropTypes.bool,
@@ -270,4 +271,4 @@ Modal.propTypes = {
   zIndex: PropTypes.number,
 }
 
-export default Modal
+export default withTheme(Modal)

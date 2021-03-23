@@ -22,7 +22,6 @@ import propTypes from '@styled-system/prop-types'
 import pick from 'lodash.pick'
 
 import {
-  deprecatedPropType,
   deprecatedColorValue,
   applyVariations,
   getPaletteColor,
@@ -52,10 +51,6 @@ export const textShadow = (props) => {
 const textProps = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
-  ${(props) =>
-    props.bg
-      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-      : ''}
 
   ${display}
   ${height}
@@ -120,7 +115,6 @@ Text.propTypes = {
   ]),
   ...pick(propTypes.position, ['zIndex']),
   ...propTypes.space,
-  align: deprecatedPropType('textAlign'),
   bold: PropTypes.bool,
   caps: PropTypes.bool,
   color: deprecatedColorValue(),
