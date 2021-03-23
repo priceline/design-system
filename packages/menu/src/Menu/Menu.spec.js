@@ -70,15 +70,15 @@ describe('Menu', () => {
     const onItemOneClick = jest.fn()
     const onItemTwoClick = jest.fn()
 
-    const Input = <input placeholder='Click me!' /> // eslint-disable-line jsx-a11y/control-has-associated-label
+    const Button = <button>Click me!</button>
     render(
-      <Menu id='menu' idx='1' clickableNode={Input}>
+      <Menu id='menu' idx='1' buttonNode={Button}>
         <MenuItem onClick={onItemOneClick}>Item One</MenuItem>
         <MenuItem onClick={onItemTwoClick}>Item Two</MenuItem>
       </Menu>
     )
 
-    fireEvent.click(screen.getByPlaceholderText('Click me!'))
+    fireEvent.click(screen.getByText('Click me!'))
     expect(onItemOneClick).toHaveBeenCalledTimes(0)
     fireEvent.click(screen.getByText('Item One'))
     expect(onItemOneClick).toHaveBeenCalledTimes(1)

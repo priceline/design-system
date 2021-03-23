@@ -1,7 +1,7 @@
 /* eslint-disable sonarjs/no-identical-functions */
 
 import React, { useState } from 'react'
-import { ButtonChip, Flex, Input, Text } from 'pcln-design-system'
+import { ButtonChip, Flex, Text } from 'pcln-design-system'
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
 import { listItems, currencies } from '../../test/mocks/Menu'
@@ -156,28 +156,6 @@ export const ButtonProps = () => {
       </Menu>
       <Text>Example</Text>
     </Flex>
-  )
-}
-
-export const InputAsPopoverButton = () => {
-  const [currencyCode, setCurrencyCode] = useState('USD')
-  const buttonNode = <Input value={currencyCode} />
-
-  return (
-    <Menu idx='currency-selector' buttonNode={buttonNode} size='twoColumns'>
-      {currencies.map((currency, index) => {
-        const selected = currencyCode === currency.code
-        const onClick = () => setCurrencyCode(currency.code)
-        return (
-          <MenuItem key={index} selected={selected} onClick={onClick}>
-            <Text regular width={32} textAlign='center' mr={3}>
-              {currency.symbol}
-            </Text>
-            <Text regular>{currency.label}</Text>
-          </MenuItem>
-        )
-      })}
-    </Menu>
   )
 }
 
