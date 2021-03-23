@@ -13,8 +13,9 @@ const LinkButton = styled(Button)`
 
 function Menu({
   id,
-  buttonText,
+  buttonNode,
   buttonProps,
+  buttonText,
   color,
   width,
   height,
@@ -46,6 +47,22 @@ function Menu({
     }
   }, [])
 
+  const ClickableNode = (props) =>
+    buttonNode ? (
+      React.cloneElement(buttonNode, { onKeyDown, ...props })
+    ) : (
+      <LinkButton
+        variation='link'
+        {...props}
+        p={2}
+        {...buttonProps}
+        onKeyDown={onKeyDown}
+      >
+        {buttonText}
+        <ChevronDown ml={1} />
+      </LinkButton>
+    )
+
   return (
     <Popover
       hideArrow
@@ -57,10 +74,7 @@ function Menu({
       renderContent={MenuContent}
       {...props}
     >
-      <LinkButton variation='link' p={2} {...buttonProps} onKeyDown={onKeyDown}>
-        {buttonText}
-        <ChevronDown ml={1} />
-      </LinkButton>
+      <ClickableNode />
     </Popover>
   )
 }
@@ -69,8 +83,9 @@ Menu.displayName = 'Menu'
 
 Menu.propTypes = {
   id: PropTypes.string,
-  buttonText: PropTypes.node,
+  buttonNode: PropTypes.node,
   buttonProps: PropTypes.shape(Button.propTypes),
+  buttonText: PropTypes.node,
   color: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.number,

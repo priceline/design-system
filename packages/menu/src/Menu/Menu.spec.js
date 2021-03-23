@@ -65,4 +65,22 @@ describe('Menu', () => {
     })
     expect(screen.queryByText('Item One')).not.toBeInTheDocument()
   })
+
+  it('renders with an input for clickable node', () => {
+    const onItemOneClick = jest.fn()
+    const onItemTwoClick = jest.fn()
+
+    const Input = <input placeholder='Click me!' /> // eslint-disable-line jsx-a11y/control-has-associated-label
+    render(
+      <Menu id='menu' idx='1' clickableNode={Input}>
+        <MenuItem onClick={onItemOneClick}>Item One</MenuItem>
+        <MenuItem onClick={onItemTwoClick}>Item Two</MenuItem>
+      </Menu>
+    )
+
+    fireEvent.click(screen.getByPlaceholderText('Click me!'))
+    expect(onItemOneClick).toHaveBeenCalledTimes(0)
+    fireEvent.click(screen.getByText('Item One'))
+    expect(onItemOneClick).toHaveBeenCalledTimes(1)
+  })
 })

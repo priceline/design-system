@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Allow any clickable component for Menu",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-menu",
+  "email": "james.stewart@priceline.com"
+}
