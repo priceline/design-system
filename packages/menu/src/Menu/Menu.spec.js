@@ -65,4 +65,22 @@ describe('Menu', () => {
     })
     expect(screen.queryByText('Item One')).not.toBeInTheDocument()
   })
+
+  it('renders with an input for clickable node', () => {
+    const onItemOneClick = jest.fn()
+    const onItemTwoClick = jest.fn()
+
+    const Button = <button>Click me!</button>
+    render(
+      <Menu id='menu' idx='1' buttonNode={Button}>
+        <MenuItem onClick={onItemOneClick}>Item One</MenuItem>
+        <MenuItem onClick={onItemTwoClick}>Item Two</MenuItem>
+      </Menu>
+    )
+
+    fireEvent.click(screen.getByText('Click me!'))
+    expect(onItemOneClick).toHaveBeenCalledTimes(0)
+    fireEvent.click(screen.getByText('Item One'))
+    expect(onItemOneClick).toHaveBeenCalledTimes(1)
+  })
 })
