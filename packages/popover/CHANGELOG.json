@@ -2,6 +2,24 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.2.5",
+      "tag": "pcln-popover_v4.2.5",
+      "date": "Tue, 23 Mar 2021 18:57:24 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.7.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-slider\" to `4.0.11`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.7.0` to `^4.7.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.4",
       "tag": "pcln-popover_v4.2.4",
       "date": "Thu, 18 Mar 2021 18:51:55 GMT",

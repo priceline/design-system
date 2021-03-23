@@ -2,6 +2,24 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.7.1",
+      "tag": "pcln-design-system_v4.7.1",
+      "date": "Tue, 23 Mar 2021 18:57:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix link button variations using size prop"
+          },
+          {
+            "comment": "Update Password Input Default Requirements"
+          },
+          {
+            "comment": "Update pcln-icons dependency"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.7.0",
       "tag": "pcln-design-system_v4.7.0",
       "date": "Thu, 18 Mar 2021 18:51:55 GMT",
