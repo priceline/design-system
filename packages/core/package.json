@@ -73,7 +73,7 @@
     "deepmerge": "^4.2.2",
     "hoist-non-react-statics": "^3.3.2",
     "moize": "^5.4.7",
-    "pcln-icons": "4.0.1-holiday-2020.1",
+    "pcln-icons": "^4.1.1",
     "prop-types": "^15.7.2",
     "styled-system": "^4.2.4"
   },
