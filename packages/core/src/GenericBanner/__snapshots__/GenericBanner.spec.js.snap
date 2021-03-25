@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GenericBanner renders 1`] = `
+.c1 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c6 {
   text-align: left;
   width: 100%;
@@ -57,12 +63,6 @@ exports[`GenericBanner renders 1`] = `
 
 .c5 {
   outline: none;
-}
-
-.c1 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
 }
 
 .c0 {
