@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update focus style for Chips",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "ryan.hunt@priceline.com"
+}
