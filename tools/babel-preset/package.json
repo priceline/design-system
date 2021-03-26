@@ -37,7 +37,8 @@
     "babel-plugin-styled-components": "^1.11.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js": "^3.6.5",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "@styled-system/theme-get": "^5.1.2"
   },
   "devDependencies": {
     "@priceline/eslint-config": "workspace:*",

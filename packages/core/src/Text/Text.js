@@ -15,10 +15,10 @@ import {
   space,
   textAlign,
   textStyle,
-  themeGet,
   width,
   zIndex,
 } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 
 import {
   deprecatedPropType,

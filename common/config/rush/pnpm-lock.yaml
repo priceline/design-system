@@ -5,6 +5,7 @@ importers:
     dependencies:
       '@mdx-js/mdx': 0.15.7
       '@mdx-js/tag': 0.15.6_react@16.14.0
+      '@styled-system/theme-get': 5.1.2
       is-absolute-url: 2.1.0
       mdx-docs: 1.0.0-9_30204570ffe095a5a2e38b7f5ef71402
       pcln-design-system: 'link:../../packages/core'
@@ -35,6 +36,7 @@ importers:
       '@mdx-js/tag': ^0.15.0
       '@priceline/eslint-config': 'workspace:*'
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       babel-loader: ^8.1.0
       babel-plugin-styled-components: ^1.11.1
       eslint: ^7.16.0
@@ -56,6 +58,8 @@ importers:
       remark-slug: ^5.1.0
       styled-components: ^4.4.1
   ../../apps/storybook:
+    dependencies:
+      '@styled-system/theme-get': 5.1.2
     devDependencies:
       '@compositor/kit': 1.0.47_06677a59d5b1ed295fa969e19a0946d4
       '@priceline/babel-preset': 'link:../../tools/babel-preset'
@@ -88,6 +92,7 @@ importers:
       '@storybook/addon-knobs': ^5.3.21
       '@storybook/addon-viewport': ^5.3.21
       '@storybook/react': ^5.3.21
+      '@styled-system/theme-get': ^5.1.2
       babel-loader: ^8.1.0
       babel-plugin-react-docgen: 4.1.0
       chromatic: ^5.2.0
@@ -100,9 +105,10 @@ importers:
       styled-components: ^4.4.1
   ../../packages/autocomplete:
     dependencies:
+      '@styled-system/theme-get': 5.1.2
       downshift: 3.4.8_react@16.14.0
       prop-types: 15.7.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.12.10_@babel+core@7.12.10
       '@babel/core': 7.12.10
@@ -133,6 +139,7 @@ importers:
       '@priceline/eslint-config': 'workspace:*'
       '@reach/component-component': ^0.7.0
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
       cat-names: ^2.0.0
@@ -150,17 +157,18 @@ importers:
       react-dom: ^16.13.1
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       us: ^2.0.0
   ../../packages/core:
     dependencies:
+      '@styled-system/theme-get': 5.1.2
       '@types/styled-system': 4.2.2
       deepmerge: 4.2.2
       hoist-non-react-statics: 3.3.2
       moize: 5.4.7
       pcln-icons: 4.1.1_f96fccf55dd8c298826112286576f1f4
       prop-types: 15.7.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.12.10
       '@compositor/kit': 1.0.47_06677a59d5b1ed295fa969e19a0946d4
@@ -195,6 +203,7 @@ importers:
       '@storybook/addon-actions': ^5.3.21
       '@storybook/addon-info': ^5.3.21
       '@storybook/react': ^5.3.21
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
       '@testing-library/react-hooks': ^3.4.2
@@ -216,13 +225,14 @@ importers:
       react-test-renderer: ^16.13.1
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       stylis: ^3.5.4
   ../../packages/icons:
     dependencies:
+      '@styled-system/theme-get': 5.1.2
       lodash.upperfirst: 4.3.1
       prop-types: 15.7.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.12.10
       '@babel/plugin-syntax-jsx': 7.12.1
@@ -250,6 +260,7 @@ importers:
       '@priceline/babel-preset': 'workspace:*'
       '@priceline/eslint-config': 'workspace:*'
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@svgr/cli': ^4.3.3
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
@@ -267,8 +278,10 @@ importers:
       react-test-renderer: ^16.13.1
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/menu:
+    dependencies:
+      '@styled-system/theme-get': 5.1.2
     devDependencies:
       '@babel/cli': 7.12.10
       '@priceline/babel-preset': 'link:../../tools/babel-preset'
@@ -290,12 +303,13 @@ importers:
       react-dom: 16.14.0_react@16.14.0
       rimraf: 3.0.2
       styled-components: 4.4.1_react-dom@16.14.0+react@16.14.0
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     specifiers:
       '@babel/cli': ^7.11.6
       '@priceline/babel-preset': 'workspace:*'
       '@priceline/eslint-config': 'workspace:*'
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
       cross-env: ^7.0.2
@@ -312,10 +326,11 @@ importers:
       react-dom: ^16.13.1
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/modal:
     dependencies:
       '@reach/dialog': 0.7.4_react-dom@16.14.0+react@16.14.0
+      '@styled-system/theme-get': 5.1.2
       react-transition-group: 4.4.1_react-dom@16.14.0+react@16.14.0
     devDependencies:
       '@babel/cli': 7.12.10
@@ -336,13 +351,14 @@ importers:
       react-dom: 16.14.0_react@16.14.0
       rimraf: 3.0.2
       styled-components: 4.4.1_react-dom@16.14.0+react@16.14.0
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     specifiers:
       '@babel/cli': ^7.11.6
       '@priceline/babel-preset': 'workspace:*'
       '@priceline/eslint-config': 'workspace:*'
       '@reach/dialog': ^0.7.0
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
       cross-env: ^7.0.2
@@ -358,9 +374,10 @@ importers:
       react-transition-group: ^4.4.1
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/popover:
     dependencies:
+      '@styled-system/theme-get': 5.1.2
       react-popper: 1.3.7_react@16.14.0
     devDependencies:
       '@babel/cli': 7.12.10
@@ -385,13 +402,14 @@ importers:
       react-focus-lock: 2.5.0_react@16.14.0
       rimraf: 3.0.2
       styled-components: 4.4.1_react-dom@16.14.0+react@16.14.0
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     specifiers:
       '@babel/cli': ^7.11.6
       '@priceline/babel-preset': 'workspace:*'
       '@priceline/eslint-config': 'workspace:*'
       '@reach/component-component': ^0.7.0
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
       cross-env: ^7.0.2
@@ -410,15 +428,16 @@ importers:
       react-popper: ^1.3.3
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/slider:
     dependencies:
+      '@styled-system/theme-get': 5.1.2
       classnames: 2.2.6
       prop-types: 15.7.2
       rc-tooltip: 3.7.3
       rc-util: 4.21.1
       shallowequal: 1.1.0
-      styled-system: 4.2.4
+      styled-system: 5.1.5
       warning: 4.0.3
     devDependencies:
       '@babel/cli': 7.12.10_@babel+core@7.12.10
@@ -451,6 +470,7 @@ importers:
       '@priceline/eslint-config': 'workspace:*'
       '@reach/component-component': ^0.7.0
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.4
       '@testing-library/react': ^11.0.4
       classnames: ^2.2.5
@@ -473,7 +493,7 @@ importers:
       rimraf: ^3.0.2
       shallowequal: ^1.0.1
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       warning: ^4.0.3
   ../../tools/babel-preset:
     dependencies:
@@ -486,6 +506,7 @@ importers:
       '@babel/preset-env': 7.12.11
       '@babel/preset-react': 7.12.10
       '@babel/preset-typescript': 7.12.7
+      '@styled-system/theme-get': 5.1.2
       babel-plugin-date-fns: 2.0.0
       babel-plugin-dynamic-import-node: 2.3.3
       babel-plugin-lodash: 3.3.4
@@ -511,6 +532,7 @@ importers:
       '@babel/preset-typescript': ^7.10.4
       '@priceline/eslint-config': 'workspace:*'
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       babel-plugin-date-fns: ^2.0.0
       babel-plugin-dynamic-import-node: ^2.3.3
       babel-plugin-lodash: ^3.3.4
@@ -525,6 +547,7 @@ importers:
     dependencies:
       '@microsoft/rush-lib': 5.35.2
       '@priceline/eslint-config': 'link:../eslint-config'
+      '@styled-system/theme-get': 5.1.2
       '@types/yargs': 15.0.12
       eslint: 7.17.0
       ts-node: 9.1.1_typescript@4.1.3
@@ -536,6 +559,7 @@ importers:
       '@microsoft/rush-lib': ^5.35.2
       '@priceline/eslint-config': 'workspace:*'
       '@rushstack/eslint-config': ^2.3.1
+      '@styled-system/theme-get': ^5.1.2
       '@types/yargs': ^15.0.8
       eslint: ^7.16.0
       ts-node: ^9.0.0
@@ -544,6 +568,7 @@ importers:
   ../../tools/eslint-config:
     dependencies:
       '@rushstack/eslint-patch': 1.0.6
+      '@styled-system/theme-get': 5.1.2
       '@typescript-eslint/eslint-plugin': 4.12.0_343306961d6b60bcf6bd09d193a54461
       '@typescript-eslint/parser': 4.12.0_eslint@7.17.0+typescript@4.1.3
       babel-eslint: 10.1.0_eslint@7.17.0
@@ -563,6 +588,7 @@ importers:
       typescript: 4.1.3
     specifiers:
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/theme-get': ^5.1.2
       '@typescript-eslint/eslint-plugin': ^4.8.2
       '@typescript-eslint/parser': ^4.8.2
       babel-eslint: ^10.1.0
@@ -581,6 +607,7 @@ importers:
       typescript: ^4.0.2
   ../../tools/types:
     dependencies:
+      '@styled-system/theme-get': 5.1.2
       '@types/react': 16.14.2
       '@types/styled-system': 4.2.2
     devDependencies:
@@ -594,6 +621,7 @@ importers:
     specifiers:
       '@priceline/eslint-config': 'workspace:*'
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/theme-get': ^5.1.2
       '@types/react': ^16.9.49
       '@types/styled-system': ^4.2.2
       csstype: ^2.6.7
@@ -5273,6 +5301,76 @@ packages:
     dev: true
     resolution:
       integrity: sha512-OUf8JYY9LN+XfzLSZE6KtboITGDL6C8Z0W9QOXM5LJwFLv4PkANK/f9qsB5vVHFm7vhoO96butFzs6SjTKhxkw==
+  /@styled-system/background/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-jtwH2C/U6ssuGSvwTN3ri/IyjdHb8W9X/g8Y0JLcrH02G+BW3OS8kZdHphF1/YyRklnrKrBT2ngwGUK6aqqV3A==
+  /@styled-system/border/5.1.5:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-JvddhNrnhGigtzWRCVuAHepniyVi6hBlimxWDVAdcTuk7aRn9BYJUwfHslURtwYFsF5FoEs8Zmr1oZq2M1AP0A==
+  /@styled-system/color/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-1kCkeKDZkt4GYkuFNKc7vJQMcOmTl3bJY3YBUs7fCNM6mMYJeT1pViQ2LwBSBJytj3AB0o4IdLBoepgSgGl5MA==
+  /@styled-system/core/5.1.2:
+    dependencies:
+      object-assign: 4.1.1
+    resolution:
+      integrity: sha512-XclBDdNIy7OPOsN4HBsawG2eiWfCcuFt6gxKn1x4QfMIgeO6TOlA2pZZ5GWZtIhCUqEPTgIBta6JXsGyCkLBYw==
+  /@styled-system/css/5.1.5:
+    resolution:
+      integrity: sha512-XkORZdS5kypzcBotAMPBoeckDs9aSZVkvrAlq5K3xP8IMAUek+x2O4NtwoSgkYkWWzVBu6DGdFZLR790QWGG+A==
+  /@styled-system/flexbox/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-6hHV52+eUk654Y1J2v77B8iLeBNtc+SA3R4necsu2VVinSD7+XY5PCCEzBFaWs42dtOEDIa2lMrgL0YBC01mDQ==
+  /@styled-system/grid/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-K3YiV1KyHHzgdNuNlaw8oW2ktMuGga99o1e/NAfTEi5Zsa7JXxzwEnVSDSBdJC+z6R8WYTCYRQC6bkVFcvdTeg==
+  /@styled-system/layout/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-wUhkMBqSeacPFhoE9S6UF3fsMEKFv91gF4AdDWp0Aym1yeMPpqz9l9qS/6vjSsDPF7zOb5cOKC3tcKKOMuDCPw==
+  /@styled-system/position/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-60IZfMXEOOZe3l1mCu6sj/2NAyUmES2kR9Kzp7s2D3P4qKsZWxD1Se1+wJvevb+1TP+ZMkGPEYYXRyU8M1aF5A==
+  /@styled-system/shadow/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-wqniqYb7XuZM7K7C0d1Euxc4eGtqEe/lvM0WjuAFsQVImiq6KGT7s7is+0bNI8O4Dwg27jyu4Lfqo/oIQXNzAg==
+  /@styled-system/space/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-+zzYpR8uvfhcAbaPXhH8QgDAV//flxqxSjHiS9cDFQQUSznXMQmxJegbhcdEF7/eNnJgHeIXv1jmny78kipgBA==
+  /@styled-system/theme-get/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    dev: false
+    resolution:
+      integrity: sha512-afAYdRqrKfNIbVgmn/2Qet1HabxmpRnzhFwttbGr6F/mJ4RDS/Cmn+KHwHvNXangQsWw/5TfjpWV+rgcqqIcJQ==
+  /@styled-system/typography/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-BxbVUnN8N7hJ4aaPOd7wEsudeT7CxarR+2hns8XCX1zp0DFfbWw4xYa/olA0oQaqx7F1hzDg+eRaGzAJbF+jOg==
+  /@styled-system/variant/5.1.5:
+    dependencies:
+      '@styled-system/core': 5.1.2
+      '@styled-system/css': 5.1.5
+    resolution:
+      integrity: sha512-Yn8hXAFoWIro8+Q5J8YJd/mP85Teiut3fsGVR9CAxwgNfIAiqlYxsk5iHU7VHJks/0KjL4ATSjmbtCDC/4l1qw==
   /@svgr/babel-plugin-add-jsx-attribute/4.2.0:
     dev: true
     engines:
@@ -11122,7 +11220,7 @@ packages:
       react: '>=0.14.9'
     resolution:
       integrity: sha512-dZL3iNL/LbpHNzUQAaVq/eTD1ocnGKKjbAl/848Q0KEp6t81LJbS37w3f93oD6gqqAnjdgM7Use36qZSipHXBw==
-  /dts-critic/3.3.4:
+  /dts-critic/3.3.6:
     dependencies:
       '@definitelytyped/header-parser': 0.0.73
       command-exists: 1.2.9
@@ -11136,13 +11234,13 @@ packages:
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-OjLTrSBCFbi1tDAiOXcP7G20W3HI3eIzkpSpLwvH7oDFZYdqFCMe9lsNhMZFXqsNcSTpRg3+PBS4fF27+h1qew==
+      integrity: sha512-teL396KXkhkLsHt9lOG1NYemAv184uiOIQufrvhu1g+83ylUN8QjGZat784Ke4p2A4k0XHStD8NilbwYDGnNRA==
   /dtslint/4.0.6:
     dependencies:
       '@definitelytyped/header-parser': 0.0.73
       '@definitelytyped/typescript-versions': 0.0.73
       '@definitelytyped/utils': 0.0.73
-      dts-critic: 3.3.4
+      dts-critic: 3.3.6
       fs-extra: 6.0.1
       json-stable-stringify: 1.0.1
       strip-json-comments: 2.0.1
@@ -23474,6 +23572,23 @@ packages:
       prop-types: 15.7.2
     resolution:
       integrity: sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==
+  /styled-system/5.1.5:
+    dependencies:
+      '@styled-system/background': 5.1.2
+      '@styled-system/border': 5.1.5
+      '@styled-system/color': 5.1.2
+      '@styled-system/core': 5.1.2
+      '@styled-system/flexbox': 5.1.2
+      '@styled-system/grid': 5.1.2
+      '@styled-system/layout': 5.1.2
+      '@styled-system/position': 5.1.2
+      '@styled-system/shadow': 5.1.2
+      '@styled-system/space': 5.1.2
+      '@styled-system/typography': 5.1.2
+      '@styled-system/variant': 5.1.5
+      object-assign: 4.1.1
+    resolution:
+      integrity: sha512-7VoD0o2R3RKzOzPK0jYrVnS8iJdfkKsQJNiLRDjikOpQVqQHns/DXWaPZOH4tIKkhAT7I6wIsy9FWTWh2X3q+A==
   /stylehacks/4.0.3:
     dependencies:
       browserslist: 4.12.0

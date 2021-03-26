@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, fontSize, themeGet } from 'styled-system'
+import { space, fontSize } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 import PropTypes from 'prop-types'
 import { Text } from '../Text'
 import {

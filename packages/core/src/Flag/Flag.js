@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
-import { space, themeGet } from 'styled-system'
+import { space } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 
 import { Flex } from '../Flex'
 import { Hide } from '../Hide'

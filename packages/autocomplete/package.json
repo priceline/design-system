@@ -28,7 +28,8 @@
   "dependencies": {
     "downshift": "^3.2.6",
     "prop-types": "^15.7.2",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
