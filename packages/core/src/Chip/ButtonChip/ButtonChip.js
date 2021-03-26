@@ -18,7 +18,6 @@ const ChipButton = styled(Button)`
   &:focus > ${ChipContentWrapper} {
     box-shadow: 0 0 0 1px ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
-    background-color: ${getPaletteColor('light')};
   }
 `
 
