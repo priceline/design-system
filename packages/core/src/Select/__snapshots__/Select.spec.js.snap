@@ -48,10 +48,10 @@ exports[`Select renders 1`] = `
   border-style: solid;
   border-color: #c0cad5;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font-size: 16px;
 }
 
@@ -63,6 +63,10 @@ exports[`Select renders 1`] = `
 
 .c2::-ms-expand {
   display: none;
+}
+
+@media screen and (min-width:32em) {
+
 }
 
 @media screen and (min-width:40em) {

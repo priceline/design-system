@@ -14,10 +14,12 @@ import {
   space,
   textAlign,
   textStyle,
-  themeGet,
   width,
   zIndex,
 } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 
 import {
   deprecatedPropType,
@@ -108,21 +110,16 @@ const Strike = styled.s.attrs(({ align, ...props }) => ({
 Text.displayName = 'Text'
 
 Text.propTypes = {
-  ...display.propTypes,
-  ...fontSize.propTypes,
-  ...fontWeight.propTypes,
-  ...height.propTypes,
-  ...lineHeight.propTypes,
-  ...maxHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...minHeight.propTypes,
-  ...minWidth.propTypes,
-  ...overflow.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textStyle.propTypes,
-  ...width.propTypes,
-  ...zIndex.propTypes,
+  ...propTypes.layout,
+  ...pick(propTypes.typography, [
+    'fontSize',
+    'fontWeight',
+    'lineHeight',
+    'textAlign',
+    'textStyle',
+  ]),
+  ...pick(propTypes.position, ['zIndex']),
+  ...propTypes.space,
   align: deprecatedPropType('textAlign'),
   bold: PropTypes.bool,
   caps: PropTypes.bool,

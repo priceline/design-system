@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import {
   applyVariations,
   getPaletteColor,
@@ -32,8 +34,8 @@ ToggleBadge.displayName = 'ToggleBadge'
 
 ToggleBadge.propTypes = {
   selected: PropTypes.bool,
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
 }

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import pick from 'lodash.pick'
 import {
   display,
   height,
@@ -12,6 +13,7 @@ import {
   textAlign,
   width,
 } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 
 import {
   applyVariations,
@@ -33,15 +35,9 @@ const Box = styled.div`
 Box.displayName = 'Box'
 
 Box.propTypes = {
-  ...display.propTypes,
-  ...maxHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...minHeight.propTypes,
-  ...minWidth.propTypes,
-  ...size.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...width.propTypes,
+  ...propTypes.layout,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['textAlign']),
   bg: deprecatedPropType('color'),
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   color: deprecatedColorValue(),

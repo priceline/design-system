@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { space, fontSize, fontWeight, width } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 import {
   applyVariations,
   getPaletteColor,
@@ -42,11 +44,10 @@ const Label = styled.label`
 `
 
 Label.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize', 'fontWeight']),
+  ...pick(propTypes.layout, ['width']),
   color: deprecatedColorValue(),
-  ...fontWeight.propTypes,
-  ...width.propTypes,
 }
 
 Label.defaultProps = {

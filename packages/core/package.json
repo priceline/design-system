@@ -73,7 +73,11 @@
     "moize": "^6.0.1",
     "pcln-icons": "^4.1.1",
     "prop-types": "^15.7.2",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5",
+    "@styled-system/prop-types": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2",
+    "lodash.pick": "^4.4.0",
+    "lodash.omit": "^4.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",

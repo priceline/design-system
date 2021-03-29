@@ -2,9 +2,9 @@
 
 exports[`Tooltip bottom center 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
 }
@@ -71,9 +71,9 @@ exports[`Tooltip bottom center 1`] = `
 
 exports[`Tooltip bottom left 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
 }
@@ -135,9 +135,9 @@ exports[`Tooltip bottom left 1`] = `
 
 exports[`Tooltip bottom right 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
 }
@@ -200,9 +200,9 @@ exports[`Tooltip bottom right 1`] = `
 
 exports[`Tooltip renders 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #fff;
   color: #001833;
 }
@@ -264,9 +264,9 @@ exports[`Tooltip renders 1`] = `
 
 exports[`Tooltip top center 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #0068EF;
   color: #fff;
 }
@@ -333,9 +333,9 @@ exports[`Tooltip top center 1`] = `
 
 exports[`Tooltip top left 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #0068EF;
   color: #fff;
 }
@@ -397,9 +397,9 @@ exports[`Tooltip top left 1`] = `
 
 exports[`Tooltip top right 1`] = `
 .c0 {
-  margin-top: 8px;
-  margin-bottom: 16px;
   padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #c00;
   color: #fff;
 }

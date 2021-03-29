@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, fontSize } from 'styled-system'
+import { space, fontSize } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
+import { themeGet } from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,
@@ -74,8 +77,8 @@ const Stamp = styled.div`
 Stamp.displayName = 'Stamp'
 
 Stamp.propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.typography, ['fontSize']),
   size: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(sizes)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),

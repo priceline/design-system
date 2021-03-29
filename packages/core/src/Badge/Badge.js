@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space } from 'styled-system'
+import { space } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import { themeGet } from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,
@@ -78,7 +80,7 @@ const Badge = styled.div`
 Badge.displayName = 'Badge'
 
 Badge.propTypes = {
-  ...space.propTypes,
+  ...propTypes.space,
   size: PropTypes.oneOf(Object.keys(sizes)),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),

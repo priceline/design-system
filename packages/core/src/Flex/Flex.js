@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 import {
-  space,
-  width,
   alignItems,
   justifyContent,
   flexWrap,
@@ -15,6 +13,8 @@ import {
   deprecatedPropType,
   deprecatedColorValue,
 } from '../utils'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
 
 const Flex = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
@@ -30,14 +30,16 @@ const Flex = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
 `
 
 Flex.propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.layout, ['width']),
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
-  ...alignItems.propTypes,
-  ...justifyContent.propTypes,
-  ...flexWrap.propTypes,
-  ...flexDirection.propTypes,
+  ...pick(propTypes.flexbox, [
+    'alignItems',
+    'justifyContent',
+    'flexWrap',
+    'flexDirection',
+  ]),
   wrap: deprecatedPropType('flexWrap'),
   align: deprecatedPropType('alignItems'),
   justify: deprecatedPropType('justifyContent'),
