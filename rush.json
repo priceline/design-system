@@ -311,16 +311,7 @@
    *
    * For more details and instructions, see this article:  https://rushjs.io/pages/advanced/installation_variants/
    */
-  "variants": [
-    {
-      "variantName": "styled-components-v4",
-      "description": "Build this repo using styled-components v4"
-    },
-    {
-      "variantName": "styled-components-v5",
-      "description": "Build this repo using styled-components v5"
-    }
-  ],
+  "variants": [],
 
   /**
    * Rush can collect anonymous telemetry about everyday developer activity such as

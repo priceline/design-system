@@ -64,6 +64,8 @@ Hug.propTypes = {
     PropTypes.string,
   ]),
   color: deprecatedColorValue(),
+  borderWidth: PropTypes.string,
+  fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 }
 
 export default Hug

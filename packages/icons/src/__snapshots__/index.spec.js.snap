@@ -6254,6 +6254,10 @@ exports[`renders Mask 1`] = `
   width: 24px;
 }
 
+.c2 {
+  outline: none;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -6262,10 +6266,6 @@ exports[`renders Mask 1`] = `
 
 .c0 * {
   box-sizing: border-box;
-}
-
-.c2 {
-  outline: none;
 }
 
 <div
@@ -6811,6 +6811,10 @@ exports[`renders NoSeat 1`] = `
   width: 24px;
 }
 
+.c2 {
+  outline: none;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -6819,10 +6823,6 @@ exports[`renders NoSeat 1`] = `
 
 .c0 * {
   box-sizing: border-box;
-}
-
-.c2 {
-  outline: none;
 }
 
 <div
@@ -8946,6 +8946,10 @@ exports[`renders Sick 1`] = `
   width: 24px;
 }
 
+.c2 {
+  outline: none;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -8954,10 +8958,6 @@ exports[`renders Sick 1`] = `
 
 .c0 * {
   box-sizing: border-box;
-}
-
-.c2 {
-  outline: none;
 }
 
 <div

@@ -1,157 +1,26 @@
 import React from 'react'
-import { action } from '@storybook/addon-actions'
-import { withKnobs, boolean, optionsKnob } from '@storybook/addon-knobs'
-import { Cartesian, Catch, LiveEditor, Markdown, XRay } from '@compositor/kit'
-
-import { Box, Button } from '..'
-import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 import styled from 'styled-components'
 
-const StyledButton = styled(Button)`
-  padding: 100px;
-`
-const variations = {
-  outline: 'outline',
-  fill: 'fill',
-  link: 'link',
-  subtle: 'subtle',
-  plain: 'plain',
-  lightFill: 'lightFill',
-}
-const sizes = { small: 'small', medium: 'medium', large: 'large' }
-const colors = {
-  primary: 'primary',
-  secondary: 'secondary',
-  text: 'text',
-  success: 'success',
-  error: 'error',
-  warning: 'warning',
-  alert: 'alert',
-  caution: 'caution',
-  notify: 'notify',
-  pricePrimary: 'pricePrimary',
-  priceSecondary: 'priceSecondary',
-  promoPrimary: 'promoPrimary',
-  promoSecondary: 'promoSecondary',
-  border: 'border',
-  background: 'background',
-}
+import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
+import { Box, Button, Text } from '..'
+import { argTypes, defaultArgs } from './Button.stories.args'
 
 export default {
-  title: 'Button',
-
-  decorators: [
-    (story) => (
-      <Box>
-        <Markdown>
-          {`
-  Use the <code>&lt;Button /&gt;</code> component to render a primitive button. Use the *variation* prop to change the appearance of the button.
-          `}
-        </Markdown>
-        {story()}
-      </Box>
-    ),
-    withKnobs,
-  ],
-
-  parameters: {
-    component: Button,
-  },
+  component: Button,
+  title: 'core / Button',
+  args: defaultArgs,
+  argTypes,
 }
 
-export const _Button = () => {
-  const variation = optionsKnob('Variation', variations, 'fill', {
-    display: 'select',
-  })
-  const size = optionsKnob('Size', sizes, 'medium', {
-    display: 'select',
-  })
-  const color = optionsKnob('Palette Color', colors, 'primary', {
-    display: 'select',
-  })
-  const disabled = boolean('Disabled?', false)
-  const fullWidth = boolean('Full Width?', false)
+const Template = (args) => <Button {...args}>I AM BUTTON</Button>
 
-  return (
-    <Catch>
-      <LiveEditor
-        code={`<Button
-  variation='${variation}'
-  size='${size}'
-  color='${color}'
-  disabled={${disabled}}
-  width={${fullWidth ? 1 : null}}>
-  BUTTON
-</Button>`}
-        scope={{
-          Button,
-        }}
-      />
-    </Catch>
-  )
+export const _Button = Template.bind({})
+
+export const ResponsiveSize = Template.bind({})
+ResponsiveSize.args = { size: ['small', null, 'medium', null, 'large'] }
+ResponsiveSize.parameters = {
+  viewport: { defaultViewport: 'designSystem_sm' },
 }
-
-export const TryIt = () => {
-  const variation = optionsKnob('Variation', variations, 'fill', {
-    display: 'multi-select',
-  })
-  const size = optionsKnob('Size', sizes, 'medium', {
-    display: 'multi-select',
-  })
-  const color = optionsKnob('Palette Color', colors, 'primary', {
-    display: 'multi-select',
-  })
-  const disabled = boolean('Disabled?', false)
-  const fullWidth = boolean('Full Width?', false)
-
-  return (
-    <Cartesian
-      component={Button}
-      m={3}
-      variation={variation}
-      size={size}
-      color={color}
-      disabled={disabled}
-      width={fullWidth ? 1 : null}
-      onClick={action('Clicked button in Try It!')}
-    >
-      Try This Button!
-    </Cartesian>
-  )
-}
-
-TryIt.story = {
-  name: 'Try It!',
-}
-
-export const All = () => {
-  return (
-    <Cartesian
-      component={Button}
-      m={3}
-      color={Object.keys(colors)}
-      variation={Object.keys(variations)}
-      disabled={[false, true]}
-      size={Object.keys(sizes)}
-      onClick={action('Clicked button in All')}
-    >
-      I am a Button
-    </Cartesian>
-  )
-}
-
-export const Geometry = () => (
-  <XRay>
-    <Cartesian
-      component={Button}
-      m={3}
-      variation={Object.keys(variations)}
-      size={Object.keys(sizes)}
-    >
-      Button Geometry
-    </Cartesian>
-  </XRay>
-)
 
 export const ForwardRefs = () => (
   <ForwardRefDemo
@@ -169,22 +38,21 @@ export const ForwardRefs = () => (
   />
 )
 
-export const ResponsiveSize = () => (
-  <Button size={['small', null, 'medium', null, 'large']}>Button Text</Button>
+// styled(Button) should preserve variation styling
+const StyledButton = styled(Button)`
+  padding: 100px;
+`
+const StyledTemplate = (args) => (
+  <StyledButton {...args}>Button Text!</StyledButton>
 )
-
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
-
-export const StyledButtonShouldNotLoseItsStyling = () => {
-  return (
+export const StyledButtonStory = StyledTemplate.bind({})
+StyledButtonStory.storyName = 'styled(Button) should preserve variation styling'
+StyledButtonStory.decorators = [
+  (Story) => (
     <Box>
-      <StyledButton>BUTTON</StyledButton>
-    </Box>
-  )
-}
+      <Text>Below is a styled(Button) with `padding: 100px;` applied.</Text>
 
-StyledButtonShouldNotLoseItsStyling.story = {
-  name: 'Styled Button should not lose its styling',
-}
+      {Story()}
+    </Box>
+  ),
+]

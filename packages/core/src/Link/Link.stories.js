@@ -1,28 +1,27 @@
 import React from 'react'
-import { action } from '@storybook/addon-actions'
-import { Cartesian } from '@compositor/kit'
 
 import { Link, Button } from '..'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 
-const variations = { link: 'link', fill: 'fill', outline: 'outline' }
-const colors = {
-  primary: 'primary',
-  secondary: 'secondary',
-  text: 'text',
-  success: 'success',
-  error: 'error',
-  warning: 'warning',
-  alert: 'alert',
-  caution: 'caution',
-  notify: 'notify',
-  pricePrimary: 'pricePrimary',
-  priceSecondary: 'priceSecondary',
-  promoPrimary: 'promoPrimary',
-  promoSecondary: 'promoSecondary',
-  border: 'border',
-  background: 'background',
-}
+// for Args
+// const variations = { link: 'link', fill: 'fill', outline: 'outline' }
+// const colors = {
+//   primary: 'primary',
+//   secondary: 'secondary',
+//   text: 'text',
+//   success: 'success',
+//   error: 'error',
+//   warning: 'warning',
+//   alert: 'alert',
+//   caution: 'caution',
+//   notify: 'notify',
+//   pricePrimary: 'pricePrimary',
+//   priceSecondary: 'priceSecondary',
+//   promoPrimary: 'promoPrimary',
+//   promoSecondary: 'promoSecondary',
+//   border: 'border',
+//   background: 'background',
+// }
 
 export default {
   title: 'Link',
@@ -94,16 +93,4 @@ export const Color = () => (
     <br />
     <Link color='error'>I am a different color!</Link>
   </div>
-)
-
-export const All = () => (
-  <Cartesian
-    component={Link}
-    color={Object.keys(colors)}
-    variation={Object.keys(variations)}
-    onClick={action('Clicked button in All')}
-    m={3}
-  >
-    Link Text
-  </Cartesian>
 )

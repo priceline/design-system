@@ -21,7 +21,7 @@
   "author": "Priceline.com Design System Team",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.13.10",
+    "@babel/core": "^7.13.14",
     "@babel/eslint-parser": "^7.13.10",
     "@rushstack/eslint-patch": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
@@ -39,7 +39,7 @@
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "eslint": "^7.22.0",
+    "eslint": "^7.23.0",
     "typescript": "^4.2.3"
   },
   "peerDependencies": {

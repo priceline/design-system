@@ -212,6 +212,6 @@ export const CustomChip = () => (
 
 //Default
 export default {
-  title: 'Chip.FilterChip',
+  title: 'core / Chip / FilterChip',
   component: FilterChip,
 }

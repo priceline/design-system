@@ -1,26 +1,26 @@
 import React from 'react'
-import { Cartesian } from '@compositor/kit'
 
 import { Badge } from '..'
 
-const sizes = { small: 'small', medium: 'medium' }
-const colors = {
-  primary: 'primary',
-  secondary: 'secondary',
-  text: 'text',
-  success: 'success',
-  error: 'error',
-  warning: 'warning',
-  alert: 'alert',
-  caution: 'caution',
-  notify: 'notify',
-  pricePrimary: 'pricePrimary',
-  priceSecondary: 'priceSecondary',
-  promoPrimary: 'promoPrimary',
-  promoSecondary: 'promoSecondary',
-  border: 'border',
-  background: 'background',
-}
+// for Args
+// const sizes = { small: 'small', medium: 'medium' }
+// const colors = {
+//   primary: 'primary',
+//   secondary: 'secondary',
+//   text: 'text',
+//   success: 'success',
+//   error: 'error',
+//   warning: 'warning',
+//   alert: 'alert',
+//   caution: 'caution',
+//   notify: 'notify',
+//   pricePrimary: 'pricePrimary',
+//   priceSecondary: 'priceSecondary',
+//   promoPrimary: 'promoPrimary',
+//   promoSecondary: 'promoSecondary',
+//   border: 'border',
+//   background: 'background',
+// }
 
 export default {
   title: 'Badge',
@@ -35,17 +35,6 @@ export default {
 }
 
 export const BadgeComponent = () => <Badge bg='lightGray'>badge</Badge>
-
-export const All = () => (
-  <Cartesian
-    component={Badge}
-    color={Object.keys(colors)}
-    size={Object.keys(sizes)}
-    m={3}
-  >
-    Badge
-  </Cartesian>
-)
 
 export const Default = () => <Badge>default</Badge>
 

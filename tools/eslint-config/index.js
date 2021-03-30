@@ -56,7 +56,7 @@ module.exports = {
   settings: {
     react: {
       pragma: 'React',
-      version: '16.13.1',
+      version: '17.0.1',
     },
   },
 }

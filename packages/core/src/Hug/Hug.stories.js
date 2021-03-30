@@ -1,18 +1,29 @@
 import React from 'react'
-import { withKnobs, select } from '@storybook/addon-knobs'
-import { ThumbsUp } from 'pcln-icons'
+
 import { Hug, Hide, Card, Text } from '..'
 
-const text = (
-  <Text.span>
-    Today‘s best deal! You save <Text.span bold>$300</Text.span> for your party
-    of 2.&nbsp;
-  </Text.span>
-)
+import {
+  argTypes,
+  defaultArgs,
+  iconMap,
+  HugContentText,
+} from './Hug.stories.args'
 
-const responsiveText = (
+const ChildrenCardInside = () => (
+  <Card p={3} color='warning.light'>
+    I‘m a card within a hug!
+  </Card>
+)
+const ChildrenCardInsideCard = () => (
+  <Card p={3} color='background.light'>
+    <Card p={3} color='background.dark'>
+      I‘m a card within a card within a hug!
+    </Card>
+  </Card>
+)
+const ResponsiveText = () => (
   <Text.span>
-    Today‘s best deal! You save <Text.span bold>$300</Text.span>
+    Today‘s best deal! You save <Text.span fontWeight='bold'>$300</Text.span>
     <Hide as='span' xs>
       {' '}
       for your party of 2
@@ -22,90 +33,72 @@ const responsiveText = (
 )
 
 export default {
-  title: 'Hug',
+  title: 'core / Hug',
   component: Hug,
-  decorators: [withKnobs],
+
+  args: defaultArgs,
+  argTypes,
+
+  parameters: {
+    docs: {
+      description: {
+        component: `Use the Hug component to surround another component with a border and a banner on top.`,
+      },
+    },
+  },
 }
 
-export const WithACardInside = () => (
-  <Hug text={text}>
-    <Card p={3} bg='white' color='text'>
-      I‘m a card within a hug!
-    </Card>
-  </Hug>
-)
+// eslint-disable-next-line react/prop-types
+const Template = ({ icon, ...rest }) => {
+  const SelectedIcon = (icon && iconMap[icon]) || null
 
-WithACardInside.story = {
-  name: 'With a card inside',
+  if (icon && SelectedIcon) {
+    rest.icon = <SelectedIcon />
+  }
+
+  return <Hug {...rest} />
 }
 
-export const WithIconAndACardInside = () => (
-  <Hug text={text} color='primary' icon={<ThumbsUp />}>
-    <Card p={3} bg='white' color='text'>
-      I‘m a card within a hug!
-    </Card>
-  </Hug>
-)
+export const _Hug = Template.bind({})
+_Hug.args = {
+  children: <ChildrenCardInside />,
+}
+_Hug.storyName = 'With a card inside'
 
-WithIconAndACardInside.story = {
-  name: 'With icon and a card inside',
+export const WithAnIcon = Template.bind({})
+WithAnIcon.args = {
+  children: <ChildrenCardInside />,
+  icon: 'ThumbsUp',
+}
+WithAnIcon.storyName = 'With an icon'
+
+export const CardInACard = Template.bind({})
+CardInACard.args = {
+  children: <ChildrenCardInsideCard />,
+}
+CardInACard.storyName = 'With a card in a card'
+
+export const PlainText = Template.bind({})
+PlainText.args = {
+  text: 'I am some plain text!',
+  children: <ChildrenCardInside />,
 }
 
-export const WithACardInACard = () => (
-  <Hug text={text}>
-    <Card p={3} bg='white' color='text'>
-      <Card p={3} bg='white' color='text'>
-        I‘m a card within a card within a hug!
-      </Card>
-    </Card>
-  </Hug>
-)
-
-WithACardInACard.story = {
-  name: 'With a card in a card',
+export const ArrayOfText = Template.bind({})
+ArrayOfText.args = {
+  text: [<HugContentText key={1} />, <HugContentText key={2} />],
+  children: <ChildrenCardInside />,
 }
+ArrayOfText.storyName = 'With an array of text nodes'
 
-export const WithPlainTextInsteadOfComponent = () => (
-  <Hug text="I am plain ol' text">
-    <Card p={3} bg='white' color='text'>
-      I‘m a card within a hug!
-    </Card>
-  </Hug>
-)
-
-WithPlainTextInsteadOfComponent.story = {
-  name: 'With plain text instead of component',
+export const Responsive = Template.bind({})
+Responsive.args = {
+  text: <ResponsiveText />,
+  children: <ChildrenCardInside />,
+  p: 2,
+  fontSize: [0, 1],
 }
-
-export const WithAnArrayOfNodes = () => (
-  <Hug text={[text, text]}>
-    <Card p={3} bg='white' color='text'>
-      I‘m a card within a hug!
-    </Card>
-  </Hug>
-)
-
-WithAnArrayOfNodes.story = {
-  name: 'With an array of nodes',
-}
-
-export const WithAResponsiveHug = () => (
-  <Hug
-    text={responsiveText}
-    p={2}
-    fontSize={[0, 1]}
-    icon={<ThumbsUp />}
-    iconDisplay={select('Display', {
-      Block: 'block',
-      None: 'none',
-    })}
-  >
-    <Card p={3} bg='white' color='text'>
-      I‘m a card within a hug!
-    </Card>
-  </Hug>
-)
-
-WithAResponsiveHug.story = {
-  name: 'With a responsive hug',
+Responsive.storyName = 'With a responsive Hug'
+Responsive.parameters = {
+  viewport: { defaultViewport: 'designSystem_xs' },
 }

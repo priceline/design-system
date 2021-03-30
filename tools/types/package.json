@@ -41,7 +41,7 @@
     "@priceline/eslint-config": "workspace:*",
     "csstype": "^3.0.7",
     "dtslint": "^4.0.7",
-    "eslint": "^7.22.0",
+    "eslint": "^7.23.0",
     "pcln-design-system": "workspace:*",
     "prettier": "^2.2.1",
     "@rushstack/eslint-patch": "^1.0.6"

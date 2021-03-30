@@ -1,127 +1,106 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 
 import { Box, Text } from '..'
-
-const description =
-  'A low-level layout component for setting color, display, height, margin, maxHeight, maxWidth, minHeight, minWidth, padding, size, textAlign, and width.'
+import { argTypes, defaultArgs } from './Box.stories.args'
 
 export default {
-  title: 'Box',
-}
-
-export const LayoutComponent = withInfo({
-  text: description,
-  inline: true,
-})(() => <Box p={3}>Hello</Box>)
-
-LayoutComponent.story = {
-  name: 'Layout component',
+  title: 'core / Box',
   component: Box,
+  args: defaultArgs,
+  argTypes,
+
+  parameters: {
+    docs: {
+      description: {
+        component: `A low-level layout component for setting color, display, height, margin, maxHeight, maxWidth, minHeight, minWidth, padding, size, textAlign, and width.`,
+      },
+    },
+  },
 }
 
-export const DisplayAndSize = () => (
-  <Box color='alert.base' display={['none', null, 'block']} p={3} size={250}>
-    Hello
-  </Box>
-)
+const Template = (args) => <Box {...args} />
 
-DisplayAndSize.story = {
-  name: 'Display and size',
+export const _Box = Template.bind({})
+
+export const DisplayAndSize = Template.bind({})
+DisplayAndSize.storyName = 'Display and Size'
+DisplayAndSize.args = {
+  color: 'alert.base',
+  display: ['none', null, 'block'],
+  size: 250,
 }
 
-export const Padding = () => <Box p={3}>Hello</Box>
-
-export const Height = () => (
-  <Box
-    color='warning.base'
-    height={[250, 350, 450, 550]}
-    width={[150, 250, 350, 450]}
-  />
-)
-
-export const MaxAndMinValues = () => (
-  <Box
-    color='priceSecondary.base'
-    maxHeight={[300, null, 400, null, 500]}
-    maxWidth={[300, null, 400, null, 500]}
-    minHeight={[100, null, 200, null, 300]}
-    minWidth={[300, null, 200, null, 100]}
-  />
-)
-
-MaxAndMinValues.story = {
-  name: 'Max and min values',
+export const Padding = Template.bind({})
+Padding.args = {
+  p: 4,
+  color: 'background.base',
 }
 
-export const Margin = () => <Box m={3}>Hello</Box>
-
-export const Color = () => (
-  <Box p={3} color='primary.base'>
-    Hello
-  </Box>
-)
-
-export const BoxShadow = () => (
-  <div>
-    {['sm', 'md', 'lg', 'xl'].map((boxShadow) => (
-      <Box
-        p={2}
-        mb={'42px'}
-        color='blue'
-        boxShadowSize={boxShadow}
-        key={boxShadow}
-      >
-        box-shadow: <Text bold>{boxShadow}</Text>
-      </Box>
-    ))}
-  </div>
-)
-
-BoxShadow.story = {
-  name: 'Box shadow',
+export const Height = Template.bind({})
+Height.args = {
+  color: 'warning.base',
+  height: [250, 350, 450, 550],
+  width: [150, 250, 350, 450],
 }
 
-export const BackgroundColor = () => (
-  <React.Fragment>
-    <Box p={3} color='white' bg='blue'>
-      Hello
-    </Box>
-    <Box p={3} mt={2} color='primary'>
-      Hello
-    </Box>
-    <Box p={3} mt={2} color='error'>
-      Hello
-    </Box>
-    <Box p={3} mt={2} color='warning'>
-      Hello
-    </Box>
-  </React.Fragment>
-)
+export const MaxAndMinValues = Template.bind({})
+MaxAndMinValues.storyName = 'Min and Max Values'
+MaxAndMinValues.args = {
+  color: 'priceSecondary.base',
+  maxHeight: [300, null, 400, null, 500],
+  maxWidth: [300, null, 400, null, 500],
+  minHeight: [100, null, 200, null, 300],
+  minWidth: [300, null, 200, null, 100],
+}
 
-export const Size = () => <Box p={3} color='secondary.base' size={200} />
+export const Margin = Template.bind({})
+Margin.args = {
+  m: 3,
+  color: 'background.base',
+}
 
-export const Width = () => (
-  <Box p={3} width={1 / 2} color='white' bg='blue'>
-    Half Width
-  </Box>
-)
+export const Color = Template.bind({})
+Color.args = {
+  color: 'primary.base',
+}
 
-export const PixelWidth = () => (
-  <Box p={3} width={256} color='white' bg='blue'>
-    256px width
-  </Box>
-)
+export const BoxShadow = Template.bind({})
+BoxShadow.args = {
+  boxShadowSize: 'sm',
+  p: 2,
+  mb: '42px',
+  color: 'primary.base',
+}
 
-export const VwWidth = () => (
-  <Box p={3} width='50vw' color='white' bg='blue'>
-    50vw width
-  </Box>
-)
+export const Size = Template.bind({})
+Size.args = {
+  color: 'primary.base',
+  size: 200,
+}
 
-VwWidth.story = {
-  name: 'VW Width',
+const DimsChildren = () => <Text color='text.lightest'>Box Dimensions</Text>
+
+export const Width = Template.bind({})
+Width.args = {
+  color: 'primary.base',
+  width: 1 / 2,
+  children: <DimsChildren />,
+}
+
+export const PixelWidth = Template.bind({})
+PixelWidth.args = {
+  color: 'primary.base',
+  width: 256,
+  children: <DimsChildren />,
+}
+
+export const VwWidth = Template.bind({})
+VwWidth.storyName = 'Viewport Width unit'
+VwWidth.args = {
+  color: 'primary.base',
+  width: '75vw',
+  children: <DimsChildren />,
 }
 
 export const DirectionalPadding = () => (
@@ -192,7 +171,4 @@ export const ThemeUserCaseColorText = () => (
     </Box>
   </React.Fragment>
 )
-
-ThemeUserCaseColorText.story = {
-  name: 'Theme user case: color=text',
-}
+ThemeUserCaseColorText.storyName = 'Theme user case: color=text'

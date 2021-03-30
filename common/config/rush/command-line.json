@@ -43,32 +43,12 @@
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
       "ignoreMissingScript": true,
-    },
-    {
-      "name": "test:ci:incremental",
-      "commandKind": "bulk",
-      "summary": "(incremental) Run unit tests for serially for each project to prevent thread contention",
-      "description": "(incremental) Run unit tests for serially for each project to prevent thread contention",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true,
       "incremental": true
     },
 
     // test:ci:update
     {
       "name": "test:ci:update",
-      "commandKind": "bulk",
-      "summary": "Update jest snapshots in all projects",
-      "description": "Update jest snapshots in all projects",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true
-    },
-    {
-      "name": "test:ci:update:incremental",
       "commandKind": "bulk",
       "summary": "(incremental) Update jest snapshots in all projects",
       "description": "(incremental) Update jest snapshots in all projects",
@@ -88,15 +68,6 @@
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
-    },
-    {
-      "name": "lint:incremental",
-      "commandKind": "bulk",
-      "summary": "(incremental) ESLint",
-      "description": "(incremental) Run ESLint static analysis against all projects",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
       "incremental": true
     },
 
@@ -106,15 +77,6 @@
       "commandKind": "bulk",
       "summary": "ESLint",
       "description": "Run ESLint static analysis against all projects",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
-    },
-    {
-      "name": "lint:fix:incremental",
-      "commandKind": "bulk",
-      "summary": "(incremental) ESLint",
-      "description": "(incremental) Run ESLint static analysis against all projects",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
