@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ButtonChip, Flex, Text } from 'pcln-design-system'
+import { Box, ButtonChip, Flex, Text } from 'pcln-design-system'
 
 import Menu from './Menu'
 import MenuItem from '../MenuItem'

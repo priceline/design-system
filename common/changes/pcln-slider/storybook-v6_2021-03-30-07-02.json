@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgraded to Storybook v6",
+      "type": "patch",
+      "packageName": "pcln-slider"
+    }
+  ],
+  "packageName": "pcln-slider",
+  "email": "steven.dalonzo@priceline.com"
+}
