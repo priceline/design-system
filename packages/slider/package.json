@@ -32,8 +32,10 @@
     "rc-tooltip": "^3.7.0",
     "rc-util": "^4.0.4",
     "shallowequal": "^1.0.1",
-    "styled-system": "^4.2.4",
-    "warning": "^4.0.3"
+    "styled-system": "^5.1.5",
+    "warning": "^4.0.3",
+    "@styled-system/prop-types": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",

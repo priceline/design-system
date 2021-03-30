@@ -5,6 +5,8 @@ importers:
     dependencies:
       '@mdx-js/mdx': 0.15.7
       '@mdx-js/tag': 0.15.6_react@17.0.2
+      '@styled-system/prop-types': 5.1.5
+      '@styled-system/theme-get': 5.1.2
       is-absolute-url: 2.1.0
       mdx-docs: 1.0.0-9_3336569cea13065a0ec459f28527f1f2
       pcln-design-system: link:../../packages/core
@@ -35,6 +37,8 @@ importers:
       '@mdx-js/tag': ^0.15.0
       '@priceline/eslint-config': workspace:*
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       babel-loader: ^8.2.2
       babel-plugin-styled-components: ^1.12.0
       eslint: ^7.23.0
@@ -100,9 +104,11 @@ importers:
       styled-components: ^5.2.1
   ../../packages/autocomplete:
     dependencies:
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
       downshift: 3.4.8_react@17.0.2
       prop-types: 15.7.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.13.14_@babel+core@7.13.14
       '@babel/core': 7.13.14
@@ -133,6 +139,8 @@ importers:
       '@priceline/eslint-config': workspace:*
       '@reach/component-component': ^0.7.0
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
       cat-names: ^2.0.0
@@ -150,17 +158,21 @@ importers:
       react-dom: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       us: ^2.0.0
   ../../packages/core:
     dependencies:
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
       '@types/styled-system': 4.2.2
       deepmerge: 4.2.2
       hoist-non-react-statics: 3.3.2
+      lodash.omit: 4.5.0
+      lodash.pick: 4.4.0
       moize: 6.0.1
       pcln-icons: 4.1.1_bbdb8d52999b72a1711e5d621e13b66d
       prop-types: 15.7.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.13.14_@babel+core@7.13.14
       '@babel/core': 7.13.14
@@ -172,7 +184,6 @@ importers:
       '@testing-library/jest-dom': 5.11.10
       '@testing-library/react': 11.2.5_react-dom@17.0.2+react@17.0.2
       '@testing-library/react-hooks': 5.1.1_fc2bb8a5b006d3f25c5f84ea777e678d
-      babel-plugin-styled-components: 1.12.0_styled-components@5.2.1
       camelcase: 6.2.0
       cross-env: 7.0.3
       eslint: 7.23.0
@@ -194,11 +205,12 @@ importers:
       '@rushstack/eslint-patch': ^1.0.6
       '@storybook/addon-actions': ^6.1.21
       '@storybook/react': ^6.1.21
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
       '@testing-library/react-hooks': ^5.1.0
       '@types/styled-system': ^4.2.2
-      babel-plugin-styled-components: ^1.12.0
       camelcase: ^6.2.0
       cross-env: ^7.0.3
       deepmerge: ^4.2.2
@@ -207,6 +219,8 @@ importers:
       jest: ^26.6.3
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^7.0.3
+      lodash.omit: ^4.5.0
+      lodash.pick: ^4.4.0
       moize: ^6.0.1
       npm-run-all: ^4.1.5
       pcln-icons: ^4.1.1
@@ -216,13 +230,16 @@ importers:
       react-test-renderer: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       stylis: ^3.5.4
   ../../packages/icons:
     dependencies:
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
+      lodash.pick: 4.4.0
       lodash.upperfirst: 4.3.1
       prop-types: 15.7.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.13.14
       '@babel/plugin-syntax-jsx': 7.12.13
@@ -250,6 +267,8 @@ importers:
       '@priceline/babel-preset': workspace:*
       '@priceline/eslint-config': workspace:*
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@svgr/cli': ^4.3.3
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
@@ -258,6 +277,7 @@ importers:
       jest: ^26.6.3
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^7.0.3
+      lodash.pick: ^4.4.0
       lodash.upperfirst: ^4.3.1
       npm-run-all: ^4.1.5
       pcln-design-system: ^4.7.0
@@ -267,8 +287,11 @@ importers:
       react-test-renderer: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/menu:
+    dependencies:
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
     devDependencies:
       '@babel/cli': 7.13.14
       '@priceline/babel-preset': link:../../tools/babel-preset
@@ -290,12 +313,14 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       rimraf: 3.0.2
       styled-components: 5.2.1_react-dom@17.0.2+react@17.0.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     specifiers:
       '@babel/cli': ^7.13.14
       '@priceline/babel-preset': workspace:*
       '@priceline/eslint-config': workspace:*
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
       cross-env: ^7.0.3
@@ -312,10 +337,13 @@ importers:
       react-dom: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/modal:
     dependencies:
       '@reach/dialog': 0.7.4_react-dom@17.0.2+react@17.0.2
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
+      lodash.pick: 4.4.0
       react-transition-group: 4.4.1_react-dom@17.0.2+react@17.0.2
     devDependencies:
       '@babel/cli': 7.13.14
@@ -336,13 +364,15 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       rimraf: 3.0.2
       styled-components: 5.2.1_react-dom@17.0.2+react@17.0.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     specifiers:
       '@babel/cli': ^7.13.14
       '@priceline/babel-preset': workspace:*
       '@priceline/eslint-config': workspace:*
       '@reach/dialog': ^0.7.0
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
       cross-env: ^7.0.3
@@ -350,6 +380,7 @@ importers:
       jest: ^26.6.3
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^7.0.3
+      lodash.pick: ^4.4.0
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:*
       prop-types: ^15.7.2
@@ -358,9 +389,11 @@ importers:
       react-transition-group: ^4.4.1
       rimraf: ^3.0.2
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/popover:
     dependencies:
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
       react-popper: 1.3.11_react@17.0.2
     devDependencies:
       '@babel/cli': 7.13.14
@@ -385,13 +418,15 @@ importers:
       react-focus-lock: 2.5.0_react@17.0.2
       rimraf: 3.0.2
       styled-components: 5.2.1_react-dom@17.0.2+react@17.0.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     specifiers:
       '@babel/cli': ^7.13.14
       '@priceline/babel-preset': workspace:*
       '@priceline/eslint-config': workspace:*
       '@reach/component-component': ^0.7.0
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
       cross-env: ^7.0.3
@@ -410,15 +445,17 @@ importers:
       react-popper: ^1.3.3
       rimraf: ^3.0.2
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
   ../../packages/slider:
     dependencies:
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
+      '@styled-system/theme-get': 5.1.2
       classnames: 2.2.6
       prop-types: 15.7.2
       rc-tooltip: 3.7.3
       rc-util: 4.21.1
       shallowequal: 1.1.0
-      styled-system: 4.2.4
+      styled-system: 5.1.5
       warning: 4.0.3
     devDependencies:
       '@babel/cli': 7.13.14_@babel+core@7.13.14
@@ -451,6 +488,8 @@ importers:
       '@priceline/eslint-config': workspace:*
       '@reach/component-component': ^0.7.0
       '@rushstack/eslint-patch': ^1.0.6
+      '@styled-system/prop-types': ^5.1.5
+      '@styled-system/theme-get': ^5.1.2
       '@testing-library/jest-dom': ^5.11.10
       '@testing-library/react': ^11.2.5
       '@wojtekmaj/enzyme-adapter-react-17': ^0.4.1
@@ -473,7 +512,7 @@ importers:
       rimraf: ^3.0.2
       shallowequal: ^1.0.1
       styled-components: ^5.2.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       warning: ^4.0.3
   ../../tools/babel-preset:
     dependencies:
@@ -4667,6 +4706,93 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0
     resolution:
       integrity: sha512-2nRb5egnSBKbosuR7g5PsuM4XnRLXZUf7TBjwT6eRlomnE2wrWM5DtTLpFeUpDob0SI5hPlOV1xCpPz3XmeyyA==
+  /@styled-system/background/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-jtwH2C/U6ssuGSvwTN3ri/IyjdHb8W9X/g8Y0JLcrH02G+BW3OS8kZdHphF1/YyRklnrKrBT2ngwGUK6aqqV3A==
+  /@styled-system/border/5.1.5:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-JvddhNrnhGigtzWRCVuAHepniyVi6hBlimxWDVAdcTuk7aRn9BYJUwfHslURtwYFsF5FoEs8Zmr1oZq2M1AP0A==
+  /@styled-system/color/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-1kCkeKDZkt4GYkuFNKc7vJQMcOmTl3bJY3YBUs7fCNM6mMYJeT1pViQ2LwBSBJytj3AB0o4IdLBoepgSgGl5MA==
+  /@styled-system/core/5.1.2:
+    dependencies:
+      object-assign: 4.1.1
+    resolution:
+      integrity: sha512-XclBDdNIy7OPOsN4HBsawG2eiWfCcuFt6gxKn1x4QfMIgeO6TOlA2pZZ5GWZtIhCUqEPTgIBta6JXsGyCkLBYw==
+  /@styled-system/css/5.1.5:
+    resolution:
+      integrity: sha512-XkORZdS5kypzcBotAMPBoeckDs9aSZVkvrAlq5K3xP8IMAUek+x2O4NtwoSgkYkWWzVBu6DGdFZLR790QWGG+A==
+  /@styled-system/flexbox/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-6hHV52+eUk654Y1J2v77B8iLeBNtc+SA3R4necsu2VVinSD7+XY5PCCEzBFaWs42dtOEDIa2lMrgL0YBC01mDQ==
+  /@styled-system/grid/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-K3YiV1KyHHzgdNuNlaw8oW2ktMuGga99o1e/NAfTEi5Zsa7JXxzwEnVSDSBdJC+z6R8WYTCYRQC6bkVFcvdTeg==
+  /@styled-system/layout/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-wUhkMBqSeacPFhoE9S6UF3fsMEKFv91gF4AdDWp0Aym1yeMPpqz9l9qS/6vjSsDPF7zOb5cOKC3tcKKOMuDCPw==
+  /@styled-system/position/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-60IZfMXEOOZe3l1mCu6sj/2NAyUmES2kR9Kzp7s2D3P4qKsZWxD1Se1+wJvevb+1TP+ZMkGPEYYXRyU8M1aF5A==
+  /@styled-system/prop-types/5.1.5:
+    dependencies:
+      prop-types: 15.7.2
+    dev: false
+    peerDependencies:
+      styled-system: ^5.0.0-8
+    resolution:
+      integrity: sha512-D/0d0ltp8QGhwrRifivQeIdoKkQDpFIGi98DXdpRXOaJStYXLx6aBSfS/YYIijbF1nZs1hWlAgXxYvDhCxHLSA==
+  /@styled-system/prop-types/5.1.5_styled-system@5.1.5:
+    dependencies:
+      prop-types: 15.7.2
+      styled-system: 5.1.5
+    dev: false
+    peerDependencies:
+      styled-system: ^5.0.0-8
+    resolution:
+      integrity: sha512-D/0d0ltp8QGhwrRifivQeIdoKkQDpFIGi98DXdpRXOaJStYXLx6aBSfS/YYIijbF1nZs1hWlAgXxYvDhCxHLSA==
+  /@styled-system/shadow/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-wqniqYb7XuZM7K7C0d1Euxc4eGtqEe/lvM0WjuAFsQVImiq6KGT7s7is+0bNI8O4Dwg27jyu4Lfqo/oIQXNzAg==
+  /@styled-system/space/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-+zzYpR8uvfhcAbaPXhH8QgDAV//flxqxSjHiS9cDFQQUSznXMQmxJegbhcdEF7/eNnJgHeIXv1jmny78kipgBA==
+  /@styled-system/theme-get/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    dev: false
+    resolution:
+      integrity: sha512-afAYdRqrKfNIbVgmn/2Qet1HabxmpRnzhFwttbGr6F/mJ4RDS/Cmn+KHwHvNXangQsWw/5TfjpWV+rgcqqIcJQ==
+  /@styled-system/typography/5.1.2:
+    dependencies:
+      '@styled-system/core': 5.1.2
+    resolution:
+      integrity: sha512-BxbVUnN8N7hJ4aaPOd7wEsudeT7CxarR+2hns8XCX1zp0DFfbWw4xYa/olA0oQaqx7F1hzDg+eRaGzAJbF+jOg==
+  /@styled-system/variant/5.1.5:
+    dependencies:
+      '@styled-system/core': 5.1.2
+      '@styled-system/css': 5.1.5
+    resolution:
+      integrity: sha512-Yn8hXAFoWIro8+Q5J8YJd/mP85Teiut3fsGVR9CAxwgNfIAiqlYxsk5iHU7VHJks/0KjL4ATSjmbtCDC/4l1qw==
   /@svgr/babel-plugin-add-jsx-attribute/4.2.0:
     dev: true
     engines:
@@ -15924,6 +16050,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+  /lodash.omit/4.5.0:
+    dev: false
+    resolution:
+      integrity: sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
   /lodash.once/4.1.1:
     dev: false
     resolution:
@@ -15933,7 +16063,6 @@ packages:
     resolution:
       integrity: sha1-ATDYDoM2MmTUAHTzKbij56ihzEs=
   /lodash.pick/4.4.0:
-    dev: true
     resolution:
       integrity: sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
   /lodash.restparam/3.6.1:
@@ -22161,6 +22290,23 @@ packages:
       prop-types: 15.7.2
     resolution:
       integrity: sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==
+  /styled-system/5.1.5:
+    dependencies:
+      '@styled-system/background': 5.1.2
+      '@styled-system/border': 5.1.5
+      '@styled-system/color': 5.1.2
+      '@styled-system/core': 5.1.2
+      '@styled-system/flexbox': 5.1.2
+      '@styled-system/grid': 5.1.2
+      '@styled-system/layout': 5.1.2
+      '@styled-system/position': 5.1.2
+      '@styled-system/shadow': 5.1.2
+      '@styled-system/space': 5.1.2
+      '@styled-system/typography': 5.1.2
+      '@styled-system/variant': 5.1.5
+      object-assign: 4.1.1
+    resolution:
+      integrity: sha512-7VoD0o2R3RKzOzPK0jYrVnS8iJdfkKsQJNiLRDjikOpQVqQHns/DXWaPZOH4tIKkhAT7I6wIsy9FWTWh2X3q+A==
   /stylehacks/4.0.3:
     dependencies:
       browserslist: 4.12.0

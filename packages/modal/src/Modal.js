@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import pick from 'lodash.pick'
+import propTypes from '@styled-system/prop-types'
 import { Transition } from 'react-transition-group'
 import { color, width, height } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
@@ -247,8 +249,7 @@ const validateAriaProps = (props, propName, componentName) => {
 }
 
 Modal.propTypes = {
-  ...width.propTypes,
-  ...height.propTypes,
+  ...pick(propTypes.layout, ['height', 'width']),
   ariaLabel: validateAriaProps,
   ariaLabelledBy: validateAriaProps,
   bg: deprecatedPropType('color'),

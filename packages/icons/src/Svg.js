@@ -1,5 +1,8 @@
 import styled, { css } from 'styled-components'
-import { space, width, themeGet } from 'styled-system'
+import { space, width } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
+import { themeGet } from '@styled-system/theme-get'
 
 /**
  * Gets the color of a palette shade, using props.color as
@@ -56,7 +59,7 @@ const bg = (props) => {
 const Svg = styled('svg')`
   flex: none;
   line-height: 1;
-  
+
   ${space}
   ${width}
   ${color}
@@ -64,9 +67,9 @@ const Svg = styled('svg')`
 `
 
 Svg.propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
-  ...color.propTypes,
+  ...propTypes.space,
+  ...pick(propTypes.layout, ['width']),
+  ...propTypes.color,
 }
 
 export default Svg

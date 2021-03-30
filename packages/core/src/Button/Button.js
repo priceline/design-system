@@ -1,6 +1,9 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, space, themeGet } from 'styled-system'
+import { width, space } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import pick from 'lodash.pick'
+import { themeGet } from '@styled-system/theme-get'
 import {
   deprecatedPropType,
   applySizes,
@@ -156,8 +159,8 @@ const Button = styled.button.attrs(
 
 Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  ...width.propTypes,
-  ...space.propTypes,
+  ...pick(propTypes.layout, ['width']),
+  ...propTypes.space,
   fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),

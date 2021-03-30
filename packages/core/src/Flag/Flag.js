@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
-import { space, themeGet } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import { themeGet } from '@styled-system/theme-get'
 
 import { Flex } from '../Flex'
 import { Hide } from '../Hide'
@@ -104,7 +105,7 @@ const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
 Flag.propTypes = {
   color: deprecatedColorValue(),
   bg: deprecatedPropType('color'),
-  ...space.propTypes,
+  ...propTypes.space,
 }
 
 Flag.defaultProps = {

@@ -27,7 +27,9 @@
     "test:ci:update": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
-    "react-popper": "^1.3.3"
+    "react-popper": "^1.3.3",
+    "@styled-system/prop-types": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
@@ -52,7 +54,7 @@
     "react-focus-lock": "^2.2.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.2.1",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "pcln-design-system": "^4.7.1",
