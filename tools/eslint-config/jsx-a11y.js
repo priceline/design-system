@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   plugins: ['jsx-a11y'],
   env: {
     browser: true,

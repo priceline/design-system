@@ -1,29 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Cartesian } from '@compositor/kit'
 
 import { Stamp, Text } from '..'
 import { Pin as PinIcon } from 'pcln-icons'
 
-const sizes = { small: 'small', medium: 'medium' }
-const variations = { outline: 'outline', fill: 'fill' }
-const colors = {
-  primary: 'primary',
-  secondary: 'secondary',
-  text: 'text',
-  success: 'success',
-  error: 'error',
-  warning: 'warning',
-  alert: 'alert',
-  caution: 'caution',
-  notify: 'notify',
-  pricePrimary: 'pricePrimary',
-  priceSecondary: 'priceSecondary',
-  promoPrimary: 'promoPrimary',
-  promoSecondary: 'promoSecondary',
-  border: 'border',
-  background: 'background',
-}
+// for Args
+// const sizes = { small: 'small', medium: 'medium' }
+// const variations = { outline: 'outline', fill: 'fill' }
+// const colors = {
+//   primary: 'primary',
+//   secondary: 'secondary',
+//   text: 'text',
+//   success: 'success',
+//   error: 'error',
+//   warning: 'warning',
+//   alert: 'alert',
+//   caution: 'caution',
+//   notify: 'notify',
+//   pricePrimary: 'pricePrimary',
+//   priceSecondary: 'priceSecondary',
+//   promoPrimary: 'promoPrimary',
+//   promoSecondary: 'promoSecondary',
+//   border: 'border',
+//   background: 'background',
+// }
 
 const BlueStamp = styled(Stamp).attrs(() => ({
   borderColor: 'primary',
@@ -44,20 +44,6 @@ export default {
     },
   },
 }
-
-export const All = () => (
-  <Cartesian
-    component={Stamp}
-    color={Object.keys(colors)}
-    variation={Object.keys(variations)}
-    size={Object.keys(sizes)}
-    m={3}
-  >
-    <>
-      <PinIcon mr={1} /> top location
-    </>
-  </Cartesian>
-)
 
 export const CustomBackgroundAndBorderColor = () => (
   <div>

@@ -15,11 +15,9 @@
     "npm": ">=5.10.0 || >=6.0.0"
   },
   "scripts": {
-    "prepare": "npm run build",
     "build": "npm-run-all -p build:*",
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/es",
     "clean": "rimraf dist/",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -29,7 +27,7 @@
     "test:ci:update": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
+    "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "rc-tooltip": "^3.7.0",
     "rc-util": "^4.0.4",
@@ -38,34 +36,34 @@
     "warning": "^4.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.7.0",
-    "@rushstack/eslint-config": "^2.3.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.0.4",
-    "cross-env": "^7.0.2",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.5",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
-    "eslint": "^7.16.0",
-    "jest": "^26.4.2",
-    "jest-standard-reporter": "^1.1.1",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
     "pcln-design-system": "workspace:*",
     "rc-tools": "^8.4.5",
     "rc-trigger": "^2.6.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "styled-components": "^4.4.1"
   },
   "peerDependencies": {
     "pcln-design-system": "^4.7.1",
-    "react": "^16.10.0",
-    "react-dom": "^16.10.0",
+    "react": ">= 16.10.0",
+    "react-dom": ">= 16.10.0",
     "styled-components": ">=4.4.1"
   }
 }

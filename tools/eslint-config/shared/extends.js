@@ -5,5 +5,4 @@ module.exports = [
   'plugin:sonarjs/recommended',
   'plugin:import/warnings',
   'prettier',
-  'prettier/react',
 ]

@@ -11,6 +11,7 @@
    * "rush my-global-command --help".
    */
   "commands": [
+    // prettier (auto-installer for pre-commit hook)
     {
       "name": "prettier",
       "commandKind": "global",
@@ -22,27 +23,7 @@
       "shellCommand": "pretty-quick --staged"
     },
 
-    {
-      "name": "test:ci",
-      "commandKind": "bulk",
-      "summary": "Run unit tests for serially for each project to prevent thread contention",
-      "description": "Run unit tests for serially for each project to prevent thread contention",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true
-    },
-    {
-      "name": "test:ci:update",
-      "commandKind": "bulk",
-      "summary": "Update jest snapshots in all projects",
-      "description": "Update jest snapshots in all projects",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true
-    },
-
+    // prepare
     {
       "commandKind": "global",
       "name": "prepare",
@@ -51,6 +32,34 @@
       "safeForSimultaneousRushProcesses": true,
       "shellCommand": "rush install && rush build"
     },
+
+    // test:ci
+    {
+      "name": "test:ci",
+      "commandKind": "bulk",
+      "summary": "Run unit tests for serially for each project to prevent thread contention",
+      "description": "Run unit tests for serially for each project to prevent thread contention",
+      "safeForSimultaneousRushProcesses": true,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "incremental": true
+    },
+
+    // test:ci:update
+    {
+      "name": "test:ci:update",
+      "commandKind": "bulk",
+      "summary": "(incremental) Update jest snapshots in all projects",
+      "description": "(incremental) Update jest snapshots in all projects",
+      "safeForSimultaneousRushProcesses": true,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
+      "incremental": true
+    },
+
+    // lint
     {
       "name": "lint",
       "commandKind": "bulk",
@@ -58,8 +67,11 @@
       "description": "Run ESLint static analysis against all projects",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
-      "ignoreDependencyOrder": true
+      "ignoreDependencyOrder": true,
+      "incremental": true
     },
+
+    // lint:fix
     {
       "name": "lint:fix",
       "commandKind": "bulk",
@@ -67,9 +79,11 @@
       "description": "Run ESLint static analysis against all projects",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
-      "ignoreDependencyOrder": true
+      "ignoreDependencyOrder": true,
+      "incremental": true
     },
 
+    // storybook
     {
       "name": "storybook",
       "commandKind": "global",
@@ -95,6 +109,7 @@
       "shellCommand": "(cd apps/storybook && rushx storybook:baseline)"
     },
 
+    // docsite
     {
       "name": "docsite",
       "commandKind": "global",
@@ -103,16 +118,6 @@
       "safeForSimultaneousRushProcesses": false,
       "shellCommand": "(cd apps/docs && rushx start)"
     },
-
-    {
-      "name": "create",
-      "commandKind": "global",
-      "summary": "Runs the generator",
-      "description": "Run the generator to scaffold new projects, components, etc.",
-      "safeForSimultaneousRushProcesses": false,
-      "shellCommand": "plop --plopfile tools/boilerplate/plopfile.js"
-    },
-
     {
       "name": "build:docsite",
       "commandKind": "global",
@@ -122,6 +127,17 @@
       "shellCommand": "(cd apps/docs && rushx build:docs)"
     },
 
+    // create
+    {
+      "name": "create",
+      "commandKind": "global",
+      "summary": "Runs the generator",
+      "description": "Run the generator to scaffold new projects, components, etc.",
+      "safeForSimultaneousRushProcesses": false,
+      "shellCommand": "plop --plopfile tools/boilerplate/plopfile.js"
+    },
+
+    // create-release-notes
     {
       "name": "create-release-notes",
       "commandKind": "global",

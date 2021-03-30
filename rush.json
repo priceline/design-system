@@ -6,30 +6,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
 
   /**
-   * (Required) This specifies the version of the Rush engine to be used in this repo.
-   * Rush's "version selector" feature ensures that the globally installed tool will
-   * behave like this release, regardless of which version is installed globally.
-   *
-   * The common/scripts/install-run-rush.js automation script also uses this version.
-   *
    * NOTE: If you upgrade to a new major version of Rush, you should replace the "v5"
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.35.2",
-
-  /**
-   * The next field selects which package manager should be installed and determines its version.
-   * Rush installs its own local copy of the package manager to ensure that your build process
-   * is fully isolated from whatever tools are present in the local environment.
-   *
-   * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
-   * for details about these alternatives.
-   */
-  "pnpmVersion": "5.14.1",
-
-  // "npmVersion": "4.5.0",
-  // "yarnVersion": "1.9.4",
+  "rushVersion": "5.42.3",
+  "pnpmVersion": "5.18.7",
 
   /**
    * Options that are only used when the PNPM package manager is selected
@@ -106,7 +88,7 @@
      *
      * This option is experimental. The default value is false.
      */
-     "useWorkspaces": true
+    "useWorkspaces": true
   },
 
   /**
@@ -329,16 +311,7 @@
    *
    * For more details and instructions, see this article:  https://rushjs.io/pages/advanced/installation_variants/
    */
-  "variants": [
-    {
-      "variantName": "styled-components-v4",
-      "description": "Build this repo using styled-components v4"
-    },
-    {
-      "variantName": "styled-components-v5",
-      "description": "Build this repo using styled-components v5"
-    }
-  ],
+  "variants": [],
 
   /**
    * Rush can collect anonymous telemetry about everyday developer activity such as

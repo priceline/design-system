@@ -1,93 +1,64 @@
 import React from 'react'
-import { optionsKnob, withKnobs } from '@storybook/addon-knobs'
-import { Catch, LiveEditor, Markdown } from '@compositor/kit'
-import { BackgroundImage, Box, Flex, Text } from '..'
 
-const image =
-  'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
-const parallaxImage =
-  'https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg'
-
-const variations = { static: 'static', parallax: 'parallax' }
+import { BackgroundImage, Box, Text } from '..'
+import { argTypes, defaultArgs } from './BackgroundImage.stories.args'
 
 export default {
-  title: 'BackgroundImage',
-
+  title: 'core / BackgroundImage',
+  component: BackgroundImage,
+  args: defaultArgs,
+  argTypes,
   decorators: [
-    (story) => (
-      <Box>
-        <Markdown>
-          {`Use the <code>&lt;BackgroundImage /&gt;</code> component to render a background image. Use the *variation* prop to change the attachment mode of the background.`}
-        </Markdown>
-        {story()}
+    (Story) => (
+      <Box height='600px' width='100%'>
+        {Story()}
       </Box>
     ),
-    withKnobs,
   ],
-
   parameters: {
-    component: BackgroundImage,
+    docs: {
+      description: {
+        component: `Use the <code>&lt;BackgroundImage /&gt;</code> component to render a
+    background image. Use the *variation* prop to change the attachment mode
+    of the background.`,
+      },
+    },
   },
 }
 
-export const Variations = () => {
-  const variation = optionsKnob('Variation', variations, 'parallax', {
-    display: 'select',
-  })
+const Template = (args) => <BackgroundImage {...args} />
 
-  return (
-    <Catch>
-      <LiveEditor
-        code={`
-<BackgroundImage
-  height="600px"
-  width={1}
-  variation='${variation}'
-  image='${parallaxImage}'
-/>
-          `}
-        scope={{ BackgroundImage }}
-      />
-    </Catch>
-  )
+export const _BackgroundImage = Template.bind({})
+
+const StoryChildren = () => (
+  <Box p={4}>
+    <Text fontSize={6} fontWeight='bold' textAlign='center' color='white'>
+      Hello
+    </Text>
+  </Box>
+)
+
+export const FixedHeight = Template.bind({})
+FixedHeight.args = {
+  height: '320px',
+  width: '360px',
+  children: <StoryChildren />,
 }
 
-export const FixedHeight = () => (
-  <Box>
-    <BackgroundImage height='320px' image={image} width='360px'>
-      <Box p={4}>
-        <Text fontSize={6} bold textAlign='center' color='white'>
-          Hello
-        </Text>
-      </Box>
-    </BackgroundImage>
-  </Box>
-)
+export const FixedIntHeight = Template.bind({})
+FixedIntHeight.storyName = 'Fixed Height (Integer)'
+FixedIntHeight.args = {
+  height: 400,
+  width: '360px',
+  children: <StoryChildren />,
+}
 
-export const FixedIntHeight = () => (
-  <Box>
-    <BackgroundImage height={400} image={image} width='360px'>
-      <Box p={4}>
-        <Text fontSize={6} bold textAlign='center' color='white'>
-          Hello
-        </Text>
-      </Box>
-    </BackgroundImage>
-  </Box>
-)
-
-export const Responsive = () => (
-  <Flex>
-    <BackgroundImage
-      width={['100px', '216px', '260px']}
-      height={['100px', '300px', '600px']}
-      image={image}
-    >
-      <Box p={4}>
-        <Text fontSize={6} bold textAlign='center' color='white'>
-          Hello
-        </Text>
-      </Box>
-    </BackgroundImage>
-  </Flex>
-)
+export const Responsive = Template.bind({})
+Responsive.args = {
+  height: ['100px', '300px', '600px'],
+  width: ['100%', '216px', '260px'],
+  children: <StoryChildren />,
+}
+Responsive.parameters = {
+  viewport: { defaultViewport: 'designSystem_xs' },
+}

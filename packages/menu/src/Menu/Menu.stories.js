@@ -1,17 +1,29 @@
-/* eslint-disable sonarjs/no-identical-functions */
-
 import React, { useState } from 'react'
-import { ButtonChip, Flex, Text } from 'pcln-design-system'
+import { Box, ButtonChip, Flex, Text } from 'pcln-design-system'
+
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
+import MenuList from '../MenuList'
+
 import { listItems, currencies } from '../../test/mocks/Menu'
+import { argTypes, defaultArgs } from './Menu.stories.args'
 
 export default {
-  title: 'pcln-menu|Menu',
+  title: 'pcln-menu / Menu',
   component: Menu,
+  subcomponents: {
+    MenuItem,
+    MenuList,
+  },
+  args: defaultArgs,
+  argTypes,
+  decorators: [(Story) => <Box height='320px'>{Story()}</Box>],
+  parameters: {
+    docs: { description: { component: 'some component **markdown**' } },
+  },
 }
 
-const RenderChildren = (listItems) => {
+const MenuItems = () => {
   const [value, setValue] = useState('one')
 
   return listItems.map((item, index) => {
@@ -29,25 +41,30 @@ const RenderChildren = (listItems) => {
     )
   })
 }
+const CurrencyItems = ({ currencyCode, setCurrencyCode }) =>
+  currencies.map((currency, index) => {
+    const selected = currencyCode === currency.code
+    const onClick = () => setCurrencyCode(currency.code)
+    return (
+      <MenuItem key={index} selected={selected} onClick={onClick}>
+        <Text regular width={32} textAlign='center' mr={3}>
+          {currency.symbol}
+        </Text>
+        <Text regular>{currency.label}</Text>
+      </MenuItem>
+    )
+  })
 
-export const MultilineMenu = () => {
-  return (
-    <Menu isOpen buttonText='Menu'>
-      {RenderChildren(listItems)}
-    </Menu>
-  )
-}
+const Template = (args) => <Menu {...args} />
 
-export const MultilineMenuWithColorProp = () => {
-  return (
-    <Menu color='promoSecondary' isOpen buttonText='Menu'>
-      {RenderChildren(listItems)}
-    </Menu>
-  )
+export const MultilineMenu = Template.bind({})
+MultilineMenu.args = {
+  children: <MenuItems />,
 }
 
 export const MultilineMenuWithCustomColors = () => {
   const [value, setValue] = useState('one')
+
   return (
     <Menu isOpen buttonText='Menu'>
       {listItems.map((item, index) => {
@@ -75,23 +92,15 @@ export const MultilineMenuWithCustomColors = () => {
   )
 }
 
-export const Columns = () => {
+export const TwoColumns = () => {
   const [currencyCode, setCurrencyCode] = useState('USD')
 
   return (
-    <Menu idx='currency-selector' buttonText={currencyCode} size='twoColumns'>
-      {currencies.map((currency, index) => {
-        const selected = currencyCode === currency.code
-        const onClick = () => setCurrencyCode(currency.code)
-        return (
-          <MenuItem key={index} selected={selected} onClick={onClick}>
-            <Text regular width={32} textAlign='center' mr={3}>
-              {currency.symbol}
-            </Text>
-            <Text regular>{currency.label}</Text>
-          </MenuItem>
-        )
-      })}
+    <Menu buttonText={currencyCode} size='twoColumns'>
+      <CurrencyItems
+        currencyCode={currencyCode}
+        setCurrencyCode={setCurrencyCode}
+      />
     </Menu>
   )
 }
@@ -101,18 +110,10 @@ export const Scrollable = () => {
 
   return (
     <Menu buttonText={currencyCode} width={350} height={300}>
-      {currencies.map((currency, index) => {
-        const selected = currencyCode === currency.code
-        const onClick = () => setCurrencyCode(currency.code)
-        return (
-          <MenuItem key={index} selected={selected} onClick={onClick}>
-            <Text regular width={32} textAlign='center' mr={3}>
-              {currency.symbol}
-            </Text>
-            <Text regular>{currency.label}</Text>
-          </MenuItem>
-        )
-      })}
+      <CurrencyItems
+        currencyCode={currencyCode}
+        setCurrencyCode={setCurrencyCode}
+      />
     </Menu>
   )
 }
@@ -122,22 +123,13 @@ export const BreakpointColumns = () => {
 
   return (
     <Menu
-      idx='currency-selector'
       buttonText={currencyCode}
       size={['singleColumn', null, null, 'twoColumns']}
     >
-      {currencies.map((currency, index) => {
-        const selected = currencyCode === currency.code
-        const onClick = () => setCurrencyCode(currency.code)
-        return (
-          <MenuItem key={index} selected={selected} onClick={onClick}>
-            <Text regular width={32} textAlign='center' mr={3}>
-              {currency.symbol}
-            </Text>
-            <Text regular>{currency.label}</Text>
-          </MenuItem>
-        )
-      })}
+      <CurrencyItems
+        currencyCode={currencyCode}
+        setCurrencyCode={setCurrencyCode}
+      />
     </Menu>
   )
 }
@@ -152,7 +144,7 @@ export const ButtonProps = () => {
         buttonText='Menu'
         buttonProps={{ color: 'text.lightest', size: 'large', width: 1, p: 3 }}
       >
-        {RenderChildren(listItems)}
+        <MenuItems />
       </Menu>
       <Text>Example</Text>
     </Flex>

@@ -167,6 +167,6 @@ export const CustomChip = () => (
 
 //Default
 export default {
-  title: 'Chip.ChoiceChip',
+  title: 'core / Chip / ChoiceChip',
   component: ChoiceChip,
 }

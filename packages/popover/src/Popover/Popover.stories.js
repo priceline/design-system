@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars, react/prop-types */
 import React from 'react'
 import {
   Title,
@@ -8,7 +7,6 @@ import {
   Primary,
   Props,
 } from '@storybook/addon-docs/blocks'
-import { boolean } from '@storybook/addon-knobs'
 import { DraggableParent, DraggableItem } from 'react-draggable-playground'
 import styled from 'styled-components'
 import {
@@ -49,23 +47,23 @@ export default {
   },
 }
 
-export const playground = () => (
-  <React.Fragment>
-    <Playground>
-      <Popover
-        renderContent={PriceGuidanceContent}
-        placement='top'
-        ariaLabel='Price Guidance Popover'
-        idx={1}
-        width={370}
-        overlayOpacity={0.3}
-        trapFocus={boolean('Trap focus', false)}
-      >
-        <Button>Popover</Button>
-      </Popover>
-    </Playground>
-  </React.Fragment>
-)
+// export const playground = () => (
+//   <React.Fragment>
+//     <Playground>
+//       <Popover
+//         renderContent={PriceGuidanceContent}
+//         placement='top'
+//         ariaLabel='Price Guidance Popover'
+//         idx={1}
+//         width={370}
+//         overlayOpacity={0.3}
+//         trapFocus={boolean('Trap focus', false)}
+//       >
+//         <Button>Popover</Button>
+//       </Popover>
+//     </Playground>
+//   </React.Fragment>
+// )
 
 export const colors = () => (
   <Flex>

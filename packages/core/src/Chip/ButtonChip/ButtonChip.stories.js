@@ -213,6 +213,6 @@ export const CustomChip = () => (
 
 //Default
 export default {
-  title: 'Chip.ButtonChip',
+  title: 'core / Chip / ButtonChip',
   component: ButtonChip,
 }

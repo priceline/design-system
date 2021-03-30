@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { boolean, withKnobs } from '@storybook/addon-knobs'
-import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
 
-import { Modal, SmallModalHeader, ModalHeader, ScrollLock } from '../src'
+import { Modal, SmallModalHeader, ScrollLock } from '../src'
 import { Button } from 'pcln-design-system'
 
 const StyledModal = styled(Modal)`
@@ -63,7 +61,6 @@ class ModalStory extends React.Component {
 
 export default {
   title: 'pcln-modal/Modal',
-  decorators: [withKnobs],
   component: Modal,
 }
 
@@ -82,32 +79,32 @@ WithSmallModalHeader.story = {
   name: 'With SmallModalHeader',
 }
 
-export const WithModalHeaderAndScrollLock = () => {
-  // Generate content to demonstrate a scrollable <body>
-  const contentLines = [...Array(100).keys()]
+// export const WithModalHeaderAndScrollLock = () => {
+//   // Generate content to demonstrate a scrollable <body>
+//   const contentLines = [...Array(100).keys()]
 
-  return (
-    <div>
-      <h1>Scroll down to open modal</h1>
-      {contentLines.map((i, idx) => (
-        <div key={idx}>Line {idx}</div>
-      ))}
-      <ModalStory
-        header={
-          <ModalHeader title='Modal title' onClose={action('Modal closed!')} />
-        }
-        height={['90vh', '460px', '560px']}
-        width={['80vw', '400px', '500px']}
-        lock={true}
-        fullScreen={boolean('fullScreen', false)}
-      />
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <h1>Scroll down to open modal</h1>
+//       {contentLines.map((i, idx) => (
+//         <div key={idx}>Line {idx}</div>
+//       ))}
+//       <ModalStory
+//         header={
+//           <ModalHeader title='Modal title' onClose={action('Modal closed!')} />
+//         }
+//         height={['90vh', '460px', '560px']}
+//         width={['80vw', '400px', '500px']}
+//         lock={true}
+//         fullScreen={boolean('fullScreen', false)}
+//       />
+//     </div>
+//   )
+// }
 
-WithModalHeaderAndScrollLock.story = {
-  name: 'With ModalHeader (and ScrollLock!)',
-}
+// WithModalHeaderAndScrollLock.story = {
+//   name: 'With ModalHeader (and ScrollLock!)',
+// }
 
 export const WithOverflow = () => (
   <ModalStory

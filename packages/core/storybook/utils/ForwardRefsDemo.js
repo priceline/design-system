@@ -14,5 +14,5 @@ ForwardRefsDemo.propTypes = {
   /**
    * Render prop that receives a ref stored on the instance of <ForwardRefsDemo/>
    */
-  refChild: PropTypes.node,
+  refChild: PropTypes.func,
 }
