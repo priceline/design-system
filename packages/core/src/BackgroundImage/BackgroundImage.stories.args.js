@@ -1,8 +1,6 @@
 const variations = ['static', 'parallax']
 const image =
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
-// const parallaxImage =
-//   'https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg'
 
 export const defaultArgs = {
   height: '320px',
