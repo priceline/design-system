@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-// import { Modal, SmallModalHeader, ModalHeader, ScrollLock } from '../src'
 import { Modal, SmallModalHeader, ScrollLock } from '../src'
 import { Button } from 'pcln-design-system'
 
