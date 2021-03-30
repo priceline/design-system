@@ -6,7 +6,7 @@ const theme = createTheme()
 // https://storybook.js.org/docs/react/configure/theming#create-a-theme-quickstart
 
 export default create({
-  base: 'dark',
+  base: 'light',
 
   brandTitle: 'Priceline Design System',
   brandUrl: 'https://www.priceline.com',
