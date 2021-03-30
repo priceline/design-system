@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Banner accepts non-preset colors 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #4f6f8f;
+  color: #0a0;
+}
+
 .c2 {
   text-align: left;
   width: 100%;
@@ -25,12 +31,6 @@ exports[`Banner accepts non-preset colors 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #4f6f8f;
-  color: #0a0;
-}
-
 <div
   className="c0"
   color="green"
@@ -52,6 +52,12 @@ exports[`Banner accepts non-preset colors 1`] = `
 `;
 
 exports[`Banner renders content from children props 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -88,12 +94,6 @@ exports[`Banner renders content from children props 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
 }
 
 <div
@@ -135,6 +135,12 @@ exports[`Banner renders content from children props 1`] = `
 `;
 
 exports[`Banner renders with blue bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #0068EF;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -171,12 +177,6 @@ exports[`Banner renders with blue bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0068EF;
-  color: #fff;
 }
 
 <div
@@ -215,6 +215,12 @@ exports[`Banner renders with blue bg 1`] = `
 `;
 
 exports[`Banner renders with custom iconName and size 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -251,12 +257,6 @@ exports[`Banner renders with custom iconName and size 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
 }
 
 <div
@@ -295,6 +295,12 @@ exports[`Banner renders with custom iconName and size 1`] = `
 `;
 
 exports[`Banner renders with green bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -331,12 +337,6 @@ exports[`Banner renders with green bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
 }
 
 <div
@@ -376,7 +376,13 @@ exports[`Banner renders with green bg 1`] = `
 
 exports[`Banner renders with header node 1`] = `
 <DocumentFragment>
-  .c5 {
+  .c1 {
+  text-align: left;
+  background-color: secondary.base;
+  color: text.lightest;
+}
+
+.c5 {
   text-align: left;
   width: 100%;
 }
@@ -412,12 +418,6 @@ exports[`Banner renders with header node 1`] = `
 
 .c4 {
   outline: none;
-}
-
-.c1 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
 }
 
 .c0 {
@@ -482,6 +482,12 @@ exports[`Banner renders with header node 1`] = `
 `;
 
 exports[`Banner renders with lightBlue bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #e8f2ff;
+  color: #049;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -518,12 +524,6 @@ exports[`Banner renders with lightBlue bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #e8f2ff;
-  color: #049;
 }
 
 <div
@@ -562,6 +562,12 @@ exports[`Banner renders with lightBlue bg 1`] = `
 `;
 
 exports[`Banner renders with lightGreen bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #ecf7ec;
+  color: #060;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -598,12 +604,6 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #ecf7ec;
-  color: #060;
 }
 
 <div
@@ -642,6 +642,12 @@ exports[`Banner renders with lightGreen bg 1`] = `
 `;
 
 exports[`Banner renders with lightRed bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #fbebeb;
+  color: #800;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -678,12 +684,6 @@ exports[`Banner renders with lightRed bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #fbebeb;
-  color: #800;
 }
 
 <div
@@ -722,6 +722,12 @@ exports[`Banner renders with lightRed bg 1`] = `
 `;
 
 exports[`Banner renders with no props other than theme 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -758,12 +764,6 @@ exports[`Banner renders with no props other than theme 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
 }
 
 <div
@@ -802,6 +802,12 @@ exports[`Banner renders with no props other than theme 1`] = `
 `;
 
 exports[`Banner renders with orange bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #f68013;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -838,12 +844,6 @@ exports[`Banner renders with orange bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #f68013;
-  color: #fff;
 }
 
 <div
@@ -882,6 +882,12 @@ exports[`Banner renders with orange bg 1`] = `
 `;
 
 exports[`Banner renders with red bg 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #c00;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -918,12 +924,6 @@ exports[`Banner renders with red bg 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: #c00;
-  color: #fff;
 }
 
 <div
@@ -962,6 +962,12 @@ exports[`Banner renders with red bg 1`] = `
 `;
 
 exports[`Banner renders with text node 1`] = `
+.c0 {
+  text-align: left;
+  background-color: secondary.base;
+  color: text.lightest;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -982,14 +988,14 @@ exports[`Banner renders with text node 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
-  font-size: 14px;
-}
-
 .c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+.c6 {
+  font-size: 14px;
 }
 
 .c2 {
@@ -1004,12 +1010,6 @@ exports[`Banner renders with text node 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
 }
 
 <div
@@ -1059,6 +1059,12 @@ exports[`Banner renders with text node 1`] = `
 `;
 
 exports[`Banner renders with text string 1`] = `
+.c0 {
+  text-align: left;
+  background-color: secondary.base;
+  color: text.lightest;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -1079,14 +1085,14 @@ exports[`Banner renders with text string 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
-  font-size: 14px;
-}
-
 .c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+.c6 {
+  font-size: 14px;
 }
 
 .c2 {
@@ -1101,12 +1107,6 @@ exports[`Banner renders with text string 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
 }
 
 <div
