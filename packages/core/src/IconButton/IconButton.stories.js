@@ -26,7 +26,6 @@ export const WithColor = () => (
   />
 )
 
-WithColor.storyName = 'with color'
 
 export const WithSize = () => (
   <IconButton
