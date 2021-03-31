@@ -91,7 +91,7 @@ export default [
         name: 'Contributing',
         isExternal: true,
         path:
-          'https://github.com/priceline/design-system/blob/master/CONTRIBUTING.md',
+          'https://github.com/priceline/design-system/blob/main/CONTRIBUTING.md',
       },
       {
         name: 'GitHub',

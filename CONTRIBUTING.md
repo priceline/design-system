@@ -139,28 +139,28 @@ rush docsite
 ### GitHub Flow
 
 We follow a loose version of [GitHub Flow][github-flow] where feature branches
-are created from master, submitted as pull requests, given time for review and
-discussion, then merged into master.
+are created from main, submitted as pull requests, given time for review and
+discussion, then merged into main.
 
-All merges into master should be ready to be published. The Design System Working Group will batch releases as appropriate.
+All merges into main should be ready to be published. The Design System Working Group will batch releases as appropriate.
 
 Generally, the workflow looks like this:
 
-1. Pull the latest changes from master
+1. Pull the latest changes from main
 1. Create a new feature branch (pick a name that clearly describes the feature)
 1. Commit changes to your feature branch (smaller commits with clear messages are best)
 1. Run `rush change` to document your changes
 1. Push your branch to origin
 1. Open a Pull Request with a clear description of the change (Answering _what_, _why_, and _how_ is a good place to start)
 1. Allow for some time for discussion
-1. (optional) If your PR has merge conflicts, pull the latest from master, then merge those changes into your PR branch, resolving conflicts in the process
-1. Once there is consensus on the changes and all tests have passed, merge the PR into master
+1. (optional) If your PR has merge conflicts, pull the latest from main, then merge those changes into your PR branch, resolving conflicts in the process
+1. Once there is consensus on the changes and all tests have passed, merge the PR into main
 
 ### Pull Requests
 
 All changes to the code base must be submitted as a Pull Request (PR) and approved
 by at least two members of the team before it can be merged to
-master. This gives contributors and the team a chance to review and discuss
+main. This gives contributors and the team a chance to review and discuss
 changes and helps create a record of the project's history.
 
 If you're unsure about your change, feel free to open a PR for discussion or
