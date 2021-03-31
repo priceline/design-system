@@ -24,7 +24,7 @@ npm run build
 
 ## Automatic deploys
 
-The docs site is automatically built with GitHub Actions on all merges into master.
+The docs site is automatically built with GitHub Actions on all merges into main.
 
 ## Adding Routes & Navigation
 

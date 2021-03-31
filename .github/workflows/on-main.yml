@@ -1,11 +1,11 @@
-name: On Master Merge - Build Static Docsite and Storybook
+name: On Main Merge - Build Static Docsite and Storybook
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
-  on-master-docsite-storybook:
+  on-main-docsite-storybook:
     runs-on: ubuntu-latest
 
     steps:
