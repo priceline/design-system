@@ -18,7 +18,6 @@ export const Default = () => (
   />
 )
 
-Default.storyName = 'default'
 
 export const WithColor = () => (
   <IconButton
