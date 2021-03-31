@@ -7,7 +7,7 @@ export default {
 }
 
 export const Basic = () => (
-  <Flex alignItems='center'>
+  <Flex align='center'>
     <Box width={1 / 2} p={3} color='white' bg='blue'>
       Flex
     </Box>
@@ -18,7 +18,7 @@ export const Basic = () => (
 )
 
 export const Wrap = () => (
-  <Flex flexWrap='wrap'>
+  <Flex wrap='wrap'>
     <Box width={[1, 1 / 2]} p={3} color='white' bg='blue'>
       Flex
     </Box>
@@ -38,21 +38,6 @@ export const Justify = () => (
     </Box>
   </Flex>
 )
-
-export const DeprecatedAlignShim = () => (
-  <Flex align='center'>
-    <Box width={1 / 2} p={3} color='white' bg='blue'>
-      Flex
-    </Box>
-    <Box width={1 / 2} p={1} color='white' bg='green'>
-      Box
-    </Box>
-  </Flex>
-)
-
-DeprecatedAlignShim.story = {
-  name: 'deprecated align shim',
-}
 
 export const DeprecatedBgShim = () => (
   <Flex bg='blue'>

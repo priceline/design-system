@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-codemods",
+      "comment": "Create package",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-codemods",
+  "email": "craig.palermo@priceline.com"
+}

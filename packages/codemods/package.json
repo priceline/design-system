@@ -1,0 +1,59 @@
+{
+  "name": "pcln-codemods",
+  "version": "0.0.1-beta.5",
+  "scripts": {
+    "build": "",
+    "clean": "rimraf dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest --verbose --coverage --passWithNoTests",
+    "test:ci": "jest --silent --coverage --runInBand --passWithNoTests",
+    "test:update": "jest --updateSnapshot",
+    "test:ci:update": "jest --runInBand --updateSnapshot"
+  },
+  "files": [
+    "bin",
+    "transforms"
+  ],
+  "bin": {
+    "pcln-codemods": "./bin/react-codemod.js"
+  },
+  "keywords": [],
+  "author": "Priceline",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "execa": "^3.2.0",
+    "globby": "^10.0.0",
+    "inquirer": "^7.0.0",
+    "is-git-clean": "^1.1.0",
+    "jscodeshift": "^0.11.0",
+    "lodash.get": "^4.4.2",
+    "meow": "^5.0.0",
+    "pcln-design-system": "workspace:*",
+    "prop-types": "^15.7.2",
+    "styled-components": "^4.4.1",
+    "styled-system": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@priceline/babel-preset": "workspace:*",
+    "@priceline/eslint-config": "workspace:*",
+    "@rushstack/eslint-patch": "^1.0.6",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "jest-standard-reporter": "^2.0.0",
+    "jest-styled-components": "^6.3.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "../../test-setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/*.js"
+    ]
+  }
+}
