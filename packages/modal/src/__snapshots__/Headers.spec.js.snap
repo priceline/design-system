@@ -138,7 +138,7 @@ exports[`ModalHeader render 1`] = `
   >
     <div
       class="c1 c2 c3"
-      color="white"
+      color="secondary"
     >
       <div
         class="c4 c5"
@@ -179,6 +179,7 @@ exports[`ModalHeader render 1`] = `
 exports[`SmallModalHeader render 1`] = `
 .c1 {
   background-color: #0a0;
+  color: #fff;
 }
 
 .c0 {
@@ -201,6 +202,7 @@ exports[`SmallModalHeader render 1`] = `
   >
     <div
       class="c1 c2"
+      color="secondary"
     />
   </div>
 </div>

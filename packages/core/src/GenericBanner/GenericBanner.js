@@ -59,7 +59,11 @@ const GenericBanner = ({
       {URLProps && (
         <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />
       )}
-      <BannerWithRadius {...props} onClick={URLProps ? null : buttonClick}>
+      <BannerWithRadius
+        {...props}
+        onClick={URLProps ? null : buttonClick}
+        showIcon={false}
+      >
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}

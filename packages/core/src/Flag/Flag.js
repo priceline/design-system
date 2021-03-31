@@ -12,7 +12,6 @@ import {
   hasPaletteColor,
   color,
   deprecatedColorValue,
-  deprecatedPropType,
 } from '../utils'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
@@ -74,29 +73,22 @@ const StyledFlex = styled(Flex)`
   ${applyVariations('Flag')}
 `
 
-const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
+const Flag = ({ color, children, pl, pr, py, width, ...props }) => (
   <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
       <FlagShadow
         width='4px'
         mr={-2}
         mb={-2}
-        color={hasPaletteColor({ color, ...props }) ? color : bg}
+        color={hasPaletteColor({ color, ...props }) ? color : ''}
       />
     </RelativeHide>
-    <FlagBody
-      flexAuto={!!width}
-      color={color}
-      bg={hasPaletteColor({ color, ...props }) ? false : bg}
-      pl={pl}
-      pr={pr}
-      py={py}
-    >
+    <FlagBody flexAuto={!!width} color={color} pl={pl} pr={pr} py={py}>
       {children}
     </FlagBody>
     <FlagRight
       width='18px'
-      color={hasPaletteColor({ color, ...props }) ? color : bg}
+      color={hasPaletteColor({ color, ...props }) ? color : ''}
       ml={-2}
     />
   </StyledFlex>
@@ -104,13 +96,11 @@ const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
 
 Flag.propTypes = {
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
   ...propTypes.space,
 }
 
 Flag.defaultProps = {
-  color: 'white',
-  bg: 'green',
+  color: 'secondary',
   pl: [1, 3],
   pr: null,
   py: [1, 2],

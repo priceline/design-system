@@ -5,7 +5,6 @@ import propTypes from '@styled-system/prop-types'
 import pick from 'lodash.pick'
 import { themeGet } from '@styled-system/theme-get'
 import {
-  deprecatedPropType,
   applySizes,
   applyVariations,
   getPaletteColor,
@@ -161,7 +160,6 @@ Button.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   ...pick(propTypes.layout, ['width']),
   ...propTypes.space,
-  fullWidth: deprecatedPropType('width'),
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   disabled: PropTypes.bool,

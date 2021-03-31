@@ -2,15 +2,6 @@ import { themeGet } from '@styled-system/theme-get'
 import { css } from 'styled-components'
 import { mediaQueries } from '../theme'
 
-// Use this to mark props as deprecated
-export const deprecatedPropType = (replacement) => (props, propName) => {
-  if (props[propName]) {
-    return new Error(
-      `The \`${propName}\` prop is deprecated and will be removed in a future release. Please use \`${replacement}\` instead.`
-    )
-  }
-}
-
 export const deprecatedColorValue = () => (props, propName, componentName) => {
   if (
     process.env.NODE_ENV !== 'production' &&
@@ -279,6 +270,12 @@ export const getByPalette = (props) => css`
  * @returns {string|css}
  */
 export const color = (props) => {
+  if (props.bg) {
+    throw new Error(
+      'The "bg" prop has been removed. Please use "color" instead.'
+    )
+  }
+
   if (!props.theme || (!props.color && !props.bg)) {
     return ''
   } else if (props.color === 'text') {

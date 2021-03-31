@@ -46,16 +46,6 @@ const color = (props) => {
   return null
 }
 
-const bg = (props) => {
-  if (props.bg) {
-    return css`
-      background-color: ${getPaletteColor(props.bg, 'base')(props)};
-    `
-  }
-
-  return null
-}
-
 const Svg = styled('svg')`
   flex: none;
   line-height: 1;
@@ -63,7 +53,6 @@ const Svg = styled('svg')`
   ${space}
   ${width}
   ${color}
-  ${bg}
 `
 
 Svg.propTypes = {
