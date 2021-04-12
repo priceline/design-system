@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {
-  Visibility,
-  VisibilityOff,
   Check,
   Success,
   SuccessOutline,
+  Visibility,
+  VisibilityOff,
 } from 'pcln-icons'
 import {
+  Badge,
   Flex,
-  Text,
+  IconButton,
+  IconField,
   Input,
   Label,
-  IconField,
-  Badge,
   ProgressBar,
-  IconButton,
-} from '../../src'
+} from '..'
+import { Text } from '../Text'
 
-const CustomText = styled(Text)`
+const NoWrapText = styled(Text)`
   white-space: nowrap;
 `
 
@@ -33,6 +33,7 @@ function PasswordInput({
   value,
   onChange,
   autoComplete,
+  ...props
 }) {
   const [showPassword, setShowPassword] = useState(false)
   const [passedChecks, setPassedChecks] = useState([])
@@ -68,7 +69,7 @@ function PasswordInput({
   const showCheckIcon = strengthLevel === maxProgressBarLength
 
   return (
-    <Flex flexDirection='column'>
+    <Flex flexDirection='column' {...props}>
       <Label fontSize={0} mb={2}>
         {label}
       </Label>
@@ -92,9 +93,9 @@ function PasswordInput({
       {hasProgressBar && (
         <Flex flexDirection='column'>
           <Flex alignItems='center' mt={2} mb={2}>
-            <CustomText fontSize={0} color='text.light' mr={2}>
+            <NoWrapText fontSize={0} color='text.light' mr={2}>
               Password Strength:{' '}
-            </CustomText>
+            </NoWrapText>
             <Badge color={currentStep.color} size='small'>
               {currentStep.text}
             </Badge>
@@ -105,9 +106,9 @@ function PasswordInput({
             mt={2}
             mb={[2, null, 0]}
           >
-            <CustomText fontSize={0} color='text.light' mr={3}>
+            <NoWrapText fontSize={0} color='text.light' mr={3}>
               Must contain:
-            </CustomText>
+            </NoWrapText>
             <Flex flexDirection={['column', null, 'row']} wrap>
               {regexChecks.map((check, index) => {
                 const didPass =
@@ -130,9 +131,9 @@ function PasswordInput({
                         Icon === Success ? 'check-icon-on' : 'check-icon-off'
                       }
                     />
-                    <CustomText fontSize={0} color={color} mr={3}>
+                    <NoWrapText fontSize={0} color={color} mr={3}>
                       {check.label}
-                    </CustomText>
+                    </NoWrapText>
                   </Flex>
                 )
               })}
