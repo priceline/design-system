@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen, fireEvent } from 'testing-library'
 import PasswordInput from './PasswordInput'
 
-const sampleRegexCheckx = [
+const sampleRegexChecks = [
   { label: '1 Uppercase Letter', regex: /(?=.*[A-Z])/ },
   { label: '1 Lowercase Letter', regex: /(?=.*[a-z])/ },
 ]
@@ -86,7 +86,7 @@ describe('PasswordInput', () => {
     render(
       <PasswordInput
         hasProgressBar
-        regexChecks={sampleRegexCheckx}
+        regexChecks={sampleRegexChecks}
         onChange={mockOnChange}
       />
     )
@@ -106,5 +106,14 @@ describe('PasswordInput', () => {
 
     const checkMark = screen.queryAllByTestId('check-mark-icon')
     expect(checkMark).toHaveLength(1)
+  })
+
+  it('ignores regex checks and returns valid if no progress bar', () => {
+    const mockOnChange = jest.fn()
+    render(<PasswordInput label='Password' onChange={mockOnChange} />)
+
+    const inputField = screen.getByTestId('input-field')
+    fireEvent.change(inputField, { target: { value: 'test' } })
+    expect(mockOnChange).toHaveBeenCalledWith({ isValid: true, value: 'test' })
   })
 })

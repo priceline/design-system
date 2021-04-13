@@ -26,6 +26,7 @@ const NoWrapText = styled(Text)`
 const maxProgressBarLength = 4
 
 function PasswordInput({
+  isValid,
   label,
   hasProgressBar,
   progressBarSteps,
@@ -41,32 +42,35 @@ function PasswordInput({
   const changeVisibility = () => setShowPassword(!showPassword)
 
   const handleChange = (event) => {
-    const currentInput = event.target.value
+    const currentValue = event.target.value
     const passedChecks = []
 
-    regexChecks.reduce(
-      (acc, element, index) =>
-        element.regex.test(currentInput) && passedChecks.push(index),
-      passedChecks
-    )
+    if (hasProgressBar) {
+      regexChecks.reduce(
+        (acc, element, index) =>
+          element.regex.test(currentValue) && passedChecks.push(index),
+        passedChecks
+      )
+      setPassedChecks(passedChecks)
+    }
 
-    setPassedChecks(passedChecks)
-
-    const isValid = passedChecks.length === regexChecks.length
-    onChange && onChange({ isValid, value: currentInput })
+    const lengthsMatch =
+      !hasProgressBar || passedChecks.length === regexChecks.length
+    onChange && onChange({ isValid: lengthsMatch, value: currentValue })
   }
 
   const inputType = showPassword ? 'text' : 'password'
   const VisibilityIcon = showPassword ? VisibilityOff : Visibility
 
   const strengthLevel = Math.max(
-    Math.floor(
+    Math.round(
       (maxProgressBarLength / regexChecks.length) * passedChecks.length
     ),
-    1
+    0
   )
   const currentStep = progressBarSteps[strengthLevel - 1]
-  const showCheckIcon = strengthLevel === maxProgressBarLength
+  const showCheckIcon =
+    isValid || (hasProgressBar && strengthLevel === maxProgressBarLength)
 
   return (
     <Flex flexDirection='column' {...props}>
@@ -92,13 +96,15 @@ function PasswordInput({
       </IconField>
       {hasProgressBar && (
         <Flex flexDirection='column'>
-          <Flex alignItems='center' mt={2} mb={2}>
+          <Flex alignItems='center' my={2}>
             <NoWrapText fontSize={0} color='text.light' mr={2}>
               Password Strength:{' '}
             </NoWrapText>
-            <Badge color={currentStep.color} size='small'>
-              {currentStep.text}
-            </Badge>
+            {currentStep && (
+              <Badge color={currentStep.color} size='small'>
+                {currentStep.text}
+              </Badge>
+            )}
           </Flex>
           <ProgressBar steps={progressBarSteps} currentStep={strengthLevel} />
           <Flex
@@ -109,7 +115,7 @@ function PasswordInput({
             <NoWrapText fontSize={0} color='text.light' mr={3}>
               Must contain:
             </NoWrapText>
-            <Flex flexDirection={['column', null, 'row']} wrap>
+            <Flex wrap>
               {regexChecks.map((check, index) => {
                 const didPass =
                   passedChecks.findIndex((value) => index === value) !== -1
@@ -164,6 +170,7 @@ PasswordInput.defaultProps = {
 }
 
 PasswordInput.propTypes = {
+  isValid: PropTypes.bool,
   label: PropTypes.string,
   hasProgressBar: PropTypes.bool,
   progressBarSteps: PropTypes.arrayOf(
