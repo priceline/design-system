@@ -26,6 +26,7 @@ const NoWrapText = styled(Text)`
 const maxProgressBarLength = 4
 
 function PasswordInput({
+  id,
   isValid,
   label,
   hasProgressBar,
@@ -74,11 +75,12 @@ function PasswordInput({
 
   return (
     <Flex flexDirection='column' {...props}>
-      <Label fontSize={0} mb={2}>
+      <Label htmlFor={id} fontSize={0} mb={2}>
         {label}
       </Label>
       <IconField>
         <Input
+          id={id}
           type={inputType}
           value={value}
           onChange={handleChange}
@@ -115,7 +117,7 @@ function PasswordInput({
             <NoWrapText fontSize={0} color='text.light' mr={3}>
               Must contain:
             </NoWrapText>
-            <Flex wrap>
+            <Flex flexWrap='wrap'>
               {regexChecks.map((check, index) => {
                 const didPass =
                   passedChecks.findIndex((value) => index === value) !== -1
@@ -170,6 +172,7 @@ PasswordInput.defaultProps = {
 }
 
 PasswordInput.propTypes = {
+  id: PropTypes.string,
   isValid: PropTypes.bool,
   label: PropTypes.string,
   hasProgressBar: PropTypes.bool,
@@ -178,7 +181,7 @@ PasswordInput.propTypes = {
   ),
   progressBarDefaultStep: PropTypes.number,
   regexChecks: PropTypes.arrayOf(
-    PropTypes.shape({ label: PropTypes.string, regex: PropTypes.string })
+    PropTypes.shape({ label: PropTypes.string, regex: PropTypes.regex })
   ),
   value: PropTypes.string,
   onChange: PropTypes.func,
