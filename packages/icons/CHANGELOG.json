@@ -2,6 +2,18 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.1.2",
+      "tag": "pcln-icons_v4.1.2",
+      "date": "Thu, 15 Apr 2021 21:30:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgraded to Storybook v6"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.1",
       "tag": "pcln-icons_v4.1.1",
       "date": "Wed, 17 Feb 2021 16:29:34 GMT",

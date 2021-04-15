@@ -2,6 +2,32 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.2.6",
+      "tag": "pcln-popover_v4.2.6",
+      "date": "Thu, 15 Apr 2021 21:30:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgraded to Storybook v6"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.8.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `4.1.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-slider\" to `4.0.12`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.7.1` to `^4.8.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.5",
       "tag": "pcln-popover_v4.2.5",
       "date": "Tue, 23 Mar 2021 18:57:24 GMT",

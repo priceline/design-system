@@ -1,6 +1,13 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Tue, 23 Mar 2021 18:57:24 GMT and should not be manually modified.
+This log was last generated on Thu, 15 Apr 2021 21:30:43 GMT and should not be manually modified.
+
+## 4.0.12
+Thu, 15 Apr 2021 21:30:43 GMT
+
+### Patches
+
+- Upgraded to Storybook v6
 
 ## 4.0.11
 Tue, 23 Mar 2021 18:57:24 GMT

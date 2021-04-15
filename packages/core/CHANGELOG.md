@@ -1,6 +1,20 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 23 Mar 2021 18:57:24 GMT and should not be manually modified.
+This log was last generated on Thu, 15 Apr 2021 21:30:43 GMT and should not be manually modified.
+
+## 4.8.0
+Thu, 15 Apr 2021 21:30:43 GMT
+
+### Minor changes
+
+- PasswordInput controlled isValid props and start the progress bar empty
+
+### Patches
+
+- Export PasswordInput
+- Update focus style for Chips
+- Improve Text Extension components
+- Upgraded to Storybook v6
 
 ## 4.7.1
 Tue, 23 Mar 2021 18:57:24 GMT

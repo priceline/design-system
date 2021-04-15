@@ -2,6 +2,26 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "4.0.12",
+      "tag": "pcln-modal_v4.0.12",
+      "date": "Thu, 15 Apr 2021 21:30:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgraded to Storybook v6"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.8.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.7.1` to `^4.8.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.0.11",
       "tag": "pcln-modal_v4.0.11",
       "date": "Tue, 23 Mar 2021 18:57:24 GMT",
