@@ -14,6 +14,10 @@ const steps = [
   { color: 'success' },
 ]
 
+export const emptyProgressBar = () => (
+  <ProgressBar steps={steps} currentStep={0} />
+)
+
 export const basicProgressBar = () => (
   <ProgressBar steps={steps} currentStep={3} />
 )
