@@ -1,5 +1,4 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import {
   display,
@@ -48,10 +47,7 @@ export const textShadow = (props) => {
     : null
 }
 
-const Text = styled.div.attrs(({ align, ...props }) => ({
-  textAlign: align,
-  ...props,
-}))`
+const textProps = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) =>
@@ -82,6 +78,33 @@ const Text = styled.div.attrs(({ align, ...props }) => ({
   ${zIndex}
 `
 
+const Text = styled.div.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+const Span = styled.span.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+
+const Paragraph = styled.p.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+
+const Strike = styled.s.attrs(({ align, ...props }) => ({
+  textAlign: align,
+  ...props,
+}))`
+  ${textProps}
+`
+
 Text.displayName = 'Text'
 
 Text.propTypes = {
@@ -109,25 +132,13 @@ Text.propTypes = {
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
 }
 
-Text.span = ({ children, ...props }) => (
-  <Text as='span' {...props}>
-    {children}
-  </Text>
-)
+Text.span = Span
 Text.span.displayName = 'Text.span'
 
-Text.p = ({ children, ...props }) => (
-  <Text as='p' {...props}>
-    {children}
-  </Text>
-)
+Text.p = Paragraph
 Text.p.displayName = 'Text.p'
 
-Text.s = ({ children, ...props }) => (
-  <Text as='s' {...props}>
-    {children}
-  </Text>
-)
+Text.s = Strike
 Text.s.displayName = 'Text.s'
 
 export default Text
