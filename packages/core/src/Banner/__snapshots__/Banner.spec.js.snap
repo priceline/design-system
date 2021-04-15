@@ -982,14 +982,14 @@ exports[`Banner renders with text node 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
-  font-size: 14px;
-}
-
 .c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+.c6 {
+  font-size: 14px;
 }
 
 .c2 {
@@ -1079,14 +1079,14 @@ exports[`Banner renders with text string 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
-  font-size: 14px;
-}
-
 .c5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+.c6 {
+  font-size: 14px;
 }
 
 .c2 {
