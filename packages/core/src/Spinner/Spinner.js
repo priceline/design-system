@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css, keyframes } from 'styled-components'
-import { height, space, width } from 'styled-system'
 import { Flex } from '..'
 import { applySizes, getPaletteColor } from '../utils'
 
@@ -38,7 +37,7 @@ const sizes = {
 const RelativeFlex = styled(Flex)`
   position: relative;
 
-  ${(props) => !props.width && !props.height && applySizes(sizes)};
+  ${applySizes(sizes, null)};
 `
 
 const rotate = keyframes`
@@ -56,25 +55,37 @@ const Ring = styled.div`
   border-top: 2px solid ${getPaletteColor('background.lightest')};
   border-radius: 50%;
   animation: ${rotate} 1s linear infinite;
-
-  ${height} ${space} ${width}
 `
 
-function Spinner({ color, icon, ...props }) {
+function Spinner({ children, color, icon, ...props }) {
+  children && React.Children.only(children)
+
   return (
     <RelativeFlex justifyContent='center' alignItems='center' {...props}>
       <Ring color={color} />
-      {icon && React.cloneElement(icon, { color: icon.props.color || color })}
+      {children &&
+        React.cloneElement(children, {
+          color: children?.props?.color || color,
+        })}
     </RelativeFlex>
   )
 }
 
 Spinner.propTypes = {
+  children: PropTypes.node,
   color: PropTypes.string,
-  icon: PropTypes.node,
-  ...height.propTypes,
-  ...space.propTypes,
-  ...width.propTypes,
+  size: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.oneOf(Object.keys(sizes)),
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.oneOf(Object.keys(sizes)),
+        PropTypes.string,
+        PropTypes.number,
+      ])
+    ),
+  ]),
 }
 
 Spinner.defaultProps = {

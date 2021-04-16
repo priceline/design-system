@@ -12,7 +12,9 @@ describe('Spinner', () => {
 
   it('renders with an icon', () => {
     render(
-      <Spinner icon={<Hotels data-testid='icon' />} data-testid='spinner' />
+      <Spinner data-testid='spinner'>
+        <Hotels data-testid='icon' />
+      </Spinner>
     )
 
     expect(screen.getByTestId('spinner')).toHaveStyle('color: primary')
@@ -21,11 +23,9 @@ describe('Spinner', () => {
 
   it('renders with multiple colors', () => {
     render(
-      <Spinner
-        color='secondary'
-        icon={<Hotels color='error' data-testid='icon' />}
-        data-testid='spinner'
-      />
+      <Spinner color='secondary' data-testid='spinner'>
+        <Hotels color='error' data-testid='icon' />
+      </Spinner>
     )
 
     expect(screen.getByTestId('spinner')).toHaveStyle('color: secondary')
