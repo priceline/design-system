@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.8.0",
+      "tag": "pcln-design-system_v4.8.0",
+      "date": "Thu, 15 Apr 2021 21:30:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Export PasswordInput"
+          },
+          {
+            "comment": "Update focus style for Chips"
+          },
+          {
+            "comment": "Improve Text Extension components"
+          },
+          {
+            "comment": "Upgraded to Storybook v6"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "PasswordInput controlled isValid props and start the progress bar empty"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.7.1",
       "tag": "pcln-design-system_v4.7.1",
       "date": "Tue, 23 Mar 2021 18:57:24 GMT",

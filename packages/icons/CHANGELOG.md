@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 17 Feb 2021 16:29:34 GMT and should not be manually modified.
+This log was last generated on Thu, 15 Apr 2021 21:30:43 GMT and should not be manually modified.
+
+## 4.1.2
+Thu, 15 Apr 2021 21:30:43 GMT
+
+### Patches
+
+- Upgraded to Storybook v6
 
 ## 4.1.1
 Wed, 17 Feb 2021 16:29:34 GMT
