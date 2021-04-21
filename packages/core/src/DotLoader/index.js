@@ -1,1 +1,1 @@
-export { default } from './DotLoader'
+export { default as DotLoader } from './DotLoader'
