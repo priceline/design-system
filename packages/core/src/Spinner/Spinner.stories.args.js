@@ -1,3 +1,4 @@
+import React from 'react'
 import { colors } from '../../storybook/args'
 import { Cars, Hotels, Flights } from 'pcln-icons'
 

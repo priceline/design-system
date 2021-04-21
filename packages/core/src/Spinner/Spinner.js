@@ -57,7 +57,7 @@ const Ring = styled.div`
   animation: ${rotate} 1s linear infinite;
 `
 
-function Spinner({ children, color, icon, ...props }) {
+function Spinner({ children, color, ...props }) {
   children && React.Children.only(children)
 
   return (
