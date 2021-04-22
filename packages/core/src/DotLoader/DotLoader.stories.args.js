@@ -1,8 +1,8 @@
 import { colors } from '../../storybook/args'
 
-export const sizes = ['small', 'medium', 'large', 100]
+export const sizes = ['small', 'medium', 'large']
 
-export const speed = ['slow', 'medium', 'fast', 0.25]
+export const speed = ['slow', 'medium', 'fast']
 
 export const defaultArgs = {
   size: 'medium',
@@ -14,8 +14,7 @@ export const argTypes = {
   size: {
     name: 'size',
     type: { name: 'string', required: false },
-    description:
-      'DotLoader size to render\nAccepts string or responsive array of strings.',
+    description: 'Size to render.\nAccepts string or a number.',
     table: {
       type: {
         summary: 'Sizes',
@@ -32,8 +31,7 @@ export const argTypes = {
   speed: {
     name: 'speed',
     type: { name: 'string', required: false },
-    description:
-      'Button size to render\nAccepts string or responsive array of strings.',
+    description: 'Speed to render.\nAccepts string or a number.',
     table: {
       type: {
         summary: 'Speeds',

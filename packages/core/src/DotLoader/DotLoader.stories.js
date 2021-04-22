@@ -19,7 +19,7 @@ const Template = (args) => {
   }
 
   return (
-    <Box width='500px'>
+    <Box width={[1, null, '500px']}>
       <Button size={args.size} width={1} onClick={onClick}>
         {isLoading ? <DotLoader {...args} /> : 'Click me to load nothing'}
       </Button>
@@ -31,3 +31,7 @@ export const _DotLoader = Template.bind({})
 
 export const Fast = Template.bind({})
 Fast.args = { speed: 'fast' }
+
+export const Responsive = Template.bind({})
+Responsive.args = { size: ['small', null, 'medium', null, 'large'] }
+Responsive.parameters = { viewport: { defaultViewport: 'designSystem_sm' } }
