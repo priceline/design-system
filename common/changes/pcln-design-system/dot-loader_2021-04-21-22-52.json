@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Create DotLoader component and export it and Spinner",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "james.stewart@priceline.com"
+}
