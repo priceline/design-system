@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css, keyframes } from 'styled-components'
+import { themeGet } from 'styled-system'
 import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { applySizes } from '../utils'
@@ -15,7 +16,7 @@ const sizes = {
     }
 
     & > :not(:last-child) {
-      margin-right: 16px;
+      margin-right: ${themeGet('space.3')}px;
     }
   `,
   medium: css`
@@ -27,7 +28,7 @@ const sizes = {
     }
 
     & > :not(:last-child) {
-      margin-right: 32px;
+      margin-right: ${themeGet('space.4')}px;
     }
   `,
   large: css`
@@ -39,7 +40,7 @@ const sizes = {
     }
 
     & > :not(:last-child) {
-      margin-right: 32px;
+      margin-right: ${themeGet('space.4')}px;
     }
   `,
 }
