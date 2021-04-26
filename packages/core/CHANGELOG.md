@@ -2,6 +2,13 @@
 
 This log was last generated on Mon, 26 Apr 2021 19:28:49 GMT and should not be manually modified.
 
+## 4.9.1
+Mon, 26 Apr 2021 20:36:49 GMT
+
+## Patches
+
+- Republish in order to fix a bad build
+
 ## 4.9.0
 Mon, 26 Apr 2021 19:28:49 GMT
 
