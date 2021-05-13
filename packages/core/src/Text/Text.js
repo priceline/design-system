@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {
   display,
   fontSize,
+  fontStyle,
   fontWeight,
   height,
   lineHeight,
@@ -40,6 +41,9 @@ export const regular = (props) =>
 export const bold = (props) =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
+export const textDecoration = (props) =>
+  props.textDecoration ? `text-decoration: ${props.textDecoration};` : ''
+
 export const textShadow = (props) => {
   const textShadowSize = props.textShadowSize || 'md'
   return props.enableTextShadow
@@ -69,12 +73,14 @@ const textProps = css`
   ${regular}
   ${bold}
 
-  ${textStyle}
   ${fontSize}
+  ${fontStyle}
   ${fontWeight}
-  ${textAlign}
   ${lineHeight}
+  ${textAlign}
+  ${textDecoration}
   ${textShadow}
+  ${textStyle}
   ${zIndex}
 `
 
@@ -110,6 +116,7 @@ Text.displayName = 'Text'
 Text.propTypes = {
   ...display.propTypes,
   ...fontSize.propTypes,
+  ...fontStyle.propTypes,
   ...fontWeight.propTypes,
   ...height.propTypes,
   ...lineHeight.propTypes,
@@ -129,6 +136,7 @@ Text.propTypes = {
   color: deprecatedColorValue(),
   enableTextShadow: PropTypes.bool,
   regular: PropTypes.bool,
+  textDecoration: PropTypes.string,
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
 }
 

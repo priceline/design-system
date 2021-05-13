@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { render, screen } from 'testing-library'
 import { Text, theme } from '..'
 
 describe('Text', () => {
@@ -82,6 +82,22 @@ describe('Text', () => {
     expect(json).toHaveStyleRule('max-height', '400px')
     expect(json).toHaveStyleRule('min-width', '200px')
     expect(json).toHaveStyleRule('max-width', '400px')
+  })
+
+  test('fontStyle', () => {
+    render(<Text fontStyle='italic'>Italic Text</Text>)
+    expect(screen.getByText('Italic Text')).toHaveStyleRule(
+      'font-style',
+      'italic'
+    )
+  })
+
+  test('textTransform', () => {
+    render(<Text textDecoration='underline'>Underlined Text</Text>)
+    expect(screen.getByText('Underlined Text')).toHaveStyleRule(
+      'text-decoration',
+      'underline'
+    )
   })
 
   describe('deprecated prop types', () => {

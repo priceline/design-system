@@ -32,6 +32,17 @@ FontSize.story = {
   name: 'fontSize',
 }
 
+export const FontStyle = () => (
+  <div>
+    <Text fontStyle='italic'>Hello Italic</Text>
+    <Text fontStyle='oblique'>Hello Oblique</Text>
+  </div>
+)
+
+FontStyle.story = {
+  name: 'fontStyle',
+}
+
 export const TextAlign = () => (
   <div>
     <Text textAlign='left'>Hello Left</Text>
@@ -42,6 +53,18 @@ export const TextAlign = () => (
 
 TextAlign.story = {
   name: 'textAlign',
+}
+
+export const TextDecoration = () => (
+  <div>
+    <Text textDecoration='overline'>Hello Overline</Text>
+    <Text textDecoration='line-through'>Hello Line-Through</Text>
+    <Text textDecoration='underline'>Hello Underline</Text>
+  </div>
+)
+
+TextDecoration.story = {
+  name: 'textDecoration',
 }
 
 export const Regular = () => <Text regular>Hello Regular</Text>
