@@ -9,7 +9,7 @@ export default {
 export const DefaultAlignWithThemeMaxWidth = () => (
   <Container>
     <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
-      Container Compnent
+      Container Component
     </Box>
   </Container>
 )
@@ -21,7 +21,7 @@ DefaultAlignWithThemeMaxWidth.story = {
 export const InputMaxWidth = () => (
   <Container maxWidth={500}>
     <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
-      Container Compnent
+      Container Component
     </Box>
   </Container>
 )
