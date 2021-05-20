@@ -42,6 +42,7 @@ const MenuItem = React.forwardRef(function MenuItem(
       selected={selected}
       onClick={handleClick}
       {...props}
+      color='red'
     >
       <Flex alignItems='center'>{children}</Flex>
       {selected && <CheckIcon title='check' size={20} ml={3} />}
