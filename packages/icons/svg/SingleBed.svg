@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SingleBed</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,10.78 L18,8 C18,6.35 16.65,5 15,5 L9,5 C7.35,5 6,6.35 6,8 L6,10.78 C5.39,11.33 5,12.12 5,13 L5,18 C5,18.55 5.45,19 6,19 C6.55,19 7,18.55 7,18 L7,17 L17,17 L17,18 C17,18.55 17.45,19 18,19 C18.55,19 19,18.55 19,18 L19,13 C19,12.12 18.61,11.33 18,10.78 Z M9,7 L15,7 C15.55,7 16,7.45 16,8 L16,10 L8,10 L8,8 C8,7.45 8.45,7 9,7 Z M7,15 L7,13 C7,12.45 7.45,12 8,12 L16,12 C16.55,12 17,12.45 17,13 L17,15 L7,15 Z" fill="#001833"></path>
+    </g>
+</svg>
