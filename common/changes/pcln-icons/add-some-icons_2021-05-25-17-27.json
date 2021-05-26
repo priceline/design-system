@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "add a small group of new icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "gabrielle.bellini@priceline.com"
+}
