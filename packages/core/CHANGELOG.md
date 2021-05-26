@@ -1,11 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 26 Apr 2021 19:28:49 GMT and should not be manually modified.
+This log was last generated on Wed, 26 May 2021 18:17:47 GMT and should not be manually modified.
+
+## 4.10.0
+Wed, 26 May 2021 18:17:47 GMT
+
+### Minor changes
+
+- Add fontStyle and textDecoration props to Text component
 
 ## 4.9.1
 Mon, 26 Apr 2021 20:36:49 GMT
 
-## Patches
+### Patches
 
 - Republish in order to fix a bad build
 
