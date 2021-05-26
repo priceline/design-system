@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Thu, 15 Apr 2021 21:30:43 GMT and should not be manually modified.
+This log was last generated on Wed, 26 May 2021 18:17:47 GMT and should not be manually modified.
+
+## 4.2.0
+Wed, 26 May 2021 18:17:47 GMT
+
+### Minor changes
+
+- add a small group of new icons
 
 ## 4.1.2
 Thu, 15 Apr 2021 21:30:43 GMT
