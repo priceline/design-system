@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { space } from 'styled-system'
-import { getPaletteColor } from '..'
+import { getPaletteColor } from '../utils'
 
 const backgroundTransition = css`
   transition: background-color 500ms ease;

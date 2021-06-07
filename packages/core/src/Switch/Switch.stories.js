@@ -7,8 +7,4 @@ export default {
   component: Switch,
 }
 
-export const Basic = () => (
-  <Label>
-    Switch <Switch id='switch' mt={2} />
-  </Label>
-)
+export const Basic = () => <Switch id='switch' mt={2} />
