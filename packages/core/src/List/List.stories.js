@@ -1,3 +1,4 @@
+import React from 'react'
 import List from './List'
 import { Text } from '..'
 import { argTypes, defaultArgs } from './List.stories.args'
@@ -36,4 +37,4 @@ export const OrderedList = Template.bind({})
 OrderedList.args = { color: 'text.light', fontSize: 1 }
 
 export const UnorderedList = Template.bind({})
-UnorderedList.args = { color: 'text.light', fontSize: 1 }
+UnorderedList.args = { color: 'text.light', fontSize: 1, type: 'ul' }

@@ -15,8 +15,6 @@ const BaseCSS = css`
   ${width};
 `
 
-const List = styled('div')``
-
 const Ordered = styled('ol')`
   ${BaseCSS};
 
@@ -28,6 +26,8 @@ const Ordered = styled('ol')`
 const Unordered = styled('ul')`
   ${BaseCSS};
 `
+
+const List = Unordered
 
 List.ol = Ordered
 List.ol.displayName = 'OrderedList'
