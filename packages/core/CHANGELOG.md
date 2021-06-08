@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 26 May 2021 18:17:47 GMT and should not be manually modified.
+This log was last generated on Tue, 08 Jun 2021 20:47:08 GMT and should not be manually modified.
+
+## 4.11.0
+Tue, 08 Jun 2021 20:47:08 GMT
+
+### Minor changes
+
+- Create List Component
 
 ## 4.10.0
 Wed, 26 May 2021 18:17:47 GMT

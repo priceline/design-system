@@ -1,6 +1,11 @@
 # Change Log - pcln-menu
 
-This log was last generated on Wed, 26 May 2021 18:17:47 GMT and should not be manually modified.
+This log was last generated on Tue, 08 Jun 2021 20:47:08 GMT and should not be manually modified.
+
+## 4.2.4
+Tue, 08 Jun 2021 20:47:08 GMT
+
+_Version update only_
 
 ## 4.2.3
 Wed, 26 May 2021 18:17:47 GMT
