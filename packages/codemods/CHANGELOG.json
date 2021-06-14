@@ -1,0 +1,24 @@
+{
+  "name": "pcln-codemods",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "pcln-codemods_v1.0.0",
+      "date": "Mon, 14 Jun 2021 18:55:11 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Create package",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "1982f67de819ac1c3b0b7d5722da65eb81b1eee7"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.11.1`"
+          }
+        ]
+      }
+    }
+  ]
+}

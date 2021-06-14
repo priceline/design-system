@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 08 Jun 2021 20:47:08 GMT and should not be manually modified.
+This log was last generated on Mon, 14 Jun 2021 18:55:11 GMT and should not be manually modified.
+
+## 4.11.1
+Mon, 14 Jun 2021 18:55:11 GMT
+
+### Patches
+
+- Update props in stories
 
 ## 4.11.0
 Tue, 08 Jun 2021 20:47:08 GMT
