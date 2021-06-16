@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.11.1",
+      "tag": "pcln-design-system_v4.11.1",
+      "date": "Mon, 14 Jun 2021 18:55:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update props in stories",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "1982f67de819ac1c3b0b7d5722da65eb81b1eee7"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.11.0",
       "tag": "pcln-design-system_v4.11.0",
       "date": "Tue, 08 Jun 2021 20:47:08 GMT",
