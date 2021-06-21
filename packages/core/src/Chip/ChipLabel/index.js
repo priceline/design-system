@@ -10,6 +10,7 @@ const ChipLabel = styled(Label)`
   padding: 0;
   margin: 0;
   > input:focus ~ ${ChipContentWrapper} {
+    background-color: ${getPaletteColor('light')};
     box-shadow: 0 0 0 1px ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
   }

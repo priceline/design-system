@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added background for focus",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "david.lu@priceline.com"
+}
