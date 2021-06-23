@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.11.2",
+      "tag": "pcln-design-system_v4.11.2",
+      "date": "Wed, 23 Jun 2021 16:13:27 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added background for focus",
+            "author": "David Lu <63004067+davidhlu@users.noreply.github.com>",
+            "commit": "7a07c510a6db38b2a983ca7cb7156c741b457dc9"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.11.1",
       "tag": "pcln-design-system_v4.11.1",
       "date": "Mon, 14 Jun 2021 18:55:11 GMT",
