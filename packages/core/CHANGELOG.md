@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 14 Jun 2021 18:55:11 GMT and should not be manually modified.
+This log was last generated on Wed, 23 Jun 2021 16:13:27 GMT and should not be manually modified.
+
+## 4.11.2
+Wed, 23 Jun 2021 16:13:27 GMT
+
+### Patches
+
+- Added background for focus
 
 ## 4.11.1
 Mon, 14 Jun 2021 18:55:11 GMT
