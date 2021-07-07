@@ -3,7 +3,7 @@
 This package uses a modified version of Facebook's [react-codemod](https://github.com/reactjs/react-codemod) to run JSCodeshift transforms that can help you upgrade projects from DS4 to DS5.
 
 ### Usage
-`npx react-codemod <transform> <path> [...options]`
+`npx pcln-codemods <transform> <path> [...options]`
 * `transform` - name of transform, see available transforms below.
 * `path` - files or directory to transform
 * use the `--dry` option for a dry-run and use `--print` to print the output for comparison
