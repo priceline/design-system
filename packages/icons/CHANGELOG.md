@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 26 May 2021 18:17:47 GMT and should not be manually modified.
+This log was last generated on Thu, 22 Jul 2021 19:28:55 GMT and should not be manually modified.
+
+## 4.3.0
+Thu, 22 Jul 2021 19:28:55 GMT
+
+### Minor changes
+
+- add priceline favicon to icons
 
 ## 4.2.0
 Wed, 26 May 2021 18:17:47 GMT
