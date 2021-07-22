@@ -2,6 +2,18 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.3.0",
+      "tag": "pcln-icons_v4.3.0",
+      "date": "Thu, 22 Jul 2021 19:28:55 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add priceline favicon to icons"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.0",
       "tag": "pcln-icons_v4.2.0",
       "date": "Wed, 26 May 2021 18:17:47 GMT",
