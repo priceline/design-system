@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "add priceline favicon to icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "james.stewart@priceline.com"
+}
