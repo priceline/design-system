@@ -3,7 +3,7 @@ import React from 'react'
 import { Box, Flex, Truncate, Text } from 'pcln-design-system'
 
 import * as icons from '../components'
-const { Accessible, Cars, Flights, Hotels } = icons
+const { Accessible, Cars, Flights, Hotels, Priceline } = icons
 
 const keys = Object.keys(icons).filter((icon) => icon !== 'Icon')
 
@@ -45,6 +45,8 @@ export const Color = () => (
   </div>
 )
 
+export const PricelineLogo = () => <Priceline color='primary' size={48} />
+
 export const Responsive = () => (
   <Flights color='primary' size={[100, 200, 300, 50]} name='Flights' />
 )
@@ -76,7 +78,7 @@ A11Y.story = {
 
 export const AlignedWithText = () => (
   <Flex alignItems='center'>
-    {<icons.WarningOutline/>}
+    {<icons.WarningOutline />}
     <Text ml={1}>Leapin&apos; lizards!</Text>
   </Flex>
 )
