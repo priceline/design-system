@@ -109,8 +109,12 @@ describe('utils', () => {
 
   describe('getContrastRatio', () => {
     test('returns the contrast ratio between two colors', () => {
-      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(4.2265248376519144)
-      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(4.968620984531288)
+      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(
+        4.2265248376519144
+      )
+      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(
+        4.968620984531288
+      )
     })
   })
 
@@ -129,6 +133,20 @@ describe('utils', () => {
       )
     })
 
+    test('applies component style overrides with color and shade', () => {
+      const props = {
+        theme: createTheme({
+          componentStyles: { Button: { primary: { dark: 'color: red;' } } },
+        }),
+        color: 'primary.dark',
+      }
+      const override = applyVariations('Button')(props)
+
+      expect(override[0](props)).toEqual(
+        props.theme.componentStyles.Button.primary.dark
+      )
+    })
+
     test('applies variations with component style overrides', () => {
       const props = {
         theme: createTheme({
@@ -142,6 +160,24 @@ describe('utils', () => {
       expect(override[0]).toEqual(variations.outline)
       expect(override[2](props)).toEqual(
         props.theme.componentStyles.Button.outline.primary
+      )
+    })
+
+    test('application variations with component style overrides with color and shade', () => {
+      const props = {
+        theme: createTheme({
+          componentStyles: {
+            Button: { outline: { primary: { dark: 'color: red;' } } },
+          },
+        }),
+        color: 'primary.dark',
+        variation: 'outline',
+      }
+      const variations = { outline: 'color: blue;' }
+      const override = applyVariations('Button', variations)(props)
+      expect(override[0]).toEqual(variations.outline)
+      expect(override[2](props)).toEqual(
+        props.theme.componentStyles.Button.outline.primary.dark
       )
     })
   })
