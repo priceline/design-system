@@ -8,7 +8,7 @@
     "lint:fix": "eslint . --fix",
     "test": "jest --verbose --coverage --passWithNoTests",
     "test:ci": "jest --silent --coverage --runInBand --passWithNoTests",
-    "test:update": "jest --updateSnapshot",
+    "test:update": "jest --updateSnapshot --passWithNoTests",
     "test:ci:update": "jest --runInBand --updateSnapshot"
   },
   "files": [
