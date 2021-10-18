@@ -183,7 +183,8 @@ export const applyVariations = (componentName, variations = null) => (
 ) => {
   let { color, variation } = props
 
-  const colorShade = color?.match(colorShadeRegex)
+  const colorShade =
+    !!color && typeof color === 'string' && color.match(colorShadeRegex)
 
   let shade
   if (colorShade) {
