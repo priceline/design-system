@@ -50,11 +50,11 @@ const Icon = styled(BaseIcon)`
 Icon.isIcon = true
 Icon.displayName = 'Icon'
 
-Icon.defaultProps = {
+BaseIcon.defaultProps = {
   size: 24,
 }
 
-Icon.propTypes = {
+BaseIcon.propTypes = {
   name: (props, key, componentName) => {
     const name = props[key]
     if (!icons[name] && !icons[upperFirst(name)]) {

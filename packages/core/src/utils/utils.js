@@ -163,6 +163,8 @@ export const applySizes = (
   }
 }
 
+const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
+
 /**
  * Applies the selected variation style to a styled component.
  * Combines the variation style with any custom styling from
@@ -179,13 +181,41 @@ export const applySizes = (
 export const applyVariations = (componentName, variations = null) => (
   props
 ) => {
-  const { color, variation } = props
+  let { color, variation } = props
+
+  const colorShade =
+    !!color && typeof color === 'string' && color.match(colorShadeRegex)
+
+  let shade
+  if (colorShade) {
+    color = colorShade[1]
+    shade = colorShade[2]
+  }
+
+  const isValidShade = shade && typeof shade === 'string'
 
   if (variations && typeof variation === 'string') {
+    if (isValidShade) {
+      return css`
+        ${variations[variation] || ''}
+        ${typeof color === 'string' &&
+        themeGet(
+          `componentStyles.${componentName}.${variation}.${color}.${shade}`,
+          ''
+        )}
+      `
+    }
+
     return css`
       ${variations[variation] || ''}
       ${typeof color === 'string' &&
       themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
+    `
+  }
+
+  if (isValidShade) {
+    return css`
+      ${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}
     `
   }
 
@@ -208,7 +238,7 @@ export const getPaletteColor = (...args) => (props) => {
   let color = args.length === 2 ? args[0] : props.color
   let shade = args.length === 2 ? args[1] : args[0]
 
-  const colorShade = shade.match(/^([a-z]+)\.([a-z]+)$/i)
+  const colorShade = shade.match(colorShadeRegex)
 
   if (colorShade) {
     color = colorShade[0]
