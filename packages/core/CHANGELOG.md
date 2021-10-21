@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 23 Jun 2021 16:13:27 GMT and should not be manually modified.
+This log was last generated on Thu, 21 Oct 2021 21:09:04 GMT and should not be manually modified.
+
+## 4.12.0
+Thu, 21 Oct 2021 21:09:04 GMT
+
+### Minor changes
+
+- applyVariations improved to support shades
 
 ## 4.11.2
 Wed, 23 Jun 2021 16:13:27 GMT
