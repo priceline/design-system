@@ -29,7 +29,7 @@ class PopoverContent extends Component {
     const keys = {
       // Target ESC key
       27: () => {
-        onCloseRequest()
+        onCloseRequest(evt)
       },
     }
 

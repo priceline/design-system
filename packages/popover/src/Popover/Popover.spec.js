@@ -143,6 +143,9 @@ describe('Popover', () => {
       expect(mockOnOpen).toHaveBeenCalledTimes(0)
       fireEvent.click(getByText(triggerButtonText))
       expect(mockOnOpen).toHaveBeenCalledTimes(1)
+      expect(mockOnOpen).toHaveBeenCalledWith(
+        expect.objectContaining({ type: 'click' })
+      )
     })
 
     it('onClose event', () => {
@@ -161,6 +164,7 @@ describe('Popover', () => {
         which: 27,
       })
       expect(mockOnClose).toHaveBeenCalledTimes(1)
+      expect(mockOnClose).toHaveBeenCalledWith(expect.any(Object))
     })
   })
 
