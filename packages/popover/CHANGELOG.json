@@ -2,6 +2,20 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.2.14",
+      "tag": "pcln-popover_v4.2.14",
+      "date": "Thu, 04 Nov 2021 17:53:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "onClose and onOpen event handlers pass event object",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "c9d48eff18517b221ee043307b41c86f437f02c1"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.13",
       "tag": "pcln-popover_v4.2.13",
       "date": "Thu, 21 Oct 2021 21:09:04 GMT",

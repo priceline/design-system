@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Thu, 21 Oct 2021 21:09:04 GMT and should not be manually modified.
+This log was last generated on Thu, 04 Nov 2021 17:53:50 GMT and should not be manually modified.
+
+## 4.2.14
+Thu, 04 Nov 2021 17:53:50 GMT
+
+### Patches
+
+- onClose and onOpen event handlers pass event object
 
 ## 4.2.13
 Thu, 21 Oct 2021 21:09:04 GMT
