@@ -24,24 +24,24 @@ class Popover extends Component {
     evt.preventDefault()
     evt.stopPropagation()
     if (isOpen) {
-      this.handleClose()
+      this.handleClose(evt)
     } else {
-      this.handleOpen()
+      this.handleOpen(evt)
     }
   }
 
-  handleClose() {
+  handleClose(evt) {
     this.setState({ isPopoverOpen: false }, () => {
       this.setFocusToRef(this.triggerRef)
     })
-    this.props.onClose && this.props.onClose()
+    this.props.onClose && this.props.onClose(evt)
   }
 
-  handleOpen() {
+  handleOpen(evt) {
     this.setState({ isPopoverOpen: true }, () => {
       this.setFocusToRef(this.contentRef)
     })
-    this.props.onOpen && this.props.onOpen()
+    this.props.onOpen && this.props.onOpen(evt)
   }
 
   setFocusToRef(ref) {
