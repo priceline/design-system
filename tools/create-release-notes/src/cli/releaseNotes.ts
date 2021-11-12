@@ -7,7 +7,7 @@ import {
   formatNotesMarkdown,
 } from '../actions/createReleaseNotes'
 
-const { packageName } = argv
+const packageName = argv['packageName']
 
 const config = RushConfiguration.loadFromDefaultLocation()
 

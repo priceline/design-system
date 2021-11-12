@@ -2,6 +2,25 @@
   "name": "pcln-codemods",
   "entries": [
     {
+      "version": "1.0.3",
+      "tag": "pcln-codemods_v1.0.3",
+      "date": "Tue, 16 Nov 2021 15:55:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update dependencies with non-breaking changes",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "81104428930aad0996558f58329db3e5be608333"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.12.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "pcln-codemods_v1.0.2",
       "date": "Thu, 21 Oct 2021 21:09:04 GMT",

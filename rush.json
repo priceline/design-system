@@ -10,8 +10,8 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.42.3",
-  "pnpmVersion": "5.18.7",
+  "rushVersion": "5.56.0",
+  "pnpmVersion": "5.18.10",
 
   /**
    * Options that are only used when the PNPM package manager is selected
@@ -259,7 +259,7 @@
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "main"
      */
-     "defaultBranch": "main"
+    "defaultBranch": "main"
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
@@ -331,7 +331,6 @@
   // "hotfixChangeEnabled": false,
 
   "projects": [
-
     {
       "packageName": "pcln-codemods",
       "projectFolder": "packages/codemods",

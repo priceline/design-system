@@ -1,6 +1,6 @@
 {
   "name": "pcln-slider",
-  "version": "4.0.18",
+  "version": "4.0.19",
   "description": "React component for range sliders",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -27,24 +27,24 @@
     "test:ci:update": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "classnames": "^2.3.1",
     "prop-types": "^15.7.2",
     "rc-tooltip": "^3.7.0",
     "rc-util": "^4.0.4",
-    "shallowequal": "^1.0.1",
+    "shallowequal": "^1.1.0",
     "styled-system": "^4.2.4",
     "warning": "^4.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.14",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
-    "@reach/component-component": "^0.7.0",
-    "@rushstack/eslint-patch": "^1.0.6",
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.5",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "@reach/component-component": "^0.16.0",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "eslint": "^7.23.0",
@@ -61,7 +61,7 @@
     "styled-components": "^4.4.1"
   },
   "peerDependencies": {
-    "pcln-design-system": "^4.12.0",
+    "pcln-design-system": "^4.12.1",
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">=4.4.1"
