@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.3.1",
+      "tag": "pcln-icons_v4.3.1",
+      "date": "Tue, 16 Nov 2021 15:55:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update dependencies with non-breaking changes",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "81104428930aad0996558f58329db3e5be608333"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.3.0",
       "tag": "pcln-icons_v4.3.0",
       "date": "Thu, 22 Jul 2021 19:28:55 GMT",

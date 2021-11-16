@@ -34,16 +34,16 @@
     "url": "https://github.com/priceline/design-system/issues"
   },
   "dependencies": {
-    "@types/react": "^17.0.3",
+    "@types/react": "^17.0.34",
     "@types/styled-system": "^4.2.2"
   },
   "devDependencies": {
     "@priceline/eslint-config": "workspace:*",
-    "csstype": "^3.0.7",
-    "dtslint": "^4.0.7",
-    "eslint": "^7.23.0",
+    "csstype": "^3.0.9",
+    "dtslint": "^4.2.0",
+    "eslint": "^8.2.0",
     "pcln-design-system": "workspace:*",
-    "prettier": "^2.2.1",
-    "@rushstack/eslint-patch": "^1.0.6"
+    "prettier": "^2.4.1",
+    "@rushstack/eslint-patch": "^1.1.0"
   }
 }

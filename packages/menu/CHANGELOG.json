@@ -2,6 +2,40 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "4.2.10",
+      "tag": "pcln-menu_v4.2.10",
+      "date": "Tue, 16 Nov 2021 15:55:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update dependencies with non-breaking changes",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "81104428930aad0996558f58329db3e5be608333"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.12.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `4.3.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `4.2.15`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^4.12.0` to `^4.12.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^4.3.0` to `^4.3.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^4.2.14` to `^4.2.15`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.9",
       "tag": "pcln-menu_v4.2.9",
       "date": "Thu, 04 Nov 2021 17:53:50 GMT",

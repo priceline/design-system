@@ -49,6 +49,7 @@ jobs:
         run: node common/scripts/install-run-rush.js test:ci
 
       - name: ESLint
+        if: ${{ matrix.node-version != '10.x' }}
         run: node common/scripts/install-run-rush.js lint
 
       - name: Generate and upload coverage report

@@ -1,6 +1,6 @@
 {
   "name": "pcln-menu",
-  "version": "4.2.9",
+  "version": "4.2.10",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "sideEffects": false,
@@ -23,12 +23,12 @@
   "author": "Priceline",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
+    "@babel/cli": "^7.16.0",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
-    "@rushstack/eslint-patch": "^1.0.6",
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.5",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.23.0",
     "jest": "^26.6.3",
@@ -46,9 +46,9 @@
     "styled-system": "^4.2.4"
   },
   "peerDependencies": {
-    "pcln-design-system": "^4.12.0",
-    "pcln-icons": "^4.3.0",
-    "pcln-popover": "^4.2.14",
+    "pcln-design-system": "^4.12.1",
+    "pcln-icons": "^4.3.1",
+    "pcln-popover": "^4.2.15",
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">=4.4.1"

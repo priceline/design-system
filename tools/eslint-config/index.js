@@ -44,6 +44,7 @@ module.exports = {
     // SonarJS
     'sonarjs/no-duplicate-string': 'off',
     'sonarjs/cognitive-complexity': 'off',
+    'sonarjs/no-nested-template-literals': 'off',
   },
   overrides: [
     {
