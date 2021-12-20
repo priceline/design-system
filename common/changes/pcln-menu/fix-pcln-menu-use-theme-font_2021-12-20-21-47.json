@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Grab font family from theme with fallback",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

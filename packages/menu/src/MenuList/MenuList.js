@@ -18,7 +18,8 @@ const sizes = {
 }
 
 const MenuContainer = styled(Flex)`
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: ${themeGet('font') ||
+  "'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif"};
   overflow-y: scroll;
 
   & > * {
