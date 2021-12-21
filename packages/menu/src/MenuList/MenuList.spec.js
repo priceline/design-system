@@ -2,6 +2,7 @@ import React from 'react'
 import { fireEvent, render, screen } from 'testing-library'
 import MenuList from './MenuList'
 import MenuItem from '../MenuItem'
+import { ThemeProvider } from 'styled-components'
 
 describe('MenuList', () => {
   it('renders a menu list', () => {
@@ -20,6 +21,11 @@ describe('MenuList', () => {
 
     fireEvent.click(screen.getByText('Item Two'))
     expect(onItemTwoClick).toHaveBeenCalledTimes(1)
+
+    expect(screen.getByRole('listbox')).toHaveStyleRule(
+      'font-family',
+      "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif"
+    )
   })
 
   it('is a11y friendly', () => {
@@ -46,5 +52,21 @@ describe('MenuList', () => {
       code: 'ArrowRight',
     })
     expect(screen.getByText('Item One').parentNode).toHaveFocus()
+  })
+  it('grabs font family from theme', () => {
+    const mockTheme = {
+      font: "'Source Sans Pro',Verdana,sans-serif",
+    }
+    render(
+      <ThemeProvider theme={mockTheme}>
+        <MenuList id='test-menu'>
+          <MenuItem selected>Item One</MenuItem>
+        </MenuList>
+      </ThemeProvider>
+    )
+    expect(screen.getByRole('listbox')).toHaveStyleRule(
+      'font-family',
+      mockTheme.font
+    )
   })
 })
