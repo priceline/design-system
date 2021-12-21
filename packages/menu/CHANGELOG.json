@@ -2,6 +2,20 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "4.3.0",
+      "tag": "pcln-menu_v4.3.0",
+      "date": "Tue, 21 Dec 2021 15:46:10 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Grab font family from theme with fallback",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "46091245becd26270a288f1400c848802f39c748"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.10",
       "tag": "pcln-menu_v4.2.10",
       "date": "Tue, 16 Nov 2021 15:55:41 GMT",
