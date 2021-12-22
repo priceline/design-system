@@ -152,6 +152,58 @@ importers:
       styled-components: ^4.4.1
       styled-system: ^4.2.4
       us: ^2.0.0
+  ../../packages/carousel:
+    dependencies:
+      '@types/styled-system': 4.2.2
+      prop-types: 15.7.2
+      pure-react-carousel: 1.27.8_react-dom@17.0.2+react@17.0.2
+    devDependencies:
+      '@babel/cli': 7.16.0_@babel+core@7.16.0
+      '@babel/core': 7.16.0
+      '@priceline/babel-preset': link:../../tools/babel-preset
+      '@priceline/eslint-config': link:../../tools/eslint-config
+      '@rushstack/eslint-patch': 1.1.0
+      '@storybook/addon-actions': 6.3.12_react-dom@17.0.2+react@17.0.2
+      '@storybook/react': 6.3.12_f435afa5f800dbbaab7a202545ea39a7
+      '@testing-library/jest-dom': 5.15.0
+      '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react-hooks': 7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
+      cross-env: 7.0.3
+      eslint: 7.32.0
+      jest: 26.6.3
+      jest-standard-reporter: 2.0.0
+      jest-styled-components: 6.3.4_styled-components@4.4.1
+      npm-run-all: 4.1.5
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-test-renderer: 17.0.2_react@17.0.2
+      rimraf: 3.0.2
+      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
+    specifiers:
+      '@babel/cli': ^7.16.0
+      '@babel/core': ^7.16.0
+      '@priceline/babel-preset': workspace:*
+      '@priceline/eslint-config': workspace:*
+      '@rushstack/eslint-patch': ^1.1.0
+      '@storybook/addon-actions': ^6.3.12
+      '@storybook/react': ^6.3.12
+      '@testing-library/jest-dom': ^5.15.0
+      '@testing-library/react': ^12.1.2
+      '@testing-library/react-hooks': ^7.0.2
+      '@types/styled-system': ^4.2.2
+      cross-env: ^7.0.3
+      eslint: ^7.23.0
+      jest: ^26.6.3
+      jest-standard-reporter: ^2.0.0
+      jest-styled-components: ^6.3.4
+      npm-run-all: ^4.1.5
+      prop-types: ^15.7.2
+      pure-react-carousel: ^1.27.8
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      react-test-renderer: ^17.0.2
+      rimraf: ^3.0.2
+      styled-components: ^4.4.1
   ../../packages/codemods:
     dependencies:
       chalk: 4.1.2
@@ -4208,21 +4260,21 @@ packages:
       node: '>=12'
     resolution:
       integrity: sha512-X4xqRHqN8ACt2aHVe51OxeA2HjbcL4MqFqXkrmQszJ1NOUuUu5u6Vqx/0lZSVNku7velL5FC/s5uEAj1lsBMhA==
-  /@definitelytyped/header-parser/0.0.91:
+  /@definitelytyped/header-parser/0.0.100:
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.91
+      '@definitelytyped/typescript-versions': 0.0.100
       '@types/parsimmon': 1.10.6
       parsimmon: 1.18.0
     dev: true
     resolution:
-      integrity: sha512-dn2IMYHFTFlUJ94jrjMJY+IUEnRQXaQyMJmchgXiOY4Z4YNqNlbYGG8QxKjoLDnDvHbZZvL5ADjHvgvK7zjRYw==
-  /@definitelytyped/typescript-versions/0.0.91:
+      integrity: sha512-RaOZjuK+B02vsXMGPxmyv6iEnrI3LWalcrfBsUkuf1/KA4DlcIb7vuxI9s2Bdd75BV6aEYoqvfOU0anxKhgkTg==
+  /@definitelytyped/typescript-versions/0.0.100:
     dev: true
     resolution:
-      integrity: sha512-Yx3ygf5W03MHSTJZ2ZTwoRawHEQptAX+9VN1tAhBEF1/F8gM0Vg3XcBhXMq88uZmZ/awWaaPjGARvSnn6/RDgA==
-  /@definitelytyped/utils/0.0.91:
+      integrity: sha512-Ec4h0+9sbgAt6cLy5mIsKmrUGS0PYUgLnelpklYIOgRg2PZzBSGIISqb7L6TuQd7tBz6YWXAjv9xPKbiYOENtQ==
+  /@definitelytyped/utils/0.0.100:
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.91
+      '@definitelytyped/typescript-versions': 0.0.100
       '@qiwi/npm-registry-client': 8.9.1
       '@types/node': 14.17.33
       charm: 1.0.2
@@ -4232,7 +4284,7 @@ packages:
       tar-stream: 2.2.0
     dev: true
     resolution:
-      integrity: sha512-0WrC4QpNl/Iev3Pf+w8tmJqPlfnxstzkGUJl4zLqwwcB46DzE33TSADbRHMJLTvt/mRV6VBGkHp9HVMWeRnp4A==
+      integrity: sha512-fzpMROyXiI6zIUCjZAhBjXM2R1e72fNfi0A86cyS8/OYrBgIaEDBBvsH27P42H4jClTvc7X/xn5HJ+EZT+/IxQ==
   /@discoveryjs/json-ext/0.5.5:
     dev: true
     engines:
@@ -11946,6 +11998,10 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
+  /deep-freeze/0.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
   /deep-is/0.1.4:
     resolution:
       integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
@@ -11959,6 +12015,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-FmNpFinU2/42T6EqKk8KqGqjoFA=
+  /deepmerge/2.2.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
   /deepmerge/4.2.2:
     engines:
       node: '>=0.10.0'
@@ -12380,9 +12442,9 @@ packages:
       react: '>=16.12.0'
     resolution:
       integrity: sha512-cVprZg/9Lvj/uhYRxELzlu1aezRcgPWBjTvspiGTVEU64gF5pRdSRKFVLcxqsZC637cLAGMbL40JavEfWnqgNg==
-  /dts-critic/3.3.10:
+  /dts-critic/3.3.11:
     dependencies:
-      '@definitelytyped/header-parser': 0.0.91
+      '@definitelytyped/header-parser': 0.0.100
       command-exists: 1.2.9
       rimraf: 3.0.2
       semver: 6.3.0
@@ -12394,13 +12456,13 @@ packages:
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-XvemZCSc05VIlYrd3SjIO/6OyA3SCXK2RIHEVIbAZjxD6/ptmQfwnrq7pWFxJ6raiD3Edh8PzCSy84QUuAzOTg==
+      integrity: sha512-HMO2f9AO7ge44YO8OK18f+cxm/IaE1CFuyNFbfJRCEbyazWj5X5wWDF6W4CGdo5Ax0ILYVfJ7L/rOwuUN1fzWw==
   /dtslint/4.2.0:
     dependencies:
-      '@definitelytyped/header-parser': 0.0.91
-      '@definitelytyped/typescript-versions': 0.0.91
-      '@definitelytyped/utils': 0.0.91
-      dts-critic: 3.3.10
+      '@definitelytyped/header-parser': 0.0.100
+      '@definitelytyped/typescript-versions': 0.0.100
+      '@definitelytyped/utils': 0.0.100
+      dts-critic: 3.3.11
       fs-extra: 6.0.1
       json-stable-stringify: 1.0.1
       strip-json-comments: 2.0.1
@@ -12628,6 +12690,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Dw8/Gs4vRjxY6/6i9wU0V+utmQO9kvh9XLnz3LIudviOnVYDEe2ec+0k+NQoMamn1VrjKgCUOWj5jG/5M5M0Qw==
+  /equals/1.0.5:
+    dependencies:
+      jkroso-type: 1.1.1
+    dev: false
+    resolution:
+      integrity: sha1-ISBi3eXhpRDZVfE1mO/MamIbas4=
   /errno/0.1.8:
     dependencies:
       prr: 1.0.1
@@ -17169,6 +17237,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-o6vicYryQaKykE+EpiWXDzia4yo=
+  /jkroso-type/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-vEztbWxF/gdFKCuvyGqfjE/JzmE=
   /js-base64/2.6.4:
     dev: true
     resolution:
@@ -21428,6 +21500,21 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  /pure-react-carousel/1.27.8_react-dom@17.0.2+react@17.0.2:
+    dependencies:
+      '@babel/runtime': 7.16.3
+      deep-freeze: 0.0.1
+      deepmerge: 2.2.1
+      equals: 1.0.5
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+    peerDependencies:
+      react: 15.x || 16.x || 17.x
+      react-dom: 15.x || 16.x || 17.x
+    resolution:
+      integrity: sha512-QRx45OIKw4MqjVcacjkTo8JZYsdNLL/iXJYy+t5bZCz+q3i3vuD3P+Cg/44NdgKrKU/HKgN0ccZKlOqum+neaw==
   /q-io/1.11.6:
     dependencies:
       collections: 0.2.2
@@ -26357,7 +26444,7 @@ packages:
       integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   /wide-align/1.1.5:
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
     dev: true
     resolution:
       integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==
