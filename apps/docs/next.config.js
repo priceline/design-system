@@ -10,6 +10,9 @@ const IS_PROD = process.env.NODE_ENV === 'production'
 module.exports = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   assetPrefix: IS_PROD ? 'https://priceline.github.io/design-system/' : '',
+  swcMinify: !IS_PROD,
+  requireConfigFile: false,
+
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({
       test: /\.mdx?$/,

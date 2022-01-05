@@ -32,6 +32,8 @@ export default class MyApp extends App {
     return (
       <ThemeProvider>
         <Head>
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <meta name='generator' content='mdx-docs' />
           <title>Priceline One Design System</title>
         </Head>
         <Layout
