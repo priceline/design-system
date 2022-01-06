@@ -82,12 +82,12 @@ describe('utils', () => {
 
   describe('hexToRgb', () => {
     test('converts hex to rgb', () => {
-      expect(hexToRgb('#0068EF')).toEqual('rgb(0, 104, 239)')
-      expect(hexToRgb('#000')).toEqual('rgb(0, 0, 0)')
+      expect(hexToRgb('#0068EF')).toBe('rgb(0, 104, 239)')
+      expect(hexToRgb('#000')).toBe('rgb(0, 0, 0)')
     })
 
     test('returns empty if invalid hex', () => {
-      expect(hexToRgb('#00')).toEqual('')
+      expect(hexToRgb('#00')).toBe('')
     })
   })
 
@@ -109,12 +109,8 @@ describe('utils', () => {
 
   describe('getContrastRatio', () => {
     test('returns the contrast ratio between two colors', () => {
-      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(
-        4.2265248376519144
-      )
-      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(
-        4.968620984531288
-      )
+      expect(getContrastRatio('#0068EF', '#000000')).toBeCloseTo(4.2265248376519144)
+      expect(getContrastRatio('#0068EF', '#ffffff')).toBeCloseTo(4.968620984531288)
     })
   })
 
@@ -128,9 +124,7 @@ describe('utils', () => {
       }
       const override = applyVariations('Button')(props)
 
-      expect(override[0](props)).toEqual(
-        props.theme.componentStyles.Button.primary
-      )
+      expect(override[0](props)).toEqual(props.theme.componentStyles.Button.primary)
     })
 
     test('applies component style overrides with color and shade', () => {
@@ -142,9 +136,7 @@ describe('utils', () => {
       }
       const override = applyVariations('Button')(props)
 
-      expect(override[0](props)).toEqual(
-        props.theme.componentStyles.Button.primary.dark
-      )
+      expect(override[0](props)).toEqual(props.theme.componentStyles.Button.primary.dark)
     })
 
     test('applies variations with component style overrides', () => {
@@ -158,9 +150,7 @@ describe('utils', () => {
       const variations = { outline: 'color: blue;' }
       const override = applyVariations('Button', variations)(props)
       expect(override[0]).toEqual(variations.outline)
-      expect(override[2](props)).toEqual(
-        props.theme.componentStyles.Button.outline.primary
-      )
+      expect(override[2](props)).toEqual(props.theme.componentStyles.Button.outline.primary)
     })
 
     test('application variations with component style overrides with color and shade', () => {
@@ -176,9 +166,7 @@ describe('utils', () => {
       const variations = { outline: 'color: blue;' }
       const override = applyVariations('Button', variations)(props)
       expect(override[0]).toEqual(variations.outline)
-      expect(override[2](props)).toEqual(
-        props.theme.componentStyles.Button.outline.primary.dark
-      )
+      expect(override[2](props)).toEqual(props.theme.componentStyles.Button.outline.primary.dark)
     })
   })
 
@@ -188,55 +176,37 @@ describe('utils', () => {
     }
 
     test('returns a palette shade', () => {
-      expect(getPaletteColor('primary.base')(props)).toEqual(
-        props.theme.palette.primary.base
-      )
-      expect(getPaletteColor('primary', 'base')(props)).toEqual(
-        props.theme.palette.primary.base
-      )
-      expect(getPaletteColor('primary.dark', 'base')(props)).toEqual(
-        props.theme.palette.primary.dark
-      )
+      expect(getPaletteColor('primary.base')(props)).toEqual(props.theme.palette.primary.base)
+      expect(getPaletteColor('primary', 'base')(props)).toEqual(props.theme.palette.primary.base)
+      expect(getPaletteColor('primary.dark', 'base')(props)).toEqual(props.theme.palette.primary.dark)
 
       // legacy support
-      expect(getPaletteColor('orange', 'base')(props)).toEqual(
-        props.theme.colors.orange
-      )
-      expect(getPaletteColor('#ffffff', 'base')(props)).toEqual('#ffffff')
+      expect(getPaletteColor('orange', 'base')(props)).toEqual(props.theme.colors.orange)
+      expect(getPaletteColor('#ffffff', 'base')(props)).toBe('#ffffff')
     })
 
     test('returns a palette shade when provided a color prop', () => {
       expect(getPaletteColor('base')({ ...props, color: 'primary' })).toEqual(
         props.theme.palette.primary.base
       )
-      expect(
-        getPaletteColor('base')({ ...props, color: 'primary.dark' })
-      ).toEqual(props.theme.palette.primary.dark)
+      expect(getPaletteColor('base')({ ...props, color: 'primary.dark' })).toEqual(
+        props.theme.palette.primary.dark
+      )
 
       // legacy support
-      expect(getPaletteColor('base')({ ...props, color: 'orange' })).toEqual(
-        props.theme.colors.orange
-      )
-      expect(getPaletteColor('base')({ ...props, color: '#ffffff' })).toEqual(
-        '#ffffff'
-      )
+      expect(getPaletteColor('base')({ ...props, color: 'orange' })).toEqual(props.theme.colors.orange)
+      expect(getPaletteColor('base')({ ...props, color: '#ffffff' })).toBe('#ffffff')
     })
   })
 
   describe('hasPaletteColor', () => {
     test('returns true if palette color', () => {
-      expect(
-        hasPaletteColor({ theme: createTheme(), color: 'primary' })
-      ).toBeTruthy()
-      expect(
-        hasPaletteColor({ theme: createTheme(), color: 'primary.dark' })
-      ).toBeTruthy()
+      expect(hasPaletteColor({ theme: createTheme(), color: 'primary' })).toBeTruthy()
+      expect(hasPaletteColor({ theme: createTheme(), color: 'primary.dark' })).toBeTruthy()
     })
 
     test('returns false if not a palette color', () => {
-      expect(
-        hasPaletteColor({ theme: createTheme(), color: 'orange' })
-      ).toBeFalsy()
+      expect(hasPaletteColor({ theme: createTheme(), color: 'orange' })).toBeFalsy()
     })
   })
 
@@ -244,16 +214,10 @@ describe('utils', () => {
     const props = { theme: createTheme() }
 
     test('returns correct text color', () => {
-      expect(getTextColorOn('test')({ theme: {} })).toEqual('')
-      expect(getTextColorOn('abcde')(props)).toEqual(
-        props.theme.palette.text.base
-      )
-      expect(getTextColorOn('primary.light')(props)).toEqual(
-        props.theme.palette.text.base
-      )
-      expect(getTextColorOn('primary.base')(props)).toEqual(
-        props.theme.palette.text.lightest
-      )
+      expect(getTextColorOn('test')({ theme: {} })).toBe('')
+      expect(getTextColorOn('abcde')(props)).toEqual(props.theme.palette.text.base)
+      expect(getTextColorOn('primary.light')(props)).toEqual(props.theme.palette.text.base)
+      expect(getTextColorOn('primary.base')(props)).toEqual(props.theme.palette.text.lightest)
     })
 
     test('returns correct text color with custom contrast ratio', () => {
@@ -265,9 +229,7 @@ describe('utils', () => {
     })
 
     test('can be driven by a color prop', () => {
-      expect(getTextColorOn('light')({ ...props, color: 'primary' })).toEqual(
-        props.theme.palette.text.base
-      )
+      expect(getTextColorOn('light')({ ...props, color: 'primary' })).toEqual(props.theme.palette.text.base)
       expect(getTextColorOn('dark')({ ...props, color: 'primary' })).toEqual(
         props.theme.palette.text.lightest
       )
@@ -293,18 +255,14 @@ describe('utils', () => {
     const props = { theme: createTheme() }
 
     test('returns empty string if missing props', () => {
-      expect(color({})).toEqual('')
-      expect(color({ color: 'primary', bg: 'background' })).toEqual('')
-      expect(color({ bg: 'background' })).toEqual('')
+      expect(color({})).toBe('')
+      expect(color({ color: 'primary', bg: 'background' })).toBe('')
+      expect(color({ bg: 'background' })).toBe('')
     })
 
     test('returns the correct style', () => {
       expect(color({ ...props, bg: 'background' })).toEqual(
-        expect.arrayContaining([
-          'background-color:',
-          props.theme.palette.background.base,
-          ';',
-        ])
+        expect.arrayContaining(['background-color:', props.theme.palette.background.base, ';'])
       )
       expect(color({ ...props, color: 'primary' })).toEqual(
         expect.arrayContaining([

@@ -111,6 +111,7 @@ exports[`Stepper renders with children 1`] = `
       tabIndex={-1}
       viewBox="0 0 24 24"
       width={16}
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"

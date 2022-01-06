@@ -25,12 +25,12 @@
   },
   "dependencies": {
     "downshift": "^3.2.6",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "styled-system": "^4.2.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.16.0",
@@ -39,7 +39,7 @@
     "@testing-library/react": "^12.1.2",
     "cat-names": "^3.0.0",
     "cross-env": "^7.0.3",
-    "eslint": "^7.23.0",
+    "eslint": "^8.6.0",
     "jest": "^26.6.3",
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",

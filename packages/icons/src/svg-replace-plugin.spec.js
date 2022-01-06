@@ -12,14 +12,14 @@ const testPlugin = (code, options) => {
 
 describe('replace svg plugin', () => {
   it(`should return element AS IS when 'svg' element tags are not present`, () => {
-    expect(testPlugin('<html></html>')).toEqual('<html></html>;')
+    expect(testPlugin('<html></html>')).toBe('<html></html>;')
   })
 
   it('replace svg with Svg', () => {
-    expect(testPlugin('<svg></svg>')).toEqual('<Svg></Svg>;')
+    expect(testPlugin('<svg></svg>')).toBe('<Svg></Svg>;')
   })
 
   it('replace svg with Svg when no closing element is provided', () => {
-    expect(testPlugin('<svg />')).toEqual('<Svg />;')
+    expect(testPlugin('<svg />')).toBe('<Svg />;')
   })
 })
