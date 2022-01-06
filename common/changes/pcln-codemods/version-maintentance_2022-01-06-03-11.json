@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Monorepo maintenance, fixed peers",
+      "type": "minor",
+      "packageName": "pcln-codemods"
+    }
+  ],
+  "packageName": "pcln-codemods",
+  "email": "steven.dalonzo@priceline.com"
+}
