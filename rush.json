@@ -378,6 +378,11 @@
       "projectFolder": "packages/slider",
       "shouldPublish": true
     },
+    {
+      "packageName": "pcln-carousel",
+      "projectFolder": "packages/carousel",
+      "shouldPublish": true
+    },
 
     // Applications
     {

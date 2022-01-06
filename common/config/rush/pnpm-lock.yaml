@@ -73,6 +73,10 @@ importers:
       '@storybook/addon-a11y': ^6.3.12
       '@storybook/addon-essentials': ^6.3.12
       '@storybook/addon-viewport': ^6.3.12
+      '@storybook/addons': ^6.3.12
+      '@storybook/channels': ^6.3.12
+      '@storybook/components': ^6.3.12
+      '@storybook/core-events': ^6.3.12
       '@storybook/react': ^6.3.12
       '@storybook/theming': ^6.3.12
       babel-loader: ^8.2.3
@@ -98,6 +102,10 @@ importers:
       '@storybook/addon-a11y': 6.4.9_react-dom@17.0.2+react@17.0.2
       '@storybook/addon-essentials': 6.4.9_67f206c499abb5e9dc334e48ff89ffc7
       '@storybook/addon-viewport': 6.4.9_react-dom@17.0.2+react@17.0.2
+      '@storybook/addons': 6.4.9_react-dom@17.0.2+react@17.0.2
+      '@storybook/channels': 6.4.9
+      '@storybook/components': 6.4.9_react-dom@17.0.2+react@17.0.2
+      '@storybook/core-events': 6.4.9
       '@storybook/react': 6.4.9_3b4803415c815d82762d7e0b86e8d264
       '@storybook/theming': 6.4.9_react-dom@17.0.2+react@17.0.2
       babel-loader: 8.2.3_c391fd7145c194be609b87ed083bbc6a
@@ -110,7 +118,7 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       react-draggable-playground: 1.0.0
       react-is: 17.0.2
-      storybook-addon-jsx: 7.3.14_c8b77690cd520de64d63b7f6fb1fbeea
+      storybook-addon-jsx: 7.3.14_d6251df6b700bdc76946ea6b49e10dd3
       storybook-addon-performance: 0.16.1_281a4fa50a045c9112baf635f3bc27a7
       styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
       typescript: 4.5.4
@@ -170,6 +178,67 @@ importers:
       rimraf: 3.0.2
       styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
       us: 2.0.0
+
+  ../../packages/carousel:
+    specifiers:
+      '@babel/cli': ^7.16.7
+      '@babel/core': ^7.16.7
+      '@priceline/babel-preset': workspace:*
+      '@priceline/eslint-config': workspace:*
+      '@rushstack/eslint-patch': ^1.1.0
+      '@storybook/addon-actions': ^6.3.12
+      '@storybook/react': ^6.3.12
+      '@testing-library/jest-dom': ^5.15.0
+      '@testing-library/react': ^12.1.2
+      '@testing-library/react-hooks': ^7.0.2
+      '@types/styled-system': ^4.2.2
+      cross-env: ^7.0.3
+      eslint: ^8.6.0
+      jest: ^26.6.3
+      jest-standard-reporter: ^2.0.0
+      jest-styled-components: ^6.3.4
+      moize: ^6.1.0
+      npm-run-all: ^4.1.5
+      pcln-design-system: workspace:*
+      prop-types: ^15.8.1
+      pure-react-carousel: ^1.27.8
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      react-test-renderer: ^17.0.2
+      rimraf: ^3.0.2
+      styled-components: ^4.4.1
+      typescript: ^4.5.4
+      uuid: ^8.3.2
+    dependencies:
+      '@types/styled-system': 4.2.2
+      moize: 6.1.0
+      prop-types: 15.8.1
+      pure-react-carousel: 1.27.8_react-dom@17.0.2+react@17.0.2
+      uuid: 8.3.2
+    devDependencies:
+      '@babel/cli': 7.16.7_@babel+core@7.16.7
+      '@babel/core': 7.16.7
+      '@priceline/babel-preset': link:../../tools/babel-preset
+      '@priceline/eslint-config': link:../../tools/eslint-config
+      '@rushstack/eslint-patch': 1.1.0
+      '@storybook/addon-actions': 6.4.9_react-dom@17.0.2+react@17.0.2
+      '@storybook/react': 6.4.9_3b4803415c815d82762d7e0b86e8d264
+      '@testing-library/jest-dom': 5.16.1
+      '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
+      '@testing-library/react-hooks': 7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
+      cross-env: 7.0.3
+      eslint: 8.6.0
+      jest: 26.6.3
+      jest-standard-reporter: 2.0.0
+      jest-styled-components: 6.3.4_styled-components@4.4.1
+      npm-run-all: 4.1.5
+      pcln-design-system: link:../core
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-test-renderer: 17.0.2_react@17.0.2
+      rimraf: 3.0.2
+      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
+      typescript: 4.5.4
 
   ../../packages/codemods:
     specifiers:
@@ -1376,7 +1445,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.16.7
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.16.7_@babel+core@7.12.9
     dev: true
@@ -9779,6 +9848,10 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: true
 
+  /deep-freeze/0.0.1:
+    resolution: {integrity: sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=}
+    dev: false
+
   /deep-is/0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
@@ -9790,6 +9863,11 @@ packages:
     resolution: {integrity: sha1-FmNpFinU2/42T6EqKk8KqGqjoFA=}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /deepmerge/2.2.1:
+    resolution: {integrity: sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /deepmerge/4.2.2:
     resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
@@ -10390,6 +10468,12 @@ packages:
       rst-selector-parser: 2.2.3
       string.prototype.trim: 1.2.5
     dev: true
+
+  /equals/1.0.5:
+    resolution: {integrity: sha1-ISBi3eXhpRDZVfE1mO/MamIbas4=}
+    dependencies:
+      jkroso-type: 1.1.1
+    dev: false
 
   /errno/0.1.8:
     resolution: {integrity: sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==}
@@ -11767,7 +11851,7 @@ packages:
     resolution: {integrity: sha512-DUxuQaKoqfNne8iikd14SAkh5uw4+8vNifp6gmA73yYNS6ywLIWSLD/n/mBzHQRpW3J7rbATEakmiA8JvkTyZw==}
     engines: {node: '>=6.11.5', yarn: '>=1.0.0'}
     dependencies:
-      '@babel/code-frame': 7.10.4
+      '@babel/code-frame': 7.16.7
       chalk: 2.4.2
       micromatch: 3.1.10
       minimatch: 3.0.4
@@ -14588,6 +14672,10 @@ packages:
 
   /jju/1.4.0:
     resolution: {integrity: sha1-o6vicYryQaKykE+EpiWXDzia4yo=}
+    dev: false
+
+  /jkroso-type/1.1.1:
+    resolution: {integrity: sha1-vEztbWxF/gdFKCuvyGqfjE/JzmE=}
     dev: false
 
   /js-base64/2.6.4:
@@ -18213,6 +18301,21 @@ packages:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
 
+  /pure-react-carousel/1.27.8_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-QRx45OIKw4MqjVcacjkTo8JZYsdNLL/iXJYy+t5bZCz+q3i3vuD3P+Cg/44NdgKrKU/HKgN0ccZKlOqum+neaw==}
+    peerDependencies:
+      react: 15.x || 16.x || 17.x
+      react-dom: 15.x || 16.x || 17.x
+    dependencies:
+      '@babel/runtime': 7.16.7
+      deep-freeze: 0.0.1
+      deepmerge: 2.2.1
+      equals: 1.0.5
+      prop-types: 15.8.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
   /q-io/1.11.6:
     resolution: {integrity: sha1-poUJduHo98W9D6Plg19eudlPoXM=}
     engines: {node: '>=0.6.0'}
@@ -20322,7 +20425,7 @@ packages:
     resolution: {integrity: sha512-iJtHSGmNgAUx0b/MCS6ASGxb//hGrHHRgzvN+K5bvkBTN7A9RTpPSf1WSp+nPGvWCJ1jRnvY7MKnuqfoi3OEqg==}
     dev: true
 
-  /storybook-addon-jsx/7.3.14_c8b77690cd520de64d63b7f6fb1fbeea:
+  /storybook-addon-jsx/7.3.14_d6251df6b700bdc76946ea6b49e10dd3:
     resolution: {integrity: sha512-ierjcn0nxjjOuNcnLkorXQnfXlYmyQxFXvmWV88T9V8VAnsWd4yclTtSOV/gPtB83FefmyO/8dm1qQBG0f+2pA==}
     peerDependencies:
       '@storybook/addons': '>= 5.x'
@@ -20333,6 +20436,10 @@ packages:
       react: ^16.2.0 || ^17.0.0
       react-dom: ^16.2.0 || ^17.0.0
     dependencies:
+      '@storybook/addons': 6.4.9_react-dom@17.0.2+react@17.0.2
+      '@storybook/channels': 6.4.9
+      '@storybook/components': 6.4.9_react-dom@17.0.2+react@17.0.2
+      '@storybook/core-events': 6.4.9
       '@storybook/theming': 6.4.9_react-dom@17.0.2+react@17.0.2
       copy-to-clipboard: 3.3.1
       js-beautify: 1.14.0
