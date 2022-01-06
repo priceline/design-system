@@ -79,11 +79,7 @@ class Popover extends Component {
           )}
         </Reference>
         {isPopoverOpen && (
-          <PopoverContent
-            {...this.props}
-            onCloseRequest={this.handleClose}
-            contentRef={this.contentRef}
-          />
+          <PopoverContent {...this.props} onCloseRequest={this.handleClose} contentRef={this.contentRef} />
         )}
       </Manager>
     )

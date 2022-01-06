@@ -7,9 +7,7 @@ function hasInternalRegistry(filePath) {
 }
 
 function getPackageLocks() {
-  const lockfiles = execSync(
-    `find . -name 'package-lock.json' -not -path "*/node_modules/*"`
-  )
+  const lockfiles = execSync(`find . -name 'package-lock.json' -not -path "*/node_modules/*"`)
 
   return lockfiles
     .toString()

@@ -4,11 +4,7 @@ import React from 'react'
 import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty } from 'pcln-icons'
 import PropTypes from 'prop-types'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const Checkbox = React.forwardRef((props, ref) => {
   // eslint-disable-next-line react/prop-types
@@ -40,9 +36,7 @@ const CheckBoxWrapper = styled.div`
   cursor: pointer;
   background-color: inherit;
   color: ${(props) =>
-    props.disabled
-      ? getPaletteColor('border.base')(props)
-      : getPaletteColor('border.light')(props)};
+    props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('border.light')(props)};
 
   svg {
     border: 1px solid transparent;
@@ -56,9 +50,7 @@ const CheckBoxWrapper = styled.div`
   
   > input:hover ~ svg[data-name='empty'] {
     color: ${(props) =>
-      props.disabled
-        ? getPaletteColor('border.base')(props)
-        : getPaletteColor('base')(props)};
+      props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
   }
   
   > input {
@@ -72,9 +64,7 @@ const CheckBoxWrapper = styled.div`
     & ~ svg[data-name='checked'] {
       display: inline-block;
       color: ${(props) =>
-        props.disabled
-          ? getPaletteColor('border.base')(props)
-          : getPaletteColor('base')(props)};
+        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
     }
 
     & ~ svg[data-name='empty'] {
@@ -88,9 +78,7 @@ const CheckBoxWrapper = styled.div`
 
     &:hover ~ svg[data-name='checked'] {
       color: ${(props) =>
-        props.disabled
-          ? getPaletteColor('border.base')(props)
-          : getPaletteColor('dark')(props)}
+        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('dark')(props)}
   }
 
   ${applyVariations('Checkbox')}

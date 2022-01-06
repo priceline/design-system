@@ -1,12 +1,7 @@
 import React from 'react'
 
 const Logo = () => (
-  <svg
-    width='144px'
-    height='24px'
-    viewBox='0 0 144 24'
-    xmlns='http://www.w3.org/2000/svg'
-  >
+  <svg width='144px' height='24px' viewBox='0 0 144 24' xmlns='http://www.w3.org/2000/svg'>
     <g
       stroke='none'
       strokeWidth='1'

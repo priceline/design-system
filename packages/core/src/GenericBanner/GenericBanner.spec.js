@@ -14,8 +14,7 @@ const props = {
   ),
   text: (
     <Text.span textColor='primary.base' mr={1}>
-      Update: Your travel may be impacted. Please review this hotels important
-      info.
+      Update: Your travel may be impacted. Please review this hotels important info.
     </Text.span>
   ),
   ctaText: (
@@ -45,13 +44,9 @@ describe('GenericBanner', () => {
   })
   test('Renders as expected-onclick', () => {
     const buttonClick = jest.fn()
-    const { getByText } = render(
-      <GenericBanner {...props} buttonClick={buttonClick} />
-    )
+    const { getByText } = render(<GenericBanner {...props} buttonClick={buttonClick} />)
     const header = getByText('COVID-19')
-    const text = getByText(
-      'Update: Your travel may be impacted. Please review this hotels important info.'
-    )
+    const text = getByText('Update: Your travel may be impacted. Please review this hotels important info.')
     expect(header).toBeTruthy()
     expect(text).toBeTruthy()
     const readMoreButton = getByText('Read More')
@@ -73,9 +68,7 @@ describe('GenericBanner', () => {
       />
     )
     const header = getByText('COVID-19')
-    const text = getByText(
-      'Update: Your travel may be impacted. Please review this hotels important info.'
-    )
+    const text = getByText('Update: Your travel may be impacted. Please review this hotels important info.')
     expect(getByRole('img')).toBeTruthy()
     expect(header).toBeTruthy()
     expect(text).toBeTruthy()
@@ -97,9 +90,7 @@ describe('GenericBanner', () => {
       />
     )
     const header = getByText('COVID-19')
-    const text = getByText(
-      'Update: Your travel may be impacted. Please review this hotels important info.'
-    )
+    const text = getByText('Update: Your travel may be impacted. Please review this hotels important info.')
     expect(getByRole('img')).toBeTruthy()
     expect(header).toBeTruthy()
     expect(text).toBeTruthy()

@@ -151,9 +151,7 @@ const createPalette = ({ palette = {}, ...theme }) => {
 const createTheme = (theme = {}, customBreakpoints = null) => {
   const mergedTheme = deepmerge(defaultTheme, theme)
 
-  const mediaQueries = customBreakpoints
-    ? createMediaQueries(customBreakpoints)
-    : mergedTheme.mediaQueries
+  const mediaQueries = customBreakpoints ? createMediaQueries(customBreakpoints) : mergedTheme.mediaQueries
   return {
     ...mergedTheme,
     contrastRatio: mergedTheme.contrastRatio || 2.6,

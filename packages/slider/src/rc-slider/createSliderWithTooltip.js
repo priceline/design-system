@@ -7,10 +7,7 @@ export default function createSliderWithTooltip(Component) {
   return class ComponentWrapper extends React.Component {
     static propTypes = {
       tipFormatter: PropTypes.func,
-      handleStyle: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.arrayOf(PropTypes.object),
-      ]),
+      handleStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.object)]),
       tipProps: PropTypes.object,
     }
     static defaultProps = {
@@ -34,13 +31,7 @@ export default function createSliderWithTooltip(Component) {
         }
       })
     }
-    handleWithTooltip = ({
-      value,
-      dragging,
-      index,
-      disabled,
-      ...restProps
-    }) => {
+    handleWithTooltip = ({ value, dragging, index, disabled, ...restProps }) => {
       const { tipFormatter, tipProps, handleStyle } = this.props
 
       const {
@@ -64,9 +55,7 @@ export default function createSliderWithTooltip(Component) {
           prefixCls={prefixCls}
           overlay={overlay}
           placement={placement}
-          visible={
-            (!disabled && (this.state.visibles[index] || dragging)) || visible
-          }
+          visible={(!disabled && (this.state.visibles[index] || dragging)) || visible}
           key={index}
         >
           <Handle

@@ -1,12 +1,6 @@
 /* eslint-disable no-unused-vars, react/prop-types */
 import React from 'react'
-import {
-  Title,
-  Subtitle,
-  Description,
-  Primary,
-  Props,
-} from '@storybook/addon-docs/blocks'
+import { Title, Subtitle, Description, Primary, Props } from '@storybook/addon-docs/blocks'
 import { DraggableParent, DraggableItem } from 'react-draggable-playground'
 import styled from 'styled-components'
 import {
@@ -67,12 +61,7 @@ export default {
 
 export const colors = () => (
   <Flex>
-    <Popover
-      renderContent={SimpleTextContent}
-      placement='bottom'
-      ariaLabel='Default Popover'
-      width={130}
-    >
+    <Popover renderContent={SimpleTextContent} placement='bottom' ariaLabel='Default Popover' width={130}>
       <Button color='primary' variation='outline' mx={2}>
         Default Popover
       </Button>
@@ -140,13 +129,7 @@ export const openByDefault = () => (
 )
 
 export const bottom = () => (
-  <Popover
-    renderContent={InnerContent}
-    placement='bottom'
-    ariaLabel='Bottom Popover'
-    idx={2}
-    width={400}
-  >
+  <Popover renderContent={InnerContent} placement='bottom' ariaLabel='Bottom Popover' idx={2} width={400}>
     <Link>Open Popover</Link>
   </Popover>
 )
@@ -255,8 +238,7 @@ const PriceGuidanceContent = ({ handleClose }) => (
             Price Guidance
           </Text>
           <Text color='text.light' fontSize='12px'>
-            Lorem ipsum dolor sit amet, consect etur adipiscing elit. Mauris
-            nisl sapi
+            Lorem ipsum dolor sit amet, consect etur adipiscing elit. Mauris nisl sapi
           </Text>
         </Flex>
       </Flex>

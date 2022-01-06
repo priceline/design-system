@@ -7,8 +7,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'A low-level component for setting font-size, typographic styles, margin, and color',
+        component: 'A low-level component for setting font-size, typographic styles, margin, and color',
       },
     },
   },
@@ -135,12 +134,7 @@ MinMaxHeight.story = {
 
 export const HideOnLgBreakpoints = () => (
   <div>
-    <Text
-      color='primary'
-      display={[null, null, null, 'none']}
-      fontSize={4}
-      width={1}
-    >
+    <Text color='primary' display={[null, null, null, 'none']} fontSize={4} width={1}>
       Hidden text on larger screens
     </Text>
     <Text color='secondary' fontSize={4} width={1}>
@@ -151,19 +145,17 @@ export const HideOnLgBreakpoints = () => (
 
 export const Span = () => (
   <Text>
-    Just some text <Text.span bold>Some span text</Text.span> Just some more
-    text
+    Just some text <Text.span bold>Some span text</Text.span> Just some more text
   </Text>
 )
 
 export const Paragraph = () => (
   <Text.p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+    mollit anim id est laborum.
   </Text.p>
 )
 

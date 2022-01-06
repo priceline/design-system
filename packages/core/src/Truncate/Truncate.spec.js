@@ -9,9 +9,7 @@ describe('Truncate', () => {
   })
 
   test('generates styles', () => {
-    const json = rendererCreateWithTheme(
-      <Truncate>generates styles</Truncate>
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Truncate>generates styles</Truncate>).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('overflow', 'hidden')
     expect(json).toHaveStyleRule('white-space', 'nowrap')

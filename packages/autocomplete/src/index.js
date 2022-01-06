@@ -19,20 +19,14 @@ export const withAutocomplete = (Component, mapProps) =>
   React.forwardRef((props, ref) => (
     <AutocompleteContext.Consumer
       // eslint-disable-next-line react/no-children-prop
-      children={(state) => (
-        <Component ref={ref} {...props} {...mapProps({ ...props, ...state })} />
-      )}
+      children={(state) => <Component ref={ref} {...props} {...mapProps({ ...props, ...state })} />}
     />
   ))
 
-export const Label = withAutocomplete(PclnLabel, ({ getLabelProps }) =>
-  getLabelProps()
-)
+export const Label = withAutocomplete(PclnLabel, ({ getLabelProps }) => getLabelProps())
 Label.isLabel = true
 
-export const Input = withAutocomplete(PclnInput, ({ getInputProps }) =>
-  getInputProps()
-)
+export const Input = withAutocomplete(PclnInput, ({ getInputProps }) => getInputProps())
 Input.isField = true
 
 const MenuCard = styled(Card)`
@@ -56,9 +50,7 @@ MenuCard.propTypes = {
   bg: deprecatedPropType('color'),
 }
 
-const MenuRoot = React.forwardRef((props, ref) => (
-  <MenuCard {...props} innerRef={ref} />
-))
+const MenuRoot = React.forwardRef((props, ref) => <MenuCard {...props} innerRef={ref} />)
 MenuRoot.displayName = 'Autocomplete_MenuRoot'
 
 export const Menu = ({ children, ...props }) => (

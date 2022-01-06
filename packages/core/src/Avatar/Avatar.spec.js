@@ -18,12 +18,7 @@ describe('Avatar', () => {
 
   test('renders mr elon', () => {
     const { asFragment } = render(
-      <Avatar
-        title='Not Elon Musk'
-        subtitle='totally.not.elon@musk.com'
-        src={elonJPG}
-        altText='papa-elon'
-      />
+      <Avatar title='Not Elon Musk' subtitle='totally.not.elon@musk.com' src={elonJPG} altText='papa-elon' />
     )
     expect(asFragment()).toMatchSnapshot()
   })

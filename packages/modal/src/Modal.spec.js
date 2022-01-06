@@ -23,13 +23,7 @@ describe('Modal', () => {
   })
   test('renders when enable overflow and disable close button', () => {
     const { getByText, getByTestId, container } = render(
-      <Modal
-        ariaLabel='Test Modal.'
-        width={['100px', '200px', '500px']}
-        isOpen
-        enableOverflow
-        imgMode
-      >
+      <Modal ariaLabel='Test Modal.' width={['100px', '200px', '500px']} isOpen enableOverflow imgMode>
         <div data-content>Content</div>
       </Modal>
     )
@@ -39,12 +33,7 @@ describe('Modal', () => {
   })
   test('renders when enable header close button', () => {
     const { getByText } = render(
-      <Modal
-        ariaLabel='Test Modal.'
-        width={['100px', '200px', '500px']}
-        isOpen
-        header={<div>header</div>}
-      >
+      <Modal ariaLabel='Test Modal.' width={['100px', '200px', '500px']} isOpen header={<div>header</div>}>
         <div data-content>Content</div>
       </Modal>
     )
@@ -52,12 +41,7 @@ describe('Modal', () => {
   })
   test('renders with top alignment', () => {
     const { asFragment, getByText, getByTestId } = render(
-      <Modal
-        ariaLabel='Test Modal.'
-        isOpen
-        enableOverflow
-        verticalAlignment='top'
-      >
+      <Modal ariaLabel='Test Modal.' isOpen enableOverflow verticalAlignment='top'>
         <div data-content>Content</div>
       </Modal>
     )

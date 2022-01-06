@@ -34,10 +34,7 @@ WithColor.story = {
 }
 
 export const WithSize = () => (
-  <IconButton
-    onClick={action('Clicked IconButton')}
-    icon={<Calendar title='Choose date' size={64} />}
-  />
+  <IconButton onClick={action('Clicked IconButton')} icon={<Calendar title='Choose date' size={64} />} />
 )
 
 WithSize.story = {
@@ -45,11 +42,7 @@ WithSize.story = {
 }
 
 export const WithDisabled = () => (
-  <IconButton
-    onClick={action('Clicked IconButton')}
-    icon={<Calendar title='Choose date' />}
-    disabled
-  />
+  <IconButton onClick={action('Clicked IconButton')} icon={<Calendar title='Choose date' />} disabled />
 )
 
 WithDisabled.story = {

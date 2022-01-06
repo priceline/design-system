@@ -22,12 +22,7 @@ export const Colors = () => (
   <Box width={400}>
     <Input mb={3} id='input-colors-1' placeholder='No color' />
     <Input mb={3} id='input-colors-2' color='primary' placeholder='Primary' />
-    <Input
-      mb={3}
-      id='input-colors-3'
-      color='secondary'
-      placeholder='Secondary'
-    />
+    <Input mb={3} id='input-colors-3' color='secondary' placeholder='Secondary' />
     <Input mb={3} id='input-colors-4' color='warning' placeholder='Warning' />
     <Input mb={3} id='input-colors-5' color='alert' placeholder='Alert' />
     <Input mb={3} id='input-colors-6' color='caution' placeholder='Caution' />

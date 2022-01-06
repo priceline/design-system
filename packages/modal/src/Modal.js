@@ -24,14 +24,8 @@ const DIALOG_ANIMATION = (transitionState) => `
   ${transitionState === 'exited' ? `transform: scale(0.5);` : ''}
 `
 
-const getAnimation = ({
-  transitionstate,
-  defaultAnimation,
-  customAnimation = null,
-}) =>
-  typeof customAnimation === 'function'
-    ? customAnimation(transitionstate)
-    : defaultAnimation(transitionstate)
+const getAnimation = ({ transitionstate, defaultAnimation, customAnimation = null }) =>
+  typeof customAnimation === 'function' ? customAnimation(transitionstate) : defaultAnimation(transitionstate)
 
 const Overlay = styled(DialogOverlay)`
   background-color: rgba(0, 0, 0, 0.7);
@@ -181,10 +175,7 @@ const Modal = ({
           customAnimation={overlayAnimation}
         >
           <OverlayWrapper>
-            <DialogWrapper
-              enableoverflow={enableOverflow}
-              verticalAlignment={verticalAlignment}
-            >
+            <DialogWrapper enableoverflow={enableOverflow} verticalAlignment={verticalAlignment}>
               <Dialog
                 width={fullScreen ? 1 : width}
                 bg={bg}
@@ -201,17 +192,9 @@ const Modal = ({
               >
                 <DialogInnerWrapper flexDirection='column'>
                   {header && <HeaderWrapper>{header}</HeaderWrapper>}
-                  <ContentWrapper
-                    p={imgMode ? 0 : 16}
-                    header={header}
-                    enableoverflow={enableOverflow}
-                  >
+                  <ContentWrapper p={imgMode ? 0 : 16} header={header} enableoverflow={enableOverflow}>
                     {enableOverflow && !disableCloseButton && (
-                      <FloatCloseButton
-                        data-testid='pcln-modal-close'
-                        header={header}
-                        onClick={onClose}
-                      />
+                      <FloatCloseButton data-testid='pcln-modal-close' header={header} onClick={onClose} />
                     )}
                     {children}
                   </ContentWrapper>
@@ -240,9 +223,7 @@ Modal.defaultProps = {
 
 const validateAriaProps = (props, propName, componentName) => {
   if (!props.ariaLabel && !props.ariaLabelledBy) {
-    return new Error(
-      `A <${componentName}> must have either an 'ariaLabel' or 'ariaLabelledBy' prop.`
-    )
+    return new Error(`A <${componentName}> must have either an 'ariaLabel' or 'ariaLabelledBy' prop.`)
   }
 }
 

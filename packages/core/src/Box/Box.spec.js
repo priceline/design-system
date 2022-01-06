@@ -9,9 +9,7 @@ describe('Box', () => {
   })
 
   test('width and height props set width/height', () => {
-    const json = rendererCreateWithTheme(
-      <Box width={1 / 2} height='50%' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Box width={1 / 2} height='50%' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('height', '50%')
     expect(json).toHaveStyleRule('width', '50%')

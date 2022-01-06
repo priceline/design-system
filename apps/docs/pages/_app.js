@@ -10,10 +10,7 @@ import SideNav from '../src/SideNav'
 
 const basepath = process.env.NODE_ENV === 'production' ? '/design-system' : ''
 
-const routes = navigation.reduce(
-  (a, item) => [...a, ...(item.links || [item])],
-  []
-)
+const routes = navigation.reduce((a, item) => [...a, ...(item.links || [item])], [])
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {

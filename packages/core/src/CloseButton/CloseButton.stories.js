@@ -9,9 +9,7 @@ export default {
   component: CloseButton,
 }
 
-export const WithClickHandler = () => (
-  <CloseButton color='background.darkest' onClick={action('clicked')} />
-)
+export const WithClickHandler = () => <CloseButton color='background.darkest' onClick={action('clicked')} />
 
 WithClickHandler.story = {
   name: 'with click handler',
@@ -21,11 +19,7 @@ export const ForwardRefs = () => (
   <ForwardRefDemo
     refChild={(dsRef) => (
       <>
-        <CloseButton
-          color='background.darkest'
-          onClick={action('clicked')}
-          dsRef={dsRef}
-        />
+        <CloseButton color='background.darkest' onClick={action('clicked')} dsRef={dsRef} />
         <br />
         <Button onClick={() => dsRef.current.focus()} mt={4}>
           Click to focus button via ref

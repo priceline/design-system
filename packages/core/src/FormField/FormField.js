@@ -9,9 +9,7 @@ const FormField = (props) => {
   const [field] = children.filter((child) => child.type.isField)
   const [label] = children.filter((child) => child.type.isLabel)
   const valueNoLabel = !label && field && !!field.props.value
-  const showLabel =
-    ((label && !label.props.autoHide) || (field && !!field.props.value)) &&
-    !valueNoLabel
+  const showLabel = ((label && !label.props.autoHide) || (field && !!field.props.value)) && !valueNoLabel
   const id = field && (field.props.id || field.props.name)
 
   const styled = children.map((child, i, arr) => {
@@ -74,9 +72,7 @@ const childrenPropType = (props, propName, componentName) => {
     )
   }
   if (!label) {
-    return new Error(
-      `No label found for ${componentName}. Please include a Label as a child.`
-    )
+    return new Error(`No label found for ${componentName}. Please include a Label as a child.`)
   }
 }
 

@@ -1,12 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { space, fontSize } from 'styled-system'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-  deprecatedPropType,
-} from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue, deprecatedPropType } from '../utils'
 
 const ToggleBadge = styled.button`
   border-radius: ${(props) => props.theme.radius};
@@ -16,13 +11,10 @@ const ToggleBadge = styled.button`
   font-family: inherit;
   cursor: pointer;
   background-color: ${(props) =>
-    props.selected
-      ? getPaletteColor(props.bg || props.color, 'light')(props)
-      : props.unSelectedBg};
+    props.selected ? getPaletteColor(props.bg || props.color, 'light')(props) : props.unSelectedBg};
   color: ${getPaletteColor('base')};
   &:hover {
-    background-color: ${(props) =>
-      getPaletteColor(props.bg || props.color, 'light')(props)};
+    background-color: ${(props) => getPaletteColor(props.bg || props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
   ${space} ${fontSize};

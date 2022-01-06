@@ -4,11 +4,7 @@ const elements = ['svg', 'Svg']
 const dynamicTitlePlugin = ({ types: t }) => {
   const addTitle = {
     JSXElement(path) {
-      if (
-        !elements.some((element) =>
-          path.get('openingElement.name').isJSXIdentifier({ name: element })
-        )
-      ) {
+      if (!elements.some((element) => path.get('openingElement.name').isJSXIdentifier({ name: element }))) {
         return
       }
 

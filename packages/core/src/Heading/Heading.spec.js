@@ -24,19 +24,15 @@ describe('Heading', () => {
     expect(headingH6json).toMatchSnapshot()
   })
 
-  const defaultFontSizeTestCase =
-    'Heading component with no default font size, when "fontSize" prop not used'
+  const defaultFontSizeTestCase = 'Heading component with no default font size, when "fontSize" prop not used'
   test(defaultFontSizeTestCase, () => {
     const json = rendererCreateWithTheme(<Heading />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  const usingTextPropsTestCase =
-    'Heading component using <Text> component properties'
+  const usingTextPropsTestCase = 'Heading component using <Text> component properties'
   test(usingTextPropsTestCase, () => {
-    const json = rendererCreateWithTheme(
-      <Heading textAlign='center' color='gray' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Heading textAlign='center' color='gray' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-align', 'center')
     expect(json).toHaveStyleRule('color', theme.colors['gray'])

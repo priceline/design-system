@@ -5,16 +5,7 @@ import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
 
-const ChoiceChip = ({
-  id,
-  name,
-  disabled,
-  selected,
-  children,
-  onClick,
-  label,
-  ...props
-}) => (
+const ChoiceChip = ({ id, name, disabled, selected, children, onClick, label, ...props }) => (
   <ChipLabel htmlFor={id} {...props}>
     <ChipInput
       data-testid={id}
@@ -26,12 +17,7 @@ const ChoiceChip = ({
       checked={selected}
       onChange={onClick}
     />
-    <ChipContent
-      label={label}
-      disabled={disabled}
-      selected={selected}
-      {...props}
-    >
+    <ChipContent label={label} disabled={disabled} selected={selected} {...props}>
       {children}
     </ChipContent>
   </ChipLabel>

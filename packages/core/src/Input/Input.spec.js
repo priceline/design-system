@@ -20,9 +20,7 @@ describe('Input', () => {
     expect(json).toMatchSnapshot()
   })
   test('it renders an input element with large text', () => {
-    const json = rendererCreateWithTheme(
-      <Input id={id} fontSize={4} />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Input id={id} fontSize={4} />).toJSON()
     expect(json).toMatchSnapshot()
   })
   test('forwards ref to the input', () => {
@@ -50,18 +48,11 @@ describe('Input', () => {
       const color = 'error.base'
       const paletteTheme = createTheme(theme)
       const { getByText } = render(
-        <Input
-          id={id}
-          color={color}
-          helperText={<Input.HelperText>{helperText}</Input.HelperText>}
-        />
+        <Input id={id} color={color} helperText={<Input.HelperText>{helperText}</Input.HelperText>} />
       )
       let helperTextNode = getByText(helperText)
       expect(helperTextNode).not.toBeNull()
-      expect(helperTextNode).toHaveStyleRule(
-        'color',
-        getPaletteColor(color)({ theme: paletteTheme })
-      )
+      expect(helperTextNode).toHaveStyleRule('color', getPaletteColor(color)({ theme: paletteTheme }))
     })
 
     test('can override the color from Input', () => {
@@ -75,11 +66,7 @@ describe('Input', () => {
           id={id}
           color={color}
           placeholder={placeholder}
-          helperText={
-            <Input.HelperText color={helperTextColor}>
-              {helperText}
-            </Input.HelperText>
-          }
+          helperText={<Input.HelperText color={helperTextColor}>{helperText}</Input.HelperText>}
         />
       )
       let helperTextNode = getByText(helperText)

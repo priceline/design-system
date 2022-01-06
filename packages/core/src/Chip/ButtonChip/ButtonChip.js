@@ -21,28 +21,10 @@ const ChipButton = styled(Button)`
   }
 `
 
-const getTitle = ({ disabled, expanded }) =>
-  disabled ? 'Disabled' : expanded ? 'Collapse' : 'Expand'
+const getTitle = ({ disabled, expanded }) => (disabled ? 'Disabled' : expanded ? 'Collapse' : 'Expand')
 
-const ButtonChip = ({
-  id,
-  m,
-  disabled,
-  expanded,
-  children,
-  onClick,
-  label,
-  showActionIcon,
-  ...props
-}) => (
-  <ChipButton
-    id={id}
-    data-testid={id}
-    disabled={disabled}
-    onClick={onClick}
-    aria-expanded={expanded}
-    m={m}
-  >
+const ButtonChip = ({ id, m, disabled, expanded, children, onClick, label, showActionIcon, ...props }) => (
+  <ChipButton id={id} data-testid={id} disabled={disabled} onClick={onClick} aria-expanded={expanded} m={m}>
     <ChipContent
       label={label}
       disabled={disabled}

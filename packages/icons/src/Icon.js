@@ -21,9 +21,7 @@ const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
 
   if (!Component) {
     if (isDev) {
-      console.trace(
-        name ? `icon ${name} does not exist` : 'icon is missing name prop'
-      )
+      console.trace(name ? `icon ${name} does not exist` : 'icon is missing name prop')
     }
     return null
   } else {
@@ -58,9 +56,7 @@ BaseIcon.propTypes = {
   name: (props, key, componentName) => {
     const name = props[key]
     if (!icons[name] && !icons[upperFirst(name)]) {
-      return new Error(
-        `Unknown name prop \`${name}\` supplied to \`${componentName}\``
-      )
+      return new Error(`Unknown name prop \`${name}\` supplied to \`${componentName}\``)
     }
   },
   title: PropTypes.string,

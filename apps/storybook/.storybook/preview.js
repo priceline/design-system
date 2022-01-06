@@ -26,15 +26,7 @@ export const parameters = {
     options: {
       runOnly: {
         type: 'tag',
-        values: [
-          'wcag2a',
-          'wcag2aa',
-          'wcag21a',
-          'wcag21aa',
-          'section508',
-          'best-practice',
-          'experimental',
-        ],
+        values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'section508', 'best-practice', 'experimental'],
       },
     },
   },

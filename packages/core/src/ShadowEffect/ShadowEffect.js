@@ -13,15 +13,7 @@ export const ShadowOverlay = styled.div`
   z-index: ${(props) => props.zIndex};
 `
 
-function ShadowEffect({
-  shouldCloseOnBlur,
-  shouldOpenOnFocus,
-  zIndex,
-  children,
-  onClose,
-  onOpen,
-  ...props
-}) {
+function ShadowEffect({ shouldCloseOnBlur, shouldOpenOnFocus, zIndex, children, onClose, onOpen, ...props }) {
   const [isOpen, setOpen] = useState(false)
 
   const child = React.Children.only(children)
@@ -46,9 +38,7 @@ function ShadowEffect({
 
   return (
     <>
-      {isOpen && (
-        <ShadowOverlay zIndex={zIndex} onClick={handleClose} {...props} />
-      )}
+      {isOpen && <ShadowOverlay zIndex={zIndex} onClick={handleClose} {...props} />}
       {React.cloneElement(child, {
         style: { position: 'relative', zIndex: isOpen && zIndex },
         onBlur: () => {

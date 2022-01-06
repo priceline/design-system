@@ -47,12 +47,7 @@ export default {
 
 export const CustomBackgroundAndBorderColor = () => (
   <div>
-    <Stamp
-      color='background.lightest'
-      bg='primary'
-      borderColor='primary'
-      mr={2}
-    >
+    <Stamp color='background.lightest' bg='primary' borderColor='primary' mr={2}>
       custom border and background
     </Stamp>
     <Stamp color='error' bg='background.lightest' borderColor='primary' mr={2}>

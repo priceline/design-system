@@ -153,9 +153,8 @@ export const ThemeUserCaseColorText = () => (
   <React.Fragment>
     <Box p={3}>
       <Box mt={3} color='text'>
-        color="text" w/o bg prop: retains the original "text" color from
-        original color set as backward compatible: expected style w. "text"
-        color and white background
+        color="text" w/o bg prop: retains the original "text" color from original color set as backward
+        compatible: expected style w. "text" color and white background
       </Box>
       <Box mt={3} color='purple'>
         color="purple" as none "text" color w/o bg prop

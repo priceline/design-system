@@ -39,9 +39,7 @@ export const hexToRgb = (color) => {
   let colors = color.match(new RegExp(`.{1,${color.length / 3}}`, 'g'))
 
   if (colors) {
-    colors = colors
-      .map((val) => parseInt(val.length === 1 ? val + val : val, 16))
-      .join(', ')
+    colors = colors.map((val) => parseInt(val.length === 1 ? val + val : val, 16)).join(', ')
   }
 
   return colors ? `rgb(${colors})` : ''
@@ -131,11 +129,9 @@ export const getBreakpointSize = (array, length) => {
  * @returns {array}
  */
 
-export const applySizes = (
-  sizes = null,
-  defaultSize = 'medium',
-  mediaQueriesOptions = mediaQueries
-) => ({ size }) => {
+export const applySizes = (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) => ({
+  size,
+}) => {
   if (sizes && typeof size === 'string') {
     return css`
       ${sizes[size] || sizes[defaultSize] || ''}
@@ -178,13 +174,10 @@ const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
  *
  * @returns {array}
  */
-export const applyVariations = (componentName, variations = null) => (
-  props
-) => {
+export const applyVariations = (componentName, variations = null) => (props) => {
   let { color, variation } = props
 
-  const colorShade =
-    !!color && typeof color === 'string' && color.match(colorShadeRegex)
+  const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
 
   let shade
   if (colorShade) {
@@ -199,17 +192,13 @@ export const applyVariations = (componentName, variations = null) => (
       return css`
         ${variations[variation] || ''}
         ${typeof color === 'string' &&
-        themeGet(
-          `componentStyles.${componentName}.${variation}.${color}.${shade}`,
-          ''
-        )}
+        themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}
       `
     }
 
     return css`
       ${variations[variation] || ''}
-      ${typeof color === 'string' &&
-      themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
+      ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
     `
   }
 
@@ -284,9 +273,7 @@ export const getTextColorOn = (name) => (props) => {
     const text = theme.palette.text
 
     if (color) {
-      return getContrastRatio(text.lightest, color) >= theme.contrastRatio
-        ? text.lightest
-        : text.base
+      return getContrastRatio(text.lightest, color) >= theme.contrastRatio ? text.lightest : text.base
     }
 
     return text.base
@@ -336,12 +323,8 @@ export const color = (props) => {
 }
 
 export const borders = (props) => {
-  const borderColor = props.color
-    ? getPaletteColor('base')(props)
-    : getPaletteColor('border.base')(props)
-  const focusColor = props.color
-    ? borderColor
-    : getPaletteColor('primary.base')(props)
+  const borderColor = props.color ? getPaletteColor('base')(props) : getPaletteColor('border.base')(props)
+  const focusColor = props.color ? borderColor : getPaletteColor('primary.base')(props)
 
   return {
     'border-color': borderColor,

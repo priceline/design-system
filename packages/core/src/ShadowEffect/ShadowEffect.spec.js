@@ -77,12 +77,7 @@ describe('ShadowEffect', () => {
     const mockOnClose = jest.fn()
     const mockOnBlur = jest.fn()
     render(
-      <ShadowEffect
-        shouldOpenOnFocus
-        shouldCloseOnBlur
-        onClose={mockOnClose}
-        data-testid='overlay'
-      >
+      <ShadowEffect shouldOpenOnFocus shouldCloseOnBlur onClose={mockOnClose} data-testid='overlay'>
         <Input id='input' onBlur={mockOnBlur} data-testid='input' />
       </ShadowEffect>
     )
@@ -102,11 +97,7 @@ describe('ShadowEffect', () => {
     const mockOnClose = jest.fn()
     const mockOnBlur = jest.fn()
     render(
-      <ShadowEffect
-        shouldOpenOnFocus
-        onClose={mockOnClose}
-        data-testid='overlay'
-      >
+      <ShadowEffect shouldOpenOnFocus onClose={mockOnClose} data-testid='overlay'>
         <Input id='input' onBlur={mockOnBlur} data-testid='input' />
       </ShadowEffect>
     )

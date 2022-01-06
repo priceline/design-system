@@ -35,17 +35,13 @@ describe('FilterChip', () => {
   })
 
   test('Disabled', () => {
-    const { getByTestId } = render(
-      <FilterChip {...{ ...props, disabled: true }} />
-    )
+    const { getByTestId } = render(<FilterChip {...{ ...props, disabled: true }} />)
 
     expect(getByTestId('testId')).toHaveAttribute('disabled')
   })
 
   test('Checked', () => {
-    const { getByTestId } = render(
-      <FilterChip {...{ ...props, selected: true }} />
-    )
+    const { getByTestId } = render(<FilterChip {...{ ...props, selected: true }} />)
 
     expect(getByTestId('testId')).toHaveAttribute('checked')
   })

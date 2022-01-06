@@ -20,9 +20,7 @@ describe('Divider', () => {
   })
 
   test('borderColor prop sets borderColor', () => {
-    const json = rendererCreateWithTheme(
-      <Divider borderColor='blue' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Divider borderColor='blue' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('border-color', theme.colors.blue)
   })

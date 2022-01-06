@@ -4,9 +4,7 @@ import { Coupon as CouponIcon } from 'pcln-icons'
 
 describe('Absolute', () => {
   test('renders with top, left and zIndex props', () => {
-    const json = rendererCreateWithTheme(
-      <Absolute top={10} left={0} zIndex={2} />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Absolute top={10} left={0} zIndex={2} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('position', 'absolute')
     expect(json).toHaveStyleRule('top', '10px')

@@ -59,15 +59,8 @@ export const Palette = () => (
                 <h4>{pal.key}</h4>
                 <Flex wrap>
                   {Object.keys(pal.value).map((key) => (
-                    <Box
-                      key={key}
-                      p={3}
-                      width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}
-                    >
-                      <ColorCard
-                        name={key}
-                        color={theme.palette[pal.key][key]}
-                      />
+                    <Box key={key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 5]}>
+                      <ColorCard name={key} color={theme.palette[pal.key][key]} />
                     </Box>
                   ))}
                 </Flex>

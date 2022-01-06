@@ -7,17 +7,13 @@ const update = (path) => {
       return ['variation'].includes(obj.name && obj.name.name)
     })
     .forEach((item) => {
-      if (
-        item.value &&
-        item.value.expression &&
-        item.value.expression.value === 'solid'
-      ) {
+      if (item.value && item.value.expression && item.value.expression.value === 'solid') {
         item.value.expression.value = 'fill'
       }
     })
 }
 
-module.exports = function (file, api){
+module.exports = function (file, api) {
   const j = api.jscodeshift
 
   const root = j(file.source)

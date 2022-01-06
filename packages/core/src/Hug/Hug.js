@@ -58,11 +58,7 @@ Hug.defaultProps = {
 Hug.propTypes = {
   iconDisplay: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.node,
-  text: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.string,
-  ]),
+  text: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node), PropTypes.string]),
   color: deprecatedColorValue(),
   borderWidth: PropTypes.string,
   fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

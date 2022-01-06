@@ -17,34 +17,20 @@ describe('Banner', () => {
   })
 
   test('renders with custom iconName and size', () => {
-    const json = rendererCreateWithTheme(
-      <Banner iconName='star' iconSize={20} />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Banner iconName='star' iconSize={20} />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with text string', () => {
     const json = rendererCreateWithTheme(
-      <Banner
-        header='Header'
-        text='Text'
-        iconName='star'
-        iconSize={20}
-        theme={theme}
-      />
+      <Banner header='Header' text='Text' iconName='star' iconSize={20} theme={theme} />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with text node', () => {
     const json = rendererCreateWithTheme(
-      <Banner
-        header='Header'
-        text={<Text>Text</Text>}
-        iconName='star'
-        iconSize={20}
-        theme={theme}
-      />
+      <Banner header='Header' text={<Text>Text</Text>} iconName='star' iconSize={20} theme={theme} />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })

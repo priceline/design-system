@@ -8,14 +8,8 @@ describe('Breadcrumbs', () => {
     const json = rendererCreateWithTheme(
       <Breadcrumbs>
         <Breadcrumbs.Link href='https://www.priceline.com' label='Home' />
-        <Breadcrumbs.Link
-          href='https://www.priceline.com/flights/'
-          label='Flights'
-        />
-        <Breadcrumbs.Link
-          href='https://www.priceline.com/flights/'
-          label='Seat Selection'
-        />
+        <Breadcrumbs.Link href='https://www.priceline.com/flights/' label='Flights' />
+        <Breadcrumbs.Link href='https://www.priceline.com/flights/' label='Seat Selection' />
       </Breadcrumbs>
     )
     expect(json).toMatchSnapshot()

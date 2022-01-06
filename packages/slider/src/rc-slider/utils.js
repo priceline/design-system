@@ -8,9 +8,7 @@ export function isDev() {
 
 export function isEventFromHandle(e, handles) {
   try {
-    return Object.keys(handles).some(
-      (key) => e.target === findDOMNode(handles[key])
-    )
+    return Object.keys(handles).some((key) => e.target === findDOMNode(handles[key]))
   } catch (error) {
     return false
   }
@@ -21,10 +19,7 @@ export function isValueOutOfRange(value, { min, max }) {
 }
 
 export function isNotTouchEvent(e) {
-  return (
-    e.touches.length > 1 ||
-    (e.type.toLowerCase() === 'touchend' && e.touches.length > 0)
-  )
+  return e.touches.length > 1 || (e.type.toLowerCase() === 'touchend' && e.touches.length > 0)
 }
 
 export function getClosestPoint(val, { marks, step, min, max }) {
@@ -58,9 +53,7 @@ export function getTouchPosition(vertical, e) {
 
 export function getHandleCenterPosition(vertical, handle) {
   const coords = handle.getBoundingClientRect()
-  return vertical
-    ? coords.top + coords.height * 0.5
-    : window.pageXOffset + coords.left + coords.width * 0.5
+  return vertical ? coords.top + coords.height * 0.5 : window.pageXOffset + coords.left + coords.width * 0.5
 }
 
 export function ensureValueInRange(val, { max, min }) {
@@ -75,13 +68,9 @@ export function ensureValueInRange(val, { max, min }) {
 
 export function ensureValuePrecision(val, props) {
   const { step } = props
-  const closestPoint = isFinite(getClosestPoint(val, props))
-    ? getClosestPoint(val, props)
-    : 0
+  const closestPoint = isFinite(getClosestPoint(val, props)) ? getClosestPoint(val, props) : 0
 
-  return step === null
-    ? closestPoint
-    : parseFloat(closestPoint.toFixed(getPrecision(step)))
+  return step === null ? closestPoint : parseFloat(closestPoint.toFixed(getPrecision(step)))
 }
 
 export function pauseEvent(e) {
@@ -95,10 +84,7 @@ export function calculateNextValue(func, value, props) {
     decrease: (a, b) => a - b,
   }
 
-  const indexToGet = operations[func](
-    Object.keys(props.marks).indexOf(JSON.stringify(value)),
-    1
-  )
+  const indexToGet = operations[func](Object.keys(props.marks).indexOf(JSON.stringify(value)), 1)
   const keyToGet = Object.keys(props.marks)[indexToGet]
 
   if (props.step) {

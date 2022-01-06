@@ -26,9 +26,7 @@ describe('Stamp', () => {
   })
 
   test('renders small fill', () => {
-    const json = rendererCreateWithTheme(
-      <Stamp size='small' variation='fill' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Stamp size='small' variation='fill' />).toJSON()
     expect(json).toMatchSnapshot()
   })
 

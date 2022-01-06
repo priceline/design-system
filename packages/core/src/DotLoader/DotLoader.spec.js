@@ -11,17 +11,11 @@ describe('DotLoader', () => {
 
     expect(children).toHaveLength(3)
     expect(children[0]).toHaveAttribute('color', 'primary')
-    expect(children[0]).toHaveStyleRule(
-      'animation',
-      expect.stringContaining('2s ease infinite')
-    )
+    expect(children[0]).toHaveStyleRule('animation', expect.stringContaining('2s ease infinite'))
     expect(children[0]).toHaveStyleRule('animation-delay', '0s')
 
     expect(children[1]).toHaveAttribute('color', 'primary')
-    expect(children[1]).toHaveStyleRule(
-      'animation',
-      expect.stringContaining('2s ease infinite')
-    )
+    expect(children[1]).toHaveStyleRule('animation', expect.stringContaining('2s ease infinite'))
     expect(children[1]).toHaveStyleRule('animation-delay', `${2 / 6}s`)
 
     expect(children[2]).toHaveStyleRule('animation-delay', `${4 / 6}s`)
@@ -33,10 +27,7 @@ describe('DotLoader', () => {
     const container = screen.getByTestId('dot-loader')
     const children = container.children
 
-    expect(children[0]).toHaveStyleRule(
-      'animation',
-      'bqqVik 2.5s ease infinite'
-    )
+    expect(children[0]).toHaveStyleRule('animation', 'bqqVik 2.5s ease infinite')
     expect(children[1]).toHaveStyleRule('animation-delay', `${2.5 / 6}s`)
     expect(children[2]).toHaveStyleRule('animation-delay', `${5 / 6}s`)
   })

@@ -4,9 +4,7 @@ import { Close } from 'pcln-icons'
 
 import { IconButton } from '../IconButton'
 
-const CloseButton = (props) => (
-  <IconButton {...props} icon={<Close size={props.size} />} />
-)
+const CloseButton = (props) => <IconButton {...props} icon={<Close size={props.size} />} />
 
 CloseButton.defaultProps = {
   size: 24,

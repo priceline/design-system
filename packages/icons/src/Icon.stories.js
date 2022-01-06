@@ -47,9 +47,7 @@ export const Color = () => (
 
 export const PricelineLogo = () => <Priceline color='primary' size={48} />
 
-export const Responsive = () => (
-  <Flights color='primary' size={[100, 200, 300, 50]} name='Flights' />
-)
+export const Responsive = () => <Flights color='primary' size={[100, 200, 300, 50]} name='Flights' />
 
 export const A11Y = () => (
   <Box>

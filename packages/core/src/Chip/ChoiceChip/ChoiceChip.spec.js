@@ -39,17 +39,13 @@ describe('ChoiceChip', () => {
   })
 
   test('Disabled', () => {
-    const { getByTestId } = render(
-      <ChoiceChip {...{ ...props, disabled: true }} />
-    )
+    const { getByTestId } = render(<ChoiceChip {...{ ...props, disabled: true }} />)
 
     expect(getByTestId('testId')).toHaveAttribute('disabled')
   })
 
   test('Checked', () => {
-    const { getByTestId } = render(
-      <ChoiceChip {...{ ...props, selected: true }} />
-    )
+    const { getByTestId } = render(<ChoiceChip {...{ ...props, selected: true }} />)
 
     expect(getByTestId('testId')).toHaveAttribute('checked')
   })

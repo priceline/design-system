@@ -31,8 +31,7 @@ const CustomLink = styled(Link)`
 
 const CustomButton = styled(Button)`
   z-index: 2;
-  text-decoration: ${(props) =>
-    props.buttonTextUnderline ? 'underline' : 'none'};
+  text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `
 
 const GenericBanner = ({
@@ -55,9 +54,7 @@ const GenericBanner = ({
 }) => {
   return (
     <Relative>
-      {URLProps && (
-        <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />
-      )}
+      {URLProps && <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />}
       <BannerWithRadius {...props} onClick={URLProps ? null : buttonClick}>
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
@@ -74,11 +71,7 @@ const GenericBanner = ({
 
             {URLProps && ctaText && (
               <CustomLink
-                p={
-                  linkVariation === 'fill' || linkVariation === 'outline'
-                    ? 2
-                    : null
-                }
+                p={linkVariation === 'fill' || linkVariation === 'outline' ? 2 : null}
                 color={linkColor}
                 variation={linkVariation}
                 fontSize={fontSize}

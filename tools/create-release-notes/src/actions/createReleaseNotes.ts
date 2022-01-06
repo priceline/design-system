@@ -1,7 +1,4 @@
-import {
-  RushConfiguration,
-  RushConfigurationProject,
-} from '@microsoft/rush-lib'
+import { RushConfiguration, RushConfigurationProject } from '@microsoft/rush-lib'
 import fs from 'fs'
 import { join } from 'path'
 import { Release, Change } from '../types/Release'

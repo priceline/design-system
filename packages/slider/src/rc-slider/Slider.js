@@ -23,8 +23,7 @@ class Slider extends React.Component {
   constructor(props) {
     super(props)
 
-    const defaultValue =
-      props.defaultValue !== undefined ? props.defaultValue : props.min
+    const defaultValue = props.defaultValue !== undefined ? props.defaultValue : props.min
     const value = props.value !== undefined ? props.value : defaultValue
 
     this.state = {
@@ -44,8 +43,7 @@ class Slider extends React.Component {
   }
 
   UNSAFE_componentWillReceiveProps(nextProps) {
-    if (!('value' in nextProps || 'min' in nextProps || 'max' in nextProps))
-      return
+    if (!('value' in nextProps || 'min' in nextProps || 'max' in nextProps)) return
 
     const prevValue = this.state.value
     const value = nextProps.value !== undefined ? nextProps.value : prevValue
@@ -61,8 +59,7 @@ class Slider extends React.Component {
   onChange(state) {
     const props = this.props
     const isNotControlled = !('value' in props)
-    const nextState =
-      state.value > this.props.max ? { ...state, value: this.props.max } : state
+    const nextState = state.value > this.props.max ? { ...state, value: this.props.max } : state
     if (isNotControlled) {
       this.setState(nextState)
     }

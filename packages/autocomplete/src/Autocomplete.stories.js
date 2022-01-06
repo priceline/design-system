@@ -54,9 +54,7 @@ export const Default = () => (
             ))}
           </Menu>
         </Autocomplete>
-        <Text my={2}>
-          This text should be covered up by the Autocomplete.Menu when open.
-        </Text>
+        <Text my={2}>This text should be covered up by the Autocomplete.Menu when open.</Text>
         <Text my={2}>
           The current value is <code>{state.value}</code>
         </Text>
@@ -92,9 +90,7 @@ export const Themed = () => (
               ))}
             </Menu>
           </Autocomplete>
-          <Text my={2}>
-            This text should be covered up by the Autocomplete.Menu when open.
-          </Text>
+          <Text my={2}>This text should be covered up by the Autocomplete.Menu when open.</Text>
           <Text my={2}>
             The current value is <code>{state.value}</code>
           </Text>

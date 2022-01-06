@@ -2,17 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 const classNames = require('classnames')
 
-const Marks = ({
-  className,
-  vertical,
-  marks,
-  included,
-  upperBound,
-  lowerBound,
-  max,
-  min,
-  onClickLabel,
-}) => {
+const Marks = ({ className, vertical, marks, included, upperBound, lowerBound, max, min, onClickLabel }) => {
   const marksKeys = Object.keys(marks)
 
   const range = max - min
@@ -21,16 +11,14 @@ const Marks = ({
     .sort((a, b) => a - b)
     .map((point) => {
       const markPoint = marks[point]
-      const markPointIsObject =
-        typeof markPoint === 'object' && !React.isValidElement(markPoint)
+      const markPointIsObject = typeof markPoint === 'object' && !React.isValidElement(markPoint)
       const markLabel = markPointIsObject ? markPoint.label : markPoint
       if (!markLabel && markLabel !== 0) {
         return null
       }
 
       const isActive =
-        (!included && point === upperBound) ||
-        (included && point <= upperBound && point >= lowerBound)
+        (!included && point === upperBound) || (included && point <= upperBound && point >= lowerBound)
       const markClassName = classNames({
         [`${className}-text`]: true,
         [`${className}-text-active`]: isActive,
@@ -48,9 +36,7 @@ const Marks = ({
       }
 
       const style = vertical ? bottomStyle : leftStyle
-      const markStyle = markPointIsObject
-        ? { ...style, ...markPoint.style }
-        : style
+      const markStyle = markPointIsObject ? { ...style, ...markPoint.style } : style
       return (
         // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <span

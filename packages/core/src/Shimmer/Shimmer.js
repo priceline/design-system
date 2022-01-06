@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
-import { Box } from ".."
+import { Box } from '..'
 import PropTypes from 'prop-types'
 
 const animation = (props) => keyframes`
@@ -53,7 +53,11 @@ const Glare = styled.span`
 const Shimmer = ({ animationWidth, disable, ...props }) => {
   return (
     <Wrapper {...props} data-testid='Shimmer__Wrapper'>
-      {!disable && <Glare animationWidth={animationWidth + 200} data-testid="Shimmer__Glare">&zwnj;</Glare>}
+      {!disable && (
+        <Glare animationWidth={animationWidth + 200} data-testid='Shimmer__Glare'>
+          &zwnj;
+        </Glare>
+      )}
     </Wrapper>
   )
 }

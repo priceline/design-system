@@ -69,18 +69,14 @@ describe('Badge', () => {
   })
 
   test('non-preset: bg text sets background-color and color white sets color', () => {
-    const json = rendererCreateWithTheme(
-      <Badge bg='text' color='white' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Badge bg='text' color='white' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.text)
     expect(json).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('can escape preset: bg lightBlue sets background-color and color text sets color', () => {
-    const json = rendererCreateWithTheme(
-      <Badge bg='lightBlue' color='text' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Badge bg='lightBlue' color='text' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
     expect(json).toHaveStyleRule('color', theme.colors.text)

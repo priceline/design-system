@@ -21,6 +21,4 @@ export const Default = () => <Image src={imageSrc} />
 
 export const ResponsiveWidth = () => <Image width={1 / 2} src={imageSrc} />
 
-export const SpecificWidthAndHeight = () => (
-  <Image width='200px' height='300px' src={imageSrc} />
-)
+export const SpecificWidthAndHeight = () => <Image width='200px' height='300px' src={imageSrc} />

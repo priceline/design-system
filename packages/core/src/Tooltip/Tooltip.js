@@ -2,22 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Box } from '../Box'
 import styled, { withTheme } from 'styled-components'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-  deprecatedPropType,
-} from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue, deprecatedPropType } from '../utils'
 
 const arrowShadow = (props) => {
   return props.top
     ? {
-        'box-shadow':
-          '-9.66px 9.66px 8px 0 rgba(0,0,0,0.04), -4px 4px 4px 0 rgba(0,0,0,0.08)',
+        'box-shadow': '-9.66px 9.66px 8px 0 rgba(0,0,0,0.04), -4px 4px 4px 0 rgba(0,0,0,0.08)',
       }
     : {
-        'box-shadow':
-          '-1.41px 1.41px 1px 0 rgba(0,0,0,0.01), -3.66px 3.66px 8px 0 rgba(0,0,0,0.04)',
+        'box-shadow': '-1.41px 1.41px 1px 0 rgba(0,0,0,0.01), -3.66px 3.66px 8px 0 rgba(0,0,0,0.04)',
       }
 }
 
@@ -74,8 +67,7 @@ const TooltipContent = styled(Box)`
   position: absolute;
   border-radius: ${({ theme }) => theme.radii[1]}px;
   box-sizing: border-box;
-  background: ${(props) =>
-    getPaletteColor(props.bg || props.color, 'base')(props)};
+  background: ${(props) => getPaletteColor(props.bg || props.color, 'base')(props)};
   text-align: center;
 
   ${tooltipPosition} ${tooltipAlign} &::after {

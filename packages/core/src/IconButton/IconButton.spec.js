@@ -7,9 +7,7 @@ import { Key as KeyIcon } from 'pcln-icons'
 describe('IconButton', () => {
   test('executes onClick prop on click', () => {
     const handleClick = jest.fn()
-    const { getByRole } = render(
-      <IconButton icon={<KeyIcon />} onClick={handleClick} />
-    )
+    const { getByRole } = render(<IconButton icon={<KeyIcon />} onClick={handleClick} />)
 
     fireEvent.click(getByRole('button'))
     expect(handleClick).toHaveBeenCalled()
@@ -23,9 +21,7 @@ describe('IconButton', () => {
   })
 
   test('renders without props', () => {
-    const json = rendererCreateWithTheme(
-      <IconButton icon={<KeyIcon />} />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<IconButton icon={<KeyIcon />} />).toJSON()
     expect(json).toMatchSnapshot()
   })
 })

@@ -4,12 +4,7 @@ import PropTypes from 'prop-types'
 import styled, { ThemeConsumer } from 'styled-components'
 import { themeGet } from 'styled-system'
 import { Popper } from 'react-popper'
-import {
-  Box,
-  getPaletteColor,
-  deprecatedPropType,
-  ThemeProvider,
-} from 'pcln-design-system'
+import { Box, getPaletteColor, deprecatedPropType, ThemeProvider } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
@@ -79,10 +74,7 @@ class PopoverContent extends Component {
       hideOverlay,
     } = this.props
     const styleProps = {
-      borderColor: this.getBorderColorName(
-        this.props.color,
-        this.props.borderColor
-      ),
+      borderColor: this.getBorderColorName(this.props.color, this.props.borderColor),
       zIndex: this.props.zIndex,
       width: this.props.width,
     }
@@ -123,16 +115,8 @@ class PopoverContent extends Component {
               <ThemeConsumer>
                 {(theme) => (
                   <ThemeProvider theme={theme}>
-                    <ContentContainer
-                      ref={contentRef}
-                      {...styleProps}
-                      tabIndex='-1'
-                    >
-                      <Content
-                        color={color}
-                        data-testid='dialog-content'
-                        id={`popover-description-${idx}`}
-                      >
+                    <ContentContainer ref={contentRef} {...styleProps} tabIndex='-1'>
+                      <Content color={color} data-testid='dialog-content' id={`popover-description-${idx}`}>
                         {content}
                       </Content>
                     </ContentContainer>
@@ -167,16 +151,13 @@ class PopoverContent extends Component {
 const PopperGuide = styled(Box)`
   padding: 16px;
   z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
-  max-width: ${({ width }) =>
-    typeof width === 'number' ? `${width}px` : width};
+  max-width: ${({ width }) => (typeof width === 'number' ? `${width}px` : width)};
   width: 100%;
   box-sizing: border-box;
 `
 const ContentContainer = styled.section`
-  box-shadow: 0 0 0 1px
-      ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
-    0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08),
-    0 16px 16px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 1px ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
+    0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08), 0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${themeGet('fontSizes.0')}px;
   border-radius: ${themeGet('radius')};
   box-sizing: border-box;

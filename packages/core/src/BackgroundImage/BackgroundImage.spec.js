@@ -8,16 +8,12 @@ describe('BackgroundImage', () => {
   })
 
   test('renders with image', () => {
-    const json = rendererCreateWithTheme(
-      <BackgroundImage image='hello.png' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<BackgroundImage image='hello.png' />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with height', () => {
-    const json = rendererCreateWithTheme(
-      <BackgroundImage height='320px' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<BackgroundImage height='320px' />).toJSON()
     expect(json).toMatchSnapshot()
   })
 

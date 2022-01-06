@@ -56,9 +56,7 @@ const ChipContent = ({
         {bridgeLabel}
       </Text>
     )}
-    {Boolean(action?.Icon) && action.title && (
-      <action.Icon title={action.title} size='16px' ml={2} />
-    )}
+    {Boolean(action?.Icon) && action.title && <action.Icon title={action.title} size='16px' ml={2} />}
   </ChipContentWrapper>
 )
 

@@ -9,14 +9,7 @@ export default {
 
 export const AllBgs = () => (
   <Box>
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={3}
-      header='default'
-      text='Secondary Text'
-      onClose={action('closed')}
-    />
+    <Banner textAlign='left' mb={2} p={3} header='default' text='Secondary Text' onClose={action('closed')} />
     <Banner
       textAlign='left'
       mb={2}
@@ -112,69 +105,14 @@ AllBgs.story = {
 
 export const AllBgsHeaderOnly = () => (
   <Box>
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      header='default'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      header='blue'
-      bg='blue'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      header='green'
-      bg='green'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      header='orange'
-      bg='orange'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      header='red'
-      bg='red'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      header='blue'
-      bg='lightBlue'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      header='green'
-      bg='lightGreen'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      header='red'
-      bg='lightRed'
-      onClose={action('closed')}
-    />
+    <Banner textAlign='right' mb={2} p={2} header='default' onClose={action('closed')} />
+    <Banner textAlign='left' mb={2} p={2} header='blue' bg='blue' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} header='green' bg='green' onClose={action('closed')} />
+    <Banner textAlign='left' mb={2} p={2} header='orange' bg='orange' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} header='red' bg='red' onClose={action('closed')} />
+    <Banner textAlign='left' mb={2} p={2} header='blue' bg='lightBlue' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} header='green' bg='lightGreen' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} header='red' bg='lightRed' onClose={action('closed')} />
   </Box>
 )
 
@@ -184,69 +122,14 @@ AllBgsHeaderOnly.story = {
 
 export const AllBgsTextOnly = () => (
   <Box>
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='default'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='blue'
-      bg='blue'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='green'
-      bg='green'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='orange'
-      bg='orange'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='red'
-      bg='red'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='Secondary Text'
-      bg='lightBlue'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='Secondary Text'
-      bg='lightGreen'
-      onClose={action('closed')}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='Secondary Text'
-      bg='lightRed'
-      onClose={action('closed')}
-    />
+    <Banner textAlign='right' mb={2} p={2} text='default' onClose={action('closed')} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' onClose={action('closed')} />
+    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' onClose={action('closed')} />
+    <Banner textAlign='left' mb={2} p={2} text='Secondary Text' bg='lightBlue' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} text='Secondary Text' bg='lightGreen' onClose={action('closed')} />
+    <Banner textAlign='right' mb={2} p={2} text='Secondary Text' bg='lightRed' onClose={action('closed')} />
   </Box>
 )
 
@@ -256,69 +139,14 @@ AllBgsTextOnly.story = {
 
 export const SansCloseButton = () => (
   <Box>
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='default'
-      text='Secondary Text'
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={3}
-      header='blue'
-      text='Secondary Text'
-      bg='blue'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='green'
-      text='Secondary Text'
-      bg='green'
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={3}
-      header='orange'
-      text='Secondary Text'
-      bg='orange'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='red'
-      text='Secondary Text'
-      bg='red'
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={3}
-      header='blue'
-      text='Secondary Text'
-      bg='lightBlue'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='green'
-      text='Secondary Text'
-      bg='lightGreen'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='red'
-      text='Secondary Text'
-      bg='lightRed'
-    />
+    <Banner textAlign='right' mb={2} p={3} header='default' text='Secondary Text' />
+    <Banner textAlign='left' mb={2} p={3} header='blue' text='Secondary Text' bg='blue' />
+    <Banner textAlign='right' mb={2} p={3} header='green' text='Secondary Text' bg='green' />
+    <Banner textAlign='left' mb={2} p={3} header='orange' text='Secondary Text' bg='orange' />
+    <Banner textAlign='right' mb={2} p={3} header='red' text='Secondary Text' bg='red' />
+    <Banner textAlign='left' mb={2} p={3} header='blue' text='Secondary Text' bg='lightBlue' />
+    <Banner textAlign='right' mb={2} p={3} header='green' text='Secondary Text' bg='lightGreen' />
+    <Banner textAlign='right' mb={2} p={3} header='red' text='Secondary Text' bg='lightRed' />
   </Box>
 )
 
@@ -408,32 +236,9 @@ export const SansIcon = () => (
 
 export const WithoutIconOrCloseButton = () => (
   <Box>
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='default'
-      text='Secondary Text'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={3}
-      header='blue'
-      text='Secondary Text'
-      bg='blue'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='green'
-      text='Secondary Text'
-      bg='green'
-      showIcon={false}
-    />
+    <Banner textAlign='right' mb={2} p={3} header='default' text='Secondary Text' showIcon={false} />
+    <Banner textAlign='left' mb={2} p={3} header='blue' text='Secondary Text' bg='blue' showIcon={false} />
+    <Banner textAlign='right' mb={2} p={3} header='green' text='Secondary Text' bg='green' showIcon={false} />
     <Banner
       textAlign='left'
       mb={2}
@@ -443,15 +248,7 @@ export const WithoutIconOrCloseButton = () => (
       bg='orange'
       showIcon={false}
     />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={3}
-      header='red'
-      text='Secondary Text'
-      bg='red'
-      showIcon={false}
-    />
+    <Banner textAlign='right' mb={2} p={3} header='red' text='Secondary Text' bg='red' showIcon={false} />
     <Banner
       textAlign='left'
       mb={2}
@@ -505,23 +302,8 @@ SansCloseButtonTextOnly.story = {
 
 export const SansIconTextOnly = () => (
   <Box>
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='default'
-      onClose={action('closed')}
-      showIcon={false}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='blue'
-      bg='blue'
-      onClose={action('closed')}
-      showIcon={false}
-    />
+    <Banner textAlign='right' mb={2} p={2} text='default' onClose={action('closed')} showIcon={false} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' onClose={action('closed')} showIcon={false} />
     <Banner
       textAlign='right'
       mb={2}
@@ -540,15 +322,7 @@ export const SansIconTextOnly = () => (
       onClose={action('closed')}
       showIcon={false}
     />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='red'
-      bg='red'
-      onClose={action('closed')}
-      showIcon={false}
-    />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' onClose={action('closed')} showIcon={false} />
     <Banner
       textAlign='left'
       mb={2}
@@ -613,62 +387,13 @@ CustomHeaderAsNode.story = {
 export const WithoutIconOrCloseButtonTextOnly = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' showIcon={false} />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='blue'
-      bg='blue'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='green'
-      bg='green'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='orange'
-      bg='orange'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='red'
-      bg='red'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='blue'
-      bg='lightBlue'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='green'
-      bg='lightGreen'
-      showIcon={false}
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='red'
-      bg='lightRed'
-      showIcon={false}
-    />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' showIcon={false} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' showIcon={false} />
+    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' showIcon={false} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' showIcon={false} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' showIcon={false} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' showIcon={false} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' showIcon={false} />
   </Box>
 )
 
@@ -679,62 +404,13 @@ WithoutIconOrCloseButtonTextOnly.story = {
 export const WithCustomIconsAndSizes = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' iconName='star' />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='blue'
-      bg='blue'
-      iconName='star'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='green'
-      bg='green'
-      iconName='star'
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='orange'
-      bg='orange'
-      iconName='star'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='red'
-      bg='red'
-      iconName='star'
-    />
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      text='blue'
-      bg='lightBlue'
-      iconName='star'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='green'
-      bg='lightGreen'
-      iconName='star'
-    />
-    <Banner
-      textAlign='right'
-      mb={2}
-      p={2}
-      text='red'
-      bg='lightRed'
-      iconName='star'
-    />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' iconName='star' />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' iconName='star' />
+    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' iconName='star' />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' iconName='star' />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' iconName='star' />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' iconName='star' />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' iconName='star' />
   </Box>
 )
 
@@ -754,13 +430,7 @@ export const WithChildren = () => (
         </Box>
       </Flex>
     </Banner>
-    <Banner
-      textAlign='left'
-      mb={2}
-      p={2}
-      header='default'
-      onClose={action('closed')}
-    >
+    <Banner textAlign='left' mb={2} p={2} header='default' onClose={action('closed')}>
       <Text bold italic>
         I am a text component!
       </Text>
