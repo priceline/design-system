@@ -27,22 +27,16 @@ const sizes = {
 
 const variations = {
   fill: css`
-    background-color: ${(props) =>
-      getPaletteColor(props.disabled ? 'light' : 'base')(props)};
-    color: ${(props) =>
-      getTextColorOn(props.disabled ? 'light' : 'base')(props)};
+    background-color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    color: ${(props) => getTextColorOn(props.disabled ? 'light' : 'base')(props)};
 
     &:hover {
-      background-color: ${(props) =>
-        getPaletteColor(props.disabled ? 'light' : 'dark')(props)};
-      ${(props) =>
-        props.disabled ? '' : `color: ${getTextColorOn('dark')(props)};`}
+      background-color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'dark')(props)};
+      ${(props) => (props.disabled ? '' : `color: ${getTextColorOn('dark')(props)};`)}
     }
     &:focus {
-      outline: ${(props) =>
-        `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
-      box-shadow: ${(props) =>
-        ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
+      outline: ${(props) => `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
+      box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
   `,
   link: css`
@@ -59,10 +53,8 @@ const variations = {
     }
   `,
   outline: css`
-    color: ${(props) =>
-      getPaletteColor(props.disabled ? 'light' : 'base')(props)};
-    box-shadow: inset 0 0 0 2px
-      ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
+    box-shadow: inset 0 0 0 2px ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
     background-color: transparent;
 
     &:hover {
@@ -108,10 +100,8 @@ const variations = {
       color: ${getPaletteColor('dark')};
     }
     &:focus {
-      outline: ${(props) =>
-        `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
-      box-shadow: ${(props) =>
-        ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
+      outline: ${(props) => `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
+      box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
   `,
 }
@@ -145,12 +135,10 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button = styled.button.attrs(
-  ({ width, fullWidth, title, 'aria-label': ariaLabel }) => ({
-    width: fullWidth ? 1 : width,
-    'aria-label': ariaLabel || title,
-  })
-)`
+const Button = styled.button.attrs(({ width, fullWidth, title, 'aria-label': ariaLabel }) => ({
+  width: fullWidth ? 1 : width,
+  'aria-label': ariaLabel || title,
+}))`
   ${buttonStyles}
 `
 

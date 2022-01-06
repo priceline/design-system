@@ -23,19 +23,9 @@ const OffScreenPanel = styled(SrOnly)`
 const SkipMenu = ({ className, skipLinks, ...props }) => {
   if (!skipLinks?.length) return null
   return (
-    <OffScreenPanel
-      data-testid='skip-menu'
-      as={Flex}
-      className={className}
-      {...props}
-    >
+    <OffScreenPanel data-testid='skip-menu' as={Flex} className={className} {...props}>
       {skipLinks?.map(({ label, targetId, ...skipLink }) => (
-        <Link
-          key={`skipLink_${targetId}`}
-          href={`#${targetId}`}
-          p={2}
-          {...skipLink}
-        >
+        <Link key={`skipLink_${targetId}`} href={`#${targetId}`} p={2} {...skipLink}>
           {label}
         </Link>
       ))}

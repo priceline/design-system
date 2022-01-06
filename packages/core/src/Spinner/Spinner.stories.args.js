@@ -20,8 +20,7 @@ export const argTypes = {
   size: {
     name: 'size',
     type: { name: 'string', required: false },
-    description:
-      'Spinner size to render\nAccepts string or responsive array of strings.',
+    description: 'Spinner size to render\nAccepts string or responsive array of strings.',
     table: {
       type: {
         summary: 'Sizes',

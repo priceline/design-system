@@ -18,27 +18,10 @@ const StyledImage = styled(Box)`
   background-image: url(${(props) => props.src});
 `
 
-function Avatar({
-  className,
-  title,
-  subtitle,
-  src,
-  altText,
-  initials,
-  size,
-  color,
-}) {
+function Avatar({ className, title, subtitle, src, altText, initials, size, color }) {
   return (
     <Flex className={className}>
-      <StyledImage
-        role='img'
-        src={src}
-        alt={altText}
-        size={size}
-        minWidth={size}
-        color={color}
-        p={2}
-      >
+      <StyledImage role='img' src={src} alt={altText} size={size} minWidth={size} color={color} p={2}>
         {!src && initials && <Text fontSize={1}>{initials.toUpperCase()}</Text>}
         {!src && !initials && <User />}
       </StyledImage>

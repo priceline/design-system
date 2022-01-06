@@ -12,11 +12,7 @@ import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
 import { CloseButton } from '../CloseButton'
-import {
-  applyVariations,
-  deprecatedColorValue,
-  deprecatedPropType,
-} from '../utils'
+import { applyVariations, deprecatedColorValue, deprecatedPropType } from '../utils'
 
 const bannerColors = {
   green: {
@@ -61,10 +57,7 @@ const StyledBox = styled(Box)`
 `
 
 const Banner = (props) => {
-  const bannerColor =
-    bannerColors[
-      !props.bg && props.color === 'green' ? props.color : props.bg
-    ] || {}
+  const bannerColor = bannerColors[!props.bg && props.color === 'green' ? props.color : props.bg] || {}
   const Icon = props.icon || bannerColor.icon
   const color = !bannerColor.color ? props.color : bannerColor.color
 
@@ -79,29 +72,15 @@ const Banner = (props) => {
   }
 
   return (
-    <StyledBox
-      {...props}
-      bg={bannerColor.backgroundColor || props.bg}
-      color={color}
-    >
+    <StyledBox {...props} bg={bannerColor.backgroundColor || props.bg} color={color}>
       <Flex justifyContent='space-between' alignItems='flex-start'>
-        {!!Icon &&
-          !!props.showIcon &&
-          React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
+        {!!Icon && !!props.showIcon && React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
         <Box textAlign={props.textAlign} width={1}>
           {header}
           <Text.span fontSize={1}>{props.text}</Text.span>
           {props.children}
         </Box>
-        {!!props.onClose && (
-          <CloseButton
-            onClick={props.onClose}
-            ml={2}
-            size={24}
-            title='close'
-            mt='-2px'
-          />
-        )}
+        {!!props.onClose && <CloseButton onClick={props.onClose} ml={2} size={24} title='close' mt='-2px' />}
       </Flex>
     </StyledBox>
   )

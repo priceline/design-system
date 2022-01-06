@@ -2,10 +2,7 @@ import { argv } from 'yargs'
 import fs from 'fs'
 import { join } from 'path'
 import { RushConfiguration } from '@microsoft/rush-lib'
-import {
-  createReleaseNotes,
-  formatNotesMarkdown,
-} from '../actions/createReleaseNotes'
+import { createReleaseNotes, formatNotesMarkdown } from '../actions/createReleaseNotes'
 
 const packageName = argv['packageName']
 
@@ -20,10 +17,7 @@ if (packageName) {
 
   console.log(formatNotesMarkdown(notes))
 
-  fs.writeFileSync(
-    join(config.rushJsonFolder, 'RELEASE_NOTES.md'),
-    formatNotesMarkdown(notes)
-  )
+  fs.writeFileSync(join(config.rushJsonFolder, 'RELEASE_NOTES.md'), formatNotesMarkdown(notes))
 
   console.log('Wrote release notes to file')
 }

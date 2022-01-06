@@ -18,14 +18,10 @@ describe('theme', () => {
   })
 
   test('breakpoints have aliases', () => {
-    aliases.forEach((alias, i) =>
-      expect(theme.breakpoints[alias]).toEqual(theme.breakpoints[i])
-    )
+    aliases.forEach((alias, i) => expect(theme.breakpoints[alias]).toEqual(theme.breakpoints[i]))
   })
 
   test('media queries have aliases', () => {
-    aliases.forEach((alias, i) =>
-      expect(theme.mediaQueries[alias]).toEqual(theme.mediaQueries[i])
-    )
+    aliases.forEach((alias, i) => expect(theme.mediaQueries[alias]).toEqual(theme.mediaQueries[i]))
   })
 })

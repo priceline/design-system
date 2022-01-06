@@ -12,12 +12,7 @@ export const Default = () => <Avatar />
 export const Initials = () => <Avatar initials='WS' />
 
 export const Elon = () => (
-  <Avatar
-    title='Not Elon Musk'
-    subtitle='totally.not.elon@musk.com'
-    src={elonJPG}
-    altText='papa-elon'
-  />
+  <Avatar title='Not Elon Musk' subtitle='totally.not.elon@musk.com' src={elonJPG} altText='papa-elon' />
 )
 
 export const Responsive = () => (

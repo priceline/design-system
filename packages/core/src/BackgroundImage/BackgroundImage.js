@@ -12,8 +12,7 @@ const variations = {
   `,
 }
 
-const image = (props) =>
-  props.image ? { backgroundImage: `url(${props.image})` } : null
+const image = (props) => (props.image ? { backgroundImage: `url(${props.image})` } : null)
 
 const BackgroundImage = styled.div`
   background-position: center;

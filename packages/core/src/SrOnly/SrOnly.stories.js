@@ -12,10 +12,7 @@ export default {
 export const ScreenreaderDescriptionOfContent = () => (
   <Box>
     <SrOnly>
-      <Text>
-        I should not be displayed on the screen, BUT I should be read out by the
-        screen reader
-      </Text>
+      <Text>I should not be displayed on the screen, BUT I should be read out by the screen reader</Text>
     </SrOnly>
     <BackgroundImage image={image} width='320px' height={'200px'} />
     <Text pt={2}>Turn ON screenreader...</Text>

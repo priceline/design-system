@@ -64,9 +64,6 @@ describe('MenuList', () => {
         </MenuList>
       </ThemeProvider>
     )
-    expect(screen.getByRole('listbox')).toHaveStyleRule(
-      'font-family',
-      mockTheme.font
-    )
+    expect(screen.getByRole('listbox')).toHaveStyleRule('font-family', mockTheme.font)
   })
 })

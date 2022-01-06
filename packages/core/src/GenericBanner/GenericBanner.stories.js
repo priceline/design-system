@@ -28,10 +28,7 @@ export const basicBannerAllInline = () => (
       </Text.span>
     }
     text={
-      <Text.span>
-        Update: Your travel may be impacted. Please review this hotels important
-        info.
-      </Text.span>
+      <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>
     }
     iconLeft={<Warning />}
     color='caution.light'
@@ -48,8 +45,8 @@ export const basicBannerAllInlineRightIcon = () => (
     }
     text={
       <Text.span textColor='primary.base'>
-        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus.
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
+        fringilla rhoncus.
       </Text.span>
     }
     iconRight={<Tea />}
@@ -67,8 +64,8 @@ export const basicBannerBlockWithURLPropsCTA = () => (
     }
     text={
       <Text>
-        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus.
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
+        fringilla rhoncus.
       </Text>
     }
     URLProps={{
@@ -76,11 +73,7 @@ export const basicBannerBlockWithURLPropsCTA = () => (
       target: '_blank',
     }}
     ctaText={
-      <UnderlinedLinkText
-        color='primary'
-        fontWeight='bold'
-        hoverColor='primary.dark'
-      >
+      <UnderlinedLinkText color='primary' fontWeight='bold' hoverColor='primary.dark'>
         {' '}
         Read More
       </UnderlinedLinkText>
@@ -100,8 +93,7 @@ export const bannerWithOnClick = () => (
     }
     text={
       <Text.span textColor='primary.base' mr={1}>
-        Update: Your travel may be impacted. Please review this hotels important
-        info.
+        Update: Your travel may be impacted. Please review this hotels important info.
       </Text.span>
     }
     buttonClick={action('clicked on the banner or the read more link-button')}
@@ -120,8 +112,7 @@ export const bannerWithOnClickAndCTA = () => (
     }
     text={
       <Text.span textColor='primary.base' mr={1}>
-        Update: Your travel may be impacted. Please review this hotels important
-        info.
+        Update: Your travel may be impacted. Please review this hotels important info.
       </Text.span>
     }
     ctaText={
@@ -147,8 +138,7 @@ export const bannerWithOnClickButtonStyleCta = () => (
     }
     text={
       <Text.span mr={1} textColor='primary.base'>
-        Update: Your travel may be impacted. Please review this hotels important
-        info.
+        Update: Your travel may be impacted. Please review this hotels important info.
       </Text.span>
     }
     ctaText={
@@ -172,8 +162,8 @@ export const bannerWithURLPropsAndCta = () => (
     }
     text={
       <Text.span color='warning' mr={1}>
-        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus.
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
+        fringilla rhoncus.
       </Text.span>
     }
     URLProps={{
@@ -181,11 +171,7 @@ export const bannerWithURLPropsAndCta = () => (
       target: '_blank',
     }}
     ctaText={
-      <UnderlinedLinkText
-        color='primary'
-        fontWeight='bold'
-        hoverColor='primary.dark'
-      >
+      <UnderlinedLinkText color='primary' fontWeight='bold' hoverColor='primary.dark'>
         Read More
       </UnderlinedLinkText>
     }
@@ -204,8 +190,8 @@ export const bannerWithURLProps = () => (
     }
     text={
       <Text.span color='warning' mr={1}>
-        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus.
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
+        fringilla rhoncus.
       </Text.span>
     }
     URLProps={{
@@ -227,8 +213,8 @@ export const bannerWithURLPropsAndCustomHeadingSize = () => (
     }
     text={
       <Text.span color='warning' mr={1}>
-        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus.
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
+        fringilla rhoncus.
       </Text.span>
     }
     URLProps={{
@@ -253,8 +239,8 @@ export const bannerWithURLPropsButtonStyleCta = () => (
     }
     text={
       <Text.span color='warning' mr={1}>
-        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Nunc at lacus vel dolor fringilla rhoncus.
+        This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
+        fringilla rhoncus.
       </Text.span>
     }
     URLProps={{

@@ -1,13 +1,6 @@
 import { colors } from '../../storybook/args'
 
-export const variations = [
-  'fill',
-  'link',
-  'outline',
-  'plain',
-  'subtle',
-  'lightFill',
-]
+export const variations = ['fill', 'link', 'outline', 'plain', 'subtle', 'lightFill']
 export const sizes = ['small', 'medium', 'large']
 
 export const defaultArgs = {
@@ -38,8 +31,7 @@ export const argTypes = {
   size: {
     name: 'size',
     type: { name: 'string', required: false },
-    description:
-      'Button size to render\nAccepts string or responsive array of strings.',
+    description: 'Button size to render\nAccepts string or responsive array of strings.',
     table: {
       type: {
         summary: 'Sizes',

@@ -20,31 +20,11 @@ export const TextAreaComponent = () => <TextArea id='textarea-default' my={3} />
 export const Colors = () => (
   <Box width={400}>
     <TextArea mb={3} id='textarea-colors-1' placeholder='No color' />
-    <TextArea
-      mb={3}
-      id='textarea-colors-2'
-      color='primary'
-      placeholder='Primary'
-    />
-    <TextArea
-      mb={3}
-      id='textarea-colors-3'
-      color='secondary'
-      placeholder='Secondary'
-    />
-    <TextArea
-      mb={3}
-      id='textarea-colors-4'
-      color='warning'
-      placeholder='Warning'
-    />
+    <TextArea mb={3} id='textarea-colors-2' color='primary' placeholder='Primary' />
+    <TextArea mb={3} id='textarea-colors-3' color='secondary' placeholder='Secondary' />
+    <TextArea mb={3} id='textarea-colors-4' color='warning' placeholder='Warning' />
     <TextArea mb={3} id='textarea-colors-5' color='alert' placeholder='Alert' />
-    <TextArea
-      mb={3}
-      id='textarea-colors-6'
-      color='caution'
-      placeholder='Caution'
-    />
+    <TextArea mb={3} id='textarea-colors-6' color='caution' placeholder='Caution' />
   </Box>
 )
 

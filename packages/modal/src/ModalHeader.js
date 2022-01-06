@@ -26,13 +26,7 @@ const StyledCloseButton = styled(CloseButton)`
 `
 
 const ModalHeader = ({ bg, color, onClose, title }) => (
-  <HeaderWrapper
-    align='center'
-    alignItems='center'
-    color={color}
-    bg={bg}
-    px={3}
-  >
+  <HeaderWrapper align='center' alignItems='center' color={color} bg={bg} px={3}>
     {title && (
       <Title fontSize={1} bold>
         {title}

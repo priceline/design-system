@@ -17,24 +17,18 @@ describe('Background Overlay', () => {
   afterEach(() => (console.error = consoleError))
 
   test('Active overlay', () => {
-    const { container } = render(
-      <Overlay {...overlayProps} popoverOpen={true} />
-    )
+    const { container } = render(<Overlay {...overlayProps} popoverOpen={true} />)
     expect(container).toMatchSnapshot()
   })
 
   test('Inactive overlay', () => {
-    const { container } = render(
-      <Overlay {...overlayProps} popoverOpen={false} />
-    )
+    const { container } = render(<Overlay {...overlayProps} popoverOpen={false} />)
     expect(container).toMatchSnapshot()
   })
 
   test('Handle click event', () => {
     const onClick = jest.fn()
-    const { getByTestId } = render(
-      <Overlay {...overlayProps} popoverOpen={true} handleClick={onClick} />
-    )
+    const { getByTestId } = render(<Overlay {...overlayProps} popoverOpen={true} handleClick={onClick} />)
 
     fireEvent.click(getByTestId('__pcln-popover_Overlay'))
     expect(onClick).toHaveBeenCalled()

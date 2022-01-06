@@ -7,8 +7,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'Simple styled label component that supports a number of the styled-system props.',
+        component: 'Simple styled label component that supports a number of the styled-system props.',
       },
     },
   },

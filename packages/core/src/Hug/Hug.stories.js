@@ -2,12 +2,7 @@ import React from 'react'
 
 import { Hug, Hide, Card, Text } from '..'
 
-import {
-  argTypes,
-  defaultArgs,
-  iconMap,
-  HugContentText,
-} from './Hug.stories.args'
+import { argTypes, defaultArgs, iconMap, HugContentText } from './Hug.stories.args'
 
 const ChildrenCardInside = () => (
   <Card p={3} color='warning.light'>

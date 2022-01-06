@@ -19,9 +19,7 @@ const determineSRC = (blur, chooseSrc, height, width) => {
   ]
 
   if (blur || chooseSrc) {
-    return blur
-      ? `https://picsum.photos/${width}/${height}?blur`
-      : imageURLs[chooseSrc]
+    return blur ? `https://picsum.photos/${width}/${height}?blur` : imageURLs[chooseSrc]
   }
 
   const randomNum = Math.floor(Math.random() * imageURLs.length)

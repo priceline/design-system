@@ -1,0 +1,4 @@
+{
+  "buildCacheEnabled": true,
+  "cacheProvider": "local-only"
+}

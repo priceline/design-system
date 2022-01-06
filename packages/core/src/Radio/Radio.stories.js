@@ -39,12 +39,7 @@ class MockForm extends React.Component {
         <div onChange={this.updateSelection}>
           {options.map((item, idx) => (
             <Label fontSize='14px' key={idx}>
-              <Radio
-                checked={item === selection}
-                name={'mySelection'}
-                value={item}
-                disabled={disabled}
-              />
+              <Radio checked={item === selection} name={'mySelection'} value={item} disabled={disabled} />
               <LabelText>{item}</LabelText>
             </Label>
           ))}

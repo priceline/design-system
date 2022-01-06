@@ -40,11 +40,7 @@ export const Overlay = () => {
   return (
     <>
       {isOpen && <ShadowOverlay zIndex={-1} onClick={handleClose} />}
-      <LightestBackgroundInput
-        onBlur={handleClose}
-        onClick={handleOpen}
-        onFocus={handleOpen}
-      />
+      <LightestBackgroundInput onBlur={handleClose} onClick={handleOpen} onFocus={handleOpen} />
     </>
   )
 }

@@ -2,11 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
-import {
-  applyVariations,
-  deprecatedColorValue,
-  getPaletteColor,
-} from '../utils'
+import { applyVariations, deprecatedColorValue, getPaletteColor } from '../utils'
 
 const RadioWrap = styled.div`
   display: inline-block;
@@ -57,11 +53,7 @@ const RadioEmptyIcon = styled(RadioEmpty)`
   vertical-align: middle;
 `
 const RadioIcon = ({ checked, ...props }) => {
-  return checked ? (
-    <RadioCheckedIcon {...props} />
-  ) : (
-    <RadioEmptyIcon {...props} />
-  )
+  return checked ? <RadioCheckedIcon {...props} /> : <RadioEmptyIcon {...props} />
 }
 RadioIcon.propTypes = {
   checked: PropTypes.bool,

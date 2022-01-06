@@ -3,11 +3,7 @@ import styled, { css } from 'styled-components'
 import { width, space } from 'styled-system'
 
 import { buttonStyles } from '../Button'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const variations = {
   fill: css`

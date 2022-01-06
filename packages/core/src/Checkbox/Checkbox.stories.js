@@ -21,10 +21,7 @@ const Wrapper = (props) => (
 
 const formAction = (e) => {
   e.preventDefault()
-  action('form was submitted, is checkbox checked?')(
-    e.target[1].id,
-    e.target[1].checked
-  )
+  action('form was submitted, is checkbox checked?')(e.target[1].id, e.target[1].checked)
 }
 
 const checkAction = (e) => {
@@ -61,12 +58,7 @@ export const CheckboxStates = () => (
 
     <Wrapper>
       <StyledLabel htmlFor='disabled_checked_box'>
-        <Checkbox
-          id='disabled_checked_box'
-          disabled
-          defaultChecked
-          onChange={checkAction}
-        />
+        <Checkbox id='disabled_checked_box' disabled defaultChecked onChange={checkAction} />
         <Text.span color='border.base'>Disabled &amp; Checked</Text.span>
       </StyledLabel>
     </Wrapper>
@@ -103,57 +95,29 @@ export const Color = () => (
   <div>
     <Wrapper>
       <StyledLabel htmlFor='secondary_unchecked_box'>
-        <Checkbox
-          id='secondary_unchecked_box'
-          onChange={checkAction}
-          color='secondary'
-        />
+        <Checkbox id='secondary_unchecked_box' onChange={checkAction} color='secondary' />
         Secondary color unchecked by default
       </StyledLabel>
       <StyledLabel htmlFor='secondary_checked_box'>
-        <Checkbox
-          id='secondary_checked_box'
-          defaultChecked
-          onChange={checkAction}
-          color='secondary'
-        />
+        <Checkbox id='secondary_checked_box' defaultChecked onChange={checkAction} color='secondary' />
         Secondary color checked by default
       </StyledLabel>
       <StyledLabel htmlFor='secondary_disabled_box'>
-        <Checkbox
-          id='secondary_disabled_box'
-          disabled
-          onChange={checkAction}
-          color='secondary'
-        />
+        <Checkbox id='secondary_disabled_box' disabled onChange={checkAction} color='secondary' />
         Secondary color disabled
       </StyledLabel>
     </Wrapper>
     <Wrapper>
       <StyledLabel htmlFor='error_unchecked_box'>
-        <Checkbox
-          id='error_unchecked_box'
-          onChange={checkAction}
-          color='error'
-        />
+        <Checkbox id='error_unchecked_box' onChange={checkAction} color='error' />
         Error color unchecked by default
       </StyledLabel>
       <StyledLabel htmlFor='error_checked_box'>
-        <Checkbox
-          id='error_checked_box'
-          defaultChecked
-          onChange={checkAction}
-          color='error'
-        />
+        <Checkbox id='error_checked_box' defaultChecked onChange={checkAction} color='error' />
         Error color checked by default
       </StyledLabel>
       <StyledLabel htmlFor='error_disabled_box'>
-        <Checkbox
-          id='error_disabled_box'
-          disabled
-          onChange={checkAction}
-          color='error'
-        />
+        <Checkbox id='error_disabled_box' disabled onChange={checkAction} color='error' />
         Error color disabled
       </StyledLabel>
     </Wrapper>

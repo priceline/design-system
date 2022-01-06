@@ -22,19 +22,12 @@ describe('Button', () => {
 
     const button = getByText('BUTTON')
 
-    expect(button).toHaveStyleRule(
-      'background-color',
-      theme.palette.primary.base
-    )
+    expect(button).toHaveStyleRule('background-color', theme.palette.primary.base)
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
 
-    expect(button).toHaveStyleRule(
-      'background-color',
-      theme.palette.primary.dark,
-      {
-        modifier: ':hover',
-      }
-    )
+    expect(button).toHaveStyleRule('background-color', theme.palette.primary.dark, {
+      modifier: ':hover',
+    })
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
       modifier: ':hover',
     })
@@ -45,22 +38,15 @@ describe('Button', () => {
 
     const button = getByText('BUTTON')
 
-    expect(button).toHaveStyleRule(
-      'background-color',
-      theme.palette.primary.light
-    )
+    expect(button).toHaveStyleRule('background-color', theme.palette.primary.light)
     expect(button).toHaveStyleRule('color', theme.palette.text.base)
     expect(button).toHaveStyleRule('cursor', 'not-allowed', {
       modifier: ':disabled',
     })
 
-    expect(button).toHaveStyleRule(
-      'background-color',
-      theme.palette.primary.light,
-      {
-        modifier: ':hover',
-      }
-    )
+    expect(button).toHaveStyleRule('background-color', theme.palette.primary.light, {
+      modifier: ':hover',
+    })
     expect(button).toHaveStyleRule('color', theme.palette.text.base)
   })
 
@@ -111,17 +97,12 @@ describe('Button', () => {
   it('should render correctly for "title" prop', () => {
     const { getByTitle } = render(<Button title='button title'>BUTTON</Button>)
 
-    expect(getByTitle('button title')).toHaveAttribute(
-      'aria-label',
-      'button title'
-    )
+    expect(getByTitle('button title')).toHaveAttribute('aria-label', 'button title')
   })
 
   it('should forward the "aria-label" prop', () => {
     const label = 'i am an aria label'
-    const { getByLabelText } = render(
-      <Button aria-label={label}>BUTTON</Button>
-    )
+    const { getByLabelText } = render(<Button aria-label={label}>BUTTON</Button>)
 
     expect(getByLabelText(label)).toHaveAttribute('aria-label', label)
   })
@@ -134,35 +115,20 @@ describe('Button', () => {
         const button = getByText('BUTTON')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.primary.base
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.primary.base)
 
         expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.primary.dark,
-          {
-            modifier: ':hover',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'outline',
-          `0px solid ${theme.palette.primary.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'box-shadow',
-          `0 0 0 2px ${theme.palette.primary.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.primary.dark, {
+          modifier: ':hover',
+        })
+        expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
+          modifier: ':focus',
+        })
+        expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.dark}`, {
+          modifier: ':focus',
+        })
       })
 
       it('should render correctly when disabled', () => {
@@ -175,26 +141,17 @@ describe('Button', () => {
         const button = getByText('BUTTON')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.base)
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.primary.light
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.primary.light)
 
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.primary.light,
-          {
-            modifier: ':hover',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.primary.light, {
+          modifier: ':hover',
+        })
       })
     })
 
     describe('outline variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(
-          <Button variation='outline'>BUTTON</Button>
-        )
+        const { getByText } = render(<Button variation='outline'>BUTTON</Button>)
 
         const button = getByText('BUTTON')
 
@@ -206,13 +163,9 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule(
-          'box-shadow',
-          `inset 0 0 0 2px ${theme.palette.primary.dark}`,
-          {
-            modifier: ':hover',
-          }
-        )
+        expect(button).toHaveStyleRule('box-shadow', `inset 0 0 0 2px ${theme.palette.primary.dark}`, {
+          modifier: ':hover',
+        })
       })
 
       it('should render correctly when disabled', () => {
@@ -262,13 +215,9 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.base,
-          {
-            modifier: ':disabled',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
+          modifier: ':disabled',
+        })
       })
     })
 
@@ -279,10 +228,7 @@ describe('Button', () => {
         const button = getByText('BUTTON')
 
         expect(button).toHaveStyleRule('color', theme.palette.primary.base)
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.base
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base)
         expect(button).toHaveStyleRule('vertical-align', 'middle')
         expect(button).toHaveStyleRule('-webkit-font-smoothing', 'antialiased')
         expect(button).toHaveStyleRule('font-weight', '700')
@@ -290,27 +236,15 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.light,
-          {
-            modifier: ':hover',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'outline',
-          `0px solid ${theme.palette.primary.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'box-shadow',
-          `0 0 0 2px ${theme.palette.primary.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.light, {
+          modifier: ':hover',
+        })
+        expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
+          modifier: ':focus',
+        })
+        expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.dark}`, {
+          modifier: ':focus',
+        })
       })
 
       it('should render correctly when disabled', () => {
@@ -325,13 +259,9 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.base,
-          {
-            modifier: ':disabled',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
+          modifier: ':disabled',
+        })
       })
     })
 
@@ -350,27 +280,15 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.light,
-          {
-            modifier: ':hover',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'outline',
-          `0px solid ${theme.palette.primary.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'box-shadow',
-          `0 0 0 2px ${theme.palette.primary.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.light, {
+          modifier: ':hover',
+        })
+        expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
+          modifier: ':focus',
+        })
+        expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.dark}`, {
+          modifier: ':focus',
+        })
       })
 
       it('should render correctly when disabled', () => {
@@ -385,13 +303,9 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.base,
-          {
-            modifier: ':disabled',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
+          modifier: ':disabled',
+        })
       })
     })
 
@@ -406,10 +320,7 @@ describe('Button', () => {
         const button = getByText('BUTTON')
 
         expect(button).toHaveStyleRule('color', theme.palette.warning.base)
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.warning.light
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.warning.light)
         expect(button).toHaveStyleRule('vertical-align', 'middle')
         expect(button).toHaveStyleRule('-webkit-font-smoothing', 'antialiased')
         expect(button).toHaveStyleRule('font-weight', '700')
@@ -417,27 +328,15 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.warning.dark, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.warning.light,
-          {
-            modifier: ':hover',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'outline',
-          `0px solid ${theme.palette.warning.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
-        expect(button).toHaveStyleRule(
-          'box-shadow',
-          `0 0 0 2px ${theme.palette.warning.dark}`,
-          {
-            modifier: ':focus',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.warning.light, {
+          modifier: ':hover',
+        })
+        expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.warning.dark}`, {
+          modifier: ':focus',
+        })
+        expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.warning.dark}`, {
+          modifier: ':focus',
+        })
       })
 
       it('should render correctly when disabled', () => {
@@ -452,13 +351,9 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
         })
-        expect(button).toHaveStyleRule(
-          'background-color',
-          theme.palette.background.base,
-          {
-            modifier: ':disabled',
-          }
-        )
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
+          modifier: ':disabled',
+        })
       })
     })
   })
@@ -487,20 +382,13 @@ describe('Button', () => {
 
     const button = getByText('BUTTON')
 
-    expect(button).toHaveStyleRule(
-      'background-color',
-      theme.palette.primary.base
-    )
+    expect(button).toHaveStyleRule('background-color', theme.palette.primary.base)
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
     expect(button).toHaveStyleRule('padding', '100px')
 
-    expect(button).toHaveStyleRule(
-      'background-color',
-      theme.palette.primary.dark,
-      {
-        modifier: ':hover',
-      }
-    )
+    expect(button).toHaveStyleRule('background-color', theme.palette.primary.dark, {
+      modifier: ':hover',
+    })
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest, {
       modifier: ':hover',
     })

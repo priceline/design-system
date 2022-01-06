@@ -2,12 +2,7 @@ import React from 'react'
 import { render, screen } from 'testing-library'
 import ProgressBar from './ProgressBar'
 
-const testProps = [
-  { color: 'warning' },
-  { color: 'caution' },
-  { color: 'primary' },
-  { color: 'success' },
-]
+const testProps = [{ color: 'warning' }, { color: 'caution' }, { color: 'primary' }, { color: 'success' }]
 
 describe('ProgressBar', () => {
   it('Default progress bar (no colors)', () => {

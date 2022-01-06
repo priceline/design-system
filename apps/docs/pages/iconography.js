@@ -5,9 +5,7 @@ import { Code, Description, PageTitle } from '../src/components'
 
 const iconNames = Object.keys(icons).filter((icon) => icon !== 'Icon')
 
-const Column = (props) => (
-  <Box {...props} width={[1 / 3, null, 1 / 3, 1 / 5]} mb={3} px={2} />
-)
+const Column = (props) => <Box {...props} width={[1 / 3, null, 1 / 3, 1 / 5]} mb={3} px={2} />
 
 const IconList = (props) =>
   props.icons.map((icon) => {
@@ -30,9 +28,7 @@ const IconList = (props) =>
 const Iconography = () => (
   <Box>
     <PageTitle>Iconography</PageTitle>
-    <Description>
-      The design system includes icons based on Googles Material Design Icons.
-    </Description>
+    <Description>The design system includes icons based on Googles Material Design Icons.</Description>
     <Flex flexWrap='wrap' pt={4}>
       <IconList icons={iconNames} />
     </Flex>

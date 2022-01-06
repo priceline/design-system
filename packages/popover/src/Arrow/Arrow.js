@@ -3,13 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { deprecatedPropType, getPaletteColor } from 'pcln-design-system'
 
-const PopoverArrow = ({
-  arrowProps,
-  placement,
-  borderColor,
-  color,
-  className,
-}) => (
+const PopoverArrow = ({ arrowProps, placement, borderColor, color, className }) => (
   <Arrow
     className={className}
     style={arrowProps.style}

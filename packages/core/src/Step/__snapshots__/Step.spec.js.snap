@@ -188,6 +188,7 @@ exports[`Step should render a completed step correctly 1`] = `
         tabindex="-1"
         viewBox="0 0 24 24"
         width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
@@ -307,6 +308,7 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
         tabindex="-1"
         viewBox="0 0 24 24"
         width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"

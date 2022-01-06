@@ -30,17 +30,13 @@ describe('ButtonChip', () => {
   })
 
   test('Disabled', () => {
-    const { getByTestId } = render(
-      <ButtonChip {...{ ...props, disabled: true }} />
-    )
+    const { getByTestId } = render(<ButtonChip {...{ ...props, disabled: true }} />)
 
     expect(getByTestId('testId')).toHaveAttribute('disabled')
   })
 
   test('Expanded', () => {
-    const { getByTestId } = render(
-      <ButtonChip {...{ ...props, expanded: true }} />
-    )
+    const { getByTestId } = render(<ButtonChip {...{ ...props, expanded: true }} />)
 
     expect(getByTestId('testId')).toHaveAttribute('aria-expanded', 'true')
   })

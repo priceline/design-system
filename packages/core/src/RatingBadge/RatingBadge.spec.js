@@ -21,16 +21,14 @@ describe('RatingBadge', () => {
   test('has correct background and text colors', () => {
     const color = 'secondary'
 
-    const { getByText } = render(
-      <RatingBadge color={color}>{text}</RatingBadge>
-    )
+    const { getByText } = render(<RatingBadge color={color}>{text}</RatingBadge>)
 
     const badge = getByText(text)
 
     // Need to check the computed styles because .toHaveStyleRule(..) doesn't evaluate the functions
     const computedStyles = window.getComputedStyle(badge)
-    expect(computedStyles.color).toEqual('rgb(255, 255, 255)')
-    expect(computedStyles.backgroundColor).toEqual('rgb(0, 170, 0)')
+    expect(computedStyles.color).toBe('rgb(255, 255, 255)')
+    expect(computedStyles.backgroundColor).toBe('rgb(0, 170, 0)')
   })
 
   test('renders with bg and color', () => {
@@ -46,8 +44,8 @@ describe('RatingBadge', () => {
     const badge = getByText(text)
 
     const computedStyles = window.getComputedStyle(badge)
-    expect(computedStyles.color).toEqual('rgb(0, 170, 0)')
-    expect(computedStyles.backgroundColor).toEqual('rgb(0, 104, 239)')
+    expect(computedStyles.color).toBe('rgb(0, 170, 0)')
+    expect(computedStyles.backgroundColor).toBe('rgb(0, 104, 239)')
   })
 
   test('renders bg and no color', () => {
@@ -58,22 +56,20 @@ describe('RatingBadge', () => {
     const badge = getByText(text)
 
     const computedStyles = window.getComputedStyle(badge)
-    expect(computedStyles.backgroundColor).toEqual('rgb(0, 170, 0)')
-    expect(computedStyles.color).toEqual('rgb(255, 255, 255)')
+    expect(computedStyles.backgroundColor).toBe('rgb(0, 170, 0)')
+    expect(computedStyles.color).toBe('rgb(255, 255, 255)')
   })
 
   test('renders with no bg and color', () => {
     const color = 'secondary'
 
-    const { getByText } = render(
-      <RatingBadge color={color}>{text}</RatingBadge>
-    )
+    const { getByText } = render(<RatingBadge color={color}>{text}</RatingBadge>)
 
     const badge = getByText(text)
 
     const computedStyles = window.getComputedStyle(badge)
-    expect(computedStyles.backgroundColor).toEqual('rgb(0, 170, 0)')
-    expect(computedStyles.color).toEqual('rgb(255, 255, 255)')
+    expect(computedStyles.backgroundColor).toBe('rgb(0, 170, 0)')
+    expect(computedStyles.color).toBe('rgb(255, 255, 255)')
   })
 
   test('renders default color with no props', () => {
@@ -82,7 +78,7 @@ describe('RatingBadge', () => {
     const badge = getByText(text)
 
     const computedStyles = window.getComputedStyle(badge)
-    expect(computedStyles.color).toEqual('rgb(255, 255, 255)')
-    expect(computedStyles.backgroundColor).toEqual('rgb(246, 128, 19)')
+    expect(computedStyles.color).toBe('rgb(255, 255, 255)')
+    expect(computedStyles.backgroundColor).toBe('rgb(246, 128, 19)')
   })
 })

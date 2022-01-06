@@ -45,12 +45,11 @@ export const PositioningAnIcon = () => (
   <Card m={2}>
     <Relative p={4}>
       <Text mt={2} textAlign='justify'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl
-        dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        quis nisi ac est elementum consequat a eu risus. Phasellus id facilisis
-        nulla. Aliquam vel semper enim, id lobortis dolor. Morbi sed leo at
-        turpis rutrum posuere. Nullam tincidunt ex vitae mi sagittis, vel
-        sollicitudin lectus viverra. Curabitur sit amet fringilla velit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl dolor. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Donec quis nisi ac est elementum consequat a eu risus. Phasellus id
+        facilisis nulla. Aliquam vel semper enim, id lobortis dolor. Morbi sed leo at turpis rutrum posuere.
+        Nullam tincidunt ex vitae mi sagittis, vel sollicitudin lectus viverra. Curabitur sit amet fringilla
+        velit.
       </Text>
       <Absolute top='10px' right='10px'>
         <CloseIcon color='text.base' size={24} />
@@ -66,50 +65,22 @@ PositioningAnIcon.story = {
 export const MultipleAbsolutelyPositionedBoxes = () => (
   <TallCard pb={3}>
     <Relative p={3}>
-      <ExtraLargeAbsolute
-        pl={2}
-        top={0}
-        right={0}
-        zIndex={1}
-        width={400}
-        bg='#085397'
-      >
+      <ExtraLargeAbsolute pl={2} top={0} right={0} zIndex={1} width={400} bg='#085397'>
         <Text.span fontSize={1} bold>
           z-index 1
         </Text.span>
       </ExtraLargeAbsolute>
-      <LargeAbsolute
-        pl={2}
-        top={0}
-        right={0}
-        zIndex={2}
-        width={300}
-        bg='#f2633a'
-      >
+      <LargeAbsolute pl={2} top={0} right={0} zIndex={2} width={300} bg='#f2633a'>
         <Text.span fontSize={1} bold>
           z-index 2
         </Text.span>
       </LargeAbsolute>
-      <MediumAbsolute
-        pl={2}
-        top={0}
-        right={0}
-        zIndex={3}
-        width={200}
-        bg='#0a84c1'
-      >
+      <MediumAbsolute pl={2} top={0} right={0} zIndex={3} width={200} bg='#0a84c1'>
         <Text.span fontSize={1} bold>
           z-index 3
         </Text.span>
       </MediumAbsolute>
-      <SmallAbsolute
-        pl={2}
-        top={0}
-        right={0}
-        zIndex='4'
-        width={100}
-        bg='#3c910e'
-      >
+      <SmallAbsolute pl={2} top={0} right={0} zIndex='4' width={100} bg='#3c910e'>
         <Text.span fontSize={1} bold>
           z-index 4
         </Text.span>

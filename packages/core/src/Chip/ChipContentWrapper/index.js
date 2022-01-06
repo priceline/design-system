@@ -23,16 +23,10 @@ const getColor = ({ disabled }) => (disabled ? 'text.light' : 'base')
 const getCursor = ({ disabled }) => (disabled ? 'default' : 'pointer')
 
 const getBorderColor = (props) =>
-  props.disabled
-    ? 'transparent'
-    : getPaletteColor(props.selected ? 'base' : 'border.base')(props)
+  props.disabled ? 'transparent' : getPaletteColor(props.selected ? 'base' : 'border.base')(props)
 
 const getBackgroundColor = (props) =>
-  props.disabled
-    ? 'background.light'
-    : props.selected
-    ? 'light'
-    : 'background.lightest'
+  props.disabled ? 'background.light' : props.selected ? 'light' : 'background.lightest'
 
 const ChipContentWrapper = styled(Box)`
   ${(props) => `
@@ -56,8 +50,7 @@ const ChipContentWrapper = styled(Box)`
   align-items: center;
   position: relative;
   border-radius: 2px;
-  ${({ theme, hasChildren }) =>
-    applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
+  ${({ theme, hasChildren }) => applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
   ${space};
   ${fontSize};
 `

@@ -1,19 +1,13 @@
 import styled from 'styled-components'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 import { space, width, borderColor } from 'styled-system'
 
 const Divider = styled.hr`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: ${(props) =>
-    getPaletteColor(props.borderColor || props.color, 'base')(props)};
-  background-color: ${(props) =>
-    getPaletteColor(props.borderColor || props.color, 'base')(props)};
+  border-color: ${(props) => getPaletteColor(props.borderColor || props.color, 'base')(props)};
+  background-color: ${(props) => getPaletteColor(props.borderColor || props.color, 'base')(props)};
   ${applyVariations('Divider')}
   ${space} ${width};
 `

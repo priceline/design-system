@@ -50,11 +50,7 @@ export interface ClassNameProps {
   className?: string
 }
 
-export interface TopRightBottomLeft
-  extends TopProps,
-    RightProps,
-    BottomProps,
-    LeftProps {}
+export interface TopRightBottomLeft extends TopProps, RightProps, BottomProps, LeftProps {}
 
 export type RefPropType = (() => any) | ReactRefObject
 
@@ -111,18 +107,9 @@ export interface BadgeProps extends ColorProps, SpaceProps {
   size?: 'small' | 'medium'
 }
 
-export interface BoxProps
-  extends ColorProps,
-    BoxShadowSizeProps,
-    WidthProps,
-    SpaceProps,
-    TextAlignProps {}
+export interface BoxProps extends ColorProps, BoxShadowSizeProps, WidthProps, SpaceProps, TextAlignProps {}
 
-export interface ButtonBaseProps
-  extends ColorProps,
-    SpaceProps,
-    WidthProps,
-    React.ButtonHTMLAttributes<any> {
+export interface ButtonBaseProps extends ColorProps, SpaceProps, WidthProps, React.ButtonHTMLAttributes<any> {
   dsRef?: RefPropType
 }
 
@@ -179,19 +166,11 @@ export interface IconButtonProps extends ButtonProps {
   icon?: React.ComponentElement<IconProps, any>
 }
 
-export interface CardProps
-  extends BoxProps,
-    BorderRadiusProps,
-    BoxShadowSizeProps,
-    BorderColorProps {
+export interface CardProps extends BoxProps, BorderRadiusProps, BoxShadowSizeProps, BorderColorProps {
   borderWidth?: 0 | 1 | 2
 }
 
-export interface CloseButtonProps
-  extends ButtonBaseProps,
-    ColorProps,
-    SpaceProps,
-    WidthProps {
+export interface CloseButtonProps extends ButtonBaseProps, ColorProps, SpaceProps, WidthProps {
   dsRef?: RefPropType
   size?: number
   variation?: 'fill' | 'outline' | 'link'
@@ -226,25 +205,16 @@ export interface PlaceholderImageProps {
   width?: string
 }
 
-export interface RatingBadgeProps
-  extends BoxProps,
-    BorderRadiusProps,
-    FontWeightProps {}
+export interface RatingBadgeProps extends BoxProps, BorderRadiusProps, FontWeightProps {}
 
-export interface RelativeProps
-  extends TopRightBottomLeft,
-    BoxProps,
-    ZIndexProps {}
+export interface RelativeProps extends TopRightBottomLeft, BoxProps, ZIndexProps {}
 
 export interface StepProps extends ButtonProps, ClassNameProps {
   active?: boolean
   completed?: boolean
 }
 
-export interface ToggleBadgeProps
-  extends ColorProps,
-    FontSizeProps,
-    SpaceProps {
+export interface ToggleBadgeProps extends ColorProps, FontSizeProps, SpaceProps {
   dsRef?: RefPropType
   selected?: boolean
   unSelectedBg?: string
@@ -283,11 +253,7 @@ export interface ThemeProviderProps {
   customBreakpoints?: string[]
 }
 
-export interface DividerProps
-  extends ColorProps,
-    SpaceProps,
-    WidthProps,
-    BorderColorProps {}
+export interface DividerProps extends ColorProps, SpaceProps, WidthProps, BorderColorProps {}
 
 export interface AvatarProps extends ClassNameProps, ColorProps {
   /** Heading displayed with avatar */
@@ -341,37 +307,17 @@ export interface CheckboxProps extends DsRefProps, ColorValidation {
   onChange: () => void
 }
 
-export interface LabelProps
-  extends SpaceProps,
-    FontSizeProps,
-    FontWeightProps,
-    WidthProps,
-    TextColorProps {}
+export interface LabelProps extends SpaceProps, FontSizeProps, FontWeightProps, WidthProps, TextColorProps {}
 
 export interface RadioProps extends TextColorProps, DsRefProps {
   size?: number
 }
 
-export interface SelectProps
-  extends DsRefProps,
-    SpaceProps,
-    FontSizeProps,
-    TextColorProps,
-    BordersProps {}
+export interface SelectProps extends DsRefProps, SpaceProps, FontSizeProps, TextColorProps, BordersProps {}
 
-export interface TextAreaProps
-  extends TextColorProps,
-    DsRefProps,
-    BordersProps,
-    SpaceProps,
-    IdProps {}
+export interface TextAreaProps extends TextColorProps, DsRefProps, BordersProps, SpaceProps, IdProps {}
 
-export interface InputProps
-  extends DsRefProps,
-    BordersProps,
-    SpaceProps,
-    TextColorProps,
-    FontSizeProps {}
+export interface InputProps extends DsRefProps, BordersProps, SpaceProps, TextColorProps, FontSizeProps {}
 
 export interface InputGroupProps extends SpaceProps, BorderColorProps {}
 
@@ -379,59 +325,29 @@ export interface InputGroupProps extends SpaceProps, BorderColorProps {}
 // pcln-design-system components
 // ------------------------------------------------------------
 
-export class Absolute extends React.Component<
-  AbsoluteProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Avatar extends React.Component<
-  AvatarProps & React.HTMLProps<HTMLDivElement>
-> {}
+export class Absolute extends React.Component<AbsoluteProps & React.HTMLProps<HTMLDivElement>> {}
+export class Avatar extends React.Component<AvatarProps & React.HTMLProps<HTMLDivElement>> {}
 export class BackgroundImage extends React.Component<BackgroundImageProps> {}
 export class Badge extends React.Component<BadgeProps> {}
-export class Banner extends React.Component<
-  BannerProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class BlockLink extends React.Component<
-  LinkProps & React.HTMLProps<HTMLAnchorElement>
-> {}
-export class Box extends React.Component<
-  BoxProps & React.HTMLProps<HTMLAnchorElement>
-> {}
-export class Breadcrumbs extends React.Component<
-  React.HTMLProps<HTMLDivElement>
-> {
+export class Banner extends React.Component<BannerProps & React.HTMLProps<HTMLDivElement>> {}
+export class BlockLink extends React.Component<LinkProps & React.HTMLProps<HTMLAnchorElement>> {}
+export class Box extends React.Component<BoxProps & React.HTMLProps<HTMLAnchorElement>> {}
+export class Breadcrumbs extends React.Component<React.HTMLProps<HTMLDivElement>> {
   static Link: typeof BreadcrumbLink
 }
 export class BreadcrumbLink extends React.Component<
   BreadcrumbLinkProps & React.HTMLProps<HTMLAnchorElement>
 > {}
 export class Button extends React.Component<ButtonProps> {}
-export class Card extends React.Component<
-  CardProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Checkbox extends React.Component<
-  CheckboxProps & React.HTMLProps<HTMLInputElement>
-> {}
-export class CloseButton extends React.Component<
-  CloseButtonProps & React.HTMLProps<HTMLButtonElement>
-> {}
-export class Container extends React.Component<
-  ContainerProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Divider extends React.Component<
-  DividerProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Flag extends React.Component<
-  FlagProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Flex extends React.Component<
-  FlexProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class FormField extends React.Component<
-  React.HTMLProps<HTMLDivElement>
-> {}
-export class Heading extends React.Component<
-  TextProps & React.HTMLProps<HTMLDivElement>
-> {
+export class Card extends React.Component<CardProps & React.HTMLProps<HTMLDivElement>> {}
+export class Checkbox extends React.Component<CheckboxProps & React.HTMLProps<HTMLInputElement>> {}
+export class CloseButton extends React.Component<CloseButtonProps & React.HTMLProps<HTMLButtonElement>> {}
+export class Container extends React.Component<ContainerProps & React.HTMLProps<HTMLDivElement>> {}
+export class Divider extends React.Component<DividerProps & React.HTMLProps<HTMLDivElement>> {}
+export class Flag extends React.Component<FlagProps & React.HTMLProps<HTMLDivElement>> {}
+export class Flex extends React.Component<FlexProps & React.HTMLProps<HTMLDivElement>> {}
+export class FormField extends React.Component<React.HTMLProps<HTMLDivElement>> {}
+export class Heading extends React.Component<TextProps & React.HTMLProps<HTMLDivElement>> {
   static h1: typeof Heading
   static h2: typeof Heading
   static h3: typeof Heading
@@ -439,66 +355,36 @@ export class Heading extends React.Component<
   static h5: typeof Heading
   static h6: typeof Heading
 }
-export class Hide extends React.Component<
-  HideProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Hug extends React.Component<
-  HugProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Icon extends React.Component<
-  IconProps & React.HTMLProps<HTMLDivElement>
-> {}
+export class Hide extends React.Component<HideProps & React.HTMLProps<HTMLDivElement>> {}
+export class Hug extends React.Component<HugProps & React.HTMLProps<HTMLDivElement>> {}
+export class Icon extends React.Component<IconProps & React.HTMLProps<HTMLDivElement>> {}
 export class IconButton extends React.Component<IconButtonProps> {}
-export class IconField extends React.Component<
-  FlexProps & React.HTMLProps<HTMLDivElement>
-> {}
+export class IconField extends React.Component<FlexProps & React.HTMLProps<HTMLDivElement>> {}
 export class Image extends React.Component<ImageProps> {}
-export class Input extends React.Component<
-  InputProps & React.HTMLProps<HTMLButtonElement>
-> {
+export class Input extends React.Component<InputProps & React.HTMLProps<HTMLButtonElement>> {
   static isField: boolean
 }
-export class InputGroup extends React.Component<
-  InputGroupProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Label extends React.Component<
-  LabelProps & React.HTMLProps<HTMLLabelElement>
-> {
+export class InputGroup extends React.Component<InputGroupProps & React.HTMLProps<HTMLDivElement>> {}
+export class Label extends React.Component<LabelProps & React.HTMLProps<HTMLLabelElement>> {
   static isLabel: boolean
 }
-export class Link extends React.Component<
-  LinkProps & React.HTMLProps<HTMLAnchorElement>
-> {}
+export class Link extends React.Component<LinkProps & React.HTMLProps<HTMLAnchorElement>> {}
 export class PlaceholderImage extends React.Component<
   PlaceholderImageProps & React.HTMLProps<HTMLImageElement>
 > {}
-export class Radio extends React.Component<
-  RadioProps & React.HTMLProps<HTMLInputElement>
-> {}
-export class RatingBadge extends React.Component<
-  RatingBadgeProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Relative extends React.Component<
-  RelativeProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Select extends React.Component<
-  SelectProps & React.HTMLProps<HTMLSelectElement>
-> {
+export class Radio extends React.Component<RadioProps & React.HTMLProps<HTMLInputElement>> {}
+export class RatingBadge extends React.Component<RatingBadgeProps & React.HTMLProps<HTMLDivElement>> {}
+export class Relative extends React.Component<RelativeProps & React.HTMLProps<HTMLDivElement>> {}
+export class Select extends React.Component<SelectProps & React.HTMLProps<HTMLSelectElement>> {
   static isField: boolean
 }
 export class Stamp extends React.Component<StampProps> {}
-export class Step extends React.Component<
-  StepProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Stepper extends React.Component<
-  ClassNameProps & React.HTMLProps<HTMLDivElement>
-> {
+export class Step extends React.Component<StepProps & React.HTMLProps<HTMLDivElement>> {}
+export class Stepper extends React.Component<ClassNameProps & React.HTMLProps<HTMLDivElement>> {
   static Step: typeof Step
 }
 export class SrOnly extends React.Component<React.HTMLProps<HTMLSpanElement>> {}
-export class Text extends React.Component<
-  TextProps & React.HTMLProps<HTMLDivElement>
-> {
+export class Text extends React.Component<TextProps & React.HTMLProps<HTMLDivElement>> {
   /** Span element */
   static span
   /** Paragraph element */
@@ -506,23 +392,13 @@ export class Text extends React.Component<
   /** Strikethrough element */
   static s
 }
-export class TextArea extends React.Component<
-  TextAreaProps & React.HTMLProps<HTMLTextAreaElement>
-> {
+export class TextArea extends React.Component<TextAreaProps & React.HTMLProps<HTMLTextAreaElement>> {
   static isField: boolean
 }
-export class ThemeProvider extends React.Component<
-  ThemeProviderProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class ToggleBadge extends React.Component<
-  ToggleBadgeProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Tooltip extends React.Component<
-  TooltipProps & React.HTMLProps<HTMLDivElement>
-> {}
-export class Truncate extends React.Component<
-  TextProps & React.HTMLProps<HTMLDivElement>
-> {}
+export class ThemeProvider extends React.Component<ThemeProviderProps & React.HTMLProps<HTMLDivElement>> {}
+export class ToggleBadge extends React.Component<ToggleBadgeProps & React.HTMLProps<HTMLDivElement>> {}
+export class Tooltip extends React.Component<TooltipProps & React.HTMLProps<HTMLDivElement>> {}
+export class Truncate extends React.Component<TextProps & React.HTMLProps<HTMLDivElement>> {}
 
 //
 // pcln-design-system utils
@@ -565,14 +441,8 @@ export function deprecatedPropType(replacement: string): Error | undefined
 export function borders(props: ThemeArgs): object
 export function hasPaletteColor(props: ThemeArgs): boolean
 export function color(props: ColorArgs): string[] | string
-export function getPaletteColor(
-  color: string,
-  shade?: string
-): (props: ThemeArgs) => any
+export function getPaletteColor(color: string, shade?: string): (props: ThemeArgs) => any
 export function getTextColorOn(name: string): (props: ThemeArgs) => any
-export function createTheme(
-  theme: Theme,
-  customBreakpoints: CustomBreakpoints
-): CreateThemeResult
+export function createTheme(theme: Theme, customBreakpoints: CustomBreakpoints): CreateThemeResult
 
 export type theme = Theme

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Monorepo maintenance, fixed peers",
+      "type": "minor",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "steven.dalonzo@priceline.com"
+}

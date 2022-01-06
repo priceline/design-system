@@ -83,13 +83,7 @@ describe('PasswordInput', () => {
 
   it('test with a manual regex checks', () => {
     const mockOnChange = jest.fn()
-    render(
-      <PasswordInput
-        hasProgressBar
-        regexChecks={sampleRegexChecks}
-        onChange={mockOnChange}
-      />
-    )
+    render(<PasswordInput hasProgressBar regexChecks={sampleRegexChecks} onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
     fireEvent.change(inputField, { target: { value: 'Password' } })
 

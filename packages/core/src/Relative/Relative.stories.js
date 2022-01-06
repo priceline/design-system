@@ -24,12 +24,11 @@ export const AroundTextAndAnAbsolutelyPositionedIcon = () => (
   <Card m={2}>
     <Relative p={4}>
       <Text mt={2} textAlign='justify'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl
-        dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        quis nisi ac est elementum consequat a eu risus. Phasellus id facilisis
-        nulla. Aliquam vel semper enim, id lobortis dolor. Morbi sed leo at
-        turpis rutrum posuere. Nullam tincidunt ex vitae mi sagittis, vel
-        sollicitudin lectus viverra. Curabitur sit amet fringilla velit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nisl dolor. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Donec quis nisi ac est elementum consequat a eu risus. Phasellus id
+        facilisis nulla. Aliquam vel semper enim, id lobortis dolor. Morbi sed leo at turpis rutrum posuere.
+        Nullam tincidunt ex vitae mi sagittis, vel sollicitudin lectus viverra. Curabitur sit amet fringilla
+        velit.
       </Text>
       <Absolute top='10px' right='10px'>
         <CloseIcon color='text.base' size={24} />

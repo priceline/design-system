@@ -13,8 +13,7 @@ function ProgressBar({ steps, currentStep, stepHeight, className }) {
   return (
     <Flex className={className}>
       {steps.map((step, index) => {
-        const stepColor =
-          index < currentStep ? steps[currentStep - 1].color : defaultStepColor
+        const stepColor = index < currentStep ? steps[currentStep - 1].color : defaultStepColor
         return (
           <CustomBox
             key={index}

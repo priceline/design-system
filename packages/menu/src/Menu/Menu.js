@@ -11,26 +11,9 @@ const LinkButton = styled(Button)`
   align-items: center;
 `
 
-function Menu({
-  id,
-  buttonNode,
-  buttonProps,
-  buttonText,
-  color,
-  width,
-  height,
-  size,
-  children,
-  ...props
-}) {
+function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, size, children, ...props }) {
   const MenuContent = ({ handleClose }) => (
-    <MenuList
-      id={id}
-      color={color}
-      size={size}
-      height={height}
-      handleClose={handleClose}
-    >
+    <MenuList id={id} color={color} size={size} height={height} handleClose={handleClose}>
       {children}
     </MenuList>
   )
@@ -51,13 +34,7 @@ function Menu({
     buttonNode ? (
       React.cloneElement(buttonNode, { onKeyDown, ...props })
     ) : (
-      <LinkButton
-        variation='link'
-        {...props}
-        p={2}
-        {...buttonProps}
-        onKeyDown={onKeyDown}
-      >
+      <LinkButton variation='link' {...props} p={2} {...buttonProps} onKeyDown={onKeyDown}>
         {buttonText}
         <ChevronDown ml={1} />
       </LinkButton>

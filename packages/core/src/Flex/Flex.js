@@ -1,20 +1,9 @@
 import styled from 'styled-components'
-import {
-  space,
-  width,
-  alignItems,
-  justifyContent,
-  flexWrap,
-  flexDirection,
-} from 'styled-system'
+import { space, width, alignItems, justifyContent, flexWrap, flexDirection } from 'styled-system'
 
 import { Box } from '../Box'
 
-import {
-  applyVariations,
-  deprecatedPropType,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, deprecatedPropType, deprecatedColorValue } from '../utils'
 
 const Flex = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,

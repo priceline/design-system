@@ -22,14 +22,7 @@ describe('Image', () => {
   })
 
   it('renders with fixed width and height', () => {
-    render(
-      <Image
-        src={imageSrc}
-        alt='new-zealand-image'
-        width='500px'
-        height='500px'
-      />
-    )
+    render(<Image src={imageSrc} alt='new-zealand-image' width='500px' height='500px' />)
     const image = screen.getByAltText('new-zealand-image')
     expect(image).toHaveAttribute('width', '500px')
     expect(image).toHaveAttribute('height', '500px')

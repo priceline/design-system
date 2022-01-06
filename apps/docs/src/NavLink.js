@@ -18,7 +18,7 @@ const Base = styled.a`
   &.active {
     color: ${theme.colors.blue};
     font-weight: ${theme.bold};
-    border-left: 4px solid #0068EF;
+    border-left: 4px solid #0068ef;
     margin-left: -16px;
     padding-left: 28px;
   }
@@ -45,9 +45,7 @@ export default withDocs(({ basepath, href, route, ...props }) => {
       as={!isAbsoluteURL(href) && !!basepath ? basepath + href : href}
       passHref
     >
-      <Base className={props.href === route.path ? 'active' : undefined}>
-        {props.children}
-      </Base>
+      <Base className={props.href === route.path ? 'active' : undefined}>{props.children}</Base>
     </NextLink>
   )
 })

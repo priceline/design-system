@@ -1,22 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import {
-  Check,
-  Success,
-  SuccessOutline,
-  Visibility,
-  VisibilityOff,
-} from 'pcln-icons'
-import {
-  Badge,
-  Flex,
-  IconButton,
-  IconField,
-  Input,
-  Label,
-  ProgressBar,
-} from '..'
+import { Check, Success, SuccessOutline, Visibility, VisibilityOff } from 'pcln-icons'
+import { Badge, Flex, IconButton, IconField, Input, Label, ProgressBar } from '..'
 import { Text } from '../Text'
 
 const NoWrapText = styled(Text)`
@@ -48,15 +34,13 @@ function PasswordInput({
 
     if (hasProgressBar) {
       regexChecks.reduce(
-        (acc, element, index) =>
-          element.regex.test(currentValue) && passedChecks.push(index),
+        (acc, element, index) => element.regex.test(currentValue) && passedChecks.push(index),
         passedChecks
       )
       setPassedChecks(passedChecks)
     }
 
-    const lengthsMatch =
-      !hasProgressBar || passedChecks.length === regexChecks.length
+    const lengthsMatch = !hasProgressBar || passedChecks.length === regexChecks.length
     onChange && onChange({ isValid: lengthsMatch, value: currentValue })
   }
 
@@ -64,14 +48,11 @@ function PasswordInput({
   const VisibilityIcon = showPassword ? VisibilityOff : Visibility
 
   const strengthLevel = Math.max(
-    Math.round(
-      (maxProgressBarLength / regexChecks.length) * passedChecks.length
-    ),
+    Math.round((maxProgressBarLength / regexChecks.length) * passedChecks.length),
     0
   )
   const currentStep = progressBarSteps[strengthLevel - 1]
-  const showCheckIcon =
-    isValid || (hasProgressBar && strengthLevel === maxProgressBarLength)
+  const showCheckIcon = isValid || (hasProgressBar && strengthLevel === maxProgressBarLength)
 
   return (
     <Flex flexDirection='column' {...props}>
@@ -87,9 +68,7 @@ function PasswordInput({
           data-testid='input-field'
           autoComplete={autoComplete}
         />
-        {showCheckIcon && (
-          <Check color='secondary' data-testid='check-mark-icon' />
-        )}
+        {showCheckIcon && <Check color='secondary' data-testid='check-mark-icon' />}
         <IconButton
           title='visibility-button'
           icon={<VisibilityIcon color='text.light' />}
@@ -109,35 +88,23 @@ function PasswordInput({
             )}
           </Flex>
           <ProgressBar steps={progressBarSteps} currentStep={strengthLevel} />
-          <Flex
-            flexDirection={['column', null, 'row']}
-            mt={2}
-            mb={[2, null, 0]}
-          >
+          <Flex flexDirection={['column', null, 'row']} mt={2} mb={[2, null, 0]}>
             <NoWrapText fontSize={0} color='text.light' mr={3}>
               Must contain:
             </NoWrapText>
             <Flex flexWrap='wrap'>
               {regexChecks.map((check, index) => {
-                const didPass =
-                  passedChecks.findIndex((value) => index === value) !== -1
+                const didPass = passedChecks.findIndex((value) => index === value) !== -1
                 const Icon = didPass ? Success : SuccessOutline
                 const color = didPass ? 'success' : 'text.light'
 
                 return (
-                  <Flex
-                    alignItems='center'
-                    mt={[2, null, 0]}
-                    mb={[0, null, 2]}
-                    key={'regex-label-' + index}
-                  >
+                  <Flex alignItems='center' mt={[2, null, 0]} mb={[0, null, 2]} key={'regex-label-' + index}>
                     <Icon
                       size='16px'
                       color={color}
                       mr={1}
-                      data-testid={
-                        Icon === Success ? 'check-icon-on' : 'check-icon-off'
-                      }
+                      data-testid={Icon === Success ? 'check-icon-on' : 'check-icon-off'}
                     />
                     <NoWrapText fontSize={0} color={color} mr={3}>
                       {check.label}
@@ -176,13 +143,9 @@ PasswordInput.propTypes = {
   isValid: PropTypes.bool,
   label: PropTypes.string,
   hasProgressBar: PropTypes.bool,
-  progressBarSteps: PropTypes.arrayOf(
-    PropTypes.shape({ color: PropTypes.string, text: PropTypes.string })
-  ),
+  progressBarSteps: PropTypes.arrayOf(PropTypes.shape({ color: PropTypes.string, text: PropTypes.string })),
   progressBarDefaultStep: PropTypes.number,
-  regexChecks: PropTypes.arrayOf(
-    PropTypes.shape({ label: PropTypes.string, regex: PropTypes.regex })
-  ),
+  regexChecks: PropTypes.arrayOf(PropTypes.shape({ label: PropTypes.string, regex: PropTypes.regex })),
   value: PropTypes.string,
   onChange: PropTypes.func,
   autoComplete: PropTypes.string,

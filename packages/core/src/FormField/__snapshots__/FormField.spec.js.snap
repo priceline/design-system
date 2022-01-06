@@ -273,6 +273,7 @@ exports[`FormField renders with Icon 1`] = `
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
@@ -446,6 +447,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
@@ -625,6 +627,7 @@ exports[`FormField renders with Select  1`] = `
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
@@ -787,6 +790,7 @@ exports[`FormField renders with Select and Icon 1`] = `
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
@@ -826,6 +830,7 @@ exports[`FormField renders with Select and Icon 1`] = `
         tabIndex={-1}
         viewBox="0 0 24 24"
         width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"

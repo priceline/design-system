@@ -32,10 +32,7 @@ describe('Hug', () => {
 
   test('renders text when string is provided', () => {
     const json = rendererCreateWithTheme(
-      <Hug
-        icon={<ThumbsUp />}
-        text="I've been known to hug a card from time to time"
-      >
+      <Hug icon={<ThumbsUp />} text="I've been known to hug a card from time to time">
         <Card p={3} bg='white' color='text'>
           I‘m a card within a hug!
         </Card>

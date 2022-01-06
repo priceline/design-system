@@ -24,20 +24,9 @@ function Step({ className, active, completed, children, onClick, ...props }) {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (
-    <StepperFlex
-      className={className}
-      alignItems='center'
-      onClick={onClick}
-      {...props}
-    >
+    <StepperFlex className={className} alignItems='center' onClick={onClick} {...props}>
       {completed && (
-        <Check
-          color='primary'
-          size={16}
-          mr={1}
-          aria-hidden={false}
-          aria-label='Step Completed'
-        />
+        <Check color='primary' size={16} mr={1} aria-hidden={false} aria-label='Step Completed' />
       )}
       <Text color={color} bold={active} fontSize={1} aria-selected={active}>
         {children}

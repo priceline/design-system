@@ -9,9 +9,7 @@ const flattenObject = (obj) =>
     value: obj[key],
   }))
 
-const Column = (props) => (
-  <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 5]} mb={4} px={2} />
-)
+const Column = (props) => <Box {...props} width={[1 / 2, null, 1 / 3, 1 / 4, 1 / 5]} mb={4} px={2} />
 
 const ColorList = (props) =>
   props.colors.map((color) => (
@@ -20,9 +18,7 @@ const ColorList = (props) =>
     </Column>
   ))
 
-export const SectionTitle = (props) => (
-  <Heading.h3 fontSize={[2, 3]} bold mt={[2, 4]} {...props} />
-)
+export const SectionTitle = (props) => <Heading.h3 fontSize={[2, 3]} bold mt={[2, 4]} {...props} />
 
 const defaultPalette = createTheme().palette
 
@@ -31,9 +27,7 @@ const rest = {}
 const Palette = () => (
   <Box>
     <PageTitle>Palette</PageTitle>
-    <Description>
-      The design system includes a palette that can be used to theme components.
-    </Description>
+    <Description>The design system includes a palette that can be used to theme components.</Description>
     {Object.keys(defaultPalette).map((key) => {
       if (typeof defaultPalette[key] === 'object') {
         return (

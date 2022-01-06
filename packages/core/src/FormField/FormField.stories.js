@@ -17,12 +17,7 @@ export const WithIcon = () => (
   <FormField>
     <Label htmlFor='demo'>Email Address</Label>
     <EmailIcon color='primary' />
-    <Input
-      type='email'
-      id='email'
-      name='email'
-      defaultValue='hello@example.com'
-    />
+    <Input type='email' id='email' name='email' defaultValue='hello@example.com' />
   </FormField>
 )
 
@@ -49,11 +44,7 @@ export const DynamicLabel = () => (
         <Label autoHide htmlFor='dynamic-label-with-a-value'>
           With value
         </Label>
-        <Input
-          id='dynamic-label-with-a-value'
-          name='dynamic-label-with-a-value'
-          value='hello@example.com'
-        />
+        <Input id='dynamic-label-with-a-value' name='dynamic-label-with-a-value' value='hello@example.com' />
       </FormField>
     </Box>
     <Box px={2} width={1 / 3}>
@@ -123,12 +114,7 @@ WithSelect.story = {
 export const WithSuccessfulValidation = () => (
   <FormField>
     <Label htmlFor='valid'>Email Address</Label>
-    <Input
-      id='valid'
-      name='valid'
-      placeholder='hello@example.com'
-      color='success'
-    />
+    <Input id='valid' name='valid' placeholder='hello@example.com' color='success' />
     <SuccessIcon color='success' />
   </FormField>
 )

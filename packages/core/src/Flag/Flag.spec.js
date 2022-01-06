@@ -22,21 +22,14 @@ describe('Flag', () => {
   })
 
   test('renders with hex value as bg color', () => {
-    const json = rendererCreateWithTheme(
-      <Flag width={256} bg='#085397' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Flag width={256} bg='#085397' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json.children[1]).toHaveStyleRule('background-color', '#085397')
   })
 
   test('renders with theme color as bg color', () => {
-    const json = rendererCreateWithTheme(
-      <Flag width={256} bg='purple' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Flag width={256} bg='purple' />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json.children[1]).toHaveStyleRule(
-      'background-color',
-      theme.colors.purple
-    )
+    expect(json.children[1]).toHaveStyleRule('background-color', theme.colors.purple)
   })
 })

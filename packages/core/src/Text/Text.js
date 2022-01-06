@@ -20,12 +20,7 @@ import {
   zIndex,
 } from 'styled-system'
 
-import {
-  deprecatedPropType,
-  deprecatedColorValue,
-  applyVariations,
-  getPaletteColor,
-} from '../utils'
+import { deprecatedPropType, deprecatedColorValue, applyVariations, getPaletteColor } from '../utils'
 
 export const caps = (props) =>
   props.caps
@@ -35,29 +30,22 @@ export const caps = (props) =>
       }
     : null
 
-export const regular = (props) =>
-  props.regular ? { fontWeight: props.theme.regular } : null
+export const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
 
-export const bold = (props) =>
-  props.bold ? { fontWeight: props.theme.bold } : null
+export const bold = (props) => (props.bold ? { fontWeight: props.theme.bold } : null)
 
 export const textDecoration = (props) =>
   props.textDecoration ? `text-decoration: ${props.textDecoration};` : ''
 
 export const textShadow = (props) => {
   const textShadowSize = props.textShadowSize || 'md'
-  return props.enableTextShadow
-    ? { textShadow: props.theme.textShadows[textShadowSize] }
-    : null
+  return props.enableTextShadow ? { textShadow: props.theme.textShadows[textShadowSize] } : null
 }
 
 const textProps = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
-  ${(props) =>
-    props.bg
-      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-      : ''}
+  ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
 
   ${display}
   ${height}

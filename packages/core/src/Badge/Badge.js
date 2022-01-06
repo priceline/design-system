@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { themeGet, space } from 'styled-system'
-import {
-  applySizes,
-  applyVariations,
-  color,
-  deprecatedColorValue,
-  deprecatedPropType,
-} from '../utils'
+import { applySizes, applyVariations, color, deprecatedColorValue, deprecatedPropType } from '../utils'
 
 const type = (props) => {
   const badgeColors = {
@@ -48,10 +42,7 @@ const type = (props) => {
       color: props.theme.colors.text,
     },
   }
-  return (
-    !(props.bg && props.color) &&
-    (badgeColors[props.bg] || badgeColors.lightGray)
-  )
+  return !(props.bg && props.color) && (badgeColors[props.bg] || badgeColors.lightGray)
 }
 
 const sizes = {

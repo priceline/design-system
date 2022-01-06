@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [14.x, 16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -39,7 +39,7 @@ jobs:
         run: node common/scripts/install-run-rush.js build
 
       - name: Build Storybook
-        if: ${{ matrix.node-version == '12.x' }}
+        if: ${{ matrix.node-version == '14.x' }}
         working-directory: ./
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
@@ -49,11 +49,10 @@ jobs:
         run: node common/scripts/install-run-rush.js test:ci
 
       - name: ESLint
-        if: ${{ matrix.node-version != '10.x' }}
         run: node common/scripts/install-run-rush.js lint
 
       - name: Generate and upload coverage report
-        if: ${{ matrix.node-version == '10.x' }}
+        if: ${{ matrix.node-version == '14.x' }}
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |

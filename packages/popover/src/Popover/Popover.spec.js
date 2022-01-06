@@ -79,10 +79,7 @@ describe('Popover', () => {
             },
           }}
         >
-          <Popover
-            {...popoverProps}
-            renderContent={() => <Text color='primary.base'>hello world</Text>}
-          >
+          <Popover {...popoverProps} renderContent={() => <Text color='primary.base'>hello world</Text>}>
             <button>{triggerButtonText}</button>
           </Popover>
         </ThemeProvider>
@@ -143,9 +140,7 @@ describe('Popover', () => {
       expect(mockOnOpen).toHaveBeenCalledTimes(0)
       fireEvent.click(getByText(triggerButtonText))
       expect(mockOnOpen).toHaveBeenCalledTimes(1)
-      expect(mockOnOpen).toHaveBeenCalledWith(
-        expect.objectContaining({ type: 'click' })
-      )
+      expect(mockOnOpen).toHaveBeenCalledWith(expect.objectContaining({ type: 'click' }))
     })
 
     it('onClose event', () => {

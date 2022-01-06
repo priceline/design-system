@@ -64,15 +64,10 @@ export default {
   component: Modal,
 }
 
-export const Raw = () => (
-  <ModalStory width={['100px', '200px', '500px']} disableCloseButton />
-)
+export const Raw = () => <ModalStory width={['100px', '200px', '500px']} disableCloseButton />
 
 export const WithSmallModalHeader = () => (
-  <ModalStory
-    header={<SmallModalHeader />}
-    width={['80vw', '400px', '500px']}
-  />
+  <ModalStory header={<SmallModalHeader />} width={['80vw', '400px', '500px']} />
 )
 
 WithSmallModalHeader.story = {
@@ -107,11 +102,7 @@ WithSmallModalHeader.story = {
 // }
 
 export const WithOverflow = () => (
-  <ModalStory
-    header={<SmallModalHeader />}
-    width={['80vw', '400px', '500px']}
-    enableOverflow
-  />
+  <ModalStory header={<SmallModalHeader />} width={['80vw', '400px', '500px']} enableOverflow />
 )
 
 export const WithImagemodeAndColorful = () => (
@@ -142,9 +133,5 @@ WithCustomAnimation.story = {
 }
 
 export const ZeroTimeout = () => (
-  <ModalStory
-    disableCloseButton
-    width={['100px', '200px', '500px']}
-    timeout={0}
-  />
+  <ModalStory disableCloseButton width={['100px', '200px', '500px']} timeout={0} />
 )

@@ -42,9 +42,7 @@ export const ForwardRefs = () => (
 const StyledButton = styled(Button)`
   padding: 100px;
 `
-const StyledTemplate = (args) => (
-  <StyledButton {...args}>Button Text!</StyledButton>
-)
+const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</StyledButton>
 export const StyledButtonStory = StyledTemplate.bind({})
 StyledButtonStory.storyName = 'styled(Button) should preserve variation styling'
 StyledButtonStory.decorators = [

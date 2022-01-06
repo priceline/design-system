@@ -1,11 +1,5 @@
 import React from 'react'
-import {
-  Accessible,
-  SeatBusiness,
-  ThumbsUp,
-  Trophy,
-  WashingHands,
-} from 'pcln-icons'
+import { Accessible, SeatBusiness, ThumbsUp, Trophy, WashingHands } from 'pcln-icons'
 
 import { Text } from '..'
 
@@ -21,8 +15,7 @@ export const iconMap = {
 
 export const HugContentText = () => (
   <Text.span>
-    Today‘s best deal! You save <Text.span fontWeight='bold'>$300</Text.span>{' '}
-    for your party of 2.&nbsp;
+    Today‘s best deal! You save <Text.span fontWeight='bold'>$300</Text.span> for your party of 2.&nbsp;
   </Text.span>
 )
 

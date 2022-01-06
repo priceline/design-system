@@ -15,9 +15,7 @@ describe('Flex', () => {
   })
 
   test('justifyContent prop', () => {
-    const flex = rendererCreateWithTheme(
-      <Flex justifyContent='space-between' />
-    ).toJSON()
+    const flex = rendererCreateWithTheme(<Flex justifyContent='space-between' />).toJSON()
     expect(flex).toMatchSnapshot()
     expect(flex).toHaveStyleRule('justify-content', 'space-between')
   })
@@ -59,9 +57,7 @@ describe('Flex', () => {
     })
 
     test('shims the deprecated `justify` prop and warns', () => {
-      const json = rendererCreateWithTheme(
-        <Flex justify='space-between' />
-      ).toJSON()
+      const json = rendererCreateWithTheme(<Flex justify='space-between' />).toJSON()
       expect(json).toHaveStyleRule('justify-content', 'space-between')
       expect(console.error).toHaveBeenCalledWith(
         'Warning: Failed %s type: %s%s',

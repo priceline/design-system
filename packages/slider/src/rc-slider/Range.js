@@ -41,8 +41,7 @@ class Range extends React.Component {
 
     const { count, min, max } = props
     const initialValue = Array(...Array(count + 1)).map(() => min)
-    const defaultValue =
-      'defaultValue' in props ? props.defaultValue : initialValue
+    const defaultValue = 'defaultValue' in props ? props.defaultValue : initialValue
     const value = props.value !== undefined ? props.value : defaultValue
     const bounds = value.map((v, i) => this.trimAlignValue(v, i))
     const recent = bounds[0] === max ? 0 : bounds.length - 1
@@ -55,8 +54,7 @@ class Range extends React.Component {
   }
 
   UNSAFE_componentWillReceiveProps(nextProps) {
-    if (!('value' in nextProps || 'min' in nextProps || 'max' in nextProps))
-      return
+    if (!('value' in nextProps || 'min' in nextProps || 'max' in nextProps)) return
     if (
       this.props.min === nextProps.min &&
       this.props.max === nextProps.max &&
@@ -68,11 +66,7 @@ class Range extends React.Component {
     const { bounds } = this.state
     const value = nextProps.value || bounds
     const nextBounds = value.map((v, i) => this.trimAlignValue(v, i, nextProps))
-    if (
-      nextBounds.length === bounds.length &&
-      nextBounds.every((v, i) => v === bounds[i])
-    )
-      return
+    if (nextBounds.length === bounds.length && nextBounds.every((v, i) => v === bounds[i])) return
 
     this.setState({ bounds: nextBounds })
 
@@ -186,10 +180,7 @@ class Range extends React.Component {
         closestBound = i
       }
     }
-    if (
-      Math.abs(bounds[closestBound + 1] - value) <
-      Math.abs(bounds[closestBound] - value)
-    ) {
+    if (Math.abs(bounds[closestBound + 1] - value) < Math.abs(bounds[closestBound] - value)) {
       closestBound += 1
     }
     return closestBound
@@ -205,8 +196,7 @@ class Range extends React.Component {
     }
 
     if (isAtTheSamePoint && value !== bounds[closestBound + 1]) {
-      boundNeedMoving =
-        value < bounds[closestBound + 1] ? closestBound : closestBound + 1
+      boundNeedMoving = value < bounds[closestBound + 1] ? closestBound : closestBound + 1
     }
     return boundNeedMoving
   }
@@ -290,9 +280,7 @@ class Range extends React.Component {
 
     const nextHandle = handle + direction
     const diffToNext = direction * (bounds[nextHandle] - value)
-    if (
-      !this.pushHandle(bounds, nextHandle, direction, threshold - diffToNext)
-    ) {
+    if (!this.pushHandle(bounds, nextHandle, direction, threshold - diffToNext)) {
       // revert to original value if pushing is impossible
       bounds[handle] = bounds[nextHandle] - direction * threshold
     }
@@ -326,9 +314,7 @@ class Range extends React.Component {
     const nextValue = points[nextPointIndex]
     const { pushable: threshold } = this.props
     const diffToNext = direction * (bounds[nextHandle] - nextValue)
-    if (
-      !this.pushHandle(bounds, nextHandle, direction, threshold - diffToNext)
-    ) {
+    if (!this.pushHandle(bounds, nextHandle, direction, threshold - diffToNext)) {
       // couldn't push next handle, so we won't push this one either
       return false
     }
@@ -340,11 +326,7 @@ class Range extends React.Component {
   trimAlignValue(v, handle, nextProps = {}) {
     const mergedProps = { ...this.props, ...nextProps }
     const valInRange = utils.ensureValueInRange(v, mergedProps)
-    const valNotConflict = this.ensureValueNotConflict(
-      handle,
-      valInRange,
-      mergedProps
-    )
+    const valNotConflict = this.ensureValueNotConflict(handle, valInRange, mergedProps)
     return utils.ensureValuePrecision(valNotConflict, mergedProps)
   }
 

@@ -74,8 +74,8 @@ export const WrappedText = () => (
     <Card pb={3}>
       <Flag mt={2}>
         <b>Hello</b>
-        This is a really long string of text that should wrap when it gets too
-        long. But then the flag part to the right will probably break.
+        This is a really long string of text that should wrap when it gets too long. But then the flag part to
+        the right will probably break.
       </Flag>
     </Card>
   </Box>

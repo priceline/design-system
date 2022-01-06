@@ -5,11 +5,7 @@ import { Box } from '../../Box'
 import { Text } from '../../Text'
 
 const image = (
-  <img
-    src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png'
-    alt='Delta'
-    height='24'
-  />
+  <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />
 )
 
 const small = {
@@ -55,8 +51,7 @@ const labelOnly = [
   { label: 'Active', selected: true },
   { label: 'Active', selected: true, disabled: true },
 ]
-export const LabelOnly = () =>
-  getExamples(labelOnly, [small, medium, responsive])
+export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive])
 
 //With Icon
 const withIcon = [
@@ -72,8 +67,7 @@ const withFacet = [
   { label: 'Active', facet: '(00)', selected: true },
   { label: 'Active', facet: '(00)', selected: true, disabled: true },
 ]
-export const WithFacet = () =>
-  getExamples(withFacet, [small, medium, responsive])
+export const WithFacet = () => getExamples(withFacet, [small, medium, responsive])
 
 //With Facet And Icon
 const withFacetAndIcon = [
@@ -87,8 +81,7 @@ const withFacetAndIcon = [
     disabled: true,
   },
 ]
-export const WithIconAndFacet = () =>
-  getExamples(withFacetAndIcon, [small, medium, responsive])
+export const WithIconAndFacet = () => getExamples(withFacetAndIcon, [small, medium, responsive])
 
 //Icon Only
 const iconOnly = [
@@ -118,8 +111,7 @@ const withImageAndBridgeLabel = [
     bridgeLabel: 'Bridge',
   },
 ]
-export const WithImageAndBridgeLabel = () =>
-  getExamples(withImageAndBridgeLabel, [medium])
+export const WithImageAndBridgeLabel = () => getExamples(withImageAndBridgeLabel, [medium])
 
 //Image Only
 const imageOnly = [

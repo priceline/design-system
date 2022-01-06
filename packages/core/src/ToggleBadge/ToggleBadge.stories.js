@@ -9,8 +9,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'Use the <ToggleBadge /> component to render a primitive ToggleBadge.',
+        component: 'Use the <ToggleBadge /> component to render a primitive ToggleBadge.',
       },
     },
   },
@@ -18,9 +17,7 @@ export default {
 
 export const ToggleBadgeComponent = () => <ToggleBadge>ToggleBadge</ToggleBadge>
 
-export const Selected = () => (
-  <ToggleBadge selected>Selected - Badge</ToggleBadge>
-)
+export const Selected = () => <ToggleBadge selected>Selected - Badge</ToggleBadge>
 export const Unselected = () => <ToggleBadge>Un - Selected - Badge</ToggleBadge>
 
 export const UnselectedWithDifferentBackgroundColor = () => (

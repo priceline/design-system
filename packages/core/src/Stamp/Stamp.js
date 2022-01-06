@@ -34,12 +34,8 @@ const sizes = {
 const variations = {
   outline: css`
     color: ${getPaletteColor('base')};
-    border-color: ${(props) =>
-      getPaletteColor(props.borderColor, 'base')(props)};
-    ${(props) =>
-      props.bg
-        ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-        : ''}
+    border-color: ${(props) => getPaletteColor(props.borderColor, 'base')(props)};
+    ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
   `,
   fill: css`
     color: ${getTextColorOn('base')};

@@ -29,15 +29,7 @@ module.exports = {
     'jsx-a11y/interactive-supports-focus': [
       'error',
       {
-        tabbable: [
-          'button',
-          'checkbox',
-          'link',
-          'searchbox',
-          'spinbutton',
-          'switch',
-          'textbox',
-        ],
+        tabbable: ['button', 'checkbox', 'link', 'searchbox', 'spinbutton', 'switch', 'textbox'],
       },
     ],
     'jsx-a11y/label-has-associated-control': 'error',
@@ -76,24 +68,8 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-to-interactive-role': [
       'error',
       {
-        ul: [
-          'listbox',
-          'menu',
-          'menubar',
-          'radiogroup',
-          'tablist',
-          'tree',
-          'treegrid',
-        ],
-        ol: [
-          'listbox',
-          'menu',
-          'menubar',
-          'radiogroup',
-          'tablist',
-          'tree',
-          'treegrid',
-        ],
+        ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
         li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
         table: ['grid'],
         td: ['gridcell'],
@@ -113,14 +89,7 @@ module.exports = {
       'error',
       {
         allowExpressionValues: true,
-        handlers: [
-          'onClick',
-          'onMouseDown',
-          'onMouseUp',
-          'onKeyPress',
-          'onKeyDown',
-          'onKeyUp',
-        ],
+        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
       },
     ],
     'jsx-a11y/role-has-required-aria-props': 'error',

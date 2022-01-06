@@ -6,11 +6,7 @@ export default class ScrollLock {
   }
 
   getCurrentPos() {
-    return (
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop
-    )
+    return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
   }
 
   createStyleTag() {

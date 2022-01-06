@@ -2,12 +2,7 @@ import styled from 'styled-components'
 import { space, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 
-import {
-  applyVariations,
-  getPaletteColor,
-  borders,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, getPaletteColor, borders, deprecatedColorValue } from '../utils'
 
 const TextArea = styled.textarea`
   appearance: none;

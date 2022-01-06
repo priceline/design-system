@@ -76,12 +76,7 @@ const StyledFlex = styled(Flex)`
 const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
   <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
-      <FlagShadow
-        width='4px'
-        mr={-2}
-        mb={-2}
-        color={hasPaletteColor({ color, ...props }) ? color : bg}
-      />
+      <FlagShadow width='4px' mr={-2} mb={-2} color={hasPaletteColor({ color, ...props }) ? color : bg} />
     </RelativeHide>
     <FlagBody
       flexAuto={!!width}
@@ -93,11 +88,7 @@ const Flag = ({ color, bg, children, pl, pr, py, width, ...props }) => (
     >
       {children}
     </FlagBody>
-    <FlagRight
-      width='18px'
-      color={hasPaletteColor({ color, ...props }) ? color : bg}
-      ml={-2}
-    />
+    <FlagRight width='18px' color={hasPaletteColor({ color, ...props }) ? color : bg} ml={-2} />
   </StyledFlex>
 )
 

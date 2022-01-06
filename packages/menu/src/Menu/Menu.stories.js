@@ -73,12 +73,7 @@ export const MultilineMenuWithCustomColors = () => {
         const helperColor = !selected && 'text.light'
         const onClick = () => setValue(item.value)
         return (
-          <MenuItem
-            key={index}
-            selected={selected}
-            color={color}
-            onClick={onClick}
-          >
+          <MenuItem key={index} selected={selected} color={color} onClick={onClick}>
             <Flex flexDirection='column' alignItems='flex-start'>
               <Text>{item.label}</Text>
               <Text color={helperColor} fontSize={0} regular>
@@ -97,10 +92,7 @@ export const TwoColumns = () => {
 
   return (
     <Menu buttonText={currencyCode} size='twoColumns'>
-      <CurrencyItems
-        currencyCode={currencyCode}
-        setCurrencyCode={setCurrencyCode}
-      />
+      <CurrencyItems currencyCode={currencyCode} setCurrencyCode={setCurrencyCode} />
     </Menu>
   )
 }
@@ -110,10 +102,7 @@ export const Scrollable = () => {
 
   return (
     <Menu buttonText={currencyCode} width={350} height={300}>
-      <CurrencyItems
-        currencyCode={currencyCode}
-        setCurrencyCode={setCurrencyCode}
-      />
+      <CurrencyItems currencyCode={currencyCode} setCurrencyCode={setCurrencyCode} />
     </Menu>
   )
 }
@@ -122,14 +111,8 @@ export const BreakpointColumns = () => {
   const [currencyCode, setCurrencyCode] = useState('USD')
 
   return (
-    <Menu
-      buttonText={currencyCode}
-      size={['singleColumn', null, null, 'twoColumns']}
-    >
-      <CurrencyItems
-        currencyCode={currencyCode}
-        setCurrencyCode={setCurrencyCode}
-      />
+    <Menu buttonText={currencyCode} size={['singleColumn', null, null, 'twoColumns']}>
+      <CurrencyItems currencyCode={currencyCode} setCurrencyCode={setCurrencyCode} />
     </Menu>
   )
 }

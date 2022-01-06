@@ -16,9 +16,7 @@ export const ContainingBackgroundImage = () => (
     <BlockLink href='https://www.priceline.com' target='_blank'>
       <BackgroundImage image={image} width='640px'>
         <Box p={4}>
-          <Text textAlign='center'>
-            Click to open priceline.com in new tab!
-          </Text>
+          <Text textAlign='center'>Click to open priceline.com in new tab!</Text>
         </Box>
       </BackgroundImage>
     </BlockLink>
@@ -37,11 +35,7 @@ export const ForwardRefs = () => (
           I am a link!
         </BlockLink>
         <br />
-        <Button
-          color='error'
-          onClick={() => (dsRef.current.innerHTML = 'Bacon!')}
-          mt={4}
-        >
+        <Button color='error' onClick={() => (dsRef.current.innerHTML = 'Bacon!')} mt={4}>
           Click to update link text via ref
         </Button>
       </>

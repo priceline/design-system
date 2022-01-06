@@ -21,9 +21,7 @@ module.exports = function (fileInfo) {
   if (foundIcons.length) {
     // handle default imports that don't match the module name
     const imports = foundIcons.map(({ iconName, moduleName }) => {
-      return iconName !== moduleName
-        ? `${moduleName} as ${iconName}`
-        : moduleName
+      return iconName !== moduleName ? `${moduleName} as ${iconName}` : moduleName
     })
 
     // create combined import statement
@@ -36,10 +34,7 @@ module.exports = function (fileInfo) {
     }
 
     // insert combined import below anchor
-    out = out.replace(
-      RegExp(anchor, 'g'),
-      (replace) => `${replace}${newImport}\n`
-    )
+    out = out.replace(RegExp(anchor, 'g'), (replace) => `${replace}${newImport}\n`)
   }
 
   return out

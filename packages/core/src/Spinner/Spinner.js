@@ -79,11 +79,7 @@ Spinner.propTypes = {
     PropTypes.number,
     PropTypes.oneOf(Object.keys(sizes)),
     PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.oneOf(Object.keys(sizes)),
-        PropTypes.string,
-        PropTypes.number,
-      ])
+      PropTypes.oneOfType([PropTypes.oneOf(Object.keys(sizes)), PropTypes.string, PropTypes.number])
     ),
   ]),
 }

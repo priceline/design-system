@@ -11,11 +11,7 @@ export default class Handle extends React.Component {
   componentDidMount() {
     // mouseup won't trigger if mouse moved out of handle,
     // so we listen on document here.
-    this.onMouseUpListener = addEventListener(
-      document,
-      'mouseup',
-      this.handleMouseUp
-    )
+    this.onMouseUpListener = addEventListener(document, 'mouseup', this.handleMouseUp)
   }
 
   componentWillUnmount() {
@@ -85,9 +81,7 @@ export default class Handle extends React.Component {
       [`${prefixCls}-handle-click-focused`]: this.state.clickFocused,
     })
 
-    const postionStyle = vertical
-      ? { bottom: `${offset}%` }
-      : { left: `${offset}%` }
+    const postionStyle = vertical ? { bottom: `${offset}%` } : { left: `${offset}%` }
     const elStyle = {
       ...style,
       ...postionStyle,
@@ -98,8 +92,7 @@ export default class Handle extends React.Component {
       _tabIndex = null
     }
 
-    const ariaValueText =
-      ariaValueTextFormatter && ariaValueTextFormatter(value)
+    const ariaValueText = ariaValueTextFormatter && ariaValueTextFormatter(value)
 
     return (
       <div

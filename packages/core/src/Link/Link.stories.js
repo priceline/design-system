@@ -40,12 +40,7 @@ LinkComponent.story = {
 
 export const AsSmallFilledButton = () => (
   <>
-    <Link
-      variation='fill'
-      size='small'
-      href='https://www.priceline.com/home/'
-      target='_blank'
-    >
+    <Link variation='fill' size='small' href='https://www.priceline.com/home/' target='_blank'>
       Priceline Home
     </Link>
   </>
@@ -69,11 +64,7 @@ export const ForwardRefs = () => (
           I am a link!
         </Link>
         <br />
-        <Button
-          color='error'
-          onClick={() => (dsRef.current.innerHTML = 'Bacon!')}
-          mt={4}
-        >
+        <Button color='error' onClick={() => (dsRef.current.innerHTML = 'Bacon!')} mt={4}>
           Click to update link text via ref
         </Button>
       </>

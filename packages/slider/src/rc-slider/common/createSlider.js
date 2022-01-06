@@ -33,14 +33,8 @@ export default function createSlider(Component) {
       style: PropTypes.object,
       minimumTrackStyle: PropTypes.object, // just for compatibility, will be deperecate
       maximumTrackStyle: PropTypes.object, // just for compatibility, will be deperecate
-      handleStyle: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.arrayOf(PropTypes.object),
-      ]),
-      trackStyle: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.arrayOf(PropTypes.object),
-      ]),
+      handleStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.object)]),
+      trackStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.object)]),
       railStyle: PropTypes.object,
       dotStyle: PropTypes.object,
       activeDotStyle: PropTypes.object,
@@ -84,9 +78,7 @@ export default function createSlider(Component) {
 
       if (utils.isDev()) {
         const { step, max, min } = props
-        const isPointDiffEven = isFinite(max - min)
-          ? (max - min) % step === 0
-          : true
+        const isPointDiffEven = isFinite(max - min) ? (max - min) % step === 0 : true
         warning(
           step && Math.floor(step) === step ? isPointDiffEven : true,
           'Slider[max] - Slider[min] (%s) should be a multiple of Slider[step] (%s)',
@@ -122,10 +114,7 @@ export default function createSlider(Component) {
       if (!utils.isEventFromHandle(e, this.handlesRefs)) {
         this.dragOffset = 0
       } else {
-        const handlePosition = utils.getHandleCenterPosition(
-          isVertical,
-          e.target
-        )
+        const handlePosition = utils.getHandleCenterPosition(isVertical, e.target)
         this.dragOffset = position - handlePosition
         position = handlePosition
       }
@@ -142,10 +131,7 @@ export default function createSlider(Component) {
       if (!utils.isEventFromHandle(e, this.handlesRefs)) {
         this.dragOffset = 0
       } else {
-        const handlePosition = utils.getHandleCenterPosition(
-          isVertical,
-          e.target
-        )
+        const handlePosition = utils.getHandleCenterPosition(isVertical, e.target)
         this.dragOffset = position - handlePosition
         position = handlePosition
       }
@@ -231,29 +217,13 @@ export default function createSlider(Component) {
 
     addDocumentTouchEvents() {
       // just work for Chrome iOS Safari and Android Browser
-      this.onTouchMoveListener = addEventListener(
-        this.document,
-        'touchmove',
-        this.onTouchMove
-      )
-      this.onTouchUpListener = addEventListener(
-        this.document,
-        'touchend',
-        this.onEnd
-      )
+      this.onTouchMoveListener = addEventListener(this.document, 'touchmove', this.onTouchMove)
+      this.onTouchUpListener = addEventListener(this.document, 'touchend', this.onEnd)
     }
 
     addDocumentMouseEvents() {
-      this.onMouseMoveListener = addEventListener(
-        this.document,
-        'mousemove',
-        this.onMouseMove
-      )
-      this.onMouseUpListener = addEventListener(
-        this.document,
-        'mouseup',
-        this.onEnd
-      )
+      this.onMouseMoveListener = addEventListener(this.document, 'mousemove', this.onMouseMove)
+      this.onMouseUpListener = addEventListener(this.document, 'mouseup', this.onEnd)
     }
 
     removeDocumentEvents() {
@@ -284,9 +254,7 @@ export default function createSlider(Component) {
       const { vertical, min, max } = this.props
       const ratio = Math.abs(Math.max(offset, 0) / this.getSliderLength())
 
-      return vertical
-        ? (1 - ratio) * (max - min) + min
-        : ratio * (max - min) + min
+      return vertical ? (1 - ratio) * (max - min) + min : ratio * (max - min) + min
     }
 
     calcValueByPos(position) {

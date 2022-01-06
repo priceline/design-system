@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 import { space, fontSize, fontWeight, width } from 'styled-system'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const nowrap = (props) =>
   props.nowrap
@@ -30,10 +26,7 @@ const Label = styled.label`
   width: 100%;
   margin: 0;
   color: ${getPaletteColor('base')};
-  ${(props) =>
-    props.bg
-      ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};`
-      : ''}
+  ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
 
   ${applyVariations('Label')}
   ${space} ${fontSize} ${fontWeight} ${width};

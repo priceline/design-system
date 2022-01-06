@@ -56,18 +56,14 @@ describe('Text', () => {
   })
 
   test('display and overflow', () => {
-    const json = rendererCreateWithTheme(
-      <Text display='inline-block' overflow='none' />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Text display='inline-block' overflow='none' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('display', 'inline-block')
     expect(json).toHaveStyleRule('overflow', 'none')
   })
 
   test('height and width', () => {
-    const json = rendererCreateWithTheme(
-      <Text height={150} width={200} />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Text height={150} width={200} />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('height', '150px')
     expect(json).toHaveStyleRule('width', '200px')
@@ -86,18 +82,12 @@ describe('Text', () => {
 
   test('fontStyle', () => {
     render(<Text fontStyle='italic'>Italic Text</Text>)
-    expect(screen.getByText('Italic Text')).toHaveStyleRule(
-      'font-style',
-      'italic'
-    )
+    expect(screen.getByText('Italic Text')).toHaveStyleRule('font-style', 'italic')
   })
 
   test('textTransform', () => {
     render(<Text textDecoration='underline'>Underlined Text</Text>)
-    expect(screen.getByText('Underlined Text')).toHaveStyleRule(
-      'text-decoration',
-      'underline'
-    )
+    expect(screen.getByText('Underlined Text')).toHaveStyleRule('text-decoration', 'underline')
   })
 
   describe('deprecated prop types', () => {

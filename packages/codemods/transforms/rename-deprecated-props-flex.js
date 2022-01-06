@@ -4,9 +4,7 @@ const update = (path) => {
   const Node = path.value
 
   // Dumb way to skip text elements since they also can have an align prop
-  if (
-    get(Node, 'openingElement.name.name', '').toLowerCase().includes('text')
-  ) {
+  if (get(Node, 'openingElement.name.name', '').toLowerCase().includes('text')) {
     return
   }
 

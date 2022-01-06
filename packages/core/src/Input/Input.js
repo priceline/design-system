@@ -3,12 +3,7 @@ import styled from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
 import PropTypes from 'prop-types'
 import { Text } from '../Text'
-import {
-  applyVariations,
-  getPaletteColor,
-  borders,
-  deprecatedColorValue,
-} from '../utils'
+import { applyVariations, getPaletteColor, borders, deprecatedColorValue } from '../utils'
 
 const StyledInput = styled.input`
   appearance: none;
@@ -60,9 +55,7 @@ const HelperText = styled(Text).attrs(() => ({
   fontSize: 1,
 }))``
 
-Input.HelperText = (props) => (
-  <HelperText {...props}>{props.children}</HelperText>
-)
+Input.HelperText = (props) => <HelperText {...props}>{props.children}</HelperText>
 
 Input.HelperText.displayName = INPUT_ERROR_TEXT
 

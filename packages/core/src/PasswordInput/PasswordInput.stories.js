@@ -19,16 +19,10 @@ export const Basic = () => <PasswordInput />
 
 export const WithTitle = () => <PasswordInput label='New Password' />
 
-export const WithProgressBar = () => (
-  <PasswordInput label='New Password' hasProgressBar />
-)
+export const WithProgressBar = () => <PasswordInput label='New Password' hasProgressBar />
 
 export const WithCustomRegex = () => (
-  <PasswordInput
-    label='New Password'
-    hasProgressBar
-    regexChecks={customRegexChecks}
-  />
+  <PasswordInput label='New Password' hasProgressBar regexChecks={customRegexChecks} />
 )
 
 export const UpdatePasswordForm = () => {
@@ -45,10 +39,8 @@ export const UpdatePasswordForm = () => {
     setNewPasswordValid(isValid)
   }
 
-  const currentPasswordMatches =
-    !!currentPassword && currentPassword === newPassword
-  const newPasswordsMatch =
-    newPassword === confirmPassword && isNewPasswordValid
+  const currentPasswordMatches = !!currentPassword && currentPassword === newPassword
+  const newPasswordsMatch = newPassword === confirmPassword && isNewPasswordValid
   const isSaveEnabled = !currentPasswordMatches && newPasswordsMatch
   const onClick = action({
     currentPassword,
@@ -59,17 +51,8 @@ export const UpdatePasswordForm = () => {
 
   return (
     <Box width={[1, null, 500]}>
-      <PasswordInput
-        label='Current Password'
-        onChange={onCurrentPasswordChange}
-        mb={3}
-      />
-      <PasswordInput
-        label='New Password'
-        hasProgressBar
-        onChange={onNewPasswordChange}
-        mb={3}
-      />
+      <PasswordInput label='Current Password' onChange={onCurrentPasswordChange} mb={3} />
+      <PasswordInput label='New Password' hasProgressBar onChange={onNewPasswordChange} mb={3} />
       <PasswordInput
         isValid={newPasswordsMatch}
         label='Confirm Password'

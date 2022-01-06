@@ -6,8 +6,8 @@ const Typography = () => (
   <Box>
     <PageTitle>Typography</PageTitle>
     <Description>
-      The design system includes base styles for typography and a typographic
-      scale for determining font sizes.
+      The design system includes base styles for typography and a typographic scale for determining font
+      sizes.
     </Description>
     <Box py={4}>
       {[...theme.fontSizes].reverse().map((fontSize, i) => (

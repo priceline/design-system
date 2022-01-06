@@ -6,8 +6,7 @@ import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
 
-const getTitle = ({ disabled, actionTitle }) =>
-  `${actionTitle}${disabled ? ' disabled' : ''}`
+const getTitle = ({ disabled, actionTitle }) => `${actionTitle}${disabled ? ' disabled' : ''}`
 
 const FilterChip = ({
   id,

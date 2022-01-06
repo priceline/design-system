@@ -13,13 +13,7 @@ import {
   width,
 } from 'styled-system'
 
-import {
-  applyVariations,
-  color,
-  deprecatedColorValue,
-  deprecatedPropType,
-  boxShadow,
-} from '../utils'
+import { applyVariations, color, deprecatedColorValue, deprecatedPropType, boxShadow } from '../utils'
 
 const Box = styled.div`
   ${applyVariations('Box')}

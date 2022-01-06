@@ -83,9 +83,7 @@ const myTheme: ThemeType = theme
 // =============================================================================================
 
 // $ExpectType Element
-const myThemeProvider = (
-  <ThemeProvider theme={theme} customBreakpoints={['100px', '500px']} />
-)
+const myThemeProvider = <ThemeProvider theme={theme} customBreakpoints={['100px', '500px']} />
 const customTheme = {
   palette: {
     primary: '#000',
@@ -93,17 +91,13 @@ const customTheme = {
 }
 
 // $ExpectType Element
-const customThemeProvider = (
-  <ThemeProvider theme={customTheme} customBreakpoints={['100px', '500px']} />
-)
+const customThemeProvider = <ThemeProvider theme={customTheme} customBreakpoints={['100px', '500px']} />
 
 const styleBox = <Box style={{ background: 'red' }} /> // $ExpectType Element
 
 const myBox = <Box width='1' bg='primary' boxShadowSize={'sm'} /> // $ExpectType Element
 // $ExpectType Element
-const myCard = (
-  <Card width='1' bg='primary' borderRadius='md' boxShadowSize={'md'} />
-)
+const myCard = <Card width='1' bg='primary' borderRadius='md' boxShadowSize={'md'} />
 const myText = <Text regular align={'center'} textAlign={'center'} /> // $ExpectType Element
 const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
@@ -138,9 +132,7 @@ const myInputGroup = (
 )
 
 // $ExpectType Element
-const myLink = (
-  <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
-)
+const myLink = <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
 // $ExpectType Element
 const myBadge = (
   <Badge color='primary' size='medium' m={1} p={2}>
@@ -148,9 +140,7 @@ const myBadge = (
   </Badge>
 )
 // $ExpectType Element
-const myBlockLink = (
-  <BlockLink color='secondary' variation='outline' dsRef={() => 'ima ref'} />
-)
+const myBlockLink = <BlockLink color='secondary' variation='outline' dsRef={() => 'ima ref'} />
 // $ExpectType Element
 const myButton = (
   <Button
@@ -165,13 +155,7 @@ const myButton = (
   </Button>
 )
 // $ExpectType Element
-const myCloseButton = (
-  <CloseButton
-    color='background.darkest'
-    onClick={() => 'ima function'}
-    title='Title'
-  />
-)
+const myCloseButton = <CloseButton color='background.darkest' onClick={() => 'ima function'} title='Title' />
 // $ExpectType Element
 const myIcon = (
   <Icon
@@ -231,25 +215,13 @@ const myRatingBadge = (
 // $ExpectType Element
 const myStepper = (
   <Stepper className={'my-class'}>
-    <Stepper.Step
-      className={'step'}
-      onClick={() => 'clicked!'}
-      active
-      completed={false}
-    />
+    <Stepper.Step className={'step'} onClick={() => 'clicked!'} active completed={false} />
     <Stepper.Step />
   </Stepper>
 )
 // $ExpectType Element
 const myToggleBadge = (
-  <ToggleBadge
-    color='primary'
-    fontSize={0}
-    m={1}
-    p={2}
-    selected={false}
-    unSelectedBg='transparent'
-  >
+  <ToggleBadge color='primary' fontSize={0} m={1} p={2} selected={false} unSelectedBg='transparent'>
     ToggleBadge
   </ToggleBadge>
 )
@@ -257,28 +229,14 @@ const myToggleBadge = (
 const myTruncate = <Truncate color='primary' /> // $ExpectType Element
 const mySrOnly = <SrOnly className='test-class-stuff' /> // $ExpectType Element
 // $ExpectType Element
-const myImage = (
-  <Image height={'50px'} width={[1, 1 / 2]} alt={'image'} src={'cat.jpg'} />
-)
+const myImage = <Image height={'50px'} width={[1, 1 / 2]} alt={'image'} src={'cat.jpg'} />
 // $ExpectType Element
 const myBackgroundImage = (
-  <BackgroundImage
-    height={'50px'}
-    width={[1, 1 / 2]}
-    variation={'static'}
-    image={'cat.jpg'}
-  />
+  <BackgroundImage height={'50px'} width={[1, 1 / 2]} variation={'static'} image={'cat.jpg'} />
 )
 // $ExpectType Element
 const myPlaceholderImage = (
-  <PlaceholderImage
-    alt={'Alt text'}
-    height={'50px'}
-    width={'25px'}
-    chooseSrc={'1'}
-    ariaHidden={false}
-    blur
-  />
+  <PlaceholderImage alt={'Alt text'} height={'50px'} width={'25px'} chooseSrc={'1'} ariaHidden={false} blur />
 )
 // $ExpectType Element
 const myAvatar = (
@@ -305,13 +263,7 @@ const myContainer = <Container maxWidth={100} /> // $ExpectType Element
 const myDivider = <Divider color='primary' borderColor='secondary' /> // $ExpectType Element
 const myFlag = <Flag color='primary' width={100} /> // $ExpectType Element
 // $ExpectType Element
-const myHug = (
-  <Hug
-    icon={<Icon name='Calendar' title='Choose date' />}
-    iconDisplay='none'
-    text='Text'
-  />
-)
+const myHug = <Hug icon={<Icon name='Calendar' title='Choose date' />} iconDisplay='none' text='Text' />
 const myStamp = <Stamp variation='outline' size='small' /> // $ExpectType Element
 // $ExpectType Element
 const myToolip = <Tooltip zIndex={1} bottom top center={false} left right />
