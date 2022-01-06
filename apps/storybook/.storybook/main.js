@@ -6,4 +6,9 @@ module.exports = {
     'storybook-addon-jsx',
   ],
   stories: ['../../../packages/*/src/**/*.stories.js'],
+  framework: '@storybook/react',
+  features: {
+    postcss: false,
+    storyStoreV7: true,
+  },
 }
