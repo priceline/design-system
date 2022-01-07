@@ -44,8 +44,8 @@ exports[`Input it renders 1`] = `
 
 .c0:focus {
   outline: 0;
-  border-color: #0068EF;
-  box-shadow: 0 0 0 2px #0068EF;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
 }
 
 @media screen and (min-width:40em) {
@@ -113,8 +113,8 @@ exports[`Input it renders an input element with a really large padding and margi
 
 .c0:focus {
   outline: 0;
-  border-color: #0068EF;
-  box-shadow: 0 0 0 2px #0068EF;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
 }
 
 @media screen and (min-width:40em) {
@@ -248,8 +248,8 @@ exports[`Input it renders an input element with large text 1`] = `
 
 .c0:focus {
   outline: 0;
-  border-color: #0068EF;
-  box-shadow: 0 0 0 2px #0068EF;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
 }
 
 <input

@@ -5,7 +5,7 @@ exports[`BlockLink renders 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #0068EF;
+  color: #0068ef;
   display: block;
   color: inherit;
   -webkit-text-decoration: none;

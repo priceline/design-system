@@ -39,7 +39,7 @@ exports[`Radio Disabled, rendering 1`] = `
 }
 
 .c1:checked ~ svg {
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1:disabled ~ svg {
@@ -97,7 +97,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c0:hover > svg {
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1 {
@@ -125,7 +125,7 @@ exports[`Radio Not Selected, rendering 1`] = `
 }
 
 .c1:checked ~ svg {
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1:disabled ~ svg {
@@ -209,7 +209,7 @@ exports[`Radio Selected, rendering 1`] = `
 }
 
 .c1:checked ~ svg {
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1:disabled ~ svg {

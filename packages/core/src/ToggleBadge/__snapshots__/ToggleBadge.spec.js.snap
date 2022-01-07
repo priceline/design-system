@@ -9,7 +9,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   font-family: inherit;
   cursor: pointer;
   background-color: #e8f2ff;
-  color: #0068EF;
+  color: #0068ef;
   margin-top: 4px;
   margin-bottom: 4px;
   margin-left: 4px;
@@ -75,7 +75,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   font-family: inherit;
   cursor: pointer;
   background-color: transparent;
-  color: #0068EF;
+  color: #0068ef;
   margin-top: 4px;
   margin-bottom: 4px;
   margin-left: 4px;

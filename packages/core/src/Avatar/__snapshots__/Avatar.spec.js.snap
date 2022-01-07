@@ -25,7 +25,7 @@ exports[`Avatar renders default 1`] = `
   width: 40px;
   height: 40px;
   padding: 8px;
-  background-color: #0068EF;
+  background-color: #0068ef;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -91,7 +91,7 @@ exports[`Avatar renders initials 1`] = `
   width: 40px;
   height: 40px;
   padding: 8px;
-  background-color: #0068EF;
+  background-color: #0068ef;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -168,7 +168,7 @@ exports[`Avatar renders mr elon 1`] = `
   width: 40px;
   height: 40px;
   padding: 8px;
-  background-color: #0068EF;
+  background-color: #0068ef;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;

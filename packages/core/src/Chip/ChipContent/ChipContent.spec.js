@@ -50,7 +50,7 @@ describe('ChipContent', () => {
 
   test('selected, sm', () => {
     const { getByTestId } = render(<ChipContent {...{ ...props, selected: true, size: 'sm' }} />)
-    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('border', '1px solid #0068EF')
+    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('border', '1px solid #0068ef')
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('cursor', 'pointer')
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('padding-left', '8px')
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('height', '32px')

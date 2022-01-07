@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Expand color palette with new tint, tone and shade hues",
+      "type": "patch",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "steven.dalonzo@priceline.com"
+}

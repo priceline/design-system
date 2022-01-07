@@ -2,12 +2,12 @@
 
 exports[`Stepper renders with children 1`] = `
 .c4 {
-  color: #0068EF;
+  color: #0068ef;
   font-size: 14px;
 }
 
 .c5 {
-  color: #0068EF;
+  color: #0068ef;
   font-weight: 700;
   font-size: 14px;
 }
@@ -24,7 +24,7 @@ exports[`Stepper renders with children 1`] = `
   line-height: 1;
   margin-right: 4px;
   width: 16px;
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c3 {
@@ -47,14 +47,14 @@ exports[`Stepper renders with children 1`] = `
   border-style: solid;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #0068EF;
+  background-color: #0068ef;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068EF;
+  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;
