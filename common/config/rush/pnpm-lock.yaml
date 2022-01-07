@@ -208,7 +208,6 @@ importers:
       pure-react-carousel: ^1.27.8
       react: ^17.0.2
       react-dom: ^17.0.2
-      react-test-renderer: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
       typescript: ^4.5.4
@@ -229,7 +228,7 @@ importers:
       '@storybook/react': 6.4.9_3b4803415c815d82762d7e0b86e8d264
       '@testing-library/jest-dom': 5.16.1
       '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
-      '@testing-library/react-hooks': 7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
+      '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
       cross-env: 7.0.3
       eslint: 8.6.0
       jest: 26.6.3
@@ -239,7 +238,6 @@ importers:
       pcln-design-system: link:../core
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      react-test-renderer: 17.0.2_react@17.0.2
       rimraf: 3.0.2
       styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
       typescript: 4.5.4
@@ -5510,6 +5508,28 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       react-error-boundary: 3.1.4_react@17.0.2
       react-test-renderer: 17.0.2_react@17.0.2
+    dev: true
+
+  /@testing-library/react-hooks/7.0.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-dYxpz8u9m4q1TuzfcUApqi8iFfR6R0FaMbr2hjZJy1uC8z+bO/K4v8Gs9eogGKYQop7QsrBTFkv/BCF7MzD2Cg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+      react-test-renderer: '>=16.9.0'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-test-renderer:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.16.7
+      '@types/react': 17.0.38
+      '@types/react-dom': 17.0.11
+      '@types/react-test-renderer': 17.0.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-error-boundary: 3.1.4_react@17.0.2
     dev: true
 
   /@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2:
