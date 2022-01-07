@@ -11,4 +11,7 @@ module.exports = {
     postcss: false,
     storyStoreV7: true,
   },
+  core: {
+    builder: 'webpack5',
+  },
 }

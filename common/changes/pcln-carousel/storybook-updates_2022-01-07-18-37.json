@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "upgrade Storybook dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

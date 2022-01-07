@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "upgrade Storybook dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
