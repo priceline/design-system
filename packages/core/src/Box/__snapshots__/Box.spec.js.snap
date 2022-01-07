@@ -12,7 +12,7 @@ exports[`Box boxShadowSize prop sets box-shadow 1`] = `
 
 exports[`Box color prop sets color 1`] = `
 .c0 {
-  color: #0068EF;
+  color: #0068ef;
 }
 
 <div

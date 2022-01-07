@@ -1,6 +1,7 @@
 import { createTextStyles } from '../utils/createTextStyles'
 import { createColorStyles } from '../utils/createColorStyles'
 import { createMediaQueries } from '../utils/createMediaQueries'
+import { colors } from './colors'
 
 const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
@@ -12,6 +13,7 @@ const addAliases = (arr, aliases) =>
     })
   )
 
+export { colors }
 export const breakpoints = [32, 40, 48, 64, 80].map((n) => n + 'em')
 
 export const mediaQueries = createMediaQueries(breakpoints)
@@ -49,69 +51,6 @@ const letterSpacings = {
   normal: 'normal',
   caps: '0.025em',
 }
-
-// color palette
-const black = '#000'
-const white = '#fff'
-const text = '#001833'
-const lightBlue = '#e8f2ff'
-const blue = '#0068EF'
-const darkBlue = '#049'
-const lightGray = '#f4f6f8'
-const buttonGray = '#edf0f3'
-const borderGray = '#c0cad5'
-const gray = '#4f6f8f'
-const darkGray = '#364049'
-const lightGreen = '#ecf7ec'
-const green = '#0a0'
-const darkGreen = '#060'
-const lightRed = '#fbebeb'
-const red = '#c00'
-const darkRed = '#800'
-const orange = '#f68013'
-const darkOrange = '#f06f20'
-const lightOrange = '#fef2e7'
-const lightPurple = '#f5ebfa'
-const purple = '#70b'
-const yellow = '#fedc2a'
-const lightYellow = '#fff3c0'
-const pink = '#fe3e81'
-
-// deprecated aliases
-const darkPurple = purple
-
-const colors = {
-  black,
-  white,
-  text,
-  blue,
-  lightBlue,
-  darkBlue,
-  gray,
-  lightGray,
-  buttonGray,
-  borderGray,
-  darkGray,
-  green,
-  lightGreen,
-  darkGreen,
-  red,
-  lightRed,
-  darkRed,
-  orange,
-  darkOrange,
-  lightOrange,
-  purple,
-  lightPurple,
-  yellow,
-  lightYellow,
-  pink,
-
-  // deprecated
-  darkPurple,
-}
-
-export { colors }
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]

@@ -11,7 +11,7 @@
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
   "rushVersion": "5.58.0",
-  "pnpmVersion": "6.24.4",
+  "pnpmVersion": "6.25.0",
 
   /**
    * Options that are only used when the PNPM package manager is selected

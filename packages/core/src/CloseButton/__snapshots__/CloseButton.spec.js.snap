@@ -27,7 +27,7 @@ exports[`CloseButton renders without props 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
-  background-color: #0068EF;
+  background-color: #0068ef;
   color: #fff;
   padding: 0;
   background-color: transparent;

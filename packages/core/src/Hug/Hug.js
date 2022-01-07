@@ -60,7 +60,7 @@ Hug.propTypes = {
   icon: PropTypes.node,
   text: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node), PropTypes.string]),
   color: deprecatedColorValue(),
-  borderWidth: PropTypes.string,
+  borderWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 }
 

@@ -6,7 +6,7 @@ exports[`Link should add rel="noopener" when target="_blank" 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1:hover {
@@ -46,7 +46,7 @@ exports[`Link should not add rel="noopener" when target is not "_blank" 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1:hover {
@@ -84,7 +84,7 @@ exports[`Link should render correctly with no props without throwing 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #0068EF;
+  color: #0068ef;
 }
 
 .c1:hover {

@@ -43,7 +43,7 @@ exports[`pcln-slider RangeSlider 1`] = `
   position: absolute;
   left: 0;
   border-radius: 9999px;
-  background-color: #0068EF;
+  background-color: #0068ef;
 }
 
 .c1 .rc-slider-handle {
@@ -53,7 +53,7 @@ exports[`pcln-slider RangeSlider 1`] = `
   cursor: -moz-grab;
   cursor: grab;
   border-radius: 9999px;
-  border: solid 4px #0068EF;
+  border: solid 4px #0068ef;
   background-color: #fff;
   touch-action: pan-x;
 }
@@ -158,7 +158,7 @@ exports[`pcln-slider Slider 1`] = `
   position: absolute;
   left: 0;
   border-radius: 9999px;
-  background-color: #0068EF;
+  background-color: #0068ef;
 }
 
 .c1 .rc-slider-handle {
@@ -168,7 +168,7 @@ exports[`pcln-slider Slider 1`] = `
   cursor: -moz-grab;
   cursor: grab;
   border-radius: 9999px;
-  border: solid 4px #0068EF;
+  border: solid 4px #0068ef;
   background-color: #fff;
   touch-action: pan-x;
 }

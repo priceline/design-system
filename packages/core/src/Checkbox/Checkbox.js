@@ -33,10 +33,10 @@ const CheckBoxWrapper = styled.div`
   position: relative;
   vertical-align: middle;
   padding: 2px;
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? `default` : `pointer`)};
   background-color: inherit;
   color: ${(props) =>
-    props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('border.light')(props)};
+    props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('border.dark')(props)};
 
   svg {
     border: 1px solid transparent;

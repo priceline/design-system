@@ -1,4 +1,5 @@
 export * from './utils'
+export * from './createPalette'
 
 export { createColorStyles } from './createColorStyles'
 export { createTextStyles } from './createTextStyles'
