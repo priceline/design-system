@@ -13,7 +13,14 @@ import {
   width,
 } from 'styled-system'
 
-import { applyVariations, color, deprecatedColorValue, deprecatedPropType, boxShadow } from '../utils'
+import {
+  applyBorderRadius,
+  applyVariations,
+  color,
+  deprecatedColorValue,
+  deprecatedPropType,
+  boxShadow,
+} from '../utils'
 
 const Box = styled.div`
   ${applyVariations('Box')}
@@ -22,6 +29,8 @@ const Box = styled.div`
   ${textAlign} ${width} 
   ${boxShadow}
   ${color}
+
+  ${applyBorderRadius}
 `
 
 Box.displayName = 'Box'

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "implement borderRadius/rounded props",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

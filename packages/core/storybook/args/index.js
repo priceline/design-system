@@ -14,6 +14,34 @@ export const colors = [
   'promoSecondary',
   'border',
   'background',
+  'highlight',
+]
+
+export const borderRadii = [
+  'none',
+  'xsm',
+  'sm',
+  'md',
+  'lg',
+  'xl',
+  '2xl',
+  '3xl',
+  'full',
+  'action-sm',
+  'action-md',
+  'action-lg',
+]
+
+export const rounded = [
+  '',
+  'top',
+  'right',
+  'bottom',
+  'left',
+  'topLeft',
+  'topRight',
+  'bottomRight',
+  'bottomLeft',
 ]
 
 export const spaceArgs = [

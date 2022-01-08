@@ -28,7 +28,7 @@ const ColorCard = (props) => (
 )
 
 export default {
-  title: 'Color',
+  title: 'Design / Color',
 }
 
 export const Palette = () => (
