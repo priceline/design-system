@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Text } from '..'
 
-import { argTypes, defaultArgs } from './BorderRadius.stories.args'
+import { argTypes, defaultArgs, borderRadiusArgType } from './BorderRadius.stories.args'
 import { rounded } from '../../storybook/args'
 
 export default {
@@ -22,11 +22,11 @@ export default {
 const Template = (args) => {
   return (
     <Box width='100%'>
-      {rounded.map((round) => {
+      {['round', ...rounded].map((round) => {
         return round ? (
-          <Box key={round} m={3} display='inline-block'>
+          <Box key={round} m={4} display='inline-block'>
             <Box {...args} rounded={round}></Box>
-            <Text lineHeight={args.height} verticalAlign='middle' textAlign='center'>
+            <Text my={3} textAlign='center'>
               {round}
             </Text>
           </Box>
@@ -37,3 +37,13 @@ const Template = (args) => {
 }
 
 export const BorderRadiusDemo = Template.bind({})
+BorderRadiusDemo.argTypes = {
+  ...argTypes,
+  borderRadius: borderRadiusArgType,
+}
+
+export const ResponsiveDemo = Template.bind({})
+ResponsiveDemo.args = {
+  ...defaultArgs,
+  borderRadius: ['lg', 'xl', '2xl', '3xl', 'full'],
+}

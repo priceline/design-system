@@ -50,17 +50,17 @@ BoxShadowsWithFocused2PxBorder.story = {
 
 export const BoxShadowsWithVaryingBorderRadii = () => (
   <Box>
-    <Card boxShadowSize='sm' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius={0}>
-      Small Shadow - 0px
+    <Card boxShadowSize='sm' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius='xsm'>
+      xsm (2px)
     </Card>
-    <Card boxShadowSize='md' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius={10}>
-      Medium Shadow - 10px
+    <Card boxShadowSize='md' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius='md'>
+      md (8px)
     </Card>
-    <Card boxShadowSize='lg' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius={20}>
-      Large Shadow - 20px
+    <Card boxShadowSize='lg' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius='xl'>
+      xl (16px)
     </Card>
-    <Card boxShadowSize='xl' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius='30px'>
-      XLarge Shadow - 30px
+    <Card boxShadowSize='xl' m={4} p={4} width={1 / 2} color='black' bg='white' borderRadius='3xl'>
+      3xl (32px)
     </Card>
   </Box>
 )

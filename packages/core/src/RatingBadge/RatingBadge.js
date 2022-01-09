@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { fontWeight, borderRadius } from 'styled-system'
+import { fontWeight } from 'styled-system'
 import { Box } from '../Box'
 import { deprecatedPropType } from '../utils'
 
@@ -27,7 +27,7 @@ const RatingBadge = styled(Box).attrs(({ color, bg }) => ({
 }))`
   display: inline-block;
   line-height: 1.5;
-  ${fontWeight} ${borderRadius};
+  ${fontWeight};
 `
 
 RatingBadge.defaultProps = {
@@ -35,12 +35,11 @@ RatingBadge.defaultProps = {
   px: 2,
   color: 'alert',
   bg: 'orange',
-  borderRadius: 1,
+  borderRadius: 'xsm',
 }
 
 RatingBadge.propTypes = {
   ...fontWeight.propTypes,
-  ...borderRadius.propTypes,
   bg: deprecatedPropType('color'),
   color: PropTypes.string,
 }

@@ -7,10 +7,10 @@ exports[`RatingBadge renders 1`] = `
   padding-right: 8px;
   background-color: #f68013;
   color: #fff;
+  border-radius: 2px;
   display: inline-block;
   line-height: 1.5;
   font-weight: 700;
-  border-radius: 2px;
 }
 
 .c0 {

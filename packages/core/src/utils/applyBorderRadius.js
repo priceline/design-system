@@ -1,40 +1,49 @@
-export function applyBorderRadius({ borderRadius, rounded, theme }) {
-  if (!borderRadius) {
-    return ``
-  }
+function calculateRoundedProps(radius, rounded) {
+  let topRight = 0,
+    bottomRight = 0,
+    bottomLeft = 0,
+    topLeft = 0
 
-  const radius = theme.borderRadii[borderRadius]
-
-  if (!radius) {
-    return ``
-  }
-
-  if (!rounded) {
-    return `border-radius: ${radius};`
-  }
-
-  let topRightRadius = 0,
-    bottomRightRadius = 0,
-    bottomLeftRadius = 0,
-    topLeftRadius = 0
-
-  if (rounded === 'top') {
-    topLeftRadius = topRightRadius = radius
+  if (!rounded || rounded === 'round') {
+    return radius
+  } else if (rounded === 'top') {
+    topLeft = topRight = radius
   } else if (rounded === 'right') {
-    topRightRadius = bottomRightRadius = radius
+    topRight = bottomRight = radius
   } else if (rounded === 'bottom') {
-    bottomRightRadius = bottomLeftRadius = radius
+    bottomRight = bottomLeft = radius
   } else if (rounded === 'left') {
-    topLeftRadius = bottomLeftRadius = radius
+    topLeft = bottomLeft = radius
   } else if (rounded === 'topLeft') {
-    topLeftRadius = radius
+    topLeft = radius
   } else if (rounded === 'topRight') {
-    topRightRadius = radius
+    topRight = radius
   } else if (rounded === 'bottomRight') {
-    bottomRightRadius = radius
+    bottomRight = radius
   } else if (rounded === 'bottomLeft') {
-    bottomLeftRadius = radius
+    bottomLeft = radius
   }
 
-  return `border-radius: ${topLeftRadius} ${topRightRadius} ${bottomRightRadius} ${bottomLeftRadius};`
+  return `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`
+}
+
+export function borderRadiusAttrs({ borderRadius, rounded, theme }) {
+  if (!borderRadius) {
+    return {}
+  }
+
+  if (Array.isArray(borderRadius)) {
+    const effectiveRadius = borderRadius.map((radius) => theme.borderRadii[radius])
+    const radii = effectiveRadius.map((radius) =>
+      radius ? calculateRoundedProps(radius, rounded) : undefined
+    )
+
+    return {
+      borderRadius: radii,
+    }
+  } else {
+    const effectiveRadius = theme.borderRadii[borderRadius]
+
+    return { borderRadius: effectiveRadius ? calculateRoundedProps(effectiveRadius, rounded) : undefined }
+  }
 }

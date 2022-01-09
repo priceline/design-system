@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
+  borderRadius,
   display,
   height,
   maxHeight,
@@ -14,7 +15,7 @@ import {
 } from 'styled-system'
 
 import {
-  applyBorderRadius,
+  borderRadiusAttrs,
   applyVariations,
   color,
   deprecatedColorValue,
@@ -22,7 +23,7 @@ import {
   boxShadow,
 } from '../utils'
 
-const Box = styled.div`
+const Box = styled.div.attrs(borderRadiusAttrs)`
   ${applyVariations('Box')}
   ${display} ${height} ${maxHeight} ${maxWidth}
   ${minHeight} ${minWidth} ${size} ${space} 
@@ -30,7 +31,7 @@ const Box = styled.div`
   ${boxShadow}
   ${color}
 
-  ${applyBorderRadius}
+  ${borderRadius}
 `
 
 Box.displayName = 'Box'

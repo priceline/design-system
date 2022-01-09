@@ -18,6 +18,7 @@ export const colors = [
 ]
 
 export const borderRadii = [
+  '',
   'none',
   'xsm',
   'sm',
@@ -30,6 +31,7 @@ export const borderRadii = [
   'action-sm',
   'action-md',
   'action-lg',
+  'NOTVALID',
 ]
 
 export const rounded = [
@@ -42,6 +44,7 @@ export const rounded = [
   'topRight',
   'bottomRight',
   'bottomLeft',
+  'NOTVALID',
 ]
 
 export const spaceArgs = [
