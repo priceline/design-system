@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Stamp, Text } from '..'
+import { argTypes } from './Stamp.stories.args'
 import { Pin as PinIcon } from 'pcln-icons'
 
 // for Args
@@ -43,7 +44,13 @@ export default {
       },
     },
   },
+  argTypes,
 }
+
+const Template = (args) => <Stamp {...args}>text here</Stamp>
+
+export const StampComponent = Template.bind({})
+StampComponent.args = { color: 'primary' }
 
 export const CustomBackgroundAndBorderColor = () => (
   <div>

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Use new borderRadii from theme",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

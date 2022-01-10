@@ -65,6 +65,7 @@ export {
   getTextColorOn,
   hasPaletteColor,
   createTheme,
+  borderRadiusAttrs,
 } from './utils'
 
 export * from './theme'

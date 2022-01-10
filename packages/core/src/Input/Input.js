@@ -1,18 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, fontSize, themeGet } from 'styled-system'
+import { space, fontSize, borderRadius } from 'styled-system'
 import PropTypes from 'prop-types'
 import { Text } from '../Text'
-import { applyVariations, getPaletteColor, borders, deprecatedColorValue } from '../utils'
+import { applyVariations, getPaletteColor, borders, deprecatedColorValue, borderRadiusAttrs } from '../utils'
 
-const StyledInput = styled.input`
+const StyledInput = styled.input.attrs(borderRadiusAttrs)`
   appearance: none;
   display: block;
   width: 100%;
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: ${themeGet('radius')};
   border-width: 1px;
   border-style: solid;
 
@@ -32,7 +31,7 @@ const StyledInput = styled.input`
   }
 
   ${applyVariations('Input')}
-  ${borders} ${space} ${fontSize};
+  ${borders} ${space} ${fontSize} ${borderRadius};
 `
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
@@ -63,6 +62,7 @@ Input.displayName = 'Input'
 Input.isField = true
 Input.defaultProps = {
   fontSize: [2, null, 1],
+  borderRadius: 'lg',
 }
 Input.propTypes = {
   id: PropTypes.string.isRequired,

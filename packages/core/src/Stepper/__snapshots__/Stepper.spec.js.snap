@@ -45,6 +45,7 @@ exports[`Stepper renders with children 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;

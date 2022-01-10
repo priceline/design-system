@@ -1,15 +1,15 @@
 import React, { memo, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Button, Flex, getPaletteColor } from 'pcln-design-system'
+import { Button, Flex, getPaletteColor, borderRadiusAttrs } from 'pcln-design-system'
+import { borderRadius } from 'styled-system'
 import { Check as CheckIcon } from 'pcln-icons'
 
-const MenuButton = styled(Button)`
+const MenuButton = styled(Button).attrs(borderRadiusAttrs)`
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid transparent;
-  border-radius: 6px;
   color: ${getPaletteColor('text.dark')};
   outline: none;
   padding: 12px;
@@ -22,6 +22,8 @@ const MenuButton = styled(Button)`
     props.selected
       ? `background-color: ${getPaletteColor('background.base')(props)};`
       : `background-color: ${getPaletteColor('background.lightest')(props)};`}
+
+  ${borderRadius};
 `
 
 const MenuItem = React.forwardRef(function MenuItem(
@@ -41,6 +43,7 @@ const MenuItem = React.forwardRef(function MenuItem(
       aria-selected={selected}
       selected={selected}
       onClick={handleClick}
+      borderRadius='lg'
       {...props}
     >
       <Flex alignItems='center'>{children}</Flex>

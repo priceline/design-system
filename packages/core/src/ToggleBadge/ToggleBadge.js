@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize } from 'styled-system'
-import { applyVariations, getPaletteColor, deprecatedColorValue, deprecatedPropType } from '../utils'
+import { space, fontSize, borderRadius } from 'styled-system'
+import {
+  applyVariations,
+  getPaletteColor,
+  deprecatedColorValue,
+  deprecatedPropType,
+  borderRadiusAttrs,
+} from '../utils'
 
-const ToggleBadge = styled.button`
+const ToggleBadge = styled.button.attrs(borderRadiusAttrs)`
   border-radius: ${(props) => props.theme.radius};
   border: 0;
   display: inline-block;
@@ -17,7 +23,7 @@ const ToggleBadge = styled.button`
     background-color: ${(props) => getPaletteColor(props.bg || props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
-  ${space} ${fontSize};
+  ${space} ${fontSize} ${borderRadius};
 `
 
 ToggleBadge.displayName = 'ToggleBadge'
@@ -31,6 +37,7 @@ ToggleBadge.propTypes = {
 }
 
 ToggleBadge.defaultProps = {
+  borderRadius: 'full',
   selected: false,
   px: 2,
   py: 1,

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Use new borderRadii from theme",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

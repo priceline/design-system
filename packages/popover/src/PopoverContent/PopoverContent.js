@@ -116,9 +116,14 @@ class PopoverContent extends Component {
                 {(theme) => (
                   <ThemeProvider theme={theme}>
                     <ContentContainer ref={contentRef} {...styleProps} tabIndex='-1'>
-                      <Content color={color} data-testid='dialog-content' id={`popover-description-${idx}`}>
+                      <Box
+                        color={color}
+                        data-testid='dialog-content'
+                        id={`popover-description-${idx}`}
+                        borderRadius='xl'
+                      >
                         {content}
-                      </Content>
+                      </Box>
                     </ContentContainer>
                   </ThemeProvider>
                 )}
@@ -159,14 +164,10 @@ const ContentContainer = styled.section`
   box-shadow: 0 0 0 1px ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
     0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08), 0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${themeGet('fontSizes.0')}px;
-  border-radius: ${themeGet('radius')};
+  border-radius: ${themeGet('borderRadii.xl')};
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
-`
-
-const Content = styled(Box)`
-  border-radius: ${themeGet('radius')};
 `
 
 PopoverContent.propTypes = {

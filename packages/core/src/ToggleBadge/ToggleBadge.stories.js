@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Button, ToggleBadge } from '..'
+import { argTypes } from './ToggleBadge.stories.args'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 
 export default {
@@ -13,9 +14,12 @@ export default {
       },
     },
   },
+  argTypes,
 }
 
-export const ToggleBadgeComponent = () => <ToggleBadge>ToggleBadge</ToggleBadge>
+const Template = (args) => <ToggleBadge {...args}>ToggleBadge</ToggleBadge>
+
+export const ToggleBadgeComponent = Template.bind({})
 
 export const Selected = () => <ToggleBadge selected>Selected - Badge</ToggleBadge>
 export const Unselected = () => <ToggleBadge>Un - Selected - Badge</ToggleBadge>

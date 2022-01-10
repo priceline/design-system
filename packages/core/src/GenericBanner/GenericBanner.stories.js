@@ -5,10 +5,12 @@ import { Warning, Rowing, Tea, Emoticon } from 'pcln-icons'
 import { Text } from '../Text'
 import styled from 'styled-components'
 import { getPaletteColor } from '../utils'
+import { argTypes } from './GenericBanner.stories.args'
 
 export default {
   title: 'GenericBanner',
   component: GenericBanner,
+  argTypes,
 }
 
 const UnderlinedLinkText = styled(Text)`
@@ -19,21 +21,20 @@ const UnderlinedLinkText = styled(Text)`
   }
 `
 
-export const basicBannerAllInline = () => (
-  <GenericBanner
-    p={3}
-    heading={
-      <Text.span fontWeight='bold' mr={1}>
-        COVID-19
-      </Text.span>
-    }
-    text={
-      <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>
-    }
-    iconLeft={<Warning />}
-    color='caution.light'
-  />
-)
+const Template = (args) => <GenericBanner {...args} />
+
+export const basicBannerAllInline = Template.bind({})
+basicBannerAllInline.args = {
+  p: 3,
+  heading: (
+    <Text.span fontWeight='bold' mr={1}>
+      COVID-19
+    </Text.span>
+  ),
+  text: <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>,
+  iconLeft: <Warning />,
+  color: 'caution.light',
+}
 
 export const basicBannerAllInlineRightIcon = () => (
   <GenericBanner

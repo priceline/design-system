@@ -17,7 +17,7 @@ const SelectBase = styled.select`
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: ${themeGet('radius')};
+  border-radius: ${themeGet('borderRadii.lg')};
   border-width: 1px;
   border-style: solid;
 

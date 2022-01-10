@@ -61,7 +61,7 @@ export function borderRadiusAttrs({ borderRadius, rounded, theme }) {
   if (Array.isArray(borderRadius)) {
     const effectiveRadius = borderRadius.map((radius) => theme.borderRadii[radius])
     const radii = effectiveRadius.map((radius) =>
-      radius ? calculateRoundedProps(radius, rounded) : undefined
+      radius ? calculateRoundedProps(radius, rounded) : borderRadius
     )
 
     return {
@@ -70,6 +70,6 @@ export function borderRadiusAttrs({ borderRadius, rounded, theme }) {
   } else {
     const effectiveRadius = theme.borderRadii[borderRadius]
 
-    return { borderRadius: effectiveRadius ? calculateRoundedProps(effectiveRadius, rounded) : undefined }
+    return { borderRadius: effectiveRadius ? calculateRoundedProps(effectiveRadius, rounded) : borderRadius }
   }
 }

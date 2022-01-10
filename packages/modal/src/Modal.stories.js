@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { action } from '@storybook/addon-actions'
 
-import { Modal, SmallModalHeader, ScrollLock } from '../src'
+import { Modal, SmallModalHeader, ScrollLock, ModalHeader } from '../src'
 import { Button } from 'pcln-design-system'
 
 const StyledModal = styled(Modal)`
@@ -74,32 +75,24 @@ WithSmallModalHeader.story = {
   name: 'With SmallModalHeader',
 }
 
-// export const WithModalHeaderAndScrollLock = () => {
-//   // Generate content to demonstrate a scrollable <body>
-//   const contentLines = [...Array(100).keys()]
+export const WithModalHeader = () => {
+  // Generate content to demonstrate a scrollable <body>
+  const contentLines = [...Array(100).keys()]
 
-//   return (
-//     <div>
-//       <h1>Scroll down to open modal</h1>
-//       {contentLines.map((i, idx) => (
-//         <div key={idx}>Line {idx}</div>
-//       ))}
-//       <ModalStory
-//         header={
-//           <ModalHeader title='Modal title' onClose={action('Modal closed!')} />
-//         }
-//         height={['90vh', '460px', '560px']}
-//         width={['80vw', '400px', '500px']}
-//         lock={true}
-//         fullScreen={boolean('fullScreen', false)}
-//       />
-//     </div>
-//   )
-// }
-
-// WithModalHeaderAndScrollLock.story = {
-//   name: 'With ModalHeader (and ScrollLock!)',
-// }
+  return (
+    <div>
+      <h1>Scroll down to open modal</h1>
+      {contentLines.map((i, idx) => (
+        <div key={idx}>Line {idx}</div>
+      ))}
+      <ModalStory
+        header={<ModalHeader title='Modal title' onClose={action('Modal closed!')} />}
+        height={['90vh', '460px', '560px']}
+        width={['80vw', '400px', '500px']}
+      />
+    </div>
+  )
+}
 
 export const WithOverflow = () => (
   <ModalStory header={<SmallModalHeader />} width={['80vw', '400px', '500px']} enableOverflow />

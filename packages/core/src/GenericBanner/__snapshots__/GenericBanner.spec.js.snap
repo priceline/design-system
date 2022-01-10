@@ -63,6 +63,7 @@ exports[`GenericBanner renders 1`] = `
   text-align: left;
   background-color: #0a0;
   color: #fff;
+  border-radius: 6px;
 }
 
 .c0 {
@@ -70,7 +71,6 @@ exports[`GenericBanner renders 1`] = `
 }
 
 .c2 {
-  border-radius: 6px;
   cursor: cursor;
 }
 

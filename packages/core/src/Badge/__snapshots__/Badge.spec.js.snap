@@ -2,7 +2,6 @@
 
 exports[`Badge bg blue sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -25,6 +24,7 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   background-color: #0068ef;
   color: #fff;
   background-color: #0068ef;
+  border-radius: 9999px;
 }
 
 <div
@@ -35,7 +35,6 @@ exports[`Badge bg blue sets background-color and color 1`] = `
 
 exports[`Badge bg green sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -58,6 +57,7 @@ exports[`Badge bg green sets background-color and color 1`] = `
   background-color: #0a0;
   color: #fff;
   background-color: #0a0;
+  border-radius: 9999px;
 }
 
 <div
@@ -68,7 +68,6 @@ exports[`Badge bg green sets background-color and color 1`] = `
 
 exports[`Badge bg lightBlue sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -91,6 +90,7 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   background-color: #e8f2ff;
   color: #049;
   background-color: #e8f2ff;
+  border-radius: 9999px;
 }
 
 <div
@@ -101,7 +101,6 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
 
 exports[`Badge bg lightGreen sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -124,6 +123,7 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   background-color: #ecf7ec;
   color: #060;
   background-color: #ecf7ec;
+  border-radius: 9999px;
 }
 
 <div
@@ -134,7 +134,6 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
 
 exports[`Badge bg lightRed sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -157,6 +156,7 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   background-color: #fbebeb;
   color: #800;
   background-color: #fbebeb;
+  border-radius: 9999px;
 }
 
 <div
@@ -167,7 +167,6 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
 
 exports[`Badge bg orange sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -190,6 +189,7 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   background-color: #f68013;
   color: #001833;
   background-color: #f68013;
+  border-radius: 9999px;
 }
 
 <div
@@ -200,7 +200,6 @@ exports[`Badge bg orange sets background-color and color 1`] = `
 
 exports[`Badge bg red sets background-color and color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -223,6 +222,7 @@ exports[`Badge bg red sets background-color and color 1`] = `
   background-color: #c00;
   color: #fff;
   background-color: #c00;
+  border-radius: 9999px;
 }
 
 <div
@@ -233,7 +233,6 @@ exports[`Badge bg red sets background-color and color 1`] = `
 
 exports[`Badge can escape preset: bg lightBlue sets background-color and color text sets color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -255,6 +254,7 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   padding-right: 8px;
   background-color: #e8f2ff;
   color: #001833;
+  border-radius: 9999px;
 }
 
 <div
@@ -266,7 +266,6 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
 
 exports[`Badge non-preset: bg text sets background-color and color white sets color 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -288,6 +287,7 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   padding-right: 8px;
   background-color: #001833;
   color: #fff;
+  border-radius: 9999px;
 }
 
 <div
@@ -299,7 +299,6 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
 
 exports[`Badge renders 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -321,6 +320,7 @@ exports[`Badge renders 1`] = `
   padding-right: 8px;
   background-color: #f4f6f8;
   color: #001833;
+  border-radius: 9999px;
 }
 
 <div
@@ -331,7 +331,6 @@ exports[`Badge renders 1`] = `
 
 exports[`Badge renders small 1`] = `
 .c0 {
-  border-radius: 99999px;
   display: inline-block;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
@@ -348,6 +347,7 @@ exports[`Badge renders small 1`] = `
   padding-right: 8px;
   background-color: #f4f6f8;
   color: #001833;
+  border-radius: 9999px;
 }
 
 <div

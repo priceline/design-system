@@ -38,7 +38,6 @@ exports[`FormField renders 1`] = `
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
@@ -48,6 +47,7 @@ exports[`FormField renders 1`] = `
   margin: 0;
   border-color: #c0cad5;
   font-size: 16px;
+  border-radius: 2px;
 }
 
 .c2::-webkit-input-placeholder {
@@ -190,7 +190,6 @@ exports[`FormField renders with Icon 1`] = `
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
@@ -201,6 +200,7 @@ exports[`FormField renders with Icon 1`] = `
   border-color: #c0cad5;
   padding-left: 40px;
   font-size: 16px;
+  border-radius: 2px;
 }
 
 .c5::-webkit-input-placeholder {
@@ -364,7 +364,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
@@ -375,6 +374,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   border-color: #c0cad5;
   padding-left: 40px;
   font-size: 16px;
+  border-radius: 2px;
 }
 
 .c5::-webkit-input-placeholder {

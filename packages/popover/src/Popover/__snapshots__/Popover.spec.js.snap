@@ -15,6 +15,7 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;
@@ -101,6 +102,12 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
 `;
 
 exports[`Popover UI Positioning Bottom 1`] = `
+.c3 {
+  background-color: #fff;
+  color: #001833;
+  border-radius: 2px;
+}
+
 .c1 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -192,12 +199,6 @@ exports[`Popover UI Positioning Bottom 1`] = `
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
-}
-
-.c3 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 2px;
 }
 
 <div
@@ -247,6 +248,12 @@ exports[`Popover UI Positioning Bottom 1`] = `
 `;
 
 exports[`Popover UI Positioning Bottom End 1`] = `
+.c3 {
+  background-color: #fff;
+  color: #001833;
+  border-radius: 2px;
+}
+
 .c1 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -338,12 +345,6 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
-}
-
-.c3 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 2px;
 }
 
 <div
@@ -393,6 +394,12 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 `;
 
 exports[`Popover UI Positioning Bottom Start 1`] = `
+.c3 {
+  background-color: #fff;
+  color: #001833;
+  border-radius: 2px;
+}
+
 .c1 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -484,12 +491,6 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
-}
-
-.c3 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 2px;
 }
 
 <div

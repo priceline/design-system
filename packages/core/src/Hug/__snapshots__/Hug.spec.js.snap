@@ -9,6 +9,7 @@ exports[`Hug renders text, icon, and Child 1`] = `[Function]`;
 exports[`Hug renders with border-radius from theme on top only 1`] = `
 .c1 {
   padding: 8px;
+  padding-left: 12px;
   background-color: #fff;
   color: #001833;
   display: -webkit-box;
@@ -28,10 +29,6 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
 .c0 {
   border-radius: 2px;
   border: 1px solid #fff;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
   overflow: hidden;
 }
 

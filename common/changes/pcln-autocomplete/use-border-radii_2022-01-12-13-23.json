@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "Use new borderRadii from theme",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}

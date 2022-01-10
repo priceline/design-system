@@ -82,6 +82,7 @@ exports[`ModalHeader render 1`] = `
   padding-right: 16px;
   background-color: #0a0;
   color: #fff;
+  border-radius: xl;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

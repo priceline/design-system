@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Flex, CloseButton, deprecatedPropType, Text } from 'pcln-design-system'
 
-const HeaderWrapper = styled(Flex)`
+const HeaderWrapper = styled(Flex).attrs(() => ({ borderRadius: 'xl', rounded: 'top' }))`
   height: 40px;
 `
 
