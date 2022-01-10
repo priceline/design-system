@@ -56,6 +56,21 @@ const letterSpacings = {
 export const radii = [0, 2, 6]
 export const radius = '2px'
 
+export const borderRadii = {
+  none: 'none',
+  xsm: '2px',
+  sm: '4px',
+  md: '8px',
+  lg: '12px',
+  xl: '16px',
+  '2xl': '24px',
+  '3xl': '32px',
+  full: '9999px',
+  'action-sm': '9999px',
+  'action-md': '9999px',
+  'action-lg': '12px',
+}
+
 export const maxContainerWidth = '1280px'
 
 // boxShadows
@@ -120,6 +135,7 @@ const theme = {
   textStyles,
   colors,
   colorStyles,
+  borderRadii,
   radii,
   radius,
   boxShadows,

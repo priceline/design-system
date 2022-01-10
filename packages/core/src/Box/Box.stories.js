@@ -40,18 +40,18 @@ Padding.args = {
 export const Height = Template.bind({})
 Height.args = {
   color: 'warning.base',
-  height: [250, 350, 450, 550],
-  width: [150, 250, 350, 450],
+  height: ['250px', '350px', '450px', '550px'],
+  width: ['150px', '250px', '350px', '450px'],
 }
 
 export const MaxAndMinValues = Template.bind({})
 MaxAndMinValues.storyName = 'Min and Max Values'
 MaxAndMinValues.args = {
   color: 'priceSecondary.base',
-  maxHeight: [300, null, 400, null, 500],
-  maxWidth: [300, null, 400, null, 500],
-  minHeight: [100, null, 200, null, 300],
-  minWidth: [300, null, 200, null, 100],
+  maxHeight: ['300px', null, '400px', null, '500px'],
+  maxWidth: ['300px', null, '400px', null, '500px'],
+  minHeight: ['100px', null, '200px', null, '300px'],
+  minWidth: ['300px', null, '200px', null, '100px'],
 }
 
 export const Margin = Template.bind({})
