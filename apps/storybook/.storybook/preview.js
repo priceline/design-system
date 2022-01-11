@@ -66,4 +66,9 @@ export const parameters = {
       ...INITIAL_VIEWPORTS,
     },
   },
+
+  controls: {
+    expanded: true,
+    sort: 'requiredFirst',
+  },
 }

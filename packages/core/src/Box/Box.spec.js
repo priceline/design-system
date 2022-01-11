@@ -47,7 +47,7 @@ describe('Box', () => {
   test('boxShadowSize prop sets box-shadow', () => {
     const json = rendererCreateWithTheme(<Box boxShadowSize='sm' />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('box-shadow', theme.boxShadows[0])
+    expect(json).toHaveStyleRule('box-shadow', theme.shadows.sm)
   })
 
   describe('deprecated prop types', () => {

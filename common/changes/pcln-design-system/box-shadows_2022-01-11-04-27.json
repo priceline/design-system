@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "implement boxShadowSize and boxShadowColor props, Storybook Args improvements",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

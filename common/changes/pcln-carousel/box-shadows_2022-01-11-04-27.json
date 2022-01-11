@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Storybook upgrades (re: colors/faker)",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

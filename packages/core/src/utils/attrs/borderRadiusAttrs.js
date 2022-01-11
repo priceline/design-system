@@ -1,3 +1,29 @@
+export const roundedValues = [
+  'top',
+  'right',
+  'bottom',
+  'left',
+  'topLeft',
+  'topRight',
+  'bottomRight',
+  'bottomLeft',
+]
+
+export const borderRadiusValues = [
+  'none',
+  'xsm',
+  'sm',
+  'md',
+  'lg',
+  'xl',
+  '2xl',
+  '3xl',
+  'full',
+  'action-sm',
+  'action-md',
+  'action-lg',
+]
+
 function calculateRoundedProps(radius, rounded) {
   let topRight = 0,
     bottomRight = 0,
