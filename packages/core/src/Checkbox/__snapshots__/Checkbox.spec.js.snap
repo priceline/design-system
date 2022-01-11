@@ -327,7 +327,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   padding: 2px;
   cursor: pointer;
   background-color: inherit;
-  color: #41484d;
+  color: #5e6872;
 }
 
 .c1 svg {

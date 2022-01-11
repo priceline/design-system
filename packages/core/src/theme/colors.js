@@ -74,7 +74,7 @@ const darkText = '#001023'
 const headingText = '#003c8a'
 
 // highlight
-const lightHighlight = '#ddf5c3'
+const lightHighlight = '#d0f1ac'
 const tintHighlight = '#b9ea85'
 const highlight = '#8cdd36'
 const toneHighlight = '#66be20'
@@ -84,11 +84,11 @@ const shadeHighlight = '#017000'
 // background
 const lightestBackground = white
 const lightBackground = '#f4f6f8'
-const tintBackground = '#95a9bc'
+const tintBackground = '#d5dce4'
 const background = buttonGray // '#4f6f8f'
-const toneBackground = '#374e64'
+const toneBackground = '#879db3'
 const darkBackground = gray // '#283848'
-const shadeBackground = '#18212b'
+const shadeBackground = '#354b60'
 const darkestBackground = '#001833'
 
 // border
@@ -96,7 +96,7 @@ const lightBorder = '#eceff2'
 const tintBorder = '#e0e5ea'
 const border = '#c0cad5'
 const toneBorder = '#868d95'
-const darkBorder = '#41484d'
+const darkBorder = '#5e6872'
 const shadeBorder = '#1a1d20'
 
 export const colors = {
