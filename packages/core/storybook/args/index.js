@@ -1,51 +1,12 @@
-export const colors = [
-  'primary',
-  'secondary',
-  'text',
-  'success',
-  'error',
-  'warning',
-  'alert',
-  'caution',
-  'notify',
-  'pricePrimary',
-  'priceSecondary',
-  'promoPrimary',
-  'promoSecondary',
-  'border',
-  'background',
-  'highlight',
-]
+import { borderRadiusValues, boxShadowSizeValues, paletteFamilies, roundedValues } from '../../src/utils'
 
-export const borderRadii = [
-  '',
-  'none',
-  'xsm',
-  'sm',
-  'md',
-  'lg',
-  'xl',
-  '2xl',
-  '3xl',
-  'full',
-  'action-sm',
-  'action-md',
-  'action-lg',
-  'NOTVALID',
-]
+export const colors = ['', ...paletteFamilies, 'NOTVALID']
 
-export const rounded = [
-  '',
-  'top',
-  'right',
-  'bottom',
-  'left',
-  'topLeft',
-  'topRight',
-  'bottomRight',
-  'bottomLeft',
-  'NOTVALID',
-]
+export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']
+
+export const rounded = ['', ...roundedValues, 'NOTVALID']
+
+export const shadows = ['', ...boxShadowSizeValues, 'NOTVALID']
 
 export const spaceArgs = [
   'm',
@@ -65,10 +26,10 @@ export const spaceArgs = [
 ].reduce((acc, prop) => {
   acc[prop] = {
     name: prop,
-    type: { name: 'string', required: false },
+    type: { name: 'string' },
     description: prop,
     table: {
-      defaultValue: { summary: undefined },
+      disable: true,
     },
   }
 

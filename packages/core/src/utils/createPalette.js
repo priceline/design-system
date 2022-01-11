@@ -1,5 +1,24 @@
 const deepmerge = require('deepmerge')
 
+export const paletteFamilies = [
+  'primary',
+  'secondary',
+  'text',
+  'highlight',
+  'success',
+  'error',
+  'warning',
+  'alert',
+  'caution',
+  'notify',
+  'pricePrimary',
+  'priceSecondary',
+  'promoPrimary',
+  'promoSecondary',
+  'border',
+  'background',
+]
+
 /**
  * Create the palette based on passed in theme
  *

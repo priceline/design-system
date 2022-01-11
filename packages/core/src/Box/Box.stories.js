@@ -19,7 +19,11 @@ export default {
   },
 }
 
-const Template = (args) => <Box {...args} />
+const Template = (args) => (
+  <Box {...args}>
+    <Text p={3}>Hello!</Text>
+  </Box>
+)
 
 export const _Box = Template.bind({})
 
@@ -67,10 +71,7 @@ Color.args = {
 
 export const BoxShadow = Template.bind({})
 BoxShadow.args = {
-  boxShadowSize: 'sm',
-  p: 2,
-  mb: '42px',
-  color: 'primary.base',
+  boxShadowSize: 'overlay-lg',
 }
 
 export const Size = Template.bind({})

@@ -25,7 +25,7 @@ const Template = (args) => {
       {['round', ...rounded].map((round) => {
         return round ? (
           <Box key={round} m={4} display='inline-block'>
-            <Box {...args} rounded={round}></Box>
+            <Box {...args} size='200px' p={3} rounded={round}></Box>
             <Text my={3} textAlign='center'>
               {round}
             </Text>

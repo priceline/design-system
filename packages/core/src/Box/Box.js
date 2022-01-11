@@ -8,6 +8,7 @@ import {
   maxWidth,
   minHeight,
   minWidth,
+  boxShadow,
   size,
   space,
   textAlign,
@@ -16,27 +17,36 @@ import {
 
 import {
   borderRadiusAttrs,
+  borderRadiusValues,
+  boxShadowAttrs,
+  boxShadowSizeValues,
   applyVariations,
   color,
   deprecatedColorValue,
   deprecatedPropType,
-  boxShadow,
+  paletteFamilies,
+  roundedValues,
 } from '../utils'
 
-const Box = styled.div.attrs(borderRadiusAttrs)`
+const Box = styled.div.attrs((props) => ({
+  ...borderRadiusAttrs(props),
+  ...boxShadowAttrs(props),
+}))`
   ${applyVariations('Box')}
   ${display} ${height} ${maxHeight} ${maxWidth}
   ${minHeight} ${minWidth} ${size} ${space} 
   ${textAlign} ${width} 
-  ${boxShadow}
   ${color}
 
   ${borderRadius}
+  ${boxShadow}
 `
 
 Box.displayName = 'Box'
 
 Box.propTypes = {
+  ...borderRadius.propTypes,
+  ...boxShadow.propTypes,
   ...display.propTypes,
   ...maxHeight.propTypes,
   ...maxWidth.propTypes,
@@ -47,7 +57,10 @@ Box.propTypes = {
   ...textAlign.propTypes,
   ...width.propTypes,
   bg: deprecatedPropType('color'),
-  boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  borderRadiusSize: PropTypes.oneOf(borderRadiusValues),
+  rounded: PropTypes.oneOf(roundedValues),
+  boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
+  boxShadowColor: PropTypes.oneOf(paletteFamilies),
   color: deprecatedColorValue(),
 }
 

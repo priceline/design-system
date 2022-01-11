@@ -17,11 +17,8 @@ export const argTypes = {
 
   size: {
     name: 'size',
-    type: { name: 'string', required: false },
+    type: { name: 'string' },
     description: 'size',
-    table: {
-      defaultValue: { summary: undefined },
-    },
   },
 }
 
@@ -30,13 +27,6 @@ export const borderRadiusArgType = {
   type: { name: 'string' },
   options: borderRadii,
   description: 'borderRadius',
-  table: {
-    type: {
-      summary: 'Border Radius',
-      detail: '- ' + borderRadii.join('\n- '),
-    },
-    defaultValue: { summary: 'full' },
-  },
   control: {
     type: 'select',
   },
