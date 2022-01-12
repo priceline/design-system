@@ -349,5 +349,124 @@ Object {
     "small": "60ms",
     "xLarge": "360ms",
   },
+  "typography": Object {
+    "article": Object {
+      "fontSize": "16px",
+      "fontWeight": 500,
+      "letterSpacing": "-0.1px",
+      "lineHeight": "28px",
+    },
+    "caption": Object {
+      "fontSize": "12px",
+      "fontWeight": 500,
+      "lineHeight": "16px",
+    },
+    "disclaimer": Object {
+      "fontSize": "11px",
+      "fontWeight": 500,
+      "letterSpacing": "0.2px",
+      "lineHeight": "16px",
+    },
+    "heading1": Object {
+      "fontSize": "40px",
+      "fontWeight": 700,
+      "lineHeight": "48px",
+    },
+    "heading2": Object {
+      "fontSize": "32px",
+      "fontWeight": 700,
+      "lineHeight": "40px",
+    },
+    "heading3": Object {
+      "fontSize": "24px",
+      "fontWeight": 700,
+      "lineHeight": "28px",
+    },
+    "heading4": Object {
+      "fontSize": "20px",
+      "fontWeight": 700,
+      "lineHeight": "24px",
+    },
+    "heading5": Object {
+      "fontSize": "16px",
+      "fontWeight": 700,
+      "lineHeight": "20px",
+    },
+    "heading6": Object {
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "lineHeight": "16px",
+    },
+    "highlight": Object {
+      "caps": true,
+      "fontSize": "10px",
+      "fontWeight": 500,
+      "letterSpacing": "0.2px",
+      "lineHeight": "12px",
+      "textTransform": "uppercase",
+    },
+    "overline": Object {
+      "fontSize": "12px",
+      "fontWeight": 700,
+      "letterSpacing": "1px",
+      "lineHeight": "16px",
+    },
+    "paragraph": Object {
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "letterSpacing": "-0.05px",
+      "lineHeight": "20px",
+    },
+    "subheading1": Object {
+      "fontSize": "40px",
+      "fontWeight": 500,
+      "lineHeight": "48px",
+    },
+    "subheading2": Object {
+      "fontSize": "40px",
+      "fontWeight": 500,
+      "lineHeight": "48px",
+    },
+    "subheading3": Object {
+      "fontSize": "24px",
+      "fontWeight": 500,
+      "lineHeight": "28px",
+    },
+    "subheading4": Object {
+      "fontSize": "20px",
+      "fontWeight": 500,
+      "lineHeight": "24px",
+    },
+    "subheading5": Object {
+      "fontSize": "16px",
+      "fontWeight": 500,
+      "lineHeight": "20px",
+    },
+    "subheading6": Object {
+      "fontSize": "14px",
+      "fontWeight": 500,
+      "lineHeight": "16px",
+    },
+    "subtitle1": Object {
+      "fontSize": "52px",
+      "fontWeight": 500,
+      "lineHeight": "64px",
+    },
+    "title1": Object {
+      "fontSize": "80px",
+      "fontWeight": 700,
+      "lineHeight": "96px",
+    },
+    "title2": Object {
+      "fontSize": "64px",
+      "fontWeight": 700,
+      "lineHeight": "80px",
+    },
+    "title3": Object {
+      "fontSize": "52px",
+      "fontWeight": 700,
+      "lineHeight": "64px",
+    },
+  },
 }
 `;

@@ -52,6 +52,126 @@ const letterSpacings = {
   caps: '0.025em',
 }
 
+export const typography = {
+  title1: {
+    fontWeight: 700,
+    fontSize: '80px',
+    lineHeight: '96px',
+  },
+  title2: {
+    fontWeight: 700,
+    fontSize: '64px',
+    lineHeight: '80px',
+  },
+  title3: {
+    fontWeight: 700,
+    fontSize: '52px',
+    lineHeight: '64px',
+  },
+  heading1: {
+    fontWeight: 700,
+    fontSize: '40px',
+    lineHeight: '48px',
+  },
+  heading2: {
+    fontWeight: 700,
+    fontSize: '32px',
+    lineHeight: '40px',
+  },
+  heading3: {
+    fontWeight: 700,
+    fontSize: '24px',
+    lineHeight: '28px',
+  },
+  heading4: {
+    fontWeight: 700,
+    fontSize: '20px',
+    lineHeight: '24px',
+  },
+  heading5: {
+    fontWeight: 700,
+    fontSize: '16px',
+    lineHeight: '20px',
+  },
+  heading6: {
+    fontWeight: 700,
+    fontSize: '14px',
+    lineHeight: '16px',
+  },
+  article: {
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: '28px',
+    letterSpacing: '-0.1px',
+  },
+  paragraph: {
+    fontWeight: 500,
+    fontSize: '14px',
+    lineHeight: '20px',
+    letterSpacing: '-0.05px',
+  },
+  caption: {
+    fontWeight: 500,
+    fontSize: '12px',
+    lineHeight: '16px',
+  },
+  overline: {
+    fontWeight: 700,
+    fontSize: '12px',
+    lineHeight: '16px',
+    letterSpacing: '1px',
+  },
+  disclaimer: {
+    fontWeight: 500,
+    fontSize: '11px',
+    lineHeight: '16px',
+    letterSpacing: '0.2px',
+  },
+  highlight: {
+    fontWeight: 500,
+    fontSize: '10px',
+    lineHeight: '12px',
+    letterSpacing: '0.2px',
+    textTransform: 'uppercase',
+    caps: true,
+  },
+  subtitle1: {
+    fontWeight: 500,
+    fontSize: '52px',
+    lineHeight: '64px',
+  },
+  subheading1: {
+    fontWeight: 500,
+    fontSize: '40px',
+    lineHeight: '48px',
+  },
+  subheading2: {
+    fontWeight: 500,
+    fontSize: '40px',
+    lineHeight: '48px',
+  },
+  subheading3: {
+    fontWeight: 500,
+    fontSize: '24px',
+    lineHeight: '28px',
+  },
+  subheading4: {
+    fontWeight: 500,
+    fontSize: '20px',
+    lineHeight: '24px',
+  },
+  subheading5: {
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: '20px',
+  },
+  subheading6: {
+    fontWeight: 500,
+    fontSize: '14px',
+    lineHeight: '16px',
+  },
+}
+
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
 export const radius = '2px'
@@ -143,6 +263,7 @@ const theme = {
   regular,
   bold,
   textStyles,
+  typography,
   colors,
   colorStyles,
   borderRadii,
