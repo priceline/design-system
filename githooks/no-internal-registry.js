@@ -3,7 +3,7 @@ const { readFileSync } = require('fs')
 
 function hasInternalRegistry(filePath) {
   const file = readFileSync(filePath)
-  return /https?:\/\/npm\.prod\.pcln\.com/.exec(file.toString())
+  return /^https?:\/\/npm\.prod\.pcln\.com/.exec(file.toString())
 }
 
 function getPackageLocks() {
