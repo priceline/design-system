@@ -26,6 +26,7 @@ import {
   deprecatedPropType,
   getPaletteColor,
   textAlignAttrs,
+  textStylesValues,
   typographyAttrs,
 } from '../utils'
 
@@ -127,6 +128,7 @@ Text.propTypes = {
   regular: PropTypes.bool,
   textDecoration: PropTypes.string,
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
+  textStyle: PropTypes.oneOf(textStylesValues),
 }
 
 Text.span = Span

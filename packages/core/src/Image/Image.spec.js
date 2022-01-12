@@ -1,6 +1,6 @@
 import React from 'react'
-import { render, screen } from 'testing-library'
-import { Image } from '..'
+import { render, screen } from '../../test/testing-library'
+import { Image, theme } from '..'
 
 const imageSrc =
   'https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg'
@@ -33,5 +33,22 @@ describe('Image', () => {
     const image = screen.getByAltText('new-zealand-image')
     expect(image).toHaveStyleRule('padding-top', '8px')
     expect(image).toHaveStyleRule('margin-top', '16px')
+  })
+
+  it('renders with box shadow', () => {
+    render(
+      <Image src={imageSrc} alt='new-zealand-image' boxShadowSize='overlay-lg' boxShadowColor='primary' />
+    )
+    const image = screen.getByAltText('new-zealand-image')
+    expect(image).toHaveStyleRule(
+      'box-shadow',
+      '0 8px 32px 0 rgb(0,68,153,0.24),0 8px 16px 0 rgba(0,0,0,0.2),0 24px 64px 0 rgba(0,0,0,0.2)'
+    )
+  })
+
+  it('renders with border radius', () => {
+    render(<Image src={imageSrc} alt='new-zealand-image' borderRadius='xsm' />)
+    const image = screen.getByAltText('new-zealand-image')
+    expect(image).toHaveStyleRule('border-radius', theme.borderRadii.xsm)
   })
 })
