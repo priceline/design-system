@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
-import { color, width, height } from 'styled-system'
+import { color, width, height, themeGet } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, deprecatedPropType, Flex } from 'pcln-design-system'
 
@@ -55,6 +55,8 @@ const Dialog = styled(DialogContent)`
   margin-left: auto;
   margin-right: auto;
   box-shadow: ${(props) => props.theme.boxShadows[3]};
+  overflow: hidden;
+  border-radius: ${themeGet('borderRadii.xl')};
   &:focus {
     outline: none;
   }
@@ -192,7 +194,12 @@ const Modal = ({
               >
                 <DialogInnerWrapper flexDirection='column'>
                   {header && <HeaderWrapper>{header}</HeaderWrapper>}
-                  <ContentWrapper p={imgMode ? 0 : 16} header={header} enableoverflow={enableOverflow}>
+                  <ContentWrapper
+                    borderRadius='xl'
+                    p={imgMode ? 0 : 16}
+                    header={header}
+                    enableoverflow={enableOverflow}
+                  >
                     {enableOverflow && !disableCloseButton && (
                       <FloatCloseButton data-testid='pcln-modal-close' header={header} onClick={onClose} />
                     )}

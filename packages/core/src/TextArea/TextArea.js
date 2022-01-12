@@ -12,7 +12,7 @@ const TextArea = styled.textarea`
   font-size: ${themeGet('fontSizes.1')}px;
   color: inherit;
   background-color: transparent;
-  border-radius: ${themeGet('radius')};
+  border-radius: ${themeGet('borderRadii.lg')};
   border-width: 1px;
   border-style: solid;
 

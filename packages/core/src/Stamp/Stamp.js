@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, fontSize } from 'styled-system'
+import { themeGet, space, fontSize, borderRadius } from 'styled-system'
 import {
   applySizes,
   applyVariations,
+  borderRadiusAttrs,
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
@@ -50,7 +51,7 @@ const variations = {
   `,
 }
 
-const Stamp = styled.div`
+const Stamp = styled.div.attrs(borderRadiusAttrs)`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -64,7 +65,7 @@ const Stamp = styled.div`
 
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Stamp', variations)};
-  ${space} ${fontSize};
+  ${space} ${fontSize} ${borderRadius};
 `
 
 Stamp.displayName = 'Stamp'
@@ -88,6 +89,7 @@ Stamp.defaultProps = {
   color: 'border.light',
   bg: 'background.light',
   borderColor: 'border.base',
+  borderRadius: 'md',
   size: 'medium',
   variation: 'outline',
 }

@@ -1,16 +1,18 @@
 import styled, { css } from 'styled-components'
 import { space, fontSize, themeGet } from 'styled-system'
-import { getPaletteColor, applySizes } from '../../utils'
-import { Box } from '../../Box'
+import { getPaletteColor, applySizes } from '../utils'
+import { Box } from '../Box'
 
 const getSizes = ({ hasChildren }) => ({
   sm: css`
+    border-radius: ${themeGet('borderRadii.action-sm')};
     padding-left: 8px;
     padding-right: 8px;
     ${hasChildren ? '' : 'height: 32px;'}
     font-size: ${themeGet('fontSizes.0')}px;
   `,
   md: css`
+    border-radius: ${themeGet('borderRadii.action-md')};
     padding-left: 16px;
     padding-right: 16px;
     ${hasChildren ? '' : 'height: 40px;'}

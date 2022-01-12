@@ -65,7 +65,6 @@ const TooltipContent = styled(Box)`
   box-shadow: ${({ theme }) => theme.boxShadows[1]};
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
   position: absolute;
-  border-radius: ${({ theme }) => theme.radii[1]}px;
   box-sizing: border-box;
   background: ${(props) => getPaletteColor(props.bg || props.color, 'base')(props)};
   text-align: center;
@@ -100,6 +99,7 @@ const propTypes = {
 }
 
 const defaultProps = {
+  borderRadius: 'md',
   position: 'bottom',
   color: 'background.lightest',
   zIndex: 'auto',

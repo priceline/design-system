@@ -22,6 +22,7 @@ exports[`Step should handle onClick 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;
@@ -123,6 +124,7 @@ exports[`Step should render a completed step correctly 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;
@@ -243,6 +245,7 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;
@@ -349,6 +352,7 @@ exports[`Step should render an active step correctly 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;
@@ -436,6 +440,7 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   border-radius: 2px;
   border-width: 0;
   border-style: solid;
+  border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;

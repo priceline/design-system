@@ -12,14 +12,17 @@ import {
 
 const sizes = {
   small: css`
+    border-radius: ${themeGet('borderRadii.action-sm')};
     font-size: ${themeGet('fontSizes.0')}px;
     padding: 7px 12px;
   `,
   medium: css`
+    border-radius: ${themeGet('borderRadii.action-md')};
     font-size: ${themeGet('fontSizes.1')}px;
     padding: 9.5px 18px;
   `,
   large: css`
+    border-radius: ${themeGet('borderRadii.action-lg')};
     font-size: ${themeGet('fontSizes.2')}px;
     padding: 12px 22px;
   `,

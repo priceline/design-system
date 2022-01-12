@@ -9,10 +9,6 @@ import { Text } from '../Text'
 import { applyVariations, deprecatedColorValue } from '../utils'
 
 const HugCard = styled(Card)`
-  border-top-left-radius: ${(props) => props.theme.radius};
-  border-top-right-radius: ${(props) => props.theme.radius};
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
   overflow: hidden;
   ${applyVariations('Hug')}
 `
@@ -39,7 +35,7 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
 
   return (
     <HugCard {...props} borderColor={bg || color}>
-      <Flex bg={bg} color={color} p={p} alignItems='center'>
+      <Flex bg={bg} color={color} p={p} pl='12px' alignItems='center'>
         {!!iconClone && iconClone}
         <Text fontSize={fontSize}>{props.text}</Text>
       </Flex>
@@ -49,6 +45,7 @@ const Hug = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
 }
 
 Hug.defaultProps = {
+  borderRadius: 'xl',
   borderWidth: 1,
   color: 'text.lightest',
   fontSize: 1,

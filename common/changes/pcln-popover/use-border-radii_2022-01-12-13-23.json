@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Use new borderRadii from theme",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

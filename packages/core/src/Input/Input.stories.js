@@ -1,6 +1,7 @@
 import React from 'react'
 import ForwardRefDemo from '../../storybook/utils/ForwardRefsDemo'
 import { Box, Input, Label, Divider, Button } from '..'
+import { argTypes } from './Input.stories.args'
 
 export default {
   title: 'Input',
@@ -13,9 +14,12 @@ export default {
       },
     },
   },
+  argTypes,
 }
 
-export const InputComponent = () => <Input my={3} />
+const Template = (args) => <Input my={3} {...args} />
+
+export const InputComponent = Template.bind({})
 
 export const Colors = () => (
   <Box width={400}>

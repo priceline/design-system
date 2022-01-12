@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space } from 'styled-system'
-import { applySizes, applyVariations, color, deprecatedColorValue, deprecatedPropType } from '../utils'
+import { themeGet, space, borderRadius } from 'styled-system'
+import {
+  applySizes,
+  applyVariations,
+  color,
+  deprecatedColorValue,
+  deprecatedPropType,
+  borderRadiusAttrs,
+} from '../utils'
 
 const type = (props) => {
   const badgeColors = {
@@ -56,14 +63,15 @@ const sizes = {
   `,
 }
 
-const Badge = styled.div`
-  border-radius: 99999px;
+const Badge = styled.div.attrs(borderRadiusAttrs)`
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
   ${space} ${type} ${color};
+
+  ${borderRadius}
 `
 
 Badge.displayName = 'Badge'
@@ -79,6 +87,7 @@ Badge.defaultProps = {
   size: 'medium',
   px: 2,
   py: 1,
+  borderRadius: 'full',
 }
 
 export default Badge

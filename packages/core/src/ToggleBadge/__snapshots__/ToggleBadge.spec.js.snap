@@ -19,6 +19,7 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   padding-left: 8px;
   padding-right: 8px;
   font-size: 12px;
+  border-radius: 9999px;
 }
 
 .c0:hover {
@@ -52,6 +53,7 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   padding-left: 8px;
   padding-right: 8px;
   font-size: 14px;
+  border-radius: 9999px;
 }
 
 .c0:hover {
@@ -85,6 +87,7 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   padding-left: 8px;
   padding-right: 8px;
   font-size: 12px;
+  border-radius: 9999px;
 }
 
 .c0:hover {

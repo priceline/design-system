@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { fontWeight } from 'styled-system'
+import { fontWeight, borderRadius } from 'styled-system'
 import { Box } from '../Box'
-import { deprecatedPropType } from '../utils'
+import { deprecatedPropType, borderRadiusAttrs } from '../utils'
 
 // TODO remove once we delete deprecated bg prop
-function getBgAndColorProps(color, bg) {
+function getBgAndColorProps({ color, bg }) {
   const { bg: defaultBg, color: defaultColor } = RatingBadge.defaultProps
   if (bg && color && bg !== defaultBg && color !== defaultColor) {
     // bg and color
@@ -22,12 +22,13 @@ function getBgAndColorProps(color, bg) {
   }
 }
 
-const RatingBadge = styled(Box).attrs(({ color, bg }) => ({
-  ...getBgAndColorProps(color, bg),
+const RatingBadge = styled(Box).attrs((props) => ({
+  ...getBgAndColorProps(props),
+  ...borderRadiusAttrs(props),
 }))`
   display: inline-block;
   line-height: 1.5;
-  ${fontWeight};
+  ${fontWeight} ${borderRadius};
 `
 
 RatingBadge.defaultProps = {
@@ -35,7 +36,7 @@ RatingBadge.defaultProps = {
   px: 2,
   color: 'alert',
   bg: 'orange',
-  borderRadius: 'xsm',
+  borderRadius: 'md',
 }
 
 RatingBadge.propTypes = {

@@ -3,7 +3,7 @@ import { Accessible, SeatBusiness, ThumbsUp, Trophy, WashingHands } from 'pcln-i
 
 import { Text } from '..'
 
-import { colors } from '../../storybook/args'
+import { colors, borderRadii } from '../../storybook/args'
 
 export const iconMap = {
   Accessible,
@@ -51,6 +51,16 @@ export const argTypes = {
     control: {
       type: 'select',
       options: Object.keys(iconMap),
+    },
+  },
+
+  borderRadius: {
+    name: 'borderRadius',
+    type: { name: 'string' },
+    options: borderRadii,
+    description: 'borderRadius',
+    control: {
+      type: 'select',
     },
   },
 }

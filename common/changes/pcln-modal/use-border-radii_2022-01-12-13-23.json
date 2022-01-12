@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "Use new borderRadii from theme",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

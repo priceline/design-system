@@ -10,7 +10,6 @@ import { Relative } from '../Relative'
 import { Button } from '../Button'
 
 const BannerWithRadius = styled(Banner)`
-  border-radius: 6px;
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};
 `
 
@@ -135,6 +134,7 @@ GenericBanner.defaultProps = {
   justifyContent: 'center',
   linkColor: 'primary',
   linkVariation: 'link',
+  borderRadius: '6px',
 }
 
 export default GenericBanner

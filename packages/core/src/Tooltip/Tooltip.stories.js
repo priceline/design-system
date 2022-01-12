@@ -1,5 +1,6 @@
 import React from 'react'
 import { Tooltip, InputField, Box, Flex } from '..'
+import { argTypes } from './Tooltip.stories.args'
 import styled from 'styled-components'
 
 const FlexColumn = styled(Flex)`
@@ -9,7 +10,13 @@ const FlexColumn = styled(Flex)`
 export default {
   title: 'Tooltip',
   component: Tooltip,
+  argTypes,
 }
+
+const Template = (args) => <Tooltip {...args}>I am a tooltip!</Tooltip>
+
+export const TooltipComponent = Template.bind({})
+TooltipComponent.args = { color: 'primary' }
 
 export const WithoutAnchors = () => (
   <Box mt={5} width={500}>
