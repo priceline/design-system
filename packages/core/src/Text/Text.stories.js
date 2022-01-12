@@ -1,9 +1,14 @@
 import React from 'react'
-import { Text } from '..'
+import { Box, Text } from '..'
+import { defaultArgs, argTypes } from './Text.stories.args'
 
 export default {
-  title: 'Text',
+  title: 'Typography / Text',
   component: Text,
+
+  args: defaultArgs,
+  argTypes,
+
   parameters: {
     docs: {
       description: {
@@ -13,7 +18,23 @@ export default {
   },
 }
 
-export const TypographyComponent = () => <Text m={3}>Hello</Text>
+const Template = (args) => (
+  <Box>
+    <Text m={3} {...args}>
+      Hello there.
+    </Text>
+    <Text m={3} {...args}>
+      The quick brown fox jumps over the lazy dog to discover new deals every day.
+    </Text>
+  </Box>
+)
+
+export const Typography = Template.bind({})
+
+export const ResponsiveTypography = Template.bind({})
+ResponsiveTypography.args = {
+  textStyle: ['heading6', 'heading5', 'heading4', 'heading3', 'heading2', 'heading1'],
+}
 
 export const FontSize = () => (
   <div>
@@ -27,21 +48,12 @@ export const FontSize = () => (
   </div>
 )
 
-FontSize.story = {
-  name: 'fontSize',
-}
-
 export const FontStyle = () => (
   <div>
     <Text fontStyle='italic'>Hello Italic</Text>
     <Text fontStyle='oblique'>Hello Oblique</Text>
   </div>
 )
-
-FontStyle.story = {
-  name: 'fontStyle',
-}
-
 export const TextAlign = () => (
   <div>
     <Text textAlign='left'>Hello Left</Text>
@@ -49,10 +61,6 @@ export const TextAlign = () => (
     <Text textAlign='right'>Hello Right</Text>
   </div>
 )
-
-TextAlign.story = {
-  name: 'textAlign',
-}
 
 export const TextDecoration = () => (
   <div>
@@ -62,39 +70,15 @@ export const TextDecoration = () => (
   </div>
 )
 
-TextDecoration.story = {
-  name: 'textDecoration',
-}
-
 export const Regular = () => <Text regular>Hello Regular</Text>
-
-Regular.story = {
-  name: 'regular',
-}
 
 export const Bold = () => <Text bold>Hello Bold</Text>
 
-Bold.story = {
-  name: 'bold',
-}
-
 export const Caps = () => <Text caps>Hello Caps</Text>
-
-Caps.story = {
-  name: 'caps',
-}
 
 export const Italic = () => <Text italic>Hello italic</Text>
 
-Italic.story = {
-  name: 'italic',
-}
-
 export const Strikethrough = () => <Text.s>Hello Strikethrough</Text.s>
-
-Strikethrough.story = {
-  name: 'strikethrough',
-}
 
 export const Margin = () => (
   <Text mt={4} mb={2}>
@@ -102,20 +86,12 @@ export const Margin = () => (
   </Text>
 )
 
-Margin.story = {
-  name: 'margin',
-}
-
 export const Color = () => (
   <div>
     <Text color='blue'>Hello Blue</Text>
     <Text color='green'>Hello Green</Text>
   </div>
 )
-
-Color.story = {
-  name: 'color',
-}
 
 export const MinMaxHeight = () => (
   <div>
@@ -127,10 +103,6 @@ export const MinMaxHeight = () => (
     </Text>
   </div>
 )
-
-MinMaxHeight.story = {
-  name: 'min/maxHeight',
-}
 
 export const HideOnLgBreakpoints = () => (
   <div>
@@ -158,7 +130,3 @@ export const Paragraph = () => (
     mollit anim id est laborum.
   </Text.p>
 )
-
-HideOnLgBreakpoints.story = {
-  name: 'Hide on > lg breakpoints',
-}

@@ -1,4 +1,10 @@
-import { borderRadiusValues, boxShadowSizeValues, paletteFamilies, roundedValues } from '../../src/utils'
+import {
+  borderRadiusValues,
+  boxShadowSizeValues,
+  paletteFamilies,
+  roundedValues,
+  textStylesValues,
+} from '../../src/utils'
 
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
 
@@ -7,6 +13,8 @@ export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']
 export const rounded = ['', ...roundedValues, 'NOTVALID']
 
 export const shadows = ['', ...boxShadowSizeValues, 'NOTVALID']
+
+export const textStyles = ['', ...textStylesValues, 'NOTVALID']
 
 export const spaceArgs = [
   'm',

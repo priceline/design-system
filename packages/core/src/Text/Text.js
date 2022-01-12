@@ -6,6 +6,7 @@ import {
   fontStyle,
   fontWeight,
   height,
+  letterSpacing,
   lineHeight,
   maxHeight,
   maxWidth,
@@ -15,18 +16,23 @@ import {
   space,
   textAlign,
   textStyle,
-  themeGet,
   width,
   zIndex,
 } from 'styled-system'
 
-import { deprecatedPropType, deprecatedColorValue, applyVariations, getPaletteColor } from '../utils'
+import {
+  applyVariations,
+  deprecatedColorValue,
+  deprecatedPropType,
+  getPaletteColor,
+  textAlignAttrs,
+  typographyAttrs,
+} from '../utils'
 
 export const caps = (props) =>
   props.caps
     ? {
         textTransform: 'uppercase',
-        letterSpacing: themeGet('letterSpacings.caps')(props),
       }
     : null
 
@@ -65,6 +71,7 @@ const textProps = css`
   ${fontStyle}
   ${fontWeight}
   ${lineHeight}
+  ${letterSpacing}
   ${textAlign}
   ${textDecoration}
   ${textShadow}
@@ -72,30 +79,24 @@ const textProps = css`
   ${zIndex}
 `
 
-const Text = styled.div.attrs(({ align, ...props }) => ({
-  textAlign: align,
-  ...props,
-}))`
-  ${textProps}
-`
-const Span = styled.span.attrs(({ align, ...props }) => ({
-  textAlign: align,
-  ...props,
-}))`
+const textAttrs = (props) => ({
+  ...typographyAttrs(props),
+  ...textAlignAttrs(props),
+})
+
+const Text = styled.div.attrs(textAttrs)`
   ${textProps}
 `
 
-const Paragraph = styled.p.attrs(({ align, ...props }) => ({
-  textAlign: align,
-  ...props,
-}))`
+const Span = styled.span.attrs(textAttrs)`
   ${textProps}
 `
 
-const Strike = styled.s.attrs(({ align, ...props }) => ({
-  textAlign: align,
-  ...props,
-}))`
+const Paragraph = styled.p.attrs(textAttrs)`
+  ${textProps}
+`
+
+const Strike = styled.s.attrs(textAttrs)`
   ${textProps}
 `
 
