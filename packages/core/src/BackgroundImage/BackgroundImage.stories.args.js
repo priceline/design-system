@@ -1,3 +1,5 @@
+import { borderRadii, rounded } from '../../storybook/args'
+
 const variations = ['static', 'parallax']
 const image =
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
@@ -23,6 +25,26 @@ export const argTypes = {
     control: {
       type: 'select',
       options: variations,
+    },
+  },
+
+  borderRadius: {
+    name: 'borderRadius',
+    type: { name: 'string' },
+    options: borderRadii,
+    description: 'borderRadius',
+    control: {
+      type: 'select',
+    },
+  },
+
+  rounded: {
+    name: 'rounded',
+    type: { name: 'string' },
+    options: rounded,
+    description: 'rounded',
+    control: {
+      type: 'select',
     },
   },
 
