@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image } from '..'
+import { argTypes } from './Image.stories.args'
 
 const description = 'A low-level layout component that renders an image'
 const imageSrc =
@@ -15,9 +16,18 @@ export default {
       },
     },
   },
+  argTypes,
 }
 
-export const Default = () => <Image src={imageSrc} />
+const Template = (args) => <Image {...args} src={imageSrc} />
+
+export const Default = Template.bind({})
+
+export const Rounded = Template.bind({})
+Rounded.args = { rounded: 'left', borderRadius: 'full' }
+
+export const BoxShadow = Template.bind({})
+BoxShadow.args = { boxShadowSize: 'overlay-lg' }
 
 export const ResponsiveWidth = () => <Image width={1 / 2} src={imageSrc} />
 

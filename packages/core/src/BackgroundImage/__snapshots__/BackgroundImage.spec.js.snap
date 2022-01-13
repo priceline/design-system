@@ -14,6 +14,23 @@ exports[`BackgroundImage renders 1`] = `
 />
 `;
 
+exports[`BackgroundImage renders with border radius 1`] = `
+.c0 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #eceff2;
+  background-attachment: scroll;
+  height: 320px;
+  border-radius: 9999px 9999px 0 0;
+}
+
+<div
+  className="c0"
+  height="320px"
+/>
+`;
+
 exports[`BackgroundImage renders with height 1`] = `
 .c0 {
   background-position: center;
