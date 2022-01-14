@@ -1,6 +1,11 @@
-name: Rush publish to apply changes
+name: Rush publish to NPM
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      prereleaseName:
+        required: true
+        description: Tag to append to version of each package
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -10,11 +15,15 @@ jobs:
     name: Rush publish apply
     # Set the type of machine to run on
     runs-on: ubuntu-latest
+    environment: Production
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
 
       - name: PNPM cache via actions/cache@v2
         id: pnpm-cache
@@ -31,16 +40,16 @@ jobs:
       - name: Build components
         run: node common/scripts/install-run-rush.js build
 
-      - name: Apply changes
-        run: |
-          node common/scripts/install-run-rush.js publish --apply --add-commit-details
+      - name: Git author name
+        run: git config --global user.name "Priceline DS Publish Bot"
+      
+      - name: Git author email
+        run: git config --global user.email "uxplatformdevs@priceline.com"
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          title: 'Rush publish apply'
-          commit-message: 'Run rush publish apply to create a new release'
-          branch: apply-changes
-          delete-branch: true
-          branch-suffix: 'timestamp'
+      - name: rush apply versions
+        run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main" --prerelease-name=${{ github.event.inputs.prereleaseName }} --partial-prerelease
+
+      - name: publish npm-package
+        run: node common/scripts/install-run-rush.js publish --publish --include-all --version-policy npm-package --target-branch="main" --tag="beta" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
+        env:
+          NPM_CONFIG_USERCONFIG: /apps/home/engadmin/.npmrc_publish
