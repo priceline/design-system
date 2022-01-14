@@ -1,11 +1,6 @@
 name: Rush publish to NPM
 
-on:
-  workflow_dispatch:
-    inputs:
-      prereleaseName:
-        required: true
-        description: Tag to append to version of each package
+on: workflow_dispatch
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -42,7 +37,7 @@ jobs:
 
       - name: Git set author name
         run: git config --global user.name "Priceline DS Publish Bot"
-      
+
       - name: Git set author email
         run: git config --global user.email "uxplatformdevs@priceline.com"
 
@@ -51,3 +46,5 @@ jobs:
 
       - name: publish npm-package
         run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
+
+      # TODO create GitHub release
