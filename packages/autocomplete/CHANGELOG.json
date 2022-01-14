@@ -2,6 +2,38 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "4.1.0",
+      "tag": "pcln-autocomplete_v4.1.0",
+      "date": "Fri, 14 Jan 2022 17:42:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Use new borderRadii from theme",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "fb53a8602d0b9bd0dd9050180ec484bc03027fb8"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Monorepo maintenance, fixed peers",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "8d8bd0bab203e5219c5d3c1596c40775ac0fb0a1"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.13.0-beta.2-cp` to `4.13.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `4.4.0-beta.2-cp` to `4.4.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.13.0-beta.2-cp` to `4.13.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.0.20",
       "tag": "pcln-autocomplete_v4.0.20",
       "date": "Tue, 16 Nov 2021 15:55:41 GMT",

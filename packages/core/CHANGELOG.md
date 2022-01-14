@@ -1,6 +1,24 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 16 Nov 2021 15:55:41 GMT and should not be manually modified.
+This log was last generated on Fri, 14 Jan 2022 17:42:20 GMT and should not be manually modified.
+
+## 4.13.0
+Fri, 14 Jan 2022 17:42:20 GMT
+
+### Minor changes
+
+- implement boxShadowSize and boxShadowColor props, Storybook Args improvements
+- Add borderRadius props to Image and BackgroundImage
+- implement borderRadius/rounded props
+- implemented new Typography system via textStyle prop"
+- Monorepo maintenance, fixed peers
+
+### Patches
+
+- Expand color palette with new tint, tone and shade hues
+- add missing textStyle propType to Text
+- upgrade Storybook dependencies
+- Use new borderRadii from theme
 
 ## 4.12.1
 Tue, 16 Nov 2021 15:55:41 GMT

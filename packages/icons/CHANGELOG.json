@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.4.0",
+      "tag": "pcln-icons_v4.4.0",
+      "date": "Fri, 14 Jan 2022 17:42:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Monorepo maintenance, fixed peers",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "8d8bd0bab203e5219c5d3c1596c40775ac0fb0a1"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.3.1",
       "tag": "pcln-icons_v4.3.1",
       "date": "Tue, 16 Nov 2021 15:55:41 GMT",

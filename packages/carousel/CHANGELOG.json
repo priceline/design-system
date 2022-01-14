@@ -1,0 +1,44 @@
+{
+  "name": "pcln-carousel",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "pcln-carousel_v0.1.0",
+      "date": "Fri, 14 Jan 2022 17:42:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Storybook upgrades (re: colors/faker)",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "cd76e627c5888aaa3dc2fb715a206a8a4fdad28a"
+          },
+          {
+            "comment": "upgrade Storybook dependencies",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "5168b6242674636caee9c25601c1e7fb39df79bc"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Create package",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "85ead6595f682c83dc0d6ca16b352dd53424e027"
+          },
+          {
+            "comment": "Add props to new Carousel component",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "5672d01bd9476e844edd01862cf5301aa80473b3"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.13.0-beta.2-cp` to `4.13.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.13.0-beta.2-cp` to `4.13.0`"
+          }
+        ]
+      }
+    }
+  ]
+}
