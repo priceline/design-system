@@ -40,16 +40,14 @@ jobs:
       - name: Build components
         run: node common/scripts/install-run-rush.js build
 
-      - name: Git author name
+      - name: Git set author name
         run: git config --global user.name "Priceline DS Publish Bot"
       
-      - name: Git author email
+      - name: Git set author email
         run: git config --global user.email "uxplatformdevs@priceline.com"
 
       - name: rush apply versions
-        run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main" --prerelease-name=${{ github.event.inputs.prereleaseName }} --partial-prerelease
+        run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
 
       - name: publish npm-package
-        run: node common/scripts/install-run-rush.js publish --publish --include-all --version-policy npm-package --target-branch="main" --tag="beta" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
-        env:
-          NPM_CONFIG_USERCONFIG: /apps/home/engadmin/.npmrc_publish
+        run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
