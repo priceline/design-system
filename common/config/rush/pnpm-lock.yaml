@@ -20,9 +20,9 @@ importers:
       next: ^12.0.7
       next-mdx-docs: 2.0.0-alpha.2
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.4.0
+      pcln-icons: workspace:4.5.0
       pcln-modal: workspace:4.1.0
-      pcln-popover: workspace:4.3.0
+      pcln-popover: workspace:4.3.1
       pcln-slider: workspace:4.1.0
       prop-types: ^15.8.1
       react: ^17.0.2
@@ -145,7 +145,7 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.4.0
+      pcln-icons: workspace:4.5.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -433,8 +433,8 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.4.0
-      pcln-popover: workspace:4.3.0
+      pcln-icons: workspace:4.5.0
+      pcln-popover: workspace:4.3.1
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -531,7 +531,7 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.4.0
+      pcln-icons: workspace:4.5.0
       pcln-slider: workspace:4.1.0
       prop-types: ^15.8.1
       react: ^17.0.2

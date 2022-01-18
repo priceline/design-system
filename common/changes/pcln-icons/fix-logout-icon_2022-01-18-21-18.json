@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Remove extra polygon tag from logout icon",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
