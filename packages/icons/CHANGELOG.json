@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.6.0",
+      "tag": "pcln-icons_v4.6.0",
+      "date": "Tue, 18 Jan 2022 22:24:12 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Remove extra polygon tag from logout icon",
+            "author": "Barry Yakimchuk <57762944+pcln-barry@users.noreply.github.com>",
+            "commit": "419c5cd38476aa82d350e44841eec5b217637160"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.5.0",
       "tag": "pcln-icons_v4.5.0",
       "date": "Tue, 18 Jan 2022 20:27:47 GMT",
