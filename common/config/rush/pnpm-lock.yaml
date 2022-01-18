@@ -19,11 +19,11 @@ importers:
       mdx-docs: ^1.0.0-9
       next: ^12.0.7
       next-mdx-docs: 2.0.0-alpha.2
-      pcln-design-system: workspace:4.13.0-beta.2-cp
-      pcln-icons: workspace:4.4.0-beta.2-cp
-      pcln-modal: workspace:4.1.0-beta.2-cp
-      pcln-popover: workspace:4.3.0-beta.2-cp
-      pcln-slider: workspace:4.1.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
+      pcln-icons: workspace:4.4.0
+      pcln-modal: workspace:4.1.0
+      pcln-popover: workspace:4.3.0
+      pcln-slider: workspace:4.1.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -86,7 +86,7 @@ importers:
       chromatic: ^6.3.4
       eslint: ^8.6.0
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
       react: ^17.0.2
       react-dom: ^17.0.2
       react-draggable-playground: ^1.0.0
@@ -144,8 +144,8 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
-      pcln-icons: workspace:4.4.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
+      pcln-icons: workspace:4.4.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -201,7 +201,7 @@ importers:
       jest-styled-components: ^6.3.4
       moize: ^6.1.0
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
       prop-types: ^15.8.1
       pure-react-carousel: ^1.27.8
       react: ^17.0.2
@@ -262,7 +262,7 @@ importers:
       lodash.get: ^4.4.2
       meow: ^10.1.1
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -432,9 +432,9 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
-      pcln-icons: workspace:4.4.0-beta.2-cp
-      pcln-popover: workspace:4.3.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
+      pcln-icons: workspace:4.4.0
+      pcln-popover: workspace:4.3.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -481,7 +481,7 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -530,9 +530,9 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
-      pcln-icons: workspace:4.4.0-beta.2-cp
-      pcln-slider: workspace:4.1.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
+      pcln-icons: workspace:4.4.0
+      pcln-slider: workspace:4.1.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -588,7 +588,7 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
       prop-types: ^15.8.1
       rc-tools: ^8.4.5
       rc-tooltip: ^3.7.0
@@ -762,7 +762,7 @@ importers:
       csstype: ^3.0.10
       dtslint: ^4.2.1
       eslint: ^8.6.0
-      pcln-design-system: workspace:4.13.0-beta.2-cp
+      pcln-design-system: workspace:4.13.0
       prettier: ^2.5.1
       typescript: ^4.5.4
     dependencies:
