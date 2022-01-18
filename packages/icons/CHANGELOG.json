@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.5.0",
+      "tag": "pcln-icons_v4.5.0",
+      "date": "Tue, 18 Jan 2022 20:27:47 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add logout icon",
+            "author": "Barry Yakimchuk <57762944+pcln-barry@users.noreply.github.com>",
+            "commit": "05e75a600c63152534f1f16947aa46bb778c0551"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.4.0",
       "tag": "pcln-icons_v4.4.0",
       "date": "Fri, 14 Jan 2022 17:42:20 GMT",
