@@ -1,0 +1,20 @@
+{
+  "extends": "@rushstack/heft-jest-plugin/includes/jest-shared.config.json",
+  "setupFilesAfterEnv": ["<rootDir>/lib-commonjs/jest.setup.js"],
+
+  "testMatch": ["<rootDir>/**/__tests__/**/*.[jt]s?(x)", "<rootDir>/**/?(*.)+(spec|test).[jt]s?(x)"],
+  "reporters": ["default"],
+
+  "collectCoverage": true,
+  "collectCoverageFrom": ["src/**/*.{js,ts}", "!src/**/*.{stories,story}.*", "!**/__test__/**", "!**/*.d.ts"],
+  "coverageReporters": ["lcov", "html"],
+  "coverageDirectory": "<rootDir>/coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}

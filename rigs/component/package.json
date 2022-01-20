@@ -1,0 +1,33 @@
+{
+  "name": "@priceline/heft-component-rig",
+  "version": "1.4.9",
+  "description": "@priceline rig package for component projects that build using Heft",
+  "sideEffects": false,
+  "scripts": {
+    "build": "",
+    "test": ""
+  },
+  "dependencies": {
+    "@microsoft/api-extractor": "~7.19.4",
+    "@rushstack/eslint-config": "~2.4.5",
+    "@rushstack/heft-jest-plugin": "^0.2.1",
+    "@rushstack/heft-storybook-plugin": "^0.1.28",
+    "@rushstack/heft-web-rig": "^0.7.1",
+    "@rushstack/heft-webpack5-plugin": "^0.4.28",
+    "@types/heft-jest": "^1.0.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.1",
+    "@types/testing-library__jest-dom": "^5.14.1",
+    "@types/webpack-env": "^1.16.3",
+    "eslint": "^7.32.0",
+    "jest-environment-jsdom": "^27.4.4",
+    "jest-standard-reporter": "^2.0.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@rushstack/heft": "^0.44.0"
+  },
+  "peerDependencies": {
+    "@rushstack/heft": "^0.44.0"
+  }
+}

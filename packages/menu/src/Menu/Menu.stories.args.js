@@ -1,4 +1,6 @@
-import { colors } from '../../../core/storybook/args'
+import { storybookArgs } from 'pcln-design-system'
+
+const { colors } = storybookArgs
 
 export const defaultArgs = {
   isOpen: true,

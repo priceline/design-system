@@ -66,8 +66,16 @@ common/autoinstallers/*/.npmrc
 
 # build output
 **/dist/
+**/lib-commonjs/
+**/lib-esm/
+**/types/**/*.d.ts
+tsdoc-metadata.json
+**/temp/
 
 apps/docs/out/
+
+# Heft
+**/.heft/
 
 # SVGR intermediate build steps
 packages/icons/components/
