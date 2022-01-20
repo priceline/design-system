@@ -19,11 +19,11 @@ importers:
       mdx-docs: ^1.0.0-9
       next: ^12.0.7
       next-mdx-docs: 2.0.0-alpha.2
-      pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.6.0
-      pcln-modal: workspace:4.1.0
-      pcln-popover: workspace:4.3.2
-      pcln-slider: workspace:4.1.0
+      pcln-design-system: workspace:*
+      pcln-icons: workspace:*
+      pcln-modal: workspace:*
+      pcln-popover: workspace:*
+      pcln-slider: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -86,7 +86,7 @@ importers:
       chromatic: ^6.3.4
       eslint: ^8.6.0
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
+      pcln-design-system: workspace:*
       react: ^17.0.2
       react-dom: ^17.0.2
       react-draggable-playground: ^1.0.0
@@ -144,8 +144,8 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.6.0
+      pcln-design-system: workspace:*
+      pcln-icons: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -201,7 +201,7 @@ importers:
       jest-styled-components: ^6.3.4
       moize: ^6.1.0
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
+      pcln-design-system: workspace:*
       prop-types: ^15.8.1
       pure-react-carousel: ^1.27.8
       react: ^17.0.2
@@ -262,7 +262,7 @@ importers:
       lodash.get: ^4.4.2
       meow: ^10.1.1
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
+      pcln-design-system: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -444,9 +444,9 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.6.0
-      pcln-popover: workspace:4.3.2
+      pcln-design-system: workspace:*
+      pcln-icons: workspace:*
+      pcln-popover: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -493,7 +493,7 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
+      pcln-design-system: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -542,9 +542,9 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.6.0
-      pcln-slider: workspace:4.1.0
+      pcln-design-system: workspace:*
+      pcln-icons: workspace:*
+      pcln-slider: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -600,7 +600,7 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:4.13.0
+      pcln-design-system: workspace:*
       prop-types: ^15.8.1
       rc-tools: ^8.4.5
       rc-tooltip: ^3.7.0
@@ -849,7 +849,7 @@ importers:
       csstype: ^3.0.10
       dtslint: ^4.2.1
       eslint: ^8.6.0
-      pcln-design-system: workspace:4.13.0
+      pcln-design-system: workspace:*
       prettier: ^2.5.1
       typescript: ^4.5.4
     dependencies:
@@ -19407,7 +19407,7 @@ packages:
       deepmerge: 4.2.2
       hoist-non-react-statics: 3.3.2
       moize: 6.1.0
-      pcln-icons: 4.3.1_982f345c6517e6b20b959e1766c1f475
+      pcln-icons: 4.4.0_982f345c6517e6b20b959e1766c1f475
       prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -19435,24 +19435,6 @@ packages:
       styled-system: 4.2.4
     dev: true
 
-  /pcln-icons/4.3.1_982f345c6517e6b20b959e1766c1f475:
-    resolution: {integrity: sha512-gVGJL+XQZWjxpYjx+Y8OcX/BrGFwKz2NFC7VPIO3+Z9vJDSUOl2hv/MqB+rpp6Jdd2pUh3jHwIk3rfQKK2CF3g==}
-    engines: {node: '>=8.0.0 <9.0.0 || >=10.0.0', npm: '>=5.10.0 || >=6.0.0'}
-    peerDependencies:
-      pcln-design-system: ^3.6.1 || ^4.0.0
-      react: '>= 16.10.0'
-      react-dom: '>= 16.10.0'
-      styled-components: '>=4.4.1'
-    dependencies:
-      lodash.upperfirst: 4.3.1
-      pcln-design-system: 4.12.1_673930caa6f3f003d53efe635833dda5
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
-      styled-system: 4.2.4
-    dev: true
-
   /pcln-icons/4.4.0_85593d42a3d7c95368cf8aa70cd9502f:
     resolution: {integrity: sha512-H09OjDC0UJHQubV8UYKUIAjSAlaFTUPLYMQfRBzwKIdut1BO5wGlya2KMxfp2u+QKprNUuncIN8uKyzGd9Tcfg==}
     engines: {node: '>=14', npm: '>=6.0.0'}
@@ -19464,6 +19446,24 @@ packages:
     dependencies:
       lodash.upperfirst: 4.3.1
       pcln-design-system: 4.13.0_673930caa6f3f003d53efe635833dda5
+      prop-types: 15.8.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
+      styled-system: 4.2.4
+    dev: true
+
+  /pcln-icons/4.4.0_982f345c6517e6b20b959e1766c1f475:
+    resolution: {integrity: sha512-H09OjDC0UJHQubV8UYKUIAjSAlaFTUPLYMQfRBzwKIdut1BO5wGlya2KMxfp2u+QKprNUuncIN8uKyzGd9Tcfg==}
+    engines: {node: '>=14', npm: '>=6.0.0'}
+    peerDependencies:
+      pcln-design-system: ^4.12.1
+      react: '>= 16.10.0'
+      react-dom: '>= 16.10.0'
+      styled-components: '>=4.4.1'
+    dependencies:
+      lodash.upperfirst: 4.3.1
+      pcln-design-system: 4.12.1_673930caa6f3f003d53efe635833dda5
       prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2

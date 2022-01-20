@@ -19,10 +19,10 @@ const addAliases = (arr) => {
 /**
  * Create the theme
  *
- * @param {Object}  theme             The theme to merge against the default
- * @param {Object}  customBreakpoints Custom breakpoints for the theme
+ * @param theme -             The theme to merge against the default
+ * @param customBreakpoints - Custom breakpoints for the theme
  *
- * @returns {Object} The generated theme
+ * @returns The generated theme
  */
 const createTheme = (theme = {}, customBreakpoints = null) => {
   const mergedTheme = deepmerge(defaultTheme, theme)
