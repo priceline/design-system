@@ -121,7 +121,6 @@ describe('utils', () => {
         color: 'primary',
       }
       const override = applyVariations('Button')(props)
-      console.log('HERE', override, props)
 
       expect(override[0](props)).toEqual(props.theme.componentStyles.Button.primary)
     })
@@ -240,9 +239,9 @@ describe('utils', () => {
       const props = { theme: createTheme(), bg: 'background', color: 'primary' }
       expect(getByPalette(props)).toEqual(
         expect.arrayContaining([
-          'background-color:',
+          'background-color: ',
           props.theme.palette.background.base,
-          ';color:',
+          ';color: ',
           props.theme.palette.primary.base,
           ';',
         ])
@@ -283,11 +282,11 @@ describe('utils', () => {
       )
       expect(color({ ...props, bg: 'background', color: 'primary' })).toEqual(
         expect.arrayContaining([
-          '\n  background-color: ',
+          'background-color: ',
           props.theme.palette.background.base,
-          ';\n  color: ',
+          ';color: ',
           props.theme.palette.primary.base,
-          ';\n',
+          ';',
         ])
       )
 
@@ -300,9 +299,9 @@ describe('utils', () => {
       )
       expect(color({ ...props, color: 'blue', bg: 'green' })).toEqual(
         expect.arrayContaining([
-          'background-color:',
+          'background-color: ',
           props.theme.colors.green,
-          ';color:',
+          ';color: ',
           props.theme.colors.blue,
           ';',
         ])
@@ -350,7 +349,7 @@ describe('utils', () => {
       medium: 'medium css',
     }
 
-    test.only('returns the expected result when size is an array', () => {
+    test('returns the expected result when size is an array', () => {
       const sizeArray1 = ['small', 'medium', null, null, null, null]
       const sizeArray2 = ['medium', null, null, null, 'small', null]
 
