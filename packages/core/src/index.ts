@@ -68,6 +68,7 @@ export {
   borderRadiusAttrs,
 } from './utils'
 
-export * as storybookArgs from './storybook/args'
+import * as storybookArgs from './storybook/args'
+export { storybookArgs }
 
 export * from './theme'

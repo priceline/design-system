@@ -13,10 +13,6 @@ export const deprecatedPropType = (replacement) => (props, propName) => {
 
 /**
  * Checks if the given color prop is a valid palette color
- *
- * @param {Object} props
- *
- * @returns {boolean}
  */
 export const hasPaletteColor = (props) => {
   return (
@@ -88,9 +84,9 @@ export const decomposeColor = (color) => {
  * @example getLuminance('#0068EF') => 0.211
  * @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  *
- * @param {string} color The color to get the luminance of
+ * @param color - The color to get the luminance of
  *
- * @return {Number} The luminance of the color
+ * @return The luminance of the color
  */
 export const getLuminance = (color) => {
   const [r, g, b] = decomposeColor(color).map((val) => {
@@ -104,13 +100,9 @@ export const getLuminance = (color) => {
 /**
  * Gets the contrast ratio between two colors
  *
- * @example getContrastRatio('#0068EF', '#fff') => 4.016975780478911
+ * @example getContrastRatio('#0068EF', '#fff') =\> 4.016975780478911
  * @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  *
- * @param {string} colorA
- * @param {string} colorB
- *
- * @return {Number} The contrast ratio
  */
 export const getContrastRatio = (colorA, colorB) => {
   const luminA = getLuminance(colorA)
@@ -141,9 +133,8 @@ export const getBreakpointSize = (array, length) => {
  * if size is an array, it will determine the current screen size and then utilize the getBreakpointSize
  * helper to determine the css to return from the sizes object
  *
- * @param {Object} sizes An object of size styles
+ * @param sizes - An object of size styles
  *
- * @returns {array}
  */
 
 export const applySizes =
@@ -207,28 +198,24 @@ export const applyVariations =
 
     if (variations && typeof variation === 'string') {
       if (isValidShade) {
-        return css`
-          ${variations[variation] || ''}
+        // prettier-ignore
+        return css`${variations[variation] || ''}
           ${typeof color === 'string' &&
-          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}
-        `
+          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
       }
 
-      return css`
-        ${variations[variation] || ''}
-        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
-      `
+      // prettier-ignore
+      return css`${variations[variation] || ''}
+        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
     }
 
     if (isValidShade) {
-      return css`
-        ${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}
-      `
+      // prettier-ignore
+      return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
     }
 
-    return css`
-      ${themeGet(`componentStyles.${componentName}.${color}`, '')}
-    `
+    // prettier-ignore
+    return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
   }
 
 /**
@@ -236,10 +223,10 @@ export const applyVariations =
  * the palette color. If palette shade does not exist, falls
  * back to theme.colors
  *
- * @example getPaletteColor('dark')(props) => will return the dark
+ * @example getPaletteColor('dark')(props) =\> will return the dark
  * shade of theme.palette[props.color].dark
- * @example getPaletteColor('primary.base')(props) => theme.palette.primary.base
- * @example getPaletteColor('primary', 'base')(props) => theme.palette.primary.base
+ * @example getPaletteColor('primary.base')(props) =\> theme.palette.primary.base
+ * @example getPaletteColor('primary', 'base')(props) =\> theme.palette.primary.base
  */
 export const getPaletteColor =
   (...args) =>
@@ -265,9 +252,8 @@ export const getPaletteColor =
 /**
  * Gets the text color that belongs on a given background color
  *
- * @param {string} name The name of the background color
+ * @param name - The name of the background color
  *
- * @returns {string} The text color that belongs on the background
  */
 export const getTextColorOn = (name) => (props) => {
   const { theme } = props
@@ -286,18 +272,12 @@ export const getTextColorOn = (name) => (props) => {
   return ''
 }
 
-export const getByPalette = (props) => css`
-  background-color: ${getPaletteColor(props.bg, 'base')(props)};
-  color: ${getPaletteColor(props.color, 'base')(props)};
-`
+// prettier-ignore
+export const getByPalette = (props) => css`background-color: ${getPaletteColor(props.bg, 'base')(props)};color: ${getPaletteColor(props.color, 'base')(props)};`
 
 /**
  * Extended color function from styled-system. First checks
  * for a palette color before falling back to styled-system
- *
- * @param {Object} props
- *
- * @returns {string|css}
  */
 export const color = (props) => {
   if (!props.theme || (!props.color && !props.bg)) {
