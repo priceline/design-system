@@ -62,7 +62,8 @@ jspm_packages/
 common/deploy/
 common/temp/
 common/autoinstallers/*/.npmrc
-**/.rush/temp/
+**/temp/
+
 
 # build output
 **/dist/
@@ -70,7 +71,6 @@ common/autoinstallers/*/.npmrc
 **/lib-esm/
 **/types/**/*.d.ts
 tsdoc-metadata.json
-**/temp/
 
 apps/docs/out/
 

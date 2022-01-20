@@ -207,28 +207,24 @@ export const applyVariations =
 
     if (variations && typeof variation === 'string') {
       if (isValidShade) {
-        return css`
-          ${variations[variation] || ''}
+        // prettier-ignore
+        return css`${variations[variation] || ''}
           ${typeof color === 'string' &&
-          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}
-        `
+          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
       }
 
-      return css`
-        ${variations[variation] || ''}
-        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}
-      `
+      // prettier-ignore
+      return css`${variations[variation] || ''}
+        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
     }
 
     if (isValidShade) {
-      return css`
-        ${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}
-      `
+      // prettier-ignore
+      return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
     }
 
-    return css`
-      ${themeGet(`componentStyles.${componentName}.${color}`, '')}
-    `
+    // prettier-ignore
+    return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
   }
 
 /**
@@ -286,10 +282,8 @@ export const getTextColorOn = (name) => (props) => {
   return ''
 }
 
-export const getByPalette = (props) => css`
-  background-color: ${getPaletteColor(props.bg, 'base')(props)};
-  color: ${getPaletteColor(props.color, 'base')(props)};
-`
+// prettier-ignore
+export const getByPalette = (props) => css`background-color: ${getPaletteColor(props.bg, 'base')(props)};color: ${getPaletteColor(props.color, 'base')(props)};`
 
 /**
  * Extended color function from styled-system. First checks
