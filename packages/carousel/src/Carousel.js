@@ -4,9 +4,9 @@ import { CarouselProvider, Slide } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
 import { CarouselWrapper } from './Carousel.styles'
 import { Flex, Relative } from 'pcln-design-system'
-import { Dots } from './Dots/Dots'
-import { ArrowButton } from './ArrowButton/ArrowButton'
-import { Slider } from './Slider/Slider'
+import { Dots } from './Dots'
+import { ArrowButton } from './ArrowButton'
+import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, getVisibleSlides } from './helpers'
 
 export const Carousel = ({
