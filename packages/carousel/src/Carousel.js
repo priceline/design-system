@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { CarouselProvider, Slide } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
@@ -7,7 +7,7 @@ import { Flex, Relative } from 'pcln-design-system'
 import { Dots } from './Dots/Dots'
 import { ArrowButton } from './ArrowButton/ArrowButton'
 import { Slider } from './Slider/Slider'
-import { getSlideKey, responsiveVisibleSlides, getVisibleSlidesArray } from './helpers'
+import { getSlideKey, getVisibleSlidesArray, getVisibleSlides } from './helpers'
 
 export const Carousel = ({
   children,
@@ -27,13 +27,27 @@ export const Carousel = ({
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
 
+  const useResponsiveVisibleSlides = (visibleSlides) => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth)
+      }
+      window.addEventListener('resize', handleResize)
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
+    })
+    return getVisibleSlides(visibleSlides, windowWidth)
+  }
+
   return (
     <CarouselWrapper>
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
         totalSlides={children.length}
-        visibleSlides={layoutSize || responsiveVisibleSlides(formattedVisibleSlides)}
+        visibleSlides={layoutSize || useResponsiveVisibleSlides(formattedVisibleSlides)}
         dragEnabled
         isIntrinsicHeight={isIntrinsicHeight}
         step={layoutSize || step}

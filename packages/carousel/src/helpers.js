@@ -13,24 +13,11 @@ const getSlideKey = moize(uuidv4)
 const getVisibleSlidesArray = (visibleSlides) =>
   Array.isArray(visibleSlides) ? visibleSlides : [XS_VISIBLE_SLIDES, SM_VISIBLE_SLIDES, visibleSlides]
 
-const responsiveVisibleSlides = (visibleSlides) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  })
-  if (windowWidth < XS_VISIBLE_SLIDES_WIDTH) {
-    return visibleSlides[0]
-  } else if (windowWidth < SM_VISIBLE_SLIDES_WIDTH) {
-    return visibleSlides[1]
-  } else {
-    return visibleSlides[2]
-  }
-}
+const getVisibleSlides = (visibleSlides, windowWidth) =>
+  windowWidth < XS_VISIBLE_SLIDES_WIDTH
+    ? visibleSlides[0]
+    : windowWidth < SM_VISIBLE_SLIDES_WIDTH
+    ? visibleSlides[1]
+    : visibleSlides[2]
 
-export { getSlideKey, responsiveVisibleSlides, getVisibleSlidesArray }
+export { getSlideKey, getVisibleSlidesArray, getVisibleSlides }
