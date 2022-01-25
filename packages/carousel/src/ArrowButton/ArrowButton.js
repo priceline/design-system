@@ -23,7 +23,7 @@ const ArrowButton = ({ type, position, setPosition, ...props }) =>
   ) : null
 
 ArrowButton.propTypes = {
-  type: PropTypes.oneOf(['back', ' next']),
+  type: PropTypes.oneOf(['back', 'next']),
   position: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   setPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
 }
