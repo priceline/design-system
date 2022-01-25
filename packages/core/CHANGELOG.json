@@ -2,6 +2,62 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.13.0",
+      "tag": "pcln-design-system_v4.13.0",
+      "date": "Fri, 14 Jan 2022 17:42:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "implement boxShadowSize and boxShadowColor props, Storybook Args improvements",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "cd76e627c5888aaa3dc2fb715a206a8a4fdad28a"
+          },
+          {
+            "comment": "Add borderRadius props to Image and BackgroundImage",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "1a3fe28827aef2e4ad1166a7fc7ca0cf3e11c8a4"
+          },
+          {
+            "comment": "implement borderRadius/rounded props",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "57ede7dba7cb373cf2a8b51e74819331a3da1d0a"
+          },
+          {
+            "comment": "implemented new Typography system via textStyle prop\"",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "dca9a72a883a55490bc804f4b33563608cbf7a4c"
+          },
+          {
+            "comment": "Monorepo maintenance, fixed peers",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "8d8bd0bab203e5219c5d3c1596c40775ac0fb0a1"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Expand color palette with new tint, tone and shade hues",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "bd430e46cedd3a1c8cb0dff1591902dd745f5fed"
+          },
+          {
+            "comment": "add missing textStyle propType to Text",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "13b75238c302d15a4a49b41604f293df87b8a870"
+          },
+          {
+            "comment": "upgrade Storybook dependencies",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "5168b6242674636caee9c25601c1e7fb39df79bc"
+          },
+          {
+            "comment": "Use new borderRadii from theme",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "fb53a8602d0b9bd0dd9050180ec484bc03027fb8"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.12.1",
       "tag": "pcln-design-system_v4.12.1",
       "date": "Tue, 16 Nov 2021 15:55:41 GMT",

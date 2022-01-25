@@ -2,6 +2,25 @@
   "name": "pcln-codemods",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "pcln-codemods_v1.1.0",
+      "date": "Fri, 14 Jan 2022 17:42:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Monorepo maintenance, fixed peers",
+            "author": "Steve Dalonzo <steve.dalonzo+github@gmail.com>",
+            "commit": "8d8bd0bab203e5219c5d3c1596c40775ac0fb0a1"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.13.0-beta.2-cp` to `4.13.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.3",
       "tag": "pcln-codemods_v1.0.3",
       "date": "Tue, 16 Nov 2021 15:55:41 GMT",

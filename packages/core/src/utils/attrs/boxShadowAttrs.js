@@ -6,7 +6,7 @@ function calculateShadowProps(effectiveShadow, effectiveColor) {
   if (effectiveColor) {
     const rgb = hexToRgb(effectiveColor)
 
-    return effectiveShadow.replaceAll('rgba(0,0,0,', `${rgb.slice(0, rgb.length - 1)}, `)
+    return effectiveShadow.replace('rgba(0,0,0,', `${rgb.slice(0, rgb.length - 1)}, `)
   }
 
   return effectiveShadow

@@ -1,6 +1,27 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 16 Nov 2021 15:55:41 GMT and should not be manually modified.
+This log was last generated on Tue, 18 Jan 2022 22:24:12 GMT and should not be manually modified.
+
+## 4.6.0
+Tue, 18 Jan 2022 22:24:12 GMT
+
+### Minor changes
+
+- Remove extra polygon tag from logout icon
+
+## 4.5.0
+Tue, 18 Jan 2022 20:27:47 GMT
+
+### Minor changes
+
+- Add logout icon
+
+## 4.4.0
+Fri, 14 Jan 2022 17:42:20 GMT
+
+### Minor changes
+
+- Monorepo maintenance, fixed peers
 
 ## 4.3.1
 Tue, 16 Nov 2021 15:55:41 GMT

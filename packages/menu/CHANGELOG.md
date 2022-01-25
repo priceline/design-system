@@ -1,6 +1,28 @@
 # Change Log - pcln-menu
 
-This log was last generated on Tue, 04 Jan 2022 16:46:02 GMT and should not be manually modified.
+This log was last generated on Tue, 18 Jan 2022 22:24:12 GMT and should not be manually modified.
+
+## 4.4.2
+Tue, 18 Jan 2022 22:24:12 GMT
+
+_Version update only_
+
+## 4.4.1
+Tue, 18 Jan 2022 20:27:47 GMT
+
+_Version update only_
+
+## 4.4.0
+Fri, 14 Jan 2022 17:42:20 GMT
+
+### Minor changes
+
+- Monorepo maintenance, fixed peers
+
+### Patches
+
+- Expand color palette with new tint, tone and shade hues
+- Use new borderRadii from theme
 
 ## 4.3.1
 Tue, 04 Jan 2022 16:46:02 GMT

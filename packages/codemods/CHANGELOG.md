@@ -1,6 +1,13 @@
 # Change Log - pcln-codemods
 
-This log was last generated on Tue, 16 Nov 2021 15:55:41 GMT and should not be manually modified.
+This log was last generated on Fri, 14 Jan 2022 17:42:20 GMT and should not be manually modified.
+
+## 1.1.0
+Fri, 14 Jan 2022 17:42:20 GMT
+
+### Minor changes
+
+- Monorepo maintenance, fixed peers
 
 ## 1.0.3
 Tue, 16 Nov 2021 15:55:41 GMT

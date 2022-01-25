@@ -3,7 +3,6 @@ import React from 'react'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 import { withPerformance } from 'storybook-addon-performance'
-import { jsxDecorator } from 'storybook-addon-jsx'
 
 import viewports from './viewports'
 
@@ -11,7 +10,6 @@ import { ThemeProvider, Box, createTheme } from 'pcln-design-system'
 const baseTheme = createTheme()
 
 export const decorators = [
-  jsxDecorator,
   (Story) => <ThemeProvider>{Story()}</ThemeProvider>,
   (Story) => <Box p={4}>{Story()}</Box>,
   withPerformance,

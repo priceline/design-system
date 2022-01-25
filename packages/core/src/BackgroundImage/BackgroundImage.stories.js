@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BackgroundImage, Box, Text } from '..'
+import { BackgroundImage, Box, Text, Card } from '..'
 import { argTypes, defaultArgs } from './BackgroundImage.stories.args'
 
 export default {
@@ -61,4 +61,22 @@ Responsive.args = {
 }
 Responsive.parameters = {
   viewport: { defaultViewport: 'designSystem_xs' },
+}
+
+const RoundedTemplate = (args) => (
+  <Box width='300px'>
+    <BackgroundImage {...args} />
+    <Card rounded='bottom' height='100px'>
+      <Text textAlign='center' my={3}>
+        Hello Priceline!
+      </Text>
+    </Card>
+  </Box>
+)
+
+export const Rounded = RoundedTemplate.bind({})
+Rounded.args = {
+  borderRadius: 'full',
+  rounded: 'top',
+  height: '100px',
 }
