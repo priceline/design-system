@@ -20,9 +20,9 @@ importers:
       next: ^12.0.7
       next-mdx-docs: 2.0.0-alpha.2
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.5.0
+      pcln-icons: workspace:4.6.0
       pcln-modal: workspace:4.1.0
-      pcln-popover: workspace:4.3.1
+      pcln-popover: workspace:4.3.2
       pcln-slider: workspace:4.1.0
       prop-types: ^15.8.1
       react: ^17.0.2
@@ -145,7 +145,7 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.5.0
+      pcln-icons: workspace:4.6.0
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -201,9 +201,9 @@ importers:
       jest-styled-components: ^6.3.4
       moize: ^6.1.0
       npm-run-all: ^4.1.5
+      pcln-design-system: workspace:4.13.0
       pcln-icons: workspace:*
-      pcln-design-system: workspace:4.13
-      prtypes: ^15.8.1
+      prop-types: ^15.8.1
       pure-react-carousel: ^1.27.8
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -435,8 +435,8 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.5.0
-      pcln-popover: workspace:4.3.1
+      pcln-icons: workspace:4.6.0
+      pcln-popover: workspace:4.3.2
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -533,7 +533,7 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:4.13.0
-      pcln-icons: workspace:4.5.0
+      pcln-icons: workspace:4.6.0
       pcln-slider: workspace:4.1.0
       prop-types: ^15.8.1
       react: ^17.0.2
@@ -2403,22 +2403,22 @@ packages:
       '@cspotcode/source-map-consumer': 0.8.0
     dev: false
 
-  /@definitelytyped/header-parser/0.0.102:
-    resolution: {integrity: sha512-VRG1vDntWoNPukUcJzodtoK/997E94JpPbeddbbxv+gUE888zoIHZtkyJZsWx9amEl+tP5VwkL5OI7fu1TcTAw==}
+  /@definitelytyped/header-parser/0.0.103:
+    resolution: {integrity: sha512-MZRm+Sx8h+oT587QmbQeFbctqMQk0NS9WVrrYtDXkui36NFsyjhCPgVVuU8fZoJxTGvoNVAoziZQ7TzCZPXI6Q==}
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.102
+      '@definitelytyped/typescript-versions': 0.0.103
       '@types/parsimmon': 1.10.6
       parsimmon: 1.18.1
     dev: true
 
-  /@definitelytyped/typescript-versions/0.0.102:
-    resolution: {integrity: sha512-QGqe/BxWedTFNRVZiOynwYK2bQ9QpW468PlP6PQ+QSdQkqfurvAayQmovAr196ra72kEAR1jzBBsoapf3drWGw==}
+  /@definitelytyped/typescript-versions/0.0.103:
+    resolution: {integrity: sha512-OzwYh4O3egHmlV16a/VSbb+fXz9YYIlIQn3d1GJyPS//prCaZBbvDg4cxJ+k1T78C6vNL7Iky1MUb7r3DUkfkw==}
     dev: true
 
-  /@definitelytyped/utils/0.0.102:
-    resolution: {integrity: sha512-/XbAoaJMP/UO+Y+3vczLct/8ybFSRiz9s6UWf3g3LT0gIVNvN1LSKWN8N8Yad0+ramkV+QatUU52KVBJP9WOTg==}
+  /@definitelytyped/utils/0.0.103:
+    resolution: {integrity: sha512-6QsbhSx2FiP6RVewnNV+P3yU1bGT44kXlouae6iQ5zFb1BVo3E2LOG13R3IBabU6o8HqOz8Qz3Bhge0v/PInqQ==}
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.102
+      '@definitelytyped/typescript-versions': 0.0.103
       '@qiwi/npm-registry-client': 8.9.1
       '@types/node': 14.18.5
       charm: 1.0.2
@@ -10421,7 +10421,7 @@ packages:
     peerDependencies:
       typescript: '*'
     dependencies:
-      '@definitelytyped/header-parser': 0.0.102
+      '@definitelytyped/header-parser': 0.0.103
       command-exists: 1.2.9
       rimraf: 3.0.2
       semver: 6.3.0
@@ -10437,9 +10437,9 @@ packages:
     peerDependencies:
       typescript: '>= 3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.7.0-dev || >= 3.8.0-dev || >= 3.9.0-dev || >= 4.0.0-dev'
     dependencies:
-      '@definitelytyped/header-parser': 0.0.102
-      '@definitelytyped/typescript-versions': 0.0.102
-      '@definitelytyped/utils': 0.0.102
+      '@definitelytyped/header-parser': 0.0.103
+      '@definitelytyped/typescript-versions': 0.0.103
+      '@definitelytyped/utils': 0.0.103
       dts-critic: 3.3.11_typescript@4.5.4
       fs-extra: 6.0.1
       json-stable-stringify: 1.0.1
