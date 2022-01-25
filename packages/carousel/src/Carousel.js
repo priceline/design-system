@@ -41,13 +41,15 @@ export const Carousel = ({
     return getVisibleSlides(visibleSlides, windowWidth)
   }
 
+  const responsiveVisibleSlides = useResponsiveVisibleSlides(formattedVisibleSlides)
+
   return (
     <CarouselWrapper>
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
         totalSlides={children.length}
-        visibleSlides={layoutSize || useResponsiveVisibleSlides(formattedVisibleSlides)}
+        visibleSlides={layoutSize || responsiveVisibleSlides}
         dragEnabled
         isIntrinsicHeight={isIntrinsicHeight}
         step={layoutSize || step}
