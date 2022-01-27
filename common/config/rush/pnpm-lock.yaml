@@ -424,7 +424,7 @@ importers:
       jest-standard-reporter: 2.0.0
       jest-styled-components: 6.3.4_styled-components@4.4.1
       npm-run-all: 4.1.5
-      pcln-design-system: 4.12.1_673930caa6f3f003d53efe635833dda5
+      pcln-design-system: 4.13.0_673930caa6f3f003d53efe635833dda5
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-test-renderer: 17.0.2_react@17.0.2
@@ -496,6 +496,7 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:*
+      pcln-menu: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -521,6 +522,7 @@ importers:
       jest-styled-components: 6.3.4_styled-components@4.4.1
       npm-run-all: 4.1.5
       pcln-design-system: link:../core
+      pcln-menu: link:../menu
       prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -19406,26 +19408,6 @@ packages:
       safe-buffer: 5.2.1
       sha.js: 2.4.11
 
-  /pcln-design-system/4.12.1_673930caa6f3f003d53efe635833dda5:
-    resolution: {integrity: sha512-xZf9PECFcP6xku9Xld0TPefIGUtBk+F4TCERcwFCNPNyBkvX3GmMHpjgffanu+ND2OnXLPpTe1mzjaGWlJHkDg==}
-    engines: {node: '>=8.0.0 <9.0.0 || >=10.0.0', npm: '>=5.10.0 || >=6.0.0'}
-    peerDependencies:
-      react: '>= 16.10.0'
-      react-dom: '>= 16.10.0'
-      styled-components: '>=4.4.1'
-    dependencies:
-      '@types/styled-system': 4.2.2
-      deepmerge: 4.2.2
-      hoist-non-react-statics: 3.3.2
-      moize: 6.1.0
-      pcln-icons: 4.4.0_982f345c6517e6b20b959e1766c1f475
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
-      styled-system: 4.2.4
-    dev: true
-
   /pcln-design-system/4.13.0_673930caa6f3f003d53efe635833dda5:
     resolution: {integrity: sha512-LTeOdC+VredrPNDB8gGas/3GGuce6ukkUIcN2AMQUXbYkHQvODk6+jgMcmyqBIKZL5+6l3yVSTtsCrTCq4o5+w==}
     engines: {node: '>=14', npm: '>=6.0.0'}
@@ -19457,24 +19439,6 @@ packages:
     dependencies:
       lodash.upperfirst: 4.3.1
       pcln-design-system: 4.13.0_673930caa6f3f003d53efe635833dda5
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-      styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
-      styled-system: 4.2.4
-    dev: true
-
-  /pcln-icons/4.4.0_982f345c6517e6b20b959e1766c1f475:
-    resolution: {integrity: sha512-H09OjDC0UJHQubV8UYKUIAjSAlaFTUPLYMQfRBzwKIdut1BO5wGlya2KMxfp2u+QKprNUuncIN8uKyzGd9Tcfg==}
-    engines: {node: '>=14', npm: '>=6.0.0'}
-    peerDependencies:
-      pcln-design-system: ^4.12.1
-      react: '>= 16.10.0'
-      react-dom: '>= 16.10.0'
-      styled-components: '>=4.4.1'
-    dependencies:
-      lodash.upperfirst: 4.3.1
-      pcln-design-system: 4.12.1_673930caa6f3f003d53efe635833dda5
       prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
