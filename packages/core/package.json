@@ -1,12 +1,13 @@
 {
   "name": "pcln-design-system",
-  "version": "4.13.0",
+  "version": "4.13.1-beta.0-ts-core",
   "description": "Priceline Design System",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "lib-commonjs/index.js",
+  "module": "lib-esm/index.js",
   "sideEffects": false,
   "files": [
-    "dist/"
+    "lib-esm",
+    "lib-commonjs"
   ],
   "repository": {
     "type": "git",
@@ -21,18 +22,13 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "build": "run-s build:js build:types",
-    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
-    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "build:js": "run-p build:babel:*",
-    "build:types": "mkdir -p ./dist/types && cp ../../tools/types/types/index.d.ts dist/types",
-    "clean": "rimraf dist",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "jest --verbose --coverage",
-    "test:ci": "jest --silent --coverage --runInBand",
-    "test:update": "jest --updateSnapshot",
-    "test:ci:update": "jest --runInBand --updateSnapshot"
+    "build": "heft test --clean",
+    "build-only": "heft build --clean",
+    "debug": "heft --debug test --clean",
+    "start": "heft start",
+    "storybook": "heft start --storybook",
+    "test:snapshots": "heft test --update-snapshots",
+    "test:watch": "heft test --watch"
   },
   "author": "Priceline",
   "contributors": [
@@ -80,6 +76,10 @@
     "@babel/core": "^7.16.7",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
+    "@priceline/heft-component-rig": "workspace:*",
+    "@priceline/react-jesting-library": "workspace:*",
+    "@typescript-eslint/parser": "5.10.0",
+    "@typescript-eslint/eslint-plugin": "5.10.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@storybook/addon-actions": "^6.4.10",
     "@storybook/react": "^6.4.10",
@@ -98,7 +98,10 @@
     "react-test-renderer": "^17.0.2",
     "rimraf": "^3.0.2",
     "styled-components": "^4.4.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "@rushstack/heft": "^0.44.2",
+    "@types/jest": "27.4.0",
+    "@styled-system/prop-types": "^5.1.5"
   },
   "peerDependencies": {
     "react": ">= 16.10.0",

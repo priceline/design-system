@@ -416,6 +416,19 @@
       "packageName": "pcln-types",
       "projectFolder": "tools/types",
       "shouldPublish": false
+    },
+    {
+      "packageName": "@priceline/react-jesting-library",
+      "projectFolder": "tools/react-jesting-library",
+      "shouldPublish": false,
+      "cyclicDependencyProjects": ["pcln-design-system"]
+    },
+
+    // Heft Rigs
+    {
+      "packageName": "@priceline/heft-component-rig",
+      "projectFolder": "rigs/component",
+      "shouldPublish": false
     }
   ]
 }

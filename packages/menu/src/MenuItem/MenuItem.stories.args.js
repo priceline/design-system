@@ -1,8 +1,10 @@
-import { colors } from '../../../core/storybook/args'
+import { storybookArgs } from 'pcln-design-system'
 
 export const defaultArgs = {
   color: 'primary',
 }
+
+const { colors } = storybookArgs
 
 export const argTypes = {
   id: {

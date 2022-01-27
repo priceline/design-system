@@ -62,12 +62,20 @@ jspm_packages/
 common/deploy/
 common/temp/
 common/autoinstallers/*/.npmrc
-**/.rush/temp/
+**/temp/
+
 
 # build output
 **/dist/
+**/lib-commonjs/
+**/lib-esm/
+**/types/**/*.d.ts
+tsdoc-metadata.json
 
 apps/docs/out/
+
+# Heft
+**/.heft/
 
 # SVGR intermediate build steps
 packages/icons/components/

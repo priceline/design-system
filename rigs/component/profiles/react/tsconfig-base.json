@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+
+  "compilerOptions": {
+    "outDir": "../../../../../lib-esm",
+    "rootDir": "../../../../../src",
+    "rootDirs": ["../../../../../src", "../../../../../temp/sass-ts"],
+
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+
+    "esModuleInterop": true,
+    "noEmitOnError": false,
+    "allowUnreachableCode": false,
+
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["es5", "scripthost", "es2015.collection", "es2015.promise", "es2015.iterable", "dom", "es2016"],
+
+    // deviations from @rushstack/heft-web-rig/profiles/library/tsconfig-base.json
+    "strict": false,
+
+    "types": [
+      "../../rigs/component/node_modules/@types/heft-jest",
+      "../../rigs/component/node_modules/@types/node"
+    ],
+
+    "allowJs": true
+  },
+  "include": ["../../../../../src/**/*"],
+  "exclude": ["node_modules", "lib-esm"]
+}

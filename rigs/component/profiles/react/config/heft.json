@@ -1,0 +1,31 @@
+/**
+ * Defines configuration used by core Heft.
+ */
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
+
+  "eventActions": [
+    {
+      "actionKind": "deleteGlobs",
+      "heftEvent": "clean",
+      "actionId": "rig-component-clean",
+      "globsToDelete": ["dist", "lib", "lib-commonjs", "lib-esm", "temp"]
+    }
+  ],
+
+  "heftPlugins": [
+    {
+      "plugin": "@rushstack/heft-webpack5-plugin"
+    },
+    {
+      "plugin": "@rushstack/heft-jest-plugin"
+    },
+    {
+      "plugin": "@rushstack/heft-storybook-plugin",
+      "options": {
+        "storykitPackageName": "heft-storybook-react-tutorial-storykit", // todo port over and modify PCLN storykit
+        "startupModulePath": "@storybook/react/bin/index.js"
+      }
+    }
+  ]
+}
