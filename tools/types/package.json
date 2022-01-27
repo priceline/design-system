@@ -42,7 +42,7 @@
     "csstype": "^3.0.10",
     "dtslint": "^4.2.1",
     "eslint": "^8.6.0",
-    "pcln-design-system": "workspace:4.13.1-4.13.1-beta.5-ts-core",
+    "pcln-design-system": "workspace:*",
     "prettier": "^2.5.1",
     "@rushstack/eslint-patch": "^1.1.0",
     "typescript": "^4.5.4"
