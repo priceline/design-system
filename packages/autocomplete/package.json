@@ -44,7 +44,7 @@
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "workspace:4.13.1-4.13.1-beta.5-ts-core",
+    "pcln-design-system": "workspace:*",
     "pcln-icons": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
