@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "4.1.3-beta.0-ts-core",
+  "version": "4.1.3-4.13.1-beta.5-ts-core",
   "description": "React autocomplete component built with Downshift",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -44,7 +44,7 @@
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "workspace:*",
+    "pcln-design-system": "workspace:4.13.1-4.13.1-beta.5-ts-core",
     "pcln-icons": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -53,7 +53,7 @@
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": "4.13.1-beta.0-ts-core",
+    "pcln-design-system": "4.13.1-4.13.1-beta.5-ts-core",
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">=4.4.1"
