@@ -13,14 +13,22 @@ const defaultStyles = (props) => `
     color: ${getPaletteColor('primary.dark')(props)};
   }
 `
-const sideStyles = (props) =>
+
+const sidePositionStyles = (props) =>
   props.position === 'side'
     ? `
-    ${props.type == 'back' ? 'left' : 'right'}: -30px;
+    ${props.type == 'prev' ? 'left' : 'right'}: 0px;
     position: absolute;
     top: 50%;
     margin-top: -30px
     z-index: 2;
+    `
+    : null
+
+const sideStyles = (props) =>
+  props.position === 'side'
+    ? `
+    ${props.type == 'prev' ? 'left' : 'right'}: 0px;
     height: 60px;
     width: 60px;
     &:disabled {
@@ -44,6 +52,7 @@ const topBottomStyles = (props) =>
     : null
 
 const Wrapper = styled(Box)`
+  ${sidePositionStyles}
   & > button {
     ${defaultStyles}
     ${topBottomStyles}

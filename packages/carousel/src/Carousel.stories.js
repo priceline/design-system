@@ -48,7 +48,7 @@ export default {
 const BasicTemplate = (args) => (
   <Carousel {...args}>
     {Array.from(Array(SLIDE_COUNT), (_, idx) => (
-      <ToutCard height='300px' m={2} borderRadius={20} boxShadowSize='md' borderWidth={0}>
+      <ToutCard height='300px' borderRadius={20} boxShadowSize='md' borderWidth={0}>
         <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
         <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
           <Box>

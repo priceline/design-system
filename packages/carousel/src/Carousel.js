@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { CarouselProvider, Slide } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
 import { CarouselWrapper } from './Carousel.styles'
-import { Flex, Relative } from 'pcln-design-system'
+import { Flex, Relative, Box } from 'pcln-design-system'
 import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
@@ -22,6 +22,7 @@ export const Carousel = ({
   naturalSlideWidth = 100,
   visibleSlides = 1,
   arrowsPosition = 'side',
+  slideSpacing = 2,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -43,34 +44,40 @@ export const Carousel = ({
         orientation={orientation}
         infinite={infinite}
       >
-        <Flex justifyContent='flex-end' mb={3}>
-          <ArrowButton type='prev' position='top' setPosition={arrowsPosition} />
-          <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} />
-        </Flex>
+        {arrowsPosition === 'top' ? (
+          <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
+            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} />
+            <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} />
+          </Flex>
+        ) : null}
         <Relative>
-          <ArrowButton type='prev' position='side' setPosition={arrowsPosition} />
-          <Slider>
-            {React.Children.map(children, (item, index) => {
-              return (
-                // We only need to manually set width of Slide if using the `layout` prop
-                <Slide
-                  index={index}
-                  key={getSlideKey(item)}
-                  style={widths[index] && { width: widths[index] }}
-                  data-testid={`slide-${index}`}
-                >
-                  {item}
-                </Slide>
-              )
-            })}
-          </Slider>
-          <ArrowButton ml={3} type='next' position='side' setPosition={arrowsPosition} />
+          <ArrowButton ml={slideSpacing} type='prev' position='side' setPosition={arrowsPosition} />
+          <Box mx={arrowsPosition === 'side' ? '30px' : 0}>
+            <Slider>
+              {React.Children.map(children, (item, index) => {
+                return (
+                  // We only need to manually set width of Slide if using the `layout` prop
+                  <Slide
+                    index={index}
+                    key={getSlideKey(item)}
+                    style={widths[index] && { width: widths[index] }}
+                    data-testid={`slide-${index}`}
+                  >
+                    <Box p={slideSpacing}>{item}</Box>
+                  </Slide>
+                )
+              })}
+            </Slider>
+          </Box>
+          <ArrowButton mr={slideSpacing} type='next' position='side' setPosition={arrowsPosition} />
         </Relative>
-        <Flex alignItems='center' justifyContent='center' mt={3}>
-          <ArrowButton mr={3} type='prev' position='bottom' setPosition={arrowsPosition} />
-          {showDots && <Dots />}
-          <ArrowButton ml={3} type='next' position='bottom' setPosition={arrowsPosition} />
-        </Flex>
+        {arrowsPosition === 'bottom' || showDots ? (
+          <Flex alignItems='center' justifyContent='center' pt={2}>
+            <ArrowButton mr={3} type='prev' position='bottom' setPosition={arrowsPosition} />
+            {showDots && <Dots />}
+            <ArrowButton ml={3} type='next' position='bottom' setPosition={arrowsPosition} />
+          </Flex>
+        ) : null}
       </CarouselProvider>
     </CarouselWrapper>
   )
@@ -108,4 +115,6 @@ Carousel.propTypes = {
   isIntrinsicHeight: PropTypes.bool,
   /** Positioning for the navigation arrow buttons */
   arrowsPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
+  /** Padding around the slides */
+  slideSpacing: PropTypes.number,
 }
