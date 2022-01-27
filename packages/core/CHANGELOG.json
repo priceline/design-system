@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.13.1",
+      "tag": "pcln-design-system_v4.13.1",
+      "date": "Thu, 27 Jan 2022 14:53:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Build with Heft",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "b21f26fd5f90eff000e6cc125cfa0bcf3e0a6200"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.13.0",
       "tag": "pcln-design-system_v4.13.0",
       "date": "Fri, 14 Jan 2022 17:42:20 GMT",
