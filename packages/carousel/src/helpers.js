@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import moize from 'moize'
 import { v4 as uuidv4 } from 'uuid'
 import {
@@ -5,6 +6,7 @@ import {
   SM_VISIBLE_SLIDES,
   XS_VISIBLE_SLIDES_WIDTH,
   SM_VISIBLE_SLIDES_WIDTH,
+  MEDIA_QUERY_MATCH,
 } from './constants'
 
 const getSlideKey = moize(uuidv4)
@@ -19,4 +21,19 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
     ? visibleSlides[1]
     : visibleSlides[2]
 
-export { getSlideKey, getVisibleSlidesArray, getVisibleSlides }
+const useResponsiveVisibleSlides = (visibleSlides) => {
+  const [width, setWidth] = useState(window.innerWidth)
+  const handleResize = () => {
+    setWidth(window.innerWidth)
+  }
+  useEffect(() => {
+    const media = window.matchMedia(MEDIA_QUERY_MATCH)
+    media.addEventListener('change', handleResize)
+    return () => {
+      media.removeEventListener('change', handleResize)
+    }
+  })
+  return getVisibleSlides(visibleSlides, width)
+}
+
+export { getSlideKey, getVisibleSlidesArray, getVisibleSlides, useResponsiveVisibleSlides }

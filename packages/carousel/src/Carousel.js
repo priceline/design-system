@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { CarouselProvider, Slide } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
@@ -7,7 +7,7 @@ import { Flex, Relative } from 'pcln-design-system'
 import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
-import { getSlideKey, getVisibleSlidesArray, getVisibleSlides } from './helpers'
+import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
 
 export const Carousel = ({
   children,
@@ -23,25 +23,10 @@ export const Carousel = ({
   visibleSlides = 1,
   arrowsPosition = 'side',
 }) => {
-  const formattedVisibleSlides = getVisibleSlidesArray(visibleSlides)
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
-
-  const useResponsiveVisibleSlides = (visibleSlides) => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth)
-      }
-      window.addEventListener('resize', handleResize)
-      return () => {
-        window.removeEventListener('resize', handleResize)
-      }
-    })
-    return getVisibleSlides(visibleSlides, windowWidth)
-  }
-
-  const responsiveVisibleSlides = useResponsiveVisibleSlides(formattedVisibleSlides)
+  const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
+  const responsiveVisibleSlides = useResponsiveVisibleSlides(visibleSlidesArray)
 
   return (
     <CarouselWrapper>
