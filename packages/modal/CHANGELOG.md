@@ -1,6 +1,13 @@
 # Change Log - pcln-modal
 
-This log was last generated on Thu, 27 Jan 2022 14:53:43 GMT and should not be manually modified.
+This log was last generated on Thu, 27 Jan 2022 18:07:36 GMT and should not be manually modified.
+
+## 4.1.2
+Thu, 27 Jan 2022 18:07:36 GMT
+
+### Patches
+
+- Fix rounded corners when using new theme values and content overflow
 
 ## 4.1.1
 Thu, 27 Jan 2022 14:53:43 GMT

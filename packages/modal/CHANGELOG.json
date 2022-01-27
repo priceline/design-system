@@ -2,6 +2,20 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "4.1.2",
+      "tag": "pcln-modal_v4.1.2",
+      "date": "Thu, 27 Jan 2022 18:07:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix rounded corners when using new theme values and content overflow",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "06ecc93b1800778d1aa14c4e2cbdd23e30ee2fb7"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.1",
       "tag": "pcln-modal_v4.1.1",
       "date": "Thu, 27 Jan 2022 14:53:43 GMT",
