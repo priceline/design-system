@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "Fix rounded corners when using new theme values and content overflow",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

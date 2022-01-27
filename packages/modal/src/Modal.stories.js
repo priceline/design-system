@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Menu, MenuItem } from 'pcln-menu'
 import { action } from '@storybook/addon-actions'
 
 import { Modal, SmallModalHeader, ScrollLock, ModalHeader } from '../src'
-import { Button } from 'pcln-design-system'
+import { currencies } from './mockData'
+import { Button, Text, Box } from 'pcln-design-system'
 
 const StyledModal = styled(Modal)`
   height: ${(props) => props.height};
@@ -98,10 +100,53 @@ export const WithOverflow = () => (
   <ModalStory header={<SmallModalHeader />} width={['80vw', '400px', '500px']} enableOverflow />
 )
 
+export const WithOverflowAndDropdown = () => (
+  <StyledModal ariaLabel='Storybook modal.' isOpen={true} header={<SmallModalHeader />} height='100px'>
+    <Menu idx='currency-selector' buttonNode={<div>open</div>} size='twoColumns'>
+      {currencies.map((currency, index) => {
+        const selected = 'USD' === currency.code
+        return (
+          <MenuItem key={index} selected={selected}>
+            <Text regular width={32} textAlign='center' mr={3}>
+              {currency.symbol}
+            </Text>
+            <Text regular>{currency.label}</Text>
+          </MenuItem>
+        )
+      })}
+    </Menu>
+  </StyledModal>
+)
+
+export const WithOverflowAndTallContent = () => (
+  <StyledModal
+    ariaLabel='Storybook modal.'
+    isOpen={true}
+    header={<ModalHeader onClose={action('Modal closed!')} />}
+    height='100px'
+    enableOverflow
+    disableCloseButton
+  >
+    <Box color='primary' height='500px'>
+      Priceline
+    </Box>
+  </StyledModal>
+)
+
 export const WithImagemodeAndColorful = () => (
   <ModalStory
     bg='orange'
     header={<SmallModalHeader />}
+    width={['100px', '200px', '500px']}
+    imgMode
+    disableCloseButton
+  />
+)
+
+export const RoundedModalWithHeader = () => (
+  <ModalStory
+    bg='orange'
+    header={<ModalHeader title='Priceline' />}
     width={['100px', '200px', '500px']}
     imgMode
     disableCloseButton

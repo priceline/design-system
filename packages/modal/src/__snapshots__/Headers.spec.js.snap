@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ModalHeader render 1`] = `
+.c1 {
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #0a0;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -77,23 +94,6 @@ exports[`ModalHeader render 1`] = `
   box-sizing: border-box;
 }
 
-.c1 {
-  padding-left: 16px;
-  padding-right: 16px;
-  background-color: #0a0;
-  color: #fff;
-  border-radius: xl;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 40px;
-}
-
 .c2 {
   font-weight: 700;
   font-size: 14px;
@@ -127,7 +127,8 @@ exports[`ModalHeader render 1`] = `
   >
     <div
       class="c1"
-      color="white"
+      color="text.lightest"
+      height="40px"
     >
       <div
         class="c2"
