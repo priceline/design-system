@@ -6,7 +6,7 @@ const defaultStyles = (props) => `
   background: ${getPaletteColor('background.lightest')(props)};
   border-radius: 100%;
   border: none;
-  box-shadow: ${props.theme.shadows.md};
+  box-shadow: ${props.theme.boxShadows[1]};
   color: ${getPaletteColor('primary.base')(props)};
   &:hover {
     background: ${getPaletteColor('background.base')(props)};
@@ -38,7 +38,7 @@ const topBottomStyles = (props) =>
       opacity: 40%;
       color: ${getPaletteColor('border.base')(props)} !important;
       background: ${getPaletteColor('background.lightest')(props)} !important;
-      box-shadow: ${props.theme.shadows.sm};
+      box-shadow: ${props.theme.boxShadows[0]};
     }
   `
     : null

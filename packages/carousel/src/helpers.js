@@ -36,4 +36,4 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   return getVisibleSlides(visibleSlides, width)
 }
 
-export { getSlideKey, getVisibleSlidesArray, getVisibleSlides, useResponsiveVisibleSlides }
+export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides }

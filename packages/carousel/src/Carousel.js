@@ -44,11 +44,11 @@ export const Carousel = ({
         infinite={infinite}
       >
         <Flex justifyContent='flex-end' mb={3}>
-          <ArrowButton type='back' position='top' setPosition={arrowsPosition} />
+          <ArrowButton type='prev' position='top' setPosition={arrowsPosition} />
           <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} />
         </Flex>
         <Relative>
-          <ArrowButton type='back' position='side' setPosition={arrowsPosition} />
+          <ArrowButton type='prev' position='side' setPosition={arrowsPosition} />
           <Slider>
             {React.Children.map(children, (item, index) => {
               return (
@@ -67,7 +67,7 @@ export const Carousel = ({
           <ArrowButton ml={3} type='next' position='side' setPosition={arrowsPosition} />
         </Relative>
         <Flex alignItems='center' justifyContent='center' mt={3}>
-          <ArrowButton mr={3} type='back' position='bottom' setPosition={arrowsPosition} />
+          <ArrowButton mr={3} type='prev' position='bottom' setPosition={arrowsPosition} />
           {showDots && <Dots />}
           <ArrowButton ml={3} type='next' position='bottom' setPosition={arrowsPosition} />
         </Flex>

@@ -8,8 +8,8 @@ import { Wrapper } from './ArrowButton.styles'
 const ArrowButton = ({ type, position, setPosition, ...props }) =>
   setPosition === position ? (
     <Hide xs sm>
-      <Wrapper type={type} position={position} {...props}>
-        {type === 'back' ? (
+      <Wrapper type={type} position={position} {...props} data-testid={`${type}-${position}`}>
+        {type === 'prev' ? (
           <ButtonBack>
             <ChevronLeft size={type === 'side' ? 40 : 32} ml='-3px' />
           </ButtonBack>
@@ -23,7 +23,7 @@ const ArrowButton = ({ type, position, setPosition, ...props }) =>
   ) : null
 
 ArrowButton.propTypes = {
-  type: PropTypes.oneOf(['back', 'next']),
+  type: PropTypes.oneOf(['prev', 'next']),
   position: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   setPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
 }

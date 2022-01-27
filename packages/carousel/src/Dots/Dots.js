@@ -4,7 +4,7 @@ import { StyledDotGroup } from './Dots.styles'
 
 const Dots = () => (
   <Hide xs sm>
-    <StyledDotGroup />
+    <StyledDotGroup data-testid='dot_group' />
   </Hide>
 )
 
