@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typographyAttrs should handle an array prop 1`] = `
+Object {
+  "caps": Array [],
+  "fontSize": Array [
+    "52px",
+    "64px",
+    "80px",
+  ],
+  "fontWeight": Array [
+    700,
+    700,
+    700,
+  ],
+  "letterSpacing": Array [],
+  "lineHeight": Array [
+    "64px",
+    "80px",
+    "96px",
+  ],
+  "textTransform": Array [],
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=article 1`] = `
+Object {
+  "fontSize": "16px",
+  "fontWeight": 500,
+  "letterSpacing": "-0.1px",
+  "lineHeight": "28px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=caption 1`] = `
+Object {
+  "fontSize": "12px",
+  "fontWeight": 500,
+  "lineHeight": "16px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=disclaimer 1`] = `
+Object {
+  "fontSize": "11px",
+  "fontWeight": 500,
+  "letterSpacing": "0.2px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=heading1 1`] = `
+Object {
+  "fontSize": "40px",
+  "fontWeight": 700,
+  "lineHeight": "48px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=heading2 1`] = `
+Object {
+  "fontSize": "32px",
+  "fontWeight": 700,
+  "lineHeight": "40px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=heading3 1`] = `
+Object {
+  "fontSize": "24px",
+  "fontWeight": 700,
+  "lineHeight": "28px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=heading4 1`] = `
+Object {
+  "fontSize": "20px",
+  "fontWeight": 700,
+  "lineHeight": "24px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=heading5 1`] = `
+Object {
+  "fontSize": "16px",
+  "fontWeight": 700,
+  "lineHeight": "20px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=heading6 1`] = `
+Object {
+  "fontSize": "14px",
+  "fontWeight": 700,
+  "lineHeight": "16px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=highlight 1`] = `
+Object {
+  "caps": true,
+  "fontSize": "10px",
+  "fontWeight": 500,
+  "letterSpacing": "0.2px",
+  "lineHeight": "12px",
+  "textTransform": "uppercase",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=overline 1`] = `
+Object {
+  "fontSize": "12px",
+  "fontWeight": 700,
+  "letterSpacing": "1px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=paragraph 1`] = `
+Object {
+  "fontSize": "14px",
+  "fontWeight": 500,
+  "letterSpacing": "-0.05px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subheading1 1`] = `
+Object {
+  "fontSize": "40px",
+  "fontWeight": 500,
+  "lineHeight": "48px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subheading2 1`] = `
+Object {
+  "fontSize": "40px",
+  "fontWeight": 500,
+  "lineHeight": "48px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subheading3 1`] = `
+Object {
+  "fontSize": "24px",
+  "fontWeight": 500,
+  "lineHeight": "28px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subheading4 1`] = `
+Object {
+  "fontSize": "20px",
+  "fontWeight": 500,
+  "lineHeight": "24px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subheading5 1`] = `
+Object {
+  "fontSize": "16px",
+  "fontWeight": 500,
+  "lineHeight": "20px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subheading6 1`] = `
+Object {
+  "fontSize": "14px",
+  "fontWeight": 500,
+  "lineHeight": "16px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=subtitle1 1`] = `
+Object {
+  "fontSize": "52px",
+  "fontWeight": 500,
+  "lineHeight": "64px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=title1 1`] = `
+Object {
+  "fontSize": "80px",
+  "fontWeight": 700,
+  "lineHeight": "96px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=title2 1`] = `
+Object {
+  "fontSize": "64px",
+  "fontWeight": 700,
+  "lineHeight": "80px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=title3 1`] = `
+Object {
+  "fontSize": "52px",
+  "fontWeight": 700,
+  "lineHeight": "64px",
+}
+`;

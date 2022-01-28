@@ -1,3 +1,5 @@
+import { theme as dsTheme } from '../theme'
+
 /**
  * Create colorStyles based on the passed in theme
  *
@@ -5,7 +7,7 @@
  *
  * @returns {Object} The generated colorStyles
  */
-export const createColorStyles = (theme: { colors?: Record<string, string> } = {}) => {
+export const createColorStyles = (theme: typeof dsTheme) => {
   const {
     white,
     text,

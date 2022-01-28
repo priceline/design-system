@@ -29,6 +29,7 @@ const textStylesAllowedPropsAcc = {
   lineHeight: [],
   letterSpacing: [],
   caps: [],
+  textTransform: [],
 }
 
 export function typographyAttrs(props) {
@@ -41,15 +42,10 @@ export function typographyAttrs(props) {
   if (Array.isArray(textStyle)) {
     const styles = textStyle.map((style) => theme.typography[style])
     return styles.reduce((acc, style) => {
-      const styleProps = Object.keys(style)
+      const styleProps = style && style.hasOwnProperty('fontSize') ? Object.keys(style) : []
 
       styleProps.forEach((styleProp) => {
-        const stylePropValue = style[styleProp] || null
-        if (styleProp && stylePropValue) {
-          acc[styleProp].push(stylePropValue)
-        } else {
-          acc[styleProp].push(null)
-        }
+        acc[styleProp].push(style[styleProp])
       })
 
       return acc

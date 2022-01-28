@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Text } from '..'
 import { defaultArgs, argTypes } from './Text.stories.args'
+import { textStylesValues } from '../utils'
 
 export default {
   title: 'Typography / Text',
@@ -35,6 +36,21 @@ export const ResponsiveTypography = Template.bind({})
 ResponsiveTypography.args = {
   textStyle: ['heading6', 'heading5', 'heading4', 'heading3', 'heading2', 'heading1'],
 }
+
+export const TypographyScale = () => (
+  <Box>
+    {textStylesValues.map((textStyle) => (
+      <Box mb={5} key={textStyle}>
+        <Text textStyle={textStyle}>
+          The quick brown fox jumps over the lazy dog to discover new deals every day.
+        </Text>
+        <Text my={2} color='text.tint' textStyle='subheading5'>
+          {textStyle}
+        </Text>
+      </Box>
+    ))}
+  </Box>
+)
 
 export const FontSize = () => (
   <div>
