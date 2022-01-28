@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Update MenuList overflow from scroll to auto",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}
