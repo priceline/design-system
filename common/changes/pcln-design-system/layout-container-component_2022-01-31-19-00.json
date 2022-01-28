@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Create Layout component and add size prop to Container",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

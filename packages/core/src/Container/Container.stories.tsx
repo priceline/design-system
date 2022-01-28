@@ -1,9 +1,11 @@
 import React from 'react'
-import { Container, Box } from '..'
+import { Container, Box, Flex } from '..'
+import { argTypes } from './Container.stories.args'
 
 export default {
   title: 'Container',
   component: Container,
+  argTypes,
 }
 
 export const DefaultAlignWithThemeMaxWidth = () => (
@@ -28,4 +30,19 @@ export const InputMaxWidth = () => (
 
 InputMaxWidth.story = {
   name: 'Input maxWidth',
+}
+
+const Template = (args) => (
+  <Flex width='100%' color='primary'>
+    <Container {...args} style={{ border: `1px solid` }}>
+      <Box color='background.light' style={{ height: `100vh`, border: `1px solid` }}>
+        Container Component
+      </Box>
+    </Container>
+  </Flex>
+)
+
+export const SizeProp = Template.bind({})
+SizeProp.args = {
+  size: 'md',
 }
