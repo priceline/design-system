@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import Motion from './Motion'
 import { Relative } from '../Relative'
 import { Text } from '../Text'
@@ -29,6 +30,14 @@ const Block = (props) => (
     width={props.width || '300px'}
   />
 )
+
+Motion.propTypes = {
+  left: PropTypes.any,
+  right: PropTypes.any,
+  m: PropTypes.any,
+  height: PropTypes.any,
+  width: PropTypes.any,
+}
 
 export default {
   title: 'Motion',
