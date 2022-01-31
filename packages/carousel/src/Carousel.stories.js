@@ -52,20 +52,20 @@ const BasicTemplate = (args) => (
         <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
         <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
           <Box>
-            <Text fontSize={[0, 0, 1, 1, 2]} fontWeight='bold' mb={2}>
+            <Text fontSize={[0, null, 1, 1, 2]} fontWeight='bold' mb={2}>
               City {idx}, AB
             </Text>
-            <Text fontSize={[0, 0, 0, 0, 1]}>Hotel for 2 nights</Text>
+            <Text fontSize={[0, null, null, null, 1]}>Hotel for 2 nights</Text>
             <Text fontSize={[0, 0, 0, 0, 1]}>+ Round-trip flight</Text>
           </Box>
           <Text textAlign='right' ml='auto'>
-            <Text.s fontSize={[0, 0, 0, 0, 1]} fontWeight='bold'>
+            <Text.s fontSize={[0, null, null, null, 1]} fontWeight='bold'>
               $554
             </Text.s>
-            <Text fontSize={[0, 0, 1, 1, 3]} fontWeight='bold' color='secondary.base' mx={1}>
+            <Text fontSize={[0, null, 1, 1, 3]} fontWeight='bold' color='secondary.base' mx={1}>
               $365
             </Text>
-            <Text fontSize={[0, 0, 0, 0, 1]} color='text.light'>
+            <Text fontSize={[0, null, null, null, 1]} color='text.light'>
               per person
             </Text>
           </Text>
