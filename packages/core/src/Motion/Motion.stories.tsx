@@ -32,7 +32,7 @@ export default {
 
 export const GrowCenter = () => {
   const [isVisible, setIsVisible] = useState(null)
-  const toggleVisible = () => {
+  function toggleVisible() {
     setIsVisible(!isVisible)
   }
   return (
@@ -59,7 +59,7 @@ export const GrowCenter = () => {
 
 export const QuickGrow = () => {
   const [isVisible, setIsVisible] = useState(null)
-  const toggleVisible = () => {
+  function toggleVisible() {
     setIsVisible(!isVisible)
   }
   return (
@@ -85,7 +85,7 @@ export const QuickGrow = () => {
 
 export const ExpandDown = () => {
   const [isVisible, setIsVisible] = useState(null)
-  const toggleVisible = () => {
+  function toggleVisible() {
     setIsVisible(!isVisible)
   }
   return (
@@ -110,7 +110,7 @@ export const ExpandDown = () => {
 
 export const ExpandUp = () => {
   const [isVisible, setIsVisible] = useState(null)
-  const toggleVisible = () => {
+  function toggleVisible() {
     setIsVisible(!isVisible)
   }
   return (
@@ -137,7 +137,7 @@ export const ExpandUp = () => {
 
 export const GrowBottom = () => {
   const [isVisible, setIsVisible] = useState(null)
-  const toggleVisible = () => {
+  function toggleVisible() {
     setIsVisible(!isVisible)
   }
   return (
@@ -161,10 +161,10 @@ export const GrowBottom = () => {
 export const GrowBottomAndRight = () => {
   const [isVisible, setIsVisible] = useState(null)
   const [isVisibleb, setIsVisibleb] = useState(null)
-  const toggleVisible = () => {
+  function toggleVisible() {
     setIsVisible(!isVisible)
   }
-  const toggleVisibleb = () => {
+  function toggleVisibleb() {
     setIsVisibleb(!isVisibleb)
   }
   return (
