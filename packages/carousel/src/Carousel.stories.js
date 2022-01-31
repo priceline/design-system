@@ -56,7 +56,7 @@ const BasicTemplate = (args) => (
               City {idx}, AB
             </Text>
             <Text fontSize={[0, null, null, null, 1]}>Hotel for 2 nights</Text>
-            <Text fontSize={[0, 0, 0, 0, 1]}>+ Round-trip flight</Text>
+            <Text fontSize={[0, null, null, null, 1]}>+ Round-trip flight</Text>
           </Box>
           <Text textAlign='right' ml='auto'>
             <Text.s fontSize={[0, null, null, null, 1]} fontWeight='bold'>
