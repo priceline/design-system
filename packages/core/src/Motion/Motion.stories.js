@@ -31,7 +31,7 @@ const Block = (props) => (
   />
 )
 
-Motion.propTypes = {
+Block.propTypes = {
   left: PropTypes.any,
   right: PropTypes.any,
   m: PropTypes.any,
