@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import Motion from './Motion'
 import { Relative } from '../Relative'
 import { Text } from '../Text'
@@ -18,26 +17,6 @@ const FixedBottom = styled(Box)`
   position: fixed;
   bottom: 0;
 `
-const Block = (props) => (
-  <RoundedAbsolute
-    {...props}
-    left={props.left || 0}
-    right={props.right || 0}
-    m={props.m || 'auto'}
-    boxShadowSize='lg'
-    bg='background.lightest'
-    height={props.height || '300px'}
-    width={props.width || '300px'}
-  />
-)
-
-Block.propTypes = {
-  left: PropTypes.any,
-  right: PropTypes.any,
-  m: PropTypes.any,
-  height: PropTypes.any,
-  width: PropTypes.any,
-}
 
 export default {
   title: 'Motion',
@@ -62,7 +41,17 @@ export const GrowCenter = () => {
         Click Here to see more
       </Text>
       <Motion isAnimatedState={isVisible} variation='GROW_CENTER'>
-        <Block top={-40} bottom={0} />
+        <RoundedAbsolute
+          top={-40}
+          bottom={0}
+          left={0}
+          right={0}
+          m='auto'
+          boxShadowSize='lg'
+          bg='background.lightest'
+          height='300px'
+          width='300px'
+        />
       </Motion>
     </Relative>
   )
@@ -79,7 +68,16 @@ export const QuickGrow = () => {
         Click Here to see more
       </Text>
       <Motion isAnimatedState={isVisible} variation='QUICK_GROW'>
-        <Block m={0} top={0} right='auto' left='calc(100% - 6px)' />
+        <RoundedAbsolute
+          m={0}
+          top={0}
+          right='auto'
+          left='calc(100% - 6px)'
+          boxShadowSize='lg'
+          bg='background.lightest'
+          height='300px'
+          width='300px'
+        />
       </Motion>
     </Relative>
   )
@@ -96,7 +94,15 @@ export const ExpandDown = () => {
         Click Here to see more
       </Text>
       <Motion isAnimatedState={isVisible} variation='EXPAND_DOWN'>
-        <Block top={8} />
+        <RoundedAbsolute
+          top={8}
+          right={0}
+          m='auto'
+          boxShadowSize='lg'
+          bg='background.lightest'
+          height='300px'
+          width='300px'
+        />
       </Motion>
     </Relative>
   )
@@ -114,7 +120,15 @@ export const ExpandUp = () => {
       </Text>
       <FixedBottom>
         <Motion isAnimatedState={isVisible} variation='EXPAND_DOWN'>
-          <Block height='calc(100vh - 100px)' bottom={-20} width='400px' />
+          <RoundedAbsolute
+            height='calc(100vh - 100px)'
+            bottom={-20}
+            width='400px'
+            right={0}
+            m='auto'
+            boxShadowSize='lg'
+            bg='background.lightest'
+          />
         </Motion>
       </FixedBottom>
     </Relative>
@@ -129,7 +143,16 @@ export const GrowBottom = () => {
   return (
     <Relative bg='primary' color='white' width='400px' mt='50px'>
       <Motion isAnimatedState={isVisible} variation='GROW_Y'>
-        <Block onClick={toggleVisible} top={0} />
+        <RoundedAbsolute
+          onClick={toggleVisible}
+          top={0}
+          right={0}
+          m='auto'
+          boxShadowSize='lg'
+          bg='background.lightest'
+          height='300px'
+          width='300px'
+        />
       </Motion>
     </Relative>
   )
@@ -148,12 +171,32 @@ export const GrowBottomAndRight = () => {
     <Flex>
       <Relative bg='primary' color='white' width='320px' mt='50px'>
         <Motion isAnimatedState={isVisible} variation='GROW_XY'>
-          <Block onClick={toggleVisible} top={0} left={0} />
+          <RoundedAbsolute
+            onClick={toggleVisible}
+            top={0}
+            left={0}
+            right={0}
+            m='auto'
+            boxShadowSize='lg'
+            bg='background.lightest'
+            height='300px'
+            width='300px'
+          />
         </Motion>
       </Relative>
       <Relative bg='primary' color='white' width='320px' mt='50px'>
         <Motion isAnimatedState={isVisibleb} variation='GROW_XY'>
-          <Block onClick={toggleVisibleb} top={0} left={0} />
+          <RoundedAbsolute
+            onClick={toggleVisibleb}
+            top={0}
+            left={0}
+            right={0}
+            m='auto'
+            boxShadowSize='lg'
+            bg='background.lightest'
+            height='300px'
+            width='300px'
+          />
         </Motion>
       </Relative>
     </Flex>

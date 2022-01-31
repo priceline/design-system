@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'testing-library'
+import { render } from '@priceline/react-jesting-library'
 import Motion from './Motion'
 
 describe('Motion', () => {

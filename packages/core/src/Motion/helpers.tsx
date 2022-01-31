@@ -18,7 +18,7 @@ const getEasing = ({ isAnimatedState, variation }) =>
 
 const getDefaultCss = (variation) =>
   css`
-    ${KEY_FRAMES[variation][ACTION_KEY[false]].end}
+    ${KEY_FRAMES[variation][ACTION_KEY.false].end}
   `
 
 const getAnimation = ({ isAnimatedState, variation }) =>
