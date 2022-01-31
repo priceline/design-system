@@ -51,25 +51,35 @@ export const Carousel = ({
           </Flex>
         ) : null}
         <Relative>
-          <ArrowButton ml={slideSpacing} type='prev' position='side' setPosition={arrowsPosition} />
-          <Box mx={arrowsPosition === 'side' ? '30px' : 0}>
-            <Slider>
-              {React.Children.map(children, (item, index) => {
-                return (
-                  // We only need to manually set width of Slide if using the `layout` prop
-                  <Slide
-                    index={index}
-                    key={getSlideKey(item)}
-                    style={widths[index] && { width: widths[index] }}
-                    data-testid={`slide-${index}`}
-                  >
-                    <Box p={slideSpacing}>{item}</Box>
-                  </Slide>
-                )
-              })}
-            </Slider>
-          </Box>
-          <ArrowButton mr={slideSpacing} type='next' position='side' setPosition={arrowsPosition} />
+          <ArrowButton
+            pl={slideSpacing}
+            ml='-30px'
+            type='prev'
+            position='side'
+            setPosition={arrowsPosition}
+          />
+          <Slider>
+            {React.Children.map(children, (item, index) => {
+              return (
+                // We only need to manually set width of Slide if using the `layout` prop
+                <Slide
+                  index={index}
+                  key={getSlideKey(item)}
+                  style={widths[index] && { width: widths[index] }}
+                  data-testid={`slide-${index}`}
+                >
+                  <Box p={slideSpacing}>{item}</Box>
+                </Slide>
+              )
+            })}
+          </Slider>
+          <ArrowButton
+            mr='-30px'
+            pr={slideSpacing}
+            type='next'
+            position='side'
+            setPosition={arrowsPosition}
+          />
         </Relative>
         {arrowsPosition === 'bottom' || showDots ? (
           <Flex alignItems='center' justifyContent='center' pt={2}>
