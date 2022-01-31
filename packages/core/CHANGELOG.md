@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 27 Jan 2022 14:53:43 GMT and should not be manually modified.
+This log was last generated on Mon, 31 Jan 2022 19:30:09 GMT and should not be manually modified.
+
+## 4.14.0
+Mon, 31 Jan 2022 19:30:09 GMT
+
+### Minor changes
+
+- Create Layout component and add size prop to Container
 
 ## 4.13.1
 Thu, 27 Jan 2022 14:53:43 GMT

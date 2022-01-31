@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.14.0",
+      "tag": "pcln-design-system_v4.14.0",
+      "date": "Mon, 31 Jan 2022 19:30:09 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create Layout component and add size prop to Container",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "87b0c0e2d4f97c4337cf0a0989762f10db8734a5"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.13.1",
       "tag": "pcln-design-system_v4.13.1",
       "date": "Thu, 27 Jan 2022 14:53:43 GMT",
