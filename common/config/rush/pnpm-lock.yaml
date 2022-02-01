@@ -202,6 +202,7 @@ importers:
       moize: ^6.1.0
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:*
+      pcln-icons: workspace:*
       prop-types: ^15.8.1
       pure-react-carousel: ^1.27.8
       react: ^17.0.2
@@ -234,6 +235,7 @@ importers:
       jest-styled-components: 6.3.4_styled-components@4.4.1
       npm-run-all: 4.1.5
       pcln-design-system: link:../core
+      pcln-icons: link:../icons
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       rimraf: 3.0.2

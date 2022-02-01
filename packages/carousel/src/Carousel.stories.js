@@ -1,10 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Flex, Card, Image, Text } from 'pcln-design-system'
+import { Flex, Card, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
+import styled from 'styled-components'
 import { Carousel } from './Carousel'
 
 const SLIDE_COUNT = 10
 
+const ToutCard = styled(Card)`
+  overflow: hidden;
+`
 export default {
   title: 'pcln-carousel / Carousel',
   component: Carousel,
@@ -44,13 +48,30 @@ export default {
 const BasicTemplate = (args) => (
   <Carousel {...args}>
     {Array.from(Array(SLIDE_COUNT), (_, idx) => (
-      <Card height='300px' color='primary.light'>
-        <Flex border='primary' key={idx}>
-          Slide {idx}
+      <ToutCard height='300px' borderRadius={20} boxShadowSize='md' borderWidth={0}>
+        <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
+        <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
+          <Box>
+            <Text fontSize={[0, null, 1, 1, 2]} fontWeight='bold' mb={2}>
+              City {idx}, AB
+            </Text>
+            <Text fontSize={[0, null, null, null, 1]}>Hotel for 2 nights</Text>
+            <Text fontSize={[0, null, null, null, 1]}>+ Round-trip flight</Text>
+          </Box>
+          <Text textAlign='right' ml='auto'>
+            <Text.s fontSize={[0, null, null, null, 1]} fontWeight='bold'>
+              $554
+            </Text.s>
+            <Text fontSize={[0, null, 1, 1, 3]} fontWeight='bold' color='secondary.base' mx={1}>
+              $365
+            </Text>
+            <Text fontSize={[0, null, null, null, 1]} color='text.light'>
+              per person
+            </Text>
+          </Text>
         </Flex>
-      </Card>
+      </ToutCard>
     ))}
-    child - item - item - item - item
   </Carousel>
 )
 
@@ -59,6 +80,7 @@ Basic.args = {
   visibleSlides: 3,
   showDots: false,
   showForwardBackBtns: true,
+  arrowPositions: 'bottom',
 }
 
 const VerticalTemplate = (args) => (
