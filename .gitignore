@@ -80,6 +80,10 @@ apps/docs/out/
 # SVGR intermediate build steps
 packages/icons/components/
 
+# ESLint temp
+**/temp/_eslint-*.json
+
+# IDEs
 .vscode
 .idea
 

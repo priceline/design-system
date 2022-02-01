@@ -10,12 +10,11 @@
   "collectCoverageFrom": [
     "src/**/*.{js,ts}",
     "!src/storybook/**/*",
-    "!src/utils/attrs/**/*",
     "!src/**/*.{stories,story}.*",
     "!**/__test__/**",
     "!**/*.d.ts"
   ],
-  "coverageReporters": ["lcov", "html"],
+  "coverageReporters": ["lcov", "html", "text"],
   "coverageDirectory": "<rootDir>/coverage",
   "coverageThreshold": {
     "global": {
@@ -24,5 +23,8 @@
       "lines": 100,
       "statements": 100
     }
-  }
+  },
+
+  "silent": true,
+  "verbose": true
 }

@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`borderRadiusAttrs should handle an array prop 1`] = `
+Object {
+  "borderRadius": Array [
+    "none",
+    "2px",
+    "2px",
+    "2px",
+    "2px",
+    "2px",
+    "2px",
+    "2px",
+    "9999px",
+    "2px",
+    "2px",
+    "2px",
+    Array [
+      "none",
+      "xsm",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "full",
+      "action-sm",
+      "action-md",
+      "action-lg",
+      "9999px",
+    ],
+  ],
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=bottom and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "0 0 2px 2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=bottomLeft and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "0 0 0 2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=bottomRight and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "0 0 2px 0",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=2xl 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=3xl 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=action-lg 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=action-md 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=action-sm 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=full 1`] = `
+Object {
+  "borderRadius": "9999px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=lg 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=md 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=none 1`] = `
+Object {
+  "borderRadius": "none",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=sm 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=full and borderRadius=xsm 1`] = `
+Object {
+  "borderRadius": "2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=left and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "2px 0 0 2px",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=right and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "0 2px 2px 0",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=top and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "2px 2px 0 0",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=topLeft and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "2px 0 0 0",
+}
+`;
+
+exports[`borderRadiusAttrs works with rounded=topRight and borderRadius=xl 1`] = `
+Object {
+  "borderRadius": "0 2px 0 0",
+}
+`;
