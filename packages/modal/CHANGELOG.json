@@ -2,6 +2,38 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "4.1.3",
+      "tag": "pcln-modal_v4.1.3",
+      "date": "Mon, 31 Jan 2022 19:30:09 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.14.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `4.4.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.13.1` to `4.14.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "4.1.2",
+      "tag": "pcln-modal_v4.1.2",
+      "date": "Thu, 27 Jan 2022 18:07:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix rounded corners when using new theme values and content overflow",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "06ecc93b1800778d1aa14c4e2cbdd23e30ee2fb7"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.1",
       "tag": "pcln-modal_v4.1.1",
       "date": "Thu, 27 Jan 2022 14:53:43 GMT",

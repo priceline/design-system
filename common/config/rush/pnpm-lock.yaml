@@ -498,6 +498,7 @@ importers:
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
       pcln-design-system: workspace:*
+      pcln-menu: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -523,6 +524,7 @@ importers:
       jest-styled-components: 6.3.4_styled-components@4.4.1
       npm-run-all: 4.1.5
       pcln-design-system: link:../core
+      pcln-menu: link:../menu
       prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2

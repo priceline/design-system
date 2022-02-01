@@ -55,7 +55,6 @@ const Dialog = styled(DialogContent)`
   margin-left: auto;
   margin-right: auto;
   box-shadow: ${(props) => props.theme.boxShadows[3]};
-  overflow: hidden;
   border-radius: ${themeGet('borderRadii.xl')};
   &:focus {
     outline: none;
