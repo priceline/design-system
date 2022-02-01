@@ -19,7 +19,7 @@ const sizes = {
 
 const MenuContainer = styled(Flex)`
   font-family: ${themeGet('font') || "'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif"};
-  overflow-y: scroll;
+  overflow-y: auto;
 
   & > * {
     margin-right: ${themeGet('space.1')}px;
