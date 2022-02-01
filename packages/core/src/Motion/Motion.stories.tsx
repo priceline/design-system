@@ -124,7 +124,7 @@ export const ExpandUp = () => {
             height='calc(100vh - 100px)'
             bottom={-20}
             width='400px'
-            right={0}
+            left={0}
             m='auto'
             boxShadowSize='lg'
             bg='background.lightest'
