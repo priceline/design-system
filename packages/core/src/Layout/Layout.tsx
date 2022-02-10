@@ -118,15 +118,21 @@ const ALLOWED_LAYOUT_VALUES = ['50-50', '33-33-33', '33-66', '66-33', '25-25-25-
 const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl']
 
 const propTypes = {
+  /** Children will have their widths set based on `variation` */
   children: PropTypes.node.isRequired,
+  /** Configure widths of children at different breakpoints. Numbers in each variation
+   * represent the width of the element in that position as a percentage of `Layout`'s width.
+   */
   variation: PropTypes.oneOfType([
     PropTypes.oneOf(ALLOWED_LAYOUT_VALUES),
-    PropTypes.arrayOf(ALLOWED_LAYOUT_VALUES),
-  ]),
+    PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_LAYOUT_VALUES)),
+  ]).isRequired,
+  /** Add space between columns */
   gap: PropTypes.oneOfType([
     PropTypes.oneOf(ALLOWED_GAP_VALUES),
     PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
   ]),
+  /** Add space between rows */
   rowGap: PropTypes.oneOfType([
     PropTypes.oneOf(ALLOWED_GAP_VALUES),
     PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
@@ -139,11 +145,15 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({ children, gap, rowGap,
 
   return (
     <Flex flexWrap='wrap' mx={flexMarginX} my={flexMarginY} data-testid='layout-flex'>
-      {React.Children.map(children, (child, idx) => (
-        <Box width={widths[idx]} px={boxPaddingX} py={boxPaddingY} data-testid={`box-${idx}`}>
-          {React.cloneElement(child)}
-        </Box>
-      ))}
+      {React.Children.map(
+        children,
+        (child, idx) =>
+          child && (
+            <Box width={widths[idx]} px={boxPaddingX} py={boxPaddingY} data-testid={`box-${idx}`}>
+              {React.cloneElement(child)}
+            </Box>
+          )
+      )}
     </Flex>
   )
 }
