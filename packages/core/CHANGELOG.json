@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.15.0",
+      "tag": "pcln-design-system_v4.15.0",
+      "date": "Fri, 11 Feb 2022 16:43:43 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add new Motion component",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "0837095ad73513912c2be39199799d2e8671d26a"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.14.0",
       "tag": "pcln-design-system_v4.14.0",
       "date": "Mon, 31 Jan 2022 19:30:09 GMT",
