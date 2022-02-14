@@ -827,6 +827,7 @@ importers:
       source-map-loader: ^3.0.0
       styled-components: ^4.4.1
       typescript: ^4.5.4
+      webpack: ^5.68.0
     devDependencies:
       '@priceline/heft-component-rig': link:../../rigs/component
       '@rushstack/eslint-config': 2.4.5_eslint@7.32.0+typescript@4.5.4
@@ -842,9 +843,10 @@ importers:
       pcln-design-system: 4.13.0_673930caa6f3f003d53efe635833dda5
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      source-map-loader: 3.0.1
+      source-map-loader: 3.0.1_webpack@5.68.0
       styled-components: 4.4.1_react-dom@17.0.2+react@17.0.2
       typescript: 4.5.4
+      webpack: 5.68.0
 
   ../../tools/types:
     specifiers:
@@ -2496,22 +2498,22 @@ packages:
       '@cspotcode/source-map-consumer': 0.8.0
     dev: false
 
-  /@definitelytyped/header-parser/0.0.103:
-    resolution: {integrity: sha512-MZRm+Sx8h+oT587QmbQeFbctqMQk0NS9WVrrYtDXkui36NFsyjhCPgVVuU8fZoJxTGvoNVAoziZQ7TzCZPXI6Q==}
+  /@definitelytyped/header-parser/0.0.104:
+    resolution: {integrity: sha512-UJ6WCqR4erfka35umvTyOC+dsVPZydv+CcNHW74di3QAdY89DOOx2IVsbUizNvRNPKR7FKP9noIEjNYd6vzZEw==}
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.103
+      '@definitelytyped/typescript-versions': 0.0.104
       '@types/parsimmon': 1.10.6
       parsimmon: 1.18.1
     dev: true
 
-  /@definitelytyped/typescript-versions/0.0.103:
-    resolution: {integrity: sha512-OzwYh4O3egHmlV16a/VSbb+fXz9YYIlIQn3d1GJyPS//prCaZBbvDg4cxJ+k1T78C6vNL7Iky1MUb7r3DUkfkw==}
+  /@definitelytyped/typescript-versions/0.0.104:
+    resolution: {integrity: sha512-0c5k94l84QpvZ6oMbOIkttQQqdATGMHIVCpKkSqlKt+3JMzr/svZOwgbcn7hzVDedxETGjbn19k++QcE/F/wOw==}
     dev: true
 
-  /@definitelytyped/utils/0.0.103:
-    resolution: {integrity: sha512-6QsbhSx2FiP6RVewnNV+P3yU1bGT44kXlouae6iQ5zFb1BVo3E2LOG13R3IBabU6o8HqOz8Qz3Bhge0v/PInqQ==}
+  /@definitelytyped/utils/0.0.104:
+    resolution: {integrity: sha512-abfVggmE57SVaK5SzRIeydrrNF73hdUJ/jnBvnegRcnKD8j4GtkLQ3DkE7mHBp2UP1dDTrSBbER/CgUfmFtCSA==}
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.103
+      '@definitelytyped/typescript-versions': 0.0.104
       '@qiwi/npm-registry-client': 8.9.1
       '@types/node': 14.18.5
       charm: 1.0.2
@@ -11442,7 +11444,7 @@ packages:
     peerDependencies:
       typescript: '*'
     dependencies:
-      '@definitelytyped/header-parser': 0.0.103
+      '@definitelytyped/header-parser': 0.0.104
       command-exists: 1.2.9
       rimraf: 3.0.2
       semver: 6.3.0
@@ -11458,9 +11460,9 @@ packages:
     peerDependencies:
       typescript: '>= 3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.7.0-dev || >= 3.8.0-dev || >= 3.9.0-dev || >= 4.0.0-dev'
     dependencies:
-      '@definitelytyped/header-parser': 0.0.103
-      '@definitelytyped/typescript-versions': 0.0.103
-      '@definitelytyped/utils': 0.0.103
+      '@definitelytyped/header-parser': 0.0.104
+      '@definitelytyped/typescript-versions': 0.0.104
+      '@definitelytyped/utils': 0.0.104
       dts-critic: 3.3.11_typescript@4.5.4
       fs-extra: 6.0.1
       json-stable-stringify: 1.0.1
@@ -22350,7 +22352,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /source-map-loader/3.0.1:
+  /source-map-loader/3.0.1_webpack@5.68.0:
     resolution: {integrity: sha512-Vp1UsfyPvgujKQzi4pyDiTOnE3E4H+yHvkVRN3c/9PJmQS4CQJExvcDvaX/D+RV+xQben9HJ56jMJS3CgUeWyA==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
@@ -22359,6 +22361,7 @@ packages:
       abab: 2.0.5
       iconv-lite: 0.6.3
       source-map-js: 1.0.1
+      webpack: 5.68.0
     dev: true
 
   /source-map-resolve/0.5.3:
@@ -23411,6 +23414,32 @@ packages:
       source-map: 0.6.1
       terser: 5.10.0_acorn@8.7.0
       webpack: 5.66.0
+    transitivePeerDependencies:
+      - acorn
+    dev: true
+
+  /terser-webpack-plugin/5.3.0_acorn@8.7.0+webpack@5.68.0:
+    resolution: {integrity: sha512-LPIisi3Ol4chwAaPP8toUJ3L4qCM1G0wao7L3qNv57Drezxj6+VEyySpPw4B1HSO2Eg/hDY/MNF5XihCAoqnsQ==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      '@swc/core': '*'
+      esbuild: '*'
+      uglify-js: '*'
+      webpack: ^5.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      esbuild:
+        optional: true
+      uglify-js:
+        optional: true
+    dependencies:
+      jest-worker: 27.4.6
+      schema-utils: 3.1.1
+      serialize-javascript: 6.0.0
+      source-map: 0.6.1
+      terser: 5.10.0_acorn@8.7.0
+      webpack: 5.68.0
     transitivePeerDependencies:
       - acorn
     dev: true
@@ -25202,6 +25231,46 @@ packages:
       schema-utils: 3.1.1
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.0_acorn@8.7.0+webpack@5.66.0
+      watchpack: 2.3.1
+      webpack-sources: 3.2.3
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+    dev: true
+
+  /webpack/5.68.0:
+    resolution: {integrity: sha512-zUcqaUO0772UuuW2bzaES2Zjlm/y3kRBQDVFVCge+s2Y8mwuUTdperGaAv65/NtRL/1zanpSJOq/MD8u61vo6g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    peerDependencies:
+      webpack-cli: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
+    dependencies:
+      '@types/eslint-scope': 3.7.3
+      '@types/estree': 0.0.50
+      '@webassemblyjs/ast': 1.11.1
+      '@webassemblyjs/wasm-edit': 1.11.1
+      '@webassemblyjs/wasm-parser': 1.11.1
+      acorn: 8.7.0
+      acorn-import-assertions: 1.8.0_acorn@8.7.0
+      browserslist: 4.19.1
+      chrome-trace-event: 1.0.3
+      enhanced-resolve: 5.8.3
+      es-module-lexer: 0.9.3
+      eslint-scope: 5.1.1
+      events: 3.3.0
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.9
+      json-parse-better-errors: 1.0.2
+      loader-runner: 4.2.0
+      mime-types: 2.1.34
+      neo-async: 2.6.2
+      schema-utils: 3.1.1
+      tapable: 2.2.1
+      terser-webpack-plugin: 5.3.0_acorn@8.7.0+webpack@5.68.0
       watchpack: 2.3.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:

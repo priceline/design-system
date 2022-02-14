@@ -44,7 +44,8 @@
     "source-map-loader": "^3.0.0",
     "styled-components": "^4.4.1",
     "typescript": "^4.5.4",
-    "@priceline/heft-component-rig": "workspace:*"
+    "@priceline/heft-component-rig": "workspace:*",
+    "webpack": "^5.68.0"
   },
   "peerDependencies": {
     "pcln-design-system": "^4",
