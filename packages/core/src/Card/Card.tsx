@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
+import { borderRadius, boxShadow } from 'styled-system'
 import PropTypes, { InferProps } from 'prop-types'
 
 import { Box } from '../Box'
 import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
   borderRadiusAttrs,
+  borderRadiusValues,
   boxShadowAttrs,
+  boxShadowSizeValues,
+  applyVariations,
+  deprecatedColorValue,
+  paletteFamilies,
+  roundedValues,
+  getPaletteColor,
 } from '../utils'
 
 const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
@@ -19,6 +24,10 @@ const propTypes = {
   borderColor: deprecatedColorValue(),
   color: deprecatedColorValue(),
   borderWidth: PropTypes.oneOf([0, 1, 2]),
+  borderRadiusSize: PropTypes.oneOf(borderRadiusValues),
+  rounded: PropTypes.oneOf(roundedValues),
+  boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
+  boxShadowColor: PropTypes.oneOf(paletteFamilies),
 }
 
 const Card: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) => ({
@@ -27,6 +36,8 @@ const Card: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) =
 }))`
   ${applyVariations('Card')}
   ${boxBorder}
+  ${borderRadius}
+  ${boxShadow}
 `
 
 Card.propTypes = propTypes
