@@ -353,18 +353,19 @@ Object {
     "article": Object {
       "fontSize": "16px",
       "fontWeight": 500,
-      "letterSpacing": "-0.1px",
+      "letterSpacing": "-0.006rem",
       "lineHeight": "28px",
     },
     "caption": Object {
       "fontSize": "12px",
       "fontWeight": 500,
+      "letterSpacing": "0.006rem",
       "lineHeight": "16px",
     },
     "disclaimer": Object {
       "fontSize": "11px",
       "fontWeight": 500,
-      "letterSpacing": "0.2px",
+      "letterSpacing": "0.013rem",
       "lineHeight": "16px",
     },
     "heading1": Object {
@@ -378,9 +379,9 @@ Object {
       "lineHeight": "40px",
     },
     "heading3": Object {
-      "fontSize": "24px",
+      "fontSize": "26px",
       "fontWeight": 700,
-      "lineHeight": "28px",
+      "lineHeight": "32px",
     },
     "heading4": Object {
       "fontSize": "20px",
@@ -401,20 +402,20 @@ Object {
       "caps": true,
       "fontSize": "10px",
       "fontWeight": 500,
-      "letterSpacing": "0.2px",
+      "letterSpacing": "0.013rem",
       "lineHeight": "12px",
       "textTransform": "uppercase",
     },
     "overline": Object {
       "fontSize": "12px",
       "fontWeight": 700,
-      "letterSpacing": "1px",
+      "letterSpacing": "0.063rem",
       "lineHeight": "16px",
     },
     "paragraph": Object {
       "fontSize": "14px",
       "fontWeight": 500,
-      "letterSpacing": "-0.05px",
+      "letterSpacing": "-0.003rem",
       "lineHeight": "20px",
     },
     "subheading1": Object {
@@ -428,9 +429,9 @@ Object {
       "lineHeight": "48px",
     },
     "subheading3": Object {
-      "fontSize": "24px",
+      "fontSize": "26px",
       "fontWeight": 500,
-      "lineHeight": "28px",
+      "lineHeight": "32px",
     },
     "subheading4": Object {
       "fontSize": "20px",
