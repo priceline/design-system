@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add boxShadow and borderRadius support to styled Card via attrs",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
