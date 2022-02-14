@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "React autocomplete component built with Downshift",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -53,7 +53,7 @@
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": "4.15.0",
+    "pcln-design-system": "4.15.1",
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">=4.4.1"
