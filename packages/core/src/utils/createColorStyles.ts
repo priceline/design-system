@@ -3,9 +3,9 @@ import { theme as dsTheme } from '../theme'
 /**
  * Create colorStyles based on the passed in theme
  *
- * @param {Object} theme The passed in theme
+ * @param theme - The passed in theme
  *
- * @returns {Object} The generated colorStyles
+ * @returns - The generated colorStyles
  */
 export const createColorStyles = (theme: typeof dsTheme) => {
   const {

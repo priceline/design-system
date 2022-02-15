@@ -1,16 +1,19 @@
+const { storykitAddons, features, framework, core } = require('@priceline/storybook-preset')
+
 module.exports = {
-  addons: ['@storybook/addon-essentials', '@storybook/addon-a11y', 'storybook-addon-performance/register'],
   stories: [
-    '../../../packages/*/src/**/*.stories.js',
-    '../../../packages/*/lib-esm/**/*.stories.mdx',
-    '../../../packages/*/lib-esm/**/*.stories.@(js|jsx|ts|tsx)',
+    '../../../packages/carousel/src/**/*.stories.js',
+    '../../../packages/autocomplete/src/**/*.stories.js',
+    '../../../packages/icons/src/**/*.stories.js',
+    '../../../packages/menu/src/**/*.stories.js',
+    '../../../packages/modal/src/**/*.stories.js',
+    '../../../packages/popover/src/**/*.stories.js',
+    '../../../packages/slider/src/**/*.stories.js',
+    '../../../packages/core/lib-esm/**/*.stories.mdx',
+    '../../../packages/core/lib-esm/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  framework: '@storybook/react',
-  features: {
-    postcss: false,
-    storyStoreV7: true,
-  },
-  core: {
-    builder: 'webpack5',
-  },
+  addons: storykitAddons,
+  features,
+  framework,
+  core,
 }

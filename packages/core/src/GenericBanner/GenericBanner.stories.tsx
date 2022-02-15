@@ -23,8 +23,8 @@ const UnderlinedLinkText = styled(Text)`
 
 const Template = (args) => <GenericBanner {...args} />
 
-export const basicBannerAllInline = Template.bind({})
-basicBannerAllInline.args = {
+export const BasicBannerAllInline = Template.bind({})
+BasicBannerAllInline.args = {
   p: 3,
   heading: (
     <Text.span fontWeight='bold' mr={1}>
@@ -36,7 +36,7 @@ basicBannerAllInline.args = {
   color: 'caution.light',
 }
 
-export const basicBannerAllInlineRightIcon = () => (
+export const BasicBannerAllInlineRightIcon = () => (
   <GenericBanner
     p={2}
     heading={
@@ -55,7 +55,7 @@ export const basicBannerAllInlineRightIcon = () => (
   />
 )
 
-export const basicBannerBlockWithURLPropsCTA = () => (
+export const BasicBannerBlockWithURLPropsCTA = () => (
   <GenericBanner
     p={2}
     heading={
@@ -84,7 +84,7 @@ export const basicBannerBlockWithURLPropsCTA = () => (
   />
 )
 
-export const bannerWithOnClick = () => (
+export const BannerWithOnClick = () => (
   <GenericBanner
     p={2}
     heading={
@@ -103,7 +103,7 @@ export const bannerWithOnClick = () => (
   />
 )
 
-export const bannerWithOnClickAndCTA = () => (
+export const BannerWithOnClickAndCTA = () => (
   <GenericBanner
     p={2}
     heading={
@@ -127,7 +127,7 @@ export const bannerWithOnClickAndCTA = () => (
   />
 )
 
-export const bannerWithOnClickButtonStyleCta = () => (
+export const BannerWithOnClickButtonStyleCta = () => (
   <GenericBanner
     buttonVariation='fill'
     buttonSize='small'
@@ -153,7 +153,7 @@ export const bannerWithOnClickButtonStyleCta = () => (
   />
 )
 
-export const bannerWithURLPropsAndCta = () => (
+export const BannerWithURLPropsAndCta = () => (
   <GenericBanner
     p={2}
     heading={
@@ -181,7 +181,7 @@ export const bannerWithURLPropsAndCta = () => (
   />
 )
 
-export const bannerWithURLProps = () => (
+export const BannerWithURLProps = () => (
   <GenericBanner
     p={2}
     heading={
@@ -204,7 +204,7 @@ export const bannerWithURLProps = () => (
   />
 )
 
-export const bannerWithURLPropsAndCustomHeadingSize = () => (
+export const BannerWithURLPropsAndCustomHeadingSize = () => (
   <GenericBanner
     p={2}
     heading={
@@ -227,7 +227,7 @@ export const bannerWithURLPropsAndCustomHeadingSize = () => (
   />
 )
 
-export const bannerWithURLPropsButtonStyleCta = () => (
+export const BannerWithURLPropsButtonStyleCta = () => (
   <GenericBanner
     p={2}
     color='alert.light'

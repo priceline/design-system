@@ -39,11 +39,11 @@ export const deprecatedColorValue = () => (props, propName, componentName) => {
 /**
  * Converts a hex color to rgb
  *
- * @example hexToRgb('#0068EF') => 'rgb(0, 104, 239)'
+ * @example hexToRgb('#0068EF') =\> 'rgb(0, 104, 239)'
  *
- * @param {string} color The color to transform to rgb
+ * @param color - The color to transform to rgb
  *
- * @returns {string} The color in rgb
+ * @returns The color in rgb
  */
 export const hexToRgb = (color) => {
   color = color.substring(1)
@@ -61,11 +61,11 @@ export const hexToRgb = (color) => {
 /**
  * Decomposes a color into an array of values
  *
- * @example decomposeColor('#0068EF') => [0, 122, 255]
+ * @example decomposeColor('#0068EF') =\> [0, 122, 255]
  *
- * @param {string} color The color to decompose
+ * @param color - The color to decompose
  *
- * @returns {Array} An array of the color values
+ * @returns An array of the color values
  */
 export const decomposeColor = (color) => {
   if (color.charAt(0) === '#') {
@@ -81,12 +81,12 @@ export const decomposeColor = (color) => {
 /**
  * Gets the luminance of a color
  *
- * @example getLuminance('#0068EF') => 0.211
+ * @example getLuminance('#0068EF') =\> 0.211
  * @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  *
  * @param color - The color to get the luminance of
  *
- * @return The luminance of the color
+ * @returns The luminance of the color
  */
 export const getLuminance = (color) => {
   const [r, g, b] = decomposeColor(color).map((val) => {
@@ -112,8 +112,8 @@ export const getContrastRatio = (colorA, colorB) => {
 
 /**
  *
- * @param {*} array An array of sizes, ex: ['small', null, null, null, null, 'medium']
- * @param {*} length A number: this will be used to slice the above array
+ * @param array - An array of sizes, ex: ['small', null, null, null, null, 'medium']
+ * @param length - A number: this will be used to slice the above array
  *
  * @returns This function's purpose is to determine which item in the provided array to return at each breakpoint
  * 1) takes in an array, splits the array at the given length and creates a new smaller array
@@ -137,16 +137,16 @@ export const getBreakpointSize = (array, length) => {
  *
  */
 
-export const applySizes =
-  (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) =>
-  ({ size }) => {
-    if (sizes && typeof size === 'string') {
-      // prettier-ignore
-      return css`${sizes[size] || sizes[defaultSize] || ''}`
-    }
-    if (sizes && Array.isArray(size)) {
-      // prettier-ignore
-      return css`${sizes[getBreakpointSize(size, 1)]};
+export const applySizes = (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) => ({
+  size,
+}) => {
+  if (sizes && typeof size === 'string') {
+    // prettier-ignore
+    return css`${sizes[size] || sizes[defaultSize] || ''}`
+  }
+  if (sizes && Array.isArray(size)) {
+    // prettier-ignore
+    return css`${sizes[getBreakpointSize(size, 1)]};
         ${mediaQueriesOptions.sm} {
           ${sizes[getBreakpointSize(size, 2)]};
         }
@@ -162,8 +162,8 @@ export const applySizes =
         ${mediaQueriesOptions.xxl} {
           ${sizes[getBreakpointSize(size, 6)]};
         }`
-    }
   }
+}
 
 const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
 
@@ -175,48 +175,44 @@ const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
  * Once updated to styled-components v4, componentName is no
  * longer needed as it is part of forwardedClass.displayName
  *
- * @param {string} componentName The name of the component
- * @param {Object} variations    An object of variation styles
- *
- * @returns {array}
+ * @param componentName - The name of the component
+ * @param variations - An object of variation styles
  */
-export const applyVariations =
-  (componentName, variations = null) =>
-  (props) => {
-    let { color } = props
-    const { variation } = props
+export const applyVariations = (componentName, variations = null) => (props) => {
+  let { color } = props
+  const { variation } = props
 
-    const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
+  const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
 
-    let shade
-    if (colorShade) {
-      color = colorShade[1]
-      shade = colorShade[2]
-    }
+  let shade
+  if (colorShade) {
+    color = colorShade[1]
+    shade = colorShade[2]
+  }
 
-    const isValidShade = shade && typeof shade === 'string'
+  const isValidShade = shade && typeof shade === 'string'
 
-    if (variations && typeof variation === 'string') {
-      if (isValidShade) {
-        // prettier-ignore
-        return css`${variations[variation] || ''}
-          ${typeof color === 'string' &&
-          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
-      }
-
-      // prettier-ignore
-      return css`${variations[variation] || ''}
-        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
-    }
-
+  if (variations && typeof variation === 'string') {
     if (isValidShade) {
       // prettier-ignore
-      return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
+      return css`${variations[variation] || ''}
+          ${typeof color === 'string' &&
+          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
     }
 
     // prettier-ignore
-    return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
+    return css`${variations[variation] || ''}
+        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
   }
+
+  if (isValidShade) {
+    // prettier-ignore
+    return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
+  }
+
+  // prettier-ignore
+  return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
+}
 
 /**
  * Gets the color of a palette shade, using props.color as
@@ -228,26 +224,24 @@ export const applyVariations =
  * @example getPaletteColor('primary.base')(props) =\> theme.palette.primary.base
  * @example getPaletteColor('primary', 'base')(props) =\> theme.palette.primary.base
  */
-export const getPaletteColor =
-  (...args) =>
-  (props) => {
-    let color = args.length === 2 ? args[0] : props.color
-    let shade = args.length === 2 ? args[1] : args[0]
+export const getPaletteColor = (...args) => (props) => {
+  let color = args.length === 2 ? args[0] : props.color
+  let shade = args.length === 2 ? args[1] : args[0]
 
-    const colorShade = shade.match(colorShadeRegex)
+  const colorShade = shade.match(colorShadeRegex)
 
-    if (colorShade) {
-      color = colorShade[0]
-      shade = colorShade[1]
-    }
-
-    return (
-      themeGet(`palette.${color}.${shade}`)(props) ||
-      themeGet(`palette.${color}`)(props) ||
-      themeGet(`colors.${color}`)(props) ||
-      color
-    )
+  if (colorShade) {
+    color = colorShade[0]
+    shade = colorShade[1]
   }
+
+  return (
+    themeGet(`palette.${color}.${shade}`)(props) ||
+    themeGet(`palette.${color}`)(props) ||
+    themeGet(`colors.${color}`)(props) ||
+    color
+  )
+}
 
 /**
  * Gets the text color that belongs on a given background color

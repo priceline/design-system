@@ -9,9 +9,9 @@ export default {
 
 const steps = [{ color: 'warning' }, { color: 'caution' }, { color: 'primary' }, { color: 'success' }]
 
-export const emptyProgressBar = () => <ProgressBar steps={steps} currentStep={0} />
+export const EmptyProgressBar = () => <ProgressBar steps={steps} currentStep={0} />
 
-export const basicProgressBar = () => <ProgressBar steps={steps} currentStep={3} />
+export const BasicProgressBar = () => <ProgressBar steps={steps} currentStep={3} />
 
 export const Thick = () => <ProgressBar steps={steps} currentStep={1} stepHeight='10px' />
 

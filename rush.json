@@ -350,7 +350,7 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["pcln-icons"]
+      "cyclicDependencyProjects": ["pcln-icons", "@priceline/storybook-preset"]
     },
     {
       "packageName": "pcln-autocomplete",
@@ -420,6 +420,12 @@
     {
       "packageName": "@priceline/react-jesting-library",
       "projectFolder": "tools/react-jesting-library",
+      "shouldPublish": false,
+      "cyclicDependencyProjects": ["pcln-design-system"]
+    },
+    {
+      "packageName": "@priceline/storybook-preset",
+      "projectFolder": "tools/storybook-preset",
       "shouldPublish": false,
       "cyclicDependencyProjects": ["pcln-design-system"]
     },

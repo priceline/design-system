@@ -23,7 +23,7 @@
     {
       "plugin": "@rushstack/heft-storybook-plugin",
       "options": {
-        "storykitPackageName": "heft-storybook-react-tutorial-storykit", // todo port over and modify PCLN storykit
+        "storykitPackageName": "@priceline/storybook-preset",
         "startupModulePath": "@storybook/react/bin/index.js"
       }
     }

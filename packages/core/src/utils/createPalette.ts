@@ -22,10 +22,10 @@ export const paletteFamilies = [
 /**
  * Create the palette based on passed in theme
  *
- * @param {Object=} palette The passed in palette
- * @param {Object}  theme   The passed in theme
+ * @param palette - The passed in palette
+ * @param theme - The passed in theme
  *
- * @returns {Object} The generated palette
+ * @returns The generated palette
  */
 export const createPalette = ({ palette = {}, ...theme }) => {
   const {

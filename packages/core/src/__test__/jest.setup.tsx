@@ -7,8 +7,8 @@ import renderer from 'react-test-renderer'
 
 import { createTheme } from '..'
 
-global.rendererCreateWithTheme = (Tree) =>
-  renderer.create(<ThemeProvider theme={createTheme()}>{Tree}</ThemeProvider>)
+global.rendererCreateWithTheme = (tree) =>
+  renderer.create(<ThemeProvider theme={createTheme()}>{tree}</ThemeProvider>)
 
 global.requestAnimationFrame =
   global.requestAnimationFrame ||

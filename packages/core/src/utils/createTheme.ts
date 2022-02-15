@@ -6,7 +6,7 @@ import { createTextStyles, createColorStyles, createMediaQueries, createPalette 
 /**
  * Adds aliases to an array of keys
  *
- * @param {Array} arr The array to add aliases to
+ * @param arr - The array to add aliases to
  */
 const addAliases = (arr) => {
   arr.forEach((val, key) => {

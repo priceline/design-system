@@ -8,8 +8,8 @@ import { Flex, Box } from '..'
  * Returns an array of values with the same length as numChildren with each item
  * set to the corresponding value in the variation string. If numChildren is greater than
  * the number of digits in variation, the same variation values will be repeated.
- * @param variationWidth
- * @param numChildren
+ * @param variationWidth - variation string
+ * @param numChildren - number of children
  * @returns
  */
 const getNonhomogeneousWidths = (variationWidth, numChildren) => {
@@ -45,8 +45,8 @@ const getWidthsForVariation = (variation: string, numChildren: number) => {
 /**
  * Returns an array of responsive arrays of numbers with same length as numChildren. Each value represents the
  * width of the corresponding child.
- * @param variation
- * @param numChildren
+ * @param variation - variation string to determine how items are sized
+ * @param numChildren - number of children
  * @returns
  */
 const getChildrenWidths = (variation: string, numChildren: number) => {
@@ -81,7 +81,7 @@ const gapValues = {
 /**
  * Returns an object containing responsive arrays of values for mx to apply to
  * the wrapper flex and px values to apply to the children.
- * @param gapProp
+ * @param gapProp - value passed in as gap prop
  * @returns
  */
 const getGapValues = (gapProp, rowGapProp) => {
