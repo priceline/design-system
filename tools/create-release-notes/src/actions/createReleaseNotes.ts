@@ -64,11 +64,7 @@ export const _transformRushComments = (comments): Change[] => {
 }
 
 export const formatNotesMarkdown = (notes: Release): string => {
-  return `# \`${notes.packageName}\` v${notes.version}
-
-> Created ${notes.date}
-
-|Type | Change | Author | Commit |
+  return `|Type | Change | Author | Commit |
 |-----|--------|--------|--------|
 ${notes.changes.map(_formatChangeRow).join('\n')}
 `
