@@ -14,6 +14,7 @@ import {
   Link,
   Text,
   ThemeProvider,
+  FilterChip,
 } from 'pcln-design-system'
 import Component from '@reach/component-component'
 import Slider from 'pcln-slider'
@@ -97,6 +98,23 @@ export const colors = () => (
     >
       <Button color='error' variation='outline' mx={2}>
         Error Popover
+      </Button>
+    </Popover>
+  </Flex>
+)
+
+const FilterChipContent = () => (
+  <Box p={2}>
+    <FilterChip>Hello</FilterChip>
+    <FilterChip>World</FilterChip>
+  </Box>
+)
+
+export const filterChips = () => (
+  <Flex>
+    <Popover renderContent={FilterChipContent} placement='bottom' ariaLabel='Default Popover' width={130}>
+      <Button color='primary' variation='outline' mx={2}>
+        Popover with Filter Chips
       </Button>
     </Popover>
   </Flex>

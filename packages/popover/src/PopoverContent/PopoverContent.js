@@ -121,6 +121,7 @@ class PopoverContent extends Component {
                         data-testid='dialog-content'
                         id={`popover-description-${idx}`}
                         borderRadius='xl'
+                        tabIndex='-1'
                       >
                         {content}
                       </Box>

@@ -26,7 +26,7 @@ describe('ButtonChip', () => {
     expect(getByTestId('testId')).not.toHaveAttribute('disabled')
 
     //style
-    expect(buttonChip).toHaveStyleRule('margin', '8px')
+    expect(buttonChip).toHaveStyleRule('margin', '3px')
   })
 
   test('Disabled', () => {
