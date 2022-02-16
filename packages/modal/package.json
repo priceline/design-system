@@ -1,6 +1,6 @@
 {
   "name": "pcln-modal",
-  "version": "4.1.7",
+  "version": "4.1.8-test-publish-4",
   "description": "React component for modal",
   "engines": {
     "node": ">=14",
@@ -40,8 +40,8 @@
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",
     "npm-run-all": "^4.1.5",
-    "pcln-design-system": "workspace:4.15.2",
-    "pcln-menu": "workspace:4.4.8",
+    "pcln-design-system": "workspace:4.15.3-test-publish-4",
+    "pcln-menu": "workspace:4.4.9-test-publish-4",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -51,7 +51,7 @@
     "@babel/core": "^7.16.7"
   },
   "peerDependencies": {
-    "pcln-design-system": "4.15.2",
+    "pcln-design-system": "4.15.3-test-publish-4",
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">= 4.4.1",
