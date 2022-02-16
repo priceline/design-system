@@ -1,0 +1,95 @@
+{
+  "name": "@priceline/storybook-preset",
+  "version": "0.0.1",
+  "description": "Storybook Preset with commonly used addons and tools",
+  "scripts": {
+    "_phase:build": "heft build --clean",
+    "_phase:test": "heft test --no-build",
+    "build": "heft test --clean",
+    "build-only": "heft build --clean",
+    "debug": "heft --debug test --clean",
+    "postpublish": "node ../../common/scripts/install-run-rush.js slack-publish-notification --package @pcln/storybook-preset",
+    "test:snapshots": "heft test --no-build --update-snapshots",
+    "test:watch": "heft test --watch"
+  },
+  "main": "lib-commonjs/index.js",
+  "module": "lib-esm/index.js",
+  "types": "types/index.d.ts",
+  "license": "UNLICENSED",
+  "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+  "keywords": [
+    "storybook",
+    "documentation"
+  ],
+  "repository": {
+    "directory": "storybook/storybook-preset",
+    "type": "git",
+    "url": "github:pcln/pcln-web"
+  },
+  "files": [
+    "lib-esm",
+    "lib-commonjs",
+    "types"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.prod.pcln.com/repository/npm-pcln/"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
+    "@babel/runtime": "^7.16.7",
+    "@storybook/addon-a11y": "^6.4.12",
+    "@storybook/addon-actions": "^6.4.12",
+    "@storybook/addon-essentials": "^6.4.12",
+    "@storybook/addon-links": "^6.4.12",
+    "@storybook/addon-viewport": "^6.4.12",
+    "@storybook/addons": "^6.4.12",
+    "@storybook/api": "^6.4.12"
+  },
+  "devDependencies": {
+    "@priceline/eslint-config": "workspace:*",
+    "@priceline/heft-component-rig": "workspace:*",
+    "@reach/router": "^1.2.1",
+    "@rushstack/eslint-config": "~2.4.5",
+    "@rushstack/heft": "^0.44.0",
+    "@storybook/builder-webpack5": "^6.4.12",
+    "@storybook/cli": "^6.4.12",
+    "@storybook/components": "^6.4.12",
+    "@storybook/core-events": "^6.4.12",
+    "@storybook/manager-webpack5": "^6.4.12",
+    "@storybook/react": "^6.4.12",
+    "@storybook/theming": "^6.4.12",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.1",
+    "@types/node": "^16.10.1",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@types/webpack-env": "^1.16.3",
+    "addon-screen-reader": "^1.8.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "~4.2.1",
+    "eslint": "^7.32.0",
+    "jest": "~25.4.0",
+    "pcln-design-system": "workspace:*",
+    "pcln-icons": "workspace:*",
+    "pcln-menu": "workspace:*",
+    "pcln-popover": "workspace:*",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "source-map-loader": "^3.0.0",
+    "storybook-addon-performance": "^0.16.1",
+    "style-loader": "~1.2.1",
+    "styled-components": "^4.4.1",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0"
+  },
+  "peerDependencies": {
+    "babel-loader": "^8.2.2",
+    "pcln-design-system": "^4",
+    "pcln-icons": "^4",
+    "react": ">= 16.12.0",
+    "react-dom": ">= 16.12.0"
+  }
+}

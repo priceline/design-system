@@ -8,7 +8,7 @@ WithThemeProvider.propTypes = {
   children: PropTypes.node,
 }
 
-const customRender = (ui, options) => render(ui, { wrapper: WithThemeProvider, ...options })
+const customRender: unknown = (ui, options) => render(ui, { wrapper: WithThemeProvider, ...options })
 
 // re-export everything
 export * from '@testing-library/react'

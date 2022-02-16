@@ -11,6 +11,9 @@ const LabelText = styled.span`
 `
 
 class MockForm extends React.Component {
+  private setState
+  private state
+
   public constructor(props) {
     super(props)
     this.state = {
@@ -20,16 +23,13 @@ class MockForm extends React.Component {
     }
   }
 
-  private setState
-  private state
-
-  updateSelection = (event) => {
+  private updateSelection = (event) => {
     this.setState({
       selection: Number(event.target.value),
     })
   }
 
-  toggleDisabled = () => {
+  private toggleDisabled = () => {
     this.setState((prevState) => ({
       disabled: !prevState.disabled,
     }))

@@ -3,9 +3,9 @@ import { theme as dsTheme } from '../theme'
 /**
  * Create textStyles based on the passed in theme
  *
- * @param {Object} theme The passed in theme
+ * @param theme - The passed in theme
  *
- * @returns {Object} The generated textStyles
+ * @returns The generated textStyles
  */
 const createTextStyles = (theme: typeof dsTheme) => {
   const { fontSizes, fontWeights, lineHeights, letterSpacings } = theme
