@@ -77,7 +77,6 @@
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@priceline/heft-component-rig": "workspace:*",
-    "@priceline/react-jesting-library": "workspace:*",
     "@priceline/storybook-preset": "workspace:*",
     "@typescript-eslint/parser": "5.10.0",
     "@typescript-eslint/eslint-plugin": "5.10.0",

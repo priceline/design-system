@@ -2,17 +2,7 @@
 
 exports[`RatingBadge renders 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
+  .c1 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: #f68013;
@@ -22,6 +12,16 @@ exports[`RatingBadge renders 1`] = `
   line-height: 1.5;
   font-weight: 700;
   border-radius: 2px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div

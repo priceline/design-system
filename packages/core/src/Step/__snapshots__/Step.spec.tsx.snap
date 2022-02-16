@@ -2,17 +2,7 @@
 
 exports[`Step should handle onClick 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+  .c2 {
   color: #0068ef;
   font-weight: 700;
   font-size: 14px;
@@ -68,6 +58,16 @@ exports[`Step should handle onClick 1`] = `
   background-color: #fff;
 }
 
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
     class="c0"
   >
@@ -103,16 +103,6 @@ exports[`Step should render a completed step correctly 1`] = `
 
 .c3 {
   outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c4 {
@@ -168,6 +158,16 @@ exports[`Step should render a completed step correctly 1`] = `
 
 .c1:hover {
   background-color: #fff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -225,16 +225,6 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   outline: none;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 .c4 {
   color: #0068ef;
   font-weight: 700;
@@ -291,6 +281,16 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   background-color: #fff;
 }
 
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
     class="c0"
   >
@@ -332,17 +332,7 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 
 exports[`Step should render an active step correctly 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+  .c2 {
   color: #0068ef;
   font-weight: 700;
   font-size: 14px;
@@ -396,6 +386,16 @@ exports[`Step should render an active step correctly 1`] = `
 
 .c1:hover {
   background-color: #fff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -421,17 +421,7 @@ exports[`Step should render an active step correctly 1`] = `
 
 exports[`Step should render correctly with no props without throwing 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+  .c2 {
   color: #4f6f8f;
   font-size: 14px;
 }
@@ -484,6 +474,16 @@ exports[`Step should render correctly with no props without throwing 1`] = `
 
 .c1:hover {
   background-color: #fff;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div

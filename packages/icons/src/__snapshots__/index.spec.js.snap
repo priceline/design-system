@@ -6239,6 +6239,54 @@ exports[`renders Lock 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders Logout 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5-5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`renders Loyalty 1`] = `
 <DocumentFragment>
   .c1 {
@@ -9220,6 +9268,53 @@ exports[`renders Security 1`] = `
     >
       <path
         d="M12 2L4 5.6v5.5c0 5 3.4 9.8 8 10.9 4.6-1.1 8-5.9 8-10.9V5.6L12 2zm0 10h6.2c-.5 3.7-2.9 7.1-6.2 8.1V12H5.8V6.8L12 4v8z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders Share 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2a.8.8 0 00-.566.234l-2.4 2.4A.8.8 0 009.6 6H11v11a1 1 0 102 0V6h1.4a.8.8 0 00.567-1.365l-2.4-2.4A.8.8 0 0012 2zM6 7c-1.093 0-2 .907-2 2v11c0 1.093.907 2 2 2h12c1.093 0 2-.907 2-2V9c0-1.093-.907-2-2-2h-1a1 1 0 100 2h1v11H6V9h1a1 1 0 100-2H6z"
       />
     </svg>
   </div>

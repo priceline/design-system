@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent } from '@priceline/react-jesting-library'
+import { render, fireEvent } from '../__test__/testing-library'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
 import { Button, Input, theme, createTheme, getPaletteColor } from '..'

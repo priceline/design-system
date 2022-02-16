@@ -132,17 +132,7 @@ exports[`Avatar renders initials 1`] = `
 
 exports[`Avatar renders mr elon 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -195,6 +185,16 @@ exports[`Avatar renders mr elon 1`] = `
   border-radius: 50%;
   background-size: cover;
   background-image: url(https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg);
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div

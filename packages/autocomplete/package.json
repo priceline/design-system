@@ -21,7 +21,7 @@
     "test": "jest --verbose --coverage",
     "test:ci": "jest --silent --coverage --runInBand",
     "test:update": "jest --updateSnapshot",
-    "test:ci:update": "jest --runInBand --updateSnapshot"
+    "test:snapshots": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
     "downshift": "^3.2.6",

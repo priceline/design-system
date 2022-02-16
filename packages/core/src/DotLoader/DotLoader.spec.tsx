@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '@priceline/react-jesting-library'
+import { render, screen } from '../__test__/testing-library'
 import DotLoader from './DotLoader'
 
 describe('DotLoader', () => {

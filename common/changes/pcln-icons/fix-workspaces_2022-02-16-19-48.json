@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Fix pcln-design-system devDep",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen, fireEvent } from '@priceline/react-jesting-library'
+import { render, screen, fireEvent } from '../__test__/testing-library'
 import PasswordInput from './PasswordInput'
 
 const sampleRegexChecks = [

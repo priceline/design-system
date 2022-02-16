@@ -18,16 +18,6 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   outline: none;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -89,6 +79,16 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   opacity: 0;
   position: absolute;
   z-index: 0;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -166,16 +166,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   outline: none;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -237,6 +227,16 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   opacity: 0;
   position: absolute;
   z-index: 0;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -313,16 +313,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   outline: none;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -384,6 +374,16 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   opacity: 0;
   position: absolute;
   z-index: 0;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div

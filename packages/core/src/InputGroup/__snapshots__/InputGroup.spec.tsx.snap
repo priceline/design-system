@@ -2,17 +2,7 @@
 
 exports[`InputGroup renders 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,6 +26,16 @@ border-color:#c0cad5 .c1 > .c2 {
 .c1 input {
   border: 0;
   box-shadow: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
