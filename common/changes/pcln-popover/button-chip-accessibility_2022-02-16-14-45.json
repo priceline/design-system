@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Fix tab-index/focus-trap accessibility issue within PopoverContent",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

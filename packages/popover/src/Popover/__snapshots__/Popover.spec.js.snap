@@ -221,6 +221,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
         color="background.lightest"
         data-testid="dialog-content"
         id="popover-description-1"
+        tabindex="-1"
       >
         <div
           class=""
@@ -367,6 +368,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
         color="background.lightest"
         data-testid="dialog-content"
         id="popover-description-1"
+        tabindex="-1"
       >
         <div
           class=""
@@ -513,6 +515,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
         color="background.lightest"
         data-testid="dialog-content"
         id="popover-description-1"
+        tabindex="-1"
       >
         <div
           class=""

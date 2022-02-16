@@ -1,21 +1,17 @@
 # Contributing
 
-- [Contributing](#contributing)
-
-  - [Local Development](#local-development)
-  - [Clone the repo](#clone-the-repo)
-  - [Lerna](#lerna)
-  - [Install dependencies](#install-dependencies)
-  - [Running tests](#running-tests)
-  - [Storybook](#storybook)
-  - [Publishing](#publishing)
-  - [Static Docs Site](#static-docs-site)
-  - [Troubleshooting](#troubleshooting)
-  - [GitHub Flow](#github-flow)
-  - [Beta Version](#beta-version)
-  - [Pull Requests](#pull-requests)
-
-  - [Creating Components](COMPONENT_GUIDANCE.md)
+ - [Clone the repo](#clone-the-repo)
+ - [Preparation](#preparation)
+ - [Running tests](#running-tests)
+ - [Linting and formatting](#linting-and-formatting)
+ - [Creating new components](#creating-new-components)
+ - [Storybook](#storybook)
+ - [Publishing](#publishing)
+ - [Static Docs Site](#static-docs-site)
+ - [Troubleshooting](#troubleshooting)
+ - [GitHub Flow](#github-flow)
+ - [Pull Requests](#pull-requests)
+ 
 
 If you'd like to contribute to the Design System, we'd love to have your help. As with any open source project, we ask that you be kind, professional, and courteous towards others.
 
@@ -27,13 +23,7 @@ Contributing doesn't necessarily mean committing code; we also encourage you to:
 - Use the Design System in your project and provide feedback
 - Add yourself to our Contributors list using `npm run contributors:add` then enter your username and type of contribution.
 
-## Local Development
 
-The Design System is a [Rush](https://rushjs.io/) Monorepo. Install `rush` globally:
-
-```bash
-npm i -g @microsoft/rush
-```
 
 ### Clone the repo
 
@@ -43,6 +33,12 @@ cd design-system
 ```
 
 ### Preparation
+
+The Design System is a [Rush](https://rushjs.io/) Monorepo. Install `rush` globally:
+
+```bash
+npm i -g @microsoft/rush
+```
 
 To install dependencies:
 
@@ -103,6 +99,8 @@ Follow the steps below to create a new component:
 3. Run `rush update` to update dependencies
 4. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.js` file
 
+Additional Guidance: [Creating Components](COMPONENT_GUIDANCE.md)
+
 ### Storybook
 
 We use [Storybook][storybook] for isolated UI component development.
@@ -120,7 +118,7 @@ An updated publishing process will be documented in detail at the time of the ne
 
 To publish the packages to npm, you have to be an owner of the packages you're publishing on the NPM registry. Priceline employees should use the `#design-system` Slack channel for more information.
 
-#### Before Publishing:
+**Before Publishing:**
 
 - Publishing is very easy once you have access to the NPM package. **Please Be Careful** 🤗
 - Use `npm login` to authenticate against the public NPM registry. If your local environment requires multiple NPM registries, the [npmrc](https://www.npmjs.com/package/npmrc) tool is useful to toggle between registries.
