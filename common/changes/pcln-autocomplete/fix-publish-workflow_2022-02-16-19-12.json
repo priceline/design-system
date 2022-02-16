@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "change",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}
