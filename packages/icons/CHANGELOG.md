@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 18 Jan 2022 22:24:12 GMT and should not be manually modified.
+This log was last generated on Wed, 16 Feb 2022 15:27:30 GMT and should not be manually modified.
+
+## 4.7.0
+Wed, 16 Feb 2022 15:27:30 GMT
+
+### Minor changes
+
+- add Share icon
 
 ## 4.6.0
 Tue, 18 Jan 2022 22:24:12 GMT
