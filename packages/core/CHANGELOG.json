@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.15.2",
+      "tag": "pcln-design-system_v4.15.2",
+      "date": "Wed, 16 Feb 2022 19:24:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update focus styling for ButtonChip",
+            "author": "Justin Trenary <trenaryja@gmail.com>",
+            "commit": "685d9c137fe7e3b92177298dad1c10b0e7e2b41b"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.15.1",
       "tag": "pcln-design-system_v4.15.1",
       "date": "Mon, 14 Feb 2022 15:32:00 GMT",

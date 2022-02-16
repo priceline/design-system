@@ -19,11 +19,11 @@ importers:
       mdx-docs: ^1.0.0-9
       next: ^12.0.7
       next-mdx-docs: 2.0.0-alpha.2
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       pcln-icons: workspace:*
-      pcln-modal: workspace:*
-      pcln-popover: workspace:*
-      pcln-slider: workspace:*
+      pcln-modal: workspace:4.1.7-test-publish-4
+      pcln-popover: workspace:4.3.8-test-publish-4
+      pcln-slider: workspace:4.1.5-test-publish-4
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -86,7 +86,7 @@ importers:
       chromatic: ^6.3.4
       eslint: ^8.6.0
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       react: ^17.0.2
       react-dom: ^17.0.2
       react-draggable-playground: ^1.0.0
@@ -144,7 +144,7 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       pcln-icons: workspace:*
       prop-types: ^15.8.1
       react: ^17.0.2
@@ -201,7 +201,7 @@ importers:
       jest-styled-components: ^6.3.4
       moize: ^6.1.0
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       pcln-icons: workspace:*
       prop-types: ^15.8.1
       pure-react-carousel: ^1.27.8
@@ -264,7 +264,7 @@ importers:
       lodash.get: ^4.4.2
       meow: ^10.1.1
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -448,9 +448,9 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       pcln-icons: workspace:*
-      pcln-popover: workspace:*
+      pcln-popover: workspace:4.3.8-test-publish-4
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -497,8 +497,8 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
-      pcln-menu: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
+      pcln-menu: workspace:4.4.8-test-publish-4
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -548,9 +548,9 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       pcln-icons: workspace:*
-      pcln-slider: workspace:*
+      pcln-slider: workspace:4.1.5-test-publish-4
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -606,7 +606,7 @@ importers:
       jest-standard-reporter: ^2.0.0
       jest-styled-components: ^6.3.4
       npm-run-all: ^4.1.5
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       prop-types: ^15.8.1
       rc-tools: ^8.4.5
       rc-tooltip: ^3.7.0
@@ -857,7 +857,7 @@ importers:
       csstype: ^3.0.10
       dtslint: ^4.2.1
       eslint: ^8.6.0
-      pcln-design-system: workspace:*
+      pcln-design-system: workspace:4.15.2-test-publish-4
       prettier: ^2.5.1
       typescript: ^4.5.4
     dependencies:
@@ -2498,22 +2498,22 @@ packages:
       '@cspotcode/source-map-consumer': 0.8.0
     dev: false
 
-  /@definitelytyped/header-parser/0.0.104:
-    resolution: {integrity: sha512-UJ6WCqR4erfka35umvTyOC+dsVPZydv+CcNHW74di3QAdY89DOOx2IVsbUizNvRNPKR7FKP9noIEjNYd6vzZEw==}
+  /@definitelytyped/header-parser/0.0.106:
+    resolution: {integrity: sha512-qjPrS4THVZStVU0C0tcc53VpY/2qTvBBTJEFHNIC09dMqqzROVptebITcqjLraQYMOkXMyrWnu7Yu8VK/VfXRg==}
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.104
+      '@definitelytyped/typescript-versions': 0.0.106
       '@types/parsimmon': 1.10.6
       parsimmon: 1.18.1
     dev: true
 
-  /@definitelytyped/typescript-versions/0.0.104:
-    resolution: {integrity: sha512-0c5k94l84QpvZ6oMbOIkttQQqdATGMHIVCpKkSqlKt+3JMzr/svZOwgbcn7hzVDedxETGjbn19k++QcE/F/wOw==}
+  /@definitelytyped/typescript-versions/0.0.106:
+    resolution: {integrity: sha512-qZi46iUN8FYKH+tB+Jo6HB1x8Jd7+12+j8QtiITT67SS64UXz0g70Y6Engl7a5WQVuMBQ1pTLXEXim9uK54uOQ==}
     dev: true
 
-  /@definitelytyped/utils/0.0.104:
-    resolution: {integrity: sha512-abfVggmE57SVaK5SzRIeydrrNF73hdUJ/jnBvnegRcnKD8j4GtkLQ3DkE7mHBp2UP1dDTrSBbER/CgUfmFtCSA==}
+  /@definitelytyped/utils/0.0.106:
+    resolution: {integrity: sha512-5FsYmbvCfr47nkIZI85mApVvgKZavet5Embo8wRDIONX+rFsqi8lfKTpBFfazO43lZuTOiYdWivGXtGW+Umsbg==}
     dependencies:
-      '@definitelytyped/typescript-versions': 0.0.104
+      '@definitelytyped/typescript-versions': 0.0.106
       '@qiwi/npm-registry-client': 8.9.1
       '@types/node': 14.18.5
       charm: 1.0.2
@@ -11444,7 +11444,7 @@ packages:
     peerDependencies:
       typescript: '*'
     dependencies:
-      '@definitelytyped/header-parser': 0.0.104
+      '@definitelytyped/header-parser': 0.0.106
       command-exists: 1.2.9
       rimraf: 3.0.2
       semver: 6.3.0
@@ -11460,9 +11460,9 @@ packages:
     peerDependencies:
       typescript: '>= 3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.7.0-dev || >= 3.8.0-dev || >= 3.9.0-dev || >= 4.0.0-dev'
     dependencies:
-      '@definitelytyped/header-parser': 0.0.104
-      '@definitelytyped/typescript-versions': 0.0.104
-      '@definitelytyped/utils': 0.0.104
+      '@definitelytyped/header-parser': 0.0.106
+      '@definitelytyped/typescript-versions': 0.0.106
+      '@definitelytyped/utils': 0.0.106
       dts-critic: 3.3.11_typescript@4.5.4
       fs-extra: 6.0.1
       json-stable-stringify: 1.0.1
