@@ -335,14 +335,16 @@
       "packageName": "pcln-codemods",
       "projectFolder": "packages/codemods",
       "reviewCategory": "packages",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
 
     {
       "packageName": "pcln-menu",
       "projectFolder": "packages/menu",
       "reviewCategory": "packages",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
 
     // Published Design System packages
@@ -350,38 +352,45 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
+      "versionPolicyName": "npm-package",
       "cyclicDependencyProjects": ["pcln-icons"]
     },
     {
       "packageName": "pcln-autocomplete",
       "projectFolder": "packages/autocomplete",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
     {
       "packageName": "pcln-icons",
       "projectFolder": "packages/icons",
       "shouldPublish": true,
+      "versionPolicyName": "npm-package",
       "cyclicDependencyProjects": ["pcln-design-system"]
     },
     {
       "packageName": "pcln-modal",
       "projectFolder": "packages/modal",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
     {
       "packageName": "pcln-popover",
       "projectFolder": "packages/popover",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
     {
       "packageName": "pcln-slider",
       "projectFolder": "packages/slider",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
     {
       "packageName": "pcln-carousel",
       "projectFolder": "packages/carousel",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "npm-package"
     },
 
     // Applications

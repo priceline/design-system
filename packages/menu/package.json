@@ -47,7 +47,7 @@
     "@babel/core": "^7.16.7"
   },
   "peerDependencies": {
-    "pcln-design-system": "4.15.1",
+    "pcln-design-system": ">=4",
     "pcln-icons": "4.7.0",
     "pcln-popover": "4.3.7",
     "react": ">= 16.10.0",
