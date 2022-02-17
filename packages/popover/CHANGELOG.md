@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Wed, 16 Feb 2022 15:27:30 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Feb 2022 14:07:41 GMT and should not be manually modified.
+
+## 4.3.8
+Thu, 17 Feb 2022 14:07:41 GMT
+
+### Patches
+
+- Fix tab-index/focus-trap accessibility issue within PopoverContent
 
 ## 4.3.7
 Wed, 16 Feb 2022 15:27:30 GMT

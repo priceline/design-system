@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 14 Feb 2022 15:32:00 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Feb 2022 14:07:41 GMT and should not be manually modified.
+
+## 4.15.2
+Thu, 17 Feb 2022 14:07:41 GMT
+
+### Patches
+
+- Update focus styling for ButtonChip
+- Add Storybook to project, fix lint errors
 
 ## 4.15.1
 Mon, 14 Feb 2022 15:32:00 GMT

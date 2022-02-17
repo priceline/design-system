@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 16 Feb 2022 15:27:30 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Feb 2022 14:07:41 GMT and should not be manually modified.
+
+## 4.7.1
+Thu, 17 Feb 2022 14:07:41 GMT
+
+### Patches
+
+- Fix pcln-design-system devDep
 
 ## 4.7.0
 Wed, 16 Feb 2022 15:27:30 GMT
