@@ -75,7 +75,7 @@ rush test:ci
 To update snapshots while running tests:
 
 ```sh
-rush test:ci:update
+rush test:snapshots
 ```
 
 ### Linting and formatting

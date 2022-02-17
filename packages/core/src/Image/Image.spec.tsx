@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '@priceline/react-jesting-library'
+import { render, screen } from '../__test__/testing-library'
 import { Image, theme } from '..'
 
 const imageSrc =

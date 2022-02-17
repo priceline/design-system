@@ -11,7 +11,7 @@
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
   "rushVersion": "5.59.2",
-  "pnpmVersion": "6.26.0",
+  "pnpmVersion": "6.31.0",
 
   /**
    * Options that are only used when the PNPM package manager is selected
@@ -350,7 +350,7 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["pcln-icons", "@priceline/storybook-preset"]
+      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons"]
     },
     {
       "packageName": "pcln-autocomplete",
@@ -416,12 +416,6 @@
       "packageName": "pcln-types",
       "projectFolder": "tools/types",
       "shouldPublish": false
-    },
-    {
-      "packageName": "@priceline/react-jesting-library",
-      "projectFolder": "tools/react-jesting-library",
-      "shouldPublish": false,
-      "cyclicDependencyProjects": ["pcln-design-system"]
     },
     {
       "packageName": "@priceline/storybook-preset",

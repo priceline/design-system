@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from '@priceline/react-jesting-library'
+import { render } from '../__test__/testing-library'
 
 import { Link } from '..'
 

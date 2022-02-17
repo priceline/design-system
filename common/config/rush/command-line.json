@@ -46,9 +46,9 @@
       "incremental": true
     },
 
-    // test:ci:update
+    // test:snapshots
     {
-      "name": "test:ci:update",
+      "name": "test:snapshots",
       "commandKind": "bulk",
       "summary": "(incremental) Update jest snapshots in all projects",
       "description": "(incremental) Update jest snapshots in all projects",

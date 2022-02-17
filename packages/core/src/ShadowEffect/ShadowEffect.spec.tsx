@@ -1,5 +1,5 @@
 import React from 'react'
-import { fireEvent, render, screen } from '@priceline/react-jesting-library'
+import { fireEvent, render, screen } from '../__test__/testing-library'
 import ShadowEffect from './ShadowEffect'
 import { Input } from '../Input'
 

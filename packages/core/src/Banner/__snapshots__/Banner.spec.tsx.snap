@@ -394,16 +394,6 @@ exports[`Banner renders with header node 1`] = `
   outline: none;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 .c5 {
   text-align: left;
   width: 100%;
@@ -432,6 +422,16 @@ exports[`Banner renders with header node 1`] = `
   text-align: left;
   background-color: secondary.base;
   color: text.lightest;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div

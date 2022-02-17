@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '@priceline/react-jesting-library'
+import { render, screen } from '../__test__/testing-library'
 import { Calendar, Close, User, Visibility } from 'pcln-icons'
 import { IconField, IconButton, Input } from '..'
 

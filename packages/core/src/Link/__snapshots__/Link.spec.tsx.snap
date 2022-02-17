@@ -2,17 +2,7 @@
 
 exports[`Link should add rel="noopener" when target="_blank" 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
+  .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -23,6 +13,16 @@ exports[`Link should add rel="noopener" when target="_blank" 1`] = `
   color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -42,17 +42,7 @@ exports[`Link should add rel="noopener" when target="_blank" 1`] = `
 
 exports[`Link should not add rel="noopener" when target is not "_blank" 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
+  .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -63,6 +53,16 @@ exports[`Link should not add rel="noopener" when target is not "_blank" 1`] = `
   color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div
@@ -80,17 +80,7 @@ exports[`Link should not add rel="noopener" when target is not "_blank" 1`] = `
 
 exports[`Link should render correctly with no props without throwing 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
+  .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -101,6 +91,16 @@ exports[`Link should render correctly with no props without throwing 1`] = `
   color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div

@@ -9,7 +9,7 @@
     "test": "jest --verbose --coverage --passWithNoTests",
     "test:ci": "jest --silent --coverage --runInBand --passWithNoTests",
     "test:update": "jest --updateSnapshot --passWithNoTests",
-    "test:ci:update": "jest --runInBand --updateSnapshot --passWithNoTests"
+    "test:snapshots": "jest --runInBand --updateSnapshot --passWithNoTests"
   },
   "files": [
     "bin",
