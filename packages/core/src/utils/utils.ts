@@ -179,39 +179,44 @@ const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
  * @param variations - An object of variation styles
  */
 export const applyVariations = (componentName, variations = null) => (props) => {
-  let { color } = props
-  const { variation } = props
+  console.log(componentName)
+  console.log(variations)
+  console.log(props)
 
-  const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
+  return css``
+  // let { color } = props
+  // const { variation } = props
 
-  let shade
-  if (colorShade) {
-    color = colorShade[1]
-    shade = colorShade[2]
-  }
+  // const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
 
-  const isValidShade = shade && typeof shade === 'string'
+  // let shade
+  // if (colorShade) {
+  //   color = colorShade[1]
+  //   shade = colorShade[2]
+  // }
 
-  if (variations && typeof variation === 'string') {
-    if (isValidShade) {
-      // prettier-ignore
-      return css`${variations[variation] || ''}
-          ${typeof color === 'string' &&
-          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
-    }
+  // const isValidShade = shade && typeof shade === 'string'
 
-    // prettier-ignore
-    return css`${variations[variation] || ''}
-        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
-  }
+  // if (variations && typeof variation === 'string') {
+  //   if (isValidShade) {
+  //     // prettier-ignore
+  //     return css`${variations[variation] || ''}
+  //         ${typeof color === 'string' &&
+  //         themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
+  //   }
 
-  if (isValidShade) {
-    // prettier-ignore
-    return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
-  }
+  //   // prettier-ignore
+  //   return css`${variations[variation] || ''}
+  //       ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
+  // }
 
-  // prettier-ignore
-  return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
+  // if (isValidShade) {
+  //   // prettier-ignore
+  //   return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
+  // }
+
+  // // prettier-ignore
+  // return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
 }
 
 /**

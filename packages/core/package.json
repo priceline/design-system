@@ -22,7 +22,7 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "build": "heft test --clean",
+    "build": "heft build --clean",
     "build-only": "heft build --clean",
     "debug": "heft --debug test --clean",
     "start": "heft start",

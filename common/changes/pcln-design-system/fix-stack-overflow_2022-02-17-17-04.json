@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Try to fix stack overflow",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
