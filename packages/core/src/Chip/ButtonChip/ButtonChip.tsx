@@ -11,14 +11,14 @@ import { getPaletteColor } from '../../utils'
 const ChipButton = styled(Button)`
   background-color: transparent;
   border: none;
-  margin: 3px;
-  padding: 2px;
+  padding: 0;
   &:hover {
     background-color: transparent;
   }
   &:focus {
-    box-shadow: 0 0 0 5px ${getPaletteColor('base')};
-    outline: none;
+    box-shadow: none;
+    outline-offset: 2px;
+    outline: 3px solid ${getPaletteColor('base')};
   }
   &:focus > ${ChipContentWrapper} {
     border-color: ${getPaletteColor('base')};
