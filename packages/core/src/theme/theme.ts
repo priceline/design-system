@@ -232,23 +232,71 @@ export const textShadows = {
   md: `0 2px 4px rgba(0,0,0,0.5)`,
 }
 
+// opacity
+const opacity = {
+  'opacity-0': 0.0,
+  'opacity-10': 0.1,
+  'opacity-20': 0.2,
+  'opacity-30': 0.3,
+  'opacity-40': 0.4,
+  'opacity-50': 0.5,
+  'opacity-60': 0.6,
+  'opacity-70': 0.7,
+  'opacity-80': 0.8,
+  'opacity-90': 0.9,
+  'opacity-100': 1.0,
+}
+
+// scale (min/half/max)
+const scale =  {
+  'scale-0': 0.0,
+  'scale-10': 0.1,
+  'scale-20': 0.2,
+  'scale-30': 0.3,
+  'opacity-40': 0.4,
+  'opacity-50': 0.5,
+  'opacity-60': 0.6,
+  'opacity-70': 0.7,
+  'opacity-80': 0.8,
+  'opacity-90': 0.9,
+  'opacity-100': 1.0,
+}
+
 // animation duration
 export const duration = {
   fast: `150ms`,
   normal: `300ms`,
   slow: `450ms`,
   slowest: `600ms`,
+  'duration-100': `100ms`,
+  'duration-200': `200ms`,
+  'duration-250': `250ms`,
+  'duration-300': `300ms`,
+  'duration-450': `450ms`
 }
 
 // animation easing curves
 const easeInOut = 'cubic-bezier(0.5, 0, 0.25, 1)'
 const easeOut = 'cubic-bezier(0, 0, 0.25, 1)'
 const easeIn = 'cubic-bezier(0.5, 0, 1, 1)'
+const standardProductive = 'cubic-bezier(0.2, 0, 0.38, 0.9)'
+const entranceProductive = 'cubic-bezier(0, 0, 0.38, 0.9)'
+const exitProductive = 'cubic-bezier(0.2, 0, 1, 0.9)'
+const standardExpressive = 'cubic-bezier(0.4, 0.14, 0.3, 1)'
+const entranceExpressive = 'cubic-bezier(0, 0, 0.3, 1)'
+const exitExpressive = 'cubic-bezier(0.4, 0.14, 1, 1)'
 
 export const timingFunctions = {
   easeInOut,
   easeOut,
   easeIn,
+  'standard-productive': standardProductive,
+  'entrance-productive': entranceProductive,
+  'exit-productive': exitProductive,
+  'standard-expressive': standardExpressive,
+  'entrance-expressive': entranceExpressive,
+  'exit-expressive': exitExpressive,
+
 }
 
 // animation delay
@@ -289,6 +337,8 @@ const theme = {
   textShadows,
   shadows,
   maxContainerWidth,
+  opacity,
+  scale,
   duration,
   timingFunctions,
   transitionDelays,
