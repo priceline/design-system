@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { space } from 'styled-system'
 
-import RcSlider from './rc-slider/Slider'
+import RcSlider from 'rc-slider'
 import styleSlider from './styleSlider'
 
 const Slider = styleSlider(RcSlider)

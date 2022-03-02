@@ -110,9 +110,9 @@ export const Basic = () => (
       }}
       children={({ state, setState }) => (
         <RangeSlider
-          ariaLabelGroupForHandles={['Handle One', undefined]}
-          ariaLabelledByGroupForHandles={[undefined, 'handle_2']}
-          ariaValueTextFormattersForHandles={[formatValueText, formatValueText]}
+          ariaLabelForHandle={['Handle One', undefined]}
+          ariaLabelledByForHandle={[undefined, 'handle_2']}
+          ariaValueTextFormatterForHandle={[formatValueText, formatValueText]}
           value={state.value}
           onChange={(value) => {
             setState({ value })
@@ -124,7 +124,7 @@ export const Basic = () => (
 )
 
 export const RangeSliderWithSingleValue = () => (
-  <RangeSlider ariaLabelGroupForHandles={['Handle One']} value={[32]} />
+  <RangeSlider ariaLabelForHandle={['Handle One']} value={[32]} />
 )
 
 RangeSliderWithSingleValue.story = {
@@ -135,7 +135,7 @@ export const _Slider = () => <Slider ariaLabelForHandle='Handle' value={[32]} />
 
 export const MultipleValues = () => (
   <RangeSlider
-    ariaLabelGroupForHandles={['handle_1', 'handle_2', 'handle_3', 'handle_4']}
+    ariaLabelForHandle={['handle_1', 'handle_2', 'handle_3', 'handle_4']}
     value={[16, 32, 64, 128]}
     max={256}
   />
@@ -147,28 +147,19 @@ MultipleValues.story = {
 
 export const Colors = () => (
   <div>
-    <RangeSlider value={[8, 16]} color='primary' mb={2} ariaLabelGroupForHandles={['handle_1', 'handle_2']} />
-    <RangeSlider
-      value={[16, 32]}
-      color='secondary'
-      mb={2}
-      ariaLabelGroupForHandles={['handle_1', 'handle_2']}
-    />
-    <RangeSlider value={[32, 64]} color='alert' mb={2} ariaLabelGroupForHandles={['handle_1', 'handle_2']} />
-    <RangeSlider value={[64, 96]} color='error' mb={2} ariaLabelGroupForHandles={['handle_1', 'handle_2']} />
+    <RangeSlider value={[8, 16]} color='primary' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
+    <RangeSlider value={[16, 32]} color='secondary' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
+    <RangeSlider value={[32, 64]} color='alert' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
+    <RangeSlider value={[64, 96]} color='error' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
   </div>
 )
 
 export const ThemedColors = () => (
+  // @ts-ignore
   <ThemeProvider theme={untdTheme}>
-    <RangeSlider value={[8, 16]} color='primary' mb={2} ariaLabelGroupForHandles={['handle_1', 'handle_2']} />
-    <RangeSlider
-      value={[16, 32]}
-      color='secondary'
-      mb={2}
-      ariaLabelGroupForHandles={['handle_1', 'handle_2']}
-    />
-    <RangeSlider value={[32, 64]} color='alert' mb={2} ariaLabelGroupForHandles={['handle_1', 'handle_2']} />
-    <RangeSlider value={[64, 96]} color='error' mb={2} ariaLabelGroupForHandles={['handle_1', 'handle_2']} />
+    <RangeSlider value={[8, 16]} color='primary' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
+    <RangeSlider value={[16, 32]} color='secondary' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
+    <RangeSlider value={[32, 64]} color='alert' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
+    <RangeSlider value={[64, 96]} color='error' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
   </ThemeProvider>
 )

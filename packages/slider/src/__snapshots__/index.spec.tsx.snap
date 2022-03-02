@@ -28,7 +28,6 @@ exports[`pcln-slider RangeSlider 1`] = `
 .c1 .rc-slider-handle {
   width: 32px;
   height: 32px;
-  margin-left: -16px;
   margin-top: -12px;
 }
 
@@ -75,7 +74,7 @@ exports[`pcln-slider RangeSlider 1`] = `
     class="c0"
   >
     <div
-      class="rc-slider c1"
+      class="rc-slider c1 rc-slider-horizontal"
     >
       <div
         class="rc-slider-rail"
@@ -94,7 +93,7 @@ exports[`pcln-slider RangeSlider 1`] = `
         aria-valuenow="0"
         class="rc-slider-handle rc-slider-handle-1"
         role="slider"
-        style="left: 0%;"
+        style="left: 0%; transform: translateX(-50%);"
         tabindex="0"
       />
       <div
@@ -104,11 +103,8 @@ exports[`pcln-slider RangeSlider 1`] = `
         aria-valuenow="0"
         class="rc-slider-handle rc-slider-handle-2"
         role="slider"
-        style="left: 0%;"
+        style="left: 0%; transform: translateX(-50%);"
         tabindex="0"
-      />
-      <div
-        class="rc-slider-mark"
       />
     </div>
   </div>
@@ -143,7 +139,6 @@ exports[`pcln-slider Slider 1`] = `
 .c1 .rc-slider-handle {
   width: 32px;
   height: 32px;
-  margin-left: -16px;
   margin-top: -12px;
 }
 
@@ -190,7 +185,7 @@ exports[`pcln-slider Slider 1`] = `
     class="c0"
   >
     <div
-      class="rc-slider c1"
+      class="rc-slider c1 rc-slider-horizontal"
     >
       <div
         class="rc-slider-rail"
@@ -209,11 +204,8 @@ exports[`pcln-slider Slider 1`] = `
         aria-valuenow="0"
         class="rc-slider-handle"
         role="slider"
-        style="left: 0%;"
+        style="left: 0%; transform: translateX(-50%);"
         tabindex="0"
-      />
-      <div
-        class="rc-slider-mark"
       />
     </div>
   </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'testing-library'
+import { render } from './__test__/testing-library'
 
 import RangeSlider, { Slider } from '.'
 
