@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.15.3",
+      "tag": "pcln-design-system_v4.15.3",
+      "date": "Thu, 03 Mar 2022 17:06:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "change focus styling to use outline instead of box-shadow",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "25e0bac9397d4051aa911918e4ab6798b161206d"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.15.2",
       "tag": "pcln-design-system_v4.15.2",
       "date": "Thu, 17 Feb 2022 14:07:41 GMT",
