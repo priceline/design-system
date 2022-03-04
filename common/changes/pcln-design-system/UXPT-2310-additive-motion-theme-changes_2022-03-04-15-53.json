@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "updates to theme.ts- added opacity, scale and updated timing functions",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
