@@ -6,7 +6,9 @@
   "module": "lib-esm/index.js",
   "sideEffects": false,
   "files": [
-    "dist/"
+    "lib-esm",
+    "lib-commonjs",
+    "types"
   ],
   "author": "Priceline",
   "license": "MIT",
