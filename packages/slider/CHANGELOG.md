@@ -1,6 +1,13 @@
 # Change Log - pcln-slider
 
-This log was last generated on Mon, 07 Mar 2022 18:00:11 GMT and should not be manually modified.
+This log was last generated on Mon, 07 Mar 2022 19:18:41 GMT and should not be manually modified.
+
+## 4.2.1
+Mon, 07 Mar 2022 19:18:41 GMT
+
+### Patches
+
+- Add correct folders to files in package.json
 
 ## 4.2.0
 Mon, 07 Mar 2022 18:00:11 GMT
