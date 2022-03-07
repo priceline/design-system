@@ -1,12 +1,14 @@
 {
   "name": "pcln-slider",
-  "version": "4.2.0",
+  "version": "4.2.1-beta.1-slider-files",
   "description": "React component for range sliders",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
   "sideEffects": false,
   "files": [
-    "dist/"
+    "lib-esm",
+    "lib-commonjs",
+    "types"
   ],
   "author": "Priceline",
   "license": "MIT",
@@ -26,6 +28,7 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "prop-types": "^15.8.1",
+    "rc-slider": "^10.0.0-alpha.4",
     "rc-tooltip": "^3.7.0",
     "rc-util": "^4.0.4",
     "shallowequal": "^1.1.0",
@@ -50,7 +53,6 @@
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",
     "pcln-design-system": "workspace:*",
-    "rc-slider": "^10.0.0-alpha.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",

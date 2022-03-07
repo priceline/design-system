@@ -610,6 +610,7 @@ importers:
     dependencies:
       classnames: 2.3.1
       prop-types: 15.8.1
+      rc-slider: 10.0.0-alpha.4_react-dom@17.0.2+react@17.0.2
       rc-tooltip: 3.7.3
       rc-util: 4.21.1
       shallowequal: 1.1.0
@@ -635,7 +636,6 @@ importers:
       jest-standard-reporter: 2.0.0
       jest-styled-components: 6.3.4_styled-components@4.4.1
       pcln-design-system: link:../core
-      rc-slider: 10.0.0-alpha.4_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-test-renderer: 17.0.2_react@17.0.2
@@ -11198,6 +11198,7 @@ packages:
 
   /dom-align/1.12.2:
     resolution: {integrity: sha512-pHuazgqrsTFrGU2WLDdXxCFabkdQDx72ddkraZNih1KsMcN5qsRSTR9O4VJRlwTPCPb5COYg3LOfiMHHcPInHg==}
+    dev: false
 
   /dom-converter/0.2.0:
     resolution: {integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==}
@@ -18575,7 +18576,7 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       resize-observer-polyfill: 1.5.1
-    dev: true
+    dev: false
 
   /rc-animate/2.11.1:
     resolution: {integrity: sha512-1NyuCGFJG/0Y+9RKh5y/i/AalUCA51opyyS/jO2seELpgymZm2u9QV3xwODwEuzkmeQ1BDPxMLmYLcTJedPlkQ==}
@@ -18600,7 +18601,7 @@ packages:
       rc-util: 5.18.1_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-    dev: true
+    dev: false
 
   /rc-slider/10.0.0-alpha.4_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-ih2xwkBgXAWAf7MjZIZyCiiWo6tnoIMuHifn0UeKXVAup7sH53QdSVvT9x/cysuSZIPNMYWEf6mec184n3gbiQ==}
@@ -18616,7 +18617,7 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       shallowequal: 1.1.0
-    dev: true
+    dev: false
 
   /rc-tooltip/3.7.3:
     resolution: {integrity: sha512-dE2ibukxxkrde7wH9W8ozHKUO4aQnPZ6qBHtrTH9LoO836PjDdiaWO73fgPB05VfJs9FbZdmGPVEbXCeOP99Ww==}
@@ -18636,7 +18637,7 @@ packages:
       rc-trigger: 5.2.10_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-    dev: true
+    dev: false
 
   /rc-trigger/2.6.5:
     resolution: {integrity: sha512-m6Cts9hLeZWsTvWnuMm7oElhf+03GOjOLfTuU0QmdB9ZrW7jR2IpI5rpNM7i9MvAAlMAmTx5Zr7g3uu/aMvZAw==}
@@ -18664,7 +18665,7 @@ packages:
       rc-util: 5.18.1_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-    dev: true
+    dev: false
 
   /rc-util/4.21.1:
     resolution: {integrity: sha512-Z+vlkSQVc1l8O2UjR3WQ+XdWlhj5q9BMQNLk2iOBch75CqPfrJyGtcWMcnhRlNuDu0Ndtt4kLVO8JI8BrABobg==}
@@ -18687,7 +18688,7 @@ packages:
       react-dom: 17.0.2_react@17.0.2
       react-is: 16.13.1
       shallowequal: 1.1.0
-    dev: true
+    dev: false
 
   /rc/1.2.8:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
@@ -19638,7 +19639,6 @@ packages:
 
   /resize-observer-polyfill/1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
-    dev: true
 
   /resolve-cwd/2.0.0:
     resolution: {integrity: sha1-AKn3OHVW4nA46uIyyqNypqWbZlo=}
