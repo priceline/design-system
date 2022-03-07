@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "Add correct folders to files in package.json",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-slider"
+}
