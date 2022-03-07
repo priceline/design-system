@@ -103,21 +103,22 @@ export const colors = () => (
   </Flex>
 )
 
-const FilterChipContent = () => (
-  <Box p={2}>
-    <FilterChip>Hello</FilterChip>
-    <FilterChip>World</FilterChip>
+const FilterChipContent = ({ handleClose }) => (
+  <Box p={3}>
+    <Flex justifyContent='center' mb={3}>
+      <FilterChip mr={2}>Filter Chip</FilterChip>
+      <FilterChip>Filter Chip</FilterChip>
+    </Flex>
+    <Flex justifyContent='right'>
+      <Button onClick={handleClose}>Done</Button>
+    </Flex>
   </Box>
 )
 
 export const filterChips = () => (
-  <Flex>
-    <Popover renderContent={FilterChipContent} placement='bottom' ariaLabel='Default Popover' width={130}>
-      <Button color='primary' variation='outline' mx={2}>
-        Popover with Filter Chips
-      </Button>
-    </Popover>
-  </Flex>
+  <Popover renderContent={FilterChipContent} placement='bottom' ariaLabel='Default Popover' width={300}>
+    <Button color='primary'>Popover with Filter Chips</Button>
+  </Popover>
 )
 
 export const forcedOpenViaProp = () => (
