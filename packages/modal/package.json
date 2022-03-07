@@ -1,6 +1,6 @@
 {
   "name": "pcln-modal",
-  "version": "4.1.8",
+  "version": "4.1.9",
   "description": "React component for modal",
   "engines": {
     "node": ">=14",
@@ -51,7 +51,7 @@
     "@babel/core": "^7.16.7"
   },
   "peerDependencies": {
-    "pcln-design-system": "4.15.3",
+    "pcln-design-system": "4.16.0",
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">= 4.4.1",
