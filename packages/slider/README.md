@@ -25,3 +25,4 @@ Uncaught TypeError: Cannot read property '3' of undefined
 Uses the same props as [rc-slider][].
 
 [rc-slider]: https://github.com/react-component/slider
+

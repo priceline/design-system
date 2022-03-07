@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "Upgrade to latest rc-slider",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-slider"
+}
