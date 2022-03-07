@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "update filter chip story styling",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
