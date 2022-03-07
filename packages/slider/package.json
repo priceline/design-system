@@ -2,8 +2,8 @@
   "name": "pcln-slider",
   "version": "4.1.6",
   "description": "React component for range sliders",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "lib-commonjs/index.js",
+  "module": "lib-esm/index.js",
   "sideEffects": false,
   "files": [
     "dist/"
@@ -15,16 +15,13 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "build": "npm-run-all -p build:*",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/cjs",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./src --ignore '**/*.stories.js,**/*.spec.js' --out-dir ./dist/esm",
-    "clean": "rimraf dist/",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "jest --verbose --coverage",
-    "test:ci": "jest --silent --coverage --runInBand",
-    "test:update": "jest --updateSnapshot",
-    "test:snapshots": "jest --runInBand --updateSnapshot"
+    "build": "heft test --clean",
+    "build-only": "heft build --clean",
+    "debug": "heft --debug test --clean",
+    "start": "heft start",
+    "storybook": "heft start --storybook",
+    "test:snapshots": "heft test --update-snapshots",
+    "test:watch": "heft test --watch"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -38,27 +35,29 @@
   "devDependencies": {
     "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.7",
-    "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
+    "@priceline/heft-component-rig": "workspace:*",
+    "@priceline/storybook-preset": "workspace:*",
     "@reach/component-component": "^0.16.0",
     "@rushstack/eslint-patch": "^1.1.0",
+    "@rushstack/heft": "^0.44.2",
+    "@storybook/addon-actions": "^6.4.10",
+    "@storybook/react": "^6.4.10",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
-    "cross-env": "^7.0.3",
-    "enzyme": "^3.11.0",
     "eslint": "^8.6.0",
     "jest": "^26.6.3",
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^6.3.4",
-    "npm-run-all": "^4.1.5",
     "pcln-design-system": "workspace:*",
-    "rc-tools": "^8.4.5",
-    "rc-trigger": "^2.6.5",
+    "rc-slider": "^10.0.0-alpha.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rimraf": "^3.0.2",
-    "styled-components": "^4.4.1"
+    "react-test-renderer": "^17.0.2",
+    "styled-components": "^4.4.1",
+    "typescript": "^4.6.2",
+    "@types/jest": "27.4.0",
+    "@types/react-test-renderer": "^17.0.1"
   },
   "peerDependencies": {
     "pcln-design-system": "4.15.3",

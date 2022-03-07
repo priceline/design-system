@@ -371,7 +371,8 @@
     {
       "packageName": "pcln-popover",
       "projectFolder": "packages/popover",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "cyclicDependencyProjects": ["pcln-slider"]
     },
     {
       "packageName": "pcln-slider",
