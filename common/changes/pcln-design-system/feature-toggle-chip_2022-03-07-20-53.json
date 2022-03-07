@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update hover state in chips label",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

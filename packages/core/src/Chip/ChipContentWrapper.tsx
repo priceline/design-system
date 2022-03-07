@@ -41,8 +41,8 @@ const ChipContentWrapper = styled(Box)`
         ? ''
         : `
       &:hover {
-        border: 1px solid ${getPaletteColor('base')(props)};
-        background-color: ${getPaletteColor('background.lightest')(props)};
+        color: ${getPaletteColor('tone')(props)};
+        border-color: ${getPaletteColor('tone')(props)};
       }
     `
     }
