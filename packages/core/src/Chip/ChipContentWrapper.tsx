@@ -41,10 +41,22 @@ const ChipContentWrapper = styled(Box)`
         ? ''
         : `
       &:hover {
-        color: ${getPaletteColor('tone')(props)};
-        border-color: ${getPaletteColor('tone')(props)};
+        border: 1px solid ${getPaletteColor('base')(props)};
+        background-color: ${getPaletteColor('background.lightest')(props)};
       }
     `
+    }
+
+    ${
+      props.selected
+        ? `
+      &:hover {
+        color: ${getPaletteColor('tone')(props)};
+        border: 1px solid ${getPaletteColor('tone')(props)};
+        background-color: ${getPaletteColor('light')(props)};
+      }
+    `
+        : ''
     }
   `}
   max-width: 100%;
