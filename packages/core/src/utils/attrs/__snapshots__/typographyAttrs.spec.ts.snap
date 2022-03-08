@@ -5,21 +5,33 @@ Object {
   "caps": Array [],
   "fontSize": Array [
     "52px",
+    null,
     "64px",
+    null,
     "80px",
   ],
   "fontWeight": Array [
     700,
+    null,
     700,
+    null,
     700,
   ],
-  "letterSpacing": Array [],
+  "letterSpacing": Array [
+    null,
+    null,
+  ],
   "lineHeight": Array [
     "64px",
+    null,
     "80px",
+    null,
     "96px",
   ],
-  "textTransform": Array [],
+  "textTransform": Array [
+    null,
+    null,
+  ],
 }
 `;
 
