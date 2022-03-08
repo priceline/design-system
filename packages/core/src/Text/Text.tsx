@@ -30,12 +30,17 @@ import {
   typographyAttrs,
 } from '../utils'
 
-export const caps = (props) =>
-  props.caps
+export const caps = (props) => {
+  if (Array.isArray(props.caps) && props.caps.length === 0) {
+    return null
+  }
+
+  return props?.caps
     ? {
         textTransform: 'uppercase',
       }
     : null
+}
 
 export const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
 
