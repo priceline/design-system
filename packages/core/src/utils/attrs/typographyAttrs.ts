@@ -23,15 +23,6 @@ export const textStylesValues = [
   'subheading6',
 ]
 
-const textStylesAllowedPropsAcc = {
-  fontSize: [],
-  fontWeight: [],
-  lineHeight: [],
-  letterSpacing: [],
-  caps: [],
-  textTransform: [],
-}
-
 export function typographyAttrs(props) {
   const { textStyle, theme } = props
 
@@ -41,15 +32,34 @@ export function typographyAttrs(props) {
 
   if (Array.isArray(textStyle)) {
     const styles = textStyle.map((style) => theme.typography[style])
-    return styles.reduce((acc, style) => {
-      const styleProps = style && style.hasOwnProperty('fontSize') ? Object.keys(style) : []
 
-      styleProps.forEach((styleProp) => {
-        acc[styleProp].push(style[styleProp])
-      })
+    return styles.reduce(
+      (acc, style) => {
+        const styleProps = style && style.hasOwnProperty('fontSize') ? Object.keys(style) : []
 
-      return acc
-    }, textStylesAllowedPropsAcc)
+        if (styleProps.length === 0) {
+          // Fill in null values for this index of textStyles if null/undefined provided
+          // (exclude caps because we don't handle responsive caps yet)
+          ;['fontSize', 'fontWeight', 'lineHeight', 'letterSpacing', 'textTransform'].forEach((styleProp) => {
+            acc[styleProp].push(null)
+          })
+        } else {
+          styleProps.forEach((styleProp) => {
+            acc[styleProp].push(style[styleProp])
+          })
+        }
+
+        return acc
+      },
+      {
+        fontSize: [],
+        fontWeight: [],
+        lineHeight: [],
+        letterSpacing: [],
+        caps: [],
+        textTransform: [],
+      }
+    )
   } else {
     return theme.typography[textStyle]
   }

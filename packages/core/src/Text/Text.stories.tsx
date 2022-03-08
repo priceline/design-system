@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from '..'
+import { Box, Text, Divider } from '..'
 import { defaultArgs, argTypes } from './Text.stories.args'
 import { textStylesValues } from '../utils'
 
@@ -145,4 +145,22 @@ export const Paragraph = () => (
     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   </Text.p>
+)
+
+export const ResponsiveTypographyVsFontSize = () => (
+  <>
+    <Text>Actual (heading):</Text>
+    <Text textStyle={['heading2', null, null, 'heading1']}>Words and stuff heading textStyle</Text>
+    <Text>Expected (heading):</Text>
+    <Text bold fontSize={['5', null, null, '6']}>
+      Words and stuff heading fontSize
+    </Text>
+
+    <Divider />
+
+    <Text>Actual (subheading):</Text>
+    <Text textStyle={['subheading4', null, null, 'subheading3']}>Words and stuff subheading textStyle</Text>
+    <Text>Expected (subheading):</Text>
+    <Text fontSize={['3', null, null, '4']}>Words and stuff subheading</Text>
+  </>
 )

@@ -248,18 +248,18 @@ const opacity = {
 }
 
 // scale (min/half/max)
-const scale =  {
+const scale = {
   'scale-0': 0.0,
   'scale-10': 0.1,
   'scale-20': 0.2,
   'scale-30': 0.3,
-  'opacity-40': 0.4,
-  'opacity-50': 0.5,
-  'opacity-60': 0.6,
-  'opacity-70': 0.7,
-  'opacity-80': 0.8,
-  'opacity-90': 0.9,
-  'opacity-100': 1.0,
+  'scale-40': 0.4,
+  'scale-50': 0.5,
+  'scale-60': 0.6,
+  'scale-70': 0.7,
+  'scale-80': 0.8,
+  'scale-90': 0.9,
+  'scale-100': 1.0,
 }
 
 // animation duration
@@ -272,7 +272,7 @@ export const duration = {
   'duration-200': `200ms`,
   'duration-250': `250ms`,
   'duration-300': `300ms`,
-  'duration-450': `450ms`
+  'duration-450': `450ms`,
 }
 
 // animation easing curves
@@ -296,7 +296,6 @@ export const timingFunctions = {
   'standard-expressive': standardExpressive,
   'entrance-expressive': entranceExpressive,
   'exit-expressive': exitExpressive,
-
 }
 
 // animation delay
