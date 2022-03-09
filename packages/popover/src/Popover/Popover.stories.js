@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars, react/prop-types */
-import React from 'react'
-import { Title, Subtitle, Description, Primary, Props } from '@storybook/addon-docs/blocks'
-import { DraggableParent, DraggableItem } from 'react-draggable-playground'
-import styled from 'styled-components'
+import Component from '@reach/component-component'
+import { Description, Primary, Props, Subtitle, Title } from '@storybook/addon-docs/blocks'
 import {
   Absolute,
   BackgroundImage,
   Box,
   Button,
   CloseButton,
+  FilterChip,
   Flex,
   getPaletteColor,
   Link,
   Text,
   ThemeProvider,
-  FilterChip,
 } from 'pcln-design-system'
-import Component from '@reach/component-component'
-import Slider from 'pcln-slider'
-import Popover from './Popover'
 import { Graph as GraphIcon, Pin as PinIcon } from 'pcln-icons'
+import Slider from 'pcln-slider'
+import React from 'react'
+import { DraggableItem, DraggableParent } from 'react-draggable-playground'
+import styled from 'styled-components'
+import Popover from './Popover'
 
 export default {
   title: 'pcln-popover / Popover',
@@ -106,11 +106,15 @@ export const colors = () => (
 const FilterChipContent = ({ handleClose }) => (
   <Box p={3}>
     <Flex justifyContent='center' mb={3}>
-      <FilterChip mr={2}>Filter Chip</FilterChip>
-      <FilterChip>Filter Chip</FilterChip>
+      <FilterChip size='sm' mr={2}>
+        Filter Chip
+      </FilterChip>
+      <FilterChip size='sm'>Filter Chip</FilterChip>
     </Flex>
     <Flex justifyContent='right'>
-      <Button onClick={handleClose}>Done</Button>
+      <Button size='small' onClick={handleClose}>
+        Done
+      </Button>
     </Flex>
   </Box>
 )
