@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Departure } from 'pcln-icons'
 import FilterChip from './FilterChip'
 import { Box } from '../../Box'
@@ -201,6 +201,21 @@ export const CustomChip = () => (
     </FilterChip>
   </Box>
 )
+
+// Toggle Chip
+export const ToggleChip = () => {
+  const [toggle, setToggle] = useState(false)
+  const label = toggle ? 'Unselect' : 'Select'
+  return (
+    <FilterChip
+      label={label}
+      selected={toggle}
+      onClick={() => {
+        setToggle(!toggle)
+      }}
+    />
+  )
+}
 
 //Default
 export default {

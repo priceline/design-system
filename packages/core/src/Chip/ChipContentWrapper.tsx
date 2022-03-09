@@ -46,6 +46,18 @@ const ChipContentWrapper = styled(Box)`
       }
     `
     }
+
+    ${
+      props.selected
+        ? `
+      &:hover {
+        color: ${getPaletteColor('tone')(props)};
+        border: 1px solid ${getPaletteColor('tone')(props)};
+        background-color: ${getPaletteColor('light')(props)};
+      }
+    `
+        : ''
+    }
   `}
   max-width: 100%;
   display: inline-flex;
