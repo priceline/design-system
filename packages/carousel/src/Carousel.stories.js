@@ -45,35 +45,35 @@ export default {
   },
 }
 
-const BasicTemplate = (args) => (
-  <Carousel {...args}>
-    {Array.from(Array(SLIDE_COUNT), (_, idx) => (
-      <ToutCard height='300px' borderRadius={20} boxShadowSize='md' borderWidth={0}>
-        <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
-        <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
-          <Box>
-            <Text fontSize={[0, null, 1, 1, 2]} fontWeight='bold' mb={2}>
-              City {idx}, AB
-            </Text>
-            <Text fontSize={[0, null, null, null, 1]}>Hotel for 2 nights</Text>
-            <Text fontSize={[0, null, null, null, 1]}>+ Round-trip flight</Text>
-          </Box>
-          <Text textAlign='right' ml='auto'>
-            <Text.s fontSize={[0, null, null, null, 1]} fontWeight='bold'>
-              $554
-            </Text.s>
-            <Text fontSize={[0, null, 1, 1, 3]} fontWeight='bold' color='secondary.base' mx={1}>
-              $365
-            </Text>
-            <Text fontSize={[0, null, null, null, 1]} color='text.light'>
-              per person
-            </Text>
+function renderCards() {
+  return Array.from(Array(SLIDE_COUNT), (_, idx) => (
+    <ToutCard height='300px' borderRadius={20} boxShadowSize='md' borderWidth={0}>
+      <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
+      <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
+        <Box>
+          <Text fontSize={[0, null, 1, 1, 2]} fontWeight='bold' mb={2}>
+            City {idx}, AB
           </Text>
-        </Flex>
-      </ToutCard>
-    ))}
-  </Carousel>
-)
+          <Text fontSize={[0, null, null, null, 1]}>Hotel for 2 nights</Text>
+          <Text fontSize={[0, null, null, null, 1]}>+ Round-trip flight</Text>
+        </Box>
+        <Text textAlign='right' ml='auto'>
+          <Text.s fontSize={[0, null, null, null, 1]} fontWeight='bold'>
+            $554
+          </Text.s>
+          <Text fontSize={[0, null, 1, 1, 3]} fontWeight='bold' color='secondary.base' mx={1}>
+            $365
+          </Text>
+          <Text fontSize={[0, null, null, null, 1]} color='text.light'>
+            per person
+          </Text>
+        </Text>
+      </Flex>
+    </ToutCard>
+  ))
+}
+
+const BasicTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 
 export const Basic = BasicTemplate.bind({})
 Basic.args = {
@@ -167,4 +167,19 @@ RichContent.args = {
   showDots: false,
   showForwardBackBtns: true,
   layout: '75-25',
+}
+
+const ButtonColorsTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
+
+export const AlternateButtonColors = ButtonColorsTemplate.bind({})
+AlternateButtonColors.args = {
+  visibleSlides: 3,
+  showDots: false,
+  showForwardBackBtns: true,
+  buttonColorProps: {
+    buttonBackground: 'primary.base',
+    buttonColor: 'text.lightest',
+    buttonHoverBackground: 'primary.dark',
+    buttonHoverColor: 'text.lightest',
+  },
 }

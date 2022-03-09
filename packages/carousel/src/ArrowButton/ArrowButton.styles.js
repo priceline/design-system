@@ -3,14 +3,14 @@ import { getPaletteColor, Box } from 'pcln-design-system'
 
 const defaultStyles = (props) => `
   padding: 0;
-  background: ${getPaletteColor('background.lightest')(props)};
+  background: ${getPaletteColor(props.buttonBackground)(props)};
   border-radius: 100%;
   border: none;
   box-shadow: ${props.theme.boxShadows[1]};
-  color: ${getPaletteColor('primary.base')(props)};
+  color: ${getPaletteColor(props.buttonColor)(props)};
   &:hover {
-    background: ${getPaletteColor('background.base')(props)};
-    color: ${getPaletteColor('primary.dark')(props)};
+    background: ${getPaletteColor(props.buttonHoverBackground)(props)};
+    color: ${getPaletteColor(props.buttonHoverColor)(props)};
   }
 `
 

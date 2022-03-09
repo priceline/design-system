@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "allow alternate arrow button colors",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
