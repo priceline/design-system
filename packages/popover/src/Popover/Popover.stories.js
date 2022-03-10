@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars, react/prop-types */
-import React from 'react'
-import { Title, Subtitle, Description, Primary, Props } from '@storybook/addon-docs/blocks'
-import { DraggableParent, DraggableItem } from 'react-draggable-playground'
-import styled from 'styled-components'
+import Component from '@reach/component-component'
+import { Description, Primary, Props, Subtitle, Title } from '@storybook/addon-docs/blocks'
 import {
   Absolute,
   BackgroundImage,
   Box,
   Button,
   CloseButton,
+  FilterChip,
   Flex,
   getPaletteColor,
   Link,
   Text,
   ThemeProvider,
-  FilterChip,
 } from 'pcln-design-system'
-import Component from '@reach/component-component'
-import Slider from 'pcln-slider'
-import Popover from './Popover'
 import { Graph as GraphIcon, Pin as PinIcon } from 'pcln-icons'
+import Slider from 'pcln-slider'
+import React from 'react'
+import { DraggableItem, DraggableParent } from 'react-draggable-playground'
+import styled from 'styled-components'
+import Popover from './Popover'
 
 export default {
   title: 'pcln-popover / Popover',
@@ -63,7 +63,7 @@ export default {
 export const colors = () => (
   <Flex>
     <Popover renderContent={SimpleTextContent} placement='bottom' ariaLabel='Default Popover' width={130}>
-      <Button color='primary' variation='outline' mx={2}>
+      <Button color='primary' mx={2}>
         Default Popover
       </Button>
     </Popover>
@@ -74,7 +74,7 @@ export const colors = () => (
       width={130}
       color='success'
     >
-      <Button color='success' variation='outline' mx={2}>
+      <Button color='success' mx={2}>
         Success Popover
       </Button>
     </Popover>
@@ -85,7 +85,7 @@ export const colors = () => (
       width={130}
       color='alert'
     >
-      <Button color='alert' variation='outline' mx={2}>
+      <Button color='alert' mx={2}>
         Alert Popover
       </Button>
     </Popover>
@@ -96,28 +96,31 @@ export const colors = () => (
       width={130}
       color='error'
     >
-      <Button color='error' variation='outline' mx={2}>
+      <Button color='error' mx={2}>
         Error Popover
       </Button>
     </Popover>
   </Flex>
 )
 
-const FilterChipContent = () => (
-  <Box p={2}>
-    <FilterChip>Hello</FilterChip>
-    <FilterChip>World</FilterChip>
+const FilterChipContent = ({ handleClose }) => (
+  <Box p={3}>
+    <Flex justifyContent='center' mb={3}>
+      <FilterChip label='Filter Chip' size='sm' mr={2} />
+      <FilterChip label='Filter Chip' size='sm' />
+    </Flex>
+    <Flex justifyContent='right'>
+      <Button size='small' onClick={handleClose}>
+        Done
+      </Button>
+    </Flex>
   </Box>
 )
 
 export const filterChips = () => (
-  <Flex>
-    <Popover renderContent={FilterChipContent} placement='bottom' ariaLabel='Default Popover' width={130}>
-      <Button color='primary' variation='outline' mx={2}>
-        Popover with Filter Chips
-      </Button>
-    </Popover>
-  </Flex>
+  <Popover renderContent={FilterChipContent} placement='bottom' ariaLabel='Default Popover' width={300}>
+    <Button color='primary'>Popover with Filter Chips</Button>
+  </Popover>
 )
 
 export const forcedOpenViaProp = () => (
@@ -224,7 +227,7 @@ const Playground = ({ children }) => (
 
 const InnerContent = ({ handleClose }) => (
   <Box p={4}>
-    <Absolute color='primary' top={25} right={25}>
+    <Absolute top={25} right={25}>
       <CloseButton onClick={handleClose} />
     </Absolute>
     <BackgroundImage
@@ -236,10 +239,10 @@ const InnerContent = ({ handleClose }) => (
       Do you accept the terms and conditions?
     </Text>
     <Flex justifyContent='center'>
-      <Button color='secondary' onClick={handleClose} mr={2}>
+      <Button color='primary' onClick={handleClose} mr={2}>
         Agree
       </Button>
-      <Button variation='outline' onClick={handleClose} ml={2}>
+      <Button variation='subtle' onClick={handleClose} ml={2}>
         Close
       </Button>
     </Flex>
