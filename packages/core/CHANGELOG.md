@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 07 Mar 2022 18:00:11 GMT and should not be manually modified.
+This log was last generated on Thu, 10 Mar 2022 14:31:55 GMT and should not be manually modified.
+
+## 4.16.1
+Thu, 10 Mar 2022 14:31:55 GMT
+
+### Patches
+
+- Update hover state in chips label
 
 ## 4.16.0
 Mon, 07 Mar 2022 18:00:11 GMT

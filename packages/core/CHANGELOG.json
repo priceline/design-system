@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.16.1",
+      "tag": "pcln-design-system_v4.16.1",
+      "date": "Thu, 10 Mar 2022 14:31:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update hover state in chips label",
+            "author": "Ralston Almeida <84033935+ralston7@users.noreply.github.com>",
+            "commit": "605c79310fc9a34d5ff92a0a0a88af0255dad845"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.16.0",
       "tag": "pcln-design-system_v4.16.0",
       "date": "Mon, 07 Mar 2022 18:00:11 GMT",
