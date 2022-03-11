@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Thu, 10 Mar 2022 14:31:55 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 15:09:44 GMT and should not be manually modified.
+
+## 4.3.12
+Fri, 11 Mar 2022 15:09:44 GMT
+
+### Patches
+
+- update filter chip story styling
 
 ## 4.3.11
 Thu, 10 Mar 2022 14:31:55 GMT

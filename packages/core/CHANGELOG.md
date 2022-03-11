@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 10 Mar 2022 14:31:55 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 15:09:44 GMT and should not be manually modified.
+
+## 4.16.2
+Fri, 11 Mar 2022 15:09:44 GMT
+
+### Patches
+
+- Fix bug in responsive texStyle on Text
 
 ## 4.16.1
 Thu, 10 Mar 2022 14:31:55 GMT
