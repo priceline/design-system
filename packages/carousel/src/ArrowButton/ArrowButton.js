@@ -22,10 +22,25 @@ const ArrowButton = ({ type, position, setPosition, ...props }) =>
     </Hide>
   ) : null
 
+ArrowButton.defaultProps = {
+  buttonBackground: 'background.lightest',
+  buttonColor: 'primary.base',
+  buttonHoverBackground: 'background.base',
+  buttonHoverColor: 'primary.dark',
+}
+
 ArrowButton.propTypes = {
   type: PropTypes.oneOf(['prev', 'next']),
   position: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   setPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
+  /** color.shade pattern to be passed to getPaletteColor */
+  buttonBackground: PropTypes.string,
+  /** color.shade pattern to be passed to getPaletteColor */
+  buttonColor: PropTypes.string,
+  /** color.shade pattern to be passed to getPaletteColor */
+  buttonHoverBackground: PropTypes.string,
+  /** color.shade pattern to be passed to getPaletteColor */
+  buttonHoverColor: PropTypes.string,
 }
 
 export { ArrowButton }
