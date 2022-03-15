@@ -4,8 +4,8 @@ exports[`theme snapshot 1`] = `
 Object {
   "bold": 700,
   "borderRadii": Object {
-    "2xl": "2px",
-    "3xl": "2px",
+    "2xl": "24px",
+    "3xl": "32px",
     "action-lg": "2px",
     "action-md": "2px",
     "action-sm": "2px",
@@ -14,7 +14,7 @@ Object {
     "md": "2px",
     "none": "none",
     "sm": "2px",
-    "xl": "2px",
+    "xl": "6px",
     "xsm": "2px",
   },
   "boxShadows": Array [
