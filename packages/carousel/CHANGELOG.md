@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Fri, 11 Mar 2022 15:09:44 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 15:00:35 GMT and should not be manually modified.
+
+## 0.3.0
+Tue, 15 Mar 2022 15:00:35 GMT
+
+### Minor changes
+
+- allow alternate arrow button colors
 
 ## 0.2.7
 Fri, 11 Mar 2022 15:09:44 GMT
