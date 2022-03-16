@@ -95,8 +95,9 @@ exports[`ModalHeader render 1`] = `
 }
 
 .c2 {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,7 +118,7 @@ exports[`ModalHeader render 1`] = `
 }
 
 .c4:focus {
-  background-color: #049;
+  box-shadow: none;
   outline: none;
 }
 
@@ -132,7 +133,8 @@ exports[`ModalHeader render 1`] = `
     >
       <div
         class="c2"
-        font-size="1"
+        font-size="14px"
+        font-weight="700"
       >
         test
       </div>
@@ -180,6 +182,7 @@ exports[`SmallModalHeader render 1`] = `
 
 .c1 {
   background-color: #0a0;
+  color: #0a0;
   height: 8px;
 }
 
@@ -189,6 +192,7 @@ exports[`SmallModalHeader render 1`] = `
   >
     <div
       class="c1"
+      color="secondary.base"
     />
   </div>
 </div>

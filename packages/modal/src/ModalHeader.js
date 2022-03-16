@@ -1,7 +1,8 @@
+import { CloseButton, deprecatedPropType, Flex, Text } from 'pcln-design-system'
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import { Flex, CloseButton, deprecatedPropType, Text } from 'pcln-design-system'
+import { space } from 'styled-system'
 
 const Title = styled(Text)`
   display: flex;
@@ -16,27 +17,23 @@ const StyledCloseButton = styled(CloseButton)`
   }
 
   &:focus {
-    background-color: ${(props) => props.theme.palette.primary.dark};
+    box-shadow: none;
     outline: none;
   }
 `
 
-const ModalHeader = ({ bg, color, onClose, title }) => (
+const ModalHeader = ({ bg, color, onClose, textStyle, title, ...props }) => (
   <Flex
     align='center'
     alignItems='center'
     color={color}
     bg={bg}
-    px={3}
     borderRadius='xl'
-    rounded='top'
     height='40px'
+    rounded='top'
+    {...props}
   >
-    {title && (
-      <Title fontSize={1} bold>
-        {title}
-      </Title>
-    )}
+    {title && <Title textStyle={textStyle}>{title}</Title>}
     {onClose && <StyledCloseButton onClick={onClose} ml='auto' />}
   </Flex>
 )
@@ -44,15 +41,19 @@ const ModalHeader = ({ bg, color, onClose, title }) => (
 ModalHeader.displayName = ModalHeader
 
 ModalHeader.propTypes = {
+  ...space.propTypes,
   bg: deprecatedPropType('color'),
-  onClose: PropTypes.func,
   color: PropTypes.string,
+  onClose: PropTypes.func,
+  textStyle: PropTypes.string,
   title: PropTypes.string,
 }
 
 ModalHeader.defaultProps = {
   bg: 'primary.base',
   color: 'text.lightest',
+  px: 3,
+  textStyle: 'heading6',
 }
 
 export default ModalHeader

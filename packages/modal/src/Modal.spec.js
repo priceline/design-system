@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from 'testing-library'
-
 import { Modal } from './index'
 
 describe('Modal', () => {

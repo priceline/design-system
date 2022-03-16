@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "new textStyle prop for ModalHeader",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

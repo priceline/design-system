@@ -1,12 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { Menu, MenuItem } from 'pcln-menu'
 import { action } from '@storybook/addon-actions'
-
-import { Modal, SmallModalHeader, ScrollLock, ModalHeader } from '../src'
+import { Box, Button, Text } from 'pcln-design-system'
+import { Menu, MenuItem } from 'pcln-menu'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
+import { Modal, ModalHeader, ScrollLock, SmallModalHeader } from '../src'
 import { currencies } from './mockData'
-import { Button, Text, Box } from 'pcln-design-system'
 
 const StyledModal = styled(Modal)`
   height: ${(props) => props.height};
@@ -93,6 +92,28 @@ export const WithModalHeader = () => {
         width={['80vw', '400px', '500px']}
       />
     </div>
+  )
+}
+
+export const WithSmallModalHeaderAndWhiteBackgroundModalHeaderWithSetTextStyle = () => {
+  return (
+    <ModalStory
+      header={
+        <>
+          <SmallModalHeader bg={null} color='primary.base' />
+          <ModalHeader
+            bg={null}
+            color='background.lightest'
+            onClose={action('Modal closed!')}
+            pt={2}
+            textStyle='heading4'
+            title='Modal title'
+          />
+        </>
+      }
+      height={['90vh', '460px', '560px']}
+      width={['80vw', '400px', '500px']}
+    />
   )
 }
 
