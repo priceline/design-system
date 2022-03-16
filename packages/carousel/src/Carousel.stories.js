@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Flex, Card, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
+import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
 import styled from 'styled-components'
 import { Carousel } from './Carousel'
 
@@ -9,6 +9,11 @@ const SLIDE_COUNT = 10
 const ToutCard = styled(Card)`
   overflow: hidden;
 `
+
+const StyledMockBox = styled(Box)`
+  border: 1px solid black;
+`
+
 export default {
   title: 'pcln-carousel / Carousel',
   component: Carousel,
@@ -185,4 +190,29 @@ AlternateButtonColors.args = {
     buttonHoverBackground: 'primary.dark',
     buttonHoverColor: 'text.lightest',
   },
+}
+
+const TwoColumLayoutTemplate = (args) => (
+  <Container maxWidth={1280}>
+    <Flex width={1} flexDirection={['column', null, null, 'row']}>
+      <Box width={[1, null, null, 2 / 3]}>
+        <Carousel {...args}>{renderCards()}</Carousel>
+      </Box>
+      <StyledMockBox width={[1, null, null, 1 / 3]} textAlign='center'>
+        MOCK SUMMARY OF CHARGES
+      </StyledMockBox>
+    </Flex>
+  </Container>
+)
+export const TwoColumnLayout = TwoColumLayoutTemplate.bind({})
+TwoColumnLayout.args = {
+  showDots: false,
+  showForwardBackBtns: true,
+  buttonColorProps: {
+    buttonBackground: 'primary.base',
+    buttonColor: 'text.lightest',
+    buttonHoverBackground: 'primary.dark',
+    buttonHoverColor: 'text.lightest',
+  },
+  isTwoColumnLayout: true,
 }

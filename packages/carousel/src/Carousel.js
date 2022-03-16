@@ -45,11 +45,12 @@ export const Carousel = ({
   slideSpacing = 2,
   buttonColorProps,
   onSlideChange,
+  isTwoColumnLayout = false,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
-  const responsiveVisibleSlides = useResponsiveVisibleSlides(visibleSlidesArray)
+  const responsiveVisibleSlides = useResponsiveVisibleSlides(visibleSlidesArray, isTwoColumnLayout)
 
   return (
     <CarouselWrapper>
@@ -179,4 +180,6 @@ Carousel.propTypes = {
   }),
   /** Called each time the current slide changes, passed the new currentSlide (zero-indexed) */
   onSlideChange: PropTypes.func,
+  /** When true, carousel does not span the entire width of parent container, rather it is adjacent to another element with width */
+  isTwoColumnLayout: PropTypes.bool,
 }

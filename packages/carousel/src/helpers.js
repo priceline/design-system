@@ -14,14 +14,14 @@ const getSlideKey = moize(uuidv4)
 const getVisibleSlidesArray = (visibleSlides) =>
   Array.isArray(visibleSlides) ? visibleSlides : [XS_VISIBLE_SLIDES, SM_VISIBLE_SLIDES, visibleSlides]
 
-const getVisibleSlides = (visibleSlides, windowWidth) =>
+const getVisibleSlides = (visibleSlides, windowWidth, isTwoColumnLayout) =>
   windowWidth < XS_VISIBLE_SLIDES_WIDTH
     ? visibleSlides[0]
-    : windowWidth < SM_VISIBLE_SLIDES_WIDTH
+    : windowWidth < SM_VISIBLE_SLIDES_WIDTH && !isTwoColumnLayout
     ? visibleSlides[1]
     : visibleSlides[2]
 
-const useResponsiveVisibleSlides = (visibleSlides) => {
+const useResponsiveVisibleSlides = (visibleSlides, isTwoColumnLayout) => {
   const [width, setWidth] = useState(window.innerWidth)
   const handleResize = () => {
     setWidth(window.innerWidth)
@@ -33,7 +33,7 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
       media.removeEventListener('change', handleResize)
     }
   })
-  return getVisibleSlides(visibleSlides, width)
+  return getVisibleSlides(visibleSlides, width, isTwoColumnLayout)
 }
 
 export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides }
