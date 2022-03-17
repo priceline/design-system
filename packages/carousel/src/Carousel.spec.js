@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'testing-library'
+import { render, fireEvent } from 'testing-library'
 import { Flex } from 'pcln-design-system'
 import { Carousel } from './Carousel'
 
@@ -19,8 +19,10 @@ describe('Carousel', () => {
   })
 
   it('should render a carousel', () => {
-    const { getByText, getByTestId } = render(
-      <Carousel showDots arrowsPosition='side'>
+    const onSlideChange = jest.fn()
+
+    const { getByText, getByTestId, getByLabelText } = render(
+      <Carousel showDots arrowsPosition='side' onSlideChange={onSlideChange}>
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
         <Flex>Slide 3</Flex>
@@ -31,6 +33,11 @@ describe('Carousel', () => {
     expect(getByTestId('dot_group')).toBeInTheDocument()
     expect(getByTestId('prev-side')).toBeInTheDocument()
     expect(getByTestId('next-side')).toBeInTheDocument()
+
+    fireEvent.click(getByLabelText('next'))
+    expect(onSlideChange).toHaveBeenCalledWith(1)
+    fireEvent.click(getByLabelText('previous'))
+    expect(onSlideChange).toHaveBeenCalledWith(0)
   })
 
   it('should set slide widths if layout is set', () => {
