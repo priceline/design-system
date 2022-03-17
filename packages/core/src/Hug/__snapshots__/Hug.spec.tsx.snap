@@ -27,7 +27,7 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
 }
 
 .c0 {
-  border-radius: 2px;
+  border-radius: 6px;
   border: 1px solid #fff;
   overflow: hidden;
 }

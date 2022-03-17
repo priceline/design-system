@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update borderRadii.xl to 6px for backward compatibility",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

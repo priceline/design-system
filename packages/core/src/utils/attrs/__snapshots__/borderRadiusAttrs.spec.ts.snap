@@ -8,9 +8,9 @@ Object {
     "2px",
     "2px",
     "2px",
-    "2px",
-    "2px",
-    "2px",
+    "6px",
+    "24px",
+    "32px",
     "9999px",
     "2px",
     "2px",
@@ -36,31 +36,31 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=bottom and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 0 2px 2px",
+  "borderRadius": "0 0 6px 6px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=bottomLeft and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 0 0 2px",
+  "borderRadius": "0 0 0 6px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=bottomRight and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 0 2px 0",
+  "borderRadius": "0 0 6px 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=2xl 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "24px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=3xl 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "32px",
 }
 `;
 
@@ -114,7 +114,7 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "6px",
 }
 `;
 
@@ -126,30 +126,30 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=left and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "2px 0 0 2px",
+  "borderRadius": "6px 0 0 6px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=right and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 2px 2px 0",
+  "borderRadius": "0 6px 6px 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=top and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "2px 2px 0 0",
+  "borderRadius": "6px 6px 0 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=topLeft and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "2px 0 0 0",
+  "borderRadius": "6px 0 0 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=topRight and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 2px 0 0",
+  "borderRadius": "0 6px 0 0",
 }
 `;
