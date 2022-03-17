@@ -1,6 +1,13 @@
 # Change Log - pcln-modal
 
-This log was last generated on Fri, 11 Mar 2022 15:09:44 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Mar 2022 13:20:11 GMT and should not be manually modified.
+
+## 4.2.0
+Thu, 17 Mar 2022 13:20:11 GMT
+
+### Minor changes
+
+- new textStyle prop for ModalHeader
 
 ## 4.1.11
 Fri, 11 Mar 2022 15:09:44 GMT
