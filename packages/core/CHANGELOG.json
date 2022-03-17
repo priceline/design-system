@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.16.3",
+      "tag": "pcln-design-system_v4.16.3",
+      "date": "Thu, 17 Mar 2022 16:41:16 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update borderRadii.xl to 6px for backward compatibility",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "9a5f05bf327d29940a03bb639cc07fb4d0a1cbca"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.16.2",
       "tag": "pcln-design-system_v4.16.2",
       "date": "Fri, 11 Mar 2022 15:09:44 GMT",

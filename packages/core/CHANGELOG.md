@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 11 Mar 2022 15:09:44 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Mar 2022 16:41:16 GMT and should not be manually modified.
+
+## 4.16.3
+Thu, 17 Mar 2022 16:41:16 GMT
+
+### Patches
+
+- Update borderRadii.xl to 6px for backward compatibility
 
 ## 4.16.2
 Fri, 11 Mar 2022 15:09:44 GMT
