@@ -42,6 +42,9 @@ export default {
     isIntrinsicHeight: {
       defaultValue: true,
     },
+    onSlideChange: {
+      action: 'Current slide changed',
+    },
   },
 }
 

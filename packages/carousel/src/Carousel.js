@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { CarouselProvider, Slide } from 'pure-react-carousel'
+import { CarouselProvider, Slide, CarouselContext } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
 import { CarouselWrapper } from './Carousel.styles'
 import { Flex, Relative, Box } from 'pcln-design-system'
@@ -8,6 +8,26 @@ import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
+
+const ChangeDetector = ({ onSlideChange }) => {
+  const carouselContext = useContext(CarouselContext)
+  // eslint-disable-next-line no-unused-vars
+  const [_currentSlide, setCurrentSlide] = useState(carouselContext.state.currentSlide)
+
+  useEffect(() => {
+    function onChange() {
+      setCurrentSlide(carouselContext.state.currentSlide)
+
+      if (typeof onSlideChange === 'function') {
+        onSlideChange(carouselContext.state.currentSlide)
+      }
+    }
+    carouselContext.subscribe(onChange)
+    return () => carouselContext.unsubscribe(onChange)
+  }, [carouselContext])
+
+  return null
+}
 
 export const Carousel = ({
   children,
@@ -24,6 +44,7 @@ export const Carousel = ({
   arrowsPosition = 'side',
   slideSpacing = 2,
   buttonColorProps,
+  onSlideChange,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -45,6 +66,7 @@ export const Carousel = ({
         orientation={orientation}
         infinite={infinite}
       >
+        <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
             <ArrowButton type='prev' position='top' setPosition={arrowsPosition} {...buttonColorProps} />
@@ -155,4 +177,6 @@ Carousel.propTypes = {
     buttonHoverBackground: PropTypes.string,
     buttonHoverColor: PropTypes.string,
   }),
+  /** Called each time the current slide changes, passed the new currentSlide (zero-indexed) */
+  onSlideChange: PropTypes.func,
 }
