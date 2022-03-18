@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add Toggle component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
