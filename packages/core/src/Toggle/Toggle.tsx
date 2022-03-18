@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { Box, Absolute, Input, colors } from '..'
+import { Box, Absolute, Input, getPaletteColor } from '..'
 
-const alphaColor = (color: string) => `${color}4C`
+const alphaColor = (color: string, props) => `${getPaletteColor(color)(props)}4C`
 
 const AbsoluteInput = styled(Input)`
   position: absolute;
@@ -20,7 +20,7 @@ const AbsoluteInput = styled(Input)`
 const OutlineAbsolute = styled(Absolute)`
   height: calc(100% + 8px);
   opacity: 0;
-  background-color: ${(props) => alphaColor(props.isOn ? colors.blue : colors.gray)};
+  background-color: ${(props) => alphaColor(props.isOn ? 'primary.base' : 'background.dark', props)};
 `
 
 const CircleAbsolute = styled(Absolute)`
