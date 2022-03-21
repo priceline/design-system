@@ -208,6 +208,7 @@ export const TwoColumnLayout = TwoColumLayoutTemplate.bind({})
 TwoColumnLayout.args = {
   showDots: false,
   showForwardBackBtns: true,
+  sideButtonMargin: '-23px',
   buttonStyles: {
     buttonBackground: 'primary.base',
     buttonColor: 'text.lightest',

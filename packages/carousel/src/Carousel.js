@@ -43,12 +43,9 @@ export const Carousel = ({
   visibleSlides = 1,
   arrowsPosition = 'side',
   slideSpacing = 2,
-<<<<<<< HEAD
-  buttonColorProps,
   onSlideChange,
-=======
+  sideButtonMargin = '-30px',
   buttonStyles,
->>>>>>> 79352593 (feat(cu): add button width, height props, change buttonColorProps name to buttonStyles)
   isTwoColumnLayout = false,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
@@ -81,7 +78,7 @@ export const Carousel = ({
         <Relative>
           <ArrowButton
             pl={slideSpacing}
-            ml='-30px'
+            ml={sideButtonMargin}
             type='prev'
             position='side'
             setPosition={arrowsPosition}
@@ -103,7 +100,7 @@ export const Carousel = ({
             })}
           </Slider>
           <ArrowButton
-            mr='-30px'
+            mr={sideButtonMargin}
             pr={slideSpacing}
             type='next'
             position='side'
@@ -169,6 +166,8 @@ Carousel.propTypes = {
   arrowsPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   /** Padding around the slides */
   slideSpacing: PropTypes.number,
+  /** Custom arrow button margin for side position/horizontal orientation */
+  sideButtonMargin: PropTypes.string,
   /** Custom button styles width, height, color based on color.shade palette color */
   buttonStyles: PropTypes.shape({
     buttonBackground: PropTypes.string,

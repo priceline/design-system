@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "change buttonColorProps to buttonStyles and some additional props",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
