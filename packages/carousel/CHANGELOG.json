@@ -2,6 +2,28 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "0.4.0",
+      "tag": "pcln-carousel_v0.4.0",
+      "date": "Mon, 21 Mar 2022 12:59:40 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add onSlideChange prop",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "08731f1f96f43fd61bc531a3e3a42ef056c43a8d"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.17.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.16.3` to `4.17.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.1",
       "tag": "pcln-carousel_v0.3.1",
       "date": "Thu, 17 Mar 2022 16:41:16 GMT",

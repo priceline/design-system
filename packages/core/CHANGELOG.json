@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.17.0",
+      "tag": "pcln-design-system_v4.17.0",
+      "date": "Mon, 21 Mar 2022 12:59:40 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add Toggle component",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "ad10224f131fdccff740f52f6ebbbb20d8e18430"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.16.3",
       "tag": "pcln-design-system_v4.16.3",
       "date": "Thu, 17 Mar 2022 16:41:16 GMT",

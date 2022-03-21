@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 17 Mar 2022 16:41:16 GMT and should not be manually modified.
+This log was last generated on Mon, 21 Mar 2022 12:59:40 GMT and should not be manually modified.
+
+## 4.17.0
+Mon, 21 Mar 2022 12:59:40 GMT
+
+### Minor changes
+
+- Add Toggle component
 
 ## 4.16.3
 Thu, 17 Mar 2022 16:41:16 GMT
