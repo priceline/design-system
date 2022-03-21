@@ -184,7 +184,7 @@ AlternateButtonColors.args = {
   visibleSlides: 3,
   showDots: false,
   showForwardBackBtns: true,
-  buttonColorProps: {
+  buttonStyles: {
     buttonBackground: 'primary.base',
     buttonColor: 'text.lightest',
     buttonHoverBackground: 'primary.dark',
@@ -208,11 +208,13 @@ export const TwoColumnLayout = TwoColumLayoutTemplate.bind({})
 TwoColumnLayout.args = {
   showDots: false,
   showForwardBackBtns: true,
-  buttonColorProps: {
+  buttonStyles: {
     buttonBackground: 'primary.base',
     buttonColor: 'text.lightest',
     buttonHoverBackground: 'primary.dark',
     buttonHoverColor: 'text.lightest',
+    buttonWidth: '48px',
+    buttonHeight: '48px',
   },
   isTwoColumnLayout: true,
 }

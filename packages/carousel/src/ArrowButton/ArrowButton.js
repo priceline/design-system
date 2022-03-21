@@ -27,6 +27,8 @@ ArrowButton.defaultProps = {
   buttonColor: 'primary.base',
   buttonHoverBackground: 'background.base',
   buttonHoverColor: 'primary.dark',
+  buttonHeight: '60px',
+  buttonWidth: '60px',
 }
 
 ArrowButton.propTypes = {
@@ -41,6 +43,8 @@ ArrowButton.propTypes = {
   buttonHoverBackground: PropTypes.string,
   /** color.shade pattern to be passed to getPaletteColor */
   buttonHoverColor: PropTypes.string,
+  buttonHeight: PropTypes.string,
+  buttonWidth: PropTypes.string,
 }
 
 export { ArrowButton }

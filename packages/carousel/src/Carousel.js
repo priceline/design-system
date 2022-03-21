@@ -43,8 +43,12 @@ export const Carousel = ({
   visibleSlides = 1,
   arrowsPosition = 'side',
   slideSpacing = 2,
+<<<<<<< HEAD
   buttonColorProps,
   onSlideChange,
+=======
+  buttonStyles,
+>>>>>>> 79352593 (feat(cu): add button width, height props, change buttonColorProps name to buttonStyles)
   isTwoColumnLayout = false,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
@@ -70,14 +74,8 @@ export const Carousel = ({
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
-            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} {...buttonColorProps} />
-            <ArrowButton
-              type='next'
-              position='top'
-              ml={3}
-              setPosition={arrowsPosition}
-              {...buttonColorProps}
-            />
+            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} {...buttonStyles} />
+            <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} {...buttonStyles} />
           </Flex>
         ) : null}
         <Relative>
@@ -87,7 +85,7 @@ export const Carousel = ({
             type='prev'
             position='side'
             setPosition={arrowsPosition}
-            {...buttonColorProps}
+            {...buttonStyles}
           />
           <Slider>
             {React.Children.map(children, (item, index) => {
@@ -110,7 +108,7 @@ export const Carousel = ({
             type='next'
             position='side'
             setPosition={arrowsPosition}
-            {...buttonColorProps}
+            {...buttonStyles}
           />
         </Relative>
         {arrowsPosition === 'bottom' || showDots ? (
@@ -120,7 +118,7 @@ export const Carousel = ({
               type='prev'
               position='bottom'
               setPosition={arrowsPosition}
-              {...buttonColorProps}
+              {...buttonStyles}
             />
             {showDots && <Dots />}
             <ArrowButton
@@ -128,7 +126,7 @@ export const Carousel = ({
               type='next'
               position='bottom'
               setPosition={arrowsPosition}
-              {...buttonColorProps}
+              {...buttonStyles}
             />
           </Flex>
         ) : null}
@@ -171,12 +169,14 @@ Carousel.propTypes = {
   arrowsPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   /** Padding around the slides */
   slideSpacing: PropTypes.number,
-  /** Option to specify arrow button colors based on color.shade palette color */
-  buttonColorProps: PropTypes.shape({
+  /** Custom button styles width, height, color based on color.shade palette color */
+  buttonStyles: PropTypes.shape({
     buttonBackground: PropTypes.string,
     buttonColor: PropTypes.string,
     buttonHoverBackground: PropTypes.string,
     buttonHoverColor: PropTypes.string,
+    buttonWidth: PropTypes.string,
+    buttonHeight: PropTypes.string,
   }),
   /** Called each time the current slide changes, passed the new currentSlide (zero-indexed) */
   onSlideChange: PropTypes.func,
