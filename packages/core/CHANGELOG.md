@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 21 Mar 2022 12:59:40 GMT and should not be manually modified.
+This log was last generated on Mon, 28 Mar 2022 17:54:01 GMT and should not be manually modified.
+
+## 4.18.0
+Mon, 28 Mar 2022 17:54:01 GMT
+
+### Minor changes
+
+- Pass zIndex prop to Layout children wrappers
 
 ## 4.17.0
 Mon, 21 Mar 2022 12:59:40 GMT
