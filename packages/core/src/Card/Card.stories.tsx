@@ -8,7 +8,16 @@ export default {
 
 export const BoxShadowsWithDefaultBorder = () => (
   <Box>
-    <Card boxShadowSize='sm' m={4} p={4} width={1 / 2} color='black' bg='white' borderWidth={1}>
+    <Card
+      borderRadius={6}
+      boxShadowSize='sm'
+      m={4}
+      p={4}
+      width={1 / 2}
+      color='black'
+      bg='white'
+      borderWidth={1}
+    >
       Small Shadow
     </Card>
     <Card boxShadowSize='md' m={4} p={4} width={1 / 2} color='text' bg='white' borderWidth={1}>

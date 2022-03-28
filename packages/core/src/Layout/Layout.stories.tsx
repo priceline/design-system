@@ -20,7 +20,7 @@ const Template = (args) => (
   <Flex width='100%' color='primary.light'>
     <Container size='xl' style={{ border: `1px solid` }}>
       <Layout {...args}>
-        <LayoutDemoBox color='secondary.base' />
+        <LayoutDemoBox color='secondary.base' zIndex={1} />
         <LayoutDemoBox color='warning.base' />
         <LayoutDemoBox color='alert' />
         <LayoutDemoBox color='primary' />
