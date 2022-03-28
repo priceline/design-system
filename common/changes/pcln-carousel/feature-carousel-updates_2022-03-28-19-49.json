@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "pcln-carousel",
-      "comment": "change buttonColorProps to buttonStyles and some additional props",
+      "comment": "remove buttonColorProps and permit custom ArrowButton using cloneElement",
       "type": "major"
     }
   ],
