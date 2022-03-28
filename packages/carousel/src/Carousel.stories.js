@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
 import styled from 'styled-components'
-import { Carousel } from './Carousel'
+import { Carousel, ArrowButton } from '.'
 
 const SLIDE_COUNT = 10
 
@@ -179,20 +179,22 @@ RichContent.args = {
 
 const ButtonColorsTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 
+const buttonStyles = {
+  buttonBackground: 'primary.base',
+  buttonColor: 'text.lightest',
+  buttonHoverBackground: 'primary.dark',
+  buttonHoverColor: 'text.lightest',
+}
+
 export const AlternateButtonColors = ButtonColorsTemplate.bind({})
 AlternateButtonColors.args = {
   visibleSlides: 3,
   showDots: false,
   showForwardBackBtns: true,
-  buttonStyles: {
-    buttonBackground: 'primary.base',
-    buttonColor: 'text.lightest',
-    buttonHoverBackground: 'primary.dark',
-    buttonHoverColor: 'text.lightest',
-  },
+  sidePositionArrowButton: <ArrowButton {...buttonStyles} />,
 }
 
-const TwoColumLayoutTemplate = (args) => (
+const FixedVisibleSlidesTemplate = (args) => (
   <Container maxWidth={1280}>
     <Flex width={1} flexDirection={['column', null, null, 'row']}>
       <Box width={[1, null, null, 2 / 3]}>
@@ -204,18 +206,12 @@ const TwoColumLayoutTemplate = (args) => (
     </Flex>
   </Container>
 )
-export const TwoColumnLayout = TwoColumLayoutTemplate.bind({})
-TwoColumnLayout.args = {
+export const SetVisibleSlidesByViewport = FixedVisibleSlidesTemplate.bind({})
+
+SetVisibleSlidesByViewport.args = {
   showDots: false,
   showForwardBackBtns: true,
+  visibleSlides: [2.1, 1, 1],
   sideButtonMargin: '-23px',
-  buttonStyles: {
-    buttonBackground: 'primary.base',
-    buttonColor: 'text.lightest',
-    buttonHoverBackground: 'primary.dark',
-    buttonHoverColor: 'text.lightest',
-    buttonWidth: '48px',
-    buttonHeight: '48px',
-  },
-  isTwoColumnLayout: true,
+  sidePositionArrowButton: <ArrowButton {...buttonStyles} buttonSize='48px' />,
 }

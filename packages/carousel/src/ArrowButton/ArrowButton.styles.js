@@ -29,8 +29,8 @@ const sideStyles = (props) =>
   props.position === 'side'
     ? `
     ${props.type == 'prev' ? 'left' : 'right'}: 0px;
-    height: ${props.buttonHeight};
-    width: ${props.buttonWidth};
+    height: ${props.buttonSize};
+    width: ${props.buttonSize};
     &:disabled {
       display: none;
     }
