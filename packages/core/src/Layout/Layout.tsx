@@ -1,6 +1,8 @@
 import React from 'react'
 import moize from 'moize'
 import PropTypes, { InferProps } from 'prop-types'
+import { zIndex } from 'styled-system'
+import styled from 'styled-components'
 
 import { Flex, Box } from '..'
 
@@ -139,6 +141,10 @@ const propTypes = {
   ]),
 }
 
+const ZIndexBox = styled(Box)`
+  ${zIndex}
+`
+
 const Layout: React.FC<InferProps<typeof propTypes>> = ({ children, gap, rowGap, variation }) => {
   const widths = memoGetChildrenWidths(variation, children.length)
   const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = memoGetGapValues(gap, rowGap)
@@ -149,9 +155,15 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({ children, gap, rowGap,
         children,
         (child, idx) =>
           child && (
-            <Box width={widths[idx]} px={boxPaddingX} py={boxPaddingY} data-testid={`box-${idx}`}>
+            <ZIndexBox
+              width={widths[idx]}
+              px={boxPaddingX}
+              py={boxPaddingY}
+              data-testid={`box-${idx}`}
+              zIndex={child.props.zIndex}
+            >
               {React.cloneElement(child)}
-            </Box>
+            </ZIndexBox>
           )
       )}
     </Flex>
