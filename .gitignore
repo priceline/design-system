@@ -33,6 +33,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+**/.storybook/node_modules
 
 # Optional npm cache directory
 .npm

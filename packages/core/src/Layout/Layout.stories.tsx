@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Container, Box, Layout } from '..'
+import { Flex, Container, Box, Layout, Relative, Absolute } from '..'
 
 export default {
   title: 'Layout',
@@ -43,4 +43,24 @@ Responsive.args = {
   variation: ['100', '50-50', null, '60-40'],
   gap: 'sm',
   rowGap: ['sm', 'md'],
+}
+
+const OverlapTemplate = (args) => (
+  <Flex width='100%' color='primary.light'>
+    <Container size='xl' style={{ border: `1px solid` }}>
+      <Layout {...args}>
+        <Relative color='secondary.base' zIndex={1} height='200px'>
+          <Absolute height={100} width={200} color='notify' top='30px' right='-70px' />
+        </Relative>
+        <LayoutDemoBox color='primary.base' />
+      </Layout>
+    </Container>
+  </Flex>
+)
+
+export const Overlap = OverlapTemplate.bind({})
+Overlap.args = {
+  variation: '60-40',
+  gap: 'sm',
+  rowGap: 'sm',
 }
