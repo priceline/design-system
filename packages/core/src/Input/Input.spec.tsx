@@ -48,7 +48,7 @@ describe('Input', () => {
     test('renders with same color as Input', () => {
       const helperText = 'hello world'
       const color = 'error.base'
-      const paletteTheme = createTheme(theme)
+      const paletteTheme = createTheme(undefined, theme)
       const { getByText } = render(
         <Input id={id} color={color} helperText={<Input.HelperText>{helperText}</Input.HelperText>} />
       )
@@ -62,7 +62,7 @@ describe('Input', () => {
       const placeholder = 'click me'
       const color = 'error.base'
       const helperTextColor = 'secondary.base'
-      const paletteTheme = createTheme(theme)
+      const paletteTheme = createTheme(undefined, theme)
       const { getByText, getByPlaceholderText } = render(
         <Input
           id={id}
