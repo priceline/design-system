@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect, cloneElement } from 'react'
 import PropTypes from 'prop-types'
 import { CarouselProvider, Slide, CarouselContext } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
@@ -43,8 +43,9 @@ export const Carousel = ({
   visibleSlides = 1,
   arrowsPosition = 'side',
   slideSpacing = 2,
-  buttonColorProps,
   onSlideChange,
+  sideButtonMargin = '-30px',
+  sidePositionArrowButton,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -69,25 +70,28 @@ export const Carousel = ({
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
-            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} {...buttonColorProps} />
-            <ArrowButton
-              type='next'
-              position='top'
-              ml={3}
-              setPosition={arrowsPosition}
-              {...buttonColorProps}
-            />
+            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} />
+            <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} />
           </Flex>
         ) : null}
         <Relative>
-          <ArrowButton
-            pl={slideSpacing}
-            ml='-30px'
-            type='prev'
-            position='side'
-            setPosition={arrowsPosition}
-            {...buttonColorProps}
-          />
+          {sidePositionArrowButton ? (
+            cloneElement(sidePositionArrowButton, {
+              ml: sideButtonMargin,
+              pr: slideSpacing,
+              type: 'prev',
+              position: 'side',
+              setPosition: arrowsPosition,
+            })
+          ) : (
+            <ArrowButton
+              ml='-30px'
+              pr={slideSpacing}
+              type='prev'
+              position='side'
+              setPosition={arrowsPosition}
+            />
+          )}
           <Slider>
             {React.Children.map(children, (item, index) => {
               return (
@@ -103,32 +107,29 @@ export const Carousel = ({
               )
             })}
           </Slider>
-          <ArrowButton
-            mr='-30px'
-            pr={slideSpacing}
-            type='next'
-            position='side'
-            setPosition={arrowsPosition}
-            {...buttonColorProps}
-          />
+          {sidePositionArrowButton ? (
+            cloneElement(sidePositionArrowButton, {
+              mr: sideButtonMargin,
+              pr: slideSpacing,
+              type: 'next',
+              position: 'side',
+              setPosition: arrowsPosition,
+            })
+          ) : (
+            <ArrowButton
+              mr='-30px'
+              pr={slideSpacing}
+              type='next'
+              position='side'
+              setPosition={arrowsPosition}
+            />
+          )}
         </Relative>
         {arrowsPosition === 'bottom' || showDots ? (
           <Flex alignItems='center' justifyContent='center' pt={2}>
-            <ArrowButton
-              mr={3}
-              type='prev'
-              position='bottom'
-              setPosition={arrowsPosition}
-              {...buttonColorProps}
-            />
+            <ArrowButton mr={3} type='prev' position='bottom' setPosition={arrowsPosition} />
             {showDots && <Dots />}
-            <ArrowButton
-              ml={3}
-              type='next'
-              position='bottom'
-              setPosition={arrowsPosition}
-              {...buttonColorProps}
-            />
+            <ArrowButton ml={3} type='next' position='bottom' setPosition={arrowsPosition} />
           </Flex>
         ) : null}
       </CarouselProvider>
@@ -170,13 +171,10 @@ Carousel.propTypes = {
   arrowsPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   /** Padding around the slides */
   slideSpacing: PropTypes.number,
-  /** Option to specify arrow button colors based on color.shade palette color */
-  buttonColorProps: PropTypes.shape({
-    buttonBackground: PropTypes.string,
-    buttonColor: PropTypes.string,
-    buttonHoverBackground: PropTypes.string,
-    buttonHoverColor: PropTypes.string,
-  }),
+  /** Custom arrow button margin for side position/horizontal orientation */
+  sideButtonMargin: PropTypes.string,
   /** Called each time the current slide changes, passed the new currentSlide (zero-indexed) */
   onSlideChange: PropTypes.func,
+  /** Custom styled arrow button component */
+  sidePositionArrowButton: PropTypes.element,
 }

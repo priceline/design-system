@@ -1,14 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Flex, Card, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
+import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
 import styled from 'styled-components'
-import { Carousel } from './Carousel'
+import { Carousel, ArrowButton } from '.'
 
 const SLIDE_COUNT = 10
 
 const ToutCard = styled(Card)`
   overflow: hidden;
 `
+
+const StyledMockBox = styled(Box)`
+  border: 1px solid black;
+`
+
 export default {
   title: 'pcln-carousel / Carousel',
   component: Carousel,
@@ -174,15 +179,39 @@ RichContent.args = {
 
 const ButtonColorsTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 
+const buttonStyles = {
+  buttonBackground: 'primary.base',
+  buttonColor: 'text.lightest',
+  buttonHoverBackground: 'primary.dark',
+  buttonHoverColor: 'text.lightest',
+}
+
 export const AlternateButtonColors = ButtonColorsTemplate.bind({})
 AlternateButtonColors.args = {
   visibleSlides: 3,
   showDots: false,
   showForwardBackBtns: true,
-  buttonColorProps: {
-    buttonBackground: 'primary.base',
-    buttonColor: 'text.lightest',
-    buttonHoverBackground: 'primary.dark',
-    buttonHoverColor: 'text.lightest',
-  },
+  sidePositionArrowButton: <ArrowButton {...buttonStyles} />,
+}
+
+const FixedVisibleSlidesTemplate = (args) => (
+  <Container maxWidth={1280}>
+    <Flex width={1} flexDirection={['column', null, null, 'row']}>
+      <Box width={[1, null, null, 2 / 3]}>
+        <Carousel {...args}>{renderCards()}</Carousel>
+      </Box>
+      <StyledMockBox width={[1, null, null, 1 / 3]} textAlign='center'>
+        MOCK SUMMARY OF CHARGES
+      </StyledMockBox>
+    </Flex>
+  </Container>
+)
+export const SetVisibleSlidesByViewport = FixedVisibleSlidesTemplate.bind({})
+
+SetVisibleSlidesByViewport.args = {
+  showDots: false,
+  showForwardBackBtns: true,
+  visibleSlides: [2.1, 1, 1],
+  sideButtonMargin: '-23px',
+  sidePositionArrowButton: <ArrowButton {...buttonStyles} buttonSize='48px' />,
 }

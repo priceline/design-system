@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "remove buttonColorProps and permit custom ArrowButton using cloneElement",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
