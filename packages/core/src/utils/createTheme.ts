@@ -24,12 +24,13 @@ const addAliases = (arr) => {
  *
  * @returns The generated theme
  */
-const createTheme = (theme = {}, customBreakpoints = null) => {
-  const mergedTheme = deepmerge(defaultTheme, theme)
+const createTheme = (existingTheme, theme = {}, customBreakpoints = null) => {
+  const mergedTheme = deepmerge(defaultTheme, existingTheme)
+  const finalMergedTheme = deepmerge(mergedTheme, theme)
 
   const mediaQueries = customBreakpoints ? createMediaQueries(customBreakpoints) : mergedTheme.mediaQueries
   return {
-    ...mergedTheme,
+    ...finalMergedTheme,
     contrastRatio: mergedTheme.contrastRatio || 2.6,
     breakpoints: addAliases(customBreakpoints || mergedTheme.breakpoints),
     mediaQueries: addAliases(mediaQueries),
