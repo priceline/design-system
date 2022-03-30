@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.0.0",
+      "tag": "pcln-carousel_v1.0.0",
+      "date": "Wed, 30 Mar 2022 16:54:53 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "remove buttonColorProps and permit custom ArrowButton using cloneElement",
+            "author": "Agustin Bautista <5533800+abautist@users.noreply.github.com>",
+            "commit": "ca708df20b94bf4312d9f608954afa159e518784"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.4.1",
       "tag": "pcln-carousel_v0.4.1",
       "date": "Mon, 28 Mar 2022 17:54:01 GMT",

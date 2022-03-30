@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Mon, 28 Mar 2022 17:54:01 GMT and should not be manually modified.
+This log was last generated on Wed, 30 Mar 2022 16:54:53 GMT and should not be manually modified.
+
+## 1.0.0
+Wed, 30 Mar 2022 16:54:53 GMT
+
+### Breaking changes
+
+- remove buttonColorProps and permit custom ArrowButton using cloneElement
 
 ## 0.4.1
 Mon, 28 Mar 2022 17:54:01 GMT
