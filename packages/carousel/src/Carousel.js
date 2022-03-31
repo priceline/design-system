@@ -78,7 +78,7 @@ export const Carousel = ({
           {sidePositionArrowButton ? (
             cloneElement(sidePositionArrowButton, {
               ml: sideButtonMargin,
-              pr: slideSpacing,
+              pl: slideSpacing,
               type: 'prev',
               position: 'side',
               setPosition: arrowsPosition,
@@ -86,7 +86,7 @@ export const Carousel = ({
           ) : (
             <ArrowButton
               ml='-30px'
-              pr={slideSpacing}
+              pl={slideSpacing}
               type='prev'
               position='side'
               setPosition={arrowsPosition}
