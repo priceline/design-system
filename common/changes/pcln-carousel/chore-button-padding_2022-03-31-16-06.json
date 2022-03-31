@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "replace pr with pl for prev arrow button",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
