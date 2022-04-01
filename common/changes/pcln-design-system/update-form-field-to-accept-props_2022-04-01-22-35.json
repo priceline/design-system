@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add common prop support to FormField",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
