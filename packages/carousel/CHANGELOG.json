@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.0.1",
+      "tag": "pcln-carousel_v1.0.1",
+      "date": "Fri, 01 Apr 2022 13:46:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "replace pr with pl for prev arrow button",
+            "author": "Agustin Bautista <5533800+abautist@users.noreply.github.com>",
+            "commit": "124efb1a95272f2fd19a8ac65bc98e77dd8682ad"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.0",
       "tag": "pcln-carousel_v1.0.0",
       "date": "Wed, 30 Mar 2022 16:54:53 GMT",

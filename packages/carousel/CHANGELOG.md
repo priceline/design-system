@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Wed, 30 Mar 2022 16:54:53 GMT and should not be manually modified.
+This log was last generated on Fri, 01 Apr 2022 13:46:41 GMT and should not be manually modified.
+
+## 1.0.1
+Fri, 01 Apr 2022 13:46:41 GMT
+
+### Patches
+
+- replace pr with pl for prev arrow button
 
 ## 1.0.0
 Wed, 30 Mar 2022 16:54:53 GMT
