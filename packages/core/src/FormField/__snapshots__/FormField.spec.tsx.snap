@@ -82,7 +82,9 @@ exports[`FormField renders 1`] = `
   }
 }
 
-<div>
+<div
+  className=""
+>
   <label
     className="c0"
     color="text.light"
@@ -235,7 +237,9 @@ exports[`FormField renders with Icon 1`] = `
   }
 }
 
-<div>
+<div
+  className=""
+>
   <label
     className="c0"
     color="text.light"
@@ -409,7 +413,9 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   }
 }
 
-<div>
+<div
+  className=""
+>
   <label
     className="c0"
     color="text.light"
@@ -571,7 +577,9 @@ exports[`FormField renders with Select  1`] = `
   }
 }
 
-<div>
+<div
+  className=""
+>
   <label
     className="c0"
     color="text.light"
@@ -753,7 +761,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   }
 }
 
-<div>
+<div
+  className=""
+>
   <label
     className="c0"
     color="text.light"
