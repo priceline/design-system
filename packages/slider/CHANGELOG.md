@@ -1,6 +1,11 @@
 # Change Log - pcln-slider
 
-This log was last generated on Mon, 28 Mar 2022 17:54:01 GMT and should not be manually modified.
+This log was last generated on Mon, 04 Apr 2022 14:48:34 GMT and should not be manually modified.
+
+## 4.2.7
+Mon, 04 Apr 2022 14:48:34 GMT
+
+_Version update only_
 
 ## 4.2.6
 Mon, 28 Mar 2022 17:54:01 GMT
