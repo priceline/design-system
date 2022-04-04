@@ -1,6 +1,7 @@
 import React from 'react'
 import { InferProps } from 'prop-types'
 
+import { Box } from '../Box'
 import { IconField } from '../IconField'
 
 const childrenPropType = (props, propName, componentName) => {
@@ -22,17 +23,17 @@ const propTypes = {
   children: childrenPropType,
 }
 
-const FormField: React.FC<InferProps<typeof propTypes>> = (props) => {
+const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props }) => {
   let iconBefore = false
 
-  const children = React.Children.toArray(props.children)
-  const [field] = children.filter((child) => child.type.isField)
-  const [label] = children.filter((child) => child.type.isLabel)
+  const childrenArray = React.Children.toArray(children)
+  const [field] = childrenArray.filter((child) => child.type.isField)
+  const [label] = childrenArray.filter((child) => child.type.isLabel)
   const valueNoLabel = !label && field && !!field.props.value
   const showLabel = ((label && !label.props.autoHide) || (field && !!field.props.value)) && !valueNoLabel
   const id = field && (field.props.id || field.props.name)
 
-  const styled = children.map((child, i, arr) => {
+  const styled = childrenArray.map((child, i, arr) => {
     if (child.type.isField && arr[i - 1] && arr[i - 1].type.isIcon) {
       iconBefore = true
     }
@@ -74,10 +75,10 @@ const FormField: React.FC<InferProps<typeof propTypes>> = (props) => {
     })
 
   return (
-    <div>
+    <Box {...props}>
       {styledLabel}
       <IconField>{styled}</IconField>
-    </div>
+    </Box>
   )
 }
 
