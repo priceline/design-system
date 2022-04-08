@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 04 Apr 2022 14:48:33 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Apr 2022 14:50:26 GMT and should not be manually modified.
+
+## 4.18.2
+Fri, 08 Apr 2022 14:50:26 GMT
+
+### Patches
+
+- added mandatory name prop to FilterChip component
 
 ## 4.18.1
 Mon, 04 Apr 2022 14:48:33 GMT

@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.18.2",
+      "tag": "pcln-design-system_v4.18.2",
+      "date": "Fri, 08 Apr 2022 14:50:26 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "added mandatory name prop to FilterChip component",
+            "author": "Sachin Gadagi <97517558+sachin-gadagi@users.noreply.github.com>",
+            "commit": "70e484c668ecc0ac0ce5ed429e1b531c4ce2db0d"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.18.1",
       "tag": "pcln-design-system_v4.18.1",
       "date": "Mon, 04 Apr 2022 14:48:33 GMT",

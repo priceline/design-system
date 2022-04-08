@@ -2,6 +2,18 @@
   "name": "pcln-codemods",
   "entries": [
     {
+      "version": "1.1.14",
+      "tag": "pcln-codemods_v1.1.14",
+      "date": "Fri, 08 Apr 2022 14:50:26 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.18.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.13",
       "tag": "pcln-codemods_v1.1.13",
       "date": "Mon, 04 Apr 2022 14:48:34 GMT",
