@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "added mandatory name prop to FilterChip component",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
