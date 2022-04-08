@@ -12,6 +12,7 @@ const propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
   id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   selected: PropTypes.bool,
   facet: PropTypes.string,
@@ -26,6 +27,7 @@ const propTypes = {
 
 const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
   id,
+  name,
   disabled,
   selected,
   children,
@@ -40,6 +42,7 @@ const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
       type='checkbox'
       role='checkbox'
       id={id}
+      name={name}
       data-testid={id}
       disabled={disabled}
       checked={selected}

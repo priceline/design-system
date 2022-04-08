@@ -4,6 +4,7 @@ import FilterChip from './FilterChip'
 
 const props = {
   id: 'testId',
+  name: 'testFilterChipName',
   expanded: false,
   disabled: false,
   onClick: jest.fn(),
@@ -16,6 +17,9 @@ describe('FilterChip', () => {
 
     //id
     expect(filterChip).toHaveAttribute('id', props.id)
+
+    //name
+    expect(filterChip).toHaveAttribute('name', props.name)
 
     //type
     expect(filterChip).toHaveAttribute('type', 'checkbox')

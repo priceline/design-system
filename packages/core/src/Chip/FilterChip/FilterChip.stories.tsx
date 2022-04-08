@@ -33,6 +33,7 @@ const getExamples = (exampleProps, sizes) => (
             <FilterChip
               key={`chip${size.title}${i}`}
               id={`chip${size.title}${i}`}
+              name={`chip${size.title}_${i}`}
               m={1}
               size={size.value}
               {...props}
@@ -169,7 +170,7 @@ export const ImageOnly = () => getExamples(imageOnly, [medium])
 //Custom Chip
 export const CustomChip = () => (
   <Box m={2}>
-    <FilterChip id='customChip1' m={1}>
+    <FilterChip id='customChip1' name='customFilterChipName1' m={1}>
       <Box px={3} py={1}>
         <Text textAlign='center' bold fontSize={1}>
           Browse All
@@ -179,7 +180,7 @@ export const CustomChip = () => (
         </Text>
       </Box>
     </FilterChip>
-    <FilterChip id='customChip2' selected m={1}>
+    <FilterChip id='customChip2' name='customFilterChipName2' selected m={1}>
       <Box px={3} py={1}>
         <Text textAlign='center' bold fontSize={1}>
           Pricebreakers
@@ -189,7 +190,7 @@ export const CustomChip = () => (
         </Text>
       </Box>
     </FilterChip>
-    <FilterChip id='customChip3' m={1}>
+    <FilterChip id='customChip3' name='customFilterChipName3' m={1}>
       <Box px={3} py={1}>
         <Text textAlign='center' bold fontSize={1}>
           Express Deals
