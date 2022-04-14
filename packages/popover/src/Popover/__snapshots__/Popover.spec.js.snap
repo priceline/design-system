@@ -12,10 +12,21 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: none:none;
+  xsm: 2px;
+  sm: 4px;
+  md: 8px;
+  lg: 12px;
+  xl: 16px;
+  2xl: 24px;
+  3xl: 32px;
+  full: 9999px;
+  action-sm: 4px;
+  action-md: 8px;
+  action-lg: 12px;
   border-width: 0;
   border-style: solid;
-  border-radius: 2px;
+  border-radius: 8px;
   font-size: 14px;
   padding: 9.5px 18px;
   background-color: #0068ef;
@@ -105,7 +116,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
 .c3 {
   background-color: #fff;
   color: #001833;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 
 .c1 {
@@ -195,7 +206,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
+  border-radius: 16px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
@@ -252,7 +263,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 .c3 {
   background-color: #fff;
   color: #001833;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 
 .c1 {
@@ -342,7 +353,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
+  border-radius: 16px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
@@ -399,7 +410,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 .c3 {
   background-color: #fff;
   color: #001833;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 
 .c1 {
@@ -489,7 +500,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
+  border-radius: 16px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;

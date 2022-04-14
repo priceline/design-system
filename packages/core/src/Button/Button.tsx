@@ -16,19 +16,31 @@ import {
 const sizes = {
   small: css`
     border-radius: ${(props) =>
-      themeGet(`borderRadii.${props.borderRadius.length > 1 ? props.borderRadius : 'action-sm'}`)(props)};
+      themeGet(
+        `borderRadii.${
+          props.borderRadius && props.borderRadius.length > 1 ? props.borderRadius : 'action-sm'
+        }`
+      )(props)};
     font-size: ${themeGet('fontSizes.0')}px;
     padding: 7px 12px;
   `,
   medium: css`
     border-radius: ${(props) =>
-      themeGet(`borderRadii.${props.borderRadius.length > 1 ? props.borderRadius : 'action-md'}`)(props)};
+      themeGet(
+        `borderRadii.${
+          props.borderRadius && props.borderRadius.length > 1 ? props.borderRadius : 'action-md'
+        }`
+      )(props)};
     font-size: ${themeGet('fontSizes.1')}px;
     padding: 9.5px 18px;
   `,
   large: css`
     border-radius: ${(props) =>
-      themeGet(`borderRadii.${props.borderRadius.length > 1 ? props.borderRadius : 'action-lg'}`)(props)};
+      themeGet(
+        `borderRadii.${
+          props.borderRadius && props.borderRadius.length > 1 ? props.borderRadius : 'action-lg'
+        }`
+      )(props)};
     font-size: ${themeGet('fontSizes.2')}px;
     padding: 12px 22px;
   `,

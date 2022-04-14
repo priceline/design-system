@@ -7,7 +7,7 @@ exports[`ModalHeader render 1`] = `
   padding-right: 16px;
   background-color: #0a0;
   color: #fff;
-  border-radius: 6px 6px 0 0;
+  border-radius: 16px 16px 0 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -41,7 +41,18 @@ exports[`ModalHeader render 1`] = `
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: none:none;
+  xsm: 2px;
+  sm: 4px;
+  md: 8px;
+  lg: 12px;
+  xl: 16px;
+  2xl: 24px;
+  3xl: 32px;
+  full: 9999px;
+  action-sm: 4px;
+  action-md: 8px;
+  action-lg: 12px;
   border-width: 0;
   border-style: solid;
   background-color: #0068ef;
