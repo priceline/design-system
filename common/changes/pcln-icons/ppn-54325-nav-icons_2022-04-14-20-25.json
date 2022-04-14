@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "pcln-icons",
-      "comment": "add shared icons",
+      "comment": "updating icons (sketch/invision layer removed)",
       "type": "minor"
     }
   ],
