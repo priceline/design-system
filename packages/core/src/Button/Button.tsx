@@ -13,34 +13,31 @@ import {
   boxShadowSizeValues,
 } from '../utils'
 
+const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg']
+const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
+
 const sizes = {
   small: css`
     border-radius: ${(props) =>
-      themeGet(
-        `borderRadii.${
-          props.borderRadius && props.borderRadius.length > 1 ? props.borderRadius : 'action-sm'
-        }`
-      )(props)};
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-sm'}`)(
+        props
+      )};
     font-size: ${themeGet('fontSizes.0')}px;
     padding: 7px 12px;
   `,
   medium: css`
     border-radius: ${(props) =>
-      themeGet(
-        `borderRadii.${
-          props.borderRadius && props.borderRadius.length > 1 ? props.borderRadius : 'action-md'
-        }`
-      )(props)};
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-md'}`)(
+        props
+      )};
     font-size: ${themeGet('fontSizes.1')}px;
     padding: 9.5px 18px;
   `,
   large: css`
     border-radius: ${(props) =>
-      themeGet(
-        `borderRadii.${
-          props.borderRadius && props.borderRadius.length > 1 ? props.borderRadius : 'action-lg'
-        }`
-      )(props)};
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-lg'}`)(
+        props
+      )};
     font-size: ${themeGet('fontSizes.2')}px;
     padding: 12px 22px;
   `,
@@ -172,7 +169,6 @@ const propTypes = {
  */
 const Button: React.FC<InferProps<typeof propTypes>> = styled.button.attrs((props) => {
   const { width, fullWidth, title, 'aria-label': ariaLabel, borderRadius } = props
-  console.log({ props })
   return {
     borderRadius,
     ...boxShadowAttrs(props),
