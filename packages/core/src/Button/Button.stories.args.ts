@@ -1,7 +1,8 @@
-import { colors } from '../storybook/args'
+import { colors, shadows } from '../storybook/args'
 
 export const variations = ['fill', 'link', 'outline', 'plain', 'subtle', 'lightFill']
 export const sizes = ['small', 'medium', 'large']
+export const borderRadiusButtonValues = ['', 'none', 'sm', 'md', 'lg', 'NOT VALID']
 
 export const defaultArgs = {
   variation: 'fill',
@@ -100,5 +101,39 @@ export const argTypes = {
       defaultValue: { summary: undefined },
     },
     action: 'Clicked on <Button>',
+  },
+
+  borderRadius: {
+    name: 'borderRadius',
+    type: { name: 'string', required: false },
+    description: 'design-system `borderRadius`',
+    table: {
+      type: {
+        summary: 'Border radius size',
+        detail: '- ' + borderRadiusButtonValues.join('\n- '),
+      },
+      defaultValue: { summary: 'none' },
+    },
+    control: {
+      type: 'select',
+      options: borderRadiusButtonValues,
+    },
+  },
+
+  boxShadowSize: {
+    name: 'boxShadowSize',
+    type: { name: 'string', required: false },
+    description: 'design-system `boxShadowSize`',
+    table: {
+      type: {
+        summary: 'Box shadow size',
+        detail: '- ' + shadows.join('\n- '),
+      },
+      defaultValue: { summary: 'none' },
+    },
+    control: {
+      type: 'select',
+      options: shadows,
+    },
   },
 }
