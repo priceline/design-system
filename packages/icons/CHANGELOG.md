@@ -1,6 +1,14 @@
 # Change Log - pcln-icons
 
-This log was last generated on Thu, 17 Feb 2022 14:07:41 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Apr 2022 13:45:09 GMT and should not be manually modified.
+
+## 4.8.0
+Fri, 15 Apr 2022 13:45:09 GMT
+
+### Minor changes
+
+- add shared icons
+- updating icons (sketch/invision layer removed)
 
 ## 4.7.1
 Thu, 17 Feb 2022 14:07:41 GMT

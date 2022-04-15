@@ -1,6 +1,6 @@
 {
   "name": "pcln-carousel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Priceline Design System Carousel Component",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

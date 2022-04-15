@@ -2,6 +2,25 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.8.0",
+      "tag": "pcln-icons_v4.8.0",
+      "date": "Fri, 15 Apr 2022 13:45:09 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add shared icons",
+            "author": "Vanessa Kroeker <3167394+vkro@users.noreply.github.com>",
+            "commit": "abe6dbb87dfa6c55efda6fd20c6d63b507ff83e3"
+          },
+          {
+            "comment": "updating icons (sketch/invision layer removed)",
+            "author": "Vanessa Kroeker <3167394+vkro@users.noreply.github.com>",
+            "commit": "abe6dbb87dfa6c55efda6fd20c6d63b507ff83e3"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.7.1",
       "tag": "pcln-icons_v4.7.1",
       "date": "Thu, 17 Feb 2022 14:07:41 GMT",
