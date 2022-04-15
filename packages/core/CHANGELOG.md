@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 08 Apr 2022 14:50:26 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Apr 2022 16:52:59 GMT and should not be manually modified.
+
+## 4.19.0
+Fri, 15 Apr 2022 16:52:59 GMT
+
+### Minor changes
+
+- Updated theme wrapper to take existing into account when merging themes
 
 ## 4.18.2
 Fri, 08 Apr 2022 14:50:26 GMT

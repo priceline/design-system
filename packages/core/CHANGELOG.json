@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.19.0",
+      "tag": "pcln-design-system_v4.19.0",
+      "date": "Fri, 15 Apr 2022 16:52:59 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Updated theme wrapper to take existing into account when merging themes",
+            "author": "Daniel Giraldo <daniel.giraldo@priceline.com>",
+            "commit": "d9d3aac4a64471e5cbe38b572700104a12f5c0c8"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.18.2",
       "tag": "pcln-design-system_v4.18.2",
       "date": "Fri, 08 Apr 2022 14:50:26 GMT",
