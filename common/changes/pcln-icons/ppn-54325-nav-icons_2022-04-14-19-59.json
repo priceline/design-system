@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "add shared icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "updating icons (sketch/invision layer removed)",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
