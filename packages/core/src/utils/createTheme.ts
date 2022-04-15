@@ -18,24 +18,25 @@ const addAliases = (arr) => {
 
 /**
  * Create the theme
- *
  * @param theme -             The theme to merge against the default
  * @param customBreakpoints - Custom breakpoints for the theme
+ * @param existingTheme -     Existing theme passed from a parent provider (Undefined if it's most outer provider)
  *
  * @returns The generated theme
  */
-const createTheme = (theme = {}, customBreakpoints = null) => {
-  const mergedTheme = deepmerge(defaultTheme, theme)
-
-  const mediaQueries = customBreakpoints ? createMediaQueries(customBreakpoints) : mergedTheme.mediaQueries
+const createTheme = (theme = {}, customBreakpoints = null, existingTheme = defaultTheme) => {
+  const finalMergedTheme = deepmerge(existingTheme, theme)
+  const mediaQueries = customBreakpoints
+    ? createMediaQueries(customBreakpoints)
+    : finalMergedTheme.mediaQueries
   return {
-    ...mergedTheme,
-    contrastRatio: mergedTheme.contrastRatio || 2.6,
-    breakpoints: addAliases(customBreakpoints || mergedTheme.breakpoints),
+    ...finalMergedTheme,
+    contrastRatio: finalMergedTheme.contrastRatio || 2.6,
+    breakpoints: addAliases(customBreakpoints || finalMergedTheme.breakpoints),
     mediaQueries: addAliases(mediaQueries),
-    palette: createPalette(mergedTheme),
-    colorStyles: createColorStyles(mergedTheme),
-    textStyles: createTextStyles(mergedTheme),
+    palette: createPalette(finalMergedTheme),
+    colorStyles: createColorStyles(finalMergedTheme),
+    textStyles: createTextStyles(finalMergedTheme),
   }
 }
 
