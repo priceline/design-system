@@ -124,14 +124,26 @@ describe('Button', () => {
     )
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-sm'])
 
-    Array.from(['none', 'sm', 'md', 'lg']).forEach((size: string) => {
-      rerender(
-        <Button size='medium' borderRadius={size}>
-          BUTTON
-        </Button>
-      )
-      expect(button).toHaveStyleRule('border-radius', borderRadius[size])
-    })
+    rerender(
+      <Button size='small' borderRadius={'none'}>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius.none)
+
+    rerender(
+      <Button size='medium' borderRadius={'sm'}>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius.sm)
+
+    rerender(
+      <Button size='large' borderRadius={'md'}>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius.md)
 
     rerender(
       <Button size='large' borderRadius='NOT VALID'>
