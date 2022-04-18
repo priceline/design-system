@@ -37,7 +37,7 @@ exports[`Select renders 1`] = `
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   border-color: #c0cad5;

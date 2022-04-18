@@ -7,7 +7,7 @@ exports[`Tooltip bottom center 1`] = `
   padding: 8px;
   background-color: #fff;
   color: #001833;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -73,7 +73,7 @@ exports[`Tooltip bottom left 1`] = `
   padding: 8px;
   background-color: #fff;
   color: #001833;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -134,7 +134,7 @@ exports[`Tooltip bottom right 1`] = `
   padding: 8px;
   background-color: #fff;
   color: #001833;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -196,7 +196,7 @@ exports[`Tooltip renders 1`] = `
   padding: 8px;
   background-color: #fff;
   color: #001833;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -257,7 +257,7 @@ exports[`Tooltip top center 1`] = `
   padding: 8px;
   background-color: #0068ef;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -323,7 +323,7 @@ exports[`Tooltip top left 1`] = `
   padding: 8px;
   background-color: #0068ef;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;
@@ -384,7 +384,7 @@ exports[`Tooltip top right 1`] = `
   padding: 8px;
   background-color: #c00;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
   font-size: 12px;

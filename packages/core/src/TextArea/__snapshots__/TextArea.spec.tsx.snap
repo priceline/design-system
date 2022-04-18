@@ -11,7 +11,7 @@ exports[`TextArea it renders 1`] = `
   font-size: 14px;
   color: inherit;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
@@ -65,7 +65,7 @@ exports[`TextArea it renders an input element with a really large padding and ma
   font-size: 14px;
   color: inherit;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
@@ -121,7 +121,7 @@ exports[`TextArea it renders an input element with a red border with a color pro
   font-size: 14px;
   color: inherit;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
@@ -176,7 +176,7 @@ exports[`TextArea it renders an input element with large text 1`] = `
   font-size: 14px;
   color: inherit;
   background-color: transparent;
-  border-radius: 12px;
+  border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   padding-top: 14px;
