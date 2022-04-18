@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Material Icons / store</title>
-    <g id="Material-Icons-/-store" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M20,4 L4,4 L4,6 L20,6 L20,4 Z M21,14 L21,12 L20,7 L4,7 L3,12 L3,14 L4,14 L4,20 L14,20 L14,14 L18,14 L18,20 L20,20 L20,14 L21,14 Z M12,18 L6,18 L6,14 L12,14 L12,18 Z" id="Shape" fill="#001833"></path>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,4 L4,4 L4,6 L20,6 L20,4 Z M21,14 L21,12 L20,7 L4,7 L3,12 L3,14 L4,14 L4,20 L14,20 L14,14 L18,14 L18,20 L20,20 L20,14 L21,14 Z M12,18 L6,18 L6,14 L12,14 L12,18 Z" fill="#001833"></path>
     </g>
 </svg>
