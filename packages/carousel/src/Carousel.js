@@ -106,7 +106,7 @@ export const Carousel = ({
                   data-testid={`slide-${index}`}
                 >
                   <Box p={slideSpacing}>
-                    {stretchSlideHeight ? (
+                    {!layout && stretchSlideHeight ? (
                       <StretchSlide
                         slideSpacing={slideSpacing}
                         slideContents={item}
