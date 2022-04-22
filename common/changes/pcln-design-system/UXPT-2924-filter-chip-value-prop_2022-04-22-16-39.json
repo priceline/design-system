@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add value prop to FilterChip",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

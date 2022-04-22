@@ -36,6 +36,7 @@ const getExamples = (exampleProps, sizes) => (
               name={`chip${size.title}_${i}`}
               m={1}
               size={size.value}
+              value={size.title}
               {...props}
             />
           ))}

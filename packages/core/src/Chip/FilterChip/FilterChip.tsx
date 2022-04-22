@@ -23,6 +23,7 @@ const propTypes = {
   showActionIcon: PropTypes.bool,
   Image: PropTypes.object,
   actionTitle: PropTypes.string,
+  value: PropTypes.string,
 }
 
 const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
@@ -35,6 +36,7 @@ const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
   label,
   showActionIcon,
   actionTitle,
+  value,
   ...props
 }) => (
   <ChipLabel htmlFor={id} {...props}>
@@ -52,6 +54,7 @@ const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
       label={label}
       disabled={disabled}
       selected={selected}
+      value={value}
       action={
         showActionIcon && {
           Icon: Close,
