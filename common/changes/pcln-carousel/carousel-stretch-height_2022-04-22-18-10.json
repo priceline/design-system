@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Carousel: add stretchSlideHeight prop option",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
