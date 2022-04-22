@@ -13,7 +13,7 @@ import {
   boxShadowSizeValues,
 } from '../utils'
 
-const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg']
+export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg']
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
@@ -160,7 +160,7 @@ const propTypes = {
   color: deprecatedColorValue(),
   disabled: PropTypes.bool,
   ...boxShadow.propTypes,
-  borderRadius: PropTypes.oneOf(['', 'none', 'sm', 'md', 'lg']),
+  borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
   boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
 }
 
