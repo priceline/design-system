@@ -49,12 +49,12 @@ const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
       disabled={disabled}
       checked={selected}
       onChange={onClick}
+      value={value}
     />
     <ChipContent
       label={label}
       disabled={disabled}
       selected={selected}
-      value={value}
       action={
         showActionIcon && {
           Icon: Close,
