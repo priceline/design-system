@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.20.0",
+      "tag": "pcln-design-system_v4.20.0",
+      "date": "Tue, 26 Apr 2022 20:36:50 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add value prop to FilterChip",
+            "author": "Bradley Rastrullo <87724279+bradras@users.noreply.github.com>",
+            "commit": "ca89dded6779dacd6139e2956fbe9f8ddf4aa829"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.19.0",
       "tag": "pcln-design-system_v4.19.0",
       "date": "Fri, 15 Apr 2022 16:52:59 GMT",
