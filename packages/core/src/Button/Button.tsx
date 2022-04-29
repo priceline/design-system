@@ -134,7 +134,7 @@ export const buttonStyles = css`
   font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: 1.5;
   cursor: ${(props) => (props.disabled ? 'default' : 'pointer')};
-  border-radius: ${(props) => props.theme.borderRadii};
+  border-radius: ${(props) => props.theme.radius};
   border-width: 0;
   border-style: solid;
 
