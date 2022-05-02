@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 26 Apr 2022 20:36:50 GMT and should not be manually modified.
+This log was last generated on Mon, 02 May 2022 17:34:57 GMT and should not be manually modified.
+
+## 4.21.0
+Mon, 02 May 2022 17:34:57 GMT
+
+### Minor changes
+
+- add borderRadius/boxShadowSize overrides for <Button />"
 
 ## 4.20.0
 Tue, 26 Apr 2022 20:36:50 GMT
