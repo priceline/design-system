@@ -61,7 +61,7 @@ const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props 
   const valueNoLabel = !label && field && !!field.props.value
   const showLabel = ((label && !label.props.autoHide) || (field && !!field.props.value)) && !valueNoLabel
   const id = field && (field.props.id || field.props.name)
-  const inputSize = field.props.size
+  const inputSize = field && (field.props.size || undefined)
 
   const styled = childrenArray.map((child, i, arr) => {
     if (child.type.isField && arr[i - 1] && arr[i - 1].type.isIcon) {
