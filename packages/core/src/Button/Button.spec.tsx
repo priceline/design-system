@@ -5,6 +5,9 @@ import styled from 'styled-components'
 
 import { Button, createTheme } from '..'
 
+import { borderRadii as borderRadius, shadows } from '../theme'
+import { boxShadowSizeValues } from '../utils'
+
 const theme = createTheme()
 
 const StyledButton = styled(Button)`
@@ -105,6 +108,62 @@ describe('Button', () => {
     const { getByLabelText } = render(<Button aria-label={label}>BUTTON</Button>)
 
     expect(getByLabelText(label)).toHaveAttribute('aria-label', label)
+  })
+
+  it('should render correctly for "borderRadius" prop', () => {
+    const { getByText, rerender } = render(<Button size='medium'>BUTTON</Button>)
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule('border-radius', borderRadius['action-md'])
+
+    rerender(
+      <Button size='small' borderRadius=''>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius['action-sm'])
+
+    rerender(
+      <Button size='small' borderRadius={'none'}>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius.none)
+
+    rerender(
+      <Button size='medium' borderRadius={'sm'}>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius.sm)
+
+    rerender(
+      <Button size='large' borderRadius={'md'}>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius.md)
+
+    rerender(
+      <Button size='large' borderRadius='NOT VALID'>
+        BUTTON
+      </Button>
+    )
+    expect(button).toHaveStyleRule('border-radius', borderRadius['action-lg'])
+  })
+
+  it('should render correctly for "boxShadowSize" prop', () => {
+    const { getByText, rerender } = render(<Button>BUTTON</Button>)
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule('box-shadow', undefined)
+
+    Array.from(boxShadowSizeValues).forEach((size: string) => {
+      rerender(<Button boxShadowSize={size}>BUTTON</Button>)
+      expect(button).toHaveStyleRule('box-shadow', shadows[size])
+    })
   })
 
   describe('variations', () => {

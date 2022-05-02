@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes, { InferProps } from 'prop-types'
-import { width, space, themeGet } from 'styled-system'
+import { width, space, themeGet, boxShadow } from 'styled-system'
 import {
   deprecatedPropType,
   applySizes,
@@ -9,21 +9,35 @@ import {
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
+  boxShadowAttrs,
+  boxShadowSizeValues,
 } from '../utils'
+
+export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg']
+const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
   small: css`
-    border-radius: ${themeGet('borderRadii.action-sm')};
+    border-radius: ${(props) =>
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-sm'}`)(
+        props
+      )};
     font-size: ${themeGet('fontSizes.0')}px;
     padding: 7px 12px;
   `,
   medium: css`
-    border-radius: ${themeGet('borderRadii.action-md')};
+    border-radius: ${(props) =>
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-md'}`)(
+        props
+      )};
     font-size: ${themeGet('fontSizes.1')}px;
     padding: 9.5px 18px;
   `,
   large: css`
-    border-radius: ${themeGet('borderRadii.action-lg')};
+    border-radius: ${(props) =>
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-lg'}`)(
+        props
+      )};
     font-size: ${themeGet('fontSizes.2')}px;
     padding: 12px 22px;
   `,
@@ -128,6 +142,7 @@ export const buttonStyles = css`
   ${applyVariations('Button', variations)};
   ${width};
   ${space};
+  ${boxShadow}
 
   &:disabled {
     cursor: not-allowed;
@@ -144,17 +159,23 @@ const propTypes = {
   variation: PropTypes.oneOf(Object.keys(variations)),
   color: deprecatedColorValue(),
   disabled: PropTypes.bool,
+  ...boxShadow.propTypes,
+  borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
+  boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
 }
 
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button: React.FC<InferProps<typeof propTypes>> = styled.button.attrs(
-  ({ width, fullWidth, title, 'aria-label': ariaLabel }) => ({
+const Button: React.FC<InferProps<typeof propTypes>> = styled.button.attrs((props) => {
+  const { width, fullWidth, title, 'aria-label': ariaLabel, borderRadius } = props
+  return {
+    borderRadius,
+    ...boxShadowAttrs(props),
     width: fullWidth ? 1 : width,
     'aria-label': ariaLabel || title,
-  })
-)`
+  }
+})`
   ${buttonStyles}
 `
 
