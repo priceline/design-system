@@ -2,16 +2,18 @@ import React from 'react'
 
 import { Select, Label, Box, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { argTypes } from './Select.stories.args'
 
 export default {
   title: 'Select',
   component: Select,
+  argTypes,
 }
 
-export const Default = () => (
+export const Default = (args) => (
   <Box>
     <Label htmlFor='cabinClass'>Cabin Class</Label>
-    <Select id='cabinClass' name='cabinClass' defaultValue='Premium Economy'>
+    <Select id='cabinClass' name='cabinClass' defaultValue='Premium Economy' {...args}>
       <option>Economy</option>
       <option>Premium Economy</option>
       <option>Business</option>
@@ -25,10 +27,10 @@ Default.story = {
   name: 'default',
 }
 
-export const LongOptionString = () => (
+export const LongOptionString = (args) => (
   <Box width={[1, 320]}>
     <Label htmlFor='cabinClass'>Cabin Class</Label>
-    <Select id='cabinClass' name='cabinClass' defaultValue=''>
+    <Select id='cabinClass' name='cabinClass' defaultValue='' {...args}>
       <option>With a super long label that does not collide with the chevron</option>
     </Select>
   </Box>
@@ -38,12 +40,12 @@ LongOptionString.story = {
   name: 'long option string',
 }
 
-export const HiddenLabel = () => (
+export const HiddenLabel = (args) => (
   <Box width={[1, 320]}>
     <Label hidden htmlFor='cabinClass'>
       Cabin Class
     </Label>
-    <Select id='cabinClass' name='cabinClass' defaultValue=''>
+    <Select id='cabinClass' name='cabinClass' defaultValue='' {...args}>
       <option>Economy</option>
       <option>Premium Economy</option>
       <option>Business</option>
@@ -56,14 +58,14 @@ HiddenLabel.story = {
   name: 'hidden label',
 }
 
-export function ForwardRefs() {
+export function ForwardRefs(args) {
   function refChild(dsRef) {
     function onClick() {
       return dsRef.current.focus()
     }
     return (
       <>
-        <Select id='cabinClass' name='cabinClass' defaultValue='' ref={dsRef}>
+        <Select id='cabinClass' name='cabinClass' defaultValue='' ref={dsRef} {...args}>
           <option>Economy</option>
           <option>Premium Economy</option>
           <option>Business</option>

@@ -1,11 +1,25 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
-import styled from 'styled-components'
-import { space, fontSize, themeGet } from 'styled-system'
+import styled, { css } from 'styled-components'
+import { space, fontSize, themeGet, borderRadius } from 'styled-system'
 import { ChevronDown } from 'pcln-icons'
 
-import { borders, deprecatedColorValue } from '../utils'
+import { borders, deprecatedColorValue, applySizes, borderRadiusAttrs } from '../utils'
 import { Flex } from '../Flex'
+
+const sizes = {
+  small: css`
+    padding: 6px 32px 7px 12px;
+  `,
+  medium: css`
+    padding: 10px 32px 11px 12px;
+  `,
+  large: css`
+    padding: 14px 32px 14px 12px;
+  `,
+  xlarge: css`
+    padding: 18px 32px 19px 12px;
+  `,
+}
 
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
@@ -16,8 +30,7 @@ const propTypes = {
   ...fontSize.propTypes,
   color: deprecatedColorValue(),
 }
-
-const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select`
+const SelectBase = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   display: block;
   width: 100%;
@@ -28,7 +41,8 @@ const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select`
   border-width: 1px;
   border-style: solid;
 
-  ${borders} ${space} ${fontSize}
+  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
+  ${borders} ${space} ${fontSize} ${borderRadius}
   ::-ms-expand {
     display: none;
   }
@@ -37,9 +51,8 @@ const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select`
 SelectBase.defaultProps = {
   fontSize: [2, null, 1],
   m: 0,
-  pl: 12,
-  pr: 32,
-  py: 14,
+  size: 'large',
+  borderRadius: 'large',
 }
 
 SelectBase.propTypes = propTypes
