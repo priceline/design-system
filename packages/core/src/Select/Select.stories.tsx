@@ -10,7 +10,7 @@ export default {
   argTypes,
 }
 
-export const Default = (args) => (
+const Template = (args) => (
   <Box>
     <Label htmlFor='cabinClass'>Cabin Class</Label>
     <Select id='cabinClass' name='cabinClass' defaultValue='Premium Economy' {...args}>
@@ -23,14 +23,12 @@ export const Default = (args) => (
   </Box>
 )
 
-Default.story = {
-  name: 'default',
-}
+export const Default = Template.bind({})
 
-export const LongOptionString = (args) => (
+export const LongOptionString = () => (
   <Box width={[1, 320]}>
     <Label htmlFor='cabinClass'>Cabin Class</Label>
-    <Select id='cabinClass' name='cabinClass' defaultValue='' {...args}>
+    <Select id='cabinClass' name='cabinClass' defaultValue=''>
       <option>With a super long label that does not collide with the chevron</option>
     </Select>
   </Box>
@@ -40,12 +38,12 @@ LongOptionString.story = {
   name: 'long option string',
 }
 
-export const HiddenLabel = (args) => (
+export const HiddenLabel = () => (
   <Box width={[1, 320]}>
     <Label hidden htmlFor='cabinClass'>
       Cabin Class
     </Label>
-    <Select id='cabinClass' name='cabinClass' defaultValue='' {...args}>
+    <Select id='cabinClass' name='cabinClass' defaultValue=''>
       <option>Economy</option>
       <option>Premium Economy</option>
       <option>Business</option>
@@ -58,14 +56,14 @@ HiddenLabel.story = {
   name: 'hidden label',
 }
 
-export function ForwardRefs(args) {
+export function ForwardRefs() {
   function refChild(dsRef) {
     function onClick() {
       return dsRef.current.focus()
     }
     return (
       <>
-        <Select id='cabinClass' name='cabinClass' defaultValue='' ref={dsRef} {...args}>
+        <Select id='cabinClass' name='cabinClass' defaultValue='' ref={dsRef}>
           <option>Economy</option>
           <option>Premium Economy</option>
           <option>Business</option>

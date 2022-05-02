@@ -1,6 +1,5 @@
 import React from 'react'
 import { Flex, Box, FormField, Label, Input, Select, Tooltip } from '..'
-import { argTypes } from './FormField.stories.args'
 
 import {
   Check as CheckIcon,
@@ -13,14 +12,13 @@ import {
 export default {
   title: 'FormField',
   component: FormField,
-  argTypes,
 }
 
-export const WithIcon = (args) => (
+export const WithIcon = () => (
   <FormField>
     <Label htmlFor='demo'>Email Address</Label>
     <EmailIcon color='primary' />
-    <Input type='email' id='email' name='email' defaultValue='hello@example.com' {...args} />
+    <Input type='email' id='email' name='email' defaultValue='hello@example.com' />
   </FormField>
 )
 
@@ -28,7 +26,7 @@ WithIcon.story = {
   name: 'with Icon',
 }
 
-export const DynamicLabel = (args) => (
+export const DynamicLabel = () => (
   <Flex>
     <Box px={2} width={1 / 3}>
       <FormField>
@@ -39,7 +37,6 @@ export const DynamicLabel = (args) => (
           id='dynamic-label-without-a-value'
           name='dynamic-label-without-a-value'
           placeholder='Without a value'
-          {...args}
         />
       </FormField>
     </Box>
@@ -48,12 +45,7 @@ export const DynamicLabel = (args) => (
         <Label autoHide htmlFor='dynamic-label-with-a-value'>
           With value
         </Label>
-        <Input
-          id='dynamic-label-with-a-value'
-          name='dynamic-label-with-a-value'
-          value='hello@example.com'
-          {...args}
-        />
+        <Input id='dynamic-label-with-a-value' name='dynamic-label-with-a-value' value='hello@example.com' />
       </FormField>
     </Box>
     <Box px={2} width={1 / 3}>
@@ -62,7 +54,6 @@ export const DynamicLabel = (args) => (
           id='dynamic-label-without-a-label'
           name='dynamic-label-without-a-label'
           value='Value without label'
-          {...args}
         />
       </FormField>
     </Box>
@@ -73,7 +64,7 @@ DynamicLabel.story = {
   name: 'dynamic label',
 }
 
-export const DynamicLabelWithValue = (args) => (
+export const DynamicLabelWithValue = () => (
   <FormField>
     <Label htmlFor='dynamic-label-email'>Email Address</Label>
     <Input
@@ -81,7 +72,6 @@ export const DynamicLabelWithValue = (args) => (
       name='dynamic-label-email'
       placeholder='hello@example.com'
       value='hello@example.com'
-      {...args}
     />
   </FormField>
 )
@@ -90,7 +80,7 @@ DynamicLabelWithValue.story = {
   name: 'dynamic label with value',
 }
 
-export const IconToTheRight = (args) => (
+export const IconToTheRight = () => (
   <FormField>
     <Label htmlFor='dynamic-label-email-icon-right'>Email Address</Label>
     <Input
@@ -98,7 +88,6 @@ export const IconToTheRight = (args) => (
       name='dynamic-label-email-icon-right'
       placeholder='hello@example.com'
       value='hello@example.com'
-      {...args}
     />
     <CheckIcon color='secondary' />
   </FormField>
@@ -108,11 +97,11 @@ IconToTheRight.story = {
   name: 'Icon to the right',
 }
 
-export const WithSelect = (args) => (
+export const WithSelect = () => (
   <FormField>
     <Label htmlFor='dynamic-label-state-select'>State</Label>
     <PinIcon color='primary' />
-    <Select id='dynamic-label-state-select' name='dynamic-label-state-select' {...args}>
+    <Select id='dynamic-label-state-select' name='dynamic-label-state-select'>
       <option>New York</option>
       <option>New Jersey</option>
     </Select>
@@ -123,10 +112,10 @@ WithSelect.story = {
   name: 'with Select',
 }
 
-export const WithSuccessfulValidation = (args) => (
+export const WithSuccessfulValidation = () => (
   <FormField>
     <Label htmlFor='valid'>Email Address</Label>
-    <Input id='valid' name='valid' placeholder='hello@example.com' color='success' {...args} />
+    <Input id='valid' name='valid' placeholder='hello@example.com' color='success' />
     <SuccessIcon color='success' />
   </FormField>
 )
@@ -135,7 +124,7 @@ WithSuccessfulValidation.story = {
   name: 'with successful validation',
 }
 
-export const WithErrorTooltip = (args) => (
+export const WithErrorTooltip = () => (
   <Box>
     <FormField>
       <Label htmlFor='error-tooltip'>Email Address</Label>
@@ -145,7 +134,6 @@ export const WithErrorTooltip = (args) => (
         placeholder='hello@example.com'
         aria-describedby='demo-error'
         color='error'
-        {...args}
       />
       <WarningIcon color='error' />
     </FormField>

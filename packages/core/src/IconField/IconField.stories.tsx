@@ -7,18 +7,16 @@ import {
   Visibility as VisibilityIcon,
 } from 'pcln-icons'
 import { action } from '@storybook/addon-actions'
-import { argTypes } from './IconField.stories.args'
 
 export default {
   title: 'IconField',
   component: IconField,
-  argTypes,
 }
 
-export const IconAndInput = (args) => (
+export const IconAndInput = () => (
   <IconField>
     <CalendarIcon color='blue' />
-    <Input placeholder='Choose Date' {...args} />
+    <Input placeholder='Choose Date' />
   </IconField>
 )
 
@@ -26,9 +24,9 @@ IconAndInput.story = {
   name: 'Icon and Input',
 }
 
-export const InputAndIcon = (args) => (
+export const InputAndIcon = () => (
   <IconField>
-    <Input placeholder='Choose Date' {...args} />
+    <Input placeholder='Choose Date' />
     <CalendarIcon color='blue' />
   </IconField>
 )
@@ -37,11 +35,11 @@ InputAndIcon.story = {
   name: 'Input and Icon',
 }
 
-export const InputWithMultipleIcons = (args) => (
+export const InputWithMultipleIcons = () => (
   <IconField>
     <CheckIcon color='success' />
     <VisibilityIcon color='text.light' />
-    <Input placeholder='Choose Date' {...args} />
+    <Input placeholder='Choose Date' />
     <VisibilityIcon color='text.light' />
     <CheckIcon color='success' />
   </IconField>
@@ -51,9 +49,9 @@ InputWithMultipleIcons.story = {
   name: 'Input with multiple Icons',
 }
 
-export const InputAndIconButton = (args) => (
+export const InputAndIconButton = () => (
   <IconField>
-    <Input placeholder='Choose Date' {...args} />
+    <Input placeholder='Choose Date' />
     <IconButton
       icon={<CloseIcon />}
       size={24}
@@ -68,10 +66,10 @@ InputAndIconButton.story = {
   name: 'Input and Icon Button',
 }
 
-export const IconInputAndIcon = (args) => (
+export const IconInputAndIcon = () => (
   <IconField>
     <CalendarIcon color='blue' />
-    <Input placeholder='Choose Date' {...args} />
+    <Input placeholder='Choose Date' />
     <CheckIcon color='green' />
   </IconField>
 )
@@ -80,10 +78,10 @@ IconInputAndIcon.story = {
   name: 'Icon, Input, and Icon',
 }
 
-export const IconInputAndIconButton = (args) => (
+export const IconInputAndIconButton = () => (
   <IconField>
     <CalendarIcon color='blue' />
-    <Input placeholder='Choose Date' {...args} />
+    <Input placeholder='Choose Date' />
     <IconButton
       icon={<CloseIcon />}
       size={24}
@@ -98,10 +96,10 @@ IconInputAndIconButton.story = {
   name: 'Icon, Input and Icon Button',
 }
 
-export const IconAndSelect = (args) => (
+export const IconAndSelect = () => (
   <IconField>
     <CalendarIcon color='blue' />
-    <Select {...args}>
+    <Select>
       <option>Choose Date</option>
       <option>January 2019</option>
     </Select>

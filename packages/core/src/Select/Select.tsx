@@ -1,4 +1,5 @@
 import React from 'react'
+import { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
 import { space, fontSize, themeGet, borderRadius } from 'styled-system'
 import { ChevronDown } from 'pcln-icons'
@@ -30,7 +31,7 @@ const propTypes = {
   ...fontSize.propTypes,
   color: deprecatedColorValue(),
 }
-const SelectBase = styled.select.attrs(borderRadiusAttrs)`
+const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   display: block;
   width: 100%;
