@@ -8,7 +8,7 @@ import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
-import { StretchSlide } from './StretchSlide/StretchSlide'
+import { StretchSlide } from './StretchSlide'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
