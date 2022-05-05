@@ -21,7 +21,7 @@ const Template = (args) => (
     <Container size='xl' style={{ border: `1px solid` }}>
       <Layout {...args}>
         <LayoutDemoBox color='secondary.base' />
-        <LayoutDemoBox color='warning.base' />
+        <Box height='120px' color='warning.base' />
         <LayoutDemoBox color='alert' />
         <LayoutDemoBox color='primary' />
         <LayoutDemoBox color='promoPrimary' />
@@ -43,6 +43,7 @@ Responsive.args = {
   variation: ['100', '50-50', null, '60-40'],
   gap: 'sm',
   rowGap: ['sm', 'md'],
+  stretchHeight: true,
 }
 
 const OverlapTemplate = (args) => (

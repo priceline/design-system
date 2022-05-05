@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Layout: add stretchHeight prop that will equalize heights to the tallest",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
