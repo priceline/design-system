@@ -61,7 +61,7 @@ exports[`Input it renders 1`] = `
     ]
   }
   id="fake-test-id"
-  size="large"
+  size="lg"
 />
 `;
 
@@ -128,7 +128,7 @@ exports[`Input it renders an input element with a really large padding and margi
     ]
   }
   id="fake-test-id"
-  size="large"
+  size="lg"
 />
 `;
 
@@ -194,7 +194,7 @@ exports[`Input it renders an input element with a red border with a color prop i
     ]
   }
   id="fake-test-id"
-  size="large"
+  size="lg"
 />
 `;
 
@@ -247,6 +247,6 @@ exports[`Input it renders an input element with large text 1`] = `
   className="c0"
   fontSize={4}
   id="fake-test-id"
-  size="large"
+  size="lg"
 />
 `;

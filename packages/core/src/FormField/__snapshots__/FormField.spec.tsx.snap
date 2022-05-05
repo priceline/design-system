@@ -116,7 +116,7 @@ exports[`FormField renders 1`] = `
       }
       id="email"
       name="email"
-      size="large"
+      size="lg"
       style={
         Object {
           "paddingBottom": "8px",
@@ -290,7 +290,7 @@ exports[`FormField renders with Icon 1`] = `
       }
       id="email"
       name="email"
-      size="large"
+      size="lg"
       style={
         Object {
           "paddingBottom": "8px",
@@ -464,7 +464,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       }
       id="email"
       name="email"
-      size="large"
+      size="lg"
       style={
         Object {
           "paddingBottom": undefined,
@@ -550,7 +550,7 @@ exports[`FormField renders with Select  1`] = `
   border-color: #c0cad5;
   margin: 0;
   font-size: 16px;
-  border-radius: large;
+  border-radius: 2px;
 }
 
 .c3:focus {
@@ -607,7 +607,7 @@ exports[`FormField renders with Select  1`] = `
             1,
           ]
         }
-        size="large"
+        size="lg"
         style={
           Object {
             "paddingBottom": "8px",
@@ -734,7 +734,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   margin: 0;
   padding-left: 40px;
   font-size: 16px;
-  border-radius: large;
+  border-radius: 2px;
 }
 
 .c6:focus {
@@ -812,7 +812,7 @@ exports[`FormField renders with Select and Icon 1`] = `
             1,
           ]
         }
-        size="large"
+        size="lg"
         style={
           Object {
             "paddingBottom": "8px",

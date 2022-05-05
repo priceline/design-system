@@ -44,7 +44,7 @@ exports[`Select renders 1`] = `
   border-color: #c0cad5;
   margin: 0;
   font-size: 16px;
-  border-radius: large;
+  border-radius: 2px;
 }
 
 .c1:focus {
@@ -76,7 +76,7 @@ exports[`Select renders 1`] = `
         1,
       ]
     }
-    size="large"
+    size="lg"
   />
   <svg
     aria-hidden={true}
