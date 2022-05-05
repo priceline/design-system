@@ -13,16 +13,16 @@ import {
 } from '../utils'
 
 const sizes = {
-  small: css`
+  sm: css`
     padding: 6px 12px 7px 12px;
   `,
-  medium: css`
+  md: css`
     padding: 10px 12px 11px 12px;
   `,
-  large: css`
+  lg: css`
     padding: 14px 12px 14px 12px;
   `,
-  xlarge: css`
+  xl: css`
     padding: 18px 12px 19px 12px;
   `,
 }
@@ -92,7 +92,7 @@ Input.isField = true
 Input.defaultProps = {
   fontSize: [2, null, 1],
   borderRadius: 'lg',
-  size: 'large',
+  size: 'lg',
 }
 Input.propTypes = propTypes
 

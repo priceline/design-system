@@ -5,22 +5,22 @@ import { Box } from '../Box'
 import { IconField } from '../IconField'
 
 const paddingTopWithLabel = {
-  small: '14px',
-  medium: '16px',
-  large: '20px',
-  xlarge: '24px',
+  sm: '14px',
+  md: '16px',
+  lg: '20px',
+  xl: '24px',
 }
 const paddingBottomWithLabel = {
-  small: '0px',
-  medium: '5px',
-  large: '8px',
-  xlarge: '13px',
+  sm: '0px',
+  md: '5px',
+  lg: '8px',
+  xl: '13px',
 }
 const paddingTopForLabel = {
-  small: '0px',
-  medium: '2px',
-  large: '6px',
-  xlarge: '10px',
+  sm: '0px',
+  md: '2px',
+  lg: '6px',
+  xl: '10px',
 }
 
 const childrenPropType = (props, propName, componentName) => {

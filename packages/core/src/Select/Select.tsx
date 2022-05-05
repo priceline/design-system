@@ -8,16 +8,16 @@ import { borders, deprecatedColorValue, applySizes, borderRadiusAttrs } from '..
 import { Flex } from '../Flex'
 
 const sizes = {
-  small: css`
+  sm: css`
     padding: 6px 32px 7px 12px;
   `,
-  medium: css`
+  md: css`
     padding: 10px 32px 11px 12px;
   `,
-  large: css`
+  lg: css`
     padding: 14px 32px 14px 12px;
   `,
-  xlarge: css`
+  xl: css`
     padding: 18px 32px 19px 12px;
   `,
 }
@@ -52,8 +52,8 @@ const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(b
 SelectBase.defaultProps = {
   fontSize: [2, null, 1],
   m: 0,
-  size: 'large',
-  borderRadius: 'large',
+  size: 'lg',
+  borderRadius: 'lg',
 }
 
 SelectBase.propTypes = propTypes

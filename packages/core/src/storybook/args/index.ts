@@ -16,7 +16,7 @@ export const shadows = ['', ...boxShadowSizeValues, 'NOTVALID']
 
 export const textStyles = ['', ...textStylesValues, 'NOTVALID']
 
-export const inputArgs = ['small', 'medium', 'large', 'xlarge']
+export const inputArgs = ['sm', 'md', 'lg', 'xl']
 
 export const spaceArgs = [
   'm',
