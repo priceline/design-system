@@ -8,6 +8,7 @@ import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
+import { StretchSlide } from './StretchSlide'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -46,7 +47,9 @@ export const Carousel = ({
   onSlideChange,
   sideButtonMargin = '-30px',
   sidePositionArrowButton,
+  stretchSlideHeight = true,
 }) => {
+  const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
@@ -102,7 +105,18 @@ export const Carousel = ({
                   style={widths[index] && { width: widths[index] }}
                   data-testid={`slide-${index}`}
                 >
-                  <Box p={slideSpacing}>{item}</Box>
+                  <Box p={slideSpacing}>
+                    {!layout && stretchSlideHeight ? (
+                      <StretchSlide
+                        slideSpacing={slideSpacing}
+                        slideContents={item}
+                        height={height}
+                        setHeight={setHeight}
+                      />
+                    ) : (
+                      item
+                    )}
+                  </Box>
                 </Slide>
               )
             })}
@@ -177,4 +191,6 @@ Carousel.propTypes = {
   onSlideChange: PropTypes.func,
   /** Custom styled arrow button component */
   sidePositionArrowButton: PropTypes.element,
+  /** Set height of slides based on tallest slide */
+  stretchSlideHeight: PropTypes.bool,
 }

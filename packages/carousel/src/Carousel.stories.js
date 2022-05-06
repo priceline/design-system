@@ -55,7 +55,7 @@ export default {
 
 function renderCards() {
   return Array.from(Array(SLIDE_COUNT), (_, idx) => (
-    <ToutCard height='300px' borderRadius={20} boxShadowSize='md' borderWidth={0}>
+    <ToutCard height={idx === 1 ? '300px' : '320px'} borderRadius={20} boxShadowSize='md' borderWidth={0}>
       <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
       <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
         <Box>
