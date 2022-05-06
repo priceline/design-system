@@ -1,102 +1,32 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { deprecatedPropType, getPaletteColor } from 'pcln-design-system'
+import { getPaletteColor } from 'pcln-design-system'
 
-const PopoverArrow = ({ arrowProps, placement, borderColor, color, className }) => (
-  <Arrow
-    className={className}
-    style={arrowProps.style}
-    data-placement={placement}
-    borderColor={borderColor}
-    color={color}
-    aria-hidden='true'
-    data-testid='popover-arrow'
-  >
-    <div ref={arrowProps.ref} />
-  </Arrow>
-)
+const PopoverArrow = styled.div.attrs(({ borderColor, color, placement }) => ({
+  bgColor: getPaletteColor(color, 'base'),
+  brColor: getPaletteColor(borderColor, 'base'),
+  'data-placement': placement,
+  'data-testid': 'popover-arrow',
+}))`
+  &[data-placement*='left'] {
+    border-color: transparent ${(props) => props.brColor} ${(props) => props.brColor} transparent;
+  }
+  &[data-placement*='right'] {
+    border-color: ${(props) => props.brColor} transparent transparent ${(props) => props.brColor};
+  }
+  &[data-placement*='top'] {
+    border-color: transparent transparent ${(props) => props.brColor} ${(props) => props.brColor};
+  }
+  &[data-placement*='bottom'] {
+    border-color: ${(props) => props.brColor} ${(props) => props.brColor} transparent transparent;
+  }
 
-const ArrowAlignment = () =>
-  `
-    &[data-placement*="right"] {
-      left: 0;
-    }
-    &[data-placement*="left"] {
-      right: 0;
-    }
-    &[data-placement*="top"] {
-      bottom: 0;
-    }
-    &[data-placement*="bottom"] {
-      top: 0;
-    }
-    &[data-placement*="bottom"]::before,
-    &[data-placement*="right"]::before,
-    &[data-placement*="top"]::after,
-    &[data-placement*="left"]::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      margin: auto;
-      border-style: solid;
-      transform-origin: 0 0;
-      transform: rotate(-45deg);
-      border-width: 6px;
-    }
-  `
-
-const ArrowPlacement = ({ color, borderColor, ...props }) => {
-  const bgColor = getPaletteColor(color, 'base')(props)
-  const brColor = getPaletteColor(borderColor, 'base')(props)
-
-  return `
-    &[data-placement*="right"]::before {
-      left: 8px;
-      border-color: ${bgColor} transparent transparent ${bgColor};
-      box-shadow: -0.75px -0.75px 0px 0.25px ${brColor};
-    }
-    &[data-placement*="left"]::after {
-      right: 13px;
-      border-color: transparent ${bgColor} ${bgColor} transparent;
-      box-shadow: 0.75px 0.75px 0px 0.25px ${brColor};
-    }
-    &[data-placement*="top"]::after {
-      top: -16px;
-      margin-left: -5px;
-      border-color: transparent transparent ${bgColor} ${bgColor};
-      box-shadow: -0.75px 0.75px 0px 0.25px ${brColor};
-    }
-    &[data-placement*="bottom"]::before {
-      top: 16px;
-      margin-left: -5px;
-      border-color: ${bgColor} ${bgColor} transparent transparent;
-      box-shadow: 0.75px -0.75px 0px 0.25px ${brColor};
-    }
-  `
-}
-
-const Arrow = styled.span`
   position: absolute;
-  ${ArrowAlignment}
-  ${ArrowPlacement}
+  background-color: ${(props) => props.bgColor};
+  border-style: solid;
+  border-width: 1px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg);
 `
-
-PopoverArrow.propTypes = {
-  arrowProps: PropTypes.shape({
-    ref: PropTypes.func,
-    style: PropTypes.object,
-  }).isRequired,
-  className: PropTypes.string,
-  color: PropTypes.string,
-  bg: deprecatedPropType('color'),
-  borderColor: PropTypes.string,
-  placement: PropTypes.string,
-}
-
-PopoverArrow.defaultProps = {
-  placement: 'top',
-}
 
 export default PopoverArrow

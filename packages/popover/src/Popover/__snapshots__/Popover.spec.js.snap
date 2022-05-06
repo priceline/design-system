@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover Trigger Element Renders trigger element and appends action props 1`] = `
-.c2 {
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -22,17 +22,17 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   color: #fff;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #049;
   color: #fff;
 }
 
-.c2:focus {
+.c1:focus {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
 }
 
-.c2:disabled {
+.c1:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
@@ -48,25 +48,17 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   box-sizing: border-box;
 }
 
-.c1 {
-  display: inline-block;
-}
-
 <div
   class="c0"
 >
-  <div
+  <button
+    aria-label="Top Popover"
     class="c1"
-    display="inline-block"
+    color="primary"
+    type="button"
   >
-    <button
-      aria-label="Top Popover"
-      class="c2"
-      color="primary"
-    >
-      Trigger Button
-    </button>
-  </div>
+    Trigger Button
+  </button>
 </div>
 `;
 
@@ -82,23 +74,15 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
   box-sizing: border-box;
 }
 
-.c1 {
-  display: inline-block;
-}
-
 <div
     class="c0"
   >
-    <div
-      class="c1"
-      display="inline-block"
+    <button
+      aria-label="Top Popover"
+      type="button"
     >
-      <button
-        aria-label="Top Popover"
-      >
-        Trigger Button
-      </button>
-    </div>
+      Trigger Button
+    </button>
   </div>
 </DocumentFragment>
 `;
@@ -122,72 +106,37 @@ exports[`Popover UI Positioning Bottom 1`] = `
 
 .c4 {
   position: absolute;
-}
-
-.c4[data-placement*="right"] {
-  left: 0;
-}
-
-.c4[data-placement*="left"] {
-  right: 0;
-}
-
-.c4[data-placement*="top"] {
-  bottom: 0;
-}
-
-.c4[data-placement*="bottom"] {
-  top: 0;
-}
-
-.c4[data-placement*="bottom"]::before,
-.c4[data-placement*="right"]::before,
-.c4[data-placement*="top"]::after,
-.c4[data-placement*="left"]::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin: auto;
+  background-color: #fff;
   border-style: solid;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
+  border-width: 1px;
+  width: 8px;
+  height: 8px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  border-width: 6px;
 }
 
-.c4[data-placement*="right"]::before {
-  left: 8px;
-  border-color: #fff transparent transparent #fff;
-  box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='left'] {
+  border-color: transparent #c0cad5 #c0cad5 transparent;
 }
 
-.c4[data-placement*="left"]::after {
-  right: 13px;
-  border-color: transparent #fff #fff transparent;
-  box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='right'] {
+  border-color: #c0cad5 transparent transparent #c0cad5;
 }
 
-.c4[data-placement*="top"]::after {
-  top: -16px;
-  margin-left: -5px;
-  border-color: transparent transparent #fff #fff;
-  box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='top'] {
+  border-color: transparent transparent #c0cad5 #c0cad5;
 }
 
-.c4[data-placement*="bottom"]::before {
-  top: 16px;
-  margin-left: -5px;
-  border-color: #fff #fff transparent transparent;
-  box-shadow: 0.75px -0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='bottom'] {
+  border-color: #c0cad5 #c0cad5 transparent transparent;
 }
 
 .c0 {
+  display: inline-block;
+  padding: 8px;
   width: 400px;
-  padding: 16px;
+  border-radius: 6px;
   z-index: 102;
   max-width: 400px;
   width: 100%;
@@ -197,17 +146,26 @@ exports[`Popover UI Positioning Bottom 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  border-radius: 6px;
+}
+
+@media (max-width:640px) {
+  .c0 {
+    left: 0 !important;
+  }
 }
 
 <div
   aria-describedby="dialog-description-1"
   class="c0"
+  data-placement="bottom"
+  display="inline-block"
   role="dialog"
-  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+  style="position: absolute; top: 8px; left: 8px;"
+  tabindex="-1"
   width="400"
 >
   <div
@@ -215,6 +173,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   >
     <section
       class="c2"
+      data-testid="popover-content-container"
       tabindex="-1"
       width="400"
     >
@@ -238,15 +197,13 @@ exports[`Popover UI Positioning Bottom 1`] = `
       </div>
     </section>
   </div>
-  <span
-    aria-hidden="true"
+  <div
     class="c4"
     color="background.lightest"
-    data-placement="top"
+    data-placement="bottom"
     data-testid="popover-arrow"
-  >
-    <div />
-  </span>
+    style="top: 3px; left: 0px;"
+  />
 </div>
 `;
 
@@ -269,72 +226,37 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 
 .c4 {
   position: absolute;
-}
-
-.c4[data-placement*="right"] {
-  left: 0;
-}
-
-.c4[data-placement*="left"] {
-  right: 0;
-}
-
-.c4[data-placement*="top"] {
-  bottom: 0;
-}
-
-.c4[data-placement*="bottom"] {
-  top: 0;
-}
-
-.c4[data-placement*="bottom"]::before,
-.c4[data-placement*="right"]::before,
-.c4[data-placement*="top"]::after,
-.c4[data-placement*="left"]::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin: auto;
+  background-color: #fff;
   border-style: solid;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
+  border-width: 1px;
+  width: 8px;
+  height: 8px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  border-width: 6px;
 }
 
-.c4[data-placement*="right"]::before {
-  left: 8px;
-  border-color: #fff transparent transparent #fff;
-  box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='left'] {
+  border-color: transparent #c0cad5 #c0cad5 transparent;
 }
 
-.c4[data-placement*="left"]::after {
-  right: 13px;
-  border-color: transparent #fff #fff transparent;
-  box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='right'] {
+  border-color: #c0cad5 transparent transparent #c0cad5;
 }
 
-.c4[data-placement*="top"]::after {
-  top: -16px;
-  margin-left: -5px;
-  border-color: transparent transparent #fff #fff;
-  box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='top'] {
+  border-color: transparent transparent #c0cad5 #c0cad5;
 }
 
-.c4[data-placement*="bottom"]::before {
-  top: 16px;
-  margin-left: -5px;
-  border-color: #fff #fff transparent transparent;
-  box-shadow: 0.75px -0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='bottom'] {
+  border-color: #c0cad5 #c0cad5 transparent transparent;
 }
 
 .c0 {
+  display: inline-block;
+  padding: 8px;
   width: 400px;
-  padding: 16px;
+  border-radius: 6px;
   z-index: 102;
   max-width: 400px;
   width: 100%;
@@ -344,17 +266,26 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  border-radius: 6px;
+}
+
+@media (max-width:640px) {
+  .c0 {
+    left: 0 !important;
+  }
 }
 
 <div
   aria-describedby="dialog-description-1"
   class="c0"
+  data-placement="bottom-end"
+  display="inline-block"
   role="dialog"
-  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+  style="position: absolute; top: 8px; left: 8px;"
+  tabindex="-1"
   width="400"
 >
   <div
@@ -362,6 +293,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   >
     <section
       class="c2"
+      data-testid="popover-content-container"
       tabindex="-1"
       width="400"
     >
@@ -385,15 +317,13 @@ exports[`Popover UI Positioning Bottom End 1`] = `
       </div>
     </section>
   </div>
-  <span
-    aria-hidden="true"
+  <div
     class="c4"
     color="background.lightest"
-    data-placement="top"
+    data-placement="bottom-end"
     data-testid="popover-arrow"
-  >
-    <div />
-  </span>
+    style="top: 3px; left: 0px;"
+  />
 </div>
 `;
 
@@ -416,72 +346,37 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 
 .c4 {
   position: absolute;
-}
-
-.c4[data-placement*="right"] {
-  left: 0;
-}
-
-.c4[data-placement*="left"] {
-  right: 0;
-}
-
-.c4[data-placement*="top"] {
-  bottom: 0;
-}
-
-.c4[data-placement*="bottom"] {
-  top: 0;
-}
-
-.c4[data-placement*="bottom"]::before,
-.c4[data-placement*="right"]::before,
-.c4[data-placement*="top"]::after,
-.c4[data-placement*="left"]::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin: auto;
+  background-color: #fff;
   border-style: solid;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
+  border-width: 1px;
+  width: 8px;
+  height: 8px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  border-width: 6px;
 }
 
-.c4[data-placement*="right"]::before {
-  left: 8px;
-  border-color: #fff transparent transparent #fff;
-  box-shadow: -0.75px -0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='left'] {
+  border-color: transparent #c0cad5 #c0cad5 transparent;
 }
 
-.c4[data-placement*="left"]::after {
-  right: 13px;
-  border-color: transparent #fff #fff transparent;
-  box-shadow: 0.75px 0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='right'] {
+  border-color: #c0cad5 transparent transparent #c0cad5;
 }
 
-.c4[data-placement*="top"]::after {
-  top: -16px;
-  margin-left: -5px;
-  border-color: transparent transparent #fff #fff;
-  box-shadow: -0.75px 0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='top'] {
+  border-color: transparent transparent #c0cad5 #c0cad5;
 }
 
-.c4[data-placement*="bottom"]::before {
-  top: 16px;
-  margin-left: -5px;
-  border-color: #fff #fff transparent transparent;
-  box-shadow: 0.75px -0.75px 0px 0.25px #c0cad5;
+.c4[data-placement*='bottom'] {
+  border-color: #c0cad5 #c0cad5 transparent transparent;
 }
 
 .c0 {
+  display: inline-block;
+  padding: 8px;
   width: 400px;
-  padding: 16px;
+  border-radius: 6px;
   z-index: 102;
   max-width: 400px;
   width: 100%;
@@ -491,17 +386,26 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  border-radius: 6px;
+}
+
+@media (max-width:640px) {
+  .c0 {
+    left: 0 !important;
+  }
 }
 
 <div
   aria-describedby="dialog-description-1"
   class="c0"
+  data-placement="bottom-start"
+  display="inline-block"
   role="dialog"
-  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+  style="position: absolute; top: 8px; left: 8px;"
+  tabindex="-1"
   width="400"
 >
   <div
@@ -509,6 +413,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   >
     <section
       class="c2"
+      data-testid="popover-content-container"
       tabindex="-1"
       width="400"
     >
@@ -532,14 +437,12 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
       </div>
     </section>
   </div>
-  <span
-    aria-hidden="true"
+  <div
     class="c4"
     color="background.lightest"
-    data-placement="top"
+    data-placement="bottom-start"
     data-testid="popover-arrow"
-  >
-    <div />
-  </span>
+    style="top: 3px; left: 0px;"
+  />
 </div>
 `;

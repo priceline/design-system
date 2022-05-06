@@ -43,33 +43,33 @@ const propTypes = {
   Image: PropTypes.object,
 }
 
-const ButtonChip: React.FC<InferProps<typeof propTypes>> = ({
-  id,
-  m,
-  disabled,
-  expanded,
-  children,
-  onClick,
-  label,
-  showActionIcon,
-  ...props
-}) => (
-  <ChipButton id={id} data-testid={id} disabled={disabled} onClick={onClick} aria-expanded={expanded} m={m}>
-    <ChipContent
-      label={label}
+const ButtonChip: React.FC<InferProps<typeof propTypes>> = React.forwardRef(
+  ({ id, m, disabled, expanded, children, onClick, label, showActionIcon, ...props }, ref) => (
+    <ChipButton
+      id={id}
+      data-testid={id}
+      ref={ref}
       disabled={disabled}
-      selected={expanded}
-      action={
-        showActionIcon && {
-          Icon: ChevronDown,
-          title: getTitle({ disabled, expanded }),
-        }
-      }
-      {...props}
+      onClick={onClick}
+      aria-expanded={expanded}
+      m={m}
     >
-      {children}
-    </ChipContent>
-  </ChipButton>
+      <ChipContent
+        label={label}
+        disabled={disabled}
+        selected={expanded}
+        action={
+          showActionIcon && {
+            Icon: ChevronDown,
+            title: getTitle({ disabled, expanded }),
+          }
+        }
+        {...props}
+      >
+        {children}
+      </ChipContent>
+    </ChipButton>
+  )
 )
 
 ButtonChip.displayName = 'ButtonChip'
