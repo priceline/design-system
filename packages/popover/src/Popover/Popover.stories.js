@@ -42,34 +42,22 @@ export default {
   },
 }
 
-// export const playground = () => (
-//   <React.Fragment>
-//     <Playground>
-//       <Popover
-//         renderContent={PriceGuidanceContent}
-//         placement='top'
-//         ariaLabel='Price Guidance Popover'
-//         idx={1}
-//         width={370}
-//         overlayOpacity={0.3}
-//         trapFocus={boolean('Trap focus', false)}
-//       >
-//         <Button>Popover</Button>
-//       </Popover>
-//     </Playground>
-//   </React.Fragment>
-// )
-
 export const colors = () => (
-  <Flex>
-    <Popover renderContent={SimpleTextContent} placement='bottom' ariaLabel='Default Popover' width={130}>
+  <Flex m={200}>
+    <Popover
+      color='primary'
+      renderContent={SimpleTextContent}
+      placement='left'
+      ariaLabel='Default Popover'
+      width={130}
+    >
       <Button color='primary' mx={2}>
         Default Popover
       </Button>
     </Popover>
     <Popover
       renderContent={SimpleTextContent}
-      placement='bottom'
+      placement='top'
       ariaLabel='Success Popover'
       width={130}
       color='success'
@@ -91,7 +79,7 @@ export const colors = () => (
     </Popover>
     <Popover
       renderContent={SimpleTextContent}
-      placement='bottom'
+      placement='right'
       ariaLabel='Error Popover'
       width={130}
       color='error'
@@ -174,7 +162,7 @@ export const rightWithOverlayOnScrollPosition = () => (
     <Box>
       <Popover
         renderContent={InnerContent}
-        placement='top'
+        placement='top-start'
         ariaLabel='Test Popover'
         idx={1}
         width={400}

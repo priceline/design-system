@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "update react-popper@2.3.0 and @popperjs/core@2.11.5, update to functional components",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
