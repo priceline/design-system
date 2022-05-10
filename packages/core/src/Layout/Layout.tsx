@@ -139,13 +139,21 @@ const propTypes = {
     PropTypes.oneOf(ALLOWED_GAP_VALUES),
     PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
   ]),
+  /** Add space between rows */
+  stretchHeight: PropTypes.bool,
 }
 
 const ZIndexBox = styled(Box)`
   ${zIndex}
 `
 
-const Layout: React.FC<InferProps<typeof propTypes>> = ({ children, gap, rowGap, variation }) => {
+const Layout: React.FC<InferProps<typeof propTypes>> = ({
+  children,
+  gap,
+  rowGap,
+  variation,
+  stretchHeight,
+}) => {
   const widths = memoGetChildrenWidths(variation, children.length)
   const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = memoGetGapValues(gap, rowGap)
 
@@ -162,7 +170,9 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({ children, gap, rowGap,
               data-testid={`box-${idx}`}
               zIndex={child.props.zIndex}
             >
-              {React.cloneElement(child)}
+              {React.cloneElement(child, {
+                minHeight: stretchHeight ? '100%' : undefined,
+              })}
             </ZIndexBox>
           )
       )}
