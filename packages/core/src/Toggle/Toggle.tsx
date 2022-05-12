@@ -51,6 +51,7 @@ const propTypes = {
   width: PropTypes.string,
   height: PropTypes.number,
   icon: PropTypes.node,
+  name: PropTypes.string,
 }
 
 const Toggle: React.FC<InferProps<typeof propTypes>> = ({
@@ -60,6 +61,7 @@ const Toggle: React.FC<InferProps<typeof propTypes>> = ({
   disabled,
   height,
   icon,
+  name,
 }) => {
   const width = height * 1.875
   const circleAbsoluteSize = height - 4
@@ -84,6 +86,7 @@ const Toggle: React.FC<InferProps<typeof propTypes>> = ({
         role='switch'
         tabIndex='0'
         type='checkbox'
+        name={name}
       />
 
       <OutlineAbsolute borderRadius='full' isOn={isOn} left={-4} top={-4} width='calc(100% + 8px)' />
