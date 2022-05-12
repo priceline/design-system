@@ -71,9 +71,9 @@
     "eslint": "^7.32.0",
     "jest": "~25.4.0",
     "pcln-design-system": "workspace:*",
-    "pcln-icons": "workspace:*",
-    "pcln-menu": "workspace:*",
-    "pcln-popover": "workspace:*",
+    "pcln-icons": "workspace:4.8.1-beta-toggle-name.0",
+    "pcln-menu": "workspace:4.4.22-beta-toggle-name.0",
+    "pcln-popover": "workspace:4.3.22-beta-toggle-name.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -88,7 +88,7 @@
   "peerDependencies": {
     "babel-loader": "^8.2.2",
     "pcln-design-system": "^4",
-    "pcln-icons": "^4.8.0",
+    "pcln-icons": "4.8.1-beta-toggle-name.0",
     "react": ">= 16.12.0",
     "react-dom": ">= 16.12.0"
   }
