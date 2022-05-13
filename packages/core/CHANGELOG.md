@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 02 May 2022 17:34:57 GMT and should not be manually modified.
+This log was last generated on Fri, 13 May 2022 16:59:33 GMT and should not be manually modified.
+
+## 4.22.0
+Fri, 13 May 2022 16:59:33 GMT
+
+### Minor changes
+
+- Layout: add stretchHeight prop that will equalize heights to the tallest
 
 ## 4.21.0
 Mon, 02 May 2022 17:34:57 GMT

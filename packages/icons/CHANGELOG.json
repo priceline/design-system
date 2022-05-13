@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.8.1",
+      "tag": "pcln-icons_v4.8.1",
+      "date": "Fri, 13 May 2022 16:59:33 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "remove ids from nodes in new icon files",
+            "author": "Vanessa Kroeker <3167394+vkro@users.noreply.github.com>",
+            "commit": "a92522b93123c1cbd2dcbed485e500ff662314db"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.8.0",
       "tag": "pcln-icons_v4.8.0",
       "date": "Fri, 15 Apr 2022 13:45:09 GMT",

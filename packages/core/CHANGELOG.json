@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.22.0",
+      "tag": "pcln-design-system_v4.22.0",
+      "date": "Fri, 13 May 2022 16:59:33 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Layout: add stretchHeight prop that will equalize heights to the tallest",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "89965ab3cc0d040fd4b7446e648d19bc33a7e5d9"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.21.0",
       "tag": "pcln-design-system_v4.21.0",
       "date": "Mon, 02 May 2022 17:34:57 GMT",

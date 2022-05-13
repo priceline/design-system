@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 15 Apr 2022 13:45:09 GMT and should not be manually modified.
+This log was last generated on Fri, 13 May 2022 16:59:33 GMT and should not be manually modified.
+
+## 4.8.1
+Fri, 13 May 2022 16:59:33 GMT
+
+### Patches
+
+- remove ids from nodes in new icon files
 
 ## 4.8.0
 Fri, 15 Apr 2022 13:45:09 GMT
