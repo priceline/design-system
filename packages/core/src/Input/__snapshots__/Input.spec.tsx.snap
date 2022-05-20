@@ -12,11 +12,8 @@ exports[`Input it renders 1`] = `
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
   font-size: 16px;
   border-radius: 2px;
@@ -64,6 +61,7 @@ exports[`Input it renders 1`] = `
     ]
   }
   id="fake-test-id"
+  size="lg"
 />
 `;
 
@@ -79,11 +77,8 @@ exports[`Input it renders an input element with a really large padding and margi
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
   margin: 32px;
   padding: 32px;
@@ -133,6 +128,7 @@ exports[`Input it renders an input element with a really large padding and margi
     ]
   }
   id="fake-test-id"
+  size="lg"
 />
 `;
 
@@ -148,11 +144,8 @@ exports[`Input it renders an input element with a red border with a color prop i
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c00;
   font-size: 16px;
   border-radius: 2px;
@@ -201,6 +194,7 @@ exports[`Input it renders an input element with a red border with a color prop i
     ]
   }
   id="fake-test-id"
+  size="lg"
 />
 `;
 
@@ -216,11 +210,8 @@ exports[`Input it renders an input element with large text 1`] = `
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
   font-size: 24px;
   border-radius: 2px;
@@ -256,5 +247,6 @@ exports[`Input it renders an input element with large text 1`] = `
   className="c0"
   fontSize={4}
   id="fake-test-id"
+  size="lg"
 />
 `;

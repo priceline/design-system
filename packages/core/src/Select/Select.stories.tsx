@@ -2,16 +2,18 @@ import React from 'react'
 
 import { Select, Label, Box, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { argTypes } from './Select.stories.args'
 
 export default {
   title: 'Select',
   component: Select,
+  argTypes,
 }
 
-export const Default = () => (
+const Template = (args) => (
   <Box>
     <Label htmlFor='cabinClass'>Cabin Class</Label>
-    <Select id='cabinClass' name='cabinClass' defaultValue='Premium Economy'>
+    <Select id='cabinClass' name='cabinClass' defaultValue='Premium Economy' {...args}>
       <option>Economy</option>
       <option>Premium Economy</option>
       <option>Business</option>
@@ -21,9 +23,7 @@ export const Default = () => (
   </Box>
 )
 
-Default.story = {
-  name: 'default',
-}
+export const Default = Template.bind({})
 
 export const LongOptionString = () => (
   <Box width={[1, 320]}>

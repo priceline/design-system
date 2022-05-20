@@ -40,11 +40,8 @@ exports[`FormField renders 1`] = `
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
   font-size: 16px;
   border-radius: 2px;
@@ -119,10 +116,11 @@ exports[`FormField renders 1`] = `
       }
       id="email"
       name="email"
+      size="lg"
       style={
         Object {
-          "paddingBottom": 8,
-          "paddingTop": 20,
+          "paddingBottom": "8px",
+          "paddingTop": "20px",
           "transitionDuration": ".1s",
           "transitionProperty": "padding-top, padding-bottom",
         }
@@ -194,11 +192,8 @@ exports[`FormField renders with Icon 1`] = `
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
   font-size: 16px;
@@ -295,10 +290,11 @@ exports[`FormField renders with Icon 1`] = `
       }
       id="email"
       name="email"
+      size="lg"
       style={
         Object {
-          "paddingBottom": 8,
-          "paddingTop": 20,
+          "paddingBottom": "8px",
+          "paddingTop": "20px",
           "transitionDuration": ".1s",
           "transitionProperty": "padding-top, padding-bottom",
         }
@@ -370,11 +366,8 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0;
+  padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
   font-size: 16px;
@@ -471,10 +464,11 @@ exports[`FormField renders with Label autoHide prop 1`] = `
       }
       id="email"
       name="email"
+      size="lg"
       style={
         Object {
-          "paddingBottom": 14,
-          "paddingTop": 14,
+          "paddingBottom": undefined,
+          "paddingTop": undefined,
           "transitionDuration": ".1s",
           "transitionProperty": "padding-top, padding-bottom",
         }
@@ -552,13 +546,11 @@ exports[`FormField renders with Select  1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
+  padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 32px;
   font-size: 16px;
+  border-radius: 2px;
 }
 
 .c3:focus {
@@ -615,10 +607,11 @@ exports[`FormField renders with Select  1`] = `
             1,
           ]
         }
+        size="lg"
         style={
           Object {
-            "paddingBottom": 8,
-            "paddingTop": 20,
+            "paddingBottom": "8px",
+            "paddingTop": "20px",
             "transitionDuration": ".1s",
             "transitionProperty": "padding-top, padding-bottom",
           }
@@ -736,13 +729,12 @@ exports[`FormField renders with Select and Icon 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
+  padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
   padding-left: 40px;
-  padding-right: 32px;
   font-size: 16px;
+  border-radius: 2px;
 }
 
 .c6:focus {
@@ -820,10 +812,11 @@ exports[`FormField renders with Select and Icon 1`] = `
             1,
           ]
         }
+        size="lg"
         style={
           Object {
-            "paddingBottom": 8,
-            "paddingTop": 20,
+            "paddingBottom": "8px",
+            "paddingTop": "20px",
             "transitionDuration": ".1s",
             "transitionProperty": "padding-top, padding-bottom",
           }

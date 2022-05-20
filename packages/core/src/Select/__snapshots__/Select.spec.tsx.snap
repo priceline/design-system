@@ -40,13 +40,11 @@ exports[`Select renders 1`] = `
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
+  padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 32px;
   font-size: 16px;
+  border-radius: 2px;
 }
 
 .c1:focus {
@@ -78,6 +76,7 @@ exports[`Select renders 1`] = `
         1,
       ]
     }
+    size="lg"
   />
   <svg
     aria-hidden={true}

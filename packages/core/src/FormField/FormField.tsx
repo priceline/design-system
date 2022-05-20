@@ -4,6 +4,25 @@ import { InferProps } from 'prop-types'
 import { Box } from '../Box'
 import { IconField } from '../IconField'
 
+const paddingTopWithLabel = {
+  sm: '14px',
+  md: '16px',
+  lg: '20px',
+  xl: '24px',
+}
+const paddingBottomWithLabel = {
+  sm: '0px',
+  md: '5px',
+  lg: '8px',
+  xl: '13px',
+}
+const paddingTopForLabel = {
+  sm: '0px',
+  md: '2px',
+  lg: '6px',
+  xl: '10px',
+}
+
 const childrenPropType = (props, propName, componentName) => {
   const children = React.Children.toArray(props.children)
   const [label] = children.filter((child) => child.type.isLabel)
@@ -23,6 +42,16 @@ const propTypes = {
   children: childrenPropType,
 }
 
+const inputPaddingTop = (size) => {
+  return paddingTopWithLabel?.[size] ? paddingTopWithLabel[size] : '20px'
+}
+const inputPaddingBottom = (size) => {
+  return paddingBottomWithLabel?.[size] ? paddingBottomWithLabel[size] : '8px'
+}
+const labelPaddingTop = (size) => {
+  return paddingTopForLabel?.[size] ? paddingTopForLabel[size] : '6px'
+}
+
 const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props }) => {
   let iconBefore = false
 
@@ -32,6 +61,7 @@ const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props 
   const valueNoLabel = !label && field && !!field.props.value
   const showLabel = ((label && !label.props.autoHide) || (field && !!field.props.value)) && !valueNoLabel
   const id = field && (field.props.id || field.props.name)
+  const inputSize = field && (field.props.size || undefined)
 
   const styled = childrenArray.map((child, i, arr) => {
     if (child.type.isField && arr[i - 1] && arr[i - 1].type.isIcon) {
@@ -44,8 +74,8 @@ const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props 
           ...child.props.style,
           transitionProperty: 'padding-top, padding-bottom',
           transitionDuration: '.1s',
-          paddingTop: showLabel ? 20 : 14,
-          paddingBottom: showLabel ? 8 : 14,
+          paddingTop: showLabel ? inputPaddingTop(inputSize) : undefined,
+          paddingBottom: showLabel ? inputPaddingBottom(inputSize) : undefined,
         },
       })
     }
@@ -60,7 +90,7 @@ const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props 
       htmlFor: label.props.htmlFor || id,
       fontSize: 10,
       ml,
-      pt: '6px',
+      pt: labelPaddingTop(inputSize),
       mb: '-20px',
       style: {
         ...label.props.style,

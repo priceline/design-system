@@ -1,9 +1,31 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { space, fontSize, borderRadius } from 'styled-system'
 import PropTypes, { InferProps } from 'prop-types'
 import { Text } from '../Text'
-import { applyVariations, getPaletteColor, borders, deprecatedColorValue, borderRadiusAttrs } from '../utils'
+import {
+  applyVariations,
+  getPaletteColor,
+  borders,
+  deprecatedColorValue,
+  borderRadiusAttrs,
+  applySizes,
+} from '../utils'
+
+const sizes = {
+  sm: css`
+    padding: 6px 12px 7px 12px;
+  `,
+  md: css`
+    padding: 10px 12px 11px 12px;
+  `,
+  lg: css`
+    padding: 14px 12px 14px 12px;
+  `,
+  xl: css`
+    padding: 18px 12px 19px 12px;
+  `,
+}
 
 const StyledInput = styled.input.attrs(borderRadiusAttrs)`
   appearance: none;
@@ -14,12 +36,6 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-
   margin: 0;
 
   ::placeholder {
@@ -30,6 +46,7 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
     display: none;
   }
 
+  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Input')}
   ${borders} ${space} ${fontSize} ${borderRadius};
 `
@@ -42,6 +59,7 @@ const propTypes = {
   /**
    * Display text below the input and set error color on input
    */
+  size: PropTypes.oneOf(Object.keys(sizes)),
   helperText: PropTypes.node,
   ...space.propTypes,
   ...fontSize.propTypes,
@@ -74,6 +92,7 @@ Input.isField = true
 Input.defaultProps = {
   fontSize: [2, null, 1],
   borderRadius: 'lg',
+  size: 'lg',
 }
 Input.propTypes = propTypes
 
