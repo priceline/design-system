@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.23.0",
+      "tag": "pcln-design-system_v4.23.0",
+      "date": "Fri, 20 May 2022 18:14:31 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "added sizes to input and select",
+            "author": "harpreetmand <harpreetmand@gmail.com>",
+            "commit": "49d858e650fc694ea6fee851787c14baeb35b0c5"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.22.0",
       "tag": "pcln-design-system_v4.22.0",
       "date": "Fri, 13 May 2022 16:59:33 GMT",
