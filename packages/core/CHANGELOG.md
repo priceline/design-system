@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 20 May 2022 18:14:31 GMT and should not be manually modified.
+This log was last generated on Thu, 26 May 2022 18:58:01 GMT and should not be manually modified.
+
+## 4.24.0
+Thu, 26 May 2022 18:58:01 GMT
+
+### Minor changes
+
+- Add name prop to Toggle
 
 ## 4.23.0
 Fri, 20 May 2022 18:14:31 GMT

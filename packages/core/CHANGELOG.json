@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.24.0",
+      "tag": "pcln-design-system_v4.24.0",
+      "date": "Thu, 26 May 2022 18:58:01 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add name prop to Toggle",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "1da0a5b5e7bab9b3d23ec0c6ef335d7a6d0b7fb6"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.23.0",
       "tag": "pcln-design-system_v4.23.0",
       "date": "Fri, 20 May 2022 18:14:31 GMT",

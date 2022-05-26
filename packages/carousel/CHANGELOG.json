@@ -2,6 +2,28 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.1.2",
+      "tag": "pcln-carousel_v1.1.2",
+      "date": "Thu, 26 May 2022 18:58:01 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix missing semicolon on ArrowButton styling causing z-index issues",
+            "author": "Nison M <16519244+nmalayev@users.noreply.github.com>",
+            "commit": "ec6c67f1608f7378b1a7e471f449e25dcef10400"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.24.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.23.0` to `4.24.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.1",
       "tag": "pcln-carousel_v1.1.1",
       "date": "Fri, 20 May 2022 18:14:31 GMT",
