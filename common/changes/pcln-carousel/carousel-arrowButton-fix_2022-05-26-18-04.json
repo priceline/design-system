@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "fix missing semicolon on ArrowButton styling causing z-index issues",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

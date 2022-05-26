@@ -20,7 +20,7 @@ const sidePositionStyles = (props) =>
     ${props.type == 'prev' ? 'left' : 'right'}: 0px;
     position: absolute;
     top: 50%;
-    margin-top: -30px
+    margin-top: -30px;
     z-index: 2;
     `
     : null
