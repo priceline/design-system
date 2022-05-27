@@ -3,13 +3,6 @@ import { borderRadiusButtonValues } from './Button'
 export const variations = ['fill', 'link', 'outline', 'plain', 'subtle', 'lightFill']
 export const sizes = ['small', 'medium', 'large']
 
-export const defaultArgs = {
-  variation: 'fill',
-  size: 'medium',
-  color: 'primary',
-  disabled: false,
-}
-
 export const argTypes = {
   variation: {
     name: 'variation',
