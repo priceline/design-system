@@ -324,6 +324,16 @@ describe('Button', () => {
       })
     })
 
+    describe('white variation', () => {
+      it('should render correctly', () => {
+        const { getByText } = render(<Button variation='white'>BUTTON</Button>)
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.lightest)
+      })
+    })
+
     describe('plain variation', () => {
       it('should render correctly', () => {
         const { getByText } = render(<Button variation='plain'>BUTTON</Button>)

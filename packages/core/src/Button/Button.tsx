@@ -110,6 +110,18 @@ const variations = {
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
   `,
+  white: css`
+    background-color: ${getPaletteColor('background.lightest')};
+    color: ${getPaletteColor('base')};
+    &:hover {
+      background-color: ${getPaletteColor('background.light')};
+      color: ${getPaletteColor('dark')};
+    }
+    &:focus {
+      outline: 0px solid ${getPaletteColor('dark')};
+      box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
+    }
+  `,
   lightFill: css`
     background-color: ${getPaletteColor('light')};
     color: ${getPaletteColor('base')};
