@@ -1,6 +1,6 @@
 {
   "name": "pcln-slider",
-  "version": "4.2.15",
+  "version": "4.2.16-nm-beta.1",
   "description": "React component for range sliders",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
