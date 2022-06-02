@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "update popover to allow display styling and disabling onClick",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

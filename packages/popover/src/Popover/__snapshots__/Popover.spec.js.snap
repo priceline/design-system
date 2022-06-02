@@ -57,6 +57,7 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
 >
   <div
     class="c1"
+    display="inline-block"
   >
     <button
       aria-label="Top Popover"
@@ -90,6 +91,7 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
   >
     <div
       class="c1"
+      display="inline-block"
     >
       <button
         aria-label="Top Popover"

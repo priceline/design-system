@@ -31,16 +31,22 @@ class Popover extends Component {
   }
 
   handleClose(evt) {
-    this.setState({ isPopoverOpen: false }, () => {
-      this.setFocusToRef(this.triggerRef)
-    })
+    if (this.props.toggleIsOpenOnClick) {
+      this.setState({ isPopoverOpen: false }, () => {
+        this.setFocusToRef(this.triggerRef)
+      })
+    }
+
     this.props.onClose && this.props.onClose(evt)
   }
 
   handleOpen(evt) {
-    this.setState({ isPopoverOpen: true }, () => {
-      this.setFocusToRef(this.contentRef)
-    })
+    if (this.props.toggleIsOpenOnClick) {
+      this.setState({ isPopoverOpen: true }, () => {
+        this.setFocusToRef(this.contentRef)
+      })
+    }
+
     this.props.onOpen && this.props.onOpen(evt)
   }
 
@@ -58,7 +64,7 @@ class Popover extends Component {
 
   render() {
     const { isPopoverOpen: isOpenState } = this.state
-    const { ariaLabel, children, isOpen: isOpenProp } = this.props
+    const { ariaLabel, children, isOpen: isOpenProp, display } = this.props
     const isPopoverOpen = isOpenState || isOpenProp
 
     return (
@@ -66,7 +72,7 @@ class Popover extends Component {
         <Reference>
           {({ ref }) => (
             // Need to be a native element, because of ref forwarding limitations with DS functional components
-            <InlineContainer ref={ref}>
+            <Container ref={ref} display={display}>
               {
                 // Clone element to pass down toggle event so it can be used directly from children as needed
                 React.cloneElement(children, {
@@ -75,7 +81,7 @@ class Popover extends Component {
                   ref: this.triggerRef,
                 })
               }
-            </InlineContainer>
+            </Container>
           )}
         </Reference>
         {isPopoverOpen && (
@@ -86,8 +92,8 @@ class Popover extends Component {
   }
 }
 
-const InlineContainer = styled.div`
-  display: inline-block;
+const Container = styled.div`
+  display: ${({ display }) => display};
 `
 
 Popover.propTypes = {
@@ -111,10 +117,14 @@ Popover.propTypes = {
   onClose: PropTypes.func,
   hideArrow: PropTypes.bool,
   hideOverlay: PropTypes.bool,
+  display: PropTypes.string,
+  toggleIsOpenOnClick: PropTypes.bool,
 }
 
 Popover.defaultProps = {
   ariaLabel: 'Click to open popover with more information',
+  toggleIsOpenOnClick: true,
+  display: 'inline-block',
 }
 
 export default Popover
