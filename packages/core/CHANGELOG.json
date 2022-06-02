@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.25.0",
+      "tag": "pcln-design-system_v4.25.0",
+      "date": "Thu, 02 Jun 2022 16:31:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add white variation to Button",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "fc65b3e9270fbeb463df151f5af1585bd84df682"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.24.0",
       "tag": "pcln-design-system_v4.24.0",
       "date": "Thu, 26 May 2022 18:58:01 GMT",
