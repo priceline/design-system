@@ -81,7 +81,15 @@ function renderCards() {
   ))
 }
 
-const BasicTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
+const BasicTemplate = (args) => (
+  <Carousel
+    {...args}
+    onSlideClick={(props) => console.log('Slide click!', props)}
+    onSlideKeyDown={(props) => console.log('Keyboard click', props)}
+  >
+    {renderCards()}
+  </Carousel>
+)
 
 export const Basic = BasicTemplate.bind({})
 Basic.args = {

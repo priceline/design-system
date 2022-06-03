@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "add prop to control event.stopPropagation",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

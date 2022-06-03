@@ -22,7 +22,9 @@ class Popover extends Component {
 
   handleToggle(evt, isOpen) {
     evt.preventDefault()
-    evt.stopPropagation()
+    if (this.props.stopPropagation) {
+      evt.stopPropagation()
+    }
     if (isOpen) {
       this.handleClose(evt)
     } else {
@@ -119,12 +121,14 @@ Popover.propTypes = {
   hideOverlay: PropTypes.bool,
   display: PropTypes.string,
   toggleIsOpenOnClick: PropTypes.bool,
+  stopPropagation: PropTypes.bool,
 }
 
 Popover.defaultProps = {
   ariaLabel: 'Click to open popover with more information',
   toggleIsOpenOnClick: true,
   display: 'inline-block',
+  stopPropagation: true,
 }
 
 export default Popover
