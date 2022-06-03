@@ -50,6 +50,12 @@ export default {
     onSlideChange: {
       action: 'Current slide changed',
     },
+    onSlideClick: {
+      action: 'Current slide click',
+    },
+    onSlideKeyDown: {
+      action: 'Current slide key',
+    },
   },
 }
 

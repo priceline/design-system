@@ -20,9 +20,17 @@ describe('Carousel', () => {
 
   it('should render a carousel', () => {
     const onSlideChange = jest.fn()
+    const onSlideClick = jest.fn()
+    const onSlideKeyDown = jest.fn()
 
     const { getByText, getByTestId, getByLabelText } = render(
-      <Carousel showDots arrowsPosition='side' onSlideChange={onSlideChange}>
+      <Carousel
+        showDots
+        arrowsPosition='side'
+        onSlideChange={onSlideChange}
+        onSlideClick={onSlideClick}
+        onSlideKeyDown={onSlideKeyDown}
+      >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
         <Flex>Slide 3</Flex>
@@ -38,6 +46,10 @@ describe('Carousel', () => {
     expect(onSlideChange).toHaveBeenCalledWith(1)
     fireEvent.click(getByLabelText('previous'))
     expect(onSlideChange).toHaveBeenCalledWith(0)
+    fireEvent.click(getByText('Slide 1'))
+    expect(onSlideClick).toHaveBeenCalledTimes(1)
+    fireEvent.keyDown(getByText('Slide 1'), { key: 'Enter' })
+    expect(onSlideKeyDown).toHaveBeenCalledTimes(1)
   })
 
   it('should set slide widths if layout is set', () => {
