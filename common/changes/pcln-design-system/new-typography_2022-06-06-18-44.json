@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add typography values",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

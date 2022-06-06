@@ -136,6 +136,14 @@ export const typography = {
     textTransform: 'uppercase',
     caps: true,
   },
+  highlightBold: {
+    fontWeight: 700,
+    fontSize: '10px',
+    lineHeight: '12px',
+    letterSpacing: '0.013rem',
+    textTransform: 'uppercase',
+    caps: true,
+  },
   subtitle1: {
     fontWeight: 500,
     fontSize: '52px',
@@ -170,6 +178,48 @@ export const typography = {
     fontWeight: 500,
     fontSize: '14px',
     lineHeight: '16px',
+  },
+  articleBold: {
+    fontWeight: 700,
+    fontSize: '16px',
+    lineHeight: '28px',
+    letterSpacing: '-0.006rem',
+  },
+  paragraphBold: {
+    fontWeight: 700,
+    fontSize: '14px',
+    lineHeight: '20px',
+    letterSpacing: '-0.003rem',
+  },
+  paragraph2: {
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: '24px',
+    letterSpacing: '-0.004rem',
+  },
+  paragraph2Bold: {
+    fontWeight: 700,
+    fontSize: '16px',
+    lineHeight: '24px',
+    letterSpacing: '-0.004rem',
+  },
+  captionBold: {
+    fontWeight: 700,
+    fontSize: '12px',
+    lineHeight: '16px',
+    letterSpacing: '0.006rem',
+  },
+  overlineMedium: {
+    fontWeight: 500,
+    fontSize: '12px',
+    lineHeight: '16px',
+    letterSpacing: '0.063rem',
+  },
+  disclaimerBold: {
+    fontWeight: 700,
+    fontSize: '11px',
+    lineHeight: '16px',
+    letterSpacing: '0.013rem',
   },
 }
 
