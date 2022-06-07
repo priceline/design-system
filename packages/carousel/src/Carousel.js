@@ -48,6 +48,8 @@ export const Carousel = ({
   sideButtonMargin = '-30px',
   sidePositionArrowButton,
   stretchSlideHeight = true,
+  onSlideClick = () => {},
+  onSlideKeyDown = () => {},
 }) => {
   const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
@@ -104,6 +106,12 @@ export const Carousel = ({
                   key={getSlideKey(item)}
                   style={widths[index] && { width: widths[index] }}
                   data-testid={`slide-${index}`}
+                  onClick={(e) => {
+                    onSlideClick(index, e)
+                  }}
+                  onKeyDown={(e) => {
+                    onSlideKeyDown(index, e)
+                  }}
                 >
                   <Box p={slideSpacing}>
                     {!layout && stretchSlideHeight ? (
@@ -193,4 +201,8 @@ Carousel.propTypes = {
   sidePositionArrowButton: PropTypes.element,
   /** Set height of slides based on tallest slide */
   stretchSlideHeight: PropTypes.bool,
+  /** Custom onClick event handler for each Slide child */
+  onSlideClick: PropTypes.func,
+  /** Custom onKeyDown event handler for each Slide child */
+  onSlideKeyDown: PropTypes.func,
 }
