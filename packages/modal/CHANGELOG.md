@@ -1,6 +1,11 @@
 # Change Log - pcln-modal
 
-This log was last generated on Thu, 02 Jun 2022 20:07:19 GMT and should not be manually modified.
+This log was last generated on Tue, 07 Jun 2022 16:09:19 GMT and should not be manually modified.
+
+## 4.2.15
+Tue, 07 Jun 2022 16:09:19 GMT
+
+_Version update only_
 
 ## 4.2.14
 Thu, 02 Jun 2022 20:07:19 GMT
