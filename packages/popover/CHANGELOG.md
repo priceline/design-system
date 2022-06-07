@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Tue, 07 Jun 2022 16:09:19 GMT and should not be manually modified.
+This log was last generated on Tue, 07 Jun 2022 19:14:23 GMT and should not be manually modified.
+
+## 4.4.2
+Tue, 07 Jun 2022 19:14:23 GMT
+
+### Patches
+
+- add prop to control event.stopPropagation
 
 ## 4.4.1
 Tue, 07 Jun 2022 16:09:19 GMT

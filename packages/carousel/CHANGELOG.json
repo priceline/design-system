@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.2.0",
+      "tag": "pcln-carousel_v1.2.0",
+      "date": "Tue, 07 Jun 2022 19:14:23 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add onClick and onKeyDown handlers to Carousel children",
+            "author": "Nison M <16519244+nmalayev@users.noreply.github.com>",
+            "commit": "fef28297e896945dd692e3c0ff0cd7045eed8fd7"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.4",
       "tag": "pcln-carousel_v1.1.4",
       "date": "Tue, 07 Jun 2022 16:09:19 GMT",

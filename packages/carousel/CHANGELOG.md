@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Tue, 07 Jun 2022 16:09:19 GMT and should not be manually modified.
+This log was last generated on Tue, 07 Jun 2022 19:14:23 GMT and should not be manually modified.
+
+## 1.2.0
+Tue, 07 Jun 2022 19:14:23 GMT
+
+### Minor changes
+
+- add onClick and onKeyDown handlers to Carousel children
 
 ## 1.1.4
 Tue, 07 Jun 2022 16:09:19 GMT
