@@ -44,6 +44,15 @@ Object {
 }
 `;
 
+exports[`typographyAttrs works with and textStyle=articleBold 1`] = `
+Object {
+  "fontSize": "16px",
+  "fontWeight": 700,
+  "letterSpacing": "-0.006rem",
+  "lineHeight": "28px",
+}
+`;
+
 exports[`typographyAttrs works with and textStyle=caption 1`] = `
 Object {
   "fontSize": "12px",
@@ -53,10 +62,28 @@ Object {
 }
 `;
 
+exports[`typographyAttrs works with and textStyle=captionBold 1`] = `
+Object {
+  "fontSize": "12px",
+  "fontWeight": 700,
+  "letterSpacing": "0.006rem",
+  "lineHeight": "16px",
+}
+`;
+
 exports[`typographyAttrs works with and textStyle=disclaimer 1`] = `
 Object {
   "fontSize": "11px",
   "fontWeight": 500,
+  "letterSpacing": "0.013rem",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=disclaimerBold 1`] = `
+Object {
+  "fontSize": "11px",
+  "fontWeight": 700,
   "letterSpacing": "0.013rem",
   "lineHeight": "16px",
 }
@@ -121,6 +148,17 @@ Object {
 }
 `;
 
+exports[`typographyAttrs works with and textStyle=highlightBold 1`] = `
+Object {
+  "caps": true,
+  "fontSize": "10px",
+  "fontWeight": 700,
+  "letterSpacing": "0.013rem",
+  "lineHeight": "12px",
+  "textTransform": "uppercase",
+}
+`;
+
 exports[`typographyAttrs works with and textStyle=overline 1`] = `
 Object {
   "fontSize": "12px",
@@ -130,10 +168,46 @@ Object {
 }
 `;
 
+exports[`typographyAttrs works with and textStyle=overlineMedium 1`] = `
+Object {
+  "fontSize": "12px",
+  "fontWeight": 500,
+  "letterSpacing": "0.063rem",
+  "lineHeight": "16px",
+}
+`;
+
 exports[`typographyAttrs works with and textStyle=paragraph 1`] = `
 Object {
   "fontSize": "14px",
   "fontWeight": 500,
+  "letterSpacing": "-0.003rem",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=paragraph2 1`] = `
+Object {
+  "fontSize": "16px",
+  "fontWeight": 500,
+  "letterSpacing": "-0.004rem",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=paragraph2Bold 1`] = `
+Object {
+  "fontSize": "16px",
+  "fontWeight": 700,
+  "letterSpacing": "-0.004rem",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`typographyAttrs works with and textStyle=paragraphBold 1`] = `
+Object {
+  "fontSize": "14px",
+  "fontWeight": 700,
   "letterSpacing": "-0.003rem",
   "lineHeight": "20px",
 }
