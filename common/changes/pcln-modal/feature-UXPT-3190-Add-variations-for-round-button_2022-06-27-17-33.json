@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "Add hover state to button icon",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

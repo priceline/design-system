@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add variation for round icon button",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
