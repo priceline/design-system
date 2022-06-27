@@ -30,16 +30,19 @@ exports[`IconButton renders without props 1`] = `
   border-radius: 2px;
   font-size: 14px;
   padding: 9.5px 18px;
-  background-color: #0068ef;
-  color: #fff;
+  background-color: transparent;
+  color: #0068ef;
   padding: 0;
   background-color: transparent;
   color: inherit;
+  background-color: transparent;
+  color: #0068ef;
+  padding: 10px;
 }
 
 .c0:hover {
-  background-color: #049;
-  color: #fff;
+  background-color: #f4f6f8;
+  color: #049;
 }
 
 .c0:focus {
@@ -67,6 +70,16 @@ exports[`IconButton renders without props 1`] = `
 
 .c0:disabled {
   background-color: transparent;
+}
+
+.c0:hover {
+  background-color: #f4f6f8;
+  color: #049;
+}
+
+.c0:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
 }
 
 <button

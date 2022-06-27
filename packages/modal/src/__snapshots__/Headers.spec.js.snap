@@ -50,6 +50,8 @@ exports[`ModalHeader render 1`] = `
   padding: 0;
   background-color: transparent;
   color: inherit;
+  background-color: #0068ef;
+  color: #fff;
 }
 
 .c3:hover {
@@ -82,6 +84,16 @@ exports[`ModalHeader render 1`] = `
 
 .c3:disabled {
   background-color: transparent;
+}
+
+.c3:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c3:focus {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
 }
 
 .c0 {
