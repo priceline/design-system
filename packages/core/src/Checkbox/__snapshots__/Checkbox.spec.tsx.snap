@@ -14,6 +14,10 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   outline: none;
 }
 
+.c6 {
+  outline: none;
+}
+
 .c5 {
   outline: none;
 }
@@ -42,6 +46,27 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 .c1 svg[data-name='checked'] {
+  display: none;
+}
+
+.c1 svg[data-name='indeterminate'] {
+  display: none;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='indeterminate'] {
+  display: inline-block;
+  color: #c0cad5;
+}
+
+.c1 > input:indeterminate:hover ~ svg[data-name='indeterminate'] {
+  color: #c0cad5;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='empty'] {
+  display: none;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='checked'] {
   display: none;
 }
 
@@ -129,6 +154,23 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
       <svg
         aria-hidden="true"
         class="c3 c5"
+        data-name="indeterminate"
+        fill="currentcolor"
+        focusable="false"
+        height="24"
+        role="img"
+        tabindex="-1"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm1 8v2h10v-2H7z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="c3 c6"
         data-name="empty"
         fill="currentcolor"
         focusable="false"
@@ -162,6 +204,10 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   outline: none;
 }
 
+.c6 {
+  outline: none;
+}
+
 .c5 {
   outline: none;
 }
@@ -190,6 +236,27 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 .c1 svg[data-name='checked'] {
+  display: none;
+}
+
+.c1 svg[data-name='indeterminate'] {
+  display: none;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='indeterminate'] {
+  display: inline-block;
+  color: #c0cad5;
+}
+
+.c1 > input:indeterminate:hover ~ svg[data-name='indeterminate'] {
+  color: #c0cad5;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='empty'] {
+  display: none;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='checked'] {
   display: none;
 }
 
@@ -276,6 +343,23 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
       <svg
         aria-hidden="true"
         class="c3 c5"
+        data-name="indeterminate"
+        fill="currentcolor"
+        focusable="false"
+        height="24"
+        role="img"
+        tabindex="-1"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm1 8v2h10v-2H7z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="c3 c6"
         data-name="empty"
         fill="currentcolor"
         focusable="false"
@@ -309,6 +393,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   outline: none;
 }
 
+.c6 {
+  outline: none;
+}
+
 .c5 {
   outline: none;
 }
@@ -337,6 +425,27 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 }
 
 .c1 svg[data-name='checked'] {
+  display: none;
+}
+
+.c1 svg[data-name='indeterminate'] {
+  display: none;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='indeterminate'] {
+  display: inline-block;
+  color: #0068ef;
+}
+
+.c1 > input:indeterminate:hover ~ svg[data-name='indeterminate'] {
+  color: #049;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='empty'] {
+  display: none;
+}
+
+.c1 > input:indeterminate ~ svg[data-name='checked'] {
   display: none;
 }
 
@@ -421,6 +530,23 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
       <svg
         aria-hidden="true"
         class="c3 c5"
+        data-name="indeterminate"
+        fill="currentcolor"
+        focusable="false"
+        height="24"
+        role="img"
+        tabindex="-1"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm1 8v2h10v-2H7z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="c3 c6"
         data-name="empty"
         fill="currentcolor"
         focusable="false"
