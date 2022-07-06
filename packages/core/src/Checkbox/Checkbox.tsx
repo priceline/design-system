@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styled, { withTheme } from 'styled-components'
-import { BoxChecked, BoxEmpty } from 'pcln-icons'
+import { BoxChecked, BoxEmpty, BoxMinus } from 'pcln-icons'
 import PropTypes, { InferProps } from 'prop-types'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const propTypes = {
   id: PropTypes.string.isRequired,
+  indeterminate: PropTypes.bool,
   size: PropTypes.number,
   onChange: PropTypes.func,
   color: deprecatedColorValue(),
@@ -31,12 +32,32 @@ const CheckBoxWrapper = styled.div`
   svg[data-name='checked'] {
     display: none;
   }
-  
+  svg[data-name='indeterminate'] {
+    display: none;
+  }
+
+  > input:indeterminate {
+    & ~ svg[data-name='indeterminate'] {
+      display: inline-block;
+      color: ${(props) =>
+        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
+    }
+    &:hover ~ svg[data-name='indeterminate'] {
+      color: ${(props) =>
+        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('dark')(props)};
+    }
+    & ~ svg[data-name='empty'] {
+      display: none;
+    }
+    & ~ svg[data-name='checked'] {
+      display: none;
+    }
+  }
   > input:hover ~ svg[data-name='empty'] {
     color: ${(props) =>
       props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
   }
-  
+
   > input {
     &:focus ~ svg {
       border: 1px solid ${getPaletteColor('border.base')};
@@ -54,7 +75,7 @@ const CheckBoxWrapper = styled.div`
     & ~ svg[data-name='empty'] {
       display: none;
     }
-    
+
     &:focus ~ svg {
       border: 1px solid ${getPaletteColor('base')};
       background-color: ${getPaletteColor('light')};
@@ -62,7 +83,8 @@ const CheckBoxWrapper = styled.div`
 
     &:hover ~ svg[data-name='checked'] {
       color: ${(props) =>
-        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('dark')(props)}
+        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('dark')(props)};
+    }
   }
 
   ${applyVariations('Checkbox')}
@@ -76,12 +98,16 @@ const StyledInput = styled.input`
 `
 
 const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
-  // eslint-disable-next-line react/prop-types
-  const { disabled, size } = props
+  const inputRef = useRef()
 
+  useEffect(() => {
+    inputRef.current.indeterminate = props.indeterminate
+  }, [props.indeterminate])
+
+  // eslint-disable-next-line react/prop-types
+  const { disabled, size, indeterminate } = props
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
   const borderAdjustedSize = size + 4
-
   return (
     <CheckBoxWrapper
       // eslint-disable-next-line react/prop-types
@@ -89,8 +115,23 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
       color={props.color}
       disabled={disabled}
     >
-      <StyledInput type='checkbox' {...props} role='checkbox' ref={ref} />
+      <StyledInput
+        type='checkbox'
+        {...props}
+        role='checkbox'
+        aria-checked={props.indeterminate ? 'mixed' : props.checked}
+        ref={(element: HTMLInputElement) => {
+          if (indeterminate && element) {
+            element.indeterminate = true
+          }
+          if (ref) {
+            ref.current = element
+          }
+          inputRef.current = element
+        }}
+      />
       <BoxChecked size={borderAdjustedSize} data-name='checked' />
+      <BoxMinus size={borderAdjustedSize} data-name='indeterminate' />
       <BoxEmpty size={borderAdjustedSize} data-name='empty' />
     </CheckBoxWrapper>
   )
@@ -101,6 +142,7 @@ Checkbox.displayName = 'Checkbox'
 Checkbox.propTypes = propTypes
 Checkbox.defaultProps = {
   size: 20,
+  indeterminate: false,
   color: 'primary',
 }
 

@@ -13,8 +13,7 @@ describe('Checkbox', () => {
 
   test('renders checked when defaultChecked prop is passed as true', () => {
     const { getByRole } = render(<Checkbox id='check-box' defaultChecked onChange={onChange} />)
-    const checkbox = getByRole('checkbox')
-    // @ts-ignore
+    const checkbox = getByRole('checkbox') as HTMLInputElement
     expect(checkbox.checked).toBe(true)
   })
 
@@ -35,5 +34,35 @@ describe('Checkbox', () => {
     const checkbox = container.querySelector('[type=checkbox]')
     fireEvent.click(checkbox)
     expect(onChange).toHaveBeenCalled()
+  })
+
+  it('renders an indeterminate checkbox that can be clicked to set checked to true', () => {
+    const { getByRole } = render(<Checkbox id='check-box' indeterminate onChange={onChange} />)
+    const checkbox = getByRole('checkbox') as HTMLInputElement
+
+    expect(checkbox.checked).toBe(false)
+    expect(checkbox.indeterminate).toBe(true)
+    fireEvent.click(checkbox)
+    expect(checkbox.checked).toBe(true)
+    expect(checkbox.indeterminate).toBe(false)
+  })
+  it('renders an indeterminate checkbox that can be clicked to set checked to false', () => {
+    const { getByRole } = render(<Checkbox id='check-box' indeterminate defaultChecked onChange={onChange} />)
+    const checkbox = getByRole('checkbox') as HTMLInputElement
+
+    expect(checkbox.checked).toBe(true)
+    expect(checkbox.indeterminate).toBe(true)
+    fireEvent.click(checkbox)
+    expect(checkbox.checked).toBe(false)
+    expect(checkbox.indeterminate).toBe(false)
+  })
+  it('correctly passes in the ref so that the underlying input element can be modified by the parent component if needed', () => {
+    const ref = React.createRef()
+    const { getByRole } = render(
+      <Checkbox id='check-box' ref={ref} indeterminate defaultChecked onChange={onChange} />
+    )
+    const checkbox = getByRole('checkbox') as HTMLInputElement
+
+    expect(ref.current.id).toBe(checkbox.id)
   })
 })
