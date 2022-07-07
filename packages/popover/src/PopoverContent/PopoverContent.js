@@ -26,7 +26,6 @@ const ContentContainer = styled.section`
 
 function PopoverContent({
   arrowRef,
-  attributes,
   borderColor,
   className,
   color = 'background.lightest',

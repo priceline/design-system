@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, react/prop-types */
+/* eslint-disable import/no-named-as-default, no-unused-vars, react/prop-types */
 import Component from '@reach/component-component'
 import { Description, Primary, Props, Subtitle, Title } from '@storybook/addon-docs/blocks'
 import {
@@ -28,7 +28,6 @@ export default {
     componentSubtitle: 'Used to display some content on top of another',
     docs: {
       // Customize Docs page to omit Stories slot due to broken styling from playground
-      // eslint-disable-next-line react/display-name
       page: () => (
         <>
           <Title />
