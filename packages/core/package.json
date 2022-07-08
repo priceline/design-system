@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "4.27.0-beta",
+  "version": "4.27.0",
   "description": "Priceline Design System",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
@@ -97,6 +97,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
+    "require-from-string": "2.0.2",
     "tslib": "^2.4.0",
     "rimraf": "^3.0.2",
     "styled-components": "^4.4.1",

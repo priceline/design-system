@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+
 import { createTextStyles } from '../utils/createTextStyles'
 import { createColorStyles } from '../utils/createColorStyles'
 import { createMediaQueries } from '../utils/createMediaQueries'

@@ -25,9 +25,12 @@ const ChangeDetector = ({ onSlideChange }) => {
     }
     carouselContext.subscribe(onChange)
     return () => carouselContext.unsubscribe(onChange)
-  }, [carouselContext])
+  }, [carouselContext, onSlideChange])
 
   return null
+}
+ChangeDetector.propTypes = {
+  onSlideChange: PropTypes.func,
 }
 
 export const Carousel = ({
