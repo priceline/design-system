@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Add currentSlide prop to Carousel",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
