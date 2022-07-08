@@ -1,6 +1,6 @@
 {
   "name": "pcln-carousel",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Priceline Design System Carousel Component",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -77,6 +77,6 @@
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">=4.4.1",
-    "pcln-design-system": "4.27.0"
+    "pcln-design-system": "4.28.0"
   }
 }
