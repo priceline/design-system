@@ -51,6 +51,7 @@ export const Carousel = ({
   sideButtonMargin = '-30px',
   sidePositionArrowButton,
   stretchSlideHeight = true,
+  currentSlide = 0,
   onSlideClick = () => {},
   onSlideKeyDown = () => {},
 }) => {
@@ -74,6 +75,7 @@ export const Carousel = ({
         lockOnWindowScroll={lockOnWindowScroll}
         orientation={orientation}
         infinite={infinite}
+        currentSlide={currentSlide}
       >
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
@@ -204,6 +206,8 @@ Carousel.propTypes = {
   sidePositionArrowButton: PropTypes.element,
   /** Set height of slides based on tallest slide */
   stretchSlideHeight: PropTypes.bool,
+  /** Set the initial visible slide (starts with 0) */
+  currentSlide: PropTypes.number,
   /** Custom onClick event handler for each Slide child */
   onSlideClick: PropTypes.func,
   /** Custom onKeyDown event handler for each Slide child */

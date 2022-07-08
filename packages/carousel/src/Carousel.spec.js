@@ -67,4 +67,15 @@ describe('Carousel', () => {
     expect(getByTestId('prev-bottom')).toBeInTheDocument()
     expect(getByTestId('next-bottom')).toBeInTheDocument()
   })
+
+  it('should start from the second slide', () => {
+    const { getByTestId } = render(
+      <Carousel layout='50-50' arrowsPosition='bottom' currentSlide={1}>
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    expect(getByTestId('slide-0').tabIndex).toBe(-1)
+  })
 })
