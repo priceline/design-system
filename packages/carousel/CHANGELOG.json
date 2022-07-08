@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.3.0",
+      "tag": "pcln-carousel_v1.3.0",
+      "date": "Fri, 08 Jul 2022 16:03:51 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add currentSlide prop to Carousel",
+            "author": "Ivan Valadares <104080527+ivan-valadares@users.noreply.github.com>",
+            "commit": "e5dd4eb49a9b896a7813e0c08d3c10225db55bc3"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.2.2",
       "tag": "pcln-carousel_v1.2.2",
       "date": "Fri, 08 Jul 2022 13:27:48 GMT",

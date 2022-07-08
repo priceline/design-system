@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Fri, 08 Jul 2022 13:27:48 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Jul 2022 16:03:51 GMT and should not be manually modified.
+
+## 1.3.0
+Fri, 08 Jul 2022 16:03:51 GMT
+
+### Minor changes
+
+- Add currentSlide prop to Carousel
 
 ## 1.2.2
 Fri, 08 Jul 2022 13:27:48 GMT
