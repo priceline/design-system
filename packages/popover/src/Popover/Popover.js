@@ -3,10 +3,20 @@ import PropTypes from 'prop-types'
 import { arrow, flip, offset, shift, useFloating } from '@floating-ui/react-dom'
 import { deprecatedPropType } from 'pcln-design-system'
 import PopoverContent from '../PopoverContent'
+import getPopoverStyles from '../getPopoverStyles'
 
 function Popover({ ariaLabel, children, isOpen, onOpen, onClose, placement, ...props }) {
   const arrowRef = useRef(null)
-  const { placement: actualPlacement, strategy, x, y, floating, reference, middlewareData } = useFloating({
+  const {
+    placement: actualPlacement,
+    refs,
+    strategy,
+    x,
+    y,
+    floating,
+    reference,
+    middlewareData,
+  } = useFloating({
     placement,
     middleware: [arrow({ element: arrowRef }), flip(), offset(8), shift({ padding: 8 })],
   })
@@ -27,29 +37,7 @@ function Popover({ ariaLabel, children, isOpen, onOpen, onClose, placement, ...p
     if (onClose) onClose(e)
   }
 
-  const side = actualPlacement.split('-')[0]
-
-  const staticSide = {
-    top: 'bottom',
-    right: 'left',
-    bottom: 'top',
-    left: 'right',
-  }[side]
-
-  const styles = {
-    arrow: {
-      top: side === 'left' || side === 'right' ? arrowY ?? 0 : null,
-      left: side === 'top' || side === 'bottom' ? arrowX ?? 0 : null,
-      right: '',
-      bottom: '',
-      [staticSide]: '3px',
-    },
-    popper: {
-      position: strategy,
-      top: y ?? 0,
-      left: x ?? 0,
-    },
-  }
+  const styles = getPopoverStyles({ arrowX, arrowY, placement: actualPlacement, refs, strategy, x, y })
 
   return (
     <>
