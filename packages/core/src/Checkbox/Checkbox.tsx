@@ -150,7 +150,7 @@ Checkbox.defaultProps = {
   size: 20,
   indeterminate: false,
   color: 'primary',
-  unselectedColor: 'text.base',
+  unselectedColor: 'text.light',
 }
 
 export default withTheme(Checkbox)
