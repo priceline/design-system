@@ -75,7 +75,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 }
 
 .c1 > input ~ svg[data-name='empty'] {
-  color: #0068ef;
+  color: #c0cad5;
 }
 
 .c1 > input:focus ~ svg {
@@ -269,7 +269,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 }
 
 .c1 > input ~ svg[data-name='empty'] {
-  color: #0068ef;
+  color: #c0cad5;
 }
 
 .c1 > input:focus ~ svg {
