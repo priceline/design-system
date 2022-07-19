@@ -1,9 +1,9 @@
-function getPopoverStyles({ arrowX, arrowY, placement, refs, strategy, x, y }) {
+function getPopoverStyles({ arrowX, arrowY, placement = 'top', refs, strategy = 'absolute', x, y }) {
   const arrowWidthOffset = refs?.reference?.current?.offsetWidth / 2
   const arrowHeightOffset = refs?.reference?.current?.offsetHeight / 2
 
   const [side, startOrEnd] = placement.split('-')
-  const staticSide = {
+  const oppositeSide = {
     top: 'bottom',
     right: 'left',
     bottom: 'top',
@@ -17,32 +17,32 @@ function getPopoverStyles({ arrowX, arrowY, placement, refs, strategy, x, y }) {
 
   if (side === 'top' || side === 'bottom') {
     if (startOrEnd === 'start') {
-      arrowLeft = arrowX + arrowWidthOffset
+      arrowLeft = arrowX ? arrowX + arrowWidthOffset : 0
       left = x ? x - arrowWidthOffset : 0
     } else if (startOrEnd === 'end') {
-      arrowLeft = arrowX - arrowWidthOffset
+      arrowLeft = arrowX ? arrowX - arrowWidthOffset : 0
       left = x ? x + arrowWidthOffset : 0
     }
   }
 
   if (side === 'left' || side === 'right') {
     if (startOrEnd === 'start') {
-      arrowTop = arrowY + arrowHeightOffset
+      arrowTop = arrowY ? arrowY + arrowHeightOffset : 0
       top = y ? y - arrowHeightOffset : 0
     } else if (startOrEnd === 'end') {
-      arrowTop = arrowY - arrowHeightOffset
+      arrowTop = arrowY ? arrowY - arrowHeightOffset : 0
       top = y ? y + arrowHeightOffset : 0
     }
   }
 
   if (side === 'top') {
-    arrowTop = arrowY - arrowHeightOffset
+    arrowTop = arrowY ? arrowY - arrowHeightOffset : 0
   } else if (side === 'bottom') {
-    arrowTop = arrowY + arrowHeightOffset
+    arrowTop = arrowY ? arrowY + arrowHeightOffset : 0
   } else if (side === 'left') {
-    arrowLeft = arrowX + arrowWidthOffset
+    arrowLeft = arrowX ? arrowX + arrowWidthOffset : 0
   } else if (side === 'right') {
-    arrowLeft = arrowX - arrowWidthOffset
+    arrowLeft = arrowX ? arrowX - arrowWidthOffset : 0
   }
 
   return {
@@ -51,7 +51,7 @@ function getPopoverStyles({ arrowX, arrowY, placement, refs, strategy, x, y }) {
       left: arrowLeft,
       right: '',
       bottom: '',
-      [staticSide]: '3px',
+      [oppositeSide]: '3px',
     },
     popover: {
       position: strategy,
