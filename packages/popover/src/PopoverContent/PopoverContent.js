@@ -110,7 +110,7 @@ function PopoverContent({
         <ThemeConsumer>
           {(theme) => (
             <ThemeProvider theme={theme}>
-              <ContentContainer {...styleProps} tabIndex='-1'>
+              <ContentContainer {...styleProps} tabIndex='-1' data-testid='popover-content-container'>
                 <Box
                   borderRadius='xl'
                   color={color ?? 'background.lightest'}
