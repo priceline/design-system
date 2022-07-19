@@ -1,52 +1,30 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { arrow, flip, offset, shift, useFloating } from '@floating-ui/react-dom'
 import { deprecatedPropType } from 'pcln-design-system'
 import PopoverContent from '../PopoverContent'
-import getPopoverStyles from '../getPopoverStyles'
+import usePopover from '../usePopover'
 
 function Popover({ ariaLabel, children, isOpen, onOpen, onClose, placement, ...props }) {
-  const arrowRef = useRef(null)
   const {
+    arrowRef,
+    isPopoverOpen,
     placement: actualPlacement,
-    refs,
-    strategy,
-    x,
-    y,
+    styles,
     floating,
     reference,
-    middlewareData,
-  } = useFloating({
-    placement,
-    middleware: [arrow({ element: arrowRef }), flip(), offset(8), shift({ padding: 8 })],
-  })
-  const { x: arrowX, y: arrowY } = middlewareData?.arrow || {}
-
-  const [isPopoverOpen, setIsPopoverOpen] = useState(isOpen)
-
-  const handleToggle = (evt) => {
-    setIsPopoverOpen((isOpen) => {
-      setIsPopoverOpen(!isOpen)
-
-      isOpen ? onClose?.(evt) : onOpen?.(evt)
-    })
-  }
-
-  const handleClose = (e) => {
-    setIsPopoverOpen(false)
-    if (onClose) onClose(e)
-  }
-
-  const styles = getPopoverStyles({ arrowX, arrowY, placement: actualPlacement, refs, strategy, x, y })
+    handleClose,
+    handleToggle,
+  } = usePopover({ isOpen, placement, onClose, onOpen })
 
   return (
     <>
-      {React.cloneElement(children, {
-        'aria-label': ariaLabel,
-        type: 'button',
-        ref: reference,
-        onClick: handleToggle,
-      })}
+      {children &&
+        React.cloneElement(children, {
+          'aria-label': ariaLabel,
+          type: 'button',
+          ref: reference,
+          onClick: handleToggle,
+        })}
       {isPopoverOpen && (
         <PopoverContent
           {...props}
