@@ -8,7 +8,9 @@ import FocusLock from 'react-focus-lock'
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
 
-const PopperGuide = styled(Box)`
+const ESCAPE_KEY = 27
+
+const PopoverGuide = styled(Box)`
   z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
   max-width: ${({ width }) => (typeof width === 'number' ? `${width}px` : width)};
   width: 100%;
@@ -28,7 +30,7 @@ function PopoverContent({
   arrowRef,
   borderColor,
   className,
-  color = 'background.lightest',
+  color,
   idx,
   onCloseRequest,
   overlayOpacity,
@@ -37,25 +39,18 @@ function PopoverContent({
   trapFocus,
   hideArrow,
   hideOverlay,
-  popperRef,
+  popoverRef,
   styles,
   width,
   zIndex,
   ...props
 }) {
   const handleKeyUp = useCallback(
-    (e) => {
-      const keys = {
-        // Target ESC key
-        27: () => {
-          onCloseRequest(e)
-        },
-      }
-
-      if (keys[e.keyCode]) {
-        e.stopPropagation()
-        e.preventDefault()
-        keys[e.keyCode]()
+    (evt) => {
+      if (evt.keyCode === ESCAPE_KEY) {
+        evt.stopPropagation()
+        evt.preventDefault()
+        onCloseRequest(evt)
       }
     },
     [onCloseRequest]
@@ -75,7 +70,7 @@ function PopoverContent({
       if (color) {
         borderColorName = color
       } else {
-        borderColorName = 'border.base'
+        borderColorName = 'border'
       }
     }
 
@@ -102,13 +97,13 @@ function PopoverContent({
 
   return ReactDOM.createPortal(
     <>
-      <PopperGuide
+      <PopoverGuide
         aria-describedby={`dialog-description-${idx}`}
         className={className}
         data-placement={placement}
-        ref={popperRef}
+        ref={popoverRef}
         role='dialog'
-        style={styles?.popper}
+        style={styles?.popover}
         {...styleProps}
         {...props}
       >
@@ -118,7 +113,7 @@ function PopoverContent({
               <ContentContainer {...styleProps} tabIndex='-1'>
                 <Box
                   borderRadius='xl'
-                  color={color}
+                  color={color ?? 'background.lightest'}
                   data-testid='dialog-content'
                   id={`popover-description-${idx}`}
                   tabIndex='-1'
@@ -132,13 +127,13 @@ function PopoverContent({
         {!hideArrow && (
           <PopoverArrow
             borderColor={styleProps.borderColor}
-            color={color}
+            color={color ?? 'background.lightest'}
             placement={placement}
             ref={arrowRef}
             style={styles?.arrow}
           />
         )}
-      </PopperGuide>
+      </PopoverGuide>
       {!hideOverlay && (
         <Overlay handleClick={onCloseRequest} overlayOpacity={overlayOpacity} zIndex={zIndex - 1} />
       )}

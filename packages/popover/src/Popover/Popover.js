@@ -4,7 +4,7 @@ import { deprecatedPropType } from 'pcln-design-system'
 import PopoverContent from '../PopoverContent'
 import usePopover from '../usePopover'
 
-function Popover({ ariaLabel, children, isOpen, onOpen, onClose, placement, ...props }) {
+function Popover({ ariaLabel, children, isOpen, openOnMount, placement, onOpen, onClose, ...props }) {
   const {
     arrowRef,
     isPopoverOpen,
@@ -14,7 +14,7 @@ function Popover({ ariaLabel, children, isOpen, onOpen, onClose, placement, ...p
     reference,
     handleClose,
     handleToggle,
-  } = usePopover({ isOpen, placement, onClose, onOpen })
+  } = usePopover({ openOnMount, placement, onClose, onOpen })
 
   return (
     <>
@@ -25,12 +25,12 @@ function Popover({ ariaLabel, children, isOpen, onOpen, onClose, placement, ...p
           ref: reference,
           onClick: handleToggle,
         })}
-      {isPopoverOpen && (
+      {(isPopoverOpen || isOpen) && (
         <PopoverContent
           {...props}
           arrowRef={arrowRef}
           placement={actualPlacement}
-          popperRef={floating}
+          popoverRef={floating}
           styles={styles}
           onCloseRequest={handleClose}
         />

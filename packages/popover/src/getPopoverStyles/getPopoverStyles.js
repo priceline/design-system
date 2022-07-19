@@ -53,7 +53,7 @@ function getPopoverStyles({ arrowX, arrowY, placement, refs, strategy, x, y }) {
       bottom: '',
       [staticSide]: '3px',
     },
-    popper: {
+    popover: {
       position: strategy,
       top,
       left,
