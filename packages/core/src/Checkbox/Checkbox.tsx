@@ -62,7 +62,7 @@ const CheckBoxWrapper = styled.div`
   > input {
     & ~ svg[data-name='empty'] {
       color: ${(props) =>
-        props.disabled ? getPaletteColor('border.base') : getPaletteColor(props.unselectedColor)};
+        props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor(props.unselectedColor)};
     }
     &:focus ~ svg {
       border: 1px solid ${getPaletteColor('border.base')};
