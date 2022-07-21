@@ -170,19 +170,6 @@ export const filterChips = () => (
   </Popover>
 )
 
-export const openByDefault = () => (
-  <Popover
-    renderContent={InnerContent}
-    placement='bottom'
-    ariaLabel='Bottom Popover'
-    idx={2}
-    width={400}
-    // openOnMount
-  >
-    <Link m={3}>Open Popover</Link>
-  </Popover>
-)
-
 export const bottom = () => (
   <Popover renderContent={InnerContent} placement='bottom' ariaLabel='Bottom Popover' idx={2} width={400}>
     <Link m={3}>Open Popover</Link>
@@ -234,10 +221,6 @@ export const hideArrow = () => (
     <Button>Popover</Button>
   </Popover>
 )
-
-const StyledBox = styled(Box)`
-  border-top: 1px solid ${getPaletteColor('border.base')};
-`
 
 const SimpleTextContent = () => (
   <Box p={2}>
