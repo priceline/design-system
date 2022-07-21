@@ -36,13 +36,13 @@ function getPopoverStyles({ arrowX, arrowY, placement = 'top', refs, strategy = 
   }
 
   if (side === 'top') {
-    arrowTop = arrowY ? arrowY - arrowHeightOffset : 0
+    arrowTop = ''
   } else if (side === 'bottom') {
-    arrowTop = arrowY ? arrowY + arrowHeightOffset : 0
+    arrowTop = ''
   } else if (side === 'left') {
-    arrowLeft = arrowX ? arrowX + arrowWidthOffset : 0
+    arrowLeft = ''
   } else if (side === 'right') {
-    arrowLeft = arrowX ? arrowX - arrowWidthOffset : 0
+    arrowLeft = ''
   }
 
   return {

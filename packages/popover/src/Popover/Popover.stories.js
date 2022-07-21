@@ -170,19 +170,6 @@ export const filterChips = () => (
   </Popover>
 )
 
-export const forcedOpenViaProp = () => (
-  <Popover
-    renderContent={InnerContent}
-    placement='bottom'
-    ariaLabel='Bottom Popover'
-    idx={2}
-    width={400}
-    isOpen
-  >
-    <Link m={3}>Open Popover</Link>
-  </Popover>
-)
-
 export const openByDefault = () => (
   <Popover
     renderContent={InnerContent}
@@ -190,7 +177,7 @@ export const openByDefault = () => (
     ariaLabel='Bottom Popover'
     idx={2}
     width={400}
-    openOnMount
+    // openOnMount
   >
     <Link m={3}>Open Popover</Link>
   </Popover>
@@ -300,7 +287,7 @@ export const PassesThemeToContent = () => {
         idx={2}
         width={400}
         borderColor='border.base'
-        isOpen
+        // isOpen
       >
         <Text color={'primary.base'}>hello world</Text>
       </Popover>

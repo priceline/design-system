@@ -16,7 +16,7 @@ describe('getPopoverStyles', () => {
     it('creates styles for middle placement', () => {
       const styles = getPopoverStyles({ ...props })
       expect(styles.arrow).toStrictEqual({
-        top: 0,
+        top: '',
         left: 5,
         right: '',
         bottom: '3px',
@@ -31,7 +31,7 @@ describe('getPopoverStyles', () => {
     it('creates styles for start placement', () => {
       const styles = getPopoverStyles({ ...props, placement: 'top-start' })
       expect(styles.arrow).toStrictEqual({
-        top: 0,
+        top: '',
         left: 15,
         right: '',
         bottom: '3px',
@@ -46,7 +46,7 @@ describe('getPopoverStyles', () => {
     it('creates styles for end placement', () => {
       const styles = getPopoverStyles({ ...props, placement: 'top-end' })
       expect(styles.arrow).toStrictEqual({
-        top: 0,
+        top: '',
         left: -5,
         right: '',
         bottom: '3px',
@@ -61,7 +61,7 @@ describe('getPopoverStyles', () => {
     it('returns styles when popover is not open yet', () => {
       const styles = getPopoverStyles({ placement: 'top-start', strategy: 'absolute' })
       expect(styles.arrow).toStrictEqual({
-        top: 0,
+        top: '',
         left: 0,
         right: '',
         bottom: '3px',
@@ -141,7 +141,7 @@ describe('getPopoverStyles', () => {
       const styles = getPopoverStyles({ ...props, placement: 'left' })
       expect(styles.arrow).toStrictEqual({
         top: 10,
-        left: 15,
+        left: '',
         right: '3px',
         bottom: '',
       })
@@ -156,7 +156,7 @@ describe('getPopoverStyles', () => {
       const styles = getPopoverStyles({ ...props, placement: 'left-start' })
       expect(styles.arrow).toStrictEqual({
         top: 20,
-        left: 15,
+        left: '',
         right: '3px',
         bottom: '',
       })
@@ -171,7 +171,7 @@ describe('getPopoverStyles', () => {
       const styles = getPopoverStyles({ ...props, placement: 'left-end' })
       expect(styles.arrow).toStrictEqual({
         top: 0,
-        left: 15,
+        left: '',
         right: '3px',
         bottom: '',
       })
@@ -186,7 +186,7 @@ describe('getPopoverStyles', () => {
       const styles = getPopoverStyles({ placement: 'left-start', strategy: 'absolute' })
       expect(styles.arrow).toStrictEqual({
         top: 0,
-        left: 0,
+        left: '',
         right: '3px',
         bottom: '',
       })

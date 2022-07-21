@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent, getByRole } from 'testing-library'
+import { render, fireEvent, screen } from 'testing-library'
 import { Box, Button, Text, ThemeProvider } from 'pcln-design-system'
 
 import Popover from './Popover'
@@ -99,14 +99,15 @@ describe('Popover', () => {
       expect(queryByText('Hello there!')).toBeFalsy()
     })
 
-    it('pressing ESC key, closes popover', () => {
+    it('pressing ESC key, closes popover', async () => {
       const { getByText, queryByText } = render(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
       )
       fireEvent.click(getByText(triggerButtonText))
-      fireEvent.keyUp(document.body, {
+      const dialog = await screen.findByRole('dialog')
+      fireEvent.keyUp(dialog, {
         key: 'Escape',
         keyCode: 27,
         which: 27,
@@ -114,14 +115,15 @@ describe('Popover', () => {
       expect(queryByText('Hello there!')).toBeFalsy()
     })
 
-    it('pressing any other key, does not close popover', () => {
+    it('pressing any other key, does not close popover', async () => {
       const { getByText } = render(
         <Popover {...popoverProps}>
           <button>{triggerButtonText}</button>
         </Popover>
       )
       fireEvent.click(getByText(triggerButtonText))
-      fireEvent.keyUp(document.body, {
+      const dialog = await screen.findByRole('dialog')
+      fireEvent.keyUp(dialog, {
         key: 'Enter',
         keyCode: 13,
         which: 13,
@@ -143,7 +145,7 @@ describe('Popover', () => {
       expect(mockOnOpen).toHaveBeenCalledWith(expect.objectContaining({ type: 'click' }))
     })
 
-    it('onClose event', () => {
+    it('onClose event', async () => {
       const mockOnClose = jest.fn()
       const { getByText } = render(
         <Popover {...popoverProps} onClose={mockOnClose}>
@@ -153,7 +155,8 @@ describe('Popover', () => {
 
       fireEvent.click(getByText(triggerButtonText))
       expect(mockOnClose).toHaveBeenCalledTimes(0)
-      fireEvent.keyUp(document.body, {
+      const dialog = await screen.findByRole('dialog')
+      fireEvent.keyUp(dialog, {
         key: 'Escape',
         keyCode: 27,
         which: 27,
@@ -164,60 +167,65 @@ describe('Popover', () => {
   })
 
   describe('UI Positioning', () => {
-    it('Bottom', () => {
+    it('Bottom', async () => {
       const { getByText } = render(
         <Popover {...popoverProps} placement='bottom'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
+      const dialog = await screen.findByRole('dialog')
+      expect(dialog).toMatchSnapshot()
     })
 
-    it('Bottom End', () => {
+    it('Bottom End', async () => {
       const { getByText } = render(
         <Popover {...popoverProps} placement='bottom-end'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
+      const dialog = await screen.findByRole('dialog')
+      expect(dialog).toMatchSnapshot()
     })
 
-    it('Bottom Start', () => {
+    it('Bottom Start', async () => {
       const { getByText } = render(
         <Popover {...popoverProps} placement='bottom-start'>
           <button>{triggerButtonText}</button>
         </Popover>
       )
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByRole(document.body, 'dialog')).toMatchSnapshot()
+      const dialog = await screen.findByRole('dialog')
+      expect(dialog).toMatchSnapshot()
     })
   })
 
   describe('colors', () => {
-    it('renders with background.lightest color as default', () => {
-      const { getByText, getByTestId } = render(
+    it('renders with background.lightest color as default', async () => {
+      const { getByText } = render(
         <Popover {...popoverProps}>
           <Button>{triggerButtonText}</Button>
         </Popover>
       )
 
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByTestId('dialog-content')).toHaveStyle({
+      const dialog = await screen.findByTestId('dialog-content')
+      expect(dialog).toHaveStyle({
         'background-color': '#FFF',
       })
     })
 
-    it('renders with error color as default', () => {
-      const { getByText, getByTestId } = render(
+    it('renders with error color as default', async () => {
+      const { getByText } = render(
         <Popover {...popoverProps} color='error'>
           <Button>{triggerButtonText}</Button>
         </Popover>
       )
 
       fireEvent.click(getByText(triggerButtonText))
-      expect(getByTestId('dialog-content')).toHaveStyle({
+      const dialog = await screen.findByTestId('dialog-content')
+      expect(dialog).toHaveStyle({
         'background-color': '#C00',
       })
     })
