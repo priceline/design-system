@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.29.0",
+      "tag": "pcln-design-system_v4.29.0",
+      "date": "Thu, 21 Jul 2022 14:38:24 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "added prop for unselected checkbox color",
+            "author": "anjorinio <108364855+anjorinio@users.noreply.github.com>",
+            "commit": "37b6d35ab3614cc546bbff9b54d82661373d0ea8"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.28.0",
       "tag": "pcln-design-system_v4.28.0",
       "date": "Fri, 08 Jul 2022 13:27:48 GMT",

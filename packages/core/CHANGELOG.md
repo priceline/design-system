@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 08 Jul 2022 13:27:48 GMT and should not be manually modified.
+This log was last generated on Thu, 21 Jul 2022 14:38:24 GMT and should not be manually modified.
+
+## 4.29.0
+Thu, 21 Jul 2022 14:38:24 GMT
+
+### Minor changes
+
+- added prop for unselected checkbox color
 
 ## 4.28.0
 Fri, 08 Jul 2022 13:27:48 GMT
