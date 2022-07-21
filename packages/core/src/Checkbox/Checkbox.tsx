@@ -10,6 +10,7 @@ const propTypes = {
   size: PropTypes.number,
   onChange: PropTypes.func,
   color: deprecatedColorValue(),
+  unselectedColor: PropTypes.string,
 }
 
 const CheckBoxWrapper = styled.div`
@@ -59,6 +60,10 @@ const CheckBoxWrapper = styled.div`
   }
 
   > input {
+    & ~ svg[data-name='empty'] {
+      color: ${(props) =>
+        props.disabled ? getPaletteColor('border.base') : getPaletteColor(props.unselectedColor)};
+    }
     &:focus ~ svg {
       border: 1px solid ${getPaletteColor('border.base')};
       background-color: ${getPaletteColor('background.light')};
@@ -105,7 +110,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
   }, [props.indeterminate])
 
   // eslint-disable-next-line react/prop-types
-  const { disabled, size, indeterminate } = props
+  const { disabled, size, indeterminate, unselectedColor } = props
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
   const borderAdjustedSize = size + 4
   return (
@@ -114,6 +119,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
       theme={props.theme}
       color={props.color}
       disabled={disabled}
+      unselectedColor={unselectedColor}
     >
       <StyledInput
         type='checkbox'
@@ -144,6 +150,7 @@ Checkbox.defaultProps = {
   size: 20,
   indeterminate: false,
   color: 'primary',
+  unselectedColor: 'text.light',
 }
 
 export default withTheme(Checkbox)

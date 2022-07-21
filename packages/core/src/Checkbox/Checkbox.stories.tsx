@@ -116,7 +116,7 @@ export const CheckboxStates = () => {
     <div>
       <Wrapper>
         <StyledLabel htmlFor='unchecked_box'>
-          <Checkbox id='unchecked_box' onChange={checkAction} />
+          <Checkbox id='unchecked_box' onChange={checkAction} unselectedColor='text.light' />
           Unchecked by default
         </StyledLabel>
       </Wrapper>

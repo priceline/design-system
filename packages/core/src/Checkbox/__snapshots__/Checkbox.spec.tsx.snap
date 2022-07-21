@@ -74,6 +74,10 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   color: #c0cad5;
 }
 
+.c1 > input ~ svg[data-name='empty'] {
+  color: #c0cad5;
+}
+
 .c1 > input:focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
@@ -264,6 +268,10 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   color: #c0cad5;
 }
 
+.c1 > input ~ svg[data-name='empty'] {
+  color: #c0cad5;
+}
+
 .c1 > input:focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
@@ -451,6 +459,10 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
 
 .c1 > input:hover ~ svg[data-name='empty'] {
   color: #0068ef;
+}
+
+.c1 > input ~ svg[data-name='empty'] {
+  color: #4f6f8f;
 }
 
 .c1 > input:focus ~ svg {

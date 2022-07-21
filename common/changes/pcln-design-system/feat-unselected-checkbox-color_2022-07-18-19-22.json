@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "added prop for unselected checkbox color",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
