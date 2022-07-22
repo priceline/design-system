@@ -151,6 +151,12 @@ exports[`Popover UI Positioning Bottom 1`] = `
   max-width: 100%;
 }
 
+@media (max-width:640px) {
+  .c0 {
+    left: 0 !important;
+  }
+}
+
 <div
   aria-describedby="dialog-description-1"
   class="c0"
@@ -263,6 +269,12 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   max-width: 100%;
 }
 
+@media (max-width:640px) {
+  .c0 {
+    left: 0 !important;
+  }
+}
+
 <div
   aria-describedby="dialog-description-1"
   class="c0"
@@ -373,6 +385,12 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+}
+
+@media (max-width:640px) {
+  .c0 {
+    left: 0 !important;
+  }
 }
 
 <div

@@ -30,15 +30,16 @@ function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, s
     }
   }, [])
 
-  const ClickableNode = (props) =>
+  const ClickableNode = React.forwardRef((props, ref) =>
     buttonNode ? (
-      React.cloneElement(buttonNode, { onKeyDown, ...props })
+      React.cloneElement(buttonNode, { ref, onKeyDown, ...props })
     ) : (
-      <LinkButton variation='link' {...props} p={2} {...buttonProps} onKeyDown={onKeyDown}>
+      <LinkButton ref={ref} variation='link' {...props} p={2} {...buttonProps} onKeyDown={onKeyDown}>
         {buttonText}
         <ChevronDown ml={1} />
       </LinkButton>
     )
+  )
 
   return (
     <Popover
@@ -46,7 +47,7 @@ function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, s
       trapFocus
       width={width}
       zIndex={1600}
-      placement='bottom'
+      placement='bottom-start'
       aria-controls={id}
       renderContent={MenuContent}
       {...props}

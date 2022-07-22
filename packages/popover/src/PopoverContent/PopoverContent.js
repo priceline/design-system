@@ -15,6 +15,10 @@ const PopoverGuide = styled(Box)`
   max-width: ${({ width }) => (typeof width === 'number' ? `${width}px` : width)};
   width: 100%;
   box-sizing: border-box;
+
+  @media (max-width: 640px) {
+    left: 0 !important;
+  }
 `
 const ContentContainer = styled.section`
   box-shadow: 0 0 0 1px ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
