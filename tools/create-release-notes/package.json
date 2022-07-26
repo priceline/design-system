@@ -21,6 +21,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "@actions/core": "^1.6.0",
     "@microsoft/rush-lib": "^5.59.2",
     "@priceline/eslint-config": "workspace:*",
     "@types/yargs": "^17.0.8",

@@ -414,6 +414,11 @@
       "shouldPublish": false
     },
     {
+      "packageName": "@priceline/project-change-analyzer",
+      "projectFolder": "tools/project-change-analyzer",
+      "shouldPublish": false
+    },
+    {
       "packageName": "@priceline/storybook-preset",
       "projectFolder": "tools/storybook-preset",
       "shouldPublish": false,

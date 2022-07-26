@@ -146,6 +146,14 @@
       "description": "Create release notes from changelogs",
       "safeForSimultaneousRushProcesses": false,
       "shellCommand": "cd tools/create-release-notes && node dist/cli/releaseNotes.js"
+    },
+    {
+      "name": "list-changed-packages",
+      "commandKind": "global",
+      "summary": "Lists the projects that have changes and set GHA output",
+      "description": "Lists the projects that have changes and set GHA output",
+      "safeForSimultaneousRushProcesses": false,
+      "shellCommand": "cd tools/project-change-analyzer && node dist/getChangedProjects/getChangedProjects.js"
     }
 
     // {
