@@ -6,6 +6,8 @@ exports[`BlockLink renders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #0068ef;
+  font-size: 16px;
+  font-weight: normal;
   display: block;
   color: inherit;
   -webkit-text-decoration: none;
@@ -21,6 +23,8 @@ exports[`BlockLink renders 1`] = `
 <a
   className="c0"
   color="primary"
+  fontSize={2}
+  fontWeight="normal"
   rel={null}
   size="medium"
 >

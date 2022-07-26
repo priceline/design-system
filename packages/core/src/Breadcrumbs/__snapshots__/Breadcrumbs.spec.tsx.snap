@@ -29,6 +29,8 @@ exports[`Breadcrumbs renders basic 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #4f6f8f;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c2:hover {
@@ -42,6 +44,8 @@ exports[`Breadcrumbs renders basic 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #001023;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c4:hover {
@@ -59,6 +63,8 @@ exports[`Breadcrumbs renders basic 1`] = `
     <a
       className="c2"
       color="text.light"
+      fontSize={2}
+      fontWeight="normal"
       href="https://www.priceline.com"
       rel={null}
       size="medium"
@@ -78,6 +84,8 @@ exports[`Breadcrumbs renders basic 1`] = `
     <a
       className="c2"
       color="text.light"
+      fontSize={2}
+      fontWeight="normal"
       href="https://www.priceline.com/flights/"
       rel={null}
       size="medium"
@@ -97,6 +105,8 @@ exports[`Breadcrumbs renders basic 1`] = `
     <a
       className="c4"
       color="text.dark"
+      fontSize={2}
+      fontWeight="normal"
       href="https://www.priceline.com/flights/"
       rel={null}
       size="medium"
@@ -168,6 +178,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #4f6f8f;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c4:hover {
@@ -181,6 +193,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #001023;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c9:hover {
@@ -215,6 +229,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
     <a
       className="c4"
       color="text.light"
+      fontSize={2}
+      fontWeight="normal"
       href="https://www.priceline.com"
       rel={null}
       size="medium"
@@ -251,6 +267,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
     <a
       className="c4"
       color="text.light"
+      fontSize={2}
+      fontWeight="normal"
       href="https://www.priceline.com/flights/"
       rel={null}
       size="medium"
@@ -287,6 +305,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
     <a
       className="c9"
       color="text.dark"
+      fontSize={2}
+      fontWeight="normal"
       href="https://www.priceline.com/flights/"
       rel={null}
       size="medium"

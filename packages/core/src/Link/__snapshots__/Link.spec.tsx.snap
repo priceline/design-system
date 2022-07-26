@@ -7,6 +7,8 @@ exports[`Link should add rel="noopener" when target="_blank" 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #0068ef;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c1:hover {
@@ -31,6 +33,8 @@ exports[`Link should add rel="noopener" when target="_blank" 1`] = `
     <a
       class="c1"
       color="primary"
+      font-size="2"
+      font-weight="normal"
       rel="noopener"
       target="_blank"
     >
@@ -47,6 +51,8 @@ exports[`Link should not add rel="noopener" when target is not "_blank" 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #0068ef;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c1:hover {
@@ -71,6 +77,8 @@ exports[`Link should not add rel="noopener" when target is not "_blank" 1`] = `
     <a
       class="c1"
       color="primary"
+      font-size="2"
+      font-weight="normal"
     >
       Dummy
     </a>
@@ -85,6 +93,8 @@ exports[`Link should render correctly with no props without throwing 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #0068ef;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c1:hover {
@@ -109,6 +119,8 @@ exports[`Link should render correctly with no props without throwing 1`] = `
     <a
       class="c1"
       color="primary"
+      font-size="2"
+      font-weight="normal"
     >
       Dummy
     </a>

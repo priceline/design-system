@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
-import { width, space } from 'styled-system'
+import { fontSize, fontWeight, width, space } from 'styled-system'
 
 import { buttonStyles } from '../Button'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
@@ -34,6 +34,7 @@ const variations = {
 }
 
 const propTypes = {
+  ...fontSize.propTypes,
   color: deprecatedColorValue(),
   variation: PropTypes.oneOf(Object.keys(variations)),
 }
@@ -44,13 +45,15 @@ const Link: React.FC<InferProps<typeof propTypes>> = styled.a.attrs(({ target, .
   ...props,
 }))`
   ${applyVariations('Link', variations)}
-  ${width} ${space};
+  ${fontSize} ${fontWeight} ${width} ${space};
 `
 
 Link.displayName = 'Link'
 
 Link.defaultProps = {
   color: 'primary',
+  fontSize: 2,
+  fontWeight: 'normal',
   variation: 'link',
   size: 'medium',
 }
