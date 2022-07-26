@@ -270,7 +270,6 @@ export const PassesThemeToContent = () => {
         idx={2}
         width={400}
         borderColor='border.base'
-        // isOpen
       >
         <Text color={'primary.base'}>hello world</Text>
       </Popover>
