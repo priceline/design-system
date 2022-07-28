@@ -4,7 +4,7 @@ import Menu from './Menu'
 import MenuItem from '../MenuItem'
 
 describe('Menu', () => {
-  it('renders a menu', () => {
+  it('renders a menu', async () => {
     const onItemOneClick = jest.fn()
     const onItemTwoClick = jest.fn()
 
@@ -17,16 +17,20 @@ describe('Menu', () => {
 
     fireEvent.click(screen.getByText('Click Me'))
     expect(onItemOneClick).toHaveBeenCalledTimes(0)
-    fireEvent.click(screen.getByText('Item One'))
+
+    const itemOne = await screen.findByText('Item One')
+    fireEvent.click(itemOne)
     expect(onItemOneClick).toHaveBeenCalledTimes(1)
 
     fireEvent.click(screen.getByText('Click Me'))
     expect(onItemTwoClick).toHaveBeenCalledTimes(0)
-    fireEvent.click(screen.getByText('Item Two'))
+
+    const itemTwo = await screen.findByText('Item Two')
+    fireEvent.click(itemTwo)
     expect(onItemTwoClick).toHaveBeenCalledTimes(1)
   })
 
-  it('is a11y friendly', () => {
+  it('is a11y friendly', async () => {
     render(
       <Menu id='menu' idx='1' buttonText='Click Me'>
         <MenuItem selected>Item One</MenuItem>
@@ -39,25 +43,31 @@ describe('Menu', () => {
       code: 'ArrowDown',
     })
 
-    expect(screen.getByText('Item One').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('listbox'), {
+    const listBox = await screen.findByRole('listbox')
+    let itemOne = await screen.findByText('Item One')
+    const itemTwo = await screen.findByText('Item Two')
+
+    expect(itemOne.parentNode).toHaveFocus()
+    fireEvent.keyDown(listBox, {
       key: 'ArrowDown',
       code: 'ArrowDown',
     })
-    expect(screen.getByText('Item Two').parentNode).toHaveFocus()
-    fireEvent.keyDown(screen.getByRole('listbox'), {
+    expect(itemTwo.parentNode).toHaveFocus()
+    fireEvent.keyDown(listBox, {
       key: 'ArrowUp',
       code: 'ArrowUp',
     })
-    expect(screen.getByText('Item One').parentNode).toHaveFocus()
-    fireEvent.click(screen.getByText('Item One'))
+    expect(itemOne.parentNode).toHaveFocus()
+    fireEvent.click(itemOne)
 
     fireEvent.keyDown(screen.getByText('Click Me'), {
       key: 'ArrowUp',
       code: 'ArrowUp',
     })
-    expect(screen.getByText('Item One').parentNode).toHaveFocus()
-    fireEvent.click(screen.getByText('Item One'))
+
+    itemOne = await screen.findByText('Item One')
+    expect(itemOne.parentNode).toHaveFocus()
+    fireEvent.click(itemOne)
 
     fireEvent.keyDown(screen.getByText('Click Me'), {
       key: 'ArrowRight',
@@ -66,7 +76,7 @@ describe('Menu', () => {
     expect(screen.queryByText('Item One')).not.toBeInTheDocument()
   })
 
-  it('renders with an input for clickable node', () => {
+  it('renders with an input for clickable node', async () => {
     const onItemOneClick = jest.fn()
     const onItemTwoClick = jest.fn()
 
@@ -79,8 +89,10 @@ describe('Menu', () => {
     )
 
     fireEvent.click(screen.getByText('Click me!'))
+
+    const itemOne = await screen.findByText('Item One')
     expect(onItemOneClick).toHaveBeenCalledTimes(0)
-    fireEvent.click(screen.getByText('Item One'))
+    fireEvent.click(itemOne)
     expect(onItemOneClick).toHaveBeenCalledTimes(1)
   })
 })

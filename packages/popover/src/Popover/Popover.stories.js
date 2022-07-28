@@ -1,6 +1,4 @@
 /* eslint-disable import/no-named-as-default, no-unused-vars, react/prop-types */
-import Component from '@reach/component-component'
-import { Description, Primary, Props, Subtitle, Title } from '@storybook/addon-docs/blocks'
 import {
   Absolute,
   BackgroundImage,
@@ -9,13 +7,12 @@ import {
   CloseButton,
   FilterChip,
   Flex,
-  getPaletteColor,
   IconButton,
   Link,
   Text,
   ThemeProvider,
 } from 'pcln-design-system'
-import { Close, InformationOutline, Graph as GraphIcon, Pin as PinIcon } from 'pcln-icons'
+import { Close, InformationOutline } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
 import Popover from './Popover'

@@ -159,7 +159,7 @@ PopoverContent.propTypes = {
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,
-  width: PropTypes.number,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   overlayOpacity: PropTypes.number,
   trapFocus: PropTypes.bool,
   hideArrow: PropTypes.bool,
