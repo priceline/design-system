@@ -31,7 +31,7 @@ const Children = {
 export default {
   title: 'pcln-popover / Popover',
   component: Popover,
-  args: { children: 'Button', placement: 'top' },
+  args: { children: 'Button', openOnHover: true, placement: 'top' },
   argTypes: {
     children: {
       options: Object.keys(Children),

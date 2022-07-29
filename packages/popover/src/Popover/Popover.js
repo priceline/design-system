@@ -4,7 +4,18 @@ import { deprecatedPropType } from 'pcln-design-system'
 import PopoverContent from '../PopoverContent'
 import usePopover from '../usePopover'
 
-function Popover({ ariaLabel, children, isOpen, openOnMount, placement, onOpen, onClose, ...props }) {
+function Popover({
+  ariaLabel,
+  children,
+  hideOverlay,
+  isOpen,
+  openOnHover,
+  openOnMount,
+  placement,
+  onOpen,
+  onClose,
+  ...props
+}) {
   const {
     arrowRef,
     isPopoverOpen,
@@ -12,27 +23,34 @@ function Popover({ ariaLabel, children, isOpen, openOnMount, placement, onOpen, 
     styles,
     floating,
     reference,
+    getFloatingProps,
+    getReferenceProps,
     handleClose,
     handleToggle,
-  } = usePopover({ openOnMount, placement, onClose, onOpen })
+  } = usePopover({ openOnHover, openOnMount, placement, onClose, onOpen })
 
   return (
     <>
       {children &&
         React.cloneElement(children, {
-          'aria-label': ariaLabel,
-          type: 'button',
-          ref: reference,
-          onClick: handleToggle,
+          ...getReferenceProps({
+            'aria-label': ariaLabel,
+            type: 'button',
+            ref: reference,
+            onClick: !openOnHover && handleToggle,
+          }),
         })}
       {(isPopoverOpen || isOpen) && (
         <PopoverContent
-          {...props}
-          arrowRef={arrowRef}
-          placement={actualPlacement}
-          popoverRef={floating}
-          styles={styles}
-          onCloseRequest={handleClose}
+          {...getFloatingProps({
+            ...props,
+            arrowRef: arrowRef,
+            hideOverlay: hideOverlay || openOnHover,
+            placement: actualPlacement,
+            popoverRef: floating,
+            styles: styles,
+            onCloseRequest: handleClose,
+          })}
         />
       )}
     </>
@@ -54,6 +72,7 @@ Popover.propTypes = {
   overlayOpacity: PropTypes.number,
   trapFocus: PropTypes.bool,
   isOpen: PropTypes.bool,
+  openOnHover: PropTypes.bool,
   openOnMount: PropTypes.bool,
   children: PropTypes.node,
   onOpen: PropTypes.func,

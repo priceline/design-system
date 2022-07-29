@@ -21,14 +21,13 @@
     "clean": "rimraf dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "jest --verbose --coverage",
+    "test": "jest --verbose --coverage --runInBand",
     "test:ci": "jest --silent --coverage --runInBand",
     "test:update": "jest --updateSnapshot",
     "test:snapshots": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
-    "@floating-ui/dom": "^0.5.4",
-    "@floating-ui/react-dom": "^0.7.2"
+    "@floating-ui/react-dom-interactions": "^0.8.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",

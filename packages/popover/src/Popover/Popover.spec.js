@@ -164,6 +164,24 @@ describe('Popover', () => {
       expect(mockOnClose).toHaveBeenCalledTimes(1)
       expect(mockOnClose).toHaveBeenCalledWith(expect.any(Object))
     })
+
+    it('opens and close on hover', () => {
+      const mockOnOpen = jest.fn()
+      const mockOnClose = jest.fn()
+      render(
+        <Popover {...popoverProps} openOnHover onOpen={mockOnOpen} onClose={mockOnClose}>
+          <button>{triggerButtonText}</button>
+        </Popover>
+      )
+
+      expect(mockOnOpen).toHaveBeenCalledTimes(0)
+      fireEvent.mouseEnter(screen.getByText(triggerButtonText))
+      expect(mockOnOpen).toHaveBeenCalledTimes(1)
+
+      expect(mockOnClose).toHaveBeenCalledTimes(0)
+      fireEvent.mouseLeave(screen.getByText(triggerButtonText))
+      expect(mockOnClose).toHaveBeenCalledTimes(1)
+    })
   })
 
   describe('UI Positioning', () => {

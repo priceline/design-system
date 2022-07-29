@@ -164,6 +164,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   display="inline-block"
   role="dialog"
   style="position: absolute; top: 8px; left: 8px;"
+  tabindex="-1"
   width="400"
 >
   <div
@@ -282,6 +283,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   display="inline-block"
   role="dialog"
   style="position: absolute; top: 8px; left: 8px;"
+  tabindex="-1"
   width="400"
 >
   <div
@@ -400,6 +402,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   display="inline-block"
   role="dialog"
   style="position: absolute; top: 8px; left: 8px;"
+  tabindex="-1"
   width="400"
 >
   <div
