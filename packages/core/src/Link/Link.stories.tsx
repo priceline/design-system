@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link, Button } from '..'
+import { Button, Link, Text } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
 // for Args
@@ -88,4 +88,10 @@ export const Color = () => (
     <br />
     <Link color='error'>I am a different color!</Link>
   </div>
+)
+
+export const LargeText = () => (
+  <Link color='text.light'>
+    <Text textStyle='heading2'>I am a link with text styles</Text>
+  </Link>
 )
