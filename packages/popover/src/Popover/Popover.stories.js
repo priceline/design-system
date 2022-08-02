@@ -13,6 +13,7 @@ import {
   ThemeProvider,
 } from 'pcln-design-system'
 import { Close, InformationOutline } from 'pcln-icons'
+import { action } from '@storybook/addon-actions'
 import React from 'react'
 import styled from 'styled-components'
 import Popover from './Popover'
@@ -31,7 +32,13 @@ const Children = {
 export default {
   title: 'pcln-popover / Popover',
   component: Popover,
-  args: { children: 'Button', openOnHover: true, placement: 'top' },
+  args: {
+    children: 'Button',
+    openOnHover: true,
+    placement: 'top',
+    onClose: action('Popover Close'),
+    onOpen: action('Popover Open'),
+  },
   argTypes: {
     children: {
       options: Object.keys(Children),
