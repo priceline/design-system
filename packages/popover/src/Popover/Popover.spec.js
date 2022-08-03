@@ -4,12 +4,6 @@ import { Box, Button, Text, ThemeProvider } from 'pcln-design-system'
 
 import Popover from './Popover'
 
-global.ResizeObserver = jest.fn().mockImplementation(() => ({
-  observe: jest.fn(),
-  unobserve: jest.fn(),
-  disconnect: jest.fn(),
-}))
-
 // eslint-disable-next-line react/prop-types
 const InnerContent = ({ handleClose }) => (
   <Box>
