@@ -30,6 +30,7 @@ function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, s
     }
   }, [])
 
+  /* eslint-disable react/display-name */
   const ClickableNode = React.forwardRef((props, ref) =>
     buttonNode ? (
       React.cloneElement(buttonNode, { ref, onKeyDown, ...props })
