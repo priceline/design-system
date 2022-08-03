@@ -33,6 +33,7 @@ export default {
   title: 'pcln-popover / Popover',
   component: Popover,
   args: {
+    borderRadius: 'lg',
     children: 'Button',
     openOnHover: true,
     placement: 'top',

@@ -2,8 +2,14 @@ import React, { useCallback, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled, { ThemeConsumer } from 'styled-components'
-import { themeGet } from 'styled-system'
-import { Box, getPaletteColor, deprecatedPropType, ThemeProvider } from 'pcln-design-system'
+import { borderRadius, themeGet } from 'styled-system'
+import {
+  Box,
+  borderRadiusAttrs,
+  getPaletteColor,
+  deprecatedPropType,
+  ThemeProvider,
+} from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
@@ -20,19 +26,20 @@ const PopoverGuide = styled(Box)`
     left: 0 !important;
   }
 `
-const ContentContainer = styled.section`
+const ContentContainer = styled.section.attrs(borderRadiusAttrs)`
   box-shadow: 0 0 0 1px ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
     0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08), 0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${themeGet('fontSizes.0')}px;
-  border-radius: ${themeGet('borderRadii.xl')};
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  ${borderRadius};
 `
 
 function PopoverContent({
   arrowRef,
   borderColor,
+  borderRadius,
   className,
   color,
   idx,
@@ -83,8 +90,9 @@ function PopoverContent({
 
   const styleProps = {
     borderColor: getBorderColorName(color, borderColor),
-    width: width,
-    zIndex: zIndex,
+    borderRadius,
+    width,
+    zIndex,
   }
 
   const content = trapFocus ? (
@@ -116,7 +124,7 @@ function PopoverContent({
             <ThemeProvider theme={theme}>
               <ContentContainer {...styleProps} tabIndex='-1' data-testid='popover-content-container'>
                 <Box
-                  borderRadius='xl'
+                  borderRadius={borderRadius}
                   color={color ?? 'background.lightest'}
                   data-testid='dialog-content'
                   id={`popover-description-${idx}`}

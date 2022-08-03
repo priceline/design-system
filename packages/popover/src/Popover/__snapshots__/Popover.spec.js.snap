@@ -136,6 +136,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   display: inline-block;
   padding: 8px;
   width: 400px;
+  border-radius: 6px;
   z-index: 102;
   max-width: 400px;
   width: 100%;
@@ -145,10 +146,10 @@ exports[`Popover UI Positioning Bottom 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  border-radius: 6px;
 }
 
 @media (max-width:640px) {
@@ -255,6 +256,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   display: inline-block;
   padding: 8px;
   width: 400px;
+  border-radius: 6px;
   z-index: 102;
   max-width: 400px;
   width: 100%;
@@ -264,10 +266,10 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  border-radius: 6px;
 }
 
 @media (max-width:640px) {
@@ -374,6 +376,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   display: inline-block;
   padding: 8px;
   width: 400px;
+  border-radius: 6px;
   z-index: 102;
   max-width: 400px;
   width: 100%;
@@ -383,10 +386,10 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
 .c2 {
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  border-radius: 6px;
   box-sizing: border-box;
   outline: 0;
   max-width: 100%;
+  border-radius: 6px;
 }
 
 @media (max-width:640px) {

@@ -6,6 +6,7 @@ import usePopover from '../usePopover'
 
 function Popover({
   ariaLabel,
+  borderRadius = 'xl',
   children,
   hideOverlay,
   isOpen,
@@ -44,11 +45,12 @@ function Popover({
         <PopoverContent
           {...getFloatingProps({
             ...props,
-            arrowRef: arrowRef,
+            arrowRef,
+            borderRadius,
             hideOverlay: hideOverlay || openOnHover,
             placement: actualPlacement,
             popoverRef: floating,
-            styles: styles,
+            styles,
             onCloseRequest: handleClose,
           })}
         />
