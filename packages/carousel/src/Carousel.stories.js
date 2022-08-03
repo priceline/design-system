@@ -4,7 +4,7 @@ import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-d
 import styled from 'styled-components'
 import { Carousel, ArrowButton } from '.'
 
-const SLIDE_COUNT = 10
+const SLIDE_COUNT = 6
 
 const ToutCard = styled(Card)`
   overflow: hidden;
@@ -60,7 +60,7 @@ export default {
 }
 
 function renderCards() {
-  return Array.from(Array(SLIDE_COUNT), (_, idx) => (
+  return Array.from(Array(SLIDE_COUNT)).map((_, idx) => (
     <ToutCard height={idx === 1 ? '300px' : '320px'} borderRadius={20} boxShadowSize='md' borderWidth={0}>
       <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
       <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
@@ -198,6 +198,16 @@ AlternateButtonColors.args = {
   showDots: false,
   showForwardBackBtns: true,
   sidePositionArrowButton: <ArrowButton {...buttonStyles} />,
+}
+
+export const CustomButtonPosition = BasicTemplate.bind({})
+CustomButtonPosition.args = {
+  visibleSlides: 3,
+  showDots: false,
+  showForwardBackBtns: true,
+  sideButtonMargin: '-50px',
+  slideSpacing: 3,
+  sidePositionArrowButton: <ArrowButton />,
 }
 
 const FixedVisibleSlidesTemplate = (args) => (

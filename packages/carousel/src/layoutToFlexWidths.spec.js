@@ -8,6 +8,6 @@ describe('layoutToFlexWidths', () => {
   it('should return array of percentages for layout based on totalSlides', () => {
     expect(layoutToFlexWidths('25-75', 10)).toEqual(['5%', '15%'])
     expect(layoutToFlexWidths('25-25-25-25', 20)).toEqual(['5%', '5%', '5%', '5%'])
-    expect(layoutToFlexWidths('33-33-33', 10)).toEqual(['9.9%', '9.9%', '9.9%'])
+    expect(layoutToFlexWidths('33-33-33', 10)).toEqual(['10%', '10%', '10%'])
   })
 })

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Fix bug in 33-33-33 layout",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
