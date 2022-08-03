@@ -118,7 +118,7 @@ export const Carousel = ({
                     onSlideKeyDown(index, e)
                   }}
                 >
-                  <Box p={slideSpacing}>
+                  <Box p={slideSpacing} height='100%'>
                     {!layout && stretchSlideHeight ? (
                       <StretchSlide
                         slideSpacing={slideSpacing}
