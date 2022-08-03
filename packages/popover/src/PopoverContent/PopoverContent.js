@@ -156,6 +156,7 @@ function PopoverContent({
 }
 
 PopoverContent.propTypes = {
+  ...borderRadius.propTypes,
   idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
   renderContent: PropTypes.func.isRequired,
   onCloseRequest: PropTypes.func.isRequired,

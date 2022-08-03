@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { borderRadius } from 'styled-system'
 import { deprecatedPropType } from 'pcln-design-system'
 import PopoverContent from '../PopoverContent'
 import usePopover from '../usePopover'
@@ -60,6 +61,7 @@ function Popover({
 }
 
 Popover.propTypes = {
+  ...borderRadius.propTypes,
   idx: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired, // ID needs to be required for A11y purposes. We need to uniquely identify each popover on screen
   renderContent: PropTypes.func.isRequired,
   ariaLabel: PropTypes.string,
