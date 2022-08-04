@@ -35,6 +35,7 @@ export default {
   args: {
     borderRadius: 'lg',
     children: 'Button',
+    openOnFocus: false,
     openOnHover: true,
     placement: 'top',
     onClose: action('Popover Close'),

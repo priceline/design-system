@@ -11,7 +11,19 @@ const LinkButton = styled(Button)`
   align-items: center;
 `
 
-function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, size, children, ...props }) {
+function Menu({
+  id,
+  buttonNode,
+  buttonProps,
+  buttonText,
+  color,
+  width,
+  height,
+  size,
+  trapFocus,
+  children,
+  ...props
+}) {
   const MenuContent = ({ handleClose }) => (
     <MenuList id={id} color={color} size={size} height={height} handleClose={handleClose}>
       {children}
@@ -45,7 +57,7 @@ function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, s
   return (
     <Popover
       hideArrow
-      trapFocus
+      trapFocus={trapFocus}
       width={width}
       zIndex={1600}
       placement='bottom-start'
@@ -69,12 +81,14 @@ Menu.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.number,
   size: PropTypes.string,
+  trapFocus: PropTypes.bool,
   children: PropTypes.node,
 }
 
 Menu.defaultProps = {
-  width: '650px',
   size: 'singleColumn',
+  trapFocus: true,
+  width: '650px',
 }
 
 export default Menu

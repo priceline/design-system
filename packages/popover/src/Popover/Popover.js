@@ -11,6 +11,7 @@ function Popover({
   children,
   hideOverlay,
   isOpen,
+  openOnFocus,
   openOnHover,
   openOnMount,
   placement,
@@ -29,7 +30,7 @@ function Popover({
     getReferenceProps,
     handleClose,
     handleToggle,
-  } = usePopover({ openOnHover, openOnMount, placement, onClose, onOpen })
+  } = usePopover({ openOnFocus, openOnHover, openOnMount, placement, onClose, onOpen })
 
   return (
     <>

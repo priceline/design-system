@@ -7,12 +7,13 @@ import {
   safePolygon,
   shift,
   useFloating,
+  useFocus,
   useHover,
   useInteractions,
 } from '@floating-ui/react-dom-interactions'
 import getPopoverStyles from '../getPopoverStyles'
 
-function usePopover({ openOnHover, openOnMount, placement, onClose, onOpen }) {
+function usePopover({ openOnFocus, openOnHover, openOnMount, placement, onClose, onOpen }) {
   const [isOpen, setOpen] = useState(openOnMount)
 
   const handleClose = (e) => {
@@ -56,6 +57,9 @@ function usePopover({ openOnHover, openOnMount, placement, onClose, onOpen }) {
     onOpenChange: handleOpen,
   })
   const { getFloatingProps, getReferenceProps } = useInteractions([
+    useFocus(context, {
+      enabled: !!openOnFocus || !!openOnHover,
+    }),
     useHover(context, {
       enabled: !!openOnHover,
       handleClose: safePolygon(),
