@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, ButtonChip, Flex, Text } from 'pcln-design-system'
+import { Box, ButtonChip, Divider, Flex, Link, Text } from 'pcln-design-system'
 
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
@@ -152,6 +152,21 @@ export const ChipAsPopoverButton = () => {
           </MenuItem>
         )
       })}
+    </Menu>
+  )
+}
+
+export const LinkDropdown = () => {
+  return (
+    <Menu idx='link-dropdown' buttonText='Support' width='300px'>
+      <Text p={3}>Unselectable title text</Text>
+      <Divider mt={0} mb={2} />
+      <Link href='https://www.priceline.com/faq' target='_blank' px={3} py={2}>
+        FAQ
+      </Link>
+      <Link href='https://www.priceline.com/contact' target='_blank' px={3} py={2}>
+        Contact
+      </Link>
     </Menu>
   )
 }
