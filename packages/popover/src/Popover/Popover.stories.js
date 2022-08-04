@@ -12,63 +12,17 @@ import {
   Text,
   ThemeProvider,
 } from 'pcln-design-system'
-import { Close, InformationOutline } from 'pcln-icons'
-import { action } from '@storybook/addon-actions'
+import { Close } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
 import Popover from './Popover'
-
-const Children = {
-  Button: <Button>Popover</Button>,
-  Icon: (
-    <IconButton
-      icon={<InformationOutline color='text.light' size={20} />}
-      title='More Information'
-      type='button'
-    />
-  ),
-}
+import { argTypes, defaultArgs } from './Popover.stories.args'
 
 export default {
   title: 'pcln-popover / Popover',
   component: Popover,
-  args: {
-    borderRadius: 'lg',
-    children: 'Button',
-    openOnFocus: false,
-    openOnHover: true,
-    placement: 'top',
-    onClose: action('Popover Close'),
-    onOpen: action('Popover Open'),
-  },
-  argTypes: {
-    children: {
-      options: Object.keys(Children),
-      mapping: Children,
-      control: {
-        type: 'select',
-      },
-    },
-    placement: {
-      name: 'placement',
-      type: { name: 'string', required: true },
-      options: [
-        'top',
-        'top-start',
-        'top-end',
-        'bottom',
-        'bottom-start',
-        'bottom-end',
-        'left',
-        'left-start',
-        'left-end',
-        'right',
-        'right-start',
-        'right-end',
-      ],
-      control: { type: 'select' },
-    },
-  },
+  args: defaultArgs,
+  argTypes: argTypes,
 }
 
 const AbsolutePosBtn = styled(IconButton)`
