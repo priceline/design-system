@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Make height of each Carousel slide 100%",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
