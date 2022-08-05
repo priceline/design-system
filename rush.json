@@ -414,11 +414,6 @@
       "shouldPublish": false
     },
     {
-      "packageName": "pcln-types",
-      "projectFolder": "tools/types",
-      "shouldPublish": false
-    },
-    {
       "packageName": "@priceline/storybook-preset",
       "projectFolder": "tools/storybook-preset",
       "shouldPublish": false,
