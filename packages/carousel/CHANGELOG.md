@@ -1,6 +1,14 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Thu, 21 Jul 2022 14:38:24 GMT and should not be manually modified.
+This log was last generated on Fri, 05 Aug 2022 13:25:10 GMT and should not be manually modified.
+
+## 1.3.2
+Fri, 05 Aug 2022 13:25:10 GMT
+
+### Patches
+
+- Fix bug in 33-33-33 layout
+- Make height of each Carousel slide 100%
 
 ## 1.3.1
 Thu, 21 Jul 2022 14:38:24 GMT
