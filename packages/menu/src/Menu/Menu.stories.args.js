@@ -5,6 +5,9 @@ const { colors } = storybookArgs
 export const defaultArgs = {
   isOpen: true,
   buttonText: 'Menu',
+  openOnFocus: false,
+  openOnHover: false,
+  trapFocus: false,
 }
 
 export const argTypes = {

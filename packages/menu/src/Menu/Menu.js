@@ -11,7 +11,19 @@ const LinkButton = styled(Button)`
   align-items: center;
 `
 
-function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, size, children, ...props }) {
+function Menu({
+  id,
+  buttonNode,
+  buttonProps,
+  buttonText,
+  color,
+  width,
+  height,
+  size,
+  trapFocus,
+  children,
+  ...props
+}) {
   const MenuContent = ({ handleClose }) => (
     <MenuList id={id} color={color} size={size} height={height} handleClose={handleClose}>
       {children}
@@ -30,23 +42,25 @@ function Menu({ id, buttonNode, buttonProps, buttonText, color, width, height, s
     }
   }, [])
 
-  const ClickableNode = (props) =>
+  /* eslint-disable react/display-name */
+  const ClickableNode = React.forwardRef((props, ref) =>
     buttonNode ? (
-      React.cloneElement(buttonNode, { onKeyDown, ...props })
+      React.cloneElement(buttonNode, { ref, onKeyDown, ...props })
     ) : (
-      <LinkButton variation='link' {...props} p={2} {...buttonProps} onKeyDown={onKeyDown}>
+      <LinkButton ref={ref} variation='link' {...props} p={2} {...buttonProps} onKeyDown={onKeyDown}>
         {buttonText}
         <ChevronDown ml={1} />
       </LinkButton>
     )
+  )
 
   return (
     <Popover
       hideArrow
-      trapFocus
+      trapFocus={trapFocus}
       width={width}
       zIndex={1600}
-      placement='bottom'
+      placement='bottom-start'
       aria-controls={id}
       renderContent={MenuContent}
       {...props}
@@ -67,12 +81,14 @@ Menu.propTypes = {
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.number,
   size: PropTypes.string,
+  trapFocus: PropTypes.bool,
   children: PropTypes.node,
 }
 
 Menu.defaultProps = {
-  width: '650px',
   size: 'singleColumn',
+  trapFocus: true,
+  width: '650px',
 }
 
 export default Menu

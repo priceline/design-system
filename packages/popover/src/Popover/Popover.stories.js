@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars, react/prop-types */
-import Component from '@reach/component-component'
-import { Description, Primary, Props, Subtitle, Title } from '@storybook/addon-docs/blocks'
+/* eslint-disable import/no-named-as-default, no-unused-vars, react/prop-types */
 import {
   Absolute,
   BackgroundImage,
@@ -9,67 +7,76 @@ import {
   CloseButton,
   FilterChip,
   Flex,
-  getPaletteColor,
+  IconButton,
   Link,
   Text,
   ThemeProvider,
 } from 'pcln-design-system'
-import { Graph as GraphIcon, Pin as PinIcon } from 'pcln-icons'
-import Slider from 'pcln-slider'
+import { Close } from 'pcln-icons'
 import React from 'react'
-import { DraggableItem, DraggableParent } from 'react-draggable-playground'
 import styled from 'styled-components'
 import Popover from './Popover'
+import { argTypes, defaultArgs } from './Popover.stories.args'
 
 export default {
   title: 'pcln-popover / Popover',
   component: Popover,
-  parameters: {
-    componentSubtitle: 'Used to display some content on top of another',
-    docs: {
-      // Customize Docs page to omit Stories slot due to broken styling from playground
-      // eslint-disable-next-line react/display-name
-      page: () => (
-        <>
-          <Title />
-          <Subtitle />
-          <Description />
-          <Primary />
-          <Props />
-        </>
-      ),
-    },
-  },
+  args: defaultArgs,
+  argTypes: argTypes,
 }
 
-// export const playground = () => (
-//   <React.Fragment>
-//     <Playground>
-//       <Popover
-//         renderContent={PriceGuidanceContent}
-//         placement='top'
-//         ariaLabel='Price Guidance Popover'
-//         idx={1}
-//         width={370}
-//         overlayOpacity={0.3}
-//         trapFocus={boolean('Trap focus', false)}
-//       >
-//         <Button>Popover</Button>
-//       </Popover>
-//     </Playground>
-//   </React.Fragment>
-// )
+const AbsolutePosBtn = styled(IconButton)`
+  top: 20px;
+  right: 20px;
+  position: absolute;
+`
+
+const Template = ({ children, ...args }) => (
+  <Flex justifyContent='center' alignItems='center' width={1} my={6}>
+    <Popover
+      renderContent={({ handleClose }) => (
+        <Flex flexDirection='column' p={2} onClick={(e) => e.stopPropagation()}>
+          <Text fontSize={1} mb={1} mt={0} fontWeight='bold'>
+            Tip:
+          </Text>
+          <Text mt={0} mb={1}>
+            Use arrow keys to navigate the calendar
+          </Text>
+          <AbsolutePosBtn onClick={handleClose} title='Close tooltip' icon={<Close />} />
+        </Flex>
+      )}
+      ariaLabel='Calendar navigation tooltip'
+      overlayOpacity={0.3}
+      width={350}
+      borderColor='border.base'
+      trapFocus
+      zIndex={2000}
+      idx='date-picker-footer'
+      {...args}
+    >
+      {children}
+    </Popover>
+  </Flex>
+)
+
+export const _Popover = Template.bind({})
 
 export const colors = () => (
-  <Flex>
-    <Popover renderContent={SimpleTextContent} placement='bottom' ariaLabel='Default Popover' width={130}>
+  <Flex m={200}>
+    <Popover
+      color='primary'
+      renderContent={SimpleTextContent}
+      placement='left'
+      ariaLabel='Default Popover'
+      width={130}
+    >
       <Button color='primary' mx={2}>
         Default Popover
       </Button>
     </Popover>
     <Popover
       renderContent={SimpleTextContent}
-      placement='bottom'
+      placement='top'
       ariaLabel='Success Popover'
       width={130}
       color='success'
@@ -91,7 +98,7 @@ export const colors = () => (
     </Popover>
     <Popover
       renderContent={SimpleTextContent}
-      placement='bottom'
+      placement='right'
       ariaLabel='Error Popover'
       width={130}
       color='error'
@@ -123,35 +130,9 @@ export const filterChips = () => (
   </Popover>
 )
 
-export const forcedOpenViaProp = () => (
-  <Popover
-    renderContent={InnerContent}
-    placement='bottom'
-    ariaLabel='Bottom Popover'
-    idx={2}
-    width={400}
-    isOpen
-  >
-    <Link>Open Popover</Link>
-  </Popover>
-)
-
-export const openByDefault = () => (
-  <Popover
-    renderContent={InnerContent}
-    placement='bottom'
-    ariaLabel='Bottom Popover'
-    idx={2}
-    width={400}
-    openOnMount
-  >
-    <Link>Open Popover</Link>
-  </Popover>
-)
-
 export const bottom = () => (
   <Popover renderContent={InnerContent} placement='bottom' ariaLabel='Bottom Popover' idx={2} width={400}>
-    <Link>Open Popover</Link>
+    <Link m={3}>Open Popover</Link>
   </Popover>
 )
 
@@ -164,7 +145,7 @@ export const hideOverlay = () => (
     idx={2}
     width={400}
   >
-    <Link>Open Popover</Link>
+    <Link m={3}>Open Popover</Link>
   </Popover>
 )
 
@@ -174,7 +155,7 @@ export const rightWithOverlayOnScrollPosition = () => (
     <Box>
       <Popover
         renderContent={InnerContent}
-        placement='top'
+        placement='top-start'
         ariaLabel='Test Popover'
         idx={1}
         width={400}
@@ -201,33 +182,15 @@ export const hideArrow = () => (
   </Popover>
 )
 
-const StyledBox = styled(Box)`
-  border-top: 1px solid ${getPaletteColor('border.base')};
-`
-
 const SimpleTextContent = () => (
   <Box p={2}>
     <Text textAlign='center'>Hello world!</Text>
   </Box>
 )
 
-const Playground = ({ children }) => (
-  <DraggableParent height='300px' width='(100vw - 32px)'>
-    <DraggableItem
-      defaultPosition={{
-        x: 100,
-        y: 100,
-      }} //Hard coded positioning
-      onPositionChange={(position) => {}}
-    >
-      {({ isDragging }) => children}
-    </DraggableItem>
-  </DraggableParent>
-)
-
 const InnerContent = ({ handleClose }) => (
   <Box p={4}>
-    <Absolute top={25} right={25}>
+    <Absolute top={15} right={15}>
       <CloseButton onClick={handleClose} />
     </Absolute>
     <BackgroundImage
@@ -249,59 +212,6 @@ const InnerContent = ({ handleClose }) => (
   </Box>
 )
 
-const PriceGuidanceContent = ({ handleClose }) => (
-  <Box p={3}>
-    <Box p={2} pt={0} pb={3}>
-      <Flex>
-        <GraphIcon color='primary' size='32px' mr='2' />
-        <Flex flexDirection='column'>
-          <Text color='primary' fontSize='24px' bold>
-            Price Guidance
-          </Text>
-          <Text color='text.light' fontSize='12px'>
-            Lorem ipsum dolor sit amet, consect etur adipiscing elit. Mauris nisl sapi
-          </Text>
-        </Flex>
-      </Flex>
-    </Box>
-    <StyledBox p={2} pb={0} pt={3}>
-      <Flex>
-        <PinIcon color='text.base' size='32px' mr='2' />
-        <Flex flexDirection='column'>
-          <Text color='text.base' fontSize='14px' bold>
-            New York City
-          </Text>
-          <Text color='text.light' fontSize='12px'>
-            Wed. Jan 24 - Fri. Jan 25
-          </Text>
-        </Flex>
-      </Flex>
-      <Box pt={2}>
-        <Component
-          initialState={{ value: [32, 64] }}
-          // eslint-disable-next-line react/no-children-prop
-          children={({ state, setState }) => (
-            <Slider
-              value={state.value}
-              onChange={(value) => {
-                setState({ value })
-              }}
-            />
-          )}
-        />
-      </Box>
-      <Flex pt={4} pb={2} justifyContent='center'>
-        <Button color='secondary' mr={2}>
-          Book Now
-        </Button>
-        <Button variation='outline' onClick={handleClose} ml={2}>
-          Dismiss
-        </Button>
-      </Flex>
-    </StyledBox>
-  </Box>
-)
-
 export const PassesThemeToContent = () => {
   return (
     <ThemeProvider
@@ -319,7 +229,7 @@ export const PassesThemeToContent = () => {
         ariaLabel='Bottom Popover'
         idx={2}
         width={400}
-        isOpen
+        borderColor='border.base'
       >
         <Text color={'primary.base'}>hello world</Text>
       </Popover>

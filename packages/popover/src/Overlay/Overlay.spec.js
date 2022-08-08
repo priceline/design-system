@@ -33,4 +33,10 @@ describe('Background Overlay', () => {
     fireEvent.click(getByTestId('__pcln-popover_Overlay'))
     expect(onClick).toHaveBeenCalled()
   })
+
+  it('handles negative z-index by setting it to 0', () => {
+    const { getByTestId } = render(<Overlay popoverOpen={true} zIndex={-50} />)
+    const overlay = getByTestId('__pcln-popover_Overlay')
+    expect(overlay).toHaveStyleRule('z-index: 0')
+  })
 })
