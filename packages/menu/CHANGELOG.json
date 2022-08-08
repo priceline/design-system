@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "4.4.32",
+      "tag": "pcln-menu_v4.4.32",
+      "date": "Mon, 08 Aug 2022 15:28:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Forward Ref on Menu Button",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "99172d0113b95ee6a85afdf44fe90b394c3b98e5"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.29.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `4.5.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.29.0` to `4.29.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `4.4.5` to `4.5.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.4.31",
       "tag": "pcln-menu_v4.4.31",
       "date": "Thu, 21 Jul 2022 14:38:24 GMT",

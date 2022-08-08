@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 21 Jul 2022 14:38:24 GMT and should not be manually modified.
+This log was last generated on Mon, 08 Aug 2022 15:28:28 GMT and should not be manually modified.
+
+## 4.29.1
+Mon, 08 Aug 2022 15:28:28 GMT
+
+### Patches
+
+- Forward Ref for ButtonChip
 
 ## 4.29.0
 Thu, 21 Jul 2022 14:38:24 GMT

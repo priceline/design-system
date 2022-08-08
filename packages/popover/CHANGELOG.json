@@ -2,6 +2,28 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.5.0",
+      "tag": "pcln-popover_v4.5.0",
+      "date": "Mon, 08 Aug 2022 15:28:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "update react-popper@2.3.0 and @popperjs/core@2.11.5, update to functional components",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "99172d0113b95ee6a85afdf44fe90b394c3b98e5"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.29.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.29.0` to `4.29.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.4.5",
       "tag": "pcln-popover_v4.4.5",
       "date": "Thu, 21 Jul 2022 14:38:24 GMT",
