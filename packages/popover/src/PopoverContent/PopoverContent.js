@@ -96,7 +96,7 @@ function PopoverContent({
   }
 
   const content = trapFocus ? (
-    <FocusLock>
+    <FocusLock focusOptions={{ preventScroll: true }}>
       {renderContent({
         handleClose: onCloseRequest,
       })}
