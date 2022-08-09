@@ -3,9 +3,6 @@ name: Create a new GitHub release for a package
 on:
   workflow_dispatch:
     inputs:
-      versionTag:
-        required: true
-        description: 'Tag for the new release'
       packageName:
         required: true
         description: 'Name of package being released'
@@ -36,23 +33,23 @@ jobs:
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
 
-      # TODO convert release note tool to auto-installer so we don't have to do full build
       - name: Build components
-        run: node common/scripts/install-run-rush.js build
+        run: node common/scripts/install-run-rush.js build --to create-release-notes
 
       - name: Create release notes
+        id: release-notes
         run: |
           node common/scripts/install-run-rush.js create-release-notes --package-name ${{ github.event.inputs.packageName }}
 
-      #      - name: NPM Publish
-      #        run: |
-      #          node common/scripts/install-run-rush.js publish -p --include-all --npm-auth-token="${{ secrets.NPM_TOKEN }}"
+      - name: Print latest version info
+        run: |
+          echo "${{ steps.release-notes.outputs.latestVersionTag }}"
 
       - name: 'Create Release'
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DS_RELEASE_PAT }}
         with:
           body_path: ./RELEASE_NOTES.md
-          name: '${{ github.event.inputs.packageName }} ${{ github.event.inputs.versionTag }}'
-          tag_name: ${{ github.event.inputs.versionTag }}
+          name: ${{ steps.release-notes.outputs.latestVersionTag }}
+          tag_name: ${{ steps.release-notes.outputs.latestVersionTag }}

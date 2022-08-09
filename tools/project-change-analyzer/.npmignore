@@ -1,0 +1,9 @@
+*
+
+!/lib-commonjs/**
+!/lib-esm/**
+!/types/**
+!/bin/**
+
+*.spec.js
+telemetry_*.json

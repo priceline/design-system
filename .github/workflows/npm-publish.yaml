@@ -5,12 +5,15 @@ on: workflow_dispatch
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
-  create-release:
+  npm-publish:
     # Name the Job
     name: Rush publish apply
     # Set the type of machine to run on
     runs-on: ubuntu-latest
     environment: Production
+
+    outputs:
+      changedPackages: ${{ steps.list-changed.outputs.changedPackages }}
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
@@ -41,10 +44,40 @@ jobs:
       - name: Git set author email
         run: git config --global user.email "uxplatformdevs@priceline.com"
 
+      - name: List changed packages
+        id: list-changed
+        run: node common/scripts/install-run-rush.js list-changed-packages
+
       - name: rush apply versions
         run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
 
       - name: publish npm-package
         run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
 
-      # TODO create GitHub release
+  create-github-releases:
+    needs: npm-publish
+    runs-on: ubuntu-latest
+    if: needs.change-dispatcher.outputs.changedPackages.projects > 0
+
+    strategy:
+      matrix: ${{ fromJSON(needs.npm-publish.outputs.changedPackages) }}
+    steps:
+      - uses: actions/github-script@v6
+        name: Create GitHub release for ${{ matrix.projects }}
+        env:
+          project: ${{ matrix.projects }}
+
+        with:
+          github-token: ${{ secrets.DS_RELEASE_PAT }}
+          script: |
+            const { project } = process.env
+
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: '${{ github.ref }}',
+              workflow_id: 'release-branch.yaml',
+              inputs: {
+                packageName: project
+              }
+            });
