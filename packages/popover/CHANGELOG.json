@@ -2,6 +2,20 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "4.5.1",
+      "tag": "pcln-popover_v4.5.1",
+      "date": "Tue, 09 Aug 2022 20:49:45 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix Popover jumping",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "1ba33bf40381724691039ef695635d1b35dbd8f3"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.5.0",
       "tag": "pcln-popover_v4.5.0",
       "date": "Mon, 08 Aug 2022 15:28:28 GMT",
