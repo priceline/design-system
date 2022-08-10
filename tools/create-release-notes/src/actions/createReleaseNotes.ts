@@ -80,7 +80,7 @@ export const createReleaseNotes = (packageName): Release => {
     version: latestChange.version,
   }
 
-  setOutput('latestVersionTag', JSON.stringify(latestVersionInfo.tag))
+  setOutput('latestVersionTag', latestVersionInfo.tag)
 
   return latestVersionInfo
 }
