@@ -14,6 +14,7 @@ jobs:
 
     outputs:
       changedPackages: ${{ steps.list-changed.outputs.changedPackages }}
+      numChangedPackages: ${{ steps.list-changed.outputs.numChangedPackages }}
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
@@ -59,7 +60,7 @@ jobs:
   create-github-releases:
     needs: npm-publish
     runs-on: ubuntu-latest
-    if: needs.change-dispatcher.outputs.changedPackages.projects > 0
+    if: needs.change-dispatcher.outputs.numChangedPackages > 0
 
     strategy:
       matrix: ${{ fromJSON(needs.npm-publish.outputs.changedPackages) }}
