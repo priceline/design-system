@@ -1,6 +1,8 @@
 import { RushConfiguration, ProjectChangeAnalyzer, RushConfigurationProject } from '@microsoft/rush-lib'
 import { Terminal, ConsoleTerminalProvider } from '@rushstack/node-core-library'
+import { getRepoChanges } from '@rushstack/package-deps-hash'
 import yargs from 'yargs/yargs'
+import { join } from 'path'
 
 const argv = yargs(process.argv.slice(2))
   .options({
@@ -15,45 +17,33 @@ const rushConfiguration: RushConfiguration = RushConfiguration.loadFromDefaultLo
   startingFolder: process.cwd(),
 })
 
-async function getChangedProjects(terminal, targetBranchName) {
-  const projectChangeAnalyzer: ProjectChangeAnalyzer = new ProjectChangeAnalyzer(rushConfiguration)
+function getPackagesWithDirectChanges(targetBranchName): string[] {
+  // get files that have changed
+  const changedApps = Array.from(getRepoChanges(__dirname, targetBranchName).keys())
+    .filter((file) => file.startsWith('packages'))
+    // parse project folders
+    .reduce((acc, cur) => {
+      acc.add(cur.match(/^([\w-]+\/[\w-]+)\//)[1])
+      return acc
+    }, new Set())
 
-  const changedProjects: Set<RushConfigurationProject> = await projectChangeAnalyzer.getChangedProjectsAsync({
-    targetBranchName,
-    terminal,
+  const projects = Array.from(changedApps).map((name) =>
+    rushConfiguration.tryGetProjectForPath(join(rushConfiguration.rushJsonFolder, name as string))
+  )
 
-    includeExternalDependencies: true,
-    enableFiltering: false,
-  })
-
-  return changedProjects
-}
-
-function getChanged(projects): { packageName: string }[] {
-  const acc: { packageName: string }[] = []
-
-  projects.forEach(({ packageName }: RushConfigurationProject) => {
-    if (packageName.startsWith('pcln-')) {
-      acc.push({ packageName })
-    }
-  })
-
-  return acc
+  return Array.from(projects.map((project) => project.packageName))
 }
 
 /** @public */
 export async function runAsync(targetBranchName = 'refs/remotes/origin/main'): Promise<void> {
   const terminal: Terminal = new Terminal(new ConsoleTerminalProvider())
 
-  const changedProjects = await getChangedProjects(terminal, targetBranchName)
+  const changedProjects = getPackagesWithDirectChanges(targetBranchName)
 
-  setActionOutput('changedPackages', { projects: getChanged(changedProjects)?.map((p) => p.packageName) })
+  setActionOutput('changedPackages', { projects: changedProjects })
 
   terminal.writeLine('Projects needing validation due to changes: ')
-  const namesOfProjectsNeedingValidation: string[] = Array.from(
-    changedProjects,
-    (project) => project.packageName
-  ).sort()
+  const namesOfProjectsNeedingValidation: string[] = Array.from(changedProjects, (project) => project).sort()
   for (const nameOfProjectsNeedingValidation of namesOfProjectsNeedingValidation) {
     terminal.writeLine(` - ${nameOfProjectsNeedingValidation}`)
   }

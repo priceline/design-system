@@ -48,11 +48,11 @@ jobs:
         id: list-changed
         run: node common/scripts/install-run-rush.js list-changed-packages
 
-      - name: rush apply versions
-        run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
+      # - name: rush apply versions
+      #   run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
 
-      - name: publish npm-package
-        run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
+      # - name: publish npm-package
+      #   run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
 
   create-github-releases:
     needs: npm-publish

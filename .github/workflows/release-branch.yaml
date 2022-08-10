@@ -21,35 +21,35 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: PNPM cache via actions/cache@v2
-        id: pnpm-cache
-        uses: actions/cache@v2
-        with:
-          path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
+      # - name: PNPM cache via actions/cache@v2
+      #   id: pnpm-cache
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
+      #     key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-pnpm-
 
-      - name: Install dependencies
-        run: node common/scripts/install-run-rush.js install
+      # - name: Install dependencies
+      #   run: node common/scripts/install-run-rush.js install
 
-      - name: Build components
-        run: node common/scripts/install-run-rush.js build --to create-release-notes
+      # - name: Build components
+      #   run: node common/scripts/install-run-rush.js build --to create-release-notes
 
-      - name: Create release notes
-        id: release-notes
-        run: |
-          node common/scripts/install-run-rush.js create-release-notes --package-name ${{ github.event.inputs.packageName }}
+      # - name: Create release notes
+      #   id: release-notes
+      #   run: |
+      #     node common/scripts/install-run-rush.js create-release-notes --package-name ${{ github.event.inputs.packageName }}
 
-      - name: Print latest version info
-        run: |
-          echo "${{ steps.release-notes.outputs.latestVersionTag }}"
+      # - name: Print latest version info
+      #   run: |
+      #     echo "${{ steps.release-notes.outputs.latestVersionTag }}"
 
-      - name: 'Create Release'
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.DS_RELEASE_PAT }}
-        with:
-          body_path: ./RELEASE_NOTES.md
-          name: ${{ steps.release-notes.outputs.latestVersionTag }}
-          tag_name: ${{ steps.release-notes.outputs.latestVersionTag }}
+      # - name: 'Create Release'
+      #   uses: softprops/action-gh-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.DS_RELEASE_PAT }}
+      #   with:
+      #     body_path: ./RELEASE_NOTES.md
+      #     name: ${{ steps.release-notes.outputs.latestVersionTag }}
+      #     tag_name: ${{ steps.release-notes.outputs.latestVersionTag }}
