@@ -44,12 +44,14 @@ jobs:
       - name: Git set author email
         run: git config --global user.email "uxplatformdevs@priceline.com"
 
+      - name: rush apply versions
+        run: |
+          node common/scripts/install-run-rush.js publish --apply --add-commit-details
+          git add -A
+
       - name: List changed packages
         id: list-changed
         run: node common/scripts/install-run-rush.js list-changed-packages
-
-      - name: rush apply versions
-        run: node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
 
       - name: publish npm-package
         run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
