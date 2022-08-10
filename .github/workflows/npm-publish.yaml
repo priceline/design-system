@@ -60,7 +60,7 @@ jobs:
   create-github-releases:
     needs: npm-publish
     runs-on: ubuntu-latest
-    if: needs.change-dispatcher.outputs.numChangedPackages > 0
+    if: ${{ fromJSON(needs.npm-publish.outputs.numChangedPackages) }} > 0
 
     strategy:
       matrix: ${{ fromJSON(needs.npm-publish.outputs.changedPackages) }}
