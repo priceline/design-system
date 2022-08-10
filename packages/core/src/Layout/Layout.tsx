@@ -70,7 +70,7 @@ const getChildrenWidths = (variation: string, numChildren: number) => {
   }
 }
 
-const memoGetChildrenWidths = moize(getChildrenWidths)
+const memoGetChildrenWidths = moize(getChildrenWidths, { profileName: 'getChildrenWidths' })
 
 // Map named sizes to responsive size values from theme
 const gapValues = {
@@ -114,7 +114,7 @@ const getGapValues = (gapProp, rowGapProp) => {
   return { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY }
 }
 
-const memoGetGapValues = moize(getGapValues)
+const memoGetGapValues = moize(getGapValues, { profileName: 'getGapValues' })
 
 const ALLOWED_LAYOUT_VALUES = ['50-50', '33-33-33', '33-66', '66-33', '25-25-25-25', '60-40', '40-60', '100']
 const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl']
