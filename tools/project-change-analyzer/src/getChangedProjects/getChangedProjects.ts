@@ -42,7 +42,7 @@ export async function runAsync(targetBranchName = 'refs/remotes/origin/main'): P
   const changedProjects = getPackagesWithDirectChanges(targetBranchName)
 
   setActionOutput('changedPackages', { projects: changedProjects })
-  setOutput('numChangedPackages', changedProjects.length)
+  setActionOutput('numChangedPackages', changedProjects.length)
 
   terminal.writeLine('Projects needing validation due to changes: ')
   const namesOfProjectsNeedingValidation: string[] = Array.from(changedProjects, (project) => project).sort()
