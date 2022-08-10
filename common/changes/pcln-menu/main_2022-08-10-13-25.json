@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Test change",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}
