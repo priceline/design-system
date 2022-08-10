@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "4.4.34",
+      "tag": "pcln-menu_v4.4.34",
+      "date": "Wed, 10 Aug 2022 14:02:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Test change",
+            "author": "Craig Palermo <craig.palermo@priceline.com>",
+            "commit": "a355080b438c12a021a89df410dff205f08b3720"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.29.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `4.5.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.29.1` to `4.29.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `4.5.1` to `4.5.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.4.33",
       "tag": "pcln-menu_v4.4.33",
       "date": "Tue, 09 Aug 2022 20:49:45 GMT",

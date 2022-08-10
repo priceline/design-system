@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.29.2",
+      "tag": "pcln-design-system_v4.29.2",
+      "date": "Wed, 10 Aug 2022 14:02:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Test change",
+            "author": "Craig Palermo <craig.palermo@priceline.com>",
+            "commit": "f58953f69e367fa549b65699aa33174e1fcf89f3"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.29.1",
       "tag": "pcln-design-system_v4.29.1",
       "date": "Mon, 08 Aug 2022 15:28:28 GMT",
