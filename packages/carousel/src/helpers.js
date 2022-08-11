@@ -9,7 +9,7 @@ import {
   MEDIA_QUERY_MATCH,
 } from './constants'
 
-const getSlideKey = moize(uuidv4)
+const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
 const getVisibleSlidesArray = (visibleSlides) =>
   Array.isArray(visibleSlides) ? visibleSlides : [XS_VISIBLE_SLIDES, SM_VISIBLE_SLIDES, visibleSlides]
