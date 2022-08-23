@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Added sunrise icon",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
