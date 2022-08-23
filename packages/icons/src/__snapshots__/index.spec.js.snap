@@ -10471,6 +10471,58 @@ exports[`renders SuccessOutline 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders Sunrise 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M19.073 15.927L22 13l-2.927-2.927V5.927h-4.146L12 3 9.073 5.927H4.927v4.146L2 13l2.927 2.927v4.146h14.146v-4.146zM12 18.305A5.31 5.31 0 016.695 13 5.31 5.31 0 0112 7.695 5.31 5.31 0 0117.305 13 5.31 5.31 0 0112 18.305z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M22 19.5H2v1h20v-1z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`renders Swap 1`] = `
 <DocumentFragment>
   .c1 {
