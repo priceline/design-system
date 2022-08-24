@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 import { Flex, applySizes } from 'pcln-design-system'
 
 const sizes = {
@@ -22,8 +22,8 @@ const MenuContainer = styled(Flex)`
   overflow-y: auto;
 
   & > * {
-    margin-right: ${themeGet('space.1')}px;
-    margin-bottom: ${themeGet('space.1')}px;
+    margin-right: ${themeGet('space.1')};
+    margin-bottom: ${themeGet('space.1')};
   }
 
   max-height: ${(props) => (props.maxHeight ? props.maxHeight : '100%')};

@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-
-import { Box } from '../Box'
+import PropTypes from 'prop-types'
+import { Box, IBoxProps } from '../Box'
 import { Text } from '../Text'
 
 const getMaxWidth = (em) => parseInt(em) - 0.01
@@ -34,7 +33,7 @@ const hidden = (key) => (props) =>
       }
     : null
 
-const propTypes = {
+const hidePropTypes = {
   xs: PropTypes.bool,
   sm: PropTypes.bool,
   md: PropTypes.bool,
@@ -44,7 +43,17 @@ const propTypes = {
   print: PropTypes.bool,
 }
 
-const Hide: React.FC<InferProps<typeof propTypes>> = styled(Box)`
+export interface IHideProps extends IBoxProps {
+  xs?: boolean
+  sm?: boolean
+  md?: boolean
+  lg?: boolean
+  xl?: boolean
+  xxl?: boolean
+  print?: boolean
+}
+
+const Hide: React.FC<IHideProps> & { text: React.FC<IHideProps> } = styled(Box)`
   ${hidden('xs')}
   ${hidden('sm')}
   ${hidden('md')}
@@ -54,7 +63,7 @@ const Hide: React.FC<InferProps<typeof propTypes>> = styled(Box)`
   ${hidden('print')};
 `
 
-Hide.propTypes = propTypes
+Hide.propTypes = hidePropTypes
 
 Hide.displayName = 'Hide'
 Hide.text = styled(Text)`

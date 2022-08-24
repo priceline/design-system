@@ -1,17 +1,24 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
 import styled from 'styled-components'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
-import { space, width, borderColor } from 'styled-system'
+import { space, width, SpaceProps, WidthProps, BorderColorProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 
-const propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
-  ...borderColor.propTypes,
+const dividerPropTypes = {
+  ...propTypes.space,
+  ...propTypes.width,
+  ...propTypes.borderColor,
   color: deprecatedColorValue(),
 }
 
-const Divider: React.FC<InferProps<typeof propTypes>> = styled.hr`
+export interface IDividerProps extends SpaceProps, WidthProps, BorderColorProps {
+  color?: string
+}
+
+const Divider: React.FC<IDividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
+  ml: mx ? null : ml,
+  mr: mx ? null : mr,
+}))`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -29,6 +36,6 @@ Divider.defaultProps = {
   mr: 0,
 }
 
-Divider.propTypes = propTypes
+Divider.propTypes = dividerPropTypes
 
 export default Divider

@@ -47,11 +47,11 @@ describe('Layout', () => {
       </Layout>
     )
 
-    expect(getByTestId('layout-flex')).toHaveStyle(`margin-left: -${theme.space[1]}px;`)
-    expect(getByTestId('layout-flex')).toHaveStyle(`margin-right: -${theme.space[1]}px;`)
-    expect(getByTestId('box-1')).toHaveStyle(`padding-left: ${theme.space[1]}px;`)
-    expect(getByTestId('box-1')).toHaveStyle(`padding-right: ${theme.space[1]}px;`)
-    expect(getByTestId('box-2')).toHaveStyle(`padding-left: ${theme.space[1]}px;`)
+    expect(getByTestId('layout-flex')).toHaveStyle(`margin-left: -${theme.space[1]};`)
+    expect(getByTestId('layout-flex')).toHaveStyle(`margin-right: -${theme.space[1]};`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-left: ${theme.space[1]};`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-right: ${theme.space[1]};`)
+    expect(getByTestId('box-2')).toHaveStyle(`padding-left: ${theme.space[1]};`)
   })
 
   it('renders with gap as responsive array', () => {
@@ -63,9 +63,9 @@ describe('Layout', () => {
       </Layout>
     )
 
-    expect(getByTestId('box-1')).toHaveStyle(`padding-left: ${theme.space[1]}px;`)
-    expect(getByTestId('box-1')).toHaveStyle(`padding-right: ${theme.space[1]}px;`)
-    expect(getByTestId('box-2')).toHaveStyle(`padding-left: ${theme.space[1]}px;`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-left: ${theme.space[1]};`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-right: ${theme.space[1]};`)
+    expect(getByTestId('box-2')).toHaveStyle(`padding-left: ${theme.space[1]};`)
   })
 
   it('renders with row gap', () => {
@@ -77,11 +77,11 @@ describe('Layout', () => {
       </Layout>
     )
 
-    expect(getByTestId('layout-flex')).toHaveStyle(`margin-top: -${theme.space[1]}px;`)
-    expect(getByTestId('layout-flex')).toHaveStyle(`margin-bottom: -${theme.space[1]}px;`)
-    expect(getByTestId('box-1')).toHaveStyle(`padding-top: ${theme.space[1]}px;`)
-    expect(getByTestId('box-1')).toHaveStyle(`padding-bottom: ${theme.space[1]}px;`)
-    expect(getByTestId('box-2')).toHaveStyle(`padding-top: ${theme.space[1]}px;`)
+    expect(getByTestId('layout-flex')).toHaveStyle(`margin-top: -${theme.space[1]};`)
+    expect(getByTestId('layout-flex')).toHaveStyle(`margin-bottom: -${theme.space[1]};`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-top: ${theme.space[1]};`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-bottom: ${theme.space[1]};`)
+    expect(getByTestId('box-2')).toHaveStyle(`padding-top: ${theme.space[1]};`)
   })
 
   it('renders with row gap as responsive array', () => {
@@ -93,8 +93,8 @@ describe('Layout', () => {
       </Layout>
     )
 
-    expect(getByTestId('box-1')).toHaveStyle(`padding-top: ${theme.space[1]}px;`)
-    expect(getByTestId('box-1')).toHaveStyle(`padding-bottom: ${theme.space[1]}px;`)
-    expect(getByTestId('box-2')).toHaveStyle(`padding-top: ${theme.space[1]}px;`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-top: ${theme.space[1]};`)
+    expect(getByTestId('box-1')).toHaveStyle(`padding-bottom: ${theme.space[1]};`)
+    expect(getByTestId('box-2')).toHaveStyle(`padding-top: ${theme.space[1]};`)
   })
 })

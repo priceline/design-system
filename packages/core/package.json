@@ -4,10 +4,12 @@
   "description": "Priceline Design System",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
+  "types": "types/index.d.ts",
   "sideEffects": false,
   "files": [
     "lib-esm",
-    "lib-commonjs"
+    "lib-commonjs",
+    "types"
   ],
   "repository": {
     "type": "git",
@@ -63,13 +65,14 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@styled-system/prop-types": "^5.1.5",
     "@styled-system/theme-get": "^5.1.2",
     "@types/styled-system": "^4.2.2",
     "deepmerge": "^4.2.2",
     "hoist-non-react-statics": "^3.3.2",
     "pcln-icons": "workspace:*",
     "prop-types": "^15.8.1",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
@@ -92,7 +95,7 @@
     "eslint": "^8.6.0",
     "jest": "^26.6.3",
     "jest-standard-reporter": "^2.0.0",
-    "jest-styled-components": "^6.3.4",
+    "jest-styled-components": "^7.1.0",
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -100,15 +103,16 @@
     "require-from-string": "2.0.2",
     "tslib": "^2.4.0",
     "rimraf": "^3.0.2",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.3.5",
     "typescript": "^4.5.4",
     "@rushstack/heft": "^0.44.2",
     "@types/jest": "27.4.0",
-    "@styled-system/prop-types": "^5.1.5"
+    "@types/react": "^17",
+    "@types/styled-system": "^5.1.15"
   },
   "peerDependencies": {
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
-    "styled-components": ">=4.4.1"
+    "styled-components": ">=5 <5.3.4"
   }
 }

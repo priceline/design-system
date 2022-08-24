@@ -10,7 +10,7 @@ export default {
 
 export const Grid = () => (
   <Box p={4}>
-    <Flex wrap mx={-3}>
+    <Flex mx={-3}>
       <Box width={[1, 1 / 2]} px={3} mb={4}>
         <Box bg='background.light'>
           <Text>Hello</Text>
@@ -90,7 +90,7 @@ const Card = ({ image, title, text }) => (
 )
 
 export const TiledCards = () => (
-  <Flex wrap>
+  <Flex flexWrap={'wrap'}>
     {cards.map((card) => (
       <Box key={card.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
         <Card {...card} />

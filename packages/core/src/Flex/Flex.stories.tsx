@@ -7,7 +7,7 @@ export default {
 }
 
 export const Basic = () => (
-  <Flex align='center'>
+  <Flex alignItems='center'>
     <Box width={1 / 2} p={3} color='white' bg='blue'>
       Flex
     </Box>
@@ -18,7 +18,7 @@ export const Basic = () => (
 )
 
 export const Wrap = () => (
-  <Flex wrap='wrap'>
+  <Flex flexWrap='wrap'>
     <Box width={[1, 1 / 2]} p={3} color='white' bg='blue'>
       Flex
     </Box>

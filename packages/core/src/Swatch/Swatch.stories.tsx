@@ -35,9 +35,8 @@ export const SelectColor = () => {
     <>
       <Swatch colors={['#D50032', '#1B7742', '#0033A0']} onClick={(color) => setColor(color)} />
       <Flex mt='3' flexDirection='row' alignItems='center'>
-        <Text>Color:</Text>
-        <Box width='14px' height='14px' bg={color} m={2} />
-        <Text> {color}</Text>
+        <Text mr={2}>Color:</Text>
+        <Text>{color}</Text>
       </Flex>
     </>
   )

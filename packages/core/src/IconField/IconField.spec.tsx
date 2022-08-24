@@ -120,9 +120,9 @@ describe('IconField', () => {
     expect(input).toHaveStyleRule('padding-left', '80px')
     expect(input).toHaveStyleRule('padding-right', '80px')
 
-    expect(calendarIcon).toHaveStyleRule('margin-left', '0')
+    expect(calendarIcon).toHaveStyleRule('margin-left', '0px')
     expect(calendarIcon).toHaveStyleRule('margin-right', '8px')
     expect(closeIcon).toHaveStyleRule('margin-left', '8px')
-    expect(closeIcon).toHaveStyleRule('margin-right', '0')
+    expect(closeIcon).toHaveStyleRule('margin-right', '0px')
   })
 })

@@ -15,6 +15,13 @@ exports[`GenericBanner renders 1`] = `
   outline: none;
 }
 
+.c1 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+  border-radius: 6px;
+}
+
 .c6 {
   text-align: left;
   width: 100%;
@@ -57,13 +64,6 @@ exports[`GenericBanner renders 1`] = `
 
 .c7 {
   font-size: 14px;
-}
-
-.c1 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-  border-radius: 6px;
 }
 
 .c0 {

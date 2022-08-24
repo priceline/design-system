@@ -42,7 +42,7 @@ describe('Image', () => {
     const image = screen.getByAltText('new-zealand-image')
     expect(image).toHaveStyleRule(
       'box-shadow',
-      '0 8px 32px 0 rgb(0,68,153,0.24),0 8px 16px 0 rgba(0,0,0,0.2),0 24px 64px 0 rgba(0,0,0,0.2)'
+      '0 -1px 0 0 rgb(0,68,153,0.03),0 8px 32px 0 rgba(0,0,0,0.24),0 8px 16px 0 rgba(0,0,0,0.2),0 24px 64px 0 rgba(0,0,0,0.2)'
     )
   })
 

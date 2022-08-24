@@ -6,7 +6,7 @@ const defaultStyles = (props) => `
   background: ${getPaletteColor(props.buttonBackground)(props)};
   border-radius: 100%;
   border: none;
-  box-shadow: ${props.theme.boxShadows[1]};
+  box-shadow: ${props.theme.shadows.md};
   color: ${getPaletteColor(props.buttonColor)(props)};
   &:hover {
     background: ${getPaletteColor(props.buttonHoverBackground)(props)};
@@ -46,7 +46,7 @@ const topBottomStyles = (props) =>
       opacity: 40%;
       color: ${getPaletteColor('border.base')(props)} !important;
       background: ${getPaletteColor('background.lightest')(props)} !important;
-      box-shadow: ${props.theme.boxShadows[0]};
+      box-shadow: ${props.theme.shadows.md};
     }
   `
     : null

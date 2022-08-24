@@ -25,7 +25,7 @@ const aliases = ['sm', 'md', 'lg', 'xl', 'xxl']
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
-export const space = [0, 4, 8, 16, 32, 64, 128]
+export const space = [0, 4, 8, 16, 32, 64, 128].map((n) => n + 'px')
 
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
@@ -229,55 +229,45 @@ export const typography = {
 export const radii = [0, 2, 6]
 export const radius = '2px'
 
-// export const borderRadii = {
-//   none: 'none',
-//   xsm: '2px',
-//   sm: '4px',
-//   md: '8px',
-//   lg: '12px',
-//   xl: '16px',
-//   '2xl': '24px',
-//   '3xl': '32px',
-//   full: '9999px',
-//   'action-sm': '9999px',
-//   'action-md': '9999px',
-//   'action-lg': '12px',
-// }
-
-export const borderRadii = {
+export const baseBorderRadii = {
   none: 'none',
   xsm: '2px',
-  sm: '2px',
-  md: '2px',
-  lg: '2px',
-  xl: '6px',
+  sm: '4px',
+  md: '8px',
+  lg: '12px',
+  xl: '16px',
   '2xl': '24px',
   '3xl': '32px',
   full: '9999px',
-  'action-sm': '2px',
-  'action-md': '2px',
-  'action-lg': '2px',
-  'action-xl': '2px',
+}
+
+export const actionBorderRadii = {
+  'action-sm': '9999px',
+  'action-md': '9999px',
+  'action-lg': '12px',
+  'action-xl': '12px',
+}
+
+export const borderRadii = {
+  ...baseBorderRadii,
+  ...actionBorderRadii,
 }
 
 export const maxContainerWidth = '1280px'
 
-// boxShadows
-export const boxShadows = [
-  `0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`,
-]
-
 export const shadows = {
-  sm: '0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
-  md: '0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
-  lg: '0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)',
-  xl: '0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)',
-  '2xl': '0 4px 12px 0 rgba(0,0,0,0.16),0 12px 12px -4px rgba(0,0,0,0.16),0 24px 64px -2px rgba(0,0,0,0.16)',
-  'overlay-lg': '0 8px 32px 0 rgba(0,0,0,0.24),0 8px 16px 0 rgba(0,0,0,0.2),0 24px 64px 0 rgba(0,0,0,0.2)',
-  'overlay-xl': '0 24px 72px 0 rgba(0,0,0,0.48),0 8px 16px 0 rgba(0,0,0,0.12),0 24px 64px 0 rgba(0,0,0,0.2)',
+  sm: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
+  md: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
+  lg: '0 -1px 0 0 rgba(0,0,0,0.03),0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)',
+  xl: '0 -1px 0 0 rgba(0,0,0,0.03),0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)',
+  '2xl':
+    '0 -1px 0 0 rgba(0,0,0,0.03),0 4px 12px 0 rgba(0,0,0,0.16),0 12px 12px -4px rgba(0,0,0,0.16),0 24px 64px -2px rgba(0,0,0,0.16)',
+  'overlay-md':
+    '0 -1px 0 0 rgba(0,0,0,0.03),0 4px 16px 0 rgba(0,0,0,0.2),0 4px 16px -4px rgba(0,0,0,0.2),0 12px 24px -2px rgba(0,0,0,0.2)',
+  'overlay-lg':
+    '0 -1px 0 0 rgba(0,0,0,0.03),0 8px 32px 0 rgba(0,0,0,0.24),0 8px 16px 0 rgba(0,0,0,0.2),0 24px 64px 0 rgba(0,0,0,0.2)',
+  'overlay-xl':
+    '0 -1px 0 0 rgba(0,0,0,0.03),0 24px 72px 0 rgba(0,0,0,0.48),0 8px 16px 0 rgba(0,0,0,0.12),0 24px 64px 0 rgba(0,0,0,0.2)',
 }
 
 export const textShadows = {
@@ -388,7 +378,6 @@ const theme = {
   borderRadii,
   radii,
   radius,
-  boxShadows,
   textShadows,
   shadows,
   maxContainerWidth,

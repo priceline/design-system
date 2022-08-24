@@ -33,7 +33,7 @@ const propTypes = {
   Image: PropTypes.object,
 }
 
-const ChipContent = ({
+const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
   disabled = undefined,
   selected = undefined,
   children = undefined,
@@ -50,7 +50,7 @@ const ChipContent = ({
   /* eslint-disable @typescript-eslint/naming-convention */
   BridgeIcon = undefined,
   ...props
-}): React.FC<InferProps<typeof propTypes>> => (
+}) => (
   <ChipContentWrapper
     data-testid='chipContentWrapper'
     hasChildren={Boolean(children)}

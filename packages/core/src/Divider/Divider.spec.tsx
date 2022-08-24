@@ -16,7 +16,7 @@ describe('Divider', () => {
   test('m prop sets margin', () => {
     const json = rendererCreateWithTheme(<Divider m={2} />).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('margin', theme.space[2] + 'px')
+    expect(json).toHaveStyleRule('margin', theme.space[2])
   })
 
   test('borderColor prop sets borderColor', () => {

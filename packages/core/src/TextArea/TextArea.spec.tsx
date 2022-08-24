@@ -17,8 +17,4 @@ describe('TextArea', () => {
     const json = rendererCreateWithTheme(<TextArea id={id} p={4} m={4} />).toJSON()
     expect(json).toMatchSnapshot()
   })
-  test('it renders an input element with large text', () => {
-    const json = rendererCreateWithTheme(<TextArea id={id} fontSize={4} />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
 })

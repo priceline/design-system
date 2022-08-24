@@ -10,6 +10,7 @@ const LabelText = styled.span`
   margin-left: 8px;
 `
 
+// @ts-ignore
 class MockForm extends React.Component {
   private setState
   private state
@@ -96,7 +97,7 @@ export function ForwardRefs() {
     return (
       <>
         <Label fontSize='14px'>
-          <Radio checked dsRef={dsRef} />
+          <Radio checked />
           <LabelText>selected</LabelText>
         </Label>
         <Button onClick={onClick} mt={4}>

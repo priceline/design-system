@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Box, Absolute, Input, getPaletteColor } from '..'
 
@@ -54,15 +54,18 @@ const propTypes = {
   name: PropTypes.string,
 }
 
-const Toggle: React.FC<InferProps<typeof propTypes>> = ({
-  isOn,
-  label,
-  onToggle,
-  disabled,
-  height,
-  icon,
-  name,
-}) => {
+export interface IToggleProps {
+  isOn?: boolean
+  label?: string
+  onToggle?: (unknown) => unknown
+  disabled?: boolean
+  width?: string
+  height?: number
+  icon?: React.ReactNode
+  name?: string
+}
+
+const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, height, icon, name }) => {
   const width = height * 1.875
   const circleAbsoluteSize = height - 4
   const leftToggleOnPosition = width - circleAbsoluteSize - 2
@@ -89,13 +92,13 @@ const Toggle: React.FC<InferProps<typeof propTypes>> = ({
         name={name}
       />
 
-      <OutlineAbsolute borderRadius='full' isOn={isOn} left={-4} top={-4} width='calc(100% + 8px)' />
+      <OutlineAbsolute borderRadius='full' isOn={isOn} left='-4px' top='-4px' width='calc(100% + 8px)' />
 
       <CircleAbsolute
         borderRadius='full'
         color='background.lightest'
-        left={isOn ? leftToggleOnPosition : 2}
-        top={2}
+        left={isOn ? leftToggleOnPosition : '2px'}
+        top='2px'
         width={`${circleAbsoluteSize}px`}
       >
         {icon}

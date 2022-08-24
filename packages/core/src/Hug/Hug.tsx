@@ -1,10 +1,9 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import { Box } from '../Box'
-import { Card } from '../Card'
+import { Card, ICardProps } from '../Card'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
 import { applyVariations, deprecatedColorValue } from '../utils'
@@ -20,7 +19,7 @@ const BorderConcealer = styled(Box)`
   }
 `
 
-const propTypes = {
+const hugPropTypes = {
   iconDisplay: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.node,
   text: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node), PropTypes.string]),
@@ -29,15 +28,15 @@ const propTypes = {
   fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 }
 
-const Hug: React.FC<InferProps<typeof propTypes>> = ({
-  bg,
-  color,
-  p,
-  fontSize,
-  icon,
-  iconDisplay,
-  ...props
-}) => {
+export interface IHugProps extends ICardProps {
+  iconDisplay?: string[]
+  icon?: React.ReactNode
+  text?: React.ReactNode | React.ReactNode[] | string
+  color?: string
+  fontSize?: string | number
+}
+
+const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
   let iconClone
 
   if (React.isValidElement(icon)) {
@@ -69,6 +68,6 @@ Hug.defaultProps = {
   p: 2,
 }
 
-Hug.propTypes = propTypes
+Hug.propTypes = hugPropTypes
 
 export default Hug

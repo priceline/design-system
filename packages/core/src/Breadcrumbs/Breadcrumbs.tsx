@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
-import BreadcrumbLink from './BreadcrumbLink'
+import BreadcrumbLink, { IBreadcrumbLink } from './BreadcrumbLink'
 import { Flex } from '../Flex'
 
 const propTypes = {
@@ -8,7 +8,10 @@ const propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-const Breadcrumbs: React.FC<InferProps<typeof propTypes>> = ({ className, children }) => {
+const Breadcrumbs: React.FC<InferProps<typeof propTypes>> & { Link: React.FC<IBreadcrumbLink> } = ({
+  className,
+  children,
+}) => {
   return (
     <Flex className={className}>
       {React.Children.map(children, (child, i) => {

@@ -1,4 +1,4 @@
-import { CloseButton, deprecatedPropType, Flex, Text } from 'pcln-design-system'
+import { CloseButton, deprecatedColorValue, Flex, Text } from 'pcln-design-system'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
@@ -42,8 +42,8 @@ ModalHeader.displayName = ModalHeader
 
 ModalHeader.propTypes = {
   ...space.propTypes,
-  bg: deprecatedPropType('color'),
-  color: PropTypes.string,
+  bg: deprecatedColorValue(),
+  color: deprecatedColorValue(),
   onClose: PropTypes.func,
   textStyle: PropTypes.string,
   title: PropTypes.string,

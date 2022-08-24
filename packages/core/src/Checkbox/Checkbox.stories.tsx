@@ -48,7 +48,8 @@ const FilterExample: React.FC = () => {
 
   const handleFilterSelection = (event: React.SyntheticEvent<HTMLInputElement>) => {
     const target = event.target
-    if (target.id === 'all') {
+    // @ts-ignore
+    if (target?.id === 'all') {
       if (filterState.all || filterState.indeterminate) {
         setFilterState({
           all: false,
@@ -67,6 +68,7 @@ const FilterExample: React.FC = () => {
         })
       }
     } else {
+      // @ts-ignore
       const newFilterState = { ...filterState, [target.id]: !filterState[target.id] }
       const indeterminate = !(
         newFilterState.small === newFilterState.medium && newFilterState.small === newFilterState.large
@@ -74,6 +76,7 @@ const FilterExample: React.FC = () => {
       const all = newFilterState.small && newFilterState.medium && newFilterState.large
       setFilterState({
         ...filterState,
+        // @ts-ignore
         [target.id]: !filterState[target.id],
         indeterminate,
         all,

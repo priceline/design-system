@@ -1,27 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
+import { InferProps } from 'prop-types'
 import { fontWeight, borderRadius } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 import { Box } from '../Box'
-import { deprecatedPropType, borderRadiusAttrs } from '../utils'
+import { deprecatedColorValue, borderRadiusAttrs } from '../utils'
 
 const defaultProps = {
   fontWeight: 'bold',
   px: 2,
   color: 'alert',
-  bg: 'orange',
   borderRadius: 'md',
+  bg: 'alert',
 }
 
-const propTypes = {
-  ...fontWeight.propTypes,
-  bg: deprecatedPropType('color'),
-  color: PropTypes.string,
+const ratingBadgePropTypes = {
+  ...Box.propTypes,
+  fontWeight: propTypes.typography.fontWeight,
+  bg: deprecatedColorValue(),
+  color: deprecatedColorValue(),
 }
 
-// TODO remove once we delete deprecated bg prop
 function getBgAndColorProps({ color, bg }) {
   const { bg: defaultBg, color: defaultColor } = defaultProps
+
   if (bg && color && bg !== defaultBg && color !== defaultColor) {
     // bg and color
     return { bg, color }
@@ -31,13 +33,13 @@ function getBgAndColorProps({ color, bg }) {
   } else if (bg === defaultBg && color !== defaultColor) {
     // color, no bg
     return { bg: undefined, color }
-  } else if (bg !== defaultBg && color === defaultColor) {
+  } else if (color === defaultColor) {
     // bg, no color
     return { color: bg, bg: undefined }
   }
 }
 
-const RatingBadge: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) => ({
+const RatingBadge: React.FC<InferProps<typeof ratingBadgePropTypes>> = styled(Box).attrs((props) => ({
   ...getBgAndColorProps(props),
   ...borderRadiusAttrs(props),
 }))`
