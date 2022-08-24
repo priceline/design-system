@@ -9,32 +9,21 @@ const defaultProps = {
   fontWeight: 'bold',
   px: 2,
   color: 'alert',
-  bg: 'orange',
   borderRadius: 'md',
 }
 
 const propTypes = {
+  ...Box.propTypes,
   ...fontWeight.propTypes,
   bg: deprecatedPropType('color'),
   color: PropTypes.string,
 }
 
-// TODO remove once we delete deprecated bg prop
 function getBgAndColorProps({ color, bg }) {
-  const { bg: defaultBg, color: defaultColor } = defaultProps
-  if (bg && color && bg !== defaultBg && color !== defaultColor) {
-    // bg and color
-    return { bg, color }
-  } else if (bg === defaultBg && color === defaultColor) {
-    // no bg, no color
-    return { bg: undefined, color }
-  } else if (bg === defaultBg && color !== defaultColor) {
-    // color, no bg
-    return { bg: undefined, color }
-  } else if (bg !== defaultBg && color === defaultColor) {
-    // bg, no color
-    return { color: bg, bg: undefined }
+  if (bg && color === 'alert') {
+    return { bg: undefined, color: bg }
   }
+  return { bg, color }
 }
 
 const RatingBadge: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) => ({

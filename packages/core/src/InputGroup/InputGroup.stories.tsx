@@ -36,7 +36,7 @@ export function ForwardRefs() {
     }
     return (
       <>
-        <Input dsRef={dsRef} value='Sad Panda :(' />
+        <Input value='Sad Panda :(' />
         <Button onClick={onClick} mt={4}>
           Click to change input value via ref
         </Button>

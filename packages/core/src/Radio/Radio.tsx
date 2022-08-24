@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
 import { applyVariations, deprecatedColorValue, getPaletteColor } from '../utils'
@@ -66,7 +66,13 @@ const propTypes = {
   disabled: PropTypes.bool,
 }
 
-const Radio: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
+export interface IRadioProps extends Partial<Omit<HTMLInputElement, 'size'>> {
+  size?: number
+  color?: string
+  onClick?: (unknown) => unknown
+}
+
+const Radio: React.FC<IRadioProps> = React.forwardRef((props, ref) => {
   const { checked, disabled, size } = props
 
   const borderAdjustedSize = size + 4

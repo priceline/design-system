@@ -1,7 +1,16 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize, fontWeight, width } from 'styled-system'
+import {
+  space,
+  fontSize,
+  fontWeight,
+  width,
+  SpaceProps,
+  FontSizeProps,
+  FontWeightProps,
+  WidthProps,
+} from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const nowrap = (props) =>
@@ -21,15 +30,28 @@ const accessiblyHide = (props) =>
       }
     : null
 
-const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+const labelPropTypes = {
+  ...propTypes.space,
+  ...propTypes.fontSize,
+  ...propTypes.fontWeight,
+  ...propTypes.width,
   color: deprecatedColorValue(),
-  ...fontWeight.propTypes,
-  ...width.propTypes,
 }
 
-const Label: React.FC<InferProps<typeof propTypes>> = styled.label`
+export interface ILabelProps
+  extends SpaceProps,
+    FontSizeProps,
+    FontWeightProps,
+    WidthProps,
+    Partial<Omit<HTMLLabelElement, 'children'>> {
+  children?: React.ReactNode | string
+  color?: string
+  autoHide?: boolean
+  nowrap?: boolean
+  for?: string
+}
+
+const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label`
   font-size: 10px;
   letter-spacing: 0.2px;
   display: block;
@@ -44,7 +66,7 @@ const Label: React.FC<InferProps<typeof propTypes>> = styled.label`
   ${accessiblyHide}
 `
 
-Label.propTypes = propTypes
+Label.propTypes = labelPropTypes
 
 Label.defaultProps = {
   fontSize: '10px',

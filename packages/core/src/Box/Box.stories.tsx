@@ -20,7 +20,7 @@ export default {
 }
 
 const Template = (args) => (
-  <Box {...args}>
+  <Box borderRadiusSize='asd' {...args}>
     <Text p={3}>Hello!</Text>
   </Box>
 )

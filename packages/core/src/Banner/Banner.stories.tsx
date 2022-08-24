@@ -25,7 +25,6 @@ export const AllBgs = () => (
       p={3}
       header='green'
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare.'
-      bg='green'
       onClose={action('closed')}
     />
     <Banner

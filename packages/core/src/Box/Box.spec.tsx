@@ -49,24 +49,4 @@ describe('Box', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('box-shadow', theme.shadows.sm)
   })
-
-  describe('deprecated prop types', () => {
-    let consoleError
-    beforeEach(() => {
-      consoleError = console.error
-      console.error = jest.fn()
-    })
-    afterEach(() => (console.error = consoleError))
-
-    test('bg prop sets background color and warns', () => {
-      const json = rendererCreateWithTheme(<Box bg='green' />).toJSON()
-      expect(json).toHaveStyleRule('background-color', theme.colors.green)
-      expect(console.error).toHaveBeenCalledWith(
-        'Warning: Failed %s type: %s%s',
-        'prop',
-        'The `bg` prop is deprecated and will be removed in a future release. Please use `color` instead.',
-        expect.any(String)
-      )
-    })
-  })
 })

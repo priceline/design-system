@@ -1,24 +1,43 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { top, right, bottom, left, zIndex } from 'styled-system'
+import { Box, IBoxProps } from '../Box'
+import {
+  top,
+  right,
+  bottom,
+  left,
+  zIndex,
+  TopProps,
+  RightProps,
+  BottomProps,
+  LeftProps,
+  ZIndexProps,
+} from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 
-const propTypes = {
-  ...top.propTypes,
-  ...right.propTypes,
-  ...bottom.propTypes,
-  ...left.propTypes,
-  ...zIndex.propTypes,
+const relativePropTypes = {
+  ...propTypes.top,
+  ...propTypes.right,
+  ...propTypes.bottom,
+  ...propTypes.left,
+  ...propTypes.zIndex,
 }
 
-const Relative: React.FC<InferProps<typeof propTypes>> = styled(Box)`
+export interface IRelativeProps
+  extends TopProps,
+    RightProps,
+    BottomProps,
+    LeftProps,
+    ZIndexProps,
+    IBoxProps {}
+
+const Relative: React.FC<IRelativeProps> = styled(Box)`
   position: relative;
   ${top} ${bottom} ${left} ${right}
   ${zIndex}
 `
 
-Relative.propTypes = propTypes
+Relative.propTypes = relativePropTypes
 
 Relative.displayName = 'Relative'
 

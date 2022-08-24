@@ -1,34 +1,51 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { space, width, alignItems, justifyContent, flexWrap, flexDirection } from 'styled-system'
+import {
+  alignItems,
+  justifyContent,
+  flexWrap,
+  flexDirection,
+  AlignItemsProps,
+  JustifyContentProps,
+  FlexWrapProps,
+  FlexDirectionProps,
+  SpaceProps,
+  WidthProps,
+  AlignContentProps,
+} from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 
-import { Box } from '../Box'
+import { Box, IBoxProps } from '../Box'
 
-import { applyVariations, deprecatedPropType, deprecatedColorValue } from '../utils'
+import { applyVariations, deprecatedColorValue } from '../utils'
 
-const propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
+const flexPropTypes = {
+  ...propTypes.space,
+  ...propTypes.width,
+  ...propTypes.alignItems,
+  ...propTypes.justifyContent,
+  ...propTypes.flexWrap,
+  ...propTypes.flexDirection,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
-  ...alignItems.propTypes,
-  ...justifyContent.propTypes,
-  ...flexWrap.propTypes,
-  ...flexDirection.propTypes,
-  wrap: deprecatedPropType('flexWrap'),
-  align: deprecatedPropType('alignItems'),
-  justify: deprecatedPropType('justifyContent'),
+  bg: deprecatedColorValue(),
 }
 
-const Flex: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs(
-  ({ wrap, align, justify, ...props }) => ({
-    flexWrap: wrap ? 'wrap' : undefined,
-    alignItems: align,
-    justifyContent: justify,
-    ...props,
-  })
-)`
+export interface IFlexProps
+  extends IBoxProps,
+    SpaceProps,
+    WidthProps,
+    AlignItemsProps,
+    JustifyContentProps,
+    AlignContentProps,
+    FlexWrapProps,
+    FlexDirectionProps {}
+
+const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
+  flexWrap: wrap ? 'wrap' : undefined,
+  alignItems: align,
+  justifyContent: justify,
+  ...props,
+}))`
   display: flex;
   ${applyVariations('Flex')}
   ${alignItems} ${justifyContent}
@@ -36,7 +53,7 @@ const Flex: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs(
   ${flexWrap}
 `
 
-Flex.propTypes = propTypes
+Flex.propTypes = flexPropTypes
 
 Flex.displayName = 'Flex'
 

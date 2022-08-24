@@ -62,7 +62,7 @@ const tooltipAlign = (props) => {
 
 const TooltipContent = styled(Box)`
   display: inline;
-  box-shadow: ${({ theme }) => theme.boxShadows[1]};
+  box-shadow: ${({ theme }) => theme.shadows.md};
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
   position: absolute;
   box-sizing: border-box;

@@ -229,45 +229,30 @@ export const typography = {
 export const radii = [0, 2, 6]
 export const radius = '2px'
 
-// export const borderRadii = {
-//   none: 'none',
-//   xsm: '2px',
-//   sm: '4px',
-//   md: '8px',
-//   lg: '12px',
-//   xl: '16px',
-//   '2xl': '24px',
-//   '3xl': '32px',
-//   full: '9999px',
-//   'action-sm': '9999px',
-//   'action-md': '9999px',
-//   'action-lg': '12px',
-// }
-
-export const borderRadii = {
+export const baseBorderRadii = {
   none: 'none',
   xsm: '2px',
-  sm: '2px',
-  md: '2px',
-  lg: '2px',
-  xl: '6px',
+  sm: '4px',
+  md: '8px',
+  lg: '12px',
+  xl: '16px',
   '2xl': '24px',
   '3xl': '32px',
   full: '9999px',
-  'action-sm': '2px',
-  'action-md': '2px',
-  'action-lg': '2px',
+}
+
+export const actionBorderRadii = {
+  'action-sm': '9999px',
+  'action-md': '9999px',
+  'action-lg': '12px',
+}
+
+export const borderRadii = {
+  ...baseBorderRadii,
+  ...actionBorderRadii,
 }
 
 export const maxContainerWidth = '1280px'
-
-// boxShadows
-export const boxShadows = [
-  `0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`,
-]
 
 export const shadows = {
   sm: '0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
@@ -387,7 +372,6 @@ const theme = {
   borderRadii,
   radii,
   radius,
-  boxShadows,
   textShadows,
   shadows,
   maxContainerWidth,

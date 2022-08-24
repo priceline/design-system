@@ -106,6 +106,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
   const inputRef = useRef()
 
   useEffect(() => {
+    // @ts-ignore
     inputRef.current.indeterminate = props.indeterminate
   }, [props.indeterminate])
 
@@ -131,8 +132,10 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
             element.indeterminate = true
           }
           if (ref) {
+            // @ts-ignore
             ref.current = element
           }
+          // @ts-ignore
           inputRef.current = element
         }}
       />

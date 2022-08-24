@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react'
 import { InferProps } from 'prop-types'
 

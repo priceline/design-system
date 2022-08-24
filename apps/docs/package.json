@@ -21,7 +21,7 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^4.4.1"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.15.5",

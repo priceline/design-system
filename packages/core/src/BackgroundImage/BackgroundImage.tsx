@@ -1,7 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-import { width, height, borderRadius } from 'styled-system'
+import PropTypes from 'prop-types'
+import { width, height, borderRadius, WidthProps, HeightProps, BorderRadiusProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 import {
   getPaletteColor,
   borderRadiusAttrs,
@@ -21,10 +22,10 @@ const variations = {
 
 const image = (props) => (props.image ? { backgroundImage: `url(${props.image})` } : null)
 
-const propTypes = {
-  ...height.propTypes,
-  ...width.propTypes,
-  ...borderRadius.propTypes,
+const backgroundImagePropTypes = {
+  ...propTypes.height,
+  ...propTypes.width,
+  ...propTypes.borderRadius,
   /** background-image url */
   image: PropTypes.string,
   variation: PropTypes.oneOf(Object.keys(variations)),
@@ -32,7 +33,18 @@ const propTypes = {
   rounded: PropTypes.oneOf(roundedValues),
 }
 
-const BackgroundImage: React.FC<InferProps<typeof propTypes>> = styled.div.attrs(borderRadiusAttrs)`
+export interface IBackgroundImageProps
+  extends WidthProps,
+    HeightProps,
+    BorderRadiusProps,
+    Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'width' | 'height'> {
+  variation?: 'parallax' | 'static'
+  image?: string
+  borderRadius?: string
+  rounded?: string
+}
+
+const BackgroundImage: React.FC<IBackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +53,7 @@ const BackgroundImage: React.FC<InferProps<typeof propTypes>> = styled.div.attrs
   ${image} ${height} ${width} ${borderRadius};
 `
 
-BackgroundImage.propTypes = propTypes
+BackgroundImage.propTypes = backgroundImagePropTypes
 
 BackgroundImage.defaultProps = {
   variation: 'static',

@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { alignItems, fontSize, justifyContent } from 'styled-system'
-import PropTypes, { InferProps } from 'prop-types'
+import { AlignItemsProps, JustifyContentProps, FontSizeProps, PaddingProps, MarginProps } from 'styled-system'
+import PropTypes from 'prop-types'
+import propTypes from '@styled-system/prop-types'
+
 import { Banner } from '../Banner'
 import { Box } from '../Box'
 import { Flex } from '../Flex'
@@ -33,10 +35,10 @@ const CustomButton = styled(Button)`
   text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `
 
-const propTypes = {
-  ...alignItems.propTypes,
-  ...justifyContent.propTypes,
-  ...fontSize.propTypes,
+const genericBannerProps = {
+  ...propTypes.alignItems,
+  ...propTypes.justifyContent,
+  ...propTypes.fontSize,
   buttonClick: PropTypes.func,
   buttonSize: PropTypes.oneOf(['small', 'medium', 'large']),
   buttonVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
@@ -55,7 +57,35 @@ const propTypes = {
   urlText: PropTypes.string,
 }
 
-const GenericBanner: React.FC<InferProps<typeof propTypes>> = ({
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Node = React.ReactElement<any, string | React.JSXElementConstructor<any>>
+
+export interface IGenericBannerProps
+  extends AlignItemsProps,
+    JustifyContentProps,
+    FontSizeProps,
+    PaddingProps,
+    MarginProps {
+  buttonClick?: () => unknown
+  buttonSize?: 'small' | 'medium' | 'large'
+  buttonVariation?: 'fill' | 'outline' | 'link'
+  ctaText?: Node
+  heading?: Node
+  iconLeft?: Node
+  iconRight?: Node
+  imageLeft?: Node
+  linkVariation?: 'fill' | 'outline' | 'link'
+  borderRadius?: string
+  linkColor?: string
+  text?: Node
+  URLProps?: {
+    href: string
+    target?: string
+  }
+  color?: string
+}
+
+const GenericBanner: React.FC<IGenericBannerProps> = ({
   alignItems,
   buttonClick,
   buttonSize,
@@ -129,7 +159,7 @@ const GenericBanner: React.FC<InferProps<typeof propTypes>> = ({
   )
 }
 
-GenericBanner.propTypes = propTypes
+GenericBanner.propTypes = genericBannerProps
 
 GenericBanner.defaultProps = {
   alignItems: 'center',

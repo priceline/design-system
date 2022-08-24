@@ -54,7 +54,6 @@ export const InputAndIconButton = () => (
     <Input placeholder='Choose Date' />
     <IconButton
       icon={<CloseIcon />}
-      size={24}
       color='gray'
       title='Clear text'
       onClick={action('Icon button clicked')}
@@ -84,7 +83,6 @@ export const IconInputAndIconButton = () => (
     <Input placeholder='Choose Date' />
     <IconButton
       icon={<CloseIcon />}
-      size={24}
       color='gray'
       title='Clear text'
       onClick={action('Icon button clicked')}

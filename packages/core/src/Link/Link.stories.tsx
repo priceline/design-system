@@ -40,7 +40,7 @@ LinkComponent.story = {
 
 export const AsSmallFilledButton = () => (
   <>
-    <Link variation='fill' size='small' href='https://www.priceline.com/home/' target='_blank'>
+    <Link variation='fill' href='https://www.priceline.com/home/' target='_blank'>
       Priceline Home
     </Link>
   </>

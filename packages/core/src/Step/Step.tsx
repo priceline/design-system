@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Check } from 'pcln-icons'
 
@@ -28,14 +28,15 @@ const propTypes = {
   onClick: PropTypes.func,
 }
 
-const Step: React.FC<InferProps<typeof propTypes>> = ({
-  className,
-  active,
-  completed,
-  children,
-  onClick,
-  ...props
-}) => {
+export interface IStepProps {
+  className?: string
+  active?: boolean
+  completed?: boolean
+  children?: React.ReactNode | string
+  onClick?: (unknown) => unknown
+}
+
+const Step: React.FC<IStepProps> = ({ className, active, completed, children, onClick, ...props }) => {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (

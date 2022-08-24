@@ -146,6 +146,7 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('border-radius', borderRadius.md)
 
     rerender(
+      // @ts-ignore
       <Button size='large' borderRadius='NOT VALID'>
         BUTTON
       </Button>
@@ -161,6 +162,7 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('box-shadow', undefined)
 
     Array.from(boxShadowSizeValues).forEach((size: string) => {
+      // @ts-ignore
       rerender(<Button boxShadowSize={size}>BUTTON</Button>)
       expect(button).toHaveStyleRule('box-shadow', shadows[size])
     })
@@ -424,24 +426,6 @@ describe('Button', () => {
           modifier: ':disabled',
         })
       })
-    })
-  })
-
-  describe('deprecated props', () => {
-    it('should shim deprecated "fullWidth" prop', () => {
-      console.error = jest.fn()
-
-      expect(() => {
-        const { getByText } = render(<Button fullWidth>BUTTON</Button>)
-
-        expect(getByText('BUTTON')).toHaveStyleRule('width', '100%')
-        expect(console.error).toHaveBeenCalledWith(
-          'Warning: Failed %s type: %s%s',
-          'prop',
-          'The `fullWidth` prop is deprecated and will be removed in a future release. Please use `width` instead.',
-          expect.any(String)
-        )
-      }).not.toThrow()
     })
   })
 

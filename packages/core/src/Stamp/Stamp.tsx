@@ -1,7 +1,9 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, fontSize, borderRadius } from 'styled-system'
+import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, BorderRadiusProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import { themeGet } from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,
@@ -52,9 +54,10 @@ const variations = {
   `,
 }
 
-const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+const stampPropTypes = {
+  ...propTypes.space,
+  ...propTypes.fontSize,
+  ...propTypes.borderRadius,
   size: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(sizes)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),
@@ -65,7 +68,15 @@ const propTypes = {
   borderColor: deprecatedColorValue(),
 }
 
-const Stamp: React.FC<InferProps<typeof propTypes>> = styled.div.attrs(borderRadiusAttrs)`
+export interface IStampPropTypes extends SpaceProps, FontSizeProps, BorderRadiusProps {
+  color?: string
+  bg?: string
+  borderColor?: string
+  size?: 'small' | 'medium'
+  variation?: 'outline' | 'fill' | 'solid'
+}
+
+const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -84,7 +95,7 @@ const Stamp: React.FC<InferProps<typeof propTypes>> = styled.div.attrs(borderRad
 
 Stamp.displayName = 'Stamp'
 
-Stamp.propTypes = propTypes
+Stamp.propTypes = stampPropTypes
 
 Stamp.defaultProps = {
   px: 1,

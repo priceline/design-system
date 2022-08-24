@@ -1,9 +1,10 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-import { width, space, themeGet, boxShadow } from 'styled-system'
+import PropTypes from 'prop-types'
+import { width, space, boxShadow, WidthProps, SpaceProps, BoxShadowProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import { themeGet } from '@styled-system/theme-get'
 import {
-  deprecatedPropType,
   applySizes,
   applyVariations,
   getPaletteColor,
@@ -163,35 +164,52 @@ export const buttonStyles = css`
   }
 `
 
-const propTypes = {
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  ...width.propTypes,
-  ...space.propTypes,
-  fullWidth: deprecatedPropType('width'),
-  variation: PropTypes.oneOf(Object.keys(variations)),
+const buttonPropTypes = {
+  ...propTypes.width,
+  ...propTypes.space,
+  ...propTypes.boxShadow,
   color: deprecatedColorValue(),
+  variation: PropTypes.oneOf(Object.keys(variations)),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   disabled: PropTypes.bool,
-  ...boxShadow.propTypes,
   borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
   boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
+}
+
+type Sizes = 'small' | 'medium' | 'large'
+export interface IButtonProps
+  extends WidthProps,
+    SpaceProps,
+    BoxShadowProps,
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    React.RefAttributes<unknown> {
+  color?: string
+  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill'
+  size?: Sizes | Sizes[]
+  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | ''
+  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
+  autoFocus?: boolean
+  onClick?: (unknown) => unknown
+  onFocus?: (unknown) => unknown
+  onMouseEnter?: (unknown) => unknown
 }
 
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button: React.FC<InferProps<typeof propTypes>> = styled.button.attrs((props) => {
-  const { width, fullWidth, title, 'aria-label': ariaLabel, borderRadius } = props
+const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
+  const { width, title, 'aria-label': ariaLabel, borderRadius } = props
   return {
     borderRadius,
     ...boxShadowAttrs(props),
-    width: fullWidth ? 1 : width,
+    width,
     'aria-label': ariaLabel || title,
   }
 })`
   ${buttonStyles}
 `
 
-Button.propTypes = propTypes
+Button.propTypes = buttonPropTypes
 
 Button.defaultProps = {
   color: 'primary',
