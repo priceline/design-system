@@ -16,6 +16,7 @@ const StyledDotGroup = styled(DotGroup)`
     margin: 0px;
     border: 0px;
     padding: 0px;
+    border-radius: 0px;
   }
   &>button: hover {
     border-color: ${(props) => getPaletteColor('background.lightest')(props)};
