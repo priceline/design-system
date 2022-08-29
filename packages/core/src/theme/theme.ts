@@ -302,6 +302,9 @@ const opacity = {
 // scale (min/half/max)
 const scale = {
   'scale-0': 0.0,
+  'scale-2': 0.02,
+  'scale-6': 0.06,
+  'scale-8': 0.08,
   'scale-10': 0.1,
   'scale-20': 0.2,
   'scale-30': 0.3,
