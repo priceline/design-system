@@ -28,7 +28,48 @@ describe('getVisibleSlidesArray', () => {
   })
 })
 
-describe('useResponsiveVisibleSlides', () => {
+describe('useResponsiveVisibleSlides with matchMedia', () => {
+  beforeAll(() => {
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: jest.fn().mockImplementation((query) => ({
+        matches: false,
+        media: query,
+        onchange: null,
+        addEventListener: jest.fn(),
+        removeEventListener: jest.fn(),
+        dispatchEvent: jest.fn(),
+      })),
+    })
+  })
+
+  it('Small Browser Width', () => {
+    window.innerWidth = 600
+    const { getByText } = render(<TextVisibleSlides />)
+    expect(getByText('1 Slide(s)')).toBeInTheDocument()
+  })
+
+  it('Medium Browser Width', () => {
+    window.innerWidth = 800
+    const { getByText } = render(<TextVisibleSlides />)
+    expect(getByText('2 Slide(s)')).toBeInTheDocument()
+  })
+
+  it('Large Browser Width', () => {
+    window.innerWidth = 1400
+    const { getByText } = render(<TextVisibleSlides />)
+    expect(getByText('3 Slide(s)')).toBeInTheDocument()
+  })
+})
+
+describe('useResponsiveVisibleSlides without matchMedia', () => {
+  beforeAll(() => {
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: undefined,
+    })
+  })
+
   beforeEach(() => {
     resizeWindow(1400)
   })

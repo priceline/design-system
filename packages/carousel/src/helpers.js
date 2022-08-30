@@ -6,6 +6,7 @@ import {
   SM_VISIBLE_SLIDES,
   XS_VISIBLE_SLIDES_WIDTH,
   SM_VISIBLE_SLIDES_WIDTH,
+  MEDIA_QUERY_MATCH,
 } from './constants'
 import { debounce } from 'lodash'
 
@@ -32,8 +33,21 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   const handleResizeDebounced = debounce(handleResize, 250)
 
   useEffect(() => {
-    window.addEventListener('resize', handleResizeDebounced)
-    return () => window.removeEventListener('resize', handleResizeDebounced)
+    let media
+    try {
+      media = window.matchMedia(MEDIA_QUERY_MATCH)
+      media.addEventListener('change', handleResizeDebounced)
+    } catch {
+      window.addEventListener('resize', handleResizeDebounced)
+    }
+
+    return () => {
+      if (media?.removeEventListener) {
+        media.removeEventListener('change', handleResizeDebounced)
+      } else {
+        window.removeEventListener('resize', handleResizeDebounced)
+      }
+    }
   })
 
   return getVisibleSlides(visibleSlides, width)
