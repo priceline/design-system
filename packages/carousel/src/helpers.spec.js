@@ -1,6 +1,20 @@
 import React from 'react'
-import { render } from 'testing-library'
+import { render, waitFor } from 'testing-library'
 import { getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
+
+const resizeWindow = (width) => {
+  // Simulate window resize event
+  const resizeEvent = document.createEvent('Event')
+  resizeEvent.initEvent('resize', true, true)
+  global.window.innerWidth = width
+  global.window.dispatchEvent(resizeEvent)
+}
+
+const input = [1, 2, 3]
+const TextVisibleSlides = () => {
+  const visibleSlides = useResponsiveVisibleSlides(input)
+  return <div>{visibleSlides} Slide(s)</div>
+}
 
 describe('getVisibleSlidesArray', () => {
   it('Pass an array, return same input', () => {
@@ -13,7 +27,8 @@ describe('getVisibleSlidesArray', () => {
     expect(getVisibleSlidesArray(3)).toEqual(expected)
   })
 })
-describe('useResponsiveVisibleSlides', () => {
+
+describe('useResponsiveVisibleSlides with matchMedia', () => {
   beforeAll(() => {
     Object.defineProperty(window, 'matchMedia', {
       writable: true,
@@ -27,12 +42,6 @@ describe('useResponsiveVisibleSlides', () => {
       })),
     })
   })
-
-  const input = [1, 2, 3]
-  const TextVisibleSlides = () => {
-    const visibleSlides = useResponsiveVisibleSlides(input)
-    return <div>{visibleSlides} Slide(s)</div>
-  }
 
   it('Small Browser Width', () => {
     window.innerWidth = 600
@@ -50,5 +59,40 @@ describe('useResponsiveVisibleSlides', () => {
     window.innerWidth = 1400
     const { getByText } = render(<TextVisibleSlides />)
     expect(getByText('3 Slide(s)')).toBeInTheDocument()
+  })
+})
+
+describe('useResponsiveVisibleSlides without matchMedia', () => {
+  beforeAll(() => {
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: undefined,
+    })
+  })
+
+  beforeEach(() => {
+    resizeWindow(1400)
+  })
+
+  it('Resize Browser Width to Medium', async () => {
+    const { getByText } = render(<TextVisibleSlides />)
+    expect(getByText('3 Slide(s)')).toBeInTheDocument()
+
+    resizeWindow(1000)
+
+    await waitFor(() => {
+      expect(getByText('2 Slide(s)')).toBeInTheDocument()
+    })
+  })
+
+  it('Resize Browser Width to Small', async () => {
+    const { getByText } = render(<TextVisibleSlides />)
+    expect(getByText('3 Slide(s)')).toBeInTheDocument()
+
+    resizeWindow(600)
+
+    await waitFor(() => {
+      expect(getByText('1 Slide(s)')).toBeInTheDocument()
+    })
   })
 })

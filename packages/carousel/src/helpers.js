@@ -8,6 +8,7 @@ import {
   SM_VISIBLE_SLIDES_WIDTH,
   MEDIA_QUERY_MATCH,
 } from './constants'
+import { debounce } from 'lodash'
 
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
@@ -23,16 +24,32 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
 
 const useResponsiveVisibleSlides = (visibleSlides) => {
   const [width, setWidth] = useState(window.innerWidth)
+
   const handleResize = () => {
     setWidth(window.innerWidth)
   }
+
+  // Debounce to avoid the function fire multiple times
+  const handleResizeDebounced = debounce(handleResize, 250)
+
   useEffect(() => {
-    const media = window.matchMedia(MEDIA_QUERY_MATCH)
-    media.addEventListener('change', handleResize)
+    let media
+    try {
+      media = window.matchMedia(MEDIA_QUERY_MATCH)
+      media.addEventListener('change', handleResizeDebounced)
+    } catch {
+      window.addEventListener('resize', handleResizeDebounced)
+    }
+
     return () => {
-      media.removeEventListener('change', handleResize)
+      if (media?.removeEventListener) {
+        media.removeEventListener('change', handleResizeDebounced)
+      } else {
+        window.removeEventListener('resize', handleResizeDebounced)
+      }
     }
   })
+
   return getVisibleSlides(visibleSlides, width)
 }
 

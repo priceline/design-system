@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "fix carousel dot overflow",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

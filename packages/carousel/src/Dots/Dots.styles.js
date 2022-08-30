@@ -13,6 +13,10 @@ const StyledDotGroup = styled(DotGroup)`
     border-style: solid;
     border-color: ${(props) => getPaletteColor('border.tint')(props)};
     background: ${(props) => getPaletteColor('border.tint')(props)};
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
   }
   &>button: hover {
     border-color: ${(props) => getPaletteColor('background.lightest')(props)};
