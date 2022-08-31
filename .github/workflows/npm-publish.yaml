@@ -52,10 +52,14 @@ jobs:
 
       - name: List changed packages
         id: list-changed
-        run: node common/scripts/install-run-rush.js list-changed-packages
+        run: |
+          node common/scripts/install-run-rush.js list-changed-packages
+          git reset --hard
 
       - name: publish npm-package
-        run: node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
+        run: |
+          node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
+          node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
 
   create-github-releases:
     needs: npm-publish
