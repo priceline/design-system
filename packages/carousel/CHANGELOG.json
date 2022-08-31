@@ -2,6 +2,36 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.3.6",
+      "tag": "pcln-carousel_v1.3.6",
+      "date": "Wed, 31 Aug 2022 14:05:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix moize perf issue determining default profile name",
+            "author": "Scott Nedderman <scott.nedderman@priceline.com>",
+            "commit": "398f15817f9241f4256a9dfc6baaf53b46bc81de"
+          },
+          {
+            "comment": "fix carousel dot overflow",
+            "author": "Ivan Valadares <104080527+ivan-valadares@users.noreply.github.com>",
+            "commit": "a621374a92b2e30a43c13e0ef9f4a2c9867c3b68"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `4.8.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.30.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.29.3` to `4.30.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.3.5",
       "tag": "pcln-carousel_v1.3.5",
       "date": "Wed, 10 Aug 2022 15:39:12 GMT",

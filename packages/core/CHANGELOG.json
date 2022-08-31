@@ -2,6 +2,42 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.30.0",
+      "tag": "pcln-design-system_v4.30.0",
+      "date": "Wed, 31 Aug 2022 14:05:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix moize perf issue determining default profile name",
+            "author": "Scott Nedderman <scott.nedderman@priceline.com>",
+            "commit": "398f15817f9241f4256a9dfc6baaf53b46bc81de"
+          },
+          {
+            "comment": "Test change, please ignore",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "3c8d13ebc58f75b65eb39ec935c5b71bbd491dfc"
+          },
+          {
+            "comment": "Test change",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bdf33527d0f68cbdf33d5ccae3fdca2efceb0331"
+          },
+          {
+            "comment": "Test change",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0d9fa182e732975b85ea2250f463c6eeb876a594"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Add more scale values",
+            "author": "Amanda Komsky <amanda.komsky@priceline.com>",
+            "commit": "bd4897ad739983e4ecdb4e73e8ed4ade754e6299"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.29.3",
       "tag": "pcln-design-system_v4.29.3",
       "date": "Wed, 10 Aug 2022 15:39:12 GMT",

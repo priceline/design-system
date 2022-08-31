@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.8.2",
+      "tag": "pcln-icons_v4.8.2",
+      "date": "Wed, 31 Aug 2022 14:05:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added sunrise icon",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "c9e15c606f04528314ed24603aa0d46f3c19ccf4"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.8.1",
       "tag": "pcln-icons_v4.8.1",
       "date": "Fri, 13 May 2022 16:59:33 GMT",

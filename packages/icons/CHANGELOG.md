@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 13 May 2022 16:59:33 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Aug 2022 14:05:20 GMT and should not be manually modified.
+
+## 4.8.2
+Wed, 31 Aug 2022 14:05:20 GMT
+
+### Patches
+
+- Added sunrise icon
 
 ## 4.8.1
 Fri, 13 May 2022 16:59:33 GMT
