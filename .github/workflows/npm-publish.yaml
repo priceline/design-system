@@ -45,11 +45,14 @@ jobs:
       - name: Git set author email
         run: git config --global user.email "uxplatformdevs@priceline.com"
 
+      # Apply changes and git add so the list-changed step detects projects that have changes. MUST NOT
+      # commit changes back to main branch before detecting changed projects.
       - name: rush apply versions
         run: |
           node common/scripts/install-run-rush.js publish --apply --add-commit-details
           git add -A
 
+      # List projects with changes then git reset. We'll apply changes and merge them to main in the next step.
       - name: List changed packages
         id: list-changed
         run: |
