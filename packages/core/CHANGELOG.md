@@ -1,6 +1,21 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 10 Aug 2022 15:39:12 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Aug 2022 14:16:09 GMT and should not be manually modified.
+
+## 4.30.0
+Wed, 31 Aug 2022 14:16:09 GMT
+
+### Minor changes
+
+- Add more scale values
+
+### Patches
+
+- Fix moize perf issue determining default profile name
+- Test change, please ignore
+- Test change, please ignore
+- Test change
+- Test change
 
 ## 4.29.3
 Wed, 10 Aug 2022 15:39:12 GMT
