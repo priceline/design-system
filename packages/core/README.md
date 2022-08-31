@@ -47,4 +47,3 @@ We hope to accomplish these goals by:
 [site]: https://priceline.github.io/design-system/
 [storybook]: https://priceline.github.io/design-system/storybook/
 [bundlephobia-badge]: https://badgen.net/bundlephobia/minzip/pcln-design-system?color=cyan
-

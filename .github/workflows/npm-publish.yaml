@@ -82,7 +82,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: '${{ github.ref }}',
+              ref: 'refs/heads/main',
               workflow_id: 'release-branch.yaml',
               inputs: {
                 packageName: project
