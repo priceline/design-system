@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 31 Aug 2022 14:05:20 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Aug 2022 14:21:32 GMT and should not be manually modified.
+
+## 4.30.1
+Wed, 31 Aug 2022 14:21:32 GMT
+
+### Patches
+
+- Test change, please ignore
 
 ## 4.30.0
 Wed, 31 Aug 2022 14:05:20 GMT
