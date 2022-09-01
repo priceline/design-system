@@ -1,4 +1,4 @@
-import { themeGet } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import { css } from 'styled-components'
 import { mediaQueries } from '../theme'
 

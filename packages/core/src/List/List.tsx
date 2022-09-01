@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
-import { fontSize, space, themeGet, width } from 'styled-system'
+import { fontSize, space, width } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import { getPaletteColor } from '../utils'
 
 const BaseCSS = css`

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Upgrade to use @styled-system/theme-get",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

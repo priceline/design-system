@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Upgrade to use @styled-system/theme-get",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

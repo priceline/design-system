@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, borderRadius } from 'styled-system'
+import { space, borderRadius } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,

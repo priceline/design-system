@@ -1,7 +1,8 @@
 import React from 'react'
 import { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
-import { space, fontSize, themeGet, borderRadius } from 'styled-system'
+import { space, fontSize, borderRadius } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import { ChevronDown } from 'pcln-icons'
 
 import { borders, deprecatedColorValue, applySizes, borderRadiusAttrs } from '../utils'

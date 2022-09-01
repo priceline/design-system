@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled, { css, keyframes } from 'styled-components'
-import { themeGet } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { applySizes } from '../utils'
