@@ -9,6 +9,7 @@ import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
 import { StretchSlide } from './StretchSlide'
+import { LoadMoreSlide } from './LoadMoreSlide'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -54,6 +55,7 @@ export const Carousel = ({
   currentSlide = 0,
   onSlideClick = () => {},
   onSlideKeyDown = () => {},
+  loadMoreCallback,
 }) => {
   const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
@@ -133,6 +135,13 @@ export const Carousel = ({
                 </Slide>
               )
             })}
+            {typeof loadMoreCallback === 'function' ? (
+              <LoadMoreSlide
+                slideSpacing={slideSpacing}
+                height={height}
+                loadMoreCallback={loadMoreCallback}
+              />
+            ) : null}
           </Slider>
           {sidePositionArrowButton ? (
             cloneElement(sidePositionArrowButton, {
@@ -212,4 +221,6 @@ Carousel.propTypes = {
   onSlideClick: PropTypes.func,
   /** Custom onKeyDown event handler for each Slide child */
   onSlideKeyDown: PropTypes.func,
+  /** Load More callback for mobile */
+  loadMoreCallback: PropTypes.func,
 }

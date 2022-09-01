@@ -22,6 +22,7 @@ describe('Carousel', () => {
     const onSlideChange = jest.fn()
     const onSlideClick = jest.fn()
     const onSlideKeyDown = jest.fn()
+    const loadMoreCallback = jest.fn()
 
     const { getByText, getByTestId, getByLabelText } = render(
       <Carousel
@@ -30,6 +31,7 @@ describe('Carousel', () => {
         onSlideChange={onSlideChange}
         onSlideClick={onSlideClick}
         onSlideKeyDown={onSlideKeyDown}
+        loadMoreCallback={loadMoreCallback}
       >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
@@ -50,6 +52,8 @@ describe('Carousel', () => {
     expect(onSlideClick).toHaveBeenCalledTimes(1)
     fireEvent.keyDown(getByText('Slide 1'), { key: 'Enter' })
     expect(onSlideKeyDown).toHaveBeenCalledTimes(1)
+    fireEvent.click(getByText('Load More'))
+    expect(loadMoreCallback).toHaveBeenCalledTimes(1)
   })
 
   it('should set slide widths if layout is set', () => {

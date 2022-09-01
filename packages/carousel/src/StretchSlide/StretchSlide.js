@@ -5,7 +5,7 @@ const StretchSlide = ({ slideContents, height, setHeight }) => {
   const ref = useRef(null)
 
   useEffect(() => {
-    ref.current.clientHeight > height && setHeight(ref.current.clientHeight)
+    ref?.current?.clientHeight > height && setHeight(ref?.current?.clientHeight)
   }, [height, setHeight])
 
   return React.cloneElement(slideContents, {

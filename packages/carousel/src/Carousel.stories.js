@@ -101,6 +101,7 @@ Basic.args = {
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
+  loadMoreCallback: () => {},
 }
 
 const VerticalTemplate = (args) => (
