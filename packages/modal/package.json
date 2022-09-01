@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@reach/dialog": "^0.16.2",
+    "@styled-system/theme-get": "^5.1.2",
     "react-transition-group": "^4.4.2"
   },
   "devDependencies": {

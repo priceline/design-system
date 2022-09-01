@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, fontSize, borderRadius } from 'styled-system'
+import { space, fontSize, borderRadius } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,

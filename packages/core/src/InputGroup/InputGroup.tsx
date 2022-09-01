@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes, { InferProps } from 'prop-types'
-import { space, themeGet } from 'styled-system'
+import { space } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 
 import { Box } from '../Box'
 import { getPaletteColor } from '../utils'

@@ -1,7 +1,8 @@
 import React from 'react'
 import { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { space, themeGet } from 'styled-system'
+import { space } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import PropTypes from 'prop-types'
 
 import { applyVariations, getPaletteColor, borders, deprecatedColorValue } from '../utils'

@@ -1,7 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes, { InferProps } from 'prop-types'
-import { width, space, themeGet, boxShadow } from 'styled-system'
+import { width, space, boxShadow } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 import {
   deprecatedPropType,
   applySizes,

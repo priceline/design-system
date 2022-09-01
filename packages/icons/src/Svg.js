@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
-import { space, width, themeGet } from 'styled-system'
+import { space, width } from 'styled-system'
+import themeGet from '@styled-system/theme-get'
 
 /**
  * Gets the color of a palette shade, using props.color as
