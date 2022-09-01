@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "Upgrade to use @styled-system/theme-get",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-modal"
+}
