@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
 import styled from 'styled-components'
+import { action } from '@storybook/addon-actions'
 import { Carousel, ArrowButton } from '.'
 
 const SLIDE_COUNT = 6
@@ -101,6 +102,7 @@ Basic.args = {
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
+  onSlideChange: action('Slide Change'),
 }
 
 const VerticalTemplate = (args) => (

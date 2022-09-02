@@ -9,6 +9,7 @@ import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
 import { StretchSlide } from './StretchSlide'
+import { RenderInView } from './RenderInView'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -118,18 +119,20 @@ export const Carousel = ({
                     onSlideKeyDown(index, e)
                   }}
                 >
-                  <Box p={slideSpacing} height='100%'>
-                    {!layout && stretchSlideHeight ? (
-                      <StretchSlide
-                        slideSpacing={slideSpacing}
-                        slideContents={item}
-                        height={height}
-                        setHeight={setHeight}
-                      />
-                    ) : (
-                      item
-                    )}
-                  </Box>
+                  <RenderInView index={index} onSlideChange={onSlideChange}>
+                    <Box p={slideSpacing} height='100%'>
+                      {!layout && stretchSlideHeight ? (
+                        <StretchSlide
+                          slideSpacing={slideSpacing}
+                          slideContents={item}
+                          height={height}
+                          setHeight={setHeight}
+                        />
+                      ) : (
+                        item
+                      )}
+                    </Box>
+                  </RenderInView>
                 </Slide>
               )
             })}
