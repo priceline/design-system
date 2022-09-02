@@ -1,2 +1,2 @@
 import { RenderInView } from './RenderInView'
-export { RenderInView }
+export * from './RenderInView'
