@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Wed, 31 Aug 2022 14:21:32 GMT and should not be manually modified.
+This log was last generated on Fri, 02 Sep 2022 15:49:44 GMT and should not be manually modified.
+
+## 4.5.0
+Fri, 02 Sep 2022 15:49:44 GMT
+
+### Minor changes
+
+- Upgrade to use @styled-system/theme-get
 
 ## 4.4.37
 Wed, 31 Aug 2022 14:21:32 GMT

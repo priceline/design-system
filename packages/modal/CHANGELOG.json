@@ -2,6 +2,31 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "4.3.0",
+      "tag": "pcln-modal_v4.3.0",
+      "date": "Fri, 02 Sep 2022 15:49:44 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade to use @styled-system/theme-get",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "7c064efa9ed479207f381a876ab7d7812e0ff99e"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.31.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `4.5.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.30.1` to `4.31.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.2.25",
       "tag": "pcln-modal_v4.2.25",
       "date": "Wed, 31 Aug 2022 14:21:32 GMT",
