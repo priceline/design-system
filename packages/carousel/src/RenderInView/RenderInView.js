@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { InView } from 'react-intersection-observer'
 import { Hide } from 'pcln-design-system'
+import styled from 'styled-components'
+
+const FullHeightInView = styled(InView)`
+  height: 100%;
+`
 
 const RenderInView = ({ children, onSlideChange, index }) => {
   const slideVisible = (inView) => {
@@ -11,10 +16,10 @@ const RenderInView = ({ children, onSlideChange, index }) => {
   }
   return (
     <>
-      <Hide md lg xl xxl>
-        <InView onChange={slideVisible}>{children}</InView>
+      <Hide md lg xl xxl height='100%'>
+        <FullHeightInView onChange={slideVisible}>{children}</FullHeightInView>
       </Hide>
-      <Hide xs sm>
+      <Hide xs sm height='100%'>
         {children}
       </Hide>
     </>
