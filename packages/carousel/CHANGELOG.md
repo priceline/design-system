@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Fri, 02 Sep 2022 15:49:44 GMT and should not be manually modified.
+This log was last generated on Fri, 09 Sep 2022 16:54:03 GMT and should not be manually modified.
+
+## 1.4.0
+Fri, 09 Sep 2022 16:54:03 GMT
+
+### Minor changes
+
+- Add react-intersection-observer package for mobile carousel slide callback capability
 
 ## 1.3.8
 Fri, 02 Sep 2022 15:49:44 GMT
