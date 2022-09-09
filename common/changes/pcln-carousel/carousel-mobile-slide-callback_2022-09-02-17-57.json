@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Add react-intersection-observer package for mobile carousel slide callback capability",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

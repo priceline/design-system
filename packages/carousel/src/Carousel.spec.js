@@ -1,10 +1,12 @@
 import React from 'react'
 import { render, fireEvent } from 'testing-library'
 import { Flex } from 'pcln-design-system'
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 import { Carousel } from './Carousel'
 
 describe('Carousel', () => {
   beforeAll(() => {
+    mockAllIsIntersecting(true)
     Object.defineProperty(window, 'matchMedia', {
       writable: true,
       value: jest.fn().mockImplementation((query) => ({
@@ -23,7 +25,7 @@ describe('Carousel', () => {
     const onSlideClick = jest.fn()
     const onSlideKeyDown = jest.fn()
 
-    const { getByText, getByTestId, getByLabelText } = render(
+    const { getByTestId, getByLabelText, queryAllByText } = render(
       <Carousel
         showDots
         arrowsPosition='side'
@@ -37,7 +39,10 @@ describe('Carousel', () => {
       </Carousel>
     )
 
-    expect(getByText('Slide 1')).toBeInTheDocument()
+    //Slide contains a <Hide> with separate mobile and desktop contents to allow mobile only RenderInView
+    const slide1 = queryAllByText('Slide 1')[1]
+
+    expect(slide1).toBeInTheDocument()
     expect(getByTestId('dot_group')).toBeInTheDocument()
     expect(getByTestId('prev-side')).toBeInTheDocument()
     expect(getByTestId('next-side')).toBeInTheDocument()
@@ -46,9 +51,9 @@ describe('Carousel', () => {
     expect(onSlideChange).toHaveBeenCalledWith(1)
     fireEvent.click(getByLabelText('previous'))
     expect(onSlideChange).toHaveBeenCalledWith(0)
-    fireEvent.click(getByText('Slide 1'))
+    fireEvent.click(slide1)
     expect(onSlideClick).toHaveBeenCalledTimes(1)
-    fireEvent.keyDown(getByText('Slide 1'), { key: 'Enter' })
+    fireEvent.keyDown(slide1, { key: 'Enter' })
     expect(onSlideKeyDown).toHaveBeenCalledTimes(1)
   })
 
