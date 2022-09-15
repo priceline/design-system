@@ -75,6 +75,11 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule('font-size', '16px')
     expect(button).toHaveStyleRule('padding', '12px 22px')
+
+    rerender(<Button size='extraLarge'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '16px 22px')
   })
 
   it('should render correctly for "width" prop', () => {
