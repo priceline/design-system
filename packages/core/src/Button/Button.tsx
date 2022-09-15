@@ -14,7 +14,7 @@ import {
   boxShadowSizeValues,
 } from '../utils'
 
-export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg']
+export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl']
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
@@ -41,6 +41,14 @@ const sizes = {
       )};
     font-size: ${themeGet('fontSizes.2')}px;
     padding: 12px 22px;
+  `,
+  extraLarge: css`
+    border-radius: ${(props) =>
+      themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-xl'}`)(
+        props
+      )};
+    font-size: ${themeGet('fontSizes.2')}px;
+    padding: 16px 22px;
   `,
 }
 
@@ -165,7 +173,7 @@ export const buttonStyles = css`
 `
 
 const propTypes = {
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'extraLarge']),
   ...width.propTypes,
   ...space.propTypes,
   fullWidth: deprecatedPropType('width'),
