@@ -3,7 +3,7 @@
     {
       "packageName": "pcln-design-system",
       "comment": "Added an extra large button with a height of 56px",
-      "type": "none"
+      "type": "minor"
     }
   ],
   "packageName": "pcln-design-system"
