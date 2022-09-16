@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added test cases, as well ",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
