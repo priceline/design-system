@@ -164,6 +164,14 @@ describe('Button', () => {
     )
 
     expect(button).toHaveStyleRule('border-radius', borderRadius.xl)
+
+    rerender(
+      <Button size='extraLarge' borderRadius={'notValid'}>
+        BUTTON
+      </Button>
+    )
+
+    expect(button).toHaveStyleRule('border-radius', borderRadius['action-xl'])
   })
 
   it('should render correctly for "boxShadowSize" prop', () => {
