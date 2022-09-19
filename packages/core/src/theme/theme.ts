@@ -257,7 +257,6 @@ export const borderRadii = {
   'action-sm': '2px',
   'action-md': '2px',
   'action-lg': '2px',
-  'action-xl': '6px',
 }
 
 export const maxContainerWidth = '1280px'
