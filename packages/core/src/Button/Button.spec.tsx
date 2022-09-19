@@ -158,12 +158,12 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-lg'])
 
     rerender(
-      <Button size='large' borderRadius='xl'>
+      <Button size='large' borderRadius={'xl'}>
         BUTTON
       </Button>
     )
 
-    expect(button).toHaveStyleRule('border-radius', borderRadius['action-xl'])
+    expect(button).toHaveStyleRule('border-radius', borderRadius.xl)
   })
 
   it('should render correctly for "boxShadowSize" prop', () => {
