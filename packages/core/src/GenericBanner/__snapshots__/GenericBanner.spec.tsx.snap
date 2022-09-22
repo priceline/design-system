@@ -63,6 +63,7 @@ exports[`GenericBanner renders 1`] = `
 }
 
 .c7 {
+  color: #001833;
   font-size: 14px;
 }
 

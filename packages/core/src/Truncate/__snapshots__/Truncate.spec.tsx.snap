@@ -2,13 +2,17 @@
 
 exports[`Truncate generates styles 1`] = `
 .c0 {
+  color: #001833;
+}
+
+.c1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   generates styles
 </div>
@@ -16,13 +20,17 @@ exports[`Truncate generates styles 1`] = `
 
 exports[`Truncate renders 1`] = `
 .c0 {
+  color: #001833;
+}
+
+.c1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   renders
 </div>

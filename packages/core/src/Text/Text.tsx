@@ -1,44 +1,43 @@
-import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
 import propTypes from '@styled-system/prop-types'
+import PropTypes from 'prop-types'
+import styled, { css } from 'styled-components'
 import {
   display,
+  DisplayProps,
   fontSize,
+  FontSizeProps,
   fontStyle,
+  FontStyleProps,
   fontWeight,
+  FontWeightProps,
   height,
+  HeightProps,
   letterSpacing,
   lineHeight,
-  maxHeight,
-  maxWidth,
-  minHeight,
-  minWidth,
-  overflow,
-  space,
-  textAlign,
-  textStyle,
-  width,
-  zIndex,
-  DisplayProps,
-  FontSizeProps,
-  FontStyleProps,
-  FontWeightProps,
-  HeightProps,
   LineHeightProps,
+  maxHeight,
   MaxHeightProps,
+  maxWidth,
   MaxWidthProps,
+  minHeight,
   MinHeightProps,
+  minWidth,
   MinWidthProps,
+  overflow,
   OverflowProps,
+  space,
   SpaceProps,
+  textAlign,
   TextAlignProps,
+  textStyle,
   TextStyleProps,
+  width,
   WidthProps,
+  zIndex,
   ZIndexProps,
 } from 'styled-system'
 
 import {
-  applyVariations,
   deprecatedColorValue,
   deprecatedPropType,
   getPaletteColor,
@@ -127,9 +126,13 @@ export interface ITextProps
 }
 
 const textProps: React.FC<ITextProps> = css`
-  ${applyVariations('Text')}
-  color: ${getPaletteColor('base')};
-  ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
+  background-color: ${({ bg, backgroundColor }) => {
+    if (bg || backgroundColor) {
+      return getPaletteColor(bg ?? backgroundColor)
+    }
+    return undefined
+  }};
+  color: ${({ color }) => getPaletteColor(color ?? 'text.base')};
 
   ${display}
   ${height}

@@ -23,12 +23,22 @@ exports[`Stepper renders with children 1`] = `
 }
 
 .c6 {
-  color: #0068ef;
+  color: light:#e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
   font-size: 14px;
 }
 
 .c7 {
-  color: #0068ef;
+  color: light:#e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
   font-weight: 700;
   font-size: 14px;
 }

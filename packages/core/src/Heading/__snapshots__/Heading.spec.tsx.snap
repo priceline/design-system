@@ -13,49 +13,81 @@ exports[`Heading Heading component using <Text> component properties 1`] = `
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
+.c0 {
+  color: #001833;
+}
+
 <h1
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
+.c0 {
+  color: #001833;
+}
+
 <h2
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
+.c0 {
+  color: #001833;
+}
+
 <h3
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
+.c0 {
+  color: #001833;
+}
+
 <h4
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
+.c0 {
+  color: #001833;
+}
+
 <h5
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
+.c0 {
+  color: #001833;
+}
+
 <h6
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading Heading component with no default font size, when "fontSize" prop not used 1`] = `
+.c0 {
+  color: #001833;
+}
+
 <h3
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Heading renders 1`] = `
+.c0 {
+  color: #001833;
+}
+
 <h3
-  className=""
+  className="c0"
 />
 `;

@@ -95,6 +95,7 @@ exports[`Avatar renders initials 1`] = `
 }
 
 .c3 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -173,6 +174,7 @@ exports[`Avatar renders mr elon 1`] = `
 }
 
 .c6 {
+  color: #001833;
   margin: 0;
 }
 

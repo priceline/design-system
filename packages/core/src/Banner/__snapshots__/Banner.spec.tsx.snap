@@ -28,6 +28,7 @@ exports[`Banner accepts non-preset colors 1`] = `
 }
 
 .c3 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -93,6 +94,7 @@ exports[`Banner renders content from children props 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -177,6 +179,7 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -258,6 +261,7 @@ exports[`Banner renders with custom iconName and size 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -339,6 +343,7 @@ exports[`Banner renders with green bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -419,6 +424,11 @@ exports[`Banner renders with header node 1`] = `
 }
 
 .c6 {
+  color: #001833;
+}
+
+.c7 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -463,16 +473,16 @@ exports[`Banner renders with header node 1`] = `
           width="1"
         >
           <h3
-            class=""
+            class="c6"
           >
             Hello world
           </h3>
           <span
-            class="c6"
+            class="c7"
             font-size="1"
           >
             <div
-              class=""
+              class="c6"
             >
               Text
             </div>
@@ -526,6 +536,7 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -607,6 +618,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -688,6 +700,7 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -769,6 +782,7 @@ exports[`Banner renders with no props other than theme 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -850,6 +864,7 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -931,6 +946,7 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -1010,12 +1026,18 @@ exports[`Banner renders with text node 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
 }
 
+.c7 {
+  color: #001833;
+}
+
 .c6 {
+  color: #001833;
   font-size: 14px;
 }
 
@@ -1056,7 +1078,7 @@ exports[`Banner renders with text node 1`] = `
         fontSize={1}
       >
         <div
-          className=""
+          className="c7"
         >
           Text
         </div>
@@ -1106,12 +1128,14 @@ exports[`Banner renders with text string 1`] = `
 }
 
 .c5 {
+  color: #001833;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
 }
 
 .c6 {
+  color: #001833;
   font-size: 14px;
 }
 

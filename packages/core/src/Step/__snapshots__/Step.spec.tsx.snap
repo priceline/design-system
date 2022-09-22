@@ -3,7 +3,12 @@
 exports[`Step should handle onClick 1`] = `
 <DocumentFragment>
   .c3 {
-  color: #0068ef;
+  color: light:#e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
   font-weight: 700;
   font-size: 14px;
 }
@@ -109,7 +114,12 @@ exports[`Step should render a completed step correctly 1`] = `
 }
 
 .c5 {
-  color: #0068ef;
+  color: light:#e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
   font-size: 14px;
 }
 
@@ -232,7 +242,12 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 }
 
 .c5 {
-  color: #0068ef;
+  color: light:#e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
   font-weight: 700;
   font-size: 14px;
 }
@@ -342,7 +357,12 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 exports[`Step should render an active step correctly 1`] = `
 <DocumentFragment>
   .c3 {
-  color: #0068ef;
+  color: light:#e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
   font-weight: 700;
   font-size: 14px;
 }

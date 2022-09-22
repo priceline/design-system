@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { SpaceProps, FontSizeProps } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
+import { FontSizeProps, SpaceProps } from 'styled-system'
 
-import { ChipContent } from '../ChipContent'
-import { ChipContentWrapper } from '../ChipContentWrapper'
 import { Button } from '../../Button'
 import { getPaletteColor } from '../../utils'
+import { ChipContent } from '../ChipContent'
+import { ChipContentWrapper } from '../ChipContentWrapper'
 
 const ChipButton = styled(Button)`
   background-color: transparent;

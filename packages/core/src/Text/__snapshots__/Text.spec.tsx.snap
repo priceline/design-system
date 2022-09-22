@@ -2,6 +2,7 @@
 
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
+  color: #001833;
   font-weight: 700;
 }
 
@@ -12,6 +13,7 @@ exports[`Text bold prop sets font-weight 1`] = `
 
 exports[`Text caps prop sets text-transform 1`] = `
 .c0 {
+  color: #001833;
   text-transform: uppercase;
 }
 
@@ -22,6 +24,7 @@ exports[`Text caps prop sets text-transform 1`] = `
 
 exports[`Text display and overflow 1`] = `
 .c0 {
+  color: #001833;
   display: inline-block;
   overflow: none;
 }
@@ -35,6 +38,7 @@ exports[`Text display and overflow 1`] = `
 
 exports[`Text height and width 1`] = `
 .c0 {
+  color: #001833;
   height: 150px;
   width: 200px;
 }
@@ -48,6 +52,7 @@ exports[`Text height and width 1`] = `
 
 exports[`Text min/max values 1`] = `
 .c0 {
+  color: #001833;
   max-height: 400px;
   max-width: 400px;
   min-height: 200px;
@@ -61,6 +66,7 @@ exports[`Text min/max values 1`] = `
 
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
+  color: #001833;
   margin-top: 8px;
 }
 
@@ -71,6 +77,7 @@ exports[`Text mt prop sets margin-top 1`] = `
 
 exports[`Text regular prop sets font-weight 1`] = `
 .c0 {
+  color: #001833;
   font-weight: 500;
 }
 
@@ -80,13 +87,18 @@ exports[`Text regular prop sets font-weight 1`] = `
 `;
 
 exports[`Text renders 1`] = `
+.c0 {
+  color: #001833;
+}
+
 <div
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Text textAlign prop sets text-align 1`] = `
 .c0 {
+  color: #001833;
   text-align: center;
 }
 
