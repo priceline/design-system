@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Text bg and backgroundColor props sets background-color 1`] = `
+.c0 {
+  background-color: #f68013;
+  color: #001833;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Text bg and backgroundColor props sets background-color 2`] = `
+.c0 {
+  background-color: #f68013;
+  color: #001833;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Text bg prop sets background-color 1`] = `
+.c0 {
+  background-color: #f68013;
+  color: #001833;
+}
+
+<div
+  className="c0"
+/>
+`;
+
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
   color: #001833;

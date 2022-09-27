@@ -1,6 +1,6 @@
 import React from 'react'
-import { render, screen } from '../__test__/testing-library'
 import { Text, theme } from '..'
+import { render, screen } from '../__test__/testing-library'
 
 describe('Text', () => {
   test('renders', () => {
@@ -30,6 +30,15 @@ describe('Text', () => {
     const json = rendererCreateWithTheme(<Text caps />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('text-transform', 'uppercase')
+  })
+
+  test('bg and backgroundColor props sets background-color', () => {
+    const bg = rendererCreateWithTheme(<Text bg='alert.base' />).toJSON()
+    expect(bg).toMatchSnapshot()
+    expect(bg).toHaveStyleRule('background-color', '#f68013')
+    const backgroundColor = rendererCreateWithTheme(<Text backgroundColor='alert.base' />).toJSON()
+    expect(backgroundColor).toMatchSnapshot()
+    expect(backgroundColor).toHaveStyleRule('background-color', '#f68013')
   })
 
   test('fontSize prop sets font-size', () => {
