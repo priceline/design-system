@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.10.0",
+      "tag": "pcln-icons_v4.10.0",
+      "date": "Tue, 27 Sep 2022 21:11:22 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adds Sort Icon",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "cefe65243ce99875fa23b742da38738384d0331d"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.9.0",
       "tag": "pcln-icons_v4.9.0",
       "date": "Fri, 02 Sep 2022 15:49:44 GMT",
