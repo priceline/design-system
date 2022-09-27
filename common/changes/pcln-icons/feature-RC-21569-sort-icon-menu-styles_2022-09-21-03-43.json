@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Adds Sort Icon",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
