@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import { Close } from 'pcln-icons'
-
 import { IconButton } from '../IconButton'
 
 const propTypes = {

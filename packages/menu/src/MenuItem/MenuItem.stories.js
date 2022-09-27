@@ -1,7 +1,6 @@
 import React from 'react'
 import { Flex, Text } from 'pcln-design-system'
 import { Bed } from 'pcln-icons'
-
 import MenuItem from './MenuItem'
 import { argTypes, defaultArgs } from './MenuItem.stories.args'
 
@@ -15,52 +14,54 @@ export default {
   },
 }
 
-const Template = (args) => <MenuItem {...args}>Recommended</MenuItem>
+const SinglelineChildren = () => <Text textStyle='paragraph'>Recommended</Text>
 
-export const _MenuItem = Template.bind({})
-
-const CurrencyChildren = () => (
-  <>
-    <Text mr={3}>C$</Text>
-    <Text>Canadian Dollar</Text>
-  </>
+const Template = (args) => (
+  <MenuItem {...args} width={275}>
+    {args.children}
+  </MenuItem>
 )
 
-export const Currency = Template.bind({})
-Currency.args = {
+export const Singleline = Template.bind({})
+Singleline.args = {
+  children: <SinglelineChildren />,
+}
+
+export const SinglelineSelected = Template.bind({})
+SinglelineSelected.args = {
   selected: true,
-  children: <CurrencyChildren />,
+  children: <SinglelineChildren />,
 }
 
 const MultilineChildren = () => (
   <Flex flexDirection='column' alignItems='flex-start'>
-    <Text>List Item</Text>
-    <Text fontSize={0} regular>
+    <Text textStyle='paragraphBold'>List Item</Text>
+    <Text color='text.light' textStyle='caption'>
       Helper Text
     </Text>
   </Flex>
 )
 
-export const Multiline = Template.bind({})
-Multiline.args = {
+export const MultilineSelected = Template.bind({})
+MultilineSelected.args = {
   selected: true,
   children: <MultilineChildren />,
 }
 
-const MultilineWithIconChildren = () => (
-  <Flex>
-    <Bed mr={2} />
-    <Flex flexDirection='column' alignItems='flex-start'>
-      <Text>List Item</Text>
-      <Text fontSize={0} regular>
-        Helper Text
-      </Text>
-    </Flex>
-  </Flex>
-)
-
-export const MultilineWithIcon = Template.bind({})
-MultilineWithIcon.args = {
+export const MultilineSelectedWithIcon = Template.bind({})
+MultilineSelectedWithIcon.args = {
+  icon: <Bed size={24} />,
   selected: true,
-  children: <MultilineWithIconChildren />,
+  children: <MultilineChildren />,
+}
+
+export const MultilineSelectedWithStringIconSymbol = Template.bind({})
+MultilineSelectedWithStringIconSymbol.args = {
+  icon: (
+    <Flex justifyContent='center' width={24}>
+      $
+    </Flex>
+  ),
+  selected: true,
+  children: <MultilineChildren />,
 }

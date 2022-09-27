@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Updated MenuItem Styles",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-menu"
+}
