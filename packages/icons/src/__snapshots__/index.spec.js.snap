@@ -9893,6 +9893,53 @@ exports[`renders SoapBar 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders Sort 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 18v-2h6v2zm0-5v-2h12v2zm0-5V6h18v2z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`renders Spa 1`] = `
 <DocumentFragment>
   .c1 {
