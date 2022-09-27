@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
+import { argTypes, defaultArgs } from './Menu.stories.args'
+import { Bed as BedIcon } from 'pcln-icons'
 import { Box, ButtonChip, Divider, Flex, Link, Text } from 'pcln-design-system'
-
+import { listItems, currencies } from '../../test/mocks/Menu'
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
 import MenuList from '../MenuList'
-
-import { listItems, currencies } from '../../test/mocks/Menu'
-import { argTypes, defaultArgs } from './Menu.stories.args'
 
 export default {
   title: 'pcln-menu / Menu',
@@ -32,51 +31,116 @@ const MenuItems = () => {
     return (
       <MenuItem key={index} selected={selected} onClick={onClick}>
         <Flex flexDirection='column' alignItems='flex-start'>
-          <Text>{item.label}</Text>
-          <Text fontSize={0} regular>
-            Helper Text
-          </Text>
+          <Text textStyle='paragraphBold'>{item.label}</Text>
+          <Text textStyle='caption'>Helper Text</Text>
         </Flex>
       </MenuItem>
     )
   })
 }
+
 const CurrencyItems = ({ currencyCode, setCurrencyCode }) =>
   currencies.map((currency, index) => {
     const selected = currencyCode === currency.code
     const onClick = () => setCurrencyCode(currency.code)
     return (
-      <MenuItem key={index} selected={selected} onClick={onClick}>
-        <Text regular width={32} textAlign='center' mr={3}>
-          {currency.symbol}
-        </Text>
-        <Text regular>{currency.label}</Text>
+      <MenuItem
+        key={index}
+        selected={selected}
+        onClick={onClick}
+        icon={
+          <Flex justifyContent='center' textStyle='paragraphBold' width={24}>
+            {currency.symbol}
+          </Flex>
+        }
+      >
+        <Text textStyle='paragraph'>{currency.label}</Text>
       </MenuItem>
     )
   })
 
-const Template = (args) => <Menu {...args} />
-
-export const MultilineMenu = Template.bind({})
-MultilineMenu.args = {
-  children: <MenuItems />,
-}
-
-export const MultilineMenuWithCustomColors = () => {
+export const Singleline = () => {
   const [value, setValue] = useState('one')
 
   return (
-    <Menu isOpen buttonText='Menu'>
+    <Menu isOpen buttonText='Menu' width={275}>
       {listItems.map((item, index) => {
         const selected = value === item.value
-        const color = selected ? 'promoPrimary' : 'text'
-        const helperColor = !selected && 'text.light'
         const onClick = () => setValue(item.value)
         return (
-          <MenuItem key={index} selected={selected} color={color} onClick={onClick}>
+          <MenuItem key={index} onClick={onClick} selected={selected}>
             <Flex flexDirection='column' alignItems='flex-start'>
-              <Text>{item.label}</Text>
-              <Text color={helperColor} fontSize={0} regular>
+              <Text textStyle='paragraph'>{item.label}</Text>
+            </Flex>
+          </MenuItem>
+        )
+      })}
+    </Menu>
+  )
+}
+
+export const SinglelineWithIcon = () => {
+  const [value, setValue] = useState('one')
+
+  return (
+    <Menu isOpen buttonText='Menu' width={275}>
+      {listItems.map((item, index) => {
+        const selected = value === item.value
+        const onClick = () => setValue(item.value)
+        return (
+          <MenuItem icon={<BedIcon size={24} />} key={index} onClick={onClick} selected={selected}>
+            <Flex flexDirection='column' alignItems='flex-start'>
+              <Text textStyle='paragraph'>{item.label}</Text>
+            </Flex>
+          </MenuItem>
+        )
+      })}
+    </Menu>
+  )
+}
+
+const Template = (args) => <Menu {...args} />
+export const Multiline = Template.bind({})
+Multiline.args = {
+  children: <MenuItems />,
+}
+
+export const MultilineWithCustomColors = () => {
+  const [value, setValue] = useState('one')
+
+  return (
+    <Menu isOpen buttonText='Menu' color='promoPrimary'>
+      {listItems.map((item, index) => {
+        const selected = value === item.value
+        const onClick = () => setValue(item.value)
+        return (
+          <MenuItem key={index} selected={selected} onClick={onClick}>
+            <Flex flexDirection='column' alignItems='flex-start'>
+              <Text textStyle='paragraph'>{item.label}</Text>
+              <Text textStyle='caption' color='text.light'>
+                Helper Text
+              </Text>
+            </Flex>
+          </MenuItem>
+        )
+      })}
+    </Menu>
+  )
+}
+
+export const MultilineWithIcon = () => {
+  const [value, setValue] = useState('one')
+
+  return (
+    <Menu isOpen buttonText='Menu' width={275}>
+      {listItems.map((item, index) => {
+        const selected = value === item.value
+        const onClick = () => setValue(item.value)
+        return (
+          <MenuItem icon={<BedIcon size={24} />} key={index} onClick={onClick} selected={selected}>
+            <Flex flexDirection='column' alignItems='flex-start'>
+              <Text textStyle='paragraph'>{item.label}</Text>
+              <Text textStyle='caption' color='text.light'>
                 Helper Text
               </Text>
             </Flex>
@@ -97,7 +161,7 @@ export const TwoColumns = () => {
   )
 }
 
-export const Scrollable = () => {
+export const WithSetHeightAndScrollable = () => {
   const [currencyCode, setCurrencyCode] = useState('USD')
 
   return (
@@ -117,46 +181,13 @@ export const BreakpointColumns = () => {
   )
 }
 
-export const ButtonProps = () => {
-  return (
-    <Flex flexDirection='column' color='background.darkest' width={1} p={2}>
-      <Text>Pretend Header</Text>
-      <Text>Example</Text>
-      <Menu
-        width={300}
-        buttonText='Menu'
-        buttonProps={{ color: 'text.lightest', size: 'large', width: 1, p: 3 }}
-      >
-        <MenuItems />
-      </Menu>
-      <Text>Example</Text>
-    </Flex>
-  )
-}
+export const UsingButtonPropsPropForStylingButtonText = () => (
+  <Menu width={300} buttonText='Menu' buttonProps={{ color: 'text.base', size: 'large', width: 1, p: 3 }}>
+    <MenuItems />
+  </Menu>
+)
 
-export const ChipAsPopoverButton = () => {
-  const [currencyCode, setCurrencyCode] = useState('USD')
-  const buttonNode = <ButtonChip label={currencyCode} />
-
-  return (
-    <Menu idx='currency-selector' buttonNode={buttonNode} size='twoColumns'>
-      {currencies.map((currency, index) => {
-        const selected = currencyCode === currency.code
-        const onClick = () => setCurrencyCode(currency.code)
-        return (
-          <MenuItem key={index} selected={selected} onClick={onClick}>
-            <Text regular width={32} textAlign='center' mr={3}>
-              {currency.symbol}
-            </Text>
-            <Text regular>{currency.label}</Text>
-          </MenuItem>
-        )
-      })}
-    </Menu>
-  )
-}
-
-export const LinkDropdown = () => {
+export const CustomMenuWithoutMenuItems = () => {
   return (
     <Menu idx='link-dropdown' buttonText='Support' width='300px'>
       <Text p={3}>Unselectable title text</Text>
@@ -167,6 +198,16 @@ export const LinkDropdown = () => {
       <Link href='https://www.priceline.com/contact' target='_blank' px={3} py={2}>
         Contact
       </Link>
+    </Menu>
+  )
+}
+
+export const UsingButtonNodePropWithButtonChip = () => {
+  const [currencyCode, setCurrencyCode] = useState('USD')
+
+  return (
+    <Menu idx='currency-selector' buttonNode={<ButtonChip label={currencyCode} />} size='twoColumns'>
+      <CurrencyItems currencyCode={currencyCode} setCurrencyCode={setCurrencyCode} />
     </Menu>
   )
 }

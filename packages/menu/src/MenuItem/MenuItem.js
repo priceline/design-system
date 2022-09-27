@@ -6,28 +6,37 @@ import { borderRadius } from 'styled-system'
 import { Check as CheckIcon } from 'pcln-icons'
 
 const MenuButton = styled(Button).attrs(borderRadiusAttrs)`
+  align-items: center;
+  background-color: ${(props) =>
+    props.selected ? getPaletteColor('light')(props) : getPaletteColor('background.lightest')(props)};
+  border: 2px solid transparent;
+  color: ${getPaletteColor('text.base')};
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: 2px solid transparent;
-  color: ${getPaletteColor('text.dark')};
   outline: none;
   padding: 12px;
 
   &:hover {
-    background-color: ${getPaletteColor('base')};
+    ${(props) =>
+      props.selected
+        ? `
+        background-color: ${getPaletteColor('light')(props)};
+        color: ${getPaletteColor('dark')(props)};`
+        : `
+        background-color: ${getPaletteColor('background.base')(props)};
+        color: ${getPaletteColor('text.base')(props)};
+      `}
   }
 
-  ${(props) =>
-    props.selected
-      ? `background-color: ${getPaletteColor('background.base')(props)};`
-      : `background-color: ${getPaletteColor('background.lightest')(props)};`}
+  &:hover ${CheckIcon} {
+    color: ${getPaletteColor('dark')};
+  }
 
   ${borderRadius};
 `
 
 const MenuItem = React.forwardRef(function MenuItem(
-  { id, selected, children, handleClose, onClick, ...props },
+  { id, color, icon, selected, children, handleClose, onClick, ...props },
   ref
 ) {
   const handleClick = useCallback(() => {
@@ -38,16 +47,20 @@ const MenuItem = React.forwardRef(function MenuItem(
   return (
     <MenuButton
       id={id}
+      aria-selected={selected}
+      borderRadius='lg'
+      color={color}
+      onClick={handleClick}
       ref={ref}
       role='option'
-      aria-selected={selected}
       selected={selected}
-      onClick={handleClick}
-      borderRadius='lg'
       {...props}
     >
-      <Flex alignItems='center'>{children}</Flex>
-      {selected && <CheckIcon title='check' size={20} ml={3} />}
+      <Flex alignItems='center' justifyContent='center'>
+        {icon && <Flex mr={3}>{icon}</Flex>}
+        {children}
+      </Flex>
+      {selected && <CheckIcon title='check' size={20} ml={3} color={color} />}
     </MenuButton>
   )
 })
@@ -56,6 +69,7 @@ MenuItem.displayName = 'MenuItem'
 
 MenuItem.propTypes = {
   id: PropTypes.string,
+  icon: PropTypes.node,
   color: PropTypes.string,
   selected: PropTypes.bool,
   children: PropTypes.node,
