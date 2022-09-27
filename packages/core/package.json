@@ -67,7 +67,6 @@
     "@types/styled-system": "^4.2.2",
     "deepmerge": "^4.2.2",
     "hoist-non-react-statics": "^3.3.2",
-    "moize": "^6.1.0",
     "pcln-icons": "workspace:*",
     "prop-types": "^15.8.1",
     "styled-system": "^4.2.4"
