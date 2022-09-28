@@ -1,7 +1,7 @@
 import { colors, shadows } from '../storybook/args'
 import { borderRadiusButtonValues } from './Button'
 export const variations = ['fill', 'link', 'outline', 'plain', 'subtle', 'lightFill', 'white']
-export const sizes = ['small', 'medium', 'large']
+export const sizes = ['small', 'medium', 'large', 'extraLarge']
 
 export const argTypes = {
   variation: {

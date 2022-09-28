@@ -75,6 +75,11 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule('font-size', '16px')
     expect(button).toHaveStyleRule('padding', '12px 22px')
+
+    rerender(<Button size='extraLarge'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '16px 22px')
   })
 
   it('should render correctly for "width" prop', () => {
@@ -151,6 +156,22 @@ describe('Button', () => {
       </Button>
     )
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-lg'])
+
+    rerender(
+      <Button size='large' borderRadius={'xl'}>
+        BUTTON
+      </Button>
+    )
+
+    expect(button).toHaveStyleRule('border-radius', borderRadius.xl)
+
+    rerender(
+      <Button size='extraLarge' borderRadius={'notValid'}>
+        BUTTON
+      </Button>
+    )
+
+    expect(button).toHaveStyleRule('border-radius', borderRadius['action-xl'])
   })
 
   it('should render correctly for "boxShadowSize" prop', () => {
