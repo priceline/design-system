@@ -18,22 +18,18 @@ import Overlay from '../Overlay'
 const ESCAPE_KEY = 27
 
 const PopoverGuide = styled(Box)`
-  z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
+  box-sizing: border-box;
   max-width: ${({ width }) => (typeof width === 'number' ? `${width}px` : width)};
   width: 100%;
-  box-sizing: border-box;
-
-  @media (max-width: 640px) {
-    left: 0 !important;
-  }
+  z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
 `
 const ContentContainer = styled.section.attrs(borderRadiusAttrs)`
+  box-sizing: border-box;
   box-shadow: 0 0 0 1px ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
     0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08), 0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${themeGet('fontSizes.0')}px;
-  box-sizing: border-box;
-  outline: 0;
   max-width: 100%;
+  outline: 0;
   ${borderRadius};
 `
 
