@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Tue, 27 Sep 2022 21:11:22 GMT and should not be manually modified.
+This log was last generated on Wed, 05 Oct 2022 17:01:35 GMT and should not be manually modified.
+
+## 4.6.2
+Wed, 05 Oct 2022 17:01:35 GMT
+
+### Patches
+
+- removes left style from PopoverGuide
 
 ## 4.6.1
 Tue, 27 Sep 2022 21:11:22 GMT
