@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "removes left style from PopoverGuide",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
