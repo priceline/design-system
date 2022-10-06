@@ -9,7 +9,7 @@ export default {
 
 export const SingleColor = () => <Swatch colors={['#0033A0']} />
 
-export const MultipleColor = () => <Swatch colors={['#D50032', '#1B7742', '#0033A0']} />
+export const MultipleColors = () => <Swatch colors={['#D50032', '#1B7742', '#0033A0']} />
 
 export const Wrap = () => (
   <Box width='100px'>

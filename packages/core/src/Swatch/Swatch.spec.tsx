@@ -23,4 +23,15 @@ describe('Swatch', () => {
       expect(mockOnClick).toHaveBeenLastCalledWith(color)
     })
   })
+
+  it('does not crash when undefined onClick callback is not provided', () => {
+    const mockOnClick = jest.fn()
+
+    const { getByTestId } = render(<Swatch colors={mockColors}/>)
+
+    mockColors.map((color, idx) => {
+      fireEvent.click(getByTestId(`${idx}-${color}`))
+      expect(mockOnClick).toHaveBeenCalledTimes(0)
+    })
+  })
 })

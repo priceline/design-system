@@ -24,7 +24,7 @@ const Swatch: React.FC<InferProps<typeof propTypes>> = ({ colors, onClick }) => 
         data-testid={`${idx}-${color}`}
         key={`${idx}-${color}`}
         color={color}
-        onClick={() => onClick(color)}
+        onClick={() => onClick?.(color)}
       />
     ))}
   </Flex>
