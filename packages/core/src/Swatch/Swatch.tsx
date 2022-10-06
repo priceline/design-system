@@ -10,6 +10,7 @@ const SwatchColor = styled.div`
   border-radius: 50%;
   display: flex;
   margin: 4px;
+  cursor: ${(props) => (props.onClick ? 'pointer' : 'mouse')};
 `
 
 const propTypes = {
@@ -17,14 +18,14 @@ const propTypes = {
   onClick: PropTypes.func,
 }
 
-const Swatch: React.FC<InferProps<typeof propTypes>> = ({ colors, onClick }) => (
-  <Flex flexWrap='wrap'>
+const Swatch: React.FC<InferProps<typeof propTypes>> = ({ colors, onClick, ...props }) => (
+  <Flex flexWrap='wrap' {...props}>
     {colors.map((color, idx) => (
       <SwatchColor
         data-testid={`${idx}-${color}`}
         key={`${idx}-${color}`}
         color={color}
-        onClick={() => onClick?.(color)}
+        onClick={onClick ? () => onClick(color) : undefined}
       />
     ))}
   </Flex>
