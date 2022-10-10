@@ -70,7 +70,8 @@
     "moize": "^6.1.0",
     "pcln-icons": "workspace:*",
     "prop-types": "^15.8.1",
-    "styled-system": "^4.2.4"
+    "styled-system": "^4.2.4",
+    "react-intersection-observer": "~9.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
