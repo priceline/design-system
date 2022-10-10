@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import { InView } from 'react-intersection-observer'

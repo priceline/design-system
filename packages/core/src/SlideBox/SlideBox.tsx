@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes, { InferProps } from 'prop-types'
