@@ -39,6 +39,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
     <StyledFlex width='100%' py={2}>
       {childrenArray.map((item, index) => (
         <Box
+          key={`slide${index}`}
           width={
             layout ? `${widths[(index + widths.length) % widths.length]}%` : getVisibleSlides(visibleSlides)
           }
