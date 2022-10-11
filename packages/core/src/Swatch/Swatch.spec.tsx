@@ -32,7 +32,7 @@ describe('Swatch', () => {
     const { getByTestId } = render(<Swatch colors={mockColors} />)
 
     mockColors.map((color, idx) => {
-      expect(getByTestId(`${idx}-${color}`)).toHaveStyle('cursor: mouse')
+      expect(getByTestId(`${idx}-${color}`)).toHaveStyle('cursor: default')
 
       fireEvent.click(getByTestId(`${idx}-${color}`))
       expect(mockOnClick).toHaveBeenCalledTimes(0)

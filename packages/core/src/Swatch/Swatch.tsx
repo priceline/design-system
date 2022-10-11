@@ -10,7 +10,7 @@ const SwatchColor = styled.div`
   border-radius: 50%;
   display: flex;
   margin: 4px;
-  cursor: ${(props) => (props.onClick ? 'pointer' : 'mouse')};
+  cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 `
 
 const propTypes = {
