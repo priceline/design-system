@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "added ScaledText component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

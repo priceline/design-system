@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScaledText renders svg text nodes in parent container 1`] = `
+<div>
+  <svg
+    className="svg-text"
+  >
+    <text
+      fill="red"
+      fontWeight="bold"
+    >
+      Hello
+    </text>
+  </svg>
+  <svg
+    className="svg-text"
+  >
+    <text
+      fill="red"
+    >
+      World
+    </text>
+  </svg>
+</div>
+`;
