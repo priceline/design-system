@@ -6,7 +6,7 @@ describe('ScaledText', () => {
     const json = rendererCreateWithTheme(
       <div>
         <ScaledText
-          values={[{ value: 'Hello', props: { fontWeight: 'bold' } }, { value: 'World' }]}
+          lines={[{ text: 'Hello', props: { fontWeight: 'bold' } }, { text: 'World' }]}
           color='red'
         />
       </div>

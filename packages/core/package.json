@@ -80,7 +80,8 @@
     "prop-types": "^15.8.1",
     "react-intersection-observer": "^9.4.4",
     "react-element-to-jsx-string": "^15.0.0",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "uuid": "~9.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.5",

@@ -8,12 +8,12 @@ export default {
 const today = new Date().toLocaleString('en-us', { weekday: 'long' })
 
 const props: IScaledTextProps = {
-  values: [
-    { value: 'Hello', props: { fontWeight: 'bold' } },
-    { value: 'World', props: { fill: 'deepskyblue' } },
-    { value: 'Today Is', props: { fontStyle: 'italic' } },
-    { value: today, props: { fontFamily: 'courier' } },
-    { value: '🏨 🛫 🚙', props: { rotate: 10 } },
+  lines: [
+    { text: 'Hello', props: { fontWeight: 'bold' } },
+    { text: 'World', props: { fill: 'deepskyblue' } },
+    { text: 'Today Is', props: { fontStyle: 'italic' } },
+    { text: today, props: { fontFamily: 'courier' } },
+    { text: '🏨 🛫 🚙', props: { rotate: 10 } },
   ],
   color: 'midnightblue',
 }
