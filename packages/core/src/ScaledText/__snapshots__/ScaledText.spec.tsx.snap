@@ -3,20 +3,22 @@
 exports[`ScaledText renders svg text nodes in parent container 1`] = `
 <div>
   <svg
-    className="svg-text"
+    className="svg-text-8f386643-cc56-4ab8-8d92-0d599f7fd548"
   >
     <text
       fill="red"
       fontWeight="bold"
+      title="Hello"
     >
       Hello
     </text>
   </svg>
   <svg
-    className="svg-text"
+    className="svg-text-8f386643-cc56-4ab8-8d92-0d599f7fd548"
   >
     <text
       fill="red"
+      title="World"
     >
       World
     </text>
