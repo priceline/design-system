@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'
 import { CarouselProvider, Slide, CarouselContext } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
 import { CarouselWrapper } from './Carousel.styles'
-import { Flex, Relative, Box } from 'pcln-design-system'
+import { Flex, Relative, Box, SlideBox } from 'pcln-design-system'
 import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
 import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
 import { StretchSlide } from './StretchSlide'
 import { RenderInView } from './RenderInView'
+import { XS_VISIBLE_SLIDES_WIDTH } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -60,7 +61,23 @@ export const Carousel = ({
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
-  const responsiveVisibleSlides = useResponsiveVisibleSlides(visibleSlidesArray)
+  const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
+
+  if (browserWidth < XS_VISIBLE_SLIDES_WIDTH) {
+    return (
+      <SlideBox
+        slideSpacing={slideSpacing}
+        stretchHeight={stretchSlideHeight}
+        layout={layout}
+        onSlideChange={onSlideChange}
+        visibleSlides={visibleSlides}
+      >
+        {React.Children.map(children, (item, index) => {
+          return item
+        })}
+      </SlideBox>
+    )
+  }
 
   return (
     <CarouselWrapper>

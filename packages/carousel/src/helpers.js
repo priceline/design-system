@@ -50,7 +50,10 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
     }
   })
 
-  return getVisibleSlides(visibleSlides, width)
+  return {
+    responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
+    browserWidth: width,
+  }
 }
 
 export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides }

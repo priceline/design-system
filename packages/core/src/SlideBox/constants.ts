@@ -1,0 +1,5 @@
+const MAX_NUM_SLIDES_XS = 1.2
+
+const MAX_NUM_SLIDES_SM = 2.2
+
+export { MAX_NUM_SLIDES_XS, MAX_NUM_SLIDES_SM }
