@@ -139,6 +139,7 @@ const propTypes = {
     PropTypes.oneOf(ALLOWED_GAP_VALUES),
     PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
   ]),
+  flexWrap: PropTypes.string,
   /** Add space between rows */
   stretchHeight: PropTypes.bool,
 }
@@ -153,12 +154,13 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
   rowGap,
   variation,
   stretchHeight,
+  flexWrap,
 }) => {
   const widths = memoGetChildrenWidths(variation, children.length)
   const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = memoGetGapValues(gap, rowGap)
 
   return (
-    <Flex flexWrap='wrap' mx={flexMarginX} my={flexMarginY} data-testid='layout-flex'>
+    <Flex flexWrap={flexWrap} mx={flexMarginX} my={flexMarginY} data-testid='layout-flex'>
       {React.Children.map(
         children,
         (child, idx) =>
@@ -182,7 +184,9 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
 
 Layout.propTypes = propTypes
 
-Layout.defaultProps = {}
+Layout.defaultProps = {
+  flexWrap: 'wrap',
+}
 
 Layout.displayName = 'Layout'
 
