@@ -12,8 +12,8 @@ const resizeWindow = (width) => {
 
 const input = [1, 2, 3]
 const TextVisibleSlides = () => {
-  const visibleSlides = useResponsiveVisibleSlides(input)
-  return <div>{visibleSlides} Slide(s)</div>
+  const { responsiveVisibleSlides } = useResponsiveVisibleSlides(input)
+  return <div>{responsiveVisibleSlides} Slide(s)</div>
 }
 
 describe('getVisibleSlidesArray', () => {
