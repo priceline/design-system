@@ -1,7 +1,7 @@
 import React from 'react'
 import moize from 'moize'
 import PropTypes, { InferProps } from 'prop-types'
-import { flexWrap, zIndex } from 'styled-system'
+import { zIndex } from 'styled-system'
 import styled from 'styled-components'
 
 import { Flex, Box } from '..'
