@@ -27,6 +27,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
   <ScrollFlex width='100%' py={2}>
     {React.Children.toArray(children).map((item, index) => (
       <Box
+        data-testid={`slide${index + 1}`}
         key={`slide${index}`}
         width={layout ? getCustomWidths(layout?.split('-'), index) : getVisibleSlides(visibleSlides)}
       >
