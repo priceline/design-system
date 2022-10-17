@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 02 Sep 2022 15:49:44 GMT and should not be manually modified.
+This log was last generated on Wed, 05 Oct 2022 17:01:35 GMT and should not be manually modified.
+
+## 4.32.0
+Wed, 05 Oct 2022 17:01:35 GMT
+
+### Minor changes
+
+- Added an extra large button with a height of 56px
+- Added test cases, as well 
 
 ## 4.31.0
 Fri, 02 Sep 2022 15:49:44 GMT

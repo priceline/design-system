@@ -7,7 +7,7 @@ describe('MenuItem', () => {
     render(<MenuItem>Recommended</MenuItem>)
 
     const item = screen.getByRole('option')
-    expect(item).toHaveStyleRule('color', '#001023')
+    expect(item).toHaveStyleRule('color', '#001833')
     expect(item).toHaveStyleRule('background-color', '#fff')
   })
 
@@ -15,9 +15,10 @@ describe('MenuItem', () => {
     render(<MenuItem selected>Recommended</MenuItem>)
 
     const item = screen.getByRole('option')
-    expect(item).toHaveStyleRule('color', '#001023')
-    expect(item).toHaveStyleRule('background-color', '#edf0f3')
+    expect(item).toHaveStyleRule('color', '#001833')
+    expect(item).toHaveStyleRule('background-color', '#e8f2ff')
     expect(screen.getAllByTitle('check')[0]).toBeInTheDocument()
+    expect(screen.getAllByTitle('check')[0]).toHaveStyleRule('color', '#0068ef')
   })
 
   it('renders with promoPrimary color', () => {
@@ -28,8 +29,8 @@ describe('MenuItem', () => {
     )
 
     const item = screen.getByRole('option')
-    expect(item).toHaveStyleRule('color', '#001023')
-    expect(item).toHaveStyleRule('background-color', '#edf0f3')
+    expect(item).toHaveStyleRule('color', '#001833')
+    expect(item).toHaveStyleRule('background-color', '#f5ebfa')
   })
 
   it('handles click', () => {

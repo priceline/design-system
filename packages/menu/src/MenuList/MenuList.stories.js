@@ -25,10 +25,10 @@ const CurrencyItems = ({ currencyCode }) =>
     const selected = currencyCode === currency.code
     return (
       <MenuItem key={index} selected={selected}>
-        <Text regular width={32} textAlign='center' mr={3}>
+        <Text textStyle='paragraphBold' mr={3} width={32}>
           {currency.symbol}
         </Text>
-        <Text regular>{currency.label}</Text>
+        <Text textStyle='paragraph'>{currency.label}</Text>
       </MenuItem>
     )
   })
@@ -50,10 +50,10 @@ export const CurrencyMenuListWithSelection = () => {
         const onClick = () => setCurrencyCode(currency.code)
         return (
           <MenuItem key={index} selected={selected} onClick={onClick}>
-            <Text regular width={32} textAlign='center' mr={3}>
+            <Text textStyle='paragraphBold' mr={3} width={32}>
               {currency.symbol}
             </Text>
-            <Text regular>{currency.label}</Text>
+            <Text textStyle='paragraph'>{currency.label}</Text>
           </MenuItem>
         )
       })}

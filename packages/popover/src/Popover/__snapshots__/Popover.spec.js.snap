@@ -137,25 +137,19 @@ exports[`Popover UI Positioning Bottom 1`] = `
   padding: 8px;
   width: 400px;
   border-radius: 6px;
-  z-index: 102;
+  box-sizing: border-box;
   max-width: 400px;
   width: 100%;
-  box-sizing: border-box;
+  z-index: 102;
 }
 
 .c2 {
+  box-sizing: border-box;
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  box-sizing: border-box;
-  outline: 0;
   max-width: 100%;
+  outline: 0;
   border-radius: 6px;
-}
-
-@media (max-width:640px) {
-  .c0 {
-    left: 0 !important;
-  }
 }
 
 <div
@@ -257,25 +251,19 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   padding: 8px;
   width: 400px;
   border-radius: 6px;
-  z-index: 102;
+  box-sizing: border-box;
   max-width: 400px;
   width: 100%;
-  box-sizing: border-box;
+  z-index: 102;
 }
 
 .c2 {
+  box-sizing: border-box;
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  box-sizing: border-box;
-  outline: 0;
   max-width: 100%;
+  outline: 0;
   border-radius: 6px;
-}
-
-@media (max-width:640px) {
-  .c0 {
-    left: 0 !important;
-  }
 }
 
 <div
@@ -377,25 +365,19 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   padding: 8px;
   width: 400px;
   border-radius: 6px;
-  z-index: 102;
+  box-sizing: border-box;
   max-width: 400px;
   width: 100%;
-  box-sizing: border-box;
+  z-index: 102;
 }
 
 .c2 {
+  box-sizing: border-box;
   box-shadow: 0 0 0 1px #c0cad5,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08);
   font-size: 12px;
-  box-sizing: border-box;
-  outline: 0;
   max-width: 100%;
+  outline: 0;
   border-radius: 6px;
-}
-
-@media (max-width:640px) {
-  .c0 {
-    left: 0 !important;
-  }
 }
 
 <div

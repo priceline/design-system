@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 02 Sep 2022 15:49:44 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Sep 2022 21:11:22 GMT and should not be manually modified.
+
+## 4.10.0
+Tue, 27 Sep 2022 21:11:22 GMT
+
+### Minor changes
+
+- Adds Sort Icon
 
 ## 4.9.0
 Fri, 02 Sep 2022 15:49:44 GMT

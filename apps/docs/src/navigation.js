@@ -48,6 +48,7 @@ export default [
       { name: 'Relative', path: '/Relative' },
       { name: 'Select', path: '/Select' },
       { name: 'Stamp', path: '/Stamp' },
+      { name: 'Swatch', path: '/Swatch' },
       { name: 'Text', path: '/Text' },
       { name: 'TextArea', path: '/TextArea' },
       { name: 'ToggleBadge', path: '/ToggleBadge' },

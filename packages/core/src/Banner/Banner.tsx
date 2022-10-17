@@ -7,7 +7,6 @@ import {
   Success as SuccessIcon,
   Warning as WarningIcon,
 } from 'pcln-icons'
-
 import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
