@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Replace mobile experience with SlideBox component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
