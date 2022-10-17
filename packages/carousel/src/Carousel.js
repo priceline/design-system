@@ -72,9 +72,7 @@ export const Carousel = ({
         onSlideChange={onSlideChange}
         visibleSlides={visibleSlides}
       >
-        {React.Children.map(children, (item, index) => {
-          return item
-        })}
+        {React.Children.map(children, (item) => item)}
       </SlideBox>
     )
   }
