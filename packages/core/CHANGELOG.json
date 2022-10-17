@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.33.0",
+      "tag": "pcln-design-system_v4.33.0",
+      "date": "Mon, 17 Oct 2022 15:52:39 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added pass through flexWrap prop for layout ",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "539d8cfbb6ba161802d09af01a88e0daf3ef734e"
+          },
+          {
+            "comment": "create Swatch component",
+            "author": "Devin Efendy <90356592+devin-efendy-pcln@users.noreply.github.com>",
+            "commit": "6e763e1e99281f8eb76645ba3ec0d2109ae82e59"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.32.0",
       "tag": "pcln-design-system_v4.32.0",
       "date": "Wed, 05 Oct 2022 17:01:35 GMT",
