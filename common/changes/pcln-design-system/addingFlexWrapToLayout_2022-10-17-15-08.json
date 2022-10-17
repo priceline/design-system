@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added pass through flexWrap prop for layout ",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
