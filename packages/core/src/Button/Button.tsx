@@ -14,7 +14,7 @@ import {
   boxShadowSizeValues,
 } from '../utils'
 
-export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl']
+export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {

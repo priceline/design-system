@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update valid border radii values for Button",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
