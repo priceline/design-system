@@ -56,4 +56,11 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   }
 }
 
-export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides }
+//This is to keep consistant with previous version.
+//We should make a major version release that will allow more breakpoints
+const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, visibleSlides[1]]
+
+const getMobileVisibleSlides = (visibleSlides) =>
+  Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
+
+export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }

@@ -98,7 +98,7 @@ const BasicTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 
 export const Basic = BasicTemplate.bind({})
 Basic.args = {
-  visibleSlides: 3,
+  visibleSlides: [1.1, 2.1, 3],
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',

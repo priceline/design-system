@@ -7,7 +7,12 @@ import { Flex, Relative, Box, SlideBox } from 'pcln-design-system'
 import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
 import { Slider } from './Slider'
-import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
+import {
+  getSlideKey,
+  getVisibleSlidesArray,
+  useResponsiveVisibleSlides,
+  getMobileVisibleSlides,
+} from './helpers'
 import { StretchSlide } from './StretchSlide'
 import { RenderInView } from './RenderInView'
 import { XS_VISIBLE_SLIDES_WIDTH } from './constants'
@@ -56,6 +61,7 @@ export const Carousel = ({
   currentSlide = 0,
   onSlideClick = () => {},
   onSlideKeyDown = () => {},
+  mobileVisibleSlides,
 }) => {
   const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
@@ -70,7 +76,7 @@ export const Carousel = ({
         stretchHeight={stretchSlideHeight}
         layout={layout}
         onSlideChange={onSlideChange}
-        visibleSlides={visibleSlides}
+        visibleSlides={mobileVisibleSlides || getMobileVisibleSlides(visibleSlides)}
       >
         {React.Children.map(children, (item) => item)}
       </SlideBox>
@@ -230,4 +236,6 @@ Carousel.propTypes = {
   onSlideClick: PropTypes.func,
   /** Custom onKeyDown event handler for each Slide child */
   onSlideKeyDown: PropTypes.func,
+  /** Allows extra breakpoints for mobile. Should eventually combine with VisibleSlides */
+  mobileVisibleSlides: PropTypes.array,
 }
