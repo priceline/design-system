@@ -21,7 +21,7 @@ describe('SlideBox', () => {
         <Box>3</Box>
       </SlideBox>
     )
-    expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.2).toString()}%;`)
+    expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.1).toString()}%;`)
   })
 
   it('renders with array visible slides', () => {
@@ -35,7 +35,7 @@ describe('SlideBox', () => {
     expect(getByTestId('slide1')).toHaveStyle(`width: 50%;`)
   })
 
-  it('renders with oint visible slides (small browser should default to 1.2 slides)', () => {
+  it('renders with int visible slides (small browser should default to 1.1 slides)', () => {
     const { getByTestId } = render(
       <SlideBox visibleSlides={2} onSlideChange={() => {}} slideSpacing={2}>
         <Box>1</Box>
@@ -43,6 +43,6 @@ describe('SlideBox', () => {
         <Box>3</Box>
       </SlideBox>
     )
-    expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.2).toString()}%;`)
+    expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.1).toString()}%;`)
   })
 })
