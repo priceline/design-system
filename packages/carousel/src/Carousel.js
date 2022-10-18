@@ -13,7 +13,6 @@ import {
   useResponsiveVisibleSlides,
   getMobileVisibleSlides,
 } from './helpers'
-import { StretchSlide } from './StretchSlide'
 import { RenderInView } from './RenderInView'
 import { XS_VISIBLE_SLIDES_WIDTH } from './constants'
 
@@ -63,7 +62,6 @@ export const Carousel = ({
   onSlideKeyDown = () => {},
   mobileVisibleSlides,
 }) => {
-  const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
@@ -142,16 +140,9 @@ export const Carousel = ({
                 >
                   <RenderInView index={index} onSlideChange={onSlideChange}>
                     <Box p={slideSpacing} height='100%'>
-                      {!layout && stretchSlideHeight ? (
-                        <StretchSlide
-                          slideSpacing={slideSpacing}
-                          slideContents={item}
-                          height={height}
-                          setHeight={setHeight}
-                        />
-                      ) : (
-                        item
-                      )}
+                      {!layout && stretchSlideHeight
+                        ? React.cloneElement(item, { style: { 'min-height': '100%' } })
+                        : item}
                     </Box>
                   </RenderInView>
                 </Slide>
