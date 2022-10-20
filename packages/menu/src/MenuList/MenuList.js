@@ -26,6 +26,7 @@ const MenuContainer = styled(Flex)`
     margin-bottom: ${themeGet('space.1')}px;
   }
 
+  max-height: ${(props) => (props.maxHeight ? props.maxHeight : '100%')};
   ${applySizes(sizes)};
 `
 
@@ -74,7 +75,7 @@ function MenuList({ id, children, color, size, height, handleClose }) {
       role='listbox'
       aria-activedescendant={currentItemId}
       flexWrap='wrap'
-      height={height}
+      maxHeight={height}
       size={size}
       p={2}
       pr={1}

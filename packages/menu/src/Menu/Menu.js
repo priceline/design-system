@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Button } from 'pcln-design-system'
+import { Box, Button } from 'pcln-design-system'
 import { ChevronDown } from 'pcln-icons'
 import Popover from 'pcln-popover'
 import MenuList from '../MenuList'
@@ -16,18 +16,22 @@ function Menu({
   buttonNode,
   buttonProps,
   buttonText,
+  contentProps,
   color,
   width,
   height,
   size,
   trapFocus,
+  placement,
   children,
   ...props
 }) {
   const MenuContent = ({ handleClose }) => (
-    <MenuList id={id} color={color} size={size} height={height} handleClose={handleClose}>
-      {children}
-    </MenuList>
+    <Box {...contentProps}>
+      <MenuList id={id} color={color} size={size} height={height} handleClose={handleClose}>
+        {children}
+      </MenuList>
+    </Box>
   )
 
   MenuContent.propTypes = {
@@ -60,7 +64,7 @@ function Menu({
       trapFocus={trapFocus}
       width={width}
       zIndex={1600}
-      placement='bottom-start'
+      placement={placement ?? 'bottom-start'}
       aria-controls={id}
       renderContent={MenuContent}
       {...props}
@@ -77,11 +81,13 @@ Menu.propTypes = {
   buttonNode: PropTypes.node,
   buttonProps: PropTypes.shape(Button.propTypes),
   buttonText: PropTypes.node,
+  contentProps: PropTypes.shape(Box.propTypes),
   color: PropTypes.string,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.number,
   size: PropTypes.string,
   trapFocus: PropTypes.bool,
+  placement: PropTypes.string,
   children: PropTypes.node,
 }
 
