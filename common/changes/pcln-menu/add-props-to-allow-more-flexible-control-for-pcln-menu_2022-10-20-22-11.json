@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "pcln-menu",
-      "comment": "add props to control placement, height, and popover content",
+      "comment": "add props to control placement and height",
       "type": "minor"
     }
   ],

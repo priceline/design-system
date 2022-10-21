@@ -214,12 +214,7 @@ export const UsingButtonNodePropWithButtonChip = () => {
   )
 }
 
-export const WithContentProps = SingleLineTemplate.bind({})
-WithContentProps.args = {
-  contentProps:{ px: '12px', py: '14px' }
-}
-
 export const WithCustomPlacement = SingleLineTemplate.bind({})
 WithCustomPlacement.args = {
-  placement: 'bottom'
+  placement: 'bottom',
 }
