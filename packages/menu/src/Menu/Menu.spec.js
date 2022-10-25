@@ -106,7 +106,7 @@ describe('Menu', () => {
 
     fireEvent.click(screen.getByText('Click Me'))
     const dialog = await screen.findByRole('dialog')
-    expect(dialog).toMatchSnapshot()
+    expect(dialog).toHaveAttribute('data-placement', 'bottom-start')
   })
 
   it('renders content with custom placement', async () => {
@@ -119,6 +119,6 @@ describe('Menu', () => {
 
     fireEvent.click(screen.getByText('Click Me'))
     const dialog = await screen.findByRole('dialog')
-    expect(dialog).toMatchSnapshot()
+    expect(dialog).toHaveAttribute('data-placement', 'bottom')
   })
 })
