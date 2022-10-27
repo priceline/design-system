@@ -95,4 +95,30 @@ describe('Menu', () => {
     fireEvent.click(itemOne)
     expect(onItemOneClick).toHaveBeenCalledTimes(1)
   })
+
+  it('renders content at bottom-start as default placement', async () => {
+    render(
+      <Menu id='menu' idx='1' buttonText='Click Me'>
+        <MenuItem>Item One</MenuItem>
+        <MenuItem>Item Two</MenuItem>
+      </Menu>
+    )
+
+    fireEvent.click(screen.getByText('Click Me'))
+    const dialog = await screen.findByRole('dialog')
+    expect(dialog).toHaveAttribute('data-placement', 'bottom-start')
+  })
+
+  it('renders content with custom placement', async () => {
+    render(
+      <Menu id='menu' idx='1' buttonText='Click Me' placement='bottom'>
+        <MenuItem>Item One</MenuItem>
+        <MenuItem>Item Two</MenuItem>
+      </Menu>
+    )
+
+    fireEvent.click(screen.getByText('Click Me'))
+    const dialog = await screen.findByRole('dialog')
+    expect(dialog).toHaveAttribute('data-placement', 'bottom')
+  })
 })
