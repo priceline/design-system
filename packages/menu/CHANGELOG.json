@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "4.7.0",
+      "tag": "pcln-menu_v4.7.0",
+      "date": "Thu, 27 Oct 2022 18:30:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add props to control placement and height",
+            "author": "Devin Efendy <90356592+devin-efendy-pcln@users.noreply.github.com>",
+            "commit": "88a50bd214d4f70c7cc2aac4ee861e1fdceb4e72"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.33.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `4.6.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.33.0` to `4.33.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `4.6.3` to `4.6.4`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.6.2",
       "tag": "pcln-menu_v4.6.2",
       "date": "Mon, 17 Oct 2022 15:52:39 GMT",

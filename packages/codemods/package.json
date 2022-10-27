@@ -1,6 +1,6 @@
 {
   "name": "pcln-codemods",
-  "version": "1.1.33",
+  "version": "1.1.34",
   "scripts": {
     "build": "",
     "clean": "rimraf dist",

@@ -2,6 +2,28 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.4.4",
+      "tag": "pcln-carousel_v1.4.4",
+      "date": "Thu, 27 Oct 2022 18:30:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade to latest moize",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "360925ec3afcbf9a2dd72411ff156d50ceb1d5a5"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.33.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.33.0` to `4.33.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.4.3",
       "tag": "pcln-carousel_v1.4.3",
       "date": "Mon, 17 Oct 2022 15:52:39 GMT",

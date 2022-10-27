@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 17 Oct 2022 15:52:39 GMT and should not be manually modified.
+This log was last generated on Thu, 27 Oct 2022 18:30:28 GMT and should not be manually modified.
+
+## 4.33.1
+Thu, 27 Oct 2022 18:30:28 GMT
+
+### Patches
+
+- Fix serialization bug in Layout
+- Update valid border radii values for Button
 
 ## 4.33.0
 Mon, 17 Oct 2022 15:52:39 GMT

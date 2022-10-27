@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Mon, 17 Oct 2022 15:52:39 GMT and should not be manually modified.
+This log was last generated on Thu, 27 Oct 2022 18:30:28 GMT and should not be manually modified.
+
+## 4.7.0
+Thu, 27 Oct 2022 18:30:28 GMT
+
+### Minor changes
+
+- add props to control placement and height
 
 ## 4.6.2
 Mon, 17 Oct 2022 15:52:39 GMT
