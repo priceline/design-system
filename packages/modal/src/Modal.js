@@ -134,6 +134,7 @@ const DialogWrapper = styled(Box)`
 const DialogInnerWrapper = styled(Flex)`
   position: relative;
   height: 100%;
+  borderRadius: xl;
 `
 
 const Modal = ({
