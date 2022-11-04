@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: [16, 18]
 
     steps:
       - uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0 # needed by chromatic for git history
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -39,7 +39,7 @@ jobs:
         run: node common/scripts/install-run-rush.js build
 
       - name: Build Storybook
-        if: ${{ matrix.node-version == '14.x' }}
+        if: ${{ matrix.node-version == '16' }}
         working-directory: ./
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
@@ -52,7 +52,7 @@ jobs:
         run: node common/scripts/install-run-rush.js lint
 
       - name: Generate and upload coverage report
-        if: ${{ matrix.node-version == '14.x' }}
+        if: ${{ matrix.node-version == '16' }}
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
