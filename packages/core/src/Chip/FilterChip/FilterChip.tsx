@@ -1,16 +1,18 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import { space, fontSize } from 'styled-system'
+import PropTypes from 'prop-types'
+import { SpaceProps, FontSizeProps } from 'styled-system'
 import { Close } from 'pcln-icons'
+import propTypes from '@styled-system/prop-types'
+
 import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
 
 const getTitle = ({ disabled, actionTitle }) => `${actionTitle}${disabled ? ' disabled' : ''}`
 
-const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+const filterChipPropTypes = {
+  ...propTypes.space,
+  ...propTypes.fontSize,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
@@ -26,7 +28,21 @@ const propTypes = {
   value: PropTypes.string,
 }
 
-const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
+export interface IFilterChipProps extends SpaceProps, FontSizeProps {
+  id?: string
+  name?: string
+  disabled?: boolean
+  selected?: boolean
+  onClick?: (unknown) => void
+  label?: string
+  showActionIcon?: boolean
+  actionTitle?: string
+  value?: string | number
+  color?: string
+  children?: React.ReactNode | string
+}
+
+const FilterChip: React.FC<IFilterChipProps> = ({
   id,
   name,
   disabled,
@@ -70,7 +86,7 @@ const FilterChip: React.FC<InferProps<typeof propTypes>> = ({
 
 FilterChip.displayName = 'FilterChip'
 
-FilterChip.propTypes = propTypes
+FilterChip.propTypes = filterChipPropTypes
 
 FilterChip.defaultProps = {
   color: 'primary',

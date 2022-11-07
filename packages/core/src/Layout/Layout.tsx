@@ -1,5 +1,4 @@
-import React from 'react'
-import moize from 'moize'
+import React, { useState, useEffect } from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import { zIndex } from 'styled-system'
 import styled from 'styled-components'
@@ -70,8 +69,6 @@ const getChildrenWidths = (variation: string, numChildren: number) => {
   }
 }
 
-const memoGetChildrenWidths = moize(getChildrenWidths, { profileName: 'getChildrenWidths' })
-
 // Map named sizes to responsive size values from theme
 const gapValues = {
   sm: 1,
@@ -114,7 +111,7 @@ const getGapValues = (gapProp, rowGapProp) => {
   return { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY }
 }
 
-const memoGetGapValues = moize(getGapValues, { profileName: 'getGapValues' })
+const memoGetGapValues = getGapValues
 
 const ALLOWED_LAYOUT_VALUES = ['50-50', '33-33-33', '33-66', '66-33', '25-25-25-25', '60-40', '40-60', '100']
 const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl']
@@ -139,6 +136,8 @@ const propTypes = {
     PropTypes.oneOf(ALLOWED_GAP_VALUES),
     PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
   ]),
+  /** FlexWrap pass down property */
+  flexWrap: PropTypes.string,
   /** Add space between rows */
   stretchHeight: PropTypes.bool,
 }
@@ -153,12 +152,23 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
   rowGap,
   variation,
   stretchHeight,
+  flexWrap,
 }) => {
-  const widths = memoGetChildrenWidths(variation, children.length)
-  const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = memoGetGapValues(gap, rowGap)
+  const [gapValues, setGapValues] = useState(getGapValues(gap, rowGap))
+  const [widths, setChildrenWidths] = useState(getChildrenWidths(variation, children.length))
+
+  useEffect(() => {
+    setGapValues(memoGetGapValues(gap, rowGap))
+  }, [gap, rowGap])
+
+  useEffect(() => {
+    setChildrenWidths(getChildrenWidths(variation, children.length))
+  }, [variation, children.length])
+
+  const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = gapValues
 
   return (
-    <Flex flexWrap='wrap' mx={flexMarginX} my={flexMarginY} data-testid='layout-flex'>
+    <Flex flexWrap={flexWrap} mx={flexMarginX} my={flexMarginY} data-testid='layout-flex'>
       {React.Children.map(
         children,
         (child, idx) =>
@@ -182,7 +192,9 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
 
 Layout.propTypes = propTypes
 
-Layout.defaultProps = {}
+Layout.defaultProps = {
+  flexWrap: 'wrap',
+}
 
 Layout.displayName = 'Layout'
 

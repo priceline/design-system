@@ -63,6 +63,7 @@ describe('Checkbox', () => {
     )
     const checkbox = getByRole('checkbox') as HTMLInputElement
 
+    // @ts-ignore
     expect(ref.current.id).toBe(checkbox.id)
   })
 })

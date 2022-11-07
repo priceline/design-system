@@ -59,11 +59,11 @@ const CurrencyItems = ({ currencyCode, setCurrencyCode }) =>
     )
   })
 
-export const Singleline = () => {
+const SingleLineTemplate = (args) => {
   const [value, setValue] = useState('one')
 
   return (
-    <Menu isOpen buttonText='Menu' width={275}>
+    <Menu isOpen buttonText='Menu' width={275} {...args}>
       {listItems.map((item, index) => {
         const selected = value === item.value
         const onClick = () => setValue(item.value)
@@ -78,6 +78,8 @@ export const Singleline = () => {
     </Menu>
   )
 }
+
+export const Singleline = SingleLineTemplate.bind({})
 
 export const SinglelineWithIcon = () => {
   const [value, setValue] = useState('one')
@@ -210,4 +212,9 @@ export const UsingButtonNodePropWithButtonChip = () => {
       <CurrencyItems currencyCode={currencyCode} setCurrencyCode={setCurrencyCode} />
     </Menu>
   )
+}
+
+export const WithCustomPlacement = SingleLineTemplate.bind({})
+WithCustomPlacement.args = {
+  placement: 'bottom',
 }

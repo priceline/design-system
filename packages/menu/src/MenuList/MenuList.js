@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
 import { Flex, applySizes } from 'pcln-design-system'
 
 const sizes = {
@@ -22,10 +22,11 @@ const MenuContainer = styled(Flex)`
   overflow-y: auto;
 
   & > * {
-    margin-right: ${themeGet('space.1')}px;
-    margin-bottom: ${themeGet('space.1')}px;
+    margin-right: ${themeGet('space.1')};
+    margin-bottom: ${themeGet('space.1')};
   }
 
+  max-height: ${(props) => (props.maxHeight ? props.maxHeight : '100%')};
   ${applySizes(sizes)};
 `
 
@@ -74,7 +75,7 @@ function MenuList({ id, children, color, size, height, handleClose }) {
       role='listbox'
       aria-activedescendant={currentItemId}
       flexWrap='wrap'
-      height={height}
+      maxHeight={height}
       size={size}
       p={2}
       pr={1}

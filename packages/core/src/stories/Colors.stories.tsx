@@ -15,7 +15,7 @@ const Chip = (props) => <Box width={1} px={5} py={4} bg={props.color} />
 
 const ColorCard = (props) => (
   <Box>
-    <Chip name={props.shade} color={props.color} />
+    <Chip name={props.shade} color={props.color || props.shade} />
     <Text f={0}>{props.shade}</Text>
     <Text as='pre' m={0}>
       {props.hex}
@@ -35,14 +35,14 @@ export const Palette = () => (
           <Box p={3}>
             <h1>Palette</h1>
             <p>The palette allows you to change the color of components.</p>
-            <Flex wrap>
+            <Flex flexWrap='wrap'>
               {Object.keys(theme.palette).map((color) => {
                 const shades = theme.palette[color]
                 if (typeof shades === 'object') {
                   return (
                     <div style={{ width: '100%' }}>
                       <h4>{color}</h4>
-                      <Flex wrap>
+                      <Flex flexWrap='wrap'>
                         {Object.keys(shades).map((shade) => {
                           const fullColor = `${color}.${shade}`
                           return (
@@ -82,10 +82,10 @@ export const Colors = () => (
     <Box p={3}>
       <h1>Colors</h1>
     </Box>
-    <Flex wrap>
+    <Flex flexWrap='wrap'>
       {next.map((color) => (
         <Box key={color.key} p={3} width={[1, 1 / 2, 1 / 3, 1 / 4, 1 / 7]}>
-          <ColorCard name={color.key} color={color.value} shade={color.key} hex={color.value} />
+          <ColorCard name={color.key} shade={color.key} hex={color.value} />
         </Box>
       ))}
     </Flex>

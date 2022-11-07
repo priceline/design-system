@@ -45,6 +45,7 @@ export { Spinner } from './Spinner'
 export { SrOnly } from './SrOnly'
 export { Stamp } from './Stamp'
 export { Stepper } from './Stepper'
+export { Swatch } from './Swatch'
 export { Text } from './Text'
 export { TextArea } from './TextArea'
 export { Tooltip } from './Tooltip'
@@ -63,6 +64,7 @@ export {
   borders,
   color,
   deprecatedPropType,
+  deprecatedColorValue,
   getContrastRatio,
   getPaletteColor,
   getTextColorOn,

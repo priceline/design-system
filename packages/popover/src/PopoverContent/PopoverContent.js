@@ -3,14 +3,8 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled, { ThemeConsumer } from 'styled-components'
 import { borderRadius } from 'styled-system'
-import themeGet from '@styled-system/theme-get'
-import {
-  Box,
-  borderRadiusAttrs,
-  getPaletteColor,
-  deprecatedPropType,
-  ThemeProvider,
-} from 'pcln-design-system'
+import { themeGet } from '@styled-system/theme-get'
+import { Box, borderRadiusAttrs, deprecatedPropType, ThemeProvider } from 'pcln-design-system'
 import FocusLock from 'react-focus-lock'
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
@@ -25,8 +19,6 @@ const PopoverGuide = styled(Box)`
 `
 const ContentContainer = styled.section.attrs(borderRadiusAttrs)`
   box-sizing: border-box;
-  box-shadow: 0 0 0 1px ${(props) => getPaletteColor(props.borderColor, 'base')(props)},
-    0 0 4px 0 rgba(0, 0, 0, 0.08), 0 8px 8px 0 rgba(0, 0, 0, 0.08), 0 16px 16px 0 rgba(0, 0, 0, 0.08);
   font-size: ${themeGet('fontSizes.0')}px;
   max-width: 100%;
   outline: 0;
@@ -121,6 +113,7 @@ function PopoverContent({
             <ThemeProvider theme={theme}>
               <ContentContainer {...styleProps} tabIndex='-1' data-testid='popover-content-container'>
                 <Box
+                  boxShadowSize='overlay-md'
                   borderRadius={borderRadius}
                   color={color ?? 'background.lightest'}
                   data-testid='dialog-content'

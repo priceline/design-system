@@ -1,6 +1,25 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Wed, 05 Oct 2022 17:01:35 GMT and should not be manually modified.
+This log was last generated on Mon, 07 Nov 2022 16:17:23 GMT and should not be manually modified.
+
+## 2.0.0
+Mon, 07 Nov 2022 16:17:23 GMT
+
+### Breaking changes
+
+- Prepare for v5 release
+
+## 1.4.4
+Thu, 27 Oct 2022 18:30:28 GMT
+
+### Patches
+
+- Upgrade to latest moize
+
+## 1.4.3
+Mon, 17 Oct 2022 15:52:39 GMT
+
+_Version update only_
 
 ## 1.4.2
 Wed, 05 Oct 2022 17:01:35 GMT

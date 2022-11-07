@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import themeGet from '@styled-system/theme-get'
 
 import { Flex } from '../Flex'
-import { Step } from '../Step'
+import { Step, IStepProps } from '../Step'
 
 const StyledFlex = styled(Flex)`
   & > :not(:last-child) {
@@ -17,7 +17,11 @@ const propTypes = {
   children: PropTypes.node,
 }
 
-const Stepper: React.FC<InferProps<typeof propTypes>> = ({ className, children, ...props }) => {
+const Stepper: React.FC<InferProps<typeof propTypes>> & { Step: React.FC<IStepProps> } = ({
+  className,
+  children,
+  ...props
+}) => {
   return (
     <StyledFlex className={className} {...props}>
       {children}

@@ -59,7 +59,6 @@ export function ForwardRefs() {
         <IconButton
           onClick={action('Clicked IconButton')}
           icon={<Calendar title='Choose date' size={64} />}
-          dsRef={dsRef}
         />
         <br />
         <Button onClick={onClick} mt={4}>

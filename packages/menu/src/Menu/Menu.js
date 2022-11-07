@@ -21,6 +21,7 @@ function Menu({
   height,
   size,
   trapFocus,
+  placement,
   children,
   ...props
 }) {
@@ -60,7 +61,7 @@ function Menu({
       trapFocus={trapFocus}
       width={width}
       zIndex={1600}
-      placement='bottom-start'
+      placement={placement ?? 'bottom-start'}
       aria-controls={id}
       renderContent={MenuContent}
       {...props}
@@ -82,6 +83,7 @@ Menu.propTypes = {
   height: PropTypes.number,
   size: PropTypes.string,
   trapFocus: PropTypes.bool,
+  placement: PropTypes.string,
   children: PropTypes.node,
 }
 

@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.0.0",
+      "tag": "pcln-icons_v5.0.0",
+      "date": "Mon, 07 Nov 2022 16:17:23 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Prepare for v5 release",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "289bd2cb648586d9ab1f691b3f75c191f07063ed"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.10.0",
       "tag": "pcln-icons_v4.10.0",
       "date": "Tue, 27 Sep 2022 21:11:22 GMT",

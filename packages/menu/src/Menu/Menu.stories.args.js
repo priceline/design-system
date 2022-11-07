@@ -86,4 +86,33 @@ export const argTypes = {
       options: ['singleColumn', 'twoColumns'],
     },
   },
+
+  placement: {
+    name: 'placement',
+    type: { name: 'string', required: false },
+    description: 'Popover content placement',
+    table: {
+      defaultValue: { summary: 'bottom-start' },
+    },
+    control: {
+      type: 'select',
+      options: [
+        'auto',
+        'auto-start',
+        'auto-end',
+        'top',
+        'top-start',
+        'top-end',
+        'bottom',
+        'bottom-start',
+        'bottom-end',
+        'right',
+        'right-start',
+        'right-end',
+        'left',
+        'left-start',
+        'left-end',
+      ],
+    },
+  },
 }

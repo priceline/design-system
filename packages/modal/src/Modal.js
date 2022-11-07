@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 import { color, width, height } from 'styled-system'
-import themeGet from '@styled-system/theme-get'
+import { themeGet } from '@styled-system/theme-get'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
-import { Box, CloseButton, deprecatedPropType, Flex } from 'pcln-design-system'
+import { Box, CloseButton, deprecatedColorValue, Flex } from 'pcln-design-system'
 
 const OVERLAY_ANIMATION = (transitionState) => `
   opacity: 0;
@@ -55,7 +55,7 @@ const Dialog = styled(DialogContent)`
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: ${(props) => props.theme.boxShadows[3]};
+  box-shadow: ${(props) => props.theme.shadows['overlay-xl']};
   border-radius: ${themeGet('borderRadii.xl')};
   &:focus {
     outline: none;
@@ -239,7 +239,7 @@ Modal.propTypes = {
   ...height.propTypes,
   ariaLabel: validateAriaProps,
   ariaLabelledBy: validateAriaProps,
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
   className: PropTypes.string,
   dialogAnimation: PropTypes.func,
   disableCloseButton: PropTypes.bool,

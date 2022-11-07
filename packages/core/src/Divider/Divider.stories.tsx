@@ -22,7 +22,7 @@ export default {
 export const Default = () => <Divider />
 export const Margin = () => <Divider m={3} />
 export const Width = () => <Divider p={3} width={1 / 2} />
-export const PixelWidth = () => <Divider width={256} />
+export const PixelWidth = () => <Divider width='256px' />
 export const VWWidth = () => <Divider width='50vw' />
 export const BorderColor = () => <Divider m={3} borderColor='blue' />
 export const DirectionalMargin = () => (

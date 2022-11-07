@@ -180,7 +180,7 @@ describe('utils', () => {
 
       // legacy support
       expect(getPaletteColor('orange', 'base')(props)).toEqual(props.theme.colors.orange)
-      expect(getPaletteColor('#ffffff', 'base')(props)).toBe('#ffffff')
+      expect(getPaletteColor('#ffffff', 'base')(props)).toBe(null)
     })
 
     test('returns a palette shade when provided a color prop', () => {
@@ -193,7 +193,7 @@ describe('utils', () => {
 
       // legacy support
       expect(getPaletteColor('base')({ ...props, color: 'orange' })).toEqual(props.theme.colors.orange)
-      expect(getPaletteColor('base')({ ...props, color: '#ffffff' })).toBe('#ffffff')
+      expect(getPaletteColor('base')({ ...props, color: '#ffffff' })).toBe(null)
     })
   })
 
@@ -361,8 +361,8 @@ describe('utils', () => {
     test('expected result when size is a string', () => {
       const result1 = applySizes(sizesCss)({ size: 'medium' })
       const result2 = applySizes(sizesCss)({ size: 'small' })
-      expect(result1).toEqual(['medium css'])
-      expect(result2).toEqual(['smaaaallll css'])
+      expect(result1.toString()).toEqual(['medium css'].toString())
+      expect(result2.toString()).toEqual(['smaaaallll css'].toString())
     })
   })
 })

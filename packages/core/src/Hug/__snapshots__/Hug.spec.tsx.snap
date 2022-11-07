@@ -7,11 +7,18 @@ exports[`Hug renders text when string is provided 1`] = `[Function]`;
 exports[`Hug renders text, icon, and Child 1`] = `[Function]`;
 
 exports[`Hug renders with border-radius from theme on top only 1`] = `
-.c1 {
+.c0 {
+  border-radius: 16px;
+}
+
+.c3 {
   padding: 8px;
   padding-left: 12px;
   background-color: #fff;
   color: #001833;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,34 +29,36 @@ exports[`Hug renders with border-radius from theme on top only 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c5 {
   font-size: 14px;
 }
 
-.c0 {
-  border-radius: 6px;
+.c1 {
   border: 1px solid #fff;
+}
+
+.c2 {
   overflow: hidden;
 }
 
-.c3 > * {
+.c6 > * {
   border: 0 !important;
 }
 
 <div
-  className="c0"
+  className="c0 c1 c2"
 >
   <div
-    className="c1"
+    className="c3 c4"
     color="text.lightest"
   >
     <div
-      className="c2"
+      className="c5"
       fontSize={1}
     />
   </div>
   <div
-    className="c3"
+    className="c6"
   />
 </div>
 `;

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
+import propTypes from '@styled-system/prop-types'
 import {
   display,
   fontSize,
@@ -18,12 +19,27 @@ import {
   textStyle,
   width,
   zIndex,
+  DisplayProps,
+  FontSizeProps,
+  FontStyleProps,
+  FontWeightProps,
+  HeightProps,
+  LineHeightProps,
+  MaxHeightProps,
+  MaxWidthProps,
+  MinHeightProps,
+  MinWidthProps,
+  OverflowProps,
+  SpaceProps,
+  TextAlignProps,
+  TextStyleProps,
+  WidthProps,
+  ZIndexProps,
 } from 'styled-system'
 
 import {
   applyVariations,
   deprecatedColorValue,
-  deprecatedPropType,
   getPaletteColor,
   textAlignAttrs,
   textStylesValues,
@@ -60,7 +76,55 @@ export const textShadow = (props) => {
   return props.enableTextShadow ? { textShadow: props.theme.textShadows[textShadowSize] } : null
 }
 
-const textProps = css`
+const textPropTypes = {
+  ...propTypes.display,
+  ...propTypes.fontSize,
+  ...propTypes.fontStyle,
+  ...propTypes.fontWeight,
+  ...propTypes.height,
+  ...propTypes.lineHeight,
+  ...propTypes.maxHeight,
+  ...propTypes.maxWidth,
+  ...propTypes.minHeight,
+  ...propTypes.minWidth,
+  ...propTypes.overflow,
+  ...propTypes.space,
+  ...propTypes.textAlign,
+  ...propTypes.textStyle,
+  ...propTypes.width,
+  ...propTypes.zIndex,
+  bold: PropTypes.bool,
+  caps: PropTypes.bool,
+  color: deprecatedColorValue(),
+  enableTextShadow: PropTypes.bool,
+  regular: PropTypes.bool,
+  textDecoration: PropTypes.string,
+  textShadowSize: PropTypes.oneOf(['sm', 'md']),
+  textStyle: PropTypes.oneOf(textStylesValues),
+}
+
+export interface ITextProps
+  extends DisplayProps,
+    FontSizeProps,
+    FontStyleProps,
+    FontWeightProps,
+    HeightProps,
+    LineHeightProps,
+    MaxHeightProps,
+    MaxWidthProps,
+    MinHeightProps,
+    MinWidthProps,
+    OverflowProps,
+    SpaceProps,
+    TextAlignProps,
+    TextStyleProps,
+    WidthProps,
+    ZIndexProps {
+  color?: string
+  bg?: string
+}
+
+const textProps: React.FC<ITextProps> = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
@@ -114,33 +178,7 @@ const Strike = styled.s.attrs(textAttrs)`
 
 Text.displayName = 'Text'
 
-Text.propTypes = {
-  ...display.propTypes,
-  ...fontSize.propTypes,
-  ...fontStyle.propTypes,
-  ...fontWeight.propTypes,
-  ...height.propTypes,
-  ...lineHeight.propTypes,
-  ...maxHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...minHeight.propTypes,
-  ...minWidth.propTypes,
-  ...overflow.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textStyle.propTypes,
-  ...width.propTypes,
-  ...zIndex.propTypes,
-  align: deprecatedPropType('textAlign'),
-  bold: PropTypes.bool,
-  caps: PropTypes.bool,
-  color: deprecatedColorValue(),
-  enableTextShadow: PropTypes.bool,
-  regular: PropTypes.bool,
-  textDecoration: PropTypes.string,
-  textShadowSize: PropTypes.oneOf(['sm', 'md']),
-  textStyle: PropTypes.oneOf(textStylesValues),
-}
+Text.propTypes = textPropTypes
 
 Text.span = Span
 Text.span.displayName = 'Text.span'

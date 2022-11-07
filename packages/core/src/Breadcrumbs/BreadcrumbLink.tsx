@@ -1,11 +1,11 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Text } from '../Text'
 
-const propTypes = {
+const breadcrumbLinkProps = {
   className: PropTypes.string,
   isLastChild: PropTypes.bool,
   href: PropTypes.string,
@@ -14,7 +14,16 @@ const propTypes = {
   onClick: PropTypes.func,
 }
 
-const BreadcrumbLink: React.FC<InferProps<typeof propTypes>> = React.forwardRef(
+export interface IBreadcrumbLink extends React.RefAttributes<unknown> {
+  className?: string
+  isLastChild?: boolean
+  href?: string
+  icon?: React.ReactNode
+  label?: string
+  onClick?: (unknown) => unknown
+}
+
+const BreadcrumbLink: React.FC<IBreadcrumbLink> = React.forwardRef(
   ({ className, isLastChild, href, icon, label, onClick }, ref) => {
     const linkColor = isLastChild ? 'text.dark' : 'text.light'
 
@@ -36,7 +45,7 @@ const BreadcrumbLink: React.FC<InferProps<typeof propTypes>> = React.forwardRef(
 
 BreadcrumbLink.displayName = 'BreadcrumbLink'
 
-BreadcrumbLink.propTypes = propTypes
+BreadcrumbLink.propTypes = breadcrumbLinkProps
 
 BreadcrumbLink.defaultProps = {
   className: '',

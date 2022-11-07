@@ -7,14 +7,7 @@ import themeGet from '@styled-system/theme-get'
 import { Flex } from '../Flex'
 import { Hide } from '../Hide'
 import { Box } from '../Box'
-import {
-  applyVariations,
-  getPaletteColor,
-  hasPaletteColor,
-  color,
-  deprecatedColorValue,
-  deprecatedPropType,
-} from '../utils'
+import { applyVariations, getPaletteColor, hasPaletteColor, color, deprecatedColorValue } from '../utils'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 
@@ -77,7 +70,7 @@ const StyledFlex = styled(Flex)`
 
 const propTypes = {
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
   ...space.propTypes,
 }
 

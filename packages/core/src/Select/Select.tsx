@@ -1,7 +1,7 @@
 import React from 'react'
 import { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius } from 'styled-system'
+import { space, fontSize, borderRadius, SpaceProps, FontSizeProps } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
 import { ChevronDown } from 'pcln-icons'
 import { borders, deprecatedColorValue, applySizes, borderRadiusAttrs } from '../utils'
@@ -58,7 +58,12 @@ SelectBase.defaultProps = {
 
 SelectBase.propTypes = propTypes
 
-const Select = React.forwardRef((props, ref) => (
+export interface ISelectProps extends SpaceProps, FontSizeProps {}
+
+const Select: React.FC<
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Pick<any, string | number | symbol> & React.RefAttributes<unknown>
+> & { isField?: boolean } = React.forwardRef((props, ref) => (
   <Flex width={1} alignItems='center'>
     <SelectBase {...props} ref={ref} />
     <ClickableIcon ml={-32} color='text.light' />

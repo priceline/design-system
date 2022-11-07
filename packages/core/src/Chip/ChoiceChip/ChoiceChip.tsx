@@ -1,13 +1,14 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import { space, fontSize } from 'styled-system'
+import PropTypes from 'prop-types'
+import { SpaceProps, FontSizeProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
 
-const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+const choiceChipProps = {
+  ...propTypes.space,
+  ...propTypes.fontSize,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
@@ -24,7 +25,15 @@ const propTypes = {
   Image: PropTypes.object,
 }
 
-const ChoiceChip: React.FC<InferProps<typeof propTypes>> = ({
+export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLAttributes<HTMLElement> {
+  name?: string
+  disabled?: boolean
+  selected?: boolean
+  label?: string
+  value?: string | number
+}
+
+const ChoiceChip: React.FC<IChoiceChipProps> = ({
   id,
   name,
   disabled,
@@ -53,7 +62,7 @@ const ChoiceChip: React.FC<InferProps<typeof propTypes>> = ({
 
 ChoiceChip.displayName = 'Chip'
 
-ChoiceChip.propTypes = propTypes
+ChoiceChip.propTypes = choiceChipProps
 ChoiceChip.defaultProps = {
   color: 'primary',
 }

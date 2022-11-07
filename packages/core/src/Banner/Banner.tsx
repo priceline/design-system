@@ -11,7 +11,7 @@ import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
 import { CloseButton } from '../CloseButton'
-import { applyVariations, deprecatedColorValue, deprecatedPropType } from '../utils'
+import { applyVariations, deprecatedColorValue } from '../utils'
 
 const bannerColors = {
   green: {
@@ -63,7 +63,7 @@ const propTypes = {
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   textAlign: PropTypes.string,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
   children: PropTypes.node,
 }
 

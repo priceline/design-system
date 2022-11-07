@@ -1,6 +1,23 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Wed, 05 Oct 2022 17:01:35 GMT and should not be manually modified.
+This log was last generated on Mon, 07 Nov 2022 16:17:23 GMT and should not be manually modified.
+
+## 5.0.0
+Mon, 07 Nov 2022 16:17:23 GMT
+
+### Breaking changes
+
+- Prepare for v5 release
+
+## 4.1.39
+Thu, 27 Oct 2022 18:30:28 GMT
+
+_Version update only_
+
+## 4.1.38
+Mon, 17 Oct 2022 15:52:39 GMT
+
+_Version update only_
 
 ## 4.1.37
 Wed, 05 Oct 2022 17:01:35 GMT

@@ -32,7 +32,7 @@ export const Default = () => (
     {skipLinks.map((section, index) => (
       <Flex
         key={index}
-        tabIndex='-1'
+        tabIndex={-1}
         height='50vh'
         width={1}
         justifyContent='center'

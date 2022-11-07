@@ -1,6 +1,29 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 05 Oct 2022 17:01:35 GMT and should not be manually modified.
+This log was last generated on Mon, 07 Nov 2022 16:17:23 GMT and should not be manually modified.
+
+## 5.0.0
+Mon, 07 Nov 2022 16:17:23 GMT
+
+### Breaking changes
+
+- Prepare for v5 release
+
+## 4.33.1
+Thu, 27 Oct 2022 18:30:28 GMT
+
+### Patches
+
+- Fix serialization bug in Layout
+- Update valid border radii values for Button
+
+## 4.33.0
+Mon, 17 Oct 2022 15:52:39 GMT
+
+### Minor changes
+
+- Added pass through flexWrap prop for layout 
+- create Swatch component
 
 ## 4.32.0
 Wed, 05 Oct 2022 17:01:35 GMT
