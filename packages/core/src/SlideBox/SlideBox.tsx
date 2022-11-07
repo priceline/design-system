@@ -5,7 +5,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import { Box } from '..'
 import { RenderInView } from './RenderInView'
 import { getVisibleSlides, getCustomWidths } from './helpers'
-import { ScrollFlex } from './styles'
+import { ScrollFlex, SlideWrapper } from './styles'
 
 const propTypes = {
   children: PropTypes.any,
@@ -26,9 +26,9 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
 }) => (
   <ScrollFlex width='100%' py={2}>
     {React.Children.toArray(children).map((item, index) => (
-      <Box
+      <SlideWrapper
         data-testid={`slide${index + 1}`}
-        key={`slide${index}`}
+        key={item.key}
         width={layout ? getCustomWidths(layout?.split('-'), index) : getVisibleSlides(visibleSlides)}
       >
         <RenderInView onSlideChange={onSlideChange} index={index}>
@@ -42,7 +42,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
             {stretchHeight ? React.cloneElement(item, { style: { 'min-height': '100%' } }) : item}
           </Box>
         </RenderInView>
-      </Box>
+      </SlideWrapper>
     ))}
   </ScrollFlex>
 )

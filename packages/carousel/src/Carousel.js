@@ -14,7 +14,7 @@ import {
   getMobileVisibleSlides,
 } from './helpers'
 import { RenderInView } from './RenderInView'
-import { XS_VISIBLE_SLIDES_WIDTH } from './constants'
+import { CAROUSEL_BREAKPOINT_1 } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -61,13 +61,14 @@ export const Carousel = ({
   onSlideClick = () => {},
   onSlideKeyDown = () => {},
   mobileVisibleSlides,
+  displayArrowsMobile = false,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
   const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
 
-  if (browserWidth < XS_VISIBLE_SLIDES_WIDTH) {
+  if (!displayArrowsMobile && browserWidth < CAROUSEL_BREAKPOINT_1) {
     return (
       <SlideBox
         slideSpacing={slideSpacing}
@@ -229,4 +230,6 @@ Carousel.propTypes = {
   onSlideKeyDown: PropTypes.func,
   /** Allows extra breakpoints for mobile. Should eventually combine with VisibleSlides */
   mobileVisibleSlides: PropTypes.array,
+  /** Use the desktop carousel for mobile */
+  displayArrowsMobile: PropTypes.bool,
 }
