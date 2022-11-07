@@ -24,7 +24,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
   stretchHeight,
   layout,
 }) => (
-  <ScrollFlex width='100%' py={2}>
+  <ScrollFlex width='100%' py={2} data-testid='slide-box'>
     {React.Children.toArray(children).map((item, index) => (
       <SlideWrapper
         data-testid={`slide${index + 1}`}

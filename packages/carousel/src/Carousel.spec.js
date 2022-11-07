@@ -83,4 +83,31 @@ describe('Carousel', () => {
     )
     expect(getByTestId('slide-0').tabIndex).toBe(-1)
   })
+
+  it('Should render SlideBox for mobile sizes', () => {
+    window.innerWidth = 720
+    const { getByText, getByTestId } = render(
+      <Carousel layout='50-50' arrowsPosition='bottom' currentSlide={1}>
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    getByTestId('slide-box')
+    getByText('Slide 1')
+    getByText('Slide 2')
+    getByText('Slide 3')
+  })
+
+  it('Should NOT render SlideBox for mobile sizes with displayArrowsMobile = true', () => {
+    window.innerWidth = 720
+    const { queryByTestId } = render(
+      <Carousel displayArrowsMobile layout='50-50' arrowsPosition='bottom' currentSlide={1}>
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    expect(queryByTestId('slide-box')).not.toBeInTheDocument()
+  })
 })

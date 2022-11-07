@@ -61,7 +61,7 @@ export const Carousel = ({
   onSlideClick = () => {},
   onSlideKeyDown = () => {},
   mobileVisibleSlides,
-  displayArrowsMobile = false,
+  displayArrowsMobile,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
