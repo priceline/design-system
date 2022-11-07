@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.0.0",
+      "tag": "pcln-design-system_v5.0.0",
+      "date": "Mon, 07 Nov 2022 16:17:23 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Prepare for v5 release",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "289bd2cb648586d9ab1f691b3f75c191f07063ed"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.33.1",
       "tag": "pcln-design-system_v4.33.1",
       "date": "Thu, 27 Oct 2022 18:30:28 GMT",

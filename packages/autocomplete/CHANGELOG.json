@@ -2,6 +2,31 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "5.0.0",
+      "tag": "pcln-autocomplete_v5.0.0",
+      "date": "Mon, 07 Nov 2022 16:17:23 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Prepare for v5 release",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "289bd2cb648586d9ab1f691b3f75c191f07063ed"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.33.1` to `5.0.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.39",
       "tag": "pcln-autocomplete_v4.1.39",
       "date": "Thu, 27 Oct 2022 18:30:28 GMT",
