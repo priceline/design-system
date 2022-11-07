@@ -21,8 +21,8 @@ export default {
 
 const Template = (args) => <Badge {...args}>badge</Badge>
 
-export const Default = Template.bind({})
-Default.args = {
+export const _Badge = Template.bind({})
+_Badge.args = {
   bg: 'lightGray',
 }
 

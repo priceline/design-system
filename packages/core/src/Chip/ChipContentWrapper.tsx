@@ -31,7 +31,13 @@ const getBorderColor = (props) =>
 const getBackgroundColor = (props) =>
   props.disabled ? 'background.light' : props.selected ? 'light' : 'background.lightest'
 
-const ChipContentWrapper: React.FC<IBoxProps> = styled(Box)`
+interface IChipContentWrapper extends IBoxProps {
+  disabled: boolean
+  hasChildren: boolean
+  selected: boolean
+}
+
+const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   ${(props) => `
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
