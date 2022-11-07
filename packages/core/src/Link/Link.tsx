@@ -55,19 +55,27 @@ export interface ILinkProps
   onFocus?: (unknown) => unknown
 }
 
-const Link: React.FC<ILinkProps> = styled.a.attrs(
-  ({ color, disabled, href, target, onClick, ...props }) => ({
-    color: disabled ? 'text.light' : color,
-    disabled,
-    href: !disabled && href,
-    rel: target === '_blank' ? 'noopener' : null,
-    target,
-    onClick: !disabled && onClick,
-    ...props,
-  })
-)`
+const Link: React.FC<ILinkProps> = styled.a.attrs(({ color, disabled, href, target, onClick, ...props }) => ({
+  color: disabled ? 'text.light' : color,
+  disabled,
+  href: !disabled ? href : undefined,
+  rel: target === '_blank' ? 'noopener' : null,
+  target,
+  onClick: !disabled ? onClick : () => {},
+  ...props,
+}))`
   ${applyVariations('Link', variations)}
   ${width} ${space};
+
+  ${(props) =>
+    props.disabled &&
+    `
+    cursor: default;
+
+    &:hover {
+      text-decoration: none;
+    }
+  `}
 `
 
 Link.displayName = 'Link'
