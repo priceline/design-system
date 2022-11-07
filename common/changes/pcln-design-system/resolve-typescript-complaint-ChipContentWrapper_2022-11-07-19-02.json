@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Improve TS interface for ChipContentWrapper",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
