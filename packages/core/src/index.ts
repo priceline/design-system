@@ -63,6 +63,7 @@ export {
   borders,
   color,
   deprecatedPropType,
+  deprecatedColorValue,
   getContrastRatio,
   getPaletteColor,
   getTextColorOn,

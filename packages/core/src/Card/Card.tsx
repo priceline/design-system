@@ -1,26 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 
-import { Box } from '../Box'
+import { Box, IBoxProps } from '../Box'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
   border: borderWidth === 0 ? '0' : `${borderWidth}px solid ${getPaletteColor(borderColor, 'base')(props)}`,
 })
 
-const propTypes = {
+const cardPropTypes = {
   borderColor: deprecatedColorValue(),
   color: deprecatedColorValue(),
   borderWidth: PropTypes.oneOf([0, 1, 2]),
 }
 
-const Card: React.FC<InferProps<typeof propTypes>> = styled(Box)`
+export interface ICardProps extends IBoxProps {
+  borderWidth?: 0 | 1 | 2 | string
+  borderColor?: string
+}
+
+const Card: React.FC<ICardProps> = styled(Box)`
   ${applyVariations('Card')}
   ${boxBorder}
 `
 
-Card.propTypes = propTypes
+Card.propTypes = cardPropTypes
 
 Card.defaultProps = {
   borderColor: 'border',

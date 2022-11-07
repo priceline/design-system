@@ -1,7 +1,7 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { width, space } from 'styled-system'
+import { width, space, WidthProps, SpaceProps } from 'styled-system'
 
 import { buttonStyles } from '../Button'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
@@ -38,7 +38,22 @@ const propTypes = {
   variation: PropTypes.oneOf(Object.keys(variations)),
 }
 
-const Link: React.FC<InferProps<typeof propTypes>> = styled.a.attrs(({ target, ...props }) => ({
+export interface ILinkProps
+  extends WidthProps,
+    SpaceProps,
+    React.HTMLAttributes<HTMLAnchorElement>,
+    React.RefAttributes<unknown> {
+  color?: string
+  href?: string
+  variation?: 'fill' | 'link' | 'outline'
+  children?: React.ReactNode | string
+  onFocus?: (unknown) => unknown
+  onClick?: (unknown) => unknown
+  target?: string
+  size?: 'small' | 'medium' | 'large'
+}
+
+const Link: React.FC<ILinkProps> = styled.a.attrs(({ target, ...props }) => ({
   rel: target === '_blank' ? 'noopener' : null,
   target,
   ...props,

@@ -1,8 +1,9 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius } from 'styled-system'
-import PropTypes, { InferProps } from 'prop-types'
-import { Text } from '../Text'
+import { space, fontSize, borderRadius, SpaceProps, FontSizeProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
+import PropTypes from 'prop-types'
+import { Text, ITextProps } from '../Text'
 import {
   applyVariations,
   getPaletteColor,
@@ -53,7 +54,7 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
 
-const propTypes = {
+const inputPropTypes = {
   id: PropTypes.string.isRequired,
   color: deprecatedColorValue(),
   /**
@@ -61,22 +62,36 @@ const propTypes = {
    */
   size: PropTypes.oneOf(Object.keys(sizes)),
   helperText: PropTypes.node,
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...propTypes.space,
+  ...propTypes.fontSize,
 }
 
-export const Input: React.Component<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
-  const { helperText, color, ...restProps } = props
-  return (
-    <>
-      <StyledInput {...restProps} color={color} ref={ref} />
-      {helperText &&
-        React.cloneElement(helperText, {
-          color: helperText?.props?.color || color,
-        })}
-    </>
-  )
-})
+export interface IInputProps
+  extends SpaceProps,
+    FontSizeProps,
+    Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>,
+    React.RefAttributes<HTMLInputElement> {
+  onChange?: (unknown) => unknown
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  helperText?: React.ReactElement<any, string | React.JSXElementConstructor<any>>
+  color?: string
+  size?: 'sm' | 'md' | 'lg' | 'xl'
+  borderRadius?: string
+}
+
+export const Input: React.FC<IInputProps> & { isField?: boolean; HelperText?: React.FC<ITextProps> } =
+  React.forwardRef((props: IInputProps, ref) => {
+    const { helperText, color, ...restProps } = props
+    return (
+      <>
+        <StyledInput {...restProps} color={color} ref={ref} />
+        {helperText &&
+          React.cloneElement(helperText, {
+            color: helperText?.props?.color || color,
+          })}
+      </>
+    )
+  })
 
 const HelperText = styled(Text).attrs(() => ({
   mt: 2,
@@ -94,6 +109,6 @@ Input.defaultProps = {
   borderRadius: 'lg',
   size: 'lg',
 }
-Input.propTypes = propTypes
+Input.propTypes = inputPropTypes
 
 export default Input

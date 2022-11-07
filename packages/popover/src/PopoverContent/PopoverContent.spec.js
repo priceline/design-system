@@ -1,4 +1,5 @@
 import React from 'react'
+import { theme } from 'pcln-design-system'
 import { render } from 'testing-library'
 
 import PopoverContent from './PopoverContent'
@@ -23,10 +24,7 @@ describe('PopoverContent', () => {
 
   it('accepts border color', () => {
     const { queryByTestId } = render(<PopoverContent borderColor='primary' renderContent={() => 'Content'} />)
-    expect(queryByTestId('popover-content-container')).toHaveStyleRule(
-      'box-shadow',
-      '0 0 0 1px #0068ef,0 0 4px 0 rgba(0,0,0,0.08),0 8px 8px 0 rgba(0,0,0,0.08),0 16px 16px 0 rgba(0,0,0,0.08)'
-    )
+    expect(queryByTestId('dialog-content')).toHaveStyleRule('box-shadow', theme.shadows['overlay-md'])
   })
 
   it('has the correct z-index', () => {

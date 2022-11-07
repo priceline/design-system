@@ -5,16 +5,16 @@ Object {
   "borderRadius": Array [
     "none",
     "2px",
-    "2px",
-    "2px",
-    "2px",
-    "6px",
+    "4px",
+    "8px",
+    "12px",
+    "16px",
     "24px",
     "32px",
     "9999px",
-    "2px",
-    "2px",
-    "2px",
+    "9999px",
+    "9999px",
+    "12px",
     Array [
       "none",
       "xsm",
@@ -36,19 +36,19 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=bottom and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 0 6px 6px",
+  "borderRadius": "0 0 16px 16px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=bottomLeft and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 0 0 6px",
+  "borderRadius": "0 0 0 16px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=bottomRight and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 0 6px 0",
+  "borderRadius": "0 0 16px 0",
 }
 `;
 
@@ -66,19 +66,19 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=action-lg 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "12px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=action-md 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "9999px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=action-sm 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "9999px",
 }
 `;
 
@@ -90,13 +90,13 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=lg 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "12px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=md 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "8px",
 }
 `;
 
@@ -108,13 +108,13 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=sm 1`] = `
 Object {
-  "borderRadius": "2px",
+  "borderRadius": "4px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=full and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "6px",
+  "borderRadius": "16px",
 }
 `;
 
@@ -126,30 +126,30 @@ Object {
 
 exports[`borderRadiusAttrs works with rounded=left and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "6px 0 0 6px",
+  "borderRadius": "16px 0 0 16px",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=right and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 6px 6px 0",
+  "borderRadius": "0 16px 16px 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=top and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "6px 6px 0 0",
+  "borderRadius": "16px 16px 0 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=topLeft and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "6px 0 0 0",
+  "borderRadius": "16px 0 0 0",
 }
 `;
 
 exports[`borderRadiusAttrs works with rounded=topRight and borderRadius=xl 1`] = `
 Object {
-  "borderRadius": "0 6px 0 0",
+  "borderRadius": "0 16px 0 0",
 }
 `;

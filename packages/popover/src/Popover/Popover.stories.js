@@ -1,4 +1,4 @@
-/* eslint-disable import/no-named-as-default, no-unused-vars, react/prop-types */
+/* eslint-disable react/prop-types */
 import {
   Absolute,
   BackgroundImage,

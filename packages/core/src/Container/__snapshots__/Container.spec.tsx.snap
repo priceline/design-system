@@ -3,25 +3,31 @@
 exports[`Container renders with default theme max-width 1`] = `
 .c0 {
   max-width: 1280px;
+}
+
+.c1 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 />
 `;
 
 exports[`Container renders with maxWidth 1`] = `
 .c0 {
   max-width: 1024px;
+}
+
+.c1 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 />
 `;

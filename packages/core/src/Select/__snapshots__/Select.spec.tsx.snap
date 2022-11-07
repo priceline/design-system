@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select renders 1`] = `
-.c2 {
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -11,8 +11,15 @@ exports[`Select renders 1`] = `
   color: #4f6f8f;
 }
 
+.c4 {
+  outline: none;
+}
+
 .c0 {
   width: 100%;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,12 +30,11 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
-.c3 {
-  outline: none;
+.c5 {
   pointer-events: none;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -37,38 +43,42 @@ exports[`Select renders 1`] = `
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 12px;
   border-width: 1px;
   border-style: solid;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  margin: 0;
+  margin: 0px;
   font-size: 16px;
-  border-radius: 2px;
+  border-radius: 12px;
 }
 
-.c1:focus {
+.c2:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
 }
 
-.c1::-ms-expand {
+.c2::-ms-expand {
   display: none;
 }
 
+@media screen and (min-width:32em) {
+
+}
+
 @media screen and (min-width:40em) {
-  .c1 {
+  .c2 {
     font-size: 14px;
   }
 }
 
 <div
-  className="c0"
+  className="c0 c1"
   width={1}
 >
   <select
-    className="c1"
+    className="c2"
     fontSize={
       Array [
         2,
@@ -80,7 +90,7 @@ exports[`Select renders 1`] = `
   />
   <svg
     aria-hidden={true}
-    className="c2 c3"
+    className="c3 c4 c5"
     color="text.light"
     fill="currentcolor"
     focusable={false}

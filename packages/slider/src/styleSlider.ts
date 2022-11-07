@@ -38,6 +38,7 @@ const styleSlider = (component) => styled(component)`
     cursor: grab;
     border-radius: 9999px;
     border: solid 4px ${getPaletteColor('base')};
+    box-shadow: ${({ theme }) => theme.shadows.sm};
     background-color: ${getPaletteColor('background.lightest')};
     touch-action: pan-x;
 
@@ -46,8 +47,13 @@ const styleSlider = (component) => styled(component)`
     &:active {
     }
     &:focus {
-      box-shadow: 0 0 0 2px ${getPaletteColor('light')};
     }
+  }
+
+  & .rc-slider-handle-dragging {
+    cursor: grabbing;
+    border: solid 4px ${getPaletteColor('primary.dark')};
+    box-shadow: ${({ theme }) => theme.shadows.md};
   }
 
   &.rc-slider-disabled {

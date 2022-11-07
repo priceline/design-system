@@ -1,8 +1,10 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize } from 'styled-system'
+import { SpaceProps, FontSizeProps } from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
+
 import { ChipContent } from '../ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 import { Button } from '../../Button'
@@ -27,9 +29,9 @@ const ChipButton = styled(Button)`
 
 const getTitle = ({ disabled, expanded }) => (disabled ? 'Disabled' : expanded ? 'Collapse' : 'Expand')
 
-const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+const buttonChipPropTypes = {
+  ...propTypes.space,
+  ...propTypes.fontSize,
   id: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
@@ -43,7 +45,22 @@ const propTypes = {
   Image: PropTypes.object,
 }
 
-const ButtonChip: React.FC<InferProps<typeof propTypes>> = React.forwardRef(
+export interface IButtonChipProps extends SpaceProps, FontSizeProps {
+  Icon?: React.ReactNode | string
+  BridgeIcon?: React.ReactNode | string
+  selected?: boolean
+  disabled?: boolean
+  showActionIcon?: boolean
+  facet?: string
+  label?: string
+  bridgeLabel?: string
+  onClick?: (unknown) => unknown
+  expanded?: boolean
+  id?: string
+  color?: string
+}
+
+const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
   ({ id, m, disabled, expanded, children, onClick, label, showActionIcon, ...props }, ref) => (
     <ChipButton
       id={id}
@@ -74,7 +91,7 @@ const ButtonChip: React.FC<InferProps<typeof propTypes>> = React.forwardRef(
 
 ButtonChip.displayName = 'ButtonChip'
 
-ButtonChip.propTypes = propTypes
+ButtonChip.propTypes = buttonChipPropTypes
 
 ButtonChip.defaultProps = {
   color: 'primary',

@@ -1,7 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-import { width, height, space, borderRadius, boxShadow } from 'styled-system'
+import PropTypes from 'prop-types'
+import {
+  width,
+  height,
+  space,
+  borderRadius,
+  boxShadow,
+  BorderRadiusProps,
+  BoxShadowProps,
+  HeightProps,
+  SpaceProps,
+  WidthProps,
+} from 'styled-system'
+import propTypes from '@styled-system/prop-types'
 import {
   borderRadiusAttrs,
   borderRadiusValues,
@@ -11,19 +23,32 @@ import {
   roundedValues,
 } from '../utils'
 
-const propTypes = {
-  ...borderRadius.propTypes,
-  ...boxShadow.propTypes,
-  ...height.propTypes,
-  ...space.propTypes,
-  ...width.propTypes,
+const imagePropTypes = {
+  ...propTypes.borderRadius,
+  ...propTypes.boxShadow,
+  ...propTypes.height,
+  ...propTypes.space,
+  ...propTypes.width,
   borderRadiusSize: PropTypes.oneOf(borderRadiusValues),
   rounded: PropTypes.oneOf(roundedValues),
   boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
   boxShadowColor: PropTypes.oneOf(paletteFamilies),
 }
 
-const Image: React.FC<InferProps<typeof propTypes>> = styled.img.attrs((props) => ({
+export interface IImageProps
+  extends BorderRadiusProps,
+    BoxShadowProps,
+    HeightProps,
+    SpaceProps,
+    WidthProps,
+    Partial<Omit<HTMLImageElement, 'width' | 'height'>> {
+  borderRadiusSize?: string
+  rounded?: string
+  boxShadowSize?: string
+  boxShadowColor?: string
+}
+
+const Image: React.FC<IImageProps> = styled.img.attrs((props) => ({
   ...borderRadiusAttrs(props),
   ...boxShadowAttrs(props),
 }))`
@@ -39,6 +64,10 @@ const Image: React.FC<InferProps<typeof propTypes>> = styled.img.attrs((props) =
 
 Image.displayName = 'Image'
 
-Image.propTypes = propTypes
+Image.propTypes = imagePropTypes
+
+Image.defaultProps = {
+  boxShadowColor: 'border',
+}
 
 export default Image

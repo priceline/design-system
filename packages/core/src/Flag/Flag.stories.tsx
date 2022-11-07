@@ -32,29 +32,6 @@ export const Colors = () => (
   </Box>
 )
 
-export const WithCustomHexBgColor = () => (
-  <Box p={3}>
-    <Card pb={3}>
-      <Flag width={192} mt={2} bg='#085397'>
-        <b>Hello</b> #085397
-      </Flag>
-      <Flag width={192} mt={2} bg='#f2633a'>
-        <b>Hello</b> #f2633a
-      </Flag>
-      <Flag width={192} mt={2} bg='#0a84c1'>
-        <b>Hello</b> #0a84c1
-      </Flag>
-      <Flag width={192} mt={2} bg='#3c910e'>
-        <b>Hello</b> #3c910e
-      </Flag>
-    </Card>
-  </Box>
-)
-
-WithCustomHexBgColor.story = {
-  name: 'with custom hex bg color',
-}
-
 export const CompensatingFor1PxBorder = () => (
   <Box p={3}>
     <Card pb={3}>

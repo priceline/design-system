@@ -15,24 +15,26 @@ import themeGet from '@styled-system/theme-get'
  * @example getPaletteColor('primary.base')(props) => theme.palette.primary.base
  * @example getPaletteColor('primary', 'base')(props) => theme.palette.primary.base
  */
-const getPaletteColor = (...args) => (props) => {
-  let color = args.length === 2 ? args[0] : props.color
-  let shade = args.length === 2 ? args[1] : args[0]
+const getPaletteColor =
+  (...args) =>
+  (props) => {
+    let color = args.length === 2 ? args[0] : props.color
+    let shade = args.length === 2 ? args[1] : args[0]
 
-  const colorShade = shade.match(/^([a-z]+)\.([a-z]+)$/)
+    const colorShade = shade.match(/^([a-z]+)\.([a-z]+)$/)
 
-  if (colorShade) {
-    color = colorShade[0]
-    shade = colorShade[1]
+    if (colorShade) {
+      color = colorShade[0]
+      shade = colorShade[1]
+    }
+
+    return (
+      themeGet(`palette.${color}.${shade}`)(props) ||
+      themeGet(`palette.${color}`)(props) ||
+      themeGet(`colors.${color}`)(props) ||
+      color
+    )
   }
-
-  return (
-    themeGet(`palette.${color}.${shade}`)(props) ||
-    themeGet(`palette.${color}`)(props) ||
-    themeGet(`colors.${color}`)(props) ||
-    color
-  )
-}
 
 const color = (props) => {
   if (props.color) {

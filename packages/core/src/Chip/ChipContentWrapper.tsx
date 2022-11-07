@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { space, fontSize } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
 import { getPaletteColor, applySizes } from '../utils'
-import { Box } from '../Box'
+import { Box, IBoxProps } from '../Box'
 
 const getSizes = ({ hasChildren }) => ({
   sm: css`
@@ -31,7 +31,7 @@ const getBorderColor = (props) =>
 const getBackgroundColor = (props) =>
   props.disabled ? 'background.light' : props.selected ? 'light' : 'background.lightest'
 
-const ChipContentWrapper = styled(Box)`
+const ChipContentWrapper: React.FC<IBoxProps> = styled(Box)`
   ${(props) => `
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};

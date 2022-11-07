@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Banner accepts non-preset colors 1`] = `
+.c0 {
+  text-align: left;
+  background-color: #4f6f8f;
+  color: #0a0;
+}
+
 .c2 {
   text-align: left;
   width: 100%;
@@ -25,14 +31,8 @@ exports[`Banner accepts non-preset colors 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #4f6f8f;
-  color: #0a0;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="green"
 >
   <div
@@ -66,6 +66,12 @@ exports[`Banner renders content from children props 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -90,14 +96,8 @@ exports[`Banner renders content from children props 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -150,6 +150,12 @@ exports[`Banner renders with blue bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #0068ef;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -174,14 +180,8 @@ exports[`Banner renders with blue bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #0068ef;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -231,6 +231,12 @@ exports[`Banner renders with custom iconName and size 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -255,14 +261,8 @@ exports[`Banner renders with custom iconName and size 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -312,6 +312,12 @@ exports[`Banner renders with green bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -336,14 +342,8 @@ exports[`Banner renders with green bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -394,6 +394,12 @@ exports[`Banner renders with header node 1`] = `
   outline: none;
 }
 
+.c1 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c5 {
   text-align: left;
   width: 100%;
@@ -418,12 +424,6 @@ exports[`Banner renders with header node 1`] = `
   font-size: 14px;
 }
 
-.c1 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
-}
-
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -438,7 +438,7 @@ exports[`Banner renders with header node 1`] = `
     class="c0"
   >
     <div
-      class="c1"
+      class="c1 "
       color="text.lightest"
     >
       <div
@@ -501,6 +501,12 @@ exports[`Banner renders with lightBlue bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #e8f2ff;
+  color: #049;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -525,14 +531,8 @@ exports[`Banner renders with lightBlue bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #e8f2ff;
-  color: #049;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="primary.dark"
 >
   <div
@@ -582,6 +582,12 @@ exports[`Banner renders with lightGreen bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #ecf7ec;
+  color: #060;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -606,14 +612,8 @@ exports[`Banner renders with lightGreen bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #ecf7ec;
-  color: #060;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="secondary.dark"
 >
   <div
@@ -663,6 +663,12 @@ exports[`Banner renders with lightRed bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #fbebeb;
+  color: #800;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -687,14 +693,8 @@ exports[`Banner renders with lightRed bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #fbebeb;
-  color: #800;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="error.dark"
 >
   <div
@@ -744,6 +744,12 @@ exports[`Banner renders with no props other than theme 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #0a0;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -768,14 +774,8 @@ exports[`Banner renders with no props other than theme 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #0a0;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -825,6 +825,12 @@ exports[`Banner renders with orange bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #f68013;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -849,14 +855,8 @@ exports[`Banner renders with orange bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #f68013;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -906,6 +906,12 @@ exports[`Banner renders with red bg 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+  background-color: #c00;
+  color: #fff;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -930,14 +936,8 @@ exports[`Banner renders with red bg 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: #c00;
-  color: #fff;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -987,6 +987,10 @@ exports[`Banner renders with text node 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -1017,14 +1021,8 @@ exports[`Banner renders with text node 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div
@@ -1085,6 +1083,10 @@ exports[`Banner renders with text string 1`] = `
   outline: none;
 }
 
+.c0 {
+  text-align: left;
+}
+
 .c4 {
   text-align: left;
   width: 100%;
@@ -1115,14 +1117,8 @@ exports[`Banner renders with text string 1`] = `
   font-size: 14px;
 }
 
-.c0 {
-  text-align: left;
-  background-color: secondary.base;
-  color: text.lightest;
-}
-
 <div
-  className="c0"
+  className="c0 "
   color="text.lightest"
 >
   <div

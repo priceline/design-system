@@ -1,24 +1,31 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize, borderRadius } from 'styled-system'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-  deprecatedPropType,
-  borderRadiusAttrs,
-} from '../utils'
+import propTypes from '@styled-system/prop-types'
+import { space, fontSize, borderRadius, SpaceProps, FontSizeProps } from 'styled-system'
+import { applyVariations, getPaletteColor, deprecatedColorValue, borderRadiusAttrs } from '../utils'
 
-const propTypes = {
+const toggleBadgePropTypes = {
+  ...propTypes.space,
+  ...propTypes.fontSize,
   selected: PropTypes.bool,
-  ...space.propTypes,
-  ...fontSize.propTypes,
   color: deprecatedColorValue(),
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
 }
 
-const ToggleBadge: React.FC<InferProps<typeof propTypes>> = styled.button.attrs(borderRadiusAttrs)`
+export interface IToggleBadgeProps
+  extends SpaceProps,
+    FontSizeProps,
+    React.HTMLAttributes<HTMLInputElement>,
+    React.RefAttributes<HTMLInputElement> {
+  borderRadius?: string
+  selected?: boolean
+  color?: string
+  bg?: string
+  unSelectedBg?: string
+}
+
+const ToggleBadge: React.FC<IToggleBadgeProps> = styled.button.attrs(borderRadiusAttrs)`
   border-radius: ${(props) => props.theme.radius};
   border: 0;
   display: inline-block;
@@ -37,7 +44,7 @@ const ToggleBadge: React.FC<InferProps<typeof propTypes>> = styled.button.attrs(
 
 ToggleBadge.displayName = 'ToggleBadge'
 
-ToggleBadge.propTypes = propTypes
+ToggleBadge.propTypes = toggleBadgePropTypes
 
 ToggleBadge.defaultProps = {
   borderRadius: 'full',

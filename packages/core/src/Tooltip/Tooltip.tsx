@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import { Box } from '../Box'
 import styled, { withTheme } from 'styled-components'
-import { applyVariations, getPaletteColor, deprecatedColorValue, deprecatedPropType } from '../utils'
+import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const arrowShadow = (props) => {
   return props.top
@@ -62,7 +62,6 @@ const tooltipAlign = (props) => {
 
 const TooltipContent = styled(Box)`
   display: inline;
-  box-shadow: ${({ theme }) => theme.boxShadows[1]};
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
   position: absolute;
   box-sizing: border-box;
@@ -88,7 +87,7 @@ const TooltipContent = styled(Box)`
 
 const propTypes = {
   children: PropTypes.any.isRequired,
-  bg: deprecatedPropType('color'),
+  bg: deprecatedColorValue(),
   color: deprecatedColorValue(),
   bottom: PropTypes.bool,
   top: PropTypes.bool,
@@ -108,7 +107,7 @@ const defaultProps = {
 const Tooltip: React.FC<InferProps<typeof propTypes>> = ({ children, ...props }) => {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
-      <TooltipContent p={2} mb={3} mt={2} {...props}>
+      <TooltipContent p={2} mb={3} mt={2} boxShadowSize='md' {...props}>
         {children}
       </TooltipContent>
     </div>

@@ -121,13 +121,7 @@ describe('Banner', () => {
 
   test('renders with header node', () => {
     const { asFragment, getByText } = render(
-      <Banner
-        header={<Heading>Hello world</Heading>}
-        text={<Text>Text</Text>}
-        iconName='star'
-        iconSize={20}
-        theme={theme}
-      />
+      <Banner header={<Heading>Hello world</Heading>} text={<Text>Text</Text>} />
     )
 
     getByText(/Hello world/)
