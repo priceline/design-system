@@ -252,18 +252,21 @@ export const getPaletteColor =
  * @param name - The name of the background color
  *
  */
-export const getTextColorOn = (name) => (props) => {
+export const getTextColorOn = (name, lightColor = null, darkColor = null) => (props) => {
   const { theme } = props
 
   if (theme.palette) {
     const color = getPaletteColor(name)(props)
     const text = theme.palette.text
 
+    lightColor = lightColor || text.lightest
+    darkColor = darkColor || text.base
+
     if (color) {
-      return getContrastRatio(text.lightest, color) >= theme.contrastRatio ? text.lightest : text.base
+      return getContrastRatio(lightColor, color) >= theme.contrastRatio ? lightColor : darkColor
     }
 
-    return text.base
+    return darkColor
   }
 
   return ''

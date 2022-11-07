@@ -35,6 +35,7 @@ const variations = {
 
 const propTypes = {
   color: deprecatedColorValue(),
+  disabled: PropTypes.bool,
   variation: PropTypes.oneOf(Object.keys(variations)),
 }
 
@@ -43,21 +44,28 @@ export interface ILinkProps
     SpaceProps,
     React.HTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<unknown> {
-  color?: string
-  href?: string
-  variation?: 'fill' | 'link' | 'outline'
   children?: React.ReactNode | string
-  onFocus?: (unknown) => unknown
-  onClick?: (unknown) => unknown
-  target?: string
+  color?: string
+  disabled?: boolean
+  href?: string
   size?: 'small' | 'medium' | 'large'
+  target?: string
+  variation?: 'fill' | 'link' | 'outline'
+  onClick?: (unknown) => unknown
+  onFocus?: (unknown) => unknown
 }
 
-const Link: React.FC<ILinkProps> = styled.a.attrs(({ target, ...props }) => ({
-  rel: target === '_blank' ? 'noopener' : null,
-  target,
-  ...props,
-}))`
+const Link: React.FC<ILinkProps> = styled.a.attrs(
+  ({ color, disabled, href, target, onClick, ...props }) => ({
+    color: disabled ? 'text.light' : color,
+    disabled,
+    href: !disabled && href,
+    rel: target === '_blank' ? 'noopener' : null,
+    target,
+    onClick: !disabled && onClick,
+    ...props,
+  })
+)`
   ${applyVariations('Link', variations)}
   ${width} ${space};
 `
