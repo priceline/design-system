@@ -28,7 +28,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
     {React.Children.toArray(children).map((item, index) => (
       <SlideWrapper
         data-testid={`slide${index + 1}`}
-        key={item.key ? item.key : `slide${index}`}
+        key={item?.key ? item.key : `slide${index}`}
         width={layout ? getCustomWidths(layout?.split('-'), index) : getVisibleSlides(visibleSlides)}
       >
         <RenderInView onSlideChange={onSlideChange} index={index}>
