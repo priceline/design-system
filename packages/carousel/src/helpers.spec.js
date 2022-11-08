@@ -102,6 +102,9 @@ describe('getMobileVisibleSlides without matchMedia', () => {
     expect(getMobileVisibleSlides(5)).toBe(5)
   })
   it('return modified array', () => {
-    expect(getMobileVisibleSlides([1, 2, 3])).toBe([1, null, 2])
+    const visibleSlides = getMobileVisibleSlides([1, 2, 3])
+    expect(visibleSlides[0]).toBe(1)
+    expect(visibleSlides[1]).toBe(null)
+    expect(visibleSlides[2]).toBe(2)
   })
 })
