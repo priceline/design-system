@@ -10,7 +10,7 @@ export default {
   argTypes,
 }
 
-const Template = (args: Object) => <Link {...args} />
+const Template = (args: object) => <Link {...args} />
 
 export const _Link = Template.bind({})
 
