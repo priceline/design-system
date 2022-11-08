@@ -102,6 +102,6 @@ describe('getVisibleSlidesArray without matchMedia', () => {
     expect(getVisibleSlidesArray(5)).toEqual(5)
   })
   it('return modified array', () => {
-    expect(getVisibleSlidesArray([1, 2, 3])).toEqual([1, null, 3])
+    expect(getVisibleSlidesArray([1, 2, 3])).toEqual([1, null, 2])
   })
 })
