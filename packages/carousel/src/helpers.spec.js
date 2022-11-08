@@ -104,7 +104,7 @@ describe('getMobileVisibleSlides without matchMedia', () => {
   it('return modified array', () => {
     const visibleSlides = getMobileVisibleSlides([1, 2, 3])
     expect(visibleSlides[0]).toBe(1)
-    expect(visibleSlides[1]).toBe(null)
+    expect(visibleSlides[1]).toBeNull()
     expect(visibleSlides[2]).toBe(2)
   })
 })
