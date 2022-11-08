@@ -1,15 +1,19 @@
 import React, { useState, useContext, useEffect, cloneElement } from 'react'
 import PropTypes from 'prop-types'
-import { CarouselProvider, Slide, CarouselContext } from 'pure-react-carousel'
+import { CarouselProvider, Slide, CarouselContext, Slider } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
 import { CarouselWrapper } from './Carousel.styles'
-import { Flex, Relative, Box } from 'pcln-design-system'
+import { Flex, Relative, Box, SlideBox } from 'pcln-design-system'
 import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
-import { Slider } from './Slider'
-import { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
-import { StretchSlide } from './StretchSlide'
+import {
+  getSlideKey,
+  getVisibleSlidesArray,
+  useResponsiveVisibleSlides,
+  getMobileVisibleSlides,
+} from './helpers'
 import { RenderInView } from './RenderInView'
+import { CAROUSEL_BREAKPOINT_1 } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -55,12 +59,27 @@ export const Carousel = ({
   currentSlide = 0,
   onSlideClick = () => {},
   onSlideKeyDown = () => {},
+  mobileVisibleSlides,
+  displayArrowsMobile,
 }) => {
-  const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
-  const responsiveVisibleSlides = useResponsiveVisibleSlides(visibleSlidesArray)
+  const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
+
+  if (!displayArrowsMobile && browserWidth < CAROUSEL_BREAKPOINT_1) {
+    return (
+      <SlideBox
+        slideSpacing={slideSpacing}
+        stretchHeight={stretchSlideHeight}
+        layout={layout}
+        onSlideChange={onSlideChange}
+        visibleSlides={mobileVisibleSlides || getMobileVisibleSlides(visibleSlides)}
+      >
+        {React.Children.map(children, (item) => item)}
+      </SlideBox>
+    )
+  }
 
   return (
     <CarouselWrapper>
@@ -121,16 +140,9 @@ export const Carousel = ({
                 >
                   <RenderInView index={index} onSlideChange={onSlideChange}>
                     <Box p={slideSpacing} height='100%'>
-                      {!layout && stretchSlideHeight ? (
-                        <StretchSlide
-                          slideSpacing={slideSpacing}
-                          slideContents={item}
-                          height={height}
-                          setHeight={setHeight}
-                        />
-                      ) : (
-                        item
-                      )}
+                      {!layout && stretchSlideHeight
+                        ? React.cloneElement(item, { style: { 'min-height': '100%' } })
+                        : item}
                     </Box>
                   </RenderInView>
                 </Slide>
@@ -215,4 +227,8 @@ Carousel.propTypes = {
   onSlideClick: PropTypes.func,
   /** Custom onKeyDown event handler for each Slide child */
   onSlideKeyDown: PropTypes.func,
+  /** Allows extra breakpoints for mobile. Should eventually combine with VisibleSlides */
+  mobileVisibleSlides: PropTypes.array,
+  /** Use the desktop carousel for mobile */
+  displayArrowsMobile: PropTypes.bool,
 }

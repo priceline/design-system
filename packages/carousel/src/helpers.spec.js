@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, waitFor } from 'testing-library'
-import { getVisibleSlidesArray, useResponsiveVisibleSlides } from './helpers'
+import { getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides } from './helpers'
 
 const resizeWindow = (width) => {
   // Simulate window resize event
@@ -12,8 +12,8 @@ const resizeWindow = (width) => {
 
 const input = [1, 2, 3]
 const TextVisibleSlides = () => {
-  const visibleSlides = useResponsiveVisibleSlides(input)
-  return <div>{visibleSlides} Slide(s)</div>
+  const { responsiveVisibleSlides } = useResponsiveVisibleSlides(input)
+  return <div>{responsiveVisibleSlides} Slide(s)</div>
 }
 
 describe('getVisibleSlidesArray', () => {
@@ -94,5 +94,14 @@ describe('useResponsiveVisibleSlides without matchMedia', () => {
     await waitFor(() => {
       expect(getByText('1 Slide(s)')).toBeInTheDocument()
     })
+  })
+})
+
+describe('getVisibleSlidesArray without matchMedia', () => {
+  it('return same number as parameter', () => {
+    expect(getVisibleSlidesArray(5)).toEqual(5)
+  })
+  it('return modified array', () => {
+    expect(getVisibleSlidesArray([1, 2, 3])).toEqual([1, null, 3])
   })
 })
