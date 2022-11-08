@@ -99,7 +99,7 @@ describe('useResponsiveVisibleSlides without matchMedia', () => {
 
 describe('getMobileVisibleSlides without matchMedia', () => {
   it('return modified array with number inputr', () => {
-    expect(getMobileVisibleSlides(5)).toEqual(5)
+    expect(getMobileVisibleSlides(5)).toBe(5)
   })
   it('return modified array', () => {
     expect(getMobileVisibleSlides([1, 2, 3])).toBe([1, null, 2])
