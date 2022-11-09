@@ -23,6 +23,18 @@ export const hasPaletteColor = (props) => {
   )
 }
 
+export const hasPaletteColorShade = (props, color = undefined) => {
+  const validColor = (typeof color === 'string' && color) || (typeof props.color === 'string' && props.color)
+  const [col, shade] = validColor.split('.')
+
+  return (
+    props.theme &&
+    props.theme.palette &&
+    Object.keys(props.theme.palette).includes(col) &&
+    Object.keys(props.theme.palette[col]).includes(shade)
+  )
+}
+
 export const deprecatedColorValue = () => (props, propName, componentName) => {
   if (
     process.env.NODE_ENV !== 'production' &&
@@ -243,24 +255,42 @@ export const getPaletteColor = (...args) => (props) => {
   )
 }
 
+export const getValidPaletteColor = (color) => (props) => {
+  if (!color || typeof color !== 'string') {
+    return null
+  }
+
+  const [col, shade] = color.split('.')
+  const newColor = `${col}.${shade || 'base'}`
+
+  if (hasPaletteColorShade(props, newColor)) {
+    return getPaletteColor(newColor)(props)
+  }
+
+  return null
+}
+
 /**
  * Gets the text color that belongs on a given background color
  *
  * @param name - The name of the background color
  *
  */
-export const getTextColorOn = (name) => (props) => {
+export const getTextColorOn = (name, lightColor = null, darkColor = null) => (props) => {
   const { theme } = props
 
   if (theme.palette) {
     const color = getPaletteColor(name)(props)
     const text = theme.palette.text
 
+    lightColor = getValidPaletteColor(lightColor)(props) || text.lightest
+    darkColor = getValidPaletteColor(darkColor)(props) || text.base
+
     if (color) {
-      return getContrastRatio(text.lightest, color) >= theme.contrastRatio ? text.lightest : text.base
+      return getContrastRatio(lightColor, color) >= theme.contrastRatio ? lightColor : darkColor
     }
 
-    return text.base
+    return darkColor
   }
 
   return ''

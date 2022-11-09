@@ -13,7 +13,9 @@ import {
   getLuminance,
   getPaletteColor,
   getTextColorOn,
+  getValidPaletteColor,
   hasPaletteColor,
+  hasPaletteColorShade,
   hexToRgb,
 } from '.'
 
@@ -197,6 +199,34 @@ describe('utils', () => {
     })
   })
 
+  describe('getValidPaletteColor', () => {
+    const props = {
+      theme: createTheme(),
+    }
+
+    test('returns value for valid color without shade', () => {
+      const result = getValidPaletteColor('primary')(props)
+      expect(result).toBe('#0068ef')
+    })
+
+    test('returns value for valid color shade', () => {
+      const result = getValidPaletteColor('primary.dark')(props)
+      expect(result).toBe('#049')
+    })
+
+    test('returns null for invalid colorShade', () => {
+      const result = getValidPaletteColor('#0068ef')(props)
+      expect(result).toBeNull()
+    })
+
+    test('returns null for invalid type', () => {
+      const result = getValidPaletteColor(0)(props)
+      expect(result).toBeNull()
+    })
+
+    test('returns null for null color', () => {})
+  })
+
   describe('hasPaletteColor', () => {
     test('returns true if palette color', () => {
       expect(hasPaletteColor({ theme: createTheme(), color: 'primary' })).toBeTruthy()
@@ -205,6 +235,21 @@ describe('utils', () => {
 
     test('returns false if not a palette color', () => {
       expect(hasPaletteColor({ theme: createTheme(), color: 'orange' })).toBeFalsy()
+    })
+  })
+
+  describe('hasPaletteColorShade', () => {
+    test('returns true if palette color and shade', () => {
+      expect(hasPaletteColorShade({ theme: createTheme(), color: 'primary' })).toBeFalsy()
+      expect(hasPaletteColorShade({ theme: createTheme(), color: 'primary.dark' })).toBeTruthy()
+    })
+
+    test('returns false if not a palette color', () => {
+      expect(hasPaletteColorShade({ theme: createTheme(), color: 'orange' })).toBeFalsy()
+    })
+
+    test('returns false if not a palette color shade', () => {
+      expect(hasPaletteColorShade({ theme: createTheme(), color: 'primary.sparkly' })).toBeFalsy()
     })
   })
 
@@ -230,6 +275,21 @@ describe('utils', () => {
       expect(getTextColorOn('light')({ ...props, color: 'primary' })).toEqual(props.theme.palette.text.base)
       expect(getTextColorOn('dark')({ ...props, color: 'primary' })).toEqual(
         props.theme.palette.text.lightest
+      )
+    })
+
+    test('can override the text color defaults', () => {
+      expect(getTextColorOn('background.lightest', 'text.lightest', 'primary')(props)).toEqual(
+        props.theme.palette.primary.base
+      )
+      expect(getTextColorOn('primary.base', 'text.lightest', 'primary')(props)).toEqual(
+        props.theme.palette.text.lightest
+      )
+    })
+
+    test('can override the text color defaults with a dark colour', () => {
+      expect(getTextColorOn('background.lightest', 'text.lightest', 'primary.dark')(props)).toEqual(
+        props.theme.palette.primary.dark
       )
     })
   })
