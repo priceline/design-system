@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Implement SlideBox and use in mobile Carousel",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
