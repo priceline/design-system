@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Thu, 27 Oct 2022 18:30:28 GMT and should not be manually modified.
+This log was last generated on Wed, 09 Nov 2022 17:44:26 GMT and should not be manually modified.
+
+## 1.5.0
+Wed, 09 Nov 2022 17:44:26 GMT
+
+### Minor changes
+
+- Implement SlideBox and use in mobile Carousel
 
 ## 1.4.4
 Thu, 27 Oct 2022 18:30:28 GMT

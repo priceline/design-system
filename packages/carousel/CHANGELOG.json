@@ -2,6 +2,28 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.5.0",
+      "tag": "pcln-carousel_v1.5.0",
+      "date": "Wed, 09 Nov 2022 17:44:26 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Implement SlideBox and use in mobile Carousel",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "53264d39dbd28db07e95bd21b5911ce62d83b692"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.34.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.33.1` to `4.34.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.4.4",
       "tag": "pcln-carousel_v1.4.4",
       "date": "Thu, 27 Oct 2022 18:30:28 GMT",
