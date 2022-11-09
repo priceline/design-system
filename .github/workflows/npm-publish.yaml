@@ -46,13 +46,13 @@ jobs:
         run: git config --global user.email "uxplatformdevs@priceline.com"
 
       # Apply changes and git add so the list-changed step detects projects that have changes. MUST NOT
-      # commit changes back to main branch before detecting changed projects.
+      # commit changes back to v4 branch before detecting changed projects.
       - name: rush apply versions
         run: |
           node common/scripts/install-run-rush.js publish --apply --add-commit-details
           git add -A
 
-      # List projects with changes then git reset. We'll apply changes and merge them to main in the next step.
+      # List projects with changes then git reset. We'll apply changes and merge them to v4 in the next step.
       - name: List changed packages
         id: list-changed
         run: |
@@ -61,8 +61,8 @@ jobs:
 
       - name: publish npm-package
         run: |
-          node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="main"
-          node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="main" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
+          node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch="v4"
+          node common/scripts/install-run-rush.js publish --publish --include-all --target-branch="v4" --npm-auth-token="${{ secrets.NPM_AUTOMATION_TOKEN }}"
 
   create-github-releases:
     needs: npm-publish
@@ -85,7 +85,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: 'refs/heads/main',
+              ref: 'refs/heads/v4',
               workflow_id: 'release-branch.yaml',
               inputs: {
                 packageName: project
