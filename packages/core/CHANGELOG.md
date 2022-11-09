@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 07 Nov 2022 16:17:23 GMT and should not be manually modified.
+This log was last generated on Wed, 09 Nov 2022 18:45:39 GMT and should not be manually modified.
+
+## 5.1.0
+Wed, 09 Nov 2022 18:45:39 GMT
+
+### Minor changes
+
+- Add disabled state to Link and add overrides to getTextColorOn
+
+### Patches
+
+- Improve TS interface for ChipContentWrapper
 
 ## 5.0.0
 Mon, 07 Nov 2022 16:17:23 GMT

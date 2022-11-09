@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.1.0",
+      "tag": "pcln-design-system_v5.1.0",
+      "date": "Wed, 09 Nov 2022 18:45:39 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add disabled state to Link and add overrides to getTextColorOn",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "3070d7e84b27942c0f98999fb416ed625a1f26d3"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Improve TS interface for ChipContentWrapper",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "866e0782a5a342d74a3df0d5277c5e841f9030a1"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.0",
       "tag": "pcln-design-system_v5.0.0",
       "date": "Mon, 07 Nov 2022 16:17:23 GMT",
