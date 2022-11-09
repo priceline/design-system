@@ -29,6 +29,7 @@
     "debug": "heft --debug test --clean",
     "start": "heft start",
     "storybook": "heft start --storybook",
+    "test": "heft test",
     "test:snapshots": "heft test --update-snapshots",
     "test:watch": "heft test --watch"
   },

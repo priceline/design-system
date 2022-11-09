@@ -23,6 +23,18 @@ export const hasPaletteColor = (props) => {
   )
 }
 
+export const hasPaletteColorShade = (props, color = undefined) => {
+  const validColor = (typeof color === 'string' && color) || (typeof props.color === 'string' && props.color)
+  const [col, shade] = validColor.split('.')
+
+  return (
+    props.theme &&
+    props.theme.palette &&
+    Object.keys(props.theme.palette).includes(col) &&
+    Object.keys(props.theme.palette[col]).includes(shade)
+  )
+}
+
 export const deprecatedColorValue = () => (props, propName, componentName) => {
   if (
     process.env.NODE_ENV !== 'production' &&
@@ -137,16 +149,16 @@ export const getBreakpointSize = (array, length) => {
  *
  */
 
-export const applySizes =
-  (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) =>
-  ({ size }) => {
-    if (sizes && typeof size === 'string') {
-      // prettier-ignore
-      return css`${sizes[size] || sizes[defaultSize] || ''}`
-    }
-    if (sizes && Array.isArray(size)) {
-      // prettier-ignore
-      return css`${sizes[getBreakpointSize(size, 1)]};
+export const applySizes = (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) => ({
+  size,
+}) => {
+  if (sizes && typeof size === 'string') {
+    // prettier-ignore
+    return css`${sizes[size] || sizes[defaultSize] || ''}`
+  }
+  if (sizes && Array.isArray(size)) {
+    // prettier-ignore
+    return css`${sizes[getBreakpointSize(size, 1)]};
         ${mediaQueriesOptions.sm} {
           ${sizes[getBreakpointSize(size, 2)]};
         }
@@ -162,8 +174,8 @@ export const applySizes =
         ${mediaQueriesOptions.xxl} {
           ${sizes[getBreakpointSize(size, 6)]};
         }`
-    }
   }
+}
 
 const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
 
@@ -178,43 +190,41 @@ const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
  * @param componentName - The name of the component
  * @param variations - An object of variation styles
  */
-export const applyVariations =
-  (componentName, variations = null) =>
-  (props) => {
-    let { color } = props
-    const { variation } = props
+export const applyVariations = (componentName, variations = null) => (props) => {
+  let { color } = props
+  const { variation } = props
 
-    const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
+  const colorShade = !!color && typeof color === 'string' && color.match(colorShadeRegex)
 
-    let shade
-    if (colorShade) {
-      color = colorShade[1]
-      shade = colorShade[2]
-    }
+  let shade
+  if (colorShade) {
+    color = colorShade[1]
+    shade = colorShade[2]
+  }
 
-    const isValidShade = shade && typeof shade === 'string'
+  const isValidShade = shade && typeof shade === 'string'
 
-    if (variations && typeof variation === 'string') {
-      if (isValidShade) {
-        // prettier-ignore
-        return css`${variations[variation] || ''}
-          ${typeof color === 'string' &&
-          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
-      }
-
-      // prettier-ignore
-      return css`${variations[variation] || ''}
-        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
-    }
-
+  if (variations && typeof variation === 'string') {
     if (isValidShade) {
       // prettier-ignore
-      return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
+      return css`${variations[variation] || ''}
+          ${typeof color === 'string' &&
+          themeGet(`componentStyles.${componentName}.${variation}.${color}.${shade}`, '')}`
     }
 
     // prettier-ignore
-    return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
+    return css`${variations[variation] || ''}
+        ${typeof color === 'string' && themeGet(`componentStyles.${componentName}.${variation}.${color}`, '')}`
   }
+
+  if (isValidShade) {
+    // prettier-ignore
+    return css`${themeGet(`componentStyles.${componentName}.${color}.${shade}`, '')}`
+  }
+
+  // prettier-ignore
+  return css`${themeGet(`componentStyles.${componentName}.${color}`, '')}`
+}
 
 /**
  * Gets the color of a palette shade, using props.color as
@@ -226,25 +236,38 @@ export const applyVariations =
  * @example getPaletteColor('primary.base')(props) =\> theme.palette.primary.base
  * @example getPaletteColor('primary', 'base')(props) =\> theme.palette.primary.base
  */
-export const getPaletteColor =
-  (...args) =>
-  (props) => {
-    let color = args.length === 2 ? args[0] : props.color
-    let shade = args.length === 2 ? args[1] : args[0]
+export const getPaletteColor = (...args) => (props) => {
+  let color = args.length === 2 ? args[0] : props.color
+  let shade = args.length === 2 ? args[1] : args[0]
 
-    const colorShade = shade.match(colorShadeRegex)
+  const colorShade = shade.match(colorShadeRegex)
 
-    if (colorShade) {
-      color = colorShade[0]
-      shade = colorShade[1]
-    }
-
-    return (
-      themeGet(`palette.${color}.${shade}`)(props) ||
-      themeGet(`palette.${color}`)(props) ||
-      themeGet(`colors.${color}`)(props)
-    )
+  if (colorShade) {
+    color = colorShade[0]
+    shade = colorShade[1]
   }
+
+  return (
+    themeGet(`palette.${color}.${shade}`)(props) ||
+    themeGet(`palette.${color}`)(props) ||
+    themeGet(`colors.${color}`)(props)
+  )
+}
+
+export const getValidPaletteColor = (color) => (props) => {
+  if (!color || typeof color !== 'string') {
+    return null
+  }
+
+  const [col, shade] = color.split('.')
+  const newColor = `${col}.${shade || 'base'}`
+
+  if (hasPaletteColorShade(props, newColor)) {
+    return getPaletteColor(newColor)(props)
+  }
+
+  return null
+}
 
 /**
  * Gets the text color that belongs on a given background color
@@ -252,18 +275,21 @@ export const getPaletteColor =
  * @param name - The name of the background color
  *
  */
-export const getTextColorOn = (name) => (props) => {
+export const getTextColorOn = (name, lightColor = null, darkColor = null) => (props) => {
   const { theme } = props
 
   if (theme.palette) {
     const color = getPaletteColor(name)(props)
     const text = theme.palette.text
 
+    lightColor = getValidPaletteColor(lightColor)(props) || text.lightest
+    darkColor = getValidPaletteColor(darkColor)(props) || text.base
+
     if (color) {
-      return getContrastRatio(text.lightest, color) >= theme.contrastRatio ? text.lightest : text.base
+      return getContrastRatio(lightColor, color) >= theme.contrastRatio ? lightColor : darkColor
     }
 
-    return text.base
+    return darkColor
   }
 
   return ''
