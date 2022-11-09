@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.35.0",
+      "tag": "pcln-design-system_v4.35.0",
+      "date": "Wed, 09 Nov 2022 18:59:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add disabled state to Link and add overrides to getTextColorOn",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "ccf3c2a460c74b66df5c3ed8b7902d7de80d4a5e"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.34.0",
       "tag": "pcln-design-system_v4.34.0",
       "date": "Wed, 09 Nov 2022 17:44:26 GMT",

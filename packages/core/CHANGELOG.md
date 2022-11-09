@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 09 Nov 2022 17:44:26 GMT and should not be manually modified.
+This log was last generated on Wed, 09 Nov 2022 18:59:27 GMT and should not be manually modified.
+
+## 4.35.0
+Wed, 09 Nov 2022 18:59:27 GMT
+
+### Minor changes
+
+- Add disabled state to Link and add overrides to getTextColorOn
 
 ## 4.34.0
 Wed, 09 Nov 2022 17:44:26 GMT
