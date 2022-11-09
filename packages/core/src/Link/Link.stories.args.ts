@@ -22,11 +22,11 @@ export const argTypes = {
   size: {
     name: 'size',
     options: ['small', 'medium', 'large'],
-    control: 'select',
+    control: 'radio',
   },
   target: {
     name: 'target',
     options: ['_blank', '_self'],
-    control: 'select',
+    control: 'radio',
   },
 }
