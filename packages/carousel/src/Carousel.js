@@ -75,7 +75,7 @@ export const Carousel = ({
         layout={layout}
         onSlideChange={onSlideChange}
         visibleSlides={mobileVisibleSlides || getMobileVisibleSlides(visibleSlides)}
-        currentSlideOverride={_currentSlide}
+        currentSlideOverride={currentSlide}
       >
         {React.Children.map(children, (item) => item)}
       </SlideBox>
