@@ -29,6 +29,7 @@ const Slide: React.FC<InferProps<typeof propTypes>> = ({
 
   useEffect(() => {
     if (isCurrentSlide === true) {
+      /* istanbul ignore next */
       ref?.current?.scrollIntoView({ block: 'end' })
     }
   }, [isCurrentSlide])

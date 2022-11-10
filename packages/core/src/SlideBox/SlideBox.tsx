@@ -33,8 +33,8 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
     <ScrollFlex width='100%' py={2} data-testid='slide-box'>
       {React.Children.toArray(children).map((item: PropTypes.node, index: number) => (
         <Slide
-          key={item?.props?.key || `slide${index}`}
-          width={layout ? getCustomWidths(layout?.split('-'), index) : getVisibleSlides(visibleSlides)}
+          key={item.props.key || `slide${index}`}
+          width={layout ? getCustomWidths(layout.split('-'), index) : getVisibleSlides(visibleSlides)}
           onSlideChange={onSlideChange}
           slideSpacing={slideSpacing}
           stretchHeight={stretchHeight}
