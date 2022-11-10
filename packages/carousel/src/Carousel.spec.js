@@ -5,6 +5,11 @@ import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 import { Carousel } from './Carousel'
 
 describe('Carousel', () => {
+  const scrollIntoView = jest.fn()
+  beforeEach(() => {
+    global.HTMLElement.prototype.scrollIntoView = scrollIntoView
+  })
+
   beforeAll(() => {
     mockAllIsIntersecting(true)
     Object.defineProperty(window, 'matchMedia', {
@@ -97,6 +102,7 @@ describe('Carousel', () => {
     getByText('Slide 1')
     getByText('Slide 2')
     getByText('Slide 3')
+    expect(scrollIntoView).toHaveBeenCalledTimes(1)
   })
 
   it('Should NOT render SlideBox for mobile sizes with displayArrowsMobile = true', () => {
