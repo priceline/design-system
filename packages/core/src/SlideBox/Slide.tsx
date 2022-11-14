@@ -4,18 +4,18 @@ import { Box } from '..'
 import { RenderInView } from './RenderInView'
 import { SlideWrapper } from './styles'
 
-const propTypes = {
-  onSlideChange: PropTypes.func,
-  slideSpacing: PropTypes.number,
-  stretchHeight: PropTypes.bool,
-  index: PropTypes.number,
-  content: PropTypes.node,
-  isCurrentSlide: PropTypes.bool,
-  width: PropTypes.any,
-  numSlides: PropTypes.number,
+interface ISlideProps {
+  onSlideChange: PropTypes.func
+  slideSpacing: PropTypes.number
+  stretchHeight: PropTypes.bool
+  index: PropTypes.number
+  content: PropTypes.node
+  isCurrentSlide: PropTypes.bool
+  width: PropTypes.any
+  numSlides: PropTypes.number
 }
 
-const Slide: React.FC<InferProps<typeof propTypes>> = ({
+const Slide: React.FC<ISlideProps> = ({
   onSlideChange,
   slideSpacing,
   stretchHeight,
@@ -49,6 +49,17 @@ const Slide: React.FC<InferProps<typeof propTypes>> = ({
       </RenderInView>
     </SlideWrapper>
   )
+}
+
+Slide.propTypes = {
+  onSlideChange: PropTypes.func,
+  slideSpacing: PropTypes.number,
+  stretchHeight: PropTypes.bool,
+  index: PropTypes.number,
+  content: PropTypes.node,
+  isCurrentSlide: PropTypes.bool,
+  width: PropTypes.any,
+  numSlides: PropTypes.number,
 }
 
 export { Slide }
