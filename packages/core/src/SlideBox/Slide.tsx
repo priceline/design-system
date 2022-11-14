@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import { Box } from '..'
 import { RenderInView } from './RenderInView'
 import { SlideWrapper } from './styles'
