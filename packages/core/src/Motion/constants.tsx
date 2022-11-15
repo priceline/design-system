@@ -10,6 +10,10 @@ const VARIATION_DURATION = {
     rest: duration.fast,
     animated: duration.normal,
   },
+  FADE_IN: {
+    rest: duration.fast,
+    animated: duration.fast,
+  },
 }
 
 const ACTION_KEY = {

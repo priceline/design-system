@@ -1,4 +1,41 @@
 const KEY_FRAMES = {
+  FADE_IN: {
+    rest: {
+      end: `
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+      `,
+    },
+    animated: {
+      start: `
+        z-index: 99;
+        visibility: visible;
+      `,
+      end: `
+        opacity: 1;
+      `,
+    },
+  },
+  EXPAND_FROM_BOTTOM: {
+    rest: {
+      end: `
+        transform: scaleY(0);
+        z-index: -1;
+        visibility: hidden;
+      `,
+    },
+    animated: {
+      start: `
+        transform: scaleY(0);
+        z-index: 99;
+        visibility: visible;
+      `,
+      end: `
+        transform: scaleY(1);
+      `,
+    },
+  },
   GROW_CENTER: {
     rest: {
       end: `

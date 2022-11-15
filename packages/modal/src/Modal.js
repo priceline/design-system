@@ -4,25 +4,7 @@ import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 import { color, width, height, themeGet } from 'styled-system'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
-import { Box, CloseButton, deprecatedPropType, Flex } from 'pcln-design-system'
-
-const OVERLAY_ANIMATION = (transitionState) => `
-  opacity: 0;
-  transition: opacity .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-  ${transitionState === 'entering' ? `opacity: 0;` : ''}
-  ${transitionState === 'entered' ? `opacity: 1;` : ''}
-  ${transitionState === 'exiting' ? `opacity: 0;` : ''}
-  ${transitionState === 'exited' ? `opacity: 0;` : ''}
-`
-
-const DIALOG_ANIMATION = (transitionState) => `
-  transform: scale(0.5);
-  transition: transform .5s cubic-bezier(0.50, 0.00, 0.25, 1.00);
-  ${transitionState === 'entering' ? `transform: scale(0.5);` : ''}
-  ${transitionState === 'entered' ? `transform: scale(1);` : ''}
-  ${transitionState === 'exiting' ? `transform: scale(0.5);` : ''}
-  ${transitionState === 'exited' ? `transform: scale(0.5);` : ''}
-`
+import { Box, CloseButton, deprecatedPropType, Flex, getAnimationCss } from 'pcln-design-system'
 
 const getAnimation = ({ transitionstate, defaultAnimation, customAnimation = null }) =>
   typeof customAnimation === 'function' ? customAnimation(transitionstate) : defaultAnimation(transitionstate)
@@ -44,14 +26,13 @@ const Overlay = styled(DialogOverlay)`
   * {
     box-sizing: border-box;
   }
-  ${getAnimation};
+  ${getAnimationCss};
 `
 
 const Dialog = styled(DialogContent)`
   ${color}
   ${width}
   ${height}
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   box-shadow: ${(props) => props.theme.boxShadows[3]};
@@ -74,8 +55,9 @@ const Dialog = styled(DialogContent)`
     `
     max-height: none;
   `}
-  ${getAnimation}
+  ${getAnimationCss}
 `
+//Some animations like "EXPAND_FROM_BOTTOM" also need positioning, need to figure that out
 
 const HeaderWrapper = styled.div`
   flex-shrink: 0;
@@ -172,8 +154,9 @@ const Modal = ({
           zindex={zIndex}
           transitionstate={state}
           initialFocusRef={null}
-          defaultAnimation={OVERLAY_ANIMATION}
           customAnimation={overlayAnimation}
+          variation='FADE_IN'
+          isAnimatedState={['entered', 'entering'].includes(state)}
         >
           <OverlayWrapper>
             <DialogWrapper enableoverflow={enableOverflow} verticalAlignment={verticalAlignment}>
@@ -184,7 +167,8 @@ const Modal = ({
                 transitionstate={state}
                 className={className}
                 enableoverflow={enableOverflow ? 'true' : null}
-                defaultAnimation={DIALOG_ANIMATION}
+                variation='GROW_CENTER'
+                isAnimatedState={['entered', 'entering'].includes(state)}
                 customAnimation={dialogAnimation}
                 fullScreen={fullScreen}
                 data-testid='dialog-content'

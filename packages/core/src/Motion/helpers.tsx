@@ -30,4 +30,4 @@ const getAnimation = ({ isAnimatedState, variation }) =>
 const getAnimationCss = ({ isAnimatedState, variation }) =>
   isAnimatedState === null ? getDefaultCss(variation) : getAnimation({ isAnimatedState, variation })
 
-export { getAnimationCss }
+export { getAnimationCss, getKeyFrames }
