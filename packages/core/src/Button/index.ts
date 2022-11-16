@@ -1,1 +1,1 @@
-export { default as Button, buttonStyles, IButtonProps } from './Button'
+export { default as Button, buttonStyles, IButtonProps, ButtonWithIcon } from './Button'

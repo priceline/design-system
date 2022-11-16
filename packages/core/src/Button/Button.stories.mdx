@@ -1,7 +1,7 @@
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs'
 import styled from 'styled-components'
 import { Calendar as CalendarIcon } from 'pcln-icons'
-import { Button } from '.'
+import { Button, ButtonWithIcon } from '.'
 import { ForwardRefs } from './ForwardRefsStory'
 import { argTypes } from './Button.stories.args'
 
@@ -12,16 +12,18 @@ export const StyledButton = styled(Button)`
 export const Template = (args) => (
   <>
     <Button {...args}>I AM BUTTON</Button>
-    <br />
-    <Button {...args} leftIcon={<CalendarIcon color='white' />}>
-      Button
-    </Button>
-    <br />
-    <Button {...args} rightIcon={<CalendarIcon color='white' />}>
-      Button
-    </Button>
   </>
 )
+
+export const TemplateWithIcon = (args) => (
+  <>
+    <ButtonWithIcon {...args} position="left" icon={<CalendarIcon size={args.size} />}>I AM BUTTON</ButtonWithIcon>
+    </br>
+    </br>
+    <ButtonWithIcon {...args} position="right" icon={<CalendarIcon size={args.size} />}>I AM BUTTON</ButtonWithIcon>
+  </>
+)
+
 export const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</StyledButton>
 
 <Meta title='core/Button' component={Button} argTypes={argTypes} />
@@ -32,6 +34,14 @@ export const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</St
 
 <Canvas>
   <Story name='Button'>{Template.bind({})}</Story>
+</Canvas>
+
+<ArgsTable story='Button' />
+
+Buttons can have an icon on left or right side of button text using `ButtonWithIcon`
+
+<Canvas>
+  <Story name='Button'>{TemplateWithIcon.bind({})}</Story>
 </Canvas>
 
 <ArgsTable story='Button' />

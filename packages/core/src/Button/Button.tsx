@@ -185,8 +185,6 @@ const buttonPropTypes = {
   disabled: PropTypes.bool,
   borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
   boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
-  leftIcon: PropTypes.node,
-  rightIcon: PropTypes.node,
 }
 
 type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
@@ -205,14 +203,12 @@ export interface IButtonProps
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
   onMouseEnter?: (unknown) => unknown
-  leftIcon?: JSX.Element
-  rightIcon?: JSX.Element
 }
 
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const BasicButton: React.FC<IButtonProps> = styled.button.attrs((props) => {
+const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
   const { width, title, 'aria-label': ariaLabel, borderRadius } = props
   return {
     borderRadius,
@@ -224,20 +220,27 @@ const BasicButton: React.FC<IButtonProps> = styled.button.attrs((props) => {
   ${buttonStyles}
 `
 
-BasicButton.propTypes = buttonPropTypes
+Button.propTypes = buttonPropTypes
 
-BasicButton.defaultProps = {
+Button.defaultProps = {
   color: 'primary',
   size: 'medium',
   variation: 'fill',
 }
 
-const ButtonWithIcon = styled(BasicButton)`
+export default Button
+
+const StyledButtonWithIcon = styled(Button)`
   display: flex;
   align-items: center;
 `
 
-const Button: React.FC<IButtonProps> = (props) => {
+interface IButtonWithIconProps extends IButtonProps {
+  icon: JSX.Element
+  position: string
+}
+
+export const ButtonWithIcon: React.FC<IButtonWithIconProps> = (props) => {
   const iconSize = {
     small: 12,
     medium: 15,
@@ -254,33 +257,31 @@ const Button: React.FC<IButtonProps> = (props) => {
 
   const size = props.size as string
 
-  return props.leftIcon || props.rightIcon ? (
-    <ButtonWithIcon {...props}>
-      {props.leftIcon &&
-        React.cloneElement(props.leftIcon, {
+  return (
+    <StyledButtonWithIcon {...props}>
+      {props.icon &&
+        props.position === 'left' &&
+        React.cloneElement(props.icon, {
           size: iconSize[size],
           mr: margins[size],
         })}
       {props.children}
-      {props.rightIcon &&
-        React.cloneElement(props.rightIcon, {
+      {props.icon &&
+        props.position === 'right' &&
+        React.cloneElement(props.icon, {
           size: iconSize[size],
           ml: margins[size],
         })}
-    </ButtonWithIcon>
-  ) : (
-    <BasicButton {...props} />
+    </StyledButtonWithIcon>
   )
 }
 
-Button.propTypes = buttonPropTypes
+ButtonWithIcon.propTypes = buttonPropTypes
 
-Button.defaultProps = {
+ButtonWithIcon.defaultProps = {
   color: 'primary',
   size: 'medium',
   variation: 'fill',
 }
 
-Button.displayName = 'Button'
-
-export default Button
+ButtonWithIcon.displayName = 'Button With Icon'
