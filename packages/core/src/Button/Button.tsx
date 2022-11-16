@@ -147,7 +147,7 @@ const variations = {
 
 export const buttonStyles = css`
   -webkit-font-smoothing: antialiased;
-  display: flex;
+  display: inline-block;
   align-items: center;
   vertical-align: middle;
   text-align: center;
@@ -233,6 +233,10 @@ Button.defaultProps = {
 
 Button.displayName = 'Button'
 
+const ButtonWithIcon = styled(Button)`
+  display: flex;
+`
+
 const CustomButton = (props) => {
   const iconSize = {
     small: 12,
@@ -247,8 +251,8 @@ const CustomButton = (props) => {
     large: 2,
     extraLarge: 2,
   }
-  return (
-    <Button {...props}>
+  return props.leftIcon || props.rightIcon ? (
+    <ButtonWithIcon {...props}>
       {props.leftIcon &&
         React.cloneElement(props.leftIcon, {
           size: iconSize[props.size],
@@ -260,7 +264,9 @@ const CustomButton = (props) => {
           size: iconSize[props.size],
           ml: margins[props.size],
         })}
-    </Button>
+    </ButtonWithIcon>
+  ) : (
+    Button
   )
 }
 
