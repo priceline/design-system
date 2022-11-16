@@ -147,7 +147,8 @@ const variations = {
 
 export const buttonStyles = css`
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
@@ -185,6 +186,8 @@ const buttonPropTypes = {
   disabled: PropTypes.bool,
   borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
   boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
+  startIcon: PropTypes.any,
+  endIcon: PropTypes.any,
 }
 
 type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
@@ -230,4 +233,35 @@ Button.defaultProps = {
 
 Button.displayName = 'Button'
 
-export default Button
+const CustomButton = (props) => {
+  const iconSize = {
+    small: 12,
+    medium: 15,
+    large: 18,
+    extraLarge: 18,
+  }
+
+  const margins = {
+    small: 1,
+    medium: 2,
+    large: 2,
+    extraLarge: 2,
+  }
+  return (
+    <Button {...props}>
+      {props.leftIcon &&
+        React.cloneElement(props.leftIcon, {
+          size: iconSize[props.size],
+          mr: margins[props.size],
+        })}
+      {props.children}
+      {props.rightIcon &&
+        React.cloneElement(props.rightIcon, {
+          size: iconSize[props.size],
+          ml: margins[props.size],
+        })}
+    </Button>
+  )
+}
+
+export default CustomButton

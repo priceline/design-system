@@ -1,5 +1,6 @@
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs'
 import styled from 'styled-components'
+import { Calendar as CalendarIcon } from 'pcln-icons'
 import { Button } from '.'
 import { ForwardRefs } from './ForwardRefsStory'
 import { argTypes } from './Button.stories.args'
@@ -8,7 +9,19 @@ export const StyledButton = styled(Button)`
   padding: 100px;
 `
 
-export const Template = (args) => <Button {...args}>I AM BUTTON</Button>
+export const Template = (args) => (
+  <>
+    <Button {...args}>I AM BUTTON</Button>
+    <br />
+    <Button {...args} leftIcon={<CalendarIcon color='white' />}>
+      Button
+    </Button>
+    <br />
+    <Button {...args} rightIcon={<CalendarIcon color='white' />}>
+      Button
+    </Button>
+  </>
+)
 export const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</StyledButton>
 
 <Meta title='core/Button' component={Button} argTypes={argTypes} />
