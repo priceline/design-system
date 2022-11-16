@@ -212,7 +212,7 @@ export interface IButtonProps
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
+const BasicButton: React.FC<IButtonProps> = styled.button.attrs((props) => {
   const { width, title, 'aria-label': ariaLabel, borderRadius } = props
   return {
     borderRadius,
@@ -224,22 +224,20 @@ const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
   ${buttonStyles}
 `
 
-Button.propTypes = buttonPropTypes
+BasicButton.propTypes = buttonPropTypes
 
-Button.defaultProps = {
+BasicButton.defaultProps = {
   color: 'primary',
   size: 'medium',
   variation: 'fill',
 }
 
-Button.displayName = 'Button'
-
-const ButtonWithIcon = styled(Button)`
+const ButtonWithIcon = styled(BasicButton)`
   display: flex;
   align-items: center;
 `
 
-const CustomButton: React.FC<IButtonProps> = (props) => {
+const Button: React.FC<IButtonProps> = (props) => {
   const iconSize = {
     small: 12,
     medium: 15,
@@ -271,8 +269,18 @@ const CustomButton: React.FC<IButtonProps> = (props) => {
         })}
     </ButtonWithIcon>
   ) : (
-    <Button {...props} />
+    <BasicButton {...props} />
   )
 }
 
-export default CustomButton
+Button.propTypes = buttonPropTypes
+
+Button.defaultProps = {
+  color: 'primary',
+  size: 'medium',
+  variation: 'fill',
+}
+
+Button.displayName = 'Button'
+
+export default Button
