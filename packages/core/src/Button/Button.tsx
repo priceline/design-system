@@ -234,45 +234,45 @@ Button.defaultProps = {
 
 Button.displayName = 'Button'
 
-const ButtonWithIcon = styled(Button)`
-  display: flex;
-  align-items: center;
-`
+// const ButtonWithIcon = styled(Button)`
+//   display: flex;
+//   align-items: center;
+// `
 
-const CustomButton: React.FC<IButtonProps> = (props) => {
-  const iconSize = {
-    small: 12,
-    medium: 15,
-    large: 18,
-    extraLarge: 18,
-  }
+// const CustomButton: React.FC<IButtonProps> = (props) => {
+//   const iconSize = {
+//     small: 12,
+//     medium: 15,
+//     large: 18,
+//     extraLarge: 18,
+//   }
 
-  const margins = {
-    small: 1,
-    medium: 2,
-    large: 2,
-    extraLarge: 2,
-  }
+//   const margins = {
+//     small: 1,
+//     medium: 2,
+//     large: 2,
+//     extraLarge: 2,
+//   }
 
-  const size = props.size as string
+//   const size = props.size as string
 
-  return props.leftIcon || props.rightIcon ? (
-    <ButtonWithIcon {...props}>
-      {props.leftIcon &&
-        React.cloneElement(props.leftIcon, {
-          size: iconSize[size],
-          mr: margins[size],
-        })}
-      {props.children}
-      {props.rightIcon &&
-        React.cloneElement(props.rightIcon, {
-          size: iconSize[size],
-          ml: margins[size],
-        })}
-    </ButtonWithIcon>
-  ) : (
-    <Button {...props} />
-  )
-}
+//   return props.leftIcon || props.rightIcon ? (
+//     <ButtonWithIcon {...props}>
+//       {props.leftIcon &&
+//         React.cloneElement(props.leftIcon, {
+//           size: iconSize[size],
+//           mr: margins[size],
+//         })}
+//       {props.children}
+//       {props.rightIcon &&
+//         React.cloneElement(props.rightIcon, {
+//           size: iconSize[size],
+//           ml: margins[size],
+//         })}
+//     </ButtonWithIcon>
+//   ) : (
+//     <Button {...props} />
+//   )
+// }
 
-export default CustomButton
+export default Button
