@@ -32,7 +32,7 @@ const Slide: React.FC<ISlideProps> = ({
       /* istanbul ignore next */
       ref?.current?.scrollIntoView({ block: 'end' })
     }
-  }, [isCurrentSlide])
+  }, [isCurrentSlide, ref])
 
   return (
     <SlideWrapper data-testid={`slide${index + 1}`} ref={ref} width={width}>
