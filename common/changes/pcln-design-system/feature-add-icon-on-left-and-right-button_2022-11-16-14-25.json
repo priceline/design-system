@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add icon to the left and right side of button text",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
