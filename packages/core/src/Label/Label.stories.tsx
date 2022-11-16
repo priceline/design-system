@@ -1,9 +1,13 @@
 import React from 'react'
 import { Label, Input, Radio, Flex } from '..'
+import { ILabelProps } from './Label'
+import { argTypes, defaultArgs } from './Label.stories.args'
 
 export default {
   title: 'Label',
   component: Label,
+  args: defaultArgs,
+  argTypes,
   parameters: {
     docs: {
       description: {
@@ -13,23 +17,9 @@ export default {
   },
 }
 
-export const LabelComponent = () => <Label m={3}>Label Component</Label>
+const Template = (args: ILabelProps) => <Label {...args} />
 
-export const UsingFontSize = () => (
-  <div>
-    <Label fontSize={6}>Label with fontSize 6</Label>
-    <Label fontSize={5}>Label with fontSize 5</Label>
-    <Label fontSize={4}>Label with fontSize 4</Label>
-    <Label fontSize={3}>Label with fontSize 3</Label>
-    <Label fontSize={2}>Label with fontSize 2</Label>
-    <Label fontSize={1}>Label with fontSize 1</Label>
-    <Label fontSize={0}>Label with fontSize 0</Label>
-  </div>
-)
-
-UsingFontSize.story = {
-  name: 'Using fontSize',
-}
+export const _Label = Template.bind({})
 
 export const Spacing = () => (
   <div>
@@ -39,17 +29,6 @@ export const Spacing = () => (
     <Label pl={3}>A dash of padding</Label>
   </div>
 )
-
-export const Color = () => (
-  <div>
-    <Label color='blue'>A blue label</Label>
-    <Label color='green'>a green label</Label>
-  </div>
-)
-
-Color.story = {
-  name: 'color',
-}
 
 export const HtmlFor = () => (
   <div>
@@ -86,20 +65,4 @@ export const Nowrap = () => (
 
 Nowrap.story = {
   name: 'nowrap',
-}
-
-export const Width = () => (
-  <div>
-    <Label width={1 / 2} color='blue'>
-      label with 50% width
-    </Label>
-    <Label width='20px' color='green'>
-      label with 20px width
-    </Label>
-    <Label color='orange'>default label width</Label>
-  </div>
-)
-
-Width.story = {
-  name: 'width',
 }
