@@ -148,7 +148,6 @@ const variations = {
 export const buttonStyles = css`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
-  align-items: center;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
@@ -186,8 +185,8 @@ const buttonPropTypes = {
   disabled: PropTypes.bool,
   borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
   boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
-  startIcon: PropTypes.any,
-  endIcon: PropTypes.any,
+  leftIcon: PropTypes.node,
+  rightIcon: PropTypes.node,
 }
 
 type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
@@ -206,6 +205,8 @@ export interface IButtonProps
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
   onMouseEnter?: (unknown) => unknown
+  leftIcon?: JSX.Element
+  rightIcon?: JSX.Element
 }
 
 /**
@@ -235,9 +236,10 @@ Button.displayName = 'Button'
 
 const ButtonWithIcon = styled(Button)`
   display: flex;
+  align-items: center;
 `
 
-const CustomButton = (props) => {
+const CustomButton: React.FC<IButtonProps> = (props) => {
   const iconSize = {
     small: 12,
     medium: 15,
@@ -251,22 +253,25 @@ const CustomButton = (props) => {
     large: 2,
     extraLarge: 2,
   }
+
+  const size = props.size as string
+
   return props.leftIcon || props.rightIcon ? (
     <ButtonWithIcon {...props}>
       {props.leftIcon &&
         React.cloneElement(props.leftIcon, {
-          size: iconSize[props.size],
-          mr: margins[props.size],
+          size: iconSize[size],
+          mr: margins[size],
         })}
       {props.children}
       {props.rightIcon &&
         React.cloneElement(props.rightIcon, {
-          size: iconSize[props.size],
-          ml: margins[props.size],
+          size: iconSize[size],
+          ml: margins[size],
         })}
     </ButtonWithIcon>
   ) : (
-    Button
+    <Button {...props} />
   )
 }
 
