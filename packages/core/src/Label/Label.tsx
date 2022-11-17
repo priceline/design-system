@@ -49,6 +49,7 @@ export interface ILabelProps
   autoHide?: boolean
   nowrap?: boolean
   for?: string
+  onClick?: (evt: unknown) => void
 }
 
 const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label`
@@ -59,6 +60,7 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label`
   margin: 0;
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
+  ${(props) => (props.onClick ? 'cursor: pointer;' : '')}
 
   ${applyVariations('Label')}
   ${space} ${fontSize} ${fontWeight} ${width};
