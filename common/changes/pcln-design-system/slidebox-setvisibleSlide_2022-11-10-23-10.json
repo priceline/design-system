@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add currentSlideOverride option to SlideBox",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

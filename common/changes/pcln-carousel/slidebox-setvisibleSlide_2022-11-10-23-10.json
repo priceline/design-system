@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Add currentSlideOverride option to mobile carousel",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

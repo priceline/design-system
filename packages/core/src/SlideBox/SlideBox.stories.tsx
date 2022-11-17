@@ -50,6 +50,7 @@ export const Default = () => (
       onSlideChange={action('Slide Change')}
       slideSpacing={2}
       stretchHeight
+      currentSlideOverride={5}
     >
       {Array.from(Array(6)).map((_, idx) => (
         <ToutCard
