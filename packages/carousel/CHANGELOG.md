@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Wed, 09 Nov 2022 18:59:27 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Nov 2022 19:55:39 GMT and should not be manually modified.
+
+## 1.5.2
+Thu, 17 Nov 2022 19:55:39 GMT
+
+### Patches
+
+- Add currentSlideOverride option to mobile carousel
 
 ## 1.5.1
 Wed, 09 Nov 2022 18:59:27 GMT

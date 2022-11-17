@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 09 Nov 2022 18:59:27 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Nov 2022 19:55:39 GMT and should not be manually modified.
+
+## 4.36.0
+Thu, 17 Nov 2022 19:55:39 GMT
+
+### Minor changes
+
+- Add currentSlideOverride option to SlideBox
 
 ## 4.35.0
 Wed, 09 Nov 2022 18:59:27 GMT

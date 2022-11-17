@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.36.0",
+      "tag": "pcln-design-system_v4.36.0",
+      "date": "Thu, 17 Nov 2022 19:55:39 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add currentSlideOverride option to SlideBox",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "768746265a9044a4873746cefaed02e6a44f26a9"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.35.0",
       "tag": "pcln-design-system_v4.35.0",
       "date": "Wed, 09 Nov 2022 18:59:27 GMT",
