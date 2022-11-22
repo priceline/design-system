@@ -3,13 +3,11 @@ import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
-import { Box, Button, Flex, Image, Text } from '..'
+import { Box, Button, ChoiceChip, Flex, Image, Text } from '..'
 
 export default {
   component: Animate,
 }
-
-// export const Test = () => <h1>Hello</h1>
 
 export const Playground = () => {
   const [motion, setMotion] = useState<MotionVariant>('expandDown')
@@ -38,15 +36,15 @@ export const Playground = () => {
       </Text>
       <Flex flexWrap='wrap'>
         {Object.keys(MotionVariants).map((variant) => (
-          <Button
+          <ChoiceChip
             data-testid={variant}
-            variation={motion === variant ? 'fill' : 'outline'}
+            selected={motion === variant}
             m={2}
             key={variant}
             onClick={() => handleMotionChange(variant as MotionVariant)}
           >
             {variant}
-          </Button>
+          </ChoiceChip>
         ))}
       </Flex>
       <Text fontSize={5} bold>
@@ -54,15 +52,15 @@ export const Playground = () => {
       </Text>
       <Flex flexWrap='wrap'>
         {Object.keys(TransitionVariants).map((variant) => (
-          <Button
+          <ChoiceChip
             data-testid={variant}
-            variation={transition === variant ? 'fill' : 'outline'}
+            selected={transition === variant}
             m={2}
             key={variant}
             onClick={() => handleTransitionChange(variant as TransitionVariant)}
           >
             {variant}
-          </Button>
+          </ChoiceChip>
         ))}
       </Flex>
       {isRendered && (
@@ -91,7 +89,7 @@ const delay = (time: number) => new Promise((resolve) => setTimeout(resolve, tim
 
 Playground.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
-  await userEvent.click(canvas.getByTestId('fadeIn'))
+  await userEvent.click(canvas.getByText('fadeIn'))
   await delay(1000)
   const playgroundContent = await canvas.getByTestId('playground-content')
   await expect(playgroundContent).toBeTruthy()
@@ -126,6 +124,43 @@ export const AnimatedListings = () => {
             </Flex>
           </Animate>
         ))}
+    </Box>
+  )
+}
+
+export const ComposedAnimations = () => {
+  const [isRendered, setIsRendered] = useState(true)
+
+  const rerender = () => {
+    setIsRendered(false)
+    setTimeout(() => setIsRendered(true))
+  }
+
+  return (
+    <Box>
+      <Flex width='fit-content'>
+        <Button m={2} onClick={rerender}>
+          Reset
+        </Button>
+      </Flex>
+
+      {isRendered && (
+        <Animate variant='scaleFromTopLeft'>
+          <Flex width='fit-content'>
+            <Animate variant='scaleOnHover'>
+              <Button m={2}>Hover Me</Button>
+            </Animate>
+            <Animate variant='scaleOnTap' transition='spring'>
+              <Button m={2}>Click Me</Button>
+            </Animate>
+            <Animate variant='scaleOnTap'>
+              <Animate variant='scaleOnHover'>
+                <Button m={2}>I Do Both!</Button>
+              </Animate>
+            </Animate>
+          </Flex>
+        </Animate>
+      )}
     </Box>
   )
 }
