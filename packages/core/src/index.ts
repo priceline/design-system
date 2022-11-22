@@ -1,4 +1,5 @@
 export { Absolute } from './Absolute'
+export * from './Animate'
 export { Avatar } from './Avatar'
 export { BackgroundImage } from './BackgroundImage'
 export { Badge } from './Badge'
