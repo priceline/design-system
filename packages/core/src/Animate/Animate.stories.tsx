@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
+import { expect } from '@storybook/jest'
+import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
 import { Box, Button, Flex, Image, Text } from '..'
@@ -37,6 +39,7 @@ export const Playground = () => {
       <Flex flexWrap='wrap'>
         {Object.keys(MotionVariants).map((variant) => (
           <Button
+            data-testid={variant}
             variation={motion === variant ? 'fill' : 'outline'}
             m={2}
             key={variant}
@@ -52,6 +55,7 @@ export const Playground = () => {
       <Flex flexWrap='wrap'>
         {Object.keys(TransitionVariants).map((variant) => (
           <Button
+            data-testid={variant}
             variation={transition === variant ? 'fill' : 'outline'}
             m={2}
             key={variant}
@@ -61,9 +65,10 @@ export const Playground = () => {
           </Button>
         ))}
       </Flex>
-      {isRendered && motion && (
+      {isRendered && (
         <Animate variant={motion} transition={transition}>
           <Flex
+            data-testid='playground-content'
             p={5}
             bg='background.darkest'
             flexDirection='column'
@@ -81,6 +86,15 @@ export const Playground = () => {
       )}
     </Flex>
   )
+}
+const delay = (time: number) => new Promise((resolve) => setTimeout(resolve, time))
+
+Playground.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement)
+  await userEvent.click(canvas.getByTestId('fadeIn'))
+  await delay(1000)
+  const playgroundContent = await canvas.getByTestId('playground-content')
+  await expect(playgroundContent).toBeTruthy()
 }
 
 export const AnimatedListings = () => {
