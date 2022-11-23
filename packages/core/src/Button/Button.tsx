@@ -1,12 +1,22 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, space, boxShadow, WidthProps, SpaceProps, BoxShadowProps } from 'styled-system'
+import {
+  borderRadius,
+  fontSize,
+  width,
+  space,
+  boxShadow,
+  WidthProps,
+  SpaceProps,
+  BoxShadowProps,
+} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import { themeGet } from '@styled-system/theme-get'
 import {
   applySizes,
   applyVariations,
+  borders,
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
@@ -143,6 +153,24 @@ const variations = {
       box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
   `,
+  input: css`
+    appearance: none;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    color: ${getPaletteColor('text.base')};
+    display: block;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 14px 12px;
+    text-align: left;
+    width: 100%;
+
+    ${(props) => borders({ ...props, color: undefined })}
+    ${space} ${fontSize} ${borderRadius};
+  `,
 }
 
 export const buttonStyles = css`
@@ -195,7 +223,7 @@ export interface IButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     React.RefAttributes<unknown> {
   color?: string
-  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill'
+  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
   size?: Sizes | Sizes[]
   borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
   boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
