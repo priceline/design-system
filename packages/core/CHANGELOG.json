@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.1.1",
+      "tag": "pcln-design-system_v5.1.1",
+      "date": "Wed, 23 Nov 2022 17:23:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Visually clickable labels and improve label storybooks",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "fc9c7f7622ec67b1e112f83422952846074f5ecd"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.1.0",
       "tag": "pcln-design-system_v5.1.0",
       "date": "Wed, 09 Nov 2022 18:45:39 GMT",

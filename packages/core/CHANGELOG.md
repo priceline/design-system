@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 09 Nov 2022 18:45:39 GMT and should not be manually modified.
+This log was last generated on Wed, 23 Nov 2022 17:23:13 GMT and should not be manually modified.
+
+## 5.1.1
+Wed, 23 Nov 2022 17:23:13 GMT
+
+### Patches
+
+- Visually clickable labels and improve label storybooks
 
 ## 5.1.0
 Wed, 09 Nov 2022 18:45:39 GMT
