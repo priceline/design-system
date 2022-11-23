@@ -190,6 +190,20 @@ describe('Button', () => {
     })
   })
 
+  it('should render correctly for extraLarge size', () => {
+    const { getByText } = render(
+      <Button borderRadius='xl' size='extraLarge'>
+        BUTTON
+      </Button>
+    )
+
+    const button = getByText('BUTTON')
+
+    expect(button).toHaveStyleRule('border-radius', '16px')
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '16px 22px')
+  })
+
   describe('variations', () => {
     describe('fill variation', () => {
       it('should render correctly', () => {
@@ -446,6 +460,24 @@ describe('Button', () => {
         })
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
           modifier: ':disabled',
+        })
+      })
+    })
+
+    describe('input variation', () => {
+      it('should render correctly', () => {
+        const { getByText } = render(<Button variation='input'>BUTTON</Button>)
+
+        const button = getByText('BUTTON')
+
+        expect(button).toHaveStyleRule('color', theme.palette.text.base)
+        expect(button).toHaveStyleRule('background-color', 'transparent')
+        expect(button).toHaveStyleRule('border-color', theme.palette.border.base)
+        expect(button).toHaveStyleRule('border-color', theme.palette.primary.base, {
+          modifier: ':focus',
+        })
+        expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.base}`, {
+          modifier: ':focus',
         })
       })
     })

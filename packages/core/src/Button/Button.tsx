@@ -158,7 +158,7 @@ const variations = {
     background-color: transparent;
     border-style: solid;
     border-width: 1px;
-    color: inherit;
+    color: ${getPaletteColor('text.base')};
     display: block;
     font-family: inherit;
     font-weight: normal;
@@ -223,7 +223,7 @@ export interface IButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     React.RefAttributes<unknown> {
   color?: string
-  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill'
+  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
   size?: Sizes | Sizes[]
   borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
   boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
