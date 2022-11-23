@@ -36,7 +36,7 @@ exports[`FormField renders 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
+  color: #001833;
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
@@ -195,7 +195,7 @@ exports[`FormField renders with Icon 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
+  color: #001833;
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
@@ -376,7 +376,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
+  color: #001833;
   background-color: transparent;
   border-width: 1px;
   border-style: solid;

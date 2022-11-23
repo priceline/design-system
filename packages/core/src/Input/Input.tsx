@@ -33,7 +33,7 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
   display: block;
   width: 100%;
   font-family: inherit;
-  color: inherit;
+  color: ${getPaletteColor('text.base')};
   background-color: transparent;
   border-width: 1px;
   border-style: solid;

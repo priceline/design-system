@@ -44,7 +44,7 @@ export const WithExternalLabel = () => (
 export const WithHelperText = () => (
   <Box width={400}>
     <Box>
-      <Label fontSize={4} htmlFor='sample-input'>
+      <Label fontSize={4} htmlFor='sample-input-2'>
         Same color as Input
       </Label>
       <Input
@@ -56,7 +56,7 @@ export const WithHelperText = () => (
     </Box>
     <Divider />
     <Box>
-      <Label fontSize={4} htmlFor='sample-input'>
+      <Label fontSize={4} htmlFor='sample-input-3'>
         Override color for helper text
       </Label>
       <Input
@@ -66,6 +66,15 @@ export const WithHelperText = () => (
         helperText={<Input.HelperText color='secondary.base'>No soup for you!</Input.HelperText>}
       />
     </Box>
+  </Box>
+)
+
+export const WithLabel = () => (
+  <Box width={400}>
+    <Label>
+      Label Text
+      <Input id='input-with-label' placeholder='Click the label' mt={1} />
+    </Label>
   </Box>
 )
 
