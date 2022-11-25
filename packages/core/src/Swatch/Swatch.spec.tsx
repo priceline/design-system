@@ -10,6 +10,7 @@ describe('Swatch', () => {
 
     mockColors.map((color, idx) => {
       expect(getByTestId(`${idx}-${color}`)).toHaveStyle(`background-color: ${color}`)
+      expect(getByTestId(`${idx}-${color}`)).toHaveStyle(`border: 1px solid #c0cad5}`)
     })
   })
 
