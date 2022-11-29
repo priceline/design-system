@@ -31,7 +31,6 @@ const Shadow = styled(Box)`
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  background-color: black;
   transition: opacity 250ms ease-in-out;
 `
 
@@ -39,8 +38,7 @@ const PopoutModal = styled(Box)`
   position: absolute;
   z-index: 2;
   background-color: white;
-  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.75);
-  transition: padding 250ms ease-in-out, margin 250ms ease-in-out, border-radius 250ms ease-in-out;
+  transition: padding 200ms ease-in-out, margin 200ms ease-in-out, border-radius 200ms ease-in-out;
 `
 
 export const Popout = (props: IPopoutProps) => {
@@ -109,9 +107,10 @@ export const Popout = (props: IPopoutProps) => {
       </TriggerWrapper>
       {isOpen && (
         <>
-          <Shadow style={{ opacity }} onClick={handleClose} />
+          <Shadow bg='background.darkest' style={{ opacity }} onClick={handleClose} />
           <PopoutModal
             ref={modalRef}
+            boxShadowSize='overlay-lg'
             style={{
               padding: padding,
               borderRadius: padding,
