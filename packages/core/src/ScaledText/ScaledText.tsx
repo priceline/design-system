@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 export type IScaledTextProps = {
@@ -12,7 +12,7 @@ export type IScaledTextProps = {
 }
 
 const ScaledText = ({ id, lines, color }: IScaledTextProps) => {
-  const _id = id ?? uuidv4()
+  const [_id] = useState(id ?? uuidv4())
   const className = `svg-text-${_id}`
 
   React.useEffect(() => {
