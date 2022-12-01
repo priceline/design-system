@@ -33,7 +33,7 @@ export const SelectColor = () => {
   const [color, setColor] = useState('#D50032')
   return (
     <>
-      <Swatch colors={['#D50032', '#1B7742', '#0033A0']} onClick={(color) => setColor(color)} />
+      <Swatch colors={['#FFFFFF', '#D50032', '#1B7742', '#0033A0']} onClick={(color) => setColor(color)} />
       <Flex mt='3' flexDirection='row' alignItems='center'>
         <Text mr={2}>Color:</Text>
         <Text>{color}</Text>
