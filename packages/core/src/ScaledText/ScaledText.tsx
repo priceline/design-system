@@ -16,10 +16,12 @@ const ScaledText = ({ id, lines, color }: IScaledTextProps) => {
   const className = `svg-text-${_id}`
 
   React.useEffect(() => {
-    document.querySelectorAll('.' + className).forEach((svg) => {
-      const text = svg.querySelector('text')
-      const bbox = text.getBBox()
-      svg.setAttribute('viewBox', [bbox.x, bbox.y, bbox.width, bbox.height].join(' '))
+    setTimeout(() => {
+      document.querySelectorAll('.' + className).forEach((svg) => {
+        const text = svg.querySelector('text')
+        const bbox = text.getBBox()
+        svg.setAttribute('viewBox', [bbox.x, bbox.y, bbox.width, bbox.height].join(' '))
+      })
     })
   }, [])
 
