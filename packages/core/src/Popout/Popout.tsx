@@ -78,8 +78,8 @@ export const Popout = (props: IPopoutProps) => {
   }, [trigger])
 
   useEffect(() => {
-    if (isOpen && closeOnTriggerRefClick) triggerRef.current?.addEventListener('click', handleClose)
-    return () => triggerRef.current?.removeEventListener('click', handleClose)
+    if (isOpen && closeOnTriggerRefClick) triggerRef?.current?.addEventListener('click', handleClose)
+    return () => triggerRef?.current?.removeEventListener('click', handleClose)
   }, [isOpen, closeOnTriggerRefClick, triggerRef, handleClose])
 
   useEffect(() => {
