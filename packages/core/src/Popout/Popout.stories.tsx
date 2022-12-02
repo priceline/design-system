@@ -1,7 +1,7 @@
 import { Information as InformationIcon, Pin as PinIcon, Search as SearchIcon } from 'pcln-icons'
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
-import { Box, Flex, FormField, getPaletteColor, Input, Label, Popout, Text } from '..'
+import { Box, Button, Flex, FormField, getPaletteColor, Input, Label, Popout, Text } from '..'
 
 export default {
   component: Popout,
@@ -73,31 +73,38 @@ const PclnSearchItem = styled(Flex)`
 const Wrapper = ({ children }) => <Box m={5}>{children}</Box>
 
 export const Basic = () => {
-  const ref = useRef(null)
+  const triggerRef = useRef(null)
   const [value, setValue] = useState('')
-  const trigger = <input aria-label='x' ref={ref} value={value} onChange={(e) => setValue(e.target.value)} />
+  const trigger = (
+    <input aria-label='x' ref={triggerRef} value={value} onChange={(e) => setValue(e.target.value)} />
+  )
   const content = value && <h1>{value}</h1>
 
   return (
     <Wrapper>
-      <Popout trigger={trigger} triggerRef={ref} content={content} />
+      <Popout trigger={trigger} triggerRef={triggerRef} content={content} />
     </Wrapper>
   )
 }
 
 export const IconPopout = () => {
-  const trigger = <InformationIcon color='primary' style={{ cursor: 'pointer' }} />
+  const triggerRef = useRef(null)
+  const trigger = (
+    <Box width='fit-content' ref={triggerRef}>
+      <InformationIcon color='primary' style={{ cursor: 'pointer' }} />
+    </Box>
+  )
   const content = <h1>This is some important information</h1>
 
   return (
     <Wrapper>
-      <Popout trigger={trigger} content={content} />
+      <Popout trigger={trigger} triggerRef={triggerRef} content={content} closeOnTriggerRefClick />
     </Wrapper>
   )
 }
 
 export const FormFieldExample = () => {
-  const ref = useRef(null)
+  const triggerRef = useRef(null)
   const [search, setSearch] = useState('')
   const [results, setResults] = useState<string[]>([])
 
@@ -117,7 +124,7 @@ export const FormFieldExample = () => {
         value={search}
         placeholder='Where to?'
         onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
-        ref={ref}
+        ref={triggerRef}
       />
     </FormField>
   )
@@ -141,7 +148,36 @@ export const FormFieldExample = () => {
 
   return (
     <Wrapper>
-      <Popout trigger={trigger} triggerRef={ref} content={content} />
+      <Popout trigger={trigger} triggerRef={triggerRef} content={content} />
+    </Wrapper>
+  )
+}
+
+export const TabFocusing = () => {
+  const arr = Array(3).fill('')
+
+  const [value, setValue] = useState('')
+  const triggerRefs = arr.map((_) => useRef(null))
+
+  const content = value && <h1>{value}</h1>
+  const Popouts = arr.map((_, i) => (
+    <Popout
+      key={i}
+      trigger={
+        <input ref={triggerRefs[i]} aria-label='x' value={value} onChange={(e) => setValue(e.target.value)} />
+      }
+      content={content}
+      triggerRef={triggerRefs[i]}
+    />
+  ))
+
+  return (
+    <Wrapper>
+      <Flex flexDirection='column' width='fit-content' style={{ gap: 16 }}>
+        <Button>This is just to trap focus</Button>
+        {Popouts}
+        <Button>This is just to trap focus</Button>
+      </Flex>
     </Wrapper>
   )
 }

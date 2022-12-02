@@ -8,6 +8,7 @@ export interface IPopoutProps {
   triggerRef?: RefObject<HTMLElement>
   onOpen?: () => void
   onClose?: () => void
+  closeOnTriggerRefClick?: boolean
 }
 
 const TriggerWrapper = styled(Box)`
@@ -42,7 +43,7 @@ const PopoutModal = styled(Box)`
 `
 
 export const Popout = (props: IPopoutProps) => {
-  const { trigger, content, onOpen, onClose, triggerRef } = props
+  const { trigger, content, onOpen, onClose, triggerRef, closeOnTriggerRefClick } = props
   const [isOpen, setIsOpen] = useState(false)
   const [height, setHeight] = useState(0)
   const [padding, setPadding] = useState(0)
@@ -75,6 +76,11 @@ export const Popout = (props: IPopoutProps) => {
   useLayoutEffect(() => {
     setHeight(baseInputRef.current.clientHeight)
   }, [trigger])
+
+  useEffect(() => {
+    if (isOpen && closeOnTriggerRefClick) triggerRef.current?.addEventListener('click', handleClose)
+    return () => triggerRef.current?.removeEventListener('click', handleClose)
+  }, [isOpen, closeOnTriggerRefClick, triggerRef, handleClose])
 
   useEffect(() => {
     const escapeListener = (e: KeyboardEvent) => {
