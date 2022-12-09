@@ -1,6 +1,6 @@
 import React, { RefObject, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
-import { Box } from '..'
+import { Box, ShadowOverlay } from '..'
 
 export interface IPopoutProps {
   trigger: JSX.Element
@@ -24,21 +24,9 @@ const OnClickHandler = styled(Box)`
   cursor: pointer;
 `
 
-const Shadow = styled(Box)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  transition: opacity 250ms ease-in-out;
-`
-
 const PopoutModal = styled(Box)`
   position: absolute;
   z-index: 2;
-  background-color: white;
   transition: padding 200ms ease-in-out, margin 200ms ease-in-out, border-radius 200ms ease-in-out;
 `
 
@@ -51,40 +39,42 @@ export const Popout = (props: IPopoutProps) => {
   const baseInputRef = useRef<HTMLDivElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)
 
-  const handleOpen = useCallback(() => {
-    setIsOpen(true)
-    setTimeout(() => {
+  const handleOpen = useCallback(() => setIsOpen(true), [])
+
+  const handleClose = useCallback(() => setIsOpen(false), [])
+
+  useEffect(() => {
+    if (isOpen) {
       setPadding(16)
       setOpacity(0.5)
       /* istanbul ignore next */
       triggerRef?.current?.focus()
       /* istanbul ignore next */
       onOpen?.()
-    })
-  }, [triggerRef, onOpen])
-
-  const handleClose = useCallback(() => {
-    setIsOpen(false)
-    setTimeout(() => {
+    } else {
       setPadding(0)
       setOpacity(0)
       /* istanbul ignore next */
       onClose?.()
-    })
-  }, [onClose])
+    }
+  }, [isOpen, triggerRef])
 
   useLayoutEffect(() => {
     setHeight(baseInputRef.current.clientHeight)
   }, [trigger])
 
   useEffect(() => {
-    if (isOpen && closeOnTriggerRefClick) triggerRef?.current?.addEventListener('click', handleClose)
+    if (isOpen && closeOnTriggerRefClick) {
+      triggerRef?.current?.addEventListener('click', handleClose)
+    }
     return () => triggerRef?.current?.removeEventListener('click', handleClose)
   }, [isOpen, closeOnTriggerRefClick, triggerRef, handleClose])
 
   useEffect(() => {
     const escapeListener = (e: KeyboardEvent) => {
-      if (isOpen && e.key === 'Escape') handleClose()
+      if (isOpen && e.key === 'Escape') {
+        handleClose()
+      }
     }
     const focusListener = (e: FocusEvent) => {
       if (
@@ -92,8 +82,9 @@ export const Popout = (props: IPopoutProps) => {
         e.target instanceof HTMLElement &&
         e.target !== baseInputRef.current &&
         !modalRef.current.contains(e.target)
-      )
+      ) {
         handleClose()
+      }
     }
     document.addEventListener('focusin', focusListener)
     document.addEventListener('keydown', escapeListener)
@@ -113,10 +104,15 @@ export const Popout = (props: IPopoutProps) => {
       </TriggerWrapper>
       {isOpen && (
         <>
-          <Shadow bg='background.darkest' style={{ opacity }} onClick={handleClose} />
+          <ShadowOverlay
+            zIndex={1}
+            onClick={handleClose}
+            style={{ opacity, transition: 'opacity 250ms ease-in-out' }}
+          />
           <PopoutModal
             ref={modalRef}
             boxShadowSize='overlay-lg'
+            bg='background.lightest'
             style={{
               padding: padding,
               borderRadius: padding,
