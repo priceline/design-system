@@ -38,25 +38,30 @@ export const Popout = (props: IPopoutProps) => {
   const [opacity, setOpacity] = useState(0)
   const baseInputRef = useRef<HTMLDivElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)
+  const isMounted = useRef(false)
 
   const handleOpen = useCallback(() => setIsOpen(true), [])
 
   const handleClose = useCallback(() => setIsOpen(false), [])
 
   useEffect(() => {
-    if (isOpen) {
-      setPadding(16)
-      setOpacity(0.5)
-      /* istanbul ignore next */
-      triggerRef?.current?.focus()
-      /* istanbul ignore next */
-      onOpen?.()
-    } else {
-      setPadding(0)
-      setOpacity(0)
-      /* istanbul ignore next */
-      onClose?.()
+    if (isMounted.current) {
+      if (isOpen) {
+        setPadding(16)
+        setOpacity(0.5)
+        /* istanbul ignore next */
+        triggerRef?.current?.focus()
+        /* istanbul ignore next */
+        onOpen?.()
+      } else {
+        setPadding(0)
+        setOpacity(0)
+        /* istanbul ignore next */
+        onClose?.()
+      }
+      return
     }
+    isMounted.current = true
   }, [isOpen, triggerRef])
 
   useLayoutEffect(() => {

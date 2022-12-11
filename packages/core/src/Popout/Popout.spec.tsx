@@ -50,4 +50,27 @@ describe('Popout', () => {
     await delay(100)
     expect(handler).toHaveBeenCalledTimes(2)
   })
+
+  it('Closes when the trigger ref is clicked', async () => {
+    const handler = jest.fn()
+    const triggerRef = React.createRef<HTMLElement>()
+    const _trigger = React.cloneElement(trigger, { ref: triggerRef })
+    const { getByTestId } = render(
+      <Popout
+        trigger={_trigger}
+        triggerRef={triggerRef}
+        content={content}
+        onOpen={handler}
+        onClose={handler}
+        closeOnTriggerRefClick
+      />
+    )
+    const triggerElement = getByTestId('trigger')
+    fireEvent.focusIn(triggerElement)
+    await delay(100)
+    expect(handler).toHaveBeenCalledTimes(1)
+    fireEvent.click(triggerRef.current)
+    await delay(100)
+    expect(handler).toHaveBeenCalledTimes(2)
+  })
 })
