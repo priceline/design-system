@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.2.0",
+      "tag": "pcln-design-system_v5.2.0",
+      "date": "Mon, 12 Dec 2022 20:16:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add Animate component",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "32ed960cde9a81d88f7d7ffdc98281543d0ba24d"
+          },
+          {
+            "comment": "Add Button variation (input)",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "4f9daaa16c3f20eb790684e230c5296b63e83c5d"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "add border for Swatch component",
+            "author": "Devin Efendy <90356592+devin-efendy-pcln@users.noreply.github.com>",
+            "commit": "2caecc0a35c43ea810d6f1e4cfa30d5245932696"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.1.1",
       "tag": "pcln-design-system_v5.1.1",
       "date": "Wed, 23 Nov 2022 17:23:13 GMT",
