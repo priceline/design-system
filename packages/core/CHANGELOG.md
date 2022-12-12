@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 23 Nov 2022 17:23:13 GMT and should not be manually modified.
+This log was last generated on Mon, 12 Dec 2022 21:00:17 GMT and should not be manually modified.
+
+## 5.2.0
+Mon, 12 Dec 2022 21:00:17 GMT
+
+### Minor changes
+
+- Add Button variation (input)
+
+### Patches
+
+- add border for Swatch component
 
 ## 5.1.1
 Wed, 23 Nov 2022 17:23:13 GMT
