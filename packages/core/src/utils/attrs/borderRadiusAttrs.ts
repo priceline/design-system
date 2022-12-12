@@ -68,7 +68,7 @@ export function borderRadiusAttrs({ borderRadius, rounded, theme }) {
       borderRadius: radii,
     }
   } else {
-    const effectiveRadius = theme.borderRadii[borderRadius]
+    const effectiveRadius = theme.borderRadii?.[borderRadius]
 
     return { borderRadius: effectiveRadius ? calculateRoundedProps(effectiveRadius, rounded) : borderRadius }
   }

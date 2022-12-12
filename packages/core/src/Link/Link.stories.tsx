@@ -40,7 +40,7 @@ ForwardRefs.story = {
 }
 
 export const LargeText = () => (
-  <Link color='text.light'>
+  <Link color='text.light' rel='noopener'>
     <Text textStyle='heading2'>I am a link with text styles</Text>
   </Link>
 )

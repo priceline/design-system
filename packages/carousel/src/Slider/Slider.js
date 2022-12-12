@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { Slider } from 'pure-react-carousel'
+import { themeGet } from '@styled-system/theme-get'
 
 const StyledSlider = styled(Slider)`
   overflow: scroll !important;
-  ${(props) => props.theme.mediaQueries.md} {
+  ${themeGet('mediaQueries.md')} {
     overflow: hidden !important;
   }
 `

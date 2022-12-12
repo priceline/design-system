@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-import { Box } from '..'
+import PropTypes from 'prop-types'
+import { Box, IBoxProps } from '..'
 
 const sizes = {
   sm: 640,
@@ -23,7 +23,12 @@ const propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
 }
 
-const Container: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) => {
+export interface IContainerProps extends IBoxProps {
+  maxWidth?: number
+  size?: 'sm' | 'md' | 'lg' | 'xl'
+}
+
+const Container: React.FC<IContainerProps> = styled(Box).attrs((props) => {
   if (props.size) {
     const px = paddings[props.size]
     const maxWidth = props.size ? `${sizes[props.size]}px` : props.maxWidth

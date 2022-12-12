@@ -69,6 +69,6 @@ export function typographyAttrs(props) {
       }
     )
   } else {
-    return theme.typography[textStyle]
+    return theme.typography?.[textStyle]
   }
 }

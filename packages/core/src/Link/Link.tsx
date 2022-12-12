@@ -53,6 +53,7 @@ export interface ILinkProps
   variation?: 'fill' | 'link' | 'outline'
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
+  rel?: string
 }
 
 const Link: React.FC<ILinkProps> = styled.a.attrs(({ color, disabled, href, target, onClick, ...props }) => ({

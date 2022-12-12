@@ -48,7 +48,7 @@ HtmlFor.story = {
 
 export const Nowrap = () => (
   <Flex>
-    <Label nowrap>
+    <Label nowrap fontWeight='bold'>
       <Radio checked />
       Round-trip
     </Label>
