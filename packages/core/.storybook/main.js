@@ -2,8 +2,11 @@ const { heftStoryGlobs, storykitAddons, features, framework, core } = require('@
 
 module.exports = {
   stories: heftStoryGlobs,
-  addons: storykitAddons,
-  features,
+  addons: [...storykitAddons, '@storybook/addon-interactions'],
+  features: {
+    ...features,
+    interactionsDebugger: true,
+  },
   framework,
   core,
 }
