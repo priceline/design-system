@@ -38,9 +38,9 @@ const Overlay = styled(DialogOverlay)`
   top: 0;
   ${(props) => `
     z-index: ${props.zindex || 100};
-    font-family: ${props.theme.font};
-    line-height: ${props.theme.lineHeights?.standard};
-    font-weight: ${props.theme.fontWeights?.medium};
+    font-family: ${themeGet('font')};
+    line-height: ${themeGet('lineHeights.standard')};
+    font-weight: ${themeGet('fontWeights.medium')};
   `}
   * {
     box-sizing: border-box;
@@ -55,7 +55,7 @@ const Dialog = styled(DialogContent)`
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: ${(props) => props.theme.shadows['overlay-xl']};
+  box-shadow: ${themeGet("shadows['overlay-xl']")};
   border-radius: ${themeGet('borderRadii.xl')};
   &:focus {
     outline: none;
@@ -93,7 +93,7 @@ const FloatCloseButton = styled(CloseButton)`
   }
 
   &:focus {
-    background-color: ${(props) => props.theme.colors.borderGray};
+    background-color: ${themeGet('colors.borderGray')};
     outline: none;
   }
 `
