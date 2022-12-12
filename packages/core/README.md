@@ -1,6 +1,5 @@
 # Priceline Design System
 
-![Node.js CI](https://github.com/priceline/design-system/workflows/Node.js%20CI/badge.svg)
 [![Coverage][coverage-badge]][coverage]
 [![npm version][npm version]][npm version]
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/priceline/design-system.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priceline/design-system/alerts/)
