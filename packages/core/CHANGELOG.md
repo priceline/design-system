@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 12 Dec 2022 20:16:28 GMT and should not be manually modified.
+This log was last generated on Tue, 13 Dec 2022 16:03:57 GMT and should not be manually modified.
+
+## 5.3.0
+Tue, 13 Dec 2022 16:03:57 GMT
+
+### Minor changes
+
+- add Popout component
 
 ## 5.2.0
 Mon, 12 Dec 2022 20:16:28 GMT

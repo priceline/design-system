@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.3.0",
+      "tag": "pcln-design-system_v5.3.0",
+      "date": "Tue, 13 Dec 2022 16:03:57 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add Popout component",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "5460be462112a176d8caad2a2ad9f0cf8350c395"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.2.0",
       "tag": "pcln-design-system_v5.2.0",
       "date": "Mon, 12 Dec 2022 20:16:28 GMT",
