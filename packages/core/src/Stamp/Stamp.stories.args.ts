@@ -10,4 +10,9 @@ export const argTypes = {
       type: 'select',
     },
   },
+  variation: {
+    type: { name: 'string' },
+    options: ['fill', 'outline', 'solid'],
+    control: { type: 'select' },
+  },
 }

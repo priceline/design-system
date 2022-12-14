@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Pin as PinIcon } from 'pcln-icons'
 import { Stamp, Text } from '..'
 import { argTypes } from './Stamp.stories.args'
-import { Pin as PinIcon } from 'pcln-icons'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
@@ -118,4 +118,14 @@ export const PassAnArrayOfSizes = () => (
 
 PassAnArrayOfSizes.story = {
   name: 'Pass an array of sizes',
+}
+
+export const Variations = () => {
+  return argTypes.variation.options.map((variation) => {
+    return (
+      <Stamp m={3} color='primary' key={variation} variation={variation as 'solid' | 'fill' | 'outline'}>
+        {variation}
+      </Stamp>
+    )
+  })
 }
