@@ -1,7 +1,7 @@
 import React from 'react'
 import { InferProps } from 'prop-types'
 import styled, { withTheme } from 'styled-components'
-import { space } from 'styled-system'
+import styledSystemPropTypes from '@styled-system/prop-types'
 import themeGet from '@styled-system/theme-get'
 
 import { Flex } from '../Flex'
@@ -71,7 +71,7 @@ const StyledFlex = styled(Flex)`
 const propTypes = {
   color: deprecatedColorValue(),
   bg: deprecatedColorValue(),
-  ...space.propTypes,
+  ...styledSystemPropTypes.space,
 }
 
 const Flag: React.FC<InferProps<typeof propTypes>> = ({
