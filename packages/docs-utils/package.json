@@ -83,7 +83,7 @@
     "typescript": "^4.5.4",
     "@rushstack/heft": "^0.44.2",
     "@types/jest": "27.4.0",
-    "@types/react": "^17",
+    "@types/react": "^17.0.55",
     "@types/styled-system": "^5.1.15",
     "framer-motion": "^6.5.1",
     "pcln-design-system": "^5.5.3"

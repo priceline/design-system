@@ -14,6 +14,9 @@ import {
   width,
   WidthProps,
 } from 'styled-system'
+
+import { Flex } from '../Flex'
+
 import {
   applySizes,
   applyVariations,
@@ -199,6 +202,8 @@ export interface IButtonProps
   borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
   boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
   autoFocus?: boolean
+  IconLeft?: React.Component
+  IconRight?: React.Component
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
   onMouseEnter?: (unknown) => unknown
@@ -234,7 +239,7 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button: React.FC<IButtonProps> = styled.button.attrs((props: IButtonProps) => {
+const StyledButton: React.FC<IButtonProps> = styled.button.attrs((props) => {
   const { width, title, 'aria-label': ariaLabel, borderRadius } = props
   return {
     borderRadius,
@@ -247,6 +252,24 @@ const Button: React.FC<IButtonProps> = styled.button.attrs((props: IButtonProps)
 
   ${(props) => compose(width, space, boxShadow)(props)}
 `
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const ButtonIcon = ({ Component, ...props }) => {
+  return Component ? <Component {...props} /> : null
+}
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const Button: React.FC<IButtonProps> = ({ IconLeft, IconRight, children, ...props }) => {
+  return (
+    <StyledButton {...props}>
+      <Flex alignItems='center'>
+        <ButtonIcon Component={IconLeft} mr={children ? 2 : 0} />
+        {children}
+        <ButtonIcon Component={IconRight} ml={children ? 2 : 0} />
+      </Flex>
+    </StyledButton>
+  )
+}
 
 Button.propTypes = buttonPropTypes
 

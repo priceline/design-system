@@ -24,7 +24,6 @@ module.exports = () => ({
     require('@babel/plugin-proposal-optional-chaining'),
     require('@babel/plugin-syntax-dynamic-import'),
     require('@babel/plugin-proposal-export-default-from'),
-    require('babel-plugin-lodash'),
     require('babel-plugin-date-fns'),
   ],
   env: {
