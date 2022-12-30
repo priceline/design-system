@@ -4,6 +4,8 @@ export const variations = ['fill', 'link', 'outline', 'plain', 'subtle', 'lightF
 export const sizes = ['small', 'medium', 'large', 'extraLarge']
 
 export const argTypes = {
+  IconLeft: { table: { disable: true } },
+  IconRight: { table: { disable: true } },
   variation: {
     name: 'variation',
     type: { name: 'string', required: false },

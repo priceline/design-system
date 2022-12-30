@@ -58,6 +58,14 @@ exports[`Stepper renders with children 1`] = `
   background-color: #0068ef;
   color: #fff;
   margin-right: 32px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2:hover {
@@ -82,7 +90,6 @@ exports[`Stepper renders with children 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;

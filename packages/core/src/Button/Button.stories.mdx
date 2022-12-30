@@ -1,5 +1,7 @@
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs'
 import styled from 'styled-components'
+import { CalendarCheck, Discount, Security } from 'pcln-icons'
+
 import { Button } from '.'
 import { ForwardRefs } from './ForwardRefsStory'
 import { argTypes } from './Button.stories.args'
@@ -9,6 +11,7 @@ export const StyledButton = styled(Button)`
 `
 
 export const Template = (args) => <Button {...args}>I AM BUTTON</Button>
+export const NoTextTemplate = (args) => <Button {...args}></Button>
 export const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</StyledButton>
 
 <Meta title='core/Button' component={Button} argTypes={argTypes} />
@@ -47,4 +50,26 @@ You can also use Styled Components to add custom styles to `Button`, e.g. `style
 
 <Canvas>
   <Story name='styled(Button) should preserve variation styling'>{StyledTemplate.bind({})}</Story>
+</Canvas>
+
+`Button` supports optional `IconLeft` and `IconRight` props to display optional iconography.
+
+These props expect components from `pcln-icons`.
+
+<Canvas>
+  <Story name='IconLeft' args={{ IconLeft: CalendarCheck }}>
+    {Template.bind({})}
+  </Story>
+  <Story name='IconRight' args={{ IconRight: Discount }}>
+    {Template.bind({})}
+  </Story>
+  <Story name='Icons on both sides' args={{ IconLeft: CalendarCheck, IconRight: Discount }}>
+    {Template.bind({})}
+  </Story>
+  <Story name='No text' args={{ IconLeft: CalendarCheck }}>
+    {NoTextTemplate.bind({})}
+  </Story>
+  <Story name='IconButton' args={{ IconLeft: CalendarCheck, variation: 'plain' }}>
+    {NoTextTemplate.bind({})}
+  </Story>
 </Canvas>
