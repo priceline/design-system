@@ -3,6 +3,7 @@ import { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
 import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
+import styledSystemPropTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
 import { borders, deprecatedColorValue, applySizes, borderRadiusAttrs } from '../utils'
 import { Flex } from '../Flex'
@@ -27,8 +28,8 @@ const ClickableIcon = styled(ChevronDown)`
 `
 
 const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...styledSystemPropTypes.space,
+  ...styledSystemPropTypes.fontSize,
   color: deprecatedColorValue(),
 }
 const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(borderRadiusAttrs)`

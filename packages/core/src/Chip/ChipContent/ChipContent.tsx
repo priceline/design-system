@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { space, fontSize } from 'styled-system'
+import styledSystemPropTypes from '@styled-system/prop-types'
 import { ArrowRight } from 'pcln-icons'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 import { getPaletteColor } from '../../utils'
@@ -15,8 +15,8 @@ const ImageWrapper = styled(Flex)`
 `
 
 const propTypes = {
-  ...space.propTypes,
-  ...fontSize.propTypes,
+  ...styledSystemPropTypes.space,
+  ...styledSystemPropTypes.fontSize,
   id: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   selected: PropTypes.bool,
