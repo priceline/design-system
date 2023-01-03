@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "adding new ticket icon",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
