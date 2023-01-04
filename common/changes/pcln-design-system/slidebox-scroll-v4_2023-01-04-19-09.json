@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update ScrollBox to only scroll within element vs entire page",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

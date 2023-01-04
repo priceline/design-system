@@ -4,11 +4,6 @@ import { render } from '../__test__/testing-library'
 import { SlideBox, Box } from '..'
 
 describe('SlideBox', () => {
-  const scrollIntoView = jest.fn()
-  beforeEach(() => {
-    global.HTMLElement.prototype.scrollIntoView = scrollIntoView
-  })
-
   it('renders with layout', () => {
     const { getByTestId } = render(
       <SlideBox layout='60-40' onSlideChange={() => {}} slideSpacing={2} stretchHeight>
@@ -19,7 +14,6 @@ describe('SlideBox', () => {
     )
     mockAllIsIntersecting(true)
     expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.1).toString()}%;`)
-    expect(scrollIntoView).not.toHaveBeenCalled()
   })
 
   it('renders with array visible slides', () => {
@@ -32,7 +26,6 @@ describe('SlideBox', () => {
     )
     mockAllIsIntersecting(true)
     expect(getByTestId('slide1')).toHaveStyle(`width: 50%;`)
-    expect(scrollIntoView).toHaveBeenCalled()
   })
 
   it('renders with int visible slides (small browser should default to 1.1 slides)', () => {
