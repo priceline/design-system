@@ -13,6 +13,7 @@ interface ISlideProps {
   isCurrentSlide: PropTypes.bool
   width: PropTypes.any
   numSlides: PropTypes.number
+  slideBoxRef: PropTypes.any
 }
 
 const Slide: React.FC<ISlideProps> = ({
@@ -24,13 +25,14 @@ const Slide: React.FC<ISlideProps> = ({
   isCurrentSlide,
   width,
   numSlides,
+  slideBoxRef,
 }) => {
   const ref = useRef()
 
   useEffect(() => {
-    if (isCurrentSlide === true) {
+    if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function') {
       /* istanbul ignore next */
-      ref?.current?.scrollIntoView({ block: 'end' })
+      slideBoxRef?.current?.scroll({ left: ref?.current?.offsetLeft })
     }
   }, [isCurrentSlide, ref])
 
@@ -60,6 +62,7 @@ Slide.propTypes = {
   isCurrentSlide: PropTypes.bool,
   width: PropTypes.any,
   numSlides: PropTypes.number,
+  slideBoxRef: PropTypes.any,
 }
 
 export { Slide }

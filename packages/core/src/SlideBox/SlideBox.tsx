@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import { getVisibleSlides, getCustomWidths } from './helpers'
 import { ScrollFlex } from './styles'
@@ -24,13 +24,14 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
   currentSlideOverride,
 }) => {
   const [currentSlide, setCurrentSlide] = useState()
+  const ref = useRef()
 
   useEffect(() => {
     setCurrentSlide(currentSlideOverride)
   }, [currentSlideOverride])
 
   return (
-    <ScrollFlex width='100%' py={2} data-testid='slide-box'>
+    <ScrollFlex width='100%' py={2} data-testid='slide-box' ref={ref}>
       {React.Children.toArray(children).map((item: PropTypes.node, index: number) => (
         <Slide
           key={item.props.key || `slide${index}`}
@@ -42,6 +43,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
           content={item}
           isCurrentSlide={currentSlide === index}
           numSlides={children.length}
+          slideBoxRef={ref}
         />
       ))}
     </ScrollFlex>
