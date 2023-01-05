@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.37.0",
+      "tag": "pcln-design-system_v4.37.0",
+      "date": "Thu, 05 Jan 2023 19:06:03 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Update ScrollBox to only scroll within element vs entire page",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "d6d5b01197d49fb4fdbb24dcba1c68805a2c8c83"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.36.0",
       "tag": "pcln-design-system_v4.36.0",
       "date": "Thu, 17 Nov 2022 19:55:39 GMT",
