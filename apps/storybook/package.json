@@ -11,9 +11,9 @@
     "start": "start-storybook --quiet -p 8000",
     "storybook": "run-s storybook:build chromatic",
     "storybook:baseline": "run-s storybook:build storybook:baseline:chromatic",
-    "storybook:build": "build-storybook --quiet -o ../docs/out/storybook",
+    "storybook:build": "build-storybook --webpack-stats-json --quiet -o ../docs/out/storybook",
     "storybook:baseline:chromatic": "chromatic --storybook-build-dir=../docs/out/storybook --auto-accept-changes --exit-once-uploaded",
-    "chromatic": "chromatic --storybook-build-dir=../docs/out/storybook --exit-once-uploaded"
+    "chromatic": "chromatic --storybook-build-dir=../docs/out/storybook --exit-once-uploaded --only-changed --untraced=**/package.json"
   },
   "author": "Priceline Design System Working Group",
   "license": "MIT",
