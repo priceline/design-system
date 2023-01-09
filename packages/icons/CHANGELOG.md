@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 27 Sep 2022 21:11:22 GMT and should not be manually modified.
+This log was last generated on Mon, 09 Jan 2023 18:30:38 GMT and should not be manually modified.
+
+## 4.10.1
+Mon, 09 Jan 2023 18:30:38 GMT
+
+### Patches
+
+- adding new ticket icon
 
 ## 4.10.0
 Tue, 27 Sep 2022 21:11:22 GMT
