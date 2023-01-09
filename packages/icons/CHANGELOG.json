@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.0.1",
+      "tag": "pcln-icons_v5.0.1",
+      "date": "Mon, 09 Jan 2023 18:34:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "adding new ticket icon",
+            "author": "Lynsey O'Donnell <113061724+pricelyns@users.noreply.github.com>",
+            "commit": "e4f74ede831bdd3e5b75c4f9acb5d305eae59c70"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.0",
       "tag": "pcln-icons_v5.0.0",
       "date": "Mon, 07 Nov 2022 16:17:23 GMT",
