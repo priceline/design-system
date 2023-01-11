@@ -8,11 +8,13 @@ import { space, fontSize, color } from 'styled-system'
 import { components as mdxDocsComponents } from 'mdx-docs'
 
 import {
+  Box,
   Button,
   GenericBanner,
   Heading,
   Link,
   Text,
+  getLinkStylesOn,
   getPaletteColor,
   getTextColorOn,
   createTheme,
@@ -125,6 +127,19 @@ export const ButtonLink = ({ children, ...props }) => (
   </Button>
 )
 
+const StyledLink = styled(Link)`
+  ${(props) => getLinkStylesOn(props.backgroundColor)(props)}
+`
+
+export const LinkDemo = ({ backgroundColor, children, ...props }) => (
+  <Box color={backgroundColor} p={2} my={1}>
+    {'Example text and '}
+    <StyledLink backgroundColor={backgroundColor} {...props}>
+      {children}
+    </StyledLink>
+  </Box>
+)
+
 const StaticDemo = styled.div`
   color: ${getPaletteColor('primary.base')};
 `
@@ -159,6 +174,7 @@ const components = {
   GenericBanner,
   RangeSlider,
   Slider,
+  LinkDemo,
   Modal,
   ModalDemo,
   Popover,

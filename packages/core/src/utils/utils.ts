@@ -148,7 +148,6 @@ export const getBreakpointSize = (array, length) => {
  * @param sizes - An object of size styles
  *
  */
-
 export const applySizes = (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) => ({
   size,
 }) => {
@@ -267,6 +266,39 @@ export const getValidPaletteColor = (color) => (props) => {
   }
 
   return null
+}
+
+/**
+ * Gets css styles that make links more accessible depending on a given background color
+ *
+ * @param name       - The name of the background color
+ * @param lightColor - Optional light color to use if it meets the contrast ratio, default is text.lightest
+ * @param darkColor  - Optional dark color to use if it meets the contrast ratio, default is text.base
+ */
+export const getLinkStylesOn = (name, lightColor = null, darkColor = null) => (props) => {
+  const { theme } = props
+
+  if (theme.palette) {
+    const backgroundColor = getPaletteColor(name)(props)
+    const text = theme.palette.text
+    const linkColor = theme.palette.primary.base
+
+    lightColor = getValidPaletteColor(lightColor)(props) || text.lightest
+    darkColor = getValidPaletteColor(darkColor)(props) || text.base
+
+    if (backgroundColor) {
+      const hasDefaultContrast = getContrastRatio(backgroundColor, linkColor) >= theme.contrastRatio
+      const hasLightContrast = getContrastRatio(backgroundColor, lightColor) >= theme.contrastRatio
+
+      if (!hasDefaultContrast) {
+        const contrastLinkColor = hasLightContrast ? lightColor : darkColor
+        // prettier-ignore
+        return css`color: ${contrastLinkColor}; font-weight: bold; text-decoration: underline; :hover { color: ${contrastLinkColor}; }`
+      }
+    }
+  }
+
+  return ''
 }
 
 /**
