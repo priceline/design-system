@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Link, Text } from '..'
+import styled from 'styled-components'
+import { Box, Button, Link, Text, getLinkStylesOn } from '..'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
@@ -43,3 +44,20 @@ export const LargeText = () => (
     <Text textStyle='heading2'>I am a link with text styles</Text>
   </Link>
 )
+
+const ResponsiveLink = styled(Link)`
+  ${(props) => getLinkStylesOn(props.backgroundColor, props.linkLightColor, props.linkDarkColor)(props)};
+`
+
+const ResponsiveLinkTemplate = (args) => (
+  <Box color={args.backgroundColor} p={2} width={300}>
+    <ResponsiveLink {...args}>Hello there.</ResponsiveLink>
+  </Box>
+)
+
+export const ResponsiveStyling = ResponsiveLinkTemplate.bind({})
+ResponsiveStyling.args = {
+  backgroundColor: 'primary.base',
+  linkLightColor: 'text.lightest',
+  linkDarkColor: 'text.base',
+}
