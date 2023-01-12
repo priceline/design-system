@@ -491,12 +491,12 @@ describe('utils', () => {
 
     test('expected result when passed size is not a valid index and no default', () => {
       const result = applySizes({})({ size: 'notreal' })
-      expect(result).toEqual([])
+      expect(JSON.stringify(result)).toEqual(JSON.stringify([]))
     })
 
     test('expected result when passed size is not a valid index and has default', () => {
       const result = applySizes(sizesCss)({ size: 'notreal' })
-      expect(result).toEqual(['medium css'])
+      expect(JSON.stringify(result)).toEqual(JSON.stringify(['medium css']))
     })
 
     test('returns the expected result when size is an array', () => {
