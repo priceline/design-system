@@ -1,7 +1,8 @@
 import React from 'react'
-import { Box, Text, Divider } from '..'
+import styled from 'styled-components'
+import { Box, Divider, Text } from '..'
 import { defaultArgs, argTypes } from './Text.stories.args'
-import { textStylesValues } from '../utils'
+import { getTextColorOn, textStylesValues } from '../utils'
 
 export default {
   title: 'Typography / Text',
@@ -108,6 +109,23 @@ export const Color = () => (
     <Text color='green'>Hello Green</Text>
   </div>
 )
+
+const ResponsiveText = styled(Text)`
+  color: ${(props) => getTextColorOn(props.backgroundColor, props.lightColor, props.darkColor)(props)};
+`
+
+const ResponsiveColorTemplate = (args) => (
+  <Box color={args.backgroundColor} p={2} width={300}>
+    <ResponsiveText {...args}>Hello there.</ResponsiveText>
+  </Box>
+)
+
+export const ResponsiveColor = ResponsiveColorTemplate.bind({})
+ResponsiveColor.args = {
+  backgroundColor: 'primary.base',
+  lightColor: 'text.lightest',
+  darkColor: 'text.base',
+}
 
 export const MinMaxHeight = () => (
   <div>
