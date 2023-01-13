@@ -56,6 +56,7 @@ export { ToggleBadge } from './ToggleBadge'
 export { Truncate } from './Truncate'
 export { Checkbox } from './Checkbox'
 export { Layout } from './Layout'
+export { SlideBox } from './SlideBox'
 
 export { theme } from './theme'
 export { ThemeProvider } from './ThemeProvider'
