@@ -103,10 +103,12 @@ const StyledInput = styled.input`
 `
 
 const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
-  const inputRef = useRef()
+  const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    inputRef.current.indeterminate = props.indeterminate
+    if (inputRef.current) {
+      inputRef.current.indeterminate = props.indeterminate
+    }
   }, [props.indeterminate])
 
   // eslint-disable-next-line react/prop-types
@@ -131,6 +133,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
             element.indeterminate = true
           }
           if (ref) {
+            // @ts-ignore
             ref.current = element
           }
           inputRef.current = element
