@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update getLinkStylesOn to make font weight bold optional",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
