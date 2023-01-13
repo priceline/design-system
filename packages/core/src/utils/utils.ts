@@ -274,26 +274,32 @@ export const getValidPaletteColor = (color) => (props) => {
  * @param name       - The name of the background color
  * @param lightColor - Optional light color to use if it meets the contrast ratio, default is text.lightest
  * @param darkColor  - Optional dark color to use if it meets the contrast ratio, default is text.base
+ * @param isBold     - Determines the font weight if an alternative color for the link is picked
  */
-export const getLinkStylesOn = (name, lightColor = null, darkColor = null) => (props) => {
+export const getLinkStylesOn = (
+  name,
+  lightColor = 'text.lightest',
+  darkColor = 'text.base',
+  isBold = false
+) => (props) => {
   const { theme } = props
 
   if (theme.palette) {
     const backgroundColor = getPaletteColor(name)(props)
-    const text = theme.palette.text
     const linkColor = theme.palette.primary.base
 
-    lightColor = getValidPaletteColor(lightColor)(props) || text.lightest
-    darkColor = getValidPaletteColor(darkColor)(props) || text.base
+    lightColor = getValidPaletteColor(lightColor)(props)
+    darkColor = getValidPaletteColor(darkColor)(props)
 
     if (backgroundColor) {
       const hasDefaultContrast = getContrastRatio(backgroundColor, linkColor) >= theme.contrastRatio
       const hasLightContrast = getContrastRatio(backgroundColor, lightColor) >= theme.contrastRatio
 
       if (!hasDefaultContrast) {
+        const fontWeight = isBold ? 'bold' : 'inherit'
         const contrastLinkColor = hasLightContrast ? lightColor : darkColor
         // prettier-ignore
-        return css`color: ${contrastLinkColor}; font-weight: bold; text-decoration: underline; :hover { color: ${contrastLinkColor}; }`
+        return css`color: ${contrastLinkColor}; font-weight: ${fontWeight}; text-decoration: underline; :hover { color: ${contrastLinkColor}; }`
       }
     }
   }

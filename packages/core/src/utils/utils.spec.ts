@@ -267,7 +267,9 @@ describe('utils', () => {
         expect.arrayContaining([
           'color: ',
           textLightest,
-          '; font-weight: bold; text-decoration: underline; :hover { color: ',
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
           textLightest,
           '; }',
         ])
@@ -276,7 +278,9 @@ describe('utils', () => {
         expect.arrayContaining([
           'color: ',
           textBase,
-          '; font-weight: bold; text-decoration: underline; :hover { color: ',
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
           textBase,
           '; }',
         ])
@@ -292,8 +296,24 @@ describe('utils', () => {
         expect.arrayContaining([
           'color: ',
           textBase,
-          '; font-weight: bold; text-decoration: underline; :hover { color: ',
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
           textBase,
+          '; }',
+        ])
+      )
+    })
+
+    test('returns correct font weight when isBold is true', () => {
+      expect(getLinkStylesOn('primary.base', 'text.lightest', 'text.base', true)(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          textLightest,
+          '; font-weight: ',
+          'bold',
+          '; text-decoration: underline; :hover { color: ',
+          textLightest,
           '; }',
         ])
       )
@@ -307,7 +327,9 @@ describe('utils', () => {
         expect.arrayContaining([
           'color: ',
           borderLight,
-          '; font-weight: bold; text-decoration: underline; :hover { color: ',
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
           borderLight,
           '; }',
         ])
@@ -316,7 +338,9 @@ describe('utils', () => {
         expect.arrayContaining([
           'color: ',
           primaryShade,
-          '; font-weight: bold; text-decoration: underline; :hover { color: ',
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
           primaryShade,
           '; }',
         ])

@@ -49,4 +49,4 @@ const LinkDemo = ({ backgroundColor, children, ...props }) => (
 <LinkDemo backgroundColor='highlight.tone'>dark link styling</LinkDemo>
 ```
 
-Pass a full palette color and shade to return the link styles that belong on that color. The above examples demonstrate the styles that are returned in order to make the link accessible on colors that do not meet the theme's contrast ratio (color, on-hover color, bold font weight, and text decoration underline).
+Pass a full palette color and shade to return the link styles that belong on that color. The above examples demonstrate the styles that are returned in order to make the link accessible on colors that do not meet the theme's contrast ratio (color, on-hover color, text decoration underline, and optional bold font weight).

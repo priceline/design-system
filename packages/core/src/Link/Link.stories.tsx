@@ -47,7 +47,13 @@ export const LargeText = () => (
 )
 
 const ReactiveLink = styled(Link)`
-  ${(props) => getLinkStylesOn(props.backgroundColor, props.linkLightColor, props.linkDarkColor)(props)};
+  ${(props) =>
+    getLinkStylesOn(
+      props.backgroundColor,
+      props.linkLightColor,
+      props.linkDarkColor,
+      props.isLinkBold
+    )(props)};
 `
 
 const ReactiveLinkTemplate = (args) => (
@@ -76,4 +82,5 @@ ReactiveStyling.args = {
   backgroundColor: 'primary.base',
   linkLightColor: 'text.lightest',
   linkDarkColor: 'text.base',
+  isLinkBold: false,
 }
