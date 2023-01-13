@@ -102,17 +102,18 @@ const StyledInput = styled.input`
   z-index: 0;
 `
 
-const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
+const Checkbox: React.FC<InferProps<typeof propTypes>> = (props) => {
   const inputRef = useRef<HTMLInputElement>(null)
+
+  const { disabled, size, indeterminate, unselectedColor } = props
 
   useEffect(() => {
     if (inputRef.current) {
-      inputRef.current.indeterminate = props.indeterminate
+      inputRef.current.indeterminate = indeterminate
     }
   }, [props.indeterminate])
 
   // eslint-disable-next-line react/prop-types
-  const { disabled, size, indeterminate, unselectedColor } = props
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
   const borderAdjustedSize = size + 4
   return (
@@ -132,10 +133,6 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
           if (indeterminate && element) {
             element.indeterminate = true
           }
-          if (ref) {
-            // @ts-ignore
-            ref.current = element
-          }
           inputRef.current = element
         }}
       />
@@ -144,7 +141,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
       <BoxEmpty size={borderAdjustedSize} data-name='empty' />
     </CheckBoxWrapper>
   )
-})
+}
 
 Checkbox.displayName = 'Checkbox'
 
