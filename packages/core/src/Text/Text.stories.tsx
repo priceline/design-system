@@ -110,18 +110,29 @@ export const Color = () => (
   </div>
 )
 
-const ResponsiveText = styled(Text)`
+const ReactiveText = styled(Text)`
   color: ${(props) => getTextColorOn(props.backgroundColor, props.lightColor, props.darkColor)(props)};
 `
 
-const ResponsiveColorTemplate = (args) => (
-  <Box color={args.backgroundColor} p={2} width={300}>
-    <ResponsiveText {...args}>Hello there.</ResponsiveText>
-  </Box>
+const ReactiveColorTemplate = (args) => (
+  <>
+    <Text mb={2}>
+      Uses the <code>getTextColorOn</code> utility
+    </Text>
+    <Box color={args.backgroundColor} p={2} width={300}>
+      <ReactiveText {...args}>{args.children}</ReactiveText>
+    </Box>
+    <Box color='primary.light' p={2} width={300}>
+      <ReactiveText {...args} backgroundColor='background.lightest'>
+        {args.children}
+      </ReactiveText>
+    </Box>
+  </>
 )
 
-export const ResponsiveColor = ResponsiveColorTemplate.bind({})
-ResponsiveColor.args = {
+export const ReactiveColor = ReactiveColorTemplate.bind({})
+ReactiveColor.args = {
+  children: 'Hello There',
   backgroundColor: 'primary.base',
   lightColor: 'text.lightest',
   darkColor: 'text.base',

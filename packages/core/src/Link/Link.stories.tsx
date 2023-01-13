@@ -46,18 +46,33 @@ export const LargeText = () => (
   </Link>
 )
 
-const ResponsiveLink = styled(Link)`
+const ReactiveLink = styled(Link)`
   ${(props) => getLinkStylesOn(props.backgroundColor, props.linkLightColor, props.linkDarkColor)(props)};
 `
 
-const ResponsiveLinkTemplate = (args) => (
-  <Box color={args.backgroundColor} p={2} width={300}>
-    <ResponsiveLink {...args}>Hello there.</ResponsiveLink>
-  </Box>
+const ReactiveLinkTemplate = (args) => (
+  <>
+    <Text mb={2}>
+      Uses the <code>getLinkStylesOn</code> utility
+    </Text>
+    <Box color={args.backgroundColor} p={2} width={300}>
+      <ReactiveLink {...args}>{args.children}</ReactiveLink>
+    </Box>
+    <Box color='background.lightest' p={2} width={300}>
+      <ReactiveLink {...args} backgroundColor='background.lightest'>
+        {args.children}
+      </ReactiveLink>
+    </Box>
+    <Box color='highlight.tone' p={2} width={300}>
+      <ReactiveLink {...args} backgroundColor='highlight.tone'>
+        {args.children}
+      </ReactiveLink>
+    </Box>
+  </>
 )
 
-export const ResponsiveStyling = ResponsiveLinkTemplate.bind({})
-ResponsiveStyling.args = {
+export const ReactiveStyling = ReactiveLinkTemplate.bind({})
+ReactiveStyling.args = {
   backgroundColor: 'primary.base',
   linkLightColor: 'text.lightest',
   linkDarkColor: 'text.base',
