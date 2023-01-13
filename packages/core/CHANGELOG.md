@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 05 Jan 2023 19:06:03 GMT and should not be manually modified.
+This log was last generated on Fri, 13 Jan 2023 21:16:46 GMT and should not be manually modified.
+
+## 4.38.0
+Fri, 13 Jan 2023 21:16:46 GMT
+
+### Minor changes
+
+- Add util for getting link styles on a color
 
 ## 4.37.0
 Thu, 05 Jan 2023 19:06:03 GMT

@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.0",
+      "tag": "pcln-design-system_v4.38.0",
+      "date": "Fri, 13 Jan 2023 21:16:46 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add util for getting link styles on a color",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "c41093db26ef6708de5e3c7355435f8cc11720a9"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.37.0",
       "tag": "pcln-design-system_v4.37.0",
       "date": "Thu, 05 Jan 2023 19:06:03 GMT",
