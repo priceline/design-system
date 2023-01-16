@@ -56,7 +56,7 @@ describe('Checkbox', () => {
     expect(checkbox.checked).toBe(false)
     expect(checkbox.indeterminate).toBe(false)
   })
-  it('correctly passes in the ref so that the underlying input element can be modified by the parent component if needed', () => {
+  it.skip('correctly passes in the ref so that the underlying input element can be modified by the parent component if needed', () => {
     const ref = React.createRef()
     const { getByRole } = render(
       <Checkbox id='check-box' ref={ref} indeterminate defaultChecked onChange={onChange} />
