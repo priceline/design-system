@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.1",
+      "tag": "pcln-design-system_v4.38.1",
+      "date": "Mon, 16 Jan 2023 17:46:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update getLinkStylesOn to make font weight bold optional",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "9457cfc54e795da44b59bcda7e698e9af689b839"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.0",
       "tag": "pcln-design-system_v4.38.0",
       "date": "Fri, 13 Jan 2023 21:16:46 GMT",

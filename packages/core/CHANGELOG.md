@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 13 Jan 2023 21:16:46 GMT and should not be manually modified.
+This log was last generated on Mon, 16 Jan 2023 17:46:41 GMT and should not be manually modified.
+
+## 4.38.1
+Mon, 16 Jan 2023 17:46:41 GMT
+
+### Patches
+
+- Update getLinkStylesOn to make font weight bold optional
 
 ## 4.38.0
 Fri, 13 Jan 2023 21:16:46 GMT
