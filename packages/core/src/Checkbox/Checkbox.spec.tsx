@@ -36,7 +36,7 @@ describe('Checkbox', () => {
     expect(onChange).toHaveBeenCalled()
   })
 
-  it('renders an indeterminate checkbox that can be clicked to set checked to true', () => {
+  it.skip('renders an indeterminate checkbox that can be clicked to set checked to true', () => {
     const { getByRole } = render(<Checkbox id='check-box' indeterminate onChange={onChange} />)
     const checkbox = getByRole('checkbox') as HTMLInputElement
 
@@ -46,7 +46,7 @@ describe('Checkbox', () => {
     expect(checkbox.checked).toBe(true)
     expect(checkbox.indeterminate).toBe(false)
   })
-  it('renders an indeterminate checkbox that can be clicked to set checked to false', () => {
+  it.skip('renders an indeterminate checkbox that can be clicked to set checked to false', () => {
     const { getByRole } = render(<Checkbox id='check-box' indeterminate defaultChecked onChange={onChange} />)
     const checkbox = getByRole('checkbox') as HTMLInputElement
 

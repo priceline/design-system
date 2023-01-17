@@ -102,7 +102,10 @@ const StyledInput = styled.input`
   z-index: 0;
 `
 
-const Checkbox: React.FC<InferProps<typeof propTypes>> = (props) => {
+const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef<
+  HTMLInputElement,
+  InferProps<typeof propTypes>
+>((props, ref) => {
   const inputRef = useRef<HTMLInputElement>(null)
 
   const { disabled, size, indeterminate, unselectedColor } = props
@@ -128,12 +131,15 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = (props) => {
         type='checkbox'
         {...props}
         role='checkbox'
+        defaultChecked={props.checked}
+        defaultIndeterminate={props.indeterminate}
         aria-checked={props.indeterminate ? 'mixed' : props.checked}
         ref={(element: HTMLInputElement) => {
-          if (indeterminate && element) {
-            element.indeterminate = true
-          }
           inputRef.current = element
+
+          if (ref) {
+            ref.current = element
+          }
         }}
       />
       <BoxChecked size={borderAdjustedSize} data-name='checked' />
@@ -141,7 +147,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = (props) => {
       <BoxEmpty size={borderAdjustedSize} data-name='empty' />
     </CheckBoxWrapper>
   )
-}
+})
 
 Checkbox.displayName = 'Checkbox'
 
