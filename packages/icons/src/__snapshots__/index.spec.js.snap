@@ -10632,6 +10632,53 @@ exports[`renders Sunrise 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders Sustainability 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20.911 3.37a.75.75 0 00-.6-.59c-4.85-.9-10.6.55-13.37 3.36-2.77 2.81-4.15 8.25-3.37 12.91L1.691 21a.75.75 0 000 1 .74.74 0 00.53.22.71.71 0 00.47-.22l2-1.9c.912.151 1.835.228 2.76.23 4.09 0 8.19-1.33 10.35-3.52 2.71-2.81 4.07-8.59 3.11-13.44zm-4.22 12.38c-2.11 2.14-6.59 3.36-10.7 3l10.29-10.28a.75.75 0 000-1.06.77.77 0 00-1.07 0l-10.3 10.3c-.33-3.91.91-8.31 3.1-10.52 2.19-2.21 7.29-3.63 11.52-3 .67 4.22-.54 9.22-2.84 11.56z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`renders Swap 1`] = `
 <DocumentFragment>
   .c1 {

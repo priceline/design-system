@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "add sustainable icon v4",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}
