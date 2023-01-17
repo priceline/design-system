@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.0.2",
+      "tag": "pcln-icons_v5.0.2",
+      "date": "Tue, 17 Jan 2023 17:04:02 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add sustainable icon",
+            "author": "ronhenderson <ron.henderson@priceline.com>",
+            "commit": "006e23e38e931d93f396ba80dde09af3fd4d6713"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.1",
       "tag": "pcln-icons_v5.0.1",
       "date": "Mon, 09 Jan 2023 18:34:49 GMT",
