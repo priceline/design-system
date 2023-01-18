@@ -2,8 +2,8 @@
   "changes": [
     {
       "packageName": "pcln-icons",
-      "comment": "",
-      "type": "none"
+      "comment": "add sustainable icon v4",
+      "type": "minor"
     }
   ],
   "packageName": "pcln-icons"
