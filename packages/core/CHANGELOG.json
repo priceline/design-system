@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.4.0",
+      "tag": "pcln-design-system_v5.4.0",
+      "date": "Tue, 17 Jan 2023 17:04:02 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Copy SlideBox component from v4 branch to main (v5)",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "bc20a80c811304bdbf2fd0016cce9af5d4d42fb2"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.0",
       "tag": "pcln-design-system_v5.3.0",
       "date": "Tue, 13 Dec 2022 16:03:57 GMT",

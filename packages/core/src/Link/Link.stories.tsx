@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Link, Text } from '..'
+import styled from 'styled-components'
+import { Box, Button, Link, Text, getLinkStylesOn } from '..'
 import { ILinkProps } from './Link'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
@@ -44,3 +45,42 @@ export const LargeText = () => (
     <Text textStyle='heading2'>I am a link with text styles</Text>
   </Link>
 )
+
+const ReactiveLink = styled(Link)`
+  ${(props) =>
+    getLinkStylesOn(
+      props.backgroundColor,
+      props.linkLightColor,
+      props.linkDarkColor,
+      props.isLinkBold
+    )(props)};
+`
+
+const ReactiveLinkTemplate = (args) => (
+  <>
+    <Text mb={2}>
+      Uses the <code>getLinkStylesOn</code> utility
+    </Text>
+    <Box color={args.backgroundColor} p={2} width={300}>
+      <ReactiveLink {...args}>{args.children}</ReactiveLink>
+    </Box>
+    <Box color='background.lightest' p={2} width={300}>
+      <ReactiveLink {...args} backgroundColor='background.lightest'>
+        {args.children}
+      </ReactiveLink>
+    </Box>
+    <Box color='highlight.tone' p={2} width={300}>
+      <ReactiveLink {...args} backgroundColor='highlight.tone'>
+        {args.children}
+      </ReactiveLink>
+    </Box>
+  </>
+)
+
+export const ReactiveStyling = ReactiveLinkTemplate.bind({})
+ReactiveStyling.args = {
+  backgroundColor: 'primary.base',
+  linkLightColor: 'text.lightest',
+  linkDarkColor: 'text.base',
+  isLinkBold: false,
+}

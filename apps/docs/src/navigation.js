@@ -81,6 +81,7 @@ export default [
       { name: 'color', path: '/utilities/color' },
       { name: 'getPaletteColor', path: '/utilities/getPaletteColor' },
       { name: 'getTextColorOn', path: '/utilities/getTextColorOn' },
+      { name: 'getLinkStylesOn', path: '/utilities/getLinkStylesOn' },
     ],
   },
   {

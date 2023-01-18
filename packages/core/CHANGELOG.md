@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 13 Dec 2022 16:03:57 GMT and should not be manually modified.
+This log was last generated on Tue, 17 Jan 2023 17:04:02 GMT and should not be manually modified.
+
+## 5.4.0
+Tue, 17 Jan 2023 17:04:02 GMT
+
+### Minor changes
+
+- Copy SlideBox component from v4 branch to main (v5)
 
 ## 5.3.0
 Tue, 13 Dec 2022 16:03:57 GMT

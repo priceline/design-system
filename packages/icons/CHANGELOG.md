@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 09 Jan 2023 18:34:49 GMT and should not be manually modified.
+This log was last generated on Tue, 17 Jan 2023 17:04:02 GMT and should not be manually modified.
+
+## 5.0.2
+Tue, 17 Jan 2023 17:04:02 GMT
+
+### Patches
+
+- add sustainable icon
 
 ## 5.0.1
 Mon, 09 Jan 2023 18:34:49 GMT

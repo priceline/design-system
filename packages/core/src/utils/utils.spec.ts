@@ -12,6 +12,7 @@ import {
   getContrastRatio,
   getLuminance,
   getPaletteColor,
+  getLinkStylesOn,
   getTextColorOn,
   getValidPaletteColor,
   hasPaletteColor,
@@ -253,6 +254,100 @@ describe('utils', () => {
     })
   })
 
+  describe('getLinkStylesOn', () => {
+    const props = { theme: createTheme() }
+    const textLightest = props.theme.palette.text.lightest
+    const textBase = props.theme.palette.text.base
+
+    test('returns correct text color', () => {
+      expect(getLinkStylesOn('test')({ theme: {} })).toEqual('')
+      expect(getLinkStylesOn('abcde')(props)).toEqual('')
+
+      expect(getLinkStylesOn('primary.base')(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          textLightest,
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
+          textLightest,
+          '; }',
+        ])
+      )
+      expect(getLinkStylesOn('highlight.tone')(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          textBase,
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
+          textBase,
+          '; }',
+        ])
+      )
+    })
+
+    test('returns correct text color with custom contrast ratio', () => {
+      expect(
+        getLinkStylesOn('primary.dark')({
+          theme: { ...props.theme, contrastRatio: 9.2 },
+        })
+      ).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          textBase,
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
+          textBase,
+          '; }',
+        ])
+      )
+    })
+
+    test('returns correct font weight when isBold is true', () => {
+      expect(getLinkStylesOn('primary.base', 'text.lightest', 'text.base', true)(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          textLightest,
+          '; font-weight: ',
+          'bold',
+          '; text-decoration: underline; :hover { color: ',
+          textLightest,
+          '; }',
+        ])
+      )
+    })
+
+    test('can override the link light and dark color defaults', () => {
+      const borderLight = props.theme.palette.border.light
+      const primaryShade = props.theme.palette.primary.shade
+
+      expect(getLinkStylesOn('primary.base', 'border.light', 'primary.shade')(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          borderLight,
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
+          borderLight,
+          '; }',
+        ])
+      )
+      expect(getLinkStylesOn('highlight.tone', 'border.light', 'primary.shade')(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          primaryShade,
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
+          primaryShade,
+          '; }',
+        ])
+      )
+    })
+  })
+
   describe('getTextColorOn', () => {
     const props = { theme: createTheme() }
 
@@ -354,6 +449,15 @@ describe('utils', () => {
       expect(color({ ...props, color: 'text' })).toEqual(
         expect.arrayContaining(['color: ', props.theme.colors.text, ';'])
       )
+      expect(color({ ...props, color: 'text', bg: 'blue' })).toEqual(
+        expect.arrayContaining([
+          'background-color: ',
+          props.theme.colors.blue,
+          ';color: ',
+          props.theme.colors.text,
+          ';',
+        ])
+      )
       expect(color({ ...props, color: 'blue' })).toEqual(
         expect.arrayContaining(['color: ', props.theme.colors.blue, ';'])
       )
@@ -409,6 +513,16 @@ describe('utils', () => {
       medium: 'medium css',
     }
 
+    test('expected result when passed size is not a valid index and no default', () => {
+      const result = applySizes({})({ size: 'notreal' })
+      expect(JSON.stringify(result)).toEqual(JSON.stringify([]))
+    })
+
+    test('expected result when passed size is not a valid index and has default', () => {
+      const result = applySizes(sizesCss)({ size: 'notreal' })
+      expect(JSON.stringify(result)).toEqual(JSON.stringify(['medium css']))
+    })
+
     test('returns the expected result when size is an array', () => {
       const sizeArray1 = ['small', 'medium', null, null, null, null]
       const sizeArray2 = ['medium', null, null, null, 'small', null]
@@ -418,6 +532,7 @@ describe('utils', () => {
       const result2 = applySizes(sizesCss)({ size: sizeArray2 })
       expect(result2[0]).toBe('medium css')
     })
+
     test('expected result when size is a string', () => {
       const result1 = applySizes(sizesCss)({ size: 'medium' })
       const result2 = applySizes(sizesCss)({ size: 'small' })

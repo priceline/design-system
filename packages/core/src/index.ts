@@ -68,6 +68,7 @@ export {
   deprecatedPropType,
   deprecatedColorValue,
   getContrastRatio,
+  getLinkStylesOn,
   getPaletteColor,
   getTextColorOn,
   hasPaletteColor,
