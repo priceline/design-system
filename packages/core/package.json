@@ -92,6 +92,7 @@
     "@rushstack/eslint-patch": "^1.1.0",
     "@rushstack/eslint-config": "^2.5.1",
     "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-docs": "6.5.13",
     "@storybook/jest": "^0.0.10",
     "@storybook/react": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",

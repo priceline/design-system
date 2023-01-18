@@ -3,27 +3,33 @@ import styled from 'styled-components'
 import { Button } from '.'
 import { ForwardRefs } from './ForwardRefsStory'
 import { argTypes } from './Button.stories.args'
-
-export const StyledButton = styled(Button)`
-  padding: 100px;
-`
+import { Hero, TableOfContents, TextSection } from '../storybook/components'
+import heroImage from './Button.Hero.png'
+import { Text, ThemeProvider } from '..'
 
 export const Template = (args) => <Button {...args}>I AM BUTTON</Button>
-export const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</StyledButton>
+
+export const name = 'Button'
+export const desc =
+  'Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.'
+export const links = {
+  overview: 'Overview',
+  props: 'Props',
+  usage: 'Usage',
+}
 
 <Meta title='core/Button' component={Button} argTypes={argTypes} />
 
-# Button
+<Hero name={name} desc={desc} img={heroImage} />
+<TableOfContents links={links} />
 
-`Button` makes common actions immediately visible and easy to perform with one click or tap.
+<hr />
+
+<ArgsTable story={name} />
 
 <Canvas>
   <Story name='Button'>{Template.bind({})}</Story>
 </Canvas>
-
-<ArgsTable story='Button' />
-
-Buttons can have a responsive size based on the viewport width.
 
 <Canvas>
   <Story
@@ -35,16 +41,4 @@ Buttons can have a responsive size based on the viewport width.
   >
     {Template.bind({})}
   </Story>
-</Canvas>
-
-If you need to access the `<button>` element directly, `Button` also has a `ref` prop that you can use to forward a ref to the underlying button.
-
-<Canvas>
-  <Story name='Forward refs'>{<ForwardRefs />}</Story>
-</Canvas>
-
-You can also use Styled Components to add custom styles to `Button`, e.g. `styled(Button)`.
-
-<Canvas>
-  <Story name='styled(Button) should preserve variation styling'>{StyledTemplate.bind({})}</Story>
 </Canvas>
