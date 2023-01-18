@@ -1,6 +1,13 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Mon, 16 Jan 2023 17:46:41 GMT and should not be manually modified.
+This log was last generated on Wed, 18 Jan 2023 19:49:44 GMT and should not be manually modified.
+
+## 4.1.47
+Wed, 18 Jan 2023 19:49:44 GMT
+
+### Patches
+
+- add sustainable icon v4
 
 ## 4.1.46
 Mon, 16 Jan 2023 17:46:41 GMT

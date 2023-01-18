@@ -2,6 +2,20 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "4.1.47",
+      "tag": "pcln-autocomplete_v4.1.47",
+      "date": "Wed, 18 Jan 2023 19:49:44 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add sustainable icon v4",
+            "author": "ronhenderson <ron.henderson@priceline.com>",
+            "commit": "55d09a9f4fd7b9d1be50df8b810aa95dad7406f8"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.1.46",
       "tag": "pcln-autocomplete_v4.1.46",
       "date": "Mon, 16 Jan 2023 17:46:41 GMT",
