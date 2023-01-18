@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "4.11.0",
+      "tag": "pcln-icons_v4.11.0",
+      "date": "Wed, 18 Jan 2023 21:02:46 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add sustainable icon v4",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "7e631b2f43f9c77a12009a8025fc1dc624678044"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.10.1",
       "tag": "pcln-icons_v4.10.1",
       "date": "Mon, 09 Jan 2023 18:30:38 GMT",
