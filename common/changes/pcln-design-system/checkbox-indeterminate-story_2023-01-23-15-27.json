@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix bug in Checkbox when using indeterminate prop and react-hook-form",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
