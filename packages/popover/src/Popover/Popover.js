@@ -40,7 +40,13 @@ function Popover({
             'aria-label': ariaLabel,
             type: 'button',
             ref: reference,
-            onClick: !openOnHover && handleToggle,
+            onClick: () => {
+              if (overrideOnClick) {
+                onClick()
+                return
+              }
+              !openOnHover && handleToggle
+            },
           }),
         })}
       {(isPopoverOpen || isOpen) && (
