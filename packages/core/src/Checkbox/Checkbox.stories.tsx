@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
-import { useForm } from 'react-hook-form'
 
 import { Checkbox, Text, Box, Heading, Button, Label } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
@@ -228,41 +227,6 @@ export const Color = () => (
 
 Color.story = {
   name: 'color',
-}
-
-export const Indeterminate = () => {
-  const { register, watch } = useForm()
-  const htmlCheckboxRef = useRef()
-  const [indeterminate, setIndeterminate] = useState()
-  const watchPartialStay = watch('partialStay', false)
-
-  useEffect(() => {
-    htmlCheckboxRef.current.indeterminate = true
-  }, [indeterminate])
-
-  return (
-    <div>
-      <Wrapper>
-        <Label>
-          <Checkbox
-            id='packages-partial-stay'
-            // name="partialStay"
-            // unselectedColor="text.light"
-            // color="text.light"
-            {...register('partialStay')}
-            indeterminate={indeterminate}
-          />
-          DS Checkbox
-        </Label>
-        <div>{watchPartialStay && <Checkbox />}</div>
-
-        <Label>
-          <input type='checkbox' ref={htmlCheckboxRef} />
-          HTML Checkbox
-        </Label>
-      </Wrapper>
-    </div>
-  )
 }
 
 export function ForwardRefs() {
