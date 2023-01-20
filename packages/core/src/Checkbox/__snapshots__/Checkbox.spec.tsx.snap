@@ -53,20 +53,20 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   display: none;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='indeterminate'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='indeterminate'] {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c1 > input:indeterminate:hover ~ svg[data-name='indeterminate'] {
+.c1 > input[data-indeterminate='true']:hover ~ svg[data-name='indeterminate'] {
   color: #c0cad5;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='empty'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='empty'] {
   display: none;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='checked'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='checked'] {
   display: none;
 }
 
@@ -74,30 +74,30 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   color: #c0cad5;
 }
 
-.c1 > input ~ svg[data-name='empty'] {
+.c1 > input:not([data-indeterminate='true']) ~ svg[data-name='empty'] {
   color: #c0cad5;
 }
 
-.c1 > input:focus ~ svg {
+.c1 > input:not([data-indeterminate='true']):focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
 }
 
-.c1 > input:checked ~ svg[data-name='checked'] {
+.c1 > input:checked:not([data-indeterminate='true']) ~ svg[data-name='checked'] {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c1 > input:checked ~ svg[data-name='empty'] {
+.c1 > input:checked:not([data-indeterminate='true']) ~ svg[data-name='empty'] {
   display: none;
 }
 
-.c1 > input:checked:focus ~ svg {
+.c1 > input:checked:not([data-indeterminate='true']):focus ~ svg {
   border: 1px solid #0068ef;
   background-color: #e8f2ff;
 }
 
-.c1 > input:checked:hover ~ svg[data-name='checked'] {
+.c1 > input:checked:not([data-indeterminate='true']):hover ~ svg[data-name='checked'] {
   color: #c0cad5;
 }
 
@@ -132,6 +132,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
         checked=""
         class="c2"
         color="primary"
+        data-indeterminate="false"
         disabled=""
         id="check-box"
         role="checkbox"
@@ -247,20 +248,20 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   display: none;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='indeterminate'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='indeterminate'] {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c1 > input:indeterminate:hover ~ svg[data-name='indeterminate'] {
+.c1 > input[data-indeterminate='true']:hover ~ svg[data-name='indeterminate'] {
   color: #c0cad5;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='empty'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='empty'] {
   display: none;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='checked'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='checked'] {
   display: none;
 }
 
@@ -268,30 +269,30 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   color: #c0cad5;
 }
 
-.c1 > input ~ svg[data-name='empty'] {
+.c1 > input:not([data-indeterminate='true']) ~ svg[data-name='empty'] {
   color: #c0cad5;
 }
 
-.c1 > input:focus ~ svg {
+.c1 > input:not([data-indeterminate='true']):focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
 }
 
-.c1 > input:checked ~ svg[data-name='checked'] {
+.c1 > input:checked:not([data-indeterminate='true']) ~ svg[data-name='checked'] {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c1 > input:checked ~ svg[data-name='empty'] {
+.c1 > input:checked:not([data-indeterminate='true']) ~ svg[data-name='empty'] {
   display: none;
 }
 
-.c1 > input:checked:focus ~ svg {
+.c1 > input:checked:not([data-indeterminate='true']):focus ~ svg {
   border: 1px solid #0068ef;
   background-color: #e8f2ff;
 }
 
-.c1 > input:checked:hover ~ svg[data-name='checked'] {
+.c1 > input:checked:not([data-indeterminate='true']):hover ~ svg[data-name='checked'] {
   color: #c0cad5;
 }
 
@@ -325,6 +326,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
       <input
         class="c2"
         color="primary"
+        data-indeterminate="false"
         disabled=""
         id="check-box"
         role="checkbox"
@@ -440,20 +442,20 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   display: none;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='indeterminate'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='indeterminate'] {
   display: inline-block;
   color: #0068ef;
 }
 
-.c1 > input:indeterminate:hover ~ svg[data-name='indeterminate'] {
+.c1 > input[data-indeterminate='true']:hover ~ svg[data-name='indeterminate'] {
   color: #049;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='empty'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='empty'] {
   display: none;
 }
 
-.c1 > input:indeterminate ~ svg[data-name='checked'] {
+.c1 > input[data-indeterminate='true'] ~ svg[data-name='checked'] {
   display: none;
 }
 
@@ -461,30 +463,30 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   color: #0068ef;
 }
 
-.c1 > input ~ svg[data-name='empty'] {
+.c1 > input:not([data-indeterminate='true']) ~ svg[data-name='empty'] {
   color: #4f6f8f;
 }
 
-.c1 > input:focus ~ svg {
+.c1 > input:not([data-indeterminate='true']):focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
 }
 
-.c1 > input:checked ~ svg[data-name='checked'] {
+.c1 > input:checked:not([data-indeterminate='true']) ~ svg[data-name='checked'] {
   display: inline-block;
   color: #0068ef;
 }
 
-.c1 > input:checked ~ svg[data-name='empty'] {
+.c1 > input:checked:not([data-indeterminate='true']) ~ svg[data-name='empty'] {
   display: none;
 }
 
-.c1 > input:checked:focus ~ svg {
+.c1 > input:checked:not([data-indeterminate='true']):focus ~ svg {
   border: 1px solid #0068ef;
   background-color: #e8f2ff;
 }
 
-.c1 > input:checked:hover ~ svg[data-name='checked'] {
+.c1 > input:checked:not([data-indeterminate='true']):hover ~ svg[data-name='checked'] {
   color: #049;
 }
 
@@ -517,6 +519,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
       <input
         class="c2"
         color="primary"
+        data-indeterminate="false"
         id="check-box"
         role="checkbox"
         size="20"

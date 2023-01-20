@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
+import { useForm } from 'react-hook-form'
 
 import { Checkbox, Text, Box, Heading, Button, Label } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
@@ -48,7 +49,8 @@ const FilterExample: React.FC = () => {
 
   const handleFilterSelection = (event: React.SyntheticEvent<HTMLInputElement>) => {
     const target = event.target
-    if (target.id === 'all') {
+    // @ts-ignore
+    if (target?.id === 'all') {
       if (filterState.all || filterState.indeterminate) {
         setFilterState({
           all: false,
@@ -67,6 +69,7 @@ const FilterExample: React.FC = () => {
         })
       }
     } else {
+      // @ts-ignore
       const newFilterState = { ...filterState, [target.id]: !filterState[target.id] }
       const indeterminate = !(
         newFilterState.small === newFilterState.medium && newFilterState.small === newFilterState.large
@@ -74,6 +77,7 @@ const FilterExample: React.FC = () => {
       const all = newFilterState.small && newFilterState.medium && newFilterState.large
       setFilterState({
         ...filterState,
+        // @ts-ignore
         [target.id]: !filterState[target.id],
         indeterminate,
         all,
@@ -224,6 +228,41 @@ export const Color = () => (
 
 Color.story = {
   name: 'color',
+}
+
+export const Indeterminate = () => {
+  const { register, watch } = useForm()
+  const htmlCheckboxRef = useRef()
+  const [indeterminate, setIndeterminate] = useState()
+  const watchPartialStay = watch('partialStay', false)
+
+  useEffect(() => {
+    htmlCheckboxRef.current.indeterminate = true
+  }, [indeterminate])
+
+  return (
+    <div>
+      <Wrapper>
+        <Label>
+          <Checkbox
+            id='packages-partial-stay'
+            // name="partialStay"
+            // unselectedColor="text.light"
+            // color="text.light"
+            {...register('partialStay')}
+            indeterminate={indeterminate}
+          />
+          DS Checkbox
+        </Label>
+        <div>{watchPartialStay && <Checkbox />}</div>
+
+        <Label>
+          <input type='checkbox' ref={htmlCheckboxRef} />
+          HTML Checkbox
+        </Label>
+      </Wrapper>
+    </div>
+  )
 }
 
 export function ForwardRefs() {
