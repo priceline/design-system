@@ -9,7 +9,7 @@ export type TableOfContentsProps = {
 }
 
 export const TableOfContents = ({ links }: TableOfContentsProps) => (
-  <Box py={5}>
+  <Box my={5}>
     <ul>
       {links.map((link) => {
         const id = kebabCase(link)

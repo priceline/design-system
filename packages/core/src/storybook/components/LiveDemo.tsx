@@ -1,15 +1,14 @@
-import kebabCase from 'lodash/kebabCase'
+import { StoryObj } from '@storybook/react'
 import { Check, ChevronDown, ChevronUp, Copy } from 'pcln-icons'
 import { PrismTheme } from 'prism-react-renderer'
 import React, { useEffect, useRef, useState } from 'react'
+import reactElementToJSXString from 'react-element-to-jsx-string'
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live'
+import { copy } from '..'
 import * as Pcln from '../..'
-import { Animate } from '../..'
 
 export type LiveDemoProps = {
-  code: string
-  storyName?: string
-  storyTitle?: string
+  code?: string | StoryObj
 }
 
 const scope = {
@@ -125,13 +124,10 @@ const theme: PrismTheme = {
   ],
 }
 
-const copy = async (value: string) => navigator.clipboard.writeText(value)
-
-const getStoryId = (storyName?: string, storyTitle?: string) =>
-  `story--${kebabCase(storyTitle)}--${kebabCase(storyName)}`
-
-export const LiveDemo = ({ code, storyName, storyTitle }: LiveDemoProps) => {
-  const [editorCode, setEditorCode] = useState(code.trim())
+export const LiveDemo = ({ code }: LiveDemoProps) => {
+  const [editorCode, setEditorCode] = useState(
+    (typeof code === 'string' ? code : reactElementToJSXString(code.render(code.args, null))).trim()
+  )
   const [copyTimeout, setCopyTimeout] = useState(null)
   const [copied, setCopied] = useState(false)
   const [showCode, setShowCode] = useState(false)
@@ -146,12 +142,7 @@ export const LiveDemo = ({ code, storyName, storyTitle }: LiveDemoProps) => {
   }
 
   return (
-    <Pcln.Box
-      id={getStoryId(storyName, storyTitle)}
-      my={3}
-      borderRadius='xl'
-      style={{ border: '1px solid #0002' }}
-    >
+    <Pcln.Box my={3} borderRadius='xl' style={{ border: '1px solid #0002' }}>
       <LiveProvider code={editorCode} scope={scope} theme={theme}>
         <Pcln.Relative>
           <Pcln.Relative p={3}>
@@ -165,7 +156,7 @@ export const LiveDemo = ({ code, storyName, storyTitle }: LiveDemoProps) => {
           </Pcln.Absolute>
         </Pcln.Relative>
         {showCode && (
-          <Animate variant='expandDown'>
+          <Pcln.Animate variant='expandDown'>
             <Pcln.Relative bg='background.darkest' p={3} borderRadius='xl'>
               <LiveEditor onChange={(newCode) => setEditorCode(newCode.trim())} />
               <Pcln.Absolute right={3} bottom={3}>
@@ -173,7 +164,7 @@ export const LiveDemo = ({ code, storyName, storyTitle }: LiveDemoProps) => {
                 {copied && <Check color='secondary' />}
               </Pcln.Absolute>
             </Pcln.Relative>
-          </Animate>
+          </Pcln.Animate>
         )}
         <LiveError />
       </LiveProvider>

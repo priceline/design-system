@@ -8,7 +8,7 @@ export type SectionProps = {
 }
 
 export const Section = ({ heading, children }: SectionProps) => (
-  <Box py={5}>
+  <Box my={5}>
     <Text id={kebabCase(heading)} textStyle='heading2' pb={4}>
       {heading}
     </Text>
