@@ -2,9 +2,8 @@ import { StoryObj } from '@storybook/react'
 import { Check, ChevronDown, ChevronUp, Copy } from 'pcln-icons'
 import { PrismTheme } from 'prism-react-renderer'
 import React, { useEffect, useRef, useState } from 'react'
-import reactElementToJSXString from 'react-element-to-jsx-string'
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live'
-import { copy } from '..'
+import { copy, formatCode, getStoryCode } from '..'
 import * as Pcln from '../..'
 
 export type LiveDemoProps = {
@@ -125,9 +124,8 @@ const theme: PrismTheme = {
 }
 
 export const LiveDemo = ({ code }: LiveDemoProps) => {
-  const [editorCode, setEditorCode] = useState(
-    (typeof code === 'string' ? code : reactElementToJSXString(code.render(code.args, null))).trim()
-  )
+  const defaultCode = typeof code === 'string' ? formatCode(code) : getStoryCode(code)
+  const [editorCode, setEditorCode] = useState(defaultCode)
   const [copyTimeout, setCopyTimeout] = useState(null)
   const [copied, setCopied] = useState(false)
   const [showCode, setShowCode] = useState(false)

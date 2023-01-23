@@ -330,6 +330,7 @@ importers:
       lodash: ^4.17.21
       npm-run-all: ^4.1.5
       pcln-icons: workspace:*
+      prettier: ^2.8.1
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -385,6 +386,7 @@ importers:
       jest-styled-components: 7.1.1_styled-components@5.3.5
       lodash: 4.17.21
       npm-run-all: 4.1.5
+      prettier: 2.8.3
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-element-to-jsx-string: 15.0.0_sfoxds7t5ydpegc3knd667wn6m
@@ -13575,18 +13577,6 @@ packages:
         optional: true
     dev: false
 
-  /follow-redirects/1.15.1_debug@4.3.4:
-    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dependencies:
-      debug: 4.3.4_supports-color@6.1.0
-    dev: false
-
   /for-in/1.0.2:
     resolution: {integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==}
     engines: {node: '>=0.10.0'}
@@ -14690,7 +14680,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1_debug@4.3.4
+      follow-redirects: 1.15.1
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -19290,6 +19280,12 @@ packages:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /pretty-error/2.1.2:
     resolution: {integrity: sha512-EY5oDzmsX5wvuynAByrmY0P0hcp+QpnAKbJng2A2MPjVKXCxrDSUkzghVJ4ZGPIv+JC4gX8fPUWscC0RtjsWGw==}
