@@ -3,11 +3,11 @@ import { Box, Flex, Image, Text } from '../..'
 
 export type HeroProps = {
   name: string
-  desc: string
+  children: string
   img: string
 }
 
-export const Hero = ({ name, desc, img }: HeroProps) => (
+export const Hero = ({ name, children, img }: HeroProps) => (
   <Flex
     alignItems='center'
     flexDirection='row'
@@ -20,7 +20,7 @@ export const Hero = ({ name, desc, img }: HeroProps) => (
       <Text textStyle='title3' color='text.heading'>
         {name}
       </Text>
-      <Text>{desc}</Text>
+      <Text>{children}</Text>
     </Flex>
     <Box bg='primary.tint' borderRadius='xl' style={{ flex: '1 100%' }}>
       <Image src={img} />

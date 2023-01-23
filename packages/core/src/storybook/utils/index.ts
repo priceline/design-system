@@ -14,6 +14,7 @@ export const formatCode = (code: string) =>
     parser: 'babel',
     plugins: [parserBabel],
     jsxSingleQuote: true,
+    printWidth: 120,
   })
 
 export const getStoryCode = (story: StoryObj) =>
