@@ -8,7 +8,7 @@ export type StoryHeadingProps = {
 }
 
 export const StoryHeading = ({ storyName, storyTitle }: StoryHeadingProps) => (
-  <Text id={getStoryId(storyName, storyTitle)} textStyle='subheading3' py={4}>
+  <Text id={getStoryId(storyName, storyTitle)} textStyle='subheading3' my={4}>
     {storyName}
   </Text>
 )

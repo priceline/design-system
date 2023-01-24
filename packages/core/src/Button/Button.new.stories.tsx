@@ -1,7 +1,7 @@
-import { ArgsTable } from '@storybook/addon-docs'
+import { ArgsTable, Canvas } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import { Box, Button, ButtonChip, CloseButton, Link, Text, ThemeProvider } from '..'
+import { Box, Button, ButtonChip, CloseButton, Flex, Link, Text, ThemeProvider } from '..'
 import {
   Hero,
   LiveDemo,
@@ -11,7 +11,9 @@ import {
   StoryHeading,
   TableOfContents,
 } from '../storybook/components'
+import { DoDont } from '../storybook/components/DoDont'
 import { Note } from '../storybook/components/Note'
+import { argTypes } from './Button.stories.args'
 
 import heroImage from './Button.Hero.png'
 
@@ -141,6 +143,7 @@ export const BorderRadius: ButtonStory = {
 const meta: Meta<typeof Button> = {
   title: 'components/Button',
   component: Button,
+  argTypes,
   parameters: {
     docs: {
       page: () => (
@@ -160,6 +163,7 @@ const meta: Meta<typeof Button> = {
               'Partner Theming',
               'Usage',
               'Related Components',
+              `Do's and Don'ts`,
             ]}
           />
 
@@ -172,6 +176,8 @@ const meta: Meta<typeof Button> = {
           </Section>
 
           <Section heading='Props'>
+            {/* <LiveDemo code={Default} /> */}
+            <Canvas>{Default.render()}</Canvas>
             <ArgsTable />
           </Section>
 
@@ -250,7 +256,7 @@ const meta: Meta<typeof Button> = {
           </Section>
 
           <Section heading='Usage'>
-            <Text textStyle='subheading3' py={4}>
+            <Text textStyle='subheading3' my={4}>
               Responsive Layout
             </Text>
             <Text.p>
@@ -265,7 +271,7 @@ const meta: Meta<typeof Button> = {
               <Box height='20rem'>Placeholder</Box>
             </Box>
 
-            <Text textStyle='subheading3' py={4}>
+            <Text textStyle='subheading3' my={4}>
               Alignment
             </Text>
             <Text.p>
@@ -285,7 +291,7 @@ const meta: Meta<typeof Button> = {
               <Box height='20rem'>Placeholder</Box>
             </Box>
 
-            <Text textStyle='subheading3' py={4}>
+            <Text textStyle='subheading3' my={4}>
               Button Groups
             </Text>
             <Text.p>
@@ -300,25 +306,77 @@ const meta: Meta<typeof Button> = {
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
               <Box height='20rem'>Placeholder</Box>
             </Box>
+          </Section>
 
-            <Text textStyle='subheading3' py={4}>
-              Do&apos;s and Don&apos;ts
-            </Text>
-            <Text.p>Coming soon...</Text.p>
-            <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Box height='20rem'>Placeholder</Box>
-            </Box>
+          <Section heading={`Do's and Don'ts`}>
+            <DoDont
+              doExample={<Button>Search Hotels</Button>}
+              doText='use 1 or 2 words, no longer than 4 words, with fewer than 20 characters including spaces.'
+              dontExample={<Button>Start Saving!</Button>}
+              dontText='use punctuation marks such as periods or exclamation points.'
+            />
+
+            <DoDont
+              doExample={<Button>Go</Button>}
+              doText='allow a buttons width to use default settings to dynamically set to fit its label text.'
+              dontExample={
+                <Button width={100} style={{ whiteSpace: 'nowrap' }}>
+                  Search Hotels
+                </Button>
+              }
+              dontText='make the width of the button narrower than its label text.'
+            />
+
+            <DoDont
+              doExample={<Button width='100%'>Search Rental Cars</Button>}
+              doText='allow a buttons to fill the width of a responsive layout, container, and component.'
+              dontExample={<Button width={150}>Search Rental Cars</Button>}
+              dontText='make the width of the button narrower than its label text.'
+            />
+
+            <DoDont
+              doExample={
+                <Box style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '.5rem' }}>
+                  <Button variation='subtle'>Visit Help Center</Button>
+                  <Button>Sign In</Button>
+                </Box>
+              }
+              dontExample={
+                <Box>
+                  <Button variation='subtle' mr={2}>
+                    Visit Help Center
+                  </Button>
+                  <Button>Sign In</Button>
+                </Box>
+              }
+            />
+
+            <DoDont
+              doExample={
+                <Flex width='100%' flexDirection='column' style={{ gap: '.5rem' }}>
+                  <Button variation='subtle'>Add Rental Car</Button>
+                  <Button>Continue to Checkout</Button>
+                </Flex>
+              }
+              dontExample={
+                <Box textAlign='center'>
+                  <Button>Add Rental Car</Button>
+                  <br />
+                  <Button variation='link'>No thanks, I don&apos;t need a rental car</Button>
+                </Box>
+              }
+            />
           </Section>
 
           <Section heading='Related Components'>
             <RelatedComponentContainer>
-              <RelatedComponent name='ButtonChip' desc='Coming soon...' linkTo='core-chip-ButtonChip'>
+              <RelatedComponent name='ButtonChip' linkTo='core-chip-ButtonChip'>
                 <ButtonChip>Button Chip</ButtonChip>
               </RelatedComponent>
-              <RelatedComponent name='Link' desc='Coming soon...'>
+              <RelatedComponent name='Link'>
                 <Link>Link</Link>
               </RelatedComponent>
-              <RelatedComponent name='CloseButton' desc='Coming soon...'>
+              <RelatedComponent name='CloseButton'>
                 <CloseButton />
               </RelatedComponent>
             </RelatedComponentContainer>

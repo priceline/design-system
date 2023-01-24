@@ -4,7 +4,7 @@ import { Box, Text, theme } from '../..'
 
 export type RelatedComponentProps = {
   name: string
-  desc: string
+  desc?: string
   linkTo?: string
   children: React.ReactNode
 }
@@ -26,7 +26,7 @@ export const RelatedComponent = ({ name, desc, children, linkTo }: RelatedCompon
     <Text textStyle='heading5' py={2}>
       {name}
     </Text>
-    <Text>{desc}</Text>
+    {desc && <Text>{desc}</Text>}
   </Box>
 )
 
