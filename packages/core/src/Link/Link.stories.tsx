@@ -73,6 +73,11 @@ const ReactiveLinkTemplate = (args) => (
         {args.children}
       </ReactiveLink>
     </Box>
+    <Box color='background.darkest' p={2} width={300}>
+      <ReactiveLink {...args} backgroundColor='background.darkest'>
+        {args.children}
+      </ReactiveLink>
+    </Box>
   </>
 )
 
