@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 17 Jan 2023 17:04:02 GMT and should not be manually modified.
+This log was last generated on Tue, 24 Jan 2023 17:32:44 GMT and should not be manually modified.
+
+## 5.5.0
+Tue, 24 Jan 2023 17:32:44 GMT
+
+### Minor changes
+
+- Add util for getting link styles on a color
+
+### Patches
+
+- Fix bug in Checkbox when using indeterminate prop and react-hook-form
 
 ## 5.4.0
 Tue, 17 Jan 2023 17:04:02 GMT
