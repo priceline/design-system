@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 16 Jan 2023 17:46:41 GMT and should not be manually modified.
+This log was last generated on Tue, 24 Jan 2023 17:31:52 GMT and should not be manually modified.
+
+## 4.38.2
+Tue, 24 Jan 2023 17:31:52 GMT
+
+### Patches
+
+- Fix bug in Checkbox when using indeterminate prop and react-hook-form
 
 ## 4.38.1
 Mon, 16 Jan 2023 17:46:41 GMT

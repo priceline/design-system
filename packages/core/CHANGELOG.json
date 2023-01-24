@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.2",
+      "tag": "pcln-design-system_v4.38.2",
+      "date": "Tue, 24 Jan 2023 17:31:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug in Checkbox when using indeterminate prop and react-hook-form",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "ee4c796727bcfac805b96c2440562a998fc84e0e"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.1",
       "tag": "pcln-design-system_v4.38.1",
       "date": "Mon, 16 Jan 2023 17:46:41 GMT",
