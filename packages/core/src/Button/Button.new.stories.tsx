@@ -1,15 +1,23 @@
 import { ArgsTable } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import { Box, Button, Text, ThemeProvider } from '..'
-import { Hero, LiveDemo, Section, StoryHeading, TableOfContents } from '../storybook/components'
+import { Box, Button, ButtonChip, CloseButton, Link, Text, ThemeProvider } from '..'
+import {
+  Hero,
+  LiveDemo,
+  RelatedComponent,
+  RelatedComponentContainer,
+  Section,
+  StoryHeading,
+  TableOfContents,
+} from '../storybook/components'
 import { Note } from '../storybook/components/Note'
 
 import heroImage from './Button.Hero.png'
 
 type ButtonStory = StoryObj<typeof Button>
 
-export const Default: ButtonStory = { render: () => <Button>Hello World</Button> }
+export const Default: ButtonStory = { render: () => <Button>Button</Button> }
 
 export const Sizes: ButtonStory = {
   render: () => (
@@ -151,6 +159,7 @@ const meta: Meta<typeof Button> = {
               'Styles & States',
               'Partner Theming',
               'Usage',
+              'Related Components',
             ]}
           />
 
@@ -221,9 +230,9 @@ const meta: Meta<typeof Button> = {
             <LiveDemo code={Disabled} />
             <Note>
               Not all users know that an interactive design element can have disabled state. If you show an
-              element but don’t allow people to interact with it, they then have to interpret why they can’t.
-              Not everyone will be able to do this, for this reason and other issues try to avoid disabling
-              buttons or actions.
+              element but don&apos;t allow people to interact with it, they then have to interpret why they
+              can&apos;t. Not everyone will be able to do this, for this reason and other issues try to avoid
+              disabling buttons or actions.
             </Note>
           </Section>
 
@@ -293,12 +302,26 @@ const meta: Meta<typeof Button> = {
             </Box>
 
             <Text textStyle='subheading3' py={4}>
-              Do's and Don'ts
+              Do&apos;s and Don&apos;ts
             </Text>
             <Text.p>Coming soon...</Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
               <Box height='20rem'>Placeholder</Box>
             </Box>
+          </Section>
+
+          <Section heading='Related Components'>
+            <RelatedComponentContainer>
+              <RelatedComponent name='ButtonChip' desc='Coming soon...' linkTo='core-chip-ButtonChip'>
+                <ButtonChip>Button Chip</ButtonChip>
+              </RelatedComponent>
+              <RelatedComponent name='Link' desc='Coming soon...'>
+                <Link>Link</Link>
+              </RelatedComponent>
+              <RelatedComponent name='CloseButton' desc='Coming soon...'>
+                <CloseButton />
+              </RelatedComponent>
+            </RelatedComponentContainer>
           </Section>
         </ThemeProvider>
       ),
