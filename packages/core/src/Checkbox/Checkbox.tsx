@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty, BoxMinus } from 'pcln-icons'
 import PropTypes, { InferProps } from 'prop-types'
@@ -37,7 +37,7 @@ const CheckBoxWrapper = styled.div`
     display: none;
   }
 
-  > input:indeterminate {
+  > input[data-indeterminate='true'] {
     & ~ svg[data-name='indeterminate'] {
       display: inline-block;
       color: ${(props) =>
@@ -59,7 +59,7 @@ const CheckBoxWrapper = styled.div`
       props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
   }
 
-  > input {
+  > input:not([data-indeterminate='true']) {
     & ~ svg[data-name='empty'] {
       color: ${(props) =>
         props.disabled ? getPaletteColor('border.base') : getPaletteColor(props.unselectedColor)};
@@ -70,7 +70,7 @@ const CheckBoxWrapper = styled.div`
     }
   }
 
-  > input:checked {
+  > input:checked:not([data-indeterminate='true']) {
     & ~ svg[data-name='checked'] {
       display: inline-block;
       color: ${(props) =>
@@ -103,15 +103,22 @@ const StyledInput = styled.input`
 `
 
 const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
-  const inputRef = useRef()
+  // eslint-disable-next-line react/prop-types
+  const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
+
+  const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)
+
+  function handleChange(e) {
+    setShowIndeterminate(false)
+    if (typeof onChange === 'function') {
+      onChange(e)
+    }
+  }
 
   useEffect(() => {
-    // @ts-ignore
-    inputRef.current.indeterminate = props.indeterminate
-  }, [props.indeterminate])
+    setShowIndeterminate(indeterminate)
+  }, [indeterminate])
 
-  // eslint-disable-next-line react/prop-types
-  const { disabled, size, indeterminate, unselectedColor } = props
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
   const borderAdjustedSize = size + 4
   return (
@@ -125,19 +132,11 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
       <StyledInput
         type='checkbox'
         {...props}
+        onChange={handleChange}
         role='checkbox'
-        aria-checked={props.indeterminate ? 'mixed' : props.checked}
-        ref={(element: HTMLInputElement) => {
-          if (indeterminate && element) {
-            element.indeterminate = true
-          }
-          if (ref) {
-            // @ts-ignore
-            ref.current = element
-          }
-          // @ts-ignore
-          inputRef.current = element
-        }}
+        aria-checked={showIndeterminate ? 'mixed' : props.checked}
+        data-indeterminate={showIndeterminate}
+        ref={ref}
       />
       <BoxChecked size={borderAdjustedSize} data-name='checked' />
       <BoxMinus size={borderAdjustedSize} data-name='indeterminate' />
