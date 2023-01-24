@@ -286,13 +286,16 @@ export const getLinkStylesOn = (
 
   if (theme.palette) {
     const backgroundColor = getPaletteColor(name)(props)
-    const linkColor = theme.palette.primary.base
+    const linkBaseColor = theme.palette.primary.base
+    const linkHoverColor = theme.palette.primary.dark
 
     lightColor = getValidPaletteColor(lightColor)(props)
     darkColor = getValidPaletteColor(darkColor)(props)
 
     if (backgroundColor) {
-      const hasDefaultContrast = getContrastRatio(backgroundColor, linkColor) >= theme.contrastRatio
+      const hasDefaultContrast =
+        getContrastRatio(backgroundColor, linkBaseColor) >= theme.contrastRatio &&
+        getContrastRatio(backgroundColor, linkHoverColor) >= theme.contrastRatio
       const hasLightContrast = getContrastRatio(backgroundColor, lightColor) >= theme.contrastRatio
 
       if (!hasDefaultContrast) {
