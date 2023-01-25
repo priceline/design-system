@@ -259,7 +259,7 @@ describe('utils', () => {
     const textLightest = props.theme.palette.text.lightest
     const textBase = props.theme.palette.text.base
 
-    test('returns correct text color', () => {
+    test('returns correct link styles', () => {
       expect(getLinkStylesOn('test')({ theme: {} })).toEqual('')
       expect(getLinkStylesOn('abcde')(props)).toEqual('')
 
@@ -287,7 +287,21 @@ describe('utils', () => {
       )
     })
 
-    test('returns correct text color with custom contrast ratio', () => {
+    test('returns correct link styles when only link hover does not meet contrast', () => {
+      expect(getLinkStylesOn('background.darkest')(props)).toEqual(
+        expect.arrayContaining([
+          'color: ',
+          textLightest,
+          '; font-weight: ',
+          'inherit',
+          '; text-decoration: underline; :hover { color: ',
+          textLightest,
+          '; }',
+        ])
+      )
+    })
+
+    test('returns correct link styles with custom contrast ratio', () => {
       expect(
         getLinkStylesOn('primary.dark')({
           theme: { ...props.theme, contrastRatio: 9.2 },
