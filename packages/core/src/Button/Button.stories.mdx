@@ -1,11 +1,8 @@
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs'
 import styled from 'styled-components'
 import { Button } from '.'
-import { ThemeProvider } from '..'
 import { ForwardRefs } from './ForwardRefsStory'
 import { argTypes } from './Button.stories.args'
-import { Hero, LiveDemo } from '../storybook/components'
-import heroImage from './Button.Hero.png'
 
 export const StyledButton = styled(Button)`
   padding: 100px;
@@ -16,22 +13,9 @@ export const StyledTemplate = (args) => <StyledButton {...args}>Button Text!</St
 
 <Meta title='core/Button' component={Button} argTypes={argTypes} />
 
-<ThemeProvider>
+# Button
 
-<Hero
-  name='Button'
-  desc='Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.'
-  img={heroImage}
-/>
-
-<TableOfContents
-  links={{
-    overview: 'Overview',
-    props: 'Props',
-    usage: 'Usage',
-    stories: 'Stories',
-  }}
-/>
+`Button` makes common actions immediately visible and easy to perform with one click or tap.
 
 <Canvas>
   <Story name='Button'>{Template.bind({})}</Story>
@@ -64,7 +48,3 @@ You can also use Styled Components to add custom styles to `Button`, e.g. `style
 <Canvas>
   <Story name='styled(Button) should preserve variation styling'>{StyledTemplate.bind({})}</Story>
 </Canvas>
-
-<LiveDemo code='<Button>Hello World!</Button>' />
-
-</ThemeProvider>
