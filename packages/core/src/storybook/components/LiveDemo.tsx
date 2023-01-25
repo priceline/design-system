@@ -1,4 +1,4 @@
-import { StoryObj } from '@storybook/react'
+import { Story } from '@storybook/react'
 import { Check, ChevronDown, ChevronUp, Copy } from 'pcln-icons'
 import { PrismTheme } from 'prism-react-renderer'
 import React, { useEffect, useRef, useState } from 'react'
@@ -7,7 +7,7 @@ import { copy, formatCode, getStoryCode } from '..'
 import * as Pcln from '../..'
 
 export type LiveDemoProps = {
-  code?: string | StoryObj
+  code?: string | Story
 }
 
 const scope = {

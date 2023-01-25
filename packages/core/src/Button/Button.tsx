@@ -1,27 +1,27 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
-import {
-  borderRadius,
-  fontSize,
-  width,
-  space,
-  boxShadow,
-  WidthProps,
-  SpaceProps,
-  BoxShadowProps,
-} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import { themeGet } from '@styled-system/theme-get'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled, { css } from 'styled-components'
+import {
+  borderRadius,
+  boxShadow,
+  BoxShadowProps,
+  fontSize,
+  space,
+  SpaceProps,
+  width,
+  WidthProps,
+} from 'styled-system'
 import {
   applySizes,
   applyVariations,
   borders,
-  getPaletteColor,
-  getTextColorOn,
-  deprecatedColorValue,
   boxShadowAttrs,
   boxShadowSizeValues,
+  deprecatedColorValue,
+  getPaletteColor,
+  getTextColorOn,
 } from '../utils'
 
 export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
@@ -224,7 +224,7 @@ export interface IButtonProps
     React.RefAttributes<unknown> {
   color?: string
   variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
-  size?: Sizes | Sizes[]
+  size?: Sizes
   borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
   boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
   autoFocus?: boolean
