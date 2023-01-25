@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.5.0",
+      "tag": "pcln-design-system_v5.5.0",
+      "date": "Tue, 24 Jan 2023 17:32:44 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug in Checkbox when using indeterminate prop and react-hook-form",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "8748f2527f3ac79edf86eba4c522a89578940fdf"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Add util for getting link styles on a color",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "31877877186559105604b09a7f2ee5415ce3f982"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.0",
       "tag": "pcln-design-system_v5.4.0",
       "date": "Tue, 17 Jan 2023 17:04:02 GMT",
