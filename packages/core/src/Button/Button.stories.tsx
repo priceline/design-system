@@ -15,6 +15,7 @@ import {
   StoryHeading,
   TableOfContents,
 } from '../storybook/components'
+import { DocTable } from '../storybook/components/DocTable'
 import alignmentImage from './Button.Image.Alignment.jpeg'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
@@ -197,6 +198,25 @@ const meta: Meta<typeof Button> = {
               If a large or small button is desired, set the size property to either extraLarge, large or
               small. These sizes allow for hierarchy, emphasis, larger/smaller touch targets, and flexibility.
             </Text>
+            <DocTable
+              columns={[
+                { field: 'size', heading: 'Size' },
+                { field: 'useCase', heading: 'Use Case' },
+              ]}
+              data={[
+                {
+                  size: 'Small',
+                  useCase:
+                    'Use when there is not enough space for the default and in responsive patterns on mobile breakpoints.',
+                },
+                { size: 'Medium', useCase: 'This is the most commonly used button size.' },
+                { size: 'Large', useCase: 'Use when buttons are paired with input fields.' },
+                {
+                  size: 'Extra Large',
+                  useCase: 'Use on search forms and marketing and promotion hero modules.',
+                },
+              ]}
+            />
             <LiveDemo code={Sizes} />
 
             <StoryHeading storyName='Core Variations' storyTitle={meta.title} />
@@ -204,6 +224,24 @@ const meta: Meta<typeof Button> = {
               Our core button variations use fill and subtle properties. These buttons make up the majority of
               our
             </Text>
+            <DocTable
+              columns={[
+                { field: 'variation', heading: 'Variation' },
+                { field: 'useCase', heading: 'Use Case' },
+              ]}
+              data={[
+                {
+                  variation: 'Fill',
+                  useCase:
+                    'The filled button is used for high emphasis, the primary, most important, or most common actions on a screen. The filled button’s contrasting surface color makes it the most prominent button.',
+                },
+                {
+                  variation: 'Subtle',
+                  useCase:
+                    'Subtle button are best used for supporting actions of medium emphasis. Secondary buttons are also suited for prodiving clear actions on screens with multiple button with various levels of emphasis or to provide low-level emphasis over UI elements, and text links or buttons.',
+                },
+              ]}
+            />
             <LiveDemo code={CoreVariations} />
 
             <StoryHeading storyName='Tonal Variations' storyTitle={meta.title} />
@@ -211,6 +249,24 @@ const meta: Meta<typeof Button> = {
               Tonal variations can be used on their own to reduce hierarchy or paired with primary buttons for
               supporting actions.
             </Text>
+            <DocTable
+              columns={[
+                { field: 'variation', heading: 'Variation' },
+                { field: 'useCase', heading: 'Use Case' },
+              ]}
+              data={[
+                {
+                  variation: 'Plain',
+                  useCase:
+                    'Plain button variation has a transparent background but has the same height and width poperties as the fill button.',
+                },
+                {
+                  variation: 'White',
+                  useCase:
+                    'White buttons are used over images and in place of fill and subtle buttons when color contrast is needed.',
+                },
+              ]}
+            />
             <LiveDemo code={TonalVariations} />
 
             <StoryHeading storyName='Text Buttons' storyTitle={meta.title} />
@@ -225,6 +281,29 @@ const meta: Meta<typeof Button> = {
               Text buttons have less visual prominence, so should be used for secondary actions or low
               emphasis actions. Used when aligning with 16px, 14px, and 12px body copy.
             </Text>
+            <DocTable
+              columns={[
+                { field: 'props', heading: 'Colors & Properties' },
+                { field: 'useCase', heading: 'Use Case' },
+              ]}
+              data={[
+                {
+                  props: 'Primary',
+                  useCase:
+                    'Primary button indicates the main action, and places high level of emphasis on the most important call to action on a page. One primary button at most in one section. Not every screen requires a primary button.',
+                },
+                {
+                  props: 'Secondary',
+                  useCase:
+                    'Secondary button’s primary function if to progress a user forward in a conversion process. Secondary buttons are used only for choosing a product and continueing through steps of a checkout flow.',
+                },
+                {
+                  props: 'Negative',
+                  useCase:
+                    'In general the Negative button variation should be used sparingly, and only when an action is by definition a negative response. For example, a user could be canceling a trip for positive reasons. In this example using the Text button variation keeps the UI neutral from any personas.',
+                },
+              ]}
+            />
             <LiveDemo code={SemanticStyles} />
           </Section>
 

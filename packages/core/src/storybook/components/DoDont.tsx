@@ -1,5 +1,7 @@
 import React from 'react'
-import { Box, Text, theme } from '../..'
+import { Box, createTheme, Text } from '../..'
+
+const theme = createTheme()
 
 type ExampleProps = {
   isDo?: boolean
@@ -16,8 +18,8 @@ const Example = ({ isDo, children, desc }: ExampleProps) => (
       style={{
         display: 'grid',
         placeItems: 'center',
-        border: `1px solid ${theme.colors.borderGray}`,
-        borderTop: `5px solid ${isDo ? theme.colors.green : theme.colors.red}`,
+        border: `1px solid ${theme.palette.border.base}`,
+        borderTop: `5px solid ${isDo ? theme.palette.success.base : theme.palette.error.base}`,
         aspectRatio: '2.5',
       }}
     >
