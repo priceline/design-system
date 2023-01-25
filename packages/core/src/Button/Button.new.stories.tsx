@@ -1,7 +1,7 @@
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
-import { Box, Button, ButtonChip, CloseButton, Flex, Link, Text, ThemeProvider } from '..'
+import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
 import { colors } from '../storybook/args'
 import {
   DoDont,
@@ -16,7 +16,10 @@ import {
 } from '../storybook/components'
 
 import { IButtonProps } from '.'
+import alignmentImage from './Button.Alignment.jpeg'
+import groupsImage from './Button.Groups.png'
 import heroImage from './Button.Hero.png'
+import responsiveLayoutImage from './Button.ResponsiveLayout.png'
 
 type ButtonStory = Story<IButtonProps>
 export const Default: ButtonStory = (args) => <Button {...args}>Button</Button>
@@ -163,8 +166,8 @@ const meta: Meta<typeof Button> = {
               'Styles & States',
               'Partner Theming',
               'Usage',
-              'Related Components',
               `Do's and Don'ts`,
+              'Related Components',
             ]}
           />
 
@@ -268,7 +271,7 @@ const meta: Meta<typeof Button> = {
               larger screens.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Box height='20rem'>Placeholder</Box>
+              <Image src={responsiveLayoutImage} />
             </Box>
 
             <Text textStyle='subheading3' my={4}>
@@ -288,7 +291,7 @@ const meta: Meta<typeof Button> = {
             </Text.p>
             <Text.p>Typical nested button locations include:</Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Box height='20rem'>Placeholder</Box>
+              <Image src={alignmentImage} />
             </Box>
 
             <Text textStyle='subheading3' my={4}>
@@ -304,7 +307,7 @@ const meta: Meta<typeof Button> = {
               As a general rule button groups should be limited to only medium, small, and text buttons.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Box height='20rem'>Placeholder</Box>
+              <Image src={groupsImage} />
             </Box>
           </Section>
 
