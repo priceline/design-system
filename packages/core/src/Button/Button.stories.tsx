@@ -1,6 +1,7 @@
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
+import { IButtonProps } from '.'
 import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
 import { colors } from '../storybook/args'
 import {
@@ -14,12 +15,10 @@ import {
   StoryHeading,
   TableOfContents,
 } from '../storybook/components'
-
-import { IButtonProps } from '.'
-import alignmentImage from './Button.Alignment.jpeg'
-import groupsImage from './Button.Groups.png'
-import heroImage from './Button.Hero.png'
-import responsiveLayoutImage from './Button.ResponsiveLayout.png'
+import alignmentImage from './Button.Image.Alignment.jpeg'
+import groupsImage from './Button.Image.Groups.png'
+import heroImage from './Button.Image.Hero.png'
+import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
 
 type ButtonStory = Story<IButtonProps>
 export const Default: ButtonStory = (args) => <Button {...args}>Button</Button>
@@ -146,7 +145,7 @@ export const BorderRadius: ButtonStory = () => (
 )
 
 const meta: Meta<typeof Button> = {
-  title: 'components/Button',
+  title: 'Forms/Button',
   component: Button,
   parameters: {
     docs: {
