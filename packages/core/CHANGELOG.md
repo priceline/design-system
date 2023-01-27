@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 24 Jan 2023 17:31:52 GMT and should not be manually modified.
+This log was last generated on Fri, 27 Jan 2023 15:31:51 GMT and should not be manually modified.
+
+## 4.38.3
+Fri, 27 Jan 2023 15:31:51 GMT
+
+### Patches
+
+- Add fix for onhover color check to getLinkStylesOn
 
 ## 4.38.2
 Tue, 24 Jan 2023 17:31:52 GMT

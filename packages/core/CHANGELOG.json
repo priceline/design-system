@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.3",
+      "tag": "pcln-design-system_v4.38.3",
+      "date": "Fri, 27 Jan 2023 15:31:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add fix for onhover color check to getLinkStylesOn",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "42173b1818ba4a57605fbffbd2cc2330249b3c8b"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.2",
       "tag": "pcln-design-system_v4.38.2",
       "date": "Tue, 24 Jan 2023 17:31:52 GMT",
