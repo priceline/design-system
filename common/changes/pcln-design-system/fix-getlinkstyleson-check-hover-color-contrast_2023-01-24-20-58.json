@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add fix for onhover color check to getLinkStylesOn",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
