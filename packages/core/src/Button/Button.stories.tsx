@@ -35,6 +35,7 @@ Default.argTypes = {
   size: {
     defaultValue: Button.defaultProps.size,
     control: 'select',
+    options: ['small', 'medium', 'large', 'extraLarge'],
   },
   disabled: {
     defaultValue: false,
