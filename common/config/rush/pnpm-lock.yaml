@@ -339,6 +339,7 @@ importers:
       react-intersection-observer: ~9.4.0
       react-live: ^3.1.1
       react-test-renderer: ^17.0.2
+      react-textarea-autosize: 8.4.0
       require-from-string: 2.0.2
       rimraf: ^3.0.2
       styled-components: ^5.3.5
@@ -394,6 +395,7 @@ importers:
       react-element-to-jsx-string: 15.0.0_sfoxds7t5ydpegc3knd667wn6m
       react-live: 3.1.1_sfoxds7t5ydpegc3knd667wn6m
       react-test-renderer: 17.0.2_react@17.0.2
+      react-textarea-autosize: 8.4.0_sudpmbbyhqtxq6t4xf6jlicdem
       require-from-string: 2.0.2
       rimraf: 3.0.2
       styled-components: 5.3.5_sfoxds7t5ydpegc3knd667wn6m
@@ -10648,7 +10650,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -19515,17 +19517,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dev: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
 
   /promise.allsettled/1.0.5:
     resolution: {integrity: sha512-tVDqeZPoBC0SlzJHzWGZ2NKAguVq2oiYj7gbggbiTvH2itHohijTp7njOUA0aQ/nl+0lr/r6egmhoYu63UZ/pQ==}
@@ -20218,6 +20209,20 @@ packages:
       react-is: 17.0.2
       react-shallow-renderer: 16.15.0_react@17.0.2
       scheduler: 0.20.2
+    dev: true
+
+  /react-textarea-autosize/8.4.0_sudpmbbyhqtxq6t4xf6jlicdem:
+    resolution: {integrity: sha512-YrTFaEHLgJsi8sJVYHBzYn+mkP3prGkmP2DKb/tm0t7CLJY5t1Rxix8070LAKb0wby7bl/lf2EeHkuMihMZMwQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@babel/runtime': 7.18.6
+      react: 17.0.2
+      use-composed-ref: 1.3.0_react@17.0.2
+      use-latest: 1.2.1_sudpmbbyhqtxq6t4xf6jlicdem
+    transitivePeerDependencies:
+      - '@types/react'
     dev: true
 
   /react-toggle-component/3.0.8_zxhai4qal7ezfht52cx4u672cu:
@@ -23147,6 +23152,14 @@ packages:
       react: 17.0.2
       tslib: 2.4.0
 
+  /use-composed-ref/1.3.0_react@17.0.2:
+    resolution: {integrity: sha512-GLMG0Jc/jiKov/3Ulid1wbv3r54K9HlMW29IWcDFPEqFkSO2nS0MuefWgMJpeHQ9YJeXDL3ZUF+P3jdXlZX/cQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 17.0.2
+    dev: true
+
   /use-editable/2.3.3_react@17.0.2:
     resolution: {integrity: sha512-7wVD2JbfAFJ3DK0vITvXBdpd9JAz5BcKAAolsnLBuBn6UDDwBGuCIAGvR3yA2BNKm578vAMVHFCWaOcA+BhhiA==}
     peerDependencies:
@@ -23178,6 +23191,20 @@ packages:
     dependencies:
       '@types/react': 17.0.47
       react: 17.0.2
+    dev: true
+
+  /use-latest/1.2.1_sudpmbbyhqtxq6t4xf6jlicdem:
+    resolution: {integrity: sha512-xA+AVm/Wlg3e2P/JiItTziwS7FK92LWrDB0p+hgXloIMuVCeJJ8v6f0eeHyPZaJrM+usM1FkFfbNCrJGs8A/zw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@types/react': 17.0.47
+      react: 17.0.2
+      use-isomorphic-layout-effect: 1.1.2_sudpmbbyhqtxq6t4xf6jlicdem
     dev: true
 
   /use-sidecar/1.1.2_react@17.0.2:
