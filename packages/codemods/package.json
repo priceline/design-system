@@ -33,7 +33,7 @@
     "pcln-design-system": "workspace:*",
     "prop-types": "^15.8.1",
     "styled-components": "^4.4.1",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",

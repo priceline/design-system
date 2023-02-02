@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 
 import { createTheme } from '../utils'
 
 export const Base = styled.div`
-  font-family: ${(props) => props.theme.font};
-  line-height: ${(props) => props.theme.lineHeights.standard};
-  font-weight: ${(props) => props.theme.fontWeights.medium};
+  font-family: ${themeGet('font')};
+  line-height: ${themeGet('lineHeights.standard')};
+  font-weight: ${themeGet('fontWeights.medium')};
 
   * {
     box-sizing: border-box;

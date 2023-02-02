@@ -22,9 +22,9 @@ exports[`FormField renders 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 12px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
@@ -174,9 +174,9 @@ exports[`FormField renders with Icon 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
@@ -348,9 +348,9 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
@@ -522,9 +522,9 @@ exports[`FormField renders with Select  1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 12px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
@@ -705,9 +705,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  margin-bottom: -20px;
   margin-left: 40px;
   padding-top: 6px;
+  margin-bottom: -20px;
   font-size: 10px;
   font-weight: 700;
 }
@@ -731,8 +731,8 @@ exports[`FormField renders with Select and Icon 1`] = `
   border-style: solid;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  margin: 0;
   padding-left: 40px;
+  margin: 0;
   font-size: 16px;
   border-radius: 2px;
 }

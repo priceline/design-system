@@ -6,8 +6,8 @@ exports[`GenericBanner renders 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
-  margin-top: -2px;
   margin-right: 8px;
+  margin-top: -2px;
   width: 24px;
 }
 

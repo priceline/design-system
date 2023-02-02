@@ -80,8 +80,8 @@ exports[`Input it renders an input element with a really large padding and margi
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  margin: 32px;
   padding: 32px;
+  margin: 32px;
   font-size: 16px;
   border-radius: 2px;
 }

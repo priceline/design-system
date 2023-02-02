@@ -9,6 +9,7 @@ import {
   deprecatedPropType,
   borderRadiusAttrs,
 } from '../utils'
+import { themeGet } from '@styled-system/theme-get'
 
 const propTypes = {
   selected: PropTypes.bool,
@@ -22,7 +23,7 @@ const ToggleBadge: React.FC<InferProps<typeof propTypes>> = styled.button.attrs(
   border-radius: ${(props) => props.theme.radius};
   border: 0;
   display: inline-block;
-  font-weight: ${(props) => props.theme.bold};
+  font-weight: ${themeGet('bold')};
   font-family: inherit;
   cursor: pointer;
   background-color: ${(props) =>

@@ -137,12 +137,12 @@ importers:
       react-dom: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       us: ^2.0.0
     dependencies:
       downshift: 3.4.8_react@17.0.2
       prop-types: 15.8.1
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.18.6_@babel+core@7.18.6
       '@babel/core': 7.18.6
@@ -260,7 +260,7 @@ importers:
       react-dom: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
     dependencies:
       chalk: 4.1.2
       execa: 5.1.1
@@ -273,7 +273,7 @@ importers:
       pcln-design-system: link:../core
       prop-types: 15.8.1
       styled-components: 4.4.1_sfoxds7t5ydpegc3knd667wn6m
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.18.6_@babel+core@7.18.6
       '@babel/core': 7.18.6
@@ -331,7 +331,7 @@ importers:
       require-from-string: 2.0.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       tslib: ^2.4.0
       typescript: ^4.5.4
     dependencies:
@@ -342,7 +342,7 @@ importers:
       pcln-icons: link:../icons
       prop-types: 15.8.1
       react-intersection-observer: 9.4.0_react@17.0.2
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.18.6_@babel+core@7.18.6
       '@babel/core': 7.18.6
@@ -355,7 +355,7 @@ importers:
       '@rushstack/heft': 0.44.13
       '@storybook/addon-actions': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/react': 6.5.9_466jio2u6zdoocnc2kl7ckfzfe
-      '@styled-system/prop-types': 5.1.5_styled-system@4.2.4
+      '@styled-system/prop-types': 5.1.5_styled-system@5.1.5
       '@testing-library/jest-dom': 5.16.4
       '@testing-library/react': 12.1.5_sfoxds7t5ydpegc3knd667wn6m
       '@testing-library/react-hooks': 7.0.2_7qv3rjnqa3j7exc7qtvho7thru
@@ -404,12 +404,12 @@ importers:
       react-test-renderer: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
     dependencies:
       '@styled-system/theme-get': 5.1.2
       lodash.upperfirst: 4.3.1
       prop-types: 15.8.1
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     devDependencies:
       '@babel/cli': 7.18.6_@babel+core@7.18.6
       '@babel/core': 7.18.6
@@ -457,7 +457,7 @@ importers:
       react-dom: ^17.0.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
     dependencies:
       '@styled-system/theme-get': 5.1.2
     devDependencies:
@@ -482,7 +482,7 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       rimraf: 3.0.2
       styled-components: 4.4.1_sfoxds7t5ydpegc3knd667wn6m
-      styled-system: 4.2.4
+      styled-system: 5.1.5
 
   ../../packages/modal:
     specifiers:
@@ -509,7 +509,7 @@ importers:
       react-transition-group: ^4.4.2
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
     dependencies:
       '@reach/dialog': 0.16.2_sfoxds7t5ydpegc3knd667wn6m
       '@styled-system/theme-get': 5.1.2
@@ -535,7 +535,7 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       rimraf: 3.0.2
       styled-components: 4.4.1_sfoxds7t5ydpegc3knd667wn6m
-      styled-system: 4.2.4
+      styled-system: 5.1.5
 
   ../../packages/popover:
     specifiers:
@@ -564,7 +564,7 @@ importers:
       react-focus-lock: ^2.6.0
       rimraf: ^3.0.2
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
     dependencies:
       '@floating-ui/react-dom-interactions': 0.8.1_sfoxds7t5ydpegc3knd667wn6m
       '@styled-system/theme-get': 5.1.2
@@ -592,7 +592,7 @@ importers:
       react-focus-lock: 2.9.1_react@17.0.2
       rimraf: 3.0.2
       styled-components: 4.4.1_sfoxds7t5ydpegc3knd667wn6m
-      styled-system: 4.2.4
+      styled-system: 5.1.5
 
   ../../packages/slider:
     specifiers:
@@ -627,7 +627,7 @@ importers:
       require-from-string: 2.0.2
       shallowequal: ^1.1.0
       styled-components: ^4.4.1
-      styled-system: ^4.2.4
+      styled-system: ^5.1.5
       typescript: ^4.6.2
       warning: ^4.0.3
     dependencies:
@@ -637,7 +637,7 @@ importers:
       rc-tooltip: 3.7.3_sfoxds7t5ydpegc3knd667wn6m
       rc-util: 4.21.1
       shallowequal: 1.1.0
-      styled-system: 4.2.4
+      styled-system: 5.1.5
       warning: 4.0.3
     devDependencies:
       '@babel/cli': 7.18.6_@babel+core@7.18.6
@@ -6435,26 +6435,84 @@ packages:
       resolve-from: 5.0.0
     dev: true
 
+  /@styled-system/background/5.1.2:
+    resolution: {integrity: sha512-jtwH2C/U6ssuGSvwTN3ri/IyjdHb8W9X/g8Y0JLcrH02G+BW3OS8kZdHphF1/YyRklnrKrBT2ngwGUK6aqqV3A==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/border/5.1.5:
+    resolution: {integrity: sha512-JvddhNrnhGigtzWRCVuAHepniyVi6hBlimxWDVAdcTuk7aRn9BYJUwfHslURtwYFsF5FoEs8Zmr1oZq2M1AP0A==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/color/5.1.2:
+    resolution: {integrity: sha512-1kCkeKDZkt4GYkuFNKc7vJQMcOmTl3bJY3YBUs7fCNM6mMYJeT1pViQ2LwBSBJytj3AB0o4IdLBoepgSgGl5MA==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
   /@styled-system/core/5.1.2:
     resolution: {integrity: sha512-XclBDdNIy7OPOsN4HBsawG2eiWfCcuFt6gxKn1x4QfMIgeO6TOlA2pZZ5GWZtIhCUqEPTgIBta6JXsGyCkLBYw==}
     dependencies:
       object-assign: 4.1.1
-    dev: false
 
-  /@styled-system/prop-types/5.1.5_styled-system@4.2.4:
+  /@styled-system/css/5.1.5:
+    resolution: {integrity: sha512-XkORZdS5kypzcBotAMPBoeckDs9aSZVkvrAlq5K3xP8IMAUek+x2O4NtwoSgkYkWWzVBu6DGdFZLR790QWGG+A==}
+
+  /@styled-system/flexbox/5.1.2:
+    resolution: {integrity: sha512-6hHV52+eUk654Y1J2v77B8iLeBNtc+SA3R4necsu2VVinSD7+XY5PCCEzBFaWs42dtOEDIa2lMrgL0YBC01mDQ==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/grid/5.1.2:
+    resolution: {integrity: sha512-K3YiV1KyHHzgdNuNlaw8oW2ktMuGga99o1e/NAfTEi5Zsa7JXxzwEnVSDSBdJC+z6R8WYTCYRQC6bkVFcvdTeg==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/layout/5.1.2:
+    resolution: {integrity: sha512-wUhkMBqSeacPFhoE9S6UF3fsMEKFv91gF4AdDWp0Aym1yeMPpqz9l9qS/6vjSsDPF7zOb5cOKC3tcKKOMuDCPw==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/position/5.1.2:
+    resolution: {integrity: sha512-60IZfMXEOOZe3l1mCu6sj/2NAyUmES2kR9Kzp7s2D3P4qKsZWxD1Se1+wJvevb+1TP+ZMkGPEYYXRyU8M1aF5A==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/prop-types/5.1.5_styled-system@5.1.5:
     resolution: {integrity: sha512-D/0d0ltp8QGhwrRifivQeIdoKkQDpFIGi98DXdpRXOaJStYXLx6aBSfS/YYIijbF1nZs1hWlAgXxYvDhCxHLSA==}
     peerDependencies:
       styled-system: ^5.0.0-8
     dependencies:
       prop-types: 15.8.1
-      styled-system: 4.2.4
+      styled-system: 5.1.5
     dev: true
+
+  /@styled-system/shadow/5.1.2:
+    resolution: {integrity: sha512-wqniqYb7XuZM7K7C0d1Euxc4eGtqEe/lvM0WjuAFsQVImiq6KGT7s7is+0bNI8O4Dwg27jyu4Lfqo/oIQXNzAg==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/space/5.1.2:
+    resolution: {integrity: sha512-+zzYpR8uvfhcAbaPXhH8QgDAV//flxqxSjHiS9cDFQQUSznXMQmxJegbhcdEF7/eNnJgHeIXv1jmny78kipgBA==}
+    dependencies:
+      '@styled-system/core': 5.1.2
 
   /@styled-system/theme-get/5.1.2:
     resolution: {integrity: sha512-afAYdRqrKfNIbVgmn/2Qet1HabxmpRnzhFwttbGr6F/mJ4RDS/Cmn+KHwHvNXangQsWw/5TfjpWV+rgcqqIcJQ==}
     dependencies:
       '@styled-system/core': 5.1.2
     dev: false
+
+  /@styled-system/typography/5.1.2:
+    resolution: {integrity: sha512-BxbVUnN8N7hJ4aaPOd7wEsudeT7CxarR+2hns8XCX1zp0DFfbWw4xYa/olA0oQaqx7F1hzDg+eRaGzAJbF+jOg==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+
+  /@styled-system/variant/5.1.5:
+    resolution: {integrity: sha512-Yn8hXAFoWIro8+Q5J8YJd/mP85Teiut3fsGVR9CAxwgNfIAiqlYxsk5iHU7VHJks/0KjL4ATSjmbtCDC/4l1qw==}
+    dependencies:
+      '@styled-system/core': 5.1.2
+      '@styled-system/css': 5.1.5
 
   /@svgr/babel-plugin-add-jsx-attribute/5.4.0:
     resolution: {integrity: sha512-ZFf2gs/8/6B8PnSofI0inYXr2SDNTDScPXhN7k5EqD4aZ3gi6u+rbmZHVB8IM3wDyx8ntKACZbtXSm7oZGRqVg==}
@@ -20619,11 +20677,22 @@ packages:
       prop-types: 15.8.1
     dev: false
 
-  /styled-system/4.2.4:
-    resolution: {integrity: sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==}
+  /styled-system/5.1.5:
+    resolution: {integrity: sha512-7VoD0o2R3RKzOzPK0jYrVnS8iJdfkKsQJNiLRDjikOpQVqQHns/DXWaPZOH4tIKkhAT7I6wIsy9FWTWh2X3q+A==}
     dependencies:
-      '@babel/runtime': 7.18.6
-      prop-types: 15.8.1
+      '@styled-system/background': 5.1.2
+      '@styled-system/border': 5.1.5
+      '@styled-system/color': 5.1.2
+      '@styled-system/core': 5.1.2
+      '@styled-system/flexbox': 5.1.2
+      '@styled-system/grid': 5.1.2
+      '@styled-system/layout': 5.1.2
+      '@styled-system/position': 5.1.2
+      '@styled-system/shadow': 5.1.2
+      '@styled-system/space': 5.1.2
+      '@styled-system/typography': 5.1.2
+      '@styled-system/variant': 5.1.5
+      object-assign: 4.1.1
 
   /stylis-rule-sheet/0.0.10_stylis@3.5.4:
     resolution: {integrity: sha512-nTbZoaqoBnmK+ptANthb10ZRZOGC+EmTLLUxeYIuHNkEKcmKgXX1XWKkUBT2Ac4es3NybooPe0SmvKdhKJZAuw==}
