@@ -258,10 +258,10 @@ const ButtonIcon = ({ Component, ...props }) => {
   return Component ? <Component {...props} /> : null
 }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
-const Button: React.FC<IButtonProps> = ({ IconLeft, IconRight, children, ...props }) => {
+const Button = React.forwardRef((props: IButtonProps, ref) => {
+  const { IconLeft, IconRight, children, ...restProps } = props
   return (
-    <StyledButton {...props}>
+    <StyledButton {...restProps} ref={ref}>
       <Flex alignItems='center'>
         <ButtonIcon Component={IconLeft} mr={children ? 2 : 0} />
         {children}
@@ -269,7 +269,7 @@ const Button: React.FC<IButtonProps> = ({ IconLeft, IconRight, children, ...prop
       </Flex>
     </StyledButton>
   )
-}
+})
 
 Button.propTypes = buttonPropTypes
 

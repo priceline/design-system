@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover Trigger Element Renders trigger element and appends action props 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -20,14 +31,6 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
   padding: 9.5px 18px;
   background-color: #0068ef;
   color: #fff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c1:hover {
@@ -65,7 +68,11 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
     color="primary"
     type="button"
   >
-    Trigger Button
+    <div
+      class="c2"
+    >
+      Trigger Button
+    </div>
   </button>
 </div>
 `;

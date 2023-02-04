@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "update heft component rig to remove node-sass dependence",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

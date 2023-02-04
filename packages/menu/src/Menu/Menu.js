@@ -1,15 +1,9 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { Button } from 'pcln-design-system'
 import { ChevronDown } from 'pcln-icons'
 import Popover from 'pcln-popover'
 import MenuList from '../MenuList'
-
-const LinkButton = styled(Button)`
-  display: flex;
-  align-items: center;
-`
 
 function Menu({
   id,
@@ -48,10 +42,17 @@ function Menu({
     buttonNode ? (
       React.cloneElement(buttonNode, { ref, onKeyDown, ...props })
     ) : (
-      <LinkButton ref={ref} variation='link' {...props} p={2} {...buttonProps} onKeyDown={onKeyDown}>
+      <Button
+        IconRight={ChevronDown}
+        variation='link'
+        {...props}
+        p={2}
+        {...buttonProps}
+        onKeyDown={onKeyDown}
+        ref={ref}
+      >
         {buttonText}
-        <ChevronDown ml={1} />
-      </LinkButton>
+      </Button>
     )
   )
 

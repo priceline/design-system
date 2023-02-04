@@ -63,7 +63,7 @@ const SingleLineTemplate = (args) => {
   const [value, setValue] = useState('one')
 
   return (
-    <Menu isOpen buttonText='Menu' width={275} {...args}>
+    <Menu buttonText='Menu' width={275} {...args}>
       {listItems.map((item, index) => {
         const selected = value === item.value
         const onClick = () => setValue(item.value)

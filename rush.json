@@ -10,8 +10,8 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.88.0",
-  "pnpmVersion": "7.21.0",
+  "rushVersion": "5.90.0",
+  "pnpmVersion": "7.26.3",
 
   /**
    * Options that are only used when the PNPM package manager is selected

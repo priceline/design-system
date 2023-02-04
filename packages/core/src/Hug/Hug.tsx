@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Attributes } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -46,12 +46,7 @@ const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, .
       mt: '-2px',
       mb: '2px',
       size: 24,
-    } as unknown) as {
-      mr?: string | number
-      mt?: string | number
-      mb?: string | number
-      size?: string | number
-    })
+    } as unknown) as Attributes)
   }
 
   return (
