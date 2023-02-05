@@ -1,7 +1,7 @@
 import { RushConfiguration, RushConfigurationProject } from '@microsoft/rush-lib'
 import fs from 'fs'
 import { join } from 'path'
-import { setOutput, setFailed, info } from '@actions/core'
+import { setOutput } from '@actions/core'
 import { Release, Change } from '../types/Release'
 
 const config = RushConfiguration.loadFromDefaultLocation()

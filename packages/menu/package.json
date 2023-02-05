@@ -46,16 +46,16 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.9",
     "styled-system": "^4.2.4"
   },
   "peerDependencies": {
-    "pcln-design-system": "5.6.1",
-    "pcln-icons": "5.2.0",
-    "pcln-popover": "5.0.13",
-    "react": ">= 16.10.0",
-    "react-dom": ">= 16.10.0",
-    "styled-system": "^4.2.4",
-    "styled-components": ">=5 <5.3.4"
+    "pcln-design-system": "^5",
+    "pcln-icons": "^5",
+    "pcln-popover": "^5",
+    "react": ">=16.10.0",
+    "react-dom": ">=16.10.0",
+    "styled-components": ">=5 <5.3.4 || >=5.3.7 <6",
+    "styled-system": "^4.2.4"
   }
 }

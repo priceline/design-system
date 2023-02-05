@@ -50,13 +50,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.9",
     "us": "^2.0.0"
   },
   "peerDependencies": {
     "pcln-design-system": "^5",
-    "react": ">= 16.10.0",
-    "react-dom": ">= 16.10.0",
+    "react": ">=16.10.0",
+    "react-dom": ">=16.10.0",
     "styled-components": ">=5 <5.3.4"
   }
 }

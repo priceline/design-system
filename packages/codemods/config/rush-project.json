@@ -1,0 +1,10 @@
+{
+  "operationSettings": [
+    {
+      "operationName": "test:ci"
+    },
+    {
+      "operationName": "lint"
+    }
+  ]
+}

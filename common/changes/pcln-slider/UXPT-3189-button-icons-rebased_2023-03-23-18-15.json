@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "fixed peerDependency expressions",
+      "type": "minor",
+      "packageName": "pcln-slider"
+    }
+  ],
+  "packageName": "pcln-slider",
+  "email": "steven.dalonzo@priceline.com"
+}

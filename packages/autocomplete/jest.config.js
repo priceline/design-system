@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: 'jsdom',
   collectCoverageFrom: ['<rootDir>/src/**', '!<rootDir>/src/**/*.stories.js'],
   moduleDirectories: ['node_modules', 'test'],
   reporters: ['jest-standard-reporter'],

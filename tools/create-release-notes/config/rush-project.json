@@ -1,0 +1,11 @@
+{
+  "operationSettings": [
+    {
+      "operationName": "build",
+      "outputFolderNames": ["dist"]
+    },
+    {
+      "operationName": "lint"
+    }
+  ]
+}
