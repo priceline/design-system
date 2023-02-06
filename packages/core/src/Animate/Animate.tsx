@@ -1,4 +1,5 @@
-import { HTMLMotionProps, motion, Transition } from 'framer-motion'
+// Import from dist needed to get around this known issue https://github.com/framer/motion/issues/1525
+import { HTMLMotionProps, motion, Transition } from 'framer-motion/dist/framer-motion'
 import React from 'react'
 
 export type TransitionVariant = 'default' | 'spring' | 'comeAndGo' | 'slow'
