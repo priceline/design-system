@@ -183,7 +183,7 @@ describe('utils', () => {
 
       // legacy support
       expect(getPaletteColor('orange', 'base')(props)).toEqual(props.theme.colors.orange)
-      expect(getPaletteColor('#ffffff', 'base')(props)).toBe(null)
+      expect(getPaletteColor('#ffffff', 'base')(props)).toBe('#ffffff')
     })
 
     test('returns a palette shade when provided a color prop', () => {
@@ -193,10 +193,9 @@ describe('utils', () => {
       expect(getPaletteColor('base')({ ...props, color: 'primary.dark' })).toEqual(
         props.theme.palette.primary.dark
       )
-
       // legacy support
       expect(getPaletteColor('base')({ ...props, color: 'orange' })).toEqual(props.theme.colors.orange)
-      expect(getPaletteColor('base')({ ...props, color: '#ffffff' })).toBe(null)
+      expect(getPaletteColor('base')({ ...props, color: '#ffffff' })).toBe('#ffffff')
     })
   })
 

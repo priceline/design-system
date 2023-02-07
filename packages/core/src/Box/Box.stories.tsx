@@ -172,3 +172,9 @@ export const ThemeUserCaseColorText = () => (
   </React.Fragment>
 )
 ThemeUserCaseColorText.storyName = 'Theme user case: color=text'
+
+export const CustomColor = Template.bind({})
+CustomColor.args = {
+  color: 'magenta',
+  bg: '#ebfa',
+}

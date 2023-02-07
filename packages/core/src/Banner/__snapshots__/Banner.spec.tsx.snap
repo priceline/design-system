@@ -989,6 +989,8 @@ exports[`Banner renders with text node 1`] = `
 
 .c0 {
   text-align: left;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 .c4 {
@@ -1085,6 +1087,8 @@ exports[`Banner renders with text string 1`] = `
 
 .c0 {
   text-align: left;
+  background-color: secondary.base;
+  color: text.lightest;
 }
 
 .c4 {
