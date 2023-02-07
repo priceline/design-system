@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.5.1",
+      "tag": "pcln-design-system_v5.5.1",
+      "date": "Tue, 07 Feb 2023 17:29:36 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add fix for onhover color check to getLinkStylesOn",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "f5ebfe04ac0d8a12b72f751a0b5ef0e20a20d0f3"
+          },
+          {
+            "comment": "Restore fallback in getPaletteColor",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "84012c841fdc3f0b29b5defe39d14fe33a8fd7e8"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.0",
       "tag": "pcln-design-system_v5.5.0",
       "date": "Tue, 24 Jan 2023 17:32:44 GMT",
