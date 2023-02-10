@@ -153,6 +153,7 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
   variation,
   stretchHeight,
   flexWrap,
+  ...props
 }) => {
   const [gapValues, setGapValues] = useState(getGapValues(gap, rowGap))
   const [widths, setChildrenWidths] = useState(getChildrenWidths(variation, children.length))
@@ -168,7 +169,7 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
   const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = gapValues
 
   return (
-    <Flex flexWrap={flexWrap} mx={flexMarginX} my={flexMarginY} data-testid='layout-flex'>
+    <Flex flexWrap={flexWrap} mx={flexMarginX} my={flexMarginY} data-testid='layout-flex' {...props}>
       {React.Children.map(
         children,
         (child, idx) =>
