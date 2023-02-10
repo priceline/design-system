@@ -1,10 +1,10 @@
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
-import { Meta, Story } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import { IButtonProps } from '.'
 import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
 import { colors } from '../storybook/args'
 import {
+  DocTable,
   DoDont,
   Hero,
   LiveDemo,
@@ -15,139 +15,155 @@ import {
   StoryHeading,
   TableOfContents,
 } from '../storybook/components'
-import { DocTable } from '../storybook/components/DocTable'
 import alignmentImage from './Button.Image.Alignment.jpeg'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
 import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
 
-type ButtonStory = Story<IButtonProps>
-export const Default: ButtonStory = (args) => <Button {...args}>Button</Button>
-Default.argTypes = {
-  color: {
-    defaultValue: Button.defaultProps.color,
-    control: 'select',
-    options: colors,
-  },
-  variation: {
-    defaultValue: Button.defaultProps.variation,
-  },
-  size: {
-    defaultValue: Button.defaultProps.size,
-    control: 'select',
-    options: ['small', 'medium', 'large', 'extraLarge'],
-  },
-  disabled: {
-    defaultValue: false,
-    type: 'boolean',
+type ButtonStory = StoryObj<typeof Button>
+export const Usage: ButtonStory = {
+  render: (args) => <Button {...args}>Button</Button>,
+  argTypes: {
+    color: {
+      control: 'select',
+      options: colors,
+    },
+    variation: {
+      defaultValue: Button.defaultProps.variation,
+    },
+    size: {
+      control: 'select',
+      options: ['small', 'medium', 'large', 'extraLarge'],
+    },
+
+    disabled: {
+      defaultValue: false,
+      type: 'boolean',
+    },
   },
 }
 
-export const Sizes: ButtonStory = () => (
-  <Box>
-    <Button m={2} size='small'>
-      Small
-    </Button>
-    <Button m={2} size='medium'>
-      Large
-    </Button>
-    <Button m={2} size='large'>
-      Medium
-    </Button>
-    <Button m={2} size='extraLarge'>
-      Extra Large
-    </Button>
-  </Box>
-)
+export const Sizes: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} size='small'>
+        Small
+      </Button>
+      <Button m={2} size='medium'>
+        Medium
+      </Button>
+      <Button m={2} size='large'>
+        Large
+      </Button>
+      <Button m={2} size='extraLarge'>
+        Extra Large
+      </Button>
+    </Box>
+  ),
+}
 
-export const CoreVariations: ButtonStory = () => (
-  <Box>
-    <Button m={2} px={100} variation='fill'>
-      Fill
-    </Button>
-    <Button m={2} px={100} variation='outline'>
-      Outline
-    </Button>
-  </Box>
-)
+export const CoreVariations: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} px={100} variation='fill'>
+        Fill
+      </Button>
+      <Button m={2} px={100} variation='outline'>
+        Outline
+      </Button>
+    </Box>
+  ),
+}
 
-export const TonalVariations: ButtonStory = () => (
-  <Box bg='background.tint'>
-    <Button m={2} px={100} variation='plain'>
-      Fill
-    </Button>
-    <Button m={2} px={100} variation='white'>
-      Outline
-    </Button>
-  </Box>
-)
+export const TonalVariations: ButtonStory = {
+  render: () => (
+    <Box bg='background.tint'>
+      <Button m={2} px={100} variation='plain'>
+        Fill
+      </Button>
+      <Button m={2} px={100} variation='white'>
+        Outline
+      </Button>
+    </Box>
+  ),
+}
 
-export const TextButtons: ButtonStory = () => (
-  <Box>
-    <Button m={2} variation='link'>
-      Fill
-    </Button>
-    <Button m={2} variation='link'>
-      <Text fontWeight='bold'>Outline</Text>
-    </Button>
-  </Box>
-)
+export const TextButtons: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} variation='link'>
+        Fill
+      </Button>
+      <Button m={2} variation='link'>
+        <Text fontWeight='bold'>Outline</Text>
+      </Button>
+    </Box>
+  ),
+}
 
-export const SemanticStyles: ButtonStory = () => (
-  <Box>
-    <Button m={2} color='primary'>
-      Primary
-    </Button>
-    <Button m={2} color='secondary'>
-      Secondary
-    </Button>
-    <Button m={2} color='warning' variation='lightFill'>
-      Negative
-    </Button>
-  </Box>
-)
+export const SemanticStyles: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} color='primary'>
+        Primary
+      </Button>
+      <Button m={2} color='secondary'>
+        Secondary
+      </Button>
+      <Button m={2} color='warning' variation='lightFill'>
+        Negative
+      </Button>
+    </Box>
+  ),
+}
 
-export const Disabled: ButtonStory = () => (
-  <Box>
-    <Button m={2} disabled>
-      Continue
-    </Button>
-    <Button m={2} disabled variation='link'>
-      Button
-    </Button>
-  </Box>
-)
+export const Disabled: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} disabled>
+        Continue
+      </Button>
+      <Button m={2} disabled variation='link'>
+        Button
+      </Button>
+    </Box>
+  ),
+}
 
-export const Variations: ButtonStory = () => (
-  <Box>
-    <Button m={2} variation='outline'>
-      Outline
-    </Button>
-    <Button m={2} variation='lightFill'>
-      Light Fill
-    </Button>
-  </Box>
-)
+export const Variations: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} variation='outline'>
+        Outline
+      </Button>
+      <Button m={2} variation='lightFill'>
+        Light Fill
+      </Button>
+    </Box>
+  ),
+}
 
-export const BorderRadius: ButtonStory = () => (
-  <Box>
-    <Button m={2} borderRadius='sm'>
-      Small
-    </Button>
-    <Button m={2} borderRadius='md'>
-      Medium
-    </Button>
-    <Button m={2} borderRadius='lg'>
-      Large
-    </Button>
-    <Button m={2} borderRadius='xl'>
-      Extra Large
-    </Button>
-  </Box>
-)
+export const BorderRadius: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} borderRadius='sm'>
+        Small
+      </Button>
+      <Button m={2} borderRadius='md'>
+        Medium
+      </Button>
+      <Button m={2} borderRadius='lg'>
+        Large
+      </Button>
+      <Button m={2} borderRadius='xl'>
+        Extra Large
+      </Button>
+    </Box>
+  ),
+}
 
 const meta: Meta<typeof Button> = {
-  title: 'Forms/Button',
+  title: 'Actions/Button',
   component: Button,
   parameters: {
     docs: {

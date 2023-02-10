@@ -1,4 +1,4 @@
-import { Story } from '@storybook/react'
+import { Story, StoryObj } from '@storybook/react'
 import kebabCase from 'lodash/kebabCase'
 import prettier from 'prettier'
 import parserBabel from 'prettier/parser-babel'
@@ -17,4 +17,7 @@ export const formatCode = (code: string) =>
     printWidth: 120,
   })
 
-export const getStoryCode = (story: Story) => formatCode(reactElementToJSXString(story(story.args, null)))
+export const getStoryCode = (story: Story | StoryObj) => {
+  const code = typeof story === 'function' ? story(story.args, null) : story.render(story.args, null)
+  return formatCode(reactElementToJSXString(code, { showDefaultProps: false })).slice(0, -2)
+}

@@ -1,3 +1,4 @@
+export * from './DocTable'
 export * from './DoDont'
 export * from './Hero'
 export * from './LiveDemo'
