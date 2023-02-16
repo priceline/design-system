@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.5.2",
+      "tag": "pcln-design-system_v5.5.2",
+      "date": "Thu, 16 Feb 2023 16:33:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "ChoiceChip text should not wrap",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "83a42706d9e34856a378bb14fbec29e9481a04d0"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.1",
       "tag": "pcln-design-system_v5.5.1",
       "date": "Tue, 07 Feb 2023 17:29:36 GMT",

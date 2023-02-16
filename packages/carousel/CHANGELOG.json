@@ -2,6 +2,21 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.0.9",
+      "tag": "pcln-carousel_v2.0.9",
+      "date": "Thu, 16 Feb 2023 16:33:24 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.5.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.5.1` to `5.5.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.0.8",
       "tag": "pcln-carousel_v2.0.8",
       "date": "Tue, 07 Feb 2023 17:29:36 GMT",
