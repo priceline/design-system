@@ -10,8 +10,11 @@ import {
   borders,
   deprecatedColorValue,
   borderRadiusAttrs,
+  zIndex,
+  zIndexAttrs,
   applySizes,
 } from '../utils'
+import { ZIndex } from '../theme'
 
 const sizes = {
   sm: css`
@@ -28,7 +31,10 @@ const sizes = {
   `,
 }
 
-const StyledInput = styled.input.attrs(borderRadiusAttrs)`
+const StyledInput = styled.input.attrs((props) => ({
+  ...borderRadiusAttrs(props),
+  ...zIndexAttrs(props),
+}))`
   appearance: none;
   display: block;
   width: 100%;
@@ -50,6 +56,7 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Input')}
   ${borders}
+  ${zIndex}
 
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
@@ -79,21 +86,24 @@ export interface IInputProps
   color?: string
   size?: 'sm' | 'md' | 'lg' | 'xl'
   borderRadius?: string
+  zIndex?: ZIndex
 }
 
-export const Input: React.FC<IInputProps> & { isField?: boolean; HelperText?: React.FC<ITextProps> } =
-  React.forwardRef((props: IInputProps, ref) => {
-    const { helperText, color, ...restProps } = props
-    return (
-      <>
-        <StyledInput {...restProps} color={color} ref={ref} />
-        {helperText &&
-          React.cloneElement(helperText, {
-            color: helperText?.props?.color || color,
-          })}
-      </>
-    )
-  })
+export const Input: React.FC<IInputProps> & {
+  isField?: boolean
+  HelperText?: React.FC<ITextProps>
+} = React.forwardRef((props: IInputProps, ref) => {
+  const { helperText, color, ...restProps } = props
+  return (
+    <>
+      <StyledInput {...restProps} color={color} ref={ref} />
+      {helperText &&
+        React.cloneElement(helperText, {
+          color: helperText?.props?.color || color,
+        })}
+    </>
+  )
+})
 
 const HelperText = styled(Text).attrs(() => ({
   mt: 2,

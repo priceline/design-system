@@ -231,6 +231,34 @@ export const typography = {
   },
 }
 
+export type ZIndexStrings =
+  | 'auto'
+  | 'absolute'
+  | 'dropdown'
+  | 'sticky'
+  | 'fixed'
+  | 'overlay'
+  | 'onOverlay'
+  | 'offCanvas'
+  | 'modal'
+  | 'popover'
+  | 'tooltip'
+export type ZIndex = number | ZIndexStrings
+
+export const zIndices: Record<ZIndexStrings, string | number> = {
+  auto: 'auto',
+  absolute: 50,
+  dropdown: 100,
+  sticky: 200,
+  fixed: 300,
+  overlay: 400,
+  onOverlay: 450,
+  offCanvas: 500,
+  modal: 600,
+  popover: 700,
+  tooltip: 800,
+}
+
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
 export const radius = '2px'
@@ -392,6 +420,7 @@ const theme = {
   duration,
   timingFunctions,
   transitionDelays,
+  zIndices,
 }
 
 export { theme }

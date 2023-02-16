@@ -3,8 +3,11 @@
 import React, { useState } from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
+import { zIndexAttrs } from '../utils'
 
-export const ShadowOverlay = styled.div`
+export const ShadowOverlay = styled.div.attrs((props) => ({
+  ...zIndexAttrs({ ...props, zIndex: props.zIndex || 'overlay' }),
+}))`
   display: block;
   position: fixed;
   top: 0;
@@ -12,6 +15,9 @@ export const ShadowOverlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.65);
+  ${(props) => {
+    console.log(props.zIndex)
+  }};
   z-index: ${(props) => props.zIndex};
 `
 
@@ -59,7 +65,7 @@ const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
     <>
       {isOpen && <ShadowOverlay zIndex={zIndex} onClick={handleClose} {...props} />}
       {React.cloneElement(child, {
-        style: { position: 'relative', zIndex: isOpen && zIndex },
+        zIndex: isOpen && (zIndex || 'onOverlay'),
         onBlur: () => {
           const onBlur = child.props.onBlur
           onBlur && onBlur()
@@ -86,9 +92,5 @@ const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
 }
 
 ShadowEffect.propTypes = propTypes
-
-ShadowEffect.defaultProps = {
-  zIndex: 10,
-}
 
 export default ShadowEffect
