@@ -53,6 +53,13 @@ const labelOnly = [
 ]
 export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive])
 
+const noTextWrap = [
+  { label: 'Lots of Words that Do Not Wrap' },
+  { label: 'Long Words and Things!', selected: true },
+  { label: 'This Is A Test', selected: true, disabled: true },
+]
+export const NoTextWrap = () => getExamples(noTextWrap, [small, medium, responsive])
+
 //With Icon
 const withIcon = [
   { label: 'Enabled', Icon: Departure },
