@@ -49,7 +49,8 @@ const getExamples = (exampleProps, sizes) => (
 const labelOnly = [
   { label: 'Enabled' },
   { label: 'Active', selected: true },
-  { label: 'Active', selected: true, disabled: true },
+  { label: 'Disabled', disabled: true },
+  { label: 'Active and Disabled', selected: true, disabled: true },
 ]
 export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive])
 
@@ -57,7 +58,8 @@ export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive
 const withIcon = [
   { label: 'Enabled', Icon: Departure },
   { label: 'Active', selected: true, Icon: Departure },
-  { label: 'Active', selected: true, disabled: true, Icon: Departure },
+  { label: 'Disabled', disabled: true, Icon: Departure },
+  { label: 'Active and Disabled', selected: true, disabled: true, Icon: Departure },
 ]
 export const WithIcon = () => getExamples(withIcon, [small, medium, responsive])
 
@@ -65,7 +67,8 @@ export const WithIcon = () => getExamples(withIcon, [small, medium, responsive])
 const withFacet = [
   { label: 'Enabled', facet: '(00)' },
   { label: 'Active', facet: '(00)', selected: true },
-  { label: 'Active', facet: '(00)', selected: true, disabled: true },
+  { label: 'Disabled', facet: '(00)', disabled: true },
+  { label: 'Active and Disabled', facet: '(00)', selected: true, disabled: true },
 ]
 export const WithFacet = () => getExamples(withFacet, [small, medium, responsive])
 
@@ -74,7 +77,13 @@ const withFacetAndIcon = [
   { label: 'Enabled', facet: '(00)', Icon: Departure },
   { label: 'Active', facet: '(00)', Icon: Departure, selected: true },
   {
-    label: 'Active',
+    label: 'Disabled',
+    facet: '(00)',
+    Icon: Departure,
+    disabled: true,
+  },
+  {
+    label: 'Active and Disabled',
     facet: '(00)',
     Icon: Departure,
     selected: true,
@@ -87,6 +96,7 @@ export const WithIconAndFacet = () => getExamples(withFacetAndIcon, [small, medi
 const iconOnly = [
   { Icon: Departure, title: 'Departure' },
   { selected: true, Icon: Departure, title: 'Departure' },
+  { disabled: true, Icon: Departure, title: 'Departure' },
   { selected: true, disabled: true, Icon: Departure, title: 'Departure' },
 ]
 export const IconOnly = () => getExamples(iconOnly, [small, medium, responsive])
@@ -95,7 +105,8 @@ export const IconOnly = () => getExamples(iconOnly, [small, medium, responsive])
 const withImage = [
   { label: 'Enabled', image: image },
   { label: 'Active', selected: true, image: image },
-  { label: 'Active', selected: true, disabled: true, image: image },
+  { label: 'Disabled', disabled: true, image: image },
+  { label: 'Active and Disabled', selected: true, disabled: true, image: image },
 ]
 export const WithImage = () => getExamples(withImage, [medium])
 
@@ -104,7 +115,13 @@ const withImageAndBridgeLabel = [
   { label: 'Enabled', image: image, bridgeLabel: 'Bridge' },
   { label: 'Active', selected: true, image: image, bridgeLabel: 'Bridge' },
   {
-    label: 'Active',
+    label: 'Disabled',
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+  },
+  {
+    label: 'Active and Disabled',
     selected: true,
     disabled: true,
     image: image,
@@ -117,6 +134,7 @@ export const WithImageAndBridgeLabel = () => getExamples(withImageAndBridgeLabel
 const imageOnly = [
   { image: image },
   { selected: true, image: image },
+  { disabled: true, image: image },
   { selected: true, disabled: true, image: image },
 ]
 export const ImageOnly = () => getExamples(imageOnly, [medium])
@@ -145,6 +163,26 @@ export const CustomChip = () => (
       </Box>
     </ChoiceChip>
     <ChoiceChip id='customChip3' name='customChoice' m={1}>
+      <Box px={3} py={1}>
+        <Text textAlign='center' bold fontSize={1}>
+          Express Deals
+        </Text>
+        <Text textAlign='center' regular fontSize={0}>
+          <Text.span color='green'>$130</Text.span> avg. per night
+        </Text>
+      </Box>
+    </ChoiceChip>
+    <ChoiceChip id='customChip4' name='customChoice' m={1} disabled>
+      <Box px={3} py={1}>
+        <Text textAlign='center' bold fontSize={1}>
+          Express Deals
+        </Text>
+        <Text textAlign='center' regular fontSize={0}>
+          <Text.span color='green'>$130</Text.span> avg. per night
+        </Text>
+      </Box>
+    </ChoiceChip>
+    <ChoiceChip id='customChip5' name='customChoice' m={1} selected disabled>
       <Box px={3} py={1}>
         <Text textAlign='center' bold fontSize={1}>
           Express Deals
