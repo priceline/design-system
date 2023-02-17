@@ -29,7 +29,7 @@ const getBorderColor = (props) =>
   props.disabled ? 'transparent' : getPaletteColor(props.selected ? 'base' : 'border.base')(props)
 
 const getBackgroundColor = (props) =>
-  props.disabled ? 'background.light' : props.selected ? 'light' : 'background.lightest'
+  props.disabled ? 'background.base' : props.selected ? 'light' : 'background.lightest'
 
 const ChipContentWrapper = styled(Box)`
   ${(props) => `
@@ -39,26 +39,31 @@ const ChipContentWrapper = styled(Box)`
     border: 1px solid ${getBorderColor(props)};
     ${
       props.disabled
-        ? ''
+        ? `
+          cursor: not-allowed; 
+          pointer-events: none;
+          `
         : `
-      &:hover {
-        border: 1px solid ${getPaletteColor('base')(props)};
-        background-color: ${getPaletteColor('background.lightest')(props)};
-      }
-    `
+          &:hover {
+            border: 1px solid ${getPaletteColor('base')(props)};
+            background-color: ${getPaletteColor('background.lightest')(props)};
+          }
+          `
     }
 
     ${
       props.selected
         ? `
-      &:hover {
-        color: ${getPaletteColor('tone')(props)};
-        border: 1px solid ${getPaletteColor('tone')(props)};
-        background-color: ${getPaletteColor('light')(props)};
-      }
-    `
+          &:hover {
+            color: ${getPaletteColor('tone')(props)};
+            border: 1px solid ${getPaletteColor('tone')(props)};
+            background-color: ${getPaletteColor('light')(props)};
+          }
+          `
         : ''
     }
+
+    ${props.disabled && props.selected ? `border: 1px solid ${getPaletteColor('text.light')(props)};` : ''}
   `}
   max-width: 100%;
   display: inline-flex;
