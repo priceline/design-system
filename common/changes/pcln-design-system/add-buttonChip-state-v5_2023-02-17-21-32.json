@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add buttonChip state",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
