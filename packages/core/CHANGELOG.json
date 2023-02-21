@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.4",
+      "tag": "pcln-design-system_v4.38.4",
+      "date": "Tue, 21 Feb 2023 17:25:27 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add buttonChip state disable and selected",
+            "author": "Ivan Valadares <104080527+ivan-valadares@users.noreply.github.com>",
+            "commit": "26f44202b1d14e005035d3634d9f7da751ad23b4"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.3",
       "tag": "pcln-design-system_v4.38.3",
       "date": "Fri, 27 Jan 2023 15:31:51 GMT",

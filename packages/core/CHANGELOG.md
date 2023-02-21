@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 27 Jan 2023 15:31:51 GMT and should not be manually modified.
+This log was last generated on Tue, 21 Feb 2023 17:25:27 GMT and should not be manually modified.
+
+## 4.38.4
+Tue, 21 Feb 2023 17:25:27 GMT
+
+### Patches
+
+- add buttonChip state disable and selected
 
 ## 4.38.3
 Fri, 27 Jan 2023 15:31:51 GMT
