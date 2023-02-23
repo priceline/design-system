@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add prop badgeStyle to Badge which apply semantic styling",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

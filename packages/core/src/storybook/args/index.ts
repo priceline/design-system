@@ -6,6 +6,8 @@ import {
   textStylesValues,
 } from '../../utils'
 
+import { badgeStyleValues } from '../../Badge/Badge'
+
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
 
 export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']
@@ -15,6 +17,8 @@ export const rounded = ['', ...roundedValues, 'NOTVALID']
 export const shadows = ['', ...boxShadowSizeValues, 'NOTVALID']
 
 export const textStyles = ['', ...textStylesValues, 'NOTVALID']
+
+export const badgeStyles = ['', ...badgeStyleValues, 'NOTVALID']
 
 export const inputArgs = ['sm', 'md', 'lg', 'xl']
 

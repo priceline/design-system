@@ -57,11 +57,106 @@ const sizes = {
   `,
 }
 
+const badgeStyles = {
+  primary: {
+    backgroundColor: themeGet('palette.primary.base'),
+    color: themeGet('palette.text.lightest'),
+  },
+  primaryLight: {
+    backgroundColor: themeGet('palette.primary.light'),
+    color: themeGet('palette.primary.base'),
+  },
+  primaryDark: {
+    backgroundColor: themeGet('palette.primary.dark'),
+    color: themeGet('palette.text.lightest'),
+  },
+  primaryDarkLight: {
+    backgroundColor: themeGet('palette.primary.light'),
+    color: themeGet('palette.primary.dark'),
+  },
+  secondary: {
+    backgroundColor: themeGet('palette.secondary.base'),
+    color: themeGet('palette.text.lightest'),
+  },
+  secondaryLight: {
+    backgroundColor: themeGet('palette.secondary.light'),
+    color: themeGet('palette.secondary.base'),
+  },
+  backgroundDarkest: {
+    backgroundColor: themeGet('palette.background.darkest'),
+    color: themeGet('palette.text.lightest'),
+  },
+  backgroundLightest: {
+    backgroundColor: themeGet('palette.background.lightest'),
+    color: themeGet('palette.text.base'),
+  },
+  neutral: {
+    backgroundColor: themeGet('palette.background.dark'),
+    color: themeGet('palette.text.lightest'),
+  },
+  neutralLight: {
+    backgroundColor: themeGet('palette.background.base'),
+    color: themeGet('palette.text.light'),
+  },
+  warning: {
+    backgroundColor: themeGet('palette.warning.base'),
+    color: themeGet('palette.text.lightest'),
+  },
+  warningLight: {
+    backgroundColor: themeGet('palette.warning.light'),
+    color: themeGet('palette.warning.base'),
+  },
+  highlight: {
+    backgroundColor: themeGet('palette.highlight.light'),
+    color: themeGet('palette.highlight.shade'),
+  },
+  notify: {
+    backgroundColor: themeGet('palette.notify.light'),
+    color: themeGet('palette.text.base'),
+  },
+  success: {
+    backgroundColor: themeGet('palette.success.base'),
+    color: themeGet('palette.text.lightest'),
+  },
+  successLight: {
+    backgroundColor: themeGet('palette.success.light'),
+    color: themeGet('palette.success.base'),
+  },
+}
+
+export const badgeStyleValues = Object.keys(badgeStyles)
+
+const badgeStyle = (props) => {
+  return (
+    !props.bg &&
+    !props.color &&
+    css`
+      ${badgeStyles[props.badgeStyle] || {}}
+    `
+  )
+}
 export interface IBadgeProps extends SpaceProps, React.HtmlHTMLAttributes<HTMLElement> {
   size?: 'small' | 'medium'
   color?: string
   bg?: string
   borderRadius?: string
+  badgeStyle?:
+    | 'primary'
+    | 'primaryLight'
+    | 'primaryDark'
+    | 'primaryDarkLight'
+    | 'secondary'
+    | 'secondaryLight'
+    | 'backgroundDarkest'
+    | 'backgroundLightest'
+    | 'neutral'
+    | 'neutralLight'
+    | 'warning'
+    | 'warningLight'
+    | 'highlight'
+    | 'notify'
+    | 'success'
+    | 'successLight'
 }
 
 const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
@@ -70,9 +165,12 @@ const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
-  ${space} ${type} ${color};
-
+  ${space}
+  ${type} 
+  ${color}
+  
   ${borderRadius}
+  ${badgeStyle}
 `
 
 Badge.displayName = 'Badge'
@@ -83,6 +181,7 @@ Badge.propTypes = {
   color: deprecatedColorValue(),
   bg: deprecatedColorValue(),
   borderRadius: PropTypes.string,
+  badgeStyle: PropTypes.oneOf(badgeStyleValues),
 }
 
 Badge.defaultProps = {

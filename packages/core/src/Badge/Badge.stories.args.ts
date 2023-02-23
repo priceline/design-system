@@ -1,4 +1,4 @@
-import { borderRadii, colors } from '../storybook/args'
+import { borderRadii, colors, badgeStyles } from '../storybook/args'
 
 export const argTypes = {
   borderRadius: {
@@ -24,6 +24,15 @@ export const argTypes = {
     type: { name: 'string' },
     options: colors,
     description: 'Color of badge',
+    control: {
+      type: 'select',
+    },
+  },
+  badgeStyle: {
+    name: 'badgeStyle',
+    type: { name: 'string' },
+    options: badgeStyles,
+    description: 'Semantic badge styles',
     control: {
       type: 'select',
     },

@@ -81,4 +81,68 @@ describe('Badge', () => {
     expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
     expect(json).toHaveStyleRule('color', theme.colors.text)
   })
+
+  test.each([
+    { badgeStyle: 'primary', backgroundColor: theme.colors.blue, color: theme.colors.lightestText },
+    { badgeStyle: 'primaryLight', backgroundColor: theme.colors.lightBlue, color: theme.colors.blue },
+    { badgeStyle: 'primaryDark', backgroundColor: theme.colors.darkBlue, color: theme.colors.lightestText },
+    { badgeStyle: 'primaryDarkLight', backgroundColor: theme.colors.lightBlue, color: theme.colors.darkBlue },
+    { badgeStyle: 'secondary', backgroundColor: theme.colors.green, color: theme.colors.lightestText },
+    { badgeStyle: 'secondaryLight', backgroundColor: theme.colors.lightGreen, color: theme.colors.green },
+    {
+      badgeStyle: 'backgroundDarkest',
+      backgroundColor: theme.colors.darkestBackground,
+      color: theme.colors.lightestText,
+    },
+    {
+      badgeStyle: 'backgroundLightest',
+      backgroundColor: theme.colors.lightestBackground,
+      color: theme.colors.text,
+    },
+    { badgeStyle: 'neutral', backgroundColor: theme.colors.darkBackground, color: theme.colors.lightestText },
+    {
+      badgeStyle: 'neutralLight',
+      backgroundColor: theme.colors.background,
+      color: theme.colors.lightText,
+    },
+    {
+      badgeStyle: 'warning',
+      backgroundColor: theme.colors.red,
+      color: theme.colors.lightestText,
+    },
+    {
+      badgeStyle: 'warningLight',
+      backgroundColor: theme.colors.lightRed,
+      color: theme.colors.red,
+    },
+    {
+      badgeStyle: 'highlight',
+      backgroundColor: theme.colors.lightHighlight,
+      color: theme.colors.shadeHighlight,
+    },
+    {
+      badgeStyle: 'notify',
+      backgroundColor: theme.colors.lightYellow,
+      color: theme.colors.text,
+    },
+    {
+      badgeStyle: 'success',
+      backgroundColor: theme.colors.green,
+      color: theme.colors.lightestText,
+    },
+    {
+      badgeStyle: 'successLight',
+      backgroundColor: theme.colors.lightGreen,
+      color: theme.colors.green,
+    },
+  ])(
+    'badgeStyle $badgeStyle sets background-color to $backgroundColor and color to $color',
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ({ badgeStyle, backgroundColor, color }: { badgeStyle: any; backgroundColor: string; color: string }) => {
+      const json = rendererCreateWithTheme(<Badge badgeStyle={badgeStyle} />).toJSON()
+      expect(json).toMatchSnapshot()
+      expect(json).toHaveStyleRule('background-color', backgroundColor)
+      expect(json).toHaveStyleRule('color', color)
+    }
+  )
 })

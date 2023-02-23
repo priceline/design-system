@@ -1,5 +1,1305 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Badge badgeStyle backgroundDarkest sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #001833;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle backgroundDarkest sets background-color to #001833 and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #001833;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle backgroundLighest sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle backgroundLighest sets background-color to #fff and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #001833;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle backgroundLightest sets background-color to #fff and color to #001833 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #001833;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle backgroundLightest sets background-color to #fff and color to undefined 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #001833;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle highlight sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #d0f1ac;
+  color: #017000;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle highlight sets background-color to #d0f1ac and color to #017000 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #d0f1ac;
+  color: #017000;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle neutral sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #4f6f8f;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle neutral sets background-color to #4f6f8f and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #4f6f8f;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle neutralLight sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #4f6f8f;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle neutralLight sets background-color to #4f6f8f and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #edf0f3;
+  color: #4f6f8f;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle neutralLight sets background-color to #edf0f3 and color to #4f6f8f 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #edf0f3;
+  color: #4f6f8f;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle notify sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fff3c0;
+  color: #001833;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle notify sets background-color to #fff3c0 and color to #001833 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fff3c0;
+  color: #001833;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primary sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0068ef;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primary sets background-color sets #0068ef and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0068ef;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primary sets background-color to #0068ef and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0068ef;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryDark sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #049;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryDark sets background-color sets #049 and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #049;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryDark sets background-color to #049 and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #049;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryDarkLight sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #e8f2ff;
+  color: #049;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryDarkLight sets background-color to #e8f2ff and color to #049 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #e8f2ff;
+  color: #049;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryLight sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #e8f2ff;
+  color: #0068ef;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryLight sets background-color sets #e8f2ff and color to #0068ef 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #e8f2ff;
+  color: #0068ef;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle primaryLight sets background-color to #e8f2ff and color to #0068ef 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #e8f2ff;
+  color: #0068ef;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle secondary sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle secondary sets background-color to #0a0 and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle secondaryLight sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #ecf7ec;
+  color: #0a0;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle secondaryLight sets background-color to #ecf7ec and color to #0a0 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #ecf7ec;
+  color: #0a0;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  color: #fff;
+}
+
+.c0 backgroundColor {
+  light: #e8f2ff;
+  tint: #99c3f9;
+  base: #0068ef;
+  tone: #0055c4;
+  dark: #049;
+  shade: #002f6d;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle success sets background-color to #0a0 and color to #001833 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle success sets background-color to #0a0 and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #0a0;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle successLight sets background-color to #ecf7ec and color to #0a0 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #ecf7ec;
+  color: #0a0;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle warning sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle warning sets background-color to #c00 and color to #fff 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #c00;
+  color: #fff;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle warningLight sets background-color and color 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fbebeb;
+  color: #c00;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`Badge badgeStyle warningLight sets background-color to #fbebeb and color to #c00 1`] = `
+.c0 {
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f4f6f8;
+  color: #001833;
+  border-radius: 9999px;
+  background-color: #fbebeb;
+  color: #c00;
+}
+
+<div
+  className="c0"
+  size="medium"
+/>
+`;
+
 exports[`Badge bg blue sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
