@@ -71,6 +71,7 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   align-items: center;
   position: relative;
   border-radius: 2px;
+  white-space: nowrap;
   ${({ theme, hasChildren }) => applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
   ${space};
   ${fontSize};

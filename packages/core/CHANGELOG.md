@@ -1,6 +1,21 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 24 Jan 2023 17:32:44 GMT and should not be manually modified.
+This log was last generated on Thu, 16 Feb 2023 16:33:24 GMT and should not be manually modified.
+
+## 5.5.2
+Thu, 16 Feb 2023 16:33:24 GMT
+
+### Patches
+
+- ChoiceChip text should not wrap
+
+## 5.5.1
+Tue, 07 Feb 2023 17:29:36 GMT
+
+### Patches
+
+- Add fix for onhover color check to getLinkStylesOn
+- Restore fallback in getPaletteColor
 
 ## 5.5.0
 Tue, 24 Jan 2023 17:32:44 GMT
