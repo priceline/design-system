@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update FormField to use an interface instead of prop types",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
