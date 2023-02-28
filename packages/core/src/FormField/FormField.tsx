@@ -1,6 +1,5 @@
 import React from 'react'
-import { InferProps } from 'prop-types'
-
+import PropTypes, { InferProps } from 'prop-types'
 import { Box } from '../Box'
 import { IconField } from '../IconField'
 
@@ -23,23 +22,8 @@ const paddingTopForLabel = {
   xl: '10px',
 }
 
-const childrenPropType = (props, propName, componentName) => {
-  const children = React.Children.toArray(props.children)
-  const [label] = children.filter((child) => child.type.isLabel)
-  const [field] = children.filter((child) => child.type.isField)
-
-  if (!field) {
-    return new Error(
-      `No form field found for ${componentName}. Please include an Input, Select, or other form field as a child.`
-    )
-  }
-  if (!label) {
-    return new Error(`No label found for ${componentName}. Please include a Label as a child.`)
-  }
-}
-
 const propTypes = {
-  children: childrenPropType,
+  children: PropTypes.node,
 }
 
 const inputPaddingTop = (size) => {

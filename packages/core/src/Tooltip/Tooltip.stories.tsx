@@ -1,5 +1,6 @@
 import React from 'react'
-import { Tooltip, InputField, Box, Flex } from '..'
+import { Box, Flex, FormField, Label, Input, Tooltip } from '..'
+import { Check } from 'pcln-icons'
 import { argTypes } from './Tooltip.stories.args'
 import styled from 'styled-components'
 
@@ -20,13 +21,13 @@ TooltipComponent.args = { color: 'primary' }
 
 export const WithoutAnchors = () => (
   <Box mt={5} width={500}>
-    <Tooltip bg='blue' color='white' top left>
+    <Tooltip color='primary' top left>
       left tooltip
     </Tooltip>
-    <Tooltip bg='black' color='white' top center>
+    <Tooltip color='primary' top center>
       centered tooltip
     </Tooltip>
-    <Tooltip bg='red' color='white' top right>
+    <Tooltip color='error' top right>
       right tooltip
     </Tooltip>
     <br />
@@ -45,94 +46,100 @@ export const WithoutAnchors = () => (
 export const WithAnchors = () => (
   <FlexColumn justifyContent='space-between' wrap='wrap'>
     <Box width={300} p={2} my={2}>
-      <Tooltip top left bg='blue' color='white'>
+      <Tooltip top left color='primary'>
         top left tooltip
       </Tooltip>
       <div>some text</div>
     </Box>
     <Box width={'300px'} p={2} mb={5}>
       <div>some text</div>
-      <Tooltip bottom left bg='red' color='white'>
+      <Tooltip bottom left color='error'>
         bottom left tooltip
       </Tooltip>
     </Box>
     <Box width={'300px'} p={2} mb={55}>
-      <InputField
-        icon='circleInfo'
-        color='blue'
-        label='Email Address'
-        defaultValue='albus.dumbledore@priceline.com'
-        id='form-field-3'
-        placeholder='example@test.com'
-      />
-      <Tooltip bottom left bg='blue' color='white'>
+      <FormField>
+        <Label>Email Address</Label>
+        <Input
+          defaultValue='albus.dumbledore@priceline.com'
+          id='form-field-3'
+          placeholder='example@test.com'
+        />
+        <Check color='primary' />
+      </FormField>
+      <Tooltip bottom left color='primary'>
         bottom left tooltip
       </Tooltip>
     </Box>
     <Box width={'300px'} p={2} mb={5}>
-      <InputField
-        icon='circleInfo'
-        color='blue'
-        label='Email Address'
-        defaultValue='albus.dumbledore@priceline.com'
-        id='form-field-4'
-        placeholder='example@test.com'
-      />
-      <Tooltip bottom center bg='blue' color='white'>
+      <FormField>
+        <Label>Email Address</Label>
+        <Input
+          defaultValue='albus.dumbledore@priceline.com'
+          id='form-field-4'
+          placeholder='example@test.com'
+        />
+        <Check color='primary' />
+      </FormField>
+      <Tooltip bottom center color='primary'>
         bottom center tooltip
       </Tooltip>
     </Box>
     <Box width={'300px'} p={2} mb={'80px'}>
-      <InputField
-        icon='circleInfo'
-        color='red'
-        label='Email Address'
-        defaultValue='albus.dumbledore@pr'
-        id='form-field-5'
-        placeholder='example@test.com'
-      />
-      <Tooltip bottom right bg='red' color='white'>
+      <FormField>
+        <Label>Email Address</Label>
+        <Input
+          defaultValue='albus.dumbledore@priceline.com'
+          id='form-field-5'
+          placeholder='example@test.com'
+        />
+        <Check color='error' />
+      </FormField>
+      <Tooltip bottom right color='error'>
         Email Address Invalid
       </Tooltip>
     </Box>
     <Box width={'300px'} p={2} mb={5}>
-      <Tooltip top left bg='blue' color='white'>
+      <Tooltip top left color='primary'>
         top left tooltip
       </Tooltip>
-      <InputField
-        icon='circleInfo'
-        color='blue'
-        label='Email Address'
-        defaultValue='albus.dumbledore@priceline.com'
-        id='form-field-6'
-        placeholder='example@test.com'
-      />
+      <FormField>
+        <Label>Email Address</Label>
+        <Input
+          defaultValue='albus.dumbledore@priceline.com'
+          id='form-field-6'
+          placeholder='example@test.com'
+        />
+        <Check color='primary' />
+      </FormField>
     </Box>
     <Box width={'300px'} p={2} mb={5}>
-      <Tooltip top center bg='blue' color='white'>
+      <Tooltip top center color='primary'>
         top center tooltip
       </Tooltip>
-      <InputField
-        icon='circleInfo'
-        color='blue'
-        label='Email Address'
-        defaultValue='albus.dumbledore@priceline.com'
-        id='form-field-7'
-        placeholder='example@test.com'
-      />
+      <FormField>
+        <Label>Email Address</Label>
+        <Input
+          defaultValue='albus.dumbledore@priceline.com'
+          id='form-field-7'
+          placeholder='example@test.com'
+        />
+        <Check color='primary' />
+      </FormField>
     </Box>
     <Box width={'300px'} p={2}>
-      <Tooltip top right bg='blue' color='white'>
+      <Tooltip top right color='primary'>
         top right tooltip
       </Tooltip>
-      <InputField
-        icon='circleInfo'
-        color='blue'
-        label='Email Address'
-        defaultValue='albus.dumbledore@priceline.com'
-        id='form-field-8'
-        placeholder='example@test.com'
-      />
+      <FormField>
+        <Label>Email Address</Label>
+        <Input
+          defaultValue='albus.dumbledore@priceline.com'
+          id='form-field-8'
+          placeholder='example@test.com'
+        />
+        <Check color='primary' />
+      </FormField>
     </Box>
   </FlexColumn>
 )
