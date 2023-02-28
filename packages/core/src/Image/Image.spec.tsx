@@ -51,4 +51,52 @@ describe('Image', () => {
     const image = screen.getByAltText('new-zealand-image')
     expect(image).toHaveStyleRule('border-radius', theme.borderRadii.xsm)
   })
+
+  it.each([
+    { propName: 'objectFit', propValue: undefined, styleName: 'object-fit', styleValue: 'unset' },
+    { propName: 'objectFit', propValue: 'contain', styleName: 'object-fit', styleValue: 'contain' },
+    { propName: 'objectFit', propValue: 'cover', styleName: 'object-fit', styleValue: 'cover' },
+    {
+      propName: 'objectPosition',
+      propValue: undefined,
+      styleName: 'object-position',
+      styleValue: 'center',
+    },
+    { propName: 'objectPosition', propValue: 'left', styleName: 'object-position', styleValue: 'left' },
+    { propName: 'objectPosition', propValue: 'right', styleName: 'object-position', styleValue: 'right' },
+    { propName: 'objectPosition', propValue: 'top', styleName: 'object-position', styleValue: 'top' },
+    {
+      propName: 'objectPosition',
+      propValue: 'topLeft',
+      styleName: 'object-position',
+      styleValue: 'top left',
+    },
+    {
+      propName: 'objectPosition',
+      propValue: 'topRight',
+      styleName: 'object-position',
+      styleValue: 'top right',
+    },
+    { propName: 'objectPosition', propValue: 'bottom', styleName: 'object-position', styleValue: 'bottom' },
+    {
+      propName: 'objectPosition',
+      propValue: 'bottomLeft',
+      styleName: 'object-position',
+      styleValue: 'bottom left',
+    },
+    {
+      propName: 'objectPosition',
+      propValue: 'bottomRight',
+      styleName: 'object-position',
+      styleValue: 'bottom right',
+    },
+  ])(
+    'renders with style $styleName = $styleValue, when $propName = $propValue',
+    ({ propName, propValue, styleName, styleValue }) => {
+      render(<Image alt='new-zealand-image' src={imageSrc} {...{ [propName]: propValue }} />)
+
+      const image = screen.getByAltText('new-zealand-image')
+      expect(image).toHaveStyleRule(styleName, styleValue)
+    }
+  )
 })

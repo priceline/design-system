@@ -1,4 +1,4 @@
-import { colors, borderRadii, rounded, shadows } from '../storybook/args'
+import { colors, borderRadii, rounded, shadows, objectFits, objectPositions } from '../storybook/args'
 export const argTypes = {
   borderRadius: {
     name: 'borderRadius',
@@ -54,5 +54,23 @@ export const argTypes = {
     name: 'width',
     type: { name: 'string' },
     description: 'width',
+  },
+  objectFit: {
+    name: 'objectFit',
+    type: { name: 'string' },
+    options: objectFits,
+    description: 'How img is resized to fit its container',
+    control: {
+      type: 'select',
+    },
+  },
+  objectPosition: {
+    name: 'objectPosition',
+    type: { name: 'string' },
+    options: objectPositions,
+    description: 'How img is aligned within its container',
+    control: {
+      type: 'select',
+    },
   },
 }

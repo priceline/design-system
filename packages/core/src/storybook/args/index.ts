@@ -4,6 +4,8 @@ import {
   paletteFamilies,
   roundedValues,
   textStylesValues,
+  objectFitValues,
+  objectPositionValues,
 } from '../../utils'
 
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
@@ -47,3 +49,7 @@ export const spaceArgs = [
 }, {})
 
 export const fontSizes = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+export const objectFits = ['', ...objectFitValues, 'NOTVALID']
+
+export const objectPositions = ['', ...objectPositionValues, 'NOTVALID']

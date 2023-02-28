@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image } from '..'
+import { Box } from '../Box'
 import { argTypes } from './Image.stories.args'
 
 const description = 'A low-level layout component that renders an image'
@@ -19,7 +20,11 @@ export default {
   argTypes,
 }
 
-const Template = (args) => <Image {...args} src={imageSrc} />
+const Template = (args) => (
+  <Box>
+    <Image {...args} src={imageSrc} />
+  </Box>
+)
 
 export const Default = Template.bind({})
 

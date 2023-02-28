@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add props objectFit and ObjectPosition to Image which apply corresponding CSS styling",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
