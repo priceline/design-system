@@ -4,7 +4,7 @@ import React from 'react'
 import { Box, IBoxProps } from '../Box'
 import { IconField } from '../IconField'
 
-interface IFormFieldProps extends IBoxProps {}
+export interface IFormFieldProps extends IBoxProps {}
 
 const paddingTopWithLabel = {
   sm: '14px',
