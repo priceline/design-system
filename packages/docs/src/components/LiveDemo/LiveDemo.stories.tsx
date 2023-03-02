@@ -1,16 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { ThemeProvider } from 'pcln-design-system'
 import React from 'react'
-import reactElementToJSXString from 'react-element-to-jsx-string'
-import { Hero, LiveDemo, LiveDemoProps } from '..'
+import { LiveDemo, LiveDemoProps } from '..'
+import { Usage as HeroUsage } from '../Hero/Hero.stories'
 
 const exampleProps: LiveDemoProps = {
-  code: reactElementToJSXString(
-    <Hero img='https://source.unsplash.com/random/?superhero/' name='Hero'>
-      Deleniti sit quos quo dolores fugiat in id officiis. Tenetur et non. Omnis nam illum repellendus nostrum
-      rerum vitae. Omnis similique velit soluta. At veritatis quae dolores distinctio sit.
-    </Hero>
-  ),
+  code: HeroUsage,
 }
 
 type LiveDemoStory = StoryObj<typeof LiveDemo>
