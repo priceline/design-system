@@ -10,12 +10,12 @@ export type DocTableProps<T> = {
 
 export const DocTable = <T extends object>({ data, columns, ...rest }: DocTableProps<T>) => {
   return (
-    <Box my={4} p={3} {...rest}>
-      <table style={{ width: '100%', borderSpacing: 0, borderColor: theme.palette.border.base }}>
+    <Box my={4} {...rest}>
+      <table style={{ width: '100%', borderSpacing: 0, borderColor: theme.palette.border.tint }}>
         <thead>
           <tr style={{ backgroundColor: theme.palette.background.light }}>
             {columns.map((col, i) => (
-              <th key={i}>
+              <th key={i} style={{ width: i === 0 ? '25%' : undefined }}>
                 <Text p={3} textAlign='left' style={{ whiteSpace: 'nowrap' }}>
                   {col.heading}
                 </Text>

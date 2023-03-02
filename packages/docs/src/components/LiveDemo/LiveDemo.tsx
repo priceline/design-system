@@ -145,19 +145,23 @@ export const LiveDemo = ({ code }: LiveDemoProps) => {
     <Pcln.Box my={3} borderRadius='xl' style={{ border: '1px solid #0002' }}>
       <LiveProvider code={editorCode} scope={scope} theme={theme}>
         <Pcln.Relative>
-          <Pcln.Relative p={3}>
+          <Pcln.Relative p={4}>
             <LivePreview />
           </Pcln.Relative>
           <Pcln.Absolute display='flex' right={1} bottom={1}>
-            <Pcln.IconButton
-              icon={<ShowCodeIcon color='text.dark' />}
+            <Pcln.Button
+              variation='link'
+              style={{ display: 'flex', alignItems: 'center', gap: 4 }}
               onClick={() => setShowCode(!showCode)}
-            />
+            >
+              {showCode ? 'Hide Code' : 'Show Code'}
+              <ShowCodeIcon />
+            </Pcln.Button>
           </Pcln.Absolute>
         </Pcln.Relative>
         {showCode && (
           <Pcln.Animate variant='expandDown'>
-            <Pcln.Relative bg='background.darkest' p={3} borderRadius='xl'>
+            <Pcln.Relative rounded='bottom' bg='background.darkest' p={3} borderRadius='xl'>
               <LiveEditor onChange={(newCode) => setEditorCode(newCode.trim())} />
               <Pcln.Absolute right={3} bottom={3}>
                 {!copied && <Pcln.IconButton icon={<Copy color='text.light' />} onClick={handleCopy} />}

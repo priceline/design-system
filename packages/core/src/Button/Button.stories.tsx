@@ -189,7 +189,7 @@ const meta: Meta<typeof Button> = {
           />
 
           <Section heading='Overview'>
-            <Text>
+            <Text textStyle='paragraph'>
               Buttons allow users to trigger an action or event with a single click. For example, you can use
               a button for allowing the functionality of submitting a form, opening a dialog, canceling an
               action, or performing a delete operation.
@@ -202,7 +202,7 @@ const meta: Meta<typeof Button> = {
           </Section>
 
           <Section heading='Examples & Variations'>
-            <Text>
+            <Text textStyle='paragraph'>
               Each button variation and property has set functions that provide patterns and signals to the
               user their function and the desired actions on a per page and per component basis. Because of
               this it is very important that the different variants are implemented consistently across
@@ -210,7 +210,7 @@ const meta: Meta<typeof Button> = {
             </Text>
 
             <StoryHeading storyName='Sizes' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Our design system supports a default button size as well as a extraLarge, large and small size.
               If a large or small button is desired, set the size property to either extraLarge, large or
               small. These sizes allow for hierarchy, emphasis, larger/smaller touch targets, and flexibility.
@@ -237,7 +237,7 @@ const meta: Meta<typeof Button> = {
             <LiveDemo code={Sizes} />
 
             <StoryHeading storyName='Core Variations' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Our core button variations use fill and subtle properties. These buttons make up the majority of
               our
             </Text>
@@ -262,7 +262,7 @@ const meta: Meta<typeof Button> = {
             <LiveDemo code={CoreVariations} />
 
             <StoryHeading storyName='Tonal Variations' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Tonal variations can be used on their own to reduce hierarchy or paired with primary buttons for
               supporting actions.
             </Text>
@@ -287,14 +287,14 @@ const meta: Meta<typeof Button> = {
             <LiveDemo code={TonalVariations} />
 
             <StoryHeading storyName='Text Buttons' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Text buttons have less visual prominence, so should be used for secondary actions or low
               emphasis actions. Used when aligning with 16px, 14px, and 12px body copy.
             </Text>
             <LiveDemo code={TextButtons} />
 
             <StoryHeading storyName='Semantic Styles' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Text buttons have less visual prominence, so should be used for secondary actions or low
               emphasis actions. Used when aligning with 16px, 14px, and 12px body copy.
             </Text>
@@ -326,7 +326,7 @@ const meta: Meta<typeof Button> = {
 
           <Section heading='Styles & States'>
             <StoryHeading storyName='Disabled' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Disabled or inactive buttons are often “greyed out”, and used to communicate to the user that
               some kind of task needs to be completed by them before they can proceed. Components can inherit
               a disabled state, such as form fields, list items, cards, chips, and buttons.
@@ -342,14 +342,14 @@ const meta: Meta<typeof Button> = {
 
           <Section heading='Partner Theming'>
             <StoryHeading storyName='Variations' storyTitle={meta.title} />
-            <Text>
+            <Text textStyle='paragraph'>
               Priceline Partners and white-label products can have patterns different from those used on
               Priceline. To support a consistent user experience our button supports additional variations.
             </Text>
             <LiveDemo code={Variations} />
 
             <StoryHeading storyName='Border Radius' storyTitle={meta.title} />
-            <Text>Coming soon...</Text>
+            <Text textStyle='paragraph'>Coming soon...</Text>
             <LiveDemo code={BorderRadius} />
           </Section>
 
