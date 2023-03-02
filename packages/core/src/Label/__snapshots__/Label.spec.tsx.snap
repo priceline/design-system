@@ -8,7 +8,7 @@ exports[`Label Label hidden renders 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -38,7 +38,7 @@ exports[`Label Label nowrap renders 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -63,7 +63,7 @@ exports[`Label Label width renders 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -90,7 +90,7 @@ exports[`Label it renders 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;

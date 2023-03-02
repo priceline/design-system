@@ -226,7 +226,7 @@ export const typography = {
   label: {
     fontWeight: 700,
     fontSize: '10px',
-    lineHeight: '14px',
+    lineHeight: 1.4,
     letterSpacing: '0.2px',
   },
 }

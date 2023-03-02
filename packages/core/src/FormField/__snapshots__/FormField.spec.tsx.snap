@@ -19,7 +19,7 @@ exports[`FormField renders 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -179,7 +179,7 @@ exports[`FormField renders with Icon 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -361,7 +361,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -536,7 +536,7 @@ exports[`FormField renders with Select  1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
@@ -722,7 +722,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
-  line-height: 14px;
+  line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;

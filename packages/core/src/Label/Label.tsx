@@ -78,13 +78,13 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
   ${(props) => (props.onClick ? 'cursor: pointer;' : '')}
 
   ${applyVariations('Label')}
-
+  
+  ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${lineHeight}
   ${letterSpacing}
   ${space}
-  ${textStyle}
   ${width}
 
   ${nowrap}
