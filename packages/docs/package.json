@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
-  "types": "types/index.d.ts",
+  "types": "lib-esm/index.d.ts",
   "sideEffects": false,
   "files": [
     "lib-esm",

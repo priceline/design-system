@@ -1,8 +1,5 @@
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
-import { Section } from 'pcln-storybook'
-import React from 'react'
-import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
 import {
   DocTable,
   DoDont,
@@ -11,10 +8,13 @@ import {
   Note,
   RelatedComponent,
   RelatedComponentContainer,
-  // Section,
+  Section,
   StoryHeading,
   TableOfContents,
-} from '../storybook/components'
+} from 'pcln-storybook'
+import React from 'react'
+import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
+
 import alignmentImage from './Button.Image.Alignment.jpeg'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
