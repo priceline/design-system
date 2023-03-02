@@ -69,7 +69,10 @@ export interface ILabelProps
   onClick?: (evt: unknown) => void
 }
 
-const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(typographyAttrs)`
+const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
+  ...typographyAttrs(props),
+  ...props,
+}))`
   display: block;
   width: 100%;
   margin: 0;
@@ -79,12 +82,12 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
 
   ${applyVariations('Label')}
   
-  ${textStyle}
   ${fontSize}
   ${fontWeight}
   ${lineHeight}
   ${letterSpacing}
   ${space}
+  ${textStyle}
   ${width}
 
   ${nowrap}
@@ -94,8 +97,8 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
 Label.propTypes = labelPropTypes
 
 Label.defaultProps = {
-  textStyle: 'label',
   color: 'text.light',
+  textStyle: 'label',
 }
 
 Label.displayName = 'Label'

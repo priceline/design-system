@@ -89,7 +89,7 @@ exports[`FormField renders 1`] = `
   <label
     className="c0"
     color="text.light"
-    fontSize="10px"
+    fontSize={10}
     fontWeight={700}
     htmlFor="email"
     letterSpacing="0.2px"
@@ -250,7 +250,7 @@ exports[`FormField renders with Icon 1`] = `
   <label
     className="c0"
     color="text.light"
-    fontSize="10px"
+    fontSize={10}
     fontWeight={700}
     htmlFor="email"
     letterSpacing="0.2px"
@@ -432,7 +432,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   <label
     className="c0"
     color="text.light"
-    fontSize="10px"
+    fontSize={10}
     fontWeight={700}
     htmlFor="email"
     letterSpacing="0.2px"
@@ -595,7 +595,7 @@ exports[`FormField renders with Select  1`] = `
   <label
     className="c0"
     color="text.light"
-    fontSize="10px"
+    fontSize={10}
     fontWeight={700}
     letterSpacing="0.2px"
     style={
@@ -782,7 +782,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   <label
     className="c0"
     color="text.light"
-    fontSize="10px"
+    fontSize={10}
     fontWeight={700}
     letterSpacing="0.2px"
     style={
