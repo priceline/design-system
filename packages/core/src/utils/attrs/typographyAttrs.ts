@@ -29,6 +29,7 @@ export const textStylesValues = [
   'subheading4',
   'subheading5',
   'subheading6',
+  'label',
 ]
 
 export function typographyAttrs(props) {

@@ -1,17 +1,29 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {
   space,
   fontSize,
   fontWeight,
+  letterSpacing,
+  lineHeight,
+  textStyle,
   width,
   SpaceProps,
   FontSizeProps,
   FontWeightProps,
+  LineHeightProps,
+  TextStyleProps,
   WidthProps,
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
+import {
+  applyVariations,
+  getPaletteColor,
+  deprecatedColorValue,
+  textStylesValues,
+  typographyAttrs,
+} from '../utils'
 
 const nowrap = (props) =>
   props.nowrap
@@ -34,14 +46,19 @@ const labelPropTypes = {
   ...propTypes.space,
   ...propTypes.fontSize,
   ...propTypes.fontWeight,
+  ...propTypes.lineHeight,
+  ...propTypes.textStyle,
   ...propTypes.width,
   color: deprecatedColorValue(),
+  textStyle: PropTypes.oneOf(textStylesValues),
 }
 
 export interface ILabelProps
   extends SpaceProps,
     FontSizeProps,
     FontWeightProps,
+    LineHeightProps,
+    TextStyleProps,
     WidthProps,
     Partial<Omit<HTMLLabelElement, 'children'>> {
   children?: React.ReactNode | string
@@ -52,9 +69,7 @@ export interface ILabelProps
   onClick?: (evt: unknown) => void
 }
 
-const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label`
-  font-size: 10px;
-  letter-spacing: 0.2px;
+const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(typographyAttrs)`
   display: block;
   width: 100%;
   margin: 0;
@@ -63,7 +78,15 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label`
   ${(props) => (props.onClick ? 'cursor: pointer;' : '')}
 
   ${applyVariations('Label')}
-  ${space} ${fontSize} ${fontWeight} ${width};
+
+  ${fontSize}
+  ${fontWeight}
+  ${lineHeight}
+  ${letterSpacing}
+  ${space}
+  ${textStyle}
+  ${width}
+
   ${nowrap}
   ${accessiblyHide}
 `
@@ -71,8 +94,7 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label`
 Label.propTypes = labelPropTypes
 
 Label.defaultProps = {
-  fontSize: '10px',
-  fontWeight: 'bold',
+  textStyle: 'label',
   color: 'text.light',
 }
 
