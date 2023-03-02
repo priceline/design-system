@@ -1,8 +1,8 @@
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
+import { Section } from 'pcln-storybook'
 import React from 'react'
 import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
-import { colors } from '../storybook/args'
 import {
   DocTable,
   DoDont,
@@ -11,7 +11,7 @@ import {
   Note,
   RelatedComponent,
   RelatedComponentContainer,
-  Section,
+  // Section,
   StoryHeading,
   TableOfContents,
 } from '../storybook/components'
@@ -23,24 +23,24 @@ import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
 type ButtonStory = StoryObj<typeof Button>
 export const Usage: ButtonStory = {
   render: (args) => <Button {...args}>Button</Button>,
-  argTypes: {
-    color: {
-      control: 'select',
-      options: colors,
-    },
-    variation: {
-      defaultValue: Button.defaultProps.variation,
-    },
-    size: {
-      control: 'select',
-      options: ['small', 'medium', 'large', 'extraLarge'],
-    },
+  // argTypes: {
+  //   color: {
+  //     control: 'select',
+  //     options: colors,
+  //   },
+  //   variation: {
+  //     defaultValue: Button.defaultProps.variation,
+  //   },
+  //   size: {
+  //     control: 'select',
+  //     options: ['small', 'medium', 'large', 'extraLarge'],
+  //   },
 
-    disabled: {
-      defaultValue: false,
-      type: 'boolean',
-    },
-  },
+  //   disabled: {
+  //     defaultValue: false,
+  //     type: 'boolean',
+  //   },
+  // },
 }
 
 export const Sizes: ButtonStory = {

@@ -331,6 +331,7 @@ importers:
       lodash: ^4.17.21
       npm-run-all: ^4.1.5
       pcln-icons: workspace:*
+      pcln-storybook: workspace:*
       prettier: ^2.8.1
       prop-types: ^15.8.1
       react: ^17.0.2
@@ -389,6 +390,110 @@ importers:
       jest-styled-components: 7.1.1_styled-components@5.3.5
       lodash: 4.17.21
       npm-run-all: 4.1.5
+      pcln-storybook: link:../docs
+      prettier: 2.8.3
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-element-to-jsx-string: 15.0.0_sfoxds7t5ydpegc3knd667wn6m
+      react-live: 3.1.1_sfoxds7t5ydpegc3knd667wn6m
+      react-test-renderer: 17.0.2_react@17.0.2
+      react-textarea-autosize: 8.4.0_sudpmbbyhqtxq6t4xf6jlicdem
+      require-from-string: 2.0.2
+      rimraf: 3.0.2
+      styled-components: 5.3.5_sfoxds7t5ydpegc3knd667wn6m
+      tslib: 2.4.0
+      typescript: 4.7.4
+
+  ../../packages/docs:
+    specifiers:
+      '@babel/cli': ^7.16.7
+      '@babel/core': ^7.16.7
+      '@priceline/babel-preset': workspace:*
+      '@priceline/eslint-config': workspace:*
+      '@priceline/heft-component-rig': workspace:*
+      '@priceline/storybook-preset': workspace:*
+      '@rushstack/eslint-config': ^2.5.1
+      '@rushstack/eslint-patch': ^1.1.0
+      '@rushstack/heft': ^0.44.2
+      '@storybook/addon-actions': ^6.5.13
+      '@storybook/addon-docs': ^6.5.13
+      '@storybook/addon-interactions': ^6.5.13
+      '@storybook/addon-links': ^6.5.13
+      '@storybook/jest': ^0.0.10
+      '@storybook/react': ^6.5.13
+      '@storybook/testing-library': ^0.0.13
+      '@testing-library/jest-dom': ^5.15.0
+      '@testing-library/react': ^12.1.2
+      '@testing-library/react-hooks': ^7.0.2
+      '@types/jest': 27.4.0
+      '@types/react': ^17
+      '@types/styled-system': ^5.1.15
+      '@typescript-eslint/eslint-plugin': 5.10.0
+      '@typescript-eslint/parser': 5.10.0
+      camelcase: ^6.2.0
+      cross-env: ^7.0.3
+      eslint: ^8.6.0
+      framer-motion: ^6.5.1
+      jest: ^26.6.3
+      jest-standard-reporter: ^2.0.0
+      jest-styled-components: ^7.1.0
+      lodash: ^4.17.21
+      npm-run-all: ^4.1.5
+      pcln-design-system: workspace:*
+      pcln-icons: workspace:*
+      prettier: ^2.8.1
+      prop-types: ^15.7.2
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      react-element-to-jsx-string: ^15.0.0
+      react-live: ^3.1.1
+      react-test-renderer: ^17.0.2
+      react-textarea-autosize: 8.4.0
+      require-from-string: 2.0.2
+      rimraf: ^3.0.2
+      styled-components: ^5.3.5
+      styled-system: ^4.2.4
+      tslib: ^2.4.0
+      typescript: ^4.5.4
+    dependencies:
+      pcln-icons: link:../icons
+      prop-types: 15.8.1
+      styled-system: 4.2.4
+    devDependencies:
+      '@babel/cli': 7.18.6_@babel+core@7.18.6
+      '@babel/core': 7.18.6
+      '@priceline/babel-preset': link:../../tools/babel-preset
+      '@priceline/eslint-config': link:../../tools/eslint-config
+      '@priceline/heft-component-rig': link:../../rigs/component
+      '@priceline/storybook-preset': link:../../tools/storybook-preset
+      '@rushstack/eslint-config': 2.6.2_4x5o4skxv6sl53vpwefgt23khm
+      '@rushstack/eslint-patch': 1.1.4
+      '@rushstack/heft': 0.44.13
+      '@storybook/addon-actions': 6.5.13_sfoxds7t5ydpegc3knd667wn6m
+      '@storybook/addon-docs': 6.5.13_cneafqltn5h4wycp3d6f3cclnq
+      '@storybook/addon-interactions': 6.5.13_hstiq3mb4aefgebqo3e42phtw4
+      '@storybook/addon-links': 6.5.15_sfoxds7t5ydpegc3knd667wn6m
+      '@storybook/jest': 0.0.10_sfoxds7t5ydpegc3knd667wn6m
+      '@storybook/react': 6.5.13_466jio2u6zdoocnc2kl7ckfzfe
+      '@storybook/testing-library': 0.0.13_sfoxds7t5ydpegc3knd667wn6m
+      '@testing-library/jest-dom': 5.16.4
+      '@testing-library/react': 12.1.5_sfoxds7t5ydpegc3knd667wn6m
+      '@testing-library/react-hooks': 7.0.2_7qv3rjnqa3j7exc7qtvho7thru
+      '@types/jest': 27.4.0
+      '@types/react': 17.0.47
+      '@types/styled-system': 5.1.16
+      '@typescript-eslint/eslint-plugin': 5.10.0_tocnsfpt6tzwslenb2rme4mvtm
+      '@typescript-eslint/parser': 5.10.0_4x5o4skxv6sl53vpwefgt23khm
+      camelcase: 6.3.0
+      cross-env: 7.0.3
+      eslint: 8.19.0
+      framer-motion: 6.5.1_sfoxds7t5ydpegc3knd667wn6m
+      jest: 26.6.3
+      jest-standard-reporter: 2.0.0
+      jest-styled-components: 7.1.1_styled-components@5.3.5
+      lodash: 4.17.21
+      npm-run-all: 4.1.5
+      pcln-design-system: link:../core
       prettier: 2.8.3
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -7669,7 +7774,7 @@ packages:
   /@storybook/testing-library/0.0.13_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-vRMeIGer4EjJkTgI8sQyK9W431ekPWYCWL//OmSDJ64IT3h7FnW7Xg6p+eqM3oII98/O5pcya5049GxnjaPtxw==}
     dependencies:
-      '@storybook/client-logger': 6.5.13
+      '@storybook/client-logger': 6.5.15
       '@storybook/instrumenter': 6.5.13_sfoxds7t5ydpegc3knd667wn6m
       '@testing-library/dom': 8.14.0
       '@testing-library/user-event': 13.5.0_ihvo3xlg2d6kwqju3os3zitn3y
@@ -8388,6 +8493,12 @@ packages:
     dependencies:
       csstype: 2.6.20
     dev: false
+
+  /@types/styled-system/5.1.16:
+    resolution: {integrity: sha512-+dyGs2n2o6QStsexh87NeaRmXYnKOnEe7iOEkcYOwKwI5a1gFL0+Mt/hZKi+4KD1qDMkLkGb0lpDrffb/vSkDQ==}
+    dependencies:
+      csstype: 3.1.0
+    dev: true
 
   /@types/tapable/1.0.6:
     resolution: {integrity: sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA==}
@@ -13706,18 +13817,6 @@ packages:
         optional: true
     dev: false
 
-  /follow-redirects/1.15.1_debug@4.3.4:
-    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dependencies:
-      debug: 4.3.4_supports-color@6.1.0
-    dev: false
-
   /for-in/1.0.2:
     resolution: {integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==}
     engines: {node: '>=0.10.0'}
@@ -14821,7 +14920,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1_debug@4.3.4
+      follow-redirects: 1.15.1
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug

@@ -1,7 +1,6 @@
 {
-  "name": "pcln-design-system",
-  "version": "5.5.2",
-  "description": "Priceline Design System",
+  "name": "pcln-storybook",
+  "version": "0.0.1",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
   "types": "types/index.d.ts",
@@ -34,51 +33,12 @@
     "test:watch": "heft test --watch"
   },
   "author": "Priceline",
-  "contributors": [
-    {
-      "name": "Brent Jackson",
-      "email": "jxnblk@gmail.com"
-    },
-    {
-      "name": "Malek Hakim",
-      "email": "hakimelek@gmail.com"
-    },
-    {
-      "name": "Ben Chen",
-      "email": "benjaminlchen@gmail.com"
-    },
-    {
-      "name": "Evan Pipta",
-      "email": "3pipta@gmail.com"
-    },
-    {
-      "name": "Jonathan Schwarz",
-      "email": "jonathan.e.schwarz@gmail.com"
-    },
-    {
-      "name": "Steve Dalonzo",
-      "email": "steve.dalonzo@gmail.com"
-    },
-    {
-      "name": "Craig Palermo",
-      "email": "email@craigp.me"
-    },
-    {
-      "name": "Justin Trenary",
-      "email": "trenaryja@gmail.com"
-    }
-  ],
+  "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "@styled-system/prop-types": "^5.1.5",
-    "@styled-system/theme-get": "^5.1.2",
-    "@types/styled-system": "^4.2.2",
-    "deepmerge": "^4.2.2",
-    "hoist-non-react-statics": "^3.3.2",
     "pcln-icons": "workspace:*",
-    "prop-types": "^15.8.1",
-    "react-intersection-observer": "~9.4.0",
-    "styled-system": "^5.1.5"
+    "prop-types": "^15.7.2",
+    "styled-system": "^4.2.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
@@ -109,7 +69,6 @@
     "jest-styled-components": "^7.1.0",
     "lodash": "^4.17.21",
     "npm-run-all": "^4.1.5",
-    "pcln-storybook": "workspace:*",
     "prettier": "^2.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -126,12 +85,14 @@
     "@types/jest": "27.4.0",
     "@types/react": "^17",
     "@types/styled-system": "^5.1.15",
-    "framer-motion": "^6.5.1"
+    "framer-motion": "^6.5.1",
+    "pcln-design-system": "workspace:*"
   },
   "peerDependencies": {
     "react": ">= 16.10.0",
     "react-dom": ">= 16.10.0",
     "styled-components": ">=5 <5.3.4",
-    "framer-motion": ">= 6.5.1"
+    "framer-motion": ">= 6.5.1",
+    "pcln-design-system": "workspace:*"
   }
 }
