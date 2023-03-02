@@ -62,7 +62,7 @@ export const Sizes: ButtonStory = {
   ),
 }
 
-export const CoreVariations: ButtonStory = {
+export const PrimaryVariations: ButtonStory = {
   render: () => (
     <Box>
       <Button m={2} px={100} variation='fill'>
@@ -92,10 +92,23 @@ export const TextButtons: ButtonStory = {
   render: () => (
     <Box>
       <Button m={2} variation='link'>
-        Fill
+        Button
       </Button>
       <Button m={2} variation='link'>
-        <Text fontWeight='bold'>Outline</Text>
+        <Text fontWeight='bold'>Button</Text>
+      </Button>
+    </Box>
+  ),
+}
+
+export const AdditionalVariations: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} variation='outline'>
+        Outline
+      </Button>
+      <Button m={2} variation='lightFill'>
+        Light Fill
       </Button>
     </Box>
   ),
@@ -125,19 +138,6 @@ export const Disabled: ButtonStory = {
       </Button>
       <Button m={2} disabled variation='link'>
         Button
-      </Button>
-    </Box>
-  ),
-}
-
-export const Variations: ButtonStory = {
-  render: () => (
-    <Box>
-      <Button m={2} variation='outline'>
-        Outline
-      </Button>
-      <Button m={2} variation='lightFill'>
-        Light Fill
       </Button>
     </Box>
   ),
@@ -180,8 +180,8 @@ const meta: Meta<typeof Button> = {
               'Overview',
               'Props',
               'Examples & Variations',
-              'Styles & States',
-              'Partner Theming',
+              'States',
+              'Theming',
               'Usage',
               `Do's and Don'ts`,
               'Related Components',
@@ -226,7 +226,7 @@ const meta: Meta<typeof Button> = {
                   useCase:
                     'Use when there is not enough space for the default and in responsive patterns on mobile breakpoints.',
                 },
-                { size: 'Medium', useCase: 'This is the most commonly used button size.' },
+                { size: 'Medium (default)', useCase: 'This is the most commonly used button size.' },
                 { size: 'Large', useCase: 'Use when buttons are paired with input fields.' },
                 {
                   size: 'Extra Large',
@@ -236,10 +236,10 @@ const meta: Meta<typeof Button> = {
             />
             <LiveDemo code={Sizes} />
 
-            <StoryHeading storyName='Core Variations' storyTitle={meta.title} />
+            <StoryHeading storyName='Primary Variations' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
-              Our core button variations use fill and subtle properties. These buttons make up the majority of
-              our
+              Our core button variations use fill and subtle properties. These variations make up the majority
+              of our button styles outside of the conversion funnel.
             </Text>
             <DocTable
               columns={[
@@ -259,12 +259,12 @@ const meta: Meta<typeof Button> = {
                 },
               ]}
             />
-            <LiveDemo code={CoreVariations} />
+            <LiveDemo code={PrimaryVariations} />
 
             <StoryHeading storyName='Tonal Variations' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
-              Tonal variations can be used on their own to reduce hierarchy or paired with primary buttons for
-              supporting actions.
+              In addition to Fill and Subtle, Plain and White variations can be used on their own to reduce
+              emphasis, provide contrast, or paired with primary buttons for supporting actions.
             </Text>
             <DocTable
               columns={[
@@ -293,6 +293,41 @@ const meta: Meta<typeof Button> = {
             </Text>
             <LiveDemo code={TextButtons} />
 
+            <StoryHeading storyName='Additional Variations' storyTitle={meta.title} />
+            <Text textStyle='paragraph'>
+              Although rarely used on Priceline, we understand these are popular variations used in interface
+              design.
+            </Text>
+            <LiveDemo code={AdditionalVariations} />
+          </Section>
+
+          <Section heading='States'>
+            <Text textStyle='paragraph'>
+              States are visual representations used to communicate the status of a component or interactive
+              element.
+            </Text>
+            <Flex p={4} my={4} borderRadius='xl' bg='primary.light' style={{ gap: 16 }}>
+              <Button>Enabled</Button>
+              <Button>Hover</Button>
+              <Button>Focus</Button>
+            </Flex>
+
+            <StoryHeading storyName='Disabled' storyTitle={meta.title} />
+            <Text textStyle='paragraph'>
+              Disabled or inactive buttons are often “greyed out”, and used to communicate to the user that
+              some kind of task needs to be completed by them before they can proceed. Components can inherit
+              a disabled state, such as form fields, list items, cards, chips, and buttons.
+            </Text>
+            <LiveDemo code={Disabled} />
+            <Note>
+              Not all users know that an interactive design element can have disabled state. If you show an
+              element but don&apos;t allow people to interact with it, they then have to interpret why they
+              can&apos;t. Not everyone will be able to do this, for this reason and other issues try to avoid
+              disabling buttons or actions.
+            </Note>
+          </Section>
+
+          <Section heading='Theming'>
             <StoryHeading storyName='Semantic Styles' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Text buttons have less visual prominence, so should be used for secondary actions or low
@@ -322,34 +357,18 @@ const meta: Meta<typeof Button> = {
               ]}
             />
             <LiveDemo code={SemanticStyles} />
-          </Section>
-
-          <Section heading='Styles & States'>
-            <StoryHeading storyName='Disabled' storyTitle={meta.title} />
-            <Text textStyle='paragraph'>
-              Disabled or inactive buttons are often “greyed out”, and used to communicate to the user that
-              some kind of task needs to be completed by them before they can proceed. Components can inherit
-              a disabled state, such as form fields, list items, cards, chips, and buttons.
-            </Text>
-            <LiveDemo code={Disabled} />
-            <Note>
-              Not all users know that an interactive design element can have disabled state. If you show an
-              element but don&apos;t allow people to interact with it, they then have to interpret why they
-              can&apos;t. Not everyone will be able to do this, for this reason and other issues try to avoid
-              disabling buttons or actions.
-            </Note>
-          </Section>
-
-          <Section heading='Partner Theming'>
-            <StoryHeading storyName='Variations' storyTitle={meta.title} />
-            <Text textStyle='paragraph'>
-              Priceline Partners and white-label products can have patterns different from those used on
-              Priceline. To support a consistent user experience our button supports additional variations.
-            </Text>
-            <LiveDemo code={Variations} />
 
             <StoryHeading storyName='Border Radius' storyTitle={meta.title} />
-            <Text textStyle='paragraph'>Coming soon...</Text>
+            <Text.p textStyle='paragraph'>
+              One of the most BLNK characteristics of a button is the size and shape of it’s radius. When
+              designing a system and theme from scratch or editing a theme to match an existing system, having
+              a consistent pattern for actions is instrumental in providing a quality user experience.
+            </Text.p>
+            <Text.p textStyle='paragraph'>
+              Our system supports radius setting for three action sizes, large, medium, and small. Each radius
+              can be set to the same, scale, or styled to pare larger actions with form inputs while at the
+              same time rounding smaller actions to improve engagement.
+            </Text.p>
             <LiveDemo code={BorderRadius} />
           </Section>
 
@@ -357,11 +376,11 @@ const meta: Meta<typeof Button> = {
             <Text textStyle='subheading3' my={4}>
               Responsive Layout
             </Text>
-            <Text.p>
+            <Text.p textStyle='paragraph'>
               When scaling layouts for large screen devices, buttons can adapt their visual presentation,
               alignment, and arrangement to fit different contexts and user needs.
             </Text.p>
-            <Text.p>
+            <Text.p textStyle='paragraph'>
               The size and placement of buttons can change as parent containers, such as cards, adapt for
               larger screens.
             </Text.p>
@@ -372,19 +391,19 @@ const meta: Meta<typeof Button> = {
             <Text textStyle='subheading3' my={4}>
               Alignment
             </Text>
-            <Text.p>
+            <Text.p textStyle='paragraph'>
               Alignment indicates whether the button aligns left, right or full width in a window, page,
               container, or component. What makes buttons different than most components is that their
               alignment can be independent, aligned with content, fit and fill containers.
             </Text.p>
-            <Text.p>
+            <Text.p textStyle='paragraph'>
               As a general rule actions follow a similar rule as text, aligning to the left side on pages and
               components. When users are progressing through a series of steps or action required modals, the
               primary action traditionally sits at the bottom right. Buttons within components such as
               notifications, search fields, and data tables are also right-aligned. However there are times
               when the button In some cases a button group may span the entire width of a window or container.
             </Text.p>
-            <Text.p>Typical nested button locations include:</Text.p>
+            <Text.p textStyle='paragraph'>Typical nested button locations include:</Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
               <Image src={alignmentImage} />
             </Box>
@@ -392,13 +411,13 @@ const meta: Meta<typeof Button> = {
             <Text textStyle='subheading3' my={4}>
               Button Groups
             </Text>
-            <Text.p>
+            <Text.p textStyle='paragraph'>
               Button Groups Button groups are a design pattern used when presenting users with multiple call
               to actions with hierarchical emphasis or of equal value. Understanding the correct combinations
               of hierarchy and size when displaying groups of buttons helps to prevent the user from feeling
               overwhelm and confuse.
             </Text.p>
-            <Text.p>
+            <Text.p textStyle='paragraph'>
               As a general rule button groups should be limited to only medium, small, and text buttons.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
