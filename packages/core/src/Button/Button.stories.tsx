@@ -114,6 +114,19 @@ export const AdditionalVariations: ButtonStory = {
   ),
 }
 
+export const Disabled: ButtonStory = {
+  render: () => (
+    <Box>
+      <Button m={2} disabled>
+        Continue
+      </Button>
+      <Button m={2} disabled variation='link'>
+        Button
+      </Button>
+    </Box>
+  ),
+}
+
 export const SemanticStyles: ButtonStory = {
   render: () => (
     <Box>
@@ -125,19 +138,6 @@ export const SemanticStyles: ButtonStory = {
       </Button>
       <Button m={2} color='warning' variation='lightFill'>
         Negative
-      </Button>
-    </Box>
-  ),
-}
-
-export const Disabled: ButtonStory = {
-  render: () => (
-    <Box>
-      <Button m={2} disabled>
-        Continue
-      </Button>
-      <Button m={2} disabled variation='link'>
-        Button
       </Button>
     </Box>
   ),
