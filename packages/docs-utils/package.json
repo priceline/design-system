@@ -1,5 +1,5 @@
 {
-  "name": "pcln-storybook",
+  "name": "@priceline/docs-utils",
   "version": "0.0.1",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",

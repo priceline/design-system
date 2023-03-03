@@ -1,5 +1,8 @@
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
+import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
+
 import {
   DocTable,
   DoDont,
@@ -10,18 +13,18 @@ import {
   RelatedComponentContainer,
   Section,
   StoryHeading,
+  StoryStage,
   TableOfContents,
-} from 'pcln-storybook'
-import React from 'react'
-import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
+} from '@priceline/docs-utils'
 
-import alignmentImage from './Button.Image.Alignment.jpeg'
+import alignmentImage from './Button.Image.Alignment.png'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
 import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
+import buttonStates from './Button.Image.States.png'
 
 type ButtonStory = StoryObj<typeof Button>
-export const Usage: ButtonStory = {
+export const Playground: ButtonStory = {
   render: (args) => <Button {...args}>Button</Button>,
   // argTypes: {
   //   color: {
@@ -45,46 +48,38 @@ export const Usage: ButtonStory = {
 
 export const Sizes: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} size='small'>
-        Small
-      </Button>
-      <Button m={2} size='medium'>
-        Medium
-      </Button>
-      <Button m={2} size='large'>
-        Large
-      </Button>
-      <Button m={2} size='extraLarge'>
-        Extra Large
-      </Button>
-    </Box>
+    <StoryStage>
+      <Button size='small'>Small</Button>
+      <Button size='medium'>Medium</Button>
+      <Button size='large'>Large</Button>
+      <Button size='extraLarge'>Extra Large</Button>
+    </StoryStage>
   ),
 }
 
 export const PrimaryVariations: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} px={100} variation='fill'>
+    <StoryStage>
+      <Button width={100} variation='fill'>
         Fill
       </Button>
-      <Button m={2} px={100} variation='outline'>
-        Outline
+      <Button width={100} variation='subtle'>
+        Subtle
       </Button>
-    </Box>
+    </StoryStage>
   ),
 }
 
 export const TonalVariations: ButtonStory = {
   render: () => (
-    <Box bg='background.tint'>
-      <Button m={2} px={100} variation='plain'>
-        Fill
+    <StoryStage borderRadius='md' bg='background.tint'>
+      <Button width={100} variation='plain'>
+        Plain
       </Button>
-      <Button m={2} px={100} variation='white'>
-        Outline
+      <Button width={100} variation='white'>
+        White
       </Button>
-    </Box>
+    </StoryStage>
   ),
 }
 
@@ -103,62 +98,44 @@ export const TextButtons: ButtonStory = {
 
 export const AdditionalVariations: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} variation='outline'>
-        Outline
-      </Button>
-      <Button m={2} variation='lightFill'>
-        Light Fill
-      </Button>
-    </Box>
+    <StoryStage>
+      <Button variation='outline'>Outline</Button>
+      <Button variation='lightFill'>Light Fill</Button>
+    </StoryStage>
   ),
 }
 
 export const Disabled: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} disabled>
-        Continue
-      </Button>
-      <Button m={2} disabled variation='link'>
+    <StoryStage>
+      <Button disabled>Continue</Button>
+      <Button disabled variation='link'>
         Button
       </Button>
-    </Box>
+    </StoryStage>
   ),
 }
 
 export const SemanticStyles: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} color='primary'>
-        Primary
-      </Button>
-      <Button m={2} color='secondary'>
-        Secondary
-      </Button>
-      <Button m={2} color='warning' variation='lightFill'>
+    <StoryStage>
+      <Button color='primary'>Primary</Button>
+      <Button color='secondary'>Secondary</Button>
+      <Button color='warning' variation='lightFill'>
         Negative
       </Button>
-    </Box>
+    </StoryStage>
   ),
 }
 
 export const BorderRadius: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} borderRadius='sm'>
-        Small
-      </Button>
-      <Button m={2} borderRadius='md'>
-        Medium
-      </Button>
-      <Button m={2} borderRadius='lg'>
-        Large
-      </Button>
-      <Button m={2} borderRadius='xl'>
-        Extra Large
-      </Button>
-    </Box>
+    <StoryStage>
+      <Button borderRadius='sm'>Small</Button>
+      <Button borderRadius='md'>Medium</Button>
+      <Button borderRadius='lg'>Large</Button>
+      <Button borderRadius='xl'>Extra Large</Button>
+    </StoryStage>
   ),
 }
 
@@ -306,10 +283,8 @@ const meta: Meta<typeof Button> = {
               States are visual representations used to communicate the status of a component or interactive
               element.
             </Text>
-            <Flex p={4} my={4} borderRadius='xl' bg='primary.light' style={{ gap: 16 }}>
-              <Button>Enabled</Button>
-              <Button>Hover</Button>
-              <Button>Focus</Button>
+            <Flex my={4} borderRadius='xl' bg='primary.light'>
+              <Image src={buttonStates} />
             </Flex>
 
             <StoryHeading storyName='Disabled' storyTitle={meta.title} />
