@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Adds license and road icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
