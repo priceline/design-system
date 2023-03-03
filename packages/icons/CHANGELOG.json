@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.1.0",
+      "tag": "pcln-icons_v5.1.0",
+      "date": "Fri, 03 Mar 2023 18:23:05 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adds license and road icons",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "e81c8903b8ff21f9fde575819aab3e56ce2171a4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.2",
       "tag": "pcln-icons_v5.0.2",
       "date": "Tue, 17 Jan 2023 17:04:02 GMT",
