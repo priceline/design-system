@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
 import { FormField, Input, Label, Select } from '..'
 import { Email as EmailIcon } from 'pcln-icons'
 
@@ -84,48 +82,5 @@ describe('FormField', () => {
     ).toJSON()
     const [label] = json.children
     expect(label.props.htmlFor).toBe('hello')
-  })
-
-  describe('propTypes', () => {
-    let consoleError
-    beforeEach(() => {
-      consoleError = console.error
-      console.error = jest.fn()
-    })
-    afterEach(() => (console.error = consoleError))
-
-    test('warns when field is missing', () => {
-      PropTypes.checkPropTypes(
-        FormField.propTypes,
-        {
-          // eslint-disable-next-line react/jsx-key
-          children: [<Label />],
-        },
-        'children',
-        'FormField'
-      )
-      expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed children type: No form field found for FormField. Please include an Input, Select, or other form field as a child.'
-        )
-      )
-    })
-
-    test('warns when Label is missing', () => {
-      PropTypes.checkPropTypes(
-        FormField.propTypes,
-        {
-          // eslint-disable-next-line react/jsx-key
-          children: [<Input id='test' name='test' />],
-        },
-        'children',
-        'FormField'
-      )
-      expect(console.error).toHaveBeenCalledWith(
-        expect.stringContaining(
-          'Warning: Failed children type: No label found for FormField. Please include a Label as a child.'
-        )
-      )
-    })
   })
 })

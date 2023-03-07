@@ -57,13 +57,14 @@ function Menu({
 
   return (
     <Popover
+      aria-controls={id}
       hideArrow
+      idx={id}
+      placement={placement ?? 'bottom-start'}
+      renderContent={MenuContent}
       trapFocus={trapFocus}
       width={width}
       zIndex={1600}
-      placement={placement ?? 'bottom-start'}
-      aria-controls={id}
-      renderContent={MenuContent}
       {...props}
     >
       <ClickableNode />
