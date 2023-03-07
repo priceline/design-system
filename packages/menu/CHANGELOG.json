@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "4.7.13",
+      "tag": "pcln-menu_v4.7.13",
+      "date": "Tue, 07 Mar 2023 23:11:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Pass id prop to Popover idx prop to fix prop type warning",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "39bb5ec1bd9f35e37495776742e391d0a4b1beab"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.38.5`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `4.6.17`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.38.4` to `4.38.5`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `4.6.16` to `4.6.17`"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.7.12",
       "tag": "pcln-menu_v4.7.12",
       "date": "Mon, 06 Mar 2023 14:11:55 GMT",

@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.5",
+      "tag": "pcln-design-system_v4.38.5",
+      "date": "Tue, 07 Mar 2023 23:11:43 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update FormField to use an interface instead of prop types",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "39bb5ec1bd9f35e37495776742e391d0a4b1beab"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.4",
       "tag": "pcln-design-system_v4.38.4",
       "date": "Tue, 21 Feb 2023 17:25:27 GMT",
