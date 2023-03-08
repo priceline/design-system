@@ -1,3 +1,3 @@
-import FormField from './FormField'
+import FormField, { IFormFieldProps } from './FormField'
 
-export { FormField, FormField as InputField }
+export { FormField, FormField as InputField, IFormFieldProps }
