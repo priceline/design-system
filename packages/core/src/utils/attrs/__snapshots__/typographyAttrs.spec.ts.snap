@@ -159,6 +159,15 @@ Object {
 }
 `;
 
+exports[`typographyAttrs works with and textStyle=label 1`] = `
+Object {
+  "fontSize": "10px",
+  "fontWeight": 700,
+  "letterSpacing": "0.2px",
+  "lineHeight": 1.4,
+}
+`;
+
 exports[`typographyAttrs works with and textStyle=overline 1`] = `
 Object {
   "fontSize": "12px",

@@ -468,6 +468,12 @@ Object {
       "lineHeight": "12px",
       "textTransform": "uppercase",
     },
+    "label": Object {
+      "fontSize": "10px",
+      "fontWeight": 700,
+      "letterSpacing": "0.2px",
+      "lineHeight": 1.4,
+    },
     "overline": Object {
       "fontSize": "12px",
       "fontWeight": 700,
