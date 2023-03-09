@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
@@ -85,14 +86,12 @@ export const TonalVariations: ButtonStory = {
 
 export const TextButtons: ButtonStory = {
   render: () => (
-    <Box>
-      <Button m={2} variation='link'>
-        Button
-      </Button>
-      <Button m={2} variation='link'>
+    <StoryStage>
+      <Button variation='link'>Button</Button>
+      <Button variation='link'>
         <Text fontWeight='bold'>Button</Text>
       </Button>
-    </Box>
+    </StoryStage>
   ),
 }
 
@@ -119,22 +118,19 @@ export const Disabled: ButtonStory = {
 export const SemanticStyles: ButtonStory = {
   render: () => (
     <StoryStage>
-      <Button color='primary'>Primary</Button>
-      <Button color='secondary'>Secondary</Button>
-      <Button color='warning' variation='lightFill'>
-        Negative
+      <Button color='primary'>Search Hotels</Button>
+      <Button color='primary' variation='subtle'>
+        Search Hotels
       </Button>
-    </StoryStage>
-  ),
-}
-
-export const BorderRadius: ButtonStory = {
-  render: () => (
-    <StoryStage>
-      <Button borderRadius='sm'>Small</Button>
-      <Button borderRadius='md'>Medium</Button>
-      <Button borderRadius='lg'>Large</Button>
-      <Button borderRadius='xl'>Extra Large</Button>
+      <Button color='secondary'>Choose Room</Button>
+      <Button color='secondary' variation='subtle'>
+        Choose Room
+      </Button>
+      <Button color='secondary'>Secondary</Button>
+      <Button color='warning'>Cancel</Button>
+      <Button color='warning' variation='subtle'>
+        Cancel
+      </Button>
     </StoryStage>
   ),
 }
@@ -305,46 +301,11 @@ const meta: Meta<typeof Button> = {
           <Section heading='Theming'>
             <StoryHeading storyName='Semantic Styles' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
-              Text buttons have less visual prominence, so should be used for secondary actions or low
-              emphasis actions. Used when aligning with 16px, 14px, and 12px body copy.
+              Semantic styles combine variation props and colors from our semantic palette, which defines
+              colors based on how they are used. Each and every semantic color points to a color from the
+              palette.
             </Text>
-            <DocTable
-              columns={[
-                { field: 'props', heading: 'Colors & Properties' },
-                { field: 'useCase', heading: 'Use Case' },
-              ]}
-              data={[
-                {
-                  props: 'Primary',
-                  useCase:
-                    'Primary button indicates the main action, and places high level of emphasis on the most important call to action on a page. One primary button at most in one section. Not every screen requires a primary button.',
-                },
-                {
-                  props: 'Secondary',
-                  useCase:
-                    'Secondary button’s primary function if to progress a user forward in a conversion process. Secondary buttons are used only for choosing a product and continueing through steps of a checkout flow.',
-                },
-                {
-                  props: 'Negative',
-                  useCase:
-                    'In general the Negative button variation should be used sparingly, and only when an action is by definition a negative response. For example, a user could be canceling a trip for positive reasons. In this example using the Text button variation keeps the UI neutral from any personas.',
-                },
-              ]}
-            />
             <LiveDemo code={SemanticStyles} />
-
-            <StoryHeading storyName='Border Radius' storyTitle={meta.title} />
-            <Text.p textStyle='paragraph'>
-              One of the most BLNK characteristics of a button is the size and shape of it’s radius. When
-              designing a system and theme from scratch or editing a theme to match an existing system, having
-              a consistent pattern for actions is instrumental in providing a quality user experience.
-            </Text.p>
-            <Text.p textStyle='paragraph'>
-              Our system supports radius setting for three action sizes, large, medium, and small. Each radius
-              can be set to the same, scale, or styled to pare larger actions with form inputs while at the
-              same time rounding smaller actions to improve engagement.
-            </Text.p>
-            <LiveDemo code={BorderRadius} />
           </Section>
 
           <Section heading='Usage'>
@@ -426,6 +387,10 @@ const meta: Meta<typeof Button> = {
               dontText='make the width of the button narrower than its label text.'
             />
 
+            <Text py={3} textStyle='subheading3'>
+              Do's and Don't For Button Groups
+            </Text>
+
             <DoDont
               doExample={
                 <Box style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '.5rem' }}>
@@ -433,6 +398,7 @@ const meta: Meta<typeof Button> = {
                   <Button>Sign In</Button>
                 </Box>
               }
+              doText='use min widths when available to allow the primary action to display at the same width as the secondary action.'
               dontExample={
                 <Box>
                   <Button variation='subtle' mr={2}>
@@ -441,6 +407,7 @@ const meta: Meta<typeof Button> = {
                   <Button>Sign In</Button>
                 </Box>
               }
+              dontText='your secondary action should be short and not much longer than the primary action. This is especially important when space does not allow for each action to display at the same width.'
             />
 
             <DoDont
@@ -456,6 +423,46 @@ const meta: Meta<typeof Button> = {
                   <br />
                   <Button variation='link'>No thanks, I don&apos;t need a rental car</Button>
                 </Box>
+              }
+            />
+
+            <DoDont
+              doExample={
+                <Flex style={{ gap: 8 }}>
+                  <Button variation='lightFill'>Cancel</Button>
+                  <Button variation='lightFill' color='warning'>
+                    Delete
+                  </Button>
+                </Flex>
+              }
+              dontExample={
+                <Flex style={{ gap: 8 }}>
+                  <Button width={200} borderRadius='lg' variation='lightFill'>
+                    Add Flight
+                  </Button>
+                  <Button width={200} borderRadius='lg'>
+                    Search Hotels
+                  </Button>
+                </Flex>
+              }
+            />
+
+            <DoDont
+              doExample={
+                <Flex style={{ gap: 8 }}>
+                  <Button variation='lightFill'>Yes</Button>
+                  <Button variation='lightFill' color='warning'>
+                    No
+                  </Button>
+                </Flex>
+              }
+              dontExample={
+                <Flex style={{ gap: 8 }}>
+                  <Button color='secondary'>Yes</Button>
+                  <Button variation='lightFill' color='warning'>
+                    No
+                  </Button>
+                </Flex>
               }
             />
           </Section>
