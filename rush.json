@@ -335,7 +335,8 @@
       "packageName": "@priceline/docs-utils",
       "projectFolder": "packages/docs-utils",
       "reviewCategory": "packages",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons", "pcln-design-system"]
     },
 
     {
