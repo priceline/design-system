@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 17 Jan 2023 17:04:02 GMT and should not be manually modified.
+This log was last generated on Fri, 03 Mar 2023 18:23:05 GMT and should not be manually modified.
+
+## 5.1.0
+Fri, 03 Mar 2023 18:23:05 GMT
+
+### Minor changes
+
+- Adds license and road icons
 
 ## 5.0.2
 Tue, 17 Jan 2023 17:04:02 GMT

@@ -1,10 +1,10 @@
 // @ts-nocheck
 
 import React from 'react'
-import { InferProps } from 'prop-types'
-
-import { Box } from '../Box'
+import { Box, IBoxProps } from '../Box'
 import { IconField } from '../IconField'
+
+export interface IFormFieldProps extends IBoxProps {}
 
 const paddingTopWithLabel = {
   sm: '14px',
@@ -25,25 +25,6 @@ const paddingTopForLabel = {
   xl: '10px',
 }
 
-const childrenPropType = (props, propName, componentName) => {
-  const children = React.Children.toArray(props.children)
-  const [label] = children.filter((child) => child.type.isLabel)
-  const [field] = children.filter((child) => child.type.isField)
-
-  if (!field) {
-    return new Error(
-      `No form field found for ${componentName}. Please include an Input, Select, or other form field as a child.`
-    )
-  }
-  if (!label) {
-    return new Error(`No label found for ${componentName}. Please include a Label as a child.`)
-  }
-}
-
-const propTypes = {
-  children: childrenPropType,
-}
-
 const inputPaddingTop = (size) => {
   return paddingTopWithLabel?.[size] ? paddingTopWithLabel[size] : '20px'
 }
@@ -54,7 +35,7 @@ const labelPaddingTop = (size) => {
   return paddingTopForLabel?.[size] ? paddingTopForLabel[size] : '6px'
 }
 
-const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props }) => {
+const FormField = ({ children, ...props }: IFormFieldProps) => {
   let iconBefore = false
 
   const childrenArray = React.Children.toArray(children)
@@ -113,8 +94,6 @@ const FormField: React.FC<InferProps<typeof propTypes>> = ({ children, ...props 
     </Box>
   )
 }
-
-FormField.propTypes = propTypes
 
 FormField.displayName = 'FormField'
 

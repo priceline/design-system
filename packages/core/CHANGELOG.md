@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 16 Feb 2023 16:33:24 GMT and should not be manually modified.
+This log was last generated on Fri, 03 Mar 2023 18:23:05 GMT and should not be manually modified.
+
+## 5.5.3
+Fri, 03 Mar 2023 18:23:05 GMT
+
+### Patches
+
+- Spread props for Layout to allow margin and padding overrides
 
 ## 5.5.2
 Thu, 16 Feb 2023 16:33:24 GMT

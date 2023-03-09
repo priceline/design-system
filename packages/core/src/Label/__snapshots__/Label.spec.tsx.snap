@@ -2,17 +2,17 @@
 
 exports[`Label Label hidden renders 1`] = `
 .c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   display: block;
   width: 100%;
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -24,24 +24,25 @@ exports[`Label Label hidden renders 1`] = `
   className="c0"
   color="text.light"
   fontSize="10px"
-  fontWeight="bold"
+  fontWeight={700}
   hidden={true}
+  letterSpacing="0.2px"
 />
 `;
 
 exports[`Label Label nowrap renders 1`] = `
 .c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   display: block;
   width: 100%;
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   white-space: nowrap;
 }
 
@@ -49,23 +50,24 @@ exports[`Label Label nowrap renders 1`] = `
   className="c0"
   color="text.light"
   fontSize="10px"
-  fontWeight="bold"
+  fontWeight={700}
+  letterSpacing="0.2px"
 />
 `;
 
 exports[`Label Label width renders 1`] = `
 .c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   display: block;
   width: 100%;
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
   width: 50%;
   white-space: nowrap;
 }
@@ -74,30 +76,32 @@ exports[`Label Label width renders 1`] = `
   className="c0"
   color="text.light"
   fontSize="10px"
-  fontWeight="bold"
+  fontWeight={700}
+  letterSpacing="0.2px"
   width={0.5}
 />
 `;
 
 exports[`Label it renders 1`] = `
 .c0 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   display: block;
   width: 100%;
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
   font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 }
 
 <label
   className="c0"
   color="text.light"
   fontSize="10px"
-  fontWeight="bold"
+  fontWeight={700}
+  letterSpacing="0.2px"
 />
 `;

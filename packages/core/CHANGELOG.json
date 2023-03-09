@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.5.3",
+      "tag": "pcln-design-system_v5.5.3",
+      "date": "Fri, 03 Mar 2023 18:23:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Spread props for Layout to allow margin and padding overrides",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "821cc24c4fa47fcad064c38d4efd06bd200a3cb8"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.2",
       "tag": "pcln-design-system_v5.5.2",
       "date": "Thu, 16 Feb 2023 16:33:24 GMT",
