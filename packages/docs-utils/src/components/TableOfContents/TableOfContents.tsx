@@ -14,8 +14,8 @@ export const TableOfContents = ({ links }: TableOfContentsProps) => (
       {links.map((link) => {
         const id = kebabCase(link)
         return (
-          <Link onClick={() => scrollTo(id)}>
-            <li key={id}>{link}</li>
+          <Link key={id} onClick={() => scrollTo(id)}>
+            <li>{link}</li>
           </Link>
         )
       })}

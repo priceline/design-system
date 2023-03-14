@@ -16,3 +16,4 @@ const customRender: (Element, any?) => RenderResult = (ui, options) =>
 export * from '@testing-library/react'
 // override render method
 export { customRender as render }
+export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
