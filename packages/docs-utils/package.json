@@ -1,0 +1,98 @@
+{
+  "name": "@priceline/docs-utils",
+  "version": "0.0.1",
+  "main": "lib-commonjs/index.js",
+  "module": "lib-esm/index.js",
+  "types": "lib-esm/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "lib-esm",
+    "lib-commonjs",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priceline/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/priceline/design-system/issues"
+  },
+  "homepage": "https://github.com/priceline/design-system#readme",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "build": "heft test --clean",
+    "build-only": "heft build --clean",
+    "debug": "heft --debug test --clean",
+    "start": "heft start",
+    "storybook": "heft start --storybook",
+    "test": "heft test",
+    "test:snapshots": "heft test --update-snapshots",
+    "test:watch": "heft test --watch"
+  },
+  "author": "Priceline",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "pcln-icons": "workspace:*",
+    "prop-types": "^15.7.2",
+    "styled-system": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@priceline/babel-preset": "workspace:*",
+    "@priceline/eslint-config": "workspace:*",
+    "@priceline/heft-component-rig": "workspace:*",
+    "@priceline/storybook-preset": "workspace:*",
+    "@typescript-eslint/parser": "5.10.0",
+    "@typescript-eslint/eslint-plugin": "5.10.0",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@rushstack/eslint-config": "^2.5.1",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-docs": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/react": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "camelcase": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.6.0",
+    "jest": "^26.6.3",
+    "jest-standard-reporter": "^2.0.0",
+    "jest-styled-components": "^7.1.0",
+    "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-element-to-jsx-string": "^15.0.0",
+    "react-live": "^3.1.1",
+    "react-test-renderer": "^17.0.2",
+    "require-from-string": "2.0.2",
+    "tslib": "^2.4.0",
+    "rimraf": "^3.0.2",
+    "react-textarea-autosize": "8.4.0",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.5.4",
+    "@rushstack/heft": "^0.44.2",
+    "@types/jest": "27.4.0",
+    "@types/react": "^17",
+    "@types/styled-system": "^5.1.15",
+    "framer-motion": "^6.5.1",
+    "pcln-design-system": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">= 16.10.0",
+    "react-dom": ">= 16.10.0",
+    "styled-components": ">=5 <5.3.4",
+    "framer-motion": ">= 6.5.1",
+    "pcln-design-system": "workspace:*"
+  }
+}
