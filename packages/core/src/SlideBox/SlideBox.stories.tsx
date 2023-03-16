@@ -46,7 +46,7 @@ const TileContents = () => (
 export const Default = () => (
   <Box m={3}>
     <SlideBox
-      visibleSlides={[1.2, 2.2, 3, 3, 4]}
+      visibleSlides={[0.7, 2.2, 3, 3, 4]}
       onSlideChange={action('Slide Change')}
       slideSpacing={2}
       stretchHeight
