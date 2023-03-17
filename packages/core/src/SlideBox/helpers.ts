@@ -1,4 +1,5 @@
-const getWidth = (visibleSlides) => 1 / visibleSlides
+const getWidth = (visibleSlides) =>
+  visibleSlides < 1 ? `${(100 / visibleSlides).toFixed(0)}%` : 1 / visibleSlides
 
 const getVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides)

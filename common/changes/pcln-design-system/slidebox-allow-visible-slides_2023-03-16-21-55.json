@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Modify to allow visibleSLides less than 1",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
