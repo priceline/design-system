@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps } from 'styled-system'
+import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import PropTypes from 'prop-types'
 import { Text, ITextProps } from '../Text'
@@ -49,7 +49,9 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
 
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Input')}
-  ${borders} ${space} ${fontSize} ${borderRadius};
+  ${borders}
+
+  ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
 const INPUT_ERROR_TEXT = 'InputHelperText'

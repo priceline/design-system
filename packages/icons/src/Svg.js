@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { space, width } from 'styled-system'
+import { space, width, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
 
 /**
@@ -60,10 +60,10 @@ const Svg = styled('svg')`
   flex: none;
   line-height: 1;
 
-  ${space}
-  ${width}
   ${color}
   ${bg}
+
+  ${(props) => compose(space, width)(props)}
 `
 
 Svg.propTypes = {

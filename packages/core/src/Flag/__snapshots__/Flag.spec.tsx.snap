@@ -6,24 +6,24 @@ exports[`Flag renders 1`] = `
 }
 
 .c4 {
+  color: #0a0;
+  width: 4px;
   margin-right: -8px;
   margin-bottom: -8px;
-  width: 4px;
-  color: #0a0;
 }
 
 .c6 {
+  background-color: #0a0;
+  color: #fff;
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #0a0;
-  color: #fff;
 }
 
 .c8 {
-  margin-left: -8px;
-  width: 18px;
   color: #0a0;
+  width: 18px;
+  margin-left: -8px;
 }
 
 .c1 {
@@ -116,29 +116,29 @@ exports[`Flag renders 1`] = `
 
 exports[`Flag renders with theme color as bg color 1`] = `
 .c0 {
-  margin-left: 0px;
   width: 256px;
+  margin-left: 0px;
 }
 
 .c4 {
+  color: #70b;
+  width: 4px;
   margin-right: -8px;
   margin-bottom: -8px;
-  width: 4px;
-  color: #70b;
 }
 
 .c6 {
+  background-color: #70b;
+  color: #fff;
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #70b;
-  color: #fff;
 }
 
 .c8 {
-  margin-left: -8px;
-  width: 18px;
   color: #70b;
+  width: 18px;
+  margin-left: -8px;
 }
 
 .c1 {
@@ -235,29 +235,29 @@ exports[`Flag renders with theme color as bg color 1`] = `
 
 exports[`Flag renders with width prop 1`] = `
 .c0 {
-  margin-left: 0px;
   width: 256px;
+  margin-left: 0px;
 }
 
 .c4 {
+  color: #0a0;
+  width: 4px;
   margin-right: -8px;
   margin-bottom: -8px;
-  width: 4px;
-  color: #0a0;
 }
 
 .c6 {
+  background-color: #0a0;
+  color: #fff;
   padding-left: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #0a0;
-  color: #fff;
 }
 
 .c8 {
-  margin-left: -8px;
-  width: 18px;
   color: #0a0;
+  width: 18px;
+  margin-left: -8px;
 }
 
 .c1 {

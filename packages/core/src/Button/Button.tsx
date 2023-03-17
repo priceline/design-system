@@ -10,6 +10,7 @@ import {
   WidthProps,
   SpaceProps,
   BoxShadowProps,
+  compose,
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import { themeGet } from '@styled-system/theme-get'
@@ -169,39 +170,9 @@ const variations = {
     width: 100%;
 
     ${(props) => borders({ ...props, color: undefined })}
-    ${space} ${fontSize} ${borderRadius};
+    ${(props) => compose(space, fontSize, borderRadius)(props)}
   `,
 }
-
-export const buttonStyles = css`
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: ${(props) => props.theme.fontWeights.bold};
-  line-height: 1.5;
-  cursor: ${(props) => (props.disabled ? 'default' : 'pointer')};
-  border-radius: ${(props) =>
-    themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-md'}`)(
-      props
-    )};
-  border-width: 0;
-  border-style: solid;
-
-  ${({ theme }) => applySizes(sizes, 'medium', theme.mediaQueries)};
-  ${applyVariations('Button', variations)};
-  ${width};
-  ${space};
-  ${boxShadow}
-
-  &:disabled {
-    cursor: not-allowed;
-    color: ${getPaletteColor('text.light')};
-    background-color: ${getPaletteColor('background.base')};
-  }
-`
 
 const buttonPropTypes = {
   ...propTypes.width,
@@ -233,6 +204,33 @@ export interface IButtonProps
   onMouseEnter?: (unknown) => unknown
 }
 
+export const buttonStyles = css`
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: ${(props) => props.theme.fontWeights.bold};
+  line-height: 1.5;
+  cursor: ${(props) => (props.disabled ? 'default' : 'pointer')};
+  border-radius: ${(props) =>
+    themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-md'}`)(
+      props
+    )};
+  border-width: 0;
+  border-style: solid;
+
+  ${({ theme }) => applySizes(sizes, 'medium', theme.mediaQueries)};
+  ${applyVariations('Button', variations)};
+
+  &:disabled {
+    cursor: not-allowed;
+    color: ${getPaletteColor('text.light')};
+    background-color: ${getPaletteColor('background.base')};
+  }
+`
+
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
@@ -246,6 +244,8 @@ const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
   }
 })`
   ${buttonStyles}
+
+  ${(props) => compose(width, space, boxShadow)(props)}
 `
 
 Button.propTypes = buttonPropTypes

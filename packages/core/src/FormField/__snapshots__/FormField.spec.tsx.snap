@@ -203,9 +203,9 @@ exports[`FormField renders with Icon 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  padding-left: 40px;
   font-size: 16px;
   border-radius: 12px;
+  padding-left: 40px;
 }
 
 .c6::-webkit-input-placeholder {
@@ -385,9 +385,9 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  padding-left: 40px;
   font-size: 16px;
   border-radius: 12px;
+  padding-left: 40px;
 }
 
 .c6::-webkit-input-placeholder {
@@ -505,9 +505,9 @@ exports[`FormField renders with Select  1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  color: #4f6f8f;
   margin-left: -32px;
   width: 24px;
-  color: #4f6f8f;
 }
 
 .c5 {
@@ -564,19 +564,19 @@ exports[`FormField renders with Select  1`] = `
   border-style: solid;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  margin: 0px;
   font-size: 16px;
+  margin: 0px;
   border-radius: 12px;
+}
+
+.c3::-ms-expand {
+  display: none;
 }
 
 .c3:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c3::-ms-expand {
-  display: none;
 }
 
 @media screen and (min-width:32em) {
@@ -676,9 +676,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  color: #4f6f8f;
   margin-left: -32px;
   width: 24px;
-  color: #4f6f8f;
 }
 
 .c9 {
@@ -751,19 +751,19 @@ exports[`FormField renders with Select and Icon 1`] = `
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
-  margin: 0px;
   font-size: 16px;
+  margin: 0px;
   border-radius: 12px;
+}
+
+.c7::-ms-expand {
+  display: none;
 }
 
 .c7:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c7::-ms-expand {
-  display: none;
 }
 
 @media screen and (min-width:32em) {

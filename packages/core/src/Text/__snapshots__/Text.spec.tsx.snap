@@ -48,10 +48,10 @@ exports[`Text height and width 1`] = `
 
 exports[`Text min/max values 1`] = `
 .c0 {
-  max-height: 400px;
-  max-width: 400px;
   min-height: 200px;
+  max-height: 400px;
   min-width: 200px;
+  max-width: 400px;
 }
 
 <div

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { top, right, bottom, left, zIndex } from 'styled-system'
+import { top, right, bottom, left, zIndex, compose } from 'styled-system'
 
 import { Box } from '../Box'
 
 const Absolute = styled(Box)`
   position: absolute;
-  ${top} ${bottom} ${left} ${right}
-  ${zIndex}
+
+  ${(props) => compose(top, bottom, left, right, zIndex)(props)}
 `
 
 Absolute.propTypes = {

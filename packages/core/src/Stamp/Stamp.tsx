@@ -1,7 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, BorderRadiusProps } from 'styled-system'
+import {
+  space,
+  fontSize,
+  borderRadius,
+  SpaceProps,
+  FontSizeProps,
+  BorderRadiusProps,
+  compose,
+} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import themeGet from '@styled-system/theme-get'
 import {
@@ -89,7 +97,8 @@ const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
 
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Stamp', variations)};
-  ${space} ${fontSize} ${borderRadius};
+
+  ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
 Stamp.displayName = 'Stamp'

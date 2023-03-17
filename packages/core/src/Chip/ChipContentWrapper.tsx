@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { space, fontSize } from 'styled-system'
+import { space, fontSize, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
 import { getPaletteColor, applySizes } from '../utils'
 import { Box, IBoxProps } from '../Box'
@@ -73,8 +73,8 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   border-radius: 2px;
   white-space: nowrap;
   ${({ theme, hasChildren }) => applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
-  ${space};
-  ${fontSize};
+
+  ${(props) => compose(space, fontSize)(props)}
 `
 
 export { ChipContentWrapper }

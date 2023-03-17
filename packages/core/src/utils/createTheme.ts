@@ -29,6 +29,7 @@ const createTheme = (theme = {}, customBreakpoints = null, existingTheme = defau
   const mediaQueries = customBreakpoints
     ? createMediaQueries(customBreakpoints)
     : finalMergedTheme.mediaQueries
+
   return {
     ...finalMergedTheme,
     contrastRatio: finalMergedTheme.contrastRatio || 2.6,

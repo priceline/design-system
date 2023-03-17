@@ -59,9 +59,9 @@ exports[`Divider width prop sets width 1`] = `
   border-bottom-width: 1px;
   border-color: #c0cad5;
   background-color: #c0cad5;
+  width: 50%;
   margin-left: 0px;
   margin-right: 0px;
-  width: 50%;
 }
 
 <hr

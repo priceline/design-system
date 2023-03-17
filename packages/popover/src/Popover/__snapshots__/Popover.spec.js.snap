@@ -89,10 +89,10 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
 
 exports[`Popover UI Positioning Bottom 1`] = `
 .c0 {
+  border-radius: 16px;
+  width: 400px;
   display: inline-block;
   padding: 8px;
-  width: 400px;
-  border-radius: 16px;
 }
 
 .c4 {
@@ -206,10 +206,10 @@ exports[`Popover UI Positioning Bottom 1`] = `
 
 exports[`Popover UI Positioning Bottom End 1`] = `
 .c0 {
+  border-radius: 16px;
+  width: 400px;
   display: inline-block;
   padding: 8px;
-  width: 400px;
-  border-radius: 16px;
 }
 
 .c4 {
@@ -323,10 +323,10 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 
 exports[`Popover UI Positioning Bottom Start 1`] = `
 .c0 {
+  border-radius: 16px;
+  width: 400px;
   display: inline-block;
   padding: 8px;
-  width: 400px;
-  border-radius: 16px;
 }
 
 .c4 {

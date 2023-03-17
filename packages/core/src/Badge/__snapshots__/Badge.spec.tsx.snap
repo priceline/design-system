@@ -17,13 +17,13 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #0068ef;
+  color: #fff;
+  background-color: #0068ef;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #0068ef;
-  color: #fff;
-  background-color: #0068ef;
   border-radius: 9999px;
 }
 
@@ -50,13 +50,13 @@ exports[`Badge bg green sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #0a0;
+  color: #fff;
+  background-color: #0a0;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #0a0;
-  color: #fff;
-  background-color: #0a0;
   border-radius: 9999px;
 }
 
@@ -83,13 +83,13 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #e8f2ff;
+  color: #049;
+  background-color: #e8f2ff;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #e8f2ff;
-  color: #049;
-  background-color: #e8f2ff;
   border-radius: 9999px;
 }
 
@@ -116,13 +116,13 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #ecf7ec;
+  color: #060;
+  background-color: #ecf7ec;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #ecf7ec;
-  color: #060;
-  background-color: #ecf7ec;
   border-radius: 9999px;
 }
 
@@ -149,13 +149,13 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #fbebeb;
+  color: #800;
+  background-color: #fbebeb;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #fbebeb;
-  color: #800;
-  background-color: #fbebeb;
   border-radius: 9999px;
 }
 
@@ -182,13 +182,13 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #f68013;
+  color: #001833;
+  background-color: #f68013;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #f68013;
-  color: #001833;
-  background-color: #f68013;
   border-radius: 9999px;
 }
 
@@ -215,13 +215,13 @@ exports[`Badge bg red sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #c00;
+  color: #fff;
+  background-color: #c00;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #c00;
-  color: #fff;
-  background-color: #c00;
   border-radius: 9999px;
 }
 
@@ -248,12 +248,12 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #e8f2ff;
+  color: #001833;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #e8f2ff;
-  color: #001833;
   border-radius: 9999px;
 }
 
@@ -281,12 +281,12 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #001833;
+  color: #fff;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #001833;
-  color: #fff;
   border-radius: 9999px;
 }
 
@@ -314,12 +314,12 @@ exports[`Badge renders 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
+  background-color: #f4f6f8;
+  color: #001833;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #f4f6f8;
-  color: #001833;
   border-radius: 9999px;
 }
 
@@ -341,12 +341,12 @@ exports[`Badge renders small 1`] = `
   font-weight: 700;
   line-height: 1.4;
   line-height: 1.25;
+  background-color: #f4f6f8;
+  color: #001833;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #f4f6f8;
-  color: #001833;
   border-radius: 9999px;
 }
 

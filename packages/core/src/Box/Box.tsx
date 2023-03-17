@@ -26,6 +26,7 @@ import {
   SpaceProps,
   TextAlignProps,
   WidthProps,
+  compose,
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 
@@ -122,13 +123,23 @@ const Box: React.FC<InferProps<typeof boxPropTypes>> = styled.div.attrs((props) 
   ...boxShadowAttrs(props),
 }))`
   ${applyVariations('Box')}
-  ${display} ${height} ${maxHeight} ${maxWidth}
-  ${minHeight} ${minWidth} ${size} ${space} 
-  ${textAlign} ${width} 
   ${color}
 
-  ${borderRadius}
-  ${boxShadow}
+  ${(props) =>
+    compose(
+      width,
+      display,
+      height,
+      maxHeight,
+      maxWidth,
+      minHeight,
+      minWidth,
+      size,
+      space,
+      textAlign,
+      borderRadius,
+      boxShadow
+    )(props)}
 `
 
 Box.displayName = 'Box'

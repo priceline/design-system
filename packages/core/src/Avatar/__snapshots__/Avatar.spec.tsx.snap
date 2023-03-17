@@ -14,12 +14,12 @@ exports[`Avatar renders default 1`] = `
 }
 
 .c1 {
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
   background-color: #0068ef;
   color: #fff;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
 }
 
 .c0 {
@@ -79,12 +79,12 @@ exports[`Avatar renders default 1`] = `
 
 exports[`Avatar renders initials 1`] = `
 .c1 {
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
   background-color: #0068ef;
   color: #fff;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
 }
 
 .c0 {
@@ -139,12 +139,12 @@ exports[`Avatar renders initials 1`] = `
 exports[`Avatar renders mr elon 1`] = `
 <DocumentFragment>
   .c2 {
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
   background-color: #0068ef;
   color: #fff;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
 }
 
 .c4 {
@@ -163,13 +163,13 @@ exports[`Avatar renders mr elon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .c6 {
