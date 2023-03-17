@@ -26,7 +26,7 @@ const Children = () => {
   )
 }
 
-const Template = (args: any) => (
+const Template = (args) => (
   <ToastProvider {...args}>
     <Children />
   </ToastProvider>

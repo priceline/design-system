@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import {
   Attention as AttentionIcon,
   Check as CheckIcon,
@@ -11,7 +11,7 @@ import { Text } from '../Text'
 
 export interface IToastProps extends Omit<IFlexProps, 'id'> {
   id: number
-  lifespan: number
+  lifespan?: number
   text: string
   variant: 'error' | 'information' | 'success'
   onRemoveClick: (id: number) => void
@@ -33,10 +33,6 @@ function getVariationProps(variant) {
       return {
         color: 'success',
         icon: <CheckIcon size={20} mr={3} />,
-      }
-    default:
-      return {
-        color: 'background.lightest',
       }
   }
 }
@@ -64,7 +60,7 @@ function Toast({ id, lifespan, text, variant, onRemoveClick, ...props }: IToastP
       <Flex width='100%'>
         <Text textStyle='paragraph'>{text}</Text>
       </Flex>
-      {handleRemoveClick && <IconButton icon={<CloseIcon size={20} />} onClick={handleRemoveClick} />}
+      <IconButton icon={<CloseIcon size={20} title='close-toast' />} onClick={handleRemoveClick} />
     </Flex>
   )
 }

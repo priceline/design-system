@@ -13,6 +13,7 @@ interface IToastContextProps {
   removeToast: (id: number) => void
 }
 
+/* istanbul ignore next */
 export const ToastContext = createContext<IToastContextProps>({ addToast: () => {}, removeToast: () => {} })
 
 export const useToast = () => {
@@ -21,9 +22,9 @@ export const useToast = () => {
 
 interface IToastProvider {
   children: React.ReactNode
-  domRootId: string
-  lifespan: number
-  maxToasts: number
+  domRootId?: string
+  lifespan?: number
+  maxToasts?: number
 }
 
 let id = 0

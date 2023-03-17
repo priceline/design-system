@@ -50,6 +50,8 @@ export { Stepper } from './Stepper'
 export { Swatch } from './Swatch'
 export { Text } from './Text'
 export { TextArea } from './TextArea'
+export { Toast } from './Toast'
+export { ToastProvider } from './ToastProvider'
 export { Tooltip } from './Tooltip'
 export { Toggle } from './Toggle'
 export { ToggleBadge } from './ToggleBadge'
@@ -60,6 +62,8 @@ export { SlideBox } from './SlideBox'
 
 export { theme } from './theme'
 export { ThemeProvider } from './ThemeProvider'
+
+export { useToast } from './ToastProvider'
 
 export {
   applySizes,
