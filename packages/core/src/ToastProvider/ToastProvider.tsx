@@ -1,6 +1,7 @@
-import React, { createContext, useCallback, useContext, useState } from 'react'
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
+import { Animate } from '../Animate'
 import { Flex } from '../Flex'
 import { Toast } from '../Toast'
 import { ThemeProvider } from '../ThemeProvider'
@@ -35,8 +36,20 @@ function ToastProvider({ children, domRootId = 'root', lifespan, maxToasts = 3 }
   }, [])
 
   const removeToast = useCallback((id: number) => {
-    setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id))
+    setToasts((prevToasts) =>
+      prevToasts.map((toast) => (toast.id === id ? { ...toast, removed: true } : toast))
+    )
   }, [])
+
+  useEffect(() => {
+    toasts.forEach((toast) => {
+      if (toast.removed) {
+        setTimeout(() => {
+          setToasts((prevToasts) => prevToasts.filter((t) => t.id !== toast.id))
+        }, 200)
+      }
+    })
+  }, [toasts, setToasts])
 
   const toastsToRender = toasts.slice(0, maxToasts)
 
@@ -49,15 +62,16 @@ function ToastProvider({ children, domRootId = 'root', lifespan, maxToasts = 3 }
             <Flex justifyContent='center' width='100%'>
               <Flex flexDirection='column-reverse' justifyContent='center' minWidth='300px'>
                 {toastsToRender.map((toast) => (
-                  <Toast
-                    key={toast.id}
-                    id={toast.id}
-                    lifespan={lifespan}
-                    text={toast.text}
-                    variant={toast.variant}
-                    onRemoveClick={removeToast}
-                    mt={2}
-                  />
+                  <Animate key={toast.id} variant={toast.removed ? 'slideOutLeft' : 'slideInLeft'}>
+                    <Toast
+                      id={toast.id}
+                      lifespan={lifespan}
+                      text={toast.text}
+                      variant={toast.variant}
+                      onRemoveClick={removeToast}
+                      mt={2}
+                    />
+                  </Animate>
                 ))}
               </Flex>
             </Flex>
