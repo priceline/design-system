@@ -2,6 +2,31 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "1.5.13",
+      "tag": "pcln-carousel_v1.5.13",
+      "date": "Fri, 17 Mar 2023 17:07:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "SlideBox: update slidebox to allow visibleSlides to be less than 1",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "03f2f739081f4f0b481d165a2c640e26fb94adb5"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `4.12.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `4.38.6`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `4.38.5` to `4.38.6`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.5.12",
       "tag": "pcln-carousel_v1.5.12",
       "date": "Tue, 07 Mar 2023 23:11:43 GMT",

@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 06 Mar 2023 14:11:55 GMT and should not be manually modified.
+This log was last generated on Fri, 17 Mar 2023 17:07:13 GMT and should not be manually modified.
+
+## 4.12.1
+Fri, 17 Mar 2023 17:07:13 GMT
+
+### Patches
+
+- SlideBox: update slidebox to allow visibleSlides to be less than 1
 
 ## 4.12.0
 Mon, 06 Mar 2023 14:11:55 GMT

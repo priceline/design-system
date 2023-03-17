@@ -1,6 +1,13 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Tue, 07 Mar 2023 23:11:43 GMT and should not be manually modified.
+This log was last generated on Fri, 17 Mar 2023 17:07:13 GMT and should not be manually modified.
+
+## 4.1.54
+Fri, 17 Mar 2023 17:07:13 GMT
+
+### Patches
+
+- SlideBox: update slidebox to allow visibleSlides to be less than 1
 
 ## 4.1.53
 Tue, 07 Mar 2023 23:11:43 GMT

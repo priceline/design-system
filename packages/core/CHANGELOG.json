@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.38.6",
+      "tag": "pcln-design-system_v4.38.6",
+      "date": "Fri, 17 Mar 2023 17:07:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Modify to allow visibleSLides less than 1",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "5f1304821b373871052078c1bdb0ea1db0cdbfaf"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.5",
       "tag": "pcln-design-system_v4.38.5",
       "date": "Tue, 07 Mar 2023 23:11:43 GMT",
