@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "SlideBox: update slidebox to allow visibleSlides to be less than 1",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
