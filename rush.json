@@ -10,8 +10,8 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.59.2",
-  "pnpmVersion": "7.5.0",
+  "rushVersion": "5.94.0",
+  "pnpmVersion": "7.9.0",
 
   /**
    * Options that are only used when the PNPM package manager is selected
@@ -332,10 +332,11 @@
 
   "projects": [
     {
-      "packageName": "@priceline/docs-utils",
+      "packageName": "pcln-docs-utils",
       "projectFolder": "packages/docs-utils",
       "reviewCategory": "packages",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "decoupledLocalDependencies": ["@priceline/storybook-preset", "pcln-design-system"]
     },
 
     {
@@ -357,7 +358,7 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons", "@priceline/docs-utils"]
+      "decoupledLocalDependencies": ["@priceline/storybook-preset", "pcln-icons", "pcln-docs-utils"]
     },
     {
       "packageName": "pcln-autocomplete",
@@ -368,7 +369,7 @@
       "packageName": "pcln-icons",
       "projectFolder": "packages/icons",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["pcln-design-system"]
+      "decoupledLocalDependencies": ["pcln-design-system"]
     },
     {
       "packageName": "pcln-modal",
@@ -379,7 +380,7 @@
       "packageName": "pcln-popover",
       "projectFolder": "packages/popover",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["pcln-slider"]
+      "decoupledLocalDependencies": ["pcln-slider"]
     },
     {
       "packageName": "pcln-slider",
@@ -429,7 +430,7 @@
       "packageName": "@priceline/storybook-preset",
       "projectFolder": "tools/storybook-preset",
       "shouldPublish": false,
-      "cyclicDependencyProjects": ["pcln-design-system"]
+      "decoupledLocalDependencies": ["pcln-design-system"]
     },
 
     // Heft Rigs

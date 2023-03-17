@@ -84,7 +84,7 @@
     "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.7",
     "@priceline/babel-preset": "workspace:*",
-    "@priceline/docs-utils": "workspace:*",
+    "pcln-docs-utils": "^0.0.2",
     "@priceline/eslint-config": "workspace:*",
     "@priceline/heft-component-rig": "workspace:*",
     "@priceline/storybook-preset": "workspace:*",

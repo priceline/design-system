@@ -16,7 +16,7 @@ import {
   StoryHeading,
   StoryStage,
   TableOfContents,
-} from '@priceline/docs-utils'
+} from 'pcln-docs-utils'
 
 import alignmentImage from './Button.Image.Alignment.png'
 import groupsImage from './Button.Image.Groups.png'
