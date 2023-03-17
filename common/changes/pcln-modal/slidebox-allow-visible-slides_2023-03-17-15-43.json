@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "SlideBox: update slidebox to allow visibleSlides to be less than 1",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}
