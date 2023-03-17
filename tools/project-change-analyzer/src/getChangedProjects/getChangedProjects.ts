@@ -32,11 +32,11 @@ function getPackagesWithDirectChanges(targetBranchName): string[] {
     rushConfiguration.tryGetProjectForPath(join(rushConfiguration.rushJsonFolder, name as string))
   )
 
-  return Array.from(projects.map((project) => project.packageName))
+  return Array.from(projects.map((project) => project?.packageName)).filter(Boolean)
 }
 
 /** @public */
-export async function runAsync(targetBranchName = 'refs/remotes/origin/main'): Promise<void> {
+export async function runAsync(targetBranchName = 'refs/remotes/origin/v4'): Promise<void> {
   const terminal: Terminal = new Terminal(new ConsoleTerminalProvider())
 
   const changedProjects = getPackagesWithDirectChanges(targetBranchName)
