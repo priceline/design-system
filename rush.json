@@ -332,7 +332,7 @@
 
   "projects": [
     {
-      "packageName": "@priceline/docs-utils",
+      "packageName": "pcln-docs-utils",
       "projectFolder": "packages/docs-utils",
       "reviewCategory": "packages",
       "shouldPublish": true
