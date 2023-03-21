@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.1.1",
+      "tag": "pcln-icons_v5.1.1",
+      "date": "Tue, 21 Mar 2023 17:01:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug when using customBreakpoints with responsive style props",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bbbd8f76d93be5de4910cab7f53cd407fac5b91a"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.1.0",
       "tag": "pcln-icons_v5.1.0",
       "date": "Fri, 03 Mar 2023 18:23:05 GMT",

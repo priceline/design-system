@@ -2,6 +2,31 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "5.0.11",
+      "tag": "pcln-popover_v5.0.11",
+      "date": "Tue, 21 Mar 2023 17:01:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug when using customBreakpoints with responsive style props",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bbbd8f76d93be5de4910cab7f53cd407fac5b91a"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.1.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.5.3` to `5.6.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.10",
       "tag": "pcln-popover_v5.0.10",
       "date": "Fri, 03 Mar 2023 18:23:05 GMT",

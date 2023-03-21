@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.6.0",
+      "tag": "pcln-design-system_v5.6.0",
+      "date": "Tue, 21 Mar 2023 17:01:10 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add the textStyle prop to the Label component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "56bf050252eb8eeeac9e692078d9c275f2909def"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Fix bug when using customBreakpoints with responsive style props",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bbbd8f76d93be5de4910cab7f53cd407fac5b91a"
+          },
+          {
+            "comment": "Update FormField to use an interface instead of prop types",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "1832afd8f510d044e93bd376e00b7db339e356f9"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.3",
       "tag": "pcln-design-system_v5.5.3",
       "date": "Fri, 03 Mar 2023 18:23:05 GMT",

@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 03 Mar 2023 18:23:05 GMT and should not be manually modified.
+This log was last generated on Tue, 21 Mar 2023 17:01:10 GMT and should not be manually modified.
+
+## 5.6.0
+Tue, 21 Mar 2023 17:01:10 GMT
+
+### Minor changes
+
+- Add the textStyle prop to the Label component
+
+### Patches
+
+- Fix bug when using customBreakpoints with responsive style props
+- Update FormField to use an interface instead of prop types
 
 ## 5.5.3
 Fri, 03 Mar 2023 18:23:05 GMT

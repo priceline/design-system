@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 03 Mar 2023 18:23:05 GMT and should not be manually modified.
+This log was last generated on Tue, 21 Mar 2023 17:01:10 GMT and should not be manually modified.
+
+## 5.1.1
+Tue, 21 Mar 2023 17:01:10 GMT
+
+### Patches
+
+- Fix bug when using customBreakpoints with responsive style props
 
 ## 5.1.0
 Fri, 03 Mar 2023 18:23:05 GMT
