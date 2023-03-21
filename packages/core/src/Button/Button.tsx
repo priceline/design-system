@@ -1,28 +1,28 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
-import {
-  borderRadius,
-  fontSize,
-  width,
-  space,
-  boxShadow,
-  WidthProps,
-  SpaceProps,
-  BoxShadowProps,
-  compose,
-} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import { themeGet } from '@styled-system/theme-get'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled, { css } from 'styled-components'
+import {
+  borderRadius,
+  boxShadow,
+  BoxShadowProps,
+  compose,
+  fontSize,
+  space,
+  SpaceProps,
+  width,
+  WidthProps,
+} from 'styled-system'
 import {
   applySizes,
   applyVariations,
   borders,
-  getPaletteColor,
-  getTextColorOn,
-  deprecatedColorValue,
   boxShadowAttrs,
   boxShadowSizeValues,
+  deprecatedColorValue,
+  getPaletteColor,
+  getTextColorOn,
 } from '../utils'
 
 export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
@@ -234,7 +234,7 @@ export const buttonStyles = css`
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
+const Button: React.FC<IButtonProps> = styled.button.attrs((props: IButtonProps) => {
   const { width, title, 'aria-label': ariaLabel, borderRadius } = props
   return {
     borderRadius,

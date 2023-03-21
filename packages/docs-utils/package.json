@@ -86,7 +86,7 @@
     "@types/react": "^17",
     "@types/styled-system": "^5.1.15",
     "framer-motion": "^6.5.1",
-    "pcln-design-system": "workspace:*"
+    "pcln-design-system": "^5.5.3"
   },
   "peerDependencies": {
     "react": ">= 16.10.0",

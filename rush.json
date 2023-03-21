@@ -335,7 +335,8 @@
       "packageName": "pcln-docs-utils",
       "projectFolder": "packages/docs-utils",
       "reviewCategory": "packages",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "cyclicDependencyProjects": ["pcln-design-system"]
     },
 
     {
@@ -357,7 +358,7 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons"]
+      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons", "pcln-docs-utils"]
     },
     {
       "packageName": "pcln-autocomplete",
