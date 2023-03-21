@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { InferProps } from 'prop-types'
-import { fontWeight, borderRadius } from 'styled-system'
+import { fontWeight, borderRadius, compose } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import { Box } from '../Box'
 import { deprecatedColorValue, borderRadiusAttrs } from '../utils'
@@ -45,7 +45,7 @@ const RatingBadge: React.FC<InferProps<typeof ratingBadgePropTypes>> = styled(Bo
 }))`
   display: inline-block;
   line-height: 1.5;
-  ${fontWeight} ${borderRadius};
+  ${(props) => compose(fontWeight, borderRadius)(props)}
 `
 
 RatingBadge.defaultProps = defaultProps

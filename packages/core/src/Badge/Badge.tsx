@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import themeGet from '@styled-system/theme-get'
 import { applySizes, applyVariations, color, deprecatedColorValue, borderRadiusAttrs } from '../utils'
-import { space, borderRadius, SpaceProps } from 'styled-system'
+import { space, borderRadius, SpaceProps, compose } from 'styled-system'
 
 const type = (props) => {
   const badgeColors = {
@@ -70,9 +70,9 @@ const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   letter-spacing: ${themeGet('letterSpacings.caps')};
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
-  ${space} ${type} ${color};
+  ${type} ${color};
 
-  ${borderRadius}
+  ${(props) => compose(space, borderRadius)(props)}
 `
 
 Badge.displayName = 'Badge'

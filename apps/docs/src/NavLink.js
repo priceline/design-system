@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import NextLink from 'next/link'
-import { space, color } from 'styled-system'
+import { space, color, compose } from 'styled-system'
 import { createTheme } from 'pcln-design-system'
 import { withDocs } from 'mdx-docs'
 import isAbsoluteURL from 'is-absolute-url'
@@ -12,7 +12,7 @@ const Base = styled.a`
   display: block;
   text-decoration: none;
   font-size: ${theme.fontSizes['2']}px;
-  ${space} ${color} &:hover {
+  &:hover {
     color: ${theme.colors.text};
   }
   &.active {
@@ -22,6 +22,8 @@ const Base = styled.a`
     margin-left: -16px;
     padding-left: 28px;
   }
+
+  ${(props) => compose(space, color)(props)}
 `
 Base.defaultProps = {
   pl: 3,

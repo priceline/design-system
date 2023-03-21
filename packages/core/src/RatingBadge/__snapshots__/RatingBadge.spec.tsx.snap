@@ -3,10 +3,10 @@
 exports[`RatingBadge renders 1`] = `
 <DocumentFragment>
   .c1 {
-  padding-left: 8px;
-  padding-right: 8px;
   background-color: #f68013;
   color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
   border-radius: 8px;
 }
 

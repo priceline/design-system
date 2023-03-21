@@ -6,9 +6,9 @@ exports[`Select renders 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  color: #4f6f8f;
   margin-left: -32px;
   width: 24px;
-  color: #4f6f8f;
 }
 
 .c4 {
@@ -48,19 +48,19 @@ exports[`Select renders 1`] = `
   border-style: solid;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  margin: 0px;
   font-size: 16px;
+  margin: 0px;
   border-radius: 12px;
+}
+
+.c2::-ms-expand {
+  display: none;
 }
 
 .c2:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c2::-ms-expand {
-  display: none;
 }
 
 @media screen and (min-width:32em) {

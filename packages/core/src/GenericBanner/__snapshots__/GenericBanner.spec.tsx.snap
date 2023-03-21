@@ -16,10 +16,10 @@ exports[`GenericBanner renders 1`] = `
 }
 
 .c1 {
-  text-align: left;
   background-color: #0a0;
   color: #fff;
   border-radius: 6px;
+  text-align: left;
 }
 
 .c6 {
@@ -37,14 +37,14 @@ exports[`GenericBanner renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c8 {

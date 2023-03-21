@@ -1,7 +1,15 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
-import { width, height, borderRadius, WidthProps, HeightProps, BorderRadiusProps } from 'styled-system'
+import {
+  width,
+  height,
+  borderRadius,
+  WidthProps,
+  HeightProps,
+  BorderRadiusProps,
+  compose,
+} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import {
   getPaletteColor,
@@ -50,7 +58,9 @@ const BackgroundImage: React.FC<IBackgroundImageProps> = styled.div.attrs(border
   background-repeat: no-repeat;
   background-color: ${getPaletteColor('border.light')};
   ${applyVariations('BackgroundImage', variations)}
-  ${image} ${height} ${width} ${borderRadius};
+  ${image} 
+
+  ${(props) => compose(height, width, borderRadius)(props)}
 `
 
 BackgroundImage.propTypes = backgroundImagePropTypes

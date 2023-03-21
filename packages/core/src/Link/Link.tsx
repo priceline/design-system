@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { width, space, WidthProps, SpaceProps } from 'styled-system'
+import { width, space, WidthProps, SpaceProps, compose } from 'styled-system'
 
 import { buttonStyles } from '../Button'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
@@ -65,7 +65,6 @@ const Link: React.FC<ILinkProps> = styled.a.attrs(({ color, disabled, href, targ
   ...props,
 }))`
   ${applyVariations('Link', variations)}
-  ${width} ${space};
 
   ${(props) =>
     props.disabled &&
@@ -76,6 +75,8 @@ const Link: React.FC<ILinkProps> = styled.a.attrs(({ color, disabled, href, targ
       text-decoration: none;
     }
   `}
+
+  ${(props) => compose(space, width)(props)}
 `
 
 Link.displayName = 'Link'

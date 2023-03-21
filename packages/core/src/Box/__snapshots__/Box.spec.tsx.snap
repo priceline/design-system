@@ -62,8 +62,8 @@ exports[`Box renders 1`] = `
 
 exports[`Box width and height props set width/height 1`] = `
 .c0 {
-  height: 50%;
   width: 50%;
+  height: 50%;
 }
 
 <div

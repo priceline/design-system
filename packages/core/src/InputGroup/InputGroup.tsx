@@ -20,10 +20,12 @@ export interface IInputGroupProps extends SpaceProps {
 const InputGroup: React.FC<IInputGroupProps> = styled.div`
   display: flex;
   align-items: center;
-  border-radius: ${themeGet('radius')};
+  border-radius: ${themeGet('borderRadii.xl')};
   border-width: 1px;
   border-style: solid;
-  border-color: ${(props) => getPaletteColor(props.borderColor, 'base')(props)} ${space} & > ${Box} {
+  border-color: ${(props) => getPaletteColor(props.borderColor, 'base')(props)};
+
+  & > ${Box} {
     width: 100%;
     flex: 1 1 auto;
   }
@@ -32,6 +34,8 @@ const InputGroup: React.FC<IInputGroupProps> = styled.div`
     border: 0;
     box-shadow: none;
   }
+
+  ${space}
 `
 
 InputGroup.propTypes = inputGroupPropTypes
