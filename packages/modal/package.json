@@ -1,6 +1,6 @@
 {
   "name": "pcln-modal",
-  "version": "4.3.18",
+  "version": "4.3.19",
   "description": "React component for modal",
   "engines": {
     "node": ">=14",
