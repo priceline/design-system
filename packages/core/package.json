@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "5.6.0",
+  "version": "5.6.1",
   "description": "Priceline Design System",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",

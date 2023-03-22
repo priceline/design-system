@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 21 Mar 2023 17:01:10 GMT and should not be manually modified.
+This log was last generated on Wed, 22 Mar 2023 18:15:15 GMT and should not be manually modified.
+
+## 5.6.1
+Wed, 22 Mar 2023 18:15:15 GMT
+
+### Patches
+
+- Fix responsive props on Label
 
 ## 5.6.0
 Tue, 21 Mar 2023 17:01:10 GMT

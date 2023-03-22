@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.6.1",
+      "tag": "pcln-design-system_v5.6.1",
+      "date": "Wed, 22 Mar 2023 18:15:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix responsive props on Label",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "44a4ea62c28b5c10fd6b63caeaf8650aab4b27d7"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.6.0",
       "tag": "pcln-design-system_v5.6.0",
       "date": "Tue, 21 Mar 2023 17:01:10 GMT",

@@ -2,6 +2,21 @@
   "name": "pcln-docs-utils",
   "entries": [
     {
+      "version": "0.0.4",
+      "tag": "pcln-docs-utils_v0.0.4",
+      "date": "Wed, 22 Mar 2023 18:15:16 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.3",
       "tag": "pcln-docs-utils_v0.0.3",
       "date": "Wed, 22 Mar 2023 16:13:23 GMT",
