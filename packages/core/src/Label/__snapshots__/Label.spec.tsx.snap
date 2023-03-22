@@ -6,18 +6,18 @@ exports[`Label Label hidden renders 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   position: absolute;
   width: 1px;
   height: 1px;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 }
 
 <label
@@ -36,14 +36,14 @@ exports[`Label Label nowrap renders 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  font-size: 10px;
+  white-space: nowrap;
   font-weight: 700;
+  font-size: 10px;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  white-space: nowrap;
 }
 
 <label
@@ -61,15 +61,15 @@ exports[`Label Label width renders 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  font-size: 10px;
+  white-space: nowrap;
+  width: 50%;
   font-weight: 700;
+  font-size: 10px;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  width: 50%;
-  white-space: nowrap;
 }
 
 <label
@@ -88,8 +88,8 @@ exports[`Label it renders 1`] = `
   width: 100%;
   margin: 0;
   color: #4f6f8f;
-  font-size: 10px;
   font-weight: 700;
+  font-size: 10px;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;

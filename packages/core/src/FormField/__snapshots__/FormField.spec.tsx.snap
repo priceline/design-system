@@ -18,15 +18,15 @@ exports[`FormField renders 1`] = `
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
   font-weight: 700;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
 }
 
 .c2 {
@@ -178,15 +178,15 @@ exports[`FormField renders with Icon 1`] = `
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
   font-weight: 700;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
 }
 
 .c6 {
@@ -360,15 +360,15 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
   font-weight: 700;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
 }
 
 .c6 {
@@ -535,15 +535,15 @@ exports[`FormField renders with Select  1`] = `
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
   font-weight: 700;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
 }
 
 .c6 {
@@ -721,15 +721,15 @@ exports[`FormField renders with Select and Icon 1`] = `
   margin: 0;
   color: #4f6f8f;
   font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
   font-weight: 700;
   line-height: 1.4;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
 }
 
 .c10 {
