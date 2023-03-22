@@ -89,7 +89,7 @@
   "peerDependencies": {
     "babel-loader": "^8.2.2",
     "pcln-design-system": "^4",
-    "pcln-icons": "^5.1.1",
+    "pcln-icons": "^5.2.0",
     "react": ">= 16.12.0",
     "react-dom": ">= 16.12.0"
   }

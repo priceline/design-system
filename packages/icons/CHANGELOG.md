@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 21 Mar 2023 17:01:10 GMT and should not be manually modified.
+This log was last generated on Wed, 22 Mar 2023 16:13:23 GMT and should not be manually modified.
+
+## 5.2.0
+Wed, 22 Mar 2023 16:13:23 GMT
+
+### Minor changes
+
+- Adds car automatic and manual transmission icons
 
 ## 5.1.1
 Tue, 21 Mar 2023 17:01:10 GMT

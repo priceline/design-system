@@ -2,6 +2,18 @@
   "name": "pcln-docs-utils",
   "entries": [
     {
+      "version": "0.0.3",
+      "tag": "pcln-docs-utils_v0.0.3",
+      "date": "Wed, 22 Mar 2023 16:13:23 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.2.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.2",
       "tag": "pcln-docs-utils_v0.0.2",
       "date": "Tue, 21 Mar 2023 17:01:11 GMT",
