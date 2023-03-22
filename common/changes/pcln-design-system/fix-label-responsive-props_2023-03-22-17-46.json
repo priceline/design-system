@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix responsive props on Label",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

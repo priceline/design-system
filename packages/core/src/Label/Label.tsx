@@ -15,6 +15,7 @@ import {
   LineHeightProps,
   TextStyleProps,
   WidthProps,
+  compose,
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import {
@@ -81,17 +82,11 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
   ${(props) => (props.onClick ? 'cursor: pointer;' : '')}
 
   ${applyVariations('Label')}
-  
-  ${fontSize}
-  ${fontWeight}
-  ${lineHeight}
-  ${letterSpacing}
-  ${space}
-  ${textStyle}
-  ${width}
 
   ${nowrap}
   ${accessiblyHide}
+
+  ${(props) => compose(fontSize, fontWeight, lineHeight, letterSpacing, space, textStyle, width)(props)}
 `
 
 Label.propTypes = labelPropTypes
