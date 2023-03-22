@@ -8,50 +8,32 @@ jest.mock('react-dom', () => ({
 
 import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
-import { ToastProvider, useToast } from '..'
-import { Button, Flex } from '..'
-
-const Children = () => {
-  const { addToast } = useToast()
-
-  return (
-    <Flex>
-      <Button color='error' onClick={() => addToast('Error Toast', 'error')}>
-        Add Error Toast
-      </Button>
-      <Button onClick={() => addToast('Information Toast', 'information')} mx={3}>
-        Add Information Toast
-      </Button>
-      <Button color='success' onClick={() => addToast('Success Toast', 'success')}>
-        Add Success Toast
-      </Button>
-    </Flex>
-  )
-}
+import { ToastProvider } from '..'
+import { MockToastChildren } from '../__test__/mocks/toasts'
 
 describe('ToastProvider', () => {
   it('renders success toast and clears it', async () => {
     render(
       <ToastProvider>
-        <Children />
+        <MockToastChildren />
       </ToastProvider>
     )
 
-    expect(screen.queryByText('Success Toast')).not.toBeInTheDocument()
+    expect(screen.queryByText('Success Toast Message')).not.toBeInTheDocument()
     fireEvent.click(screen.queryByText('Add Success Toast'))
-    expect(screen.queryByText('Success Toast')).toBeInTheDocument()
+    expect(screen.queryByText('Success Toast Message')).toBeInTheDocument()
 
     const closeIcon = screen.getAllByTitle('close-toast')[0]
     fireEvent.click(closeIcon)
     jest.runAllTimers()
 
-    expect(screen.queryByText('Success Toast')).not.toBeInTheDocument()
+    expect(screen.queryByText('Success Toast Message')).not.toBeInTheDocument()
   })
 
   it('renders the max number of toasts', () => {
     render(
       <ToastProvider domRootId='test' maxToasts={4}>
-        <Children />
+        <MockToastChildren />
       </ToastProvider>
     )
 
@@ -61,14 +43,26 @@ describe('ToastProvider', () => {
     fireEvent.click(screen.queryByText('Add Success Toast'))
     fireEvent.click(screen.queryByText('Add Success Toast'))
     fireEvent.click(screen.queryByText('Add Success Toast'))
-    expect(screen.queryAllByText('Success Toast').length).toBe(4)
+    expect(screen.queryAllByText('Success Toast Message').length).toBe(4)
 
     fireEvent.click(screen.getAllByTitle('close-toast')[0])
     jest.runAllTimers()
-    expect(screen.queryAllByText('Success Toast').length).toBe(4)
+    expect(screen.queryAllByText('Success Toast Message').length).toBe(4)
 
     fireEvent.click(screen.getAllByTitle('close-toast')[0])
     jest.runAllTimers()
-    expect(screen.queryAllByText('Success Toast').length).toBe(3)
+    expect(screen.queryAllByText('Success Toast Message').length).toBe(3)
+  })
+
+  it('renders a custom toast', () => {
+    render(
+      <ToastProvider enterAnimation='scaleFromCenter' exitAnimation='expandDown'>
+        <MockToastChildren />
+      </ToastProvider>
+    )
+
+    expect(screen.queryByText('Custom Toast Message')).not.toBeInTheDocument()
+    fireEvent.click(screen.queryByText('Add Custom Toast'))
+    expect(screen.queryByText('Custom Toast Message')).toBeInTheDocument()
   })
 })

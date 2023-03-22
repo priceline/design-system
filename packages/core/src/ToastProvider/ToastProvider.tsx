@@ -1,15 +1,21 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
-import { Animate } from '../Animate'
+import { Animate, MotionVariant } from '../Animate'
 import { Flex } from '../Flex'
-import { Toast } from '../Toast'
+import { Toast, IToastProps } from '../Toast'
 import { ThemeProvider } from '../ThemeProvider'
 
-type ToastVariant = 'error' | 'information' | 'success'
+export type ToastVariant = 'error' | 'information' | 'success'
+
+interface IToastOptions extends IToastProps {
+  enterAnimation?: MotionVariant
+  exitAnimation?: MotionVariant
+  removed?: boolean
+}
 
 interface IToastContextProps {
-  addToast: (text: string, variant: ToastVariant) => void
+  addToast: (options: IToastOptions) => void
   removeToast: (id: number) => void
 }
 
@@ -23,17 +29,26 @@ export const useToast = () => {
 interface IToastProvider {
   children: React.ReactNode
   domRootId?: string
+  enterAnimation?: MotionVariant
+  exitAnimation?: MotionVariant
   lifespan?: number
   maxToasts?: number
 }
 
 let id = 0
 
-function ToastProvider({ children, domRootId = 'root', lifespan, maxToasts = 3 }: IToastProvider) {
-  const [toasts, setToasts] = useState([])
+function ToastProvider({
+  children,
+  domRootId = 'root',
+  enterAnimation = 'slideInLeft',
+  exitAnimation = 'slideOutLeft',
+  lifespan,
+  maxToasts = 3,
+}: IToastProvider) {
+  const [toasts, setToasts] = useState<IToastOptions[]>([])
 
-  const addToast = useCallback((text: string, variant: string) => {
-    setToasts((prevToasts) => [...prevToasts, { id: id++, text, variant }])
+  const addToast = useCallback((options: IToastOptions) => {
+    setToasts((prevToasts) => [...prevToasts, { ...options, id: id++ }])
   }, [])
 
   const removeToast = useCallback((id: number) => {
@@ -62,18 +77,16 @@ function ToastProvider({ children, domRootId = 'root', lifespan, maxToasts = 3 }
           <Absolute bottom={20} width='100%'>
             <Flex justifyContent='center' width='100%'>
               <Flex flexDirection='column-reverse' justifyContent='center' minWidth='300px'>
-                {toastsToRender.map((toast) => (
-                  <Animate key={toast.id} variant={toast.removed ? 'slideOutLeft' : 'slideInLeft'}>
-                    <Toast
-                      id={toast.id}
-                      lifespan={lifespan}
-                      text={toast.text}
-                      variant={toast.variant}
-                      onRemoveClick={removeToast}
-                      mt={2}
-                    />
-                  </Animate>
-                ))}
+                {toastsToRender.map((toast) => {
+                  const enterAnim = toast.enterAnimation || enterAnimation
+                  const exitAnim = toast.exitAnimation || exitAnimation
+
+                  return (
+                    <Animate key={toast.id} variant={toast.removed ? exitAnim : enterAnim}>
+                      <Toast lifespan={lifespan} onRemoveClick={removeToast} {...toast} mt={2} />
+                    </Animate>
+                  )
+                })}
               </Flex>
             </Flex>
           </Absolute>

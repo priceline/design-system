@@ -6,15 +6,16 @@ import {
   InformationOutline as InformationOutlineIcon,
 } from 'pcln-icons'
 import { Flex, IFlexProps } from '../Flex'
-import { IconButton } from '../IconButton'
 import { Text } from '../Text'
+import { IconButton } from '../IconButton'
 
 export interface IToastProps extends Omit<IFlexProps, 'id'> {
-  id: number
+  children: React.ReactNode
+  hideClose?: boolean
+  id?: number
   lifespan?: number
-  text: string
   variant: 'error' | 'information' | 'success'
-  onRemoveClick: (id: number) => void
+  onRemoveClick?: (id: number) => void
 }
 
 function getVariationProps(variant) {
@@ -22,22 +23,24 @@ function getVariationProps(variant) {
     case 'error':
       return {
         color: 'error',
-        icon: <AttentionIcon size={20} mr={3} />,
+        icon: <AttentionIcon size={20} />,
       }
     case 'information':
       return {
         color: 'primary',
-        icon: <InformationOutlineIcon size={20} mr={3} />,
+        icon: <InformationOutlineIcon size={20} />,
       }
     case 'success':
       return {
         color: 'success',
-        icon: <CheckIcon size={20} mr={3} />,
+        icon: <CheckIcon size={20} />,
       }
+    default:
+      return {}
   }
 }
 
-function Toast({ id, lifespan, text, variant, onRemoveClick, ...props }: IToastProps) {
+function Toast({ children, hideClose, id, lifespan, variant, onRemoveClick, ...props }: IToastProps) {
   const { icon, ...rest } = getVariationProps(variant)
 
   useEffect(() => {
@@ -57,10 +60,12 @@ function Toast({ id, lifespan, text, variant, onRemoveClick, ...props }: IToastP
   return (
     <Flex {...rest} {...props} borderRadius='lg' justifyContent='space-between' alignItems='center' p={3}>
       {icon}
-      <Flex width='100%'>
-        <Text textStyle='paragraph'>{text}</Text>
+      <Flex width='100%' mx={3}>
+        {typeof children === 'string' ? <Text textStyle='paragraph'>{children}</Text> : children}
       </Flex>
-      <IconButton icon={<CloseIcon size={20} title='close-toast' />} onClick={handleRemoveClick} />
+      {!hideClose && (
+        <IconButton icon={<CloseIcon size={20} title='close-toast' />} onClick={handleRemoveClick} />
+      )}
     </Flex>
   )
 }
