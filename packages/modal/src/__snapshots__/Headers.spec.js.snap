@@ -21,13 +21,35 @@ exports[`ModalHeader render 1`] = `
   align-items: center;
 }
 
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
 
-.c8 {
+.c10 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -35,7 +57,7 @@ exports[`ModalHeader render 1`] = `
   width: 24px;
 }
 
-.c9 {
+.c11 {
   outline: none;
 }
 
@@ -155,12 +177,14 @@ exports[`ModalHeader render 1`] = `
         title="close"
       >
         <div
-          class="c2"
+          class="c8"
         >
-          <div>
+          <div
+            class="c9"
+          >
             <svg
               aria-hidden="true"
-              class="c8 c9"
+              class="c10 c11"
               fill="currentcolor"
               focusable="false"
               height="24"

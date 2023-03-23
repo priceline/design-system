@@ -184,7 +184,11 @@ export const BreakpointColumns = () => {
 }
 
 export const UsingButtonPropsPropForStylingButtonText = () => (
-  <Menu width={300} buttonText='Menu' buttonProps={{ color: 'text.base', size: 'large', width: 1, p: 3 }}>
+  <Menu
+    width={300}
+    buttonText='Menu'
+    buttonProps={{ color: 'text.base', size: 'large', width: 1, p: 3, variation: 'subtle' }}
+  >
     <MenuItems />
   </Menu>
 )

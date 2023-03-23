@@ -319,6 +319,7 @@ importers:
       '@testing-library/react': ^12.1.2
       '@testing-library/react-hooks': ^7.0.2
       '@types/jest': 27.4.0
+      '@types/node': ^18.15.11
       '@types/react': ^17.0.55
       '@types/styled-system': ^5.1.15
       '@typescript-eslint/eslint-plugin': 5.50.0
@@ -366,7 +367,7 @@ importers:
       '@priceline/storybook-preset': link:../../tools/storybook-preset
       '@rushstack/eslint-config': 3.1.1_ip5up2nocltd47wbnuyybe5dxu
       '@rushstack/eslint-patch': 1.2.0
-      '@rushstack/heft': 0.49.7
+      '@rushstack/heft': 0.49.7_@types+node@18.15.11
       '@storybook/addon-actions': 6.5.16_sfoxds7t5ydpegc3knd667wn6m
       '@storybook/addon-docs': 6.5.16_bkgz6fgwnobxq7wvx7e7fkkf5e
       '@storybook/addon-interactions': 6.5.16_l6li65jjepd64z4jpufdwtddfa
@@ -379,6 +380,7 @@ importers:
       '@testing-library/react': 12.1.5_sfoxds7t5ydpegc3knd667wn6m
       '@testing-library/react-hooks': 7.0.2_7qv3rjnqa3j7exc7qtvho7thru
       '@types/jest': 27.4.0
+      '@types/node': 18.15.11
       '@types/react': 17.0.55
       '@typescript-eslint/eslint-plugin': 5.50.0_ilswuqzkyon5ts32xyzg7xneb4
       '@typescript-eslint/parser': 5.50.0_ip5up2nocltd47wbnuyybe5dxu

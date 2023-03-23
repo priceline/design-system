@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders without props 1`] = `
-.c3 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,7 +9,7 @@ exports[`CloseButton renders without props 1`] = `
   width: 24px;
 }
 
-.c4 {
+.c5 {
   outline: none;
 }
 
@@ -22,6 +22,17 @@ exports[`CloseButton renders without props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -90,10 +101,12 @@ exports[`CloseButton renders without props 1`] = `
   <div
     className="c2"
   >
-    <div>
+    <div
+      className="c3"
+    >
       <svg
         aria-hidden={true}
-        className="c3 c4"
+        className="c4 c5"
         fill="currentcolor"
         focusable={false}
         height={24}

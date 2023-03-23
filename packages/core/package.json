@@ -103,6 +103,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "27.4.0",
+    "@types/node": "^18.15.11",
     "@types/react": "^17.0.55",
     "@types/styled-system": "^5.1.15",
     "camelcase": "^6.2.0",

@@ -20,7 +20,7 @@ jobs:
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_PAT }}
@@ -30,9 +30,9 @@ jobs:
         with:
           node-version: 16
 
-      - name: PNPM cache via actions/cache@v2
+      - name: PNPM cache via actions/cache@v3
         id: pnpm-cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}

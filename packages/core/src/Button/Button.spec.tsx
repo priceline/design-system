@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from '../__test__/testing-library'
 
 import styled from 'styled-components'
+import { User } from 'pcln-icons'
 
 import { Button, createTheme } from '..'
 
@@ -62,6 +63,35 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('padding', '9.5px 18px')
 
     rerender(<Button size='small'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '12px')
+    expect(button).toHaveStyleRule('padding', '7px 12px')
+
+    rerender(<Button size='medium'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '14px')
+    expect(button).toHaveStyleRule('padding', '9.5px 18px')
+
+    rerender(<Button size='large'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '12px 22px')
+
+    rerender(<Button size='extraLarge'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '16px 22px')
+  })
+
+  it('should render correctly for "IconLeft" and "IconRight"', () => {
+    const { getByRole, rerender } = render(<Button IconLeft={User}>BUTTON</Button>)
+
+    const button = getByRole('button')
+
+    expect(button).toHaveStyleRule('font-size', '14px')
+    expect(button).toHaveStyleRule('padding', '8px 20px 8px 16px')
+
+    rerender(<Button size='small' IconRight={User} />)
 
     expect(button).toHaveStyleRule('font-size', '12px')
     expect(button).toHaveStyleRule('padding', '7px 12px')
@@ -290,7 +320,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('-webkit-font-smoothing', 'inherit')
         expect(button).toHaveStyleRule('font-weight', '500')
         expect(button).toHaveStyleRule('line-height', '1.4')
-        expect(button).toHaveStyleRule('padding', '0')
+        expect(button).toHaveStyleRule('padding', '0px')
         expect(button).toHaveStyleRule('background-color', 'transparent')
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
