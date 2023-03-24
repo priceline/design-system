@@ -7,7 +7,7 @@ jest.mock('react-dom', () => ({
 }))
 
 import React from 'react'
-import { fireEvent, render, screen } from '../__test__/testing-library'
+import { act, fireEvent, render, screen } from '../__test__/testing-library'
 import { ToastProvider } from '..'
 import { MockToastChildren } from '../__test__/mocks/toasts'
 
@@ -24,8 +24,11 @@ describe('ToastProvider', () => {
     expect(screen.queryByText('Success Toast Message')).toBeInTheDocument()
 
     const closeIcon = screen.getAllByTitle('close-toast')[0]
-    fireEvent.click(closeIcon)
-    jest.runAllTimers()
+
+    act(() => {
+      fireEvent.click(closeIcon)
+      jest.runAllTimers()
+    })
 
     expect(screen.queryByText('Success Toast Message')).not.toBeInTheDocument()
   })
@@ -45,12 +48,18 @@ describe('ToastProvider', () => {
     fireEvent.click(screen.queryByText('Add Success Toast'))
     expect(screen.queryAllByText('Success Toast Message').length).toBe(4)
 
-    fireEvent.click(screen.getAllByTitle('close-toast')[0])
-    jest.runAllTimers()
+    act(() => {
+      fireEvent.click(screen.getAllByTitle('close-toast')[0])
+      jest.runAllTimers()
+    })
+
     expect(screen.queryAllByText('Success Toast Message').length).toBe(4)
 
-    fireEvent.click(screen.getAllByTitle('close-toast')[0])
-    jest.runAllTimers()
+    act(() => {
+      fireEvent.click(screen.getAllByTitle('close-toast')[0])
+      jest.runAllTimers()
+    })
+
     expect(screen.queryAllByText('Success Toast Message').length).toBe(3)
   })
 
