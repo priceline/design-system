@@ -1,4 +1,4 @@
-const { parameters, decorators } = require('@priceline/storybook-preset')
+import { decorators as pclnDecorators, parameters as pclnParameters } from '@priceline/storybook-preset'
 
 const brandingOptions = {
   docs: {
@@ -6,14 +6,12 @@ const brandingOptions = {
     brandUrl: 'https://github.com/priceline/design-system/packages/core',
   },
 }
-
-module.exports = {
-  parameters: {
-    ...parameters,
-    options: {
-      ...parameters.options,
-      ...brandingOptions,
-    },
+export const parameters = {
+  ...pclnParameters,
+  options: {
+    ...pclnParameters.options,
+    ...brandingOptions,
   },
-  decorators,
 }
+
+export const decorators = [...pclnDecorators]
