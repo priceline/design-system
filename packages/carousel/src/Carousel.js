@@ -62,7 +62,6 @@ export const Carousel = ({
   mobileVisibleSlides,
   displayArrowsMobile,
 }) => {
-  const [height, setHeight] = useState(0)
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
