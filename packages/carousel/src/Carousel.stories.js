@@ -99,6 +99,7 @@ const BasicTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 export const Basic = BasicTemplate.bind({})
 Basic.args = {
   visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
