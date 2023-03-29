@@ -5,6 +5,11 @@ import { MockToastChildren } from '../__test__/mocks/toasts'
 export default {
   title: 'Core / ToastProvider',
   component: ToastProvider,
+  argTypes: {
+    lifespan: {
+      description: 'Lifespan in milliseconds before the Toast closes.',
+    },
+  },
 }
 
 const Template = (args) => (

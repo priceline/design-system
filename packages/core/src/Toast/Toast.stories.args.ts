@@ -1,6 +1,6 @@
 export const defaultArgs = {
   children: 'Success Message',
-  variant: 'success',
+  color: 'success',
 }
 
 export const argTypes = {}

@@ -34,6 +34,7 @@ export const customOptions = {
   enterAnimation: 'expandDown',
   exitAnimation: 'fadeIn',
   hideClose: true,
+  lifespan: 2000,
 }
 
 export const MockToastChildren = () => {

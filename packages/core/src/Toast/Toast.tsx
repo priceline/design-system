@@ -20,7 +20,6 @@ const RoundIconButton = styled(IconButton)`
 
 export interface IToastProps extends Omit<IFlexProps, 'id'> {
   children: React.ReactNode
-  colorScheme?: string
   hideClose?: boolean
   icon?: React.ReactNode
   id?: number
