@@ -1,5 +1,5 @@
 export const defaultArgs = {
-  text: 'Success Message',
+  children: 'Success Message',
   variant: 'success',
 }
 

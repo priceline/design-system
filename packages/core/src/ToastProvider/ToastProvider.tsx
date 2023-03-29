@@ -6,8 +6,6 @@ import { Flex } from '../Flex'
 import { Toast, IToastProps } from '../Toast'
 import { ThemeProvider } from '../ThemeProvider'
 
-export type ToastVariant = 'error' | 'information' | 'success'
-
 interface IToastOptions extends IToastProps {
   enterAnimation?: MotionVariant
   exitAnimation?: MotionVariant
@@ -83,7 +81,7 @@ function ToastProvider({
 
                   return (
                     <Animate key={toast.id} variant={toast.removed ? exitAnim : enterAnim}>
-                      <Toast lifespan={lifespan} onRemoveClick={removeToast} {...toast} mt={2} />
+                      <Toast lifespan={lifespan} onRemoveClick={removeToast} {...toast} mt={3} />
                     </Animate>
                   )
                 })}

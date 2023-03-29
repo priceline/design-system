@@ -5,25 +5,32 @@ import { Button } from '../../Button'
 import { Flex } from '../../Flex'
 import { Text } from '../../Text'
 import { useToast } from '../../ToastProvider'
+import {
+  Attention as AttentionIcon,
+  Check as CheckIcon,
+  InformationOutline as InformationOutlineIcon,
+} from 'pcln-icons'
 
 export const errorOptions = {
   children: 'Error Toast Message',
-  variant: 'error',
+  color: 'error',
+  icon: <AttentionIcon />,
 }
 
 export const informationOptions = {
   children: 'Information Toast Message',
-  variant: 'information',
+  color: 'primary',
+  icon: <InformationOutlineIcon />,
 }
 
 export const successOptions = {
   children: 'Success Toast Message',
-  variant: 'success',
+  color: 'success',
+  icon: <CheckIcon />,
 }
 
 export const customOptions = {
   children: <Text textStyle='paragraphBold'>Custom Toast Message</Text>,
-  color: 'text.light',
   enterAnimation: 'expandDown',
   exitAnimation: 'fadeIn',
   hideClose: true,

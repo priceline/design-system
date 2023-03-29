@@ -1,48 +1,43 @@
 import React, { useEffect } from 'react'
-import {
-  Attention as AttentionIcon,
-  Check as CheckIcon,
-  Close as CloseIcon,
-  InformationOutline as InformationOutlineIcon,
-} from 'pcln-icons'
+import { themeGet } from '@styled-system/theme-get'
+import styled from 'styled-components'
+import { Close as CloseIcon } from 'pcln-icons'
+import { Absolute } from '../Absolute'
 import { Flex, IFlexProps } from '../Flex'
-import { Text } from '../Text'
 import { IconButton } from '../IconButton'
+import { Relative } from '../Relative'
+import { Text } from '../Text'
+import { getPaletteColor } from '../utils'
+
+const RoundIconButton = styled(IconButton)`
+  background-color: ${getPaletteColor('background.lightest')};
+  padding: ${themeGet('space.1')};
+
+  &:hover {
+    background-color: ${getPaletteColor('background.lightest')};
+  }
+`
 
 export interface IToastProps extends Omit<IFlexProps, 'id'> {
   children: React.ReactNode
+  colorScheme?: string
   hideClose?: boolean
+  icon?: React.ReactNode
   id?: number
   lifespan?: number
-  variant: 'error' | 'information' | 'success'
   onRemoveClick?: (id: number) => void
 }
 
-function getVariationProps(variant) {
-  switch (variant) {
-    case 'error':
-      return {
-        color: 'error',
-        icon: <AttentionIcon size={20} />,
-      }
-    case 'information':
-      return {
-        color: 'primary',
-        icon: <InformationOutlineIcon size={20} />,
-      }
-    case 'success':
-      return {
-        color: 'success',
-        icon: <CheckIcon size={20} />,
-      }
-    default:
-      return {}
-  }
-}
-
-function Toast({ children, hideClose, id, lifespan, variant, onRemoveClick, ...props }: IToastProps) {
-  const { icon, ...rest } = getVariationProps(variant)
-
+function Toast({
+  children,
+  color = 'text.light',
+  hideClose,
+  icon,
+  id,
+  lifespan,
+  onRemoveClick,
+  ...props
+}: IToastProps) {
   useEffect(() => {
     let timer
     if (lifespan > 0) {
@@ -58,15 +53,32 @@ function Toast({ children, hideClose, id, lifespan, variant, onRemoveClick, ...p
   }
 
   return (
-    <Flex {...rest} {...props} borderRadius='lg' justifyContent='space-between' alignItems='center' p={3}>
-      {icon}
-      <Flex width='100%' mx={3}>
-        {typeof children === 'string' ? <Text textStyle='paragraph'>{children}</Text> : children}
+    <Relative>
+      <Flex
+        {...props}
+        borderRadius='lg'
+        boxShadowSize='xl'
+        color={color}
+        justifyContent='space-between'
+        alignItems='center'
+        p={3}
+      >
+        {icon}
+        <Flex width='100%' mx={3}>
+          {typeof children === 'string' ? <Text textStyle='paragraph'>{children}</Text> : children}
+        </Flex>
+        {!hideClose && (
+          <Absolute top={-12} right={-12}>
+            <RoundIconButton
+              borderRadius='full'
+              boxShadowSize='xl'
+              icon={<CloseIcon color='primary' size={20} title='close-toast' />}
+              onClick={handleRemoveClick}
+            />
+          </Absolute>
+        )}
       </Flex>
-      {!hideClose && (
-        <IconButton icon={<CloseIcon size={20} title='close-toast' />} onClick={handleRemoveClick} />
-      )}
-    </Flex>
+    </Relative>
   )
 }
 
