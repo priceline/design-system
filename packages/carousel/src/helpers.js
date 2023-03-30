@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import moize from 'moize'
 import { v4 as uuidv4 } from 'uuid'
 import {
-  XS_VISIBLE_SLIDES,
-  SM_VISIBLE_SLIDES,
-  XS_VISIBLE_SLIDES_WIDTH,
-  SM_VISIBLE_SLIDES_WIDTH,
+  VISIBLE_SLIDES_BREAKPOINT_1,
+  VISIBLE_SLIDES_BREAKPOINT_2,
+  CAROUSEL_BREAKPOINT_1,
+  CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
 } from './constants'
 import { debounce } from 'lodash'
@@ -13,12 +13,14 @@ import { debounce } from 'lodash'
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
 const getVisibleSlidesArray = (visibleSlides) =>
-  Array.isArray(visibleSlides) ? visibleSlides : [XS_VISIBLE_SLIDES, SM_VISIBLE_SLIDES, visibleSlides]
+  Array.isArray(visibleSlides)
+    ? visibleSlides
+    : [VISIBLE_SLIDES_BREAKPOINT_1, VISIBLE_SLIDES_BREAKPOINT_2, visibleSlides]
 
 const getVisibleSlides = (visibleSlides, windowWidth) =>
-  windowWidth < XS_VISIBLE_SLIDES_WIDTH
+  windowWidth < CAROUSEL_BREAKPOINT_1
     ? visibleSlides[0]
-    : windowWidth < SM_VISIBLE_SLIDES_WIDTH
+    : windowWidth < CAROUSEL_BREAKPOINT_2
     ? visibleSlides[1]
     : visibleSlides[2]
 
@@ -50,7 +52,17 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
     }
   })
 
-  return getVisibleSlides(visibleSlides, width)
+  return {
+    responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
+    browserWidth: width,
+  }
 }
 
-export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides }
+//This is to keep consistant with previous version.
+//We should make a major version release that will allow more breakpoints
+const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, visibleSlides[1]]
+
+const getMobileVisibleSlides = (visibleSlides) =>
+  Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
+
+export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }
