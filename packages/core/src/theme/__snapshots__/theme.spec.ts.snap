@@ -516,9 +516,9 @@ Object {
       "lineHeight": "48px",
     },
     "subheading2": Object {
-      "fontSize": "40px",
+      "fontSize": "32px",
       "fontWeight": 500,
-      "lineHeight": "48px",
+      "lineHeight": "40px",
     },
     "subheading3": Object {
       "fontSize": "26px",
