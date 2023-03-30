@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.1.0",
+      "tag": "pcln-carousel_v2.1.0",
+      "date": "Thu, 30 Mar 2023 15:50:48 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Update main branch to get latest from v4 for carousel",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "03e85381f43a4a082d1203683a7a7317cf5f8957"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.0.13",
       "tag": "pcln-carousel_v2.0.13",
       "date": "Wed, 22 Mar 2023 18:15:16 GMT",
