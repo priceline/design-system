@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
+import { useTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
 import { Animate, MotionVariant } from '../Animate'
@@ -43,6 +44,7 @@ function ToastProvider({
   lifespan,
   maxToasts = 3,
 }: IToastProvider) {
+  const theme = useTheme()
   const [toasts, setToasts] = useState<IToastOptions[]>([])
 
   const addToast = useCallback((options: IToastOptions) => {
@@ -71,7 +73,7 @@ function ToastProvider({
     <ToastContext.Provider value={{ addToast, removeToast }}>
       {children}
       {createPortal(
-        <ThemeProvider>
+        <ThemeProvider theme={theme}>
           <Absolute bottom={20} width='100%'>
             <Flex justifyContent='center' width='100%'>
               <Flex flexDirection='column-reverse' justifyContent='center' minWidth='300px'>

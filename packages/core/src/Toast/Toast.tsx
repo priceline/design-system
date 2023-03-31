@@ -3,7 +3,6 @@ import { themeGet } from '@styled-system/theme-get'
 import styled from 'styled-components'
 import { Close as CloseIcon } from 'pcln-icons'
 import { Absolute } from '../Absolute'
-import { Box } from '../Box'
 import { Flex, IFlexProps } from '../Flex'
 import { IconButton } from '../IconButton'
 import { Relative } from '../Relative'
@@ -64,9 +63,9 @@ function Toast({
         p={3}
       >
         {icon && (
-          <Box mr={3}>
+          <Flex mr={3}>
             {icon}
-          </Box>
+          </Flex>
         )}
         <Flex width='100%'>
           {typeof children === 'string' ? <Text textStyle='paragraph'>{children}</Text> : children}
