@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Correct text style subheading2's styles",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
