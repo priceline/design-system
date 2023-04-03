@@ -158,8 +158,8 @@ export const typography = {
   },
   subheading2: {
     fontWeight: 500,
-    fontSize: '40px',
-    lineHeight: '48px',
+    fontSize: '32px',
+    lineHeight: '40px',
   },
   subheading3: {
     fontWeight: 500,
