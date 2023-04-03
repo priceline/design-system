@@ -232,9 +232,9 @@ Object {
 
 exports[`typographyAttrs works with and textStyle=subheading2 1`] = `
 Object {
-  "fontSize": "40px",
+  "fontSize": "32px",
   "fontWeight": 500,
-  "lineHeight": "48px",
+  "lineHeight": "40px",
 }
 `;
 
