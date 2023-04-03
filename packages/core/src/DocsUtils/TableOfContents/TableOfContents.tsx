@@ -16,7 +16,7 @@ export const TableOfContents = ({ links }: TableOfContentsProps) => (
         const id = kebabCase(link)
         return (
           <Link key={id} onClick={() => scrollTo(id)}>
-            <li>{link}</li>
+            <li style={{ color: 'inherit' }}>{link}</li>
           </Link>
         )
       })}
