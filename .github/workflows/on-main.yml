@@ -1,11 +1,11 @@
-name: On Main Merge - Build Static Docsite and Storybook
+name: On Main Merge - Build Storybook
 
 on:
   push:
     branches: [main]
 
 jobs:
-  on-main-docsite-storybook:
+  on-main-storybook:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,22 +33,8 @@ jobs:
       - name: Build components
         run: node common/scripts/install-run-rush.js build
 
-      - name: Build docsite
-        run: node common/scripts/install-run-rush.js build:docsite
-
-      - name: Create .nojekyll file
-        run: touch apps/docs/out/.nojekyll
-
       - name: Build static Storybook
         working-directory: ./
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         run: node common/scripts/install-run-rush.js build:storybook:baseline
-
-      - name: Push build directory to GitHub Pages branch
-        uses: s0/git-publish-subdir-action@v2.3.0
-        env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: apps/docs/out
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

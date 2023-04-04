@@ -12,6 +12,10 @@ module.exports = {
   assetPrefix: IS_PROD ? 'https://priceline.github.io/design-system/' : '',
   swcMinify: !IS_PROD,
 
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({
       test: /\.mdx?$/,
