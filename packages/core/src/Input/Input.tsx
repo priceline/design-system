@@ -1,6 +1,15 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
+import {
+  space,
+  fontSize,
+  borderRadius,
+  zIndex,
+  SpaceProps,
+  FontSizeProps,
+  ZIndexProps,
+  compose,
+} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import PropTypes from 'prop-types'
 import { Text, ITextProps } from '../Text'
@@ -10,11 +19,8 @@ import {
   borders,
   deprecatedColorValue,
   borderRadiusAttrs,
-  zIndex,
-  zIndexAttrs,
   applySizes,
 } from '../utils'
-import { ZIndex } from '../theme'
 
 const sizes = {
   sm: css`
@@ -31,10 +37,8 @@ const sizes = {
   `,
 }
 
-const StyledInput = styled.input.attrs((props) => ({
-  ...borderRadiusAttrs(props),
-  ...zIndexAttrs(props),
-}))`
+const StyledInput = styled.input.attrs(borderRadiusAttrs)`
+  position: relative;
   appearance: none;
   display: block;
   width: 100%;
@@ -56,9 +60,8 @@ const StyledInput = styled.input.attrs((props) => ({
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Input')}
   ${borders}
-  ${zIndex}
 
-  ${(props) => compose(space, fontSize, borderRadius)(props)}
+  ${(props) => compose(space, fontSize, borderRadius, zIndex)(props)}
 `
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
@@ -78,6 +81,7 @@ const inputPropTypes = {
 export interface IInputProps
   extends SpaceProps,
     FontSizeProps,
+    ZIndexProps,
     Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>,
     React.RefAttributes<HTMLInputElement> {
   onChange?: (unknown) => unknown
@@ -86,7 +90,6 @@ export interface IInputProps
   color?: string
   size?: 'sm' | 'md' | 'lg' | 'xl'
   borderRadius?: string
-  zIndex?: ZIndex
 }
 
 export const Input: React.FC<IInputProps> & {

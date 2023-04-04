@@ -40,7 +40,7 @@ export const _ZIndices = () => {
       <Divider />
       {Object.keys(theme.zIndices)?.map((key) => {
         return (
-          <Flex justifyContent='space-between' width={200} mb={2}>
+          <Flex key={key} justifyContent='space-between' width={200} mb={2}>
             <Text.span>{key}</Text.span>
             <Text.span>{theme.zIndices[key]}</Text.span>
           </Flex>

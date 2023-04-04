@@ -3,11 +3,9 @@
 import React, { useState } from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { zIndexAttrs } from '../utils'
+import { zIndex } from 'styled-system'
 
-export const ShadowOverlay = styled.div.attrs((props) => ({
-  ...zIndexAttrs({ ...props, zIndex: props.zIndex || 'overlay' }),
-}))`
+export const ShadowOverlay = styled.div`
   display: block;
   position: fixed;
   top: 0;
@@ -15,10 +13,7 @@ export const ShadowOverlay = styled.div.attrs((props) => ({
   width: 100%;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.65);
-  ${(props) => {
-    console.log(props.zIndex)
-  }};
-  z-index: ${(props) => props.zIndex};
+  ${zIndex};
 `
 
 const propTypes = {
@@ -33,7 +28,7 @@ const propTypes = {
 const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
   shouldCloseOnBlur,
   shouldOpenOnFocus,
-  zIndex,
+  zIndex = 'overlay',
   children,
   onClose,
   onOpen,
