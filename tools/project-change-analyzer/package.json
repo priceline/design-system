@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@microsoft/rush-lib": "5.74.0",
+    "@microsoft/rush-lib": "5.94.1",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.4",
     "@rushstack/node-core-library": "^3.45.1",
@@ -43,8 +43,8 @@
     "yargs": "^17.4.0"
   },
   "devDependencies": {
-    "@types/node": "^16.10.1",
-    "eslint": "^7.32.0",
+    "@types/node": "^18.15.11",
+    "eslint": "^8.33.0",
     "typescript": "^4.5.4"
   }
 }

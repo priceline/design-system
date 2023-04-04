@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "upgrade eslint to 8.33.0, jest to 27",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}

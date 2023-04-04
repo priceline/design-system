@@ -1,6 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import type { Sizes } from './Button'
+
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
+
+import { Calendar, Check, Search, User, ChevronLeft, ChevronRight } from 'pcln-icons'
+
 import {
   DocTable,
   DoDont,
@@ -37,6 +43,8 @@ import buttonStates from './Button.Image.States.png'
 
 type ButtonStory = StoryObj<IButtonProps>
 
+const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
+
 export const Playground: ButtonStory = {
   render: (args) => <Button {...args}>Button</Button>,
   argTypes: {
@@ -47,7 +55,7 @@ export const Playground: ButtonStory = {
     },
     size: {
       control: 'select',
-      options: ['small', 'medium', 'large', 'extraLarge'],
+      options: sizeOptions,
       defaultValue: Button.defaultProps.size,
     },
     variation: {
@@ -66,7 +74,7 @@ export const Playground: ButtonStory = {
   },
 }
 
-export const Sizes: ButtonStory = {
+export const Size: ButtonStory = {
   render: () => (
     <StoryStage>
       <Button size='small'>Small</Button>
@@ -154,6 +162,32 @@ export const SemanticStyles: ButtonStory = {
   ),
 }
 
+export const IconButtons: ButtonStory = {
+  render: () => (
+    <>
+      {sizeOptions.map((size: Sizes) => (
+        <StoryStage key={size}>
+          <Button size={size} IconLeft={User}>
+            Sign In
+          </Button>
+          <Button size={size} IconRight={Calendar}>
+            Select Dates
+          </Button>
+          <Button size={size} IconLeft={Search} IconRight={Check}>
+            Bookends
+          </Button>
+          <Button size={size} IconLeft={ChevronLeft} />
+          <Button size={size} IconLeft={ChevronRight} />
+          <Button size={size} IconLeft={User} />
+          <Button size={size} variation='link' IconLeft={User}>
+            Link Button Text
+          </Button>
+        </StoryStage>
+      ))}
+    </>
+  ),
+}
+
 const meta: Meta<typeof Button> = {
   title: 'Actions/Button',
   component: Button,
@@ -201,7 +235,7 @@ const meta: Meta<typeof Button> = {
               products, so that they message the correct actions.
             </Text>
 
-            <StoryHeading storyName='Sizes' storyTitle={meta.title} />
+            <StoryHeading storyName='Size' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Our design system supports a default button size as well as a extraLarge, large and small size.
               If a large or small button is desired, set the size property to either extraLarge, large or
@@ -226,7 +260,7 @@ const meta: Meta<typeof Button> = {
                 },
               ]}
             />
-            <LiveDemo code={Sizes} />
+            <LiveDemo code={Size} />
 
             <StoryHeading storyName='Primary Variations' storyTitle={meta.title} />
             <Text textStyle='paragraph'>

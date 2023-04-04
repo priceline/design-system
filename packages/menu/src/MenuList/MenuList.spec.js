@@ -36,22 +36,22 @@ describe('MenuList', () => {
       </MenuList>
     )
 
-    expect(screen.getByText('Item One').parentNode).toHaveFocus()
+    expect(screen.getByText('Item One').closest('button')).toHaveFocus()
     fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowDown',
       code: 'ArrowDown',
     })
-    expect(screen.getByText('Item Two').parentNode).toHaveFocus()
+    expect(screen.getByText('Item Two').closest('button')).toHaveFocus()
     fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowUp',
       code: 'ArrowUp',
     })
-    expect(screen.getByText('Item One').parentNode).toHaveFocus()
+    expect(screen.getByText('Item One').closest('button')).toHaveFocus()
     fireEvent.keyDown(screen.getByRole('listbox'), {
       key: 'ArrowRight',
       code: 'ArrowRight',
     })
-    expect(screen.getByText('Item One').parentNode).toHaveFocus()
+    expect(screen.getByText('Item One').closest('button')).toHaveFocus()
   })
   it('grabs font family from theme', () => {
     const mockTheme = {

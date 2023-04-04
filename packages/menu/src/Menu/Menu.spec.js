@@ -47,17 +47,17 @@ describe('Menu', () => {
     let itemOne = await screen.findByText('Item One')
     const itemTwo = await screen.findByText('Item Two')
 
-    expect(itemOne.parentNode).toHaveFocus()
+    expect(itemOne.closest('button')).toHaveFocus()
     fireEvent.keyDown(listBox, {
       key: 'ArrowDown',
       code: 'ArrowDown',
     })
-    expect(itemTwo.parentNode).toHaveFocus()
+    expect(itemTwo.closest('button')).toHaveFocus()
     fireEvent.keyDown(listBox, {
       key: 'ArrowUp',
       code: 'ArrowUp',
     })
-    expect(itemOne.parentNode).toHaveFocus()
+    expect(itemOne.closest('button')).toHaveFocus()
     fireEvent.click(itemOne)
 
     fireEvent.keyDown(screen.getByText('Click Me'), {
@@ -66,7 +66,7 @@ describe('Menu', () => {
     })
 
     itemOne = await screen.findByText('Item One')
-    expect(itemOne.parentNode).toHaveFocus()
+    expect(itemOne.closest('button')).toHaveFocus()
     fireEvent.click(itemOne)
 
     fireEvent.keyDown(screen.getByText('Click Me'), {

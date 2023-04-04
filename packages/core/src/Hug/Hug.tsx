@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Attributes } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -40,13 +40,13 @@ const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, .
   let iconClone
 
   if (React.isValidElement(icon)) {
-    iconClone = React.cloneElement(icon, {
+    iconClone = React.cloneElement(icon, ({
       style: { display: iconDisplay },
       mr: 2,
       mt: '-2px',
       mb: '2px',
       size: 24,
-    })
+    } as unknown) as Attributes)
   }
 
   return (

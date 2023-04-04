@@ -3,6 +3,21 @@
 exports[`Step should handle onClick 1`] = `
 <DocumentFragment>
   .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
   color: #0068ef;
   font-weight: 700;
   font-size: 14px;
@@ -52,7 +67,6 @@ exports[`Step should handle onClick 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: pointer;
   padding: 0;
   font-weight: unset;
@@ -81,12 +95,16 @@ exports[`Step should handle onClick 1`] = `
       data-testid="Step"
     >
       <div
-        aria-selected="true"
         class="c3"
-        color="primary"
-        font-size="1"
       >
-        Step
+        <div
+          aria-selected="true"
+          class="c4"
+          color="primary"
+          font-size="1"
+        >
+          Step
+        </div>
       </div>
     </button>
   </div>
@@ -95,7 +113,7 @@ exports[`Step should handle onClick 1`] = `
 
 exports[`Step should render a completed step correctly 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -105,11 +123,26 @@ exports[`Step should render a completed step correctly 1`] = `
   width: 16px;
 }
 
-.c4 {
+.c5 {
   outline: none;
 }
 
-.c5 {
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 {
   color: #0068ef;
   font-size: 14px;
 }
@@ -158,7 +191,6 @@ exports[`Step should render a completed step correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;
@@ -186,31 +218,35 @@ exports[`Step should render a completed step correctly 1`] = `
       color="primary"
       data-testid="Step"
     >
-      <svg
-        aria-hidden="false"
-        aria-label="Step Completed"
-        class="c3 c4"
-        color="primary"
-        fill="currentcolor"
-        focusable="false"
-        height="16"
-        role="img"
-        tabindex="-1"
-        viewBox="0 0 24 24"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
-        />
-      </svg>
       <div
-        aria-selected="false"
-        class="c5"
-        color="primary"
-        font-size="1"
+        class="c3"
       >
-        Step
+        <svg
+          aria-hidden="false"
+          aria-label="Step Completed"
+          class="c4 c5"
+          color="primary"
+          fill="currentcolor"
+          focusable="false"
+          height="16"
+          role="img"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+          />
+        </svg>
+        <div
+          aria-selected="false"
+          class="c6"
+          color="primary"
+          font-size="1"
+        >
+          Step
+        </div>
       </div>
     </button>
   </div>
@@ -219,7 +255,7 @@ exports[`Step should render a completed step correctly 1`] = `
 
 exports[`Step should render a step that is "active" and "completed" correctly 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -229,11 +265,26 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   width: 16px;
 }
 
-.c4 {
+.c5 {
   outline: none;
 }
 
-.c5 {
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 {
   color: #0068ef;
   font-weight: 700;
   font-size: 14px;
@@ -283,7 +334,6 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;
@@ -311,31 +361,35 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
       color="primary"
       data-testid="Step"
     >
-      <svg
-        aria-hidden="false"
-        aria-label="Step Completed"
-        class="c3 c4"
-        color="primary"
-        fill="currentcolor"
-        focusable="false"
-        height="16"
-        role="img"
-        tabindex="-1"
-        viewBox="0 0 24 24"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
-        />
-      </svg>
       <div
-        aria-selected="true"
-        class="c5"
-        color="primary"
-        font-size="1"
+        class="c3"
       >
-        Step
+        <svg
+          aria-hidden="false"
+          aria-label="Step Completed"
+          class="c4 c5"
+          color="primary"
+          fill="currentcolor"
+          focusable="false"
+          height="16"
+          role="img"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+          />
+        </svg>
+        <div
+          aria-selected="true"
+          class="c6"
+          color="primary"
+          font-size="1"
+        >
+          Step
+        </div>
       </div>
     </button>
   </div>
@@ -345,6 +399,21 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 exports[`Step should render an active step correctly 1`] = `
 <DocumentFragment>
   .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
   color: #0068ef;
   font-weight: 700;
   font-size: 14px;
@@ -394,7 +463,6 @@ exports[`Step should render an active step correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;
@@ -423,12 +491,16 @@ exports[`Step should render an active step correctly 1`] = `
       data-testid="Step"
     >
       <div
-        aria-selected="true"
         class="c3"
-        color="primary"
-        font-size="1"
       >
-        Step
+        <div
+          aria-selected="true"
+          class="c4"
+          color="primary"
+          font-size="1"
+        >
+          Step
+        </div>
       </div>
     </button>
   </div>
@@ -438,6 +510,21 @@ exports[`Step should render an active step correctly 1`] = `
 exports[`Step should render correctly with no props without throwing 1`] = `
 <DocumentFragment>
   .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
   color: #4f6f8f;
   font-size: 14px;
 }
@@ -486,7 +573,6 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;
@@ -514,12 +600,16 @@ exports[`Step should render correctly with no props without throwing 1`] = `
       color="primary"
     >
       <div
-        aria-selected="false"
         class="c3"
-        color="text.light"
-        font-size="1"
       >
-        Step
+        <div
+          aria-selected="false"
+          class="c4"
+          color="text.light"
+          font-size="1"
+        >
+          Step
+        </div>
       </div>
     </button>
   </div>

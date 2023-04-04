@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import themeGet from '@styled-system/theme-get'
+import styledSystemPropTypes from '@styled-system/prop-types'
 import { applySizes, applyVariations, color, deprecatedColorValue, borderRadiusAttrs } from '../utils'
 import { space, borderRadius, SpaceProps, compose } from 'styled-system'
 
@@ -78,7 +79,7 @@ const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
 Badge.displayName = 'Badge'
 
 Badge.propTypes = {
-  ...space.propTypes,
+  ...styledSystemPropTypes.space,
   size: PropTypes.oneOf(Object.keys(sizes)),
   color: deprecatedColorValue(),
   bg: deprecatedColorValue(),

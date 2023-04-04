@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from '../__test__/testing-library'
 
 import styled from 'styled-components'
+import { User } from 'pcln-icons'
 
 import { Button, createTheme } from '..'
 
@@ -21,9 +22,9 @@ afterEach(() => {
 
 describe('Button', () => {
   it('should render correctly with no props', () => {
-    const { getByText } = render(<Button>BUTTON</Button>)
+    const { getByRole } = render(<Button>BUTTON</Button>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('background-color', theme.palette.primary.base)
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
@@ -37,9 +38,9 @@ describe('Button', () => {
   })
 
   it('should render correctly when disabled', () => {
-    const { getByText } = render(<Button disabled>BUTTON</Button>)
+    const { getByRole } = render(<Button disabled>BUTTON</Button>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('background-color', theme.palette.primary.light)
     expect(button).toHaveStyleRule('color', theme.palette.text.base)
@@ -54,9 +55,9 @@ describe('Button', () => {
   })
 
   it('should render correctly for "size" prop', () => {
-    const { getByText, rerender } = render(<Button>BUTTON</Button>)
+    const { getByRole, rerender } = render(<Button>BUTTON</Button>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('font-size', '14px')
     expect(button).toHaveStyleRule('padding', '9.5px 18px')
@@ -82,10 +83,39 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('padding', '16px 22px')
   })
 
-  it('should render correctly for "width" prop', () => {
-    const { getByText, rerender } = render(<Button>BUTTON</Button>)
+  it('should render correctly for "IconLeft" and "IconRight"', () => {
+    const { getByRole, rerender } = render(<Button IconLeft={User}>BUTTON</Button>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
+
+    expect(button).toHaveStyleRule('font-size', '14px')
+    expect(button).toHaveStyleRule('padding', '8px 20px 8px 16px')
+
+    rerender(<Button size='small' IconRight={User} />)
+
+    expect(button).toHaveStyleRule('font-size', '12px')
+    expect(button).toHaveStyleRule('padding', '7px 12px')
+
+    rerender(<Button size='medium'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '14px')
+    expect(button).toHaveStyleRule('padding', '9.5px 18px')
+
+    rerender(<Button size='large'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '12px 22px')
+
+    rerender(<Button size='extraLarge'>BUTTON</Button>)
+
+    expect(button).toHaveStyleRule('font-size', '16px')
+    expect(button).toHaveStyleRule('padding', '16px 22px')
+  })
+
+  it('should render correctly for "width" prop', () => {
+    const { getByRole, rerender } = render(<Button>BUTTON</Button>)
+
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('width', undefined)
 
@@ -116,9 +146,9 @@ describe('Button', () => {
   })
 
   it('should render correctly for "borderRadius" prop', () => {
-    const { getByText, rerender } = render(<Button size='medium'>BUTTON</Button>)
+    const { getByRole, rerender } = render(<Button size='medium'>BUTTON</Button>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-md'])
 
@@ -177,9 +207,9 @@ describe('Button', () => {
   })
 
   it('should render correctly for "boxShadowSize" prop', () => {
-    const { getByText, rerender } = render(<Button>BUTTON</Button>)
+    const { getByRole, rerender } = render(<Button>BUTTON</Button>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('box-shadow', undefined)
 
@@ -191,13 +221,13 @@ describe('Button', () => {
   })
 
   it('should render correctly for extraLarge size', () => {
-    const { getByText } = render(
+    const { getByRole } = render(
       <Button borderRadius='xl' size='extraLarge'>
         BUTTON
       </Button>
     )
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('border-radius', '16px')
     expect(button).toHaveStyleRule('font-size', '16px')
@@ -207,9 +237,9 @@ describe('Button', () => {
   describe('variations', () => {
     describe('fill variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='fill'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='fill'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.lightest)
         expect(button).toHaveStyleRule('background-color', theme.palette.primary.base)
@@ -229,13 +259,13 @@ describe('Button', () => {
       })
 
       it('should render correctly when disabled', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='fill' disabled>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.base)
         expect(button).toHaveStyleRule('background-color', theme.palette.primary.light)
@@ -248,9 +278,9 @@ describe('Button', () => {
 
     describe('outline variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='outline'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='outline'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.primary.base)
         expect(button).toHaveStyleRule('background-color', 'transparent')
@@ -266,13 +296,13 @@ describe('Button', () => {
       })
 
       it('should render correctly when disabled', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='outline' disabled>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.primary.light)
         expect(button).toHaveStyleRule('background-color', 'transparent')
@@ -281,16 +311,16 @@ describe('Button', () => {
 
     describe('link variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='link'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='link'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.primary.base)
         expect(button).toHaveStyleRule('vertical-align', 'inherit')
         expect(button).toHaveStyleRule('-webkit-font-smoothing', 'inherit')
         expect(button).toHaveStyleRule('font-weight', '500')
         expect(button).toHaveStyleRule('line-height', '1.4')
-        expect(button).toHaveStyleRule('padding', '0')
+        expect(button).toHaveStyleRule('padding', '0px')
         expect(button).toHaveStyleRule('background-color', 'transparent')
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
@@ -301,13 +331,13 @@ describe('Button', () => {
       })
 
       it('should render correctly when disabled', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='link' disabled>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
@@ -320,9 +350,9 @@ describe('Button', () => {
 
     describe('subtle variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='subtle'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='subtle'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.primary.base)
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base)
@@ -345,13 +375,13 @@ describe('Button', () => {
       })
 
       it('should render correctly when disabled', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='subtle' disabled>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
@@ -364,9 +394,9 @@ describe('Button', () => {
 
     describe('white variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='white'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='white'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('background-color', theme.palette.background.lightest)
       })
@@ -374,9 +404,9 @@ describe('Button', () => {
 
     describe('plain variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='plain'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='plain'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.primary.base)
         expect(button).toHaveStyleRule('background-color', 'transparent')
@@ -399,13 +429,13 @@ describe('Button', () => {
       })
 
       it('should render correctly when disabled', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='plain' disabled>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
@@ -418,13 +448,13 @@ describe('Button', () => {
 
     describe('lightFill variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='lightFill' color='warning'>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.warning.base)
         expect(button).toHaveStyleRule('background-color', theme.palette.warning.light)
@@ -447,13 +477,13 @@ describe('Button', () => {
       })
 
       it('should render correctly when disabled', () => {
-        const { getByText } = render(
+        const { getByRole } = render(
           <Button variation='lightFill' disabled>
             BUTTON
           </Button>
         )
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.light, {
           modifier: ':disabled',
@@ -466,9 +496,9 @@ describe('Button', () => {
 
     describe('input variation', () => {
       it('should render correctly', () => {
-        const { getByText } = render(<Button variation='input'>BUTTON</Button>)
+        const { getByRole } = render(<Button variation='input'>BUTTON</Button>)
 
-        const button = getByText('BUTTON')
+        const button = getByRole('button')
 
         expect(button).toHaveStyleRule('color', theme.palette.text.base)
         expect(button).toHaveStyleRule('background-color', 'transparent')
@@ -485,9 +515,9 @@ describe('Button', () => {
 
   // this test detects a current defect that will be fixed properly in DSv4
   it('should not lose base styles on "styled(Button)"', () => {
-    const { getByText } = render(<StyledButton>BUTTON</StyledButton>)
+    const { getByRole } = render(<StyledButton>BUTTON</StyledButton>)
 
-    const button = getByText('BUTTON')
+    const button = getByRole('button')
 
     expect(button).toHaveStyleRule('background-color', theme.palette.primary.base)
     expect(button).toHaveStyleRule('color', theme.palette.text.lightest)

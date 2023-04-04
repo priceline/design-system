@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "fixed peerDependency expressions",
+      "type": "minor",
+      "packageName": "pcln-icons"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "steven.dalonzo@priceline.com"
+}

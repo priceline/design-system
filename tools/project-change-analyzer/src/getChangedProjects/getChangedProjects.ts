@@ -1,7 +1,6 @@
-import { RushConfiguration, ProjectChangeAnalyzer, RushConfigurationProject } from '@microsoft/rush-lib'
+import { RushConfiguration } from '@microsoft/rush-lib'
 import { Terminal, ConsoleTerminalProvider } from '@rushstack/node-core-library'
 import { getRepoChanges } from '@rushstack/package-deps-hash'
-import { setOutput } from '@actions/core'
 import yargs from 'yargs/yargs'
 import { join } from 'path'
 

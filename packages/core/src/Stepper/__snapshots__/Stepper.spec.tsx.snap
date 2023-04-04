@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper renders with children 1`] = `
-.c4 {
+.c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -11,7 +11,7 @@ exports[`Stepper renders with children 1`] = `
   width: 16px;
 }
 
-.c5 {
+.c6 {
   outline: none;
 }
 
@@ -22,18 +22,33 @@ exports[`Stepper renders with children 1`] = `
   display: flex;
 }
 
-.c6 {
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
   color: #0068ef;
   font-size: 14px;
 }
 
-.c7 {
+.c8 {
   color: #0068ef;
   font-weight: 700;
   font-size: 14px;
 }
 
-.c8 {
+.c9 {
   color: #4f6f8f;
   font-size: 14px;
 }
@@ -82,7 +97,6 @@ exports[`Stepper renders with children 1`] = `
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  color: #0068ef;
   cursor: default;
   padding: 0;
   font-weight: unset;
@@ -104,31 +118,35 @@ exports[`Stepper renders with children 1`] = `
     color="primary"
     size="medium"
   >
-    <svg
-      aria-hidden={false}
-      aria-label="Step Completed"
-      className="c4 c5"
-      color="primary"
-      fill="currentcolor"
-      focusable={false}
-      height={16}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={16}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
-      />
-    </svg>
     <div
-      aria-selected={false}
-      className="c6"
-      color="primary"
-      fontSize={1}
+      className="c4"
     >
-      First Step
+      <svg
+        aria-hidden={false}
+        aria-label="Step Completed"
+        className="c5 c6"
+        color="primary"
+        fill="currentcolor"
+        focusable={false}
+        height={16}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+        />
+      </svg>
+      <div
+        aria-selected={false}
+        className="c7"
+        color="primary"
+        fontSize={1}
+      >
+        First Step
+      </div>
     </div>
   </button>
   <button
@@ -137,12 +155,16 @@ exports[`Stepper renders with children 1`] = `
     size="medium"
   >
     <div
-      aria-selected={true}
-      className="c7"
-      color="primary"
-      fontSize={1}
+      className="c4"
     >
-      Second Step
+      <div
+        aria-selected={true}
+        className="c8"
+        color="primary"
+        fontSize={1}
+      >
+        Second Step
+      </div>
     </div>
   </button>
   <button
@@ -151,12 +173,16 @@ exports[`Stepper renders with children 1`] = `
     size="medium"
   >
     <div
-      aria-selected={false}
-      className="c8"
-      color="text.light"
-      fontSize={1}
+      className="c4"
     >
-      Third Step
+      <div
+        aria-selected={false}
+        className="c9"
+        color="text.light"
+        fontSize={1}
+      >
+        Third Step
+      </div>
     </div>
   </button>
 </div>

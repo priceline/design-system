@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders without props 1`] = `
-.c2 {
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,8 +9,30 @@ exports[`CloseButton renders without props 1`] = `
   width: 24px;
 }
 
-.c3 {
+.c5 {
   outline: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 {
@@ -76,23 +98,29 @@ exports[`CloseButton renders without props 1`] = `
   size={24}
   title="close"
 >
-  <div>
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
     >
-      <path
-        d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
-      />
-    </svg>
+      <svg
+        aria-hidden={true}
+        className="c4 c5"
+        fill="currentcolor"
+        focusable={false}
+        height={24}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+        />
+      </svg>
+    </div>
   </div>
 </button>
 `;

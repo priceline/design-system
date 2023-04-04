@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-codemods",
+      "comment": "upgrade eslint to 8.33.0",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-codemods"
+}

@@ -3,7 +3,6 @@
   "version": "2.0.11",
   "scripts": {
     "build": "",
-    "clean": "rimraf dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest --verbose --coverage --passWithNoTests",
@@ -32,7 +31,7 @@
     "meow": "^10.1.1",
     "pcln-design-system": "workspace:*",
     "prop-types": "^15.8.1",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.9",
     "styled-system": "^4.2.4"
   },
   "devDependencies": {
@@ -41,7 +40,7 @@
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.6.0",
+    "eslint": "^8.33.0",
     "jest": "^26.6.3",
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^7.1.0",
