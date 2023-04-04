@@ -2,6 +2,47 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.1.0",
+      "tag": "pcln-menu_v5.1.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "upgrade eslint to 8.33.0, use Button IconRight prop",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.7.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.3.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5` to `^5.7.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5` to `^5.3.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5` to `^5.1.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.13",
       "tag": "pcln-menu_v5.0.13",
       "date": "Wed, 22 Mar 2023 18:15:16 GMT",

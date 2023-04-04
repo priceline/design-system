@@ -2,6 +2,25 @@
   "name": "pcln-docs-utils",
   "entries": [
     {
+      "version": "0.1.0",
+      "tag": "pcln-docs-utils_v0.1.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.3.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.4",
       "tag": "pcln-docs-utils_v0.0.4",
       "date": "Wed, 22 Mar 2023 18:15:16 GMT",

@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 22 Mar 2023 16:13:23 GMT and should not be manually modified.
+This log was last generated on Tue, 04 Apr 2023 20:01:00 GMT and should not be manually modified.
+
+## 5.3.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
 
 ## 5.2.0
 Wed, 22 Mar 2023 16:13:23 GMT

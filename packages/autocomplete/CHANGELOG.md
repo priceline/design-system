@@ -1,6 +1,17 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Wed, 22 Mar 2023 18:15:16 GMT and should not be manually modified.
+This log was last generated on Tue, 04 Apr 2023 20:01:00 GMT and should not be manually modified.
+
+## 5.1.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
+
+### Patches
+
+- upgrade eslint to 8.33.0, jest to 27
 
 ## 5.0.13
 Wed, 22 Mar 2023 18:15:16 GMT

@@ -2,6 +2,47 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.7.0",
+      "tag": "pcln-design-system_v5.7.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create Toast and ToastProvider components, add new Animations slideInleft and slideOutLeft",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "0193d0b584d0fc99483f018a7b64e80ac1bc6719"
+          },
+          {
+            "comment": "add IconLeft and IconRight props to Button",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          },
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Correct text style subheading2's styles",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "0c776c7877c6ae74ec39019c3d6c18ad27a667a8"
+          },
+          {
+            "comment": "update heft component rig to remove node-sass dependence",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          },
+          {
+            "comment": "Upgrade Heft to 0.49.5",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.6.1",
       "tag": "pcln-design-system_v5.6.1",
       "date": "Wed, 22 Mar 2023 18:15:15 GMT",

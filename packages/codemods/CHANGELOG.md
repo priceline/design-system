@@ -1,6 +1,13 @@
 # Change Log - pcln-codemods
 
-This log was last generated on Wed, 22 Mar 2023 18:15:16 GMT and should not be manually modified.
+This log was last generated on Tue, 04 Apr 2023 20:01:00 GMT and should not be manually modified.
+
+## 2.1.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
 
 ## 2.0.11
 Wed, 22 Mar 2023 18:15:16 GMT
