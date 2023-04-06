@@ -60,7 +60,7 @@ const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
     <>
       {isOpen && <ShadowOverlay zIndex={zIndex} onClick={handleClose} {...props} />}
       {React.cloneElement(child, {
-        zIndex: isOpen && (zIndex || 'onOverlay'),
+        zIndex: isOpen && (zIndex !== 'overlay' ? zIndex : 'onOverlay'),
         onBlur: () => {
           const onBlur = child.props.onBlur
           onBlur && onBlur()

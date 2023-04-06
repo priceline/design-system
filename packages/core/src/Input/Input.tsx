@@ -102,7 +102,7 @@ export const Input: React.FC<IInputProps> & {
       <StyledInput {...restProps} color={color} ref={ref} />
       {helperText &&
         React.cloneElement(helperText, {
-          color: helperText?.props?.color || color,
+          color: helperText.props.color || color,
         })}
     </>
   )
