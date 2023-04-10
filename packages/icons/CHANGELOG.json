@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.3.1",
+      "tag": "pcln-icons_v5.3.1",
+      "date": "Mon, 10 Apr 2023 20:19:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update pcln-design-system peer dependency",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "ac87565f31f881b2e3161acdf6c17eb1df0e75db"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.0",
       "tag": "pcln-icons_v5.3.0",
       "date": "Tue, 04 Apr 2023 20:01:00 GMT",
