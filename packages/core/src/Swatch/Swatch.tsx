@@ -1,4 +1,3 @@
-import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import { Flex } from '../Flex'
@@ -15,25 +14,25 @@ const SwatchColor = styled.div`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 `
 
-const propTypes = {
-  colors: PropTypes.arrayOf(PropTypes.string),
-  onClick: PropTypes.func,
+export interface ISwatchProps {
+  colors?: string[]
+  onClick?: (color: string) => void
 }
 
-const Swatch: React.FC<InferProps<typeof propTypes>> = ({ colors, onClick, ...props }) => (
-  <Flex flexWrap='wrap' {...props}>
-    {colors.map((color, idx) => (
-      <SwatchColor
-        data-testid={`${idx}-${color}`}
-        key={`${idx}-${color}`}
-        color={color}
-        onClick={onClick ? () => onClick(color) : undefined}
-      />
-    ))}
-  </Flex>
-)
-
-Swatch.propTypes = propTypes
-Swatch.displayName = 'Swatch'
+const Swatch: React.FC<ISwatchProps> = (props: ISwatchProps) => {
+  const { colors, onClick } = props
+  return (
+    <Flex flexWrap='wrap'>
+      {colors.map((color, idx) => (
+        <SwatchColor
+          data-testid={`${idx}-${color}`}
+          key={`${idx}-${color}`}
+          color={color}
+          onClick={onClick ? () => onClick(color) : undefined}
+        />
+      ))}
+    </Flex>
+  )
+}
 
 export default Swatch

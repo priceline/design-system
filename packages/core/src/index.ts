@@ -1,4 +1,5 @@
 export type { IButtonProps } from './Button'
+export type { ISwatchProps } from './Swatch'
 
 export { Absolute } from './Absolute'
 export * from './Animate'

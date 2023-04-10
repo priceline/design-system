@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update docs for Swatch",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
