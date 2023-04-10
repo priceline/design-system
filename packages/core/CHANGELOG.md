@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 17 Mar 2023 17:07:13 GMT and should not be manually modified.
+This log was last generated on Mon, 10 Apr 2023 16:01:55 GMT and should not be manually modified.
+
+## 4.39.0
+Mon, 10 Apr 2023 16:01:55 GMT
+
+### Minor changes
+
+- Create Toast and ToastProvider components, add new Animations slideInleft and slideOutLeft
+
+### Patches
+
+- Correct text style subheading2's styles
 
 ## 4.38.6
 Fri, 17 Mar 2023 17:07:13 GMT

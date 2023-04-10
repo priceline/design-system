@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "4.39.0",
+      "tag": "pcln-design-system_v4.39.0",
+      "date": "Mon, 10 Apr 2023 16:01:55 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create Toast and ToastProvider components, add new Animations slideInleft and slideOutLeft",
+            "author": "JC Tan <93283233+JC-Tan@users.noreply.github.com>",
+            "commit": "dffd9f5ebc6b8efddeba7d53c5192fe9085b00f6"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Correct text style subheading2's styles",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "490a10c34f7ec22610cc3cab14558da995f8b97e"
+          }
+        ]
+      }
+    },
+    {
       "version": "4.38.6",
       "tag": "pcln-design-system_v4.38.6",
       "date": "Fri, 17 Mar 2023 17:07:13 GMT",
