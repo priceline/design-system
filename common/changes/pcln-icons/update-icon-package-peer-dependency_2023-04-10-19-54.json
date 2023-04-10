@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Update pcln-design-system peer dependency",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
