@@ -66,8 +66,8 @@ function ToastProvider({ children, domRootId = 'root', lifespan, maxToasts = 3 }
               <Flex flexDirection='column-reverse' justifyContent='center' minWidth='300px'>
                 {toastsToRender.map((toast, idx) => {
                   return (
-                    <Box mt={3}>
-                      <Toast key={idx} lifespan={lifespan} onRemoveClick={removeToast} {...toast} />
+                    <Box key={idx} mt={3}>
+                      <Toast lifespan={lifespan} onRemoveClick={removeToast} {...toast} />
                     </Box>
                   )
                 })}
