@@ -1,5 +1,5 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
-import { useTheme } from 'styled-components'
+import { withTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
 import { Animate, MotionVariant } from '../Animate'
@@ -32,6 +32,7 @@ interface IToastProvider {
   exitAnimation?: MotionVariant
   lifespan?: number
   maxToasts?: number
+  theme: unknown
 }
 
 let id = 0
@@ -43,8 +44,8 @@ function ToastProvider({
   exitAnimation = 'slideOutLeft',
   lifespan,
   maxToasts = 3,
+  theme,
 }: IToastProvider) {
-  const theme = useTheme()
   const [toasts, setToasts] = useState<IToastOptions[]>([])
 
   const addToast = useCallback((options: IToastOptions) => {
@@ -97,4 +98,4 @@ function ToastProvider({
   )
 }
 
-export default ToastProvider
+export default withTheme(ToastProvider)
