@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Use withTheme instead of useTheme in ToastProvider to restore Styled Components 4 compatibility",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
