@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.1.2",
+      "tag": "pcln-menu_v5.1.2",
+      "date": "Wed, 12 Apr 2023 11:55:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0c189801bebf06e565d7f0f24b615b0e079ecc2a"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.7.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.1.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.7.0` to `^5.7.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5.1.1` to `^5.1.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.1.1",
       "tag": "pcln-menu_v5.1.1",
       "date": "Mon, 10 Apr 2023 20:19:52 GMT",

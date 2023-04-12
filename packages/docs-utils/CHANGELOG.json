@@ -2,6 +2,20 @@
   "name": "pcln-docs-utils",
   "entries": [
     {
+      "version": "0.1.2",
+      "tag": "pcln-docs-utils_v0.1.2",
+      "date": "Wed, 12 Apr 2023 11:55:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0c189801bebf06e565d7f0f24b615b0e079ecc2a"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.1",
       "tag": "pcln-docs-utils_v0.1.1",
       "date": "Mon, 10 Apr 2023 20:19:52 GMT",

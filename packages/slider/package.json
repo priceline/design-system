@@ -1,6 +1,6 @@
 {
   "name": "pcln-slider",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "React component for range sliders",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
@@ -62,7 +62,7 @@
     "@types/react-test-renderer": "^17.0.2"
   },
   "peerDependencies": {
-    "pcln-design-system": "^5.7.0",
+    "pcln-design-system": "^5.7.1",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=5 <5.3.4 || >5.3.7 <6"

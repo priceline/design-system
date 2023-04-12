@@ -2,6 +2,30 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.7.1",
+      "tag": "pcln-design-system_v5.7.1",
+      "date": "Wed, 12 Apr 2023 11:55:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Use withTheme instead of useTheme in ToastProvider to restore Styled Components 4 compatibility",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "cf9fff06cd77c28430900991dd511adc1995feb1"
+          },
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "cf9fff06cd77c28430900991dd511adc1995feb1"
+          },
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0c189801bebf06e565d7f0f24b615b0e079ecc2a"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.7.0",
       "tag": "pcln-design-system_v5.7.0",
       "date": "Tue, 04 Apr 2023 20:01:00 GMT",

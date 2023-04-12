@@ -1,6 +1,15 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 04 Apr 2023 20:01:00 GMT and should not be manually modified.
+This log was last generated on Wed, 12 Apr 2023 11:55:05 GMT and should not be manually modified.
+
+## 5.7.1
+Wed, 12 Apr 2023 11:55:05 GMT
+
+### Patches
+
+- Use withTheme instead of useTheme in ToastProvider to restore Styled Components 4 compatibility
+- Loosen styled-components peerDependency to allow v4
+- Loosen styled-components peerDependency to allow v4
 
 ## 5.7.0
 Tue, 04 Apr 2023 20:01:00 GMT
