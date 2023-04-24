@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.8.0",
+      "tag": "pcln-design-system_v5.8.0",
+      "date": "Mon, 24 Apr 2023 19:05:14 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create Toast border variation and fix overwritten styles",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "62b109148c3b39edfd22f6de6e10911a32ef4ff1"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.7.1",
       "tag": "pcln-design-system_v5.7.1",
       "date": "Wed, 12 Apr 2023 11:55:05 GMT",
