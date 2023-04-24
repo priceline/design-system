@@ -2,6 +2,7 @@ jest.useFakeTimers()
 
 import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
+import { Success } from 'pcln-icons'
 import { Toast } from '../Toast'
 
 describe('Toast', () => {
@@ -48,5 +49,22 @@ describe('Toast', () => {
       </Toast>
     )
     expect(screen.getByText('Information Message')).toBeInTheDocument()
+  })
+
+  it('renders a success border toast', () => {
+    render(
+      <Toast id={10} color='success' icon={<Success data-testid='success-icon' />} variation='border'>
+        Success Border Message
+      </Toast>
+    )
+    const toast = screen.getByText('Success Border Message')
+    expect(toast).toBeInTheDocument()
+    expect(toast.parentNode.parentNode).toHaveStyleRule('background-color', '#fff')
+    expect(toast.parentNode.parentNode).toHaveStyleRule('color', '#001833')
+    expect(toast.parentNode.parentNode).toHaveStyleRule('border-left', '12px solid #0a0')
+
+    const icon = screen.getByTestId('success-icon')
+    expect(icon).toBeInTheDocument()
+    expect(icon).toHaveStyleRule('color', '#0a0')
   })
 })

@@ -37,21 +37,21 @@ export const customOptions = {
   lifespan: 2000,
 }
 
-export const MockToastChildren = () => {
+export const MockToastChildren = ({ variation }: { variation: 'border' | 'fill' }) => {
   const { addToast } = useToast()
 
   return (
     <Flex>
-      <Button color='error' onClick={() => addToast(errorOptions)}>
+      <Button color='error' onClick={() => addToast({ ...errorOptions, variation })}>
         Add Error Toast
       </Button>
-      <Button onClick={() => addToast(informationOptions)} mx={3}>
+      <Button onClick={() => addToast({ ...informationOptions, variation })} mx={3}>
         Add Information Toast
       </Button>
-      <Button color='success' onClick={() => addToast(successOptions)}>
+      <Button color='success' onClick={() => addToast({ ...successOptions, variation })}>
         Add Success Toast
       </Button>
-      <Button color='text.light' onClick={() => addToast(customOptions)} ml={3}>
+      <Button color='text.light' onClick={() => addToast({ ...customOptions, variation })} ml={3}>
         Add Custom Toast
       </Button>
     </Flex>

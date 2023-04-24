@@ -9,12 +9,17 @@ export default {
     lifespan: {
       description: 'Lifespan in milliseconds before the Toast closes.',
     },
+    variation: {
+      control: 'select',
+      options: ['border', 'fill'],
+      defaultValue: 'fill',
+    },
   },
 }
 
 const Template = (args) => (
   <ToastProvider {...args}>
-    <MockToastChildren />
+    <MockToastChildren variation={args.variation} />
   </ToastProvider>
 )
 

@@ -1,5 +1,5 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
-import { withTheme } from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
 import { Animate, MotionVariant } from '../Animate'
@@ -17,6 +17,10 @@ interface IToastContextProps {
   addToast: (options: IToastOptions) => void
   removeToast: (id: number) => void
 }
+
+const ClickthroughAbsolute = styled(Absolute)`
+  pointer-events: none;
+`
 
 /* istanbul ignore next */
 export const ToastContext = createContext<IToastContextProps>({ addToast: () => {}, removeToast: () => {} })
@@ -75,7 +79,7 @@ function ToastProvider({
       {children}
       {createPortal(
         <ThemeProvider theme={theme}>
-          <Absolute bottom={20} width='100%'>
+          <ClickthroughAbsolute bottom={20} width='100%'>
             <Flex justifyContent='center' width='100%'>
               <Flex flexDirection='column-reverse' justifyContent='center' minWidth='300px'>
                 {toastsToRender.map((toast) => {
@@ -90,7 +94,7 @@ function ToastProvider({
                 })}
               </Flex>
             </Flex>
-          </Absolute>
+          </ClickthroughAbsolute>
         </ThemeProvider>,
         document.getElementById(domRootId)
       )}
