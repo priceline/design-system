@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.8.1",
+      "tag": "pcln-design-system_v5.8.1",
+      "date": "Tue, 25 Apr 2023 21:40:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Tweak the border variation design for Toast",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "b1cab98a477a4a06d720e98f09b10fceacdd5bb8"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.8.0",
       "tag": "pcln-design-system_v5.8.0",
       "date": "Mon, 24 Apr 2023 19:05:14 GMT",

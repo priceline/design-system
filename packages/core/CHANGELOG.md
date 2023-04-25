@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 24 Apr 2023 19:05:14 GMT and should not be manually modified.
+This log was last generated on Tue, 25 Apr 2023 21:40:50 GMT and should not be manually modified.
+
+## 5.8.1
+Tue, 25 Apr 2023 21:40:50 GMT
+
+### Patches
+
+- Tweak the border variation design for Toast
 
 ## 5.8.0
 Mon, 24 Apr 2023 19:05:14 GMT
