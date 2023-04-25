@@ -59,9 +59,9 @@ describe('Toast', () => {
     )
     const toast = screen.getByText('Success Border Message')
     expect(toast).toBeInTheDocument()
-    expect(toast.parentNode.parentNode).toHaveStyleRule('background-color', '#fff')
+    expect(toast.parentNode.parentNode).toHaveStyleRule('background-color', '#ecf7ec')
     expect(toast.parentNode.parentNode).toHaveStyleRule('color', '#001833')
-    expect(toast.parentNode.parentNode).toHaveStyleRule('border-left', '12px solid #0a0')
+    expect(toast.parentNode.parentNode).toHaveStyleRule('border-left', '4px solid #0a0')
 
     const icon = screen.getByTestId('success-icon')
     expect(icon).toBeInTheDocument()

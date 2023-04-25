@@ -11,9 +11,9 @@ import { applyVariations, getPaletteColor } from '../utils'
 
 const variations = {
   border: css`
-    background-color: ${getPaletteColor('background.lightest')};
+    background-color: ${(props) => getPaletteColor(props.color, 'light')(props)};
     color: ${getPaletteColor('text.base')};
-    border-left: ${themeGet('borderRadii.lg')} solid ${(props) => getPaletteColor(props.color, 'base')(props)};
+    border-left: ${themeGet('borderRadii.sm')} solid ${(props) => getPaletteColor(props.color, 'base')(props)};
   `,
   fill: css``,
 }
