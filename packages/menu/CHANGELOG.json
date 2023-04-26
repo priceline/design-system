@@ -2,6 +2,41 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.2.0",
+      "tag": "pcln-menu_v5.2.0",
+      "date": "Wed, 26 Apr 2023 14:25:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "cleanup peer dependencies",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "babel preset cleanup",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.2.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.1` to `^5.8.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5.1.4` to `^5.2.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.1.4",
       "tag": "pcln-menu_v5.1.4",
       "date": "Tue, 25 Apr 2023 21:40:50 GMT",

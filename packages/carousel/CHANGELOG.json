@@ -2,6 +2,45 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.3.0",
+      "tag": "pcln-carousel_v2.3.0",
+      "date": "Wed, 26 Apr 2023 14:25:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "cleanup dependencies",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "install lodash.debounce in place of missing lodash",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "upgrade uuid from v8 to v9",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "babel preset cleanup",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.1` to `^5.8.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.2.4",
       "tag": "pcln-carousel_v2.2.4",
       "date": "Tue, 25 Apr 2023 21:40:50 GMT",

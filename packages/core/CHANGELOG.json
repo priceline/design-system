@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.8.2",
+      "tag": "pcln-design-system_v5.8.2",
+      "date": "Wed, 26 Apr 2023 14:25:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "moved @styled-system/prop-types from devDependency to dependency",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "remove propTypes from Button in favor of IButtonProps interface",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.8.1",
       "tag": "pcln-design-system_v5.8.1",
       "date": "Tue, 25 Apr 2023 21:40:50 GMT",

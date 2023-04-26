@@ -1,6 +1,19 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Tue, 25 Apr 2023 21:40:50 GMT and should not be manually modified.
+This log was last generated on Wed, 26 Apr 2023 14:25:00 GMT and should not be manually modified.
+
+## 2.3.0
+Wed, 26 Apr 2023 14:25:00 GMT
+
+### Minor changes
+
+- babel preset cleanup
+
+### Patches
+
+- cleanup dependencies
+- install lodash.debounce in place of missing lodash
+- upgrade uuid from v8 to v9
 
 ## 2.2.4
 Tue, 25 Apr 2023 21:40:50 GMT

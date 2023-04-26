@@ -1,6 +1,18 @@
 # Change Log - pcln-popover
 
-This log was last generated on Tue, 25 Apr 2023 21:40:50 GMT and should not be manually modified.
+This log was last generated on Wed, 26 Apr 2023 14:25:00 GMT and should not be manually modified.
+
+## 5.2.0
+Wed, 26 Apr 2023 14:25:00 GMT
+
+### Minor changes
+
+- babel preset cleanup
+
+### Patches
+
+- cleanup peer dependencies
+- install missing dependencies
 
 ## 5.1.4
 Tue, 25 Apr 2023 21:40:50 GMT
