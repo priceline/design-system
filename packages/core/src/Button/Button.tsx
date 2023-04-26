@@ -1,6 +1,4 @@
-import propTypes from '@styled-system/prop-types'
 import { themeGet } from '@styled-system/theme-get'
-import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {
@@ -22,8 +20,6 @@ import {
   applyVariations,
   borders,
   boxShadowAttrs,
-  boxShadowSizeValues,
-  deprecatedColorValue,
   getPaletteColor,
   getTextColorOn,
 } from '../utils'
@@ -175,18 +171,6 @@ const variations = {
     ${(props) => borders({ ...props, color: undefined })}
     ${(props) => compose(space, fontSize, borderRadius)(props)}
   `,
-}
-
-const buttonPropTypes = {
-  ...propTypes.width,
-  ...propTypes.space,
-  ...propTypes.boxShadow,
-  color: deprecatedColorValue(),
-  variation: PropTypes.oneOf(Object.keys(variations)),
-  size: PropTypes.oneOf(['small', 'medium', 'large', 'extraLarge']),
-  disabled: PropTypes.bool,
-  borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
-  boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
 }
 
 export type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
@@ -350,8 +334,6 @@ const Button = React.forwardRef((props: IButtonProps, ref) => {
     </StyledButton>
   )
 })
-
-Button.propTypes = buttonPropTypes
 
 Button.defaultProps = {
   color: 'primary',

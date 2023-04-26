@@ -70,6 +70,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@styled-system/prop-types": "^5.1.5",
     "@styled-system/theme-get": "^5.1.2",
     "@types/styled-system": "^5.1.15",
     "deepmerge": "^4.2.2",
@@ -98,7 +99,6 @@
     "@storybook/react": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
-    "@styled-system/prop-types": "^5.1.5",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",

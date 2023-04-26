@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "moved @styled-system/prop-types from devDependency to dependency",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

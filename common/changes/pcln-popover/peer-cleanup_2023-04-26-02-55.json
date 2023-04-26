@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "babel preset cleanup",
+      "type": "minor",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "steven.dalonzo@priceline.com"
+}

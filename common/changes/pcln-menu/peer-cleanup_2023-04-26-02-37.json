@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "cleanup peer dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

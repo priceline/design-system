@@ -42,10 +42,11 @@
   "license": "MIT",
   "dependencies": {
     "@types/styled-system": "^4.2.2",
+    "lodash.debounce": "^4.0.8",
+    "moize": "^6.1.5",
     "prop-types": "^15.8.1",
     "pure-react-carousel": "^1.27.8",
-    "moize": "^6.1.3",
-    "uuid": "^8.3.2",
+    "uuid": "^9.0.0",
     "react-intersection-observer": "~9.4.0"
   },
   "devDependencies": {
@@ -78,6 +79,7 @@
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",
-    "pcln-design-system": "^5.8.1"
+    "pcln-design-system": "^5.8.1",
+    "pcln-icons": "^5.0.0"
   }
 }

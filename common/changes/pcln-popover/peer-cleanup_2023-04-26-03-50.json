@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "install missing dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

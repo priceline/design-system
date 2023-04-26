@@ -8,7 +8,7 @@ import {
   CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
 } from './constants'
-import { debounce } from 'lodash'
+import debounce from 'lodash.debounce'
 
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "cleanup peer dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}
