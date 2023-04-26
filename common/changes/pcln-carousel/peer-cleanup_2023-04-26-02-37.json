@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "cleanup dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

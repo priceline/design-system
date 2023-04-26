@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "babel preset cleanup",
+      "type": "minor",
+      "packageName": "pcln-carousel"
+    }
+  ],
+  "packageName": "pcln-carousel",
+  "email": "steven.dalonzo@priceline.com"
+}

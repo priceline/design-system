@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "cleanup peer dependencies",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

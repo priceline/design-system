@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "upgrade uuid from v8 to v9",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

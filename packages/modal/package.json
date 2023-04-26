@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.0",
@@ -48,14 +49,13 @@
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.9",
-    "styled-system": "^4.2.4",
-    "@babel/core": "^7.16.7"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "pcln-design-system": "^5.8.1",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.0.0"
   }
 }

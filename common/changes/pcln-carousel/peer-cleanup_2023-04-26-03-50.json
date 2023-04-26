@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "install lodash.debounce in place of missing lodash",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

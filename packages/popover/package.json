@@ -28,11 +28,13 @@
   },
   "dependencies": {
     "@floating-ui/react-dom-interactions": "^0.8.1",
-    "@styled-system/theme-get": "^5.1.2"
+    "@styled-system/theme-get": "^5.1.2",
+    "prop-types": "^15.8.1",
+    "react-focus-lock": "^2.9.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.7",
-    "@babel/core": "^7.16.7",
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.16.0",
@@ -40,7 +42,7 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.33.0",
+    "eslint": "^8.39.0",
     "jest": "^26.6.3",
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^7.1.0",
@@ -48,19 +50,17 @@
     "pcln-design-system": "workspace:*",
     "pcln-icons": "workspace:*",
     "pcln-slider": "workspace:*",
-    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-focus-lock": "^2.6.0",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.9",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "pcln-design-system": "^5.8.1",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.0.0"
   }
 }

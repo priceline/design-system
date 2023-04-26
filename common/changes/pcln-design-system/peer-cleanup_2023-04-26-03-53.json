@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "remove propTypes from Button in favor of IButtonProps interface",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
