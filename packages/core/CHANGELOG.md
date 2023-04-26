@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 26 Apr 2023 14:25:00 GMT and should not be manually modified.
+This log was last generated on Wed, 26 Apr 2023 16:50:00 GMT and should not be manually modified.
+
+## 5.8.3
+Wed, 26 Apr 2023 16:50:00 GMT
+
+### Patches
+
+- Slidebox: modify to allow visibleSlides less than 1
 
 ## 5.8.2
 Wed, 26 Apr 2023 14:25:00 GMT

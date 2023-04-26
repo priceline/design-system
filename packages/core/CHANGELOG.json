@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.8.3",
+      "tag": "pcln-design-system_v5.8.3",
+      "date": "Wed, 26 Apr 2023 16:50:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Slidebox: modify to allow visibleSlides less than 1",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "4ca3ea28dee0135ce37c0a9b8fcff8588e8dd924"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.8.2",
       "tag": "pcln-design-system_v5.8.2",
       "date": "Wed, 26 Apr 2023 14:25:00 GMT",
