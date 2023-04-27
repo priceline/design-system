@@ -27,6 +27,12 @@ export function ForwardRefs() {
           I am a link!
         </Link>
         <br />
+        <Link variation='subtle'>subtle</Link>
+        <br />
+        <Link variation='plain'>plain</Link>
+        <br />
+        <Link variation='white'>white</Link>
+        <br />
         <Button color='error' onClick={onClick} mt={4}>
           Click to update link text via ref
         </Button>
