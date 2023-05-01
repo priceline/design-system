@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Button, Link, Text, getLinkStylesOn } from '..'
+import { Box, Button, Layout, Link, Text, getLinkStylesOn } from '..'
 import { ILinkProps } from './Link'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
@@ -16,6 +16,30 @@ const Template = (args: ILinkProps) => <Link {...args} />
 
 export const _Link = Template.bind({})
 
+export function AllLinkExamples() {
+  return (
+    <>
+      <Text textStyle='heading3'>Primary Link Examples</Text>
+      <Layout variation='100' gap={1} rowGap={2} bg='background.tone' p={4}>
+        <Link variation='fill' mb={4}>
+          fill
+        </Link>
+        <Link variation='subtle' mb={4}>
+          subtle
+        </Link>
+        <Link variation='link'>link</Link>
+        <Link variation='outline' my={4}>
+          outline
+        </Link>
+        <Link variation='plain' mb={4}>
+          plain
+        </Link>
+        <Link variation='white'>white</Link>
+      </Layout>
+    </>
+  )
+}
+
 export function ForwardRefs() {
   function refChild(dsRef) {
     function onClick() {
@@ -26,12 +50,6 @@ export function ForwardRefs() {
         <Link color='text.dark' ref={dsRef}>
           I am a link!
         </Link>
-        <br />
-        <Link variation='subtle'>subtle</Link>
-        <br />
-        <Link variation='plain'>plain</Link>
-        <br />
-        <Link variation='white'>white</Link>
         <br />
         <Button color='error' onClick={onClick} mt={4}>
           Click to update link text via ref
