@@ -5,7 +5,7 @@ import { Box, Button, getLinkStylesOn, IButtonProps, Layout, Link, Text } from '
 import { ILinkProps } from './Link'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-import { colors, shadows } from '../storybook/args'
+import { colors } from '../storybook/args'
 
 const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
 
