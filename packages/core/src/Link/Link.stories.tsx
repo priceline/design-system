@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Button, Layout, Link, Text, getLinkStylesOn } from '..'
+import { StoryObj } from '@storybook/react'
+import { Box, Button, getLinkStylesOn, IButtonProps, Layout, Link, Text } from '..'
 import { ILinkProps } from './Link'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { colors, shadows } from '../storybook/args'
+
+const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
 
 export default {
   title: 'Link',
@@ -16,25 +20,53 @@ const Template = (args: ILinkProps) => <Link {...args} />
 
 export const _Link = Template.bind({})
 
-export function AllLinkExamples() {
+type ButtonStory = StoryObj<IButtonProps>
+
+export const Playground: ButtonStory = {
+  render: (args) => <Button {...args}>Button</Button>,
+  argTypes: {
+    color: {
+      control: 'select',
+      options: colors,
+      defaultValue: Button.defaultProps.color,
+    },
+    size: {
+      control: 'select',
+      options: sizeOptions,
+      defaultValue: Button.defaultProps.size,
+    },
+    disabled: {
+      defaultValue: false,
+      type: 'boolean',
+    },
+  },
+}
+
+export function AllLinkExamples(args) {
   return (
     <>
-      <Text textStyle='heading3'>Primary Link Examples</Text>
+      <Text textStyle='heading3' mb={2}>
+        Link Variations
+      </Text>
       <Layout variation='100' gap={1} rowGap={2} bg='background.tone' p={4}>
-        <Link variation='fill' mb={4}>
+        <Link {...args} variation='fill' mb={4}>
           fill
         </Link>
-        <Link variation='subtle' mb={4}>
+        <Link {...args} variation='subtle' mb={4}>
           subtle
         </Link>
-        <Link variation='link'>link</Link>
-        <Link variation='outline' my={4}>
+        <Link {...args} variation='link'>
+          link
+        </Link>
+        <Link {...args} variation='outline' my={4}>
           outline
         </Link>
-        <Link variation='plain' mb={4}>
+        <Link {...args} variation='plain' mb={4}>
           plain
         </Link>
-        <Link variation='white'>white</Link>
+        <Link {...args} variation='white'>
+          white
+        </Link>
       </Layout>
     </>
   )
