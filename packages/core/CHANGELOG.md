@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 26 Apr 2023 16:50:00 GMT and should not be manually modified.
+This log was last generated on Tue, 02 May 2023 14:18:09 GMT and should not be manually modified.
+
+## 5.8.4
+Tue, 02 May 2023 14:18:09 GMT
+
+### Patches
+
+- update Link with subtle, plain & white type. Also update bgcolor when button is hovered in subtle, plain & white
 
 ## 5.8.3
 Wed, 26 Apr 2023 16:50:00 GMT

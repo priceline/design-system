@@ -1,6 +1,6 @@
 {
   "name": "pcln-codemods",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "scripts": {
     "build": "",
     "lint": "eslint .",

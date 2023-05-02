@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.8.4",
+      "tag": "pcln-design-system_v5.8.4",
+      "date": "Tue, 02 May 2023 14:18:09 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update Link with subtle, plain & white type. Also update bgcolor when button is hovered in subtle, plain & white",
+            "author": "Ralston Almeida <84033935+ralston7@users.noreply.github.com>",
+            "commit": "652868db1e489986e53e6808e312b2196e84d07e"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.8.3",
       "tag": "pcln-design-system_v5.8.3",
       "date": "Wed, 26 Apr 2023 16:50:00 GMT",
