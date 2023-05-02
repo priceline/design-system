@@ -14,6 +14,14 @@ const variations = {
 
     ${buttonStyles}
   `,
+  subtle: css`
+    ${buttonStyles}
+
+    &:hover {
+      text-decoration: none;
+      background-color: ${getPaletteColor('background.tint')};
+    }
+  `,
   link: css`
     cursor: pointer;
     text-decoration: none;
@@ -30,6 +38,22 @@ const variations = {
     }
 
     ${buttonStyles}
+  `,
+  plain: css`
+    ${buttonStyles}
+
+    &:hover {
+      text-decoration: none;
+      background-color: ${getPaletteColor('background.base')};
+    }
+  `,
+  white: css`
+    ${buttonStyles}
+
+    &:hover {
+      text-decoration: none;
+      background-color: ${getPaletteColor('background.base')};
+    }
   `,
 }
 
@@ -50,7 +74,7 @@ export interface ILinkProps
   href?: string
   size?: 'small' | 'medium' | 'large'
   target?: string
-  variation?: 'fill' | 'link' | 'outline'
+  variation?: 'fill' | 'link' | 'outline' | 'subtle' | 'plain' | 'white'
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
 }

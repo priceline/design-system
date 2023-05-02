@@ -109,7 +109,7 @@ const variations = {
     background-color: transparent;
     color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${getPaletteColor('background.light')};
+      background-color: ${getPaletteColor('background.base')};
       color: ${getPaletteColor('dark')};
     }
     &:focus {
@@ -121,7 +121,7 @@ const variations = {
     background-color: ${getPaletteColor('background.base')};
     color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${getPaletteColor('background.light')};
+      background-color: ${getPaletteColor('background.tint')};
       color: ${getPaletteColor('dark')};
     }
     &:focus {
@@ -133,7 +133,7 @@ const variations = {
     background-color: ${getPaletteColor('background.lightest')};
     color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${getPaletteColor('background.light')};
+      background-color: ${getPaletteColor('background.base')};
       color: ${getPaletteColor('dark')};
     }
     &:focus {

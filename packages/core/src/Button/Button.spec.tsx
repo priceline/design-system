@@ -363,7 +363,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule('background-color', theme.palette.background.light, {
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.tint, {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
@@ -417,7 +417,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
-        expect(button).toHaveStyleRule('background-color', theme.palette.background.light, {
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
