@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 10 Apr 2023 20:19:52 GMT and should not be manually modified.
+This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+
+## 5.4.0
+Wed, 03 May 2023 14:56:40 GMT
+
+### Minor changes
+
+- PPN-62357: add userCircle and phoneAgent icons
 
 ## 5.3.1
 Mon, 10 Apr 2023 20:19:52 GMT

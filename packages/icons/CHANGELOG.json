@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.4.0",
+      "tag": "pcln-icons_v5.4.0",
+      "date": "Wed, 03 May 2023 14:56:40 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "PPN-62357: add userCircle and phoneAgent icons",
+            "author": "cadenchabot-pcln <62961573+cadenchabot-pcln@users.noreply.github.com>",
+            "commit": "8072fc6bd5487840aa8141e7c266251501f33121"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.1",
       "tag": "pcln-icons_v5.3.1",
       "date": "Mon, 10 Apr 2023 20:19:52 GMT",
