@@ -12,7 +12,7 @@ const sizes = {
   `,
   twoColumns: css`
     & > * {
-      width: calc(50% - ${themeGet('space.1')}px);
+      width: calc(50% - ${themeGet('space.1')});
     }
   `,
 }

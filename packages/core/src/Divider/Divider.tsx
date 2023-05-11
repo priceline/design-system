@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
-import { space, width, SpaceProps, WidthProps, BorderColorProps } from 'styled-system'
+import { space, width, SpaceProps, WidthProps, BorderColorProps, compose } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 
 const dividerPropTypes = {
@@ -25,7 +25,8 @@ const Divider: React.FC<IDividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
   border-color: ${(props) => getPaletteColor(props.borderColor || props.color, 'base')(props)};
   background-color: ${(props) => getPaletteColor(props.borderColor || props.color, 'base')(props)};
   ${applyVariations('Divider')}
-  ${space} ${width};
+
+  ${(props) => compose(space, width)(props)}
 `
 
 Divider.displayName = 'Divider'

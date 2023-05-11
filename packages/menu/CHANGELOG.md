@@ -1,6 +1,87 @@
 # Change Log - pcln-menu
 
-This log was last generated on Thu, 16 Feb 2023 16:33:24 GMT and should not be manually modified.
+This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+
+## 5.2.3
+Wed, 03 May 2023 14:56:40 GMT
+
+_Version update only_
+
+## 5.2.2
+Tue, 02 May 2023 14:18:09 GMT
+
+_Version update only_
+
+## 5.2.1
+Wed, 26 Apr 2023 16:50:00 GMT
+
+_Version update only_
+
+## 5.2.0
+Wed, 26 Apr 2023 14:25:00 GMT
+
+### Minor changes
+
+- babel preset cleanup
+
+### Patches
+
+- cleanup peer dependencies
+
+## 5.1.4
+Tue, 25 Apr 2023 21:40:50 GMT
+
+_Version update only_
+
+## 5.1.3
+Mon, 24 Apr 2023 19:05:14 GMT
+
+_Version update only_
+
+## 5.1.2
+Wed, 12 Apr 2023 11:55:05 GMT
+
+### Patches
+
+- Loosen styled-components peerDependency to allow v4
+
+## 5.1.1
+Mon, 10 Apr 2023 20:19:52 GMT
+
+_Version update only_
+
+## 5.1.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
+
+### Patches
+
+- upgrade eslint to 8.33.0, use Button IconRight prop
+
+## 5.0.13
+Wed, 22 Mar 2023 18:15:16 GMT
+
+_Version update only_
+
+## 5.0.12
+Wed, 22 Mar 2023 16:13:23 GMT
+
+_Version update only_
+
+## 5.0.11
+Tue, 21 Mar 2023 17:01:10 GMT
+
+### Patches
+
+- Pass id prop to Popover idx prop to fix prop type warning
+
+## 5.0.10
+Fri, 03 Mar 2023 18:23:05 GMT
+
+_Version update only_
 
 ## 5.0.9
 Thu, 16 Feb 2023 16:33:24 GMT

@@ -90,6 +90,30 @@ describe('Image', () => {
       styleName: 'object-position',
       styleValue: 'bottom right',
     },
+    {
+      propName: 'objectPosition',
+      propValue: 'centerTop',
+      styleName: 'object-position',
+      styleValue: 'center top',
+    },
+    {
+      propName: 'objectPosition',
+      propValue: 'centerBottom',
+      styleName: 'object-position',
+      styleValue: 'center bottom',
+    },
+    {
+      propName: 'objectPosition',
+      propValue: 'centerRight',
+      styleName: 'object-position',
+      styleValue: 'center right',
+    },
+    {
+      propName: 'objectPosition',
+      propValue: 'centerLeft',
+      styleName: 'object-position',
+      styleValue: 'center left',
+    },
   ])(
     'renders with style $styleName = $styleValue, when $propName = $propValue',
     ({ propName, propValue, styleName, styleValue }) => {

@@ -2,6 +2,248 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "5.2.3",
+      "tag": "pcln-popover_v5.2.3",
+      "date": "Wed, 03 May 2023 14:56:40 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.4.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.2",
+      "tag": "pcln-popover_v5.2.2",
+      "date": "Tue, 02 May 2023 14:18:09 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.3` to `^5.8.4`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.1",
+      "tag": "pcln-popover_v5.2.1",
+      "date": "Wed, 26 Apr 2023 16:50:00 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.2` to `^5.8.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.0",
+      "tag": "pcln-popover_v5.2.0",
+      "date": "Wed, 26 Apr 2023 14:25:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "cleanup peer dependencies",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "install missing dependencies",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "babel preset cleanup",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.1` to `^5.8.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.4",
+      "tag": "pcln-popover_v5.1.4",
+      "date": "Tue, 25 Apr 2023 21:40:50 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.0` to `^5.8.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.3",
+      "tag": "pcln-popover_v5.1.3",
+      "date": "Mon, 24 Apr 2023 19:05:14 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.7.1` to `^5.8.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.2",
+      "tag": "pcln-popover_v5.1.2",
+      "date": "Wed, 12 Apr 2023 11:55:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0c189801bebf06e565d7f0f24b615b0e079ecc2a"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.7.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.7.0` to `^5.7.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.1",
+      "tag": "pcln-popover_v5.1.1",
+      "date": "Mon, 10 Apr 2023 20:19:52 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.3.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.0",
+      "tag": "pcln-popover_v5.1.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "upgrade eslint to 8.33.0",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.7.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.3.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5` to `^5.7.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.0.13",
+      "tag": "pcln-popover_v5.0.13",
+      "date": "Wed, 22 Mar 2023 18:15:16 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.6.0` to `5.6.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.0.12",
+      "tag": "pcln-popover_v5.0.12",
+      "date": "Wed, 22 Mar 2023 16:13:23 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.2.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.0.11",
+      "tag": "pcln-popover_v5.0.11",
+      "date": "Tue, 21 Mar 2023 17:01:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug when using customBreakpoints with responsive style props",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bbbd8f76d93be5de4910cab7f53cd407fac5b91a"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.1.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.5.3` to `5.6.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.0.10",
+      "tag": "pcln-popover_v5.0.10",
+      "date": "Fri, 03 Mar 2023 18:23:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.5.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.5.2` to `5.5.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.9",
       "tag": "pcln-popover_v5.0.9",
       "date": "Thu, 16 Feb 2023 16:33:24 GMT",

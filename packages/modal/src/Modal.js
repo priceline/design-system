@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
-import { color, width, height } from 'styled-system'
+import { color, width, height, compose } from 'styled-system'
 import { themeGet } from '@styled-system/theme-get'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, deprecatedColorValue, Flex } from 'pcln-design-system'
@@ -49,9 +49,6 @@ const Overlay = styled(DialogOverlay)`
 `
 
 const Dialog = styled(DialogContent)`
-  ${color}
-  ${width}
-  ${height}
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -76,6 +73,8 @@ const Dialog = styled(DialogContent)`
     max-height: none;
   `}
   ${getAnimation}
+
+  ${(props) => compose(color, width, height)(props)}
 `
 
 const HeaderWrapper = styled.div`
@@ -162,7 +161,7 @@ const Modal = ({
   if (enableOverflow) {
     dialogHeight = null
   } else if (fullScreen) {
-    dialogHeight = [1]
+    dialogHeight = '100vh'
   }
 
   return (
@@ -179,7 +178,7 @@ const Modal = ({
           <OverlayWrapper>
             <DialogWrapper enableoverflow={enableOverflow} verticalAlignment={verticalAlignment}>
               <Dialog
-                width={fullScreen ? 1 : width}
+                width={fullScreen ? '100vw' : width}
                 bg={bg}
                 height={dialogHeight}
                 transitionstate={state}

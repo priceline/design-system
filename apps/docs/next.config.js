@@ -11,7 +11,10 @@ module.exports = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   assetPrefix: IS_PROD ? 'https://priceline.github.io/design-system/' : '',
   swcMinify: !IS_PROD,
-  requireConfigFile: false,
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({

@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover Trigger Element Renders trigger element and appends action props 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -57,7 +72,11 @@ exports[`Popover Trigger Element Renders trigger element and appends action prop
     color="primary"
     type="button"
   >
-    Trigger Button
+    <div
+      class="c2"
+    >
+      Trigger Button
+    </div>
   </button>
 </div>
 `;
@@ -89,10 +108,10 @@ exports[`Popover Trigger Element renders with FocusLock 1`] = `
 
 exports[`Popover UI Positioning Bottom 1`] = `
 .c0 {
+  border-radius: 16px;
+  width: 400px;
   display: inline-block;
   padding: 8px;
-  width: 400px;
-  border-radius: 16px;
 }
 
 .c4 {
@@ -206,10 +225,10 @@ exports[`Popover UI Positioning Bottom 1`] = `
 
 exports[`Popover UI Positioning Bottom End 1`] = `
 .c0 {
+  border-radius: 16px;
+  width: 400px;
   display: inline-block;
   padding: 8px;
-  width: 400px;
-  border-radius: 16px;
 }
 
 .c4 {
@@ -323,10 +342,10 @@ exports[`Popover UI Positioning Bottom End 1`] = `
 
 exports[`Popover UI Positioning Bottom Start 1`] = `
 .c0 {
+  border-radius: 16px;
+  width: 400px;
   display: inline-block;
   padding: 8px;
-  width: 400px;
-  border-radius: 16px;
 }
 
 .c4 {

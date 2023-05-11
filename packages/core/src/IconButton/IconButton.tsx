@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import { Button, IButtonProps } from '../Button'
+import { Flex } from '../Flex'
 import { applyVariations } from '../utils'
 
 const TransparentButton = styled(Button)`
@@ -37,7 +38,7 @@ const IconButton: React.FC<IIconButtonProps> & { isIconButton?: boolean } = Reac
   ({ icon, ...props }, ref) => {
     return (
       <TransparentButton {...props} ref={ref}>
-        <div>{icon}</div>
+        <Flex>{icon}</Flex>
       </TransparentButton>
     )
   }

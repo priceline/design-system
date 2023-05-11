@@ -1,6 +1,92 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 16 Feb 2023 16:33:24 GMT and should not be manually modified.
+This log was last generated on Tue, 02 May 2023 14:18:09 GMT and should not be manually modified.
+
+## 5.8.4
+Tue, 02 May 2023 14:18:09 GMT
+
+### Patches
+
+- update Link with subtle, plain & white type. Also update bgcolor when button is hovered in subtle, plain & white
+
+## 5.8.3
+Wed, 26 Apr 2023 16:50:00 GMT
+
+### Patches
+
+- Slidebox: modify to allow visibleSlides less than 1
+
+## 5.8.2
+Wed, 26 Apr 2023 14:25:00 GMT
+
+### Patches
+
+- moved @styled-system/prop-types from devDependency to dependency
+- remove propTypes from Button in favor of IButtonProps interface
+
+## 5.8.1
+Tue, 25 Apr 2023 21:40:50 GMT
+
+### Patches
+
+- Tweak the border variation design for Toast
+
+## 5.8.0
+Mon, 24 Apr 2023 19:05:14 GMT
+
+### Minor changes
+
+- Create Toast border variation and fix overwritten styles
+
+## 5.7.1
+Wed, 12 Apr 2023 11:55:05 GMT
+
+### Patches
+
+- Use withTheme instead of useTheme in ToastProvider to restore Styled Components 4 compatibility
+- Loosen styled-components peerDependency to allow v4
+- Loosen styled-components peerDependency to allow v4
+
+## 5.7.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- Create Toast and ToastProvider components, add new Animations slideInleft and slideOutLeft
+- add IconLeft and IconRight props to Button
+- fixed peerDependency expressions
+
+### Patches
+
+- Correct text style subheading2's styles
+- update heft component rig to remove node-sass dependence
+- Upgrade Heft to 0.49.5
+
+## 5.6.1
+Wed, 22 Mar 2023 18:15:15 GMT
+
+### Patches
+
+- Fix responsive props on Label
+
+## 5.6.0
+Tue, 21 Mar 2023 17:01:10 GMT
+
+### Minor changes
+
+- Add the textStyle prop to the Label component
+
+### Patches
+
+- Fix bug when using customBreakpoints with responsive style props
+- Update FormField to use an interface instead of prop types
+
+## 5.5.3
+Fri, 03 Mar 2023 18:23:05 GMT
+
+### Patches
+
+- Spread props for Layout to allow margin and padding overrides
 
 ## 5.5.2
 Thu, 16 Feb 2023 16:33:24 GMT

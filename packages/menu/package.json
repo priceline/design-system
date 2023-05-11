@@ -1,6 +1,6 @@
 {
   "name": "pcln-menu",
-  "version": "5.0.9",
+  "version": "5.2.3",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "sideEffects": false,
@@ -23,7 +23,8 @@
   "author": "Priceline",
   "license": "MIT",
   "dependencies": {
-    "@styled-system/theme-get": "^5.1.2"
+    "@styled-system/theme-get": "^5.1.2",
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
@@ -34,7 +35,7 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.6.0",
+    "eslint": "^8.33.0",
     "jest": "^26.6.3",
     "jest-standard-reporter": "^2.0.0",
     "jest-styled-components": "^7.1.0",
@@ -42,20 +43,19 @@
     "pcln-design-system": "workspace:*",
     "pcln-icons": "workspace:*",
     "pcln-popover": "workspace:*",
-    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.5",
-    "styled-system": "^4.2.4"
+    "styled-components": "^5.3.9",
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-    "pcln-design-system": "5.5.2",
-    "pcln-icons": "5.0.2",
-    "pcln-popover": "5.0.9",
-    "react": ">= 16.10.0",
-    "react-dom": ">= 16.10.0",
-    "styled-system": "^4.2.4",
-    "styled-components": ">=5 <5.3.4"
+    "pcln-design-system": "^5.8.4",
+    "pcln-icons": "^5.4.0",
+    "pcln-popover": "^5.2.3",
+    "react": ">=16.10.0",
+    "react-dom": ">=16.10.0",
+    "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",
+    "styled-system": "^5.0.0"
   }
 }

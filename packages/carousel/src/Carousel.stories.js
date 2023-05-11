@@ -99,6 +99,7 @@ const BasicTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 export const Basic = BasicTemplate.bind({})
 Basic.args = {
   visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
@@ -109,8 +110,8 @@ const VerticalTemplate = (args) => (
   <Flex width='300px' height='500px'>
     <Carousel {...args}>
       {Array.from(Array(SLIDE_COUNT), (_, idx) => (
-        <Flex justifyContent='center' alignItems='center'>
-          <Card color='primary.light' border='primary' key={idx} height='200px' width='200px' p={3}>
+        <Flex justifyContent='center' alignItems='center' key={idx}>
+          <Card color='primary.light' border='primary' height='200px' width='200px' p={3}>
             Slide {idx}
           </Card>
         </Flex>

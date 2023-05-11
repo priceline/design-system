@@ -1,6 +1,62 @@
 # Change Log - pcln-slider
 
-This log was last generated on Thu, 16 Feb 2023 16:33:24 GMT and should not be manually modified.
+This log was last generated on Tue, 02 May 2023 14:18:09 GMT and should not be manually modified.
+
+## 5.1.6
+Tue, 02 May 2023 14:18:09 GMT
+
+_Version update only_
+
+## 5.1.5
+Wed, 26 Apr 2023 16:50:00 GMT
+
+_Version update only_
+
+## 5.1.4
+Wed, 26 Apr 2023 14:25:00 GMT
+
+_Version update only_
+
+## 5.1.3
+Tue, 25 Apr 2023 21:40:50 GMT
+
+_Version update only_
+
+## 5.1.2
+Mon, 24 Apr 2023 19:05:14 GMT
+
+_Version update only_
+
+## 5.1.1
+Wed, 12 Apr 2023 11:55:05 GMT
+
+_Version update only_
+
+## 5.1.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
+
+### Patches
+
+- upgrade eslint to 8.33.0, upgrade Heft to 0.49.5
+
+## 5.0.11
+Wed, 22 Mar 2023 18:15:16 GMT
+
+_Version update only_
+
+## 5.0.10
+Tue, 21 Mar 2023 17:01:11 GMT
+
+_Version update only_
+
+## 5.0.9
+Fri, 03 Mar 2023 18:23:05 GMT
+
+_Version update only_
 
 ## 5.0.8
 Thu, 16 Feb 2023 16:33:24 GMT

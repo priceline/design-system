@@ -1,27 +1,27 @@
+import { themeGet } from '@styled-system/theme-get'
 import React from 'react'
 import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
 import {
   borderRadius,
-  fontSize,
-  width,
-  space,
   boxShadow,
-  WidthProps,
-  SpaceProps,
   BoxShadowProps,
+  compose,
+  fontSize,
+  space,
+  SpaceProps,
+  width,
+  WidthProps,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import { themeGet } from '@styled-system/theme-get'
+
+import { Flex } from '../Flex'
+
 import {
   applySizes,
   applyVariations,
   borders,
+  boxShadowAttrs,
   getPaletteColor,
   getTextColorOn,
-  deprecatedColorValue,
-  boxShadowAttrs,
-  boxShadowSizeValues,
 } from '../utils'
 
 export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
@@ -109,7 +109,7 @@ const variations = {
     background-color: transparent;
     color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${getPaletteColor('background.light')};
+      background-color: ${getPaletteColor('background.base')};
       color: ${getPaletteColor('dark')};
     }
     &:focus {
@@ -121,7 +121,7 @@ const variations = {
     background-color: ${getPaletteColor('background.base')};
     color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${getPaletteColor('background.light')};
+      background-color: ${getPaletteColor('background.tint')};
       color: ${getPaletteColor('dark')};
     }
     &:focus {
@@ -133,7 +133,7 @@ const variations = {
     background-color: ${getPaletteColor('background.lightest')};
     color: ${getPaletteColor('base')};
     &:hover {
-      background-color: ${getPaletteColor('background.light')};
+      background-color: ${getPaletteColor('background.base')};
       color: ${getPaletteColor('dark')};
     }
     &:focus {
@@ -169,8 +169,29 @@ const variations = {
     width: 100%;
 
     ${(props) => borders({ ...props, color: undefined })}
-    ${space} ${fontSize} ${borderRadius};
+    ${(props) => compose(space, fontSize, borderRadius)(props)}
   `,
+}
+
+export type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
+export type StyledButtonProps = IButtonProps & { hasChildren: boolean }
+export interface IButtonProps
+  extends WidthProps,
+    SpaceProps,
+    BoxShadowProps,
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    React.RefAttributes<unknown> {
+  color?: string
+  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
+  size?: Sizes | Sizes[]
+  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
+  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
+  autoFocus?: boolean
+  IconLeft?: React.Component
+  IconRight?: React.Component
+  onClick?: (unknown) => unknown
+  onFocus?: (unknown) => unknown
+  onMouseEnter?: (unknown) => unknown
 }
 
 export const buttonStyles = css`
@@ -192,9 +213,6 @@ export const buttonStyles = css`
 
   ${({ theme }) => applySizes(sizes, 'medium', theme.mediaQueries)};
   ${applyVariations('Button', variations)};
-  ${width};
-  ${space};
-  ${boxShadow}
 
   &:disabled {
     cursor: not-allowed;
@@ -203,52 +221,119 @@ export const buttonStyles = css`
   }
 `
 
-const buttonPropTypes = {
-  ...propTypes.width,
-  ...propTypes.space,
-  ...propTypes.boxShadow,
-  color: deprecatedColorValue(),
-  variation: PropTypes.oneOf(Object.keys(variations)),
-  size: PropTypes.oneOf(['small', 'medium', 'large', 'extraLarge']),
-  disabled: PropTypes.bool,
-  borderRadius: PropTypes.oneOf(borderRadiusButtonValues),
-  boxShadowSize: PropTypes.oneOf(['', ...boxShadowSizeValues]),
+const iconButtonPaddings = {
+  IconLeft: {
+    small: { p: '6px 14px 6px 10px' },
+    medium: { p: '8px 20px 8px 16px' },
+    large: { p: '12px 24px 12px 20px' },
+    extraLarge: { p: '16px 24px 16px 20px' },
+  },
+  IconRight: {
+    small: { p: '6px 10px 6px 14px' },
+    medium: { p: '8px 16px 8px 20px' },
+    large: { p: '12px 20px 12px 24px' },
+    extraLarge: { p: '16px 20px 16px 24px' },
+  },
+  both: {
+    small: { p: '6px 10px' },
+    medium: { p: '8px 16px' },
+    large: { p: '12px 20px' },
+    extraLarge: { p: '16px 20px' },
+  },
+}
+const iconOnlyButtonPaddings = {
+  small: { px: '6px', py: '6px' },
+  medium: { px: '8px', py: '8px' },
+  large: { px: '12px', py: '12px' },
+  extraLarge: { px: '16px', py: '16px' },
+}
+const iconButtonSizes = {
+  small: 20,
+  medium: 24,
+  large: 24,
+  extraLarge: 24,
 }
 
-type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
-export interface IButtonProps
-  extends WidthProps,
-    SpaceProps,
-    BoxShadowProps,
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    React.RefAttributes<unknown> {
-  color?: string
-  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
-  size?: Sizes | Sizes[]
-  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
-  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
-  autoFocus?: boolean
-  onClick?: (unknown) => unknown
-  onFocus?: (unknown) => unknown
-  onMouseEnter?: (unknown) => unknown
+// eslint-disable-next-line @typescript-eslint/naming-convention
+function getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren }: StyledButtonProps) {
+  const hasIcon = !!(IconLeft || IconRight)
+  const sizeIndex = Array.isArray(size) ? size[0] : size
+
+  if (variation === 'link') {
+    return { p: 0 }
+  }
+
+  if (hasIcon) {
+    if (hasChildren) {
+      if (IconLeft && IconRight) {
+        return iconButtonPaddings.both[sizeIndex]
+      } else if (IconLeft) {
+        return iconButtonPaddings.IconLeft[sizeIndex]
+      } else if (IconRight) {
+        return iconButtonPaddings.IconRight[sizeIndex]
+      }
+      return {}
+    } else {
+      return iconOnlyButtonPaddings?.[sizeIndex] ?? {}
+    }
+  }
+
+  return {}
 }
 
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const Button: React.FC<IButtonProps> = styled.button.attrs((props) => {
-  const { width, title, 'aria-label': ariaLabel, borderRadius } = props
+const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) => {
+  const {
+    width,
+    title,
+    'aria-label': ariaLabel,
+    borderRadius,
+    IconLeft,
+    IconRight,
+    size,
+    variation,
+    hasChildren,
+  } = props
+
+  const paddingProps = getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren })
+
   return {
     borderRadius,
     ...boxShadowAttrs(props),
     width,
     'aria-label': ariaLabel || title,
+    ...paddingProps,
   }
 })`
   ${buttonStyles}
+
+  ${(props) => compose(width, space, boxShadow)(props)}
 `
 
-Button.propTypes = buttonPropTypes
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const ButtonIcon = ({ Component, ...props }) => {
+  return Component ? <Component {...props} /> : null
+}
+
+const Button = React.forwardRef((props: IButtonProps, ref) => {
+  const { children, ...restProps } = props
+  const { IconLeft, IconRight, size = 'medium' } = props
+  const hasChildren = React.Children.toArray(children).length > 0
+  const sizeIndex = Array.isArray(size) ? size[0] : size
+  const iconSize = iconButtonSizes?.[sizeIndex] ?? 24
+
+  return (
+    <StyledButton {...restProps} hasChildren={hasChildren} ref={ref}>
+      <Flex alignItems='center' justifyContent='center'>
+        <ButtonIcon Component={IconLeft} size={iconSize} mr={children ? 2 : 0} />
+        {children}
+        <ButtonIcon Component={IconRight} size={iconSize} ml={children ? 2 : 0} />
+      </Flex>
+    </StyledButton>
+  )
+})
 
 Button.defaultProps = {
   color: 'primary',

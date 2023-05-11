@@ -35,6 +35,7 @@ import {
   TextStyleProps,
   WidthProps,
   ZIndexProps,
+  compose,
 } from 'styled-system'
 
 import {
@@ -129,30 +130,33 @@ const textProps: React.FC<ITextProps> = css`
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
 
-  ${display}
-  ${height}
-  ${maxHeight}
-  ${maxWidth}
-  ${minHeight}
-  ${minWidth}
-  ${overflow}
-  ${space}
-  ${width}
-
   ${caps}
   ${regular}
   ${bold}
-
-  ${fontSize}
-  ${fontStyle}
-  ${fontWeight}
-  ${lineHeight}
-  ${letterSpacing}
-  ${textAlign}
   ${textDecoration}
   ${textShadow}
-  ${textStyle}
-  ${zIndex}
+
+
+  ${(props) =>
+    compose(
+      display,
+      height,
+      maxHeight,
+      maxWidth,
+      minHeight,
+      minWidth,
+      overflow,
+      space,
+      width,
+      fontSize,
+      fontStyle,
+      fontWeight,
+      lineHeight,
+      letterSpacing,
+      textAlign,
+      textStyle,
+      zIndex
+    )(props)}
 `
 
 const textAttrs = (props) => ({

@@ -12,6 +12,7 @@ import {
   SpaceProps,
   WidthProps,
   AlignContentProps,
+  compose,
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 
@@ -48,9 +49,8 @@ const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ..
 }))`
   display: flex;
   ${applyVariations('Flex')}
-  ${alignItems} ${justifyContent}
-  ${flexDirection}
-  ${flexWrap}
+
+  ${(props) => compose(alignItems, justifyContent, flexDirection, flexWrap)(props)}
 `
 
 Flex.propTypes = flexPropTypes

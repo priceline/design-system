@@ -1,3 +1,8 @@
 {
-  "projectOutputFolderNames": ["lib-esm", "lib-commonjs", "types"]
+  "operationSettings": [
+    {
+      "operationName": "build",
+      "outputFolderNames": ["lib-esm", "lib-commonjs", "types"]
+    }
+  ]
 }

@@ -1,6 +1,48 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 17 Jan 2023 17:04:02 GMT and should not be manually modified.
+This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+
+## 5.4.0
+Wed, 03 May 2023 14:56:40 GMT
+
+### Minor changes
+
+- PPN-62357: add userCircle and phoneAgent icons
+
+## 5.3.1
+Mon, 10 Apr 2023 20:19:52 GMT
+
+### Patches
+
+- Update pcln-design-system peer dependency
+
+## 5.3.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
+
+## 5.2.0
+Wed, 22 Mar 2023 16:13:23 GMT
+
+### Minor changes
+
+- Adds car automatic and manual transmission icons
+
+## 5.1.1
+Tue, 21 Mar 2023 17:01:10 GMT
+
+### Patches
+
+- Fix bug when using customBreakpoints with responsive style props
+
+## 5.1.0
+Fri, 03 Mar 2023 18:23:05 GMT
+
+### Minor changes
+
+- Adds license and road icons
 
 ## 5.0.2
 Tue, 17 Jan 2023 17:04:02 GMT

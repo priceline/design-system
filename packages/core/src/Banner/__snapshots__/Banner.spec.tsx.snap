@@ -2,9 +2,9 @@
 
 exports[`Banner accepts non-preset colors 1`] = `
 .c0 {
-  text-align: left;
   background-color: #4f6f8f;
   color: #0a0;
+  text-align: left;
 }
 
 .c2 {
@@ -17,14 +17,14 @@ exports[`Banner accepts non-preset colors 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c3 {
@@ -67,9 +67,9 @@ exports[`Banner renders content from children props 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #0a0;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -82,14 +82,14 @@ exports[`Banner renders content from children props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -151,9 +151,9 @@ exports[`Banner renders with blue bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #0068ef;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -166,14 +166,14 @@ exports[`Banner renders with blue bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -232,9 +232,9 @@ exports[`Banner renders with custom iconName and size 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #0a0;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -247,14 +247,14 @@ exports[`Banner renders with custom iconName and size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -313,9 +313,9 @@ exports[`Banner renders with green bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #0a0;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -328,14 +328,14 @@ exports[`Banner renders with green bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -395,9 +395,9 @@ exports[`Banner renders with header node 1`] = `
 }
 
 .c1 {
-  text-align: left;
   background-color: #0a0;
   color: #fff;
+  text-align: left;
 }
 
 .c5 {
@@ -410,14 +410,14 @@ exports[`Banner renders with header node 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c6 {
@@ -502,9 +502,9 @@ exports[`Banner renders with lightBlue bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #e8f2ff;
   color: #049;
+  text-align: left;
 }
 
 .c4 {
@@ -517,14 +517,14 @@ exports[`Banner renders with lightBlue bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -583,9 +583,9 @@ exports[`Banner renders with lightGreen bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #ecf7ec;
   color: #060;
+  text-align: left;
 }
 
 .c4 {
@@ -598,14 +598,14 @@ exports[`Banner renders with lightGreen bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -664,9 +664,9 @@ exports[`Banner renders with lightRed bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #fbebeb;
   color: #800;
+  text-align: left;
 }
 
 .c4 {
@@ -679,14 +679,14 @@ exports[`Banner renders with lightRed bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -745,9 +745,9 @@ exports[`Banner renders with no props other than theme 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #0a0;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -760,14 +760,14 @@ exports[`Banner renders with no props other than theme 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -826,9 +826,9 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #f68013;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -841,14 +841,14 @@ exports[`Banner renders with orange bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -907,9 +907,9 @@ exports[`Banner renders with red bg 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: #c00;
   color: #fff;
+  text-align: left;
 }
 
 .c4 {
@@ -922,14 +922,14 @@ exports[`Banner renders with red bg 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -988,9 +988,9 @@ exports[`Banner renders with text node 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: secondary.base;
   color: text.lightest;
+  text-align: left;
 }
 
 .c4 {
@@ -1003,14 +1003,14 @@ exports[`Banner renders with text node 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {
@@ -1086,9 +1086,9 @@ exports[`Banner renders with text string 1`] = `
 }
 
 .c0 {
-  text-align: left;
   background-color: secondary.base;
   color: text.lightest;
+  text-align: left;
 }
 
 .c4 {
@@ -1101,14 +1101,14 @@ exports[`Banner renders with text string 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .c5 {

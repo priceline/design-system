@@ -6,15 +6,16 @@ import { borderRadius } from 'styled-system'
 import { Check as CheckIcon } from 'pcln-icons'
 
 const MenuButton = styled(Button).attrs(borderRadiusAttrs)`
-  align-items: center;
   background-color: ${(props) =>
     props.selected ? getPaletteColor('light')(props) : getPaletteColor('background.lightest')(props)};
   border: 2px solid transparent;
   color: ${getPaletteColor('text.base')};
-  display: flex;
-  justify-content: space-between;
   outline: none;
   padding: 12px;
+
+  > ${Flex} {
+    justify-content: space-between;
+  }
 
   &:hover {
     ${(props) =>

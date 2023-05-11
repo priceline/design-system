@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import propTypes from '@styled-system/prop-types'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps } from 'styled-system'
+import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
 import { applyVariations, getPaletteColor, deprecatedColorValue, borderRadiusAttrs } from '../utils'
 
 const toggleBadgePropTypes = {
@@ -39,7 +39,8 @@ const ToggleBadge: React.FC<IToggleBadgeProps> = styled.button.attrs(borderRadiu
     background-color: ${(props) => getPaletteColor(props.bg || props.color, 'light')(props)};
   }
   ${applyVariations('ToggleBadge')}
-  ${space} ${fontSize} ${borderRadius};
+
+  ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
 ToggleBadge.displayName = 'ToggleBadge'

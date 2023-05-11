@@ -2,6 +2,97 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.4.0",
+      "tag": "pcln-icons_v5.4.0",
+      "date": "Wed, 03 May 2023 14:56:40 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "PPN-62357: add userCircle and phoneAgent icons",
+            "author": "cadenchabot-pcln <62961573+cadenchabot-pcln@users.noreply.github.com>",
+            "commit": "8072fc6bd5487840aa8141e7c266251501f33121"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.1",
+      "tag": "pcln-icons_v5.3.1",
+      "date": "Mon, 10 Apr 2023 20:19:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update pcln-design-system peer dependency",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "ac87565f31f881b2e3161acdf6c17eb1df0e75db"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.0",
+      "tag": "pcln-icons_v5.3.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "upgrade eslint to 8.33.0",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.0",
+      "tag": "pcln-icons_v5.2.0",
+      "date": "Wed, 22 Mar 2023 16:13:23 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adds car automatic and manual transmission icons",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "076ae077db8a59b1d04e9ab6380b37402a777696"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.1",
+      "tag": "pcln-icons_v5.1.1",
+      "date": "Tue, 21 Mar 2023 17:01:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix bug when using customBreakpoints with responsive style props",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bbbd8f76d93be5de4910cab7f53cd407fac5b91a"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.1.0",
+      "tag": "pcln-icons_v5.1.0",
+      "date": "Fri, 03 Mar 2023 18:23:05 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adds license and road icons",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "e81c8903b8ff21f9fde575819aab3e56ce2171a4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.0.2",
       "tag": "pcln-icons_v5.0.2",
       "date": "Tue, 17 Jan 2023 17:04:02 GMT",

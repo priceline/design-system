@@ -1,6 +1,90 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Thu, 16 Feb 2023 16:33:24 GMT and should not be manually modified.
+This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+
+## 2.3.3
+Wed, 03 May 2023 14:56:40 GMT
+
+_Version update only_
+
+## 2.3.2
+Tue, 02 May 2023 14:18:09 GMT
+
+_Version update only_
+
+## 2.3.1
+Wed, 26 Apr 2023 16:50:00 GMT
+
+_Version update only_
+
+## 2.3.0
+Wed, 26 Apr 2023 14:25:00 GMT
+
+### Minor changes
+
+- babel preset cleanup
+
+### Patches
+
+- cleanup dependencies
+- install lodash.debounce in place of missing lodash
+- upgrade uuid from v8 to v9
+
+## 2.2.4
+Tue, 25 Apr 2023 21:40:50 GMT
+
+_Version update only_
+
+## 2.2.3
+Mon, 24 Apr 2023 19:05:14 GMT
+
+_Version update only_
+
+## 2.2.2
+Wed, 12 Apr 2023 11:55:05 GMT
+
+### Patches
+
+- Loosen styled-components peerDependency to allow v4
+
+## 2.2.1
+Mon, 10 Apr 2023 20:19:52 GMT
+
+_Version update only_
+
+## 2.2.0
+Tue, 04 Apr 2023 20:01:00 GMT
+
+### Minor changes
+
+- fixed peerDependency expressions
+
+## 2.1.0
+Thu, 30 Mar 2023 15:50:48 GMT
+
+### Minor changes
+
+- Update main branch to get latest from v4 for carousel
+
+## 2.0.13
+Wed, 22 Mar 2023 18:15:16 GMT
+
+_Version update only_
+
+## 2.0.12
+Wed, 22 Mar 2023 16:13:23 GMT
+
+_Version update only_
+
+## 2.0.11
+Tue, 21 Mar 2023 17:01:11 GMT
+
+_Version update only_
+
+## 2.0.10
+Fri, 03 Mar 2023 18:23:05 GMT
+
+_Version update only_
 
 ## 2.0.9
 Thu, 16 Feb 2023 16:33:24 GMT

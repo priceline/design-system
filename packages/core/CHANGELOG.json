@@ -2,6 +2,200 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.8.4",
+      "tag": "pcln-design-system_v5.8.4",
+      "date": "Tue, 02 May 2023 14:18:09 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update Link with subtle, plain & white type. Also update bgcolor when button is hovered in subtle, plain & white",
+            "author": "Ralston Almeida <84033935+ralston7@users.noreply.github.com>",
+            "commit": "652868db1e489986e53e6808e312b2196e84d07e"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.8.3",
+      "tag": "pcln-design-system_v5.8.3",
+      "date": "Wed, 26 Apr 2023 16:50:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Slidebox: modify to allow visibleSlides less than 1",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "4ca3ea28dee0135ce37c0a9b8fcff8588e8dd924"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.8.2",
+      "tag": "pcln-design-system_v5.8.2",
+      "date": "Wed, 26 Apr 2023 14:25:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "moved @styled-system/prop-types from devDependency to dependency",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "remove propTypes from Button in favor of IButtonProps interface",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.8.1",
+      "tag": "pcln-design-system_v5.8.1",
+      "date": "Tue, 25 Apr 2023 21:40:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Tweak the border variation design for Toast",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "b1cab98a477a4a06d720e98f09b10fceacdd5bb8"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.8.0",
+      "tag": "pcln-design-system_v5.8.0",
+      "date": "Mon, 24 Apr 2023 19:05:14 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create Toast border variation and fix overwritten styles",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "62b109148c3b39edfd22f6de6e10911a32ef4ff1"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.7.1",
+      "tag": "pcln-design-system_v5.7.1",
+      "date": "Wed, 12 Apr 2023 11:55:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Use withTheme instead of useTheme in ToastProvider to restore Styled Components 4 compatibility",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "cf9fff06cd77c28430900991dd511adc1995feb1"
+          },
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "cf9fff06cd77c28430900991dd511adc1995feb1"
+          },
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0c189801bebf06e565d7f0f24b615b0e079ecc2a"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.7.0",
+      "tag": "pcln-design-system_v5.7.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create Toast and ToastProvider components, add new Animations slideInleft and slideOutLeft",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "0193d0b584d0fc99483f018a7b64e80ac1bc6719"
+          },
+          {
+            "comment": "add IconLeft and IconRight props to Button",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          },
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Correct text style subheading2's styles",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "0c776c7877c6ae74ec39019c3d6c18ad27a667a8"
+          },
+          {
+            "comment": "update heft component rig to remove node-sass dependence",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          },
+          {
+            "comment": "Upgrade Heft to 0.49.5",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.6.1",
+      "tag": "pcln-design-system_v5.6.1",
+      "date": "Wed, 22 Mar 2023 18:15:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix responsive props on Label",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "44a4ea62c28b5c10fd6b63caeaf8650aab4b27d7"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.6.0",
+      "tag": "pcln-design-system_v5.6.0",
+      "date": "Tue, 21 Mar 2023 17:01:10 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add the textStyle prop to the Label component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "56bf050252eb8eeeac9e692078d9c275f2909def"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Fix bug when using customBreakpoints with responsive style props",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "bbbd8f76d93be5de4910cab7f53cd407fac5b91a"
+          },
+          {
+            "comment": "Update FormField to use an interface instead of prop types",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "1832afd8f510d044e93bd376e00b7db339e356f9"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.5.3",
+      "tag": "pcln-design-system_v5.5.3",
+      "date": "Fri, 03 Mar 2023 18:23:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Spread props for Layout to allow margin and padding overrides",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "821cc24c4fa47fcad064c38d4efd06bd200a3cb8"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.2",
       "tag": "pcln-design-system_v5.5.2",
       "date": "Thu, 16 Feb 2023 16:33:24 GMT",

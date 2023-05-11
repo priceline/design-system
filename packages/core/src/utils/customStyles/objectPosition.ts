@@ -1,6 +1,6 @@
-import { style } from 'styled-system'
+import { system } from 'styled-system'
 
-const OBJECT_POISITION_PROPS_TO_CSS_VALUE = {
+const OBJECT_POSITION_PROPS_TO_CSS_VALUE = {
   left: 'left',
   right: 'right',
   top: 'top',
@@ -10,26 +10,24 @@ const OBJECT_POISITION_PROPS_TO_CSS_VALUE = {
   bottomLeft: 'bottom left',
   bottomRight: 'bottom right',
   center: 'center',
+  centerTop: 'center top',
+  centerBottom: 'center bottom',
+  centerLeft: 'center left',
+  centerRight: 'center right',
 }
 
-export const objectPositionValues = [
-  'left',
-  'right',
-  'top',
-  'topLeft',
-  'topRight',
-  'bottom',
-  'bottomLeft',
-  'bottomRight',
-  'center',
-] as const
+const values = Object.values(OBJECT_POSITION_PROPS_TO_CSS_VALUE)
+
+export const objectPositionValues = [...values] as const
 
 export type ObjectPosition = typeof objectPositionValues[number]
 
 export function objectPosition() {
-  return style({
-    prop: 'objectPosition',
-    cssProperty: 'object-position',
-    transformValue: (val) => OBJECT_POISITION_PROPS_TO_CSS_VALUE[val],
+  return system({
+    objectPosition: {
+      property: 'objectPosition',
+      transform: (val) =>
+        OBJECT_POSITION_PROPS_TO_CSS_VALUE[val] ?? OBJECT_POSITION_PROPS_TO_CSS_VALUE.center,
+    },
   })
 }

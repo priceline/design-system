@@ -14,7 +14,7 @@ jobs:
         node-version: [16, 18]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0 # needed by chromatic for git history
 
@@ -23,9 +23,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: PNPM cache via actions/cache@v2
+      - name: PNPM cache via actions/cache@v3
         id: pnpm-cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}

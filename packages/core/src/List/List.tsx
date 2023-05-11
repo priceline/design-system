@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { fontSize, space, width } from 'styled-system'
+import { fontSize, space, width, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
 import { getPaletteColor } from '../utils'
 
@@ -11,9 +11,7 @@ const BaseCSS = css`
     margin: ${themeGet('space.1')} 0;
   }
 
-  ${fontSize};
-  ${space};
-  ${width};
+  ${(props) => compose(fontSize, space, width)(props)}
 `
 
 const Ordered = styled('ol')`

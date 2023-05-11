@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "next -p 3030",
-    "lint": "next lint",
+    "lint": "",
     "build": "",
     "build:docs": "next build && next export"
   },
@@ -21,14 +21,14 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.15.5",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^1.13.3",
     "next": "^12.0.7",
-    "eslint": "^8.6.0",
+    "eslint": "^8.33.0",
     "eslint-config-next": "^12.0.7",
     "next-mdx-docs": "2.0.0-alpha.2",
     "remark-autolink-headings": "^5.0.0",

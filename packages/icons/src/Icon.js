@@ -43,6 +43,7 @@ const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
 
 const Icon = styled(BaseIcon)`
   outline: none;
+  display: flex;
 `
 
 Icon.isIcon = true

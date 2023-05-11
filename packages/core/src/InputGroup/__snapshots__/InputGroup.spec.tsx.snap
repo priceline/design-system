@@ -11,9 +11,10 @@ exports[`InputGroup renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 2px;
+  border-radius: 16px;
   border-width: 1px;
   border-style: solid;
+  border-color: #c0cad5;
 }
 
 .c1 input {

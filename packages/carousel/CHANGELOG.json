@@ -2,6 +2,263 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.3.3",
+      "tag": "pcln-carousel_v2.3.3",
+      "date": "Wed, 03 May 2023 14:56:40 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.4.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5.0.0` to `^5.4.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.3.2",
+      "tag": "pcln-carousel_v2.3.2",
+      "date": "Tue, 02 May 2023 14:18:09 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.3` to `^5.8.4`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.3.1",
+      "tag": "pcln-carousel_v2.3.1",
+      "date": "Wed, 26 Apr 2023 16:50:00 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.2` to `^5.8.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.3.0",
+      "tag": "pcln-carousel_v2.3.0",
+      "date": "Wed, 26 Apr 2023 14:25:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "cleanup dependencies",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "install lodash.debounce in place of missing lodash",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          },
+          {
+            "comment": "upgrade uuid from v8 to v9",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "babel preset cleanup",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "630b1da4e822c0649d7b68786d8e714598992321"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.1` to `^5.8.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.2.4",
+      "tag": "pcln-carousel_v2.2.4",
+      "date": "Tue, 25 Apr 2023 21:40:50 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.0` to `^5.8.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.2.3",
+      "tag": "pcln-carousel_v2.2.3",
+      "date": "Mon, 24 Apr 2023 19:05:14 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.8.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.7.1` to `^5.8.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.2.2",
+      "tag": "pcln-carousel_v2.2.2",
+      "date": "Wed, 12 Apr 2023 11:55:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Loosen styled-components peerDependency to allow v4",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "0c189801bebf06e565d7f0f24b615b0e079ecc2a"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.7.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.7.0` to `^5.7.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.2.1",
+      "tag": "pcln-carousel_v2.2.1",
+      "date": "Mon, 10 Apr 2023 20:19:52 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.3.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.2.0",
+      "tag": "pcln-carousel_v2.2.0",
+      "date": "Tue, 04 Apr 2023 20:01:00 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "upgrade eslint to 8.33.0",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "fixed peerDependency expressions",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "ef78c9732633e7a196e49e652c59ae6f9c3b3e35"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.3.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.7.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5` to `^5.7.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.1.0",
+      "tag": "pcln-carousel_v2.1.0",
+      "date": "Thu, 30 Mar 2023 15:50:48 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Update main branch to get latest from v4 for carousel",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "03e85381f43a4a082d1203683a7a7317cf5f8957"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.13",
+      "tag": "pcln-carousel_v2.0.13",
+      "date": "Wed, 22 Mar 2023 18:15:16 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.6.0` to `5.6.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.12",
+      "tag": "pcln-carousel_v2.0.12",
+      "date": "Wed, 22 Mar 2023 16:13:23 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.2.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.11",
+      "tag": "pcln-carousel_v2.0.11",
+      "date": "Tue, 21 Mar 2023 17:01:11 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.1.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.6.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.5.3` to `5.6.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.10",
+      "tag": "pcln-carousel_v2.0.10",
+      "date": "Fri, 03 Mar 2023 18:23:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.5.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `5.5.2` to `5.5.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.0.9",
       "tag": "pcln-carousel_v2.0.9",
       "date": "Thu, 16 Feb 2023 16:33:24 GMT",

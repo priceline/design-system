@@ -19,6 +19,8 @@ export type MotionVariant =
   | 'scaleFromTopLeft'
   | 'scaleOnHover'
   | 'scaleOnTap'
+  | 'slideOutLeft'
+  | 'slideInLeft'
 
 export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   expandDown: {
@@ -50,6 +52,14 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   },
   scaleOnTap: {
     whileTap: { scale: 0.9 },
+  },
+  slideOutLeft: {
+    initial: { opacity: 1, x: 0 },
+    animate: { opacity: 0, x: '-100%' },
+  },
+  slideInLeft: {
+    initial: { opacity: 0, x: '-100%' },
+    animate: { opacity: 1, x: 0 },
   },
 }
 
