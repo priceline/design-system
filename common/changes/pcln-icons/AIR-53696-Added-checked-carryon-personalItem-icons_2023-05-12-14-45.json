@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Added new checkedBag, carryOnBag and personalItem icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
