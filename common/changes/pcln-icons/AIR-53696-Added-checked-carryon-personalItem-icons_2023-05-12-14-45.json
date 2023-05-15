@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "pcln-icons",
-      "comment": "Added new checkedBag, carrayOnBag and personalItem icons",
+      "comment": "Added new checkedBag, carryOnBag and personalItem icons",
       "type": "patch"
     }
   ],
