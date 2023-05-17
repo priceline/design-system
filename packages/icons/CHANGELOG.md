@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+This log was last generated on Wed, 17 May 2023 14:36:53 GMT and should not be manually modified.
+
+## 5.5.0
+Wed, 17 May 2023 14:36:53 GMT
+
+### Minor changes
+
+- Added new checkedBag, carryOnBag and personalItem icons
 
 ## 5.4.0
 Wed, 03 May 2023 14:56:40 GMT

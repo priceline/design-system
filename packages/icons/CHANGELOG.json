@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.5.0",
+      "tag": "pcln-icons_v5.5.0",
+      "date": "Wed, 17 May 2023 14:36:53 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added new checkedBag, carryOnBag and personalItem icons",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "2297ded2238e755bb1215435cc38921833aab344"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.0",
       "tag": "pcln-icons_v5.4.0",
       "date": "Wed, 03 May 2023 14:56:40 GMT",
