@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add optional width Prop to Button Chip",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
