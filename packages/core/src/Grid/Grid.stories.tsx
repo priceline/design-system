@@ -19,12 +19,12 @@ const GridItem = (props: IGridProps) => <Grid p={4} width={1} placeItems='center
 export const Playground: GridStory = {
   render: () => (
     <Grid templateColumns={['1fr', '1fr 1fr', '1fr 1fr 1fr']} placeItems={'center'} gap={2}>
-      <GridItem bg='#00f8'>A</GridItem>
-      <GridItem bg='#0f08'>B</GridItem>
-      <GridItem bg='#0ff8'>C</GridItem>
-      <GridItem bg='#f008'>D</GridItem>
-      <GridItem bg='#f0f8'>E</GridItem>
-      <GridItem bg='#ff08'>F</GridItem>
+      <GridItem style={{ background: '#00f8' }}>A</GridItem>
+      <GridItem style={{ background: '#0f08' }}>B</GridItem>
+      <GridItem style={{ background: '#0ff8' }}>C</GridItem>
+      <GridItem style={{ background: '#f008' }}>D</GridItem>
+      <GridItem style={{ background: '#f0f8' }}>E</GridItem>
+      <GridItem style={{ background: '#ff08' }}>F</GridItem>
     </Grid>
   ),
 }
@@ -32,23 +32,27 @@ export const Playground: GridStory = {
 export const TemplateAreas: GridStory = {
   render: () => (
     <Grid
-      gridTemplateAreas={`
-        'header header header' 
-        'sidebar content content'
-        'footer footer footer'`}
+      templateAreas={`
+        'header header' 
+        'sidebar content'
+        'footer footer'
+      `}
       placeItems={'center'}
+      minHeight={'calc(100vh - 5rem)'}
+      templateRows={'auto 1fr auto'}
+      templateColumns={'15em 1fr'}
       gap={2}
     >
-      <GridItem gridArea='header' bg='#00f8'>
+      <GridItem gridArea='header' style={{ background: '#00f8' }}>
         Header
       </GridItem>
-      <GridItem gridArea='sidebar' bg='#0f08'>
+      <GridItem gridArea='sidebar' height='100%' style={{ background: '#0f08' }}>
         Sidebar
       </GridItem>
-      <GridItem gridArea='content' bg='#0ff8'>
+      <GridItem gridArea='content' height='100%' style={{ background: '#0ff8' }}>
         Content
       </GridItem>
-      <GridItem gridArea='footer' mt='auto' bg='#f008'>
+      <GridItem gridArea='footer' mt='auto' style={{ background: '#f008' }}>
         Footer
       </GridItem>
     </Grid>
@@ -58,13 +62,13 @@ export const TemplateAreas: GridStory = {
 export const NestedGrids: GridStory = {
   render: () => (
     <Grid templateColumns='1fr 1fr' placeItems='center' gap={2}>
-      <GridItem bg='#00f8'>A</GridItem>
-      <GridItem bg='#0f08'>B</GridItem>
-      <GridItem bg='#0ff8'>C</GridItem>
+      <GridItem style={{ background: '#00f8' }}>A</GridItem>
+      <GridItem style={{ background: '#0f08' }}>B</GridItem>
+      <GridItem style={{ background: '#0ff8' }}>C</GridItem>
       <Grid width={1} templateColumns='1fr 1fr 1fr' placeItems='center' gap={2}>
-        <GridItem bg='#f008'>D</GridItem>
-        <GridItem bg='#f0f8'>E</GridItem>
-        <GridItem bg='#ff08'>F</GridItem>
+        <GridItem style={{ background: '#f008' }}>D</GridItem>
+        <GridItem style={{ background: '#f0f8' }}>E</GridItem>
+        <GridItem style={{ background: '#ff08' }}>F</GridItem>
       </Grid>
     </Grid>
   ),
@@ -84,12 +88,12 @@ export const ResponsiveLayout: GridStory = {
       placeItems='center'
       gap={2}
     >
-      <GridItem bg='#00f8'>A</GridItem>
-      <GridItem bg='#0f08'>B</GridItem>
-      <GridItem bg='#0ff8'>C</GridItem>
-      <GridItem bg='#f008'>D</GridItem>
-      <GridItem bg='#f0f8'>E</GridItem>
-      <GridItem bg='#ff08'>F</GridItem>
+      <GridItem style={{ background: '#00f8' }}>A</GridItem>
+      <GridItem style={{ background: '#0f08' }}>B</GridItem>
+      <GridItem style={{ background: '#0ff8' }}>C</GridItem>
+      <GridItem style={{ background: '#f008' }}>D</GridItem>
+      <GridItem style={{ background: '#f0f8' }}>E</GridItem>
+      <GridItem style={{ background: '#ff08' }}>F</GridItem>
     </Grid>
   ),
 }

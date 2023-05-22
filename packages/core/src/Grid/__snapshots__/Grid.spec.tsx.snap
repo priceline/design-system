@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders correctly with default props 1`] = `
+.c0 {
+  display: grid;
+}
+
+<div
+  class="c0"
+/>
+`;

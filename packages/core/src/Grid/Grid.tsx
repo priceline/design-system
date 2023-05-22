@@ -5,8 +5,8 @@ import {
   BackgroundProps,
   border,
   BorderProps,
-  color,
-  ColorProps,
+  // color,
+  // ColorProps,
   compose,
   flexbox,
   FlexboxProps,
@@ -25,31 +25,31 @@ import {
   TypographyProps,
 } from 'styled-system'
 
-// TODO: Move this to a shared location, possibly apply to Box and Flex as well
 export interface IStyledSystemProps
   extends BackgroundProps,
     BorderProps,
-    ColorProps,
+    // ColorProps,
     FlexboxProps,
     GridProps,
     LayoutProps,
     PositionProps,
     ShadowProps,
     SpaceProps,
-    TypographyProps {}
+    TypographyProps {
+  style?: React.CSSProperties
+}
 
-// TODO: Move this to a shared location, possibly apply to Box and Flex as well
 const ComposedStyleFns = compose(
-  color,
-  grid,
-  layout,
-  space,
-  typography,
-  flexbox,
   background,
   border,
+  // color,
+  flexbox,
+  grid,
+  layout,
   position,
-  shadow
+  shadow,
+  space,
+  typography
 )
 
 export interface IGridProps extends IStyledSystemProps {
