@@ -23,7 +23,7 @@ const responsive = {
   value: ['sm', 'sm', 'sm', 'md'],
 }
 
-const getExamples = (exampleProps, sizes) => (
+const getExamples = (exampleProps, sizes, width = '') => (
   <Box>
     {sizes.map((size) => (
       <Box m={3} key={size.title}>
@@ -33,6 +33,7 @@ const getExamples = (exampleProps, sizes) => (
             <ButtonChip
               key={`chip${size.title}${i}`}
               id={`chip${size.title}${i}`}
+              width={width}
               m={1}
               size={size.value}
               {...props}
@@ -52,6 +53,10 @@ const labelOnly = [
   { label: 'Active', expanded: true, showActionIcon: true, disabled: true },
 ]
 export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive])
+
+//Label With Width
+const labelWithWidth = [{ label: 'Enabled' }, { label: 'Active', expanded: true }]
+export const LabelWithWidth = () => getExamples(labelWithWidth, [small, medium, responsive], '45%')
 
 //With Icon
 const withIcon = [

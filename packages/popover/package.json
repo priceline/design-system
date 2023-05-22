@@ -1,6 +1,6 @@
 {
   "name": "pcln-popover",
-  "version": "5.2.3",
+  "version": "5.2.4",
   "description": "React component for popover",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
