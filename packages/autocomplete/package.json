@@ -24,9 +24,9 @@
     "test:snapshots": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
-    "downshift": "^3.2.6",
+    "downshift": "^7.6.0",
     "prop-types": "^15.8.1",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
