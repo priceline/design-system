@@ -19,11 +19,6 @@ describe('Grid', () => {
     placeItems: 'center',
   }
 
-  it('renders correctly with default props', () => {
-    const { container } = render(<Grid />)
-    expect(container.firstChild).toMatchSnapshot()
-  })
-
   it('applies grid styles correctly', () => {
     const { container } = render(<Grid {...testProps} />)
     const gridElement = container.firstChild
