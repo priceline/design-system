@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.9.0",
+      "tag": "pcln-design-system_v5.9.0",
+      "date": "Mon, 22 May 2023 13:19:55 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add optional width Prop to Button Chip",
+            "author": "anjorinio <108364855+anjorinio@users.noreply.github.com>",
+            "commit": "015e2754a095364f799a9e8109ebc2323b5154c8"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "pass props to ChipButton outline so it can have color",
+            "author": "Pablo Herrera <67336461+pherrera167@users.noreply.github.com>",
+            "commit": "f7e9f9213f453f003e7276363ca0e7e1e241b2a4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.8.4",
       "tag": "pcln-design-system_v5.8.4",
       "date": "Tue, 02 May 2023 14:18:09 GMT",

@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 02 May 2023 14:18:09 GMT and should not be manually modified.
+This log was last generated on Mon, 22 May 2023 13:19:55 GMT and should not be manually modified.
+
+## 5.9.0
+Mon, 22 May 2023 13:19:55 GMT
+
+### Minor changes
+
+- Add optional width Prop to Button Chip
+
+### Patches
+
+- pass props to ChipButton outline so it can have color
 
 ## 5.8.4
 Tue, 02 May 2023 14:18:09 GMT
