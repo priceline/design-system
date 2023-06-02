@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "fractional coverage regression after transpile config change",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
