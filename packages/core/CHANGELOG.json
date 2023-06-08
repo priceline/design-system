@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.10.0",
+      "tag": "pcln-design-system_v5.10.0",
+      "date": "Thu, 08 Jun 2023 15:26:05 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add Grid component",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "ba327c4bd75fe3b35e76cea11beb5e93fa5c8fc1"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "fractional coverage regression after transpile config change",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "2958ca59160cd9b5cd275c343fd208700f539972"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.9.0",
       "tag": "pcln-design-system_v5.9.0",
       "date": "Mon, 22 May 2023 13:19:55 GMT",

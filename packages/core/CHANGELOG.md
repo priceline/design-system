@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 22 May 2023 13:19:55 GMT and should not be manually modified.
+This log was last generated on Thu, 08 Jun 2023 15:26:05 GMT and should not be manually modified.
+
+## 5.10.0
+Thu, 08 Jun 2023 15:26:05 GMT
+
+### Minor changes
+
+- Add Grid component
+
+### Patches
+
+- fractional coverage regression after transpile config change
 
 ## 5.9.0
 Mon, 22 May 2023 13:19:55 GMT
