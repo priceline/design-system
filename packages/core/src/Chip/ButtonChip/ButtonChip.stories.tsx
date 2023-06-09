@@ -50,7 +50,8 @@ const labelOnly = [
   { label: 'Enabled' },
   { label: 'Active', expanded: true },
   { label: 'Active', expanded: true, showActionIcon: true },
-  { label: 'Active', expanded: true, showActionIcon: true, disabled: true },
+  { label: 'Disabled', disabled: true },
+  { label: 'Active and Disabled', expanded: true, disabled: true },
 ]
 export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive])
 
@@ -64,7 +65,13 @@ const withIcon = [
   { label: 'Active', expanded: true, Icon: Departure },
   { label: 'Active', expanded: true, showActionIcon: true, Icon: Departure },
   {
-    label: 'Active',
+    label: 'Disabled',
+    disabled: true,
+    showActionIcon: true,
+    Icon: Departure,
+  },
+  {
+    label: 'Active and Disabled',
     expanded: true,
     showActionIcon: true,
     disabled: true,
@@ -79,7 +86,13 @@ const withFacet = [
   { label: 'Active', facet: '(00)', expanded: true },
   { label: 'Active', facet: '(00)', expanded: true, showActionIcon: true },
   {
-    label: 'Active',
+    label: 'Disabled',
+    facet: '(00)',
+    showActionIcon: true,
+    disabled: true,
+  },
+  {
+    label: 'Active and Disabled',
     facet: '(00)',
     expanded: true,
     showActionIcon: true,
@@ -100,7 +113,14 @@ const withFacetAndIcon = [
     showActionIcon: true,
   },
   {
-    label: 'Active',
+    label: 'Disabled',
+    facet: '(00)',
+    Icon: Departure,
+    showActionIcon: true,
+    disabled: true,
+  },
+  {
+    label: 'Active and Disabled',
     facet: '(00)',
     Icon: Departure,
     expanded: true,
@@ -115,6 +135,12 @@ const iconOnly = [
   { Icon: Departure, title: 'Departure' },
   { Icon: Departure, title: 'Departure' },
   { expanded: true, showActionIcon: true, Icon: Departure, title: 'Departure' },
+  {
+    showActionIcon: true,
+    disabled: true,
+    Icon: Departure,
+    title: 'Departure',
+  },
   {
     expanded: true,
     showActionIcon: true,
@@ -131,7 +157,13 @@ const withImage = [
   { label: 'Active', expanded: true, image: image },
   { label: 'Active', expanded: true, showActionIcon: true, image: image },
   {
-    label: 'Active',
+    label: 'Disabled',
+    showActionIcon: true,
+    disabled: true,
+    image: image,
+  },
+  {
+    label: 'Active and Disabled',
     expanded: true,
     showActionIcon: true,
     disabled: true,
@@ -153,7 +185,14 @@ const withImageAndBridgeLabel = [
     BridgeIcon: Broom,
   },
   {
-    label: 'Active',
+    label: 'Disabled',
+    showActionIcon: true,
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+  },
+  {
+    label: 'Active and Disabled',
     expanded: true,
     showActionIcon: true,
     disabled: true,
@@ -168,6 +207,7 @@ const imageOnly = [
   { image: image },
   { expanded: true, image: image },
   { expanded: true, showActionIcon: true, image: image },
+  { showActionIcon: true, disabled: true, image: image },
   { expanded: true, showActionIcon: true, disabled: true, image: image },
 ]
 export const ImageOnly = () => getExamples(imageOnly, [medium])
@@ -202,6 +242,26 @@ export const CustomChip = () => (
         </Text>
         <Text textAlign='center' regular fontSize={0}>
           <Text.span color='green'>$130</Text.span> avg. per night
+        </Text>
+      </Box>
+    </ButtonChip>
+    <ButtonChip id='customChip3' m={1} disabled>
+      <Box px={3} py={1}>
+        <Text textAlign='center' bold fontSize={1}>
+          Express Deals
+        </Text>
+        <Text textAlign='center' regular fontSize={0}>
+          <Text.span color='green'>$130</Text.span> avg. per night
+        </Text>
+      </Box>
+    </ButtonChip>
+    <ButtonChip id='customChip2' expanded disabled m={1}>
+      <Box px={3} py={1}>
+        <Text textAlign='center' bold fontSize={1}>
+          Pricebreakers
+        </Text>
+        <Text textAlign='center' regular fontSize={0}>
+          Save up to 60%
         </Text>
       </Box>
     </ButtonChip>

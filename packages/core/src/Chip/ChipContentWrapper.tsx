@@ -23,13 +23,13 @@ const getSizes = ({ hasChildren }) => ({
 
 const getColor = ({ disabled }) => (disabled ? 'text.light' : 'base')
 
-const getCursor = ({ disabled }) => (disabled ? 'default' : 'pointer')
+const getCursor = ({ disabled }) => (disabled ? 'not-allowed' : 'pointer')
 
 const getBorderColor = (props) =>
   props.disabled ? 'transparent' : getPaletteColor(props.selected ? 'base' : 'border.base')(props)
 
 const getBackgroundColor = (props) =>
-  props.disabled ? 'background.light' : props.selected ? 'light' : 'background.lightest'
+  props.disabled ? 'background.base' : props.selected ? 'light' : 'background.lightest'
 
 interface IChipContentWrapper extends IBoxProps {
   disabled: boolean
@@ -45,26 +45,28 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
     border: 1px solid ${getBorderColor(props)};
     ${
       props.disabled
-        ? ''
+        ? ``
         : `
-      &:hover {
-        border: 1px solid ${getPaletteColor('base')(props)};
-        background-color: ${getPaletteColor('background.lightest')(props)};
-      }
-    `
+          &:hover {
+            border: 1px solid ${getPaletteColor('base')(props)};
+            background-color: ${getPaletteColor('background.lightest')(props)};
+          }
+          `
     }
 
     ${
-      props.selected
+      props.selected && !props.disabled
         ? `
-      &:hover {
-        color: ${getPaletteColor('tone')(props)};
-        border: 1px solid ${getPaletteColor('tone')(props)};
-        background-color: ${getPaletteColor('light')(props)};
-      }
-    `
+          &:hover {
+            color: ${getPaletteColor('tone')(props)};
+            border: 1px solid ${getPaletteColor('tone')(props)};
+            background-color: ${getPaletteColor('light')(props)};
+          }
+          `
         : ''
     }
+
+    ${props.disabled && props.selected ? `border: 1px solid ${getPaletteColor('text.light')(props)};` : ''}
   `}
   width: 100%;
   max-width: 100%;

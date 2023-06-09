@@ -51,7 +51,8 @@ const labelOnly = [
   { label: 'Enabled' },
   { label: 'Active', selected: true },
   { label: 'Active', selected: true, showActionIcon: true },
-  { label: 'Active', selected: true, showActionIcon: true, disabled: true },
+  { label: 'Disabled', disabled: true, showActionIcon: true },
+  { label: 'Active and Disabled', selected: true, showActionIcon: true, disabled: true },
 ]
 export const LabelOnly = () => getExamples(labelOnly, [small, medium, responsive])
 
@@ -61,7 +62,13 @@ const withIcon = [
   { label: 'Active', selected: true, Icon: Departure },
   { label: 'Active', selected: true, showActionIcon: true, Icon: Departure },
   {
-    label: 'Active',
+    label: 'Disabled',
+    showActionIcon: true,
+    disabled: true,
+    Icon: Departure,
+  },
+  {
+    label: 'Active and Disabled',
     selected: true,
     showActionIcon: true,
     disabled: true,
@@ -76,7 +83,13 @@ const withFacet = [
   { label: 'Active', facet: '(00)', selected: true },
   { label: 'Active', facet: '(00)', selected: true, showActionIcon: true },
   {
-    label: 'Active',
+    label: 'Disabled',
+    facet: '(00)',
+    showActionIcon: true,
+    disabled: true,
+  },
+  {
+    label: 'Active and Disabled',
     facet: '(00)',
     selected: true,
     showActionIcon: true,
@@ -97,7 +110,14 @@ const withFacetAndIcon = [
     showActionIcon: true,
   },
   {
-    label: 'Active',
+    label: 'Disabled',
+    facet: '(00)',
+    Icon: Departure,
+    showActionIcon: true,
+    disabled: true,
+  },
+  {
+    label: 'Active and Disabled',
     facet: '(00)',
     Icon: Departure,
     selected: true,
@@ -112,6 +132,12 @@ const iconOnly = [
   { Icon: Departure, title: 'Departure' },
   { Icon: Departure, title: 'Departure' },
   { selected: true, showActionIcon: true, Icon: Departure, title: 'Departure' },
+  {
+    showActionIcon: true,
+    disabled: true,
+    Icon: Departure,
+    title: 'Departure',
+  },
   {
     selected: true,
     showActionIcon: true,
@@ -128,7 +154,13 @@ const withImage = [
   { label: 'Active', selected: true, image: image },
   { label: 'Active', selected: true, showActionIcon: true, image: image },
   {
-    label: 'Active',
+    label: 'Disabled',
+    showActionIcon: true,
+    disabled: true,
+    image: image,
+  },
+  {
+    label: 'Active and Disabled',
     selected: true,
     showActionIcon: true,
     disabled: true,
@@ -149,7 +181,14 @@ const withImageAndBridgeLabel = [
     bridgeLabel: 'Bridge',
   },
   {
-    label: 'Active',
+    label: 'Disabled',
+    showActionIcon: true,
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+  },
+  {
+    label: 'Active and Disabled',
     selected: true,
     showActionIcon: true,
     disabled: true,
@@ -164,6 +203,7 @@ const imageOnly = [
   { image: image },
   { selected: true, image: image },
   { selected: true, showActionIcon: true, image: image },
+  { showActionIcon: true, disabled: true, image: image },
   { selected: true, showActionIcon: true, disabled: true, image: image },
 ]
 export const ImageOnly = () => getExamples(imageOnly, [medium])
@@ -192,6 +232,26 @@ export const CustomChip = () => (
       </Box>
     </FilterChip>
     <FilterChip id='customChip3' name='customFilterChipName3' m={1}>
+      <Box px={3} py={1}>
+        <Text textAlign='center' bold fontSize={1}>
+          Express Deals
+        </Text>
+        <Text textAlign='center' regular fontSize={0}>
+          <Text.span color='green'>$130</Text.span> avg. per night
+        </Text>
+      </Box>
+    </FilterChip>
+    <FilterChip id='customChip4' name='customFilterChipName3' m={1} disabled>
+      <Box px={3} py={1}>
+        <Text textAlign='center' bold fontSize={1}>
+          Express Deals
+        </Text>
+        <Text textAlign='center' regular fontSize={0}>
+          <Text.span color='green'>$130</Text.span> avg. per night
+        </Text>
+      </Box>
+    </FilterChip>
+    <FilterChip id='customChip5' name='customFilterChipName3' m={1} disabled selected>
       <Box px={3} py={1}>
         <Text textAlign='center' bold fontSize={1}>
           Express Deals

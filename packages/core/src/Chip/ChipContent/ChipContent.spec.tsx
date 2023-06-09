@@ -59,7 +59,7 @@ describe('ChipContent', () => {
   test('disabled, md', () => {
     const { getByTestId } = render(<ChipContent {...{ ...props, disabled: true, size: 'md' }} />)
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('border', '1px solid transparent')
-    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('cursor', 'default')
+    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('cursor', 'not-allowed')
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('padding-left', '16px')
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('height', '40px')
   })
@@ -69,5 +69,11 @@ describe('ChipContent', () => {
 
     //Child element
     expect(getByText('HELLO'))
+  })
+
+  test('disabled and selected', () => {
+    const { getByTestId } = render(<ChipContent {...{ ...props, disabled: true, selected: true }} />)
+    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('border', '1px solid #4f6f8f')
+    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('cursor', 'not-allowed')
   })
 })
