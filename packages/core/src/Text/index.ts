@@ -1,1 +1,3 @@
-export { default as Text, ITextProps } from './Text'
+export type { ITextProps } from './Text'
+
+export { default as Text } from './Text'

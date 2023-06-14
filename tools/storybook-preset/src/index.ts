@@ -21,7 +21,7 @@ export const features = {
 }
 
 /** @public */
-export const framework = '@storybook/react-webpack5'
+export const framework = '@storybook/react-vite'
 
 export * from './decorators'
 export { parameters } from './parameters'

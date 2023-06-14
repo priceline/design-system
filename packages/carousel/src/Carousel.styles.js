@@ -151,5 +151,4 @@ export const CarouselWrapper = styled.div`
     left: 0;
     background-color: #f4f4f4;
   }
-  /*# sourceMappingURL=react-carousel.es.css.map */
 `

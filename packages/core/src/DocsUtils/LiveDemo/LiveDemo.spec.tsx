@@ -2,7 +2,7 @@ import type { StoryFn, StoryObj } from '@storybook/react'
 
 import React from 'react'
 
-import { LiveDemo } from '..'
+import { LiveDemo } from './LiveDemo'
 import { act, fireEvent, render, screen, sleep } from '../../__test__/testing-library'
 
 window.scrollTo = jest.fn()

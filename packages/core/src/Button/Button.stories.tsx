@@ -1,24 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import type { Meta, StoryObj } from '@storybook/react'
-import type { Sizes } from './Button'
+import type { IButtonProps, Sizes } from './Button'
 
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
 import React from 'react'
 
-import {
-  Box,
-  Button,
-  ButtonChip,
-  CloseButton,
-  Flex,
-  IButtonProps,
-  Image,
-  Link,
-  Text,
-  ThemeProvider,
-} from '..'
+import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
 import {
   DocTable,
   DoDont,

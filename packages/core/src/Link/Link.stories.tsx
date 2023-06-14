@@ -1,7 +1,9 @@
+import type { IButtonProps } from '../Button'
+
 import React from 'react'
 import styled from 'styled-components'
 import { StoryObj } from '@storybook/react'
-import { Box, Button, getLinkStylesOn, IButtonProps, Layout, Link, Text } from '..'
+import { Box, Button, getLinkStylesOn, Layout, Link, Text } from '..'
 import { ILinkProps } from './Link'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'

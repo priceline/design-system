@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import ProgressBar from './ProgressBar'
+import { ProgressBar } from './ProgressBar'
 
 const testProps = [{ color: 'warning' }, { color: 'caution' }, { color: 'primary' }, { color: 'success' }]
 

@@ -199,4 +199,4 @@ Layout.defaultProps = {
 
 Layout.displayName = 'Layout'
 
-export default Layout
+export { Layout }

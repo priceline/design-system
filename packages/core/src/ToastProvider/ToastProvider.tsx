@@ -1,10 +1,12 @@
+import type { IToastProps } from '../Toast'
+
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import styled, { withTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
 import { Animate, MotionVariant } from '../Animate'
 import { Flex } from '../Flex'
-import { Toast, IToastProps } from '../Toast'
+import { Toast } from '../Toast'
 import { ThemeProvider } from '../ThemeProvider'
 
 interface IToastOptions extends IToastProps {

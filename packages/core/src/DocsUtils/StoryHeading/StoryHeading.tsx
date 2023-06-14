@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Text } from '../..'
+import { Text } from '../../Text'
 import { getStoryId } from '../utils'
 
 export type StoryHeadingProps = {

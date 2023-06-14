@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import type { Meta, StoryObj } from '@priceline/storybook-preset'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
@@ -100,7 +100,7 @@ Playground.play = async ({ canvasElement }) => {
   await expect(playgroundContent).toBeTruthy()
 }
 
-export const AnimatedListings: Story = () => {
+export const AnimatedListings = () => {
   const [isRendered, setIsRendered] = useState(true)
 
   const rerender = () => {
@@ -133,7 +133,7 @@ export const AnimatedListings: Story = () => {
   )
 }
 
-export const ComposedAnimations: Story = () => {
+export const ComposedAnimations = () => {
   const [isRendered, setIsRendered] = useState(true)
 
   const rerender = () => {

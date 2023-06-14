@@ -33,6 +33,7 @@
     "@babel/core": "^7.16.7",
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
+    "@priceline/storybook-preset": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",

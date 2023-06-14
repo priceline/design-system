@@ -1,1 +1,3 @@
-export { default as Flex, IFlexProps } from './Flex'
+export type { IFlexProps } from './Flex'
+
+export { default as Flex } from './Flex'

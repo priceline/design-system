@@ -1,7 +1,12 @@
-const deepmerge = require('deepmerge')
+import type { DesignSystemTheme } from '../theme/theme'
+
+import deepmerge from 'deepmerge'
 
 import { theme as defaultTheme } from '../theme/theme'
-import { createTextStyles, createColorStyles, createMediaQueries, createPalette } from '.'
+import { createTextStyles } from './createTextStyles'
+import { createColorStyles } from './createColorStyles'
+import { createMediaQueries } from './createMediaQueries'
+import { createPalette } from './createPalette'
 
 /**
  * Adds aliases to an array of keys
@@ -24,8 +29,12 @@ const addAliases = (arr) => {
  *
  * @returns The generated theme
  */
-const createTheme = (theme = {}, customBreakpoints = null, existingTheme = defaultTheme) => {
-  const finalMergedTheme = deepmerge(existingTheme, theme)
+export const createTheme = (
+  theme = {},
+  customBreakpoints = null,
+  existingTheme = defaultTheme
+): DesignSystemTheme => {
+  const finalMergedTheme: DesignSystemTheme = deepmerge(existingTheme, theme)
   const mediaQueries = customBreakpoints
     ? createMediaQueries(customBreakpoints)
     : finalMergedTheme.mediaQueries
@@ -40,5 +49,3 @@ const createTheme = (theme = {}, customBreakpoints = null, existingTheme = defau
     textStyles: createTextStyles(finalMergedTheme),
   }
 }
-
-export { createTheme }

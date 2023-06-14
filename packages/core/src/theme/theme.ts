@@ -399,3 +399,88 @@ const theme = {
 }
 
 export { theme }
+
+/** @public */
+export type TextStyle = {
+  fontWeight: number
+  fontSize: string
+  lineHeight: string
+}
+/** @public */
+export type PaletteFamily = {
+  lightest?: string
+  light?: string
+  tint?: string
+  base: string
+  heading?: string
+  tone?: string
+  dark?: string
+  shade?: string
+  darkest?: string
+}
+/** @public */
+export type PaletteFamilies = {
+  primary: PaletteFamily
+  secondary: PaletteFamily
+  text: PaletteFamily
+  highlight: PaletteFamily
+  success: PaletteFamily
+  error: PaletteFamily
+  warning: PaletteFamily
+  alert: PaletteFamily
+  caution: PaletteFamily
+  notify: PaletteFamily
+  pricePrimary: PaletteFamily
+  priceSecondary: PaletteFamily
+  strike: PaletteFamily
+  promoPrimary: PaletteFamily
+  promoSecondary: PaletteFamily
+  border: PaletteFamily
+  background: PaletteFamily
+}
+
+/** @public */
+export type ColorStyle = {
+  color: string
+  backgroundColor: string
+}
+
+/** @public */
+export type ColorStyles = {
+  whiteOnText: ColorStyle
+  whiteOnGray: ColorStyle
+  textOnLightGray: ColorStyle
+  whiteOnBlue: ColorStyle
+  blueOnLightBlue: ColorStyle
+  whiteOnGreen: ColorStyle
+  greenOnLightGreen: ColorStyle
+  whiteOnRed: ColorStyle
+  redOnLightRed: ColorStyle
+  textOnOrange: ColorStyle
+  whiteOnPurple: ColorStyle
+  purpleOnLightPurple: ColorStyle
+  textOnWhite: ColorStyle
+  grayOnWhite: ColorStyle
+  blueOnWhite: ColorStyle
+  greenOnWhite: ColorStyle
+  redOnWhite: ColorStyle
+  purpleOnWhite: ColorStyle
+  whiteOnDarkOrange: ColorStyle
+  info: ColorStyle
+  success: ColorStyle
+  warning: ColorStyle
+  danger: ColorStyle
+}
+
+/** @public */
+export type DesignSystemTheme = {
+  space: string[]
+  colors: Record<string, string>
+  componentStyles: Record<string, Record<string, Record<string, Record<string, unknown>>>>
+  mediaQueries: string[]
+  breakpoints: string[]
+  palette: PaletteFamilies
+  colorStyles: ColorStyles
+  textStyles: TextStyle[]
+  contrastRatio: number
+}

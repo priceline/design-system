@@ -47,6 +47,7 @@ export default ${componentName}`
 
 module.exports = {
   template,
+  ext: 'jsx',
   jsx: {
     babelConfig: {
       plugins: [replaceSvgPlugin, dynamicTitlePlugin],

@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-webpack5'
+import type { StorybookConfig } from '@storybook/react-vite'
 
 import { storykitAddons, framework } from '@priceline/storybook-preset'
 
@@ -23,7 +23,6 @@ const config: StorybookConfig = {
   },
   typescript: {
     check: false,
-    checkOptions: {},
   },
 }
 
