@@ -1,15 +1,20 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
+import type { Meta, StoryObj } from '@priceline/storybook-preset'
+
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
 import { Box, Button, ChoiceChip, Flex, Image, Text } from '..'
 
-export default {
+const meta: Meta<typeof Animate> = {
   component: Animate,
 }
 
-export const Playground = () => {
+export default meta
+type Story = StoryObj<typeof Animate>
+
+export const Playground: Story = () => {
   const [motion, setMotion] = useState<MotionVariant>('expandDown')
   const [transition, setTransition] = useState<TransitionVariant>('default')
   const [isRendered, setIsRendered] = useState(true)
@@ -95,7 +100,7 @@ Playground.play = async ({ canvasElement }) => {
   await expect(playgroundContent).toBeTruthy()
 }
 
-export const AnimatedListings = () => {
+export const AnimatedListings: Story = () => {
   const [isRendered, setIsRendered] = useState(true)
 
   const rerender = () => {
@@ -128,7 +133,7 @@ export const AnimatedListings = () => {
   )
 }
 
-export const ComposedAnimations = () => {
+export const ComposedAnimations: Story = () => {
   const [isRendered, setIsRendered] = useState(true)
 
   const rerender = () => {

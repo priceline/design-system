@@ -49,14 +49,15 @@
     "pcln-icons": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.11",
     "us": "^2.0.0"
   },
   "peerDependencies": {
     "pcln-design-system": "^5.10.0",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
-    "styled-components": ">=5 <5.3.4"
+    "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6"
   }
 }

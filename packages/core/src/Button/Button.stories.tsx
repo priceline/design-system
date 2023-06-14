@@ -1,26 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import type { Meta, StoryObj } from '@storybook/react'
 import type { Sizes } from './Button'
 
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
-import { Meta, StoryObj } from '@storybook/react'
-
-import { Calendar, Check, Search, User, ChevronLeft, ChevronRight } from 'pcln-icons'
-
-import {
-  DocTable,
-  DoDont,
-  Hero,
-  LiveDemo,
-  Note,
-  RelatedComponent,
-  RelatedComponentContainer,
-  Section,
-  StoryHeading,
-  StoryStage,
-  TableOfContents,
-} from 'pcln-docs-utils'
+import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
 import React from 'react'
+
 import {
   Box,
   Button,
@@ -33,6 +19,19 @@ import {
   Text,
   ThemeProvider,
 } from '..'
+import {
+  DocTable,
+  DoDont,
+  Hero,
+  // LiveDemo,
+  Note,
+  RelatedComponent,
+  RelatedComponentContainer,
+  Section,
+  StoryHeading,
+  StoryStage,
+  TableOfContents,
+} from '../DocsUtils'
 import { colors, shadows } from '../storybook/args'
 
 import alignmentImage from './Button.Image.Alignment.png'
@@ -192,6 +191,12 @@ const meta: Meta<typeof Button> = {
   title: 'Actions/Button',
   component: Button,
   parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
+    },
+
     docs: {
       page: () => (
         <ThemeProvider>
@@ -260,7 +265,7 @@ const meta: Meta<typeof Button> = {
                 },
               ]}
             />
-            <LiveDemo code={Size} />
+            {/* <LiveDemo code={Size} /> */}
 
             <StoryHeading storyName='Primary Variations' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
@@ -285,7 +290,7 @@ const meta: Meta<typeof Button> = {
                 },
               ]}
             />
-            <LiveDemo code={PrimaryVariations} />
+            {/* <LiveDemo code={PrimaryVariations} /> */}
 
             <StoryHeading storyName='Tonal Variations' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
@@ -310,21 +315,21 @@ const meta: Meta<typeof Button> = {
                 },
               ]}
             />
-            <LiveDemo code={TonalVariations} />
+            {/* <LiveDemo code={TonalVariations} /> */}
 
             <StoryHeading storyName='Text Buttons' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Text buttons have less visual prominence, so should be used for secondary actions or low
               emphasis actions. Used when aligning with 16px, 14px, and 12px body copy.
             </Text>
-            <LiveDemo code={TextButtons} />
+            {/* <LiveDemo code={TextButtons} /> */}
 
             <StoryHeading storyName='Additional Variations' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Although rarely used on Priceline, we understand these are popular variations used in interface
               design.
             </Text>
-            <LiveDemo code={AdditionalVariations} />
+            {/* <LiveDemo code={AdditionalVariations} /> */}
           </Section>
 
           <Section heading='States'>
@@ -342,7 +347,7 @@ const meta: Meta<typeof Button> = {
               some kind of task needs to be completed by them before they can proceed. Components can inherit
               a disabled state, such as form fields, list items, cards, chips, and buttons.
             </Text>
-            <LiveDemo code={Disabled} />
+            {/* <LiveDemo code={Disabled} /> */}
             <Note>
               Not all users know that an interactive design element can have disabled state. If you show an
               element but don&apos;t allow people to interact with it, they then have to interpret why they
@@ -358,7 +363,7 @@ const meta: Meta<typeof Button> = {
               colors based on how they are used. Each and every semantic color points to a color from the
               palette.
             </Text>
-            <LiveDemo code={SemanticStyles} />
+            {/* <LiveDemo code={SemanticStyles} /> */}
           </Section>
 
           <Section heading='Usage'>

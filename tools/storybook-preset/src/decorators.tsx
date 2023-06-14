@@ -1,8 +1,9 @@
+import type { DecoratorFunction } from '@storybook/addon-actions'
+
 import React from 'react'
 import { ThemeProvider } from 'pcln-design-system'
 import { withPerformance } from 'storybook-addon-performance'
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const ThemeProviderDecorator = (Story) => (
   <ThemeProvider>
     <Story />
@@ -10,4 +11,4 @@ const ThemeProviderDecorator = (Story) => (
 )
 
 /** @public */
-export const decorators = [ThemeProviderDecorator, withPerformance]
+export const decorators: DecoratorFunction[] = [ThemeProviderDecorator, withPerformance]

@@ -5,7 +5,7 @@ import { Flex, Box, Text, Image, Heading, getPaletteColor } from '..'
 import { Hotels as HotelsIcon } from 'pcln-icons'
 
 export default {
-  title: 'Layout Examples',
+  title: 'Layout/Layout Examples',
 }
 
 export const Grid = () => (

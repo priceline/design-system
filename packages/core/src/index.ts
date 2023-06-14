@@ -81,6 +81,18 @@ export {
   borderRadiusAttrs,
 } from './utils'
 
+// DocsUtils
+export * from './DocsUtils/DocTable'
+export * from './DocsUtils/DoDont'
+export * from './DocsUtils/Hero'
+export * from './DocsUtils/LiveDemo'
+export * from './DocsUtils/Note'
+export * from './DocsUtils/RelatedComponent'
+export * from './DocsUtils/Section'
+export * from './DocsUtils/StoryHeading'
+export * from './DocsUtils/StoryStage'
+export * from './DocsUtils/TableOfContents'
+
 import * as storybookArgs from './storybook/args'
 export { storybookArgs }
 
