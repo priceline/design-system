@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade Storybook to v7",
+      "type": "minor",
+      "packageName": "pcln-icons"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "steven.dalonzo@priceline.com"
+}

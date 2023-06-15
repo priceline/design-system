@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Flex, Container, Box, Layout, Relative, Absolute } from '..'
 
 export default {
-  title: 'Layout',
+  title: 'Layout/Layout',
   component: Layout,
   argTypes: {
     children: {

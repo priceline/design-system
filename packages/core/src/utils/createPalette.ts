@@ -1,4 +1,4 @@
-const deepmerge = require('deepmerge')
+import deepmerge from 'deepmerge'
 
 export const paletteFamilies = [
   'primary',

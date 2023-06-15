@@ -51,4 +51,4 @@ ProgressBar.defaultProps = {
   stepHeight: '4px',
 }
 
-export default ProgressBar
+export { ProgressBar }

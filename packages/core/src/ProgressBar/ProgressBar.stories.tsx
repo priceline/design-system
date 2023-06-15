@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '../Box'
-import ProgressBar from './ProgressBar'
+import { ProgressBar } from './ProgressBar'
 
 export default {
   title: 'ProgressBar',

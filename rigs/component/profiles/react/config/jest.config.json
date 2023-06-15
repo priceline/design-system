@@ -25,6 +25,8 @@
     }
   },
 
+  "moduleFileExtensions": ["ts", "tsx", "cjs", "js", "jsx", "json", "node"],
+
   "silent": true,
   "verbose": true
 }

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade Storybook to v7",
+      "type": "minor",
+      "packageName": "pcln-modal"
+    }
+  ],
+  "packageName": "pcln-modal",
+  "email": "steven.dalonzo@priceline.com"
+}

@@ -254,14 +254,6 @@
 
   "projects": [
     {
-      "packageName": "pcln-docs-utils",
-      "projectFolder": "packages/docs-utils",
-      "reviewCategory": "packages",
-      "shouldPublish": true,
-      "cyclicDependencyProjects": ["pcln-design-system"]
-    },
-
-    {
       "packageName": "pcln-codemods",
       "projectFolder": "packages/codemods",
       "reviewCategory": "packages",
@@ -280,7 +272,7 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons", "pcln-docs-utils"]
+      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons"]
     },
     {
       "packageName": "pcln-autocomplete",

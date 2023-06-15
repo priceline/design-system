@@ -1,16 +1,17 @@
+import type { Meta, StoryObj } from '@storybook/react'
+
 import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
-import { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
+
+import { Box, Flex, Grid, IGridProps, Text, ThemeProvider } from '..'
 import {
   Hero,
-  LiveDemo,
   RelatedComponent,
   RelatedComponentContainer,
   Section,
   StoryHeading,
   TableOfContents,
-} from 'pcln-docs-utils'
-import React from 'react'
-import { Box, Flex, Grid, IGridProps, Text, ThemeProvider } from '..'
+} from '../DocsUtils'
 
 type GridStory = StoryObj<IGridProps>
 
@@ -133,20 +134,20 @@ const meta: Meta<typeof Grid> = {
               items. The <code>grid-area</code> property can be used to assign a name to a grid item, which
               can then be used as a value of the <code>grid-template-areas</code> property.
             </Text>
-            <LiveDemo code={TemplateAreas} />
+            {/* <LiveDemo code={TemplateAreas} /> */}
 
             <StoryHeading storyName='Nested Grids' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Grids can be nested inside other grids. This allows you to create more complex layouts.
             </Text>
-            <LiveDemo code={NestedGrids} />
+            {/* <LiveDemo code={NestedGrids} /> */}
 
             <StoryHeading storyName='Responsive Layout' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Grids can be responsive. You can define the number of columns for each breakpoint using the
               <code>templateColumns</code> prop.
             </Text>
-            <LiveDemo code={ResponsiveLayout} />
+            {/* <LiveDemo code={ResponsiveLayout} /> */}
           </Section>
 
           <Section heading='Related Components'>

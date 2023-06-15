@@ -22,6 +22,15 @@ module.exports = {
     '@rushstack/typedef-var': 0,
 
     'react/jsx-no-bind': 0,
+
+    // (Story) in decorators
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'parameter',
+        format: ['camelCase', 'PascalCase'],
+      },
+    ],
   },
   overrides: [
     { files: ['**/svg-build/**', '**/*.stories*'], rules: { '@typescript-eslint/naming-convention': 'off' } },
