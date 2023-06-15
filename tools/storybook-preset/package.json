@@ -86,7 +86,7 @@
   },
   "peerDependencies": {
     "pcln-design-system": "^5",
-    "pcln-icons": "^5.5.1",
+    "pcln-icons": "^5.6.0",
     "react": ">=16.12.0",
     "react-dom": ">=16.12.0"
   }

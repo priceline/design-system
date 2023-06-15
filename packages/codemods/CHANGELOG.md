@@ -1,6 +1,13 @@
 # Change Log - pcln-codemods
 
-This log was last generated on Thu, 08 Jun 2023 15:26:05 GMT and should not be manually modified.
+This log was last generated on Thu, 15 Jun 2023 18:56:18 GMT and should not be manually modified.
+
+## 2.2.0
+Thu, 15 Jun 2023 18:56:18 GMT
+
+### Minor changes
+
+- Upgrade Storybook to v7
 
 ## 2.1.8
 Thu, 08 Jun 2023 15:26:05 GMT

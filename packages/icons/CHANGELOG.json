@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.6.0",
+      "tag": "pcln-icons_v5.6.0",
+      "date": "Thu, 15 Jun 2023 18:56:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade Storybook to v7",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "50f7b4c4b5b20c0d0854979a8478d5d2d6faf26b"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.1",
       "tag": "pcln-icons_v5.5.1",
       "date": "Thu, 08 Jun 2023 15:26:05 GMT",
