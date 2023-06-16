@@ -88,7 +88,7 @@ export const Carousel = ({
         naturalSlideHeight={naturalSlideHeight}
         totalSlides={children.length}
         visibleSlides={layoutSize || responsiveVisibleSlides}
-        dragEnabled
+        dragEnabled={children.length <= (layoutSize || responsiveVisibleSlides) ? false : true}
         isIntrinsicHeight={isIntrinsicHeight}
         step={layoutSize || step}
         dragStep={layoutSize || step}
@@ -185,7 +185,8 @@ Carousel.propTypes = {
    * this will be overridden by the number of items in the layout.
    * Can also be sent as array to set responsive sizes:
    * [below 768px, below 1024px, above 1020px]
-   * E.g. `layout={'25-50-25'}` will result in 3 slides shown per page. */
+   * E.g. `layout={'25-50-25'}` will result in 3 slides shown per page.
+   * Note: decimal values are accepted too E.g. `[1,2.5,3.2]`*/
   visibleSlides: PropTypes.any,
   /** Show clickable navigation dots */
   showDots: PropTypes.bool,
