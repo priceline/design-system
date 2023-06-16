@@ -88,7 +88,7 @@ export const Carousel = ({
         naturalSlideHeight={naturalSlideHeight}
         totalSlides={children.length}
         visibleSlides={layoutSize || responsiveVisibleSlides}
-        dragEnabled={children.length <= (layoutSize || responsiveVisibleSlides) ? false : true}
+        dragEnabled={children.length > (layoutSize || responsiveVisibleSlides)}
         isIntrinsicHeight={isIntrinsicHeight}
         step={layoutSize || step}
         dragStep={layoutSize || step}
