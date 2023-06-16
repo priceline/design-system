@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "prevent carousel scroll if all slides shown",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
