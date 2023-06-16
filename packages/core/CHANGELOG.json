@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.11.1",
+      "tag": "pcln-design-system_v5.11.1",
+      "date": "Fri, 16 Jun 2023 17:36:22 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix dependency issues with react-element-to-jsx-string and @storybook/addon-links introduced by moving docs-utils to core",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "98dbd45b6f082f671420647b6ff0a2cfb6a0146a"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.11.0",
       "tag": "pcln-design-system_v5.11.0",
       "date": "Thu, 15 Jun 2023 18:56:18 GMT",

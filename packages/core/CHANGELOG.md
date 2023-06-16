@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 15 Jun 2023 18:56:18 GMT and should not be manually modified.
+This log was last generated on Fri, 16 Jun 2023 17:36:22 GMT and should not be manually modified.
+
+## 5.11.1
+Fri, 16 Jun 2023 17:36:22 GMT
+
+### Patches
+
+- Fix dependency issues with react-element-to-jsx-string and @storybook/addon-links introduced by moving docs-utils to core
 
 ## 5.11.0
 Thu, 15 Jun 2023 18:56:18 GMT
