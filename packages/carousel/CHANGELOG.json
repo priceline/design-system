@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.5.0",
+      "tag": "pcln-carousel_v2.5.0",
+      "date": "Tue, 20 Jun 2023 14:57:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "prevent carousel scroll if all slides shown",
+            "author": "Amanda Komsky <amanda.komsky@priceline.com>",
+            "commit": "2ae545d6fef49a837581fe366dcb0865135c00b7"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.4.1",
       "tag": "pcln-carousel_v2.4.1",
       "date": "Fri, 16 Jun 2023 17:36:22 GMT",
