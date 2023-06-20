@@ -17,6 +17,8 @@ function Popover({
   placement,
   onOpen,
   onClose,
+  onBeforeOpen,
+  onBeforeClose,
   ...props
 }) {
   const {
@@ -30,7 +32,16 @@ function Popover({
     getReferenceProps,
     handleClose,
     handleToggle,
-  } = usePopover({ openOnFocus, openOnHover, openOnMount, placement, onClose, onOpen })
+  } = usePopover({
+    openOnFocus,
+    openOnHover,
+    openOnMount,
+    placement,
+    onOpen,
+    onBeforeOpen,
+    onClose,
+    onBeforeClose,
+  })
 
   return (
     <>
@@ -87,6 +98,8 @@ Popover.propTypes = {
   display: PropTypes.string,
   toggleIsOpenOnClick: PropTypes.bool,
   stopPropagation: PropTypes.bool,
+  onBeforeOpen: PropTypes.func,
+  onBeforeClose: PropTypes.func,
 }
 
 Popover.defaultProps = {
