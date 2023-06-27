@@ -344,6 +344,7 @@ importers:
       lodash: ^4.17.21
       npm-run-all: ^4.1.5
       pcln-icons: workspace:*
+      prettier: ^2.8.8
       prop-types: ^15.8.1
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -402,6 +403,7 @@ importers:
       framer-motion: 6.5.1_sfoxds7t5ydpegc3knd667wn6m
       jest-styled-components: 7.1.1_styled-components@5.3.11
       npm-run-all: 4.1.5
+      prettier: 2.8.8
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-is: 17.0.2
