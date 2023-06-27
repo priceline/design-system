@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import type { IButtonProps, Sizes } from './Button'
 
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
+import { linkTo } from '@storybook/addon-links'
 import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
 import React from 'react'
 
@@ -516,13 +517,13 @@ const meta: Meta<typeof Button> = {
 
           <Section heading='Related Components'>
             <RelatedComponentContainer>
-              <RelatedComponent name='ButtonChip' linkTo='core-chip-ButtonChip'>
+              <RelatedComponent name='ButtonChip' onClick={linkTo('core-chip-ButtonChip')}>
                 <ButtonChip>Button Chip</ButtonChip>
               </RelatedComponent>
-              <RelatedComponent name='Link'>
+              <RelatedComponent name='Link' onClick={linkTo('Link')}>
                 <Link>Link</Link>
               </RelatedComponent>
-              <RelatedComponent name='CloseButton'>
+              <RelatedComponent name='CloseButton' onClick={linkTo('CloseButton')}>
                 <CloseButton />
               </RelatedComponent>
             </RelatedComponentContainer>
