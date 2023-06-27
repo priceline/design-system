@@ -128,7 +128,6 @@
     "typescript": "^5.1.3"
   },
   "peerDependencies": {
-    "@storybook/addon-links": "^7.0.0",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",

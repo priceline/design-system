@@ -6,11 +6,10 @@ import { fireEvent, render, screen } from '../../__test__/testing-library'
 describe('RelatedComponent', () => {
   const name = 'Component Name'
   const desc = 'Component description'
-  const linkToStory = 'path/to/story'
 
   it('renders component name and description', () => {
     render(
-      <RelatedComponent name={name} desc={desc} linkTo={linkToStory}>
+      <RelatedComponent name={name} desc={desc}>
         Test
       </RelatedComponent>
     )

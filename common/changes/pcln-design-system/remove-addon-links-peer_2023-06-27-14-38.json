@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "remove @storybook/addon-links as peer dep, and remove LiveDemo component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
