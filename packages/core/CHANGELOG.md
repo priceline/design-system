@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 16 Jun 2023 17:36:22 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+
+## 5.12.0
+Tue, 27 Jun 2023 15:50:08 GMT
+
+### Minor changes
+
+- remove @storybook/addon-links as peer dep, and remove LiveDemo component
+
+### Patches
+
+- change the image used in the Hero story
 
 ## 5.11.1
 Fri, 16 Jun 2023 17:36:22 GMT
