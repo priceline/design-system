@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import React from 'react'
 
+import { linkTo } from '@storybook/addon-links'
 import { Box, Flex, Grid, IGridProps, Text, ThemeProvider } from '..'
 import {
   Hero,
@@ -152,12 +153,12 @@ const meta: Meta<typeof Grid> = {
 
           <Section heading='Related Components'>
             <RelatedComponentContainer>
-              <RelatedComponent name='Box'>
+              <RelatedComponent name='Box' onClick={linkTo('Core/Box')}>
                 <Box width='75%' height='75%' bg='background.lightest'>
                   Box
                 </Box>
               </RelatedComponent>
-              <RelatedComponent name='Flex'>
+              <RelatedComponent name='Flex' onClick={linkTo('Flex')}>
                 <Flex
                   justifyContent='center'
                   alignItems='center'

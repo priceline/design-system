@@ -1,4 +1,3 @@
-import { linkTo as linkToStory } from '@storybook/addon-links'
 import React, { Children } from 'react'
 
 import { Box, Text, theme } from '../..'
@@ -6,12 +5,12 @@ import { Box, Text, theme } from '../..'
 export type RelatedComponentProps = {
   name: string
   desc?: string
-  linkTo?: string
+  onClick?: () => void
   children: React.ReactNode
 }
 
-export const RelatedComponent = ({ name, desc, children, linkTo }: RelatedComponentProps) => (
-  <Box onClick={linkToStory(linkTo ?? name)} style={{ cursor: 'pointer' }}>
+export const RelatedComponent = ({ name, desc, children, onClick }: RelatedComponentProps) => (
+  <Box onClick={onClick} style={{ cursor: 'pointer' }}>
     <Box
       bg='background.light'
       borderRadius='xl'

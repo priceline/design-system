@@ -1,6 +1,23 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Thu, 15 Jun 2023 18:56:18 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+
+## 2.5.1
+Tue, 27 Jun 2023 15:50:08 GMT
+
+_Version update only_
+
+## 2.5.0
+Tue, 20 Jun 2023 14:57:00 GMT
+
+### Minor changes
+
+- prevent carousel scroll if all slides shown
+
+## 2.4.1
+Fri, 16 Jun 2023 17:36:22 GMT
+
+_Version update only_
 
 ## 2.4.0
 Thu, 15 Jun 2023 18:56:18 GMT

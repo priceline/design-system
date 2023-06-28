@@ -369,6 +369,7 @@ importers:
       lodash: 4.17.21
       pcln-icons: link:../icons
       prop-types: 15.8.1
+      react-element-to-jsx-string: 15.0.0_sfoxds7t5ydpegc3knd667wn6m
       react-intersection-observer: 9.4.4_react@17.0.2
       styled-system: 5.1.5
     devDependencies:
@@ -405,7 +406,6 @@ importers:
       prettier: 2.8.8
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      react-element-to-jsx-string: 15.0.0_sfoxds7t5ydpegc3knd667wn6m
       react-is: 17.0.2
       react-live: 3.2.0_react@17.0.2
       react-test-renderer: 17.0.2_react@17.0.2
@@ -3543,7 +3543,6 @@ packages:
 
   /@base2/pretty-print-object/1.0.1:
     resolution: {integrity: sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==}
-    dev: true
 
   /@bcoe/v8-coverage/0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
@@ -12593,7 +12592,6 @@ packages:
   /is-plain-object/5.0.0:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /is-potential-custom-element-name/1.0.1:
     resolution: {integrity: sha512-bCYeRA2rVibKZd+s2625gGnGF/t7DSqDs4dP7CrLA1m7jKWz6pps0LpYLJN8Q64HtmPKJ1hrN3nzPNKFEKOUiQ==}
@@ -16915,7 +16913,6 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-is: 18.1.0
-    dev: true
 
   /react-error-boundary/3.1.4_react@17.0.2:
     resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
