@@ -28,7 +28,7 @@ function usePopover({
 
   const handleClose = (e) => {
     setOpen(false)
-    onBeforeClose?.()
+    onBeforeClose?.(e)
     onClose?.(e)
   }
 
@@ -41,10 +41,10 @@ function usePopover({
   const handleToggle = (e) => {
     setOpen((isOpen) => {
       if (isOpen) {
-        onBeforeClose?.()
+        onBeforeClose?.(e)
         onClose?.(e)
       } else {
-        onBeforeOpen?.()
+        onBeforeOpen?.(e)
         onOpen?.(e)
       }
       return !isOpen
