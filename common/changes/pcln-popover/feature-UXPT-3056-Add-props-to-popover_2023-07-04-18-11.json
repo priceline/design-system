@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Added onBeforeOpen and onBeforeClose Props",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
