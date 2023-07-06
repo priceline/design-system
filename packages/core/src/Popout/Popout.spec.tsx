@@ -13,7 +13,7 @@ describe('Popout', () => {
   })
 
   it('Handles opening and closing', async () => {
-    const handler = jest.fn()
+    const handler = vi.fn()
     const { getByTestId } = render(
       <Popout trigger={trigger} content={content} onOpen={handler} onClose={handler} />
     )
@@ -33,7 +33,7 @@ describe('Popout', () => {
   })
 
   it('Handles losing focus', async () => {
-    const handler = jest.fn()
+    const handler = vi.fn()
     const { getByTestId } = render(
       <>
         <input data-testid='outside' aria-label='outside' />
@@ -52,7 +52,7 @@ describe('Popout', () => {
   })
 
   it('Closes when the trigger ref is clicked', async () => {
-    const handler = jest.fn()
+    const handler = vi.fn()
     const triggerRef = React.createRef<HTMLElement>()
     const _trigger = React.cloneElement(trigger, { ref: triggerRef })
     const { getByTestId } = render(

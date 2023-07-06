@@ -272,7 +272,7 @@
       "packageName": "pcln-design-system",
       "projectFolder": "packages/core",
       "shouldPublish": true,
-      "cyclicDependencyProjects": ["@priceline/storybook-preset", "pcln-icons"]
+      "cyclicDependencyProjects": ["pcln-icons"]
     },
     {
       "packageName": "pcln-autocomplete",
@@ -343,8 +343,7 @@
     {
       "packageName": "@priceline/storybook-preset",
       "projectFolder": "tools/storybook-preset",
-      "shouldPublish": false,
-      "cyclicDependencyProjects": ["pcln-design-system"]
+      "shouldPublish": false
     },
 
     // Heft Rigs

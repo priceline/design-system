@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest'
+
 import { typographyAttrs, textStylesValues } from '.'
 import { createTheme } from '..'
 

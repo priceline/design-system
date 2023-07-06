@@ -4,7 +4,7 @@ import { render, fireEvent } from '../__test__/testing-library'
 import { Checkbox } from '..'
 
 describe('Checkbox', () => {
-  const onChange = jest.fn()
+  const onChange = vi.fn()
 
   test('renders without the theme passed specifically', () => {
     const { asFragment } = render(<Checkbox id='check-box' onChange={onChange} />)

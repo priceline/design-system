@@ -4,7 +4,7 @@ import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 import { Slide } from './Slide'
 
 const props = {
-  onSlideChange: jest.fn(),
+  onSlideChange: vi.fn(),
   stretchHeight: false,
   index: 0,
   slideSpacing: 2,
@@ -17,7 +17,7 @@ describe('Slide', () => {
     mockAllIsIntersecting(true)
     const slideBoxRef = {
       current: {
-        scroll: jest.fn(),
+        scroll: vi.fn(),
       },
     }
     const { getByText } = render(<Slide isCurrentSlide slideBoxRef={slideBoxRef} content='WOOP' {...props} />)

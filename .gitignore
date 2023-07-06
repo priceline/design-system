@@ -93,3 +93,6 @@ packages/icons/components/
 package-lock.json
 .npmrc
 RELEASE_NOTES.md
+
+# https://github.com/KusStar/vite-bundle-visualizer
+**/vite-bundle-visualizer/

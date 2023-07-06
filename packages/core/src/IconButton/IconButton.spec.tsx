@@ -6,7 +6,7 @@ import { Key as KeyIcon } from 'pcln-icons'
 
 describe('IconButton', () => {
   test('executes onClick prop on click', () => {
-    const handleClick = jest.fn()
+    const handleClick = vi.fn()
     const { getByRole } = render(<IconButton icon={<KeyIcon />} onClick={handleClick} />)
 
     fireEvent.click(getByRole('button'))

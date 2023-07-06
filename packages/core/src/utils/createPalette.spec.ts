@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest'
+
 import { createPalette, createTheme } from '.'
 
 describe('createPalette', () => {
@@ -5,8 +7,8 @@ describe('createPalette', () => {
     const palette = createPalette({ ...createTheme() })
 
     expect(palette).toMatchInlineSnapshot(`
-      Object {
-        "alert": Object {
+      {
+        "alert": {
           "base": "#f68013",
           "dark": "#f06f20",
           "light": "#fef2e7",
@@ -14,7 +16,7 @@ describe('createPalette', () => {
           "tint": "#faaf69",
           "tone": "#b74600",
         },
-        "background": Object {
+        "background": {
           "base": "#edf0f3",
           "dark": "#4f6f8f",
           "darkest": "#001833",
@@ -24,7 +26,7 @@ describe('createPalette', () => {
           "tint": "#d5dce4",
           "tone": "#879db3",
         },
-        "border": Object {
+        "border": {
           "base": "#c0cad5",
           "dark": "#5e6872",
           "light": "#eceff2",
@@ -32,7 +34,7 @@ describe('createPalette', () => {
           "tint": "#e0e5ea",
           "tone": "#868d95",
         },
-        "caution": Object {
+        "caution": {
           "base": "#fedc2a",
           "dark": "#806e0e",
           "light": "#fff3c0",
@@ -40,7 +42,7 @@ describe('createPalette', () => {
           "tint": "#fee875",
           "tone": "#cbb022",
         },
-        "error": Object {
+        "error": {
           "base": "#c00",
           "dark": "#800",
           "light": "#fbebeb",
@@ -48,7 +50,7 @@ describe('createPalette', () => {
           "tint": "#eb9999",
           "tone": "#b80000",
         },
-        "highlight": Object {
+        "highlight": {
           "base": "#8cdd36",
           "dark": "#2e9000",
           "light": "#d0f1ac",
@@ -56,7 +58,7 @@ describe('createPalette', () => {
           "tint": "#b9ea85",
           "tone": "#66be20",
         },
-        "notify": Object {
+        "notify": {
           "base": "#fedc2a",
           "dark": "#806e0e",
           "light": "#fff3c0",
@@ -64,7 +66,7 @@ describe('createPalette', () => {
           "tint": "#fee875",
           "tone": "#cbb022",
         },
-        "pricePrimary": Object {
+        "pricePrimary": {
           "base": "#0a0",
           "dark": "#060",
           "light": "#ecf7ec",
@@ -72,7 +74,7 @@ describe('createPalette', () => {
           "tint": "#80d580",
           "tone": "#080",
         },
-        "priceSecondary": Object {
+        "priceSecondary": {
           "base": "#0068ef",
           "dark": "#049",
           "light": "#e8f2ff",
@@ -80,7 +82,7 @@ describe('createPalette', () => {
           "tint": "#99c3f9",
           "tone": "#0055c4",
         },
-        "primary": Object {
+        "primary": {
           "base": "#0068ef",
           "dark": "#049",
           "light": "#e8f2ff",
@@ -88,7 +90,7 @@ describe('createPalette', () => {
           "tint": "#99c3f9",
           "tone": "#0055c4",
         },
-        "promoPrimary": Object {
+        "promoPrimary": {
           "base": "#70b",
           "dark": "#530083",
           "light": "#f5ebfa",
@@ -96,7 +98,7 @@ describe('createPalette', () => {
           "tint": "#c28ce0",
           "tone": "#5f0096",
         },
-        "promoSecondary": Object {
+        "promoSecondary": {
           "base": "#fe3e81",
           "dark": "#9e1f4b",
           "light": "#fff0f5",
@@ -104,7 +106,7 @@ describe('createPalette', () => {
           "tint": "#ffa0c4",
           "tone": "#d02962",
         },
-        "secondary": Object {
+        "secondary": {
           "base": "#0a0",
           "dark": "#060",
           "light": "#ecf7ec",
@@ -112,10 +114,10 @@ describe('createPalette', () => {
           "tint": "#80d580",
           "tone": "#080",
         },
-        "strike": Object {
+        "strike": {
           "base": "#c00",
         },
-        "success": Object {
+        "success": {
           "base": "#0a0",
           "dark": "#060",
           "light": "#ecf7ec",
@@ -123,7 +125,7 @@ describe('createPalette', () => {
           "tint": "#80d580",
           "tone": "#080",
         },
-        "text": Object {
+        "text": {
           "base": "#001833",
           "dark": "#001023",
           "heading": "#003c8a",
@@ -131,7 +133,7 @@ describe('createPalette', () => {
           "lightest": "#fff",
           "tint": "#3f5972",
         },
-        "warning": Object {
+        "warning": {
           "base": "#c00",
           "dark": "#800",
           "light": "#fbebeb",

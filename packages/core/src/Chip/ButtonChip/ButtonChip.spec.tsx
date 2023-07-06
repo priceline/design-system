@@ -7,7 +7,7 @@ const props = {
   m: 2,
   expanded: false,
   disabled: false,
-  onClick: jest.fn(),
+  onClick: vi.fn(),
 }
 
 describe('ButtonChip', () => {

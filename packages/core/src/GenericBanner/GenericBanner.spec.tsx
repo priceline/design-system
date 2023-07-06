@@ -43,7 +43,7 @@ describe('GenericBanner', () => {
     expect(json).toMatchSnapshot()
   })
   test('Renders as expected-onclick', () => {
-    const buttonClick = jest.fn()
+    const buttonClick = vi.fn()
     const { getByText } = render(<GenericBanner {...props} buttonClick={buttonClick} />)
     const header = getByText('COVID-19')
     const text = getByText('Update: Your travel may be impacted. Please review this hotels important info.')

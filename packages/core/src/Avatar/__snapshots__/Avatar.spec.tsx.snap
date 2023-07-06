@@ -1,4 +1,92 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Avatar > renders default 1`] = `
+<DocumentFragment>
+  <div
+    class="cMczSr"
+  >
+    <div
+      class="cETxcT dGMuPG"
+    >
+      <div
+        alt="avatar"
+        class="ilfBHU iHRUhS"
+        color="primary"
+        role="img"
+        size="40"
+      >
+        <div
+          class=""
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Avatar > renders initials 1`] = `
+<DocumentFragment>
+  <div
+    class="cMczSr"
+  >
+    <div
+      class="cETxcT dGMuPG"
+    >
+      <div
+        alt="avatar"
+        class="ilfBHU iHRUhS"
+        color="primary"
+        role="img"
+        size="40"
+      >
+        <div
+          class="Yjged"
+          font-size="1"
+        >
+          WS
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Avatar > renders mr elon 1`] = `
+<DocumentFragment>
+  <div
+    class="cMczSr"
+  >
+    <div
+      class="cETxcT dGMuPG"
+    >
+      <div
+        alt="papa-elon"
+        class="ilfBHU fkUxUj"
+        color="primary"
+        role="img"
+        size="40"
+        src="https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg"
+      />
+      <div
+        class="beTEWJ icvoDy"
+      >
+        <h5
+          class="glaIyd"
+        >
+          Not Elon Musk
+        </h5>
+        <div
+          class="cSmgtU"
+          color="text.light"
+          font-size="0"
+        >
+          totally.not.elon@musk.com
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
 
 exports[`Avatar renders default 1`] = `
 .c3 {

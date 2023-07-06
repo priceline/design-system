@@ -1,22 +1,22 @@
-import React from 'react'
+import { describe, expect, it, vi } from 'vitest'
 import { render } from '../__test__/testing-library'
 
-import { Avatar } from '..'
+import { Avatar } from '.'
 
 const elonJPG = 'https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg'
 
 describe('Avatar', () => {
-  test('renders default', () => {
-    const json = rendererCreateWithTheme(<Avatar />)
-    expect(json).toMatchSnapshot()
+  it('renders default', () => {
+    const { asFragment } = render(<Avatar />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  test('renders initials', () => {
-    const json = rendererCreateWithTheme(<Avatar initials='WS' />)
-    expect(json).toMatchSnapshot()
+  it('renders initials', () => {
+    const { asFragment } = render(<Avatar initials='WS' />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  test('renders mr elon', () => {
+  it('renders mr elon', () => {
     const { asFragment } = render(
       <Avatar title='Not Elon Musk' subtitle='totally.not.elon@musk.com' src={elonJPG} altText='papa-elon' />
     )

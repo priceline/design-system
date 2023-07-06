@@ -35,7 +35,7 @@ describe('Link', () => {
   })
 
   it('should be clickable when not disabled', () => {
-    const mockOnClick = jest.fn()
+    const mockOnClick = vi.fn()
     render(
       <Link href='href' onClick={mockOnClick}>
         Enabled
@@ -54,7 +54,7 @@ describe('Link', () => {
   })
 
   it('should not be clickable when disabled', () => {
-    const mockOnClick = jest.fn()
+    const mockOnClick = vi.fn()
     render(
       <Link disabled href='href' onClick={mockOnClick}>
         Disabled

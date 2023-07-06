@@ -1,42 +1,42 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`typographyAttrs should handle an array prop 1`] = `
-Object {
-  "caps": Array [],
-  "fontSize": Array [
+exports[`typographyAttrs > should handle an array prop 1`] = `
+{
+  "caps": [],
+  "fontSize": [
     "52px",
     null,
     "64px",
     null,
     "80px",
   ],
-  "fontWeight": Array [
+  "fontWeight": [
     700,
     null,
     700,
     null,
     700,
   ],
-  "letterSpacing": Array [
+  "letterSpacing": [
     null,
     null,
   ],
-  "lineHeight": Array [
+  "lineHeight": [
     "64px",
     null,
     "80px",
     null,
     "96px",
   ],
-  "textTransform": Array [
+  "textTransform": [
     null,
     null,
   ],
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=article 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=article 1`] = `
+{
   "fontSize": "16px",
   "fontWeight": 500,
   "letterSpacing": "-0.006rem",
@@ -44,8 +44,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=articleBold 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=articleBold 1`] = `
+{
   "fontSize": "16px",
   "fontWeight": 700,
   "letterSpacing": "-0.006rem",
@@ -53,8 +53,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=caption 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=caption 1`] = `
+{
   "fontSize": "12px",
   "fontWeight": 500,
   "letterSpacing": "0.006rem",
@@ -62,8 +62,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=captionBold 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=captionBold 1`] = `
+{
   "fontSize": "12px",
   "fontWeight": 700,
   "letterSpacing": "0.006rem",
@@ -71,8 +71,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=disclaimer 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=disclaimer 1`] = `
+{
   "fontSize": "11px",
   "fontWeight": 500,
   "letterSpacing": "0.013rem",
@@ -80,8 +80,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=disclaimerBold 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=disclaimerBold 1`] = `
+{
   "fontSize": "11px",
   "fontWeight": 700,
   "letterSpacing": "0.013rem",
@@ -89,56 +89,56 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=heading1 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=heading1 1`] = `
+{
   "fontSize": "40px",
   "fontWeight": 700,
   "lineHeight": "48px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=heading2 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=heading2 1`] = `
+{
   "fontSize": "32px",
   "fontWeight": 700,
   "lineHeight": "40px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=heading3 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=heading3 1`] = `
+{
   "fontSize": "26px",
   "fontWeight": 700,
   "lineHeight": "32px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=heading4 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=heading4 1`] = `
+{
   "fontSize": "20px",
   "fontWeight": 700,
   "lineHeight": "24px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=heading5 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=heading5 1`] = `
+{
   "fontSize": "16px",
   "fontWeight": 700,
   "lineHeight": "20px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=heading6 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=heading6 1`] = `
+{
   "fontSize": "14px",
   "fontWeight": 700,
   "lineHeight": "16px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=highlight 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=highlight 1`] = `
+{
   "caps": true,
   "fontSize": "10px",
   "fontWeight": 500,
@@ -148,8 +148,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=highlightBold 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=highlightBold 1`] = `
+{
   "caps": true,
   "fontSize": "10px",
   "fontWeight": 700,
@@ -159,8 +159,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=label 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=label 1`] = `
+{
   "fontSize": "10px",
   "fontWeight": 700,
   "letterSpacing": "0.2px",
@@ -168,8 +168,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=overline 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=overline 1`] = `
+{
   "fontSize": "12px",
   "fontWeight": 700,
   "letterSpacing": "0.063rem",
@@ -177,8 +177,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=overlineMedium 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=overlineMedium 1`] = `
+{
   "fontSize": "12px",
   "fontWeight": 500,
   "letterSpacing": "0.063rem",
@@ -186,8 +186,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=paragraph 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=paragraph 1`] = `
+{
   "fontSize": "14px",
   "fontWeight": 500,
   "letterSpacing": "-0.003rem",
@@ -195,8 +195,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=paragraph2 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=paragraph2 1`] = `
+{
   "fontSize": "16px",
   "fontWeight": 500,
   "letterSpacing": "-0.004rem",
@@ -204,8 +204,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=paragraph2Bold 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=paragraph2Bold 1`] = `
+{
   "fontSize": "16px",
   "fontWeight": 700,
   "letterSpacing": "-0.004rem",
@@ -213,8 +213,8 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=paragraphBold 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=paragraphBold 1`] = `
+{
   "fontSize": "14px",
   "fontWeight": 700,
   "letterSpacing": "-0.003rem",
@@ -222,80 +222,80 @@ Object {
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subheading1 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subheading1 1`] = `
+{
   "fontSize": "40px",
   "fontWeight": 500,
   "lineHeight": "48px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subheading2 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subheading2 1`] = `
+{
   "fontSize": "32px",
   "fontWeight": 500,
   "lineHeight": "40px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subheading3 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subheading3 1`] = `
+{
   "fontSize": "26px",
   "fontWeight": 500,
   "lineHeight": "32px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subheading4 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subheading4 1`] = `
+{
   "fontSize": "20px",
   "fontWeight": 500,
   "lineHeight": "24px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subheading5 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subheading5 1`] = `
+{
   "fontSize": "16px",
   "fontWeight": 500,
   "lineHeight": "20px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subheading6 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subheading6 1`] = `
+{
   "fontSize": "14px",
   "fontWeight": 500,
   "lineHeight": "16px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=subtitle1 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=subtitle1 1`] = `
+{
   "fontSize": "52px",
   "fontWeight": 500,
   "lineHeight": "64px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=title1 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=title1 1`] = `
+{
   "fontSize": "80px",
   "fontWeight": 700,
   "lineHeight": "96px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=title2 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=title2 1`] = `
+{
   "fontSize": "64px",
   "fontWeight": 700,
   "lineHeight": "80px",
 }
 `;
 
-exports[`typographyAttrs works with and textStyle=title3 1`] = `
-Object {
+exports[`typographyAttrs > works with and textStyle=title3 1`] = `
+{
   "fontSize": "52px",
   "fontWeight": 700,
   "lineHeight": "64px",

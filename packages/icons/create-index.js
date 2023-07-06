@@ -11,7 +11,7 @@ const template = (icons) => {
   const iconsToExport = icons
     // Don't include a line for the index file itself, since it's also in the components folder
     .filter((name) => name !== 'index')
-    .map((name) => `export { default as ${name} } from './${name}.jsx'`)
+    .map((name) => `export { default as ${name} } from '../components/${name}.jsx'`)
 
   return iconsToExport.join('\n')
 }

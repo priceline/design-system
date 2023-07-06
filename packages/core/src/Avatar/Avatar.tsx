@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
 
@@ -7,7 +6,8 @@ import { Flex } from '../Flex'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
 
-import { User } from 'pcln-icons'
+// import { User } from 'pcln-icons'
+const User = styled.div``
 
 const StyledImage = styled(Box)`
   display: flex;

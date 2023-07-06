@@ -18,7 +18,7 @@ describe('PasswordInput', () => {
   })
 
   it('test with a strong password', () => {
-    const mockOnChange = jest.fn()
+    const mockOnChange = vi.fn()
     render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
     fireEvent.change(inputField, { target: { value: 'GoodPassword1!' } })
@@ -39,7 +39,7 @@ describe('PasswordInput', () => {
   })
 
   it('test with a no number and special character password', () => {
-    const mockOnChange = jest.fn()
+    const mockOnChange = vi.fn()
     render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
     fireEvent.change(inputField, { target: { value: 'SamplePassword' } })
@@ -61,7 +61,7 @@ describe('PasswordInput', () => {
   })
 
   it('test with a weak password', () => {
-    const mockOnChange = jest.fn()
+    const mockOnChange = vi.fn()
     render(<PasswordInput hasProgressBar onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
     fireEvent.change(inputField, { target: { value: 'bad' } })
@@ -82,7 +82,7 @@ describe('PasswordInput', () => {
   })
 
   it('test with a manual regex checks', () => {
-    const mockOnChange = jest.fn()
+    const mockOnChange = vi.fn()
     render(<PasswordInput hasProgressBar regexChecks={sampleRegexChecks} onChange={mockOnChange} />)
     const inputField = screen.getByTestId('input-field')
     fireEvent.change(inputField, { target: { value: 'Password' } })
@@ -103,7 +103,7 @@ describe('PasswordInput', () => {
   })
 
   it('ignores regex checks and returns valid if no progress bar', () => {
-    const mockOnChange = jest.fn()
+    const mockOnChange = vi.fn()
     render(<PasswordInput label='Password' onChange={mockOnChange} />)
 
     const inputField = screen.getByTestId('input-field')

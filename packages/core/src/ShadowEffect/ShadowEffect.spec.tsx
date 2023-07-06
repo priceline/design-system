@@ -1,12 +1,12 @@
-import React from 'react'
+import { describe, it, expect, vi } from 'vitest'
 import { fireEvent, render, screen } from '../__test__/testing-library'
 import ShadowEffect from './ShadowEffect'
 import { Input } from '../Input'
 
 describe('ShadowEffect', () => {
   it('opens when clicked', () => {
-    const mockOnOpen = jest.fn()
-    const mockOnClick = jest.fn()
+    const mockOnOpen = vi.fn()
+    const mockOnClick = vi.fn()
     render(
       <ShadowEffect onOpen={mockOnOpen} data-testid='overlay'>
         <Input onClick={mockOnClick} id='input' data-testid='input' />
@@ -23,7 +23,7 @@ describe('ShadowEffect', () => {
   })
 
   it('closes if overlay clicked', () => {
-    const mockOnClose = jest.fn()
+    const mockOnClose = vi.fn()
     render(
       <ShadowEffect onClose={mockOnClose} data-testid='overlay'>
         <Input id='input' data-testid='input' />
@@ -38,8 +38,8 @@ describe('ShadowEffect', () => {
   })
 
   it('opens when focused', () => {
-    const mockOnOpen = jest.fn()
-    const mockOnFocus = jest.fn()
+    const mockOnOpen = vi.fn()
+    const mockOnFocus = vi.fn()
     render(
       <ShadowEffect shouldOpenOnFocus onOpen={mockOnOpen} data-testid='overlay'>
         <Input id='input' onFocus={mockOnFocus} data-testid='input' />
@@ -56,8 +56,8 @@ describe('ShadowEffect', () => {
   })
 
   it('does not open on focus if not set', () => {
-    const mockOnOpen = jest.fn()
-    const mockOnFocus = jest.fn()
+    const mockOnOpen = vi.fn()
+    const mockOnFocus = vi.fn()
     render(
       <ShadowEffect onOpen={mockOnOpen} data-testid='overlay'>
         <Input onFocus={mockOnFocus} id='input' data-testid='input' />
@@ -74,8 +74,8 @@ describe('ShadowEffect', () => {
   })
 
   it('closes when blurred', () => {
-    const mockOnClose = jest.fn()
-    const mockOnBlur = jest.fn()
+    const mockOnClose = vi.fn()
+    const mockOnBlur = vi.fn()
     render(
       <ShadowEffect shouldOpenOnFocus shouldCloseOnBlur onClose={mockOnClose} data-testid='overlay'>
         <Input id='input' onBlur={mockOnBlur} data-testid='input' />
@@ -94,8 +94,8 @@ describe('ShadowEffect', () => {
   })
 
   it('does not close when blurred if not set', () => {
-    const mockOnClose = jest.fn()
-    const mockOnBlur = jest.fn()
+    const mockOnClose = vi.fn()
+    const mockOnBlur = vi.fn()
     render(
       <ShadowEffect shouldOpenOnFocus onClose={mockOnClose} data-testid='overlay'>
         <Input id='input' onBlur={mockOnBlur} data-testid='input' />
@@ -114,7 +114,7 @@ describe('ShadowEffect', () => {
   })
 
   it('closes when escape is pressed', () => {
-    const mockOnKeyDown = jest.fn()
+    const mockOnKeyDown = vi.fn()
     render(
       <ShadowEffect data-testid='overlay'>
         <Input id='input' onKeyDown={mockOnKeyDown} data-testid='input' />
@@ -133,7 +133,7 @@ describe('ShadowEffect', () => {
   })
 
   it('does not close for other key presses', () => {
-    const mockOnKeyDown = jest.fn()
+    const mockOnKeyDown = vi.fn()
     render(
       <ShadowEffect data-testid='overlay'>
         <Input id='input' onKeyDown={mockOnKeyDown} data-testid='input' />

@@ -5,7 +5,7 @@ describe('ToggleBadge', () => {
   let consoleError
   beforeEach(() => {
     consoleError = console.error
-    console.error = jest.fn()
+    console.error = vi.fn()
   })
   afterEach(() => (console.error = consoleError))
 

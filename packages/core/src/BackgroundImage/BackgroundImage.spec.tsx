@@ -1,27 +1,26 @@
-import React from 'react'
+import { describe, expect, it } from 'vitest'
+import { render } from '../__test__/testing-library'
 import { BackgroundImage, theme } from '..'
 
 describe('BackgroundImage', () => {
-  test('renders', () => {
-    const json = rendererCreateWithTheme(<BackgroundImage />).toJSON()
-    expect(json).toMatchSnapshot()
+  it('renders', () => {
+    const { asFragment } = render(<BackgroundImage />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  test('renders with image', () => {
-    const json = rendererCreateWithTheme(<BackgroundImage image='hello.png' />).toJSON()
-    expect(json).toMatchSnapshot()
+  it('renders with image', () => {
+    const { asFragment } = render(<BackgroundImage image='hello.png' />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  test('renders with height', () => {
-    const json = rendererCreateWithTheme(<BackgroundImage height='320px' />).toJSON()
-    expect(json).toMatchSnapshot()
+  it('renders with height', () => {
+    const { asFragment } = render(<BackgroundImage height='320px' />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  test('renders with border radius', () => {
-    const json = rendererCreateWithTheme(
-      <BackgroundImage height='320px' borderRadius='full' rounded='top' />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+  it('renders with border radius', () => {
+    const { asFragment } = render(<BackgroundImage height='320px' borderRadius='full' rounded='top' />)
+    expect(asFragment()).toMatchSnapshot()
     const {
       borderRadii: { full },
     } = theme
@@ -29,12 +28,10 @@ describe('BackgroundImage', () => {
   })
 
   describe('variations', () => {
-    describe('parallax variation', () => {
-      test('default render', () => {
-        const json = rendererCreateWithTheme(
-          <BackgroundImage variation='parallax' image='hello.png' />
-        ).toJSON()
-        expect(json).toMatchSnapshot()
+    describe('parallax', () => {
+      it('default render', () => {
+        const { asFragment } = render(<BackgroundImage variation='parallax' image='hello.png' />)
+        expect(asFragment()).toMatchSnapshot()
         expect(json).toHaveStyleRule('background-attachment', 'fixed')
       })
     })

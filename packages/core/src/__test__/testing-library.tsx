@@ -1,21 +1,14 @@
-import { render, RenderResult } from '@testing-library/react'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { render } from '@testing-library/react'
+import { ThemeProvider } from '../ThemeProvider'
 
-import { ThemeProvider } from '..'
-
-const WithThemeProvider = ({ children }) => <ThemeProvider>{children}</ThemeProvider>
-WithThemeProvider.propTypes = {
-  children: PropTypes.node,
+function customRender(ui: React.ReactElement, options = {}) {
+  return render(ui, {
+    wrapper: ({ children }) => <ThemeProvider>{children}</ThemeProvider>,
+    ...options,
+  })
 }
 
-const customRender: (Element, any?) => RenderResult = (ui, options) =>
-  render(ui, { wrapper: WithThemeProvider, ...options })
-
-// re-export everything
 export * from '@testing-library/react'
-
-// override render method
 export { customRender as render }
 
 export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))

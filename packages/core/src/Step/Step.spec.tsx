@@ -55,7 +55,7 @@ describe('Step', () => {
   })
 
   it('should handle onClick', () => {
-    const handleClick = jest.fn()
+    const handleClick = vi.fn()
 
     const { asFragment, getByTestId, getByText } = render(
       <Step active data-testid='Step' onClick={handleClick}>

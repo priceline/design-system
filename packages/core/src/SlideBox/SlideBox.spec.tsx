@@ -29,7 +29,7 @@ describe('SlideBox', () => {
   })
 
   it('renders with int visible slides (small browser should default to 1.1 slides)', () => {
-    const slideChange = jest.fn()
+    const slideChange = vi.fn()
 
     const { getByTestId } = render(
       <SlideBox visibleSlides={1} onSlideChange={slideChange} slideSpacing={2}>

@@ -52,7 +52,7 @@ describe('Card', () => {
   })
 
   test('renders border 0 without warning', () => {
-    console.error = jest.fn()
+    console.error = vi.fn()
     const json = rendererCreateWithTheme(<Card borderWidth={0} />).toJSON()
 
     expect(json).toMatchSnapshot()

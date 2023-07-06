@@ -1,7 +1,9 @@
+import { describe, it, expect } from 'vitest'
+
 import { createMediaQueries } from './createMediaQueries'
 
 describe('createMediaQueries', () => {
-  test('returns the correct media queries', () => {
+  it('should return the correct media queries', () => {
     const actual = createMediaQueries(['10px', '20px', '30px'])
 
     expect(actual).toEqual([

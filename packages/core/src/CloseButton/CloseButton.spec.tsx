@@ -5,7 +5,7 @@ import { CloseButton } from '..'
 
 describe('CloseButton', () => {
   test('executes onClick prop on click', () => {
-    const handleClick = jest.fn()
+    const handleClick = vi.fn()
     const { getByTitle } = render(<CloseButton onClick={handleClick} />)
 
     fireEvent.click(getByTitle('close'))

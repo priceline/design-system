@@ -7,7 +7,7 @@ import { Toast } from '../Toast'
 
 describe('Toast', () => {
   it('renders a success toast that closes after 2 seconds', () => {
-    const mockRemoveClick = jest.fn()
+    const mockRemoveClick = vi.fn()
     render(
       <Toast id={10} lifespan={2000} color='success' onRemoveClick={mockRemoveClick}>
         Success Message
@@ -23,7 +23,7 @@ describe('Toast', () => {
   })
 
   it('renders an error toast that needs to be closed manually', () => {
-    const mockRemoveClick = jest.fn()
+    const mockRemoveClick = vi.fn()
     render(
       <Toast id={10} color='error' onRemoveClick={mockRemoveClick}>
         Error Message
@@ -42,7 +42,7 @@ describe('Toast', () => {
   })
 
   it('renders a default toast', () => {
-    const mockRemoveClick = jest.fn()
+    const mockRemoveClick = vi.fn()
     render(
       <Toast id={10} lifespan={2000} onRemoveClick={mockRemoveClick}>
         Information Message

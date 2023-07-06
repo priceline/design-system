@@ -24,7 +24,7 @@ describe('Label', () => {
   })
 
   test('Label clickable renders with cursor pointer', () => {
-    const mockOnClick = jest.fn()
+    const mockOnClick = vi.fn()
     render(<Label onClick={mockOnClick}>Clickable Label</Label>)
 
     const label = screen.getByText('Clickable Label')

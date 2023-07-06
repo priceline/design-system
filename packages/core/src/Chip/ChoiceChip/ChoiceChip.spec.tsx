@@ -7,7 +7,7 @@ const props = {
   name: 'testName',
   expanded: false,
   disabled: false,
-  onClick: jest.fn(),
+  onClick: vi.fn(),
 }
 
 describe('ChoiceChip', () => {

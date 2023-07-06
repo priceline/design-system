@@ -3,7 +3,7 @@ import { theme, colors } from '..'
 const aliases = ['sm', 'md', 'lg', 'xl', 'xxl']
 
 describe('theme', () => {
-  console.warn = jest.fn()
+  console.warn = vi.fn()
 
   test('exports an object', () => {
     expect(typeof theme).toBe('object')

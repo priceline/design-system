@@ -2,23 +2,28 @@
   "name": "pcln-icons",
   "version": "5.6.0",
   "description": "Priceline React icons based on Material Design Icons",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "./dist/pcln-icons.cjs",
+  "module": "./dist/pcln-icons.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pcln-icons.js",
+      "require": "./dist/pcln-icons.cjs"
+    }
+  },
   "sideEffects": false,
   "scripts": {
     "clean": "rimraf dist components",
-    "build": "npm run clean && npm run build:svg && npm run build:copy && npm run build:index && npm-run-all -p build:babel:*",
+    "build": "run-s clean build:svg build:index build:copy vite:build",
     "build:svg": "svgr svg -d components",
     "build:index": "node ./create-index.js",
     "build:copy": "cp src/Icon.jsx src/Svg.js src/index.js components",
-    "build:babel:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js ./components --out-dir ./dist/cjs --keep-file-extension",
-    "build:babel:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js ./components --out-dir ./dist/esm --keep-file-extension",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest --silent --coverage",
     "test:ci": "jest --silent --coverage --runInBand",
     "test:update": "jest --silent --updateSnapshot",
-    "test:snapshots": "jest --silent --runInBand --updateSnapshot"
+    "test:snapshots": "jest --silent --runInBand --updateSnapshot",
+    "vite:build": "vite build"
   },
   "files": [
     "dist/"
@@ -43,6 +48,7 @@
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.0",
     "@svgr/cli": "^5.5.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "cross-env": "^7.0.3",
@@ -57,7 +63,10 @@
     "react-is": "^17.0.2",
     "react-test-renderer": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "vite": "^4.3.9",
+    "vite-bundle-visualizer": "^0.8.0",
+    "vite-plugin-svgr": "^3.2.0"
   },
   "peerDependencies": {
     "pcln-design-system": "^5.7.0",

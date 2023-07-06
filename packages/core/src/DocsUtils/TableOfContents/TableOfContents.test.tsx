@@ -16,7 +16,7 @@ describe('TableOfContents', () => {
   })
 
   it('should scroll items into view', () => {
-    const scrollIntoViewMock = jest.fn()
+    const scrollIntoViewMock = vi.fn()
     window.HTMLElement.prototype.scrollIntoView = scrollIntoViewMock
 
     render(

@@ -25,7 +25,7 @@ describe('Toggle', () => {
   })
 
   test('calls callback', () => {
-    const cb = jest.fn()
+    const cb = vi.fn()
 
     const { getByLabelText } = render(<Toggle label='Total price toggle' onToggle={cb} />)
     const input = getByLabelText('Total price toggle')

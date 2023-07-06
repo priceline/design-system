@@ -9,7 +9,7 @@ const template = (
   // eslint-disable-next-line no-unused-vars
   { imports, componentName, props, jsx, exports }
 ) => template.ast`import React from 'react'
-import Svg from './Svg'
+import Svg from '../src/Svg'
 import styled from 'styled-components'
 
 const BaseComponent = ({
