@@ -63,3 +63,11 @@ export const UsingTextProps = () => (
 UsingTextProps.story = {
   name: 'Using <Text> props',
 }
+
+export const ColorSchemes = () => (
+  <section>
+    <Heading.h1 colorScheme='primary'>Heading Left</Heading.h1>
+    <Heading.h2 colorScheme='secondaryLight'>Heading Left</Heading.h2>
+    <Heading.h3 colorScheme='cautionLight'>Heading Left</Heading.h3>
+  </section>
+)

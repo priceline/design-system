@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Stamp, Text } from '..'
+import type { ColorSchemes as ColorSchemesType } from '..'
 import { argTypes } from './Stamp.stories.args'
-import { Pin as PinIcon } from 'pcln-icons'
+import { Pin as PinIcon, Airplane } from 'pcln-icons'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
@@ -119,3 +120,18 @@ export const PassAnArrayOfSizes = () => (
 PassAnArrayOfSizes.story = {
   name: 'Pass an array of sizes',
 }
+
+const ColorSchemesTemplate = () => {
+  return (
+    <React.Fragment>
+      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+        <Stamp m={3} colorScheme={colorScheme as keyof ColorSchemesType} key={colorScheme}>
+          <Airplane mr={2} />
+          {colorScheme}
+        </Stamp>
+      ))}
+    </React.Fragment>
+  )
+}
+export const ColorSchemes = ColorSchemesTemplate.bind({})
+ColorSchemesTemplate.args = {}

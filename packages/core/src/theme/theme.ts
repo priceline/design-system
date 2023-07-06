@@ -469,6 +469,51 @@ export type ColorStyles = {
 }
 
 /** @public */
+export type ColorScheme = {
+  foreground: string
+  background: string
+}
+
+/** @public */
+export type ColorSchemes = {
+  primary: ColorScheme
+  primaryLight: ColorScheme
+  primaryLightest: ColorScheme
+  primaryDark: ColorScheme
+  primaryShade: ColorScheme
+  primaryDarkOnLight: ColorScheme
+  secondary: ColorScheme
+  secondaryLight: ColorScheme
+  secondaryLightest: ColorScheme
+  secondaryDark: ColorScheme
+  secondaryDarkOnLight: ColorScheme
+  neutral: ColorScheme
+  neutralLight: ColorScheme
+  neutralLightest: ColorScheme
+  neutralDark: ColorScheme
+  neutralDarkOnLight: ColorScheme
+  success: ColorScheme
+  successLight: ColorScheme
+  successLightest: ColorScheme
+  successDark: ColorScheme
+  successDarkOnLight: ColorScheme
+  warning: ColorScheme
+  warningLight: ColorScheme
+  warningLightest: ColorScheme
+  cautionLight: ColorScheme
+  highlightLight: ColorScheme
+  promo: ColorScheme
+  promoLight: ColorScheme
+  promoLightest: ColorScheme
+  promoDark: ColorScheme
+  promoDarkOnLight: ColorScheme
+  alert: ColorScheme
+  alertLight: ColorScheme
+  alertLightest: ColorScheme
+  alertDarkOnLight: ColorScheme
+}
+
+/** @public */
 export type DesignSystemTheme = {
   space: string[]
   colors: Record<string, string>
@@ -479,4 +524,5 @@ export type DesignSystemTheme = {
   colorStyles: ColorStyles
   textStyles: TextStyle[]
   contrastRatio: number
+  colorSchemes: ColorSchemes
 }

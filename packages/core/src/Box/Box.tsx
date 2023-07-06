@@ -40,10 +40,11 @@ import {
   deprecatedColorValue,
   paletteFamilies,
   roundedValues,
+  colorScheme,
 } from '../utils'
+import { ColorSchemes } from '../theme'
 
 export const boxPropTypes = {
-  ...propTypes.border,
   ...propTypes.boxShadow,
   ...propTypes.display,
   ...propTypes.maxHeight,
@@ -116,6 +117,7 @@ export interface IBoxProps
     | 'border'
     | 'background'
   onClick?: (unknown) => unknown
+  colorScheme?: keyof ColorSchemes
 }
 
 const Box: React.FC<InferProps<typeof boxPropTypes>> = styled.div.attrs((props) => ({
@@ -124,6 +126,7 @@ const Box: React.FC<InferProps<typeof boxPropTypes>> = styled.div.attrs((props) 
 }))`
   ${applyVariations('Box')}
   ${color}
+  ${colorScheme}
 
   ${(props) =>
     compose(

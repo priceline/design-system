@@ -7,6 +7,7 @@ import { createTextStyles } from './createTextStyles'
 import { createColorStyles } from './createColorStyles'
 import { createMediaQueries } from './createMediaQueries'
 import { createPalette } from './createPalette'
+import { createColorScheme } from './createColorScheme'
 
 /**
  * Adds aliases to an array of keys
@@ -39,12 +40,15 @@ export const createTheme = (
     ? createMediaQueries(customBreakpoints)
     : finalMergedTheme.mediaQueries
 
+  const palette = createPalette(finalMergedTheme)
+
   return {
     ...finalMergedTheme,
     contrastRatio: finalMergedTheme.contrastRatio || 2.6,
     breakpoints: addAliases(customBreakpoints || finalMergedTheme.breakpoints),
     mediaQueries: addAliases(mediaQueries),
-    palette: createPalette(finalMergedTheme),
+    palette,
+    colorSchemes: createColorScheme({ palette }),
     colorStyles: createColorStyles(finalMergedTheme),
     textStyles: createTextStyles(finalMergedTheme),
   }
