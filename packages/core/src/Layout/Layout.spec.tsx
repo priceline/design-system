@@ -20,7 +20,7 @@ describe('Layout', () => {
     expect(getByText(1)).toHaveStyle('width: 0.33')
 
     rerender(
-      <Layout variation={'60-40'}>
+      <Layout variation='60-40'>
         <Box>1</Box>
         <Box>2</Box>
         <Box>3</Box>

@@ -22,6 +22,7 @@ module.exports = {
     '@rushstack/typedef-var': 0,
 
     'react/jsx-no-bind': 0,
+    'react/jsx-curly-brace-presence': [2, { props: 'never', children: 'never' }],
 
     // (Story) in decorators
     '@typescript-eslint/naming-convention': [

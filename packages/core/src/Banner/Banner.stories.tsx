@@ -421,10 +421,10 @@ export const WithChildren = () => (
   <Box>
     <Banner p={2} mb={2} onClose={action('closed')}>
       <Flex>
-        <Box bg={'pink'} p={2} width={1 / 2}>
+        <Box bg='pink' p={2} width={1 / 2}>
           Pink box!
         </Box>
-        <Box bg={'red'} p={2} width={1 / 2}>
+        <Box bg='red' p={2} width={1 / 2}>
           Red box!
         </Box>
       </Flex>

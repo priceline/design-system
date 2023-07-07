@@ -90,7 +90,7 @@ const Card = ({ image, title, text }) => (
 )
 
 export const TiledCards = () => (
-  <Flex flexWrap={'wrap'}>
+  <Flex flexWrap='wrap'>
     {cards.map((card) => (
       <Box key={card.id} p={3} width={[1 / 2, 1 / 3, 1 / 4]}>
         <Card {...card} />
