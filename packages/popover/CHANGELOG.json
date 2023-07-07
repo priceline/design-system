@@ -2,6 +2,20 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "5.4.0",
+      "tag": "pcln-popover_v5.4.0",
+      "date": "Fri, 07 Jul 2023 17:19:54 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added onBeforeOpen and onBeforeClose Props",
+            "author": "Jason Viana <108819593+pcln-jason-v@users.noreply.github.com>",
+            "commit": "66b3a4ac32eb9c0c342a3103ba419df4d8694c07"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.2",
       "tag": "pcln-popover_v5.3.2",
       "date": "Tue, 27 Jun 2023 15:50:08 GMT",
