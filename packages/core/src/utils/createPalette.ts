@@ -89,7 +89,6 @@ export const createPalette = ({ palette = {}, ...theme }) => {
     tintHighlight,
     highlight,
     toneHighlight,
-    darkHighlight,
     shadeHighlight,
 
     lightestBackground,
@@ -140,7 +139,7 @@ export const createPalette = ({ palette = {}, ...theme }) => {
         tint: tintHighlight,
         base: highlight,
         tone: toneHighlight,
-        dark: darkHighlight,
+        dark: darkGreen,
         shade: shadeHighlight,
       },
       success: {

@@ -81,6 +81,7 @@
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
       "incremental": true
     },
 

@@ -160,21 +160,21 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-sm'])
 
     rerender(
-      <Button size='small' borderRadius={'none'}>
+      <Button size='small' borderRadius='none'>
         BUTTON
       </Button>
     )
     expect(button).toHaveStyleRule('border-radius', borderRadius.none)
 
     rerender(
-      <Button size='medium' borderRadius={'sm'}>
+      <Button size='medium' borderRadius='sm'>
         BUTTON
       </Button>
     )
     expect(button).toHaveStyleRule('border-radius', borderRadius.sm)
 
     rerender(
-      <Button size='large' borderRadius={'md'}>
+      <Button size='large' borderRadius='md'>
         BUTTON
       </Button>
     )
@@ -189,7 +189,7 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-lg'])
 
     rerender(
-      <Button size='large' borderRadius={'xl'}>
+      <Button size='large' borderRadius='xl'>
         BUTTON
       </Button>
     )
@@ -198,7 +198,7 @@ describe('Button', () => {
 
     rerender(
       // @ts-ignore
-      <Button size='extraLarge' borderRadius={'notValid'}>
+      <Button size='extraLarge' borderRadius='notValid'>
         BUTTON
       </Button>
     )

@@ -16,7 +16,7 @@ export const Default = () => <Shimmer />
 export const ComposedAsSkeletonLoader = () => (
   <Flex flexDirection='column' maxWidth='700px'>
     <Flex>
-      <SkeletonBar width={'100px'} height={'100px'} mr={2} />
+      <SkeletonBar width='100px' height='100px' mr={2} />
       <Flex flexDirection='column' width='calc(100% - 100px)'>
         <SkeletonBar width={3 / 4} />
         <SkeletonBar width={1 / 2} />

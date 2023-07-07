@@ -20,7 +20,7 @@ const GridItem = (props: IGridProps) => <Grid p={4} width={1} placeItems='center
 
 export const Playground: GridStory = {
   render: () => (
-    <Grid templateColumns={['1fr', '1fr 1fr', '1fr 1fr 1fr']} placeItems={'center'} gap={2}>
+    <Grid templateColumns={['1fr', '1fr 1fr', '1fr 1fr 1fr']} placeItems='center' gap={2}>
       <GridItem style={{ background: '#00f8' }}>A</GridItem>
       <GridItem style={{ background: '#0f08' }}>B</GridItem>
       <GridItem style={{ background: '#0ff8' }}>C</GridItem>
@@ -39,10 +39,10 @@ export const TemplateAreas: GridStory = {
         'sidebar content'
         'footer footer'
       `}
-      placeItems={'center'}
-      minHeight={'calc(100vh - 5rem)'}
-      templateRows={'auto 1fr auto'}
-      templateColumns={'15em 1fr'}
+      placeItems='center'
+      minHeight='calc(100vh - 5rem)'
+      templateRows='auto 1fr auto'
+      templateColumns='15em 1fr'
       gap={2}
     >
       <GridItem gridArea='header' style={{ background: '#00f8' }}>
@@ -107,7 +107,7 @@ const meta: Meta<typeof Grid> = {
     docs: {
       page: () => (
         <ThemeProvider>
-          <Hero name='Grid' img={''}>
+          <Hero name='Grid' img=''>
             Grids divide a web page into rows and columns and offer comprehensive features for controlling the
             sizing and positioning of grid items, including the ability to define grid areas, set grid gaps,
             and control the alignment and distribution of grid items

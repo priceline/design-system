@@ -51,13 +51,13 @@ export const WithAnchors = () => (
       </Tooltip>
       <div>some text</div>
     </Box>
-    <Box width={'300px'} p={2} mb={5}>
+    <Box width='300px' p={2} mb={5}>
       <div>some text</div>
       <Tooltip bottom left color='error'>
         bottom left tooltip
       </Tooltip>
     </Box>
-    <Box width={'300px'} p={2} mb={55}>
+    <Box width='300px' p={2} mb={55}>
       <FormField>
         <Label>Email Address</Label>
         <Input
@@ -71,7 +71,7 @@ export const WithAnchors = () => (
         bottom left tooltip
       </Tooltip>
     </Box>
-    <Box width={'300px'} p={2} mb={5}>
+    <Box width='300px' p={2} mb={5}>
       <FormField>
         <Label>Email Address</Label>
         <Input
@@ -85,7 +85,7 @@ export const WithAnchors = () => (
         bottom center tooltip
       </Tooltip>
     </Box>
-    <Box width={'300px'} p={2} mb={'80px'}>
+    <Box width='300px' p={2} mb='80px'>
       <FormField>
         <Label>Email Address</Label>
         <Input
@@ -99,7 +99,7 @@ export const WithAnchors = () => (
         Email Address Invalid
       </Tooltip>
     </Box>
-    <Box width={'300px'} p={2} mb={5}>
+    <Box width='300px' p={2} mb={5}>
       <Tooltip top left color='primary'>
         top left tooltip
       </Tooltip>
@@ -113,7 +113,7 @@ export const WithAnchors = () => (
         <Check color='primary' />
       </FormField>
     </Box>
-    <Box width={'300px'} p={2} mb={5}>
+    <Box width='300px' p={2} mb={5}>
       <Tooltip top center color='primary'>
         top center tooltip
       </Tooltip>
@@ -127,7 +127,7 @@ export const WithAnchors = () => (
         <Check color='primary' />
       </FormField>
     </Box>
-    <Box width={'300px'} p={2}>
+    <Box width='300px' p={2}>
       <Tooltip top right color='primary'>
         top right tooltip
       </Tooltip>
