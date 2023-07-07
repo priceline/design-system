@@ -70,8 +70,4 @@ module.exports = {
       removeAttrs: { attrs: '(fill|viewBox)' },
     },
   },
-  prettierConfig: {
-    semi: false,
-    singleQuote: true,
-  },
 }

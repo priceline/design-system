@@ -5,8 +5,7 @@ import React from 'react'
 import { Hero, HeroProps } from '.'
 
 const exampleProps: HeroProps = {
-  img:
-    'https://s1.pclncdn.com/design-assets/hero/beach.jpg?opto&optimize=medium&auto=jpg&width=600&height=450&fit=crop',
+  img: 'https://s1.pclncdn.com/design-assets/hero/beach.jpg?opto&optimize=medium&auto=jpg&width=600&height=450&fit=crop',
   name: 'Hero',
   children: `Doloremque nisi excepturi. Dicta ut esse quas. Voluptatum ab veniam suscipit libero assumenda voluptate a mollitia. Ut ab consequuntur veritatis illum ullam minima pariatur sint quas. Necessitatibus doloribus natus voluptas.`,
 }

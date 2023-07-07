@@ -22,8 +22,7 @@ export default {
   parameters: {
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/8STFTihIpLXjgaBq0GBCqs/Design-System--Storybook--Guidelines?type=design&node-id=776-41100&t=dxLycOfsXz0EUXtO-0',
+      url: 'https://www.figma.com/file/8STFTihIpLXjgaBq0GBCqs/Design-System--Storybook--Guidelines?type=design&node-id=776-41100&t=dxLycOfsXz0EUXtO-0',
     },
   },
 
