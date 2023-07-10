@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "add borderRadius prop for modal",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

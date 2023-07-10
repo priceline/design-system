@@ -53,7 +53,8 @@ const Dialog = styled(DialogContent)`
   margin-left: auto;
   margin-right: auto;
   box-shadow: ${(props) => props.theme.shadows['overlay-xl']};
-  border-radius: ${themeGet('borderRadii.xl')};
+  border-radius: ${({ borderRadius }) => themeGet(`borderRadii.${borderRadius}`)};
+  overflow-y: auto;
   &:focus {
     outline: none;
   }
@@ -139,6 +140,7 @@ const Modal = ({
   ariaLabel,
   ariaLabelledBy,
   bg,
+  borderRadius,
   children,
   className,
   dialogAnimation,
@@ -180,6 +182,7 @@ const Modal = ({
               <Dialog
                 width={fullScreen ? '100vw' : width}
                 bg={bg}
+                borderRadius={borderRadius}
                 height={dialogHeight}
                 transitionstate={state}
                 className={className}
@@ -194,7 +197,7 @@ const Modal = ({
                 <DialogInnerWrapper flexDirection='column'>
                   {header && <HeaderWrapper>{header}</HeaderWrapper>}
                   <ContentWrapper
-                    borderRadius='xl'
+                    borderRadius={borderRadius}
                     p={imgMode ? 0 : 16}
                     header={header}
                     enableoverflow={enableOverflow}
@@ -216,6 +219,7 @@ const Modal = ({
 
 Modal.defaultProps = {
   bg: 'white',
+  borderRadius: 'xl',
   dialogAnimation: null,
   disableCloseButton: false,
   enableOverflow: false,
