@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add zIndices to the theme and use zIndex from styled-system on Input and ShadowEffect",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

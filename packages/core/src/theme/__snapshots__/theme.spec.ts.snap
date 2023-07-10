@@ -561,5 +561,18 @@ Object {
       "lineHeight": "64px",
     },
   },
+  "zIndices": Object {
+    "absolute": 50,
+    "auto": "auto",
+    "dropdown": 100,
+    "fixed": 300,
+    "modal": 800,
+    "offCanvas": 500,
+    "onOverlay": 600,
+    "overlay": 550,
+    "popover": 700,
+    "sticky": 200,
+    "tooltip": 400,
+  },
 }
 `;

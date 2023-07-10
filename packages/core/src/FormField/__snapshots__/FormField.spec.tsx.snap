@@ -30,6 +30,7 @@ exports[`FormField renders 1`] = `
 }
 
 .c2 {
+  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -190,6 +191,7 @@ exports[`FormField renders with Icon 1`] = `
 }
 
 .c6 {
+  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -372,6 +374,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 }
 
 .c6 {
+  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
