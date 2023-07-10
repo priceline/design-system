@@ -50,7 +50,7 @@ const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, .
   }
 
   return (
-    <HugCard {...props} borderColor={bg || color}>
+    <HugCard {...props} borderColor={bg || color} color={color}>
       <Flex bg={bg} color={color} p={p} pl='12px' alignItems='center'>
         {!!iconClone && iconClone}
         <Text fontSize={fontSize}>{props.text}</Text>
