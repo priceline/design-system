@@ -576,6 +576,44 @@ export type ColorSchemeName = typeof colorSchemeNames[number]
 export type ColorSchemes = Record<ColorSchemeName, ColorScheme>
 
 /** @public */
+export type ColorSchemeName =
+  | 'primary'
+  | 'primaryLight'
+  | 'primaryLightest'
+  | 'primaryDark'
+  | 'primaryShade'
+  | 'primaryDarkOnLight'
+  | 'secondary'
+  | 'secondaryLight'
+  | 'secondaryLightest'
+  | 'secondaryDark'
+  | 'secondaryDarkOnLight'
+  | 'neutral'
+  | 'neutralLight'
+  | 'neutralLightest'
+  | 'neutralDark'
+  | 'neutralDarkOnLight'
+  | 'success'
+  | 'successLight'
+  | 'successLightest'
+  | 'successDark'
+  | 'successDarkOnLight'
+  | 'warning'
+  | 'warningLight'
+  | 'warningLightest'
+  | 'cautionLight'
+  | 'highlightLight'
+  | 'promo'
+  | 'promoLight'
+  | 'promoLightest'
+  | 'promoDark'
+  | 'promoDarkOnLight'
+  | 'alert'
+  | 'alertLight'
+  | 'alertLightest'
+  | 'alertDarkOnLight'
+
+/** @public */
 export type DesignSystemTheme = {
   space: string[]
   colors: Record<string, string>

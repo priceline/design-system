@@ -71,6 +71,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.4",
     "@styled-system/prop-types": "^5.1.5",
     "@styled-system/theme-get": "^5.1.2",
     "@types/styled-system": "^5.1.16",
