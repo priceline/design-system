@@ -24,7 +24,7 @@ import {
   getTextColorOn,
 } from '../utils'
 
-export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
+export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
@@ -190,7 +190,7 @@ export interface IButtonProps
   color?: string
   variation?: Variations
   size?: Sizes | Sizes[]
-  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
+  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full'
   boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
   autoFocus?: boolean
   IconLeft?: React.Component
