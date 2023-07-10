@@ -23,16 +23,7 @@ const StyledCloseButton = styled(CloseButton)`
 `
 
 const ModalHeader = ({ bg, color, onClose, textStyle, title, ...props }) => (
-  <Flex
-    align='center'
-    alignItems='center'
-    color={color}
-    bg={bg}
-    borderRadius='xl'
-    height='40px'
-    rounded='top'
-    {...props}
-  >
+  <Flex align='center' alignItems='center' color={color} bg={bg} height='40px' {...props}>
     {title && <Title textStyle={textStyle}>{title}</Title>}
     {onClose && <StyledCloseButton onClick={onClose} ml='auto' />}
   </Flex>

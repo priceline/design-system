@@ -231,6 +231,36 @@ export const typography = {
   },
 }
 
+export type ZIndexStrings =
+  | 'auto'
+  | 'absolute'
+  | 'dropdown'
+  | 'sticky'
+  | 'fixed'
+  | 'overlay'
+  | 'onOverlay'
+  | 'offCanvas'
+  | 'modal'
+  | 'popover'
+  | 'tooltip'
+export type ZIndex = number | ZIndexStrings
+
+export type ZIndices = Record<ZIndexStrings, string | number>
+
+export const zIndices: ZIndices = {
+  auto: 'auto',
+  absolute: 50,
+  dropdown: 100,
+  sticky: 200,
+  fixed: 300,
+  tooltip: 400,
+  offCanvas: 500,
+  overlay: 550,
+  onOverlay: 600,
+  popover: 700,
+  modal: 800,
+}
+
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
 export const radius = '2px'
@@ -392,6 +422,7 @@ const theme = {
   duration,
   timingFunctions,
   transitionDelays,
+  zIndices,
 }
 
 export { theme }
@@ -469,6 +500,51 @@ export type ColorStyles = {
 }
 
 /** @public */
+export type ColorScheme = {
+  foreground: string
+  background: string
+}
+
+/** @public */
+export type ColorSchemes = {
+  primary: ColorScheme
+  primaryLight: ColorScheme
+  primaryLightest: ColorScheme
+  primaryDark: ColorScheme
+  primaryShade: ColorScheme
+  primaryDarkOnLight: ColorScheme
+  secondary: ColorScheme
+  secondaryLight: ColorScheme
+  secondaryLightest: ColorScheme
+  secondaryDark: ColorScheme
+  secondaryDarkOnLight: ColorScheme
+  neutral: ColorScheme
+  neutralLight: ColorScheme
+  neutralLightest: ColorScheme
+  neutralDark: ColorScheme
+  neutralDarkOnLight: ColorScheme
+  success: ColorScheme
+  successLight: ColorScheme
+  successLightest: ColorScheme
+  successDark: ColorScheme
+  successDarkOnLight: ColorScheme
+  warning: ColorScheme
+  warningLight: ColorScheme
+  warningLightest: ColorScheme
+  cautionLight: ColorScheme
+  highlightLight: ColorScheme
+  promo: ColorScheme
+  promoLight: ColorScheme
+  promoLightest: ColorScheme
+  promoDark: ColorScheme
+  promoDarkOnLight: ColorScheme
+  alert: ColorScheme
+  alertLight: ColorScheme
+  alertLightest: ColorScheme
+  alertDarkOnLight: ColorScheme
+}
+
+/** @public */
 export type DesignSystemTheme = {
   space: string[]
   colors: Record<string, string>
@@ -479,4 +555,6 @@ export type DesignSystemTheme = {
   colorStyles: ColorStyles
   textStyles: TextStyle[]
   contrastRatio: number
+  colorSchemes: ColorSchemes
+  zIndices: ZIndices
 }

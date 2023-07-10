@@ -27,3 +27,17 @@ export const Colors = () => (
     <RatingBadge color='alert'>9.0</RatingBadge>
   </Flex>
 )
+
+const ColorSchemesTemplate = (args) => {
+  return (
+    <React.Fragment>
+      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+        <RatingBadge m={3} colorScheme={colorScheme} key={colorScheme}>
+          {colorScheme}
+        </RatingBadge>
+      ))}
+    </React.Fragment>
+  )
+}
+export const ColorSchemes = ColorSchemesTemplate.bind({})
+ColorSchemesTemplate.args = {}

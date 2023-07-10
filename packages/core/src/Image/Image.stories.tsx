@@ -5,7 +5,6 @@ import {
   DocTable,
   Hero,
   // LiveDemo,
-  RelatedComponentContainer,
   Section,
   StoryHeading,
   StoryStage,
@@ -14,7 +13,7 @@ import {
 import React from 'react'
 import { Image, Text, ThemeProvider, Box } from '..'
 import type { IImageProps } from './Image'
-import { objectFits, objectPositions, borderRadii, rounded, shadows, colors } from '../storybook/args'
+import { argTypes } from './Image.stories.args'
 
 import heroImage from './Image.Image.Hero.png'
 import contentAlignmentFormatingImage from './Image.Image.ContentAlignmentFormating.png'
@@ -29,89 +28,22 @@ const imageSrc =
   'https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg'
 
 export const Playground: ImageStory = {
-  render: (args) => <Image {...args} src={imageSrc} />,
-  argTypes: {
-    borderRadiusSize: {
-      name: 'borderRadius',
-      type: { name: 'string' },
-      options: borderRadii,
-      description: 'borderRadius',
-      control: {
-        type: 'select',
-      },
-    },
-    rounded: {
-      name: 'rounded',
-      type: { name: 'string' },
-      options: rounded,
-      description: 'rounded',
-      control: {
-        type: 'select',
-      },
-    },
-    boxShadowSize: {
-      name: 'boxShadowSize',
-      type: { name: 'string' },
-      options: shadows,
-      description: 'Size of the box shadow',
-      control: {
-        type: 'select',
-      },
-    },
-    boxShadowColor: {
-      name: 'boxShadowColor',
-      type: { name: 'string' },
-      options: colors,
-      description: 'Palette family for box shadows',
-      table: {
-        type: {
-          summary: 'Palette color to use for box-shadow - always uses "dark" shade',
-        },
-      },
-      control: {
-        type: 'select',
-      },
-    },
-
-    height: {
-      name: 'height',
-      type: { name: 'string' },
-      description: 'height',
-    },
-    width: {
-      name: 'width',
-      type: { name: 'string' },
-      description: 'width',
-    },
-    objectFit: {
-      name: 'objectFit',
-      type: { name: 'string' },
-      options: objectFits,
-      description: 'How img is resized to fit its container',
-      control: {
-        type: 'select',
-      },
-    },
-    objectPosition: {
-      name: 'objectPosition',
-      type: { name: 'string' },
-      options: objectPositions,
-      description: 'How img is aligned within its container',
-      control: {
-        type: 'select',
-      },
-    },
-  },
+  render: (args) => (
+    <Box>
+      <Image {...args} src={imageSrc} />
+    </Box>
+  ),
+  argTypes,
 }
 
 export const ExamplesAndVariations: ImageStory = {
   render: () => (
     <StoryStage>
-      <Image src={imageSrc} />
-      <Image src={imageSrc} />
-      <Image src={imageSrc} />
-      <Image src={imageSrc} />
-      <Image src={imageSrc} />
+      <Image src={imageSrc} borderRadius='xl' height='300px' width='300px' />
+      <Image src={imageSrc} borderRadius='xl' rounded='top' height='300px' width='300px' />
+      <Image src={imageSrc} borderRadius='full' height='300px' width='300px' />
+      <Image src={imageSrc} borderRadius='full' rounded='right' height='300px' width='400px' />
+      <Image src={imageSrc} borderRadius='full' rounded='top' height='200px' width='300px' />
     </StoryStage>
   ),
 }
@@ -119,28 +51,30 @@ export const ExamplesAndVariations: ImageStory = {
 export const BoxShawdow: ImageStory = {
   render: () => (
     <StoryStage>
-      <Image boxShadowSize='md' src={imageSrc} />
+      <Image boxShadowSize='md' borderRadius='xl' src={imageSrc} height='300px' width='300px' />
     </StoryStage>
   ),
 }
 export const ResponsiveWidth: ImageStory = {
   render: () => (
     <StoryStage>
-      <Image src={imageSrc} />
+      <Image src={imageSrc} height='300px' objectPosition='left' />
     </StoryStage>
   ),
 }
 export const SpecificWidthAndHeight: ImageStory = {
   render: () => (
     <StoryStage>
-      <Image src={imageSrc} />
+      <Image src={imageSrc} height='300px' width='200px' />
     </StoryStage>
   ),
 }
 export const ObjectFit: ImageStory = {
   render: () => (
     <StoryStage>
-      <Image src={imageSrc} />
+      <Image src={imageSrc} height='300px' width='200px' />
+      <Image src={imageSrc} height='300px' width='200px' objectFit='cover' />
+      <Image src={imageSrc} height='300px' width='200px' objectFit='contain' />
     </StoryStage>
   ),
 }
@@ -183,44 +117,52 @@ const meta: Meta<typeof Image> = {
           </Section>
 
           <Section heading='Examples & Variations'>
-            <StoryHeading storyName='Rounded' storyTitle={meta.title} />
+            <StoryHeading storyName='Rounded & Border Radius' storyTitle={meta.title} />
             <Text textStyle='paragraph'>Text</Text>
             <DocTable
               columns={[
                 { field: 'size', heading: 'Rounded' },
-                { field: 'useCase', heading: 'Use Case' },
+                { field: 'useCase', heading: 'Use case' },
               ]}
               data={[
                 {
-                  size: 'Default',
-                  useCase: 'Text',
+                  size: 'Border Radius',
+                  useCase: 'Use borderRadius prop to apply rounded corners to images',
                 },
                 {
                   size: 'Rounded Top',
-                  useCase: 'Text',
+                  useCase: 'To round just the top or some corners of an image use the rounded prop',
                 },
                 {
                   size: 'Circle',
-                  useCase: 'Text',
+                  useCase: '1:1 height and width with Border Radius prop set to full will achieve a circle',
                 },
                 {
                   size: 'Arch',
-                  useCase: 'Text',
+                  useCase:
+                    'To render the arch silhouette use a combination of rounded right and borderRadius full. This works best on images with at least a 16:9 ration for the width and hight. ',
                 },
                 {
                   size: 'Half Circle',
-                  useCase: 'Text',
+                  useCase:
+                    'To render the arch silhouette use a combination of rounded top and borderRadius full. The image hight must be set to half the image width.',
                 },
               ]}
             />
             {/* <LiveDemo code={ExamplesAndVariations} /> */}
             <StoryHeading storyName='Box Shawdow' storyTitle={meta.title} />
-            <Text textStyle='paragraph'>Text</Text>
+            <Text textStyle='paragraph'>
+              Adding boxShadowSize to images work best when images are actionable.
+            </Text>
             {/* <LiveDemo code={BoxShawdow} /> */}
             <StoryHeading storyName='Responsive Width' storyTitle={meta.title} />
-            <Text textStyle='paragraph'>Text</Text>
+            <Text textStyle='paragraph'>
+              Using a combination of responsive widths, heights, and image position props will allow for the
+              best outcome for any use case. Image assets and apis such as fastly can help to ensure assets
+              match the image specs and optimize file size.
+            </Text>
             {/* <LiveDemo code={ResponsiveWidth} /> */}
-            <StoryHeading storyName='Specific Width and Height' storyTitle={meta.title} />
+            <StoryHeading storyName='Specific Width And Height' storyTitle={meta.title} />
             <Text textStyle='paragraph'>Text</Text>
             {/* <LiveDemo code={SpecificWidthAndHeight} /> */}
             <StoryHeading storyName='Object-Fit' storyTitle={meta.title} />
@@ -233,15 +175,18 @@ const meta: Meta<typeof Image> = {
               data={[
                 {
                   size: 'Default/Unset',
-                  useCase: 'Text',
+                  useCase:
+                    'Use this with caution, image assets would ideally match the same ratio at twice the size for high resolution screens. ',
                 },
                 {
                   size: 'Cover',
-                  useCase: 'Text',
+                  useCase:
+                    'Most uses of images should be using cover to display images. This helps to make for a consistent front end experience that matches brand themes.',
                 },
                 {
                   size: 'Contain',
-                  useCase: 'Text',
+                  useCase:
+                    'Contain should be used for when its required that none of the image is cropped at any size or breakpoint. Images like logos and other text based images are likely examples.',
                 },
               ]}
             />
@@ -249,16 +194,24 @@ const meta: Meta<typeof Image> = {
           </Section>
           <Section heading='Image v.s Background Image'>
             <Text textStyle='paragraph'>
-              There are several ways to incorporate images into a website's UI. One common approach is to use
-              images as part of the components layout, such as by including a banner image at the top of the
-              page or using images to break up text blocks. Another approach is to use images as part of
-              individual content items, such as including product images on an e-commerce website or using
-              images to illustrate articles. It is important to consider factors such as image size and
-              resolution, placement and alignment within the page layout, and accessibility for users with
-              disabilities. It's also important to optimize images for web use in order to ensure fast loading
-              times and good performance on a variety of devices and screen sizes. Overall, effective website
-              image UI can help to enhance the user experience and communicate important information to
-              website visitors.
+              CSS images and background images are both used to display images on a website, but there are
+              some key differences between the two. A CSS image is an image that is inserted directly into the
+              content of an HTML page using the &lt;img&gt; tag. CSS can be used to apply styling to the
+              image, such as setting the width and height, adjusting the position, or adding borders and
+              effects. A background image, on the other hand, is an image that is used as the background for
+              an HTML element, such as a div or a section. The image is specified using CSS, and can be
+              positioned and sized in a variety of ways. Background images are often used to add visual
+              interest to a webpage or to provide a backdrop for other content. One of the main differences
+              between CSS images and background images is how they are treated by search engines and screen
+              readers. CSS images inserted using the &lt;img&gt; tag are more likely to be recognized by
+              search engines and are more accessible to screen readers, as they are considered part of the
+              content of the page. Background images, on the other hand, are often ignored by search engines
+              and may not be accessible to users with visual impairments. Another difference between the two
+              is the way they are loaded. CSS images are loaded as separate files, which can slow down the
+              page loading time if there are too many of them. Background images, on the other hand, are
+              loaded as part of the CSS file, which can improve page loading times and reduce server requests.
+              Overall, both CSS images and background images have their own strengths and weaknesses, and
+              their use depends on the specific needs and goals of a website.
             </Text>
           </Section>
           <Section heading='Usage'>

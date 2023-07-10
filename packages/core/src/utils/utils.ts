@@ -383,3 +383,15 @@ export const borders = (props) => {
     },
   }
 }
+
+export const colorScheme = ({ colorScheme, ...props }) => {
+  if (!colorScheme) return ''
+
+  const { foreground, background } = themeGet(`colorSchemes.${colorScheme}`)(props)
+
+  return `
+    background-color: ${background};
+    border-color: ${foreground};
+    color: ${foreground};
+  `
+}

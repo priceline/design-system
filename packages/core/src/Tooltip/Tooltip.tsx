@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import { Box } from '../Box'
 import styled, { withTheme } from 'styled-components'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
+import { themeGet } from '@styled-system/theme-get'
+import { applyVariations, getPaletteColor, deprecatedColorValue, colorScheme } from '../utils'
 
 const arrowShadow = (props) => {
   return props.top
@@ -80,7 +81,18 @@ const TooltipContent = styled(Box)`
       ${(props) => getPaletteColor(props.bg || props.color, 'base')(props)};
 
     ${arrow} ${arrowPosition} ${arrowAlign} ${arrowShadow};
+    ${(props) => {
+      const colorScheme = themeGet(`colorSchemes.${props.colorScheme}`)(props)
+      return colorScheme
+        ? `
+        color: ${colorScheme.background};
+        border-color: ${colorScheme.background};
+      `
+        : ''
+    }}
   }
+
+  ${colorScheme}
 
   ${applyVariations('Tooltip')}
 `

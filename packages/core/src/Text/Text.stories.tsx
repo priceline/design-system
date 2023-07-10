@@ -193,3 +193,17 @@ export const ResponsiveTypographyVsFontSize = () => (
     <Text fontSize={['3', null, null, '4']}>Words and stuff subheading</Text>
   </>
 )
+
+const ColorSchemesTemplate = () => {
+  return (
+    <React.Fragment>
+      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+        <Text m={3} p={3} colorScheme={colorScheme} key={colorScheme} textStyle='heading1'>
+          <Text>{colorScheme}</Text>
+        </Text>
+      ))}
+    </React.Fragment>
+  )
+}
+export const ColorSchemes = ColorSchemesTemplate.bind({})
+ColorSchemesTemplate.args = {}

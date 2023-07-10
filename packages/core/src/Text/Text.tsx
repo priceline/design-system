@@ -40,6 +40,7 @@ import {
 
 import {
   applyVariations,
+  colorScheme,
   deprecatedColorValue,
   getPaletteColor,
   textAlignAttrs,
@@ -135,7 +136,7 @@ const textProps: React.FC<ITextProps> = css`
   ${bold}
   ${textDecoration}
   ${textShadow}
-
+  ${colorScheme}
 
   ${(props) =>
     compose(

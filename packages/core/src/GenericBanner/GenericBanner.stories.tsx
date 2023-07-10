@@ -14,7 +14,6 @@ export default {
 }
 
 const UnderlinedLinkText = styled(Text)`
-  z-index: 2;
   text-decoration: underline;
   &:hover {
     color: ${(props) => getPaletteColor(props.hoverColor)};

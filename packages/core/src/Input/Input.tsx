@@ -1,6 +1,15 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
+import {
+  space,
+  fontSize,
+  borderRadius,
+  zIndex,
+  SpaceProps,
+  FontSizeProps,
+  ZIndexProps,
+  compose,
+} from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import PropTypes from 'prop-types'
 import { Text, ITextProps } from '../Text'
@@ -29,6 +38,7 @@ const sizes = {
 }
 
 const StyledInput = styled.input.attrs(borderRadiusAttrs)`
+  position: relative;
   appearance: none;
   display: block;
   width: 100%;
@@ -51,7 +61,7 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
   ${applyVariations('Input')}
   ${borders}
 
-  ${(props) => compose(space, fontSize, borderRadius)(props)}
+  ${(props) => compose(space, fontSize, borderRadius, zIndex)(props)}
 `
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
@@ -71,6 +81,7 @@ const inputPropTypes = {
 export interface IInputProps
   extends SpaceProps,
     FontSizeProps,
+    ZIndexProps,
     Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>,
     React.RefAttributes<HTMLInputElement> {
   onChange?: (unknown) => unknown
@@ -81,19 +92,21 @@ export interface IInputProps
   borderRadius?: string
 }
 
-export const Input: React.FC<IInputProps> & { isField?: boolean; HelperText?: React.FC<ITextProps> } =
-  React.forwardRef((props: IInputProps, ref) => {
-    const { helperText, color, ...restProps } = props
-    return (
-      <>
-        <StyledInput {...restProps} color={color} ref={ref} />
-        {helperText &&
-          React.cloneElement(helperText, {
-            color: helperText?.props?.color || color,
-          })}
-      </>
-    )
-  })
+export const Input: React.FC<IInputProps> & {
+  isField?: boolean
+  HelperText?: React.FC<ITextProps>
+} = React.forwardRef((props: IInputProps, ref) => {
+  const { helperText, color, ...restProps } = props
+  return (
+    <>
+      <StyledInput {...restProps} color={color} ref={ref} />
+      {helperText &&
+        React.cloneElement(helperText, {
+          color: helperText.props.color || color,
+        })}
+    </>
+  )
+})
 
 const HelperText = styled(Text).attrs(() => ({
   mt: 2,

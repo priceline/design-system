@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
-import { Box, Text } from '..'
+import { Star } from 'pcln-icons'
+import styled from 'styled-components'
+import { Box, Flex, Text } from '..'
 import { argTypes, defaultArgs } from './Box.stories.args'
 
 export default {
@@ -178,3 +180,37 @@ CustomColor.args = {
   color: 'magenta',
   bg: '#ebfa',
 }
+
+const ColorSchemeWithAttrs = styled(Box).attrs(() => ({
+  colorScheme: 'cautionLight',
+}))``
+
+const ColorSchemesTemplate = () => {
+  return (
+    <React.Fragment>
+      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+        <Box m={3} p={3} colorScheme={colorScheme} key={colorScheme}>
+          <Flex flexDirection='column'>
+            <Text textStyle='heading1' mb={2}>
+              {colorScheme}
+            </Text>
+            <Flex alignItems='center'>
+              <Text>Children inherit colors from the color scheme by default</Text>
+              <Star />
+            </Flex>
+
+            <Flex alignItems='center'>
+              <Text color='text'>Custom text and icon colors override the color scheme</Text>
+              <Star color='alert' />
+            </Flex>
+          </Flex>
+        </Box>
+      ))}
+      <ColorSchemeWithAttrs m={3} p={3}>
+        <Text>Using attrs and colorScheme</Text>
+      </ColorSchemeWithAttrs>
+    </React.Fragment>
+  )
+}
+export const ColorSchemes = ColorSchemesTemplate.bind({})
+ColorSchemesTemplate.args = {}
