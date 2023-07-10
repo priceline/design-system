@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Remove unnecessary prettier dependency",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

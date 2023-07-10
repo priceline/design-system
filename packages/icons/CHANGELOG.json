@@ -2,6 +2,48 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.6.0",
+      "tag": "pcln-icons_v5.6.0",
+      "date": "Thu, 15 Jun 2023 18:56:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade Storybook to v7",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "50f7b4c4b5b20c0d0854979a8478d5d2d6faf26b"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.5.1",
+      "tag": "pcln-icons_v5.5.1",
+      "date": "Thu, 08 Jun 2023 15:26:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "replaced the icons carryonbag, personalitem  with correct width and height",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "08388066c5dba8fa311d29d4cab79d783396c16e"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.5.0",
+      "tag": "pcln-icons_v5.5.0",
+      "date": "Wed, 17 May 2023 14:36:53 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added new checkedBag, carryOnBag and personalItem icons",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "2297ded2238e755bb1215435cc38921833aab344"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.0",
       "tag": "pcln-icons_v5.4.0",
       "date": "Wed, 03 May 2023 14:56:40 GMT",

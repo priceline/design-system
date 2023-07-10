@@ -31,14 +31,9 @@ const Template = (args) => (
   </Box>
 )
 
-export const Typography = Template.bind({})
+export const TextStyle = Template.bind({})
 
-export const ResponsiveTypography = Template.bind({})
-ResponsiveTypography.args = {
-  textStyle: ['heading6', 'heading5', 'heading4', 'heading3', 'heading2', 'heading1'],
-}
-
-export const TypographyScale = () => (
+export const TextStyleGallery = () => (
   <Box>
     {textStylesValues.map((textStyle) => (
       <Box mb={5} key={textStyle}>
@@ -52,6 +47,11 @@ export const TypographyScale = () => (
     ))}
   </Box>
 )
+
+export const TextStyleResponsive = Template.bind({})
+TextStyleResponsive.args = {
+  textStyle: ['heading6', 'heading5', 'heading4', 'heading3', 'heading2', 'heading1'],
+}
 
 export const FontSize = () => (
   <div>

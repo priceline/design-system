@@ -1,6 +1,33 @@
 # Change Log - pcln-slider
 
-This log was last generated on Tue, 02 May 2023 14:18:09 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+
+## 5.2.2
+Tue, 27 Jun 2023 15:50:08 GMT
+
+_Version update only_
+
+## 5.2.1
+Fri, 16 Jun 2023 17:36:22 GMT
+
+_Version update only_
+
+## 5.2.0
+Thu, 15 Jun 2023 18:56:18 GMT
+
+### Minor changes
+
+- Upgrade Storybook to v7
+
+## 5.1.8
+Thu, 08 Jun 2023 15:26:05 GMT
+
+_Version update only_
+
+## 5.1.7
+Mon, 22 May 2023 13:19:55 GMT
+
+_Version update only_
 
 ## 5.1.6
 Tue, 02 May 2023 14:18:09 GMT

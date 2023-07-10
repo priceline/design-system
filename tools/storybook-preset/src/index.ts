@@ -1,6 +1,4 @@
 export * from '@storybook/addon-actions'
-export * from '@storybook/addon-viewport'
-export * from 'storybook-addon-performance'
 
 /** @public */
 export const heftStoryGlobs = ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)']
@@ -10,11 +8,10 @@ export const babelStoryGlobs = ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)']
 
 /** @public */
 export const storykitAddons = [
-  '@storybook/addon-links',
   '@storybook/addon-essentials',
   '@storybook/addon-a11y',
-  'storybook-addon-performance/register',
-  'addon-screen-reader',
+  'storybook-addon-designs',
+  'storybook-addon-performance',
 ]
 
 /** @public */
@@ -24,13 +21,7 @@ export const features = {
 }
 
 /** @public */
-export const framework = '@storybook/react'
-
-/** @public */
-export const core = {
-  builder: 'webpack5',
-}
+export const framework = '@storybook/react-vite'
 
 export * from './decorators'
-export * from './parameters'
-export * from './preset'
+export { parameters } from './parameters'

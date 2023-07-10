@@ -1,6 +1,6 @@
 {
   "name": "pcln-popover",
-  "version": "5.2.3",
+  "version": "5.4.0",
   "description": "React component for popover",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -39,6 +39,7 @@
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.16.0",
     "@rushstack/eslint-patch": "^1.1.0",
+    "@storybook/addon-actions": "^7.0.20",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "cross-env": "^7.0.3",
@@ -52,12 +53,13 @@
     "pcln-slider": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.11",
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-    "pcln-design-system": "^5.8.4",
+    "pcln-design-system": "^5.12.0",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",

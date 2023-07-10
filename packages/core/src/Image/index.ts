@@ -1,1 +1,3 @@
-export { default as Image, IImageProps } from './Image'
+export type { IImageProps } from './Image'
+
+export { default as Image } from './Image'

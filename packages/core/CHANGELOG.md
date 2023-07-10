@@ -1,6 +1,57 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 02 May 2023 14:18:09 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+
+## 5.12.0
+Tue, 27 Jun 2023 15:50:08 GMT
+
+### Minor changes
+
+- remove @storybook/addon-links as peer dep, and remove LiveDemo component
+
+### Patches
+
+- change the image used in the Hero story
+
+## 5.11.1
+Fri, 16 Jun 2023 17:36:22 GMT
+
+### Patches
+
+- Fix dependency issues with react-element-to-jsx-string and @storybook/addon-links introduced by moving docs-utils to core
+
+## 5.11.0
+Thu, 15 Jun 2023 18:56:18 GMT
+
+### Minor changes
+
+- Upgrade Storybook to v7
+
+### Patches
+
+- add buttonChip state
+
+## 5.10.0
+Thu, 08 Jun 2023 15:26:05 GMT
+
+### Minor changes
+
+- Add Grid component
+
+### Patches
+
+- fractional coverage regression after transpile config change
+
+## 5.9.0
+Mon, 22 May 2023 13:19:55 GMT
+
+### Minor changes
+
+- Add optional width Prop to Button Chip
+
+### Patches
+
+- pass props to ChipButton outline so it can have color
 
 ## 5.8.4
 Tue, 02 May 2023 14:18:09 GMT

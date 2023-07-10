@@ -4,8 +4,10 @@ module.exports = () => ({
       require('@babel/preset-env'),
       {
         modules: false,
-        useBuiltIns: 'entry',
-        corejs: 3,
+        useBuiltIns: 'usage',
+        corejs: '3.30',
+        targets: 'last 2 versions, not dead, > 0.5%',
+        debug: true,
       },
     ],
     require('@babel/preset-react'),

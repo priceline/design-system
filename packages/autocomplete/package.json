@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "5.1.8",
+  "version": "5.3.2",
   "description": "React autocomplete component built with Downshift",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -24,9 +24,9 @@
     "test:snapshots": "jest --runInBand --updateSnapshot"
   },
   "dependencies": {
-    "downshift": "^3.2.6",
+    "downshift": "^7.6.0",
     "prop-types": "^15.8.1",
-    "styled-system": "^4.2.4"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
@@ -35,6 +35,7 @@
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.17.0",
     "@rushstack/eslint-patch": "^1.2.0",
+    "@styled-system/theme-get": "^5.1.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "cat-names": "^3.0.0",
@@ -49,14 +50,15 @@
     "pcln-icons": "workspace:*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.11",
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": "^5.8.4",
+    "pcln-design-system": "^5.12.0",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
-    "styled-components": ">=5 <5.3.4"
+    "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6"
   }
 }

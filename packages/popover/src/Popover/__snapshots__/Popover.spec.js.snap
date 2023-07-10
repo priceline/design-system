@@ -218,7 +218,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
     color="background.lightest"
     data-placement="bottom"
     data-testid="popover-arrow"
-    style="top: 3px; left: 0px;"
+    style="top: 3px; left: -1px;"
   />
 </div>
 `;
@@ -335,7 +335,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
     color="background.lightest"
     data-placement="bottom-end"
     data-testid="popover-arrow"
-    style="top: 3px; left: 0px;"
+    style="top: 3px; left: -1px;"
   />
 </div>
 `;
@@ -452,7 +452,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
     color="background.lightest"
     data-placement="bottom-start"
     data-testid="popover-arrow"
-    style="top: 3px; left: 0px;"
+    style="top: 3px; left: -1px;"
   />
 </div>
 `;

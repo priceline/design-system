@@ -4,16 +4,24 @@ import { Meta, StoryObj } from '@storybook/react'
 import {
   DocTable,
   Hero,
-  LiveDemo,
+  // LiveDemo,
   RelatedComponentContainer,
   Section,
   StoryHeading,
   StoryStage,
   TableOfContents,
-} from 'pcln-docs-utils'
+} from '../DocsUtils'
 import React from 'react'
-import { IImageProps, Image, Text, ThemeProvider, Box } from '..'
+import { Image, Text, ThemeProvider, Box } from '..'
+import type { IImageProps } from './Image'
 import { objectFits, objectPositions, borderRadii, rounded, shadows, colors } from '../storybook/args'
+
+import heroImage from './Image.Image.Hero.png'
+import contentAlignmentFormatingImage from './Image.Image.ContentAlignmentFormating.png'
+import logoImage from './Image.Image.Logo.png'
+import maintainingAspectRatioImage from './Image.Image.MaintainingAspectRatio.png'
+import responsiveVariableWidthsImage from './Image.Image.ResponsiveVariableWidths.png'
+import relatedComponentsImage from './Image.Image.RelatedComponents.png'
 
 type ImageStory = StoryObj<IImageProps>
 
@@ -144,23 +152,14 @@ const meta: Meta<typeof Image> = {
     docs: {
       page: () => (
         <ThemeProvider>
-          <Hero name='Image' img={undefined /**  HeroImage */}>
+          <Hero name='Image' img={heroImage}>
             Images are graphical user interface elements used to display images on a website. Images are a key
             component of many websites, and they can serve a variety of purposes, such as providing visual
             interest, showcasing products or services, or conveying important information.
           </Hero>
 
           <TableOfContents
-            links={[
-              'Overview',
-              'Props',
-              'Examples & Variations',
-              'States',
-              'Theming',
-              'Usage',
-              `Do's and Don'ts`,
-              'Related Components',
-            ]}
+            links={['Overview', 'Props', 'Examples & Variations', 'Usage', 'Related Components']}
           />
 
           <Section heading='Overview'>
@@ -194,39 +193,59 @@ const meta: Meta<typeof Image> = {
               data={[
                 {
                   size: 'Default',
-                  useCase: '',
+                  useCase: 'Text',
                 },
                 {
                   size: 'Rounded Top',
-                  useCase: '',
+                  useCase: 'Text',
                 },
                 {
                   size: 'Circle',
-                  useCase: '',
+                  useCase: 'Text',
                 },
                 {
                   size: 'Arch',
-                  useCase: '',
+                  useCase: 'Text',
                 },
                 {
                   size: 'Half Circle',
-                  useCase: '',
+                  useCase: 'Text',
                 },
               ]}
             />
-            <LiveDemo code={ExamplesAndVariations} />
+            {/* <LiveDemo code={ExamplesAndVariations} /> */}
             <StoryHeading storyName='Box Shawdow' storyTitle={meta.title} />
             <Text textStyle='paragraph'>Text</Text>
-            <LiveDemo code={BoxShawdow} />
+            {/* <LiveDemo code={BoxShawdow} /> */}
             <StoryHeading storyName='Responsive Width' storyTitle={meta.title} />
             <Text textStyle='paragraph'>Text</Text>
-            <LiveDemo code={ResponsiveWidth} />
+            {/* <LiveDemo code={ResponsiveWidth} /> */}
             <StoryHeading storyName='Specific Width and Height' storyTitle={meta.title} />
             <Text textStyle='paragraph'>Text</Text>
-            <LiveDemo code={SpecificWidthAndHeight} />
+            {/* <LiveDemo code={SpecificWidthAndHeight} /> */}
             <StoryHeading storyName='Object-Fit' storyTitle={meta.title} />
             <Text textStyle='paragraph'>Text</Text>
-            <LiveDemo code={ObjectFit} />
+            <DocTable
+              columns={[
+                { field: 'size', heading: 'Rounded' },
+                { field: 'useCase', heading: 'Use Case' },
+              ]}
+              data={[
+                {
+                  size: 'Default/Unset',
+                  useCase: 'Text',
+                },
+                {
+                  size: 'Cover',
+                  useCase: 'Text',
+                },
+                {
+                  size: 'Contain',
+                  useCase: 'Text',
+                },
+              ]}
+            />
+            {/* <LiveDemo code={ObjectFit} /> */}
           </Section>
           <Section heading='Image v.s Background Image'>
             <Text textStyle='paragraph'>
@@ -251,7 +270,7 @@ const meta: Meta<typeof Image> = {
               the height of the image.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Image src={imageSrc} />
+              <Image src={contentAlignmentFormatingImage} />
             </Box>
             <Text textStyle='subheading3' my={4}>
               Responsive and Variable Widths
@@ -262,7 +281,7 @@ const meta: Meta<typeof Image> = {
               width. When cropping is likely keep important content in view at any width.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Image />
+              <Image src={responsiveVariableWidthsImage} />
             </Box>
             <Text textStyle='subheading3' my={4}>
               Maintaining Aspect Ratio
@@ -275,7 +294,7 @@ const meta: Meta<typeof Image> = {
               per use bases is the most optimal option to control outcome.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Image src={imageSrc} />
+              <Image src={maintainingAspectRatioImage} />
             </Box>
             <Text textStyle='subheading3' my={4}>
               Logo Images
@@ -285,16 +304,11 @@ const meta: Meta<typeof Image> = {
               display size. Because logos include text more often than not it is important
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
-              <Image src={imageSrc} />
+              <Image src={logoImage} />
             </Box>
           </Section>
-
           <Section heading='Related Components'>
-            <RelatedComponentContainer>
-              {/* e.g <RelatedComponent name='ButtonChip' linkTo='core-chip-ButtonChip'>
-                <ButtonChip>Button Chip</ButtonChip>
-              </RelatedComponent> */}
-            </RelatedComponentContainer>
+            <Image src={relatedComponentsImage} />
           </Section>
         </ThemeProvider>
       ),

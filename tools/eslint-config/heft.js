@@ -9,6 +9,7 @@ module.exports = {
     '@rushstack/eslint-config/mixins/tsdoc',
     '@rushstack/eslint-config/mixins/react',
     'plugin:storybook/recommended',
+    'prettier',
   ],
   plugins: ['react-hooks', 'jsx-a11y'],
   parserOptions: { tsconfigRootDir: __dirname },
@@ -22,6 +23,16 @@ module.exports = {
     '@rushstack/typedef-var': 0,
 
     'react/jsx-no-bind': 0,
+    'react/jsx-curly-brace-presence': [2, { props: 'never', children: 'never' }],
+
+    // (Story) in decorators
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'parameter',
+        format: ['camelCase', 'PascalCase'],
+      },
+    ],
   },
   overrides: [
     { files: ['**/svg-build/**', '**/*.stories*'], rules: { '@typescript-eslint/naming-convention': 'off' } },

@@ -41,4 +41,4 @@ Container.propTypes = propTypes
 
 Container.displayName = 'Container'
 
-export default Container
+export { Container }

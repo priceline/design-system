@@ -1,6 +1,40 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+
+## 5.3.2
+Tue, 27 Jun 2023 15:50:08 GMT
+
+_Version update only_
+
+## 5.3.1
+Fri, 16 Jun 2023 17:36:22 GMT
+
+_Version update only_
+
+## 5.3.0
+Thu, 15 Jun 2023 18:56:18 GMT
+
+### Minor changes
+
+- Upgrade Storybook to v7
+
+## 5.2.0
+Thu, 08 Jun 2023 15:26:05 GMT
+
+### Minor changes
+
+- Bumped downshift and styled-system dependencies to their latest versions
+
+## 5.1.10
+Mon, 22 May 2023 13:19:55 GMT
+
+_Version update only_
+
+## 5.1.9
+Wed, 17 May 2023 14:36:53 GMT
+
+_Version update only_
 
 ## 5.1.8
 Wed, 03 May 2023 14:56:40 GMT

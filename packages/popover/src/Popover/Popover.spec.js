@@ -1,6 +1,6 @@
-import React from 'react'
-import { render, fireEvent, screen } from 'testing-library'
 import { Box, Button, Text, ThemeProvider } from 'pcln-design-system'
+import React from 'react'
+import { fireEvent, render, screen } from 'testing-library'
 
 import Popover from './Popover'
 
@@ -131,29 +131,45 @@ describe('Popover', () => {
       expect(getByText('Hello there!')).toBeTruthy()
     })
 
-    it('onOpen event', () => {
-      const mockOnOpen = jest.fn()
+    it('onBeforeOpen and onOpen event', () => {
+      const callLog = []
+      const mockOnBeforeOpen = jest.fn(() => {
+        callLog.push('mockOnBeforeOpen')
+      })
+      const mockOnOpen = jest.fn(() => {
+        callLog.push('mockOnOpen')
+      })
       const { getByText } = render(
-        <Popover {...popoverProps} onOpen={mockOnOpen}>
+        <Popover {...popoverProps} onBeforeOpen={mockOnBeforeOpen} onOpen={mockOnOpen}>
           <button>{triggerButtonText}</button>
         </Popover>
       )
 
+      expect(mockOnBeforeOpen).toHaveBeenCalledTimes(0)
       expect(mockOnOpen).toHaveBeenCalledTimes(0)
       fireEvent.click(getByText(triggerButtonText))
+      expect(mockOnBeforeOpen).toHaveBeenCalledTimes(1)
       expect(mockOnOpen).toHaveBeenCalledTimes(1)
+      expect(callLog).toMatchObject(['mockOnBeforeOpen', 'mockOnOpen'])
       expect(mockOnOpen).toHaveBeenCalledWith(expect.objectContaining({ type: 'click' }))
     })
 
-    it('onClose event', async () => {
-      const mockOnClose = jest.fn()
+    it('onBeforeClose and onClose event', async () => {
+      const callLog = []
+      const mockOnBeforeClose = jest.fn(() => {
+        callLog.push('mockOnBeforeClose')
+      })
+      const mockOnClose = jest.fn(() => {
+        callLog.push('mockOnClose')
+      })
       const { getByText } = render(
-        <Popover {...popoverProps} onClose={mockOnClose}>
+        <Popover {...popoverProps} onBeforeClose={mockOnBeforeClose} onClose={mockOnClose}>
           <button>{triggerButtonText}</button>
         </Popover>
       )
 
       fireEvent.click(getByText(triggerButtonText))
+      expect(mockOnBeforeClose).toHaveBeenCalledTimes(0)
       expect(mockOnClose).toHaveBeenCalledTimes(0)
       const dialog = await screen.findByRole('dialog')
       fireEvent.keyUp(dialog, {
@@ -161,7 +177,9 @@ describe('Popover', () => {
         keyCode: 27,
         which: 27,
       })
+      expect(mockOnBeforeClose).toHaveBeenCalledTimes(1)
       expect(mockOnClose).toHaveBeenCalledTimes(1)
+      expect(callLog).toMatchObject(['mockOnBeforeClose', 'mockOnClose'])
       expect(mockOnClose).toHaveBeenCalledWith(expect.any(Object))
     })
 

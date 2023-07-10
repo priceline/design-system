@@ -262,14 +262,10 @@ export const borderRadii = {
 export const maxContainerWidth = '1280px'
 
 export const shadows = {
-  sm:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
-  md:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
-  lg:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)',
-  xl:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)',
+  sm: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
+  md: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
+  lg: '0 -1px 0 0 rgba(0,0,0,0.03),0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)',
+  xl: '0 -1px 0 0 rgba(0,0,0,0.03),0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)',
   '2xl':
     '0 -1px 0 0 rgba(0,0,0,0.03),0 4px 12px 0 rgba(0,0,0,0.16),0 12px 12px -4px rgba(0,0,0,0.16),0 24px 64px -2px rgba(0,0,0,0.16)',
   'overlay-md':
@@ -399,3 +395,88 @@ const theme = {
 }
 
 export { theme }
+
+/** @public */
+export type TextStyle = {
+  fontWeight: number
+  fontSize: string
+  lineHeight: string
+}
+/** @public */
+export type PaletteFamily = {
+  lightest?: string
+  light?: string
+  tint?: string
+  base: string
+  heading?: string
+  tone?: string
+  dark?: string
+  shade?: string
+  darkest?: string
+}
+/** @public */
+export type PaletteFamilies = {
+  primary: PaletteFamily
+  secondary: PaletteFamily
+  text: PaletteFamily
+  highlight: PaletteFamily
+  success: PaletteFamily
+  error: PaletteFamily
+  warning: PaletteFamily
+  alert: PaletteFamily
+  caution: PaletteFamily
+  notify: PaletteFamily
+  pricePrimary: PaletteFamily
+  priceSecondary: PaletteFamily
+  strike: PaletteFamily
+  promoPrimary: PaletteFamily
+  promoSecondary: PaletteFamily
+  border: PaletteFamily
+  background: PaletteFamily
+}
+
+/** @public */
+export type ColorStyle = {
+  color: string
+  backgroundColor: string
+}
+
+/** @public */
+export type ColorStyles = {
+  whiteOnText: ColorStyle
+  whiteOnGray: ColorStyle
+  textOnLightGray: ColorStyle
+  whiteOnBlue: ColorStyle
+  blueOnLightBlue: ColorStyle
+  whiteOnGreen: ColorStyle
+  greenOnLightGreen: ColorStyle
+  whiteOnRed: ColorStyle
+  redOnLightRed: ColorStyle
+  textOnOrange: ColorStyle
+  whiteOnPurple: ColorStyle
+  purpleOnLightPurple: ColorStyle
+  textOnWhite: ColorStyle
+  grayOnWhite: ColorStyle
+  blueOnWhite: ColorStyle
+  greenOnWhite: ColorStyle
+  redOnWhite: ColorStyle
+  purpleOnWhite: ColorStyle
+  whiteOnDarkOrange: ColorStyle
+  info: ColorStyle
+  success: ColorStyle
+  warning: ColorStyle
+  danger: ColorStyle
+}
+
+/** @public */
+export type DesignSystemTheme = {
+  space: string[]
+  colors: Record<string, string>
+  componentStyles: Record<string, Record<string, Record<string, Record<string, unknown>>>>
+  mediaQueries: string[]
+  breakpoints: string[]
+  palette: PaletteFamilies
+  colorStyles: ColorStyles
+  textStyles: TextStyle[]
+  contrastRatio: number
+}

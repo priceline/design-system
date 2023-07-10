@@ -16,6 +16,7 @@
       "name": "prettier",
       "commandKind": "global",
       "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
+      "safeForSimultaneousRushProcesses": true,
 
       "autoinstallerName": "rush-prettier",
 
@@ -81,6 +82,7 @@
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
+      "ignoreMissingScript": true,
       "incremental": true
     },
 

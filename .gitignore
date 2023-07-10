@@ -73,6 +73,8 @@ common/autoinstallers/*/.npmrc
 **/types/**/*.d.ts
 tsdoc-metadata.json
 
+storybook-static/
+
 apps/docs/out/
 
 # Heft

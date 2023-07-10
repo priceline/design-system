@@ -23,6 +23,7 @@ module.exports = {
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': ['error'],
         '@typescript-eslint/explicit-function-return-type': 'off',
+        'react/jsx-curly-brace-presence': [2, { props: 'never', children: 'never' }],
       },
     },
     {

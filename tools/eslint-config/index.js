@@ -36,6 +36,7 @@ module.exports = {
         ignore: ['children'],
       },
     ],
+    'react/jsx-curly-brace-presence': [2, { props: 'never', children: 'never' }],
 
     // React hooks
     'react-hooks/rules-of-hooks': 'error',

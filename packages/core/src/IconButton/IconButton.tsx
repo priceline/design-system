@@ -1,8 +1,10 @@
+import type { IButtonProps } from '../Button'
+
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { Button, IButtonProps } from '../Button'
+import { Button } from '../Button'
 import { Flex } from '../Flex'
 import { applyVariations } from '../utils'
 

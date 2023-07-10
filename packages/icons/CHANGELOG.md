@@ -1,6 +1,27 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+This log was last generated on Thu, 15 Jun 2023 18:56:18 GMT and should not be manually modified.
+
+## 5.6.0
+Thu, 15 Jun 2023 18:56:18 GMT
+
+### Minor changes
+
+- Upgrade Storybook to v7
+
+## 5.5.1
+Thu, 08 Jun 2023 15:26:05 GMT
+
+### Patches
+
+- replaced the icons carryonbag, personalitem  with correct width and height
+
+## 5.5.0
+Wed, 17 May 2023 14:36:53 GMT
+
+### Minor changes
+
+- Added new checkedBag, carryOnBag and personalItem icons
 
 ## 5.4.0
 Wed, 03 May 2023 14:56:40 GMT

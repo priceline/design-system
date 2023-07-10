@@ -1,6 +1,43 @@
 # Change Log - pcln-modal
 
-This log was last generated on Wed, 03 May 2023 14:56:40 GMT and should not be manually modified.
+This log was last generated on Fri, 07 Jul 2023 17:19:54 GMT and should not be manually modified.
+
+## 5.3.3
+Fri, 07 Jul 2023 17:19:54 GMT
+
+_Version update only_
+
+## 5.3.2
+Tue, 27 Jun 2023 15:50:08 GMT
+
+_Version update only_
+
+## 5.3.1
+Fri, 16 Jun 2023 17:36:22 GMT
+
+_Version update only_
+
+## 5.3.0
+Thu, 15 Jun 2023 18:56:18 GMT
+
+### Minor changes
+
+- Upgrade Storybook to v7
+
+## 5.2.6
+Thu, 08 Jun 2023 15:26:05 GMT
+
+_Version update only_
+
+## 5.2.5
+Mon, 22 May 2023 13:19:55 GMT
+
+_Version update only_
+
+## 5.2.4
+Wed, 17 May 2023 14:36:53 GMT
+
+_Version update only_
 
 ## 5.2.3
 Wed, 03 May 2023 14:56:40 GMT

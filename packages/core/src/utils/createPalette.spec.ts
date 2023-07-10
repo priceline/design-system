@@ -50,7 +50,7 @@ describe('createPalette', () => {
         },
         "highlight": Object {
           "base": "#8cdd36",
-          "dark": "#2e9000",
+          "dark": "#060",
           "light": "#d0f1ac",
           "shade": "#017000",
           "tint": "#b9ea85",

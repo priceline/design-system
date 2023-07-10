@@ -1,4 +1,3 @@
-import { useRef, useState } from 'react'
 import {
   arrow,
   autoUpdate,
@@ -11,14 +10,25 @@ import {
   useHover,
   useInteractions,
 } from '@floating-ui/react-dom-interactions'
+import { useRef, useState } from 'react'
 import getPopoverStyles from '../getPopoverStyles'
 
-function usePopover({ openOnFocus, openOnHover, openOnMount, placement, onClose, onOpen }) {
+function usePopover({
+  openOnFocus,
+  openOnHover,
+  openOnMount,
+  placement,
+  onClose,
+  onOpen,
+  onBeforeOpen,
+  onBeforeClose,
+}) {
   const [isOpen, setOpen] = useState(openOnMount)
 
   const handleClose = (e) => {
     setOpen(false)
-    if (onClose) onClose(e)
+    onBeforeClose?.(e)
+    onClose?.(e)
   }
 
   const handleOpen = (open) => {
@@ -27,9 +37,15 @@ function usePopover({ openOnFocus, openOnHover, openOnMount, placement, onClose,
     !open && onClose && onClose()
   }
 
-  const handleToggle = (evt) => {
+  const handleToggle = (e) => {
     setOpen((isOpen) => {
-      isOpen ? onClose?.(evt) : onOpen?.(evt)
+      if (isOpen) {
+        onBeforeClose?.(e)
+        onClose?.(e)
+      } else {
+        onBeforeOpen?.(e)
+        onOpen?.(e)
+      }
       return !isOpen
     })
   }

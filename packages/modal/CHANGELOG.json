@@ -2,6 +2,127 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "5.3.3",
+      "tag": "pcln-modal_v5.3.3",
+      "date": "Fri, 07 Jul 2023 17:19:54 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.2",
+      "tag": "pcln-modal_v5.3.2",
+      "date": "Tue, 27 Jun 2023 15:50:08 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.12.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.11.1` to `^5.12.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.1",
+      "tag": "pcln-modal_v5.3.1",
+      "date": "Fri, 16 Jun 2023 17:36:22 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.11.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.11.0` to `^5.11.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.0",
+      "tag": "pcln-modal_v5.3.0",
+      "date": "Thu, 15 Jun 2023 18:56:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade Storybook to v7",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "50f7b4c4b5b20c0d0854979a8478d5d2d6faf26b"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.11.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.10.0` to `^5.11.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.6",
+      "tag": "pcln-modal_v5.2.6",
+      "date": "Thu, 08 Jun 2023 15:26:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.10.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.2.6`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.9.0` to `^5.10.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.5",
+      "tag": "pcln-modal_v5.2.5",
+      "date": "Mon, 22 May 2023 13:19:55 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.2.5`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.8.4` to `^5.9.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.2.4",
+      "tag": "pcln-modal_v5.2.4",
+      "date": "Wed, 17 May 2023 14:36:53 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.2.4`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.2.3",
       "tag": "pcln-modal_v5.2.3",
       "date": "Wed, 03 May 2023 14:56:40 GMT",

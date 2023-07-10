@@ -19,7 +19,11 @@ export default {
   argTypes,
 }
 
-const Template = (args) => <Badge {...args}>badge</Badge>
+const Template = (args) => (
+  <Badge bg='bla' {...args}>
+    badge
+  </Badge>
+)
 
 export const _Badge = Template.bind({})
 _Badge.args = {

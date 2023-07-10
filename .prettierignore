@@ -37,6 +37,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+**/.storybook/node_modules
 
 # Optional npm cache directory
 .npm
@@ -66,15 +67,36 @@ jspm_packages/
 common/deploy/
 common/temp/
 common/autoinstallers/*/.npmrc
-**/.rush/temp/
+**/temp/
+
 
 # build output
 **/dist/
+**/lib-commonjs/
+**/lib-esm/
+**/types/**/*.d.ts
+tsdoc-metadata.json
+
+storybook-static/
 
 apps/docs/out/
 
+# Heft
+**/.heft/
+
 # SVGR intermediate build steps
 packages/icons/components/
+
+# ESLint temp
+**/temp/_eslint-*.json
+
+# IDEs
+.vscode
+.idea
+
+package-lock.json
+.npmrc
+RELEASE_NOTES.md
 
 #-------------------------------------------------------------------------------------------------------------------
 # Prettier-specific overrides
