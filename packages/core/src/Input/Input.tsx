@@ -57,6 +57,12 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
     display: none;
   }
 
+  &:disabled {
+    background-color: ${getPaletteColor('background.light')};
+    color: ${getPaletteColor('text.light')};
+    cursor: not-allowed;
+  }
+
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Input')}
   ${borders}

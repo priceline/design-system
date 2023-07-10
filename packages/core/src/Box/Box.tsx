@@ -31,16 +31,16 @@ import {
 import propTypes from '@styled-system/prop-types'
 
 import {
+  applyVariations,
   borderRadiusAttrs,
   borderRadiusValues,
   boxShadowAttrs,
   boxShadowSizeValues,
-  applyVariations,
   color,
+  colorScheme,
   deprecatedColorValue,
   paletteFamilies,
   roundedValues,
-  colorScheme,
 } from '../utils'
 import { ColorSchemes } from '../theme'
 

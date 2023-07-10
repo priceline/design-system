@@ -2,11 +2,12 @@ import React from 'react'
 
 import { Select, Label, Box, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-import { argTypes } from './Select.stories.args'
+import { argTypes, defaultArgs } from './Select.stories.args'
 
 export default {
   title: 'Select',
   component: Select,
+  args: defaultArgs,
   argTypes,
 }
 
