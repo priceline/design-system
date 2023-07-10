@@ -25,6 +25,8 @@ export const ToggleComponent = () => {
       <Toggle label='With Icon' isOn={isOn} onToggle={onToggle} icon={icon} />
       <h4>Large With Icon</h4>
       <Toggle label='Large With Icon' isOn={isOn} onToggle={onToggle} height={50} icon={largeIcon} />
+      <h4>Disabled</h4>
+      <Toggle label='Default' isOn={isOn} onToggle={onToggle} disabled={true} />
     </>
   )
 }
