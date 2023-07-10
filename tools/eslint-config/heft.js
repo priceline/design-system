@@ -9,6 +9,7 @@ module.exports = {
     '@rushstack/eslint-config/mixins/tsdoc',
     '@rushstack/eslint-config/mixins/react',
     'plugin:storybook/recommended',
+    'prettier',
   ],
   plugins: ['react-hooks', 'jsx-a11y'],
   parserOptions: { tsconfigRootDir: __dirname },

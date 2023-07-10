@@ -132,8 +132,7 @@ const TRANSFORMER_INQUIRER_CHOICES = [
     value: 'rename-deprecated-props-text',
   },
   {
-    name:
-      'stamp-variation-solid-to-fill: Replaces the deprecated "solid" variation on Stamp elements with "fill"',
+    name: 'stamp-variation-solid-to-fill: Replaces the deprecated "solid" variation on Stamp elements with "fill"',
     value: 'stamp-variation-solid-to-fill',
   },
 ]
