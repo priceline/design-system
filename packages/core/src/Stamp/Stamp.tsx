@@ -19,7 +19,9 @@ import {
   getPaletteColor,
   getTextColorOn,
   deprecatedColorValue,
+  colorScheme,
 } from '../utils'
+import { ColorSchemes } from '../theme'
 
 const sizes = {
   small: css`
@@ -81,6 +83,7 @@ export interface IStampPropTypes extends SpaceProps, FontSizeProps, BorderRadius
   borderColor?: string
   size?: 'small' | 'medium'
   variation?: 'outline' | 'fill' | 'solid'
+  colorScheme?: keyof ColorSchemes
 }
 
 const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
@@ -97,6 +100,7 @@ const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
 
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Stamp', variations)};
+  ${colorScheme}
 
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `

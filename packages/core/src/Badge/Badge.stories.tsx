@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Badge } from '..'
+import type { ColorSchemes as ColorSchemesType } from '..'
 import { argTypes } from './Badge.stories.args'
 
 // for Args
@@ -19,11 +20,7 @@ export default {
   argTypes,
 }
 
-const Template = (args) => (
-  <Badge bg='bla' {...args}>
-    badge
-  </Badge>
-)
+const Template = (args) => <Badge {...args}>badge</Badge>
 
 export const _Badge = Template.bind({})
 _Badge.args = {
@@ -43,3 +40,17 @@ LightBlueAndTextCustom.args = {
   bg: 'primary.light',
   color: 'text',
 }
+
+const ColorSchemesTemplate = (args) => {
+  return (
+    <React.Fragment>
+      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+        <Badge m={3} p={3} colorScheme={colorScheme as keyof ColorSchemesType} key={colorScheme}>
+          {colorScheme}
+        </Badge>
+      ))}
+    </React.Fragment>
+  )
+}
+export const ColorSchemes = ColorSchemesTemplate.bind({})
+ColorSchemesTemplate.args = {}

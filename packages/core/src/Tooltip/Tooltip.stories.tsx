@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Flex, FormField, Label, Input, Tooltip } from '..'
-import { Check } from 'pcln-icons'
+import { Check, Bus } from 'pcln-icons'
 import { argTypes } from './Tooltip.stories.args'
 import styled from 'styled-components'
 
@@ -143,3 +143,31 @@ export const WithAnchors = () => (
     </Box>
   </FlexColumn>
 )
+
+const ColorSchemesTemplate = () => {
+  return (
+    <React.Fragment>
+      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+        <Box mb='70px' key={colorScheme}>
+          <Tooltip top right colorScheme={colorScheme}>
+            <Flex alignItems='center'>
+              <Bus mr={2} />
+              {colorScheme}
+            </Flex>
+          </Tooltip>
+          <FormField>
+            <Label>Email Address</Label>
+            <Input
+              defaultValue='albus.dumbledore@priceline.com'
+              id='form-field-7'
+              placeholder='example@test.com'
+            />
+            <Check color='primary' />
+          </FormField>
+        </Box>
+      ))}
+    </React.Fragment>
+  )
+}
+export const ColorSchemes = ColorSchemesTemplate.bind({})
+ColorSchemesTemplate.args = {}
