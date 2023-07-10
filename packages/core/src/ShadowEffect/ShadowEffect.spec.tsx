@@ -20,8 +20,8 @@ describe('ShadowEffect', () => {
     expect(mockOnOpen).toHaveBeenCalledTimes(1)
     expect(mockOnClick).toHaveBeenCalledTimes(1)
     expect(screen.queryByTestId('overlay')).toBeInTheDocument()
-    expect(screen.queryByTestId('overlay')).toHaveStyleRule('z-index', '400')
-    expect(screen.queryByTestId('input')).toHaveStyleRule('z-index', '450')
+    expect(screen.queryByTestId('overlay')).toHaveStyleRule('z-index', '550')
+    expect(screen.queryByTestId('input')).toHaveStyleRule('z-index', '600')
   })
 
   it('opens with custom z-index', () => {

@@ -566,13 +566,13 @@ Object {
     "auto": "auto",
     "dropdown": 100,
     "fixed": 300,
-    "modal": 600,
+    "modal": 800,
     "offCanvas": 500,
-    "onOverlay": 450,
-    "overlay": 400,
+    "onOverlay": 600,
+    "overlay": 550,
     "popover": 700,
     "sticky": 200,
-    "tooltip": 800,
+    "tooltip": 400,
   },
 }
 `;
