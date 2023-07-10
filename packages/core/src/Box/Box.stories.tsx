@@ -152,6 +152,26 @@ export const DirectionalMargin = () => (
   </Box>
 )
 
+export const Overflow = () => (
+  <Box p={3}>
+    <Box overflow='hidden' maxHeight='100px' maxWidth='100px' mb={3} color='background.darkest' bg='primary'>
+      This is a box with hidden overflow. This is a box with hidden overflow.
+    </Box>
+    <Box overflow='clip' maxHeight='100px' maxWidth='100px' mb={3} color='background.darkest' bg='primary'>
+      This is a box with clip overflow. This is a box with clip overflow.
+    </Box>
+    <Box overflow='scroll' maxHeight='100px' maxWidth='100px' mb={3} color='background.darkest' bg='primary'>
+      This is a box with scroll overflow. This is a box with scroll overflow.
+    </Box>
+    <Box overflow='auto' maxHeight='100px' maxWidth='100px' mb={3} color='background.darkest' bg='primary'>
+      This is a box with auto overflow. This is a box with auto overflow.
+    </Box>
+    <Box overflow='visible' maxHeight='100px' maxWidth='100px' mb={3} color='background.darkest' bg='primary'>
+      This is a box with visible overflow. This is a box with visible overflow.
+    </Box>
+  </Box>
+)
+
 export const ThemeUserCaseColorText = () => (
   <React.Fragment>
     <Box p={3}>

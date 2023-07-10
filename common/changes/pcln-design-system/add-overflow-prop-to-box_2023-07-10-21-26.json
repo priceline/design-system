@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add overflow support to Box",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
