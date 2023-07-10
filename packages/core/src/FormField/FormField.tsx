@@ -11,8 +11,7 @@ export interface IFormFieldProps extends IBoxProps {
 }
 
 const DisableableBox = styled(Box)`
-  ${(props) =>
-    props.disabled &&
+  ${(props) => props.disabled &&
     `
     background-color: ${getPaletteColor('background.base')(props)};
 
