@@ -14,6 +14,7 @@ export default {
   component: FormField,
   args: {
     disabled: false,
+    readOnly: false,
   },
 }
 
@@ -29,6 +30,9 @@ export const _FormField = Template.bind({})
 
 export const DisabledInputFormField = Template.bind({})
 DisabledInputFormField.args = { disabled: true }
+
+export const ReadOnlyInputFormField = Template.bind({})
+ReadOnlyInputFormField.args = { readOnly: true }
 
 export const DynamicLabel = () => (
   <Flex>
@@ -129,6 +133,21 @@ export const WithDisabledSelect = () => (
 
 WithDisabledSelect.story = {
   name: 'with disabled Select',
+}
+
+export const WithReadOnlySelect = () => (
+  <FormField readOnly>
+    <Label htmlFor='dynamic-label-state-select'>State</Label>
+    <PinIcon color='primary' />
+    <Select id='dynamic-label-state-select' name='dynamic-label-state-select' defaultValue='New York'>
+      <option>New York</option>
+      <option>New Jersey</option>
+    </Select>
+  </FormField>
+)
+
+WithReadOnlySelect.story = {
+  name: 'with read only Select',
 }
 
 export const WithSuccessfulValidation = () => (
