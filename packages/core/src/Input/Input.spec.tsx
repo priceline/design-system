@@ -45,12 +45,19 @@ describe('Input', () => {
   })
 
   test('it renders disabled', () => {
+    const paletteTheme = createTheme(theme)
     render(<Input id={id} disabled placeholder='Disabled Input' />)
 
     const input = screen.getByPlaceholderText('Disabled Input')
     expect(input).toBeDisabled()
-    expect(input).toHaveStyleRule('background-color', '#f4f6f8', { modifier: ':disabled' })
-    expect(input).toHaveStyleRule('color', '#4f6f8f', { modifier: ':disabled' })
+    expect(input).toHaveStyleRule(
+      'background-color',
+      getPaletteColor('background.light')({ theme: paletteTheme }),
+      { modifier: ':disabled' }
+    )
+    expect(input).toHaveStyleRule('color', getPaletteColor('text.light')({ theme: paletteTheme }), {
+      modifier: ':disabled',
+    })
     expect(input).toHaveStyleRule('cursor', 'not-allowed', { modifier: ':disabled' })
   })
 

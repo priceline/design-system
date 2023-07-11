@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
 
-import { Select } from '..'
+import { Select, theme, createTheme, getPaletteColor } from '..'
 
 describe('Select', () => {
   test('renders', () => {
@@ -10,6 +10,7 @@ describe('Select', () => {
   })
 
   test('it renders disabled', () => {
+    const paletteTheme = createTheme(theme)
     render(
       <Select defaultValue='Premium Economy' disabled>
         <option>Premium Economy</option>
@@ -18,8 +19,14 @@ describe('Select', () => {
 
     const select = screen.getByText('Premium Economy').closest('select')
     expect(select).toBeDisabled()
-    expect(select).toHaveStyleRule('background-color', '#f4f6f8', { modifier: ':disabled' })
-    expect(select).toHaveStyleRule('color', '#4f6f8f', { modifier: ':disabled' })
+    expect(select).toHaveStyleRule(
+      'background-color',
+      getPaletteColor('background.light')({ theme: paletteTheme }),
+      { modifier: ':disabled' }
+    )
+    expect(select).toHaveStyleRule('color', getPaletteColor('text.light')({ theme: paletteTheme }), {
+      modifier: ':disabled',
+    })
     expect(select).toHaveStyleRule('cursor', 'not-allowed', { modifier: ':disabled' })
     expect(select).toHaveStyleRule('opacity', '1', { modifier: ':disabled' })
   })
