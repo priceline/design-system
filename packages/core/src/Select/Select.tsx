@@ -5,7 +5,7 @@ import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } fro
 import themeGet from '@styled-system/theme-get'
 import styledSystemPropTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
-import { borders, deprecatedColorValue, applySizes, borderRadiusAttrs } from '../utils'
+import { applySizes, borderRadiusAttrs, borders, deprecatedColorValue, getPaletteColor } from '../utils'
 import { Flex } from '../Flex'
 
 const sizes = {
@@ -45,6 +45,13 @@ const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(b
 
   ::-ms-expand {
     display: none;
+  }
+
+  &:disabled {
+    background-color: ${getPaletteColor('background.light')};
+    color: ${getPaletteColor('text.light')};
+    cursor: not-allowed;
+    opacity: 1;
   }
 
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};

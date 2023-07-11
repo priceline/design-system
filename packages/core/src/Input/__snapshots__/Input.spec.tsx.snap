@@ -40,6 +40,12 @@ exports[`Input it renders 1`] = `
   display: none;
 }
 
+.c0:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
 .c0:focus {
   outline: 0;
   border-color: #0068ef;
@@ -112,6 +118,12 @@ exports[`Input it renders an input element with a really large padding and margi
   display: none;
 }
 
+.c0:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
 .c0:focus {
   outline: 0;
   border-color: #0068ef;
@@ -180,6 +192,12 @@ exports[`Input it renders an input element with a red border with a color prop i
 
 .c0::-ms-clear {
   display: none;
+}
+
+.c0:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 .c0:focus {
@@ -251,6 +269,12 @@ exports[`Input it renders an input element with large text 1`] = `
 
 .c0::-ms-clear {
   display: none;
+}
+
+.c0:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 .c0:focus {

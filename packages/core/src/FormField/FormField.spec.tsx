@@ -1,4 +1,5 @@
 import React from 'react'
+import { render } from '../__test__/testing-library'
 import { FormField, Input, Label, Select } from '..'
 import { Email as EmailIcon } from 'pcln-icons'
 
@@ -82,5 +83,33 @@ describe('FormField', () => {
     ).toJSON()
     const [label] = json.children
     expect(label.props.htmlFor).toBe('hello')
+  })
+
+  describe('disabled state', () => {
+    it('renders input with icon - disabled', () => {
+      const { asFragment } = render(
+        <FormField disabled>
+          <Label>Email Address</Label>
+          <EmailIcon data-testid='email-icon' />
+          <Input id='email' name='email' placeholder='Email' />
+        </FormField>
+      )
+
+      expect(asFragment()).toMatchSnapshot()
+    })
+
+    it('renders select with icon - disabled', () => {
+      const { asFragment } = render(
+        <FormField disabled>
+          <Label>Pick Email Address</Label>
+          <EmailIcon />
+          <Select defaultValue='Premium Economy'>
+            <option>Premium Economy</option>
+          </Select>
+        </FormField>
+      )
+
+      expect(asFragment()).toMatchSnapshot()
+    })
   })
 })

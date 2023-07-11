@@ -10,6 +10,11 @@ export const argTypes = {
       type: 'select',
     },
   },
+  disabled: {
+    name: 'disabled',
+    type: { name: 'boolean' },
+    defaultValue: false,
+  },
   size: {
     name: 'size',
     type: { name: 'string' },

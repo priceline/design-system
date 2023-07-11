@@ -57,6 +57,13 @@ exports[`Select renders 1`] = `
   display: none;
 }
 
+.c2:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
 .c2:focus {
   outline: 0;
   border-color: #0068ef;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
+import { fireEvent, render, screen } from '../__test__/testing-library'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
 import { Button, Input, theme, createTheme, getPaletteColor } from '..'
@@ -32,7 +32,7 @@ describe('Input', () => {
       }
       return (
         <>
-          <Input ref={dsRef} placeholder={placeholder} />
+          <Input id={id} ref={dsRef} placeholder={placeholder} />
           <Button onClick={onClick} mt={3}>
             {target}
           </Button>
@@ -42,6 +42,23 @@ describe('Input', () => {
     const { getByText, getByPlaceholderText } = render(<ForwardRefDemo refChild={refChild} />)
     fireEvent.click(getByText(target))
     expect(getByPlaceholderText(placeholder)).toHaveFocus()
+  })
+
+  test('it renders disabled', () => {
+    const paletteTheme = createTheme(theme)
+    render(<Input id={id} disabled placeholder='Disabled Input' />)
+
+    const input = screen.getByPlaceholderText('Disabled Input')
+    expect(input).toBeDisabled()
+    expect(input).toHaveStyleRule(
+      'background-color',
+      getPaletteColor('background.light')({ theme: paletteTheme }),
+      { modifier: ':disabled' }
+    )
+    expect(input).toHaveStyleRule('color', getPaletteColor('text.light')({ theme: paletteTheme }), {
+      modifier: ':disabled',
+    })
+    expect(input).toHaveStyleRule('cursor', 'not-allowed', { modifier: ':disabled' })
   })
 
   describe('helper text', function () {

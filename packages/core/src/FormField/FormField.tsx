@@ -1,10 +1,27 @@
 // @ts-nocheck
 
 import React from 'react'
+import styled from 'styled-components'
 import { Box, IBoxProps } from '../Box'
 import { IconField } from '../IconField'
+import { getPaletteColor } from '../utils'
 
-export interface IFormFieldProps extends IBoxProps {}
+export interface IFormFieldProps extends IBoxProps {
+  disabled?: boolean
+}
+
+const DisableableBox = styled(Box)`
+  ${(props) => props.disabled &&
+    `
+    background-color: ${getPaletteColor('background.base')(props)};
+
+    &&& * {
+      background-color: transparent;
+      color: ${getPaletteColor('text.light')(props)};
+      cursor: not-allowed;
+    }
+  `}
+`
 
 const paddingTopWithLabel = {
   sm: '14px',
@@ -35,7 +52,7 @@ const labelPaddingTop = (size) => {
   return paddingTopForLabel?.[size] ? paddingTopForLabel[size] : '6px'
 }
 
-const FormField = ({ children, ...props }: IFormFieldProps) => {
+const FormField = ({ children, disabled, ...props }: IFormFieldProps) => {
   let iconBefore = false
 
   const childrenArray = React.Children.toArray(children)
@@ -53,6 +70,7 @@ const FormField = ({ children, ...props }: IFormFieldProps) => {
     if (child === field) {
       return React.cloneElement(child, {
         id,
+        disabled,
         style: {
           ...child.props.style,
           transitionProperty: 'padding-top, padding-bottom',
@@ -88,10 +106,10 @@ const FormField = ({ children, ...props }: IFormFieldProps) => {
     })
 
   return (
-    <Box {...props}>
+    <DisableableBox {...props} borderRadius='lg' disabled={disabled}>
       {styledLabel}
       <IconField>{styled}</IconField>
-    </Box>
+    </DisableableBox>
   )
 }
 
