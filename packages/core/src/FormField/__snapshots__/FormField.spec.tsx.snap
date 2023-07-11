@@ -1,5 +1,433 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`FormField disabled state renders input with icon - disabled 1`] = `
+<DocumentFragment>
+  .c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c8 {
+  outline: none;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c9 {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  color: #001833;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  padding: 14px 12px 14px 12px;
+  border-color: #c0cad5;
+  font-size: 16px;
+  border-radius: 12px;
+  padding-left: 40px;
+}
+
+.c9::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c9::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c9:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c9::placeholder {
+  color: #4f6f8f;
+}
+
+.c9::-ms-clear {
+  display: none;
+}
+
+.c9:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c9:focus {
+  outline: 0;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1 c2"
+      disabled=""
+    >
+      <label
+        class="c3"
+        color="text.light"
+        font-size="10"
+        font-weight="700"
+        for="email"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 40px);"
+      >
+        Email Address
+      </label>
+      <div
+        class="c4"
+      >
+        <div
+          class="c5 c6"
+          data-testid="icon-field-prefix-icons"
+        >
+          <svg
+            aria-hidden="true"
+            class="c7 c8"
+            data-testid="email-icon"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c9"
+          disabled=""
+          font-size="2,,1"
+          id="email"
+          name="email"
+          placeholder="Email"
+          style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormField disabled state renders select with icon - disabled 1`] = `
+<DocumentFragment>
+  .c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c11 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c12 {
+  outline: none;
+}
+
+.c8 {
+  outline: none;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c9 {
+  width: 100%;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c13 {
+  pointer-events: none;
+}
+
+.c10 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 14px 32px 14px 12px;
+  border-color: #c0cad5;
+  padding-left: 40px;
+  font-size: 16px;
+  margin: 0px;
+  border-radius: 12px;
+}
+
+.c10::-ms-expand {
+  display: none;
+}
+
+.c10:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.c10:focus {
+  outline: 0;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+  .c10 {
+    font-size: 14px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1 c2"
+      disabled=""
+    >
+      <label
+        class="c3"
+        color="text.light"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 40px);"
+      >
+        Pick Email Address
+      </label>
+      <div
+        class="c4"
+      >
+        <div
+          class="c5 c6"
+          data-testid="icon-field-prefix-icons"
+        >
+          <svg
+            aria-hidden="true"
+            class="c7 c8"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c9 c4"
+          width="1"
+        >
+          <select
+            class="c10"
+            disabled=""
+            font-size="2,,1"
+            style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
+          >
+            <option
+              selected=""
+            >
+              Premium Economy
+            </option>
+          </select>
+          <svg
+            aria-hidden="true"
+            class="c11 c12 c13"
+            color="text.light"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`FormField renders 1`] = `
 .c0 {
   border-radius: 12px;
