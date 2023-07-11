@@ -25,7 +25,10 @@ const Template = (args) => (
   </FormField>
 )
 
-export const WithIcon = Template.bind({})
+export const _FormField = Template.bind({})
+
+export const DisabledInputFormField = Template.bind({})
+DisabledInputFormField.args = { disabled: true }
 
 export const DynamicLabel = () => (
   <Flex>

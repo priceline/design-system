@@ -24,7 +24,10 @@ const Template = (args) => (
   </Box>
 )
 
-export const Default = Template.bind({})
+export const _Select = Template.bind({})
+
+export const Disabled = Template.bind({})
+Disabled.args = { disabled: true }
 
 export const LongOptionString = () => (
   <Box width={[1, 320]}>
