@@ -1,24 +1,24 @@
 # Contributing
 
- - [Clone the repo](#clone-the-repo)
- - [Preparation](#preparation)
- - [Running tests](#running-tests)
- - [Linting and formatting](#linting-and-formatting)
- - [Creating new components](#creating-new-components)
- - [Storybook](#storybook)
- - [Publishing](#publishing)
- - [Static Docs Site](#static-docs-site)
- - [Troubleshooting](#troubleshooting)
- - [GitHub Flow](#github-flow)
- - [Pull Requests](#pull-requests)
+- [Contributing](#contributing)
+    - [Clone the repo](#clone-the-repo)
+    - [Preparation](#preparation)
+    - [Running tests](#running-tests)
+    - [Linting and formatting](#linting-and-formatting)
+    - [Creating new components](#creating-new-components)
+    - [Storybook](#storybook)
+    - [Publishing](#publishing)
+    - [Static Docs Site](#static-docs-site)
+    - [GitHub Flow](#github-flow)
+    - [Pull Requests](#pull-requests)
  
 
-If you'd like to contribute to the Design System, we'd love to have your help. As with any open source project, we ask that you be kind, professional, and courteous towards others.
+If you'd like to contribute to the Design System, we'd love to have your help. As with any open-source project, we ask that you be kind, professional, and courteous toward others.
 
 Contributing doesn't necessarily mean committing code; we also encourage you to:
 
 - Open issues
-- Join in on discussions in issues and PRs
+- Join in on discussions on issues and PRs
 - Help write documentation
 - Use the Design System in your project and provide feedback
 - Add yourself to our Contributors list using `npm run contributors:add` then enter your username and type of contribution.
@@ -40,25 +40,15 @@ The Design System is a [Rush](https://rushjs.io/) Monorepo. Install `rush` globa
 npm i -g @microsoft/rush
 ```
 
-To install dependencies:
-
-```sh
-rush install
-```
-
-To build the projects:
-
-```sh
-rush build
-```
-
-As a convenience, `rush prepare` will run `install` and `build`
+Install dependencies and build all projects by running `rush prepare`: 
 
 ```sh
 rush prepare
+
+# This is equivalent to running `rush install` and `rush build`
 ```
 
-To update the lockfile when you change dependencies in a `package.json`:
+To update the PNPM lockfile when you change dependencies in a `package.json`:
 
 ```sh
 rush update
@@ -82,7 +72,7 @@ rush test:snapshots
 
 Prettier is used for formatting and is run as a pre-commit hook. There is a prettier config file in the root of the repository so that IDE extensions for ESLint can read the configuration.
 
-ESLint is used for static analysis, and is part of the CI process.
+ESLint is used for static analysis and runs as a pre-commit hook and during CI.
 
 ```sh
 rush lint
@@ -95,9 +85,9 @@ The configuration allows you to create new core and package components.
 Follow the steps below to create a new component:
 
 1. Run `npm i -g plop` to install plop globally.
-2. Run `rush create` and follow the prompts for `component` (component in `pcln-design-system` (`packages/core`)) or `package` (new project)
+2. Run `rush create` and follow the prompts for `component` (components in `pcln-design-system` (`packages/core`)) or `package` (new project)
 3. Run `rush update` to update dependencies
-4. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.js` file
+4. If creating a core component, add an import & an export for the new core component in `packages/core/src/index.ts`
 
 Additional Guidance: [Creating Components](COMPONENT_GUIDANCE.md)
 
@@ -109,24 +99,18 @@ Storybook stories are in the `src` folder of each project, adjacent to the compo
 
 ```sh
 rush storybook
-open http://localhost:8000/
 ```
 
 ### Publishing
 
-An updated publishing process will be documented in detail at the time of the next publish.
-
-To publish the packages to npm, you have to be an owner of the packages you're publishing on the NPM registry. Priceline employees should use the `#design-system` Slack channel for more information.
-
-**Before Publishing:**
-
-- Publishing is very easy once you have access to the NPM package. **Please Be Careful** 🤗
-- Use `npm login` to authenticate against the public NPM registry. If your local environment requires multiple NPM registries, the [npmrc](https://www.npmjs.com/package/npmrc) tool is useful to toggle between registries.
-- After publishing please [document your release](https://github.com/priceline/design-system/releases/new)
+To publish a new version of any Design System packages that have unreleased changes, run the [Rush publish to NPM]
+GitHub Action workflow from the `main` branch. This will publish changed projects to NPM and create a GitHub release
+for each package containing the changelogs for that release. Note that you'll need to request approval of your 
+deployment before it will begin running.
 
 ### Static Docs Site
 
-The NextJS docsite is located in `apps/docs`.
+The NextJS doc site is located in `apps/docs`.
 
 To run the static docs locally:
 
@@ -137,22 +121,22 @@ rush docsite
 ### GitHub Flow
 
 We follow a loose version of [GitHub Flow][github-flow] where feature branches
-are created from main, submitted as pull requests, given time for review and
-discussion, then merged into main.
+are created from `main`, submitted as pull requests, given time for review and
+discussion, then merged into `main``.
 
-All merges into main should be ready to be published. The Design System Working Group will batch releases as appropriate.
+All merges into `main`` should be ready to be published. The Design System Working Group will batch releases as appropriate.
 
 Generally, the workflow looks like this:
 
-1. Pull the latest changes from main
-1. Create a new feature branch (pick a name that clearly describes the feature)
-1. Commit changes to your feature branch (smaller commits with clear messages are best)
+1. Pull the latest changes from `main``
+1. Create a new feature branch with a name that clearly describes the change
+1. Commit changes to your feature branch. We recommend keeping only one commit and amending it as you work to make rebasing easier.
 1. Run `rush change` to document your changes
-1. Push your branch to origin
+1. Push your branch to `origin`
 1. Open a Pull Request with a clear description of the change (Answering _what_, _why_, and _how_ is a good place to start)
 1. Allow for some time for discussion
-1. (optional) If your PR has merge conflicts, pull the latest from main, then merge those changes into your PR branch, resolving conflicts in the process
-1. Once there is consensus on the changes and all tests have passed, merge the PR into main
+1. (optional) If your PR has merge conflicts, pull the latest from `main`, then rebase your changes onto it
+1. Merge the PR once you have at least two approvals and all CI checks pass
 
 ### Pull Requests
 
@@ -169,11 +153,11 @@ Generally, follow these rules for creating a PR:
 
 - Keep it simple
 - Keep changes as small as possible
-- Write tests for changes & try to maintain 100% code coverage
+- Write tests for changes & try to maintain or improve code coverage
 - Write documentation for changes
-- For new components, add stories to Storybook
+- For new components and feature additions to existing components, add stories to the Storybook
 - Announce your PR to the appropriate channels in Slack
-- Allow for enough time for everyone to review and discuss your PR
+- Allow enough time for everyone to review and discuss your PR
 - Remember that not every PR will be merged, but that's okay
 
 [docs site]: https://priceline.github.io/design-system/

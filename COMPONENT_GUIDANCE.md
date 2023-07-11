@@ -9,7 +9,6 @@ The decision you have to make is where to add the component to the project.
     - [Expected Usage](#expected-usage)
     - [Bundle Size](#bundle-size)
     - [Design System Upgrade Process](#design-system-upgrade-process)
-  - [Recommendations](#recommendations)
   - [Naming](#naming)
 
 ## Options
@@ -26,7 +25,7 @@ The other option is to create a new package, `/packages/my-new-component`.
 
 ### Expected Usage
 
-In general, all of the components in `/packages/core` are primitives: they are building blocks for use in constructing more complex UI elements. Packages that exist outside of `/packages/core`, like `/packages/autocomplete`, `/packages/modal` and `/packages/slider` are more complex units of user interface.
+In general, all of the components in `/packages/core` are primitives: they are building blocks for use in constructing more complex UI elements. Packages that exist outside of `/packages/core`, like `/packages/autocomplete`, `/packages/modal` and `/packages/slider` are more complex units of the user interface.
 
 ### Bundle Size
 
@@ -38,11 +37,7 @@ Each package in the monorepo is built with [Babel CLI](https://babeljs.io/docs/e
 
 ### Design System Upgrade Process
 
-There is an advantage to using a discrete package for a new component. While migrating between major releases of Design System, packages can be used along side supported versions of Design System. Developers should be able to use components immediately, without being blocked my needing to perform a semver major upgrade first.
-
-## Recommendations
-
-In most cases, new components should be added to the Design System as discrete packages. Only design primitives will be added to `/packages/core` (published as `pcln-design-system`). Components that compose primitives into units of interface should be created in their own packages. Some examples of such components are modals, form controls, date pickers and other combinations of primitive components.
+There is an advantage to using a discrete package for a new component. While migrating between major releases of Design System, packages can be used alongside supported versions of Design System. Developers should be able to use components immediately, without being blocked by needing to perform a semver major upgrade first.
 
 ## Naming
 
