@@ -9,6 +9,8 @@
   "collectCoverage": true,
   "collectCoverageFrom": [
     "src/**/*.{js,ts}",
+    "src/**/*.{js,ts}(x)",
+    "!src/**/*.styled.*",
     "!src/storybook/**/*",
     "!src/**/*.{stories,story}.*",
     "!**/__test__/**",

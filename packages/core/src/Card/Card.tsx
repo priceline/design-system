@@ -6,7 +6,9 @@ import { Box, IBoxProps } from '../Box'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
 const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
-  border: borderWidth === 0 ? '0' : `${borderWidth}px solid ${getPaletteColor(borderColor, 'base')(props)}`,
+  borderWidth: borderWidth === 0 ? '0' : `${borderWidth}px`,
+  borderStyle: borderWidth === 0 ? undefined : 'solid',
+  borderColor: borderWidth === 0 ? '0' : getPaletteColor(borderColor, 'base')(props),
 })
 
 const cardPropTypes = {

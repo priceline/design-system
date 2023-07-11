@@ -5,7 +5,9 @@ import {
   roundedValues,
   textStylesValues,
 } from '../../utils'
-import { zIndices } from '../../theme'
+import { zIndices, colorSchemeNames as colorSchemeNamesArr } from '../../theme'
+
+export const colorSchemeNames = colorSchemeNamesArr
 
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
 

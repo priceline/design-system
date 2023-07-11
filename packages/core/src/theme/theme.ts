@@ -437,6 +437,7 @@ export type TextStyle = {
   fontSize: string
   lineHeight: string
 }
+
 /** @public */
 export type PaletteFamily = {
   lightest?: string
@@ -449,26 +450,33 @@ export type PaletteFamily = {
   shade?: string
   darkest?: string
 }
+
 /** @public */
-export type PaletteFamilies = {
-  primary: PaletteFamily
-  secondary: PaletteFamily
-  text: PaletteFamily
-  highlight: PaletteFamily
-  success: PaletteFamily
-  error: PaletteFamily
-  warning: PaletteFamily
-  alert: PaletteFamily
-  caution: PaletteFamily
-  notify: PaletteFamily
-  pricePrimary: PaletteFamily
-  priceSecondary: PaletteFamily
-  strike: PaletteFamily
-  promoPrimary: PaletteFamily
-  promoSecondary: PaletteFamily
-  border: PaletteFamily
-  background: PaletteFamily
-}
+export const paletteFamilyNames = [
+  'primary',
+  'secondary',
+  'text',
+  'highlight',
+  'success',
+  'error',
+  'warning',
+  'alert',
+  'caution',
+  'notify',
+  'pricePrimary',
+  'priceSecondary',
+  'strike',
+  'promoPrimary',
+  'promoSecondary',
+  'border',
+  'background',
+] as const
+
+/** @public */
+export type PaletteFamilyName = typeof paletteFamilyNames[number]
+
+/** @public */
+export type PaletteFamilies = Record<PaletteFamilyName, PaletteFamily>
 
 /** @public */
 export type ColorStyle = {
@@ -477,31 +485,37 @@ export type ColorStyle = {
 }
 
 /** @public */
-export type ColorStyles = {
-  whiteOnText: ColorStyle
-  whiteOnGray: ColorStyle
-  textOnLightGray: ColorStyle
-  whiteOnBlue: ColorStyle
-  blueOnLightBlue: ColorStyle
-  whiteOnGreen: ColorStyle
-  greenOnLightGreen: ColorStyle
-  whiteOnRed: ColorStyle
-  redOnLightRed: ColorStyle
-  textOnOrange: ColorStyle
-  whiteOnPurple: ColorStyle
-  purpleOnLightPurple: ColorStyle
-  textOnWhite: ColorStyle
-  grayOnWhite: ColorStyle
-  blueOnWhite: ColorStyle
-  greenOnWhite: ColorStyle
-  redOnWhite: ColorStyle
-  purpleOnWhite: ColorStyle
-  whiteOnDarkOrange: ColorStyle
-  info: ColorStyle
-  success: ColorStyle
-  warning: ColorStyle
-  danger: ColorStyle
-}
+export const colorStyleNames = [
+  'whiteOnText',
+  'whiteOnGray',
+  'textOnLightGray',
+  'whiteOnBlue',
+  'blueOnLightBlue',
+  'whiteOnGreen',
+  'greenOnLightGreen',
+  'whiteOnRed',
+  'redOnLightRed',
+  'textOnOrange',
+  'whiteOnPurple',
+  'purpleOnLightPurple',
+  'textOnWhite',
+  'grayOnWhite',
+  'blueOnWhite',
+  'greenOnWhite',
+  'redOnWhite',
+  'purpleOnWhite',
+  'whiteOnDarkOrange',
+  'info',
+  'success',
+  'warning',
+  'danger',
+] as const
+
+/** @public */
+export type ColorStyleName = typeof colorStyleNames[number]
+
+/** @public */
+export type ColorStyles = Record<ColorStyleName, ColorStyle>
 
 /** @public */
 export type ColorScheme = {
@@ -510,43 +524,49 @@ export type ColorScheme = {
 }
 
 /** @public */
-export type ColorSchemes = {
-  primary: ColorScheme
-  primaryLight: ColorScheme
-  primaryLightest: ColorScheme
-  primaryDark: ColorScheme
-  primaryShade: ColorScheme
-  primaryDarkOnLight: ColorScheme
-  secondary: ColorScheme
-  secondaryLight: ColorScheme
-  secondaryLightest: ColorScheme
-  secondaryDark: ColorScheme
-  secondaryDarkOnLight: ColorScheme
-  neutral: ColorScheme
-  neutralLight: ColorScheme
-  neutralLightest: ColorScheme
-  neutralDark: ColorScheme
-  neutralDarkOnLight: ColorScheme
-  success: ColorScheme
-  successLight: ColorScheme
-  successLightest: ColorScheme
-  successDark: ColorScheme
-  successDarkOnLight: ColorScheme
-  warning: ColorScheme
-  warningLight: ColorScheme
-  warningLightest: ColorScheme
-  cautionLight: ColorScheme
-  highlightLight: ColorScheme
-  promo: ColorScheme
-  promoLight: ColorScheme
-  promoLightest: ColorScheme
-  promoDark: ColorScheme
-  promoDarkOnLight: ColorScheme
-  alert: ColorScheme
-  alertLight: ColorScheme
-  alertLightest: ColorScheme
-  alertDarkOnLight: ColorScheme
-}
+export const colorSchemeNames = [
+  'primary',
+  'primaryLight',
+  'primaryLightest',
+  'primaryDark',
+  'primaryShade',
+  'primaryDarkOnLight',
+  'secondary',
+  'secondaryLight',
+  'secondaryLightest',
+  'secondaryDark',
+  'secondaryDarkOnLight',
+  'neutral',
+  'neutralLight',
+  'neutralLightest',
+  'neutralDark',
+  'neutralDarkOnLight',
+  'success',
+  'successLight',
+  'successLightest',
+  'successDark',
+  'successDarkOnLight',
+  'warning',
+  'warningLight',
+  'warningLightest',
+  'cautionLight',
+  'highlightLight',
+  'promo',
+  'promoLight',
+  'promoLightest',
+  'promoDark',
+  'promoDarkOnLight',
+  'alert',
+  'alertLight',
+  'alertLightest',
+  'alertDarkOnLight',
+] as const
+
+/** @public */
+export type ColorSchemeName = typeof colorSchemeNames[number]
+
+/** @public */
+export type ColorSchemes = Record<ColorSchemeName, ColorScheme>
 
 /** @public */
 export type DesignSystemTheme = {

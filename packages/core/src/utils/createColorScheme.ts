@@ -1,43 +1,5 @@
 import { ColorSchemes, PaletteFamilies } from '../theme'
 
-export const colorSchemeNames = [
-  'primary',
-  'primaryLight',
-  'primaryLightest',
-  'primaryDark',
-  'primaryShade',
-  'primaryDarkOnLight',
-  'secondary',
-  'secondaryLight',
-  'secondaryLightest',
-  'secondaryDark',
-  'secondaryDarkOnLight',
-  'neutral',
-  'neutralLight',
-  'neutralLightest',
-  'neutralDark',
-  'neutralDarkOnLight',
-  'success',
-  'successLight',
-  'successLightest',
-  'successDark',
-  'successDarkOnLight',
-  'warning',
-  'warningLight',
-  'warningLightest',
-  'cautionLight',
-  'highlightLight',
-  'promo',
-  'promoLight',
-  'promoLightest',
-  'promoDark',
-  'promoDarkOnLight',
-  'alert',
-  'alertLight',
-  'alertLightest',
-  'alertDarkOnLight',
-]
-
 export const createColorScheme = ({ palette }: { palette: PaletteFamilies }): ColorSchemes => {
   const {
     primary,

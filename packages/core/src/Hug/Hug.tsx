@@ -1,23 +1,10 @@
 import React, { Attributes } from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { Box } from '../Box'
-import { Card, ICardProps } from '../Card'
-import { Flex } from '../Flex'
+import type { ICardProps } from '../Card'
 import { Text } from '../Text'
-import { applyVariations, deprecatedColorValue } from '../utils'
-
-const HugCard = styled(Card)`
-  overflow: hidden;
-  ${applyVariations('Hug')}
-`
-
-const BorderConcealer = styled(Box)`
-  & > * {
-    border: 0 !important;
-  }
-`
+import { deprecatedColorValue } from '../utils'
+import { HugCard, Header, BorderConcealer } from './Hug.styled'
 
 const hugPropTypes = {
   iconDisplay: PropTypes.arrayOf(PropTypes.string),
@@ -50,11 +37,11 @@ const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, .
   }
 
   return (
-    <HugCard {...props} borderColor={bg || color} color={color}>
-      <Flex bg={bg} color={color} p={p} pl='12px' alignItems='center'>
+    <HugCard {...props} borderColor={props.colorScheme ? null : bg || color} color={color}>
+      <Header bg={bg} color={color} p={p} pl='12px' alignItems='center' colorScheme={props.colorScheme}>
         {!!iconClone && iconClone}
         <Text fontSize={fontSize}>{props.text}</Text>
-      </Flex>
+      </Header>
       <BorderConcealer>{props.children}</BorderConcealer>
     </HugCard>
   )
