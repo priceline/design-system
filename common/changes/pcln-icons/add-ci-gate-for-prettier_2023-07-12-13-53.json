@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Fix formatting with Prettier",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
