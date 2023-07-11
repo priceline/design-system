@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Create ChatMessage component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
