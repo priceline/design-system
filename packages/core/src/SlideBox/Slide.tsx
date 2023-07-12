@@ -32,14 +32,14 @@ const Slide: React.FC<ISlideProps> = ({
   useEffect(() => {
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
       /* istanbul ignore next */
-      const { offsetLeft } = ref.current
-      slideBoxRef?.current?.scroll({ left: offsetLeft })
+      const { offsetLeft, offsetParent, offsetWidth } = ref.current
+      slideBoxRef?.current?.scroll({ left: offsetLeft - offsetParent.offsetWidth + offsetWidth })
     }
   }, [isCurrentSlide, ref])
 
   return (
     <SlideWrapper data-testid={`slide${index + 1}`} ref={ref} width={width}>
-      <RenderInView onSlideChange={onSlideChange} index={index}>
+      <RenderInView onSlideChange={onSlideChange} index={index} slideRef={ref}>
         <Box
           height='100%'
           pl={index === 0 ? 2 : 0}
