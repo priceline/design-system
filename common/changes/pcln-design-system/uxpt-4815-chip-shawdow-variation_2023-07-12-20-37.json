@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added boxShawdowSize prop to ButtonChip, ChoiceChip and FilterChip",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

@@ -7,6 +7,7 @@ import propTypes from '@styled-system/prop-types'
 import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
+import { boxShadowSizeValues, BoxShadowSize } from '../../utils'
 
 const getTitle = ({ disabled, actionTitle }) => `${actionTitle}${disabled ? ' disabled' : ''}`
 
@@ -26,6 +27,7 @@ const filterChipPropTypes = {
   Image: PropTypes.object,
   actionTitle: PropTypes.string,
   value: PropTypes.string,
+  boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
 }
 
 export interface IFilterChipProps extends SpaceProps, FontSizeProps {
@@ -39,6 +41,7 @@ export interface IFilterChipProps extends SpaceProps, FontSizeProps {
   actionTitle?: string
   value?: string | number
   color?: string
+  boxShadowSize?: BoxShadowSize
   children?: React.ReactNode | string
 }
 
@@ -53,6 +56,7 @@ const FilterChip: React.FC<IFilterChipProps> = ({
   showActionIcon,
   actionTitle,
   value,
+  boxShadowSize,
   ...props
 }) => (
   <ChipLabel htmlFor={id} {...props}>
@@ -71,6 +75,7 @@ const FilterChip: React.FC<IFilterChipProps> = ({
       label={label}
       disabled={disabled}
       selected={selected}
+      boxShadowSize={boxShadowSize}
       action={
         showActionIcon && {
           Icon: Close,

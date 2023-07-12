@@ -5,6 +5,7 @@ import propTypes from '@styled-system/prop-types'
 import { ChipContent } from '../ChipContent'
 import { ChipLabel } from '../ChipLabel'
 import { ChipInput } from '../ChipInput'
+import { boxShadowSizeValues, BoxShadowSize } from '../../utils'
 
 const choiceChipProps = {
   ...propTypes.space,
@@ -23,6 +24,7 @@ const choiceChipProps = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
+  boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
 }
 
 export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLAttributes<HTMLElement> {
@@ -31,6 +33,7 @@ export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLA
   selected?: boolean
   label?: string
   value?: string | number
+  boxShadowSize?: BoxShadowSize
 }
 
 const ChoiceChip: React.FC<IChoiceChipProps> = ({
@@ -41,6 +44,7 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
   children,
   onClick,
   label,
+  boxShadowSize,
   ...props
 }) => (
   <ChipLabel htmlFor={id} {...props}>
@@ -54,7 +58,13 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
       checked={selected}
       onChange={onClick}
     />
-    <ChipContent label={label} disabled={disabled} selected={selected} {...props}>
+    <ChipContent
+      label={label}
+      disabled={disabled}
+      selected={selected}
+      boxShadowSize={boxShadowSize}
+      {...props}
+    >
       {children}
     </ChipContent>
   </ChipLabel>

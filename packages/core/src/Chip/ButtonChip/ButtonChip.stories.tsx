@@ -3,6 +3,7 @@ import { Departure, Broom } from 'pcln-icons'
 import ButtonChip from './ButtonChip'
 import { Box } from '../../Box'
 import { Text } from '../../Text'
+import { chipWithBoxShawdowsArgs } from '../../storybook/args/index'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />
@@ -265,6 +266,23 @@ export const CustomChip = () => (
         </Text>
       </Box>
     </ButtonChip>
+  </Box>
+)
+
+// With Box Shadow
+export const WithBoxShadows = () => (
+  <Box>
+    {chipWithBoxShawdowsArgs.map((props) => {
+      const { boxShadowSize, heading, label } = props
+      return (
+        <Box m={5} key={`${boxShadowSize}-${heading}-${label}`}>
+          <Text>{heading}</Text>
+          <Box m={2}>
+            <ButtonChip {...props} />
+          </Box>
+        </Box>
+      )
+    })}
   </Box>
 )
 

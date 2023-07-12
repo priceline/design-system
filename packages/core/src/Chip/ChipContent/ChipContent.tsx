@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import styledSystemPropTypes from '@styled-system/prop-types'
 import { ArrowRight } from 'pcln-icons'
 import { ChipContentWrapper } from '../ChipContentWrapper'
-import { getPaletteColor } from '../../utils'
+import { getPaletteColor, boxShadowSizeValues } from '../../utils'
 import { Flex } from '../../Flex'
 import { Text } from '../../Text'
 
@@ -31,6 +31,7 @@ const propTypes = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
+  boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
 }
 
 const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
@@ -49,6 +50,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
   bridgeLabel = undefined,
   /* eslint-disable @typescript-eslint/naming-convention */
   BridgeIcon = undefined,
+  boxShadowSize = undefined,
   ...props
 }) => (
   <ChipContentWrapper
@@ -57,6 +59,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
     disabled={disabled}
     selected={selected}
     size={size}
+    boxShadowSize={boxShadowSize}
     {...props}
   >
     {children}

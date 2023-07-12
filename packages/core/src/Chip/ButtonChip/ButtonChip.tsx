@@ -8,7 +8,7 @@ import { ChevronDown } from 'pcln-icons'
 import { ChipContent } from '../ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 import { Button } from '../../Button'
-import { getPaletteColor } from '../../utils'
+import { getPaletteColor, boxShadowSizeValues, BoxShadowSize } from '../../utils'
 
 const ChipButton = styled(Button)`
   background-color: transparent;
@@ -43,6 +43,7 @@ const buttonChipPropTypes = {
   Icon: PropTypes.node,
   showActionIcon: PropTypes.bool,
   Image: PropTypes.object,
+  boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
 }
 
 export interface IButtonChipProps extends SpaceProps, FontSizeProps {
@@ -59,10 +60,27 @@ export interface IButtonChipProps extends SpaceProps, FontSizeProps {
   id?: string
   color?: string
   width?: string
+  boxShadowSize?: BoxShadowSize
 }
 
 const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
-  ({ color, width, id, m, disabled, expanded, children, onClick, label, showActionIcon, ...props }, ref) => (
+  (
+    {
+      color,
+      width,
+      id,
+      m,
+      disabled,
+      expanded,
+      children,
+      onClick,
+      label,
+      showActionIcon,
+      boxShadowSize,
+      ...props
+    },
+    ref
+  ) => (
     <ChipButton
       color={color}
       width={width}
@@ -78,6 +96,7 @@ const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
         label={label}
         disabled={disabled}
         selected={expanded}
+        boxShadowSize={boxShadowSize}
         action={
           showActionIcon && {
             Icon: ChevronDown,

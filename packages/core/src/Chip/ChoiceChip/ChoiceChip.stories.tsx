@@ -3,6 +3,7 @@ import { Departure } from 'pcln-icons'
 import ChoiceChip from './ChoiceChip'
 import { Box } from '../../Box'
 import { Text } from '../../Text'
+import { chipWithBoxShawdowsArgs } from '../../storybook/args/index'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />
@@ -200,6 +201,23 @@ export const CustomChip = () => (
         </Text>
       </Box>
     </ChoiceChip>
+  </Box>
+)
+
+// With Box Shadow
+export const WithBoxShadows = () => (
+  <Box>
+    {chipWithBoxShawdowsArgs.map((props) => {
+      const { boxShadowSize, heading, label } = props
+      return (
+        <Box m={5} key={`${boxShadowSize}-${heading}-${label}`}>
+          <Text>{heading}</Text>
+          <Box m={2}>
+            <ChoiceChip {...props} />
+          </Box>
+        </Box>
+      )
+    })}
   </Box>
 )
 
