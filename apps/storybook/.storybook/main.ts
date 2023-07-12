@@ -17,7 +17,7 @@ const storiesGlob = 'src/**/*.stories.@(js|jsx|ts|tsx)'
 const config: StorybookConfig = {
   framework,
   stories: packagesWithStories.map((packageFolder) => `../../../packages/${packageFolder}/${storiesGlob}`),
-  addons: storykitAddons,
+  addons: [...storykitAddons, '@storybook/addon-interactions'],
   docs: {
     autodocs: true,
   },
