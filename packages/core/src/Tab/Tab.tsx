@@ -1,16 +1,12 @@
 import React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
 import { Text } from '../Text'
-import { Grid } from '../Grid'
 import { TabContainer, SIZES, TabList, TabTrigger } from './Tab.styled'
 import { Box } from '../Box'
-import { Link } from '../Link'
 
 export interface ITabsProps {
-  children?: React.ReactNode
   orientation?: 'horizontal' | 'vertical'
   onClick?: () => void
-  icon?: React.ReactNode
   size?: string
   tabsContent: {
     id: string
