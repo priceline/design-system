@@ -27,8 +27,8 @@ const ARROW_SIZES = {
     iconSize: 32,
   },
   lg: {
-    buttonSize: '60px',
-    iconSize: 40,
+    buttonSize: ['40px', '40px', '40px', '40px', '60px'],
+    iconSize: [32, 32, 32, 32, 40],
   },
 }
 
