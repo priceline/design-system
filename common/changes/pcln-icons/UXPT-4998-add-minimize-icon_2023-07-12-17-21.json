@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add Minimize Icon",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
