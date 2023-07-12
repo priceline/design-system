@@ -23,6 +23,8 @@ export const InputComponent = Template.bind({})
 
 export const Disabled = () => <Input disabled value='Disabled Input' />
 
+export const ReadOnly = () => <Input readOnly value='Readonly Input' />
+
 export const Colors = () => (
   <Box width={400}>
     <Input mb={3} id='input-colors-1' placeholder='No color' />

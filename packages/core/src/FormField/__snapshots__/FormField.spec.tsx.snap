@@ -99,7 +99,15 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: none;
 }
 
-.c9:disabled {
+.c9:disabled,
+.c9:-moz-read-only {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c9:disabled,
+.c9:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -314,7 +322,8 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   display: none;
 }
 
-.c10:disabled {
+.c10:disabled,
+.c10[readOnly] {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -500,7 +509,15 @@ exports[`FormField renders 1`] = `
   display: none;
 }
 
-.c3:disabled {
+.c3:disabled,
+.c3:-moz-read-only {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c3:disabled,
+.c3:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -672,7 +689,15 @@ exports[`FormField renders with Icon 1`] = `
   display: none;
 }
 
-.c7:disabled {
+.c7:disabled,
+.c7:-moz-read-only {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c7:disabled,
+.c7:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -865,7 +890,15 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: none;
 }
 
-.c7:disabled {
+.c7:disabled,
+.c7:-moz-read-only {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c7:disabled,
+.c7:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -1038,7 +1071,8 @@ exports[`FormField renders with Select  1`] = `
   display: none;
 }
 
-.c4:disabled {
+.c4:disabled,
+.c4[readOnly] {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -1236,7 +1270,8 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: none;
 }
 
-.c8:disabled {
+.c8:disabled,
+.c8[readOnly] {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;

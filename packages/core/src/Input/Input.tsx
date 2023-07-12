@@ -57,7 +57,8 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
     display: none;
   }
 
-  &:disabled {
+  &:disabled,
+  &:read-only {
     background-color: ${getPaletteColor('background.light')};
     color: ${getPaletteColor('text.light')};
     cursor: not-allowed;

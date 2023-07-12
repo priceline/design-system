@@ -15,6 +15,11 @@ export const argTypes = {
     type: { name: 'boolean' },
     defaultValue: false,
   },
+  readOnly: {
+    name: 'readOnly',
+    type: { name: 'boolean' },
+    defaultValue: false,
+  },
   size: {
     name: 'size',
     type: { name: 'string' },

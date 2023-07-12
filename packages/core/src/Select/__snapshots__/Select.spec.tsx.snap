@@ -57,7 +57,8 @@ exports[`Select renders 1`] = `
   display: none;
 }
 
-.c2:disabled {
+.c2:disabled,
+.c2[readOnly] {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;

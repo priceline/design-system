@@ -47,7 +47,8 @@ const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(b
     display: none;
   }
 
-  &:disabled {
+  &:disabled,
+  &[readOnly] {
     background-color: ${getPaletteColor('background.light')};
     color: ${getPaletteColor('text.light')};
     cursor: not-allowed;
@@ -75,9 +76,15 @@ export interface ISelectProps extends SpaceProps, FontSizeProps {}
 const Select: React.FC<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Pick<any, string | number | symbol> & React.RefAttributes<unknown>
-> & { isField?: boolean } = React.forwardRef((props, ref) => (
+> & { isField?: boolean } = React.forwardRef(({ children, readOnly, ...props }, ref) => (
   <Flex width={1} alignItems='center'>
-    <SelectBase {...props} ref={ref} />
+    <SelectBase {...props} readOnly={readOnly} ref={ref}>
+      {React.Children.map(children, (child) => {
+        return React.cloneElement(child as React.ReactElement, {
+          disabled: readOnly,
+        })
+      })}
+    </SelectBase>
     <ClickableIcon ml={-32} color='text.light' />
   </Flex>
 ))
