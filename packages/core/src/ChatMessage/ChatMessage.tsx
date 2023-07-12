@@ -30,7 +30,6 @@ const Message = styled(Flex)`
   background-color: ${getPaletteColor('background.light')};
   color: ${getTextColorOn('background.light')};
   justify-content: flex-start;
-  max-width: 90%;
   width: fit-content;
 
   ${applyVariations('ChatMessage', variations)};
