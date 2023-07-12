@@ -12,19 +12,23 @@ import {
 export default {
   title: 'FormField',
   component: FormField,
+  args: {
+    disabled: false,
+  },
 }
 
-export const WithIcon = () => (
-  <FormField>
+const Template = (args) => (
+  <FormField {...args}>
     <Label htmlFor='demo'>Email Address</Label>
     <EmailIcon color='primary' />
     <Input type='email' id='email' name='email' defaultValue='hello@example.com' />
   </FormField>
 )
 
-WithIcon.story = {
-  name: 'with Icon',
-}
+export const _FormField = Template.bind({})
+
+export const DisabledInputFormField = Template.bind({})
+DisabledInputFormField.args = { disabled: true }
 
 export const DynamicLabel = () => (
   <Flex>
@@ -110,6 +114,21 @@ export const WithSelect = () => (
 
 WithSelect.story = {
   name: 'with Select',
+}
+
+export const WithDisabledSelect = () => (
+  <FormField disabled>
+    <Label htmlFor='dynamic-label-state-select'>State</Label>
+    <PinIcon color='primary' />
+    <Select id='dynamic-label-state-select' name='dynamic-label-state-select'>
+      <option>New York</option>
+      <option>New Jersey</option>
+    </Select>
+  </FormField>
+)
+
+WithDisabledSelect.story = {
+  name: 'with disabled Select',
 }
 
 export const WithSuccessfulValidation = () => (

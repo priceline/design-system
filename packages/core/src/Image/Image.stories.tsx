@@ -152,13 +152,13 @@ const meta: Meta<typeof Image> = {
             {/* <LiveDemo code={ExamplesAndVariations} /> */}
             <StoryHeading storyName='Box Shawdow' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
-              Adding boxShadowSize to images work best when images are actionable.
+              Adding boxShadowSize to images works best when images are actionable.
             </Text>
             {/* <LiveDemo code={BoxShawdow} /> */}
             <StoryHeading storyName='Responsive Width' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               Using a combination of responsive widths, heights, and image position props will allow for the
-              best outcome for any use case. Image assets and apis such as fastly can help to ensure assets
+              best outcome for any use case. Image assets and APIs such as Fastly can help to ensure assets
               match the image specs and optimize file size.
             </Text>
             {/* <LiveDemo code={ResponsiveWidth} /> */}
@@ -208,10 +208,9 @@ const meta: Meta<typeof Image> = {
               content of the page. Background images, on the other hand, are often ignored by search engines
               and may not be accessible to users with visual impairments. Another difference between the two
               is the way they are loaded. CSS images are loaded as separate files, which can slow down the
-              page loading time if there are too many of them. Background images, on the other hand, are
-              loaded as part of the CSS file, which can improve page loading times and reduce server requests.
-              Overall, both CSS images and background images have their own strengths and weaknesses, and
-              their use depends on the specific needs and goals of a website.
+              page loading time if there are too many of them. Overall, both CSS images and background images
+              have their own strengths and weaknesses, and their use depends on the specific needs and goals
+              of a website.
             </Text>
           </Section>
           <Section heading='Usage'>
@@ -219,7 +218,7 @@ const meta: Meta<typeof Image> = {
               Content Alignment & Formating
             </Text>
             <Text.p textStyle='paragraph'>
-              When aligning images with content such as text and buttons consider how you choose to display
+              When aligning images with content such as text and buttons, consider how you choose to display
               the height of the image.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
@@ -231,7 +230,7 @@ const meta: Meta<typeof Image> = {
             <Text.p textStyle='paragraph'>
               Responsive layouts will impact how an image will fill a parent element or page. When placing an
               image within an object it is important to choose images that work well at different extremes for
-              width. When cropping is likely keep important content in view at any width.
+              width. When cropping is likely, keep important content in view at any width.
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>
               <Image src={responsiveVariableWidthsImage} />
@@ -240,9 +239,9 @@ const meta: Meta<typeof Image> = {
               Maintaining Aspect Ratio
             </Text>
             <Text.p textStyle='paragraph'>
-              When setting the width and hight of an image its important to consider all use cases. Forcing
+              When setting the width and hight of an image, it's important to consider all use cases. Forcing
               images into the same width and or height can cause unwanted stretching. Using image API services
-              is one way to deliver consistent image crops, manually exporting images to control outcome is
+              is one way to deliver consistent image crops. Manually exporting images to control cropping is
               another option. However allowing admin control of how the image displays with object-fit on a
               per use bases is the most optimal option to control outcome.
             </Text.p>
@@ -253,7 +252,7 @@ const meta: Meta<typeof Image> = {
               Logo Images
             </Text>
             <Text.p textStyle='paragraph'>
-              There are three main factors to consider when displaying logos. Resolution, aspect ratio, and
+              There are three main factors to consider when displaying logos: resolution, aspect ratio, and
               display size. Because logos include text more often than not it is important
             </Text.p>
             <Box p={3} my={3} borderRadius='xl' bg='primary.light'>

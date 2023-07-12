@@ -2,11 +2,12 @@ import React from 'react'
 
 import { Select, Label, Box, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-import { argTypes } from './Select.stories.args'
+import { argTypes, defaultArgs } from './Select.stories.args'
 
 export default {
   title: 'Select',
   component: Select,
+  args: defaultArgs,
   argTypes,
 }
 
@@ -23,7 +24,10 @@ const Template = (args) => (
   </Box>
 )
 
-export const Default = Template.bind({})
+export const _Select = Template.bind({})
+
+export const Disabled = Template.bind({})
+Disabled.args = { disabled: true }
 
 export const LongOptionString = () => (
   <Box width={[1, 320]}>
