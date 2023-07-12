@@ -24,6 +24,24 @@
       "shellCommand": "pretty-quick --staged"
     },
 
+    {
+      "name": "prettier-check",
+      "commandKind": "global",
+      "summary": "Checks if all files are formatted properly based on our Prettier config",
+      "safeForSimultaneousRushProcesses": true,
+      "autoinstallerName": "rush-prettier",
+      "shellCommand": "prettier . --check"
+    },
+
+    {
+      "name": "prettier-write",
+      "commandKind": "global",
+      "summary": "Rewrites all files with Prettier in place",
+      "safeForSimultaneousRushProcesses": true,
+      "autoinstallerName": "rush-prettier",
+      "shellCommand": "prettier . --write"
+    },
+
     // prepare
     {
       "commandKind": "global",
