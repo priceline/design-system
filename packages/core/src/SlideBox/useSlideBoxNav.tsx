@@ -20,28 +20,32 @@ const useSlideBoxNav = ({
     const newIndex = checkSlideBounds(index)
     if (newIndex === currentSlide) {
       //edge case when flinging around slides
-      new Promise((resolve) => {
+      new Promise<void>((resolve) => {
         setCurrentSlide(slideInView)
-        resolve(null)
-      }).then(() => {
-        setSlideInView(newIndex)
-        setCurrentSlide(newIndex)
+        resolve()
       })
+        .then(() => {
+          setSlideInView(newIndex)
+          setCurrentSlide(newIndex)
+        })
+        .catch(() => {})
     } else {
       setCurrentSlide(newIndex)
     }
   }
 
   const onSlideChangeWrapper = (index, slideCount) => {
-    new Promise((resolve) => {
+    new Promise<void>((resolve) => {
       setNumSlides(slideCount)
-      resolve(null)
-    }).then(() => {
-      const isRightSlide = slideInView < index + numSlides
-      const newIndex = checkSlideBounds(isRightSlide ? index : index + numSlides - 1)
-      setSlideInView(newIndex)
-      onSlideChange?.(newIndex)
+      resolve()
     })
+      .then(() => {
+        const isRightSlide = slideInView < index + numSlides
+        const newIndex = checkSlideBounds(isRightSlide ? index : index + numSlides - 1)
+        setSlideInView(newIndex)
+        onSlideChange?.(newIndex)
+      })
+      .catch(() => {})
   }
 
   return {

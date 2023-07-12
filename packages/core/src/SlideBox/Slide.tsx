@@ -33,7 +33,8 @@ const Slide: React.FC<ISlideProps> = ({
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
       /* istanbul ignore next */
       const { offsetLeft, offsetParent, offsetWidth } = ref.current
-      slideBoxRef?.current?.scroll({ left: offsetLeft - offsetParent.offsetWidth + offsetWidth })
+      const { offsetWidth: parentOffset } = offsetParent || {}
+      slideBoxRef?.current?.scroll({ left: offsetLeft - parentOffset + offsetWidth })
     }
   }, [isCurrentSlide, ref])
 

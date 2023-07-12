@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes, { InferProps } from 'prop-types'
 import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
 import { Card } from '../Card'
@@ -17,7 +18,11 @@ export default {
   component: SlideBox,
 }
 
-const TileContents = ({ index }) => (
+const propTypes = {
+  index: PropTypes.number,
+}
+
+const TileContents: React.FC<InferProps<typeof propTypes>> = ({ index }) => (
   <Box>
     <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
     <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
