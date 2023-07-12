@@ -85,8 +85,13 @@ describe('Text', () => {
     expect(screen.getByText('Italic Text')).toHaveStyleRule('font-style', 'italic')
   })
 
-  test('textTransform', () => {
+  test('textDecoration', () => {
     render(<Text textDecoration='underline'>Underlined Text</Text>)
     expect(screen.getByText('Underlined Text')).toHaveStyleRule('text-decoration', 'underline')
+  })
+
+  test('textTransform', () => {
+    render(<Text textTransform='lowercase'>Lowercase Text</Text>)
+    expect(screen.getByText('Lowercase Text')).toHaveStyleRule('text-transform', 'lowercase')
   })
 })

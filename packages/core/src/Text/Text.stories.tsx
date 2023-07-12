@@ -87,6 +87,18 @@ export const TextDecoration = () => (
   </div>
 )
 
+export const TextTransform = () => (
+  <div>
+    <Text textTransform='capitalize'>hello capitalize</Text>
+    <Text textTransform='uppercase'>hello uppercase</Text>
+    <Text textTransform='lowercase'>HELLO LOWERCASE</Text>
+    <Text textTransform='none'>Hello none</Text>
+    <Text textTransform='uppercase' textStyle='heading5'>
+      hello uppercase heading5
+    </Text>
+  </div>
+)
+
 export const Regular = () => <Text regular>Hello Regular</Text>
 
 export const Bold = () => <Text bold>Hello Bold</Text>
