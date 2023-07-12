@@ -8,6 +8,7 @@ const useSlideBoxNav = ({
   arrowPosition,
   childArray,
   slideScrollNum,
+  mobileSlideScrollNum,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(currentSlideOverride || 0)
   const [slideInView, setSlideInView] = useState(currentSlideOverride || 0)
@@ -48,6 +49,13 @@ const useSlideBoxNav = ({
       .catch(() => {})
   }
 
+  const getSlideScrollNum = () =>
+    typeof window === 'undefined'
+      ? mobileSlideScrollNum
+      : window.innerWidth < 1024
+      ? mobileSlideScrollNum
+      : slideScrollNum
+
   return {
     setCurrentSlide,
     currentSlide,
@@ -59,10 +67,10 @@ const useSlideBoxNav = ({
       arrowPosition,
       size: arrowSizeOverride || arrowPosition === 'side' ? 'lg' : 'sm',
       leftArrowClick: () => {
-        navigateToSlide(slideInView - slideScrollNum)
+        navigateToSlide(slideInView - getSlideScrollNum())
       },
       rightArrowClick: () => {
-        navigateToSlide(slideInView + slideScrollNum)
+        navigateToSlide(slideInView + getSlideScrollNum())
       },
     },
   }

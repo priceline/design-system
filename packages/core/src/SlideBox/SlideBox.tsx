@@ -17,6 +17,9 @@ const propTypes = {
   layout: PropTypes.string,
   currentSlideOverride: PropTypes.number,
   arrowPosition: PropTypes.string,
+  mobileSlideScrollNum: PropTypes.num,
+  slideScrollNum: PropTypes.num,
+  arrowButtonVariation: PropTypes.string,
 }
 
 const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
@@ -29,8 +32,9 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
   currentSlideOverride,
   arrowSizeOverride,
   arrowButtonVariation = 'white',
-  arrowPosition = 'bottom',
+  arrowPosition = 'side',
   slideScrollNum = 2,
+  mobileSlideScrollNum = 1,
 }) => {
   const childArray = React.Children.toArray(children)
   const ref = useRef()
@@ -42,6 +46,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
     arrowPosition,
     childArray,
     slideScrollNum,
+    mobileSlideScrollNum,
   })
 
   useEffect(() => {
