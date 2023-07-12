@@ -11,14 +11,16 @@ import { Priceline } from 'pcln-icons'
 import { applyVariations, getPaletteColor, getTextColorOn } from '../utils'
 
 const variations = {
+  initial: css`
+    margin-left: ${themeGet('space.3')};
+  `,
   incoming: css`
-    border-top-left-radius: ${themeGet('borderRadii.sm')};
+    border-top-left-radius: 4px;
   `,
   outgoing: css`
     background-color: ${getPaletteColor('primary.base')};
-    border-top-right-radius: ${themeGet('borderRadii.sm')};
+    border-top-right-radius: 4px;
     color: ${getTextColorOn('primary.base')};
-
     justify-content: flex-end;
   `,
 }
@@ -34,12 +36,14 @@ const Message = styled(Flex)`
   ${applyVariations('ChatMessage', variations)};
 `
 
+export const variationNames = ['initial', 'incoming', 'outgoing']
+
 export interface IChatMessage extends IFlexProps {
   footer?: React.ReactNode
   header?: React.ReactNode
-  Icon?: React.FC<{ color?: string, size?: string}>
+  Icon?: React.FC<{ color?: string; size?: string }>
   message: string
-  variation: 'initial' | 'incoming' | 'outgoing'
+  variation: (typeof variationNames)[number]
 }
 
 function ChatMessage({ footer, header, Icon = Priceline, message, variation, ...props }: IChatMessage) {
@@ -47,9 +51,9 @@ function ChatMessage({ footer, header, Icon = Priceline, message, variation, ...
   const marginBottom = footer ? 3 : 0
 
   return (
-    <Message borderRadius='xl' variation={variation} mt={marginTop} mb={marginBottom} p={3} {...props}>
+    <Message borderRadius='18px' variation={variation} mt={marginTop} mb={marginBottom} p='12px' {...props}>
       {header && (
-        <Absolute top='-20px' left='0px' width='100%' px={3}>
+        <Absolute top='-20px' left='0px' minWidth='300px' width='100%' px={3}>
           {header}
         </Absolute>
       )}
@@ -60,7 +64,7 @@ function ChatMessage({ footer, header, Icon = Priceline, message, variation, ...
       )}
       <Text textStyle='paragraph2'>{message}</Text>
       {footer && (
-        <Absolute bottom='-20px' left='0px' width='100%' px={3}>
+        <Absolute bottom='-20px' left='0px' minWidth='300px' width='100%' px={3}>
           {footer}
         </Absolute>
       )}

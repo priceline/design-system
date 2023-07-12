@@ -2,9 +2,7 @@ import React from 'react'
 import type { StoryObj } from '@storybook/react'
 import { Flex, Text } from '..'
 import { Overnight } from 'pcln-icons'
-import ChatMessage, { IChatMessage } from './ChatMessage'
-
-const variations = ['initial', 'incoming', 'outgoing']
+import ChatMessage, { IChatMessage, variationNames } from './ChatMessage'
 
 export default {
   title: 'Chat / ChatMessage',
@@ -15,10 +13,10 @@ export default {
   },
   argTypes: {
     variation: {
-      options: variations,
+      options: variationNames,
       control: {
         type: 'select',
-        options: variations,
+        options: variationNames,
       },
     },
   },
