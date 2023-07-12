@@ -11,8 +11,6 @@ import { zIndices, colorSchemeNames as colorSchemeNamesArr } from '../../theme'
 
 export const colorSchemeNames = colorSchemeNamesArr
 
-export { colorSchemeNames } from '../../utils/createColorScheme'
-
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
 
 export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']

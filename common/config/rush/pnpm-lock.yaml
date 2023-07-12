@@ -472,6 +472,9 @@ importers:
       '@radix-ui/react-dialog':
         specifier: ^1.0.4
         version: 1.0.4(@types/react@17.0.62)(react-dom@17.0.2)(react@17.0.2)
+      '@radix-ui/react-visually-hidden':
+        specifier: ^1.0.3
+        version: 1.0.3(@types/react@17.0.62)(react-dom@17.0.2)(react@17.0.2)
       '@styled-system/prop-types':
         specifier: ^5.1.5
         version: 5.1.5(styled-system@5.1.5)
@@ -6844,6 +6847,26 @@ packages:
       '@babel/runtime': 7.22.6
       '@types/react': 17.0.62
       react: 17.0.2
+    dev: false
+
+  /@radix-ui/react-visually-hidden@1.0.3(@types/react@17.0.62)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-D4w41yN5YRKtu464TLnByKzMDG/JlMPHtfZgQAu9v6mNakUqGUI9vUrfQKz8NK41VMm/xbZbh76NUTVtIYqOMA==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.22.6
+      '@radix-ui/react-primitive': 1.0.3(@types/react@17.0.62)(react-dom@17.0.2)(react@17.0.2)
+      '@types/react': 17.0.62
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
     dev: false
 
   /@reach/component-component@0.16.0(react-dom@17.0.2)(react@17.0.2):

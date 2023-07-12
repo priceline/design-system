@@ -1,28 +1,71 @@
+import { render, screen } from '@testing-library/react'
 import React from 'react'
-import { render } from '../__test__/testing-library'
+import { Dialog } from '..'
 
-import { Dialog } from '.'
+const triggerText = 'Open Dialog'
+const contentText = 'Dialog Content'
 
 describe('Dialog', () => {
-  it('should render correctly', () => {
-    const { asFragment } = render(<Dialog>Dialog</Dialog>)
+  it('renders the trigger node', () => {
+    render(
+      <Dialog triggerNode={<button>{triggerText}</button>} ariaDescription='Description' ariaTitle='Title'>
+        {contentText}
+      </Dialog>
+    )
 
-    expect(asFragment()).toMatchInlineSnapshot(`
-      <DocumentFragment>
-        .c0 {
-        font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-        line-height: 1.4;
-        font-weight: 500;
-      }
+    const triggerNode = screen.getByText(triggerText)
+    expect(triggerNode).toBeInTheDocument()
+  })
 
-      .c0 * {
-        box-sizing: border-box;
-      }
+  it('renders the dialog content when trigger is clicked', () => {
+    render(
+      <Dialog triggerNode={<button>{triggerText}</button>} ariaDescription='Description' ariaTitle='Title'>
+        {contentText}
+      </Dialog>
+    )
 
-      <div
-          class="c0"
-        />
-      </DocumentFragment>
-    `)
+    const triggerNode = screen.getByText(triggerText)
+    triggerNode.click()
+
+    const contentNode = screen.getByText(contentText)
+    expect(contentNode).toBeInTheDocument()
+  })
+
+  it('calls onOpenChange when trigger is clicked', () => {
+    const onOpenChange = jest.fn()
+    render(
+      <Dialog
+        triggerNode={<button>{triggerText}</button>}
+        ariaDescription='Description'
+        ariaTitle='Title'
+        onOpenChange={onOpenChange}
+      >
+        {contentText}
+      </Dialog>
+    )
+
+    const triggerNode = screen.getByText(triggerText)
+    triggerNode.click()
+
+    expect(onOpenChange).toHaveBeenCalledWith(true)
+  })
+
+  it('handles controlled state when open', () => {
+    render(
+      <Dialog
+        triggerNode={<button>{triggerText}</button>}
+        ariaDescription='Description'
+        ariaTitle='Title'
+        open={false}
+      >
+        {contentText}
+      </Dialog>
+    )
+
+    const triggerNode = screen.getByText(triggerText)
+    triggerNode.click()
+
+    const contentNode = screen.queryByText(contentText)
+    expect(contentNode).not.toBeVisible()
   })
 })

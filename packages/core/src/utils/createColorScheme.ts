@@ -103,6 +103,11 @@ export const createColorScheme = ({ palette }: { palette: PaletteFamilies }): Co
       backgroundName: 'background.light',
       foreground: background.darkest,
     },
+    neutralDarkOnLightest: {
+      background: background.lightest,
+      backgroundName: 'background.lightest',
+      foreground: background.darkest,
+    },
 
     // Success
     ///////////////////////////////////////////////

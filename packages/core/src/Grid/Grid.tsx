@@ -24,6 +24,8 @@ import {
   typography,
   TypographyProps,
 } from 'styled-system'
+import type { ColorSchemeName } from '..'
+import { colorScheme } from '..'
 
 export interface IStyledSystemProps
   extends BackgroundProps,
@@ -67,6 +69,7 @@ export interface IGridProps extends IStyledSystemProps {
   templateColumns?: GridProps['gridTemplateColumns']
   templateAreas?: GridProps['gridTemplateAreas']
   placeItems?: FlexboxProps['alignItems']
+  colorScheme?: ColorSchemeName
 }
 
 const GridStyleFns = system({
@@ -88,6 +91,7 @@ const GridStyleFns = system({
 const StyledGrid = styled.div<IGridProps>`
   ${ComposedStyleFns}
   ${GridStyleFns}
+  ${colorScheme}
   display: grid;
 `
 

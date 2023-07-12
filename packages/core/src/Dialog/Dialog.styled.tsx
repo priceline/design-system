@@ -1,119 +1,199 @@
+import type { IDialogProps } from '..'
+import { Box, CloseButton, Grid, Text, ThemeProvider } from '..'
+
 import * as Dialog from '@radix-ui/react-dialog'
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
+import themeGet from '@styled-system/theme-get'
+import { motion } from 'framer-motion'
+import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { getPaletteColor } from '../utils'
 
-const SCRIM_COLOR = 'rgba(0, 24, 51, 0.5)'
+export const DialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
+export type DialogSize = (typeof DialogSizes)[number]
 
-export const DialogOverlay = styled(Dialog.Overlay)`
-  background-color: ${SCRIM_COLOR};
-  position: fixed;
-  inset: 0;
-
-  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
-
-  @keyframes overlayShow {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`
-
-export const SIZES = {
-  sm: {
-    content: { p: 3 },
-    header: {
-      textStyle: 'heading4',
-    },
-  },
-  md: {
-    content: { p: 3 },
-    header: {
-      textStyle: 'heading3',
-    },
-  },
-  lg: {
-    content: { p: '24px' },
-    header: {
-      textStyle: 'heading3',
-    },
-  },
-  xl: {
-    content: { p: '24px' },
-    header: {
-      textStyle: 'heading3',
-    },
-  },
-  xxl: {
-    content: { p: '24px' },
-    header: {
-      textStyle: 'heading3',
-    },
-  },
+type SizeStyle = {
+  width?: string
+  height?: string
 }
 
-export const DialogContentArea = styled(Box).attrs((props) => {
-  const { size, headerContent } = props
-  const contentSize = SIZES[size].content
+const sizeStyles: Record<DialogSize, SizeStyle> = {
+  sm: {
+    width: 'calc(min(400px, 100vw) - 2 * 16px)',
+  },
+  md: {
+    width: 'calc(min(640px, 100vw) - 2 * 16px)',
+  },
+  lg: {
+    width: 'calc(min(960px, 100vw) - 2 * 16px)',
+  },
+  xl: {
+    width: 'calc(min(1280px, 100vw) - 2 * 16px)',
+    height: 'calc(100% - 2 * 24px)',
+  },
+  full: {
+    width: '100%',
+    height: '100%',
+  },
+} as const
 
-  if (contentSize) {
-    return {
-      px: contentSize.p,
-      pb: contentSize.p,
-      pt: headerContent ? 0 : contentSize.p,
-    }
+const scrimStyles = {
+  dark: 'rgba(0, 24, 51, 0.75)',
+  medium: 'rgba(0, 24, 51, 0.5)',
+  light: 'rgba(0, 24, 51, 0.25)',
+} as const
+
+const FloatingCloseButton: typeof CloseButton = styled(CloseButton)`
+  position: absolute;
+  top: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
+  right: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
+  margin: ${(props) => themeGet('space.3')(props)};
+  padding: ${(props) => themeGet('space.2')(props)};
+  background-color: ${(props) => themeGet('palette.background.lightest')(props)};
+  box-shadow: ${(props) => themeGet('shadows.sm')(props)};
+  &:hover {
+    background-color: ${(props) => themeGet('palette.background.lightest')(props)};
   }
-})``
+`
 
-export const DialogContent = styled(Dialog.Content)`
-  background-color: white;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+const DialogOverlayWrapper = styled(motion.div)`
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 750px;
-  max-height: 85vh;
-  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
-
-  &:focus {
-    outline: none;
-  }
-
-  @keyframes contentShow {
-    from {
-      opacity: 0;
-      transform: translate(-50%, -48%) scale(0.96);
-    }
-    to {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-    }
-  }
-
-  ${(props) =>
-    props?.hugColor &&
-    `
-    border-top: 4px solid ${getPaletteColor(props.hugColor)(props)};
-    `}
+  inset: 0;
+  display: grid;
+  overflow-y: auto;
+  place-items: ${(props: IDialogProps) => (props.sheet ? 'end center' : 'center')};
+  background-color: ${(props: IDialogProps) =>
+    Object.keys(scrimStyles).includes(props.scrimColor) ? scrimStyles[props.scrimColor] : props.scrimColor};
 `
 
-export const DialogTitle = styled(Box)`
-  ${(props) =>
-    props?.headerColorScheme === 'primary' &&
-    `
-    background-color: ${getPaletteColor('primary.base')(props)};
-    color: ${getPaletteColor('text.lightest')(props)};
-  `}
+const DialogContentWrapper = styled(motion.div)`
+  position: relative;
+  cursor: initial;
+  background-color: ${(props: IDialogProps) => themeGet('palette.background.lightest')(props)};
+  width: ${(props: IDialogProps) => (props.fullWidth ? '100%' : sizeStyles[props.size]?.width)};
+  height: ${(props: IDialogProps) =>
+    props.sheet ? `calc(${sizeStyles[props.size]?.height} - 24px)` : sizeStyles[props.size]?.height};
+  margin: ${(props: IDialogProps) =>
+    props.sheet
+      ? `${themeGet('space.3')(props)} 0 0 0`
+      : `${themeGet('space.4')(props)} ${themeGet('space.3')(props)} ${themeGet('space.5')(props)} ${themeGet(
+          'space.3'
+        )(props)}`};
+  border-radius: ${(props: IDialogProps) =>
+    props.sheet
+      ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
+          `borderRadii.${props.borderRadius}`
+        )(props)} 0 0`
+      : themeGet(`borderRadii.${props.borderRadius}`)(props)};
+  box-shadow: ${(props: IDialogProps) => themeGet('shadows.overlay-lg')(props)};
 `
 
-export const DialogDescription = styled(Dialog.Description)`
-  margin: 10px 0 20px;
-  color: red;
-  font-size: 15px;
-  line-height: 1.5;
+const DialogInnerContentWrapper = styled.div`
+  position: relative;
+  overflow: auto;
+  border-radius: ${(props: IDialogProps) =>
+    props.sheet
+      ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
+          `borderRadii.${props.borderRadius}`
+        )(props)} 0 0`
+      : themeGet(`borderRadii.${props.borderRadius}`)(props)};
+  border-top: ${(props: IDialogProps) =>
+    props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
 `
+
+export const DialogOverlay = ({ scrimDismiss, scrimColor, sheet, children }: Partial<IDialogProps>) => {
+  return (
+    <Dialog.Portal>
+      <ThemeProvider>
+        <Dialog.Overlay asChild>
+          <DialogOverlayWrapper
+            scrimColor={scrimColor}
+            sheet={sheet}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            {children}
+          </DialogOverlayWrapper>
+        </Dialog.Overlay>
+      </ThemeProvider>
+    </Dialog.Portal>
+  )
+}
+
+export const DialogContent = ({
+  ariaDescription,
+  ariaTitle,
+  borderRadius,
+  children,
+  fullWidth,
+  headerColorScheme,
+  headerContent,
+  headerIcon,
+  headerShowCloseButton,
+  hugColor,
+  scrimDismiss,
+  sheet,
+  showCloseButton,
+  size,
+  onOpenChange,
+}: IDialogProps) => {
+  const headerSizeArray = [
+    headerIcon ? 'heading5' : 'heading4', // xs
+    headerIcon ? 'heading5' : 'heading4', // sm
+    headerIcon ? 'heading5' : 'heading4', // md
+    headerIcon ? 'heading5' : 'heading4', // lg
+    headerIcon ? 'heading4' : 'heading3', // xl
+    headerIcon ? 'heading4' : 'heading3', // xxl
+  ] as const
+
+  return (
+    <Dialog.Content
+      aria-describedby={ariaDescription}
+      onPointerDownOutside={(e) => {
+        e.preventDefault()
+        if (scrimDismiss) onOpenChange(false)
+      }}
+      onOpenAutoFocus={(e) => e.preventDefault()}
+      asChild
+    >
+      <DialogContentWrapper
+        size={size}
+        sheet={sheet}
+        initial={{ opacity: 0, scaleY: 0.8, originY: 1 }}
+        animate={{ opacity: 1, scaleY: 1 }}
+        fullWidth={fullWidth}
+        borderRadius={borderRadius}
+      >
+        <VisuallyHidden asChild>
+          <Dialog.Title>{ariaTitle}</Dialog.Title>
+        </VisuallyHidden>
+
+        <DialogInnerContentWrapper sheet={sheet} hugColor={hugColor} size={size} borderRadius={borderRadius}>
+          {headerContent && (
+            <Grid
+              colorScheme={headerColorScheme}
+              px={[3, 3, 3, 3, '24px', '24px']}
+              py={3}
+              gap={2}
+              autoFlow='column'
+              templateColumns={headerIcon ? 'auto 1fr auto' : '1fr auto'}
+              alignItems='center'
+            >
+              {headerIcon && <Grid placeItems='center'>{headerIcon}</Grid>}
+              <Text textStyle={size === 'sm' ? (headerIcon ? 'heading5' : 'heading4') : headerSizeArray}>
+                {headerContent}
+              </Text>
+              <Box>{headerShowCloseButton && <CloseButton onClick={() => onOpenChange(false)} />}</Box>
+            </Grid>
+          )}
+          {children}
+        </DialogInnerContentWrapper>
+
+        {showCloseButton && (
+          <Dialog.Close asChild>
+            <FloatingCloseButton dialogSize={size} sheet={sheet} fullWidth={fullWidth} />
+          </Dialog.Close>
+        )}
+      </DialogContentWrapper>
+    </Dialog.Content>
+  )
+}

@@ -1,99 +1,85 @@
-import type { ColorSchemeName } from '../theme'
+import type { BorderRadius, ColorSchemes, PaletteColor } from '../theme'
+import type { DialogSize } from './Dialog.styled'
+import { DialogContent, DialogOverlay } from './Dialog.styled'
 
 import * as Dialog from '@radix-ui/react-dialog'
-import React from 'react'
-import { Close } from 'pcln-icons'
-
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { Grid } from '../Grid'
-import { Text } from '../Text'
-import { ThemeProvider } from '../ThemeProvider'
-import {
-  DialogContent,
-  DialogContentArea,
-  DialogDescription,
-  DialogOverlay,
-  DialogTitle,
-  SIZES,
-} from './Dialog.styled'
+import React, { useEffect } from 'react'
 
 export interface IDialogProps {
-  children?: React.ReactNode | JSX.Element[]
-  description: string
-  headerColorScheme?: ColorSchemeName
-  headerContent?: React.ReactNode
-  headerIcon?: React.ReactNode
-  hugColor?: string // TODO should be enum of palette
-  modal?: boolean
+  ariaDescription: string
+  ariaTitle: string
+  borderRadius?: BorderRadius
+  children?: React.ReactNode
   defaultOpen?: boolean
-  size: 'sm' | 'md' | 'lg' | 'xl'
-  triggerNode?: React.ReactNode | JSX.Element[]
+  fullWidth?: boolean
+  headerColorScheme?: keyof ColorSchemes
+  headerContent?: string | React.ReactNode
+  headerIcon?: React.ReactNode
+  headerShowCloseButton?: boolean
+  hugColor?: PaletteColor
+  open?: boolean
+  scrimColor?: 'dark' | 'medium' | 'light' | (string & {})
+  scrimDismiss?: boolean
+  sheet?: boolean
+  showCloseButton?: boolean
+  size?: DialogSize
+  triggerNode?: React.ReactNode
+  onOpenChange?: (open: boolean) => void
 }
 
-const PclnDialog: React.FC = ({
+const PclnDialog = ({
+  ariaDescription,
+  ariaTitle,
+  borderRadius = '2xl',
   children,
-  description,
   defaultOpen = false,
-  headerColorScheme,
+  fullWidth = false,
+  headerColorScheme = 'neutralDarkOnLightest',
   headerContent,
   headerIcon,
+  headerShowCloseButton = false,
   hugColor,
-  modal = false,
+  open,
+  scrimColor = 'dark',
+  scrimDismiss = true,
+  sheet = false,
+  showCloseButton = true,
   size = 'md',
   triggerNode,
+  onOpenChange,
 }: IDialogProps) => {
-  const showHeaderCloseButton = true
+  const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
-  const headerTextStyle = SIZES[size].header.textStyle
+  useEffect(() => setOpen(open), [open])
+
+  const handleOpenChange = (newOpen: boolean) => {
+    onOpenChange?.(newOpen)
+    setOpen(newOpen)
+  }
 
   return (
-    <Dialog.Root defaultOpen={defaultOpen} modal={modal}>
+    <Dialog.Root open={_open} onOpenChange={handleOpenChange} defaultOpen={defaultOpen}>
       <Dialog.Trigger asChild>{triggerNode}</Dialog.Trigger>
-      <Dialog.Portal>
-        <ThemeProvider>
-          <DialogOverlay />
-          <DialogContent as={Box} borderRadius='2xl' hugColor={hugColor}>
-            <Dialog.Title asChild>
-              <DialogTitle
-                size={size}
-                headerColorScheme={headerColorScheme}
-                borderRadius='2xl'
-                rounded='top'
-                px={[3, null, 24]}
-                py={3}
-              >
-                <Grid templateColumns={['1fr auto']} gap={2} width={1}>
-                  <Grid templateColumns={['auto 1fr']} alignItems='center' gap={2} width={1}>
-                    <Grid>{headerIcon}</Grid>
-                    <Grid>
-                      <Text textStyle={headerTextStyle}>{headerContent}</Text>
-                    </Grid>
-                  </Grid>
-
-                  <Grid>
-                    {showHeaderCloseButton && (
-                      <Dialog.Close asChild>
-                        <Button size='extraLarge' color='primary' borderRadius='xl' IconLeft={Close} />
-                      </Dialog.Close>
-                    )}
-                  </Grid>
-                </Grid>
-              </DialogTitle>
-            </Dialog.Title>
-
-            <DialogContentArea size={size} headerContent={headerContent}>
-              <DialogDescription>{description}</DialogDescription>
-
-              {children}
-
-              <Dialog.Close asChild>
-                <Button size='extraLarge' color='primary' borderRadius='xl' IconLeft={Close} />
-              </Dialog.Close>
-            </DialogContentArea>
-          </DialogContent>
-        </ThemeProvider>
-      </Dialog.Portal>
+      <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet}>
+        <DialogContent
+          ariaDescription={ariaDescription}
+          ariaTitle={ariaTitle}
+          borderRadius={borderRadius}
+          fullWidth={fullWidth}
+          headerColorScheme={headerColorScheme}
+          headerContent={headerContent}
+          headerIcon={headerIcon}
+          headerShowCloseButton={headerShowCloseButton}
+          hugColor={hugColor}
+          onOpenChange={handleOpenChange}
+          scrimDismiss={scrimDismiss}
+          sheet={sheet}
+          showCloseButton={showCloseButton}
+          size={size}
+        >
+          {children}
+        </DialogContent>
+      </DialogOverlay>
     </Dialog.Root>
   )
 }
