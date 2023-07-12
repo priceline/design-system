@@ -37,7 +37,7 @@ const Message = styled(Flex)`
 export interface IChatMessage extends IFlexProps {
   footer?: React.ReactNode
   header?: React.ReactNode
-  Icon?: React.FC<any>
+  Icon?: React.FC<{ color?: string, size?: string}>
   message: string
   variation: 'initial' | 'incoming' | 'outgoing'
 }
