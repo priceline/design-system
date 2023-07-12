@@ -3,13 +3,14 @@ import styled from 'styled-components'
 import PropTypes, { InferProps } from 'prop-types'
 import {
   borderRadius,
+  boxShadow,
   display,
   height,
   maxHeight,
   maxWidth,
   minHeight,
   minWidth,
-  boxShadow,
+  overflow,
   size,
   space,
   textAlign,
@@ -17,11 +18,12 @@ import {
   BorderRadiusProps,
   BoxShadowProps,
   DisplayProps,
+  HeightProps,
   MaxHeightProps,
   MaxWidthProps,
   MinHeightProps,
-  HeightProps,
   MinWidthProps,
+  OverflowProps,
   SizeProps,
   SpaceProps,
   TextAlignProps,
@@ -47,11 +49,12 @@ import { ColorSchemes } from '../theme'
 export const boxPropTypes = {
   ...propTypes.boxShadow,
   ...propTypes.display,
+  ...propTypes.height,
   ...propTypes.maxHeight,
   ...propTypes.maxWidth,
   ...propTypes.minHeight,
   ...propTypes.minWidth,
-  ...propTypes.height,
+  ...propTypes.overflow,
   ...propTypes.size,
   ...propTypes.space,
   ...propTypes.textAlign,
@@ -68,11 +71,12 @@ export interface IBoxProps
   extends BorderRadiusProps,
     BoxShadowProps,
     DisplayProps,
+    HeightProps,
     MaxHeightProps,
     MaxWidthProps,
     MinHeightProps,
     MinWidthProps,
-    HeightProps,
+    OverflowProps,
     SizeProps,
     SpaceProps,
     TextAlignProps,
@@ -141,7 +145,8 @@ const Box: React.FC<InferProps<typeof boxPropTypes>> = styled.div.attrs((props) 
       space,
       textAlign,
       borderRadius,
-      boxShadow
+      boxShadow,
+      overflow
     )(props)}
 `
 
