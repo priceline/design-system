@@ -3,7 +3,6 @@
 exports[`BackgroundImage renders 1`] = `
 .c0 {
   background-position: center;
-  border-color: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #eceff2;
@@ -18,7 +17,6 @@ exports[`BackgroundImage renders 1`] = `
 exports[`BackgroundImage renders with border radius 1`] = `
 .c0 {
   background-position: center;
-  border-color: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #eceff2;
@@ -36,7 +34,6 @@ exports[`BackgroundImage renders with border radius 1`] = `
 exports[`BackgroundImage renders with height 1`] = `
 .c0 {
   background-position: center;
-  border-color: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #eceff2;
@@ -53,7 +50,6 @@ exports[`BackgroundImage renders with height 1`] = `
 exports[`BackgroundImage renders with image 1`] = `
 .c0 {
   background-position: center;
-  border-color: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #eceff2;
@@ -69,7 +65,6 @@ exports[`BackgroundImage renders with image 1`] = `
 exports[`BackgroundImage variations parallax variation default render 1`] = `
 .c0 {
   background-position: center;
-  border-color: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #eceff2;
