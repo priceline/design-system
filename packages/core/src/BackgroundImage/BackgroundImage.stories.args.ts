@@ -73,4 +73,17 @@ export const argTypes = {
       defaultValue: { summary: undefined },
     },
   },
+
+  backgroundPosition: {
+    name: 'backgroundPosition',
+    type: { name: 'string', required: false },
+    description: 'background position',
+    options: ['top', 'bottom', 'left', 'right', 'center'],
+    control: {
+      type: 'select',
+    },
+    table: {
+      defaultValue: { summary: 'center' },
+    },
+  },
 }
