@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React from 'react'
 import { Box } from '../Box'
 import { Text } from '../Text'
 import { Heading } from '../Heading'
