@@ -62,6 +62,9 @@ export const Playground: ButtonStory = {
     },
   },
 }
+Playground.parameters = {
+  pseudo: { rootSelector: "body" },
+}
 
 export const Size: ButtonStory = {
   render: () => (
