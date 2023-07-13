@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Use PricelineSparkle icon on ChatMessage by default",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
