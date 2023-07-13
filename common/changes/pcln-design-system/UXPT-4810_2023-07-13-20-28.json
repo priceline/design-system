@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added Tab component",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
