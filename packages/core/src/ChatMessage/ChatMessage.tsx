@@ -7,7 +7,7 @@ import themeGet from '@styled-system/theme-get'
 import { Absolute } from '../Absolute'
 import { Flex, IFlexProps } from '../Flex'
 import { Text } from '../Text'
-import { Priceline } from 'pcln-icons'
+import { PricelineSparkle } from 'pcln-icons'
 import { applyVariations, getPaletteColor, getTextColorOn } from '../utils'
 
 const variations = {
@@ -35,6 +35,13 @@ const Message = styled(Flex)`
   ${applyVariations('ChatMessage', variations)};
 `
 
+const IconWrapper = styled(Flex)`
+  background-color: ${getPaletteColor('primary.base')};
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+`
+
 export const variationNames = ['initial', 'incoming', 'outgoing']
 
 export interface IChatMessage extends IFlexProps {
@@ -45,7 +52,14 @@ export interface IChatMessage extends IFlexProps {
   variation: (typeof variationNames)[number]
 }
 
-function ChatMessage({ footer, header, Icon = Priceline, message, variation, ...props }: IChatMessage) {
+function ChatMessage({
+  footer,
+  header,
+  Icon = PricelineSparkle,
+  message,
+  variation,
+  ...props
+}: IChatMessage) {
   const marginTop = header ? 3 : 0
   const marginBottom = footer ? 3 : 0
 
@@ -58,7 +72,9 @@ function ChatMessage({ footer, header, Icon = Priceline, message, variation, ...
       )}
       {variation === 'initial' && (
         <Absolute top={-16} left={-16}>
-          <Icon color='primary' size='32px' data-testid='chat-message-icon' />
+          <IconWrapper justifyContent='center' alignItems='center'>
+            <Icon color='text.lightest' size='24px' data-testid='chat-message-icon' />
+          </IconWrapper>
         </Absolute>
       )}
       <Text textStyle='paragraph2'>{message}</Text>
