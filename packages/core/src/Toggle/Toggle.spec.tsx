@@ -2,6 +2,7 @@ import React from 'react'
 import { Toggle } from '.'
 import { createTheme } from '..'
 import { render, fireEvent } from '../__test__/testing-library'
+import { theme as customThemes } from '../theme/theme'
 
 const theme = createTheme()
 
@@ -31,5 +32,21 @@ describe('Toggle', () => {
     const input = getByLabelText('Total price toggle')
     fireEvent.click(input)
     expect(cb).toHaveBeenCalled()
+  })
+
+  test('add boxshadow and bgColor when hover over the selected states', () => {
+    const { getByTestId, getByRole } = render(<Toggle label='Total price toggle' isOn={true} />)
+    const wrapper = getByRole('switch').parentNode
+    const circleHandle = getByTestId('handle-div')
+    expect(wrapper).toHaveStyleRule('background-color', theme.palette.primary.base)
+    expect(circleHandle).toHaveStyleRule('box-shadow', customThemes.shadows.sm)
+
+    // when it is hover
+    expect(wrapper).toHaveStyleRule('background-color', theme.palette.primary.dark, {
+      modifier: ':hover:not([disabled])',
+    })
+    expect(wrapper).toHaveStyleRule('box-shadow', customThemes.shadows.xl, {
+      modifier: ':hover:not([disabled]) > #circle-handle',
+    })
   })
 })

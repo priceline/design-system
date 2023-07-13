@@ -7,14 +7,14 @@ const alphaColor = (color: string, props) => `${getPaletteColor(color)(props)}4C
 
 const AbsoluteInput = styled(Input)`
   position: absolute;
-  z-index: 5;
+  z-index: 1;
   opacity: 0;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   margin: 0;
-  cursor: ${(props) => (props.disabled ? 'default' : 'pointer')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `
 
 const OutlineAbsolute = styled(Absolute)`
@@ -28,18 +28,28 @@ const CircleAbsolute = styled(Absolute)`
   justify-content: center;
   align-items: center;
   height: ${(props) => props.width};
-  pointer-events: none;
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
+  z-index: 2;
   transition: left 0.3s;
 `
 
 const WrapperBox = styled(Box)`
   position: relative;
   height: ${(props) => props.height}px;
-  transition: background-color 0.3s;
+  transition: background-color 0.15s ease 0s;
   min-width: ${(props) => props.width}px;
 
-  ${AbsoluteInput}:focus + ${OutlineAbsolute} {
+  ${AbsoluteInput}:focus-visible + ${OutlineAbsolute} {
     opacity: 1;
+  }
+
+  &:hover:not([disabled]) {
+    background-color: ${(props) =>
+      `${getPaletteColor(props.isOn ? 'primary.dark' : 'background.tone')(props)}`};
+  }
+
+  &:hover:not([disabled]) > #circle-handle {
+    box-shadow: ${(props) => props.theme.shadows.xl};
   }
 `
 
@@ -77,13 +87,14 @@ const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, heigh
       height={height}
       isOn={isOn}
       width={width}
+      disabled={disabled}
+      onClick={disabled ? null : onToggle}
     >
       <AbsoluteInput
         aria-checked={isOn}
         aria-label={label}
         checked={isOn}
         disabled={disabled}
-        onClick={disabled ? null : onToggle}
         onChange={() => {}}
         p={0}
         role='switch'
@@ -99,7 +110,11 @@ const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, heigh
         color='background.lightest'
         left={isOn ? leftToggleOnPosition : '2px'}
         top='2px'
+        id='circle-handle' // added for testing purpose
         width={`${circleAbsoluteSize}px`}
+        boxShadowSize='sm'
+        disabled={disabled}
+        data-testid='handle-div'
       >
         {icon}
       </CircleAbsolute>
