@@ -1,4 +1,5 @@
 import { borderRadii, rounded } from '../storybook/args'
+import { backgroundPositionList } from './BackgroundImage'
 
 const variations = ['static', 'parallax']
 const image =
@@ -78,7 +79,7 @@ export const argTypes = {
     name: 'backgroundPosition',
     type: { name: 'string', required: false },
     description: 'background position',
-    options: ['top', 'bottom', 'left', 'right', 'center'],
+    options: backgroundPositionList,
     control: {
       type: 'select',
     },

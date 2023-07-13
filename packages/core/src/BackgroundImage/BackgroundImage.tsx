@@ -28,7 +28,7 @@ const variations = {
   `,
 }
 
-const backgroundPositionList = ['top', 'bottom', 'left', 'right', 'center']
+export const backgroundPositionList = ['top', 'bottom', 'left', 'right', 'center']
 const image = (props) => (props.image ? { backgroundImage: `url(${props.image})` } : null)
 
 const backgroundImagePropTypes = {
