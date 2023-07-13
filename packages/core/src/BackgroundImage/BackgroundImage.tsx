@@ -40,7 +40,7 @@ const backgroundImagePropTypes = {
   variation: PropTypes.oneOf(Object.keys(variations)),
   borderRadiusSize: PropTypes.oneOf(borderRadiusValues),
   rounded: PropTypes.oneOf(roundedValues),
-  backgroundPosition: PropTypes.oneOf(['top', 'bottom', 'left', 'right', 'center']),
+  backgroundPosition: PropTypes.oneOf(backgroundPositionList),
 }
 
 export interface IBackgroundImageProps
