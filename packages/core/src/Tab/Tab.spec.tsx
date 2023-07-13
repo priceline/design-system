@@ -1,5 +1,6 @@
 import React from 'react'
-import { render } from '../__test__/testing-library'
+import { render, screen } from '../__test__/testing-library'
+import { userEvent } from '@storybook/testing-library'
 import { Tab } from '.'
 import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 
@@ -33,42 +34,32 @@ const tabsData = [
   },
 ]
 
-describe('Tabs', () => {
-  it('should render correctly', () => {
-    const { asFragment } = render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
+describe('Tab', () => {
+  const tabsContent = [
+    { id: 'tab1', children: <div>Tab 1 Content</div> },
+    { id: 'tab2', children: <div>Tab 2 Content</div> },
+  ]
 
-    expect(asFragment()).toMatchInlineSnapshot(`<DocumentFragment>
-    .c2 {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+  const tabsData = [
+    { id: 'tab1', text: 'Tab 1' },
+    { id: 'tab2', text: 'Tab 2' },
+  ]
 
-  .c5 {
-    margin: 8px;
-  }
+  it('renders tabs with correct text', () => {
+    render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
 
-  .c4 {
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    line-height: 20px;
-  }
+    expect(screen.getByText('Tab 1')).toBeInTheDocument()
+    expect(screen.getByText('Tab 2')).toBeInTheDocument()
+  })
 
-  .c6 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 32px;
-  }
+  it('renders tab content based on active tab', () => {
+    render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
 
-  .c7 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    -webkit-letter-spacing: -0.003rem;
-    -moz-letter-spacing: -0.003rem;
-    -ms-letter-spacing: -0.003rem;
-    letter-spacing: -0.003rem;
-  }`)
+    expect(screen.getByText('Tab 1 Content')).toBeInTheDocument()
+    expect(screen.queryByText('Tab 2 Content')).toBeNull()
+
+    userEvent.click(screen.getByText('Tab 2'))
+    expect(screen.queryByText('Tab 1 Content')).toBeNull()
+    expect(screen.getByText('Tab 2 Content')).toBeInTheDocument()
   })
 })

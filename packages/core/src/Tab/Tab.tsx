@@ -22,6 +22,7 @@ export interface ITabsProps {
   variant?: string
   type?: 'chip' | 'radio' | 'button'
 }
+
 const PclnTab = ({
   tabsContent,
   tabsData,
