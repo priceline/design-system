@@ -40,10 +40,10 @@ export const TabList = styled(Tab.List)`
 `
 export const SIZES = {
   sm: {
-    textStyle: 'heading4',
+    textStyle: 'heading5',
   },
   md: {
-    textStyle: 'heading4',
+    textStyle: 'heading5',
   },
   lg: {
     textStyle: 'heading3',

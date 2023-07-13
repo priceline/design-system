@@ -26,9 +26,7 @@ const PclnTab = ({
   tabsData,
   orientation = 'horizontal',
   onClick,
-  icon,
   size = 'md',
-  variant,
   type = 'button',
 }: ITabsProps) => {
   const tabLink = tabsContent[0].id
@@ -42,7 +40,7 @@ const PclnTab = ({
               <TabTrigger type={type} asChild value={tab.id} key={`${index}-${tab.id}`}>
                 <Box mx={2}>
                   {tab.icon}
-                  <Text py={1} px={type === 'chip' && 3} textStyle={textStyle}>
+                  <Text fontWeight={1} fontSize={2} py={1} px={type === 'chip' && 3} textStyle={textStyle}>
                     {tab.text}
                   </Text>
                 </Box>

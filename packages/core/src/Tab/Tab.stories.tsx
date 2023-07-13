@@ -9,7 +9,7 @@ import { Heading } from '../Heading'
 
 const DefaultContent = () => {
   return (
-    <Box m={3}>
+    <Box>
       <Heading.h3 textStyle='heading3'>Default Heading</Heading.h3>
       <Heading.h4 textStyle='heading3'>Heading4</Heading.h4>
       <Text textStyle='paragraph'>
