@@ -45,6 +45,7 @@ import {
   getPaletteColor,
   textAlignAttrs,
   textStylesValues,
+  textTransform,
   textTransformValues,
   typographyAttrs,
 } from '../utils'
@@ -78,8 +79,6 @@ export const textShadow = (props) => {
   const textShadowSize = props.textShadowSize || 'md'
   return props.enableTextShadow ? { textShadow: props.theme.textShadows[textShadowSize] } : null
 }
-
-export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)
 
 const textPropTypes = {
   ...propTypes.display,

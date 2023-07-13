@@ -416,3 +416,5 @@ export const colorSchemeCustomForeground = ({ colorScheme, color, ...props }) =>
     color: ${paletteColor ? paletteColor : getTextColorOn(backgroundName)(props)};
   `
 }
+
+export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)

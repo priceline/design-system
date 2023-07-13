@@ -1,4 +1,5 @@
 import { borderRadii, colors } from '../storybook/args'
+import { textTransformValues } from '../utils'
 
 export const argTypes = {
   borderRadius: {
@@ -24,6 +25,15 @@ export const argTypes = {
     type: { name: 'string' },
     options: colors,
     description: 'Color of badge',
+    control: {
+      type: 'select',
+    },
+  },
+  textTransform: {
+    name: 'text transform',
+    type: { name: 'string' },
+    options: textTransformValues,
+    description: 'Text transform of Badge',
     control: {
       type: 'select',
     },
