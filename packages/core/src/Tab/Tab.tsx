@@ -6,6 +6,7 @@ import { Box } from '../Box'
 
 export interface ITabsProps {
   orientation?: 'horizontal' | 'vertical'
+  onHover?: boolean
   onClick?: () => void
   size?: string
   tabsContent: {
@@ -26,6 +27,7 @@ const PclnTab = ({
   tabsData,
   orientation = 'horizontal',
   onClick,
+  onHover = true,
   size = 'md',
   type = 'button',
 }: ITabsProps) => {
@@ -37,10 +39,10 @@ const PclnTab = ({
         {tabsData.map((tab, index) => {
           return (
             <>
-              <TabTrigger type={type} asChild value={tab.id} key={`${index}-${tab.id}`}>
-                <Box mx={2}>
+              <TabTrigger hover={onHover} type={type} asChild value={tab.id} key={`${index}-${tab.id}`}>
+                <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
                   {tab.icon}
-                  <Text fontWeight={1} fontSize={2} py={1} px={type === 'chip' && 3} textStyle={textStyle}>
+                  <Text fontWeight={1} fontSize={2} py={3} pl={tab.icon ? 2 : 4} pr={4} textStyle={textStyle}>
                     {tab.text}
                   </Text>
                 </Box>

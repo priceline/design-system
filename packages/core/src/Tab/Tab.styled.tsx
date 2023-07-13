@@ -1,10 +1,31 @@
 import * as Tab from '@radix-ui/react-tabs'
 import styled from 'styled-components'
 import { getPaletteColor } from '../utils'
+import Chip from '../Chip'
 
 export const TabContainer = styled(Tab.Root)``
 
-export const TabTrigger = styled(Tab.Trigger)`
+export const TabTrigger = styled(Tab.Trigger as typeof Chip)`
+  cursor: pointer;
+  ${(props) =>
+    props?.hover &&
+    `
+    &:hover {
+      border-radius: 12px;
+      background-color: ${getPaletteColor('border.tint')(props)};
+      ${
+        props?.type === 'button'
+          ? `
+        border-radius: 12px;
+        `
+          : props?.type === 'chip'
+          ? `
+        border-radius: 9999px;
+        `
+          : ''
+      }
+    }
+  `}
   ${(props) =>
     props?.type === 'button'
       ? `
@@ -19,11 +40,19 @@ export const TabTrigger = styled(Tab.Trigger)`
     color: ${getPaletteColor('primary.base')(props)};
  `
       : ''}
+  
   &[data-state='active'] {
+    ${(props) =>
+      props?.hover &&
+      `
+        &:hover {
+          background-color: ${getPaletteColor('primary.tint')(props)};
+        }
+      `}
     ${(props) =>
       props?.type === 'button'
         ? `
-    border-radius:10px 10px 0 0;
+    brder-radius: 12px;
     border-bottom: 4px solid;
     border-width: thick;
   `

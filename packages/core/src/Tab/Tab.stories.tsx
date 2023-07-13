@@ -4,7 +4,11 @@ import { Tab } from '.'
 import { StoryStage } from '../DocsUtils'
 import { ITabsProps } from './Tab'
 import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
+import { Icon } from '../Icon'
 const defaultArgs: ITabsProps = {
+  size: 'md',
+  onHover: true,
+  type: 'button',
   tabsContent: [
     {
       id: 't1',
@@ -67,6 +71,77 @@ export const NoIconButtonTabs: TabsStory = {
   args: {
     ...defaultArgs,
     size: 'md',
+  },
+}
+
+export const NoIconNoHoverButtonTabs: TabsStory = {
+  render: (args) => (
+    <StoryStage>
+      <Tab {...args} />
+    </StoryStage>
+  ),
+  args: {
+    ...defaultArgs,
+    onHover: false,
+    size: 'md',
+  },
+}
+export const IconButtonTabs: TabsStory = {
+  render: (args) => (
+    <StoryStage>
+      <Tab {...args} />
+    </StoryStage>
+  ),
+  args: {
+    ...defaultArgs,
+    tabsData: [
+      {
+        id: 't1',
+        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        text: 'Tab 1',
+      },
+      {
+        id: 't2',
+        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        text: 'Tab 2',
+      },
+      {
+        id: 't3',
+        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        text: 'Tab 3',
+      },
+    ],
+    size: 'md',
+  },
+}
+
+export const IconChipTabs: TabsStory = {
+  render: (args) => (
+    <StoryStage>
+      <Tab {...args} />
+    </StoryStage>
+  ),
+  args: {
+    ...defaultArgs,
+    tabsData: [
+      {
+        id: 't1',
+        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        text: 'Tab 1',
+      },
+      {
+        id: 't2',
+        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        text: 'Tab 2',
+      },
+      {
+        id: 't3',
+        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        text: 'Tab 3',
+      },
+    ],
+    size: 'md',
+    type: 'chip',
   },
 }
 
