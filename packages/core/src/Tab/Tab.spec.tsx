@@ -37,6 +37,38 @@ describe('Tabs', () => {
   it('should render correctly', () => {
     const { asFragment } = render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
 
-    expect(asFragment()).toMatchSnapshot()
+    expect(asFragment()).toMatchInlineSnapshot(`<DocumentFragment>
+    .c2 {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .c5 {
+    margin: 8px;
+  }
+
+  .c4 {
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 20px;
+  }
+
+  .c6 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .c7 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: -0.003rem;
+    -moz-letter-spacing: -0.003rem;
+    -ms-letter-spacing: -0.003rem;
+    letter-spacing: -0.003rem;
+  }`)
   })
 })
