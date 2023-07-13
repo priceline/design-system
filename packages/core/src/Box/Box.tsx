@@ -44,7 +44,7 @@ import {
   paletteFamilies,
   roundedValues,
 } from '../utils'
-import { ColorSchemes } from '../theme'
+import type { ColorSchemeName } from '../theme'
 
 export const boxPropTypes = {
   ...propTypes.boxShadow,
@@ -121,7 +121,7 @@ export interface IBoxProps
     | 'border'
     | 'background'
   onClick?: (unknown) => unknown
-  colorScheme?: keyof ColorSchemes
+  colorScheme?: ColorSchemeName
 }
 
 const Box: React.FC<InferProps<typeof boxPropTypes>> = styled.div.attrs((props) => ({

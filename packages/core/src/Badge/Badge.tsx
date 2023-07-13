@@ -11,7 +11,7 @@ import {
   colorScheme,
 } from '../utils'
 import { space, borderRadius, SpaceProps, compose } from 'styled-system'
-import { ColorSchemes } from '../theme'
+import type { ColorSchemeName } from '../theme'
 
 const type = (props) => {
   const badgeColors = {
@@ -71,7 +71,7 @@ export interface IBadgeProps extends SpaceProps, React.HtmlHTMLAttributes<HTMLEl
   color?: string
   bg?: string
   borderRadius?: string
-  colorScheme?: keyof ColorSchemes
+  colorScheme?: ColorSchemeName
 }
 
 const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
