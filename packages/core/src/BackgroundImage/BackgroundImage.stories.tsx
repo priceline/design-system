@@ -86,5 +86,4 @@ BackgroundPosition.args = {
   height: 400,
   width: '360px',
   children: <StoryChildren />,
-  backgroundPosition: 'center',
 }

@@ -28,6 +28,7 @@ const variations = {
   `,
 }
 
+const backgroundPositionList = ['top', 'bottom', 'left', 'right', 'center']
 const image = (props) => (props.image ? { backgroundImage: `url(${props.image})` } : null)
 
 const backgroundImagePropTypes = {
@@ -51,7 +52,7 @@ export interface IBackgroundImageProps
   image?: string
   borderRadius?: string
   rounded?: string
-  backgroundPosition?: string
+  backgroundPosition?: (typeof backgroundPositionList)[number]
 }
 
 const BackgroundImage: React.FC<IBackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
