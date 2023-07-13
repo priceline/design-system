@@ -55,7 +55,7 @@ export interface IBackgroundImageProps
 }
 
 const BackgroundImage: React.FC<IBackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
-  background-position: ${(props) => props.backgroundPosition || 'center'};
+  background-position: ${(props) => props.backgroundPosition};
   background-size: cover;
   background-repeat: no-repeat;
   background-color: ${getPaletteColor('border.light')};
