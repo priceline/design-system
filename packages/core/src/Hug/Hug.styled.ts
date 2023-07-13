@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
 import { Card } from '../Card'
-import { applyVariations, colorScheme } from '../utils'
+import { applyVariations, colorSchemeCustomForeground } from '../utils'
 import { Flex, Box } from '..'
+import type { IFlexProps } from '../Flex'
 
 export const HugCard = styled(Card)`
   overflow: hidden;
@@ -28,6 +29,28 @@ export const BorderConcealer = styled(Box)`
   }
 `
 
-export const Header = styled(Flex)`
-  ${colorScheme}
+export interface IHeaderProps extends IFlexProps {
+  iconUsesColorScheme: boolean
+}
+
+export const Header: React.FC<IHeaderProps> = styled(Flex)`
+  ${colorSchemeCustomForeground}
+
+  ${({ colorScheme, theme, iconUsesColorScheme }) => {
+    // This block handles setting the color of the icon in the header to colorScheme.foreground
+    // depending whether or not the icon node already had a custom color prop
+
+    if (!iconUsesColorScheme) return ''
+
+    const computedColorScheme = themeGet(`colorSchemes.${colorScheme}`)({ theme })
+
+    return (
+      computedColorScheme &&
+      `
+        svg {
+          color: ${computedColorScheme.foreground};
+        }
+      `
+    )
+  }}
 `

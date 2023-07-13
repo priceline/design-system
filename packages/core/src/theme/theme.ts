@@ -478,6 +478,12 @@ export type PaletteFamilyName = typeof paletteFamilyNames[number]
 /** @public */
 export type PaletteFamilies = Record<PaletteFamilyName, PaletteFamily>
 
+type _PaletteFamily = Array<keyof PaletteFamilies>[number]
+type _PaletteFamilyOption = Array<keyof PaletteFamily>[number]
+
+/** @public */
+export type PaletteColor = `${_PaletteFamily}.${_PaletteFamilyOption}`
+
 /** @public */
 export type ColorStyle = {
   color: string
@@ -521,6 +527,7 @@ export type ColorStyles = Record<ColorStyleName, ColorStyle>
 export type ColorScheme = {
   foreground: string
   background: string
+  backgroundName: PaletteColor
 }
 
 /** @public */

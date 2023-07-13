@@ -392,3 +392,27 @@ export const colorScheme = ({ colorScheme, ...props }) => {
     color: ${foreground};
   `
 }
+
+/**
+ * Use this for components where color should not be set based on the colorScheme's foreground.
+ * If a color prop is provided, that color will be used for the foreground color. Otherwise,
+ * the foreground color will be set automatically to text.lightest or text.base depending on the
+ * colorScheme's background color.
+ */
+export const colorSchemeCustomForeground = ({ colorScheme, color, ...props }) => {
+  if (!colorScheme) return ''
+
+  const { foreground, background, backgroundName = '' } = themeGet(`colorSchemes.${colorScheme}`)(props)
+
+  let paletteColor
+
+  if (color) {
+    paletteColor = getPaletteColor(color)(props)
+  }
+
+  return `
+    background-color: ${background};
+    border-color: ${foreground};
+    color: ${paletteColor ? paletteColor : getTextColorOn(backgroundName)(props)};
+  `
+}

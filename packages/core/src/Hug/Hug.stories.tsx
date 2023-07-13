@@ -116,3 +116,19 @@ export const ColorScheme = () => {
     </Hug>
   ))
 }
+
+export const ColorSchemeWithCustomHeaderTextAndIconColors = () => {
+  return (
+    <Hug
+      text={<Text color='error.base'>Custom Header Color</Text>}
+      icon={<Star color='promoPrimary.base' />}
+      colorScheme='primaryLight'
+      my='3'
+      boxShadowSize='xl'
+    >
+      <Card borderRadius='xl' p={3} color='background.lightest'>
+        <Text>I&apos;m a card within a card within a hug!</Text>
+      </Card>
+    </Hug>
+  )
+}
