@@ -18,7 +18,7 @@ const GapFlex = styled(Flex)`
 
 const MaxWidthFlex = styled(Flex)`
   & > * {
-    max-width: 90%;
+    max-width: ${(props) => props.messageMaxWidth};
   }
 `
 
@@ -29,14 +29,20 @@ interface IMessage {
 }
 
 export interface IChatMessageContainer {
+  messageMaxWidth: string
   messages: IMessage[]
 }
 
-function ChatMessageContainer({ messages }: IChatMessageContainer) {
+function ChatMessageContainer({ messageMaxWidth = '90%', messages }: IChatMessageContainer) {
   return (
     <GapFlex flexDirection='column' p={3}>
       {messages?.map((message) => (
-        <MaxWidthFlex key={message} justifyContent={message.variation === 'outgoing' ? 'flex-end' : 'flex-start'} width='100%'>
+        <MaxWidthFlex
+          key={message}
+          justifyContent={message.variation === 'outgoing' ? 'flex-end' : 'flex-start'}
+          messageMaxWidth={messageMaxWidth}
+          width='100%'
+        >
           <ChatMessage {...message} />
         </MaxWidthFlex>
       ))}

@@ -6,6 +6,9 @@ import ChatMessageContainer, { IChatMessageContainer } from './ChatMessageContai
 export default {
   title: 'Chat / ChatMessageContainer',
   component: ChatMessageContainer,
+  args: {
+    messageMaxWidth: '90%',
+  },
   tags: ['autodocs'],
 }
 
@@ -35,17 +38,9 @@ const messages = [
   },
 ]
 
-const conversation = [
-  initialMessage,
-  ...messages,
-]
+const conversation = [initialMessage, ...messages]
 
-const longConversation = [
-  initialMessage,
-  ...messages,
-  ...messages,
-  ...messages,
-]
+const longConversation = [initialMessage, ...messages, ...messages, ...messages]
 
 type ChatMessageContainerStory = StoryObj<IChatMessageContainer>
 
@@ -63,4 +58,8 @@ export const LongConversation: ChatMessageContainerStory = {
 
 export const Empty: ChatMessageContainerStory = {
   render: (args) => <ChatMessageContainer {...args} />,
+}
+
+export const CustomMessageMaxWidth: ChatMessageContainerStory = {
+  render: (args) => <ChatMessageContainer {...args} messages={conversation} messageMaxWidth='60%' />,
 }
