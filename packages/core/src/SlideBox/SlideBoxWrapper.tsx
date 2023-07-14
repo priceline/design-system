@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import { Box } from '../Box'
-import { RelativeFlex } from './Arrow.styles'
+import { Relative } from '../Relative'
+import { Flex } from '../Flex'
 
 const propTypes = {
   children: PropTypes.node,
@@ -10,7 +11,9 @@ const propTypes = {
 
 const SlideBoxWrapper: React.FC<InferProps<typeof propTypes>> = ({ children, arrowPosition }) =>
   arrowPosition === 'side' ? (
-    <RelativeFlex alignItems='center'>{children}</RelativeFlex>
+    <Relative>
+      <Flex alignItems='center'>{children}</Flex>
+    </Relative>
   ) : (
     <Box>{children}</Box>
   )
