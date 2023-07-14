@@ -11,12 +11,12 @@ const AbsoluteTransformRight = styled(Absolute)`
 
 const ARROW_SIZES = {
   sm: {
-    buttonSize: '40px',
+    buttonSize: 40,
     iconSize: 32,
   },
   lg: {
-    buttonSize: ['40px', '40px', '40px', '40px', '60px'],
-    iconSize: [32, 32, 32, 32, 40],
+    buttonSize: [40, null, null, null, 60],
+    iconSize: [32, null, null, null, 40],
   },
 }
 
