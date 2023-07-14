@@ -3,12 +3,11 @@ import PropTypes, { InferProps } from 'prop-types'
 import { Flex } from '../Flex'
 import { Arrow } from './Arrow'
 import { AbsoluteTransformRight } from './Arrow.styles'
+import { arrowPropTypes } from './Arrow'
 
 const propTypes = {
-  isLeft: PropTypes.bool,
-  onClick: PropTypes.func,
-  arrowColor: PropTypes.string,
-  size: PropTypes.string,
+  arrowPosition: PropTypes.bool,
+  action: PropTypes.shape(arrowPropTypes),
 }
 
 const BottomArrows: React.FC<InferProps<typeof propTypes>> = ({ arrowPosition, arrowProps }) => {

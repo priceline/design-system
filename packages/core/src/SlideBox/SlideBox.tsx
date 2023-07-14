@@ -16,10 +16,11 @@ const propTypes = {
   stretchHeight: PropTypes.bool,
   layout: PropTypes.string,
   currentSlideOverride: PropTypes.number,
-  arrowPosition: PropTypes.string,
-  mobileSlideScrollNum: PropTypes.num,
-  slideScrollNum: PropTypes.num,
+  arrowSizeOverride: PropTypes.string,
   arrowButtonVariation: PropTypes.string,
+  arrowPosition: PropTypes.string,
+  slideScrollNum: PropTypes.num,
+  mobileSlideScrollNum: PropTypes.num,
 }
 
 const SlideBox: React.FC<InferProps<typeof propTypes>> = ({

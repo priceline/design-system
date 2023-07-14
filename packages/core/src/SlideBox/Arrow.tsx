@@ -5,16 +5,20 @@ import { ARROW_SIZES } from './Arrow.styles'
 import { Relative } from '../Relative'
 import { Button } from '../Button'
 
-const propTypes = {
-  isLeft: PropTypes.bool,
-  onClick: PropTypes.func,
-  arrowColor: PropTypes.string,
-  size: PropTypes.string,
+const { bool, string, func } = PropTypes
+
+export const arrowPropTypes = {
+  isLeft: bool,
+  arrowButtonVariation: string,
+  size: string,
+  leftArrowClick: func,
+  rightArrowClick: func,
+  leftDisabled: bool,
+  rightDisabled: bool,
 }
 
-const Arrow: React.FC<InferProps<typeof propTypes>> = ({
+const Arrow: React.FC<InferProps<typeof arrowPropTypes>> = ({
   isLeft,
-  onClick,
   arrowButtonVariation,
   size,
   leftArrowClick,
