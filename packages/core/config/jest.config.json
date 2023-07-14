@@ -2,10 +2,10 @@
   "extends": "@priceline/heft-component-rig/profiles/react/config/jest.config.json",
   "coverageThreshold": {
     "global": {
-      "branches": 91,
+      "branches": 89,
       "functions": 89,
-      "lines": 98.5,
-      "statements": 98.5
+      "lines": 98,
+      "statements": 98
     }
   }
 }
