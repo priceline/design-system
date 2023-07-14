@@ -38,7 +38,7 @@ const CombinedInput = styled.input`
     --icon-color: ${getPaletteColor('primary.base')};
   }
 
-  &:focus + div {
+  &:focus-visible + div {
     --icon-border-color: ${getPaletteColor('text.light')};
     --icon-border-shadow-color: ${getPaletteColor('background.light')};
   }
@@ -59,7 +59,7 @@ const CombinedInput = styled.input`
     --icon-color: ${getPaletteColor('primary.dark')};
   }
 
-  &:checked:focus + div {
+  &:checked:focus-visible + div {
     --icon-border-color: ${getPaletteColor('primary.dark')};
   }
 
