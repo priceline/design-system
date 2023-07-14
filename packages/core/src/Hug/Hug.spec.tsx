@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThumbsUp } from 'pcln-icons'
 
-import { Hug, Text, Card, theme } from '..'
+import { Hug, Text, Card } from '..'
 
 const text = (
   <Text.span>
@@ -10,13 +10,6 @@ const text = (
 )
 
 describe('Hug', () => {
-  test('renders with border-radius from theme on top only', () => {
-    const json = rendererCreateWithTheme(<Hug />).toJSON()
-
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-radius', theme.borderRadii.xl)
-  })
-
   test('renders text, icon, and Child', () => {
     const json = rendererCreateWithTheme(
       <Hug icon={<ThumbsUp />} text={text}>

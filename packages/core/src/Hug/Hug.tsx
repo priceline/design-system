@@ -23,9 +23,17 @@ export interface IHugProps extends ICardProps {
   fontSize?: string | number
 }
 
-const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, ...props }) => {
+const Hug: React.FC<IHugProps> = ({
+  bg,
+  color = 'text.lightest',
+  p,
+  fontSize,
+  icon,
+  iconDisplay,
+  colorScheme,
+  ...props
+}) => {
   let iconClone
-
   if (React.isValidElement(icon)) {
     iconClone = React.cloneElement(icon, ({
       style: { display: iconDisplay },
@@ -36,9 +44,30 @@ const Hug: React.FC<IHugProps> = ({ bg, color, p, fontSize, icon, iconDisplay, .
     } as unknown) as Attributes)
   }
 
+  let headerColor = ''
+
+  if (colorScheme && color !== 'text.lightest') {
+    headerColor = color
+  } else if (!colorScheme) {
+    headerColor = color
+  }
+
   return (
-    <HugCard {...props} borderColor={props.colorScheme ? null : bg || color} color={color}>
-      <Header bg={bg} color={color} p={p} pl='12px' alignItems='center' colorScheme={props.colorScheme}>
+    <HugCard
+      {...props}
+      borderColor={colorScheme ? null : bg || color}
+      color={color}
+      colorScheme={colorScheme}
+    >
+      <Header
+        bg={bg}
+        color={headerColor}
+        p={p}
+        pl='12px'
+        alignItems='center'
+        colorScheme={colorScheme}
+        iconUsesColorScheme={!iconClone?.props?.color}
+      >
         {!!iconClone && iconClone}
         <Text fontSize={fontSize}>{props.text}</Text>
       </Header>
