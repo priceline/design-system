@@ -39,8 +39,8 @@ describe('SlideBox', () => {
       </SlideBox>
     )
     mockIsIntersecting(getByTestId('render-in-view-1'), true)
-    // expect(slideChange).toHaveBeenCalledTimes(1)
-    // expect(slideChange).toHaveBeenCalledWith(1)
+    expect(slideChange).toHaveBeenCalledTimes(1)
+    expect(slideChange).toHaveBeenCalledWith(1)
     expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.1).toString()}%;`)
   })
 
