@@ -17,6 +17,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Popover from './Popover'
 import { argTypes, defaultArgs } from './Popover.stories.args'
+import { within, userEvent } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
 
 export default {
   title: 'pcln-popover / Popover',
@@ -162,6 +164,7 @@ export const rightWithOverlayOnScrollPosition = () => (
         overlayOpacity={0.3}
         color='error.light'
         borderColor='error.dark'
+        {...args}
       >
         <Button>Popover</Button>
       </Popover>
@@ -212,8 +215,17 @@ const InnerContent = ({ handleClose }) => (
   </Box>
 )
 
-export const PassesThemeToContent = () => {
-  return (
+export const PassesThemeToContent = {
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement)
+    const text = canvas.getByText('hello world')
+    expect(text).toBeInTheDocument()
+    await userEvent.hover(text)
+    expect(args.onOpen).toHaveBeenCalled()
+    await userEvent.unhover(text)
+    expect(args.onClose).toHaveBeenCalled()
+  },
+  render: (args) => (
     <ThemeProvider
       theme={{
         palette: {
@@ -230,9 +242,10 @@ export const PassesThemeToContent = () => {
         idx={2}
         width={400}
         borderColor='border.base'
+        {...args}
       >
         <Text color={'primary.base'}>hello world</Text>
       </Popover>
     </ThemeProvider>
-  )
+  ),
 }
