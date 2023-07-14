@@ -268,6 +268,15 @@ export const CustomChip = () => (
   </Box>
 )
 
+// shadowVariation
+const withShadowVariation = [
+  { label: 'Enabled', shadowVariation: true },
+  { label: 'Active', selected: true, shadowVariation: true },
+  { label: 'Disabled', disabled: true, shadowVariation: true },
+  { label: 'Active and Disabled', selected: true, disabled: true, shadowVariation: true },
+]
+export const WithShadowVariation = () => getExamples(withShadowVariation, [small, medium, responsive])
+
 //Default
 export default {
   title: 'core / Chip / ButtonChip',

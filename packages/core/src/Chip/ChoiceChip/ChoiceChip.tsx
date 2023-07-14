@@ -23,6 +23,7 @@ const choiceChipProps = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
+  shadowVariation: PropTypes.bool,
 }
 
 export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLAttributes<HTMLElement> {
@@ -31,6 +32,7 @@ export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLA
   selected?: boolean
   label?: string
   value?: string | number
+  shadowVariation?: boolean
 }
 
 const ChoiceChip: React.FC<IChoiceChipProps> = ({
@@ -65,6 +67,7 @@ ChoiceChip.displayName = 'Chip'
 ChoiceChip.propTypes = choiceChipProps
 ChoiceChip.defaultProps = {
   color: 'primary',
+  shadowVariation: false,
 }
 
 export default ChoiceChip
