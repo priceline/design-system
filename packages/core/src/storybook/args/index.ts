@@ -7,7 +7,9 @@ import {
   objectFitValues,
   objectPositionValues,
 } from '../../utils'
-import { zIndices } from '../../theme'
+import { zIndices, colorSchemeNames as colorSchemeNamesArr } from '../../theme'
+
+export const colorSchemeNames = colorSchemeNamesArr
 
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
 

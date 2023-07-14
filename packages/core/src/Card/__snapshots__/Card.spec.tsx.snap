@@ -6,7 +6,8 @@ exports[`Card renders border 0 without warning 1`] = `
 }
 
 .c1 {
-  border: 0;
+  border-width: 0;
+  border-color: 0;
 }
 
 <div
@@ -21,7 +22,9 @@ exports[`Card renders large box shadow with default border 1`] = `
 }
 
 .c1 {
-  border: 1px solid #c0cad5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
 }
 
 <div
@@ -36,7 +39,9 @@ exports[`Card renders medium box shadow with default border 1`] = `
 }
 
 .c1 {
-  border: 1px solid #c0cad5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
 }
 
 <div
@@ -51,7 +56,9 @@ exports[`Card renders medium box shadow with specified borderRadius 1`] = `
 }
 
 .c1 {
-  border: 1px solid #c0cad5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
 }
 
 <div
@@ -66,7 +73,9 @@ exports[`Card renders medium box shadow with specified borderWidth 1`] = `
 }
 
 .c1 {
-  border: 2px solid #c0cad5;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #c0cad5;
 }
 
 <div
@@ -81,7 +90,9 @@ exports[`Card renders small box shadow with default border 1`] = `
 }
 
 .c1 {
-  border: 1px solid #c0cad5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
 }
 
 <div
@@ -96,7 +107,9 @@ exports[`Card renders xlarge box shadow with default border 1`] = `
 }
 
 .c1 {
-  border: 1px solid #c0cad5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c0cad5;
 }
 
 <div

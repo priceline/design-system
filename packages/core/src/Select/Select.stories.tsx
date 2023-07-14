@@ -29,6 +29,9 @@ export const _Select = Template.bind({})
 export const Disabled = Template.bind({})
 Disabled.args = { disabled: true }
 
+export const ReadOnly = Template.bind({})
+ReadOnly.args = { readOnly: true }
+
 export const LongOptionString = () => (
   <Box width={[1, 320]}>
     <Label htmlFor='cabinClass'>Cabin Class</Label>

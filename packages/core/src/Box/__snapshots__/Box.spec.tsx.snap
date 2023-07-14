@@ -44,6 +44,34 @@ exports[`Box maxHeight, maxWidth, minHeight, minWidth 1`] = `
 />
 `;
 
+exports[`Box overflow prop sets overflow 1`] = `
+<DocumentFragment>
+  .c1 {
+  overflow: scroll;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="Box"
+      overflow="scroll"
+    />
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Box p prop sets padding 1`] = `
 .c0 {
   padding: 8px;

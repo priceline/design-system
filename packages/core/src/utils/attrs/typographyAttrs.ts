@@ -32,6 +32,8 @@ export const textStylesValues = [
   'label',
 ]
 
+export const textTransformValues = ['capitalize', 'lowercase', 'none', 'uppercase']
+
 export function typographyAttrs(props) {
   const { textStyle, theme } = props
 

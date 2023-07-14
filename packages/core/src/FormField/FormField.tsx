@@ -8,10 +8,12 @@ import { getPaletteColor } from '../utils'
 
 export interface IFormFieldProps extends IBoxProps {
   disabled?: boolean
+  readOnly?: boolean
 }
 
 const DisableableBox = styled(Box)`
-  ${(props) => props.disabled &&
+  ${(props) =>
+    (props.disabled || props.readOnly) &&
     `
     background-color: ${getPaletteColor('background.base')(props)};
 
@@ -52,7 +54,7 @@ const labelPaddingTop = (size) => {
   return paddingTopForLabel?.[size] ? paddingTopForLabel[size] : '6px'
 }
 
-const FormField = ({ children, disabled, ...props }: IFormFieldProps) => {
+const FormField = ({ children, disabled, readOnly, ...props }: IFormFieldProps) => {
   let iconBefore = false
 
   const childrenArray = React.Children.toArray(children)
@@ -71,6 +73,7 @@ const FormField = ({ children, disabled, ...props }: IFormFieldProps) => {
       return React.cloneElement(child, {
         id,
         disabled,
+        readOnly,
         style: {
           ...child.props.style,
           transitionProperty: 'padding-top, padding-bottom',
@@ -106,7 +109,7 @@ const FormField = ({ children, disabled, ...props }: IFormFieldProps) => {
     })
 
   return (
-    <DisableableBox {...props} borderRadius='lg' disabled={disabled}>
+    <DisableableBox {...props} borderRadius='lg' disabled={disabled} readOnly={readOnly}>
       {styledLabel}
       <IconField>{styled}</IconField>
     </DisableableBox>

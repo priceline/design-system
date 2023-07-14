@@ -1,24 +1,26 @@
 import React from 'react'
+import { Star } from 'pcln-icons'
 
 import { Hug, Hide, Card, Text } from '..'
 
 import { argTypes, defaultArgs, iconMap, HugContentText } from './Hug.stories.args'
+import { colorSchemeNames } from '../storybook/args'
 
 const ChildrenCardInside = () => (
   <Card p={3} color='warning.light'>
-    I‘m a card within a hug!
+    I&apos;m a card within a hug!
   </Card>
 )
 const ChildrenCardInsideCard = () => (
   <Card p={3} color='background.light'>
     <Card p={3} color='background.dark'>
-      I‘m a card within a card within a hug!
+      I&apos;m a card within a card within a hug!
     </Card>
   </Card>
 )
 const ResponsiveText = () => (
   <Text.span>
-    Today‘s best deal! You save <Text.span fontWeight='bold'>$300</Text.span>
+    Today&apos;s best deal! You save <Text.span fontWeight='bold'>$300</Text.span>
     <Hide as='span' xs>
       {' '}
       for your party of 2
@@ -96,4 +98,37 @@ Responsive.args = {
 Responsive.storyName = 'With a responsive Hug'
 Responsive.parameters = {
   viewport: { defaultViewport: 'designSystem_xs' },
+}
+
+export const ColorScheme = () => {
+  return colorSchemeNames.map((colorScheme) => (
+    <Hug
+      text={<Text>{colorScheme}</Text>}
+      icon={<Star />}
+      colorScheme={colorScheme}
+      key={colorScheme}
+      my='3'
+      boxShadowSize='xl'
+    >
+      <Card borderRadius='xl' p={3} color='background.lightest'>
+        <Text>I&apos;m a card within a card within a hug!</Text>
+      </Card>
+    </Hug>
+  ))
+}
+
+export const ColorSchemeWithCustomHeaderTextAndIconColors = () => {
+  return (
+    <Hug
+      text={<Text color='error.base'>Custom Header Color</Text>}
+      icon={<Star color='promoPrimary.base' />}
+      colorScheme='primaryLight'
+      my='3'
+      boxShadowSize='xl'
+    >
+      <Card borderRadius='xl' p={3} color='background.lightest'>
+        <Text>I&apos;m a card within a card within a hug!</Text>
+      </Card>
+    </Hug>
+  )
 }

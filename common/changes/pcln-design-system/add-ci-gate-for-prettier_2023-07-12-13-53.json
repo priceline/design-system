@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix formatting with Prettier",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

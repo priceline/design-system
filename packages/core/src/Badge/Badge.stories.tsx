@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Badge } from '..'
-import type { ColorSchemes as ColorSchemesType } from '..'
+import type { ColorSchemeName } from '../theme'
 import { argTypes } from './Badge.stories.args'
 
 // for Args
@@ -41,11 +41,11 @@ LightBlueAndTextCustom.args = {
   color: 'text',
 }
 
-const ColorSchemesTemplate = (args) => {
+const ColorSchemesTemplate = () => {
   return (
     <React.Fragment>
       {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
-        <Badge m={3} p={3} colorScheme={colorScheme as keyof ColorSchemesType} key={colorScheme}>
+        <Badge m={3} p={3} colorScheme={colorScheme as ColorSchemeName} key={colorScheme}>
           {colorScheme}
         </Badge>
       ))}

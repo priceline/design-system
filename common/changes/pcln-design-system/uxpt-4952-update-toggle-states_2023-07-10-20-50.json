@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Updated the toggle states",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

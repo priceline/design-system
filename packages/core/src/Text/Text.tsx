@@ -45,6 +45,7 @@ import {
   getPaletteColor,
   textAlignAttrs,
   textStylesValues,
+  textTransformValues,
   typographyAttrs,
 } from '../utils'
 
@@ -78,6 +79,8 @@ export const textShadow = (props) => {
   return props.enableTextShadow ? { textShadow: props.theme.textShadows[textShadowSize] } : null
 }
 
+export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)
+
 const textPropTypes = {
   ...propTypes.display,
   ...propTypes.fontSize,
@@ -103,6 +106,7 @@ const textPropTypes = {
   textDecoration: PropTypes.string,
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
   textStyle: PropTypes.oneOf(textStylesValues),
+  textTransform: PropTypes.oneOf(textTransformValues),
 }
 
 export interface ITextProps
@@ -131,12 +135,13 @@ const textProps: React.FC<ITextProps> = css`
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
 
-  ${caps}
-  ${regular}
   ${bold}
+  ${caps}
+  ${colorScheme}
+  ${regular}
   ${textDecoration}
   ${textShadow}
-  ${colorScheme}
+  ${textTransform}
 
   ${(props) =>
     compose(

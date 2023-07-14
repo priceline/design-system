@@ -1,4 +1,5 @@
 import React from 'react'
+import { render } from '../__test__/testing-library'
 
 import { theme, Box } from '..'
 
@@ -48,5 +49,11 @@ describe('Box', () => {
     const json = rendererCreateWithTheme(<Box boxShadowSize='sm' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('box-shadow', theme.shadows.sm)
+  })
+
+  test('overflow prop sets overflow', () => {
+    const { asFragment, getByTestId } = render(<Box overflow='scroll' data-testid='Box' />)
+    expect(asFragment()).toMatchSnapshot()
+    expect(getByTestId('Box')).toHaveStyleRule('overflow', 'scroll')
   })
 })
