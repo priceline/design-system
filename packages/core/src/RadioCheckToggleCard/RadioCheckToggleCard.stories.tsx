@@ -97,9 +97,7 @@ const SelectedFocusStateCard = styled(Box)`
 
 const DefaultDocPage = () => {
   const [examples, setExamples] = useState({
-    ['types-label-1']: '',
-    ['types-label-2']: [],
-    ['types-label-3']: [],
+    ['types-label']: [],
     ['formatting-position']: 'example-1',
     ['formatting-label-with-children']: ['example-1'],
     ['formatting-full-width-children']: ['example-1'],
@@ -126,6 +124,27 @@ const DefaultDocPage = () => {
       { hPosition: 'left', vPosition: 'center', title: dumpText, value: 'example-3' },
       { hPosition: 'right', vPosition: 'center', title: dumpText, value: 'example-4' },
     ],
+  }
+
+  const handleOnChangeInLabel = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.currentTarget
+    const result = examples['types-label'] as Array<string>
+    const index = result.indexOf(value)
+
+    if (index >= 0) {
+      result.splice(index, 1)
+    } else {
+      result.unshift(value)
+    }
+
+    if (result.length > 2) {
+      result.pop()
+    }
+
+    setExamples((previousState) => ({
+      ...previousState,
+      ['types-label']: result,
+    }))
   }
 
   const handleOnChange =
@@ -163,42 +182,27 @@ const DefaultDocPage = () => {
         <Flex flexDirection='column' style={{ width: '50%', gap: '16px' }}>
           <RadioCheckToggleCard
             cardType='radio'
-            name='types-label-1'
+            name='types-label'
             title='Radio'
             value='example-1'
-            isSelected={examples['types-label-1'].includes('example-1')}
-            onChange={(e) =>
-              handleOnChange(e)({
-                cardType: 'radio',
-                name: 'types-label-1',
-              })
-            }
+            isSelected={examples['types-label'].includes('example-1')}
+            onChange={handleOnChangeInLabel}
           />
           <RadioCheckToggleCard
             cardType='checkbox'
-            name='types-label-2'
+            name='types-label'
             title='Checkbox'
-            value='example-1'
-            isSelected={examples['types-label-2'].includes('example-1')}
-            onChange={(e) =>
-              handleOnChange(e)({
-                cardType: 'checkbox',
-                name: 'types-label-2',
-              })
-            }
+            value='example-2'
+            isSelected={examples['types-label'].includes('example-2')}
+            onChange={handleOnChangeInLabel}
           />
           <RadioCheckToggleCard
             cardType='toggle'
-            name='types-label-3'
+            name='types-label'
             title='Toggle'
-            value='example-1'
-            isSelected={examples['types-label-3'].includes('example-1')}
-            onChange={(e) =>
-              handleOnChange(e)({
-                cardType: 'toggle',
-                name: 'types-label-3',
-              })
-            }
+            value='example-3'
+            isSelected={examples['types-label'].includes('example-3')}
+            onChange={handleOnChangeInLabel}
           />
         </Flex>
       </Section>
