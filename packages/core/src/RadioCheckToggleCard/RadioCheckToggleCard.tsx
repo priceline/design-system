@@ -16,7 +16,7 @@ export type TVPositions = (typeof vPositions)[number]
 export interface IRadioCheckToggleCard {
   children?: React.ReactNode | string
   cardType?: TCardTypes
-  hPosition?: THPositions // Controlling the button icon horizontal position
+  hPosition?: THPositions
   vPosition?: TVPositions
   isHeightOccupied?: boolean
   title: string
@@ -80,6 +80,7 @@ const RCTCardContainer = styled(Flex)`
   border: 1px solid var(--border-color);
   border-radius: ${themeGet('borderRadii.action-lg')};
   box-shadow: ${themeGet('shadows.sm')};
+  cursor: pointer;
   padding: var(--default-card-margin);
 `
 
