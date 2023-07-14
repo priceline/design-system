@@ -41,6 +41,7 @@
     "@rushstack/eslint-patch": "^1.1.0",
     "@storybook/addon-actions": "^7.0.20",
     "@storybook/testing-library": "^0.1.0",
+    "@storybook/jest": "^0.1.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "cross-env": "^7.0.3",
