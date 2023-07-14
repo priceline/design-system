@@ -15,7 +15,12 @@ const TopArrows: React.FC<InferProps<typeof propTypes>> = ({ arrowPosition, arro
   const isSide = arrowPosition === 'side'
   const Wrapper = isSide ? AbsoluteTransformLeft : Flex
   return ['top', 'side'].includes(arrowPosition) ? (
-    <Wrapper justifyContent='flex-end' pb={isSide ? 0 : 2} zIndex={1}>
+    <Wrapper
+      justifyContent='flex-end'
+      pb={isSide ? 0 : 2}
+      zIndex={1}
+      data-testid={isSide ? 'side-left-arrow' : 'top-arrows'}
+    >
       <Arrow isLeft {...arrowProps} />
       {isSide ? null : <Arrow {...arrowProps} ml={3} />}
     </Wrapper>

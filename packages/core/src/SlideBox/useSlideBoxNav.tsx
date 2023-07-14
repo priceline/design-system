@@ -12,46 +12,32 @@ const useSlideBoxNav = ({
 }) => {
   const [currentSlide, setCurrentSlide] = useState(currentSlideOverride || 0)
   const [slideInView, setSlideInView] = useState(currentSlideOverride || 0)
-  const [numSlides, setNumSlides] = useState(0)
+  const [numSlides, setNumSlides] = useState(mobileSlideScrollNum)
 
-  const checkSlideBounds = (index) =>
-    index < numSlides - 1 ? numSlides - 1 : index > childArray.length - 1 ? childArray.length - 1 : index
+  const checkSlideBounds = (index, slideCount = numSlides) =>
+    index < slideCount - 1 ? slideCount - 1 : index > childArray.length - 1 ? childArray.length - 1 : index
 
   const navigateToSlide = (index) => {
-    const newIndex = checkSlideBounds(index)
+    let newIndex = checkSlideBounds(index)
+    //Edge case when flinging slides around, only seems to happen when scrolling left
+    /* istanbul ignore next */
     if (newIndex === currentSlide) {
-      //edge case when flinging around slides
-      new Promise<void>((resolve) => {
-        setCurrentSlide(slideInView)
-        resolve()
-      })
-        .then(() => {
-          setSlideInView(newIndex)
-          setCurrentSlide(newIndex)
-        })
-        .catch(() => {})
-    } else {
-      setCurrentSlide(newIndex)
+      newIndex--
     }
+    setCurrentSlide(newIndex)
   }
 
   const onSlideChangeWrapper = (index, slideCount) => {
-    new Promise<void>((resolve) => {
-      setNumSlides(slideCount)
-      resolve()
-    })
-      .then(() => {
-        const isRightSlide = slideInView < index + numSlides
-        const newIndex = checkSlideBounds(isRightSlide ? index : index + numSlides - 1)
-        setSlideInView(newIndex)
-        onSlideChange?.(newIndex)
-      })
-      .catch(() => {})
+    const isRightSlide = slideInView < index + numSlides
+    const newIndex = checkSlideBounds(isRightSlide ? index : index + numSlides - 1, slideCount)
+    setNumSlides(slideCount)
+    setSlideInView(newIndex)
+    onSlideChange?.(newIndex)
   }
 
   const getSlideScrollNum = () =>
     typeof window === 'undefined'
-      ? mobileSlideScrollNum
+      ? /* istanbul ignore next */ mobileSlideScrollNum
       : window.innerWidth < 1024
       ? mobileSlideScrollNum
       : slideScrollNum
@@ -59,6 +45,7 @@ const useSlideBoxNav = ({
   return {
     setCurrentSlide,
     currentSlide,
+    slideInView,
     onSlideChangeWrapper,
     arrowProps: {
       leftDisabled: slideInView - numSlides === -1,

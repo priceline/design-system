@@ -43,4 +43,16 @@ describe('SlideBox', () => {
     // expect(slideChange).toHaveBeenCalledWith(1)
     expect(getByTestId('slide1')).toHaveStyle(`width: ${(100 / 1.1).toString()}%;`)
   })
+
+  it('renders with arrows on top', () => {
+    const { getByTestId } = render(
+      <SlideBox visibleSlides={1} arrowButtonVariation='fill' arrowPosition='top'>
+        <Box>1</Box>
+        <Box>2</Box>
+        <Box>3</Box>
+      </SlideBox>
+    )
+
+    getByTestId('top-arrows')
+  })
 })
