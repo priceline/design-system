@@ -4,7 +4,21 @@ export const defaultArgs = {
   color: 'text.light',
   fontSize: 2,
   type: 'ol',
+  listStyle: '',
+  indentSize: 'lg',
 }
+
+const listStyles = [
+  '',
+  'disc',
+  'upper-roman',
+  'lower-roman',
+  'upper-alpha',
+  'lower-alpha',
+  'decimal',
+  'square',
+  'circle',
+]
 
 export const argTypes = {
   color: {
@@ -40,10 +54,30 @@ export const argTypes = {
   type: {
     name: 'List Type',
     type: { name: 'Type', details: 'Ordered vs Unordered' },
-    description: 'List Type',
+    description: 'List type',
     control: {
       type: 'select',
       options: ['ol', 'ul'],
+    },
+  },
+
+  listStyle: {
+    name: 'List Style',
+    type: { name: 'string', required: false },
+    description: 'List style to use',
+    options: listStyles,
+    control: {
+      type: 'select',
+    },
+  },
+
+  indentSize: {
+    name: 'Spacing tab indent',
+    type: { name: 'string', required: false },
+    description: 'Indent space size to use',
+    options: ['', 'xsm', 'sm', 'md', 'lg', 'xl'],
+    control: {
+      type: 'select',
     },
   },
 }

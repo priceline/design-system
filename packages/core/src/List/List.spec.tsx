@@ -37,4 +37,32 @@ describe('List', () => {
     screen.getByText('Example Text 2')
     screen.getByText('Example Text 3')
   })
+
+  it('renders list with listStyles and indentation which is passed in props ', () => {
+    render(
+      <List.ul color='text.light' fontSize={1} listStyle='upper-roman' indentSize='md' data-testid='list'>
+        <li>Example Text 1</li>
+        <li>Example Text 2</li>
+        <li>Example Text 3</li>
+      </List.ul>
+    )
+
+    const list = screen.getByTestId('list')
+    expect(list).toHaveStyleRule('list-style-type', 'upper-roman')
+    expect(list).toHaveStyleRule('margin-left', '32px')
+  })
+
+  it('should renders list with default listStyles and indentation if right props are not passed ', () => {
+    render(
+      <List.ul color='text.light' fontSize={1} listStyle='roman' data-testid='list'>
+        <li>Example Text 1</li>
+        <li>Example Text 2</li>
+        <li>Example Text 3</li>
+      </List.ul>
+    )
+
+    const list = screen.getByTestId('list')
+    expect(list).toHaveStyleRule('list-style-type', 'auto')
+    expect(list).toHaveStyleRule('margin-left', '40px')
+  })
 })

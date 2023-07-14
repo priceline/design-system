@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "List component enhancement with listStyle and indentSize props",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
