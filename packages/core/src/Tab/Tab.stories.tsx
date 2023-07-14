@@ -26,15 +26,15 @@ const defaultArgs: ITabsProps = {
   tabsData: [
     {
       id: 't1',
-      text: 'Tab 1',
+      text: 'Flights Tab',
     },
     {
       id: 't2',
-      text: 'Tab 2',
+      text: 'Packages',
     },
     {
       id: 't3',
-      text: 'Tab 3',
+      text: 'Hotel Tabbing',
     },
   ],
 }
@@ -58,6 +58,19 @@ export const NoIconChipTabs: TabsStory = {
   args: {
     ...defaultArgs,
     type: 'chip',
+    size: 'md',
+  },
+}
+
+export const NoIconRadioTabs: TabsStory = {
+  render: (args) => (
+    <StoryStage>
+      <Tab {...args} />
+    </StoryStage>
+  ),
+  args: {
+    ...defaultArgs,
+    type: 'radio',
     size: 'md',
   },
 }
