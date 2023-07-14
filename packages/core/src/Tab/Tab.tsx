@@ -1,7 +1,7 @@
 import React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
 import { Text } from '../Text'
-import { TabContainer, SIZES, TabList, TabTriggerChip, TabTriggerButton, TabTriggerRadio } from './Tab.styled'
+import { TabContainer, TabList, TabTriggerChip, TabTriggerButton, TabTriggerRadio } from './Tab.styled'
 import { Box } from '../Box'
 import { Radio } from '../Radio'
 import { Label } from '../Label'
