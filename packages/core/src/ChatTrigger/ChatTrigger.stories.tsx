@@ -1,5 +1,6 @@
 import React from 'react'
 import ChatTrigger from './ChatTrigger'
+import { Relative } from '../Relative'
 
 export default {
   title: 'Chat / ChatTrigger',
@@ -7,7 +8,17 @@ export default {
   args: {
     hasNotification: false,
   },
+  argTypes: {
+    onClick: { action: true },
+  },
   tags: ['autodocs'],
+  decorators: [
+    (Story) => (
+      <Relative width='100%' height='10vh'>
+        <Story />
+      </Relative>
+    ),
+  ],
 }
 
 export const _ChatTrigger = {

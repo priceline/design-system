@@ -1,22 +1,21 @@
 import React from 'react'
-import { Absolute } from '../Absolute'
-import { Box } from '../Box'
-import { Button } from '../Button'
+import { FloatingActionButton } from '../FloatingActionButton'
 import { Chat } from 'pcln-icons'
-import { Animate } from '../Animate'
 
-function ChatTrigger({ hasNotification }) {
+export interface IChatTrigger {
+  hasNotification: boolean
+  onClick: () => void
+}
+
+function ChatTrigger({ hasNotification, onClick }) {
   return (
-    <Absolute>
-      {hasNotification && (
-        <Absolute top={0} right={0}>
-          <Animate variant='pulse'>
-            <Box borderRadius='full' color='error' width='16px' height='16px' />
-          </Animate>
-        </Absolute>
-      )}
-      <Button borderRadius='full' size='extraLarge' IconLeft={Chat} />
-    </Absolute>
+    <FloatingActionButton
+      bottom={0}
+      hasNotification={hasNotification}
+      icon={Chat}
+      right={0}
+      onClick={onClick}
+    />
   )
 }
 
