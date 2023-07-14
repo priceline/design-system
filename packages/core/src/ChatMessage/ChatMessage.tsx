@@ -35,13 +35,6 @@ const Message = styled(Flex)`
   ${applyVariations('ChatMessage', variations)};
 `
 
-const IconWrapper = styled(Flex)`
-  background-color: ${getPaletteColor('primary.base')};
-  border-radius: 16px;
-  width: 32px;
-  height: 32px;
-`
-
 export const variationNames = ['initial', 'incoming', 'outgoing']
 
 export interface IChatMessage extends IFlexProps {
@@ -72,9 +65,16 @@ function ChatMessage({
       )}
       {variation === 'initial' && (
         <Absolute top={-16} left={-16}>
-          <IconWrapper justifyContent='center' alignItems='center'>
+          <Flex
+            alignItems='center'
+            borderRadius='full'
+            color='primary'
+            justifyContent='center'
+            height='32px'
+            width='32px'
+          >
             <Icon color='text.lightest' size='24px' data-testid='chat-message-icon' />
-          </IconWrapper>
+          </Flex>
         </Absolute>
       )}
       <Text textStyle='paragraph2'>{message}</Text>
