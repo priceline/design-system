@@ -1,4 +1,5 @@
 import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { Badge, theme } from '..'
 
 describe('Badge', () => {
@@ -80,5 +81,11 @@ describe('Badge', () => {
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
     expect(json).toHaveStyleRule('color', theme.colors.text)
+  })
+
+  test('textTransform', () => {
+    render(<Badge textTransform='lowercase'>Lowercase Text</Badge>)
+    expect(screen.getByText('Lowercase Text')).toHaveStyleRule('text-transform', 'lowercase')
+    expect(screen.getByText('Lowercase Text')).toHaveStyleRule('letter-spacing', 'normal')
   })
 })

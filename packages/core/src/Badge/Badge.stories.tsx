@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Badge } from '..'
+import { Badge, textTransformValues } from '..'
 import type { ColorSchemeName } from '../theme'
 import { argTypes } from './Badge.stories.args'
 
@@ -40,6 +40,20 @@ LightBlueAndTextCustom.args = {
   bg: 'primary.light',
   color: 'text',
 }
+
+const TextTransformTemplate = () => {
+  return (
+    <React.Fragment>
+      {textTransformValues.map((textTransform) => (
+        <Badge m={3} p={3} textTransform={textTransform} key={textTransform}>
+          {textTransform}
+        </Badge>
+      ))}
+    </React.Fragment>
+  )
+}
+export const TextTransforms = TextTransformTemplate.bind({})
+TextTransformTemplate.args = {}
 
 const ColorSchemesTemplate = () => {
   return (
