@@ -5,6 +5,7 @@ import { Stamp, Text } from '..'
 import type { ColorSchemeName } from '../theme'
 import { argTypes } from './Stamp.stories.args'
 import { Pin as PinIcon, Airplane } from 'pcln-icons'
+import { colorSchemeNames } from '../storybook/args'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
@@ -124,7 +125,7 @@ PassAnArrayOfSizes.story = {
 const ColorSchemesTemplate = () => {
   return (
     <React.Fragment>
-      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+      {colorSchemeNames.map((colorScheme) => (
         <Stamp m={3} colorScheme={colorScheme as ColorSchemeName} key={colorScheme}>
           <Airplane mr={2} />
           {colorScheme}
