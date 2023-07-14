@@ -15,7 +15,11 @@ const useSlideBoxNav = ({
   const [numSlides, setNumSlides] = useState(mobileSlideScrollNum)
 
   const checkSlideBounds = (index, slideCount = numSlides) =>
-    index < slideCount - 1 ? slideCount - 1 : index > childArray.length - 1 ? childArray.length - 1 : index
+    index < slideCount - 1
+      ? slideCount - 1 //Slide 0 to numSlide visible
+      : index > childArray.length - 1
+      ? childArray.length - 1 //Last Slide
+      : index
 
   const navigateToSlide = (index) => {
     let newIndex = checkSlideBounds(index)
