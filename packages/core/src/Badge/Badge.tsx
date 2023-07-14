@@ -5,10 +5,12 @@ import styledSystemPropTypes from '@styled-system/prop-types'
 import {
   applySizes,
   applyVariations,
-  color,
-  deprecatedColorValue,
   borderRadiusAttrs,
+  color,
   colorScheme,
+  deprecatedColorValue,
+  textTransform,
+  textTransformValues,
 } from '../utils'
 import { space, borderRadius, SpaceProps, compose } from 'styled-system'
 import type { ColorSchemeName } from '../theme'
@@ -66,23 +68,30 @@ const sizes = {
   `,
 }
 
+const letterSpacing = (props) => {
+  return props.textTransform && props.textTransform !== 'uppercase'
+    ? { letterSpacing: themeGet('letterSpacings.normal')(props) }
+    : { letterSpacing: themeGet('letterSpacings.caps')(props) }
+}
+
 export interface IBadgeProps extends SpaceProps, React.HtmlHTMLAttributes<HTMLElement> {
   size?: 'small' | 'medium'
   color?: string
   bg?: string
   borderRadius?: string
   colorScheme?: ColorSchemeName
+  textTransform?: string
 }
 
 const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: ${themeGet('letterSpacings.caps')};
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
   ${type}
   ${color}
   ${colorScheme}
+  ${textTransform}
+  ${letterSpacing}
 
   ${(props) => compose(space, borderRadius)(props)}
 `
@@ -95,6 +104,7 @@ Badge.propTypes = {
   color: deprecatedColorValue(),
   bg: deprecatedColorValue(),
   borderRadius: PropTypes.string,
+  textTransform: PropTypes.oneOf(textTransformValues),
 }
 
 Badge.defaultProps = {
@@ -102,6 +112,7 @@ Badge.defaultProps = {
   px: 2,
   py: 1,
   borderRadius: 'full',
+  textTransform: 'uppercase',
 }
 
 export default Badge

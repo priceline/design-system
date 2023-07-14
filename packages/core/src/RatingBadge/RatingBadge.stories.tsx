@@ -1,5 +1,6 @@
 import React from 'react'
 import { RatingBadge, Flex } from '..'
+import { colorSchemeNames } from '../storybook/args'
 
 export default {
   title: 'RatingBadge',
@@ -31,7 +32,7 @@ export const Colors = () => (
 const ColorSchemesTemplate = (args) => {
   return (
     <React.Fragment>
-      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+      {colorSchemeNames.map((colorScheme) => (
         <RatingBadge m={3} colorScheme={colorScheme} key={colorScheme}>
           {colorScheme}
         </RatingBadge>

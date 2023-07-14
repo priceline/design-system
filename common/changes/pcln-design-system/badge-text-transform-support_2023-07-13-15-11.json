@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add text transform support to badge",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
