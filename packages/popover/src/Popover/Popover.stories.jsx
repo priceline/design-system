@@ -164,7 +164,6 @@ export const rightWithOverlayOnScrollPosition = () => (
         overlayOpacity={0.3}
         color='error.light'
         borderColor='error.dark'
-        {...args}
       >
         <Button>Popover</Button>
       </Popover>
