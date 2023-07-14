@@ -922,6 +922,7 @@ const meta: Meta<typeof RadioCheckToggleCard> = {
 export default meta
 
 export const Radio: Story = {
+  args: { cardType: 'radio', name: 'radio-card', title: 'Title' },
   argTypes: {
     hPosition: {
       control: { type: 'radio' },
@@ -957,43 +958,19 @@ export const Radio: Story = {
     },
   },
   render: (args) => (
-    <Section heading='Radio Card'>
+    <Section heading={args.cardType}>
       <Flex flexDirection='column' style={{ maxWidth: '350px', gap: '16px' }}>
-        <RadioCheckToggleCard
-          cardType='radio'
-          name='radio-card'
-          title='Title'
-          value='example-1'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
+        <RadioCheckToggleCard value='example-1' isSelected={false} onChange={(e) => {}} {...args}>
           <Box width='100%' height='75px' />
         </RadioCheckToggleCard>
 
-        <RadioCheckToggleCard
-          cardType='radio'
-          name='radio-card'
-          title='Title'
-          value='example-2'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
+        <RadioCheckToggleCard value='example-2' isSelected={false} onChange={(e) => {}} {...args}>
           <Text textStyle='paragraph'>
             I am some content. I am some content. I am some content. I am some content.
           </Text>
         </RadioCheckToggleCard>
 
-        <RadioCheckToggleCard
-          cardType='radio'
-          name='radio-card'
-          title='Title'
-          value='example-3'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
+        <RadioCheckToggleCard value='example-3' isSelected={false} onChange={(e) => {}} {...args}>
           <Text textStyle='paragraph'>
             I am some content. I am some content. I am some content. I am some content.
           </Text>
@@ -1002,15 +979,7 @@ export const Radio: Story = {
           </Button>
         </RadioCheckToggleCard>
 
-        <RadioCheckToggleCard
-          cardType='radio'
-          name='radio-card'
-          title='Title'
-          value='example-4'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
+        <RadioCheckToggleCard value='example-4' isSelected={false} onChange={(e) => {}} {...args}>
           {exampleImage()}
         </RadioCheckToggleCard>
       </Flex>
@@ -1019,129 +988,13 @@ export const Radio: Story = {
 }
 
 export const Checkbox: Story = {
+  args: { ...Radio.args, cardType: 'checkbox', name: 'checkbox-card' },
   argTypes: Radio.argTypes,
-  render: (args) => (
-    <Section heading='Checkbox Card'>
-      <Flex flexDirection='column' style={{ maxWidth: '350px', gap: '16px' }}>
-        <RadioCheckToggleCard
-          cardType='checkbox'
-          name='checkbox-card'
-          title='Title'
-          value='example-1'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          <Box width='100%' height='75px' />
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard
-          cardType='checkbox'
-          name='checkbox-card'
-          title='Title'
-          value='example-2'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          <Text textStyle='paragraph'>
-            I am some content. I am some content. I am some content. I am some content.
-          </Text>
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard
-          cardType='checkbox'
-          name='checkbox-card'
-          title='Title'
-          value='example-3'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          <Text textStyle='paragraph'>
-            I am some content. I am some content. I am some content. I am some content.
-          </Text>
-          <Button mt={2} width='100%'>
-            Button
-          </Button>
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard
-          cardType='checkbox'
-          name='checkbox-card'
-          title='Title'
-          value='example-4'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          {exampleImage()}
-        </RadioCheckToggleCard>
-      </Flex>
-    </Section>
-  ),
+  render: Radio.render,
 }
 
 export const Toggle: Story = {
+  args: { ...Radio.args, cardType: 'toggle', name: 'toggle-card' },
   argTypes: Radio.argTypes,
-  render: (args) => (
-    <Section heading='Toggle Card'>
-      <Flex flexDirection='column' style={{ maxWidth: '350px', gap: '16px' }}>
-        <RadioCheckToggleCard
-          cardType='toggle'
-          name='toggle-card'
-          title='Title'
-          value='example-1'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          <Box width='100%' height='75px' />
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard
-          cardType='toggle'
-          name='toggle-card'
-          title='Title'
-          value='example-2'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          <Text textStyle='paragraph'>
-            I am some content. I am some content. I am some content. I am some content.
-          </Text>
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard
-          cardType='toggle'
-          name='toggle-card'
-          title='Title'
-          value='example-3'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          <Text textStyle='paragraph'>
-            I am some content. I am some content. I am some content. I am some content.
-          </Text>
-          <Button mt={2} width='100%'>
-            Button
-          </Button>
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard
-          cardType='toggle'
-          name='toggle-card'
-          title='Title'
-          value='example-4'
-          isSelected={false}
-          onChange={(e) => {}}
-          {...args}
-        >
-          {exampleImage()}
-        </RadioCheckToggleCard>
-      </Flex>
-    </Section>
-  ),
+  render: Radio.render,
 }
