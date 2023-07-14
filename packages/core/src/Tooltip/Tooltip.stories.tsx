@@ -3,6 +3,7 @@ import { Box, Flex, FormField, Label, Input, Tooltip } from '..'
 import { Check, Bus } from 'pcln-icons'
 import { argTypes } from './Tooltip.stories.args'
 import styled from 'styled-components'
+import { colorSchemeNames } from '../storybook/args'
 
 const FlexColumn = styled(Flex)`
   flex-direction: column;
@@ -147,7 +148,7 @@ export const WithAnchors = () => (
 const ColorSchemesTemplate = () => {
   return (
     <React.Fragment>
-      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+      {colorSchemeNames.map((colorScheme) => (
         <Box mb='70px' key={colorScheme}>
           <Tooltip top right colorScheme={colorScheme}>
             <Flex alignItems='center'>

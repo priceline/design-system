@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Box, Divider, Text } from '..'
 import { defaultArgs, argTypes } from './Text.stories.args'
 import { getTextColorOn, textStylesValues } from '../utils'
+import { colorSchemeNames } from '../storybook/args'
 
 export default {
   title: 'Typography / Text',
@@ -209,7 +210,7 @@ export const ResponsiveTypographyVsFontSize = () => (
 const ColorSchemesTemplate = () => {
   return (
     <React.Fragment>
-      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+      {colorSchemeNames.map((colorScheme) => (
         <Text m={3} p={3} colorScheme={colorScheme} key={colorScheme} textStyle='heading1'>
           <Text>{colorScheme}</Text>
         </Text>

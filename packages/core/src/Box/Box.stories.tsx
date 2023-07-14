@@ -5,6 +5,7 @@ import { Star } from 'pcln-icons'
 import styled from 'styled-components'
 import { Box, Flex, Text } from '..'
 import { argTypes, defaultArgs } from './Box.stories.args'
+import { colorSchemeNames } from '../storybook/args'
 
 export default {
   title: 'core / Box',
@@ -208,7 +209,7 @@ const ColorSchemeWithAttrs = styled(Box).attrs(() => ({
 const ColorSchemesTemplate = () => {
   return (
     <React.Fragment>
-      {['primary', 'primaryLight', 'primaryLightest', 'promoLight'].map((colorScheme) => (
+      {colorSchemeNames.map((colorScheme) => (
         <Box m={3} p={3} colorScheme={colorScheme} key={colorScheme}>
           <Flex flexDirection='column'>
             <Text textStyle='heading1' mb={2}>
