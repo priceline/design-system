@@ -28,19 +28,20 @@ const Arrow: React.FC<InferProps<typeof arrowPropTypes>> = ({
   ...props
 }) => {
   const Icon = isLeft ? ChevronLeft : ChevronRight
+  const { arrowSize, iconSize } = ARROW_SIZES[size]
   return (
     <Relative zIndex={99}>
       <Button
         p={0}
         variation={arrowButtonVariation}
         onClick={isLeft ? leftArrowClick : rightArrowClick}
-        height={ARROW_SIZES[size].buttonSize}
-        width={ARROW_SIZES[size].buttonSize}
+        height={arrowSize}
+        width={arrowSize}
         boxShadowSize='md'
         disabled={isLeft ? leftDisabled : rightDisabled}
         {...props}
       >
-        <Icon size={ARROW_SIZES[size].iconSize} pl={isLeft ? 0 : 1} pr={isLeft ? 1 : 0} />
+        <Icon size={iconSize} pl={isLeft ? 0 : 1} pr={isLeft ? 1 : 0} />
       </Button>
     </Relative>
   )
