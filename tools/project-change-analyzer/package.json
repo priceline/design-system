@@ -29,11 +29,11 @@
     "registry": "https://npm.prod.pcln.com/repository/npm-pcln/"
   },
   "dependencies": {
-    "@actions/core": "^1.6.0",
-    "@microsoft/rush-lib": "5.94.1",
+    "@actions/core": "^1.10.0",
+    "@rushstack/rush-sdk": "^5.100.1",
     "@priceline/eslint-config": "workspace:*",
-    "@rushstack/eslint-patch": "^1.1.4",
-    "@rushstack/node-core-library": "^3.45.1",
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@rushstack/node-core-library": "^3.59.5",
     "@rushstack/package-deps-hash": "^3.2.29",
     "@types/yargs": "^17.0.10",
     "axios": "^0.27.2",
@@ -43,8 +43,8 @@
     "yargs": "^17.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "eslint": "^8.33.0",
-    "typescript": "^4.5.4"
+    "@types/node": "^18.16.19",
+    "eslint": "^8.45.0",
+    "typescript": "^5.1.6"
   }
 }

@@ -24,11 +24,12 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "build": "heft test --clean",
+    "build": "heft build --clean",
     "build-only": "heft build --clean",
     "debug": "heft --debug test --clean",
     "start": "heft start",
     "test": "heft test",
+    "test:ci": "heft test",
     "test:snapshots": "heft test --update-snapshots",
     "test:watch": "heft test --watch",
     "lint:fix": "eslint src --fix"
@@ -105,8 +106,8 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^27.5.2",
-    "@types/node": "^18.16.16",
-    "@types/react": "^17.0.60",
+    "@types/node": "^18.16.19",
+    "@types/react": "^17.0.62",
     "@types/styled-system": "^5.1.16",
     "camelcase": "^6.2.0",
     "cross-env": "^7.0.3",
