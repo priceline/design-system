@@ -35,7 +35,7 @@ jobs:
         run: node common/scripts/install-run-rush.js install
 
       - name: Build components
-        run: node common/scripts/install-run-rush.js build
+        run: node common/scripts/install-run-rush.js build --timeline
 
       - name: Build Storybook
         working-directory: ./
