@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Add popover interaction test",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
