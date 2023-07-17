@@ -248,3 +248,31 @@ export const PassesThemeToContent = {
     </ThemeProvider>
   ),
 }
+
+export const PopoverInteractionTest = {
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement)
+    const text = canvas.getByText('Popover interaction test')
+    expect(text).toBeInTheDocument()
+    await userEvent.hover(text)
+    expect(args.onOpen).toHaveBeenCalled()
+    await userEvent.unhover(text)
+    expect(args.onClose).toHaveBeenCalled()
+  },
+  render: (args) => (
+    <Flex m={200}>
+      <Popover
+        color='primary'
+        renderContent={SimpleTextContent}
+        placement='left'
+        ariaLabel='Default Popover'
+        width={130}
+        {...args}
+      >
+        <Text color='primary' mx={2}>
+          Popover interaction test
+        </Text>
+      </Popover>
+    </Flex>
+  ),
+}
