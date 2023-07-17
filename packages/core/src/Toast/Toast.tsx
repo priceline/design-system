@@ -1,38 +1,10 @@
 import React, { useEffect } from 'react'
-import { themeGet } from '@styled-system/theme-get'
-import styled, { css } from 'styled-components'
 import { Close as CloseIcon } from 'pcln-icons'
 import { Absolute } from '../Absolute'
 import { Flex, IFlexProps } from '../Flex'
-import { IconButton } from '../IconButton'
 import { Relative } from '../Relative'
 import { Text } from '../Text'
-import { applyVariations, getPaletteColor } from '../utils'
-
-const variations = {
-  border: css`
-    background-color: ${(props) => getPaletteColor(props.color, 'light')(props)};
-    color: ${getPaletteColor('text.base')};
-    border-left: ${themeGet('borderRadii.sm')} solid ${(props) => getPaletteColor(props.color, 'base')(props)};
-  `,
-  fill: css``,
-}
-
-const LeftBorderFlex = styled(Flex)`
-  ${applyVariations('Toast', variations)};
-`
-
-const RoundIconButton = styled(IconButton)`
-  &&& {
-    background-color: ${getPaletteColor('background.lightest')};
-    padding: ${themeGet('space.1')};
-    pointer-events: auto;
-
-    &:hover {
-      background-color: ${getPaletteColor('background.lightest')};
-    }
-  }
-`
+import { LeftBorderFlex, RoundIconButton } from './Toast.styled'
 
 export interface IToastProps extends Omit<IFlexProps, 'id'> {
   children: React.ReactNode
@@ -80,22 +52,23 @@ function Toast({
         justifyContent='space-between'
         variation={variation}
         p={3}
+        iconUsesColorScheme={!icon?.props.color}
       >
         {icon && <Flex mr={3}>{React.cloneElement(icon, { color: variation === 'border' && color })}</Flex>}
         <Flex width='100%'>
           {typeof children === 'string' ? <Text textStyle='paragraph'>{children}</Text> : children}
         </Flex>
-        {!hideClose && (
-          <Absolute top={-12} right={-12}>
-            <RoundIconButton
-              borderRadius='full'
-              boxShadowSize='sm'
-              icon={<CloseIcon color='primary' size={20} title='close-toast' />}
-              onClick={handleRemoveClick}
-            />
-          </Absolute>
-        )}
       </LeftBorderFlex>
+      {!hideClose && (
+        <Absolute top={-12} right={-12}>
+          <RoundIconButton
+            borderRadius='full'
+            boxShadowSize='sm'
+            icon={<CloseIcon color='primary' size={20} title='close-toast' />}
+            onClick={handleRemoveClick}
+          />
+        </Absolute>
+      )}
     </Relative>
   )
 }
