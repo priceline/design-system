@@ -85,6 +85,91 @@ exports[`Radio Disabled, rendering 1`] = `
 </div>
 `;
 
+exports[`Radio Disabled, rendering 2`] = `
+.c2 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 28px;
+}
+
+.c3 {
+  outline: none;
+}
+
+.c0 {
+  display: inline-block;
+  color: #c0cad5;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1 ~ svg {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:focus ~ svg {
+  border: 1px solid #c0cad5;
+  background-color: #f4f6f8;
+}
+
+.c1:checked ~ svg {
+  color: #0068ef;
+}
+
+.c1:disabled ~ svg {
+  color: #c0cad5;
+}
+
+.c4 {
+  vertical-align: middle;
+}
+
+<div
+  className="c0"
+  color="primary"
+  disabled={true}
+>
+  <input
+    className="c1"
+    color="primary"
+    disabled={true}
+    size={24}
+    type="radio"
+  />
+  <svg
+    aria-hidden={true}
+    className="c2 c3 c4"
+    fill="currentcolor"
+    focusable={false}
+    height={28}
+    role="img"
+    tabIndex={-1}
+    viewBox="0 0 24 24"
+    width={28}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+    />
+  </svg>
+</div>
+`;
+
 exports[`Radio Not Selected, rendering 1`] = `
 .c2 {
   -webkit-flex: none;
