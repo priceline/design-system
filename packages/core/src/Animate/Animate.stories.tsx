@@ -5,7 +5,7 @@ import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
-import { Box, Button, ChoiceChip, Flex, Image, Text, Toggle } from '..'
+import { Box, Button, ChoiceChip, Flex, Image, Text } from '..'
 import ActionBurst from './ActionBurst'
 import { Discount } from 'pcln-icons'
 
