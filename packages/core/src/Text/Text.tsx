@@ -63,6 +63,7 @@ export const caps = (props) => {
 }
 
 export const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
+export const medium = (props) => (props.medium ? { fontWeight: props.theme.medium } : null)
 
 export const bold = (props) => {
   if (Array.isArray(props.bold) && props.bold.length === 0) {
