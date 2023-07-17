@@ -1,4 +1,4 @@
-import { action } from '@priceline/storybook-preset'
+import { action } from '@storybook/addon-actions'
 import { Box, Button, Text } from 'pcln-design-system'
 import { Menu, MenuItem } from 'pcln-menu'
 import PropTypes from 'prop-types'

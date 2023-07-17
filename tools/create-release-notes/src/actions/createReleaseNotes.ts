@@ -1,4 +1,4 @@
-import { RushConfiguration, RushConfigurationProject } from '@microsoft/rush-lib'
+import { RushConfiguration, RushConfigurationProject } from '@rushstack/rush-sdk'
 import fs from 'fs'
 import { join } from 'path'
 import { setOutput } from '@actions/core'

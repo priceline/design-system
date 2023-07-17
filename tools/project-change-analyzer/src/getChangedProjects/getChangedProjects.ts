@@ -1,4 +1,4 @@
-import { RushConfiguration } from '@microsoft/rush-lib'
+import { RushConfiguration } from '@rushstack/rush-sdk'
 import { Terminal, ConsoleTerminalProvider } from '@rushstack/node-core-library'
 import { getRepoChanges } from '@rushstack/package-deps-hash'
 import yargs from 'yargs/yargs'

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add background-position prop to BackgroundImage component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

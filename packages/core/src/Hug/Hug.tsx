@@ -35,13 +35,13 @@ const Hug: React.FC<IHugProps> = ({
 }) => {
   let iconClone
   if (React.isValidElement(icon)) {
-    iconClone = React.cloneElement(icon, {
+    iconClone = React.cloneElement(icon, ({
       style: { display: iconDisplay },
       mr: 2,
       mt: '-2px',
       mb: '2px',
       size: 24,
-    } as unknown as Attributes)
+    } as unknown) as Attributes)
   }
 
   let headerColor = ''

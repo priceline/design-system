@@ -1,7 +1,7 @@
 import { argv } from 'yargs'
 import fs from 'fs'
 import { join } from 'path'
-import { RushConfiguration } from '@microsoft/rush-lib'
+import { RushConfiguration } from '@rushstack/rush-sdk'
 import { createReleaseNotes, formatNotesMarkdown } from '../actions/createReleaseNotes'
 
 const packageName = argv['packageName']

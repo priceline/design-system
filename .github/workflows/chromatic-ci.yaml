@@ -1,17 +1,16 @@
-name: Rush Design System CI
+name: Chromatic CI
 
 on:
   push:
-  workflow_dispatch:
 
 jobs:
-  design-system-ci:
+  chromatic-ci:
     runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
-        node-version: [16, 18]
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -38,15 +37,8 @@ jobs:
       - name: Build components
         run: node common/scripts/install-run-rush.js build --timeline
 
-      - name: Run Unit Tests
-        run: node common/scripts/install-run-rush.js test:ci
-
-      - name: ESLint
-        run: node common/scripts/install-run-rush.js lint
-
-      - name: Generate and upload coverage report
-        if: ${{ matrix.node-version == '16' }}
+      - name: Build Storybook
+        working-directory: ./
         env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          npx codecov
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        run: node common/scripts/install-run-rush.js build:storybook

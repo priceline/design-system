@@ -15,7 +15,6 @@ export default {
     onClose: { action: true },
     onMinimize: { action: true },
   },
-  tags: ['autodocs'],
 }
 
 type ChatHeaderStory = StoryObj<IChatHeader>

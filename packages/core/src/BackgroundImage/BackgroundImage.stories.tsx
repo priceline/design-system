@@ -80,3 +80,11 @@ Rounded.args = {
   rounded: 'top',
   height: '100px',
 }
+
+export const BackgroundPosition = Template.bind({})
+BackgroundPosition.args = {
+  height: 400,
+  width: '360px',
+  children: <StoryChildren />,
+  backgroundPosition: 'left',
+}
