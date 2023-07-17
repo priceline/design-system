@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add styling for when card is as button",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
