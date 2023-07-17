@@ -1,18 +1,8 @@
 import { ColorSchemes, PaletteFamilies } from '../theme'
 
 export const createColorScheme = ({ palette }: { palette: PaletteFamilies }): ColorSchemes => {
-  const {
-    primary,
-    secondary,
-    background,
-    success,
-    warning,
-    caution,
-    text,
-    highlight,
-    promoPrimary,
-    alert,
-  } = palette
+  const { primary, secondary, background, success, warning, caution, text, highlight, promoPrimary, alert } =
+    palette
 
   return {
     // Primary

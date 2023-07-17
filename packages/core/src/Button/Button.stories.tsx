@@ -183,8 +183,7 @@ const meta: Meta<typeof Button> = {
   parameters: {
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
+      url: 'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
     },
 
     docs: {
