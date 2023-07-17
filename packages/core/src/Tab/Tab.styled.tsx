@@ -11,15 +11,15 @@ export const TabTriggerChip = styled(Tab.Trigger)`
     props?.hover &&
     `
     &:hover {
-      background-color: ${getPaletteColor('border.tint')(props)};
-      border-radius: ${themeGet('borderRadius.full')};
-      ;
+        color: ${getPaletteColor('primary.dark')(props)};
+        border-color: ${getPaletteColor('primary.dark')(props)};
+        background-color: ${getPaletteColor('background.lightest')(props)};
     }`}
   ${(props) => `
     border-style: solid;
-    border-radius: ${themeGet('borderRadius.full')};
-    background-color: ${getPaletteColor('text.lightest')(props)};
-    border-color: ${getPaletteColor('primary.base')(props)};
+    border-radius: ${themeGet('borderRadii.full')};
+    background-color: ${getPaletteColor('background.lightest')(props)};
+    border-color: ${getPaletteColor('border.base')(props)};
     color: ${getPaletteColor('primary.base')(props)};
     `}
   &[data-state='active'] {
@@ -27,7 +27,9 @@ export const TabTriggerChip = styled(Tab.Trigger)`
       props?.hover &&
       `
         &:hover {
-          background-color: ${getPaletteColor('primary.tint')(props)};
+          color: ${getPaletteColor('primary.dark')(props)};
+          border-color: ${getPaletteColor('primary.dark')(props)};
+          background-color: ${getPaletteColor('primary.light')(props)};
         }
       `}
     ${(props) => `
@@ -44,7 +46,7 @@ export const TabTriggerButton = styled(Tab.Trigger)`
     props?.hover &&
     `
     &:hover {
-      background-color: ${getPaletteColor('border.tint')(props)};
+      background-color: ${getPaletteColor('background.base')(props)};
     }`}
   ${(props) =>
     `
@@ -56,10 +58,12 @@ export const TabTriggerButton = styled(Tab.Trigger)`
       props?.hover &&
       `
         &:hover {
-          background-color: ${getPaletteColor('primary.tint')(props)};
+          background-color: ${getPaletteColor('primary.light')(props)};
+          color: ${getPaletteColor('primary.dark')(props)};
         }
       `}
     &::after {
+      margin-top: -4px;
       margin-left: 25px;
       margin-right: 25px;
       content: '';

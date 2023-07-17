@@ -1,17 +1,22 @@
-import { Box } from '../Box'
 import { Text } from '../Text'
 import React from 'react'
 import { TabTriggerButton } from './Tab.styled'
+import { Flex } from '../Flex'
 
-export const TabButton = ({ hasHover, type, tab, index }) => {
+export const TabButton = ({ hasHover, type, tab, index, value }) => {
   return (
-    <TabTriggerButton hover={hasHover} type={type} value={tab.id} key={`${index}-${tab.id}`}>
-      <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
+    <TabTriggerButton
+      hover={hasHover}
+      type={type}
+      value={`${value}-tab${index + 1}`}
+      key={`${value}-tab${index + 1}`}
+    >
+      <Flex alignItems='center'>
         {tab.icon}
-        <Text py={3} fontSize={2} pl={tab.icon ? 2 : 3} pr={3}>
+        <Text py={3} fontSize={2} pl={tab.icon ? 2 : 3} textStyle='paragraph' pr={3}>
           {tab.text}
         </Text>
-      </Box>
+      </Flex>
     </TabTriggerButton>
   )
 }

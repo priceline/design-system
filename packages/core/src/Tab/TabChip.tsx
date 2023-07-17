@@ -3,23 +3,17 @@ import { Text } from '../Text'
 import React from 'react'
 import { TabTriggerChip } from './Tab.styled'
 
-export const TabChip = ({ hasHover, setIsActive, index, tab, isActive }) => {
+export const TabChip = ({ hasHover, index, tab, value }) => {
   return (
     <TabTriggerChip
-      onClick={() => {
-        setIsActive((prevState) => {
-          const updatedState = prevState.map((value, idx) => idx === index)
-          return updatedState
-        })
-      }}
       asChild
       hover={hasHover}
-      value={tab.id}
-      key={`${index}-${tab.id}`}
+      value={`${value}-tab${index + 1}`}
+      key={`${value}-tab${index + 1}`}
     >
       <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
         {tab.icon}
-        <Text py={1} pl={tab.icon ? 2 : 3} fontWeight={isActive[index] ? 700 : 0} pr={3}>
+        <Text py={1} pl={tab.icon ? 2 : 3} textStyle='paragraph' pr={3}>
           {tab.text}
         </Text>
       </Box>

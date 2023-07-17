@@ -7,33 +7,27 @@ import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 import { Icon } from '../Icon'
 const defaultArgs: ITabsProps = {
   size: 'md',
-  onHover: true,
+  hasHover: true,
   type: 'button',
   tabsContent: [
     {
-      id: 't1',
       children: <DefaultContent />,
     },
     {
-      id: 't2',
       children: <DefaultContent2 />,
     },
     {
-      id: 't3',
       children: <DefaultContent3 />,
     },
   ],
   tabsData: [
     {
-      id: 't1',
       text: 'Flights Tab',
     },
     {
-      id: 't2',
       text: 'Packages',
     },
     {
-      id: 't3',
       text: 'Hotel Tabbing',
     },
   ],
@@ -95,7 +89,7 @@ export const NoIconNoHoverButtonTabs: TabsStory = {
   ),
   args: {
     ...defaultArgs,
-    onHover: false,
+    hasHover: false,
     size: 'md',
   },
 }
@@ -110,17 +104,17 @@ export const IconButtonTabs: TabsStory = {
     tabsData: [
       {
         id: 't1',
-        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        icon: <Icon color='primary' size={[100, 200, 300, 35]} name='Flights' />,
         text: 'Tab 1',
       },
       {
         id: 't2',
-        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        icon: <Icon color='primary' size={[100, 200, 300, 35]} name='Flights' />,
         text: 'Tab 2',
       },
       {
         id: 't3',
-        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        icon: <Icon color='primary' size={[100, 200, 300, 35]} name='Flights' />,
         text: 'Tab 3',
       },
     ],

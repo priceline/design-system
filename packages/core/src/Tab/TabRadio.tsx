@@ -1,26 +1,32 @@
-import { type } from 'os'
 import React from 'react'
 import { Label } from '../Label'
 import { Radio } from '../Radio'
 import { TabTriggerRadio } from './Tab.styled'
 import { Box } from '../Box'
 
-export const TabRadio = ({ hasHover, tab, index, setIsActive, isActive }) => {
+export const TabRadio = ({ hasHover, tab, index, isActive, setIsActive, value }) => {
+  const tabRef = React.useRef(null)
+  const [isChecked, setIsChecked] = React.useState(isActive === true)
+  React.useEffect(() => {
+    setIsChecked(isActive === index)
+  }, [isActive, index])
+
+  const handleTabClick = () => {
+    setIsActive(index)
+  }
+
   return (
-    <TabTriggerRadio asChild hover={hasHover} type={type} value={tab.id} key={`${index}-${tab.id}`}>
+    <TabTriggerRadio
+      ref={tabRef}
+      onClick={handleTabClick}
+      asChild
+      hover={hasHover}
+      value={`${value}-tab${index + 1}`}
+      key={`tab${index + 1}`}
+    >
       <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
         <Label fontSize='14px'>
-          <Radio
-            onClick={() => {
-              setIsActive((prevState) => {
-                const updatedState = prevState.map((value, idx) => idx === index)
-                return updatedState
-              })
-            }}
-            checked={isActive[index] === true}
-            name='mySelection'
-            value={tab.text}
-          />
+          <Radio checked={isChecked} />
           {tab.text}
         </Label>
       </Box>

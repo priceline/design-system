@@ -1,24 +1,23 @@
 import React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
-import { Text } from '../Text'
-import { TabContainer, TabList, TabTriggerChip, TabTriggerButton, TabTriggerRadio } from './Tab.styled'
+import { TabContainer, TabList } from './Tab.styled'
 import { Box } from '../Box'
-import { Radio } from '../Radio'
-import { Label } from '../Label'
 import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
+import { v4 as uuidv4 } from 'uuid'
+
 export interface ITabsProps {
   orientation?: 'horizontal' | 'vertical'
   hasHover?: boolean
   onClick?: () => void
   size?: string
   tabsContent: {
-    id: string
+    id?: string
     children: React.ReactNode
   }[]
   tabsData: {
-    id: string
+    id?: string
     icon?: React.ReactNode
     text: string
     onClick?: () => void
@@ -41,26 +40,21 @@ const PclnTab = ({
     initialActiveState[0] = true
     return initialActiveState
   })
-  const tabLink = tabsContent[0].id
+  const tabLink = uuidv4()
   return (
-    <TabContainer type={type} orientation={orientation} defaultValue={tabLink}>
+    <TabContainer type={type} orientation={orientation} defaultValue={`${tabLink}-tab1`}>
       <TabList orientation={orientation} aria-label='Pcln Tabs'>
         {tabsData.map((tab, index) => {
           return (
             <>
               {type === 'chip' ? (
-                <TabChip
-                  hasHover={hasHover}
-                  tab={tab}
-                  index={index}
-                  isActive={isActive}
-                  setIsActive={setIsActive}
-                />
+                <TabChip value={tabLink} hasHover={hasHover} tab={tab} index={index} />
               ) : type === 'button' ? (
-                <TabButton hasHover={hasHover} type={type} tab={tab} index={index} />
+                <TabButton hasHover={hasHover} type={type} tab={tab} value={tabLink} index={index} />
               ) : (
                 type === 'radio' && (
                   <TabRadio
+                    value={tabLink}
                     hasHover={hasHover}
                     tab={tab}
                     index={index}
@@ -73,10 +67,10 @@ const PclnTab = ({
           )
         })}
       </TabList>
-      <Box m={2}>
+      <Box>
         {tabsContent.map((tab, index) => {
           return (
-            <Tabs.Content key={`${index}-${tab.id}`} value={tab.id}>
+            <Tabs.Content key={`tab${index + 1}`} value={`${tabLink}-tab${index + 1}`}>
               {tab.children}
             </Tabs.Content>
           )
