@@ -19,13 +19,6 @@
     },
     {
       "plugin": "@rushstack/heft-jest-plugin"
-    },
-    {
-      "plugin": "@rushstack/heft-storybook-plugin",
-      "options": {
-        "storykitPackageName": "@priceline/storybook-preset",
-        "startupModulePath": "@storybook/react/bin/index.js"
-      }
     }
   ]
 }

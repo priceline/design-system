@@ -20,7 +20,6 @@ export default {
       },
     },
   },
-  tags: ['autodocs'],
 }
 
 const HeaderFooter = (

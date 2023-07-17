@@ -25,9 +25,6 @@
     "types/",
     "bin/"
   ],
-  "publishConfig": {
-    "registry": "https://npm.prod.pcln.com/repository/npm-pcln/"
-  },
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@rushstack/rush-sdk": "^5.100.1",

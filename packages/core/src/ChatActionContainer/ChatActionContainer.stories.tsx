@@ -7,7 +7,6 @@ import ChatActionContainer, { IChatActionContainer } from './ChatActionContainer
 export default {
   title: 'Chat / ChatActionContainer',
   component: ChatActionContainer,
-  tags: ['autodocs'],
 }
 
 type ChatActionContainerStory = StoryObj<IChatActionContainer>
