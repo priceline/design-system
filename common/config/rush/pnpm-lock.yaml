@@ -882,6 +882,12 @@ importers:
       '@storybook/addon-actions':
         specifier: ^7.0.20
         version: 7.0.20(react-dom@17.0.2)(react@17.0.2)
+      '@storybook/jest':
+        specifier: ^0.1.0
+        version: 0.1.0
+      '@storybook/testing-library':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@testing-library/jest-dom':
         specifier: ^5.15.0
         version: 5.16.5
@@ -4018,7 +4024,7 @@ packages:
       '@babel/helper-function-name': 7.22.5
       '@babel/helper-hoist-variables': 7.22.5
       '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.21.9
+      '@babel/parser': 7.22.7
       '@babel/types': 7.22.5
       debug: 4.3.4(supports-color@5.5.0)
       globals: 11.12.0
@@ -8895,7 +8901,7 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@babel/template': 7.22.5
-      '@babel/types': 7.22.4
+      '@babel/types': 7.22.5
       '@types/babel__core': 7.20.1
       '@types/babel__traverse': 7.20.1
     dev: true
