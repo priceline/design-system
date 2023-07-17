@@ -28,6 +28,7 @@ const variations = {
   `,
 }
 
+export const backgroundPositionList = ['top', 'bottom', 'left', 'right', 'center']
 const image = (props) => (props.image ? { backgroundImage: `url(${props.image})` } : null)
 
 const backgroundImagePropTypes = {
@@ -39,6 +40,7 @@ const backgroundImagePropTypes = {
   variation: PropTypes.oneOf(Object.keys(variations)),
   borderRadiusSize: PropTypes.oneOf(borderRadiusValues),
   rounded: PropTypes.oneOf(roundedValues),
+  backgroundPosition: PropTypes.oneOf(backgroundPositionList),
 }
 
 export interface IBackgroundImageProps
@@ -50,10 +52,11 @@ export interface IBackgroundImageProps
   image?: string
   borderRadius?: string
   rounded?: string
+  backgroundPosition?: (typeof backgroundPositionList)[number]
 }
 
 const BackgroundImage: React.FC<IBackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
-  background-position: center;
+  background-position: ${(props) => props.backgroundPosition};
   background-size: cover;
   background-repeat: no-repeat;
   background-color: ${getPaletteColor('border.light')};
@@ -67,6 +70,7 @@ BackgroundImage.propTypes = backgroundImagePropTypes
 
 BackgroundImage.defaultProps = {
   variation: 'static',
+  backgroundPosition: 'center',
 }
 
 BackgroundImage.displayName = 'BackgroundImage'

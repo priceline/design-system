@@ -28,6 +28,22 @@ describe('BackgroundImage', () => {
     expect(json).toHaveStyleRule('border-radius', `${full} ${full} 0 0`)
   })
 
+  test('renders with background position', () => {
+    const json = rendererCreateWithTheme(
+      <BackgroundImage height='320px' borderRadius='full' rounded='top' backgroundPosition='top' />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-position', 'top')
+  })
+
+  test('renders with default background position', () => {
+    const json = rendererCreateWithTheme(
+      <BackgroundImage height='320px' borderRadius='full' rounded='top' />
+    ).toJSON()
+    expect(json).toMatchSnapshot()
+    expect(json).toHaveStyleRule('background-position', 'center')
+  })
+
   describe('variations', () => {
     describe('parallax variation', () => {
       test('default render', () => {
