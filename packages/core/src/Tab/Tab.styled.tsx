@@ -7,6 +7,14 @@ export const TabContainer = styled(Tab.Root)``
 
 export const TabTriggerChip = styled(Tab.Trigger)`
   cursor: pointer;
+  ${(props) => `
+    border-style: solid;
+    ${console.log(themeGet('borderRadii.full')(props))}
+    border-radius: ${themeGet('borderRadii.full')};
+    background-color: ${getPaletteColor('background.lightest')(props)};
+    border-color: ${getPaletteColor('border.base')(props)};
+    color: ${getPaletteColor('primary.base')(props)};
+    `}
   ${(props) =>
     props?.hover &&
     `
@@ -15,13 +23,6 @@ export const TabTriggerChip = styled(Tab.Trigger)`
         border-color: ${getPaletteColor('primary.dark')(props)};
         background-color: ${getPaletteColor('background.lightest')(props)};
     }`}
-  ${(props) => `
-    border-style: solid;
-    border-radius: ${themeGet('borderRadii.full')};
-    background-color: ${getPaletteColor('background.lightest')(props)};
-    border-color: ${getPaletteColor('border.base')(props)};
-    color: ${getPaletteColor('primary.base')(props)};
-    `}
   &[data-state='active'] {
     ${(props) =>
       props?.hover &&
