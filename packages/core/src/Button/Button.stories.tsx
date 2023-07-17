@@ -28,7 +28,7 @@ import alignmentImage from './Button.Image.Alignment.png'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
 import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
-import buttonStates from './Button.Image.States.png'
+import statesImage from './Button.Image.States.png'
 
 type ButtonStory = StoryObj<IButtonProps>
 
@@ -328,7 +328,7 @@ const meta: Meta<typeof Button> = {
               element.
             </Text>
             <Flex my={4} borderRadius='xl' bg='primary.light'>
-              <Image src={buttonStates} />
+              <Image src={statesImage} />
             </Flex>
 
             <StoryHeading storyName='Disabled' storyTitle={meta.title} />
