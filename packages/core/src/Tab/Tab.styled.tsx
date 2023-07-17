@@ -77,5 +77,5 @@ export const TabTriggerRadio = styled(Tab.Trigger)`
 `
 export const TabList = styled(Tab.List)`
   display: flex;
-  ${(props) => (props?.orientation === 'horizontal' ? ` flex-direction: row;` : 'flex-direction: column;')}
+  flex-direction: ${(props) => (props?.orientation === 'horizontal' ? 'row' : 'column')};
 `
