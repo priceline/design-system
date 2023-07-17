@@ -17,6 +17,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Popover from './Popover'
 import { argTypes, defaultArgs } from './Popover.stories.args'
+import { within, userEvent } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
 
 export default {
   title: 'pcln-popover / Popover',
@@ -235,4 +237,32 @@ export const PassesThemeToContent = () => {
       </Popover>
     </ThemeProvider>
   )
+}
+
+export const PopoverInteractionTest = {
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement)
+    const text = canvas.getByText('Popover interaction test')
+    expect(text).toBeInTheDocument()
+    await userEvent.hover(text)
+    expect(args.onOpen).toHaveBeenCalled()
+    await userEvent.unhover(text)
+    expect(args.onClose).toHaveBeenCalled()
+  },
+  render: (args) => (
+    <Flex m={200}>
+      <Popover
+        color='primary'
+        renderContent={SimpleTextContent}
+        placement='left'
+        ariaLabel='Default Popover'
+        width={130}
+        {...args}
+      >
+        <Text color='primary' mx={2}>
+          Popover interaction test
+        </Text>
+      </Popover>
+    </Flex>
+  ),
 }

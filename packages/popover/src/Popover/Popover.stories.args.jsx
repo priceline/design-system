@@ -32,6 +32,8 @@ export const argTypes = {
       type: 'select',
     },
   },
+  onClose: { action: true },
+  onMinimize: { action: true },
   placement: {
     name: 'placement',
     type: { name: 'string', required: true },

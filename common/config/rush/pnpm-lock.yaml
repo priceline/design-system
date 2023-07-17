@@ -888,6 +888,12 @@ importers:
       '@storybook/addon-actions':
         specifier: ^7.0.27
         version: 7.0.27(react-dom@17.0.2)(react@17.0.2)
+      '@storybook/jest':
+        specifier: ^0.1.0
+        version: 0.1.0
+      '@storybook/testing-library':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@testing-library/jest-dom':
         specifier: ^5.15.0
         version: 5.16.5
