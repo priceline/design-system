@@ -21,7 +21,7 @@ const ActionBurst: React.FC<InferProps<typeof propTypes>> = (props) => {
             initial={{
               color: getPaletteColor('primary.base')(props),
               opacity: 0.2,
-              scale: 1,
+              scale: 0,
               y: -100,
               position: 'absolute',
             }}
@@ -37,7 +37,7 @@ const ActionBurst: React.FC<InferProps<typeof propTypes>> = (props) => {
             initial={{
               color: getPaletteColor('primary.base')(props),
               opacity: 0.4,
-              scale: 1,
+              scale: 0,
               y: -70,
               x: 0,
               position: 'absolute',
@@ -51,7 +51,7 @@ const ActionBurst: React.FC<InferProps<typeof propTypes>> = (props) => {
             initial={{
               color: getPaletteColor('promoPrimary.base')(props),
               opacity: 0.3,
-              scale: 1,
+              scale: 0,
               y: -80,
               x: 0,
               position: 'absolute',
