@@ -5,13 +5,13 @@ import styled from 'styled-components'
 import { Radio, Label, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
-const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
-const medium = (props) => (props.medium ? { fontWeight: props.theme.medium } : null)
+const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
+const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)
 
 const LabelText = styled.span`
   vertical-align: middle;
   margin-left: 8px;
-  ${regular}
+  ${bold}
   ${medium}
 `
 
@@ -122,7 +122,7 @@ export const FontWeight = () => (
   <div onChange={action('changed')}>
     <Label fontSize='14px'>
       <Radio checked />
-      <LabelText regular>font weight - regular</LabelText>
+      <LabelText bold>font weight - bold</LabelText>
     </Label>
     <Label fontSize='14px'>
       <Radio checked />
