@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add story for colorScheme on Banner",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

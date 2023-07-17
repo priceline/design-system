@@ -6,6 +6,7 @@ import { Text } from '../Text'
 import styled from 'styled-components'
 import { getPaletteColor } from '../utils'
 import { argTypes } from './GenericBanner.stories.args'
+import { colorSchemeNames } from '../storybook/args'
 
 export default {
   title: 'GenericBanner',
@@ -255,3 +256,23 @@ export const BannerWithURLPropsButtonStyleCta = () => (
     iconLeft={<Emoticon />}
   />
 )
+
+export const ColorScheme = () => {
+  return colorSchemeNames.map((colorScheme) => (
+    <GenericBanner
+      key={colorScheme}
+      colorScheme={colorScheme}
+      p={3}
+      m={2}
+      heading={
+        <Text.span fontWeight='bold' mr={1}>
+          {colorScheme}
+        </Text.span>
+      }
+      text={
+        <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>
+      }
+      iconLeft={<Warning />}
+    />
+  ))
+}

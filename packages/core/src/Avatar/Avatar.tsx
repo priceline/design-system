@@ -8,6 +8,7 @@ import { Heading } from '../Heading'
 import { Text } from '../Text'
 
 import { User } from 'pcln-icons'
+import { colorSchemeNames } from '../theme'
 
 const StyledImage = styled(Box)`
   display: flex;
@@ -27,6 +28,7 @@ const propTypes = {
   initials: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   color: PropTypes.string,
+  colorScheme: PropTypes.oneOfType(colorSchemeNames),
 }
 
 /** @public */
@@ -39,10 +41,20 @@ const Avatar: React.FC<InferProps<typeof propTypes>> = ({
   initials,
   size,
   color,
+  colorScheme,
 }) => {
   return (
     <Flex className={className}>
-      <StyledImage role='img' src={src} alt={altText} size={size} minWidth={size} color={color} p={2}>
+      <StyledImage
+        role='img'
+        src={src}
+        alt={altText}
+        size={size}
+        minWidth={size}
+        color={color}
+        p={2}
+        colorScheme={colorScheme}
+      >
         {!src && initials && <Text fontSize={1}>{initials.toUpperCase()}</Text>}
         {!src && !initials && <User />}
       </StyledImage>

@@ -10,9 +10,13 @@ import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
 import { Button } from '../Button'
+import { colorSchemeCustomForeground } from '../utils'
+import { ColorSchemeName } from '../theme'
 
 const BannerWithRadius = styled(Banner)`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};
+
+  ${colorSchemeCustomForeground}
 `
 
 const WrapperLink = styled.a`
@@ -83,6 +87,7 @@ export interface IGenericBannerProps
     target?: string
   }
   color?: string
+  colorScheme?: ColorSchemeName
 }
 
 const GenericBanner: React.FC<IGenericBannerProps> = ({
@@ -108,10 +113,17 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
     e.stopPropagation()
     buttonClick()
   }
+
   return (
     <Relative>
       {URLProps && <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />}
-      <BannerWithRadius {...props} onClick={URLProps ? null : buttonClick}>
+      <BannerWithRadius
+        {...props}
+        onClick={URLProps ? null : buttonClick}
+        iconUsesColorScheme
+        // we need to unset Banner's color prop if colorScheme is provided so it doesn't render its own icon
+        color={!props.colorScheme ? props.color : null}
+      >
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
