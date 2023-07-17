@@ -1,41 +1,20 @@
-import { decorators as presetDecorators, parameters as presetParameters } from '@priceline/storybook-preset'
-import { createTheme } from 'pcln-design-system'
+import { a11y } from './parameters/a11y'
+import { backgrounds } from './parameters/backgrounds'
+import { viewport } from './parameters/viewport'
 
-const baseTheme = createTheme()
-
-export const decorators = presetDecorators
+export { decorators } from './decorators'
 
 export const parameters = {
-  ...presetParameters,
-
-  backgrounds: {
-    default: 'background.lightest',
-    values: [
-      {
-        name: 'background.lightest',
-        value: baseTheme.palette.background.lightest,
-      },
-      {
-        name: 'background.light',
-        value: baseTheme.palette.background.light,
-      },
-      {
-        name: 'background.base',
-        value: baseTheme.palette.background.base,
-      },
-      {
-        name: 'background.dark',
-        value: baseTheme.palette.background.dark,
-      },
-      {
-        name: 'background.darkest',
-        value: baseTheme.palette.background.darkest,
-      },
-    ],
-  },
-
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     expanded: true,
     sort: 'requiredFirst',
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
   },
+  a11y,
+  backgrounds,
+  viewport,
 }
