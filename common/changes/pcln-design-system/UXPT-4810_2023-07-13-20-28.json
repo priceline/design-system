@@ -3,7 +3,7 @@
     {
       "packageName": "pcln-design-system",
       "comment": "Added Tab component",
-      "type": "major"
+      "type": "minor"
     }
   ],
   "packageName": "pcln-design-system"

@@ -5,10 +5,12 @@ import { TabContainer, TabList, TabTriggerChip, TabTriggerButton, TabTriggerRadi
 import { Box } from '../Box'
 import { Radio } from '../Radio'
 import { Label } from '../Label'
-
+import { TabButton } from './TabButton'
+import { TabChip } from './TabChip'
+import { TabRadio } from './TabRadio'
 export interface ITabsProps {
   orientation?: 'horizontal' | 'vertical'
-  onHover?: boolean
+  hasHover?: boolean
   onClick?: () => void
   size?: string
   tabsContent: {
@@ -30,7 +32,7 @@ const PclnTab = ({
   tabsData,
   orientation = 'horizontal',
   onClick,
-  onHover = true,
+  hasHover = true,
   size = 'md',
   type = 'button',
 }: ITabsProps) => {
@@ -47,61 +49,24 @@ const PclnTab = ({
           return (
             <>
               {type === 'chip' ? (
-                <TabTriggerChip
-                  onClick={() => {
-                    setIsActive((prevState) => {
-                      const updatedState = prevState.map((value, idx) => idx === index)
-                      return updatedState
-                    })
-                  }}
-                  asChild
-                  hover={onHover}
-                  type={type}
-                  value={tab.id}
-                  key={`${index}-${tab.id}`}
-                >
-                  <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
-                    {tab.icon}
-                    <Text py={1} pl={tab.icon ? 2 : 3} fontWeight={isActive[index] ? 700 : 0} pr={3}>
-                      {tab.text}
-                    </Text>
-                  </Box>
-                </TabTriggerChip>
+                <TabChip
+                  hasHover={hasHover}
+                  tab={tab}
+                  index={index}
+                  isActive={isActive}
+                  setIsActive={setIsActive}
+                />
               ) : type === 'button' ? (
-                <TabTriggerButton hover={onHover} type={type} value={tab.id} key={`${index}-${tab.id}`}>
-                  <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
-                    {tab.icon}
-                    <Text py={3} fontSize={2} pl={tab.icon ? 2 : 3} pr={3}>
-                      {tab.text}
-                    </Text>
-                  </Box>
-                </TabTriggerButton>
+                <TabButton hasHover={hasHover} type={type} tab={tab} index={index} />
               ) : (
                 type === 'radio' && (
-                  <TabTriggerRadio
-                    asChild
-                    hover={onHover}
-                    type={type}
-                    value={tab.id}
-                    key={`${index}-${tab.id}`}
-                  >
-                    <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
-                      <Label fontSize='14px'>
-                        <Radio
-                          onClick={() => {
-                            setIsActive((prevState) => {
-                              const updatedState = prevState.map((value, idx) => idx === index)
-                              return updatedState
-                            })
-                          }}
-                          checked={isActive[index] === true}
-                          name='mySelection'
-                          value={tab.text}
-                        />
-                        {tab.text}
-                      </Label>
-                    </Box>
-                  </TabTriggerRadio>
+                  <TabRadio
+                    hasHover={hasHover}
+                    tab={tab}
+                    index={index}
+                    isActive={isActive}
+                    setIsActive={setIsActive}
+                  />
                 )
               )}
             </>
