@@ -16,4 +16,9 @@ describe('Radio', () => {
     const json = rendererCreateWithTheme(<Radio disabled />).toJSON()
     expect(json).toMatchSnapshot()
   })
+
+  test('Disabled, rendering', () => {
+    const json = rendererCreateWithTheme(<Radio disabled />).toJSON()
+    expect(json).toMatchSnapshot()
+  })
 })

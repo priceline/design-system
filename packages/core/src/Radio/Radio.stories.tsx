@@ -4,7 +4,9 @@ import styled from 'styled-components'
 
 import { Radio, Label, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-import { regular, medium } from '../../../core/src/Text/Text'
+
+const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
+const medium = (props) => (props.medium ? { fontWeight: props.theme.medium } : null)
 
 const LabelText = styled.span`
   vertical-align: middle;
