@@ -11,6 +11,16 @@ const boxBorder = ({ borderWidth, borderColor, ...props }) => ({
   borderColor: borderWidth === 0 ? '0' : getPaletteColor(borderColor, 'base')(props),
 })
 
+const styleAsButton = ({ as, ...props }) =>
+  as === 'button'
+    ? `
+      font-family : inherit;
+      &:hover {
+        cursor: pointer;
+        box-shadow: ${props.theme.shadows.xl};
+      }`
+    : ''
+
 const cardPropTypes = {
   borderColor: deprecatedColorValue(),
   color: deprecatedColorValue(),
@@ -25,6 +35,7 @@ export interface ICardProps extends IBoxProps {
 const Card: React.FC<ICardProps> = styled(Box)`
   ${applyVariations('Card')}
   ${boxBorder}
+  ${styleAsButton}
 `
 
 Card.propTypes = cardPropTypes

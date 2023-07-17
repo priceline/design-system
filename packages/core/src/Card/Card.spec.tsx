@@ -57,6 +57,14 @@ describe('Card', () => {
     expect(json).toHaveStyleRule('box-shadow', theme.shadows.md)
   })
 
+  test('renders with as button', () => {
+    const json = rendererCreateWithTheme(<Card as='button' />).toJSON()
+    expect(json).toMatchSnapshot()
+    assertBorderGray(json)
+    expect(json).toHaveStyleRule('border-radius', theme.radius)
+    expect(json).toHaveStyleRule('box-shadow', undefined)
+  })
+
   test('renders border 0 without warning', () => {
     console.error = jest.fn()
     const json = rendererCreateWithTheme(<Card borderWidth={0} />).toJSON()
