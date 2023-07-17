@@ -5,7 +5,9 @@ import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
-import { Box, Button, ChoiceChip, Flex, Image, Text } from '..'
+import { Box, Button, ChoiceChip, Flex, Image, Text, Toggle } from '..'
+import ActionBurst from './ActionBurst'
+import { Discount } from 'pcln-icons'
 
 const meta: Meta<typeof Animate> = {
   component: Animate,
@@ -167,5 +169,15 @@ export const ComposedAnimations = () => {
         </Animate>
       )}
     </Box>
+  )
+}
+
+export const ActionBurstAnimations = () => {
+  return (
+    <Flex py={6} justifyContent='center'>
+      <ActionBurst icon={<Discount size={120} />}>
+        <Button>Click here</Button>
+      </ActionBurst>
+    </Flex>
   )
 }
