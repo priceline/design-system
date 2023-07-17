@@ -2,6 +2,28 @@
   "name": "pcln-slider",
   "entries": [
     {
+      "version": "5.2.3",
+      "tag": "pcln-slider_v5.2.3",
+      "date": "Mon, 17 Jul 2023 14:36:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Delete storybook-preset and vestiges of storybook configuration in individual projects, apps/storybook now starts in 1 second",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "641dcc17e78aa2db9b1f452d026990526b578c29"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.13.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.12.0` to `^5.13.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.2.2",
       "tag": "pcln-slider_v5.2.2",
       "date": "Tue, 27 Jun 2023 15:50:08 GMT",

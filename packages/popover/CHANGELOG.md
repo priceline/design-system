@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Fri, 07 Jul 2023 17:19:54 GMT and should not be manually modified.
+This log was last generated on Mon, 17 Jul 2023 14:36:49 GMT and should not be manually modified.
+
+## 5.4.1
+Mon, 17 Jul 2023 14:36:49 GMT
+
+### Patches
+
+- Delete storybook-preset and vestiges of storybook configuration in individual projects, apps/storybook now starts in 1 second
 
 ## 5.4.0
 Fri, 07 Jul 2023 17:19:54 GMT

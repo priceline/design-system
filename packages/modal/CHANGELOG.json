@@ -2,6 +2,38 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "5.4.0",
+      "tag": "pcln-modal_v5.4.0",
+      "date": "Mon, 17 Jul 2023 14:36:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Delete storybook-preset and vestiges of storybook configuration in individual projects, apps/storybook now starts in 1 second",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "641dcc17e78aa2db9b1f452d026990526b578c29"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "add borderRadius prop for modal",
+            "author": "Pablo Herrera <67336461+pherrera167@users.noreply.github.com>",
+            "commit": "ef1004c9999e0fe07a448c3507cc3af7462ef701"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.13.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.12.0` to `^5.13.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.3",
       "tag": "pcln-modal_v5.3.3",
       "date": "Fri, 07 Jul 2023 17:19:54 GMT",

@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+This log was last generated on Mon, 17 Jul 2023 14:36:49 GMT and should not be manually modified.
+
+## 2.5.2
+Mon, 17 Jul 2023 14:36:49 GMT
+
+### Patches
+
+- Delete storybook-preset and vestiges of storybook configuration in individual projects, apps/storybook now starts in 1 second
 
 ## 2.5.1
 Tue, 27 Jun 2023 15:50:08 GMT

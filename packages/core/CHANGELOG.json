@@ -2,6 +2,119 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.13.0",
+      "tag": "pcln-design-system_v5.13.0",
+      "date": "Mon, 17 Jul 2023 14:36:49 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create chatActionContainer component",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "a3c885d776d303af859e0b0c4869e3ab096ce7c7"
+          },
+          {
+            "comment": "add overflow support to Box",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "c1019dd13fbb1a6c775a49f55620496eaf4a6266"
+          },
+          {
+            "comment": "add text transform support to Text",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "789596547e10ba1f13984a42ffeab08ebb26ba0f"
+          },
+          {
+            "comment": "add text transform support to badge",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "8d3149217a290aee21ef0b4adff9bb2287d4039c"
+          },
+          {
+            "comment": "Add color schemes to theme",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "7f82cc8067063870ab46fd58f60c45fc089c7559"
+          },
+          {
+            "comment": "add background-position prop to BackgroundImage component",
+            "author": "Marco Cheung <113034408+marco-ch3ung@users.noreply.github.com>",
+            "commit": "8217814bf7bd8f1dfa1b5562c196c5838532ed33"
+          },
+          {
+            "comment": "Add more color scheme values to stories",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a19185a81a9e07f2d5d159ed8f1cd3fc6ebec6dd"
+          },
+          {
+            "comment": "Add colorScheme prop to Hug",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "2c5da48397142971800e8069822d0ecbb87a2099"
+          },
+          {
+            "comment": "Add zIndices to the theme and use zIndex from styled-system on Input and ShadowEffect",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "cce6970e5e58501d9f58a9106d5d6df83ef10421"
+          },
+          {
+            "comment": "Add disabled state for Input and Select",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "4d5ae7877a534bcd96410d9028c35442a1e2b646"
+          },
+          {
+            "comment": "Create ChatHeader component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "909e9ae677d45367c8af8e357e2a9abf452d7bee"
+          },
+          {
+            "comment": "Create ChatMessage component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "1511acc24b273fa73cd831aa1e520927a374a536"
+          },
+          {
+            "comment": "Add Input and Select readonly state and styles",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "863862c87c9caf119a5dad40b41168a98569033f"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Fix formatting with Prettier",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "ee5cd59ba13117480c732ae5532ed012db8048cd"
+          },
+          {
+            "comment": "Remove unnecessary prettier dependency",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "fe2e09483b305b538f44eb9c8d78c2f233d7cbe9"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Delete storybook-preset and vestiges of storybook configuration in individual projects, apps/storybook now starts in 1 second",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "641dcc17e78aa2db9b1f452d026990526b578c29"
+          },
+          {
+            "comment": "update hug to have same background color as header",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "416f37a9435b2cc7544a5b06785be4d400780a3a"
+          },
+          {
+            "comment": "Don't apply colorScheme foreground color to Hug header text",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "402a8a1ff0b72cca011b76d4c3e2bf0665d18e75"
+          },
+          {
+            "comment": "Change highlightDark to use same hex color as darkGreen",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "e62b3579615e6820b33b6f535c29dc254a08bdfc"
+          },
+          {
+            "comment": "Updated the toggle states",
+            "author": "sangeethaathiyursridharan <110497266+sangeethaathiyursridharan@users.noreply.github.com>",
+            "commit": "142f340806fdd076fb44851c532ce7b87d353ded"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.12.0",
       "tag": "pcln-design-system_v5.12.0",
       "date": "Tue, 27 Jun 2023 15:50:08 GMT",

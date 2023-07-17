@@ -1,6 +1,33 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 27 Jun 2023 15:50:08 GMT and should not be manually modified.
+This log was last generated on Mon, 17 Jul 2023 14:36:49 GMT and should not be manually modified.
+
+## 5.13.0
+Mon, 17 Jul 2023 14:36:49 GMT
+
+### Minor changes
+
+- Create chatActionContainer component
+- add overflow support to Box
+- add text transform support to Text
+- add text transform support to badge
+- Add color schemes to theme
+- add background-position prop to BackgroundImage component
+- Add more color scheme values to stories
+- Add colorScheme prop to Hug
+- Add zIndices to the theme and use zIndex from styled-system on Input and ShadowEffect
+- Add disabled state for Input and Select
+- Create ChatHeader component
+- Create ChatMessage component
+- Add Input and Select readonly state and styles
+
+### Patches
+
+- Delete storybook-preset and vestiges of storybook configuration in individual projects, apps/storybook now starts in 1 second
+- update hug to have same background color as header
+- Don't apply colorScheme foreground color to Hug header text
+- Change highlightDark to use same hex color as darkGreen
+- Updated the toggle states
 
 ## 5.12.0
 Tue, 27 Jun 2023 15:50:08 GMT

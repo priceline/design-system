@@ -2,6 +2,27 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.7.0",
+      "tag": "pcln-icons_v5.7.0",
+      "date": "Mon, 17 Jul 2023 14:36:49 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Fix formatting with Prettier",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "ee5cd59ba13117480c732ae5532ed012db8048cd"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Add Minimize Icon",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "c061a049097fd7c1c83e120c83287f6f1d7b45ed"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.6.0",
       "tag": "pcln-icons_v5.6.0",
       "date": "Thu, 15 Jun 2023 18:56:18 GMT",
