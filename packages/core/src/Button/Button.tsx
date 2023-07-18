@@ -144,10 +144,14 @@ const variations = {
   lightFill: css`
     background-color: ${getPaletteColor('light')};
     color: ${getPaletteColor('base')};
-    &:hover {
-      background-color: ${getPaletteColor('light')};
-      color: ${getPaletteColor('dark')};
-    }
+    ${(props) =>
+      props.disabled
+        ? ''
+        : `
+      &:hover {
+        background-color: ${getPaletteColor('light')(props)};
+        color: ${getPaletteColor('dark')(props)};
+      }`}
     &:focus {
       outline: ${(props) => `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
       box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
@@ -174,6 +178,8 @@ const variations = {
 }
 
 export type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
+export type Variations = 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
+
 export type StyledButtonProps = IButtonProps & { hasChildren: boolean }
 export interface IButtonProps
   extends WidthProps,
@@ -182,7 +188,7 @@ export interface IButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     React.RefAttributes<unknown> {
   color?: string
-  variation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
+  variation?: Variations
   size?: Sizes | Sizes[]
   borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
   boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
