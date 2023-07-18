@@ -102,6 +102,7 @@ const CardContent = styled(Box)`
 `
 
 const CardIcon = styled(Box)`
+  line-height: 0px;
   margin: ${(props) => (props.hPosition === 'left' ? `0 16px 0 0` : `0 0 0 16px`)};
 
   & > svg {
