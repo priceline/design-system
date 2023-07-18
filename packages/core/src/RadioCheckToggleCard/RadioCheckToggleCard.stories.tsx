@@ -4,14 +4,8 @@ import styled from 'styled-components'
 import { Box, Button, Flex, Image, Input, Text, ThemeProvider, theme } from '..'
 import { Section } from '../DocsUtils'
 import { getPaletteColor } from '../utils'
-
-import RadioCheckToggleCard, {
-  TCardTypes,
-  THPositions,
-  TVPositions,
-  hPositions,
-  vPositions,
-} from './RadioCheckToggleCard'
+import RadioCheckToggleCard, { TCardTypes, THPositions, TVPositions } from './RadioCheckToggleCard'
+import { argTypes } from './RadioCheckToggleCard.stories.args'
 
 type Story = StoryObj<typeof RadioCheckToggleCard>
 
@@ -936,40 +930,7 @@ export default meta
 
 export const Radio: Story = {
   args: { cardType: 'radio', name: 'radio-card', title: 'Title' },
-  argTypes: {
-    hPosition: {
-      control: { type: 'radio' },
-      options: hPositions,
-      defaultValue: RadioCheckToggleCard.defaultProps.hPosition,
-      description: 'Controlling the button icon horizontal position',
-    },
-    vPosition: {
-      control: { type: 'radio' },
-      options: vPositions,
-      defaultValue: RadioCheckToggleCard.defaultProps.vPosition,
-      description: 'Controlling the button icon vertical position',
-    },
-    isHeightOccupied: {
-      control: 'boolean',
-      defaultValue: false,
-      description: 'Controlling the button icon whether take full height of the card',
-    },
-    title: {
-      control: 'text',
-      defaultValue: 'Title',
-      description: 'Card label',
-    },
-    isTitleBold: {
-      control: 'boolean',
-      defaultValue: false,
-      description: 'Controlling the card label bold status',
-    },
-    isSelected: {
-      control: 'boolean',
-      defaultValue: false,
-      description: 'Controlling the card selection status',
-    },
-  },
+  argTypes,
   render: (args) => (
     <Section heading={args.cardType}>
       <Flex flexDirection='column' style={{ maxWidth: '350px', gap: '16px' }}>
@@ -1002,12 +963,12 @@ export const Radio: Story = {
 
 export const Checkbox: Story = {
   args: { ...Radio.args, cardType: 'checkbox', name: 'checkbox-card' },
-  argTypes: Radio.argTypes,
+  argTypes,
   render: Radio.render,
 }
 
 export const Toggle: Story = {
   args: { ...Radio.args, cardType: 'toggle', name: 'toggle-card' },
-  argTypes: Radio.argTypes,
+  argTypes,
   render: Radio.render,
 }
