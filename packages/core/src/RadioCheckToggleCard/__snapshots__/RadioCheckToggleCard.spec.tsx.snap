@@ -2,7 +2,7 @@
 
 exports[`RadioCheckToggleCard Checkbox Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -10,7 +10,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -38,10 +38,6 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -52,52 +48,48 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -105,16 +97,14 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -125,6 +115,17 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -149,6 +150,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="checkbox"
         type="checkbox"
         value="example-1"
       />
@@ -166,29 +168,30 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 4px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm4 14l9-8.6L17.6 7 10 14.3l-3.6-3.5L5 12.2l5 4.8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
@@ -198,7 +201,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
 
 exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -206,7 +209,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -234,10 +237,6 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -248,52 +247,48 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -301,16 +296,14 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -321,6 +314,17 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -344,6 +348,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="checkbox"
         type="checkbox"
         value="example-1"
       />
@@ -361,29 +366,30 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 4px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1H6zm0-2h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
@@ -393,7 +399,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
 
 exports[`RadioCheckToggleCard Radio Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -401,7 +407,7 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -429,10 +435,6 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -443,52 +445,48 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -496,16 +494,14 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -516,6 +512,17 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -540,6 +547,7 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -557,29 +565,30 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
@@ -589,7 +598,7 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
 
 exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -597,7 +606,7 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -625,10 +634,6 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -639,52 +644,48 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -692,16 +693,14 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -712,6 +711,17 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -735,6 +745,7 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -752,29 +763,30 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
@@ -784,7 +796,7 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 
 exports[`RadioCheckToggleCard Toggle Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c21 {
+  .c22 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -792,16 +804,16 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   width: 16;
 }
 
-.c22 {
+.c23 {
   outline: none;
 }
 
-.c8 {
+.c9 {
   width: 24;
   height: 24;
 }
 
-.c9 {
+.c10 {
   background-color: #0068ef;
   color: #fff;
   border-radius: 9999px;
@@ -809,25 +821,25 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   width: 45px;
 }
 
-.c15 {
+.c16 {
   border-radius: 9999px;
   width: calc(100% + 8px);
 }
 
-.c18 {
+.c19 {
   background-color: #fff;
   color: #001833;
   border-radius: 9999px;
   width: 20px;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   left: -4px;
   top: -4px;
 }
 
-.c19 {
+.c20 {
   position: absolute;
   left: 23px;
   top: 2px;
@@ -857,11 +869,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
-.c11 {
+.c12 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -881,41 +889,41 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   border-radius: 12px;
 }
 
-.c11::-webkit-input-placeholder {
+.c12::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c11::-moz-placeholder {
+.c12::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c11:-ms-input-placeholder {
+.c12:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c11::placeholder {
+.c12::placeholder {
   color: #4f6f8f;
 }
 
-.c11::-ms-clear {
+.c12::-ms-clear {
   display: none;
 }
 
-.c11:disabled,
-.c11:-moz-read-only {
+.c12:disabled,
+.c12:-moz-read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c11:disabled,
-.c11:read-only {
+.c12:disabled,
+.c12:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
@@ -931,52 +939,48 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -984,16 +988,14 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -1006,6 +1008,17 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   margin-top: 16px;
 }
 
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -1016,7 +1029,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   z-index: 5;
   opacity: 0;
@@ -1028,13 +1041,13 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   cursor: pointer;
 }
 
-.c17 {
+.c18 {
   height: calc(100% + 8px);
   opacity: 0;
   background-color: #0068ef4C;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1053,7 +1066,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   transition: left 0.3s;
 }
 
-.c10 {
+.c11 {
   position: relative;
   height: 24px;
   -webkit-transition: background-color 0.3s;
@@ -1061,7 +1074,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   min-width: 45px;
 }
 
-.c10 .c12:focus + .c14 {
+.c11 .c13:focus + .c15 {
   opacity: 1;
 }
 
@@ -1070,7 +1083,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 }
 
 @media screen and (min-width:40em) {
-  .c11 {
+  .c12 {
     font-size: 14px;
   }
 }
@@ -1087,6 +1100,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="checkbox"
         type="checkbox"
         value="example-1"
       />
@@ -1104,57 +1118,58 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
           <div
-            class="c8"
-            size="24"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
+            class="c8 cardIcon"
           >
             <div
-              class="c9 c10"
-              color="primary.base"
-              height="24"
-              width="45"
+              class="c9"
+              size="24"
             >
-              <input
-                aria-checked="true"
-                checked=""
-                class="c11 c12 c13"
-                font-size="2,,1"
-                role="switch"
-                tabindex="0"
-                type="checkbox"
-              />
               <div
-                class="c14 c15 c16 c17"
-                width="calc(100% + 8px)"
-              />
-              <div
-                class="c18 c19 c20"
-                color="background.lightest"
-                width="20px"
+                class="c10 c11"
+                color="primary.base"
+                height="24"
+                width="45"
               >
-                <svg
-                  aria-hidden="true"
-                  class="c21 c22"
-                  fill="currentcolor"
-                  focusable="false"
-                  height="16"
-                  role="img"
-                  tabindex="-1"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
+                <input
+                  aria-checked="true"
+                  checked=""
+                  class="c12 c13 c14"
+                  font-size="2,,1"
+                  role="switch"
+                  tabindex="0"
+                  type="checkbox"
+                />
+                <div
+                  class="c15 c16 c17 c18"
+                  width="calc(100% + 8px)"
+                />
+                <div
+                  class="c19 c20 c21"
+                  color="background.lightest"
+                  width="20px"
                 >
-                  <path
-                    d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="c22 c23"
+                    fill="currentcolor"
+                    focusable="false"
+                    height="16"
+                    role="img"
+                    tabindex="-1"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -1167,7 +1182,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 
 exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c21 {
+  .c22 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1175,16 +1190,16 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   width: 16;
 }
 
-.c22 {
+.c23 {
   outline: none;
 }
 
-.c8 {
+.c9 {
   width: 24;
   height: 24;
 }
 
-.c9 {
+.c10 {
   background-color: #4f6f8f;
   color: #fff;
   border-radius: 9999px;
@@ -1192,25 +1207,25 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   width: 45px;
 }
 
-.c15 {
+.c16 {
   border-radius: 9999px;
   width: calc(100% + 8px);
 }
 
-.c18 {
+.c19 {
   background-color: #fff;
   color: #001833;
   border-radius: 9999px;
   width: 20px;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   left: -4px;
   top: -4px;
 }
 
-.c19 {
+.c20 {
   position: absolute;
   left: 2px;
   top: 2px;
@@ -1240,11 +1255,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
-.c11 {
+.c12 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1264,41 +1275,41 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   border-radius: 12px;
 }
 
-.c11::-webkit-input-placeholder {
+.c12::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c11::-moz-placeholder {
+.c12::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c11:-ms-input-placeholder {
+.c12:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c11::placeholder {
+.c12::placeholder {
   color: #4f6f8f;
 }
 
-.c11::-ms-clear {
+.c12::-ms-clear {
   display: none;
 }
 
-.c11:disabled,
-.c11:-moz-read-only {
+.c12:disabled,
+.c12:-moz-read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c11:disabled,
-.c11:read-only {
+.c12:disabled,
+.c12:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
@@ -1314,52 +1325,48 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -1367,16 +1374,14 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -1389,6 +1394,17 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   margin-top: 16px;
 }
 
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -1399,7 +1415,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   box-sizing: border-box;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   z-index: 5;
   opacity: 0;
@@ -1411,13 +1427,13 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   cursor: pointer;
 }
 
-.c17 {
+.c18 {
   height: calc(100% + 8px);
   opacity: 0;
   background-color: #4f6f8f4C;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1436,7 +1452,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   transition: left 0.3s;
 }
 
-.c10 {
+.c11 {
   position: relative;
   height: 24px;
   -webkit-transition: background-color 0.3s;
@@ -1444,7 +1460,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   min-width: 45px;
 }
 
-.c10 .c12:focus + .c14 {
+.c11 .c13:focus + .c15 {
   opacity: 1;
 }
 
@@ -1453,7 +1469,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
 }
 
 @media screen and (min-width:40em) {
-  .c11 {
+  .c12 {
     font-size: 14px;
   }
 }
@@ -1469,6 +1485,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="checkbox"
         type="checkbox"
         value="example-1"
       />
@@ -1486,56 +1503,57 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
           <div
-            class="c8"
-            size="24"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
+            class="c8 cardIcon"
           >
             <div
-              class="c9 c10"
-              color="background.dark"
-              height="24"
-              width="45"
+              class="c9"
+              size="24"
             >
-              <input
-                aria-checked="false"
-                class="c11 c12 c13"
-                font-size="2,,1"
-                role="switch"
-                tabindex="0"
-                type="checkbox"
-              />
               <div
-                class="c14 c15 c16 c17"
-                width="calc(100% + 8px)"
-              />
-              <div
-                class="c18 c19 c20"
-                color="background.lightest"
-                width="20px"
+                class="c10 c11"
+                color="background.dark"
+                height="24"
+                width="45"
               >
-                <svg
-                  aria-hidden="true"
-                  class="c21 c22"
-                  fill="currentcolor"
-                  focusable="false"
-                  height="16"
-                  role="img"
-                  tabindex="-1"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
+                <input
+                  aria-checked="false"
+                  class="c12 c13 c14"
+                  font-size="2,,1"
+                  role="switch"
+                  tabindex="0"
+                  type="checkbox"
+                />
+                <div
+                  class="c15 c16 c17 c18"
+                  width="calc(100% + 8px)"
+                />
+                <div
+                  class="c19 c20 c21"
+                  color="background.lightest"
+                  width="20px"
                 >
-                  <path
-                    d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
-                  />
-                </svg>
+                  <svg
+                    aria-hidden="true"
+                    class="c22 c23"
+                    fill="currentcolor"
+                    focusable="false"
+                    height="16"
+                    role="img"
+                    tabindex="-1"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.6 15.6l-4.2-4.2L3 12.8l5.6 5.6 12-12L19.2 5 8.6 15.6z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -1548,7 +1566,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
 
 exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1556,7 +1574,7 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -1584,11 +1602,6 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
   flex-direction: row;
 }
 
-.c7 {
-  font-weight: 700;
-  font-size: 16px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1599,52 +1612,48 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -1652,16 +1661,14 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -1672,6 +1679,17 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -1695,6 +1713,7 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -1712,29 +1731,30 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="16px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
         <div
           class=""
@@ -1749,7 +1769,7 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 
 exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1757,7 +1777,7 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -1785,10 +1805,6 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1799,52 +1815,48 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -1852,16 +1864,14 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -1872,6 +1882,17 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -1895,6 +1916,7 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -1912,29 +1934,30 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
         <div
           class=""
@@ -1949,7 +1972,7 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 
 exports[`RadioCheckToggleCard common should render children next to title correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1957,7 +1980,7 @@ exports[`RadioCheckToggleCard common should render children next to title correc
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -1985,10 +2008,6 @@ exports[`RadioCheckToggleCard common should render children next to title correc
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1999,52 +2018,48 @@ exports[`RadioCheckToggleCard common should render children next to title correc
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -2052,16 +2067,14 @@ exports[`RadioCheckToggleCard common should render children next to title correc
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -2072,6 +2085,17 @@ exports[`RadioCheckToggleCard common should render children next to title correc
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -2095,6 +2119,7 @@ exports[`RadioCheckToggleCard common should render children next to title correc
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -2112,8 +2137,6 @@ exports[`RadioCheckToggleCard common should render children next to title correc
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
@@ -2123,23 +2146,26 @@ exports[`RadioCheckToggleCard common should render children next to title correc
               Happy Priceline!
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
@@ -2149,7 +2175,7 @@ exports[`RadioCheckToggleCard common should render children next to title correc
 
 exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -2157,7 +2183,7 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -2185,10 +2211,6 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
   flex-direction: row;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2199,52 +2221,48 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -2252,16 +2270,14 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -2272,6 +2288,17 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 0 0 16px;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -2295,6 +2322,7 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -2312,29 +2340,30 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
@@ -2344,7 +2373,7 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 
 exports[`RadioCheckToggleCard common should render left button UI correctly 1`] = `
 <DocumentFragment>
-  .c8 {
+  .c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -2352,7 +2381,7 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
   width: 24;
 }
 
-.c9 {
+.c10 {
   outline: none;
 }
 
@@ -2380,10 +2409,6 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
   flex-direction: row-reverse;
 }
 
-.c7 {
-  font-size: 14px;
-}
-
 .c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2394,52 +2419,48 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
 }
 
 .c1:hover + div {
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  border-color: #0068ef;
 }
 
-.c1:focus-visible + div {
-  --icon-border-color: #4f6f8f;
-  --icon-border-shadow-color: #f4f6f8;
+.c1:hover + div svg {
+  color: #0068ef;
 }
 
-.c1:active + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:focus-visible + div div.cardIcon > svg {
+  border-color: #4f6f8f;
+  box-shadow: inset 0 0 0 5px #f4f6f8;
+}
+
+.c1:active + div,
+.c1:checked:hover + div {
+  border-color: #049;
+}
+
+.c1:active + div div.cardIcon > svg,
+.c1:checked:hover + div div.cardIcon > svg {
+  color: #049;
 }
 
 .c1:checked + div {
-  --background-color: #e8f2ff;
-  --border-color: #0068ef;
-  --icon-color: #0068ef;
+  background-color: #e8f2ff;
+  border: 1px solid #0068ef;
 }
 
-.c1:checked:hover + div {
-  --border-color: #049;
-  --icon-color: #049;
+.c1:checked + div div.cardIcon > svg {
+  color: #0068ef;
 }
 
-.c1:checked:focus-visible + div {
-  --icon-border-color: #049;
-}
-
-.c1:disabled + div {
-  color: #c0cad5;
+.c1:checked:focus-visible + div div.cardIcon > svg {
+  border-color: #049;
 }
 
 .c3 {
-  --background-color: #fff;
-  --border-color: transparent;
-  --default-card-margin: 16px;
-  --icon-color: #4f6f8f;
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: 16px;
 }
 
 .c5 {
@@ -2447,16 +2468,14 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
   width: 100%;
 }
 
-.c5 > svg {
-  border: 1px solid var(--icon-border-color);
-  border-radius: var(--icon-border-radius);
-  color: var(--icon-color);
-  padding: 2px;
-  box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-}
-
 .c5 + * {
   margin-top: 16px;
+}
+
+.c7 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .c6 {
@@ -2467,6 +2486,17 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
 
 .c6 > :first-child + * {
   margin-top: 16px;
+}
+
+.c8 {
+  margin: 0 16px 0 0;
+}
+
+.c8 > svg {
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  color: #4f6f8f;
+  padding: 2px;
 }
 
 .c0 {
@@ -2490,6 +2520,7 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
         class="c1"
         id="radio-1_example-1"
         name="radio-1"
+        role="radio"
         type="radio"
         value="example-1"
       />
@@ -2507,29 +2538,30 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
             <div
               class="c7"
               data-testid="rdt-card-title"
-              font-size="14px"
-              style="line-height: 24px;"
             >
               Title
             </div>
           </div>
-          <svg
-            aria-hidden="true"
-            class="c8 c9"
-            fill="currentcolor"
-            focusable="false"
-            height="24"
-            role="img"
-            style="--icon-border-radius: 9999px; border-width: 1px;"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c8 cardIcon"
           >
-            <path
-              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="c9 c10"
+              fill="currentcolor"
+              focusable="false"
+              height="24"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </label>
