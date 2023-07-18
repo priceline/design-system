@@ -118,6 +118,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -317,6 +318,7 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -515,6 +517,7 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -714,6 +717,7 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -1009,6 +1013,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -1395,6 +1400,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -1682,6 +1688,7 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -1885,6 +1892,7 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -2088,6 +2096,7 @@ exports[`RadioCheckToggleCard common should render children next to title correc
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -2291,6 +2300,7 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 0 0 16px;
 }
 
@@ -2489,6 +2499,7 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
 }
 
 .c8 {
+  line-height: 0px;
   margin: 0 16px 0 0;
 }
 
