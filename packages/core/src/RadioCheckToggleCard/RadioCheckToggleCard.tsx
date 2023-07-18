@@ -18,7 +18,7 @@ export interface IRadioCheckToggleCard {
   cardType?: TCardTypes
   hPosition?: THPositions
   vPosition?: TVPositions
-  isHeightOccupied?: boolean
+  isTakingFullHeightOfCard?: boolean
   title: string
   isTitleBold?: boolean
   name: string
@@ -142,7 +142,7 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
     cardType,
     hPosition,
     vPosition,
-    isHeightOccupied,
+    isTakingFullHeightOfCard,
     title,
     isTitleBold,
     name,
@@ -173,15 +173,10 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
           data-testId='rdt-card-header'
         >
           <CardContent>
-            <Text
-              bold={isTitleBold}
-              fontSize={isTitleBold ? '16px' : '14px'}
-              style={{ lineHeight: '24px' }}
-              data-testId='rdt-card-title'
-            >
+            <StyledTitle isTitleBold={isTitleBold} data-testId='rdt-card-title'>
               {title}
-            </Text>
-            {isHeightOccupied && children}
+            </StyledTitle>
+            {isTakingFullHeightOfCard && children}
           </CardContent>
           <DisplayButton
             checked={isSelected}
@@ -197,7 +192,7 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
             }}
           />
         </CardHeader>
-        {!isHeightOccupied && children}
+        {!isTakingFullHeightOfCard && children}
       </RCTCardContainer>
     </label>
   )
@@ -210,7 +205,8 @@ RadioCheckToggleCard.defaultProps = {
   isTitleBold: false,
   hPosition: 'right',
   vPosition: 'top',
-  isHeightOccupied: false,
+  isTakingFullHeightOfCard: false,
+  onChange: (e) => {},
 } as IRadioCheckToggleCard
 
 export default RadioCheckToggleCard

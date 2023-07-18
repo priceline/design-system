@@ -117,7 +117,7 @@ describe('RadioCheckToggleCard', () => {
       const { getByText, getByTestId, asFragment } = render(
         <RadioCheckToggleCard
           cardType='radio'
-          isHeightOccupied
+          isTakingFullHeightOfCard
           name='radio-1'
           title='Title'
           value='example-1'
