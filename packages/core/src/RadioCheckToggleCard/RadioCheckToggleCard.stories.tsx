@@ -30,62 +30,92 @@ const exampleInput = () => (
 const divider = () => <Box width='100%' my={4} style={{ border: '1px solid #e0e5ea' }} />
 
 const EnabledStateCard = styled(Box)`
+  flex: 1 1 30%;
+
   & > label > div {
-    --background-color: ${getPaletteColor('background.lightest')} !important;
-    --border-color: transparent !important;
-    --icon-color: ${getPaletteColor('text.light')} !important;
-    --icon-border-color: transparent !important;
-    --icon-border-shadow-color: transparent !important;
+    background-color: ${getPaletteColor('background.lightest')} !important;
+    border-color: transparent !important;
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('text.light')} !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
   }
 `
 
 const HoverStateCard = styled(Box)`
+  flex: 1 1 30%;
+
   & > label > div {
-    --background-color: ${getPaletteColor('background.lightest')} !important;
-    --border-color: ${getPaletteColor('primary.base')} !important;
-    --icon-color: ${getPaletteColor('primary.base')} !important;
-    --icon-border-color: transparent !important;
-    --icon-border-shadow-color: transparent !important;
+    background-color: ${getPaletteColor('background.lightest')} !important;
+    border-color: ${getPaletteColor('primary.base')} !important;
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('primary.base')} !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
   }
 `
 
 const FocusStateCard = styled(Box)`
+  flex: 1 1 30%;
+
   & > label > div {
-    --background-color: ${getPaletteColor('background.lightest')} !important;
-    --border-color: transparent !important;
-    --icon-color: ${getPaletteColor('text.light')} !important;
-    --icon-border-color: ${getPaletteColor('text.light')} !important;
-    --icon-border-shadow-color: ${getPaletteColor('background.light')} !important;
+    background-color: ${getPaletteColor('background.lightest')} !important;
+    border-color: transparent !important;
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('text.light')} !important;
+      border-color: ${getPaletteColor('text.light')} !important;
+      box-shadow: inset 0 0 0 5px ${getPaletteColor('background.light')} !important;
+    }
   }
 `
 
 const SelectedStateCard = styled(Box)`
+  flex: 1 1 30%;
+
   & > label > div {
-    --background-color: ${getPaletteColor('primary.light')} !important;
-    --border-color: ${getPaletteColor('primary.base')} !important;
-    --icon-color: ${getPaletteColor('primary.base')} !important;
-    --icon-border-color: transparent !important;
-    --icon-border-shadow-color: transparent !important;
+    background-color: ${getPaletteColor('primary.light')} !important;
+    border-color: ${getPaletteColor('primary.base')} !important;
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('primary.base')} !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
   }
 `
 
 const SelectedHoverStateCard = styled(Box)`
+  flex: 1 1 30%;
+
   & > label > div {
-    --background-color: ${getPaletteColor('primary.light')} !important;
-    --border-color: ${getPaletteColor('primary.dark')} !important;
-    --icon-color: ${getPaletteColor('primary.dark')} !important;
-    --icon-border-color: transparent !important;
-    --icon-border-shadow-color: transparent !important;
+    background-color: ${getPaletteColor('primary.light')} !important;
+    border-color: ${getPaletteColor('primary.dark')} !important;
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('primary.dark')} !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
   }
 `
 
 const SelectedFocusStateCard = styled(Box)`
+  flex: 1 1 30%;
+
   & > label > div {
-    --background-color: ${getPaletteColor('primary.light')} !important;
-    --border-color: ${getPaletteColor('primary.base')} !important;
-    --icon-color: ${getPaletteColor('primary.base')} !important;
-    --icon-border-color: ${getPaletteColor('primary.base')} !important;
-    --icon-border-shadow-color: transparent !important;
+    background-color: ${getPaletteColor('primary.light')} !important;
+    border-color: ${getPaletteColor('primary.base')} !important;
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('primary.base')} !important;
+      border-color: ${getPaletteColor('primary.base')} !important;
+      box-shadow: none !important;
+    }
   }
 `
 
@@ -175,7 +205,6 @@ const DefaultDocPage = () => {
         </Text>
         <Flex flexDirection='column' style={{ width: '50%', gap: '16px' }}>
           <RadioCheckToggleCard
-            cardType='radio'
             name='types-label'
             title='Radio'
             value='example-1'
@@ -209,11 +238,8 @@ const DefaultDocPage = () => {
         </Text>
 
         <Flex my={4} flexWrap='wrap' style={{ width: '100%', gap: '16px' }}>
-          <EnabledStateCard style={{ flex: '1 1 30%' }}>
+          <EnabledStateCard>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='states-radio'
               title='Enabled'
               value='example-1'
@@ -224,11 +250,8 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </EnabledStateCard>
 
-          <HoverStateCard style={{ flex: '1 1 30%' }}>
+          <HoverStateCard>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='states-radio'
               title='Hover'
               value='example-2'
@@ -239,11 +262,8 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </HoverStateCard>
 
-          <FocusStateCard style={{ flex: '1 1 30%' }}>
+          <FocusStateCard>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='states-radio'
               title='Focus'
               value='example-3'
@@ -254,11 +274,8 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </FocusStateCard>
 
-          <SelectedStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedStateCard>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='states-radio'
               title='Selected'
               value='example-4'
@@ -269,11 +286,8 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </SelectedStateCard>
 
-          <SelectedHoverStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedHoverStateCard>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='states-radio'
               title='Selected Hover'
               value='example-5'
@@ -284,11 +298,8 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </SelectedHoverStateCard>
 
-          <SelectedFocusStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedFocusStateCard>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='states-radio'
               title='Selected Focus'
               value='example-6'
@@ -304,11 +315,9 @@ const DefaultDocPage = () => {
           Checkbox - Examples shown indicate the card & action states
         </Text>
         <Flex my={4} flexWrap='wrap' style={{ width: '100%', gap: '16px' }}>
-          <EnabledStateCard style={{ flex: '1 1 30%' }}>
+          <EnabledStateCard>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
               name='states-checkbox'
               title='Enabled'
               value='example-1'
@@ -319,11 +328,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </EnabledStateCard>
 
-          <HoverStateCard style={{ flex: '1 1 30%' }}>
+          <HoverStateCard>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
               name='states-checkbox'
               title='Hover'
               value='example-2'
@@ -334,11 +341,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </HoverStateCard>
 
-          <FocusStateCard style={{ flex: '1 1 30%' }}>
+          <FocusStateCard>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
               name='states-checkbox'
               title='Focus'
               value='example-3'
@@ -349,11 +354,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </FocusStateCard>
 
-          <SelectedStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedStateCard>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
               name='states-checkbox'
               title='Selected'
               value='example-4'
@@ -364,11 +367,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </SelectedStateCard>
 
-          <SelectedHoverStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedHoverStateCard>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
               name='states-checkbox'
               title='Selected Hover'
               value='example-5'
@@ -379,11 +380,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </SelectedHoverStateCard>
 
-          <SelectedFocusStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedFocusStateCard>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
               name='states-checkbox'
               title='Selected Focus'
               value='example-6'
@@ -399,11 +398,9 @@ const DefaultDocPage = () => {
           Toggle - Examples shown indicate the card & action states
         </Text>
         <Flex my={4} flexWrap='wrap' style={{ width: '100%', gap: '16px' }}>
-          <EnabledStateCard style={{ flex: '1 1 30%' }}>
+          <EnabledStateCard>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='states-toggle'
               title='Enabled'
               value='example-1'
@@ -414,11 +411,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </EnabledStateCard>
 
-          <HoverStateCard style={{ flex: '1 1 30%' }}>
+          <HoverStateCard>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='states-toggle'
               title='Hover'
               value='example-2'
@@ -429,11 +424,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </HoverStateCard>
 
-          <FocusStateCard style={{ flex: '1 1 30%' }}>
+          <FocusStateCard>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='states-toggle'
               title='Focus'
               value='example-3'
@@ -444,11 +437,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </FocusStateCard>
 
-          <SelectedStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedStateCard>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='states-toggle'
               title='Selected'
               value='example-1'
@@ -459,11 +450,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </SelectedStateCard>
 
-          <SelectedHoverStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedHoverStateCard>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='states-toggle'
               title='Selected Hover'
               value='example-2'
@@ -474,11 +463,9 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </SelectedHoverStateCard>
 
-          <SelectedFocusStateCard style={{ flex: '1 1 30%' }}>
+          <SelectedFocusStateCard>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='states-toggle'
               title='Selected Focus'
               value='example-3'
@@ -524,8 +511,7 @@ const DefaultDocPage = () => {
             <RadioCheckToggleCard
               cardType='checkbox'
               hPosition='left'
-              vPosition='top'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               isTitleBold
               name='formatting-label-with-children'
               title='Title'
@@ -547,9 +533,7 @@ const DefaultDocPage = () => {
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
-              vPosition='top'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               isTitleBold
               name='formatting-label-with-children'
               title='Title'
@@ -573,7 +557,7 @@ const DefaultDocPage = () => {
               cardType='checkbox'
               hPosition='left'
               vPosition='center'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               isTitleBold
               name='formatting-label-with-children'
               title='Title'
@@ -593,9 +577,8 @@ const DefaultDocPage = () => {
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
               cardType='checkbox'
-              hPosition='right'
               vPosition='center'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               isTitleBold
               name='formatting-label-with-children'
               title='Title'
@@ -621,7 +604,6 @@ const DefaultDocPage = () => {
             <RadioCheckToggleCard
               cardType='toggle'
               hPosition='left'
-              vPosition='top'
               name='formatting-full-width-children'
               title='Title'
               value='example-1'
@@ -645,8 +627,6 @@ const DefaultDocPage = () => {
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='formatting-full-width-children'
               title='Title'
               value='example-2'
@@ -671,7 +651,6 @@ const DefaultDocPage = () => {
             <RadioCheckToggleCard
               cardType='toggle'
               hPosition='left'
-              vPosition='top'
               name='formatting-full-width-children'
               title='Title'
               value='example-3'
@@ -696,8 +675,6 @@ const DefaultDocPage = () => {
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
               cardType='toggle'
-              hPosition='right'
-              vPosition='top'
               name='formatting-full-width-children'
               title='Title'
               value='example-4'
@@ -734,9 +711,6 @@ const DefaultDocPage = () => {
         <Flex my={4} flexWrap='wrap' style={{ width: '65%', gap: '16px' }}>
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='additional-actions-buttons'
               title='Title'
               value='example-1'
@@ -760,9 +734,6 @@ const DefaultDocPage = () => {
 
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
-              cardType='radio'
-              hPosition='right'
-              vPosition='top'
               name='additional-actions-buttons'
               title='Title'
               value='example-2'
@@ -795,10 +766,8 @@ const DefaultDocPage = () => {
         <Flex my={4} flexWrap='wrap' style={{ width: '100%', gap: '16px' }}>
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
-              cardType='radio'
               hPosition='left'
-              vPosition='top'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               name='additional-actions-forms-1'
               title='Title'
               value='example-1'
@@ -820,10 +789,8 @@ const DefaultDocPage = () => {
 
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
-              cardType='radio'
               hPosition='left'
-              vPosition='top'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               name='additional-actions-forms-1'
               title='Title'
               value='example-2'
@@ -851,10 +818,8 @@ const DefaultDocPage = () => {
         <Flex my={4} flexWrap='wrap' style={{ width: '100%', gap: '16px' }}>
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
-              cardType='radio'
               hPosition='left'
-              vPosition='top'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               name='additional-actions-forms-2'
               title='Title'
               value='example-1'
@@ -879,10 +844,8 @@ const DefaultDocPage = () => {
 
           <Box style={{ flex: '1 1 45%' }}>
             <RadioCheckToggleCard
-              cardType='radio'
               hPosition='left'
-              vPosition='top'
-              isHeightOccupied
+              isTakingFullHeightOfCard
               name='additional-actions-forms-2'
               title='Title'
               value='example-2'
