@@ -21,9 +21,7 @@ describe('RadioCheckToggleCard', () => {
       expect(asFragment()).toMatchSnapshot()
       expect(getByTestId('rdt-card-title')).toHaveStyleRule('font-size', '14px')
       expect(getByTestId('rdt-card-header')).toHaveStyleRule('flex-direction', 'row')
-      expect(getByTestId('rdt-card-header').querySelector(':nth-child(2)')).toHaveStyle(
-        'margin: 0 0 0 var(--default-card-margin)'
-      )
+      expect(getByTestId('rdt-card-header').querySelector(':nth-child(2)')).toHaveStyle('margin: 0 0 0 16px')
     })
 
     it('should render bold title correctly', () => {
@@ -60,9 +58,7 @@ describe('RadioCheckToggleCard', () => {
       )
 
       expect(asFragment()).toMatchSnapshot()
-      expect(getByTestId('rdt-card-header').querySelector(':nth-child(2)')).toHaveStyle(
-        'margin: 0 var(--default-card-margin) 0 0'
-      )
+      expect(getByTestId('rdt-card-header').querySelector(':nth-child(2)')).toHaveStyle('margin: 0 16px 0 0')
     })
 
     it('should execute handle change function', () => {
