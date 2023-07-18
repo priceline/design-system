@@ -23,7 +23,7 @@ export interface IRadioCheckToggleCard {
   isTitleBold?: boolean
   name: string
   value: string
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
   isSelected: boolean
 }
 
@@ -152,9 +152,7 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
   } = props
 
   const id = `${name}_${value}`
-  const DisplayButton = buttonIcon(cardType)
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e)
+  const ButtonIcon = buttonIcon(cardType)
 
   return (
     <label htmlFor={id} data-testId='rdt-card-label'>
@@ -163,7 +161,7 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
         name={name}
         value={value}
         type={cardType === 'radio' ? 'radio' : 'checkbox'}
-        onChange={handleChange}
+        onChange={onChange}
         checked={isSelected}
       />
       <RCTCardContainer flexDirection='column' data-testId='rdt-card-main'>
