@@ -2,7 +2,7 @@ import { themeGet } from '@styled-system/theme-get'
 import { BoxChecked, BoxEmpty, Check, RadioChecked, RadioEmpty } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Text, Toggle } from '..'
+import { Box, Flex, Toggle } from '..'
 import { getPaletteColor } from '../utils'
 
 export const cardTypes = ['radio', 'checkbox', 'toggle'] as const
@@ -34,71 +34,63 @@ const CombinedInput = styled.input`
   z-index: 0;
 
   &:hover + div {
-    --border-color: ${getPaletteColor('primary.base')};
-    --icon-color: ${getPaletteColor('primary.base')};
+    border-color: ${getPaletteColor('primary.base')};
+
+    & svg {
+      color: ${getPaletteColor('primary.base')};
+    }
   }
 
-  &:focus-visible + div {
-    --icon-border-color: ${getPaletteColor('text.light')};
-    --icon-border-shadow-color: ${getPaletteColor('background.light')};
+  &:focus-visible + div div.cardIcon > svg {
+    border-color: ${getPaletteColor('text.light')};
+    box-shadow: inset 0 0 0 5px ${getPaletteColor('background.light')};
   }
 
-  &:active + div {
-    --border-color: ${getPaletteColor('primary.dark')};
-    --icon-color: ${getPaletteColor('primary.dark')};
+  &:active + div,
+  &:checked:hover + div {
+    border-color: ${getPaletteColor('primary.dark')};
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('primary.dark')};
+    }
   }
 
   &:checked + div {
-    --background-color: ${getPaletteColor('primary.light')};
-    --border-color: ${getPaletteColor('primary.base')};
-    --icon-color: ${getPaletteColor('primary.base')};
+    background-color: ${getPaletteColor('primary.light')};
+    border: 1px solid ${getPaletteColor('primary.base')};
+
+    & div.cardIcon > svg {
+      color: ${getPaletteColor('primary.base')};
+    }
   }
 
-  &:checked:hover + div {
-    --border-color: ${getPaletteColor('primary.dark')};
-    --icon-color: ${getPaletteColor('primary.dark')};
-  }
-
-  &:checked:focus-visible + div {
-    --icon-border-color: ${getPaletteColor('primary.dark')};
-  }
-
-  &:disabled + div {
-    color: ${getPaletteColor('border.base')};
+  &:checked:focus-visible + div div.cardIcon > svg {
+    border-color: ${getPaletteColor('primary.dark')};
   }
 `
 
 const RCTCardContainer = styled(Flex)`
-  --background-color: ${getPaletteColor('background.lightest')};
-  --border-color: transparent;
-  --default-card-margin: ${themeGet('space.3')};
-  --icon-color: ${getPaletteColor('text.light')};
-  --icon-border-color: transparent;
-  --icon-border-shadow-color: transparent;
-
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: ${getPaletteColor('background.lightest')};
+  border: 1px solid transparent;
   border-radius: ${themeGet('borderRadii.action-lg')};
   box-shadow: ${themeGet('shadows.sm')};
   cursor: pointer;
-  padding: var(--default-card-margin);
+  padding: ${themeGet('space.3')};
 `
 
 const CardHeader = styled(Flex)`
   min-width: 0;
   width: 100%;
 
-  & > svg {
-    border: 1px solid var(--icon-border-color);
-    border-radius: var(--icon-border-radius);
-    color: var(--icon-color);
-    padding: 2px;
-    box-shadow: inset 0 0 0 5px var(--icon-border-shadow-color);
-  }
-
   & + * {
     margin-top: ${themeGet('space.3')};
   }
+`
+
+const StyledTitle = styled(Box)`
+  font-weight: ${(props) => (props.isTitleBold ? '700' : '500')};
+  font-size: ${(props) => (props.isTitleBold ? '16px' : '14px')};
+  line-height: 24px;
 `
 
 const CardContent = styled(Box)`
@@ -106,6 +98,17 @@ const CardContent = styled(Box)`
 
   & > :first-child + * {
     margin-top: ${themeGet('space.3')};
+  }
+`
+
+const CardIcon = styled(Box)`
+  margin: ${(props) => (props.hPosition === 'left' ? `0 16px 0 0` : `0 0 0 16px`)};
+
+  & > svg {
+    border: 1px solid transparent;
+    border-radius: ${(props) => (props.cardType === 'checkbox' ? '4px' : '9999px')};
+    color: ${getPaletteColor('text.light')};
+    padding: 2px;
   }
 `
 
@@ -157,6 +160,7 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
   return (
     <label htmlFor={id} data-testId='rdt-card-label'>
       <CombinedInput
+        role={cardType === 'radio' ? 'radio' : 'checkbox'}
         id={id}
         name={name}
         value={value}
@@ -176,19 +180,9 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
             </StyledTitle>
             {isTakingFullHeightOfCard && children}
           </CardContent>
-          <DisplayButton
-            checked={isSelected}
-            size='24'
-            onChange={handleChange}
-            style={{
-              ['--icon-border-radius']: cardType === 'checkbox' ? '4px' : '9999px',
-              borderWidth: '1px',
-              margin:
-                hPosition === 'left'
-                  ? `0 var(--default-card-margin) 0 0`
-                  : `0 0 0 var(--default-card-margin)`,
-            }}
-          />
+          <CardIcon className='cardIcon' cardType={cardType} hPosition={hPosition}>
+            <ButtonIcon checked={isSelected} onChange={onChange} size='24' />
+          </CardIcon>
         </CardHeader>
         {!isTakingFullHeightOfCard && children}
       </RCTCardContainer>
