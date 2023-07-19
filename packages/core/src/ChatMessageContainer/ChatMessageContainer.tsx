@@ -2,30 +2,16 @@
 // todo: remove coverage ignore once storybook interaction test coverage counts
 
 import React from 'react'
-import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
 import { Flex } from '../Flex'
+import { Grid } from '../Grid'
 import { ChatMessage } from '../ChatMessage'
 
-const GapFlex = styled(Flex)`
-  height: 100%;
-  overflow-y: scroll;
+export type ChatMessageVariation = 'initial' | 'incoming' | 'outgoing'
 
-  & > :not(:last-child) {
-    margin-bottom: ${themeGet('space.2')};
-  }
-`
-
-const MaxWidthFlex = styled(Flex)`
-  & > * {
-    max-width: ${(props) => props.messageMaxWidth};
-  }
-`
-
-interface IMessage {
-  dateTime: string
+export interface IMessage {
+  dateTime?: string
   message: string
-  variation: string
+  variation: ChatMessageVariation
 }
 
 export interface IChatMessageContainer {
@@ -35,18 +21,16 @@ export interface IChatMessageContainer {
 
 function ChatMessageContainer({ messageMaxWidth = '90%', messages }: IChatMessageContainer) {
   return (
-    <GapFlex flexDirection='column' p={3}>
+    <Grid gap={2} height='100%' overflowY='scroll' p={3}>
       {messages?.map((message) => (
-        <MaxWidthFlex
-          key={message}
+        <Flex
+          key={message.message}
           justifyContent={message.variation === 'outgoing' ? 'flex-end' : 'flex-start'}
-          messageMaxWidth={messageMaxWidth}
-          width='100%'
         >
-          <ChatMessage {...message} />
-        </MaxWidthFlex>
+          <ChatMessage {...message} maxWidth={messageMaxWidth} />
+        </Flex>
       ))}
-    </GapFlex>
+    </Grid>
   )
 }
 
