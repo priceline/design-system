@@ -5,9 +5,14 @@ import styled from 'styled-components'
 import { Radio, Label, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
+const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
+const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)
+
 const LabelText = styled.span`
   vertical-align: middle;
   margin-left: 8px;
+  ${bold}
+  ${medium}
 `
 
 // @ts-ignore
@@ -111,4 +116,21 @@ export function ForwardRefs() {
 
 ForwardRefs.story = {
   name: 'Forward refs',
+}
+
+export const FontWeight = () => (
+  <div onChange={action('changed')}>
+    <Label fontSize='14px'>
+      <Radio checked />
+      <LabelText bold>font weight - bold</LabelText>
+    </Label>
+    <Label fontSize='14px'>
+      <Radio checked />
+      <LabelText medium>font weight - medium</LabelText>
+    </Label>
+  </div>
+)
+
+FontWeight.story = {
+  name: 'Font Weight',
 }
