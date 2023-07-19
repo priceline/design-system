@@ -35,22 +35,4 @@ export interface IHeaderProps extends IFlexProps {
 
 export const Header: React.FC<IHeaderProps> = styled(Flex)`
   ${colorSchemeCustomForeground}
-
-  ${({ colorScheme, theme, iconUsesColorScheme }) => {
-    // This block handles setting the color of the icon in the header to colorScheme.foreground
-    // depending whether or not the icon node already had a custom color prop
-
-    if (!iconUsesColorScheme) return ''
-
-    const computedColorScheme = themeGet(`colorSchemes.${colorScheme}`)({ theme })
-
-    return (
-      computedColorScheme &&
-      `
-        svg {
-          color: ${computedColorScheme.foreground};
-        }
-      `
-    )
-  }}
 `

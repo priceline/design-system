@@ -1,6 +1,7 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { Box, Banner, Flex, Heading, Text } from '..'
+import { colorSchemeNames } from '../storybook/args'
 
 export default {
   title: 'Banner',
@@ -439,4 +440,19 @@ export const WithChildren = () => (
 
 WithChildren.story = {
   name: 'With children',
+}
+
+export const ColorScheme = () => {
+  return colorSchemeNames.map((colorScheme) => (
+    <Banner
+      key={colorScheme}
+      textAlign='left'
+      mb={2}
+      p={3}
+      header={colorScheme}
+      text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare.'
+      onClose={action('closed')}
+      colorScheme={colorScheme}
+    />
+  ))
 }
