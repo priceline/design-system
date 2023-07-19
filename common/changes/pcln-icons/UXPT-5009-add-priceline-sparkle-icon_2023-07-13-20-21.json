@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add PricelineSparkle icon",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
