@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@radix-ui/react-tabs": "^1.0.4"
+  }
+}
