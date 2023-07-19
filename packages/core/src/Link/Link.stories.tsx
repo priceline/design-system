@@ -3,13 +3,12 @@ import type { IButtonProps } from '../Button'
 import React from 'react'
 import styled from 'styled-components'
 import { StoryObj } from '@storybook/react'
-import { Box, Button, getLinkStylesOn, Layout, Link, Text } from '..'
+import { Box, Button, getLinkStylesOn, Container, Grid, Link, Text } from '..'
 import { ILinkProps } from './Link'
 import { argTypes, defaultArgs } from './Link.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 import { colors } from '../storybook/args'
-
-const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
+import { sizeOptions, variationOptions } from './Link.stories.args'
 
 export default {
   title: 'Link',
@@ -44,32 +43,36 @@ export const Playground: ButtonStory = {
   },
 }
 
-export function AllLinkExamples(args) {
+export function Variations(args) {
   return (
     <>
       <Text textStyle='heading3' mb={2}>
         Link Variations
       </Text>
-      <Layout variation='100' gap={1} rowGap={2} bg='background.tone' p={4}>
-        <Link {...args} variation='fill' mb={4}>
-          fill
-        </Link>
-        <Link {...args} variation='subtle' mb={4}>
-          subtle
-        </Link>
-        <Link {...args} variation='link'>
-          link
-        </Link>
-        <Link {...args} variation='outline' my={4}>
-          outline
-        </Link>
-        <Link {...args} variation='plain' mb={4}>
-          plain
-        </Link>
-        <Link {...args} variation='white'>
-          white
-        </Link>
-      </Layout>
+      <Grid gap={4} templateColumns={['1fr']} background='primary'>
+        {variationOptions.map((variation) => (
+          <Link {...args} key={variation} variation={variation} m={1}>
+            {variation} link
+          </Link>
+        ))}
+      </Grid>
+    </>
+  )
+}
+
+export function Sizes(args) {
+  return (
+    <>
+      <Text textStyle='heading3' mb={2}>
+        Link Sizes
+      </Text>
+      <Container>
+        {sizeOptions.map((size) => (
+          <Link {...args} key={size} size={size} variation='fill' m={3}>
+            {size}
+          </Link>
+        ))}
+      </Container>
     </>
   )
 }

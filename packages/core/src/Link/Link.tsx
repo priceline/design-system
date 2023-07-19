@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { width, space, WidthProps, SpaceProps, compose } from 'styled-system'
 
+import type { Sizes, Variations } from '../Button'
 import { buttonStyles } from '../Button'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 
@@ -55,6 +56,27 @@ const variations = {
       background-color: ${getPaletteColor('background.base')};
     }
   `,
+  lightFill: css`
+    ${buttonStyles}
+    ${(props) => {
+      return props.disabled
+        ? `
+        background-color: ${getPaletteColor('background.base')(props)};
+        color: ${getPaletteColor('text.light')(props)};`
+        : ''
+    }}
+  `,
+  input: css`
+    ${buttonStyles}
+    text-align: center;
+    ${(props) => {
+      return props.disabled
+        ? `
+        background-color: ${getPaletteColor('background.base')(props)};
+        color: ${getPaletteColor('text.light')(props)};`
+        : ''
+    }}
+  `,
 }
 
 const propTypes = {
@@ -72,9 +94,9 @@ export interface ILinkProps
   color?: string
   disabled?: boolean
   href?: string
-  size?: 'small' | 'medium' | 'large'
+  size?: Sizes | Sizes[]
   target?: string
-  variation?: 'fill' | 'link' | 'outline' | 'subtle' | 'plain' | 'white'
+  variation?: Variations
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
 }

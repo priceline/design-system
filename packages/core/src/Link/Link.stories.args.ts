@@ -1,6 +1,9 @@
 import { action } from '@storybook/addon-actions'
 import { colors } from '../__test__/mocks/colors'
 
+export const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
+export const variationOptions = ['fill', 'link', 'outline', 'plain', 'subtle', 'white', 'lightFill', 'input']
+
 export const defaultArgs = {
   children: 'Hello There',
   color: 'primary',
@@ -21,12 +24,17 @@ export const argTypes = {
   },
   size: {
     name: 'size',
-    options: ['small', 'medium', 'large'],
-    control: 'radio',
+    options: sizeOptions,
+    control: 'select',
   },
   target: {
     name: 'target',
     options: ['_blank', '_self'],
     control: 'radio',
+  },
+  variation: {
+    name: 'variation',
+    options: variationOptions,
+    control: 'select',
   },
 }
