@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.8.0",
+      "tag": "pcln-icons_v5.8.0",
+      "date": "Wed, 19 Jul 2023 17:26:42 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add PricelineSparkle icon",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "97f78d9f2bb5e758b3f319d97d5eb05545d84b18"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.7.0",
       "tag": "pcln-icons_v5.7.0",
       "date": "Mon, 17 Jul 2023 14:36:49 GMT",

@@ -2,6 +2,64 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.14.0",
+      "tag": "pcln-design-system_v5.14.0",
+      "date": "Wed, 19 Jul 2023 17:26:42 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add variations to Link",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "74dfb7e43d65ecd3f22fc2b1bea9fba0544fcc33"
+          },
+          {
+            "comment": "Add colorScheme to Toast",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "d8d5cbb928ea800afeb01c6723647d502a046778"
+          },
+          {
+            "comment": "Add colorScheme prop to Avatar",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "d8d5cbb928ea800afeb01c6723647d502a046778"
+          },
+          {
+            "comment": "Add colorScheme prop to GenericBanner",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "d8d5cbb928ea800afeb01c6723647d502a046778"
+          },
+          {
+            "comment": "add styling for when card is as button",
+            "author": "Pablo Herrera <67336461+pherrera167@users.noreply.github.com>",
+            "commit": "3b17f94256c44d45f3823ae6d159b4ca0a5fbb73"
+          }
+        ],
+        "none": [
+          {
+            "comment": "create story with radio buttons using regular/medium font weight",
+            "author": "Marco Cheung <113034408+marco-ch3ung@users.noreply.github.com>",
+            "commit": "a98c5e53bb93949d33c602de2d37120975aca11f"
+          },
+          {
+            "comment": "Add story for colorScheme on Banner",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "d8d5cbb928ea800afeb01c6723647d502a046778"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "List component enhancement with listStyle and indentSize props",
+            "author": "sangeethaathiyursridharan <110497266+sangeethaathiyursridharan@users.noreply.github.com>",
+            "commit": "165364c73b8a9b870510d86a65aa0d638fc50910"
+          },
+          {
+            "comment": "Use PricelineSparkle icon on ChatMessage by default",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "97f78d9f2bb5e758b3f319d97d5eb05545d84b18"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.13.0",
       "tag": "pcln-design-system_v5.13.0",
       "date": "Mon, 17 Jul 2023 14:36:49 GMT",

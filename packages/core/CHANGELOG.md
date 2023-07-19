@@ -1,6 +1,22 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 17 Jul 2023 14:36:49 GMT and should not be manually modified.
+This log was last generated on Wed, 19 Jul 2023 17:26:42 GMT and should not be manually modified.
+
+## 5.14.0
+Wed, 19 Jul 2023 17:26:42 GMT
+
+### Minor changes
+
+- add variations to Link
+- Add colorScheme to Toast
+- Add colorScheme prop to Avatar
+- Add colorScheme prop to GenericBanner
+- add styling for when card is as button
+
+### Patches
+
+- List component enhancement with listStyle and indentSize props
+- Use PricelineSparkle icon on ChatMessage by default
 
 ## 5.13.0
 Mon, 17 Jul 2023 14:36:49 GMT

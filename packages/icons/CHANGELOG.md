@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 17 Jul 2023 14:36:49 GMT and should not be manually modified.
+This log was last generated on Wed, 19 Jul 2023 17:26:42 GMT and should not be manually modified.
+
+## 5.8.0
+Wed, 19 Jul 2023 17:26:42 GMT
+
+### Minor changes
+
+- Add PricelineSparkle icon
 
 ## 5.7.0
 Mon, 17 Jul 2023 14:36:49 GMT

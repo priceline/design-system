@@ -2,6 +2,31 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "5.5.0",
+      "tag": "pcln-popover_v5.5.0",
+      "date": "Wed, 19 Jul 2023 17:26:42 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add popover interaction test",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "4bbee8782f61c9d4265db948994be89bb21fd3a1"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.14.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.8.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.13.0` to `^5.14.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.1",
       "tag": "pcln-popover_v5.4.1",
       "date": "Mon, 17 Jul 2023 14:36:49 GMT",
