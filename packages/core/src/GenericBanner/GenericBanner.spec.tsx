@@ -1,9 +1,9 @@
+import { Emoticon, Warning } from 'pcln-icons'
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
-import { Warning, Emoticon } from 'pcln-icons'
-import { Text } from '../Text'
-import { Image } from '../Image'
 import { GenericBanner } from '.'
+import { Image } from '../Image'
+import { Text } from '../Text'
+import { fireEvent, render } from '../__test__/testing-library'
 
 const props = {
   p: 2,
@@ -100,5 +100,35 @@ describe('GenericBanner', () => {
     expect(readMoreButton).toHaveStyleRule('font-size', '12px')
     expect(header).toHaveStyleRule('font-size', '24px')
     expect(text).toHaveStyleRule('font-size', '12px')
+  })
+  test('Render the close button to a default position', () => {
+    const spyOnClose = jest.fn()
+    const { queryAllByTestId } = render(<GenericBanner {...props} onClose={spyOnClose} />)
+
+    expect(queryAllByTestId('closeButton')[0]).toHaveStyle('align-self: flex-start')
+    expect(queryAllByTestId('closeButton')[0]).toHaveStyle('margin: 0px 0px 0px auto')
+    expect(queryAllByTestId('closeButton')[1]).toHaveStyle('align-self: flex-start')
+    expect(queryAllByTestId('closeButton')[1]).toHaveStyle('margin: 0px 0px 0px auto')
+    expect(queryAllByTestId('closeButton')[1].childElementCount).toEqual(1)
+
+    queryAllByTestId('closeButton')[1].click()
+    expect(spyOnClose).toHaveBeenCalled()
+  })
+
+  test('Render the close button to a left center position', () => {
+    const spyOnClose = jest.fn()
+    const { queryAllByTestId } = render(
+      <GenericBanner
+        {...props}
+        onClose={spyOnClose}
+        closeButtonHorizontalPosition='left'
+        closeButtonVerticalPosition='center'
+      />
+    )
+
+    expect(queryAllByTestId('closeButton')[0]).toHaveStyle('align-self: center')
+    expect(queryAllByTestId('closeButton')[0]).toHaveStyle('margin: 0px auto 0px 0px')
+    expect(queryAllByTestId('closeButton')[1]).toHaveStyle('align-self: center')
+    expect(queryAllByTestId('closeButton')[1]).toHaveStyle('margin: 0px auto 0px 0px')
   })
 })
