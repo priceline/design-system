@@ -105,6 +105,7 @@ describe('GenericBanner', () => {
     const spyOnClose = jest.fn()
     const { queryAllByTestId } = render(<GenericBanner {...props} onClose={spyOnClose} />)
 
+    expect(queryAllByTestId('closeButton').length).toEqual(2)
     expect(queryAllByTestId('closeButton')[0]).toHaveStyle('align-self: flex-start')
     expect(queryAllByTestId('closeButton')[0]).toHaveStyle('margin: 0px 0px 0px auto')
     expect(queryAllByTestId('closeButton')[1]).toHaveStyle('align-self: flex-start')
@@ -130,5 +131,42 @@ describe('GenericBanner', () => {
     expect(queryAllByTestId('closeButton')[0]).toHaveStyle('margin: 0px auto 0px 0px')
     expect(queryAllByTestId('closeButton')[1]).toHaveStyle('align-self: center')
     expect(queryAllByTestId('closeButton')[1]).toHaveStyle('margin: 0px auto 0px 0px')
+  })
+
+  test('Render the close button with light colors', () => {
+    const spyOnClose = jest.fn()
+    const baseThemeComponent = render(<GenericBanner {...props} colorScheme='primary' onClose={spyOnClose} />)
+
+    expect(baseThemeComponent.queryAllByTestId('closeButton').length).toEqual(2)
+    expect(baseThemeComponent.queryAllByTestId('closeButton')[1].querySelector('svg')).toHaveStyle(
+      'color: rgb(255, 255, 255)'
+    )
+  })
+
+  test('Render the close button with dark colors', () => {
+    const spyOnClose = jest.fn()
+    const lightThemeComponent = render(
+      <GenericBanner {...props} colorScheme='primaryLight' onClose={spyOnClose} />
+    )
+
+    expect(lightThemeComponent.queryAllByTestId('closeButton')[1].querySelector('svg')).toHaveStyle(
+      'color: rgb(0, 24, 51)'
+    )
+
+    const lightestThemeComponent = render(
+      <GenericBanner {...props} colorScheme='primaryLightest' onClose={spyOnClose} />
+    )
+
+    expect(lightestThemeComponent.queryAllByTestId('closeButton')[1].querySelector('svg')).toHaveStyle(
+      'color: rgb(0, 24, 51)'
+    )
+
+    const darkOnLightThemeComponent = render(
+      <GenericBanner {...props} colorScheme='primaryDarkOnLight' onClose={spyOnClose} />
+    )
+
+    expect(darkOnLightThemeComponent.queryAllByTestId('closeButton')[1].querySelector('svg')).toHaveStyle(
+      'color: rgb(0, 24, 51)'
+    )
   })
 })
