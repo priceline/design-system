@@ -3,7 +3,7 @@ import { render, screen } from '../__test__/testing-library'
 import { userEvent } from '@storybook/testing-library'
 import { Tab } from '.'
 
-describe('Tab', () => {
+describe('Tab', async () => {
   const tabsContent = [
     { id: 'tab1', children: <div>Tab 1 Content</div> },
     { id: 'tab2', children: <div>Tab 2 Content</div> },
@@ -21,13 +21,13 @@ describe('Tab', () => {
     expect(screen.getByText('Tab 2')).toBeInTheDocument()
   })
 
-  it('renders tab content based on active tab', () => {
+  it('renders tab content based on active tab', async () => {
     render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
 
     expect(screen.getByText('Tab 1 Content')).toBeInTheDocument()
     expect(screen.queryByText('Tab 2 Content')).toBeNull()
 
-    userEvent.click(screen.getByText('Tab 2'))
+    await userEvent.click(screen.getByText('Tab 2'))
     expect(screen.queryByText('Tab 1 Content')).toBeNull()
     expect(screen.getByText('Tab 2 Content')).toBeInTheDocument()
   })
