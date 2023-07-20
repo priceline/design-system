@@ -39,6 +39,20 @@ const CustomButton = styled(Button)`
   text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `
 
+const CloseButton = styled(Box)`
+  align-self: ${(props) => (props.closeButtonVerticalPosition === 'top' ? 'flex-start' : 'center')};
+  cursor: pointer;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: auto;
+  z-index: 2;
+
+  & > svg {
+    margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: 8px;
+  }
+`
+
 const genericBannerProps = {
   ...propTypes.alignItems,
   ...propTypes.justifyContent,
@@ -88,7 +102,23 @@ export interface IGenericBannerProps
   }
   color?: string
   colorScheme?: ColorSchemeName
+  onClose?: () => unknown
+  closeButtonVerticalPosition?: 'top' | 'center'
+  closeButtonHorizontalPosition?: 'left' | 'right'
 }
+
+const getCloseButton = (selfPosition, props) => (
+  <CloseButton
+    className='closeButton'
+    closeButtonVerticalPosition={props.closeButtonVerticalPosition}
+    closeButtonHorizontalPosition={props.closeButtonHorizontalPosition}
+    onClick={props.onClose}
+    data-testid='closeButton'
+    {...props}
+  >
+    {(props.closeButtonHorizontalPosition === selfPosition && <Close size={24} />) || <Box width='32px' />}
+  </CloseButton>
+)
 
 const GenericBanner: React.FC<IGenericBannerProps> = ({
   alignItems,
@@ -123,8 +153,10 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
         iconUsesColorScheme
         // we need to unset Banner's color prop if colorScheme is provided so it doesn't render its own icon
         color={!props.colorScheme ? props.color : null}
+        onClose={undefined}
       >
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
+          {props.onClose && getCloseButton('left', props)}
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
           <Box px={2} fontSize={fontSize}>
@@ -165,6 +197,7 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
             )}
           </Box>
           {!!iconRight && iconRight}
+          {props.onClose && getCloseButton('right', props)}
         </Flex>
       </BannerWithRadius>
     </Relative>
@@ -181,6 +214,8 @@ GenericBanner.defaultProps = {
   linkColor: 'primary',
   linkVariation: 'link',
   borderRadius: '6px',
+  closeButtonVerticalPosition: 'top',
+  closeButtonHorizontalPosition: 'right',
 }
 
 export default GenericBanner
