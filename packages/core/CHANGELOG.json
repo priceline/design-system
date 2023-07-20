@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.15.0",
+      "tag": "pcln-design-system_v5.15.0",
+      "date": "Thu, 20 Jul 2023 18:44:23 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added new radio check toggle card",
+            "author": "Jason Viana <108819593+pcln-jason-v@users.noreply.github.com>",
+            "commit": "205758539a090171be6b25e90b853313c14350d0"
+          },
+          {
+            "comment": "Create ChatMessageContainer component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "b10afe2ea3e62aa437128d758074a07f3da8fae4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.14.0",
       "tag": "pcln-design-system_v5.14.0",
       "date": "Wed, 19 Jul 2023 17:26:42 GMT",

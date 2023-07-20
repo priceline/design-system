@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 19 Jul 2023 17:26:42 GMT and should not be manually modified.
+This log was last generated on Thu, 20 Jul 2023 18:44:23 GMT and should not be manually modified.
+
+## 5.15.0
+Thu, 20 Jul 2023 18:44:23 GMT
+
+### Minor changes
+
+- Added new radio check toggle card
+- Create ChatMessageContainer component
 
 ## 5.14.0
 Wed, 19 Jul 2023 17:26:42 GMT
