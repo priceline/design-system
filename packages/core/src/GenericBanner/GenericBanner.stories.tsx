@@ -1,12 +1,12 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { GenericBanner } from '.'
-import { Warning, Rowing, Tea, Emoticon } from 'pcln-icons'
-import { Text } from '../Text'
+import { Discount, Emoticon, Rowing, Tea, Warning } from 'pcln-icons'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { GenericBanner } from '.'
+import { Text } from '../Text'
+import { colorSchemeNames } from '../storybook/args'
 import { getPaletteColor } from '../utils'
 import { argTypes } from './GenericBanner.stories.args'
-import { colorSchemeNames } from '../storybook/args'
 
 export default {
   title: 'GenericBanner',
@@ -75,7 +75,6 @@ export const BasicBannerBlockWithURLPropsCTA = () => (
     }}
     ctaText={
       <UnderlinedLinkText color='primary' fontWeight='bold' hoverColor='primary.dark'>
-        {' '}
         Read More
       </UnderlinedLinkText>
     }
@@ -275,4 +274,83 @@ export const ColorScheme = () => {
       iconLeft={<Warning />}
     />
   ))
+}
+
+export const BannerWithCloseButton = () => {
+  const [isOpen, setIsOpen] = useState(true)
+
+  return (
+    isOpen && (
+      <>
+        <GenericBanner
+          colorScheme='neutralLight'
+          p={3}
+          m={2}
+          text={
+            <Text.span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare ante sit amet leo
+              suscipit, a aliquam metus volutpat. Praesent id tortor sodales ligula dignissim tempus quis at
+              ipsum. Link
+            </Text.span>
+          }
+          iconLeft={<Discount />}
+        />
+
+        {['top', 'center']
+          .map((vValue) =>
+            ['left', 'right'].map((hValue) => (
+              <>
+                <GenericBanner
+                  key={vValue + hValue}
+                  colorScheme='neutralLight'
+                  p={3}
+                  m={2}
+                  heading={
+                    <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+                      Heading
+                    </Text.span>
+                  }
+                  text={
+                    <Text.span mr={1} textColor='primary.base'>
+                      Text
+                    </Text.span>
+                  }
+                  URLProps={{
+                    href: 'https://www.priceline.com',
+                    target: '_blank',
+                  }}
+                  ctaText={
+                    <UnderlinedLinkText color='primary' fontWeight='bold' hoverColor='primary.dark'>
+                      Read More
+                    </UnderlinedLinkText>
+                  }
+                  iconLeft={<Discount />}
+                  onClose={() => setIsOpen(!isOpen)}
+                  closeButtonVerticalPosition={vValue as 'top' | 'center'}
+                  closeButtonHorizontalPosition={hValue as 'left' | 'right'}
+                />
+                <GenericBanner
+                  key={vValue + hValue}
+                  colorScheme='neutralLight'
+                  p={3}
+                  m={2}
+                  text={
+                    <Text.span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare ante sit amet
+                      leo suscipit, a aliquam metus volutpat. Praesent id tortor sodales ligula dignissim
+                      tempus quis at ipsum. Link
+                    </Text.span>
+                  }
+                  iconLeft={<Discount />}
+                  onClose={() => setIsOpen(!isOpen)}
+                  closeButtonVerticalPosition={vValue as 'top' | 'center'}
+                  closeButtonHorizontalPosition={hValue as 'left' | 'right'}
+                />
+              </>
+            ))
+          )
+          .flat(1)}
+      </>
+    )
+  )
 }
