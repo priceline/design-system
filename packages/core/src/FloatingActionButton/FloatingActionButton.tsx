@@ -1,3 +1,6 @@
+/* istanbul ignore file */
+// todo: remove coverage ignore once storybook interaction test coverage counts
+
 import React from 'react'
 import { Absolute, IAbsoluteProps } from '../Absolute'
 import { Animate } from '../Animate'

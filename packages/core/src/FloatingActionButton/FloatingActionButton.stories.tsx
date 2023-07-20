@@ -15,7 +15,6 @@ export default {
   argTypes: {
     onClick: { action: true },
   },
-  tags: ['autodocs'],
   decorators: [
     (Story) => (
       <Relative width='100%' height='10vh'>

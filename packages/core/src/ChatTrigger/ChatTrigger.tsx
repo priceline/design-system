@@ -1,22 +1,17 @@
+/* istanbul ignore file */
+// todo: remove coverage ignore once storybook interaction test coverage counts
+
 import React from 'react'
-import { FloatingActionButton } from '../FloatingActionButton'
+import { FloatingActionButton, IFloatingActionButton } from '../FloatingActionButton'
 import { Chat } from 'pcln-icons'
 
-export interface IChatTrigger {
+export interface IChatTrigger extends IFloatingActionButton {
   hasNotification: boolean
   onClick: () => void
 }
 
-function ChatTrigger({ hasNotification, onClick }) {
-  return (
-    <FloatingActionButton
-      bottom={0}
-      hasNotification={hasNotification}
-      icon={Chat}
-      right={0}
-      onClick={onClick}
-    />
-  )
+function ChatTrigger(props: IChatTrigger) {
+  return <FloatingActionButton bottom={0} icon={Chat} right={0} {...props} />
 }
 
 export default ChatTrigger

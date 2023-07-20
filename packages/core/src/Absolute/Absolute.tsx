@@ -16,13 +16,13 @@ import styledSystemPropTypes from '@styled-system/prop-types'
 
 import { Box, IBoxProps } from '../Box'
 
-export interface IAbsoluteProps extends IBoxProps {
-  top?: TopProps
-  right?: RightProps
-  bottom?: BottomProps
-  left?: LeftProps
-  zIndex?: ZIndexProps
-}
+export interface IAbsoluteProps
+  extends IBoxProps,
+    TopProps,
+    RightProps,
+    BottomProps,
+    LeftProps,
+    ZIndexProps {}
 
 const Absolute = styled(Box)`
   position: absolute;
