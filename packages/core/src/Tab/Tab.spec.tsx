@@ -3,7 +3,7 @@ import { render, screen } from '../__test__/testing-library'
 import { userEvent } from '@storybook/testing-library'
 import { Tab } from '.'
 
-describe('Tab', async () => {
+describe('Tab', () => {
   const tabsContent = [
     { id: 'tab1', children: <div>Tab 1 Content</div> },
     { id: 'tab2', children: <div>Tab 2 Content</div> },
