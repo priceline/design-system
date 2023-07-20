@@ -12,7 +12,7 @@ import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
 import { ColorSchemeName } from '../theme'
-import { colorSchemeCustomForeground } from '../utils'
+import { colorSchemeCustomForeground, getPaletteColor } from '../utils'
 
 const BannerWithRadius = styled(Banner)`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};
@@ -50,6 +50,15 @@ const CloseButton = styled(Box)`
   z-index: 2;
 
   & > svg {
+    color: ${({ colorScheme }) =>
+      getPaletteColor(
+        colorScheme &&
+          ['Light', 'Lightest', 'DarkOnLight'].filter(
+            (darkTheme) => colorScheme.substring(colorScheme.length - darkTheme.length) === darkTheme
+          ).length > 0
+          ? 'text.base'
+          : 'text.lightest'
+      )};
     margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: 8px;
   }
 `
