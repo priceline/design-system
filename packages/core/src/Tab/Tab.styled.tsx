@@ -5,6 +5,7 @@ import { getPaletteColor } from '../utils'
 export const TabContainer = styled(Tab.Root)``
 
 export const TabTriggerChip = styled(Tab.Trigger)`
+  border-width: 1px;
   cursor: pointer;
   ${(props) => `
     border-style: solid;
@@ -32,7 +33,8 @@ export const TabTriggerChip = styled(Tab.Trigger)`
         }
       `}
     ${(props) => `
-  background-color: ${getPaletteColor('primary.light')(props)};
+    border-color: ${getPaletteColor('primary.base')(props)};
+    background-color: ${getPaletteColor('primary.light')(props)};
   `}
   }
 `
@@ -45,6 +47,7 @@ export const TabTriggerButton = styled(Tab.Trigger)`
     props?.hover &&
     `
     &:hover {
+      color: ${getPaletteColor('primary.dark')(props)};
       background-color: ${getPaletteColor('background.base')(props)};
     }`}
   ${(props) =>
@@ -62,15 +65,16 @@ export const TabTriggerButton = styled(Tab.Trigger)`
         }
       `}
     &::after {
+      ${(props) => `
       margin-top: -4px;
-      margin-left: 25px;
-      margin-right: 25px;
+      margin-left: 16px;
+      margin-right: 16px;
       content: '';
       display: block;
       height: 4px;
-      background-color: #0068ef;
+      background-color: ${getPaletteColor(props?.isHover ? 'primary.dark' : 'primary.base')(props)};
       border-radius: 12px 12px 0 0;
-    }
+      `}
   }
 `
 

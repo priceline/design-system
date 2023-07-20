@@ -2,6 +2,7 @@ import { Flex } from '../Flex'
 import { Text } from '../Text'
 import React from 'react'
 import { TabTriggerChip } from './Tab.styled'
+import { Box } from '../Box'
 
 export const TabChip = ({ hasHover, index, tab, value }) => {
   return (
@@ -11,9 +12,13 @@ export const TabChip = ({ hasHover, index, tab, value }) => {
       value={`${value}-tab${index + 1}`}
       key={`${value}-tab${index + 1}`}
     >
-      <Flex alignItems='center' mx={2}>
-        {tab.icon}
-        <Text py={1} pl={tab.icon ? 2 : 3} textStyle='paragraph' pr={3}>
+      <Flex alignItems='center' mr={2}>
+        {tab.icon && (
+          <Box ml={2} size={24}>
+            {tab.icon}
+          </Box>
+        )}
+        <Text py='5px' px={2} textStyle='paragraph' style={{ fontSize: 'Montserrat' }}>
           {tab.text}
         </Text>
       </Flex>

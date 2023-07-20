@@ -104,17 +104,17 @@ export const IconButtonTabs: TabsStory = {
     tabsData: [
       {
         id: 't1',
-        icon: <Icon color='primary' size={[100, 200, 300, 35]} name='Flights' />,
+        icon: <Icon name='Flights' />,
         text: 'Tab 1',
       },
       {
         id: 't2',
-        icon: <Icon color='primary' size={[100, 200, 300, 35]} name='Flights' />,
+        icon: <Icon name='Flights' />,
         text: 'Tab 2',
       },
       {
         id: 't3',
-        icon: <Icon color='primary' size={[100, 200, 300, 35]} name='Flights' />,
+        icon: <Icon name='Flights' />,
         text: 'Tab 3',
       },
     ],
@@ -133,17 +133,17 @@ export const IconChipTabs: TabsStory = {
     tabsData: [
       {
         id: 't1',
-        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        icon: <Icon color='primary' name='Flights' />,
         text: 'Tab 1',
       },
       {
         id: 't2',
-        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        icon: <Icon color='primary' name='Flights' />,
         text: 'Tab 2',
       },
       {
         id: 't3',
-        icon: <Icon color='primary' size={[100, 200, 300, 50]} name='Flights' />,
+        icon: <Icon color='primary' name='Flights' />,
         text: 'Tab 3',
       },
     ],

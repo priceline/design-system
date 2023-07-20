@@ -24,7 +24,7 @@ export const TabRadio = ({ hasHover, tab, index, isActive, setIsActive, value })
       value={`${value}-tab${index + 1}`}
       key={`tab${index + 1}`}
     >
-      <Box style={{ display: 'flex', alignItems: 'center' }} mx={2}>
+      <Box style={{ display: 'flex', alignItems: 'center' }} mr={2}>
         <Label fontSize='14px'>
           <Radio checked={isChecked} />
           {tab.text}
