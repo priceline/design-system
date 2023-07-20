@@ -130,7 +130,7 @@ describe('GenericBanner', () => {
     expect(queryAllByTestId('closeButton')[0]).toHaveStyle('align-self: center')
     expect(queryAllByTestId('closeButton')[0]).toHaveStyle('margin: 0px auto 0px 0px')
     expect(queryAllByTestId('closeButton')[1]).toHaveStyle('align-self: center')
-    expect(queryAllByTestId('closeButton')[1]).toHaveStyle('margin: 0px auto 0px 0px')
+    expect(queryAllByTestId('closeButton')[1]).toHaveStyle('margin: 0px 0px 0px auto')
   })
 
   test('Render the close button with light colors', () => {

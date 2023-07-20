@@ -74,6 +74,20 @@ exports[`GenericBanner renders 1`] = `
   cursor: cursor;
 }
 
+.c10 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (min-width:48em) {
+  .c10 {
+    -webkit-flex: unset;
+    -ms-flex: unset;
+    flex: unset;
+  }
+}
+
 <div
   className="c0"
 >
@@ -112,7 +126,7 @@ exports[`GenericBanner renders 1`] = `
           className="c8"
         >
           <div
-            className="c9"
+            className="c9 c10"
             fontSize={
               Array [
                 0,
