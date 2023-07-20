@@ -59,6 +59,16 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   letter-spacing: 0.2px;
 }
 
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
 .c9 {
   position: relative;
   -webkit-appearance: none;
@@ -117,16 +127,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c2 {
-  background-color: #edf0f3;
-}
-
-.c2.c2.c2 * {
-  background-color: transparent;
-  color: #4f6f8f;
-  cursor: not-allowed;
 }
 
 .c0 {
