@@ -285,7 +285,7 @@ export const BannerWithCloseButton = () => {
       <Box maxWidth='1028px'>
         <GenericBanner
           colorScheme='neutralLight'
-          p={3}
+          p={2}
           m={2}
           text={
             <Text.span>
@@ -307,7 +307,7 @@ export const BannerWithCloseButton = () => {
                 <GenericBanner
                   key={vValue + hValue}
                   colorScheme='neutralLight'
-                  p={3}
+                  p={2}
                   m={2}
                   heading={
                     <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
@@ -337,7 +337,7 @@ export const BannerWithCloseButton = () => {
                 <GenericBanner
                   key={vValue + hValue}
                   colorScheme='neutralLight'
-                  p={3}
+                  p={2}
                   m={2}
                   text={
                     <Text.span>
