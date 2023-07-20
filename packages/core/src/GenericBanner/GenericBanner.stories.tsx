@@ -272,6 +272,7 @@ export const ColorScheme = () => {
         <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>
       }
       iconLeft={<Warning />}
+      onClose={() => {}}
     />
   ))
 }
