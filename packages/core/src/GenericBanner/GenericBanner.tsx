@@ -1,17 +1,18 @@
+import propTypes from '@styled-system/prop-types'
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import { AlignItemsProps, JustifyContentProps, FontSizeProps, PaddingProps, MarginProps } from 'styled-system'
-import PropTypes from 'prop-types'
-import propTypes from '@styled-system/prop-types'
+import { AlignItemsProps, FontSizeProps, JustifyContentProps, MarginProps, PaddingProps } from 'styled-system'
 
+import { Close } from 'pcln-icons'
 import { Banner } from '../Banner'
 import { Box } from '../Box'
+import { Button } from '../Button'
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
-import { Button } from '../Button'
-import { colorSchemeCustomForeground } from '../utils'
 import { ColorSchemeName } from '../theme'
+import { colorSchemeCustomForeground } from '../utils'
 
 const BannerWithRadius = styled(Banner)`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};
