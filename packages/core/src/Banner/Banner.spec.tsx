@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
 
-import { Banner, Text, Heading, theme } from '..'
+import { Banner, Heading, Text, theme } from '..'
 
 describe('Banner', () => {
   let consoleError
@@ -85,10 +85,12 @@ describe('Banner', () => {
   })
 
   test('renders close button if onClose func is provided', () => {
-    function noop() {}
-    const { container } = render(<Banner onClose={noop} />)
+    const spyOnClose = jest.fn()
+    const { container } = render(<Banner onClose={spyOnClose} />)
     const closeButton = container.querySelector('button')
     expect(closeButton).toBeTruthy()
+    closeButton.click()
+    expect(spyOnClose).toBeCalled()
   })
 
   test('does render blue left-hand icon by default', () => {
