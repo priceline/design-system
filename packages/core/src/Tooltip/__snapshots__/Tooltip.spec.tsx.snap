@@ -2,6 +2,16 @@
 
 exports[`Tooltip bottom center 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #fff;
   color: #001833;
   padding: 8px;
@@ -11,7 +21,7 @@ exports[`Tooltip bottom center 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -26,7 +36,7 @@ exports[`Tooltip bottom center 1`] = `
   transform: translateX(-50%);
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -53,24 +63,38 @@ exports[`Tooltip bottom center 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="background.lightest"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    centered tooltip
+    <div
+      className="c1 c2"
+      color="background.lightest"
+    >
+      centered tooltip
+    </div>
   </div>
 </div>
 `;
 
 exports[`Tooltip bottom left 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #fff;
   color: #001833;
   padding: 8px;
@@ -80,7 +104,7 @@ exports[`Tooltip bottom left 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -90,7 +114,7 @@ exports[`Tooltip bottom left 1`] = `
   top: 0;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -117,24 +141,38 @@ exports[`Tooltip bottom left 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="background.lightest"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    left tooltip
+    <div
+      className="c1 c2"
+      color="background.lightest"
+    >
+      left tooltip
+    </div>
   </div>
 </div>
 `;
 
 exports[`Tooltip bottom right 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #fff;
   color: #001833;
   padding: 8px;
@@ -144,7 +182,7 @@ exports[`Tooltip bottom right 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -155,7 +193,7 @@ exports[`Tooltip bottom right 1`] = `
   right: 0;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -182,24 +220,38 @@ exports[`Tooltip bottom right 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="background.lightest"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    right tooltip
+    <div
+      className="c1 c2"
+      color="background.lightest"
+    >
+      right tooltip
+    </div>
   </div>
 </div>
 `;
 
 exports[`Tooltip renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #fff;
   color: #001833;
   padding: 8px;
@@ -209,7 +261,7 @@ exports[`Tooltip renders 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -219,7 +271,7 @@ exports[`Tooltip renders 1`] = `
   top: 0;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -246,24 +298,38 @@ exports[`Tooltip renders 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="background.lightest"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    A Tooltip
+    <div
+      className="c1 c2"
+      color="background.lightest"
+    >
+      A Tooltip
+    </div>
   </div>
 </div>
 `;
 
 exports[`Tooltip top center 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #0068ef;
   color: #fff;
   padding: 8px;
@@ -273,7 +339,7 @@ exports[`Tooltip top center 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -288,7 +354,7 @@ exports[`Tooltip top center 1`] = `
   transform: translateX(-50%);
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -315,24 +381,38 @@ exports[`Tooltip top center 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="primary"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    centered tooltip
+    <div
+      className="c1 c2"
+      color="primary"
+    >
+      centered tooltip
+    </div>
   </div>
 </div>
 `;
 
 exports[`Tooltip top left 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #0068ef;
   color: #fff;
   padding: 8px;
@@ -342,7 +422,7 @@ exports[`Tooltip top left 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -352,7 +432,7 @@ exports[`Tooltip top left 1`] = `
   bottom: -8px;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -379,24 +459,38 @@ exports[`Tooltip top left 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="primary"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    left tooltip
+    <div
+      className="c1 c2"
+      color="primary"
+    >
+      left tooltip
+    </div>
   </div>
 </div>
 `;
 
 exports[`Tooltip top right 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   background-color: #c00;
   color: #fff;
   padding: 8px;
@@ -406,7 +500,7 @@ exports[`Tooltip top right 1`] = `
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -417,7 +511,7 @@ exports[`Tooltip top right 1`] = `
   right: 0;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -444,18 +538,22 @@ exports[`Tooltip top right 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
+  className="c0"
 >
   <div
-    className="c0 c1"
-    color="error"
+    style={
+      {
+        "position": "relative",
+        "zIndex": "auto",
+      }
+    }
   >
-    right tooltip
+    <div
+      className="c1 c2"
+      color="error"
+    >
+      right tooltip
+    </div>
   </div>
 </div>
 `;

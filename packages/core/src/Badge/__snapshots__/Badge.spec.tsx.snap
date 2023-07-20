@@ -2,6 +2,16 @@
 
 exports[`Badge bg blue sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -29,12 +39,26 @@ exports[`Badge bg blue sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge bg green sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -62,12 +86,26 @@ exports[`Badge bg green sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge bg lightBlue sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -95,12 +133,26 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge bg lightGreen sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -128,12 +180,26 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge bg lightRed sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -161,12 +227,26 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge bg orange sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -194,12 +274,26 @@ exports[`Badge bg orange sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge bg red sets background-color and color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -227,12 +321,26 @@ exports[`Badge bg red sets background-color and color 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge can escape preset: bg lightBlue sets background-color and color text sets color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -259,13 +367,27 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
 
 <div
   className="c0"
-  color="text"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    color="text"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge non-preset: bg text sets background-color and color white sets color 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -292,13 +414,27 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
 
 <div
   className="c0"
-  color="white"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    color="white"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -325,12 +461,26 @@ exports[`Badge renders 1`] = `
 
 <div
   className="c0"
-  size="medium"
-/>
+>
+  <div
+    className="c1"
+    size="medium"
+  />
+</div>
 `;
 
 exports[`Badge renders small 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   font-size: 10px;
   font-weight: 700;
@@ -352,6 +502,10 @@ exports[`Badge renders small 1`] = `
 
 <div
   className="c0"
-  size="small"
-/>
+>
+  <div
+    className="c1"
+    size="small"
+  />
+</div>
 `;

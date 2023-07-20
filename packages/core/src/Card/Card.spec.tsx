@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Card, theme } from '..'
 
 function assertBorderGray(json, borderWidth = 1) {

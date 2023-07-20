@@ -2,60 +2,186 @@
 
 exports[`Heading Heading component using <Text> component properties 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   color: #4f6f8f;
   text-align: center;
 }
 
-<h3
+<div
   className="c0"
-  color="gray"
-/>
+>
+  <h3
+    className="c1"
+    color="gray"
+  />
+</div>
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
-<h1
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
-<h2
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h2
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
-<h3
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h3
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
-<h4
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h4
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
-<h5
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h5
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
-<h6
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h6
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading Heading component with no default font size, when "fontSize" prop not used 1`] = `
-<h3
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h3
+    className=""
+  />
+</div>
 `;
 
 exports[`Heading renders 1`] = `
-<h3
-  className=""
-/>
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <h3
+    className=""
+  />
+</div>
 `;

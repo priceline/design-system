@@ -1,19 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CloseButton renders without props 1`] = `
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
-.c5 {
-  outline: none;
+.c0 * {
+  box-sizing: border-box;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,14 +26,26 @@ exports[`CloseButton renders without props 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c0 {
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
+}
+
+.c1 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -53,74 +63,78 @@ exports[`CloseButton renders without props 1`] = `
   color: #fff;
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #049;
   color: #fff;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
 }
 
-.c0:disabled {
+.c1:disabled {
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
 }
 
-.c1 {
+.c2 {
   padding: 0;
   background-color: transparent;
   color: inherit;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: transparent;
   color: inherit;
 }
 
-.c1 > div {
+.c2 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c1:disabled {
+.c2:disabled {
   background-color: transparent;
 }
 
-<button
-  aria-label="close"
-  className="c0 c1"
-  color="primary"
-  size={24}
-  title="close"
+<div
+  className="c0"
 >
-  <div
-    className="c2"
+  <button
+    aria-label="close"
+    className="c1 c2"
+    color="primary"
+    size={24}
+    title="close"
   >
     <div
       className="c3"
     >
-      <svg
-        aria-hidden={true}
-        className="c4 c5"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        className="c4"
       >
-        <path
-          d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
-        />
-      </svg>
+        <svg
+          aria-hidden={true}
+          className="c5 c6"
+          fill="currentcolor"
+          focusable={false}
+          height={24}
+          role="img"
+          tabIndex={-1}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+          />
+        </svg>
+      </div>
     </div>
-  </div>
-</button>
+  </button>
+</div>
 `;

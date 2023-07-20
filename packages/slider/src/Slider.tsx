@@ -1,17 +1,16 @@
+import styledSystemPropTypes from '@styled-system/prop-types'
 import PropTypes from 'prop-types'
-import { space } from 'styled-system'
-
 import RcSlider from 'rc-slider'
-import styleSlider from './styleSlider'
+import createStyledSlider from './Slider.styled'
 
-const Slider = styleSlider(RcSlider)
+const Slider = createStyledSlider(RcSlider)
 
 Slider.defaultProps = {
   color: 'primary',
 }
 
 Slider.propTypes = {
-  ...space.propTypes,
+  ...styledSystemPropTypes.space,
   color: PropTypes.string,
 }
 

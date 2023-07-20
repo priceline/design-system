@@ -2,7 +2,17 @@
 
 exports[`Checkbox renders disabled with defaultChecked 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -108,16 +118,6 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   opacity: 0;
   position: absolute;
   z-index: 0;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 <div
@@ -197,7 +197,17 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
 
 exports[`Checkbox renders disabled with disabled prop 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -305,16 +315,6 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   z-index: 0;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 <div
     class="c0"
   >
@@ -391,7 +391,17 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
 
 exports[`Checkbox renders without the theme passed specifically 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -497,16 +507,6 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   opacity: 0;
   position: absolute;
   z-index: 0;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 <div

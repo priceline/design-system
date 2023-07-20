@@ -1,8 +1,17 @@
+import type { SliderProps, SliderRef } from 'rc-slider'
+import type { ForwardRefExoticComponent, RefAttributes } from 'react'
+
+import { getPaletteColor } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space } from 'styled-system'
-import { getPaletteColor } from 'pcln-design-system'
 
-const styleSlider = (component) => styled(component)`
+export type color = {
+  color?: string
+}
+
+const createStyledSlider = (
+  component: ForwardRefExoticComponent<SliderProps<number | number[]> & RefAttributes<SliderRef> & color>
+) => styled(component)`
   position: relative;
   height: 32px;
   padding-top: 12px;
@@ -67,4 +76,4 @@ const styleSlider = (component) => styled(component)`
   }
 `
 
-export default styleSlider
+export default createStyledSlider

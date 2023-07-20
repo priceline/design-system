@@ -2,13 +2,23 @@
 
 exports[`Breadcrumbs renders basic 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,32 +29,32 @@ exports[`Breadcrumbs renders basic 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   color: #4f6f8f;
   margin: 8px;
 }
 
-.c2 {
+.c3 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #4f6f8f;
 }
 
-.c2:hover {
+.c3:hover {
   color: #4f6f8f;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c4 {
+.c5 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #001023;
 }
 
-.c4:hover {
+.c5:hover {
   color: #001023;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -56,59 +66,73 @@ exports[`Breadcrumbs renders basic 1`] = `
   <div
     className="c1"
   >
-    <a
-      className="c2"
-      color="text.light"
-      href="https://www.priceline.com"
-      rel={null}
-      size="medium"
-    >
-      Home
-    </a>
     <div
-      className="c3"
-      color="text.light"
-    >
-      /
-    </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <a
       className="c2"
-      color="text.light"
-      href="https://www.priceline.com/flights/"
-      rel={null}
-      size="medium"
     >
-      Flights
-    </a>
-    <div
-      className="c3"
-      color="text.light"
-    >
-      /
+      <a
+        className="c3"
+        color="text.light"
+        href="https://www.priceline.com"
+        rel={null}
+        size="medium"
+      >
+        Home
+      </a>
+      <div
+        className="c4"
+        color="text.light"
+      >
+        /
+      </div>
     </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <a
-      className="c4"
-      color="text.dark"
-      href="https://www.priceline.com/flights/"
-      rel={null}
-      size="medium"
+    <div
+      className="c2"
     >
-      Seat Selection
-    </a>
+      <a
+        className="c3"
+        color="text.light"
+        href="https://www.priceline.com/flights/"
+        rel={null}
+        size="medium"
+      >
+        Flights
+      </a>
+      <div
+        className="c4"
+        color="text.light"
+      >
+        /
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <a
+        className="c5"
+        color="text.dark"
+        href="https://www.priceline.com/flights/"
+        rel={null}
+        size="medium"
+      >
+        Seat Selection
+      </a>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs renders with icons 1`] = `
-.c2 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -118,7 +142,7 @@ exports[`Breadcrumbs renders with icons 1`] = `
   width: 16px;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -128,26 +152,26 @@ exports[`Breadcrumbs renders with icons 1`] = `
   width: 16px;
 }
 
-.c6 {
+.c7 {
   outline: none;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
-.c8 {
+.c9 {
   outline: none;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -158,32 +182,32 @@ exports[`Breadcrumbs renders with icons 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c6 {
   color: #4f6f8f;
   margin: 8px;
 }
 
-.c4 {
+.c5 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #4f6f8f;
 }
 
-.c4:hover {
+.c5:hover {
   color: #4f6f8f;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c9 {
+.c10 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #001023;
 }
 
-.c9:hover {
+.c10:hover {
   color: #001023;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -195,104 +219,108 @@ exports[`Breadcrumbs renders with icons 1`] = `
   <div
     className="c1"
   >
-    <svg
-      aria-hidden={true}
-      className="c2 c3"
-      color="text.light"
-      fill="currentcolor"
-      focusable={false}
-      height={16}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={16}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8h5z"
-      />
-    </svg>
-    <a
-      className="c4"
-      color="text.light"
-      href="https://www.priceline.com"
-      rel={null}
-      size="medium"
-    >
-      Home
-    </a>
     <div
-      className="c5"
-      color="text.light"
+      className="c2"
     >
-      /
+      <svg
+        aria-hidden={true}
+        className="c3 c4"
+        color="text.light"
+        fill="currentcolor"
+        focusable={false}
+        height={16}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 20.5v-6h4v6h5v-8h3l-10-9-10 9h3v8h5z"
+        />
+      </svg>
+      <a
+        className="c5"
+        color="text.light"
+        href="https://www.priceline.com"
+        rel={null}
+        size="medium"
+      >
+        Home
+      </a>
+      <div
+        className="c6"
+        color="text.light"
+      >
+        /
+      </div>
     </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c2 c6"
-      color="text.light"
-      fill="currentcolor"
-      focusable={false}
-      height={16}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={16}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M21.5 16v-2l-8-5V3.5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z"
-      />
-    </svg>
-    <a
-      className="c4"
-      color="text.light"
-      href="https://www.priceline.com/flights/"
-      rel={null}
-      size="medium"
-    >
-      Flights
-    </a>
     <div
-      className="c5"
-      color="text.light"
+      className="c2"
     >
-      /
+      <svg
+        aria-hidden={true}
+        className="c3 c7"
+        color="text.light"
+        fill="currentcolor"
+        focusable={false}
+        height={16}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.5 16v-2l-8-5V3.5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z"
+        />
+      </svg>
+      <a
+        className="c5"
+        color="text.light"
+        href="https://www.priceline.com/flights/"
+        rel={null}
+        size="medium"
+      >
+        Flights
+      </a>
+      <div
+        className="c6"
+        color="text.light"
+      >
+        /
+      </div>
     </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden={true}
-      className="c7 c8"
-      color="text.dark"
-      fill="currentcolor"
-      focusable={false}
-      height={16}
-      role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={16}
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      className="c2"
     >
-      <path
-        d="M4 18v3h3v-3h10v3h3v-6H4v3zm15-8h3v3h-3v-3zM2 10h3v3H2v-3zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"
-      />
-    </svg>
-    <a
-      className="c9"
-      color="text.dark"
-      href="https://www.priceline.com/flights/"
-      rel={null}
-      size="medium"
-    >
-      Seat Selection
-    </a>
+      <svg
+        aria-hidden={true}
+        className="c8 c9"
+        color="text.dark"
+        fill="currentcolor"
+        focusable={false}
+        height={16}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 18v3h3v-3h10v3h3v-6H4v3zm15-8h3v3h-3v-3zM2 10h3v3H2v-3zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"
+        />
+      </svg>
+      <a
+        className="c10"
+        color="text.dark"
+        href="https://www.priceline.com/flights/"
+        rel={null}
+        size="medium"
+      >
+        Seat Selection
+      </a>
+    </div>
   </div>
 </div>
 `;

@@ -2,54 +2,29 @@
 
 exports[`Box boxShadowSize prop sets box-shadow 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Box color prop sets color 1`] = `
-.c0 {
-  color: #0068ef;
-}
-
-<div
-  className="c0"
-  color="blue"
-/>
-`;
-
-exports[`Box m prop sets margin 1`] = `
-.c0 {
-  margin: 8px;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Box maxHeight, maxWidth, minHeight, minWidth 1`] = `
-.c0 {
-  max-height: 250px;
-  max-width: 250px;
-  min-height: 55px;
-  min-width: 55px;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`Box overflow prop sets overflow 1`] = `
-<DocumentFragment>
-  .c1 {
-  overflow: scroll;
-}
-
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -58,6 +33,87 @@ exports[`Box overflow prop sets overflow 1`] = `
 
 .c0 * {
   box-sizing: border-box;
+}
+
+.c1 {
+  color: #0068ef;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    color="blue"
+  />
+</div>
+`;
+
+exports[`Box m prop sets margin 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  margin: 8px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</div>
+`;
+
+exports[`Box maxHeight, maxWidth, minHeight, minWidth 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  max-height: 250px;
+  max-width: 250px;
+  min-height: 55px;
+  min-width: 55px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</div>
+`;
+
+exports[`Box overflow prop sets overflow 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  overflow: scroll;
 }
 
 <div
@@ -74,29 +130,71 @@ exports[`Box overflow prop sets overflow 1`] = `
 
 exports[`Box p prop sets padding 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   padding: 8px;
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Box renders 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
-  className=""
-/>
+  className="c0"
+>
+  <div
+    className=""
+  />
+</div>
 `;
 
 exports[`Box width and height props set width/height 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   width: 50%;
   height: 50%;
 }
 
 <div
   className="c0"
-  height="50%"
-  width={0.5}
-/>
+>
+  <div
+    className="c1"
+    height="50%"
+    width={0.5}
+  />
+</div>
 `;

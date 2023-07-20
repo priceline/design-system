@@ -2,52 +2,118 @@
 
 exports[`Text bold prop sets font-weight 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   font-weight: 700;
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Text caps prop sets text-transform 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   text-transform: uppercase;
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Text display and overflow 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   overflow: none;
 }
 
 <div
   className="c0"
-  display="inline-block"
-  overflow="none"
-/>
+>
+  <div
+    className="c1"
+    display="inline-block"
+    overflow="none"
+  />
+</div>
 `;
 
 exports[`Text height and width 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   height: 150px;
   width: 200px;
 }
 
 <div
   className="c0"
-  height={150}
-  width={200}
-/>
+>
+  <div
+    className="c1"
+    height={150}
+    width={200}
+  />
+</div>
 `;
 
 exports[`Text min/max values 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   min-height: 200px;
   max-height: 400px;
   min-width: 200px;
@@ -56,41 +122,101 @@ exports[`Text min/max values 1`] = `
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Text mt prop sets margin-top 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   margin-top: 8px;
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Text regular prop sets font-weight 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   font-weight: 500;
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Text renders 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
-  className=""
-/>
+  className="c0"
+>
+  <div
+    className=""
+  />
+</div>
 `;
 
 exports[`Text textAlign prop sets text-align 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   text-align: center;
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;

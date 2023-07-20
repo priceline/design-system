@@ -2,6 +2,16 @@
 
 exports[`Divider borderColor prop sets borderColor 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -11,14 +21,28 @@ exports[`Divider borderColor prop sets borderColor 1`] = `
   margin-right: 0px;
 }
 
-<hr
+<div
   className="c0"
-  color="border"
-/>
+>
+  <hr
+    className="c1"
+    color="border"
+  />
+</div>
 `;
 
 exports[`Divider m prop sets margin 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -29,14 +53,28 @@ exports[`Divider m prop sets margin 1`] = `
   margin-right: 0px;
 }
 
-<hr
+<div
   className="c0"
-  color="border"
-/>
+>
+  <hr
+    className="c1"
+    color="border"
+  />
+</div>
 `;
 
 exports[`Divider renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -46,14 +84,28 @@ exports[`Divider renders 1`] = `
   margin-right: 0px;
 }
 
-<hr
+<div
   className="c0"
-  color="border"
-/>
+>
+  <hr
+    className="c1"
+    color="border"
+  />
+</div>
 `;
 
 exports[`Divider width prop sets width 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -64,9 +116,13 @@ exports[`Divider width prop sets width 1`] = `
   margin-right: 0px;
 }
 
-<hr
+<div
   className="c0"
-  color="border"
-  width={0.5}
-/>
+>
+  <hr
+    className="c1"
+    color="border"
+    width={0.5}
+  />
+</div>
 `;

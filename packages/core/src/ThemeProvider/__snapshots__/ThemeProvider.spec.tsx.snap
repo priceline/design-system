@@ -24,11 +24,7 @@ exports[`ThemeProvider ThemeProvider: Base should render correctly with a "font-
 
 exports[`ThemeProvider ThemeProvider: ThemeProvider should handle the "customBreakpoints" prop 1`] = `
 <DocumentFragment>
-  .c1 {
-  width: 100%;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -36,6 +32,10 @@ exports[`ThemeProvider ThemeProvider: ThemeProvider should handle the "customBre
 
 .c0 * {
   box-sizing: border-box;
+}
+
+.c1 {
+  width: 100%;
 }
 
 @media screen and (min-width:20em) {

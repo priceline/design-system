@@ -28,7 +28,7 @@ const propTypes = {
   initials: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   color: PropTypes.string,
-  colorScheme: PropTypes.oneOfType(colorSchemeNames),
+  colorScheme: PropTypes.oneOf(colorSchemeNames),
 }
 
 /** @public */
@@ -44,7 +44,7 @@ const Avatar: React.FC<InferProps<typeof propTypes>> = ({
   colorScheme,
 }) => {
   return (
-    <Flex className={className}>
+    <Flex className={className || ''}>
       <StyledImage
         role='img'
         src={src}

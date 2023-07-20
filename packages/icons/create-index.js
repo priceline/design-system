@@ -13,7 +13,7 @@ const template = (icons) => {
     .filter((name) => name !== 'index')
     .map((name) => `export { default as ${name} } from './${name}.jsx'`)
 
-  return iconsToExport.join('\n')
+  return iconsToExport.join('\n') + '\n'
 }
 
 const content = template(icons)

@@ -2,6 +2,16 @@
 
 exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border-radius: 2px;
   border: 0;
   display: inline-block;
@@ -22,20 +32,34 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   font-size: 12px;
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #e8f2ff;
 }
 
-<button
+<div
   className="c0"
-  color="primary"
-  fontSize={0}
-  selected={true}
-/>
+>
+  <button
+    className="c1"
+    color="primary"
+    fontSize={0}
+    selected={true}
+  />
+</div>
 `;
 
 exports[`ToggleBadge selected one with background-color and text color passed as props hover state 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border-radius: 2px;
   border: 0;
   display: inline-block;
@@ -56,20 +80,34 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   margin-bottom: 4px;
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #0a0;
 }
 
-<button
+<div
   className="c0"
-  color="red"
-  fontSize={1}
-  selected={true}
-/>
+>
+  <button
+    className="c1"
+    color="red"
+    fontSize={1}
+    selected={true}
+  />
+</div>
 `;
 
 exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   border-radius: 2px;
   border: 0;
   display: inline-block;
@@ -90,14 +128,18 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   font-size: 12px;
 }
 
-.c0:hover {
+.c1:hover {
   background-color: #e8f2ff;
 }
 
-<button
+<div
   className="c0"
-  color="primary"
-  fontSize={0}
-  selected={false}
-/>
+>
+  <button
+    className="c1"
+    color="primary"
+    fontSize={0}
+    selected={false}
+  />
+</div>
 `;

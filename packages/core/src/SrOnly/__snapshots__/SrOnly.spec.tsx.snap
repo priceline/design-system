@@ -2,6 +2,16 @@
 
 exports[`Absolute renders with approprite styles to display offscreen 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   position: absolute;
   overflow: hidden;
   -webkit-clip: rect(0 0 0 0);
@@ -13,7 +23,11 @@ exports[`Absolute renders with approprite styles to display offscreen 1`] = `
   border: 0;
 }
 
-<span
+<div
   className="c0"
-/>
+>
+  <span
+    className="c1"
+  />
+</div>
 `;
