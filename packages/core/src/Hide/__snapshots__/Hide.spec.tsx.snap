@@ -1,91 +1,203 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hide renders 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
-  className=""
-/>
+  className="c0"
+>
+  <div
+    className=""
+  />
+</div>
 `;
 
 exports[`Hide renders with lg prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width:48em) and (max-width:63.99em) {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Hide renders with md prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width:40em) and (max-width:47.99em) {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Hide renders with print prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media print {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Hide renders with sm prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width:32em) and (max-width:39.99em) {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Hide renders with xl prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width:64em) and (max-width:79.99em) {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Hide renders with xs prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media screen and (max-width:31.99em) {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;
 
 exports[`Hide renders with xxl prop 1`] = `
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width:80em) {
-  .c0 {
+  .c1 {
     display: none;
   }
 }
 
 <div
   className="c0"
-/>
+>
+  <div
+    className="c1"
+  />
+</div>
 `;

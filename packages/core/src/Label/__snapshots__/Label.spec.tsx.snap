@@ -2,6 +2,16 @@
 
 exports[`Label Label hidden renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   width: 100%;
   margin: 0;
@@ -20,18 +30,32 @@ exports[`Label Label hidden renders 1`] = `
   letter-spacing: 0.2px;
 }
 
-<label
+<div
   className="c0"
-  color="text.light"
-  fontSize="10px"
-  fontWeight={700}
-  hidden={true}
-  letterSpacing="0.2px"
-/>
+>
+  <label
+    className="c1"
+    color="text.light"
+    fontSize="10px"
+    fontWeight={700}
+    hidden={true}
+    letterSpacing="0.2px"
+  />
+</div>
 `;
 
 exports[`Label Label nowrap renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   width: 100%;
   margin: 0;
@@ -46,17 +70,31 @@ exports[`Label Label nowrap renders 1`] = `
   letter-spacing: 0.2px;
 }
 
-<label
+<div
   className="c0"
-  color="text.light"
-  fontSize="10px"
-  fontWeight={700}
-  letterSpacing="0.2px"
-/>
+>
+  <label
+    className="c1"
+    color="text.light"
+    fontSize="10px"
+    fontWeight={700}
+    letterSpacing="0.2px"
+  />
+</div>
 `;
 
 exports[`Label Label width renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   width: 100%;
   margin: 0;
@@ -72,18 +110,32 @@ exports[`Label Label width renders 1`] = `
   letter-spacing: 0.2px;
 }
 
-<label
+<div
   className="c0"
-  color="text.light"
-  fontSize="10px"
-  fontWeight={700}
-  letterSpacing="0.2px"
-  width={0.5}
-/>
+>
+  <label
+    className="c1"
+    color="text.light"
+    fontSize="10px"
+    fontWeight={700}
+    letterSpacing="0.2px"
+    width={0.5}
+  />
+</div>
 `;
 
 exports[`Label it renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: block;
   width: 100%;
   margin: 0;
@@ -97,11 +149,15 @@ exports[`Label it renders 1`] = `
   letter-spacing: 0.2px;
 }
 
-<label
+<div
   className="c0"
-  color="text.light"
-  fontSize="10px"
-  fontWeight={700}
-  letterSpacing="0.2px"
-/>
+>
+  <label
+    className="c1"
+    color="text.light"
+    fontSize="10px"
+    fontWeight={700}
+    letterSpacing="0.2px"
+  />
+</div>
 `;

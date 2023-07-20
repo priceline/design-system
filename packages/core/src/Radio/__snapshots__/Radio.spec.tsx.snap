@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio Disabled, rendering 1`] = `
-.c2 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,16 +19,16 @@ exports[`Radio Disabled, rendering 1`] = `
   width: 28px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
-.c0 {
+.c1 {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -27,66 +37,80 @@ exports[`Radio Disabled, rendering 1`] = `
   z-index: 0;
 }
 
-.c1 ~ svg {
+.c2 ~ svg {
   border: 1px solid transparent;
   border-radius: 50%;
   padding: 2px;
 }
 
-.c1:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c1:focus ~ svg {
+.c2:focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
 }
 
-.c1:checked ~ svg {
+.c2:checked ~ svg {
   color: #0068ef;
 }
 
-.c1:disabled ~ svg {
+.c2:disabled ~ svg {
   color: #c0cad5;
 }
 
-.c4 {
+.c5 {
   vertical-align: middle;
 }
 
 <div
   className="c0"
-  color="primary"
-  disabled={true}
 >
-  <input
+  <div
     className="c1"
     color="primary"
     disabled={true}
-    size={24}
-    type="radio"
-  />
-  <svg
-    aria-hidden={true}
-    className="c2 c3 c4"
-    fill="currentcolor"
-    focusable={false}
-    height={28}
-    role="img"
-    tabIndex={-1}
-    viewBox="0 0 24 24"
-    width={28}
-    xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+    <input
+      className="c2"
+      color="primary"
+      disabled={true}
+      size={24}
+      type="radio"
     />
-  </svg>
+    <svg
+      aria-hidden={true}
+      className="c3 c4 c5"
+      fill="currentcolor"
+      focusable={false}
+      height={28}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={28}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+      />
+    </svg>
+  </div>
 </div>
 `;
 
 exports[`Radio Not Selected, rendering 1`] = `
-.c2 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -94,20 +118,20 @@ exports[`Radio Not Selected, rendering 1`] = `
   width: 28px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
-.c0 {
+.c1 {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c0:hover > svg {
+.c1:hover > svg {
   color: #0068ef;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -116,64 +140,78 @@ exports[`Radio Not Selected, rendering 1`] = `
   z-index: 0;
 }
 
-.c1 ~ svg {
+.c2 ~ svg {
   border: 1px solid transparent;
   border-radius: 50%;
   padding: 2px;
 }
 
-.c1:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c1:focus ~ svg {
+.c2:focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
 }
 
-.c1:checked ~ svg {
+.c2:checked ~ svg {
   color: #0068ef;
 }
 
-.c1:disabled ~ svg {
+.c2:disabled ~ svg {
   color: #c0cad5;
 }
 
-.c4 {
+.c5 {
   vertical-align: middle;
 }
 
 <div
   className="c0"
-  color="primary"
 >
-  <input
+  <div
     className="c1"
     color="primary"
-    size={24}
-    type="radio"
-  />
-  <svg
-    aria-hidden={true}
-    className="c2 c3 c4"
-    fill="currentcolor"
-    focusable={false}
-    height={28}
-    role="img"
-    tabIndex={-1}
-    viewBox="0 0 24 24"
-    width={28}
-    xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+    <input
+      className="c2"
+      color="primary"
+      size={24}
+      type="radio"
     />
-  </svg>
+    <svg
+      aria-hidden={true}
+      className="c3 c4 c5"
+      fill="currentcolor"
+      focusable={false}
+      height={28}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={28}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+      />
+    </svg>
+  </div>
 </div>
 `;
 
 exports[`Radio Selected, rendering 1`] = `
-.c2 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -181,20 +219,20 @@ exports[`Radio Selected, rendering 1`] = `
   width: 28px;
 }
 
-.c3 {
+.c4 {
   outline: none;
 }
 
-.c0 {
+.c1 {
   display: inline-block;
   color: #c0cad5;
 }
 
-.c0:hover > svg {
+.c1:hover > svg {
   color: #049 !important;
 }
 
-.c1 {
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -203,60 +241,64 @@ exports[`Radio Selected, rendering 1`] = `
   z-index: 0;
 }
 
-.c1 ~ svg {
+.c2 ~ svg {
   border: 1px solid transparent;
   border-radius: 50%;
   padding: 2px;
 }
 
-.c1:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c1:focus ~ svg {
+.c2:focus ~ svg {
   border: 1px solid #c0cad5;
   background-color: #f4f6f8;
 }
 
-.c1:checked ~ svg {
+.c2:checked ~ svg {
   color: #0068ef;
 }
 
-.c1:disabled ~ svg {
+.c2:disabled ~ svg {
   color: #c0cad5;
 }
 
-.c4 {
+.c5 {
   vertical-align: middle;
 }
 
 <div
-  checked={true}
   className="c0"
-  color="primary"
 >
-  <input
+  <div
     checked={true}
     className="c1"
     color="primary"
-    size={24}
-    type="radio"
-  />
-  <svg
-    aria-hidden={true}
-    className="c2 c3 c4"
-    fill="currentcolor"
-    focusable={false}
-    height={28}
-    role="img"
-    tabIndex={-1}
-    viewBox="0 0 24 24"
-    width={28}
-    xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+    <input
+      checked={true}
+      className="c2"
+      color="primary"
+      size={24}
+      type="radio"
     />
-  </svg>
+    <svg
+      aria-hidden={true}
+      className="c3 c4 c5"
+      fill="currentcolor"
+      focusable={false}
+      height={28}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={28}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 7c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0-5C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+      />
+    </svg>
+  </div>
 </div>
 `;

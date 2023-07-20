@@ -84,7 +84,7 @@ const Flag: React.FC<InferProps<typeof propTypes>> = ({
   width,
   ...props
 }) => (
-  <StyledFlex width={width} {...props} ml={[0, -2]}>
+  <StyledFlex width={width} {...props} ml={[0, -2]} data-testid='flag'>
     <RelativeHide xs>
       <FlagShadow width='4px' mr={-2} mb={-2} color={hasPaletteColor({ color, ...props }) ? color : bg} />
     </RelativeHide>
@@ -95,6 +95,7 @@ const Flag: React.FC<InferProps<typeof propTypes>> = ({
       pl={pl}
       pr={pr}
       py={py}
+      data-testid='flag-body'
     >
       {children}
     </FlagBody>

@@ -1,7 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders default 1`] = `
-.c3 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  background-color: #0068ef;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -9,27 +35,11 @@ exports[`Avatar renders default 1`] = `
   width: 24px;
 }
 
-.c4 {
+.c5 {
   outline: none;
 }
 
-.c1 {
-  background-color: #0068ef;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  padding: 8px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,34 +61,48 @@ exports[`Avatar renders default 1`] = `
   className="c0"
 >
   <div
-    alt="avatar"
-    className="c1 c2"
-    color="primary"
-    role="img"
-    size={40}
+    className="c1"
   >
-    <svg
-      aria-hidden={true}
-      className="c3 c4"
-      fill="currentcolor"
-      focusable={false}
-      height={24}
+    <div
+      alt="avatar"
+      className="c2 c3"
+      color="primary"
       role="img"
-      tabIndex={-1}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+      size={40}
     >
-      <path
-        d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"
-      />
-    </svg>
+      <svg
+        aria-hidden={true}
+        className="c4 c5"
+        fill="currentcolor"
+        focusable={false}
+        height={24}
+        role="img"
+        tabIndex={-1}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Avatar renders initials 1`] = `
-.c1 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
   background-color: #0068ef;
   color: #fff;
   width: 40px;
@@ -87,18 +111,18 @@ exports[`Avatar renders initials 1`] = `
   padding: 8px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c3 {
+.c4 {
   font-size: 14px;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,17 +144,21 @@ exports[`Avatar renders initials 1`] = `
   className="c0"
 >
   <div
-    alt="avatar"
-    className="c1 c2"
-    color="primary"
-    role="img"
-    size={40}
+    className="c1"
   >
     <div
-      className="c3"
-      fontSize={1}
+      alt="avatar"
+      className="c2 c3"
+      color="primary"
+      role="img"
+      size={40}
     >
-      WS
+      <div
+        className="c4"
+        fontSize={1}
+      >
+        WS
+      </div>
     </div>
   </div>
 </div>
@@ -138,7 +166,17 @@ exports[`Avatar renders initials 1`] = `
 
 exports[`Avatar renders mr elon 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
   background-color: #0068ef;
   color: #fff;
   width: 40px;
@@ -197,16 +235,6 @@ exports[`Avatar renders mr elon 1`] = `
   border-radius: 50%;
   background-size: cover;
   background-image: url(https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg);
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 <div

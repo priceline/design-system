@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { space } from 'styled-system'
+import type { SliderProps } from 'rc-slider'
 
+import styledSystemPropTypes from '@styled-system/prop-types'
+import PropTypes from 'prop-types'
 import Range from 'rc-slider'
-import styleSlider from './styleSlider'
+import styleSlider from './Slider.styled'
 
 const _RangeSlider = styleSlider(Range)
 
-const RangeSlider = (props) => {
+const RangeSlider = (props: SliderProps) => {
   return <_RangeSlider {...props} />
 }
 
@@ -18,7 +18,7 @@ RangeSlider.defaultProps = {
 }
 
 RangeSlider.propTypes = {
-  ...space.propTypes,
+  ...styledSystemPropTypes.space,
   color: PropTypes.string,
 }
 

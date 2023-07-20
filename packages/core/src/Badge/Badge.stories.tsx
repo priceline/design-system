@@ -3,7 +3,8 @@ import React from 'react'
 import { Badge, textTransformValues } from '..'
 import type { ColorSchemeName } from '../theme'
 import { argTypes } from './Badge.stories.args'
-import { colorSchemeNames } from '../storybook/args'
+import { colorNames, colorSchemeNames } from '../storybook/args'
+import { DeprecatedColorsNote } from '../storybook/utils/DeprecatedColorsNote'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
@@ -41,6 +42,28 @@ LightBlueAndTextCustom.args = {
   bg: 'primary.light',
   color: 'text',
 }
+
+export const BackgroundColor = () => (
+  <>
+    <DeprecatedColorsNote />
+    {[...colorNames, 'lightGreen', 'lightRed', 'lightBlue'].map((color) => (
+      <Badge m={3} p={3} bg={color} key={color}>
+        {color}
+      </Badge>
+    ))}
+  </>
+)
+BackgroundColor.storyName = 'Background Color (bg prop)'
+
+export const Sizes = () => (
+  <>
+    {['small', 'medium'].map((size) => (
+      <Badge m={3} size={size as 'small' | 'medium'} key={size}>
+        {size}
+      </Badge>
+    ))}
+  </>
+)
 
 const TextTransformTemplate = () => {
   return (

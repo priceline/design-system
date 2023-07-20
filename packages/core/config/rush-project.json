@@ -1,0 +1,15 @@
+{
+  "operationSettings": [
+    {
+      "operationName": "build",
+      "outputFolderNames": ["dist", "types"]
+    },
+    {
+      "operationName": "test:ci",
+      "outputFolderNames": ["coverage"]
+    },
+    {
+      "operationName": "lint"
+    }
+  ]
+}

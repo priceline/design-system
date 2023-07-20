@@ -105,7 +105,6 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
   linkVariation,
   linkColor,
   text,
-  /* eslint-disable @typescript-eslint/naming-convention */
   URLProps,
   ...props
 }) => {

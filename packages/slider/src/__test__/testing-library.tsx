@@ -1,19 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { render, RenderResult } from '@testing-library/react'
+import type { RenderOptions, RenderResult } from '@testing-library/react'
+import type { ReactElement } from 'react'
+
+import { render } from '@testing-library/react'
 import { ThemeProvider } from 'pcln-design-system'
 
-const WithThemeProvider = ({ children }) => <ThemeProvider>{children}</ThemeProvider>
-WithThemeProvider.propTypes = {
-  children: PropTypes.node,
+const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
+  return <ThemeProvider>{children}</ThemeProvider>
 }
 
-// @ts-ignore
-const customRender: (Element, any?) => RenderResult = (ui, options) =>
-  render(ui, { wrapper: WithThemeProvider, ...options })
+const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>): RenderResult =>
+  render(ui, { wrapper: AllTheProviders, ...options })
 
-// re-export everything
 export * from '@testing-library/react'
-
-// override render method
 export { customRender as render }

@@ -2,32 +2,60 @@
 
 exports[`Container renders with default theme max-width 1`] = `
 .c0 {
-  max-width: 1280px;
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1 {
+  max-width: 1280px;
+}
+
+.c2 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 <div
-  className="c0 c1"
-/>
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  />
+</div>
 `;
 
 exports[`Container renders with maxWidth 1`] = `
 .c0 {
-  max-width: 1024px;
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1 {
+  max-width: 1024px;
+}
+
+.c2 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 <div
-  className="c0 c1"
-/>
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  />
+</div>
 `;

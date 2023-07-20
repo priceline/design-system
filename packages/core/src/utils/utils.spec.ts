@@ -264,24 +264,24 @@ describe('utils', () => {
 
       expect(getLinkStylesOn('primary.base')(props)).toEqual(
         expect.arrayContaining([
-          'color: ',
+          'color:',
           textLightest,
-          '; font-weight: ',
+          ';font-weight:',
           'inherit',
-          '; text-decoration: underline; :hover { color: ',
+          ';text-decoration:underline;:hover{color:',
           textLightest,
-          '; }',
+          ';}',
         ])
       )
       expect(getLinkStylesOn('highlight.tone')(props)).toEqual(
         expect.arrayContaining([
-          'color: ',
+          'color:',
           textBase,
-          '; font-weight: ',
+          ';font-weight:',
           'inherit',
-          '; text-decoration: underline; :hover { color: ',
+          ';text-decoration:underline;:hover{color:',
           textBase,
-          '; }',
+          ';}',
         ])
       )
     })
@@ -289,13 +289,13 @@ describe('utils', () => {
     test('returns correct link styles when only link hover does not meet contrast', () => {
       expect(getLinkStylesOn('background.darkest')(props)).toEqual(
         expect.arrayContaining([
-          'color: ',
+          'color:',
           textLightest,
-          '; font-weight: ',
+          ';font-weight:',
           'inherit',
-          '; text-decoration: underline; :hover { color: ',
+          ';text-decoration:underline;:hover{color:',
           textLightest,
-          '; }',
+          ';}',
         ])
       )
     })
@@ -307,13 +307,13 @@ describe('utils', () => {
         })
       ).toEqual(
         expect.arrayContaining([
-          'color: ',
+          'color:',
           textBase,
-          '; font-weight: ',
+          ';font-weight:',
           'inherit',
-          '; text-decoration: underline; :hover { color: ',
+          ';text-decoration:underline;:hover{color:',
           textBase,
-          '; }',
+          ';}',
         ])
       )
     })
@@ -321,41 +321,40 @@ describe('utils', () => {
     test('returns correct font weight when isBold is true', () => {
       expect(getLinkStylesOn('primary.base', 'text.lightest', 'text.base', true)(props)).toEqual(
         expect.arrayContaining([
-          'color: ',
+          'color:',
           textLightest,
-          '; font-weight: ',
+          ';font-weight:',
           'bold',
-          '; text-decoration: underline; :hover { color: ',
+          ';text-decoration:underline;:hover{color:',
           textLightest,
-          '; }',
+          ';}',
         ])
       )
     })
 
     test('can override the link light and dark color defaults', () => {
       const borderLight = props.theme.palette.border.light
-      const primaryShade = props.theme.palette.primary.shade
 
       expect(getLinkStylesOn('primary.base', 'border.light', 'primary.shade')(props)).toEqual(
         expect.arrayContaining([
-          'color: ',
+          'color:',
           borderLight,
-          '; font-weight: ',
+          ';font-weight:',
           'inherit',
-          '; text-decoration: underline; :hover { color: ',
+          ';text-decoration:underline;:hover{color:',
           borderLight,
-          '; }',
+          ';}',
         ])
       )
       expect(getLinkStylesOn('highlight.tone', 'border.light', 'primary.shade')(props)).toEqual(
         expect.arrayContaining([
-          'color: ',
-          primaryShade,
-          '; font-weight: ',
+          'color:',
+          '#002f6d',
+          ';font-weight:',
           'inherit',
-          '; text-decoration: underline; :hover { color: ',
-          primaryShade,
-          '; }',
+          ';text-decoration:underline;:hover{color:',
+          '#002f6d',
+          ';}',
         ])
       )
     })
@@ -407,9 +406,9 @@ describe('utils', () => {
       const props = { theme: createTheme(), bg: 'background', color: 'primary' }
       expect(getByPalette(props)).toEqual(
         expect.arrayContaining([
-          'background-color: ',
+          'background-color:',
           props.theme.palette.background.base,
-          ';color: ',
+          ';color:',
           props.theme.palette.primary.base,
           ';',
         ])
@@ -428,31 +427,31 @@ describe('utils', () => {
 
     test('returns the correct style', () => {
       expect(color({ ...props, bg: 'background' })).toEqual(
-        expect.arrayContaining(['background-color: ', props.theme.palette.background.base, ';'])
+        expect.arrayContaining(['background-color:', props.theme.palette.background.base, ';'])
       )
       expect(color({ ...props, color: 'primary' })).toEqual(
         expect.arrayContaining([
-          'background-color: ',
+          'background-color:',
           props.theme.palette.primary.base,
-          ';\ncolor: ',
+          ';color:',
           props.theme.palette.text.lightest,
           ';',
         ])
       )
       expect(color({ ...props, color: 'notify' })).toEqual(
         expect.arrayContaining([
-          'background-color: ',
+          'background-color:',
           props.theme.palette.notify.base,
-          ';\ncolor: ',
+          ';color:',
           props.theme.palette.text.base,
           ';',
         ])
       )
       expect(color({ ...props, bg: 'background', color: 'primary' })).toEqual(
         expect.arrayContaining([
-          'background-color: ',
+          'background-color:',
           props.theme.palette.background.base,
-          ';color: ',
+          ';color:',
           props.theme.palette.primary.base,
           ';',
         ])
@@ -460,25 +459,25 @@ describe('utils', () => {
 
       // legacy support
       expect(color({ ...props, color: 'text' })).toEqual(
-        expect.arrayContaining(['color: ', props.theme.colors.text, ';'])
+        expect.arrayContaining(['color:', props.theme.colors.text, ';'])
       )
       expect(color({ ...props, color: 'text', bg: 'blue' })).toEqual(
         expect.arrayContaining([
-          'background-color: ',
+          'background-color:',
           props.theme.colors.blue,
-          ';color: ',
+          ';color:',
           props.theme.colors.text,
           ';',
         ])
       )
       expect(color({ ...props, color: 'blue' })).toEqual(
-        expect.arrayContaining(['color: ', props.theme.colors.blue, ';'])
+        expect.arrayContaining(['color:', props.theme.colors.blue, ';'])
       )
       expect(color({ ...props, color: 'blue', bg: 'green' })).toEqual(
         expect.arrayContaining([
-          'background-color: ',
+          'background-color:',
           props.theme.colors.green,
-          ';color: ',
+          ';color:',
           props.theme.colors.blue,
           ';',
         ])

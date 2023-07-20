@@ -1,6 +1,6 @@
-import React from 'react'
 import { Divider, Flex } from '..'
 import styled from 'styled-components'
+import { colorNames } from '../storybook/args'
 
 const description = 'Horizontal rule with settings for padding, margin, width, and borderColor'
 const ColumnFlex = styled(Flex)`
@@ -20,11 +20,24 @@ export default {
 }
 
 export const Default = () => <Divider />
-export const Margin = () => <Divider m={3} />
+export const Margin = () => (
+  <>
+    {[0, 1, 2, 3, 4, 5, 6].map((margin) => (
+      <Divider m={margin} key={margin} />
+    ))}
+  </>
+)
 export const Width = () => <Divider p={3} width={1 / 2} />
 export const PixelWidth = () => <Divider width='256px' />
 export const VWWidth = () => <Divider width='50vw' />
-export const BorderColor = () => <Divider m={3} borderColor='blue' />
+export const BorderColor = () => (
+  <>
+    {colorNames.map((name) => (
+      <Divider borderColor={name} key={name} />
+    ))}
+  </>
+)
+
 export const DirectionalMargin = () => (
   <div>
     <Divider mt={3} />

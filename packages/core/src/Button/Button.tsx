@@ -263,7 +263,6 @@ const iconButtonSizes = {
   extraLarge: 24,
 }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 function getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren }: StyledButtonProps) {
   const hasIcon = !!(IconLeft || IconRight)
   const sizeIndex = Array.isArray(size) ? size[0] : size
@@ -323,7 +322,6 @@ const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) =>
   ${(props) => compose(width, height, space, boxShadow)(props)}
 `
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const ButtonIcon = ({ Component, ...props }) => {
   return Component ? <Component {...props} /> : null
 }

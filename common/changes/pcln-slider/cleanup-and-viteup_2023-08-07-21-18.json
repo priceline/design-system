@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "convert build to Vite and tests to Vitest",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

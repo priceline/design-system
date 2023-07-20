@@ -1,25 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select renders 1`] = `
-.c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
-}
-
-.c4 {
-  outline: none;
-}
-
 .c0 {
-  width: 100%;
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1 {
+  width: 100%;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,11 +26,25 @@ exports[`Select renders 1`] = `
   align-items: center;
 }
 
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
 .c5 {
+  outline: none;
+}
+
+.c6 {
   pointer-events: none;
 }
 
-.c2 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -53,19 +63,19 @@ exports[`Select renders 1`] = `
   border-radius: 12px;
 }
 
-.c2::-ms-expand {
+.c3::-ms-expand {
   display: none;
 }
 
-.c2:disabled,
-.c2[readOnly] {
+.c3:disabled,
+.c3[readOnly] {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
   opacity: 1;
 }
 
-.c2:focus {
+.c3:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
@@ -76,42 +86,46 @@ exports[`Select renders 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c2 {
+  .c3 {
     font-size: 14px;
   }
 }
 
 <div
-  className="c0 c1"
-  width={1}
+  className="c0"
 >
-  <select
-    className="c2"
-    fontSize={
-      Array [
-        2,
-        null,
-        1,
-      ]
-    }
-    size="lg"
-  />
-  <svg
-    aria-hidden={true}
-    className="c3 c4 c5"
-    color="text.light"
-    fill="currentcolor"
-    focusable={false}
-    height={24}
-    role="img"
-    tabIndex={-1}
-    viewBox="0 0 24 24"
-    width={24}
-    xmlns="http://www.w3.org/2000/svg"
+  <div
+    className="c1 c2"
+    width={1}
   >
-    <path
-      d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+    <select
+      className="c3"
+      fontSize={
+        [
+          2,
+          null,
+          1,
+        ]
+      }
+      size="lg"
     />
-  </svg>
+    <svg
+      aria-hidden={true}
+      className="c4 c5 c6"
+      color="text.light"
+      fill="currentcolor"
+      focusable={false}
+      height={24}
+      role="img"
+      tabIndex={-1}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+      />
+    </svg>
+  </div>
 </div>
 `;

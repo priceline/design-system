@@ -30,10 +30,10 @@ const Template = (args) => <BackgroundImage {...args} />
 
 export const _BackgroundImage = Template.bind({})
 
-const StoryChildren = () => (
+const StoryChildren = ({ text = 'Hello' }) => (
   <Box p={4}>
     <Text fontSize={6} fontWeight='bold' textAlign='center' color='white'>
-      Hello
+      {text}
     </Text>
   </Box>
 )
@@ -42,7 +42,7 @@ export const FixedHeight = Template.bind({})
 FixedHeight.args = {
   height: '320px',
   width: '360px',
-  children: <StoryChildren />,
+  children: <StoryChildren text='This image should be 320px tall' />,
 }
 
 export const FixedIntHeight = Template.bind({})
@@ -50,7 +50,7 @@ FixedIntHeight.storyName = 'Fixed Height (Integer)'
 FixedIntHeight.args = {
   height: 400,
   width: '360px',
-  children: <StoryChildren />,
+  children: <StoryChildren text='This image should be 400px tall' />,
 }
 
 export const Responsive = Template.bind({})
@@ -68,7 +68,7 @@ const RoundedTemplate = (args) => (
     <BackgroundImage {...args} />
     <Card rounded='bottom' height='100px'>
       <Text textAlign='center' my={3}>
-        Hello Priceline!
+        The background image should be rounded only on top
       </Text>
     </Card>
   </Box>
@@ -88,3 +88,10 @@ BackgroundPosition.args = {
   children: <StoryChildren />,
   backgroundPosition: 'left',
 }
+
+export const Parallax = Template.bind({})
+Parallax.args = {
+  children: <StoryChildren />,
+  variation: 'parallax',
+}
+Parallax.storyName = 'Variation: Parallax'

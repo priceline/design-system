@@ -2,6 +2,16 @@
 
 exports[`Input it renders 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -20,41 +30,41 @@ exports[`Input it renders 1`] = `
   border-radius: 12px;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
+.c1:disabled,
+.c1:-moz-read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:disabled,
-.c0:read-only {
+.c1:disabled,
+.c1:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
@@ -65,27 +75,41 @@ exports[`Input it renders 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c0 {
+  .c1 {
     font-size: 14px;
   }
 }
 
-<input
+<div
   className="c0"
-  fontSize={
-    Array [
-      2,
-      null,
-      1,
-    ]
-  }
-  id="fake-test-id"
-  size="lg"
-/>
+>
+  <input
+    className="c1"
+    fontSize={
+      [
+        2,
+        null,
+        1,
+      ]
+    }
+    id="fake-test-id"
+    size="lg"
+  />
+</div>
 `;
 
 exports[`Input it renders an input element with a really large padding and margin 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -106,41 +130,41 @@ exports[`Input it renders an input element with a really large padding and margi
   border-radius: 12px;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
+.c1:disabled,
+.c1:-moz-read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:disabled,
-.c0:read-only {
+.c1:disabled,
+.c1:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
@@ -151,27 +175,41 @@ exports[`Input it renders an input element with a really large padding and margi
 }
 
 @media screen and (min-width:40em) {
-  .c0 {
+  .c1 {
     font-size: 14px;
   }
 }
 
-<input
+<div
   className="c0"
-  fontSize={
-    Array [
-      2,
-      null,
-      1,
-    ]
-  }
-  id="fake-test-id"
-  size="lg"
-/>
+>
+  <input
+    className="c1"
+    fontSize={
+      [
+        2,
+        null,
+        1,
+      ]
+    }
+    id="fake-test-id"
+    size="lg"
+  />
+</div>
 `;
 
 exports[`Input it renders an input element with a red border with a color prop is passed 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -190,41 +228,41 @@ exports[`Input it renders an input element with a red border with a color prop i
   border-radius: 12px;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
+.c1:disabled,
+.c1:-moz-read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:disabled,
-.c0:read-only {
+.c1:disabled,
+.c1:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #c00;
   box-shadow: 0 0 0 2px #c00;
@@ -235,28 +273,42 @@ exports[`Input it renders an input element with a red border with a color prop i
 }
 
 @media screen and (min-width:40em) {
-  .c0 {
+  .c1 {
     font-size: 14px;
   }
 }
 
-<input
+<div
   className="c0"
-  color="red"
-  fontSize={
-    Array [
-      2,
-      null,
-      1,
-    ]
-  }
-  id="fake-test-id"
-  size="lg"
-/>
+>
+  <input
+    className="c1"
+    color="red"
+    fontSize={
+      [
+        2,
+        null,
+        1,
+      ]
+    }
+    id="fake-test-id"
+    size="lg"
+  />
+</div>
 `;
 
 exports[`Input it renders an input element with large text 1`] = `
 .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -275,50 +327,54 @@ exports[`Input it renders an input element with large text 1`] = `
   border-radius: 12px;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
+.c1:disabled,
+.c1:-moz-read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:disabled,
-.c0:read-only {
+.c1:disabled,
+.c1:read-only {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
 }
 
-<input
+<div
   className="c0"
-  fontSize={4}
-  id="fake-test-id"
-  size="lg"
-/>
+>
+  <input
+    className="c1"
+    fontSize={4}
+    id="fake-test-id"
+    size="lg"
+  />
+</div>
 `;

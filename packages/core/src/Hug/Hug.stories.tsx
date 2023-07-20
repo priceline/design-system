@@ -1,4 +1,3 @@
-import React from 'react'
 import { Star } from 'pcln-icons'
 
 import { Hug, Hide, Card, Text } from '..'
@@ -45,7 +44,6 @@ export default {
   },
 }
 
-// eslint-disable-next-line react/prop-types
 const Template = ({ icon, ...rest }) => {
   const SelectedIcon = (icon && iconMap[icon]) || null
 

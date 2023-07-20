@@ -1,10 +1,11 @@
+import { Preview } from '@storybook/react'
 import { a11y } from './parameters/a11y'
 import { backgrounds } from './parameters/backgrounds'
 import { viewport } from './parameters/viewport'
 
-export { decorators } from './decorators'
+import { decorators } from './decorators'
 
-export const parameters = {
+const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     expanded: true,
@@ -18,3 +19,10 @@ export const parameters = {
   backgrounds,
   viewport,
 }
+
+const preview: Preview = {
+  parameters,
+  decorators,
+}
+
+export default preview

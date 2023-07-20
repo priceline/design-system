@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from 'react'
 import { Box, Flex, Text, Card, createTheme } from '..'
 import type { ColorScheme as ColorSchemeType } from '..'
 import { ThemeConsumer } from 'styled-components'

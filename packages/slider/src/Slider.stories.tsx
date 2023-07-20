@@ -1,11 +1,9 @@
 /* eslint-disable react/no-children-prop */
-import React from 'react'
 import Component from '@reach/component-component'
-
 import { ThemeProvider } from 'pcln-design-system'
 import RangeSlider, { Slider } from '.'
 
-const formatValueText = (value) => `${value} units`
+const formatValueText = (value: number) => `${value} units`
 
 const untdTheme = {
   font: "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
@@ -110,8 +108,8 @@ export const Basic = () => (
       }}
       children={({ state, setState }) => (
         <RangeSlider
-          ariaLabelForHandle={['Handle One', undefined]}
-          ariaLabelledByForHandle={[undefined, 'handle_2']}
+          ariaLabelForHandle={['Handle One', 'Handle Two']}
+          ariaLabelledByForHandle={['handle_1', 'handle_2']}
           ariaValueTextFormatterForHandle={[formatValueText, formatValueText]}
           value={state.value}
           onChange={(value) => {
@@ -127,9 +125,7 @@ export const RangeSliderWithSingleValue = () => (
   <RangeSlider ariaLabelForHandle={['Handle One']} value={[32]} />
 )
 
-RangeSliderWithSingleValue.story = {
-  name: 'RangeSlider with Single value',
-}
+RangeSliderWithSingleValue.storyName = 'RangeSlider with Single value'
 
 export const _Slider = () => <Slider ariaLabelForHandle='Handle' value={[32]} />
 
@@ -141,9 +137,7 @@ export const MultipleValues = () => (
   />
 )
 
-MultipleValues.story = {
-  name: 'Multiple values',
-}
+MultipleValues.storyName = 'Multiple values'
 
 export const Colors = () => (
   <div>
@@ -155,7 +149,6 @@ export const Colors = () => (
 )
 
 export const ThemedColors = () => (
-  // @ts-ignore
   <ThemeProvider theme={untdTheme}>
     <RangeSlider value={[8, 16]} color='primary' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />
     <RangeSlider value={[16, 32]} color='secondary' mb={2} ariaLabelForHandle={['handle_1', 'handle_2']} />

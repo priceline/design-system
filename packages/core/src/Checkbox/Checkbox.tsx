@@ -103,7 +103,6 @@ const StyledInput = styled.input`
 `
 
 const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
-  // eslint-disable-next-line react/prop-types
   const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
 
   const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)
@@ -123,7 +122,6 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
   const borderAdjustedSize = size + 4
   return (
     <CheckBoxWrapper
-      // eslint-disable-next-line react/prop-types
       theme={props.theme}
       color={props.color}
       disabled={disabled}

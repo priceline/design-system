@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`theme snapshot 1`] = `
-Object {
+{
   "bold": 700,
-  "borderRadii": Object {
+  "borderRadii": {
     "2xl": "24px",
     "3xl": "32px",
     "action-lg": "12px",
@@ -18,108 +18,108 @@ Object {
     "xl": "16px",
     "xsm": "2px",
   },
-  "breakpoints": Array [
+  "breakpoints": [
     "32em",
     "40em",
     "48em",
     "64em",
     "80em",
   ],
-  "colorStyles": Object {
-    "blueOnLightBlue": Object {
+  "colorStyles": {
+    "blueOnLightBlue": {
       "backgroundColor": "#e8f2ff",
       "color": "#0068ef",
     },
-    "blueOnWhite": Object {
+    "blueOnWhite": {
       "backgroundColor": "#fff",
       "color": "#0068ef",
     },
-    "danger": Object {
+    "danger": {
       "backgroundColor": "#c00",
       "color": "#fff",
     },
-    "grayOnWhite": Object {
+    "grayOnWhite": {
       "backgroundColor": "#fff",
       "color": "#4f6f8f",
     },
-    "greenOnLightGreen": Object {
+    "greenOnLightGreen": {
       "backgroundColor": "#ecf7ec",
       "color": "#0a0",
     },
-    "greenOnWhite": Object {
+    "greenOnWhite": {
       "backgroundColor": "#fff",
       "color": "#0a0",
     },
-    "info": Object {
+    "info": {
       "backgroundColor": "#f4f6f8",
       "color": "#001833",
     },
-    "purpleOnLightPurple": Object {
+    "purpleOnLightPurple": {
       "backgroundColor": "#f5ebfa",
       "color": "#70b",
     },
-    "purpleOnWhite": Object {
+    "purpleOnWhite": {
       "backgroundColor": "#fff",
       "color": "#70b",
     },
-    "redOnLightRed": Object {
+    "redOnLightRed": {
       "backgroundColor": "#fbebeb",
       "color": "#c00",
     },
-    "redOnWhite": Object {
+    "redOnWhite": {
       "backgroundColor": "#fff",
       "color": "#c00",
     },
-    "success": Object {
+    "success": {
       "backgroundColor": "#0a0",
       "color": "#fff",
     },
-    "textOnLightGray": Object {
+    "textOnLightGray": {
       "backgroundColor": "#f4f6f8",
       "color": "#001833",
     },
-    "textOnOrange": Object {
+    "textOnOrange": {
       "backgroundColor": "#f68013",
       "color": "#001833",
     },
-    "textOnWhite": Object {
+    "textOnWhite": {
       "backgroundColor": "#fff",
       "color": "#001833",
     },
-    "warning": Object {
+    "warning": {
       "backgroundColor": "#f68013",
       "color": "#001833",
     },
-    "whiteOnBlue": Object {
+    "whiteOnBlue": {
       "backgroundColor": "#0068ef",
       "color": "#fff",
     },
-    "whiteOnDarkOrange": Object {
+    "whiteOnDarkOrange": {
       "backgroundColor": "#f06f20",
       "color": "#fff",
     },
-    "whiteOnGray": Object {
+    "whiteOnGray": {
       "backgroundColor": "#4f6f8f",
       "color": "#fff",
     },
-    "whiteOnGreen": Object {
+    "whiteOnGreen": {
       "backgroundColor": "#0a0",
       "color": "#fff",
     },
-    "whiteOnPurple": Object {
+    "whiteOnPurple": {
       "backgroundColor": "#70b",
       "color": "#fff",
     },
-    "whiteOnRed": Object {
+    "whiteOnRed": {
       "backgroundColor": "#c00",
       "color": "#fff",
     },
-    "whiteOnText": Object {
+    "whiteOnText": {
       "backgroundColor": "#001833",
       "color": "#fff",
     },
   },
-  "colors": Object {
+  "colors": {
     "background": "#edf0f3",
     "black": "#000",
     "blue": "#0068ef",
@@ -196,7 +196,7 @@ Object {
     "white": "#fff",
     "yellow": "#fedc2a",
   },
-  "duration": Object {
+  "duration": {
     "duration-100": "100ms",
     "duration-200": "200ms",
     "duration-250": "250ms",
@@ -208,7 +208,7 @@ Object {
     "slowest": "600ms",
   },
   "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
-  "fontSizes": Array [
+  "fontSizes": [
     12,
     14,
     16,
@@ -219,28 +219,28 @@ Object {
     56,
     72,
   ],
-  "fontWeights": Object {
+  "fontWeights": {
     "bold": 700,
     "medium": 500,
     "regular": 500,
   },
-  "letterSpacings": Object {
+  "letterSpacings": {
     "caps": "0.025em",
     "normal": "normal",
   },
-  "lineHeights": Object {
+  "lineHeights": {
     "display": 1.25,
     "standard": 1.4,
   },
   "maxContainerWidth": "1280px",
-  "mediaQueries": Array [
+  "mediaQueries": [
     "@media screen and (min-width:32em)",
     "@media screen and (min-width:40em)",
     "@media screen and (min-width:48em)",
     "@media screen and (min-width:64em)",
     "@media screen and (min-width:80em)",
   ],
-  "opacity": Object {
+  "opacity": {
     "opacity-0": 0,
     "opacity-10": 0.1,
     "opacity-100": 1,
@@ -253,14 +253,14 @@ Object {
     "opacity-80": 0.8,
     "opacity-90": 0.9,
   },
-  "radii": Array [
+  "radii": [
     0,
     2,
     6,
   ],
   "radius": "2px",
   "regular": 500,
-  "scale": Object {
+  "scale": {
     "scale-0": 0,
     "scale-10": 0.1,
     "scale-100": 1,
@@ -276,7 +276,7 @@ Object {
     "scale-80": 0.8,
     "scale-90": 0.9,
   },
-  "shadows": Object {
+  "shadows": {
     "2xl": "0 -1px 0 0 rgba(0,0,0,0.03),0 4px 12px 0 rgba(0,0,0,0.16),0 12px 12px -4px rgba(0,0,0,0.16),0 24px 64px -2px rgba(0,0,0,0.16)",
     "lg": "0 -1px 0 0 rgba(0,0,0,0.03),0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)",
     "md": "0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)",
@@ -286,7 +286,7 @@ Object {
     "sm": "0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)",
     "xl": "0 -1px 0 0 rgba(0,0,0,0.03),0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)",
   },
-  "space": Array [
+  "space": [
     "0px",
     "4px",
     "8px",
@@ -295,80 +295,80 @@ Object {
     "64px",
     "128px",
   ],
-  "textShadows": Object {
+  "textShadows": {
     "md": "0 2px 4px rgba(0,0,0,0.5)",
     "sm": "0 1px 2px rgba(0,0,0,0.5)",
   },
-  "textStyles": Object {
-    "body0": Object {
+  "textStyles": {
+    "body0": {
       "fontSize": "12px",
       "fontWeight": 500,
       "lineHeight": 1.4,
     },
-    "body1": Object {
+    "body1": {
       "fontSize": "14px",
       "fontWeight": 500,
       "lineHeight": 1.4,
     },
-    "body2": Object {
+    "body2": {
       "fontSize": "16px",
       "fontWeight": 500,
       "lineHeight": 1.4,
     },
-    "display0": Object {
+    "display0": {
       "fontSize": "12px",
       "fontWeight": 700,
       "letterSpacing": "0.025em",
       "lineHeight": 1.25,
       "textTransform": "uppercase",
     },
-    "display1": Object {
+    "display1": {
       "fontSize": "14px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display2": Object {
+    "display2": {
       "fontSize": "16px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display3": Object {
+    "display3": {
       "fontSize": "20px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display4": Object {
+    "display4": {
       "fontSize": "24px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display5": Object {
+    "display5": {
       "fontSize": "32px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display6": Object {
+    "display6": {
       "fontSize": "40px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display7": Object {
+    "display7": {
       "fontSize": "56px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "display8": Object {
+    "display8": {
       "fontSize": "72px",
       "fontWeight": 700,
       "lineHeight": 1.25,
     },
-    "small": Object {
+    "small": {
       "fontSize": "10px",
       "fontWeight": 700,
       "lineHeight": 1.4,
     },
   },
-  "timingFunctions": Object {
+  "timingFunctions": {
     "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
     "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
     "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
@@ -379,80 +379,80 @@ Object {
     "standard-expressive": "cubic-bezier(0.4, 0.14, 0.3, 1)",
     "standard-productive": "cubic-bezier(0.2, 0, 0.38, 0.9)",
   },
-  "transitionDelays": Object {
+  "transitionDelays": {
     "large": "260ms",
     "medium": "160ms",
     "small": "60ms",
     "xLarge": "360ms",
   },
-  "typography": Object {
-    "article": Object {
+  "typography": {
+    "article": {
       "fontSize": "16px",
       "fontWeight": 500,
       "letterSpacing": "-0.006rem",
       "lineHeight": "28px",
     },
-    "articleBold": Object {
+    "articleBold": {
       "fontSize": "16px",
       "fontWeight": 700,
       "letterSpacing": "-0.006rem",
       "lineHeight": "28px",
     },
-    "caption": Object {
+    "caption": {
       "fontSize": "12px",
       "fontWeight": 500,
       "letterSpacing": "0.006rem",
       "lineHeight": "16px",
     },
-    "captionBold": Object {
+    "captionBold": {
       "fontSize": "12px",
       "fontWeight": 700,
       "letterSpacing": "0.006rem",
       "lineHeight": "16px",
     },
-    "disclaimer": Object {
+    "disclaimer": {
       "fontSize": "11px",
       "fontWeight": 500,
       "letterSpacing": "0.013rem",
       "lineHeight": "16px",
     },
-    "disclaimerBold": Object {
+    "disclaimerBold": {
       "fontSize": "11px",
       "fontWeight": 700,
       "letterSpacing": "0.013rem",
       "lineHeight": "16px",
     },
-    "heading1": Object {
+    "heading1": {
       "fontSize": "40px",
       "fontWeight": 700,
       "lineHeight": "48px",
     },
-    "heading2": Object {
+    "heading2": {
       "fontSize": "32px",
       "fontWeight": 700,
       "lineHeight": "40px",
     },
-    "heading3": Object {
+    "heading3": {
       "fontSize": "26px",
       "fontWeight": 700,
       "lineHeight": "32px",
     },
-    "heading4": Object {
+    "heading4": {
       "fontSize": "20px",
       "fontWeight": 700,
       "lineHeight": "24px",
     },
-    "heading5": Object {
+    "heading5": {
       "fontSize": "16px",
       "fontWeight": 700,
       "lineHeight": "20px",
     },
-    "heading6": Object {
+    "heading6": {
       "fontSize": "14px",
       "fontWeight": 700,
       "lineHeight": "16px",
     },
-    "highlight": Object {
+    "highlight": {
       "caps": true,
       "fontSize": "10px",
       "fontWeight": 500,
@@ -460,7 +460,7 @@ Object {
       "lineHeight": "12px",
       "textTransform": "uppercase",
     },
-    "highlightBold": Object {
+    "highlightBold": {
       "caps": true,
       "fontSize": "10px",
       "fontWeight": 700,
@@ -468,100 +468,100 @@ Object {
       "lineHeight": "12px",
       "textTransform": "uppercase",
     },
-    "label": Object {
+    "label": {
       "fontSize": "10px",
       "fontWeight": 700,
       "letterSpacing": "0.2px",
       "lineHeight": 1.4,
     },
-    "overline": Object {
+    "overline": {
       "fontSize": "12px",
       "fontWeight": 700,
       "letterSpacing": "0.063rem",
       "lineHeight": "16px",
     },
-    "overlineMedium": Object {
+    "overlineMedium": {
       "fontSize": "12px",
       "fontWeight": 500,
       "letterSpacing": "0.063rem",
       "lineHeight": "16px",
     },
-    "paragraph": Object {
+    "paragraph": {
       "fontSize": "14px",
       "fontWeight": 500,
       "letterSpacing": "-0.003rem",
       "lineHeight": "20px",
     },
-    "paragraph2": Object {
+    "paragraph2": {
       "fontSize": "16px",
       "fontWeight": 500,
       "letterSpacing": "-0.004rem",
       "lineHeight": "24px",
     },
-    "paragraph2Bold": Object {
+    "paragraph2Bold": {
       "fontSize": "16px",
       "fontWeight": 700,
       "letterSpacing": "-0.004rem",
       "lineHeight": "24px",
     },
-    "paragraphBold": Object {
+    "paragraphBold": {
       "fontSize": "14px",
       "fontWeight": 700,
       "letterSpacing": "-0.003rem",
       "lineHeight": "20px",
     },
-    "subheading1": Object {
+    "subheading1": {
       "fontSize": "40px",
       "fontWeight": 500,
       "lineHeight": "48px",
     },
-    "subheading2": Object {
+    "subheading2": {
       "fontSize": "32px",
       "fontWeight": 500,
       "lineHeight": "40px",
     },
-    "subheading3": Object {
+    "subheading3": {
       "fontSize": "26px",
       "fontWeight": 500,
       "lineHeight": "32px",
     },
-    "subheading4": Object {
+    "subheading4": {
       "fontSize": "20px",
       "fontWeight": 500,
       "lineHeight": "24px",
     },
-    "subheading5": Object {
+    "subheading5": {
       "fontSize": "16px",
       "fontWeight": 500,
       "lineHeight": "20px",
     },
-    "subheading6": Object {
+    "subheading6": {
       "fontSize": "14px",
       "fontWeight": 500,
       "lineHeight": "16px",
     },
-    "subtitle1": Object {
+    "subtitle1": {
       "fontSize": "52px",
       "fontWeight": 500,
       "lineHeight": "64px",
     },
-    "title1": Object {
+    "title1": {
       "fontSize": "80px",
       "fontWeight": 700,
       "lineHeight": "96px",
     },
-    "title2": Object {
+    "title2": {
       "fontSize": "64px",
       "fontWeight": 700,
       "lineHeight": "80px",
     },
-    "title3": Object {
+    "title3": {
       "fontSize": "52px",
       "fontWeight": 700,
       "lineHeight": "64px",
     },
   },
-  "zIndices": Object {
+  "zIndices": {
     "absolute": 50,
     "auto": "auto",
     "dropdown": 100,
