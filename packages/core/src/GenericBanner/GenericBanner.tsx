@@ -11,7 +11,7 @@ import { Button } from '../Button'
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
-import { ColorSchemeName } from '../theme'
+import { ColorSchemeName, mediaQueries } from '../theme'
 import { colorSchemeCustomForeground, getPaletteColor } from '../utils'
 
 const BannerWithRadius = styled(Banner)`
@@ -40,15 +40,26 @@ const CustomButton = styled(Button)`
   text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `
 
+const BannerContent = styled(Box)`
+  flex: 1;
+
+  ${mediaQueries[2]} {
+    flex: unset;
+  }
+`
+
 const CloseButton = styled(Box)`
   align-self: ${(props) => (props.closeButtonVerticalPosition === 'top' ? 'flex-start' : 'center')};
   cursor: pointer;
   line-height: 0;
   padding: 0;
   margin: 0;
-  margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: auto;
-  z-index: 2;
-
+  margin-${({ closeButtonHorizontalPosition, selfPosition }) =>
+    closeButtonHorizontalPosition === selfPosition && closeButtonHorizontalPosition === 'left'
+      ? 'right'
+      : 'left'}: auto;
+    z-index: 2;
+    
   & > svg {
     color: ${({ colorScheme }) =>
       getPaletteColor(
@@ -60,6 +71,10 @@ const CloseButton = styled(Box)`
           : 'text.lightest'
       )};
     margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: 8px;
+  }
+        
+  ${mediaQueries[2]} {
+    flex-basis: 32px;
   }
 `
 
@@ -122,11 +137,12 @@ const getCloseButton = (selfPosition, props) => (
     className='closeButton'
     closeButtonVerticalPosition={props.closeButtonVerticalPosition}
     closeButtonHorizontalPosition={props.closeButtonHorizontalPosition}
+    selfPosition={selfPosition}
     onClick={props.onClose}
     data-testid='closeButton'
     {...props}
   >
-    {(props.closeButtonHorizontalPosition === selfPosition && <Close size={24} />) || <Box width='32px' />}
+    {props.closeButtonHorizontalPosition === selfPosition && <Close size={24} />}
   </CloseButton>
 )
 
@@ -169,7 +185,7 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
           {props.onClose && getCloseButton('left', props)}
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
-          <Box px={2} fontSize={fontSize}>
+          <BannerContent px={2} fontSize={fontSize}>
             {!!heading &&
               React.cloneElement(heading, {
                 fontSize: heading.props.fontSize || fontSize,
@@ -205,7 +221,7 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
                 })}
               </CustomButton>
             )}
-          </Box>
+          </BannerContent>
           {!!iconRight && iconRight}
           {props.onClose && getCloseButton('right', props)}
         </Flex>
