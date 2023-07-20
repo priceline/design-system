@@ -3,7 +3,7 @@ import { Discount, Emoticon, Rowing, Tea, Warning } from 'pcln-icons'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { GenericBanner } from '.'
-import { Text } from '../Text'
+import { Box, Text } from '..'
 import { colorSchemeNames } from '../storybook/args'
 import { getPaletteColor } from '../utils'
 import { argTypes } from './GenericBanner.stories.args'
@@ -282,7 +282,7 @@ export const BannerWithCloseButton = () => {
 
   return (
     isOpen && (
-      <>
+      <Box maxWidth='1028px'>
         <GenericBanner
           colorScheme='neutralLight'
           p={3}
@@ -301,6 +301,9 @@ export const BannerWithCloseButton = () => {
           .map((vValue) =>
             ['left', 'right'].map((hValue) => (
               <>
+                <Text p={3} m={2}>
+                  Close button position: {vValue + ', ' + hValue}
+                </Text>
                 <GenericBanner
                   key={vValue + hValue}
                   colorScheme='neutralLight'
@@ -330,6 +333,7 @@ export const BannerWithCloseButton = () => {
                   closeButtonVerticalPosition={vValue as 'top' | 'center'}
                   closeButtonHorizontalPosition={hValue as 'left' | 'right'}
                 />
+
                 <GenericBanner
                   key={vValue + hValue}
                   colorScheme='neutralLight'
@@ -351,7 +355,7 @@ export const BannerWithCloseButton = () => {
             ))
           )
           .flat(1)}
-      </>
+      </Box>
     )
   )
 }
