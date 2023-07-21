@@ -3,6 +3,7 @@ import { Departure } from 'pcln-icons'
 import ChoiceChip from './ChoiceChip'
 import { Box } from '../../Box'
 import { Text } from '../../Text'
+import { chipWithShadowVariationArgs } from '../../storybook/args'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />
@@ -202,6 +203,9 @@ export const CustomChip = () => (
     </ChoiceChip>
   </Box>
 )
+
+// With Variation Shadow
+export const WithVariationShadow = () => getExamples(chipWithShadowVariationArgs, [small, medium, responsive])
 
 //Default
 export default {

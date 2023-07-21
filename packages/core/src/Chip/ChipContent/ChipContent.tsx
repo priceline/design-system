@@ -31,6 +31,7 @@ const propTypes = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
+  variation: PropTypes.oneOf(['default', 'shadow']),
 }
 
 const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
@@ -49,6 +50,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
   bridgeLabel = undefined,
   /* eslint-disable @typescript-eslint/naming-convention */
   BridgeIcon = undefined,
+  variation = undefined,
   ...props
 }) => (
   <ChipContentWrapper
@@ -57,6 +59,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
     disabled={disabled}
     selected={selected}
     size={size}
+    variation={variation}
     {...props}
   >
     {children}

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { space, fontSize, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
-import { getPaletteColor, applySizes } from '../utils'
+import { getPaletteColor, applySizes, applyVariations } from '../utils'
 import { Box, IBoxProps } from '../Box'
 
 const getSizes = ({ hasChildren }) => ({
@@ -30,6 +30,17 @@ const getBorderColor = (props) =>
 
 const getBackgroundColor = (props) =>
   props.disabled ? 'background.base' : props.selected ? 'light' : 'background.lightest'
+
+const variations = {
+    outline: css` 
+    `,
+    shadow: css`
+      box-shadow: ${themeGet('shadows.md')};
+      :hover {
+        box-shadow: ${themeGet('shadows.lg')};
+      }
+    `,
+  }
 
 interface IChipContentWrapper extends IBoxProps {
   disabled: boolean
@@ -77,6 +88,7 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   border-radius: 2px;
   white-space: nowrap;
   ${({ theme, hasChildren }) => applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
+  ${applyVariations('ChipContentWrapper', variations)};
 
   ${(props) => compose(space, fontSize)(props)}
 `

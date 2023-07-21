@@ -55,3 +55,10 @@ export const fontSizes = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 export const objectFits = ['', ...objectFitValues, 'NOTVALID']
 export const objectPositions = ['', ...objectPositionValues, 'NOTVALID']
 export const zIndicies = zIndices
+export const chipWithShadowVariationArgs = [
+  { label: 'Enabled', variation: 'shadow'},
+  { label: 'Active', selected: true, variation: 'shadow'},
+  { label: 'Active', selected: true, showActionIcon: true, variation: 'shadow'},
+  { label: 'Disabled', disabled: true, showActionIcon: true, variation: 'shadow'},
+  { label: 'Active and Disabled', selected: true, showActionIcon: true, disabled: true, variation: 'shadow'},
+]
