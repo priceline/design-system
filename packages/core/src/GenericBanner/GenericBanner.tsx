@@ -4,10 +4,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { AlignItemsProps, FontSizeProps, JustifyContentProps, MarginProps, PaddingProps } from 'styled-system'
 
-import { Close } from 'pcln-icons'
 import { Banner } from '../Banner'
 import { Box } from '../Box'
 import { Button } from '../Button'
+import { CloseButton } from '../CloseButton'
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
@@ -48,7 +48,7 @@ const BannerContent = styled(Box)`
   }
 `
 
-const CloseButton = styled(Box)`
+const StyledCloseButton = styled(Box)`
   align-self: ${(props) => (props.closeButtonVerticalPosition === 'top' ? 'flex-start' : 'center')};
   cursor: pointer;
   line-height: 0;
@@ -74,7 +74,7 @@ const CloseButton = styled(Box)`
   }
         
   ${mediaQueries[2]} {
-    flex-basis: 32px;
+    flex-basis: 24px;
   }
 `
 
@@ -133,7 +133,7 @@ export interface IGenericBannerProps
 }
 
 const getCloseButton = (selfPosition, props) => (
-  <CloseButton
+  <StyledCloseButton
     className='closeButton'
     closeButtonVerticalPosition={props.closeButtonVerticalPosition}
     closeButtonHorizontalPosition={props.closeButtonHorizontalPosition}
@@ -142,8 +142,8 @@ const getCloseButton = (selfPosition, props) => (
     data-testid='closeButton'
     {...props}
   >
-    {props.closeButtonHorizontalPosition === selfPosition && <Close size={24} />}
-  </CloseButton>
+    {props.closeButtonHorizontalPosition === selfPosition && <CloseButton />}
+  </StyledCloseButton>
 )
 
 const GenericBanner: React.FC<IGenericBannerProps> = ({
