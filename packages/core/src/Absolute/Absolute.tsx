@@ -12,7 +12,6 @@ import {
   LeftProps,
   ZIndexProps,
 } from 'styled-system'
-import styledSystemPropTypes from '@styled-system/prop-types'
 
 import { Box, IBoxProps } from '../Box'
 
@@ -24,19 +23,11 @@ export interface IAbsoluteProps
     LeftProps,
     ZIndexProps {}
 
-const Absolute = styled(Box)`
+const Absolute: React.FC<IAbsoluteProps> = styled(Box)`
   position: absolute;
 
   ${(props) => compose(top, bottom, left, right, zIndex)(props)}
 `
-
-Absolute.propTypes = {
-  ...styledSystemPropTypes.top,
-  ...styledSystemPropTypes.right,
-  ...styledSystemPropTypes.bottom,
-  ...styledSystemPropTypes.left,
-  ...styledSystemPropTypes.zIndex,
-}
 
 Absolute.displayName = 'Absolute'
 
