@@ -60,7 +60,11 @@ const StyledCloseButton = styled(Box)`
       : 'left'}: auto;
     z-index: 2;
     
-  & > svg {
+  & > button {
+    margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: 8px;
+  }
+
+  & svg {
     color: ${({ colorScheme }) =>
       getPaletteColor(
         colorScheme &&
@@ -70,7 +74,6 @@ const StyledCloseButton = styled(Box)`
           ? 'text.base'
           : 'text.lightest'
       )};
-    margin-${(props) => (props.closeButtonHorizontalPosition === 'left' ? 'right' : 'left')}: 8px;
   }
         
   ${mediaQueries[2]} {
