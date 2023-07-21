@@ -35,9 +35,10 @@ const variations = {
     outline: css` 
     `,
     shadow: css`
+      border-color: transparent;
       box-shadow: ${themeGet('shadows.md')};
       :hover {
-        box-shadow: ${themeGet('shadows.lg')};
+        box-shadow: ${themeGet('shadows.xl')};
       }
     `,
   }
