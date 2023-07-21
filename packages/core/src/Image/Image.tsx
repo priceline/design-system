@@ -21,6 +21,12 @@ import {
   boxShadowSizeValues,
   paletteFamilies,
   roundedValues,
+  ObjectFit,
+  ObjectPosition,
+  objectFitValues,
+  objectPositionValues,
+  objectFit,
+  objectPosition,
 } from '../utils'
 
 const imagePropTypes = {
@@ -33,6 +39,8 @@ const imagePropTypes = {
   rounded: PropTypes.oneOf(roundedValues),
   boxShadowSize: PropTypes.oneOf(boxShadowSizeValues),
   boxShadowColor: PropTypes.oneOf(paletteFamilies),
+  objectFit: PropTypes.oneOf(objectFitValues),
+  objectPosition: PropTypes.oneOf(objectPositionValues),
 }
 
 export interface IImageProps
@@ -46,6 +54,8 @@ export interface IImageProps
   rounded?: string
   boxShadowSize?: string
   boxShadowColor?: string
+  objectFit?: ObjectFit
+  objectPosition?: ObjectPosition
 }
 
 const Image: React.FC<IImageProps> = styled.img.attrs((props) => ({
@@ -60,6 +70,8 @@ const Image: React.FC<IImageProps> = styled.img.attrs((props) => ({
 
   ${borderRadius}
   ${boxShadow}
+  ${objectFit}
+  ${objectPosition}
 `
 
 Image.displayName = 'Image'

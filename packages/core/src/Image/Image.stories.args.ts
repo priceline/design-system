@@ -1,58 +1,43 @@
-import { colors, borderRadii, rounded, shadows } from '../storybook/args'
+import { colors, borderRadii, rounded, shadows, objectFits, objectPositions } from '../storybook/args'
+import Image from './Image'
+
 export const argTypes = {
   borderRadius: {
+    control: 'select',
     name: 'borderRadius',
-    type: { name: 'string' },
     options: borderRadii,
-    description: 'borderRadius',
-    control: {
-      type: 'select',
-    },
   },
-
   rounded: {
-    name: 'rounded',
-    type: { name: 'string' },
+    control: 'select',
     options: rounded,
-    description: 'rounded',
-    control: {
-      type: 'select',
-    },
   },
-
   boxShadowSize: {
-    name: 'boxShadowSize',
-    type: { name: 'string' },
+    control: 'select',
     options: shadows,
-    description: 'Size of the box shadow',
-    control: {
-      type: 'select',
-    },
   },
-
   boxShadowColor: {
-    name: 'boxShadowColor',
-    type: { name: 'string' },
+    control: 'select',
     options: colors,
+    defaultValue: Image.defaultProps.boxShadowColor,
     description: 'Palette family for box shadows',
     table: {
       type: {
         summary: 'Palette color to use for box-shadow - always uses "dark" shade',
       },
     },
-    control: {
-      type: 'select',
-    },
   },
-
   height: {
-    name: 'height',
-    type: { name: 'string' },
-    description: 'height',
+    control: 'text',
   },
   width: {
-    name: 'width',
-    type: { name: 'string' },
-    description: 'width',
+    control: 'text',
+  },
+  objectFit: {
+    control: 'select',
+    options: objectFits,
+  },
+  objectPosition: {
+    control: 'select',
+    options: objectPositions,
   },
 }
