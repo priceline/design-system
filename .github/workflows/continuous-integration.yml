@@ -34,6 +34,9 @@ jobs:
 
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
+        
+      - name: rush change --verify
+        run: node common/scripts/install-run-rush.js change --verify
 
       - name: Build components
         run: node common/scripts/install-run-rush.js build --timeline
