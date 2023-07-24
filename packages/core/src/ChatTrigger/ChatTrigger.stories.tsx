@@ -9,13 +9,14 @@ export default {
   component: ChatTrigger,
   args: {
     hasNotification: false,
+    tooltip: 'Chat with Penny',
   },
   argTypes: {
     onClick: { action: true },
   },
   decorators: [
     (Story) => (
-      <Relative width='100%' height='10vh'>
+      <Relative width='100%' height='25vh'>
         <Story />
       </Relative>
     ),
@@ -26,7 +27,14 @@ export const _ChatTrigger = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
 
-    await userEvent.click(canvas.getByRole('button'))
+    const button = canvas.getByRole('button')
+    expect(canvas.queryByText('Chat with Penny')).not.toBeInTheDocument()
+    await userEvent.hover(button)
+    expect(canvas.getByText('Chat with Penny')).toBeInTheDocument()
+    await userEvent.unhover(button)
+    expect(canvas.queryByText('Chat with Penny')).not.toBeInTheDocument()
+
+    await userEvent.click(button)
     expect(args.onClick).toHaveBeenCalled()
   },
   render: (args) => <ChatTrigger {...args} />,

@@ -11,13 +11,14 @@ export default {
   args: {
     hasNotification: false,
     icon: Chat,
+    tooltip: 'Tooltip text',
   },
   argTypes: {
     onClick: { action: true },
   },
   decorators: [
     (Story) => (
-      <Relative width='100%' height='10vh'>
+      <Relative width='100%' height='25vh'>
         <Story />
       </Relative>
     ),
