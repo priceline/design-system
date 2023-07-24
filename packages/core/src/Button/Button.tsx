@@ -191,7 +191,7 @@ export interface IButtonProps
   variation?: Variations
   size?: Sizes | Sizes[]
   borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
-  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
+  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
   autoFocus?: boolean
   IconLeft?: React.Component
   IconRight?: React.Component

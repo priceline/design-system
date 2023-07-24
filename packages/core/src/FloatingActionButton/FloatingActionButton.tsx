@@ -5,8 +5,8 @@ import React, { useState } from 'react'
 import { Absolute, IAbsoluteProps } from '../Absolute'
 import { Animate } from '../Animate'
 import { Box } from '../Box'
-import { Button } from '../Button'
 import { Tooltip } from '../Tooltip'
+import { NotificationDot, StyledButton } from './FloatingActionButton.styled'
 
 export interface IFloatingActionButton extends IAbsoluteProps {
   hasNotification?: boolean
@@ -31,7 +31,7 @@ function FloatingActionButton({ hasNotification, icon, tooltip, onClick, ...prop
       {hasNotification && (
         <Absolute top={0} right={0}>
           <Animate variant='pulse'>
-            <Box borderRadius='full' color='error' width='16px' height='16px' />
+            <NotificationDot borderRadius='full' color='error' width='16px' height='16px' />
           </Animate>
         </Absolute>
       )}
@@ -40,9 +40,9 @@ function FloatingActionButton({ hasNotification, icon, tooltip, onClick, ...prop
           <Box width='110px'>{tooltip}</Box>
         </Tooltip>
       )}
-      <Button
+      <StyledButton
         borderRadius='full'
-        boxShadowSize='overlay-lg'
+        boxShadowSize='overlay-md'
         size='extraLarge'
         IconLeft={icon}
         onClick={onClick}
