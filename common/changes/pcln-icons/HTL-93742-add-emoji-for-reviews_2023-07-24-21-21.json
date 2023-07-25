@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "emoji added for review message",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
