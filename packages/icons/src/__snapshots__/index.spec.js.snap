@@ -6412,6 +6412,53 @@ exports[`renders LateNight 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders Layers 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 20.75l-9-7 1.25-.925L12 18.85l7.75-6.025 1.25.925-9 7zm0-3.8l-9-7 9-7 9 7-9 7zm0-1.9l6.55-5.1L12 4.85l-6.55 5.1 6.55 5.1z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`renders License 1`] = `
 <DocumentFragment>
   .c1 {
