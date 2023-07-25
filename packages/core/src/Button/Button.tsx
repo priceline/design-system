@@ -11,6 +11,8 @@ import {
   SpaceProps,
   width,
   WidthProps,
+  height,
+  HeightProps,
 } from 'styled-system'
 
 import { Flex } from '../Flex'
@@ -183,6 +185,7 @@ export type Variations = 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'whi
 export type StyledButtonProps = IButtonProps & { hasChildren: boolean }
 export interface IButtonProps
   extends WidthProps,
+    HeightProps,
     SpaceProps,
     BoxShadowProps,
     React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -293,6 +296,7 @@ function getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren }: 
 const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) => {
   const {
     width,
+    height,
     title,
     'aria-label': ariaLabel,
     borderRadius,
@@ -309,13 +313,14 @@ const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) =>
     borderRadius,
     ...boxShadowAttrs(props),
     width,
+    height,
     'aria-label': ariaLabel || title,
     ...paddingProps,
   }
 })`
   ${buttonStyles}
 
-  ${(props) => compose(width, space, boxShadow)(props)}
+  ${(props) => compose(width, height, space, boxShadow)(props)}
 `
 
 // eslint-disable-next-line @typescript-eslint/naming-convention

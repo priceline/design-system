@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes, { InferProps } from 'prop-types'
 import { action } from '@storybook/addon-actions'
 import styled from 'styled-components'
 import { Card } from '../Card'
@@ -17,13 +18,17 @@ export default {
   component: SlideBox,
 }
 
-const TileContents = () => (
+const propTypes = {
+  index: PropTypes.number,
+}
+
+const TileContents: React.FC<InferProps<typeof propTypes>> = ({ index }) => (
   <Box>
     <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
     <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
       <Box>
         <Text fontSize={[0, null, 1, 1, 2]} fontWeight='bold' mb={2}>
-          City, AB
+          City, {index}
         </Text>
         <Text fontSize={[0, null, null, null, 1]}>Hotel for 2 nights</Text>
         <Text fontSize={[0, null, null, null, 1]}>+ Round-trip flight</Text>
@@ -50,9 +55,8 @@ export const Default = () => (
       onSlideChange={action('Slide Change')}
       slideSpacing={2}
       stretchHeight
-      currentSlideOverride={5}
     >
-      {Array.from(Array(6)).map((_, idx) => (
+      {Array.from(Array(20)).map((_, idx) => (
         <ToutCard
           height={idx === 1 ? '300px' : '320px'}
           borderRadius={20}
@@ -60,7 +64,7 @@ export const Default = () => (
           borderWidth={0}
           key={idx}
         >
-          <TileContents />
+          <TileContents index={idx} />
         </ToutCard>
       ))}
     </SlideBox>
