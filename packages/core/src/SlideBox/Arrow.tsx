@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import { ChevronRight, ChevronLeft } from 'pcln-icons'
 import { ARROW_SIZES } from './Arrow.styles'
 import { Relative } from '../Relative'
@@ -17,7 +17,19 @@ export const arrowPropTypes = {
   rightDisabled: bool,
 }
 
-const Arrow: React.FC<InferProps<typeof arrowPropTypes>> = ({
+export interface ITArrowProps {
+  isLeft?: boolean
+  arrowButtonVariation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
+  size?: string
+  leftArrowClick?: (unknown) => void
+  rightArrowClick?: (unknown) => void
+  leftDisabled?: boolean
+  rightDisabled?: boolean
+  mr?: number
+  ml?: number
+}
+
+const Arrow: React.FC<ITArrowProps> = ({
   isLeft,
   arrowButtonVariation,
   size,

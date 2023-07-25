@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import PropTypes from 'prop-types'
 import { getVisibleSlides, getCustomWidths } from './helpers'
 import { ScrollFlex } from './styles'
 import { Slide } from './Slide'
@@ -8,22 +8,22 @@ import { TopArrows } from './TopArrows'
 import { BottomArrows } from './BottomArrows'
 import { useSlideBoxNav } from './useSlideBoxNav'
 
-const propTypes = {
-  children: PropTypes.node,
-  visibleSlides: PropTypes.any,
-  onSlideChange: PropTypes.func,
-  slideSpacing: PropTypes.number,
-  stretchHeight: PropTypes.bool,
-  layout: PropTypes.string,
-  currentSlideOverride: PropTypes.number,
-  arrowSizeOverride: PropTypes.string,
-  arrowButtonVariation: PropTypes.string,
-  arrowPosition: PropTypes.string,
-  slideScrollNum: PropTypes.num,
-  mobileSlideScrollNum: PropTypes.num,
+export interface ISlideBoxProps {
+  children?: React.ReactNode | string
+  visibleSlides?: any
+  onSlideChange?: (unknown) => unknown
+  slideSpacing?: number
+  stretchHeight?: boolean
+  layout?: string
+  currentSlideOverride?: number
+  arrowSizeOverride?: string
+  arrowButtonVariation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
+  arrowPosition?: 'top' | 'bottom' | 'side' | 'hide'
+  slideScrollNum?: number
+  mobileSlideScrollNum?: number
 }
 
-const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
+const SlideBox: React.FC<ISlideBoxProps> = ({
   children,
   visibleSlides,
   onSlideChange,
@@ -68,7 +68,7 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
             index={index}
             content={item}
             isCurrentSlide={currentSlide === index}
-            numSlides={children.length}
+            numSlides={childArray.length}
             slideBoxRef={ref}
           />
         ))}
@@ -76,6 +76,21 @@ const SlideBox: React.FC<InferProps<typeof propTypes>> = ({
       <BottomArrows arrowProps={arrowProps} arrowPosition={arrowPosition} />
     </SlideBoxWrapper>
   )
+}
+
+SlideBox.propTypes = {
+  children: PropTypes.node,
+  visibleSlides: PropTypes.any,
+  onSlideChange: PropTypes.func,
+  slideSpacing: PropTypes.number,
+  stretchHeight: PropTypes.bool,
+  layout: PropTypes.string,
+  currentSlideOverride: PropTypes.number,
+  arrowSizeOverride: PropTypes.string,
+  arrowButtonVariation: PropTypes.string,
+  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
+  slideScrollNum: PropTypes.num,
+  mobileSlideScrollNum: PropTypes.num,
 }
 
 export { SlideBox }
