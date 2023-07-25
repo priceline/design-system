@@ -10,7 +10,7 @@ import { useSlideBoxNav } from './useSlideBoxNav'
 
 export interface ISlideBoxProps {
   children?: React.ReactNode | string
-  visibleSlides?: any
+  visibleSlides?: Array<number> | number
   onSlideChange?: (unknown) => unknown
   slideSpacing?: number
   stretchHeight?: boolean
@@ -80,7 +80,7 @@ const SlideBox: React.FC<ISlideBoxProps> = ({
 
 SlideBox.propTypes = {
   children: PropTypes.node,
-  visibleSlides: PropTypes.any,
+  visibleSlides: PropTypes.oneOf([PropTypes.array, PropTypes.humber]),
   onSlideChange: PropTypes.func,
   slideSpacing: PropTypes.number,
   stretchHeight: PropTypes.bool,
