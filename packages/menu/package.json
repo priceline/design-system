@@ -1,6 +1,6 @@
 {
   "name": "pcln-menu",
-  "version": "5.3.7",
+  "version": "5.3.8",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "sideEffects": false,
@@ -51,8 +51,8 @@
   },
   "peerDependencies": {
     "pcln-design-system": "^5.16.0",
-    "pcln-icons": "^5.9.0",
-    "pcln-popover": "^5.5.2",
+    "pcln-icons": "^5.10.0",
+    "pcln-popover": "^5.5.3",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",
