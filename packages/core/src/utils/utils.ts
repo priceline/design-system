@@ -430,3 +430,5 @@ export const colorSchemeCustomForeground = ({ colorScheme, color, iconUsesColorS
 }
 
 export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)
+
+export const textWrap = (props) => (props.textWrap ? { textWrap: props.textWrap } : null)
