@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 20 Jul 2023 18:44:23 GMT and should not be manually modified.
+This log was last generated on Tue, 25 Jul 2023 15:57:05 GMT and should not be manually modified.
+
+## 5.16.0
+Tue, 25 Jul 2023 15:57:04 GMT
+
+### Minor changes
+
+- add radix accordion package
+- Add props objectFit and ObjectPosition to Image which apply corresponding CSS styling
 
 ## 5.15.0
 Thu, 20 Jul 2023 18:44:23 GMT

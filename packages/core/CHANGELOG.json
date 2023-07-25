@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.16.0",
+      "tag": "pcln-design-system_v5.16.0",
+      "date": "Tue, 25 Jul 2023 15:57:04 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add radix accordion package",
+            "author": "Phil Welsh <philwelsh3d@gmail.com>",
+            "commit": "43aeb01f6be3a613701c1514a5bfd7828405c0a6"
+          },
+          {
+            "comment": "Add props objectFit and ObjectPosition to Image which apply corresponding CSS styling",
+            "author": "DTheodore <derrickxtheodore@gmail.com>",
+            "commit": "164b4257ca3aa37abd94297f0c990b12b86de2f7"
+          }
+        ],
+        "none": [
+          {
+            "comment": "snapshot update",
+            "author": "Ashok Patidar <62964295+apatidar1986@users.noreply.github.com>",
+            "commit": "7b59f0b10c9ce612554bdf2f07e065b02d718f92"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.15.0",
       "tag": "pcln-design-system_v5.15.0",
       "date": "Thu, 20 Jul 2023 18:44:23 GMT",

@@ -1,6 +1,11 @@
 # Change Log - pcln-popover
 
-This log was last generated on Thu, 20 Jul 2023 18:44:23 GMT and should not be manually modified.
+This log was last generated on Tue, 25 Jul 2023 15:57:05 GMT and should not be manually modified.
+
+## 5.5.2
+Tue, 25 Jul 2023 15:57:05 GMT
+
+_Version update only_
 
 ## 5.5.1
 Thu, 20 Jul 2023 18:44:23 GMT
