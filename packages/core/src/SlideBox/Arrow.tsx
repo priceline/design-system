@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ChevronRight, ChevronLeft } from 'pcln-icons'
-import { ARROW_SIZES } from './Arrow.styles'
+import { ARROW_SIZES } from './Arrow.styled'
 import { Relative } from '../Relative'
 import { Button } from '../Button'
 

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex } from '../Flex'
 import { Arrow } from './Arrow'
-import { AbsoluteTransformLeft } from './Arrow.styles'
+import { AbsoluteTransformLeft } from './Arrow.styled'
 import { arrowPropTypes } from './Arrow'
 import { ITArrowProps } from './Arrow'
 

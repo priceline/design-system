@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex } from '../Flex'
 import { Arrow } from './Arrow'
-import { AbsoluteTransformRight } from './Arrow.styles'
+import { AbsoluteTransformRight } from './Arrow.styled'
 import { arrowPropTypes } from './Arrow'
 import { ITArrowProps } from './Arrow'
 
@@ -23,7 +23,7 @@ const BottomArrows: React.FC<ITBottomArrowProps> = ({ arrowPosition, arrowProps 
 }
 
 BottomArrows.propTypes = {
-  arrowPosition:  PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
+  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
   arrowProps: PropTypes.shape(arrowPropTypes),
 }
 

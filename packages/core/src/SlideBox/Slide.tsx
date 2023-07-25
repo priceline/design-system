@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Box } from '..'
 import { RenderInView } from './RenderInView'
-import { SlideWrapper } from './styles'
+import { SlideWrapper } from './SlideBox.styled'
 
 interface ISlideProps {
   onSlideChange: PropTypes.func

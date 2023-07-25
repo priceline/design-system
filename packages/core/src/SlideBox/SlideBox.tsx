@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { getVisibleSlides, getCustomWidths } from './helpers'
-import { ScrollFlex } from './styles'
+import { ScrollFlex } from './SlideBox.styled'
 import { Slide } from './Slide'
 import { SlideBoxWrapper } from './SlideBoxWrapper'
 import { TopArrows } from './TopArrows'
