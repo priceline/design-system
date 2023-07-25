@@ -78,6 +78,7 @@ const SlideBox: React.FC<ISlideBoxProps> = ({
   )
 }
 
+//SlideBox props
 SlideBox.propTypes = {
   children: PropTypes.node,
   visibleSlides: PropTypes.oneOf([PropTypes.array, PropTypes.humber]),
