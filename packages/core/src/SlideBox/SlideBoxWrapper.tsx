@@ -6,7 +6,7 @@ import { Flex } from '../Flex'
 
 const propTypes = {
   children: PropTypes.node,
-  arrowPosition: PropTypes.string,
+  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
 }
 
 const SlideBoxWrapper: React.FC<InferProps<typeof propTypes>> = ({ children, arrowPosition }) =>

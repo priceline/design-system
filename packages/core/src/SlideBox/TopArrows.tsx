@@ -28,7 +28,7 @@ const TopArrows: React.FC<ITTopArrowProps> = ({ arrowPosition, arrowProps }) => 
 }
 
 TopArrows.propTypes = {
-  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),,
+  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
   arrowProps: PropTypes.shape(arrowPropTypes),
 }
 
