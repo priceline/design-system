@@ -7,7 +7,7 @@ import { arrowPropTypes } from './Arrow'
 import { ITArrowProps } from './Arrow'
 
 export interface ITBottomArrowProps {
-  arrowPosition: string
+  arrowPosition: 'top' | 'bottom' | 'side' | 'hide'
   arrowProps: ITArrowProps
 }
 
@@ -23,7 +23,7 @@ const BottomArrows: React.FC<ITBottomArrowProps> = ({ arrowPosition, arrowProps 
 }
 
 BottomArrows.propTypes = {
-  arrowPosition: PropTypes.string,
+  arrowPosition:  PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
   arrowProps: PropTypes.shape(arrowPropTypes),
 }
 
