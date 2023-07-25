@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "add layer svg added",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
