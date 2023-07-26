@@ -17,6 +17,9 @@ export const TabTriggerChip = styled(Tab.Trigger)`
   ${(props) =>
     props?.hover &&
     `
+    &:hover > div > svg {
+      fill: ${getPaletteColor('primary.dark')(props)};
+    }
     &:hover {
         color: ${getPaletteColor('primary.dark')(props)};
         border-color: ${getPaletteColor('primary.dark')(props)};
