@@ -26,3 +26,31 @@ export const ComposedAsSkeletonLoader = () => (
     <SkeletonBar />
   </Flex>
 )
+
+export const LightSkeletonLoader = () => (
+  <Flex flexDirection='column' maxWidth='700px'>
+    <Flex>
+      <SkeletonBar width='100px' height='100px' mr={2} variation='light' />
+      <Flex flexDirection='column' width='calc(100% - 100px)'>
+        <SkeletonBar width={3 / 4} variation='light' />
+        <SkeletonBar width={1 / 2} variation='light' />
+      </Flex>
+    </Flex>
+    <SkeletonBar variation='light' />
+    <SkeletonBar variation='light' />
+  </Flex>
+)
+
+export const DarkSkeletonLoader = () => (
+  <Flex flexDirection='column' maxWidth='700px'>
+    <Flex>
+      <SkeletonBar width='100px' height='100px' mr={2} variation='dark' />
+      <Flex flexDirection='column' width='calc(100% - 100px)'>
+        <SkeletonBar width={3 / 4} variation='dark' />
+        <SkeletonBar width={1 / 2} variation='dark' />
+      </Flex>
+    </Flex>
+    <SkeletonBar variation='dark' />
+    <SkeletonBar variation='dark' />
+  </Flex>
+)
