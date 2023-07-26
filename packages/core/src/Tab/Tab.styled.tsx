@@ -1,7 +1,7 @@
 import * as Tab from '@radix-ui/react-tabs'
 import styled from 'styled-components'
 import { getPaletteColor } from '../utils'
-
+import { themeGet } from '@styled-system/theme-get'
 export const TabContainer = styled(Tab.Root)``
 
 export const TabTriggerChip = styled(Tab.Trigger)`
@@ -9,7 +9,7 @@ export const TabTriggerChip = styled(Tab.Trigger)`
   cursor: pointer;
   ${(props) => `
     border-style: solid;
-    border-radius: 9999px;
+    border-radius: ${themeGet('borderRadii.full')(props)};
     background-color: ${getPaletteColor('background.lightest')(props)};
     border-color: ${getPaletteColor('border.base')(props)};
     color: ${getPaletteColor('primary.base')(props)};
@@ -72,7 +72,9 @@ export const TabTriggerButton = styled(Tab.Trigger)`
       content: '';
       display: block;
       height: 4px;
-      background-color: ${getPaletteColor(props?.isHover ? 'primary.dark' : 'primary.base')(props)};
+      background-color: ${getPaletteColor(props?.isHover && props?.hover ? 'primary.dark' : 'primary.base')(
+        props
+      )};
       border-radius: 12px 12px 0 0;
       `}
   }
