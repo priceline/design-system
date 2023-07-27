@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add newline to bottom of index file",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
