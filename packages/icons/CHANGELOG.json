@@ -2,6 +2,34 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.10.0",
+      "tag": "pcln-icons_v5.10.0",
+      "date": "Tue, 25 Jul 2023 18:42:42 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add layer svg added",
+            "author": "Ashok Patidar <62964295+apatidar1986@users.noreply.github.com>",
+            "commit": "f90d8457e68f410f2b8f007ea33d07ad0e630f07"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.9.0",
+      "tag": "pcln-icons_v5.9.0",
+      "date": "Tue, 25 Jul 2023 15:57:05 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "emoji added for review message",
+            "author": "Ashok Patidar <62964295+apatidar1986@users.noreply.github.com>",
+            "commit": "7b59f0b10c9ce612554bdf2f07e065b02d718f92"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.8.0",
       "tag": "pcln-icons_v5.8.0",
       "date": "Wed, 19 Jul 2023 17:26:42 GMT",

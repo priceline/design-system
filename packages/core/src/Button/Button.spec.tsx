@@ -132,6 +132,16 @@ describe('Button', () => {
     expect(button).toHaveStyleRule('width', '3em')
   })
 
+  it('should render correctly for "height" prop', () => {
+    const { getByRole, rerender } = render(<Button>BUTTON</Button>)
+
+    const button = getByRole('button')
+    expect(button).toHaveStyleRule('height', undefined)
+
+    rerender(<Button height={60}>BUTTON</Button>)
+    expect(button).toHaveStyleRule('height', '60px')
+  })
+
   it('should render correctly for "title" prop', () => {
     const { getByTitle } = render(<Button title='button title'>BUTTON</Button>)
 

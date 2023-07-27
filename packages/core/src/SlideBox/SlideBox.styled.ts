@@ -8,6 +8,7 @@ const SlideWrapper = styled(Box)``
 const ScrollFlex = styled(Flex)`
   position: relative;
   overflow: auto;
+  scroll-behavior: smooth;
   & > ${SlideWrapper} {
     flex-shrink: 0;
   }

@@ -2,8 +2,8 @@
   "changes": [
     {
       "packageName": "pcln-design-system",
-      "comment": "add radix accordion package",
-      "type": "minor"
+      "comment": "Update image URL",
+      "type": "patch"
     }
   ],
   "packageName": "pcln-design-system"

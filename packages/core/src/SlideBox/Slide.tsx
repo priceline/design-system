@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Box } from '..'
 import { RenderInView } from './RenderInView'
-import { SlideWrapper } from './styles'
+import { SlideWrapper } from './SlideBox.styled'
 
 interface ISlideProps {
   onSlideChange: PropTypes.func
@@ -30,16 +30,17 @@ const Slide: React.FC<ISlideProps> = ({
   const ref = useRef()
 
   useEffect(() => {
+    /* istanbul ignore next */
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
-      /* istanbul ignore next */
-      const { offsetLeft } = ref.current
-      slideBoxRef?.current?.scroll({ left: offsetLeft })
+      const { offsetLeft, offsetParent, offsetWidth } = ref.current
+      const { offsetWidth: parentOffset } = offsetParent || {}
+      slideBoxRef?.current?.scroll({ left: offsetLeft - parentOffset + offsetWidth })
     }
   }, [isCurrentSlide, ref])
 
   return (
     <SlideWrapper data-testid={`slide${index + 1}`} ref={ref} width={width}>
-      <RenderInView onSlideChange={onSlideChange} index={index}>
+      <RenderInView onSlideChange={onSlideChange} index={index} slideRef={ref}>
         <Box
           height='100%'
           pl={index === 0 ? 2 : 0}

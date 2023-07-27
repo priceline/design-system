@@ -13,10 +13,7 @@ const dumpText =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros neque, sodales eu urna at, porta rutrum metus. Aliquam aliquam dolor erat, in convallis ipsum volutpat quis.'
 
 const exampleImage = () => (
-  <Image
-    borderRadius='lg'
-    src='https://s3-alpha-sig.figma.com/img/10f2/be0d/ddefd4f7e2ee4a21404c1e74d29d5b81?Expires=1690156800&Signature=RwiH~zrIeWfWMLqS1F1jE~ItekChBO4-CNhbeDYmoMMOxdGnzDUJv32TfH0bxkdV4P-Y-~CtKrhvv7fSl~9Eyu584jUGacgi1FtLb5ECEO4ct5gMnF~orq6UpnbnYGcaSZQz5fw~tZGfrEbLI7GjS13tPLAKp7Hzm4CnEyWjKaU59NYYjSvUylS0IUxBrgIvLNqlrEUm3Q7XFPNDEADqDzsrKBi6P02ouiBcZqThpFQUS5~QI5FZW~OTlZbM~6Msav1ugrKIdbklI25MgrK4ro53dyIX7jzQ~YKldJmrrmFGESrcuA98fi1ctFJ2p2NHDQKadYDfFXvUho8Cj7Myjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
-  />
+  <Image borderRadius='lg' src='https://s1.pclncdn.com/design-assets/hero/beach.jpg' />
 )
 const exampleInput = ({ disabled }) => (
   <Box width='100%' mt={2} style={{ backgroundColor: getPaletteColor('background.lightest') }}>

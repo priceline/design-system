@@ -2,6 +2,42 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.5.6",
+      "tag": "pcln-carousel_v2.5.6",
+      "date": "Tue, 25 Jul 2023 18:42:42 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.10.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5.9.0` to `^5.10.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.5.5",
+      "tag": "pcln-carousel_v2.5.5",
+      "date": "Tue, 25 Jul 2023 15:57:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.16.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.15.0` to `^5.16.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5.8.0` to `^5.9.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.5.4",
       "tag": "pcln-carousel_v2.5.4",
       "date": "Thu, 20 Jul 2023 18:44:23 GMT",

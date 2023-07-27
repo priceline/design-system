@@ -2,6 +2,36 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "5.3.7",
+      "tag": "pcln-autocomplete_v5.3.7",
+      "date": "Tue, 25 Jul 2023 18:42:42 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.10.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.6",
+      "tag": "pcln-autocomplete_v5.3.6",
+      "date": "Tue, 25 Jul 2023 15:57:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.16.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.15.0` to `^5.16.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.5",
       "tag": "pcln-autocomplete_v5.3.5",
       "date": "Thu, 20 Jul 2023 18:44:23 GMT",

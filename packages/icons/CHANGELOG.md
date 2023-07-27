@@ -1,6 +1,20 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 19 Jul 2023 17:26:42 GMT and should not be manually modified.
+This log was last generated on Tue, 25 Jul 2023 18:42:42 GMT and should not be manually modified.
+
+## 5.10.0
+Tue, 25 Jul 2023 18:42:42 GMT
+
+### Minor changes
+
+- add layer svg added
+
+## 5.9.0
+Tue, 25 Jul 2023 15:57:05 GMT
+
+### Minor changes
+
+- emoji added for review message
 
 ## 5.8.0
 Wed, 19 Jul 2023 17:26:42 GMT

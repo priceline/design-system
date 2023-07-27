@@ -2,6 +2,54 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.3.8",
+      "tag": "pcln-menu_v5.3.8",
+      "date": "Tue, 25 Jul 2023 18:42:42 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.10.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.5.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5.9.0` to `^5.10.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5.5.2` to `^5.5.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.7",
+      "tag": "pcln-menu_v5.3.7",
+      "date": "Tue, 25 Jul 2023 15:57:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.16.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.5.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.15.0` to `^5.16.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5.8.0` to `^5.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5.5.1` to `^5.5.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.6",
       "tag": "pcln-menu_v5.3.6",
       "date": "Thu, 20 Jul 2023 18:44:23 GMT",

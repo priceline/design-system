@@ -9,14 +9,16 @@ const FullHeightInView = styled(InView)`
   height: 100%;
 `
 
-const RenderInView = ({ children, onSlideChange, index }) => {
+const RenderInView = ({ children, onSlideChange, index, slideRef }) => {
   const slideVisible = (inView) => {
     if (inView) {
-      onSlideChange(index)
+      const { offsetParent, offsetWidth } = slideRef?.current || {}
+      const numSlides = Math.round(offsetParent?.offsetWidth / offsetWidth)
+      onSlideChange(index, numSlides)
     }
   }
   return (
-    <FullHeightInView data-testid={`render-in-view-${index}`} onChange={slideVisible}>
+    <FullHeightInView threshold={0.01} data-testid={`render-in-view-${index}`} onChange={slideVisible}>
       {children}
     </FullHeightInView>
   )

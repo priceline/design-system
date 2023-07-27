@@ -35,10 +35,9 @@ const variations = {
     outline: css` 
     `,
     shadow: css`
-      border-color: transparent;
-      box-shadow: ${themeGet('shadows.md')};
-      :hover {
-        box-shadow: ${themeGet('shadows.xl')};
+      box-shadow: ${props => props.disabled || props.selected ? 'none' : themeGet('shadows.md')};
+      &:hover {
+        box-shadow: ${props => props.disabled ? 'none' : themeGet('shadows.xl')};
       }
     `,
   }
@@ -54,7 +53,7 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
     background-color: ${getPaletteColor(getBackgroundColor(props))(props)};
-    border: 1px solid ${getBorderColor(props)};
+    border: 1px solid ${props.variation === 'shadow' && !props.selected ? 'transparent' : getBorderColor(props)};
     ${
       props.disabled
         ? ``
