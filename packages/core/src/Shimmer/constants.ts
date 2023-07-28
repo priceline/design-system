@@ -1,17 +1,17 @@
 export enum VariationType {
-  Origin = 'origin',
+  Base = 'base',
   Light = 'light',
   Dark = 'dark',
 }
 
 export const VARIATION_BACKGROUND_COLORS = {
-  [VariationType.Origin]: '#EEEEEE',
+  [VariationType.Base]: '#EEEEEE',
   [VariationType.Light]: '#00000014',
   [VariationType.Dark]: '#FFFFFF14',
 }
 
 export const VARIATION_GLARE_GRADIENTS = {
-  [VariationType.Origin]: `
+  [VariationType.Base]: `
       rgba(245, 245, 245, 0) 0%,
       rgba(245, 245, 245, 1) 50%,
       rgba(245, 245, 245, 0) 100%`,

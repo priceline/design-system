@@ -46,7 +46,7 @@ const propTypes = {
   animationWidth: PropTypes.number,
   className: PropTypes.string,
   disable: PropTypes.bool,
-  variation: PropTypes.oneOf([VariationType.Origin, VariationType.Light, VariationType.Dark]),
+  variation: PropTypes.oneOf([VariationType.Base, VariationType.Light, VariationType.Dark]),
 }
 
 const Shimmer: React.FC<InferProps<typeof propTypes>> = ({ animationWidth, disable, ...props }) => {
@@ -64,7 +64,7 @@ const Shimmer: React.FC<InferProps<typeof propTypes>> = ({ animationWidth, disab
 Shimmer.defaultProps = {
   animationWidth: 100,
   disable: false,
-  variation: VariationType.Origin,
+  variation: VariationType.Base,
 }
 
 Shimmer.propTypes = propTypes
