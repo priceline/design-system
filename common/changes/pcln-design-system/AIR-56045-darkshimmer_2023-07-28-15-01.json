@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "rename origin with base on Shimmer",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
