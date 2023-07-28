@@ -9054,6 +9054,102 @@ exports[`renders Printer 1`] = `
 </DocumentFragment>
 `;
 
+exports[`renders PushPin 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.506 14.271l-.008.008v.012l.142 2.534-.91.91-3.264-3.263-.018-.018-.018.018-3.753 3.754-.902-.001v-.902l3.753-3.753.018-.018-.018-.018-3.264-3.263.912-.911 2.44.048h.011l.008-.007 5.196-5.197.018-.018-.018-.017-.763-.764.9-.9 6.434 6.433-.9.9-.764-.763-.018-.018-.018.018-5.196 5.197z"
+        stroke="#001833"
+        stroke-width="0.05"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders PushPinBorder 1`] = `
+<DocumentFragment>
+  .c1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c2 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+<div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      fill="currentcolor"
+      focusable="false"
+      height="24"
+      role="img"
+      tabindex="-1"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.53 14.281l.14 2.547-.938.938-3.28-3.281-3.767 3.766h-.937v-.937l3.766-3.767-3.28-3.28.937-.938 2.453.047 5.188-5.189-.78-.78.937-.938 6.467 6.467-.937.938-.781-.781-5.188 5.188zm-6.094-3.687l4.875 4.875-.063-1.781 5.532-5.532-3.03-3.031-5.532 5.532-1.782-.063z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`renders Quilt 1`] = `
 <DocumentFragment>
   .c1 {
