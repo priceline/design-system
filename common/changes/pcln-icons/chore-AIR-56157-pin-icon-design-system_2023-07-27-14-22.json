@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add PushPin and PushPinBorder icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}

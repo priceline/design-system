@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Update icons from 48px to 24px",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
