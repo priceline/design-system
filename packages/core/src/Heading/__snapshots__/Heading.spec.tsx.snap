@@ -1,31 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading Heading component using <Text> component properties 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  color: #4f6f8f;
-  text-align: center;
-}
-
-<div
-  className="c0"
->
-  <h3
-    className="c1"
-    color="gray"
-  />
-</div>
-`;
-
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;

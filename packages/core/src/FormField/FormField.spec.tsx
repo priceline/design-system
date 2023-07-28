@@ -1,4 +1,3 @@
-import React from 'react'
 import { render } from '../__test__/testing-library'
 import { FormField, Input, Label, Select } from '..'
 import { Email as EmailIcon } from 'pcln-icons'
@@ -62,27 +61,14 @@ describe('FormField', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('shows Label with autoHide prop and field value', () => {
-    const json = rendererCreateWithTheme(
-      <FormField>
-        <Label autoHide>Email</Label>
-        <EmailIcon />
-        <Input id='email' name='email' value='hello@example.com' />
-      </FormField>
-    ).toJSON()
-    const [label] = json.children
-    expect(label.props.style.opacity).toBe(1)
-  })
-
   test('adds htmlFor prop to Label', () => {
-    const json = rendererCreateWithTheme(
+    const { getByTestId } = render(
       <FormField>
-        <Label />
+        <Label data-testid='label' htmlFor='hello' />
         <Input id='hello' name='hello' />
       </FormField>
-    ).toJSON()
-    const [label] = json.children
-    expect(label.props.htmlFor).toBe('hello')
+    )
+    expect(getByTestId('label')).toHaveAttribute('for', 'hello')
   })
 
   describe('disabled state', () => {

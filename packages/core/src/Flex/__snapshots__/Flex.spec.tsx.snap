@@ -1,99 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Flex alignItems prop 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
-`;
-
-exports[`Flex flexWrap prop 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
-`;
-
-exports[`Flex justifyContent prop 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
-`;
-
 exports[`Flex renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -111,10 +20,11 @@ exports[`Flex renders 1`] = `
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;

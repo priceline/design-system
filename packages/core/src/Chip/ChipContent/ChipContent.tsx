@@ -38,16 +38,13 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
   selected = undefined,
   children = undefined,
   label = undefined,
-  /* eslint-disable @typescript-eslint/naming-convention */
   Icon = undefined,
-  /* eslint-disable @typescript-eslint/naming-convention */
   IconTitle = undefined,
   facet = undefined,
   action = undefined,
   image = undefined,
   size = undefined,
   bridgeLabel = undefined,
-  /* eslint-disable @typescript-eslint/naming-convention */
   BridgeIcon = undefined,
   ...props
 }) => (

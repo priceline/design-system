@@ -1,16 +1,12 @@
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-// import dts from 'vite-plugin-dts'
+import dts from 'vite-plugin-dts'
 
 import * as packageJson from './package.json'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    // we should do this eventually but there are many TS issues to resolve first
-    // dts()
-  ],
+  plugins: [react(), dts()],
   optimizeDeps: {
     include: ['pcln-icons'],
   },

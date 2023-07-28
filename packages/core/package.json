@@ -50,13 +50,19 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/pcln-design-system.js",
-      "require": "./dist/pcln-design-system.cjs"
+      "import": {
+        "default": "./dist/pcln-design-system.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/pcln-design-system.cjs",
+        "types": "./dist/index.d.ts"
+      }
     }
   },
   "main": "./dist/pcln-design-system.cjs",
   "module": "./dist/pcln-design-system.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "types"
@@ -145,7 +151,7 @@
     "styled-components": "^5.3.11",
     "tslib": "^2.4.0",
     "typescript": "^5.1.6",
-    "vite": "^4.4.7",
+    "vite": "^3",
     "vite-bundle-visualizer": "^0.10.0",
     "vite-plugin-checker": "^0.6.1",
     "vite-plugin-dts": "^3.3.1"

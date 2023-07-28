@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Card } from '..'
+import { userEvent, within } from '@storybook/testing-library'
 
 export default {
   title: 'Card',
@@ -36,26 +37,58 @@ BoxShadowsWithDefaultBorder.story = {
   name: 'Box Shadows with default border',
 }
 
-export const BoxShadowsWithFocused2PxBorder = () => (
+export const BoxShadowsWithCustomBorderSize = () => (
   <Box>
-    <Card boxShadowSize='sm' m={4} p={4} width={1 / 2} color='text' bg='white' borderWidth={2}>
-      Small Shadow
+    <Card
+      boxShadowSize='md'
+      borderRadius='xl'
+      m={4}
+      p={4}
+      width={1 / 2}
+      color='text'
+      bg='white'
+      borderWidth={0}
+    >
+      0px border
     </Card>
-    <Card boxShadowSize='md' m={4} p={4} width={1 / 2} color='text' bg='white' borderWidth={2}>
-      Medium Shadow
+    <Card
+      boxShadowSize='md'
+      borderRadius='xl'
+      m={4}
+      p={4}
+      width={1 / 2}
+      color='text'
+      bg='white'
+      borderWidth={1}
+    >
+      1px border
     </Card>
-    <Card boxShadowSize='lg' m={4} p={4} width={1 / 2} color='text' bg='white' borderWidth={2}>
-      Large Shadow
+    <Card
+      boxShadowSize='md'
+      borderRadius='xl'
+      m={4}
+      p={4}
+      width={1 / 2}
+      color='text'
+      bg='white'
+      borderWidth={2}
+    >
+      2px border
     </Card>
-    <Card boxShadowSize='xl' m={4} p={4} width={1 / 2} color='text' bg='white' borderWidth={2}>
-      XLarge Shadow
+    <Card
+      boxShadowSize='md'
+      borderRadius='xl'
+      m={4}
+      p={4}
+      width={1 / 2}
+      color='text'
+      bg='white'
+      borderWidth="4"
+    >
+      4px border
     </Card>
   </Box>
 )
-
-BoxShadowsWithFocused2PxBorder.story = {
-  name: 'Box Shadows with focused 2px border',
-}
 
 export const BoxShadowsWithVaryingBorderRadii = () => (
   <Box>
@@ -76,4 +109,18 @@ export const BoxShadowsWithVaryingBorderRadii = () => (
 
 BoxShadowsWithVaryingBorderRadii.story = {
   name: 'Box Shadows with varying border radii',
+}
+
+const asButtonText = 'This card should look like a button'
+export const AsButton = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const card = canvas.getByText(asButtonText)
+    await userEvent.hover(card)
+  },
+  render: () => (
+    <Card as='button' bg='white' height='200px' width='200px'>
+      {asButtonText}
+    </Card>
+  ),
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Absolute, Card, Flag, Image, Relative, Text } from '..'
 import { Close as CloseIcon } from 'pcln-icons'
 
@@ -40,3 +39,13 @@ export const AroundTextAndAnAbsolutelyPositionedIcon = () => (
 AroundTextAndAnAbsolutelyPositionedIcon.story = {
   name: 'Around Text and an absolutely positioned Icon',
 }
+
+export const UsingBoxProps = () => (
+  <>
+    <Relative top={10} left={0} zIndex={2}>
+      This is a relatively positioned Box using the top, left, and zIndex props. This text should appear on
+      top of the colored box.
+    </Relative>
+    <Absolute top={0} left={0} zIndex={0} bg='secondary.light' height='300px' width='300px' />
+  </>
+)

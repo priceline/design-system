@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BackgroundImage renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -20,191 +21,11 @@ exports[`BackgroundImage renders 1`] = `
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
-`;
-
-exports[`BackgroundImage renders with background position 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #eceff2;
-  background-attachment: scroll;
-  height: 320px;
-  border-radius: 9999px 9999px 0 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    height="320px"
-  />
-</div>
-`;
-
-exports[`BackgroundImage renders with border radius 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #eceff2;
-  background-attachment: scroll;
-  height: 320px;
-  border-radius: 9999px 9999px 0 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    height="320px"
-  />
-</div>
-`;
-
-exports[`BackgroundImage renders with default background position 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #eceff2;
-  background-attachment: scroll;
-  height: 320px;
-  border-radius: 9999px 9999px 0 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    height="320px"
-  />
-</div>
-`;
-
-exports[`BackgroundImage renders with height 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #eceff2;
-  background-attachment: scroll;
-  height: 320px;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    height="320px"
-  />
-</div>
-`;
-
-exports[`BackgroundImage renders with image 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #eceff2;
-  background-attachment: scroll;
-  background-image: url(hello.png);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
-`;
-
-exports[`BackgroundImage variations parallax variation default render 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #eceff2;
-  background-attachment: fixed;
-  background-image: url(hello.png);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-</div>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;

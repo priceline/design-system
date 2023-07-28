@@ -1,6 +1,6 @@
 import { getPaletteColor, hexToRgb } from '..'
 
-export const boxShadowSizeValues = ['sm', 'md', 'lg', 'xl', '2xl', 'overlay-lg', 'overlay-xl']
+export const boxShadowSizeValues = ['sm', 'md', 'lg', 'xl', '2xl', 'overlay-md', 'overlay-lg', 'overlay-xl']
 
 function calculateShadowProps(effectiveShadow, effectiveColor) {
   if (effectiveColor) {

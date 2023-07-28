@@ -5,7 +5,8 @@ import { Stamp, Text } from '..'
 import type { ColorSchemeName } from '../theme'
 import { argTypes } from './Stamp.stories.args'
 import { Pin as PinIcon, Airplane } from 'pcln-icons'
-import { colorSchemeNames } from '../storybook/args'
+import { colorSchemeNames, colorNames } from '../storybook/args'
+import { DeprecatedColorsNote } from '../storybook/utils/DeprecatedColorsNote'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
@@ -69,6 +70,18 @@ CustomBackgroundAndBorderColor.story = {
   name: 'Custom Background and Border Color',
 }
 
+export const VariationsAndSizes = () => (
+  <div>
+    <Stamp size='small' color='blue'>
+      small
+    </Stamp>
+    <Stamp variation='fill'>fill</Stamp>
+    <Stamp size='small' variation='fill'>
+      small fill
+    </Stamp>
+  </div>
+)
+
 export const CustomTextSize = () => (
   <div>
     <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
@@ -121,6 +134,28 @@ export const PassAnArrayOfSizes = () => (
 PassAnArrayOfSizes.story = {
   name: 'Pass an array of sizes',
 }
+
+export const ColorProp = () => (
+  <>
+    <DeprecatedColorsNote />
+    {colorNames.map((color) => (
+      <Stamp color={color} m={2} key={color}>
+        {color}
+      </Stamp>
+    ))}
+  </>
+)
+
+export const BorderColorProp = () => (
+  <>
+    <DeprecatedColorsNote />
+    {colorNames.map((color) => (
+      <Stamp color={color} borderColor={color} m={2} key={color}>
+        {color}
+      </Stamp>
+    ))}
+  </>
+)
 
 const ColorSchemesTemplate = () => {
   return (

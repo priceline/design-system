@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Button, ToggleBadge } from '..'
 import { argTypes } from './ToggleBadge.stories.args'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
@@ -31,6 +29,12 @@ export const UnselectedWithDifferentBackgroundColor = () => (
 UnselectedWithDifferentBackgroundColor.story = {
   name: 'Unselected with different background color',
 }
+
+export const SelectedWithCustomColorAndBg = () => (
+  <ToggleBadge selected bg='primary.light' color='error' fontSize={1}>
+    Unselected with custom color and background
+  </ToggleBadge>
+)
 
 export const AGroup = () => (
   <div>

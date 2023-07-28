@@ -112,7 +112,7 @@ export const Strikethrough = () => <Text.s>Hello Strikethrough</Text.s>
 
 export const Margin = () => (
   <Text mt={4} mb={2}>
-    Hello Margin
+    This text has a top and bottom margin
   </Text>
 )
 
@@ -154,10 +154,18 @@ ReactiveColor.args = {
 export const MinMaxHeight = () => (
   <div>
     <Text color='blue' minHeight={200} minWidth={300} width={1}>
-      Hello Blue
+      minHeight = 200, minWidth = 300
     </Text>
     <Text color='green' maxHeight={200} maxWidth={300}>
-      Hello Green
+      maxHeight = 200, maxWidth = 300
+    </Text>
+  </div>
+)
+
+export const HeightAndWidth = () => (
+  <div>
+    <Text height='150px' width='200px'>
+      height = 150, width = 200
     </Text>
   </div>
 )
@@ -220,3 +228,9 @@ const ColorSchemesTemplate = () => {
 }
 export const ColorSchemes = ColorSchemesTemplate.bind({})
 ColorSchemesTemplate.args = {}
+
+export const DisplayAndOverflow = () => (
+  <Text display='inline-block' overflow='none'>
+    This text has display=&apos;inline-block&apos; and overflow=&apos;none&apos;
+  </Text>
+)

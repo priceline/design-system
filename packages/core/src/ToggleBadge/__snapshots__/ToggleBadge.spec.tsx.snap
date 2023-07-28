@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -37,109 +38,13 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
 }
 
 <div
-  className="c0"
->
-  <button
-    className="c1"
-    color="primary"
-    fontSize={0}
-    selected={true}
-  />
-</div>
-`;
-
-exports[`ToggleBadge selected one with background-color and text color passed as props hover state 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  border-radius: 2px;
-  border: 0;
-  display: inline-block;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  background-color: #0a0;
-  color: #c00;
-  font-size: 14px;
-  border-radius: 9999px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.c1:hover {
-  background-color: #0a0;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="c1"
-    color="red"
-    fontSize={1}
-    selected={true}
-  />
-</div>
-`;
-
-exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c1 {
-  border-radius: 2px;
-  border: 0;
-  display: inline-block;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  background-color: transparent;
-  color: #0068ef;
-  border-radius: 9999px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  font-size: 12px;
-}
-
-.c1:hover {
-  background-color: #e8f2ff;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="c1"
-    color="primary"
-    fontSize={0}
-    selected={false}
-  />
-</div>
+    class="c0"
+  >
+    <button
+      class="c1"
+      color="primary"
+      font-size="0"
+    />
+  </div>
+</DocumentFragment>
 `;

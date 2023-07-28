@@ -1,9 +1,9 @@
-import React from 'react'
-
+import { render } from '../__test__/testing-library'
 import { Flag, theme } from '..'
 
 describe('Flag', () => {
-  let consoleError
+  let consoleError: typeof console.error
+
   beforeEach(() => {
     consoleError = console.error
     console.error = jest.fn()
@@ -11,19 +11,19 @@ describe('Flag', () => {
   afterEach(() => (console.error = consoleError))
 
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Flag />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Flag />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with width prop', () => {
-    const json = rendererCreateWithTheme(<Flag width={256} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('width', '256px')
+    const { asFragment, getByTestId } = render(<Flag width={256} />)
+    expect(asFragment()).toMatchSnapshot()
+    expect(getByTestId('flag')).toHaveStyleRule('width', '256px')
   })
 
   test('renders with theme color as bg color', () => {
-    const json = rendererCreateWithTheme(<Flag width={256} bg='purple' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json.children[1]).toHaveStyleRule('background-color', theme.colors.purple)
+    const { asFragment, getByTestId } = render(<Flag width={256} bg='purple' />)
+    expect(asFragment()).toMatchSnapshot()
+    expect(getByTestId('flag-body')).toHaveStyleRule('background-color', theme.colors.purple)
   })
 })

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { Absolute, Card, Flag, Image, Relative, Text } from '..'
 import { Close as CloseIcon } from 'pcln-icons'
@@ -92,3 +91,13 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
 MultipleAbsolutelyPositionedBoxes.story = {
   name: 'Multiple absolutely positioned boxes',
 }
+
+export const UsingBoxProps = () => (
+  <>
+    <Absolute bg='secondary.light' height='300px' width='300px' top={0} left={0} />
+    <Absolute top={50} left={50} zIndex={0}>
+      This is an absolutely positioned Box using the top, left, and zIndex props. This text should appear on
+      top of the colored box.
+    </Absolute>
+  </>
+)

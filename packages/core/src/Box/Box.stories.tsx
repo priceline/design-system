@@ -5,7 +5,8 @@ import { Star } from 'pcln-icons'
 import styled from 'styled-components'
 import { Box, Flex, Text } from '..'
 import { argTypes, defaultArgs } from './Box.stories.args'
-import { colorSchemeNames } from '../storybook/args'
+import { colorNames, colorSchemeNames, shadows } from '../storybook/args'
+import { DeprecatedColorsNote } from '../storybook/utils/DeprecatedColorsNote'
 
 export default {
   title: 'core / Box',
@@ -24,7 +25,7 @@ export default {
 
 const Template = (args) => (
   <Box {...args}>
-    <Text p={3}>Hello!</Text>
+    <Text p={3}>{args.children || 'Hello!'}</Text>
   </Box>
 )
 
@@ -42,6 +43,7 @@ export const Padding = Template.bind({})
 Padding.args = {
   p: 4,
   color: 'background.base',
+  children: 'This box should have 32px of padding',
 }
 
 export const Height = Template.bind({})
@@ -59,6 +61,9 @@ MaxAndMinValues.args = {
   maxWidth: ['300px', null, '400px', null, '500px'],
   minHeight: ['100px', null, '200px', null, '300px'],
   minWidth: ['300px', null, '200px', null, '100px'],
+  height: 600,
+  width: 700,
+  children: 'This box should have a height and width of <= 500px',
 }
 
 export const Margin = Template.bind({})
@@ -71,6 +76,27 @@ export const Color = Template.bind({})
 Color.args = {
   color: 'primary.base',
 }
+
+export const RawColorNameProp = () => (
+  <>
+    <DeprecatedColorsNote />
+    {colorNames.map((color) => (
+      <Box color={color} m={2} key={color}>
+        <Text>{color}</Text>
+      </Box>
+    ))}
+  </>
+)
+
+export const BoxShadowSizeProp = () => (
+  <>
+    {shadows.map((shadowSize) => (
+      <Box boxShadowSize={shadowSize} m={5} key={shadowSize}>
+        {shadowSize}
+      </Box>
+    ))}
+  </>
+)
 
 export const BoxShadow = Template.bind({})
 BoxShadow.args = {

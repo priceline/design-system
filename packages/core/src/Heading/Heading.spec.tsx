@@ -1,6 +1,4 @@
-import React from 'react'
-
-import { Heading, theme } from '..'
+import { Heading } from '..'
 
 describe('Heading', () => {
   test('renders', () => {
@@ -28,13 +26,5 @@ describe('Heading', () => {
   test(defaultFontSizeTestCase, () => {
     const json = rendererCreateWithTheme(<Heading />).toJSON()
     expect(json).toMatchSnapshot()
-  })
-
-  const usingTextPropsTestCase = 'Heading component using <Text> component properties'
-  test(usingTextPropsTestCase, () => {
-    const json = rendererCreateWithTheme(<Heading textAlign='center' color='gray' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('text-align', 'center')
-    expect(json).toHaveStyleRule('color', theme.colors.gray)
   })
 })

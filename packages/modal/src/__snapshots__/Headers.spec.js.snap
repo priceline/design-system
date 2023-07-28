@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ModalHeader render 1`] = `
+.c10 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c11 {
+  outline: none;
+}
+
 .c1 {
   background-color: #0a0;
   color: #fff;
@@ -46,18 +58,6 @@ exports[`ModalHeader render 1`] = `
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c11 {
-  outline: none;
 }
 
 .c5 {

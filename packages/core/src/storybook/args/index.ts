@@ -13,6 +13,8 @@ export const colorSchemeNames = colorSchemeNamesArr
 
 export const colors = ['', ...paletteFamilies, 'NOTVALID']
 
+export const colorNames = ['gray', 'blue', 'green', 'red', 'orange', 'purple']
+
 export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']
 
 export const rounded = ['', ...roundedValues, 'NOTVALID']

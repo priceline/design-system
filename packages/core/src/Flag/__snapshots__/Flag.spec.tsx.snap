@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flag renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -101,35 +102,39 @@ exports[`Flag renders 1`] = `
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1 c2"
+    class="c0"
   >
     <div
-      className="c3 c4"
+      class="c1 c2"
+      data-testid="flag"
     >
       <div
-        className="c5 c6"
+        class="c3 c4"
+      >
+        <div
+          class="c5 c6"
+          color="green"
+          width="4px"
+        />
+      </div>
+      <div
+        class="c7 c8"
+        color="white"
+        data-testid="flag-body"
+      />
+      <div
+        class="c9 c10"
         color="green"
-        width="4px"
+        width="18px"
       />
     </div>
-    <div
-      className="c7 c8"
-      color="white"
-    />
-    <div
-      className="c9 c10"
-      color="green"
-      width="18px"
-    />
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`Flag renders with theme color as bg color 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -233,36 +238,40 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1 c2"
-    width={256}
+    class="c0"
   >
     <div
-      className="c3 c4"
+      class="c1 c2"
+      data-testid="flag"
+      width="256"
     >
       <div
-        className="c5 c6"
+        class="c3 c4"
+      >
+        <div
+          class="c5 c6"
+          color="purple"
+          width="4px"
+        />
+      </div>
+      <div
+        class="c7 c8"
+        color="white"
+        data-testid="flag-body"
+      />
+      <div
+        class="c9 c10"
         color="purple"
-        width="4px"
+        width="18px"
       />
     </div>
-    <div
-      className="c7 c8"
-      color="white"
-    />
-    <div
-      className="c9 c10"
-      color="purple"
-      width="18px"
-    />
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`Flag renders with width prop 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -366,30 +375,33 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1 c2"
-    width={256}
+    class="c0"
   >
     <div
-      className="c3 c4"
+      class="c1 c2"
+      data-testid="flag"
+      width="256"
     >
       <div
-        className="c5 c6"
+        class="c3 c4"
+      >
+        <div
+          class="c5 c6"
+          color="green"
+          width="4px"
+        />
+      </div>
+      <div
+        class="c7 c8"
+        color="white"
+        data-testid="flag-body"
+      />
+      <div
+        class="c9 c10"
         color="green"
-        width="4px"
+        width="18px"
       />
     </div>
-    <div
-      className="c7 c8"
-      color="white"
-    />
-    <div
-      className="c9 c10"
-      color="green"
-      width="18px"
-    />
   </div>
-</div>
+</DocumentFragment>
 `;

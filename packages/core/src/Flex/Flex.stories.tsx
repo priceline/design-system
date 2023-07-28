@@ -1,4 +1,3 @@
-import React from 'react'
 import { Flex, Box } from '..'
 
 export default {
@@ -26,6 +25,21 @@ export const Wrap = () => (
       Wrap
     </Box>
   </Flex>
+)
+
+export const AlignItems = () => (
+  <>
+    {['flex-start', 'center', 'flex-end'].map((align) => (
+      <Flex alignItems={align} height='300px' key={align}>
+        <Box width={1 / 3} p={2} color='white' bg='blue'>
+          alignItems:
+        </Box>
+        <Box width={1 / 3} p={2} color='white' bg='green'>
+          {align}
+        </Box>
+      </Flex>
+    ))}
+  </>
 )
 
 export const Justify = () => (

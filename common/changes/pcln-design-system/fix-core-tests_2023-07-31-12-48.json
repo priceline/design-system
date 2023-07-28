@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix failing unit tests and replace some tests with stories",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

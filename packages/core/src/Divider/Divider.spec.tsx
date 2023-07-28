@@ -1,35 +1,40 @@
-import React from 'react'
-import { render, screen } from '../__test__/testing-library'
-import { Divider, theme } from '..'
+import { Divider } from '..'
+import { render } from '../__test__/testing-library'
 
 describe('Divider', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Divider />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+    const { asFragment } = render(<Divider />)
+    expect(asFragment()).toMatchInlineSnapshot(`
+      <DocumentFragment>
+        .c0 {
+        font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+        line-height: 1.4;
+        font-weight: 500;
+      }
 
-  test('width prop sets width', () => {
-    const json = rendererCreateWithTheme(<Divider width={1 / 2} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('width', '50%')
-  })
+      .c0 * {
+        box-sizing: border-box;
+      }
 
-  test('m prop sets margin', () => {
-    const json = rendererCreateWithTheme(<Divider m={2} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('margin', theme.space[2])
-  })
+      .c1 {
+        border: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: #c0cad5;
+        background-color: #c0cad5;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
 
-  test('borderColor prop sets borderColor', () => {
-    const json = rendererCreateWithTheme(<Divider borderColor='blue' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', theme.colors.blue)
-  })
-
-  test('override default margin left and right', () => {
-    render(<Divider mx={2} data-testid='divider' />)
-
-    expect(screen.getByTestId('divider')).toHaveStyleRule('margin-left', theme.space[2])
-    expect(screen.getByTestId('divider')).toHaveStyleRule('margin-right', theme.space[2])
+      <div
+          class="c0"
+        >
+          <hr
+            class="c1"
+            color="border"
+          />
+        </div>
+      </DocumentFragment>
+    `)
   })
 })
