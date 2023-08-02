@@ -32,15 +32,14 @@ const getBackgroundColor = (props) =>
   props.disabled ? 'background.base' : props.selected ? 'light' : 'background.lightest'
 
 const variations = {
-    outline: css` 
-    `,
-    shadow: css`
-      box-shadow: ${props => props.disabled || props.selected ? 'none' : themeGet('shadows.md')};
-      &:hover {
-        box-shadow: ${props => props.disabled ? 'none' : themeGet('shadows.xl')};
-      }
-    `,
-  }
+  outline: css``,
+  shadow: css`
+    box-shadow: ${(props) => (props.disabled || props.selected ? 'none' : themeGet('shadows.md'))};
+    &:hover {
+      box-shadow: ${(props) => (props.disabled ? 'none' : themeGet('shadows.xl'))};
+    }
+  `,
+}
 
 interface IChipContentWrapper extends IBoxProps {
   disabled: boolean
@@ -53,7 +52,9 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
     background-color: ${getPaletteColor(getBackgroundColor(props))(props)};
-    border: 1px solid ${props.variation === 'shadow' && !props.selected ? 'transparent' : getBorderColor(props)};
+    border: 1px solid ${
+      props.variation === 'shadow' && !props.selected ? 'transparent' : getBorderColor(props)
+    };
     ${
       props.disabled
         ? ``
@@ -69,8 +70,8 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
       props.selected && !props.disabled
         ? `
           &:hover {
-            color: ${getPaletteColor('tone')(props)};
-            border: 1px solid ${getPaletteColor('tone')(props)};
+            color: ${getPaletteColor('dark')(props)};
+            border: 1px solid ${getPaletteColor('dark')(props)};
             background-color: ${getPaletteColor('light')(props)};
           }
           `

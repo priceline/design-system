@@ -2,6 +2,39 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.11.0",
+      "tag": "pcln-icons_v5.11.0",
+      "date": "Mon, 31 Jul 2023 13:51:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add celebration icon",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "cb30a6c830480f09d5b76f022ae7de44e80b5123"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Add PushPin and PushPinBorder icons",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "48e482f8883c29396d985be5fe6e6115bf3c41ea"
+          },
+          {
+            "comment": "Update icons from 48px to 24px",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "48e482f8883c29396d985be5fe6e6115bf3c41ea"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Add newline to bottom of index file",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "0aa363c899eda51977d586b520ae248cc9e88747"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.10.0",
       "tag": "pcln-icons_v5.10.0",
       "date": "Tue, 25 Jul 2023 18:42:42 GMT",

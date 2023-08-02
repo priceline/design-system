@@ -66,7 +66,23 @@ export interface IButtonChipProps extends SpaceProps, FontSizeProps {
 }
 
 const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
-  ({ color, width, id, m, disabled, expanded, children, onClick, label, showActionIcon, variation, ...props }, ref) => (
+  (
+    {
+      color,
+      width,
+      id,
+      m,
+      disabled,
+      expanded,
+      children,
+      onClick,
+      label,
+      showActionIcon,
+      variation,
+      ...props
+    },
+    ref
+  ) => (
     <ChipButton
       color={color}
       width={width}

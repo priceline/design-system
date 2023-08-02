@@ -1,22 +1,33 @@
 import styled from 'styled-components'
-import { top, right, bottom, left, zIndex, compose } from 'styled-system'
-import styledSystemPropTypes from '@styled-system/prop-types'
+import {
+  top,
+  right,
+  bottom,
+  left,
+  zIndex,
+  compose,
+  TopProps,
+  RightProps,
+  BottomProps,
+  LeftProps,
+  ZIndexProps,
+} from 'styled-system'
 
-import { Box } from '../Box'
+import { Box, IBoxProps } from '../Box'
 
-const Absolute = styled(Box)`
+export interface IAbsoluteProps
+  extends IBoxProps,
+    TopProps,
+    RightProps,
+    BottomProps,
+    LeftProps,
+    ZIndexProps {}
+
+const Absolute: React.FC<IAbsoluteProps> = styled(Box)`
   position: absolute;
 
   ${(props) => compose(top, bottom, left, right, zIndex)(props)}
 `
-
-Absolute.propTypes = {
-  ...styledSystemPropTypes.top,
-  ...styledSystemPropTypes.right,
-  ...styledSystemPropTypes.bottom,
-  ...styledSystemPropTypes.left,
-  ...styledSystemPropTypes.zIndex,
-}
 
 Absolute.displayName = 'Absolute'
 

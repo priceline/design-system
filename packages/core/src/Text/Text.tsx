@@ -47,6 +47,8 @@ import {
   textStylesValues,
   textTransform,
   textTransformValues,
+  textWrap,
+  textWrapValues,
   typographyAttrs,
 } from '../utils'
 
@@ -106,6 +108,7 @@ const textPropTypes = {
   textShadowSize: PropTypes.oneOf(['sm', 'md']),
   textStyle: PropTypes.oneOf(textStylesValues),
   textTransform: PropTypes.oneOf(textTransformValues),
+  textWrap: PropTypes.oneOf(textWrapValues),
 }
 
 export interface ITextProps
@@ -141,6 +144,7 @@ const textProps: React.FC<ITextProps> = css`
   ${textDecoration}
   ${textShadow}
   ${textTransform}
+  ${textWrap}
 
   ${(props) =>
     compose(

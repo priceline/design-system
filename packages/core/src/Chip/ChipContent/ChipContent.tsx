@@ -31,7 +31,7 @@ const propTypes = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
-  variation: PropTypes.oneOf(['default', 'shadow']),
+  variation: PropTypes.oneOf(['outline', 'shadow']),
 }
 
 const ChipContent: React.FC<InferProps<typeof propTypes>> = ({

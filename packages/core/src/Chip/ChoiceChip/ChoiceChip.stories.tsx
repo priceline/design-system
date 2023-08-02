@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Departure } from 'pcln-icons'
 import ChoiceChip from './ChoiceChip'
 import { Box } from '../../Box'
 import { Text } from '../../Text'
 import { chipWithShadowVariationArgs } from '../../storybook/args'
+import { Flex } from '../../Flex'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />
@@ -206,6 +207,47 @@ export const CustomChip = () => (
 
 // With Variation Shadow
 export const WithVariationShadow = () => getExamples(chipWithShadowVariationArgs, [small, medium, responsive])
+
+// Usage
+export const Usage = () => {
+  const ROUND_TRIP_CHIP_BUTTON_ID = 'round-trip-chip-button-id'
+  const ONE_WAY_CHIP_BUTTON_ID = 'one-way-chip-button-id'
+  const [chipState, setChipState] = useState({
+    [`${ROUND_TRIP_CHIP_BUTTON_ID}`]: true,
+    [`${ONE_WAY_CHIP_BUTTON_ID}`]: false,
+  })
+
+  function handleClick(evt) {
+    if (evt?.target?.id === ROUND_TRIP_CHIP_BUTTON_ID) {
+      setChipState({ [`${ROUND_TRIP_CHIP_BUTTON_ID}`]: true, [`${ONE_WAY_CHIP_BUTTON_ID}`]: false })
+    }
+
+    if (evt?.target?.id === ONE_WAY_CHIP_BUTTON_ID) {
+      setChipState({ [`${ROUND_TRIP_CHIP_BUTTON_ID}`]: false, [`${ONE_WAY_CHIP_BUTTON_ID}`]: true })
+    }
+  }
+
+  return (
+    <Flex flexDirection='row'>
+      <ChoiceChip
+        id={ROUND_TRIP_CHIP_BUTTON_ID}
+        selected={chipState[ROUND_TRIP_CHIP_BUTTON_ID]}
+        onClick={handleClick}
+        label='Round-trip'
+        variation='shadow'
+        m={1}
+      />
+      <ChoiceChip
+        id={ONE_WAY_CHIP_BUTTON_ID}
+        selected={chipState[ONE_WAY_CHIP_BUTTON_ID]}
+        onClick={handleClick}
+        label='One-way'
+        variation='shadow'
+        m={1}
+      />
+    </Flex>
+  )
+}
 
 //Default
 export default {

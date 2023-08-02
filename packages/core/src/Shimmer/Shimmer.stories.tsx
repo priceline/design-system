@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Shimmer, Flex } from '..'
+import { Shimmer, Flex, Box } from '..'
 
 const SkeletonBar = styled(Shimmer).attrs(() => ({
   mb: 2,
@@ -25,4 +25,34 @@ export const ComposedAsSkeletonLoader = () => (
     <SkeletonBar />
     <SkeletonBar />
   </Flex>
+)
+
+export const LightSkeletonLoader = () => (
+  <Flex flexDirection='column' maxWidth='700px'>
+    <Flex>
+      <SkeletonBar width='100px' height='100px' mr={2} variation='light' />
+      <Flex flexDirection='column' width='calc(100% - 100px)'>
+        <SkeletonBar width={3 / 4} variation='light' />
+        <SkeletonBar width={1 / 2} variation='light' />
+      </Flex>
+    </Flex>
+    <SkeletonBar variation='light' />
+    <SkeletonBar variation='light' />
+  </Flex>
+)
+
+export const DarkSkeletonLoader = () => (
+  <Box color='background.darkest'>
+    <Flex flexDirection='column' maxWidth='700px'>
+      <Flex>
+        <SkeletonBar width='100px' height='100px' mr={2} variation='dark' />
+        <Flex flexDirection='column' width='calc(100% - 100px)'>
+          <SkeletonBar width={3 / 4} variation='dark' />
+          <SkeletonBar width={1 / 2} variation='dark' />
+        </Flex>
+      </Flex>
+      <SkeletonBar animationWidth={700} variation='dark' />
+      <SkeletonBar animationWidth={700} variation='dark' />
+    </Flex>
+  </Box>
 )

@@ -283,6 +283,56 @@ export const ToggleChip = () => {
 // With Variation Shadow
 export const WithVariationShadow = () => getExamples(chipWithShadowVariationArgs, [small, medium, responsive])
 
+// Usage
+export const Usage = () => {
+  const FREE_CANCELLATION_CHIP_BUTTON_ID = 'free-cancellation-chip-button-id'
+  const FREE_WIFI_CHIP_BUTTON_ID = 'free-wifi-chip-button-id'
+  const FREE_PARKING_CHIP_BUTTON_ID = 'free-parking-chip-button-id'
+  const [chipState, setChipState] = useState({
+    [`${FREE_CANCELLATION_CHIP_BUTTON_ID}`]: false,
+    [`${FREE_WIFI_CHIP_BUTTON_ID}`]: false,
+    [`${FREE_PARKING_CHIP_BUTTON_ID}`]: false,
+  })
+
+  function handleClick(evt) {
+    if (evt?.target?.id) {
+      const chipButtonId = evt.target.id
+      setChipState((state) => ({ ...state, [chipButtonId]: !state[chipButtonId] }))
+    }
+  }
+
+  return (
+    <Box flexDirection='row'>
+      <FilterChip
+        id={FREE_CANCELLATION_CHIP_BUTTON_ID}
+        selected={chipState[FREE_CANCELLATION_CHIP_BUTTON_ID]}
+        onClick={handleClick}
+        label='Free Cancellation'
+        variation='shadow'
+        showActionIcon={chipState[FREE_CANCELLATION_CHIP_BUTTON_ID]}
+        m={1}
+      />
+      <FilterChip
+        id={FREE_WIFI_CHIP_BUTTON_ID}
+        selected={chipState[FREE_WIFI_CHIP_BUTTON_ID]}
+        onClick={handleClick}
+        label='Free WiFi'
+        variation='shadow'
+        showActionIcon={chipState[FREE_WIFI_CHIP_BUTTON_ID]}
+        m={1}
+      />
+      <FilterChip
+        id={FREE_PARKING_CHIP_BUTTON_ID}
+        selected={chipState[FREE_PARKING_CHIP_BUTTON_ID]}
+        onClick={handleClick}
+        label='Free Parking'
+        variation='shadow'
+        showActionIcon={chipState[FREE_PARKING_CHIP_BUTTON_ID]}
+        m={1}
+      />
+    </Box>
+  )
+}
 
 //Default
 export default {

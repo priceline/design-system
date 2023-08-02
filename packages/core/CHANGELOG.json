@@ -2,6 +2,47 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.17.0",
+      "tag": "pcln-design-system_v5.17.0",
+      "date": "Mon, 31 Jul 2023 13:51:05 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add light and dark variation props to Shimmer",
+            "author": "Caleb Liu <120677881+CalebBoLiuPriceline@users.noreply.github.com>",
+            "commit": "4ab2b5fd374484e80ec33fc46bfd062378d0f2dd"
+          },
+          {
+            "comment": "rename origin with base on Shimmer",
+            "author": "Caleb Liu <120677881+CalebBoLiuPriceline@users.noreply.github.com>",
+            "commit": "4ab2b5fd374484e80ec33fc46bfd062378d0f2dd"
+          },
+          {
+            "comment": "update Card stories and docs",
+            "author": "Pablo Herrera <67336461+pherrera167@users.noreply.github.com>",
+            "commit": "865c6cd26c9475acb290ea1eb8786ce81bf42ab0"
+          },
+          {
+            "comment": "Create FAB and ChatTrigger components",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "0aa363c899eda51977d586b520ae248cc9e88747"
+          },
+          {
+            "comment": "Create ChatMessageSeparator component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "bf9090bf352395730a3bbde0ff33b767fbabc3b9"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Update image URL",
+            "author": "Jason Viana <108819593+pcln-jason-v@users.noreply.github.com>",
+            "commit": "7f50f04f514f75a1ffda4ad4e15d119ff0a11519"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.16.0",
       "tag": "pcln-design-system_v5.16.0",
       "date": "Tue, 25 Jul 2023 15:57:04 GMT",
