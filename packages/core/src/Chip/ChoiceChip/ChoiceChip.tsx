@@ -26,6 +26,7 @@ const choiceChipProps = {
   topLabel: PropTypes.string,
   borderRadius: PropTypes.string,
   width: PropTypes.string,
+  justifyContent: PropTypes.string,
 }
 
 export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLAttributes<HTMLElement> {
@@ -37,6 +38,7 @@ export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLA
   topLabel?: string
   borderRadius?: string
   width?: string
+  justifyContent?: string
 }
 
 const ChoiceChip: React.FC<IChoiceChipProps> = ({

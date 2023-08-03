@@ -54,6 +54,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
   BridgeIcon = undefined,
   topLabel = undefined,
   borderRadius = undefined,
+  justifyContent = 'center',
   ...props
 }) => (
   <ChipContentWrapper
@@ -64,6 +65,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
     disabled={disabled}
     selected={selected}
     size={size}
+    justifyContent={justifyContent}
     {...props}
   >
     {children}

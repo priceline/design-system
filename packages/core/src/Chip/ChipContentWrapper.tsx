@@ -72,6 +72,9 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   `}
   width: 100%;
   max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: ${({ justifyContent }) => justifyContent};
   position: relative;
   border-radius: 2px;
   white-space: nowrap;

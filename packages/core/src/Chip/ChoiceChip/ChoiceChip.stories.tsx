@@ -147,6 +147,7 @@ const withImageBridgeLabelAndTopLabel = [
     topLabel: 'Departure Flight',
     borderRadius: 'lg',
     width: '300px',
+    justifyContent: 'flex-start',
   },
   {
     label: 'Active',
