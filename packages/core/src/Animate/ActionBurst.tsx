@@ -25,7 +25,7 @@ const ActionBurst: React.FC<InferProps<typeof propTypes>> = (props) => {
               y: -100,
               position: 'absolute',
             }}
-            animate={{ scale: [0, 1, 0], y: [-100, -200], rotate: [0, 360] }}
+            animate={{ scale: [0, 1, 0], y: [-100, -200], rotate: [0, 240] }}
             onAnimationComplete={() => {
               setIsActive(false)
             }}
@@ -42,7 +42,7 @@ const ActionBurst: React.FC<InferProps<typeof propTypes>> = (props) => {
               x: 0,
               position: 'absolute',
             }}
-            animate={{ scale: [0, 1, 0], y: [-70, -200], x: [0, -200], rotate: [0, 360] }}
+            animate={{ scale: [0, 1, 0], y: [-70, -200], x: [0, -200], rotate: [0, 240] }}
           >
             {props.icon}
           </motion.div>
@@ -56,7 +56,7 @@ const ActionBurst: React.FC<InferProps<typeof propTypes>> = (props) => {
               x: 0,
               position: 'absolute',
             }}
-            animate={{ scale: [0, 1, 0], y: [-80, -100], x: [0, 200], rotate: [0, 360] }}
+            animate={{ scale: [0, 1, 0], y: [-80, -100], x: [0, 200], rotate: [0, 240] }}
           >
             {props.icon}
           </motion.div>
