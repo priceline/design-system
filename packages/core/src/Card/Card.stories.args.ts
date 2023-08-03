@@ -1,7 +1,7 @@
 import { borderStyles, colors, inputArgs, shadows } from '../storybook/args'
 import { Card } from '..'
 
-export const argTypes = {
+export const argTypes: unknown = {
   as: {
     control: 'select',
     description:
