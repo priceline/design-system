@@ -55,6 +55,7 @@ export const Default = () => (
       onSlideChange={action('Slide Change')}
       slideSpacing={2}
       stretchHeight
+      arrowPosition='side'
     >
       {Array.from(Array(20)).map((_, idx) => (
         <ToutCard
@@ -73,7 +74,12 @@ export const Default = () => (
 
 export const NoStrechHeight = () => (
   <Box m={3}>
-    <SlideBox visibleSlides={[1.2, 2.2, 3, 3, 4]} onSlideChange={action('Slide Change')} slideSpacing={2}>
+    <SlideBox
+      visibleSlides={[1.2, 2.2, 3, 3, 4]}
+      onSlideChange={action('Slide Change')}
+      slideSpacing={2}
+      arrowPosition='side'
+    >
       {Array.from(Array(6)).map((_, idx) => (
         <ToutCard
           height={idx === 1 ? '300px' : '320px'}
@@ -97,6 +103,7 @@ export const CustomLayout = () => (
       slideSpacing={2}
       stretchHeight
       layout='30-70'
+      arrowPosition='side'
     >
       {Array.from(Array(6)).map((_, idx) => (
         <ToutCard
