@@ -99,10 +99,6 @@ export const AllBgs = () => (
   </Box>
 )
 
-AllBgs.story = {
-  name: 'All bgs',
-}
-
 export const AllBgsHeaderOnly = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} header='default' onClose={action('closed')} />
@@ -116,10 +112,6 @@ export const AllBgsHeaderOnly = () => (
   </Box>
 )
 
-AllBgsHeaderOnly.story = {
-  name: 'All bgs header only',
-}
-
 export const AllBgsTextOnly = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' onClose={action('closed')} />
@@ -132,10 +124,6 @@ export const AllBgsTextOnly = () => (
     <Banner textAlign='right' mb={2} p={2} text='Secondary Text' bg='lightRed' onClose={action('closed')} />
   </Box>
 )
-
-AllBgsTextOnly.story = {
-  name: 'All bgs text only',
-}
 
 export const SansCloseButton = () => (
   <Box>
@@ -279,10 +267,6 @@ export const WithoutIconOrCloseButton = () => (
   </Box>
 )
 
-WithoutIconOrCloseButton.story = {
-  name: 'Without Icon or Close Button',
-}
-
 export const SansCloseButtonTextOnly = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' />
@@ -295,10 +279,6 @@ export const SansCloseButtonTextOnly = () => (
     <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' />
   </Box>
 )
-
-SansCloseButtonTextOnly.story = {
-  name: 'Sans Close Button, Text only',
-}
 
 export const SansIconTextOnly = () => (
   <Box>
@@ -353,10 +333,6 @@ export const SansIconTextOnly = () => (
   </Box>
 )
 
-SansIconTextOnly.story = {
-  name: 'Sans Icon, Text only',
-}
-
 export const CustomHeaderAsNode = () => (
   <Box>
     <Banner
@@ -380,10 +356,6 @@ export const CustomHeaderAsNode = () => (
   </Box>
 )
 
-CustomHeaderAsNode.story = {
-  name: 'Custom header as node',
-}
-
 export const WithoutIconOrCloseButtonTextOnly = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' showIcon={false} />
@@ -397,10 +369,6 @@ export const WithoutIconOrCloseButtonTextOnly = () => (
   </Box>
 )
 
-WithoutIconOrCloseButtonTextOnly.story = {
-  name: 'Without Icon or Close Button, Text only',
-}
-
 export const WithCustomIconsAndSizes = () => (
   <Box>
     <Banner textAlign='right' mb={2} p={2} text='default' iconName='star' />
@@ -413,10 +381,6 @@ export const WithCustomIconsAndSizes = () => (
     <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' iconName='star' />
   </Box>
 )
-
-WithCustomIconsAndSizes.story = {
-  name: 'With custom icons and sizes',
-}
 
 export const WithChildren = () => (
   <Box>
@@ -437,10 +401,6 @@ export const WithChildren = () => (
     </Banner>
   </Box>
 )
-
-WithChildren.story = {
-  name: 'With children',
-}
 
 export const ColorScheme = () => {
   return colorSchemeNames.map((colorScheme) => (

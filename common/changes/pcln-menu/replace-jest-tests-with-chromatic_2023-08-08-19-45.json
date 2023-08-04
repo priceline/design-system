@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Replace more Jest tests with Storybook stories and interaction tests",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

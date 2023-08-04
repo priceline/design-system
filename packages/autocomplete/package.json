@@ -19,9 +19,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest --verbose --coverage",
-    "test:ci": "jest --silent --coverage --runInBand",
-    "test:update": "jest --updateSnapshot",
-    "test:snapshots": "jest --runInBand --updateSnapshot"
+    "test:ci": "jest --silent --coverage --runInBand --passWithNoTests",
+    "test:snapshots": "jest --runInBand --updateSnapshot --passWithNoTests"
   },
   "dependencies": {
     "downshift": "^7.6.0",
@@ -35,6 +34,8 @@
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.17.0",
     "@rushstack/eslint-patch": "^1.2.0",
+    "@storybook/jest": "^0.1.0",
+    "@storybook/testing-library": "^0.2.0",
     "@styled-system/theme-get": "^5.1.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",

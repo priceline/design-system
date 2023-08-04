@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { Box, Flex, Truncate, Text } from 'pcln-design-system'
+import { within } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
 
 import * as icons from '../components'
 const { Accessible, Cars, Flights, Hotels, Priceline } = icons
@@ -49,29 +51,38 @@ export const PricelineLogo = () => <Priceline color='primary' size={48} />
 
 export const Responsive = () => <Flights color='primary' size={[100, 200, 300, 50]} name='Flights' />
 
-export const A11Y = () => (
-  <Box>
-    <Accessible
-      color='primary'
-      size={[100, 200, 300, 50]}
-      title='Accessible Logo'
-      titleId='titleId'
-      desc='Accessible Logo description'
-      descId='descId'
-    />
-    <Accessible
-      color='primary'
-      size={[100, 200, 300, 50]}
-      title='Accessible Logo'
-      titleId='titleId'
-      desc='Accessible Logo description'
-      descId='descId'
-    />
-  </Box>
-)
+export const A11Y = {
+  name: 'Tests / Accessibility',
+  render: () => (
+    <Box>
+      <Accessible
+        color='primary'
+        size={[100, 200, 300, 50]}
+        title='Accessible Logo'
+        titleId='titleId'
+        desc='Accessible Logo description'
+        descId='descId'
+      />
+      <Priceline data-testid='priceline-icon' titleId='priceline-icon' />
+    </Box>
+  ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
 
-A11Y.story = {
-  name: 'a11y',
+    // renders icon and <desc />
+    const icon = canvas.queryAllByTitle('Accessible Logo')[0]
+    expect(icon).toBeInTheDocument()
+    expect(icon).toHaveAttribute('tabindex', '-1')
+    expect(icon).toHaveAttribute('focusable', 'false')
+    expect(icon).toHaveAttribute('role', 'img')
+    expect(icon).toHaveAttribute('aria-labelledby', 'titleId descId')
+    expect(canvas.getByText('Accessible Logo description')).toBeInTheDocument()
+
+    // aria-hidden = true when title is not provided
+    const pricelineIcon = canvas.getByTestId('priceline-icon')
+    expect(pricelineIcon).toHaveAttribute('aria-hidden', 'true')
+    expect(pricelineIcon).toHaveAttribute('aria-labelledby', 'priceline-icon')
+  },
 }
 
 export const AlignedWithText = () => (

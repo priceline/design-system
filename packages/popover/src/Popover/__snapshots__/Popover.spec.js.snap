@@ -164,6 +164,7 @@ exports[`Popover UI Positioning Bottom 1`] = `
   max-width: 400px;
   width: 100%;
   z-index: 102;
+  position: relative;
 }
 
 .c3 {
@@ -281,6 +282,7 @@ exports[`Popover UI Positioning Bottom End 1`] = `
   max-width: 400px;
   width: 100%;
   z-index: 102;
+  position: relative;
 }
 
 .c3 {
@@ -398,6 +400,7 @@ exports[`Popover UI Positioning Bottom Start 1`] = `
   max-width: 400px;
   width: 100%;
   z-index: 102;
+  position: relative;
 }
 
 .c3 {

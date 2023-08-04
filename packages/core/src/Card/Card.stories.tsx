@@ -134,10 +134,6 @@ export const ShowcaseCard = () => (
   </>
 )
 
-ShowcaseCard.story = {
-  name: 'Showcase Card',
-}
-
 const StyledCard = styled(Card)`
   font-family: inherit;
   &:hover {
@@ -201,10 +197,6 @@ export const CardHousingButton = () => (
     </Card>
   </Flex>
 )
-
-CardHousingButton.story = {
-  name: 'Card Housing Button',
-}
 
 const meta: Meta<typeof Card> = {
   title: 'Card',

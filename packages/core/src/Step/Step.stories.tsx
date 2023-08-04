@@ -19,10 +19,6 @@ export default {
 
 export const StepComponent = () => <Step>Step</Step>
 
-StepComponent.story = {
-  name: 'Step component',
-}
-
 export const CurrentStep = () => <Step active>Step</Step>
 export const CompletedStep = () => <Step completed>Step</Step>
 
@@ -31,9 +27,5 @@ export const CurrentAndCompletedStep = () => (
     Step
   </Step>
 )
-
-CurrentAndCompletedStep.story = {
-  name: 'Current and Completed Step',
-}
 
 export const ClickableStep = () => <Step onClick={onClick}>Step</Step>

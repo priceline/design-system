@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "Delete unused spec file",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

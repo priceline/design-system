@@ -16,10 +16,6 @@ export const AroundAnImageAndAnAbsolutelyPositionedFlag = () => (
   </Relative>
 )
 
-AroundAnImageAndAnAbsolutelyPositionedFlag.story = {
-  name: 'Around an Image and an absolutely positioned Flag',
-}
-
 export const AroundTextAndAnAbsolutelyPositionedIcon = () => (
   <Card m={2}>
     <Relative p={4}>
@@ -36,7 +32,3 @@ export const AroundTextAndAnAbsolutelyPositionedIcon = () => (
     </Relative>
   </Card>
 )
-
-AroundTextAndAnAbsolutelyPositionedIcon.story = {
-  name: 'Around Text and an absolutely positioned Icon',
-}

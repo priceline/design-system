@@ -65,10 +65,6 @@ export const CustomBackgroundAndBorderColor = () => (
   </div>
 )
 
-CustomBackgroundAndBorderColor.story = {
-  name: 'Custom Background and Border Color',
-}
-
 export const CustomTextSize = () => (
   <div>
     <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
@@ -117,10 +113,6 @@ export const PassAnArrayOfSizes = () => (
     </BlueStamp>
   </div>
 )
-
-PassAnArrayOfSizes.story = {
-  name: 'Pass an array of sizes',
-}
 
 const ColorSchemesTemplate = () => {
   return (

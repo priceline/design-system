@@ -42,10 +42,6 @@ export const CompensatingFor1PxBorder = () => (
   </Box>
 )
 
-CompensatingFor1PxBorder.story = {
-  name: 'Compensating for 1px border',
-}
-
 export const WrappedText = () => (
   <Box p={3}>
     <Card pb={3}>
@@ -57,10 +53,6 @@ export const WrappedText = () => (
     </Card>
   </Box>
 )
-
-WrappedText.story = {
-  name: 'Wrapped text',
-}
 
 export const WithIcon = () => (
   <Box p={3}>
@@ -86,7 +78,3 @@ export const WithCustomPadding = () => (
     </Card>
   </Box>
 )
-
-WithCustomPadding.story = {
-  name: 'With custom padding',
-}

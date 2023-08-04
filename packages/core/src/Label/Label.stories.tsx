@@ -42,10 +42,6 @@ export const HtmlFor = () => (
   </div>
 )
 
-HtmlFor.story = {
-  name: 'htmlFor',
-}
-
 export const Nowrap = () => (
   <Flex>
     <Label nowrap>
@@ -62,7 +58,3 @@ export const Nowrap = () => (
     </Label>
   </Flex>
 )
-
-Nowrap.story = {
-  name: 'nowrap',
-}

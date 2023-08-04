@@ -18,10 +18,6 @@ export const Default = () => (
   />
 )
 
-Default.story = {
-  name: 'default',
-}
-
 export const WithColor = () => (
   <IconButton
     onClick={action('Clicked IconButton')}
@@ -29,25 +25,13 @@ export const WithColor = () => (
   />
 )
 
-WithColor.story = {
-  name: 'with color',
-}
-
 export const WithSize = () => (
   <IconButton onClick={action('Clicked IconButton')} icon={<Calendar title='Choose date' size={64} />} />
 )
 
-WithSize.story = {
-  name: 'with size',
-}
-
 export const WithDisabled = () => (
   <IconButton onClick={action('Clicked IconButton')} icon={<Calendar title='Choose date' />} disabled />
 )
-
-WithDisabled.story = {
-  name: 'with disabled',
-}
 
 export function ForwardRefs() {
   function refChild(dsRef) {
@@ -68,8 +52,4 @@ export function ForwardRefs() {
     )
   }
   return <ForwardRefDemo refChild={refChild} />
-}
-
-ForwardRefs.story = {
-  name: 'Forward refs',
 }

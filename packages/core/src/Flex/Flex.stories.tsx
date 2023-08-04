@@ -49,7 +49,3 @@ export const DeprecatedBgShim = () => (
     </Box>
   </Flex>
 )
-
-DeprecatedBgShim.story = {
-  name: 'deprecated bg shim',
-}

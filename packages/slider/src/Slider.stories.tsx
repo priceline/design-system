@@ -127,10 +127,6 @@ export const RangeSliderWithSingleValue = () => (
   <RangeSlider ariaLabelForHandle={['Handle One']} value={[32]} />
 )
 
-RangeSliderWithSingleValue.story = {
-  name: 'RangeSlider with Single value',
-}
-
 export const _Slider = () => <Slider ariaLabelForHandle='Handle' value={[32]} />
 
 export const MultipleValues = () => (
@@ -140,10 +136,6 @@ export const MultipleValues = () => (
     max={256}
   />
 )
-
-MultipleValues.story = {
-  name: 'Multiple values',
-}
 
 export const Colors = () => (
   <div>

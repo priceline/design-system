@@ -1,4 +1,4 @@
-import RadioCheckToggleCard, { hPositions, vPositions } from './RadioCheckToggleCard'
+import { RadioCheckToggleCard, hPositions, vPositions } from './RadioCheckToggleCard'
 
 export const argTypes = {
   hPosition: {

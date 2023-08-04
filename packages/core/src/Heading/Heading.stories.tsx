@@ -31,10 +31,6 @@ export const UsingDotNotationWithH1H6 = () => (
   </section>
 )
 
-UsingDotNotationWithH1H6.story = {
-  name: 'Using dot-notation with h1-h6',
-}
-
 export const WithTextShadows = () => (
   <section>
     <Heading.h1 enableTextShadow>Heading h1</Heading.h1>
@@ -59,10 +55,6 @@ export const UsingTextProps = () => (
     </Heading>
   </section>
 )
-
-UsingTextProps.story = {
-  name: 'Using <Text> props',
-}
 
 export const ColorSchemes = () => (
   <section>
