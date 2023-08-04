@@ -38,7 +38,7 @@ describe('SlideBox', () => {
     const slideChange = jest.fn()
 
     const { getByTestId } = render(
-      <SlideBox visibleSlides={1} onSlideChange={slideChange} slideSpacing={2} arrowPosition='side'>
+      <SlideBox visibleSlides={1} onSlideChange={slideChange} slideSpacing={2} arrowPosition='bottom'>
         <Box>1</Box>
         <Box>2</Box>
         <Box>3</Box>
