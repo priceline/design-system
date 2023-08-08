@@ -89,7 +89,7 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
               {facet}
             </Text>
           )}
-          {Boolean(bridgeLabel) && <BridgeIcon title='to' size='16px' ml={2} />}
+          {Boolean(bridgeLabel) && <BridgeIcon title='to' size='16px' ml={2} mt='1px' />}
           {Boolean(bridgeLabel) && (
             <Text regular ml={2}>
               {bridgeLabel}
