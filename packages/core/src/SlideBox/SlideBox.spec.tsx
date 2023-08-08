@@ -6,7 +6,7 @@ import { SlideBox, Box } from '..'
 describe('SlideBox', () => {
   it('renders with layout', () => {
     const { getByTestId } = render(
-      <SlideBox layout='60-40' onSlideChange={() => {}} slideSpacing={2} stretchHeight>
+      <SlideBox layout='60-40' onSlideChange={() => {}} slideSpacing={2} stretchHeight arrowPosition='side'>
         <Box>1</Box>
         <Box>2</Box>
         <Box>3</Box>
@@ -18,7 +18,13 @@ describe('SlideBox', () => {
 
   it('renders with array visible slides', () => {
     const { getByTestId } = render(
-      <SlideBox visibleSlides={[2, 3, 4]} onSlideChange={() => {}} slideSpacing={2} currentSlideOverride={2}>
+      <SlideBox
+        visibleSlides={[2, 3, 4]}
+        onSlideChange={() => {}}
+        slideSpacing={2}
+        currentSlideOverride={2}
+        arrowPosition='side'
+      >
         <Box key='testkey'>1</Box>
         <Box>2</Box>
         <Box>3</Box>
@@ -32,7 +38,7 @@ describe('SlideBox', () => {
     const slideChange = jest.fn()
 
     const { getByTestId } = render(
-      <SlideBox visibleSlides={1} onSlideChange={slideChange} slideSpacing={2}>
+      <SlideBox visibleSlides={1} onSlideChange={slideChange} slideSpacing={2} arrowPosition='bottom'>
         <Box>1</Box>
         <Box>2</Box>
         <Box>3</Box>
@@ -54,5 +60,19 @@ describe('SlideBox', () => {
     )
 
     getByTestId('top-arrows')
+  })
+
+  it('renders with no arrows default', () => {
+    const { queryByTestId } = render(
+      <SlideBox visibleSlides={1}>
+        <Box>1</Box>
+        <Box>2</Box>
+        <Box>3</Box>
+      </SlideBox>
+    )
+    expect(queryByTestId('top-arrows')).not.toBeInTheDocument()
+    expect(queryByTestId('bottom-arrows')).not.toBeInTheDocument()
+    expect(queryByTestId('side-left-arrow')).not.toBeInTheDocument()
+    expect(queryByTestId('side-right-arrow')).not.toBeInTheDocument()
   })
 })
