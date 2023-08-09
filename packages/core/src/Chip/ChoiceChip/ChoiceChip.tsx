@@ -23,6 +23,10 @@ const choiceChipProps = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
+  topLabel: PropTypes.string,
+  borderRadius: PropTypes.string,
+  width: PropTypes.string,
+  justifyContent: PropTypes.string,
 }
 
 export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLAttributes<HTMLElement> {
@@ -31,6 +35,10 @@ export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLA
   selected?: boolean
   label?: string
   value?: string | number
+  topLabel?: string
+  borderRadius?: string
+  width?: string
+  justifyContent?: string
 }
 
 const ChoiceChip: React.FC<IChoiceChipProps> = ({
@@ -41,9 +49,10 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
   children,
   onClick,
   label,
+  width = 'auto',
   ...props
 }) => (
-  <ChipLabel htmlFor={id} {...props}>
+  <ChipLabel htmlFor={id} width={width} {...props}>
     <ChipInput
       data-testid={id}
       name={name}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "ChoiceChip: add topLabel prop along with width and borderRadius",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

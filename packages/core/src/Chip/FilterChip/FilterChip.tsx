@@ -55,7 +55,7 @@ const FilterChip: React.FC<IFilterChipProps> = ({
   value,
   ...props
 }) => (
-  <ChipLabel htmlFor={id} {...props}>
+  <ChipLabel htmlFor={id} width='auto' {...props}>
     <ChipInput
       type='checkbox'
       role='checkbox'

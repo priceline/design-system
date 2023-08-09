@@ -138,6 +138,45 @@ const withImageAndBridgeLabel = [
 ]
 export const WithImageAndBridgeLabel = () => getExamples(withImageAndBridgeLabel, [medium])
 
+//With Image And Bridge Label
+const withImageBridgeLabelAndTopLabel = [
+  {
+    label: 'Enabled',
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+    width: '300px',
+    justifyContent: 'flex-start',
+  },
+  {
+    label: 'Active',
+    selected: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+  },
+  {
+    label: 'Disabled',
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+  },
+  {
+    label: 'Active and Disabled',
+    selected: true,
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+  },
+]
+export const WithImageBridgeLabelAndTopLabel = () => getExamples(withImageBridgeLabelAndTopLabel, [medium])
+
 //Image Only
 const imageOnly = [
   { image: image },
