@@ -6,8 +6,11 @@ exports[`Card renders border 0 without warning 1`] = `
 }
 
 .c1 {
-  border-width: 0;
   border-color: 0;
+  border-width: 0;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
 }
 
 <div
@@ -22,9 +25,11 @@ exports[`Card renders large box shadow with default border 1`] = `
 }
 
 .c1 {
-  border-width: 1px;
-  border-style: solid;
   border-color: #c0cad5;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 <div
@@ -39,9 +44,11 @@ exports[`Card renders medium box shadow with default border 1`] = `
 }
 
 .c1 {
-  border-width: 1px;
-  border-style: solid;
   border-color: #c0cad5;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 <div
@@ -56,9 +63,11 @@ exports[`Card renders medium box shadow with specified borderRadius 1`] = `
 }
 
 .c1 {
-  border-width: 1px;
-  border-style: solid;
   border-color: #c0cad5;
+  border-radius: 0;
+  border-color: #c0cad5;
+  border-style: solid;
+  border-width: 1px;
 }
 
 <div
@@ -73,9 +82,11 @@ exports[`Card renders medium box shadow with specified borderWidth 1`] = `
 }
 
 .c1 {
-  border-width: 2px;
-  border-style: solid;
   border-color: #c0cad5;
+  border-width: 2px;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
 }
 
 <div
@@ -90,9 +101,11 @@ exports[`Card renders small box shadow with default border 1`] = `
 }
 
 .c1 {
-  border-width: 1px;
-  border-style: solid;
   border-color: #c0cad5;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 <div
@@ -106,10 +119,12 @@ exports[`Card renders with as button 1`] = `
 }
 
 .c1 {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #c0cad5;
   font-family: inherit;
+  border-color: #c0cad5;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .c1:hover {
@@ -129,9 +144,11 @@ exports[`Card renders xlarge box shadow with default border 1`] = `
 }
 
 .c1 {
-  border-width: 1px;
-  border-style: solid;
   border-color: #c0cad5;
+  border-color: #c0cad5;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 <div

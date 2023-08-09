@@ -15,6 +15,21 @@ export const colors = ['', ...paletteFamilies, 'NOTVALID']
 
 export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']
 
+export const borderStyles = [
+  'none',
+  'hidden',
+  'dotted',
+  'dashed',
+  'solid',
+  'double',
+  'groove',
+  'ridge',
+  'inset',
+  'outset',
+  'initial',
+  'inherit',
+]
+
 export const rounded = ['', ...roundedValues, 'NOTVALID']
 
 export const shadows = ['', ...boxShadowSizeValues, 'NOTVALID']
