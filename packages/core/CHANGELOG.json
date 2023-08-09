@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.18.0",
+      "tag": "pcln-design-system_v5.18.0",
+      "date": "Wed, 09 Aug 2023 15:37:24 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "ChoiceChip: add topLabel prop along with width and borderRadius",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "5120c8edbda8dd7e699615961ad02a9032879539"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "SlideBox: set default arrowPosition to hide",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "a450a872543e850f95837ee9fd5c62faf9bfa4c4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.17.0",
       "tag": "pcln-design-system_v5.17.0",
       "date": "Mon, 31 Jul 2023 13:51:05 GMT",
