@@ -16,10 +16,6 @@ export const DefaultAlignWithThemeMaxWidth = () => (
   </Container>
 )
 
-DefaultAlignWithThemeMaxWidth.story = {
-  name: 'Default align with theme max width',
-}
-
 export const InputMaxWidth = () => (
   <Container maxWidth={500}>
     <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
@@ -27,10 +23,6 @@ export const InputMaxWidth = () => (
     </Box>
   </Container>
 )
-
-InputMaxWidth.story = {
-  name: 'Input maxWidth',
-}
 
 const Template = (args) => (
   <Flex width='100%' color='primary'>

@@ -75,7 +75,7 @@ export interface IToggleProps {
   name?: string
 }
 
-const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, height, icon, name }) => {
+export const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, height, icon, name }) => {
   const width = height * 1.875
   const circleAbsoluteSize = height - 4
   const leftToggleOnPosition = width - circleAbsoluteSize - 2
@@ -130,5 +130,3 @@ Toggle.defaultProps = {
   isOn: false,
   height: 24,
 }
-
-export default Toggle

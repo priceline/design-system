@@ -72,10 +72,6 @@ export const WithSmallModalHeader = () => (
   <ModalStory header={<SmallModalHeader />} width={['80vw', '400px', '500px']} />
 )
 
-WithSmallModalHeader.story = {
-  name: 'With SmallModalHeader',
-}
-
 export const WithModalHeader = () => {
   // Generate content to demonstrate a scrollable <body>
   const contentLines = [...Array(100).keys()]
@@ -174,10 +170,6 @@ export const RoundedModalWithHeader = () => (
   />
 )
 
-WithImagemodeAndColorful.story = {
-  name: 'With imagemode and colorful',
-}
-
 export const WithCustomAnimation = () => (
   <ModalStory
     header={<SmallModalHeader />}
@@ -186,10 +178,6 @@ export const WithCustomAnimation = () => (
     verticalAlignment='top'
   />
 )
-
-WithCustomAnimation.story = {
-  name: 'With custom animation',
-}
 
 export const ZeroTimeout = () => (
   <ModalStory disableCloseButton width={['100px', '200px', '500px']} timeout={0} />

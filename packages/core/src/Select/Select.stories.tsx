@@ -41,10 +41,6 @@ export const LongOptionString = () => (
   </Box>
 )
 
-LongOptionString.story = {
-  name: 'long option string',
-}
-
 export const HiddenLabel = () => (
   <Box width={[1, 320]}>
     <Label hidden htmlFor='cabinClass'>
@@ -58,10 +54,6 @@ export const HiddenLabel = () => (
     </Select>
   </Box>
 )
-
-HiddenLabel.story = {
-  name: 'hidden label',
-}
 
 export function ForwardRefs() {
   function refChild(dsRef) {
@@ -83,8 +75,4 @@ export function ForwardRefs() {
     )
   }
   return <ForwardRefDemo refChild={refChild} />
-}
-
-ForwardRefs.story = {
-  name: 'Forward refs',
 }

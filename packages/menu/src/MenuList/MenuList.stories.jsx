@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Text } from 'pcln-design-system'
+import { fireEvent, within } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
 
 import MenuList from './MenuList'
 import MenuItem from '../MenuItem'
@@ -59,4 +61,33 @@ export const CurrencyMenuListWithSelection = () => {
       })}
     </MenuList>
   )
+}
+
+export const KeyboardNavigation = () => (
+  <MenuList>
+    <MenuItem selected>Item One</MenuItem>
+    <MenuItem>Item Two</MenuItem>
+  </MenuList>
+)
+KeyboardNavigation.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement)
+  await fireEvent.keyDown(canvas.getByRole('listbox'), {
+    key: 'ArrowUp',
+    code: 'ArrowUp',
+  })
+  expect(canvas.getByText('Item One').closest('button')).toHaveFocus()
+  await fireEvent.keyDown(canvas.getByRole('listbox'), {
+    key: 'ArrowRight',
+    code: 'ArrowRight',
+  })
+  expect(canvas.getByText('Item One').closest('button')).toHaveFocus()
+  await fireEvent.keyDown(canvas.getByRole('listbox'), {
+    key: 'ArrowDown',
+    code: 'ArrowDown',
+  })
+  expect(canvas.getByText('Item Two').closest('button')).toHaveFocus()
+  await fireEvent.keyDown(canvas.getByRole('listbox'), {
+    key: 'ArrowUp',
+    code: 'ArrowUp',
+  })
 }

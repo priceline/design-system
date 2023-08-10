@@ -50,10 +50,6 @@ export const TwoColumn = () => (
   </Flex>
 )
 
-TwoColumn.story = {
-  name: 'Two-column',
-}
-
 export const Navbar = () => (
   <Flex p={2} alignItems='center' color='primary'>
     <HotelsIcon mr={2} />

@@ -64,11 +64,27 @@ describe('ChipContent', () => {
     expect(getByTestId('chipContentWrapper')).toHaveStyleRule('height', '40px')
   })
 
+  test('md, with topLabel', () => {
+    const { getByTestId, getByText } = render(
+      <ChipContent {...{ ...props, size: 'md', topLabel: 'I love chips' }} />
+    )
+    expect(getByTestId('chipContentWrapper')).toHaveStyleRule('height', '58px')
+    expect(getByText('I love chips'))
+  })
+
   test('Custom contents', () => {
     const { getByText } = render(<ChipContent>HELLO</ChipContent>)
 
     //Child element
     expect(getByText('HELLO'))
+  })
+
+  test('No Icon and No image', () => {
+    const { queryByAltText, queryByTitle } = render(
+      <ChipContent {...{ ...props, BridgeIcon: Broom, Icon: undefined, image: undefined }} />
+    )
+    expect(queryByAltText('Delta')).not.toBeInTheDocument()
+    expect(queryByTitle('Departure')).not.toBeInTheDocument()
   })
 
   test('disabled and selected', () => {

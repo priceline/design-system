@@ -24,6 +24,10 @@ const choiceChipProps = {
   }),
   Image: PropTypes.object,
   variation: PropTypes.oneOf(['outline', 'shadow']),
+  topLabel: PropTypes.string,
+  borderRadius: PropTypes.string,
+  width: PropTypes.string,
+  justifyContent: PropTypes.string,
 }
 
 export type Variations = 'outline' | 'shadow'
@@ -35,6 +39,10 @@ export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLA
   label?: string
   value?: string | number
   variation?: Variations
+  topLabel?: string
+  borderRadius?: string
+  width?: string
+  justifyContent?: string
 }
 
 const ChoiceChip: React.FC<IChoiceChipProps> = ({
@@ -46,9 +54,10 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
   onClick,
   label,
   variation,
+  width = 'auto',
   ...props
 }) => (
-  <ChipLabel htmlFor={id} {...props}>
+  <ChipLabel htmlFor={id} width={width} {...props}>
     <ChipInput
       data-testid={id}
       name={name}

@@ -140,6 +140,45 @@ const withImageAndBridgeLabel = [
 ]
 export const WithImageAndBridgeLabel = () => getExamples(withImageAndBridgeLabel, [medium])
 
+//With Image And Bridge Label
+const withImageBridgeLabelAndTopLabel = [
+  {
+    label: 'Enabled',
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+    width: '300px',
+    justifyContent: 'flex-start',
+  },
+  {
+    label: 'Active',
+    selected: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+  },
+  {
+    label: 'Disabled',
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+  },
+  {
+    label: 'Active and Disabled',
+    selected: true,
+    disabled: true,
+    image: image,
+    bridgeLabel: 'Bridge',
+    topLabel: 'Departure Flight',
+    borderRadius: 'lg',
+  },
+]
+export const WithImageBridgeLabelAndTopLabel = () => getExamples(withImageBridgeLabelAndTopLabel, [medium])
+
 //Image Only
 const imageOnly = [
   { image: image },
@@ -210,42 +249,91 @@ export const WithVariationShadow = () => getExamples(chipWithShadowVariationArgs
 
 // Usage
 export const Usage = () => {
-  const ROUND_TRIP_CHIP_BUTTON_ID = 'round-trip-chip-button-id'
-  const ONE_WAY_CHIP_BUTTON_ID = 'one-way-chip-button-id'
+  const ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE = 'round-trip-chip-button-id-outline'
+  const ONE_WAY_CHIP_BUTTON_ID_OUTLINE = 'one-way-chip-button-id-outline'
+  const ROUND_TRIP_CHIP_BUTTON_ID_SHADOW = 'round-trip-chip-button-id-shadow'
+  const ONE_WAY_CHIP_BUTTON_ID_SHADOW = 'one-way-chip-button-id-shadow'
   const [chipState, setChipState] = useState({
-    [`${ROUND_TRIP_CHIP_BUTTON_ID}`]: true,
-    [`${ONE_WAY_CHIP_BUTTON_ID}`]: false,
+    [`${ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE}`]: true,
+    [`${ONE_WAY_CHIP_BUTTON_ID_OUTLINE}`]: false,
+    [`${ROUND_TRIP_CHIP_BUTTON_ID_SHADOW}`]: true,
+    [`${ONE_WAY_CHIP_BUTTON_ID_SHADOW}`]: false,
   })
 
   function handleClick(evt) {
-    if (evt?.target?.id === ROUND_TRIP_CHIP_BUTTON_ID) {
-      setChipState({ [`${ROUND_TRIP_CHIP_BUTTON_ID}`]: true, [`${ONE_WAY_CHIP_BUTTON_ID}`]: false })
+    if (evt?.target?.id === ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE) {
+      setChipState((state) => ({
+        ...state,
+        [`${ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE}`]: true,
+        [`${ONE_WAY_CHIP_BUTTON_ID_OUTLINE}`]: false,
+      }))
     }
 
-    if (evt?.target?.id === ONE_WAY_CHIP_BUTTON_ID) {
-      setChipState({ [`${ROUND_TRIP_CHIP_BUTTON_ID}`]: false, [`${ONE_WAY_CHIP_BUTTON_ID}`]: true })
+    if (evt?.target?.id === ONE_WAY_CHIP_BUTTON_ID_OUTLINE) {
+      setChipState((state) => ({
+        ...state,
+        [`${ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE}`]: false,
+        [`${ONE_WAY_CHIP_BUTTON_ID_OUTLINE}`]: true,
+      }))
+    }
+
+    if (evt?.target?.id === ROUND_TRIP_CHIP_BUTTON_ID_SHADOW) {
+      setChipState((state) => ({
+        ...state,
+        [`${ROUND_TRIP_CHIP_BUTTON_ID_SHADOW}`]: true,
+        [`${ONE_WAY_CHIP_BUTTON_ID_SHADOW}`]: false,
+      }))
+    }
+
+    if (evt?.target?.id === ONE_WAY_CHIP_BUTTON_ID_SHADOW) {
+      setChipState((state) => ({
+        ...state,
+        [`${ROUND_TRIP_CHIP_BUTTON_ID_SHADOW}`]: false,
+        [`${ONE_WAY_CHIP_BUTTON_ID_SHADOW}`]: true,
+      }))
     }
   }
 
   return (
-    <Flex flexDirection='row'>
-      <ChoiceChip
-        id={ROUND_TRIP_CHIP_BUTTON_ID}
-        selected={chipState[ROUND_TRIP_CHIP_BUTTON_ID]}
-        onClick={handleClick}
-        label='Round-trip'
-        variation='shadow'
-        m={1}
-      />
-      <ChoiceChip
-        id={ONE_WAY_CHIP_BUTTON_ID}
-        selected={chipState[ONE_WAY_CHIP_BUTTON_ID]}
-        onClick={handleClick}
-        label='One-way'
-        variation='shadow'
-        m={1}
-      />
-    </Flex>
+    <Box m={3}>
+      <Text>Varation: Outline</Text>
+      <Flex flexDirection='row' key='outline'>
+        <ChoiceChip
+          id={ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE}
+          selected={chipState[ROUND_TRIP_CHIP_BUTTON_ID_OUTLINE]}
+          onClick={handleClick}
+          label='Round-trip'
+          m={1}
+        />
+        <ChoiceChip
+          id={ONE_WAY_CHIP_BUTTON_ID_OUTLINE}
+          selected={chipState[ONE_WAY_CHIP_BUTTON_ID_OUTLINE]}
+          onClick={handleClick}
+          label='One-way'
+          m={1}
+        />
+      </Flex>
+      <br />
+      <Text>Varation: Shadow</Text>
+      <Flex flexDirection='row' key='shadow'>
+        <ChoiceChip
+          id={ROUND_TRIP_CHIP_BUTTON_ID_SHADOW}
+          selected={chipState[ROUND_TRIP_CHIP_BUTTON_ID_SHADOW]}
+          onClick={handleClick}
+          label='Round-trip'
+          variation='shadow'
+          m={1}
+        />
+        <ChoiceChip
+          id={ONE_WAY_CHIP_BUTTON_ID_SHADOW}
+          selected={chipState[ONE_WAY_CHIP_BUTTON_ID_SHADOW]}
+          onClick={handleClick}
+          label='One-way'
+          variation='shadow'
+          m={1}
+        />
+      </Flex>
+    </Box>
   )
 }
 

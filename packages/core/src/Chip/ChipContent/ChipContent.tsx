@@ -7,6 +7,7 @@ import { ChipContentWrapper } from '../ChipContentWrapper'
 import { getPaletteColor } from '../../utils'
 import { Flex } from '../../Flex'
 import { Text } from '../../Text'
+import { Box } from '../../Box'
 
 const ImageWrapper = styled(Flex)`
   background-color: ${getPaletteColor('background.lightest')};
@@ -32,6 +33,8 @@ const propTypes = {
   }),
   Image: PropTypes.object,
   variation: PropTypes.oneOf(['outline', 'shadow']),
+  topLabel: PropTypes.string,
+  borderRadius: PropTypes.string,
 }
 
 const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
@@ -51,37 +54,54 @@ const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
   /* eslint-disable @typescript-eslint/naming-convention */
   BridgeIcon = undefined,
   variation = undefined,
+  topLabel = undefined,
+  borderRadius = undefined,
+  justifyContent = 'center',
   ...props
 }) => (
   <ChipContentWrapper
     data-testid='chipContentWrapper'
     hasChildren={Boolean(children)}
+    hasTopLabel={Boolean(topLabel)}
+    borderRadiusOverride={borderRadius}
     disabled={disabled}
     selected={selected}
     size={size}
     variation={variation}
+    justifyContent={justifyContent}
     {...props}
   >
     {children}
-    {Boolean(image) && <ImageWrapper disabled={disabled}>{image}</ImageWrapper>}
-    {Boolean(Icon) && <Icon title={IconTitle} size='20px' />}
-    {Boolean(label) && (
-      <Text regular ml={Boolean(Icon) || Boolean(image) ? 2 : 0}>
-        {label}
-      </Text>
-    )}
-    {Boolean(facet) && (
-      <Text regular ml={1}>
-        {facet}
-      </Text>
-    )}
-    {Boolean(bridgeLabel) && <BridgeIcon title='to' size='16px' ml={2} />}
-    {Boolean(bridgeLabel) && (
-      <Text regular ml={2}>
-        {bridgeLabel}
-      </Text>
-    )}
-    {Boolean(action?.Icon) && action.title && <action.Icon title={action.title} size='16px' ml={2} />}
+    <Flex alignItems='center' height='100%'>
+      {Boolean(image) && <ImageWrapper disabled={disabled}>{image}</ImageWrapper>}
+      {Boolean(Icon) && <Icon title={IconTitle} size='20px' />}
+      <Box>
+        {Boolean(topLabel) && (
+          <Text regular ml={2} mb={1} fontWeight='bold'>
+            {topLabel}
+          </Text>
+        )}
+        <Flex>
+          {Boolean(label) && (
+            <Text regular ml={Boolean(Icon) || Boolean(image) ? 2 : 0}>
+              {label}
+            </Text>
+          )}
+          {Boolean(facet) && (
+            <Text regular ml={1}>
+              {facet}
+            </Text>
+          )}
+          {Boolean(bridgeLabel) && <BridgeIcon title='to' size='16px' ml={2} mt='1px' />}
+          {Boolean(bridgeLabel) && (
+            <Text regular ml={2}>
+              {bridgeLabel}
+            </Text>
+          )}
+        </Flex>
+      </Box>
+      {Boolean(action?.Icon) && action.title && <action.Icon title={action.title} size='16px' ml={2} />}
+    </Flex>
   </ChipContentWrapper>
 )
 

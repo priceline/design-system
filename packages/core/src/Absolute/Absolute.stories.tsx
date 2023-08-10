@@ -37,10 +37,6 @@ export const OverAnImage = () => (
   </Relative>
 )
 
-OverAnImage.story = {
-  name: 'Over an image',
-}
-
 export const PositioningAnIcon = () => (
   <Card m={2}>
     <Relative p={4}>
@@ -57,10 +53,6 @@ export const PositioningAnIcon = () => (
     </Relative>
   </Card>
 )
-
-PositioningAnIcon.story = {
-  name: 'Positioning an icon',
-}
 
 export const MultipleAbsolutelyPositionedBoxes = () => (
   <TallCard pb={3}>
@@ -88,7 +80,3 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
     </Relative>
   </TallCard>
 )
-
-MultipleAbsolutelyPositionedBoxes.story = {
-  name: 'Multiple absolutely positioned boxes',
-}

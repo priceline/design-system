@@ -2,6 +2,49 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "5.4.7",
+      "tag": "pcln-modal_v5.4.7",
+      "date": "Thu, 10 Aug 2023 14:28:26 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Remove unnecessary titles from CSF stories",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "27679715d0c1d0f0072914d453db4526db9d1479"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.19.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.11`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.18.0` to `^5.19.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.4.6",
+      "tag": "pcln-modal_v5.4.6",
+      "date": "Wed, 09 Aug 2023 15:37:24 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.18.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.10`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.17.0` to `^5.18.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.5",
       "tag": "pcln-modal_v5.4.5",
       "date": "Mon, 31 Jul 2023 13:51:05 GMT",

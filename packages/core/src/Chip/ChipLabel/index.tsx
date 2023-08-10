@@ -5,7 +5,6 @@ import { Label } from '../../Label'
 
 const ChipLabel = styled(Label)`
   display: inline-flex;
-  width: auto;
   user-select: none;
   padding: 0;
   margin: 0;

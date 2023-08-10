@@ -15,7 +15,12 @@ const BottomArrows: React.FC<ITBottomArrowProps> = ({ arrowPosition, arrowProps 
   const isSide = arrowPosition === 'side'
   const Wrapper = isSide ? AbsoluteTransformRight : Flex
   return ['bottom', 'side'].includes(arrowPosition) ? (
-    <Wrapper justifyContent='center' pt={isSide ? 0 : 2} right={0}>
+    <Wrapper
+      justifyContent='center'
+      pt={isSide ? 0 : 2}
+      right={0}
+      data-testid={isSide ? 'side-right-arrow' : 'bottom-arrows'}
+    >
       {isSide ? null : <Arrow mr={3} isLeft {...arrowProps} />}
       <Arrow {...arrowProps} />
     </Wrapper>

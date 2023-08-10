@@ -33,7 +33,7 @@ const SlideBox: React.FC<ISlideBoxProps> = ({
   currentSlideOverride,
   arrowSizeOverride,
   arrowButtonVariation = 'white',
-  arrowPosition = 'side',
+  arrowPosition = 'hide',
   slideScrollNum = 2,
   mobileSlideScrollNum = 1,
 }) => {

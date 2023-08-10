@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Box, Button, Flex, Image, Input, Text, ThemeProvider, theme } from '..'
 import { Section } from '../DocsUtils'
 import { getPaletteColor } from '../utils'
-import RadioCheckToggleCard, { TCardTypes, THPositions, TVPositions } from './RadioCheckToggleCard'
+import { RadioCheckToggleCard, TCardTypes, THPositions, TVPositions } from './RadioCheckToggleCard'
 import { argTypes } from './RadioCheckToggleCard.stories.args'
 
 type Story = StoryObj<typeof RadioCheckToggleCard>
