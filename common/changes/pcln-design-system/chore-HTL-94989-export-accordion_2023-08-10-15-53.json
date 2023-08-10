@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "export accordion",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

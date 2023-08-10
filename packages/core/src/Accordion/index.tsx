@@ -1,3 +1,3 @@
 /* istanbul ignore file */
 // todo: remove coverage ignore once storybook interaction test coverage counts
-export { default } from './Accordion'
+export { Accordion } from './Accordion'

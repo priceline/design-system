@@ -1,6 +1,7 @@
 export type { IButtonProps } from './Button'
 
 export { Absolute } from './Absolute'
+export { Accordion } from './Accordion'
 export * from './Animate'
 export { Avatar } from './Avatar'
 export { BackgroundImage } from './BackgroundImage'
