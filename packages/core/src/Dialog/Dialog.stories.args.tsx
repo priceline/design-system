@@ -2,7 +2,7 @@ import { ArgTypes } from '@storybook/react'
 import React from 'react'
 import type { IDialogProps } from '.'
 import { borderRadii, Button, colorSchemeNames, Grid, paletteColors, Text } from '..'
-import { DialogSizes } from './Dialog.styled'
+import { dialogSizes } from './Dialog.styled'
 
 export const argTypes: Partial<ArgTypes<IDialogProps>> = {
   borderRadius: { control: { type: 'select' }, options: Object.keys(borderRadii) },
@@ -16,7 +16,7 @@ export const argTypes: Partial<ArgTypes<IDialogProps>> = {
   open: { control: { type: 'boolean' } },
   sheet: { control: { type: 'boolean' } },
   showCloseButton: { control: { type: 'boolean' } },
-  size: { control: { type: 'select' }, options: DialogSizes },
+  size: { control: { type: 'select' }, options: dialogSizes },
   triggerNode: { control: { type: 'none' } },
 }
 

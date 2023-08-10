@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion'
 import type { BorderRadius, ColorSchemes, PaletteColor } from '../theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
@@ -60,26 +61,30 @@ const PclnDialog = ({
   return (
     <Dialog.Root open={_open} onOpenChange={handleOpenChange} defaultOpen={defaultOpen}>
       <Dialog.Trigger asChild>{triggerNode}</Dialog.Trigger>
-      <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet}>
-        <DialogContent
-          ariaDescription={ariaDescription}
-          ariaTitle={ariaTitle}
-          borderRadius={borderRadius}
-          fullWidth={fullWidth}
-          headerColorScheme={headerColorScheme}
-          headerContent={headerContent}
-          headerIcon={headerIcon}
-          headerShowCloseButton={headerShowCloseButton}
-          hugColor={hugColor}
-          onOpenChange={handleOpenChange}
-          scrimDismiss={scrimDismiss}
-          sheet={sheet}
-          showCloseButton={showCloseButton}
-          size={size}
-        >
-          {children}
-        </DialogContent>
-      </DialogOverlay>
+      <AnimatePresence>
+        {_open && (
+          <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet}>
+            <DialogContent
+              ariaDescription={ariaDescription}
+              ariaTitle={ariaTitle}
+              borderRadius={borderRadius}
+              fullWidth={fullWidth}
+              headerColorScheme={headerColorScheme}
+              headerContent={headerContent}
+              headerIcon={headerIcon}
+              headerShowCloseButton={headerShowCloseButton}
+              hugColor={hugColor}
+              onOpenChange={handleOpenChange}
+              scrimDismiss={scrimDismiss}
+              sheet={sheet}
+              showCloseButton={showCloseButton}
+              size={size}
+            >
+              {children}
+            </DialogContent>
+          </DialogOverlay>
+        )}
+      </AnimatePresence>
     </Dialog.Root>
   )
 }

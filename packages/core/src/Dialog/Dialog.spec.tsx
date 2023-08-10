@@ -17,7 +17,7 @@ describe('Dialog', () => {
     expect(triggerNode).toBeInTheDocument()
   })
 
-  it('renders the dialog content when trigger is clicked', () => {
+  it('renders the dialog content when trigger is clicked', async () => {
     render(
       <Dialog triggerNode={<button>{triggerText}</button>} ariaDescription='Description' ariaTitle='Title'>
         {contentText}
@@ -26,6 +26,8 @@ describe('Dialog', () => {
 
     const triggerNode = screen.getByText(triggerText)
     triggerNode.click()
+
+    await new Promise((resolve) => setTimeout(resolve, 1000))
 
     const contentNode = screen.getByText(contentText)
     expect(contentNode).toBeInTheDocument()

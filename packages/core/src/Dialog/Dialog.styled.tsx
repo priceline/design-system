@@ -4,42 +4,45 @@ import { Box, CloseButton, Grid, Text, ThemeProvider } from '..'
 import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
-import { motion } from 'framer-motion'
+import { HTMLMotionProps, Transition, motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
 
-export const DialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
-export type DialogSize = (typeof DialogSizes)[number]
+export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
+export type DialogSize = (typeof dialogSizes)[number]
 
-type SizeStyle = {
-  width?: string
-  height?: string
-}
-
-const sizeStyles: Record<DialogSize, SizeStyle> = {
-  sm: {
-    width: 'calc(min(400px, 100vw) - 2 * 16px)',
-  },
-  md: {
-    width: 'calc(min(640px, 100vw) - 2 * 16px)',
-  },
-  lg: {
-    width: 'calc(min(960px, 100vw) - 2 * 16px)',
-  },
-  xl: {
-    width: 'calc(min(1280px, 100vw) - 2 * 16px)',
-    height: 'calc(100% - 2 * 24px)',
-  },
-  full: {
-    width: '100%',
-    height: '100%',
-  },
+const sizeStyles: Record<DialogSize, { width?: string; height?: string }> = {
+  sm: { width: 'calc(min(400px, 100vw) - 2 * 16px)' },
+  md: { width: 'calc(min(640px, 100vw) - 2 * 16px)' },
+  lg: { width: 'calc(min(960px, 100vw) - 2 * 16px)' },
+  xl: { width: 'calc(min(1280px, 100vw) - 2 * 16px)', height: 'calc(100% - 2 * 48px)' },
+  full: { width: '100%', height: '100%' },
 } as const
 
 const scrimStyles = {
   dark: 'rgba(0, 24, 51, 0.75)',
   medium: 'rgba(0, 24, 51, 0.5)',
   light: 'rgba(0, 24, 51, 0.25)',
+} as const
+
+const enterTransition: Transition = { duration: 0.25, ease: 'easeOut' }
+const exitTransition: Transition = { duration: 0.15, ease: 'easeIn' }
+const animationStyles: Record<'default' | 'sheet' | 'overlay', HTMLMotionProps<'div'>> = {
+  default: {
+    initial: { opacity: 0, scale: 0.9, translateY: 64 },
+    animate: { opacity: 1, scale: 1, translateY: 0, transition: enterTransition },
+    exit: { opacity: 0, scale: 0.9, translateY: 32, transition: exitTransition },
+  },
+  sheet: {
+    initial: { opacity: 0, translateY: '40%' },
+    animate: { opacity: 1, translateY: 0, transition: enterTransition },
+    exit: { opacity: 0, translateY: '60%', transition: exitTransition },
+  },
+  overlay: {
+    initial: { opacity: 0, overflow: 'hidden' },
+    animate: { opacity: 1, transitionEnd: { overflow: 'auto' }, transition: enterTransition },
+    exit: { opacity: 0, overflow: 'hidden', transition: exitTransition },
+  },
 } as const
 
 const FloatingCloseButton: typeof CloseButton = styled(CloseButton)`
@@ -75,14 +78,19 @@ const DialogContentWrapper = styled(motion.div)`
   margin: ${(props: IDialogProps) =>
     props.sheet
       ? `${themeGet('space.3')(props)} 0 0 0`
-      : `${themeGet('space.4')(props)} ${themeGet('space.3')(props)} ${themeGet('space.5')(props)} ${themeGet(
-          'space.3'
-        )(props)}`};
+      : props.size === 'full'
+      ? '0'
+      : `${themeGet('space.4')(props)} 
+         ${themeGet('space.3')(props)} 
+         ${themeGet('space.5')(props)} 
+         ${themeGet('space.3')(props)}`};
   border-radius: ${(props: IDialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
           `borderRadii.${props.borderRadius}`
         )(props)} 0 0`
+      : props.size === 'full'
+      ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
   box-shadow: ${(props: IDialogProps) => themeGet('shadows.overlay-lg')(props)};
 `
@@ -95,22 +103,19 @@ const DialogInnerContentWrapper = styled.div`
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
           `borderRadii.${props.borderRadius}`
         )(props)} 0 0`
+      : props.size === 'full'
+      ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
   border-top: ${(props: IDialogProps) =>
     props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
 `
 
-export const DialogOverlay = ({ scrimDismiss, scrimColor, sheet, children }: Partial<IDialogProps>) => {
+export const DialogOverlay = ({ scrimColor, sheet, children }: Partial<IDialogProps>) => {
   return (
-    <Dialog.Portal>
+    <Dialog.Portal forceMount>
       <ThemeProvider>
-        <Dialog.Overlay asChild>
-          <DialogOverlayWrapper
-            scrimColor={scrimColor}
-            sheet={sheet}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
+        <Dialog.Overlay asChild forceMount>
+          <DialogOverlayWrapper scrimColor={scrimColor} sheet={sheet} {...animationStyles.overlay}>
             {children}
           </DialogOverlayWrapper>
         </Dialog.Overlay>
@@ -154,14 +159,14 @@ export const DialogContent = ({
       }}
       onOpenAutoFocus={(e) => e.preventDefault()}
       asChild
+      forceMount
     >
       <DialogContentWrapper
         size={size}
         sheet={sheet}
-        initial={{ opacity: 0, scaleY: 0.8, originY: 1 }}
-        animate={{ opacity: 1, scaleY: 1 }}
         fullWidth={fullWidth}
         borderRadius={borderRadius}
+        {...(sheet ? animationStyles.sheet : animationStyles.default)}
       >
         <VisuallyHidden asChild>
           <Dialog.Title>{ariaTitle}</Dialog.Title>
