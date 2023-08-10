@@ -1,1 +1,1 @@
-export { default as RadioCheckToggleCard } from './RadioCheckToggleCard'
+export { RadioCheckToggleCard } from './RadioCheckToggleCard'

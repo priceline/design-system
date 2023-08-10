@@ -188,10 +188,6 @@ export const CheckboxStates = () => {
   )
 }
 
-CheckboxStates.story = {
-  name: 'Checkbox states',
-}
-
 export const Color = () => (
   <div>
     <Wrapper>
@@ -225,10 +221,6 @@ export const Color = () => (
   </div>
 )
 
-Color.story = {
-  name: 'color',
-}
-
 export function ForwardRefs() {
   function refChild(dsRef) {
     function onClick() {
@@ -251,8 +243,4 @@ export function ForwardRefs() {
     )
   }
   return <ForwardRefDemo refChild={refChild} />
-}
-
-ForwardRefs.story = {
-  name: 'Forward refs',
 }

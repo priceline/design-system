@@ -83,16 +83,8 @@ export const _3States = () => (
   </div>
 )
 
-_3States.story = {
-  name: '3 states',
-}
-
 // @ts-ignore
 export const _MockForm = () => <MockForm />
-
-_MockForm.story = {
-  name: 'Mock form',
-}
 
 export function ForwardRefs() {
   function refChild(dsRef) {
@@ -114,10 +106,6 @@ export function ForwardRefs() {
   return <ForwardRefDemo refChild={refChild} />
 }
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
-
 export const FontWeight = () => (
   <div onChange={action('changed')}>
     <Label fontSize='14px'>
@@ -130,7 +118,3 @@ export const FontWeight = () => (
     </Label>
   </div>
 )
-
-FontWeight.story = {
-  name: 'Font Weight',
-}

@@ -97,10 +97,6 @@ export function ForwardRefs() {
   return <ForwardRefDemo refChild={refChild} />
 }
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
-
 export const LargeText = () => (
   <Link color='text.light'>
     <Text textStyle='heading2'>I am a link with text styles</Text>

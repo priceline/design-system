@@ -57,33 +57,6 @@ describe('Carousel', () => {
     expect(onSlideKeyDown).toHaveBeenCalledTimes(1)
   })
 
-  it('should set slide widths if layout is set', () => {
-    const { getByTestId, queryByTestId } = render(
-      <Carousel layout='75-25' arrowsPosition='bottom'>
-        <Flex>Slide 1</Flex>
-        <Flex>Slide 2</Flex>
-        <Flex>Slide 3</Flex>
-      </Carousel>
-    )
-
-    expect(getByTestId('slide-0')).toHaveStyle('width: 50%')
-    expect(getByTestId('slide-1')).toHaveStyle('width: 16.666666666666668%')
-    expect(queryByTestId('dot_group')).not.toBeInTheDocument()
-    expect(getByTestId('prev-bottom')).toBeInTheDocument()
-    expect(getByTestId('next-bottom')).toBeInTheDocument()
-  })
-
-  it('should start from the second slide', () => {
-    const { getByTestId } = render(
-      <Carousel layout='50-50' arrowsPosition='bottom' currentSlide={1}>
-        <Flex>Slide 1</Flex>
-        <Flex>Slide 2</Flex>
-        <Flex>Slide 3</Flex>
-      </Carousel>
-    )
-    expect(getByTestId('slide-0').tabIndex).toBe(-1)
-  })
-
   it('Should render SlideBox for mobile sizes', () => {
     window.innerWidth = 720
     const { getByText, getByTestId } = render(

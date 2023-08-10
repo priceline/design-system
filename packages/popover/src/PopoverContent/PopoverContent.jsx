@@ -16,6 +16,7 @@ const PopoverGuide = styled(Box)`
   max-width: ${({ width }) => (typeof width === 'number' ? `${width}px` : width)};
   width: 100%;
   z-index: ${({ zIndex }) => (zIndex < 0 ? 1 : zIndex)};
+  position: relative;
 `
 const ContentContainer = styled.section.attrs(borderRadiusAttrs)`
   box-sizing: border-box;

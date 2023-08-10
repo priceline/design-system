@@ -18,7 +18,3 @@ export const ScreenreaderDescriptionOfContent = () => (
     <Text pt={2}>Turn ON screenreader...</Text>
   </Box>
 )
-
-ScreenreaderDescriptionOfContent.story = {
-  name: 'Screenreader description of content',
-}

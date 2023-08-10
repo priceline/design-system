@@ -2,9 +2,14 @@
   "name": "pcln-icons",
   "version": "5.11.0",
   "description": "Priceline React icons based on Material Design Icons",
+  "license": "MIT",
+  "author": "Priceline",
+  "sideEffects": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "sideEffects": false,
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "clean": "rimraf dist components",
     "build": "npm run clean && npm run build:svg && npm run build:copy && npm run build:index && npm-run-all -p build:babel:*",
@@ -20,15 +25,6 @@
     "test:update": "jest --silent --updateSnapshot",
     "test:snapshots": "jest --silent --runInBand --updateSnapshot"
   },
-  "files": [
-    "dist/"
-  ],
-  "author": "Priceline",
-  "license": "MIT",
-  "engines": {
-    "node": ">=14",
-    "npm": ">=6.0.0"
-  },
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",
     "lodash.upperfirst": "^4.3.1",
@@ -42,6 +38,8 @@
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.1.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/jest": "^0.1.0",
     "@svgr/cli": "^5.5.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
@@ -64,5 +62,9 @@
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=5 <5.3.4 || >5.3.7 <6"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6.0.0"
   }
 }

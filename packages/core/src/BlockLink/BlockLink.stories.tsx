@@ -23,10 +23,6 @@ export const ContainingBackgroundImage = () => (
   </Flex>
 )
 
-ContainingBackgroundImage.story = {
-  name: 'containing BackgroundImage',
-}
-
 export const ForwardRefs = () => {
   function refChild(dsRef) {
     function onClick() {
@@ -47,10 +43,6 @@ export const ForwardRefs = () => {
   return <ForwardRefDemo refChild={refChild} />
 }
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
-
 export const CompositionWithoutContainer = () => (
   <Flex justifyContent='center' alignItems='center' color='purple'>
     <BlockLink href='https://www.google.com'>
@@ -60,7 +52,3 @@ export const CompositionWithoutContainer = () => (
     </BlockLink>
   </Flex>
 )
-
-CompositionWithoutContainer.story = {
-  name: 'composition without container',
-}
