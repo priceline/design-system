@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Wed, 09 Aug 2023 15:37:24 GMT and should not be manually modified.
+This log was last generated on Thu, 10 Aug 2023 14:28:26 GMT and should not be manually modified.
+
+## 5.5.6
+Thu, 10 Aug 2023 14:28:26 GMT
+
+### Patches
+
+- Replace more Jest tests with Storybook stories and interaction tests; add "position: relative" to PopoverGuide
 
 ## 5.5.5
 Wed, 09 Aug 2023 15:37:24 GMT

@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.19.0",
+      "tag": "pcln-design-system_v5.19.0",
+      "date": "Thu, 10 Aug 2023 14:28:26 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add borderStyles to Card component",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "00d4b4a4915a0c2c423d5050b263d300c290640a"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Replace more Jest tests with Storybook stories and interaction tests",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "27679715d0c1d0f0072914d453db4526db9d1479"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.18.0",
       "tag": "pcln-design-system_v5.18.0",
       "date": "Wed, 09 Aug 2023 15:37:24 GMT",

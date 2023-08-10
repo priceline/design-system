@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 09 Aug 2023 15:37:24 GMT and should not be manually modified.
+This log was last generated on Thu, 10 Aug 2023 14:28:26 GMT and should not be manually modified.
+
+## 5.19.0
+Thu, 10 Aug 2023 14:28:26 GMT
+
+### Minor changes
+
+- Add borderStyles to Card component
 
 ## 5.18.0
 Wed, 09 Aug 2023 15:37:24 GMT
