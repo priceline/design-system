@@ -2,7 +2,8 @@ import * as Accordion from '@radix-ui/react-accordion'
 import { themeGet } from '@styled-system/theme-get'
 import styled, { keyframes } from 'styled-components'
 import { ChevronDown } from 'pcln-icons'
-import { Box, borderRadiusAttrs, getPaletteColor } from '..'
+import { Box } from '../Box'
+import { getPaletteColor, borderRadiusAttrs } from '../utils'
 
 const slideDown = keyframes`
   from {

@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 // todo: remove coverage ignore once storybook interaction test coverage counts
 import React from 'react'
-import * as Accordion from '@radix-ui/react-accordion'
+import * as RadixAccordion from '@radix-ui/react-accordion'
 import { IconContainer, StyledChevron, StyledContent, StyledItem, StyledTrigger } from './Accordion.styled'
 import { Box, Flex } from '..'
 import PropTypes from 'prop-types'
@@ -21,7 +21,7 @@ export interface IAccordionItem {
   value: PropTypes.string
 }
 
-export const PclnAccordion = ({
+export const Accordion = ({
   items,
   itemsState,
   onToggle,
@@ -29,7 +29,7 @@ export const PclnAccordion = ({
   variation = 'default',
 }: IAccordion) => {
   return items ? (
-    <Accordion.Root
+    <RadixAccordion.Root
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
       collapsible
@@ -39,7 +39,7 @@ export const PclnAccordion = ({
       }}
     >
       {items.map((child: IAccordionItem) => (
-        <Accordion.Item key={child.value} asChild value={child.value}>
+        <RadixAccordion.Item key={child.value} asChild value={child.value}>
           <StyledItem variation={variation} overflow='hidden' borderRadius='12px' marginBottom='12px'>
             <StyledTrigger m={2} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>
@@ -54,10 +54,8 @@ export const PclnAccordion = ({
             </StyledTrigger>
             <StyledContent variation={variation}>{child.content}</StyledContent>
           </StyledItem>
-        </Accordion.Item>
+        </RadixAccordion.Item>
       ))}
-    </Accordion.Root>
+    </RadixAccordion.Root>
   ) : null
 }
-
-export default PclnAccordion

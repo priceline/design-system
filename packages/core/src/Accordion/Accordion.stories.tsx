@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Accordion from '.'
+import { Accordion } from '.'
 import { Flex, Button, Text } from '..'
 import { expect } from '@storybook/jest'
 import { within, userEvent } from '@storybook/testing-library'
