@@ -312,6 +312,8 @@ export const shadows = {
     '0 -1px 0 0 rgba(0,0,0,0.03),0 24px 72px 0 rgba(0,0,0,0.48),0 8px 16px 0 rgba(0,0,0,0.12),0 24px 64px 0 rgba(0,0,0,0.2)',
 }
 
+export type BoxShadowSize = keyof typeof shadows
+
 export const textShadows = {
   sm: `0 1px 2px rgba(0,0,0,0.5)`,
   md: `0 2px 4px rgba(0,0,0,0.5)`,
