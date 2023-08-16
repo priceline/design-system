@@ -1,4 +1,8 @@
+import * as storybookArgs from './storybook/args'
+
 export type { IButtonProps } from './Button'
+export type { IDialogProps } from './Dialog'
+export type { IGridProps } from './Grid'
 
 export { Absolute } from './Absolute'
 export { Accordion } from './Accordion'
@@ -16,6 +20,7 @@ export { Checkbox } from './Checkbox'
 export { ButtonChip, FilterChip as Chip, ChoiceChip, FilterChip } from './Chip'
 export { CloseButton } from './CloseButton'
 export * from './Container'
+export { Dialog } from './Dialog'
 export { Divider } from './Divider'
 export { DotLoader } from './DotLoader'
 export { Flag } from './Flag'
@@ -80,8 +85,6 @@ export * from './DocsUtils/Section'
 export * from './DocsUtils/StoryHeading'
 export * from './DocsUtils/StoryStage'
 export * from './DocsUtils/TableOfContents'
-
-import * as storybookArgs from './storybook/args'
 export { storybookArgs }
 
 export * from './theme'

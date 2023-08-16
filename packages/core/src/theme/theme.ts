@@ -289,6 +289,8 @@ export const borderRadii = {
   ...actionBorderRadii,
 }
 
+export type BorderRadius = keyof typeof borderRadii
+
 export const maxContainerWidth = '1280px'
 
 export const shadows = {
@@ -439,6 +441,19 @@ export type TextStyle = {
 }
 
 /** @public */
+export const paletteFamilyVariations = [
+  'lightest',
+  'light',
+  'tint',
+  'base',
+  'heading',
+  'tone',
+  'dark',
+  'shade',
+  'darkest',
+] as const
+
+/** @public */
 export type PaletteFamily = {
   lightest?: string
   light?: string
@@ -483,6 +498,9 @@ type _PaletteFamilyOption = Array<keyof PaletteFamily>[number]
 
 /** @public */
 export type PaletteColor = `${_PaletteFamily}.${_PaletteFamilyOption}`
+export const paletteColors = paletteFamilyNames.flatMap((family) =>
+  paletteFamilyVariations.map((variation) => `${family}.${variation}`)
+)
 
 /** @public */
 export type ColorStyle = {
@@ -548,6 +566,7 @@ export const colorSchemeNames = [
   'neutralLightest',
   'neutralDark',
   'neutralDarkOnLight',
+  'neutralDarkOnLightest',
   'success',
   'successLight',
   'successLightest',
