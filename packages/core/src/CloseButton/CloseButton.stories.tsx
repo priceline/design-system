@@ -1,32 +1,36 @@
+import type { Meta, StoryObj } from '@storybook/react'
+
 import React from 'react'
-import { action } from '@storybook/addon-actions'
 
-import { Button, CloseButton } from '..'
-import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import type { ICloseButtonProps } from '..'
+import { CloseButton, Flex, Grid, Text, paletteColors } from '..'
+// import { argTypes, defaultArgs } from './CloseButton.stories.args'
 
-export default {
+type CloseButtonStory = StoryObj<ICloseButtonProps>
+
+export const Playground: CloseButtonStory = {
+  render: (args) => <CloseButton {...args} />,
+}
+
+const templateColumns = Array.from(Array(6).keys()).map((x) => `repeat(${x + 1}, 1fr)`)
+export const OnColors: CloseButtonStory = {
+  render: (args) => (
+    <Grid templateColumns={templateColumns} gap={2}>
+      {paletteColors.map((x) => (
+        <Flex key={x} bg={x} p={2} overflow='auto'>
+          <CloseButton mr={3} {...args} />
+          <Text>{x}</Text>
+        </Flex>
+      ))}
+    </Grid>
+  ),
+}
+
+const meta: Meta<typeof CloseButton> = {
   title: 'CloseButton',
   component: CloseButton,
+  // args: defaultArgs,
+  // argTypes: argTypes,
 }
 
-export const WithClickHandler = () => <CloseButton color='background.darkest' onClick={action('clicked')} />
-
-export const ForwardRefs = () => {
-  function refChild(dsRef) {
-    function onClick() {
-      dsRef.current.focus()
-    }
-
-    return (
-      <>
-        <CloseButton color='background.darkest' onClick={action('clicked')} dsRef={dsRef} />
-        <br />
-        <Button onClick={onClick} mt={4}>
-          Click to focus button via ref
-        </Button>
-      </>
-    )
-  }
-
-  return <ForwardRefDemo refChild={refChild} />
-}
+export default meta

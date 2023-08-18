@@ -1,25 +1,47 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
+import { motion } from 'framer-motion'
 import { Close } from 'pcln-icons'
+import React, { useState } from 'react'
 import { IconButton } from '../IconButton'
+import { IIconButtonProps } from '../IconButton/IconButton'
+import { CloseButtonSize, closeButtonIconSizes } from './CloseButton.styled'
 
-const propTypes = {
-  onClick: PropTypes.func,
-  size: PropTypes.number,
-  title: PropTypes.string,
+export interface ICloseButtonProps extends Omit<IIconButtonProps, 'size' | 'icon'> {
+  onClick?: () => void
+  title?: string
+  size?: CloseButtonSize
 }
 
-const CloseButton: React.FC<InferProps<typeof propTypes>> = (props) => (
-  <IconButton {...props} icon={<Close size={props.size} />} />
-)
+export const CloseButton = ({ size = 'md', title = 'close', onClick, ...props }: ICloseButtonProps) => {
+  const [hover, setHover] = useState(false)
 
-CloseButton.defaultProps = {
-  size: 24,
-  title: 'close',
+  return (
+    <IconButton
+      onClick={onClick}
+      title={title}
+      {...props}
+      icon={
+        <motion.div
+          onHoverStart={() => setHover(true)}
+          onHoverEnd={() => setHover(false)}
+          style={{ position: 'relative' }}
+        >
+          <motion.div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background: 'black',
+              aspectRatio: '1',
+              borderRadius: '100%',
+              mixBlendMode: 'multiply',
+              opacity: 0.25,
+            }}
+            animate={hover ? { scale: 1 } : { scale: 0 }}
+          />
+          <Close size={closeButtonIconSizes[size]} />
+        </motion.div>
+      }
+    />
+  )
 }
-
-CloseButton.propTypes = {}
-
-CloseButton.displayName = 'CloseButton'
 
 export default CloseButton
