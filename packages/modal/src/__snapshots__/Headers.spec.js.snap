@@ -9,15 +9,15 @@ exports[`ModalHeader render 1`] = `
   padding-right: 16px;
 }
 
-.c10 {
+.c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   line-height: 1;
-  width: 24px;
+  width: md;
 }
 
-.c11 {
+.c10 {
   outline: none;
 }
 
@@ -32,89 +32,53 @@ exports[`ModalHeader render 1`] = `
   align-items: center;
 }
 
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
 
-.c5 {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 1.5;
-  cursor: pointer;
-  border-radius: 9999px;
-  border-width: 0;
-  border-style: solid;
-  background-color: #0068ef;
-  color: #fff;
-  margin-left: auto;
-}
-
-.c5:hover {
-  background-color: #049;
-  color: #fff;
-}
-
-.c5:focus {
-  outline: 0px solid #049;
-  box-shadow: 0 0 0 2px #049;
-}
-
-.c5:disabled {
-  cursor: not-allowed;
-  color: #4f6f8f;
-  background-color: #edf0f3;
-}
-
 .c6 {
-  padding: 0;
-  background-color: transparent;
-  color: inherit;
+  all: unset;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  border-sizing: border-box;
+  position: relative;
 }
 
-.c6:hover {
-  background-color: transparent;
-  color: inherit;
+.c6:focus-visible {
+  outline: 2px solid;
 }
 
-.c6 > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c6:after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: --12px;
+  left: --12px;
 }
 
-.c6:disabled {
-  background-color: transparent;
+.c8 {
+  height: 125%;
+  width: 125%;
+  background: black;
+  border-radius: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  opacity: 0.15;
+}
+
+.c11 {
+  width: 24px;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.c5 {
+  position: relative;
 }
 
 .c0 {
@@ -168,38 +132,35 @@ exports[`ModalHeader render 1`] = `
       >
         test
       </div>
-      <button
-        aria-label="close"
-        class="c5 c6 c7"
-        color="primary"
-        size="24"
-        title="close"
+      <div
+        class="c5"
       >
-        <div
-          class="c8"
+        <button
+          class="c6 c7"
+          title="close"
         >
           <div
-            class="c9"
+            class="c8"
+            style="transform: scale(0) translateZ(0);"
+          />
+          <svg
+            aria-hidden="true"
+            class="c9 c10 c11"
+            fill="currentcolor"
+            focusable="false"
+            height="md"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="md"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden="true"
-              class="c10 c11"
-              fill="currentcolor"
-              focusable="false"
-              height="24"
-              role="img"
-              tabindex="-1"
-              viewBox="0 0 24 24"
-              width="24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
-              />
-            </svg>
-          </div>
-        </div>
-      </button>
+            <path
+              d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </div>

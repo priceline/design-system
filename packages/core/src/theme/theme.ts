@@ -1,6 +1,29 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
 import { createTextStyles } from '../utils/createTextStyles'
+import {
+  BackgroundProps,
+  BorderProps,
+  ColorProps,
+  FlexboxProps,
+  GridProps,
+  LayoutProps,
+  PositionProps,
+  ShadowProps,
+  SpaceProps,
+  TypographyProps,
+  space as _space,
+  typography as _typography,
+  background,
+  border,
+  color,
+  compose,
+  flexbox,
+  grid,
+  layout,
+  position,
+  shadow,
+} from 'styled-system'
 import { createColorStyles } from '../utils/createColorStyles'
 import { createMediaQueries } from '../utils/createMediaQueries'
 import { colors } from './colors'
@@ -294,14 +317,10 @@ export type BorderRadius = keyof typeof borderRadii
 export const maxContainerWidth = '1280px'
 
 export const shadows = {
-  sm:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
-  md:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
-  lg:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)',
-  xl:
-    '0 -1px 0 0 rgba(0,0,0,0.03),0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)',
+  sm: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
+  md: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
+  lg: '0 -1px 0 0 rgba(0,0,0,0.03),0 1px 4px 0 rgba(0,0,0,0.2),0 6px 4px -4px rgba(0,0,0,0.12),0 8px 16px -1px rgba(0,0,0,0.16)',
+  xl: '0 -1px 0 0 rgba(0,0,0,0.03),0 2px 8px 0 rgba(0,0,0,0.16),0 10px 8px -5px rgba(0,0,0,0.16),0 12px 32px -2px rgba(0,0,0,0.16)',
   '2xl':
     '0 -1px 0 0 rgba(0,0,0,0.03),0 4px 12px 0 rgba(0,0,0,0.16),0 12px 12px -4px rgba(0,0,0,0.16),0 24px 64px -2px rgba(0,0,0,0.16)',
   'overlay-md':
@@ -311,6 +330,8 @@ export const shadows = {
   'overlay-xl':
     '0 -1px 0 0 rgba(0,0,0,0.03),0 24px 72px 0 rgba(0,0,0,0.48),0 8px 16px 0 rgba(0,0,0,0.12),0 24px 64px 0 rgba(0,0,0,0.2)',
 }
+
+export type BoxShadowSize = keyof typeof shadows
 
 export const textShadows = {
   sm: `0 1px 2px rgba(0,0,0,0.5)`,
@@ -488,7 +509,7 @@ export const paletteFamilyNames = [
 ] as const
 
 /** @public */
-export type PaletteFamilyName = typeof paletteFamilyNames[number]
+export type PaletteFamilyName = (typeof paletteFamilyNames)[number]
 
 /** @public */
 export type PaletteFamilies = Record<PaletteFamilyName, PaletteFamily>
@@ -536,7 +557,7 @@ export const colorStyleNames = [
 ] as const
 
 /** @public */
-export type ColorStyleName = typeof colorStyleNames[number]
+export type ColorStyleName = (typeof colorStyleNames)[number]
 
 /** @public */
 export type ColorStyles = Record<ColorStyleName, ColorStyle>
@@ -589,7 +610,7 @@ export const colorSchemeNames = [
 ] as const
 
 /** @public */
-export type ColorSchemeName = typeof colorSchemeNames[number]
+export type ColorSchemeName = (typeof colorSchemeNames)[number]
 
 /** @public */
 export type ColorSchemes = Record<ColorSchemeName, ColorScheme>
@@ -608,3 +629,30 @@ export type DesignSystemTheme = {
   colorSchemes: ColorSchemes
   zIndices: ZIndices
 }
+
+export interface IStyledSystemProps
+  extends BackgroundProps,
+    BorderProps,
+    ColorProps,
+    FlexboxProps,
+    GridProps,
+    LayoutProps,
+    PositionProps,
+    ShadowProps,
+    SpaceProps,
+    TypographyProps {
+  style?: React.CSSProperties
+}
+
+export const ComposedStyleFns = compose(
+  background,
+  border,
+  color,
+  flexbox,
+  grid,
+  layout,
+  position,
+  shadow,
+  _space,
+  _typography
+)

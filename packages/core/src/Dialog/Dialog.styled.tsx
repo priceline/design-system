@@ -1,4 +1,4 @@
-import type { IDialogProps } from '..'
+import type { ICloseButtonProps, IDialogProps } from '..'
 import { Box, CloseButton, Grid, Text, ThemeProvider } from '..'
 
 import * as Dialog from '@radix-ui/react-dialog'
@@ -45,14 +45,14 @@ const animationStyles: Record<'default' | 'sheet' | 'overlay', HTMLMotionProps<'
   },
 } as const
 
-const FloatingCloseButton: typeof CloseButton = styled(CloseButton)`
+const FloatingCloseButton: (
+  props: { dialogSize: DialogSize } & Partial<ICloseButtonProps> & Partial<IDialogProps>
+) => JSX.Element = styled(CloseButton)`
   position: absolute;
   top: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
   right: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
   margin: ${(props) => themeGet('space.3')(props)};
   padding: ${(props) => themeGet('space.2')(props)};
-  background-color: ${(props) => themeGet('palette.background.lightest')(props)};
-  box-shadow: ${(props) => themeGet('shadows.sm')(props)};
   &:hover {
     background-color: ${(props) => themeGet('palette.background.lightest')(props)};
   }
@@ -195,7 +195,14 @@ export const DialogContent = ({
 
         {showCloseButton && (
           <Dialog.Close asChild>
-            <FloatingCloseButton dialogSize={size} sheet={sheet} fullWidth={fullWidth} />
+            <FloatingCloseButton
+              color='primary.base'
+              bgColor='background.lightest'
+              boxShadowSize='sm'
+              dialogSize={size}
+              sheet={sheet}
+              fullWidth={fullWidth}
+            />
           </Dialog.Close>
         )}
       </DialogContentWrapper>

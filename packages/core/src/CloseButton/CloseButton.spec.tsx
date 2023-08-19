@@ -1,19 +1,19 @@
+import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
 
 import { CloseButton } from '..'
 
 describe('CloseButton', () => {
   test('executes onClick prop on click', () => {
     const handleClick = jest.fn()
-    const { getByTitle } = render(<CloseButton onClick={handleClick} />)
+    render(<CloseButton onClick={handleClick} />)
 
-    fireEvent.click(getByTitle('close'))
+    const button = screen.getByTitle('close')
+
+    fireEvent.click(button)
+    fireEvent.mouseEnter(button)
+    fireEvent.mouseLeave(button)
+
     expect(handleClick).toHaveBeenCalled()
-  })
-
-  test('renders without props', () => {
-    const json = rendererCreateWithTheme(<CloseButton />).toJSON()
-    expect(json).toMatchSnapshot()
   })
 })

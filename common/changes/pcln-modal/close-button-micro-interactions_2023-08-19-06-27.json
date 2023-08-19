@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "update snapshots",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

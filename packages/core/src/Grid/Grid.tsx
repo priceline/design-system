@@ -1,58 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  background,
-  BackgroundProps,
-  border,
-  BorderProps,
-  // color,
-  // ColorProps,
-  compose,
-  flexbox,
-  FlexboxProps,
-  grid,
-  GridProps,
-  layout,
-  LayoutProps,
-  position,
-  PositionProps,
-  shadow,
-  ShadowProps,
-  space,
-  SpaceProps,
-  system,
-  typography,
-  TypographyProps,
-} from 'styled-system'
-import type { ColorSchemeName } from '..'
-import { colorScheme } from '..'
-
-export interface IStyledSystemProps
-  extends BackgroundProps,
-    BorderProps,
-    // ColorProps,
-    FlexboxProps,
-    GridProps,
-    LayoutProps,
-    PositionProps,
-    ShadowProps,
-    SpaceProps,
-    TypographyProps {
-  style?: React.CSSProperties
-}
-
-const ComposedStyleFns = compose(
-  background,
-  border,
-  // color,
-  flexbox,
-  grid,
-  layout,
-  position,
-  shadow,
-  space,
-  typography
-)
+import { FlexboxProps, GridProps, system } from 'styled-system'
+import type { ColorSchemeName, IStyledSystemProps } from '..'
+import { ComposedStyleFns, colorScheme } from '..'
 
 export interface IGridProps extends IStyledSystemProps {
   children?: React.ReactNode
