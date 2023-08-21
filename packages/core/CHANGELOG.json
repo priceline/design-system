@@ -2,6 +2,30 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.20.0",
+      "tag": "pcln-design-system_v5.20.0",
+      "date": "Mon, 21 Aug 2023 19:12:20 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "export accordion",
+            "author": "Phil Welsh <philwelsh3d@gmail.com>",
+            "commit": "fdd7119933d1b5dce78234057589f6b08e3dcbbf"
+          },
+          {
+            "comment": "add dialog component",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "29bd84419ebce9d568e1108e7d7dbc54f89be0f3"
+          },
+          {
+            "comment": "add neutralDarkOnLightest to colorScheme",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "29bd84419ebce9d568e1108e7d7dbc54f89be0f3"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.19.0",
       "tag": "pcln-design-system_v5.19.0",
       "date": "Thu, 10 Aug 2023 14:28:26 GMT",

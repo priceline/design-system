@@ -1,6 +1,15 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 10 Aug 2023 14:28:26 GMT and should not be manually modified.
+This log was last generated on Mon, 21 Aug 2023 19:12:20 GMT and should not be manually modified.
+
+## 5.20.0
+Mon, 21 Aug 2023 19:12:20 GMT
+
+### Minor changes
+
+- export accordion
+- add dialog component
+- add neutralDarkOnLightest to colorScheme
 
 ## 5.19.0
 Thu, 10 Aug 2023 14:28:26 GMT
