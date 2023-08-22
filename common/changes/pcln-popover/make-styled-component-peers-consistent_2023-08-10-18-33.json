@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Make styled-component peer dep versions consistent",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

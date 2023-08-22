@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "Make styled-component peer dep versions consistent",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}

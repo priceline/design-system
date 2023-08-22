@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Make styled-component peer dep versions consistent",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
