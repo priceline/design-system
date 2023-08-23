@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 21 Aug 2023 19:12:20 GMT and should not be manually modified.
+This log was last generated on Wed, 23 Aug 2023 16:19:14 GMT and should not be manually modified.
+
+## 5.20.1
+Wed, 23 Aug 2023 16:19:14 GMT
+
+### Patches
+
+- resolve Avatar propType issue
 
 ## 5.20.0
 Mon, 21 Aug 2023 19:12:20 GMT

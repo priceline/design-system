@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.20.1",
+      "tag": "pcln-design-system_v5.20.1",
+      "date": "Wed, 23 Aug 2023 16:19:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "resolve Avatar propType issue",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "1ded33bdc142f14955b1e9d7445e78f738653458"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.20.0",
       "tag": "pcln-design-system_v5.20.0",
       "date": "Mon, 21 Aug 2023 19:12:20 GMT",
