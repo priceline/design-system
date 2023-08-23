@@ -97,7 +97,7 @@ export const TrackStateMultiple = {
           items={items}
           itemsState={itemsState}
           onToggle={(newItemsState) => {
-            setItemsState(newItemsState)
+            setItemsState(newItemsState as string[])
             console.log('previousState:', itemsState, 'newState:', newItemsState)
           }}
         />
@@ -132,7 +132,7 @@ export const TrackStateSingular = {
           items={items}
           itemsState={itemsState}
           onToggle={(newItemsState) => {
-            setItemsState(newItemsState)
+            setItemsState(newItemsState as string)
             console.log('previousState:', itemsState, 'newState:', newItemsState)
           }}
           type='single'

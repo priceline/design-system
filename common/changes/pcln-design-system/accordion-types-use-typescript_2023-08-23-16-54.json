@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Use typescript for Accordion types and remove prop types",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

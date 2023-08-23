@@ -4,21 +4,20 @@ import React from 'react'
 import * as RadixAccordion from '@radix-ui/react-accordion'
 import { IconContainer, StyledChevron, StyledContent, StyledItem, StyledTrigger } from './Accordion.styled'
 import { Box, Flex } from '..'
-import PropTypes from 'prop-types'
 
 export interface IAccordion {
   items: IAccordionItem[]
-  itemsState?: PropTypes.string | PropTypes.string[]
-  onToggle?: PropTypes.func
-  type?: PropTypes.string
-  variation?: PropTypes.string
+  itemsState?: string | string[]
+  onToggle?: (value: string | string[]) => void
+  type?: string
+  variation?: string
 }
 
 export interface IAccordionItem {
   content: React.ReactNode
   headerActions?: React.ReactNode
   headerLabel?: React.ReactNode
-  value: PropTypes.string
+  value: string
 }
 
 export const Accordion = ({
@@ -30,6 +29,7 @@ export const Accordion = ({
 }: IAccordion) => {
   return items ? (
     <RadixAccordion.Root
+      // @ts-ignore
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
       collapsible
