@@ -28,7 +28,7 @@ const propTypes = {
   initials: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   color: PropTypes.string,
-  colorScheme: PropTypes.oneOfType(colorSchemeNames),
+  colorScheme: PropTypes.oneOf(colorSchemeNames),
 }
 
 /** @public */
