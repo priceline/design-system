@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 23 Aug 2023 16:19:14 GMT and should not be manually modified.
+This log was last generated on Wed, 23 Aug 2023 18:39:11 GMT and should not be manually modified.
+
+## 5.20.2
+Wed, 23 Aug 2023 18:39:11 GMT
+
+### Patches
+
+- Use typescript for Accordion types and remove prop types
 
 ## 5.20.1
 Wed, 23 Aug 2023 16:19:14 GMT

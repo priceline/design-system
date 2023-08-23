@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.20.2",
+      "tag": "pcln-design-system_v5.20.2",
+      "date": "Wed, 23 Aug 2023 18:39:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Use typescript for Accordion types and remove prop types",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "306a8fd53cbbff1a5c0815d3a02dae1e1ddcfb8b"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.20.1",
       "tag": "pcln-design-system_v5.20.1",
       "date": "Wed, 23 Aug 2023 16:19:14 GMT",
