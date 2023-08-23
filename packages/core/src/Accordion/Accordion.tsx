@@ -8,7 +8,7 @@ import { Box, Flex } from '..'
 export interface IAccordion {
   items: IAccordionItem[]
   itemsState?: string | string[]
-  onToggle?: () => void
+  onToggle?: (value: string | string[]) => void
   type?: string
   variation?: string
 }
