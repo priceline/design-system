@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added variation prop to the FilterChip,ButtonChip and ChoiceChip, which includes shadow variation",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

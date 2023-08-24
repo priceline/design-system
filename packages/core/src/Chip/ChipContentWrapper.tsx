@@ -1,10 +1,18 @@
 import styled, { css } from 'styled-components'
 import { space, fontSize, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
-import { getPaletteColor, applySizes } from '../utils'
+import { getPaletteColor, applySizes, applyVariations } from '../utils'
 import { Box, IBoxProps } from '../Box'
 
-const getSizes = ({ hasChildren, hasTopLabel, borderRadiusOverride }) => ({
+const getSizes = ({
+  hasChildren,
+  hasTopLabel,
+  borderRadiusOverride,
+}: {
+  hasChildren?
+  hasTopLabel?
+  borderRadiusOverride?
+}) => ({
   sm: css`
     border-radius: ${themeGet(`borderRadii.${borderRadiusOverride || 'action-sm'}`)};
     padding-left: 8px;
@@ -31,6 +39,16 @@ const getBorderColor = (props) =>
 const getBackgroundColor = (props) =>
   props.disabled ? 'background.base' : props.selected ? 'light' : 'background.lightest'
 
+const variations = {
+  outline: css``,
+  shadow: css`
+    box-shadow: ${(props) => (props.disabled || props.selected ? 'none' : themeGet('shadows.md'))};
+    &:hover {
+      box-shadow: ${(props) => (props.disabled ? 'none' : themeGet('shadows.xl'))};
+    }
+  `,
+}
+
 interface IChipContentWrapper extends IBoxProps {
   disabled: boolean
   hasChildren: boolean
@@ -44,7 +62,9 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
     background-color: ${getPaletteColor(getBackgroundColor(props))(props)};
-    border: 1px solid ${getBorderColor(props)};
+    border: 1px solid ${
+      props.variation === 'shadow' && !props.selected ? 'transparent' : getBorderColor(props)
+    };
     ${
       props.disabled
         ? ``
@@ -60,8 +80,8 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
       props.selected && !props.disabled
         ? `
           &:hover {
-            color: ${getPaletteColor('tone')(props)};
-            border: 1px solid ${getPaletteColor('tone')(props)};
+            color: ${getPaletteColor('dark')(props)};
+            border: 1px solid ${getPaletteColor('dark')(props)};
             background-color: ${getPaletteColor('light')(props)};
           }
           `
@@ -78,6 +98,8 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   position: relative;
   border-radius: 2px;
   white-space: nowrap;
+  ${({ theme, hasChildren }) => applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
+  ${applyVariations('ChipContentWrapper', variations)};
   ${({ theme, hasChildren, hasTopLabel, borderRadiusOverride }) =>
     applySizes(getSizes({ hasChildren, hasTopLabel, borderRadiusOverride }), undefined, theme.mediaQueries)};
 

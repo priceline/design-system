@@ -17,12 +17,12 @@ const ChipButton = styled(Button)`
   &:hover {
     background-color: transparent;
   }
-  &:focus {
+  &:focus-visible {
     box-shadow: none;
     outline-offset: 2px;
     outline: 3px solid ${getPaletteColor('base')};
   }
-  &:focus > ${ChipContentWrapper} {
+  &:focus-visible > ${ChipContentWrapper} {
     border-color: ${getPaletteColor('base')};
   }
 `
@@ -43,7 +43,10 @@ const buttonChipPropTypes = {
   Icon: PropTypes.node,
   showActionIcon: PropTypes.bool,
   Image: PropTypes.object,
+  variation: PropTypes.oneOf(['outline', 'shadow']),
 }
+
+export type Variations = 'outline' | 'shadow'
 
 export interface IButtonChipProps extends SpaceProps, FontSizeProps {
   Icon?: React.ReactNode | string
@@ -59,10 +62,27 @@ export interface IButtonChipProps extends SpaceProps, FontSizeProps {
   id?: string
   color?: string
   width?: string
+  variation?: Variations
 }
 
 const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
-  ({ color, width, id, m, disabled, expanded, children, onClick, label, showActionIcon, ...props }, ref) => (
+  (
+    {
+      color,
+      width,
+      id,
+      m,
+      disabled,
+      expanded,
+      children,
+      onClick,
+      label,
+      showActionIcon,
+      variation,
+      ...props
+    },
+    ref
+  ) => (
     <ChipButton
       color={color}
       width={width}
@@ -84,6 +104,7 @@ const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
             title: getTitle({ disabled, expanded }),
           }
         }
+        variation={variation}
         {...props}
       >
         {children}
@@ -98,6 +119,7 @@ ButtonChip.propTypes = buttonChipPropTypes
 
 ButtonChip.defaultProps = {
   color: 'primary',
+  variation: 'outline',
 }
 
 export default ButtonChip

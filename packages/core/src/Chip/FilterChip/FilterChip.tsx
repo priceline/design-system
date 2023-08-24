@@ -26,7 +26,10 @@ const filterChipPropTypes = {
   Image: PropTypes.object,
   actionTitle: PropTypes.string,
   value: PropTypes.string,
+  variation: PropTypes.oneOf(['outline', 'shadow']),
 }
+
+export type Variations = 'outline' | 'shadow'
 
 export interface IFilterChipProps extends SpaceProps, FontSizeProps {
   id?: string
@@ -40,6 +43,7 @@ export interface IFilterChipProps extends SpaceProps, FontSizeProps {
   value?: string | number
   color?: string
   children?: React.ReactNode | string
+  variation?: Variations
 }
 
 const FilterChip: React.FC<IFilterChipProps> = ({
@@ -53,6 +57,7 @@ const FilterChip: React.FC<IFilterChipProps> = ({
   showActionIcon,
   actionTitle,
   value,
+  variation,
   ...props
 }) => (
   <ChipLabel htmlFor={id} width='auto' {...props}>
@@ -77,6 +82,7 @@ const FilterChip: React.FC<IFilterChipProps> = ({
           title: getTitle({ disabled, actionTitle }),
         }
       }
+      variation={variation}
       {...props}
     >
       {children}
@@ -91,6 +97,7 @@ FilterChip.propTypes = filterChipPropTypes
 FilterChip.defaultProps = {
   color: 'primary',
   actionTitle: 'Close',
+  variation: 'outline',
 }
 
 export default FilterChip

@@ -23,11 +23,14 @@ const choiceChipProps = {
     title: PropTypes.string,
   }),
   Image: PropTypes.object,
+  variation: PropTypes.oneOf(['outline', 'shadow']),
   topLabel: PropTypes.string,
   borderRadius: PropTypes.string,
   width: PropTypes.string,
   justifyContent: PropTypes.string,
 }
+
+export type Variations = 'outline' | 'shadow'
 
 export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLAttributes<HTMLElement> {
   name?: string
@@ -35,6 +38,7 @@ export interface IChoiceChipProps extends SpaceProps, FontSizeProps, React.HTMLA
   selected?: boolean
   label?: string
   value?: string | number
+  variation?: Variations
   topLabel?: string
   borderRadius?: string
   width?: string
@@ -49,6 +53,7 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
   children,
   onClick,
   label,
+  variation,
   width = 'auto',
   ...props
 }) => (
@@ -63,7 +68,7 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
       checked={selected}
       onChange={onClick}
     />
-    <ChipContent label={label} disabled={disabled} selected={selected} {...props}>
+    <ChipContent label={label} disabled={disabled} selected={selected} variation={variation} {...props}>
       {children}
     </ChipContent>
   </ChipLabel>
@@ -74,6 +79,7 @@ ChoiceChip.displayName = 'Chip'
 ChoiceChip.propTypes = choiceChipProps
 ChoiceChip.defaultProps = {
   color: 'primary',
+  variation: 'outline',
 }
 
 export default ChoiceChip
