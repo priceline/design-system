@@ -11,19 +11,21 @@ import { Button } from '../../Button'
 import { getPaletteColor } from '../../utils'
 
 const ChipButton = styled(Button)`
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  &:hover {
+  &&& {
     background-color: transparent;
-  }
-  &:focus-visible {
-    box-shadow: none;
-    outline-offset: 2px;
-    outline: 3px solid ${getPaletteColor('base')};
-  }
-  &:focus-visible > ${ChipContentWrapper} {
-    border-color: ${getPaletteColor('base')};
+    border: none;
+    padding: 0;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus-visible {
+      box-shadow: none;
+      outline-offset: 2px;
+      outline: 3px solid ${getPaletteColor('base')};
+    }
+    &:focus-visible > ${ChipContentWrapper} {
+      border-color: ${getPaletteColor('base')};
+    }
   }
 `
 
