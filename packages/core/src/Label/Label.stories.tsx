@@ -58,3 +58,20 @@ export const Nowrap = () => (
     </Label>
   </Flex>
 )
+
+export const FontSize = () => (
+  <Flex>
+    <Label fontSize='10px'>
+      <Radio checked />
+      Round-trip
+    </Label>
+    <Label fontSize='16px'>
+      <Radio checked />
+      One-way
+    </Label>
+    <Label fontSize='24px'>
+      <Radio checked />
+      Multi-destination
+    </Label>
+  </Flex>
+)
