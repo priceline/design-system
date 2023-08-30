@@ -23,6 +23,17 @@ const slideUp = keyframes`
   }
 `
 
+export const StyledAccordionRoot = styled(Accordion.Root)`
+  ${(props) =>
+    props.variation === 'ladder'
+      ? `
+      overflow: hidden;
+      box-shadow: ${themeGet('shadows.sm')(props)};
+      border-radius: ${themeGet('borderRadii.lg')(props)};
+    `
+      : ''}
+`
+
 export const StyledContent = styled(Accordion.Content)`
   overflow: hidden;
   padding: 12px;
@@ -109,6 +120,12 @@ export const StyledItem = styled(Box)`
     props.variation === 'hug'
       ? `background-color: ${getPaletteColor('primary.base')(props)};
       border: 1px solid ${getPaletteColor('primary.base')(props)};`
+      : ''}
+  ${(props) =>
+    props.variation === 'ladder'
+      ? `background-color: ${getPaletteColor(props.headerBg || 'background.light')(props)};
+        border-radius: 0px; margin-bottom: 0px;
+        `
       : ''}
   &[data-state='open'],
   &:hover {
