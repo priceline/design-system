@@ -3,7 +3,7 @@
     {
       "packageName": "pcln-design-system",
       "comment": "Increase specifity of styles of button overriden in button chip",
-      "type": "minor"
+      "type": "patch"
     }
   ],
   "packageName": "pcln-design-system"
