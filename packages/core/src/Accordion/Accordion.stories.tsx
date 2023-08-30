@@ -19,6 +19,7 @@ const items = [
         <Text>Header Label First Item</Text>
       </>
     ),
+    headerBg: 'success.light',
     content: (
       <>
         <Text>I am some content</Text>
@@ -75,6 +76,8 @@ export const Basic = {
 export const Underlined = { render: (args) => <Accordion {...args} items={items} variation='underline' /> }
 
 export const Hug = { render: (args) => <Accordion {...args} items={items} variation='hug' /> }
+
+export const Ladder = { render: (args) => <Accordion {...args} items={items} variation='ladder' /> }
 
 export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
 
