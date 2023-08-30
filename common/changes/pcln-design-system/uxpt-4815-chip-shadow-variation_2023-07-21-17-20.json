@@ -2,8 +2,8 @@
   "changes": [
     {
       "packageName": "pcln-design-system",
-      "comment": "Replaced :focus on FilterChip,ButtonChip and ChoiceChip with :focus-visible",
-      "type": "major"
+      "comment": "Replaced :focus on FilterChip, ButtonChip and ChoiceChip with :focus-visible",
+      "type": "minor"
     }
   ],
   "packageName": "pcln-design-system"
