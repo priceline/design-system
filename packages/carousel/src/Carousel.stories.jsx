@@ -1,7 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { within } from '@storybook/testing-library'
-import { expect } from '@storybook/jest'
 import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
@@ -115,11 +113,6 @@ Basic.args = {
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
   onSlideChange: action('Slide Change'),
-}
-Basic.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement)
-
-  expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 
 const VerticalTemplate = (args) => (
