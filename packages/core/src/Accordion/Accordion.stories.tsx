@@ -95,10 +95,18 @@ export const TrackStateMultiple = {
     return (
       <>
         <Text>Items Open: {itemsState.join(', ')}</Text>
+        <Button
+          onClick={() => {
+            setItemsState([])
+          }}
+        >
+          Collapse all items
+        </Button>
         <Accordion
           {...args}
           items={items}
           itemsState={itemsState}
+          useValueState
           onToggle={(newItemsState) => {
             setItemsState(newItemsState as string[])
             console.log('previousState:', itemsState, 'newState:', newItemsState)
