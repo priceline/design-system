@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Accordion } from '.'
-import { Flex, Button, Text } from '..'
+import { Flex, Button, Text, Box } from '..'
 import { expect } from '@storybook/jest'
 import { within, userEvent } from '@storybook/testing-library'
 
@@ -19,7 +19,6 @@ const items = [
         <Text>Header Label First Item</Text>
       </>
     ),
-    headerBg: 'success.light',
     content: (
       <>
         <Text>I am some content</Text>
@@ -77,8 +76,23 @@ export const Underlined = { render: (args) => <Accordion {...args} items={items}
 
 export const Hug = { render: (args) => <Accordion {...args} items={items} variation='hug' /> }
 
-export const Ladder = { render: (args) => <Accordion {...args} items={items} variation='ladder' /> }
-
+export const Ladder = {
+  render: (args) => (
+    <Accordion
+      {...args}
+      items={[
+        {
+          ...items[0],
+          headerBg: 'success.light',
+          ContentNode: Box,
+          contentProps: { height: '50px', width: '100px', bg: 'primary.base' },
+        },
+        { ...items[1] },
+      ]}
+      variation='ladder'
+    />
+  ),
+}
 export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
 
 export const FlatCard = { render: (args) => <Accordion {...args} items={items} variation='flatCard' /> }
