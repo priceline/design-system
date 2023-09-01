@@ -24,7 +24,7 @@ const propTypes = {
   autoComplete: PropTypes.string,
 }
 
-const PasswordInput: React.FC<InferProps<typeof propTypes>> = ({
+const PasswordInput: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
   id,
   isValid,
   label,

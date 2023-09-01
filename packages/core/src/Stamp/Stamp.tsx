@@ -45,18 +45,12 @@ const sizes = {
 }
 
 const variations = {
-  outline: css`
+  outline: css<IStampPropTypes>`
     color: ${getPaletteColor('base')};
     border-color: ${(props) => getPaletteColor(props.borderColor, 'base')(props)};
     ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
   `,
   fill: css`
-    color: ${getTextColorOn('base')};
-    background-color: ${getPaletteColor('base')};
-    border-color: ${getPaletteColor('base')};
-  `,
-  // todo: remove this copy of the fill variation in v4 as its name does not follow conventions
-  solid: css`
     color: ${getTextColorOn('base')};
     background-color: ${getPaletteColor('base')};
     border-color: ${getPaletteColor('base')};
@@ -84,9 +78,10 @@ export interface IStampPropTypes extends SpaceProps, FontSizeProps, BorderRadius
   size?: 'small' | 'medium'
   variation?: 'outline' | 'fill' | 'solid'
   colorScheme?: ColorSchemeName
+  children?: React.ReactNode
 }
 
-const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
+const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)<IStampPropTypes>`
   display: inline-flex;
   align-items: center;
   vertical-align: top;

@@ -9,7 +9,7 @@ const propTypes = {
   title: PropTypes.string,
 }
 
-const CloseButton: React.FC<InferProps<typeof propTypes>> = (props) => (
+const CloseButton: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = (props) => (
   <IconButton {...props} icon={<Close size={props.size} />} />
 )
 

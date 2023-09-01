@@ -146,7 +146,7 @@ const ZIndexBox = styled(Box)`
   ${zIndex}
 `
 
-const Layout: React.FC<InferProps<typeof propTypes>> = ({
+const Layout: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
   children,
   gap,
   rowGap,

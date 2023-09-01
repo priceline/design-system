@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
 import { space, width, SpaceProps, WidthProps, BorderColorProps, compose } from 'styled-system'
@@ -15,10 +14,10 @@ export interface IDividerProps extends SpaceProps, WidthProps, BorderColorProps 
   color?: string
 }
 
-const Divider: React.FC<IDividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
+const Divider = styled.hr.attrs(({ mx, ml, mr }) => ({
   ml: mx ? null : ml,
   mr: mx ? null : mr,
-}))`
+}))<IDividerProps>`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;

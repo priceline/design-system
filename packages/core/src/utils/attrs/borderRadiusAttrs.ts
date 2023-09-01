@@ -53,7 +53,7 @@ function calculateRoundedProps(radius, rounded) {
   return `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`
 }
 
-export function borderRadiusAttrs({ borderRadius, rounded, theme }) {
+export function borderRadiusAttrs({ borderRadius, rounded, theme }): { borderRadius?: string[] } {
   if (!borderRadius) {
     return {}
   }

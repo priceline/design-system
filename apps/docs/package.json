@@ -1,12 +1,12 @@
 {
-  "private": true,
   "name": "@priceline/docs",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "start": "next -p 3030",
-    "lint": "",
     "build": "",
-    "build:docs": "next build && next export"
+    "build:docs": "next build && next export",
+    "lint": "",
+    "start": "next -p 3030"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.15.5",
@@ -19,24 +19,24 @@
     "pcln-popover": "workspace:*",
     "pcln-slider": "workspace:*",
     "prop-types": "^15.8.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-is": "^17.0.2",
-    "styled-components": "^5.3.11"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.11",
     "@mdx-js/loader": "^0.15.5",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^1.13.3",
-    "next": "^12.0.7",
-    "eslint": "^8.33.0",
+    "eslint": "^8.48.0",
     "eslint-config-next": "^12.0.7",
+    "next": "^12.0.7",
     "next-mdx-docs": "2.0.0-alpha.2",
     "remark-autolink-headings": "^5.0.0",
     "remark-emoji": "^2.0.2",
     "remark-images": "^0.8.1",
     "remark-slug": "^5.1.0",
-    "@babel/core": "^7.16.7",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0"
   }

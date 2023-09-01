@@ -11,13 +11,13 @@ import { PricelineSparkle } from 'pcln-icons'
 import { applyVariations, getPaletteColor, getTextColorOn } from '../utils'
 
 const variations = {
-  initial: css`
+  initial: css<IChatMessage>`
     margin-left: ${themeGet('space.3')};
   `,
-  incoming: css`
+  incoming: css<IChatMessage>`
     border-top-left-radius: 4px;
   `,
-  outgoing: css`
+  outgoing: css<IChatMessage>`
     background-color: ${getPaletteColor('primary.base')};
     border-top-right-radius: 4px;
     color: ${getTextColorOn('primary.base')};
@@ -25,7 +25,7 @@ const variations = {
   `,
 }
 
-const Message = styled(Flex)`
+const Message = styled(Flex)<IChatMessage>`
   position: relative;
   background-color: ${getPaletteColor('background.light')};
   color: ${getTextColorOn('background.light')};

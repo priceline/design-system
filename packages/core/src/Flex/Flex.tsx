@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import {
   alignItems,
@@ -41,12 +40,12 @@ export interface IFlexProps
     FlexWrapProps,
     FlexDirectionProps {}
 
-const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
+const Flex = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
   alignItems: align,
   justifyContent: justify,
   ...props,
-}))`
+}))<IFlexProps>`
   display: flex;
   ${applyVariations('Flex')}
 

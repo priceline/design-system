@@ -313,11 +313,11 @@
       "projectFolder": "apps/storybook",
       "shouldPublish": false
     },
-    {
-      "packageName": "@priceline/docs",
-      "projectFolder": "apps/docs",
-      "shouldPublish": false
-    },
+    // {
+    //   "packageName": "@priceline/docs",
+    //   "projectFolder": "apps/docs",
+    //   "shouldPublish": false
+    // },
 
     // Internal Tools
     {

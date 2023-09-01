@@ -37,7 +37,7 @@ const sizes = {
   `,
 }
 
-const StyledInput = styled.input.attrs(borderRadiusAttrs)`
+const StyledInput = styled.input.attrs(borderRadiusAttrs)<IInputProps>`
   position: relative;
   appearance: none;
   display: block;

@@ -1,3 +1,5 @@
+import type { IAccordion } from './Accordion'
+
 import * as Accordion from '@radix-ui/react-accordion'
 import { themeGet } from '@styled-system/theme-get'
 import styled, { keyframes } from 'styled-components'
@@ -23,7 +25,7 @@ const slideUp = keyframes`
   }
 `
 
-export const StyledContent = styled(Accordion.Content)`
+export const StyledContent = styled(Accordion.Content)<IAccordion>`
   overflow: hidden;
   padding: 12px;
   background-color: ${(props) =>
@@ -36,7 +38,7 @@ export const StyledContent = styled(Accordion.Content)`
   }
 `
 
-export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
+export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)<IAccordion>`
   all: unset;
   box-sizing: border-box;
   display: flex;

@@ -1,17 +1,19 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import styled, { withTheme } from 'styled-components'
 import {
   Attention as AttentionIcon,
   Information as InformationIcon,
   Success as SuccessIcon,
   Warning as WarningIcon,
 } from 'pcln-icons'
+import PropTypes, { InferProps } from 'prop-types'
+import styledSystemPropTypes from '@styled-system/prop-types'
+import React from 'react'
+import styled from 'styled-components'
+
 import { Box } from '../Box'
+import { CloseButton } from '../CloseButton'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
-import { CloseButton } from '../CloseButton'
-import { applyVariations, deprecatedColorValue } from '../utils'
+import { applyVariations } from '../utils'
 
 const bannerColors = {
   green: {
@@ -62,9 +64,10 @@ const propTypes = {
   showIcon: PropTypes.bool,
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   textAlign: PropTypes.string,
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
+  color: PropTypes.string,
+  bg: PropTypes.string,
   children: PropTypes.node,
+  ...styledSystemPropTypes.space,
 }
 
 const Banner: React.FC<InferProps<typeof propTypes>> = (props) => {
@@ -107,4 +110,4 @@ Banner.defaultProps = {
   color: 'green',
 }
 
-export default withTheme(Banner)
+export default Banner

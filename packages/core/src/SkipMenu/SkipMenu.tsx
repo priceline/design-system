@@ -30,7 +30,11 @@ const propTypes = {
   ),
 }
 
-const SkipMenu: React.FC<InferProps<typeof propTypes>> = ({ className, skipLinks, ...props }) => {
+const SkipMenu: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  className,
+  skipLinks,
+  ...props
+}) => {
   if (!skipLinks?.length) return null
   return (
     <OffScreenPanel data-testid='skip-menu' as={Flex} className={className} {...props}>

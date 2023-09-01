@@ -11,6 +11,7 @@ export interface IAccordion {
   onToggle?: (value: string | string[]) => void
   type?: string
   variation?: string
+  children?: React.ReactNode
 }
 
 export interface IAccordionItem {
@@ -18,6 +19,7 @@ export interface IAccordionItem {
   headerActions?: React.ReactNode
   headerLabel?: React.ReactNode
   value: string
+  children?: React.ReactNode
 }
 
 export const Accordion = ({

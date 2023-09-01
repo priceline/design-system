@@ -30,7 +30,7 @@ export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', 
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
-  small: css`
+  small: css<IButtonProps>`
     border-radius: ${(props) =>
       themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-sm'}`)(
         props
@@ -38,7 +38,7 @@ const sizes = {
     font-size: ${themeGet('fontSizes.0')}px;
     padding: 7px 12px;
   `,
-  medium: css`
+  medium: css<IButtonProps>`
     border-radius: ${(props) =>
       themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-md'}`)(
         props
@@ -46,7 +46,7 @@ const sizes = {
     font-size: ${themeGet('fontSizes.1')}px;
     padding: 9.5px 18px;
   `,
-  large: css`
+  large: css<IButtonProps>`
     border-radius: ${(props) =>
       themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-lg'}`)(
         props
@@ -54,7 +54,7 @@ const sizes = {
     font-size: ${themeGet('fontSizes.2')}px;
     padding: 12px 22px;
   `,
-  extraLarge: css`
+  extraLarge: css<IButtonProps>`
     border-radius: ${(props) =>
       themeGet(`borderRadii.${isValidBorderRadius(props.borderRadius) ? props.borderRadius : 'action-xl'}`)(
         props
@@ -65,7 +65,7 @@ const sizes = {
 }
 
 const variations = {
-  fill: css`
+  fill: css<IButtonProps>`
     background-color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
     color: ${(props) => getTextColorOn(props.disabled ? 'light' : 'base')(props)};
 
@@ -78,7 +78,7 @@ const variations = {
       box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
   `,
-  link: css`
+  link: css<IButtonProps>`
     -webkit-font-smoothing: inherit;
     font-weight: ${(props) => props.theme.fontWeights.medium};
     color: ${getPaletteColor('base')};
@@ -91,7 +91,7 @@ const variations = {
       text-decoration: underline;
     }
   `,
-  outline: css`
+  outline: css<IButtonProps>`
     color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
     box-shadow: inset 0 0 0 2px ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
     background-color: transparent;
@@ -107,7 +107,7 @@ const variations = {
     `}
     }
   `,
-  plain: css`
+  plain: css<IButtonProps>`
     background-color: transparent;
     color: ${getPaletteColor('base')};
     &:hover {
@@ -119,7 +119,7 @@ const variations = {
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
   `,
-  subtle: css`
+  subtle: css<IButtonProps>`
     background-color: ${getPaletteColor('background.base')};
     color: ${getPaletteColor('base')};
     &:hover {
@@ -131,7 +131,7 @@ const variations = {
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
   `,
-  white: css`
+  white: css<IButtonProps>`
     background-color: ${getPaletteColor('background.lightest')};
     color: ${getPaletteColor('base')};
     &:hover {
@@ -143,7 +143,7 @@ const variations = {
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
   `,
-  lightFill: css`
+  lightFill: css<IButtonProps>`
     background-color: ${getPaletteColor('light')};
     color: ${getPaletteColor('base')};
     ${(props) =>
@@ -159,7 +159,7 @@ const variations = {
       box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
   `,
-  input: css`
+  input: css<IButtonProps>`
     appearance: none;
     background-color: transparent;
     border-style: solid;
@@ -203,7 +203,7 @@ export interface IButtonProps
   onMouseEnter?: (unknown) => unknown
 }
 
-export const buttonStyles = css`
+export const buttonStyles = css<IButtonProps>`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
@@ -290,10 +290,7 @@ function getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren }: 
   return {}
 }
 
-/**
- * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
- */
-const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) => {
+const styledButtonAttrs = (props: StyledButtonProps) => {
   const {
     width,
     height,
@@ -317,7 +314,12 @@ const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) =>
     'aria-label': ariaLabel || title,
     ...paddingProps,
   }
-})`
+}
+
+/**
+ * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
+ */
+const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs(styledButtonAttrs)`
   ${buttonStyles}
 
   ${(props) => compose(width, height, space, boxShadow)(props)}

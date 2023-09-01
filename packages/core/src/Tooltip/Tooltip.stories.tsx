@@ -45,7 +45,7 @@ export const WithoutAnchors = () => (
 )
 
 export const WithAnchors = () => (
-  <FlexColumn justifyContent='space-between' wrap='wrap'>
+  <FlexColumn justifyContent='space-between' flexWrap='wrap'>
     <Box width={300} p={2} my={2}>
       <Tooltip top left color='primary'>
         top left tooltip

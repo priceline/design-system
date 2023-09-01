@@ -28,7 +28,7 @@ const colorSchemeFamilies = [
 const ColorCard = (props) => (
   <Flex flexDirection='column' width='100%'>
     <Card borderRadius='xl' bg={props.color || props.shade} height='100px' />
-    <Text f={0}>{props.shade}</Text>
+    <Text>{props.shade}</Text>
     <Text as='pre' m={0}>
       {props.hex}
     </Text>

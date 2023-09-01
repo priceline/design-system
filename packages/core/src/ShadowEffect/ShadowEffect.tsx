@@ -25,7 +25,7 @@ const propTypes = {
   onOpen: PropTypes.func,
 }
 
-const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
+const ShadowEffect: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
   shouldCloseOnBlur,
   shouldOpenOnFocus,
   zIndex = 'overlay',

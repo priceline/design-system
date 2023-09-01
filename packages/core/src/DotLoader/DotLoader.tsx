@@ -88,7 +88,12 @@ const propTypes = {
   speed: PropTypes.oneOf(Object.keys(speeds)),
 }
 
-const DotLoader: React.FC<InferProps<typeof propTypes>> = ({ color, size, speed, ...props }) => {
+const DotLoader: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  color,
+  size,
+  speed,
+  ...props
+}) => {
   const duration = speeds[speed]
 
   return (

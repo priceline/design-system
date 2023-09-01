@@ -13,13 +13,13 @@ import { Button } from '../Button'
 import { colorSchemeCustomForeground } from '../utils'
 import { ColorSchemeName } from '../theme'
 
-const BannerWithRadius = styled(Banner)`
+const BannerWithRadius = styled(Banner)<IGenericBannerProps>`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};
 
   ${colorSchemeCustomForeground}
 `
 
-const WrapperLink = styled.a`
+const WrapperLink = styled.a<IGenericBannerProps>`
   z-index: 1;
   display: block;
   position: absolute;
@@ -29,12 +29,15 @@ const WrapperLink = styled.a`
   bottom: 0;
 `
 
-const CustomLink = styled(Link)`
+const CustomLink = styled(Link)<IGenericBannerProps>`
   display: inline-flex;
   z-index: 2;
 `
 
-const CustomButton = styled(Button)`
+export interface ICustomButton {
+  buttonTextUnderline: boolean
+}
+const CustomButton = styled(Button)<ICustomButton>`
   z-index: 2;
   text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `

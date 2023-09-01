@@ -67,6 +67,7 @@ export interface ILabelProps
   autoHide?: boolean
   nowrap?: boolean
   for?: string
+  bg?: string
   onClick?: (evt: unknown) => void
 }
 

@@ -51,7 +51,11 @@ const propTypes = {
   customBreakpoints: PropTypes.arrayOf(PropTypes.string),
 }
 
-const ThemeProvider: React.FC<InferProps<typeof propTypes>> = ({ theme, customBreakpoints, ...props }) => {
+const ThemeProvider: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  theme,
+  customBreakpoints,
+  ...props
+}) => {
   // Once updated to React 16.8 this should be wrapped in React.useMemo()
   const mergedTheme = (existingTheme) => createTheme(theme, customBreakpoints, existingTheme)
 

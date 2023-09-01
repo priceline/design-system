@@ -32,7 +32,9 @@ const propTypes = {
   ...styledSystemPropTypes.fontSize,
   color: deprecatedColorValue(),
 }
-const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(borderRadiusAttrs)`
+const SelectBase: React.FC<
+  InferProps<typeof propTypes> & { children?: React.ReactNode }
+> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   display: block;
   width: 100%;

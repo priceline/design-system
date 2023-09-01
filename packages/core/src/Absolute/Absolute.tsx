@@ -15,13 +15,9 @@ import {
 
 import { Box, IBoxProps } from '../Box'
 
-export interface IAbsoluteProps
-  extends IBoxProps,
-    TopProps,
-    RightProps,
-    BottomProps,
-    LeftProps,
-    ZIndexProps {}
+export interface IAbsoluteProps extends IBoxProps, TopProps, RightProps, BottomProps, LeftProps, ZIndexProps {
+  children?: React.ReactNode
+}
 
 const Absolute: React.FC<IAbsoluteProps> = styled(Box)`
   position: absolute;

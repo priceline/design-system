@@ -20,7 +20,11 @@ const propTypes = {
   onClick: PropTypes.func,
 }
 
-const Swatch: React.FC<InferProps<typeof propTypes>> = ({ colors, onClick, ...props }) => (
+const Swatch: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  colors,
+  onClick,
+  ...props
+}) => (
   <Flex flexWrap='wrap' {...props}>
     {colors.map((color, idx) => (
       <SwatchColor

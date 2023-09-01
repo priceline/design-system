@@ -20,7 +20,7 @@ const propTypes = {
   className: PropTypes.string,
 }
 
-const ProgressBar: React.FC<InferProps<typeof propTypes>> = ({
+const ProgressBar: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
   steps,
   currentStep,
   stepHeight,

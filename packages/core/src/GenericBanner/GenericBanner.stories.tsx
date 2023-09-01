@@ -14,7 +14,10 @@ export default {
   argTypes,
 }
 
-const UnderlinedLinkText = styled(Text)`
+interface IUnderlinedLinkText {
+  hoverColor: string
+}
+const UnderlinedLinkText = styled(Text)<IUnderlinedLinkText>`
   text-decoration: underline;
   &:hover {
     color: ${(props) => getPaletteColor(props.hoverColor)};
@@ -45,7 +48,7 @@ export const BasicBannerAllInlineRightIcon = () => (
       </Text.span>
     }
     text={
-      <Text.span textColor='primary.base'>
+      <Text.span color='primary.base'>
         This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lacus vel dolor
         fringilla rhoncus.
       </Text.span>
@@ -88,12 +91,12 @@ export const BannerWithOnClick = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+      <Text.span fontWeight='bold' color='primary.base' mr={1}>
         COVID-19
       </Text.span>
     }
     text={
-      <Text.span textColor='primary.base' mr={1}>
+      <Text.span color='primary.base' mr={1}>
         Update: Your travel may be impacted. Please review this hotels important info.
       </Text.span>
     }
@@ -107,17 +110,17 @@ export const BannerWithOnClickAndCTA = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+      <Text.span fontWeight='bold' color='primary.base' mr={1}>
         COVID-19
       </Text.span>
     }
     text={
-      <Text.span textColor='primary.base' mr={1}>
+      <Text.span color='primary.base' mr={1}>
         Update: Your travel may be impacted. Please review this hotels important info.
       </Text.span>
     }
     ctaText={
-      <Text.span textColor='primary.base' fontWeight='bold'>
+      <Text.span color='primary.base' fontWeight='bold'>
         Read More
       </Text.span>
     }
@@ -133,17 +136,17 @@ export const BannerWithOnClickButtonStyleCta = () => (
     buttonSize='small'
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+      <Text.span fontWeight='bold' color='primary.base' mr={1}>
         COVID-19
       </Text.span>
     }
     text={
-      <Text.span mr={1} textColor='primary.base'>
+      <Text.span mr={1} color='primary.base'>
         Update: Your travel may be impacted. Please review this hotels important info.
       </Text.span>
     }
     ctaText={
-      <Text textColor='primary' fontWeight='bold'>
+      <Text color='primary' fontWeight='bold'>
         Read More
       </Text>
     }
@@ -157,7 +160,7 @@ export const BannerWithURLPropsAndCta = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+      <Text.span fontWeight='bold' color='primary.base' mr={1}>
         This is a Heading
       </Text.span>
     }
@@ -185,7 +188,7 @@ export const BannerWithURLProps = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base' mr={1}>
+      <Text.span fontWeight='bold' color='primary.base' mr={1}>
         This is a Heading
       </Text.span>
     }
@@ -208,7 +211,7 @@ export const BannerWithURLPropsAndCustomHeadingSize = () => (
   <GenericBanner
     p={2}
     heading={
-      <Text.span fontWeight='bold' textColor='primary.base' mr={1} fontSize={4}>
+      <Text.span fontWeight='bold' color='primary.base' mr={1} fontSize={4}>
         This is a Heading
       </Text.span>
     }

@@ -41,7 +41,7 @@ const getBackgroundColor = (props) =>
 
 const variations = {
   outline: css``,
-  shadow: css`
+  shadow: css<IChipContentWrapper>`
     box-shadow: ${(props) => (props.disabled || props.selected ? 'none' : themeGet('shadows.md'))};
     &:hover {
       box-shadow: ${(props) => (props.disabled ? 'none' : themeGet('shadows.xl'))};
@@ -57,7 +57,7 @@ interface IChipContentWrapper extends IBoxProps {
   borderRadiusOverride?: string
 }
 
-const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
+const ChipContentWrapper = styled(Box)<IChipContentWrapper>`
   ${(props) => `
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};

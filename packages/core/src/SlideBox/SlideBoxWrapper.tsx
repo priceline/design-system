@@ -9,7 +9,10 @@ const propTypes = {
   arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
 }
 
-const SlideBoxWrapper: React.FC<InferProps<typeof propTypes>> = ({ children, arrowPosition }) =>
+const SlideBoxWrapper: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  children,
+  arrowPosition,
+}) =>
   arrowPosition === 'side' ? (
     <Relative>
       <Flex alignItems='center'>{children}</Flex>

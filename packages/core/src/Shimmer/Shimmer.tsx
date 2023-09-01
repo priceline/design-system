@@ -1,8 +1,10 @@
-import React from 'react'
-import styled, { keyframes, css } from 'styled-components'
-import { Box } from '..'
+import type { IBoxProps } from '../Box'
+
 import PropTypes, { InferProps } from 'prop-types'
-import { VariationType, VARIATION_BACKGROUND_COLORS, VARIATION_GLARE_GRADIENTS } from './constants'
+import React from 'react'
+import styled, { css, keyframes } from 'styled-components'
+import { Box } from '..'
+import { VARIATION_BACKGROUND_COLORS, VARIATION_GLARE_GRADIENTS, VariationType } from './constants'
 
 const animation = (props) => keyframes`
   0% {
@@ -13,11 +15,11 @@ const animation = (props) => keyframes`
   }
 `
 
-const animationRule = css`
+const animationRule = css<IShimmerProps>`
   ${animation} 1.2s ease-in-out infinite;
 `
 
-const Wrapper = styled(Box)`
+const Wrapper = styled(Box)<IShimmerProps>`
   background-color: ${(props) => VARIATION_BACKGROUND_COLORS[props.variation]};
   background-size: 200px 100%;
   background-repeat: no-repeat;
@@ -27,7 +29,7 @@ const Wrapper = styled(Box)`
   overflow: hidden;
 `
 
-const Glare = styled.span`
+const Glare = styled.span<IShimmerProps>`
   display: inline-block;
   background-image: linear-gradient(to right, ${(props) => VARIATION_GLARE_GRADIENTS[props.variation]});
   background-image: -webkit-linear-gradient(left, ${(props) => VARIATION_GLARE_GRADIENTS[props.variation]});
@@ -46,10 +48,14 @@ const propTypes = {
   animationWidth: PropTypes.number,
   className: PropTypes.string,
   disable: PropTypes.bool,
-  variation: PropTypes.oneOf([VariationType.Base, VariationType.Light, VariationType.Dark]),
+  variation: PropTypes.oneOf(['base', 'light', 'dark']),
 }
 
-const Shimmer: React.FC<InferProps<typeof propTypes>> = ({ animationWidth, disable, ...props }) => {
+export interface IShimmerProps extends InferProps<typeof propTypes>, IBoxProps {
+  children?: React.ReactNode
+}
+
+const Shimmer = ({ animationWidth, disable, ...props }: IShimmerProps) => {
   return (
     <Wrapper {...props} data-testid='Shimmer__Wrapper'>
       {!disable && (

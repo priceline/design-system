@@ -17,13 +17,13 @@ const AbsoluteInput = styled(Input)`
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `
 
-const OutlineAbsolute = styled(Absolute)`
+const OutlineAbsolute = styled(Absolute)<IToggleProps>`
   height: calc(100% + 8px);
   opacity: 0;
   background-color: ${(props) => alphaColor(props.isOn ? 'primary.base' : 'background.dark', props)};
 `
 
-const CircleAbsolute = styled(Absolute)`
+const CircleAbsolute = styled(Absolute)<IToggleProps>`
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,3 +1,5 @@
+import type { ColorSchemeName } from '../theme'
+
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes, { InferProps } from 'prop-types'
@@ -44,7 +46,6 @@ import {
   paletteFamilies,
   roundedValues,
 } from '../utils'
-import type { ColorSchemeName } from '../theme'
 
 export const boxPropTypes = {
   ...propTypes.boxShadow,
@@ -82,7 +83,7 @@ export interface IBoxProps
     TextAlignProps,
     WidthProps,
     React.HTMLAttributes<HTMLDivElement> {
-  children?: React.ReactNode | string
+  children?: React.ReactNode
   as?: React.ReactNode
   role?: string
   bg?: string
@@ -122,6 +123,7 @@ export interface IBoxProps
     | 'background'
   onClick?: (unknown) => unknown
   colorScheme?: ColorSchemeName
+  tabIndex?: number
 }
 
 const Box: React.FC<InferProps<typeof boxPropTypes>> = styled.div.attrs((props) => ({

@@ -37,7 +37,7 @@ const propTypes = {
   borderRadius: PropTypes.string,
 }
 
-const ChipContent: React.FC<InferProps<typeof propTypes>> = ({
+const ChipContent: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
   disabled = undefined,
   selected = undefined,
   children = undefined,

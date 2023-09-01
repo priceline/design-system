@@ -8,16 +8,15 @@ const propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-const Breadcrumbs: React.FC<InferProps<typeof propTypes>> & { Link: React.FC<IBreadcrumbLink> } = ({
-  className,
-  children,
-}) => {
+const Breadcrumbs: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> & {
+  Link: React.FC<IBreadcrumbLink>
+} = ({ className, children }) => {
   return (
     <Flex className={className}>
       {React.Children.map(children, (child, i) => {
-        const isLastChild = i === children.length - 1
+        const isLastChild = i === React.Children.count(children)
 
-        return React.cloneElement(child, { isLastChild })
+        return React.isValidElement(child) ? React.cloneElement(child, { isLastChild }) : null
       })}
     </Flex>
   )

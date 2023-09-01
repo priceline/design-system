@@ -228,10 +228,6 @@ export function ForwardRefs() {
     }
     return (
       <>
-        {/*
-          This example is for SC3
-            <Button dsRef={e => this.btnRef = e}>Click me</Button>
-        */}
         <StyledLabel htmlFor='check'>
           <Checkbox id='check' ref={dsRef} />
           Checkbox with ref

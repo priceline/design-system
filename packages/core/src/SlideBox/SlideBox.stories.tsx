@@ -22,7 +22,7 @@ const propTypes = {
   index: PropTypes.number,
 }
 
-const TileContents: React.FC<InferProps<typeof propTypes>> = ({ index }) => (
+const TileContents: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({ index }) => (
   <Box>
     <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
     <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>

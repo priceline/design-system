@@ -1,3 +1,5 @@
+import type { ITextProps } from './Text'
+
 import React from 'react'
 import styled from 'styled-components'
 import { Box, Divider, Text } from '..'
@@ -123,7 +125,7 @@ export const Color = () => (
   </div>
 )
 
-const ReactiveText = styled(Text)`
+const ReactiveText = styled(Text)<ITextProps>`
   color: ${(props) => getTextColorOn(props.backgroundColor, props.lightColor, props.darkColor)(props)};
 `
 

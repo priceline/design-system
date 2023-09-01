@@ -45,7 +45,12 @@ const animationStyles: Record<'default' | 'sheet' | 'overlay', HTMLMotionProps<'
   },
 } as const
 
-const FloatingCloseButton: typeof CloseButton = styled(CloseButton)`
+export interface IFloatingCloseButton {
+  dialogSize?: string
+  fullWidth?: boolean
+  sheet?: boolean
+}
+const FloatingCloseButton = styled(CloseButton)<IFloatingCloseButton>`
   position: absolute;
   top: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
   right: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
@@ -58,7 +63,7 @@ const FloatingCloseButton: typeof CloseButton = styled(CloseButton)`
   }
 `
 
-const DialogOverlayWrapper = styled(motion.div)`
+const DialogOverlayWrapper = styled(motion.div)<IDialogProps>`
   position: fixed;
   inset: 0;
   display: grid;
@@ -68,7 +73,7 @@ const DialogOverlayWrapper = styled(motion.div)`
     Object.keys(scrimStyles).includes(props.scrimColor) ? scrimStyles[props.scrimColor] : props.scrimColor};
 `
 
-const DialogContentWrapper = styled(motion.div)`
+const DialogContentWrapper = styled(motion.div)<IDialogProps>`
   position: relative;
   cursor: initial;
   background-color: ${(props: IDialogProps) => themeGet('palette.background.lightest')(props)};
@@ -95,7 +100,7 @@ const DialogContentWrapper = styled(motion.div)`
   box-shadow: ${(props: IDialogProps) => themeGet('shadows.overlay-lg')(props)};
 `
 
-const DialogInnerContentWrapper = styled.div`
+const DialogInnerContentWrapper = styled.div<IDialogProps>`
   position: relative;
   overflow: auto;
   border-radius: ${(props: IDialogProps) =>

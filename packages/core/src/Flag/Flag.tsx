@@ -1,13 +1,13 @@
-import React from 'react'
-import { InferProps } from 'prop-types'
-import styled, { withTheme } from 'styled-components'
 import styledSystemPropTypes from '@styled-system/prop-types'
 import themeGet from '@styled-system/theme-get'
+import { InferProps } from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
+import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { Hide } from '../Hide'
-import { Box } from '../Box'
-import { applyVariations, getPaletteColor, hasPaletteColor, color, deprecatedColorValue } from '../utils'
+import { applyVariations, color, deprecatedColorValue, getPaletteColor, hasPaletteColor } from '../utils'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 
@@ -74,16 +74,12 @@ const propTypes = {
   ...styledSystemPropTypes.space,
 }
 
-const Flag: React.FC<InferProps<typeof propTypes>> = ({
-  color,
-  bg,
-  children,
-  pl,
-  pr,
-  py,
-  width,
-  ...props
-}) => (
+export type FlagPropTypes = InferProps<typeof propTypes>
+export interface IFlagProps extends FlagPropTypes {
+  children?: React.ReactNode
+}
+
+const Flag: React.FC<IFlagProps> = ({ color, bg, children, pl, pr, py, width, ...props }) => (
   <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
       <FlagShadow width='4px' mr={-2} mb={-2} color={hasPaletteColor({ color, ...props }) ? color : bg} />
@@ -114,4 +110,4 @@ Flag.defaultProps = {
 
 Flag.displayName = 'Flag'
 
-export default withTheme(Flag)
+export default Flag

@@ -10,7 +10,7 @@ import { ChipContentWrapper } from '../ChipContentWrapper'
 import { Button } from '../../Button'
 import { getPaletteColor } from '../../utils'
 
-const ChipButton = styled(Button)`
+const ChipButton = styled(Button)<IButtonChipProps>`
   background-color: transparent;
   border: none;
   padding: 0;
@@ -63,6 +63,7 @@ export interface IButtonChipProps extends SpaceProps, FontSizeProps {
   color?: string
   width?: string
   variation?: Variations
+  children?: React.ReactNode
 }
 
 const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(

@@ -22,8 +22,11 @@ const propTypes = {
   // Set the max width and padding of the container. Do not use with maxWidth prop.
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
 }
-
-const Container: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) => {
+export type ContainerPropTypes = InferProps<typeof propTypes>
+export interface IContainerProps extends ContainerPropTypes {
+  children?: React.ReactNode
+}
+const Container = styled(Box).attrs((props) => {
   if (props.size) {
     const px = paddings[props.size]
     const maxWidth = props.size ? `${sizes[props.size]}px` : props.maxWidth
@@ -31,7 +34,7 @@ const Container: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((pro
   } else {
     return props.maxWidth ? { maxWidth: `${props.maxWidth}px` } : { maxWidth: props.theme.maxContainerWidth }
   }
-})`
+})<IContainerProps>`
   margin-left: auto;
   margin-right: auto;
   width: 100%;

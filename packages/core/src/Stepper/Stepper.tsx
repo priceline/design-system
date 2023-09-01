@@ -1,10 +1,12 @@
+import type { IStepProps } from '../Step'
+
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
 import themeGet from '@styled-system/theme-get'
 
 import { Flex } from '../Flex'
-import { Step, IStepProps } from '../Step'
+import { Step } from '../Step'
 
 const StyledFlex = styled(Flex)`
   & > :not(:last-child) {
@@ -17,11 +19,14 @@ const propTypes = {
   children: PropTypes.node,
 }
 
-const Stepper: React.FC<InferProps<typeof propTypes>> & { Step: React.FC<IStepProps> } = ({
-  className,
-  children,
-  ...props
-}) => {
+export type StepperProps = InferProps<typeof propTypes>
+export interface IStepperProps extends StepperProps {
+  children?: React.ReactNode
+}
+
+const Stepper: React.FC<IStepperProps> & {
+  Step: React.FC<IStepProps>
+} = ({ className, children, ...props }) => {
   return (
     <StyledFlex className={className} {...props}>
       {children}

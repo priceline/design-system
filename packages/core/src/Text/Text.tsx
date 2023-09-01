@@ -1,3 +1,5 @@
+import type { ColorSchemeName } from '../theme'
+
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import propTypes from '@styled-system/prop-types'
@@ -57,11 +59,7 @@ export const caps = (props) => {
     return null
   }
 
-  return props?.caps
-    ? {
-        textTransform: 'uppercase',
-      }
-    : null
+  return props?.caps ? 'text-transform: uppercase;' : null
 }
 
 export const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
@@ -128,11 +126,22 @@ export interface ITextProps
     TextStyleProps,
     WidthProps,
     ZIndexProps {
+  bold?: boolean
   color?: string
   bg?: string
+  children?: React.ReactNode
+  colorScheme?: ColorSchemeName
+  textDecoration?: string
+  textTransform?: string
+
+  regular?: boolean
+  caps?: boolean
+  italic?: boolean
+
+  as?: string
 }
 
-const textProps: React.FC<ITextProps> = css`
+const textProps = css<ITextProps>`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
@@ -173,19 +182,23 @@ const textAttrs = (props) => ({
   ...textAlignAttrs(props),
 })
 
-const Text = styled.div.attrs(textAttrs)`
+const Text: React.FC<ITextProps> & {
+  span: React.FC<ITextProps>
+  p: React.FC<ITextProps>
+  s: React.FC<ITextProps>
+} = styled.div.attrs(textAttrs)`
   ${textProps}
 `
 
-const Span = styled.span.attrs(textAttrs)`
+const Span: React.FC<ITextProps> = styled.span.attrs(textAttrs)`
   ${textProps}
 `
 
-const Paragraph = styled.p.attrs(textAttrs)`
+const Paragraph: React.FC<ITextProps> = styled.p.attrs(textAttrs)`
   ${textProps}
 `
 
-const Strike = styled.s.attrs(textAttrs)`
+const Strike: React.FC<ITextProps> = styled.s.attrs(textAttrs)`
   ${textProps}
 `
 

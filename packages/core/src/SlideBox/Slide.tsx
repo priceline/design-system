@@ -1,19 +1,20 @@
 import React, { useRef, useEffect } from 'react'
+import { WidthProps } from 'styled-system'
 import PropTypes from 'prop-types'
 import { Box } from '..'
 import { RenderInView } from './RenderInView'
 import { SlideWrapper } from './SlideBox.styled'
+import { SlideBox } from '../SlideBox'
 
-interface ISlideProps {
-  onSlideChange: PropTypes.func
-  slideSpacing: PropTypes.number
-  stretchHeight: PropTypes.bool
-  index: PropTypes.number
-  content: PropTypes.node
-  isCurrentSlide: PropTypes.bool
-  width: PropTypes.any
-  numSlides: PropTypes.number
-  slideBoxRef: PropTypes.any
+interface ISlideProps extends WidthProps {
+  onSlideChange: () => {}
+  slideSpacing: number
+  stretchHeight: boolean
+  index: number
+  content: React.ReactElement
+  isCurrentSlide: boolean
+  numSlides: number
+  slideBoxRef?: React.Ref<typeof SlideBox>
 }
 
 const Slide: React.FC<ISlideProps> = ({
@@ -60,7 +61,7 @@ Slide.propTypes = {
   slideSpacing: PropTypes.number,
   stretchHeight: PropTypes.bool,
   index: PropTypes.number,
-  content: PropTypes.node,
+  content: PropTypes.element,
   isCurrentSlide: PropTypes.bool,
   width: PropTypes.any,
   numSlides: PropTypes.number,

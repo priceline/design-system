@@ -1,4 +1,5 @@
 import React from 'react'
+import { Star } from 'pcln-icons'
 import { render } from '../__test__/testing-library'
 
 import { Banner, Text, Heading, theme } from '..'
@@ -16,21 +17,14 @@ describe('Banner', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with custom iconName and size', () => {
-    const json = rendererCreateWithTheme(<Banner iconName='star' iconSize={20} />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
-
   test('renders with text string', () => {
-    const json = rendererCreateWithTheme(
-      <Banner header='Header' text='Text' iconName='star' iconSize={20} theme={theme} />
-    ).toJSON()
+    const json = rendererCreateWithTheme(<Banner header='Header' text='Text' icon={Star} />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with text node', () => {
     const json = rendererCreateWithTheme(
-      <Banner header='Header' text={<Text>Text</Text>} iconName='star' iconSize={20} theme={theme} />
+      <Banner header='Header' text={<Text>Text</Text>} icon={Star} />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })

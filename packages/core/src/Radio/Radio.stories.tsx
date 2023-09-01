@@ -8,7 +8,11 @@ import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
 const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)
 
-const LabelText = styled.span`
+export type ILabelText = {
+  bold?: boolean
+  medium?: boolean
+}
+const LabelText = styled.span<ILabelText>`
   vertical-align: middle;
   margin-left: 8px;
   ${bold}

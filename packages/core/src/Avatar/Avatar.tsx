@@ -32,7 +32,7 @@ const propTypes = {
 }
 
 /** @public */
-const Avatar: React.FC<InferProps<typeof propTypes>> = ({
+const Avatar: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
   className,
   title,
   subtitle,

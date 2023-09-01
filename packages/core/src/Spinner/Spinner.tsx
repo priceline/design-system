@@ -70,7 +70,11 @@ const propTypes = {
   ]),
 }
 
-const Spinner: React.FC<InferProps<typeof propTypes>> = ({ children, color, ...props }) => {
+const Spinner: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  children,
+  color,
+  ...props
+}) => {
   if (children) {
     React.Children.only(children)
   }

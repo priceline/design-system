@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { Image } from '../Image'
 
-const RandomImage = styled(Image)`
+const RandomImage = styled(Image)<IPlaceholderImageProps>`
   height: ${(props) => props.height}px;
   width: ${(props) => props.width}px;
 `
@@ -27,6 +27,7 @@ const determineSRC = (blur, chooseSrc, height, width) => {
 }
 
 const propTypes = {
+  alt: PropTypes.string,
   ariaHidden: PropTypes.bool,
   blur: PropTypes.bool,
   chooseSrc: PropTypes.string,
@@ -34,7 +35,12 @@ const propTypes = {
   width: PropTypes.string,
 }
 
-const PlaceholderImage: React.FC<InferProps<typeof propTypes>> = (props) => {
+export type PlaceholderImagePropTypes = InferProps<typeof propTypes>
+export interface IPlaceholderImageProps extends PlaceholderImagePropTypes {
+  children?: React.ReactNode
+  className?: string
+}
+const PlaceholderImage: React.FC<IPlaceholderImageProps> = (props) => {
   const { alt, ariaHidden, blur, chooseSrc, className, height, width } = props
 
   return (

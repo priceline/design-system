@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty, BoxMinus } from 'pcln-icons'
 import PropTypes, { InferProps } from 'prop-types'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import { applyVariations, deprecatedColorValue, getPaletteColor } from '../utils'
 
 const propTypes = {
   id: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+  checked: PropTypes.bool,
+  defaultChecked: PropTypes.bool,
   indeterminate: PropTypes.bool,
   size: PropTypes.number,
   onChange: PropTypes.func,
@@ -13,7 +16,12 @@ const propTypes = {
   unselectedColor: PropTypes.string,
 }
 
-const CheckBoxWrapper = styled.div`
+export type CheckboxProps = InferProps<typeof propTypes> & {
+  children?: React.ReactNode
+  ref?: React.Ref<HTMLInputElement>
+}
+
+const CheckBoxWrapper = styled.div<CheckboxProps>`
   display: inline-flex;
   align-items: center;
   position: relative;
@@ -95,14 +103,14 @@ const CheckBoxWrapper = styled.div`
   ${applyVariations('Checkbox')}
 `
 
-const StyledInput = styled.input`
+const StyledInput = styled.input<CheckboxProps>`
   appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
 `
 
-const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
+const Checkbox: React.FC<CheckboxProps> = React.forwardRef((props, ref) => {
   // eslint-disable-next-line react/prop-types
   const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
 
@@ -122,13 +130,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
   const borderAdjustedSize = size + 4
   return (
-    <CheckBoxWrapper
-      // eslint-disable-next-line react/prop-types
-      theme={props.theme}
-      color={props.color}
-      disabled={disabled}
-      unselectedColor={unselectedColor}
-    >
+    <CheckBoxWrapper color={props.color} disabled={disabled} unselectedColor={unselectedColor}>
       <StyledInput
         type='checkbox'
         {...props}
@@ -155,4 +157,4 @@ Checkbox.defaultProps = {
   unselectedColor: 'text.light',
 }
 
-export default withTheme(Checkbox)
+export default Checkbox

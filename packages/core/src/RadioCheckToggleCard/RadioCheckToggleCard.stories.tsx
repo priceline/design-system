@@ -855,7 +855,7 @@ const DefaultDocPage = () => {
                 })
               }
             >
-              <Text textStyle='paragraph' style={{ marginTop: '8px' }}>
+              <Text textStyle='paragraph' mt='8px'>
                 {dumpText}
               </Text>
               {exampleInput({ disabled: !examples['additional-actions-forms-2'].includes('example-2') })}

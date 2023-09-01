@@ -14,7 +14,11 @@ const propTypes = {
   children: PropTypes.node,
 }
 
-const Motion: React.FC<InferProps<typeof propTypes>> = ({ children, isAnimatedState, variation }) => (
+const Motion: React.FC<InferProps<typeof propTypes> & { children?: React.ReactNode }> = ({
+  children,
+  isAnimatedState,
+  variation,
+}) => (
   <Wrapper isAnimatedState={isAnimatedState} variation={variation} data-testid='motion-wrapper'>
     {children}
   </Wrapper>

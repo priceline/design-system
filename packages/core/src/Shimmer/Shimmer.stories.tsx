@@ -1,10 +1,14 @@
+import type { IShimmerProps } from './Shimmer'
+
 import React from 'react'
 import styled from 'styled-components'
-import { Shimmer, Flex, Box } from '..'
+import { Flex, Box } from '..'
 
-const SkeletonBar = styled(Shimmer).attrs(() => ({
-  mb: 2,
-}))``
+import { Shimmer } from '.'
+
+const SkeletonBar = styled(Shimmer)<IShimmerProps>`
+  margin-bottom: 8px;
+`
 
 export default {
   title: 'Shimmer',
