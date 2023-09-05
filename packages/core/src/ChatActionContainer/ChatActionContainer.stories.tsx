@@ -40,14 +40,14 @@ const threeChatActions = [
 export const _TwoChatActions: ChatActionContainerStory = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
-    expect(canvas.getByText('Yes')).toBeInTheDocument()
-    expect(canvas.getByText('No')).toBeInTheDocument()
+    await expect(canvas.getByText('Yes')).toBeInTheDocument()
+    await expect(canvas.getByText('No')).toBeInTheDocument()
 
     await userEvent.click(canvas.getAllByRole('button')[0])
-    expect(twoChatActions[0].onClick).toHaveBeenCalled()
+    await expect(twoChatActions[0].onClick).toHaveBeenCalled()
 
     await userEvent.click(canvas.getAllByRole('button')[1])
-    expect(twoChatActions[1].onClick).toHaveBeenCalled()
+    await expect(twoChatActions[1].onClick).toHaveBeenCalled()
   },
   render: (args) => <ChatActionContainer chatActions={twoChatActions} {...args} />,
 }
@@ -55,18 +55,18 @@ export const _TwoChatActions: ChatActionContainerStory = {
 export const _ThreeChatActions: ChatActionContainerStory = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
-    expect(canvas.getByText('Send a copy of my itinerary')).toBeInTheDocument()
-    expect(canvas.getByText('Cancel my Trip')).toBeInTheDocument()
-    expect(canvas.getByText('Reset my Password')).toBeInTheDocument()
+    await expect(canvas.getByText('Send a copy of my itinerary')).toBeInTheDocument()
+    await expect(canvas.getByText('Cancel my Trip')).toBeInTheDocument()
+    await expect(canvas.getByText('Reset my Password')).toBeInTheDocument()
 
     await userEvent.click(canvas.getAllByRole('button')[0])
-    expect(threeChatActions[0].onClick).toHaveBeenCalled()
+    await expect(threeChatActions[0].onClick).toHaveBeenCalled()
 
     await userEvent.click(canvas.getAllByRole('button')[1])
-    expect(threeChatActions[1].onClick).toHaveBeenCalled()
+    await expect(threeChatActions[1].onClick).toHaveBeenCalled()
 
     await userEvent.click(canvas.getAllByRole('button')[2])
-    expect(threeChatActions[2].onClick).toHaveBeenCalled()
+    await expect(threeChatActions[2].onClick).toHaveBeenCalled()
   },
   render: (args) => <ChatActionContainer chatActions={threeChatActions} {...args} />,
 }

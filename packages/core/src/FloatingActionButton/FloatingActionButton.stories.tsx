@@ -30,7 +30,7 @@ export const _FloatingActionButton = {
     const canvas = within(canvasElement)
 
     await userEvent.click(canvas.getByRole('button'))
-    expect(args.onClick).toHaveBeenCalled()
+    await expect(args.onClick).toHaveBeenCalled()
   },
   render: (args) => <FloatingActionButton {...args} />,
 }

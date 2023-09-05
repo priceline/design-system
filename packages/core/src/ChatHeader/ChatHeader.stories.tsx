@@ -35,13 +35,13 @@ export const _ChatHeader: ChatHeaderStory = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
 
-    expect(canvas.getByText('Penny')).toBeInTheDocument()
+    await expect(canvas.getByText('Penny')).toBeInTheDocument()
 
     await userEvent.click(canvas.getAllByRole('button')[0])
-    expect(args.onMinimize).toHaveBeenCalled()
+    await expect(args.onMinimize).toHaveBeenCalled()
 
     await userEvent.click(canvas.getAllByRole('button')[1])
-    expect(args.onClose).toHaveBeenCalled()
+    await expect(args.onClose).toHaveBeenCalled()
   },
   render: (args) => <ChatHeader {...args}>{Children}</ChatHeader>,
 }
