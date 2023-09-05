@@ -27,7 +27,7 @@
     "@storybook/addon-essentials": "^7.0.27",
     "@storybook/addon-interactions": "^7.0.27",
     "@storybook/addon-viewport": "^7.0.27",
-    "@storybook/jest": "^0.1.0",
+    "@storybook/jest": "^0.2.2",
     "@storybook/react": "^7.0.27",
     "@storybook/react-vite": "^7.0.27",
     "@storybook/testing-library": "^0.2.0",
