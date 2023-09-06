@@ -18,7 +18,7 @@
     "@types/node": "^18.16.19",
     "@types/testing-library__jest-dom": "^5.14.6",
     "@types/webpack-env": "^1.18.1",
-    "eslint": "^8.42.0",
+    "eslint": "^8.48.0",
     "jest-environment-jsdom": "^29.5.0",
     "jest-standard-reporter": "^2.0.0",
     "typescript": "^5.1.3",
