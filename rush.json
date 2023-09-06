@@ -11,7 +11,7 @@
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
   "rushVersion": "5.100.1",
-  "pnpmVersion": "8.6.7",
+  "pnpmVersion": "8.7.4",
 
   /**
    * Older releases of the Node.js engine may be missing features required by your system.
@@ -313,11 +313,11 @@
       "projectFolder": "apps/storybook",
       "shouldPublish": false
     },
-    {
-      "packageName": "@priceline/docs",
-      "projectFolder": "apps/docs",
-      "shouldPublish": false
-    },
+    // {
+    //   "packageName": "@priceline/docs",
+    //   "projectFolder": "apps/docs",
+    //   "shouldPublish": false
+    // },
 
     // Internal Tools
     {
