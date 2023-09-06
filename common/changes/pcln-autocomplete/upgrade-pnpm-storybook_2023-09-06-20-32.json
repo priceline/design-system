@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade pnpm, Storybook ecosystem, typescript and jest",
+      "type": "patch",
+      "packageName": "pcln-autocomplete"
+    }
+  ],
+  "packageName": "pcln-autocomplete",
+  "email": "steven.dalonzo@priceline.com"
+}
