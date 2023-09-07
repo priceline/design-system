@@ -29,7 +29,7 @@
     "@actions/core": "^1.10.0",
     "@rushstack/rush-sdk": "^5.100.1",
     "@priceline/eslint-config": "workspace:*",
-    "@rushstack/eslint-patch": "^1.3.2",
+    "@rushstack/eslint-patch": "^1.3.3",
     "@rushstack/node-core-library": "^3.59.5",
     "@rushstack/package-deps-hash": "^3.2.29",
     "@types/yargs": "^17.0.10",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.19",
-    "eslint": "^8.45.0",
-    "typescript": "^5.1.6"
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2"
   }
 }
