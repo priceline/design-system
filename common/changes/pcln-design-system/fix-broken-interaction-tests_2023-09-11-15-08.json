@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "fixed broken interaction test for Accordion",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

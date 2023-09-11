@@ -64,9 +64,9 @@ export const Basic = {
     await expect(args.onToggle).not.toHaveBeenCalled()
     await expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
     await userEvent.click(headerLabel)
-    setTimeout(() => {
-      expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
-      expect(args.onToggle).toHaveBeenCalled()
+    await setTimeout(async () => {
+      await expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
+      await expect(args.onToggle).toHaveBeenCalled()
     }, 350)
   },
   render: (args) => <Accordion {...args} items={items} />,
