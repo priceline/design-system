@@ -1,5 +1,4 @@
 import React from 'react'
-import { action } from '@storybook/addon-actions'
 import { Button, IconButton } from 'pcln-design-system'
 import { InformationOutline } from 'pcln-icons'
 
@@ -20,8 +19,6 @@ export const defaultArgs = {
   openOnFocus: false,
   openOnHover: true,
   placement: 'top',
-  onClose: action('Popover Close'),
-  onOpen: action('Popover Open'),
 }
 
 export const argTypes = {
@@ -33,6 +30,7 @@ export const argTypes = {
     },
   },
   onClose: { action: true },
+  onOpen: { action: true },
   onMinimize: { action: true },
   placement: {
     name: 'placement',

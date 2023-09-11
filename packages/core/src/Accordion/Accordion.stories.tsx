@@ -61,8 +61,8 @@ export const Basic = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
     const headerLabel = canvas.getByText('Header Label First Item')
-    expect(args.onToggle).not.toHaveBeenCalled()
-    expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
+    await expect(args.onToggle).not.toHaveBeenCalled()
+    await expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
     await userEvent.click(headerLabel)
     setTimeout(() => {
       expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
