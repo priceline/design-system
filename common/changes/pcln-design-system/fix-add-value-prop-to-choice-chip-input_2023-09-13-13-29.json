@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add value prop to ChoiceChip Input",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
