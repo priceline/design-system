@@ -84,8 +84,6 @@ export const Ladder = {
         {
           ...items[0],
           headerBg: 'success.light',
-          ContentNode: Box,
-          contentProps: { height: '50px', width: '100px', bg: 'primary.base' },
         },
         { ...items[1] },
       ]}

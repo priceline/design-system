@@ -61,8 +61,13 @@ export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
     ${(props) =>
       props.variation === 'flatCard' ? `background-color: ${getPaletteColor('background.light')(props)}` : ''}
   }
-  border-top-left-radius: ${themeGet('borderRadii.lg')};
-  border-top-right-radius: ${themeGet('borderRadii.lg')};
+  ${(props) =>
+    props.variation === 'ladder'
+      ? ''
+      : `
+    border-top-left-radius: ${themeGet('borderRadii.lg')};
+    border-top-right-radius: ${themeGet('borderRadii.lg')};
+  `}
   padding: 12px;
   ${(props) =>
     `border-bottom: 1px solid ${

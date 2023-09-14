@@ -23,8 +23,6 @@ export interface IAccordion {
 
 export interface IAccordionItem {
   content: React.ReactNode
-  ContentNode: React.FunctionComponent
-  contentProps: object
   headerActions?: React.ReactNode
   headerLabel?: React.ReactNode
   headerBg?: string
@@ -72,9 +70,7 @@ export const Accordion = ({
                 <StyledChevron className='chevron' variation={variation} />
               </IconContainer>
             </StyledTrigger>
-            <StyledContent variation={variation}>
-              {child.ContentNode ? <child.ContentNode {...child.contentProps} /> : child.content}
-            </StyledContent>
+            <StyledContent variation={variation}>{child.content}</StyledContent>
           </StyledItem>
         </RadixAccordion.Item>
       ))}
