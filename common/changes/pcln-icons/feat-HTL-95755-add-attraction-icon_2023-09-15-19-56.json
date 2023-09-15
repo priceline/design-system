@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "add attraction svg icon to pcln-icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
