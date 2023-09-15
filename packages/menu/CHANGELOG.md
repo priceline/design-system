@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Wed, 23 Aug 2023 18:39:11 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Sep 2023 14:19:20 GMT and should not be manually modified.
+
+## 5.3.15
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Patches
+
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
 
 ## 5.3.14
 Wed, 23 Aug 2023 18:39:11 GMT

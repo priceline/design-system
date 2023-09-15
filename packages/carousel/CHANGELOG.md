@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Wed, 23 Aug 2023 18:39:11 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Sep 2023 14:19:20 GMT and should not be manually modified.
+
+## 2.5.13
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Patches
+
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
 
 ## 2.5.12
 Wed, 23 Aug 2023 18:39:11 GMT

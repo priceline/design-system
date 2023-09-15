@@ -2,6 +2,31 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "5.4.11",
+      "tag": "pcln-modal_v5.4.11",
+      "date": "Fri, 15 Sep 2023 14:19:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade pnpm, Storybook ecosystem, typescript and jest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "bc4d730a54107788534346773af20a449806d3f0"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.21.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.15`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.20.2` to `^5.21.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.10",
       "tag": "pcln-modal_v5.4.10",
       "date": "Wed, 23 Aug 2023 18:39:11 GMT",

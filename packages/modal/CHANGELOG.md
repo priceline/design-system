@@ -1,6 +1,13 @@
 # Change Log - pcln-modal
 
-This log was last generated on Wed, 23 Aug 2023 18:39:11 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Sep 2023 14:19:20 GMT and should not be manually modified.
+
+## 5.4.11
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Patches
+
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
 
 ## 5.4.10
 Wed, 23 Aug 2023 18:39:11 GMT
