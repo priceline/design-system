@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 15 Sep 2023 14:19:20 GMT and should not be manually modified.
+This log was last generated on Mon, 18 Sep 2023 18:48:01 GMT and should not be manually modified.
+
+## 5.22.0
+Mon, 18 Sep 2023 18:48:01 GMT
+
+### Minor changes
+
+- Added gradient and strokeWidth property to Spinner
 
 ## 5.21.0
 Fri, 15 Sep 2023 14:19:20 GMT
