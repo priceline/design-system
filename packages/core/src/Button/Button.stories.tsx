@@ -8,18 +8,7 @@ import { linkTo } from '@storybook/addon-links'
 import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
 import React from 'react'
 
-import {
-  Box,
-  Button,
-  ButtonChip,
-  CloseButton,
-  Flex,
-  Image,
-  Link,
-  Text,
-  ThemeProvider,
-  getPaletteColor,
-} from '..'
+import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
 import {
   DocTable,
   DoDont,

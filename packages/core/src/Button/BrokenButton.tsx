@@ -3,6 +3,20 @@ import styled from 'styled-components'
 import { Box, Text, Button, Flex, getPaletteColor } from '..'
 import { Check } from 'pcln-icons'
 
+const PRODUCTS = ['hotels', 'cars', 'flights', 'vacations', 'cruises'] as const
+
+type ProductType = (typeof PRODUCTS)[number]
+
+type QueryString = Record<string, string | string[] | undefined>
+
+type ProductTabType = {
+  autobotID: string
+  name: string
+  tabText: string
+  id: ProductType
+  query: QueryString
+}
+
 const PRODUCT_TABS = [
   {
     autobotID: 'DASH_TAB_HOTELS',
@@ -72,14 +86,6 @@ const Slider = styled(Button)<{ showSlider: boolean }>`
   transition: margin-left 0.4s ease-in-out, width 0.4s ease-in-out;
 `
 
-const StyledButton = styled(Button)<{ highlightTab: boolean }>`
-  &:hover {
-    text-decoration: none;
-  }
-  position: relative;
-  border: 2px solid ${getPaletteColor('primary.base')};
-  background-color: ${getPaletteColor('primary.light')};
-`
 const BrokenButton = () => {
   const [activeTab, setActiveTab] = useState('hotels')
   const [hoveredTab, setHoverTab] = useState('')
@@ -96,7 +102,7 @@ const BrokenButton = () => {
     }
   }, [activeTab])
 
-  const handleOnClick = (tab: any) => {
+  const handleOnClick = (tab: ProductTabType) => {
     setActiveTab(tab.id)
   }
   return (
