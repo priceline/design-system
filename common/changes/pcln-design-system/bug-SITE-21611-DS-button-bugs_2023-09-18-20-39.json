@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Test a bug in storybook",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
