@@ -55,13 +55,13 @@ Responsive.args = {
 Responsive.parameters = {
   viewport: { defaultViewport: 'designSystem_sm' },
 }
-export const withGradient = Template.bind({})
-withGradient.args = {
+export const WithGradient = Template.bind({})
+WithGradient.args = {
   size: 'large',
   useGradient: true,
 }
-export const withGradientCustomWidth = Template.bind({})
-withGradientCustomWidth.args = {
+export const WithGradientCustomWidth = Template.bind({})
+WithGradientCustomWidth.args = {
   size: 'large',
   useGradient: true,
   strokeWidth: '10px',
