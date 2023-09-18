@@ -79,7 +79,7 @@ const propTypes = {
 }
 
 const GradientRing: React.FC<InferProps<typeof propTypes>> = ({ strokeWidth = '6px', ...props }) => {
-  const strokeColor = getPaletteColor(props?.color, 'base')(props)
+  const strokeColor = getPaletteColor(props.color, 'base')(props)
   return (
     <GradientRingWrapper>
       <svg
