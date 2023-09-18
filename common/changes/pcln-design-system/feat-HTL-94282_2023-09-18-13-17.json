@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added gradient and strokeWidth property to Spinner",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
