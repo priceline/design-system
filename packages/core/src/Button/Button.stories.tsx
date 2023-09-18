@@ -8,7 +8,18 @@ import { linkTo } from '@storybook/addon-links'
 import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
 import React from 'react'
 
-import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
+import {
+  Box,
+  Button,
+  ButtonChip,
+  CloseButton,
+  Flex,
+  Image,
+  Link,
+  Text,
+  ThemeProvider,
+  getPaletteColor,
+} from '..'
 import {
   DocTable,
   DoDont,
@@ -29,6 +40,7 @@ import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
 import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
 import buttonStates from './Button.Image.States.png'
+import BrokenButton from './BrokenButton'
 
 type ButtonStory = StoryObj<IButtonProps>
 
@@ -177,14 +189,21 @@ export const IconButtons: ButtonStory = {
   ),
 }
 
+export const BrokenButtons: ButtonStory = {
+  render: () => (
+    <StoryStage>
+      <BrokenButton />
+    </StoryStage>
+  ),
+}
+
 const meta: Meta<typeof Button> = {
   title: 'Actions/Button',
   component: Button,
   parameters: {
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
+      url: 'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
     },
 
     docs: {
