@@ -132,7 +132,7 @@ export const TrackStateMultiple = {
           {...args}
           items={items}
           itemsState={itemsState}
-          useValueState
+          isExternallyControlled
           onToggle={(newItemsState) => {
             setItemsState(newItemsState as string[])
             console.log('previousState:', itemsState, 'newState:', newItemsState)

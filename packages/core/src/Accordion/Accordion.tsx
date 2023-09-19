@@ -18,7 +18,7 @@ export interface IAccordion {
   onToggle?: (value: string | string[]) => void
   type?: string
   variation?: string
-  useValueState?: boolean
+  isExternallyControlled?: boolean
 }
 
 export interface IAccordionItem {
@@ -32,7 +32,7 @@ export interface IAccordionItem {
 export const Accordion = ({
   items,
   itemsState,
-  useValueState,
+  isExternallyControlled,
   onToggle,
   type = 'multiple',
   variation = 'default',
@@ -42,7 +42,7 @@ export const Accordion = ({
       // @ts-ignore
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
-      value={useValueState ? itemsState : undefined}
+      value={isExternallyControlled ? itemsState : undefined}
       collapsible
       variation={variation}
       onValueChange={onToggle}
