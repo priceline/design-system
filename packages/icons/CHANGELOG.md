@@ -1,6 +1,20 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 31 Jul 2023 13:51:05 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Sep 2023 20:57:00 GMT and should not be manually modified.
+
+## 5.12.0
+Fri, 15 Sep 2023 20:57:00 GMT
+
+### Minor changes
+
+- add attraction svg icon to pcln-icons
+
+## 5.11.1
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Patches
+
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
 
 ## 5.11.0
 Mon, 31 Jul 2023 13:51:05 GMT

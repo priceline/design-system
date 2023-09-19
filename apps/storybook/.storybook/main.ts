@@ -21,7 +21,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-interactions',
-    'storybook-addon-designs',
+    '@storybook/addon-designs',
     '@storybook/addon-coverage',
   ],
   docs: {

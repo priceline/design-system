@@ -55,12 +55,14 @@ const ChoiceChip: React.FC<IChoiceChipProps> = ({
   label,
   variation,
   width = 'auto',
+  value,
   ...props
 }) => (
   <ChipLabel htmlFor={id} width={width} {...props}>
     <ChipInput
       data-testid={id}
       name={name}
+      value={value}
       type='radio'
       role='radio'
       id={id}

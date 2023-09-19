@@ -24,10 +24,9 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GH_PAT }}
 
-      - name: Use Node.js 16
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18.x
 
       - name: PNPM cache via actions/cache@v3
         id: pnpm-cache

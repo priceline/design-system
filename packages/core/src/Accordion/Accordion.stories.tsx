@@ -61,12 +61,12 @@ export const Basic = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
     const headerLabel = canvas.getByText('Header Label First Item')
-    expect(args.onToggle).not.toHaveBeenCalled()
-    expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
+    await expect(args.onToggle).not.toHaveBeenCalled()
+    await expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
     await userEvent.click(headerLabel)
-    setTimeout(() => {
-      expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
-      expect(args.onToggle).toHaveBeenCalled()
+    setTimeout(async () => {
+      await expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
+      await expect(args.onToggle).toHaveBeenCalled()
     }, 350)
   },
   render: (args) => <Accordion {...args} items={items} />,
@@ -133,16 +133,16 @@ export const TrackStateSingular = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const headerLabel = canvas.getByText('Header Label First Item')
-    expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
-    expect(canvas.queryAllByText('I am secondary content')).toHaveLength(3)
-    expect(canvas.queryByText('Item Open: item-1')).toBeFalsy()
-    expect(canvas.queryByText('Item Open: item-2')).toBeTruthy()
+    await expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
+    await expect(canvas.queryAllByText('I am secondary content')).toHaveLength(3)
+    await expect(canvas.queryByText('Item Open: item-1')).toBeFalsy()
+    await expect(canvas.queryByText('Item Open: item-2')).toBeTruthy()
     await userEvent.click(headerLabel)
-    setTimeout(() => {
-      expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
-      expect(canvas.queryAllByText('I am secondary content')).toHaveLength(0)
-      expect(canvas.queryByText('Item Open: item-1')).toBeTruthy()
-      expect(canvas.queryByText('Item Open: item-2')).toBeFalsy()
+    setTimeout(async () => {
+      await expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
+      await expect(canvas.queryAllByText('I am secondary content')).toHaveLength(0)
+      await expect(canvas.queryByText('Item Open: item-1')).toBeTruthy()
+      await expect(canvas.queryByText('Item Open: item-2')).toBeFalsy()
     }, 350)
   },
   render: (args) => {

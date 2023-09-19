@@ -2,6 +2,41 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.12.0",
+      "tag": "pcln-icons_v5.12.0",
+      "date": "Fri, 15 Sep 2023 20:57:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add attraction svg icon to pcln-icons",
+            "author": "Nikita Jajodia <121977487+njajodia@users.noreply.github.com>",
+            "commit": "5666a5ee0588fb08d1c7b07ae6a44bff4fd72ab4"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.11.1",
+      "tag": "pcln-icons_v5.11.1",
+      "date": "Fri, 15 Sep 2023 14:19:20 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Replace more Jest tests with Storybook stories and interaction tests",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "27679715d0c1d0f0072914d453db4526db9d1479"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Upgrade pnpm, Storybook ecosystem, typescript and jest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "bc4d730a54107788534346773af20a449806d3f0"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.11.0",
       "tag": "pcln-icons_v5.11.0",
       "date": "Mon, 31 Jul 2023 13:51:05 GMT",

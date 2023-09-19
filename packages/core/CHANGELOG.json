@@ -2,6 +2,51 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.22.0",
+      "tag": "pcln-design-system_v5.22.0",
+      "date": "Mon, 18 Sep 2023 18:48:01 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added gradient and strokeWidth property to Spinner",
+            "author": "Ahsan Salim <94923201+ahsandotsalim@users.noreply.github.com>",
+            "commit": "96da358eafb4ffbaeb7e83502f9442162b732b11"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.21.0",
+      "tag": "pcln-design-system_v5.21.0",
+      "date": "Fri, 15 Sep 2023 14:19:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add value prop to ChoiceChip Input",
+            "author": "Guilherme André Welter <guilherme.a.welter@gmail.com>",
+            "commit": "ab4966759e50e03028269f0568138a92b06ee953"
+          },
+          {
+            "comment": "Upgrade pnpm, Storybook ecosystem, typescript and jest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "bc4d730a54107788534346773af20a449806d3f0"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Added variation prop to the FilterChip, ButtonChip and ChoiceChip, which includes shadow variation",
+            "author": "DTheodore <derrickxtheodore@gmail.com>",
+            "commit": "26371e220ecbaf64434793c426c76f1a3f59d530"
+          },
+          {
+            "comment": "Replaced :focus on FilterChip, ButtonChip and ChoiceChip with :focus-visible",
+            "author": "DTheodore <derrickxtheodore@gmail.com>",
+            "commit": "26371e220ecbaf64434793c426c76f1a3f59d530"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.20.2",
       "tag": "pcln-design-system_v5.20.2",
       "date": "Wed, 23 Aug 2023 18:39:11 GMT",

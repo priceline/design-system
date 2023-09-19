@@ -28,14 +28,14 @@ export const _ChatTrigger = {
     const canvas = within(canvasElement)
 
     const button = canvas.getByRole('button')
-    expect(canvas.queryByText('Chat with Penny')).not.toBeInTheDocument()
+    await expect(canvas.queryByText('Chat with Penny')).not.toBeInTheDocument()
     await userEvent.hover(button)
-    expect(canvas.getByText('Chat with Penny')).toBeInTheDocument()
+    await expect(canvas.getByText('Chat with Penny')).toBeInTheDocument()
     await userEvent.unhover(button)
-    expect(canvas.queryByText('Chat with Penny')).not.toBeInTheDocument()
+    await expect(canvas.queryByText('Chat with Penny')).not.toBeInTheDocument()
 
     await userEvent.click(button)
-    expect(args.onClick).toHaveBeenCalled()
+    await expect(args.onClick).toHaveBeenCalled()
   },
   render: (args) => <ChatTrigger {...args} />,
 }

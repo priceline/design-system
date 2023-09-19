@@ -1,6 +1,26 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 23 Aug 2023 18:39:11 GMT and should not be manually modified.
+This log was last generated on Mon, 18 Sep 2023 18:48:01 GMT and should not be manually modified.
+
+## 5.22.0
+Mon, 18 Sep 2023 18:48:01 GMT
+
+### Minor changes
+
+- Added gradient and strokeWidth property to Spinner
+
+## 5.21.0
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Minor changes
+
+- Added variation prop to the FilterChip, ButtonChip and ChoiceChip, which includes shadow variation
+- Replaced :focus on FilterChip, ButtonChip and ChoiceChip with :focus-visible
+
+### Patches
+
+- Add value prop to ChoiceChip Input
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
 
 ## 5.20.2
 Wed, 23 Aug 2023 18:39:11 GMT
