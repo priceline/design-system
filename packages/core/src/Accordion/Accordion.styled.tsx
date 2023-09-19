@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import { ChevronDown } from 'pcln-icons'
 import { Box } from '../Box'
 import { getPaletteColor, borderRadiusAttrs } from '../utils'
+import { IAccordion } from './Accordion'
 
 const slideDown = keyframes`
   from {
@@ -23,7 +24,7 @@ const slideUp = keyframes`
   }
 `
 
-export const StyledAccordionRoot = styled(Accordion.Root)`
+export const StyledAccordionRoot = styled(Accordion.Root)<IAccordion>`
   ${(props) =>
     props.variation === 'ladder'
       ? `

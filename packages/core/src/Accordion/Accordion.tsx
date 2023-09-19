@@ -46,6 +46,7 @@ export const Accordion = ({
       collapsible
       variation={variation}
       onValueChange={onToggle}
+      data-testid='accordion-root'
       style={{
         isolation: 'isolate',
       }}
@@ -58,6 +59,7 @@ export const Accordion = ({
             borderRadius='12px'
             marginBottom='12px'
             headerBg={child.headerBg}
+            data-testid={`styled-item-${child.value}`}
           >
             <StyledTrigger m={2} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>

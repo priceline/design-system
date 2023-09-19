@@ -77,6 +77,20 @@ export const Underlined = { render: (args) => <Accordion {...args} items={items}
 export const Hug = { render: (args) => <Accordion {...args} items={items} variation='hug' /> }
 
 export const Ladder = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const accordionRoot = canvas.getByTestId('accordion-root')
+    const firstStyledItem = canvas.getByTestId('styled-item-item-1')
+    expect(accordionRoot).toHaveStyle(`
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.03) 0px -1px 0px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px, rgba(0, 0, 0, 0.16) 0px 2px 1px -1px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+  `)
+    expect(firstStyledItem).toHaveStyle(`
+      background-color: rgb(236, 247, 236);
+      border-radius: 0px;
+      margin-bottom: 0px;
+  `)
+  },
   render: (args) => (
     <Accordion
       {...args}
