@@ -1,12 +1,12 @@
 import React from 'react'
 import { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
+import { borderRadius, compose, fontSize, space, FontSizeProps, SpaceProps } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
 import styledSystemPropTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
-import { applySizes, borderRadiusAttrs, borders, deprecatedColorValue, getPaletteColor } from '../utils'
 import { Flex } from '../Flex'
+import { applySizes, borderRadiusAttrs, borders, deprecatedColorValue, getPaletteColor } from '../utils'
 
 const sizes = {
   sm: css`
@@ -34,21 +34,20 @@ const propTypes = {
 }
 const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
   background-color: transparent;
   border-radius: ${themeGet('borderRadii.lg')};
-  border-width: 1px;
   border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  width: 100%;
 
   ::-ms-expand {
     display: none;
   }
 
-  &:disabled,
-  &[readOnly] {
+  &:disabled {
     background-color: ${getPaletteColor('background.light')};
     color: ${getPaletteColor('text.light')};
     cursor: not-allowed;
@@ -63,10 +62,10 @@ const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(b
 `
 
 SelectBase.defaultProps = {
+  borderRadius: 'lg',
   fontSize: [2, null, 1],
   m: 0,
   size: 'lg',
-  borderRadius: 'lg',
 }
 
 SelectBase.propTypes = propTypes
@@ -76,15 +75,9 @@ export interface ISelectProps extends SpaceProps, FontSizeProps {}
 const Select: React.FC<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Pick<any, string | number | symbol> & React.RefAttributes<unknown>
-> & { isField?: boolean } = React.forwardRef(({ children, readOnly, ...props }, ref) => (
+> & { isField?: boolean } = React.forwardRef((props, ref) => (
   <Flex width={1} alignItems='center'>
-    <SelectBase {...props} readOnly={readOnly} ref={ref}>
-      {React.Children.map(children, (child) => {
-        return React.cloneElement(child as React.ReactElement, {
-          disabled: readOnly,
-        })
-      })}
-    </SelectBase>
+    <SelectBase {...props} ref={ref} />
     <ClickableIcon ml={-32} color='text.light' />
   </Flex>
 ))
