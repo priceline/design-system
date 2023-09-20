@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import { ChevronDown } from 'pcln-icons'
 import { Box } from '../Box'
 import { getPaletteColor, borderRadiusAttrs } from '../utils'
+import { IAccordion } from './Accordion'
 
 const slideDown = keyframes`
   from {
@@ -21,6 +22,17 @@ const slideUp = keyframes`
   to {
     height: 0;
   }
+`
+
+export const StyledAccordionRoot = styled(Accordion.Root)<IAccordion>`
+  ${(props) =>
+    props.variation === 'ladder'
+      ? `
+      overflow: hidden;
+      box-shadow: ${themeGet('shadows.sm')(props)};
+      border-radius: ${themeGet('borderRadii.lg')(props)};
+    `
+      : ''}
 `
 
 export const StyledContent = styled(Accordion.Content)`
@@ -50,8 +62,13 @@ export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
     ${(props) =>
       props.variation === 'flatCard' ? `background-color: ${getPaletteColor('background.light')(props)}` : ''}
   }
-  border-top-left-radius: ${themeGet('borderRadii.lg')};
-  border-top-right-radius: ${themeGet('borderRadii.lg')};
+  ${(props) =>
+    props.variation === 'ladder'
+      ? ''
+      : `
+    border-top-left-radius: ${themeGet('borderRadii.lg')};
+    border-top-right-radius: ${themeGet('borderRadii.lg')};
+  `}
   padding: 12px;
   ${(props) =>
     `border-bottom: 1px solid ${
@@ -109,6 +126,12 @@ export const StyledItem = styled(Box)`
     props.variation === 'hug'
       ? `background-color: ${getPaletteColor('primary.base')(props)};
       border: 1px solid ${getPaletteColor('primary.base')(props)};`
+      : ''}
+  ${(props) =>
+    props.variation === 'ladder'
+      ? `background-color: ${getPaletteColor(props.headerBg || 'background.light')(props)};
+        border-radius: 0px; margin-bottom: 0px;
+        `
       : ''}
   &[data-state='open'],
   &:hover {

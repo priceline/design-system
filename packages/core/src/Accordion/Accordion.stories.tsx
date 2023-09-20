@@ -76,6 +76,21 @@ export const Underlined = { render: (args) => <Accordion {...args} items={items}
 
 export const Hug = { render: (args) => <Accordion {...args} items={items} variation='hug' /> }
 
+export const Ladder = {
+  render: (args) => (
+    <Accordion
+      {...args}
+      items={[
+        {
+          ...items[0],
+          headerBg: 'success.light',
+        },
+        { ...items[1] },
+      ]}
+      variation='ladder'
+    />
+  ),
+}
 export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
 
 export const FlatCard = { render: (args) => <Accordion {...args} items={items} variation='flatCard' /> }
@@ -92,10 +107,18 @@ export const TrackStateMultiple = {
     return (
       <>
         <Text>Items Open: {itemsState.join(', ')}</Text>
+        <Button
+          onClick={() => {
+            setItemsState([])
+          }}
+        >
+          Collapse all items
+        </Button>
         <Accordion
           {...args}
           items={items}
           itemsState={itemsState}
+          isExternallyControlled
           onToggle={(newItemsState) => {
             setItemsState(newItemsState as string[])
             console.log('previousState:', itemsState, 'newState:', newItemsState)

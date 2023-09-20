@@ -2,7 +2,14 @@
 // todo: remove coverage ignore once storybook interaction test coverage counts
 import React from 'react'
 import * as RadixAccordion from '@radix-ui/react-accordion'
-import { IconContainer, StyledChevron, StyledContent, StyledItem, StyledTrigger } from './Accordion.styled'
+import {
+  IconContainer,
+  StyledChevron,
+  StyledContent,
+  StyledItem,
+  StyledTrigger,
+  StyledAccordionRoot,
+} from './Accordion.styled'
 import { Box, Flex } from '..'
 
 export interface IAccordion {
@@ -11,36 +18,49 @@ export interface IAccordion {
   onToggle?: (value: string | string[]) => void
   type?: string
   variation?: string
+  isExternallyControlled?: boolean
 }
 
 export interface IAccordionItem {
   content: React.ReactNode
   headerActions?: React.ReactNode
   headerLabel?: React.ReactNode
+  headerBg?: string
   value: string
 }
 
 export const Accordion = ({
   items,
   itemsState,
+  isExternallyControlled,
   onToggle,
   type = 'multiple',
   variation = 'default',
 }: IAccordion) => {
   return items ? (
-    <RadixAccordion.Root
+    <StyledAccordionRoot
       // @ts-ignore
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
+      value={isExternallyControlled ? itemsState : undefined}
       collapsible
+      variation={variation}
       onValueChange={onToggle}
+      data-testid='accordion-root'
       style={{
         isolation: 'isolate',
       }}
     >
       {items.map((child: IAccordionItem) => (
         <RadixAccordion.Item key={child.value} asChild value={child.value}>
-          <StyledItem variation={variation} overflow='hidden' borderRadius='12px' marginBottom='12px'>
+          <StyledItem
+            variation={variation}
+            overflow='hidden'
+            borderRadius='12px'
+            marginBottom='12px'
+            headerBg={child.headerBg}
+            data-testid={`styled-item-${child.value}`}
+          >
             <StyledTrigger m={2} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>
                 {child.headerLabel}
@@ -56,6 +76,6 @@ export const Accordion = ({
           </StyledItem>
         </RadixAccordion.Item>
       ))}
-    </RadixAccordion.Root>
+    </StyledAccordionRoot>
   ) : null
 }
