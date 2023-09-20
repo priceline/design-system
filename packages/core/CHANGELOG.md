@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 18 Sep 2023 18:48:01 GMT and should not be manually modified.
+This log was last generated on Wed, 20 Sep 2023 18:06:28 GMT and should not be manually modified.
+
+## 5.23.0
+Wed, 20 Sep 2023 18:06:28 GMT
+
+### Minor changes
+
+- Add "ladder" variatio to the Accordion
 
 ## 5.22.0
 Mon, 18 Sep 2023 18:48:01 GMT

@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.23.0",
+      "tag": "pcln-design-system_v5.23.0",
+      "date": "Wed, 20 Sep 2023 18:06:28 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add \"ladder\" variatio to the Accordion",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "3e4fa574a6ae41394513c320437dea66456ff038"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.22.0",
       "tag": "pcln-design-system_v5.22.0",
       "date": "Mon, 18 Sep 2023 18:48:01 GMT",
