@@ -8,14 +8,14 @@ const sizes = {
   md: 768,
   lg: 1024,
   xl: 1280,
-}
+} as const
 
 const paddings = {
   sm: 3,
   md: [3, null, 4],
   lg: [3, null, 4],
   xl: [3, null, 4],
-}
+} as const
 
 const propTypes = {
   maxWidth: PropTypes.number,
