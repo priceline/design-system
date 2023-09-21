@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix regressions related to readonly in Input and Toggle",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

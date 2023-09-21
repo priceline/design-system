@@ -800,7 +800,7 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 
 exports[`RadioCheckToggleCard Toggle Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c22 {
+  .c21 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -808,7 +808,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   width: 16;
 }
 
-.c23 {
+.c22 {
   outline: none;
 }
 
@@ -825,12 +825,12 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   width: 45px;
 }
 
-.c16 {
+.c15 {
   border-radius: 9999px;
   width: calc(100% + 8px);
 }
 
-.c19 {
+.c18 {
   background-color: #fff;
   color: #001833;
   border-radius: 9999px;
@@ -838,13 +838,13 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
-.c17 {
+.c16 {
   position: absolute;
   left: -4px;
   top: -4px;
 }
 
-.c20 {
+.c19 {
   position: absolute;
   left: 23px;
   top: 2px;
@@ -874,67 +874,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   flex-direction: row;
 }
 
-.c12 {
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: #001833;
-  background-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0;
-  padding: 14px 12px 14px 12px;
-  border-color: #c0cad5;
-  padding: 0px;
-  font-size: 16px;
-  border-radius: 12px;
-}
-
-.c12::-webkit-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c12::-moz-placeholder {
-  color: #4f6f8f;
-}
-
-.c12:-ms-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c12::placeholder {
-  color: #4f6f8f;
-}
-
-.c12::-ms-clear {
-  display: none;
-}
-
-.c12:disabled,
-.c12:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c12:disabled,
-.c12:read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c12:focus {
-  outline: 0;
-  border-color: #0068ef;
-  box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c14 {
+.c13 {
   position: absolute;
   z-index: 1;
   opacity: 0;
@@ -946,13 +886,13 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   cursor: pointer;
 }
 
-.c18 {
+.c17 {
   height: calc(100% + 8px);
   opacity: 0;
   background-color: #0068ef4C;
 }
 
-.c21 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -980,7 +920,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   min-width: 45px;
 }
 
-.c11 .c13:focus-visible + .c15 {
+.c11 .c12:focus-visible + .c14 {
   opacity: 1;
 }
 
@@ -1093,16 +1033,6 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   box-sizing: border-box;
 }
 
-@media screen and (min-width:32em) {
-
-}
-
-@media screen and (min-width:40em) {
-  .c12 {
-    font-size: 14px;
-  }
-}
-
 <div
     class="c0"
   >
@@ -1153,18 +1083,17 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
                 <input
                   aria-checked="true"
                   checked=""
-                  class="c12 c13 c14"
-                  font-size="2,,1"
+                  class="c12 c13"
                   role="switch"
                   tabindex="0"
                   type="checkbox"
                 />
                 <div
-                  class="c15 c16 c17 c18"
+                  class="c14 c15 c16 c17"
                   width="calc(100% + 8px)"
                 />
                 <div
-                  class="c19 c20 c21"
+                  class="c18 c19 c20"
                   color="background.lightest"
                   data-testid="handle-div"
                   id="circle-handle"
@@ -1172,7 +1101,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
                 >
                   <svg
                     aria-hidden="true"
-                    class="c22 c23"
+                    class="c21 c22"
                     fill="currentcolor"
                     focusable="false"
                     height="16"
@@ -1199,7 +1128,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 
 exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c22 {
+  .c21 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1207,7 +1136,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   width: 16;
 }
 
-.c23 {
+.c22 {
   outline: none;
 }
 
@@ -1224,12 +1153,12 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   width: 45px;
 }
 
-.c16 {
+.c15 {
   border-radius: 9999px;
   width: calc(100% + 8px);
 }
 
-.c19 {
+.c18 {
   background-color: #fff;
   color: #001833;
   border-radius: 9999px;
@@ -1237,13 +1166,13 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
-.c17 {
+.c16 {
   position: absolute;
   left: -4px;
   top: -4px;
 }
 
-.c20 {
+.c19 {
   position: absolute;
   left: 2px;
   top: 2px;
@@ -1273,67 +1202,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   flex-direction: row;
 }
 
-.c12 {
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: #001833;
-  background-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0;
-  padding: 14px 12px 14px 12px;
-  border-color: #c0cad5;
-  padding: 0px;
-  font-size: 16px;
-  border-radius: 12px;
-}
-
-.c12::-webkit-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c12::-moz-placeholder {
-  color: #4f6f8f;
-}
-
-.c12:-ms-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c12::placeholder {
-  color: #4f6f8f;
-}
-
-.c12::-ms-clear {
-  display: none;
-}
-
-.c12:disabled,
-.c12:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c12:disabled,
-.c12:read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c12:focus {
-  outline: 0;
-  border-color: #0068ef;
-  box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c14 {
+.c13 {
   position: absolute;
   z-index: 1;
   opacity: 0;
@@ -1345,13 +1214,13 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   cursor: pointer;
 }
 
-.c18 {
+.c17 {
   height: calc(100% + 8px);
   opacity: 0;
   background-color: #4f6f8f4C;
 }
 
-.c21 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1379,7 +1248,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   min-width: 45px;
 }
 
-.c11 .c13:focus-visible + .c15 {
+.c11 .c12:focus-visible + .c14 {
   opacity: 1;
 }
 
@@ -1492,16 +1361,6 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   box-sizing: border-box;
 }
 
-@media screen and (min-width:32em) {
-
-}
-
-@media screen and (min-width:40em) {
-  .c12 {
-    font-size: 14px;
-  }
-}
-
 <div
     class="c0"
   >
@@ -1550,18 +1409,17 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
               >
                 <input
                   aria-checked="false"
-                  class="c12 c13 c14"
-                  font-size="2,,1"
+                  class="c12 c13"
                   role="switch"
                   tabindex="0"
                   type="checkbox"
                 />
                 <div
-                  class="c15 c16 c17 c18"
+                  class="c14 c15 c16 c17"
                   width="calc(100% + 8px)"
                 />
                 <div
-                  class="c19 c20 c21"
+                  class="c18 c19 c20"
                   color="background.lightest"
                   data-testid="handle-div"
                   id="circle-handle"
@@ -1569,7 +1427,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
                 >
                   <svg
                     aria-hidden="true"
-                    class="c22 c23"
+                    class="c21 c22"
                     fill="currentcolor"
                     focusable="false"
                     height="16"

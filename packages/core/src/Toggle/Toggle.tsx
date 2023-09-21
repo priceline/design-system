@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Box, Absolute, Input, getPaletteColor } from '..'
+import { Box, Absolute, getPaletteColor } from '..'
 
 const alphaColor = (color: string, props) => `${getPaletteColor(color)(props)}4C`
 
-const AbsoluteInput = styled(Input)`
+const AbsoluteInput = styled.input`
   position: absolute;
   z-index: 1;
   opacity: 0;
