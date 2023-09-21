@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Accordion } from '.'
-import { Flex, Button, Text } from '..'
+import { Flex, Button, Text, theme } from '..'
 import { expect } from '@storybook/jest'
 import { within, userEvent } from '@storybook/testing-library'
 
@@ -9,6 +9,11 @@ export default {
   component: Accordion,
   argTypes: {
     onToggle: { action: true },
+    p: {
+      options: theme.space,
+      control: { type: 'select' },
+      description: 'Padding for the content and header sections',
+    },
   },
 }
 

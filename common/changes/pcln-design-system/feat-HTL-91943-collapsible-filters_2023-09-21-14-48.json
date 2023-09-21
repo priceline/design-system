@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add space prop for configurable padding",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
