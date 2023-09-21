@@ -9,18 +9,6 @@ exports[`ModalHeader render 1`] = `
   padding-right: 16px;
 }
 
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c11 {
-  outline: none;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -58,6 +46,18 @@ exports[`ModalHeader render 1`] = `
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+}
+
+.c10 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c11 {
+  outline: none;
 }
 
 .c5 {
