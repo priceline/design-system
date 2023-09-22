@@ -109,15 +109,7 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: none;
 }
 
-.c9:disabled,
-.c9:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c9:disabled,
-.c9:read-only {
+.c9:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -509,15 +501,7 @@ exports[`FormField renders 1`] = `
   display: none;
 }
 
-.c3:disabled,
-.c3:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c3:disabled,
-.c3:read-only {
+.c3:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -689,15 +673,7 @@ exports[`FormField renders with Icon 1`] = `
   display: none;
 }
 
-.c7:disabled,
-.c7:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c7:disabled,
-.c7:read-only {
+.c7:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -890,15 +866,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: none;
 }
 
-.c7:disabled,
-.c7:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c7:disabled,
-.c7:read-only {
+.c7:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;

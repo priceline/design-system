@@ -1,14 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
+// @ts-nocheck
 
 import type { Meta, StoryObj } from '@storybook/react'
 import type { IButtonProps, Sizes } from './Button'
 
 import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
-import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
+import { Calendar, Check, ChevronLeft, ChevronRight, ChevronDown, Search, User, Guests } from 'pcln-icons'
 import React from 'react'
 
-import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
+import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider, Label } from '..'
 import {
   DocTable,
   DoDont,
@@ -177,14 +178,50 @@ export const IconButtons: ButtonStory = {
   ),
 }
 
+export const InputVariation: ButtonStory = {
+  render: () => (
+    <StoryStage>
+      <Button size='lg' variation='input' borderRadius='lg' py={0}>
+        <Flex width='100%' justifyContent='flex-start' height='100%' alignItems='center' height='54px'>
+          <Calendar mr={2} color='primary.base' />
+          <Flex flexDirection='column'>
+            <Label as='div'>Check-in - Check-out</Label>
+            <Text>09/21/2023 – 09/22/2023</Text>
+          </Flex>
+        </Flex>
+      </Button>
+
+      <Button size='lg' variation='input' borderRadius='lg'>
+        <Flex width='100%' justifyContent='flex-start' height='100%' alignItems='center'>
+          <Calendar mr={2} color='primary.base' />
+          <Flex flexDirection='column'>
+            <Text color='text.light'>mm/dd/yyyy - mm/dd/yyyy</Text>
+          </Flex>
+        </Flex>
+      </Button>
+
+      <Button size='lg' variation='input' borderRadius='lg'>
+        <Flex width='100%' justifyContent='space-between' height='100%' alignItems='center'>
+          <Flex alignItems='center'>
+            <Guests mr={2} color='primary.base' />
+            <Flex flexDirection='column'>
+              <Text color='text.light'>Select travelers</Text>
+            </Flex>
+          </Flex>
+          <ChevronDown color='primary.base' />
+        </Flex>
+      </Button>
+    </StoryStage>
+  ),
+}
+
 const meta: Meta<typeof Button> = {
   title: 'Actions/Button',
   component: Button,
   parameters: {
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
+      url: 'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
     },
 
     docs: {
