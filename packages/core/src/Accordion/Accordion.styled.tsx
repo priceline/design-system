@@ -1,6 +1,7 @@
 import * as Accordion from '@radix-ui/react-accordion'
 import { themeGet } from '@styled-system/theme-get'
 import styled, { keyframes } from 'styled-components'
+import { space } from 'styled-system'
 import { ChevronDown } from 'pcln-icons'
 import { Box } from '../Box'
 import { getPaletteColor, borderRadiusAttrs } from '../utils'
@@ -37,7 +38,7 @@ export const StyledAccordionRoot = styled(Accordion.Root)<IAccordion>`
 
 export const StyledContent = styled(Accordion.Content)`
   overflow: hidden;
-  padding: 12px;
+  ${space}
   background-color: ${(props) =>
     props.variation === 'default' ? getPaletteColor('background.light')(props) : '#fff'};
   &[data-state='open'] {
@@ -69,7 +70,7 @@ export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
     border-top-left-radius: ${themeGet('borderRadii.lg')};
     border-top-right-radius: ${themeGet('borderRadii.lg')};
   `}
-  padding: 12px;
+  ${space}
   ${(props) =>
     `border-bottom: 1px solid ${
       props.variation === 'underline' ? getPaletteColor('border.base')(props) : 'transparent'

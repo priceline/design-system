@@ -11,8 +11,9 @@ import {
   StyledAccordionRoot,
 } from './Accordion.styled'
 import { Box, Flex } from '..'
+import { SpaceProps } from 'styled-system'
 
-export interface IAccordion {
+export interface IAccordion extends SpaceProps {
   items: IAccordionItem[]
   itemsState?: string | string[]
   onToggle?: (value: string | string[]) => void
@@ -36,6 +37,8 @@ export const Accordion = ({
   onToggle,
   type = 'multiple',
   variation = 'default',
+  p = '12px',
+  ...props
 }: IAccordion) => {
   return items ? (
     <StyledAccordionRoot
@@ -61,7 +64,7 @@ export const Accordion = ({
             headerBg={child.headerBg}
             data-testid={`styled-item-${child.value}`}
           >
-            <StyledTrigger m={2} variation={variation}>
+            <StyledTrigger {...props} p={p} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>
                 {child.headerLabel}
                 {child.headerActions ? (
@@ -72,7 +75,9 @@ export const Accordion = ({
                 <StyledChevron className='chevron' variation={variation} />
               </IconContainer>
             </StyledTrigger>
-            <StyledContent variation={variation}>{child.content}</StyledContent>
+            <StyledContent {...props} p={p} variation={variation}>
+              {child.content}
+            </StyledContent>
           </StyledItem>
         </RadixAccordion.Item>
       ))}
