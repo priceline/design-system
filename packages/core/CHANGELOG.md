@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 22 Sep 2023 14:37:35 GMT and should not be manually modified.
+This log was last generated on Fri, 22 Sep 2023 18:13:30 GMT and should not be manually modified.
+
+## 5.24.1
+Fri, 22 Sep 2023 18:13:30 GMT
+
+### Patches
+
+- Fix regressions related to readonly in Input and Toggle
 
 ## 5.24.0
 Fri, 22 Sep 2023 14:37:35 GMT

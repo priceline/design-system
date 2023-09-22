@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.24.1",
+      "tag": "pcln-design-system_v5.24.1",
+      "date": "Fri, 22 Sep 2023 18:13:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix regressions related to readonly in Input and Toggle",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "5d1a337d27ecca9952fdc5096a64c29821684452"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.24.0",
       "tag": "pcln-design-system_v5.24.0",
       "date": "Fri, 22 Sep 2023 14:37:35 GMT",
