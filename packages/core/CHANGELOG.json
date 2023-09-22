@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.24.0",
+      "tag": "pcln-design-system_v5.24.0",
+      "date": "Fri, 22 Sep 2023 14:37:35 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add space prop for configurable padding",
+            "author": "fareedahmad1 <90357103+fareedahmad1@users.noreply.github.com>",
+            "commit": "cc70858004ccdcf1efa760c26c97d195561110c7"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.23.0",
       "tag": "pcln-design-system_v5.23.0",
       "date": "Wed, 20 Sep 2023 18:06:28 GMT",
