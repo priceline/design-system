@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "remove explicit setting of overflow-y:auto on Modal component",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}
