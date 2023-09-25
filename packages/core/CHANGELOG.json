@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.24.2",
+      "tag": "pcln-design-system_v5.24.2",
+      "date": "Mon, 25 Sep 2023 17:18:04 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove readonly prop from Select",
+            "author": "Brianna Mansell <62613356+pcln-brianna@users.noreply.github.com>",
+            "commit": "5304b2ef44ae3298198ccb025cfab70206a54be1"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.24.1",
       "tag": "pcln-design-system_v5.24.1",
       "date": "Fri, 22 Sep 2023 18:13:30 GMT",
