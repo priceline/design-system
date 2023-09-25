@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Remove readonly prop from Select",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
