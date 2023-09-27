@@ -1,6 +1,13 @@
 # Change Log - pcln-modal
 
-This log was last generated on Mon, 25 Sep 2023 17:18:04 GMT and should not be manually modified.
+This log was last generated on Wed, 27 Sep 2023 14:12:58 GMT and should not be manually modified.
+
+## 5.4.18
+Wed, 27 Sep 2023 14:12:58 GMT
+
+### Patches
+
+- remove explicit setting of overflow-y:auto on Modal component
 
 ## 5.4.17
 Mon, 25 Sep 2023 17:18:04 GMT

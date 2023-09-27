@@ -2,6 +2,20 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "5.4.18",
+      "tag": "pcln-modal_v5.4.18",
+      "date": "Wed, 27 Sep 2023 14:12:58 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "remove explicit setting of overflow-y:auto on Modal component",
+            "author": "Huzefa Kagdi <huzefa.kagdi@priceline.com>",
+            "commit": "0a8aa2bac51c3a1b1f3118134540530aa66b2761"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.17",
       "tag": "pcln-modal_v5.4.17",
       "date": "Mon, 25 Sep 2023 17:18:04 GMT",
