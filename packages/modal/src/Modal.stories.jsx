@@ -1,8 +1,7 @@
 import { action } from '@storybook/addon-actions'
-import { Box, Button, Text } from 'pcln-design-system'
+import { Box, Button, Accordion, Text } from 'pcln-design-system'
 import { Menu, MenuItem } from 'pcln-menu'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import { Modal, ModalHeader, ScrollLock, SmallModalHeader } from '../src'
 import { currencies } from './mockData'
@@ -15,50 +14,32 @@ const CUSTOM_ANIMATION = (transitionState) => `
   transition: transform 0.3s linear;
   ${transitionState === 'entered' ? `transform: translateY(0%);` : ''}
 `
-
-class ModalStory extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isOpen: props.isOpen,
+function ModalStory(props) {
+  const [isOpen, setIsOpen] = useState(props.isOpen)
+  const scrollLock = useRef(new ScrollLock())
+  function onClose() {
+    setIsOpen(false)
+    if (props.lock) {
+      scrollLock.current.off()
     }
-    this.scrollLock = new ScrollLock()
   }
-
-  static propTypes = {
-    isOpen: PropTypes.bool,
-    lock: PropTypes.bool,
-  }
-
-  render() {
-    return (
-      <div style={{ height: '1500px' }}>
-        <Button
-          onClick={() => {
-            if (this.props.lock) {
-              this.scrollLock.on()
-            }
-            this.setState({ isOpen: true })
-          }}
-        >
-          Open
-        </Button>
-        <StyledModal
-          ariaLabel='Storybook modal.'
-          isOpen={this.state.isOpen}
-          onClose={() => {
-            this.setState({ isOpen: false })
-            if (this.props.lock) {
-              this.scrollLock.off()
-            }
-          }}
-          {...this.props}
-        >
-          <div style={{ height: '1000px' }}>Content with 1000px height</div>
-        </StyledModal>
-      </div>
-    )
-  }
+  return (
+    <div style={{ height: '1500px' }}>
+      <Button
+        onClick={() => {
+          if (props.lock) {
+            scrollLock.current.on()
+          }
+          setIsOpen(true)
+        }}
+      >
+        Open
+      </Button>
+      <StyledModal ariaLabel='Storybook modal.' isOpen={isOpen} onClose={onClose} {...props}>
+        <div style={{ height: '1000px' }}>Content with 1000px height</div>
+      </StyledModal>
+    </div>
+  )
 }
 
 export default {
@@ -115,6 +96,29 @@ export const WithSmallModalHeaderAndWhiteBackgroundModalHeaderWithSetTextStyle =
 
 export const WithOverflow = () => (
   <ModalStory header={<SmallModalHeader />} width={['80vw', '400px', '500px']} enableOverflow />
+)
+
+const accordionItems = [
+  {
+    headerLabel: (
+      <>
+        <Text>Header Label First Item</Text>
+      </>
+    ),
+    content: (
+      <>
+        <Text>I am some content</Text>
+        <Text>I am some content</Text>
+        <Text>I am some content</Text>
+      </>
+    ),
+    value: 'item-1',
+  },
+]
+export const WithOverflowForElementsRenderedInsideTheModal = () => (
+  <StyledModal ariaLabel='Storybook modal.' isOpen={true} height='100px' enableOverflow>
+    <Accordion items={accordionItems} />
+  </StyledModal>
 )
 
 export const WithOverflowAndDropdown = () => (
