@@ -70,7 +70,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 }
 
 .c9 {
-  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -461,7 +460,7 @@ exports[`FormField renders 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c2 {
+.c3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -631,7 +630,7 @@ exports[`FormField renders with Icon 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c6 {
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -823,7 +822,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c6 {
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
