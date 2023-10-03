@@ -461,8 +461,7 @@ exports[`FormField renders 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c3 {
-  position: relative;
+.c2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -632,8 +631,7 @@ exports[`FormField renders with Icon 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c7 {
-  position: relative;
+.c6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -825,8 +823,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c7 {
-  position: relative;
+.c6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

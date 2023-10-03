@@ -2,7 +2,6 @@
 
 exports[`Input it renders 1`] = `
 .c0 {
-  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -78,7 +77,6 @@ exports[`Input it renders 1`] = `
 
 exports[`Input it renders an input element with a really large padding and margin 1`] = `
 .c0 {
-  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -156,7 +154,6 @@ exports[`Input it renders an input element with a really large padding and margi
 
 exports[`Input it renders an input element with a red border with a color prop is passed 1`] = `
 .c0 {
-  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -233,7 +230,6 @@ exports[`Input it renders an input element with a red border with a color prop i
 
 exports[`Input it renders an input element with large text 1`] = `
 .c0 {
-  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

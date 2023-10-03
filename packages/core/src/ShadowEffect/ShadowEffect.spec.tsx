@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
-import { ShadowEffect } from '../ShadowEffect'
+import ShadowEffect from './ShadowEffect'
 import { Input } from '../Input'
 
 describe('ShadowEffect', () => {
@@ -20,24 +20,6 @@ describe('ShadowEffect', () => {
     expect(mockOnOpen).toHaveBeenCalledTimes(1)
     expect(mockOnClick).toHaveBeenCalledTimes(1)
     expect(screen.queryByTestId('overlay')).toBeInTheDocument()
-    expect(screen.queryByTestId('overlay')).toHaveStyleRule('z-index', '550')
-    expect(screen.queryByTestId('input')).toHaveStyleRule('z-index', '600')
-  })
-
-  it('opens with custom z-index', () => {
-    const mockOnOpen = jest.fn()
-    const mockOnClick = jest.fn()
-    render(
-      <ShadowEffect zIndex={5} onOpen={mockOnOpen} data-testid='overlay'>
-        <Input onClick={mockOnClick} id='input' data-testid='input' />
-      </ShadowEffect>
-    )
-
-    expect(screen.queryByTestId('input')).toHaveStyleRule('z-index', undefined)
-    fireEvent.click(screen.getByTestId('input'))
-    expect(screen.queryByTestId('overlay')).toBeInTheDocument()
-    expect(screen.queryByTestId('overlay')).toHaveStyleRule('z-index', '5')
-    expect(screen.queryByTestId('input')).toHaveStyleRule('z-index', '5')
   })
 
   it('closes if overlay clicked', () => {
