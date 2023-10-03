@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Revert changes from https://github.com/priceline/design-system/pull/1260",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
