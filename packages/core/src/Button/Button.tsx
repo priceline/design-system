@@ -16,6 +16,7 @@ import {
 } from 'styled-system'
 
 import { Flex } from '../Flex'
+import { IFlexProps } from '../Flex'
 
 import {
   applySizes,
@@ -198,7 +199,7 @@ export interface IButtonProps
   autoFocus?: boolean
   IconLeft?: React.Component
   IconRight?: React.Component
-  flexProps?: object
+  flexProps?: IFlexProps
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
   onMouseEnter?: (unknown) => unknown
