@@ -215,6 +215,19 @@ export const InputVariation: ButtonStory = {
   ),
 }
 
+export const FlexProps: ButtonStory = {
+  render: () => (
+    <StoryStage>
+      <Button width={200} variation='fill' flexProps={{ justifyContent: 'left' }}>
+        Left Justify
+      </Button>
+      <Button width={200} variation='fill' flexProps={{ justifyContent: 'right' }}>
+        Right Justify
+      </Button>
+    </StoryStage>
+  ),
+}
+
 const meta: Meta<typeof Button> = {
   title: 'Actions/Button',
   component: Button,

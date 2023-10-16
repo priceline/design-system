@@ -198,6 +198,7 @@ export interface IButtonProps
   autoFocus?: boolean
   IconLeft?: React.Component
   IconRight?: React.Component
+  flexProps?: object
   onClick?: (unknown) => unknown
   onFocus?: (unknown) => unknown
   onMouseEnter?: (unknown) => unknown
@@ -330,14 +331,14 @@ const ButtonIcon = ({ Component, ...props }) => {
 
 const Button = React.forwardRef((props: IButtonProps, ref) => {
   const { children, ...restProps } = props
-  const { IconLeft, IconRight, size = 'medium' } = props
+  const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props
   const hasChildren = React.Children.toArray(children).length > 0
   const sizeIndex = Array.isArray(size) ? size[0] : size
   const iconSize = iconButtonSizes?.[sizeIndex] ?? 24
 
   return (
     <StyledButton {...restProps} hasChildren={hasChildren} ref={ref}>
-      <Flex alignItems='center' justifyContent='center'>
+      <Flex alignItems='center' justifyContent='center' {...flexProps}>
         <ButtonIcon Component={IconLeft} size={iconSize} mr={children ? 2 : 0} />
         {children}
         <ButtonIcon Component={IconRight} size={iconSize} ml={children ? 2 : 0} />
