@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 25 Sep 2023 17:18:04 GMT and should not be manually modified.
+This log was last generated on Mon, 16 Oct 2023 17:31:18 GMT and should not be manually modified.
+
+## 5.25.0
+Mon, 16 Oct 2023 17:31:18 GMT
+
+### Minor changes
+
+- Button: add flexProps prop to override any styling to that child component
 
 ## 5.24.2
 Mon, 25 Sep 2023 17:18:04 GMT

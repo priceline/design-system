@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.25.0",
+      "tag": "pcln-design-system_v5.25.0",
+      "date": "Mon, 16 Oct 2023 17:31:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Button: add flexProps prop to override any styling to that child component",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "9474cf4c7f81d98f3b9d4e2eb64755038a711c7f"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.24.2",
       "tag": "pcln-design-system_v5.24.2",
       "date": "Mon, 25 Sep 2023 17:18:04 GMT",
