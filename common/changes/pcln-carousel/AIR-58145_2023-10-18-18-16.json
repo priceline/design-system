@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Give options to a native buttons's margin",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
