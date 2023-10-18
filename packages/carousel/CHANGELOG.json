@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.5.21",
+      "tag": "pcln-carousel_v2.5.21",
+      "date": "Wed, 18 Oct 2023 18:47:38 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Give options to a native buttons's margin",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "9267f6c5ff8e3ddc00c7c392dde5fa6d287fe370"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.5.20",
       "tag": "pcln-carousel_v2.5.20",
       "date": "Mon, 16 Oct 2023 17:31:18 GMT",
