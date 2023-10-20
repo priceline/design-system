@@ -61,6 +61,7 @@ export const Carousel = ({
   onSlideKeyDown = () => {},
   mobileVisibleSlides,
   displayArrowsMobile,
+  buttonSize = '60px',
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -100,8 +101,14 @@ export const Carousel = ({
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
-            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} />
-            <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} />
+            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} buttonSize={buttonSize} />
+            <ArrowButton
+              type='next'
+              position='top'
+              ml={3}
+              setPosition={arrowsPosition}
+              buttonSize={buttonSize}
+            />
           </Flex>
         ) : null}
         <Relative>
@@ -115,11 +122,12 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
-              ml={sideButtonMargin}
+              ml='-30px'
               pl={slideSpacing}
               type='prev'
               position='side'
               setPosition={arrowsPosition}
+              buttonSize={buttonSize}
             />
           )}
           <Slider>
@@ -159,11 +167,12 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
-              mr={sideButtonMargin}
+              mr='-30px'
               pr={slideSpacing}
               type='next'
               position='side'
               setPosition={arrowsPosition}
+              buttonSize={buttonSize}
             />
           )}
         </Relative>
@@ -232,4 +241,6 @@ Carousel.propTypes = {
   mobileVisibleSlides: PropTypes.array,
   /** Use the desktop carousel for mobile */
   displayArrowsMobile: PropTypes.bool,
+  /** same value used for button width and button height */
+  buttonSize: PropTypes.string,
 }
