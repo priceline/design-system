@@ -241,6 +241,6 @@ Carousel.propTypes = {
   mobileVisibleSlides: PropTypes.array,
   /** Use the desktop carousel for mobile */
   displayArrowsMobile: PropTypes.bool,
-  /** same value used for button width and button height */
+  /** Set the height and width of the forward and back buttons to this value, e.g. "30px" */
   buttonSize: PropTypes.string,
 }
