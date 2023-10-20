@@ -2,6 +2,28 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.5.22",
+      "tag": "pcln-carousel_v2.5.22",
+      "date": "Fri, 20 Oct 2023 16:38:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added adjustable buttons size to a caruosel",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "7138c1b946fca26895b4f6f83def1b77bc6b1b32"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.12.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^5.12.0` to `^5.12.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.5.21",
       "tag": "pcln-carousel_v2.5.21",
       "date": "Wed, 18 Oct 2023 18:47:38 GMT",

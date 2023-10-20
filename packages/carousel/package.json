@@ -1,6 +1,6 @@
 {
   "name": "pcln-carousel",
-  "version": "2.5.21",
+  "version": "2.5.22",
   "description": "Priceline Design System Carousel Component",
   "homepage": "https://github.com/priceline/design-system#readme",
   "bugs": {
@@ -76,7 +76,7 @@
   },
   "peerDependencies": {
     "pcln-design-system": "^5.25.0",
-    "pcln-icons": "^5.12.0",
+    "pcln-icons": "^5.12.1",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6"

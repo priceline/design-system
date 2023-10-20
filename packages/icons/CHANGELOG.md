@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 15 Sep 2023 20:57:00 GMT and should not be manually modified.
+This log was last generated on Fri, 20 Oct 2023 16:38:34 GMT and should not be manually modified.
+
+## 5.12.1
+Fri, 20 Oct 2023 16:38:34 GMT
+
+### Patches
+
+- lint fix
 
 ## 5.12.0
 Fri, 15 Sep 2023 20:57:00 GMT

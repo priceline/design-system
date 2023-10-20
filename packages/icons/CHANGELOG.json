@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.12.1",
+      "tag": "pcln-icons_v5.12.1",
+      "date": "Fri, 20 Oct 2023 16:38:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "lint fix",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "7138c1b946fca26895b4f6f83def1b77bc6b1b32"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.12.0",
       "tag": "pcln-icons_v5.12.0",
       "date": "Fri, 15 Sep 2023 20:57:00 GMT",

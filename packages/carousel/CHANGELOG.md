@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Wed, 18 Oct 2023 18:47:38 GMT and should not be manually modified.
+This log was last generated on Fri, 20 Oct 2023 16:38:34 GMT and should not be manually modified.
+
+## 2.5.22
+Fri, 20 Oct 2023 16:38:34 GMT
+
+### Patches
+
+- Added adjustable buttons size to a caruosel
 
 ## 2.5.21
 Wed, 18 Oct 2023 18:47:38 GMT
