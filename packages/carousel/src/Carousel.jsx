@@ -61,6 +61,7 @@ export const Carousel = ({
   onSlideKeyDown = () => {},
   mobileVisibleSlides,
   displayArrowsMobile,
+  buttonSize = '60px',
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -100,8 +101,14 @@ export const Carousel = ({
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
-            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} />
-            <ArrowButton type='next' position='top' ml={3} setPosition={arrowsPosition} />
+            <ArrowButton type='prev' position='top' setPosition={arrowsPosition} buttonSize={buttonSize} />
+            <ArrowButton
+              type='next'
+              position='top'
+              ml={3}
+              setPosition={arrowsPosition}
+              buttonSize={buttonSize}
+            />
           </Flex>
         ) : null}
         <Relative>
@@ -120,6 +127,7 @@ export const Carousel = ({
               type='prev'
               position='side'
               setPosition={arrowsPosition}
+              buttonSize={buttonSize}
             />
           )}
           <Slider>
@@ -164,6 +172,7 @@ export const Carousel = ({
               type='next'
               position='side'
               setPosition={arrowsPosition}
+              buttonSize={buttonSize}
             />
           )}
         </Relative>
@@ -232,4 +241,6 @@ Carousel.propTypes = {
   mobileVisibleSlides: PropTypes.array,
   /** Use the desktop carousel for mobile */
   displayArrowsMobile: PropTypes.bool,
+  /** Set the height and width of the forward and back buttons to this value, e.g. "30px" */
+  buttonSize: PropTypes.string,
 }
