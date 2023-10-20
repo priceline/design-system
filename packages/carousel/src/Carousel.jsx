@@ -122,7 +122,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
-              ml='-30px'
+              ml={sideButtonMargin}
               pl={slideSpacing}
               type='prev'
               position='side'
@@ -167,7 +167,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
-              mr='-30px'
+              mr={sideButtonMargin}
               pr={slideSpacing}
               type='next'
               position='side'
