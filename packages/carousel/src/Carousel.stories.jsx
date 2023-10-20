@@ -36,7 +36,7 @@ export default {
       max: SLIDE_COUNT,
     },
     buttonSize: {
-      control: { type: 'string' }
+      control: 'text'
     },
     naturalSlideHeight: {
       control: { type: 'number' },
@@ -118,8 +118,8 @@ Basic.args = {
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
   onSlideChange: action('Slide Change'),
-  buttonSize: '40px',
-  sideButtonMargin: '-20px'
+  buttonSize: '60px',
+  sideButtonMargin: '-30px'
 }
 Basic.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
