@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Added option to hide side arrows and reveal on hover state",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
