@@ -52,6 +52,7 @@ const topBottomStyles = (props) =>
     : null
 
 const Wrapper = styled(Box)`
+  transition: opacity 200ms;
   ${sidePositionStyles}
   & > button {
     ${defaultStyles}

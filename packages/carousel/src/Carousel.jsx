@@ -62,6 +62,7 @@ export const Carousel = ({
   mobileVisibleSlides,
   displayArrowsMobile,
   buttonSize = '60px',
+  showArrowsOnHover = false,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -83,7 +84,7 @@ export const Carousel = ({
   }
 
   return (
-    <CarouselWrapper>
+    <CarouselWrapper arrowsPosition={showArrowsOnHover && arrowsPosition}>
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
@@ -243,4 +244,6 @@ Carousel.propTypes = {
   displayArrowsMobile: PropTypes.bool,
   /** Set the height and width of the forward and back buttons to this value, e.g. "30px" */
   buttonSize: PropTypes.string,
+  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  showArrowsOnHover: PropTypes.bool,
 }

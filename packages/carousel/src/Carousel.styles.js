@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Wrapper } from './ArrowButton/ArrowButton.styles'
 
 export const CarouselWrapper = styled.div`
   .buttonBack___1mlaL,
@@ -150,5 +151,20 @@ export const CarouselWrapper = styled.div`
     bottom: 0;
     left: 0;
     background-color: #f4f4f4;
+  }
+
+  & > .carousel {
+    ${(props) =>
+      props.arrowsPosition === 'side' &&
+      css`
+        ${Wrapper} {
+          opacity: 0;
+        }
+        &:hover {
+          ${Wrapper} {
+            opacity: 1;
+          }
+        }
+      `}
   }
 `
