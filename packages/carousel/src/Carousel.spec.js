@@ -83,4 +83,17 @@ describe('Carousel', () => {
     )
     expect(queryByTestId('slide-box')).not.toBeInTheDocument()
   })
+
+  it('Should render arrow button with opacity 0', () => {
+    window.innerWidth = 1400
+    const { getByTestId } = render(
+      <Carousel layout='50-50' arrowsPosition='side' currentSlide={1} showArrowsOnHover>
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    const nextArrow = getByTestId('next-side')
+    expect(nextArrow).toHaveStyleRule('opacity', '0')
+  })
 })
