@@ -133,7 +133,7 @@ Basic.play = async ({ canvasElement }) => {
 
 export const ShowArrowsOnHover = BasicTemplate.bind({})
 ShowArrowsOnHover.args = {
-  visibleSlides: 3.2,
+  visibleSlides: 3.15,
   showArrowsOnHover: true,
 }
 
