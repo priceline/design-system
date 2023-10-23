@@ -84,7 +84,7 @@ export const Carousel = ({
   }
 
   return (
-    <CarouselWrapper arrowsPosition={showArrowsOnHover && arrowsPosition}>
+    <CarouselWrapper>
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
@@ -120,6 +120,7 @@ export const Carousel = ({
               type: 'prev',
               position: 'side',
               setPosition: arrowsPosition,
+              showArrowsOnHover,
             })
           ) : (
             <ArrowButton
@@ -129,6 +130,7 @@ export const Carousel = ({
               position='side'
               setPosition={arrowsPosition}
               buttonSize={buttonSize}
+              showArrowsOnHover={showArrowsOnHover}
             />
           )}
           <Slider>
@@ -165,6 +167,7 @@ export const Carousel = ({
               type: 'next',
               position: 'side',
               setPosition: arrowsPosition,
+              showArrowsOnHover,
             })
           ) : (
             <ArrowButton
@@ -174,6 +177,7 @@ export const Carousel = ({
               position='side'
               setPosition={arrowsPosition}
               buttonSize={buttonSize}
+              showArrowsOnHover={showArrowsOnHover}
             />
           )}
         </Relative>

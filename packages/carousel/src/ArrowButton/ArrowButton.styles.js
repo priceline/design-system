@@ -1,5 +1,7 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { themeGet } from '@styled-system/theme-get'
 import { getPaletteColor, Box } from 'pcln-design-system'
+import { CarouselWrapper } from '../Carousel.styles'
 
 const defaultStyles = (props) => `
   padding: 0;
@@ -16,13 +18,20 @@ const defaultStyles = (props) => `
 
 const sidePositionStyles = (props) =>
   props.position === 'side'
-    ? `
-    ${props.type == 'prev' ? 'left' : 'right'}: 0px;
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-    z-index: 2;
-    `
+    ? css`
+        ${props.type == 'prev' ? 'left' : 'right'}: 0px;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        z-index: 2;
+        ${props.showArrowsOnHover &&
+        css`
+          opacity: 0;
+          ${CarouselWrapper} > .carousel:hover & {
+            opacity: 1;
+          }
+        `}
+      `
     : null
 
 const sideStyles = (props) =>
@@ -52,7 +61,7 @@ const topBottomStyles = (props) =>
     : null
 
 const Wrapper = styled(Box)`
-  transition: opacity 200ms;
+  transition: opacity ${themeGet('duration.normal')};
   ${sidePositionStyles}
   & > button {
     ${defaultStyles}

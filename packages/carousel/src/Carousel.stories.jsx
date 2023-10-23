@@ -131,6 +131,12 @@ Basic.play = async ({ canvasElement }) => {
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 
+export const ShowArrowsOnHover = BasicTemplate.bind({})
+ShowArrowsOnHover.args = {
+  visibleSlides: 3.2,
+  showArrowsOnHover: true,
+}
+
 const VerticalTemplate = (args) => (
   <Flex width='300px' height='500px'>
     <Carousel {...args}>
