@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Expand allowed peerDeps versions for framer-motion to fix issue with Webpack builds",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
