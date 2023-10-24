@@ -36,7 +36,11 @@ export default {
       max: SLIDE_COUNT,
     },
     buttonSize: {
-      control: 'text'
+      control: 'text',
+    },
+    showArrowsOnHover: {
+      defaultValue: false,
+      control: { type: 'boolean' },
     },
     naturalSlideHeight: {
       control: { type: 'number' },
@@ -119,12 +123,18 @@ Basic.args = {
   arrowPositions: 'bottom',
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
-  sideButtonMargin: '-30px'
+  sideButtonMargin: '-30px',
 }
 Basic.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
 
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
+}
+
+export const ShowArrowsOnHover = BasicTemplate.bind({})
+ShowArrowsOnHover.args = {
+  visibleSlides: 3.15,
+  showArrowsOnHover: true,
 }
 
 const VerticalTemplate = (args) => (

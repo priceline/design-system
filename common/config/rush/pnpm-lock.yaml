@@ -190,6 +190,9 @@ importers:
 
   ../../packages/carousel:
     dependencies:
+      '@styled-system/theme-get':
+        specifier: ^5.1.2
+        version: 5.1.2
       lodash.debounce:
         specifier: ^4.0.8
         version: 4.0.8

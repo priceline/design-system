@@ -62,6 +62,7 @@ export const Carousel = ({
   mobileVisibleSlides,
   displayArrowsMobile,
   buttonSize = '60px',
+  showArrowsOnHover = false,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -119,6 +120,7 @@ export const Carousel = ({
               type: 'prev',
               position: 'side',
               setPosition: arrowsPosition,
+              showArrowsOnHover,
             })
           ) : (
             <ArrowButton
@@ -128,6 +130,7 @@ export const Carousel = ({
               position='side'
               setPosition={arrowsPosition}
               buttonSize={buttonSize}
+              showArrowsOnHover={showArrowsOnHover}
             />
           )}
           <Slider>
@@ -164,6 +167,7 @@ export const Carousel = ({
               type: 'next',
               position: 'side',
               setPosition: arrowsPosition,
+              showArrowsOnHover,
             })
           ) : (
             <ArrowButton
@@ -173,6 +177,7 @@ export const Carousel = ({
               position='side'
               setPosition={arrowsPosition}
               buttonSize={buttonSize}
+              showArrowsOnHover={showArrowsOnHover}
             />
           )}
         </Relative>
@@ -243,4 +248,6 @@ Carousel.propTypes = {
   displayArrowsMobile: PropTypes.bool,
   /** Set the height and width of the forward and back buttons to this value, e.g. "30px" */
   buttonSize: PropTypes.string,
+  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  showArrowsOnHover: PropTypes.bool,
 }
