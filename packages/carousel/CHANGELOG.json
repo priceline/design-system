@@ -2,6 +2,28 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.5.23",
+      "tag": "pcln-carousel_v2.5.23",
+      "date": "Tue, 31 Oct 2023 16:34:17 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added option to hide side arrows and reveal on hover state",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "505387f9ab44a4fabe200642783fe8b7d4c9dce0"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.25.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.25.0` to `^5.25.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.5.22",
       "tag": "pcln-carousel_v2.5.22",
       "date": "Fri, 20 Oct 2023 16:38:34 GMT",

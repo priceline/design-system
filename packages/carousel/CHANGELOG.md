@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Fri, 20 Oct 2023 16:38:34 GMT and should not be manually modified.
+This log was last generated on Tue, 31 Oct 2023 16:34:17 GMT and should not be manually modified.
+
+## 2.5.23
+Tue, 31 Oct 2023 16:34:17 GMT
+
+### Patches
+
+- Added option to hide side arrows and reveal on hover state
 
 ## 2.5.22
 Fri, 20 Oct 2023 16:38:34 GMT

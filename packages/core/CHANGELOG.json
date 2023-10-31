@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.25.1",
+      "tag": "pcln-design-system_v5.25.1",
+      "date": "Tue, 31 Oct 2023 16:34:17 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add props/features to CloseButton",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "5456805f1c6ed2333ad6cb93728dfbb601be477c"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.25.0",
       "tag": "pcln-design-system_v5.25.0",
       "date": "Mon, 16 Oct 2023 17:31:18 GMT",

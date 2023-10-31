@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 16 Oct 2023 17:31:18 GMT and should not be manually modified.
+This log was last generated on Tue, 31 Oct 2023 16:34:17 GMT and should not be manually modified.
+
+## 5.25.1
+Tue, 31 Oct 2023 16:34:17 GMT
+
+### Patches
+
+- add props/features to CloseButton
 
 ## 5.25.0
 Mon, 16 Oct 2023 17:31:18 GMT

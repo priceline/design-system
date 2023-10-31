@@ -2,6 +2,31 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "5.4.21",
+      "tag": "pcln-modal_v5.4.21",
+      "date": "Tue, 31 Oct 2023 16:34:17 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update snapshots",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "5456805f1c6ed2333ad6cb93728dfbb601be477c"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.25.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `5.3.24`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.25.0` to `^5.25.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.4.20",
       "tag": "pcln-modal_v5.4.20",
       "date": "Fri, 20 Oct 2023 16:38:34 GMT",
