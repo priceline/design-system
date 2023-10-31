@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 31 Oct 2023 16:34:17 GMT and should not be manually modified.
+This log was last generated on Tue, 31 Oct 2023 23:55:47 GMT and should not be manually modified.
+
+## 5.26.0
+Tue, 31 Oct 2023 23:55:47 GMT
+
+### Minor changes
+
+- Accordion: add headerDividerColor prop to allow divider between steps
 
 ## 5.25.1
 Tue, 31 Oct 2023 16:34:17 GMT

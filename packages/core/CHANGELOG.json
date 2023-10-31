@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.26.0",
+      "tag": "pcln-design-system_v5.26.0",
+      "date": "Tue, 31 Oct 2023 23:55:47 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Accordion: add headerDividerColor prop to allow divider between steps",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "8852c79b3bb355cb684918aa116deb6fd696ea9f"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.25.1",
       "tag": "pcln-design-system_v5.25.1",
       "date": "Tue, 31 Oct 2023 16:34:17 GMT",
