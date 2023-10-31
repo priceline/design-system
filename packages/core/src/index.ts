@@ -3,6 +3,7 @@ import * as storybookArgs from './storybook/args'
 export type { IButtonProps } from './Button'
 export type { IDialogProps } from './Dialog'
 export type { IGridProps } from './Grid'
+export type { ICloseButtonProps } from './CloseButton'
 
 export { Absolute } from './Absolute'
 export { Accordion } from './Accordion'
