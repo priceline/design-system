@@ -85,6 +85,7 @@ export const Ladder = {
   render: (args) => (
     <Accordion
       {...args}
+      headerDividerColor='border.base'
       items={[
         {
           ...items[0],
