@@ -20,6 +20,7 @@ export interface IAccordion extends SpaceProps {
   type?: string
   variation?: string
   isExternallyControlled?: boolean
+  headerDividerColor?: string
 }
 
 export interface IAccordionItem {
@@ -38,6 +39,7 @@ export const Accordion = ({
   type = 'multiple',
   variation = 'default',
   p = '12px',
+  headerDividerColor,
   ...props
 }: IAccordion) => {
   return items ? (
@@ -54,7 +56,7 @@ export const Accordion = ({
         isolation: 'isolate',
       }}
     >
-      {items.map((child: IAccordionItem) => (
+      {items.map((child: IAccordionItem, index) => (
         <RadixAccordion.Item key={child.value} asChild value={child.value}>
           <StyledItem
             variation={variation}
@@ -63,6 +65,7 @@ export const Accordion = ({
             marginBottom='12px'
             headerBg={child.headerBg}
             data-testid={`styled-item-${child.value}`}
+            headerDividerColor={index > 0 && headerDividerColor}
           >
             <StyledTrigger {...props} p={p} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>

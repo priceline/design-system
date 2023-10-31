@@ -119,7 +119,13 @@ export const IconContainer = styled(Box)`
   }
 `
 
-export const StyledItem = styled(Box)`
+export interface IStyledItem {
+  variation: string
+  headerBg?: string
+  headerDividerColor?: string
+}
+
+export const StyledItem = styled(Box)<IStyledItem>`
   box-shadow: ${(props) => (props.variation === 'card' ? themeGet('shadows.sm') : '')};
   ${(props) =>
     props.variation === 'default' ? `background-color: ${getPaletteColor('background.light')(props)};` : ''}
@@ -131,6 +137,11 @@ export const StyledItem = styled(Box)`
   ${(props) =>
     props.variation === 'ladder'
       ? `background-color: ${getPaletteColor(props.headerBg || 'background.light')(props)};
+        ${
+          props.headerDividerColor
+            ? `border-top: solid ${getPaletteColor(props.headerDividerColor)(props)} 1px;`
+            : ''
+        }
         border-radius: 0px; margin-bottom: 0px;
         `
       : ''}
