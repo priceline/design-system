@@ -45,4 +45,5 @@ function ChatHeader({ children, onClose, onMinimize }: IChatHeader) {
   )
 }
 
+export { ChatHeader }
 export default ChatHeader

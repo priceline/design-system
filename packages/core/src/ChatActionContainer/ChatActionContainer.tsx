@@ -4,7 +4,9 @@
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 import themeGet from '@styled-system/theme-get'
-import { Button, Flex, Grid } from '../'
+import { Button } from '../Button'
+import { Flex } from '../Flex'
+import { Grid } from '../Grid'
 
 const GappedFlex = styled(Flex)`
   gap: ${themeGet('space.2')};
@@ -43,4 +45,4 @@ function ChatActionContainer({ chatActions }: IChatActionContainer) {
   }
 }
 
-export default ChatActionContainer
+export { ChatActionContainer }

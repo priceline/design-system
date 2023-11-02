@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add exports for Chat components",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

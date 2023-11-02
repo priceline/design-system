@@ -4,7 +4,7 @@
 import React from 'react'
 import { Flex } from '../Flex'
 import { Grid } from '../Grid'
-import { ChatMessage } from '../ChatMessage'
+import { ChatMessage } from '../ChatMessage/ChatMessage'
 
 export type ChatMessageVariation = 'initial' | 'incoming' | 'outgoing'
 
@@ -34,4 +34,5 @@ function ChatMessageContainer({ messageMaxWidth = '90%', messages }: IChatMessag
   )
 }
 
+export { ChatMessageContainer }
 export default ChatMessageContainer
