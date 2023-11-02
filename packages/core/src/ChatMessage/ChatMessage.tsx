@@ -87,4 +87,4 @@ function ChatMessage({
   )
 }
 
-export default ChatMessage
+export { ChatMessage }

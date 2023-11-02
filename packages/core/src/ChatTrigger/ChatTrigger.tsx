@@ -11,4 +11,5 @@ function ChatTrigger(props: IChatTrigger) {
   return <FloatingActionButton bottom={0} icon={Chat} right={0} {...props} />
 }
 
+export { ChatTrigger }
 export default ChatTrigger

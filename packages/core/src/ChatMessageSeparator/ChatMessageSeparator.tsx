@@ -24,4 +24,5 @@ function ChatMessageSeparator({ message }: IChatMessageSeparatorProps) {
   )
 }
 
+export { ChatMessageSeparator }
 export default ChatMessageSeparator
