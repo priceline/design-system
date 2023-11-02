@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.27.0",
+      "tag": "pcln-design-system_v5.27.0",
+      "date": "Thu, 02 Nov 2023 19:24:44 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add exports for Chat components",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "4b1e50174e6297729db4a1bc183c16d6c5109bbf"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.26.0",
       "tag": "pcln-design-system_v5.26.0",
       "date": "Tue, 31 Oct 2023 23:55:47 GMT",

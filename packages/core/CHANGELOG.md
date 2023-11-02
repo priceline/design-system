@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 31 Oct 2023 23:55:47 GMT and should not be manually modified.
+This log was last generated on Thu, 02 Nov 2023 19:24:44 GMT and should not be manually modified.
+
+## 5.27.0
+Thu, 02 Nov 2023 19:24:44 GMT
+
+### Minor changes
+
+- Add exports for Chat components
 
 ## 5.26.0
 Tue, 31 Oct 2023 23:55:47 GMT
