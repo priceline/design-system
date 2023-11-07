@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix close button position in Dialog",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

@@ -53,6 +53,7 @@ const FloatingCloseButton: (
   right: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
   margin: ${(props) => themeGet('space.3')(props)};
   padding: ${(props) => themeGet('space.2')(props)};
+  z-index: ${(props) => themeGet('zIndices.absolute')(props)};
   &:hover {
     background-color: ${(props) => themeGet('palette.background.lightest')(props)};
   }
@@ -168,6 +169,19 @@ export const DialogContent = ({
         borderRadius={borderRadius}
         {...(sheet ? animationStyles.sheet : animationStyles.default)}
       >
+        {showCloseButton && (
+          <Dialog.Close asChild>
+            <FloatingCloseButton
+              color='primary.base'
+              bgColor='background.lightest'
+              boxShadowSize='sm'
+              dialogSize={size}
+              sheet={sheet}
+              fullWidth={fullWidth}
+            />
+          </Dialog.Close>
+        )}
+
         <VisuallyHidden asChild>
           <Dialog.Title>{ariaTitle}</Dialog.Title>
         </VisuallyHidden>
@@ -192,19 +206,6 @@ export const DialogContent = ({
           )}
           {children}
         </DialogInnerContentWrapper>
-
-        {showCloseButton && (
-          <Dialog.Close asChild>
-            <FloatingCloseButton
-              color='primary.base'
-              bgColor='background.lightest'
-              boxShadowSize='sm'
-              dialogSize={size}
-              sheet={sheet}
-              fullWidth={fullWidth}
-            />
-          </Dialog.Close>
-        )}
       </DialogContentWrapper>
     </Dialog.Content>
   )
