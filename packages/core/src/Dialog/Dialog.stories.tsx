@@ -7,6 +7,7 @@ import React, { useState } from 'react'
 
 import { Box, Breadcrumbs, Button, Dialog, Grid, Text } from '..'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
+import { userEvent, within } from '@storybook/testing-library'
 
 type DialogStory = StoryObj<IDialogProps>
 
@@ -18,7 +19,16 @@ const exampleHeaderProps: Partial<IDialogProps> = {
 }
 
 export const Playground: DialogStory = {
-  render: (args) => <Dialog {...args} headerIcon={args.headerIcon && exampleHeaderProps.headerIcon} />,
+  render: (args) => (
+    <Box height='1000px'>
+      <Dialog {...args} headerIcon={args.headerIcon && exampleHeaderProps.headerIcon} />
+    </Box>
+  ),
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement)
+    const openButton = canvas.getByText('Open Dialog')
+    await userEvent.click(openButton)
+  },
 }
 
 export const WithHug: DialogStory = {
