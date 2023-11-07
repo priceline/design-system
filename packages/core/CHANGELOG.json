@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.27.1",
+      "tag": "pcln-design-system_v5.27.1",
+      "date": "Tue, 07 Nov 2023 22:14:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix close button position in Dialog",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "c75c2db2ab56472ef859314a9eebcaceaec946a4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.27.0",
       "tag": "pcln-design-system_v5.27.0",
       "date": "Thu, 02 Nov 2023 19:24:44 GMT",

@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 02 Nov 2023 19:24:44 GMT and should not be manually modified.
+This log was last generated on Tue, 07 Nov 2023 22:14:21 GMT and should not be manually modified.
+
+## 5.27.1
+Tue, 07 Nov 2023 22:14:21 GMT
+
+### Patches
+
+- Fix close button position in Dialog
 
 ## 5.27.0
 Thu, 02 Nov 2023 19:24:44 GMT
