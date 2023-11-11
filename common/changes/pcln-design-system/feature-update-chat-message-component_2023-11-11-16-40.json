@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "update ChatMessage accepts react node as child",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

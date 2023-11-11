@@ -43,6 +43,10 @@ export const InitialMessage: ChatMessageStory = {
   render: (args) => <ChatMessage {...args} variation='initial' />,
 }
 
+export const WithReactNodeMessage: ChatMessageStory = {
+  render: (args) => <ChatMessage {...args} variation='initial' message={<div>How can I help you?</div>} />,
+}
+
 export const IncomingMessage: ChatMessageStory = {
   render: (args) => <ChatMessage {...args} variation='incoming' />,
 }
