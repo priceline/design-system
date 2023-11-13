@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.27.2",
+      "tag": "pcln-design-system_v5.27.2",
+      "date": "Mon, 13 Nov 2023 19:10:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update ChatMessage accepts react node as child",
+            "author": "Chi Jin <jinchi2013@users.noreply.github.com>",
+            "commit": "a61ce6ed4a93cae2d3803ee5a23c66dbf2e945e3"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.27.1",
       "tag": "pcln-design-system_v5.27.1",
       "date": "Tue, 07 Nov 2023 22:14:21 GMT",
