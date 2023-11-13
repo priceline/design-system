@@ -41,7 +41,7 @@ export interface IChatMessage extends IFlexProps {
   footer?: React.ReactNode
   header?: React.ReactNode
   Icon?: React.FC<{ color?: string; size?: string }>
-  message: string
+  message: React.ReactNode
   variation: (typeof variationNames)[number]
 }
 
