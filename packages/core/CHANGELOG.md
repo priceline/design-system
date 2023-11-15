@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 13 Nov 2023 19:10:51 GMT and should not be manually modified.
+This log was last generated on Wed, 15 Nov 2023 16:54:32 GMT and should not be manually modified.
+
+## 5.27.3
+Wed, 15 Nov 2023 16:54:32 GMT
+
+### Patches
+
+- Add zIndex to Dialog
 
 ## 5.27.2
 Mon, 13 Nov 2023 19:10:51 GMT

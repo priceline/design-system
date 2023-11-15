@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.27.3",
+      "tag": "pcln-design-system_v5.27.3",
+      "date": "Wed, 15 Nov 2023 16:54:32 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add zIndex to Dialog",
+            "author": "Chi Jin <jinchi2013@users.noreply.github.com>",
+            "commit": "5214beba5cfc1fbb3ce129b23e87dc4f8988f4c7"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.27.2",
       "tag": "pcln-design-system_v5.27.2",
       "date": "Mon, 13 Nov 2023 19:10:51 GMT",
