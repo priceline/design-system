@@ -7,6 +7,7 @@ import themeGet from '@styled-system/theme-get'
 import { HTMLMotionProps, Transition, motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
+import { zIndex } from 'styled-system'
 
 export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
 export type DialogSize = (typeof dialogSizes)[number]
@@ -60,6 +61,7 @@ const FloatingCloseButton: (
 `
 
 const DialogOverlayWrapper = styled(motion.div)`
+  ${zIndex}
   position: fixed;
   inset: 0;
   display: grid;
@@ -81,9 +83,9 @@ const DialogContentWrapper = styled(motion.div)`
       ? `${themeGet('space.3')(props)} 0 0 0`
       : props.size === 'full'
       ? '0'
-      : `${themeGet('space.4')(props)} 
-         ${themeGet('space.3')(props)} 
-         ${themeGet('space.5')(props)} 
+      : `${themeGet('space.4')(props)}
+         ${themeGet('space.3')(props)}
+         ${themeGet('space.5')(props)}
          ${themeGet('space.3')(props)}`};
   border-radius: ${(props: IDialogProps) =>
     props.sheet
@@ -111,12 +113,17 @@ const DialogInnerContentWrapper = styled.div`
     props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
 `
 
-export const DialogOverlay = ({ scrimColor, sheet, children }: Partial<IDialogProps>) => {
+export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<IDialogProps>) => {
   return (
     <Dialog.Portal forceMount>
       <ThemeProvider>
         <Dialog.Overlay asChild forceMount>
-          <DialogOverlayWrapper scrimColor={scrimColor} sheet={sheet} {...animationStyles.overlay}>
+          <DialogOverlayWrapper
+            scrimColor={scrimColor}
+            sheet={sheet}
+            zIndex={zIndex}
+            {...animationStyles.overlay}
+          >
             {children}
           </DialogOverlayWrapper>
         </Dialog.Overlay>
@@ -140,6 +147,7 @@ export const DialogContent = ({
   sheet,
   showCloseButton,
   size,
+  zIndex,
   onOpenChange,
 }: IDialogProps) => {
   const headerSizeArray = [
@@ -167,6 +175,7 @@ export const DialogContent = ({
         sheet={sheet}
         fullWidth={fullWidth}
         borderRadius={borderRadius}
+        zIndex={zIndex}
         {...(sheet ? animationStyles.sheet : animationStyles.default)}
       >
         {showCloseButton && (

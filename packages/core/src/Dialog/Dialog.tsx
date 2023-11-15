@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion'
-import type { BorderRadius, ColorSchemes, PaletteColor } from '../theme'
+import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
 
@@ -25,6 +25,7 @@ export interface IDialogProps {
   showCloseButton?: boolean
   size?: DialogSize
   triggerNode?: React.ReactNode
+  zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
 }
 
@@ -47,6 +48,7 @@ const PclnDialog = ({
   showCloseButton = true,
   size = 'md',
   triggerNode,
+  zIndex = 'overlay',
   onOpenChange,
 }: IDialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
@@ -63,7 +65,7 @@ const PclnDialog = ({
       <Dialog.Trigger asChild>{triggerNode}</Dialog.Trigger>
       <AnimatePresence>
         {_open && (
-          <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet}>
+          <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet} zIndex={zIndex}>
             <DialogContent
               ariaDescription={ariaDescription}
               ariaTitle={ariaTitle}
