@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Added ability to render popover under a certain element",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
