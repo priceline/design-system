@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import styled, { ThemeConsumer } from 'styled-components'
@@ -58,12 +58,21 @@ function PopoverContent({
     [onCloseRequest]
   )
 
+  const [portalSelector, setPortalSelector] = useState(querySelectorPortal)
+
   useEffect(() => {
     window.addEventListener('keyup', handleKeyUp, false)
     return () => {
       window.removeEventListener('keyup', handleKeyUp, false)
     }
   }, [handleKeyUp])
+
+  // Fallback when cannot find an element
+  useLayoutEffect(() => {
+    if (!document.querySelector(portalSelector)) {
+      setPortalSelector('body')
+    }
+  }, [querySelectorPortal])
 
   const getBorderColorName = (color, borderColor) => {
     let borderColorName = borderColor
@@ -143,7 +152,7 @@ function PopoverContent({
       )}
     </>,
     // Append each instance of the Popover as portal directly to the body
-    document.querySelector(querySelectorPortal)
+    document.querySelector(portalSelector)
   )
 }
 
