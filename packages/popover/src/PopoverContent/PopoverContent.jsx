@@ -44,6 +44,7 @@ function PopoverContent({
   styles,
   width,
   zIndex,
+  querySelectorPortal,
   ...props
 }) {
   const handleKeyUp = useCallback(
@@ -142,7 +143,7 @@ function PopoverContent({
       )}
     </>,
     // Append each instance of the Popover as portal directly to the body
-    document.querySelector('body')
+    document.querySelector(querySelectorPortal)
   )
 }
 
@@ -164,6 +165,7 @@ PopoverContent.propTypes = {
   trapFocus: PropTypes.bool,
   hideArrow: PropTypes.bool,
   hideOverlay: PropTypes.bool,
+  querySelectorPortal: PropTypes.string,
 }
 
 PopoverContent.defaultProps = {
@@ -171,6 +173,7 @@ PopoverContent.defaultProps = {
   placement: 'top',
   zIndex: 102,
   width: 400,
+  querySelectorPortal: 'body',
 }
 
 export default PopoverContent
