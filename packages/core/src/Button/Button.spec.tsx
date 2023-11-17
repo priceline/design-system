@@ -331,7 +331,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('font-weight', '500')
         expect(button).toHaveStyleRule('line-height', '1.4')
         expect(button).toHaveStyleRule('padding', '0px')
-        expect(button).toHaveStyleRule('background-color', 'transparent')
+        expect(button).toHaveStyleRule('background-color', 'transparent !important')
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
