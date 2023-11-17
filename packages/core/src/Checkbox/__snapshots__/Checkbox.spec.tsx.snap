@@ -34,9 +34,13 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   position: relative;
   vertical-align: middle;
   padding: 2px;
-  cursor: default;
+  cursor: not-allowed;
   background-color: inherit;
   color: #c0cad5;
+}
+
+.c1 ~ * {
+  cursor: not-allowed;
 }
 
 .c1 svg {
@@ -70,7 +74,7 @@ exports[`Checkbox renders disabled with defaultChecked 1`] = `
   display: none;
 }
 
-.c1 > input:hover ~ svg[data-name='empty'] {
+.c1 > input:not([data-indeterminate='true']):hover ~ svg[data-name='empty'] {
   color: #c0cad5;
 }
 
@@ -229,9 +233,13 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   position: relative;
   vertical-align: middle;
   padding: 2px;
-  cursor: default;
+  cursor: not-allowed;
   background-color: inherit;
   color: #c0cad5;
+}
+
+.c1 ~ * {
+  cursor: not-allowed;
 }
 
 .c1 svg {
@@ -265,7 +273,7 @@ exports[`Checkbox renders disabled with disabled prop 1`] = `
   display: none;
 }
 
-.c1 > input:hover ~ svg[data-name='empty'] {
+.c1 > input:not([data-indeterminate='true']):hover ~ svg[data-name='empty'] {
   color: #c0cad5;
 }
 
@@ -459,7 +467,7 @@ exports[`Checkbox renders without the theme passed specifically 1`] = `
   display: none;
 }
 
-.c1 > input:hover ~ svg[data-name='empty'] {
+.c1 > input:not([data-indeterminate='true']):hover ~ svg[data-name='empty'] {
   color: #0068ef;
 }
 

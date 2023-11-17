@@ -86,7 +86,7 @@ const FilterExample: React.FC = () => {
   return (
     <>
       <Wrapper>
-        <StyledLabel htmlFor='all'>
+        <StyledLabel htmlFor='all' isCentered>
           <Checkbox
             id='all'
             onChange={handleFilterSelection}
@@ -96,15 +96,15 @@ const FilterExample: React.FC = () => {
           Cars
         </StyledLabel>
         <Box ml={2}>
-          <StyledLabel htmlFor='small'>
+          <StyledLabel htmlFor='small' isCentered>
             <Checkbox id='small' onChange={handleFilterSelection} checked={filterState.small} />
             Small
           </StyledLabel>
-          <StyledLabel htmlFor='medium'>
+          <StyledLabel htmlFor='medium' isCentered>
             <Checkbox id='medium' onChange={handleFilterSelection} checked={filterState.medium} />
             Medium
           </StyledLabel>
-          <StyledLabel htmlFor='large'>
+          <StyledLabel htmlFor='large' isCentered>
             <Checkbox id='large' onChange={handleFilterSelection} checked={filterState.large} />
             Large
           </StyledLabel>
@@ -118,42 +118,42 @@ export const CheckboxStates = () => {
   return (
     <div>
       <Wrapper>
-        <StyledLabel htmlFor='unchecked_box'>
+        <StyledLabel htmlFor='unchecked_box' isCentered>
           <Checkbox id='unchecked_box' onChange={checkAction} unselectedColor='text.light' />
           Unchecked by default
         </StyledLabel>
       </Wrapper>
 
       <Wrapper>
-        <StyledLabel htmlFor='checked_box'>
+        <StyledLabel htmlFor='checked_box' isCentered>
           <Checkbox id='checked_box' defaultChecked onChange={checkAction} />
           Checked by default
         </StyledLabel>
       </Wrapper>
 
       <Wrapper>
-        <StyledLabel htmlFor='disabled_box'>
+        <StyledLabel htmlFor='disabled_box' isCentered>
           <Checkbox id='disabled_box' disabled onChange={checkAction} />
           <Text.span color='border.base'>Disabled</Text.span>
         </StyledLabel>
       </Wrapper>
 
       <Wrapper>
-        <StyledLabel htmlFor='disabled_checked_box'>
+        <StyledLabel htmlFor='disabled_checked_box' isCentered>
           <Checkbox id='disabled_checked_box' disabled defaultChecked onChange={checkAction} />
           <Text.span color='border.base'>Disabled &amp; Checked</Text.span>
         </StyledLabel>
       </Wrapper>
 
       <Wrapper>
-        <StyledLabel htmlFor='indeterminate_box'>
+        <StyledLabel htmlFor='indeterminate_box' isCentered>
           <Checkbox id='indeterminate_box' indeterminate onChange={checkAction} />
           Initially indeterminate check box (clicking will checkmark it)
         </StyledLabel>
       </Wrapper>
 
       <Wrapper>
-        <StyledLabel htmlFor='indeterminate_checked_box'>
+        <StyledLabel htmlFor='indeterminate_checked_box' isCentered>
           <Checkbox id='indeterminate_checked_box' defaultChecked indeterminate onChange={checkAction} />
           Initially indeterminate check box (clicking will uncheck it)
         </StyledLabel>
@@ -169,7 +169,7 @@ export const CheckboxStates = () => {
             <legend>Fancy Form</legend>
 
             <Wrapper>
-              <StyledLabel fontSize='14px' htmlFor='form_checkbox'>
+              <StyledLabel fontSize='14px' htmlFor='form_checkbox' isCentered>
                 <Checkbox id='form_checkbox' size={30} onChange={checkAction} />
                 &nbsp;In This Form
               </StyledLabel>
@@ -191,29 +191,29 @@ export const CheckboxStates = () => {
 export const Color = () => (
   <div>
     <Wrapper>
-      <StyledLabel htmlFor='secondary_unchecked_box'>
+      <StyledLabel htmlFor='secondary_unchecked_box' isCentered>
         <Checkbox id='secondary_unchecked_box' onChange={checkAction} color='secondary' />
         Secondary color unchecked by default
       </StyledLabel>
-      <StyledLabel htmlFor='secondary_checked_box'>
+      <StyledLabel htmlFor='secondary_checked_box' isCentered>
         <Checkbox id='secondary_checked_box' defaultChecked onChange={checkAction} color='secondary' />
         Secondary color checked by default
       </StyledLabel>
-      <StyledLabel htmlFor='secondary_disabled_box'>
+      <StyledLabel htmlFor='secondary_disabled_box' isCentered>
         <Checkbox id='secondary_disabled_box' disabled onChange={checkAction} color='secondary' />
         Secondary color disabled
       </StyledLabel>
     </Wrapper>
     <Wrapper>
-      <StyledLabel htmlFor='error_unchecked_box'>
+      <StyledLabel htmlFor='error_unchecked_box' isCentered>
         <Checkbox id='error_unchecked_box' onChange={checkAction} color='error' />
         Error color unchecked by default
       </StyledLabel>
-      <StyledLabel htmlFor='error_checked_box'>
+      <StyledLabel htmlFor='error_checked_box' isCentered>
         <Checkbox id='error_checked_box' defaultChecked onChange={checkAction} color='error' />
         Error color checked by default
       </StyledLabel>
-      <StyledLabel htmlFor='error_disabled_box'>
+      <StyledLabel htmlFor='error_disabled_box' isCentered>
         <Checkbox id='error_disabled_box' disabled onChange={checkAction} color='error' />
         Error color disabled
       </StyledLabel>
@@ -232,7 +232,7 @@ export function ForwardRefs() {
           This example is for SC3
             <Button dsRef={e => this.btnRef = e}>Click me</Button>
         */}
-        <StyledLabel htmlFor='check'>
+        <StyledLabel htmlFor='check' isCentered>
           <Checkbox id='check' ref={dsRef} />
           Checkbox with ref
         </StyledLabel>

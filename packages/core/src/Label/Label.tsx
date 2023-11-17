@@ -62,9 +62,10 @@ export interface ILabelProps
     TextStyleProps,
     WidthProps,
     Partial<Omit<HTMLLabelElement, 'children'>> {
+  autoHide?: boolean
   children?: React.ReactNode | string
   color?: string
-  autoHide?: boolean
+  isCentered?: boolean
   nowrap?: boolean
   for?: string
   onClick?: (evt: unknown) => void
@@ -80,6 +81,13 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
   ${(props) => (props.onClick ? 'cursor: pointer;' : '')}
+  ${(props) =>
+    props.isCentered
+      ? `
+    display: flex;
+    align-items: center;
+  `
+      : ''}
 
   ${applyVariations('Label')}
 
