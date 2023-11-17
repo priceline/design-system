@@ -282,9 +282,39 @@ const OpenAndCloseTemplate = (args) => (
   </Popover>
 )
 
+const OpenAndCloseTemplate2 = (args) => (
+  <>
+    <div id='popover-portal'>Should render here</div>
+    <Popover
+      querySelectorPortal='#popover-portal'
+      {...args}
+      renderContent={({ handleClose }) => (
+        <Box p={2}>
+          <p>Hello there!</p>
+          <Button onClick={handleClose}>Click me to close!</Button>
+        </Box>
+      )}
+    >
+      <Button>Open popover</Button>
+    </Popover>
+  </>
+)
+
 export const OpensOnClick = {
   name: 'Tests / Opens on click',
   render: OpenAndCloseTemplate.bind({}),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const triggerBtn = canvas.getByText('Open popover')
+    expect(triggerBtn).toBeInTheDocument()
+    await userEvent.click(triggerBtn)
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+  },
+}
+
+export const RendersOnSpecificArea = {
+  name: 'Renders on specific area',
+  render: OpenAndCloseTemplate2.bind({}),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const triggerBtn = canvas.getByText('Open popover')
