@@ -86,10 +86,13 @@ const variations = {
     line-height: ${(props) => props.theme.lineHeights.standard};
     vertical-align: inherit;
     padding: 0;
-    background-color: transparent !important;
+    background-color: transparent;
     &:hover {
       color: ${getPaletteColor('dark')};
       text-decoration: underline;
+    }
+    &&&:disabled {
+      background-color: transparent;
     }
   `,
   outline: css`
