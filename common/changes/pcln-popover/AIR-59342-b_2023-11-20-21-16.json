@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Update portal target default as a body",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
