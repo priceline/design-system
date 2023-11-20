@@ -58,7 +58,7 @@ function PopoverContent({
     [onCloseRequest]
   )
 
-  const [portalSelector, setPortalSelector] = useState(querySelectorPortal)
+  const [portalSelector, setPortalSelector] = useState('body')
 
   useEffect(() => {
     window.addEventListener('keyup', handleKeyUp, false)
@@ -69,7 +69,9 @@ function PopoverContent({
 
   // Fallback when cannot find an element
   useLayoutEffect(() => {
-    if (!document.querySelector(portalSelector)) {
+    if (document.querySelector(querySelectorPortal)) {
+      setPortalSelector(querySelectorPortal)
+    } else {
       setPortalSelector('body')
     }
   }, [querySelectorPortal])
