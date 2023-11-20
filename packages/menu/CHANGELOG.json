@@ -2,6 +2,21 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.3.31",
+      "tag": "pcln-menu_v5.3.31",
+      "date": "Mon, 20 Nov 2023 21:58:45 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.5.26`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5.5.25` to `^5.5.26`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.30",
       "tag": "pcln-menu_v5.3.30",
       "date": "Mon, 20 Nov 2023 16:01:48 GMT",

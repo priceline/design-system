@@ -2,6 +2,20 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "5.5.26",
+      "tag": "pcln-popover_v5.5.26",
+      "date": "Mon, 20 Nov 2023 21:58:45 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update portal target default as a body",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "c076d4271c1b62f440e0d1382768d2367abc9f1d"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.5.25",
       "tag": "pcln-popover_v5.5.25",
       "date": "Mon, 20 Nov 2023 16:01:48 GMT",
