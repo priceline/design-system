@@ -91,6 +91,9 @@ const variations = {
       color: ${getPaletteColor('dark')};
       text-decoration: underline;
     }
+    &&&:disabled {
+      background-color: transparent;
+    }
   `,
   outline: css`
     color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'base')(props)};
