@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 15 Nov 2023 16:54:32 GMT and should not be manually modified.
+This log was last generated on Mon, 20 Nov 2023 16:01:48 GMT and should not be manually modified.
+
+## 5.27.4
+Mon, 20 Nov 2023 16:01:48 GMT
+
+### Patches
+
+- Added important for bg css as its been overwritten by other css change to remove bg from link variant of the disabled version of button - UXPT-4211 
+- update README
 
 ## 5.27.3
 Wed, 15 Nov 2023 16:54:32 GMT

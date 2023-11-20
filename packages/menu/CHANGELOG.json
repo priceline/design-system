@@ -2,6 +2,27 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.3.30",
+      "tag": "pcln-menu_v5.3.30",
+      "date": "Mon, 20 Nov 2023 16:01:48 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `5.5.25`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.3` to `^5.27.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^5.5.24` to `^5.5.25`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.29",
       "tag": "pcln-menu_v5.3.29",
       "date": "Wed, 15 Nov 2023 16:54:32 GMT",

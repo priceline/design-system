@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Wed, 15 Nov 2023 16:54:32 GMT and should not be manually modified.
+This log was last generated on Mon, 20 Nov 2023 16:01:48 GMT and should not be manually modified.
+
+## 5.5.25
+Mon, 20 Nov 2023 16:01:48 GMT
+
+### Patches
+
+- Added ability to render popover under a certain element
 
 ## 5.5.24
 Wed, 15 Nov 2023 16:54:32 GMT

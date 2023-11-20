@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.27.4",
+      "tag": "pcln-design-system_v5.27.4",
+      "date": "Mon, 20 Nov 2023 16:01:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added important for bg css as its been overwritten by other css change to remove bg from link variant of the disabled version of button - UXPT-4211 ",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "299b68463847c475c886e2f4e33e03b7edd96078"
+          },
+          {
+            "comment": "update README",
+            "author": "Phil Welsh <philwelsh3d@gmail.com>",
+            "commit": "d823d4f3416aa1a1f115b5bca436a520457c00b0"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.27.3",
       "tag": "pcln-design-system_v5.27.3",
       "date": "Wed, 15 Nov 2023 16:54:32 GMT",

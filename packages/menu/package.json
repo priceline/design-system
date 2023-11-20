@@ -1,6 +1,6 @@
 {
   "name": "pcln-menu",
-  "version": "5.3.29",
+  "version": "5.3.30",
   "license": "MIT",
   "author": "Priceline",
   "sideEffects": false,
@@ -53,9 +53,9 @@
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-    "pcln-design-system": "^5.27.3",
+    "pcln-design-system": "^5.27.4",
     "pcln-icons": "^5.12.1",
-    "pcln-popover": "^5.5.24",
+    "pcln-popover": "^5.5.25",
     "react": ">=16.10.0",
     "react-dom": ">=16.10.0",
     "styled-components": ">=4 <5 || >=5 <5.3.4 || >=5.3.7 <6",
