@@ -22,21 +22,12 @@ const RadioLabelDisabled = styled(Label)`
 const RadioLabel = styled(Label)`
   cursor: pointer;
   color: ${getPaletteColor('text.light')};
-  div[data-name='checked'] ~ span {
-    color: ${getPaletteColor('primary.base')};
-  }
 
   &:hover {
     div[data-name='unchecked'] {
       color: ${getPaletteColor('primary.base')};
-      ~ span {
-        color: ${getPaletteColor('primary.base')};
-      }
     }
     div[data-name='checked'] {
-      ~ span {
-        color: ${getPaletteColor('primary.dark')};
-      }
       > svg {
         color: ${getPaletteColor('primary.dark')};
       }
