@@ -6,7 +6,8 @@ import { applyVariations, deprecatedColorValue, getPaletteColor } from '../utils
 
 const RadioWrap = styled.div`
   display: inline-block;
-  color: ${getPaletteColor('border.base')};
+  color: ${getPaletteColor('text.light')};
+  cursor: ${(props) => (props.disabled ? `not-allowed` : `pointer`)};
   &:hover > svg {
     ${(props) => {
       if (props.checked && !props.disabled) {
@@ -43,6 +44,7 @@ const RadioInput = styled.input`
   }
   &:disabled ~ svg {
     color: ${getPaletteColor('border.base')};
+    cursor: not-allowed;
   }
 `
 
@@ -77,8 +79,23 @@ const Radio: React.FC<IRadioProps> = React.forwardRef((props, ref) => {
 
   const borderAdjustedSize = size + 4
 
+  const dataNameHelper = (checked, disabled) => {
+    if ((checked && disabled) || (!checked && disabled)) {
+      return 'disabled'
+    }
+    if (checked && !disabled) {
+      return 'checked'
+    }
+    return 'unchecked'
+  }
+
   return (
-    <RadioWrap color={props.color} checked={checked} disabled={disabled}>
+    <RadioWrap
+      color={props.color}
+      checked={checked}
+      disabled={disabled}
+      data-name={dataNameHelper(checked, disabled)}
+    >
       <RadioInput type='radio' {...props} ref={ref} />
       <RadioIcon checked={checked} size={borderAdjustedSize} />
     </RadioWrap>

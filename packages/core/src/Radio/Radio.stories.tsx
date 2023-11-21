@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { Radio, Label, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { getPaletteColor } from '../utils'
 
 const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
 const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)
@@ -13,6 +14,25 @@ const LabelText = styled.span`
   margin-left: 8px;
   ${bold}
   ${medium}
+`
+const RadioLabelDisabled = styled(Label)`
+  cursor: not-allowed;
+  color: ${getPaletteColor('border.base')};
+`
+const RadioLabel = styled(Label)`
+  cursor: pointer;
+  color: ${getPaletteColor('text.light')};
+
+  &:hover {
+    div[data-name='unchecked'] {
+      color: ${getPaletteColor('primary.base')};
+    }
+    div[data-name='checked'] {
+      > svg {
+        color: ${getPaletteColor('primary.dark')};
+      }
+    }
+  }
 `
 
 // @ts-ignore
@@ -68,18 +88,18 @@ export default {
 
 export const _3States = () => (
   <div onChange={action('changed')}>
-    <Label fontSize='14px'>
+    <RadioLabel fontSize='14px'>
       <Radio checked />
       <LabelText>selected</LabelText>
-    </Label>
-    <Label fontSize='14px'>
+    </RadioLabel>
+    <RadioLabel fontSize='14px'>
       <Radio />
       <LabelText>not selected</LabelText>
-    </Label>
-    <Label fontSize='14px'>
+    </RadioLabel>
+    <RadioLabelDisabled fontSize='14px'>
       <Radio disabled />
       <LabelText>disabled</LabelText>
-    </Label>
+    </RadioLabelDisabled>
   </div>
 )
 
@@ -93,10 +113,10 @@ export function ForwardRefs() {
     }
     return (
       <>
-        <Label fontSize='14px'>
+        <RadioLabel fontSize='14px'>
           <Radio checked />
           <LabelText>selected</LabelText>
-        </Label>
+        </RadioLabel>
         <Button onClick={onClick} mt={4}>
           Click to focus radio via ref
         </Button>
@@ -108,13 +128,13 @@ export function ForwardRefs() {
 
 export const FontWeight = () => (
   <div onChange={action('changed')}>
-    <Label fontSize='14px'>
+    <RadioLabel fontSize='14px'>
       <Radio checked />
       <LabelText bold>font weight - bold</LabelText>
-    </Label>
-    <Label fontSize='14px'>
+    </RadioLabel>
+    <RadioLabel fontSize='14px'>
       <Radio checked />
       <LabelText medium>font weight - medium</LabelText>
-    </Label>
+    </RadioLabel>
   </div>
 )
