@@ -15,11 +15,11 @@ const LabelText = styled.span`
   ${bold}
   ${medium}
 `
-const StyledLabelDisabled = styled(Label)`
+const RadioLabelDisabled = styled(Label)`
   cursor: not-allowed;
   color: ${getPaletteColor('border.base')};
 `
-const StyledLabel = styled(Label)`
+const RadioLabel = styled(Label)`
   cursor: pointer;
   color: ${getPaletteColor('text.light')};
   div[data-name='checked'] ~ span {
@@ -97,18 +97,18 @@ export default {
 
 export const _3States = () => (
   <div onChange={action('changed')}>
-    <StyledLabel fontSize='14px'>
+    <RadioLabel fontSize='14px'>
       <Radio checked />
       <LabelText>selected</LabelText>
-    </StyledLabel>
-    <StyledLabel fontSize='14px'>
+    </RadioLabel>
+    <RadioLabel fontSize='14px'>
       <Radio />
       <LabelText>not selected</LabelText>
-    </StyledLabel>
-    <StyledLabelDisabled fontSize='14px'>
+    </RadioLabel>
+    <RadioLabelDisabled fontSize='14px'>
       <Radio disabled />
       <LabelText>disabled</LabelText>
-    </StyledLabelDisabled>
+    </RadioLabelDisabled>
   </div>
 )
 
@@ -122,10 +122,10 @@ export function ForwardRefs() {
     }
     return (
       <>
-        <StyledLabel fontSize='14px'>
+        <RadioLabel fontSize='14px'>
           <Radio checked />
           <LabelText>selected</LabelText>
-        </StyledLabel>
+        </RadioLabel>
         <Button onClick={onClick} mt={4}>
           Click to focus radio via ref
         </Button>
@@ -137,13 +137,13 @@ export function ForwardRefs() {
 
 export const FontWeight = () => (
   <div onChange={action('changed')}>
-    <StyledLabel fontSize='14px'>
+    <RadioLabel fontSize='14px'>
       <Radio checked />
       <LabelText bold>font weight - bold</LabelText>
-    </StyledLabel>
-    <StyledLabel fontSize='14px'>
+    </RadioLabel>
+    <RadioLabel fontSize='14px'>
       <Radio checked />
       <LabelText medium>font weight - medium</LabelText>
-    </StyledLabel>
+    </RadioLabel>
   </div>
 )

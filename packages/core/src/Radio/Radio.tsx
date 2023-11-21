@@ -79,18 +79,22 @@ const Radio: React.FC<IRadioProps> = React.forwardRef((props, ref) => {
 
   const borderAdjustedSize = size + 4
 
+  const dataNameHelper = (checked, disabled) => {
+    if ((checked && disabled) || (!checked && disabled)) {
+      return 'disabled'
+    }
+    if (checked && !disabled) {
+      return 'checked'
+    }
+    return 'unchecked'
+  }
+
   return (
     <RadioWrap
       color={props.color}
       checked={checked}
       disabled={disabled}
-      data-name={
-        (checked && disabled) || (!checked && disabled)
-          ? 'disabled'
-          : checked && !disabled
-          ? 'checked'
-          : 'unchecked'
-      }
+      data-name={dataNameHelper(checked, disabled)}
     >
       <RadioInput type='radio' {...props} ref={ref} />
       <RadioIcon checked={checked} size={borderAdjustedSize} />
