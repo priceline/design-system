@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { Radio, Label, Button } from '..'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { getPaletteColor } from '../utils'
 
 const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
 const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)
@@ -16,28 +17,28 @@ const LabelText = styled.span`
 `
 const StyledLabelDisabled = styled(Label)`
   cursor: not-allowed;
-  color: ${(props) => props.theme.colors.borderGray};
+  color: ${getPaletteColor('border.base')};
 `
 const StyledLabel = styled(Label)`
   cursor: pointer;
-  color: ${(props) => props.theme.colors.gray};
+  color: ${getPaletteColor('text.light')};
   div[data-name='checked'] ~ span {
-    color: ${(props) => props.theme.colors.blue};
+    color: ${getPaletteColor('primary.base')};
   }
 
   &:hover {
     div[data-name='unchecked'] {
-      color: ${(props) => props.theme.colors.blue};
+      color: ${getPaletteColor('primary.base')};
       ~ span {
-        color: ${(props) => props.theme.colors.blue};
+        color: ${getPaletteColor('primary.base')};
       }
     }
     div[data-name='checked'] {
       ~ span {
-        color: ${(props) => props.theme.colors.darkBlue};
+        color: ${getPaletteColor('primary.dark')};
       }
       > svg {
-        color: ${(props) => props.theme.colors.darkBlue};
+        color: ${getPaletteColor('primary.dark')};
       }
     }
   }
