@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 20 Nov 2023 16:01:48 GMT and should not be manually modified.
+This log was last generated on Tue, 21 Nov 2023 21:18:48 GMT and should not be manually modified.
+
+## 5.27.5
+Tue, 21 Nov 2023 21:18:48 GMT
+
+### Patches
+
+- added changes for cursor, color of radio button and also updated the story
 
 ## 5.27.4
 Mon, 20 Nov 2023 16:01:48 GMT

@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.27.5",
+      "tag": "pcln-design-system_v5.27.5",
+      "date": "Tue, 21 Nov 2023 21:18:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "added changes for cursor, color of radio button and also updated the story",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "056b7eb79c2723f7702455e012e92d3def3236f2"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.27.4",
       "tag": "pcln-design-system_v5.27.4",
       "date": "Mon, 20 Nov 2023 16:01:48 GMT",
