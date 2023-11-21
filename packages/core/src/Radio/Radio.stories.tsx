@@ -14,6 +14,34 @@ const LabelText = styled.span`
   ${bold}
   ${medium}
 `
+const StyledLabelDisabled = styled(Label)`
+  cursor: not-allowed;
+  color: ${(props) => props.theme.colors.borderGray};
+`
+const StyledLabel = styled(Label)`
+  cursor: pointer;
+  color: ${(props) => props.theme.colors.gray};
+  div[data-name='checked'] ~ span {
+    color: ${(props) => props.theme.colors.blue};
+  }
+
+  &:hover {
+    div[data-name='unchecked'] {
+      color: ${(props) => props.theme.colors.blue};
+      ~ span {
+        color: ${(props) => props.theme.colors.blue};
+      }
+    }
+    div[data-name='checked'] {
+      ~ span {
+        color: ${(props) => props.theme.colors.darkBlue};
+      }
+      > svg {
+        color: ${(props) => props.theme.colors.darkBlue};
+      }
+    }
+  }
+`
 
 // @ts-ignore
 class MockForm extends React.Component {
@@ -68,18 +96,18 @@ export default {
 
 export const _3States = () => (
   <div onChange={action('changed')}>
-    <Label fontSize='14px'>
+    <StyledLabel fontSize='14px'>
       <Radio checked />
       <LabelText>selected</LabelText>
-    </Label>
-    <Label fontSize='14px'>
+    </StyledLabel>
+    <StyledLabel fontSize='14px'>
       <Radio />
       <LabelText>not selected</LabelText>
-    </Label>
-    <Label fontSize='14px'>
+    </StyledLabel>
+    <StyledLabelDisabled fontSize='14px'>
       <Radio disabled />
       <LabelText>disabled</LabelText>
-    </Label>
+    </StyledLabelDisabled>
   </div>
 )
 
@@ -93,10 +121,10 @@ export function ForwardRefs() {
     }
     return (
       <>
-        <Label fontSize='14px'>
+        <StyledLabel fontSize='14px'>
           <Radio checked />
           <LabelText>selected</LabelText>
-        </Label>
+        </StyledLabel>
         <Button onClick={onClick} mt={4}>
           Click to focus radio via ref
         </Button>
@@ -108,13 +136,13 @@ export function ForwardRefs() {
 
 export const FontWeight = () => (
   <div onChange={action('changed')}>
-    <Label fontSize='14px'>
+    <StyledLabel fontSize='14px'>
       <Radio checked />
       <LabelText bold>font weight - bold</LabelText>
-    </Label>
-    <Label fontSize='14px'>
+    </StyledLabel>
+    <StyledLabel fontSize='14px'>
       <Radio checked />
       <LabelText medium>font weight - medium</LabelText>
-    </Label>
+    </StyledLabel>
   </div>
 )
