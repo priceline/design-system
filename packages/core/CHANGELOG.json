@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.28.0",
+      "tag": "pcln-design-system_v5.28.0",
+      "date": "Mon, 27 Nov 2023 22:06:22 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Export PaletteFamilyVariation type",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "739ff624d97414b17ac5a497bb4bc3c502d1b6f8"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.27.5",
       "tag": "pcln-design-system_v5.27.5",
       "date": "Tue, 21 Nov 2023 21:18:48 GMT",
