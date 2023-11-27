@@ -509,6 +509,9 @@ export const paletteFamilyNames = [
 ] as const
 
 /** @public */
+export type PaletteFamilyVariation = (typeof paletteFamilyVariations)[number]
+
+/** @public */
 export type PaletteFamilyName = (typeof paletteFamilyNames)[number]
 
 /** @public */
