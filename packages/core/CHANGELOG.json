@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.28.1",
+      "tag": "pcln-design-system_v5.28.1",
+      "date": "Thu, 30 Nov 2023 15:11:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add zindex 1 to label to fix autofill label hiding issue",
+            "author": "luizrochaecore <96194228+luizrochaecore@users.noreply.github.com>",
+            "commit": "0b47ffdc32cd6b8b9542a248f9897dea28f37fe4"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.28.0",
       "tag": "pcln-design-system_v5.28.0",
       "date": "Mon, 27 Nov 2023 22:06:22 GMT",

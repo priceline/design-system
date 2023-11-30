@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 27 Nov 2023 22:06:22 GMT and should not be manually modified.
+This log was last generated on Thu, 30 Nov 2023 15:11:14 GMT and should not be manually modified.
+
+## 5.28.1
+Thu, 30 Nov 2023 15:11:14 GMT
+
+### Patches
+
+- add zindex 1 to label to fix autofill label hiding issue
 
 ## 5.28.0
 Mon, 27 Nov 2023 22:06:22 GMT
