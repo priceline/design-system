@@ -46,6 +46,7 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 40px;
@@ -263,6 +264,7 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 40px;
@@ -448,6 +450,7 @@ exports[`FormField renders 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 12px;
@@ -619,6 +622,7 @@ exports[`FormField renders with Icon 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 40px;
@@ -812,6 +816,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 40px;
@@ -998,6 +1003,7 @@ exports[`FormField renders with Select  1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 12px;
@@ -1195,6 +1201,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: #4f6f8f;
   font-size: 10px;
   margin-left: 40px;

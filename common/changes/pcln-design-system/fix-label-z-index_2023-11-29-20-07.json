@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "add zindex 1 to label to fix autofill label hiding issue",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

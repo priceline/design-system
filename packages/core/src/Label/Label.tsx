@@ -77,6 +77,7 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
   display: block;
   width: 100%;
   margin: 0;
+  z-index: 1;
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
   ${(props) => (props.onClick ? 'cursor: pointer;' : '')}
