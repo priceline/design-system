@@ -55,6 +55,12 @@ function ChatMessage({
 }: IChatMessage) {
   const marginTop = header ? 3 : 0
   const marginBottom = footer ? 3 : 0
+  const footerPosition = variation === 'outgoing'
+    ? {
+      right: 0
+    }: {
+      left: 0
+    }
 
   return (
     <Message borderRadius='18px' variation={variation} mt={marginTop} mb={marginBottom} p='12px' {...props}>
@@ -79,7 +85,13 @@ function ChatMessage({
       )}
       <Text textStyle='paragraph2'>{message}</Text>
       {footer && (
-        <Absolute bottom='-20px' left='0px' minWidth='300px' width='100%' px={3}>
+        <Absolute
+          bottom='-20px'
+          minWidth='300px'
+          width='100%'
+          px={3}
+          {...footerPosition}
+        >
           {footer}
         </Absolute>
       )}
