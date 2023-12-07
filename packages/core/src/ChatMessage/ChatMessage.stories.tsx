@@ -69,6 +69,27 @@ export const WithFooter: ChatMessageStory = {
   render: (args) => <ChatMessage {...args} footer={HeaderFooter} variation='incoming' />,
 }
 
+export const OutgoingWithFooter: ChatMessageStory = {
+  render: (args) => (
+    <ChatMessage
+      {...args}
+      ml='60px'
+      variation='outgoing'
+      message='hello!!'
+      footer={
+        <Flex alignItems='center' justifyContent='flex-end'>
+          <Text color='text.light' textStyle='subheading6' mr={2}>
+            READ
+          </Text>
+          <Text color='text.light' textStyle='subheading6'>
+            12:55 pm
+          </Text>
+        </Flex>
+      }
+    />
+  ),
+}
+
 export const MessageList: ChatMessageStory = {
   render: (args) => (
     <>
