@@ -1,11 +1,14 @@
+import { Meta } from '@storybook/react'
 import React from 'react'
-import { RatingBadge, Flex } from '..'
+import { Flex } from '../Flex'
 import { colorSchemeNames } from '../storybook/args'
+import { RatingBadge } from './RatingBadge'
 
-export default {
-  title: 'RatingBadge',
+const meta: Meta<typeof RatingBadge> = {
+  title: 'Core / RatingBadge',
   component: RatingBadge,
 }
+export default meta
 
 export const Default = () => <RatingBadge>9.0</RatingBadge>
 export const DeprecatedBgProp = () => <RatingBadge bg='primary.base'>9.0</RatingBadge>

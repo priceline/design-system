@@ -1,6 +1,6 @@
 import React from 'react'
 import { Hotels } from 'pcln-icons'
-import Spinner from './Spinner'
+import { Spinner } from './Spinner'
 import { argTypes, defaultArgs, iconMap } from './Spinner.stories.args'
 
 export default {

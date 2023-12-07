@@ -1,10 +1,13 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
+import React from 'react'
 import styled from 'styled-components'
 
-import { Radio, Label, Button } from '..'
+import { Button } from '../Button'
+import { Label } from '../Label'
+import { Radio } from '../Radio'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 import { getPaletteColor } from '../utils'
+import { paletteFamilyNames } from '../theme'
 
 const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
 const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)
@@ -137,4 +140,15 @@ export const FontWeight = () => (
       <LabelText medium>font weight - medium</LabelText>
     </RadioLabel>
   </div>
+)
+
+export const Colors = () => (
+  <>
+    {paletteFamilyNames.map((color) => (
+      <RadioLabel fontSize='14px' key={color}>
+        <Radio checked color={color} />
+        <LabelText>{color}</LabelText>
+      </RadioLabel>
+    ))}
+  </>
 )

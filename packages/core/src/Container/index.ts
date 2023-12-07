@@ -1,1 +1,1 @@
-export * from './Container'
+export { Container, type ContainerProps } from './Container'

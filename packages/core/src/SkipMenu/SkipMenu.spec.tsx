@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
 
-import { SkipMenu } from '.'
+import { SkipMenu } from './SkipMenu'
 
 describe('SkipMenu', () => {
   it('should not render if not links array is empty', () => {

@@ -1,23 +1,10 @@
+import { ChevronLeft, ChevronRight } from 'pcln-icons'
 import React from 'react'
-import PropTypes from 'prop-types'
-import { ChevronRight, ChevronLeft } from 'pcln-icons'
-import { ARROW_SIZES } from './Arrow.styled'
-import { Relative } from '../Relative'
 import { Button } from '../Button'
+import { Relative } from '../Relative'
+import { ARROW_SIZES } from './Arrow.styled'
 
-const { bool, string, func } = PropTypes
-
-export const arrowPropTypes = {
-  isLeft: bool,
-  arrowButtonVariation: string,
-  size: string,
-  leftArrowClick: func,
-  rightArrowClick: func,
-  leftDisabled: bool,
-  rightDisabled: bool,
-}
-
-export interface ITArrowProps {
+export type ArrowProps = {
   isLeft?: boolean
   arrowButtonVariation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
   size?: string
@@ -29,7 +16,9 @@ export interface ITArrowProps {
   ml?: number
 }
 
-const Arrow: React.FC<ITArrowProps> = ({
+export type ArrowPosition = 'top' | 'bottom' | 'side' | 'hide'
+
+export function Arrow({
   isLeft,
   arrowButtonVariation,
   size,
@@ -38,7 +27,7 @@ const Arrow: React.FC<ITArrowProps> = ({
   leftDisabled,
   rightDisabled,
   ...props
-}) => {
+}: ArrowProps): JSX.Element {
   const Icon = isLeft ? ChevronLeft : ChevronRight
   const { buttonSize, iconSize } = ARROW_SIZES[size]
   return (
@@ -58,5 +47,3 @@ const Arrow: React.FC<ITArrowProps> = ({
     </Relative>
   )
 }
-
-export { Arrow }

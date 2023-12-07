@@ -1,20 +1,21 @@
 /* istanbul ignore file */
 // todo: remove coverage ignore once storybook interaction test coverage counts
-import React from 'react'
 import * as RadixAccordion from '@radix-ui/react-accordion'
+import React from 'react'
+import { SpaceProps } from 'styled-system'
+import { Box } from '../Box'
+import { Flex } from '../Flex'
 import {
   IconContainer,
+  StyledAccordionRoot,
   StyledChevron,
   StyledContent,
   StyledItem,
   StyledTrigger,
-  StyledAccordionRoot,
 } from './Accordion.styled'
-import { Box, Flex } from '..'
-import { SpaceProps } from 'styled-system'
 
-export interface IAccordion extends SpaceProps {
-  items: IAccordionItem[]
+export type AccordionProps = SpaceProps & {
+  items: AccordionItemProps[]
   itemsState?: string | string[]
   onToggle?: (value: string | string[]) => void
   type?: string
@@ -23,7 +24,7 @@ export interface IAccordion extends SpaceProps {
   headerDividerColor?: string
 }
 
-export interface IAccordionItem {
+export type AccordionItemProps = {
   content: React.ReactNode
   headerActions?: React.ReactNode
   headerLabel?: React.ReactNode
@@ -31,7 +32,7 @@ export interface IAccordionItem {
   value: string
 }
 
-export const Accordion = ({
+export function Accordion({
   items,
   itemsState,
   isExternallyControlled,
@@ -41,7 +42,7 @@ export const Accordion = ({
   p = '12px',
   headerDividerColor,
   ...props
-}: IAccordion) => {
+}: AccordionProps): React.ReactElement {
   return items ? (
     <StyledAccordionRoot
       // @ts-ignore
@@ -56,7 +57,7 @@ export const Accordion = ({
         isolation: 'isolate',
       }}
     >
-      {items.map((child: IAccordionItem, index) => (
+      {items.map((child: AccordionItemProps, index) => (
         <RadixAccordion.Item key={child.value} asChild value={child.value}>
           <StyledItem
             variation={variation}

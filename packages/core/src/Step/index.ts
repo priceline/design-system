@@ -1,3 +1,3 @@
-export type { IStepProps } from './Step'
+export type { StepProps } from './Step'
 
-export { default as Step } from './Step'
+export { Step } from './Step'

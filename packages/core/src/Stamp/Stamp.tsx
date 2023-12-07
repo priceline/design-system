@@ -1,27 +1,24 @@
+import themeGet from '@styled-system/theme-get'
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import {
-  space,
-  fontSize,
-  borderRadius,
-  SpaceProps,
-  FontSizeProps,
   BorderRadiusProps,
+  FontSizeProps,
+  SpaceProps,
+  borderRadius,
   compose,
+  fontSize,
+  space,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import themeGet from '@styled-system/theme-get'
+import type { ColorSchemeName } from '../theme'
 import {
   applySizes,
   applyVariations,
   borderRadiusAttrs,
+  colorScheme,
   getPaletteColor,
   getTextColorOn,
-  deprecatedColorValue,
-  colorScheme,
 } from '../utils'
-import type { ColorSchemeName } from '../theme'
 
 const sizes = {
   small: css`
@@ -63,30 +60,19 @@ const variations = {
   `,
 }
 
-const stampPropTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  ...propTypes.borderRadius,
-  size: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(sizes)),
-    PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),
-  ]),
-  variation: PropTypes.oneOf(Object.keys(variations)),
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
-  borderColor: deprecatedColorValue(),
-}
+export type StampProps = SpaceProps &
+  FontSizeProps &
+  BorderRadiusProps & {
+    bg?: string
+    borderColor?: string
+    children?: React.ReactNode
+    color?: string
+    size?: 'small' | 'medium'
+    variation?: 'outline' | 'fill' | 'solid'
+    colorScheme?: ColorSchemeName
+  }
 
-export interface IStampPropTypes extends SpaceProps, FontSizeProps, BorderRadiusProps {
-  color?: string
-  bg?: string
-  borderColor?: string
-  size?: 'small' | 'medium'
-  variation?: 'outline' | 'fill' | 'solid'
-  colorScheme?: ColorSchemeName
-}
-
-const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
+export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -107,8 +93,6 @@ const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
 
 Stamp.displayName = 'Stamp'
 
-Stamp.propTypes = stampPropTypes
-
 Stamp.defaultProps = {
   px: 1,
   py: 0,
@@ -119,5 +103,3 @@ Stamp.defaultProps = {
   size: 'medium',
   variation: 'outline',
 }
-
-export default Stamp

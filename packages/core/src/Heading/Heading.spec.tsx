@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Heading, theme } from '..'
+import { theme } from '../theme'
+import { Heading } from './Heading'
 
 describe('Heading', () => {
   test('renders', () => {

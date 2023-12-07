@@ -1,10 +1,13 @@
 import { ArgTypes } from '@storybook/react'
 import React from 'react'
-import type { IDialogProps } from '.'
-import { borderRadii, Button, colorSchemeNames, Grid, paletteColors, Text } from '..'
+import { Button } from '../Button'
+import { Grid } from '../Grid'
+import { Text } from '../Text'
+import { borderRadii, colorSchemeNames, paletteColors } from '../theme'
+import type { DialogProps } from './Dialog'
 import { dialogSizes } from './Dialog.styled'
 
-export const argTypes: Partial<ArgTypes<IDialogProps>> = {
+export const argTypes: Partial<ArgTypes<DialogProps>> = {
   borderRadius: { control: { type: 'select' }, options: Object.keys(borderRadii) },
   children: { control: { type: 'none' } },
   fullWidth: { control: { type: 'boolean' } },
@@ -20,7 +23,7 @@ export const argTypes: Partial<ArgTypes<IDialogProps>> = {
   triggerNode: { control: { type: 'none' } },
 }
 
-export const defaultArgs: Partial<IDialogProps> = {
+export const defaultArgs: Partial<DialogProps> = {
   ariaDescription: 'This is a description',
   ariaTitle: 'This is a title',
   borderRadius: '2xl',

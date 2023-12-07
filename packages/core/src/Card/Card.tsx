@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { border, BorderProps } from 'styled-system'
-import PropTypes from 'prop-types'
-
-import { Box, IBoxProps } from '../Box'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
+import { Box, type BoxProps } from '../Box'
+import { applyVariations, getPaletteColor } from '../utils'
 
 const styleAsButton = ({ as, ...props }) =>
   as === 'button'
@@ -16,17 +14,12 @@ const styleAsButton = ({ as, ...props }) =>
       }`
     : ''
 
-const cardPropTypes = {
-  borderColor: deprecatedColorValue(),
-  color: deprecatedColorValue(),
-  borderWidth: PropTypes.oneOf([0, 1, 2]),
-}
+export type CardProps = BoxProps &
+  BorderProps & {
+    borderColor?: string
+  }
 
-export interface ICardProps extends IBoxProps, BorderProps {
-  borderColor?: string
-}
-
-const Card: React.FC<ICardProps> = styled(Box)`
+export const Card: React.FC<CardProps> = styled(Box)`
   ${applyVariations('Card')}
   ${styleAsButton}
 
@@ -34,8 +27,6 @@ const Card: React.FC<ICardProps> = styled(Box)`
     props.borderWidth === 0 ? '0' : getPaletteColor(props.borderColor, 'base')(props)};
   ${border};
 `
-
-Card.propTypes = cardPropTypes
 
 Card.defaultProps = {
   borderColor: 'border',
@@ -45,5 +36,3 @@ Card.defaultProps = {
 }
 
 Card.displayName = 'Card'
-
-export default Card

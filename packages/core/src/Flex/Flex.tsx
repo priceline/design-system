@@ -14,34 +14,21 @@ import {
   AlignContentProps,
   compose,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
 
-import { Box, IBoxProps } from '../Box'
+import { Box, BoxProps } from '../Box'
 
-import { applyVariations, deprecatedColorValue } from '../utils'
+import { applyVariations } from '../utils'
 
-const flexPropTypes = {
-  ...propTypes.space,
-  ...propTypes.width,
-  ...propTypes.alignItems,
-  ...propTypes.justifyContent,
-  ...propTypes.flexWrap,
-  ...propTypes.flexDirection,
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
-}
+export type FlexProps = BoxProps &
+  SpaceProps &
+  WidthProps &
+  AlignItemsProps &
+  JustifyContentProps &
+  AlignContentProps &
+  FlexWrapProps &
+  FlexDirectionProps
 
-export interface IFlexProps
-  extends IBoxProps,
-    SpaceProps,
-    WidthProps,
-    AlignItemsProps,
-    JustifyContentProps,
-    AlignContentProps,
-    FlexWrapProps,
-    FlexDirectionProps {}
-
-const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
+export const Flex: React.FC<FlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
   alignItems: align,
   justifyContent: justify,
@@ -52,9 +39,3 @@ const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ..
 
   ${(props) => compose(alignItems, justifyContent, flexDirection, flexWrap)(props)}
 `
-
-Flex.propTypes = flexPropTypes
-
-Flex.displayName = 'Flex'
-
-export default Flex

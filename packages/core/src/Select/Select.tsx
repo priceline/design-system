@@ -1,12 +1,11 @@
-import React from 'react'
-import { InferProps } from 'prop-types'
-import styled, { css } from 'styled-components'
-import { borderRadius, compose, fontSize, space, FontSizeProps, SpaceProps } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
-import styledSystemPropTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
+import React from 'react'
+import styled, { css } from 'styled-components'
+import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } from 'styled-system'
 import { Flex } from '../Flex'
-import { applySizes, borderRadiusAttrs, borders, deprecatedColorValue, getPaletteColor } from '../utils'
+import { applySizes, borderRadiusAttrs, borders, getPaletteColor } from '../utils'
+import { BorderRadius, PaletteColor } from '../theme'
 
 const sizes = {
   sm: css`
@@ -27,12 +26,17 @@ const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
 `
 
-const propTypes = {
-  ...styledSystemPropTypes.space,
-  ...styledSystemPropTypes.fontSize,
-  color: deprecatedColorValue(),
-}
-const SelectBase: React.FC<InferProps<typeof propTypes>> = styled.select.attrs(borderRadiusAttrs)`
+export type SelectProps = SpaceProps &
+  FontSizeProps &
+  Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> & {
+    children?: React.ReactNode
+    color?: PaletteColor
+    borderRadius?: BorderRadius
+    size?: keyof typeof sizes
+    ref?: React.Ref<React.ForwardedRef<unknown>>
+  }
+
+const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   background-color: transparent;
   border-radius: ${themeGet('borderRadii.lg')};
@@ -68,14 +72,7 @@ SelectBase.defaultProps = {
   size: 'lg',
 }
 
-SelectBase.propTypes = propTypes
-
-export interface ISelectProps extends SpaceProps, FontSizeProps {}
-
-const Select: React.FC<
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  Pick<any, string | number | symbol> & React.RefAttributes<unknown>
-> & { isField?: boolean } = React.forwardRef((props, ref) => (
+export const Select: React.FC<SelectProps> & { isField?: boolean } = React.forwardRef((props, ref) => (
   <Flex width={1} alignItems='center'>
     <SelectBase {...props} ref={ref} />
     <ClickableIcon ml={-32} color='text.light' />
@@ -84,5 +81,3 @@ const Select: React.FC<
 
 Select.displayName = 'Select'
 Select.isField = true
-
-export default Select

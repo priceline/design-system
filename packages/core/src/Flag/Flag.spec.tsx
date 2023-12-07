@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Flag, theme } from '..'
+import { theme } from '../theme'
+import { Flag } from './Flag'
 
 describe('Flag', () => {
   let consoleError

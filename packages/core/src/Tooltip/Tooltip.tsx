@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import { Box } from '../Box'
 import styled, { withTheme } from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
-import { applyVariations, getPaletteColor, deprecatedColorValue, colorScheme } from '../utils'
+import { applyVariations, getPaletteColor, colorScheme } from '../utils'
+import { PaletteColor } from '../theme'
 
 const arrowShadow = (props) => {
   return props.top
@@ -97,18 +97,6 @@ const TooltipContent = styled(Box)`
   ${applyVariations('Tooltip')}
 `
 
-const propTypes = {
-  children: PropTypes.any.isRequired,
-  bg: deprecatedColorValue(),
-  color: deprecatedColorValue(),
-  bottom: PropTypes.bool,
-  top: PropTypes.bool,
-  center: PropTypes.bool,
-  left: PropTypes.bool,
-  right: PropTypes.bool,
-  zIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-}
-
 const defaultProps = {
   borderRadius: 'md',
   position: 'bottom',
@@ -116,7 +104,19 @@ const defaultProps = {
   zIndex: 'auto',
 }
 
-const Tooltip: React.FC<InferProps<typeof propTypes>> = ({ children, ...props }) => {
+export type TooltipProps = {
+  children?: React.ReactNode
+  bg?: PaletteColor
+  color?: PaletteColor
+  bottom?: boolean
+  top?: boolean
+  center?: boolean
+  left?: boolean
+  right?: boolean
+  zIndex?: number | string
+}
+
+function _Tooltip({ children, ...props }: TooltipProps): React.ReactElement {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} boxShadowSize='md' {...props}>
@@ -126,7 +126,8 @@ const Tooltip: React.FC<InferProps<typeof propTypes>> = ({ children, ...props })
   )
 }
 
-Tooltip.propTypes = propTypes
-Tooltip.defaultProps = defaultProps
+_Tooltip.defaultProps = defaultProps
 
-export default withTheme(Tooltip)
+const Tooltip = withTheme(_Tooltip)
+
+export { Tooltip }

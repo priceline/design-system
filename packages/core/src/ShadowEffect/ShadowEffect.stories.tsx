@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-no-bind */
+import { action } from '@storybook/addon-actions'
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { action } from '@storybook/addon-actions'
-import ShadowEffect, { ShadowOverlay } from './ShadowEffect'
 import { Input } from '../Input'
 import { getPaletteColor } from '../utils'
+import { ShadowEffect, ShadowOverlay } from './ShadowEffect'
 
 const LightestBackgroundInput = styled(Input)`
   background-color: ${getPaletteColor('background.lightest')};

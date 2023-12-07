@@ -1,1 +1,1 @@
-export { default as Hug } from './Hug'
+export { Hug, type HugProps } from './Hug'

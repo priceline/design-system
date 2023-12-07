@@ -1,7 +1,7 @@
+import { Broom, Departure } from 'pcln-icons'
 import React from 'react'
 import { render } from '../../__test__/testing-library'
-import { Departure, Broom } from 'pcln-icons'
-import ChipContent from './ChipContent'
+import { ChipContent } from './ChipContent'
 
 const props = {
   id: 'testId',

@@ -2,14 +2,14 @@ import React from 'react'
 import type { StoryObj } from '@storybook/react'
 import { expect, jest } from '@storybook/jest'
 import { within, userEvent } from '@storybook/testing-library'
-import { IChatActionContainer, ChatActionContainer } from './ChatActionContainer'
+import { ChatActionContainerProps, ChatActionContainer } from './ChatActionContainer'
 
 export default {
   title: 'Chat / ChatActionContainer',
   component: ChatActionContainer,
 }
 
-type ChatActionContainerStory = StoryObj<IChatActionContainer>
+type ChatActionContainerStory = StoryObj<ChatActionContainerProps>
 
 const twoChatActions = [
   {

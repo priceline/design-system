@@ -1,3 +1,1 @@
-export type { IAbsoluteProps } from './Absolute'
-
-export { default as Absolute } from './Absolute'
+export { Absolute, type AbsoluteProps } from './Absolute'

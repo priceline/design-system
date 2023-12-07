@@ -1,6 +1,3 @@
-import type { ICloseButtonProps, IDialogProps } from '..'
-import { Box, CloseButton, Grid, Text, ThemeProvider } from '..'
-
 import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
@@ -8,6 +5,12 @@ import { HTMLMotionProps, Transition, motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
 import { zIndex } from 'styled-system'
+import { Box } from '../Box'
+import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
+import { Grid } from '../Grid'
+import { Text } from '../Text'
+import { ThemeProvider } from '../ThemeProvider'
+import { type DialogProps } from './Dialog'
 
 export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
 export type DialogSize = (typeof dialogSizes)[number]
@@ -47,7 +50,7 @@ const animationStyles: Record<'default' | 'sheet' | 'overlay', HTMLMotionProps<'
 } as const
 
 const FloatingCloseButton: (
-  props: { dialogSize: DialogSize } & Partial<ICloseButtonProps> & Partial<IDialogProps>
+  props: { dialogSize: DialogSize } & Partial<CloseButtonProps> & Partial<DialogProps>
 ) => JSX.Element = styled(CloseButton)`
   position: absolute;
   top: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
@@ -66,19 +69,19 @@ const DialogOverlayWrapper = styled(motion.div)`
   inset: 0;
   display: grid;
   overflow-y: auto;
-  place-items: ${(props: IDialogProps) => (props.sheet ? 'end center' : 'center')};
-  background-color: ${(props: IDialogProps) =>
+  place-items: ${(props: DialogProps) => (props.sheet ? 'end center' : 'center')};
+  background-color: ${(props: DialogProps) =>
     Object.keys(scrimStyles).includes(props.scrimColor) ? scrimStyles[props.scrimColor] : props.scrimColor};
 `
 
 const DialogContentWrapper = styled(motion.div)`
   position: relative;
   cursor: initial;
-  background-color: ${(props: IDialogProps) => themeGet('palette.background.lightest')(props)};
-  width: ${(props: IDialogProps) => (props.fullWidth ? '100%' : sizeStyles[props.size]?.width)};
-  height: ${(props: IDialogProps) =>
+  background-color: ${(props: DialogProps) => themeGet('palette.background.lightest')(props)};
+  width: ${(props: DialogProps) => (props.fullWidth ? '100%' : sizeStyles[props.size]?.width)};
+  height: ${(props: DialogProps) =>
     props.sheet ? `calc(${sizeStyles[props.size]?.height} - 24px)` : sizeStyles[props.size]?.height};
-  margin: ${(props: IDialogProps) =>
+  margin: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet('space.3')(props)} 0 0 0`
       : props.size === 'full'
@@ -87,7 +90,7 @@ const DialogContentWrapper = styled(motion.div)`
          ${themeGet('space.3')(props)}
          ${themeGet('space.5')(props)}
          ${themeGet('space.3')(props)}`};
-  border-radius: ${(props: IDialogProps) =>
+  border-radius: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
           `borderRadii.${props.borderRadius}`
@@ -95,13 +98,13 @@ const DialogContentWrapper = styled(motion.div)`
       : props.size === 'full'
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
-  box-shadow: ${(props: IDialogProps) => themeGet('shadows.overlay-lg')(props)};
+  box-shadow: ${(props: DialogProps) => themeGet('shadows.overlay-lg')(props)};
 `
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
   overflow: auto;
-  border-radius: ${(props: IDialogProps) =>
+  border-radius: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
           `borderRadii.${props.borderRadius}`
@@ -109,11 +112,11 @@ const DialogInnerContentWrapper = styled.div`
       : props.size === 'full'
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
-  border-top: ${(props: IDialogProps) =>
+  border-top: ${(props: DialogProps) =>
     props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
 `
 
-export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<IDialogProps>) => {
+export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<DialogProps>) => {
   return (
     <Dialog.Portal forceMount>
       <ThemeProvider>
@@ -149,7 +152,7 @@ export const DialogContent = ({
   size,
   zIndex,
   onOpenChange,
-}: IDialogProps) => {
+}: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
     headerIcon ? 'heading5' : 'heading4', // sm

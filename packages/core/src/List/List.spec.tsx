@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { List } from '..'
+import { List } from '../List'
 
 describe('List', () => {
   it('renders ordered list', () => {
@@ -52,8 +52,10 @@ describe('List', () => {
     expect(list).toHaveStyleRule('margin-left', '32px')
   })
 
-  it('should renders list with default listStyles and indentation if right props are not passed ', () => {
+  it('should render list with default listStyles and indentation if right props are not passed ', () => {
     render(
+      // Ignoring TS error to test case when invalid listStyle is provided
+      // @ts-ignore
       <List.ul color='text.light' fontSize={1} listStyle='roman' data-testid='list'>
         <li>Example Text 1</li>
         <li>Example Text 2</li>

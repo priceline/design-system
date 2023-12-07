@@ -4,6 +4,8 @@ export enum VariationType {
   Dark = 'dark',
 }
 
+export type ShimmerVariation = 'base' | 'light' | 'dark'
+
 export const VARIATION_BACKGROUND_COLORS = {
   [VariationType.Base]: '#EEEEEE',
   [VariationType.Light]: '#00000014',

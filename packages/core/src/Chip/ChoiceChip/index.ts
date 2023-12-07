@@ -1,3 +1,1 @@
-import ChoiceChip from './ChoiceChip'
-
-export { ChoiceChip }
+export { ChoiceChip, type ChoiceChipProps } from './ChoiceChip'

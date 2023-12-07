@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { Absolute, Text, Relative } from '..'
+import { Absolute } from '../Absolute'
+import { Text } from '../Text'
+import { Relative } from '../Relative'
 import { Coupon as CouponIcon } from 'pcln-icons'
 
 describe('Relative', () => {

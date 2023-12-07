@@ -1,6 +1,6 @@
 import React from 'react'
-import { render } from '../__test__/testing-library'
 import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
+import { render } from '../__test__/testing-library'
 import { Slide } from './Slide'
 
 const props = {
@@ -18,9 +18,13 @@ describe('Slide', () => {
     const slideBoxRef = {
       current: {
         scroll: jest.fn(),
+        offsetWidth: 0,
       },
     }
-    const { getByText } = render(<Slide isCurrentSlide slideBoxRef={slideBoxRef} content='WOOP' {...props} />)
+    const { getByText } = render(
+      // @ts-ignore
+      <Slide isCurrentSlide slideBoxRef={slideBoxRef} content='WOOP' {...props} />
+    )
     expect(slideBoxRef.current.scroll).toHaveBeenCalled()
     getByText('WOOP')
   })
@@ -28,6 +32,7 @@ describe('Slide', () => {
   it('Expect to render without slideBoxRef', () => {
     mockAllIsIntersecting(true)
 
+    // @ts-ignore
     const { getByText } = render(<Slide slideBoxRef={undefined} isCurrentSlide content='WOOP' {...props} />)
     getByText('WOOP')
   })

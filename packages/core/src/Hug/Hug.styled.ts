@@ -1,9 +1,9 @@
-import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
+import styled from 'styled-components'
+import { Box } from '../Box'
 import { Card } from '../Card'
+import { Flex, type FlexProps } from '../Flex'
 import { applyVariations, colorSchemeCustomForeground } from '../utils'
-import { Flex, Box } from '..'
-import type { IFlexProps } from '../Flex'
 
 export const HugCard = styled(Card)`
   overflow: hidden;
@@ -29,10 +29,10 @@ export const BorderConcealer = styled(Box)`
   }
 `
 
-export interface IHeaderProps extends IFlexProps {
+export type HeaderProps = FlexProps & {
   iconUsesColorScheme: boolean
 }
 
-export const Header: React.FC<IHeaderProps> = styled(Flex)`
+export const Header: React.FC<HeaderProps> = styled(Flex)`
   ${colorSchemeCustomForeground}
 `

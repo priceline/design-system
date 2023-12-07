@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select renders 1`] = `
-.c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
-}
-
-.c4 {
-  outline: none;
-}
-
 .c0 {
   width: 100%;
 }
@@ -28,6 +14,20 @@ exports[`Select renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
 }
 
 .c5 {

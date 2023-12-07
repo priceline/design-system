@@ -1,24 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import themeGet from '@styled-system/theme-get'
-import propTypes from '@styled-system/prop-types'
 import { space, SpaceProps } from 'styled-system'
-import PropTypes from 'prop-types'
 
-import { applyVariations, getPaletteColor, borders, deprecatedColorValue } from '../utils'
+import { applyVariations, getPaletteColor, borders } from '../utils'
 
-const textAreaPropTypes = {
-  id: PropTypes.string.isRequired,
-  color: deprecatedColorValue(),
-  ...propTypes.space,
-}
+export type TextAreaProps = SpaceProps &
+  React.TextareaHTMLAttributes<HTMLTextAreaElement> &
+  React.RefAttributes<HTMLTextAreaElement> & { isField?: boolean }
 
-export interface ITextAreaProps
-  extends SpaceProps,
-    React.TextareaHTMLAttributes<HTMLTextAreaElement>,
-    React.RefAttributes<HTMLTextAreaElement> {}
-
-const TextArea: React.FC<ITextAreaProps> & { isField: boolean } = styled.textarea`
+export const TextArea: React.FC<TextAreaProps> & { isField?: boolean } = styled.textarea`
   appearance: none;
   display: block;
   width: 100%;
@@ -51,6 +42,5 @@ const TextArea: React.FC<ITextAreaProps> & { isField: boolean } = styled.textare
 
 TextArea.displayName = 'TextArea'
 TextArea.isField = true
-TextArea.propTypes = textAreaPropTypes
 
 export default TextArea

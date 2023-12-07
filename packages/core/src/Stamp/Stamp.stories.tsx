@@ -1,11 +1,12 @@
+import { Airplane, Pin as PinIcon } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
 
-import { Stamp, Text } from '..'
-import type { ColorSchemeName } from '../theme'
-import { argTypes } from './Stamp.stories.args'
-import { Pin as PinIcon, Airplane } from 'pcln-icons'
+import { Text } from '../Text'
 import { colorSchemeNames } from '../storybook/args'
+import type { ColorSchemeName } from '../theme'
+import { Stamp } from './Stamp'
+import { argTypes } from './Stamp.stories.args'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }

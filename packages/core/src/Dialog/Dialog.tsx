@@ -6,7 +6,7 @@ import { DialogContent, DialogOverlay } from './Dialog.styled'
 import * as Dialog from '@radix-ui/react-dialog'
 import React, { useEffect } from 'react'
 
-export interface IDialogProps {
+export type DialogProps = {
   ariaDescription: string
   ariaTitle: string
   borderRadius?: BorderRadius
@@ -50,7 +50,7 @@ const PclnDialog = ({
   triggerNode,
   zIndex = 'overlay',
   onOpenChange,
-}: IDialogProps) => {
+}: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
   useEffect(() => setOpen(open), [open])
@@ -93,4 +93,4 @@ const PclnDialog = ({
 
 PclnDialog.displayName = 'Dialog'
 
-export default PclnDialog
+export { PclnDialog as Dialog }

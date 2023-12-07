@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import styled from 'styled-components'
 import { Check, Success, SuccessOutline, Visibility, VisibilityOff } from 'pcln-icons'
-import { Badge, Flex, IconButton, IconField, Input, Label, ProgressBar } from '..'
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { Badge } from '../Badge'
+import { Flex, type FlexProps } from '../Flex'
+import { IconButton } from '../IconButton'
+import { IconField } from '../IconField'
+import { Input } from '../Input'
+import { Label } from '../Label'
+import { ProgressBar } from '../ProgressBar'
 import { Text } from '../Text'
+import { type PaletteColor, type PaletteFamilyName } from '../theme'
 
 const NoWrapText = styled(Text)`
   white-space: nowrap;
@@ -11,20 +17,20 @@ const NoWrapText = styled(Text)`
 
 const maxProgressBarLength = 4
 
-const propTypes = {
-  id: PropTypes.string,
-  isValid: PropTypes.bool,
-  label: PropTypes.string,
-  hasProgressBar: PropTypes.bool,
-  progressBarSteps: PropTypes.arrayOf(PropTypes.shape({ color: PropTypes.string, text: PropTypes.string })),
-  progressBarDefaultStep: PropTypes.number,
-  regexChecks: PropTypes.arrayOf(PropTypes.shape({ label: PropTypes.string, regex: PropTypes.regex })),
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-  autoComplete: PropTypes.string,
+export type PasswordInputProps = Omit<FlexProps, 'onChange'> & {
+  id?: string
+  isValid?: boolean
+  label?: string
+  hasProgressBar?: boolean
+  progressBarSteps?: { color: PaletteColor | PaletteFamilyName; text: string }[]
+  progressBarDefaultStep?: number
+  regexChecks?: { label: string; regex: RegExp }[]
+  value?: string
+  onChange?: (event: { isValid: boolean; value: string }) => void
+  autoComplete?: string
 }
 
-const PasswordInput: React.FC<InferProps<typeof propTypes>> = ({
+export function PasswordInput({
   id,
   isValid,
   label,
@@ -35,7 +41,7 @@ const PasswordInput: React.FC<InferProps<typeof propTypes>> = ({
   onChange,
   autoComplete,
   ...props
-}) => {
+}: PasswordInputProps) {
   const [showPassword, setShowPassword] = useState(false)
   const [passedChecks, setPassedChecks] = useState([])
 
@@ -48,10 +54,8 @@ const PasswordInput: React.FC<InferProps<typeof propTypes>> = ({
     const passedChecks = []
 
     if (hasProgressBar) {
-      regexChecks.reduce(
-        (acc, element, index) => element.regex.test(currentValue) && passedChecks.push(index),
-        passedChecks
-      )
+      regexChecks.forEach((element, index) => element.regex.test(currentValue) && passedChecks.push(index))
+
       setPassedChecks(passedChecks)
     }
 
@@ -154,7 +158,3 @@ PasswordInput.defaultProps = {
     { label: 'at least 12 Characters', regex: /.{12,}/ },
   ],
 }
-
-PasswordInput.propTypes = propTypes
-
-export default PasswordInput

@@ -1,6 +1,6 @@
 import React from 'react'
-
-import { Card, theme } from '..'
+import { theme } from '../theme'
+import { Card } from './Card'
 
 function assertBorderGray(json, borderWidth = 1) {
   expect(json).toHaveStyleRule('border-style', `solid`)

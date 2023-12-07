@@ -25,13 +25,13 @@ const HeaderButton = styled(Button)`
   }
 `
 
-export interface IChatHeader {
-  children: React.ReactElement
+export type ChatHeaderProps = {
+  children: React.ReactNode
   onClose: () => void
   onMinimize: () => void
 }
 
-function ChatHeader({ children, onClose, onMinimize }: IChatHeader) {
+export function ChatHeader({ children, onClose, onMinimize }: ChatHeaderProps) {
   return (
     <BorderBottomFlex alignItems='center' justifyContent='space-between' p={3}>
       <Box>{children}</Box>
@@ -44,6 +44,3 @@ function ChatHeader({ children, onClose, onMinimize }: IChatHeader) {
     </BorderBottomFlex>
   )
 }
-
-export { ChatHeader }
-export default ChatHeader

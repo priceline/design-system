@@ -1,0 +1,21 @@
+{
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "lineWidth": 110,
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingComma": "es5",
+      "quoteProperties": "asNeeded",
+      "bracketSpacing": true,
+      "bracketSameLine": false
+    }
+  }
+}

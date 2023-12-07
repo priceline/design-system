@@ -1,8 +1,8 @@
-import React from 'react'
 import type { StoryObj } from '@storybook/react'
-import { Flex, Text } from '..'
 import { Overnight } from 'pcln-icons'
-import { ChatMessage, IChatMessage, variationNames } from './ChatMessage'
+import React from 'react'
+import { Flex, Text } from '..'
+import { ChatMessage, variationNames, type ChatMessageProps } from './ChatMessage'
 
 export default {
   title: 'Chat / ChatMessage',
@@ -33,7 +33,7 @@ const HeaderFooter = (
   </Flex>
 )
 
-type ChatMessageStory = StoryObj<IChatMessage>
+type ChatMessageStory = StoryObj<ChatMessageProps>
 
 export const _ChatMessage: ChatMessageStory = {
   render: (args) => <ChatMessage {...args} />,

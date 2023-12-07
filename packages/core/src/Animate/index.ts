@@ -1,1 +1,1 @@
-export * from './Animate'
+export { Animate, type AnimateProps } from './Animate'

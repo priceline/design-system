@@ -1,1 +1,1 @@
-export { default as SkipMenu } from './SkipMenu'
+export { SkipMenu, type SkipMenuProps } from './SkipMenu'

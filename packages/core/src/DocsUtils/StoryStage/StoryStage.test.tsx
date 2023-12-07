@@ -1,6 +1,6 @@
 import React from 'react'
-import { StoryStage } from '..'
 import { render, screen } from '../../__test__/testing-library'
+import { StoryStage } from './StoryStage'
 
 const content = 'This is some content'
 

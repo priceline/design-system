@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
 import { Hotels } from 'pcln-icons'
-import Spinner from './Spinner'
+import { Spinner } from './Spinner'
 
 describe('Spinner', () => {
   it('renders a lonely spinner', () => {

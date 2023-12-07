@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
-import { applyVariations, deprecatedColorValue, getPaletteColor } from '../utils'
+import React from 'react'
+import styled from 'styled-components'
+import { type PaletteFamilyName } from '../theme'
+import { applyVariations, getPaletteColor } from '../utils'
 
 const RadioWrap = styled.div`
   display: inline-block;
@@ -54,27 +54,23 @@ const RadioCheckedIcon = styled(RadioChecked)`
 const RadioEmptyIcon = styled(RadioEmpty)`
   vertical-align: middle;
 `
-const RadioIcon = ({ checked, ...props }) => {
+
+type RadioIconProps = {
+  checked?: boolean
+  size?: number
+}
+
+const RadioIcon = ({ checked, ...props }: RadioIconProps) => {
   return checked ? <RadioCheckedIcon {...props} /> : <RadioEmptyIcon {...props} />
 }
-RadioIcon.propTypes = {
-  checked: PropTypes.bool,
-}
 
-const propTypes = {
-  color: deprecatedColorValue(),
-  size: PropTypes.number,
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-}
-
-export interface IRadioProps extends Partial<Omit<HTMLInputElement, 'size'>> {
+export type RadioProps = React.InputHTMLAttributes<HTMLInputElement> & {
   size?: number
-  color?: string
+  color?: PaletteFamilyName
   onClick?: (unknown) => unknown
 }
 
-const Radio: React.FC<IRadioProps> = React.forwardRef((props, ref) => {
+export const Radio: React.FC<RadioProps> = React.forwardRef((props, ref) => {
   const { checked, disabled, size } = props
 
   const borderAdjustedSize = size + 4
@@ -103,10 +99,7 @@ const Radio: React.FC<IRadioProps> = React.forwardRef((props, ref) => {
 })
 
 Radio.displayName = 'Radio'
-Radio.propTypes = propTypes
 Radio.defaultProps = {
   color: 'primary',
   size: 24,
 }
-
-export default Radio

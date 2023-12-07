@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Box, Absolute, getPaletteColor } from '..'
 
@@ -53,18 +52,7 @@ const WrapperBox = styled(Box)`
   }
 `
 
-const propTypes = {
-  isOn: PropTypes.bool.isRequired,
-  label: PropTypes.string.isRequired,
-  onToggle: PropTypes.func,
-  disabled: PropTypes.bool,
-  width: PropTypes.string,
-  height: PropTypes.number,
-  icon: PropTypes.node,
-  name: PropTypes.string,
-}
-
-export interface IToggleProps {
+export type ToggleProps = {
   isOn?: boolean
   label?: string
   onToggle?: (unknown) => unknown
@@ -75,7 +63,15 @@ export interface IToggleProps {
   name?: string
 }
 
-export const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, height, icon, name }) => {
+export function Toggle({
+  isOn,
+  label,
+  onToggle,
+  disabled,
+  height,
+  icon,
+  name,
+}: ToggleProps): React.ReactElement {
   const width = height * 1.875
   const circleAbsoluteSize = height - 4
   const leftToggleOnPosition = width - circleAbsoluteSize - 2
@@ -123,8 +119,6 @@ export const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled
 }
 
 Toggle.displayName = 'Toggle'
-
-Toggle.propTypes = propTypes
 
 Toggle.defaultProps = {
   isOn: false,

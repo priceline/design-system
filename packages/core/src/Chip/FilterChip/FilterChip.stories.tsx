@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
 import { Departure } from 'pcln-icons'
-import FilterChip from './FilterChip'
+import React, { useState } from 'react'
 import { Box } from '../../Box'
+import { Flex } from '../../Flex'
 import { Text } from '../../Text'
 import { chipWithShadowVariationArgs } from '../../storybook/args'
+import { FilterChip } from './FilterChip'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />
@@ -310,7 +311,7 @@ export const Usage = () => {
   return (
     <Box m={3}>
       <Text>Varation: Outline</Text>
-      <Box flexDirection='row' key='outline'>
+      <Flex flexDirection='row' key='outline'>
         <FilterChip
           id={FREE_CANCELLATION_CHIP_BUTTON_ID_OUTLINE}
           selected={chipState[FREE_CANCELLATION_CHIP_BUTTON_ID_OUTLINE]}
@@ -335,10 +336,10 @@ export const Usage = () => {
           showActionIcon={chipState[FREE_PARKING_CHIP_BUTTON_ID_OUTLINE]}
           m={1}
         />
-      </Box>
+      </Flex>
       <br />
       <Text>Varation: Shadow</Text>
-      <Box flexDirection='row' key='shadow'>
+      <Flex flexDirection='row' key='shadow'>
         <FilterChip
           id={FREE_CANCELLATION_CHIP_BUTTON_ID_SHADOW}
           selected={chipState[FREE_CANCELLATION_CHIP_BUTTON_ID_SHADOW]}
@@ -366,7 +367,7 @@ export const Usage = () => {
           showActionIcon={chipState[FREE_PARKING_CHIP_BUTTON_ID_SHADOW]}
           m={1}
         />
-      </Box>
+      </Flex>
     </Box>
   )
 }

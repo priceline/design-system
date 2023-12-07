@@ -1,9 +1,9 @@
 import React from 'react'
-
-import { Badge, textTransformValues } from '..'
-import type { ColorSchemeName } from '../theme'
-import { argTypes } from './Badge.stories.args'
 import { colorSchemeNames } from '../storybook/args'
+import type { ColorSchemeName } from '../theme'
+import { textTransformValues } from '../utils'
+import { Badge } from './Badge'
+import { argTypes } from './Badge.stories.args'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
