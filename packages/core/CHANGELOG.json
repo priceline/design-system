@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.28.2",
+      "tag": "pcln-design-system_v5.28.2",
+      "date": "Thu, 07 Dec 2023 17:59:07 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix outgoing ChatMessage Footer position",
+            "author": "Chi Jin <jinchi2013@users.noreply.github.com>",
+            "commit": "1f4827fc5155182e4bfd284b629cf595b37fca6d"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.28.1",
       "tag": "pcln-design-system_v5.28.1",
       "date": "Thu, 30 Nov 2023 15:11:14 GMT",
