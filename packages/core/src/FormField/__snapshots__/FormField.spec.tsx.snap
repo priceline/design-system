@@ -2,7 +2,15 @@
 
 exports[`FormField disabled state renders input with icon - disabled 1`] = `
 <DocumentFragment>
-  .c7 {
+  .c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -14,14 +22,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 
 .c8 {
   outline: none;
-}
-
-.c1 {
-  border-radius: 12px;
-}
-
-.c5 {
-  margin-right: -40px;
 }
 
 .c4 {
@@ -202,7 +202,19 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 
 exports[`FormField disabled state renders select with icon - disabled 1`] = `
 <DocumentFragment>
-  .c7 {
+  .c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c9 {
+  width: 100%;
+}
+
+.c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -228,18 +240,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
 
 .c8 {
   outline: none;
-}
-
-.c1 {
-  border-radius: 12px;
-}
-
-.c5 {
-  margin-right: -40px;
-}
-
-.c9 {
-  width: 100%;
 }
 
 .c4 {
@@ -578,6 +578,14 @@ exports[`FormField renders 1`] = `
 `;
 
 exports[`FormField renders with Icon 1`] = `
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -590,14 +598,6 @@ exports[`FormField renders with Icon 1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
 }
 
 .c2 {
@@ -772,6 +772,14 @@ exports[`FormField renders with Icon 1`] = `
 `;
 
 exports[`FormField renders with Label autoHide prop 1`] = `
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -784,14 +792,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
 }
 
 .c2 {
@@ -966,6 +966,14 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  width: 100%;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -978,14 +986,6 @@ exports[`FormField renders with Select  1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  width: 100%;
 }
 
 .c2 {
@@ -1139,6 +1139,18 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
+.c7 {
+  width: 100%;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -1165,18 +1177,6 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c7 {
-  width: 100%;
 }
 
 .c2 {

@@ -800,19 +800,7 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 
 exports[`RadioCheckToggleCard Toggle Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c21 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 16;
-}
-
-.c22 {
-  outline: none;
-}
-
-.c9 {
+  .c9 {
   width: 24;
   height: 24;
 }
@@ -848,6 +836,18 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   position: absolute;
   left: 23px;
   top: 2px;
+}
+
+.c21 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 16;
+}
+
+.c22 {
+  outline: none;
 }
 
 .c2 {
@@ -1128,19 +1128,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 
 exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c21 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 16;
-}
-
-.c22 {
-  outline: none;
-}
-
-.c9 {
+  .c9 {
   width: 24;
   height: 24;
 }
@@ -1176,6 +1164,18 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   position: absolute;
   left: 2px;
   top: 2px;
+}
+
+.c21 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 16;
+}
+
+.c22 {
+  outline: none;
 }
 
 .c2 {

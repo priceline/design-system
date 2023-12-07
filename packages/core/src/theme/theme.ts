@@ -423,7 +423,7 @@ export const textStyles = createTextStyles({
 })
 export const colorStyles = createColorStyles({ colors })
 
-const theme = {
+export const theme = {
   breakpoints,
   mediaQueries,
   space,
@@ -451,8 +451,6 @@ const theme = {
   transitionDelays,
   zIndices,
 }
-
-export { theme }
 
 /** @public */
 export type TextStyle = {

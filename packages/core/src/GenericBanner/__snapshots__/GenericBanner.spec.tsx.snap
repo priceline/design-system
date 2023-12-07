@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GenericBanner renders 1`] = `
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c5 {
-  outline: none;
-}
-
 .c1 {
   background-color: #0a0;
   color: #fff;
@@ -30,6 +16,20 @@ exports[`GenericBanner renders 1`] = `
 .c9 {
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c5 {
+  outline: none;
 }
 
 .c3 {

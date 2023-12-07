@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select renders 1`] = `
+.c0 {
+  width: 100%;
+}
+
 .c3 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -13,10 +17,6 @@ exports[`Select renders 1`] = `
 
 .c4 {
   outline: none;
-}
-
-.c0 {
-  width: 100%;
 }
 
 .c1 {

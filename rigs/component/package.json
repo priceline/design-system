@@ -8,26 +8,30 @@
     "test": ""
   },
   "dependencies": {
-    "@microsoft/api-extractor": "~7.35.2",
-    "@rushstack/eslint-config": "^3.3.1",
-    "@rushstack/heft-jest-plugin": "~0.5.13",
-    "@rushstack/heft-web-rig": "~0.15.2",
-    "@rushstack/heft-webpack5-plugin": "~0.6.12",
-    "@types/heft-jest": "^1.0.3",
-    "@types/jest": "^29.5.4",
-    "@types/node": "^18.16.19",
-    "@types/testing-library__jest-dom": "^5.14.6",
-    "@types/webpack-env": "^1.18.1",
-    "eslint": "^8.48.0",
-    "jest-environment-jsdom": "^29.5.0",
+    "@microsoft/api-extractor": "^7.38.5",
+    "@rushstack/eslint-config": "^3.5.0",
+    "@rushstack/heft-api-extractor-plugin": "^0.2.14",
+    "@rushstack/heft-jest-plugin": "^0.10.6",
+    "@rushstack/heft-web-rig": "^0.19.13",
+    "@rushstack/heft-webpack5-plugin": "^0.9.14",
+    "@rushstack/heft-lint-plugin": "^0.2.14",
+    "@rushstack/heft-sass-plugin": "^0.12.14",
+    "@rushstack/heft-typescript-plugin": "^0.2.14",
+    "@types/heft-jest": "^1.0.6",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^18.19.3",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "@types/webpack-env": "^1.18.4",
+    "eslint": "^8.55.0",
+    "jest-environment-jsdom": "^29.7.0",
     "jest-standard-reporter": "^2.0.0",
-    "typescript": "^5.2.2",
-    "webpack": "~5.80.0"
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0"
   },
   "devDependencies": {
-    "@rushstack/heft": "~0.50.7"
+    "@rushstack/heft": "^0.63.4"
   },
   "peerDependencies": {
-    "@rushstack/heft": "~0.50.7"
+    "@rushstack/heft": "^0.63.4"
   }
 }

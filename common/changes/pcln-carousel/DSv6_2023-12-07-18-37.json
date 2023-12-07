@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade all @rushstack dependencies to latest",
+      "type": "minor",
+      "packageName": "pcln-carousel"
+    }
+  ],
+  "packageName": "pcln-carousel",
+  "email": "steven.dalonzo@priceline.com"
+}

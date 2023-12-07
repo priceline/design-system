@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders default 1`] = `
+.c1 {
+  background-color: #0068ef;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 8px;
+}
+
 .c3 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -11,15 +20,6 @@ exports[`Avatar renders default 1`] = `
 
 .c4 {
   outline: none;
-}
-
-.c1 {
-  background-color: #0068ef;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  padding: 8px;
 }
 
 .c0 {
