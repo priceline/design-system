@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Box, IBoxProps } from '../Box'
+import { Box, BoxProps } from '../Box'
 import { Text } from '../Text'
 
 const getMaxWidth = (em) => parseInt(em) - 0.01
@@ -43,7 +43,7 @@ const hidePropTypes = {
   print: PropTypes.bool,
 }
 
-export interface IHideProps extends IBoxProps {
+export interface IHideProps extends BoxProps {
   xs?: boolean
   sm?: boolean
   md?: boolean

@@ -1,1 +1,1 @@
-export { default as Shimmer } from './Shimmer'
+export { Shimmer, type ShimmerProps } from './Shimmer'

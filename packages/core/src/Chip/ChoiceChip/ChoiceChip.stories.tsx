@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
 import { Departure } from 'pcln-icons'
-import ChoiceChip from './ChoiceChip'
+import React, { useState } from 'react'
 import { Box } from '../../Box'
+import { Flex } from '../../Flex'
 import { Text } from '../../Text'
 import { chipWithShadowVariationArgs } from '../../storybook/args'
-import { Flex } from '../../Flex'
+import { ChoiceChip } from './ChoiceChip'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />

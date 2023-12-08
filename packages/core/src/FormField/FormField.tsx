@@ -2,11 +2,11 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { Box, IBoxProps } from '../Box'
+import { Box, BoxProps } from '../Box'
 import { IconField } from '../IconField'
 import { getPaletteColor } from '../utils'
 
-export interface IFormFieldProps extends IBoxProps {
+export interface IFormFieldProps extends BoxProps {
   disabled?: boolean
   readOnly?: boolean
 }

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
-import { Dialog } from '..'
+import { Dialog } from './Dialog'
 
 const triggerText = 'Open Dialog'
 const contentText = 'Dialog Content'

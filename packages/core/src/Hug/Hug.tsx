@@ -1,21 +1,10 @@
 import React, { Attributes } from 'react'
-import PropTypes from 'prop-types'
-
-import type { ICardProps } from '../Card'
+import { type CardProps } from '../Card'
 import { Text } from '../Text'
-import { deprecatedColorValue } from '../utils'
-import { HugCard, Header, BorderConcealer } from './Hug.styled'
+import { BorderConcealer, Header, HugCard } from './Hug.styled'
 
-const hugPropTypes = {
-  iconDisplay: PropTypes.arrayOf(PropTypes.string),
-  icon: PropTypes.node,
-  text: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node), PropTypes.string]),
-  color: deprecatedColorValue(),
-  borderWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  fontSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-}
-
-export interface IHugProps extends ICardProps {
+export type HugProps = CardProps & {
+  children?: React.ReactNode
   iconDisplay?: string[]
   icon?: React.ReactNode
   text?: React.ReactNode | React.ReactNode[] | string
@@ -23,7 +12,7 @@ export interface IHugProps extends ICardProps {
   fontSize?: string | number
 }
 
-const Hug: React.FC<IHugProps> = ({
+export function Hug({
   bg,
   color = 'text.lightest',
   p,
@@ -32,16 +21,16 @@ const Hug: React.FC<IHugProps> = ({
   iconDisplay,
   colorScheme,
   ...props
-}) => {
+}: HugProps): React.ReactElement {
   let iconClone
   if (React.isValidElement(icon)) {
-    iconClone = React.cloneElement(icon, ({
+    iconClone = React.cloneElement(icon, {
       style: { display: iconDisplay },
       mr: 2,
       mt: '-2px',
       mb: '2px',
       size: 24,
-    } as unknown) as Attributes)
+    } as unknown as Attributes)
   }
 
   let headerColor = ''
@@ -83,7 +72,3 @@ Hug.defaultProps = {
   fontSize: 1,
   p: 2,
 }
-
-Hug.propTypes = hugPropTypes
-
-export default Hug

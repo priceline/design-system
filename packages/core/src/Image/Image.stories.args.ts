@@ -1,5 +1,5 @@
-import { colors, borderRadii, rounded, shadows, objectFits, objectPositions } from '../storybook/args'
-import Image from './Image'
+import { borderRadii, colors, objectFits, objectPositions, rounded, shadows } from '../storybook/args'
+import { Image } from './Image'
 
 export const argTypes = {
   borderRadius: {

@@ -1,15 +1,12 @@
 /* istanbul ignore file */
 // todo: remove coverage ignore once storybook interaction test coverage counts
 
-import React from 'react'
-import { FloatingActionButton, IFloatingActionButton } from '../FloatingActionButton'
 import { Chat } from 'pcln-icons'
+import React from 'react'
+import { FloatingActionButton, type FloatingActionButtonProps } from '../FloatingActionButton'
 
-export interface IChatTrigger extends IFloatingActionButton {}
+export type ChatTriggerProps = FloatingActionButtonProps
 
-function ChatTrigger(props: IChatTrigger) {
+export function ChatTrigger(props: FloatingActionButtonProps): JSX.Element {
   return <FloatingActionButton bottom={0} icon={Chat} right={0} {...props} />
 }
-
-export { ChatTrigger }
-export default ChatTrigger

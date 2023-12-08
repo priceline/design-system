@@ -1,8 +1,12 @@
 import React from 'react'
-import styled, { keyframes, css } from 'styled-components'
-import { Box } from '..'
-import PropTypes, { InferProps } from 'prop-types'
-import { VariationType, VARIATION_BACKGROUND_COLORS, VARIATION_GLARE_GRADIENTS } from './constants'
+import styled, { css, keyframes } from 'styled-components'
+import { Box, type BoxProps } from '../Box'
+import {
+  VARIATION_BACKGROUND_COLORS,
+  VARIATION_GLARE_GRADIENTS,
+  VariationType,
+  type ShimmerVariation,
+} from './constants'
 
 const animation = (props) => keyframes`
   0% {
@@ -41,15 +45,14 @@ const Glare = styled.span`
   }
 `
 
-const propTypes = {
-  ...Box.propTypes,
-  animationWidth: PropTypes.number,
-  className: PropTypes.string,
-  disable: PropTypes.bool,
-  variation: PropTypes.oneOf([VariationType.Base, VariationType.Light, VariationType.Dark]),
+export type ShimmerProps = BoxProps & {
+  animationWidth?: number
+  className?: string
+  disable?: boolean
+  variation?: ShimmerVariation
 }
 
-const Shimmer: React.FC<InferProps<typeof propTypes>> = ({ animationWidth, disable, ...props }) => {
+export function Shimmer({ animationWidth, disable, ...props }: ShimmerProps): JSX.Element {
   return (
     <Wrapper {...props} data-testid='Shimmer__Wrapper'>
       {!disable && (
@@ -66,7 +69,3 @@ Shimmer.defaultProps = {
   disable: false,
   variation: VariationType.Base,
 }
-
-Shimmer.propTypes = propTypes
-
-export default Shimmer

@@ -1,3 +1,1 @@
-import ChipContent from './ChipContent'
-
-export { ChipContent }
+export { ChipContent, type ChipContentProps, type IconComponent } from './ChipContent'

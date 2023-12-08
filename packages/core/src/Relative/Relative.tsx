@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, IBoxProps } from '../Box'
+import { Box, BoxProps } from '../Box'
 import {
   top,
   right,
@@ -23,13 +23,7 @@ const relativePropTypes = {
   ...propTypes.zIndex,
 }
 
-export interface IRelativeProps
-  extends TopProps,
-    RightProps,
-    BottomProps,
-    LeftProps,
-    ZIndexProps,
-    IBoxProps {}
+export interface IRelativeProps extends TopProps, RightProps, BottomProps, LeftProps, ZIndexProps, BoxProps {}
 
 const Relative: React.FC<IRelativeProps> = styled(Box)`
   position: relative;

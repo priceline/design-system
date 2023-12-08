@@ -2,22 +2,19 @@ import { themeGet } from '@styled-system/theme-get'
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {
+  BoxShadowProps,
+  HeightProps,
+  SpaceProps,
+  WidthProps,
   borderRadius,
   boxShadow,
-  BoxShadowProps,
   compose,
   fontSize,
-  space,
-  SpaceProps,
-  width,
-  WidthProps,
   height,
-  HeightProps,
+  space,
+  width,
 } from 'styled-system'
-
-import { Flex } from '../Flex'
-import { IFlexProps } from '../Flex'
-
+import { Flex, type IFlexProps } from '../Flex'
 import {
   applySizes,
   applyVariations,
@@ -186,27 +183,26 @@ const variations = {
 export type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
 export type Variations = 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
 
-export type StyledButtonProps = IButtonProps & { hasChildren: boolean }
-export interface IButtonProps
-  extends WidthProps,
-    HeightProps,
-    SpaceProps,
-    BoxShadowProps,
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    React.RefAttributes<unknown> {
-  color?: string
-  variation?: Variations
-  size?: Sizes | Sizes[]
-  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
-  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
-  autoFocus?: boolean
-  IconLeft?: React.Component
-  IconRight?: React.Component
-  flexProps?: IFlexProps
-  onClick?: (unknown) => unknown
-  onFocus?: (unknown) => unknown
-  onMouseEnter?: (unknown) => unknown
-}
+export type StyledButtonProps = ButtonProps & { hasChildren: boolean }
+export type ButtonProps = WidthProps &
+  HeightProps &
+  SpaceProps &
+  BoxShadowProps &
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.RefAttributes<unknown> & {
+    color?: string
+    variation?: Variations
+    size?: Sizes | Sizes[]
+    borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
+    boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
+    autoFocus?: boolean
+    IconLeft?: React.Component
+    IconRight?: React.Component
+    flexProps?: IFlexProps
+    onClick?: (unknown) => unknown
+    onFocus?: (unknown) => unknown
+    onMouseEnter?: (unknown) => unknown
+  }
 
 export const buttonStyles = css`
   -webkit-font-smoothing: antialiased;
@@ -333,7 +329,7 @@ const ButtonIcon = ({ Component, ...props }) => {
   return Component ? <Component {...props} /> : null
 }
 
-const Button = React.forwardRef((props: IButtonProps, ref) => {
+export const Button = React.forwardRef((props: ButtonProps, ref) => {
   const { children, ...restProps } = props
   const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props
   const hasChildren = React.Children.toArray(children).length > 0
@@ -358,5 +354,3 @@ Button.defaultProps = {
 }
 
 Button.displayName = 'Button'
-
-export default Button

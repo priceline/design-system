@@ -18,20 +18,6 @@ exports[`GenericBanner renders 1`] = `
   padding-right: 8px;
 }
 
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-top: -2px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c5 {
-  outline: none;
-}
-
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -60,6 +46,20 @@ exports[`GenericBanner renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-top: -2px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c5 {
+  outline: none;
 }
 
 .c7 {
@@ -113,14 +113,6 @@ exports[`GenericBanner renders 1`] = `
         >
           <div
             className="c9"
-            fontSize={
-              Array [
-                0,
-                null,
-                null,
-                1,
-              ]
-            }
           />
         </div>
       </div>

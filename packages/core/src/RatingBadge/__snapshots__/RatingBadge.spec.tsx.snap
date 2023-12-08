@@ -10,13 +10,6 @@ exports[`RatingBadge renders 1`] = `
   border-radius: 8px;
 }
 
-.c2 {
-  display: inline-block;
-  line-height: 1.5;
-  font-weight: 700;
-  border-radius: 8px;
-}
-
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -25,6 +18,13 @@ exports[`RatingBadge renders 1`] = `
 
 .c0 * {
   box-sizing: border-box;
+}
+
+.c2 {
+  display: inline-block;
+  line-height: 1.5;
+  font-weight: 700;
+  border-radius: 8px;
 }
 
 <div

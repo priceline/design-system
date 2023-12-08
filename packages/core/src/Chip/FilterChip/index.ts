@@ -1,1 +1,1 @@
-export { default as FilterChip } from './FilterChip'
+export { FilterChip, type FilterChipProps } from './FilterChip'

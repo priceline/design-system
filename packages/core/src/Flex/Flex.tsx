@@ -16,7 +16,7 @@ import {
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 
-import { Box, IBoxProps } from '../Box'
+import { Box, BoxProps } from '../Box'
 
 import { applyVariations, deprecatedColorValue } from '../utils'
 
@@ -32,7 +32,7 @@ const flexPropTypes = {
 }
 
 export interface IFlexProps
-  extends IBoxProps,
+  extends BoxProps,
     SpaceProps,
     WidthProps,
     AlignItemsProps,

@@ -1,14 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
+import { userEvent, within } from '@storybook/testing-library'
 import React from 'react'
-
-import type { ICloseButtonProps } from '..'
-import { CloseButton, Flex, Grid, Text, paletteColors } from '..'
+import { Flex } from '../Flex'
+import { Grid } from '../Grid'
+import { Text } from '../Text'
+import { paletteColors } from '../theme'
+import { CloseButton, type CloseButtonProps } from './CloseButton'
 import { argTypes, defaultArgs } from './CloseButton.stories.args'
 import { CloseButtonSize } from './CloseButton.styled'
-import { userEvent, within } from '@storybook/testing-library'
 
-type CloseButtonStory = StoryObj<ICloseButtonProps>
+type CloseButtonStory = StoryObj<CloseButtonProps>
 
 const meta: Meta<typeof CloseButton> = {
   title: 'CloseButton',

@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components'
-
 import { createTheme } from '../utils'
 
 export const Base = styled.div`
@@ -14,44 +12,43 @@ export const Base = styled.div`
   }
 `
 
-const propTypes = {
-  /** The theme to drive the look and feel */
-  theme: PropTypes.shape({
-    breakpoints: PropTypes.arrayOf(PropTypes.string),
-    mediaQueries: PropTypes.arrayOf(PropTypes.string),
-    space: PropTypes.arrayOf(PropTypes.number),
-    font: PropTypes.string,
-    fontSizes: PropTypes.arrayOf(PropTypes.number),
-    fontWeights: PropTypes.shape({
-      medium: PropTypes.number,
-      bold: PropTypes.number,
-      regular: PropTypes.number,
-    }),
-    lineHeights: PropTypes.shape({
-      standard: PropTypes.number,
-      display: PropTypes.number,
-    }),
-    letterSpacings: PropTypes.shape({
-      normal: PropTypes.string,
-      caps: PropTypes.string,
-    }),
-    regular: PropTypes.number,
-    bold: PropTypes.number,
-    colors: PropTypes.object,
-    palette: PropTypes.object,
-    radii: PropTypes.arrayOf(PropTypes.number),
-    radius: PropTypes.string,
-    boxShadows: PropTypes.arrayOf(PropTypes.string),
-    maxContainerWidth: PropTypes.string,
-    duration: PropTypes.object,
-    timingFunctions: PropTypes.object,
-    transitionDelays: PropTypes.object,
-  }),
-  /** Array of pixel values for custom breakpoint overrides */
-  customBreakpoints: PropTypes.arrayOf(PropTypes.string),
+export type ThemeProviderProps = {
+  theme?: {
+    breakpoints?: string[]
+    mediaQueries?: string[]
+    space?: number[]
+    font?: string
+    fontSizes?: number[]
+    fontWeights?: {
+      medium?: number
+      bold?: number
+      regular?: number
+    }
+    lineHeights?: {
+      standard?: number
+      display?: number
+    }
+    letterSpacings?: {
+      normal?: string
+      caps?: string
+    }
+    regular?: number
+    bold?: number
+    colors?: object
+    palette?: object
+    radii?: number[]
+    radius?: string
+    boxShadows?: string[]
+    maxContainerWidth?: string
+    duration?: object
+    timingFunctions?: object
+    transitionDelays?: object
+  }
+  children?: React.ReactNode
+  customBreakpoints?: string[]
 }
 
-const ThemeProvider: React.FC<InferProps<typeof propTypes>> = ({ theme, customBreakpoints, ...props }) => {
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, customBreakpoints, ...props }) => {
   // Once updated to React 16.8 this should be wrapped in React.useMemo()
   const mergedTheme = (existingTheme) => createTheme(theme, customBreakpoints, existingTheme)
 
@@ -61,7 +58,3 @@ const ThemeProvider: React.FC<InferProps<typeof propTypes>> = ({ theme, customBr
     </StyledThemeProvider>
   )
 }
-
-ThemeProvider.propTypes = propTypes
-
-export { ThemeProvider }

@@ -10,6 +10,13 @@ exports[`Avatar renders default 1`] = `
   padding: 8px;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -20,13 +27,6 @@ exports[`Avatar renders default 1`] = `
 
 .c4 {
   outline: none;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c2 {

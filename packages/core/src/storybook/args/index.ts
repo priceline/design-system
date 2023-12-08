@@ -1,17 +1,16 @@
+import { colorSchemeNames as colorSchemeNamesArr, paletteFamilyNames, zIndices } from '../../theme'
 import {
   borderRadiusValues,
   boxShadowSizeValues,
-  paletteFamilies,
-  roundedValues,
-  textStylesValues,
   objectFitValues,
   objectPositionValues,
+  roundedValues,
+  textStylesValues,
 } from '../../utils'
-import { zIndices, colorSchemeNames as colorSchemeNamesArr } from '../../theme'
 
 export const colorSchemeNames = colorSchemeNamesArr
 
-export const colors = ['', ...paletteFamilies, 'NOTVALID']
+export const colors = ['', ...paletteFamilyNames, 'NOTVALID']
 
 export const borderRadii = ['', ...borderRadiusValues, 'NOTVALID']
 
@@ -71,8 +70,8 @@ export const objectFits = ['', ...objectFitValues, 'NOTVALID']
 export const objectPositions = ['', ...objectPositionValues, 'NOTVALID']
 export const zIndicies = zIndices
 export const chipWithShadowVariationArgs = [
-  { label: 'Enabled', variation: 'shadow'},
-  { label: 'Selected', selected: true, variation: 'shadow'},
-  { label: 'Disabled', disabled: true, variation: 'shadow'},
-  { label: 'Selected Disabled', disabled: true, selected: true, variation: 'shadow'},
+  { label: 'Enabled', variation: 'shadow' },
+  { label: 'Selected', selected: true, variation: 'shadow' },
+  { label: 'Disabled', disabled: true, variation: 'shadow' },
+  { label: 'Selected Disabled', disabled: true, selected: true, variation: 'shadow' },
 ]

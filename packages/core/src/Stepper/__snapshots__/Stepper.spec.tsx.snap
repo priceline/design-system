@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper renders with children 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #0068ef;
-  margin-right: 4px;
-  width: 16px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -35,6 +21,20 @@ exports[`Stepper renders with children 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #0068ef;
+  margin-right: 4px;
+  width: 16px;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c7 {

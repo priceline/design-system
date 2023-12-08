@@ -1,3 +1,1 @@
-export type { ICardProps } from './Card'
-
-export { default as Card } from './Card'
+export { Card, type CardProps } from './Card'

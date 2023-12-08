@@ -1,17 +1,19 @@
 /* eslint-disable no-script-url */
 import type { Meta, StoryObj } from '@storybook/react'
-import type { IDialogProps, IGridProps } from '..'
-
+import { userEvent, within } from '@storybook/testing-library'
 import { Discount } from 'pcln-icons'
 import React, { useState } from 'react'
-
-import { Box, Breadcrumbs, Button, Dialog, Grid, Text } from '..'
+import { Box } from '../Box'
+import { Breadcrumbs } from '../Breadcrumbs'
+import { Button } from '../Button'
+import { Grid, type IGridProps } from '../Grid'
+import { Text } from '../Text'
+import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
-import { userEvent, within } from '@storybook/testing-library'
 
-type DialogStory = StoryObj<IDialogProps>
+type DialogStory = StoryObj<DialogProps>
 
-const exampleHeaderProps: Partial<IDialogProps> = {
+const exampleHeaderProps: Partial<DialogProps> = {
   headerColorScheme: 'neutralDarkOnLightest',
   headerContent: 'Hello World',
   headerIcon: <Discount />,
@@ -129,7 +131,7 @@ export const StickyHeader: DialogStory = {
 
 export const ScrimColors: DialogStory = {
   render: (args) => {
-    const [scrimColor, setScrimColor] = useState<IDialogProps['scrimColor']>('dark')
+    const [scrimColor, setScrimColor] = useState<DialogProps['scrimColor']>('dark')
 
     return (
       <Dialog {...args} headerIcon={args.headerIcon && exampleHeaderProps.headerIcon} scrimColor={scrimColor}>

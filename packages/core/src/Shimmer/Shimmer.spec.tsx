@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-import { Shimmer } from '..'
+import { Shimmer } from './Shimmer'
 
 describe('Shimmer', () => {
   test('should render correctly', () => {

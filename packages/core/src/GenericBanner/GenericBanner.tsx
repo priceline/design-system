@@ -127,7 +127,11 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
-          <Box px={2} fontSize={fontSize}>
+          {/*
+            fontSize is not a prop Box supports
+            <Box px={2} fontSize={fontSize}>
+          */}
+          <Box px={2}>
             {!!heading &&
               React.cloneElement(heading, {
                 fontSize: heading.props.fontSize || fontSize,

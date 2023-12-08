@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 import { Absolute } from '../Absolute'
 
-const AbsoluteTransformLeft = styled(Absolute)`
+export const AbsoluteTransformLeft = styled(Absolute)`
   transform: translateX(-50%);
 `
 
-const AbsoluteTransformRight = styled(Absolute)`
+export const AbsoluteTransformRight = styled(Absolute)`
   transform: translateX(50%);
 `
 
-const ARROW_SIZES = {
+export const ARROW_SIZES = {
   sm: {
     buttonSize: 40,
     iconSize: 32,
@@ -19,5 +19,3 @@ const ARROW_SIZES = {
     iconSize: [32, null, null, null, 40],
   },
 }
-
-export { AbsoluteTransformLeft, AbsoluteTransformRight, ARROW_SIZES }

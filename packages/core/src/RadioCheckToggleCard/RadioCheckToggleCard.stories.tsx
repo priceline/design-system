@@ -1,8 +1,15 @@
 import { Meta, StoryObj } from '@storybook/react'
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Box, Button, Flex, Image, Input, Text, ThemeProvider, theme } from '..'
+import { Box } from '../Box'
+import { Button } from '../Button'
 import { Section } from '../DocsUtils'
+import { Flex } from '../Flex'
+import { Image } from '../Image'
+import { Input } from '../Input'
+import { Text } from '../Text'
+import { ThemeProvider } from '../ThemeProvider'
+import { theme } from '../theme'
 import { getPaletteColor } from '../utils'
 import { RadioCheckToggleCard, TCardTypes, THPositions, TVPositions } from './RadioCheckToggleCard'
 import { argTypes } from './RadioCheckToggleCard.stories.args'
@@ -16,7 +23,7 @@ const exampleImage = () => (
   <Image borderRadius='lg' src='https://s1.pclncdn.com/design-assets/hero/beach.jpg' />
 )
 const exampleInput = ({ disabled }) => (
-  <Box width='100%' mt={2} style={{ backgroundColor: getPaletteColor('background.lightest') }}>
+  <Box width='100%' mt={2} bg='background.lightest'>
     <Input
       borderRadius='lg'
       style={{ background: theme.colors.lightestBackground }}

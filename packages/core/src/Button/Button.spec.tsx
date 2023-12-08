@@ -1,13 +1,10 @@
-import React from 'react'
-import { render } from '../__test__/testing-library'
-
-import styled from 'styled-components'
 import { User } from 'pcln-icons'
-
-import { Button, createTheme } from '..'
-
+import React from 'react'
+import styled from 'styled-components'
+import { render } from '../__test__/testing-library'
 import { borderRadii as borderRadius, shadows } from '../theme'
-import { boxShadowSizeValues } from '../utils'
+import { boxShadowSizeValues, createTheme } from '../utils'
+import { Button } from './Button'
 
 const theme = createTheme()
 

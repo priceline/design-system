@@ -1,4 +1,4 @@
-import type { IButtonProps } from '../Button'
+import type { ButtonProps } from '../Button'
 
 import React from 'react'
 import styled from 'styled-components'
@@ -31,7 +31,7 @@ const propTypes = {
   icon: PropTypes.node,
 }
 
-export interface IIconButtonProps extends IButtonProps {
+export interface IIconButtonProps extends ButtonProps {
   icon: React.ReactNode
   autoFocus?: boolean
 }

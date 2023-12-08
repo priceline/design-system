@@ -1,6 +1,6 @@
 import React from 'react'
-import { render, fireEvent } from '../../__test__/testing-library'
-import FilterChip from './FilterChip'
+import { fireEvent, render } from '../../__test__/testing-library'
+import { FilterChip } from './FilterChip'
 
 const props = {
   id: 'testId',

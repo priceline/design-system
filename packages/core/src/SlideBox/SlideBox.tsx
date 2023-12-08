@@ -1,14 +1,15 @@
-import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
-import { getVisibleSlides, getCustomWidths } from './helpers'
-import { ScrollFlex } from './SlideBox.styled'
+import React, { useEffect, useRef } from 'react'
+import { type ArrowPosition } from './Arrow'
+import { BottomArrows } from './BottomArrows'
 import { Slide } from './Slide'
+import { ScrollFlex } from './SlideBox.styled'
 import { SlideBoxWrapper } from './SlideBoxWrapper'
 import { TopArrows } from './TopArrows'
-import { BottomArrows } from './BottomArrows'
+import { getCustomWidths, getVisibleSlides } from './helpers'
 import { useSlideBoxNav } from './useSlideBoxNav'
 
-export interface ISlideBoxProps {
+export type SlideBoxProps = {
   children?: React.ReactNode | string
   visibleSlides?: Array<number> | number
   onSlideChange?: (unknown) => unknown
@@ -18,12 +19,12 @@ export interface ISlideBoxProps {
   currentSlideOverride?: number
   arrowSizeOverride?: string
   arrowButtonVariation?: 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
-  arrowPosition?: 'top' | 'bottom' | 'side' | 'hide'
+  arrowPosition?: ArrowPosition
   slideScrollNum?: number
   mobileSlideScrollNum?: number
 }
 
-const SlideBox: React.FC<ISlideBoxProps> = ({
+export function SlideBox({
   children,
   visibleSlides,
   onSlideChange,
@@ -36,7 +37,7 @@ const SlideBox: React.FC<ISlideBoxProps> = ({
   arrowPosition = 'hide',
   slideScrollNum = 2,
   mobileSlideScrollNum = 1,
-}) => {
+}: SlideBoxProps): JSX.Element {
   const childArray = React.Children.toArray(children)
   const ref = useRef()
   const { setCurrentSlide, currentSlide, onSlideChangeWrapper, arrowProps } = useSlideBoxNav({
@@ -55,7 +56,7 @@ const SlideBox: React.FC<ISlideBoxProps> = ({
   }, [currentSlideOverride])
 
   return (
-    <SlideBoxWrapper alignItems='center' arrowPosition={arrowPosition}>
+    <SlideBoxWrapper arrowPosition={arrowPosition}>
       <TopArrows arrowProps={arrowProps} arrowPosition={arrowPosition} />
       <ScrollFlex width='100%' py={2} data-testid='slide-box' ref={ref}>
         {childArray.map((item: PropTypes.node, index: number) => (
@@ -77,21 +78,3 @@ const SlideBox: React.FC<ISlideBoxProps> = ({
     </SlideBoxWrapper>
   )
 }
-
-//SlideBox props
-SlideBox.propTypes = {
-  children: PropTypes.node,
-  visibleSlides: PropTypes.oneOf([PropTypes.array, PropTypes.humber]),
-  onSlideChange: PropTypes.func,
-  slideSpacing: PropTypes.number,
-  stretchHeight: PropTypes.bool,
-  layout: PropTypes.string,
-  currentSlideOverride: PropTypes.number,
-  arrowSizeOverride: PropTypes.string,
-  arrowButtonVariation: PropTypes.string,
-  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
-  slideScrollNum: PropTypes.num,
-  mobileSlideScrollNum: PropTypes.num,
-}
-
-export { SlideBox }

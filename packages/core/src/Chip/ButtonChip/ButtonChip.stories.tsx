@@ -1,6 +1,6 @@
 import React from 'react'
 import { Departure, Broom } from 'pcln-icons'
-import ButtonChip from './ButtonChip'
+import { ButtonChip } from './ButtonChip'
 import { Box } from '../../Box'
 import { Text } from '../../Text'
 import { chipWithShadowVariationArgs } from '../../storybook/args'

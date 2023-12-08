@@ -2,20 +2,26 @@
 // todo: remove coverage ignore once storybook interaction test coverage counts
 
 import React, { useState } from 'react'
-import { Absolute, IAbsoluteProps } from '../Absolute'
+import { Absolute, type AbsoluteProps } from '../Absolute'
 import { Animate } from '../Animate'
 import { Box } from '../Box'
 import { Tooltip } from '../Tooltip'
 import { NotificationDot, StyledButton } from './FloatingActionButton.styled'
 
-export interface IFloatingActionButton extends IAbsoluteProps {
+export type FloatingActionButtonProps = AbsoluteProps & {
   hasNotification?: boolean
   icon: React.Component
   tooltip?: string
   onClick: () => void
 }
 
-function FloatingActionButton({ hasNotification, icon, tooltip, onClick, ...props }: IFloatingActionButton) {
+export function FloatingActionButton({
+  hasNotification,
+  icon,
+  tooltip,
+  onClick,
+  ...props
+}: FloatingActionButtonProps): JSX.Element {
   const [isTooltipOpen, setTooltipOpen] = useState(false)
 
   function onMouseOver() {
@@ -50,5 +56,3 @@ function FloatingActionButton({ hasNotification, icon, tooltip, onClick, ...prop
     </Absolute>
   )
 }
-
-export default FloatingActionButton

@@ -10,20 +10,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   margin-right: -40px;
 }
 
-.c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c8 {
-  outline: none;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -40,6 +26,20 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c8 {
+  outline: none;
 }
 
 .c3 {
@@ -60,14 +60,14 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c2 {
-  background-color: #edf0f3;
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
-.c2.c2.c2 * {
-  background-color: transparent;
-  color: #4f6f8f;
-  cursor: not-allowed;
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c9 {
@@ -122,14 +122,14 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   box-shadow: 0 0 0 2px #0068ef;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
+.c2 {
+  background-color: #edf0f3;
 }
 
-.c0 * {
-  box-sizing: border-box;
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width:32em) {
@@ -214,6 +214,24 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   width: 100%;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c7 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -242,24 +260,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   outline: none;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c3 {
   display: block;
   width: 100%;
@@ -276,6 +276,16 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -327,16 +337,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 @media screen and (min-width:32em) {
@@ -586,20 +586,6 @@ exports[`FormField renders with Icon 1`] = `
   margin-right: -40px;
 }
 
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -616,6 +602,20 @@ exports[`FormField renders with Icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c1 {
@@ -780,20 +780,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin-right: -40px;
 }
 
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -810,6 +796,20 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c1 {
@@ -974,6 +974,17 @@ exports[`FormField renders with Select  1`] = `
   width: 100%;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -986,17 +997,6 @@ exports[`FormField renders with Select  1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c1 {
@@ -1151,6 +1151,24 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 100%;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -1177,24 +1195,6 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c1 {

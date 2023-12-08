@@ -1,4 +1,4 @@
-import type { IButtonProps } from '../Button'
+import type { ButtonProps } from '../Button'
 
 import React from 'react'
 import styled from 'styled-components'
@@ -21,7 +21,7 @@ const Template = (args: ILinkProps) => <Link {...args} />
 
 export const _Link = Template.bind({})
 
-type ButtonStory = StoryObj<IButtonProps>
+type ButtonStory = StoryObj<ButtonProps>
 
 export const Playground: ButtonStory = {
   render: (args) => <Button {...args}>Button</Button>,

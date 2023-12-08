@@ -1,8 +1,8 @@
-import React from 'react'
 import { expect } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
-import ChatTrigger from './ChatTrigger'
+import { userEvent, within } from '@storybook/testing-library'
+import React from 'react'
 import { Relative } from '../Relative'
+import { ChatTrigger } from './ChatTrigger'
 
 export default {
   title: 'Chat / ChatTrigger',

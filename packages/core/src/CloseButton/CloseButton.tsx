@@ -1,5 +1,6 @@
 import React, { MouseEventHandler, useState } from 'react'
-import { Relative, type BoxShadowSize, type IStyledSystemProps, type PaletteColor } from '..'
+import { Relative } from '../Relative'
+import { type BoxShadowSize, type IStyledSystemProps, type PaletteColor } from '../theme'
 import {
   BackgroundAnimation,
   CloseButtonSize,
@@ -9,7 +10,7 @@ import {
   closeButtonVariantProps,
 } from './CloseButton.styled'
 
-export interface ICloseButtonProps extends IStyledSystemProps {
+export type CloseButtonProps = IStyledSystemProps & {
   animate?: boolean
   bgColor?: PaletteColor
   boxShadowSize?: BoxShadowSize
@@ -32,7 +33,7 @@ export const CloseButton = ({
   title = 'close',
   variant,
   ...props
-}: ICloseButtonProps) => {
+}: CloseButtonProps) => {
   const [hover, setHover] = useState(false)
 
   return (
@@ -59,5 +60,3 @@ export const CloseButton = ({
     </Relative>
   )
 }
-
-export default CloseButton

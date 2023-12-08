@@ -1,8 +1,9 @@
-import styled, { css } from 'styled-components'
-import { space, fontSize, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
-import { getPaletteColor, applySizes, applyVariations } from '../utils'
-import { Box, IBoxProps } from '../Box'
+import styled, { css } from 'styled-components'
+import { compose, fontSize, space } from 'styled-system'
+import { Box, type BoxProps } from '../Box'
+import { type ChipContentVariation } from '../Chip/ChipContent/ChipContent'
+import { applySizes, applyVariations, getPaletteColor } from '../utils'
 
 const getSizes = ({
   hasChildren,
@@ -49,15 +50,17 @@ const variations = {
   `,
 }
 
-interface IChipContentWrapper extends IBoxProps {
+export type ChipContentWrapperProps = BoxProps & {
+  borderRadiusOverride?: string
   disabled: boolean
   hasChildren: boolean
-  selected: boolean
   hasTopLabel: boolean
-  borderRadiusOverride?: string
+  justifyContent?: string
+  selected: boolean
+  variation: ChipContentVariation
 }
 
-const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
+export const ChipContentWrapper: React.FC<ChipContentWrapperProps> = styled(Box)`
   ${(props) => `
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
@@ -67,7 +70,7 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
     };
     ${
       props.disabled
-        ? ``
+        ? ''
         : `
           &:hover {
             border: 1px solid ${getPaletteColor('base')(props)};
@@ -105,5 +108,3 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
 
   ${(props) => compose(space, fontSize)(props)}
 `
-
-export { ChipContentWrapper }

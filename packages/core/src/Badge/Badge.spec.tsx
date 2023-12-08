@@ -1,6 +1,7 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { Badge, theme } from '..'
+import { theme } from '../theme'
+import { Badge } from './Badge'
 
 describe('Badge', () => {
   let consoleError

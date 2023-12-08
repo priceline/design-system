@@ -1,7 +1,15 @@
 import { Information as InformationIcon, Pin as PinIcon, Search as SearchIcon } from 'pcln-icons'
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
-import { Box, Button, Flex, FormField, getPaletteColor, Input, Label, Popout, Text } from '..'
+import { Box } from '../Box'
+import { Button } from '../Button'
+import { Flex } from '../Flex'
+import { FormField } from '../FormField'
+import { Input } from '../Input'
+import { Label } from '../Label'
+import { Popout } from '../Popout'
+import { Text } from '../Text'
+import { getPaletteColor } from '../utils'
 
 export default {
   component: Popout,
