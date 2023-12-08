@@ -40,7 +40,7 @@
     "yargs": "^17.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.19",
+    "@types/node": "^20.10.4",
     "eslint": "^8.48.0",
     "typescript": "^5.3.3"
   }

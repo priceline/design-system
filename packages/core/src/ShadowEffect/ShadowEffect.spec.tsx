@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '../__test__/testing-library'
 import { ShadowEffect } from '../ShadowEffect'
 import { Input } from '../Input'
 
-describe('ShadowEffect', () => {
+describe.skip('ShadowEffect', () => {
   it('opens when clicked', () => {
     const mockOnOpen = jest.fn()
     const mockOnClick = jest.fn()

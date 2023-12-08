@@ -1,12 +1,13 @@
-import React from 'react'
-import type { StoryObj } from '@storybook/react'
 import { expect } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
+import type { StoryObj } from '@storybook/react'
+import { userEvent, within } from '@storybook/testing-library'
+import { Sparkle } from 'pcln-icons'
+import React from 'react'
+
 import { Flex } from '../Flex'
 import { Stamp } from '../Stamp'
 import { Text } from '../Text'
-import { Sparkle } from 'pcln-icons'
-import ChatHeader, { IChatHeader } from './ChatHeader'
+import { ChatHeader, type ChatHeaderProps } from './ChatHeader'
 
 export default {
   title: 'Chat / ChatHeader',
@@ -17,7 +18,7 @@ export default {
   },
 }
 
-type ChatHeaderStory = StoryObj<IChatHeader>
+type ChatHeaderStory = StoryObj<ChatHeaderProps>
 
 const Children = (
   <Flex alignItems='center'>

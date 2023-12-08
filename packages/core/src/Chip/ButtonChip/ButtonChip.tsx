@@ -48,24 +48,26 @@ const buttonChipPropTypes = {
 
 export type Variations = 'outline' | 'shadow'
 
-export interface IButtonChipProps extends SpaceProps, FontSizeProps {
-  Icon?: React.ReactNode | string
-  BridgeIcon?: React.ReactNode | string
-  selected?: boolean
-  disabled?: boolean
-  showActionIcon?: boolean
-  facet?: string
-  label?: string
-  bridgeLabel?: string
-  onClick?: (unknown) => unknown
-  expanded?: boolean
-  id?: string
-  color?: string
-  width?: string
-  variation?: Variations
-}
+export type ButtonChipProps = SpaceProps &
+  FontSizeProps & {
+    BridgeIcon?: React.ReactNode | string
+    bridgeLabel?: string
+    children?: React.ReactNode
+    color?: string
+    disabled?: boolean
+    expanded?: boolean
+    facet?: string
+    Icon?: React.ReactNode | string
+    id?: string
+    label?: string
+    selected?: boolean
+    showActionIcon?: boolean
+    onClick?: (unknown) => unknown
+    width?: string
+    variation?: Variations
+  }
 
-const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
+const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef(
   (
     {
       color,

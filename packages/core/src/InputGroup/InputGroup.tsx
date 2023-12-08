@@ -13,11 +13,12 @@ const inputGroupPropTypes = {
   borderColor: PropTypes.string,
 }
 
-export interface IInputGroupProps extends SpaceProps {
+export type InputGroupProps = SpaceProps & {
   borderColor?: string
+  children?: React.ReactNode
 }
 
-const InputGroup: React.FC<IInputGroupProps> = styled.div`
+export const InputGroup: React.FC<InputGroupProps> = styled.div`
   display: flex;
   align-items: center;
   border-radius: ${themeGet('borderRadii.xl')};
@@ -43,5 +44,3 @@ InputGroup.propTypes = inputGroupPropTypes
 InputGroup.defaultProps = {
   borderColor: 'border',
 }
-
-export default InputGroup

@@ -77,16 +77,19 @@ const stampPropTypes = {
   borderColor: deprecatedColorValue(),
 }
 
-export interface IStampPropTypes extends SpaceProps, FontSizeProps, BorderRadiusProps {
-  color?: string
-  bg?: string
-  borderColor?: string
-  size?: 'small' | 'medium'
-  variation?: 'outline' | 'fill' | 'solid'
-  colorScheme?: ColorSchemeName
-}
+export type StampProps = SpaceProps &
+  FontSizeProps &
+  BorderRadiusProps & {
+    bg?: string
+    borderColor?: string
+    children?: React.ReactNode
+    color?: string
+    size?: 'small' | 'medium'
+    variation?: 'outline' | 'fill' | 'solid'
+    colorScheme?: ColorSchemeName
+  }
 
-const Stamp: React.FC<IStampPropTypes> = styled.div.attrs(borderRadiusAttrs)`
+export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -119,5 +122,3 @@ Stamp.defaultProps = {
   size: 'medium',
   variation: 'outline',
 }
-
-export default Stamp

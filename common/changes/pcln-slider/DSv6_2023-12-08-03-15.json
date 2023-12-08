@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "React 18 upgrade",
+      "type": "major",
+      "packageName": "pcln-slider"
+    }
+  ],
+  "packageName": "pcln-slider",
+  "email": "steven.dalonzo@priceline.com"
+}

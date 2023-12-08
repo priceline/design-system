@@ -2,7 +2,10 @@ import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
-import { Button, Input, theme, createTheme, getPaletteColor } from '..'
+import { Button } from '../Button'
+import { theme } from '../theme'
+import { createTheme, getPaletteColor } from '../utils'
+import { Input } from './Input'
 
 const id = 'fake-test-id'
 

@@ -12,7 +12,7 @@ import {
 } from 'styled-system'
 import propTypes from '@styled-system/prop-types'
 import PropTypes from 'prop-types'
-import { Text, ITextProps } from '../Text'
+import { Text, type TextProps } from '../Text'
 import {
   applyVariations,
   getPaletteColor,
@@ -84,24 +84,24 @@ const inputPropTypes = {
   ...propTypes.fontSize,
 }
 
-export interface IInputProps
-  extends SpaceProps,
-    FontSizeProps,
-    ZIndexProps,
-    Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>,
-    React.RefAttributes<HTMLInputElement> {
-  onChange?: (unknown) => unknown
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  helperText?: React.ReactElement<any, string | React.JSXElementConstructor<any>>
-  color?: string
-  size?: 'sm' | 'md' | 'lg' | 'xl'
-  borderRadius?: string
-}
+export type InputProps = SpaceProps &
+  FontSizeProps &
+  ZIndexProps &
+  Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> &
+  React.RefAttributes<HTMLInputElement> & {
+    children?: React.ReactNode
+    onChange?: (unknown) => unknown
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    helperText?: React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    color?: string
+    size?: 'sm' | 'md' | 'lg' | 'xl'
+    borderRadius?: string
+  }
 
-export const Input: React.FC<IInputProps> & {
+export const Input: React.FC<InputProps> & {
   isField?: boolean
-  HelperText?: React.FC<ITextProps>
-} = React.forwardRef((props: IInputProps, ref) => {
+  HelperText?: React.FC<TextProps>
+} = React.forwardRef((props: InputProps, ref) => {
   const { helperText, color, ...restProps } = props
   return (
     <>
@@ -114,12 +114,16 @@ export const Input: React.FC<IInputProps> & {
   )
 })
 
-const HelperText = styled(Text).attrs(() => ({
+const HelperText: React.FC<InputHelperTextProps> = styled(Text).attrs(() => ({
   mt: 2,
   fontSize: 1,
 }))``
 
-Input.HelperText = (props) => <HelperText {...props}>{props.children}</HelperText>
+export type InputHelperTextProps = TextProps & {
+  children?: React.ReactNode
+}
+
+Input.HelperText = (props: InputHelperTextProps) => <HelperText {...props}>{props.children}</HelperText>
 
 Input.HelperText.displayName = INPUT_ERROR_TEXT
 
@@ -131,5 +135,3 @@ Input.defaultProps = {
   size: 'lg',
 }
 Input.propTypes = inputPropTypes
-
-export default Input

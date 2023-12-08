@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "React 18 upgrade",
+      "type": "major",
+      "packageName": "pcln-codemods"
+    }
+  ],
+  "packageName": "pcln-codemods",
+  "email": "steven.dalonzo@priceline.com"
+}

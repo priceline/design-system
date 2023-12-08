@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "React 18 upgrade",
+      "type": "major",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "steven.dalonzo@priceline.com"
+}

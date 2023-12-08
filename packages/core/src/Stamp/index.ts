@@ -1,1 +1,1 @@
-export { default as Stamp } from './Stamp'
+export { Stamp, type StampProps } from './Stamp'

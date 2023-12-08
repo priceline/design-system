@@ -111,28 +111,28 @@ const textPropTypes = {
   textWrap: PropTypes.oneOf(textWrapValues),
 }
 
-export interface ITextProps
-  extends DisplayProps,
-    FontSizeProps,
-    FontStyleProps,
-    FontWeightProps,
-    HeightProps,
-    LineHeightProps,
-    MaxHeightProps,
-    MaxWidthProps,
-    MinHeightProps,
-    MinWidthProps,
-    OverflowProps,
-    SpaceProps,
-    TextAlignProps,
-    TextStyleProps,
-    WidthProps,
-    ZIndexProps {
-  color?: string
-  bg?: string
-}
+export type TextProps = DisplayProps &
+  FontSizeProps &
+  FontStyleProps &
+  FontWeightProps &
+  HeightProps &
+  LineHeightProps &
+  MaxHeightProps &
+  MaxWidthProps &
+  MinHeightProps &
+  MinWidthProps &
+  OverflowProps &
+  SpaceProps &
+  TextAlignProps &
+  TextStyleProps &
+  WidthProps &
+  ZIndexProps & {
+    bg?: string
+    children?: React.ReactNode
+    color?: string
+  }
 
-const textProps: React.FC<ITextProps> = css`
+const textProps: React.FC<TextProps> = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
@@ -173,7 +173,7 @@ const textAttrs = (props) => ({
   ...textAlignAttrs(props),
 })
 
-const Text = styled.div.attrs(textAttrs)`
+export const Text = styled.div.attrs(textAttrs)`
   ${textProps}
 `
 
@@ -201,5 +201,3 @@ Text.p.displayName = 'Text.p'
 
 Text.s = Strike
 Text.s.displayName = 'Text.s'
-
-export default Text
