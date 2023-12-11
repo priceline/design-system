@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 07 Dec 2023 17:59:07 GMT and should not be manually modified.
+This log was last generated on Mon, 11 Dec 2023 16:41:10 GMT and should not be manually modified.
+
+## 5.28.3
+Mon, 11 Dec 2023 16:41:10 GMT
+
+### Patches
+
+- remove important on transparent background of link variation of button
 
 ## 5.28.2
 Thu, 07 Dec 2023 17:59:07 GMT

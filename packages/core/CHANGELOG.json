@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "5.28.3",
+      "tag": "pcln-design-system_v5.28.3",
+      "date": "Mon, 11 Dec 2023 16:41:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "remove important on transparent background of link variation of button",
+            "author": "amyamccaskill <amy.mccaskill@priceline.com>",
+            "commit": "f03bc7455b250cbcaa10795cf86682dc213a4f43"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.28.2",
       "tag": "pcln-design-system_v5.28.2",
       "date": "Thu, 07 Dec 2023 17:59:07 GMT",
