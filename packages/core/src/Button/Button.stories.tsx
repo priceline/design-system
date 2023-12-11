@@ -101,12 +101,15 @@ export const TonalVariations: ButtonStory = {
   ),
 }
 
-export const TextButtons: ButtonStory = {
+export const LinkVariation: ButtonStory = {
   render: () => (
     <StoryStage>
-      <Button variation='link'>Button</Button>
+      <Button variation='link'>Enabled</Button>
+      <Button variation='link' disabled>
+        Disabled
+      </Button>
       <Button variation='link'>
-        <Text fontWeight='bold'>Button</Text>
+        <Text fontWeight='bold'>Bold</Text>
       </Button>
     </StoryStage>
   ),
