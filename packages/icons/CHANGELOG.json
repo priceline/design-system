@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.13.0",
+      "tag": "pcln-icons_v5.13.0",
+      "date": "Wed, 13 Dec 2023 22:03:38 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add icon",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "35fa1a78e5484cef82c7f7d760889062fd317ffa"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.12.1",
       "tag": "pcln-icons_v5.12.1",
       "date": "Fri, 20 Oct 2023 16:38:34 GMT",
