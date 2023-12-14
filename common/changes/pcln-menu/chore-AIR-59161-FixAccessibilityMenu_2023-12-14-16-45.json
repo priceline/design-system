@@ -3,7 +3,7 @@
     {
       "packageName": "pcln-menu",
       "comment": "Adding querySelectorPortal prop to menu item to fix the focus issue.",
-      "type": "patch"
+      "type": "minor"
     }
   ],
   "packageName": "pcln-menu"
