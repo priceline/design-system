@@ -17,6 +17,7 @@ function Menu({
   trapFocus,
   placement,
   children,
+  querySelectorPortal,
   ...props
 }) {
   const MenuContent = ({ handleClose }) => (
@@ -57,19 +58,25 @@ function Menu({
   )
 
   return (
-    <Popover
-      aria-controls={id}
-      hideArrow
-      idx={id}
-      placement={placement ?? 'bottom-start'}
-      renderContent={MenuContent}
-      trapFocus={trapFocus}
-      width={width}
-      zIndex={1600}
-      {...props}
-    >
-      <ClickableNode />
-    </Popover>
+    <>
+      <Popover
+        aria-controls={id}
+        hideArrow
+        idx={id}
+        placement={placement ?? 'bottom-start'}
+        renderContent={MenuContent}
+        trapFocus={trapFocus}
+        width={width}
+        zIndex={1600}
+        querySelectorPortal={`.${querySelectorPortal}`}
+        {...props}
+      >
+        <ClickableNode />
+      </Popover>
+      {querySelectorPortal ? (
+        <div style={{ width: 0, display: 'inline-block' }} className={querySelectorPortal} />
+      ) : null}
+    </>
   )
 }
 
@@ -87,6 +94,7 @@ Menu.propTypes = {
   trapFocus: PropTypes.bool,
   placement: PropTypes.string,
   children: PropTypes.node,
+  querySelectorPortal: PropTypes.string,
 }
 
 Menu.defaultProps = {
