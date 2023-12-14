@@ -2,6 +2,20 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "5.4.0",
+      "tag": "pcln-menu_v5.4.0",
+      "date": "Thu, 14 Dec 2023 19:25:06 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adding querySelectorPortal prop to menu item to fix the focus issue.",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "96c754266d44811646bfa3fc82ced73a33df85fc"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.37",
       "tag": "pcln-menu_v5.3.37",
       "date": "Wed, 13 Dec 2023 22:03:38 GMT",

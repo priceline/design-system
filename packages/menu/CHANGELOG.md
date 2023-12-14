@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Wed, 13 Dec 2023 22:03:38 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Dec 2023 19:25:06 GMT and should not be manually modified.
+
+## 5.4.0
+Thu, 14 Dec 2023 19:25:06 GMT
+
+### Minor changes
+
+- Adding querySelectorPortal prop to menu item to fix the focus issue.
 
 ## 5.3.37
 Wed, 13 Dec 2023 22:03:38 GMT
