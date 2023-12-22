@@ -1,1 +1,1 @@
-export { default as ToggleBadge } from './ToggleBadge'
+export { ToggleBadge, type ToggleBadgeProps } from './ToggleBadge'

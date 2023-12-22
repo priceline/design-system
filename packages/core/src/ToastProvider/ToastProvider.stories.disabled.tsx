@@ -1,5 +1,5 @@
 import React from 'react'
-import ToastProvider from './ToastProvider'
+import { ToastProvider } from './ToastProvider'
 import { MockToastChildren } from '../__test__/mocks/toasts'
 
 export default {

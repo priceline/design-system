@@ -1,6 +1,6 @@
 import { themeGet } from '@styled-system/theme-get'
 import styled, { css } from 'styled-components'
-import { Flex, IFlexProps } from '../Flex'
+import { Flex, type FlexProps } from '../Flex'
 import { IconButton } from '../IconButton'
 import { applyVariations, colorSchemeCustomForeground, getPaletteColor } from '../utils'
 
@@ -13,12 +13,12 @@ const variations = {
   fill: css``,
 }
 
-export interface IHeaderProps extends IFlexProps {
+export type HeaderProps = FlexProps & {
   iconUsesColorScheme: boolean
   variation?: keyof typeof variations
 }
 
-export const LeftBorderFlex: React.FC<IHeaderProps> = styled(Flex)`
+export const LeftBorderFlex: React.FC<HeaderProps> = styled(Flex)`
   ${applyVariations('Toast', variations)};
 
   ${colorSchemeCustomForeground}

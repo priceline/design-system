@@ -14,7 +14,7 @@ import {
   space,
   width,
 } from 'styled-system'
-import { Flex, type IFlexProps } from '../Flex'
+import { Flex, type FlexProps } from '../Flex'
 import {
   applySizes,
   applyVariations,
@@ -198,7 +198,7 @@ export type ButtonProps = WidthProps &
     autoFocus?: boolean
     IconLeft?: React.Component
     IconRight?: React.Component
-    flexProps?: IFlexProps
+    flexProps?: FlexProps
     onClick?: (unknown) => unknown
     onFocus?: (unknown) => unknown
     onMouseEnter?: (unknown) => unknown

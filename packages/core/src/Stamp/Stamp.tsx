@@ -1,27 +1,24 @@
+import themeGet from '@styled-system/theme-get'
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import {
-  space,
-  fontSize,
-  borderRadius,
-  SpaceProps,
-  FontSizeProps,
   BorderRadiusProps,
+  FontSizeProps,
+  SpaceProps,
+  borderRadius,
   compose,
+  fontSize,
+  space,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import themeGet from '@styled-system/theme-get'
+import type { ColorSchemeName } from '../theme'
 import {
   applySizes,
   applyVariations,
   borderRadiusAttrs,
+  colorScheme,
   getPaletteColor,
   getTextColorOn,
-  deprecatedColorValue,
-  colorScheme,
 } from '../utils'
-import type { ColorSchemeName } from '../theme'
 
 const sizes = {
   small: css`
@@ -63,20 +60,6 @@ const variations = {
   `,
 }
 
-const stampPropTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  ...propTypes.borderRadius,
-  size: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(sizes)),
-    PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),
-  ]),
-  variation: PropTypes.oneOf(Object.keys(variations)),
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
-  borderColor: deprecatedColorValue(),
-}
-
 export type StampProps = SpaceProps &
   FontSizeProps &
   BorderRadiusProps & {
@@ -109,8 +92,6 @@ export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
 `
 
 Stamp.displayName = 'Stamp'
-
-Stamp.propTypes = stampPropTypes
 
 Stamp.defaultProps = {
   px: 1,

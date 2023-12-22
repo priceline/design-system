@@ -1,3 +1,3 @@
-export type { IToastProps } from './Toast'
+export type { ToastProps } from './Toast'
 
-export { default as Toast } from './Toast'
+export { Toast } from './Toast'
