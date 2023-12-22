@@ -7,7 +7,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
 import React from 'react'
 import { Box } from '../Box'
-import { ButtonChip } from '../ButtonChip'
+import { ButtonChip } from '../Chip/ButtonChip'
 import { CloseButton } from '../CloseButton'
 import {
   DoDont,
@@ -187,7 +187,7 @@ export const InputVariation: ButtonStory = {
   render: () => (
     <StoryStage>
       <Button size='lg' variation='input' borderRadius='lg' py={0}>
-        <Flex width='100%' justifyContent='flex-start' height='100%' alignItems='center' height='54px'>
+        <Flex width='100%' justifyContent='flex-start' alignItems='center' height='54px'>
           <Calendar mr={2} color='primary.base' />
           <Flex flexDirection='column'>
             <Label as='div'>Check-in - Check-out</Label>

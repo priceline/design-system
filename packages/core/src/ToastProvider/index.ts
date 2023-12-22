@@ -1,1 +1,1 @@
-export { default as ToastProvider, useToast } from './ToastProvider'
+export { ToastProvider, useToast } from './ToastProvider'

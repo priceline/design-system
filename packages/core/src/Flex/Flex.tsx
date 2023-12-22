@@ -31,17 +31,16 @@ const flexPropTypes = {
   bg: deprecatedColorValue(),
 }
 
-export interface IFlexProps
-  extends BoxProps,
-    SpaceProps,
-    WidthProps,
-    AlignItemsProps,
-    JustifyContentProps,
-    AlignContentProps,
-    FlexWrapProps,
-    FlexDirectionProps {}
+export type FlexProps = BoxProps &
+  SpaceProps &
+  WidthProps &
+  AlignItemsProps &
+  JustifyContentProps &
+  AlignContentProps &
+  FlexWrapProps &
+  FlexDirectionProps
 
-const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
+export const Flex: React.FC<FlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
   alignItems: align,
   justifyContent: justify,
@@ -54,7 +53,3 @@ const Flex: React.FC<IFlexProps> = styled(Box).attrs(({ wrap, align, justify, ..
 `
 
 Flex.propTypes = flexPropTypes
-
-Flex.displayName = 'Flex'
-
-export default Flex

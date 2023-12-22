@@ -1,11 +1,14 @@
 import React from 'react'
-import { ToggleBadge, theme } from '..'
+import { ToggleBadge } from '../ToggleBadge/ToggleBadge'
+import { createTheme } from '../utils/createTheme'
 
 describe('ToggleBadge', () => {
   let consoleError
+  let theme
   beforeEach(() => {
     consoleError = console.error
     console.error = jest.fn()
+    theme = createTheme()
   })
   afterEach(() => (console.error = consoleError))
 
@@ -24,10 +27,10 @@ describe('ToggleBadge', () => {
 
   test('selected one with background-color and text color passed as props hover state', () => {
     const json = rendererCreateWithTheme(
-      <ToggleBadge selected bg='green' color='red' fontSize={1} />
+      <ToggleBadge selected bg='secondary' color='error' fontSize={1} />
     ).toJSON()
     expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.green)
-    expect(json).toHaveStyleRule('color', theme.colors.red)
+    expect(json).toHaveStyleRule('background-color', theme.palette.secondary.light)
+    expect(json).toHaveStyleRule('color', theme.palette.error.base)
   })
 })

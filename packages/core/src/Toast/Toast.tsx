@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
 import { Close as CloseIcon } from 'pcln-icons'
+import React, { useEffect } from 'react'
 import { Absolute } from '../Absolute'
-import { Flex, IFlexProps } from '../Flex'
+import { Flex, type FlexProps } from '../Flex'
 import { Relative } from '../Relative'
 import { Text } from '../Text'
 import { LeftBorderFlex, RoundIconButton } from './Toast.styled'
 
-export interface IToastProps extends Omit<IFlexProps, 'id'> {
+export type ToastProps = {
   children: React.ReactNode
   hideClose?: boolean
   icon?: React.ReactElement
@@ -14,9 +14,9 @@ export interface IToastProps extends Omit<IFlexProps, 'id'> {
   lifespan?: number
   variation?: 'border' | 'fill'
   onRemoveClick?: (id: number) => void
-}
+} & Omit<FlexProps, 'id'>
 
-function Toast({
+export function Toast({
   children,
   color = 'text.light',
   hideClose,
@@ -26,7 +26,7 @@ function Toast({
   variation = 'fill',
   onRemoveClick,
   ...props
-}: IToastProps) {
+}: ToastProps) {
   useEffect(() => {
     let timer
     if (lifespan > 0) {
@@ -72,5 +72,3 @@ function Toast({
     </Relative>
   )
 }
-
-export default Toast
