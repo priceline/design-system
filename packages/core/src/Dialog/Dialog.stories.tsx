@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import { Box } from '../Box'
 import { Breadcrumbs } from '../Breadcrumbs'
 import { Button } from '../Button'
-import { Grid, type IGridProps } from '../Grid'
+import { Grid, type GridProps } from '../Grid'
 import { Text } from '../Text'
 import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
@@ -92,7 +92,7 @@ export const FullWidthImage: DialogStory = {
   },
 }
 
-const ExampleOverflowingContent = (props: IGridProps) => (
+const ExampleOverflowingContent = (props: GridProps) => (
   <Grid p={24} gap={5} {...props}>
     {[...Array(5).keys()].map((i) => (
       <>

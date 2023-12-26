@@ -1,1 +1,1 @@
-export { RadioCheckToggleCard } from './RadioCheckToggleCard'
+export { RadioCheckToggleCard, type RadioCheckToggleCardProps } from './RadioCheckToggleCard'

@@ -1,14 +1,17 @@
-import type { ButtonProps } from '../Button'
-
+import { StoryObj } from '@storybook/react'
 import React from 'react'
 import styled from 'styled-components'
-import { StoryObj } from '@storybook/react'
-import { Box, Button, getLinkStylesOn, Container, Grid, Link, Text } from '..'
-import { ILinkProps } from './Link'
-import { argTypes, defaultArgs } from './Link.stories.args'
-import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { Box } from '../Box'
+import { Button, type ButtonProps } from '../Button'
+import { Container } from '../Container'
+import { Grid } from '../Grid'
+import { Link } from '../Link'
+import { Text } from '../Text'
 import { colors } from '../storybook/args'
-import { sizeOptions, variationOptions } from './Link.stories.args'
+import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { getLinkStylesOn } from '../utils'
+import { LinkProps } from './Link'
+import { argTypes, defaultArgs, sizeOptions, variationOptions } from './Link.stories.args'
 
 export default {
   title: 'Link',
@@ -17,7 +20,7 @@ export default {
   argTypes,
 }
 
-const Template = (args: ILinkProps) => <Link {...args} />
+const Template = (args: LinkProps) => <Link {...args} />
 
 export const _Link = Template.bind({})
 

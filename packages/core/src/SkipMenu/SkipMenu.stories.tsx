@@ -1,6 +1,6 @@
 import React from 'react'
-import { SkipMenu } from '.'
-import { Flex } from '..'
+import { SkipMenu } from './SkipMenu'
+import { Flex } from '../Flex/Flex'
 
 const skipLinks = [
   {

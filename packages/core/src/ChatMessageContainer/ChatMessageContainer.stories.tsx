@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '../Box'
 import type { StoryObj } from '@storybook/react'
-import ChatMessageContainer, { IChatMessageContainer } from './ChatMessageContainer'
+import { ChatMessageContainer, type ChatMessageContainerProps } from './ChatMessageContainer'
 import { shortConversation, longConversation } from './ChatMessageContainer.stories.args'
 
 export default {
@@ -12,7 +12,7 @@ export default {
   },
 }
 
-type ChatMessageContainerStory = StoryObj<IChatMessageContainer>
+type ChatMessageContainerStory = StoryObj<ChatMessageContainerProps>
 
 export const _ChatMessageContainer: ChatMessageContainerStory = {
   render: (args) => <ChatMessageContainer {...args} messages={shortConversation} />,

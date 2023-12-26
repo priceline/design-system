@@ -1,5 +1,8 @@
 import React from 'react'
-import { IconField, Input, Select, IconButton } from '..'
+import { IconField } from '../IconField'
+import { Input } from '../Input'
+import { Select } from '../Select'
+import { IconButton } from '../IconButton'
 import {
   Calendar as CalendarIcon,
   Check as CheckIcon,

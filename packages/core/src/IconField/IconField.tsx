@@ -5,7 +5,7 @@ export type IconFieldProps = {
   children: React.ReactNode
 }
 
-function IconField(props: IconFieldProps) {
+export function IconField(props: IconFieldProps) {
   const isIcon = (item) => item.type.isIcon || item.type.isIconButton
 
   const children = React.Children.toArray(props.children).filter(
@@ -50,5 +50,3 @@ function IconField(props: IconFieldProps) {
     </Flex>
   )
 }
-
-export default IconField

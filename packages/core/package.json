@@ -73,13 +73,11 @@
     "@radix-ui/react-accordion": "~1.1.2",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-visually-hidden": "^1.0.3",
-    "@styled-system/prop-types": "^5.1.5",
     "@styled-system/theme-get": "^5.1.2",
     "@types/styled-system": "^5.1.22",
     "deepmerge": "^4.3.1",
     "hoist-non-react-statics": "^3.3.2",
     "lodash": "^4.17.21",
-    "prop-types": "^15.8.1",
     "react-element-to-jsx-string": "^15.0.0",
     "react-intersection-observer": "^9.5.3",
     "styled-system": "^5.1.5"

@@ -41,7 +41,11 @@ export const NoVariant: CloseButtonStory = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
 
+    await userEvent.tab()
     await userEvent.hover(canvas.queryAllByTitle('close')[2])
+  },
+  parameters: {
+    chromatic: { delay: 300 },
   },
 }
 

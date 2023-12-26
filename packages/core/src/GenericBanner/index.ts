@@ -1,1 +1,1 @@
-export { default as GenericBanner } from './GenericBanner'
+export { GenericBanner, type GenericBannerProps } from './GenericBanner'

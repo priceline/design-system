@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading } from '..'
+import { Heading } from './Heading'
 
 const description =
   'A type of the <Text> component' +

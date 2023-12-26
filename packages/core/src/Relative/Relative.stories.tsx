@@ -1,5 +1,10 @@
 import React from 'react'
-import { Absolute, Card, Flag, Image, Relative, Text } from '..'
+import { Absolute } from '../Absolute'
+import { Card } from '../Card'
+import { Flag } from '../Flag'
+import { Image } from '../Image'
+import { Relative } from '../Relative'
+import { Text } from '../Text'
 import { Close as CloseIcon } from 'pcln-icons'
 
 export default {

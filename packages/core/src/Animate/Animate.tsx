@@ -69,14 +69,14 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   },
 }
 
-export interface IAnimateProps {
+export type AnimateProps = {
   children: React.ReactNode
   variant: MotionVariant
   transition?: TransitionVariant
   override?: HTMLMotionProps<'div'>
 }
 
-export const Animate = (props: IAnimateProps) => {
+export const Animate = (props: AnimateProps) => {
   const { children, variant, transition, override } = props
   return (
     <motion.div

@@ -1,30 +1,22 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {
-  space,
+  FontSizeProps,
+  FontWeightProps,
+  LineHeightProps,
+  SpaceProps,
+  TextStyleProps,
+  WidthProps,
+  compose,
   fontSize,
   fontWeight,
   letterSpacing,
   lineHeight,
+  space,
   textStyle,
   width,
-  SpaceProps,
-  FontSizeProps,
-  FontWeightProps,
-  LineHeightProps,
-  TextStyleProps,
-  WidthProps,
-  compose,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import {
-  applyVariations,
-  getPaletteColor,
-  deprecatedColorValue,
-  textStylesValues,
-  typographyAttrs,
-} from '../utils'
+import { applyVariations, getPaletteColor, typographyAttrs } from '../utils'
 
 const nowrap = (props) =>
   props.nowrap
@@ -43,34 +35,22 @@ const accessiblyHide = (props) =>
       }
     : null
 
-const labelPropTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  ...propTypes.fontWeight,
-  ...propTypes.lineHeight,
-  ...propTypes.textStyle,
-  ...propTypes.width,
-  color: deprecatedColorValue(),
-  textStyle: PropTypes.oneOf(textStylesValues),
-}
+export type LabelProps = SpaceProps &
+  FontSizeProps &
+  FontWeightProps &
+  LineHeightProps &
+  TextStyleProps &
+  WidthProps &
+  Partial<Omit<HTMLLabelElement, 'children'>> & {
+    children?: React.ReactNode | string
+    color?: string
+    autoHide?: boolean
+    nowrap?: boolean
+    for?: string
+    onClick?: (evt: unknown) => void
+  }
 
-export interface ILabelProps
-  extends SpaceProps,
-    FontSizeProps,
-    FontWeightProps,
-    LineHeightProps,
-    TextStyleProps,
-    WidthProps,
-    Partial<Omit<HTMLLabelElement, 'children'>> {
-  children?: React.ReactNode | string
-  color?: string
-  autoHide?: boolean
-  nowrap?: boolean
-  for?: string
-  onClick?: (evt: unknown) => void
-}
-
-const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
+export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
   ...typographyAttrs(props),
   ...props,
 }))`
@@ -90,8 +70,6 @@ const Label: React.FC<ILabelProps> & { isLabel?: boolean } = styled.label.attrs(
   ${(props) => compose(fontSize, fontWeight, lineHeight, letterSpacing, space, textStyle, width)(props)}
 `
 
-Label.propTypes = labelPropTypes
-
 Label.defaultProps = {
   color: 'text.light',
   textStyle: 'label',
@@ -99,5 +77,3 @@ Label.defaultProps = {
 
 Label.displayName = 'Label'
 Label.isLabel = true
-
-export default Label

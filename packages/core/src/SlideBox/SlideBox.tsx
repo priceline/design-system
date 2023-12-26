@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import React, { useEffect, useRef } from 'react'
 import { type ArrowPosition } from './Arrow'
 import { BottomArrows } from './BottomArrows'
@@ -59,7 +58,7 @@ export function SlideBox({
     <SlideBoxWrapper arrowPosition={arrowPosition}>
       <TopArrows arrowProps={arrowProps} arrowPosition={arrowPosition} />
       <ScrollFlex width='100%' py={2} data-testid='slide-box' ref={ref}>
-        {childArray.map((item: PropTypes.node, index: number) => (
+        {childArray.map((item: string & React.JSX.Element, index: number) => (
           <Slide
             key={item.props.key || `slide${index}`}
             width={layout ? getCustomWidths(layout.split('-'), index) : getVisibleSlides(visibleSlides)}

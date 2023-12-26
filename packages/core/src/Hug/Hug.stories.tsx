@@ -47,7 +47,6 @@ export default {
   },
 }
 
-// eslint-disable-next-line react/prop-types
 const Template = ({ icon, ...rest }) => {
   const SelectedIcon = (icon && iconMap[icon]) || null
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Motion from './Motion'
-import { Relative } from '../Relative'
-import { Text } from '../Text'
 import { Absolute } from '../Absolute'
 import { Box } from '../Box'
 import { Flex } from '../Flex'
+import { Relative } from '../Relative'
+import { Text } from '../Text'
+import { Motion } from './Motion'
 
 const description = 'Motion'
 

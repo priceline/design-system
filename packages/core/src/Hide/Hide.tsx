@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import { Box, BoxProps } from '../Box'
 import { Text } from '../Text'
 
@@ -33,17 +32,7 @@ const hidden = (key) => (props) =>
       }
     : null
 
-const hidePropTypes = {
-  xs: PropTypes.bool,
-  sm: PropTypes.bool,
-  md: PropTypes.bool,
-  lg: PropTypes.bool,
-  xl: PropTypes.bool,
-  xxl: PropTypes.bool,
-  print: PropTypes.bool,
-}
-
-export interface IHideProps extends BoxProps {
+export type HideProps = BoxProps & {
   xs?: boolean
   sm?: boolean
   md?: boolean
@@ -53,7 +42,7 @@ export interface IHideProps extends BoxProps {
   print?: boolean
 }
 
-const Hide: React.FC<IHideProps> & { text: React.FC<IHideProps> } = styled(Box)`
+export const Hide: React.FC<HideProps> & { text: React.FC<HideProps> } = styled(Box)`
   ${hidden('xs')}
   ${hidden('sm')}
   ${hidden('md')}
@@ -62,8 +51,6 @@ const Hide: React.FC<IHideProps> & { text: React.FC<IHideProps> } = styled(Box)`
   ${hidden('xxl')}
   ${hidden('print')};
 `
-
-Hide.propTypes = hidePropTypes
 
 Hide.displayName = 'Hide'
 Hide.text = styled(Text)`
@@ -76,5 +63,3 @@ Hide.text = styled(Text)`
   ${hidden('xxl')}
   ${hidden('print')};
 `
-
-export default Hide

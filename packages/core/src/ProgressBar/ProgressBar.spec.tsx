@@ -1,8 +1,14 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
+import { type PaletteFamilyName } from '../theme'
 import { ProgressBar } from './ProgressBar'
 
-const testProps = [{ color: 'warning' }, { color: 'caution' }, { color: 'primary' }, { color: 'success' }]
+const testProps = [
+  { color: 'warning' },
+  { color: 'caution' },
+  { color: 'primary' },
+  { color: 'success' },
+] as { color: PaletteFamilyName }[]
 
 describe('ProgressBar', () => {
   it('Default progress bar (no colors)', () => {

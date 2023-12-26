@@ -1,7 +1,7 @@
 import React from 'react'
-import { fireEvent, render, screen } from '../__test__/testing-library'
-import { ShadowEffect } from '../ShadowEffect'
 import { Input } from '../Input'
+import { ShadowEffect } from '../ShadowEffect'
+import { fireEvent, render, screen } from '../__test__/testing-library'
 
 describe.skip('ShadowEffect', () => {
   it('opens when clicked', () => {

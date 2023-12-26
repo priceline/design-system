@@ -1,1 +1,1 @@
-export { default as BlockLink } from './BlockLink'
+export { BlockLink } from './BlockLink'

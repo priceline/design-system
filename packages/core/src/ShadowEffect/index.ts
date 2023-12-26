@@ -1,2 +1,1 @@
-export { default as ShadowEffect } from './ShadowEffect'
-export { ShadowOverlay } from './ShadowEffect'
+export { ShadowEffect, ShadowOverlay, type ShadowEffectProps } from './ShadowEffect'

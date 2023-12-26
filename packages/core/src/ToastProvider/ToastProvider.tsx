@@ -4,7 +4,7 @@ import React, { createContext, useCallback, useContext, useEffect, useState } fr
 import styled, { withTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
 import { Absolute } from '../Absolute'
-import { Animate, MotionVariant } from '../Animate'
+import { Animate, type MotionVariant } from '../Animate/Animate'
 import { Flex } from '../Flex'
 import { Toast } from '../Toast'
 import { ThemeProvider } from '../ThemeProvider'

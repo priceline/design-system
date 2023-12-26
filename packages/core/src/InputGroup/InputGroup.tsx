@@ -1,20 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import { space, SpaceProps } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
 import { themeGet } from '@styled-system/theme-get'
 
 import { Box } from '../Box'
 import { getPaletteColor } from '../utils'
-
-const inputGroupPropTypes = {
-  ...propTypes.space,
-  borderColor: PropTypes.string,
-}
+import { PaletteFamilyName } from '../theme'
 
 export type InputGroupProps = SpaceProps & {
-  borderColor?: string
+  borderColor?: PaletteFamilyName
   children?: React.ReactNode
 }
 
@@ -38,8 +32,6 @@ export const InputGroup: React.FC<InputGroupProps> = styled.div`
 
   ${space}
 `
-
-InputGroup.propTypes = inputGroupPropTypes
 
 InputGroup.defaultProps = {
   borderColor: 'border',

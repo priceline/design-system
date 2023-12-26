@@ -617,6 +617,9 @@ export type ColorSchemeName = (typeof colorSchemeNames)[number]
 export type ColorSchemes = Record<ColorSchemeName, ColorScheme>
 
 /** @public */
+export type ColorName = keyof typeof colors
+
+/** @public */
 export type DesignSystemTheme = {
   space: string[]
   colors: Record<string, string>

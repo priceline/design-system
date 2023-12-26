@@ -2,11 +2,11 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { Box, BoxProps } from '../Box'
+import { Box, type BoxProps } from '../Box'
 import { IconField } from '../IconField'
 import { getPaletteColor } from '../utils'
 
-export interface IFormFieldProps extends BoxProps {
+export interface FormFieldProps extends BoxProps {
   disabled?: boolean
   readOnly?: boolean
 }
@@ -54,7 +54,7 @@ const labelPaddingTop = (size) => {
   return paddingTopForLabel?.[size] ? paddingTopForLabel[size] : '6px'
 }
 
-const FormField = ({ children, disabled, readOnly, ...props }: IFormFieldProps) => {
+export function FormField({ children, disabled, readOnly, ...props }: FormFieldProps) {
   let iconBefore = false
 
   const childrenArray = React.Children.toArray(children)
@@ -117,5 +117,3 @@ const FormField = ({ children, disabled, readOnly, ...props }: IFormFieldProps) 
 }
 
 FormField.displayName = 'FormField'
-
-export default FormField

@@ -376,14 +376,14 @@ export const WithoutIconOrCloseButtonTextOnly = () => (
 
 export const WithCustomIconsAndSizes = () => (
   <Box>
-    <Banner textAlign='right' mb={2} p={2} text='default' icon={Star} />
-    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' icon={Star} />
-    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' icon={Star} />
-    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' icon={Star} />
-    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' icon={Star} />
-    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' icon={Star} />
-    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' icon={Star} />
-    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' icon={Star} />
+    <Banner textAlign='right' mb={2} p={2} text='default' icon={<Star />} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' icon={<Star />} />
+    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' icon={<Star />} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' icon={<Star />} />
   </Box>
 )
 

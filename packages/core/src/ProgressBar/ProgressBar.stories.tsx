@@ -1,13 +1,16 @@
 import React from 'react'
 import { Box } from '../Box'
 import { ProgressBar } from './ProgressBar'
+import { PaletteFamilyName } from '../theme'
 
 export default {
   title: 'ProgressBar',
   component: ProgressBar,
 }
 
-const steps = [{ color: 'warning' }, { color: 'caution' }, { color: 'primary' }, { color: 'success' }]
+const steps = [{ color: 'warning' }, { color: 'caution' }, { color: 'primary' }, { color: 'success' }] as {
+  color: PaletteFamilyName
+}[]
 
 export const EmptyProgressBar = () => <ProgressBar steps={steps} currentStep={0} />
 

@@ -1,5 +1,7 @@
 import React from 'react'
-import { Hide, Box, Flex } from '..'
+import { Box } from '../Box'
+import { Flex } from '../Flex'
+import { Hide } from './Hide'
 
 export default {
   title: 'Hide',

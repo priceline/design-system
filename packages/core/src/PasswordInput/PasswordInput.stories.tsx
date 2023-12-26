@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions'
 import { Box } from '../Box'
 import { Button } from '../Button'
 import { Text } from '../Text'
-import PasswordInput from './PasswordInput'
+import { PasswordInput } from './PasswordInput'
 
 export default {
   title: 'PasswordInput',

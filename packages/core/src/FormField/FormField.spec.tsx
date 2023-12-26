@@ -1,7 +1,10 @@
-import React from 'react'
-import { render } from '../__test__/testing-library'
-import { FormField, Input, Label, Select } from '..'
 import { Email as EmailIcon } from 'pcln-icons'
+import React from 'react'
+import { Input } from '../Input'
+import { Label } from '../Label'
+import { Select } from '../Select'
+import { render } from '../__test__/testing-library'
+import { FormField } from './FormField'
 
 afterEach(() => {
   // bust cache for propTypes

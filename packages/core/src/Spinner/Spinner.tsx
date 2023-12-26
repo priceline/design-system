@@ -1,7 +1,9 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import styled, { css, keyframes, useTheme } from 'styled-components'
-import { Flex, Absolute } from '..'
+import { type Theme } from 'styled-system'
+import { Absolute } from '../Absolute/Absolute'
+import { Flex } from '../Flex/Flex'
+import { PaletteFamilyName } from '../theme'
 import { applySizes, getPaletteColor } from '../utils'
 
 const sizes = {
@@ -65,20 +67,12 @@ const GradientRingWrapper = styled(Absolute)`
   height: 100%;
 `
 
-const propTypes = {
-  children: PropTypes.node,
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-    PropTypes.oneOf(Object.keys(sizes)),
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.oneOf(Object.keys(sizes)), PropTypes.string, PropTypes.number])
-    ),
-  ]),
-}
+type GradientRingProps = {
+  strokeWidth?: string
+  theme?: Theme
+} & SpinnerProps
 
-const GradientRing: React.FC<InferProps<typeof propTypes>> = ({ strokeWidth = '6px', ...props }) => {
+function GradientRing({ strokeWidth = '6px', ...props }: GradientRingProps) {
   const strokeColor = getPaletteColor(props.color, 'base')(props)
   return (
     <GradientRingWrapper>
@@ -119,12 +113,16 @@ const GradientRing: React.FC<InferProps<typeof propTypes>> = ({ strokeWidth = '6
   )
 }
 
-const Spinner: React.FC<InferProps<typeof propTypes>> = ({
-  children,
-  color,
-  useGradient = false,
-  ...props
-}) => {
+export type SpinnerSizes = 'small' | 'medium' | 'large' | number
+
+export type SpinnerProps = {
+  children?: React.ReactNode
+  color?: PaletteFamilyName
+  size?: SpinnerSizes | SpinnerSizes[]
+  useGradient?: boolean
+}
+
+export function Spinner({ children, color, useGradient = false, ...props }: SpinnerProps) {
   if (children) {
     React.Children.only(children)
   }
@@ -134,18 +132,15 @@ const Spinner: React.FC<InferProps<typeof propTypes>> = ({
     <RelativeFlex justifyContent='center' alignItems='center' {...props}>
       {useGradient ? <GradientRing color={color} theme={theme} {...props} /> : <Ring color={color} />}
       {children &&
-        React.cloneElement(children, {
+        React.isValidElement(children) &&
+        React.cloneElement<{ color?: PaletteFamilyName }>(children, {
           color: children?.props?.color || color,
         })}
     </RelativeFlex>
   )
 }
 
-Spinner.propTypes = propTypes
-
 Spinner.defaultProps = {
   color: 'primary',
   size: 'medium',
 }
-
-export default Spinner

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BlockLink } from '..'
+import { BlockLink } from './BlockLink'
 
 describe('BlockLink', () => {
   test('renders', () => {

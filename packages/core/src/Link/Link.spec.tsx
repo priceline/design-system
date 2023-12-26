@@ -1,7 +1,7 @@
 import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
 
-import { Link } from '..'
+import { Link } from './Link'
 
 describe('Link', () => {
   it('should render correctly with no props without throwing', () => {

@@ -10,17 +10,8 @@ import {
   ZIndexProps,
   compose,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import PropTypes from 'prop-types'
 import { Text, type TextProps } from '../Text'
-import {
-  applyVariations,
-  getPaletteColor,
-  borders,
-  deprecatedColorValue,
-  borderRadiusAttrs,
-  applySizes,
-} from '../utils'
+import { applyVariations, getPaletteColor, borders, borderRadiusAttrs, applySizes } from '../utils'
 
 const sizes = {
   sm: css`
@@ -72,18 +63,6 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
 
-const inputPropTypes = {
-  id: PropTypes.string.isRequired,
-  color: deprecatedColorValue(),
-  /**
-   * Display text below the input and set error color on input
-   */
-  size: PropTypes.oneOf(Object.keys(sizes)),
-  helperText: PropTypes.node,
-  ...propTypes.space,
-  ...propTypes.fontSize,
-}
-
 export type InputProps = SpaceProps &
   FontSizeProps &
   ZIndexProps &
@@ -134,4 +113,3 @@ Input.defaultProps = {
   borderRadius: 'lg',
   size: 'lg',
 }
-Input.propTypes = inputPropTypes

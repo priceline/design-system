@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '../__test__/testing-library'
-import PasswordInput from './PasswordInput'
+import { PasswordInput } from './PasswordInput'
 
 const sampleRegexChecks = [
   { label: '1 Uppercase Letter', regex: /(?=.*[A-Z])/ },

@@ -1,1 +1,1 @@
-export { default as Relative } from './Relative'
+export { Relative, type RelativeProps } from './Relative'

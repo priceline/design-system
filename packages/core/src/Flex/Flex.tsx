@@ -14,22 +14,10 @@ import {
   AlignContentProps,
   compose,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
 
 import { Box, BoxProps } from '../Box'
 
-import { applyVariations, deprecatedColorValue } from '../utils'
-
-const flexPropTypes = {
-  ...propTypes.space,
-  ...propTypes.width,
-  ...propTypes.alignItems,
-  ...propTypes.justifyContent,
-  ...propTypes.flexWrap,
-  ...propTypes.flexDirection,
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
-}
+import { applyVariations } from '../utils'
 
 export type FlexProps = BoxProps &
   SpaceProps &
@@ -51,5 +39,3 @@ export const Flex: React.FC<FlexProps> = styled(Box).attrs(({ wrap, align, justi
 
   ${(props) => compose(alignItems, justifyContent, flexDirection, flexWrap)(props)}
 `
-
-Flex.propTypes = flexPropTypes

@@ -408,9 +408,6 @@ importers:
       '@radix-ui/react-visually-hidden':
         specifier: ^1.0.3
         version: 1.0.3(@types/react-dom@18.2.17)(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0)
-      '@styled-system/prop-types':
-        specifier: ^5.1.5
-        version: 5.1.5(styled-system@5.1.5)
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
@@ -426,9 +423,6 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
-      prop-types:
-        specifier: ^15.8.1
-        version: 15.8.1
       react-element-to-jsx-string:
         specifier: ^15.0.0
         version: 15.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -5798,6 +5792,7 @@ packages:
     dependencies:
       prop-types: 15.8.1
       styled-system: 5.1.5
+    dev: true
 
   /@styled-system/shadow@5.1.2:
     resolution: {integrity: sha512-wqniqYb7XuZM7K7C0d1Euxc4eGtqEe/lvM0WjuAFsQVImiq6KGT7s7is+0bNI8O4Dwg27jyu4Lfqo/oIQXNzAg==}

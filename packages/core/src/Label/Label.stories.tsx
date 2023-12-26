@@ -1,6 +1,9 @@
 import React from 'react'
-import { Label, Input, Radio, Flex } from '..'
-import { ILabelProps } from './Label'
+import { Flex } from '../Flex'
+import { Input } from '../Input'
+import { Label } from './Label'
+import { Radio } from '../Radio'
+import { LabelProps } from './Label'
 import { argTypes, defaultArgs } from './Label.stories.args'
 
 export default {
@@ -17,7 +20,7 @@ export default {
   },
 }
 
-const Template = (args: ILabelProps) => <Label {...args} />
+const Template = (args: LabelProps) => <Label {...args} />
 
 export const _Label = Template.bind({})
 
