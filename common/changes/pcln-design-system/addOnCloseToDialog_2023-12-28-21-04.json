@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Updated the dialog component to have an optionalProp onClose",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
