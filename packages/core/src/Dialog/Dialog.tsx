@@ -26,6 +26,7 @@ export interface IDialogProps {
   size?: DialogSize
   triggerNode?: React.ReactNode
   zIndex?: ZIndex
+  onClose?: () => void
   onOpenChange?: (open: boolean) => void
 }
 
@@ -50,12 +51,16 @@ const PclnDialog = ({
   triggerNode,
   zIndex = 'overlay',
   onOpenChange,
+  onClose,
 }: IDialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
   useEffect(() => setOpen(open), [open])
 
   const handleOpenChange = (newOpen: boolean) => {
+    if (!newOpen && onClose) {
+      onClose()
+    }
     onOpenChange?.(newOpen)
     setOpen(newOpen)
   }
