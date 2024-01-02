@@ -45,6 +45,17 @@ export const WithHeaderText: DialogStory = {
     ...exampleHeaderProps,
   },
 }
+
+export const WithOnCloseFunction: DialogStory = {
+  ...Playground,
+  args: {
+    onClose: () => {
+      alert('closed')
+    },
+    ...exampleHeaderProps,
+  },
+}
+
 export const WithHeaderContent: DialogStory = {
   ...Playground,
   args: {
