@@ -273,7 +273,7 @@ SetVisibleSlidesByViewport.args = {
 }
 
 export const SetCurrentSlide = () => (
-  <Carousel layout='50-50' arrowsPosition='bottom' currentSlide={1}>
+  <Carousel layout='50-50' arrowsPosition='bottom' currentSlide={2}>
     <Flex>Slide 1</Flex>
     <Flex>Slide 2</Flex>
     <Flex>Slide 3</Flex>
