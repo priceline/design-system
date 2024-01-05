@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "2.5.36",
+      "tag": "pcln-carousel_v2.5.36",
+      "date": "Fri, 05 Jan 2024 20:52:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "AIR-59977 Passed missing currentSlide prop to SlideBox component in Carousel",
+            "author": "snehalpatelpriceline <88385971+snehalpatelpriceline@users.noreply.github.com>",
+            "commit": "7edc2508350395e2a3569153cb4879e95ee0deaf"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.5.35",
       "tag": "pcln-carousel_v2.5.35",
       "date": "Wed, 13 Dec 2023 22:03:38 GMT",

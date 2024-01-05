@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Wed, 13 Dec 2023 22:03:38 GMT and should not be manually modified.
+This log was last generated on Fri, 05 Jan 2024 20:52:46 GMT and should not be manually modified.
+
+## 2.5.36
+Fri, 05 Jan 2024 20:52:46 GMT
+
+### Patches
+
+- AIR-59977 Passed missing currentSlide prop to SlideBox component in Carousel
 
 ## 2.5.35
 Wed, 13 Dec 2023 22:03:38 GMT
