@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Added new icons refund and currencyExchange",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
