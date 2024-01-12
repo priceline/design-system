@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-import { Grid, IGridProps } from './Grid'
+import { Grid, type GridProps } from './Grid'
 
 describe('Grid', () => {
-  const testProps: IGridProps = {
+  const testProps: GridProps = {
     gap: '10px',
     rowGap: '20px',
     columnGap: '30px',

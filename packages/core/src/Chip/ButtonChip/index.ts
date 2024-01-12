@@ -1,3 +1,1 @@
-import ButtonChip from './ButtonChip'
-
-export { ButtonChip }
+export { ButtonChip, type ButtonChipProps } from './ButtonChip'

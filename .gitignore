@@ -68,6 +68,7 @@ common/autoinstallers/*/.npmrc
 
 # build output
 **/dist/
+**/lib/
 **/lib-commonjs/
 **/lib-esm/
 **/types/**/*.d.ts

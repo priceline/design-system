@@ -15,7 +15,7 @@ export type TCardTypes = (typeof cardTypes)[number]
 export type THPositions = (typeof hPositions)[number]
 export type TVPositions = (typeof vPositions)[number]
 
-export interface IRadioCheckToggleCard {
+export type RadioCheckToggleCardProps = {
   children?: React.ReactNode | string
   cardType?: TCardTypes
   hPosition?: THPositions
@@ -142,7 +142,7 @@ const buttonIcon = (cardType: TCardTypes) => {
   }
 }
 
-export const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
+export function RadioCheckToggleCard(props: RadioCheckToggleCardProps) {
   const {
     children,
     cardType,
@@ -196,10 +196,10 @@ export const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
 RadioCheckToggleCard.displayName = 'RadioCheckToggleCard'
 
 RadioCheckToggleCard.defaultProps = {
-  cardType: 'radio',
+  cardType: 'radio' as TCardTypes,
   isTitleBold: false,
-  hPosition: 'right',
-  vPosition: 'top',
+  hPosition: 'right' as THPositions,
+  vPosition: 'top' as TVPositions,
   isTakingFullHeightOfCard: false,
-  onChange: (e) => {},
-} as IRadioCheckToggleCard
+  onChange: () => {},
+}

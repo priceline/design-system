@@ -1,11 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { width, space, WidthProps, SpaceProps, compose } from 'styled-system'
+import { SpaceProps, WidthProps, compose, space, width } from 'styled-system'
 
-import type { Sizes, Variations } from '../Button'
-import { buttonStyles } from '../Button'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
+import { buttonStyles, type Sizes, type Variations } from '../Button'
+import { applyVariations, getPaletteColor } from '../utils'
 
 const variations = {
   fill: css`
@@ -79,37 +77,32 @@ const variations = {
   `,
 }
 
-const propTypes = {
-  color: deprecatedColorValue(),
-  disabled: PropTypes.bool,
-  variation: PropTypes.oneOf(Object.keys(variations)),
-}
+export type LinkProps = WidthProps &
+  SpaceProps &
+  React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  React.RefAttributes<unknown> & {
+    children?: React.ReactNode | string
+    color?: string
+    disabled?: boolean
+    href?: string
+    size?: Sizes | Sizes[]
+    target?: string
+    variation?: Variations
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>
+    onFocus?: React.FocusEventHandler<HTMLAnchorElement>
+  }
 
-export interface ILinkProps
-  extends WidthProps,
-    SpaceProps,
-    React.HTMLAttributes<HTMLAnchorElement>,
-    React.RefAttributes<unknown> {
-  children?: React.ReactNode | string
-  color?: string
-  disabled?: boolean
-  href?: string
-  size?: Sizes | Sizes[]
-  target?: string
-  variation?: Variations
-  onClick?: (unknown) => unknown
-  onFocus?: (unknown) => unknown
-}
-
-const Link: React.FC<ILinkProps> = styled.a.attrs(({ color, disabled, href, target, onClick, ...props }) => ({
-  color: disabled ? 'text.light' : color,
-  disabled,
-  href: !disabled ? href : undefined,
-  rel: target === '_blank' ? 'noopener' : null,
-  target,
-  onClick: !disabled ? onClick : () => {},
-  ...props,
-}))`
+export const Link: React.FC<LinkProps> = styled.a.attrs(
+  ({ color, disabled, href, target, onClick, ...props }) => ({
+    color: disabled ? 'text.light' : color,
+    disabled,
+    href: !disabled ? href : undefined,
+    rel: target === '_blank' ? 'noopener' : null,
+    target,
+    onClick: !disabled ? onClick : () => {},
+    ...props,
+  })
+)`
   ${applyVariations('Link', variations)}
 
   ${(props) =>
@@ -132,7 +125,3 @@ Link.defaultProps = {
   variation: 'link',
   size: 'medium',
 }
-
-Link.propTypes = propTypes
-
-export default Link

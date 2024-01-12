@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-expressions */
 
 import React, { useState } from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
 import { zIndex } from 'styled-system'
 
@@ -16,16 +15,16 @@ export const ShadowOverlay = styled.div`
   ${zIndex};
 `
 
-const propTypes = {
-  shouldCloseOnBlur: PropTypes.bool,
-  shouldOpenOnFocus: PropTypes.bool,
-  zIndex: PropTypes.number,
-  children: PropTypes.node,
-  onClose: PropTypes.func,
-  onOpen: PropTypes.func,
+export type ShadowEffectProps = {
+  shouldCloseOnBlur?: boolean
+  shouldOpenOnFocus?: boolean
+  zIndex?: number | string
+  children?: React.ReactNode
+  onClose?: () => void
+  onOpen?: () => void
 }
 
-const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
+export function ShadowEffect({
   shouldCloseOnBlur,
   shouldOpenOnFocus,
   zIndex = 'overlay',
@@ -33,7 +32,7 @@ const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
   onClose,
   onOpen,
   ...props
-}) => {
+}: ShadowEffectProps) {
   const [isOpen, setOpen] = useState(false)
 
   const child = React.Children.only(children)
@@ -59,33 +58,37 @@ const ShadowEffect: React.FC<InferProps<typeof propTypes>> = ({
   return (
     <>
       {isOpen && <ShadowOverlay zIndex={zIndex} onClick={handleClose} {...props} />}
-      {React.cloneElement(child, {
-        zIndex: isOpen && (zIndex !== 'overlay' ? zIndex : 'onOverlay'),
-        onBlur: () => {
-          const onBlur = child.props.onBlur
-          onBlur && onBlur()
-          shouldCloseOnBlur && handleClose()
-        },
-        onClick: () => {
-          const onClick = child.props.onClick
-          onClick && onClick()
-          handleOpen()
-        },
-        onFocus: () => {
-          const onFocus = child.props.onFocus
-          onFocus && onFocus()
-          shouldOpenOnFocus && handleOpen()
-        },
-        onKeyDown: (evt) => {
-          const onKeyDown = child.props.onKeyDown
-          onKeyDown && onKeyDown(evt)
-          handleKeyDown(evt)
-        },
-      })}
+      {React.isValidElement(child) &&
+        React.cloneElement<
+          ShadowEffectProps & {
+            onBlur?: () => void
+            onClick?: () => void
+            onFocus?: () => void
+            onKeyDown?: (evt) => void
+          }
+        >(child, {
+          zIndex: isOpen && (zIndex !== 'overlay' ? zIndex : 'onOverlay'),
+          onBlur: () => {
+            const onBlur = child.props.onBlur
+            onBlur && onBlur()
+            shouldCloseOnBlur && handleClose()
+          },
+          onClick: () => {
+            const onClick = child.props.onClick
+            onClick && onClick()
+            handleOpen()
+          },
+          onFocus: () => {
+            const onFocus = child.props.onFocus
+            onFocus && onFocus()
+            shouldOpenOnFocus && handleOpen()
+          },
+          onKeyDown: (evt) => {
+            const onKeyDown = child.props.onKeyDown
+            onKeyDown && onKeyDown(evt)
+            handleKeyDown(evt)
+          },
+        })}
     </>
   )
 }
-
-ShadowEffect.propTypes = propTypes
-
-export default ShadowEffect

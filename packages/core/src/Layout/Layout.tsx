@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import { zIndex } from 'styled-system'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { FlexWrapProps, zIndex } from 'styled-system'
 
-import { Flex, Box } from '..'
+import { Box } from '../Box'
+import { Flex } from '../Flex'
 
 /**
  * Returns an array of values with the same length as numChildren with each item
@@ -50,7 +50,7 @@ const getWidthsForVariation = (variation: string, numChildren: number) => {
  * @param numChildren - number of children
  * @returns
  */
-const getChildrenWidths = (variation: string, numChildren: number) => {
+const getChildrenWidths = (variation: LayoutVariation, numChildren: number) => {
   if (Array.isArray(variation)) {
     const variationWidths = variation.map((v) => {
       return getWidthsForVariation(v, numChildren)
@@ -113,58 +113,46 @@ const getGapValues = (gapProp, rowGapProp) => {
 
 const memoGetGapValues = getGapValues
 
-const ALLOWED_LAYOUT_VALUES = ['50-50', '33-33-33', '33-66', '66-33', '25-25-25-25', '60-40', '40-60', '100']
-const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl']
-
-const propTypes = {
-  /** Children will have their widths set based on `variation` */
-  children: PropTypes.node.isRequired,
-  /** Configure widths of children at different breakpoints. Numbers in each variation
-   * represent the width of the element in that position as a percentage of `Layout`'s width.
-   */
-  variation: PropTypes.oneOfType([
-    PropTypes.oneOf(ALLOWED_LAYOUT_VALUES),
-    PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_LAYOUT_VALUES)),
-  ]).isRequired,
-  /** Add space between columns */
-  gap: PropTypes.oneOfType([
-    PropTypes.oneOf(ALLOWED_GAP_VALUES),
-    PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
-  ]),
-  /** Add space between rows */
-  rowGap: PropTypes.oneOfType([
-    PropTypes.oneOf(ALLOWED_GAP_VALUES),
-    PropTypes.arrayOf(PropTypes.oneOf(ALLOWED_GAP_VALUES)),
-  ]),
-  /** FlexWrap pass down property */
-  flexWrap: PropTypes.string,
-  /** Add space between rows */
-  stretchHeight: PropTypes.bool,
-}
+const ALLOWED_LAYOUT_VALUES = [
+  '50-50',
+  '33-33-33',
+  '33-66',
+  '66-33',
+  '25-25-25-25',
+  '60-40',
+  '40-60',
+  '100',
+] as const
+const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl'] as const
 
 const ZIndexBox = styled(Box)`
   ${zIndex}
 `
 
-const Layout: React.FC<InferProps<typeof propTypes>> = ({
-  children,
-  gap,
-  rowGap,
-  variation,
-  stretchHeight,
-  flexWrap,
-  ...props
-}) => {
+type LayoutGap = (typeof ALLOWED_GAP_VALUES)[number] | Array<(typeof ALLOWED_GAP_VALUES)[number]>
+type LayoutVariation = (typeof ALLOWED_LAYOUT_VALUES)[number] | Array<(typeof ALLOWED_LAYOUT_VALUES)[number]>
+
+export type LayoutProps = FlexWrapProps & {
+  children: React.ReactElement | React.ReactElement[]
+  gap?: LayoutGap
+  rowGap?: LayoutGap
+  variation?: LayoutVariation
+  stretchHeight?: boolean
+}
+
+export function Layout({ children, gap, rowGap, variation, stretchHeight, flexWrap, ...props }: LayoutProps) {
+  const numChildren = React.Children.count(children)
+
   const [gapValues, setGapValues] = useState(getGapValues(gap, rowGap))
-  const [widths, setChildrenWidths] = useState(getChildrenWidths(variation, children.length))
+  const [widths, setChildrenWidths] = useState(getChildrenWidths(variation, numChildren))
 
   useEffect(() => {
     setGapValues(memoGetGapValues(gap, rowGap))
   }, [gap, rowGap])
 
   useEffect(() => {
-    setChildrenWidths(getChildrenWidths(variation, children.length))
-  }, [variation, children.length])
+    setChildrenWidths(getChildrenWidths(variation, numChildren))
+  }, [variation, numChildren])
 
   const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = gapValues
 
@@ -173,15 +161,18 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
       {React.Children.map(
         children,
         (child, idx) =>
-          child && (
+          child &&
+          React.isValidElement(child) && (
             <ZIndexBox
               width={widths[idx]}
               px={boxPaddingX}
               py={boxPaddingY}
               data-testid={`box-${idx}`}
-              zIndex={child.props.zIndex}
+              // TS ignored because the type of child.props is unknown
+              // @ts-ignore
+              zIndex={child?.props?.zIndex}
             >
-              {React.cloneElement(child, {
+              {React.cloneElement<{ minHeight?: string }>(child, {
                 minHeight: stretchHeight ? '100%' : undefined,
               })}
             </ZIndexBox>
@@ -191,12 +182,8 @@ const Layout: React.FC<InferProps<typeof propTypes>> = ({
   )
 }
 
-Layout.propTypes = propTypes
-
 Layout.defaultProps = {
   flexWrap: 'wrap',
 }
 
 Layout.displayName = 'Layout'
-
-export { Layout }

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade all @rushstack dependencies to latest",
+      "type": "minor",
+      "packageName": "pcln-design-system"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "steven.dalonzo@priceline.com"
+}

@@ -1,9 +1,9 @@
-import React from 'react'
 import { expect } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
-import FloatingActionButton from './FloatingActionButton'
-import { Relative } from '../Relative'
+import { userEvent, within } from '@storybook/testing-library'
 import { Cars, Chat } from 'pcln-icons'
+import React from 'react'
+import { Relative } from '../Relative'
+import { FloatingActionButton } from './FloatingActionButton'
 
 export default {
   title: 'FloatingActionButton',

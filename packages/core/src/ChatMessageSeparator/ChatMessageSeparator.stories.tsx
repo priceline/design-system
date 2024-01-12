@@ -1,5 +1,5 @@
 import React from 'react'
-import ChatMessageSeparator from './ChatMessageSeparator'
+import { ChatMessageSeparator } from './ChatMessageSeparator'
 
 export default {
   title: 'Chat / ChatMessageSeparator',

@@ -1,10 +1,12 @@
-import React from 'react'
 import { Star } from 'pcln-icons'
+import React from 'react'
+import { Card } from '../Card'
+import { Hide } from '../Hide'
+import { Text } from '../Text'
+import { Hug } from './Hug'
 
-import { Hug, Hide, Card, Text } from '..'
-
-import { argTypes, defaultArgs, iconMap, HugContentText } from './Hug.stories.args'
 import { colorSchemeNames } from '../storybook/args'
+import { HugContentText, argTypes, defaultArgs, iconMap } from './Hug.stories.args'
 
 const ChildrenCardInside = () => (
   <Card p={3} color='warning.light'>
@@ -45,7 +47,6 @@ export default {
   },
 }
 
-// eslint-disable-next-line react/prop-types
 const Template = ({ icon, ...rest }) => {
   const SelectedIcon = (icon && iconMap[icon]) || null
 

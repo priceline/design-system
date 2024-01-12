@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
-import { Accordion } from '.'
-import { Flex, Button, Text, theme } from '..'
 import { expect } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
+import { userEvent, within } from '@storybook/testing-library'
+import React, { useState } from 'react'
+import { Button } from '../Button'
+import { Flex } from '../Flex'
+import { Text } from '../Text'
+import { theme } from '../theme'
+import { Accordion } from './Accordion'
 
 export default {
   title: 'Accordion',

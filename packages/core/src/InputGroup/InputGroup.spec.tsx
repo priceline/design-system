@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
 
-import { InputGroup } from '..'
+import { InputGroup } from './InputGroup'
 
 describe('InputGroup', () => {
   test('renders', () => {

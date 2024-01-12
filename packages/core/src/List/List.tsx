@@ -1,7 +1,9 @@
-import styled, { css } from 'styled-components'
-import { fontSize, space, width, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
+import styled, { css } from 'styled-components'
+import { FontSizeProps, SpaceProps, compose, fontSize, space, width } from 'styled-system'
 import { getPaletteColor } from '../utils'
+import React from 'react'
+import { PaletteColor, PaletteFamilyName } from '../theme'
 
 const tabSpacingSize = {
   xsm: '16px',
@@ -20,7 +22,16 @@ const listStyles = [
   'decimal',
   'square',
   'circle',
-]
+] as const
+
+export type ListProps = FontSizeProps &
+  SpaceProps &
+  React.HTMLAttributes<HTMLOListElement | HTMLUListElement> & {
+    children?: React.ReactNode
+    listStyle?: (typeof listStyles)[number]
+    indentSize?: keyof typeof tabSpacingSize | 'none'
+    color?: PaletteFamilyName | PaletteColor
+  }
 
 const BaseCSS = css`
   margin: ${themeGet('space.1')} 0;
@@ -37,7 +48,7 @@ const BaseCSS = css`
   margin-left: ${(props) => tabSpacingSize[props.indentSize ? props.indentSize : 'lg']};
 `
 
-const Ordered = styled('ol')`
+const Ordered: React.FC<ListProps> = styled('ol')`
   & > li > * {
     margin-left: ${themeGet('space.2')};
   }
@@ -45,16 +56,14 @@ const Ordered = styled('ol')`
   ${BaseCSS};
 `
 
-const Unordered = styled('ul')`
+const Unordered: React.FC<ListProps> & { ol: React.FC<ListProps>; ul: React.FC<ListProps> } = styled('ul')`
   ${BaseCSS};
 `
 
-const List = Unordered
+export const List = Unordered
 
 List.ol = Ordered
 List.ol.displayName = 'OrderedList'
 
 List.ul = Unordered
 List.ul.displayName = 'UnorderedList'
-
-export default List

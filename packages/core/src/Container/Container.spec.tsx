@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-
-import { Container } from '..'
+import { Container } from './Container'
 
 describe('Container', () => {
   test('renders with default theme max-width', () => {

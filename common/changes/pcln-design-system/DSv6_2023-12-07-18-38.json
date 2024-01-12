@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Implement heft-webpack5-plugin to optimize production output",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

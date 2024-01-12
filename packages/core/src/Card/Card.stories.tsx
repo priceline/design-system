@@ -1,18 +1,21 @@
+import { ArgsTable, Canvas, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import type { Meta, StoryObj } from '@storybook/react'
-import type { ICardProps } from './Card'
-
 import React from 'react'
-import { Button, Card, Flex, Image, Text, ThemeProvider } from '..'
-import { ArgsTable, Canvas, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
-import * as CardStories from './Card.stories'
-import { Hero, Note, Section, StoryHeading, TableOfContents } from '../DocsUtils'
-import { argTypes } from './Card.stories.args'
 import styled from 'styled-components'
+import { Button } from '../Button'
+import { Hero, Note, Section, StoryHeading, TableOfContents } from '../DocsUtils'
+import { Flex } from '../Flex'
+import { Image } from '../Image'
+import { Text } from '../Text'
+import { ThemeProvider } from '../ThemeProvider'
+import { Card, type CardProps } from './Card'
 import heroImage from './Card.Image.Hero.png'
-import cardStates from './Card.Image.States.png'
 import cardWithLinks from './Card.Image.Links.png'
+import cardStates from './Card.Image.States.png'
+import * as CardStories from './Card.stories'
+import { argTypes } from './Card.stories.args'
 
-type CardStory = StoryObj<ICardProps>
+type CardStory = StoryObj<CardProps>
 export const Playground: CardStory = {
   render: (args) => (
     <Card {...args} m={4} p={4} width={1 / 2}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-import Motion from './Motion'
+import { Motion } from './Motion'
 
 describe('Motion', () => {
   test('isAnimatedState = null (default)', () => {

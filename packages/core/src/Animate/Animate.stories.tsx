@@ -4,8 +4,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
-import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
-import { Box, Button, ChoiceChip, Flex, Image, Text } from '..'
+import { Box } from '../Box'
+import { Button } from '../Button'
+import { ChoiceChip } from '../Chip'
+import { Flex } from '../Flex'
+import { Image } from '../Image'
+import { Text } from '../Text'
+import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from './Animate'
 
 const meta: Meta<typeof Animate> = {
   component: Animate,

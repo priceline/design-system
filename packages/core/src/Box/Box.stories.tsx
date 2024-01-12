@@ -1,11 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from 'react'
-
 import { Star } from 'pcln-icons'
+import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Text } from '..'
-import { argTypes, defaultArgs } from './Box.stories.args'
+import { Flex } from '../Flex'
+import { Text } from '../Text'
 import { colorSchemeNames } from '../storybook/args'
+import { Box } from './Box'
+import { argTypes, defaultArgs } from './Box.stories.args'
 
 export default {
   title: 'core / Box',
@@ -177,19 +177,19 @@ export const ThemeUserCaseColorText = () => (
   <React.Fragment>
     <Box p={3}>
       <Box mt={3} color='text'>
-        color="text" w/o bg prop: retains the original "text" color from original color set as backward
-        compatible: expected style w. "text" color and white background
+        color=&quot;text&quot; w/o bg prop: retains the original &quot;text&quot; color from original color
+        set as backward compatible: expected style w. &quot;text&quot; color and white background
       </Box>
       <Box mt={3} color='purple'>
-        color="purple" as none "text" color w/o bg prop
+        color=&quot;purple&quot; as none &quot;text&quot; color w/o bg prop
       </Box>
     </Box>
     <Box p={5}>
       <Box mt={3} color='text.lightest' bg='background.dark'>
-        Theme 1: color="text.lightest" value & bg="background.dark"
+        Theme 1: color=&quot;text.lightest&quot; value & bg=&quot;background.dark&quot;
       </Box>
       <Box mt={3} color='text' bg='background.lightest'>
-        Theme 2: color="text" & "bg"="background.lightest"
+        Theme 2: color=&quot;text&quot; & bg=&quot;background.lightest&quot;
       </Box>
     </Box>
   </React.Fragment>

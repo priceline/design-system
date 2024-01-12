@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import DotLoader from './DotLoader'
+import { DotLoader } from './DotLoader'
 
 describe('DotLoader', () => {
   it('renders a dot loader', () => {

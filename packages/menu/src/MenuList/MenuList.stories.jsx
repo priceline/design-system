@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Text } from 'pcln-design-system'
-import { fireEvent, within } from '@storybook/testing-library'
+import { fireEvent, within, userEvent } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
 
 import MenuList from './MenuList'
@@ -71,6 +71,7 @@ export const KeyboardNavigation = () => (
 )
 KeyboardNavigation.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
+  await userEvent.tab()
   await fireEvent.keyDown(canvas.getByRole('listbox'), {
     key: 'ArrowUp',
     code: 'ArrowUp',

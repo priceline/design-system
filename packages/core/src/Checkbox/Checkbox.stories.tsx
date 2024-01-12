@@ -1,10 +1,13 @@
-/* eslint-disable react/prop-types */
+import { action } from '@storybook/addon-actions'
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { action } from '@storybook/addon-actions'
-
-import { Checkbox, Text, Box, Heading, Button, Label } from '..'
+import { Box } from '../Box'
+import { Button } from '../Button'
+import { Heading } from '../Heading'
+import { Label } from '../Label'
+import { Text } from '../Text'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { Checkbox } from './Checkbox'
 
 const StyledLabel = styled(Label)`
   cursor: pointer;
@@ -13,7 +16,7 @@ const StyledLabel = styled(Label)`
 `
 
 const Wrapper = (props) => (
-  <Box p='12px' my='6px' fontSize='12px'>
+  <Box p='12px' my='6px'>
     {props.title ? <Heading.h6 mb='12px'>{props.title}</Heading.h6> : null}
     {props.children}
   </Box>
@@ -228,10 +231,6 @@ export function ForwardRefs() {
     }
     return (
       <>
-        {/*
-          This example is for SC3
-            <Button dsRef={e => this.btnRef = e}>Click me</Button>
-        */}
         <StyledLabel htmlFor='check'>
           <Checkbox id='check' ref={dsRef} />
           Checkbox with ref

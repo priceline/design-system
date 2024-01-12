@@ -1,5 +1,5 @@
 import { borderStyles, colors, inputArgs, shadows } from '../storybook/args'
-import { Card } from '..'
+import { Card } from './Card'
 
 export const argTypes: unknown = {
   as: {

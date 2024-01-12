@@ -1,7 +1,11 @@
 import React from 'react'
 import { Flex } from '../Flex'
 
-const IconField: React.FC = (props) => {
+export type IconFieldProps = {
+  children: React.ReactNode
+}
+
+export function IconField(props: IconFieldProps) {
   const isIcon = (item) => item.type.isIcon || item.type.isIconButton
 
   const children = React.Children.toArray(props.children).filter(
@@ -46,5 +50,3 @@ const IconField: React.FC = (props) => {
     </Flex>
   )
 }
-
-export default IconField

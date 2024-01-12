@@ -1,5 +1,5 @@
 import React from 'react'
-import { Radio } from '..'
+import { Radio } from './Radio'
 
 describe('Radio', () => {
   test('Selected, rendering', () => {

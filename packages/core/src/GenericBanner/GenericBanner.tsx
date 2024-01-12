@@ -1,17 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import { AlignItemsProps, JustifyContentProps, FontSizeProps, PaddingProps, MarginProps } from 'styled-system'
-import PropTypes from 'prop-types'
-import propTypes from '@styled-system/prop-types'
+import { AlignItemsProps, FontSizeProps, JustifyContentProps, MarginProps, PaddingProps } from 'styled-system'
 
 import { Banner } from '../Banner'
 import { Box } from '../Box'
+import { Button } from '../Button'
 import { Flex } from '../Flex'
 import { Link } from '../Link'
 import { Relative } from '../Relative'
-import { Button } from '../Button'
-import { colorSchemeCustomForeground } from '../utils'
 import { ColorSchemeName } from '../theme'
+import { colorSchemeCustomForeground } from '../utils'
 
 const BannerWithRadius = styled(Banner)`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};
@@ -39,58 +37,35 @@ const CustomButton = styled(Button)`
   text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `
 
-const genericBannerProps = {
-  ...propTypes.alignItems,
-  ...propTypes.justifyContent,
-  ...propTypes.fontSize,
-  buttonClick: PropTypes.func,
-  buttonSize: PropTypes.oneOf(['small', 'medium', 'large']),
-  buttonVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
-  ctaText: PropTypes.node,
-  heading: PropTypes.node,
-  iconLeft: PropTypes.node,
-  iconRight: PropTypes.node,
-  imageLeft: PropTypes.node,
-  linkVariation: PropTypes.oneOf(['fill', 'outline', 'link']),
-  linkColor: PropTypes.string,
-  text: PropTypes.node,
-  URLProps: PropTypes.shape({
-    href: PropTypes.string.isRequired,
-    target: PropTypes.string,
-  }),
-  urlText: PropTypes.string,
-}
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Node = React.ReactElement<any, string | React.JSXElementConstructor<any>>
 
-export interface IGenericBannerProps
-  extends AlignItemsProps,
-    JustifyContentProps,
-    FontSizeProps,
-    PaddingProps,
-    MarginProps {
-  buttonClick?: () => unknown
-  buttonSize?: 'small' | 'medium' | 'large'
-  buttonVariation?: 'fill' | 'outline' | 'link'
-  ctaText?: Node
-  heading?: Node
-  iconLeft?: Node
-  iconRight?: Node
-  imageLeft?: Node
-  linkVariation?: 'fill' | 'outline' | 'link'
-  borderRadius?: string
-  linkColor?: string
-  text?: Node
-  URLProps?: {
-    href: string
-    target?: string
+export type GenericBannerProps = AlignItemsProps &
+  JustifyContentProps &
+  FontSizeProps &
+  PaddingProps &
+  MarginProps & {
+    buttonClick?: () => unknown
+    buttonSize?: 'small' | 'medium' | 'large'
+    buttonVariation?: 'fill' | 'outline' | 'link'
+    ctaText?: Node
+    heading?: Node
+    iconLeft?: Node
+    iconRight?: Node
+    imageLeft?: Node
+    linkVariation?: 'fill' | 'outline' | 'link'
+    borderRadius?: string
+    linkColor?: string
+    text?: Node
+    URLProps?: {
+      href: string
+      target?: string
+    }
+    color?: string
+    colorScheme?: ColorSchemeName
   }
-  color?: string
-  colorScheme?: ColorSchemeName
-}
 
-const GenericBanner: React.FC<IGenericBannerProps> = ({
+export function GenericBanner({
   alignItems,
   buttonClick,
   buttonSize,
@@ -108,7 +83,7 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
   /* eslint-disable @typescript-eslint/naming-convention */
   URLProps,
   ...props
-}) => {
+}: GenericBannerProps) {
   function onClick(e) {
     e.stopPropagation()
     buttonClick()
@@ -127,7 +102,11 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
           {!!imageLeft && imageLeft}
-          <Box px={2} fontSize={fontSize}>
+          {/*
+            fontSize is not a prop Box supports
+            <Box px={2} fontSize={fontSize}>
+          */}
+          <Box px={2}>
             {!!heading &&
               React.cloneElement(heading, {
                 fontSize: heading.props.fontSize || fontSize,
@@ -171,8 +150,6 @@ const GenericBanner: React.FC<IGenericBannerProps> = ({
   )
 }
 
-GenericBanner.propTypes = genericBannerProps
-
 GenericBanner.defaultProps = {
   alignItems: 'center',
   buttonVariation: 'link',
@@ -182,5 +159,3 @@ GenericBanner.defaultProps = {
   linkVariation: 'link',
   borderRadius: '6px',
 }
-
-export default GenericBanner

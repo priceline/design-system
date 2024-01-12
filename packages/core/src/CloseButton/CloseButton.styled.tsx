@@ -3,13 +3,13 @@ import { ForwardRefComponent, HTMLMotionProps, motion } from 'framer-motion'
 import { Close } from 'pcln-icons'
 import React from 'react'
 import styled, { css } from 'styled-components'
-
-import type { ICloseButtonProps } from '..'
-import { ComposedStyleFns, getPaletteColor } from '..'
+import { ComposedStyleFns } from '../theme'
+import { getPaletteColor } from '../utils'
+import type { CloseButtonProps } from './CloseButton'
 
 export const closeButtonSizes = ['sm', 'md', 'lg'] as const
 export type CloseButtonSize = (typeof closeButtonSizes)[number] | number
-export type MotionButtonProps = HTMLMotionProps<'button'> & ICloseButtonProps
+export type MotionButtonProps = HTMLMotionProps<'button'> & CloseButtonProps
 
 export const closeButtonIconSizes: Record<CloseButtonSize, number> = {
   sm: 20,
@@ -29,7 +29,7 @@ const clickablePaddingPx = 24
 
 export const closeButtonVariants = ['filled', 'white'] as const
 export type CloseButtonVariant = (typeof closeButtonVariants)[number]
-export const closeButtonVariantProps: Record<CloseButtonVariant, Omit<ICloseButtonProps, 'variant'>> = {
+export const closeButtonVariantProps: Record<CloseButtonVariant, Omit<CloseButtonProps, 'variant'>> = {
   filled: { bgColor: 'background.lightest', boxShadowSize: 'sm', color: 'primary.base' },
   white: { color: 'text.lightest' },
 } as const

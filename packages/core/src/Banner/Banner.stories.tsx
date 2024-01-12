@@ -1,7 +1,12 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { Box, Banner, Flex, Heading, Text } from '..'
+import { Attention, Star } from 'pcln-icons'
+import React from 'react'
+import { Box } from '../Box'
+import { Flex } from '../Flex'
+import { Heading } from '../Heading'
+import { Text } from '../Text'
 import { colorSchemeNames } from '../storybook/args'
+import { Banner } from './Banner'
 
 export default {
   title: 'Banner',
@@ -93,7 +98,7 @@ export const AllBgs = () => (
       mb={2}
       p={3}
       color='warning'
-      iconName='attention'
+      icon={<Attention />}
       text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pretium turpis nec efficitur. Nullam pretium diam in porta luctus. Etiam viverra porttitor porttitor. Vestibulum at dignissim tellus. Integer eget massa lacus. Mauris placerat augue rhoncus nisl porttitor bibendum. Sed non aliquam orci, id pulvinar justo. Fusce feugiat egestas risus in ornare. Quisque at quam vel nibh tempor imperdiet vitae non orci. Etiam bibendum sem id nibh finibus interdum. Nunc quam neque, tristique porttitor varius a, ultrices a nibh. Nunc et ipsum id eros condimentum convallis. Donec gravida leo facilisis, pharetra tellus eu, dictum mi.'
     />
   </Box>
@@ -371,14 +376,14 @@ export const WithoutIconOrCloseButtonTextOnly = () => (
 
 export const WithCustomIconsAndSizes = () => (
   <Box>
-    <Banner textAlign='right' mb={2} p={2} text='default' iconName='star' />
-    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' iconName='star' />
-    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' iconName='star' />
-    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' iconName='star' />
-    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' iconName='star' />
-    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' iconName='star' />
-    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' iconName='star' />
-    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' iconName='star' />
+    <Banner textAlign='right' mb={2} p={2} text='default' icon={<Star />} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='blue' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='green' icon={<Star />} />
+    <Banner textAlign='left' mb={2} p={2} text='orange' bg='orange' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='red' icon={<Star />} />
+    <Banner textAlign='left' mb={2} p={2} text='blue' bg='lightBlue' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='green' bg='lightGreen' icon={<Star />} />
+    <Banner textAlign='right' mb={2} p={2} text='red' bg='lightRed' icon={<Star />} />
   </Box>
 )
 

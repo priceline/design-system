@@ -36,34 +36,30 @@
     "@priceline/eslint-config": "workspace:*",
     "@priceline/heft-component-rig": "workspace:*",
     "@reach/component-component": "^0.17.0",
-    "@rushstack/eslint-config": "^3.3.1",
-    "@rushstack/eslint-patch": "^1.3.3",
-    "@rushstack/heft": "~0.50.7",
+    "@rushstack/eslint-config": "^3.5.0",
+    "@rushstack/eslint-patch": "^1.6.0",
+    "@rushstack/heft": "^0.63.4",
     "@styled-system/prop-types": "^5.1.5",
-    "@testing-library/jest-dom": "^6.1.3",
-    "@testing-library/react": "^12.1.5",
-    "@types/jest": "^29.5.4",
-    "@types/react": "^17.0.65",
-    "@types/react-test-renderer": "^17.0.2",
-    "eslint": "^8.48.0",
-    "jest-styled-components": "^7.1.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.11",
+    "@types/react": "^18.2.42",
+    "@types/react-test-renderer": "^18.0.7",
+    "eslint": "^8.55.0",
+    "jest-styled-components": "^7.2.0",
     "pcln-design-system": "workspace:*",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-is": "^17.0.2",
-    "react-test-renderer": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
     "require-from-string": "2.0.2",
     "styled-components": "^5.3.11",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "pcln-design-system": "^5.28.3",
-    "react": ">=16.10.0",
-    "react-dom": ">=16.10.0",
-    "styled-components": ">=5 <5.3.4 || >5.3.7 <6"
-  },
-  "engines": {
-    "node": ">=14",
-    "npm": ">=6.0.0"
+    "react": "^17.0.2 || ^18.2.0",
+    "react-dom": "^17.0.2 || ^18.2.0",
+    "styled-components": ">=5.3.7 <6"
   }
 }

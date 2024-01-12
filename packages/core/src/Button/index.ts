@@ -1,3 +1,1 @@
-export type { IButtonProps, Sizes, Variations } from './Button'
-
-export { default as Button, buttonStyles } from './Button'
+export { Button, buttonStyles, type ButtonProps, type Sizes, type Variations } from './Button'

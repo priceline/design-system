@@ -1,5 +1,11 @@
 import React from 'react'
-import { Flex, Box, FormField, Label, Input, Select, Tooltip } from '..'
+import { Box } from '../Box'
+import { Flex } from '../Flex'
+import { Input } from '../Input'
+import { Label } from '../Label'
+import { Select } from '../Select'
+import { Tooltip } from '../Tooltip'
+import { FormField } from './FormField'
 
 import {
   Check as CheckIcon,

@@ -1,1 +1,1 @@
-export { default as DotLoader } from './DotLoader'
+export { DotLoader, type DotLoaderProps } from './DotLoader'

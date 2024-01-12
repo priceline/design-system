@@ -1,14 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { SpaceProps, FontSizeProps } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
-
-import { ChipContent } from '../ChipContent'
-import { ChipContentWrapper } from '../ChipContentWrapper'
+import React from 'react'
+import styled from 'styled-components'
+import { FontSizeProps, SpaceProps } from 'styled-system'
 import { Button } from '../../Button'
 import { getPaletteColor } from '../../utils'
+import { ChipContent, type IconComponent } from '../ChipContent'
+import { ChipContentWrapper } from '../ChipContentWrapper'
 
 const ChipButton = styled(Button)`
   background-color: transparent;
@@ -29,43 +26,28 @@ const ChipButton = styled(Button)`
 
 const getTitle = ({ disabled, expanded }) => (disabled ? 'Disabled' : expanded ? 'Collapse' : 'Expand')
 
-const buttonChipPropTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  id: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-  disabled: PropTypes.bool,
-  expanded: PropTypes.bool,
-  facet: PropTypes.string,
-  label: PropTypes.string,
-  bridgeLabel: PropTypes.string,
-  BridgeIcon: PropTypes.node,
-  Icon: PropTypes.node,
-  showActionIcon: PropTypes.bool,
-  Image: PropTypes.object,
-  variation: PropTypes.oneOf(['outline', 'shadow']),
-}
+export type ButtonChipVariation = 'outline' | 'shadow'
 
-export type Variations = 'outline' | 'shadow'
+export type ButtonChipProps = SpaceProps &
+  FontSizeProps & {
+    BridgeIcon?: IconComponent
+    bridgeLabel?: string
+    children?: React.ReactNode
+    color?: string
+    disabled?: boolean
+    expanded?: boolean
+    facet?: string
+    Icon?: IconComponent
+    id?: string
+    label?: string
+    selected?: boolean
+    showActionIcon?: boolean
+    onClick?: (unknown) => unknown
+    width?: string
+    variation?: ButtonChipVariation
+  }
 
-export interface IButtonChipProps extends SpaceProps, FontSizeProps {
-  Icon?: React.ReactNode | string
-  BridgeIcon?: React.ReactNode | string
-  selected?: boolean
-  disabled?: boolean
-  showActionIcon?: boolean
-  facet?: string
-  label?: string
-  bridgeLabel?: string
-  onClick?: (unknown) => unknown
-  expanded?: boolean
-  id?: string
-  color?: string
-  width?: string
-  variation?: Variations
-}
-
-const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
+export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef(
   (
     {
       color,
@@ -115,11 +97,7 @@ const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
 
 ButtonChip.displayName = 'ButtonChip'
 
-ButtonChip.propTypes = buttonChipPropTypes
-
 ButtonChip.defaultProps = {
   color: 'primary',
   variation: 'outline',
 }
-
-export default ButtonChip

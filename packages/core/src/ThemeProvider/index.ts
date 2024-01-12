@@ -1,1 +1,1 @@
-export { ThemeProvider, Base } from './ThemeProvider'
+export { ThemeProvider, type ThemeProviderProps, Base } from './ThemeProvider'

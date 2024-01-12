@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Hide } from '..'
+import { Hide } from '../Hide'
 
 describe('Hide', () => {
   test('renders', () => {

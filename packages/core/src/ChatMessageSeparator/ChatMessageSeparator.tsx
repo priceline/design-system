@@ -6,11 +6,11 @@ import { Divider } from '../Divider'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
 
-export interface IChatMessageSeparatorProps {
+export type ChatMessageSeparatorProps = {
   message?: string
 }
 
-function ChatMessageSeparator({ message }: IChatMessageSeparatorProps) {
+export function ChatMessageSeparator({ message }: ChatMessageSeparatorProps) {
   return (
     <Flex alignItems='center' justifyContent='center'>
       <Divider width='100%' />
@@ -23,6 +23,3 @@ function ChatMessageSeparator({ message }: IChatMessageSeparatorProps) {
     </Flex>
   )
 }
-
-export { ChatMessageSeparator }
-export default ChatMessageSeparator

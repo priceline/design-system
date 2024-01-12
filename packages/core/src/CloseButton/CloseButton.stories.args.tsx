@@ -1,9 +1,9 @@
 import { ArgTypes } from '@storybook/react'
-import type { ICloseButtonProps } from '.'
-import { paletteColors, shadows } from '..'
+import { paletteColors, shadows } from '../theme'
+import type { CloseButtonProps } from './CloseButton'
 import { closeButtonSizes, closeButtonVariants } from './CloseButton.styled'
 
-export const argTypes: Partial<ArgTypes<ICloseButtonProps>> = {
+export const argTypes: Partial<ArgTypes<CloseButtonProps>> = {
   animate: { control: { type: 'boolean' } },
   bgColor: { control: { type: 'select' }, options: paletteColors },
   boxShadowSize: { control: { type: 'select' }, options: Object.keys(shadows) },
@@ -16,7 +16,7 @@ export const argTypes: Partial<ArgTypes<ICloseButtonProps>> = {
   onClick: { action: 'clicked' },
 }
 
-export const defaultArgs: Partial<ICloseButtonProps> = {
+export const defaultArgs: Partial<CloseButtonProps> = {
   size: 'md',
   title: 'close',
   animate: true,

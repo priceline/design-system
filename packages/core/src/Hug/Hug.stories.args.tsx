@@ -1,9 +1,7 @@
-import React from 'react'
 import { Accessible, SeatBusiness, ThumbsUp, Trophy, WashingHands } from 'pcln-icons'
-
-import { Text } from '..'
-
-import { colors, borderRadii } from '../storybook/args'
+import React from 'react'
+import { Text } from '../Text'
+import { borderRadii, colors } from '../storybook/args'
 
 export const iconMap = {
   Accessible,

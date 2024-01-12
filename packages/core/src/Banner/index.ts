@@ -1,1 +1,1 @@
-export { default as Banner } from './Banner'
+export { Banner, type BannerProps, type BannerColor } from './Banner'

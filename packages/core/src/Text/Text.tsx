@@ -1,24 +1,5 @@
 import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
-import propTypes from '@styled-system/prop-types'
 import {
-  display,
-  fontSize,
-  fontStyle,
-  fontWeight,
-  height,
-  letterSpacing,
-  lineHeight,
-  maxHeight,
-  maxWidth,
-  minHeight,
-  minWidth,
-  overflow,
-  space,
-  textAlign,
-  textStyle,
-  width,
-  zIndex,
   DisplayProps,
   FontSizeProps,
   FontStyleProps,
@@ -36,19 +17,32 @@ import {
   WidthProps,
   ZIndexProps,
   compose,
+  display,
+  fontSize,
+  fontStyle,
+  fontWeight,
+  height,
+  letterSpacing,
+  lineHeight,
+  maxHeight,
+  maxWidth,
+  minHeight,
+  minWidth,
+  overflow,
+  space,
+  textAlign,
+  textStyle,
+  width,
+  zIndex,
 } from 'styled-system'
 
 import {
   applyVariations,
   colorScheme,
-  deprecatedColorValue,
   getPaletteColor,
   textAlignAttrs,
-  textStylesValues,
   textTransform,
-  textTransformValues,
   textWrap,
-  textWrapValues,
   typographyAttrs,
 } from '../utils'
 
@@ -82,57 +76,28 @@ export const textShadow = (props) => {
   return props.enableTextShadow ? { textShadow: props.theme.textShadows[textShadowSize] } : null
 }
 
-const textPropTypes = {
-  ...propTypes.display,
-  ...propTypes.fontSize,
-  ...propTypes.fontStyle,
-  ...propTypes.fontWeight,
-  ...propTypes.height,
-  ...propTypes.lineHeight,
-  ...propTypes.maxHeight,
-  ...propTypes.maxWidth,
-  ...propTypes.minHeight,
-  ...propTypes.minWidth,
-  ...propTypes.overflow,
-  ...propTypes.space,
-  ...propTypes.textAlign,
-  ...propTypes.textStyle,
-  ...propTypes.width,
-  ...propTypes.zIndex,
-  bold: PropTypes.bool,
-  caps: PropTypes.bool,
-  color: deprecatedColorValue(),
-  enableTextShadow: PropTypes.bool,
-  regular: PropTypes.bool,
-  textDecoration: PropTypes.string,
-  textShadowSize: PropTypes.oneOf(['sm', 'md']),
-  textStyle: PropTypes.oneOf(textStylesValues),
-  textTransform: PropTypes.oneOf(textTransformValues),
-  textWrap: PropTypes.oneOf(textWrapValues),
-}
+export type TextProps = DisplayProps &
+  FontSizeProps &
+  FontStyleProps &
+  FontWeightProps &
+  HeightProps &
+  LineHeightProps &
+  MaxHeightProps &
+  MaxWidthProps &
+  MinHeightProps &
+  MinWidthProps &
+  OverflowProps &
+  SpaceProps &
+  TextAlignProps &
+  TextStyleProps &
+  WidthProps &
+  ZIndexProps & {
+    bg?: string
+    children?: React.ReactNode
+    color?: string
+  }
 
-export interface ITextProps
-  extends DisplayProps,
-    FontSizeProps,
-    FontStyleProps,
-    FontWeightProps,
-    HeightProps,
-    LineHeightProps,
-    MaxHeightProps,
-    MaxWidthProps,
-    MinHeightProps,
-    MinWidthProps,
-    OverflowProps,
-    SpaceProps,
-    TextAlignProps,
-    TextStyleProps,
-    WidthProps,
-    ZIndexProps {
-  color?: string
-  bg?: string
-}
-
-const textProps: React.FC<ITextProps> = css`
+const textProps: React.FC<TextProps> = css`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
@@ -168,12 +133,12 @@ const textProps: React.FC<ITextProps> = css`
     )(props)}
 `
 
-const textAttrs = (props) => ({
+const textAttrs = (props: TextProps) => ({
   ...typographyAttrs(props),
   ...textAlignAttrs(props),
 })
 
-const Text = styled.div.attrs(textAttrs)`
+export const Text = styled.div.attrs(textAttrs)`
   ${textProps}
 `
 
@@ -191,8 +156,6 @@ const Strike = styled.s.attrs(textAttrs)`
 
 Text.displayName = 'Text'
 
-Text.propTypes = textPropTypes
-
 Text.span = Span
 Text.span.displayName = 'Text.span'
 
@@ -201,5 +164,3 @@ Text.p.displayName = 'Text.p'
 
 Text.s = Strike
 Text.s.displayName = 'Text.s'
-
-export default Text

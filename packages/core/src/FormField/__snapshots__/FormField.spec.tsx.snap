@@ -2,21 +2,7 @@
 
 exports[`FormField disabled state renders input with icon - disabled 1`] = `
 <DocumentFragment>
-  .c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c8 {
-  outline: none;
-}
-
-.c1 {
+  .c1 {
   border-radius: 12px;
 }
 
@@ -42,6 +28,20 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: flex;
 }
 
+.c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c8 {
+  outline: none;
+}
+
 .c3 {
   display: block;
   width: 100%;
@@ -58,6 +58,16 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -120,16 +130,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 @media screen and (min-width:32em) {
@@ -202,35 +202,7 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 
 exports[`FormField disabled state renders select with icon - disabled 1`] = `
 <DocumentFragment>
-  .c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c11 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
-}
-
-.c12 {
-  outline: none;
-}
-
-.c8 {
-  outline: none;
-}
-
-.c1 {
+  .c1 {
   border-radius: 12px;
 }
 
@@ -260,6 +232,34 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   display: flex;
 }
 
+.c7 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c11 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c12 {
+  outline: none;
+}
+
+.c8 {
+  outline: none;
+}
+
 .c3 {
   display: block;
   width: 100%;
@@ -276,6 +276,16 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -327,16 +337,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 @media screen and (min-width:32em) {
@@ -578,20 +578,6 @@ exports[`FormField renders 1`] = `
 `;
 
 exports[`FormField renders with Icon 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c0 {
   border-radius: 12px;
 }
@@ -616,6 +602,20 @@ exports[`FormField renders with Icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c1 {
@@ -772,20 +772,6 @@ exports[`FormField renders with Icon 1`] = `
 `;
 
 exports[`FormField renders with Label autoHide prop 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c0 {
   border-radius: 12px;
 }
@@ -810,6 +796,20 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c1 {
@@ -966,20 +966,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c0 {
   border-radius: 12px;
 }
@@ -997,6 +983,20 @@ exports[`FormField renders with Select  1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c1 {
@@ -1139,34 +1139,6 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c0 {
   border-radius: 12px;
 }
@@ -1195,6 +1167,34 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c6 {
+  outline: none;
 }
 
 .c1 {

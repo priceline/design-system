@@ -1,1 +1,1 @@
-export { default as PlaceholderImage } from './PlaceholderImage'
+export { PlaceholderImage, type PlaceholderImageProps } from './PlaceholderImage'

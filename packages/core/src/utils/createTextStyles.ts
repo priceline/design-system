@@ -7,7 +7,7 @@ import { theme as dsTheme } from '../theme'
  *
  * @returns The generated textStyles
  */
-const createTextStyles = (theme: typeof dsTheme) => {
+export const createTextStyles = (theme: typeof dsTheme) => {
   const { fontSizes, fontWeights, lineHeights, letterSpacings } = theme
 
   return {
@@ -80,5 +80,3 @@ const createTextStyles = (theme: typeof dsTheme) => {
     },
   }
 }
-
-export { createTextStyles }

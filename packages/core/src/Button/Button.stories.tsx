@@ -1,18 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 // @ts-nocheck
 
-import type { Meta, StoryObj } from '@storybook/react'
-import type { IButtonProps, Sizes } from './Button'
-
-import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
+import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
-import { Calendar, Check, ChevronLeft, ChevronRight, ChevronDown, Search, User, Guests } from 'pcln-icons'
+import type { Meta, StoryObj } from '@storybook/react'
+import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
 import React from 'react'
-
-import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider, Label } from '..'
+import { Box } from '../Box'
+import { ButtonChip } from '../Chip/ButtonChip'
+import { CloseButton } from '../CloseButton'
 import {
-  DocTable,
   DoDont,
+  DocTable,
   Hero,
   // LiveDemo,
   Note,
@@ -23,15 +22,21 @@ import {
   StoryStage,
   TableOfContents,
 } from '../DocsUtils'
+import { Flex } from '../Flex'
+import { Image } from '../Image'
+import { Label } from '../Label'
+import { Link } from '../Link'
+import { Text } from '../Text'
+import { ThemeProvider } from '../ThemeProvider'
 import { colors, shadows } from '../storybook/args'
-
+import { Button, type ButtonProps, type Sizes } from './Button'
 import alignmentImage from './Button.Image.Alignment.png'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
 import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
 import buttonStates from './Button.Image.States.png'
 
-type ButtonStory = StoryObj<IButtonProps>
+type ButtonStory = StoryObj<ButtonProps>
 
 const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
 
@@ -185,7 +190,7 @@ export const InputVariation: ButtonStory = {
   render: () => (
     <StoryStage>
       <Button size='lg' variation='input' borderRadius='lg' py={0}>
-        <Flex width='100%' justifyContent='flex-start' height='100%' alignItems='center' height='54px'>
+        <Flex width='100%' justifyContent='flex-start' alignItems='center' height='54px'>
           <Calendar mr={2} color='primary.base' />
           <Flex flexDirection='column'>
             <Label as='div'>Check-in - Check-out</Label>

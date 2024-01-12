@@ -1,12 +1,11 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import { action } from '@storybook/addon-actions'
+import React from 'react'
 import styled from 'styled-components'
+import { BackgroundImage } from '../BackgroundImage'
+import { Box } from '../Box'
 import { Card } from '../Card'
 import { Flex } from '../Flex'
 import { Text } from '../Text'
-import { BackgroundImage } from '../BackgroundImage'
-import { Box } from '../Box'
 import { SlideBox } from './SlideBox'
 
 const ToutCard = styled(Card)`
@@ -18,11 +17,7 @@ export default {
   component: SlideBox,
 }
 
-const propTypes = {
-  index: PropTypes.number,
-}
-
-const TileContents: React.FC<InferProps<typeof propTypes>> = ({ index }) => (
+const TileContents = ({ index }: { index?: number }) => (
   <Box>
     <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
     <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>

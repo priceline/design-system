@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Downshift from 'downshift'
 import styled from 'styled-components'
 import {
@@ -96,16 +95,13 @@ ItemRoot.defaultProps = {
 
 export const Item = (props) => (
   <AutocompleteContext.Consumer
-    // eslint-disable-next-line react/no-children-prop
     children={({ item, getItemProps, highlightedIndex }) => (
       <ItemRoot
         {...getItemProps({
           item,
           px: 2,
           py: 1,
-          'data-highlighted':
-            // eslint-disable-next-line react/prop-types
-            highlightedIndex === props.index ? true : undefined,
+          'data-highlighted': highlightedIndex === props.index ? true : undefined,
           ...props,
         })}
       />
@@ -113,38 +109,24 @@ export const Item = (props) => (
   />
 )
 
-export class Autocomplete extends React.Component {
-  static Label = Label
-  static Input = Input
-  static Menu = Menu
-  static Item = Item
-
-  static propTypes = {
-    match: PropTypes.func,
-  }
-
-  static defaultProps = {
-    match: () => true,
-  }
-
-  render() {
-    // eslint-disable-next-line react/prop-types
-    const { children, style, ...props } = this.props
-
-    return (
-      <Downshift
-        {...props}
-        // eslint-disable-next-line react/no-children-prop
-        children={(state) => (
-          <div style={{ position: 'relative', ...style }}>
-            <AutocompleteContext.Provider
-              value={{ ...props, ...state }}
-              // eslint-disable-next-line react/no-children-prop
-              children={children}
-            />
-          </div>
-        )}
-      />
-    )
-  }
+export const Autocomplete = ({ children, style, ...props }) => {
+  return (
+    <Downshift
+      {...props}
+      children={(state) => (
+        <div style={{ position: 'relative', ...style }}>
+          <AutocompleteContext.Provider value={{ ...props, ...state }} children={children} />
+        </div>
+      )}
+    />
+  )
 }
+
+Autocomplete.defaultProps = {
+  match: () => true,
+}
+
+Autocomplete.Label = Label
+Autocomplete.Input = Input
+Autocomplete.Menu = Menu
+Autocomplete.Item = Item
