@@ -1,6 +1,17 @@
 # Change Log - pcln-codemods
 
-This log was last generated on Mon, 11 Dec 2023 16:41:10 GMT and should not be manually modified.
+This log was last generated on Fri, 12 Jan 2024 16:09:00 GMT and should not be manually modified.
+
+## 3.0.0
+Fri, 12 Jan 2024 16:09:00 GMT
+
+### Breaking changes
+
+- React 18 upgrade
+
+### Minor changes
+
+- Upgrade all @rushstack dependencies to latest
 
 ## 2.2.31
 Mon, 11 Dec 2023 16:41:10 GMT

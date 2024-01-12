@@ -1,6 +1,17 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Fri, 12 Jan 2024 15:07:44 GMT and should not be manually modified.
+This log was last generated on Fri, 12 Jan 2024 16:09:00 GMT and should not be manually modified.
+
+## 6.0.0
+Fri, 12 Jan 2024 16:09:00 GMT
+
+### Breaking changes
+
+- React 18 upgrade
+
+### Minor changes
+
+- Upgrade all @rushstack dependencies to latest
 
 ## 5.3.36
 Fri, 12 Jan 2024 15:07:44 GMT

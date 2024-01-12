@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "5.3.36",
+  "version": "6.0.0",
   "description": "React autocomplete component built with Downshift",
   "keywords": [],
   "license": "MIT",
@@ -56,7 +56,7 @@
     "us": "^2.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": "^5.28.3",
+    "pcln-design-system": "^6.0.0",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",
     "styled-components": ">=5.3.7 <6"

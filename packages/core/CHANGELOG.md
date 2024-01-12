@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 11 Dec 2023 16:41:10 GMT and should not be manually modified.
+This log was last generated on Fri, 12 Jan 2024 16:09:00 GMT and should not be manually modified.
+
+## 6.0.0
+Fri, 12 Jan 2024 16:09:00 GMT
+
+### Breaking changes
+
+- Implement heft-webpack5-plugin to optimize production output
+- React 18 upgrade
+
+### Minor changes
+
+- Upgrade all @rushstack dependencies to latest
 
 ## 5.28.3
 Mon, 11 Dec 2023 16:41:10 GMT

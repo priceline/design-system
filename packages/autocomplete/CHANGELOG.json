@@ -2,6 +2,38 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "6.0.0",
+      "tag": "pcln-autocomplete_v6.0.0",
+      "date": "Fri, 12 Jan 2024 16:09:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade all @rushstack dependencies to latest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ],
+        "major": [
+          {
+            "comment": "React 18 upgrade",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.28.3` to `^6.0.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.36",
       "tag": "pcln-autocomplete_v5.3.36",
       "date": "Fri, 12 Jan 2024 15:07:44 GMT",

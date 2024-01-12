@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.0.0",
+      "tag": "pcln-design-system_v6.0.0",
+      "date": "Fri, 12 Jan 2024 16:09:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade all @rushstack dependencies to latest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ],
+        "major": [
+          {
+            "comment": "Implement heft-webpack5-plugin to optimize production output",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          },
+          {
+            "comment": "React 18 upgrade",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.28.3",
       "tag": "pcln-design-system_v5.28.3",
       "date": "Mon, 11 Dec 2023 16:41:10 GMT",
