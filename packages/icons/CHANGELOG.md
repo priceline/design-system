@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 13 Dec 2023 22:03:38 GMT and should not be manually modified.
+This log was last generated on Fri, 12 Jan 2024 15:07:44 GMT and should not be manually modified.
+
+## 5.14.0
+Fri, 12 Jan 2024 15:07:44 GMT
+
+### Minor changes
+
+- Added new icons refund and currencyExchange
 
 ## 5.13.0
 Wed, 13 Dec 2023 22:03:38 GMT

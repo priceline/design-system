@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "5.14.0",
+      "tag": "pcln-icons_v5.14.0",
+      "date": "Fri, 12 Jan 2024 15:07:44 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added new icons refund and currencyExchange",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "1280854e2dfd5108720d72fdee807e45d0dfb5ac"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.13.0",
       "tag": "pcln-icons_v5.13.0",
       "date": "Wed, 13 Dec 2023 22:03:38 GMT",
