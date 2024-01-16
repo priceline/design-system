@@ -5,7 +5,7 @@ import { Grid } from '../Grid'
 import { Text } from '../Text'
 import { borderRadii, colorSchemeNames, paletteColors } from '../theme'
 import type { DialogProps } from './Dialog'
-import { dialogSizes } from './Dialog.styled'
+import { dialogSizes, overflow } from './Dialog.styled'
 
 export const argTypes: Partial<ArgTypes<DialogProps>> = {
   borderRadius: { control: { type: 'select' }, options: Object.keys(borderRadii) },
@@ -21,6 +21,8 @@ export const argTypes: Partial<ArgTypes<DialogProps>> = {
   showCloseButton: { control: { type: 'boolean' } },
   size: { control: { type: 'select' }, options: dialogSizes },
   triggerNode: { control: { type: 'none' } },
+  overflowX: { control: { type: 'select' }, options: overflow },
+  overflowY: { control: { type: 'select' }, options: overflow },
 }
 
 export const defaultArgs: Partial<DialogProps> = {
@@ -50,4 +52,6 @@ export const defaultArgs: Partial<DialogProps> = {
   showCloseButton: true,
   size: 'md',
   triggerNode: <Button>Open Dialog</Button>,
+  overflowX: 'auto',
+  overflowY: 'auto',
 }

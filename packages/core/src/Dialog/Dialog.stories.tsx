@@ -110,7 +110,7 @@ const ExampleOverflowingContent = (props: GridProps) => (
 export const OverflowModal: DialogStory = {
   ...Playground,
   args: {
-    children: <ExampleOverflowingContent />,
+    children: <ExampleOverflowingContent overflow='auto' />,
   },
 }
 

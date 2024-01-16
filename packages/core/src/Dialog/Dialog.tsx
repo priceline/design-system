@@ -25,6 +25,8 @@ export type DialogProps = {
   showCloseButton?: boolean
   size?: DialogSize
   triggerNode?: React.ReactNode
+  overflowX?: 'visible' | 'hidden' | 'scroll' | 'auto'
+  overflowY?: 'visible' | 'hidden' | 'scroll' | 'auto'
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
 }
@@ -49,6 +51,8 @@ const PclnDialog = ({
   size = 'md',
   triggerNode,
   zIndex = 'overlay',
+  overflowX = 'auto',
+  overflowY = 'auto',
   onOpenChange,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
@@ -67,6 +71,8 @@ const PclnDialog = ({
         {_open && (
           <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet} zIndex={zIndex}>
             <DialogContent
+              overflowX={overflowX}
+              overflowY={overflowY}
               ariaDescription={ariaDescription}
               ariaTitle={ariaTitle}
               borderRadius={borderRadius}
