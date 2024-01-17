@@ -313,7 +313,7 @@ export const borderRadii = {
 }
 
 export type BorderRadius = keyof typeof borderRadii
-
+export type Overflow = 'visible' | 'hidden' | 'scroll' | 'auto' | 'clip'
 export const maxContainerWidth = '1280px'
 
 export const shadows = {

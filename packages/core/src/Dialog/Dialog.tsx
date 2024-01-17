@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion'
-import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme'
+import type { BorderRadius, ColorSchemes, Overflow, PaletteColor, ZIndex } from '../theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
 
@@ -25,8 +25,8 @@ export type DialogProps = {
   showCloseButton?: boolean
   size?: DialogSize
   triggerNode?: React.ReactNode
-  overflowX?: 'visible' | 'hidden' | 'scroll' | 'auto'
-  overflowY?: 'visible' | 'hidden' | 'scroll' | 'auto'
+  overflowX?: Overflow
+  overflowY?: Overflow
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
 }
