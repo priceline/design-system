@@ -111,6 +111,9 @@ importers:
       vite:
         specifier: ^4.5.1
         version: 4.5.1
+      vite-plugin-turbosnap:
+        specifier: ^1.0.3
+        version: 1.0.3
 
   ../../packages/autocomplete:
     dependencies:
@@ -16139,6 +16142,10 @@ packages:
       test-exclude: 6.0.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /vite-plugin-turbosnap@1.0.3:
+    resolution: {integrity: sha512-p4D8CFVhZS412SyQX125qxyzOgIFouwOcvjZWk6bQbNPR1wtaEzFT6jZxAjf1dejlGqa6fqHcuCvQea6EWUkUA==}
     dev: true
 
   /vite@4.5.1:
