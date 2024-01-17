@@ -104,8 +104,8 @@ const DialogContentWrapper = styled(motion.div)`
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
-  overflow-x: ${(props) => props.overflowX && props.overflowX};
-  overflow-y: ${(props) => props.overflowY && props.overflowY};
+  overflow-x: ${(props) => props.overflowX};
+  overflow-y: ${(props) => props.overflowY};
   border-radius: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
