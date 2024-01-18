@@ -3,7 +3,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { render } from '../__test__/testing-library'
 import { borderRadii as borderRadius, shadows } from '../theme'
-import { boxShadowSizeValues, createTheme } from '../utils'
+import { boxShadowSizeValues } from '../utils'
+import { createTheme } from '../utils/createTheme'
 import { Button } from './Button'
 
 const theme = createTheme()

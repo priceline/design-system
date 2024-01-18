@@ -2,7 +2,29 @@
 
 exports[`RadioCheckToggleCard Checkbox Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,28 +46,6 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -202,7 +202,29 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
 
 exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -224,28 +246,6 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -401,7 +401,29 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
 
 exports[`RadioCheckToggleCard Radio Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -423,28 +445,6 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -601,7 +601,29 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
 
 exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -623,28 +645,6 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -800,7 +800,29 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
 
 exports[`RadioCheckToggleCard Toggle Card should render checked state UI correctly 1`] = `
 <DocumentFragment>
-  .c9 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c21 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 16;
+}
+
+.c22 {
+  outline: none;
+}
+
+.c9 {
   width: 24;
   height: 24;
 }
@@ -824,18 +846,6 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   border-radius: 9999px;
   width: 20px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
-}
-
-.c16 {
-  position: absolute;
-  left: -4px;
-  top: -4px;
-}
-
-.c19 {
-  position: absolute;
-  left: 23px;
-  top: 2px;
 }
 
 .c2 {
@@ -862,26 +872,16 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   flex-direction: row;
 }
 
-.c21 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 16;
+.c16 {
+  position: absolute;
+  left: -4px;
+  top: -4px;
 }
 
-.c22 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c19 {
+  position: absolute;
+  left: 23px;
+  top: 2px;
 }
 
 .c13 {
@@ -1128,7 +1128,29 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
 
 exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI correctly 1`] = `
 <DocumentFragment>
-  .c9 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c21 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 16;
+}
+
+.c22 {
+  outline: none;
+}
+
+.c9 {
   width: 24;
   height: 24;
 }
@@ -1152,18 +1174,6 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   border-radius: 9999px;
   width: 20px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12);
-}
-
-.c16 {
-  position: absolute;
-  left: -4px;
-  top: -4px;
-}
-
-.c19 {
-  position: absolute;
-  left: 2px;
-  top: 2px;
 }
 
 .c2 {
@@ -1190,26 +1200,16 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   flex-direction: row;
 }
 
-.c21 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 16;
+.c16 {
+  position: absolute;
+  left: -4px;
+  top: -4px;
 }
 
-.c22 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c19 {
+  position: absolute;
+  left: 2px;
+  top: 2px;
 }
 
 .c13 {
@@ -1454,7 +1454,29 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
 
 exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1476,28 +1498,6 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -1658,7 +1658,29 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
 
 exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1680,28 +1702,6 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -1862,7 +1862,29 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
 
 exports[`RadioCheckToggleCard common should render children next to title correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1884,28 +1906,6 @@ exports[`RadioCheckToggleCard common should render children next to title correc
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -2066,7 +2066,29 @@ exports[`RadioCheckToggleCard common should render children next to title correc
 
 exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2088,28 +2110,6 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {
@@ -2265,7 +2265,29 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
 
 exports[`RadioCheckToggleCard common should render left button UI correctly 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c9 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24;
+}
+
+.c10 {
+  outline: none;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2287,28 +2309,6 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-}
-
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24;
-}
-
-.c10 {
-  outline: none;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c1 {

@@ -1,5 +1,5 @@
-import { boxShadowAttrs, boxShadowSizeValues } from '.'
-import { createTheme } from '..'
+import { createTheme } from '../createTheme'
+import { boxShadowAttrs, boxShadowSizeValues } from './boxShadowAttrs'
 
 const theme = createTheme()
 

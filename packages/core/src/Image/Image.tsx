@@ -4,11 +4,20 @@ import {
   BorderRadiusProps,
   BoxShadowProps,
   HeightProps,
+  MaxHeightProps,
+  MaxWidthProps,
+  MinHeightProps,
+  MinWidthProps,
   SpaceProps,
   WidthProps,
   borderRadius,
   boxShadow,
+  compose,
   height,
+  maxHeight,
+  maxWidth,
+  minHeight,
+  minWidth,
   space,
   width,
 } from 'styled-system'
@@ -24,6 +33,10 @@ import {
 export type ImageProps = BorderRadiusProps &
   BoxShadowProps &
   HeightProps &
+  MaxHeightProps &
+  MaxWidthProps &
+  MinHeightProps &
+  MinWidthProps &
   SpaceProps &
   WidthProps &
   Partial<Omit<HTMLImageElement, 'width' | 'height'>> & {
@@ -40,19 +53,16 @@ export const Image: React.FC<ImageProps> = styled.img.attrs((props) => ({
   ...boxShadowAttrs(props),
 }))`
   display: block;
-  max-width: 100%;
-  ${height};
-  ${space};
-  ${width};
+  ${objectFit};
+  ${objectPosition};
 
-  ${borderRadius}
-  ${boxShadow}
-  ${objectFit}
-  ${objectPosition}
+  ${(props) =>
+    compose(width, height, maxHeight, maxWidth, minHeight, minWidth, space, borderRadius, boxShadow)(props)}
 `
 
 Image.displayName = 'Image'
 
 Image.defaultProps = {
   boxShadowColor: 'border',
+  maxWidth: '100%',
 }

@@ -3,22 +3,22 @@ import {
   applyVariations,
   borders,
   color,
-  createTheme,
   decomposeColor,
   deprecatedColorValue,
   deprecatedPropType,
   getBreakpointSize,
   getByPalette,
   getContrastRatio,
+  getLinkStylesOn,
   getLuminance,
   getPaletteColor,
-  getLinkStylesOn,
   getTextColorOn,
   getValidPaletteColor,
   hasPaletteColor,
   hasPaletteColorShade,
   hexToRgb,
 } from '.'
+import { createTheme } from './createTheme'
 
 describe('utils', () => {
   describe('deprecatedPropType', () => {

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added minWidth/maxWidth/minHeight/maxHeight support to Image",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

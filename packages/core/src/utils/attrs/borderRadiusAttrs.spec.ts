@@ -1,5 +1,5 @@
-import { borderRadiusAttrs } from '.'
-import { borderRadiusValues, roundedValues, createTheme } from '..'
+import { createTheme } from '../createTheme'
+import { borderRadiusAttrs, borderRadiusValues, roundedValues } from './borderRadiusAttrs'
 
 const theme = createTheme()
 

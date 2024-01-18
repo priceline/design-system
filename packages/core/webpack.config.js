@@ -1,6 +1,8 @@
 'use strict'
 
 const createWebpackConfig = require('@rushstack/heft-web-rig/profiles/library/webpack-base.config')
+const { ModuleMinifierPlugin } = require('@rushstack/webpack5-module-minifier-plugin')
+const { WorkerPoolMinifier } = require('@rushstack/module-minifier')
 
 module.exports = function createConfig(env, argv) {
   return createWebpackConfig({
@@ -11,6 +13,44 @@ module.exports = function createConfig(env, argv) {
     // Documentation: https://webpack.js.org/configuration/
     configOverride: {
       externals: ['react', 'react-dom', 'framer-motion', 'styled-components', 'tslib', 'pcln-icons'],
+
+      target: ['web', 'es2020'],
+
+      module: {
+        rules: [
+          {
+            test: /\.(?:js|mjs|cjs)$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                plugins: [
+                  [
+                    'babel-plugin-styled-components',
+                    {
+                      ssr: true,
+                      displayName: true,
+                      pure: true,
+                      namespace: 'pcln-design-system',
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+        ],
+      },
+
+      optimization: {
+        minimizer: [
+          new ModuleMinifierPlugin({
+            minifier: new WorkerPoolMinifier(),
+            // If not provided, the plugin will attempt to guess from `mode` and `devtool`.
+            // Providing it expressly gives better results
+            useSourceMap: true,
+          }),
+        ],
+      },
 
       performance: {
         hints: env.production ? 'error' : false,

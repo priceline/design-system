@@ -2,33 +2,7 @@
 
 exports[`FormField disabled state renders input with icon - disabled 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 12px;
-}
-
-.c5 {
-  margin-right: -40px;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
+  .c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -40,44 +14,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 
 .c8 {
   outline: none;
-}
-
-.c3 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
-  background-color: #edf0f3;
-}
-
-.c2.c2.c2 * {
-  background-color: transparent;
-  color: #4f6f8f;
-  cursor: not-allowed;
 }
 
 .c9 {
@@ -130,6 +66,70 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width:32em) {
@@ -202,37 +202,7 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 
 exports[`FormField disabled state renders select with icon - disabled 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 12px;
-}
-
-.c5 {
-  margin-right: -40px;
-}
-
-.c9 {
-  width: 100%;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
+  .c7 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -278,24 +248,34 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
+.c1 {
+  border-radius: 12px;
 }
 
-.c0 * {
-  box-sizing: border-box;
+.c5 {
+  margin-right: -40px;
 }
 
-.c2 {
-  background-color: #edf0f3;
+.c9 {
+  width: 100%;
 }
 
-.c2.c2.c2 * {
-  background-color: transparent;
-  color: #4f6f8f;
-  cursor: not-allowed;
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c13 {
@@ -337,6 +317,26 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width:32em) {
@@ -431,39 +431,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
 `;
 
 exports[`FormField renders 1`] = `
-.c0 {
-  border-radius: 12px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
 .c3 {
   position: relative;
   -webkit-appearance: none;
@@ -513,6 +480,39 @@ exports[`FormField renders 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width:32em) {
@@ -578,32 +578,6 @@ exports[`FormField renders 1`] = `
 `;
 
 exports[`FormField renders with Icon 1`] = `
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -616,24 +590,6 @@ exports[`FormField renders with Icon 1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
 }
 
 .c7 {
@@ -686,6 +642,50 @@ exports[`FormField renders with Icon 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:32em) {
@@ -772,32 +772,6 @@ exports[`FormField renders with Icon 1`] = `
 `;
 
 exports[`FormField renders with Label autoHide prop 1`] = `
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -810,24 +784,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 
 .c6 {
   outline: none;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
 }
 
 .c7 {
@@ -880,6 +836,50 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:32em) {
@@ -966,25 +966,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
 `;
 
 exports[`FormField renders with Select  1`] = `
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  width: 100%;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -1015,6 +996,25 @@ exports[`FormField renders with Select  1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c7 {
@@ -1139,36 +1139,6 @@ exports[`FormField renders with Select  1`] = `
 `;
 
 exports[`FormField renders with Select and Icon 1`] = `
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c7 {
-  width: 100%;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c5 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -1213,6 +1183,36 @@ exports[`FormField renders with Select and Icon 1`] = `
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
+.c7 {
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c11 {

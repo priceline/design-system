@@ -75,3 +75,20 @@ export const chipWithShadowVariationArgs = [
   { label: 'Disabled', disabled: true, variation: 'shadow' },
   { label: 'Selected Disabled', disabled: true, selected: true, variation: 'shadow' },
 ]
+
+export const storybookArgs = {
+  colorSchemeNames,
+  colors,
+  borderRadii,
+  borderStyles,
+  rounded,
+  shadows,
+  textStyles,
+  inputArgs,
+  spaceArgs,
+  fontSizes,
+  objectFits,
+  objectPositions,
+  zIndicies,
+  chipWithShadowVariationArgs,
+}

@@ -1,4 +1,5 @@
-import { createTextStyles, createTheme } from '.'
+import { createTextStyles } from './createTextStyles'
+import { createTheme } from './createTheme'
 
 describe('createTextStyles', () => {
   it('should return a textStyles object', () => {

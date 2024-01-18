@@ -1,4 +1,4 @@
-import { Box, ThemeProvider } from 'pcln-design-system'
+import { Box, ThemeProvider } from 'pcln-design-system/lib'
 import React from 'react'
 
 const ThemeProviderDecorator = (Story) => (

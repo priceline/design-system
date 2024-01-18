@@ -1,4 +1,5 @@
-import { createColorStyles, createTheme } from '.'
+import { createColorStyles } from './createColorStyles'
+import { createTheme } from './createTheme'
 
 describe('createColorStyles', () => {
   it('should return the palette provided a theme', () => {
