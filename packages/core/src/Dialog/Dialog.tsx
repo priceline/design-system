@@ -6,7 +6,7 @@ import { OverflowProps } from 'styled-system'
 import * as Dialog from '@radix-ui/react-dialog'
 import React, { useEffect } from 'react'
 
-export type DialogProps = OverflowProps & {
+export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   ariaDescription: string
   ariaTitle: string
   borderRadius?: BorderRadius
