@@ -118,7 +118,7 @@ export type SpinnerSizes = 'small' | 'medium' | 'large' | number
 export type SpinnerProps = {
   children?: React.ReactNode
   color?: PaletteFamilyName
-  size?: SpinnerSizes | SpinnerSizes[]
+  size?: SpinnerSizes | string | Array<SpinnerSizes | string>
   useGradient?: boolean
 }
 

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix some incorrect TS types",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

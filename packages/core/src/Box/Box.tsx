@@ -48,7 +48,7 @@ export type BoxProps = BorderRadiusProps &
   WidthProps &
   React.HTMLAttributes<HTMLDivElement> & {
     children?: React.ReactNode | string
-    as?: React.ReactNode
+    as?: unknown
     role?: string
     bg?: string
     color?: string
