@@ -107,10 +107,39 @@ const ExampleOverflowingContent = (props: GridProps) => (
   </Grid>
 )
 
+const ExampleOverflowingAbsolute = (props: GridProps) => {
+  const [showText, setShowText] = React.useState(false)
+  return (
+    <Box>
+      <Grid p={24} gap={5} {...props}>
+        <Button onClick={() => setShowText(!showText)}>Show text overflow</Button>
+      </Grid>
+      {showText && (
+        <Text style={{ overflow: 'visible', position: 'absolute' }}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quas voluptas, vel id doloribus
+          delectus deleniti minus eius ullam vero dolorum laboriosam dolor cupiditate sequi quia itaque
+          corrupti quaerat hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quas voluptas,
+          vel id doloribus delectus deleniti minus eius ullam vero dolorum laboriosam dolor cupiditate sequi
+          quia itaque corrupti quaerat hic!
+        </Text>
+      )}
+    </Box>
+  )
+}
+
 export const OverflowModal: DialogStory = {
   ...Playground,
   args: {
-    children: <ExampleOverflowingContent />,
+    children: <ExampleOverflowingContent overflow='auto' />,
+  },
+}
+
+export const OverflowOutsideContainer: DialogStory = {
+  ...Playground,
+  args: {
+    children: <ExampleOverflowingAbsolute overflow='visible' />,
+    overflowX: 'visible',
+    overflowY: 'visible',
   },
 }
 

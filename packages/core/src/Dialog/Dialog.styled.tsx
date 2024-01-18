@@ -4,7 +4,7 @@ import themeGet from '@styled-system/theme-get'
 import { HTMLMotionProps, Transition, motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import { zIndex } from 'styled-system'
+import { overflowX, overflowY, zIndex } from 'styled-system'
 import { Box } from '../Box'
 import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
 import { Grid } from '../Grid'
@@ -103,7 +103,8 @@ const DialogContentWrapper = styled(motion.div)`
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
-  overflow: auto;
+  ${overflowX}
+  ${overflowY}
   border-radius: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
@@ -152,6 +153,8 @@ export const DialogContent = ({
   size,
   zIndex,
   onOpenChange,
+  overflowX,
+  overflowY,
 }: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
@@ -198,7 +201,14 @@ export const DialogContent = ({
           <Dialog.Title>{ariaTitle}</Dialog.Title>
         </VisuallyHidden>
 
-        <DialogInnerContentWrapper sheet={sheet} hugColor={hugColor} size={size} borderRadius={borderRadius}>
+        <DialogInnerContentWrapper
+          overflowX={overflowX}
+          overflowY={overflowY}
+          sheet={sheet}
+          hugColor={hugColor}
+          size={size}
+          borderRadius={borderRadius}
+        >
           {headerContent && (
             <Grid
               colorScheme={headerColorScheme}

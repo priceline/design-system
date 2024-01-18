@@ -2,11 +2,11 @@ import { AnimatePresence } from 'framer-motion'
 import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
-
+import { OverflowProps } from 'styled-system'
 import * as Dialog from '@radix-ui/react-dialog'
 import React, { useEffect } from 'react'
 
-export type DialogProps = {
+export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   ariaDescription: string
   ariaTitle: string
   borderRadius?: BorderRadius
@@ -49,6 +49,8 @@ const PclnDialog = ({
   size = 'md',
   triggerNode,
   zIndex = 'overlay',
+  overflowX = 'auto',
+  overflowY = 'auto',
   onOpenChange,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
@@ -67,6 +69,8 @@ const PclnDialog = ({
         {_open && (
           <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet} zIndex={zIndex}>
             <DialogContent
+              overflowX={overflowX}
+              overflowY={overflowY}
               ariaDescription={ariaDescription}
               ariaTitle={ariaTitle}
               borderRadius={borderRadius}

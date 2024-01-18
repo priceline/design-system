@@ -313,7 +313,6 @@ export const borderRadii = {
 }
 
 export type BorderRadius = keyof typeof borderRadii
-
 export const maxContainerWidth = '1280px'
 
 export const shadows = {
