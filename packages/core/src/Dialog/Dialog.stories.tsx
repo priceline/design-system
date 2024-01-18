@@ -10,7 +10,6 @@ import { Grid, type GridProps } from '../Grid'
 import { Text } from '../Text'
 import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
-import { Select } from '../Select'
 
 type DialogStory = StoryObj<DialogProps>
 
