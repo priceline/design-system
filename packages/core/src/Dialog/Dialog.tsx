@@ -1,12 +1,12 @@
 import { AnimatePresence } from 'framer-motion'
-import type { BorderRadius, ColorSchemes, Overflow, PaletteColor, ZIndex } from '../theme'
+import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
-
+import { OverflowProps } from 'styled-system'
 import * as Dialog from '@radix-ui/react-dialog'
 import React, { useEffect } from 'react'
 
-export type DialogProps = {
+export type DialogProps = OverflowProps & {
   ariaDescription: string
   ariaTitle: string
   borderRadius?: BorderRadius
@@ -25,8 +25,6 @@ export type DialogProps = {
   showCloseButton?: boolean
   size?: DialogSize
   triggerNode?: React.ReactNode
-  overflowX?: Overflow
-  overflowY?: Overflow
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
 }

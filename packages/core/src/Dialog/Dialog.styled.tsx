@@ -13,7 +13,6 @@ import { ThemeProvider } from '../ThemeProvider'
 import { type DialogProps } from './Dialog'
 
 export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
-export const overflow = ['visible', 'hidden', 'scroll', 'auto'] as const
 export type DialogSize = (typeof dialogSizes)[number]
 
 const sizeStyles: Record<DialogSize, { width?: string; height?: string }> = {
@@ -104,8 +103,8 @@ const DialogContentWrapper = styled(motion.div)`
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
-  overflow-x: ${(props) => props.overflowX};
-  overflow-y: ${(props) => props.overflowY};
+  overflow-x: ${(props: DialogProps) => props.overflowX};
+  overflow-y: ${(props: DialogProps) => props.overflowY};
   border-radius: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
