@@ -4,7 +4,7 @@ import themeGet from '@styled-system/theme-get'
 import { HTMLMotionProps, Transition, motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
-import { zIndex } from 'styled-system'
+import { overflowX, overflowY, zIndex } from 'styled-system'
 import { Box } from '../Box'
 import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
 import { Grid } from '../Grid'
@@ -103,8 +103,8 @@ const DialogContentWrapper = styled(motion.div)`
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
-  overflow-x: ${(props: DialogProps) => props.overflowX};
-  overflow-y: ${(props: DialogProps) => props.overflowY};
+  ${overflowX}
+  ${overflowY}
   border-radius: ${(props: DialogProps) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
