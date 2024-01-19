@@ -1,11 +1,10 @@
+import { themeGet } from '@styled-system/theme-get'
 import React from 'react'
 import styled from 'styled-components'
 import { space, SpaceProps } from 'styled-system'
-import { themeGet } from '@styled-system/theme-get'
-
-import { Box } from '../Box'
-import { getPaletteColor } from '../utils'
-import { PaletteFamilyName } from '../theme'
+import { Box } from '../Box/Box'
+import { PaletteFamilyName } from '../theme/theme'
+import { getPaletteColor } from '../utils/utils'
 
 export type InputGroupProps = SpaceProps & {
   borderColor?: PaletteFamilyName

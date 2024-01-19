@@ -1,10 +1,9 @@
+import { Check } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Check } from 'pcln-icons'
-
-import { Button } from '../Button'
-import { Text } from '../Text'
-import { getPaletteColor } from '../utils'
+import { Button } from '../Button/Button'
+import { Text } from '../Text/Text'
+import { getPaletteColor } from '../utils/utils'
 
 const StepButton = styled(Button)`
   display: flex;

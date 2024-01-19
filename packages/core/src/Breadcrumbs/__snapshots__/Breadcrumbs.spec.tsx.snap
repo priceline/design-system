@@ -19,11 +19,6 @@ exports[`Breadcrumbs renders basic 1`] = `
   align-items: center;
 }
 
-.c3 {
-  color: #4f6f8f;
-  margin: 8px;
-}
-
 .c2 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -48,6 +43,11 @@ exports[`Breadcrumbs renders basic 1`] = `
   color: #001023;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c3 {
+  color: #4f6f8f;
+  margin: 8px;
 }
 
 <div
@@ -158,11 +158,6 @@ exports[`Breadcrumbs renders with icons 1`] = `
   align-items: center;
 }
 
-.c5 {
-  color: #4f6f8f;
-  margin: 8px;
-}
-
 .c4 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -187,6 +182,11 @@ exports[`Breadcrumbs renders with icons 1`] = `
   color: #001023;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c5 {
+  color: #4f6f8f;
+  margin: 8px;
 }
 
 <div

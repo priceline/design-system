@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-
-import { PlaceholderImage } from '..'
+import { PlaceholderImage } from './PlaceholderImage'
 
 describe('PlaceholderImage', () => {
   it('should use the default height and width when not specified', () => {

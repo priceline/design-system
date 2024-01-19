@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { Box, type BoxProps } from '../Box'
+import { Box, type BoxProps } from '../Box/Box'
 import { RenderInView } from './RenderInView'
 import { SlideWrapper } from './SlideBox.styled'
 

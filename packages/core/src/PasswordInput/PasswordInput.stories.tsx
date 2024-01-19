@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
 import { action } from '@storybook/addon-actions'
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { Text } from '../Text'
+import React, { useState } from 'react'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Text } from '../Text/Text'
 import { PasswordInput } from './PasswordInput'
 
 export default {

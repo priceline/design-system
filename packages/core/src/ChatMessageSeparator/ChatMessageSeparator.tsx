@@ -1,10 +1,7 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
 import React from 'react'
-import { Divider } from '../Divider'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
+import { Divider } from '../Divider/Divider'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 
 export type ChatMessageSeparatorProps = {
   message?: string

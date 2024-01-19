@@ -1,7 +1,6 @@
-/* istanbul ignore file */
-
 import styled from 'styled-components'
-import { Flex, Box } from '..'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
 
 const SlideWrapper = styled(Box)``
 

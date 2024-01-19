@@ -1,9 +1,8 @@
+import themeGet from '@styled-system/theme-get'
 import React from 'react'
 import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
-
-import { Flex } from '../Flex'
-import { Step } from '../Step'
+import { Flex } from '../Flex/Flex'
+import { Step } from '../Step/Step'
 
 const StyledFlex = styled(Flex)`
   & > :not(:last-child) {

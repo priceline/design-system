@@ -1,8 +1,7 @@
-import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
-
-import { IconButton } from '..'
 import { Key as KeyIcon } from 'pcln-icons'
+import React from 'react'
+import { fireEvent, render } from '../__test__/testing-library'
+import { IconButton } from './IconButton'
 
 describe('IconButton', () => {
   test('executes onClick prop on click', () => {

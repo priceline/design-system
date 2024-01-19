@@ -1,8 +1,7 @@
 import React from 'react'
+import { Text } from '../Text/Text'
 import { render } from '../__test__/testing-library'
-
-import { RadioCheckToggleCard } from '.'
-import { Text } from '../Text'
+import { RadioCheckToggleCard } from './RadioCheckToggleCard'
 
 describe('RadioCheckToggleCard', () => {
   describe('common', () => {

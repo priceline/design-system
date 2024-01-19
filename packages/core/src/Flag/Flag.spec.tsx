@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { theme } from '../theme'
+import { theme } from '../theme/theme'
 import { Flag } from './Flag'
 
 describe('Flag', () => {

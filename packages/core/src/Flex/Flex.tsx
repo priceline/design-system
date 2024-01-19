@@ -1,23 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
-  alignItems,
-  justifyContent,
-  flexWrap,
-  flexDirection,
+  AlignContentProps,
   AlignItemsProps,
-  JustifyContentProps,
-  FlexWrapProps,
   FlexDirectionProps,
+  FlexWrapProps,
+  JustifyContentProps,
   SpaceProps,
   WidthProps,
-  AlignContentProps,
+  alignItems,
   compose,
+  flexDirection,
+  flexWrap,
+  justifyContent,
 } from 'styled-system'
-
-import { Box, BoxProps } from '../Box'
-
-import { applyVariations } from '../utils'
+import { Box, type BoxProps } from '../Box/Box'
+import { applyVariations } from '../utils/utils'
 
 export type FlexProps = BoxProps &
   SpaceProps &

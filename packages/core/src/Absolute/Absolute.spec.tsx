@@ -1,7 +1,7 @@
 import { Coupon as CouponIcon } from 'pcln-icons'
 import React from 'react'
-import { Flag } from '../Flag'
-import { Text } from '../Text'
+import { Flag } from '../Flag/Flag'
+import { Text } from '../Text/Text'
 import { render } from '../__test__/testing-library'
 import { Absolute } from './Absolute'
 

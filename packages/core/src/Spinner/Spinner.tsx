@@ -3,8 +3,8 @@ import styled, { css, keyframes, useTheme } from 'styled-components'
 import { type Theme } from 'styled-system'
 import { Absolute } from '../Absolute/Absolute'
 import { Flex } from '../Flex/Flex'
-import { PaletteFamilyName } from '../theme'
-import { applySizes, getPaletteColor } from '../utils'
+import { PaletteFamilyName } from '../theme/theme'
+import { applySizes, getPaletteColor } from '../utils/utils'
 
 const sizes = {
   small: css`

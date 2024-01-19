@@ -2,9 +2,9 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { Box, type BoxProps } from '../Box'
-import { IconField } from '../IconField'
-import { getPaletteColor } from '../utils'
+import { Box, type BoxProps } from '../Box/Box'
+import { IconField } from '../IconField/IconField'
+import { getPaletteColor } from '../utils/utils'
 
 export interface FormFieldProps extends BoxProps {
   disabled?: boolean

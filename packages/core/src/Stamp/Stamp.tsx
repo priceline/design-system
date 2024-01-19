@@ -11,14 +11,8 @@ import {
   space,
 } from 'styled-system'
 import type { ColorSchemeName } from '../theme'
-import {
-  applySizes,
-  applyVariations,
-  borderRadiusAttrs,
-  colorScheme,
-  getPaletteColor,
-  getTextColorOn,
-} from '../utils'
+import { borderRadiusAttrs } from '../utils/attrs'
+import { applySizes, applyVariations, colorScheme, getPaletteColor, getTextColorOn } from '../utils/utils'
 
 const sizes = {
   small: css`

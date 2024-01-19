@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, fontSize, borderRadius, SpaceProps, FontSizeProps, compose } from 'styled-system'
-import { applyVariations, getPaletteColor, borderRadiusAttrs } from '../utils'
+import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } from 'styled-system'
+import { borderRadiusAttrs } from '../utils/attrs'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 export type ToggleBadgeProps = {
   borderRadius?: string

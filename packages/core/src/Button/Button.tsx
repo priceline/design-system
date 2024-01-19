@@ -14,15 +14,9 @@ import {
   space,
   width,
 } from 'styled-system'
-import { Flex, type FlexProps } from '../Flex'
-import {
-  applySizes,
-  applyVariations,
-  borders,
-  boxShadowAttrs,
-  getPaletteColor,
-  getTextColorOn,
-} from '../utils'
+import { Flex, type FlexProps } from '../Flex/Flex'
+import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
+import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
 
 export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)

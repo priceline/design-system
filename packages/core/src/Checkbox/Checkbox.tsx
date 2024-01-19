@@ -1,7 +1,7 @@
 import { BoxChecked, BoxEmpty, BoxMinus } from 'pcln-icons'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { applyVariations, getPaletteColor } from '../utils'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const CheckBoxWrapper = styled.div<CheckboxProps>`
   display: inline-flex;

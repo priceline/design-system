@@ -1,10 +1,7 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
 import React from 'react'
-import { Flex } from '../Flex'
-import { Grid } from '../Grid'
 import { ChatMessage } from '../ChatMessage/ChatMessage'
+import { Flex } from '../Flex/Flex'
+import { Grid } from '../Grid/Grid'
 
 export type ChatMessageVariation = 'initial' | 'incoming' | 'outgoing'
 

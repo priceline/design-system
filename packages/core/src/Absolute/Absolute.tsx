@@ -12,7 +12,7 @@ import {
   top,
   zIndex,
 } from 'styled-system'
-import { Box, BoxProps } from '../Box'
+import { Box, BoxProps } from '../Box/Box'
 
 export type AbsoluteProps = BoxProps & TopProps & RightProps & BottomProps & LeftProps & ZIndexProps
 

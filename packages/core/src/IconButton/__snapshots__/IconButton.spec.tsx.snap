@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IconButton renders without props 1`] = `
+.c4 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c5 {
+  outline: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,18 +33,6 @@ exports[`IconButton renders without props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c5 {
-  outline: none;
 }
 
 .c0 {

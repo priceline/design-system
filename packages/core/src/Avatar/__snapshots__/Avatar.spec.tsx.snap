@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders default 1`] = `
+.c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.c4 {
+  outline: none;
+}
+
 .c1 {
   background-color: #0068ef;
   color: #fff;
@@ -15,18 +27,6 @@ exports[`Avatar renders default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  width: 24px;
-}
-
-.c4 {
-  outline: none;
 }
 
 .c2 {

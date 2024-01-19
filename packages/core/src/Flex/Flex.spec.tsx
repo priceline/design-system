@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Flex } from '..'
+import { Flex } from './Flex'
 
 describe('Flex', () => {
   test('renders', () => {

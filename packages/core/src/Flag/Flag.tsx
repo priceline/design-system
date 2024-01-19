@@ -1,13 +1,12 @@
 import themeGet from '@styled-system/theme-get'
 import React from 'react'
 import styled from 'styled-components'
-
 import { SpaceProps, WidthProps } from 'styled-system'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Hide } from '../Hide'
-import { ColorProp } from '../theme'
-import { applyVariations, color, getPaletteColor, hasPaletteColor } from '../utils'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Hide } from '../Hide/Hide'
+import { ColorProp } from '../theme/theme'
+import { applyVariations, color, getPaletteColor, hasPaletteColor } from '../utils/utils'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 

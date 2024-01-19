@@ -1,17 +1,18 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {
-  space,
-  fontSize,
-  borderRadius,
-  zIndex,
-  SpaceProps,
   FontSizeProps,
+  SpaceProps,
   ZIndexProps,
+  borderRadius,
   compose,
+  fontSize,
+  space,
+  zIndex,
 } from 'styled-system'
-import { Text, type TextProps } from '../Text'
-import { applyVariations, getPaletteColor, borders, borderRadiusAttrs, applySizes } from '../utils'
+import { Text, type TextProps } from '../Text/Text'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { applySizes, applyVariations, borders, getPaletteColor } from '../utils/utils'
 
 const sizes = {
   sm: css`

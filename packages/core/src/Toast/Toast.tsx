@@ -1,9 +1,9 @@
 import { Close as CloseIcon } from 'pcln-icons'
 import React, { useEffect } from 'react'
-import { Absolute } from '../Absolute'
-import { Flex, type FlexProps } from '../Flex'
-import { Relative } from '../Relative'
-import { Text } from '../Text'
+import { Absolute } from '../Absolute/Absolute'
+import { Flex, type FlexProps } from '../Flex/Flex'
+import { Relative } from '../Relative/Relative'
+import { Text } from '../Text/Text'
 import { LeftBorderFlex, RoundIconButton } from './Toast.styled'
 
 export type ToastProps = {

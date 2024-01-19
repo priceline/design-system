@@ -1,14 +1,11 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
+import { Close, Minus } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { Hide } from '../Hide'
-import { Close, Minus } from 'pcln-icons'
-import { getPaletteColor } from '../utils'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Hide } from '../Hide/Hide'
+import { getPaletteColor } from '../utils/utils'
 
 const BorderBottomFlex = styled(Flex)`
   border-bottom: 1px solid ${getPaletteColor('border.base')};

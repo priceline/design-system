@@ -1,13 +1,11 @@
-import type { ToastProps } from '../Toast'
-
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
-import styled, { withTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
-import { Absolute } from '../Absolute'
+import styled, { withTheme } from 'styled-components'
+import { Absolute } from '../Absolute/Absolute'
 import { Animate, type MotionVariant } from '../Animate/Animate'
-import { Flex } from '../Flex'
-import { Toast } from '../Toast'
-import { ThemeProvider } from '../ThemeProvider'
+import { Flex } from '../Flex/Flex'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
+import { Toast, type ToastProps } from '../Toast/Toast'
 
 export type ToastOptions = ToastProps & {
   enterAnimation?: MotionVariant

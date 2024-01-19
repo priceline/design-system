@@ -1,7 +1,12 @@
+import { Close as CloseIcon } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Absolute, Card, Flag, Image, Relative, Text } from '..'
-import { Close as CloseIcon } from 'pcln-icons'
+import { Card } from '../Card/Card'
+import { Flag } from '../Flag/Flag'
+import { Image } from '../Image/Image'
+import { Relative } from '../Relative/Relative'
+import { Text } from '../Text/Text'
+import { Absolute } from './Absolute'
 
 const TallCard = styled(Card)`
   height: 420px;

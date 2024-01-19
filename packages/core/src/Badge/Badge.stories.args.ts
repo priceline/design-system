@@ -38,4 +38,11 @@ export const argTypes = {
       type: 'select',
     },
   },
+
+  size: {
+    name: 'size',
+    control: 'select',
+    options: ['small', 'medium'],
+    defaultValue: 'medium',
+  },
 }

@@ -1,15 +1,14 @@
-// @ts-nocheck
-
-import React from 'react'
-import { Button } from '../../Button'
-import { Flex } from '../../Flex'
-import { Text } from '../../Text'
-import { useToast } from '../../ToastProvider'
 import {
   Attention as AttentionIcon,
   Check as CheckIcon,
   InformationOutline as InformationOutlineIcon,
 } from 'pcln-icons'
+import React from 'react'
+import { type MotionVariant } from '../../Animate/Animate'
+import { Button } from '../../Button/Button'
+import { Flex } from '../../Flex/Flex'
+import { Text } from '../../Text/Text'
+import { useToast } from '../../ToastProvider/ToastProvider'
 
 export const errorOptions = {
   children: 'Error Toast Message',
@@ -31,8 +30,8 @@ export const successOptions = {
 
 export const customOptions = {
   children: <Text textStyle='paragraphBold'>Custom Toast Message</Text>,
-  enterAnimation: 'expandDown',
-  exitAnimation: 'fadeIn',
+  enterAnimation: 'expandDown' as MotionVariant,
+  exitAnimation: 'fadeIn' as MotionVariant,
   hideClose: true,
   lifespan: 2000,
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen, fireEvent } from '../__test__/testing-library'
+import { fireEvent, render, screen } from '../__test__/testing-library'
 import { PasswordInput } from './PasswordInput'
 
 const sampleRegexChecks = [

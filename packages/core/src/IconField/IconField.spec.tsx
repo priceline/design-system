@@ -1,7 +1,7 @@
 import { Calendar, Close, User, Visibility } from 'pcln-icons'
 import React from 'react'
-import { IconButton } from '../IconButton'
-import { Input } from '../Input'
+import { IconButton } from '../IconButton/IconButton'
+import { Input } from '../Input/Input'
 import { render, screen } from '../__test__/testing-library'
 import { IconField } from './IconField'
 

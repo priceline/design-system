@@ -1,8 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-
-import { Box } from '../Box'
-import { theme } from '../theme'
+import { Box } from '../Box/Box'
+import { theme } from '../theme/theme'
 import { Base, ThemeProvider } from './ThemeProvider'
 
 describe('ThemeProvider', () => {

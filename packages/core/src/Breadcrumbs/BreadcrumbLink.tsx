@@ -1,8 +1,7 @@
 import React from 'react'
-
-import { Flex } from '../Flex'
-import { Link } from '../Link'
-import { Text } from '../Text'
+import { Flex } from '../Flex/Flex'
+import { Link } from '../Link/Link'
+import { Text } from '../Text/Text'
 
 export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
   className?: string

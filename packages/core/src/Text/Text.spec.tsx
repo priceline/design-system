@@ -1,6 +1,7 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { Text, theme } from '..'
+import { theme } from '../theme/theme'
+import { Text } from './Text'
 
 describe('Text', () => {
   test('renders', () => {

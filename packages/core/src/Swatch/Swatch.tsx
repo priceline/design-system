@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '../Flex'
-import { getPaletteColor } from '../utils'
+import { Flex } from '../Flex/Flex'
+import { getPaletteColor } from '../utils/utils'
 
 const SwatchColor = styled.div`
   height: 24px;

@@ -1,5 +1,5 @@
 import { ArgTypes } from '@storybook/react'
-import { paletteColors, shadows } from '../theme'
+import { paletteColors, shadows } from '../theme/theme'
 import type { CloseButtonProps } from './CloseButton'
 import { closeButtonSizes, closeButtonVariants } from './CloseButton.styled'
 

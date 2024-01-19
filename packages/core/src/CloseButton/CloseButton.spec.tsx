@@ -1,7 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
-
-import { CloseButton } from '..'
+import { CloseButton } from './CloseButton'
 
 describe('CloseButton', () => {
   test('executes onClick prop on click', () => {

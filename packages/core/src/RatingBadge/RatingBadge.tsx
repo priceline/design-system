@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { borderRadius, compose, fontWeight } from 'styled-system'
-import { Box, type BoxProps } from '../Box'
-import { borderRadiusAttrs } from '../utils'
+import { Box, type BoxProps } from '../Box/Box'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 
 const defaultProps = {
   fontWeight: 'bold',

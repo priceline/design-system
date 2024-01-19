@@ -6,11 +6,11 @@ import {
 } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box, type BoxProps } from '../Box'
-import { CloseButton } from '../CloseButton'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
-import { applyVariations } from '../utils'
+import { Box, type BoxProps } from '../Box/Box'
+import { CloseButton } from '../CloseButton/CloseButton'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { applyVariations } from '../utils/utils'
 
 export type BannerColor = {
   backgroundColor?: string

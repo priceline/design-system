@@ -1,4 +1,4 @@
-import { getVisibleSlides, getCustomWidths } from './helpers'
+import { getCustomWidths, getVisibleSlides } from './helpers'
 
 describe('getVisibleSlidesArray', () => {
   it('Array of visible slides', () => {

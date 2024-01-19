@@ -1,7 +1,7 @@
 import React, { RefObject, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { ShadowOverlay } from '../ShadowEffect'
+import { Box } from '../Box/Box'
+import { ShadowOverlay } from '../ShadowEffect/ShadowEffect'
 
 export interface PopoutProps {
   trigger: JSX.Element

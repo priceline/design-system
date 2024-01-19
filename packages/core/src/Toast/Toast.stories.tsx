@@ -1,9 +1,9 @@
-import React from 'react'
 import { InformationOutline } from 'pcln-icons'
-import { Box } from '../Box'
+import React from 'react'
+import { Box } from '../Box/Box'
+import { colorSchemeNames } from '../theme/theme'
 import { Toast, type ToastProps } from './Toast'
 import { argTypes, defaultArgs } from './Toast.stories.args'
-import { colorSchemeNames } from '../theme'
 
 export default {
   title: 'Core / Toast',

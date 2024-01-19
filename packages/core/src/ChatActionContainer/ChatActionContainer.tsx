@@ -1,12 +1,9 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
+import themeGet from '@styled-system/theme-get'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { Grid } from '../Grid'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Grid } from '../Grid/Grid'
 
 const GappedFlex = styled(Flex)`
   gap: ${themeGet('space.2')};

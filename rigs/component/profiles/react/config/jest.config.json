@@ -6,6 +6,7 @@
     "!lib-commonjs/**/*.styled.*",
     "!lib-commonjs/storybook/**/*",
     "!lib-commonjs/**/*.{stories,story}.*",
+    "!lib-commonjs/index.js*",
     "!**/__test__/**"
   ],
   "coverageDirectory": "<rootDir>/coverage",

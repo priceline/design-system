@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { border, BorderProps } from 'styled-system'
-import { Box, type BoxProps } from '../Box'
-import { applyVariations, getPaletteColor } from '../utils'
+import { Box, type BoxProps } from '../Box/Box'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const styleAsButton = ({ as, ...props }) =>
   as === 'button'

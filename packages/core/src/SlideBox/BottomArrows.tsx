@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex } from '../Flex'
+import { Flex } from '../Flex/Flex'
 import { Arrow, type ArrowProps } from './Arrow'
 import { AbsoluteTransformRight } from './Arrow.styled'
 

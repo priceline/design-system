@@ -1,6 +1,6 @@
 import { Accessible, SeatBusiness, ThumbsUp, Trophy, WashingHands } from 'pcln-icons'
 import React from 'react'
-import { Text } from '../Text'
+import { Text } from '../Text/Text'
 import { borderRadii, colors } from '../storybook/args'
 
 export const iconMap = {

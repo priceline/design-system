@@ -1,9 +1,9 @@
 import themeGet from '@styled-system/theme-get'
-import styled, { css } from 'styled-components'
-import { FontSizeProps, SpaceProps, compose, fontSize, space, width } from 'styled-system'
-import { getPaletteColor } from '../utils'
 import React from 'react'
-import { PaletteColor, PaletteFamilyName } from '../theme'
+import styled, { css } from 'styled-components'
+import { compose, fontSize, space, width, type FontSizeProps, type SpaceProps } from 'styled-system'
+import { type PaletteColor, type PaletteFamilyName } from '../theme/theme'
+import { getPaletteColor } from '../utils/utils'
 
 const tabSpacingSize = {
   xsm: '16px',

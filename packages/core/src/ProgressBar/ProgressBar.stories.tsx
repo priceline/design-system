@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box } from '../Box'
+import { Box } from '../Box/Box'
+import { PaletteFamilyName } from '../theme/theme'
 import { ProgressBar } from './ProgressBar'
-import { PaletteFamilyName } from '../theme'
 
 export default {
   title: 'ProgressBar',

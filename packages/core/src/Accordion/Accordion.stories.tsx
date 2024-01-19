@@ -1,10 +1,10 @@
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
-import { theme } from '../theme'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { theme } from '../theme/theme'
 import { Accordion } from './Accordion'
 
 export default {

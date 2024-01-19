@@ -2,7 +2,7 @@
 import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-import { Box } from '../Box'
+import { Box } from '../Box/Box'
 import {
   DocTable,
   Hero,
@@ -12,8 +12,8 @@ import {
   StoryStage,
   TableOfContents,
 } from '../DocsUtils'
-import { Text } from '../Text'
-import { ThemeProvider } from '../ThemeProvider'
+import { Text } from '../Text/Text'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { Image, type ImageProps } from './Image'
 import contentAlignmentFormatingImage from './Image.Image.ContentAlignmentFormating.png'
 import heroImage from './Image.Image.Hero.png'

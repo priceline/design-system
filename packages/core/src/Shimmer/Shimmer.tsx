@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
-import { Box, type BoxProps } from '../Box'
+import { Box, type BoxProps } from '../Box/Box'
 import {
   VARIATION_BACKGROUND_COLORS,
   VARIATION_GLARE_GRADIENTS,

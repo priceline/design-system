@@ -1,12 +1,10 @@
 import React from 'react'
-
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { FormField } from '../FormField'
-import { Input } from '../Input'
-import { InputGroup } from '../InputGroup'
-import { Label } from '../Label'
-
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { FormField } from '../FormField/FormField'
+import { Input } from '../Input/Input'
+import { InputGroup } from '../InputGroup/InputGroup'
+import { Label } from '../Label/Label'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
 export default {

@@ -1,11 +1,11 @@
-import React from 'react'
-import { Absolute } from '../Absolute'
-import { Card } from '../Card'
-import { Flag } from '../Flag'
-import { Image } from '../Image'
-import { Relative } from '../Relative'
-import { Text } from '../Text'
 import { Close as CloseIcon } from 'pcln-icons'
+import React from 'react'
+import { Absolute } from '../Absolute/Absolute'
+import { Card } from '../Card/Card'
+import { Flag } from '../Flag/Flag'
+import { Image } from '../Image/Image'
+import { Relative } from '../Relative/Relative'
+import { Text } from '../Text/Text'
 
 export default {
   title: 'Relative',

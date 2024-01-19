@@ -1,6 +1,6 @@
 import React from 'react'
-import { Popout } from '.'
 import { fireEvent, render } from '../__test__/testing-library'
+import { Popout } from './Popout'
 
 const trigger = <input data-testid='trigger' aria-label='trigger' />
 const content = <div data-testId='content'>Content</div>

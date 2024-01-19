@@ -2,10 +2,10 @@ import { themeGet } from '@styled-system/theme-get'
 import { BoxChecked, BoxEmpty, Check, RadioChecked, RadioEmpty } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
 import { Toggle } from '../Toggle/Toggle'
-import { getPaletteColor } from '../utils'
+import { getPaletteColor } from '../utils/utils'
 
 export const cardTypes = ['radio', 'checkbox', 'toggle'] as const
 export const hPositions = ['left', 'right'] as const

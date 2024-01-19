@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '../Flex'
-import { Link } from '../Link'
-import { SrOnly } from '../SrOnly'
+import { Flex } from '../Flex/Flex'
+import { Link } from '../Link/Link'
+import { SrOnly } from '../SrOnly/SrOnly'
 
 /*
  * :focus-within property not supported on ie11

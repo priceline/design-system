@@ -1,6 +1,6 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { Stepper } from '..'
+import React from 'react'
+import { Stepper } from './Stepper'
 
 const onFirstClick = action('First Step Clicked')
 

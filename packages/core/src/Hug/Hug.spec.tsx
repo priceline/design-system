@@ -1,7 +1,7 @@
 import { ThumbsUp } from 'pcln-icons'
 import React from 'react'
-import { Card } from '../Card'
-import { Text } from '../Text'
+import { Card } from '../Card/Card'
+import { Text } from '../Text/Text'
 import { Hug } from './Hug'
 
 const text = (

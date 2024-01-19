@@ -1,8 +1,9 @@
 import themeGet from '@styled-system/theme-get'
 import styled, { css } from 'styled-components'
 import { SpaceProps, borderRadius, compose, space } from 'styled-system'
-import type { ColorSchemeName } from '../theme'
-import { applySizes, applyVariations, borderRadiusAttrs, color, colorScheme, textTransform } from '../utils'
+import type { ColorSchemeName } from '../theme/theme'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { applySizes, applyVariations, color, colorScheme, textTransform } from '../utils/utils'
 
 const type = (props) => {
   const badgeColors = {

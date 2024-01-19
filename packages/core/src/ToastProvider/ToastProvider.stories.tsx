@@ -1,6 +1,6 @@
 import React from 'react'
-import { ToastProvider } from './ToastProvider'
 import { MockToastChildren } from '../__test__/mocks/toasts'
+import { ToastProvider } from './ToastProvider'
 
 export default {
   title: 'Core / ToastProvider',
@@ -18,7 +18,7 @@ export default {
 }
 
 const Template = (args) => (
-  <ToastProvider {...args}>
+  <ToastProvider domRootId='ToastProviderRoot' {...args}>
     <MockToastChildren variation={args.variation} />
   </ToastProvider>
 )

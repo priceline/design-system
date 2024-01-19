@@ -1,10 +1,8 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
 import * as RadixAccordion from '@radix-ui/react-accordion'
 import React from 'react'
 import { SpaceProps } from 'styled-system'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
 import {
   IconContainer,
   StyledAccordionRoot,

@@ -1,11 +1,8 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
 import React, { useState } from 'react'
-import { Absolute, type AbsoluteProps } from '../Absolute'
-import { Animate } from '../Animate'
-import { Box } from '../Box'
-import { Tooltip } from '../Tooltip'
+import { Absolute, type AbsoluteProps } from '../Absolute/Absolute'
+import { Animate } from '../Animate/Animate'
+import { Box } from '../Box/Box'
+import { Tooltip } from '../Tooltip/Tooltip'
 import { NotificationDot, StyledButton } from './FloatingActionButton.styled'
 
 export type FloatingActionButtonProps = AbsoluteProps & {

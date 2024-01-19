@@ -37,22 +37,6 @@ exports[`Stepper renders with children 1`] = `
   outline: none;
 }
 
-.c7 {
-  color: #0068ef;
-  font-size: 14px;
-}
-
-.c8 {
-  color: #0068ef;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.c9 {
-  color: #4f6f8f;
-  font-size: 14px;
-}
-
 .c2 {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -89,6 +73,22 @@ exports[`Stepper renders with children 1`] = `
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
+}
+
+.c7 {
+  color: #0068ef;
+  font-size: 14px;
+}
+
+.c8 {
+  color: #0068ef;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.c9 {
+  color: #4f6f8f;
+  font-size: 14px;
 }
 
 .c3 {

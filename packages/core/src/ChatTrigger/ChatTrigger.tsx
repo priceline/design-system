@@ -1,9 +1,9 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
 import { Chat } from 'pcln-icons'
 import React from 'react'
-import { FloatingActionButton, type FloatingActionButtonProps } from '../FloatingActionButton'
+import {
+  FloatingActionButton,
+  type FloatingActionButtonProps,
+} from '../FloatingActionButton/FloatingActionButton'
 
 export type ChatTriggerProps = FloatingActionButtonProps
 

@@ -1,11 +1,11 @@
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 import styled from 'styled-components'
-import { BackgroundImage } from '../BackgroundImage'
-import { Box } from '../Box'
-import { Card } from '../Card'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
+import { BackgroundImage } from '../BackgroundImage/BackgroundImage'
+import { Box } from '../Box/Box'
+import { Card } from '../Card/Card'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import { SlideBox } from './SlideBox'
 
 const ToutCard = styled(Card)`

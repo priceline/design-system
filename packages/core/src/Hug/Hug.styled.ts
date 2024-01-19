@@ -1,9 +1,9 @@
 import { themeGet } from '@styled-system/theme-get'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { Card } from '../Card'
-import { Flex, type FlexProps } from '../Flex'
-import { applyVariations, colorSchemeCustomForeground } from '../utils'
+import { Box } from '../Box/Box'
+import { Card } from '../Card/Card'
+import { Flex, type FlexProps } from '../Flex/Flex'
+import { applyVariations, colorSchemeCustomForeground } from '../utils/utils'
 
 export const HugCard = styled(Card)`
   overflow: hidden;

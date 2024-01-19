@@ -1,7 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'pcln-icons'
 import React from 'react'
-import { Button } from '../Button'
-import { Relative } from '../Relative'
+import { Button } from '../Button/Button'
+import { Relative } from '../Relative/Relative'
 import { ARROW_SIZES } from './Arrow.styled'
 
 export type ArrowProps = {

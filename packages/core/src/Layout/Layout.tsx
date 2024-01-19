@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { FlexWrapProps, zIndex } from 'styled-system'
-
-import { Box } from '../Box'
-import { Flex } from '../Flex'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
 
 /**
  * Returns an array of values with the same length as numChildren with each item

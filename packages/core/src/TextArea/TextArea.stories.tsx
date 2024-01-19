@@ -1,6 +1,8 @@
 import React from 'react'
-
-import { Box, TextArea, Label, Button } from '..'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Label } from '../Label/Label'
+import { TextArea } from '../TextArea/TextArea'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
 export default {

@@ -2,9 +2,9 @@ import { ChevronDown } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
 import { FontSizeProps, SpaceProps } from 'styled-system'
-import { Button } from '../../Button'
-import { getPaletteColor } from '../../utils'
-import { ChipContent, type IconComponent } from '../ChipContent'
+import { Button } from '../../Button/Button'
+import { getPaletteColor } from '../../utils/utils'
+import { ChipContent, type IconComponent } from '../ChipContent/ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 
 const ChipButton = styled(Button)`

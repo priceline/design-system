@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { type PaletteColor, type PaletteFamilyName } from '../theme'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { type PaletteColor, type PaletteFamilyName } from '../theme/theme'
 
 const CustomBox = styled(Box)`
   border-radius: 2px;

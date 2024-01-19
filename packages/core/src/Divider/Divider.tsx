@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { BorderColorProps, SpaceProps, WidthProps, compose, space, width } from 'styled-system'
-import { ColorName, PaletteColor, PaletteFamilyName } from '../theme'
-import { applyVariations, getPaletteColor } from '../utils'
+import { ColorName, PaletteColor, PaletteFamilyName } from '../theme/theme'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 export type DividerProps = SpaceProps &
   WidthProps &

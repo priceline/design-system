@@ -1,15 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { AlignItemsProps, FontSizeProps, JustifyContentProps, MarginProps, PaddingProps } from 'styled-system'
-
-import { Banner } from '../Banner'
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { Link } from '../Link'
-import { Relative } from '../Relative'
-import { ColorSchemeName } from '../theme'
-import { colorSchemeCustomForeground } from '../utils'
+import { Banner } from '../Banner/Banner'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Link } from '../Link/Link'
+import { Relative } from '../Relative/Relative'
+import { ColorSchemeName } from '../theme/theme'
+import { colorSchemeCustomForeground } from '../utils/utils'
 
 const BannerWithRadius = styled(Banner)`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'cursor')};

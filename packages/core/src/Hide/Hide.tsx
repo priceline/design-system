@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, BoxProps } from '../Box'
-import { Text } from '../Text'
+import { Box, BoxProps } from '../Box/Box'
+import { Text } from '../Text/Text'
 
 const getMaxWidth = (em) => parseInt(em) - 0.01
 

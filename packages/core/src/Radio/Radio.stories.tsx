@@ -1,13 +1,12 @@
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 import styled from 'styled-components'
-
-import { Button } from '../Button'
-import { Label } from '../Label'
-import { Radio } from '../Radio'
+import { Button } from '../Button/Button'
+import { Label } from '../Label/Label'
+import { Radio } from '../Radio/Radio'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-import { getPaletteColor } from '../utils'
-import { paletteFamilyNames } from '../theme'
+import { paletteFamilyNames } from '../theme/theme'
+import { getPaletteColor } from '../utils/utils'
 
 const bold = (props) => (props.bold ? { fontWeight: props.theme.fontWeights.bold } : null)
 const medium = (props) => (props.medium ? { fontWeight: props.theme.fontWeights.medium } : null)

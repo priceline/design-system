@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { type PaletteFamilyName } from '../theme'
+import { type PaletteFamilyName } from '../theme/theme'
 import { ProgressBar } from './ProgressBar'
 
 const testProps = [

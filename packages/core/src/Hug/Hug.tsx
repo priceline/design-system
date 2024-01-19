@@ -1,6 +1,6 @@
 import React, { Attributes } from 'react'
-import { type CardProps } from '../Card'
-import { Text } from '../Text'
+import { type CardProps } from '../Card/Card'
+import { Text } from '../Text/Text'
 import { BorderConcealer, Header, HugCard } from './Hug.styled'
 
 export type HugProps = CardProps & {

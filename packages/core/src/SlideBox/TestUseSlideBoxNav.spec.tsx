@@ -1,7 +1,7 @@
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
+import { Button } from '../Button/Button'
+import { fireEvent, render } from '../__test__/testing-library'
 import { useSlideBoxNav } from './useSlideBoxNav'
-import { Button } from '../Button'
 
 const getChildArray = () => {
   const childarray = []
@@ -23,9 +23,8 @@ const props = {
 }
 
 const Test = (testProps) => {
-  const { setCurrentSlide, currentSlide, onSlideChangeWrapper, arrowProps, slideInView } = useSlideBoxNav(
-    testProps
-  )
+  const { setCurrentSlide, currentSlide, onSlideChangeWrapper, arrowProps, slideInView } =
+    useSlideBoxNav(testProps)
   const {
     leftDisabled,
     rightDisabled,

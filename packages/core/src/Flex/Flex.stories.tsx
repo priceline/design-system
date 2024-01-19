@@ -1,5 +1,6 @@
 import React from 'react'
-import { Flex, Box } from '..'
+import { Box } from '../Box/Box'
+import { Flex } from './Flex'
 
 export default {
   title: 'Flex',

@@ -1,5 +1,3 @@
-/* istanbul ignore file */
-
 import React from 'react'
 import { InView } from 'react-intersection-observer'
 import styled from 'styled-components'

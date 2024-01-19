@@ -1,7 +1,7 @@
 import React from 'react'
-import { Divider } from '../Divider'
 import { render, screen } from '../__test__/testing-library'
-import { theme } from '../theme'
+import { theme } from '../theme/theme'
+import { Divider } from './Divider'
 
 describe('Divider', () => {
   test('renders', () => {
