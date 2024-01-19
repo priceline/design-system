@@ -6,7 +6,7 @@ import { SpaceProps, WidthProps } from 'styled-system'
 import { Box } from '../Box'
 import { Flex } from '../Flex'
 import { Hide } from '../Hide'
-import { ColorName } from '../theme'
+import { ColorProp } from '../theme'
 import { applyVariations, color, getPaletteColor, hasPaletteColor } from '../utils'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
@@ -71,8 +71,8 @@ const StyledFlex = styled(Flex)`
 export type FlagProps = SpaceProps &
   WidthProps & {
     children?: React.ReactNode
-    color?: ColorName
-    bg?: ColorName
+    color?: ColorProp
+    bg?: ColorProp
   }
 
 export const Flag: React.FC<FlagProps> = ({ color, bg, children, pl, pr, py, width, ...props }) => (

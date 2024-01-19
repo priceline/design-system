@@ -619,6 +619,9 @@ export type ColorSchemes = Record<ColorSchemeName, ColorScheme>
 export type ColorName = keyof typeof colors
 
 /** @public */
+export type ColorProp = ColorName | PaletteFamilyName | PaletteColor
+
+/** @public */
 export type DesignSystemTheme = {
   space: string[]
   colors: Record<string, string>
