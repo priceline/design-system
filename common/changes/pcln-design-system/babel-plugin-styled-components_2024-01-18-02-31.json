@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "upgrade webpack5 build process to apply minification and babel-plugin-styled-components",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

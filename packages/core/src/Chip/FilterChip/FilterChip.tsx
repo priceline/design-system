@@ -1,8 +1,7 @@
 import { Close } from 'pcln-icons'
 import React from 'react'
 import { FontSizeProps, SpaceProps } from 'styled-system'
-
-import { ChipContent } from '../ChipContent'
+import { ChipContent } from '../ChipContent/ChipContent'
 import { ChipInput } from '../ChipInput'
 import { ChipLabel } from '../ChipLabel'
 

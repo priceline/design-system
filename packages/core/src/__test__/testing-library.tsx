@@ -1,6 +1,6 @@
 import { render, type RenderResult } from '@testing-library/react'
 import React from 'react'
-import { ThemeProvider } from '../ThemeProvider'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 
 const WithThemeProvider = ({ children }) => <ThemeProvider>{children}</ThemeProvider>
 

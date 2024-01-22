@@ -1,8 +1,8 @@
-import React from 'react'
-import { Box } from '../Box'
 import type { StoryObj } from '@storybook/react'
+import React from 'react'
+import { Box } from '../Box/Box'
 import { ChatMessageContainer, type ChatMessageContainerProps } from './ChatMessageContainer'
-import { shortConversation, longConversation } from './ChatMessageContainer.stories.args'
+import { longConversation, shortConversation } from './ChatMessageContainer.stories.args'
 
 export default {
   title: 'Chat / ChatMessageContainer',

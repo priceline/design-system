@@ -1,10 +1,9 @@
 import React from 'react'
-
-import { BackgroundImage } from '../BackgroundImage'
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
+import { BackgroundImage } from '../BackgroundImage/BackgroundImage'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 import { BlockLink } from './BlockLink'
 

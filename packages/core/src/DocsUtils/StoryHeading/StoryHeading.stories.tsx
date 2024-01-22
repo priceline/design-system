@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { StoryHeading, StoryHeadingProps } from '.'
+import { StoryHeading, StoryHeadingProps } from './StoryHeading'
 
 const exampleProps: StoryHeadingProps = {
   storyName: 'Usage',

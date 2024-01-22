@@ -1,9 +1,8 @@
 import React from 'react'
-import { Flex } from '../Flex'
-import { Input } from '../Input'
-import { Label } from './Label'
-import { Radio } from '../Radio'
-import { LabelProps } from './Label'
+import { Flex } from '../Flex/Flex'
+import { Input } from '../Input/Input'
+import { Radio } from '../Radio/Radio'
+import { Label, LabelProps } from './Label'
 import { argTypes, defaultArgs } from './Label.stories.args'
 
 export default {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { List } from '../List'
+import { List } from './List'
 
 describe('List', () => {
   it('renders ordered list', () => {

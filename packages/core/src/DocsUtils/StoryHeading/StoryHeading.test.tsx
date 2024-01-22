@@ -1,6 +1,6 @@
 import React from 'react'
-import { StoryHeading } from '..'
 import { render, screen } from '../../__test__/testing-library'
+import { StoryHeading } from './StoryHeading'
 
 describe('StoryHeading component', () => {
   it('should render with the correct text and id', () => {

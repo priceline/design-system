@@ -1,9 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { SpaceProps, WidthProps, compose, space, width } from 'styled-system'
-
-import { buttonStyles, type Sizes, type Variations } from '../Button'
-import { applyVariations, getPaletteColor } from '../utils'
+import { buttonStyles, type Sizes, type Variations } from '../Button/Button'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const variations = {
   fill: css`

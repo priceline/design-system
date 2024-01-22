@@ -1,8 +1,8 @@
-import React from 'react'
-import type { StoryObj } from '@storybook/react'
 import { expect, jest } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
-import { ChatActionContainerProps, ChatActionContainer } from './ChatActionContainer'
+import type { StoryObj } from '@storybook/react'
+import { userEvent, within } from '@storybook/testing-library'
+import React from 'react'
+import { ChatActionContainer, ChatActionContainerProps } from './ChatActionContainer'
 
 export default {
   title: 'Chat / ChatActionContainer',

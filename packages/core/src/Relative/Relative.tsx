@@ -12,7 +12,7 @@ import {
   top,
   zIndex,
 } from 'styled-system'
-import { Box, BoxProps } from '../Box'
+import { Box, type BoxProps } from '../Box/Box'
 
 export type RelativeProps = TopProps & RightProps & BottomProps & LeftProps & ZIndexProps & BoxProps
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
 import { Shimmer } from './Shimmer'
 
 const SkeletonBar = styled(Shimmer).attrs(() => ({

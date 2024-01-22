@@ -1,8 +1,9 @@
 import React from 'react'
-import { Select } from '../Select/Select'
 import { render, screen } from '../__test__/testing-library'
-import { theme } from '../theme'
-import { createTheme, getPaletteColor } from '../utils'
+import { theme } from '../theme/theme'
+import { createTheme } from '../utils/createTheme'
+import { getPaletteColor } from '../utils/utils'
+import { Select } from './Select'
 
 describe('Select', () => {
   test('renders', () => {

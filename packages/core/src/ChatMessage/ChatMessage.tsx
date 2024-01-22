@@ -1,14 +1,11 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
 import themeGet from '@styled-system/theme-get'
 import { PricelineSparkle } from 'pcln-icons'
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { Absolute } from '../Absolute'
-import { Flex, type FlexProps } from '../Flex'
-import { Text } from '../Text'
-import { applyVariations, getPaletteColor, getTextColorOn } from '../utils'
+import { Absolute } from '../Absolute/Absolute'
+import { Flex, type FlexProps } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { applyVariations, getPaletteColor, getTextColorOn } from '../utils/utils'
 
 const variations = {
   initial: css`

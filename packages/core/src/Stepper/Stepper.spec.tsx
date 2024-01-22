@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Stepper } from '..'
+import { Stepper } from './Stepper'
 
 const children = (
   <React.Fragment>

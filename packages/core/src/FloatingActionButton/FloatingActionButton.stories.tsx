@@ -2,7 +2,7 @@ import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import { Cars, Chat } from 'pcln-icons'
 import React from 'react'
-import { Relative } from '../Relative'
+import { Relative } from '../Relative/Relative'
 import { FloatingActionButton } from './FloatingActionButton'
 
 export default {

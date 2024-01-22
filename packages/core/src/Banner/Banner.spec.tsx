@@ -1,10 +1,10 @@
 import { Star } from 'pcln-icons'
 import React from 'react'
-import { Banner } from '../Banner'
-import { Heading } from '../Heading'
-import { Text } from '../Text'
+import { Banner } from '../Banner/Banner'
+import { Heading } from '../Heading/Heading'
+import { Text } from '../Text/Text'
 import { render } from '../__test__/testing-library'
-import { theme } from '../theme'
+import { theme } from '../theme/theme'
 
 describe('Banner', () => {
   let consoleError

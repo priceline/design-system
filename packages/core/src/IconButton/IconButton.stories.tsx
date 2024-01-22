@@ -1,9 +1,9 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { Calendar } from 'pcln-icons'
-
-import { Button, IconButton } from '..'
+import React from 'react'
+import { Button } from '../Button/Button'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { IconButton } from './IconButton'
 
 export default {
   title: 'IconButton',

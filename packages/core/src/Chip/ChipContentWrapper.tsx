@@ -1,9 +1,9 @@
 import themeGet from '@styled-system/theme-get'
 import styled, { css } from 'styled-components'
 import { compose, fontSize, space } from 'styled-system'
-import { Box, type BoxProps } from '../Box'
-import { type ChipContentVariation } from '../Chip/ChipContent/ChipContent'
-import { applySizes, applyVariations, getPaletteColor } from '../utils'
+import { Box, type BoxProps } from '../Box/Box'
+import { applySizes, applyVariations, getPaletteColor } from '../utils/utils'
+import { type ChipContentVariation } from './ChipContent/ChipContent'
 
 const getSizes = ({
   hasChildren,

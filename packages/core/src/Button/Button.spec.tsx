@@ -2,8 +2,9 @@ import { User } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
 import { render } from '../__test__/testing-library'
-import { borderRadii as borderRadius, shadows } from '../theme'
-import { boxShadowSizeValues, createTheme } from '../utils'
+import { borderRadii as borderRadius, shadows } from '../theme/theme'
+import { boxShadowSizeValues } from '../utils/attrs/boxShadowAttrs'
+import { createTheme } from '../utils/createTheme'
 import { Button } from './Button'
 
 const theme = createTheme()

@@ -1,10 +1,10 @@
+import * as Dialog from '@radix-ui/react-dialog'
 import { AnimatePresence } from 'framer-motion'
-import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme'
+import React, { useEffect } from 'react'
+import { OverflowProps } from 'styled-system'
+import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme/theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
-import { OverflowProps } from 'styled-system'
-import * as Dialog from '@radix-ui/react-dialog'
-import React, { useEffect } from 'react'
 
 export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   ariaDescription: string

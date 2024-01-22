@@ -1,9 +1,8 @@
+import themeGet from '@styled-system/theme-get'
 import React from 'react'
 import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
 import { space, SpaceProps } from 'styled-system'
-
-import { applyVariations, getPaletteColor, borders } from '../utils'
+import { applyVariations, borders, getPaletteColor } from '../utils/utils'
 
 export type TextAreaProps = SpaceProps &
   React.TextareaHTMLAttributes<HTMLTextAreaElement> &

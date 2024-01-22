@@ -1,6 +1,6 @@
 import React, { MouseEventHandler, useState } from 'react'
-import { Relative } from '../Relative'
-import { type BoxShadowSize, type IStyledSystemProps, type PaletteColor } from '../theme'
+import { Relative } from '../Relative/Relative'
+import { type BoxShadowSize, type IStyledSystemProps, type PaletteColor } from '../theme/theme'
 import {
   BackgroundAnimation,
   CloseButtonSize,

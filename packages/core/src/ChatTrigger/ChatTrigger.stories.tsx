@@ -1,7 +1,7 @@
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
 import React from 'react'
-import { Relative } from '../Relative'
+import { Relative } from '../Relative/Relative'
 import { ChatTrigger } from './ChatTrigger'
 
 export default {

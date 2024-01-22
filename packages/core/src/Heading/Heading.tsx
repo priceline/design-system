@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Text } from '../Text'
+import { Text } from '../Text/Text'
 
 export const Heading = (props) => <Text as='h3' {...props} />
 

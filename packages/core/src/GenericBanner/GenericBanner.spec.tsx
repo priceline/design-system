@@ -1,9 +1,9 @@
+import { Emoticon, Warning } from 'pcln-icons'
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
-import { Warning, Emoticon } from 'pcln-icons'
-import { Text } from '../Text'
-import { Image } from '../Image'
-import { GenericBanner } from '.'
+import { Image } from '../Image/Image'
+import { Text } from '../Text/Text'
+import { fireEvent, render } from '../__test__/testing-library'
+import { GenericBanner } from './GenericBanner'
 
 const props = {
   p: 2,

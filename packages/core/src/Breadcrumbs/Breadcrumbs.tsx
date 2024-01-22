@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex } from '../Flex'
+import { Flex } from '../Flex/Flex'
 import { BreadcrumbLink, type BreadcrumbLinkProps } from './BreadcrumbLink'
 
 export type BreadcrumbsProps = {

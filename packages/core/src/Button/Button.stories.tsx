@@ -1,14 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
-// @ts-nocheck
-
 import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
 import React from 'react'
-import { Box } from '../Box'
-import { ButtonChip } from '../Chip/ButtonChip'
-import { CloseButton } from '../CloseButton'
+import { Box } from '../Box/Box'
+import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
+import { CloseButton } from '../CloseButton/CloseButton'
 import {
   DoDont,
   DocTable,
@@ -22,12 +19,12 @@ import {
   StoryStage,
   TableOfContents,
 } from '../DocsUtils'
-import { Flex } from '../Flex'
-import { Image } from '../Image'
-import { Label } from '../Label'
-import { Link } from '../Link'
-import { Text } from '../Text'
-import { ThemeProvider } from '../ThemeProvider'
+import { Flex } from '../Flex/Flex'
+import { Image } from '../Image/Image'
+import { Label } from '../Label/Label'
+import { Link } from '../Link/Link'
+import { Text } from '../Text/Text'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { colors, shadows } from '../storybook/args'
 import { Button, type ButtonProps, type Sizes } from './Button'
 import alignmentImage from './Button.Image.Alignment.png'
@@ -189,7 +186,7 @@ export const IconButtons: ButtonStory = {
 export const InputVariation: ButtonStory = {
   render: () => (
     <StoryStage>
-      <Button size='lg' variation='input' borderRadius='lg' py={0}>
+      <Button size='large' variation='input' borderRadius='lg' py={0}>
         <Flex width='100%' justifyContent='flex-start' alignItems='center' height='54px'>
           <Calendar mr={2} color='primary.base' />
           <Flex flexDirection='column'>
@@ -199,7 +196,7 @@ export const InputVariation: ButtonStory = {
         </Flex>
       </Button>
 
-      <Button size='lg' variation='input' borderRadius='lg'>
+      <Button size='large' variation='input' borderRadius='lg'>
         <Flex width='100%' justifyContent='flex-start' height='100%' alignItems='center'>
           <Calendar mr={2} color='primary.base' />
           <Flex flexDirection='column'>
@@ -208,7 +205,7 @@ export const InputVariation: ButtonStory = {
         </Flex>
       </Button>
 
-      <Button size='lg' variation='input' borderRadius='lg'>
+      <Button size='large' variation='input' borderRadius='lg'>
         <Flex width='100%' justifyContent='space-between' height='100%' alignItems='center'>
           <Flex alignItems='center'>
             <Guests mr={2} color='primary.base' />
@@ -494,7 +491,7 @@ const meta: Meta<typeof Button> = {
             />
 
             <Text py={3} textStyle='subheading3'>
-              Do's and Don't For Button Groups
+              Do&apos;s and Don&apos;t For Button Groups
             </Text>
 
             <DoDont

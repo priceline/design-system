@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import Swatch from './Swatch'
-import { Box, Flex, Text } from '../'
 
 export default {
   title: 'Swatch',

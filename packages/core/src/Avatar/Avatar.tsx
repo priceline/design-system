@@ -1,12 +1,10 @@
+import { User } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Heading } from '../Heading'
-import { Text } from '../Text'
-
-import { User } from 'pcln-icons'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Heading } from '../Heading/Heading'
+import { Text } from '../Text/Text'
 
 const StyledImage = styled(Box)`
   display: flex;

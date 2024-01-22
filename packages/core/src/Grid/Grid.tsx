@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FlexboxProps, GridProps as SSGridProps, system } from 'styled-system'
-import { ComposedStyleFns, type ColorSchemeName, type IStyledSystemProps } from '../theme'
-import { colorScheme } from '../utils'
+import { ComposedStyleFns, type ColorSchemeName, type IStyledSystemProps } from '../theme/theme'
+import { colorScheme } from '../utils/utils'
 
 export interface GridProps extends IStyledSystemProps {
   children?: React.ReactNode

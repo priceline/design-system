@@ -2,7 +2,17 @@
 
 exports[`Step should handle onClick 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,12 +25,6 @@ exports[`Step should handle onClick 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c4 {
-  color: #0068ef;
-  font-weight: 700;
-  font-size: 14px;
 }
 
 .c1 {
@@ -61,14 +65,10 @@ exports[`Step should handle onClick 1`] = `
   background-color: #edf0f3;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c4 {
+  color: #0068ef;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .c2 {
@@ -113,19 +113,14 @@ exports[`Step should handle onClick 1`] = `
 
 exports[`Step should render a completed step correctly 1`] = `
 <DocumentFragment>
-  .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c4 {
@@ -142,9 +137,19 @@ exports[`Step should render a completed step correctly 1`] = `
   outline: none;
 }
 
-.c6 {
-  color: #0068ef;
-  font-size: 14px;
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -185,14 +190,9 @@ exports[`Step should render a completed step correctly 1`] = `
   background-color: #edf0f3;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c6 {
+  color: #0068ef;
+  font-size: 14px;
 }
 
 .c2 {
@@ -255,19 +255,14 @@ exports[`Step should render a completed step correctly 1`] = `
 
 exports[`Step should render a step that is "active" and "completed" correctly 1`] = `
 <DocumentFragment>
-  .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c4 {
@@ -284,10 +279,19 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   outline: none;
 }
 
-.c6 {
-  color: #0068ef;
-  font-weight: 700;
-  font-size: 14px;
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -328,14 +332,10 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   background-color: #edf0f3;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c6 {
+  color: #0068ef;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .c2 {
@@ -398,7 +398,17 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 
 exports[`Step should render an active step correctly 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -411,12 +421,6 @@ exports[`Step should render an active step correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c4 {
-  color: #0068ef;
-  font-weight: 700;
-  font-size: 14px;
 }
 
 .c1 {
@@ -457,14 +461,10 @@ exports[`Step should render an active step correctly 1`] = `
   background-color: #edf0f3;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c4 {
+  color: #0068ef;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .c2 {
@@ -509,7 +509,17 @@ exports[`Step should render an active step correctly 1`] = `
 
 exports[`Step should render correctly with no props without throwing 1`] = `
 <DocumentFragment>
-  .c3 {
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -522,11 +532,6 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c4 {
-  color: #4f6f8f;
-  font-size: 14px;
 }
 
 .c1 {
@@ -567,14 +572,9 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   background-color: #edf0f3;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
+.c4 {
+  color: #4f6f8f;
+  font-size: 14px;
 }
 
 .c2 {

@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Absolute } from '../Absolute'
-import { Box } from '../Box'
-import { Container } from '../Container'
-import { Flex } from '../Flex'
-import { Relative } from '../Relative'
+import { Absolute } from '../Absolute/Absolute'
+import { Box } from '../Box/Box'
+import { Container } from '../Container/Container'
+import { Flex } from '../Flex/Flex'
+import { Relative } from '../Relative/Relative'
 import { Layout } from './Layout'
 
 export default {

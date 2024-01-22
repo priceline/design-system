@@ -1,7 +1,6 @@
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
-
-import { Step } from '.'
+import { fireEvent, render } from '../__test__/testing-library'
+import { Step } from './Step'
 
 describe('Step', () => {
   it('should render correctly with no props without throwing', () => {

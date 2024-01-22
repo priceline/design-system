@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components'
-import { createTheme } from '../utils'
+import { createTheme } from '../utils/createTheme'
 
 export const Base = styled.div`
   font-family: ${(props) => props.theme.font};

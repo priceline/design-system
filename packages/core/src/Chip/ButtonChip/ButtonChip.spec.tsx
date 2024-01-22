@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent } from '../../__test__/testing-library'
+import { fireEvent, render } from '../../__test__/testing-library'
 import { ButtonChip } from './ButtonChip'
 
 const props = {

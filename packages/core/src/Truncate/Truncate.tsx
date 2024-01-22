@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Text } from '../Text'
+import { Text } from '../Text/Text'
 
 export const Truncate = styled(Text)`
   overflow: hidden;

@@ -1,10 +1,9 @@
 import { Airplane, Pin as PinIcon } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-
-import { Text } from '../Text'
+import { Text } from '../Text/Text'
 import { colorSchemeNames } from '../storybook/args'
-import type { ColorSchemeName } from '../theme'
+import type { ColorSchemeName } from '../theme/theme'
 import { Stamp } from './Stamp'
 import { argTypes } from './Stamp.stories.args'
 

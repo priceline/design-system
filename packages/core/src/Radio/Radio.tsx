@@ -1,8 +1,8 @@
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { type PaletteFamilyName } from '../theme'
-import { applyVariations, getPaletteColor } from '../utils'
+import { type PaletteFamilyName } from '../theme/theme'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const RadioWrap = styled.div`
   display: inline-block;

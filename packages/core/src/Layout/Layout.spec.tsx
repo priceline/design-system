@@ -1,7 +1,8 @@
 import React from 'react'
+import { Box } from '../Box/Box'
 import { render } from '../__test__/testing-library'
-
-import { Layout, Box, theme } from '..'
+import { theme } from '../theme/theme'
+import { Layout } from './Layout'
 
 describe('Layout', () => {
   it('renders with variations', () => {

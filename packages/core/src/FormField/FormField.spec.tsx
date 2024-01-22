@@ -1,8 +1,8 @@
 import { Email as EmailIcon } from 'pcln-icons'
 import React from 'react'
-import { Input } from '../Input'
-import { Label } from '../Label'
-import { Select } from '../Select'
+import { Input } from '../Input/Input'
+import { Label } from '../Label/Label'
+import { Select } from '../Select/Select'
 import { render } from '../__test__/testing-library'
 import { FormField } from './FormField'
 

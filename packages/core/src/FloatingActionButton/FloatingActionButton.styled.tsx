@@ -1,7 +1,7 @@
-import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
-import { Box } from '../Box'
-import { Button } from '../Button'
+import styled from 'styled-components'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
 
 export const StyledButton = styled(Button)`
   &:hover {

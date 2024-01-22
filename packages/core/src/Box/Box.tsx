@@ -29,9 +29,10 @@ import {
   textAlign,
   width,
 } from 'styled-system'
-
-import type { ColorSchemeName } from '../theme'
-import { applyVariations, borderRadiusAttrs, boxShadowAttrs, color, colorScheme } from '../utils'
+import type { ColorSchemeName } from '../theme/theme'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
+import { applyVariations, color, colorScheme } from '../utils/utils'
 
 export type BoxProps = BorderRadiusProps &
   BoxShadowProps &

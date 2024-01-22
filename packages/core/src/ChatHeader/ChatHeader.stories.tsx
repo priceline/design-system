@@ -3,10 +3,9 @@ import type { StoryObj } from '@storybook/react'
 import { userEvent, within } from '@storybook/testing-library'
 import { Sparkle } from 'pcln-icons'
 import React from 'react'
-
-import { Flex } from '../Flex'
-import { Stamp } from '../Stamp'
-import { Text } from '../Text'
+import { Flex } from '../Flex/Flex'
+import { Stamp } from '../Stamp/Stamp'
+import { Text } from '../Text/Text'
 import { ChatHeader, type ChatHeaderProps } from './ChatHeader'
 
 export default {

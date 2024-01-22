@@ -1,7 +1,9 @@
 import React from 'react'
-
-import { Select, Label, Box, Button } from '..'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Label } from '../Label/Label'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { Select } from './Select'
 import { argTypes, defaultArgs } from './Select.stories.args'
 
 export default {

@@ -1,9 +1,9 @@
+import { Broom, Departure } from 'pcln-icons'
 import React from 'react'
-import { Departure, Broom } from 'pcln-icons'
-import { ButtonChip } from './ButtonChip'
-import { Box } from '../../Box'
-import { Text } from '../../Text'
+import { Box } from '../../Box/Box'
+import { Text } from '../../Text/Text'
 import { chipWithShadowVariationArgs } from '../../storybook/args'
+import { ButtonChip } from './ButtonChip'
 
 const image = (
   <img src='https://www.priceline.com/sam/air/carrier_logos/airLogo_DL.png' alt='Delta' height='24' />

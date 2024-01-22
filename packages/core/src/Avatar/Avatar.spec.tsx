@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-
-import { Avatar } from '..'
+import { Avatar } from './Avatar'
 
 const elonJPG = 'https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg'
 

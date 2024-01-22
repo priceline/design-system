@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
 import { Container } from './Container'
 import { argTypes } from './Container.stories.args'
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Absolute, getPaletteColor } from '..'
+import { Absolute } from '../Absolute/Absolute'
+import { Box } from '../Box/Box'
+import { getPaletteColor } from '../utils/utils'
 
 const alphaColor = (color: string, props) => `${getPaletteColor(color)(props)}4C`
 

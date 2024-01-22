@@ -1,7 +1,8 @@
 import React from 'react'
 import { mockAllIsIntersecting, mockIsIntersecting } from 'react-intersection-observer/test-utils'
+import { Box } from '../Box/Box'
 import { render } from '../__test__/testing-library'
-import { SlideBox, Box } from '..'
+import { SlideBox } from './SlideBox'
 
 describe('SlideBox', () => {
   it('renders with layout', () => {

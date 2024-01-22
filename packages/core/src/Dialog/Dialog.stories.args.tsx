@@ -1,9 +1,9 @@
 import { ArgTypes } from '@storybook/react'
 import React from 'react'
-import { Button } from '../Button'
-import { Grid } from '../Grid'
-import { Text } from '../Text'
-import { borderRadii, colorSchemeNames, paletteColors } from '../theme'
+import { Button } from '../Button/Button'
+import { Grid } from '../Grid/Grid'
+import { Text } from '../Text/Text'
+import { borderRadii, colorSchemeNames, paletteColors } from '../theme/theme'
 import type { DialogProps } from './Dialog'
 import { dialogSizes } from './Dialog.styled'
 

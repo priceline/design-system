@@ -1,9 +1,8 @@
-import React from 'react'
-
-import { Absolute } from '../Absolute'
-import { Text } from '../Text'
-import { Relative } from '../Relative'
 import { Coupon as CouponIcon } from 'pcln-icons'
+import React from 'react'
+import { Absolute } from '../Absolute/Absolute'
+import { Relative } from '../Relative/Relative'
+import { Text } from '../Text/Text'
 
 describe('Relative', () => {
   test('renders with top, left and zIndex props', () => {

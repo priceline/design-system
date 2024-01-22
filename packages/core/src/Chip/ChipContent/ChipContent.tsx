@@ -1,10 +1,10 @@
 import { ArrowRight } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box, type BoxProps } from '../../Box'
-import { Flex } from '../../Flex'
-import { Text } from '../../Text'
-import { getPaletteColor } from '../../utils'
+import { Box, type BoxProps } from '../../Box/Box'
+import { Flex } from '../../Flex/Flex'
+import { Text } from '../../Text/Text'
+import { getPaletteColor } from '../../utils/utils'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 
 const ImageWrapper = styled(Flex)`

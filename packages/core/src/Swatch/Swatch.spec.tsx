@@ -1,6 +1,6 @@
 import React from 'react'
-import { Swatch } from '.'
-import { render, fireEvent } from '../__test__/testing-library'
+import { fireEvent, render } from '../__test__/testing-library'
+import { Swatch } from './Swatch'
 
 const mockColors = ['red', 'green', 'blue']
 

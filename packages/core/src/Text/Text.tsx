@@ -35,16 +35,9 @@ import {
   width,
   zIndex,
 } from 'styled-system'
-
-import {
-  applyVariations,
-  colorScheme,
-  getPaletteColor,
-  textAlignAttrs,
-  textTransform,
-  textWrap,
-  typographyAttrs,
-} from '../utils'
+import { textAlignAttrs } from '../utils/attrs/textAlignAttrs'
+import { typographyAttrs } from '../utils/attrs/typographyAttrs'
+import { applyVariations, colorScheme, getPaletteColor, textTransform, textWrap } from '../utils/utils'
 
 export const caps = (props) => {
   if (Array.isArray(props.caps) && props.caps.length === 0) {

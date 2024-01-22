@@ -1,13 +1,10 @@
-import type { DesignSystemTheme } from '../theme/theme'
-
 import deepmerge from 'deepmerge'
-
-import { theme as defaultTheme } from '../theme/theme'
-import { createTextStyles } from './createTextStyles'
+import { theme as defaultTheme, type DesignSystemTheme } from '../theme/theme'
+import { createColorScheme } from './createColorScheme'
 import { createColorStyles } from './createColorStyles'
 import { createMediaQueries } from './createMediaQueries'
 import { createPalette } from './createPalette'
-import { createColorScheme } from './createColorScheme'
+import { createTextStyles } from './createTextStyles'
 
 /**
  * Adds aliases to an array of keys

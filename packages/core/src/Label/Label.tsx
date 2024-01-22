@@ -16,7 +16,8 @@ import {
   textStyle,
   width,
 } from 'styled-system'
-import { applyVariations, getPaletteColor, typographyAttrs } from '../utils'
+import { typographyAttrs } from '../utils/attrs/typographyAttrs'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const nowrap = (props) =>
   props.nowrap
@@ -47,6 +48,7 @@ export type LabelProps = SpaceProps &
     autoHide?: boolean
     nowrap?: boolean
     for?: string
+    as?: unknown
     onClick?: (evt: unknown) => void
   }
 

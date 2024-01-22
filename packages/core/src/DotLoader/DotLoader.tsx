@@ -1,10 +1,10 @@
 import themeGet from '@styled-system/theme-get'
 import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { ColorName, PaletteColor, PaletteFamilyName } from '../theme'
-import { applySizes } from '../utils'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { ColorName, PaletteColor, PaletteFamilyName } from '../theme/theme'
+import { applySizes } from '../utils/utils'
 
 const sizes = {
   small: css`

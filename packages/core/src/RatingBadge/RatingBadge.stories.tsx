@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react'
 import React from 'react'
-import { Flex } from '../Flex'
+import { Flex } from '../Flex/Flex'
 import { colorSchemeNames } from '../storybook/args'
 import { RatingBadge } from './RatingBadge'
 

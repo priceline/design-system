@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { BlockLink } from './BlockLink'
 
 describe('BlockLink', () => {

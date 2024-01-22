@@ -1,6 +1,8 @@
 import React from 'react'
-import { Avatar, Flex, Text } from '..'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import { colorSchemeNames } from '../storybook/args'
+import { Avatar } from './Avatar'
 
 const elonJPG = 'https://pbs.twimg.com/media/DwSta0wUcAAQQR9.jpg'
 

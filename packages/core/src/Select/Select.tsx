@@ -3,9 +3,10 @@ import { ChevronDown } from 'pcln-icons'
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } from 'styled-system'
-import { Flex } from '../Flex'
-import { applySizes, borderRadiusAttrs, borders, getPaletteColor } from '../utils'
-import { BorderRadius, PaletteColor } from '../theme'
+import { Flex } from '../Flex/Flex'
+import { BorderRadius, PaletteColor } from '../theme/theme'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { applySizes, borders, getPaletteColor } from '../utils/utils'
 
 const sizes = {
   sm: css`

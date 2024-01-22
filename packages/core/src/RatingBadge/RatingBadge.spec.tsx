@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-
-import { RatingBadge } from '..'
+import { RatingBadge } from './RatingBadge'
 
 const text = '123'
 

@@ -1,6 +1,6 @@
 import React from 'react'
-
-import { Stamp, theme } from '..'
+import { Stamp } from '../Stamp/Stamp'
+import { theme } from '../theme/theme'
 
 describe('Stamp', () => {
   let consoleError

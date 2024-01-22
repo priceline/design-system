@@ -1,8 +1,8 @@
 import { Star } from 'pcln-icons'
 import React from 'react'
-import { Card } from '../Card'
-import { Hide } from '../Hide'
-import { Text } from '../Text'
+import { Card } from '../Card/Card'
+import { Hide } from '../Hide/Hide'
+import { Text } from '../Text/Text'
 import { Hug } from './Hug'
 
 import { colorSchemeNames } from '../storybook/args'

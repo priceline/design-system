@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
-import { Label } from '..'
+import { Label } from './Label'
 
 describe('Label', () => {
   test('it renders', () => {

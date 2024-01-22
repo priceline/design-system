@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box } from '../Box'
-import { Text } from '../Text'
+import { Box } from '../Box/Box'
+import { Text } from '../Text/Text'
 import { ThemeProvider } from './ThemeProvider'
 
 export default {

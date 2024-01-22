@@ -1,15 +1,15 @@
-import React from 'react'
-import { IconField } from '../IconField'
-import { Input } from '../Input'
-import { Select } from '../Select'
-import { IconButton } from '../IconButton'
+import { action } from '@storybook/addon-actions'
 import {
   Calendar as CalendarIcon,
   Check as CheckIcon,
   Close as CloseIcon,
   Visibility as VisibilityIcon,
 } from 'pcln-icons'
-import { action } from '@storybook/addon-actions'
+import React from 'react'
+import { IconButton } from '../IconButton/IconButton'
+import { Input } from '../Input/Input'
+import { Select } from '../Select/Select'
+import { IconField } from './IconField'
 
 export default {
   title: 'IconField',

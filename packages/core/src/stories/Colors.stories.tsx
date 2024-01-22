@@ -1,8 +1,12 @@
-import React from 'react'
-import { Box, Flex, Text, Card, createTheme } from '..'
-import type { ColorScheme as ColorSchemeType } from '..'
-import { ThemeConsumer } from 'styled-components'
 import { ArrowDown } from 'pcln-icons'
+import React from 'react'
+import { ThemeConsumer } from 'styled-components'
+import { Box } from '../Box/Box'
+import { Card } from '../Card/Card'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import type { ColorScheme as ColorSchemeType } from '../theme'
+import { createTheme } from '../utils/createTheme'
 
 const theme = createTheme()
 

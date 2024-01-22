@@ -1,8 +1,8 @@
 import { Departure } from 'pcln-icons'
 import React, { useState } from 'react'
-import { Box } from '../../Box'
-import { Flex } from '../../Flex'
-import { Text } from '../../Text'
+import { Box } from '../../Box/Box'
+import { Flex } from '../../Flex/Flex'
+import { Text } from '../../Text/Text'
 import { chipWithShadowVariationArgs } from '../../storybook/args'
 import { ChoiceChip } from './ChoiceChip'
 

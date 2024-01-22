@@ -1,12 +1,8 @@
 import React from 'react'
 import { colorSchemeNames } from '../storybook/args'
-import type { ColorSchemeName } from '../theme'
-import { textTransformValues } from '../utils'
+import { textTransformValues } from '../utils/attrs/typographyAttrs'
 import { Badge } from './Badge'
 import { argTypes } from './Badge.stories.args'
-
-// for Args
-// const sizes = { small: 'small', medium: 'medium' }
 
 export default {
   title: 'Badge',
@@ -60,7 +56,7 @@ const ColorSchemesTemplate = () => {
   return (
     <React.Fragment>
       {colorSchemeNames.map((colorScheme) => (
-        <Badge m={3} p={3} colorScheme={colorScheme as ColorSchemeName} key={colorScheme}>
+        <Badge m={3} p={3} colorScheme={colorScheme} key={colorScheme}>
           {colorScheme}
         </Badge>
       ))}

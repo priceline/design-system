@@ -1,1 +1,0 @@
-export { Truncate } from './Truncate'

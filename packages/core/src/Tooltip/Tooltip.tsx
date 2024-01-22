@@ -1,9 +1,9 @@
-import React from 'react'
-import { Box } from '../Box'
-import styled, { withTheme } from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
-import { applyVariations, getPaletteColor, colorScheme } from '../utils'
-import { PaletteColor } from '../theme'
+import React from 'react'
+import styled, { withTheme } from 'styled-components'
+import { Box } from '../Box/Box'
+import { PaletteColor } from '../theme/theme'
+import { applyVariations, colorScheme, getPaletteColor } from '../utils/utils'
 
 const arrowShadow = (props) => {
   return props.top

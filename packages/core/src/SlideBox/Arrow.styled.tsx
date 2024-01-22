@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Absolute } from '../Absolute'
+import { Absolute } from '../Absolute/Absolute'
 
 export const AbsoluteTransformLeft = styled(Absolute)`
   transform: translateX(-50%);

@@ -1,11 +1,8 @@
-import type { ButtonProps } from '../Button'
-
 import React from 'react'
 import styled from 'styled-components'
-
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { applyVariations } from '../utils'
+import { Button, type ButtonProps } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { applyVariations } from '../utils/utils'
 
 const TransparentButton = styled(Button)`
   padding: 0;

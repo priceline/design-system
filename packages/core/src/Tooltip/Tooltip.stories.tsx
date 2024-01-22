@@ -1,9 +1,14 @@
+import { Bus, Check } from 'pcln-icons'
 import React from 'react'
-import { Box, Flex, FormField, Label, Input, Tooltip } from '..'
-import { Check, Bus } from 'pcln-icons'
-import { argTypes } from './Tooltip.stories.args'
 import styled from 'styled-components'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { FormField } from '../FormField/FormField'
+import { Input } from '../Input/Input'
+import { Label } from '../Label/Label'
 import { colorSchemeNames } from '../storybook/args'
+import { Tooltip } from './Tooltip'
+import { argTypes } from './Tooltip.stories.args'
 
 const FlexColumn = styled(Flex)`
   flex-direction: column;

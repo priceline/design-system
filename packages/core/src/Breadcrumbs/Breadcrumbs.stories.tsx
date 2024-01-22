@@ -1,6 +1,6 @@
 import { Flights as FlightsIcon, Home as HomeIcon, Seat as SeatIcon } from 'pcln-icons'
 import React from 'react'
-import { Button } from '../Button'
+import { Button } from '../Button/Button'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 import { Breadcrumbs } from './Breadcrumbs'
 

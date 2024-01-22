@@ -9,7 +9,8 @@ import {
   height,
   width,
 } from 'styled-system'
-import { applyVariations, borderRadiusAttrs, getPaletteColor } from '../utils'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const variations = {
   parallax: css`

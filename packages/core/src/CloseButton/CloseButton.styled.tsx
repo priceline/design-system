@@ -3,8 +3,8 @@ import { ForwardRefComponent, HTMLMotionProps, motion } from 'framer-motion'
 import { Close } from 'pcln-icons'
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { ComposedStyleFns } from '../theme'
-import { getPaletteColor } from '../utils'
+import { ComposedStyleFns } from '../theme/theme'
+import { getPaletteColor } from '../utils/utils'
 import type { CloseButtonProps } from './CloseButton'
 
 export const closeButtonSizes = ['sm', 'md', 'lg'] as const

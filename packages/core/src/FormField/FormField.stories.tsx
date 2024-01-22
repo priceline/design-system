@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Input } from '../Input'
-import { Label } from '../Label'
-import { Select } from '../Select'
-import { Tooltip } from '../Tooltip'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Input } from '../Input/Input'
+import { Label } from '../Label/Label'
+import { Select } from '../Select/Select'
+import { Tooltip } from '../Tooltip/Tooltip'
 import { FormField } from './FormField'
 
 import {
