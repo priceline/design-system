@@ -2,6 +2,27 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.1.0",
+      "tag": "pcln-design-system_v6.1.0",
+      "date": "Mon, 22 Jan 2024 14:06:39 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Updated dialog Component to have an option overflowX & Y prop",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "9ac2024dddce048b5875ae31534dbecd16c99c54"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Fix some incorrect TS types",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "e89da325f4067bfb44c97973604f6e084233b5f6"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.0",
       "tag": "pcln-design-system_v6.0.0",
       "date": "Fri, 12 Jan 2024 16:09:00 GMT",

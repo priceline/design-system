@@ -1,6 +1,17 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 12 Jan 2024 16:09:00 GMT and should not be manually modified.
+This log was last generated on Mon, 22 Jan 2024 14:06:39 GMT and should not be manually modified.
+
+## 6.1.0
+Mon, 22 Jan 2024 14:06:39 GMT
+
+### Minor changes
+
+- Updated dialog Component to have an option overflowX & Y prop
+
+### Patches
+
+- Fix some incorrect TS types
 
 ## 6.0.0
 Fri, 12 Jan 2024 16:09:00 GMT
