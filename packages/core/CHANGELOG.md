@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 22 Jan 2024 14:06:39 GMT and should not be manually modified.
+This log was last generated on Mon, 22 Jan 2024 16:15:34 GMT and should not be manually modified.
+
+## 6.2.0
+Mon, 22 Jan 2024 16:15:34 GMT
+
+### Minor changes
+
+- upgrade webpack5 build process to apply minification and babel-plugin-styled-components
+- Added minWidth/maxWidth/minHeight/maxHeight support to Image
+
+### Patches
+
+- abolish barrel files
 
 ## 6.1.0
 Mon, 22 Jan 2024 14:06:39 GMT

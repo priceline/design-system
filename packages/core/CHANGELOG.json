@@ -2,6 +2,39 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.2.0",
+      "tag": "pcln-design-system_v6.2.0",
+      "date": "Mon, 22 Jan 2024 16:15:34 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "upgrade webpack5 build process to apply minification and babel-plugin-styled-components",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "f8e8abd64c8a935cca8d6f231f65d27a17da3eca"
+          },
+          {
+            "comment": "Added minWidth/maxWidth/minHeight/maxHeight support to Image",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "f8e8abd64c8a935cca8d6f231f65d27a17da3eca"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "abolish barrel files",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "f8e8abd64c8a935cca8d6f231f65d27a17da3eca"
+          }
+        ],
+        "none": [
+          {
+            "comment": "ToastProvider: restore tests and fix storybook",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "f8e8abd64c8a935cca8d6f231f65d27a17da3eca"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.0",
       "tag": "pcln-design-system_v6.1.0",
       "date": "Mon, 22 Jan 2024 14:06:39 GMT",
