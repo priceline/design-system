@@ -12,18 +12,24 @@ jobs:
         with:
           fetch-depth: 0 # needed by chromatic for git history
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
 
-      - name: PNPM cache via actions/cache@v3
-        id: pnpm-cache
-        uses: actions/cache@v3
+      - name: Cache Rush
+        uses: actions/cache@v4
         with:
-          path: /home/runner/work/design-system/design-system/common/temp/pnpm-store/v3
+          path: |
+            common/temp/install-run
+            ~/.rush
+          key: ${{ runner.os }}-rush-${{ hashFiles('rush.json') }}
+
+      - name: Cache PNPM
+        uses: actions/cache@v4
+        with:
+          path: common/temp/pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
+          restore-keys: ${{ runner.os }}-pnpm-
 
       - name: Install dependencies
         run: node common/scripts/install-run-rush.js install
