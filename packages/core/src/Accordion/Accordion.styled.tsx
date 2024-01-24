@@ -158,7 +158,6 @@ export const StyledItem = styled(Box)<IStyledItem>`
         ? `border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;`
         : ''}
-    box-shadow: ${(props) =>
-      props.variation === 'card' || props.variation === 'flatCard' ? themeGet('shadows.sm') : ''};
+    box-shadow: ${(props) => (['card', 'flatCard'].includes(props.variation) ? themeGet('shadows.sm') : '')};
   }
 `

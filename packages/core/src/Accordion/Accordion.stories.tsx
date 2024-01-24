@@ -100,7 +100,18 @@ export const Ladder = {
     />
   ),
 }
-export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
+
+export const Card = {
+  render: (args) => (
+    <Accordion
+      {...args}
+      items={items}
+      variation='card'
+      itemsState={['item-1', 'item-2']}
+      isExternallyControlled={true}
+    />
+  ),
+}
 
 export const FlatCard = { render: (args) => <Accordion {...args} items={items} variation='flatCard' /> }
 
