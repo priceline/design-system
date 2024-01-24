@@ -4,8 +4,6 @@ settings:
   autoInstallPeers: false
   excludeLinksFromLockfile: false
 
-packageExtensionsChecksum: 450f91db0d183a3490de9bf3e1f95f28
-
 importers:
 
   .: {}
@@ -208,9 +206,6 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
-      lodash.debounce:
-        specifier: ^4.0.8
-        version: 4.0.8
       moize:
         specifier: ^6.1.6
         version: 6.1.6
@@ -329,9 +324,6 @@ importers:
       jscodeshift:
         specifier: ^0.13.0
         version: 0.13.1(@babel/preset-env@7.23.5)
-      lodash.get:
-        specifier: ^4.4.2
-        version: 4.4.2
       meow:
         specifier: ^10.1.1
         version: 10.1.5
@@ -420,9 +412,6 @@ importers:
       hoist-non-react-statics:
         specifier: ^3.3.2
         version: 3.3.2
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
       react-element-to-jsx-string:
         specifier: ^15.0.0
         version: 15.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -583,9 +572,6 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
-      lodash.upperfirst:
-        specifier: ^4.3.1
-        version: 4.3.1
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -863,9 +849,6 @@ importers:
       '@priceline/eslint-config':
         specifier: workspace:*
         version: link:../../tools/eslint-config
-      '@reach/component-component':
-        specifier: ^0.16.0
-        version: 0.16.0(react-dom@18.2.0)(react@18.2.0)
       '@rushstack/eslint-patch':
         specifier: ^1.6.0
         version: 1.6.0
@@ -4387,17 +4370,6 @@ packages:
     resolution: {integrity: sha512-fyrgCaedtvMg9NK3en0pnOYJdtfwxUcNolezkNPUsoX57X8oQk+NkqcvzHXD2uKNij6GXmWU9NDru2IWjrO4BQ==}
     dependencies:
       '@babel/runtime': 7.23.5
-    dev: true
-
-  /@reach/component-component@0.16.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-GZSQyEGGBhgu2b/wSWBWARHFiq/861XDce69AdS65Ev5h7N62bME5Cneh/P6mj7Hvxmiq6GaltMrN98xqH3+9Q==}
-    peerDependencies:
-      react: ^16.4.0 || 17.x
-      react-dom: ^16.4.0 || 17.x
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: true
 
   /@reach/component-component@0.17.0(react-dom@18.2.0)(react@18.2.0):
@@ -12244,10 +12216,6 @@ packages:
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
-
-  /lodash.upperfirst@4.3.1:
-    resolution: {integrity: sha512-sReKOYJIJf74dhJONhU4e0/shzi1trVbSWDOhKYE5XV2O+H7Sb2Dihwuc7xWxVl+DgFPyTqIN3zMfT9cq5iWDg==}
-    dev: false
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}

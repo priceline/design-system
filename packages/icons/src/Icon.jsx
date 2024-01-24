@@ -1,8 +1,11 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import upperFirst from 'lodash.upperfirst'
-import PropTypes from 'prop-types'
 import * as icons from './index'
+
+function upperFirst(string) {
+  return string ? string.charAt(0).toUpperCase() + string.slice(1) : ''
+}
 
 const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
   const isDev = process.env.NODE_ENV !== 'production'

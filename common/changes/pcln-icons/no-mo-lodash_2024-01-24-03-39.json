@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "removed lodash",
+      "type": "patch",
+      "packageName": "pcln-icons"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "steven.dalonzo@priceline.com"
+}

@@ -432,3 +432,18 @@ export const colorSchemeCustomForeground = ({ colorScheme, color, iconUsesColorS
 export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)
 
 export const textWrap = (props) => (props.textWrap ? { textWrap: props.textWrap } : null)
+
+export function debounce(func, wait, immediate) {
+  let timeout
+  return function () {
+    const context = this
+    const args = arguments
+
+    clearTimeout(timeout)
+    if (immediate && !timeout) func.apply(context, args)
+    timeout = setTimeout(function () {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }, wait)
+  }
+}

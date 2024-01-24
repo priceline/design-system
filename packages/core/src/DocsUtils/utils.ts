@@ -1,6 +1,6 @@
 import { Story, StoryObj } from '@storybook/react'
-import kebabCase from 'lodash/kebabCase'
 import reactElementToJSXString from 'react-element-to-jsx-string'
+import { kebabCase } from '../utils/strings'
 
 export const copy = async (value: string) => navigator.clipboard.writeText(value)
 

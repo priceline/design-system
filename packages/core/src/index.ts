@@ -76,6 +76,8 @@ export { Truncate } from './Truncate/Truncate'
 
 export * from './utils'
 export { createTheme } from './utils/createTheme'
+export { kebabCase, upperFirst } from './utils/strings'
+export { debounce } from './utils/utils'
 
 export * from './theme'
 

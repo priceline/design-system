@@ -125,11 +125,11 @@
    * PNPM documentation: https://pnpm.io/package_json#pnpmpackageextensions
    */
   "globalPackageExtensions": {
-    "babel-plugin-lodash": {
-      "dependencies": {
-        "@babel/types": "~7.20.0"
-      }
-    }
+    // "babel-plugin-lodash": {
+    //   "dependencies": {
+    //     "@babel/types": "~7.20.0"
+    //   }
+    // }
   },
 
   /**
