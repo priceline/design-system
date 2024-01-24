@@ -127,7 +127,6 @@ export interface IStyledItem {
 }
 
 export const StyledItem = styled(Box)<IStyledItem>`
-  box-shadow: ${(props) => (props.variation === 'card' ? themeGet('shadows.sm') : '')};
   ${(props) =>
     props.variation === 'default' ? `background-color: ${getPaletteColor('background.light')(props)};` : ''}
   ${(props) =>
@@ -148,8 +147,10 @@ export const StyledItem = styled(Box)<IStyledItem>`
       : ''}
   &[data-state='open'],
   &:hover {
-    box-shadow: ${(props) =>
-      props.variation === 'card' || props.variation === 'flatCard' ? themeGet('shadows.xl') : ''};
+    ${(props) =>
+      props.variation === 'card' || props.variation === 'flatCard'
+        ? `border: solid 1px ${getPaletteColor('border.base')(props)}`
+        : ''}
   }
   &[data-state='closed'] {
     ${(props) =>
@@ -157,5 +158,7 @@ export const StyledItem = styled(Box)<IStyledItem>`
         ? `border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;`
         : ''}
+    box-shadow: ${(props) =>
+      props.variation === 'card' || props.variation === 'flatCard' ? themeGet('shadows.sm') : ''};
   }
 `

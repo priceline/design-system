@@ -65,6 +65,9 @@ export function Accordion({
             headerBg={child.headerBg}
             data-testid={`styled-item-${child.value}`}
             headerDividerColor={index > 0 && headerDividerColor}
+            boxShadowSize={
+              itemsState === child.value && ['card', 'flatCard'].includes(variation) ? 'xl' : undefined
+            }
           >
             <StyledTrigger {...props} p={p} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>
