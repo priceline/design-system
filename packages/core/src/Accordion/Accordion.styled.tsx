@@ -166,7 +166,7 @@ export const StyledItem = styled(Box)<IStyledItem>`
           border-bottom-right-radius: 0px;`
         : ''}
     ${(props) =>
-      ['card', 'flatCard'].includes(props.variation)
+      ['card'].includes(props.variation)
         ? `
           box-shadow: ${themeGet('shadows.sm')(props)}; 
           border-color: transparent;
