@@ -101,7 +101,9 @@ export const Ladder = {
   ),
 }
 
-export const Card = {
+export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
+
+export const DefaultStateCard = {
   render: (args) => <Accordion {...args} items={items} variation='card' itemsState={['item-1', 'item-2']} />,
 }
 
