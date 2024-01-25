@@ -126,7 +126,12 @@ export interface IStyledItem {
   headerDividerColor?: string
 }
 
+// hover & open -- no shadow, border
+// open - border, no shadow
+// hover & close - xl shadow, no border
+// close - sm shadow, no border
 export const StyledItem = styled(Box)<IStyledItem>`
+  ${(props) => (['card', 'flatCard'].includes(props.variation) ? 'border: solid 1px transparent;' : '')}
   ${(props) =>
     props.variation === 'default' ? `background-color: ${getPaletteColor('background.light')(props)};` : ''}
   ${(props) =>
@@ -145,12 +150,14 @@ export const StyledItem = styled(Box)<IStyledItem>`
         border-radius: 0px; margin-bottom: 0px;
         `
       : ''}
-  &[data-state='open'],
-  &:hover {
-    ${(props) =>
-      props.variation === 'card' || props.variation === 'flatCard'
-        ? `border: solid 1px ${getPaletteColor('border.base')(props)}`
-        : ''}
+  &[data-state='open'] {
+    border-color: ${(props) => getPaletteColor('border.base')(props)};
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+      border-color: ${(props) => getPaletteColor('border.base')(props)};
+    }
   }
   &[data-state='closed'] {
     ${(props) =>
@@ -159,5 +166,12 @@ export const StyledItem = styled(Box)<IStyledItem>`
     border-bottom-right-radius: 0px;`
         : ''}
     box-shadow: ${(props) => (['card', 'flatCard'].includes(props.variation) ? themeGet('shadows.sm') : '')};
+    border-color: transparent;
+
+    &:hover {
+      box-shadow: ${(props) =>
+        ['card', 'flatCard'].includes(props.variation) ? themeGet('shadows.xl') : ''};
+      border-color: red;
+    }
   }
 `
