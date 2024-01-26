@@ -61,5 +61,8 @@ export const ColorSchemes = () => (
     <Heading.h1 colorScheme='primary'>Heading Left</Heading.h1>
     <Heading.h2 colorScheme='secondaryLight'>Heading Left</Heading.h2>
     <Heading.h3 colorScheme='cautionLight'>Heading Left</Heading.h3>
+    <Heading.h4 colorScheme='heading'>Heading Left</Heading.h4>
+    <Heading.h5 colorScheme='headingLight'>Heading Left</Heading.h5>
+    <Heading.h6 colorScheme='headingOnPrimaryLight'>Heading Left</Heading.h6>
   </section>
 )
