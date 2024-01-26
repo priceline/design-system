@@ -26,6 +26,7 @@ const colorSchemeFamilies = [
   'Highlight',
   'Promo',
   'Alert',
+  'Heading'
 ]
 
 const ColorCard = (props) => (

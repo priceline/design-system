@@ -608,6 +608,7 @@ export const colorSchemeNames = [
   'alertLightest',
   'alertDarkOnLight',
   'heading',
+  'headingBase',
   'headingLight',
   'headingOnPrimaryLight',
 ] as const

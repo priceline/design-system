@@ -215,6 +215,11 @@ export const createColorScheme = ({ palette }: { palette: PaletteFamilies }): Co
     // Heading
     //////////////////////////////////////////////
     heading: {
+      background: background.lightest,
+      backgroundName: 'background.lightest',
+      foreground: text.heading,
+    },
+    headingBase: {
       background: background.base,
       backgroundName: 'background.base',
       foreground: text.heading,
