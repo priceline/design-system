@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
 import { Input } from '../Input/Input'
@@ -158,3 +158,38 @@ export const WithErrorTooltip = () => (
     </Tooltip>
   </Box>
 )
+
+const validateEmailFormat = (email) => {
+  // eslint-disable-next-line @rushstack/security/no-unsafe-regexp
+  const reg = new RegExp(
+    [
+      '^(([^<>()[\\]\\\\.,;:\\s@"]+(\\.[^<>()[\\]\\\\.,;:\\s@"]+)*)',
+      '|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)',
+      '+[a-zA-Z]{2,}))$',
+    ].join('')
+  )
+  return reg.test(email)
+}
+
+export const Usage = () => {
+  const [isValidEmail, setIsValidEmail] = useState(false)
+
+  const updateInput = (e) => {
+    const value = e.target.value
+    setIsValidEmail(validateEmailFormat(value))
+  }
+
+  return (
+    <FormField>
+      <Label htmlFor='valid'>Email Address</Label>
+      <Input
+        id='valid'
+        name='valid'
+        placeholder='hello@example.com'
+        onChange={updateInput}
+        color={isValidEmail ? 'success' : undefined}
+      />
+      {isValidEmail ? <SuccessIcon color='success' /> : null}
+    </FormField>
+  )
+}
