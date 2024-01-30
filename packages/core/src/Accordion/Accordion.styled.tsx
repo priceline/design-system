@@ -127,7 +127,7 @@ export interface IStyledItem {
 }
 
 export const StyledItem = styled(Box)<IStyledItem>`
-  box-shadow: ${(props) => (props.variation === 'card' ? themeGet('shadows.sm') : '')};
+  ${(props) => (['card', 'flatCard'].includes(props.variation) ? 'border: solid 1px transparent;' : '')}
   ${(props) =>
     props.variation === 'default' ? `background-color: ${getPaletteColor('background.light')(props)};` : ''}
   ${(props) =>
@@ -146,16 +146,41 @@ export const StyledItem = styled(Box)<IStyledItem>`
         border-radius: 0px; margin-bottom: 0px;
         `
       : ''}
+
   &[data-state='open'],
   &:hover {
-    box-shadow: ${(props) =>
-      props.variation === 'card' || props.variation === 'flatCard' ? themeGet('shadows.xl') : ''};
+    ${(props) =>
+      ['card', 'flatCard'].includes(props.variation)
+        ? `
+        border-color: ${getPaletteColor('border.base')(props)};
+        box-shadow: none;
+        `
+        : ''}
   }
+
   &[data-state='closed'] {
     ${(props) =>
       props.variation === 'underline'
-        ? `border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;`
+        ? `
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;`
         : ''}
+    ${(props) =>
+      ['card'].includes(props.variation)
+        ? `
+          box-shadow: ${themeGet('shadows.sm')(props)}; 
+          border-color: transparent;
+        `
+        : ''}
+    
+    &:hover {
+      ${(props) =>
+        ['card', 'flatCard'].includes(props.variation)
+          ? `
+            box-shadow: ${themeGet('shadows.xl')(props)};
+            border-color: transparent;
+          `
+          : ''}
+    }
   }
 `
