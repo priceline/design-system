@@ -607,6 +607,10 @@ export const colorSchemeNames = [
   'alertLight',
   'alertLightest',
   'alertDarkOnLight',
+  'heading',
+  'headingBase',
+  'headingLight',
+  'headingOnPrimaryLight',
 ] as const
 
 /** @public */
