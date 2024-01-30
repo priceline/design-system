@@ -59,7 +59,10 @@ export const DynamicLabel = () => (
         <Label autoHide htmlFor='dynamic-label-with-a-value'>
           With value
         </Label>
-        <Input id='dynamic-label-with-a-value' name='dynamic-label-with-a-value' value='hello@example.com' />
+        <Input 
+          id='dynamic-label-with-a-value' 
+          name='dynamic-label-with-a-value' 
+          value='hello@example.com' />
       </FormField>
     </Box>
     <Box px={2} width={1 / 3}>
@@ -172,24 +175,41 @@ const validateEmailFormat = (email) => {
 }
 
 export const Usage = () => {
+  const [email, setEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(false)
+  const [isFocused, SetIsFocused] = useState(true)
 
+  // update email address 
   const updateInput = (e) => {
     const value = e.target.value
+    setEmail(value)
+  }
+
+  // handle when focus leave the field 
+  const handleBlur = (e) => {
+    const value = e.target.value
     setIsValidEmail(validateEmailFormat(value))
+    SetIsFocused(false)
+  }
+
+  // handle when field is on focus 
+  const handleFocus = (e) => {
+    SetIsFocused(true)
   }
 
   return (
     <FormField>
-      <Label htmlFor='valid'>Email Address</Label>
+      <Label autoHide htmlFor='dynamic-label-usage'>Email Address</Label>
       <Input
-        id='valid'
-        name='valid'
-        placeholder='hello@example.com'
+        id='dynamic-label-usage'
+        name='dynamic-label-usage'
         onChange={updateInput}
-        color={isValidEmail ? 'success' : undefined}
+        onBlur={handleBlur}
+        value={email}
+        onFocus={handleFocus}
+        color={isFocused ? '' : isValidEmail ? 'success' : 'error'}
       />
-      {isValidEmail ? <SuccessIcon color='success' /> : null}
+      {isFocused ? null : isValidEmail ? <SuccessIcon color='success' /> : <WarningIcon color='error' />}
     </FormField>
   )
 }
