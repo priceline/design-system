@@ -137,7 +137,7 @@
   },
   "peerDependencies": {
     "framer-motion": ">=6.5.1",
-    "pcln-icons": "^5.12.1",
+    "pcln-icons": "^6",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",
     "styled-components": ">=5.3.7 <6"
