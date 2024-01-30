@@ -208,6 +208,7 @@ export const Usage = () => {
         value={email}
         onFocus={handleFocus}
         color={isFocused ? '' : isValidEmail ? 'success' : 'error'}
+        placeholder='Email Address'
       />
       {isFocused ? null : isValidEmail ? <SuccessIcon color='success' /> : <WarningIcon color='error' />}
     </FormField>
