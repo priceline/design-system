@@ -2,6 +2,30 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.2.1",
+      "tag": "pcln-design-system_v6.2.1",
+      "date": "Tue, 30 Jan 2024 20:31:23 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update accordion shadow state for open",
+            "author": "Andrew <88814075+Andrewleel@users.noreply.github.com>",
+            "commit": "595f346bd96c388abfb438f2877bca461d8a86d5"
+          },
+          {
+            "comment": "Add color scheme for heading text color",
+            "author": "Andrew <88814075+Andrewleel@users.noreply.github.com>",
+            "commit": "595f346bd96c388abfb438f2877bca461d8a86d5"
+          },
+          {
+            "comment": "Correct peerDeps for DSv6",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "f8cb97ccf13bf71f96793dbaa06c54aeb4aae875"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.0",
       "tag": "pcln-design-system_v6.2.0",
       "date": "Mon, 22 Jan 2024 16:15:34 GMT",

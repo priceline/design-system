@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.0.1",
+      "tag": "pcln-icons_v6.0.1",
+      "date": "Tue, 30 Jan 2024 20:31:23 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Correct peerDeps for DSv6",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "f8cb97ccf13bf71f96793dbaa06c54aeb4aae875"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.0",
       "tag": "pcln-icons_v6.0.0",
       "date": "Fri, 12 Jan 2024 16:09:00 GMT",

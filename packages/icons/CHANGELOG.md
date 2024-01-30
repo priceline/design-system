@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 12 Jan 2024 16:09:00 GMT and should not be manually modified.
+This log was last generated on Tue, 30 Jan 2024 20:31:23 GMT and should not be manually modified.
+
+## 6.0.1
+Tue, 30 Jan 2024 20:31:23 GMT
+
+### Patches
+
+- Correct peerDeps for DSv6
 
 ## 6.0.0
 Fri, 12 Jan 2024 16:09:00 GMT

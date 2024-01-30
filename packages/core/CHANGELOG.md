@@ -1,6 +1,15 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 22 Jan 2024 16:15:34 GMT and should not be manually modified.
+This log was last generated on Tue, 30 Jan 2024 20:31:23 GMT and should not be manually modified.
+
+## 6.2.1
+Tue, 30 Jan 2024 20:31:23 GMT
+
+### Patches
+
+- update accordion shadow state for open
+- Add color scheme for heading text color
+- Correct peerDeps for DSv6
 
 ## 6.2.0
 Mon, 22 Jan 2024 16:15:34 GMT
