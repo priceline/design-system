@@ -198,19 +198,27 @@ export const Usage = () => {
   }
 
   return (
-    <FormField>
-      <Label autoHide htmlFor='dynamic-label-usage'>Email Address</Label>
-      <Input
-        id='dynamic-label-usage'
-        name='dynamic-label-usage'
-        onChange={updateInput}
-        onBlur={handleBlur}
-        value={email}
-        onFocus={handleFocus}
-        color={isFocused ? '' : isValidEmail ? 'success' : 'error'}
-        placeholder='Email Address'
-      />
-      {isFocused ? null : isValidEmail ? <SuccessIcon color='success' /> : <WarningIcon color='error' />}
-    </FormField>
+    <Box>
+      <FormField>
+        <Label autoHide htmlFor='dynamic-label-usage'>Email Address</Label>
+        <Input
+          id='dynamic-label-usage'
+          name='dynamic-label-usage'
+          onChange={updateInput}
+          onBlur={handleBlur}
+          value={email}
+          onFocus={handleFocus}
+          color={isFocused ? '' : isValidEmail ? 'success' : 'error'}
+          placeholder='Email Address'
+        />
+        {isFocused ? null : isValidEmail ? <SuccessIcon color='success' /> : <WarningIcon color='error' />}
+      </FormField>
+      {!isFocused && !isValidEmail 
+        ? <Tooltip id='demo-error' right color='error'>
+            Email address is required
+          </Tooltip>
+        : null 
+      }
+    </Box>
   )
 }
