@@ -29,7 +29,7 @@ import {
   textAlign,
   width,
 } from 'styled-system'
-import type { BoxShadowSize, ColorSchemeName } from '../theme/theme'
+import type { BorderRadius, BoxShadowSize, ColorSchemeName } from '../theme/theme'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applyVariations, color, colorScheme } from '../utils/utils'
@@ -57,19 +57,7 @@ export type BoxProps = BorderRadiusProps &
     bg?: string
     color?: string
     className?: string
-    borderRadiusSize?:
-      | 'none'
-      | 'xsm'
-      | 'sm'
-      | 'md'
-      | 'lg'
-      | 'xl'
-      | '2xl'
-      | '3xl'
-      | 'full'
-      | 'action-sm'
-      | 'action-md'
-      | 'action-lg'
+    borderRadiusSize?: BorderRadius
     boxShadowSize?: BoxShadowSize
     boxShadowColor?:
       | 'primary'
