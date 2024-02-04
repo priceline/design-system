@@ -10,6 +10,7 @@ import {
   MinHeightProps,
   MinWidthProps,
   OverflowProps,
+  type ResponsiveValue,
   SizeProps,
   SpaceProps,
   TextAlignProps,
@@ -57,8 +58,8 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = BorderRadiusProps
     bg?: string
     color?: string
     className?: string
-    borderRadiusSize?: BorderRadius
-    boxShadowSize?: BoxShadowSize
+    borderRadiusSize?: ResponsiveValue<BorderRadius>
+    boxShadowSize?: ResponsiveValue<BoxShadowSize>
     boxShadowColor?:
       | 'primary'
       | 'secondary'
