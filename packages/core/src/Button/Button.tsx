@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import {
   BoxShadowProps,
   HeightProps,
+  type ResponsiveValue,
   SpaceProps,
   WidthProps,
   borderRadius,
@@ -220,7 +221,7 @@ export type ButtonProps = WidthProps &
     variation?: ButtonVariations
     size?: ButtonSizes | ButtonSizes[]
     borderRadius?: BorderRadius
-    boxShadowSize?: BoxShadowSize
+    boxShadowSize?: ResponsiveValue<BoxShadowSize>
     autoFocus?: boolean
     IconLeft?: React.Component | React.FC
     IconRight?: React.Component | React.FC
