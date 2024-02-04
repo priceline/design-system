@@ -17,7 +17,12 @@ import { Box, type BoxProps } from '../Box/Box'
 /**
  * @public
  */
-export type RelativeProps = TopProps & RightProps & BottomProps & LeftProps & ZIndexProps & BoxProps
+export type RelativeProps<T extends HTMLElement = HTMLDivElement> = TopProps &
+  RightProps &
+  BottomProps &
+  LeftProps &
+  ZIndexProps &
+  BoxProps<T>
 
 /**
  * @public
