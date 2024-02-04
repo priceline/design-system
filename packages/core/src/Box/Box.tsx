@@ -29,7 +29,7 @@ import {
   textAlign,
   width,
 } from 'styled-system'
-import type { ColorSchemeName } from '../theme/theme'
+import type { BoxShadowSize, ColorSchemeName } from '../theme/theme'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applyVariations, color, colorScheme } from '../utils/utils'
@@ -70,7 +70,7 @@ export type BoxProps = BorderRadiusProps &
       | 'action-sm'
       | 'action-md'
       | 'action-lg'
-    boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
+    boxShadowSize?: BoxShadowSize
     boxShadowColor?:
       | 'primary'
       | 'secondary'
