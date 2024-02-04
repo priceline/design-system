@@ -77,7 +77,7 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = BorderRadiusProps
       | 'border'
       | 'background'
     colorScheme?: ColorSchemeName
-    onClick?: (unknown) => unknown
+    onClick?: (e: unknown) => void
     ref?: MutableRefObject<T | undefined>
     rounded?: 'round' | 'top' | 'right' | 'bottom' | 'left' | 'topLeft' | 'topRight' | 'bottomRight' | 'bottomLeft'
   }
