@@ -17,6 +17,7 @@ import {
 import { Flex, type FlexProps } from '../Flex/Flex'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
+import { type BoxShadowSize } from '../theme'
 
 /**
  * @public
@@ -219,7 +220,7 @@ export type ButtonProps = WidthProps &
     variation?: ButtonVariations
     size?: ButtonSizes | ButtonSizes[]
     borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
-    boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
+    boxShadowSize?: BoxShadowSize
     autoFocus?: boolean
     IconLeft?: React.Component
     IconRight?: React.Component
