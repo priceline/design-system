@@ -27,7 +27,7 @@ export type FilterChipProps = SpaceProps &
     actionTitle?: string
     value?: string | number
     color?: string
-    children?: React.ReactNode | string
+    children?: React.ReactNode
     variation?: FilterChipVariation
   }
 

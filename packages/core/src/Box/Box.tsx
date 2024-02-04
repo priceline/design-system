@@ -51,7 +51,7 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = BorderRadiusProps
   TextAlignProps &
   WidthProps &
   React.HTMLAttributes<T> & {
-    children?: React.ReactNode | string
+    children?: React.ReactNode
     as?: unknown
     role?: string
     bg?: string

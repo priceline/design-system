@@ -83,7 +83,7 @@ export type LinkProps = WidthProps &
   SpaceProps &
   React.AnchorHTMLAttributes<HTMLAnchorElement> &
   React.RefAttributes<unknown> & {
-    children?: React.ReactNode | string
+    children?: React.ReactNode
     color?: string
     disabled?: boolean
     href?: string
