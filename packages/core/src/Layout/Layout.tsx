@@ -151,7 +151,7 @@ export type LayoutVariation =
  * @public
  */
 export type LayoutProps = FlexWrapProps & {
-  children: React.ReactElement | React.ReactElement[]
+  children: React.ReactNode
   gap?: LayoutGap
   rowGap?: LayoutGap
   variation?: LayoutVariation
