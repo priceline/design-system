@@ -37,7 +37,7 @@ import { applyVariations, color, colorScheme } from '../utils/utils'
 /**
  * @public
  */
-export type BoxProps = BorderRadiusProps &
+export type BoxProps<T extends HTMLElement = HTMLDivElement> = BorderRadiusProps &
   BoxShadowProps &
   DisplayProps &
   HeightProps &
@@ -50,7 +50,7 @@ export type BoxProps = BorderRadiusProps &
   SpaceProps &
   TextAlignProps &
   WidthProps &
-  React.HTMLAttributes<HTMLDivElement> & {
+  React.HTMLAttributes<T> & {
     children?: React.ReactNode | string
     as?: unknown
     role?: string
@@ -78,7 +78,7 @@ export type BoxProps = BorderRadiusProps &
       | 'background'
     colorScheme?: ColorSchemeName
     onClick?: (unknown) => unknown
-    ref?: MutableRefObject<HTMLDivElement>
+    ref?: MutableRefObject<T | undefined>
     rounded?: 'top' | 'right' | 'bottom' | 'left' | 'topLeft' | 'topRight' | 'bottomRight' | 'bottomLeft'
   }
 

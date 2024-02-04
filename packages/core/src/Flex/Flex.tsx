@@ -20,7 +20,7 @@ import { applyVariations } from '../utils/utils'
 /**
  * @public
  */
-export type FlexProps = BoxProps &
+export type FlexProps<T extends HTMLElement = HTMLDivElement> = BoxProps<T> &
   SpaceProps &
   WidthProps &
   AlignItemsProps &
