@@ -35,10 +35,7 @@ import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applyVariations, color, colorScheme } from '../utils/utils'
 
-/**
- * @public
- */
-export type BoxProps<T extends HTMLElement = HTMLDivElement> = BorderRadiusProps &
+export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadiusProps, 'borderRadius'> &
   BoxShadowProps &
   DisplayProps &
   HeightProps &
@@ -58,7 +55,7 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = BorderRadiusProps
     bg?: string
     color?: string
     className?: string
-    borderRadiusSize?: ResponsiveValue<BorderRadius>
+    borderRadius?: ResponsiveValue<BorderRadius> | BorderRadiusProps['borderRadius']
     boxShadowSize?: ResponsiveValue<BoxShadowSize>
     boxShadowColor?:
       | 'primary'
