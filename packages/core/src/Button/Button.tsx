@@ -225,9 +225,9 @@ export type ButtonProps = WidthProps &
     IconLeft?: React.Component | React.FC
     IconRight?: React.Component | React.FC
     flexProps?: FlexProps
-    onClick?: (unknown) => unknown
-    onFocus?: (unknown) => unknown
-    onMouseEnter?: (unknown) => unknown
+    onClick?: (e: unknown) => void
+    onFocus?: (e: unknown) => void
+    onMouseEnter?: (e: unknown) => void
   }
 
 export const buttonStyles = css`
