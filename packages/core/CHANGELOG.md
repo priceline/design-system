@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 30 Jan 2024 20:31:23 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Feb 2024 21:51:20 GMT and should not be manually modified.
+
+## 6.2.2
+Mon, 05 Feb 2024 21:51:20 GMT
+
+### Patches
+
+- fix path to types rendered to dist by api-extractor
 
 ## 6.2.1
 Tue, 30 Jan 2024 20:31:23 GMT

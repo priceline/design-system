@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.2.2",
+      "tag": "pcln-design-system_v6.2.2",
+      "date": "Mon, 05 Feb 2024 21:51:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix path to types rendered to dist by api-extractor",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6e5c453c9f711c64e33442088672e9c9c1744b21"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.1",
       "tag": "pcln-design-system_v6.2.1",
       "date": "Tue, 30 Jan 2024 20:31:23 GMT",
