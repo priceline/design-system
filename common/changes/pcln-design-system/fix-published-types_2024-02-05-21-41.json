@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "fix path to types rendered to dist by api-extractor",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

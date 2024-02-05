@@ -51,7 +51,7 @@
   "module": "lib/index.js",
   "_module": "dist/pcln-design-system.js",
   "modules.root": "lib",
-  "typings": "dist/pcln-design-system/index.d.ts",
+  "typings": "dist/pcln-design-system.d.ts",
   "files": [
     "lib",
     "lib-commonjs",
