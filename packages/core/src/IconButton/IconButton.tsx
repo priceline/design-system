@@ -1,12 +1,8 @@
-import type { IButtonProps } from '../Button'
-
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
-
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { applyVariations } from '../utils'
+import { Button, type ButtonProps } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { applyVariations } from '../utils/utils'
 
 const TransparentButton = styled(Button)`
   padding: 0;
@@ -27,16 +23,12 @@ const TransparentButton = styled(Button)`
   ${applyVariations('IconButton')}
 `
 
-const propTypes = {
-  icon: PropTypes.node,
-}
-
-export interface IIconButtonProps extends IButtonProps {
+export type IconButtonProps = ButtonProps & {
   icon: React.ReactNode
   autoFocus?: boolean
 }
 
-const IconButton: React.FC<IIconButtonProps> & { isIconButton?: boolean } = React.forwardRef(
+export const IconButton: React.FC<IconButtonProps> & { isIconButton?: boolean } = React.forwardRef(
   ({ icon, ...props }, ref) => {
     return (
       <TransparentButton {...props} ref={ref}>
@@ -48,7 +40,3 @@ const IconButton: React.FC<IIconButtonProps> & { isIconButton?: boolean } = Reac
 
 IconButton.displayName = 'IconButton'
 IconButton.isIconButton = true
-
-IconButton.propTypes = propTypes
-
-export default IconButton

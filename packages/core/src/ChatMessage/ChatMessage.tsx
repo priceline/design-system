@@ -1,14 +1,11 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
+import themeGet from '@styled-system/theme-get'
+import { PricelineSparkle } from 'pcln-icons'
 import React from 'react'
 import styled, { css } from 'styled-components'
-import themeGet from '@styled-system/theme-get'
-import { Absolute } from '../Absolute'
-import { Flex, IFlexProps } from '../Flex'
-import { Text } from '../Text'
-import { PricelineSparkle } from 'pcln-icons'
-import { applyVariations, getPaletteColor, getTextColorOn } from '../utils'
+import { Absolute } from '../Absolute/Absolute'
+import { Flex, type FlexProps } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { applyVariations, getPaletteColor, getTextColorOn } from '../utils/utils'
 
 const variations = {
   initial: css`
@@ -37,11 +34,11 @@ const Message = styled(Flex)`
 
 export const variationNames = ['initial', 'incoming', 'outgoing']
 
-export interface IChatMessage extends IFlexProps {
+export type ChatMessageProps = FlexProps & {
   footer?: React.ReactNode
   header?: React.ReactNode
   Icon?: React.FC<{ color?: string; size?: string }>
-  message: string
+  message: React.ReactNode
   variation: (typeof variationNames)[number]
 }
 
@@ -52,9 +49,17 @@ function ChatMessage({
   message,
   variation,
   ...props
-}: IChatMessage) {
+}: ChatMessageProps) {
   const marginTop = header ? 3 : 0
   const marginBottom = footer ? 3 : 0
+  const footerPosition =
+    variation === 'outgoing'
+      ? {
+          right: 0,
+        }
+      : {
+          left: 0,
+        }
 
   return (
     <Message borderRadius='18px' variation={variation} mt={marginTop} mb={marginBottom} p='12px' {...props}>
@@ -79,7 +84,7 @@ function ChatMessage({
       )}
       <Text textStyle='paragraph2'>{message}</Text>
       {footer && (
-        <Absolute bottom='-20px' left='0px' minWidth='300px' width='100%' px={3}>
+        <Absolute bottom='-20px' minWidth='300px' width='100%' px={3} {...footerPosition}>
           {footer}
         </Absolute>
       )}
@@ -87,4 +92,4 @@ function ChatMessage({
   )
 }
 
-export default ChatMessage
+export { ChatMessage }

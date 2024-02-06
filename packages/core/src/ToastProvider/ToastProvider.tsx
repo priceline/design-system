@@ -1,22 +1,20 @@
-import type { IToastProps } from '../Toast'
-
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
-import styled, { withTheme } from 'styled-components'
 import { createPortal } from 'react-dom'
-import { Absolute } from '../Absolute'
-import { Animate, MotionVariant } from '../Animate'
-import { Flex } from '../Flex'
-import { Toast } from '../Toast'
-import { ThemeProvider } from '../ThemeProvider'
+import styled, { withTheme } from 'styled-components'
+import { Absolute } from '../Absolute/Absolute'
+import { Animate, type MotionVariant } from '../Animate/Animate'
+import { Flex } from '../Flex/Flex'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
+import { Toast, type ToastProps } from '../Toast/Toast'
 
-interface IToastOptions extends IToastProps {
+export type ToastOptions = ToastProps & {
   enterAnimation?: MotionVariant
   exitAnimation?: MotionVariant
   removed?: boolean
 }
 
-interface IToastContextProps {
-  addToast: (options: IToastOptions) => void
+export type ToastContextProps = {
+  addToast: (options: ToastOptions) => void
   removeToast: (id: number) => void
 }
 
@@ -25,13 +23,13 @@ const ClickthroughAbsolute = styled(Absolute)`
 `
 
 /* istanbul ignore next */
-export const ToastContext = createContext<IToastContextProps>({ addToast: () => {}, removeToast: () => {} })
+export const ToastContext = createContext<ToastContextProps>({ addToast: () => {}, removeToast: () => {} })
 
 export const useToast = () => {
   return useContext(ToastContext)
 }
 
-interface IToastProvider {
+export type ToastProviderProps = {
   children: React.ReactNode
   domRootId?: string
   enterAnimation?: MotionVariant
@@ -43,7 +41,7 @@ interface IToastProvider {
 
 let id = 0
 
-function ToastProvider({
+function _ToastProvider({
   children,
   domRootId = 'root',
   enterAnimation = 'slideInLeft',
@@ -51,10 +49,10 @@ function ToastProvider({
   lifespan,
   maxToasts = 3,
   theme,
-}: IToastProvider) {
-  const [toasts, setToasts] = useState<IToastOptions[]>([])
+}: ToastProviderProps) {
+  const [toasts, setToasts] = useState<ToastOptions[]>([])
 
-  const addToast = useCallback((options: IToastOptions) => {
+  const addToast = useCallback((options: ToastOptions) => {
     setToasts((prevToasts) => [...prevToasts, { ...options, id: id++ }])
   }, [])
 
@@ -104,4 +102,6 @@ function ToastProvider({
   )
 }
 
-export default withTheme(ToastProvider)
+const ToastProvider = withTheme(_ToastProvider)
+
+export { ToastProvider }

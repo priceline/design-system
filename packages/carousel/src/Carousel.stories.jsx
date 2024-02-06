@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { within } from '@storybook/testing-library'
+import { expect } from '@storybook/jest'
 import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
-import { Carousel, ArrowButton } from '.'
+import { Carousel } from './Carousel'
+import { ArrowButton } from './ArrowButton'
 
 const SLIDE_COUNT = 6
 
@@ -31,6 +34,13 @@ export default {
       control: { type: 'number' },
       min: 1,
       max: SLIDE_COUNT,
+    },
+    buttonSize: {
+      control: 'text',
+    },
+    showArrowsOnHover: {
+      defaultValue: false,
+      control: { type: 'boolean' },
     },
     naturalSlideHeight: {
       control: { type: 'number' },
@@ -112,6 +122,19 @@ Basic.args = {
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
   onSlideChange: action('Slide Change'),
+  buttonSize: '60px',
+  sideButtonMargin: '-30px',
+}
+Basic.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement)
+
+  expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
+}
+
+export const ShowArrowsOnHover = BasicTemplate.bind({})
+ShowArrowsOnHover.args = {
+  visibleSlides: 3.15,
+  showArrowsOnHover: true,
 }
 
 const VerticalTemplate = (args) => (
@@ -248,3 +271,11 @@ SetVisibleSlidesByViewport.args = {
   sideButtonMargin: '-23px',
   sidePositionArrowButton: <ArrowButton {...buttonStyles} buttonSize='48px' />,
 }
+
+export const SetCurrentSlide = () => (
+  <Carousel layout='50-50' arrowsPosition='bottom' currentSlide={2}>
+    <Flex>Slide 1</Flex>
+    <Flex>Slide 2</Flex>
+    <Flex>Slide 3</Flex>
+  </Carousel>
+)

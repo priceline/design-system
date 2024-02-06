@@ -1,6 +1,7 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { Image, theme } from '..'
+import { theme } from '../theme/theme'
+import { Image } from './Image'
 
 const imageSrc =
   'https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg'

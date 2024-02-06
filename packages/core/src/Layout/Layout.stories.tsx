@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Container, Box, Layout, Relative, Absolute } from '..'
+import { Absolute } from '../Absolute/Absolute'
+import { Box } from '../Box/Box'
+import { Container } from '../Container/Container'
+import { Flex } from '../Flex/Flex'
+import { Relative } from '../Relative/Relative'
+import { Layout } from './Layout'
 
 export default {
   title: 'Layout/Layout',
@@ -18,7 +23,8 @@ const LayoutDemoBox = styled(Box)`
 
 const Template = (args) => (
   <Flex width='100%' color='primary.light'>
-    <Container size='xl' style={{ border: `1px solid` }}>
+    {/*  @ts-ignore */}
+    <Container size='xl' style={{ border: '1px solid' }}>
       <Layout {...args}>
         <LayoutDemoBox color='secondary.base' />
         <Box height='120px' color='warning.base' />
@@ -48,7 +54,8 @@ Responsive.args = {
 
 const OverlapTemplate = (args) => (
   <Flex width='100%' color='primary.light'>
-    <Container size='xl' style={{ border: `1px solid` }}>
+    {/*  @ts-ignore */}
+    <Container size='xl' style={{ border: '1px solid' }}>
       <Layout {...args}>
         <Relative color='secondary.base' zIndex={1} height='200px'>
           <Absolute height={100} width={200} color='notify' top='30px' right='-70px' />

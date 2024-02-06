@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { InferProps } from 'prop-types'
-import { fontWeight, borderRadius, compose } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import { Box } from '../Box'
-import { deprecatedColorValue, borderRadiusAttrs } from '../utils'
+import { borderRadius, compose, fontWeight } from 'styled-system'
+import { Box, type BoxProps } from '../Box/Box'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 
 const defaultProps = {
   fontWeight: 'bold',
@@ -14,11 +12,10 @@ const defaultProps = {
   bg: 'alert',
 }
 
-const ratingBadgePropTypes = {
-  ...Box.propTypes,
-  fontWeight: propTypes.typography.fontWeight,
-  bg: deprecatedColorValue(),
-  color: deprecatedColorValue(),
+export type RatingBadgeProps = BoxProps & {
+  bg?: string
+  color?: string
+  fontWeight?: string
 }
 
 function getBgAndColorProps({ color, bg }) {
@@ -39,7 +36,7 @@ function getBgAndColorProps({ color, bg }) {
   }
 }
 
-const RatingBadge: React.FC<InferProps<typeof ratingBadgePropTypes>> = styled(Box).attrs((props) => ({
+export const RatingBadge: React.FC<RatingBadgeProps> = styled(Box).attrs((props) => ({
   ...getBgAndColorProps(props),
   ...borderRadiusAttrs(props),
 }))`
@@ -49,6 +46,3 @@ const RatingBadge: React.FC<InferProps<typeof ratingBadgePropTypes>> = styled(Bo
 `
 
 RatingBadge.defaultProps = defaultProps
-RatingBadge.propTypes = propTypes
-
-export default RatingBadge

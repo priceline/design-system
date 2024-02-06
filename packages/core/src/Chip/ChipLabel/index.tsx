@@ -1,19 +1,16 @@
 import styled from 'styled-components'
+import { Label } from '../../Label/Label'
+import { getPaletteColor } from '../../utils/utils'
 import { ChipContentWrapper } from '../ChipContentWrapper'
-import { getPaletteColor } from '../../utils'
-import { Label } from '../../Label'
 
-const ChipLabel = styled(Label)`
+export const ChipLabel = styled(Label)`
   display: inline-flex;
-  width: auto;
   user-select: none;
   padding: 0;
   margin: 0;
-  > input:focus ~ ${ChipContentWrapper} {
+  > input:focus-visible ~ ${ChipContentWrapper} {
     border-color: ${getPaletteColor('base')};
     outline-offset: 2px;
     outline: 3px solid ${getPaletteColor('base')};
   }
 `
-
-export { ChipLabel }

@@ -1,7 +1,8 @@
-import React from 'react'
 import { ThumbsUp } from 'pcln-icons'
-
-import { Hug, Text, Card } from '..'
+import React from 'react'
+import { Card } from '../Card/Card'
+import { Text } from '../Text/Text'
+import { Hug } from './Hug'
 
 const text = (
   <Text.span>

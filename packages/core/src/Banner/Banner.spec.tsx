@@ -1,7 +1,10 @@
+import { Star } from 'pcln-icons'
 import React from 'react'
+import { Banner } from '../Banner/Banner'
+import { Heading } from '../Heading/Heading'
+import { Text } from '../Text/Text'
 import { render } from '../__test__/testing-library'
-
-import { Banner, Text, Heading, theme } from '..'
+import { theme } from '../theme/theme'
 
 describe('Banner', () => {
   let consoleError
@@ -16,21 +19,19 @@ describe('Banner', () => {
     expect(json).toMatchSnapshot()
   })
 
-  test('renders with custom iconName and size', () => {
-    const json = rendererCreateWithTheme(<Banner iconName='star' iconSize={20} />).toJSON()
+  test('renders with an icon', () => {
+    const json = rendererCreateWithTheme(<Banner icon={<Star />} />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
   test('renders with text string', () => {
-    const json = rendererCreateWithTheme(
-      <Banner header='Header' text='Text' iconName='star' iconSize={20} theme={theme} />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Banner header='Header' text='Text' icon={<Star />} />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with text node', () => {
     const json = rendererCreateWithTheme(
-      <Banner header='Header' text={<Text>Text</Text>} iconName='star' iconSize={20} theme={theme} />
+      <Banner header='Header' text={<Text>Text</Text>} icon={<Star />} />
     ).toJSON()
     expect(json).toMatchSnapshot()
   })

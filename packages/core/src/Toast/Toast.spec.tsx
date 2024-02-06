@@ -1,9 +1,9 @@
 jest.useFakeTimers()
 
+import { Success } from 'pcln-icons'
 import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
-import { Success } from 'pcln-icons'
-import { Toast } from '../Toast'
+import { Toast } from './Toast'
 
 describe('Toast', () => {
   it('renders a success toast that closes after 2 seconds', () => {

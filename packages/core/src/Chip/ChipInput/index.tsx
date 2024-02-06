@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ChipInput = styled.input`
+export const ChipInput = styled.input`
   appearance: none;
   opacity: 0;
   position: absolute;
@@ -8,5 +8,3 @@ const ChipInput = styled.input`
   width: 1px;
   height: 1px;
 `
-
-export { ChipInput }

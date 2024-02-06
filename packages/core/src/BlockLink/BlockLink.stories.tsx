@@ -1,7 +1,11 @@
 import React from 'react'
-
-import { BackgroundImage, BlockLink, Box, Button, Flex, Text } from '..'
+import { BackgroundImage } from '../BackgroundImage/BackgroundImage'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { BlockLink } from './BlockLink'
 
 const image =
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
@@ -23,10 +27,6 @@ export const ContainingBackgroundImage = () => (
   </Flex>
 )
 
-ContainingBackgroundImage.story = {
-  name: 'containing BackgroundImage',
-}
-
 export const ForwardRefs = () => {
   function refChild(dsRef) {
     function onClick() {
@@ -47,10 +47,6 @@ export const ForwardRefs = () => {
   return <ForwardRefDemo refChild={refChild} />
 }
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
-
 export const CompositionWithoutContainer = () => (
   <Flex justifyContent='center' alignItems='center' color='purple'>
     <BlockLink href='https://www.google.com'>
@@ -60,7 +56,3 @@ export const CompositionWithoutContainer = () => (
     </BlockLink>
   </Flex>
 )
-
-CompositionWithoutContainer.story = {
-  name: 'composition without container',
-}

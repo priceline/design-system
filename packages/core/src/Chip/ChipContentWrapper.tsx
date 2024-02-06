@@ -1,22 +1,31 @@
-import styled, { css } from 'styled-components'
-import { space, fontSize, compose } from 'styled-system'
 import themeGet from '@styled-system/theme-get'
-import { getPaletteColor, applySizes } from '../utils'
-import { Box, IBoxProps } from '../Box'
+import styled, { css } from 'styled-components'
+import { compose, fontSize, space } from 'styled-system'
+import { Box, type BoxProps } from '../Box/Box'
+import { applySizes, applyVariations, getPaletteColor } from '../utils/utils'
+import { type ChipContentVariation } from './ChipContent/ChipContent'
 
-const getSizes = ({ hasChildren }) => ({
+const getSizes = ({
+  hasChildren,
+  hasTopLabel,
+  borderRadiusOverride,
+}: {
+  hasChildren?
+  hasTopLabel?
+  borderRadiusOverride?
+}) => ({
   sm: css`
-    border-radius: ${themeGet('borderRadii.action-sm')};
+    border-radius: ${themeGet(`borderRadii.${borderRadiusOverride || 'action-sm'}`)};
     padding-left: 8px;
     padding-right: 8px;
-    ${hasChildren ? '' : 'height: 32px;'}
+    ${hasChildren ? '' : hasTopLabel ? 'height: 50px;' : 'height: 32px;'}
     font-size: ${themeGet('fontSizes.0')}px;
   `,
   md: css`
-    border-radius: ${themeGet('borderRadii.action-md')};
+    border-radius: ${themeGet(`borderRadii.${borderRadiusOverride || 'action-md'}`)};
     padding-left: 16px;
     padding-right: 16px;
-    ${hasChildren ? '' : 'height: 40px;'}
+    ${hasChildren ? '' : hasTopLabel ? 'height: 58px;' : 'height: 40px;'}
     font-size: ${themeGet('fontSizes.1')}px;
   `,
 })
@@ -31,21 +40,37 @@ const getBorderColor = (props) =>
 const getBackgroundColor = (props) =>
   props.disabled ? 'background.base' : props.selected ? 'light' : 'background.lightest'
 
-interface IChipContentWrapper extends IBoxProps {
-  disabled: boolean
-  hasChildren: boolean
-  selected: boolean
+const variations = {
+  outline: css``,
+  shadow: css`
+    box-shadow: ${(props) => (props.disabled || props.selected ? 'none' : themeGet('shadows.md'))};
+    &:hover {
+      box-shadow: ${(props) => (props.disabled ? 'none' : themeGet('shadows.xl'))};
+    }
+  `,
 }
 
-const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
+export type ChipContentWrapperProps = BoxProps & {
+  borderRadiusOverride?: string
+  disabled: boolean
+  hasChildren: boolean
+  hasTopLabel: boolean
+  justifyContent?: string
+  selected: boolean
+  variation: ChipContentVariation
+}
+
+export const ChipContentWrapper: React.FC<ChipContentWrapperProps> = styled(Box)`
   ${(props) => `
     cursor: ${getCursor(props)};
     color: ${getPaletteColor(getColor(props))(props)};
     background-color: ${getPaletteColor(getBackgroundColor(props))(props)};
-    border: 1px solid ${getBorderColor(props)};
+    border: 1px solid ${
+      props.variation === 'shadow' && !props.selected ? 'transparent' : getBorderColor(props)
+    };
     ${
       props.disabled
-        ? ``
+        ? ''
         : `
           &:hover {
             border: 1px solid ${getPaletteColor('base')(props)};
@@ -58,8 +83,8 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
       props.selected && !props.disabled
         ? `
           &:hover {
-            color: ${getPaletteColor('tone')(props)};
-            border: 1px solid ${getPaletteColor('tone')(props)};
+            color: ${getPaletteColor('dark')(props)};
+            border: 1px solid ${getPaletteColor('dark')(props)};
             background-color: ${getPaletteColor('light')(props)};
           }
           `
@@ -72,13 +97,14 @@ const ChipContentWrapper: React.FC<IChipContentWrapper> = styled(Box)`
   max-width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: ${({ justifyContent }) => justifyContent};
   position: relative;
   border-radius: 2px;
   white-space: nowrap;
   ${({ theme, hasChildren }) => applySizes(getSizes({ hasChildren }), undefined, theme.mediaQueries)};
+  ${applyVariations('ChipContentWrapper', variations)};
+  ${({ theme, hasChildren, hasTopLabel, borderRadiusOverride }) =>
+    applySizes(getSizes({ hasChildren, hasTopLabel, borderRadiusOverride }), undefined, theme.mediaQueries)};
 
   ${(props) => compose(space, fontSize)(props)}
 `
-
-export { ChipContentWrapper }

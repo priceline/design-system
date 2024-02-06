@@ -1,23 +1,16 @@
 {
-  "extends": "@rushstack/heft-jest-plugin/includes/jest-shared.config.json",
-  "setupFilesAfterEnv": ["<rootDir>/lib-commonjs/__test__/jest.setup.js"],
-
-  "testMatch": ["<rootDir>/**/__tests__/**/*.[jt]s?(x)", "<rootDir>/**/?(*.)+(spec|test).[jt]s?(x)"],
-
-  "testEnvironment": "jest-environment-jsdom",
+  "extends": "@rushstack/heft-jest-plugin/includes/jest-web.config.json",
 
   "collectCoverage": true,
   "collectCoverageFrom": [
-    "src/**/*.{js,ts}",
-    "src/**/*.{js,ts}(x)",
-    "!src/**/*.styled.*",
-    "!src/storybook/**/*",
-    "!src/**/*.{stories,story}.*",
-    "!**/__test__/**",
-    "!**/*.d.ts"
+    "!lib-commonjs/**/*.styled.*",
+    "!lib-commonjs/storybook/**/*",
+    "!lib-commonjs/**/*.{stories,story}.*",
+    "!lib-commonjs/index.js*",
+    "!**/__test__/**"
   ],
-  "coverageReporters": ["lcov", "html", "text"],
   "coverageDirectory": "<rootDir>/coverage",
+  "coverageReporters": ["lcov", "html", "text"],
   "coverageThreshold": {
     "global": {
       "branches": 100,
@@ -27,7 +20,9 @@
     }
   },
 
-  "moduleFileExtensions": ["ts", "tsx", "cjs", "js", "jsx", "json", "node"],
+  "setupFilesAfterEnv": ["<rootDir>/lib-commonjs/__test__/jest.setup.js"],
+
+  "testMatch": ["<rootDir>/lib-commonjs/**/*.(spec|test).js"],
 
   "silent": true,
   "verbose": true

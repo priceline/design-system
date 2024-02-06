@@ -2,31 +2,23 @@ import { themeGet } from '@styled-system/theme-get'
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {
+  BoxShadowProps,
+  HeightProps,
+  SpaceProps,
+  WidthProps,
   borderRadius,
   boxShadow,
-  BoxShadowProps,
   compose,
   fontSize,
-  space,
-  SpaceProps,
-  width,
-  WidthProps,
   height,
-  HeightProps,
+  space,
+  width,
 } from 'styled-system'
+import { Flex, type FlexProps } from '../Flex/Flex'
+import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
+import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
 
-import { Flex } from '../Flex'
-
-import {
-  applySizes,
-  applyVariations,
-  borders,
-  boxShadowAttrs,
-  getPaletteColor,
-  getTextColorOn,
-} from '../utils'
-
-export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
+export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
@@ -89,6 +81,9 @@ const variations = {
     &:hover {
       color: ${getPaletteColor('dark')};
       text-decoration: underline;
+    }
+    &&&:disabled {
+      background-color: transparent;
     }
   `,
   outline: css`
@@ -182,26 +177,26 @@ const variations = {
 export type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
 export type Variations = 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
 
-export type StyledButtonProps = IButtonProps & { hasChildren: boolean }
-export interface IButtonProps
-  extends WidthProps,
-    HeightProps,
-    SpaceProps,
-    BoxShadowProps,
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    React.RefAttributes<unknown> {
-  color?: string
-  variation?: Variations
-  size?: Sizes | Sizes[]
-  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | ''
-  boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
-  autoFocus?: boolean
-  IconLeft?: React.Component
-  IconRight?: React.Component
-  onClick?: (unknown) => unknown
-  onFocus?: (unknown) => unknown
-  onMouseEnter?: (unknown) => unknown
-}
+export type StyledButtonProps = ButtonProps & { hasChildren: boolean }
+export type ButtonProps = WidthProps &
+  HeightProps &
+  SpaceProps &
+  BoxShadowProps &
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.RefAttributes<unknown> & {
+    color?: string
+    variation?: Variations
+    size?: Sizes | Sizes[]
+    borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
+    boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
+    autoFocus?: boolean
+    IconLeft?: React.Component
+    IconRight?: React.Component
+    flexProps?: FlexProps
+    onClick?: (unknown) => unknown
+    onFocus?: (unknown) => unknown
+    onMouseEnter?: (unknown) => unknown
+  }
 
 export const buttonStyles = css`
   -webkit-font-smoothing: antialiased;
@@ -328,16 +323,16 @@ const ButtonIcon = ({ Component, ...props }) => {
   return Component ? <Component {...props} /> : null
 }
 
-const Button = React.forwardRef((props: IButtonProps, ref) => {
+export const Button = React.forwardRef((props: ButtonProps, ref) => {
   const { children, ...restProps } = props
-  const { IconLeft, IconRight, size = 'medium' } = props
+  const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props
   const hasChildren = React.Children.toArray(children).length > 0
   const sizeIndex = Array.isArray(size) ? size[0] : size
   const iconSize = iconButtonSizes?.[sizeIndex] ?? 24
 
   return (
     <StyledButton {...restProps} hasChildren={hasChildren} ref={ref}>
-      <Flex alignItems='center' justifyContent='center'>
+      <Flex alignItems='center' justifyContent='center' {...flexProps}>
         <ButtonIcon Component={IconLeft} size={iconSize} mr={children ? 2 : 0} />
         {children}
         <ButtonIcon Component={IconRight} size={iconSize} ml={children ? 2 : 0} />
@@ -353,5 +348,3 @@ Button.defaultProps = {
 }
 
 Button.displayName = 'Button'
-
-export default Button

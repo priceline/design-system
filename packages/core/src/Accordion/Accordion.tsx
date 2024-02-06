@@ -1,47 +1,72 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
+import * as RadixAccordion from '@radix-ui/react-accordion'
 import React from 'react'
-import * as Accordion from '@radix-ui/react-accordion'
-import { IconContainer, StyledChevron, StyledContent, StyledItem, StyledTrigger } from './Accordion.styled'
-import { Box, Flex } from '..'
-import PropTypes from 'prop-types'
+import { SpaceProps } from 'styled-system'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import {
+  IconContainer,
+  StyledAccordionRoot,
+  StyledChevron,
+  StyledContent,
+  StyledItem,
+  StyledTrigger,
+} from './Accordion.styled'
 
-export interface IAccordion {
-  items: IAccordionItem[]
-  itemsState?: PropTypes.string | PropTypes.string[]
-  onToggle?: PropTypes.func
-  type?: PropTypes.string
-  variation?: PropTypes.string
+export type AccordionProps = SpaceProps & {
+  items: AccordionItemProps[]
+  itemsState?: string | string[]
+  onToggle?: (value: string | string[]) => void
+  type?: string
+  variation?: string
+  isExternallyControlled?: boolean
+  headerDividerColor?: string
 }
 
-export interface IAccordionItem {
+export type AccordionItemProps = {
   content: React.ReactNode
   headerActions?: React.ReactNode
   headerLabel?: React.ReactNode
-  value: PropTypes.string
+  headerBg?: string
+  value: string
 }
 
-export const PclnAccordion = ({
+export function Accordion({
   items,
   itemsState,
+  isExternallyControlled,
   onToggle,
   type = 'multiple',
   variation = 'default',
-}: IAccordion) => {
+  p = '12px',
+  headerDividerColor,
+  ...props
+}: AccordionProps): React.ReactElement {
   return items ? (
-    <Accordion.Root
+    <StyledAccordionRoot
+      // @ts-ignore
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
+      value={isExternallyControlled ? itemsState : undefined}
       collapsible
+      variation={variation}
       onValueChange={onToggle}
+      data-testid='accordion-root'
       style={{
         isolation: 'isolate',
       }}
     >
-      {items.map((child: IAccordionItem) => (
-        <Accordion.Item key={child.value} asChild value={child.value}>
-          <StyledItem variation={variation} overflow='hidden' borderRadius='12px' marginBottom='12px'>
-            <StyledTrigger m={2} variation={variation}>
+      {items.map((child: AccordionItemProps, index) => (
+        <RadixAccordion.Item key={child.value} asChild value={child.value}>
+          <StyledItem
+            variation={variation}
+            overflow='hidden'
+            borderRadius='12px'
+            marginBottom='12px'
+            headerBg={child.headerBg}
+            data-testid={`styled-item-${child.value}`}
+            headerDividerColor={index > 0 && headerDividerColor}
+          >
+            <StyledTrigger {...props} p={p} variation={variation}>
               <Flex width='100%' justifyContent='space-between' alignItems='center'>
                 {child.headerLabel}
                 {child.headerActions ? (
@@ -52,12 +77,12 @@ export const PclnAccordion = ({
                 <StyledChevron className='chevron' variation={variation} />
               </IconContainer>
             </StyledTrigger>
-            <StyledContent variation={variation}>{child.content}</StyledContent>
+            <StyledContent {...props} p={p} variation={variation}>
+              {child.content}
+            </StyledContent>
           </StyledItem>
-        </Accordion.Item>
+        </RadixAccordion.Item>
       ))}
-    </Accordion.Root>
+    </StyledAccordionRoot>
   ) : null
 }
-
-export default PclnAccordion

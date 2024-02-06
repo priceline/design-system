@@ -1,4 +1,4 @@
-import { createTheme } from 'pcln-design-system'
+import { createTheme } from 'pcln-design-system/lib'
 const baseTheme = createTheme()
 
 export const backgrounds = {

@@ -1,7 +1,6 @@
 import React from 'react'
-import { render, fireEvent } from '../__test__/testing-library'
-
-import { Checkbox } from '..'
+import { fireEvent, render } from '../__test__/testing-library'
+import { Checkbox } from './Checkbox'
 
 describe('Checkbox', () => {
   const onChange = jest.fn()
@@ -59,6 +58,7 @@ describe('Checkbox', () => {
   it('correctly passes in the ref so that the underlying input element can be modified by the parent component if needed', () => {
     const ref = React.createRef()
     const { getByRole } = render(
+      // @ts-ignore
       <Checkbox id='check-box' ref={ref} indeterminate defaultChecked onChange={onChange} />
     )
     const checkbox = getByRole('checkbox') as HTMLInputElement

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Toggle } from '.'
-import { createTheme } from '..'
-import { render, fireEvent } from '../__test__/testing-library'
+import { fireEvent, render } from '../__test__/testing-library'
 import { theme as customThemes } from '../theme/theme'
+import { createTheme } from '../utils/createTheme'
+import { Toggle } from './Toggle'
 
 const theme = createTheme()
 

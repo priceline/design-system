@@ -1,8 +1,8 @@
-import { Flex } from '../Flex'
-import { Text } from '../Text'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import React from 'react'
 import { TabTriggerChip } from './Tab.styled'
-import { Box } from '../Box'
+import { Box } from '../Box/Box'
 import { themeGet } from '@styled-system/theme-get'
 export const TabChip = ({ hasHover, index, tab, value }) => {
   return (

@@ -1,11 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Box, Absolute, Input, getPaletteColor } from '..'
+import { Absolute } from '../Absolute/Absolute'
+import { Box } from '../Box/Box'
+import { getPaletteColor } from '../utils/utils'
 
 const alphaColor = (color: string, props) => `${getPaletteColor(color)(props)}4C`
 
-const AbsoluteInput = styled(Input)`
+const AbsoluteInput = styled.input`
   position: absolute;
   z-index: 1;
   opacity: 0;
@@ -53,18 +54,7 @@ const WrapperBox = styled(Box)`
   }
 `
 
-const propTypes = {
-  isOn: PropTypes.bool.isRequired,
-  label: PropTypes.string.isRequired,
-  onToggle: PropTypes.func,
-  disabled: PropTypes.bool,
-  width: PropTypes.string,
-  height: PropTypes.number,
-  icon: PropTypes.node,
-  name: PropTypes.string,
-}
-
-export interface IToggleProps {
+export type ToggleProps = {
   isOn?: boolean
   label?: string
   onToggle?: (unknown) => unknown
@@ -75,7 +65,15 @@ export interface IToggleProps {
   name?: string
 }
 
-const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, height, icon, name }) => {
+export function Toggle({
+  isOn,
+  label,
+  onToggle,
+  disabled,
+  height,
+  icon,
+  name,
+}: ToggleProps): React.ReactElement {
   const width = height * 1.875
   const circleAbsoluteSize = height - 4
   const leftToggleOnPosition = width - circleAbsoluteSize - 2
@@ -124,11 +122,7 @@ const Toggle: React.FC<IToggleProps> = ({ isOn, label, onToggle, disabled, heigh
 
 Toggle.displayName = 'Toggle'
 
-Toggle.propTypes = propTypes
-
 Toggle.defaultProps = {
   isOn: false,
   height: 24,
 }
-
-export default Toggle

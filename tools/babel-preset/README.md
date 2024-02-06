@@ -33,13 +33,13 @@ Only a few steps are required to use the preset:
 
         ```json
           "peerDependencies": {
-            "@babel/cli": "^7.7.4",
-            "@babel/core": "^7.7.4",
-            "cross-env": "^6.0.3",
-            "react": ">= 16.10.0",
-            "react-dom": ">= 16.10.0",
-            "styled-components": ">=4.4.1"
-          },
+            "@babel/cli": "^7.23.4",
+            "@babel/core": "^7.23.5",
+            "cross-env": "^7.0.3",
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "styled-components": ">=5.3.7 <6"
+          }
         ```
 
 3.  Make sure your project is using `babel.config.js` instead of `.babelrc`

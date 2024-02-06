@@ -1,6 +1,6 @@
 import React from 'react'
-import { render, fireEvent } from '../../__test__/testing-library'
-import ChoiceChip from './ChoiceChip'
+import { fireEvent, render } from '../../__test__/testing-library'
+import { ChoiceChip } from './ChoiceChip'
 
 const props = {
   id: 'testId',

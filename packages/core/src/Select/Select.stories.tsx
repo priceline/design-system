@@ -1,7 +1,9 @@
 import React from 'react'
-
-import { Select, Label, Box, Button } from '..'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Label } from '../Label/Label'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { Select } from './Select'
 import { argTypes, defaultArgs } from './Select.stories.args'
 
 export default {
@@ -16,6 +18,7 @@ const Template = (args) => (
     <Label htmlFor='cabinClass'>Cabin Class</Label>
     <Select id='cabinClass' name='cabinClass' defaultValue='Premium Economy' {...args}>
       <option>Economy</option>
+      <option disabled>-------------</option>
       <option>Premium Economy</option>
       <option>Business</option>
       <option>First Class</option>
@@ -29,9 +32,6 @@ export const _Select = Template.bind({})
 export const Disabled = Template.bind({})
 Disabled.args = { disabled: true }
 
-export const ReadOnly = Template.bind({})
-ReadOnly.args = { readOnly: true }
-
 export const LongOptionString = () => (
   <Box width={[1, 320]}>
     <Label htmlFor='cabinClass'>Cabin Class</Label>
@@ -40,10 +40,6 @@ export const LongOptionString = () => (
     </Select>
   </Box>
 )
-
-LongOptionString.story = {
-  name: 'long option string',
-}
 
 export const HiddenLabel = () => (
   <Box width={[1, 320]}>
@@ -58,10 +54,6 @@ export const HiddenLabel = () => (
     </Select>
   </Box>
 )
-
-HiddenLabel.story = {
-  name: 'hidden label',
-}
 
 export function ForwardRefs() {
   function refChild(dsRef) {
@@ -83,8 +75,4 @@ export function ForwardRefs() {
     )
   }
   return <ForwardRefDemo refChild={refChild} />
-}
-
-ForwardRefs.story = {
-  name: 'Forward refs',
 }

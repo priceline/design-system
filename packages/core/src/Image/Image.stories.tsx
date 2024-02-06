@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
+import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
+import { Box } from '../Box/Box'
 import {
   DocTable,
   Hero,
@@ -10,19 +12,18 @@ import {
   StoryStage,
   TableOfContents,
 } from '../DocsUtils'
-import React from 'react'
-import { Image, Text, ThemeProvider, Box } from '..'
-import type { IImageProps } from './Image'
-import { argTypes } from './Image.stories.args'
-
-import heroImage from './Image.Image.Hero.png'
+import { Text } from '../Text/Text'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
+import { Image, type ImageProps } from './Image'
 import contentAlignmentFormatingImage from './Image.Image.ContentAlignmentFormating.png'
+import heroImage from './Image.Image.Hero.png'
 import logoImage from './Image.Image.Logo.png'
 import maintainingAspectRatioImage from './Image.Image.MaintainingAspectRatio.png'
-import responsiveVariableWidthsImage from './Image.Image.ResponsiveVariableWidths.png'
 import relatedComponentsImage from './Image.Image.RelatedComponents.png'
+import responsiveVariableWidthsImage from './Image.Image.ResponsiveVariableWidths.png'
+import { argTypes } from './Image.stories.args'
 
-type ImageStory = StoryObj<IImageProps>
+type ImageStory = StoryObj<ImageProps>
 
 const imageSrc =
   'https://www.goodfreephotos.com/albums/new-zealand/other-new-zealand/lake-pukaki-and-mount-cook-in-the-background.jpg'

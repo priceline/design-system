@@ -1,22 +1,20 @@
-import React, { useRef, useEffect } from 'react'
-import PropTypes from 'prop-types'
-import { Box } from '..'
+import React, { useEffect, useRef } from 'react'
+import { Box, type BoxProps } from '../Box/Box'
 import { RenderInView } from './RenderInView'
 import { SlideWrapper } from './SlideBox.styled'
 
-interface ISlideProps {
-  onSlideChange: PropTypes.func
-  slideSpacing: PropTypes.number
-  stretchHeight: PropTypes.bool
-  index: PropTypes.number
-  content: PropTypes.node
-  isCurrentSlide: PropTypes.bool
-  width: PropTypes.any
-  numSlides: PropTypes.number
-  slideBoxRef: PropTypes.any
+export type SlideProps = BoxProps & {
+  onSlideChange: (index: number, numSlides: number) => void
+  slideSpacing: number
+  stretchHeight: boolean
+  index: number
+  content?: React.JSX.Element
+  isCurrentSlide: boolean
+  numSlides: number
+  slideBoxRef: React.RefObject<HTMLDivElement>
 }
 
-const Slide: React.FC<ISlideProps> = ({
+export function Slide({
   onSlideChange,
   slideSpacing,
   stretchHeight,
@@ -26,7 +24,7 @@ const Slide: React.FC<ISlideProps> = ({
   width,
   numSlides,
   slideBoxRef,
-}) => {
+}: SlideProps): JSX.Element {
   const ref = useRef()
 
   useEffect(() => {
@@ -48,23 +46,11 @@ const Slide: React.FC<ISlideProps> = ({
           ml={index === 0 ? 0 : slideSpacing}
           mr={index === numSlides - 1 ? 0 : slideSpacing}
         >
-          {stretchHeight ? React.cloneElement(content, { style: { 'min-height': '100%' } }) : content}
+          {stretchHeight && React.isValidElement(content)
+            ? React.cloneElement(content, { style: { 'min-height': '100%' } })
+            : content}
         </Box>
       </RenderInView>
     </SlideWrapper>
   )
 }
-
-Slide.propTypes = {
-  onSlideChange: PropTypes.func,
-  slideSpacing: PropTypes.number,
-  stretchHeight: PropTypes.bool,
-  index: PropTypes.number,
-  content: PropTypes.node,
-  isCurrentSlide: PropTypes.bool,
-  width: PropTypes.any,
-  numSlides: PropTypes.number,
-  slideBoxRef: PropTypes.any,
-}
-
-export { Slide }

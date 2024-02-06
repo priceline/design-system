@@ -1,6 +1,164 @@
 # Change Log - pcln-slider
 
-This log was last generated on Tue, 25 Jul 2023 15:57:05 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Feb 2024 21:51:20 GMT and should not be manually modified.
+
+## 6.0.4
+Mon, 05 Feb 2024 21:51:20 GMT
+
+_Version update only_
+
+## 6.0.3
+Tue, 30 Jan 2024 20:31:23 GMT
+
+_Version update only_
+
+## 6.0.2
+Mon, 22 Jan 2024 16:15:34 GMT
+
+_Version update only_
+
+## 6.0.1
+Mon, 22 Jan 2024 14:06:39 GMT
+
+_Version update only_
+
+## 6.0.0
+Fri, 12 Jan 2024 16:09:00 GMT
+
+### Breaking changes
+
+- React 18 upgrade
+
+### Minor changes
+
+- Upgrade all @rushstack dependencies to latest
+
+## 5.2.31
+Mon, 11 Dec 2023 16:41:10 GMT
+
+_Version update only_
+
+## 5.2.30
+Thu, 07 Dec 2023 17:59:07 GMT
+
+_Version update only_
+
+## 5.2.29
+Thu, 30 Nov 2023 15:11:14 GMT
+
+_Version update only_
+
+## 5.2.28
+Mon, 27 Nov 2023 22:06:22 GMT
+
+_Version update only_
+
+## 5.2.27
+Tue, 21 Nov 2023 21:18:48 GMT
+
+_Version update only_
+
+## 5.2.26
+Mon, 20 Nov 2023 16:01:48 GMT
+
+_Version update only_
+
+## 5.2.25
+Wed, 15 Nov 2023 16:54:32 GMT
+
+_Version update only_
+
+## 5.2.24
+Mon, 13 Nov 2023 19:10:51 GMT
+
+_Version update only_
+
+## 5.2.23
+Tue, 07 Nov 2023 22:14:21 GMT
+
+_Version update only_
+
+## 5.2.22
+Thu, 02 Nov 2023 19:24:44 GMT
+
+_Version update only_
+
+## 5.2.21
+Tue, 31 Oct 2023 23:55:47 GMT
+
+_Version update only_
+
+## 5.2.20
+Tue, 31 Oct 2023 16:34:17 GMT
+
+_Version update only_
+
+## 5.2.19
+Mon, 16 Oct 2023 17:31:18 GMT
+
+_Version update only_
+
+## 5.2.18
+Mon, 25 Sep 2023 17:18:04 GMT
+
+_Version update only_
+
+## 5.2.17
+Fri, 22 Sep 2023 18:13:30 GMT
+
+_Version update only_
+
+## 5.2.16
+Fri, 22 Sep 2023 14:37:35 GMT
+
+_Version update only_
+
+## 5.2.15
+Wed, 20 Sep 2023 18:06:28 GMT
+
+_Version update only_
+
+## 5.2.14
+Mon, 18 Sep 2023 18:48:01 GMT
+
+_Version update only_
+
+## 5.2.13
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Patches
+
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
+
+## 5.2.12
+Wed, 23 Aug 2023 18:39:11 GMT
+
+_Version update only_
+
+## 5.2.11
+Wed, 23 Aug 2023 16:19:14 GMT
+
+_Version update only_
+
+## 5.2.10
+Mon, 21 Aug 2023 19:12:20 GMT
+
+_Version update only_
+
+## 5.2.9
+Thu, 10 Aug 2023 14:28:26 GMT
+
+_Version update only_
+
+## 5.2.8
+Wed, 09 Aug 2023 15:37:24 GMT
+
+_Version update only_
+
+## 5.2.7
+Mon, 31 Jul 2023 13:51:05 GMT
+
+_Version update only_
 
 ## 5.2.6
 Tue, 25 Jul 2023 15:57:05 GMT

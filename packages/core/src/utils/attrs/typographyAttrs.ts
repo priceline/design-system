@@ -34,6 +34,17 @@ export const textStylesValues = [
 
 export const textTransformValues = ['capitalize', 'lowercase', 'none', 'uppercase']
 
+export const textWrapValues = [
+  'balance',
+  'inherit',
+  'initial',
+  'nowrap',
+  'revert',
+  'revert-layer',
+  'unset',
+  'wrap',
+]
+
 export function typographyAttrs(props) {
   const { textStyle, theme } = props
 

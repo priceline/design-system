@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper renders with children 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #0068ef;
-  margin-right: 4px;
-  width: 16px;
-}
-
-.c6 {
-  outline: none;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -37,20 +23,18 @@ exports[`Stepper renders with children 1`] = `
   justify-content: center;
 }
 
-.c7 {
+.c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
   color: #0068ef;
-  font-size: 14px;
+  margin-right: 4px;
+  width: 16px;
 }
 
-.c8 {
-  color: #0068ef;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.c9 {
-  color: #4f6f8f;
-  font-size: 14px;
+.c6 {
+  outline: none;
 }
 
 .c2 {
@@ -89,6 +73,22 @@ exports[`Stepper renders with children 1`] = `
   cursor: not-allowed;
   color: #4f6f8f;
   background-color: #edf0f3;
+}
+
+.c7 {
+  color: #0068ef;
+  font-size: 14px;
+}
+
+.c8 {
+  color: #0068ef;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.c9 {
+  color: #4f6f8f;
+  font-size: 14px;
 }
 
 .c3 {

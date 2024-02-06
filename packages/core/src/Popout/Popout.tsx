@@ -1,8 +1,9 @@
 import React, { RefObject, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
-import { Box, ShadowOverlay } from '..'
+import { Box } from '../Box/Box'
+import { ShadowOverlay } from '../ShadowEffect/ShadowEffect'
 
-export interface IPopoutProps {
+export interface PopoutProps {
   trigger: JSX.Element
   content?: JSX.Element | undefined
   triggerRef?: RefObject<HTMLElement>
@@ -30,7 +31,7 @@ const PopoutModal = styled(Box)`
   transition: padding 200ms ease-in-out, margin 200ms ease-in-out, border-radius 200ms ease-in-out;
 `
 
-export const Popout = (props: IPopoutProps) => {
+export function Popout(props: PopoutProps) {
   const { trigger, content, onOpen, onClose, triggerRef, closeOnTriggerRefClick } = props
   const [isOpen, setIsOpen] = useState(false)
   const [height, setHeight] = useState(0)

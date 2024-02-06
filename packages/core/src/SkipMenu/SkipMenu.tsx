@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-import { Flex } from '../Flex'
-import { Link } from '../Link'
-import { SrOnly } from '../SrOnly'
+import { Flex } from '../Flex/Flex'
+import { Link } from '../Link/Link'
+import { SrOnly } from '../SrOnly/SrOnly'
 
 /*
  * :focus-within property not supported on ie11
@@ -20,17 +19,12 @@ const OffScreenPanel = styled(SrOnly)`
   }
 `
 
-const propTypes = {
-  className: PropTypes.string,
-  skipLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string,
-      targetId: PropTypes.string,
-    })
-  ),
+export type SkipMenuProps = {
+  className?: string
+  skipLinks?: { label: string; targetId: string }[]
 }
 
-const SkipMenu: React.FC<InferProps<typeof propTypes>> = ({ className, skipLinks, ...props }) => {
+export function SkipMenu({ className, skipLinks, ...props }: SkipMenuProps) {
   if (!skipLinks?.length) return null
   return (
     <OffScreenPanel data-testid='skip-menu' as={Flex} className={className} {...props}>
@@ -44,7 +38,3 @@ const SkipMenu: React.FC<InferProps<typeof propTypes>> = ({ className, skipLinks
 }
 
 SkipMenu.displayName = 'SkipMenu'
-
-SkipMenu.propTypes = propTypes
-
-export default SkipMenu

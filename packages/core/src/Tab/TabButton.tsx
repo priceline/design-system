@@ -1,8 +1,8 @@
-import { Text } from '../Text'
+import { Text } from '../Text/Text'
 import React from 'react'
 import { TabTriggerButton } from './Tab.styled'
-import { Flex } from '../Flex'
-import { Box } from '../Box'
+import { Flex } from '../Flex/Flex'
+import { Box } from '../Box/Box'
 export const TabButton = ({ hasHover, type, tab, index, value }) => {
   const [isHover, setIsHover] = React.useState(false)
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
-import { BackgroundImage, theme } from '..'
+import { theme } from '../theme/theme'
+import { BackgroundImage } from './BackgroundImage'
 
 describe('BackgroundImage', () => {
   test('renders', () => {

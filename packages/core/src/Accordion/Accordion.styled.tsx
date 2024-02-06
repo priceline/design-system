@@ -1,8 +1,12 @@
 import * as Accordion from '@radix-ui/react-accordion'
 import { themeGet } from '@styled-system/theme-get'
-import styled, { keyframes } from 'styled-components'
 import { ChevronDown } from 'pcln-icons'
-import { Box, borderRadiusAttrs, getPaletteColor } from '..'
+import styled, { keyframes } from 'styled-components'
+import { space } from 'styled-system'
+import { Box } from '../Box/Box'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { getPaletteColor } from '../utils/utils'
+import { AccordionProps } from './Accordion'
 
 const slideDown = keyframes`
   from {
@@ -22,9 +26,20 @@ const slideUp = keyframes`
   }
 `
 
+export const StyledAccordionRoot = styled(Accordion.Root)<AccordionProps>`
+  ${(props) =>
+    props.variation === 'ladder'
+      ? `
+      overflow: hidden;
+      box-shadow: ${themeGet('shadows.sm')(props)};
+      border-radius: ${themeGet('borderRadii.lg')(props)};
+    `
+      : ''}
+`
+
 export const StyledContent = styled(Accordion.Content)`
   overflow: hidden;
-  padding: 12px;
+  ${space}
   background-color: ${(props) =>
     props.variation === 'default' ? getPaletteColor('background.light')(props) : '#fff'};
   &[data-state='open'] {
@@ -49,9 +64,14 @@ export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
     ${(props) =>
       props.variation === 'flatCard' ? `background-color: ${getPaletteColor('background.light')(props)}` : ''}
   }
-  border-top-left-radius: ${themeGet('borderRadii.lg')};
-  border-top-right-radius: ${themeGet('borderRadii.lg')};
-  padding: 12px;
+  ${(props) =>
+    props.variation === 'ladder'
+      ? ''
+      : `
+    border-top-left-radius: ${themeGet('borderRadii.lg')};
+    border-top-right-radius: ${themeGet('borderRadii.lg')};
+  `}
+  ${space}
   ${(props) =>
     `border-bottom: 1px solid ${
       props.variation === 'underline' ? getPaletteColor('border.base')(props) : 'transparent'
@@ -100,8 +120,14 @@ export const IconContainer = styled(Box)`
   }
 `
 
-export const StyledItem = styled(Box)`
-  box-shadow: ${(props) => (props.variation === 'card' ? themeGet('shadows.sm') : '')};
+export interface IStyledItem {
+  variation: string
+  headerBg?: string
+  headerDividerColor?: string
+}
+
+export const StyledItem = styled(Box)<IStyledItem>`
+  ${(props) => (['card', 'flatCard'].includes(props.variation) ? 'border: solid 1px transparent;' : '')}
   ${(props) =>
     props.variation === 'default' ? `background-color: ${getPaletteColor('background.light')(props)};` : ''}
   ${(props) =>
@@ -109,16 +135,52 @@ export const StyledItem = styled(Box)`
       ? `background-color: ${getPaletteColor('primary.base')(props)};
       border: 1px solid ${getPaletteColor('primary.base')(props)};`
       : ''}
+  ${(props) =>
+    props.variation === 'ladder'
+      ? `background-color: ${getPaletteColor(props.headerBg || 'background.light')(props)};
+        ${
+          props.headerDividerColor
+            ? `border-top: solid ${getPaletteColor(props.headerDividerColor)(props)} 1px;`
+            : ''
+        }
+        border-radius: 0px; margin-bottom: 0px;
+        `
+      : ''}
+
   &[data-state='open'],
   &:hover {
-    box-shadow: ${(props) =>
-      props.variation === 'card' || props.variation === 'flatCard' ? themeGet('shadows.xl') : ''};
+    ${(props) =>
+      ['card', 'flatCard'].includes(props.variation)
+        ? `
+        border-color: ${getPaletteColor('border.base')(props)};
+        box-shadow: none;
+        `
+        : ''}
   }
+
   &[data-state='closed'] {
     ${(props) =>
       props.variation === 'underline'
-        ? `border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;`
+        ? `
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;`
         : ''}
+    ${(props) =>
+      ['card'].includes(props.variation)
+        ? `
+          box-shadow: ${themeGet('shadows.sm')(props)}; 
+          border-color: transparent;
+        `
+        : ''}
+    
+    &:hover {
+      ${(props) =>
+        ['card', 'flatCard'].includes(props.variation)
+          ? `
+            box-shadow: ${themeGet('shadows.xl')(props)};
+            border-color: transparent;
+          `
+          : ''}
+    }
   }
 `

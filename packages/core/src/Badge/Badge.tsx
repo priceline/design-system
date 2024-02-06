@@ -1,19 +1,9 @@
-import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
 import themeGet from '@styled-system/theme-get'
-import styledSystemPropTypes from '@styled-system/prop-types'
-import {
-  applySizes,
-  applyVariations,
-  borderRadiusAttrs,
-  color,
-  colorScheme,
-  deprecatedColorValue,
-  textTransform,
-  textTransformValues,
-} from '../utils'
-import { space, borderRadius, SpaceProps, compose } from 'styled-system'
-import type { ColorSchemeName } from '../theme'
+import styled, { css } from 'styled-components'
+import { SpaceProps, borderRadius, compose, space } from 'styled-system'
+import type { ColorSchemeName } from '../theme/theme'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { applySizes, applyVariations, color, colorScheme, textTransform } from '../utils/utils'
 
 const type = (props) => {
   const badgeColors = {
@@ -74,16 +64,17 @@ const letterSpacing = (props) => {
     : { letterSpacing: themeGet('letterSpacings.caps')(props) }
 }
 
-export interface IBadgeProps extends SpaceProps, React.HtmlHTMLAttributes<HTMLElement> {
-  size?: 'small' | 'medium'
-  color?: string
-  bg?: string
-  borderRadius?: string
-  colorScheme?: ColorSchemeName
-  textTransform?: string
-}
+export type BadgeProps = SpaceProps &
+  React.HtmlHTMLAttributes<HTMLElement> & {
+    size?: 'small' | 'medium'
+    color?: string
+    bg?: string
+    borderRadius?: string
+    colorScheme?: ColorSchemeName
+    textTransform?: string
+  }
 
-const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
+export const Badge: React.FC<BadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-block;
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
@@ -98,15 +89,6 @@ const Badge: React.FC<IBadgeProps> = styled.div.attrs(borderRadiusAttrs)`
 
 Badge.displayName = 'Badge'
 
-Badge.propTypes = {
-  ...styledSystemPropTypes.space,
-  size: PropTypes.oneOf(Object.keys(sizes)),
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
-  borderRadius: PropTypes.string,
-  textTransform: PropTypes.oneOf(textTransformValues),
-}
-
 Badge.defaultProps = {
   size: 'medium',
   px: 2,
@@ -114,5 +96,3 @@ Badge.defaultProps = {
   borderRadius: 'full',
   textTransform: 'uppercase',
 }
-
-export default Badge

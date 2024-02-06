@@ -58,4 +58,30 @@ describe('PopoverContent', () => {
     const { queryByTestId } = render(<PopoverContent hideOverlay renderContent={() => 'Content'} />)
     expect(queryByTestId('__pcln-popover_Overlay')).not.toBeInTheDocument()
   })
+
+  it('Using different portal', () => {
+    const Wrapper = () => (
+      <>
+        <PopoverContent renderContent={() => 'Content'} querySelectorPortal='.wrapper' />
+        <div className='wrapper'></div>
+      </>
+    )
+    render(<Wrapper />)
+    const container = document.querySelector('.wrapper > [role="dialog"]')
+    expect(container).toBeInTheDocument()
+  })
+
+  it('Using different portal fallback to a body', () => {
+    const Wrapper = () => (
+      <>
+        <PopoverContent renderContent={() => 'Content'} querySelectorPortal='.wrong-wrapper' />
+        <div className='wrapper'></div>
+      </>
+    )
+    render(<Wrapper />)
+    const container = document.querySelector('.wrapper > [role="dialog"]')
+    expect(container).not.toBeInTheDocument()
+    const bodyContainer = document.querySelector('body > [role="dialog"]')
+    expect(bodyContainer).toBeInTheDocument()
+  })
 })

@@ -1,17 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Flex } from '../Flex'
-import { Arrow } from './Arrow'
+import { Flex } from '../Flex/Flex'
+import { Arrow, type ArrowPosition, type ArrowProps } from './Arrow'
 import { AbsoluteTransformLeft } from './Arrow.styled'
-import { arrowPropTypes } from './Arrow'
-import { ITArrowProps } from './Arrow'
 
-export interface ITTopArrowProps {
-  arrowPosition: 'top' | 'bottom' | 'side' | 'hide'
-  arrowProps: ITArrowProps
+export type TopArrowsProps = {
+  arrowPosition: ArrowPosition
+  arrowProps: ArrowProps
 }
 
-const TopArrows: React.FC<ITTopArrowProps> = ({ arrowPosition, arrowProps }) => {
+export function TopArrows({ arrowPosition, arrowProps }: TopArrowsProps): JSX.Element {
   const isSide = arrowPosition === 'side'
   const Wrapper = isSide ? AbsoluteTransformLeft : Flex
   return ['top', 'side'].includes(arrowPosition) ? (
@@ -26,10 +23,3 @@ const TopArrows: React.FC<ITTopArrowProps> = ({ arrowPosition, arrowProps }) => 
     </Wrapper>
   ) : null
 }
-
-TopArrows.propTypes = {
-  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
-  arrowProps: PropTypes.shape(arrowPropTypes),
-}
-
-export { TopArrows }

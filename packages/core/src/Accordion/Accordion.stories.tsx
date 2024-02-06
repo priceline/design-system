@@ -1,14 +1,22 @@
-import React, { useState } from 'react'
-import Accordion from '.'
-import { Flex, Button, Text } from '..'
 import { expect } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
+import { userEvent, within } from '@storybook/testing-library'
+import React, { useState } from 'react'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { theme } from '../theme/theme'
+import { Accordion } from './Accordion'
 
 export default {
   title: 'Accordion',
   component: Accordion,
   argTypes: {
     onToggle: { action: true },
+    p: {
+      options: theme.space,
+      control: { type: 'select' },
+      description: 'Padding for the content and header sections',
+    },
   },
 }
 
@@ -61,12 +69,12 @@ export const Basic = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
     const headerLabel = canvas.getByText('Header Label First Item')
-    expect(args.onToggle).not.toHaveBeenCalled()
-    expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
+    await expect(args.onToggle).not.toHaveBeenCalled()
+    await expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
     await userEvent.click(headerLabel)
-    setTimeout(() => {
-      expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
-      expect(args.onToggle).toHaveBeenCalled()
+    setTimeout(async () => {
+      await expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
+      await expect(args.onToggle).toHaveBeenCalled()
     }, 350)
   },
   render: (args) => <Accordion {...args} items={items} />,
@@ -76,7 +84,28 @@ export const Underlined = { render: (args) => <Accordion {...args} items={items}
 
 export const Hug = { render: (args) => <Accordion {...args} items={items} variation='hug' /> }
 
+export const Ladder = {
+  render: (args) => (
+    <Accordion
+      {...args}
+      headerDividerColor='border.base'
+      items={[
+        {
+          ...items[0],
+          headerBg: 'success.light',
+        },
+        { ...items[1] },
+      ]}
+      variation='ladder'
+    />
+  ),
+}
+
 export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
+
+export const ItemStatePropCard = {
+  render: (args) => <Accordion {...args} items={items} variation='card' itemsState={['item-1', 'item-2']} />,
+}
 
 export const FlatCard = { render: (args) => <Accordion {...args} items={items} variation='flatCard' /> }
 
@@ -92,12 +121,20 @@ export const TrackStateMultiple = {
     return (
       <>
         <Text>Items Open: {itemsState.join(', ')}</Text>
+        <Button
+          onClick={() => {
+            setItemsState([])
+          }}
+        >
+          Collapse all items
+        </Button>
         <Accordion
           {...args}
           items={items}
           itemsState={itemsState}
+          isExternallyControlled
           onToggle={(newItemsState) => {
-            setItemsState(newItemsState)
+            setItemsState(newItemsState as string[])
             console.log('previousState:', itemsState, 'newState:', newItemsState)
           }}
         />
@@ -110,16 +147,16 @@ export const TrackStateSingular = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const headerLabel = canvas.getByText('Header Label First Item')
-    expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
-    expect(canvas.queryAllByText('I am secondary content')).toHaveLength(3)
-    expect(canvas.queryByText('Item Open: item-1')).toBeFalsy()
-    expect(canvas.queryByText('Item Open: item-2')).toBeTruthy()
+    await expect(canvas.queryAllByText('I am some content')).toHaveLength(0)
+    await expect(canvas.queryAllByText('I am secondary content')).toHaveLength(3)
+    await expect(canvas.queryByText('Item Open: item-1')).toBeFalsy()
+    await expect(canvas.queryByText('Item Open: item-2')).toBeTruthy()
     await userEvent.click(headerLabel)
-    setTimeout(() => {
-      expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
-      expect(canvas.queryAllByText('I am secondary content')).toHaveLength(0)
-      expect(canvas.queryByText('Item Open: item-1')).toBeTruthy()
-      expect(canvas.queryByText('Item Open: item-2')).toBeFalsy()
+    setTimeout(async () => {
+      await expect(canvas.queryAllByText('I am some content')).toHaveLength(3)
+      await expect(canvas.queryAllByText('I am secondary content')).toHaveLength(0)
+      await expect(canvas.queryByText('Item Open: item-1')).toBeTruthy()
+      await expect(canvas.queryByText('Item Open: item-2')).toBeFalsy()
     }, 350)
   },
   render: (args) => {
@@ -132,7 +169,7 @@ export const TrackStateSingular = {
           items={items}
           itemsState={itemsState}
           onToggle={(newItemsState) => {
-            setItemsState(newItemsState)
+            setItemsState(newItemsState as string)
             console.log('previousState:', itemsState, 'newState:', newItemsState)
           }}
           type='single'

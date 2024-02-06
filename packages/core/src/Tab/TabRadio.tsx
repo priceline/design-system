@@ -1,10 +1,11 @@
 import React from 'react'
-import { Label } from '../Label'
-import { Radio } from '../Radio'
+import { Label } from '../Label/Label'
+import { Radio } from '../Radio/Radio'
 import { TabTriggerRadio } from './Tab.styled'
-import { Box } from '../Box'
+import { Box } from '../Box/Box'
 
 export const TabRadio = ({ hasHover, tab, index, isActive, setIsActive, value }) => {
+  console.log(index)
   const tabRef = React.useRef(null)
   const [isChecked, setIsChecked] = React.useState(isActive === true)
   React.useEffect(() => {

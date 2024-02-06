@@ -1,4 +1,5 @@
-import { createPalette, createTheme } from '.'
+import { createPalette } from './createPalette'
+import { createTheme } from './createTheme'
 
 describe('createPalette', () => {
   it('should return a palette', () => {

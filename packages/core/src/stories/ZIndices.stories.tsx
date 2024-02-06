@@ -1,17 +1,13 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import {
-  Box,
-  Divider,
-  Flex,
-  Input,
-  ShadowEffect,
-  ShadowOverlay,
-  Text,
-  createTheme,
-  getPaletteColor,
-} from '..'
+import { Box } from '../Box/Box'
+import { Divider } from '../Divider/Divider'
+import { Flex } from '../Flex/Flex'
+import { Input } from '../Input/Input'
+import { ShadowEffect, ShadowOverlay } from '../ShadowEffect/ShadowEffect'
+import { Text } from '../Text/Text'
+import { createTheme } from '../utils/createTheme'
+import { getPaletteColor } from '../utils/utils'
 
 const LightBackgroundInput = styled(Input)`
   background-color: ${getPaletteColor('background.lightest')};

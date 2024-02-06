@@ -1,25 +1,62 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import { Close } from 'pcln-icons'
-import { IconButton } from '../IconButton'
+import React, { MouseEventHandler, useState } from 'react'
+import { Relative } from '../Relative/Relative'
+import { type BoxShadowSize, type IStyledSystemProps, type PaletteColor } from '../theme/theme'
+import {
+  BackgroundAnimation,
+  CloseButtonSize,
+  CloseButtonVariant,
+  CloseIcon,
+  MotionButton,
+  closeButtonVariantProps,
+} from './CloseButton.styled'
 
-const propTypes = {
-  onClick: PropTypes.func,
-  size: PropTypes.number,
-  title: PropTypes.string,
+export type CloseButtonProps = IStyledSystemProps & {
+  animate?: boolean
+  bgColor?: PaletteColor
+  boxShadowSize?: BoxShadowSize
+  className?: string
+  color?: PaletteColor
+  onClick?: MouseEventHandler<HTMLButtonElement>
+  size?: CloseButtonSize
+  title?: string
+  variant?: CloseButtonVariant
 }
 
-const CloseButton: React.FC<InferProps<typeof propTypes>> = (props) => (
-  <IconButton {...props} icon={<Close size={props.size} />} />
-)
+export const CloseButton = ({
+  animate = true,
+  bgColor,
+  boxShadowSize,
+  className,
+  color,
+  onClick,
+  size = 'md',
+  title = 'close',
+  variant,
+  ...props
+}: CloseButtonProps) => {
+  const [hover, setHover] = useState(false)
 
-CloseButton.defaultProps = {
-  size: 24,
-  title: 'close',
+  return (
+    <Relative>
+      <MotionButton
+        bgColor={bgColor}
+        boxShadowSize={boxShadowSize}
+        className={className}
+        color={color}
+        onHoverEnd={() => setHover(false)}
+        onHoverStart={() => setHover(true)}
+        variant={variant}
+        size={size}
+        onClick={onClick}
+        title={title}
+        {...closeButtonVariantProps[variant]}
+        {...props}
+      >
+        {animate && variant !== 'filled' && (
+          <BackgroundAnimation initial={{ scale: 0 }} animate={hover ? { scale: 1 } : { scale: 0 }} />
+        )}
+        <CloseIcon size={size} />
+      </MotionButton>
+    </Relative>
+  )
 }
-
-CloseButton.propTypes = {}
-
-CloseButton.displayName = 'CloseButton'
-
-export default CloseButton

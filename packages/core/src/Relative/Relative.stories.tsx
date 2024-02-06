@@ -1,6 +1,11 @@
-import React from 'react'
-import { Absolute, Card, Flag, Image, Relative, Text } from '..'
 import { Close as CloseIcon } from 'pcln-icons'
+import React from 'react'
+import { Absolute } from '../Absolute/Absolute'
+import { Card } from '../Card/Card'
+import { Flag } from '../Flag/Flag'
+import { Image } from '../Image/Image'
+import { Relative } from '../Relative/Relative'
+import { Text } from '../Text/Text'
 
 export default {
   title: 'Relative',
@@ -15,10 +20,6 @@ export const AroundAnImageAndAnAbsolutelyPositionedFlag = () => (
     <Image src='https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg' />
   </Relative>
 )
-
-AroundAnImageAndAnAbsolutelyPositionedFlag.story = {
-  name: 'Around an Image and an absolutely positioned Flag',
-}
 
 export const AroundTextAndAnAbsolutelyPositionedIcon = () => (
   <Card m={2}>
@@ -36,7 +37,3 @@ export const AroundTextAndAnAbsolutelyPositionedIcon = () => (
     </Relative>
   </Card>
 )
-
-AroundTextAndAnAbsolutelyPositionedIcon.story = {
-  name: 'Around Text and an absolutely positioned Icon',
-}

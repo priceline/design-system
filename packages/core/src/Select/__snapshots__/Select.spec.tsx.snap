@@ -38,27 +38,26 @@ exports[`Select renders 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
   background-color: transparent;
   border-radius: 12px;
-  border-width: 1px;
   border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
+  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
-  border-radius: 12px;
 }
 
 .c2::-ms-expand {
   display: none;
 }
 
-.c2:disabled,
-.c2[readOnly] {
+.c2:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;

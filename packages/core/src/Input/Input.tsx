@@ -1,26 +1,18 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {
-  space,
-  fontSize,
-  borderRadius,
-  zIndex,
-  SpaceProps,
   FontSizeProps,
+  SpaceProps,
   ZIndexProps,
+  borderRadius,
   compose,
+  fontSize,
+  space,
+  zIndex,
 } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
-import PropTypes from 'prop-types'
-import { Text, ITextProps } from '../Text'
-import {
-  applyVariations,
-  getPaletteColor,
-  borders,
-  deprecatedColorValue,
-  borderRadiusAttrs,
-  applySizes,
-} from '../utils'
+import { Text, type TextProps } from '../Text/Text'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
+import { applySizes, applyVariations, borders, getPaletteColor } from '../utils/utils'
 
 const sizes = {
   sm: css`
@@ -57,8 +49,7 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
     display: none;
   }
 
-  &:disabled,
-  &:read-only {
+  &:disabled {
     background-color: ${getPaletteColor('background.light')};
     color: ${getPaletteColor('text.light')};
     cursor: not-allowed;
@@ -73,36 +64,24 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
 
-const inputPropTypes = {
-  id: PropTypes.string.isRequired,
-  color: deprecatedColorValue(),
-  /**
-   * Display text below the input and set error color on input
-   */
-  size: PropTypes.oneOf(Object.keys(sizes)),
-  helperText: PropTypes.node,
-  ...propTypes.space,
-  ...propTypes.fontSize,
-}
+export type InputProps = SpaceProps &
+  FontSizeProps &
+  ZIndexProps &
+  Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> &
+  React.RefAttributes<HTMLInputElement> & {
+    children?: React.ReactNode
+    onChange?: (unknown) => unknown
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    helperText?: React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    color?: string
+    size?: 'sm' | 'md' | 'lg' | 'xl'
+    borderRadius?: string
+  }
 
-export interface IInputProps
-  extends SpaceProps,
-    FontSizeProps,
-    ZIndexProps,
-    Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>,
-    React.RefAttributes<HTMLInputElement> {
-  onChange?: (unknown) => unknown
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  helperText?: React.ReactElement<any, string | React.JSXElementConstructor<any>>
-  color?: string
-  size?: 'sm' | 'md' | 'lg' | 'xl'
-  borderRadius?: string
-}
-
-export const Input: React.FC<IInputProps> & {
+export const Input: React.FC<InputProps> & {
   isField?: boolean
-  HelperText?: React.FC<ITextProps>
-} = React.forwardRef((props: IInputProps, ref) => {
+  HelperText?: React.FC<TextProps>
+} = React.forwardRef((props: InputProps, ref) => {
   const { helperText, color, ...restProps } = props
   return (
     <>
@@ -115,12 +94,16 @@ export const Input: React.FC<IInputProps> & {
   )
 })
 
-const HelperText = styled(Text).attrs(() => ({
+const HelperText: React.FC<InputHelperTextProps> = styled(Text).attrs(() => ({
   mt: 2,
   fontSize: 1,
 }))``
 
-Input.HelperText = (props) => <HelperText {...props}>{props.children}</HelperText>
+export type InputHelperTextProps = TextProps & {
+  children?: React.ReactNode
+}
+
+Input.HelperText = (props: InputHelperTextProps) => <HelperText {...props}>{props.children}</HelperText>
 
 Input.HelperText.displayName = INPUT_ERROR_TEXT
 
@@ -131,6 +114,3 @@ Input.defaultProps = {
   borderRadius: 'lg',
   size: 'lg',
 }
-Input.propTypes = inputPropTypes
-
-export default Input

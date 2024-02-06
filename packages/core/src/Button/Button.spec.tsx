@@ -1,13 +1,11 @@
-import React from 'react'
-import { render } from '../__test__/testing-library'
-
-import styled from 'styled-components'
 import { User } from 'pcln-icons'
-
-import { Button, createTheme } from '..'
-
-import { borderRadii as borderRadius, shadows } from '../theme'
-import { boxShadowSizeValues } from '../utils'
+import React from 'react'
+import styled from 'styled-components'
+import { render } from '../__test__/testing-library'
+import { borderRadii as borderRadius, shadows } from '../theme/theme'
+import { boxShadowSizeValues } from '../utils/attrs/boxShadowAttrs'
+import { createTheme } from '../utils/createTheme'
+import { Button } from './Button'
 
 const theme = createTheme()
 
@@ -331,7 +329,6 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('font-weight', '500')
         expect(button).toHaveStyleRule('line-height', '1.4')
         expect(button).toHaveStyleRule('padding', '0px')
-        expect(button).toHaveStyleRule('background-color', 'transparent')
         expect(button).toHaveStyleRule('color', theme.palette.primary.dark, {
           modifier: ':hover',
         })
@@ -355,6 +352,7 @@ describe('Button', () => {
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
           modifier: ':disabled',
         })
+        expect(button).toHaveStyleRule('background-color', 'transparent')
       })
     })
 

@@ -15,6 +15,7 @@ export type MotionVariant =
   | 'fadeIn'
   // | 'schwoop'
   | 'growFromTopLeft'
+  | 'pulse'
   | 'scaleFromCenter'
   | 'scaleFromTopLeft'
   | 'scaleOnHover'
@@ -38,6 +39,11 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   growFromTopLeft: {
     initial: { scale: 0, originY: 0, originX: 0, width: 0, height: 0 },
     animate: { scale: 1, width: 'auto', height: 'auto' },
+  },
+  pulse: {
+    initial: { borderRadius: '100%', boxShadow: '0 0 0 0px rgba(0, 0, 0, 0.0)' },
+    animate: { boxShadow: '0 0 0 4px rgba(0, 0, 0, 0.3)' },
+    transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' },
   },
   scaleFromCenter: {
     initial: { scale: 0 },
@@ -63,14 +69,14 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   },
 }
 
-export interface IAnimateProps {
+export type AnimateProps = {
   children: React.ReactNode
   variant: MotionVariant
   transition?: TransitionVariant
   override?: HTMLMotionProps<'div'>
 }
 
-export const Animate = (props: IAnimateProps) => {
+export const Animate = (props: AnimateProps) => {
   const { children, variant, transition, override } = props
   return (
     <motion.div

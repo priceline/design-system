@@ -1,14 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { SpaceProps, FontSizeProps } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
 import { ChevronDown } from 'pcln-icons'
-
-import { ChipContent } from '../ChipContent'
+import React from 'react'
+import styled from 'styled-components'
+import { FontSizeProps, SpaceProps } from 'styled-system'
+import { Button } from '../../Button/Button'
+import { getPaletteColor } from '../../utils/utils'
+import { ChipContent, type IconComponent } from '../ChipContent/ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
-import { Button } from '../../Button'
-import { getPaletteColor } from '../../utils'
 
 const ChipButton = styled(Button)`
   background-color: transparent;
@@ -17,52 +14,57 @@ const ChipButton = styled(Button)`
   &:hover {
     background-color: transparent;
   }
-  &:focus {
+  &:focus-visible {
     box-shadow: none;
     outline-offset: 2px;
     outline: 3px solid ${getPaletteColor('base')};
   }
-  &:focus > ${ChipContentWrapper} {
+  &:focus-visible > ${ChipContentWrapper} {
     border-color: ${getPaletteColor('base')};
   }
 `
 
 const getTitle = ({ disabled, expanded }) => (disabled ? 'Disabled' : expanded ? 'Collapse' : 'Expand')
 
-const buttonChipPropTypes = {
-  ...propTypes.space,
-  ...propTypes.fontSize,
-  id: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-  disabled: PropTypes.bool,
-  expanded: PropTypes.bool,
-  facet: PropTypes.string,
-  label: PropTypes.string,
-  bridgeLabel: PropTypes.string,
-  BridgeIcon: PropTypes.node,
-  Icon: PropTypes.node,
-  showActionIcon: PropTypes.bool,
-  Image: PropTypes.object,
-}
+export type ButtonChipVariation = 'outline' | 'shadow'
 
-export interface IButtonChipProps extends SpaceProps, FontSizeProps {
-  Icon?: React.ReactNode | string
-  BridgeIcon?: React.ReactNode | string
-  selected?: boolean
-  disabled?: boolean
-  showActionIcon?: boolean
-  facet?: string
-  label?: string
-  bridgeLabel?: string
-  onClick?: (unknown) => unknown
-  expanded?: boolean
-  id?: string
-  color?: string
-  width?: string
-}
+export type ButtonChipProps = SpaceProps &
+  FontSizeProps & {
+    BridgeIcon?: IconComponent
+    bridgeLabel?: string
+    children?: React.ReactNode
+    color?: string
+    disabled?: boolean
+    expanded?: boolean
+    facet?: string
+    Icon?: IconComponent
+    id?: string
+    label?: string
+    selected?: boolean
+    showActionIcon?: boolean
+    onClick?: (unknown) => unknown
+    width?: string
+    variation?: ButtonChipVariation
+  }
 
-const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
-  ({ color, width, id, m, disabled, expanded, children, onClick, label, showActionIcon, ...props }, ref) => (
+export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef(
+  (
+    {
+      color,
+      width,
+      id,
+      m,
+      disabled,
+      expanded,
+      children,
+      onClick,
+      label,
+      showActionIcon,
+      variation,
+      ...props
+    },
+    ref
+  ) => (
     <ChipButton
       color={color}
       width={width}
@@ -84,6 +86,7 @@ const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
             title: getTitle({ disabled, expanded }),
           }
         }
+        variation={variation}
         {...props}
       >
         {children}
@@ -94,10 +97,7 @@ const ButtonChip: React.FC<IButtonChipProps> = React.forwardRef(
 
 ButtonChip.displayName = 'ButtonChip'
 
-ButtonChip.propTypes = buttonChipPropTypes
-
 ButtonChip.defaultProps = {
   color: 'primary',
+  variation: 'outline',
 }
-
-export default ButtonChip

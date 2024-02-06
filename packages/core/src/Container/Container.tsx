@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes, { InferProps } from 'prop-types'
-import { Box } from '..'
+import { Box } from '../Box/Box'
 
 const sizes = {
   sm: 640,
@@ -17,13 +16,15 @@ const paddings = {
   xl: [3, null, 4],
 }
 
-const propTypes = {
-  maxWidth: PropTypes.number,
-  // Set the max width and padding of the container. Do not use with maxWidth prop.
-  size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+export type ContainerSize = 'sm' | 'md' | 'lg' | 'xl'
+
+export type ContainerProps = {
+  children?: React.ReactNode
+  maxWidth?: number
+  size?: ContainerSize
 }
 
-const Container: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((props) => {
+export const Container: React.FC<ContainerProps> = styled(Box).attrs((props) => {
   if (props.size) {
     const px = paddings[props.size]
     const maxWidth = props.size ? `${sizes[props.size]}px` : props.maxWidth
@@ -37,8 +38,4 @@ const Container: React.FC<InferProps<typeof propTypes>> = styled(Box).attrs((pro
   width: 100%;
 `
 
-Container.propTypes = propTypes
-
 Container.displayName = 'Container'
-
-export { Container }

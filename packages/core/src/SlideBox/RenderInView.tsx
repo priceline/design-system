@@ -1,7 +1,4 @@
-/* istanbul ignore file */
-
 import React from 'react'
-import PropTypes from 'prop-types'
 import { InView } from 'react-intersection-observer'
 import styled from 'styled-components'
 
@@ -9,10 +6,18 @@ const FullHeightInView = styled(InView)`
   height: 100%;
 `
 
-const RenderInView = ({ children, onSlideChange, index, slideRef }) => {
+export type RenderInViewProps = {
+  children: React.ReactNode
+  onSlideChange: (index: number, numSlides: number) => void
+  index: number
+  slideRef?: React.RefObject<HTMLElement>
+}
+
+export function RenderInView({ children, onSlideChange, index, slideRef }: RenderInViewProps): JSX.Element {
   const slideVisible = (inView) => {
     if (inView) {
       const { offsetParent, offsetWidth } = slideRef?.current || {}
+      // @ts-ignore
       const numSlides = Math.round(offsetParent?.offsetWidth / offsetWidth)
       onSlideChange(index, numSlides)
     }
@@ -23,10 +28,3 @@ const RenderInView = ({ children, onSlideChange, index, slideRef }) => {
     </FullHeightInView>
   )
 }
-
-RenderInView.propTypes = {
-  onSlideChange: PropTypes.func,
-  index: PropTypes.number,
-}
-
-export { RenderInView }

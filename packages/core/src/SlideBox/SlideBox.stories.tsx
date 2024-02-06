@@ -1,12 +1,11 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import { action } from '@storybook/addon-actions'
+import React from 'react'
 import styled from 'styled-components'
-import { Card } from '../Card'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
-import { BackgroundImage } from '../BackgroundImage'
-import { Box } from '../Box'
+import { BackgroundImage } from '../BackgroundImage/BackgroundImage'
+import { Box } from '../Box/Box'
+import { Card } from '../Card/Card'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import { SlideBox } from './SlideBox'
 
 const ToutCard = styled(Card)`
@@ -18,11 +17,7 @@ export default {
   component: SlideBox,
 }
 
-const propTypes = {
-  index: PropTypes.number,
-}
-
-const TileContents: React.FC<InferProps<typeof propTypes>> = ({ index }) => (
+const TileContents = ({ index }: { index?: number }) => (
   <Box>
     <BackgroundImage height='190px' width='100%' image='https://cdn2.thecatapi.com/images/dnn.jpg' />
     <Flex color='background.lightest' p={[1, 1, 2, 2, 2, 3]}>
@@ -55,6 +50,7 @@ export const Default = () => (
       onSlideChange={action('Slide Change')}
       slideSpacing={2}
       stretchHeight
+      arrowPosition='side'
     >
       {Array.from(Array(20)).map((_, idx) => (
         <ToutCard
@@ -73,7 +69,12 @@ export const Default = () => (
 
 export const NoStrechHeight = () => (
   <Box m={3}>
-    <SlideBox visibleSlides={[1.2, 2.2, 3, 3, 4]} onSlideChange={action('Slide Change')} slideSpacing={2}>
+    <SlideBox
+      visibleSlides={[1.2, 2.2, 3, 3, 4]}
+      onSlideChange={action('Slide Change')}
+      slideSpacing={2}
+      arrowPosition='side'
+    >
       {Array.from(Array(6)).map((_, idx) => (
         <ToutCard
           height={idx === 1 ? '300px' : '320px'}
@@ -97,6 +98,7 @@ export const CustomLayout = () => (
       slideSpacing={2}
       stretchHeight
       layout='30-70'
+      arrowPosition='side'
     >
       {Array.from(Array(6)).map((_, idx) => (
         <ToutCard

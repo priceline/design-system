@@ -1,10 +1,7 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
 import React from 'react'
-import { Flex } from '../Flex'
-import { Grid } from '../Grid'
-import { ChatMessage } from '../ChatMessage'
+import { ChatMessage } from '../ChatMessage/ChatMessage'
+import { Flex } from '../Flex/Flex'
+import { Grid } from '../Grid/Grid'
 
 export type ChatMessageVariation = 'initial' | 'incoming' | 'outgoing'
 
@@ -14,12 +11,12 @@ export interface IMessage {
   variation: ChatMessageVariation
 }
 
-export interface IChatMessageContainer {
+export interface ChatMessageContainerProps {
   messageMaxWidth: string
   messages: IMessage[]
 }
 
-function ChatMessageContainer({ messageMaxWidth = '90%', messages }: IChatMessageContainer) {
+export function ChatMessageContainer({ messageMaxWidth = '90%', messages }: ChatMessageContainerProps) {
   return (
     <Grid gap={2} height='100%' overflowY='scroll' p={3}>
       {messages?.map((message) => (
@@ -33,5 +30,3 @@ function ChatMessageContainer({ messageMaxWidth = '90%', messages }: IChatMessag
     </Grid>
   )
 }
-
-export default ChatMessageContainer

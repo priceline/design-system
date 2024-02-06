@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import styled, { css, keyframes } from 'styled-components'
 import themeGet from '@styled-system/theme-get'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { applySizes } from '../utils'
+import React from 'react'
+import styled, { css, keyframes } from 'styled-components'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { ColorName, PaletteColor, PaletteFamilyName } from '../theme/theme'
+import { applySizes } from '../utils/utils'
 
 const sizes = {
   small: css`
@@ -79,16 +79,13 @@ const Dot = styled(Box)`
   animation-delay: ${(props) => getDelay(props.duration, props.pos)}s;
 `
 
-const propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([
-    PropTypes.oneOf(Object.keys(sizes)),
-    PropTypes.arrayOf(PropTypes.oneOf(Object.keys(sizes))),
-  ]),
-  speed: PropTypes.oneOf(Object.keys(speeds)),
+export type DotLoaderProps = {
+  color?: ColorName | PaletteFamilyName | PaletteColor
+  size?: keyof typeof sizes | (keyof typeof sizes)[]
+  speed?: keyof typeof speeds
 }
 
-const DotLoader: React.FC<InferProps<typeof propTypes>> = ({ color, size, speed, ...props }) => {
+export function DotLoader({ color, size, speed, ...props }: DotLoaderProps) {
   const duration = speeds[speed]
 
   return (
@@ -100,12 +97,8 @@ const DotLoader: React.FC<InferProps<typeof propTypes>> = ({ color, size, speed,
   )
 }
 
-DotLoader.propTypes = propTypes
-
 DotLoader.defaultProps = {
   color: 'primary',
   size: 'medium',
   speed: 'medium',
 }
-
-export default DotLoader

@@ -1,6 +1,253 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 25 Jul 2023 15:57:05 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Feb 2024 21:51:20 GMT and should not be manually modified.
+
+## 6.2.2
+Mon, 05 Feb 2024 21:51:20 GMT
+
+### Patches
+
+- fix path to types rendered to dist by api-extractor
+
+## 6.2.1
+Tue, 30 Jan 2024 20:31:23 GMT
+
+### Patches
+
+- update accordion shadow state for open
+- Add color scheme for heading text color
+- Correct peerDeps for DSv6
+
+## 6.2.0
+Mon, 22 Jan 2024 16:15:34 GMT
+
+### Minor changes
+
+- upgrade webpack5 build process to apply minification and babel-plugin-styled-components
+- Added minWidth/maxWidth/minHeight/maxHeight support to Image
+
+### Patches
+
+- abolish barrel files
+
+## 6.1.0
+Mon, 22 Jan 2024 14:06:39 GMT
+
+### Minor changes
+
+- Updated dialog Component to have an option overflowX & Y prop
+
+### Patches
+
+- Fix some incorrect TS types
+
+## 6.0.0
+Fri, 12 Jan 2024 16:09:00 GMT
+
+### Breaking changes
+
+- Implement heft-webpack5-plugin to optimize production output
+- React 18 upgrade
+
+### Minor changes
+
+- Upgrade all @rushstack dependencies to latest
+
+## 5.28.3
+Mon, 11 Dec 2023 16:41:10 GMT
+
+### Patches
+
+- remove important on transparent background of link variation of button
+
+## 5.28.2
+Thu, 07 Dec 2023 17:59:07 GMT
+
+### Patches
+
+- Fix outgoing ChatMessage Footer position
+
+## 5.28.1
+Thu, 30 Nov 2023 15:11:14 GMT
+
+### Patches
+
+- add zindex 1 to label to fix autofill label hiding issue
+
+## 5.28.0
+Mon, 27 Nov 2023 22:06:22 GMT
+
+### Minor changes
+
+- Export PaletteFamilyVariation type
+
+## 5.27.5
+Tue, 21 Nov 2023 21:18:48 GMT
+
+### Patches
+
+- added changes for cursor, color of radio button and also updated the story
+
+## 5.27.4
+Mon, 20 Nov 2023 16:01:48 GMT
+
+### Patches
+
+- Added important for bg css as its been overwritten by other css change to remove bg from link variant of the disabled version of button - UXPT-4211 
+- update README
+
+## 5.27.3
+Wed, 15 Nov 2023 16:54:32 GMT
+
+### Patches
+
+- Add zIndex to Dialog
+
+## 5.27.2
+Mon, 13 Nov 2023 19:10:51 GMT
+
+### Patches
+
+- update ChatMessage accepts react node as child
+
+## 5.27.1
+Tue, 07 Nov 2023 22:14:21 GMT
+
+### Patches
+
+- Fix close button position in Dialog
+
+## 5.27.0
+Thu, 02 Nov 2023 19:24:44 GMT
+
+### Minor changes
+
+- Add exports for Chat components
+
+## 5.26.0
+Tue, 31 Oct 2023 23:55:47 GMT
+
+### Minor changes
+
+- Accordion: add headerDividerColor prop to allow divider between steps
+
+## 5.25.1
+Tue, 31 Oct 2023 16:34:17 GMT
+
+### Patches
+
+- add props/features to CloseButton
+
+## 5.25.0
+Mon, 16 Oct 2023 17:31:18 GMT
+
+### Minor changes
+
+- Button: add flexProps prop to override any styling to that child component
+
+## 5.24.2
+Mon, 25 Sep 2023 17:18:04 GMT
+
+### Patches
+
+- Remove readonly prop from Select
+
+## 5.24.1
+Fri, 22 Sep 2023 18:13:30 GMT
+
+### Patches
+
+- Fix regressions related to readonly in Input and Toggle
+
+## 5.24.0
+Fri, 22 Sep 2023 14:37:35 GMT
+
+### Minor changes
+
+- add space prop for configurable padding
+
+## 5.23.0
+Wed, 20 Sep 2023 18:06:28 GMT
+
+### Minor changes
+
+- Add "ladder" variatio to the Accordion
+
+## 5.22.0
+Mon, 18 Sep 2023 18:48:01 GMT
+
+### Minor changes
+
+- Added gradient and strokeWidth property to Spinner
+
+## 5.21.0
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Minor changes
+
+- Added variation prop to the FilterChip, ButtonChip and ChoiceChip, which includes shadow variation
+- Replaced :focus on FilterChip, ButtonChip and ChoiceChip with :focus-visible
+
+### Patches
+
+- Add value prop to ChoiceChip Input
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
+
+## 5.20.2
+Wed, 23 Aug 2023 18:39:11 GMT
+
+### Patches
+
+- Use typescript for Accordion types and remove prop types
+
+## 5.20.1
+Wed, 23 Aug 2023 16:19:14 GMT
+
+### Patches
+
+- resolve Avatar propType issue
+
+## 5.20.0
+Mon, 21 Aug 2023 19:12:20 GMT
+
+### Minor changes
+
+- export accordion
+- add dialog component
+- add neutralDarkOnLightest to colorScheme
+
+## 5.19.0
+Thu, 10 Aug 2023 14:28:26 GMT
+
+### Minor changes
+
+- Add borderStyles to Card component
+
+## 5.18.0
+Wed, 09 Aug 2023 15:37:24 GMT
+
+### Minor changes
+
+- ChoiceChip: add topLabel prop along with width and borderRadius
+
+### Patches
+
+- SlideBox: set default arrowPosition to hide
+
+## 5.17.0
+Mon, 31 Jul 2023 13:51:05 GMT
+
+### Minor changes
+
+- add light and dark variation props to Shimmer
+- rename origin with base on Shimmer
+- update Card stories and docs
+- Create FAB and ChatTrigger components
+- Create ChatMessageSeparator component
+
+### Patches
+
+- Update image URL
 
 ## 5.16.0
 Tue, 25 Jul 2023 15:57:04 GMT

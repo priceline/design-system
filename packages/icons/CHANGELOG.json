@@ -2,6 +2,151 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.0.1",
+      "tag": "pcln-icons_v6.0.1",
+      "date": "Tue, 30 Jan 2024 20:31:23 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Correct peerDeps for DSv6",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "f8cb97ccf13bf71f96793dbaa06c54aeb4aae875"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.0.0",
+      "tag": "pcln-icons_v6.0.0",
+      "date": "Fri, 12 Jan 2024 16:09:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade all @rushstack dependencies to latest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ],
+        "major": [
+          {
+            "comment": "React 18 upgrade",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.14.0",
+      "tag": "pcln-icons_v5.14.0",
+      "date": "Fri, 12 Jan 2024 15:07:44 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added new icons refund and currencyExchange",
+            "author": "takhila499 <119969297+takhila499@users.noreply.github.com>",
+            "commit": "1280854e2dfd5108720d72fdee807e45d0dfb5ac"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.13.0",
+      "tag": "pcln-icons_v5.13.0",
+      "date": "Wed, 13 Dec 2023 22:03:38 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add icon",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "35fa1a78e5484cef82c7f7d760889062fd317ffa"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.12.1",
+      "tag": "pcln-icons_v5.12.1",
+      "date": "Fri, 20 Oct 2023 16:38:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "lint fix",
+            "author": "David Jeon <88681606+davidjeonprice@users.noreply.github.com>",
+            "commit": "7138c1b946fca26895b4f6f83def1b77bc6b1b32"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.12.0",
+      "tag": "pcln-icons_v5.12.0",
+      "date": "Fri, 15 Sep 2023 20:57:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add attraction svg icon to pcln-icons",
+            "author": "Nikita Jajodia <121977487+njajodia@users.noreply.github.com>",
+            "commit": "5666a5ee0588fb08d1c7b07ae6a44bff4fd72ab4"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.11.1",
+      "tag": "pcln-icons_v5.11.1",
+      "date": "Fri, 15 Sep 2023 14:19:20 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Replace more Jest tests with Storybook stories and interaction tests",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "27679715d0c1d0f0072914d453db4526db9d1479"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Upgrade pnpm, Storybook ecosystem, typescript and jest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "bc4d730a54107788534346773af20a449806d3f0"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.11.0",
+      "tag": "pcln-icons_v5.11.0",
+      "date": "Mon, 31 Jul 2023 13:51:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add celebration icon",
+            "author": "Justin Trenary <justin.trenary@priceline.com>",
+            "commit": "cb30a6c830480f09d5b76f022ae7de44e80b5123"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Add PushPin and PushPinBorder icons",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "48e482f8883c29396d985be5fe6e6115bf3c41ea"
+          },
+          {
+            "comment": "Update icons from 48px to 24px",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "48e482f8883c29396d985be5fe6e6115bf3c41ea"
+          }
+        ],
+        "none": [
+          {
+            "comment": "Add newline to bottom of index file",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "0aa363c899eda51977d586b520ae248cc9e88747"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.10.0",
       "tag": "pcln-icons_v5.10.0",
       "date": "Tue, 25 Jul 2023 18:42:42 GMT",

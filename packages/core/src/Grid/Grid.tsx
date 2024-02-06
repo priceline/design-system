@@ -1,72 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  background,
-  BackgroundProps,
-  border,
-  BorderProps,
-  // color,
-  // ColorProps,
-  compose,
-  flexbox,
-  FlexboxProps,
-  grid,
-  GridProps,
-  layout,
-  LayoutProps,
-  position,
-  PositionProps,
-  shadow,
-  ShadowProps,
-  space,
-  SpaceProps,
-  system,
-  typography,
-  TypographyProps,
-} from 'styled-system'
+import { FlexboxProps, GridProps as SSGridProps, system } from 'styled-system'
+import { ComposedStyleFns, type ColorSchemeName, type IStyledSystemProps } from '../theme/theme'
+import { colorScheme } from '../utils/utils'
 
-export interface IStyledSystemProps
-  extends BackgroundProps,
-    BorderProps,
-    // ColorProps,
-    FlexboxProps,
-    GridProps,
-    LayoutProps,
-    PositionProps,
-    ShadowProps,
-    SpaceProps,
-    TypographyProps {
-  style?: React.CSSProperties
-}
-
-const ComposedStyleFns = compose(
-  background,
-  border,
-  // color,
-  flexbox,
-  grid,
-  layout,
-  position,
-  shadow,
-  space,
-  typography
-)
-
-export interface IGridProps extends IStyledSystemProps {
+export interface GridProps extends IStyledSystemProps {
   children?: React.ReactNode
-  gap?: GridProps['gridGap']
-  rowGap?: GridProps['gridRowGap']
-  columnGap?: GridProps['gridColumnGap']
-  column?: GridProps['gridColumn']
-  row?: GridProps['gridRow']
-  area?: GridProps['gridArea']
-  autoFlow?: GridProps['gridAutoFlow']
-  autoRows?: GridProps['gridAutoRows']
-  autoColumns?: GridProps['gridAutoColumns']
-  templateRows?: GridProps['gridTemplateRows']
-  templateColumns?: GridProps['gridTemplateColumns']
-  templateAreas?: GridProps['gridTemplateAreas']
+  gap?: SSGridProps['gridGap']
+  rowGap?: SSGridProps['gridRowGap']
+  columnGap?: SSGridProps['gridColumnGap']
+  column?: SSGridProps['gridColumn']
+  row?: SSGridProps['gridRow']
+  area?: SSGridProps['gridArea']
+  autoFlow?: SSGridProps['gridAutoFlow']
+  autoRows?: SSGridProps['gridAutoRows']
+  autoColumns?: SSGridProps['gridAutoColumns']
+  templateRows?: SSGridProps['gridTemplateRows']
+  templateColumns?: SSGridProps['gridTemplateColumns']
+  templateAreas?: SSGridProps['gridTemplateAreas']
   placeItems?: FlexboxProps['alignItems']
+  colorScheme?: ColorSchemeName
 }
 
 const GridStyleFns = system({
@@ -85,10 +38,11 @@ const GridStyleFns = system({
   placeItems: { property: 'placeItems' },
 })
 
-const StyledGrid = styled.div<IGridProps>`
+const StyledGrid = styled.div<GridProps>`
   ${ComposedStyleFns}
   ${GridStyleFns}
+  ${colorScheme}
   display: grid;
 `
 
-export const Grid = (props: IGridProps) => <StyledGrid {...props} />
+export const Grid = (props: GridProps) => <StyledGrid {...props} />

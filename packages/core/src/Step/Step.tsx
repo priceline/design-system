@@ -1,11 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { Check } from 'pcln-icons'
-
-import { Button } from '../Button'
-import { Text } from '../Text'
-import { getPaletteColor } from '../utils'
+import React from 'react'
+import styled from 'styled-components'
+import { Button } from '../Button/Button'
+import { Text } from '../Text/Text'
+import { getPaletteColor } from '../utils/utils'
 
 const StepButton = styled(Button)`
   display: flex;
@@ -20,15 +18,7 @@ const StepButton = styled(Button)`
   }
 `
 
-const propTypes = {
-  className: PropTypes.string,
-  active: PropTypes.bool,
-  completed: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func,
-}
-
-export interface IStepProps {
+export type StepProps = {
   className?: string
   active?: boolean
   completed?: boolean
@@ -36,7 +26,14 @@ export interface IStepProps {
   onClick?: (unknown) => unknown
 }
 
-const Step: React.FC<IStepProps> = ({ className, active, completed, children, onClick, ...props }) => {
+export function Step({
+  className,
+  active,
+  completed,
+  children,
+  onClick,
+  ...props
+}: StepProps): React.ReactElement {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (
@@ -53,12 +50,8 @@ const Step: React.FC<IStepProps> = ({ className, active, completed, children, on
 
 Step.displayName = 'Step'
 
-Step.propTypes = propTypes
-
 Step.defaultProps = {
   className: '',
   active: false,
   completed: false,
 }
-
-export default Step

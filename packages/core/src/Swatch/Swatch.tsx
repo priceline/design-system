@@ -1,8 +1,7 @@
-import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '../Flex'
-import { getPaletteColor } from '../utils'
+import { Flex } from '../Flex/Flex'
+import { getPaletteColor } from '../utils/utils'
 
 const SwatchColor = styled.div`
   height: 24px;
@@ -15,25 +14,26 @@ const SwatchColor = styled.div`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 `
 
-const propTypes = {
-  colors: PropTypes.arrayOf(PropTypes.string),
-  onClick: PropTypes.func,
+export type SwatchProps = {
+  colors: string[]
+  onClick?: (color: string) => void
 }
 
-const Swatch: React.FC<InferProps<typeof propTypes>> = ({ colors, onClick, ...props }) => (
-  <Flex flexWrap='wrap' {...props}>
-    {colors.map((color, idx) => (
-      <SwatchColor
-        data-testid={`${idx}-${color}`}
-        key={`${idx}-${color}`}
-        color={color}
-        onClick={onClick ? () => onClick(color) : undefined}
-      />
-    ))}
-  </Flex>
-)
+export function Swatch({ colors, onClick, ...props }: SwatchProps): React.ReactElement {
+  return (
+    <Flex flexWrap='wrap' {...props}>
+      {colors.map((color, idx) => (
+        <SwatchColor
+          data-testid={`${idx}-${color}`}
+          key={`${idx}-${color}`}
+          color={color}
+          onClick={onClick ? () => onClick(color) : undefined}
+        />
+      ))}
+    </Flex>
+  )
+}
 
-Swatch.propTypes = propTypes
 Swatch.displayName = 'Swatch'
 
 export default Swatch

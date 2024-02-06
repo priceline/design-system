@@ -28,10 +28,6 @@ export const UnselectedWithDifferentBackgroundColor = () => (
   <ToggleBadge unSelectedBg='yellow'>Un - Selected - Badge</ToggleBadge>
 )
 
-UnselectedWithDifferentBackgroundColor.story = {
-  name: 'Unselected with different background color',
-}
-
 export const AGroup = () => (
   <div>
     <ToggleBadge selected>Flight + Hotel</ToggleBadge>
@@ -39,10 +35,6 @@ export const AGroup = () => (
     <ToggleBadge>Flight + Car</ToggleBadge>
   </div>
 )
-
-AGroup.story = {
-  name: 'A group',
-}
 
 export function ForwardRefs() {
   function refChild(dsRef) {
@@ -63,8 +55,4 @@ export function ForwardRefs() {
     )
   }
   return <ForwardRefDemo refChild={refChild} />
-}
-
-ForwardRefs.story = {
-  name: 'Forward refs',
 }

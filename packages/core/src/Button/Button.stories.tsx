@@ -1,17 +1,14 @@
-/* eslint-disable react/no-unescaped-entities */
-
-import type { Meta, StoryObj } from '@storybook/react'
-import type { IButtonProps, Sizes } from './Button'
-
-import { ArgsTable, Primary, PRIMARY_STORY } from '@storybook/addon-docs'
+import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
-import { Calendar, Check, ChevronLeft, ChevronRight, Search, User } from 'pcln-icons'
+import type { Meta, StoryObj } from '@storybook/react'
+import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
 import React from 'react'
-
-import { Box, Button, ButtonChip, CloseButton, Flex, Image, Link, Text, ThemeProvider } from '..'
+import { Box } from '../Box/Box'
+import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
+import { CloseButton } from '../CloseButton/CloseButton'
 import {
-  DocTable,
   DoDont,
+  DocTable,
   Hero,
   // LiveDemo,
   Note,
@@ -22,15 +19,21 @@ import {
   StoryStage,
   TableOfContents,
 } from '../DocsUtils'
+import { Flex } from '../Flex/Flex'
+import { Image } from '../Image/Image'
+import { Label } from '../Label/Label'
+import { Link } from '../Link/Link'
+import { Text } from '../Text/Text'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { colors, shadows } from '../storybook/args'
-
+import { Button, type ButtonProps, type Sizes } from './Button'
 import alignmentImage from './Button.Image.Alignment.png'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
 import responsiveLayoutImage from './Button.Image.ResponsiveLayout.png'
 import buttonStates from './Button.Image.States.png'
 
-type ButtonStory = StoryObj<IButtonProps>
+type ButtonStory = StoryObj<ButtonProps>
 
 const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
 
@@ -100,12 +103,15 @@ export const TonalVariations: ButtonStory = {
   ),
 }
 
-export const TextButtons: ButtonStory = {
+export const LinkVariation: ButtonStory = {
   render: () => (
     <StoryStage>
-      <Button variation='link'>Button</Button>
+      <Button variation='link'>Enabled</Button>
+      <Button variation='link' disabled>
+        Disabled
+      </Button>
       <Button variation='link'>
-        <Text fontWeight='bold'>Button</Text>
+        <Text fontWeight='bold'>Bold</Text>
       </Button>
     </StoryStage>
   ),
@@ -177,14 +183,63 @@ export const IconButtons: ButtonStory = {
   ),
 }
 
+export const InputVariation: ButtonStory = {
+  render: () => (
+    <StoryStage>
+      <Button size='large' variation='input' borderRadius='lg' py={0}>
+        <Flex width='100%' justifyContent='flex-start' alignItems='center' height='54px'>
+          <Calendar mr={2} color='primary.base' />
+          <Flex flexDirection='column'>
+            <Label as='div'>Check-in - Check-out</Label>
+            <Text>09/21/2023 – 09/22/2023</Text>
+          </Flex>
+        </Flex>
+      </Button>
+
+      <Button size='large' variation='input' borderRadius='lg'>
+        <Flex width='100%' justifyContent='flex-start' height='100%' alignItems='center'>
+          <Calendar mr={2} color='primary.base' />
+          <Flex flexDirection='column'>
+            <Text color='text.light'>mm/dd/yyyy - mm/dd/yyyy</Text>
+          </Flex>
+        </Flex>
+      </Button>
+
+      <Button size='large' variation='input' borderRadius='lg'>
+        <Flex width='100%' justifyContent='space-between' height='100%' alignItems='center'>
+          <Flex alignItems='center'>
+            <Guests mr={2} color='primary.base' />
+            <Flex flexDirection='column'>
+              <Text color='text.light'>Select travelers</Text>
+            </Flex>
+          </Flex>
+          <ChevronDown color='primary.base' />
+        </Flex>
+      </Button>
+    </StoryStage>
+  ),
+}
+
+export const FlexProps: ButtonStory = {
+  render: () => (
+    <StoryStage>
+      <Button width={200} variation='fill' flexProps={{ justifyContent: 'left' }}>
+        Left Justify
+      </Button>
+      <Button width={200} variation='fill' flexProps={{ justifyContent: 'right' }}>
+        Right Justify
+      </Button>
+    </StoryStage>
+  ),
+}
+
 const meta: Meta<typeof Button> = {
   title: 'Actions/Button',
   component: Button,
   parameters: {
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
+      url: 'https://www.figma.com/file/1lLCo0ZnO1RyMDEbnnS0by/Web-Design-System?type=design&node-id=131-21304&t=wTmhDg2MwlPA9PGf-4',
     },
 
     docs: {
@@ -436,7 +491,7 @@ const meta: Meta<typeof Button> = {
             />
 
             <Text py={3} textStyle='subheading3'>
-              Do's and Don't For Button Groups
+              Do&apos;s and Don&apos;t For Button Groups
             </Text>
 
             <DoDont

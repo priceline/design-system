@@ -1,7 +1,6 @@
-import React from 'react'
 import { Flights, Home, Seat } from 'pcln-icons'
-
-import { Breadcrumbs } from '..'
+import React from 'react'
+import { Breadcrumbs } from './Breadcrumbs'
 
 describe('Breadcrumbs', () => {
   test('renders basic', () => {

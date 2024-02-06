@@ -1,6 +1,8 @@
 import React from 'react'
-import { Label, Input, Radio, Flex } from '..'
-import { ILabelProps } from './Label'
+import { Flex } from '../Flex/Flex'
+import { Input } from '../Input/Input'
+import { Radio } from '../Radio/Radio'
+import { Label, LabelProps } from './Label'
 import { argTypes, defaultArgs } from './Label.stories.args'
 
 export default {
@@ -17,7 +19,7 @@ export default {
   },
 }
 
-const Template = (args: ILabelProps) => <Label {...args} />
+const Template = (args: LabelProps) => <Label {...args} />
 
 export const _Label = Template.bind({})
 
@@ -42,10 +44,6 @@ export const HtmlFor = () => (
   </div>
 )
 
-HtmlFor.story = {
-  name: 'htmlFor',
-}
-
 export const Nowrap = () => (
   <Flex>
     <Label nowrap>
@@ -62,7 +60,3 @@ export const Nowrap = () => (
     </Label>
   </Flex>
 )
-
-Nowrap.story = {
-  name: 'nowrap',
-}

@@ -1,6 +1,7 @@
 import React from 'react'
-
-import { Box, createTheme, Text } from '../..'
+import { Box } from '../../Box/Box'
+import { Text } from '../../Text/Text'
+import { createTheme } from '../../utils/createTheme'
 
 const theme = createTheme()
 

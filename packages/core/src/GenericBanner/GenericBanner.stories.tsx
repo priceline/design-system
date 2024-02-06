@@ -1,12 +1,12 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
-import { GenericBanner } from '.'
-import { Warning, Rowing, Tea, Emoticon } from 'pcln-icons'
-import { Text } from '../Text'
+import { Emoticon, Rowing, Tea, Warning } from 'pcln-icons'
+import React from 'react'
 import styled from 'styled-components'
-import { getPaletteColor } from '../utils'
-import { argTypes } from './GenericBanner.stories.args'
+import { Text } from '../Text/Text'
 import { colorSchemeNames } from '../storybook/args'
+import { getPaletteColor } from '../utils'
+import { GenericBanner } from './GenericBanner'
+import { argTypes } from './GenericBanner.stories.args'
 
 export default {
   title: 'GenericBanner',

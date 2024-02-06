@@ -1,5 +1,11 @@
 import React from 'react'
-import { Flex, Box, FormField, Label, Input, Select, Tooltip } from '..'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Input } from '../Input/Input'
+import { Label } from '../Label/Label'
+import { Select } from '../Select/Select'
+import { Tooltip } from '../Tooltip/Tooltip'
+import { FormField } from './FormField'
 
 import {
   Check as CheckIcon,
@@ -68,10 +74,6 @@ export const DynamicLabel = () => (
   </Flex>
 )
 
-DynamicLabel.story = {
-  name: 'dynamic label',
-}
-
 export const DynamicLabelWithValue = () => (
   <FormField>
     <Label htmlFor='dynamic-label-email'>Email Address</Label>
@@ -83,10 +85,6 @@ export const DynamicLabelWithValue = () => (
     />
   </FormField>
 )
-
-DynamicLabelWithValue.story = {
-  name: 'dynamic label with value',
-}
 
 export const IconToTheRight = () => (
   <FormField>
@@ -101,10 +99,6 @@ export const IconToTheRight = () => (
   </FormField>
 )
 
-IconToTheRight.story = {
-  name: 'Icon to the right',
-}
-
 export const WithSelect = () => (
   <FormField>
     <Label htmlFor='dynamic-label-state-select'>State</Label>
@@ -115,10 +109,6 @@ export const WithSelect = () => (
     </Select>
   </FormField>
 )
-
-WithSelect.story = {
-  name: 'with Select',
-}
 
 export const WithDisabledSelect = () => (
   <FormField disabled>
@@ -131,10 +121,6 @@ export const WithDisabledSelect = () => (
   </FormField>
 )
 
-WithDisabledSelect.story = {
-  name: 'with disabled Select',
-}
-
 export const WithReadOnlySelect = () => (
   <FormField readOnly>
     <Label htmlFor='dynamic-label-state-select'>State</Label>
@@ -146,10 +132,6 @@ export const WithReadOnlySelect = () => (
   </FormField>
 )
 
-WithReadOnlySelect.story = {
-  name: 'with read only Select',
-}
-
 export const WithSuccessfulValidation = () => (
   <FormField>
     <Label htmlFor='valid'>Email Address</Label>
@@ -157,10 +139,6 @@ export const WithSuccessfulValidation = () => (
     <SuccessIcon color='success' />
   </FormField>
 )
-
-WithSuccessfulValidation.story = {
-  name: 'with successful validation',
-}
 
 export const WithErrorTooltip = () => (
   <Box>
@@ -180,7 +158,3 @@ export const WithErrorTooltip = () => (
     </Tooltip>
   </Box>
 )
-
-WithErrorTooltip.story = {
-  name: 'with error Tooltip',
-}

@@ -1,11 +1,11 @@
+import { Airplane, Pin as PinIcon } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-
-import { Stamp, Text } from '..'
-import type { ColorSchemeName } from '../theme'
-import { argTypes } from './Stamp.stories.args'
-import { Pin as PinIcon, Airplane } from 'pcln-icons'
+import { Text } from '../Text/Text'
 import { colorSchemeNames } from '../storybook/args'
+import type { ColorSchemeName } from '../theme/theme'
+import { Stamp } from './Stamp'
+import { argTypes } from './Stamp.stories.args'
 
 // for Args
 // const sizes = { small: 'small', medium: 'medium' }
@@ -65,10 +65,6 @@ export const CustomBackgroundAndBorderColor = () => (
   </div>
 )
 
-CustomBackgroundAndBorderColor.story = {
-  name: 'Custom Background and Border Color',
-}
-
 export const CustomTextSize = () => (
   <div>
     <Stamp color='white' bg='blue' borderColor='blue' mr={2}>
@@ -117,10 +113,6 @@ export const PassAnArrayOfSizes = () => (
     </BlueStamp>
   </div>
 )
-
-PassAnArrayOfSizes.story = {
-  name: 'Pass an array of sizes',
-}
 
 const ColorSchemesTemplate = () => {
   return (

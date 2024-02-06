@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Box, Button } from '..'
-import DotLoader from './DotLoader'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { DotLoader } from './DotLoader'
 import { argTypes, defaultArgs } from './DotLoader.stories.args'
 
 export default {

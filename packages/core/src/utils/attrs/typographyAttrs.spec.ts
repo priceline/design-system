@@ -1,5 +1,5 @@
-import { typographyAttrs, textStylesValues } from '.'
-import { createTheme } from '..'
+import { createTheme } from '../createTheme'
+import { textStylesValues, typographyAttrs } from './typographyAttrs'
 
 const theme = createTheme()
 

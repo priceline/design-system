@@ -1,8 +1,8 @@
-import React from 'react'
 import { Flights as FlightsIcon, Home as HomeIcon, Seat as SeatIcon } from 'pcln-icons'
-
-import { Breadcrumbs, Button } from '..'
+import React from 'react'
+import { Button } from '../Button/Button'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
+import { Breadcrumbs } from './Breadcrumbs'
 
 export default {
   title: 'Breadcrumbs',

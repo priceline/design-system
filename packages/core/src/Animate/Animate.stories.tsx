@@ -1,11 +1,15 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import type { Meta, StoryObj } from '@storybook/react'
-
 import { expect } from '@storybook/jest'
+import type { Meta, StoryObj } from '@storybook/react'
 import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
-import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from '.'
-import { Box, Button, ChoiceChip, Flex, Image, Text } from '..'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { ChoiceChip } from '../Chip/ChoiceChip/ChoiceChip'
+import { Flex } from '../Flex/Flex'
+import { Image } from '../Image/Image'
+import { Text } from '../Text/Text'
+import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from './Animate'
 
 const meta: Meta<typeof Animate> = {
   component: Animate,

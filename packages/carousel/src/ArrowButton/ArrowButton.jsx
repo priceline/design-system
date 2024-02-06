@@ -4,9 +4,15 @@ import { ButtonBack, ButtonNext } from 'pure-react-carousel'
 import { ChevronRight, ChevronLeft } from 'pcln-icons'
 import { Wrapper } from './ArrowButton.styles'
 
-const ArrowButton = ({ type, position, setPosition, ...props }) =>
+const ArrowButton = ({ type, position, setPosition, showArrowsOnHover, ...props }) =>
   setPosition === position ? (
-    <Wrapper type={type} position={position} {...props} data-testid={`${type}-${position}`}>
+    <Wrapper
+      type={type}
+      position={position}
+      {...props}
+      data-testid={`${type}-${position}`}
+      showArrowsOnHover={showArrowsOnHover}
+    >
       {type === 'prev' ? (
         <ButtonBack>
           <ChevronLeft size={type === 'side' ? 40 : 32} ml='-3px' />
@@ -41,6 +47,8 @@ ArrowButton.propTypes = {
   buttonHoverColor: PropTypes.string,
   /** same value used for button width and button height */
   buttonSize: PropTypes.string,
+  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  showArrowsOnHover: PropTypes.bool,
 }
 
 export { ArrowButton }

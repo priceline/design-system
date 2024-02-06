@@ -1,6 +1,6 @@
 import React from 'react'
-import List from './List'
-import { Text } from '..'
+import { Text } from '../Text/Text'
+import { List } from './List'
 import { argTypes, defaultArgs } from './List.stories.args'
 
 export default {

@@ -1,10 +1,8 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import styled from 'styled-components'
 import themeGet from '@styled-system/theme-get'
-
-import { Flex } from '../Flex'
-import { Step, IStepProps } from '../Step'
+import React from 'react'
+import styled from 'styled-components'
+import { Flex } from '../Flex/Flex'
+import { Step } from '../Step/Step'
 
 const StyledFlex = styled(Flex)`
   & > :not(:last-child) {
@@ -12,16 +10,12 @@ const StyledFlex = styled(Flex)`
   }
 `
 
-const propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node,
+export type StepperProps = {
+  className?: string
+  children?: React.ReactNode
 }
 
-const Stepper: React.FC<InferProps<typeof propTypes>> & { Step: React.FC<IStepProps> } = ({
-  className,
-  children,
-  ...props
-}) => {
+export function Stepper({ className, children, ...props }: StepperProps): React.ReactElement {
   return (
     <StyledFlex className={className} {...props}>
       {children}
@@ -29,14 +23,5 @@ const Stepper: React.FC<InferProps<typeof propTypes>> & { Step: React.FC<IStepPr
   )
 }
 
-Stepper.displayName = 'Stepper'
-
-Stepper.Step = Step
-
-Stepper.propTypes = propTypes
-
-Stepper.defaultProps = {
-  className: '',
-}
-
-export default Stepper
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+Stepper.Step = Step as any

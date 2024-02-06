@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Truncate } from '..'
+import { Truncate } from './Truncate'
 
 describe('Truncate', () => {
   test('renders', () => {

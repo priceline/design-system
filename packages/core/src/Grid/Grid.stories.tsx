@@ -4,7 +4,7 @@ import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import React from 'react'
 
 import { linkTo } from '@storybook/addon-links'
-import { Box, Flex, Grid, IGridProps, Text, ThemeProvider } from '..'
+import { Box } from '../Box/Box'
 import {
   Hero,
   RelatedComponent,
@@ -13,10 +13,14 @@ import {
   StoryHeading,
   TableOfContents,
 } from '../DocsUtils'
+import { Flex } from '../Flex/Flex'
+import { Grid, type GridProps } from '../Grid/Grid'
+import { Text } from '../Text/Text'
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 
-type GridStory = StoryObj<IGridProps>
+type GridStory = StoryObj<GridProps>
 
-const GridItem = (props: IGridProps) => <Grid p={4} width={1} placeItems='center' {...props} />
+const GridItem = (props: GridProps) => <Grid p={4} width={1} placeItems='center' {...props} />
 
 export const Playground: GridStory = {
   render: () => (

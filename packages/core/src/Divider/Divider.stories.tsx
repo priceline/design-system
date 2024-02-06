@@ -1,6 +1,7 @@
 import React from 'react'
-import { Divider, Flex } from '..'
 import styled from 'styled-components'
+import { Divider } from '../Divider/Divider'
+import { Flex } from '../Flex/Flex'
 
 const description = 'Horizontal rule with settings for padding, margin, width, and borderColor'
 const ColumnFlex = styled(Flex)`

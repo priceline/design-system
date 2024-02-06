@@ -1,7 +1,12 @@
 import React from 'react'
-import styled, { keyframes, css } from 'styled-components'
-import { Box } from '..'
-import PropTypes, { InferProps } from 'prop-types'
+import styled, { css, keyframes } from 'styled-components'
+import { Box, type BoxProps } from '../Box/Box'
+import {
+  VARIATION_BACKGROUND_COLORS,
+  VARIATION_GLARE_GRADIENTS,
+  VariationType,
+  type ShimmerVariation,
+} from './constants'
 
 const animation = (props) => keyframes`
   0% {
@@ -17,7 +22,7 @@ const animationRule = css`
 `
 
 const Wrapper = styled(Box)`
-  background-color: #eee; // This color does not exist in the default theme
+  background-color: ${(props) => VARIATION_BACKGROUND_COLORS[props.variation]};
   background-size: 200px 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -28,18 +33,8 @@ const Wrapper = styled(Box)`
 
 const Glare = styled.span`
   display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    rgba(245, 245, 245, 0) 0%,
-    rgba(245, 245, 245, 1) 50%,
-    rgba(245, 245, 245, 0) 100%
-  );
-  background-image: -webkit-linear-gradient(
-    left,
-    rgba(245, 245, 245, 0) 0%,
-    rgba(245, 245, 245, 1) 50%,
-    rgba(245, 245, 245, 0) 100%
-  );
+  background-image: linear-gradient(to right, ${(props) => VARIATION_GLARE_GRADIENTS[props.variation]});
+  background-image: -webkit-linear-gradient(left, ${(props) => VARIATION_GLARE_GRADIENTS[props.variation]});
   animation: ${animationRule};
   height: 100%;
   width: 200px;
@@ -50,18 +45,18 @@ const Glare = styled.span`
   }
 `
 
-const propTypes = {
-  ...Box.propTypes,
-  animationWidth: PropTypes.number,
-  className: PropTypes.string,
-  disable: PropTypes.bool,
+export type ShimmerProps = BoxProps & {
+  animationWidth?: number
+  className?: string
+  disable?: boolean
+  variation?: ShimmerVariation
 }
 
-const Shimmer: React.FC<InferProps<typeof propTypes>> = ({ animationWidth, disable, ...props }) => {
+export function Shimmer({ animationWidth, disable, ...props }: ShimmerProps): JSX.Element {
   return (
     <Wrapper {...props} data-testid='Shimmer__Wrapper'>
       {!disable && (
-        <Glare animationWidth={animationWidth + 200} data-testid='Shimmer__Glare'>
+        <Glare animationWidth={animationWidth + 200} data-testid='Shimmer__Glare' variation={props.variation}>
           &zwnj;
         </Glare>
       )}
@@ -72,8 +67,5 @@ const Shimmer: React.FC<InferProps<typeof propTypes>> = ({ animationWidth, disab
 Shimmer.defaultProps = {
   animationWidth: 100,
   disable: false,
+  variation: VariationType.Base,
 }
-
-Shimmer.propTypes = propTypes
-
-export default Shimmer

@@ -1,6 +1,10 @@
 import React from 'react'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Divider } from '../Divider/Divider'
+import { Label } from '../Label/Label'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-import { Box, Input, Label, Divider, Button } from '..'
+import { Input } from './Input'
 import { argTypes } from './Input.stories.args'
 
 export default {

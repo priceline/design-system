@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Divider, Text } from '..'
-import { defaultArgs, argTypes } from './Text.stories.args'
-import { getTextColorOn, textStylesValues } from '../utils'
+import { Box } from '../Box/Box'
+import { Divider } from '../Divider/Divider'
 import { colorSchemeNames } from '../storybook/args'
+import { textStylesValues } from '../utils/attrs/typographyAttrs'
+import { getTextColorOn } from '../utils/utils'
+import { Text } from './Text'
+import { argTypes, defaultArgs } from './Text.stories.args'
 
 export default {
   title: 'Typography / Text',

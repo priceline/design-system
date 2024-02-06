@@ -40,15 +40,7 @@ exports[`Input it renders 1`] = `
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c0:disabled,
-.c0:read-only {
+.c0:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -126,15 +118,7 @@ exports[`Input it renders an input element with a really large padding and margi
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c0:disabled,
-.c0:read-only {
+.c0:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -210,15 +194,7 @@ exports[`Input it renders an input element with a red border with a color prop i
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c0:disabled,
-.c0:read-only {
+.c0:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -295,15 +271,7 @@ exports[`Input it renders an input element with large text 1`] = `
   display: none;
 }
 
-.c0:disabled,
-.c0:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c0:disabled,
-.c0:read-only {
+.c0:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;

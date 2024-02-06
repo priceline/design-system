@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const SrOnly = styled.span`
+export const SrOnly = styled.span`
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -12,5 +12,3 @@ const SrOnly = styled.span`
 `
 
 SrOnly.displayName = 'SrOnly'
-
-export default SrOnly

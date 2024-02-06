@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading } from '..'
+import { Heading } from './Heading'
 
 const description =
   'A type of the <Text> component' +
@@ -31,10 +31,6 @@ export const UsingDotNotationWithH1H6 = () => (
   </section>
 )
 
-UsingDotNotationWithH1H6.story = {
-  name: 'Using dot-notation with h1-h6',
-}
-
 export const WithTextShadows = () => (
   <section>
     <Heading.h1 enableTextShadow>Heading h1</Heading.h1>
@@ -60,14 +56,14 @@ export const UsingTextProps = () => (
   </section>
 )
 
-UsingTextProps.story = {
-  name: 'Using <Text> props',
-}
-
 export const ColorSchemes = () => (
   <section>
     <Heading.h1 colorScheme='primary'>Heading Left</Heading.h1>
     <Heading.h2 colorScheme='secondaryLight'>Heading Left</Heading.h2>
     <Heading.h3 colorScheme='cautionLight'>Heading Left</Heading.h3>
+    <Heading.h4 colorScheme='heading'>Heading Left</Heading.h4>
+    <Heading.h4 colorScheme='headingBase'>Heading Left</Heading.h4>
+    <Heading.h5 colorScheme='headingLight'>Heading Left</Heading.h5>
+    <Heading.h6 colorScheme='headingOnPrimaryLight'>Heading Left</Heading.h6>
   </section>
 )

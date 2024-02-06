@@ -1,19 +1,24 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import styled, { withTheme } from 'styled-components'
 import {
   Attention as AttentionIcon,
   Information as InformationIcon,
   Success as SuccessIcon,
   Warning as WarningIcon,
 } from 'pcln-icons'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Text } from '../Text'
-import { CloseButton } from '../CloseButton'
-import { applyVariations, deprecatedColorValue } from '../utils'
+import React from 'react'
+import styled from 'styled-components'
+import { Box, type BoxProps } from '../Box/Box'
+import { CloseButton } from '../CloseButton/CloseButton'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { applyVariations } from '../utils/utils'
 
-const bannerColors = {
+export type BannerColor = {
+  backgroundColor?: string
+  color?: string
+  icon?: React.ReactElement
+}
+
+const bannerColors: Record<string, BannerColor> = {
   green: {
     backgroundColor: 'secondary.base',
     color: 'text.lightest',
@@ -55,19 +60,19 @@ const StyledBox = styled(Box)`
   ${applyVariations('Banner')}
 `
 
-const propTypes = {
-  header: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  icon: PropTypes.node,
-  onClose: PropTypes.func,
-  showIcon: PropTypes.bool,
-  text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  textAlign: PropTypes.string,
-  color: deprecatedColorValue(),
-  bg: deprecatedColorValue(),
-  children: PropTypes.node,
+export type BannerProps = BoxProps & {
+  bg?: string
+  color?: string
+  children?: React.ReactNode
+  header?: string | React.ReactNode
+  icon?: React.ReactElement
+  onClose?: () => void
+  showIcon?: boolean
+  text?: string | React.ReactNode
+  textAlign?: string
 }
 
-const Banner: React.FC<InferProps<typeof propTypes>> = (props) => {
+export function Banner(props: BannerProps): React.ReactElement {
   const bannerColor = bannerColors[!props.bg && props.color === 'green' ? props.color : props.bg] || {}
   const Icon = props.icon || bannerColor.icon
   const color = !bannerColor.color ? props.color : bannerColor.color
@@ -97,8 +102,6 @@ const Banner: React.FC<InferProps<typeof propTypes>> = (props) => {
   )
 }
 
-Banner.propTypes = propTypes
-
 Banner.displayName = 'Banner'
 
 Banner.defaultProps = {
@@ -106,5 +109,3 @@ Banner.defaultProps = {
   showIcon: true,
   color: 'green',
 }
-
-export default withTheme(Banner)

@@ -19,15 +19,14 @@ jobs:
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 2
           token: ${{ secrets.GH_PAT }}
 
-      - name: Use Node.js 16
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18.x
 
       - name: PNPM cache via actions/cache@v3
         id: pnpm-cache

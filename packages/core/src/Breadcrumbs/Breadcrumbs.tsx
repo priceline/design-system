@@ -1,23 +1,25 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import BreadcrumbLink, { IBreadcrumbLink } from './BreadcrumbLink'
-import { Flex } from '../Flex'
+import { Flex } from '../Flex/Flex'
+import { BreadcrumbLink, type BreadcrumbLinkProps } from './BreadcrumbLink'
 
-const propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+export type BreadcrumbsProps = {
+  className?: string
+  children?: React.ReactNode
 }
 
-const Breadcrumbs: React.FC<InferProps<typeof propTypes>> & { Link: React.FC<IBreadcrumbLink> } = ({
+export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Link: React.FC<BreadcrumbLinkProps> } = ({
   className,
   children,
 }) => {
   return (
     <Flex className={className}>
       {React.Children.map(children, (child, i) => {
-        const isLastChild = i === children.length - 1
+        const isLastChild = i === React.Children.count(children) - 1
 
-        return React.cloneElement(child, { isLastChild })
+        if (React.isValidElement(child)) {
+          // @ts-ignore
+          return React.cloneElement(child, { isLastChild })
+        }
       })}
     </Flex>
   )
@@ -26,11 +28,3 @@ const Breadcrumbs: React.FC<InferProps<typeof propTypes>> & { Link: React.FC<IBr
 Breadcrumbs.displayName = 'Breadcrumbs'
 
 Breadcrumbs.Link = BreadcrumbLink
-
-Breadcrumbs.propTypes = propTypes
-
-Breadcrumbs.defaultProps = {
-  className: '',
-}
-
-export default Breadcrumbs

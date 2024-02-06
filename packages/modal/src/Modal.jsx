@@ -54,7 +54,6 @@ const Dialog = styled(DialogContent)`
   margin-right: auto;
   box-shadow: ${(props) => props.theme.shadows['overlay-xl']};
   border-radius: ${({ borderRadius }) => themeGet(`borderRadii.${borderRadius}`)};
-  overflow-y: auto;
   &:focus {
     outline: none;
   }

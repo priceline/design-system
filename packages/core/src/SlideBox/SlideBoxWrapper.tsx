@@ -1,21 +1,19 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import { Box } from '../Box'
-import { Relative } from '../Relative'
-import { Flex } from '../Flex'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Relative } from '../Relative/Relative'
+import { type ArrowPosition } from './Arrow'
 
-const propTypes = {
-  children: PropTypes.node,
-  arrowPosition: PropTypes.oneOf(['top', 'bottom', 'side', 'hide', undefined]),
+export type SlideBoxWrapperProps = {
+  arrowPosition?: ArrowPosition
+  children: React.ReactNode
 }
-
-const SlideBoxWrapper: React.FC<InferProps<typeof propTypes>> = ({ children, arrowPosition }) =>
-  arrowPosition === 'side' ? (
+export function SlideBoxWrapper({ children, arrowPosition }: SlideBoxWrapperProps): JSX.Element {
+  return arrowPosition === 'side' ? (
     <Relative>
       <Flex alignItems='center'>{children}</Flex>
     </Relative>
   ) : (
     <Box>{children}</Box>
   )
-
-export { SlideBoxWrapper }
+}

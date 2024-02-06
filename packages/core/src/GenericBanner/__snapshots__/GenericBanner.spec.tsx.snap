@@ -15,6 +15,10 @@ exports[`GenericBanner renders 1`] = `
   outline: none;
 }
 
+.c7 {
+  font-size: 14px;
+}
+
 .c1 {
   background-color: #0a0;
   color: #fff;
@@ -30,6 +34,10 @@ exports[`GenericBanner renders 1`] = `
 .c9 {
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c3 {
@@ -60,14 +68,6 @@ exports[`GenericBanner renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c7 {
-  font-size: 14px;
-}
-
-.c0 {
-  position: relative;
 }
 
 .c2 {
@@ -113,14 +113,6 @@ exports[`GenericBanner renders 1`] = `
         >
           <div
             className="c9"
-            fontSize={
-              Array [
-                0,
-                null,
-                null,
-                1,
-              ]
-            }
           />
         </div>
       </div>

@@ -1,8 +1,11 @@
 import React from 'react'
+import { Button } from '../Button/Button'
 import { fireEvent, render, screen } from '../__test__/testing-library'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
-
-import { Button, Input, theme, createTheme, getPaletteColor } from '..'
+import { theme } from '../theme/theme'
+import { createTheme } from '../utils/createTheme'
+import { getPaletteColor } from '../utils/utils'
+import { Input } from './Input'
 
 const id = 'fake-test-id'
 

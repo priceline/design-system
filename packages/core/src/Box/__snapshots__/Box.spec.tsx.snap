@@ -46,11 +46,7 @@ exports[`Box maxHeight, maxWidth, minHeight, minWidth 1`] = `
 
 exports[`Box overflow prop sets overflow 1`] = `
 <DocumentFragment>
-  .c1 {
-  overflow: scroll;
-}
-
-.c0 {
+  .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
   font-weight: 500;
@@ -58,6 +54,10 @@ exports[`Box overflow prop sets overflow 1`] = `
 
 .c0 * {
   box-sizing: border-box;
+}
+
+.c1 {
+  overflow: scroll;
 }
 
 <div

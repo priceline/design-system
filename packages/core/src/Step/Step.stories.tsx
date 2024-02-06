@@ -1,7 +1,6 @@
-import React from 'react'
 import { action } from '@storybook/addon-actions'
-
-import { Step } from '.'
+import React from 'react'
+import { Step } from './Step'
 
 const onClick = action('Step Clicked')
 
@@ -19,10 +18,6 @@ export default {
 
 export const StepComponent = () => <Step>Step</Step>
 
-StepComponent.story = {
-  name: 'Step component',
-}
-
 export const CurrentStep = () => <Step active>Step</Step>
 export const CompletedStep = () => <Step completed>Step</Step>
 
@@ -31,9 +26,5 @@ export const CurrentAndCompletedStep = () => (
     Step
   </Step>
 )
-
-CurrentAndCompletedStep.story = {
-  name: 'Current and Completed Step',
-}
 
 export const ClickableStep = () => <Step onClick={onClick}>Step</Step>

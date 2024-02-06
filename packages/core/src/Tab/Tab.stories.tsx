@@ -4,7 +4,7 @@ import { Tab } from '.'
 import { StoryStage } from '../DocsUtils'
 import { ITabsProps } from './Tab'
 import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
-import { Icon } from '../Icon'
+import { Icon } from '../Icon/Icon'
 const defaultArgs: ITabsProps = {
   size: 'md',
   hasHover: true,

@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '../__test__/testing-library'
-
-import { theme, Box } from '..'
+import { theme } from '../theme/theme'
+import { Box } from './Box'
 
 describe('Box', () => {
   test('renders', () => {

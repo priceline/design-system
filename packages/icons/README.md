@@ -41,7 +41,7 @@ Custom icon SVGs are included in the `svg/` directory.
 To build the icons locally, run:
 
 ```sh
-npm run prepare
+rushx build
 ```
 
 Run tests:

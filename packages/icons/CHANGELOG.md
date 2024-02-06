@@ -1,6 +1,71 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 25 Jul 2023 18:42:42 GMT and should not be manually modified.
+This log was last generated on Tue, 30 Jan 2024 20:31:23 GMT and should not be manually modified.
+
+## 6.0.1
+Tue, 30 Jan 2024 20:31:23 GMT
+
+### Patches
+
+- Correct peerDeps for DSv6
+
+## 6.0.0
+Fri, 12 Jan 2024 16:09:00 GMT
+
+### Breaking changes
+
+- React 18 upgrade
+
+### Minor changes
+
+- Upgrade all @rushstack dependencies to latest
+
+## 5.14.0
+Fri, 12 Jan 2024 15:07:44 GMT
+
+### Minor changes
+
+- Added new icons refund and currencyExchange
+
+## 5.13.0
+Wed, 13 Dec 2023 22:03:38 GMT
+
+### Minor changes
+
+- Add icon
+
+## 5.12.1
+Fri, 20 Oct 2023 16:38:34 GMT
+
+### Patches
+
+- lint fix
+
+## 5.12.0
+Fri, 15 Sep 2023 20:57:00 GMT
+
+### Minor changes
+
+- add attraction svg icon to pcln-icons
+
+## 5.11.1
+Fri, 15 Sep 2023 14:19:20 GMT
+
+### Patches
+
+- Upgrade pnpm, Storybook ecosystem, typescript and jest
+
+## 5.11.0
+Mon, 31 Jul 2023 13:51:05 GMT
+
+### Minor changes
+
+- Add PushPin and PushPinBorder icons
+- Update icons from 48px to 24px
+
+### Patches
+
+- add celebration icon
 
 ## 5.10.0
 Tue, 25 Jul 2023 18:42:42 GMT

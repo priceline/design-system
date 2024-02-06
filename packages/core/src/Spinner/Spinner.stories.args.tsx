@@ -67,4 +67,14 @@ export const argTypes = {
       options: icons,
     },
   },
+  useGradient: {
+    name: 'useGradient',
+    type: { name: 'boolean', required: false },
+    description: 'Control to have a gradient on the ring or not',
+  },
+  strokeWidth: {
+    name: 'strokeWidth',
+    type: { name: 'string', required: false },
+    description: 'Defines the width of the spinner ring(needs to useGradient to work)',
+  },
 }

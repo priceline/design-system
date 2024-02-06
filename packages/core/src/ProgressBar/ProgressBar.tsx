@@ -1,7 +1,8 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
-import { Flex, Box } from '..'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { type PaletteColor, type PaletteFamilyName } from '../theme/theme'
 
 const CustomBox = styled(Box)`
   border-radius: 2px;
@@ -9,23 +10,14 @@ const CustomBox = styled(Box)`
 
 const defaultStepColor = 'background.light'
 
-const propTypes = {
-  steps: PropTypes.arrayOf(
-    PropTypes.shape({
-      color: PropTypes.string,
-    })
-  ).isRequired,
-  currentStep: PropTypes.number.isRequired,
-  stepHeight: PropTypes.string,
-  className: PropTypes.string,
+export type ProgressBarProps = {
+  steps: { color: PaletteColor | PaletteFamilyName }[]
+  currentStep: number
+  stepHeight?: string
+  className?: string
 }
 
-const ProgressBar: React.FC<InferProps<typeof propTypes>> = ({
-  steps,
-  currentStep,
-  stepHeight,
-  className,
-}) => {
+export function ProgressBar({ steps, currentStep, stepHeight, className }: ProgressBarProps) {
   return (
     <Flex className={className}>
       {steps.map((step, index) => {
@@ -45,10 +37,6 @@ const ProgressBar: React.FC<InferProps<typeof propTypes>> = ({
   )
 }
 
-ProgressBar.propTypes = propTypes
-
 ProgressBar.defaultProps = {
   stepHeight: '4px',
 }
-
-export { ProgressBar }

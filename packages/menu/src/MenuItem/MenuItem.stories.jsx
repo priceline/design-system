@@ -22,8 +22,8 @@ const Template = (args) => (
   </MenuItem>
 )
 
-export const Singleline = Template.bind({})
-Singleline.args = {
+export const SinglelineUnselected = Template.bind({})
+SinglelineUnselected.args = {
   children: <SinglelineChildren />,
 }
 
@@ -65,3 +65,9 @@ MultilineSelectedWithStringIconSymbol.args = {
   selected: true,
   children: <MultilineChildren />,
 }
+
+export const ColorProp = () => (
+  <MenuItem selected color='promoPrimary'>
+    This should have promoPrimary color
+  </MenuItem>
+)

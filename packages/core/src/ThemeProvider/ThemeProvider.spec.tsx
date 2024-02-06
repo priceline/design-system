@@ -1,22 +1,14 @@
-import React from 'react'
 import { render } from '@testing-library/react'
-
-import { theme, Box } from '..'
-import { ThemeProvider, Base } from '.'
+import React from 'react'
+import { Box } from '../Box/Box'
+import { theme } from '../theme/theme'
+import { Base, ThemeProvider } from './ThemeProvider'
 
 describe('ThemeProvider', () => {
   describe('ThemeProvider: ThemeProvider', () => {
     it('should render correctly without throwing', () => {
       expect(() => {
         const { asFragment } = render(<ThemeProvider />)
-
-        expect(asFragment()).toMatchSnapshot()
-      }).not.toThrow()
-    })
-
-    it('should render correctly without throwing with the "legacy" prop', () => {
-      expect(() => {
-        const { asFragment } = render(<ThemeProvider legacy />)
 
         expect(asFragment()).toMatchSnapshot()
       }).not.toThrow()

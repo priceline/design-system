@@ -2,8 +2,6 @@
 
 [![Coverage][coverage-badge]][coverage]
 [![npm version][npm version]][npm version]
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/priceline/design-system.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priceline/design-system/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/priceline/design-system.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/priceline/design-system/context:javascript)
 ![bundlephobia-badge]
 
 ```sh
@@ -12,7 +10,6 @@ npm install pcln-design-system
 
 ## Documentation
 
-- [Docs][site]
 - [Storybook][storybook]
 
 ## Motivation
@@ -43,6 +40,5 @@ We hope to accomplish these goals by:
 [coverage]: https://codecov.io/github/priceline/design-system
 [coverage-badge]: https://img.shields.io/codecov/c/github/priceline/design-system.svg?style=flat-square
 [npm version]: https://img.shields.io/npm/v/pcln-design-system.svg?style=flat-square
-[site]: https://priceline.github.io/design-system/
-[storybook]: https://priceline.github.io/design-system/storybook/
+[storybook]: https://main--5a85e56213417800200978ab.chromatic.com
 [bundlephobia-badge]: https://badgen.net/bundlephobia/minzip/pcln-design-system?color=cyan

@@ -1,6 +1,10 @@
 import React from 'react'
-
-import { Box, Button, Input, Label, InputGroup, FormField } from '..'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { FormField } from '../FormField/FormField'
+import { Input } from '../Input/Input'
+import { InputGroup } from '../InputGroup/InputGroup'
+import { Label } from '../Label/Label'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 
 export default {
@@ -46,10 +50,6 @@ export function ForwardRefs() {
   return <ForwardRefDemo refChild={refChild} />
 }
 
-ForwardRefs.story = {
-  name: 'Forward refs',
-}
-
 export const WithExternalLabel = () => (
   <Box width={400}>
     <Label fontSize={4} htmlFor='sample-input'>
@@ -58,10 +58,6 @@ export const WithExternalLabel = () => (
     <Input id='sample-input' placeholder='Click the label' />
   </Box>
 )
-
-WithExternalLabel.story = {
-  name: 'With external label',
-}
 
 export const GroupedInputs = () => (
   <InputGroup>

@@ -1,8 +1,6 @@
 import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
 import styled from 'styled-components'
-
-import { Image } from '../Image'
+import { Image } from '../Image/Image'
 
 const RandomImage = styled(Image)`
   height: ${(props) => props.height}px;
@@ -26,15 +24,15 @@ const determineSRC = (blur, chooseSrc, height, width) => {
   return imageURLs[randomNum]
 }
 
-const propTypes = {
-  ariaHidden: PropTypes.bool,
-  blur: PropTypes.bool,
-  chooseSrc: PropTypes.string,
-  height: PropTypes.string,
-  width: PropTypes.string,
+export type PlaceholderImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+  ariaHidden?: boolean
+  blur?: boolean
+  chooseSrc?: string
+  height?: string
+  width?: string
 }
 
-const PlaceholderImage: React.FC<InferProps<typeof propTypes>> = (props) => {
+export function PlaceholderImage(props: PlaceholderImageProps) {
   const { alt, ariaHidden, blur, chooseSrc, className, height, width } = props
 
   return (
@@ -52,13 +50,9 @@ const PlaceholderImage: React.FC<InferProps<typeof propTypes>> = (props) => {
 
 PlaceholderImage.displayName = 'PlaceholderImage'
 
-PlaceholderImage.propTypes = propTypes
-
 PlaceholderImage.defaultProps = {
   ariaHidden: true,
   blur: false,
   height: '500',
   width: '500',
 }
-
-export default PlaceholderImage

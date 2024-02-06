@@ -1,14 +1,11 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
+import { Close, Minus } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box'
-import { Button } from '../Button'
-import { Flex } from '../Flex'
-import { Hide } from '../Hide'
-import { Close, Minus } from 'pcln-icons'
-import { getPaletteColor } from '../utils'
+import { Box } from '../Box/Box'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Hide } from '../Hide/Hide'
+import { getPaletteColor } from '../utils/utils'
 
 const BorderBottomFlex = styled(Flex)`
   border-bottom: 1px solid ${getPaletteColor('border.base')};
@@ -25,13 +22,13 @@ const HeaderButton = styled(Button)`
   }
 `
 
-export interface IChatHeader {
-  children: React.ReactElement
+export type ChatHeaderProps = {
+  children: React.ReactNode
   onClose: () => void
   onMinimize: () => void
 }
 
-function ChatHeader({ children, onClose, onMinimize }: IChatHeader) {
+export function ChatHeader({ children, onClose, onMinimize }: ChatHeaderProps) {
   return (
     <BorderBottomFlex alignItems='center' justifyContent='space-between' p={3}>
       <Box>{children}</Box>
@@ -44,5 +41,3 @@ function ChatHeader({ children, onClose, onMinimize }: IChatHeader) {
     </BorderBottomFlex>
   )
 }
-
-export default ChatHeader

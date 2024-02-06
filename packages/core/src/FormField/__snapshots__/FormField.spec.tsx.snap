@@ -16,59 +16,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   outline: none;
 }
 
-.c1 {
-  border-radius: 12px;
-}
-
-.c5 {
-  margin-right: -40px;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c2 {
-  background-color: #edf0f3;
-}
-
-.c2.c2.c2 * {
-  background-color: transparent;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
 .c9 {
   position: relative;
   -webkit-appearance: none;
@@ -109,15 +56,7 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: none;
 }
 
-.c9:disabled,
-.c9:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c9:disabled,
-.c9:read-only {
+.c9:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -129,6 +68,50 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   box-shadow: 0 0 0 2px #0068ef;
 }
 
+.c3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c5 {
+  margin-right: -40px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c0 {
   font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
   line-height: 1.4;
@@ -137,6 +120,16 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
 
 .c0 * {
   box-sizing: border-box;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width:32em) {
@@ -237,6 +230,24 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   outline: none;
 }
 
+.c3 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
 .c1 {
   border-radius: 12px;
 }
@@ -267,33 +278,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   display: flex;
 }
 
-.c3 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c2 {
-  background-color: #edf0f3;
-}
-
-.c2.c2.c2 * {
-  background-color: transparent;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
 .c13 {
   pointer-events: none;
 }
@@ -302,28 +286,27 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
   background-color: transparent;
   border-radius: 12px;
-  border-width: 1px;
   border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
+  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
-  border-radius: 12px;
 }
 
 .c10::-ms-expand {
   display: none;
 }
 
-.c10:disabled,
-.c10[readOnly] {
+.c10:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -344,6 +327,16 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
 
 .c0 * {
   box-sizing: border-box;
+}
+
+.c2 {
+  background-color: #edf0f3;
+}
+
+.c2.c2.c2 * {
+  background-color: transparent;
+  color: #4f6f8f;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width:32em) {
@@ -438,38 +431,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
 `;
 
 exports[`FormField renders 1`] = `
-.c0 {
-  border-radius: 12px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
 .c3 {
   position: relative;
   -webkit-appearance: none;
@@ -509,15 +470,7 @@ exports[`FormField renders 1`] = `
   display: none;
 }
 
-.c3:disabled,
-.c3:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c3:disabled,
-.c3:read-only {
+.c3:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -527,6 +480,39 @@ exports[`FormField renders 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width:32em) {
@@ -606,49 +592,6 @@ exports[`FormField renders with Icon 1`] = `
   outline: none;
 }
 
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
 .c7 {
   position: relative;
   -webkit-appearance: none;
@@ -689,15 +632,7 @@ exports[`FormField renders with Icon 1`] = `
   display: none;
 }
 
-.c7:disabled,
-.c7:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c7:disabled,
-.c7:read-only {
+.c7:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -707,6 +642,50 @@ exports[`FormField renders with Icon 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:32em) {
@@ -807,49 +786,6 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   outline: none;
 }
 
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
 .c7 {
   position: relative;
   -webkit-appearance: none;
@@ -890,15 +826,7 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   display: none;
 }
 
-.c7:disabled,
-.c7:-moz-read-only {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c7:disabled,
-.c7:read-only {
+.c7:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -908,6 +836,50 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c0 {
+  border-radius: 12px;
+}
+
+.c3 {
+  margin-right: -40px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:32em) {
@@ -1008,6 +980,24 @@ exports[`FormField renders with Select  1`] = `
   outline: none;
 }
 
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
 .c0 {
   border-radius: 12px;
 }
@@ -1027,23 +1017,6 @@ exports[`FormField renders with Select  1`] = `
   align-items: center;
 }
 
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
 .c7 {
   pointer-events: none;
 }
@@ -1052,27 +1025,26 @@ exports[`FormField renders with Select  1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
   background-color: transparent;
   border-radius: 12px;
-  border-width: 1px;
   border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
+  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
-  border-radius: 12px;
 }
 
 .c4::-ms-expand {
   display: none;
 }
 
-.c4:disabled,
-.c4[readOnly] {
+.c4:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
@@ -1195,6 +1167,24 @@ exports[`FormField renders with Select and Icon 1`] = `
   outline: none;
 }
 
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
 .c0 {
   border-radius: 12px;
 }
@@ -1225,23 +1215,6 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: flex;
 }
 
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  color: #4f6f8f;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
 .c11 {
   pointer-events: none;
 }
@@ -1250,28 +1223,27 @@ exports[`FormField renders with Select and Icon 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
   background-color: transparent;
   border-radius: 12px;
-  border-width: 1px;
   border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
+  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
-  border-radius: 12px;
 }
 
 .c8::-ms-expand {
   display: none;
 }
 
-.c8:disabled,
-.c8[readOnly] {
+.c8:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;

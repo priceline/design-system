@@ -2,6 +2,544 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "6.0.4",
+      "tag": "pcln-autocomplete_v6.0.4",
+      "date": "Mon, 05 Feb 2024 21:51:20 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.2.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.2.1` to `^6.2.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.0.3",
+      "tag": "pcln-autocomplete_v6.0.3",
+      "date": "Tue, 30 Jan 2024 20:31:23 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.2.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.0.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.2.0` to `^6.2.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.0.2",
+      "tag": "pcln-autocomplete_v6.0.2",
+      "date": "Mon, 22 Jan 2024 16:15:34 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.2.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.1.0` to `^6.2.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.0.1",
+      "tag": "pcln-autocomplete_v6.0.1",
+      "date": "Mon, 22 Jan 2024 14:06:39 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.0.0` to `^6.1.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.0.0",
+      "tag": "pcln-autocomplete_v6.0.0",
+      "date": "Fri, 12 Jan 2024 16:09:00 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgrade all @rushstack dependencies to latest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ],
+        "major": [
+          {
+            "comment": "React 18 upgrade",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "7782cd334381e033a125d4ee95721e8334e576f9"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.28.3` to `^6.0.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.36",
+      "tag": "pcln-autocomplete_v5.3.36",
+      "date": "Fri, 12 Jan 2024 15:07:44 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.14.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.35",
+      "tag": "pcln-autocomplete_v5.3.35",
+      "date": "Wed, 13 Dec 2023 22:03:38 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.13.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.34",
+      "tag": "pcln-autocomplete_v5.3.34",
+      "date": "Mon, 11 Dec 2023 16:41:10 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.28.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.28.2` to `^5.28.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.33",
+      "tag": "pcln-autocomplete_v5.3.33",
+      "date": "Thu, 07 Dec 2023 17:59:07 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.28.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.28.1` to `^5.28.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.32",
+      "tag": "pcln-autocomplete_v5.3.32",
+      "date": "Thu, 30 Nov 2023 15:11:14 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.28.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.28.0` to `^5.28.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.31",
+      "tag": "pcln-autocomplete_v5.3.31",
+      "date": "Mon, 27 Nov 2023 22:06:22 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.28.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.5` to `^5.28.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.30",
+      "tag": "pcln-autocomplete_v5.3.30",
+      "date": "Tue, 21 Nov 2023 21:18:48 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.5`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.4` to `^5.27.5`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.29",
+      "tag": "pcln-autocomplete_v5.3.29",
+      "date": "Mon, 20 Nov 2023 16:01:48 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.4`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.3` to `^5.27.4`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.28",
+      "tag": "pcln-autocomplete_v5.3.28",
+      "date": "Wed, 15 Nov 2023 16:54:32 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.2` to `^5.27.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.27",
+      "tag": "pcln-autocomplete_v5.3.27",
+      "date": "Mon, 13 Nov 2023 19:10:51 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.1` to `^5.27.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.26",
+      "tag": "pcln-autocomplete_v5.3.26",
+      "date": "Tue, 07 Nov 2023 22:14:21 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.27.0` to `^5.27.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.25",
+      "tag": "pcln-autocomplete_v5.3.25",
+      "date": "Thu, 02 Nov 2023 19:24:44 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.27.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.26.0` to `^5.27.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.24",
+      "tag": "pcln-autocomplete_v5.3.24",
+      "date": "Tue, 31 Oct 2023 23:55:47 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.26.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.25.1` to `^5.26.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.23",
+      "tag": "pcln-autocomplete_v5.3.23",
+      "date": "Tue, 31 Oct 2023 16:34:17 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.25.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.25.0` to `^5.25.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.22",
+      "tag": "pcln-autocomplete_v5.3.22",
+      "date": "Fri, 20 Oct 2023 16:38:34 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.12.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.21",
+      "tag": "pcln-autocomplete_v5.3.21",
+      "date": "Mon, 16 Oct 2023 17:31:18 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.25.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.24.2` to `^5.25.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.20",
+      "tag": "pcln-autocomplete_v5.3.20",
+      "date": "Mon, 25 Sep 2023 17:18:04 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.24.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.24.1` to `^5.24.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.19",
+      "tag": "pcln-autocomplete_v5.3.19",
+      "date": "Fri, 22 Sep 2023 18:13:30 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.24.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.24.0` to `^5.24.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.18",
+      "tag": "pcln-autocomplete_v5.3.18",
+      "date": "Fri, 22 Sep 2023 14:37:35 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.24.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.23.0` to `^5.24.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.17",
+      "tag": "pcln-autocomplete_v5.3.17",
+      "date": "Wed, 20 Sep 2023 18:06:28 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.23.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.22.0` to `^5.23.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.16",
+      "tag": "pcln-autocomplete_v5.3.16",
+      "date": "Mon, 18 Sep 2023 18:48:01 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.22.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.21.0` to `^5.22.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.15",
+      "tag": "pcln-autocomplete_v5.3.15",
+      "date": "Fri, 15 Sep 2023 20:57:00 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.12.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.14",
+      "tag": "pcln-autocomplete_v5.3.14",
+      "date": "Fri, 15 Sep 2023 14:19:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade pnpm, Storybook ecosystem, typescript and jest",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "bc4d730a54107788534346773af20a449806d3f0"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.21.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.11.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.20.2` to `^5.21.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.13",
+      "tag": "pcln-autocomplete_v5.3.13",
+      "date": "Wed, 23 Aug 2023 18:39:11 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.20.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.20.1` to `^5.20.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.12",
+      "tag": "pcln-autocomplete_v5.3.12",
+      "date": "Wed, 23 Aug 2023 16:19:14 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.20.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.20.0` to `^5.20.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.11",
+      "tag": "pcln-autocomplete_v5.3.11",
+      "date": "Mon, 21 Aug 2023 19:12:20 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.20.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.19.0` to `^5.20.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.10",
+      "tag": "pcln-autocomplete_v5.3.10",
+      "date": "Thu, 10 Aug 2023 14:28:26 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Replace more Jest tests with Storybook stories and interaction tests",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "27679715d0c1d0f0072914d453db4526db9d1479"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.19.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.18.0` to `^5.19.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.9",
+      "tag": "pcln-autocomplete_v5.3.9",
+      "date": "Wed, 09 Aug 2023 15:37:24 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.18.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.17.0` to `^5.18.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "5.3.8",
+      "tag": "pcln-autocomplete_v5.3.8",
+      "date": "Mon, 31 Jul 2023 13:51:05 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `5.17.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `5.11.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^5.16.0` to `^5.17.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "5.3.7",
       "tag": "pcln-autocomplete_v5.3.7",
       "date": "Tue, 25 Jul 2023 18:42:42 GMT",

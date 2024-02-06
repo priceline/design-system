@@ -1,16 +1,15 @@
-/* istanbul ignore file */
-// todo: remove coverage ignore once storybook interaction test coverage counts
-
+import themeGet from '@styled-system/theme-get'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
-import { Button, Flex, Grid } from '../'
+import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
+import { Grid } from '../Grid/Grid'
 
 const GappedFlex = styled(Flex)`
   gap: ${themeGet('space.2')};
 `
 
-export interface IChatActionContainer {
+export type ChatActionContainerProps = {
   chatActions: IChatAction[]
 }
 
@@ -19,7 +18,7 @@ export interface IChatAction {
   onClick: () => void
 }
 
-function ChatActionContainer({ chatActions }: IChatActionContainer) {
+export function ChatActionContainer({ chatActions }: ChatActionContainerProps) {
   const actions = useMemo(() => {
     return chatActions.map((chatAction) => (
       <Button key={chatAction.label} boxShadowSize='sm' variation='white' onClick={chatAction.onClick}>
@@ -42,5 +41,3 @@ function ChatActionContainer({ chatActions }: IChatActionContainer) {
     )
   }
 }
-
-export default ChatActionContainer

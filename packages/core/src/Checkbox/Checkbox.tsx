@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import styled, { withTheme } from 'styled-components'
 import { BoxChecked, BoxEmpty, BoxMinus } from 'pcln-icons'
-import PropTypes, { InferProps } from 'prop-types'
-import { applyVariations, getPaletteColor, deprecatedColorValue } from '../utils'
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import { applyVariations, getPaletteColor } from '../utils/utils'
 
-const propTypes = {
-  id: PropTypes.string.isRequired,
-  indeterminate: PropTypes.bool,
-  size: PropTypes.number,
-  onChange: PropTypes.func,
-  color: deprecatedColorValue(),
-  unselectedColor: PropTypes.string,
-}
-
-const CheckBoxWrapper = styled.div`
+const CheckBoxWrapper = styled.div<CheckboxProps>`
   display: inline-flex;
   align-items: center;
   position: relative;
   vertical-align: middle;
   padding: 2px;
-  cursor: ${(props) => (props.disabled ? `default` : `pointer`)};
+  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
   background-color: inherit;
   color: ${(props) =>
     props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('border.dark')(props)};
@@ -102,8 +92,20 @@ const StyledInput = styled.input`
   z-index: 0;
 `
 
-const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props, ref) => {
-  // eslint-disable-next-line react/prop-types
+export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
+  id: string
+  indeterminate?: boolean
+  size?: number
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+  color?: string
+  checked?: boolean
+  defaultChecked?: boolean
+  disabled?: boolean
+  ref?: React.Ref<HTMLInputElement>
+  unselectedColor?: string
+}
+
+export const Checkbox: React.FC<CheckboxProps> = React.forwardRef((props, ref) => {
   const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
 
   const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)
@@ -122,13 +124,7 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
   // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
   const borderAdjustedSize = size + 4
   return (
-    <CheckBoxWrapper
-      // eslint-disable-next-line react/prop-types
-      theme={props.theme}
-      color={props.color}
-      disabled={disabled}
-      unselectedColor={unselectedColor}
-    >
+    <CheckBoxWrapper color={props.color} disabled={disabled} unselectedColor={unselectedColor}>
       <StyledInput
         type='checkbox'
         {...props}
@@ -147,12 +143,9 @@ const Checkbox: React.FC<InferProps<typeof propTypes>> = React.forwardRef((props
 
 Checkbox.displayName = 'Checkbox'
 
-Checkbox.propTypes = propTypes
 Checkbox.defaultProps = {
   size: 20,
   indeterminate: false,
   color: 'primary',
   unselectedColor: 'text.light',
 }
-
-export default withTheme(Checkbox)

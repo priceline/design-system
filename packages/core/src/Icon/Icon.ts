@@ -1,3 +1,4 @@
-import { Icon } from 'pcln-icons'
+import { Icon as PclnIcon } from 'pcln-icons'
+
+export const Icon = PclnIcon
 Icon.isIcon = true
-export default Icon

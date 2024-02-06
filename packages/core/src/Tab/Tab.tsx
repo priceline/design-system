@@ -1,7 +1,7 @@
 import React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
 import { TabContainer, TabList } from './Tab.styled'
-import { Box } from '../Box'
+import { Box } from '../Box/Box'
 import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'

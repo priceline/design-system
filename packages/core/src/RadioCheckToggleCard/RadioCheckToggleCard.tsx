@@ -2,8 +2,10 @@ import { themeGet } from '@styled-system/theme-get'
 import { BoxChecked, BoxEmpty, Check, RadioChecked, RadioEmpty } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Toggle } from '..'
-import { getPaletteColor } from '../utils'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Toggle } from '../Toggle/Toggle'
+import { getPaletteColor } from '../utils/utils'
 
 export const cardTypes = ['radio', 'checkbox', 'toggle'] as const
 export const hPositions = ['left', 'right'] as const
@@ -13,7 +15,7 @@ export type TCardTypes = (typeof cardTypes)[number]
 export type THPositions = (typeof hPositions)[number]
 export type TVPositions = (typeof vPositions)[number]
 
-export interface IRadioCheckToggleCard {
+export type RadioCheckToggleCardProps = {
   children?: React.ReactNode | string
   cardType?: TCardTypes
   hPosition?: THPositions
@@ -140,7 +142,7 @@ const buttonIcon = (cardType: TCardTypes) => {
   }
 }
 
-const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
+export function RadioCheckToggleCard(props: RadioCheckToggleCardProps) {
   const {
     children,
     cardType,
@@ -194,12 +196,10 @@ const RadioCheckToggleCard = (props: IRadioCheckToggleCard) => {
 RadioCheckToggleCard.displayName = 'RadioCheckToggleCard'
 
 RadioCheckToggleCard.defaultProps = {
-  cardType: 'radio',
+  cardType: 'radio' as TCardTypes,
   isTitleBold: false,
-  hPosition: 'right',
-  vPosition: 'top',
+  hPosition: 'right' as THPositions,
+  vPosition: 'top' as TVPositions,
   isTakingFullHeightOfCard: false,
-  onChange: (e) => {},
-} as IRadioCheckToggleCard
-
-export default RadioCheckToggleCard
+  onChange: () => {},
+}

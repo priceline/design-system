@@ -1,14 +1,10 @@
-import React from 'react'
-import PropTypes, { InferProps } from 'prop-types'
-import styled from 'styled-components'
-
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Heading } from '../Heading'
-import { Text } from '../Text'
-
 import { User } from 'pcln-icons'
-import { colorSchemeNames } from '../theme'
+import React from 'react'
+import styled from 'styled-components'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Heading } from '../Heading/Heading'
+import { Text } from '../Text/Text'
 
 const StyledImage = styled(Box)`
   display: flex;
@@ -19,30 +15,30 @@ const StyledImage = styled(Box)`
   background-image: url(${(props) => props.src});
 `
 
-const propTypes = {
-  className: PropTypes.string,
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  src: PropTypes.string,
-  altText: PropTypes.string,
-  initials: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  color: PropTypes.string,
-  colorScheme: PropTypes.oneOfType(colorSchemeNames),
+export type AvatarProps = {
+  className?: string
+  title?: string
+  subtitle?: string
+  src?: string
+  altText?: string
+  initials?: string
+  size?: string | number | Array<string | number | undefined>
+  color?: string
+  colorScheme?: string
 }
 
 /** @public */
-const Avatar: React.FC<InferProps<typeof propTypes>> = ({
-  className,
-  title,
+export function Avatar({
+  altText = 'avatar',
+  className = '',
+  color = 'primary',
+  colorScheme,
+  initials,
   subtitle,
   src,
-  altText,
-  initials,
-  size,
-  color,
-  colorScheme,
-}) => {
+  size = 40,
+  title,
+}: AvatarProps): JSX.Element {
   return (
     <Flex className={className}>
       <StyledImage
@@ -71,14 +67,3 @@ const Avatar: React.FC<InferProps<typeof propTypes>> = ({
 }
 
 Avatar.displayName = 'Avatar'
-
-Avatar.propTypes = propTypes
-
-Avatar.defaultProps = {
-  className: '',
-  color: 'primary',
-  altText: 'avatar',
-  size: 40,
-}
-
-export default Avatar

@@ -1,5 +1,7 @@
 import React from 'react'
-import { Container, Box, Flex } from '..'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { Container } from './Container'
 import { argTypes } from './Container.stories.args'
 
 export default {
@@ -10,32 +12,26 @@ export default {
 
 export const DefaultAlignWithThemeMaxWidth = () => (
   <Container>
-    <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
+    <Box p={4} bg='lightGray' height='100vh'>
       Container Component
     </Box>
   </Container>
 )
-
-DefaultAlignWithThemeMaxWidth.story = {
-  name: 'Default align with theme max width',
-}
 
 export const InputMaxWidth = () => (
   <Container maxWidth={500}>
-    <Box p={4} bg='lightGray' style={{ height: `100vh` }}>
+    <Box p={4} bg='lightGray' height='100vh'>
       Container Component
     </Box>
   </Container>
 )
 
-InputMaxWidth.story = {
-  name: 'Input maxWidth',
-}
-
 const Template = (args) => (
   <Flex width='100%' color='primary'>
-    <Container {...args} style={{ border: `1px solid` }}>
-      <Box color='background.light' style={{ height: `100vh`, border: `1px solid` }}>
+    {/*  @ts-ignore */}
+    <Container {...args} style={{ border: '1px solid' }}>
+      {/*  @ts-ignore */}
+      <Box color='background.light' height='100vh' style={{ border: '1px solid' }}>
         Container Component
       </Box>
     </Container>

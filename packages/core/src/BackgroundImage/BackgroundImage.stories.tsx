@@ -1,6 +1,8 @@
 import React from 'react'
-
-import { BackgroundImage, Box, Text, Card } from '..'
+import { Box } from '../Box/Box'
+import { Card } from '../Card/Card'
+import { Text } from '../Text/Text'
+import { BackgroundImage } from './BackgroundImage'
 import { argTypes, defaultArgs } from './BackgroundImage.stories.args'
 
 export default {

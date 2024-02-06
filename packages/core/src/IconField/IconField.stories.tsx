@@ -1,12 +1,15 @@
-import React from 'react'
-import { IconField, Input, Select, IconButton } from '..'
+import { action } from '@storybook/addon-actions'
 import {
   Calendar as CalendarIcon,
   Check as CheckIcon,
   Close as CloseIcon,
   Visibility as VisibilityIcon,
 } from 'pcln-icons'
-import { action } from '@storybook/addon-actions'
+import React from 'react'
+import { IconButton } from '../IconButton/IconButton'
+import { Input } from '../Input/Input'
+import { Select } from '../Select/Select'
+import { IconField } from './IconField'
 
 export default {
   title: 'IconField',
@@ -20,20 +23,12 @@ export const IconAndInput = () => (
   </IconField>
 )
 
-IconAndInput.story = {
-  name: 'Icon and Input',
-}
-
 export const InputAndIcon = () => (
   <IconField>
     <Input placeholder='Choose Date' />
     <CalendarIcon color='blue' />
   </IconField>
 )
-
-InputAndIcon.story = {
-  name: 'Input and Icon',
-}
 
 export const InputWithMultipleIcons = () => (
   <IconField>
@@ -44,10 +39,6 @@ export const InputWithMultipleIcons = () => (
     <CheckIcon color='success' />
   </IconField>
 )
-
-InputWithMultipleIcons.story = {
-  name: 'Input with multiple Icons',
-}
 
 export const InputAndIconButton = () => (
   <IconField>
@@ -61,10 +52,6 @@ export const InputAndIconButton = () => (
   </IconField>
 )
 
-InputAndIconButton.story = {
-  name: 'Input and Icon Button',
-}
-
 export const IconInputAndIcon = () => (
   <IconField>
     <CalendarIcon color='blue' />
@@ -72,10 +59,6 @@ export const IconInputAndIcon = () => (
     <CheckIcon color='green' />
   </IconField>
 )
-
-IconInputAndIcon.story = {
-  name: 'Icon, Input, and Icon',
-}
 
 export const IconInputAndIconButton = () => (
   <IconField>
@@ -90,10 +73,6 @@ export const IconInputAndIconButton = () => (
   </IconField>
 )
 
-IconInputAndIconButton.story = {
-  name: 'Icon, Input and Icon Button',
-}
-
 export const IconAndSelect = () => (
   <IconField>
     <CalendarIcon color='blue' />
@@ -103,7 +82,3 @@ export const IconAndSelect = () => (
     </Select>
   </IconField>
 )
-
-IconAndSelect.story = {
-  name: 'Icon and Select',
-}

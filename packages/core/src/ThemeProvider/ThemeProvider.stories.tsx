@@ -1,5 +1,7 @@
 import React from 'react'
-import { ThemeProvider, Box, Text } from '..'
+import { Box } from '../Box/Box'
+import { Text } from '../Text/Text'
+import { ThemeProvider } from './ThemeProvider'
 
 export default {
   title: 'ThemeProvider',

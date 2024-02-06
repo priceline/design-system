@@ -1,12 +1,12 @@
-import React from 'react'
-import type { StoryObj } from '@storybook/react'
 import { expect } from '@storybook/jest'
-import { within, userEvent } from '@storybook/testing-library'
-import { Flex } from '../Flex'
-import { Stamp } from '../Stamp'
-import { Text } from '../Text'
+import type { StoryObj } from '@storybook/react'
+import { userEvent, within } from '@storybook/testing-library'
 import { Sparkle } from 'pcln-icons'
-import ChatHeader, { IChatHeader } from './ChatHeader'
+import React from 'react'
+import { Flex } from '../Flex/Flex'
+import { Stamp } from '../Stamp/Stamp'
+import { Text } from '../Text/Text'
+import { ChatHeader, type ChatHeaderProps } from './ChatHeader'
 
 export default {
   title: 'Chat / ChatHeader',
@@ -17,7 +17,7 @@ export default {
   },
 }
 
-type ChatHeaderStory = StoryObj<IChatHeader>
+type ChatHeaderStory = StoryObj<ChatHeaderProps>
 
 const Children = (
   <Flex alignItems='center'>
@@ -35,13 +35,13 @@ export const _ChatHeader: ChatHeaderStory = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
 
-    expect(canvas.getByText('Penny')).toBeInTheDocument()
+    await expect(canvas.getByText('Penny')).toBeInTheDocument()
 
     await userEvent.click(canvas.getAllByRole('button')[0])
-    expect(args.onMinimize).toHaveBeenCalled()
+    await expect(args.onMinimize).toHaveBeenCalled()
 
     await userEvent.click(canvas.getAllByRole('button')[1])
-    expect(args.onClose).toHaveBeenCalled()
+    await expect(args.onClose).toHaveBeenCalled()
   },
   render: (args) => <ChatHeader {...args}>{Children}</ChatHeader>,
 }

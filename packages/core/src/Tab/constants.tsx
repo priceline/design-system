@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box } from '../Box'
-import { Text } from '../Text'
-import { Heading } from '../Heading'
+import { Box } from '../Box/Box'
+import { Text } from '../Text/Text'
+import { Heading } from '../Heading/Heading'
 
 export const DefaultContent = () => {
   return (
