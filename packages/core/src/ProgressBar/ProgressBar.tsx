@@ -10,6 +10,9 @@ const CustomBox = styled(Box)`
 
 const defaultStepColor = 'background.light'
 
+/**
+ * @public
+ */
 export type ProgressBarProps = {
   steps: { color: PaletteColor | PaletteFamilyName }[]
   currentStep: number
@@ -17,6 +20,9 @@ export type ProgressBarProps = {
   className?: string
 }
 
+/**
+ * @public
+ */
 export function ProgressBar({ steps, currentStep, stepHeight, className }: ProgressBarProps) {
   return (
     <Flex className={className}>

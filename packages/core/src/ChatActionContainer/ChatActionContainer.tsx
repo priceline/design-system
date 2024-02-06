@@ -9,15 +9,24 @@ const GappedFlex = styled(Flex)`
   gap: ${themeGet('space.2')};
 `
 
+/**
+ * @public
+ */
 export type ChatActionContainerProps = {
   chatActions: IChatAction[]
 }
 
+/**
+ * @public
+ */
 export interface IChatAction {
   label: string
   onClick: () => void
 }
 
+/**
+ * @public
+ */
 export function ChatActionContainer({ chatActions }: ChatActionContainerProps) {
   const actions = useMemo(() => {
     return chatActions.map((chatAction) => (

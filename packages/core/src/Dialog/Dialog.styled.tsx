@@ -12,7 +12,10 @@ import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { type DialogProps } from './Dialog'
 
+/** @public */
 export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
+
+/** @public */
 export type DialogSize = (typeof dialogSizes)[number]
 
 const sizeStyles: Record<DialogSize, { width?: string; height?: string }> = {

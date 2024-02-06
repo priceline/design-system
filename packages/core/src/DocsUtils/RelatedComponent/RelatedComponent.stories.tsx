@@ -1,9 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { RelatedComponent, RelatedComponentProps } from '.'
-import { Button } from '../..'
+import { RelatedComponent, RelatedComponentProps } from './RelatedComponent'
+import { Button } from '../../Button/Button'
 
 const exampleProps: RelatedComponentProps = {
   name: 'Button',

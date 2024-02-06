@@ -36,9 +36,15 @@ const CustomButton = styled(Button)`
   text-decoration: ${(props) => (props.buttonTextUnderline ? 'underline' : 'none')};
 `
 
+/**
+ * @public
+ */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type Node = React.ReactElement<any, string | React.JSXElementConstructor<any>>
+export type GenericBannerNode = React.ReactElement<any, string | React.JSXElementConstructor<any>>
 
+/**
+ * @public
+ */
 export type GenericBannerProps = AlignItemsProps &
   JustifyContentProps &
   FontSizeProps &
@@ -47,15 +53,15 @@ export type GenericBannerProps = AlignItemsProps &
     buttonClick?: () => unknown
     buttonSize?: 'small' | 'medium' | 'large'
     buttonVariation?: 'fill' | 'outline' | 'link'
-    ctaText?: Node
-    heading?: Node
-    iconLeft?: Node
-    iconRight?: Node
-    imageLeft?: Node
+    ctaText?: GenericBannerNode
+    heading?: GenericBannerNode
+    iconLeft?: GenericBannerNode
+    iconRight?: GenericBannerNode
+    imageLeft?: GenericBannerNode
     linkVariation?: 'fill' | 'outline' | 'link'
     borderRadius?: string
     linkColor?: string
-    text?: Node
+    text?: GenericBannerNode
     URLProps?: {
       href: string
       target?: string
@@ -64,6 +70,9 @@ export type GenericBannerProps = AlignItemsProps &
     colorScheme?: ColorSchemeName
   }
 
+/**
+ * @public
+ */
 export function GenericBanner({
   alignItems,
   buttonClick,

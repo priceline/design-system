@@ -10,11 +10,17 @@ const StyledFlex = styled(Flex)`
   }
 `
 
+/**
+ * @public
+ */
 export type StepperProps = {
   className?: string
   children?: React.ReactNode
 }
 
+/**
+ * @public
+ */
 export function Stepper({ className, children, ...props }: StepperProps): React.ReactElement {
   return (
     <StyledFlex className={className} {...props}>

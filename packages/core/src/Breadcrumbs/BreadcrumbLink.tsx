@@ -3,6 +3,9 @@ import { Flex } from '../Flex/Flex'
 import { Link } from '../Link/Link'
 import { Text } from '../Text/Text'
 
+/**
+ * @public
+ */
 export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
   className?: string
   isLastChild?: boolean
@@ -12,6 +15,9 @@ export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
   onClick?: (unknown) => unknown
 }
 
+/**
+ * @public
+ */
 export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = React.forwardRef(
   ({ className, isLastChild, href, icon, label, onClick }, ref) => {
     const linkColor = isLastChild ? 'text.dark' : 'text.light'

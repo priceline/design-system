@@ -32,6 +32,9 @@ const hidden = (key) => (props) =>
       }
     : null
 
+/**
+ * @public
+ */
 export type HideProps = BoxProps & {
   xs?: boolean
   sm?: boolean
@@ -42,6 +45,9 @@ export type HideProps = BoxProps & {
   print?: boolean
 }
 
+/**
+ * @public
+ */
 export const Hide: React.FC<HideProps> & { text: React.FC<HideProps> } = styled(Box)`
   ${hidden('xs')}
   ${hidden('sm')}

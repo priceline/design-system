@@ -21,9 +21,15 @@ const variations = {
   `,
 }
 
+/**
+ * @public
+ */
 export const backgroundPositionList = ['top', 'bottom', 'left', 'right', 'center']
 const image = (props) => (props.image ? { backgroundImage: `url(${props.image})` } : null)
 
+/**
+ * @public
+ */
 export type BackgroundImageProps = WidthProps &
   HeightProps &
   BorderRadiusProps &
@@ -35,6 +41,9 @@ export type BackgroundImageProps = WidthProps &
     backgroundPosition?: (typeof backgroundPositionList)[number]
   }
 
+/**
+ * @public
+ */
 export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
   background-position: ${(props) => props.backgroundPosition};
   background-size: cover;

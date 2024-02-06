@@ -24,6 +24,9 @@ const determineSRC = (blur, chooseSrc, height, width) => {
   return imageURLs[randomNum]
 }
 
+/**
+ * @public
+ */
 export type PlaceholderImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   ariaHidden?: boolean
   blur?: boolean
@@ -32,6 +35,9 @@ export type PlaceholderImageProps = React.ImgHTMLAttributes<HTMLImageElement> & 
   width?: string
 }
 
+/**
+ * @public
+ */
 export function PlaceholderImage(props: PlaceholderImageProps) {
   const { alt, ariaHidden, blur, chooseSrc, className, height, width } = props
 

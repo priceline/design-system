@@ -36,6 +36,9 @@ const accessiblyHide = (props) =>
       }
     : null
 
+/**
+ * @public
+ */
 export type LabelProps = SpaceProps &
   FontSizeProps &
   FontWeightProps &
@@ -52,6 +55,9 @@ export type LabelProps = SpaceProps &
     onClick?: (evt: unknown) => void
   }
 
+/**
+ * @public
+ */
 export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
   ...typographyAttrs(props),
   ...props,

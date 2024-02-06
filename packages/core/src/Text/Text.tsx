@@ -39,6 +39,9 @@ import { textAlignAttrs } from '../utils/attrs/textAlignAttrs'
 import { typographyAttrs } from '../utils/attrs/typographyAttrs'
 import { applyVariations, colorScheme, getPaletteColor, textTransform, textWrap } from '../utils/utils'
 
+/**
+ * @public
+ */
 export const caps = (props) => {
   if (Array.isArray(props.caps) && props.caps.length === 0) {
     return null
@@ -131,6 +134,9 @@ const textAttrs = (props: TextProps) => ({
   ...textAlignAttrs(props),
 })
 
+/**
+ * @public
+ */
 export const Text = styled.div.attrs(textAttrs)`
   ${textProps}
 `

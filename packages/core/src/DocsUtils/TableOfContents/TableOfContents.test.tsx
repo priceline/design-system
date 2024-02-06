@@ -1,7 +1,7 @@
 import React from 'react'
-
-import { Section, TableOfContents } from '..'
 import { fireEvent, render, screen } from '../../__test__/testing-library'
+import { Section } from '../Section/Section'
+import { TableOfContents } from './TableOfContents'
 
 const testLinks = ['Test 1', 'Test 2', 'Test 3']
 

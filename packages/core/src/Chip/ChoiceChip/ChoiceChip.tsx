@@ -4,8 +4,14 @@ import { ChipContent } from '../ChipContent/ChipContent'
 import { ChipInput } from '../ChipInput'
 import { ChipLabel } from '../ChipLabel'
 
-export type Variations = 'outline' | 'shadow'
+/**
+ * @public
+ */
+export type ChoiceChipVariations = 'outline' | 'shadow'
 
+/**
+ * @public
+ */
 export type ChoiceChipProps = SpaceProps &
   FontSizeProps &
   React.HTMLAttributes<HTMLElement> & {
@@ -14,13 +20,16 @@ export type ChoiceChipProps = SpaceProps &
     selected?: boolean
     label?: string
     value?: string | number
-    variation?: Variations
+    variation?: ChoiceChipVariations
     topLabel?: string
     borderRadius?: string
     width?: string
     justifyContent?: string
   }
 
+/**
+ * @public
+ */
 export function ChoiceChip({
   id,
   name,

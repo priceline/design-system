@@ -6,6 +6,9 @@ import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme/
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
 
+/**
+ * @public
+ */
 export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   ariaDescription: string
   ariaTitle: string
@@ -29,6 +32,9 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   onOpenChange?: (open: boolean) => void
 }
 
+/**
+ * @public
+ */
 const PclnDialog = ({
   ariaDescription,
   ariaTitle,

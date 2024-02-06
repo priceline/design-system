@@ -1,8 +1,14 @@
 import { HTMLMotionProps, motion, Transition } from 'framer-motion'
 import React from 'react'
 
+/**
+ * @public
+ */
 export type TransitionVariant = 'default' | 'spring' | 'comeAndGo' | 'slow'
 
+/**
+ * @public
+ */
 export const TransitionVariants: Record<TransitionVariant, Transition> = {
   default: { duration: 0.25, ease: 'easeInOut' },
   spring: { type: 'spring', duration: 0.75, bounce: 0.5 },
@@ -10,6 +16,9 @@ export const TransitionVariants: Record<TransitionVariant, Transition> = {
   comeAndGo: { repeat: 1, repeatType: 'reverse', duration: 0.25 },
 }
 
+/**
+ * @public
+ */
 export type MotionVariant =
   | 'expandDown'
   | 'fadeIn'
@@ -23,6 +32,9 @@ export type MotionVariant =
   | 'slideOutLeft'
   | 'slideInLeft'
 
+/**
+ * @public
+ */
 export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   expandDown: {
     initial: { scaleY: 0, originY: 0, height: 0 },
@@ -69,6 +81,9 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   },
 }
 
+/**
+ * @public
+ */
 export type AnimateProps = {
   children: React.ReactNode
   variant: MotionVariant
@@ -76,6 +91,9 @@ export type AnimateProps = {
   override?: HTMLMotionProps<'div'>
 }
 
+/**
+ * @public
+ */
 export const Animate = (props: AnimateProps) => {
   const { children, variant, transition, override } = props
   return (

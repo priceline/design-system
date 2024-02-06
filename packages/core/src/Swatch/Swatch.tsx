@@ -14,11 +14,17 @@ const SwatchColor = styled.div`
   cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 `
 
+/**
+ * @public
+ */
 export type SwatchProps = {
   colors: string[]
   onClick?: (color: string) => void
 }
 
+/**
+ * @public
+ */
 export function Swatch({ colors, onClick, ...props }: SwatchProps): React.ReactElement {
   return (
     <Flex flexWrap='wrap' {...props}>
@@ -35,5 +41,3 @@ export function Swatch({ colors, onClick, ...props }: SwatchProps): React.ReactE
 }
 
 Swatch.displayName = 'Swatch'
-
-export default Swatch

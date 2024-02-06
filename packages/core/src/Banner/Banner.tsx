@@ -12,6 +12,9 @@ import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
 import { applyVariations } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type BannerColor = {
   backgroundColor?: string
   color?: string
@@ -60,6 +63,9 @@ const StyledBox = styled(Box)`
   ${applyVariations('Banner')}
 `
 
+/**
+ * @public
+ */
 export type BannerProps = BoxProps & {
   bg?: string
   color?: string
@@ -72,6 +78,9 @@ export type BannerProps = BoxProps & {
   textAlign?: string
 }
 
+/**
+ * @public
+ */
 export function Banner(props: BannerProps): React.ReactElement {
   const bannerColor = bannerColors[!props.bg && props.color === 'green' ? props.color : props.bg] || {}
   const Icon = props.icon || bannerColor.icon

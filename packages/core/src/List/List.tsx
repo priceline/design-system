@@ -5,7 +5,10 @@ import { compose, fontSize, space, width, type FontSizeProps, type SpaceProps } 
 import { type PaletteColor, type PaletteFamilyName } from '../theme/theme'
 import { getPaletteColor } from '../utils/utils'
 
-const tabSpacingSize = {
+/**
+ * @public
+ */
+export const tabSpacingSize = {
   xsm: '16px',
   sm: '24px',
   md: '32px',
@@ -13,7 +16,15 @@ const tabSpacingSize = {
   xl: '48px',
 }
 
-const listStyles = [
+/**
+ * @public
+ */
+export type ListIndentSize = keyof typeof tabSpacingSize | 'none'
+
+/**
+ * @public
+ */
+export const listStyles = [
   'disc',
   'upper-roman',
   'lower-roman',
@@ -24,12 +35,20 @@ const listStyles = [
   'circle',
 ] as const
 
+/**
+ * @public
+ */
+export type ListListStyle = (typeof listStyles)[number]
+
+/**
+ * @public
+ */
 export type ListProps = FontSizeProps &
   SpaceProps &
   React.HTMLAttributes<HTMLOListElement | HTMLUListElement> & {
     children?: React.ReactNode
-    listStyle?: (typeof listStyles)[number]
-    indentSize?: keyof typeof tabSpacingSize | 'none'
+    listStyle?: ListListStyle
+    indentSize?: ListIndentSize
     color?: PaletteFamilyName | PaletteColor
   }
 
@@ -60,6 +79,9 @@ const Unordered: React.FC<ListProps> & { ol: React.FC<ListProps>; ul: React.FC<L
   ${BaseCSS};
 `
 
+/**
+ * @public
+ */
 export const List = Unordered
 
 List.ol = Ordered

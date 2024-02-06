@@ -54,6 +54,9 @@ const variations = {
   `,
 }
 
+/**
+ * @public
+ */
 export type StampProps = SpaceProps &
   FontSizeProps &
   BorderRadiusProps & {
@@ -66,6 +69,9 @@ export type StampProps = SpaceProps &
     colorScheme?: ColorSchemeName
   }
 
+/**
+ * @public
+ */
 export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-flex;
   align-items: center;

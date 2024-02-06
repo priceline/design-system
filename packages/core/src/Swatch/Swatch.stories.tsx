@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
-import Swatch from './Swatch'
+import { Swatch } from './Swatch'
 
 export default {
   title: 'Swatch',

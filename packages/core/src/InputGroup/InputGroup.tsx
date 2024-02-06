@@ -6,11 +6,17 @@ import { Box } from '../Box/Box'
 import { PaletteFamilyName } from '../theme/theme'
 import { getPaletteColor } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type InputGroupProps = SpaceProps & {
   borderColor?: PaletteFamilyName
   children?: React.ReactNode
 }
 
+/**
+ * @public
+ */
 export const InputGroup: React.FC<InputGroupProps> = styled.div`
   display: flex;
   align-items: center;

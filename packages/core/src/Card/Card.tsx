@@ -14,11 +14,17 @@ const styleAsButton = ({ as, ...props }) =>
       }`
     : ''
 
+/**
+ * @public
+ */
 export type CardProps = BoxProps &
   BorderProps & {
     borderColor?: string
   }
 
+/**
+ * @public
+ */
 export const Card: React.FC<CardProps> = styled(Box)`
   ${applyVariations('Card')}
   ${styleAsButton}

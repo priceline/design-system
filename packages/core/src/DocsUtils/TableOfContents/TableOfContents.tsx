@@ -1,14 +1,20 @@
 import kebabCase from 'lodash/kebabCase'
 import React from 'react'
-
-import { Box, Link } from '../..'
+import { Box } from '../../Box/Box'
+import { Link } from '../../Link/Link'
 
 const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
+/**
+ * @public
+ */
 export type TableOfContentsProps = {
   links: string[]
 }
 
+/**
+ * @public
+ */
 export const TableOfContents = ({ links }: TableOfContentsProps) => (
   <Box my={5}>
     <ul>

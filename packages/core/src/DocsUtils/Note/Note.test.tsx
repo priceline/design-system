@@ -1,6 +1,6 @@
 import React from 'react'
-import { Note } from '..'
 import { render } from '../../__test__/testing-library'
+import { Note } from './Note'
 
 describe('Note', () => {
   it('renders children', () => {

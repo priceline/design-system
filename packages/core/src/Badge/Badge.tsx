@@ -64,6 +64,9 @@ const letterSpacing = (props) => {
     : { letterSpacing: themeGet('letterSpacings.caps')(props) }
 }
 
+/**
+ * @public
+ */
 export type BadgeProps = SpaceProps &
   React.HtmlHTMLAttributes<HTMLElement> & {
     size?: 'small' | 'medium'
@@ -74,6 +77,9 @@ export type BadgeProps = SpaceProps &
     textTransform?: string
   }
 
+/**
+ * @public
+ */
 export const Badge: React.FC<BadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-block;
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};

@@ -1,14 +1,23 @@
 import { system } from 'styled-system'
 
+/**
+ * @public
+ */
 export const objectFitValues = ['contain', 'cover', 'unset'] as const
 
-export type ObjectFit = typeof objectFitValues[number]
+/**
+ * @public
+ */
+export type ObjectFit = (typeof objectFitValues)[number]
 
+/**
+ * @public
+ */
 export function objectFit() {
   return system({
     objectFit: {
       property: 'objectFit',
       transform: (val) => val ?? 'unset',
-    }
+    },
   })
 }

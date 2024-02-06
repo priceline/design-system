@@ -14,8 +14,14 @@ import {
 } from 'styled-system'
 import { Box, type BoxProps } from '../Box/Box'
 
+/**
+ * @public
+ */
 export type RelativeProps = TopProps & RightProps & BottomProps & LeftProps & ZIndexProps & BoxProps
 
+/**
+ * @public
+ */
 export const Relative: React.FC<RelativeProps> = styled(Box)`
   position: relative;
   ${top} ${bottom} ${left} ${right}

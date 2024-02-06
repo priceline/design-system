@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
-
-import { StoryStage, StoryStageProps } from '.'
-import { Button } from '../..'
+import { Button } from '../../Button/Button'
+import { StoryStage, StoryStageProps } from './StoryStage'
 
 const exampleProps: StoryStageProps = {
   children: (

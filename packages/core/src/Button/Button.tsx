@@ -18,7 +18,11 @@ import { Flex, type FlexProps } from '../Flex/Flex'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
 
+/**
+ * @public
+ */
 export const borderRadiusButtonValues = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']
+
 const isValidBorderRadius = (size) => size && borderRadiusButtonValues.includes(size)
 
 const sizes = {
@@ -174,10 +178,32 @@ const variations = {
   `,
 }
 
-export type Sizes = 'small' | 'medium' | 'large' | 'extraLarge'
-export type Variations = 'fill' | 'link' | 'outline' | 'plain' | 'subtle' | 'white' | 'lightFill' | 'input'
+/**
+ * @public
+ */
+export type ButtonSizes = 'small' | 'medium' | 'large' | 'extraLarge'
 
+/**
+ * @public
+ */
+export type ButtonVariations =
+  | 'fill'
+  | 'link'
+  | 'outline'
+  | 'plain'
+  | 'subtle'
+  | 'white'
+  | 'lightFill'
+  | 'input'
+
+/**
+ * @public
+ */
 export type StyledButtonProps = ButtonProps & { hasChildren: boolean }
+
+/**
+ * @public
+ */
 export type ButtonProps = WidthProps &
   HeightProps &
   SpaceProps &
@@ -185,8 +211,8 @@ export type ButtonProps = WidthProps &
   React.ButtonHTMLAttributes<HTMLButtonElement> &
   React.RefAttributes<unknown> & {
     color?: string
-    variation?: Variations
-    size?: Sizes | Sizes[]
+    variation?: ButtonVariations
+    size?: ButtonSizes | ButtonSizes[]
     borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
     boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
     autoFocus?: boolean
@@ -323,6 +349,9 @@ const ButtonIcon = ({ Component, ...props }) => {
   return Component ? <Component {...props} /> : null
 }
 
+/**
+ * @public
+ */
 export const Button = React.forwardRef((props: ButtonProps, ref) => {
   const { children, ...restProps } = props
   const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props

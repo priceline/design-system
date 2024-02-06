@@ -17,6 +17,9 @@ import {
 import { Box, type BoxProps } from '../Box/Box'
 import { applyVariations } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type FlexProps = BoxProps &
   SpaceProps &
   WidthProps &
@@ -26,6 +29,9 @@ export type FlexProps = BoxProps &
   FlexWrapProps &
   FlexDirectionProps
 
+/**
+ * @public
+ */
 export const Flex: React.FC<FlexProps> = styled(Box).attrs(({ wrap, align, justify, ...props }) => ({
   flexWrap: wrap ? 'wrap' : undefined,
   alignItems: align,

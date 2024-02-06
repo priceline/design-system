@@ -6,6 +6,9 @@ import { Relative } from '../Relative/Relative'
 import { Text } from '../Text/Text'
 import { LeftBorderFlex, RoundIconButton } from './Toast.styled'
 
+/**
+ * @public
+ */
 export type ToastProps = {
   children: React.ReactNode
   hideClose?: boolean
@@ -16,6 +19,9 @@ export type ToastProps = {
   onRemoveClick?: (id: number) => void
 } & Omit<FlexProps, 'id'>
 
+/**
+ * @public
+ */
 export function Toast({
   children,
   color = 'text.light',
