@@ -142,13 +142,7 @@ export const bottom = () => (
 export const InDialog = () => (
   <Dialog open size='md' zIndex={0}>
     <Box height={300}>
-      <Popover
-        renderContent={SimpleTextContent}
-        placement='bottom'
-        ariaLabel='Dialog Popover'
-        idx={2}
-        width={400}
-      >
+      <Popover renderContent={InnerContent} placement='bottom' ariaLabel='Dialog Popover' idx={2} width={400}>
         <Button m={3}>Open Popover</Button>
       </Popover>
     </Box>
