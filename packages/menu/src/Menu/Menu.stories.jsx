@@ -195,9 +195,11 @@ export const UsingButtonPropsPropForStylingButtonText = () => (
 
 export const InDialog = () => (
   <Dialog open size='md'>
-    <Menu width={300} buttonText='Menu'>
-      <MenuItems />
-    </Menu>
+    <Box height={200} p={4}>
+      <Menu width={300} buttonText='Menu'>
+        <MenuItems />
+      </Menu>
+    </Box>
   </Dialog>
 )
 

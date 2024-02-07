@@ -12,7 +12,6 @@ import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
 import { Flex } from '../Flex/Flex'
 import { Tooltip } from '../Tooltip/Tooltip'
-import { text } from 'stream/consumers'
 
 type DialogStory = StoryObj<DialogProps>
 
@@ -95,12 +94,11 @@ export const WithHeaderContentProps: DialogStory = {
 export const WithTooltip: DialogStory = {
   ...Playground,
   args: {
-   children: (
-      <Box width={300} p={2} my={2}>
+    children: (
+      <Box width={400} p={2} my={2} height={200}>
         <Tooltip bottom center color='primary'>
           top center tooltip
         </Tooltip>
-        <div>some text in a dialog</div>
       </Box>
     )
   }
