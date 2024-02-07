@@ -32,17 +32,26 @@ const Message = styled(Flex)`
   ${applyVariations('ChatMessage', variations)};
 `
 
-export const variationNames = ['initial', 'incoming', 'outgoing']
+/**
+ * @public
+ */
+export const ChatMessageVariations = ['initial', 'incoming', 'outgoing']
 
+/**
+ * @public
+ */
 export type ChatMessageProps = FlexProps & {
   footer?: React.ReactNode
   header?: React.ReactNode
   Icon?: React.FC<{ color?: string; size?: string }>
   message: React.ReactNode
-  variation: (typeof variationNames)[number]
+  variation: (typeof ChatMessageVariations)[number]
 }
 
-function ChatMessage({
+/**
+ * @public
+ */
+export function ChatMessage({
   footer,
   header,
   Icon = PricelineSparkle,
@@ -91,5 +100,3 @@ function ChatMessage({
     </Message>
   )
 }
-
-export { ChatMessage }

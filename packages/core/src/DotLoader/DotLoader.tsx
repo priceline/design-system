@@ -6,7 +6,10 @@ import { Flex } from '../Flex/Flex'
 import { ColorName, PaletteColor, PaletteFamilyName } from '../theme/theme'
 import { applySizes } from '../utils/utils'
 
-const sizes = {
+/**
+ * @public
+ */
+export const dotLoaderSizes = {
   small: css`
     height: 18px;
 
@@ -45,11 +48,24 @@ const sizes = {
   `,
 }
 
-const speeds = {
+/**
+ * @public
+ */
+export type DotLoaderSizes = keyof typeof dotLoaderSizes | (keyof typeof dotLoaderSizes)[]
+
+/**
+ * @public
+ */
+export const dotLoaderSpeeds = {
   slow: 2.5,
   medium: 2,
   fast: 1,
 }
+
+/**
+ * @public
+ */
+export type DotLoaderSpeeds = keyof typeof dotLoaderSpeeds
 
 const getDelay = (duration, pos = 0) => {
   return `${(duration / 6) * pos}s;`
@@ -68,7 +84,7 @@ const Container = styled(Flex)`
   justify-content: center;
   align-items: center;
 
-  ${applySizes(sizes, null)};
+  ${applySizes(dotLoaderSizes, null)};
 `
 
 const Dot = styled(Box)`
@@ -79,14 +95,20 @@ const Dot = styled(Box)`
   animation-delay: ${(props) => getDelay(props.duration, props.pos)}s;
 `
 
+/**
+ * @public
+ */
 export type DotLoaderProps = {
   color?: ColorName | PaletteFamilyName | PaletteColor
-  size?: keyof typeof sizes | (keyof typeof sizes)[]
-  speed?: keyof typeof speeds
+  size?: DotLoaderSizes
+  speed?: DotLoaderSpeeds
 }
 
+/**
+ * @public
+ */
 export function DotLoader({ color, size, speed, ...props }: DotLoaderProps) {
-  const duration = speeds[speed]
+  const duration = dotLoaderSpeeds[speed]
 
   return (
     <Container size={size} {...props}>

@@ -17,6 +17,9 @@ const NoWrapText = styled(Text)`
 
 const maxProgressBarLength = 4
 
+/**
+ * @public
+ */
 export type PasswordInputProps = Omit<FlexProps, 'onChange'> & {
   id?: string
   isValid?: boolean
@@ -30,6 +33,9 @@ export type PasswordInputProps = Omit<FlexProps, 'onChange'> & {
   autoComplete?: string
 }
 
+/**
+ * @public
+ */
 export function PasswordInput({
   id,
   isValid,

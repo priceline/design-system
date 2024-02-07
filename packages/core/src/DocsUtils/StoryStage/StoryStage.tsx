@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-import { Box } from '../..'
+import { Box } from '../../Box/Box'
 
 const Stage = styled(Box)`
   > * {
@@ -9,9 +8,15 @@ const Stage = styled(Box)`
   }
 `
 
+/**
+ * @public
+ */
 export type StoryStageProps = {
   children: React.ReactNode
   [x: string]: unknown
 }
 
+/**
+ * @public
+ */
 export const StoryStage = ({ children, ...rest }: StoryStageProps) => <Stage {...rest}>{children}</Stage>

@@ -1,9 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { DoDont, DoDontProps } from '.'
-import { Button } from '../..'
+import { Button } from '../../Button/Button'
+import { DoDont, type DoDontProps } from './DoDont'
 
 const exampleProps: DoDontProps = {
   doExample: <Button width='100%'>placeat id suscipit</Button>,

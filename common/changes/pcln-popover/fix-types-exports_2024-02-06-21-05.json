@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Fix type release @public annotations for exported types",
+      "type": "patch",
+      "packageName": "pcln-popover"
+    }
+  ],
+  "packageName": "pcln-popover",
+  "email": "steven.dalonzo@priceline.com"
+}

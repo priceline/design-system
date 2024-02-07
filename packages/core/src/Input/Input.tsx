@@ -64,6 +64,9 @@ const StyledInput = styled.input.attrs(borderRadiusAttrs)`
 
 const INPUT_ERROR_TEXT = 'InputHelperText'
 
+/**
+ * @public
+ */
 export type InputProps = SpaceProps &
   FontSizeProps &
   ZIndexProps &
@@ -78,6 +81,9 @@ export type InputProps = SpaceProps &
     borderRadius?: string
   }
 
+/**
+ * @public
+ */
 export const Input: React.FC<InputProps> & {
   isField?: boolean
   HelperText?: React.FC<TextProps>

@@ -1,15 +1,19 @@
-import { RadioCheckToggleCard, hPositions, vPositions } from './RadioCheckToggleCard'
+import {
+  RadioCheckToggleCard,
+  RadioCheckToggleCardHPositions,
+  RadioCheckToggleCardVPositions,
+} from './RadioCheckToggleCard'
 
 export const argTypes = {
   hPosition: {
     control: { type: 'radio' },
-    options: hPositions,
+    options: RadioCheckToggleCardHPositions,
     defaultValue: RadioCheckToggleCard.defaultProps.hPosition,
     description: 'Controlling the button icon horizontal position',
   },
   vPosition: {
     control: { type: 'radio' },
-    options: vPositions,
+    options: RadioCheckToggleCardVPositions,
     defaultValue: RadioCheckToggleCard.defaultProps.vPosition,
     description: 'Controlling the button icon vertical position',
   },

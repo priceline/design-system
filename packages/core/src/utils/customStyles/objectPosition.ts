@@ -18,10 +18,19 @@ const OBJECT_POSITION_PROPS_TO_CSS_VALUE = {
 
 const values = Object.values(OBJECT_POSITION_PROPS_TO_CSS_VALUE)
 
+/**
+ * @public
+ */
 export const objectPositionValues = [...values] as const
 
-export type ObjectPosition = typeof objectPositionValues[number]
+/**
+ * @public
+ */
+export type ObjectPosition = (typeof objectPositionValues)[number]
 
+/**
+ * @public
+ */
 export function objectPosition() {
   return system({
     objectPosition: {

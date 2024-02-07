@@ -1,6 +1,6 @@
 import React from 'react'
-import { DocTable, DocTableProps } from '..'
 import { render } from '../../__test__/testing-library'
+import { DocTable, type DocTableProps } from './DocTable'
 
 const props: DocTableProps<{ id: number; name: string; age: number }> = {
   data: [

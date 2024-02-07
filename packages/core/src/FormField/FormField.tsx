@@ -6,6 +6,9 @@ import { Box, type BoxProps } from '../Box/Box'
 import { IconField } from '../IconField/IconField'
 import { getPaletteColor } from '../utils/utils'
 
+/**
+ * @public
+ */
 export interface FormFieldProps extends BoxProps {
   disabled?: boolean
   readOnly?: boolean
@@ -54,6 +57,9 @@ const labelPaddingTop = (size) => {
   return paddingTopForLabel?.[size] ? paddingTopForLabel[size] : '6px'
 }
 
+/**
+ * @public
+ */
 export function FormField({ children, disabled, readOnly, ...props }: FormFieldProps) {
   let iconBefore = false
 

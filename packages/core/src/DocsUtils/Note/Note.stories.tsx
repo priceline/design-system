@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { Note, NoteProps } from '.'
+import { Note, type NoteProps } from './Note'
 
 const exampleProps: NoteProps = {
   children: 'Ratione repellat aut saepe maiores autem.',

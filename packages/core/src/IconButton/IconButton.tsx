@@ -23,11 +23,17 @@ const TransparentButton = styled(Button)`
   ${applyVariations('IconButton')}
 `
 
+/**
+ * @public
+ */
 export type IconButtonProps = ButtonProps & {
   icon: React.ReactNode
   autoFocus?: boolean
 }
 
+/**
+ * @public
+ */
 export const IconButton: React.FC<IconButtonProps> & { isIconButton?: boolean } = React.forwardRef(
   ({ icon, ...props }, ref) => {
     return (

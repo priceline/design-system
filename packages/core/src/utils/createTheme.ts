@@ -10,6 +10,8 @@ import { createTextStyles } from './createTextStyles'
  * Adds aliases to an array of keys
  *
  * @param arr - The array to add aliases to
+ *
+ * @public
  */
 const addAliases = (arr) => {
   arr.forEach((val, key) => {
@@ -26,6 +28,8 @@ const addAliases = (arr) => {
  * @param existingTheme -     Existing theme passed from a parent provider (Undefined if it's most outer provider)
  *
  * @returns The generated theme
+ *
+ * @public
  */
 export const createTheme = (
   theme = {},

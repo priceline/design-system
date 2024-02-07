@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { Section, SectionProps } from '.'
+import { Section, type SectionProps } from './Section'
 
 const exampleProps: SectionProps = {
   heading: 'Section',

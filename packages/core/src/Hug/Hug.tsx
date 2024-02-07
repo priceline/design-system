@@ -3,6 +3,9 @@ import { type CardProps } from '../Card/Card'
 import { Text } from '../Text/Text'
 import { BorderConcealer, Header, HugCard } from './Hug.styled'
 
+/**
+ * @public
+ */
 export type HugProps = CardProps & {
   children?: React.ReactNode
   iconDisplay?: string[]
@@ -12,6 +15,9 @@ export type HugProps = CardProps & {
   fontSize?: string | number
 }
 
+/**
+ * @public
+ */
 export function Hug({
   bg,
   color = 'text.lightest',

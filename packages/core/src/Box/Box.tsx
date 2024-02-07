@@ -34,6 +34,9 @@ import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applyVariations, color, colorScheme } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type BoxProps = BorderRadiusProps &
   BoxShadowProps &
   DisplayProps &
@@ -91,6 +94,9 @@ export type BoxProps = BorderRadiusProps &
     rounded?: 'top' | 'right' | 'bottom' | 'left' | 'topLeft' | 'topRight' | 'bottomRight' | 'bottomLeft'
   }
 
+/**
+ * @public
+ */
 export const Box: React.FC<BoxProps> = styled.div.attrs((props) => ({
   ...borderRadiusAttrs(props),
   ...boxShadowAttrs(props),

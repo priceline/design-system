@@ -7,8 +7,14 @@ import { ChipLabel } from '../ChipLabel'
 
 const getTitle = ({ disabled, actionTitle }) => `${actionTitle}${disabled ? ' disabled' : ''}`
 
+/**
+ * @public
+ */
 export type FilterChipVariation = 'outline' | 'shadow'
 
+/**
+ * @public
+ */
 export type FilterChipProps = SpaceProps &
   FontSizeProps & {
     id?: string
@@ -25,6 +31,9 @@ export type FilterChipProps = SpaceProps &
     variation?: FilterChipVariation
   }
 
+/**
+ * @public
+ */
 export function FilterChip({
   id,
   name,

@@ -16,14 +16,23 @@ const paddings = {
   xl: [3, null, 4],
 }
 
+/**
+ * @public
+ */
 export type ContainerSize = 'sm' | 'md' | 'lg' | 'xl'
 
+/**
+ * @public
+ */
 export type ContainerProps = {
   children?: React.ReactNode
   maxWidth?: number
   size?: ContainerSize
 }
 
+/**
+ * @public
+ */
 export const Container: React.FC<ContainerProps> = styled(Box).attrs((props) => {
   if (props.size) {
     const px = paddings[props.size]

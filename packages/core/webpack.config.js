@@ -3,6 +3,7 @@
 const createWebpackConfig = require('@rushstack/heft-web-rig/profiles/library/webpack-base.config')
 const { ModuleMinifierPlugin } = require('@rushstack/webpack5-module-minifier-plugin')
 const { WorkerPoolMinifier } = require('@rushstack/module-minifier')
+const { RsdoctorWebpackPlugin } = require('@rsdoctor/webpack-plugin')
 
 module.exports = function createConfig(env, argv) {
   return createWebpackConfig({
@@ -60,5 +61,12 @@ module.exports = function createConfig(env, argv) {
         // maxAssetSize: 500000
       },
     },
+
+    plugins: [
+      process.env.RSDOCTOR &&
+        new RsdoctorWebpackPlugin({
+          features: ['loader', 'plugins', 'bundle', 'resolver'],
+        }),
+    ].filter(Boolean),
   })
 }

@@ -4,6 +4,9 @@ import { FlexboxProps, GridProps as SSGridProps, system } from 'styled-system'
 import { ComposedStyleFns, type ColorSchemeName, type IStyledSystemProps } from '../theme/theme'
 import { colorScheme } from '../utils/utils'
 
+/**
+ * @public
+ */
 export interface GridProps extends IStyledSystemProps {
   children?: React.ReactNode
   gap?: SSGridProps['gridGap']
@@ -45,4 +48,7 @@ const StyledGrid = styled.div<GridProps>`
   display: grid;
 `
 
+/**
+ * @public
+ */
 export const Grid = (props: GridProps) => <StyledGrid {...props} />

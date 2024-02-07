@@ -1,7 +1,11 @@
 import React, { Children } from 'react'
+import { Box } from '../../Box/Box'
+import { Text } from '../../Text/Text'
+import { theme } from '../../theme/theme'
 
-import { Box, Text, theme } from '../..'
-
+/**
+ * @public
+ */
 export type RelatedComponentProps = {
   name: string
   desc?: string
@@ -9,6 +13,9 @@ export type RelatedComponentProps = {
   children: React.ReactNode
 }
 
+/**
+ * @public
+ */
 export const RelatedComponent = ({ name, desc, children, onClick }: RelatedComponentProps) => (
   <Box onClick={onClick} style={{ cursor: 'pointer' }}>
     <Box
@@ -30,10 +37,16 @@ export const RelatedComponent = ({ name, desc, children, onClick }: RelatedCompo
   </Box>
 )
 
+/**
+ * @public
+ */
 export type RelatedComponentContainerProps = {
   children: React.ReactNode
 }
 
+/**
+ * @public
+ */
 export const RelatedComponentContainer = ({ children }: RelatedComponentContainerProps) => (
   <Box
     style={{

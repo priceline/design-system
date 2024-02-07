@@ -34,7 +34,9 @@ function getPackagesWithDirectChanges(targetBranchName): string[] {
   return Array.from(projects.map((project) => project.packageName))
 }
 
-/** @public */
+/**
+ * @public
+ */
 export async function runAsync(targetBranchName = 'refs/remotes/origin/main'): Promise<void> {
   const terminal: Terminal = new Terminal(new ConsoleTerminalProvider())
 

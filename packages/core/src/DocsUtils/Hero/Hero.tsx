@@ -1,13 +1,21 @@
 import React from 'react'
+import { Box } from '../../Box/Box'
+import { Flex } from '../../Flex/Flex'
+import { Image } from '../../Image/Image'
+import { Text } from '../../Text/Text'
 
-import { Box, Flex, Image, Text } from '../..'
-
+/**
+ * @public
+ */
 export type HeroProps = {
   name: string
   children: string
   img: string
 }
 
+/**
+ * @public
+ */
 export const Hero = ({ name, children, img }: HeroProps) => (
   <Flex
     alignItems='center'

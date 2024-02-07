@@ -1,7 +1,6 @@
-// import { linkTo } from '@storybook/addon-links'
 import React from 'react'
-import { RelatedComponent, RelatedComponentContainer } from '..'
 import { fireEvent, render, screen } from '../../__test__/testing-library'
+import { RelatedComponent, RelatedComponentContainer } from './RelatedComponent'
 
 describe('RelatedComponent', () => {
   const name = 'Component Name'

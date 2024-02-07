@@ -4,6 +4,9 @@ import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } fro
 import { borderRadiusAttrs } from '../utils/attrs'
 import { applyVariations, getPaletteColor } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type ToggleBadgeProps = {
   borderRadius?: string
   selected?: boolean
@@ -15,6 +18,9 @@ export type ToggleBadgeProps = {
   React.HTMLAttributes<HTMLInputElement> &
   React.RefAttributes<HTMLInputElement>
 
+/**
+ * @public
+ */
 export const ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borderRadiusAttrs)`
   border-radius: ${(props) => props.theme.radius};
   border: 0;

@@ -1,7 +1,7 @@
-// TODO
-// supports deprecated `align` prop
-// remove in v5
-
+/**
+ * @deprecated align prop is not supported since v5
+ * @public
+ */
 export function textAlignAttrs(props) {
   const { align, textAlign } = props
 

@@ -5,7 +5,6 @@ import {
   color,
   decomposeColor,
   deprecatedColorValue,
-  deprecatedPropType,
   getBreakpointSize,
   getByPalette,
   getContrastRatio,
@@ -21,28 +20,6 @@ import {
 import { createTheme } from './createTheme'
 
 describe('utils', () => {
-  describe('deprecatedPropType', () => {
-    test('returns an error when using a deprecated prop', () => {
-      const err = deprecatedPropType('newProp')(
-        {
-          oldProp: true,
-        },
-        'oldProp'
-      )
-      expect(err).toBeTruthy()
-    })
-
-    test('returns undefined when using a valid prop', () => {
-      const err = deprecatedPropType('newProp')(
-        {
-          newProp: true,
-        },
-        'oldProp'
-      )
-      expect(err).toBeUndefined()
-    })
-  })
-
   describe('deprecatedColorValue', () => {
     test('returns an error when when using a deprecated color prop value', () => {
       expect(

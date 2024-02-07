@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export const roundedValues = [
   'top',
   'right',
@@ -9,6 +12,9 @@ export const roundedValues = [
   'bottomLeft',
 ]
 
+/**
+ * @public
+ */
 export const borderRadiusValues = [
   'none',
   'xsm',
@@ -53,6 +59,9 @@ function calculateRoundedProps(radius, rounded) {
   return `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`
 }
 
+/**
+ * @public
+ */
 export function borderRadiusAttrs({ borderRadius, rounded, theme }) {
   if (!borderRadius) {
     return {}

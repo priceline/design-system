@@ -13,10 +13,19 @@ const ImageWrapper = styled(Flex)`
   ${({ disabled }) => disabled && 'opacity: .33;'}
 `
 
+/**
+ * @public
+ */
 export type ChipContentVariation = 'outline' | 'shadow'
 
+/**
+ * @public
+ */
 export type IconComponent = React.FC<BoxProps & { title: React.ReactNode; size: React.ReactNode }>
 
+/**
+ * @public
+ */
 export type ChipContentProps = BoxProps & {
   children?: React.ReactNode
   disabled?: boolean
@@ -39,6 +48,9 @@ export type ChipContentProps = BoxProps & {
   justifyContent?: string
 }
 
+/**
+ * @public
+ */
 export function ChipContent({
   disabled,
   selected,

@@ -1,18 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react'
-
 import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
-import React from 'react'
-
 import { linkTo } from '@storybook/addon-links'
+import type { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
 import { Box } from '../Box/Box'
-import {
-  Hero,
-  RelatedComponent,
-  RelatedComponentContainer,
-  Section,
-  StoryHeading,
-  TableOfContents,
-} from '../DocsUtils'
+import { Hero } from '../DocsUtils/Hero/Hero'
+import { RelatedComponent, RelatedComponentContainer } from '../DocsUtils/RelatedComponent/RelatedComponent'
+import { Section } from '../DocsUtils/Section/Section'
+import { StoryHeading } from '../DocsUtils/StoryHeading/StoryHeading'
+import { TableOfContents } from '../DocsUtils/TableOfContents/TableOfContents'
 import { Flex } from '../Flex/Flex'
 import { Grid, type GridProps } from '../Grid/Grid'
 import { Text } from '../Text/Text'

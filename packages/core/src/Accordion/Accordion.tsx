@@ -12,6 +12,9 @@ import {
   StyledTrigger,
 } from './Accordion.styled'
 
+/**
+ * @public
+ */
 export type AccordionProps = SpaceProps & {
   items: AccordionItemProps[]
   itemsState?: string | string[]
@@ -22,6 +25,9 @@ export type AccordionProps = SpaceProps & {
   headerDividerColor?: string
 }
 
+/**
+ * @public
+ */
 export type AccordionItemProps = {
   content: React.ReactNode
   headerActions?: React.ReactNode
@@ -30,6 +36,9 @@ export type AccordionItemProps = {
   value: string
 }
 
+/**
+ * @public
+ */
 export function Accordion({
   items,
   itemsState,

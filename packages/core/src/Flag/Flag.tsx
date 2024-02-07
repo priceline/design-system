@@ -67,6 +67,9 @@ const StyledFlex = styled(Flex)`
   ${applyVariations('Flag')}
 `
 
+/**
+ * @public
+ */
 export type FlagProps = SpaceProps &
   WidthProps & {
     children?: React.ReactNode
@@ -74,6 +77,9 @@ export type FlagProps = SpaceProps &
     bg?: ColorProp
   }
 
+/**
+ * @public
+ */
 export const Flag: React.FC<FlagProps> = ({ color, bg, children, pl, pr, py, width, ...props }) => (
   <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>

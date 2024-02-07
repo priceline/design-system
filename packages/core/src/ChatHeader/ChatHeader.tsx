@@ -22,12 +22,18 @@ const HeaderButton = styled(Button)`
   }
 `
 
+/**
+ * @public
+ */
 export type ChatHeaderProps = {
   children: React.ReactNode
   onClose: () => void
   onMinimize: () => void
 }
 
+/**
+ * @public
+ */
 export function ChatHeader({ children, onClose, onMinimize }: ChatHeaderProps) {
   return (
     <BorderBottomFlex alignItems='center' justifyContent='space-between' p={3}>

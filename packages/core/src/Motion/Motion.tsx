@@ -7,12 +7,18 @@ const Wrapper = styled(Box)`
   ${getAnimationCss}
 `
 
+/**
+ * @public
+ */
 export type MotionProps = {
   children?: React.ReactNode
   isAnimatedState?: boolean
   variation?: string
 }
 
+/**
+ * @public
+ */
 export function Motion({ children, isAnimatedState, variation }: MotionProps) {
   return (
     <Wrapper isAnimatedState={isAnimatedState} variation={variation} data-testid='motion-wrapper'>

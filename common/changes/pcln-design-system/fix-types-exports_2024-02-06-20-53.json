@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Fix type release @public annotations for exported types",
+      "type": "patch",
+      "packageName": "pcln-design-system"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "steven.dalonzo@priceline.com"
+}

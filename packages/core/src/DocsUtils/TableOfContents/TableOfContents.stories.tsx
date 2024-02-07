@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { TableOfContents, TableOfContentsProps } from '.'
+import { TableOfContents, type TableOfContentsProps } from './TableOfContents'
 
 const exampleProps: TableOfContentsProps = {
   links: [

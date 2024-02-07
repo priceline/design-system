@@ -19,11 +19,17 @@ const OffScreenPanel = styled(SrOnly)`
   }
 `
 
+/**
+ * @public
+ */
 export type SkipMenuProps = {
   className?: string
   skipLinks?: { label: string; targetId: string }[]
 }
 
+/**
+ * @public
+ */
 export function SkipMenu({ className, skipLinks, ...props }: SkipMenuProps) {
   if (!skipLinks?.length) return null
   return (
