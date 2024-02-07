@@ -1,7 +1,7 @@
-import kebabCase from 'lodash/kebabCase'
 import React from 'react'
-
-import { Box, Text } from '../..'
+import { Box } from '../../Box/Box'
+import { Text } from '../../Text/Text'
+import { kebabCase } from '../../utils/strings'
 
 export type SectionProps = {
   heading: string

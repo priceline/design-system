@@ -78,7 +78,7 @@ export const Palette = () => (
                 const shades = theme.palette[color]
                 if (typeof shades === 'object') {
                   return (
-                    <div style={{ width: '100%' }}>
+                    <div key={color} style={{ width: '100%' }}>
                       <h4>{color}</h4>
                       <Flex flexWrap='wrap'>
                         {Object.keys(shades).map((shade) => {

@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
 import moize from 'moize'
+import { debounce } from 'pcln-design-system'
+import { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import {
-  VISIBLE_SLIDES_BREAKPOINT_1,
-  VISIBLE_SLIDES_BREAKPOINT_2,
   CAROUSEL_BREAKPOINT_1,
   CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
+  VISIBLE_SLIDES_BREAKPOINT_1,
+  VISIBLE_SLIDES_BREAKPOINT_2,
 } from './constants'
-import debounce from 'lodash.debounce'
 
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
@@ -65,4 +65,4 @@ const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, 
 const getMobileVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
 
-export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }
+export { getMobileVisibleSlides, getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides }

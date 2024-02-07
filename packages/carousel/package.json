@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",
-    "lodash.debounce": "^4.0.8",
     "moize": "^6.1.6",
     "prop-types": "^15.8.1",
     "pure-react-carousel": "^1.30.1",
