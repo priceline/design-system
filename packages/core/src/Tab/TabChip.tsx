@@ -1,27 +1,33 @@
-import { Flex } from '../Flex/Flex'
+import * as Tab from '@radix-ui/react-tabs'
 import { Text } from '../Text/Text'
 import React from 'react'
-import { TabTriggerChip } from './Tab.styled'
 import { Box } from '../Box/Box'
 import { themeGet } from '@styled-system/theme-get'
-export const TabChip = ({ hasHover, index, tab, value }) => {
+import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
+export const TabChip = ({ size, index, tab, value }) => {
+  const sizeStyles = {
+    sm: { fontSize: 1, px: 2, imgSize: 20 },
+    md: { fontSize: 2, px: 3, imgSize: 24 },
+    lg: { fontSize: 4, px: 3, imgSize: 32 },
+  }
+
   return (
-    <TabTriggerChip
-      asChild
-      hover={hasHover}
-      value={`${value}-tab${index + 1}`}
-      key={`${value}-tab${index + 1}`}
-    >
-      <Flex alignItems='center' mr={2}>
+    <Tab.Trigger asChild value={`${value}-tab${index + 1}`} key={`${value}-tab${index + 1}`}>
+      <ButtonChip>
         {tab.icon && (
-          <Box ml={2} size={24}>
+          <Box ml={2} size={sizeStyles[size].imgSize}>
             {tab.icon}
           </Box>
         )}
-        <Text py='5px' px={2} textStyle={themeGet('paragraph')}>
+        <Text
+          py='5px'
+          px={sizeStyles[size].px}
+          fontSize={sizeStyles[size].fontSize}
+          textStyle={themeGet('paragraph')}
+        >
           {tab.text}
         </Text>
-      </Flex>
-    </TabTriggerChip>
+      </ButtonChip>
+    </Tab.Trigger>
   )
 }

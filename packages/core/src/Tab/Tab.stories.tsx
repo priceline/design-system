@@ -3,35 +3,9 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Tab } from '.'
 import { StoryStage } from '../DocsUtils'
 import { ITabsProps } from './Tab'
-import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 import { Icon } from '../Icon/Icon'
-const defaultArgs: ITabsProps = {
-  size: 'md',
-  hasHover: true,
-  type: 'button',
-  tabsContent: [
-    {
-      children: <DefaultContent />,
-    },
-    {
-      children: <DefaultContent2 />,
-    },
-    {
-      children: <DefaultContent3 />,
-    },
-  ],
-  tabsData: [
-    {
-      text: 'Flights Tab',
-    },
-    {
-      text: 'Packages',
-    },
-    {
-      text: 'Hotel Tabbing',
-    },
-  ],
-}
+import { argTypes, defaultArgs } from './Tab.stories.args'
+import { Box } from '../Box/Box'
 
 type TabsStory = StoryObj<ITabsProps>
 
@@ -155,13 +129,13 @@ export const IconChipTabs: TabsStory = {
 const meta: Meta<typeof Tab> = {
   title: 'Tabs',
   component: Tab,
+  args: defaultArgs,
+  argTypes,
   parameters: {
     controls: {
-      exclude: ['triggerNode'],
+      exclude: ['triggerNode', 'tabsContent', 'tabsData'],
     },
   },
-
-  args: defaultArgs,
 }
 
 export default meta

@@ -3,10 +3,16 @@ import React from 'react'
 import { TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
-export const TabButton = ({ hasHover, type, tab, index, value }) => {
+export const TabButton = ({ border, size, hasHover, type, tab, index, value }) => {
   const [isHover, setIsHover] = React.useState(false)
+  const sizeStyles = {
+    sm: { fontSize: 1, py: 2 },
+    md: { fontSize: 2, py: 3 },
+    lg: { fontSize: 4, py: 3 },
+  }
   return (
     <TabTriggerButton
+      buttonBorder={border}
       hover={hasHover}
       isHover={isHover}
       onMouseEnter={() => setIsHover(true)}
@@ -16,15 +22,14 @@ export const TabButton = ({ hasHover, type, tab, index, value }) => {
       key={`${value}-tab${index + 1}`}
     >
       <Flex alignItems='center'>
-        {/* TODO: Styled box to change to color: primary.dark */}
         {tab.icon && (
           <Box ml={3} size={24}>
             {tab.icon}
           </Box>
         )}
         <Text
-          py={3}
-          fontSize={2}
+          py={sizeStyles[size].py}
+          fontSize={sizeStyles[size].fontSize}
           pl={tab.icon ? 2 : 3}
           style={{ fontFamily: 'Montserrat' }}
           textStyle='paragraph'
