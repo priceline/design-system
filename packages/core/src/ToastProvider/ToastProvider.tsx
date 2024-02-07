@@ -95,7 +95,7 @@ function _ToastProvider({
       {children}
       {createPortal(
         <ThemeProvider theme={theme}>
-          <ClickthroughAbsolute top={top ? top : undefined} bottom={bottom ? bottom : undefined} width='100%'>
+          <ClickthroughAbsolute top={top ? top : undefined} bottom={top ? undefined : bottom} width='100%'>
             <Flex justifyContent='center' width='100%'>
               <Flex flexDirection='column-reverse' justifyContent='center' minWidth='300px'>
                 {toastsToRender.map((toast) => {
