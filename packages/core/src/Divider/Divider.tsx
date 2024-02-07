@@ -4,12 +4,18 @@ import { BorderColorProps, SpaceProps, WidthProps, compose, space, width } from 
 import { ColorName, PaletteColor, PaletteFamilyName } from '../theme/theme'
 import { applyVariations, getPaletteColor } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type DividerProps = SpaceProps &
   WidthProps &
   BorderColorProps & {
     color?: ColorName | PaletteFamilyName | PaletteColor
   }
 
+/**
+ * @public
+ */
 export const Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
   ml: mx ? null : ml,
   mr: mx ? null : mr,

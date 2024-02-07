@@ -64,12 +64,18 @@ const RadioIcon = ({ checked, ...props }: RadioIconProps) => {
   return checked ? <RadioCheckedIcon {...props} /> : <RadioEmptyIcon {...props} />
 }
 
+/**
+ * @public
+ */
 export type RadioProps = React.InputHTMLAttributes<HTMLInputElement> & {
   size?: number
   color?: PaletteFamilyName
   onClick?: (unknown) => unknown
 }
 
+/**
+ * @public
+ */
 export const Radio: React.FC<RadioProps> = React.forwardRef((props, ref) => {
   const { checked, disabled, size } = props
 

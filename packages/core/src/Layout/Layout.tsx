@@ -112,7 +112,10 @@ const getGapValues = (gapProp, rowGapProp) => {
 
 const memoGetGapValues = getGapValues
 
-const ALLOWED_LAYOUT_VALUES = [
+/**
+ * @public
+ */
+export const ALLOWED_LAYOUT_VALUES = [
   '50-50',
   '33-33-33',
   '33-66',
@@ -122,15 +125,31 @@ const ALLOWED_LAYOUT_VALUES = [
   '40-60',
   '100',
 ] as const
-const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl'] as const
+
+/**
+ * @public
+ */
+export const ALLOWED_GAP_VALUES = ['sm', 'md', 'lg', 'xl'] as const
 
 const ZIndexBox = styled(Box)`
   ${zIndex}
 `
 
-type LayoutGap = (typeof ALLOWED_GAP_VALUES)[number] | Array<(typeof ALLOWED_GAP_VALUES)[number]>
-type LayoutVariation = (typeof ALLOWED_LAYOUT_VALUES)[number] | Array<(typeof ALLOWED_LAYOUT_VALUES)[number]>
+/**
+ * @public
+ */
+export type LayoutGap = (typeof ALLOWED_GAP_VALUES)[number] | Array<(typeof ALLOWED_GAP_VALUES)[number]>
 
+/**
+ * @public
+ */
+export type LayoutVariation =
+  | (typeof ALLOWED_LAYOUT_VALUES)[number]
+  | Array<(typeof ALLOWED_LAYOUT_VALUES)[number]>
+
+/**
+ * @public
+ */
 export type LayoutProps = FlexWrapProps & {
   children: React.ReactElement | React.ReactElement[]
   gap?: LayoutGap
@@ -139,6 +158,9 @@ export type LayoutProps = FlexWrapProps & {
   stretchHeight?: boolean
 }
 
+/**
+ * @public
+ */
 export function Layout({ children, gap, rowGap, variation, stretchHeight, flexWrap, ...props }: LayoutProps) {
   const numChildren = React.Children.count(children)
 

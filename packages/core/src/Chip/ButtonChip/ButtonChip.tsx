@@ -26,8 +26,14 @@ const ChipButton = styled(Button)`
 
 const getTitle = ({ disabled, expanded }) => (disabled ? 'Disabled' : expanded ? 'Collapse' : 'Expand')
 
+/**
+ * @public
+ */
 export type ButtonChipVariation = 'outline' | 'shadow'
 
+/**
+ * @public
+ */
 export type ButtonChipProps = SpaceProps &
   FontSizeProps & {
     BridgeIcon?: IconComponent
@@ -47,6 +53,9 @@ export type ButtonChipProps = SpaceProps &
     variation?: ButtonChipVariation
   }
 
+/**
+ * @public
+ */
 export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef(
   (
     {

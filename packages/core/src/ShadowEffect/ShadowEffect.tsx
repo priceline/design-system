@@ -4,6 +4,9 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { zIndex } from 'styled-system'
 
+/**
+ * @public
+ */
 export const ShadowOverlay = styled.div`
   display: block;
   position: fixed;
@@ -15,6 +18,9 @@ export const ShadowOverlay = styled.div`
   ${zIndex};
 `
 
+/**
+ * @public
+ */
 export type ShadowEffectProps = {
   shouldCloseOnBlur?: boolean
   shouldOpenOnFocus?: boolean
@@ -24,6 +30,9 @@ export type ShadowEffectProps = {
   onOpen?: () => void
 }
 
+/**
+ * @public
+ */
 export function ShadowEffect({
   shouldCloseOnBlur,
   shouldOpenOnFocus,

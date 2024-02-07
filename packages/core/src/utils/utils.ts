@@ -2,17 +2,9 @@ import themeGet from '@styled-system/theme-get'
 import { css } from 'styled-components'
 import { mediaQueries } from '../theme'
 
-// Use this to mark props as deprecated
-export const deprecatedPropType = (replacement) => (props, propName) => {
-  if (props[propName]) {
-    return new Error(
-      `The \`${propName}\` prop is deprecated and will be removed in a future release. Please use \`${replacement}\` instead.`
-    )
-  }
-}
-
 /**
  * Checks if the given color prop is a valid palette color
+ * @public
  */
 export const hasPaletteColor = (props) => {
   return (
@@ -23,6 +15,9 @@ export const hasPaletteColor = (props) => {
   )
 }
 
+/**
+ * @public
+ */
 export const hasPaletteColorShade = (props, color = undefined) => {
   const validColor = (typeof color === 'string' && color) || (typeof props.color === 'string' && props.color)
   const [col, shade] = validColor.split('.')
@@ -35,6 +30,9 @@ export const hasPaletteColorShade = (props, color = undefined) => {
   )
 }
 
+/**
+ * @public
+ */
 export const deprecatedColorValue = () => (props, propName, componentName) => {
   if (
     process.env.NODE_ENV !== 'production' &&
@@ -56,6 +54,8 @@ export const deprecatedColorValue = () => (props, propName, componentName) => {
  * @param color - The color to transform to rgb
  *
  * @returns The color in rgb
+ *
+ * @public
  */
 export const hexToRgb = (color) => {
   color = color.substring(1)
@@ -78,6 +78,8 @@ export const hexToRgb = (color) => {
  * @param color - The color to decompose
  *
  * @returns An array of the color values
+ *
+ * @public
  */
 export const decomposeColor = (color) => {
   if (color.charAt(0) === '#') {
@@ -99,6 +101,8 @@ export const decomposeColor = (color) => {
  * @param color - The color to get the luminance of
  *
  * @returns The luminance of the color
+ *
+ * @public
  */
 export const getLuminance = (color) => {
   const [r, g, b] = decomposeColor(color).map((val) => {
@@ -115,6 +119,7 @@ export const getLuminance = (color) => {
  * @example getContrastRatio('#0068EF', '#fff') =\> 4.016975780478911
  * @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
  *
+ * @public
  */
 export const getContrastRatio = (colorA, colorB) => {
   const luminA = getLuminance(colorA)
@@ -131,6 +136,8 @@ export const getContrastRatio = (colorA, colorB) => {
  * 1) takes in an array, splits the array at the given length and creates a new smaller array
  * 2) that new smaller array is then passed into a reduceRight function to determine which value to be returned
  *  reduceRight is used so that the reduce function reads from right to left
+ *
+ * @public
  */
 export const getBreakpointSize = (array, length) => {
   const filteredArray = array.slice(0, length)
@@ -147,6 +154,7 @@ export const getBreakpointSize = (array, length) => {
  *
  * @param sizes - An object of size styles
  *
+ * @public
  */
 export const applySizes =
   (sizes = null, defaultSize = 'medium', mediaQueriesOptions = mediaQueries) =>
@@ -188,6 +196,8 @@ const colorShadeRegex = /^([a-z]+)\.([a-z]+)$/i
  *
  * @param componentName - The name of the component
  * @param variations - An object of variation styles
+ *
+ * @public
  */
 export const applyVariations =
   (componentName, variations = null) =>
@@ -236,6 +246,8 @@ export const applyVariations =
  * shade of theme.palette[props.color].dark
  * @example getPaletteColor('primary.base')(props) =\> theme.palette.primary.base
  * @example getPaletteColor('primary', 'base')(props) =\> theme.palette.primary.base
+ *
+ * @public
  */
 export const getPaletteColor =
   (...args) =>
@@ -258,6 +270,9 @@ export const getPaletteColor =
     )
   }
 
+/**
+ * @public
+ */
 export const getValidPaletteColor = (color) => (props) => {
   if (!color || typeof color !== 'string') {
     return null
@@ -280,6 +295,8 @@ export const getValidPaletteColor = (color) => (props) => {
  * @param lightColor - Optional light color to use if it meets the contrast ratio, default is text.lightest
  * @param darkColor  - Optional dark color to use if it meets the contrast ratio, default is text.base
  * @param isBold     - Determines the font weight if an alternative color for the link is picked
+ *
+ * @public
  */
 export const getLinkStylesOn =
   (name, lightColor = 'text.lightest', darkColor = 'text.base', isBold = false) =>
@@ -316,7 +333,7 @@ export const getLinkStylesOn =
  * Gets the text color that belongs on a given background color
  *
  * @param name - The name of the background color
- *
+ * @public
  */
 export const getTextColorOn =
   (name, lightColor = null, darkColor = null) =>
@@ -340,10 +357,14 @@ export const getTextColorOn =
     return ''
   }
 
+/**
+ * @public
+ */
 // prettier-ignore
 export const getByPalette = (props) => css`background-color: ${getPaletteColor(props.bg, 'base')(props)};color: ${getPaletteColor(props.color, 'base')(props)};`
 
 /**
+ * @public
  * Extended color function from styled-system. First checks
  * for a palette color before falling back to styled-system
  */
@@ -370,6 +391,9 @@ color: ${getTextColorOn('base')(props)};`
   }
 }
 
+/**
+ * @public
+ */
 export const borders = (props) => {
   const borderColor = props.color ? getPaletteColor('base')(props) : getPaletteColor('border.base')(props)
   const focusColor = props.color ? borderColor : getPaletteColor('primary.base')(props)
@@ -384,6 +408,9 @@ export const borders = (props) => {
   }
 }
 
+/**
+ * @public
+ */
 export const colorScheme = ({ colorScheme, ...props }) => {
   if (!colorScheme) return ''
 
@@ -397,6 +424,7 @@ export const colorScheme = ({ colorScheme, ...props }) => {
 }
 
 /**
+ * @public
  * Use this for components where color should not be set based on the colorScheme's foreground.
  * If a color prop is provided, that color will be used for the foreground color. Otherwise,
  * the foreground color will be set automatically to text.lightest or text.base depending on the
@@ -429,6 +457,12 @@ export const colorSchemeCustomForeground = ({ colorScheme, color, iconUsesColorS
   `
 }
 
+/**
+ * @public
+ */
 export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)
 
+/**
+ * @public
+ */
 export const textWrap = (props) => (props.textWrap ? { textWrap: props.textWrap } : null)

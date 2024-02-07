@@ -1,6 +1,6 @@
 import React from 'react'
-import { Hero } from '..'
 import { render, screen } from '../../__test__/testing-library'
+import { Hero } from './Hero'
 
 describe('Hero', () => {
   const heroName = 'Test Hero'

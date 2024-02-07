@@ -10,6 +10,9 @@ import {
   closeButtonVariantProps,
 } from './CloseButton.styled'
 
+/**
+ * @public
+ */
 export type CloseButtonProps = IStyledSystemProps & {
   animate?: boolean
   bgColor?: PaletteColor
@@ -22,6 +25,9 @@ export type CloseButtonProps = IStyledSystemProps & {
   variant?: CloseButtonVariant
 }
 
+/**
+ * @public
+ */
 export const CloseButton = ({
   animate = true,
   bgColor,

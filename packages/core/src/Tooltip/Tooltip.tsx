@@ -104,6 +104,9 @@ const defaultProps = {
   zIndex: 'auto',
 }
 
+/**
+ * @public
+ */
 export type TooltipProps = {
   children?: React.ReactNode
   bg?: PaletteColor
@@ -128,6 +131,7 @@ function _Tooltip({ children, ...props }: TooltipProps): React.ReactElement {
 
 _Tooltip.defaultProps = defaultProps
 
-const Tooltip = withTheme(_Tooltip)
-
-export { Tooltip }
+/**
+ * @public
+ */
+export const Tooltip = withTheme(_Tooltip)

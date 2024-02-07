@@ -2,11 +2,17 @@ import React from 'react'
 import { Flex } from '../Flex/Flex'
 import { BreadcrumbLink, type BreadcrumbLinkProps } from './BreadcrumbLink'
 
+/**
+ * @public
+ */
 export type BreadcrumbsProps = {
   className?: string
   children?: React.ReactNode
 }
 
+/**
+ * @public
+ */
 export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Link: React.FC<BreadcrumbLinkProps> } = ({
   className,
   children,

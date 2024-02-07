@@ -1,10 +1,16 @@
 import React from 'react'
 import { Flex } from '../Flex/Flex'
 
+/**
+ * @public
+ */
 export type IconFieldProps = {
   children: React.ReactNode
 }
 
+/**
+ * @public
+ */
 export function IconField(props: IconFieldProps) {
   const isIcon = (item) => item.type.isIcon || item.type.isIconButton
 

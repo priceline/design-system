@@ -1,11 +1,11 @@
+import { themeGet } from '@styled-system/theme-get'
+import { Box, ThemeProvider, borderRadiusAttrs } from 'pcln-design-system'
+import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import FocusLock from 'react-focus-lock'
 import styled, { ThemeConsumer } from 'styled-components'
 import { borderRadius } from 'styled-system'
-import { themeGet } from '@styled-system/theme-get'
-import { Box, borderRadiusAttrs, deprecatedPropType, ThemeProvider } from 'pcln-design-system'
-import FocusLock from 'react-focus-lock'
 import PopoverArrow from '../Arrow'
 import Overlay from '../Overlay'
 
@@ -167,7 +167,7 @@ PopoverContent.propTypes = {
   className: PropTypes.string,
   p: PropTypes.number,
   color: PropTypes.string,
-  bg: deprecatedPropType('color'),
+  bg: PropTypes.string,
   borderColor: PropTypes.string,
   placement: PropTypes.string,
   zIndex: PropTypes.number,

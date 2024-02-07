@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import React from 'react'
-
-import { DocTable, DocTableProps } from '.'
+import { DocTable, type DocTableProps } from './DocTable'
 
 const exampleProps: DocTableProps<{ left: string; right: string }> = {
   columns: [

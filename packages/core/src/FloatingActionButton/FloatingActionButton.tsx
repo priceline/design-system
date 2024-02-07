@@ -5,6 +5,9 @@ import { Box } from '../Box/Box'
 import { Tooltip } from '../Tooltip/Tooltip'
 import { NotificationDot, StyledButton } from './FloatingActionButton.styled'
 
+/**
+ * @public
+ */
 export type FloatingActionButtonProps = AbsoluteProps & {
   hasNotification?: boolean
   icon: React.Component
@@ -12,6 +15,9 @@ export type FloatingActionButtonProps = AbsoluteProps & {
   onClick: () => void
 }
 
+/**
+ * @public
+ */
 export function FloatingActionButton({
   hasNotification,
   icon,

@@ -3,15 +3,12 @@ import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import { Box } from '../Box/Box'
-import {
-  DocTable,
-  Hero,
-  // LiveDemo,
-  Section,
-  StoryHeading,
-  StoryStage,
-  TableOfContents,
-} from '../DocsUtils'
+import { DocTable } from '../DocsUtils/DocTable/DocTable'
+import { Hero } from '../DocsUtils/Hero/Hero'
+import { Section } from '../DocsUtils/Section/Section'
+import { StoryHeading } from '../DocsUtils/StoryHeading/StoryHeading'
+import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
+import { TableOfContents } from '../DocsUtils/TableOfContents/TableOfContents'
 import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { Image, type ImageProps } from './Image'

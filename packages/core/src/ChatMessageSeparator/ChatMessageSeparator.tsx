@@ -3,10 +3,16 @@ import { Divider } from '../Divider/Divider'
 import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
 
+/**
+ * @public
+ */
 export type ChatMessageSeparatorProps = {
   message?: string
 }
 
+/**
+ * @public
+ */
 export function ChatMessageSeparator({ message }: ChatMessageSeparatorProps) {
   return (
     <Flex alignItems='center' justifyContent='center'>

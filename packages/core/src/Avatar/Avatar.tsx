@@ -15,6 +15,9 @@ const StyledImage = styled(Box)`
   background-image: url(${(props) => props.src});
 `
 
+/**
+ * @public
+ */
 export type AvatarProps = {
   className?: string
   title?: string
@@ -27,7 +30,9 @@ export type AvatarProps = {
   colorScheme?: string
 }
 
-/** @public */
+/**
+ * @public
+ */
 export function Avatar({
   altText = 'avatar',
   className = '',

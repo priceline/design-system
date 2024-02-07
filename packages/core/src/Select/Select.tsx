@@ -8,7 +8,10 @@ import { BorderRadius, PaletteColor } from '../theme/theme'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { applySizes, borders, getPaletteColor } from '../utils/utils'
 
-const sizes = {
+/**
+ * @public
+ */
+export const selectSizes = {
   sm: css`
     padding: 6px 32px 7px 12px;
   `,
@@ -23,17 +26,25 @@ const sizes = {
   `,
 }
 
+/**
+ * @public
+ */
+export type SelectSizes = keyof typeof selectSizes
+
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
 `
 
+/**
+ * @public
+ */
 export type SelectProps = SpaceProps &
   FontSizeProps &
   Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> & {
     children?: React.ReactNode
     color?: PaletteColor
     borderRadius?: BorderRadius
-    size?: keyof typeof sizes
+    size?: SelectSizes
     ref?: React.Ref<React.ForwardedRef<unknown>>
   }
 
@@ -59,7 +70,7 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
     opacity: 1;
   }
 
-  ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
+  ${({ theme }) => applySizes(selectSizes, undefined, theme.mediaQueries)};
 
   ${borders}
 
@@ -73,6 +84,9 @@ SelectBase.defaultProps = {
   size: 'lg',
 }
 
+/**
+ * @public
+ */
 export const Select: React.FC<SelectProps> & { isField?: boolean } = React.forwardRef((props, ref) => (
   <Flex width={1} alignItems='center'>
     <SelectBase {...props} ref={ref} />

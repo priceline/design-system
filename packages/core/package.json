@@ -1,6 +1,6 @@
 {
   "name": "pcln-design-system",
-  "version": "6.2.2",
+  "version": "6.2.3",
   "description": "Priceline Design System",
   "homepage": "https://github.com/priceline/design-system#readme",
   "bugs": {
@@ -59,10 +59,10 @@
   "files": [
     "lib",
     "lib-commonjs",
-    "dist",
-    "types"
+    "dist"
   ],
   "scripts": {
+    "analyze": "RSDOCTOR=true heft build --production",
     "build": "heft test --clean --production",
     "start": "heft build-watch",
     "_phase:build": "heft run --only build -- --clean --production",
@@ -96,6 +96,7 @@
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@priceline/heft-component-rig": "workspace:*",
+    "@rsdoctor/webpack-plugin": "^0.1.1",
     "@rushstack/eslint-config": "^3.5.0",
     "@rushstack/eslint-patch": "^1.6.0",
     "@rushstack/heft": "^0.63.4",
@@ -112,7 +113,7 @@
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.11.16",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "@types/styled-system": "^5.1.22",

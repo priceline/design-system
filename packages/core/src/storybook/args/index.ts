@@ -76,6 +76,9 @@ export const chipWithShadowVariationArgs = [
   { label: 'Selected Disabled', disabled: true, selected: true, variation: 'shadow' },
 ]
 
+/**
+ * @public
+ */
 export const storybookArgs = {
   colorSchemeNames,
   colors,

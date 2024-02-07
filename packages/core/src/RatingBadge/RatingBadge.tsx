@@ -12,6 +12,9 @@ const defaultProps = {
   bg: 'alert',
 }
 
+/**
+ * @public
+ */
 export type RatingBadgeProps = BoxProps & {
   bg?: string
   color?: string
@@ -36,6 +39,9 @@ function getBgAndColorProps({ color, bg }) {
   }
 }
 
+/**
+ * @public
+ */
 export const RatingBadge: React.FC<RatingBadgeProps> = styled(Box).attrs((props) => ({
   ...getBgAndColorProps(props),
   ...borderRadiusAttrs(props),

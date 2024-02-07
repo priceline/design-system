@@ -1,9 +1,12 @@
+import { themeGet } from '@styled-system/theme-get'
 import React from 'react'
 import styled from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
+import { Box } from '../../Box/Box'
+import { Text } from '../../Text/Text'
 
-import { Box, Text } from '../..'
-
+/**
+ * @public
+ */
 export type DocTableProps<T> = {
   data: T[]
   columns: { field: string; heading: string; noWrap?: boolean }[]
@@ -18,6 +21,9 @@ const Tr = styled.tr`
   background-color: ${themeGet('palette.background.light')};
 `
 
+/**
+ * @public
+ */
 export const DocTable = <T extends object>({ data, columns, ...rest }: DocTableProps<T>) => {
   return (
     <Box my={4} {...rest}>

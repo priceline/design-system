@@ -12,5 +12,7 @@ const StageDecorator = (Story) => (
   </Box>
 )
 
-/** @public */
+/**
+ * @public
+ */
 export const decorators = [ThemeProviderDecorator, StageDecorator]

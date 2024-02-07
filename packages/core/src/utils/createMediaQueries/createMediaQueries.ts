@@ -4,7 +4,8 @@
  * @param breakpoints - The passed in breakpoints array
  *
  * @returns The generated media queries array
+ *
+ * @public
  */
-const createMediaQueries = (breakpoints) => breakpoints.map((n) => `@media screen and (min-width:${n})`)
-
-export { createMediaQueries }
+export const createMediaQueries = (breakpoints) =>
+  breakpoints.map((n) => `@media screen and (min-width:${n})`)

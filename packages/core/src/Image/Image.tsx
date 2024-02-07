@@ -30,6 +30,9 @@ import {
   objectPosition,
 } from '../utils'
 
+/**
+ * @public
+ */
 export type ImageProps = BorderRadiusProps &
   BoxShadowProps &
   HeightProps &
@@ -48,6 +51,9 @@ export type ImageProps = BorderRadiusProps &
     objectPosition?: ObjectPosition
   }
 
+/**
+ * @public
+ */
 export const Image: React.FC<ImageProps> = styled.img.attrs((props) => ({
   ...borderRadiusAttrs(props),
   ...boxShadowAttrs(props),

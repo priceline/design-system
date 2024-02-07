@@ -3,19 +3,31 @@ import { ChatMessage } from '../ChatMessage/ChatMessage'
 import { Flex } from '../Flex/Flex'
 import { Grid } from '../Grid/Grid'
 
+/**
+ * @public
+ */
 export type ChatMessageVariation = 'initial' | 'incoming' | 'outgoing'
 
-export interface IMessage {
+/**
+ * @public
+ */
+export interface ChatMessageIMessage {
   dateTime?: string
   message: string
   variation: ChatMessageVariation
 }
 
+/**
+ * @public
+ */
 export interface ChatMessageContainerProps {
   messageMaxWidth: string
-  messages: IMessage[]
+  messages: ChatMessageIMessage[]
 }
 
+/**
+ * @public
+ */
 export function ChatMessageContainer({ messageMaxWidth = '90%', messages }: ChatMessageContainerProps) {
   return (
     <Grid gap={2} height='100%' overflowY='scroll' p={3}>

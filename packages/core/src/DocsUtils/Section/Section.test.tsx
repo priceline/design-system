@@ -1,6 +1,6 @@
 import React from 'react'
-import { Section } from '..'
 import { render, screen } from '../../__test__/testing-library'
+import { Section } from './Section'
 
 describe('Section component', () => {
   it('should render with the correct heading and children', () => {

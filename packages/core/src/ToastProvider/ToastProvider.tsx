@@ -7,12 +7,18 @@ import { Flex } from '../Flex/Flex'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { Toast, type ToastProps } from '../Toast/Toast'
 
+/**
+ * @public
+ */
 export type ToastOptions = ToastProps & {
   enterAnimation?: MotionVariant
   exitAnimation?: MotionVariant
   removed?: boolean
 }
 
+/**
+ * @public
+ */
 export type ToastContextProps = {
   addToast: (options: ToastOptions) => void
   removeToast: (id: number) => void
@@ -25,10 +31,16 @@ const ClickthroughAbsolute = styled(Absolute)`
 /* istanbul ignore next */
 export const ToastContext = createContext<ToastContextProps>({ addToast: () => {}, removeToast: () => {} })
 
+/**
+ * @public
+ */
 export const useToast = () => {
   return useContext(ToastContext)
 }
 
+/**
+ * @public
+ */
 export type ToastProviderProps = {
   children: React.ReactNode
   domRootId?: string
@@ -101,7 +113,7 @@ function _ToastProvider({
     </ToastContext.Provider>
   )
 }
-
-const ToastProvider = withTheme(_ToastProvider)
-
-export { ToastProvider }
+/**
+ * @public
+ */
+export const ToastProvider = withTheme(_ToastProvider)

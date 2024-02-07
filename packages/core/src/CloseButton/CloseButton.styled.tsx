@@ -7,8 +7,13 @@ import { ComposedStyleFns } from '../theme/theme'
 import { getPaletteColor } from '../utils/utils'
 import type { CloseButtonProps } from './CloseButton'
 
+/** @public */
 export const closeButtonSizes = ['sm', 'md', 'lg'] as const
+
+/** @public */
 export type CloseButtonSize = (typeof closeButtonSizes)[number] | number
+
+/** @public */
 export type MotionButtonProps = HTMLMotionProps<'button'> & CloseButtonProps
 
 export const closeButtonIconSizes: Record<CloseButtonSize, number> = {
@@ -27,8 +32,12 @@ export const filledVariationSizes: Record<CloseButtonSize, number> = {
 // 2 * closeButtonInteractionPadding + closeButtonIconSizes.sm >= 44
 const clickablePaddingPx = 24
 
+/** @public */
 export const closeButtonVariants = ['filled', 'white'] as const
+
+/** @public */
 export type CloseButtonVariant = (typeof closeButtonVariants)[number]
+
 export const closeButtonVariantProps: Record<CloseButtonVariant, Omit<CloseButtonProps, 'variant'>> = {
   filled: { bgColor: 'background.lightest', boxShadowSize: 'sm', color: 'primary.base' },
   white: { color: 'text.lightest' },

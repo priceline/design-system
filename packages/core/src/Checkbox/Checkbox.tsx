@@ -92,6 +92,9 @@ const StyledInput = styled.input`
   z-index: 0;
 `
 
+/**
+ * @public
+ */
 export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
   id: string
   indeterminate?: boolean
@@ -105,6 +108,9 @@ export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
   unselectedColor?: string
 }
 
+/**
+ * @public
+ */
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef((props, ref) => {
   const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
 

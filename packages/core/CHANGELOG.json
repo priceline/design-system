@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.2.3",
+      "tag": "pcln-design-system_v6.2.3",
+      "date": "Wed, 07 Feb 2024 16:01:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added interactive state for formfield ",
+            "author": "Andrew <88814075+Andrewleel@users.noreply.github.com>",
+            "commit": "e97a77cc6fd02240878b7b1101a3c839f48b1cc1"
+          },
+          {
+            "comment": "Fix type release @public annotations for exported types",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "325502caf72e32884c9612711b71318341e1ba68"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.2",
       "tag": "pcln-design-system_v6.2.2",
       "date": "Mon, 05 Feb 2024 21:51:20 GMT",

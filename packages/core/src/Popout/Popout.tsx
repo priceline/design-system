@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import { Box } from '../Box/Box'
 import { ShadowOverlay } from '../ShadowEffect/ShadowEffect'
 
+/**
+ * @public
+ */
 export interface PopoutProps {
   trigger: JSX.Element
   content?: JSX.Element | undefined
@@ -31,6 +34,9 @@ const PopoutModal = styled(Box)`
   transition: padding 200ms ease-in-out, margin 200ms ease-in-out, border-radius 200ms ease-in-out;
 `
 
+/**
+ * @public
+ */
 export function Popout(props: PopoutProps) {
   const { trigger, content, onOpen, onClose, triggerRef, closeOnTriggerRefClick } = props
   const [isOpen, setIsOpen] = useState(false)

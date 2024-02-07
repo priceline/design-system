@@ -34,6 +34,9 @@ const Example = ({ isDo, children, desc }: ExampleProps) => (
   </Box>
 )
 
+/**
+ * @public
+ */
 export type DoDontProps = {
   doExample: React.ReactNode
   doText?: string
@@ -41,6 +44,9 @@ export type DoDontProps = {
   dontText?: string
 }
 
+/**
+ * @public
+ */
 export const DoDont = ({ doExample, dontExample, doText, dontText }: DoDontProps) => (
   <Box
     my={4}

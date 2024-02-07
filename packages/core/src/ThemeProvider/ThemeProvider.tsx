@@ -2,6 +2,9 @@ import React from 'react'
 import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import { createTheme } from '../utils/createTheme'
 
+/**
+ * @public
+ */
 export const Base = styled.div`
   font-family: ${(props) => props.theme.font};
   line-height: ${(props) => props.theme.lineHeights.standard};
@@ -12,6 +15,9 @@ export const Base = styled.div`
   }
 `
 
+/**
+ * @public
+ */
 export type ThemeProviderProps = {
   theme?: {
     breakpoints?: string[]
@@ -48,6 +54,9 @@ export type ThemeProviderProps = {
   customBreakpoints?: string[]
 }
 
+/**
+ * @public
+ */
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, customBreakpoints, ...props }) => {
   // Once updated to React 16.8 this should be wrapped in React.useMemo()
   const mergedTheme = (existingTheme) => createTheme(theme, customBreakpoints, existingTheme)

@@ -1,6 +1,6 @@
 import React from 'react'
-import { DoDont } from '..'
 import { render, screen } from '../../__test__/testing-library'
+import { DoDont } from './DoDont'
 
 describe('DoDont component', () => {
   it('renders the DO and DONT example components and text', () => {

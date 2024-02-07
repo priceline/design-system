@@ -8,6 +8,8 @@ import { type PaletteFamilies } from '../theme'
  * @param theme - The passed in theme
  *
  * @returns The generated palette
+ *
+ * @public
  */
 export function createPalette({ palette = {}, ...theme }): PaletteFamilies {
   const {

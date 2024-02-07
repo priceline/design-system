@@ -5,8 +5,14 @@ import {
   type FloatingActionButtonProps,
 } from '../FloatingActionButton/FloatingActionButton'
 
+/**
+ * @public
+ */
 export type ChatTriggerProps = FloatingActionButtonProps
 
+/**
+ * @public
+ */
 export function ChatTrigger(props: FloatingActionButtonProps): JSX.Element {
   return <FloatingActionButton bottom={0} icon={Chat} right={0} {...props} />
 }

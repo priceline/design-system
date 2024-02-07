@@ -7,14 +7,39 @@ import { Flex } from '../Flex/Flex'
 import { Toggle } from '../Toggle/Toggle'
 import { getPaletteColor } from '../utils/utils'
 
-export const cardTypes = ['radio', 'checkbox', 'toggle'] as const
-export const hPositions = ['left', 'right'] as const
-export const vPositions = ['top', 'center'] as const
+/**
+ * @public
+ */
+export const RadioCheckToggleCardCardTypes = ['radio', 'checkbox', 'toggle'] as const
 
-export type TCardTypes = (typeof cardTypes)[number]
-export type THPositions = (typeof hPositions)[number]
-export type TVPositions = (typeof vPositions)[number]
+/**
+ * @public
+ */
+export const RadioCheckToggleCardHPositions = ['left', 'right'] as const
 
+/**
+ * @public
+ */
+export const RadioCheckToggleCardVPositions = ['top', 'center'] as const
+
+/**
+ * @public
+ */
+export type TCardTypes = (typeof RadioCheckToggleCardCardTypes)[number]
+
+/**
+ * @public
+ */
+export type THPositions = (typeof RadioCheckToggleCardHPositions)[number]
+
+/**
+ * @public
+ */
+export type TVPositions = (typeof RadioCheckToggleCardVPositions)[number]
+
+/**
+ * @public
+ */
 export type RadioCheckToggleCardProps = {
   children?: React.ReactNode | string
   cardType?: TCardTypes
@@ -142,6 +167,9 @@ const buttonIcon = (cardType: TCardTypes) => {
   }
 }
 
+/**
+ * @public
+ */
 export function RadioCheckToggleCard(props: RadioCheckToggleCardProps) {
   const {
     children,

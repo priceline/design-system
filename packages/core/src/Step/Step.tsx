@@ -18,6 +18,9 @@ const StepButton = styled(Button)`
   }
 `
 
+/**
+ * @public
+ */
 export type StepProps = {
   className?: string
   active?: boolean
@@ -26,6 +29,9 @@ export type StepProps = {
   onClick?: (unknown) => unknown
 }
 
+/**
+ * @public
+ */
 export function Step({
   className,
   active,

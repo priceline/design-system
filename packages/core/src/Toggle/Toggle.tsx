@@ -54,6 +54,9 @@ const WrapperBox = styled(Box)`
   }
 `
 
+/**
+ * @public
+ */
 export type ToggleProps = {
   isOn?: boolean
   label?: string
@@ -65,6 +68,11 @@ export type ToggleProps = {
   name?: string
 }
 
+/**
+ * Toggle component
+ *
+ * @public
+ */
 export function Toggle({
   isOn,
   label,

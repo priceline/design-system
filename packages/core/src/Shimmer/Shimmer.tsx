@@ -4,7 +4,7 @@ import { Box, type BoxProps } from '../Box/Box'
 import {
   VARIATION_BACKGROUND_COLORS,
   VARIATION_GLARE_GRADIENTS,
-  VariationType,
+  ShimmerVariationType,
   type ShimmerVariation,
 } from './constants'
 
@@ -45,6 +45,9 @@ const Glare = styled.span`
   }
 `
 
+/**
+ * @public
+ */
 export type ShimmerProps = BoxProps & {
   animationWidth?: number
   className?: string
@@ -52,6 +55,9 @@ export type ShimmerProps = BoxProps & {
   variation?: ShimmerVariation
 }
 
+/**
+ * @public
+ */
 export function Shimmer({ animationWidth, disable, ...props }: ShimmerProps): JSX.Element {
   return (
     <Wrapper {...props} data-testid='Shimmer__Wrapper'>
@@ -67,5 +73,5 @@ export function Shimmer({ animationWidth, disable, ...props }: ShimmerProps): JS
 Shimmer.defaultProps = {
   animationWidth: 100,
   disable: false,
-  variation: VariationType.Base,
+  variation: ShimmerVariationType.Base,
 }

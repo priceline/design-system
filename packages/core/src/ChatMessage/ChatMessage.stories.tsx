@@ -1,8 +1,9 @@
 import type { StoryObj } from '@storybook/react'
 import { Overnight } from 'pcln-icons'
 import React from 'react'
-import { Flex, Text } from '..'
-import { ChatMessage, variationNames, type ChatMessageProps } from './ChatMessage'
+import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
+import { ChatMessage, ChatMessageVariations, type ChatMessageProps } from './ChatMessage'
 
 export default {
   title: 'Chat / ChatMessage',
@@ -13,10 +14,10 @@ export default {
   },
   argTypes: {
     variation: {
-      options: variationNames,
+      options: ChatMessageVariations,
       control: {
         type: 'select',
-        options: variationNames,
+        options: ChatMessageVariations,
       },
     },
   },

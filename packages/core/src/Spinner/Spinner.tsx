@@ -113,8 +113,14 @@ function GradientRing({ strokeWidth = '6px', ...props }: GradientRingProps) {
   )
 }
 
+/**
+ * @public
+ */
 export type SpinnerSizes = 'small' | 'medium' | 'large' | number
 
+/**
+ * @public
+ */
 export type SpinnerProps = {
   children?: React.ReactNode
   color?: PaletteFamilyName
@@ -122,6 +128,9 @@ export type SpinnerProps = {
   useGradient?: boolean
 }
 
+/**
+ * @public
+ */
 export function Spinner({ children, color, useGradient = false, ...props }: SpinnerProps) {
   if (children) {
     React.Children.only(children)

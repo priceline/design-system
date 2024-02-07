@@ -1,3 +1,6 @@
+/**
+ * @public
+ */
 export const textStylesValues = [
   'title1',
   'title2',
@@ -32,8 +35,14 @@ export const textStylesValues = [
   'label',
 ]
 
+/**
+ * @public
+ */
 export const textTransformValues = ['capitalize', 'lowercase', 'none', 'uppercase']
 
+/**
+ * @public
+ */
 export const textWrapValues = [
   'balance',
   'inherit',
@@ -45,6 +54,9 @@ export const textWrapValues = [
   'wrap',
 ]
 
+/**
+ * @public
+ */
 export function typographyAttrs(props) {
   const { textStyle, theme } = props
 

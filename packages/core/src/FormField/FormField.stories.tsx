@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
 import { Input } from '../Input/Input'
@@ -158,3 +158,65 @@ export const WithErrorTooltip = () => (
     </Tooltip>
   </Box>
 )
+
+const validateEmailFormat = (email) => {
+  // eslint-disable-next-line @rushstack/security/no-unsafe-regexp
+  const reg = new RegExp(
+    [
+      '^(([^<>()[\\]\\\\.,;:\\s@"]+(\\.[^<>()[\\]\\\\.,;:\\s@"]+)*)',
+      '|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)',
+      '+[a-zA-Z]{2,}))$',
+    ].join('')
+  )
+  return reg.test(email)
+}
+
+export const Usage = () => {
+  const [email, setEmail] = useState('')
+  const [isValidEmail, setIsValidEmail] = useState(false)
+  const [isFocused, SetIsFocused] = useState(true)
+
+  // update email address
+  const updateInput = (e) => {
+    const value = e.target.value
+    setEmail(value)
+  }
+
+  // handle when focus leave the field
+  const handleBlur = (e) => {
+    const value = e.target.value
+    setIsValidEmail(validateEmailFormat(value))
+    SetIsFocused(false)
+  }
+
+  // handle when field is on focus
+  const handleFocus = (e) => {
+    SetIsFocused(true)
+  }
+
+  return (
+    <Box>
+      <FormField>
+        <Label autoHide htmlFor='dynamic-label-usage'>
+          Email Address
+        </Label>
+        <Input
+          id='dynamic-label-usage'
+          name='dynamic-label-usage'
+          onChange={updateInput}
+          onBlur={handleBlur}
+          value={email}
+          onFocus={handleFocus}
+          color={isFocused ? '' : isValidEmail ? 'success' : 'error'}
+          placeholder='Email Address'
+        />
+        {isFocused ? null : isValidEmail ? <SuccessIcon color='success' /> : <WarningIcon color='error' />}
+      </FormField>
+      {!isFocused && !isValidEmail ? (
+        <Tooltip id='demo-error' right color='error'>
+          Email address is required
+        </Tooltip>
+      ) : null}
+    </Box>
+  )
+}

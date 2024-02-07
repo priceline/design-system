@@ -99,6 +99,9 @@ const toneBorder = '#868d95'
 const darkBorder = '#5e6872'
 const shadeBorder = '#1a1d20'
 
+/**
+ * @public
+ */
 export const colors = {
   black,
   white,

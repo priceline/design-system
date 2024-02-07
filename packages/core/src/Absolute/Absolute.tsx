@@ -14,8 +14,14 @@ import {
 } from 'styled-system'
 import { Box, BoxProps } from '../Box/Box'
 
+/**
+ * @public
+ */
 export type AbsoluteProps = BoxProps & TopProps & RightProps & BottomProps & LeftProps & ZIndexProps
 
+/**
+ * @public
+ */
 export const Absolute: React.FC<AbsoluteProps> = styled(Box)`
   position: absolute;
 

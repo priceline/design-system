@@ -38,9 +38,19 @@ const addAliases = (arr, aliases) =>
     })
   )
 
+/**
+ * @public
+ */
 export { colors }
+
+/**
+ * @public
+ */
 export const breakpoints = [32, 40, 48, 64, 80].map((n) => n + 'em')
 
+/**
+ * @public
+ */
 export const mediaQueries = createMediaQueries(breakpoints)
 
 const aliases = ['sm', 'md', 'lg', 'xl', 'xxl']
@@ -48,18 +58,41 @@ const aliases = ['sm', 'md', 'lg', 'xl', 'xxl']
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
+/**
+ * @public
+ */
 export const space = [0, 4, 8, 16, 32, 64, 128].map((n) => n + 'px')
 
+/**
+ * @public
+ */
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
+/**
+ * @public
+ */
 export const fontSizes = [12, 14, 16, 20, 24, 32, 40, 56, 72]
 
+/**
+ * @public
+ */
 export const medium = 500
+
+/**
+ * @public
+ */
 export const bold = 700
-// alias
+
+/**
+ * @public
+ */
 export const regular = medium
 
-// styled-system's `fontWeight` function can hook into the `fontWeights` object
+/**
+ * styled-system's `fontWeight` function can hook into the `fontWeights` object
+ *
+ * @public
+ */
 export const fontWeights = {
   medium,
   bold,
@@ -67,6 +100,9 @@ export const fontWeights = {
   regular,
 }
 
+/**
+ * @public
+ */
 export const lineHeights = {
   standard: 1.4,
   display: 1.25,
@@ -77,6 +113,9 @@ const letterSpacings = {
   caps: '0.025em',
 }
 
+/**
+ * @public
+ */
 export const typography = {
   title1: {
     fontWeight: 700,
@@ -254,6 +293,9 @@ export const typography = {
   },
 }
 
+/**
+ * @public
+ */
 export type ZIndexStrings =
   | 'auto'
   | 'absolute'
@@ -266,10 +308,20 @@ export type ZIndexStrings =
   | 'modal'
   | 'popover'
   | 'tooltip'
+
+/**
+ * @public
+ */
 export type ZIndex = number | ZIndexStrings
 
+/**
+ * @public
+ */
 export type ZIndices = Record<ZIndexStrings, string | number>
 
+/**
+ * @public
+ */
 export const zIndices: ZIndices = {
   auto: 'auto',
   absolute: 50,
@@ -284,10 +336,20 @@ export const zIndices: ZIndices = {
   modal: 800,
 }
 
-// styled-system's `borderRadius` function can hook into the `radii` object/array
+/**
+ * styled-system's `borderRadius` function can hook into the `radii` object/array
+ * @public
+ */
 export const radii = [0, 2, 6]
+
+/**
+ * @public
+ */
 export const radius = '2px'
 
+/**
+ * @public
+ */
 export const baseBorderRadii = {
   none: 'none',
   xsm: '2px',
@@ -300,6 +362,9 @@ export const baseBorderRadii = {
   full: '9999px',
 }
 
+/**
+ * @public
+ */
 export const actionBorderRadii = {
   'action-sm': '9999px',
   'action-md': '9999px',
@@ -307,14 +372,27 @@ export const actionBorderRadii = {
   'action-xl': '12px',
 }
 
+/**
+ * @public
+ */
 export const borderRadii = {
   ...baseBorderRadii,
   ...actionBorderRadii,
 }
 
+/**
+ * @public
+ */
 export type BorderRadius = keyof typeof borderRadii
+
+/**
+ * @public
+ */
 export const maxContainerWidth = '1280px'
 
+/**
+ * @public
+ */
 export const shadows = {
   sm: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 1px 0 rgba(0,0,0,0.24),0 2px 1px -1px rgba(0,0,0,0.16),0 2px 4px 0 rgba(0,0,0,0.12)',
   md: '0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16)',
@@ -330,14 +408,19 @@ export const shadows = {
     '0 -1px 0 0 rgba(0,0,0,0.03),0 24px 72px 0 rgba(0,0,0,0.48),0 8px 16px 0 rgba(0,0,0,0.12),0 24px 64px 0 rgba(0,0,0,0.2)',
 }
 
+/**
+ * @public
+ */
 export type BoxShadowSize = keyof typeof shadows
 
+/**
+ * @public
+ */
 export const textShadows = {
   sm: `0 1px 2px rgba(0,0,0,0.5)`,
   md: `0 2px 4px rgba(0,0,0,0.5)`,
 }
 
-// opacity
 const opacity = {
   'opacity-0': 0.0,
   'opacity-10': 0.1,
@@ -352,7 +435,6 @@ const opacity = {
   'opacity-100': 1.0,
 }
 
-// scale (min/half/max)
 const scale = {
   'scale-0': 0.0,
   'scale-2': 0.02,
@@ -370,7 +452,9 @@ const scale = {
   'scale-100': 1.0,
 }
 
-// animation duration
+/**
+ * @public
+ */
 export const duration = {
   fast: `150ms`,
   normal: `300ms`,
@@ -394,6 +478,9 @@ const standardExpressive = 'cubic-bezier(0.4, 0.14, 0.3, 1)'
 const entranceExpressive = 'cubic-bezier(0, 0, 0.3, 1)'
 const exitExpressive = 'cubic-bezier(0.4, 0.14, 1, 1)'
 
+/**
+ * @public
+ */
 export const timingFunctions = {
   easeInOut,
   easeOut,
@@ -414,14 +501,24 @@ const transitionDelays = {
   xLarge: `360ms`,
 }
 
+/**
+ * @public
+ */
 export const textStyles = createTextStyles({
   fontSizes,
   fontWeights,
   lineHeights,
   letterSpacings,
 })
+
+/**
+ * @public
+ */
 export const colorStyles = createColorStyles({ colors })
 
+/**
+ * @public
+ */
 export const theme = {
   breakpoints,
   mediaQueries,
@@ -451,14 +548,18 @@ export const theme = {
   zIndices,
 }
 
-/** @public */
+/**
+ * @public
+ */
 export type TextStyle = {
   fontWeight: number
   fontSize: string
   lineHeight: string
 }
 
-/** @public */
+/**
+ * @public
+ */
 export const paletteFamilyVariations = [
   'lightest',
   'light',
@@ -471,7 +572,9 @@ export const paletteFamilyVariations = [
   'darkest',
 ] as const
 
-/** @public */
+/**
+ * @public
+ */
 export type PaletteFamily = {
   lightest?: string
   light?: string
@@ -484,7 +587,9 @@ export type PaletteFamily = {
   darkest?: string
 }
 
-/** @public */
+/**
+ * @public
+ */
 export const paletteFamilyNames = [
   'primary',
   'secondary',
@@ -505,31 +610,54 @@ export const paletteFamilyNames = [
   'background',
 ] as const
 
-/** @public */
+/**
+ * @public
+ */
 export type PaletteFamilyVariation = (typeof paletteFamilyVariations)[number]
 
-/** @public */
+/**
+ * @public
+ */
 export type PaletteFamilyName = (typeof paletteFamilyNames)[number]
 
-/** @public */
+/**
+ * @public
+ */
 export type PaletteFamilies = Record<PaletteFamilyName, PaletteFamily>
 
-type _PaletteFamily = Array<keyof PaletteFamilies>[number]
-type _PaletteFamilyOption = Array<keyof PaletteFamily>[number]
+/**
+ * @public
+ */
+export type PaletteColorPaletteFamily = Array<keyof PaletteFamilies>[number]
 
-/** @public */
-export type PaletteColor = `${_PaletteFamily}.${_PaletteFamilyOption}`
+/**
+ * @public
+ */
+export type PaletteColorPaletteFamilyOption = Array<keyof PaletteFamily>[number]
+
+/**
+ * @public
+ */
+export type PaletteColor = `${PaletteColorPaletteFamily}.${PaletteColorPaletteFamilyOption}`
+
+/**
+ * @public
+ */
 export const paletteColors = paletteFamilyNames.flatMap((family) =>
   paletteFamilyVariations.map((variation) => `${family}.${variation}`)
 )
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorStyle = {
   color: string
   backgroundColor: string
 }
 
-/** @public */
+/**
+ * @public
+ */
 export const colorStyleNames = [
   'whiteOnText',
   'whiteOnGray',
@@ -556,20 +684,28 @@ export const colorStyleNames = [
   'danger',
 ] as const
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorStyleName = (typeof colorStyleNames)[number]
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorStyles = Record<ColorStyleName, ColorStyle>
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorScheme = {
   foreground: string
   background: string
   backgroundName: PaletteColor
 }
 
-/** @public */
+/**
+ * @public
+ */
 export const colorSchemeNames = [
   'primary',
   'primaryLight',
@@ -613,19 +749,29 @@ export const colorSchemeNames = [
   'headingOnPrimaryLight',
 ] as const
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorSchemeName = (typeof colorSchemeNames)[number]
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorSchemes = Record<ColorSchemeName, ColorScheme>
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorName = keyof typeof colors
 
-/** @public */
+/**
+ * @public
+ */
 export type ColorProp = ColorName | PaletteFamilyName | PaletteColor
 
-/** @public */
+/**
+ * @public
+ */
 export type DesignSystemTheme = {
   space: string[]
   colors: Record<string, string>
@@ -640,6 +786,9 @@ export type DesignSystemTheme = {
   zIndices: ZIndices
 }
 
+/**
+ * @public
+ */
 export interface IStyledSystemProps
   extends BackgroundProps,
     BorderProps,
@@ -654,6 +803,9 @@ export interface IStyledSystemProps
   style?: React.CSSProperties
 }
 
+/**
+ * @public
+ */
 export const ComposedStyleFns = compose(
   background,
   border,

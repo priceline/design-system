@@ -6,6 +6,8 @@ import { theme as dsTheme } from '../theme'
  * @param theme - The passed in theme
  *
  * @returns - The generated colorStyles
+ *
+ * @public
  */
 export const createColorStyles = (theme: typeof dsTheme) => {
   const {

@@ -8,6 +8,9 @@ import { TopArrows } from './TopArrows'
 import { getCustomWidths, getVisibleSlides } from './helpers'
 import { useSlideBoxNav } from './useSlideBoxNav'
 
+/**
+ * @public
+ */
 export type SlideBoxProps = {
   children?: React.ReactNode | string
   visibleSlides?: Array<number> | number
@@ -23,6 +26,9 @@ export type SlideBoxProps = {
   mobileSlideScrollNum?: number
 }
 
+/**
+ * @public
+ */
 export function SlideBox({
   children,
   visibleSlides,

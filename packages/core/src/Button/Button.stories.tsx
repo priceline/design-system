@@ -6,19 +6,15 @@ import React from 'react'
 import { Box } from '../Box/Box'
 import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
 import { CloseButton } from '../CloseButton/CloseButton'
-import {
-  DoDont,
-  DocTable,
-  Hero,
-  // LiveDemo,
-  Note,
-  RelatedComponent,
-  RelatedComponentContainer,
-  Section,
-  StoryHeading,
-  StoryStage,
-  TableOfContents,
-} from '../DocsUtils'
+import { DoDont } from '../DocsUtils/DoDont/DoDont'
+import { DocTable } from '../DocsUtils/DocTable/DocTable'
+import { Hero } from '../DocsUtils/Hero/Hero'
+import { Note } from '../DocsUtils/Note/Note'
+import { RelatedComponent, RelatedComponentContainer } from '../DocsUtils/RelatedComponent/RelatedComponent'
+import { Section } from '../DocsUtils/Section/Section'
+import { StoryHeading } from '../DocsUtils/StoryHeading/StoryHeading'
+import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
+import { TableOfContents } from '../DocsUtils/TableOfContents/TableOfContents'
 import { Flex } from '../Flex/Flex'
 import { Image } from '../Image/Image'
 import { Label } from '../Label/Label'
@@ -26,7 +22,7 @@ import { Link } from '../Link/Link'
 import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { colors, shadows } from '../storybook/args'
-import { Button, type ButtonProps, type Sizes } from './Button'
+import { Button, type ButtonProps, type ButtonSizes } from './Button'
 import alignmentImage from './Button.Image.Alignment.png'
 import groupsImage from './Button.Image.Groups.png'
 import heroImage from './Button.Image.Hero.png'
@@ -160,7 +156,7 @@ export const SemanticStyles: ButtonStory = {
 export const IconButtons: ButtonStory = {
   render: () => (
     <>
-      {sizeOptions.map((size: Sizes) => (
+      {sizeOptions.map((size: ButtonSizes) => (
         <StoryStage key={size}>
           <Button size={size} IconLeft={User}>
             Sign In
