@@ -2,6 +2,28 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "6.0.5",
+      "tag": "pcln-popover_v6.0.5",
+      "date": "Wed, 07 Feb 2024 16:01:30 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix type release @public annotations for exported types",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "325502caf72e32884c9612711b71318341e1ba68"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.2.3`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.2.2` to `^6.2.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.4",
       "tag": "pcln-popover_v6.0.4",
       "date": "Mon, 05 Feb 2024 21:51:20 GMT",

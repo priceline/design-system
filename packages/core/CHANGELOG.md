@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 05 Feb 2024 21:51:20 GMT and should not be manually modified.
+This log was last generated on Wed, 07 Feb 2024 16:01:30 GMT and should not be manually modified.
+
+## 6.2.3
+Wed, 07 Feb 2024 16:01:30 GMT
+
+### Patches
+
+- Added interactive state for formfield 
+- Fix type release @public annotations for exported types
 
 ## 6.2.2
 Mon, 05 Feb 2024 21:51:20 GMT
