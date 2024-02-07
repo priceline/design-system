@@ -22,7 +22,7 @@ const ChangeDetector = ({ onSlideChange, numVisibleSlides }) => {
 
   useEffect(() => {
     function onChange() {
-      const slideNum = carouselContext.state.currentSlide + numVisibleSlides - 1
+      const slideNum = Math.floor(carouselContext.state.currentSlide + numVisibleSlides - 1)
       setCurrentSlide(slideNum)
 
       if (typeof onSlideChange === 'function') {
