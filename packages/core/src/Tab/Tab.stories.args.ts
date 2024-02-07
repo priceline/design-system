@@ -29,11 +29,9 @@ export const defaultArgs: Partial<ITabsProps> = {
   ],
 }
 export const argTypes = {
-  TabStyle: {
-    size: {
-      control: 'select',
-      options: ['sm', 'md', 'lg'],
-    },
+  size: {
+    control: 'select',
+    options: ['sm', 'md', 'lg'],
   },
   type: {
     control: 'select',

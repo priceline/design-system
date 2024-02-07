@@ -5,7 +5,6 @@ import { StoryStage } from '../DocsUtils'
 import { ITabsProps } from './Tab'
 import { Icon } from '../Icon/Icon'
 import { argTypes, defaultArgs } from './Tab.stories.args'
-import { Box } from '../Box/Box'
 
 type TabsStory = StoryObj<ITabsProps>
 

@@ -28,7 +28,7 @@ export interface ITabsProps {
   type?: 'chip' | 'radio' | 'button'
 }
 
-const PclnTab = ({
+export const PclnTab = ({
   tabsContent,
   tabsData,
   orientation = 'horizontal',
@@ -123,5 +123,3 @@ const PclnTab = ({
   )
 }
 PclnTab.displayName = 'Tabs'
-
-export default PclnTab

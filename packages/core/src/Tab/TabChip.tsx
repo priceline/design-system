@@ -4,7 +4,7 @@ import React from 'react'
 import { Box } from '../Box/Box'
 import { themeGet } from '@styled-system/theme-get'
 import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
-export const TabChip = ({ size, index, tab, value }) => {
+export const TabChip = ({ size, index, tab, value, ...props }) => {
   const sizeStyles = {
     sm: { fontSize: 1, px: 2, imgSize: 20 },
     md: { fontSize: 2, px: 3, imgSize: 24 },
@@ -13,7 +13,7 @@ export const TabChip = ({ size, index, tab, value }) => {
 
   return (
     <Tab.Trigger asChild value={`${value}-tab${index + 1}`} key={`${value}-tab${index + 1}`}>
-      <ButtonChip>
+      <ButtonChip {...props}>
         {tab.icon && (
           <Box ml={2} size={sizeStyles[size].imgSize}>
             {tab.icon}

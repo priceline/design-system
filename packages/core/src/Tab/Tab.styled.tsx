@@ -1,7 +1,6 @@
 import * as Tab from '@radix-ui/react-tabs'
 import styled from 'styled-components'
 import { getPaletteColor } from '../utils'
-import { themeGet } from '@styled-system/theme-get'
 
 export const TabTriggerButton = styled(Tab.Trigger)`
   cursor: pointer;
