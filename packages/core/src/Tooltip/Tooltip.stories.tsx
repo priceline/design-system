@@ -9,6 +9,7 @@ import { Label } from '../Label/Label'
 import { colorSchemeNames } from '../storybook/args'
 import { Tooltip } from './Tooltip'
 import { argTypes } from './Tooltip.stories.args'
+import { Dialog } from '../Dialog/Dialog'
 
 const FlexColumn = styled(Flex)`
   flex-direction: column;
@@ -148,6 +149,17 @@ export const WithAnchors = () => (
       </FormField>
     </Box>
   </FlexColumn>
+)
+
+export const InDialogWithAnchors = () => (
+  <Dialog open size='md'>
+    <Box width={300} p={2} my={2}>
+      <Tooltip bottom center color='primary'>
+        top center tooltip
+      </Tooltip>
+      <div>some text in a dialog</div>
+    </Box>
+  </Dialog>
 )
 
 const ColorSchemesTemplate = () => {

@@ -5,6 +5,7 @@ import {
   Box,
   Button,
   CloseButton,
+  Dialog,
   FilterChip,
   Flex,
   IconButton,
@@ -136,6 +137,20 @@ export const bottom = () => (
   <Popover renderContent={InnerContent} placement='bottom' ariaLabel='Bottom Popover' idx={2} width={400}>
     <Link m={3}>Open Popover</Link>
   </Popover>
+)
+
+export const InDialog = () => (
+  <Dialog open size='md'>
+    <Popover
+      renderContent={SimpleTextContent}
+      placement='bottom'
+      ariaLabel='Dialog Popover'
+      idx={2}
+      width={400}
+    >
+      <Link m={3}>Open Popover</Link>
+    </Popover>
+  </Dialog>
 )
 
 export const hideOverlay = () => (

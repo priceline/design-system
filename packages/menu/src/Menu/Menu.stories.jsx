@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { argTypes, defaultArgs } from './Menu.stories.args'
 import { Bed as BedIcon } from 'pcln-icons'
-import { Box, ButtonChip, Divider, Flex, Link, Text } from 'pcln-design-system'
+import { Box, ButtonChip, Dialog, Divider, Flex, Link, Text } from 'pcln-design-system'
 import { listItems, currencies } from '../../test/mocks/Menu'
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
@@ -191,6 +191,14 @@ export const UsingButtonPropsPropForStylingButtonText = () => (
   >
     <MenuItems />
   </Menu>
+)
+
+export const InDialog = () => (
+  <Dialog open size='md'>
+    <Menu width={300} buttonText='Menu'>
+      <MenuItems />
+    </Menu>
+  </Dialog>
 )
 
 export const CustomMenuWithoutMenuItems = () => {
