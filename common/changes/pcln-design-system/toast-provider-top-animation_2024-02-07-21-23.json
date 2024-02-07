@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "ToastProvider: update to allow animations to come in from the top",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

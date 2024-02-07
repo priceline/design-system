@@ -24,3 +24,14 @@ const Template = (args) => (
 )
 
 export const _ToastProvider = Template.bind({})
+
+export const TopAnimation = (args) => (
+  <ToastProvider
+    domRootId='ToastProviderRoot'
+    top={20}
+    enterAnimation='slideInTop'
+    exitAnimation='slideOutTop'
+  >
+    <MockToastChildren variation={args.variation} />
+  </ToastProvider>
+)
