@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
 import { userEvent } from '@storybook/testing-library'
-import { Tab } from '.'
+import { Tab } from './Tab'
 
 describe('Tab', () => {
   const tabsContent = [
@@ -15,14 +15,14 @@ describe('Tab', () => {
   ]
 
   it('renders tabs with correct text', () => {
-    render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
+    render(<Tab type='button' tabsContent={tabsContent} tabsData={tabsData} />)
 
     expect(screen.getByText('Tab 1')).toBeInTheDocument()
     expect(screen.getByText('Tab 2')).toBeInTheDocument()
   })
 
   it('renders tab content based on active tab', async () => {
-    render(<Tab tabsContent={tabsContent} tabsData={tabsData} />)
+    render(<Tab type='button' tabsContent={tabsContent} tabsData={tabsData} />)
 
     expect(screen.getByText('Tab 1 Content')).toBeInTheDocument()
     expect(screen.queryByText('Tab 2 Content')).toBeNull()

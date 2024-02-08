@@ -3,13 +3,13 @@ import React from 'react'
 import { TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
-export const TabButton = ({ border, size, hasHover, type, tab, index, value }) => {
+import type { TabProps, TabDataProps, MappedTabProps } from './Tab'
+export const TabButton = ({
+  border,
+  hasHover,
+  tab,
+}: Partial<TabProps> & MappedTabProps & { tab: TabDataProps }) => {
   const [isHover, setIsHover] = React.useState(false)
-  const sizeStyles = {
-    sm: { fontSize: 1, py: 2 },
-    md: { fontSize: 2, py: 3 },
-    lg: { fontSize: 4, py: 3 },
-  }
   return (
     <TabTriggerButton
       buttonBorder={border}
@@ -17,19 +17,21 @@ export const TabButton = ({ border, size, hasHover, type, tab, index, value }) =
       isHover={isHover}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      type={type}
-      value={`${value}-tab${index + 1}`}
-      key={`${value}-tab${index + 1}`}
+      value={`tab-${tab.id}`}
+      key={`tab-${tab.id}`}
     >
       <Flex alignItems='center'>
         {tab.icon && (
           <Box ml={3} size={24}>
-            {tab.icon}
+            {React.createElement(tab.icon, {
+              title: tab.icon.name,
+              size: 24,
+            })}
           </Box>
         )}
         <Text
-          py={sizeStyles[size].py}
-          fontSize={sizeStyles[size].fontSize}
+          py={3}
+          fontSize={2}
           pl={tab.icon ? 2 : 3}
           style={{ fontFamily: 'Montserrat' }}
           textStyle='paragraph'

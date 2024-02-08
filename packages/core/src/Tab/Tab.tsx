@@ -6,29 +6,38 @@ import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
 import { v4 as uuidv4 } from 'uuid'
+import { ButtonChipProps } from '../Chip/ButtonChip/ButtonChip'
+import { IconComponent } from '../Chip/ChipContent/ChipContent'
 
-export interface ITabsProps {
+export type TabDataProps = {
+  id: string
+  icon?: IconComponent
+  text: string
+  onClick?: () => void
+}
+export type TabProps = {
   orientation?: 'horizontal' | 'vertical'
   hasHover?: boolean
   onClick?: () => void
-  size: 'sm' | 'md' | 'lg' | ['sm' | 'md' | 'lg']
+  size?: 'sm' | 'md' | 'lg' | ['sm' | 'md' | 'lg']
   tabsContent: {
-    id?: string
+    id: string
     children: React.ReactNode
   }[]
-  tabsData: {
-    id?: string
-    icon?: React.ReactNode
-    text: string
-    onClick?: () => void
-  }[]
+  tabsData: TabDataProps[]
   variant?: string
   border?: boolean
   tabGap?: number
-  type?: 'chip' | 'radio' | 'button'
+  type: 'chip' | 'radio' | 'button'
+  buttonChipProps?: ButtonChipProps
 }
 
-export const PclnTab = ({
+export type MappedTabProps = {
+  tab: TabDataProps
+  icon?: IconComponent
+  buttonChipProps?: ButtonChipProps
+}
+export const Tab = ({
   tabsContent,
   tabsData,
   orientation = 'horizontal',
@@ -38,42 +47,19 @@ export const PclnTab = ({
   type = 'button',
   border = false,
   tabGap,
+  buttonChipProps,
   ...props
-}: ITabsProps) => {
-  const [isActive, setIsActive] = React.useState(() => {
-    const initialActiveState = new Array(tabsData.length).fill(false)
-    initialActiveState[0] = true
-    return initialActiveState
-  })
-  const tabLink = uuidv4()
-  const renderTab = (tab, index) => {
+}: TabProps) => {
+  const [isActive, setIsActive] = React.useState(`${tabsData[0].id}`)
+  const renderTab = (tab: TabDataProps) => {
     switch (type) {
       case 'chip':
-        return <TabChip size={size} value={tabLink} tab={tab} index={index} {...props} />
+        return <TabChip tab={tab} icon={tab.icon} buttonChipProps={buttonChipProps} />
       case 'button':
-        return (
-          <TabButton
-            border={border}
-            size={size}
-            hasHover={hasHover}
-            type={type}
-            tab={tab}
-            value={tabLink}
-            {...props}
-            index={index}
-          />
-        )
+        return <TabButton border={border} hasHover={hasHover} tab={tab} {...props} />
       case 'radio':
         return (
-          <TabRadio
-            value={tabLink}
-            hasHover={hasHover}
-            tab={tab}
-            index={index}
-            isActive={isActive}
-            setIsActive={setIsActive}
-            {...props}
-          />
+          <TabRadio hasHover={hasHover} tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
         )
       default:
         return null
@@ -81,15 +67,15 @@ export const PclnTab = ({
   }
   if (orientation === 'vertical') {
     return (
-      <Tabs.Root defaultValue={`${tabLink}-tab1`}>
+      <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
         <TabList orientation={orientation} aria-label='Pcln Tabs'>
           {tabsData.map((tab, index) => (
             <>
-              <Box key={`tab${index}`} mx={tabGap}>
-                {renderTab(tab, index)}
+              <Box key={`tab-${tab.id}`} my={tabGap}>
+                {renderTab(tab)}
               </Box>
-              <Box key={`content${index}`}>
-                <Tabs.Content value={`${tabLink}-tab${index + 1}`}>
+              <Box key={`content-${tab.id}`}>
+                <Tabs.Content value={`tab-${tab.id}`}>
                   {tabsContent[index] && tabsContent[index].children}
                 </Tabs.Content>
               </Box>
@@ -100,20 +86,20 @@ export const PclnTab = ({
     )
   }
   return (
-    <Tabs.Root defaultValue={`${tabLink}-tab1`}>
+    <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
       <TabList orientation={orientation} aria-label='Pcln Tabs'>
         {tabsData.map((tab, index) => {
           return (
-            <Box mx={tabGap} key={`tab${index + 1}`}>
+            <Box mx={tabGap} key={`tab-${tab.id}`}>
               {renderTab(tab, index)}
             </Box>
           )
         })}
       </TabList>
       <Box>
-        {tabsContent.map((tab, index) => {
+        {tabsContent.map((tab) => {
           return (
-            <Tabs.Content key={`tab${index + 1}`} value={`${tabLink}-tab${index + 1}`}>
+            <Tabs.Content key={`tab-${tab.id}`} value={`tab-${tab.id}`}>
               {tab.children}
             </Tabs.Content>
           )
@@ -122,4 +108,4 @@ export const PclnTab = ({
     </Tabs.Root>
   )
 }
-PclnTab.displayName = 'Tabs'
+Tab.displayName = 'Tab'

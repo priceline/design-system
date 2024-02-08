@@ -2,35 +2,34 @@ import React from 'react'
 import { Label } from '../Label/Label'
 import { Radio } from '../Radio/Radio'
 import { TabTriggerRadio } from './Tab.styled'
-import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { TabProps, MappedTabProps, TabDataProps } from './Tab'
 
-export const TabRadio = ({ hasHover, tab, index, isActive, setIsActive, value }) => {
-  console.log(index)
-  const tabRef = React.useRef(null)
-  const [isChecked, setIsChecked] = React.useState(isActive === true)
-  React.useEffect(() => {
-    setIsChecked(isActive === index)
-  }, [isActive, index])
-
-  const handleTabClick = () => {
-    setIsActive(index)
-  }
-
+export const TabRadio = ({
+  hasHover,
+  tab,
+  isActive,
+  setIsActive,
+}: Partial<TabProps> &
+  MappedTabProps & {
+    tab: TabDataProps
+    isActive: string
+    setIsActive: React.Dispatch<React.SetStateAction<string>>
+  }) => {
   return (
-    <TabTriggerRadio
-      ref={tabRef}
-      onClick={handleTabClick}
-      asChild
-      hover={hasHover}
-      value={`${value}-tab${index + 1}`}
-      key={`tab${index + 1}`}
-    >
-      <Box style={{ display: 'flex', alignItems: 'center' }} mr={2}>
+    <TabTriggerRadio asChild hover={hasHover} value={`tab-${tab.id}`} key={`tab-${tab.id}`}>
+      <Flex alignItems='center' mr={2}>
         <Label fontSize='14px'>
-          <Radio checked={isChecked} />
+          <Radio
+            type='radio'
+            value={tab.id}
+            checked={isActive === tab.id}
+            name={tab.id}
+            onChange={() => setIsActive(tab.id)}
+          />
           {tab.text}
         </Label>
-      </Box>
+      </Flex>
     </TabTriggerRadio>
   )
 }

@@ -155,6 +155,7 @@ export { Toggle, type ToggleProps } from './Toggle/Toggle'
 export { ToggleBadge, type ToggleBadgeProps } from './ToggleBadge/ToggleBadge'
 export { Tooltip, type TooltipProps } from './Tooltip/Tooltip'
 export { Truncate } from './Truncate/Truncate'
+export { Tab, type TabProps } from './Tab/Tab'
 
 export * from './utils'
 export { createTheme } from './utils/createTheme'

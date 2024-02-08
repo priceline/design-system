@@ -1,12 +1,12 @@
-import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Tab } from '.'
-import { StoryStage } from '../DocsUtils'
-import { ITabsProps } from './Tab'
+import React from 'react'
+import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
 import { Icon } from '../Icon/Icon'
+import { Tab, type TabProps } from './Tab'
 import { argTypes, defaultArgs } from './Tab.stories.args'
+import { Broom, Departure } from 'pcln-icons'
 
-type TabsStory = StoryObj<ITabsProps>
+type TabsStory = StoryObj<TabProps>
 
 export const Playground: TabsStory = {
   render: (args) => (
@@ -54,6 +54,19 @@ export const NoIconButtonTabs: TabsStory = {
   },
 }
 
+export const VerticalOrientationButtonTabs: TabsStory = {
+  render: (args) => (
+    <StoryStage>
+      <Tab {...args} />
+    </StoryStage>
+  ),
+  args: {
+    ...defaultArgs,
+    size: 'md',
+    orientation: 'vertical',
+  },
+}
+
 export const NoIconNoHoverButtonTabs: TabsStory = {
   render: (args) => (
     <StoryStage>
@@ -77,17 +90,17 @@ export const IconButtonTabs: TabsStory = {
     tabsData: [
       {
         id: 't1',
-        icon: <Icon name='Flights' />,
+        icon: Departure,
         text: 'Tab 1',
       },
       {
         id: 't2',
-        icon: <Icon name='Flights' />,
+        icon: Departure,
         text: 'Tab 2',
       },
       {
         id: 't3',
-        icon: <Icon name='Flights' />,
+        icon: Departure,
         text: 'Tab 3',
       },
     ],
@@ -106,17 +119,17 @@ export const IconChipTabs: TabsStory = {
     tabsData: [
       {
         id: 't1',
-        icon: <Icon color='primary' name='Flights' />,
+        icon: Departure,
         text: 'Tab 1',
       },
       {
         id: 't2',
-        icon: <Icon color='primary' name='Flights' />,
+        icon: Departure,
         text: 'Tab 2',
       },
       {
         id: 't3',
-        icon: <Icon color='primary' name='Flights' />,
+        icon: Departure,
         text: 'Tab 3',
       },
     ],

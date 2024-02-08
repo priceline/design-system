@@ -1,29 +1,35 @@
-import { ITabsProps } from './Tab'
+import { TabProps } from './Tab'
 import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 
-export const defaultArgs: Partial<ITabsProps> = {
+export const defaultArgs: Partial<TabProps> = {
   size: 'md',
   hasHover: true,
   type: 'button',
   tabsContent: [
     {
+      id: 't1',
       children: DefaultContent(),
     },
     {
+      id: 't2',
       children: DefaultContent2(),
     },
     {
+      id: 't3',
       children: DefaultContent3(),
     },
   ],
   tabsData: [
     {
+      id: 't1',
       text: 'Tab 1',
     },
     {
+      id: 't2',
       text: 'Tab 2',
     },
     {
+      id: 't3',
       text: 'Tab 3',
     },
   ],
