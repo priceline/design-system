@@ -66,7 +66,7 @@ describe('ToastProvider', () => {
 
   it('renders a custom toast', () => {
     render(
-      <ToastProvider enterAnimation='scaleFromCenter' exitAnimation='expandDown'>
+      <ToastProvider enterAnimation='scaleFromCenter' exitAnimation='expandDown' top={20}>
         <MockToastChildren variation='fill' />
       </ToastProvider>
     )
