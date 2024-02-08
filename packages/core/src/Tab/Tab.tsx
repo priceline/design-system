@@ -88,10 +88,10 @@ export const Tab = ({
   return (
     <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
       <TabList orientation={orientation} aria-label='Pcln Tabs'>
-        {tabsData.map((tab, index) => {
+        {tabsData.map((tab) => {
           return (
             <Box mx={tabGap} key={`tab-${tab.id}`}>
-              {renderTab(tab, index)}
+              {renderTab(tab)}
             </Box>
           )
         })}
