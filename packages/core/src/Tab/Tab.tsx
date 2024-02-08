@@ -60,8 +60,6 @@ export const Tab = ({
         return (
           <TabRadio hasHover={hasHover} tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
         )
-      default:
-        return null
     }
   }
   if (orientation === 'vertical') {
