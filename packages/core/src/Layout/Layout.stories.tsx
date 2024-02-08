@@ -44,13 +44,30 @@ Basic.args = {
   rowGap: 'sm',
 }
 
-export const Responsive = Template.bind({})
-Responsive.args = {
+const responsiveArgs = {
   variation: ['100', '50-50', null, '60-40'],
-  gap: 'sm',
-  rowGap: ['sm', 'md'],
+  gap: ['sm', null, 'xl'],
+  rowGap: ['sm', null, 'xl'],
   stretchHeight: true,
 }
+
+export const ResponsiveSmall = Template.bind({})
+ResponsiveSmall.args = responsiveArgs
+ResponsiveSmall.parameters = {
+  viewport: {
+    defaultViewport: 'designSystem_sm',
+  },
+}
+ResponsiveSmall.storyName = 'Responsive (sm)'
+
+export const ResponsiveLarge = Template.bind({})
+ResponsiveLarge.args = responsiveArgs
+ResponsiveLarge.parameters = {
+  viewport: {
+    defaultViewport: 'designSystem_lg',
+  },
+}
+ResponsiveLarge.storyName = 'Responsive (lg)'
 
 const OverlapTemplate = (args) => (
   <Flex width='100%' color='primary.light'>
@@ -69,6 +86,58 @@ const OverlapTemplate = (args) => (
 export const Overlap = OverlapTemplate.bind({})
 Overlap.args = {
   variation: '60-40',
+  gap: 'sm',
+  rowGap: 'sm',
+}
+
+const LotsOfBoxesTemplate = (args) => (
+  <Flex width='100%' color='primary.light'>
+    {/*  @ts-ignore */}
+    <Container size='xl' style={{ border: '1px solid' }}>
+      <Layout {...args}>
+        {Array.from({ length: 16 }).map((_, i) => (
+          <LayoutDemoBox key={i} color='primary.base' />
+        ))}
+      </Layout>
+    </Container>
+  </Flex>
+)
+
+export const Quarters = LotsOfBoxesTemplate.bind({})
+Quarters.args = {
+  variation: '25-25-25-25',
+  gap: 'sm',
+  rowGap: 'sm',
+}
+Quarters.storyName = '25-25-25-25'
+
+export const Thirds = LotsOfBoxesTemplate.bind({})
+Thirds.args = {
+  variation: '33-33-33',
+  gap: 'sm',
+  rowGap: 'sm',
+}
+Thirds.storyName = '33-33-33'
+
+export const Halves = LotsOfBoxesTemplate.bind({})
+Halves.args = {
+  variation: '50-50',
+  gap: 'sm',
+  rowGap: 'sm',
+}
+Halves.storyName = '50-50'
+
+export const Uneven = LotsOfBoxesTemplate.bind({})
+Uneven.args = {
+  variation: '60-40',
+  gap: 'sm',
+  rowGap: 'sm',
+}
+Uneven.storyName = '60-40'
+
+export const FullWidth = LotsOfBoxesTemplate.bind({})
+FullWidth.args = {
+  variation: '100',
   gap: 'sm',
   rowGap: 'sm',
 }
