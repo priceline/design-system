@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
-import { Icon } from '../Icon/Icon'
 import { Tab, type TabProps } from './Tab'
 import { argTypes, defaultArgs } from './Tab.stories.args'
-import { Broom, Departure } from 'pcln-icons'
+import { Departure } from 'pcln-icons'
 
 type TabsStory = StoryObj<TabProps>
 

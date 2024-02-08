@@ -5,7 +5,6 @@ import { Box } from '../Box/Box'
 import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
-import { v4 as uuidv4 } from 'uuid'
 import { ButtonChipProps } from '../Chip/ButtonChip/ButtonChip'
 import { IconComponent } from '../Chip/ChipContent/ChipContent'
 
