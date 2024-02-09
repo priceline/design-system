@@ -29,7 +29,7 @@ const shadeRed = '#6d0000'
 // orange
 const lightOrange = '#fef2e7'
 const tintOrange = '#faaf69'
-const orange = '#f68013'
+const orange = '#f06f20'
 const toneOrange = '#b74600'
 const darkOrange = '#f06f20'
 const shadeOrange = '#923800'

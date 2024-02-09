@@ -79,7 +79,7 @@ Object {
       "color": "#001833",
     },
     "textOnOrange": Object {
-      "backgroundColor": "#f68013",
+      "backgroundColor": "#f06f20",
       "color": "#001833",
     },
     "textOnWhite": Object {
@@ -87,7 +87,7 @@ Object {
       "color": "#001833",
     },
     "warning": Object {
-      "backgroundColor": "#f68013",
+      "backgroundColor": "#f06f20",
       "color": "#001833",
     },
     "whiteOnBlue": Object {
@@ -157,7 +157,7 @@ Object {
     "lightYellow": "#fff3c0",
     "lightestBackground": "#fff",
     "lightestText": "#fff",
-    "orange": "#f68013",
+    "orange": "#f06f20",
     "pink": "#fe3e81",
     "purple": "#70b",
     "red": "#c00",

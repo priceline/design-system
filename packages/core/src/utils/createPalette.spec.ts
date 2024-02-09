@@ -8,7 +8,7 @@ describe('createPalette', () => {
     expect(palette).toMatchInlineSnapshot(`
       Object {
         "alert": Object {
-          "base": "#f68013",
+          "base": "#f06f20",
           "dark": "#f06f20",
           "light": "#fef2e7",
           "shade": "#923800",

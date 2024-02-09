@@ -78,6 +78,6 @@ describe('RatingBadge', () => {
 
     const computedStyles = window.getComputedStyle(badge)
     expect(computedStyles.color).toBe('rgb(255, 255, 255)')
-    expect(computedStyles.backgroundColor).toBe('rgb(246, 128, 19)')
+    expect(computedStyles.backgroundColor).toBe('rgb(240, 111, 32)')
   })
 })
