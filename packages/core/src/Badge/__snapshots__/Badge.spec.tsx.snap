@@ -177,9 +177,9 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   text-transform: uppercase;
   line-height: 1.4;
-  background-color: #f68013;
+  background-color: #f06f20;
   color: #001833;
-  background-color: #f68013;
+  background-color: #f06f20;
   text-transform: uppercase;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;

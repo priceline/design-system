@@ -60,7 +60,7 @@ describe('createColorStyles', () => {
           "color": "#001833",
         },
         "textOnOrange": Object {
-          "backgroundColor": "#f68013",
+          "backgroundColor": "#f06f20",
           "color": "#001833",
         },
         "textOnWhite": Object {
@@ -68,7 +68,7 @@ describe('createColorStyles', () => {
           "color": "#001833",
         },
         "warning": Object {
-          "backgroundColor": "#f68013",
+          "backgroundColor": "#f06f20",
           "color": "#001833",
         },
         "whiteOnBlue": Object {
