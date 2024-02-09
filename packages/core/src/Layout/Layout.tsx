@@ -1,45 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { FlexWrapProps, zIndex } from 'styled-system'
+import { zIndex } from 'styled-system'
 import { Box } from '../Box/Box'
-import { Flex } from '../Flex/Flex'
+import { Grid } from '../Grid/Grid'
+import { spaceValues } from '../theme'
 
-/**
- * Returns an array of values with the same length as numChildren with each item
- * set to the corresponding value in the variation string. If numChildren is greater than
- * the number of digits in variation, the same variation values will be repeated.
- * @param variationWidth - variation string
- * @param numChildren - number of children
- * @returns
- */
-const getNonhomogeneousWidths = (variationWidth, numChildren) => {
-  const variationWidths = variationWidth.split('-').map((width) => parseInt(width, 10))
-  const widths = []
-
-  for (let i = 0; i < numChildren; i++) {
-    widths.push(variationWidths[i % variationWidths.length] / 100)
-  }
-
-  return widths
-}
-
-const getWidthsForVariation = (variation: string, numChildren: number) => {
-  if (!variation) {
-    return null
-  }
-
-  if (variation === '50-50') {
-    return Array(numChildren).fill(1 / 2)
-  } else if (variation === '33-33-33') {
-    return Array(numChildren).fill(1 / 3)
-  } else if (variation === '25-25-25-25') {
-    return Array(numChildren).fill(1 / 4)
-  } else if (variation !== '100') {
-    return getNonhomogeneousWidths(variation, numChildren)
-  }
-
-  // For when variation is 100
-  return Array(numChildren).fill(1)
+const getWidthsForVariation = (variation: string) => {
+  return (
+    variation &&
+    variation
+      .split('-')
+      .map((width) => `${parseInt(width, 10) / 10}fr`)
+      .join(' ')
+  )
 }
 
 /**
@@ -49,31 +22,26 @@ const getWidthsForVariation = (variation: string, numChildren: number) => {
  * @param numChildren - number of children
  * @returns
  */
-const getChildrenWidths = (variation: LayoutVariation, numChildren: number) => {
+const getGridTemplateColumns = (variation: LayoutVariation) => {
   if (Array.isArray(variation)) {
-    const variationWidths = variation.map((v) => {
-      return getWidthsForVariation(v, numChildren)
+    return variation.map((v) => {
+      return getWidthsForVariation(v)
     })
-
-    const widthsPerChild = []
-
-    for (let i = 0; i < numChildren; i++) {
-      const widths = variationWidths.map((v) => v && v[i])
-      widthsPerChild.push(widths)
-    }
-
-    return widthsPerChild
   } else {
-    return getWidthsForVariation(variation, numChildren)
+    return getWidthsForVariation(variation)
   }
 }
 
+// After converting Layout from using Flex to Grid, we need to multiply
+// the space values by 2 since we're using them for gap instead of padding on each child.
+const spaceToGapValue = (idx) => `${spaceValues[idx] * 2}px`
+
 // Map named sizes to responsive size values from theme
 const gapValues = {
-  sm: 1,
-  md: 2,
-  lg: 3,
-  xl: 4,
+  sm: spaceToGapValue(1),
+  md: spaceToGapValue(2),
+  lg: spaceToGapValue(3),
+  xl: spaceToGapValue(4),
 }
 
 /**
@@ -83,34 +51,23 @@ const gapValues = {
  * @returns
  */
 const getGapValues = (gapProp, rowGapProp) => {
-  let boxPaddingX
-  let boxPaddingY
-  let flexMarginX
-  let flexMarginY
-
-  if (Array.isArray(gapProp)) {
-    boxPaddingX = gapProp.map((gap) => gapValues[gap])
-
-    // These values are negative because we're trying to offset the padding
-    // applied to the left of the first item and right of the last item.
-    flexMarginX = gapProp.map((gap) => (gapValues[gap] ? -1 * gapValues[gap] : null))
-  } else {
-    boxPaddingX = gapValues[gapProp]
-    flexMarginX = -1 * gapValues[gapProp]
-  }
+  let columnGap
+  let rowGap
 
   if (Array.isArray(rowGapProp)) {
-    boxPaddingY = rowGapProp.map((gap) => gapValues[gap] || null)
-    flexMarginY = rowGapProp.map((gap) => (gapValues[gap] ? -1 * gapValues[gap] : null))
+    rowGap = rowGapProp.map((gap) => gapValues[gap] || null)
   } else {
-    boxPaddingY = gapValues[rowGapProp]
-    flexMarginY = -1 * gapValues[rowGapProp]
+    rowGap = gapValues[rowGapProp]
   }
 
-  return { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY }
-}
+  if (Array.isArray(gapProp)) {
+    columnGap = gapProp.map((gap) => gapValues[gap] || null)
+  } else {
+    columnGap = gapValues[gapProp]
+  }
 
-const memoGetGapValues = getGapValues
+  return { columnGap, rowGap }
+}
 
 /**
  * @public
@@ -150,7 +107,7 @@ export type LayoutVariation =
 /**
  * @public
  */
-export type LayoutProps = FlexWrapProps & {
+export type LayoutProps = {
   children: React.ReactElement | React.ReactElement[]
   gap?: LayoutGap
   rowGap?: LayoutGap
@@ -161,33 +118,33 @@ export type LayoutProps = FlexWrapProps & {
 /**
  * @public
  */
-export function Layout({ children, gap, rowGap, variation, stretchHeight, flexWrap, ...props }: LayoutProps) {
-  const numChildren = React.Children.count(children)
-
+export function Layout({ children, gap, rowGap, variation, stretchHeight, ...props }: LayoutProps) {
   const [gapValues, setGapValues] = useState(getGapValues(gap, rowGap))
-  const [widths, setChildrenWidths] = useState(getChildrenWidths(variation, numChildren))
+  const [gridTemplateColumns, setGridTemplateColumns] = useState(getGridTemplateColumns(variation))
 
   useEffect(() => {
-    setGapValues(memoGetGapValues(gap, rowGap))
+    setGapValues(getGapValues(gap, rowGap))
   }, [gap, rowGap])
 
   useEffect(() => {
-    setChildrenWidths(getChildrenWidths(variation, numChildren))
-  }, [variation, numChildren])
-
-  const { boxPaddingX, boxPaddingY, flexMarginX, flexMarginY } = gapValues
+    setGridTemplateColumns(getGridTemplateColumns(variation))
+  }, [variation])
 
   return (
-    <Flex flexWrap={flexWrap} mx={flexMarginX} my={flexMarginY} data-testid='layout-flex' {...props}>
+    <Grid
+      {...props}
+      data-testid='layout-grid'
+      width={1}
+      gridTemplateColumns={gridTemplateColumns}
+      rowGap={gapValues.rowGap}
+      columnGap={gapValues.columnGap}
+    >
       {React.Children.map(
         children,
         (child, idx) =>
           child &&
           React.isValidElement(child) && (
             <ZIndexBox
-              width={widths[idx]}
-              px={boxPaddingX}
-              py={boxPaddingY}
               data-testid={`box-${idx}`}
               // TS ignored because the type of child.props is unknown
               // @ts-ignore
@@ -199,12 +156,8 @@ export function Layout({ children, gap, rowGap, variation, stretchHeight, flexWr
             </ZIndexBox>
           )
       )}
-    </Flex>
+    </Grid>
   )
-}
-
-Layout.defaultProps = {
-  flexWrap: 'wrap',
 }
 
 Layout.displayName = 'Layout'
