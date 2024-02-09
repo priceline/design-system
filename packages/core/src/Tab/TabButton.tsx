@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyledText, TabTriggerButton } from './Tab.styled'
-import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
 import type { TabProps, MappedTabProps } from './Tab'
 import { Grid } from '../Grid/Grid'
