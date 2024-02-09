@@ -15,19 +15,17 @@ export const TabButton = ({ border, tab, size, isTransparent }: Partial<TabProps
       value={`tab-${tab.id}`}
       key={`tab-${tab.id}`}
     >
-      <Flex alignItems='center'>
-        {tab.icon && (
-          <Box ml={3} size={24}>
-            {React.createElement(tab.icon, {
-              title: tab.icon.name,
-              size: 24,
-            })}
-          </Box>
-        )}
-        <StyledText ml={1} size={size} style={{ fontFamily: 'Montserrat' }} textStyle='paragraph'>
-          {tab.text}
-        </StyledText>
-      </Flex>
+      {tab.icon && (
+        <Box ml={3} size={24}>
+          {React.createElement(tab.icon, {
+            title: tab.icon.name,
+            size: 24,
+          })}
+        </Box>
+      )}
+      <StyledText size={size} style={{ fontFamily: 'Montserrat' }} textStyle='paragraph'>
+        {tab.text}
+      </StyledText>
     </TabTriggerButton>
   )
 }
