@@ -1,10 +1,10 @@
 import { Text } from '../Text/Text'
 import React from 'react'
-import { TabTriggerButton } from './Tab.styled'
+import { StyledText, TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
 import type { TabProps, MappedTabProps } from './Tab'
-export const TabButton = ({ border, hasHover, tab }: Partial<TabProps> & MappedTabProps) => {
+export const TabButton = ({ border, hasHover, tab, size }: Partial<TabProps> & MappedTabProps) => {
   const [isHover, setIsHover] = React.useState(false)
   return (
     <TabTriggerButton
@@ -25,16 +25,15 @@ export const TabButton = ({ border, hasHover, tab }: Partial<TabProps> & MappedT
             })}
           </Box>
         )}
-        <Text
-          py={3}
-          fontSize={2}
+        <StyledText
+          size={size}
           pl={tab.icon ? 2 : 3}
           style={{ fontFamily: 'Montserrat' }}
           textStyle='paragraph'
           pr={3}
         >
           {tab.text}
-        </Text>
+        </StyledText>
       </Flex>
     </TabTriggerButton>
   )

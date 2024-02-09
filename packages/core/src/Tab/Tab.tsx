@@ -64,7 +64,7 @@ export const Tab = ({
           />
         )
       case 'button':
-        return <TabButton border={border} hasHover={hasHover} tab={tab} {...props} />
+        return <TabButton border={border} hasHover={hasHover} tab={tab} size={size} {...props} />
       case 'radio':
         return (
           <TabRadio hasHover={hasHover} tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />

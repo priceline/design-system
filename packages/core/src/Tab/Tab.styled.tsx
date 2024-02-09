@@ -1,7 +1,25 @@
 import * as Tab from '@radix-ui/react-tabs'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { getPaletteColor } from '../utils'
+import { Text } from '../Text/Text'
 
+const getSizeStyles = (size) => {
+  switch (size) {
+    case 'sm':
+      return css`
+        font-size: 12px;
+        padding: 12px;
+      `
+    case 'md':
+      return css`
+        font-size: 14px;
+        padding: 16px;
+      `
+  }
+}
+export const StyledText = styled(Text)`
+  ${(props) => getSizeStyles(props.size)}
+`
 export const TabTriggerButton = styled(Tab.Trigger)`
   cursor: pointer;
   ${(props) =>
