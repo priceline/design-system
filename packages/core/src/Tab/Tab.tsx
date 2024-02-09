@@ -30,7 +30,6 @@ export type TabProps = {
   border?: boolean
   tabGap?: number
   type: 'chip' | 'radio' | 'button'
-  backgroundVisible?: boolean
   buttonChipProps?: ChoiceChipProps
 }
 
@@ -48,7 +47,6 @@ export const Tab = ({
   size = 'md',
   type = 'button',
   border = false,
-  backgroundVisible,
   tabGap,
   buttonChipProps,
   ...props
@@ -67,16 +65,7 @@ export const Tab = ({
           />
         )
       case 'button':
-        return (
-          <TabButton
-            border={border}
-            backgroundVisible={backgroundVisible}
-            hasHover={hasHover}
-            tab={tab}
-            size={size}
-            {...props}
-          />
-        )
+        return <TabButton border={border} hasHover={hasHover} tab={tab} size={size} {...props} />
       case 'radio':
         return (
           <TabRadio hasHover={hasHover} tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />

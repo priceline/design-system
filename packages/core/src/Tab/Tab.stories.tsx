@@ -77,7 +77,6 @@ export const NoIconNoHoverButtonTabs: TabsStory = {
   args: {
     ...defaultArgs,
     hasHover: true,
-    backgroundVisible: false,
     size: 'md',
   },
 }
