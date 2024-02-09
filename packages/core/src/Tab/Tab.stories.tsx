@@ -4,7 +4,6 @@ import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
 import { Tab, type TabProps } from './Tab'
 import { argTypes, defaultArgs } from './Tab.stories.args'
 import { Departure } from 'pcln-icons'
-import { backgroundColor } from 'styled-system'
 
 type TabsStory = StoryObj<TabProps>
 
