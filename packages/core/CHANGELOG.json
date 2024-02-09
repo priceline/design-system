@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.3.0",
+      "tag": "pcln-design-system_v6.3.0",
+      "date": "Fri, 09 Feb 2024 15:27:23 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Change Layout implementation from Flex to Grid",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "761b8a7fcdf31169e3dc32230390cf36ea7923b9"
+          },
+          {
+            "comment": "ToastProvider: update to allow animations to come in from the top",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a732e529d95e77f28b42c09adf18faa05cc7f3b9"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.3",
       "tag": "pcln-design-system_v6.2.3",
       "date": "Wed, 07 Feb 2024 16:01:30 GMT",
