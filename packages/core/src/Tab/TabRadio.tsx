@@ -6,7 +6,6 @@ import { Flex } from '../Flex/Flex'
 import { TabProps, MappedTabProps } from './Tab'
 
 export const TabRadio = ({
-  hasHover,
   tab,
   isActive,
   setIsActive,
@@ -16,7 +15,7 @@ export const TabRadio = ({
     setIsActive: React.Dispatch<React.SetStateAction<string>>
   }) => {
   return (
-    <TabTriggerRadio asChild hover={hasHover} value={`tab-${tab.id}`} key={`tab-${tab.id}`}>
+    <TabTriggerRadio asChild value={`tab-${tab.id}`} key={`tab-${tab.id}`}>
       <Flex alignItems='center' mr={2}>
         <Label fontSize='14px'>
           <Radio

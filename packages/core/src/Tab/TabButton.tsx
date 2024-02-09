@@ -3,12 +3,12 @@ import { StyledText, TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
 import type { TabProps, MappedTabProps } from './Tab'
-export const TabButton = ({ border, hasHover, tab, size }: Partial<TabProps> & MappedTabProps) => {
+export const TabButton = ({ border, tab, size, isTransparent }: Partial<TabProps> & MappedTabProps) => {
   const [isHover, setIsHover] = React.useState(false)
   return (
     <TabTriggerButton
+      isTransparent={isTransparent}
       buttonBorder={border}
-      hover={hasHover}
       isActiveHover={isHover}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -24,13 +24,7 @@ export const TabButton = ({ border, hasHover, tab, size }: Partial<TabProps> & M
             })}
           </Box>
         )}
-        <StyledText
-          size={size}
-          pl={tab.icon ? 2 : 3}
-          style={{ fontFamily: 'Montserrat' }}
-          textStyle='paragraph'
-          pr={3}
-        >
+        <StyledText ml={1} size={size} style={{ fontFamily: 'Montserrat' }} textStyle='paragraph'>
           {tab.text}
         </StyledText>
       </Flex>

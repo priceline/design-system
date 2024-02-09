@@ -25,16 +25,19 @@ export const TabTriggerButton = styled(Tab.Trigger)`
   border: ${(props) => (props.buttonBorder ? `1px solid ${getPaletteColor('border.light')(props)}` : 'none')};
   border-radius: 12px 12px 0 0;
   color: ${getPaletteColor('primary.base')};
-  background-color: ${(props) => (props.hover ? getPaletteColor('text.lightest')(props) : 'transparent')};
+  background-color: ${(props) =>
+    !props.isTransparent ? getPaletteColor('text.lightest')(props) : 'transparent'};
 
   &:hover {
     color: ${getPaletteColor('primary.dark')};
-    background-color: ${(props) => (props.hover ? getPaletteColor('background.base')(props) : 'transparent')};
+    background-color: ${(props) =>
+      !props.isTransparent ? getPaletteColor('background.base')(props) : 'transparent'};
   }
 
   &[data-state='active'] {
     &:hover {
-      background-color: ${(props) => (props.hover ? getPaletteColor('primary.light')(props) : 'transparent')};
+      background-color: ${(props) =>
+        !props.isTransparent ? getPaletteColor('primary.light')(props) : 'transparent'};
     }
     &::after {
       margin: -4px 12px 0;
@@ -57,7 +60,6 @@ export const TabTriggerRadio = styled(Tab.Trigger)`
  }
 `
 export const TabList = styled(Tab.List)`
-  display: flex;
   flex-direction: ${(props) =>
     props?.orientation === 'horizontal' ? 'row' : props?.orientation === 'vertical' && 'column'};
 `

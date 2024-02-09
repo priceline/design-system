@@ -18,7 +18,6 @@ export type TabDataProps = {
 }
 export type TabProps = {
   orientation?: 'horizontal' | 'vertical'
-  hasHover?: boolean
   onClick?: () => void
   size?: ResponsiveValue<'sm' | 'md'> | 'sm' | 'md'
   tabsContent: {
@@ -30,6 +29,7 @@ export type TabProps = {
   border?: boolean
   tabGap?: number
   type: 'chip' | 'radio' | 'button'
+  isTransparent?: boolean
   buttonChipProps?: ChoiceChipProps
 }
 
@@ -43,11 +43,11 @@ export const Tab = ({
   tabsData,
   orientation = 'horizontal',
   onClick,
-  hasHover = true,
   size = 'md',
   type = 'button',
   border = false,
   tabGap,
+  isTransparent = false,
   buttonChipProps,
   ...props
 }: TabProps) => {
@@ -65,18 +65,16 @@ export const Tab = ({
           />
         )
       case 'button':
-        return <TabButton border={border} hasHover={hasHover} tab={tab} size={size} {...props} />
+        return <TabButton isTransparent={isTransparent} border={border} tab={tab} size={size} {...props} />
       case 'radio':
-        return (
-          <TabRadio hasHover={hasHover} tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
-        )
+        return <TabRadio tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
     }
   }
   if (orientation === 'vertical') {
     return (
       <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
         <TabList orientation={orientation} aria-label='Pcln Tabs'>
-          <Grid templateColumns={`repeat(${tabsData.length}, 1fr)`} gap={tabGap}>
+          <Grid gap={tabGap}>
             {tabsData.map((tab, index) => (
               <>
                 <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
@@ -95,9 +93,9 @@ export const Tab = ({
   return (
     <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
       <TabList orientation={orientation} aria-label='Pcln Tabs'>
-        <Grid templateColumns={`repeat(${tabsData.length}, 1fr)`} gap={tabGap}>
+        <Grid templateColumns={`repeat(${tabsData.length * tabsData.length}, 1fr)`} gap={tabGap}>
           {tabsData.map((tab) => {
-            return <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
+            return <Grid key={`tab-${tab.id}`}>{renderTab(tab)}</Grid>
           })}
         </Grid>
       </TabList>

@@ -3,7 +3,6 @@ import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 
 export const defaultArgs: Partial<TabProps> = {
   size: 'md',
-  hasHover: true,
   type: 'button',
   tabsContent: [
     {
@@ -49,6 +48,10 @@ export const argTypes = {
   },
   tabGap: {
     control: 'number',
+  },
+  isTransparent: {
+    defaultValue: false,
+    control: 'boolean',
   },
   border: {
     defaultValue: false,

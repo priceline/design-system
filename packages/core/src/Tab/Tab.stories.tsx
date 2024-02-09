@@ -75,7 +75,7 @@ export const NoIconNoHoverButtonTabs: TabsStory = {
   ),
   args: {
     ...defaultArgs,
-    hasHover: true,
+    isTransparent: true,
     size: 'md',
   },
 }
@@ -91,17 +91,17 @@ export const IconButtonTabs: TabsStory = {
       {
         id: 't1',
         icon: Departure,
-        text: 'Tab 1',
+        text: 'Testingsssss longer button',
       },
       {
         id: 't2',
         icon: Departure,
-        text: 'Tab 2',
+        text: 'LongerIsh Tab 2',
       },
       {
         id: 't3',
         icon: Departure,
-        text: 'Tab 3',
+        text: 'LongerishTab3',
       },
     ],
     size: 'md',
