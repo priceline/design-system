@@ -1,6 +1,6 @@
 import * as Tab from '@radix-ui/react-tabs'
 import React from 'react'
-import { MappedTabProps } from './Tab'
+import { MappedTabProps, TabProps } from './Tab'
 import { ChoiceChip } from '../Chip/ChoiceChip/ChoiceChip'
 export const TabChip = ({
   tab,
@@ -8,7 +8,8 @@ export const TabChip = ({
   isActive,
   setIsActive,
   size,
-}: MappedTabProps & { isActive: string; setIsActive: React.Dispatch<React.SetStateAction<string>> }) => {
+}: Partial<TabProps> &
+  MappedTabProps & { isActive: string; setIsActive: React.Dispatch<React.SetStateAction<string>> }) => {
   return (
     <Tab.Trigger asChild value={`tab-${tab.id}`} key={`tab-${tab.id}`}>
       <ChoiceChip

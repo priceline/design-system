@@ -7,6 +7,7 @@ import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
 import { IconComponent } from '../Chip/ChipContent/ChipContent'
 import { ChoiceChipProps } from '../Chip/ChoiceChip/ChoiceChip'
+import { ResponsiveValue } from 'styled-system'
 
 export type TabDataProps = {
   id: string
@@ -18,7 +19,7 @@ export type TabProps = {
   orientation?: 'horizontal' | 'vertical'
   hasHover?: boolean
   onClick?: () => void
-  size?: 'sm' | 'md' | ['sm' | 'md']
+  size?: ResponsiveValue<'sm' | 'md'> | 'sm' | 'md'
   tabsContent: {
     id: string
     children: React.ReactNode
@@ -34,7 +35,6 @@ export type TabProps = {
 export type MappedTabProps = {
   tab: TabDataProps
   icon?: IconComponent
-  size?: 'sm' | 'md' | ['sm' | 'md']
   buttonChipProps?: ChoiceChipProps
 }
 export const Tab = ({
