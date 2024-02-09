@@ -39,7 +39,7 @@ export type ChipContentProps = BoxProps & {
     title?: React.ReactNode
   }
   image?: React.ReactNode
-  size?: string
+  size?: 'sm' | 'md' | ['sm' | 'md']
   bridgeLabel?: string
   BridgeIcon?: IconComponent
   variation?: ChipContentVariation
