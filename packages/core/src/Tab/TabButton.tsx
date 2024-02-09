@@ -1,4 +1,3 @@
-import { Text } from '../Text/Text'
 import React from 'react'
 import { StyledText, TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
