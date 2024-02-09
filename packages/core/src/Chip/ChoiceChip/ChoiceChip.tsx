@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontSizeProps, SpaceProps } from 'styled-system'
-import { ChipContent } from '../ChipContent/ChipContent'
+import { ChipContent, IconComponent } from '../ChipContent/ChipContent'
 import { ChipInput } from '../ChipInput'
 import { ChipLabel } from '../ChipLabel'
 
@@ -15,6 +15,8 @@ export type ChoiceChipVariations = 'outline' | 'shadow'
 export type ChoiceChipProps = SpaceProps &
   FontSizeProps &
   React.HTMLAttributes<HTMLElement> & {
+    Icon?: IconComponent
+    size?: 'sm' | 'md' | ['sm' | 'md']
     name?: string
     disabled?: boolean
     selected?: boolean

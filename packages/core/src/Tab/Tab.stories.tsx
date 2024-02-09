@@ -23,6 +23,7 @@ export const NoIconChipTabs: TabsStory = {
   ),
   args: {
     ...defaultArgs,
+    buttonChipProps: {},
     type: 'chip',
     size: 'md',
   },

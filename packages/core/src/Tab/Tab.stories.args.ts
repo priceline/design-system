@@ -37,7 +37,7 @@ export const defaultArgs: Partial<TabProps> = {
 export const argTypes = {
   size: {
     control: 'select',
-    options: ['sm', 'md', 'lg'],
+    options: ['sm', 'md'],
   },
   type: {
     control: 'select',

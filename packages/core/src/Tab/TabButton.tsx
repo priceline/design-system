@@ -3,12 +3,8 @@ import React from 'react'
 import { TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
-import type { TabProps, TabDataProps, MappedTabProps } from './Tab'
-export const TabButton = ({
-  border,
-  hasHover,
-  tab,
-}: Partial<TabProps> & MappedTabProps & { tab: TabDataProps }) => {
+import type { TabProps, MappedTabProps } from './Tab'
+export const TabButton = ({ border, hasHover, tab }: Partial<TabProps> & MappedTabProps) => {
   const [isHover, setIsHover] = React.useState(false)
   return (
     <TabTriggerButton

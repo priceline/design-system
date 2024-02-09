@@ -7,6 +7,7 @@ import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
 import { ButtonChipProps } from '../Chip/ButtonChip/ButtonChip'
 import { IconComponent } from '../Chip/ChipContent/ChipContent'
+import { ChoiceChipProps } from '../Chip/ChoiceChip/ChoiceChip'
 
 export type TabDataProps = {
   id: string
@@ -18,7 +19,7 @@ export type TabProps = {
   orientation?: 'horizontal' | 'vertical'
   hasHover?: boolean
   onClick?: () => void
-  size?: 'sm' | 'md' | 'lg' | ['sm' | 'md' | 'lg']
+  size?: 'sm' | 'md' | ['sm' | 'md']
   tabsContent: {
     id: string
     children: React.ReactNode
@@ -28,13 +29,14 @@ export type TabProps = {
   border?: boolean
   tabGap?: number
   type: 'chip' | 'radio' | 'button'
-  buttonChipProps?: ButtonChipProps
+  buttonChipProps?: ChoiceChipProps
 }
 
 export type MappedTabProps = {
   tab: TabDataProps
   icon?: IconComponent
-  buttonChipProps?: ButtonChipProps
+  size?: 'sm' | 'md' | ['sm' | 'md']
+  buttonChipProps?: ChoiceChipProps
 }
 export const Tab = ({
   tabsContent,
@@ -53,7 +55,15 @@ export const Tab = ({
   const renderTab = (tab: TabDataProps) => {
     switch (type) {
       case 'chip':
-        return <TabChip tab={tab} icon={tab.icon} buttonChipProps={buttonChipProps} />
+        return (
+          <TabChip
+            isActive={isActive}
+            setIsActive={setIsActive}
+            tab={tab}
+            size={size}
+            buttonChipProps={buttonChipProps}
+          />
+        )
       case 'button':
         return <TabButton border={border} hasHover={hasHover} tab={tab} {...props} />
       case 'radio':

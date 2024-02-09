@@ -3,7 +3,7 @@ import { Label } from '../Label/Label'
 import { Radio } from '../Radio/Radio'
 import { TabTriggerRadio } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
-import { TabProps, MappedTabProps, TabDataProps } from './Tab'
+import { TabProps, MappedTabProps } from './Tab'
 
 export const TabRadio = ({
   hasHover,
@@ -12,7 +12,6 @@ export const TabRadio = ({
   setIsActive,
 }: Partial<TabProps> &
   MappedTabProps & {
-    tab: TabDataProps
     isActive: string
     setIsActive: React.Dispatch<React.SetStateAction<string>>
   }) => {

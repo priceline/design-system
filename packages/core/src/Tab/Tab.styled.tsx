@@ -8,14 +8,18 @@ export const TabTriggerButton = styled(Tab.Trigger)`
     props?.buttonBorder ? `border: 1px solid ${getPaletteColor('border.light')(props)};` : 'border: none;'}
   border-radius: 12px 12px 0 0;
   ${(props) =>
-    props?.hover &&
-    `
+    props?.hover
+      ? `
     &:hover {
       color: ${getPaletteColor('primary.dark')(props)};
       background-color: ${getPaletteColor('background.base')(props)};
+    }`
+      : `&:hover {
+      color: ${getPaletteColor('primary.dark')(props)};
     }`}
   ${(props) =>
     `
+    color: ${getPaletteColor('primary.dark')(props)};
     background-color: ${getPaletteColor('text.lightest')(props)};
     color: ${getPaletteColor('primary.base')(props)};
     `}
@@ -25,7 +29,7 @@ export const TabTriggerButton = styled(Tab.Trigger)`
       `
         &:hover {
           background-color: ${getPaletteColor('primary.light')(props)};
-          color: ${getPaletteColor('primary.dark')(props)};
+          color: ${getPaletteColor('primary.dark')(props)}
         }
       `}
     &::after {
