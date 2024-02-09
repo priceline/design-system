@@ -160,7 +160,7 @@ export * from './utils'
 export { createTheme } from './utils/createTheme'
 
 export * from './theme'
-export type { PaletteColorPaletteFamily, PaletteColorPaletteFamilyOption, PaletteFamily } from './theme/theme'
+export type { PaletteFamily } from './theme/theme'
 
 // DocsUtils
 export { DoDont, type DoDontProps } from './DocsUtils/DoDont/DoDont'
