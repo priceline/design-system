@@ -826,7 +826,7 @@ exports[`Banner renders with orange bg 1`] = `
 }
 
 .c0 {
-  background-color: #f68013;
+  background-color: #f06f20;
   color: #fff;
   text-align: left;
 }
