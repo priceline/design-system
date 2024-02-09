@@ -22,47 +22,33 @@ export const StyledText = styled(Text)`
 `
 export const TabTriggerButton = styled(Tab.Trigger)`
   cursor: pointer;
-  ${(props) =>
-    props?.buttonBorder ? `border: 1px solid ${getPaletteColor('border.light')(props)};` : 'border: none;'}
+  border: ${(props) => (props.buttonBorder ? `1px solid ${getPaletteColor('border.light')(props)}` : 'none')};
   border-radius: 12px 12px 0 0;
-  ${(props) =>
-    props?.hover
-      ? `
-    &:hover {
-      color: ${getPaletteColor('primary.dark')(props)};
-      background-color: ${getPaletteColor('background.base')(props)};
-    }`
-      : `&:hover {
-      color: ${getPaletteColor('primary.dark')(props)};
-    }`}
-  ${(props) =>
-    `
-    color: ${getPaletteColor('primary.dark')(props)};
-    background-color: ${getPaletteColor('text.lightest')(props)};
-    color: ${getPaletteColor('primary.base')(props)};
-    `}
+  color: ${getPaletteColor('primary.base')};
+  background-color: ${(props) => (props.hover ? getPaletteColor('text.lightest')(props) : 'transparent')};
+
+  &:hover {
+    color: ${getPaletteColor('primary.dark')};
+    background-color: ${(props) => (props.hover ? getPaletteColor('background.base')(props) : 'transparent')};
+  }
+
   &[data-state='active'] {
-    ${(props) =>
-      props?.hover &&
-      `
-        &:hover {
-          background-color: ${getPaletteColor('primary.light')(props)};
-          color: ${getPaletteColor('primary.dark')(props)}
-        }
-      `}
+    &:hover {
+      background-color: ${(props) => (props.hover ? getPaletteColor('primary.light')(props) : 'transparent')};
+    }
     &::after {
-      ${(props) => `
-      margin-top: -4px;
-      margin-left: 12px;
-      margin-right: 12px;
+      margin: -4px 12px 0;
       content: '';
       display: block;
       height: 4px;
-      background-color: ${getPaletteColor(props?.isHover && props?.hover ? 'primary.dark' : 'primary.base')(
-        props
-      )};
+      background-color: ${getPaletteColor('primary.base')};
       border-radius: 12px 12px 0 0;
-      `}
+    }
+    &:hover {
+      &::after {
+        background-color: ${(props) => getPaletteColor('primary.dark')(props)};
+      }
+    }
   }
 `
 

@@ -3,13 +3,20 @@ import { StyledText, TabTriggerButton } from './Tab.styled'
 import { Flex } from '../Flex/Flex'
 import { Box } from '../Box/Box'
 import type { TabProps, MappedTabProps } from './Tab'
-export const TabButton = ({ border, hasHover, tab, size }: Partial<TabProps> & MappedTabProps) => {
+export const TabButton = ({
+  border,
+  hasHover,
+  tab,
+  size,
+  backgroundVisible,
+}: Partial<TabProps> & MappedTabProps) => {
   const [isHover, setIsHover] = React.useState(false)
   return (
     <TabTriggerButton
       buttonBorder={border}
       hover={hasHover}
-      isHover={isHover}
+      isActiveHover={isHover}
+      backgroundVisible={backgroundVisible}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       value={`tab-${tab.id}`}

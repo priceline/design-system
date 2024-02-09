@@ -8,6 +8,7 @@ import { TabRadio } from './TabRadio'
 import { IconComponent } from '../Chip/ChipContent/ChipContent'
 import { ChoiceChipProps } from '../Chip/ChoiceChip/ChoiceChip'
 import { ResponsiveValue } from 'styled-system'
+import { Grid } from '../Grid/Grid'
 
 export type TabDataProps = {
   id: string
@@ -29,6 +30,7 @@ export type TabProps = {
   border?: boolean
   tabGap?: number
   type: 'chip' | 'radio' | 'button'
+  backgroundVisible?: boolean
   buttonChipProps?: ChoiceChipProps
 }
 
@@ -46,6 +48,7 @@ export const Tab = ({
   size = 'md',
   type = 'button',
   border = false,
+  backgroundVisible,
   tabGap,
   buttonChipProps,
   ...props
@@ -64,7 +67,16 @@ export const Tab = ({
           />
         )
       case 'button':
-        return <TabButton border={border} hasHover={hasHover} tab={tab} size={size} {...props} />
+        return (
+          <TabButton
+            border={border}
+            backgroundVisible={backgroundVisible}
+            hasHover={hasHover}
+            tab={tab}
+            size={size}
+            {...props}
+          />
+        )
       case 'radio':
         return (
           <TabRadio hasHover={hasHover} tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
@@ -75,18 +87,18 @@ export const Tab = ({
     return (
       <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
         <TabList orientation={orientation} aria-label='Pcln Tabs'>
-          {tabsData.map((tab, index) => (
-            <>
-              <Box key={`tab-${tab.id}`} my={tabGap}>
-                {renderTab(tab)}
-              </Box>
-              <Box key={`content-${tab.id}`}>
-                <Tabs.Content value={`tab-${tab.id}`}>
-                  {tabsContent[index] && tabsContent[index].children}
-                </Tabs.Content>
-              </Box>
-            </>
-          ))}
+          <Grid templateColumns={`repeat(${tabsData.length}, 1fr)`} gap={tabGap}>
+            {tabsData.map((tab, index) => (
+              <>
+                <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
+                <Box key={`content-${tab.id}`}>
+                  <Tabs.Content value={`tab-${tab.id}`}>
+                    {tabsContent[index] && tabsContent[index].children}
+                  </Tabs.Content>
+                </Box>
+              </>
+            ))}
+          </Grid>
         </TabList>
       </Tabs.Root>
     )
@@ -94,13 +106,11 @@ export const Tab = ({
   return (
     <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
       <TabList orientation={orientation} aria-label='Pcln Tabs'>
-        {tabsData.map((tab) => {
-          return (
-            <Box mx={tabGap} key={`tab-${tab.id}`}>
-              {renderTab(tab)}
-            </Box>
-          )
-        })}
+        <Grid templateColumns={`repeat(${tabsData.length}, 1fr)`} gap={tabGap}>
+          {tabsData.map((tab) => {
+            return <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
+          })}
+        </Grid>
       </TabList>
       <Box>
         {tabsContent.map((tab) => {
