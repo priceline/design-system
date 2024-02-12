@@ -31,6 +31,7 @@ export type TabProps = {
   type: 'chip' | 'radio' | 'button'
   isTransparent?: boolean
   buttonChipProps?: ChoiceChipProps
+  dynamicTabWidth?: boolean
 }
 
 export type MappedTabProps = {
@@ -48,6 +49,7 @@ export const Tab = ({
   border = false,
   tabGap,
   isTransparent = false,
+  dynamicTabWidth = false,
   buttonChipProps,
   ...props
 }: TabProps) => {
@@ -65,9 +67,33 @@ export const Tab = ({
           />
         )
       case 'button':
-        return <TabButton isTransparent={isTransparent} border={border} tab={tab} size={size} {...props} />
+        return (
+          <TabButton
+            dynamicTabWidth={dynamicTabWidth}
+            isTransparent={isTransparent}
+            border={border}
+            tab={tab}
+            size={size}
+            {...props}
+          />
+        )
       case 'radio':
         return <TabRadio tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
+    }
+  }
+  const gridProps = (dynamicTabWidth) => {
+    switch (dynamicTabWidth) {
+      case true:
+        return {
+          autoFlow: 'column',
+          columnGap: tabGap,
+        }
+      case false:
+        return {
+          autoFlow: 'column',
+          autoColumns: 'max-content',
+          columnGap: tabGap,
+        }
     }
   }
   if (orientation === 'vertical') {
@@ -93,9 +119,9 @@ export const Tab = ({
   return (
     <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
       <TabList orientation={orientation} aria-label='Pcln Tabs'>
-        <Grid templateColumns={`repeat(${tabsData.length * tabsData.length}, 1fr)`} gap={tabGap}>
+        <Grid {...gridProps(dynamicTabWidth)}>
           {tabsData.map((tab) => {
-            return <Grid key={`tab-${tab.id}`}>{renderTab(tab)}</Grid>
+            return <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
           })}
         </Grid>
       </TabList>

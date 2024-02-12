@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import { getPaletteColor } from '../utils'
 import { Text } from '../Text/Text'
 
-const getSizeStyles = (size) => {
+const getSizeStyles = (size, icon) => {
   switch (size) {
     case 'sm':
       return css`
@@ -14,15 +14,17 @@ const getSizeStyles = (size) => {
       return css`
         font-size: 14px;
         padding: 16px;
+        ${icon && `padding-left: 8px;`}
       `
   }
 }
 export const StyledText = styled(Text)`
-  ${(props) => getSizeStyles(props.size)}
+  ${(props) => getSizeStyles(props.size, props.icon)}
 `
 export const TabTriggerButton = styled(Tab.Trigger)`
   cursor: pointer;
   border: ${(props) => (props.buttonBorder ? `1px solid ${getPaletteColor('border.light')(props)}` : 'none')};
+  width: ${(props) => (props.dynamicTabWidth ? '100%' : 'auto')};
   border-radius: 12px 12px 0 0;
   color: ${getPaletteColor('primary.base')};
   background-color: ${(props) =>

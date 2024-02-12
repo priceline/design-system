@@ -57,4 +57,8 @@ export const argTypes = {
     defaultValue: false,
     control: 'boolean',
   },
+  dynamicTabWidth: {
+    defaultValue: false,
+    control: 'boolean',
+  },
 }

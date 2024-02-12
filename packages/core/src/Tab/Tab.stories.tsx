@@ -54,7 +54,7 @@ export const NoIconButtonTabs: TabsStory = {
   },
 }
 
-export const VerticalOrientationButtonTabs: TabsStory = {
+export const NoIconButtonTabsWithDynamicTabWidth: TabsStory = {
   render: (args) => (
     <StoryStage>
       <Tab {...args} />
@@ -63,7 +63,7 @@ export const VerticalOrientationButtonTabs: TabsStory = {
   args: {
     ...defaultArgs,
     size: 'md',
-    orientation: 'vertical',
+    dynamicTabWidth: true,
   },
 }
 
