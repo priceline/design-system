@@ -8,8 +8,8 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
   align-items: center;
   position: relative;
   vertical-align: middle;
-  padding: 2px;
-  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  padding: 0px 2px 2px;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   background-color: inherit;
   color: ${(props) =>
     props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('border.dark')(props)};
@@ -25,6 +25,10 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
   }
   svg[data-name='indeterminate'] {
     display: none;
+  }
+
+  ~ span {
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   }
 
   > input[data-indeterminate='true'] {
@@ -43,10 +47,6 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
     & ~ svg[data-name='checked'] {
       display: none;
     }
-  }
-  > input:hover ~ svg[data-name='empty'] {
-    color: ${(props) =>
-      props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
   }
 
   > input:not([data-indeterminate='true']) {
@@ -80,6 +80,11 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
       color: ${(props) =>
         props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('dark')(props)};
     }
+  }
+
+  > input:hover ~ svg[data-name='empty'] {
+    color: ${(props) =>
+      props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('primary.base')(props)};
   }
 
   ${applyVariations('Checkbox')}
