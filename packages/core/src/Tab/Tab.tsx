@@ -14,11 +14,9 @@ export type TabDataProps = {
   id: string
   icon?: IconComponent
   text: string
-  onClick?: () => void
 }
 export type TabProps = {
   orientation?: 'horizontal' | 'vertical'
-  onClick?: () => void
   size?: ResponsiveValue<'sm' | 'md'> | 'sm' | 'md'
   tabsContent: {
     id: string
@@ -43,7 +41,6 @@ export const Tab = ({
   tabsContent,
   tabsData,
   orientation = 'horizontal',
-  onClick,
   size = 'md',
   type = 'button',
   border = false,
