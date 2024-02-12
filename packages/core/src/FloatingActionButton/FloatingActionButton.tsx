@@ -13,6 +13,7 @@ export type FloatingActionButtonProps = AbsoluteProps & {
   icon: React.Component
   tooltip?: string
   onClick: () => void
+  isAbsolutePosition?: boolean
 }
 
 /**
@@ -23,9 +24,11 @@ export function FloatingActionButton({
   icon,
   tooltip,
   onClick,
+  isAbsolutePosition = true,
   ...props
 }: FloatingActionButtonProps): JSX.Element {
   const [isTooltipOpen, setTooltipOpen] = useState(false)
+  const Wrapper = isAbsolutePosition ? Absolute : Box
 
   function onMouseOver() {
     setTooltipOpen(true)
@@ -36,7 +39,7 @@ export function FloatingActionButton({
   }
 
   return (
-    <Absolute {...props} onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
+    <Wrapper {...props} onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
       {hasNotification && (
         <Absolute top={0} right={0}>
           <Animate variant='pulse'>
@@ -56,6 +59,6 @@ export function FloatingActionButton({
         IconLeft={icon}
         onClick={onClick}
       />
-    </Absolute>
+    </Wrapper>
   )
 }
