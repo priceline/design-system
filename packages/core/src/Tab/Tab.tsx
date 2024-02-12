@@ -17,7 +17,7 @@ export type TabDataProps = {
 }
 export type TabProps = {
   orientation?: 'horizontal' | 'vertical'
-  size?: ResponsiveValue<'sm' | 'md'> | 'sm' | 'md'
+  size?: ResponsiveValue<'sm' | 'md'>
   tabsContent: {
     id: string
     children: React.ReactNode

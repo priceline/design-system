@@ -16,7 +16,7 @@ export type ChoiceChipProps = SpaceProps &
   FontSizeProps &
   React.HTMLAttributes<HTMLElement> & {
     Icon?: IconComponent
-    size?: ResponsiveValue<'sm' | 'md'> | 'sm' | 'md'
+    size?: ResponsiveValue<'sm' | 'md'>
     name?: string
     disabled?: boolean
     selected?: boolean
