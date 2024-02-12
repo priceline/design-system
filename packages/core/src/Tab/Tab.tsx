@@ -59,6 +59,7 @@ export const Tab = ({
       case 'chip':
         return (
           <TabChip
+            dynamicTabWidth={dynamicTabWidth}
             isActive={isActive}
             setIsActive={setIsActive}
             tab={tab}
