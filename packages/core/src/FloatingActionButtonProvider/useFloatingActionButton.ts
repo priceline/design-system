@@ -7,7 +7,7 @@ const useFloatingActinButton = ({ hideUntilScrollPercent, delayDisplayMs }) => {
   const [showWrapper, setShowWrapper] = useState(displayOnLoad)
   const [isDelayedDisplay, setIsDelayedDisplay] = useState(delayDisplayMs ? true : false)
 
-  const enterAnimation = () => {
+  const enterAnimation = async () => {
     setShowFab(true)
     setShowWrapper(true)
   }
@@ -18,19 +18,36 @@ const useFloatingActinButton = ({ hideUntilScrollPercent, delayDisplayMs }) => {
     setShowWrapper(false)
   }
 
-  const handleScroll = async () => {
-    ;(await getScrollPercentage()) > hideUntilScrollPercent ? enterAnimation() : exitAnimation()
-  }
+  const handleScroll = async () =>
+    getScrollPercentage() > hideUntilScrollPercent
+      ? enterAnimation()
+      : exitAnimation()
+          .then(() => {
+            //Do Nothing
+          })
+          .catch(() => {
+            //Do nothing
+          })
 
-  const delayDisplay = async () => {
-    await delay(delayDisplayMs)
-    setIsDelayedDisplay(false)
-  }
+  const delayDisplay = async () =>
+    delay(delayDisplayMs)
+      .then(() => {
+        setIsDelayedDisplay(false)
+      })
+      .catch(() => {
+        //Do nothing
+      })
 
   useEffect(() => typeof window !== 'undefined' && hideUntilScrollPercent && addScrollListener(handleScroll))
 
   useEffect(() => {
     delayDisplay()
+      .then(() => {
+        //Do nothing
+      })
+      .catch(() => {
+        //Do nothing
+      })
   }, [delayDisplayMs])
 
   return {
