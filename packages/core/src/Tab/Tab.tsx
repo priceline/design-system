@@ -1,27 +1,27 @@
-import React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
-import { TabList } from './Tab.styled'
+import React from 'react'
+import { ResponsiveValue } from 'styled-system'
 import { Box } from '../Box/Box'
+import { IconComponent } from '../Chip/ChipContent/ChipContent'
+import { ChoiceChipProps } from '../Chip/ChoiceChip/ChoiceChip'
+import { Grid } from '../Grid/Grid'
+import { TabList } from './Tab.styled'
 import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
-import { IconComponent } from '../Chip/ChipContent/ChipContent'
-import { ChoiceChipProps } from '../Chip/ChoiceChip/ChoiceChip'
-import { ResponsiveValue } from 'styled-system'
-import { Grid } from '../Grid/Grid'
 
 export type TabDataProps = {
   id: string
   icon?: IconComponent
   text: string
+  children: React.ReactNode
+  onTabSelect: () => void
 }
+
 export type TabProps = {
+  ariaLabel?: string
   orientation?: 'horizontal' | 'vertical'
   size?: ResponsiveValue<'sm' | 'md'>
-  tabsContent: {
-    id: string
-    children: React.ReactNode
-  }[]
   tabsData: TabDataProps[]
   variant?: string
   border?: boolean
@@ -30,15 +30,16 @@ export type TabProps = {
   isTransparent?: boolean
   buttonChipProps?: ChoiceChipProps
   dynamicTabWidth?: boolean
+  defaultValue?: string
 }
 
 export type MappedTabProps = {
   tab: TabDataProps
-  icon?: IconComponent
   buttonChipProps?: ChoiceChipProps
+  isActive?: string
+  onTabSelect?: () => void
 }
 export const Tab = ({
-  tabsContent,
   tabsData,
   orientation = 'horizontal',
   size = 'md',
@@ -47,18 +48,25 @@ export const Tab = ({
   tabGap,
   isTransparent = false,
   dynamicTabWidth = false,
+  ariaLabel = 'PCLN Tabs',
+  defaultValue = tabsData[0].id,
   buttonChipProps,
-  ...props
 }: TabProps) => {
-  const [isActive, setIsActive] = React.useState(`${tabsData[0].id}`)
+  const [isActive, setIsActive] = React.useState(`${defaultValue}`)
+  function onTabSelect(tab: TabDataProps) {
+    setIsActive(tab.id)
+    tab.onTabSelect()
+  }
   const renderTab = (tab: TabDataProps) => {
     switch (type) {
       case 'chip':
         return (
           <TabChip
-            dynamicTabWidth={dynamicTabWidth}
             isActive={isActive}
-            setIsActive={setIsActive}
+            onTabSelect={() => {
+              onTabSelect(tab)
+            }}
+            dynamicTabWidth={dynamicTabWidth}
             tab={tab}
             size={size}
             buttonChipProps={buttonChipProps}
@@ -67,16 +75,26 @@ export const Tab = ({
       case 'button':
         return (
           <TabButton
+            onTabSelect={() => {
+              onTabSelect(tab)
+            }}
             dynamicTabWidth={dynamicTabWidth}
             isTransparent={isTransparent}
             border={border}
             tab={tab}
             size={size}
-            {...props}
           />
         )
       case 'radio':
-        return <TabRadio tab={tab} isActive={isActive} setIsActive={setIsActive} {...props} />
+        return (
+          <TabRadio
+            onTabSelect={() => {
+              onTabSelect(tab)
+            }}
+            tab={tab}
+            isActive={isActive}
+          />
+        )
     }
   }
   const gridProps = (dynamicTabWidth) => {
@@ -96,35 +114,37 @@ export const Tab = ({
   }
   if (orientation === 'vertical') {
     return (
-      <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
-        <TabList orientation={orientation} aria-label='Pcln Tabs'>
+      <Tabs.Root defaultValue={`tab-${defaultValue}`}>
+        <TabList orientation='vertical' aria-label={ariaLabel}>
           <Grid gap={tabGap}>
             {tabsData.map((tab, index) => (
-              <>
-                <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
-                <Box key={`content-${tab.id}`}>
-                  <Tabs.Content value={`tab-${tab.id}`}>
-                    {tabsContent[index] && tabsContent[index].children}
-                  </Tabs.Content>
-                </Box>
-              </>
+              <>{renderTab(tab)}</>
             ))}
           </Grid>
         </TabList>
+        <Box>
+          {tabsData.map((tab) => {
+            return (
+              <Tabs.Content key={`tab-${tab.id}`} value={`tab-${tab.id}`}>
+                {tab.children}
+              </Tabs.Content>
+            )
+          })}
+        </Box>
       </Tabs.Root>
     )
   }
   return (
-    <Tabs.Root defaultValue={`tab-${tabsData[0].id}`}>
-      <TabList orientation={orientation} aria-label='Pcln Tabs'>
+    <Tabs.Root defaultValue={`tab-${defaultValue}`}>
+      <TabList orientation={orientation} aria-label={ariaLabel}>
         <Grid {...gridProps(dynamicTabWidth)}>
           {tabsData.map((tab) => {
-            return <Box key={`tab-${tab.id}`}>{renderTab(tab)}</Box>
+            return renderTab(tab)
           })}
         </Grid>
       </TabList>
       <Box>
-        {tabsContent.map((tab) => {
+        {tabsData.map((tab) => {
           return (
             <Tabs.Content key={`tab-${tab.id}`} value={`tab-${tab.id}`}>
               {tab.children}

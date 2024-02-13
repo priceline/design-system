@@ -4,6 +4,7 @@ import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
 import { Tab, type TabProps } from './Tab'
 import { argTypes, defaultArgs } from './Tab.stories.args'
 import { Departure } from 'pcln-icons'
+import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 
 type TabsStory = StoryObj<TabProps>
 
@@ -92,16 +93,22 @@ export const IconButtonTabs: TabsStory = {
         id: 't1',
         icon: Departure,
         text: 'Testingsssss longer button',
+        children: DefaultContent(),
+        onTabSelect: () => {},
       },
       {
         id: 't2',
         icon: Departure,
         text: 'LongerIsh Tab 2',
+        children: DefaultContent2(),
+        onTabSelect: () => {},
       },
       {
         id: 't3',
         icon: Departure,
         text: 'LongerishTab3',
+        children: DefaultContent3(),
+        onTabSelect: () => {},
       },
     ],
     size: 'md',
@@ -120,17 +127,23 @@ export const IconChipTabs: TabsStory = {
       {
         id: 't1',
         icon: Departure,
-        text: 'Tab 1',
+        text: 'Testingsssss longer button',
+        children: DefaultContent(),
+        onTabSelect: () => {},
       },
       {
         id: 't2',
         icon: Departure,
-        text: 'Tab 2',
+        text: 'LongerIsh Tab 2',
+        children: DefaultContent2(),
+        onTabSelect: () => {},
       },
       {
         id: 't3',
         icon: Departure,
-        text: 'Tab 3',
+        text: 'LongerishTab3',
+        children: DefaultContent3(),
+        onTabSelect: () => {},
       },
     ],
     size: 'md',

@@ -20,6 +20,7 @@ const getSizeStyles = (size, icon) => {
 }
 export const StyledText = styled(Text)`
   ${(props) => getSizeStyles(props.size, props.icon)}
+  font-family: Montserrat;
 `
 export const TabTriggerButton = styled(Tab.Trigger)`
   cursor: pointer;
@@ -62,6 +63,5 @@ export const TabTriggerRadio = styled(Tab.Trigger)`
  }
 `
 export const TabList = styled(Tab.List)`
-  flex-direction: ${(props) =>
-    props?.orientation === 'horizontal' ? 'row' : props?.orientation === 'vertical' && 'column'};
+  flex-direction: ${(props) => (props?.orientation === 'horizontal' ? 'row' : 'column')};
 `

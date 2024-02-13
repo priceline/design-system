@@ -4,32 +4,26 @@ import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
 export const defaultArgs: Partial<TabProps> = {
   size: 'md',
   type: 'button',
-  tabsContent: [
-    {
-      id: 't1',
-      children: DefaultContent(),
-    },
-    {
-      id: 't2',
-      children: DefaultContent2(),
-    },
-    {
-      id: 't3',
-      children: DefaultContent3(),
-    },
-  ],
   tabsData: [
     {
       id: 't1',
       text: 'Tab 1',
+      children: DefaultContent(),
+      onTabSelect: () => {},
     },
     {
       id: 't2',
       text: 'Tab 2',
+      children: DefaultContent2(),
+      onTabSelect: () => {},
     },
     {
       id: 't3',
       text: 'Tab 3',
+      children: DefaultContent3(),
+      onTabSelect: () => {
+        alert('onTabSelectFired!')
+      },
     },
   ],
 }
@@ -60,5 +54,10 @@ export const argTypes = {
   dynamicTabWidth: {
     defaultValue: false,
     control: 'boolean',
+  },
+  defaultValue: {
+    defaultValue: 't1',
+    control: 'select',
+    options: ['t1', 't2', 't3'],
   },
 }

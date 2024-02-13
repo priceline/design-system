@@ -1,30 +1,22 @@
 import React from 'react'
+import { Flex } from '../Flex/Flex'
 import { Label } from '../Label/Label'
 import { Radio } from '../Radio/Radio'
+import { MappedTabProps } from './Tab'
 import { TabTriggerRadio } from './Tab.styled'
-import { Flex } from '../Flex/Flex'
-import { TabProps, MappedTabProps } from './Tab'
 
 export const TabRadio = ({
   tab,
   isActive,
-  setIsActive,
-}: Partial<TabProps> &
-  MappedTabProps & {
-    isActive: string
-    setIsActive: React.Dispatch<React.SetStateAction<string>>
-  }) => {
+  onTabSelect,
+}: MappedTabProps & {
+  isActive: string
+}) => {
   return (
     <TabTriggerRadio asChild value={`tab-${tab.id}`} key={`tab-${tab.id}`}>
       <Flex alignItems='center' mr={2}>
         <Label fontSize='14px'>
-          <Radio
-            type='radio'
-            value={tab.id}
-            checked={isActive === tab.id}
-            name={tab.id}
-            onChange={() => setIsActive(tab.id)}
-          />
+          <Radio value={tab.id} checked={isActive === tab.id} name={tab.id} onChange={onTabSelect} />
           {tab.text}
         </Label>
       </Flex>

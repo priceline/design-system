@@ -9,18 +9,16 @@ export const TabButton = ({
   size,
   isTransparent,
   dynamicTabWidth,
+  onTabSelect,
 }: Partial<TabProps> & MappedTabProps) => {
-  const [isHover, setIsHover] = React.useState(false)
   return (
     <TabTriggerButton
       dynamicTabWidth={dynamicTabWidth}
       isTransparent={isTransparent}
       buttonBorder={border}
-      isActiveHover={isHover}
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
       value={`tab-${tab.id}`}
       key={`tab-${tab.id}`}
+      onClick={() => onTabSelect()}
     >
       {tab.icon ? (
         <>
@@ -28,21 +26,17 @@ export const TabButton = ({
             <Box>
               {React.createElement(tab.icon, {
                 title: tab.icon.name,
+                marginLeft: '14px',
                 size: 24,
               })}
             </Box>
-            <StyledText
-              icon={tab.icon}
-              size={size}
-              style={{ fontFamily: 'Montserrat' }}
-              textStyle='paragraph'
-            >
+            <StyledText icon={tab.icon} size={size} textStyle='paragraph'>
               {tab.text}
             </StyledText>
           </Flex>
         </>
       ) : (
-        <StyledText size={size} style={{ fontFamily: 'Montserrat' }} textStyle='paragraph'>
+        <StyledText size={size} textStyle='paragraph'>
           {tab.text}
         </StyledText>
       )}

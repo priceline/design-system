@@ -5,17 +5,16 @@ import { ChoiceChip } from '../Chip/ChoiceChip/ChoiceChip'
 export const TabChip = ({
   tab,
   buttonChipProps,
+  onTabSelect,
   isActive,
-  setIsActive,
   size,
   dynamicTabWidth,
-}: Partial<TabProps> &
-  MappedTabProps & { isActive: string; setIsActive: React.Dispatch<React.SetStateAction<string>> }) => {
+}: Partial<TabProps> & MappedTabProps) => {
   return (
     <Tab.Trigger asChild value={`tab-${tab.id}`} key={`tab-${tab.id}`}>
       <ChoiceChip
-        width={dynamicTabWidth && '100%'}
-        onClick={() => setIsActive(tab.id)}
+        width={dynamicTabWidth ? '100%' : 'auto'}
+        onClick={() => onTabSelect()}
         {...buttonChipProps}
         Icon={tab.icon}
         label={tab.text}
