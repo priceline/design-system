@@ -33,7 +33,6 @@ export type TabProps = {
   dynamicTabWidth?: boolean
   defaultValue?: string
 }
-/** @public */
 export type MappedTabProps = {
   tab: TabDataProps
   buttonChipProps?: ChoiceChipProps
