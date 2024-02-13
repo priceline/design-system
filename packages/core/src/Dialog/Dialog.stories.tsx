@@ -14,7 +14,6 @@ import { argTypes, defaultArgs } from './Dialog.stories.args'
 type DialogStory = StoryObj<DialogProps>
 
 const exampleHeaderProps: Partial<DialogProps> = {
-  headerColorScheme: 'neutralDarkOnLightest',
   headerContent: 'Hello World',
   headerIcon: <Discount />,
   headerShowCloseButton: true,
@@ -208,6 +207,7 @@ export const SheetMode: DialogStory = {
   ...Playground,
   args: {
     sheet: true,
+    size: 'full',
   },
 }
 

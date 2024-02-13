@@ -42,7 +42,7 @@ const PclnDialog = ({
   children,
   defaultOpen = false,
   fullWidth = false,
-  headerColorScheme = 'neutralDarkOnLightest',
+  headerColorScheme = 'heading',
   headerContent,
   headerIcon,
   headerShowCloseButton = false,

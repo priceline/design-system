@@ -1,10 +1,10 @@
-import { Close as CloseIcon } from 'pcln-icons'
 import React, { useEffect } from 'react'
 import { Absolute } from '../Absolute/Absolute'
 import { Flex, type FlexProps } from '../Flex/Flex'
 import { Relative } from '../Relative/Relative'
 import { Text } from '../Text/Text'
-import { LeftBorderFlex, RoundIconButton } from './Toast.styled'
+import { LeftBorderFlex } from './Toast.styled'
+import { CloseButton } from '../CloseButton/CloseButton'
 
 /**
  * @public
@@ -67,12 +67,7 @@ export function Toast({
       </LeftBorderFlex>
       {!hideClose && (
         <Absolute top={-12} right={-12}>
-          <RoundIconButton
-            borderRadius='full'
-            boxShadowSize='sm'
-            icon={<CloseIcon color='primary' size={20} title='close-toast' />}
-            onClick={handleRemoveClick}
-          />
+          <CloseButton onClick={handleRemoveClick} size='sm' variant='filled' />
         </Absolute>
       )}
     </Relative>

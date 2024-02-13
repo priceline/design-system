@@ -23,7 +23,7 @@ describe('ToastProvider', () => {
     fireEvent.click(screen.queryByText('Add Success Toast'))
     expect(screen.queryByText('Success Toast Message')).toBeInTheDocument()
 
-    screen.getAllByTitle('close-toast')
+    screen.getAllByRole('button')
     // const closeIcon = screen.getAllByTitle('close-toast')[0]
 
     // act(() => {
@@ -50,7 +50,7 @@ describe('ToastProvider', () => {
     expect(screen.queryAllByText('Success Toast Message').length).toBe(4)
 
     act(() => {
-      fireEvent.click(screen.getAllByTitle('close-toast')[0])
+      fireEvent.click(screen.getAllByRole('button')[0])
       jest.runAllTimers()
     })
 
