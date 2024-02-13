@@ -8,7 +8,7 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
   align-items: center;
   position: relative;
   vertical-align: middle;
-  padding: 0px 2px 2px;
+  padding: 2px;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   background-color: inherit;
   color: ${(props) =>
