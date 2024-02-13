@@ -5,7 +5,6 @@ import { HTMLMotionProps, Transition, motion } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
 import { overflowX, overflowY, zIndex } from 'styled-system'
-import { Box } from '../Box/Box'
 import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
 import { Grid } from '../Grid/Grid'
 import { Text } from '../Text/Text'
@@ -56,14 +55,9 @@ const FloatingCloseButton: (
   props: { dialogSize: DialogSize } & Partial<CloseButtonProps> & Partial<DialogProps>
 ) => JSX.Element = styled(CloseButton)`
   position: absolute;
-  top: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
-  right: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
-  margin: ${(props) => themeGet('space.3')(props)};
-  padding: ${(props) => themeGet('space.2')(props)};
+  top: ${(props) => (props.dialogSize === 'full' || props.fullWidth ? 8 : -12)}px;
+  right: ${(props) => (props.dialogSize === 'full' || props.fullWidth ? 8 : -12)}px;
   z-index: ${(props) => themeGet('zIndices.absolute')(props)};
-  &:hover {
-    background-color: ${(props) => themeGet('palette.background.lightest')(props)};
-  }
 `
 
 const DialogOverlayWrapper = styled(motion.div)`
@@ -145,7 +139,7 @@ export const DialogContent = ({
   borderRadius,
   children,
   fullWidth,
-  headerColorScheme,
+  headerColorScheme = 'heading',
   headerContent,
   headerIcon,
   headerShowCloseButton,
@@ -189,14 +183,7 @@ export const DialogContent = ({
       >
         {showCloseButton && (
           <Dialog.Close asChild>
-            <FloatingCloseButton
-              color='primary.base'
-              bgColor='background.lightest'
-              boxShadowSize='sm'
-              dialogSize={size}
-              sheet={sheet}
-              fullWidth={fullWidth}
-            />
+            <FloatingCloseButton dialogSize={size} fullWidth={fullWidth} variant='filled' />
           </Dialog.Close>
         )}
 
@@ -214,19 +201,22 @@ export const DialogContent = ({
         >
           {headerContent && (
             <Grid
-              colorScheme={headerColorScheme}
               px={[3, 3, 3, 3, '24px', '24px']}
               py={3}
-              gap={2}
               autoFlow='column'
-              templateColumns={headerIcon ? 'auto 1fr auto' : '1fr auto'}
+              templateColumns='auto 1fr'
               alignItems='center'
+              colorScheme={headerColorScheme}
             >
-              {headerIcon && <Grid placeItems='center'>{headerIcon}</Grid>}
-              <Text textStyle={size === 'sm' ? (headerIcon ? 'heading5' : 'heading4') : headerSizeArray}>
-                {headerContent}
-              </Text>
-              <Box>{headerShowCloseButton && <CloseButton onClick={() => onOpenChange(false)} />}</Box>
+              <Grid autoFlow='column' gap='2'>
+                {headerIcon}
+                <Text textStyle={size === 'sm' ? (headerIcon ? 'heading5' : 'heading4') : headerSizeArray}>
+                  {headerContent}
+                </Text>
+              </Grid>
+              <Grid justifySelf='end'>
+                {headerShowCloseButton && <CloseButton onClick={() => onOpenChange(false)} />}
+              </Grid>
             </Grid>
           )}
           {children}
