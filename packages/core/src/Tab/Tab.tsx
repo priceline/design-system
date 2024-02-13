@@ -10,15 +10,20 @@ import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
 
-/** @public */
-export type TabDataProps = {
+/**
+ * Represents the data for a single tab in the tab component.
+ * @public
+ */ export type TabDataProps = {
   id: string
   icon?: IconComponent
   text: string
   children: React.ReactNode
   onTabSelect: () => void
 }
-/** @public */
+/**
+ * Represents the props for a tab component.
+ * @public
+ */
 export type TabProps = {
   ariaLabel?: string
   orientation?: 'horizontal' | 'vertical'
