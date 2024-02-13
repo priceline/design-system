@@ -10,4 +10,10 @@ export const animateArgs = [
   'scaleOnTap',
   'slideOutLeft',
   'slideInLeft',
+  'slideInTop',
+  'slideOutTop',
+  'slideInBottom',
+  'slideOutBottom',
+  'slideOutRight',
+  'slideInRight',
 ]

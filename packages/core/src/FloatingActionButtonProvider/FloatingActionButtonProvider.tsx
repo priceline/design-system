@@ -23,8 +23,8 @@ export type FloatingActionButtonProviderProps = MarginProps & {
 
 export const FloatingActionButtonProvider: React.FC<FloatingActionButtonProviderProps> = (
   {
-    enterAnimation = 'slideInLeft',
-    exitAnimation = 'slideOutLeft',
+    enterAnimation = 'slideInBottom',
+    exitAnimation = 'slideOutBottom',
     position = 'topRight',
     delayDisplayMs,
     hideUntilScrollPercent,

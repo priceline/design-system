@@ -29,8 +29,8 @@ export default {
   },
   args: {
     position: 'bottomRight',
-    enterAnimation: 'slideInLeft',
-    exitAnimation: 'slideOutLeft',
+    enterAnimation: 'slideInBottom',
+    exitAnimation: 'slideOutBottom',
     floatingActionButtons: [
       {
         tooltip: 'Tooltip Text',
@@ -115,9 +115,35 @@ export const MultipleSamePosition = {
 export const MultiplePositions = {
   render: (args) => (
     <Box height='400px'>
-      <FloatingActionButtonProvider {...args} position='topRight' />
-      <FloatingActionButtonProvider {...args} position='centerRight' />
-      <FloatingActionButtonProvider {...args} />
+      <FloatingActionButtonProvider
+        {...args}
+        position='topRight'
+        enterAnimation='slideInTop'
+        exitAnimation='slideOutTop'
+      />
+      <FloatingActionButtonProvider
+        {...args}
+        position='centerRight'
+        enterAnimation='slideInRight'
+        exitAnimation='slideOutRight'
+        delayDisplayMs={300}
+      />
+      <FloatingActionButtonProvider {...args} delayDisplayMs={600} />
+    </Box>
+  ),
+}
+
+export const CustomPositionUsingMargin = {
+  render: (args) => (
+    <Box height='400px'>
+      <FloatingActionButtonProvider
+        {...args}
+        position='topRight'
+        enterAnimation='slideInTop'
+        exitAnimation='slideOutTop'
+        mt={6}
+        mr={6}
+      />
     </Box>
   ),
 }
