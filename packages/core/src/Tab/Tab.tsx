@@ -10,6 +10,7 @@ import { TabButton } from './TabButton'
 import { TabChip } from './TabChip'
 import { TabRadio } from './TabRadio'
 
+/** @public */
 export type TabDataProps = {
   id: string
   icon?: IconComponent
@@ -17,7 +18,7 @@ export type TabDataProps = {
   children: React.ReactNode
   onTabSelect: () => void
 }
-
+/** @public */
 export type TabProps = {
   ariaLabel?: string
   orientation?: 'horizontal' | 'vertical'
@@ -32,7 +33,7 @@ export type TabProps = {
   dynamicTabWidth?: boolean
   defaultValue?: string
 }
-
+/** @public */
 export type MappedTabProps = {
   tab: TabDataProps
   buttonChipProps?: ChoiceChipProps
