@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add prop to Dialog to show a shadow above its contents on scroll",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

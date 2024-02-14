@@ -30,6 +30,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   triggerNode?: React.ReactNode
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
+  showScrollShadow?: boolean
 }
 
 /**
@@ -58,6 +59,7 @@ const PclnDialog = ({
   overflowX = 'auto',
   overflowY = 'auto',
   onOpenChange,
+  showScrollShadow,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
@@ -91,6 +93,7 @@ const PclnDialog = ({
               sheet={sheet}
               showCloseButton={showCloseButton}
               size={size}
+              showScrollShadow={showScrollShadow}
             >
               {children}
             </DialogContent>

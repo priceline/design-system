@@ -146,6 +146,7 @@ export const OverflowContent: DialogStory = {
   ...Playground,
   args: {
     children: <ExampleOverflowingContent overflow='auto' maxHeight='calc(100vh - 2 * 96px)' />,
+    showScrollShadow: true,
   },
 }
 export const StickyHeader: DialogStory = {
@@ -154,6 +155,7 @@ export const StickyHeader: DialogStory = {
     children: <ExampleOverflowingContent overflow='auto' maxHeight={500} />,
     ...exampleHeaderProps,
     headerShowCloseButton: false,
+    showScrollShadow: true,
   },
 }
 
