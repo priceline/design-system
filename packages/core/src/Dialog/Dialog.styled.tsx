@@ -2,7 +2,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
 import { HTMLMotionProps, Transition, motion } from 'framer-motion'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import { overflowX, overflowY, zIndex } from 'styled-system'
 import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
@@ -10,6 +10,8 @@ import { Grid } from '../Grid/Grid'
 import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { type DialogProps } from './Dialog'
+import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
+import { Box } from '../Box/Box'
 
 /** @public */
 export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
@@ -133,6 +135,10 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
   )
 }
 
+const SmoothTransitionBox = styled(Box)`
+  transition: all 0.3s ease-in-out;
+`
+
 export const DialogContent = ({
   ariaDescription,
   ariaTitle,
@@ -152,6 +158,7 @@ export const DialogContent = ({
   onOpenChange,
   overflowX,
   overflowY,
+  showScrollShadow,
 }: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
@@ -161,6 +168,8 @@ export const DialogContent = ({
     headerIcon ? 'heading4' : 'heading3', // xl
     headerIcon ? 'heading4' : 'heading3', // xxl
   ] as const
+
+  const { boxShadow, onScrollHandler } = useScrollWithShadow()
 
   return (
     <Dialog.Content
@@ -219,7 +228,17 @@ export const DialogContent = ({
               </Grid>
             </Grid>
           )}
-          {children}
+          {showScrollShadow ? (
+            <SmoothTransitionBox style={{ boxShadow }}>
+              {React.Children.map(children, (child) =>
+                React.cloneElement(child as ReactElement, {
+                  onScroll: onScrollHandler,
+                })
+              )}
+            </SmoothTransitionBox>
+          ) : (
+            children
+          )}
         </DialogInnerContentWrapper>
       </DialogContentWrapper>
     </Dialog.Content>
