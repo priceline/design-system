@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
-import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
+import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Absolute } from 'pcln-design-system'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
 import { Carousel } from './Carousel'
@@ -112,6 +112,19 @@ function renderCards() {
   ))
 }
 
+function renderOverflowCards() {
+  return Array.from(Array(SLIDE_COUNT)).map((_, idx) => (
+    <ToutCard borderRadius={20} boxShadowSize='lg' borderWidth={0} key={idx} p={4} height='300px'>
+      <Absolute bg='primary.light' height='100px' mt='-100px'>
+        Overflow
+      </Absolute>
+      <Text fontSize={3} fontWeight='bold'>
+        Slide {idx}
+      </Text>
+    </ToutCard>
+  ))
+}
+
 const BasicTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 
 export const Basic = BasicTemplate.bind({})
@@ -129,6 +142,27 @@ Basic.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
 
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
+}
+
+const OverflowTemplate = (args) => (
+  <Box mt={5}>
+    <Carousel {...args}>{renderOverflowCards()}</Carousel>
+  </Box>
+)
+
+export const OverflowAllowed = OverflowTemplate.bind({})
+OverflowAllowed.args = {
+  visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
+  showDots: false,
+  showForwardBackBtns: true,
+  arrowPositions: 'bottom',
+  onSlideChange: action('Slide Change'),
+  buttonSize: '60px',
+  sideButtonMargin: '-30px',
+  overflowAllowanceX: 5,
+  overflowAllowanceY: 20,
+  overflowAllowanceTop: 100,
 }
 
 export const ShowArrowsOnHover = BasicTemplate.bind({})

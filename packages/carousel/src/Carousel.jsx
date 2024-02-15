@@ -63,6 +63,9 @@ export const Carousel = ({
   displayArrowsMobile,
   buttonSize = '60px',
   showArrowsOnHover = false,
+  overflowAllowanceX,
+  overflowAllowanceY,
+  overflowAllowanceTop,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -78,6 +81,9 @@ export const Carousel = ({
         onSlideChange={onSlideChange}
         visibleSlides={mobileVisibleSlides || getMobileVisibleSlides(visibleSlides)}
         currentSlideOverride={currentSlide}
+        overflowAllowanceX={overflowAllowanceX}
+        overflowAllowanceY={overflowAllowanceY}
+        overflowAllowanceTop={overflowAllowanceTop}
       >
         {React.Children.map(children, (item) => item)}
       </SlideBox>
@@ -85,7 +91,11 @@ export const Carousel = ({
   }
 
   return (
-    <CarouselWrapper>
+    <CarouselWrapper
+      overflowAllowanceX={overflowAllowanceX}
+      overflowAllowanceY={overflowAllowanceY}
+      overflowAllowanceTop={overflowAllowanceTop}
+    >
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
@@ -125,6 +135,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
+              pt={overflowAllowanceTop ? `${overflowAllowanceTop - 60}px` : undefined}
               ml={sideButtonMargin}
               pl={slideSpacing}
               type='prev'
@@ -172,6 +183,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
+              pt={overflowAllowanceTop ? `${overflowAllowanceTop - 60}px` : undefined}
               mr={sideButtonMargin}
               pr={slideSpacing}
               type='next'
@@ -251,4 +263,10 @@ Carousel.propTypes = {
   buttonSize: PropTypes.string,
   /** When arrow position is side, hide arrows and shows when hovers on carousel */
   showArrowsOnHover: PropTypes.bool,
+  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  overflowAllowanceY: PropTypes.number,
+  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  overflowAllowanceX: PropTypes.number,
+  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  overflowAllowanceTop: PropTypes.number,
 }

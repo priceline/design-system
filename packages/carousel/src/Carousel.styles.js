@@ -110,6 +110,29 @@ export const CarouselWrapper = styled.div`
   .horizontalSlider___281Ls {
     position: relative;
     overflow: hidden;
+    ${({ overflowAllowanceX }) =>
+      overflowAllowanceX
+        ? `
+        padding-left: ${overflowAllowanceX}px;
+        margin-left: -${overflowAllowanceX}px;
+        padding-right: ${overflowAllowanceX}px;
+        margin-right: -${overflowAllowanceX}px;
+      `
+        : ''}
+    ${({ overflowAllowanceY, overflowAllowanceTop }) =>
+      overflowAllowanceY || overflowAllowanceTop
+        ? `
+        padding-top: ${overflowAllowanceTop || overflowAllowanceY}px;
+        margin-top: -${overflowAllowanceTop || overflowAllowanceY}px;
+      `
+        : ''}
+    ${({ overflowAllowanceY }) =>
+      overflowAllowanceY
+        ? `
+      padding-bottom: ${overflowAllowanceY}px;
+      margin-bottom: -${overflowAllowanceY}px;
+    `
+        : ''}
   }
   [dir='rtl'] .horizontalSlider___281Ls {
     direction: ltr;

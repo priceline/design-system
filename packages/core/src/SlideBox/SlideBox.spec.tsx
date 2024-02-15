@@ -25,6 +25,8 @@ describe('SlideBox', () => {
         slideSpacing={2}
         currentSlideOverride={2}
         arrowPosition='side'
+        overflowAllowanceX={20}
+        overflowAllowanceY={40}
       >
         <Box key='testkey'>1</Box>
         <Box>2</Box>
@@ -39,7 +41,13 @@ describe('SlideBox', () => {
     const slideChange = jest.fn()
 
     const { getByTestId } = render(
-      <SlideBox visibleSlides={1} onSlideChange={slideChange} slideSpacing={2} arrowPosition='bottom'>
+      <SlideBox
+        visibleSlides={1}
+        onSlideChange={slideChange}
+        slideSpacing={2}
+        arrowPosition='bottom'
+        overflowAllowanceTop={10}
+      >
         <Box>1</Box>
         <Box>2</Box>
         <Box>3</Box>
