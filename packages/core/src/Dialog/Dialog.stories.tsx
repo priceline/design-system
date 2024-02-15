@@ -19,6 +19,10 @@ const exampleHeaderProps: Partial<DialogProps> = {
   headerShowCloseButton: true,
 }
 
+const exampleFooterProps: Partial<DialogProps> = {
+  footerContent: <Button borderRadius='lg'>Done</Button>,
+}
+
 export const Playground: DialogStory = {
   render: (args) => (
     <Box height='1000px'>
@@ -159,6 +163,17 @@ export const StickyHeader: DialogStory = {
   },
 }
 
+export const StickyFooter: DialogStory = {
+  ...Playground,
+  args: {
+    children: <ExampleOverflowingContent overflow='auto' maxHeight={500} />,
+    ...exampleHeaderProps,
+    ...exampleFooterProps,
+    headerShowCloseButton: false,
+    showScrollShadow: true,
+  },
+}
+
 export const ScrimColors: DialogStory = {
   render: (args) => {
     const [scrimColor, setScrimColor] = useState<DialogProps['scrimColor']>('dark')
@@ -210,6 +225,17 @@ export const SheetMode: DialogStory = {
   args: {
     sheet: true,
     size: 'full',
+  },
+}
+
+export const SheetWithHeaderAndFooter: DialogStory = {
+  ...Playground,
+  args: {
+    children: <ExampleOverflowingContent />,
+    ...SheetMode.args,
+    ...exampleHeaderProps,
+    ...exampleFooterProps,
+    showScrollShadow: true,
   },
 }
 
