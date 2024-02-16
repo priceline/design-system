@@ -107,7 +107,6 @@ const DialogInnerContentWrapper = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100%;
-  overflow: scroll;
 
   ${overflowX}
   ${overflowY}
@@ -238,7 +237,7 @@ export const DialogContent = ({
             </Grid>
           )}
           {showScrollShadow ? (
-            <SmoothTransitionBox style={{ boxShadow }} height='100%'>
+            <SmoothTransitionBox style={{ boxShadow }} height='100%' onScroll={onScrollHandler}>
               {React.Children.map(children, (child) =>
                 React.cloneElement(child as ReactElement, {
                   onScroll: onScrollHandler,
