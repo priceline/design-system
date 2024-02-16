@@ -22,7 +22,7 @@ const sidePositionStyles = (props) =>
         ${props.type == 'prev' ? 'left' : 'right'}: 0px;
         position: absolute;
         top: 50%;
-        margin-top: -${props.overflowAdjust + 30}px;
+        margin-top: -${(props.overflowAdjust || 0) + 30}px;
         z-index: 2;
         ${props.showArrowsOnHover &&
         css`
