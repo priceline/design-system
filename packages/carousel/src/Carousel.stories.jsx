@@ -140,7 +140,7 @@ const SimpleTextContent = () => (
 
 const CardWithPopover = () => {
   return (
-    <Card borderRadius={20} boxShadowSize='lg' borderWidth={0} p={4} height='200px' bg='background.primary'>
+    <Card borderRadius={20} boxShadowSize='lg' borderWidth={0} p={4} height='200px' bg='background.lightest'>
       <Popover
         renderContent={SimpleTextContent}
         ariaLabel='Test Popover'
@@ -162,11 +162,27 @@ function renderOverflowCards() {
 
 const OverflowTemplate = (args) => (
   <Box>
-    <Relative width={1} bg='background.light' zIndex={2} height='80px' borderRadius='xl' mb={4} mx={2}>
+    <Relative
+      width={1}
+      bg='background.light'
+      zIndex={2}
+      height='80px'
+      borderRadius='xl'
+      mb={[3, 3, 3, 4]}
+      mx={2}
+    >
       Above
     </Relative>
     <Carousel {...args}>{renderOverflowCards()}</Carousel>
-    <Relative width={1} bg='background.light' zIndex={3} height='80px' borderRadius='xl' mt={4} mx={2}>
+    <Relative
+      width={1}
+      bg='background.light'
+      zIndex={3}
+      height='80px'
+      borderRadius='xl'
+      mt={[3, 3, 3, 4]}
+      mx={2}
+    >
       Below
     </Relative>
   </Box>
@@ -195,7 +211,7 @@ const OverflowBackgroundTemplate = (args) => (
       Above
     </Relative>
 
-    <Relative zIndex={2} bg='primary.light' px={4} py={2} borderRadius='xl' my={4}>
+    <Relative zIndex={2} bg='primary.light' px={2} py={2} borderRadius='xl' my={4}>
       <Carousel {...args}>{renderOverflowCards()}</Carousel>
     </Relative>
 
@@ -207,7 +223,7 @@ const OverflowBackgroundTemplate = (args) => (
 
 export const OverflowBackground = OverflowBackgroundTemplate.bind({})
 OverflowBackground.args = {
-  visibleSlides: 3,
+  visibleSlides: 3.1,
   mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
@@ -215,7 +231,7 @@ OverflowBackground.args = {
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
-  overflowAllowanceX: 32,
+  overflowAllowanceX: 8,
   overflowAllowanceY: 20,
   overflowAllowanceTop: 2,
   maxHeight: 220,
