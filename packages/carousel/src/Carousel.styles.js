@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const CarouselWrapper = styled.div`
+  ${({ maxHeight }) => (maxHeight ? `max-height: ${maxHeight}px;` : '')}
   .buttonBack___1mlaL,
   .buttonFirst___2rhFr,
   .buttonLast___2yuh0,
@@ -123,7 +124,7 @@ export const CarouselWrapper = styled.div`
       overflowAllowanceY || overflowAllowanceTop
         ? `
         padding-top: ${overflowAllowanceTop || overflowAllowanceY}px;
-        margin-top: -${overflowAllowanceTop || overflowAllowanceY}px;
+        transform: translateY(-${overflowAllowanceTop || overflowAllowanceY}px);
       `
         : ''}
     ${({ overflowAllowanceY }) =>

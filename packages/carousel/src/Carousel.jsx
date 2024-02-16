@@ -63,14 +63,18 @@ export const Carousel = ({
   displayArrowsMobile,
   buttonSize = '60px',
   showArrowsOnHover = false,
-  overflowAllowanceX,
-  overflowAllowanceY,
-  overflowAllowanceTop,
+  overflowAllowanceX = 0,
+  overflowAllowanceY = 0,
+  overflowAllowanceTop = 0,
+  maxHeight,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
   const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
+  const overflowAdjust = overflowAllowanceTop
+    ? (overflowAllowanceTop + overflowAllowanceY) / 2
+    : overflowAllowanceY
 
   if (!displayArrowsMobile && browserWidth < CAROUSEL_BREAKPOINT_1) {
     return (
@@ -95,6 +99,7 @@ export const Carousel = ({
       overflowAllowanceX={overflowAllowanceX}
       overflowAllowanceY={overflowAllowanceY}
       overflowAllowanceTop={overflowAllowanceTop}
+      maxHeight={maxHeight}
     >
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
@@ -135,7 +140,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
-              pt={overflowAllowanceTop ? `${overflowAllowanceTop - 60}px` : undefined}
+              overflowAdjust={overflowAdjust}
               ml={sideButtonMargin}
               pl={slideSpacing}
               type='prev'
@@ -183,7 +188,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
-              pt={overflowAllowanceTop ? `${overflowAllowanceTop - 60}px` : undefined}
+              overflowAdjust={overflowAdjust}
               mr={sideButtonMargin}
               pr={slideSpacing}
               type='next'
@@ -263,10 +268,12 @@ Carousel.propTypes = {
   buttonSize: PropTypes.string,
   /** When arrow position is side, hide arrows and shows when hovers on carousel */
   showArrowsOnHover: PropTypes.bool,
-  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  /** Number of px to allow overflow on top and bottom of Carousel to display things like shadows */
   overflowAllowanceY: PropTypes.number,
-  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  /** Number of px to allow overflow on left and right to display things like shadows */
   overflowAllowanceX: PropTypes.number,
-  /** When arrow position is side, hide arrows and shows when hovers on carousel */
+  /** Number of px to allow oveflow on top (will override the overflowAllowanceY value for top) */
   overflowAllowanceTop: PropTypes.number,
+  /** Number of px to set maxHeight to counteract large overflow values*/
+  maxHeight: PropTypes.number,
 }

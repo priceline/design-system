@@ -83,6 +83,7 @@ describe('Carousel', () => {
         arrowsPosition='bottom'
         currentSlide={1}
         overflowAllowanceTop={10}
+        maxHeight={220}
       >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
