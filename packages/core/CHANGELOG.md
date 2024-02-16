@@ -1,6 +1,20 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 09 Feb 2024 15:27:23 GMT and should not be manually modified.
+This log was last generated on Fri, 16 Feb 2024 20:06:38 GMT and should not be manually modified.
+
+## 6.4.0
+Fri, 16 Feb 2024 20:06:38 GMT
+
+### Minor changes
+
+- Add footerContent to Dialog
+- Update Dialog close button to use CloseButton and change default heading color
+- Add prop to Dialog to show a shadow above its contents on scroll
+
+### Patches
+
+- update orange color to orange dark
+- Update checkbox states
 
 ## 6.3.0
 Fri, 09 Feb 2024 15:27:23 GMT
