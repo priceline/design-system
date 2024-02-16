@@ -15,6 +15,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   borderRadius?: BorderRadius
   children?: React.ReactNode
   defaultOpen?: boolean
+  footerContent?: React.ReactNode
   fullWidth?: boolean
   headerColorScheme?: keyof ColorSchemes
   headerContent?: string | React.ReactNode
@@ -42,6 +43,7 @@ const PclnDialog = ({
   borderRadius = '2xl',
   children,
   defaultOpen = false,
+  footerContent,
   fullWidth = false,
   headerColorScheme = 'heading',
   headerContent,
@@ -82,6 +84,7 @@ const PclnDialog = ({
               ariaDescription={ariaDescription}
               ariaTitle={ariaTitle}
               borderRadius={borderRadius}
+              footerContent={footerContent}
               fullWidth={fullWidth}
               headerColorScheme={headerColorScheme}
               headerContent={headerContent}

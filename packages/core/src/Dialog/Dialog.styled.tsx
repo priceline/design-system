@@ -98,10 +98,16 @@ const DialogContentWrapper = styled(motion.div)`
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
   box-shadow: ${(props: DialogProps) => themeGet('shadows.overlay-lg')(props)};
+  overflow: ${(props: DialogProps) => (props.sheet ? 'scroll' : 'visible')};
 `
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+
   ${overflowX}
   ${overflowY}
   border-radius: ${(props: DialogProps) =>
@@ -136,6 +142,7 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
 }
 
 const SmoothTransitionBox = styled(Box)`
+  overflow: scroll;
   transition: all 0.3s ease-in-out;
 `
 
@@ -144,6 +151,7 @@ export const DialogContent = ({
   ariaTitle,
   borderRadius,
   children,
+  footerContent,
   fullWidth,
   headerColorScheme = 'heading',
   headerContent,
@@ -229,7 +237,7 @@ export const DialogContent = ({
             </Grid>
           )}
           {showScrollShadow ? (
-            <SmoothTransitionBox style={{ boxShadow }}>
+            <SmoothTransitionBox style={{ boxShadow }} height='100%' onScroll={onScrollHandler}>
               {React.Children.map(children, (child) =>
                 React.cloneElement(child as ReactElement, {
                   onScroll: onScrollHandler,
@@ -237,7 +245,22 @@ export const DialogContent = ({
               )}
             </SmoothTransitionBox>
           ) : (
-            children
+            <Box height='100%' style={{ overflowY: 'scroll' }}>
+              {children}
+            </Box>
+          )}
+          {footerContent && (
+            <Box boxShadow={showScrollShadow ? 'lg' : 'none'} color='background.lightest'>
+              <Grid
+                px={[3, 3, 3, 3, '24px', '24px']}
+                py={3}
+                autoFlow='column'
+                templateColumns='1fr'
+                alignItems='center'
+              >
+                {footerContent}
+              </Grid>
+            </Box>
           )}
         </DialogInnerContentWrapper>
       </DialogContentWrapper>
