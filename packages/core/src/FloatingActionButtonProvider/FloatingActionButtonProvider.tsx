@@ -1,5 +1,6 @@
 import React from 'react'
 import { Animate, type MotionVariant } from '../Animate/Animate'
+import { AnimatePresence } from 'framer-motion'
 import { useFloatingActinButton } from './useFloatingActionButton'
 import { FloatingActionButtonProps, FloatingActionButton } from '../FloatingActionButton/FloatingActionButton'
 import { Wrapper } from './FloatingActionButtonProvider.styled'
@@ -15,16 +16,14 @@ export type FloatingActionButtonPropWrapper = FloatingActionButtonProps & {
 export type FloatingActionButtonProviderProps = MarginProps & {
   hideUntilScrollPercent?: number
   delayDisplayMs?: number
-  enterAnimation?: MotionVariant
-  exitAnimation?: MotionVariant
+  animationVariant?: MotionVariant
   position?: Position
   floatingActionButtons: Array<FloatingActionButtonPropWrapper>
 }
 
 export const FloatingActionButtonProvider: React.FC<FloatingActionButtonProviderProps> = (
   {
-    enterAnimation = 'slideInBottom',
-    exitAnimation = 'slideOutBottom',
+    animationVariant = 'slideInBottom',
     position = 'topRight',
     delayDisplayMs,
     hideUntilScrollPercent,
@@ -33,17 +32,21 @@ export const FloatingActionButtonProvider: React.FC<FloatingActionButtonProvider
   },
   ref
 ) => {
-  const { showFab, showWrapper, isDelayedDisplay } = useFloatingActinButton({
+  const { showFab } = useFloatingActinButton({
     hideUntilScrollPercent,
     delayDisplayMs,
   })
-  return !showWrapper || isDelayedDisplay ? null : (
-    <Wrapper positionVariant={position} {...POSITION_STYLES[position]} {...props}>
-      <Animate variant={showFab ? enterAnimation : exitAnimation}>
-        {floatingActionButtons.map((fab) => (
-          <FloatingActionButton isAbsolutePosition={false} {...fab} key={fab.key} />
-        ))}
-      </Animate>
-    </Wrapper>
+  return (
+    <AnimatePresence>
+      {!showFab ? null : (
+        <Wrapper positionVariant={position} {...POSITION_STYLES[position]} {...props}>
+          <Animate variant={animationVariant}>
+            {floatingActionButtons.map((fab) => (
+              <FloatingActionButton isAbsolutePosition={false} {...fab} key={fab.key} />
+            ))}
+          </Animate>
+        </Wrapper>
+      )}
+    </AnimatePresence>
   )
 }

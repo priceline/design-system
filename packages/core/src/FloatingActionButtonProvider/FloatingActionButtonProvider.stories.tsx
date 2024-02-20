@@ -11,13 +11,8 @@ export default {
   title: 'Core / FloatingActionButtonProvider',
   component: FloatingActionButtonProvider,
   argTypes: {
-    enterAnimation: {
-      name: 'enterAnimation',
-      options: animateArgs,
-      control: 'select',
-    },
-    exitAnimation: {
-      name: 'exitAnimation',
+    animationVariant: {
+      name: 'animationVariant',
       options: animateArgs,
       control: 'select',
     },
@@ -29,8 +24,7 @@ export default {
   },
   args: {
     position: 'bottomRight',
-    enterAnimation: 'slideInBottom',
-    exitAnimation: 'slideOutBottom',
+    animationVariant: 'slideInBottom',
     floatingActionButtons: [
       {
         tooltip: 'Tooltip Text',
@@ -115,17 +109,11 @@ export const MultipleSamePosition = {
 export const MultiplePositions = {
   render: (args) => (
     <Box height='400px'>
-      <FloatingActionButtonProvider
-        {...args}
-        position='topRight'
-        enterAnimation='slideInTop'
-        exitAnimation='slideOutTop'
-      />
+      <FloatingActionButtonProvider {...args} position='topRight' animationVariant='slideInTop' />
       <FloatingActionButtonProvider
         {...args}
         position='centerRight'
-        enterAnimation='slideInRight'
-        exitAnimation='slideOutRight'
+        animationVariant='slideInRight'
         delayDisplayMs={300}
       />
       <FloatingActionButtonProvider {...args} delayDisplayMs={600} />
@@ -139,8 +127,7 @@ export const CustomPositionUsingMargin = {
       <FloatingActionButtonProvider
         {...args}
         position='topRight'
-        enterAnimation='slideInTop'
-        exitAnimation='slideOutTop'
+        animationVariant='slideInTop'
         mt={6}
         mr={6}
       />

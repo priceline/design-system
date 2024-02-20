@@ -84,6 +84,7 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   slideInLeft: {
     initial: { opacity: 0, x: '-100%' },
     animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: '-100%' },
   },
   slideOutRight: {
     initial: { opacity: 1, x: 0 },
@@ -96,6 +97,7 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   slideInTop: {
     initial: { opacity: 0, y: '-100%' },
     animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: '-100%' },
   },
   slideOutTop: {
     initial: { opacity: 1, y: 0 },
@@ -104,6 +106,7 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   slideInBottom: {
     initial: { opacity: 0, y: '100%' },
     animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: '100%' },
   },
   slideOutBottom: {
     initial: { opacity: 1, y: 0 },
