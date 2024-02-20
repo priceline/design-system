@@ -11,9 +11,6 @@ export const animateArgs = [
   'slideOutLeft',
   'slideInLeft',
   'slideInTop',
-  'slideOutTop',
   'slideInBottom',
-  'slideOutBottom',
-  'slideOutRight',
   'slideInRight',
 ]
