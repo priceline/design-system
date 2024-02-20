@@ -202,6 +202,10 @@ export const Color = () => (
         <Checkbox id='secondary_checked_box' defaultChecked onChange={checkAction} color='secondary' />
         Secondary color checked by default
       </StyledLabel>
+      <StyledLabel htmlFor='secondary_indeterminate_box'>
+        <Checkbox id='secondary_indeterminate_box' indeterminate onChange={checkAction} color='secondary' />
+        Secondary color indeterminate
+      </StyledLabel>
       <StyledLabel htmlFor='secondary_disabled_box'>
         <Checkbox id='secondary_disabled_box' disabled onChange={checkAction} color='secondary' />
         Secondary color disabled
@@ -215,6 +219,10 @@ export const Color = () => (
       <StyledLabel htmlFor='error_checked_box'>
         <Checkbox id='error_checked_box' defaultChecked onChange={checkAction} color='error' />
         Error color checked by default
+      </StyledLabel>
+      <StyledLabel htmlFor='error_indeterminate_box'>
+        <Checkbox id='error_indeterminate_box' indeterminate onChange={checkAction} color='error' />
+        Error color indeterminate
       </StyledLabel>
       <StyledLabel htmlFor='error_disabled_box'>
         <Checkbox id='error_disabled_box' disabled onChange={checkAction} color='error' />

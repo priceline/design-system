@@ -9,7 +9,7 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
   position: relative;
   vertical-align: middle;
   padding: 2px;
-  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   background-color: inherit;
   color: ${(props) =>
     props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('border.dark')(props)};
@@ -25,6 +25,10 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
   }
   svg[data-name='indeterminate'] {
     display: none;
+  }
+
+  ~ span {
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   }
 
   > input[data-indeterminate='true'] {
@@ -44,17 +48,13 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
       display: none;
     }
   }
-  > input:hover ~ svg[data-name='empty'] {
-    color: ${(props) =>
-      props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
-  }
 
   > input:not([data-indeterminate='true']) {
     & ~ svg[data-name='empty'] {
       color: ${(props) =>
         props.disabled ? getPaletteColor('border.base') : getPaletteColor(props.unselectedColor)};
     }
-    &:focus ~ svg {
+    &:focus-visible ~ svg {
       border: 1px solid ${getPaletteColor('border.base')};
       background-color: ${getPaletteColor('background.light')};
     }
@@ -71,7 +71,7 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
       display: none;
     }
 
-    &:focus ~ svg {
+    &:focus-visible ~ svg {
       border: 1px solid ${getPaletteColor('base')};
       background-color: ${getPaletteColor('light')};
     }
@@ -80,6 +80,11 @@ const CheckBoxWrapper = styled.div<CheckboxProps>`
       color: ${(props) =>
         props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('dark')(props)};
     }
+  }
+
+  > input:hover ~ svg[data-name='empty'] {
+    color: ${(props) =>
+      props.disabled ? getPaletteColor('border.base')(props) : getPaletteColor('base')(props)};
   }
 
   ${applyVariations('Checkbox')}

@@ -14,10 +14,13 @@ import { argTypes, defaultArgs } from './Dialog.stories.args'
 type DialogStory = StoryObj<DialogProps>
 
 const exampleHeaderProps: Partial<DialogProps> = {
-  headerColorScheme: 'neutralDarkOnLightest',
   headerContent: 'Hello World',
   headerIcon: <Discount />,
   headerShowCloseButton: true,
+}
+
+const exampleFooterProps: Partial<DialogProps> = {
+  footerContent: <Button borderRadius='lg'>Done</Button>,
 }
 
 export const Playground: DialogStory = {
@@ -147,6 +150,7 @@ export const OverflowContent: DialogStory = {
   ...Playground,
   args: {
     children: <ExampleOverflowingContent overflow='auto' maxHeight='calc(100vh - 2 * 96px)' />,
+    showScrollShadow: true,
   },
 }
 export const StickyHeader: DialogStory = {
@@ -155,6 +159,18 @@ export const StickyHeader: DialogStory = {
     children: <ExampleOverflowingContent overflow='auto' maxHeight={500} />,
     ...exampleHeaderProps,
     headerShowCloseButton: false,
+    showScrollShadow: true,
+  },
+}
+
+export const StickyFooter: DialogStory = {
+  ...Playground,
+  args: {
+    children: <ExampleOverflowingContent overflow='auto' maxHeight={500} />,
+    ...exampleHeaderProps,
+    ...exampleFooterProps,
+    headerShowCloseButton: false,
+    showScrollShadow: true,
   },
 }
 
@@ -208,6 +224,18 @@ export const SheetMode: DialogStory = {
   ...Playground,
   args: {
     sheet: true,
+    size: 'full',
+  },
+}
+
+export const SheetWithHeaderAndFooter: DialogStory = {
+  ...Playground,
+  args: {
+    children: <ExampleOverflowingContent />,
+    ...SheetMode.args,
+    ...exampleHeaderProps,
+    ...exampleFooterProps,
+    showScrollShadow: true,
   },
 }
 

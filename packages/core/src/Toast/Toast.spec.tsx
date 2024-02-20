@@ -36,7 +36,7 @@ describe('Toast', () => {
     jest.runAllTimers()
     expect(mockRemoveClick).toHaveBeenCalledTimes(0)
 
-    fireEvent.click(screen.getAllByTitle('close-toast')[0])
+    fireEvent.click(screen.getByRole('button'))
     expect(mockRemoveClick).toHaveBeenCalledTimes(1)
     expect(mockRemoveClick).toHaveBeenCalledWith(10)
   })

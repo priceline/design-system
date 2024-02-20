@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import React from 'react'
 import { Dialog } from './Dialog'
 
@@ -31,6 +31,26 @@ describe('Dialog', () => {
 
     const contentNode = screen.getByText(contentText)
     expect(contentNode).toBeInTheDocument()
+  })
+
+  it('renders the dialog with footer content', async () => {
+    render(
+      <Dialog
+        triggerNode={<button>{triggerText}</button>}
+        ariaDescription='Description'
+        ariaTitle='Title'
+        footerContent={<div>Footer Content</div>}
+      >
+        {contentText}
+      </Dialog>
+    )
+
+    const triggerNode = screen.getByText(triggerText)
+    triggerNode.click()
+
+    await waitFor(() => {
+      expect(screen.getByText('Footer Content')).toBeInTheDocument()
+    })
   })
 
   it.skip('calls onOpenChange when trigger is clicked', () => {

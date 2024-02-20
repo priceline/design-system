@@ -2,15 +2,16 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
 import { HTMLMotionProps, Transition, motion } from 'framer-motion'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import { overflowX, overflowY, zIndex } from 'styled-system'
-import { Box } from '../Box/Box'
 import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
 import { Grid } from '../Grid/Grid'
 import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { type DialogProps } from './Dialog'
+import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
+import { Box } from '../Box/Box'
 
 /** @public */
 export const dialogSizes = ['sm', 'md', 'lg', 'xl', 'full'] as const
@@ -56,14 +57,9 @@ const FloatingCloseButton: (
   props: { dialogSize: DialogSize } & Partial<CloseButtonProps> & Partial<DialogProps>
 ) => JSX.Element = styled(CloseButton)`
   position: absolute;
-  top: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
-  right: ${(props) => -((props.dialogSize === 'full' || props.fullWidth ? 0 : 16) + 10)}px;
-  margin: ${(props) => themeGet('space.3')(props)};
-  padding: ${(props) => themeGet('space.2')(props)};
+  top: ${(props) => (props.dialogSize === 'full' || props.fullWidth ? 8 : -12)}px;
+  right: ${(props) => (props.dialogSize === 'full' || props.fullWidth ? 8 : -12)}px;
   z-index: ${(props) => themeGet('zIndices.absolute')(props)};
-  &:hover {
-    background-color: ${(props) => themeGet('palette.background.lightest')(props)};
-  }
 `
 
 const DialogOverlayWrapper = styled(motion.div)`
@@ -102,10 +98,16 @@ const DialogContentWrapper = styled(motion.div)`
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
   box-shadow: ${(props: DialogProps) => themeGet('shadows.overlay-lg')(props)};
+  overflow: ${(props: DialogProps) => (props.sheet ? 'scroll' : 'visible')};
 `
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+
   ${overflowX}
   ${overflowY}
   border-radius: ${(props: DialogProps) =>
@@ -139,13 +141,19 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
   )
 }
 
+const SmoothTransitionBox = styled(Box)`
+  overflow: scroll;
+  transition: all 0.3s ease-in-out;
+`
+
 export const DialogContent = ({
   ariaDescription,
   ariaTitle,
   borderRadius,
   children,
+  footerContent,
   fullWidth,
-  headerColorScheme,
+  headerColorScheme = 'heading',
   headerContent,
   headerIcon,
   headerShowCloseButton,
@@ -158,6 +166,7 @@ export const DialogContent = ({
   onOpenChange,
   overflowX,
   overflowY,
+  showScrollShadow,
 }: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
@@ -167,6 +176,8 @@ export const DialogContent = ({
     headerIcon ? 'heading4' : 'heading3', // xl
     headerIcon ? 'heading4' : 'heading3', // xxl
   ] as const
+
+  const { boxShadow, onScrollHandler } = useScrollWithShadow()
 
   return (
     <Dialog.Content
@@ -189,14 +200,7 @@ export const DialogContent = ({
       >
         {showCloseButton && (
           <Dialog.Close asChild>
-            <FloatingCloseButton
-              color='primary.base'
-              bgColor='background.lightest'
-              boxShadowSize='sm'
-              dialogSize={size}
-              sheet={sheet}
-              fullWidth={fullWidth}
-            />
+            <FloatingCloseButton dialogSize={size} fullWidth={fullWidth} variant='filled' />
           </Dialog.Close>
         )}
 
@@ -214,22 +218,50 @@ export const DialogContent = ({
         >
           {headerContent && (
             <Grid
-              colorScheme={headerColorScheme}
               px={[3, 3, 3, 3, '24px', '24px']}
               py={3}
-              gap={2}
               autoFlow='column'
-              templateColumns={headerIcon ? 'auto 1fr auto' : '1fr auto'}
+              templateColumns='auto 1fr'
               alignItems='center'
+              colorScheme={headerColorScheme}
             >
-              {headerIcon && <Grid placeItems='center'>{headerIcon}</Grid>}
-              <Text textStyle={size === 'sm' ? (headerIcon ? 'heading5' : 'heading4') : headerSizeArray}>
-                {headerContent}
-              </Text>
-              <Box>{headerShowCloseButton && <CloseButton onClick={() => onOpenChange(false)} />}</Box>
+              <Grid autoFlow='column' gap='2'>
+                {headerIcon}
+                <Text textStyle={size === 'sm' ? (headerIcon ? 'heading5' : 'heading4') : headerSizeArray}>
+                  {headerContent}
+                </Text>
+              </Grid>
+              <Grid justifySelf='end'>
+                {headerShowCloseButton && <CloseButton onClick={() => onOpenChange(false)} />}
+              </Grid>
             </Grid>
           )}
-          {children}
+          {showScrollShadow ? (
+            <SmoothTransitionBox style={{ boxShadow }} height='100%' onScroll={onScrollHandler}>
+              {React.Children.map(children, (child) =>
+                React.cloneElement(child as ReactElement, {
+                  onScroll: onScrollHandler,
+                })
+              )}
+            </SmoothTransitionBox>
+          ) : (
+            <Box height='100%' style={{ overflowY: 'scroll' }}>
+              {children}
+            </Box>
+          )}
+          {footerContent && (
+            <Box boxShadow={showScrollShadow ? 'lg' : 'none'} color='background.lightest'>
+              <Grid
+                px={[3, 3, 3, 3, '24px', '24px']}
+                py={3}
+                autoFlow='column'
+                templateColumns='1fr'
+                alignItems='center'
+              >
+                {footerContent}
+              </Grid>
+            </Box>
+          )}
         </DialogInnerContentWrapper>
       </DialogContentWrapper>
     </Dialog.Content>
