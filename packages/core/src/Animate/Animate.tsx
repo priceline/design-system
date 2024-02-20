@@ -32,6 +32,7 @@ export type MotionVariant =
   | 'slideOutLeft'
   | 'slideInLeft'
   | 'slideInTop'
+  | 'slideOutTop'
   | 'slideInBottom'
   | 'slideInRight'
 
