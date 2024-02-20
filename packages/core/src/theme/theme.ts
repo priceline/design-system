@@ -61,7 +61,8 @@ addAliases(mediaQueries, aliases)
 /**
  * @public
  */
-export const space = [0, 4, 8, 16, 32, 64, 128].map((n) => n + 'px')
+export const spaceValues = [0, 4, 8, 16, 32, 64, 128]
+export const space = spaceValues.map((n) => n + 'px')
 
 /**
  * @public

@@ -31,6 +31,8 @@ export type MotionVariant =
   | 'scaleOnTap'
   | 'slideOutLeft'
   | 'slideInLeft'
+  | 'slideInTop'
+  | 'slideOutTop'
 
 /**
  * @public
@@ -78,6 +80,14 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   slideInLeft: {
     initial: { opacity: 0, x: '-100%' },
     animate: { opacity: 1, x: 0 },
+  },
+  slideInTop: {
+    initial: { opacity: 0, y: '-100%' },
+    animate: { opacity: 1, y: 0 },
+  },
+  slideOutTop: {
+    initial: { opacity: 1, y: 0 },
+    animate: { opacity: 0, y: '-100%' },
   },
 }
 

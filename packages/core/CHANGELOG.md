@@ -1,6 +1,28 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 07 Feb 2024 16:01:30 GMT and should not be manually modified.
+This log was last generated on Fri, 16 Feb 2024 20:06:38 GMT and should not be manually modified.
+
+## 6.4.0
+Fri, 16 Feb 2024 20:06:38 GMT
+
+### Minor changes
+
+- Add footerContent to Dialog
+- Update Dialog close button to use CloseButton and change default heading color
+- Add prop to Dialog to show a shadow above its contents on scroll
+
+### Patches
+
+- update orange color to orange dark
+- Update checkbox states
+
+## 6.3.0
+Fri, 09 Feb 2024 15:27:23 GMT
+
+### Minor changes
+
+- Change Layout implementation from Flex to Grid
+- ToastProvider: update to allow animations to come in from the top
 
 ## 6.2.3
 Wed, 07 Feb 2024 16:01:30 GMT

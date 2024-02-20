@@ -15,6 +15,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   borderRadius?: BorderRadius
   children?: React.ReactNode
   defaultOpen?: boolean
+  footerContent?: React.ReactNode
   fullWidth?: boolean
   headerColorScheme?: keyof ColorSchemes
   headerContent?: string | React.ReactNode
@@ -30,6 +31,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   triggerNode?: React.ReactNode
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
+  showScrollShadow?: boolean
 }
 
 /**
@@ -41,8 +43,9 @@ const PclnDialog = ({
   borderRadius = '2xl',
   children,
   defaultOpen = false,
+  footerContent,
   fullWidth = false,
-  headerColorScheme = 'neutralDarkOnLightest',
+  headerColorScheme = 'heading',
   headerContent,
   headerIcon,
   headerShowCloseButton = false,
@@ -58,6 +61,7 @@ const PclnDialog = ({
   overflowX = 'auto',
   overflowY = 'auto',
   onOpenChange,
+  showScrollShadow,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
@@ -80,6 +84,7 @@ const PclnDialog = ({
               ariaDescription={ariaDescription}
               ariaTitle={ariaTitle}
               borderRadius={borderRadius}
+              footerContent={footerContent}
               fullWidth={fullWidth}
               headerColorScheme={headerColorScheme}
               headerContent={headerContent}
@@ -91,6 +96,7 @@ const PclnDialog = ({
               sheet={sheet}
               showCloseButton={showCloseButton}
               size={size}
+              showScrollShadow={showScrollShadow}
             >
               {children}
             </DialogContent>

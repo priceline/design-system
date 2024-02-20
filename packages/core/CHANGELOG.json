@@ -2,6 +2,61 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.4.0",
+      "tag": "pcln-design-system_v6.4.0",
+      "date": "Fri, 16 Feb 2024 20:06:38 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add footerContent to Dialog",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "a55392fe543341be9f054d35d2df0994d7966e74"
+          },
+          {
+            "comment": "Update Dialog close button to use CloseButton and change default heading color",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "55c1d37c2db59c373983af0ca3beee3378f98f93"
+          },
+          {
+            "comment": "Add prop to Dialog to show a shadow above its contents on scroll",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "55c1d37c2db59c373983af0ca3beee3378f98f93"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "update orange color to orange dark",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "55c1d37c2db59c373983af0ca3beee3378f98f93"
+          },
+          {
+            "comment": "Update checkbox states",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "55c1d37c2db59c373983af0ca3beee3378f98f93"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.3.0",
+      "tag": "pcln-design-system_v6.3.0",
+      "date": "Fri, 09 Feb 2024 15:27:23 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Change Layout implementation from Flex to Grid",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "761b8a7fcdf31169e3dc32230390cf36ea7923b9"
+          },
+          {
+            "comment": "ToastProvider: update to allow animations to come in from the top",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "a732e529d95e77f28b42c09adf18faa05cc7f3b9"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.3",
       "tag": "pcln-design-system_v6.2.3",
       "date": "Wed, 07 Feb 2024 16:01:30 GMT",

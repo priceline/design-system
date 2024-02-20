@@ -53,7 +53,7 @@ export const Tab = ({
   tabGap,
   isTransparent = false,
   dynamicTabWidth = false,
-  ariaLabel = 'PCLN Tabs',
+  ariaLabel = 'Tabs',
   defaultValue = tabsData[0].id,
   buttonChipProps,
 }: TabProps) => {
