@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Carousel: add in arrowsAlignment and nodeBesideArrows props",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

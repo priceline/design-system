@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from 'testing-library'
-import { Flex } from 'pcln-design-system'
+import { Flex, Badge } from 'pcln-design-system'
 import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils'
 import { Carousel } from './Carousel'
 
@@ -95,5 +95,40 @@ describe('Carousel', () => {
     )
     const nextArrow = getByTestId('next-side')
     expect(nextArrow).toHaveStyleRule('opacity', '0')
+  })
+
+  it('Should render the nodeBesideArrows', () => {
+    window.innerWidth = 1400
+    const { getByText } = render(
+      <Carousel
+        layout='50-50'
+        arrowsPosition='bottom'
+        arrowsAlignment='left'
+        currentSlide={1}
+        nodeBesideArrows={<Badge>Hello</Badge>}
+      >
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    expect(getByText('Hello')).toBeInTheDocument()
+  })
+
+  it('Should NOT render the nodeBesideArrows when arrow center aligment bottom', () => {
+    window.innerWidth = 1400
+    const { queryByText } = render(
+      <Carousel
+        layout='50-50'
+        arrowsPosition='bottom'
+        currentSlide={1}
+        nodeBesideArrows={<Badge>Hello</Badge>}
+      >
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    expect(queryByText('Hello')).not.toBeInTheDocument()
   })
 })

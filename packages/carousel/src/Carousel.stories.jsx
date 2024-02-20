@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
-import { Flex, Card, Container, Image, Text, Box, BackgroundImage } from 'pcln-design-system'
+import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Badge } from 'pcln-design-system'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
 import { Carousel } from './Carousel'
@@ -120,12 +120,29 @@ Basic.args = {
   mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
-  arrowPositions: 'bottom',
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
 }
 Basic.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement)
+
+  expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
+}
+
+export const NodesByArrows = BasicTemplate.bind({})
+NodesByArrows.args = {
+  visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
+  showDots: false,
+  showForwardBackBtns: true,
+  onSlideChange: action('Slide Change'),
+  buttonSize: '60px',
+  arrowsPosition: 'bottom',
+  nodeBesideArrows: <Badge>More Content</Badge>,
+  arrowsAlignment: 'right',
+}
+NodesByArrows.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
 
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
