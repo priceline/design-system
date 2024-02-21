@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Revert close button changes on Toast",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
