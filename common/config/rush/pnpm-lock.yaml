@@ -287,6 +287,9 @@ importers:
       pcln-icons:
         specifier: workspace:*
         version: link:../icons
+      pcln-popover:
+        specifier: workspace:*
+        version: link:../popover
       react:
         specifier: ^18.2.0
         version: 18.2.0

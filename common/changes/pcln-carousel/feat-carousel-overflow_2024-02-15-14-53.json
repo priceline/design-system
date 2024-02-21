@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Carousel and SlideBox: add in new props to allow overflow to display on x, y, and top ",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
