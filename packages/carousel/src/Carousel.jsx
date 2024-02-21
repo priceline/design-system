@@ -63,7 +63,8 @@ export const Carousel = ({
   displayArrowsMobile,
   buttonSize = '60px',
   showArrowsOnHover = false,
-  nodeBesideArrows,
+  nodeBesideArrowsLeft,
+  nodeBesideArrowsRight,
   arrowsAlignment = 'center',
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
@@ -105,9 +106,9 @@ export const Carousel = ({
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' alignItems='center' mb={2} mr={slideSpacing}>
-            {nodeBesideArrows ? (
+            {nodeBesideArrowsLeft ? (
               <Box ml={2} mr='auto'>
-                {nodeBesideArrows}
+                {nodeBesideArrowsLeft}
               </Box>
             ) : null}
             <ArrowButton type='prev' position='top' setPosition={arrowsPosition} buttonSize={buttonSize} />
@@ -191,9 +192,9 @@ export const Carousel = ({
         </Relative>
         {arrowsPosition === 'bottom' || showDots ? (
           <Flex alignItems='center' justifyContent={ARROW_JUSTIFY_CONTENT[arrowsAlignment]} pt={2}>
-            {nodeBesideArrows && arrowsAlignment === 'right' ? (
+            {nodeBesideArrowsLeft && arrowsAlignment === 'right' ? (
               <Box ml={2} mr='auto'>
-                {nodeBesideArrows}
+                {nodeBesideArrowsLeft}
               </Box>
             ) : null}
             <ArrowButton
@@ -209,9 +210,9 @@ export const Carousel = ({
               position='bottom'
               setPosition={arrowsPosition}
             />
-            {nodeBesideArrows && arrowsAlignment === 'left' ? (
+            {nodeBesideArrowsRight && arrowsAlignment === 'left' ? (
               <Box mr={2} ml='auto'>
-                {nodeBesideArrows}
+                {nodeBesideArrowsRight}
               </Box>
             ) : null}
           </Flex>
@@ -278,8 +279,10 @@ Carousel.propTypes = {
   buttonSize: PropTypes.string,
   /** When arrow position is side, hide arrows and shows when hovers on carousel */
   showArrowsOnHover: PropTypes.bool,
-  /** Node that will display beside the arrows (available if arrows are top, bottomRight or bottomLeft) */
-  nodeBesideArrows: PropTypes.node,
-  /** String "left" or "right" (only available if arrowsPosition is set to "bottom") */
+  /** Node that will display to the left of the arrows (available if arrows are top, bottom-right) */
+  nodeBesideArrowsLeft: PropTypes.node,
+  /** Node that will display to the left of the arrows (availalbe if arrows are bottom-left) */
+  nodeBesideArrowsRight: PropTypes.node,
+  /** String "left" or "right" or "center" (only available if arrowsPosition is set to "bottom") */
   arrowsAlignment: PropTypes.oneOf(['left', 'right', 'center']),
 }

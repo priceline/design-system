@@ -139,7 +139,8 @@ NodesByArrows.args = {
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
   arrowsPosition: 'bottom',
-  nodeBesideArrows: <Badge>More Content</Badge>,
+  nodeBesideArrowsLeft: <Badge>Left Content</Badge>,
+  nodeBesideArrowsRight: <Badge>Right Content</Badge>,
   arrowsAlignment: 'right',
 }
 NodesByArrows.play = async ({ canvasElement }) => {

@@ -97,15 +97,15 @@ describe('Carousel', () => {
     expect(nextArrow).toHaveStyleRule('opacity', '0')
   })
 
-  it('Should render the nodeBesideArrows', () => {
+  it('Should render the nodeBesideArrowsLeft', () => {
     window.innerWidth = 1400
     const { getByText } = render(
       <Carousel
         layout='50-50'
         arrowsPosition='bottom'
-        arrowsAlignment='left'
+        arrowsAlignment='right'
         currentSlide={1}
-        nodeBesideArrows={<Badge>Hello</Badge>}
+        nodeBesideArrowsLeft={<Badge>Hello</Badge>}
       >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
@@ -115,14 +115,14 @@ describe('Carousel', () => {
     expect(getByText('Hello')).toBeInTheDocument()
   })
 
-  it('Should NOT render the nodeBesideArrows when arrow center aligment bottom', () => {
+  it('Should NOT render the nodeBesideArrowsLeft when arrow center aligment bottom', () => {
     window.innerWidth = 1400
     const { queryByText } = render(
       <Carousel
         layout='50-50'
         arrowsPosition='bottom'
         currentSlide={1}
-        nodeBesideArrows={<Badge>Hello</Badge>}
+        nodeBesideArrowsLeft={<Badge>Hello</Badge>}
       >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
