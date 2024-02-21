@@ -1,7 +1,8 @@
+import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { argTypes, defaultArgs } from './Menu.stories.args'
 import { Bed as BedIcon } from 'pcln-icons'
-import { Box, ButtonChip, Dialog, Divider, Flex, Link, Text } from 'pcln-design-system'
+import { Box, Button, ButtonChip, Dialog, Divider, Flex, Link, Text } from 'pcln-design-system'
 import { listItems, currencies } from '../../test/mocks/Menu'
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
@@ -193,15 +194,22 @@ export const UsingButtonPropsPropForStylingButtonText = () => (
   </Menu>
 )
 
-export const InDialog = () => (
-  <Dialog open size='md'>
-    <Box height={200} p={4}>
-      <Menu width={300} buttonText='Menu'>
-        <MenuItems />
-      </Menu>
-    </Box>
-  </Dialog>
-)
+export const InDialog = {
+  render: () => (
+    <Dialog size='md' triggerNode={<Button>Open Menu</Button>}>
+      <Box height={200} p={4}>
+        <Menu width={300} buttonText='Menu'>
+          <MenuItems />
+        </Menu>
+      </Box>
+    </Dialog>
+  ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const openButton = canvas.getByText('Open Menu')
+    await userEvent.click(openButton)
+  },
+}
 
 export const CustomMenuWithoutMenuItems = () => {
   return (
