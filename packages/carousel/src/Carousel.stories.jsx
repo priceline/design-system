@@ -198,9 +198,9 @@ OverflowAllowed.args = {
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
-  overflowAllowanceX: 46,
-  overflowAllowanceY: 20,
-  overflowAllowanceTop: 2,
+  overflowAllowancePxX: 46,
+  overflowAllowancePxY: 20,
+  overflowAllowancePxTop: 2,
   maxHeight: 220,
 }
 
@@ -231,9 +231,9 @@ OverflowBackground.args = {
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
-  overflowAllowanceX: 8,
-  overflowAllowanceY: 20,
-  overflowAllowanceTop: 2,
+  overflowAllowancePxX: 8,
+  overflowAllowancePxY: 20,
+  overflowAllowancePxTop: 2,
   maxHeight: 220,
 }
 

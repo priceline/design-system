@@ -111,27 +111,27 @@ export const CarouselWrapper = styled.div`
   .horizontalSlider___281Ls {
     position: relative;
     overflow: hidden;
-    ${({ overflowAllowanceX }) =>
-      overflowAllowanceX
+    ${({ overflowAllowancePxX }) =>
+      overflowAllowancePxX
         ? `
-        padding-left: ${overflowAllowanceX}px;
-        margin-left: -${overflowAllowanceX}px;
-        padding-right: ${overflowAllowanceX}px;
-        margin-right: -${overflowAllowanceX}px;
+        padding-left: ${overflowAllowancePxX}px;
+        margin-left: -${overflowAllowancePxX}px;
+        padding-right: ${overflowAllowancePxX}px;
+        margin-right: -${overflowAllowancePxX}px;
       `
         : ''}
-    ${({ overflowAllowanceY, overflowAllowanceTop }) =>
-      overflowAllowanceY || overflowAllowanceTop
+    ${({ overflowAllowancePxY, overflowAllowancePxTop }) =>
+      overflowAllowancePxY || overflowAllowancePxTop
         ? `
-        padding-top: ${overflowAllowanceTop || overflowAllowanceY}px;
-        transform: translateY(-${overflowAllowanceTop || overflowAllowanceY}px);
+        padding-top: ${overflowAllowancePxTop || overflowAllowancePxY}px;
+        transform: translateY(-${overflowAllowancePxTop || overflowAllowancePxY}px);
       `
         : ''}
-    ${({ overflowAllowanceY }) =>
-      overflowAllowanceY
+    ${({ overflowAllowancePxY }) =>
+      overflowAllowancePxY
         ? `
-      padding-bottom: ${overflowAllowanceY}px;
-      margin-bottom: -${overflowAllowanceY}px;
+      padding-bottom: ${overflowAllowancePxY}px;
+      margin-bottom: -${overflowAllowancePxY}px;
     `
         : ''}
   }

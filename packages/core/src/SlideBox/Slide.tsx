@@ -12,7 +12,7 @@ export type SlideProps = BoxProps & {
   isCurrentSlide: boolean
   numSlides: number
   slideBoxRef: React.RefObject<HTMLDivElement>
-  overflowAllowanceX?: number
+  overflowAllowancePxX?: number
 }
 
 export function Slide({
@@ -25,7 +25,7 @@ export function Slide({
   width,
   numSlides,
   slideBoxRef,
-  overflowAllowanceX,
+  overflowAllowancePxX,
 }: SlideProps): JSX.Element {
   const ref = useRef()
 
@@ -34,7 +34,7 @@ export function Slide({
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
       const { offsetLeft, offsetParent, offsetWidth } = ref.current
       const { offsetWidth: parentOffset } = offsetParent || {}
-      slideBoxRef?.current?.scroll({ left: offsetLeft - parentOffset + offsetWidth + overflowAllowanceX })
+      slideBoxRef?.current?.scroll({ left: offsetLeft - parentOffset + offsetWidth + overflowAllowancePxX })
     }
   }, [isCurrentSlide, ref])
 

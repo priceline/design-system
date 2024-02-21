@@ -25,8 +25,8 @@ describe('SlideBox', () => {
         slideSpacing={2}
         currentSlideOverride={2}
         arrowPosition='side'
-        overflowAllowanceX={20}
-        overflowAllowanceY={40}
+        overflowAllowancePxX={20}
+        overflowAllowancePxY={40}
       >
         <Box key='testkey'>1</Box>
         <Box>2</Box>
@@ -46,7 +46,7 @@ describe('SlideBox', () => {
         onSlideChange={slideChange}
         slideSpacing={2}
         arrowPosition='bottom'
-        overflowAllowanceTop={10}
+        overflowAllowancePxTop={10}
       >
         <Box>1</Box>
         <Box>2</Box>

@@ -32,8 +32,8 @@ describe('Carousel', () => {
         onSlideChange={onSlideChange}
         onSlideClick={onSlideClick}
         onSlideKeyDown={onSlideKeyDown}
-        overflowAllowanceX={20}
-        overflowAllowanceY={40}
+        overflowAllowancePxX={20}
+        overflowAllowancePxY={40}
       >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
@@ -82,7 +82,7 @@ describe('Carousel', () => {
         layout='50-50'
         arrowsPosition='bottom'
         currentSlide={1}
-        overflowAllowanceTop={10}
+        overflowAllowancePxTop={10}
         maxHeight={220}
       >
         <Flex>Slide 1</Flex>
