@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
-import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Relative } from 'pcln-design-system'
+import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Relative, Badge } from 'pcln-design-system'
 import Popover from 'pcln-popover'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
@@ -121,7 +121,6 @@ Basic.args = {
   mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
-  arrowPositions: 'bottom',
   onSlideChange: action('Slide Change'),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
@@ -235,6 +234,25 @@ OverflowBackground.args = {
   overflowAllowancePxY: 20,
   overflowAllowancePxTop: 2,
   maxHeight: 220,
+}
+
+export const NodesByArrows = BasicTemplate.bind({})
+NodesByArrows.args = {
+  visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
+  showDots: false,
+  showForwardBackBtns: true,
+  onSlideChange: action('Slide Change'),
+  buttonSize: '60px',
+  arrowsPosition: 'bottom',
+  nodeBesideArrowsLeft: <Badge>Left Content</Badge>,
+  nodeBesideArrowsRight: <Badge>Right Content</Badge>,
+  arrowsAlignment: 'right',
+}
+NodesByArrows.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement)
+
+  expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 
 //Show Arrows On Hover

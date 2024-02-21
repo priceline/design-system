@@ -13,7 +13,7 @@ import {
   getMobileVisibleSlides,
 } from './helpers'
 import { RenderInView } from './RenderInView'
-import { CAROUSEL_BREAKPOINT_1 } from './constants'
+import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -63,6 +63,9 @@ export const Carousel = ({
   displayArrowsMobile,
   buttonSize = '60px',
   showArrowsOnHover = false,
+  nodeBesideArrowsLeft,
+  nodeBesideArrowsRight,
+  arrowsAlignment = 'center',
   overflowAllowancePxX = 0,
   overflowAllowancePxY = 0,
   overflowAllowancePxTop = 0,
@@ -117,7 +120,12 @@ export const Carousel = ({
       >
         <ChangeDetector onSlideChange={onSlideChange} />
         {arrowsPosition === 'top' ? (
-          <Flex justifyContent='flex-end' mb={2} mr={slideSpacing}>
+          <Flex justifyContent='flex-end' alignItems='center' mb={2} mr={slideSpacing}>
+            {nodeBesideArrowsLeft ? (
+              <Box ml={2} mr='auto'>
+                {nodeBesideArrowsLeft}
+              </Box>
+            ) : null}
             <ArrowButton type='prev' position='top' setPosition={arrowsPosition} buttonSize={buttonSize} />
             <ArrowButton
               type='next'
@@ -200,10 +208,30 @@ export const Carousel = ({
           )}
         </Relative>
         {arrowsPosition === 'bottom' || showDots ? (
-          <Flex alignItems='center' justifyContent='center' pt={2}>
-            <ArrowButton mr={3} type='prev' position='bottom' setPosition={arrowsPosition} />
+          <Flex alignItems='center' justifyContent={ARROW_JUSTIFY_CONTENT[arrowsAlignment]} pt={2}>
+            {nodeBesideArrowsLeft && arrowsAlignment === 'right' ? (
+              <Box ml={2} mr='auto'>
+                {nodeBesideArrowsLeft}
+              </Box>
+            ) : null}
+            <ArrowButton
+              mr={ARROW_MARGIN[arrowsAlignment]}
+              type='prev'
+              position='bottom'
+              setPosition={arrowsPosition}
+            />
             {showDots && <Dots />}
-            <ArrowButton ml={3} type='next' position='bottom' setPosition={arrowsPosition} />
+            <ArrowButton
+              ml={ARROW_MARGIN[arrowsAlignment]}
+              type='next'
+              position='bottom'
+              setPosition={arrowsPosition}
+            />
+            {nodeBesideArrowsRight && arrowsAlignment === 'left' ? (
+              <Box mr={2} ml='auto'>
+                {nodeBesideArrowsRight}
+              </Box>
+            ) : null}
           </Flex>
         ) : null}
       </CarouselProvider>
@@ -268,6 +296,12 @@ Carousel.propTypes = {
   buttonSize: PropTypes.string,
   /** When arrow position is side, hide arrows and shows when hovers on carousel */
   showArrowsOnHover: PropTypes.bool,
+  /** Node that will display to the left of the arrows (available if arrows are top, bottom-right) */
+  nodeBesideArrowsLeft: PropTypes.node,
+  /** Node that will display to the left of the arrows (availalbe if arrows are bottom-left) */
+  nodeBesideArrowsRight: PropTypes.node,
+  /** String "left" or "right" or "center" (only available if arrowsPosition is set to "bottom") */
+  arrowsAlignment: PropTypes.oneOf(['left', 'right', 'center']),
   /** Number of px to allow overflow on top and bottom of Carousel to display things like shadows */
   overflowAllowancePxY: PropTypes.number,
   /** Number of px to allow overflow on left and right to display things like shadows */
