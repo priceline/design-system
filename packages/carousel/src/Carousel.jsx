@@ -66,11 +66,18 @@ export const Carousel = ({
   nodeBesideArrowsLeft,
   nodeBesideArrowsRight,
   arrowsAlignment = 'center',
+  overflowAllowancePxX = 0,
+  overflowAllowancePxY = 0,
+  overflowAllowancePxTop = 0,
+  maxHeight,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
   const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
+  const overflowAdjust = overflowAllowancePxTop
+    ? (overflowAllowancePxTop + overflowAllowancePxY) / 2
+    : overflowAllowancePxY
 
   if (!displayArrowsMobile && browserWidth < CAROUSEL_BREAKPOINT_1) {
     return (
@@ -81,6 +88,9 @@ export const Carousel = ({
         onSlideChange={onSlideChange}
         visibleSlides={mobileVisibleSlides || getMobileVisibleSlides(visibleSlides)}
         currentSlideOverride={currentSlide}
+        overflowAllowancePxX={overflowAllowancePxX}
+        overflowAllowancePxY={overflowAllowancePxY}
+        overflowAllowancePxTop={overflowAllowancePxTop}
       >
         {React.Children.map(children, (item) => item)}
       </SlideBox>
@@ -88,7 +98,12 @@ export const Carousel = ({
   }
 
   return (
-    <CarouselWrapper>
+    <CarouselWrapper
+      overflowAllowancePxX={overflowAllowancePxX}
+      overflowAllowancePxY={overflowAllowancePxY}
+      overflowAllowancePxTop={overflowAllowancePxTop}
+      maxHeight={maxHeight}
+    >
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
@@ -133,6 +148,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
+              overflowAdjust={overflowAdjust}
               ml={sideButtonMargin}
               pl={slideSpacing}
               type='prev'
@@ -180,6 +196,7 @@ export const Carousel = ({
             })
           ) : (
             <ArrowButton
+              overflowAdjust={overflowAdjust}
               mr={sideButtonMargin}
               pr={slideSpacing}
               type='next'
@@ -285,4 +302,12 @@ Carousel.propTypes = {
   nodeBesideArrowsRight: PropTypes.node,
   /** String "left" or "right" or "center" (only available if arrowsPosition is set to "bottom") */
   arrowsAlignment: PropTypes.oneOf(['left', 'right', 'center']),
+  /** Number of px to allow overflow on top and bottom of Carousel to display things like shadows */
+  overflowAllowancePxY: PropTypes.number,
+  /** Number of px to allow overflow on left and right to display things like shadows */
+  overflowAllowancePxX: PropTypes.number,
+  /** Number of px to allow oveflow on top (will override the overflowAllowancePxY value for top) */
+  overflowAllowancePxTop: PropTypes.number,
+  /** Number of px to set maxHeight to counteract large overflow values*/
+  maxHeight: PropTypes.number,
 }

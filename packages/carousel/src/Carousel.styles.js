@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const CarouselWrapper = styled.div`
+  ${({ maxHeight }) => (maxHeight ? `max-height: ${maxHeight}px;` : '')}
   .buttonBack___1mlaL,
   .buttonFirst___2rhFr,
   .buttonLast___2yuh0,
@@ -110,6 +111,29 @@ export const CarouselWrapper = styled.div`
   .horizontalSlider___281Ls {
     position: relative;
     overflow: hidden;
+    ${({ overflowAllowancePxX }) =>
+      overflowAllowancePxX
+        ? `
+        padding-left: ${overflowAllowancePxX}px;
+        margin-left: -${overflowAllowancePxX}px;
+        padding-right: ${overflowAllowancePxX}px;
+        margin-right: -${overflowAllowancePxX}px;
+      `
+        : ''}
+    ${({ overflowAllowancePxY, overflowAllowancePxTop }) =>
+      overflowAllowancePxY || overflowAllowancePxTop
+        ? `
+        padding-top: ${overflowAllowancePxTop || overflowAllowancePxY}px;
+        transform: translateY(-${overflowAllowancePxTop || overflowAllowancePxY}px);
+      `
+        : ''}
+    ${({ overflowAllowancePxY }) =>
+      overflowAllowancePxY
+        ? `
+      padding-bottom: ${overflowAllowancePxY}px;
+      margin-bottom: -${overflowAllowancePxY}px;
+    `
+        : ''}
   }
   [dir='rtl'] .horizontalSlider___281Ls {
     direction: ltr;

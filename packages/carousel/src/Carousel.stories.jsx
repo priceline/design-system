@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
-import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Badge } from 'pcln-design-system'
+import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Relative, Badge } from 'pcln-design-system'
+import Popover from 'pcln-popover'
 import styled from 'styled-components'
 import { action } from '@storybook/addon-actions'
 import { Carousel } from './Carousel'
@@ -130,6 +131,111 @@ Basic.play = async ({ canvasElement }) => {
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 
+const SimpleTextContent = () => (
+  <Text textAlign='center' py={5}>
+    Popover!
+  </Text>
+)
+
+const CardWithPopover = () => {
+  return (
+    <Card borderRadius={20} boxShadowSize='lg' borderWidth={0} p={4} height='200px' bg='background.lightest'>
+      <Popover
+        renderContent={SimpleTextContent}
+        ariaLabel='Test Popover'
+        idx={1}
+        width={150}
+        isOpen={false}
+        openOnHover
+        placement='top'
+      >
+        <Box>Hover for Popover</Box>
+      </Popover>
+    </Card>
+  )
+}
+//Overflow Template
+function renderOverflowCards() {
+  return Array.from(Array(SLIDE_COUNT)).map((_, idx) => <CardWithPopover key={idx} />)
+}
+
+const OverflowTemplate = (args) => (
+  <Box>
+    <Relative
+      width={1}
+      bg='background.light'
+      zIndex={2}
+      height='80px'
+      borderRadius='xl'
+      mb={[3, 3, 3, 4]}
+      mx={2}
+    >
+      Above
+    </Relative>
+    <Carousel {...args}>{renderOverflowCards()}</Carousel>
+    <Relative
+      width={1}
+      bg='background.light'
+      zIndex={3}
+      height='80px'
+      borderRadius='xl'
+      mt={[3, 3, 3, 4]}
+      mx={2}
+    >
+      Below
+    </Relative>
+  </Box>
+)
+
+export const OverflowAllowed = OverflowTemplate.bind({})
+OverflowAllowed.args = {
+  visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
+  showDots: false,
+  showForwardBackBtns: true,
+  arrowPositions: 'bottom',
+  onSlideChange: action('Slide Change'),
+  buttonSize: '60px',
+  sideButtonMargin: '-30px',
+  overflowAllowancePxX: 46,
+  overflowAllowancePxY: 20,
+  overflowAllowancePxTop: 2,
+  maxHeight: 220,
+}
+
+//Overflow With backround
+const OverflowBackgroundTemplate = (args) => (
+  <Box>
+    <Relative width={1} bg='background.light' zIndex={2} height='80px' borderRadius='xl'>
+      Above
+    </Relative>
+
+    <Relative zIndex={2} bg='primary.light' px={2} py={2} borderRadius='xl' my={4}>
+      <Carousel {...args}>{renderOverflowCards()}</Carousel>
+    </Relative>
+
+    <Relative width={1} bg='background.light' zIndex={3} height='80px' borderRadius='xl'>
+      Below
+    </Relative>
+  </Box>
+)
+
+export const OverflowBackground = OverflowBackgroundTemplate.bind({})
+OverflowBackground.args = {
+  visibleSlides: 3.1,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
+  showDots: false,
+  showForwardBackBtns: true,
+  arrowPositions: 'bottom',
+  onSlideChange: action('Slide Change'),
+  buttonSize: '60px',
+  sideButtonMargin: '-30px',
+  overflowAllowancePxX: 8,
+  overflowAllowancePxY: 20,
+  overflowAllowancePxTop: 2,
+  maxHeight: 220,
+}
+
 export const NodesByArrows = BasicTemplate.bind({})
 NodesByArrows.args = {
   visibleSlides: 3,
@@ -149,6 +255,7 @@ NodesByArrows.play = async ({ canvasElement }) => {
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 
+//Show Arrows On Hover
 export const ShowArrowsOnHover = BasicTemplate.bind({})
 ShowArrowsOnHover.args = {
   visibleSlides: 3.15,

@@ -32,6 +32,8 @@ describe('Carousel', () => {
         onSlideChange={onSlideChange}
         onSlideClick={onSlideClick}
         onSlideKeyDown={onSlideKeyDown}
+        overflowAllowancePxX={20}
+        overflowAllowancePxY={40}
       >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
@@ -75,7 +77,14 @@ describe('Carousel', () => {
   it('Should NOT render SlideBox for mobile sizes with displayArrowsMobile = true', () => {
     window.innerWidth = 720
     const { queryByTestId } = render(
-      <Carousel displayArrowsMobile layout='50-50' arrowsPosition='bottom' currentSlide={1}>
+      <Carousel
+        displayArrowsMobile
+        layout='50-50'
+        arrowsPosition='bottom'
+        currentSlide={1}
+        overflowAllowancePxTop={10}
+        maxHeight={220}
+      >
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
         <Flex>Slide 3</Flex>

@@ -49,6 +49,8 @@ ArrowButton.propTypes = {
   buttonSize: PropTypes.string,
   /** When arrow position is side, hide arrows and shows when hovers on carousel */
   showArrowsOnHover: PropTypes.bool,
+  /** adjust side arrow position for overflow */
+  overflowAdjust: PropTypes.number,
 }
 
 export { ArrowButton }
