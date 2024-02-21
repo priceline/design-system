@@ -140,4 +140,22 @@ describe('Carousel', () => {
     )
     expect(queryByText('Hello')).not.toBeInTheDocument()
   })
+
+  it('Should render the nodeBesideArrowsRight when arrow right aligment bottom', () => {
+    window.innerWidth = 1400
+    const { getByText } = render(
+      <Carousel
+        layout='50-50'
+        arrowsPosition='bottom'
+        arrowsAlignment='left'
+        currentSlide={1}
+        nodeBesideArrowsRight={<Badge>Hello</Badge>}
+      >
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    expect(getByText('Hello')).toBeInTheDocument()
+  })
 })
