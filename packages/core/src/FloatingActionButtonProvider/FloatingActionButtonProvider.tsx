@@ -42,7 +42,7 @@ export const FloatingActionButtonProvider: React.FC<FloatingActionButtonProvider
         <Wrapper positionVariant={position} {...POSITION_STYLES[position]} {...props}>
           <Animate variant={animationVariant}>
             {floatingActionButtons.map((fab) => (
-              <FloatingActionButton isAbsolutePosition={false} {...fab} key={fab.key} />
+              <FloatingActionButton isAbsolutePosition={false} {...fab} key={fab.key} toolAlignment='right' />
             ))}
           </Animate>
         </Wrapper>
