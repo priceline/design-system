@@ -4,7 +4,7 @@ import { StoryStage } from '../DocsUtils/StoryStage/StoryStage'
 import { Tab, type TabProps } from './Tab'
 import { argTypes, defaultArgs } from './Tab.stories.args'
 import { Departure } from 'pcln-icons'
-import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
+import { DefaultContent, DefaultContent2, DefaultContent3 } from '../__test__/mocks/tabContent'
 
 type TabsStory = StoryObj<TabProps>
 

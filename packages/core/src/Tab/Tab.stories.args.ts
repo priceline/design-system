@@ -1,5 +1,5 @@
 import { TabProps } from './Tab'
-import { DefaultContent, DefaultContent2, DefaultContent3 } from './constants'
+import { DefaultContent, DefaultContent2, DefaultContent3 } from '../__test__/mocks/tabContent'
 
 export const defaultArgs: Partial<TabProps> = {
   size: 'md',
