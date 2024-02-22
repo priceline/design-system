@@ -24,6 +24,9 @@ export type SlideBoxProps = {
   arrowPosition?: ArrowPosition
   slideScrollNum?: number
   mobileSlideScrollNum?: number
+  overflowAllowancePxX?: number
+  overflowAllowancePxY?: number
+  overflowAllowancePxTop?: number
 }
 
 /**
@@ -42,6 +45,9 @@ export function SlideBox({
   arrowPosition = 'hide',
   slideScrollNum = 2,
   mobileSlideScrollNum = 1,
+  overflowAllowancePxX = 0,
+  overflowAllowancePxY = 4,
+  overflowAllowancePxTop,
 }: SlideBoxProps): JSX.Element {
   const childArray = React.Children.toArray(children)
   const ref = useRef()
@@ -63,7 +69,16 @@ export function SlideBox({
   return (
     <SlideBoxWrapper arrowPosition={arrowPosition}>
       <TopArrows arrowProps={arrowProps} arrowPosition={arrowPosition} />
-      <ScrollFlex width='100%' py={2} data-testid='slide-box' ref={ref}>
+      <ScrollFlex
+        data-testid='slide-box'
+        ref={ref}
+        pt={`${overflowAllowancePxTop || overflowAllowancePxY}px`}
+        mt={`-${overflowAllowancePxTop || overflowAllowancePxY}px`}
+        pb={`${overflowAllowancePxY}px`}
+        mb={`-${overflowAllowancePxY}px`}
+        px={`${overflowAllowancePxX}px`}
+        mx={`-${overflowAllowancePxX}px`}
+      >
         {childArray.map((item: string & React.JSX.Element, index: number) => (
           <Slide
             key={item.props.key || `slide${index}`}
@@ -76,6 +91,7 @@ export function SlideBox({
             isCurrentSlide={currentSlide === index}
             numSlides={childArray.length}
             slideBoxRef={ref}
+            overflowAllowancePxX={overflowAllowancePxX}
           />
         ))}
       </ScrollFlex>

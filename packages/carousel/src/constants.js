@@ -8,10 +8,24 @@ const CAROUSEL_BREAKPOINT_2 = 1024
 
 const MEDIA_QUERY_MATCH = `(max-width: ${CAROUSEL_BREAKPOINT_2}px) and (min-width: ${CAROUSEL_BREAKPOINT_1}px)`
 
+const ARROW_MARGIN = {
+  center: 3,
+  left: 2,
+  right: 2,
+}
+
+const ARROW_JUSTIFY_CONTENT = {
+  center: 'center',
+  left: 'flex-start',
+  right: 'flex-end',
+}
+
 export {
   VISIBLE_SLIDES_BREAKPOINT_1,
   VISIBLE_SLIDES_BREAKPOINT_2,
   CAROUSEL_BREAKPOINT_1,
   CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
+  ARROW_MARGIN,
+  ARROW_JUSTIFY_CONTENT,
 }
