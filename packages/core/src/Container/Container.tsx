@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '../Box/Box'
+import { Box, BoxProps } from '../Box/Box'
 
 const sizes = {
   sm: 640,
@@ -24,7 +24,7 @@ export type ContainerSize = 'sm' | 'md' | 'lg' | 'xl'
 /**
  * @public
  */
-export type ContainerProps = {
+export type ContainerProps = BoxProps & {
   children?: React.ReactNode
   maxWidth?: number
   size?: ContainerSize
