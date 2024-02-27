@@ -314,7 +314,7 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   opacity: 1;
 }
 
-.c10:disabled ~svg {
+.c10:disabled ~ svg {
   color: #4f6f8f;
 }
 
@@ -1057,7 +1057,7 @@ exports[`FormField renders with Select  1`] = `
   opacity: 1;
 }
 
-.c4:disabled ~svg {
+.c4:disabled ~ svg {
   color: #4f6f8f;
 }
 
@@ -1261,7 +1261,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   opacity: 1;
 }
 
-.c8:disabled ~svg {
+.c8:disabled ~ svg {
   color: #4f6f8f;
 }
 

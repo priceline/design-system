@@ -65,7 +65,7 @@ exports[`Select renders 1`] = `
   opacity: 1;
 }
 
-.c2:disabled ~svg {
+.c2:disabled ~ svg {
   color: #4f6f8f;
 }
 
