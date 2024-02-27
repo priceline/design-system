@@ -127,7 +127,13 @@ export {
 } from './RadioCheckToggleCard/RadioCheckToggleCard'
 export { RatingBadge, type RatingBadgeProps } from './RatingBadge/RatingBadge'
 export { Relative, type RelativeProps } from './Relative/Relative'
-export { Select, selectSizes, type SelectProps, type SelectSizes } from './Select/Select'
+export {
+  Select,
+  selectSizes,
+  type SelectProps,
+  type SelectSizes,
+  type SelectVariations,
+} from './Select/Select'
 export { ShadowEffect, ShadowOverlay, type ShadowEffectProps } from './ShadowEffect/ShadowEffect'
 export { Shimmer, type ShimmerProps } from './Shimmer/Shimmer'
 export { type ShimmerVariation, type ShimmerVariationType } from './Shimmer/constants'

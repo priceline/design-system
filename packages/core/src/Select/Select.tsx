@@ -6,7 +6,7 @@ import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } fro
 import { Flex } from '../Flex/Flex'
 import { BorderRadius, PaletteColor } from '../theme/theme'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
-import { applySizes, borders, getPaletteColor } from '../utils/utils'
+import { applySizes, applyVariations, borders, getPaletteColor } from '../utils/utils'
 
 /**
  * @public
@@ -29,11 +29,39 @@ export const selectSizes = {
 /**
  * @public
  */
+const variations = {
+  input: css``,
+  subtle: css`
+    background-color: ${getPaletteColor('background.base')};
+    color: ${getPaletteColor('primary.base')};
+    &:hover {
+      background-color: ${getPaletteColor('background.tint')};
+      color: ${getPaletteColor('dark')};
+    }
+    &:focus-visible {
+      outline: 0px solid ${getPaletteColor('dark')};
+      box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
+    }
+
+    & ~ svg {
+      color: ${getPaletteColor('primary.base')};
+    }
+  `,
+}
+
+/**
+ * @public
+ */
 export type SelectSizes = keyof typeof selectSizes
 
 const ClickableIcon = styled(ChevronDown)`
   pointer-events: none;
 `
+
+/**
+ * @public
+ */
+export type SelectVariations = 'input' | 'subtle'
 
 /**
  * @public
@@ -46,6 +74,7 @@ export type SelectProps = SpaceProps &
     borderRadius?: BorderRadius
     size?: SelectSizes
     ref?: React.Ref<React.ForwardedRef<unknown>>
+    variation?: SelectVariations
   }
 
 const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
@@ -58,6 +87,7 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
   display: block;
   font-family: inherit;
   width: 100%;
+  text-overflow: ellipsis;
 
   ::-ms-expand {
     display: none;
@@ -71,6 +101,7 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
   }
 
   ${({ theme }) => applySizes(selectSizes, undefined, theme.mediaQueries)};
+  ${applyVariations('Select', variations)};
 
   ${borders}
 
@@ -87,12 +118,14 @@ SelectBase.defaultProps = {
 /**
  * @public
  */
-export const Select: React.FC<SelectProps> & { isField?: boolean } = React.forwardRef((props, ref) => (
-  <Flex width={1} alignItems='center'>
-    <SelectBase {...props} ref={ref} />
-    <ClickableIcon ml={-32} color='text.light' />
-  </Flex>
-))
+export const Select: React.FC<SelectProps> & { isField?: boolean } = React.forwardRef(
+  ({ variation = 'input', ...props }, ref) => (
+    <Flex width={1} alignItems='center'>
+      <SelectBase {...props} ref={ref} variation={variation} />
+      <ClickableIcon ml={-32} color='text.light' />
+    </Flex>
+  )
+)
 
 Select.displayName = 'Select'
 Select.isField = true

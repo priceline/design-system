@@ -294,6 +294,7 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   display: block;
   font-family: inherit;
   width: 100%;
+  text-overflow: ellipsis;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
@@ -1033,6 +1034,7 @@ exports[`FormField renders with Select  1`] = `
   display: block;
   font-family: inherit;
   width: 100%;
+  text-overflow: ellipsis;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   border-radius: 12px;
@@ -1231,6 +1233,7 @@ exports[`FormField renders with Select and Icon 1`] = `
   display: block;
   font-family: inherit;
   width: 100%;
+  text-overflow: ellipsis;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;

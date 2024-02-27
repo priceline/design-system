@@ -218,8 +218,8 @@ export const DialogContent = ({
         >
           {headerContent && (
             <Grid
-              px={[3, 3, 3, 3, '24px', '24px']}
-              py={3}
+              px={[2, 2, 2, 2, '24px', '24px']}
+              py={2}
               autoFlow='column'
               templateColumns='auto 1fr'
               alignItems='center'

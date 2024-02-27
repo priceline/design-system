@@ -28,4 +28,13 @@ export const argTypes = {
       type: 'select',
     },
   },
+  variation: {
+    name: 'variation',
+    description: 'variation',
+    control: {
+      type: 'select',
+    },
+    options: ['', 'subtle'],
+    defaultValue: '',
+  },
 }

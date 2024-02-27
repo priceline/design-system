@@ -64,14 +64,14 @@ exports[`Stepper renders with children 1`] = `
   color: #fff;
 }
 
-.c2:focus {
+.c2:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #4f6f8f;
+  color: #879db3;
   background-color: #edf0f3;
 }
 
