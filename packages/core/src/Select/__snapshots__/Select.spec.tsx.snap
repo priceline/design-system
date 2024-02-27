@@ -39,14 +39,14 @@ exports[`Select renders 1`] = `
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border-radius: 12px;
   border-style: solid;
   border-width: 1px;
+  border-radius: 12px;
   color: inherit;
   display: block;
   font-family: inherit;
-  width: 100%;
   text-overflow: ellipsis;
+  width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   border-radius: 12px;
@@ -63,6 +63,10 @@ exports[`Select renders 1`] = `
   color: #4f6f8f;
   cursor: not-allowed;
   opacity: 1;
+}
+
+.c2:disabled ~svg {
+  color: #4f6f8f;
 }
 
 .c2:focus {

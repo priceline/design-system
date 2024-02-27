@@ -155,6 +155,7 @@ export const DialogContent = ({
   fullWidth,
   headerColorScheme = 'heading',
   headerContent,
+  headerContentProps,
   headerIcon,
   headerShowCloseButton,
   hugColor,
@@ -218,12 +219,13 @@ export const DialogContent = ({
         >
           {headerContent && (
             <Grid
-              px={[2, 2, 2, 2, '24px', '24px']}
-              py={2}
+              px={[3, 3, 3, 3, '24px', '24px']}
+              py={3}
               autoFlow='column'
               templateColumns='auto 1fr'
               alignItems='center'
               colorScheme={headerColorScheme}
+              {...headerContentProps}
             >
               <Grid autoFlow='column' gap='2'>
                 {headerIcon}

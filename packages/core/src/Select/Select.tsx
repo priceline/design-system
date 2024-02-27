@@ -14,9 +14,11 @@ import { applySizes, applyVariations, borders, getPaletteColor } from '../utils/
 export const selectSizes = {
   sm: css`
     padding: 6px 32px 7px 12px;
+    border-radius: ${themeGet('borderRadii.full')};
   `,
   md: css`
     padding: 10px 32px 11px 12px;
+    border-radius: ${themeGet('borderRadii.full')};
   `,
   lg: css`
     padding: 14px 32px 14px 12px;
@@ -33,14 +35,22 @@ const variations = {
   input: css``,
   subtle: css`
     background-color: ${getPaletteColor('background.base')};
+    border-color: ${getPaletteColor('background.base')};
     color: ${getPaletteColor('primary.base')};
+    font-weight: bold;
+
     &:hover {
       background-color: ${getPaletteColor('background.tint')};
-      color: ${getPaletteColor('dark')};
+      border-color: ${getPaletteColor('background.tint')};
+      color: ${getPaletteColor('primary.dark')};
+
+      ~ svg {
+        color: ${getPaletteColor('primary.dark')};
+      }
     }
     &:focus-visible {
-      outline: 0px solid ${getPaletteColor('dark')};
-      box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
+      outline: 0px solid ${getPaletteColor('primary.dark')};
+      box-shadow: 0 0 0 2px ${getPaletteColor('primary.dark')};
     }
 
     & ~ svg {
@@ -80,14 +90,14 @@ export type SelectProps = SpaceProps &
 const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   background-color: transparent;
-  border-radius: ${themeGet('borderRadii.lg')};
   border-style: solid;
   border-width: 1px;
+  border-radius: ${themeGet('borderRadii.lg')};
   color: inherit;
   display: block;
   font-family: inherit;
-  width: 100%;
   text-overflow: ellipsis;
+  width: 100%;
 
   ::-ms-expand {
     display: none;
@@ -98,12 +108,16 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
     color: ${getPaletteColor('text.light')};
     cursor: not-allowed;
     opacity: 1;
+
+    ~ svg {
+      color: ${getPaletteColor('text.light')};
+    }
   }
 
   ${({ theme }) => applySizes(selectSizes, undefined, theme.mediaQueries)};
-  ${applyVariations('Select', variations)};
-
   ${borders}
+
+  ${applyVariations('Select', variations)};
 
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `

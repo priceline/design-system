@@ -34,7 +34,7 @@ export const argTypes = {
     control: {
       type: 'select',
     },
-    options: ['', 'subtle'],
-    defaultValue: '',
+    options: ['input', 'subtle'],
+    defaultValue: 'input',
   },
 }

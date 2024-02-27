@@ -1,10 +1,11 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { AnimatePresence } from 'framer-motion'
 import React, { useEffect } from 'react'
-import { OverflowProps } from 'styled-system'
+import { OverflowProps, SpaceProps } from 'styled-system'
 import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme/theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
+import { GridProps } from '../Grid/Grid'
 
 /**
  * @public
@@ -19,6 +20,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   fullWidth?: boolean
   headerColorScheme?: keyof ColorSchemes
   headerContent?: string | React.ReactNode
+  headerContentProps?: GridProps & SpaceProps
   headerIcon?: React.ReactNode
   headerShowCloseButton?: boolean
   hugColor?: PaletteColor
@@ -47,6 +49,7 @@ const PclnDialog = ({
   fullWidth = false,
   headerColorScheme = 'heading',
   headerContent,
+  headerContentProps,
   headerIcon,
   headerShowCloseButton = false,
   hugColor,
@@ -88,6 +91,7 @@ const PclnDialog = ({
               fullWidth={fullWidth}
               headerColorScheme={headerColorScheme}
               headerContent={headerContent}
+              headerContentProps={headerContentProps}
               headerIcon={headerIcon}
               headerShowCloseButton={headerShowCloseButton}
               hugColor={hugColor}

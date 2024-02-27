@@ -10,6 +10,7 @@ import { Grid, type GridProps } from '../Grid/Grid'
 import { Text } from '../Text/Text'
 import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
+import { Flex } from '../Flex/Flex'
 
 type DialogStory = StoryObj<DialogProps>
 
@@ -65,6 +66,27 @@ export const WithHeaderContent: DialogStory = {
     ),
     headerColorScheme: 'neutralDarkOnLightest',
     headerShowCloseButton: true,
+  },
+}
+
+export const WithHeaderContentProps: DialogStory = {
+  ...Playground,
+  args: {
+    headerContent: (
+      <Flex justifyContent='space-between'>
+        <Box width={40} />
+        <Text textStyle='paragraph'>
+          <Breadcrumbs>
+            <Breadcrumbs.Link href='javascript:void(0)' label='Home' />
+            <Breadcrumbs.Link href='javascript:void(0)' label='Flights' />
+            <Breadcrumbs.Link href='javascript:void(0)' label='Settings' />
+          </Breadcrumbs>
+        </Text>
+        <Box width={40} />
+      </Flex>
+    ),
+    headerContentProps: { px: 2, py: 2, templateColumns: '1fr' },
+    headerColorScheme: 'neutralDarkOnLightest',
   },
 }
 
