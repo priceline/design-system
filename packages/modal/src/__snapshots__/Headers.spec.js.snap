@@ -9,6 +9,10 @@ exports[`ModalHeader render 1`] = `
   padding-right: 16px;
 }
 
+.c5 {
+  margin-left: auto;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -20,7 +24,7 @@ exports[`ModalHeader render 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -28,7 +32,7 @@ exports[`ModalHeader render 1`] = `
   width: md;
 }
 
-.c10 {
+.c11 {
   outline: none;
 }
 
@@ -38,15 +42,14 @@ exports[`ModalHeader render 1`] = `
   line-height: 16px;
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c6 {
+.c7 {
   all: unset;
   width: md;
   height: md;
-  margin-left: auto;
   display: grid;
   place-items: center;
   border-radius: 100%;
@@ -55,11 +58,11 @@ exports[`ModalHeader render 1`] = `
   position: relative;
 }
 
-.c6:focus-visible {
+.c7:focus-visible {
   outline: 2px solid;
 }
 
-.c6:after {
+.c7:after {
   content: '';
   position: absolute;
   width: 48px;
@@ -68,7 +71,7 @@ exports[`ModalHeader render 1`] = `
   left: --12px;
 }
 
-.c8 {
+.c9 {
   height: 125%;
   width: 125%;
   background: black;
@@ -78,7 +81,7 @@ exports[`ModalHeader render 1`] = `
   opacity: 0.15;
 }
 
-.c11 {
+.c12 {
   width: 24px;
   z-index: 0;
   border-radius: 100%;
@@ -105,16 +108,16 @@ exports[`ModalHeader render 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   height: 24px;
   width: 24px;
 }
 
-.c7 svg {
+.c8 svg {
   vertical-align: top;
 }
 
-.c7:focus {
+.c8:focus {
   box-shadow: none;
   outline: none;
 }
@@ -136,33 +139,37 @@ exports[`ModalHeader render 1`] = `
         test
       </div>
       <div
-        class="c5"
+        class="c5 c6"
       >
-        <button
-          class="c6 c7"
-          title="close"
+        <div
+          class="c6"
         >
-          <div
-            class="c8"
-            style="transform: scale(0) translateZ(0);"
-          />
-          <svg
-            aria-hidden="true"
-            class="c9 c10 c11"
-            fill="currentcolor"
-            focusable="false"
-            height="md"
-            role="img"
-            tabindex="-1"
-            viewBox="0 0 24 24"
-            width="md"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            class="c7 c8"
+            title="close"
           >
-            <path
-              d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+            <div
+              class="c9"
+              style="transform: scale(0) translateZ(0);"
             />
-          </svg>
-        </button>
+            <svg
+              aria-hidden="true"
+              class="c10 c11 c12"
+              fill="currentcolor"
+              focusable="false"
+              height="md"
+              role="img"
+              tabindex="-1"
+              viewBox="0 0 24 24"
+              width="md"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

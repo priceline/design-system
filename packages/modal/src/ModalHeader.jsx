@@ -1,4 +1,4 @@
-import { CloseButton, deprecatedColorValue, Flex, Text } from 'pcln-design-system'
+import { Relative, CloseButton, deprecatedColorValue, Flex, Text } from 'pcln-design-system'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
@@ -25,7 +25,11 @@ const StyledCloseButton = styled(CloseButton)`
 const ModalHeader = ({ bg, color, onClose, textStyle, title, ...props }) => (
   <Flex align='center' alignItems='center' color={color} bg={bg} height='40px' {...props}>
     {title && <Title textStyle={textStyle}>{title}</Title>}
-    {onClose && <StyledCloseButton onClick={onClose} ml='auto' />}
+    {onClose && (
+      <Relative ml='auto'>
+        <StyledCloseButton onClick={onClose} />
+      </Relative>
+    )}
   </Flex>
 )
 
