@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "close button placement fix",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}
