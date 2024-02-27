@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add BoxProps type to Container type",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

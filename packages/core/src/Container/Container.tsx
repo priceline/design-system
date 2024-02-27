@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, BoxProps } from '../Box/Box'
+import { Box, type BoxProps } from '../Box/Box'
 
 const sizes = {
   sm: 640,
