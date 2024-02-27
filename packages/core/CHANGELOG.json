@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.5.0",
+      "tag": "pcln-design-system_v6.5.0",
+      "date": "Tue, 27 Feb 2024 17:52:55 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "SlideBox: add in new props to allow overflow to display on x, y and top",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "44f0025c8ce69184c1dd0fa99116232442f8c843"
+          },
+          {
+            "comment": "Create new FloatingActionButtonProvider component",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "44f0025c8ce69184c1dd0fa99116232442f8c843"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Revert close button changes on Toast",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "44f0025c8ce69184c1dd0fa99116232442f8c843"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.4.0",
       "tag": "pcln-design-system_v6.4.0",
       "date": "Fri, 16 Feb 2024 20:06:38 GMT",

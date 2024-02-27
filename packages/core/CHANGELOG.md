@@ -1,6 +1,18 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 16 Feb 2024 20:06:38 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Feb 2024 17:52:55 GMT and should not be manually modified.
+
+## 6.5.0
+Tue, 27 Feb 2024 17:52:55 GMT
+
+### Minor changes
+
+- SlideBox: add in new props to allow overflow to display on x, y and top
+- Create new FloatingActionButtonProvider component
+
+### Patches
+
+- Revert close button changes on Toast
 
 ## 6.4.0
 Fri, 16 Feb 2024 20:06:38 GMT

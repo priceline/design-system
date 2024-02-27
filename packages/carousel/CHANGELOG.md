@@ -1,6 +1,14 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Fri, 16 Feb 2024 20:06:38 GMT and should not be manually modified.
+This log was last generated on Tue, 27 Feb 2024 17:52:55 GMT and should not be manually modified.
+
+## 3.1.0
+Tue, 27 Feb 2024 17:52:55 GMT
+
+### Minor changes
+
+- Carousel: add in arrowsAlignment and nodeBesideArrows props
+- Carousel and SlideBox: add in new props to allow overflow to display on x, y, and top 
 
 ## 3.0.7
 Fri, 16 Feb 2024 20:06:38 GMT

@@ -2,6 +2,31 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "6.0.8",
+      "tag": "pcln-modal_v6.0.8",
+      "date": "Tue, 27 Feb 2024 17:52:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "close button placement fix",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "ddd41ed66d036065d7ab1849dfc4d81721aec319"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.5.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `6.0.8`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.4.0` to `^6.5.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.7",
       "tag": "pcln-modal_v6.0.7",
       "date": "Fri, 16 Feb 2024 20:06:38 GMT",
