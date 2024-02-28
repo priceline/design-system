@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { AnimatePresence } from 'framer-motion'
 import React, { useEffect } from 'react'
-import { OverflowProps, SpaceProps } from 'styled-system'
+import { OverflowProps } from 'styled-system'
 import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme/theme'
 import type { DialogSize } from './Dialog.styled'
 import { DialogContent, DialogOverlay } from './Dialog.styled'
@@ -20,7 +20,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   fullWidth?: boolean
   headerColorScheme?: keyof ColorSchemes
   headerContent?: string | React.ReactNode
-  headerContentProps?: GridProps & SpaceProps
+  headerContentProps?: GridProps
   headerIcon?: React.ReactNode
   headerShowCloseButton?: boolean
   hugColor?: PaletteColor

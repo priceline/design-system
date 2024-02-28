@@ -123,7 +123,6 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
 `
 
 SelectBase.defaultProps = {
-  borderRadius: 'lg',
   fontSize: [2, null, 1],
   m: 0,
   size: 'lg',
