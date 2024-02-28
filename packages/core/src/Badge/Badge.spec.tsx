@@ -89,4 +89,9 @@ describe('Badge', () => {
     expect(screen.getByText('Lowercase Text')).toHaveStyleRule('text-transform', 'lowercase')
     expect(screen.getByText('Lowercase Text')).toHaveStyleRule('letter-spacing', 'normal')
   })
+
+  test('size', () => {
+    render(<Badge size='captionMedium'>Caption</Badge>)
+    expect(screen.getByText('Caption')).toHaveStyleRule('padding-right', theme.space[2])
+  })
 })

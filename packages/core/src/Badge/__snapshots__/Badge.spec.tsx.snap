@@ -3,15 +3,14 @@
 exports[`Badge bg blue sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #0068ef;
   color: #fff;
   background-color: #0068ef;
@@ -22,8 +21,6 @@ exports[`Badge bg blue sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -36,15 +33,14 @@ exports[`Badge bg blue sets background-color and color 1`] = `
 exports[`Badge bg green sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #0a0;
   color: #fff;
   background-color: #0a0;
@@ -55,8 +51,6 @@ exports[`Badge bg green sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -69,15 +63,14 @@ exports[`Badge bg green sets background-color and color 1`] = `
 exports[`Badge bg lightBlue sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #e8f2ff;
   color: #049;
   background-color: #e8f2ff;
@@ -88,8 +81,6 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -102,15 +93,14 @@ exports[`Badge bg lightBlue sets background-color and color 1`] = `
 exports[`Badge bg lightGreen sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #ecf7ec;
   color: #060;
   background-color: #ecf7ec;
@@ -121,8 +111,6 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -135,15 +123,14 @@ exports[`Badge bg lightGreen sets background-color and color 1`] = `
 exports[`Badge bg lightRed sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #fbebeb;
   color: #800;
   background-color: #fbebeb;
@@ -154,8 +141,6 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -168,15 +153,14 @@ exports[`Badge bg lightRed sets background-color and color 1`] = `
 exports[`Badge bg orange sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #f06f20;
   color: #001833;
   background-color: #f06f20;
@@ -187,8 +171,6 @@ exports[`Badge bg orange sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -201,15 +183,14 @@ exports[`Badge bg orange sets background-color and color 1`] = `
 exports[`Badge bg red sets background-color and color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #c00;
   color: #fff;
   background-color: #c00;
@@ -220,8 +201,6 @@ exports[`Badge bg red sets background-color and color 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -234,15 +213,14 @@ exports[`Badge bg red sets background-color and color 1`] = `
 exports[`Badge can escape preset: bg lightBlue sets background-color and color text sets color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #e8f2ff;
   color: #001833;
   text-transform: uppercase;
@@ -252,8 +230,6 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -267,15 +243,14 @@ exports[`Badge can escape preset: bg lightBlue sets background-color and color t
 exports[`Badge non-preset: bg text sets background-color and color white sets color 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #001833;
   color: #fff;
   text-transform: uppercase;
@@ -285,8 +260,6 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -300,15 +273,14 @@ exports[`Badge non-preset: bg text sets background-color and color white sets co
 exports[`Badge renders 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 12px;
   font-weight: 700;
-  line-height: 1.25;
-  -webkit-letter-spacing: 0.025em;
-  -moz-letter-spacing: 0.025em;
-  -ms-letter-spacing: 0.025em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-letter-spacing: 0.006rem;
+  -moz-letter-spacing: 0.006rem;
+  -ms-letter-spacing: 0.006rem;
+  letter-spacing: 0.006rem;
+  padding: 4px;
   background-color: #f4f6f8;
   color: #001833;
   text-transform: uppercase;
@@ -318,8 +290,6 @@ exports[`Badge renders 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 
@@ -332,10 +302,14 @@ exports[`Badge renders 1`] = `
 exports[`Badge renders small 1`] = `
 .c0 {
   display: inline-block;
-  font-size: 10px;
   font-weight: 700;
+  font-size: 10px;
   line-height: 1.4;
-  line-height: 1.25;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  padding: 3px 3px;
   background-color: #f4f6f8;
   color: #001833;
   text-transform: uppercase;
@@ -345,8 +319,6 @@ exports[`Badge renders small 1`] = `
   letter-spacing: 0.025em;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
   border-radius: 9999px;
 }
 

@@ -42,7 +42,7 @@ export const argTypes = {
   size: {
     name: 'size',
     control: 'select',
-    options: ['small', 'medium'],
+    options: ['captionSmall', 'captionMedium', 'small', 'medium'],
     defaultValue: 'medium',
   },
 }
