@@ -14,11 +14,9 @@ import { applySizes, applyVariations, borders, getPaletteColor } from '../utils/
 export const selectSizes = {
   sm: css`
     padding: 6px 32px 7px 12px;
-    border-radius: ${themeGet('borderRadii.full')};
   `,
   md: css`
     padding: 10px 32px 11px 12px;
-    border-radius: ${themeGet('borderRadii.full')};
   `,
   lg: css`
     padding: 14px 32px 14px 12px;
@@ -36,6 +34,8 @@ const variations = {
   subtle: css`
     background-color: ${getPaletteColor('background.base')};
     border-color: ${getPaletteColor('background.base')};
+    border-radius: ${(props) =>
+      props.size === 'sm' || props.size === 'md' ? themeGet('borderRadii.full') : themeGet('borderRadii.lg')};
     color: ${getPaletteColor('primary.base')};
     font-weight: bold;
 
