@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 27 Feb 2024 17:52:55 GMT and should not be manually modified.
+This log was last generated on Wed, 28 Feb 2024 20:02:25 GMT and should not be manually modified.
+
+## 6.5.1
+Wed, 28 Feb 2024 20:02:25 GMT
+
+### Patches
+
+- Add BoxProps type to Container type
 
 ## 6.5.0
 Tue, 27 Feb 2024 17:52:55 GMT
