@@ -287,17 +287,17 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border-radius: 12px;
   border-style: solid;
   border-width: 1px;
+  border-radius: 12px;
   color: inherit;
   display: block;
   font-family: inherit;
+  text-overflow: ellipsis;
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
-  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
 }
@@ -311,6 +311,10 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   color: #4f6f8f;
   cursor: not-allowed;
   opacity: 1;
+}
+
+.c10:disabled ~ svg {
+  color: #4f6f8f;
 }
 
 .c10:focus {
@@ -1026,16 +1030,16 @@ exports[`FormField renders with Select  1`] = `
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border-radius: 12px;
   border-style: solid;
   border-width: 1px;
+  border-radius: 12px;
   color: inherit;
   display: block;
   font-family: inherit;
+  text-overflow: ellipsis;
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
 }
@@ -1049,6 +1053,10 @@ exports[`FormField renders with Select  1`] = `
   color: #4f6f8f;
   cursor: not-allowed;
   opacity: 1;
+}
+
+.c4:disabled ~ svg {
+  color: #4f6f8f;
 }
 
 .c4:focus {
@@ -1224,17 +1232,17 @@ exports[`FormField renders with Select and Icon 1`] = `
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border-radius: 12px;
   border-style: solid;
   border-width: 1px;
+  border-radius: 12px;
   color: inherit;
   display: block;
   font-family: inherit;
+  text-overflow: ellipsis;
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
   padding-left: 40px;
-  border-radius: 12px;
   font-size: 16px;
   margin: 0px;
 }
@@ -1248,6 +1256,10 @@ exports[`FormField renders with Select and Icon 1`] = `
   color: #4f6f8f;
   cursor: not-allowed;
   opacity: 1;
+}
+
+.c8:disabled ~ svg {
+  color: #4f6f8f;
 }
 
 .c8:focus {

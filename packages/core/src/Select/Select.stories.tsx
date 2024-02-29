@@ -29,6 +29,9 @@ const Template = (args) => (
 
 export const _Select = Template.bind({})
 
+export const SubtleVariation = Template.bind({})
+SubtleVariation.args = { variation: 'subtle' }
+
 export const Disabled = Template.bind({})
 Disabled.args = { disabled: true }
 

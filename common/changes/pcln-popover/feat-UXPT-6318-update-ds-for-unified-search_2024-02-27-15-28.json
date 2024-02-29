@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Updating snapshot",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

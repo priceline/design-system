@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Minor Button and Select style updates",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

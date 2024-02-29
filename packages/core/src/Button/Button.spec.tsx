@@ -259,10 +259,10 @@ describe('Button', () => {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
         expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
       })
 
@@ -346,7 +346,7 @@ describe('Button', () => {
 
         const button = getByRole('button')
 
-        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+        expect(button).toHaveStyleRule('color', theme.palette.background.tone, {
           modifier: ':disabled',
         })
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
@@ -375,10 +375,10 @@ describe('Button', () => {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
         expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
       })
 
@@ -391,7 +391,7 @@ describe('Button', () => {
 
         const button = getByRole('button')
 
-        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+        expect(button).toHaveStyleRule('color', theme.palette.background.tone, {
           modifier: ':disabled',
         })
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
@@ -429,10 +429,10 @@ describe('Button', () => {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.primary.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
         expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.primary.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
       })
 
@@ -445,7 +445,7 @@ describe('Button', () => {
 
         const button = getByRole('button')
 
-        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+        expect(button).toHaveStyleRule('color', theme.palette.background.tone, {
           modifier: ':disabled',
         })
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {
@@ -477,10 +477,10 @@ describe('Button', () => {
           modifier: ':hover',
         })
         expect(button).toHaveStyleRule('outline', `0px solid ${theme.palette.warning.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
         expect(button).toHaveStyleRule('box-shadow', `0 0 0 2px ${theme.palette.warning.dark}`, {
-          modifier: ':focus',
+          modifier: ':focus-visible',
         })
       })
 
@@ -493,7 +493,7 @@ describe('Button', () => {
 
         const button = getByRole('button')
 
-        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+        expect(button).toHaveStyleRule('color', theme.palette.background.tone, {
           modifier: ':disabled',
         })
         expect(button).toHaveStyleRule('background-color', theme.palette.background.base, {

@@ -69,7 +69,7 @@ const variations = {
       background-color: ${(props) => getPaletteColor(props.disabled ? 'light' : 'dark')(props)};
       ${(props) => (props.disabled ? '' : `color: ${getTextColorOn('dark')(props)};`)}
     }
-    &:focus {
+    &:focus-visible {
       outline: ${(props) => `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
       box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
@@ -113,7 +113,7 @@ const variations = {
       background-color: ${getPaletteColor('background.base')};
       color: ${getPaletteColor('dark')};
     }
-    &:focus {
+    &:focus-visible {
       outline: 0px solid ${getPaletteColor('dark')};
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
@@ -125,7 +125,7 @@ const variations = {
       background-color: ${getPaletteColor('background.tint')};
       color: ${getPaletteColor('dark')};
     }
-    &:focus {
+    &:focus-visible {
       outline: 0px solid ${getPaletteColor('dark')};
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
@@ -137,7 +137,7 @@ const variations = {
       background-color: ${getPaletteColor('background.base')};
       color: ${getPaletteColor('dark')};
     }
-    &:focus {
+    &:focus-visible {
       outline: 0px solid ${getPaletteColor('dark')};
       box-shadow: 0 0 0 2px ${getPaletteColor('dark')};
     }
@@ -153,7 +153,7 @@ const variations = {
         background-color: ${getPaletteColor('light')(props)};
         color: ${getPaletteColor('dark')(props)};
       }`}
-    &:focus {
+    &:focus-visible {
       outline: ${(props) => `0px solid ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
       box-shadow: ${(props) => ` 0 0 0 2px  ${getPaletteColor(props.disabled ? '' : 'dark')(props)}`};
     }
@@ -246,7 +246,7 @@ export const buttonStyles = css`
 
   &:disabled {
     cursor: not-allowed;
-    color: ${getPaletteColor('text.light')};
+    color: ${getPaletteColor('background.tone')};
     background-color: ${getPaletteColor('background.base')};
   }
 `
