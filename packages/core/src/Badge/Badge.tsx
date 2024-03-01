@@ -47,14 +47,22 @@ const type = (props) => {
   return !(props.bg && props.color) && (badgeColors[props.bg] || badgeColors.lightGray)
 }
 
-const sizes = {
+export const sizes = {
+  captionSmall: css`
+    ${themeGet('typography.caption')}
+    padding: 2px 2px;
+  `,
+  captionMedium: css`
+    ${themeGet('typography.caption')}
+    padding: ${(props) => themeGet('space')(props)[1]};
+  `,
   small: css`
-    ${themeGet('textStyles.small')}
-    line-height: ${themeGet('lineHeights.display')};
+    ${themeGet('typography.label')}
+    padding: 3px 3px;
   `,
   medium: css`
-    ${themeGet('textStyles.display0')}
-    line-height: ${themeGet('lineHeights.standard')};
+    ${themeGet('typography.captionBold')}
+    padding: ${(props) => themeGet('space')(props)[1]};
   `,
 }
 
@@ -69,7 +77,7 @@ const letterSpacing = (props) => {
  */
 export type BadgeProps = SpaceProps &
   React.HtmlHTMLAttributes<HTMLElement> & {
-    size?: 'small' | 'medium'
+    size?: 'captionSmall' | 'captionMedium' | 'small' | 'medium'
     color?: string
     bg?: string
     borderRadius?: string
@@ -98,7 +106,6 @@ Badge.displayName = 'Badge'
 Badge.defaultProps = {
   size: 'medium',
   px: 2,
-  py: 1,
   borderRadius: 'full',
   textTransform: 'uppercase',
 }

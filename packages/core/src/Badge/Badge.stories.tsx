@@ -1,7 +1,10 @@
 import React from 'react'
+import styled from 'styled-components'
+import { Grid } from '../Grid/Grid'
+import { Text } from '../Text/Text'
 import { colorSchemeNames } from '../storybook/args'
 import { textTransformValues } from '../utils/attrs/typographyAttrs'
-import { Badge } from './Badge'
+import { Badge, sizes, type BadgeProps } from './Badge'
 import { argTypes } from './Badge.stories.args'
 
 export default {
@@ -38,25 +41,60 @@ LightBlueAndTextCustom.args = {
   color: 'text',
 }
 
-const TextTransformTemplate = () => {
+const GridTemplate = styled(Grid)`
+  display: inline-grid;
+  grid-auto-flow: column;
+`
+const TextTransformTemplate = (args) => {
   return (
-    <React.Fragment>
+    <GridTemplate
+      templateColumns='repeat(5, 1fr)'
+      templateRows='repeat(2, 1fr)'
+      justifyItems='center'
+      alignItems='center'
+    >
+      <Text textStyle='captionBold' style={{ justifySelf: 'left' }}>
+        medium:
+      </Text>
+      <Text textStyle='caption' style={{ justifySelf: 'left' }}>
+        captionMedium:
+      </Text>
       {textTransformValues.map((textTransform) => (
-        <Badge m={3} p={3} textTransform={textTransform} key={textTransform}>
-          {textTransform}
-        </Badge>
+        <>
+          <Badge m={3} textTransform={textTransform} key={textTransform} {...args}>
+            {textTransform}
+          </Badge>
+          <Badge m={3} textTransform={textTransform} size='captionMedium' key={textTransform} {...args}>
+            {textTransform}
+          </Badge>
+        </>
       ))}
-    </React.Fragment>
+    </GridTemplate>
   )
 }
 export const TextTransforms = TextTransformTemplate.bind({})
 TextTransformTemplate.args = {}
 
-const ColorSchemesTemplate = () => {
+const SizeVariantsTemplate = (args) => {
+  const sizeArray = Object.keys(sizes)
+  return (
+    <>
+      {sizeArray.map((size: BadgeProps['size']) => (
+        <Badge m={3} size={size} key={size} {...args}>
+          {size}
+        </Badge>
+      ))}
+    </>
+  )
+}
+export const SizeVariants = SizeVariantsTemplate.bind({})
+SizeVariantsTemplate.args = {}
+
+const ColorSchemesTemplate = (args) => {
   return (
     <React.Fragment>
       {colorSchemeNames.map((colorScheme) => (
-        <Badge m={3} p={3} colorScheme={colorScheme} key={colorScheme}>
+        <Badge m={3} colorScheme={colorScheme} key={colorScheme} {...args}>
           {colorScheme}
         </Badge>
       ))}
