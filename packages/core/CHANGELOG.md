@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 29 Feb 2024 18:21:33 GMT and should not be manually modified.
+This log was last generated on Fri, 01 Mar 2024 22:02:10 GMT and should not be manually modified.
+
+## 6.7.0
+Fri, 01 Mar 2024 22:02:10 GMT
+
+### Minor changes
+
+- add caption as text style option
 
 ## 6.6.0
 Thu, 29 Feb 2024 18:21:33 GMT

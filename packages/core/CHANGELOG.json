@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.7.0",
+      "tag": "pcln-design-system_v6.7.0",
+      "date": "Fri, 01 Mar 2024 22:02:10 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add caption as text style option",
+            "author": "Pablo Herrera <67336461+pherrera167@users.noreply.github.com>",
+            "commit": "a0954d82aeb143048f6606daee14a34ccb37be32"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.0",
       "tag": "pcln-design-system_v6.6.0",
       "date": "Thu, 29 Feb 2024 18:21:33 GMT",
