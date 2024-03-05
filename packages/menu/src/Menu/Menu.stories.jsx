@@ -196,7 +196,7 @@ export const UsingButtonPropsPropForStylingButtonText = () => (
 
 export const InDialog = {
   render: () => (
-    <Dialog size='md' triggerNode={<Button>Open Menu</Button>}>
+    <Dialog size='md' triggerNode={<Button>Open Dialog</Button>}>
       <Box height={200} p={4}>
         <Menu width={300} buttonText='Menu'>
           <MenuItems />
@@ -206,7 +206,7 @@ export const InDialog = {
   ),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    const openButton = canvas.getByText('Open Menu')
+    const openButton = canvas.getByText('Open Dialog')
     await userEvent.click(openButton)
   },
 }
