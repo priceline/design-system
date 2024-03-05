@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Created story for a Menu inside a Dialog",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

@@ -11,6 +11,7 @@ import { Text } from '../Text/Text'
 import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
 import { Flex } from '../Flex/Flex'
+import { Tooltip } from '../Tooltip/Tooltip'
 
 type DialogStory = StoryObj<DialogProps>
 
@@ -89,6 +90,20 @@ export const WithHeaderContentProps: DialogStory = {
     headerColorScheme: 'neutralDarkOnLightest',
   },
 }
+
+export const WithTooltip: DialogStory = {
+  ...Playground,
+  args: {
+    children: (
+      <Box width={400} p={2} my={2} height={200}>
+        <Tooltip bottom center color='primary'>
+          top center tooltip
+        </Tooltip>
+      </Box>
+    )
+  }
+}
+
 
 const ExampleImage = () => (
   <img
