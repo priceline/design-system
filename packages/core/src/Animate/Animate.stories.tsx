@@ -10,6 +10,7 @@ import { Flex } from '../Flex/Flex'
 import { Image } from '../Image/Image'
 import { Text } from '../Text/Text'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from './Animate'
+import { Absolute } from '../Absolute/Absolute'
 
 const meta: Meta<typeof Animate> = {
   component: Animate,
@@ -171,5 +172,15 @@ export const ComposedAnimations = () => {
         </Animate>
       )}
     </Box>
+  )
+}
+
+export const SpinAnimation = () => {
+  return (
+    <Flex width='fit-content'>
+      <Animate variant='spin'>
+        <Button m={2}>Spin!</Button>
+      </Animate>
+    </Flex>
   )
 }
