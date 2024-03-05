@@ -116,7 +116,7 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
     animate: { opacity: 0, y: '100%' },
   },
   spin: {
-    animate: { rotate: 360, height: 'auto', width: 'auto' },
+    animate: { rotate: 360, height: 'auto' },
     transition: { duration: 1, repeat: Infinity, ease: 'linear' },
   },
 }

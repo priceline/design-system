@@ -66,3 +66,9 @@ WithGradientCustomWidth.args = {
   useGradient: true,
   strokeWidth: '10px',
 }
+
+export const WithGradientDifferentSize = Template.bind({})
+WithGradientDifferentSize.args = {
+  size: 'medium',
+  useGradient: true,
+}
