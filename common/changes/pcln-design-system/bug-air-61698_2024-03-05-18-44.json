@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "bug fix for when spinner doesn't spin on mobile devices",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
