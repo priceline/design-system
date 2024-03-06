@@ -103,11 +103,6 @@ const DialogContentWrapper = styled(motion.div)`
 
 const DialogInnerContentWrapper = styled.div`
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  height: 100%;
-
   ${overflowX}
   ${overflowY}
   border-radius: ${(props: DialogProps) =>

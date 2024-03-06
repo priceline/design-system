@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Revert breaking change on Dialog",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
