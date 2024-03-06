@@ -106,7 +106,8 @@ const DialogInnerContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  height: 100%;
+
+  ${(props) => props.hasFooterContent && `height: 100%;`}
 
   ${overflowX}
   ${overflowY}
@@ -213,6 +214,7 @@ export const DialogContent = ({
           overflowX={overflowX}
           overflowY={overflowY}
           sheet={sheet}
+          hasFooterContent={footerContent}
           hugColor={hugColor}
           size={size}
           borderRadius={borderRadius}
