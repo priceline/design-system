@@ -98,7 +98,11 @@ const DialogContentWrapper = styled(motion.div)`
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
   box-shadow: ${(props: DialogProps) => themeGet('shadows.overlay-lg')(props)};
-  overflow: ${(props: DialogProps) => (props.sheet ? 'scroll' : 'visible')};
+  ${(props) =>
+    props.hasFooterContent &&
+    `
+    overflow: ${props.sheet ? 'scroll' : 'visible'};
+  `}
 `
 
 const DialogInnerContentWrapper = styled.div`
@@ -198,6 +202,7 @@ export const DialogContent = ({
         fullWidth={fullWidth}
         borderRadius={borderRadius}
         zIndex={zIndex}
+        hasFooterContent={footerContent}
         {...(sheet ? animationStyles.sheet : animationStyles.default)}
       >
         {showCloseButton && (
