@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 30 Jan 2024 20:31:23 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Mar 2024 20:07:53 GMT and should not be manually modified.
+
+## 6.1.0
+Wed, 06 Mar 2024 20:07:53 GMT
+
+### Minor changes
+
+- added gift icon 
 
 ## 6.0.1
 Tue, 30 Jan 2024 20:31:23 GMT

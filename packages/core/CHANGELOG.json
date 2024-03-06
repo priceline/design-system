@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.7.1",
+      "tag": "pcln-design-system_v6.7.1",
+      "date": "Wed, 06 Mar 2024 20:07:53 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Created stories for Menu, Popover, and Tooltip in a Dialog",
+            "author": "Ashok Patidar <62964295+apatidar1986@users.noreply.github.com>",
+            "commit": "7ce77e72857d0cc5ad4113ed4f542cc380acc54b"
+          },
+          {
+            "comment": "DialogInnerContentWrapper full height if footer exists",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "98235283ce05e445f3735c97625d69d68cd2f9d8"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.7.0",
       "tag": "pcln-design-system_v6.7.0",
       "date": "Fri, 01 Mar 2024 22:02:10 GMT",

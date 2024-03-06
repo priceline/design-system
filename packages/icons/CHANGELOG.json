@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.1.0",
+      "tag": "pcln-icons_v6.1.0",
+      "date": "Wed, 06 Mar 2024 20:07:53 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "added gift icon ",
+            "author": "Ashok Patidar <62964295+apatidar1986@users.noreply.github.com>",
+            "commit": "7ce77e72857d0cc5ad4113ed4f542cc380acc54b"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.1",
       "tag": "pcln-icons_v6.0.1",
       "date": "Tue, 30 Jan 2024 20:31:23 GMT",

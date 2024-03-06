@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 01 Mar 2024 22:02:10 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Mar 2024 20:07:53 GMT and should not be manually modified.
+
+## 6.7.1
+Wed, 06 Mar 2024 20:07:53 GMT
+
+### Patches
+
+- Created stories for Menu, Popover, and Tooltip in a Dialog
+- DialogInnerContentWrapper full height if footer exists
 
 ## 6.7.0
 Fri, 01 Mar 2024 22:02:10 GMT
