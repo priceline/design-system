@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "DialogInnerContentWrapper full height if footer exists",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
