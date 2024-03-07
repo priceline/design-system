@@ -37,6 +37,7 @@ export type MotionVariant =
   | 'slideOutBottom'
   | 'slideOutRight'
   | 'slideInRight'
+  | 'spin'
 
 /**
  * @public
@@ -113,6 +114,10 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   slideOutBottom: {
     initial: { opacity: 1, y: 0 },
     animate: { opacity: 0, y: '100%' },
+  },
+  spin: {
+    animate: { rotate: 360, height: 'auto' },
+    transition: { duration: 1, repeat: Infinity, ease: 'linear' },
   },
 }
 

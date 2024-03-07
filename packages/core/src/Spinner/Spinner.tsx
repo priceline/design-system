@@ -5,6 +5,7 @@ import { Absolute } from '../Absolute/Absolute'
 import { Flex } from '../Flex/Flex'
 import { PaletteFamilyName } from '../theme/theme'
 import { applySizes, getPaletteColor } from '../utils/utils'
+import { Animate } from './../Animate/Animate'
 
 const sizes = {
   small: css`
@@ -75,40 +76,42 @@ type GradientRingProps = {
 function GradientRing({ strokeWidth = '6px', ...props }: GradientRingProps) {
   const strokeColor = getPaletteColor(props.color, 'base')(props)
   return (
-    <GradientRingWrapper>
-      <svg
-        width='100%'
-        height='100%'
-        viewBox='0 0 200 200'
-        color={strokeColor}
-        fill='none'
-        overflow='visible'
-      >
-        <defs>
-          <linearGradient id='spinner-secondHalf'>
-            <stop offset='0%' stop-opacity='0' stop-color='currentColor' />
-            <stop offset='100%' stop-opacity='0.5' stop-color='currentColor' />
-          </linearGradient>
-          <linearGradient id='spinner-firstHalf'>
-            <stop offset='0%' stop-opacity='1' stop-color='currentColor' />
-            <stop offset='100%' stop-opacity='0.5' stop-color='currentColor' />
-          </linearGradient>
-        </defs>
+    <GradientRingWrapper mt='-3px'>
+      <Animate variant='spin'>
+        <svg
+          width='100%'
+          height='100%'
+          viewBox='0 0 200 200'
+          color={strokeColor}
+          fill='none'
+          overflow='visible'
+        >
+          <defs>
+            <linearGradient id='spinner-secondHalf'>
+              <stop offset='0%' stop-opacity='0' stop-color='currentColor' />
+              <stop offset='100%' stop-opacity='0.5' stop-color='currentColor' />
+            </linearGradient>
+            <linearGradient id='spinner-firstHalf'>
+              <stop offset='0%' stop-opacity='1' stop-color='currentColor' />
+              <stop offset='100%' stop-opacity='0.5' stop-color='currentColor' />
+            </linearGradient>
+          </defs>
 
-        <g stroke-width={strokeWidth}>
-          <path stroke='url(#spinner-secondHalf)' d='M 4 100 A 96 96 0 0 1 196 100' />
-          <path stroke='url(#spinner-firstHalf)' d='M 196 100 A 96 96 0 0 1 4 100' />
-          <path stroke='currentColor' stroke-linecap='round' d='M 4 100 A 96 96 0 0 1 4 98' />
-        </g>
-        <animateTransform
+          <g stroke-width={strokeWidth}>
+            <path stroke='url(#spinner-secondHalf)' d='M 4 100 A 96 96 0 0 1 196 100' />
+            <path stroke='url(#spinner-firstHalf)' d='M 196 100 A 96 96 0 0 1 4 100' />
+            <path stroke='currentColor' stroke-linecap='round' d='M 4 100 A 96 96 0 0 1 4 98' />
+          </g>
+          {/* <animateTransform
           from='0 0 0'
           to='360 0 0'
           attributeName='transform'
           type='rotate'
           repeatCount='indefinite'
           dur='1000ms'
-        />
-      </svg>
+        /> */}
+        </svg>
+      </Animate>
     </GradientRingWrapper>
   )
 }

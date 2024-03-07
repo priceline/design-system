@@ -173,3 +173,13 @@ export const ComposedAnimations = () => {
     </Box>
   )
 }
+
+export const SpinAnimation = () => {
+  return (
+    <Flex width='fit-content'>
+      <Animate variant='spin'>
+        <Button m={2}>Spin!</Button>
+      </Animate>
+    </Flex>
+  )
+}
