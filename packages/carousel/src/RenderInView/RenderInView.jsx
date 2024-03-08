@@ -8,7 +8,7 @@ const FullHeightInView = styled(InView)`
   height: 100%;
 `
 
-const RenderInView = ({ children, onSlideChange, index }) => {
+const RenderInView = ({ children, onSlideChange, index, displayArrowsMobile }) => {
   const slideVisible = (inView) => {
     if (inView) {
       onSlideChange(index)
@@ -16,9 +16,11 @@ const RenderInView = ({ children, onSlideChange, index }) => {
   }
   return (
     <>
-      <Hide md lg xl xxl height='100%'>
-        <FullHeightInView onChange={slideVisible}>{children}</FullHeightInView>
-      </Hide>
+      {displayArrowsMobile === true ? (
+        <Hide md lg xl xxl height='100%'>
+          <FullHeightInView onChange={slideVisible}>{children}</FullHeightInView>
+        </Hide>
+      ) : null}
       <Hide xs sm height='100%'>
         {children}
       </Hide>
