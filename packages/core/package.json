@@ -44,6 +44,10 @@
     {
       "name": "Justin Trenary",
       "email": "trenaryja@gmail.com"
+    },
+    {
+      "name": "Brandon Soong",
+      "email": "bsoong99@gmail.com"
     }
   ],
   "sideEffects": false,
@@ -73,6 +77,7 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "~1.1.2",
+    "@radix-ui/react-tabs": "~1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-visually-hidden": "^1.0.3",
     "@styled-system/theme-get": "^5.1.2",

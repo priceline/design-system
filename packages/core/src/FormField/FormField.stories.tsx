@@ -59,10 +59,7 @@ export const DynamicLabel = () => (
         <Label autoHide htmlFor='dynamic-label-with-a-value'>
           With value
         </Label>
-        <Input 
-          id='dynamic-label-with-a-value' 
-          name='dynamic-label-with-a-value' 
-          value='hello@example.com' />
+        <Input id='dynamic-label-with-a-value' name='dynamic-label-with-a-value' value='hello@example.com' />
       </FormField>
     </Box>
     <Box px={2} width={1 / 3}>
@@ -175,24 +172,24 @@ const validateEmailFormat = (email) => {
 }
 
 export const Usage = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('')
   const [isValidEmail, setIsValidEmail] = useState(false)
   const [isFocused, SetIsFocused] = useState(true)
 
-  // update email address 
+  // update email address
   const updateInput = (e) => {
     const value = e.target.value
     setEmail(value)
   }
 
-  // handle when focus leave the field 
+  // handle when focus leave the field
   const handleBlur = (e) => {
     const value = e.target.value
     setIsValidEmail(validateEmailFormat(value))
     SetIsFocused(false)
   }
 
-  // handle when field is on focus 
+  // handle when field is on focus
   const handleFocus = (e) => {
     SetIsFocused(true)
   }
@@ -200,7 +197,9 @@ export const Usage = () => {
   return (
     <Box>
       <FormField>
-        <Label autoHide htmlFor='dynamic-label-usage'>Email Address</Label>
+        <Label autoHide htmlFor='dynamic-label-usage'>
+          Email Address
+        </Label>
         <Input
           id='dynamic-label-usage'
           name='dynamic-label-usage'
@@ -213,12 +212,11 @@ export const Usage = () => {
         />
         {isFocused ? null : isValidEmail ? <SuccessIcon color='success' /> : <WarningIcon color='error' />}
       </FormField>
-      {!isFocused && !isValidEmail 
-        ? <Tooltip id='demo-error' right color='error'>
-            Email address is required
-          </Tooltip>
-        : null 
-      }
+      {!isFocused && !isValidEmail ? (
+        <Tooltip id='demo-error' right color='error'>
+          Email address is required
+        </Tooltip>
+      ) : null}
     </Box>
   )
 }

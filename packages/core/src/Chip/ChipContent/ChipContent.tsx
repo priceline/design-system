@@ -6,6 +6,7 @@ import { Flex } from '../../Flex/Flex'
 import { Text } from '../../Text/Text'
 import { getPaletteColor } from '../../utils/utils'
 import { ChipContentWrapper } from '../ChipContentWrapper'
+import { ResponsiveValue } from 'styled-system'
 
 const ImageWrapper = styled(Flex)`
   background-color: ${getPaletteColor('background.lightest')};
@@ -39,7 +40,7 @@ export type ChipContentProps = BoxProps & {
     title?: React.ReactNode
   }
   image?: React.ReactNode
-  size?: string
+  size?: ResponsiveValue<'sm' | 'md'>
   bridgeLabel?: string
   BridgeIcon?: IconComponent
   variation?: ChipContentVariation
