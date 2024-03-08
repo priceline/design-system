@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 06 Mar 2024 20:07:53 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Mar 2024 16:04:54 GMT and should not be manually modified.
+
+## 6.7.2
+Fri, 08 Mar 2024 16:04:54 GMT
+
+### Patches
+
+- bug fix for when spinner doesn't spin on mobile devices
 
 ## 6.7.1
 Wed, 06 Mar 2024 20:07:53 GMT

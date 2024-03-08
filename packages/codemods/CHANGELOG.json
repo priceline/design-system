@@ -2,6 +2,18 @@
   "name": "pcln-codemods",
   "entries": [
     {
+      "version": "3.0.13",
+      "tag": "pcln-codemods_v3.0.13",
+      "date": "Fri, 08 Mar 2024 16:04:55 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.7.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.12",
       "tag": "pcln-codemods_v3.0.12",
       "date": "Wed, 06 Mar 2024 20:07:53 GMT",

@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.7.2",
+      "tag": "pcln-design-system_v6.7.2",
+      "date": "Fri, 08 Mar 2024 16:04:54 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bug fix for when spinner doesn't spin on mobile devices",
+            "author": "Andrew <88814075+Andrewleel@users.noreply.github.com>",
+            "commit": "3e78da64d07cf68eed7d8569291f6aed03661ad6"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.7.1",
       "tag": "pcln-design-system_v6.7.1",
       "date": "Wed, 06 Mar 2024 20:07:53 GMT",
