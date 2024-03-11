@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "fix the bug that render children twice.",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

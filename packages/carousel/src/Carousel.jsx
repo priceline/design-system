@@ -174,7 +174,11 @@ export const Carousel = ({
                     onSlideKeyDown(index, e)
                   }}
                 >
-                  <RenderInView index={index} onSlideChange={onSlideChange}>
+                  <RenderInView
+                    index={index}
+                    onSlideChange={onSlideChange}
+                    displayArrowsMobile={displayArrowsMobile}
+                  >
                     <Box p={slideSpacing} height='100%'>
                       {!layout && stretchSlideHeight
                         ? React.cloneElement(item, { style: { 'min-height': '100%' } })

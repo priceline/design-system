@@ -42,7 +42,7 @@ describe('Carousel', () => {
     )
 
     //Slide contains a <Hide> with separate mobile and desktop contents to allow mobile only RenderInView
-    const slide1 = queryAllByText('Slide 1')[1]
+    const slide1 = queryAllByText('Slide 1')[0]
 
     expect(slide1).toBeInTheDocument()
     expect(getByTestId('dot_group')).toBeInTheDocument()
