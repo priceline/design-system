@@ -203,6 +203,46 @@ OverflowAllowed.args = {
   maxHeight: 220,
 }
 
+const OverflowTemplateBottomArrows = (args) => (
+  <Box>
+    <Relative
+      width={1}
+      bg='background.light'
+      zIndex={2}
+      height='80px'
+      borderRadius='xl'
+      mb={[3, 3, 3, 4]}
+      mx={2}
+    >
+      Above
+    </Relative>
+    <Carousel {...args}>{renderOverflowCards()}</Carousel>
+    <Relative
+      width={1}
+      bg='background.light'
+      zIndex={3}
+      height='80px'
+      borderRadius='xl'
+      mt={[5, 3, 3, 5]}
+      mx={2}
+    >
+      Below
+    </Relative>
+  </Box>
+)
+
+export const OverflowArrowsBottomZIndex = OverflowTemplateBottomArrows.bind({ boxShadowSize: 'xl' })
+OverflowArrowsBottomZIndex.args = {
+  visibleSlides: 3,
+  mobileVisibleSlides: [1.1, 2.1, 2.1],
+  arrowsPosition: 'bottom',
+  overflowAllowancePxX: 46,
+  overflowAllowancePxY: 80,
+  overflowAllowancePxTop: 2,
+  maxHeight: 220,
+  arrowButtonZIndex: 2,
+}
+
 //Overflow With backround
 const OverflowBackgroundTemplate = (args) => (
   <Box>

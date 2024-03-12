@@ -1,4 +1,9 @@
 import styled from 'styled-components'
+import { Flex } from 'pcln-design-system'
+
+export const RelativeFlex = styled(Flex)`
+  position: relative;
+`
 
 export const CarouselWrapper = styled.div`
   ${({ maxHeight }) => (maxHeight ? `max-height: ${maxHeight}px;` : '')}

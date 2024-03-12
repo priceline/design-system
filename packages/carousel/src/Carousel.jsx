@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect, cloneElement } from 'react'
 import PropTypes from 'prop-types'
 import { CarouselProvider, Slide, CarouselContext, Slider } from 'pure-react-carousel'
 import { layoutToFlexWidths } from './layoutToFlexWidths'
-import { CarouselWrapper } from './Carousel.styles'
+import { CarouselWrapper, RelativeFlex } from './Carousel.styles'
 import { Flex, Relative, Box, SlideBox } from 'pcln-design-system'
 import { Dots } from './Dots'
 import { ArrowButton } from './ArrowButton'
@@ -70,6 +70,7 @@ export const Carousel = ({
   overflowAllowancePxY = 0,
   overflowAllowancePxTop = 0,
   maxHeight,
+  arrowButtonZIndex,
 }) => {
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
@@ -208,7 +209,12 @@ export const Carousel = ({
           )}
         </Relative>
         {arrowsPosition === 'bottom' || showDots ? (
-          <Flex alignItems='center' justifyContent={ARROW_JUSTIFY_CONTENT[arrowsAlignment]} pt={2}>
+          <RelativeFlex
+            alignItems='center'
+            justifyContent={ARROW_JUSTIFY_CONTENT[arrowsAlignment]}
+            pt={2}
+            zIndex={arrowButtonZIndex}
+          >
             {nodeBesideArrowsLeft && arrowsAlignment === 'right' ? (
               <Box ml={2} mr='auto'>
                 {nodeBesideArrowsLeft}
@@ -232,7 +238,7 @@ export const Carousel = ({
                 {nodeBesideArrowsRight}
               </Box>
             ) : null}
-          </Flex>
+          </RelativeFlex>
         ) : null}
       </CarouselProvider>
     </CarouselWrapper>
@@ -310,4 +316,6 @@ Carousel.propTypes = {
   overflowAllowancePxTop: PropTypes.number,
   /** Number of px to set maxHeight to counteract large overflow values*/
   maxHeight: PropTypes.number,
+  /** z-index for arrow buttons*/
+  arrowButtonZIndex: PropTypes.number,
 }
