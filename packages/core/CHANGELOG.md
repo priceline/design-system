@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 08 Mar 2024 16:04:54 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Mar 2024 14:57:49 GMT and should not be manually modified.
+
+## 6.8.0
+Tue, 12 Mar 2024 14:57:49 GMT
+
+### Minor changes
+
+- Added Tab component
 
 ## 6.7.2
 Fri, 08 Mar 2024 16:04:54 GMT

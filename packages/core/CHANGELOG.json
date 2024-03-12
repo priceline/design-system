@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.8.0",
+      "tag": "pcln-design-system_v6.8.0",
+      "date": "Tue, 12 Mar 2024 14:57:49 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added Tab component",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "544b97d8fdb8b8eaac5856cb7576323e67eb9888"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.7.2",
       "tag": "pcln-design-system_v6.7.2",
       "date": "Fri, 08 Mar 2024 16:04:54 GMT",

@@ -1,6 +1,6 @@
 {
   "name": "pcln-slider",
-  "version": "6.0.13",
+  "version": "6.0.14",
   "description": "React component for range sliders",
   "license": "MIT",
   "author": "Priceline",
@@ -57,7 +57,7 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "pcln-design-system": "^6.7.2",
+    "pcln-design-system": "^6.8.0",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",
     "styled-components": ">=5.3.7 <6"

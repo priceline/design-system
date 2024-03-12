@@ -2,6 +2,31 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "3.1.6",
+      "tag": "pcln-carousel_v3.1.6",
+      "date": "Tue, 12 Mar 2024 14:57:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix the bug that render children twice.",
+            "author": "Caleb Liu <120677881+CalebBoLiuPriceline@users.noreply.github.com>",
+            "commit": "bc37a70ed1caf75306b86f70b517888376322c98"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.8.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.0.14`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.7.2` to `^6.8.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.5",
       "tag": "pcln-carousel_v3.1.5",
       "date": "Fri, 08 Mar 2024 16:04:55 GMT",
