@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.8.1",
+      "tag": "pcln-design-system_v6.8.1",
+      "date": "Tue, 12 Mar 2024 15:43:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix webpack bundling",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "d4c85b6abf753f846bbc052a243a1f7cde6e0a4b"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.8.0",
       "tag": "pcln-design-system_v6.8.0",
       "date": "Tue, 12 Mar 2024 14:57:49 GMT",

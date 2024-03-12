@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 12 Mar 2024 14:57:49 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Mar 2024 15:43:55 GMT and should not be manually modified.
+
+## 6.8.1
+Tue, 12 Mar 2024 15:43:55 GMT
+
+### Patches
+
+- fix webpack bundling
 
 ## 6.8.0
 Tue, 12 Mar 2024 14:57:49 GMT
