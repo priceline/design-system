@@ -52,8 +52,7 @@
   ],
   "sideEffects": false,
   "main": "lib-commonjs/index.js",
-  "module": "lib/index.js",
-  "_module": "dist/pcln-design-system.js",
+  "module": "dist/index.js",
   "modules.root": "lib",
   "typings": "dist/pcln-design-system.d.ts",
   "files": [
@@ -63,8 +62,9 @@
   ],
   "scripts": {
     "analyze": "RSDOCTOR=true heft build --production",
-    "build": "heft test --clean --production",
+    "build": "heft test --clean --production && rushx build:babel",
     "start": "heft build-watch",
+    "build:babel": "babel ./lib --out-dir ./dist --ignore '**/*.stories.*,**/*.spec.*,**/*.test.*'",
     "_phase:build": "heft run --only build -- --clean --production",
     "_phase:test": "heft run --only test -- --clean",
     "build-only": "heft build --clean",
