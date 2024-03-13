@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "3.1.8",
+      "tag": "pcln-carousel_v3.1.8",
+      "date": "Wed, 13 Mar 2024 19:41:02 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add new prop arrowButtonZIndex to allow z index for the arrow buttons",
+            "author": "ryan-hunt-priceline <62948290+ryan-hunt-priceline@users.noreply.github.com>",
+            "commit": "04dad476610aaf426436c5b8be9ccaccb7f945bf"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.7",
       "tag": "pcln-carousel_v3.1.7",
       "date": "Tue, 12 Mar 2024 15:43:55 GMT",

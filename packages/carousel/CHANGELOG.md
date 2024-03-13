@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Tue, 12 Mar 2024 15:43:55 GMT and should not be manually modified.
+This log was last generated on Wed, 13 Mar 2024 19:41:02 GMT and should not be manually modified.
+
+## 3.1.8
+Wed, 13 Mar 2024 19:41:02 GMT
+
+### Patches
+
+- Add new prop arrowButtonZIndex to allow z index for the arrow buttons
 
 ## 3.1.7
 Tue, 12 Mar 2024 15:43:55 GMT
