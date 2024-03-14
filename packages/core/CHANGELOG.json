@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.9.0",
+      "tag": "pcln-design-system_v6.9.0",
+      "date": "Thu, 14 Mar 2024 16:12:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "add new drawer component",
+            "author": "fareedahmad1 <90357103+fareedahmad1@users.noreply.github.com>",
+            "commit": "07b6bc3a1299f7c14b6c3f010d97c9d4cf99147b"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.8.1",
       "tag": "pcln-design-system_v6.8.1",
       "date": "Tue, 12 Mar 2024 15:43:55 GMT",
