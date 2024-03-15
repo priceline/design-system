@@ -22,7 +22,11 @@ function usePopover({
   onOpen,
   onBeforeOpen,
   onBeforeClose,
+  disableFloating,
 }) {
+  const crossAxis = !disableFloating
+  const mainAxis = !disableFloating
+
   const [isOpen, setOpen] = useState(openOnMount)
 
   const handleClose = (e) => {
@@ -65,7 +69,7 @@ function usePopover({
     placement,
     middleware: [
       offset(8),
-      flip({ fallbackPlacements: ['top', 'right', 'bottom', 'left', 'top'] }),
+      flip({ fallbackPlacements: ['top', 'bottom', 'left', 'right'], crossAxis, mainAxis }),
       shift({ padding: 8 }),
       arrow({ element: arrowRef }),
     ],
@@ -84,7 +88,6 @@ function usePopover({
   const { x: arrowX, y: arrowY } = middlewareData?.arrow || {}
 
   const styles = getPopoverStyles({ arrowX, arrowY, placement: actualPlacement, refs, strategy, x, y })
-
   return {
     ...floatingValues,
     arrowRef,

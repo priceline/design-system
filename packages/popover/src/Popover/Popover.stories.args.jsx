@@ -22,6 +22,7 @@ export const defaultArgs = {
   placement: 'top',
   onClose: action('Popover Close'),
   onOpen: action('Popover Open'),
+  disableFloating: false,
 }
 
 export const argTypes = {
@@ -31,6 +32,15 @@ export const argTypes = {
     control: {
       type: 'select',
     },
+  },
+  disableFloating: {
+    name: 'disableFloating',
+    description: 'Disable floating-ui',
+    table: {
+      defaultValue: { summary: 'Sets crossAxis and mainAxis in the floating-ui' },
+    },
+    type: { name: 'boolean', required: false },
+    control: { type: 'boolean' },
   },
   onClose: { action: true },
   onMinimize: { action: true },

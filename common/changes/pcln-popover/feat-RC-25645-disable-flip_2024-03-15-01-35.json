@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Use new prop \"diableFloating\" to toggle the mainAxis and crossAxis of the floating-ui middleware. ",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
