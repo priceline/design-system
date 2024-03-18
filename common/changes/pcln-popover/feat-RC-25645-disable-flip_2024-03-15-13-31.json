@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "Optionally disable floating for pcln-popover",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

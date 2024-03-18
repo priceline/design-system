@@ -202,6 +202,24 @@ const SimpleTextContent = () => (
   </Box>
 )
 
+const LongTextContent = () => (
+  <Box p={2}>
+    <Text textStyle='heading2'> Disable Floating: </Text>
+    <Text textStyle='heading5'>
+      {' '}
+      When the prop disableFloating is set to true, the popover will not float on the screen. Resize your
+      window/view-port to see the effect.{' '}
+    </Text>
+    <Text textAlign='center'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.
+    </Text>
+  </Box>
+)
+
 const InnerContent = ({ handleClose }) => (
   <Box p={4}>
     <Absolute top={15} right={15}>
@@ -334,3 +352,58 @@ export const RendersOnSpecificArea = {
     await new Promise((resolve) => setTimeout(resolve, 2000))
   },
 }
+
+export const DisableFloating = (args) => (
+  <Flex flexDirection='row' justifyContent='space-between'>
+    <Flex m={200}>
+      <Popover
+        {...args}
+        disableFloating={false}
+        isOpen
+        color='primary'
+        openOnHover={false}
+        renderContent={LongTextContent}
+        placement='bottom'
+        ariaLabel='Default Popover'
+        width={330}
+      >
+        <Button color='primary' mx={2}>
+          Open popover (disableFloating=false )
+        </Button>
+      </Popover>
+    </Flex>
+    <Flex m={200}>
+      <Popover
+        {...args}
+        isOpen
+        disableFloating
+        color='primary'
+        openOnHover={false}
+        renderContent={LongTextContent}
+        placement='bottom'
+        ariaLabel='Default Popover'
+        width={330}
+      >
+        <Button color='primary' mx={2}>
+          Open popover (disableFloating=true)
+        </Button>
+      </Popover>
+    </Flex>
+    <Flex m={200}>
+      <Popover
+        {...args}
+        isOpen
+        color='secondary'
+        openOnHover={false}
+        renderContent={LongTextContent}
+        placement='bottom'
+        ariaLabel='Default Popover'
+        width={330}
+      >
+        <Button color='secondary' mx={2}>
+          Open popover (disableFloating using storybook control)
+        </Button>
+      </Popover>
+    </Flex>
+  </Flex>
+)

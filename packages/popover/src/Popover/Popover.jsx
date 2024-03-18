@@ -9,6 +9,7 @@ function Popover({
   ariaLabel,
   borderRadius = 'xl',
   children,
+  disableFloating,
   hideOverlay,
   isOpen,
   openOnFocus,
@@ -41,6 +42,7 @@ function Popover({
     onBeforeOpen,
     onClose,
     onBeforeClose,
+    disableFloating,
   })
 
   return (
@@ -100,6 +102,7 @@ Popover.propTypes = {
   stopPropagation: PropTypes.bool,
   onBeforeOpen: PropTypes.func,
   onBeforeClose: PropTypes.func,
+  disableFloating: PropTypes.bool,
 }
 
 Popover.defaultProps = {
@@ -107,6 +110,7 @@ Popover.defaultProps = {
   toggleIsOpenOnClick: true,
   display: 'inline-block',
   stopPropagation: true,
+  disableFloating: false,
 }
 
 export default Popover
