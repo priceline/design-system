@@ -1,6 +1,14 @@
 # Change Log - pcln-popover
 
-This log was last generated on Thu, 14 Mar 2024 16:12:27 GMT and should not be manually modified.
+This log was last generated on Mon, 18 Mar 2024 19:14:53 GMT and should not be manually modified.
+
+## 6.1.0
+Mon, 18 Mar 2024 19:14:53 GMT
+
+### Minor changes
+
+- Use new prop "diableFloating" to toggle the mainAxis and crossAxis of the floating-ui middleware. 
+- Optionally disable floating for pcln-popover
 
 ## 6.0.16
 Thu, 14 Mar 2024 16:12:27 GMT

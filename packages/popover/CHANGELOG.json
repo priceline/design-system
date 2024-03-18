@@ -2,6 +2,25 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "6.1.0",
+      "tag": "pcln-popover_v6.1.0",
+      "date": "Mon, 18 Mar 2024 19:14:53 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Use new prop \"diableFloating\" to toggle the mainAxis and crossAxis of the floating-ui middleware. ",
+            "author": "Keith L <LKeithLopez@users.noreply.github.com>",
+            "commit": "cab393c20ec5a0feb380322bfe7cff676b9a23c2"
+          },
+          {
+            "comment": "Optionally disable floating for pcln-popover",
+            "author": "Keith L <LKeithLopez@users.noreply.github.com>",
+            "commit": "cab393c20ec5a0feb380322bfe7cff676b9a23c2"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.16",
       "tag": "pcln-popover_v6.0.16",
       "date": "Thu, 14 Mar 2024 16:12:27 GMT",
