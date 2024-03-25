@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Updated Select to use pointer while hovering",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
