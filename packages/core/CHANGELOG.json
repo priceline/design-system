@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.10.0",
+      "tag": "pcln-design-system_v6.10.0",
+      "date": "Tue, 26 Mar 2024 16:10:52 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Updated Select to use pointer while hovering",
+            "author": "JordonHong <156821810+JordonHong@users.noreply.github.com>",
+            "commit": "4daf2c37dcc4ceabd4f7f7c7909d4b33708da3cb"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.9.0",
       "tag": "pcln-design-system_v6.9.0",
       "date": "Thu, 14 Mar 2024 16:12:27 GMT",

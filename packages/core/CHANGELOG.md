@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 14 Mar 2024 16:12:27 GMT and should not be manually modified.
+This log was last generated on Tue, 26 Mar 2024 16:10:52 GMT and should not be manually modified.
+
+## 6.10.0
+Tue, 26 Mar 2024 16:10:52 GMT
+
+### Minor changes
+
+- Updated Select to use pointer while hovering
 
 ## 6.9.0
 Thu, 14 Mar 2024 16:12:27 GMT
