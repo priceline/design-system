@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.2.0",
+      "tag": "pcln-icons_v6.2.0",
+      "date": "Tue, 26 Mar 2024 13:26:17 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Added new folded map icon",
+            "author": "Christine Lee <118480924+stinejlee@users.noreply.github.com>",
+            "commit": "83333e4bceef96cb8f2993519fddae0f9afd9990"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.0",
       "tag": "pcln-icons_v6.1.0",
       "date": "Wed, 06 Mar 2024 20:07:53 GMT",
