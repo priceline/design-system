@@ -57,6 +57,10 @@ exports[`Select renders 1`] = `
   display: none;
 }
 
+.c2:hover {
+  cursor: pointer;
+}
+
 .c2:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;

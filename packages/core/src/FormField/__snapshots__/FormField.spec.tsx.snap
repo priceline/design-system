@@ -306,6 +306,10 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   display: none;
 }
 
+.c10:hover {
+  cursor: pointer;
+}
+
 .c10:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
@@ -1048,6 +1052,10 @@ exports[`FormField renders with Select  1`] = `
   display: none;
 }
 
+.c4:hover {
+  cursor: pointer;
+}
+
 .c4:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
@@ -1249,6 +1257,10 @@ exports[`FormField renders with Select and Icon 1`] = `
 
 .c8::-ms-expand {
   display: none;
+}
+
+.c8:hover {
+  cursor: pointer;
 }
 
 .c8:disabled {

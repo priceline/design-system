@@ -6,12 +6,12 @@ import { getPaletteColor } from '../utils/utils'
 import { Select } from './Select'
 
 describe('Select', () => {
-  test('renders', () => {
+  it('renders', () => {
     const json = rendererCreateWithTheme(<Select />).toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  test('it renders disabled', () => {
+  it('renders disabled', () => {
     const paletteTheme = createTheme(theme)
     render(
       <Select data-testId='disabled-select' defaultValue='Premium Economy' disabled>
@@ -38,7 +38,7 @@ describe('Select', () => {
       it('should render correctly', () => {
         const paletteTheme = createTheme(theme)
         render(
-          <Select data-testId='select' defaultValue='Premium Economy' variation='subtle'>
+          <Select data-testId='select' defaultValue='Premium Economy' variation='subtle' size='lg'>
             <option>Premium Economy</option>
           </Select>
         )
@@ -54,6 +54,7 @@ describe('Select', () => {
         )
         expect(select).toHaveStyleRule('color', getPaletteColor('primary.base')({ theme: paletteTheme }))
         expect(select).toHaveStyleRule('font-weight', 'bold')
+        expect(select).toHaveStyleRule('border-radius', '12px')
         expect(select).toHaveStyleRule(
           'background-color',
           getPaletteColor('background.tint')({ theme: paletteTheme }),
@@ -85,6 +86,17 @@ describe('Select', () => {
             modifier: ':focus-visible',
           }
         )
+      })
+
+      it('should render with round border in small or medium sizes', () => {
+        render(
+          <Select data-testId='select' defaultValue='Premium Economy' variation='subtle' size='md'>
+            <option>Premium Economy</option>
+          </Select>
+        )
+
+        const select = screen.getByTestId('select')
+        expect(select).toHaveStyleRule('border-radius', '9999px')
       })
 
       it('should render correctly when disabled', () => {

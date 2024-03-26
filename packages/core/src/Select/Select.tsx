@@ -103,6 +103,10 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
     display: none;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:disabled {
     background-color: ${getPaletteColor('background.light')};
     color: ${getPaletteColor('text.light')};
