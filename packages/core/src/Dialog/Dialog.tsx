@@ -33,6 +33,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   triggerNode?: React.ReactNode
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
+  innerContentScroll?: boolean
   showScrollShadow?: boolean
 }
 
@@ -65,6 +66,7 @@ const PclnDialog = ({
   overflowY = 'auto',
   onOpenChange,
   showScrollShadow,
+  innerContentScroll = true,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
@@ -82,6 +84,7 @@ const PclnDialog = ({
         {_open && (
           <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet} zIndex={zIndex}>
             <DialogContent
+              innerContentScroll={innerContentScroll}
               overflowX={overflowX}
               overflowY={overflowY}
               ariaDescription={ariaDescription}

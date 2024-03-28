@@ -173,6 +173,7 @@ export const DialogContent = ({
   overflowX,
   overflowY,
   showScrollShadow,
+  innerContentScroll,
 }: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
@@ -254,7 +255,7 @@ export const DialogContent = ({
               )}
             </SmoothTransitionBox>
           ) : (
-            <Box height='100%' style={{ overflowY: 'scroll' }}>
+            <Box height='100%' style={innerContentScroll && { overflowY: 'scroll' }}>
               {children}
             </Box>
           )}
