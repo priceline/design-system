@@ -147,7 +147,7 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
 }
 
 const SmoothTransitionBox = styled(Box)`
-  ${(props) => (props.innerContentScroll ? 'overflow-y: scroll' : 'overflow-y: auto')};
+  ${(props) => (props.innerContentScroll ? 'overflow: scroll' : 'overflow: auto')};
   transition: all 0.3s ease-in-out;
 `
 
