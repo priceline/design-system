@@ -51,8 +51,8 @@
     }
   ],
   "sideEffects": false,
-  "main": "lib-commonjs/index.js",
-  "module": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "modules.root": "lib",
   "typings": "dist/pcln-design-system.d.ts",
   "files": [
@@ -62,9 +62,10 @@
   ],
   "scripts": {
     "analyze": "RSDOCTOR=true heft build --production",
-    "build": "heft test --clean --production && rushx build:babel",
+    "build": "heft test --clean --production && run-p build:babel:*",
     "start": "heft build-watch",
-    "build:babel": "babel ./lib --out-dir ./dist --ignore '**/*.stories.*,**/*.spec.*,**/*.test.*'",
+    "build:babel:esm": "babel ./lib --out-dir ./dist/esm --ignore '**/*.stories.*,**/*.spec.*,**/*.test.*'",
+    "build:babel:cjs": "babel --config-file ./babel.config.cjs.json ./lib --out-dir ./dist/cjs --ignore '**/*.stories.*,**/*.spec.*,**/*.test.*'",
     "_phase:build": "heft run --only build -- --clean --production",
     "_phase:test": "heft run --only test -- --clean",
     "build-only": "heft build --clean",
