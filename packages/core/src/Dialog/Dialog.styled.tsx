@@ -260,7 +260,7 @@ export const DialogContent = ({
               )}
             </SmoothTransitionBox>
           ) : (
-            <Box height='100%' style={innerContentScroll ? { overflowY: 'scroll' } : {}}>
+            <Box height='100%' style={innerContentScroll ? { overflowY: 'scroll' } : undefined}>
               {children}
             </Box>
           )}
