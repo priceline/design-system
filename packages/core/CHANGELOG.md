@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 26 Mar 2024 16:10:52 GMT and should not be manually modified.
+This log was last generated on Tue, 02 Apr 2024 19:27:27 GMT and should not be manually modified.
+
+## 6.11.0
+Tue, 02 Apr 2024 19:27:27 GMT
+
+### Minor changes
+
+- Added new prop to dialog innerContentScroll
+- transpile commonjs output with babel-plugin-styled-components
 
 ## 6.10.0
 Tue, 26 Mar 2024 16:10:52 GMT
