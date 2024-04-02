@@ -147,7 +147,7 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
 }
 
 const SmoothTransitionBox = styled(Box)`
-  overflow: scroll;
+  overflow: ${(props) => (props.innerContentScroll ? 'scroll' : 'auto')};
   transition: all 0.3s ease-in-out;
 `
 
@@ -173,6 +173,7 @@ export const DialogContent = ({
   overflowX,
   overflowY,
   showScrollShadow,
+  innerContentScroll,
 }: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
@@ -246,7 +247,12 @@ export const DialogContent = ({
             </Grid>
           )}
           {showScrollShadow ? (
-            <SmoothTransitionBox style={{ boxShadow }} height='100%' onScroll={onScrollHandler}>
+            <SmoothTransitionBox
+              innerContentScroll={innerContentScroll}
+              style={{ boxShadow }}
+              height='100%'
+              onScroll={onScrollHandler}
+            >
               {React.Children.map(children, (child) =>
                 React.cloneElement(child as ReactElement, {
                   onScroll: onScrollHandler,
@@ -254,7 +260,7 @@ export const DialogContent = ({
               )}
             </SmoothTransitionBox>
           ) : (
-            <Box height='100%' style={{ overflowY: 'scroll' }}>
+            <Box height='100%' style={innerContentScroll ? { overflowY: 'scroll' } : undefined}>
               {children}
             </Box>
           )}

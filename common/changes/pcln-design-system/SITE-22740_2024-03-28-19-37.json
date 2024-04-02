@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Added new prop to dialog innerContentScroll",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
