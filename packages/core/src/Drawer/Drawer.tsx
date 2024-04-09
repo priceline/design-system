@@ -2,14 +2,15 @@ import React from 'react'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
-import { DrawerRoot, PlacementOptions, DrawerWrapper, HeaderButton } from './Drawer.styled'
+import { DrawerRoot, DrawerWrapper, HeaderButton } from './Drawer.styled'
 import { ChevronDown, Close } from 'pcln-icons'
 import { AnimatePresence, motion } from 'framer-motion'
 import { SpaceProps, LayoutProps } from 'styled-system'
 import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
 import { MotionVariants } from '../Animate/Animate'
 
-type DrawerProps = SpaceProps &
+export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
+export type DrawerProps = SpaceProps &
   LayoutProps & {
     heading?: string | React.ReactNode
     isCollapsed?: boolean

@@ -7,6 +7,7 @@ import { Absolute } from '../Absolute/Absolute'
 import { getPaletteColor } from '../utils'
 import { Box } from '../Box/Box'
 import { IconButton } from '../IconButton/IconButton'
+import { PlacementOptions } from './Drawer'
 
 const Component = React.forwardRef((props, ref: React.MutableRefObject<HTMLDivElement>) => (
   <Box {...props} ref={ref} />
@@ -30,7 +31,7 @@ const getBorderRadiusStyles = (placement, isFloating) => {
       return `0px ${themeRadius} ${themeRadius} 0px`
   }
 }
-export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
+
 const positions: Record<PlacementOptions, string> = {
   top: `top:0; left:0; right:0;`,
   right: `right: 0; bottom:0;`,
