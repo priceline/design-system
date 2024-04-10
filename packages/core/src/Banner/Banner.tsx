@@ -99,12 +99,14 @@ export function Banner(props: BannerProps): React.ReactElement {
   return (
     <StyledBox {...props} bg={bannerColor.backgroundColor || props.bg} color={color}>
       <Flex justifyContent='space-between' alignItems='flex-start'>
-        {!!Icon && !!props.showIcon && React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
-        <Box textAlign={props.textAlign} width={1}>
-          {header}
-          <Text.span fontSize={1}>{props.text}</Text.span>
-          {props.children}
-        </Box>
+        <Flex alignItems='center'>
+          {!!Icon && !!props.showIcon && React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
+          <Box textAlign={props.textAlign} width={1}>
+            {header}
+            <Text.span fontSize={1}>{props.text}</Text.span>
+            {props.children}
+          </Box>
+        </Flex>
         {!!props.onClose && <CloseButton onClick={props.onClose} ml={2} size={24} title='close' mt='-2px' />}
       </Flex>
     </StyledBox>
