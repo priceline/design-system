@@ -38,6 +38,7 @@ export type MotionVariant =
   | 'slideOutRight'
   | 'slideInRight'
   | 'spin'
+  | 'layout'
 
 /**
  * @public
@@ -50,6 +51,7 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
   fadeIn: {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
+    exit: { opacity: 0 },
   },
   // schwoop: {
   //   initial: { scale: 0, width: 0, height: 0 },
@@ -119,6 +121,7 @@ export const MotionVariants: Record<MotionVariant, HTMLMotionProps<'div'>> = {
     animate: { rotate: 360, height: 'auto' },
     transition: { duration: 1, repeat: Infinity, ease: 'linear' },
   },
+  layout: {},
 }
 
 /**
@@ -129,16 +132,18 @@ export type AnimateProps = {
   variant: MotionVariant
   transition?: TransitionVariant
   override?: HTMLMotionProps<'div'>
+  delay?: number
 }
 
 /**
  * @public
  */
 export const Animate = (props: AnimateProps) => {
-  const { children, variant, transition, override } = props
+  const { children, variant, transition, override, delay = 0 } = props
   return (
     <motion.div
-      transition={TransitionVariants[transition ?? 'default']}
+      layout={variant === 'layout'}
+      transition={{ ...TransitionVariants[transition ?? 'default'], delay }}
       {...MotionVariants[variant]}
       {...override}
     >

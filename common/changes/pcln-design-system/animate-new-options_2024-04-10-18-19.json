@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Animate - add in layout option",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

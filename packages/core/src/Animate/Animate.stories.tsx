@@ -2,7 +2,7 @@
 import { expect } from '@storybook/jest'
 import type { Meta, StoryObj } from '@storybook/react'
 import { userEvent, within } from '@storybook/testing-library'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box } from '../Box/Box'
 import { Button } from '../Button/Button'
 import { ChoiceChip } from '../Chip/ChoiceChip/ChoiceChip'
@@ -10,6 +10,7 @@ import { Flex } from '../Flex/Flex'
 import { Image } from '../Image/Image'
 import { Text } from '../Text/Text'
 import { Animate, MotionVariant, MotionVariants, TransitionVariant, TransitionVariants } from './Animate'
+import { ExampleCard } from './Animate.stories.exampleCard'
 
 const meta: Meta<typeof Animate> = {
   component: Animate,
@@ -181,5 +182,21 @@ export const SpinAnimation = () => {
         <Button m={2}>Spin!</Button>
       </Animate>
     </Flex>
+  )
+}
+
+export const LoadingAnimationExamples = () => {
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 500)
+  }, [])
+  return (
+    <Box>
+      <ExampleCard isLoading={isLoading} />
+      <ExampleCard isLoading={isLoading} seatsAvailable />
+      <ExampleCard isLoading={isLoading} />
+    </Box>
   )
 }
