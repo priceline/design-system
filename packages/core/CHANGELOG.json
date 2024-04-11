@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.12.0",
+      "tag": "pcln-design-system_v6.12.0",
+      "date": "Thu, 11 Apr 2024 15:00:13 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "export drawer component",
+            "author": "fareedahmad1 <90357103+fareedahmad1@users.noreply.github.com>",
+            "commit": "c6671e59965bd42e522224a5ce4e9e55923bb44b"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.11.0",
       "tag": "pcln-design-system_v6.11.0",
       "date": "Tue, 02 Apr 2024 19:27:27 GMT",

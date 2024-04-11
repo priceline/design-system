@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 02 Apr 2024 19:27:27 GMT and should not be manually modified.
+This log was last generated on Thu, 11 Apr 2024 15:00:13 GMT and should not be manually modified.
+
+## 6.12.0
+Thu, 11 Apr 2024 15:00:13 GMT
+
+### Minor changes
+
+- export drawer component
 
 ## 6.11.0
 Tue, 02 Apr 2024 19:27:27 GMT
