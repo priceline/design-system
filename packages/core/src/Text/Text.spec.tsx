@@ -16,13 +16,13 @@ describe('Text', () => {
   })
 
   test('regular prop sets font-weight', () => {
-    const json = rendererCreateWithTheme(<Text regular />).toJSON()
+    const json = rendererCreateWithTheme(<Text fontWeight='regular' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-weight', theme.regular.toString())
   })
 
   test('bold prop sets font-weight', () => {
-    const json = rendererCreateWithTheme(<Text bold />).toJSON()
+    const json = rendererCreateWithTheme(<Text fontWeight='bold' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('font-weight', theme.bold.toString())
   })

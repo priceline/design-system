@@ -40,6 +40,11 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
 /**
  * @public
  */
+export type DialogComponentProps = DialogProps & { hasFooterContent?: boolean }
+
+/**
+ * @public
+ */
 const PclnDialog = ({
   ariaDescription,
   ariaTitle,

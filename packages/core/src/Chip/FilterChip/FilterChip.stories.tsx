@@ -215,50 +215,50 @@ export const CustomChip = () => (
   <Box m={2}>
     <FilterChip id='customChip1' name='customFilterChipName1' m={1}>
       <Box px={3} py={1}>
-        <Text textAlign='center' bold fontSize={1}>
+        <Text textAlign='center' fontWeight='bold' fontSize={1}>
           Browse All
         </Text>
-        <Text textAlign='center' regular fontSize={0}>
+        <Text textAlign='center' fontWeight='regular' fontSize={0}>
           $161 avg. per night
         </Text>
       </Box>
     </FilterChip>
     <FilterChip id='customChip2' name='customFilterChipName2' selected m={1}>
       <Box px={3} py={1}>
-        <Text textAlign='center' bold fontSize={1}>
+        <Text textAlign='center' fontWeight='bold' fontSize={1}>
           Pricebreakers
         </Text>
-        <Text textAlign='center' regular fontSize={0}>
+        <Text textAlign='center' fontWeight='regular' fontSize={0}>
           Save up to 60%
         </Text>
       </Box>
     </FilterChip>
     <FilterChip id='customChip3' name='customFilterChipName3' m={1}>
       <Box px={3} py={1}>
-        <Text textAlign='center' bold fontSize={1}>
+        <Text textAlign='center' fontWeight='bold' fontSize={1}>
           Express Deals
         </Text>
-        <Text textAlign='center' regular fontSize={0}>
+        <Text textAlign='center' fontWeight='regular' fontSize={0}>
           <Text.span color='green'>$130</Text.span> avg. per night
         </Text>
       </Box>
     </FilterChip>
     <FilterChip id='customChip4' name='customFilterChipName3' m={1} disabled>
       <Box px={3} py={1}>
-        <Text textAlign='center' bold fontSize={1}>
+        <Text textAlign='center' fontWeight='bold' fontSize={1}>
           Express Deals
         </Text>
-        <Text textAlign='center' regular fontSize={0}>
+        <Text textAlign='center' fontWeight='regular' fontSize={0}>
           <Text.span color='green'>$130</Text.span> avg. per night
         </Text>
       </Box>
     </FilterChip>
     <FilterChip id='customChip5' name='customFilterChipName3' m={1} disabled selected>
       <Box px={3} py={1}>
-        <Text textAlign='center' bold fontSize={1}>
+        <Text textAlign='center' fontWeight='bold' fontSize={1}>
           Express Deals
         </Text>
-        <Text textAlign='center' regular fontSize={0}>
+        <Text textAlign='center' fontWeight='regular' fontSize={0}>
           <Text.span color='green'>$130</Text.span> avg. per night
         </Text>
       </Box>

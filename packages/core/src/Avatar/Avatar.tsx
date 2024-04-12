@@ -6,7 +6,7 @@ import { Flex } from '../Flex/Flex'
 import { Heading } from '../Heading/Heading'
 import { Text } from '../Text/Text'
 
-const StyledImage = styled(Box)`
+const StyledImage = styled(Box)<AvatarProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@ export function Avatar({
       <StyledImage
         role='img'
         src={src}
-        alt={altText}
+        alt={altText} // Box (<div>) doesn't support alt
         size={size}
         minWidth={size}
         color={color}

@@ -18,7 +18,9 @@ const ColorList = (props) =>
     </Column>
   ))
 
-export const SectionTitle = (props) => <Heading.h3 fontSize={[2, 3]} bold mt={[2, 4]} {...props} />
+export const SectionTitle = (props) => (
+  <Heading.h3 fontSize={[2, 3]} fontWeight='bold' mt={[2, 4]} {...props} />
+)
 
 const defaultPalette = createTheme().palette
 

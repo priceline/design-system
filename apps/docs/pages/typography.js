@@ -21,7 +21,7 @@ const Typography = () => (
     </Box>
     <Box py={4}>
       <Heading mb={4}>Font Weight Regular</Heading>
-      <Heading bold mb={4}>
+      <Heading fontWeight='bold' mb={4}>
         Font Weight Bold
       </Heading>
     </Box>

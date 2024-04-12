@@ -127,7 +127,7 @@
     "react-test-renderer": "^18.2.0",
     "react-textarea-autosize": "^8.5.3",
     "require-from-string": "2.0.2",
-    "styled-components": "^5.3.11",
+    "styled-components": "^6.1.8",
     "tslib": "^2.4.0",
     "typescript": "^5.3.3"
   },
@@ -136,7 +136,6 @@
     "pcln-icons": "^6",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",
-    "styled-components": ">=5.3.7 <6"
-  },
-  "modules.root": "dist/esm"
+    "styled-components": "^5 || ^6"
+  }
 }

@@ -103,13 +103,13 @@ export const TextTransform = () => (
   </div>
 )
 
-export const Regular = () => <Text regular>Hello Regular</Text>
+export const Regular = () => <Text fontWeight='regular'>Hello Regular</Text>
 
-export const Bold = () => <Text bold>Hello Bold</Text>
+export const Bold = () => <Text fontWeight='bold'>Hello Bold</Text>
 
 export const Caps = () => <Text caps>Hello Caps</Text>
 
-export const Italic = () => <Text italic>Hello italic</Text>
+export const Italic = () => <Text fontWeight='italic'>Hello italic</Text>
 
 export const Strikethrough = () => <Text.s>Hello Strikethrough</Text.s>
 

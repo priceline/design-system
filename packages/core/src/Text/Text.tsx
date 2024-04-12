@@ -47,11 +47,7 @@ export const caps = (props) => {
     return null
   }
 
-  return props?.caps
-    ? {
-        textTransform: 'uppercase',
-      }
-    : null
+  return props?.caps ? `text-transform: uppercase;` : null
 }
 
 export const regular = (props) => (props.regular ? { fontWeight: props.theme.regular } : null)
@@ -89,11 +85,16 @@ export type TextProps = DisplayProps &
   WidthProps &
   ZIndexProps & {
     bg?: string
+    caps?: boolean
     children?: React.ReactNode
     color?: string
+    textStyle?: string
+    textDecoration?: string
+    textTransform?: string
+    colorScheme?: string
   }
 
-const textProps: React.FC<TextProps> = css`
+const textProps = css<TextProps>`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
@@ -134,22 +135,29 @@ const textAttrs = (props: TextProps) => ({
   ...textAlignAttrs(props),
 })
 
+export type _Text = typeof Span & {
+  span: typeof Span
+  p: typeof Paragraph
+  s: typeof Strike
+  displayName?: string
+}
+
 /**
  * @public
  */
-export const Text = styled.div.attrs(textAttrs)`
+export const Text: _Text = styled.div.attrs<TextProps, TextProps>(textAttrs)`
   ${textProps}
 `
 
-const Span = styled.span.attrs(textAttrs)`
+const Span = styled.span.attrs<TextProps, TextProps>(textAttrs)`
   ${textProps}
 `
 
-const Paragraph = styled.p.attrs(textAttrs)`
+const Paragraph = styled.p.attrs<TextProps, TextProps>(textAttrs)`
   ${textProps}
 `
 
-const Strike = styled.s.attrs(textAttrs)`
+const Strike = styled.s.attrs<TextProps, TextProps>(textAttrs)`
   ${textProps}
 `
 

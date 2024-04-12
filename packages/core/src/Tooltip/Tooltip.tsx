@@ -4,6 +4,8 @@ import styled, { withTheme } from 'styled-components'
 import { Box } from '../Box/Box'
 import { PaletteColor } from '../theme/theme'
 import { applyVariations, colorScheme, getPaletteColor } from '../utils/utils'
+import { BorderRadiusValues } from '../utils/attrs/borderRadiusAttrs'
+import { ColorSchemeName } from '../theme/theme'
 
 const arrowShadow = (props) => {
   return props.top
@@ -61,7 +63,7 @@ const tooltipAlign = (props) => {
     : null
 }
 
-const TooltipContent = styled(Box)`
+const TooltipContent = styled(Box)<TooltipProps>`
   display: inline;
   font-size: ${({ theme }) => theme.fontSizes[0]}px;
   position: absolute;
@@ -108,8 +110,10 @@ const defaultProps = {
  * @public
  */
 export type TooltipProps = {
-  children?: React.ReactNode
   bg?: PaletteColor
+  borderRadius?: BorderRadiusValues
+  children?: React.ReactNode
+  colorScheme?: ColorSchemeName
   color?: PaletteColor
   bottom?: boolean
   top?: boolean
@@ -119,7 +123,7 @@ export type TooltipProps = {
   zIndex?: number | string
 }
 
-function _Tooltip({ children, ...props }: TooltipProps): React.ReactElement {
+export function TooltipComponent({ children, ...props }: TooltipProps): React.ReactElement {
   return (
     <div style={{ position: 'relative', zIndex: props.zIndex }}>
       <TooltipContent p={2} mb={3} mt={2} boxShadowSize='md' {...props}>
@@ -129,9 +133,9 @@ function _Tooltip({ children, ...props }: TooltipProps): React.ReactElement {
   )
 }
 
-_Tooltip.defaultProps = defaultProps
+TooltipComponent.defaultProps = defaultProps
 
 /**
  * @public
  */
-export const Tooltip = withTheme(_Tooltip)
+export const Tooltip: typeof TooltipComponent = withTheme(TooltipComponent)

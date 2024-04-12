@@ -122,7 +122,7 @@ export const Tab = ({
       <Tabs.Root defaultValue={`tab-${defaultValue}`}>
         <TabList orientation='vertical' aria-label={ariaLabel}>
           <Grid gap={tabGap}>
-            {tabsData.map((tab, index) => (
+            {tabsData.map((tab) => (
               <>{renderTab(tab)}</>
             ))}
           </Grid>

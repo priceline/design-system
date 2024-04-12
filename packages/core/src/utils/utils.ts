@@ -408,10 +408,14 @@ export const borders = (props) => {
   }
 }
 
+export type ColorSchemeProps = {
+  colorScheme?: string
+}
+
 /**
  * @public
  */
-export const colorScheme = ({ colorScheme, ...props }) => {
+export const colorScheme = ({ colorScheme, ...props }: ColorSchemeProps) => {
   if (!colorScheme) return ''
 
   const { foreground, background } = themeGet(`colorSchemes.${colorScheme}`)(props)
@@ -457,10 +461,15 @@ export const colorSchemeCustomForeground = ({ colorScheme, color, iconUsesColorS
   `
 }
 
+export type TextTransformProps = {
+  textTransform?: string
+}
+
 /**
  * @public
  */
-export const textTransform = (props) => (props.textTransform ? { textTransform: props.textTransform } : null)
+export const textTransform = (props: TextTransformProps) =>
+  props.textTransform ? `text-transform: ${props.textTransform};` : null
 
 /**
  * @public

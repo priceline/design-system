@@ -28,7 +28,12 @@ export const borderRadiusValues = [
   'action-sm',
   'action-md',
   'action-lg',
-]
+] as const
+
+/**
+ * @public
+ */
+export type BorderRadiusValues = { [K in (typeof borderRadiusValues)[number]]: string }
 
 function calculateRoundedProps(radius, rounded) {
   let topRight = 0,

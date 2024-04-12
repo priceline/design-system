@@ -106,7 +106,9 @@ Table.defaultProps = {
   my: 3,
 }
 
-export const PageTitle = (props) => <Heading.h1 fontSize={[5, 6]} bold mt={[2, 5]} mb={3} {...props} />
+export const PageTitle = (props) => (
+  <Heading.h1 fontSize={[5, 6]} fontWeight='bold' mt={[2, 5]} mb={3} {...props} />
+)
 
 export const Description = (props) => <Text fontSize={[2, 3]} mb={3} {...props} />
 
