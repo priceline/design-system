@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add ChevronDoubleLeft and ChevronDoubleRight icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
