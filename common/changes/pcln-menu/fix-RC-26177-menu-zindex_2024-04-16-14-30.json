@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "Adding zindex to menu",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

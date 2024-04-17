@@ -18,6 +18,7 @@ function Menu({
   placement,
   children,
   querySelectorPortal,
+  zIndex,
   ...props
 }) {
   const MenuContent = ({ handleClose }) => (
@@ -67,7 +68,7 @@ function Menu({
         renderContent={MenuContent}
         trapFocus={trapFocus}
         width={width}
-        zIndex={1600}
+        zIndex={zIndex}
         querySelectorPortal={`.${querySelectorPortal}`}
         {...props}
       >
@@ -95,12 +96,14 @@ Menu.propTypes = {
   placement: PropTypes.string,
   children: PropTypes.node,
   querySelectorPortal: PropTypes.string,
+  zIndex: PropTypes.number,
 }
 
 Menu.defaultProps = {
   size: 'singleColumn',
   trapFocus: true,
   width: '650px',
+  zIndex: 1600,
 }
 
 export default Menu
