@@ -2,6 +2,20 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.0.23",
+      "tag": "pcln-menu_v6.0.23",
+      "date": "Wed, 17 Apr 2024 14:01:25 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Adding zindex to menu",
+            "author": "Jonathan Ligi <jonathan.ligi@priceline.com>",
+            "commit": "7a6d6c8f9f0b4bf9ff3e24e6f31ecf7cb5f816e2"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.22",
       "tag": "pcln-menu_v6.0.22",
       "date": "Mon, 15 Apr 2024 19:21:32 GMT",
