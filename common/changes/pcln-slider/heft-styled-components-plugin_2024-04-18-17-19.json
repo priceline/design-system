@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "use heft-styled-components-plugin",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "use heft-styled-components-plugin",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

@@ -40,6 +40,12 @@
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft-api-extractor-plugin"
           }
+        },
+        "styled-components": {
+          "taskDependencies": ["typescript"],
+          "taskPlugin": {
+            "pluginPackage": "heft-styled-components-plugin"
+          }
         }
       }
     },
