@@ -50,7 +50,7 @@ function MenuList({ id, children, color, size, height, handleClose }) {
 
   useEffect(() => {
     setCurrentItemId(currentItemRef.current?.id)
-    currentItemRef.current?.focus()
+    currentItemRef.current?.focus({ preventScroll: true })
   }, [])
 
   const handleKeyDown = useCallback((evt) => {
