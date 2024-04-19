@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.4.0",
+      "tag": "pcln-icons_v6.4.0",
+      "date": "Fri, 19 Apr 2024 15:08:16 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add subdirectory icon",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "2cb31b6ae810f3924c3ae5b97318be6ab07cba82"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.3.0",
       "tag": "pcln-icons_v6.3.0",
       "date": "Mon, 15 Apr 2024 19:21:32 GMT",

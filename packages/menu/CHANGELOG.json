@@ -2,6 +2,27 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.0.24",
+      "tag": "pcln-menu_v6.0.24",
+      "date": "Fri, 19 Apr 2024 15:08:16 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.4.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.1.6`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^6.3.0` to `^6.4.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^6.1.5` to `^6.1.6`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.23",
       "tag": "pcln-menu_v6.0.23",
       "date": "Wed, 17 Apr 2024 14:01:25 GMT",

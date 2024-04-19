@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 15 Apr 2024 19:21:32 GMT and should not be manually modified.
+This log was last generated on Fri, 19 Apr 2024 15:08:16 GMT and should not be manually modified.
+
+## 6.4.0
+Fri, 19 Apr 2024 15:08:16 GMT
+
+### Minor changes
+
+- Add subdirectory icon
 
 ## 6.3.0
 Mon, 15 Apr 2024 19:21:32 GMT
