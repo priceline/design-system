@@ -2,6 +2,20 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.0.25",
+      "tag": "pcln-menu_v6.0.25",
+      "date": "Wed, 24 Apr 2024 18:52:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix when the menu opens the page scrolls to the top",
+            "author": "fareedahmad1 <90357103+fareedahmad1@users.noreply.github.com>",
+            "commit": "b5311a093fa281828984de83eee6edef032e58b9"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.24",
       "tag": "pcln-menu_v6.0.24",
       "date": "Fri, 19 Apr 2024 15:08:16 GMT",

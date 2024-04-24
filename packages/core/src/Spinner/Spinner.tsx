@@ -68,10 +68,11 @@ const GradientRingWrapper = styled(Absolute)`
   height: 100%;
 `
 
-type GradientRingProps = {
+export type GradientRingProps = {
   strokeWidth?: string
+  color?: PaletteFamilyName
   theme?: Theme
-} & SpinnerProps
+}
 
 function GradientRing({ strokeWidth = '6px', ...props }: GradientRingProps) {
   const strokeColor = getPaletteColor(props.color, 'base')(props)
@@ -124,9 +125,8 @@ export type SpinnerSizes = 'small' | 'medium' | 'large' | number
 /**
  * @public
  */
-export type SpinnerProps = {
+export type SpinnerProps = GradientRingProps & {
   children?: React.ReactNode
-  color?: PaletteFamilyName
   size?: SpinnerSizes | string | Array<SpinnerSizes | string>
   useGradient?: boolean
 }
