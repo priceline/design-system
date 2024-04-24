@@ -2,6 +2,18 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "6.0.25",
+      "tag": "pcln-modal_v6.0.25",
+      "date": "Wed, 24 Apr 2024 18:52:55 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `6.0.25`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.24",
       "tag": "pcln-modal_v6.0.24",
       "date": "Fri, 19 Apr 2024 15:08:16 GMT",

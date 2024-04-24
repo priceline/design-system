@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Fri, 19 Apr 2024 15:08:16 GMT and should not be manually modified.
+This log was last generated on Wed, 24 Apr 2024 18:52:55 GMT and should not be manually modified.
+
+## 6.0.25
+Wed, 24 Apr 2024 18:52:55 GMT
+
+### Patches
+
+- fix when the menu opens the page scrolls to the top
 
 ## 6.0.24
 Fri, 19 Apr 2024 15:08:16 GMT
