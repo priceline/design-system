@@ -2,7 +2,7 @@ import { userEvent, within } from '@storybook/testing-library'
 import React, { useState } from 'react'
 import { argTypes, defaultArgs } from './Menu.stories.args'
 import { Bed as BedIcon } from 'pcln-icons'
-import { Box, Button, ButtonChip, Dialog, Divider, Flex, Link, Text } from 'pcln-design-system'
+import { Absolute, Box, Button, ButtonChip, Dialog, Divider, Flex, Link, Text } from 'pcln-design-system'
 import { listItems, currencies } from '../../test/mocks/Menu'
 import Menu from './Menu'
 import MenuItem from '../MenuItem'
@@ -239,4 +239,30 @@ export const UsingButtonNodePropWithButtonChip = () => {
 export const WithCustomPlacement = SingleLineTemplate.bind({})
 WithCustomPlacement.args = {
   placement: 'bottom',
+}
+
+export const BelowPageFold = (args) => {
+  const [value, setValue] = useState('one')
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <div>
+      <Text>Scroll down to menu</Text>
+      <Absolute top={'110vh'}>
+        <Menu buttonText='Menu' width={275} {...args} isFloating={false} isOpen={isOpen}>
+          {listItems.map((item, index) => {
+            const selected = value === item.value
+            const onClick = () => setValue(item.value)
+            return (
+              <MenuItem key={index} onClick={onClick} selected={selected}>
+                <Flex flexDirection='column' alignItems='flex-start'>
+                  <Text textStyle='paragraph'>{item.label}</Text>
+                </Flex>
+              </MenuItem>
+            )
+          })}
+        </Menu>
+      </Absolute>
+    </div>
+  )
 }
