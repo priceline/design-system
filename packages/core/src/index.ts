@@ -141,7 +141,7 @@ export { type ShimmerVariation, type ShimmerVariationType } from './Shimmer/cons
 export { SkipMenu, type SkipMenuProps } from './SkipMenu/SkipMenu'
 export { type ArrowPosition } from './SlideBox/Arrow'
 export { SlideBox, type SlideBoxProps } from './SlideBox/SlideBox'
-export { Spinner, type SpinnerProps, type SpinnerSizes } from './Spinner/Spinner'
+export { Spinner, type GradientRingProps, type SpinnerProps, type SpinnerSizes } from './Spinner/Spinner'
 export { SrOnly } from './SrOnly/SrOnly'
 export { Stamp, type StampProps } from './Stamp/Stamp'
 export { Step, type StepProps } from './Step/Step'
