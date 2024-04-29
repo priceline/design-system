@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Rename innerContentScroll prop to innerContentOverflow",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
