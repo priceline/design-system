@@ -147,7 +147,7 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
 }
 
 const SmoothTransitionBox = styled(Box)`
-  overflow: ${(props) => (props.innerContentScroll ? 'scroll' : 'auto')};
+  overflow: ${(props) => props.innerContentOverflow ?? 'auto'};
   transition: all 0.3s ease-in-out;
 `
 
@@ -164,16 +164,16 @@ export const DialogContent = ({
   headerIcon,
   headerShowCloseButton,
   hugColor,
+  innerContentOverflow,
+  overflowX,
+  overflowY,
   scrimDismiss,
   sheet,
   showCloseButton,
+  showScrollShadow,
   size,
   zIndex,
   onOpenChange,
-  overflowX,
-  overflowY,
-  showScrollShadow,
-  innerContentScroll,
 }: DialogProps) => {
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
@@ -248,7 +248,7 @@ export const DialogContent = ({
           )}
           {showScrollShadow ? (
             <SmoothTransitionBox
-              innerContentScroll={innerContentScroll}
+              innerContentOverflow={innerContentOverflow}
               style={{ boxShadow }}
               height='100%'
               onScroll={onScrollHandler}
@@ -260,7 +260,7 @@ export const DialogContent = ({
               )}
             </SmoothTransitionBox>
           ) : (
-            <Box height='100%' style={innerContentScroll ? { overflowY: 'scroll' } : undefined}>
+            <Box height='100%' style={innerContentOverflow ? { overflowY: innerContentOverflow } : undefined}>
               {children}
             </Box>
           )}
