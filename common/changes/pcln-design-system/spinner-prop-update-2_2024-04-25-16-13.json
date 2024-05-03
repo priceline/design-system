@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add missing prop to Spinner",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
