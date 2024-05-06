@@ -24,6 +24,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   headerIcon?: React.ReactNode
   headerShowCloseButton?: boolean
   hugColor?: PaletteColor
+  innerContentOverflow?: 'auto' | 'clip' | 'hidden' | 'scroll' | 'visible'
   open?: boolean
   scrimColor?: 'dark' | 'medium' | 'light' | (string & {})
   scrimDismiss?: boolean
@@ -33,7 +34,6 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   triggerNode?: React.ReactNode
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
-  innerContentScroll?: boolean
   showScrollShadow?: boolean
 }
 
@@ -54,19 +54,19 @@ const PclnDialog = ({
   headerIcon,
   headerShowCloseButton = false,
   hugColor,
+  innerContentOverflow = 'scroll',
   open,
   scrimColor = 'dark',
   scrimDismiss = true,
   sheet = false,
   showCloseButton = true,
+  showScrollShadow,
   size = 'md',
   triggerNode,
   zIndex = 'overlay',
   overflowX = 'auto',
   overflowY = 'auto',
   onOpenChange,
-  showScrollShadow,
-  innerContentScroll = true,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
@@ -84,7 +84,6 @@ const PclnDialog = ({
         {_open && (
           <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet} zIndex={zIndex}>
             <DialogContent
-              innerContentScroll={innerContentScroll}
               overflowX={overflowX}
               overflowY={overflowY}
               ariaDescription={ariaDescription}
@@ -98,6 +97,7 @@ const PclnDialog = ({
               headerIcon={headerIcon}
               headerShowCloseButton={headerShowCloseButton}
               hugColor={hugColor}
+              innerContentOverflow={innerContentOverflow}
               onOpenChange={handleOpenChange}
               scrimDismiss={scrimDismiss}
               sheet={sheet}
