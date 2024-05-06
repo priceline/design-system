@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 11 Apr 2024 15:00:13 GMT and should not be manually modified.
+This log was last generated on Mon, 06 May 2024 21:57:26 GMT and should not be manually modified.
+
+## 6.12.1
+Mon, 06 May 2024 21:57:26 GMT
+
+### Patches
+
+- Rename innerContentScroll prop to innerContentOverflow
+- Add missing prop to Spinner
 
 ## 6.12.0
 Thu, 11 Apr 2024 15:00:13 GMT
