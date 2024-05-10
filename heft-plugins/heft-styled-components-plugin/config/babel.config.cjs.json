@@ -1,0 +1,16 @@
+{
+  "targets": {
+    "node": 18
+  },
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "pure": true
+      }
+    ]
+  ],
+  "presets": ["@babel/preset-env"]
+}

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "heft-styled-components-plugin",
+      "comment": "initial implementation",
+      "type": "minor"
+    }
+  ],
+  "packageName": "heft-styled-components-plugin"
+}

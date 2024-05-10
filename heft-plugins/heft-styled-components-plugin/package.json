@@ -1,0 +1,44 @@
+{
+  "name": "heft-styled-components-plugin",
+  "version": "0.0.1",
+  "description": "A Heft plugin to transpile Heft outputs with babel and babel-plugin-styled-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priceline/design-system.git",
+    "directory": "heft-plugins/heft-styled-components-plugin"
+  },
+  "license": "MIT",
+  "author": "Priceline",
+  "contributors": [
+    {
+      "name": "Steve Dalonzo",
+      "email": "steve.dalonzo@gmail.com"
+    }
+  ],
+  "scripts": {
+    "_phase:build": "heft run --only build -- --clean",
+    "_phase:test": "heft run --only test",
+    "build": "heft build --clean",
+    "start": "heft test --clean --watch"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "babel-plugin-styled-components": "^2.1.4"
+  },
+  "devDependencies": {
+    "@rushstack/heft": "^0.66.3",
+    "@rushstack/heft-node-rig": "^2.6.0",
+    "@types/heft-jest": "^1.0.6",
+    "@types/node": "^20.12.7",
+    "eslint": "~8.57.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.11"
+  },
+  "peerDependencies": {
+    "@rushstack/heft": "^0.66.3",
+    "styled-components": "^5.3.11"
+  }
+}

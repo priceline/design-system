@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "fix inconsistency in build script",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
