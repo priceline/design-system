@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "accordion add custom color for header content and hover",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
