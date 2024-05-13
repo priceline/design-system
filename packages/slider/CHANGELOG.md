@@ -1,6 +1,13 @@
 # Change Log - pcln-slider
 
-This log was last generated on Mon, 06 May 2024 21:57:26 GMT and should not be manually modified.
+This log was last generated on Mon, 13 May 2024 15:04:02 GMT and should not be manually modified.
+
+## 6.1.0
+Mon, 13 May 2024 15:04:02 GMT
+
+### Minor changes
+
+- use heft-styled-components-plugin
 
 ## 6.0.20
 Mon, 06 May 2024 21:57:26 GMT

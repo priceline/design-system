@@ -1,0 +1,19 @@
+{
+  "name": "heft-styled-components-plugin",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "heft-styled-components-plugin_v0.1.0",
+      "date": "Mon, 13 May 2024 15:04:02 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "initial implementation",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "c170d22a1632a734c1a490789b9c6ff71d56347c"
+          }
+        ]
+      }
+    }
+  ]
+}
