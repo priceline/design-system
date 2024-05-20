@@ -11,6 +11,10 @@ importers:
   .: {}
 
   ../../apps/storybook:
+    dependencies:
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
     devDependencies:
       '@babel/core':
         specifier: ^7.23.5
@@ -123,6 +127,9 @@ importers:
       babel-plugin-styled-components:
         specifier: ^2.1.4
         version: 2.1.4(@babel/core@7.24.4)(styled-components@5.3.11)
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
     devDependencies:
       '@rushstack/heft':
         specifier: ^0.66.3
@@ -154,6 +161,9 @@ importers:
 
   ../../packages/autocomplete:
     dependencies:
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       downshift:
         specifier: ^7.6.2
         version: 7.6.2(react@18.2.0)
@@ -248,6 +258,9 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       lodash.debounce:
         specifier: ^4.0.8
         version: 4.0.8
@@ -354,6 +367,9 @@ importers:
 
   ../../packages/codemods:
     dependencies:
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       chalk:
         specifier: ^4.1.2
         version: 4.1.2
@@ -460,6 +476,9 @@ importers:
       '@types/styled-system':
         specifier: ^5.1.22
         version: 5.1.22
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       deepmerge:
         specifier: ^4.3.1
         version: 4.3.1
@@ -614,6 +633,9 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       lodash.upperfirst:
         specifier: ^4.3.1
         version: 4.3.1
@@ -702,6 +724,9 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -790,6 +815,9 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       react-transition-group:
         specifier: ^4.4.5
         version: 4.4.5(react-dom@18.2.0)(react@18.2.0)
@@ -875,6 +903,9 @@ importers:
       '@styled-system/theme-get':
         specifier: ^5.1.2
         version: 5.1.2
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -966,6 +997,9 @@ importers:
 
   ../../packages/slider:
     dependencies:
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       classnames:
         specifier: ^2.3.2
         version: 2.3.2
@@ -1105,6 +1139,9 @@ importers:
       '@types/testing-library__jest-dom':
         specifier: ^6.0.0
         version: 6.0.0(@types/jest@29.5.12)
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       eslint:
         specifier: ^8.56.0
         version: 8.56.0
@@ -1139,6 +1176,9 @@ importers:
       babel-plugin-styled-components:
         specifier: ^2.1.4
         version: 2.1.4(@babel/core@7.23.5)(styled-components@5.3.11)
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       core-js:
         specifier: ^3.34.0
         version: 3.34.0
@@ -1197,6 +1237,9 @@ importers:
       '@types/yargs':
         specifier: ^17.0.24
         version: 17.0.32
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       eslint:
         specifier: ^8.48.0
         version: 8.55.0
@@ -1234,6 +1277,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^5.59.9
         version: 5.59.9(eslint@8.55.0)(typescript@5.3.3)
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       eslint-config-prettier:
         specifier: ^8.8.0
         version: 8.10.0(eslint@8.55.0)
@@ -1304,6 +1350,9 @@ importers:
       axios:
         specifier: ^0.27.2
         version: 0.27.2
+      caniuse-lite:
+        specifier: ~1.0.30001625
+        version: 1.0.30001625
       graphql:
         specifier: ^16.5.0
         version: 16.8.1
@@ -7372,6 +7421,7 @@ packages:
 
   /@storybook/expect@28.1.3-5:
     resolution: {integrity: sha512-lS1oJnY1qTAxnH87C765NdfvGhksA6hBcbUVI5CHiSbNsEtr456wtg/z+dT9XlPriq1D5t2SgfNL9dBAoIGyIA==}
+    deprecated: In Storybook 8, this package functionality has been integrated to a new package called @storybook/test, which uses Vitest APIs for an improved experience. When upgrading to Storybook 8 with 'npx storybook@latest upgrade', you will get prompted and will get an automigration for the new package. Please migrate when you can.
     dependencies:
       '@types/jest': 28.1.3
     dev: true
@@ -9654,7 +9704,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.22.2
-      caniuse-lite: 1.0.30001566
+      caniuse-lite: 1.0.30001625
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -10010,7 +10060,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001566
+      caniuse-lite: 1.0.30001625
       electron-to-chromium: 1.4.608
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
@@ -10129,12 +10179,12 @@ packages:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
       browserslist: 4.22.2
-      caniuse-lite: 1.0.30001566
+      caniuse-lite: 1.0.30001625
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
-  /caniuse-lite@1.0.30001566:
-    resolution: {integrity: sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==}
+  /caniuse-lite@1.0.30001625:
+    resolution: {integrity: sha512-4KE9N2gcRH+HQhpeiRZXd+1niLB/XNLAhSy4z7fI8EzcbcPoAqjNInxVHTiTwWfTIV4w096XG8OtCOCQQKPv3w==}
 
   /cat-names@3.1.0:
     resolution: {integrity: sha512-cW5oH6EdBF8g/XovpPyM/5CHne6tsX63IBqGVpeZxDcHrIUpqmbXhRkptsMwHXiwSyDd+/bEndsib3kn4Q1qtQ==}

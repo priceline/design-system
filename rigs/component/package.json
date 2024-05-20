@@ -24,7 +24,8 @@
     "heft-styled-components-plugin": "workspace:*",
     "jest-environment-jsdom": "^29.7.0",
     "jest-standard-reporter": "^2.0.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "caniuse-lite": "~1.0.30001625"
   },
   "devDependencies": {
     "@rushstack/heft": "^0.66.3"

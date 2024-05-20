@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "caniuse-lite dependency updated",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}

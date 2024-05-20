@@ -26,7 +26,8 @@
     "@floating-ui/react-dom-interactions": "^0.13.3",
     "@styled-system/theme-get": "^5.1.2",
     "prop-types": "^15.8.1",
-    "react-focus-lock": "^2.9.6"
+    "react-focus-lock": "^2.9.6",
+    "caniuse-lite": "~1.0.30001625"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",

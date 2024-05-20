@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "heft-styled-components-plugin",
+      "comment": "caniuse-lite dependency updated",
+      "type": "minor"
+    }
+  ],
+  "packageName": "heft-styled-components-plugin"
+}

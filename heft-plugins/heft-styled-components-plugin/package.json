@@ -24,7 +24,8 @@
   "dependencies": {
     "@babel/cli": "^7.24.1",
     "@babel/core": "^7.24.4",
-    "babel-plugin-styled-components": "^2.1.4"
+    "babel-plugin-styled-components": "^2.1.4",
+    "caniuse-lite": "~1.0.30001625"
   },
   "devDependencies": {
     "@rushstack/heft": "^0.66.3",
