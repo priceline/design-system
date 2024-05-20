@@ -101,6 +101,25 @@ export const Ladder = {
   ),
 }
 
+export const CustomColor = {
+  render: (args) => (
+    <Accordion
+      {...args}
+      headerDividerColor='border.base'
+      items={[
+        {
+          ...items[0],
+          headerBg: 'primary.light',
+          contentBg: 'primary.light',
+        },
+        { ...items[1] },
+      ]}
+      hoverBg='background.base'
+      variation='default'
+    />
+  ),
+}
+
 export const Card = { render: (args) => <Accordion {...args} items={items} variation='card' /> }
 
 export const ItemStatePropCard = {

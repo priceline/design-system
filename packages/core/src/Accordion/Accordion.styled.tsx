@@ -41,7 +41,9 @@ export const StyledContent = styled(Accordion.Content)`
   overflow: hidden;
   ${space}
   background-color: ${(props) =>
-    props.variation === 'default' ? getPaletteColor('background.light')(props) : '#fff'};
+    props.variation === 'default'
+      ? getPaletteColor(props.contentBg || 'background.light')(props)
+      : getPaletteColor(props.contentBg || 'background.lightest')(props)};
   &[data-state='open'] {
     animation: ${slideDown} ${themeGet('duration.normal')} ${themeGet('timingFunctions.easeInOut')};
   }
@@ -82,7 +84,7 @@ export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
       `background-color: ${
         props.variation === 'hug'
           ? getPaletteColor('primary.dark')(props)
-          : getPaletteColor('background.base')(props)
+          : getPaletteColor(props.hoverBg || 'background.base')(props)
       };`}
   }
   &:focus-visible {
@@ -129,7 +131,9 @@ export interface IStyledItem {
 export const StyledItem = styled(Box)<IStyledItem>`
   ${(props) => (['card', 'flatCard'].includes(props.variation) ? 'border: solid 1px transparent;' : '')}
   ${(props) =>
-    props.variation === 'default' ? `background-color: ${getPaletteColor('background.light')(props)};` : ''}
+    props.variation === 'default'
+      ? `background-color: ${getPaletteColor(props.headerBg || 'background.light')(props)};`
+      : ''}
   ${(props) =>
     props.variation === 'hug'
       ? `background-color: ${getPaletteColor('primary.base')(props)};

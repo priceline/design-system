@@ -34,6 +34,8 @@ export type AccordionItemProps = {
   headerLabel?: React.ReactNode
   headerBg?: string
   value: string
+  contentBg?: string
+  hoverBg?: string
 }
 
 /**
@@ -72,6 +74,7 @@ export function Accordion({
             borderRadius='12px'
             marginBottom='12px'
             headerBg={child.headerBg}
+            hoverBg={child.hoverBg}
             data-testid={`styled-item-${child.value}`}
             headerDividerColor={index > 0 && headerDividerColor}
           >
@@ -86,7 +89,7 @@ export function Accordion({
                 <StyledChevron className='chevron' variation={variation} />
               </IconContainer>
             </StyledTrigger>
-            <StyledContent {...props} p={p} variation={variation}>
+            <StyledContent {...props} p={p} variation={variation} contentBg={child.contentBg}>
               {child.content}
             </StyledContent>
           </StyledItem>
