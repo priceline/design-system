@@ -2,6 +2,9 @@ name: Rush publish to NPM
 
 on: workflow_dispatch
 
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided

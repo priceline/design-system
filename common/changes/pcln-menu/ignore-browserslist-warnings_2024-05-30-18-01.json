@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "add core-js dev depedency to fix storybook",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}
