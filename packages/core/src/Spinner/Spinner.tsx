@@ -76,7 +76,7 @@ type GradientRingProps = {
 function GradientRing({ strokeWidth = '6px', ...props }: GradientRingProps) {
   const strokeColor = getPaletteColor(props.color, 'base')(props)
   return (
-    <GradientRingWrapper mt='-3px'>
+    <GradientRingWrapper>
       <Animate variant='spin'>
         <svg
           width='100%'
@@ -85,6 +85,7 @@ function GradientRing({ strokeWidth = '6px', ...props }: GradientRingProps) {
           color={strokeColor}
           fill='none'
           overflow='visible'
+          display='block'
         >
           <defs>
             <linearGradient id='spinner-secondHalf'>
