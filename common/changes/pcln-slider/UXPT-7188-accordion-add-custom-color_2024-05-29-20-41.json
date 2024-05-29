@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "caniuse-lite dependency updated",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

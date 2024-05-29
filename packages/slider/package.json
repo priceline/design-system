@@ -33,7 +33,8 @@
     "rc-util": "^4.0.4",
     "shallowequal": "^1.1.0",
     "styled-system": "^5.1.5",
-    "warning": "^4.0.3"
+    "warning": "^4.0.3",
+    "caniuse-lite": "~1.0.30001625"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",

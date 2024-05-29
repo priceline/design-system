@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "caniuse-lite": "~1.0.30001625"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.4",

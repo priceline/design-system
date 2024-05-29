@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "caniuse-lite dependency updated",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

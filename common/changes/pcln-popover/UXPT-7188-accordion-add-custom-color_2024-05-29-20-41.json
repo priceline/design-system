@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "caniuse-lite dependency updated",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

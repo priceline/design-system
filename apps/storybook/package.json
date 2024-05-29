@@ -52,5 +52,8 @@
     "styled-components": "^5.3.11",
     "typescript": "^5.3.3",
     "vite": "^4.5.1"
+  },
+  "dependencies": {
+    "caniuse-lite": "~1.0.30001625"
   }
 }

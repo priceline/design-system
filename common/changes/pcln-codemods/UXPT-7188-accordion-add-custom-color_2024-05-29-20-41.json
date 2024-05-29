@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-codemods",
+      "comment": "caniuse-lite dependency updated",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-codemods"
+}
