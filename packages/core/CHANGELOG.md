@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 13 May 2024 15:04:02 GMT and should not be manually modified.
+This log was last generated on Thu, 30 May 2024 19:42:04 GMT and should not be manually modified.
+
+## 6.14.0
+Thu, 30 May 2024 19:42:04 GMT
+
+### Minor changes
+
+- accordion add custom color for header content and hover
 
 ## 6.13.0
 Mon, 13 May 2024 15:04:02 GMT

@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.0.28",
+      "tag": "pcln-menu_v6.0.28",
+      "date": "Thu, 30 May 2024 19:42:04 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add core-js dev depedency to fix storybook",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "c4129de825dd2a11360dd5943a86141aaa5f83a2"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.14.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.1.9`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.13.0` to `6.14.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^6.1.8` to `6.1.9`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.27",
       "tag": "pcln-menu_v6.0.27",
       "date": "Mon, 13 May 2024 15:04:02 GMT",

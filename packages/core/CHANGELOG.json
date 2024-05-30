@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.14.0",
+      "tag": "pcln-design-system_v6.14.0",
+      "date": "Thu, 30 May 2024 19:42:04 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "accordion add custom color for header content and hover",
+            "author": "Ashok Patidar <62964295+apatidar1986@users.noreply.github.com>",
+            "commit": "206c29c3c445bb0d66f1869c6b9a4c1c0c3b75f3"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.13.0",
       "tag": "pcln-design-system_v6.13.0",
       "date": "Mon, 13 May 2024 15:04:02 GMT",
