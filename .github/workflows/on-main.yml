@@ -1,5 +1,8 @@
 name: On Main Merge - Build Storybook
 
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
 on:
   push:
     branches: [main]

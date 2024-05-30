@@ -7,6 +7,9 @@ on:
         required: true
         description: Tag to append to version of each package
 
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided

@@ -1,5 +1,8 @@
 name: Create a new GitHub release for a package
 
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
 on:
   workflow_dispatch:
     inputs:

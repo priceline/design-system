@@ -3,6 +3,9 @@ name: Chromatic CI
 on:
   push:
 
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
 jobs:
   chromatic-ci:
     runs-on: ubuntu-latest

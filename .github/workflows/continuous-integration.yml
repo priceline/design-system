@@ -4,6 +4,9 @@ on:
   push:
   workflow_dispatch:
 
+env:
+  BROWSERSLIST_IGNORE_OLD_DATA: 1
+
 jobs:
   design-system-ci:
     runs-on: ubuntu-latest
