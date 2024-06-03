@@ -14,7 +14,7 @@ export const ShadowOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(51, 51, 51, 0.65);
+  background-color: rgba(0, 24, 51, 0.5);
   ${zIndex};
 `
 

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "updates shadow effect color",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
