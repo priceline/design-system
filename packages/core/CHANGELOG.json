@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.15.0",
+      "tag": "pcln-design-system_v6.15.0",
+      "date": "Mon, 03 Jun 2024 16:45:25 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "updates shadow effect color",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "0d066cca46734cb31abea414c69b9d1707d5e909"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.14.0",
       "tag": "pcln-design-system_v6.14.0",
       "date": "Thu, 30 May 2024 19:42:04 GMT",
