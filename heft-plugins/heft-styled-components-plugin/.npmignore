@@ -8,6 +8,7 @@
 !/lib/**
 !/lib-*/**
 !/dist/**
+!/config/babel.*.json
 !heft-plugin.json
 
 # Ignore certain patterns that should not get published.
