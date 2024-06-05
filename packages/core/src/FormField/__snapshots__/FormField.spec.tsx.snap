@@ -74,6 +74,9 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 40px;
   padding-top: 6px;
@@ -236,6 +239,9 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 40px;
   padding-top: 6px;
@@ -496,6 +502,9 @@ exports[`FormField renders 1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 12px;
   padding-top: 6px;
@@ -658,6 +667,9 @@ exports[`FormField renders with Icon 1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 40px;
   padding-top: 6px;
@@ -852,6 +864,9 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 40px;
   padding-top: 6px;
@@ -994,6 +1009,9 @@ exports[`FormField renders with Select  1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 12px;
   padding-top: 6px;
@@ -1189,6 +1207,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   margin: 0;
   z-index: 1;
   color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 10px;
   margin-left: 40px;
   padding-top: 6px;
