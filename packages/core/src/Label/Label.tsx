@@ -36,6 +36,15 @@ const accessiblyHide = (props) =>
       }
     : null
 
+const truncate = (props) =>
+  props.truncate
+    ? {
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+      }
+    : null
+
 /**
  * @public
  */
@@ -52,6 +61,7 @@ export type LabelProps = SpaceProps &
     nowrap?: boolean
     for?: string
     as?: unknown
+    truncate?: boolean
     onClick?: (evt: unknown) => void
   }
 
@@ -74,6 +84,7 @@ export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.
 
   ${nowrap}
   ${accessiblyHide}
+  ${truncate}
 
   ${(props) => compose(fontSize, fontWeight, lineHeight, letterSpacing, space, textStyle, width)(props)}
 `

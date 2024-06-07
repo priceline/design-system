@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Labels can truncate and FormFields force Label truncation",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

@@ -7,7 +7,10 @@ const actions = {
 }
 
 export const defaultArgs = {
-  children: 'Label Children',
+  children: 'Label Children Long Message That Could Truncate',
+  hidden: false,
+  nowrap: false,
+  truncate: false,
   width: 'auto',
 }
 
@@ -22,6 +25,18 @@ export const argTypes = {
     name: 'fontSize',
     options: [0, 1, 2, 3, 4, 5, 6],
     control: 'select',
+  },
+  hidden: {
+    name: 'hidden',
+    control: 'boolean',
+  },
+  nowrap: {
+    name: 'nowrap',
+    control: 'boolean',
+  },
+  truncate: {
+    name: 'truncate',
+    control: 'boolean',
   },
   width: {
     name: 'width',

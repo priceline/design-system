@@ -99,6 +99,7 @@ export function FormField({ children, disabled, readOnly, ...props }: FormFieldP
     React.cloneElement(label, {
       htmlFor: label.props.htmlFor || id,
       fontSize: 10,
+      truncate: true,
       ml,
       pt: labelPaddingTop(inputSize),
       mb: '-20px',

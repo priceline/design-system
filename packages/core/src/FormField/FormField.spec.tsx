@@ -3,7 +3,7 @@ import React from 'react'
 import { Input } from '../Input/Input'
 import { Label } from '../Label/Label'
 import { Select } from '../Select/Select'
-import { render } from '../__test__/testing-library'
+import { render, screen } from '../__test__/testing-library'
 import { FormField } from './FormField'
 
 afterEach(() => {
@@ -52,6 +52,19 @@ describe('FormField', () => {
       </FormField>
     ).toJSON()
     expect(json).toMatchSnapshot()
+  })
+
+  test('renders with Label - forces truncate', () => {
+    render(
+      <FormField>
+        <Label>Pick Email Address</Label>
+        <Input />
+      </FormField>
+    )
+
+    expect(screen.getByText('Pick Email Address')).toHaveStyleRule('white-space', 'nowrap')
+    expect(screen.getByText('Pick Email Address')).toHaveStyleRule('overflow', 'hidden')
+    expect(screen.getByText('Pick Email Address')).toHaveStyleRule('text-overflow', 'ellipsis')
   })
 
   test('renders with Label autoHide prop', () => {

@@ -86,6 +86,13 @@ export const DynamicLabelWithValue = () => (
   </FormField>
 )
 
+export const WithTruncatedLabel = () => (
+  <FormField width='200px'>
+    <Label>Really long label that will get truncated</Label>
+    <Input value='hello@example.com' />
+  </FormField>
+)
+
 export const IconToTheRight = () => (
   <FormField>
     <Label htmlFor='dynamic-label-email-icon-right'>Email Address</Label>

@@ -9,18 +9,37 @@ describe('Label', () => {
   })
 
   test('Label hidden renders', () => {
-    const json = rendererCreateWithTheme(<Label hidden />).toJSON()
-    expect(json).toMatchSnapshot()
+    render(<Label hidden>Label Children</Label>)
+
+    expect(screen.getByText('Label Children')).toHaveStyleRule('position', 'absolute')
+    expect(screen.getByText('Label Children')).toHaveStyleRule('width', '1px')
+    expect(screen.getByText('Label Children')).toHaveStyleRule('height', '1px')
+    expect(screen.getByText('Label Children')).toHaveStyleRule('clip', 'rect(1px,1px,1px,1px)')
   })
 
   test('Label nowrap renders', () => {
-    const json = rendererCreateWithTheme(<Label nowrap />).toJSON()
-    expect(json).toMatchSnapshot()
+    render(<Label nowrap>Label Children</Label>)
+
+    expect(screen.getByText('Label Children')).toHaveStyleRule('white-space', 'nowrap')
+  })
+
+  test('Label truncate renders', () => {
+    render(<Label truncate>Label Children</Label>)
+
+    expect(screen.getByText('Label Children')).toHaveStyleRule('white-space', 'nowrap')
+    expect(screen.getByText('Label Children')).toHaveStyleRule('overflow', 'hidden')
+    expect(screen.getByText('Label Children')).toHaveStyleRule('text-overflow', 'ellipsis')
   })
 
   test('Label width renders', () => {
-    const json = rendererCreateWithTheme(<Label width={1 / 2} nowrap />).toJSON()
-    expect(json).toMatchSnapshot()
+    render(
+      <Label width={1 / 2} nowrap>
+        Label Children
+      </Label>
+    )
+
+    expect(screen.getByText('Label Children')).toHaveStyleRule('white-space', 'nowrap')
+    expect(screen.getByText('Label Children')).toHaveStyleRule('width', '50%')
   })
 
   test('Label clickable renders with cursor pointer', () => {
