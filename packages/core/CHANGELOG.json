@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.16.0",
+      "tag": "pcln-design-system_v6.16.0",
+      "date": "Fri, 07 Jun 2024 18:56:40 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Labels can truncate and FormFields force Label truncation",
+            "author": "James <62619213+pcln-james@users.noreply.github.com>",
+            "commit": "10de635d6f08eb4941a59a1d2a816a228d1d2e28"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.15.0",
       "tag": "pcln-design-system_v6.15.0",
       "date": "Mon, 03 Jun 2024 16:45:25 GMT",
