@@ -173,6 +173,11 @@ const variations = {
     text-align: left;
     width: 100%;
 
+    &:disabled {
+      background-color: ${getPaletteColor('background.light')};
+      color: ${getPaletteColor('text.light')};
+    }
+
     ${(props) => borders({ ...props, color: undefined })}
     ${(props) => compose(space, fontSize, borderRadius)(props)}
   `,
@@ -241,14 +246,14 @@ export const buttonStyles = css`
   border-width: 0;
   border-style: solid;
 
-  ${({ theme }) => applySizes(sizes, 'medium', theme.mediaQueries)};
-  ${applyVariations('Button', variations)};
-
   &:disabled {
     cursor: not-allowed;
     color: ${getPaletteColor('background.tone')};
     background-color: ${getPaletteColor('background.base')};
   }
+
+  ${({ theme }) => applySizes(sizes, 'medium', theme.mediaQueries)};
+  ${applyVariations('Button', variations)};
 `
 
 const iconButtonPaddings = {

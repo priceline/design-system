@@ -518,6 +518,20 @@ describe('Button', () => {
           modifier: ':focus',
         })
       })
+
+      it('should render disabled input', () => {
+        const { getByRole } = render(
+          <Button disabled variation='input'>
+            BUTTON
+          </Button>
+        )
+
+        const button = getByRole('button')
+
+        expect(button).toHaveStyleRule('color', theme.palette.background.tone)
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.base)
+        expect(button).toHaveStyleRule('border-color', theme.palette.border.base)
+      })
     })
   })
 
