@@ -49,6 +49,12 @@ exports[`Step should handle onClick 1`] = `
   margin-right: 32px;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
 .c1:hover {
   background-color: #049;
   color: #fff;
@@ -57,12 +63,6 @@ exports[`Step should handle onClick 1`] = `
 .c1:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #879db3;
-  background-color: #edf0f3;
 }
 
 .c4 {
@@ -174,6 +174,12 @@ exports[`Step should render a completed step correctly 1`] = `
   margin-right: 32px;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
 .c1:hover {
   background-color: #049;
   color: #fff;
@@ -182,12 +188,6 @@ exports[`Step should render a completed step correctly 1`] = `
 .c1:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #879db3;
-  background-color: #edf0f3;
 }
 
 .c6 {
@@ -316,6 +316,12 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
   margin-right: 32px;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
 .c1:hover {
   background-color: #049;
   color: #fff;
@@ -324,12 +330,6 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
 .c1:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #879db3;
-  background-color: #edf0f3;
 }
 
 .c6 {
@@ -445,6 +445,12 @@ exports[`Step should render an active step correctly 1`] = `
   margin-right: 32px;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
 .c1:hover {
   background-color: #049;
   color: #fff;
@@ -453,12 +459,6 @@ exports[`Step should render an active step correctly 1`] = `
 .c1:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #879db3;
-  background-color: #edf0f3;
 }
 
 .c4 {
@@ -556,6 +556,12 @@ exports[`Step should render correctly with no props without throwing 1`] = `
   margin-right: 32px;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
 .c1:hover {
   background-color: #049;
   color: #fff;
@@ -564,12 +570,6 @@ exports[`Step should render correctly with no props without throwing 1`] = `
 .c1:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #879db3;
-  background-color: #edf0f3;
 }
 
 .c4 {

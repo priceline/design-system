@@ -527,10 +527,15 @@ describe('Button', () => {
         )
 
         const button = getByRole('button')
-
-        expect(button).toHaveStyleRule('color', theme.palette.background.tone)
-        expect(button).toHaveStyleRule('background-color', theme.palette.background.base)
-        expect(button).toHaveStyleRule('border-color', theme.palette.border.base)
+        expect(button).toHaveStyleRule('cursor', 'not-allowed', {
+          modifier: ':disabled',
+        })
+        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+          modifier: ':disabled',
+        })
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.light, {
+          modifier: ':disabled',
+        })
       })
     })
   })

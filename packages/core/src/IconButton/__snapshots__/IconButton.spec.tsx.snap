@@ -56,6 +56,12 @@ exports[`IconButton renders without props 1`] = `
   color: #fff;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
 .c0:hover {
   background-color: #049;
   color: #fff;
@@ -64,12 +70,6 @@ exports[`IconButton renders without props 1`] = `
 .c0:focus-visible {
   outline: 0px solid #049;
   box-shadow: 0 0 0 2px #049;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  color: #879db3;
-  background-color: #edf0f3;
 }
 
 .c1 {
