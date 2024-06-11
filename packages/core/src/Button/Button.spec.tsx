@@ -518,6 +518,25 @@ describe('Button', () => {
           modifier: ':focus',
         })
       })
+
+      it('should render disabled input', () => {
+        const { getByRole } = render(
+          <Button disabled variation='input'>
+            BUTTON
+          </Button>
+        )
+
+        const button = getByRole('button')
+        expect(button).toHaveStyleRule('cursor', 'not-allowed', {
+          modifier: ':disabled',
+        })
+        expect(button).toHaveStyleRule('color', theme.palette.text.light, {
+          modifier: ':disabled',
+        })
+        expect(button).toHaveStyleRule('background-color', theme.palette.background.light, {
+          modifier: ':disabled',
+        })
+      })
     })
   })
 
