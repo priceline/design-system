@@ -90,7 +90,7 @@ export { Icon } from './Icon/Icon'
 export { IconButton, type IconButtonProps } from './IconButton/IconButton'
 export { IconField, type IconFieldProps } from './IconField/IconField'
 export { Image, type ImageProps } from './Image/Image'
-export { Input, type InputProps } from './Input/Input'
+export { Input, type InputProps, type InputHelperTextProps, type InputWithRef } from './Input/Input'
 export { InputGroup, type InputGroupProps } from './InputGroup/InputGroup'
 export { Label, type LabelProps } from './Label/Label'
 export {

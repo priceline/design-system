@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatingActionButton it renders 1`] = `
+<DocumentFragment>
+  .c5 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-right: 0px;
+  width: 24px;
+}
+
+.c6 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  position: absolute;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 9999px;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 9999px;
+  font-size: 16px;
+  padding: 16px 22px;
+  background-color: #0068ef;
+  color: #fff;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 4px 16px 0 rgba(0,0,0,0.2),0 4px 16px -4px rgba(0,0,0,0.2),0 12px 24px -2px rgba(0,0,0,0.2);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  color: #879db3;
+  background-color: #edf0f3;
+}
+
+.c2:hover {
+  background-color: #049;
+  color: #fff;
+}
+
+.c2:focus-visible {
+  outline: 0px solid #049;
+  box-shadow: 0 0 0 2px #049;
+}
+
+.c3:hover {
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 8px 32px 0 rgba(0,0,0,0.24),0 8px 16px 0 rgba(0,0,0,0.2),0 24px 64px 0 rgba(0,0,0,0.2);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <button
+        class="c2 c3"
+        color="primary"
+      >
+        <div
+          class="c4"
+        >
+          <svg
+            aria-hidden="true"
+            class="c5 c6"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.9 5c-.2-.6-.8-1-1.4-1h-11c-.7 0-1.2.4-1.4 1L3 11v8c0 .6.4 1 1 1h1c.5 0 1-.4 1-1v-1h12v1c0 .6.4 1 1 1h1c.5 0 1-.4 1-1v-8l-2.1-6zM6.5 15c-.8 0-1.5-.7-1.5-1.5S5.7 12 6.5 12s1.5.7 1.5 1.5S7.3 15 6.5 15zm11 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
