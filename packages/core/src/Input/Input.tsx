@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ForwardRefExoticComponent, RefAttributes } from 'react'
 import styled, { css } from 'styled-components'
 import {
   FontSizeProps,
@@ -67,6 +67,13 @@ const INPUT_ERROR_TEXT = 'InputHelperText'
 /**
  * @public
  */
+export type InputHelperTextProps = TextProps & {
+  children?: React.ReactNode
+}
+
+/**
+ * @public
+ */
 export type InputProps = SpaceProps &
   FontSizeProps &
   ZIndexProps &
@@ -74,8 +81,10 @@ export type InputProps = SpaceProps &
   React.RefAttributes<HTMLInputElement> & {
     children?: React.ReactNode
     onChange?: (unknown) => unknown
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    helperText?: React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    helperText?: React.ReactElement<
+      InputHelperTextProps,
+      string | React.JSXElementConstructor<InputHelperTextProps>
+    >
     color?: string
     size?: 'sm' | 'md' | 'lg' | 'xl'
     borderRadius?: string
@@ -84,10 +93,15 @@ export type InputProps = SpaceProps &
 /**
  * @public
  */
-export const Input: React.FC<InputProps> & {
-  isField?: boolean
-  HelperText?: React.FC<TextProps>
-} = React.forwardRef((props: InputProps, ref) => {
+export type InputWithRef = ForwardRefExoticComponent<Omit<InputProps, 'ref'> & RefAttributes<unknown>> & {
+  isField: boolean
+  HelperText: React.FC<InputHelperTextProps>
+}
+
+/**
+ * @public
+ */
+export const Input = React.forwardRef((props: InputProps, ref) => {
   const { helperText, color, ...restProps } = props
   return (
     <>
@@ -98,16 +112,12 @@ export const Input: React.FC<InputProps> & {
         })}
     </>
   )
-})
+}) as InputWithRef
 
 const HelperText: React.FC<InputHelperTextProps> = styled(Text).attrs(() => ({
   mt: 2,
   fontSize: 1,
 }))``
-
-export type InputHelperTextProps = TextProps & {
-  children?: React.ReactNode
-}
 
 Input.HelperText = (props: InputHelperTextProps) => <HelperText {...props}>{props.children}</HelperText>
 
