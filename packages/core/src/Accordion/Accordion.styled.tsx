@@ -6,7 +6,7 @@ import { space } from 'styled-system'
 import { Box } from '../Box/Box'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { getPaletteColor } from '../utils/utils'
-import { AccordionProps } from './Accordion'
+import { type AccordionProps } from './Accordion'
 
 const slideDown = keyframes`
   from {
@@ -37,7 +37,7 @@ export const StyledAccordionRoot = styled(Accordion.Root)<AccordionProps>`
       : ''}
 `
 
-export const StyledContent = styled(Accordion.Content)`
+export const StyledContent = styled(Accordion.Content)<Partial<AccordionProps>>`
   overflow: hidden;
   ${space}
   background-color: ${(props) =>
@@ -52,7 +52,7 @@ export const StyledContent = styled(Accordion.Content)`
   }
 `
 
-export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
+export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)<Partial<AccordionProps>>`
   all: unset;
   box-sizing: border-box;
   display: flex;
@@ -101,7 +101,7 @@ export const StyledChevron = styled(ChevronDown)`
       ? getPaletteColor('text.lightest')(props)
       : getPaletteColor('primary.base')(props)};
 `
-export const IconContainer = styled(Box)`
+export const IconContainer = styled(Box)<StyledItemProps>`
   position: relative;
   &:after {
     content: '';
@@ -122,13 +122,13 @@ export const IconContainer = styled(Box)`
   }
 `
 
-export interface IStyledItem {
+export type StyledItemProps = {
   variation: string
   headerBg?: string
   headerDividerColor?: string
 }
 
-export const StyledItem = styled(Box)<IStyledItem>`
+export const StyledItem = styled(Box)<StyledItemProps>`
   ${(props) => (['card', 'flatCard'].includes(props.variation) ? 'border: solid 1px transparent;' : '')}
   ${(props) =>
     props.variation === 'default'

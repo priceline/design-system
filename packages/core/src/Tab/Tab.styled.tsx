@@ -22,7 +22,14 @@ export const StyledText = styled(Text)`
   ${(props) => getSizeStyles(props.size, props.icon)}
   font-family: Montserrat;
 `
-export const TabTriggerButton = styled(Tab.Trigger)`
+
+export type TabTriggerButtonProps = {
+  buttonBorder: string
+  isTransparent?: boolean
+  dynamicTabWidth?: boolean
+}
+
+export const TabTriggerButton = styled(Tab.Trigger)<TabTriggerButtonProps>`
   cursor: pointer;
   border: ${(props) => (props.buttonBorder ? `1px solid ${getPaletteColor('border.light')(props)}` : 'none')};
   width: ${(props) => (props.dynamicTabWidth ? '100%' : 'auto')};
@@ -62,6 +69,10 @@ export const TabTriggerRadio = styled(Tab.Trigger)`
   cursor: pointer;
  }
 `
-export const TabList = styled(Tab.List)`
+
+export type TabListProps = {
+  orientation?: 'horizontal' | 'vertical'
+}
+export const TabList = styled(Tab.List)<TabListProps>`
   flex-direction: ${(props) => (props?.orientation === 'horizontal' ? 'row' : 'column')};
 `

@@ -15,7 +15,7 @@ export type NoteProps = {
 export const Note = ({ children }: NoteProps) => (
   <Box bg='background' p={3} borderRadius='xl'>
     <Text.span color='text.tint'>
-      <Text.span bold>NOTE </Text.span>
+      <Text.span fontWeight='bold'>NOTE </Text.span>
       {children}
     </Text.span>
   </Box>

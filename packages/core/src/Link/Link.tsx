@@ -5,14 +5,14 @@ import { buttonStyles, type ButtonSizes, type ButtonVariations } from '../Button
 import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const variations = {
-  fill: css`
+  fill: css<LinkProps>`
     &:hover {
       text-decoration: none;
     }
 
     ${buttonStyles}
   `,
-  subtle: css`
+  subtle: css<LinkProps>`
     ${buttonStyles}
 
     &:hover {
@@ -20,7 +20,7 @@ const variations = {
       background-color: ${getPaletteColor('background.tint')};
     }
   `,
-  link: css`
+  link: css<LinkProps>`
     cursor: pointer;
     text-decoration: none;
     color: ${getPaletteColor('base')};
@@ -30,22 +30,14 @@ const variations = {
       text-decoration: underline;
     }
   `,
-  outline: css`
+  outline: css<LinkProps>`
     &:hover {
       text-decoration: none;
     }
 
     ${buttonStyles}
   `,
-  plain: css`
-    ${buttonStyles}
-
-    &:hover {
-      text-decoration: none;
-      background-color: ${getPaletteColor('background.base')};
-    }
-  `,
-  white: css`
+  plain: css<LinkProps>`
     ${buttonStyles}
 
     &:hover {
@@ -53,7 +45,15 @@ const variations = {
       background-color: ${getPaletteColor('background.base')};
     }
   `,
-  lightFill: css`
+  white: css<LinkProps>`
+    ${buttonStyles}
+
+    &:hover {
+      text-decoration: none;
+      background-color: ${getPaletteColor('background.base')};
+    }
+  `,
+  lightFill: css<LinkProps>`
     ${buttonStyles}
     ${(props) => {
       return props.disabled
@@ -63,7 +63,7 @@ const variations = {
         : ''
     }}
   `,
-  input: css`
+  input: css<LinkProps>`
     ${buttonStyles}
     text-align: center;
     ${(props) => {
@@ -97,7 +97,7 @@ export type LinkProps = WidthProps &
 /**
  * @public
  */
-export const Link: React.FC<LinkProps> = styled.a.attrs(
+export const Link: React.FC<LinkProps> = styled.a.attrs<LinkProps, LinkProps>(
   ({ color, disabled, href, target, onClick, ...props }) => ({
     color: disabled ? 'text.light' : color,
     disabled,
@@ -107,7 +107,7 @@ export const Link: React.FC<LinkProps> = styled.a.attrs(
     onClick: !disabled ? onClick : () => {},
     ...props,
   })
-)`
+)<LinkProps>`
   ${applyVariations('Link', variations)}
 
   ${(props) =>

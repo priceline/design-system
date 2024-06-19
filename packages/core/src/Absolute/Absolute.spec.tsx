@@ -10,21 +10,21 @@ describe('Absolute', () => {
     const { asFragment } = render(
       <Absolute top={10} left={0}>
         <Flag>
-          <CouponIcon /> <Text.span>EXCLUSIVE</Text.span>
+          <CouponIcon /> <Text>EXCLUSIVE</Text>
         </Flag>
       </Absolute>
     )
-    expect(asFragment).toMatchInlineSnapshot(`[Function]`)
+    expect(asFragment()).toMatchInlineSnapshot()
   })
 
   test('renders with flag and Child', () => {
     const { asFragment } = render(
       <Absolute top={10} left={0}>
         <Flag>
-          <CouponIcon /> <Text.span>EXCLUSIVE</Text.span>
+          <CouponIcon /> <Text>EXCLUSIVE</Text>
         </Flag>
       </Absolute>
     )
-    expect(asFragment).toMatchInlineSnapshot(`[Function]`)
+    expect(asFragment()).toMatchInlineSnapshot()
   })
 })

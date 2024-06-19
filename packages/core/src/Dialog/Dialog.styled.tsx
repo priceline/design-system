@@ -9,7 +9,7 @@ import { CloseButton, type CloseButtonProps } from '../CloseButton/CloseButton'
 import { Grid } from '../Grid/Grid'
 import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
-import { type DialogProps } from './Dialog'
+import { type DialogProps, type DialogComponentProps } from './Dialog'
 import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
 import { Box } from '../Box/Box'
 
@@ -62,25 +62,25 @@ const FloatingCloseButton: (
   z-index: ${(props) => themeGet('zIndices.absolute')(props)};
 `
 
-const DialogOverlayWrapper = styled(motion.div)`
+const DialogOverlayWrapper = styled(motion.div)<Partial<DialogComponentProps>>`
   ${zIndex}
   position: fixed;
   inset: 0;
   display: grid;
   overflow-y: auto;
-  place-items: ${(props: DialogProps) => (props.sheet ? 'end center' : 'center')};
-  background-color: ${(props: DialogProps) =>
+  place-items: ${(props) => (props.sheet ? 'end center' : 'center')};
+  background-color: ${(props) =>
     Object.keys(scrimStyles).includes(props.scrimColor) ? scrimStyles[props.scrimColor] : props.scrimColor};
 `
 
-const DialogContentWrapper = styled(motion.div)`
+const DialogContentWrapper = styled(motion.div)<Partial<DialogComponentProps>>`
   position: relative;
   cursor: initial;
-  background-color: ${(props: DialogProps) => themeGet('palette.background.lightest')(props)};
-  width: ${(props: DialogProps) => (props.fullWidth ? '100%' : sizeStyles[props.size]?.width)};
-  height: ${(props: DialogProps) =>
+  background-color: ${(props) => themeGet('palette.background.lightest')(props)};
+  width: ${(props) => (props.fullWidth ? '100%' : sizeStyles[props.size]?.width)};
+  height: ${(props) =>
     props.sheet ? `calc(${sizeStyles[props.size]?.height} - 24px)` : sizeStyles[props.size]?.height};
-  margin: ${(props: DialogProps) =>
+  margin: ${(props) =>
     props.sheet
       ? `${themeGet('space.3')(props)} 0 0 0`
       : props.size === 'full'
@@ -89,7 +89,7 @@ const DialogContentWrapper = styled(motion.div)`
          ${themeGet('space.3')(props)}
          ${themeGet('space.5')(props)}
          ${themeGet('space.3')(props)}`};
-  border-radius: ${(props: DialogProps) =>
+  border-radius: ${(props) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
           `borderRadii.${props.borderRadius}`
@@ -97,7 +97,7 @@ const DialogContentWrapper = styled(motion.div)`
       : props.size === 'full'
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
-  box-shadow: ${(props: DialogProps) => themeGet('shadows.overlay-lg')(props)};
+  box-shadow: ${(props) => themeGet('shadows.overlay-lg')(props)};
   ${(props) =>
     props.hasFooterContent &&
     `
@@ -105,7 +105,7 @@ const DialogContentWrapper = styled(motion.div)`
   `}
 `
 
-const DialogInnerContentWrapper = styled.div`
+const DialogInnerContentWrapper = styled.div<Partial<DialogComponentProps>>`
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
@@ -115,7 +115,7 @@ const DialogInnerContentWrapper = styled.div`
 
   ${overflowX}
   ${overflowY}
-  border-radius: ${(props: DialogProps) =>
+  border-radius: ${(props) =>
     props.sheet
       ? `${themeGet(`borderRadii.${props.borderRadius}`)(props)} ${themeGet(
           `borderRadii.${props.borderRadius}`
@@ -123,8 +123,7 @@ const DialogInnerContentWrapper = styled.div`
       : props.size === 'full'
       ? 'none'
       : themeGet(`borderRadii.${props.borderRadius}`)(props)};
-  border-top: ${(props: DialogProps) =>
-    props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
+  border-top: ${(props) => props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
 `
 
 export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<DialogProps>) => {
@@ -146,7 +145,7 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
   )
 }
 
-const SmoothTransitionBox = styled(Box)`
+const SmoothTransitionBox = styled(Box)<Partial<DialogComponentProps>>`
   overflow: ${(props) => props.innerContentOverflow ?? 'auto'};
   transition: all 0.3s ease-in-out;
 `
@@ -203,7 +202,7 @@ export const DialogContent = ({
         fullWidth={fullWidth}
         borderRadius={borderRadius}
         zIndex={zIndex}
-        hasFooterContent={footerContent}
+        hasFooterContent={Boolean(footerContent)}
         {...(sheet ? animationStyles.sheet : animationStyles.default)}
       >
         {showCloseButton && (

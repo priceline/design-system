@@ -63,22 +63,22 @@ export const MultipleAbsolutelyPositionedBoxes = () => (
   <TallCard pb={3}>
     <Relative p={3}>
       <ExtraLargeAbsolute pl={2} top={0} right={0} width={400} bg='primary'>
-        <Text.span fontSize={1} bold>
+        <Text.span fontSize={1} fontWeight='bold'>
           z-index 1
         </Text.span>
       </ExtraLargeAbsolute>
       <LargeAbsolute pl={2} top={0} right={0} width={300} bg='alert'>
-        <Text.span fontSize={1} bold>
+        <Text.span fontSize={1} fontWeight='bold'>
           z-index 2
         </Text.span>
       </LargeAbsolute>
       <MediumAbsolute pl={2} top={0} right={0} width={200} bg='primary.light'>
-        <Text.span fontSize={1} bold>
+        <Text.span fontSize={1} fontWeight='bold'>
           z-index 3
         </Text.span>
       </MediumAbsolute>
       <SmallAbsolute pl={2} top={0} right={0} width={100} bg='secondary'>
-        <Text.span fontSize={1} bold>
+        <Text.span fontSize={1} fontWeight='bold'>
           z-index 4
         </Text.span>
       </SmallAbsolute>

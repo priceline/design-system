@@ -28,7 +28,7 @@ const Example = ({ isDo, children, desc }: ExampleProps) => (
       {children}
     </Box>
     <Text.span>
-      <Text.span bold>{isDo ? 'DO ' : "DON'T "}</Text.span>
+      <Text.span fontWeight='bold'>{isDo ? 'DO ' : "DON'T "}</Text.span>
       {desc}
     </Text.span>
   </Box>

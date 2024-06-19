@@ -54,7 +54,6 @@ export function Accordion({
 }: AccordionProps): React.ReactElement {
   return items ? (
     <StyledAccordionRoot
-      // @ts-ignore
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
       value={isExternallyControlled ? itemsState : undefined}

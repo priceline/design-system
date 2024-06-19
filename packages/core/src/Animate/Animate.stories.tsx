@@ -40,7 +40,7 @@ export const Playground: Story = () => {
 
   return (
     <Flex flexDirection='column' maxWidth={600}>
-      <Text fontSize={5} bold>
+      <Text fontSize={5} fontWeight='bold'>
         Motion Variants
       </Text>
       <Flex flexWrap='wrap'>
@@ -56,7 +56,7 @@ export const Playground: Story = () => {
           </ChoiceChip>
         ))}
       </Flex>
-      <Text fontSize={5} bold>
+      <Text fontSize={5} fontWeight='bold'>
         Transition Variants
       </Text>
       <Flex flexWrap='wrap'>
@@ -82,10 +82,10 @@ export const Playground: Story = () => {
             justifyContent='center'
             alignItems='center'
           >
-            <Text fontSize={5} bold color='text.lightest'>
+            <Text fontSize={5} fontWeight='bold' color='text.lightest'>
               Hello 👋
             </Text>
-            <Text fontSize={5} bold color='text.lightest'>
+            <Text fontSize={5} fontWeight='bold' color='text.lightest'>
               World 🌎
             </Text>
           </Flex>

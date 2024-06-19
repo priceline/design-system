@@ -56,12 +56,12 @@
     "react-is": "^18.2.0",
     "react-test-renderer": "^18.2.0",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.11"
+    "styled-components": "^6.1.8"
   },
   "peerDependencies": {
     "pcln-design-system": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": ">=5.3.7 <6"
+    "styled-components": "^5 || ^6"
   }
 }

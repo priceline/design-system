@@ -93,24 +93,24 @@ export function ChipContent({
         {Boolean(Icon) && <Icon title={IconTitle} size='20px' />}
         <Box>
           {Boolean(topLabel) && (
-            <Text regular ml={2} mb={1} fontWeight='bold'>
+            <Text fontWeight='regular' ml={2} mb={1} fontWeight='bold'>
               {topLabel}
             </Text>
           )}
           <Flex>
             {Boolean(label) && (
-              <Text regular ml={Boolean(Icon) || Boolean(image) ? 2 : 0}>
+              <Text fontWeight='regular' ml={Boolean(Icon) || Boolean(image) ? 2 : 0}>
                 {label}
               </Text>
             )}
             {Boolean(facet) && (
-              <Text regular ml={1}>
+              <Text fontWeight='regular' ml={1}>
                 {facet}
               </Text>
             )}
             {Boolean(bridgeLabel) && <BridgeIcon title='to' size='16px' ml={2} mt='1px' />}
             {Boolean(bridgeLabel) && (
-              <Text regular ml={2}>
+              <Text fontWeight='regular' ml={2}>
                 {bridgeLabel}
               </Text>
             )}

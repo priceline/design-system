@@ -1,11 +1,22 @@
-declare var rendererCreateWithTheme
+import 'styled-components'
+import type { ColorSchemes, ColorStyles, PaletteFamilies, TextStyle, ZIndices } from './theme/theme'
 
-declare var JSX
+declare global {
+  var rendererCreateWithTheme: any
+}
 
-declare module 'testing-library'
-
-declare module 'pcln-icons'
-
-declare module '*.png'
-declare module '*.jpeg'
-declare module '*.jpg'
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    space: string[]
+    colors: Record<string, string>
+    componentStyles: Record<string, Record<string, Record<string, Record<string, unknown>>>>
+    mediaQueries: string[]
+    breakpoints: string[]
+    palette: PaletteFamilies
+    colorStyles: ColorStyles
+    textStyles: TextStyle[]
+    contrastRatio: number
+    colorSchemes: ColorSchemes
+    zIndices: ZIndices
+  }
+}

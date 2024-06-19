@@ -6,7 +6,7 @@ import { Hug } from './Hug'
 
 const text = (
   <Text.span>
-    Have you seen this <Text.span bold>card</Text.span> I‘m hugging?!
+    Have you seen this <Text.span fontWeight='bold'>card</Text.span> I‘m hugging?!
   </Text.span>
 )
 

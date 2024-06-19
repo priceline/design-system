@@ -47,7 +47,7 @@ export function Step({
       {completed && (
         <Check color='primary' size={16} mr={1} aria-hidden={false} aria-label='Step Completed' />
       )}
-      <Text color={color} bold={active} fontSize={1} aria-selected={active}>
+      <Text color={color} fontWeight={active ? 'bold' : 'normal'} fontSize={1} aria-selected={active}>
         {children}
       </Text>
     </StepButton>

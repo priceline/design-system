@@ -50,7 +50,7 @@
     "react-is": "^18.2.0",
     "require-from-string": "2.0.2",
     "storybook": "^7.6.19",
-    "styled-components": "^5.3.11",
+    "styled-components": "^6.1.8",
     "typescript": "^5.3.3",
     "vite": "^4.5.3",
     "vite-plugin-turbosnap": "^1.0.3"

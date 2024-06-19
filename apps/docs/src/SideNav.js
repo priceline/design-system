@@ -17,7 +17,7 @@ const SideNav = () => (
     {navigation.map((section) =>
       section.section ? (
         <Box key={section.section}>
-          <Heading color='text' p={3} bold caps fontSize={0}>
+          <Heading color='text' p={3} fontWeight='bold' caps fontSize={0}>
             {section.section}
           </Heading>
           {section.links.map((link) => (

@@ -27,13 +27,13 @@ TooltipComponent.args = { color: 'primary' }
 
 export const WithoutAnchors = () => (
   <Box mt={5} width={500}>
-    <Tooltip color='primary' top left>
+    <Tooltip color='primary.base' top left>
       left tooltip
     </Tooltip>
-    <Tooltip color='primary' top center>
+    <Tooltip color='primary.base' top center>
       centered tooltip
     </Tooltip>
-    <Tooltip color='error' top right>
+    <Tooltip color='error.base' top right>
       right tooltip
     </Tooltip>
     <br />
@@ -50,16 +50,16 @@ export const WithoutAnchors = () => (
 )
 
 export const WithAnchors = () => (
-  <FlexColumn justifyContent='space-between' wrap='wrap'>
+  <FlexColumn justifyContent='space-between' flexWrap='wrap'>
     <Box width={300} p={2} my={2}>
-      <Tooltip top left color='primary'>
+      <Tooltip top left color='primary.base'>
         top left tooltip
       </Tooltip>
       <div>some text</div>
     </Box>
     <Box width='300px' p={2} mb={5}>
       <div>some text</div>
-      <Tooltip bottom left color='error'>
+      <Tooltip bottom left color='error.base'>
         bottom left tooltip
       </Tooltip>
     </Box>
@@ -73,7 +73,7 @@ export const WithAnchors = () => (
         />
         <Check color='primary' />
       </FormField>
-      <Tooltip bottom left color='primary'>
+      <Tooltip bottom left color='primary.base'>
         bottom left tooltip
       </Tooltip>
     </Box>
@@ -87,7 +87,7 @@ export const WithAnchors = () => (
         />
         <Check color='primary' />
       </FormField>
-      <Tooltip bottom center color='primary'>
+      <Tooltip bottom center color='primary.base'>
         bottom center tooltip
       </Tooltip>
     </Box>
@@ -101,12 +101,12 @@ export const WithAnchors = () => (
         />
         <Check color='error' />
       </FormField>
-      <Tooltip bottom right color='error'>
+      <Tooltip bottom right color='error.base'>
         Email Address Invalid
       </Tooltip>
     </Box>
     <Box width='300px' p={2} mb={5}>
-      <Tooltip top left color='primary'>
+      <Tooltip top left color='primary.base'>
         top left tooltip
       </Tooltip>
       <FormField>
@@ -120,7 +120,7 @@ export const WithAnchors = () => (
       </FormField>
     </Box>
     <Box width='300px' p={2} mb={5}>
-      <Tooltip top center color='primary'>
+      <Tooltip top center color='primary.base'>
         top center tooltip
       </Tooltip>
       <FormField>
@@ -134,7 +134,7 @@ export const WithAnchors = () => (
       </FormField>
     </Box>
     <Box width='300px' p={2}>
-      <Tooltip top right color='primary'>
+      <Tooltip top right color='primary.base'>
         top right tooltip
       </Tooltip>
       <FormField>

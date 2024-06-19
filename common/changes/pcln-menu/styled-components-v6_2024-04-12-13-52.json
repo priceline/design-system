@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade to styled-components v6",
+      "type": "patch",
+      "packageName": "pcln-menu"
+    }
+  ],
+  "packageName": "pcln-menu",
+  "email": "steven.dalonzo@priceline.com"
+}
