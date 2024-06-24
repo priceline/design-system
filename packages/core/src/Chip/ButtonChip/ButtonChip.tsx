@@ -1,10 +1,9 @@
 import { ChevronDown } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { FontSizeProps, SpaceProps } from 'styled-system'
 import { Button } from '../../Button/Button'
 import { getPaletteColor } from '../../utils/utils'
-import { ChipContent, type IconComponent } from '../ChipContent/ChipContent'
+import { ChipContent, ChipContentProps } from '../ChipContent/ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 
 const ChipButton = styled(Button)`
@@ -34,24 +33,13 @@ export type ButtonChipVariation = 'outline' | 'shadow'
 /**
  * @public
  */
-export type ButtonChipProps = SpaceProps &
-  FontSizeProps & {
-    BridgeIcon?: IconComponent
-    bridgeLabel?: string
-    children?: React.ReactNode
-    color?: string
-    disabled?: boolean
-    expanded?: boolean
-    facet?: string
-    Icon?: IconComponent
-    id?: string
-    label?: string
-    selected?: boolean
-    showActionIcon?: boolean
-    onClick?: (e: unknown) => unknown
-    width?: string
-    variation?: ButtonChipVariation
-  }
+export type ButtonChipProps = Omit<ChipContentProps, 'action'> & {
+  expanded?: boolean
+  id?: string
+  showActionIcon?: boolean
+  onClick?: (e: unknown) => unknown
+  variation?: ButtonChipVariation
+}
 
 /**
  * @public
