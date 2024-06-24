@@ -35,6 +35,9 @@ import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applyVariations, color, colorScheme } from '../utils/utils'
 
+/**
+ * @public
+ */
 export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadiusProps, 'borderRadius'> &
   BoxShadowProps &
   DisplayProps &
@@ -77,7 +80,16 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadius
     colorScheme?: ColorSchemeName
     onClick?: (e: unknown) => void
     ref?: MutableRefObject<T | undefined>
-    rounded?: 'round' | 'top' | 'right' | 'bottom' | 'left' | 'topLeft' | 'topRight' | 'bottomRight' | 'bottomLeft'
+    rounded?:
+      | 'round'
+      | 'top'
+      | 'right'
+      | 'bottom'
+      | 'left'
+      | 'topLeft'
+      | 'topRight'
+      | 'bottomRight'
+      | 'bottomLeft'
   }
 
 /**
