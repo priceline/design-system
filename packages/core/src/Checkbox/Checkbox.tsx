@@ -101,7 +101,7 @@ const StyledInput = styled.input`
  * @public
  */
 export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
-  id: string
+  id?: string
   indeterminate?: boolean
   size?: number
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
