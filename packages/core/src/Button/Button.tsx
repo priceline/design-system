@@ -223,8 +223,8 @@ export type ButtonProps = WidthProps &
     borderRadius?: BorderRadius
     boxShadowSize?: ResponsiveValue<BoxShadowSize>
     autoFocus?: boolean
-    IconLeft?: React.Component | React.FC
-    IconRight?: React.Component | React.FC
+    IconLeft?: React.ComponentType
+    IconRight?: React.ComponentType
     flexProps?: FlexProps
     onClick?: (e: unknown) => void
     onFocus?: (e: unknown) => void
