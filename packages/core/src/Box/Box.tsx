@@ -1,4 +1,4 @@
-import React, { MutableRefObject } from 'react'
+import React, { type ForwardedRef } from 'react'
 import styled from 'styled-components'
 import {
   BorderRadiusProps,
@@ -79,7 +79,7 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadius
       | 'background'
     colorScheme?: ColorSchemeName
     onClick?: (e: unknown) => void
-    ref?: MutableRefObject<T | undefined>
+    ref?: ForwardedRef<T>
     rounded?:
       | 'round'
       | 'top'
