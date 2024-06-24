@@ -54,7 +54,7 @@ export {
   type FilterChipProps,
   type FilterChipVariation,
 } from './Chip/FilterChip/FilterChip'
-export { CloseButton, type CloseButtonProps } from './CloseButton/CloseButton'
+export { CloseButton, type CloseButtonProps, type MotionButtonProps } from './CloseButton/CloseButton'
 export {
   closeButtonSizes,
   closeButtonVariants,
