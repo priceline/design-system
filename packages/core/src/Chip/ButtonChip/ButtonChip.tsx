@@ -48,7 +48,7 @@ export type ButtonChipProps = SpaceProps &
     label?: string
     selected?: boolean
     showActionIcon?: boolean
-    onClick?: (unknown) => unknown
+    onClick?: (e: unknown) => unknown
     width?: string
     variation?: ButtonChipVariation
   }

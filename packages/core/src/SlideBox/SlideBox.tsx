@@ -14,7 +14,7 @@ import { useSlideBoxNav } from './useSlideBoxNav'
 export type SlideBoxProps = {
   children?: React.ReactNode
   visibleSlides?: Array<number> | number
-  onSlideChange?: (unknown) => unknown
+  onSlideChange?: (e: unknown) => unknown
   slideSpacing?: number
   stretchHeight?: boolean
   layout?: string

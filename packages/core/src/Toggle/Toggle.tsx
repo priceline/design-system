@@ -60,7 +60,7 @@ const WrapperBox = styled(Box)`
 export type ToggleProps = {
   isOn?: boolean
   label?: string
-  onToggle?: (unknown) => unknown
+  onToggle?: (e: unknown) => unknown
   disabled?: boolean
   width?: string
   height?: number

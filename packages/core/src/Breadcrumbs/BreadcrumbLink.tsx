@@ -12,7 +12,7 @@ export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
   href?: string
   icon?: React.ReactNode
   label?: string
-  onClick?: (unknown) => unknown
+  onClick?: (e: unknown) => unknown
 }
 
 /**

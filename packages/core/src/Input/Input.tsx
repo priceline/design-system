@@ -80,7 +80,7 @@ export type InputProps = SpaceProps &
   Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> &
   React.RefAttributes<HTMLInputElement> & {
     children?: React.ReactNode
-    onChange?: (unknown) => unknown
+    onChange?: (e: unknown) => unknown
     helperText?: React.ReactElement<
       InputHelperTextProps,
       string | React.JSXElementConstructor<InputHelperTextProps>

@@ -26,7 +26,7 @@ export type StepProps = {
   active?: boolean
   completed?: boolean
   children?: React.ReactNode
-  onClick?: (unknown) => unknown
+  onClick?: (e: unknown) => unknown
 }
 
 /**
