@@ -38,7 +38,7 @@ export const closeButtonVariants = ['filled', 'white'] as const
 /** @public */
 export type CloseButtonVariant = (typeof closeButtonVariants)[number]
 
-export const closeButtonVariantProps: Record<CloseButtonVariant, Omit<CloseButtonProps, 'variant'>> = {
+export const closeButtonVariantProps = {
   filled: { bgColor: 'background.lightest', boxShadowSize: 'sm', color: 'primary.base' },
   white: { color: 'text.lightest' },
 } as const
