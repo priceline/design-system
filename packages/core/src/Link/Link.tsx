@@ -90,8 +90,8 @@ export type LinkProps = WidthProps &
     size?: ButtonSizes | ButtonSizes[]
     target?: string
     variation?: ButtonVariations
-    onClick?: React.MouseEventHandler<HTMLAnchorElement>
-    onFocus?: React.FocusEventHandler<HTMLAnchorElement>
+    onClick?: React.ComponentProps<'a'>['onClick']
+    onFocus?: React.ComponentProps<'a'>['onFocus']
   }
 
 /**

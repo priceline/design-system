@@ -1,7 +1,7 @@
 import { Check } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../Button/Button'
+import { Button, type ButtonProps } from '../Button/Button'
 import { Text } from '../Text/Text'
 import { getPaletteColor } from '../utils/utils'
 
@@ -26,7 +26,7 @@ export type StepProps = {
   active?: boolean
   completed?: boolean
   children?: React.ReactNode
-  onClick?: (e: unknown) => unknown
+  onClick?: ButtonProps['onClick']
 }
 
 /**

@@ -70,7 +70,7 @@ const RadioIcon = ({ checked, ...props }: RadioIconProps) => {
 export type RadioProps = React.InputHTMLAttributes<HTMLInputElement> & {
   size?: number
   color?: PaletteFamilyName
-  onClick?: (e: unknown) => unknown
+  onClick?: React.ComponentProps<'input'>['onClick']
 }
 
 /**

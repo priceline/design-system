@@ -1,9 +1,9 @@
 import { ChevronDown } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../../Button/Button'
+import { Button, type ButtonProps } from '../../Button/Button'
 import { getPaletteColor } from '../../utils/utils'
-import { ChipContent, ChipContentProps } from '../ChipContent/ChipContent'
+import { ChipContent, type ChipContentProps } from '../ChipContent/ChipContent'
 import { ChipContentWrapper } from '../ChipContentWrapper'
 
 const ChipButton = styled(Button)`
@@ -37,7 +37,7 @@ export type ButtonChipProps = Omit<ChipContentProps, 'action'> & {
   expanded?: boolean
   id?: string
   showActionIcon?: boolean
-  onClick?: (e: unknown) => unknown
+  onClick?: ButtonProps['onClick']
   variation?: ButtonChipVariation
 }
 

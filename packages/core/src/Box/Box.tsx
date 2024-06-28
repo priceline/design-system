@@ -78,7 +78,7 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadius
       | 'border'
       | 'background'
     colorScheme?: ColorSchemeName
-    onClick?: (e: unknown) => void
+    onClick?: React.ComponentProps<'div'>['onClick']
     ref?: ForwardedRef<T>
     rounded?:
       | 'round'

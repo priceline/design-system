@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex } from '../Flex/Flex'
-import { Link } from '../Link/Link'
+import { Link, LinkProps } from '../Link/Link'
 import { Text } from '../Text/Text'
 
 /**
@@ -12,7 +12,7 @@ export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
   href?: string
   icon?: React.ReactNode
   label?: string
-  onClick?: (e: unknown) => unknown
+  onClick?: LinkProps['onClick']
 }
 
 /**
