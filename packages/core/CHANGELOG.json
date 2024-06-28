@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.16.2",
+      "tag": "pcln-design-system_v6.16.2",
+      "date": "Fri, 28 Jun 2024 15:22:55 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix Input.HelperText types",
+            "author": "Guilherme André Welter <guilherme.a.welter@gmail.com>",
+            "commit": "1df6261995363f9a91b1357e8c763aa3a18c7766"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.16.1",
       "tag": "pcln-design-system_v6.16.1",
       "date": "Tue, 11 Jun 2024 19:02:41 GMT",

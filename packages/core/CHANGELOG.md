@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 11 Jun 2024 19:02:41 GMT and should not be manually modified.
+This log was last generated on Fri, 28 Jun 2024 15:22:55 GMT and should not be manually modified.
+
+## 6.16.2
+Fri, 28 Jun 2024 15:22:55 GMT
+
+### Patches
+
+- Fix Input.HelperText types
 
 ## 6.16.1
 Tue, 11 Jun 2024 19:02:41 GMT
