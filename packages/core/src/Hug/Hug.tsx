@@ -10,7 +10,7 @@ export type HugProps = CardProps & {
   children?: React.ReactNode
   iconDisplay?: string[]
   icon?: React.ReactNode
-  text?: React.ReactNode | React.ReactNode[] | string
+  text?: React.ReactNode
   color?: string
   fontSize?: string | number
 }

@@ -83,15 +83,15 @@ export type LinkProps = WidthProps &
   SpaceProps &
   React.AnchorHTMLAttributes<HTMLAnchorElement> &
   React.RefAttributes<unknown> & {
-    children?: React.ReactNode | string
+    children?: React.ReactNode
     color?: string
     disabled?: boolean
     href?: string
     size?: ButtonSizes | ButtonSizes[]
     target?: string
     variation?: ButtonVariations
-    onClick?: React.MouseEventHandler<HTMLAnchorElement>
-    onFocus?: React.FocusEventHandler<HTMLAnchorElement>
+    onClick?: React.ComponentProps<'a'>['onClick']
+    onFocus?: React.ComponentProps<'a'>['onFocus']
   }
 
 /**

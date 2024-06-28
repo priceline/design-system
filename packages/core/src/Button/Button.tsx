@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import {
   BoxShadowProps,
   HeightProps,
+  type ResponsiveValue,
   SpaceProps,
   WidthProps,
   borderRadius,
@@ -17,6 +18,7 @@ import {
 import { Flex, type FlexProps } from '../Flex/Flex'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
+import { type BorderRadius, type BoxShadowSize } from '../theme'
 
 /**
  * @public
@@ -218,15 +220,15 @@ export type ButtonProps = WidthProps &
     color?: string
     variation?: ButtonVariations
     size?: ButtonSizes | ButtonSizes[]
-    borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
-    boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
+    borderRadius?: BorderRadius
+    boxShadowSize?: ResponsiveValue<BoxShadowSize>
     autoFocus?: boolean
-    IconLeft?: React.Component
-    IconRight?: React.Component
+    IconLeft?: React.ComponentType
+    IconRight?: React.ComponentType
     flexProps?: FlexProps
-    onClick?: (unknown) => unknown
-    onFocus?: (unknown) => unknown
-    onMouseEnter?: (unknown) => unknown
+    onClick?: React.ComponentProps<'button'>['onClick']
+    onFocus?: React.ComponentProps<'button'>['onFocus']
+    onMouseEnter?: React.ComponentProps<'button'>['onMouseEnter']
   }
 
 export const buttonStyles = css`

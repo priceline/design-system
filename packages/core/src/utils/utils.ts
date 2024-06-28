@@ -1,6 +1,6 @@
 import themeGet from '@styled-system/theme-get'
 import { css } from 'styled-components'
-import { mediaQueries } from '../theme'
+import { mediaQueries, type PaletteFamilyName, type PaletteColor, PaletteFamilyVariation } from '../theme'
 
 /**
  * Checks if the given color prop is a valid palette color
@@ -249,9 +249,10 @@ export const applyVariations =
  *
  * @public
  */
-export const getPaletteColor =
-  (...args) =>
-  (props) => {
+export function getPaletteColor(
+  ...args: [PaletteColor | PaletteFamilyName | PaletteFamilyVariation | string, PaletteFamilyVariation?]
+) {
+  return (props) => {
     let color = args.length === 2 ? args[0] : props.color
     let shade = args.length === 2 ? args[1] : args[0]
 
@@ -262,13 +263,12 @@ export const getPaletteColor =
       shade = colorShade[1]
     }
 
-    return (
-      themeGet(`palette.${color}.${shade}`)(props) ||
+    return (themeGet(`palette.${color}.${shade}`)(props) ||
       themeGet(`palette.${color}`)(props) ||
       themeGet(`colors.${color}`)(props) ||
-      color
-    )
+      color) as string
   }
+}
 
 /**
  * @public

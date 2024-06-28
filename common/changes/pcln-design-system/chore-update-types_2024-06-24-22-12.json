@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Update typings for several components",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

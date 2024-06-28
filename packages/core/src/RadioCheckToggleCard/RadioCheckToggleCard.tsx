@@ -41,7 +41,7 @@ export type TVPositions = (typeof RadioCheckToggleCardVPositions)[number]
  * @public
  */
 export type RadioCheckToggleCardProps = {
-  children?: React.ReactNode | string
+  children?: React.ReactNode
   cardType?: TCardTypes
   hPosition?: THPositions
   vPosition?: TVPositions

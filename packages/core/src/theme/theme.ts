@@ -629,21 +629,8 @@ export type PaletteFamilies = Record<PaletteFamilyName, PaletteFamily>
 /**
  * @public
  */
-export type PaletteColorPaletteFamily = Array<keyof PaletteFamilies>[number]
+export type PaletteColor = `${PaletteFamilyName}.${PaletteFamilyVariation}`
 
-/**
- * @public
- */
-export type PaletteColorPaletteFamilyOption = Array<keyof PaletteFamily>[number]
-
-/**
- * @public
- */
-export type PaletteColor = `${PaletteColorPaletteFamily}.${PaletteColorPaletteFamilyOption}`
-
-/**
- * @public
- */
 export const paletteColors = paletteFamilyNames.flatMap((family) =>
   paletteFamilyVariations.map((variation) => `${family}.${variation}`)
 )

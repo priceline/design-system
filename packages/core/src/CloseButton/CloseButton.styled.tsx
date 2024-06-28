@@ -5,16 +5,13 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { ComposedStyleFns } from '../theme/theme'
 import { getPaletteColor } from '../utils/utils'
-import type { CloseButtonProps } from './CloseButton'
+import { type MotionButtonProps } from './CloseButton'
 
 /** @public */
 export const closeButtonSizes = ['sm', 'md', 'lg'] as const
 
 /** @public */
 export type CloseButtonSize = (typeof closeButtonSizes)[number] | number
-
-/** @public */
-export type MotionButtonProps = HTMLMotionProps<'button'> & CloseButtonProps
 
 export const closeButtonIconSizes: Record<CloseButtonSize, number> = {
   sm: 20,
@@ -38,7 +35,7 @@ export const closeButtonVariants = ['filled', 'white'] as const
 /** @public */
 export type CloseButtonVariant = (typeof closeButtonVariants)[number]
 
-export const closeButtonVariantProps: Record<CloseButtonVariant, Omit<CloseButtonProps, 'variant'>> = {
+export const closeButtonVariantProps = {
   filled: { bgColor: 'background.lightest', boxShadowSize: 'sm', color: 'primary.base' },
   white: { color: 'text.lightest' },
 } as const

@@ -55,7 +55,7 @@ export type LabelProps = SpaceProps &
   TextStyleProps &
   WidthProps &
   Partial<Omit<HTMLLabelElement, 'children'>> & {
-    children?: React.ReactNode | string
+    children?: React.ReactNode
     color?: string
     autoHide?: boolean
     nowrap?: boolean
