@@ -250,7 +250,10 @@ export const applyVariations =
  * @public
  */
 export function getPaletteColor(
-  ...args: [PaletteColor | PaletteFamilyName | PaletteFamilyVariation | string, PaletteFamilyVariation?]
+  ...args: [
+    PaletteColor | PaletteFamilyName | PaletteFamilyVariation | string,
+    (PaletteColor | PaletteFamilyVariation)?
+  ]
 ) {
   return (props) => {
     let color = args.length === 2 ? args[0] : props.color
