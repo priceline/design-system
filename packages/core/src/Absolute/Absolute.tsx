@@ -17,7 +17,7 @@ import { Box, BoxProps } from '../Box/Box'
 /**
  * @public
  */
-export type AbsoluteProps<T extends HTMLElement = HTMLDivElement> = BoxProps<T> &
+export type AbsoluteProps = BoxProps &
   TopProps &
   RightProps &
   BottomProps &

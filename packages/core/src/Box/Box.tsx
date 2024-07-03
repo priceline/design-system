@@ -1,4 +1,4 @@
-import React, { type ForwardedRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {
   BorderRadiusProps,
@@ -38,7 +38,7 @@ import { applyVariations, color, colorScheme } from '../utils/utils'
 /**
  * @public
  */
-export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadiusProps, 'borderRadius'> &
+export type BoxProps = Omit<BorderRadiusProps, 'borderRadius'> &
   BoxShadowProps &
   DisplayProps &
   HeightProps &
@@ -51,7 +51,7 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadius
   SpaceProps &
   TextAlignProps &
   WidthProps &
-  React.HTMLAttributes<T> & {
+  React.ComponentPropsWithRef<'div'> & {
     children?: React.ReactNode
     as?: unknown
     role?: string
@@ -79,7 +79,6 @@ export type BoxProps<T extends HTMLElement = HTMLDivElement> = Omit<BorderRadius
       | 'background'
     colorScheme?: ColorSchemeName
     onClick?: React.ComponentProps<'div'>['onClick']
-    ref?: ForwardedRef<T>
     rounded?:
       | 'round'
       | 'top'
