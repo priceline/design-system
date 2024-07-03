@@ -17,12 +17,7 @@ import { Box, type BoxProps } from '../Box/Box'
 /**
  * @public
  */
-export type RelativeProps = TopProps &
-  RightProps &
-  BottomProps &
-  LeftProps &
-  ZIndexProps &
-  BoxProps
+export type RelativeProps = TopProps & RightProps & BottomProps & LeftProps & ZIndexProps & BoxProps
 
 /**
  * @public
