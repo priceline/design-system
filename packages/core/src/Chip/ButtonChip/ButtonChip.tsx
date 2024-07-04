@@ -33,7 +33,7 @@ export type ButtonChipVariation = 'outline' | 'shadow'
 /**
  * @public
  */
-export type ButtonChipProps = Omit<ChipContentProps, 'action'> & {
+export type ButtonChipProps = Omit<ChipContentProps, 'action' | 'ref'> & {
   expanded?: boolean
   id?: string
   showActionIcon?: boolean
@@ -44,7 +44,7 @@ export type ButtonChipProps = Omit<ChipContentProps, 'action'> & {
 /**
  * @public
  */
-export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef(
+export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef<HTMLButtonElement, ButtonChipProps>(
   (
     {
       color,

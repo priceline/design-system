@@ -1,5 +1,5 @@
 import { themeGet } from '@styled-system/theme-get'
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'
 import {
   BoxShadowProps,
@@ -215,8 +215,7 @@ export type ButtonProps = WidthProps &
   HeightProps &
   SpaceProps &
   BoxShadowProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement> &
-  React.RefAttributes<unknown> & {
+  ComponentPropsWithRef<'button'> & {
     color?: string
     variation?: ButtonVariations
     size?: ButtonSizes | ButtonSizes[]
@@ -226,9 +225,6 @@ export type ButtonProps = WidthProps &
     IconLeft?: React.ComponentType
     IconRight?: React.ComponentType
     flexProps?: FlexProps
-    onClick?: React.ComponentProps<'button'>['onClick']
-    onFocus?: React.ComponentProps<'button'>['onFocus']
-    onMouseEnter?: React.ComponentProps<'button'>['onMouseEnter']
   }
 
 export const buttonStyles = css`
@@ -359,7 +355,7 @@ const ButtonIcon = ({ Component, ...props }) => {
 /**
  * @public
  */
-export const Button = React.forwardRef((props: ButtonProps, ref) => {
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const { children, ...restProps } = props
   const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props
   const hasChildren = React.Children.toArray(children).length > 0

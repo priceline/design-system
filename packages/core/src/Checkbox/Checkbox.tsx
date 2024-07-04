@@ -1,5 +1,5 @@
 import { BoxChecked, BoxEmpty, BoxMinus } from 'pcln-icons'
-import React, { useEffect, useState } from 'react'
+import React, { type ComponentPropsWithRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { applyVariations, getPaletteColor } from '../utils/utils'
 
@@ -100,16 +100,14 @@ const StyledInput = styled.input`
 /**
  * @public
  */
-export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
+export type CheckboxProps = ComponentPropsWithRef<'input'> & {
   id?: string
   indeterminate?: boolean
   size?: number
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
   color?: string
   checked?: boolean
   defaultChecked?: boolean
   disabled?: boolean
-  ref?: React.Ref<HTMLInputElement>
   unselectedColor?: string
 }
 

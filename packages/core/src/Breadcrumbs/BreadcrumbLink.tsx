@@ -18,7 +18,7 @@ export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
 /**
  * @public
  */
-export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = React.forwardRef(
+export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = React.forwardRef<HTMLAnchorElement, BreadcrumbLinkProps>(
   ({ className, isLastChild, href, icon, label, onClick }, ref) => {
     const linkColor = isLastChild ? 'text.dark' : 'text.light'
 

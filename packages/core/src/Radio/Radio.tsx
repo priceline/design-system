@@ -1,5 +1,5 @@
 import { RadioChecked, RadioEmpty } from 'pcln-icons'
-import React from 'react'
+import React, { type ComponentPropsWithoutRef } from 'react'
 import styled from 'styled-components'
 import { type PaletteFamilyName } from '../theme/theme'
 import { applyVariations, getPaletteColor } from '../utils/utils'
@@ -67,16 +67,15 @@ const RadioIcon = ({ checked, ...props }: RadioIconProps) => {
 /**
  * @public
  */
-export type RadioProps = React.InputHTMLAttributes<HTMLInputElement> & {
+export type RadioProps = ComponentPropsWithoutRef<'input'> & {
   size?: number
   color?: PaletteFamilyName
-  onClick?: React.ComponentProps<'input'>['onClick']
 }
 
 /**
  * @public
  */
-export const Radio: React.FC<RadioProps> = React.forwardRef((props, ref) => {
+export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement,RadioProps>((props, ref) => {
   const { checked, disabled, size } = props
 
   const borderAdjustedSize = size + 4

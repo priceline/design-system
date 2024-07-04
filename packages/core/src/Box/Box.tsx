@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 import {
   BorderRadiusProps,
@@ -51,7 +51,7 @@ export type BoxProps = Omit<BorderRadiusProps, 'borderRadius'> &
   SpaceProps &
   TextAlignProps &
   WidthProps &
-  React.ComponentPropsWithRef<'div'> & {
+  ComponentPropsWithRef<'div'> & {
     children?: React.ReactNode
     as?: unknown
     role?: string
@@ -78,7 +78,6 @@ export type BoxProps = Omit<BorderRadiusProps, 'borderRadius'> &
       | 'border'
       | 'background'
     colorScheme?: ColorSchemeName
-    onClick?: React.ComponentProps<'div'>['onClick']
     rounded?:
       | 'round'
       | 'top'

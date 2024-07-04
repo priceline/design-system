@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithoutRef } from 'react'
 import styled from 'styled-components'
 import { Image } from '../Image/Image'
 
@@ -27,7 +27,7 @@ const determineSRC = (blur, chooseSrc, height, width) => {
 /**
  * @public
  */
-export type PlaceholderImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+export type PlaceholderImageProps = ComponentPropsWithoutRef<'img'> & {
   ariaHidden?: boolean
   blur?: boolean
   chooseSrc?: string

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } from 'styled-system'
 import { borderRadiusAttrs } from '../utils/attrs'
@@ -15,8 +15,7 @@ export type ToggleBadgeProps = {
   unSelectedBg?: string
 } & SpaceProps &
   FontSizeProps &
-  React.HTMLAttributes<HTMLInputElement> &
-  React.RefAttributes<HTMLInputElement>
+  ComponentPropsWithRef<'button'>
 
 /**
  * @public

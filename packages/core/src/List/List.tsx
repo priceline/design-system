@@ -1,5 +1,5 @@
 import themeGet from '@styled-system/theme-get'
-import React from 'react'
+import React, { type ComponentPropsWithoutRef } from 'react'
 import styled, { css } from 'styled-components'
 import { compose, fontSize, space, width, type FontSizeProps, type SpaceProps } from 'styled-system'
 import { type PaletteColor, type PaletteFamilyName } from '../theme/theme'
@@ -45,7 +45,7 @@ export type ListListStyle = (typeof listStyles)[number]
  */
 export type ListProps = FontSizeProps &
   SpaceProps &
-  React.HTMLAttributes<HTMLOListElement | HTMLUListElement> & {
+  ComponentPropsWithoutRef<'ul' | 'ol'> & {
     children?: React.ReactNode
     listStyle?: ListListStyle
     indentSize?: ListIndentSize
