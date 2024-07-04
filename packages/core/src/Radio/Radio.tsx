@@ -75,7 +75,7 @@ export type RadioProps = ComponentPropsWithoutRef<'input'> & {
 /**
  * @public
  */
-export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement,RadioProps>((props, ref) => {
+export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, RadioProps>((props, ref) => {
   const { checked, disabled, size } = props
 
   const borderAdjustedSize = size + 4
