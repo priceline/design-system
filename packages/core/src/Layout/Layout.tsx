@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { zIndex } from 'styled-system'
 import { Box } from '../Box/Box'
-import { Grid } from '../Grid/Grid'
+import { Grid, type GridProps } from '../Grid/Grid'
 import { spaceValues } from '../theme'
 
-const getWidthsForVariation = (variation: string) => {
+const getWidthsForVariation = (variation: string | undefined) => {
   return (
     variation &&
     variation
@@ -102,13 +102,13 @@ export type LayoutGap = (typeof ALLOWED_GAP_VALUES)[number] | Array<(typeof ALLO
  */
 export type LayoutVariation =
   | (typeof ALLOWED_LAYOUT_VALUES)[number]
-  | Array<(typeof ALLOWED_LAYOUT_VALUES)[number]>
+  | Array<(typeof ALLOWED_LAYOUT_VALUES)[number] | undefined>
 
 /**
  * @public
  */
-export type LayoutProps = {
-  children: React.ReactElement | React.ReactElement[]
+export type LayoutProps = GridProps & {
+  children: React.ReactNode
   gap?: LayoutGap
   rowGap?: LayoutGap
   variation?: LayoutVariation

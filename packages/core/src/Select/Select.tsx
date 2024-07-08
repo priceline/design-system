@@ -1,6 +1,6 @@
 import themeGet from '@styled-system/theme-get'
 import { ChevronDown } from 'pcln-icons'
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'
 import { FontSizeProps, SpaceProps, borderRadius, compose, fontSize, space } from 'styled-system'
 import { Flex } from '../Flex/Flex'
@@ -78,12 +78,11 @@ export type SelectVariations = 'input' | 'subtle'
  */
 export type SelectProps = SpaceProps &
   FontSizeProps &
-  Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> & {
+  Omit<ComponentPropsWithRef<'select'>, 'size'> & {
     children?: React.ReactNode
     color?: PaletteColor
     borderRadius?: BorderRadius
     size?: SelectSizes
-    ref?: React.Ref<React.ForwardedRef<unknown>>
     variation?: SelectVariations
   }
 

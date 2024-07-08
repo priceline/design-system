@@ -1,4 +1,4 @@
-import React, { ForwardRefExoticComponent, RefAttributes } from 'react'
+import React, { type ComponentPropsWithRef, ForwardRefExoticComponent, RefAttributes } from 'react'
 import styled, { css } from 'styled-components'
 import {
   FontSizeProps,
@@ -77,10 +77,8 @@ export type InputHelperTextProps = TextProps & {
 export type InputProps = SpaceProps &
   FontSizeProps &
   ZIndexProps &
-  Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> &
-  React.RefAttributes<HTMLInputElement> & {
+  Omit<ComponentPropsWithRef<'input'>, 'size'> & {
     children?: React.ReactNode
-    onChange?: (unknown) => unknown
     helperText?: React.ReactElement<
       InputHelperTextProps,
       string | React.JSXElementConstructor<InputHelperTextProps>
@@ -101,7 +99,7 @@ export type InputWithRef = ForwardRefExoticComponent<Omit<InputProps, 'ref'> & R
 /**
  * @public
  */
-export const Input = React.forwardRef((props: InputProps, ref) => {
+export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   const { helperText, color, ...restProps } = props
   return (
     <>

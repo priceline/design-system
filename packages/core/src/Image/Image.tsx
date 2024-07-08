@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithoutRef } from 'react'
 import styled from 'styled-components'
 import {
   BorderRadiusProps,
@@ -42,7 +42,7 @@ export type ImageProps = BorderRadiusProps &
   MinWidthProps &
   SpaceProps &
   WidthProps &
-  Partial<Omit<HTMLImageElement, 'width' | 'height'>> & {
+  Omit<ComponentPropsWithoutRef<'img'>, 'width' | 'height'> & {
     borderRadiusSize?: string
     rounded?: string
     boxShadowSize?: string

@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
-import { HTMLMotionProps, Transition, motion } from 'framer-motion'
+import { Transition, motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import { overflowX, overflowY, zIndex } from 'styled-system'
@@ -35,7 +35,7 @@ const scrimStyles = {
 
 const enterTransition: Transition = { duration: 0.25, ease: 'easeOut' }
 const exitTransition: Transition = { duration: 0.15, ease: 'easeIn' }
-const animationStyles: Record<'default' | 'sheet' | 'overlay', HTMLMotionProps<'div'>> = {
+const animationStyles = {
   default: {
     initial: { opacity: 0, scale: 0.9, translateY: 64 },
     animate: { opacity: 1, scale: 1, translateY: 0, transition: enterTransition },

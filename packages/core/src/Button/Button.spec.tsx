@@ -160,11 +160,7 @@ describe('Button', () => {
 
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-md'])
 
-    rerender(
-      <Button size='small' borderRadius=''>
-        BUTTON
-      </Button>
-    )
+    rerender(<Button size='small'>BUTTON</Button>)
     expect(button).toHaveStyleRule('border-radius', borderRadius['action-sm'])
 
     rerender(

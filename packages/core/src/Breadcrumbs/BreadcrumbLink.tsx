@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex } from '../Flex/Flex'
-import { Link } from '../Link/Link'
+import { Link, LinkProps } from '../Link/Link'
 import { Text } from '../Text/Text'
 
 /**
@@ -12,13 +12,13 @@ export type BreadcrumbLinkProps = React.RefAttributes<unknown> & {
   href?: string
   icon?: React.ReactNode
   label?: string
-  onClick?: (unknown) => unknown
+  onClick?: LinkProps['onClick']
 }
 
 /**
  * @public
  */
-export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = React.forwardRef(
+export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = React.forwardRef<HTMLAnchorElement, BreadcrumbLinkProps>(
   ({ className, isLastChild, href, icon, label, onClick }, ref) => {
     const linkColor = isLastChild ? 'text.dark' : 'text.light'
 

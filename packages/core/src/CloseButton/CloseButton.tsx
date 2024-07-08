@@ -1,4 +1,5 @@
 import React, { MouseEventHandler, useState } from 'react'
+import { type HTMLMotionProps } from 'framer-motion'
 import { Relative } from '../Relative/Relative'
 import { type BoxShadowSize, type IStyledSystemProps, type PaletteColor } from '../theme/theme'
 import {
@@ -25,6 +26,9 @@ export type CloseButtonProps = IStyledSystemProps & {
   variant?: CloseButtonVariant
 }
 
+/** @public */
+export type MotionButtonProps = HTMLMotionProps<'button'> & CloseButtonProps
+
 /**
  * @public
  */
@@ -39,7 +43,7 @@ export const CloseButton = ({
   title = 'close',
   variant,
   ...props
-}: CloseButtonProps) => {
+}: MotionButtonProps) => {
   const [hover, setHover] = useState(false)
 
   return (

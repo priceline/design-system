@@ -1,9 +1,10 @@
 import { themeGet } from '@styled-system/theme-get'
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'
 import {
   BoxShadowProps,
   HeightProps,
+  type ResponsiveValue,
   SpaceProps,
   WidthProps,
   borderRadius,
@@ -17,6 +18,7 @@ import {
 import { Flex, type FlexProps } from '../Flex/Flex'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
+import { type BorderRadius, type BoxShadowSize } from '../theme'
 
 /**
  * @public
@@ -213,20 +215,16 @@ export type ButtonProps = WidthProps &
   HeightProps &
   SpaceProps &
   BoxShadowProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement> &
-  React.RefAttributes<unknown> & {
+  ComponentPropsWithRef<'button'> & {
     color?: string
     variation?: ButtonVariations
     size?: ButtonSizes | ButtonSizes[]
-    borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | ''
-    boxShadowSize?: '' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-md' | 'overlay-lg' | 'overlay-xl'
+    borderRadius?: BorderRadius
+    boxShadowSize?: ResponsiveValue<BoxShadowSize>
     autoFocus?: boolean
-    IconLeft?: React.Component
-    IconRight?: React.Component
+    IconLeft?: React.Component | React.FC
+    IconRight?: React.Component | React.FC
     flexProps?: FlexProps
-    onClick?: (unknown) => unknown
-    onFocus?: (unknown) => unknown
-    onMouseEnter?: (unknown) => unknown
   }
 
 export const buttonStyles = css`
@@ -357,7 +355,7 @@ const ButtonIcon = ({ Component, ...props }) => {
 /**
  * @public
  */
-export const Button = React.forwardRef((props: ButtonProps, ref) => {
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const { children, ...restProps } = props
   const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props
   const hasChildren = React.Children.toArray(children).length > 0

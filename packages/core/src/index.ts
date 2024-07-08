@@ -54,7 +54,7 @@ export {
   type FilterChipProps,
   type FilterChipVariation,
 } from './Chip/FilterChip/FilterChip'
-export { CloseButton, type CloseButtonProps } from './CloseButton/CloseButton'
+export { CloseButton, type CloseButtonProps, type MotionButtonProps } from './CloseButton/CloseButton'
 export {
   closeButtonSizes,
   closeButtonVariants,
@@ -168,7 +168,7 @@ export * from './utils'
 export { createTheme } from './utils/createTheme'
 
 export * from './theme'
-export type { PaletteColorPaletteFamily, PaletteColorPaletteFamilyOption, PaletteFamily } from './theme/theme'
+export type { PaletteFamily } from './theme/theme'
 
 // DocsUtils
 export { DoDont, type DoDontProps } from './DocsUtils/DoDont/DoDont'

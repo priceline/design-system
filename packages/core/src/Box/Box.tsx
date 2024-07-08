@@ -1,4 +1,4 @@
-import React, { MutableRefObject } from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 import {
   BorderRadiusProps,
@@ -10,6 +10,7 @@ import {
   MinHeightProps,
   MinWidthProps,
   OverflowProps,
+  type ResponsiveValue,
   SizeProps,
   SpaceProps,
   TextAlignProps,
@@ -29,7 +30,7 @@ import {
   textAlign,
   width,
 } from 'styled-system'
-import type { ColorSchemeName } from '../theme/theme'
+import type { BorderRadius, BoxShadowSize, ColorSchemeName } from '../theme/theme'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applyVariations, color, colorScheme } from '../utils/utils'
@@ -37,7 +38,7 @@ import { applyVariations, color, colorScheme } from '../utils/utils'
 /**
  * @public
  */
-export type BoxProps = BorderRadiusProps &
+export type BoxProps = Omit<BorderRadiusProps, 'borderRadius'> &
   BoxShadowProps &
   DisplayProps &
   HeightProps &
@@ -50,27 +51,15 @@ export type BoxProps = BorderRadiusProps &
   SpaceProps &
   TextAlignProps &
   WidthProps &
-  React.HTMLAttributes<HTMLDivElement> & {
-    children?: React.ReactNode | string
+  ComponentPropsWithRef<'div'> & {
+    children?: React.ReactNode
     as?: unknown
     role?: string
     bg?: string
     color?: string
     className?: string
-    borderRadiusSize?:
-      | 'none'
-      | 'xsm'
-      | 'sm'
-      | 'md'
-      | 'lg'
-      | 'xl'
-      | '2xl'
-      | '3xl'
-      | 'full'
-      | 'action-sm'
-      | 'action-md'
-      | 'action-lg'
-    boxShadowSize?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'overlay-lg' | 'overlay-xl'
+    borderRadius?: ResponsiveValue<BorderRadius> | BorderRadiusProps['borderRadius']
+    boxShadowSize?: ResponsiveValue<BoxShadowSize>
     boxShadowColor?:
       | 'primary'
       | 'secondary'
@@ -89,9 +78,16 @@ export type BoxProps = BorderRadiusProps &
       | 'border'
       | 'background'
     colorScheme?: ColorSchemeName
-    onClick?: (unknown) => unknown
-    ref?: MutableRefObject<HTMLDivElement>
-    rounded?: 'top' | 'right' | 'bottom' | 'left' | 'topLeft' | 'topRight' | 'bottomRight' | 'bottomLeft'
+    rounded?:
+      | 'round'
+      | 'top'
+      | 'right'
+      | 'bottom'
+      | 'left'
+      | 'topLeft'
+      | 'topRight'
+      | 'bottomRight'
+      | 'bottomLeft'
   }
 
 /**

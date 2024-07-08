@@ -12,9 +12,10 @@ import { useSlideBoxNav } from './useSlideBoxNav'
  * @public
  */
 export type SlideBoxProps = {
-  children?: React.ReactNode | string
+  children?: React.ReactNode
   visibleSlides?: Array<number> | number
-  onSlideChange?: (unknown) => unknown
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  onSlideChange?: (e: any) => unknown
   slideSpacing?: number
   stretchHeight?: boolean
   layout?: string

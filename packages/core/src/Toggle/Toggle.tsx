@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Absolute } from '../Absolute/Absolute'
-import { Box } from '../Box/Box'
+import { Box, type BoxProps } from '../Box/Box'
 import { getPaletteColor } from '../utils/utils'
 
 const alphaColor = (color: string, props) => `${getPaletteColor(color)(props)}4C`
@@ -60,7 +60,7 @@ const WrapperBox = styled(Box)`
 export type ToggleProps = {
   isOn?: boolean
   label?: string
-  onToggle?: (unknown) => unknown
+  onToggle?: BoxProps['onClick']
   disabled?: boolean
   width?: string
   height?: number

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithoutRef } from 'react'
 import styled, { css } from 'styled-components'
 import {
   BorderRadiusProps,
@@ -33,7 +33,7 @@ const image = (props) => (props.image ? { backgroundImage: `url(${props.image})`
 export type BackgroundImageProps = WidthProps &
   HeightProps &
   BorderRadiusProps &
-  Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'width' | 'height'> & {
+  Omit<ComponentPropsWithoutRef<'img'>, 'width' | 'height'> & {
     variation?: 'parallax' | 'static'
     image?: string
     borderRadius?: string

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'
 import { SpaceProps, WidthProps, compose, space, width } from 'styled-system'
 import { buttonStyles, type ButtonSizes, type ButtonVariations } from '../Button/Button'
@@ -81,17 +81,14 @@ const variations = {
  */
 export type LinkProps = WidthProps &
   SpaceProps &
-  React.AnchorHTMLAttributes<HTMLAnchorElement> &
-  React.RefAttributes<unknown> & {
-    children?: React.ReactNode | string
+  ComponentPropsWithRef<'a'> & {
+    children?: React.ReactNode
     color?: string
     disabled?: boolean
     href?: string
     size?: ButtonSizes | ButtonSizes[]
     target?: string
     variation?: ButtonVariations
-    onClick?: React.MouseEventHandler<HTMLAnchorElement>
-    onFocus?: React.FocusEventHandler<HTMLAnchorElement>
   }
 
 /**
