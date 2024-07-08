@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.17.0",
+      "tag": "pcln-design-system_v6.17.0",
+      "date": "Mon, 08 Jul 2024 20:26:12 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Update typings for several components",
+            "author": "Huzefa Kagdi <huzefa.kagdi@priceline.com>",
+            "commit": "e7609687bf18ee7bbe060586a77d214c4f614343"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.16.2",
       "tag": "pcln-design-system_v6.16.2",
       "date": "Fri, 28 Jun 2024 15:22:55 GMT",

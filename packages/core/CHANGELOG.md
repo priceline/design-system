@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 28 Jun 2024 15:22:55 GMT and should not be manually modified.
+This log was last generated on Mon, 08 Jul 2024 20:26:12 GMT and should not be manually modified.
+
+## 6.17.0
+Mon, 08 Jul 2024 20:26:12 GMT
+
+### Minor changes
+
+- Update typings for several components
 
 ## 6.16.2
 Fri, 28 Jun 2024 15:22:55 GMT
