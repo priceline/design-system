@@ -40,6 +40,32 @@ describe('Popover', () => {
       expect(container.firstChild).toMatchSnapshot()
     })
 
+    it('does not toggle the element visibility when "toggleOpenOnClick" is false and the user clicks (controlled by isOpen only)', () => {
+      const mockOnOpen = jest.fn()
+      const mockOnClose = jest.fn()
+      const { rerender, getByText, queryByText } = render(
+        <Popover {...popoverProps} toggleIsOpenOnClick={false} onOpen={mockOnOpen} onClose={mockOnClose} isOpen={false}>
+          <button>{triggerButtonText}</button>
+        </Popover>
+      )
+      // Click the button, it should NOT open
+      const button = getByText(triggerButtonText)
+      fireEvent.click(button)
+      expect(queryByText('Click me to close button!')).toBeFalsy()
+      fireEvent.click(button)
+      expect(mockOnOpen).toHaveBeenCalledTimes(0)
+
+      // Update the isOpen prop
+      rerender(
+        <Popover {...popoverProps} toggleIsOpenOnClick={false} onOpen={mockOnOpen} onClose={mockOnClose} isOpen={true}>
+        <button>{triggerButtonText}</button>
+      </Popover>
+      )
+
+      // Now that the component has been re-rendered with isOpen set to true we should see the popover content
+      expect(queryByText('Click me to close button!')).toBeTruthy()
+    })
+
     it('toggle popover from trigger element', () => {
       const { getByText, getByLabelText, queryByText } = render(
         <Popover {...popoverProps}>

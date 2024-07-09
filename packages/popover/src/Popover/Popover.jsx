@@ -20,6 +20,7 @@ function Popover({
   onClose,
   onBeforeOpen,
   onBeforeClose,
+  toggleIsOpenOnClick,
   ...props
 }) {
   const {
@@ -53,7 +54,7 @@ function Popover({
             'aria-label': ariaLabel,
             type: 'button',
             ref: reference,
-            onClick: !openOnHover && handleToggle,
+            onClick: !openOnHover && toggleIsOpenOnClick && handleToggle || function () {},
           }),
         })}
       {(isPopoverOpen || isOpen) && (
