@@ -54,7 +54,7 @@ function Popover({
             'aria-label': ariaLabel,
             type: 'button',
             ref: reference,
-            onClick: !openOnHover && toggleIsOpenOnClick && handleToggle || function () {},
+            onClick: !openOnHover && (toggleIsOpenOnClick ? handleToggle : () => {}),
           }),
         })}
       {(isPopoverOpen || isOpen) && (
