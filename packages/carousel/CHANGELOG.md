@@ -1,6 +1,11 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Mon, 08 Jul 2024 20:26:12 GMT and should not be manually modified.
+This log was last generated on Thu, 11 Jul 2024 16:29:13 GMT and should not be manually modified.
+
+## 3.1.25
+Thu, 11 Jul 2024 16:29:13 GMT
+
+_Version update only_
 
 ## 3.1.24
 Mon, 08 Jul 2024 20:26:12 GMT

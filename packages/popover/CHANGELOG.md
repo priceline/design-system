@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Mon, 08 Jul 2024 20:26:12 GMT and should not be manually modified.
+This log was last generated on Thu, 11 Jul 2024 16:29:13 GMT and should not be manually modified.
+
+## 6.1.15
+Thu, 11 Jul 2024 16:29:13 GMT
+
+### Patches
+
+- built in support for toggleIsOpenOnClick so people can programatically control the open and close without sideeffects
 
 ## 6.1.14
 Mon, 08 Jul 2024 20:26:12 GMT

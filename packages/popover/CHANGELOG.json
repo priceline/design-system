@@ -2,6 +2,20 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "6.1.15",
+      "tag": "pcln-popover_v6.1.15",
+      "date": "Thu, 11 Jul 2024 16:29:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "built in support for toggleIsOpenOnClick so people can programatically control the open and close without sideeffects",
+            "author": "Byro Mitchell <byron.mitchell@priceline.com>",
+            "commit": "5bc5c5e7fc6582d7994f5d6e5ee01f1d55cbc573"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.14",
       "tag": "pcln-popover_v6.1.14",
       "date": "Mon, 08 Jul 2024 20:26:12 GMT",
