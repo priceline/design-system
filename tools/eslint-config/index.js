@@ -30,12 +30,7 @@ module.exports = {
     'progress/activate': 0,
 
     // React
-    'react/prop-types': [
-      'error',
-      {
-        ignore: ['children'],
-      },
-    ],
+    'react/prop-types': 'off',
     'react/jsx-curly-brace-presence': [2, { props: 'never', children: 'never' }],
 
     // React hooks

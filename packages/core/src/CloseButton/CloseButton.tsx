@@ -24,6 +24,7 @@ export type CloseButtonProps = IStyledSystemProps & {
   size?: CloseButtonSize
   title?: string
   variant?: CloseButtonVariant
+  as?: unknown
 }
 
 /** @public */
@@ -42,6 +43,7 @@ export const CloseButton = ({
   size = 'md',
   title = 'close',
   variant,
+  as,
   ...props
 }: MotionButtonProps) => {
   const [hover, setHover] = useState(false)
