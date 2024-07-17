@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "feat(PPN-76661): Add PhoneAgentWithCard and update PhoneAgent icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
