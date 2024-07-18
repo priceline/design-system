@@ -1,6 +1,6 @@
 {
   "name": "pcln-autocomplete",
-  "version": "6.0.30",
+  "version": "6.0.31",
   "description": "React autocomplete component built with Downshift",
   "keywords": [],
   "license": "MIT",

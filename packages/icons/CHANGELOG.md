@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 19 Apr 2024 15:08:16 GMT and should not be manually modified.
+This log was last generated on Thu, 18 Jul 2024 18:47:18 GMT and should not be manually modified.
+
+## 6.5.0
+Thu, 18 Jul 2024 18:47:18 GMT
+
+### Minor changes
+
+- feat(PPN-76661): Add PhoneAgentWithCard and update PhoneAgent icons
 
 ## 6.4.0
 Fri, 19 Apr 2024 15:08:16 GMT

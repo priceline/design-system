@@ -2,6 +2,32 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.5.0",
+      "tag": "pcln-icons_v6.5.0",
+      "date": "Thu, 18 Jul 2024 18:47:18 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "feat(PPN-76661): Add PhoneAgentWithCard and update PhoneAgent icons",
+            "author": "alexsenden-pcln <133029343+alexsenden-pcln@users.noreply.github.com>",
+            "commit": "1bc5d81b67ee9525ab3e8fb9d88f1fe360a73c39"
+          }
+        ],
+        "none": [
+          {
+            "comment": "fix inconsistency in build script",
+            "author": "Priceline DS Publish Bot <uxplatformdevs@priceline.com>",
+            "commit": "d8e50361743bf547a32c895b0f2cd46826e627ff"
+          },
+          {
+            "comment": "that silly line break",
+            "author": "Priceline DS Publish Bot <uxplatformdevs@priceline.com>",
+            "commit": "d8e50361743bf547a32c895b0f2cd46826e627ff"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.4.0",
       "tag": "pcln-icons_v6.4.0",
       "date": "Fri, 19 Apr 2024 15:08:16 GMT",
