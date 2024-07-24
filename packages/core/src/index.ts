@@ -113,6 +113,7 @@ export {
 export { Motion, type MotionProps } from './Motion/Motion'
 export { PasswordInput, type PasswordInputProps } from './PasswordInput/PasswordInput'
 export { PlaceholderImage, type PlaceholderImageProps } from './PlaceholderImage/PlaceholderImage'
+export { Popover, type PopoverProps } from './Popover/Popover'
 export { Popout, type PopoutProps } from './Popout/Popout'
 export { ProgressBar, type ProgressBarProps } from './ProgressBar/ProgressBar'
 export { Radio, type RadioProps } from './Radio/Radio'

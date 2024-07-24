@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Create new Popover using Radix UI",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
