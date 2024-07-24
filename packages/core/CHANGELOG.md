@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 24 Jul 2024 15:32:21 GMT and should not be manually modified.
+This log was last generated on Wed, 24 Jul 2024 19:50:47 GMT and should not be manually modified.
+
+## 6.18.1
+Wed, 24 Jul 2024 19:50:47 GMT
+
+### Patches
+
+- feat(UXPT-6345): add a new parameter 'shouldDisableTabIndex' to Dialog component
 
 ## 6.18.0
 Wed, 24 Jul 2024 15:32:21 GMT

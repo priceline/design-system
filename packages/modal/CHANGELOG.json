@@ -2,6 +2,24 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "6.0.37",
+      "tag": "pcln-modal_v6.0.37",
+      "date": "Wed, 24 Jul 2024 19:50:47 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.18.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `6.0.37`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.18.0` to `6.18.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.36",
       "tag": "pcln-modal_v6.0.36",
       "date": "Wed, 24 Jul 2024 15:32:21 GMT",
