@@ -35,6 +35,7 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
   zIndex?: ZIndex
   onOpenChange?: (open: boolean) => void
   showScrollShadow?: boolean
+  shouldDisableTabIndex?: boolean
 }
 
 /**
@@ -67,6 +68,7 @@ const PclnDialog = ({
   overflowX = 'auto',
   overflowY = 'auto',
   onOpenChange,
+  shouldDisableTabIndex,
 }: DialogProps) => {
   const [_open, setOpen] = React.useState(open ?? defaultOpen)
 
@@ -104,6 +106,7 @@ const PclnDialog = ({
               showCloseButton={showCloseButton}
               size={size}
               showScrollShadow={showScrollShadow}
+              shouldDisableTabIndex={shouldDisableTabIndex}
             >
               {children}
             </DialogContent>

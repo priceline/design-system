@@ -53,6 +53,46 @@ describe('Dialog', () => {
     })
   })
 
+  it('Add the tabIndex attribution to element as default', async () => {
+    render(
+      <Dialog triggerNode={<button>{triggerText}</button>} ariaDescription='Description' ariaTitle='Title'>
+        {contentText}
+      </Dialog>
+    )
+
+    const triggerNode = screen.getByText(triggerText)
+    triggerNode.click()
+
+    await waitFor(() => {
+      const element = screen.getByRole('dialog', { name: 'Title' })
+      expect(element).toBeInTheDocument()
+      expect(element).toHaveAttribute('aria-describedby', 'Description')
+      expect(element).toHaveAttribute('tabindex', '-1')
+    })
+  })
+
+  it('Do not add the tabIndex attribution to element if shouldDisableTabIndex is true', async () => {
+    render(
+      <Dialog
+        triggerNode={<button>{triggerText}</button>}
+        ariaDescription='Description'
+        ariaTitle='Title'
+        shouldDisableTabIndex={true}
+      >
+        {contentText}
+      </Dialog>
+    )
+
+    const triggerNode = screen.getByText(triggerText)
+    triggerNode.click()
+
+    await waitFor(() => {
+      const element = screen.getByRole('dialog', { name: 'Title' })
+      expect(element).toBeInTheDocument()
+      expect(element).not.toHaveAttribute('tabindex')
+    })
+  })
+
   it.skip('calls onOpenChange when trigger is clicked', () => {
     const onOpenChange = jest.fn()
     render(

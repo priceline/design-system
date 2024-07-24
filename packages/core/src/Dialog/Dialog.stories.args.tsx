@@ -24,6 +24,7 @@ export const argTypes: Partial<ArgTypes<DialogProps>> = {
   triggerNode: { control: { type: 'none' } },
   overflowX: { control: { type: 'select' }, options: overflowArgs },
   overflowY: { control: { type: 'select' }, options: overflowArgs },
+  shouldDisableTabIndex: { control: { type: 'boolean' } },
 }
 
 export const defaultArgs: Partial<DialogProps> = {
@@ -55,4 +56,5 @@ export const defaultArgs: Partial<DialogProps> = {
   triggerNode: <Button>Open Dialog</Button>,
   overflowX: 'auto',
   overflowY: 'auto',
+  shouldDisableTabIndex: undefined,
 }
