@@ -176,7 +176,6 @@ export const DialogContent = ({
   onOpenChange,
   shouldDisableTabIndex,
 }: DialogProps) => {
-  console.log('shouldDisableTabIndex', shouldDisableTabIndex)
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
     headerIcon ? 'heading5' : 'heading4', // sm
