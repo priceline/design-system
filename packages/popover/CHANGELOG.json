@@ -2,6 +2,21 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "6.1.17",
+      "tag": "pcln-popover_v6.1.17",
+      "date": "Wed, 24 Jul 2024 15:32:21 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.18.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.17.0` to `6.18.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.16",
       "tag": "pcln-popover_v6.1.16",
       "date": "Thu, 18 Jul 2024 18:47:18 GMT",

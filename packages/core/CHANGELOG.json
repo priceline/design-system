@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.18.0",
+      "tag": "pcln-design-system_v6.18.0",
+      "date": "Wed, 24 Jul 2024 15:32:21 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create new Popover using Radix UI",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "136733b867cd9fec2000166390058eb673377378"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.17.0",
       "tag": "pcln-design-system_v6.17.0",
       "date": "Mon, 08 Jul 2024 20:26:12 GMT",

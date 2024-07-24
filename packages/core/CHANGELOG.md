@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 08 Jul 2024 20:26:12 GMT and should not be manually modified.
+This log was last generated on Wed, 24 Jul 2024 15:32:21 GMT and should not be manually modified.
+
+## 6.18.0
+Wed, 24 Jul 2024 15:32:21 GMT
+
+### Minor changes
+
+- Create new Popover using Radix UI
 
 ## 6.17.0
 Mon, 08 Jul 2024 20:26:12 GMT
