@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "feat(UXPT-6345): add a new parameter 'shouldDisableTabIndex' to Dialog component",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

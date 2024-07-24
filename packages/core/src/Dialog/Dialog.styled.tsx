@@ -174,7 +174,9 @@ export const DialogContent = ({
   size,
   zIndex,
   onOpenChange,
+  shouldDisableTabIndex,
 }: DialogProps) => {
+  console.log('shouldDisableTabIndex', shouldDisableTabIndex)
   const headerSizeArray = [
     headerIcon ? 'heading5' : 'heading4', // xs
     headerIcon ? 'heading5' : 'heading4', // sm
@@ -205,6 +207,7 @@ export const DialogContent = ({
         zIndex={zIndex}
         hasFooterContent={footerContent}
         {...(sheet ? animationStyles.sheet : animationStyles.default)}
+        {...(typeof shouldDisableTabIndex === 'boolean' && shouldDisableTabIndex && { tabIndex: undefined })}
       >
         {showCloseButton && (
           <Dialog.Close asChild>
