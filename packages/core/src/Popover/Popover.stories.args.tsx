@@ -94,4 +94,10 @@ export const argTypes = {
     description: 'Open the popover when trigger is hovered',
     control: { type: 'boolean' },
   },
+  maxWidth: {
+    name: 'maxWidth',
+    type: { name: 'string', required: false },
+    description: 'Popover max width',
+    control: { type: 'text' },
+  },
 }

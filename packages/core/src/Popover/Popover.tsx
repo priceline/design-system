@@ -1,6 +1,5 @@
 import * as Popover from '@radix-ui/react-popover'
 import React, { useEffect, useRef } from 'react'
-import { SpaceProps } from 'styled-system'
 import { useTheme } from 'styled-components'
 import { Box, BoxProps } from '../Box/Box'
 import { CloseButton } from '../CloseButton/CloseButton'
@@ -8,24 +7,24 @@ import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import Overlay from './Overlay'
 import { FixedCloseButton, StyledArrow } from './Popover.styles'
 
-export type PopoverProps = {
-  renderContent: () => React.ReactNode
+export type PopoverProps = Pick<
+  BoxProps,
+  'maxWidth' | 'minWidth' | 'width' | 'borderRadius' | 'color' | 'p'
+> & {
+  renderContent: React.ReactNode
   idx: string
   isOpen?: boolean
-  color?: string
   children?: React.ReactNode
   hideArrow?: boolean
+  hideCloseButton?: boolean
   hideOverlay?: boolean
   onOpen?: () => void
   onClose?: () => void
   openOnHover?: boolean
-  borderRadius?: BoxProps['borderRadius']
-  width?: string | number
   trapFocus?: boolean
   toggleIsOpenOnClick?: boolean
   openOnMount?: boolean
   overlayOpacity?: number
-  p?: SpaceProps['p']
   placement?:
     | 'top'
     | 'top-start'
@@ -62,6 +61,7 @@ const DsPopover = ({
   color = 'background.lightest',
   hideArrow,
   hideOverlay = false,
+  hideCloseButton = false,
   idx,
   isOpen,
   onClose,
@@ -72,8 +72,9 @@ const DsPopover = ({
   p,
   placement = 'top',
   toggleIsOpenOnClick = true,
-  renderContent: RenderContent,
+  renderContent,
   width,
+  maxWidth,
 }: PopoverProps) => {
   const [isOpenState, setIsOpenState] = React.useState(openOnMount || isOpen)
   const theme = useTheme()
@@ -139,12 +140,27 @@ const DsPopover = ({
       <Popover.Portal>
         <Popover.Content sideOffset={5} side={side} align={align} id={idx}>
           <ThemeProvider theme={theme}>
-            <Box color={color} boxShadowSize='overlay-md' borderRadius={borderRadius} p={p} width={width}>
-              <RenderContent />
+            <Box
+              color={color}
+              boxShadowSize='overlay-md'
+              borderRadius={borderRadius}
+              p={p}
+              width={width}
+              maxWidth={maxWidth}
+            >
+              {renderContent}
 
-              <FixedCloseButton>
-                <CloseButton as={Popover.Close} aria-label='Close' variant='filled' size='sm' />
-              </FixedCloseButton>
+              {!hideCloseButton && (
+                <FixedCloseButton>
+                  <CloseButton
+                    as={Popover.Close}
+                    aria-label='Close'
+                    variant='filled'
+                    size='sm'
+                    onClick={handleOnOpenChange.bind(null, false)}
+                  />
+                </FixedCloseButton>
+              )}
               {!hideArrow && <StyledArrow as={Popover.Arrow} color={color} />}
             </Box>
           </ThemeProvider>
