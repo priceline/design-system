@@ -1,6 +1,11 @@
 # Change Log - pcln-codemods
 
-This log was last generated on Wed, 24 Jul 2024 19:50:47 GMT and should not be manually modified.
+This log was last generated on Thu, 25 Jul 2024 19:35:41 GMT and should not be manually modified.
+
+## 3.0.30
+Thu, 25 Jul 2024 19:35:41 GMT
+
+_Version update only_
 
 ## 3.0.29
 Wed, 24 Jul 2024 19:50:47 GMT

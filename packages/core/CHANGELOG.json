@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.19.0",
+      "tag": "pcln-design-system_v6.19.0",
+      "date": "Thu, 25 Jul 2024 19:35:41 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Fix close button bug and add max/min width props to Popover",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "d3b0eafde33ef662d41bd5f0ab01602ae08a9414"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.18.1",
       "tag": "pcln-design-system_v6.18.1",
       "date": "Wed, 24 Jul 2024 19:50:47 GMT",
