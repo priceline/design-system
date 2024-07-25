@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "remove special prop key access from slidebox",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
