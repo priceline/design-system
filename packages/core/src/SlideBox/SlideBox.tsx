@@ -82,7 +82,7 @@ export function SlideBox({
       >
         {childArray.map((item: string & React.JSX.Element, index: number) => (
           <Slide
-            key={item.props.key || `slide${index}`}
+            key={`slide${index}`}
             width={layout ? getCustomWidths(layout.split('-'), index) : getVisibleSlides(visibleSlides)}
             onSlideChange={onSlideChangeWrapper}
             slideSpacing={slideSpacing}
