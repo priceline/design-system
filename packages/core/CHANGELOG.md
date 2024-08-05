@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 25 Jul 2024 19:35:41 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Aug 2024 19:52:43 GMT and should not be manually modified.
+
+## 6.20.0
+Mon, 05 Aug 2024 19:52:43 GMT
+
+### Minor changes
+
+- Modified the chatHeader component so that it uses the CloseButton
 
 ## 6.19.0
 Thu, 25 Jul 2024 19:35:41 GMT

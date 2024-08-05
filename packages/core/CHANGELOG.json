@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.20.0",
+      "tag": "pcln-design-system_v6.20.0",
+      "date": "Mon, 05 Aug 2024 19:52:43 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Modified the chatHeader component so that it uses the CloseButton",
+            "author": "Byro Mitchell <byron.mitchell@priceline.com>",
+            "commit": "c034f04f708a74cfa45fd3583cee1c3139f81831"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.19.0",
       "tag": "pcln-design-system_v6.19.0",
       "date": "Thu, 25 Jul 2024 19:35:41 GMT",
