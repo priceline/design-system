@@ -31,7 +31,7 @@ const Children = (
   </Flex>
 )
 
-export const _ChatHeader: ChatHeaderStory = {
+export const _ChatHeaderWithMinimize: ChatHeaderStory = {
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)
 
@@ -44,4 +44,20 @@ export const _ChatHeader: ChatHeaderStory = {
     await expect(args.onClose).toHaveBeenCalled()
   },
   render: (args) => <ChatHeader {...args}>{Children}</ChatHeader>,
+}
+
+export const _ChatHeaderWithoutMinimize: ChatHeaderStory = {
+  play: async ({ args, canvasElement }) => {
+    const canvas = within(canvasElement)
+
+    await expect(canvas.getByText('Penny')).toBeInTheDocument()
+
+    await userEvent.click(canvas.getAllByRole('button')[0])
+    await expect(args.onClose).toHaveBeenCalled()
+  },
+  render: (args) => (
+    <ChatHeader {...args} onMinimize={undefined}>
+      {Children}
+    </ChatHeader>
+  ),
 }
