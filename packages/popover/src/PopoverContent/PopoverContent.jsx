@@ -69,7 +69,7 @@ function PopoverContent({
 
   // Fallback when cannot find an element
   useLayoutEffect(() => {
-    if (document.querySelector(querySelectorPortal)) {
+    if (querySelectorPortal && document.querySelector(querySelectorPortal)) {
       setPortalSelector(querySelectorPortal)
     } else {
       setPortalSelector('body')

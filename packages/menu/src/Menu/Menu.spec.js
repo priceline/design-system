@@ -123,24 +123,24 @@ describe('Menu', () => {
   })
 
   it('renders a div with querySelectorPortal className when querySelectorPortal is provided', async () => {
-    const { getByTestId } = render(
+    render(
       <Menu id='menu' idx='1' buttonText='Click Me' placement='bottom' querySelectorPortal='popover-portal'>
         <MenuItem>Item One</MenuItem>
         <MenuItem>Item Two</MenuItem>
       </Menu>
     )
 
-    expect(getByTestId('popover-portal')).toBeInTheDocument()
+    expect(screen.getByTestId('popover-portal')).toBeInTheDocument()
   })
 
   it('does not render a div with querySelectorPortal className when querySelectorPortal is not provided', async () => {
-    const { queryByTestId } = render(
+    render(
       <Menu id='menu' idx='1' buttonText='Click Me' placement='bottom'>
         <MenuItem>Item One</MenuItem>
         <MenuItem>Item Two</MenuItem>
       </Menu>
     )
 
-    expect(queryByTestId('popover-portal')).toBeFalsy()
+    expect(screen.queryByTestId('popover-portal')).toBeFalsy()
   })
 })

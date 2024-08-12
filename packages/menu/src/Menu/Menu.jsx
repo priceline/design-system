@@ -69,7 +69,7 @@ function Menu({
         trapFocus={trapFocus}
         width={width}
         zIndex={zIndex}
-        querySelectorPortal={querySelectorPortal && `.${querySelectorPortal}`}
+        querySelectorPortal={querySelectorPortal ? `.${querySelectorPortal}` : undefined}
         {...props}
       >
         <ClickableNode />

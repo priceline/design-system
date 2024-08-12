@@ -84,4 +84,18 @@ describe('PopoverContent', () => {
     const bodyContainer = document.querySelector('body > [role="dialog"]')
     expect(bodyContainer).toBeInTheDocument()
   })
+
+  it('not using portal fallback to a body', () => {
+    const Wrapper = () => (
+      <>
+        <PopoverContent renderContent={() => 'Content'} />
+        <div className='wrapper'></div>
+      </>
+    )
+    render(<Wrapper />)
+    const container = document.querySelector('.wrapper > [role="dialog"]')
+    expect(container).not.toBeInTheDocument()
+    const bodyContainer = document.querySelector('body > [role="dialog"]')
+    expect(bodyContainer).toBeInTheDocument()
+  })
 })
