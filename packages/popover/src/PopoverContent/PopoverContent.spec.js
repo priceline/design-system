@@ -71,7 +71,7 @@ describe('PopoverContent', () => {
     expect(container).toBeInTheDocument()
   })
 
-  it('Using different portal fallback to a body', () => {
+  it('falls back to use body as a selector when receiving a mismatched portal selector', () => {
     const Wrapper = () => (
       <>
         <PopoverContent renderContent={() => 'Content'} querySelectorPortal='.wrong-wrapper' />
@@ -85,10 +85,11 @@ describe('PopoverContent', () => {
     expect(bodyContainer).toBeInTheDocument()
   })
 
-  it('not using portal fallback to a body', () => {
+  it('falls back to use body as a selector when not receivinga portal selector', () => {
     const Wrapper = () => (
       <>
         <PopoverContent renderContent={() => 'Content'} />
+        <div className='wrapper'></div>
       </>
     )
     render(<Wrapper />)
