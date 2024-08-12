@@ -85,7 +85,7 @@ describe('PopoverContent', () => {
     expect(bodyContainer).toBeInTheDocument()
   })
 
-  it('falls back to use body as a selector when not receivinga portal selector', () => {
+  it('falls back to use body as a selector when not receiving a portal selector', () => {
     const Wrapper = () => (
       <>
         <PopoverContent renderContent={() => 'Content'} />
