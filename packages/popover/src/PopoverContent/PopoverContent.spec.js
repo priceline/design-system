@@ -89,7 +89,6 @@ describe('PopoverContent', () => {
     const Wrapper = () => (
       <>
         <PopoverContent renderContent={() => 'Content'} />
-        <div className='wrapper'></div>
       </>
     )
     render(<Wrapper />)
