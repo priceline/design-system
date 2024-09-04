@@ -2,6 +2,21 @@
   "name": "pcln-slider",
   "entries": [
     {
+      "version": "6.1.11",
+      "tag": "pcln-slider_v6.1.11",
+      "date": "Wed, 04 Sep 2024 12:48:46 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.20.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.20.0` to `6.20.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.10",
       "tag": "pcln-slider_v6.1.10",
       "date": "Mon, 05 Aug 2024 19:52:43 GMT",

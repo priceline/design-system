@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.20.1",
+      "tag": "pcln-design-system_v6.20.1",
+      "date": "Wed, 04 Sep 2024 12:48:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "use querySelectorPortal in pcln-menu only when provided to fix SSR issues",
+            "author": "Rachel Lee <63857841+raclee7@users.noreply.github.com>",
+            "commit": "0cbb97dc629dba6330226596731bcf88e1165194"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.20.0",
       "tag": "pcln-design-system_v6.20.0",
       "date": "Mon, 05 Aug 2024 19:52:43 GMT",

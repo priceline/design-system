@@ -1,6 +1,13 @@
 # Change Log - pcln-popover
 
-This log was last generated on Mon, 05 Aug 2024 19:52:43 GMT and should not be manually modified.
+This log was last generated on Wed, 04 Sep 2024 12:48:46 GMT and should not be manually modified.
+
+## 6.1.21
+Wed, 04 Sep 2024 12:48:46 GMT
+
+### Patches
+
+- do not query the DOM if querySelectorPortal is falsy
 
 ## 6.1.20
 Mon, 05 Aug 2024 19:52:43 GMT

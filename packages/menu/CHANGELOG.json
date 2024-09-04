@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.0.40",
+      "tag": "pcln-menu_v6.0.40",
+      "date": "Wed, 04 Sep 2024 12:48:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "use querySelectorPortal in pcln-menu only when provided to fix SSR issues",
+            "author": "Rachel Lee <63857841+raclee7@users.noreply.github.com>",
+            "commit": "0cbb97dc629dba6330226596731bcf88e1165194"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.20.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.1.21`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.20.0` to `6.20.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^6.1.20` to `6.1.21`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.39",
       "tag": "pcln-menu_v6.0.39",
       "date": "Mon, 05 Aug 2024 19:52:43 GMT",
