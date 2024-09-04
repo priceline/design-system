@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add Priceline Brand Product icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
