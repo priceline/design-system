@@ -69,14 +69,14 @@ function Menu({
         trapFocus={trapFocus}
         width={width}
         zIndex={zIndex}
-        querySelectorPortal={`.${querySelectorPortal}`}
+        querySelectorPortal={querySelectorPortal ? `.${querySelectorPortal}` : undefined}
         {...props}
       >
         <ClickableNode />
       </Popover>
-      {querySelectorPortal ? (
-        <div style={{ width: 0, display: 'inline-block' }} className={querySelectorPortal} />
-      ) : null}
+      {querySelectorPortal && (
+        <div style={{ width: 0, display: 'inline-block' }} className={querySelectorPortal} data-testid={querySelectorPortal} />
+      )}
     </>
   )
 }

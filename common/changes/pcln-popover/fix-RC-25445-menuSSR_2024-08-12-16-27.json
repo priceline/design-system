@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "do not query the DOM if querySelectorPortal is falsy",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-popover"
+}

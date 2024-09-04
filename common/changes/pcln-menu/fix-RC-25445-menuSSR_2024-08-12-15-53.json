@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "use querySelectorPortal in pcln-menu only when provided to fix SSR issues",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-menu"
+}
