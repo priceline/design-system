@@ -5,7 +5,7 @@ import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
 
 import * as icons from '../components'
-const { Accessible, Cars, Flights, Hotels, Priceline } = icons
+const { Accessible, Cars, CarsBrand, Flights, FlightsBrand, Hotels, HotelsBrand, Priceline } = icons
 
 const keys = Object.keys(icons).filter((icon) => icon !== 'Icon')
 
@@ -40,11 +40,18 @@ export const Icons = () => (
 )
 
 export const Color = () => (
-  <div>
-    <Flights color='primary' size={48} m={2} />
-    <Hotels color='secondary' size={48} m={2} />
-    <Cars color='alert' size={48} m={2} />
-  </div>
+  <Flex flexDirection='column'>
+    <Box mb={3}>
+      <Flights color='primary' size={48} m={2} />
+      <Hotels color='secondary' size={48} m={2} />
+      <Cars color='alert' size={48} m={2} />
+    </Box>
+    <Box>
+      <FlightsBrand color='primary' size={48} m={2} />
+      <HotelsBrand color='secondary' size={48} m={2} />
+      <CarsBrand color='alert' size={48} m={2} />
+    </Box>
+  </Flex>
 )
 
 export const PricelineLogo = () => <Priceline color='primary' size={48} />
