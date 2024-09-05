@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Thu, 18 Jul 2024 18:47:18 GMT and should not be manually modified.
+This log was last generated on Thu, 05 Sep 2024 14:48:24 GMT and should not be manually modified.
+
+## 6.6.0
+Thu, 05 Sep 2024 14:48:24 GMT
+
+### Minor changes
+
+- Add Priceline Brand Product icons
 
 ## 6.5.0
 Thu, 18 Jul 2024 18:47:18 GMT

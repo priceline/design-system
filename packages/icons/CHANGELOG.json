@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.0",
+      "tag": "pcln-icons_v6.6.0",
+      "date": "Thu, 05 Sep 2024 14:48:24 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add Priceline Brand Product icons",
+            "author": "Yuriy Ivanyuk <63854612+yivanyuk@users.noreply.github.com>",
+            "commit": "9d11df96da6ae0f1ecd4bc6d3126a87a5ea0bae2"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.5.0",
       "tag": "pcln-icons_v6.5.0",
       "date": "Thu, 18 Jul 2024 18:47:18 GMT",
