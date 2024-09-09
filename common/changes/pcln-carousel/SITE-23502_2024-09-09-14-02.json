@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "pcln-carousel",
-      "comment": "Adding SSR check to no longer crash next-landing & a lockedWidth prop",
+      "comment": "Adding SSR check to no longer crash next-landing",
       "type": "minor"
     }
   ],
