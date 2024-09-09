@@ -64,6 +64,10 @@ export default {
       control: { type: 'radio' },
       defaultValue: 'horizontal',
     },
+    lockedWidth: {
+      control: { type: 'number' },
+      min: 1
+    },
     isIntrinsicHeight: {
       defaultValue: true,
     },
@@ -139,8 +143,8 @@ const SimpleTextContent = () => (
 
 const NonResponsiveTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
 
-export const SSRNonresponsive = NonResponsiveTemplate.bind({})
-SSRNonresponsive.args = {
+export const SSRUnresponsive = NonResponsiveTemplate.bind({})
+SSRUnresponsive.args = {
   visibleSlides: 3,
   lockedWidth: 1024,
   mobileVisibleSlides: [1.1, 2.1, 2.1],
@@ -151,7 +155,7 @@ SSRNonresponsive.args = {
   sideButtonMargin: '-30px',
 }
 
-SSRNonresponsive.play = async ({ canvasElement }) => {
+SSRUnresponsive.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }

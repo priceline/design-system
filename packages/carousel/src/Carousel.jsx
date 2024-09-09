@@ -81,13 +81,14 @@ export const Carousel = ({
   let calculatedResponsiveVisibleSlides
   let calculatedBrowserWidth
   const DEFAULT_WIDTH = 1024
+  console.log(isBrowser && !lockedWidth)
   if (isBrowser && !lockedWidth) {
     const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
     calculatedResponsiveVisibleSlides = responsiveVisibleSlides
     calculatedBrowserWidth = browserWidth
   } else {
-    calculatedResponsiveVisibleSlides = getVisibleSlides(visibleSlidesArray, DEFAULT_WIDTH)
-    calculatedBrowserWidth = DEFAULT_WIDTH
+    calculatedResponsiveVisibleSlides = getVisibleSlides(visibleSlidesArray, lockedWidth ? lockedWidth : DEFAULT_WIDTH)
+    calculatedBrowserWidth = lockedWidth ? lockedWidth : DEFAULT_WIDTH
   }
 
   const overflowAdjust = overflowAllowancePxTop
