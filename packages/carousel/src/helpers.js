@@ -71,14 +71,6 @@ const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, 
 const getMobileVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
 
-const useIsBrowser = () => {
-  const [isBrowser, setIsBrowser] = useState(false)
-  useEffect(() => {
-    setIsBrowser(typeof window !== 'undefined')
-  }, [])
-  return isBrowser
-}
-
 export {
   getSlideKey,
   getVisibleSlidesArray,
