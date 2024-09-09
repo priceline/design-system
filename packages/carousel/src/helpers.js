@@ -74,8 +74,6 @@ const getMobileVisibleSlides = (visibleSlides) =>
 export {
   getSlideKey,
   getVisibleSlidesArray,
-  useIsBrowser,
   useResponsiveVisibleSlides,
-  getVisibleSlides,
   getMobileVisibleSlides,
 }
