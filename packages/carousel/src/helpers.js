@@ -6,7 +6,6 @@ import {
   VISIBLE_SLIDES_BREAKPOINT_2,
   CAROUSEL_BREAKPOINT_1,
   CAROUSEL_BREAKPOINT_2,
-  MEDIA_QUERY_MATCH,
 } from './constants'
 import debounce from 'lodash.debounce'
 
@@ -24,39 +23,28 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
     ? visibleSlides[1]
     : visibleSlides[2]
 
-const useResponsiveVisibleSlides = (visibleSlides) => {
-  const [width, setWidth] = useState(window.innerWidth)
-
-  const handleResize = () => {
-    setWidth(window.innerWidth)
-  }
-
-  // Debounce to avoid the function fire multiple times
-  const handleResizeDebounced = debounce(handleResize, 250)
-
+const useResponsiveVisibleSlides = (visibleSlidesArray) => {
+  const [width, setWidth] = useState(1024)
+  
   useEffect(() => {
-    let media
-    try {
-      media = window.matchMedia(MEDIA_QUERY_MATCH)
-      media.addEventListener('change', handleResizeDebounced)
-    } catch {
-      window.addEventListener('resize', handleResizeDebounced)
-    }
+    if (typeof window === 'undefined') return
 
-    return () => {
-      if (media?.removeEventListener) {
-        media.removeEventListener('change', handleResizeDebounced)
-      } else {
-        window.removeEventListener('resize', handleResizeDebounced)
-      }
+    const handleResize = () => {
+      setWidth(window.innerWidth)
     }
-  })
+    const handleResizeDebounced = debounce(handleResize, 250)
 
-  return {
-    responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
-    browserWidth: width,
-  }
+    window.addEventListener('resize', handleResizeDebounced)
+    handleResize()
+
+    return () => window.removeEventListener('resize', handleResizeDebounced)
+  }, [])
+
+  const responsiveVisibleSlides = getVisibleSlides(visibleSlidesArray, width)
+
+  return { responsiveVisibleSlides, browserWidth: width }
 }
+
 
 //This is to keep consistant with previous version.
 //We should make a major version release that will allow more breakpoints

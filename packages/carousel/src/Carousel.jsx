@@ -15,7 +15,7 @@ import {
   getVisibleSlides,
 } from './helpers'
 import { RenderInView } from './RenderInView'
-import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT } from './constants'
+import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT, DEFAULT_WIDTH } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -81,9 +81,8 @@ export const Carousel = ({
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
   let calculatedResponsiveVisibleSlides
   let calculatedBrowserWidth
-  const DEFAULT_WIDTH = 1024
+  const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
   if (isBrowser && !lockedWidth) {
-    const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
     calculatedResponsiveVisibleSlides = responsiveVisibleSlides
     calculatedBrowserWidth = browserWidth
   } else {
