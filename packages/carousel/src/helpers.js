@@ -1,7 +1,6 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState, useEffect } from 'react'
 import moize from 'moize'
 import { v4 as uuidv4 } from 'uuid'
-import debounce from 'lodash.debounce'
 import {
   VISIBLE_SLIDES_BREAKPOINT_1,
   VISIBLE_SLIDES_BREAKPOINT_2,
@@ -9,6 +8,7 @@ import {
   CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
 } from './constants'
+import debounce from 'lodash.debounce'
 
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
@@ -27,26 +27,30 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
 const useResponsiveVisibleSlides = (visibleSlides) => {
   const [width, setWidth] = useState(window.innerWidth)
 
-  const handleResize = debounce(() => {
+  const handleResize = () => {
     setWidth(window.innerWidth)
-  }, 250)
-  useLayoutEffect(() => {
+  }
+
+  // Debounce to avoid the function fire multiple times
+  const handleResizeDebounced = debounce(handleResize, 250)
+
+  useEffect(() => {
     let media
     try {
       media = window.matchMedia(MEDIA_QUERY_MATCH)
-      media.addEventListener('change', handleResize)
+      media.addEventListener('change', handleResizeDebounced)
     } catch {
-      window.addEventListener('resize', handleResize)
+      window.addEventListener('resize', handleResizeDebounced)
     }
 
     return () => {
       if (media?.removeEventListener) {
-        media.removeEventListener('change', handleResize)
+        media.removeEventListener('change', handleResizeDebounced)
       } else {
-        window.removeEventListener('resize', handleResize)
+        window.removeEventListener('resize', handleResizeDebounced)
       }
     }
-  }, [handleResize])
+  })
 
   return {
     responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
@@ -54,15 +58,11 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   }
 }
 
+//This is to keep consistant with previous version.
+//We should make a major version release that will allow more breakpoints
 const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, visibleSlides[1]]
 
 const getMobileVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
 
-export {
-  getSlideKey,
-  getVisibleSlidesArray,
-  useResponsiveVisibleSlides,
-  getVisibleSlides,
-  getMobileVisibleSlides,
-}
+export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }
