@@ -25,8 +25,7 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
       : visibleSlides[2]
 
 const useResponsiveVisibleSlides = (visibleSlides) => {
-  const DEFAULT_WIDTH = 1024
-  const [width, setWidth] = useState(DEFAULT_WIDTH)
+  const [width, setWidth] = useState(CAROUSEL_BREAKPOINT_2)
 
   useEffect(() => {
     if (typeof window === 'undefined') return {
