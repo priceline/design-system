@@ -81,7 +81,6 @@ export const Carousel = ({
   let calculatedResponsiveVisibleSlides
   let calculatedBrowserWidth
   const DEFAULT_WIDTH = 1024
-  console.log(isBrowser && !lockedWidth)
   if (isBrowser && !lockedWidth) {
     const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
     calculatedResponsiveVisibleSlides = responsiveVisibleSlides
