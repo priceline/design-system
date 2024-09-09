@@ -28,17 +28,19 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   const [width, setWidth] = useState(CAROUSEL_BREAKPOINT_2)
 
   useEffect(() => {
+    // If window is undefined return default desktop breakpoint
     if (typeof window === 'undefined') return {
       responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
       browserWidth: width,
     }
 
+    // Client is initialized so we can access window, resize immediately with new context, and set up matchMedia listeners
     const handleResize = () => {
       setWidth(window.innerWidth)
     }
 
+    handleResize()
     const handleResizeDebounced = debounce(handleResize, 250)
-
     let mediaQueryList
     try {
       mediaQueryList = window.matchMedia(MEDIA_QUERY_MATCH)
@@ -46,7 +48,6 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
     } catch {
       window.addEventListener('resize', handleResizeDebounced)
     }
-    handleResize()
     return () => {
       if (mediaQueryList?.removeEventListener) {
         mediaQueryList.removeEventListener('change', handleResizeDebounced)
@@ -55,10 +56,9 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
       }
     }
   }, [])
-  const responsiveVisibleSlides = getVisibleSlides(visibleSlides, width)
 
   return {
-    responsiveVisibleSlides,
+    responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
     browserWidth: width,
   }
 }
