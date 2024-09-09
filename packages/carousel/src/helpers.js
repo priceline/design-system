@@ -1,4 +1,4 @@
-import { useState,  useLayoutEffect } from 'react'
+import { useState, useLayoutEffect } from 'react'
 import moize from 'moize'
 import { v4 as uuidv4 } from 'uuid'
 import debounce from 'lodash.debounce'
@@ -9,9 +9,6 @@ import {
   CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
 } from './constants'
-
-const isBrowser = typeof window !== 'undefined'
-const DEFAULT_WIDTH = 1024
 
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
@@ -28,17 +25,12 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
     : visibleSlides[2]
 
 const useResponsiveVisibleSlides = (visibleSlides) => {
-  const [width, setWidth] = useState(isBrowser ? window.innerWidth : DEFAULT_WIDTH)
+  const [width, setWidth] = useState(window.innerWidth)
 
   const handleResize = debounce(() => {
-    if (isBrowser) {
-      setWidth(window.innerWidth)
-    }
+    setWidth(window.innerWidth)
   }, 250)
-
   useLayoutEffect(() => {
-    if (!isBrowser) return
-
     let media
     try {
       media = window.matchMedia(MEDIA_QUERY_MATCH)
@@ -67,4 +59,10 @@ const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, 
 const getMobileVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
 
-export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }
+export {
+  getSlideKey,
+  getVisibleSlidesArray,
+  useResponsiveVisibleSlides,
+  getVisibleSlides,
+  getMobileVisibleSlides,
+}

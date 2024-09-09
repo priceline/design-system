@@ -108,20 +108,3 @@ describe('getMobileVisibleSlides without matchMedia', () => {
     expect(visibleSlides[2]).toBe(2)
   })
 })
-
-describe('useResponsiveVisibleSlides when window does not exist', () => {
-  let originalWindow
-  beforeAll(() => {
-    originalWindow = global.window
-    global.window = undefined
-  })
-
-  afterAll(() => {
-    global.window = originalWindow
-  })
-
-  it('should return default width and slides in SSR environment', () => {
-    const { getByText } = render(<TextVisibleSlides />)
-    expect(getByText('1 Slide(s)')).toBeInTheDocument()
-  })
-})
