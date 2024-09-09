@@ -64,10 +64,6 @@ export default {
       control: { type: 'radio' },
       defaultValue: 'horizontal',
     },
-    lockedWidth: {
-      control: { type: 'number' },
-      min: 1
-    },
     isIntrinsicHeight: {
       defaultValue: true,
     },
@@ -140,25 +136,6 @@ const SimpleTextContent = () => (
     Popover!
   </Text>
 )
-
-const NonResponsiveTemplate = (args) => <Carousel {...args}>{renderCards()}</Carousel>
-
-export const SSRUnresponsive = NonResponsiveTemplate.bind({})
-SSRUnresponsive.args = {
-  visibleSlides: 3,
-  lockedWidth: 1024,
-  mobileVisibleSlides: [1.1, 2.1, 2.1],
-  showDots: false,
-  showForwardBackBtns: true,
-  onSlideChange: action('Slide Change'),
-  buttonSize: '60px',
-  sideButtonMargin: '-30px',
-}
-
-SSRUnresponsive.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement)
-  expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
-}
 
 const CardWithPopover = () => {
   return (

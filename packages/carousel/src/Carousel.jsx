@@ -11,11 +11,9 @@ import {
   getVisibleSlidesArray,
   useResponsiveVisibleSlides,
   getMobileVisibleSlides,
-  useIsBrowser,
-  getVisibleSlides,
 } from './helpers'
 import { RenderInView } from './RenderInView'
-import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT, CAROUSEL_BREAKPOINT_2 } from './constants'
+import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -73,31 +71,16 @@ export const Carousel = ({
   overflowAllowancePxTop = 0,
   maxHeight,
   arrowButtonZIndex,
-  lockedWidth,
 }) => {
-  const isBrowser = useIsBrowser()
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
-  let calculatedResponsiveVisibleSlides
-  let calculatedBrowserWidth
   const { responsiveVisibleSlides, browserWidth } = useResponsiveVisibleSlides(visibleSlidesArray)
-  if (isBrowser && !lockedWidth) {
-    calculatedResponsiveVisibleSlides = responsiveVisibleSlides
-    calculatedBrowserWidth = browserWidth
-  } else {
-    calculatedResponsiveVisibleSlides = getVisibleSlides(
-      visibleSlidesArray,
-      lockedWidth ? lockedWidth : CAROUSEL_BREAKPOINT_2
-    )
-    calculatedBrowserWidth = lockedWidth ? lockedWidth : CAROUSEL_BREAKPOINT_2
-  }
-
   const overflowAdjust = overflowAllowancePxTop
     ? (overflowAllowancePxTop + overflowAllowancePxY) / 2
     : overflowAllowancePxY
 
-  if (!displayArrowsMobile && calculatedBrowserWidth < CAROUSEL_BREAKPOINT_1) {
+  if (!displayArrowsMobile && browserWidth < CAROUSEL_BREAKPOINT_1) {
     return (
       <SlideBox
         slideSpacing={slideSpacing}
@@ -126,8 +109,8 @@ export const Carousel = ({
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}
         totalSlides={children.length}
-        visibleSlides={layoutSize || calculatedResponsiveVisibleSlides}
-        dragEnabled={children.length > (layoutSize || calculatedResponsiveVisibleSlides)}
+        visibleSlides={layoutSize || responsiveVisibleSlides}
+        dragEnabled={children.length > (layoutSize || responsiveVisibleSlides)}
         isIntrinsicHeight={isIntrinsicHeight}
         step={layoutSize || step}
         dragStep={layoutSize || step}
@@ -339,6 +322,4 @@ Carousel.propTypes = {
   maxHeight: PropTypes.number,
   /** z-index for arrow buttons*/
   arrowButtonZIndex: PropTypes.number,
-  /** set width number. Ignores responsive logic */
-  lockedWidth: PropTypes.number,
 }

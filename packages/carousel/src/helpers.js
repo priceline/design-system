@@ -29,7 +29,10 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   const [width, setWidth] = useState(isBrowser ? window.innerWidth : CAROUSEL_BREAKPOINT_2)
 
   useEffect(() => {
-    if (!isBrowser) return
+    if (!isBrowser) return {
+      responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
+      browserWidth: width,
+    }
 
     const handleResize = () => {
       setWidth(window.innerWidth)
