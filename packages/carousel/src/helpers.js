@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState,  useLayoutEffect } from 'react'
 import moize from 'moize'
 import { v4 as uuidv4 } from 'uuid'
+import debounce from 'lodash.debounce'
 import {
   VISIBLE_SLIDES_BREAKPOINT_1,
   VISIBLE_SLIDES_BREAKPOINT_2,
@@ -8,7 +9,9 @@ import {
   CAROUSEL_BREAKPOINT_2,
   MEDIA_QUERY_MATCH,
 } from './constants'
-import debounce from 'lodash.debounce'
+
+const isBrowser = typeof window !== 'undefined'
+const DEFAULT_WIDTH = 1024
 
 const getSlideKey = moize(uuidv4, { profileName: 'getSlideKey' })
 
@@ -25,32 +28,33 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
     : visibleSlides[2]
 
 const useResponsiveVisibleSlides = (visibleSlides) => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(isBrowser ? window.innerWidth : DEFAULT_WIDTH)
 
-  const handleResize = () => {
-    setWidth(window.innerWidth)
-  }
+  const handleResize = debounce(() => {
+    if (isBrowser) {
+      setWidth(window.innerWidth)
+    }
+  }, 250)
 
-  // Debounce to avoid the function fire multiple times
-  const handleResizeDebounced = debounce(handleResize, 250)
+  useLayoutEffect(() => {
+    if (!isBrowser) return
 
-  useEffect(() => {
     let media
     try {
       media = window.matchMedia(MEDIA_QUERY_MATCH)
-      media.addEventListener('change', handleResizeDebounced)
+      media.addEventListener('change', handleResize)
     } catch {
-      window.addEventListener('resize', handleResizeDebounced)
+      window.addEventListener('resize', handleResize)
     }
 
     return () => {
       if (media?.removeEventListener) {
-        media.removeEventListener('change', handleResizeDebounced)
+        media.removeEventListener('change', handleResize)
       } else {
-        window.removeEventListener('resize', handleResizeDebounced)
+        window.removeEventListener('resize', handleResize)
       }
     }
-  })
+  }, [handleResize])
 
   return {
     responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
@@ -58,8 +62,6 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
   }
 }
 
-//This is to keep consistant with previous version.
-//We should make a major version release that will allow more breakpoints
 const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, visibleSlides[1]]
 
 const getMobileVisibleSlides = (visibleSlides) =>
