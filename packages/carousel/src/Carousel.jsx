@@ -11,6 +11,7 @@ import {
   getVisibleSlidesArray,
   useResponsiveVisibleSlides,
   getMobileVisibleSlides,
+  useIsBrowser,
   getVisibleSlides,
 } from './helpers'
 import { RenderInView } from './RenderInView'
@@ -74,10 +75,7 @@ export const Carousel = ({
   arrowButtonZIndex,
   lockedWidth,
 }) => {
-  const [isBrowser, setIsBrowser] = useState(false)
-  useEffect(() => {
-    setIsBrowser(typeof window !== 'undefined')
-  }, [])
+  const isBrowser = useIsBrowser()
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
@@ -89,7 +87,10 @@ export const Carousel = ({
     calculatedResponsiveVisibleSlides = responsiveVisibleSlides
     calculatedBrowserWidth = browserWidth
   } else {
-    calculatedResponsiveVisibleSlides = getVisibleSlides(visibleSlidesArray, lockedWidth ? lockedWidth : DEFAULT_WIDTH)
+    calculatedResponsiveVisibleSlides = getVisibleSlides(
+      visibleSlidesArray,
+      lockedWidth ? lockedWidth : DEFAULT_WIDTH
+    )
     calculatedBrowserWidth = lockedWidth ? lockedWidth : DEFAULT_WIDTH
   }
 
