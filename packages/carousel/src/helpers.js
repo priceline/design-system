@@ -35,8 +35,6 @@ const useResponsiveVisibleSlides = (visibleSlidesArray) => {
     const handleResizeDebounced = debounce(handleResize, 250)
 
     window.addEventListener('resize', handleResizeDebounced)
-    handleResize()
-
     return () => window.removeEventListener('resize', handleResizeDebounced)
   }, [])
 
