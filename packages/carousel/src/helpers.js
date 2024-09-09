@@ -25,11 +25,11 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
       : visibleSlides[2]
 
 const useResponsiveVisibleSlides = (visibleSlides) => {
-  const isBrowser = typeof window !== 'undefined'
-  const [width, setWidth] = useState(isBrowser ? window.innerWidth : CAROUSEL_BREAKPOINT_2)
+  const DEFAULT_WIDTH = 1024
+  const [width, setWidth] = useState(DEFAULT_WIDTH)
 
   useEffect(() => {
-    if (!isBrowser) return {
+    if (typeof window === 'undefined') return {
       responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
       browserWidth: width,
     }
@@ -40,25 +40,26 @@ const useResponsiveVisibleSlides = (visibleSlides) => {
 
     const handleResizeDebounced = debounce(handleResize, 250)
 
-    let media
+    let mediaQueryList
     try {
-      media = window.matchMedia(MEDIA_QUERY_MATCH)
-      media.addEventListener('change', handleResizeDebounced)
+      mediaQueryList = window.matchMedia(MEDIA_QUERY_MATCH)
+      mediaQueryList.addEventListener('change', handleResizeDebounced) 
     } catch {
       window.addEventListener('resize', handleResizeDebounced)
     }
-
+    handleResize()
     return () => {
-      if (media?.removeEventListener) {
-        media.removeEventListener('change', handleResizeDebounced)
+      if (mediaQueryList?.removeEventListener) {
+        mediaQueryList.removeEventListener('change', handleResizeDebounced)
       } else {
         window.removeEventListener('resize', handleResizeDebounced)
       }
     }
-  }, [isBrowser])
+  }, [])
+  const responsiveVisibleSlides = getVisibleSlides(visibleSlides, width)
 
   return {
-    responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
+    responsiveVisibleSlides,
     browserWidth: width,
   }
 }
