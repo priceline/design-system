@@ -6,7 +6,6 @@ const CAROUSEL_BREAKPOINT_1 = 768
 
 const CAROUSEL_BREAKPOINT_2 = 1024
 
-
 const MEDIA_QUERY_MATCH = `(max-width: ${CAROUSEL_BREAKPOINT_2}px) and (min-width: ${CAROUSEL_BREAKPOINT_1}px)`
 
 const ARROW_MARGIN = {
