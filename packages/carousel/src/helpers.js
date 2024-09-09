@@ -65,4 +65,10 @@ const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, 
 const getMobileVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
 
-export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }
+export {
+  getSlideKey,
+  getVisibleSlidesArray,
+  useResponsiveVisibleSlides,
+  getVisibleSlides,
+  getMobileVisibleSlides,
+}
