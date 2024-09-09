@@ -74,10 +74,13 @@ export const Carousel = ({
   arrowButtonZIndex,
   lockedWidth,
 }) => {
+  const [isBrowser, setIsBrowser] = useState(false)
+  useEffect(() => {
+    setIsBrowser(typeof window !== 'undefined')
+  }, [])
   const widths = layoutToFlexWidths(layout, children.length)
   const layoutSize = layout?.split('-').length
   const visibleSlidesArray = getVisibleSlidesArray(visibleSlides)
-  const isBrowser = typeof window !== 'undefined'
   let calculatedResponsiveVisibleSlides
   let calculatedBrowserWidth
   const DEFAULT_WIDTH = 1024
