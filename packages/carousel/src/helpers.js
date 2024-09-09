@@ -72,6 +72,7 @@ const useIsBrowser = () => {
   }, [])
   return isBrowser
 }
+
 export {
   getSlideKey,
   getVisibleSlidesArray,
