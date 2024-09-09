@@ -15,7 +15,7 @@ import {
   getVisibleSlides,
 } from './helpers'
 import { RenderInView } from './RenderInView'
-import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT, DEFAULT_WIDTH } from './constants'
+import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT, CAROUSEL_BREAKPOINT_2 } from './constants'
 
 const ChangeDetector = ({ onSlideChange }) => {
   const carouselContext = useContext(CarouselContext)
@@ -88,9 +88,9 @@ export const Carousel = ({
   } else {
     calculatedResponsiveVisibleSlides = getVisibleSlides(
       visibleSlidesArray,
-      lockedWidth ? lockedWidth : DEFAULT_WIDTH
+      lockedWidth ? lockedWidth : CAROUSEL_BREAKPOINT_2
     )
-    calculatedBrowserWidth = lockedWidth ? lockedWidth : DEFAULT_WIDTH
+    calculatedBrowserWidth = lockedWidth ? lockedWidth : CAROUSEL_BREAKPOINT_2
   }
 
   const overflowAdjust = overflowAllowancePxTop

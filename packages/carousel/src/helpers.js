@@ -6,6 +6,7 @@ import {
   VISIBLE_SLIDES_BREAKPOINT_2,
   CAROUSEL_BREAKPOINT_1,
   CAROUSEL_BREAKPOINT_2,
+  MEDIA_QUERY_MATCH
 } from './constants'
 import debounce from 'lodash.debounce'
 
@@ -20,27 +21,43 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
   windowWidth < CAROUSEL_BREAKPOINT_1
     ? visibleSlides[0]
     : windowWidth < CAROUSEL_BREAKPOINT_2
-    ? visibleSlides[1]
-    : visibleSlides[2]
+      ? visibleSlides[1]
+      : visibleSlides[2]
 
-const useResponsiveVisibleSlides = (visibleSlidesArray) => {
-  const [width, setWidth] = useState(1024)
-  
+const useResponsiveVisibleSlides = (visibleSlides) => {
+  const isBrowser = typeof window !== 'undefined'
+  const [width, setWidth] = useState(isBrowser ? window.innerWidth : CAROUSEL_BREAKPOINT_2)
+
   useEffect(() => {
-    if (typeof window === 'undefined') return
+    if (!isBrowser) return
 
     const handleResize = () => {
       setWidth(window.innerWidth)
     }
+
     const handleResizeDebounced = debounce(handleResize, 250)
 
-    window.addEventListener('resize', handleResizeDebounced)
-    return () => window.removeEventListener('resize', handleResizeDebounced)
-  }, [])
+    let media
+    try {
+      media = window.matchMedia(MEDIA_QUERY_MATCH)
+      media.addEventListener('change', handleResizeDebounced)
+    } catch {
+      window.addEventListener('resize', handleResizeDebounced)
+    }
 
-  const responsiveVisibleSlides = getVisibleSlides(visibleSlidesArray, width)
+    return () => {
+      if (media?.removeEventListener) {
+        media.removeEventListener('change', handleResizeDebounced)
+      } else {
+        window.removeEventListener('resize', handleResizeDebounced)
+      }
+    }
+  }, [isBrowser])
 
-  return { responsiveVisibleSlides, browserWidth: width }
+  return {
+    responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
+    browserWidth: width,
+  }
 }
 
 
