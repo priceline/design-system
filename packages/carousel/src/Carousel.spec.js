@@ -158,4 +158,22 @@ describe('Carousel', () => {
     )
     expect(getByText('Hello')).toBeInTheDocument()
   })
+
+  it('Render SSR safely with a fixed width using the lockedWidth prop.', () => {
+    const { getByText } = render(
+      <Carousel
+        lockedWidth={1400}
+        layout='50-50'
+        arrowsPosition='bottom'
+        arrowsAlignment='left'
+        currentSlide={1}
+        nodeBesideArrowsRight={<Badge>Hello</Badge>}
+      >
+        <Flex>Slide 1</Flex>
+        <Flex>Slide 2</Flex>
+        <Flex>Slide 3</Flex>
+      </Carousel>
+    )
+    expect(getByText('Hello')).toBeInTheDocument()
+  })
 })
