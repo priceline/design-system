@@ -142,7 +142,7 @@ const NonResponsiveTemplate = (args) => <Carousel {...args}>{renderCards()}</Car
 export const SSRNonresponsive = NonResponsiveTemplate.bind({})
 SSRNonresponsive.args = {
   visibleSlides: 3,
-  setWidth: 1024,
+  lockedWidth: 1024,
   mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
