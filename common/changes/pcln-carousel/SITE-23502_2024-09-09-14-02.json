@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Adding SSR check to no prevent crashes",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

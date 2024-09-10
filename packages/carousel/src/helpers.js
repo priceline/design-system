@@ -6,7 +6,7 @@ import {
   VISIBLE_SLIDES_BREAKPOINT_2,
   CAROUSEL_BREAKPOINT_1,
   CAROUSEL_BREAKPOINT_2,
-  MEDIA_QUERY_MATCH,
+  MEDIA_QUERY_MATCH
 } from './constants'
 import debounce from 'lodash.debounce'
 
@@ -21,42 +21,48 @@ const getVisibleSlides = (visibleSlides, windowWidth) =>
   windowWidth < CAROUSEL_BREAKPOINT_1
     ? visibleSlides[0]
     : windowWidth < CAROUSEL_BREAKPOINT_2
-    ? visibleSlides[1]
-    : visibleSlides[2]
+      ? visibleSlides[1]
+      : visibleSlides[2]
 
 const useResponsiveVisibleSlides = (visibleSlides) => {
-  const [width, setWidth] = useState(window.innerWidth)
-
-  const handleResize = () => {
-    setWidth(window.innerWidth)
-  }
-
-  // Debounce to avoid the function fire multiple times
-  const handleResizeDebounced = debounce(handleResize, 250)
+  const [width, setWidth] = useState(CAROUSEL_BREAKPOINT_2)
 
   useEffect(() => {
-    let media
+    // If window is undefined return default desktop breakpoint
+    if (typeof window === 'undefined') return {
+      responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
+      browserWidth: width,
+    }
+
+    // Client is initialized so we can access window, resize immediately with new context, and set up matchMedia listeners
+    const handleResize = () => {
+      setWidth(window.innerWidth)
+    }
+
+    handleResize()
+    const handleResizeDebounced = debounce(handleResize, 250)
+    let mediaQueryList
     try {
-      media = window.matchMedia(MEDIA_QUERY_MATCH)
-      media.addEventListener('change', handleResizeDebounced)
+      mediaQueryList = window.matchMedia(MEDIA_QUERY_MATCH)
+      mediaQueryList.addEventListener('change', handleResizeDebounced) 
     } catch {
       window.addEventListener('resize', handleResizeDebounced)
     }
-
     return () => {
-      if (media?.removeEventListener) {
-        media.removeEventListener('change', handleResizeDebounced)
+      if (mediaQueryList?.removeEventListener) {
+        mediaQueryList.removeEventListener('change', handleResizeDebounced)
       } else {
         window.removeEventListener('resize', handleResizeDebounced)
       }
     }
-  })
+  }, [])
 
   return {
     responsiveVisibleSlides: getVisibleSlides(visibleSlides, width),
     browserWidth: width,
   }
 }
+
 
 //This is to keep consistant with previous version.
 //We should make a major version release that will allow more breakpoints
@@ -65,4 +71,9 @@ const getMobileVisibleSlidesArray = (visibleSlides) => [visibleSlides[0], null, 
 const getMobileVisibleSlides = (visibleSlides) =>
   Array.isArray(visibleSlides) ? getMobileVisibleSlidesArray(visibleSlides) : visibleSlides
 
-export { getSlideKey, getVisibleSlidesArray, useResponsiveVisibleSlides, getMobileVisibleSlides }
+export {
+  getSlideKey,
+  getVisibleSlidesArray,
+  useResponsiveVisibleSlides,
+  getMobileVisibleSlides,
+}
