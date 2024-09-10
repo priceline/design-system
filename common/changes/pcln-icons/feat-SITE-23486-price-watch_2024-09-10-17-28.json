@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "price watch trendingDown icon",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
