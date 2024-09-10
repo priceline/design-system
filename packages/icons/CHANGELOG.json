@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.1",
+      "tag": "pcln-icons_v6.6.1",
+      "date": "Tue, 10 Sep 2024 18:23:17 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "price watch trendingDown icon",
+            "author": "Amanda Komsky <amanda.komsky@priceline.com>",
+            "commit": "d6a538d77e1cefb0a99c2e637a72d7883433ed2e"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.0",
       "tag": "pcln-icons_v6.6.0",
       "date": "Thu, 05 Sep 2024 14:48:24 GMT",
