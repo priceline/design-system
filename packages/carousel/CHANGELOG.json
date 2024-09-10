@@ -2,6 +2,20 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "3.2.0",
+      "tag": "pcln-carousel_v3.2.0",
+      "date": "Tue, 10 Sep 2024 17:30:24 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adding SSR check to no prevent crashes",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "bb6340bdd42a597cc8ca0cf193535c94a2ea7639"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.32",
       "tag": "pcln-carousel_v3.1.32",
       "date": "Thu, 05 Sep 2024 14:48:24 GMT",

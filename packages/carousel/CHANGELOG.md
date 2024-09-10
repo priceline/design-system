@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Thu, 05 Sep 2024 14:48:24 GMT and should not be manually modified.
+This log was last generated on Tue, 10 Sep 2024 17:30:24 GMT and should not be manually modified.
+
+## 3.2.0
+Tue, 10 Sep 2024 17:30:24 GMT
+
+### Minor changes
+
+- Adding SSR check to no prevent crashes
 
 ## 3.1.32
 Thu, 05 Sep 2024 14:48:24 GMT
