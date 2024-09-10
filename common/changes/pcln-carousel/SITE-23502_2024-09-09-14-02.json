@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "pcln-carousel",
-      "comment": "Adding SSR check to no longer crash next-landing",
+      "comment": "Adding SSR check to no prevent crashes",
       "type": "minor"
     }
   ],
