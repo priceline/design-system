@@ -2,6 +2,7 @@ import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { Button, IconButton } from 'pcln-design-system'
 import { InformationOutline } from 'pcln-icons'
+import { fn } from '@storybook/test'
 
 const Children = {
   Button: <Button>Popover</Button>,
@@ -20,8 +21,8 @@ export const defaultArgs = {
   openOnFocus: false,
   openOnHover: true,
   placement: 'top',
-  onClose: action('Popover Close'),
-  onOpen: action('Popover Open'),
+  onClose: fn(),
+  onOpen: fn(),
   disableFloating: false,
 }
 
@@ -42,8 +43,7 @@ export const argTypes = {
     type: { name: 'boolean', required: false },
     control: { type: 'boolean' },
   },
-  onClose: { action: true },
-  onMinimize: { action: true },
+  onBeforeOpen: { action: true },
   placement: {
     name: 'placement',
     type: { name: 'string', required: true },

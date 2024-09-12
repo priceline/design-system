@@ -1,7 +1,7 @@
-import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
+import { ArgTypes } from '@storybook/addon-docs'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
@@ -269,8 +269,7 @@ const meta: Meta<typeof Button> = {
           </Section>
 
           <Section heading='Props'>
-            <Primary />
-            <ArgsTable story={PRIMARY_STORY} />
+            <ArgTypes />
           </Section>
 
           <Section heading='Examples & Variations'>

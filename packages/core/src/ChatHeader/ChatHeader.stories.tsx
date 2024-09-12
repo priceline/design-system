@@ -1,6 +1,7 @@
 import { expect } from '@storybook/jest'
-import type { StoryObj } from '@storybook/react'
+import type { StoryObj, Meta } from '@storybook/react/&*'
 import { userEvent, within } from '@storybook/testing-library'
+import { fn } from '@storybook/test'
 import { Sparkle } from 'pcln-icons'
 import React from 'react'
 import { Flex } from '../Flex/Flex'
@@ -8,14 +9,16 @@ import { Stamp } from '../Stamp/Stamp'
 import { Text } from '../Text/Text'
 import { ChatHeader, type ChatHeaderProps } from './ChatHeader'
 
-export default {
+const meta: Meta<typeof ChatHeader> = {
   title: 'Chat / ChatHeader',
   component: ChatHeader,
-  argTypes: {
-    onClose: { action: true },
-    onMinimize: { action: true },
+  args: {
+    onClose: fn(),
+    onMinimize: fn(),
   },
 }
+
+export default meta
 
 type ChatHeaderStory = StoryObj<ChatHeaderProps>
 

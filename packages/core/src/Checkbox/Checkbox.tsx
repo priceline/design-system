@@ -114,7 +114,7 @@ export type CheckboxProps = ComponentPropsWithRef<'input'> & {
 /**
  * @public
  */
-export const Checkbox: React.FC<CheckboxProps> = React.forwardRef((props, ref) => {
+export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>((props, ref) => {
   const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
 
   const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)

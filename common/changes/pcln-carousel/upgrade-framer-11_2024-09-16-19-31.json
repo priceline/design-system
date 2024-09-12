@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "Upgrade React",
+      "type": "patch",
+      "packageName": "pcln-carousel"
+    }
+  ],
+  "packageName": "pcln-carousel",
+  "email": "craig.palermo@priceline.com"
+}

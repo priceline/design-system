@@ -1,4 +1,4 @@
-import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
+import { ArgTypes, Primary } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
@@ -123,7 +123,7 @@ const meta: Meta<typeof Grid> = {
 
           <Section heading='Props'>
             <Primary />
-            <ArgsTable story={PRIMARY_STORY} />
+            <ArgTypes />
           </Section>
 
           <Section heading='Examples'>

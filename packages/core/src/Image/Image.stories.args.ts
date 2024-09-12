@@ -1,7 +1,8 @@
+import { ArgTypes } from '@storybook/react/*'
 import { borderRadii, colors, objectFits, objectPositions, rounded, shadows } from '../storybook/args'
 import { Image } from './Image'
 
-export const argTypes = {
+export const argTypes: ArgTypes = {
   borderRadius: {
     control: 'select',
     name: 'borderRadius',

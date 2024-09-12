@@ -300,6 +300,7 @@ export const PopoverInteractionTest = {
 const OpenAndCloseTemplate = (args) => (
   <Popover
     {...args}
+    openOnHover={false}
     renderContent={({ handleClose }) => (
       <Box p={2}>
         <p>Hello there!</p>
@@ -317,6 +318,7 @@ const OpenAndCloseTemplate2 = (args) => (
     <Popover
       querySelectorPortal='#popover-portal'
       {...args}
+      openOnHover={false}
       renderContent={({ handleClose }) => (
         <Box p={2}>
           <p>Hello there!</p>
@@ -410,19 +412,20 @@ export const DisableFloating = (args) => (
 
 const ControlledTemplate = ({ isOpen, handleOpen, handleClose, ...args }) => (
   <>
-    <div>Below is a button that you can't open by clicking. Instead you must use the controls tab at the bottom to modify the <strong>isOpen</strong> prop. If you do it, an unbelievable fact will be revealed.</div>
+    <div>
+      Below is a button that you can't open by clicking. Instead you must use the controls tab at the bottom
+      to modify the <strong>isOpen</strong> prop. If you do it, an unbelievable fact will be revealed.
+    </div>
     <Popover
       {...args}
       isOpen={isOpen}
       renderContent={({}) => (
         <Box p={2}>
-         {`Tardigrades can survive in the vacuum of space, endure extreme temperatures from just above absolute zero to over 300 degrees Fahrenheit, withstand high levels of radiation, and go without water for decades by entering a state called cryptobiosis. When conditions improve, they can rehydrate and return to their normal functioning state.`}
+          {`Tardigrades can survive in the vacuum of space, endure extreme temperatures from just above absolute zero to over 300 degrees Fahrenheit, withstand high levels of radiation, and go without water for decades by entering a state called cryptobiosis. When conditions improve, they can rehydrate and return to their normal functioning state.`}
         </Box>
       )}
     >
-      <Button>
-        Tee Hee
-      </Button>
+      <Button>Tee Hee</Button>
     </Popover>
   </>
 )
@@ -434,5 +437,5 @@ export const OpensAndClosesProgrammatically = {
     isOpen: false,
     openOnHover: false,
     toggleIsOpenOnClick: false,
-  }
+  },
 }

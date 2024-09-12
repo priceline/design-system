@@ -134,7 +134,7 @@ SelectBase.defaultProps = {
 /**
  * @public
  */
-export const Select: React.FC<SelectProps> & { isField?: boolean } = React.forwardRef(
+export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
   ({ variation = 'input', ...props }, ref) => (
     <Flex width={1} alignItems='center'>
       <SelectBase {...props} ref={ref} variation={variation} />
@@ -144,4 +144,6 @@ export const Select: React.FC<SelectProps> & { isField?: boolean } = React.forwa
 )
 
 Select.displayName = 'Select'
+
+// @ts-ignore
 Select.isField = true

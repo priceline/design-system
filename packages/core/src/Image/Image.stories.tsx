@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArgsTable, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
+import { ArgTypes, Primary } from '@storybook/addon-docs'
 import { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import { Box } from '../Box/Box'
@@ -111,7 +111,7 @@ const meta: Meta<typeof Image> = {
 
           <Section heading='Props'>
             <Primary />
-            <ArgsTable story={PRIMARY_STORY} />
+            <ArgTypes />
           </Section>
 
           <Section heading='Examples & Variations'>

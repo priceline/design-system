@@ -29,7 +29,11 @@
     "eslint": "^8.48.0",
     "ts-node": "^10.4.0",
     "typescript": "^5.2.2",
-    "yargs": "^17.3.1"
+    "yargs": "^17.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
+    "react-test-renderer": "^18.3.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.6.0"
