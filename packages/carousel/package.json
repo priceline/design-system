@@ -43,7 +43,8 @@
     "prop-types": "^15.8.1",
     "pure-react-carousel": "^1.30.1",
     "react-intersection-observer": "^9.5.3",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "react-test-renderer": "^18.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",
@@ -51,7 +52,7 @@
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.6.0",
-    "@storybook/addon-actions": "^7.6.4",
+    "@storybook/addon-actions": "^8.3.0",
     "@storybook/jest": "^0.2.3",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.5",
@@ -67,9 +68,9 @@
     "pcln-design-system": "workspace:*",
     "pcln-popover": "workspace:*",
     "pcln-icons": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
     "require-from-string": "2.0.2",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.11",

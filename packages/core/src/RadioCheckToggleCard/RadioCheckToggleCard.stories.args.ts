@@ -1,10 +1,11 @@
+import { ArgTypes } from '@storybook/react/*'
 import {
   RadioCheckToggleCard,
   RadioCheckToggleCardHPositions,
   RadioCheckToggleCardVPositions,
 } from './RadioCheckToggleCard'
 
-export const argTypes = {
+export const argTypes: ArgTypes = {
   hPosition: {
     control: { type: 'radio' },
     options: RadioCheckToggleCardHPositions,

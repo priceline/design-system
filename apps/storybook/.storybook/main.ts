@@ -26,9 +26,6 @@ const config: StorybookConfig = {
     '@storybook/addon-designs',
     '@storybook/addon-coverage',
   ],
-  docs: {
-    autodocs: true,
-  },
   framework: '@storybook/react-vite',
   stories,
   typescript: {

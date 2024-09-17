@@ -10,7 +10,7 @@ import { dialogSizes } from './Dialog.styled'
 const overflowArgs = ['scroll', 'visible', 'hidden', 'auto']
 export const argTypes: Partial<ArgTypes<DialogProps>> = {
   borderRadius: { control: { type: 'select' }, options: Object.keys(borderRadii) },
-  children: { control: { type: 'none' } },
+  children: { control: { disable: true } },
   fullWidth: { control: { type: 'boolean' } },
   headerColorScheme: { control: { type: 'select' }, options: colorSchemeNames },
   headerContent: { type: 'string' },
@@ -21,10 +21,11 @@ export const argTypes: Partial<ArgTypes<DialogProps>> = {
   sheet: { control: { type: 'boolean' } },
   showCloseButton: { control: { type: 'boolean' } },
   size: { control: { type: 'select' }, options: dialogSizes },
-  triggerNode: { control: { type: 'none' } },
+  triggerNode: { control: { disable: true } },
   overflowX: { control: { type: 'select' }, options: overflowArgs },
   overflowY: { control: { type: 'select' }, options: overflowArgs },
   shouldDisableTabIndex: { control: { type: 'boolean' } },
+  onOpenChange: { action: 'Dialog opened' },
 }
 
 export const defaultArgs: Partial<DialogProps> = {

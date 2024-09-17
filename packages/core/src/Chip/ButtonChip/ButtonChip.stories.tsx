@@ -35,6 +35,7 @@ const getExamples = (exampleProps, sizes, width = '') => (
               key={`chip${size.title}${i}`}
               id={`chip${size.title}${i}`}
               width={width}
+              fontWeight='bold'
               m={1}
               size={size.value}
               {...props}

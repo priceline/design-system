@@ -1,4 +1,4 @@
-import { ArgsTable, Canvas, PRIMARY_STORY, Primary } from '@storybook/addon-docs'
+import { ArgTypes, Canvas, Primary } from '@storybook/addon-docs'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import styled from 'styled-components'
@@ -238,7 +238,7 @@ const meta: Meta<typeof Card> = {
 
           <Section heading='Props'>
             <Primary />
-            <ArgsTable story={PRIMARY_STORY} />
+            <ArgTypes />
           </Section>
 
           <Section heading='Variatons'>

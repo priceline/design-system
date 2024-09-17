@@ -34,15 +34,15 @@ export type IconButtonProps = ButtonProps & {
 /**
  * @public
  */
-export const IconButton: React.FC<IconButtonProps> & { isIconButton?: boolean } = React.forwardRef(
-  ({ icon, ...props }, ref) => {
-    return (
-      <TransparentButton {...props} ref={ref}>
-        <Flex>{icon}</Flex>
-      </TransparentButton>
-    )
-  }
-)
+export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(({ icon, ...props }, ref) => {
+  return (
+    <TransparentButton {...props} ref={ref}>
+      <Flex>{icon}</Flex>
+    </TransparentButton>
+  )
+})
 
 IconButton.displayName = 'IconButton'
+
+// @ts-ignore
 IconButton.isIconButton = true

@@ -1,5 +1,6 @@
 import { TabProps } from './Tab'
 import { DefaultContent, DefaultContent2, DefaultContent3 } from '../__test__/mocks/tabContent'
+import { ArgTypes } from '@storybook/react/*'
 
 export const defaultArgs: Partial<TabProps> = {
   size: 'md',
@@ -27,7 +28,7 @@ export const defaultArgs: Partial<TabProps> = {
     },
   ],
 }
-export const argTypes = {
+export const argTypes: ArgTypes = {
   size: {
     control: 'select',
     options: ['sm', 'md'],

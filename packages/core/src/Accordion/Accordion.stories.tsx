@@ -1,5 +1,8 @@
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
+import { fn } from '@storybook/test'
+import type { Meta } from '@storybook/react/*'
+
 import React, { useState } from 'react'
 import { Button } from '../Button/Button'
 import { Flex } from '../Flex/Flex'
@@ -7,11 +10,13 @@ import { Text } from '../Text/Text'
 import { theme } from '../theme/theme'
 import { Accordion } from './Accordion'
 
-export default {
+const meta: Meta<typeof Accordion> = {
   title: 'Accordion',
   component: Accordion,
+  args: {
+    onToggle: fn(),
+  },
   argTypes: {
-    onToggle: { action: true },
     p: {
       options: theme.space,
       control: { type: 'select' },
@@ -19,6 +24,8 @@ export default {
     },
   },
 }
+
+export default meta
 
 const items = [
   {

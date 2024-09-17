@@ -4,7 +4,7 @@ import { fireEvent, render, screen } from 'testing-library'
 
 import Popover from './Popover'
 
-// eslint-disable-next-line react/prop-types
+ 
 const InnerContent = ({ handleClose }) => (
   <Box>
     <p>Hello there!</p>

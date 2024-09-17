@@ -153,6 +153,8 @@ export const WithNoHeader = (args) => (
     heading={undefined}
     includeCloseButton={false}
     includeCollapseButton={false}
+    onClose={null}
+    onCollapse={null}
   >
     {CustomPennyContent}
   </DrawerStory>
@@ -170,7 +172,7 @@ export const WithCloseButton = (args) => (
 )
 
 export const WithCollapseButton = (args) => (
-  <DrawerStory {...args} placement='right' includeCloseButton={false}>
+  <DrawerStory {...args} placement='right' includeCloseButton={false} onClose={null}>
     Drawer Content
   </DrawerStory>
 )

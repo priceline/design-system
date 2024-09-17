@@ -26,7 +26,8 @@
     "@floating-ui/react-dom-interactions": "^0.13.3",
     "@styled-system/theme-get": "^5.1.2",
     "prop-types": "^15.8.1",
-    "react-focus-lock": "^2.9.6"
+    "react-focus-lock": "^2.9.6",
+    "react-test-renderer": "^18.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",
@@ -35,7 +36,8 @@
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.16.0",
     "@rushstack/eslint-patch": "^1.6.0",
-    "@storybook/addon-actions": "^7.6.4",
+    "@storybook/addon-actions": "^8.3.0",
+    "@storybook/test": "^8.3.0",
     "@storybook/jest": "^0.2.3",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.5",
@@ -51,9 +53,9 @@
     "pcln-design-system": "workspace:*",
     "pcln-icons": "workspace:*",
     "pcln-slider": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.11",
     "styled-system": "^5.1.5"

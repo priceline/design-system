@@ -1,20 +1,20 @@
 import { expect } from '@storybook/jest'
 import { userEvent, within } from '@storybook/testing-library'
+import { fn } from '@storybook/test'
 import { Cars, Chat } from 'pcln-icons'
 import React from 'react'
 import { Relative } from '../Relative/Relative'
 import { FloatingActionButton } from './FloatingActionButton'
+import { Meta } from '@storybook/react/*'
 
-export default {
+const meta: Meta<typeof FloatingActionButton> = {
   title: 'FloatingActionButton',
   component: FloatingActionButton,
   args: {
     hasNotification: false,
     icon: Chat,
     tooltip: 'Tooltip text',
-  },
-  argTypes: {
-    onClick: { action: true },
+    onClick: fn(),
   },
   decorators: [
     (Story) => (
@@ -24,6 +24,8 @@ export default {
     ),
   ],
 }
+
+export default meta
 
 export const _FloatingActionButton = {
   play: async ({ args, canvasElement }) => {
