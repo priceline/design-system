@@ -1,6 +1,14 @@
 # Change Log - pcln-slider
 
-This log was last generated on Wed, 04 Sep 2024 12:48:46 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+
+## 6.1.12
+Thu, 19 Sep 2024 14:45:03 GMT
+
+### Patches
+
+- Upgrade to Storybook 8
+- Upgrade React
 
 ## 6.1.11
 Wed, 04 Sep 2024 12:48:46 GMT

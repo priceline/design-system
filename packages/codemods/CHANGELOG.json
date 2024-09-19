@@ -2,6 +2,25 @@
   "name": "pcln-codemods",
   "entries": [
     {
+      "version": "3.0.33",
+      "tag": "pcln-codemods_v3.0.33",
+      "date": "Thu, 19 Sep 2024 14:45:03 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade React",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "72e249ebe1c7770b1374ea883a3d865d095f0838"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.20.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.32",
       "tag": "pcln-codemods_v3.0.32",
       "date": "Wed, 04 Sep 2024 12:48:46 GMT",

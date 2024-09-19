@@ -1,6 +1,13 @@
 # Change Log - pcln-codemods
 
-This log was last generated on Wed, 04 Sep 2024 12:48:46 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+
+## 3.0.33
+Thu, 19 Sep 2024 14:45:03 GMT
+
+### Patches
+
+- Upgrade React
 
 ## 3.0.32
 Wed, 04 Sep 2024 12:48:46 GMT

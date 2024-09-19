@@ -1,6 +1,15 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 04 Sep 2024 12:48:46 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+
+## 6.20.2
+Thu, 19 Sep 2024 14:45:03 GMT
+
+### Patches
+
+- Upgrade to Storybook 8
+- Upgrade React
+- Upgrade to framer-motion 11
 
 ## 6.20.1
 Wed, 04 Sep 2024 12:48:46 GMT

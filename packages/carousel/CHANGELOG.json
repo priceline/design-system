@@ -2,6 +2,42 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "3.2.2",
+      "tag": "pcln-carousel_v3.2.2",
+      "date": "Thu, 19 Sep 2024 14:45:03 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade to Storybook 8",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "72e249ebe1c7770b1374ea883a3d865d095f0838"
+          },
+          {
+            "comment": "Upgrade React",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "72e249ebe1c7770b1374ea883a3d865d095f0838"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.20.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.1.24`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.6.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.20.1` to `6.20.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^6.6.1` to `6.6.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.2.1",
       "tag": "pcln-carousel_v3.2.1",
       "date": "Tue, 10 Sep 2024 18:23:17 GMT",

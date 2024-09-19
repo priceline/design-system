@@ -2,6 +2,20 @@
   "name": "heft-styled-components-plugin",
   "entries": [
     {
+      "version": "0.1.1",
+      "tag": "heft-styled-components-plugin_v0.1.1",
+      "date": "Thu, 19 Sep 2024 14:45:03 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade React",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "72e249ebe1c7770b1374ea883a3d865d095f0838"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.0",
       "tag": "heft-styled-components-plugin_v0.1.0",
       "date": "Mon, 13 May 2024 15:04:02 GMT",

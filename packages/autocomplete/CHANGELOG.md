@@ -1,6 +1,13 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Tue, 10 Sep 2024 18:23:17 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+
+## 6.0.39
+Thu, 19 Sep 2024 14:45:03 GMT
+
+### Patches
+
+- Upgrade React
 
 ## 6.0.38
 Tue, 10 Sep 2024 18:23:17 GMT

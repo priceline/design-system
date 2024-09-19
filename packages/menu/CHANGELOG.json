@@ -2,6 +2,40 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.0.43",
+      "tag": "pcln-menu_v6.0.43",
+      "date": "Thu, 19 Sep 2024 14:45:03 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade React",
+            "author": "Craig Palermo <3260642+craigpalermo@users.noreply.github.com>",
+            "commit": "72e249ebe1c7770b1374ea883a3d865d095f0838"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.20.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.6.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.1.24`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.20.1` to `6.20.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^6.6.1` to `6.6.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^6.1.23` to `6.1.24`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.42",
       "tag": "pcln-menu_v6.0.42",
       "date": "Tue, 10 Sep 2024 18:23:17 GMT",

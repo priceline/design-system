@@ -1,6 +1,14 @@
 # Change Log - pcln-popover
 
-This log was last generated on Tue, 10 Sep 2024 18:23:17 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+
+## 6.1.24
+Thu, 19 Sep 2024 14:45:03 GMT
+
+### Patches
+
+- Upgrade to Storybook 8
+- Upgrade React
 
 ## 6.1.23
 Tue, 10 Sep 2024 18:23:17 GMT
