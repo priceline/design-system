@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Upgrade to framer-motion 11",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
