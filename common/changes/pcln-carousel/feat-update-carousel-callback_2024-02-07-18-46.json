@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Upate Carousel callback to send rightmost visible slide instead of left most",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
