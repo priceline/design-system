@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Trophy } from 'pcln-icons'
 import { Grid } from '../Grid/Grid'
 import { Text } from '../Text/Text'
+import { Flex } from '../Flex/Flex'
 import { colorSchemeNames } from '../storybook/args'
 import { textTransformValues } from '../utils/attrs/typographyAttrs'
 import { Badge, sizes, type BadgeProps } from './Badge'
@@ -103,3 +105,14 @@ const ColorSchemesTemplate = (args) => {
 }
 export const ColorSchemes = ColorSchemesTemplate.bind({})
 ColorSchemesTemplate.args = {}
+
+export const IconStyle = () => {
+  return (
+    <Badge colorScheme='neutralDarkOnLight' size='captionMedium' textTransform='capitalize' mr={1}>
+      <Flex>
+        <Trophy mr={1} size={16} />
+        <Text>Badge</Text>
+      </Flex>
+    </Badge>
+  )
+}
