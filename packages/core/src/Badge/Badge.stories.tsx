@@ -106,7 +106,7 @@ const ColorSchemesTemplate = (args) => {
 export const ColorSchemes = ColorSchemesTemplate.bind({})
 ColorSchemesTemplate.args = {}
 
-export const IconStyle = () => {
+export const WithIcon = () => {
   return (
     <Badge colorScheme='neutralDarkOnLight' size='captionMedium' textTransform='capitalize' mr={1}>
       <Flex>
