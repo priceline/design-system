@@ -2,6 +2,18 @@
   "name": "pcln-popover",
   "entries": [
     {
+      "version": "6.1.25",
+      "tag": "pcln-popover_v6.1.25",
+      "date": "Wed, 16 Oct 2024 19:28:46 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.6.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.24",
       "tag": "pcln-popover_v6.1.24",
       "date": "Thu, 19 Sep 2024 14:45:03 GMT",

@@ -2,6 +2,25 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.3",
+      "tag": "pcln-icons_v6.6.3",
+      "date": "Wed, 16 Oct 2024 19:28:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "feat(PPN-78971): add settings icon",
+            "author": "victoriaIsk <victoria.iskandar@priceline.com>",
+            "commit": "0dc813e011dc5ce9135516842a48796a0795cc10"
+          },
+          {
+            "comment": "ppn-78972",
+            "author": "joingram-priceline <99275805+joingram-priceline@users.noreply.github.com>",
+            "commit": "82ff9d3831eba771a5a301693a59a8ca6c32ebb6"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.2",
       "tag": "pcln-icons_v6.6.2",
       "date": "Thu, 19 Sep 2024 14:45:03 GMT",

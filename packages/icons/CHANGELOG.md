@@ -1,6 +1,14 @@
 # Change Log - pcln-icons
 
-This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+This log was last generated on Wed, 16 Oct 2024 19:28:46 GMT and should not be manually modified.
+
+## 6.6.3
+Wed, 16 Oct 2024 19:28:46 GMT
+
+### Patches
+
+- feat(PPN-78971): add settings icon
+- ppn-78972
 
 ## 6.6.2
 Thu, 19 Sep 2024 14:45:03 GMT
