@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "ppn-78972",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
