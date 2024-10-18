@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.4",
+      "tag": "pcln-icons_v6.6.4",
+      "date": "Fri, 18 Oct 2024 16:06:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "feat(add-dialpad-icon): add new dialpad icon",
+            "author": "victoriaIsk <victoria.iskandar@priceline.com>",
+            "commit": "649083a9a899dd9e29cb7dc7cf55ad88e559af7c"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.3",
       "tag": "pcln-icons_v6.6.3",
       "date": "Wed, 16 Oct 2024 19:28:46 GMT",
