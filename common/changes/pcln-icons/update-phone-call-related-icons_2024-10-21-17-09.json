@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Update: phone call related icons",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
