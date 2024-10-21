@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.5",
+      "tag": "pcln-icons_v6.6.5",
+      "date": "Mon, 21 Oct 2024 20:05:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update: phone call related icons",
+            "author": "bobbychao-pcln <46798524+bobbylkchao@users.noreply.github.com>",
+            "commit": "c83381c4639aee6ff64da3be33892efba6d46624"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.4",
       "tag": "pcln-icons_v6.6.4",
       "date": "Fri, 18 Oct 2024 16:06:50 GMT",

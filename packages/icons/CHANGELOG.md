@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 18 Oct 2024 16:06:50 GMT and should not be manually modified.
+This log was last generated on Mon, 21 Oct 2024 20:05:48 GMT and should not be manually modified.
+
+## 6.6.5
+Mon, 21 Oct 2024 20:05:48 GMT
+
+### Patches
+
+- Update: phone call related icons
 
 ## 6.6.4
 Fri, 18 Oct 2024 16:06:50 GMT
