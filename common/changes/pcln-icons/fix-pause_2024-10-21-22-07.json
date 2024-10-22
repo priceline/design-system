@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "update pause icon",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
