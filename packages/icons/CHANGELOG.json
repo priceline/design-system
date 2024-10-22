@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.6",
+      "tag": "pcln-icons_v6.6.6",
+      "date": "Tue, 22 Oct 2024 20:25:26 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update pause icon",
+            "author": "joingram-priceline <99275805+joingram-priceline@users.noreply.github.com>",
+            "commit": "8ea9d8cc64ddead01b3ca7567ba1251500c81deb"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.5",
       "tag": "pcln-icons_v6.6.5",
       "date": "Mon, 21 Oct 2024 20:05:48 GMT",

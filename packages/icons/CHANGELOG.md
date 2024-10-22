@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Mon, 21 Oct 2024 20:05:48 GMT and should not be manually modified.
+This log was last generated on Tue, 22 Oct 2024 20:25:26 GMT and should not be manually modified.
+
+## 6.6.6
+Tue, 22 Oct 2024 20:25:26 GMT
+
+### Patches
+
+- update pause icon
 
 ## 6.6.5
 Mon, 21 Oct 2024 20:05:48 GMT
