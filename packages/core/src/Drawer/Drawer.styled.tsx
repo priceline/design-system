@@ -3,7 +3,6 @@ import { Flex } from '../Flex/Flex'
 import { theme } from '../theme'
 import { motion } from 'framer-motion'
 import React from 'react'
-import { Absolute } from '../Absolute/Absolute'
 import { getPaletteColor } from '../utils'
 import { Box } from '../Box/Box'
 import { IconButton } from '../IconButton/IconButton'
@@ -13,7 +12,7 @@ const Component = React.forwardRef((props, ref: React.MutableRefObject<HTMLDivEl
   <Box {...props} ref={ref} />
 ))
 
-const AnimatedAbsolute = motion(Component)
+const AnimatedComponent = motion(Component)
 
 const getBorderRadiusStyles = (placement, isFloating) => {
   const themeRadius = theme.borderRadii['2xl']
@@ -40,13 +39,16 @@ const positions: Record<PlacementOptions, string> = {
 }
 const getPlacementStyles = (placement) =>
   placement ? `margin-inline:auto; margin-block:auto; ${positions[placement]};` : ``
-export const DrawerWrapper = styled(Absolute)`
-  ${({ placement }) =>
+export const DrawerWrapper = styled(Box)`
+  ${({ placement, zIndex, position }) =>
     `
+    position: ${position || 'absolute'};
     ${getPlacementStyles(placement)}
+    ${getPlacementStyles(placement)}
+    z-index: ${zIndex || theme.zIndices.modal};
     `}
 `
-export const DrawerRoot = styled(AnimatedAbsolute)`
+export const DrawerRoot = styled(AnimatedComponent)`
   background-color: ${getPaletteColor('background.lightest')};
   ${({ theme, placement, isFloating }) =>
     `box-shadow: ${theme.shadows['overlay-md']};

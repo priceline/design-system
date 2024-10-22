@@ -8,19 +8,22 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { SpaceProps, LayoutProps } from 'styled-system'
 import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
 import { MotionVariants } from '../Animate/Animate'
+import { theme } from '../theme'
 
 export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
 export type DrawerProps = SpaceProps &
   LayoutProps & {
+    children?: string | React.ReactNode
     heading?: string | React.ReactNode
     isCollapsed?: boolean
     isFloating?: boolean
-    isOpen?: boolean
     isMobile?: boolean
+    isOpen?: boolean
+    isDraggable?: boolean
     onClose?: () => void
     onCollapse?: () => void
     placement?: PlacementOptions
-    children?: string | React.ReactNode
+    position?: string
   }
 
 const enterAnimation = {
@@ -51,6 +54,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   isFloating = true,
   isMobile = false,
   isOpen = false,
+  isDraggable = true,
   onClose,
   onCollapse,
   placement = 'right',
@@ -62,11 +66,12 @@ export const Drawer: React.FC<DrawerProps> = ({
       {isOpen && (
         <DrawerWrapper
           placement={isMobile ? 'bottom' : placement}
-          padding={isFloating ? '16px' : 0}
+          padding={isFloating ? 3 : 0}
           maxHeight={isMobile ? ['290px', '400px', '480px', 'calc(100vh - 64px)'] : props.height ?? '100%'}
           maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
           width={isMobile ? '100%' : props.width}
           height={!isCollapsed && props.height ? props.height : 'fit-content'}
+          {...props}
         >
           <DrawerRoot
             data-testid='drawer'
@@ -75,7 +80,7 @@ export const Drawer: React.FC<DrawerProps> = ({
             key='drawer'
             placement={isMobile ? 'bottom' : placement}
             {...enterAnimation[isMobile ? 'bottom' : placement]}
-            {...dragToDismissAnimation(onCollapse)}
+            {...(isDraggable ? dragToDismissAnimation(onCollapse) : {})}
             height='100%'
             width='100%'
             overflow='hidden'
@@ -92,7 +97,7 @@ export const Drawer: React.FC<DrawerProps> = ({
                       heading
                     )}
                     {onClose || onCollapse ? (
-                      <Flex flexDirection='row' ml='auto' style={{ columnGap: '8px' }}>
+                      <Flex flexDirection='row' ml='auto' style={{ columnGap: theme.space[2] }}>
                         {onCollapse && (
                           <motion.div
                             animate={{
@@ -139,12 +144,12 @@ export const Drawer: React.FC<DrawerProps> = ({
                           boxShadow,
                         }}
                       >
-                        <Box p={3} height='100%'>
+                        <Box py={2} px={3} height='100%'>
                           {children}
                         </Box>
                       </Box>
                     ) : (
-                      <Box p={3} height='100%'>
+                      <Box py={2} px={3} height='100%'>
                         {children}
                       </Box>
                     )}

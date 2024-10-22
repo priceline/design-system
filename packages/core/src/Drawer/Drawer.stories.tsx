@@ -142,7 +142,7 @@ export const Anchored = (args) => (
 )
 
 export const Mobile = (args) => (
-  <DrawerStory {...args} isMobile isFloating={false} placement='right'>
+  <DrawerStory {...args} isMobile isFloating={false} placement='right' width='100%'>
     Drawer Content
   </DrawerStory>
 )
