@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.21.0",
+      "tag": "pcln-design-system_v6.21.0",
+      "date": "Thu, 24 Oct 2024 15:51:39 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "update drawer props",
+            "author": "fareedahmad1 <90357103+fareedahmad1@users.noreply.github.com>",
+            "commit": "3eea47e9be837c7a3458a571d0983a8581b8347d"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.20.2",
       "tag": "pcln-design-system_v6.20.2",
       "date": "Thu, 19 Sep 2024 14:45:03 GMT",

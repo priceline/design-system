@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 19 Sep 2024 14:45:03 GMT and should not be manually modified.
+This log was last generated on Thu, 24 Oct 2024 15:51:39 GMT and should not be manually modified.
+
+## 6.21.0
+Thu, 24 Oct 2024 15:51:39 GMT
+
+### Minor changes
+
+- update drawer props
 
 ## 6.20.2
 Thu, 19 Sep 2024 14:45:03 GMT
