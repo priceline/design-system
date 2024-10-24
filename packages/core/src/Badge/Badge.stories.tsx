@@ -108,11 +108,25 @@ ColorSchemesTemplate.args = {}
 
 export const WithIcon = () => {
   return (
-    <Badge colorScheme='neutralDarkOnLight' size='captionMedium' textTransform='capitalize' mr={1}>
-      <Flex>
-        <Trophy mr={1} size={16} />
-        <Text>Badge</Text>
-      </Flex>
-    </Badge>
+    <>
+      <Badge colorScheme='neutralDarkOnLight' size='captionMedium' textTransform='capitalize' m={3}>
+        <Flex>
+          <Trophy mr={1} size={16} />
+          <Text>Badge</Text>
+        </Flex>
+      </Badge>
+      <Badge colorScheme='neutralDarkOnLight' size='captionSmall' textTransform='capitalize' m={3}>
+        <Flex>
+          <Trophy mr={1} size={16} />
+          <Text>Badge</Text>
+        </Flex>
+      </Badge>
+      <Badge colorScheme='successDarkOnLight' size='captionMedium' textTransform='capitalize' m={3}>
+        <Flex>
+          <Trophy mr={1} size={16} />
+          <Text>Badge</Text>
+        </Flex>
+      </Badge>
+    </>
   )
 }
