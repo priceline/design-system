@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "feat(addFlagIcons): add new flag icons",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
