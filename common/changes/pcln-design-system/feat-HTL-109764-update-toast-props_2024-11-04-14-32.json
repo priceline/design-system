@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "update Toast props",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
