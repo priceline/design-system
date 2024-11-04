@@ -52,7 +52,7 @@ export const Carousel = ({
   visibleSlides = 1,
   arrowsPosition = 'side',
   slideSpacing = 2,
-  onlySpaceSlideX = false,
+  slidePaddingY = slideSpacing,
   onSlideChange,
   sideButtonMargin = '-30px',
   sidePositionArrowButton,
@@ -181,11 +181,7 @@ export const Carousel = ({
                     onSlideChange={onSlideChange}
                     displayArrowsMobile={displayArrowsMobile}
                   >
-                    <Box
-                      p={!onlySpaceSlideX && slideSpacing}
-                      px={onlySpaceSlideX && slideSpacing}
-                      height='100%'
-                    >
+                    <Box p={slideSpacing} py={slidePaddingY} height='100%'>
                       {!layout && stretchSlideHeight
                         ? React.cloneElement(item, { style: { 'min-height': '100%' } })
                         : item}
@@ -289,8 +285,8 @@ Carousel.propTypes = {
   arrowsPosition: PropTypes.oneOf(['side', 'top', 'bottom', 'hide']),
   /** Padding around the slides */
   slideSpacing: PropTypes.number,
-  /** Only apply horizontal padding around the slides */
-  onlySpaceSlideX: PropTypes.bool,
+  /** Vertical padding for the slides */
+  slidePaddingY: PropTypes.number,
   /** Custom arrow button margin for side position/horizontal orientation */
   sideButtonMargin: PropTypes.string,
   /** Called each time the current slide changes, passed the new currentSlide (zero-indexed) */
