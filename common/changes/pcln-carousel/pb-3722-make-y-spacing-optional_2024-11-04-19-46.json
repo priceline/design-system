@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "add slidePaddingY prop for custom vertical padding on slides",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}
