@@ -181,7 +181,7 @@ export const WithCustomHeadingAndContent = (args) => (
   </DrawerStory>
 )
 
-export const WithCustomHeading = (args) => (
+export const WithNeighborhoodsHeadingNoDivider = (args) => (
   <DrawerStory
     {...args}
     placement='right'
@@ -191,6 +191,7 @@ export const WithCustomHeading = (args) => (
     width='100%'
     onClose={null}
     onCollapse={null}
+    showDivider={false}
   />
 )
 
