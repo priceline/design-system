@@ -14,7 +14,7 @@ export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
 export type DrawerProps = SpaceProps &
   LayoutProps & {
     children?: string | React.ReactNode
-    customHeader?: string | Function | React.ReactNode
+    customHeader?: string | React.ReactNode
     heading?: string | React.ReactNode
     isCollapsed?: boolean
     isFloating?: boolean
