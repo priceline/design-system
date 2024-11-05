@@ -142,7 +142,7 @@ export const Drawer: React.FC<DrawerProps> = ({
                         maxHeight={`calc(${props.height ?? '100vh'} - 100px)`}
                         overflow='scroll'
                         onScroll={onScrollHandler}
-                        className='drawer-divider'
+                        data-testid='drawer-divider'
                         style={
                           showDivider
                             ? {
