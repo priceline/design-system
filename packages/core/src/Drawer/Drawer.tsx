@@ -48,6 +48,13 @@ const dragToDismissAnimation = (onDragEnd) => {
   }
 }
 
+const getDividerStyle = ({ showDivider, boxShadow }) =>
+  showDivider
+    ? {
+        boxShadow,
+      }
+    : {}
+
 export const Drawer: React.FC<DrawerProps> = ({
   children,
   heading,
@@ -143,13 +150,7 @@ export const Drawer: React.FC<DrawerProps> = ({
                         overflow='scroll'
                         onScroll={onScrollHandler}
                         data-testid='drawer-divider'
-                        style={
-                          showDivider
-                            ? {
-                                boxShadow,
-                              }
-                            : {}
-                        }
+                        style={getDividerStyle({ showDivider, boxShadow })}
                       >
                         <Box py={2} px={3} height='100%'>
                           {children}
