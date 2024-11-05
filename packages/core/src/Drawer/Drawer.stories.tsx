@@ -1,11 +1,13 @@
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
-import { Sparkle } from 'pcln-icons'
+import { Sparkle, ArrowLeft } from 'pcln-icons'
 import { Drawer } from './Drawer'
 import React, { useState } from 'react'
 import { Text } from '../Text/Text'
 import { Stamp } from '../Stamp/Stamp'
 import { ChatMessageContainer } from '../ChatMessageContainer/ChatMessageContainer'
+import { DrawerHandle } from './Drawer.styled'
+import { Button } from '../Button/Button'
 
 function DrawerStory(props) {
   const [isOpen, setIsOpen] = useState(true)
@@ -38,6 +40,20 @@ const CustomPennyHeader = (
     <Stamp color='primary' mx={2}>
       Beta
     </Stamp>
+  </Flex>
+)
+
+const NeighborhoodsHeader = (
+  <Flex width='100%' alignItems='center'>
+    <Flex>
+      <ArrowLeft color='primary.base' />
+    </Flex>
+    <DrawerHandle />
+    <Flex ml='auto'>
+      <Button color='primary.base' size='small' variation='subtle'>
+        Search Hotels
+      </Button>
+    </Flex>
   </Flex>
 )
 
@@ -159,10 +175,23 @@ export const WithNoHeader = (args) => (
     {CustomPennyContent}
   </DrawerStory>
 )
-export const WithCustomHeaderAndContent = (args) => (
+export const WithCustomHeadingAndContent = (args) => (
   <DrawerStory {...args} placement='right' heading={CustomPennyHeader}>
     {CustomPennyContent}
   </DrawerStory>
+)
+
+export const WithCustomHeading = (args) => (
+  <DrawerStory
+    {...args}
+    placement='right'
+    heading={NeighborhoodsHeader}
+    isMobile
+    isFloating={false}
+    width='100%'
+    onClose={null}
+    onCollapse={null}
+  />
 )
 
 export const WithCloseButton = (args) => (

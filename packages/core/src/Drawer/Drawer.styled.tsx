@@ -7,6 +7,7 @@ import { getPaletteColor } from '../utils'
 import { Box } from '../Box/Box'
 import { IconButton } from '../IconButton/IconButton'
 import { PlacementOptions } from './Drawer'
+import { Absolute } from '../Absolute/Absolute'
 
 const Component = React.forwardRef((props, ref: React.MutableRefObject<HTMLDivElement>) => (
   <Box {...props} ref={ref} />
@@ -67,3 +68,43 @@ export const HeaderButton = styled(IconButton)`
     color: ${getPaletteColor('text.dark')};
   }
 `
+
+/**
+ * Data below is used for Drawer.stories.tsx
+ */
+export const Handle = styled.div`
+  /* Handle */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 48px;
+  height: 8px;
+
+  /* Background/Tint */
+  background: #d5dce4;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+`
+
+export const HandleContainer = styled(Absolute)`
+  /* Centers the handle wrt parent */
+  transform: translateX(-50%);
+  cursor: grab;
+  left: 50%;
+`
+
+export const DrawerHandle = () => (
+  <HandleContainer>
+    <Handle />
+  </HandleContainer>
+)
