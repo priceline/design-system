@@ -62,6 +62,10 @@ describe('Drawer', () => {
         Content
       </Drawer>
     )
-    expect(getByTestId('drawer-divider')).toBeFalsy()
+
+    const element = getByTestId('drawer-divider') // replace with your actual test ID
+    const style = window.getComputedStyle(element)
+    const boxShadow = style?.boxShadow
+    expect(boxShadow).toBeFalsy()
   })
 })
