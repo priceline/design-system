@@ -13,9 +13,9 @@ import { theme } from '../theme'
 export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
 export type DrawerProps = SpaceProps &
   LayoutProps & {
-    children?: string | React.ReactNode
+    children?: React.ReactNode
     customHeader?: React.ReactNode
-    heading?: string | React.ReactNode
+    heading?: React.ReactNode
     isCollapsed?: boolean
     isFloating?: boolean
     isMobile?: boolean
