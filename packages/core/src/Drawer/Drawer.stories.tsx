@@ -44,7 +44,7 @@ const CustomPennyHeader = (
 )
 
 const NeighborhoodsHeader = (
-  <Flex width='100%' padding={3} alignItems='center'>
+  <Flex width='100%' alignItems='center'>
     <Flex>
       <ArrowLeft color='primary.base' />
     </Flex>
@@ -181,14 +181,16 @@ export const WithCustomHeadingAndContent = (args) => (
   </DrawerStory>
 )
 
-export const WithUserSpecifiedCustomHeader = (args) => (
+export const WithCustomHeading = (args) => (
   <DrawerStory
     {...args}
     placement='right'
-    customHeader={NeighborhoodsHeader}
+    heading={NeighborhoodsHeader}
     isMobile
     isFloating={false}
     width='100%'
+    onClose={null}
+    onCollapse={null}
   />
 )
 

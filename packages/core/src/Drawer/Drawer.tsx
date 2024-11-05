@@ -14,8 +14,7 @@ export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
 export type DrawerProps = SpaceProps &
   LayoutProps & {
     children?: React.ReactNode
-    customHeader?: React.ReactNode
-    heading?: React.ReactNode
+    heading?: string | React.ReactNode
     isCollapsed?: boolean
     isFloating?: boolean
     isMobile?: boolean
@@ -50,7 +49,6 @@ const dragToDismissAnimation = (onDragEnd) => {
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
-  customHeader = null,
   heading,
   isCollapsed = false,
   isFloating = true,
@@ -88,9 +86,7 @@ export const Drawer: React.FC<DrawerProps> = ({
             overflow='hidden'
           >
             <Flex flexDirection='column'>
-              {!!customHeader && customHeader}
-
-              {!customHeader && (heading || onClose || onCollapse) && (
+              {(heading || onClose || onCollapse) && (
                 <Flex flexDirection='column'>
                   <Flex flexDirection='row' p={3}>
                     {typeof heading === 'string' ? (
