@@ -69,6 +69,9 @@ export const HeaderButton = styled(IconButton)`
   }
 `
 
+/**
+ * Data below is used for Drawer.stories.tsx
+ */
 export const Handle = styled.div`
   /* Handle */
 
