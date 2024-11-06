@@ -2,6 +2,32 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.22.0",
+      "tag": "pcln-design-system_v6.22.0",
+      "date": "Wed, 06 Nov 2024 20:00:04 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Adds story to Badge about Icon styling",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "d0c555401f8dc27109d43a541ae588181a338459"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Add divider styling logic",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "7b5f41b5837a6e49dad5947ffa1bd570effa448e"
+          },
+          {
+            "comment": "Drawer component custom header onboarding",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "d0c555401f8dc27109d43a541ae588181a338459"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.21.0",
       "tag": "pcln-design-system_v6.21.0",
       "date": "Thu, 24 Oct 2024 15:51:39 GMT",

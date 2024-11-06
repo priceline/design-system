@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Thu, 24 Oct 2024 15:51:39 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Nov 2024 20:00:04 GMT and should not be manually modified.
+
+## 6.22.0
+Wed, 06 Nov 2024 20:00:04 GMT
+
+### Minor changes
+
+- Add divider styling logic
+- Drawer component custom header onboarding
 
 ## 6.21.0
 Thu, 24 Oct 2024 15:51:39 GMT
