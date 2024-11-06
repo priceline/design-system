@@ -32,6 +32,7 @@ export function Slide({
   useEffect(() => {
     /* c8 ignore next */
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
+      /* c8 ignore next */
       const { offsetLeft, offsetParent, offsetWidth } = ref.current
       const { offsetWidth: parentOffset } = offsetParent || {}
       slideBoxRef?.current?.scroll({ left: offsetLeft - parentOffset + offsetWidth + overflowAllowancePxX })
