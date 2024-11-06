@@ -30,7 +30,7 @@ export function Slide({
   const ref = useRef()
 
   useEffect(() => {
-    /* istanbul ignore next */
+    /* c8 ignore next */
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
       const { offsetLeft, offsetParent, offsetWidth } = ref.current
       const { offsetWidth: parentOffset } = offsetParent || {}
