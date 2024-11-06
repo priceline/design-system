@@ -48,4 +48,24 @@ describe('Drawer', () => {
     )
     expect(getByText('Custom Heading')).toBeTruthy()
   })
+
+  test('renders Drawer with no divider', () => {
+    const { getByTestId } = render(
+      <Drawer
+        isOpen={true}
+        placement='right'
+        onClose={jest.fn}
+        onCollapse={jest.fn}
+        heading={<div>Custom Heading</div>}
+        showDivider={false} // Default true
+      >
+        Content
+      </Drawer>
+    )
+
+    const element = getByTestId('drawer-divider')
+    const style = window.getComputedStyle(element)
+    const boxShadow = style?.boxShadow
+    expect(boxShadow).toBeFalsy()
+  })
 })

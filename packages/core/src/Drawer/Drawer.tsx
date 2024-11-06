@@ -20,6 +20,7 @@ export type DrawerProps = SpaceProps &
     isMobile?: boolean
     isOpen?: boolean
     isDraggable?: boolean
+    showDivider?: boolean
     onClose?: () => void
     onCollapse?: () => void
     placement?: PlacementOptions
@@ -47,6 +48,13 @@ const dragToDismissAnimation = (onDragEnd) => {
   }
 }
 
+const getDividerStyle = ({ showDivider, boxShadow }) =>
+  showDivider
+    ? {
+        boxShadow,
+      }
+    : {}
+
 export const Drawer: React.FC<DrawerProps> = ({
   children,
   heading,
@@ -55,6 +63,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   isMobile = false,
   isOpen = false,
   isDraggable = true,
+  showDivider = true,
   onClose,
   onCollapse,
   placement = 'right',
@@ -140,9 +149,8 @@ export const Drawer: React.FC<DrawerProps> = ({
                         maxHeight={`calc(${props.height ?? '100vh'} - 100px)`}
                         overflow='scroll'
                         onScroll={onScrollHandler}
-                        style={{
-                          boxShadow,
-                        }}
+                        data-testid='drawer-divider'
+                        style={getDividerStyle({ showDivider, boxShadow })}
                       >
                         <Box py={2} px={3} height='100%'>
                           {children}
