@@ -79,8 +79,8 @@ export const Drawer: React.FC<DrawerProps> = ({
           maxHeight={isMobile ? ['290px', '400px', '480px', 'calc(100vh - 64px)'] : props.height ?? '100%'}
           maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
           width={isMobile ? '100%' : props.width}
-          height={!isCollapsed && props.height ? props.height : 'fit-content'}
           {...props}
+          height={!isCollapsed && props.height ? props.height : 'fit-content'}
         >
           <DrawerRoot
             data-testid='drawer'
