@@ -21,9 +21,9 @@ function DrawerStory(props) {
         heading='Header'
         isOpen={isOpen}
         isCollapsed={isCollapsed}
+        {...props}
         onClose={includeCloseButton ? () => setIsOpen(false) : undefined}
         onCollapse={includeCollapseButton ? () => setIsCollapsed((isCollapsed) => !isCollapsed) : undefined}
-        {...props}
       >
         {props.children}
       </Drawer>
