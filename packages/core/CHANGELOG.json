@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.23.0",
+      "tag": "pcln-design-system_v6.23.0",
+      "date": "Fri, 08 Nov 2024 18:14:17 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Fix storybook buttons",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "3deed579b101336c369fcf27e58a9f10d875916d"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.22.0",
       "tag": "pcln-design-system_v6.22.0",
       "date": "Wed, 06 Nov 2024 20:00:04 GMT",

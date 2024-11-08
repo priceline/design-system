@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 06 Nov 2024 20:00:04 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Nov 2024 18:14:17 GMT and should not be manually modified.
+
+## 6.23.0
+Fri, 08 Nov 2024 18:14:17 GMT
+
+### Minor changes
+
+- Fix storybook buttons
 
 ## 6.22.0
 Wed, 06 Nov 2024 20:00:04 GMT
