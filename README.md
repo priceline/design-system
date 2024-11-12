@@ -91,6 +91,7 @@ We hope to accomplish these goals by:
     <td align="center"><a href="https://github.com/zerodom30"><img src="https://avatars0.githubusercontent.com/u/3496298?v=4" width="100px;" alt="Dom G."/><br /><sub><b>Dom G.</b></sub></a><br /><a href="https://github.com/Priceline/design-system/commits?author=zerodom30" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/unixchad"><img src="https://avatars1.githubusercontent.com/u/3157593?v=4" width="100px;" alt="Kyle Pollock"/><br /><sub><b>Kyle Pollock</b></sub></a><br /><a href="https://github.com/Priceline/design-system/commits?author=unixchad" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/James300"><img src="https://avatars0.githubusercontent.com/u/9325039?v=4" width="100px;" alt="James300"/><br /><sub><b>James300</b></sub></a><br /><a href="https://github.com/Priceline/design-system/commits?author=James300" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/CJJM"><img src="https://avatars.githubusercontent.com/u/5998107?v=4" width="100px;" alt="Connor Maloney"/><br /><sub><b>Connor Maloney</b></sub></a><br /><a href="https://github.com/Priceline/design-system/commits?author=CJJM" title="Code">💻</a></td>
   </tr>
 </table>
 

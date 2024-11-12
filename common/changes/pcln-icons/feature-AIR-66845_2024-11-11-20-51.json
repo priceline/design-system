@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "added Snack icon",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
