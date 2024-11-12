@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.6.7",
+      "tag": "pcln-icons_v6.6.7",
+      "date": "Tue, 12 Nov 2024 17:17:10 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add phone icons",
+            "author": "joingram-priceline <99275805+joingram-priceline@users.noreply.github.com>",
+            "commit": "7303957e1067de869056d66affce3a67e636c998"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.6",
       "tag": "pcln-icons_v6.6.6",
       "date": "Tue, 22 Oct 2024 20:25:26 GMT",

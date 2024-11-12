@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 22 Oct 2024 20:25:26 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Nov 2024 17:17:10 GMT and should not be manually modified.
+
+## 6.6.7
+Tue, 12 Nov 2024 17:17:10 GMT
+
+### Patches
+
+- add phone icons
 
 ## 6.6.6
 Tue, 22 Oct 2024 20:25:26 GMT
