@@ -15,6 +15,10 @@ const NoWrapText = styled(Text)`
   white-space: nowrap;
 `
 
+const ClickableIconButton = styled(IconButton)`
+  z-index: 1;
+`
+
 const maxProgressBarLength = 4
 
 /**
@@ -96,7 +100,7 @@ export function PasswordInput({
           autoComplete={autoComplete}
         />
         {showCheckIcon && <Check color='secondary' data-testid='check-mark-icon' />}
-        <IconButton
+        <ClickableIconButton
           title='visibility-button'
           icon={<VisibilityIcon color='text.light' />}
           onClick={changeVisibility}
