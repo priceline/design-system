@@ -212,3 +212,9 @@ export const WithContentOverflow = (args) => (
     {CustomPennyContent}
   </DrawerStory>
 )
+
+export const WithNoAnimation = (args) => (
+  <DrawerStory {...args} height='50vh' placement='right' isAnimation={false}>
+    {CustomPennyContent}
+  </DrawerStory>
+)

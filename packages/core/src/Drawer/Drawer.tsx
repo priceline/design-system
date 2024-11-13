@@ -20,6 +20,7 @@ export type DrawerProps = SpaceProps &
     isMobile?: boolean
     isOpen?: boolean
     isDraggable?: boolean
+    isAnimation?: boolean
     showDivider?: boolean
     onClose?: () => void
     onCollapse?: () => void
@@ -63,6 +64,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   isMobile = false,
   isOpen = false,
   isDraggable = true,
+  isAnimation = true,
   showDivider = true,
   onClose,
   onCollapse,
@@ -88,7 +90,7 @@ export const Drawer: React.FC<DrawerProps> = ({
             isFloating={isFloating}
             key='drawer'
             placement={isMobile ? 'bottom' : placement}
-            {...enterAnimation[isMobile ? 'bottom' : placement]}
+            {...(isAnimation && enterAnimation[isMobile ? 'bottom' : placement])}
             {...(isDraggable ? dragToDismissAnimation(onCollapse) : {})}
             height='100%'
             width='100%'
