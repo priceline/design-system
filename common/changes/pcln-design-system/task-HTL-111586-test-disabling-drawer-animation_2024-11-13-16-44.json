@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Add flag to enable/disable animation",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
