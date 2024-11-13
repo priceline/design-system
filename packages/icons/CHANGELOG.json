@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.7.0",
+      "tag": "pcln-icons_v6.7.0",
+      "date": "Wed, 13 Nov 2024 18:30:13 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "added Snack icon",
+            "author": "Connor Maloney <CJJM@users.noreply.github.com>",
+            "commit": "becbfc7d2663761b661f5d8990c5dcb1aefda921"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.6.7",
       "tag": "pcln-icons_v6.6.7",
       "date": "Tue, 12 Nov 2024 17:17:10 GMT",
