@@ -8,6 +8,7 @@ import { Stamp } from '../Stamp/Stamp'
 import { ChatMessageContainer } from '../ChatMessageContainer/ChatMessageContainer'
 import { DrawerHandle } from './Drawer.styled'
 import { Button } from '../Button/Button'
+import { TestDrawer } from './TestDrawer'
 
 function DrawerStory(props) {
   const [isOpen, setIsOpen] = useState(true)
@@ -21,9 +22,9 @@ function DrawerStory(props) {
         heading='Header'
         isOpen={isOpen}
         isCollapsed={isCollapsed}
+        {...props}
         onClose={includeCloseButton ? () => setIsOpen(false) : undefined}
         onCollapse={includeCollapseButton ? () => setIsCollapsed((isCollapsed) => !isCollapsed) : undefined}
-        {...props}
       >
         {props.children}
       </Drawer>
@@ -212,3 +213,24 @@ export const WithContentOverflow = (args) => (
     {CustomPennyContent}
   </DrawerStory>
 )
+
+export const NewDrawer = {
+  render: (args) => {
+    const [open, setOpen] = React.useState(false)
+
+    return (
+      <TestDrawer.Root open={open} onOpenChange={setOpen}>
+        <TestDrawer.Trigger>Open Sesame</TestDrawer.Trigger>
+        <TestDrawer.Content
+          className='content'
+          origin='bottom' // Where the drawer opens from
+          radius={20} // Border radius of the drawer
+          size={450} // Depth of the drawer
+          visible={open} // Required for animation
+        >
+          {CustomPennyContent}
+        </TestDrawer.Content>
+      </TestDrawer.Root>
+    )
+  },
+}
