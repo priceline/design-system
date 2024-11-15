@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "Add icon for Park, Mountain, Activity",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
