@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 13 Nov 2024 18:30:13 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Nov 2024 20:57:31 GMT and should not be manually modified.
+
+## 6.8.0
+Fri, 15 Nov 2024 20:57:31 GMT
+
+### Minor changes
+
+- Add icon for Park, Mountain, Activity
 
 ## 6.7.0
 Wed, 13 Nov 2024 18:30:13 GMT

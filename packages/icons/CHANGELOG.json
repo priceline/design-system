@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.8.0",
+      "tag": "pcln-icons_v6.8.0",
+      "date": "Fri, 15 Nov 2024 20:57:31 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add icon for Park, Mountain, Activity",
+            "author": "Chi Jin <jinchi2013@users.noreply.github.com>",
+            "commit": "0f6138654e301cd256acb10b522fc65e860a2c26"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.7.0",
       "tag": "pcln-icons_v6.7.0",
       "date": "Wed, 13 Nov 2024 18:30:13 GMT",
