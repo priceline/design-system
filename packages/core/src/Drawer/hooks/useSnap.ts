@@ -14,8 +14,8 @@ export function useSnap(snapHeights) {
   const [snapPosition, setSnapPosition] = useState<string>(TOP)
 
   const handleSnap = (...args) => {
-    let info = args?.[1]
-    let scrollOffset = info.offset.y
+    const info = args?.[1]
+    const scrollOffset = info.offset.y
 
     const SCROLL_DOWN = scrollOffset > SCROLL_THRESHOLD
     const SCROLL_UP = scrollOffset < -SCROLL_THRESHOLD
