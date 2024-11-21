@@ -2,10 +2,11 @@ import { useState } from 'react'
 
 /**
  * Custom hook that returns:
- * 1. The snap position of the drawer container
- * 2. The snap handler which dictates the snapping position depending on current position
  *
- * Designed to support 3 snap points so far.
+ * 1. Snap position of the drawer container
+ * 2. Snap drag handler which determins the future snapping position based on current
+ *
+ * Designed to support 3 snap points.
  */
 export function useSnap(snapHeights) {
   const [TOP, MIDDLE, BOTTOM] = snapHeights || []

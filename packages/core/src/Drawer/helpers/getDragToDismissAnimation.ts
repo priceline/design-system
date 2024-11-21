@@ -1,5 +1,5 @@
 /**
- * Handles header collapse animation behavior on side button click
+ * Handles header collapse/expand behavior on button click
  */
 
 export const dragToDismissAnimation = (onDragEnd) => {

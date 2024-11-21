@@ -26,16 +26,22 @@ export type DrawerProps = SpaceProps &
     onClose?: () => void
     onCollapse?: () => void
     placement?: PlacementOptions
+    position?: string
 
-    // neighborhood-related props
-    snapHeights?: [string, string, string] // top, middle, bottom - 3 snap points required
+    /**
+     * Neighborhoods-related props
+     */
+    // top, middle, bottom - 3 snap points required
+    snapHeights?: [string, string, string]
+
+    // When snap enabled, lock-in drawer dimensions
     snapDimensions?: {
-      // When snap enabled, lock-in drawer dimensions
       width?: string
       height?: string
     }
+
+    // Disable enter animation to eliminate side effects on viewport change
     disableEnterAnimation?: false
-    position?: string
   }
 
 export const Drawer: React.FC<DrawerProps> = ({
@@ -65,7 +71,7 @@ export const Drawer: React.FC<DrawerProps> = ({
     <SnapContainer
       className='box'
       style={
-        // Note: Somehow declaring a variable for the style triggers type errors related to motion.div intrinsic types
+        // Note: Declaring a variable for the style triggers type errors related to motion.div intrinsic types
         snapHeights && snapDimensions
           ? {
               position: 'absolute',

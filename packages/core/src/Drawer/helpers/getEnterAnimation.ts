@@ -1,5 +1,8 @@
 import { MotionVariants } from '../../Animate/Animate'
 
+/**
+ * Handles enter animation based on drawer placement
+ */
 const enterAnimation = {
   top: { ...MotionVariants.slideInTop },
   bottom: { ...MotionVariants.slideInBottom },
