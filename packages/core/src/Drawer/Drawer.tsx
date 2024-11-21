@@ -27,8 +27,8 @@ export type DrawerProps = SpaceProps &
     onCollapse?: () => void
     placement?: PlacementOptions
 
-    // neighborhood-related props:
-    snapHeights?: Array<string>
+    // neighborhood-related props
+    snapHeights?: [string, string, string] // top, middle, bottom - 3 snap points required
     snapDimensions?: {
       // When snap enabled, lock-in drawer dimensions
       width?: string
