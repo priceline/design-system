@@ -1,13 +1,13 @@
 import { getEnterAnimation } from './getEnterAnimation'
 
 describe('Entrance animation unit test', () => {
-  test('Return no animation if disabled', () => {
-    let res = getEnterAnimation({ disableEnterAnimation: true, isMobile: true, placement: 'top' })
+  test('Hide animation if ebaled', () => {
+    const res = getEnterAnimation({ disableEnterAnimation: true, isMobile: true, placement: 'top' })
     expect(res).toBeFalsy()
   })
 
-  test('Return animation if enabled', () => {
-    let res = getEnterAnimation({ disableEnterAnimation: true, isMobile: true, placement: 'top' })
+  test('Return animation if disabled', () => {
+    const res = getEnterAnimation({ disableEnterAnimation: false, isMobile: true, placement: 'top' })
     expect(res).toBeTruthy()
   })
 })

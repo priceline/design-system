@@ -6,7 +6,7 @@ describe('Drawer divider toggle helper unit test', () => {
       'box-shadow': '10px 10px',
     }
     const res = getDividerStyle({ showDivider: true, boxShadow })
-    expect(res).toBe(boxShadow)
+    expect(res).toEqual({ boxShadow })
   })
 
   test('If !showDivider, return {}', () => {
@@ -14,6 +14,6 @@ describe('Drawer divider toggle helper unit test', () => {
       'box-shadow': '10px 10px',
     }
     const res = getDividerStyle({ showDivider: false, boxShadow })
-    expect(res).toBe({})
+    expect(res).toEqual({})
   })
 })

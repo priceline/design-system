@@ -1,8 +1,9 @@
 import { useSnap } from './useSnap'
+import { renderHook } from '@testing-library/react'
 
 describe('Drawer snap hook unit test', () => {
   test('Snap position initialized correctly', () => {
-    const { snapPosition } = useSnap(['0%', '20%', '30%'])
-    expect(snapPosition).toEqual('0%')
+    const { result } = renderHook(() => useSnap(['0%', '20%', '30%']))
+    expect(result.current.snapPosition).toEqual('0%')
   })
 })

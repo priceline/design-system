@@ -11,7 +11,7 @@ import { useState } from 'react'
 export function useSnap(snapHeights) {
   const [TOP, MIDDLE, BOTTOM] = snapHeights || []
   const SCROLL_THRESHOLD = 100
-  const [snapPosition, setSnapPosition] = useState<string>(TOP)
+  const [snapPosition, setSnapPosition] = useState(TOP)
 
   const handleSnap = (...args) => {
     const info = args?.[1]
