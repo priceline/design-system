@@ -69,7 +69,6 @@ export const Drawer: React.FC<DrawerProps> = ({
 
   return (
     <SnapContainer
-      className='box'
       style={
         // Note: Declaring a variable for the style triggers type errors related to motion.div intrinsic types
         snapHeights && snapDimensions

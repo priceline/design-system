@@ -236,7 +236,7 @@ function DrawerScrollable(props) {
 
 export const DrawerDragToSnap = () => (
   <DrawerScrollable
-    snapHeights={['20%', '-50%', '-67%']}
+    snapHeights={['0%', '-30%', '-70%']}
     snapDimensions={{ width: '100%', height: '800px' }}
     disableEnterAnimation
     isMobile
