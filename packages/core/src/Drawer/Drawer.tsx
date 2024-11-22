@@ -85,6 +85,7 @@ export const Drawer: React.FC<DrawerProps> = ({
       drag='y'
       dragConstraints={{ top: 0, bottom: 0 }}
       onDragEnd={handleSnap}
+      data-testid='snap-container'
     >
       <AnimatePresence>
         {isOpen && (
