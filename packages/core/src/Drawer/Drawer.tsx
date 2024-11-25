@@ -7,10 +7,12 @@ import { ChevronDown, Close } from 'pcln-icons'
 import { AnimatePresence, motion } from 'framer-motion'
 import { SpaceProps, LayoutProps } from 'styled-system'
 import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
-import { MotionVariants } from '../Animate/Animate'
 import { theme } from '../theme'
+import { useSnap } from './hooks/useSnap'
+import { getDragToDismissAnimation, getDividerStyle, getEnterAnimation } from './helpers'
 
 export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
+
 export type DrawerProps = SpaceProps &
   LayoutProps & {
     children?: React.ReactNode
@@ -25,35 +27,19 @@ export type DrawerProps = SpaceProps &
     onCollapse?: () => void
     placement?: PlacementOptions
     position?: string
+
+    // top, middle, bottom - 3 snap points required
+    snapHeights?: [string, string, string]
+
+    // When snap enabled, lock-in drawer dimensions
+    snapDimensions?: {
+      width?: string
+      height?: string
+    }
+
+    // Disable enter animation to eliminate side effects on viewport change
+    disableEnterAnimation?: false
   }
-
-const enterAnimation = {
-  top: { ...MotionVariants.slideInTop },
-  bottom: { ...MotionVariants.slideInBottom },
-  right: { ...MotionVariants.slideInRight },
-  left: { ...MotionVariants.slideInLeft },
-}
-
-const dragToDismissAnimation = (onDragEnd) => {
-  return {
-    drag: 'y',
-    dragConstraints: { top: 0, bottom: 0 },
-    dragElastic: { top: 0, bottom: 0.3 },
-    transition: { duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] },
-    onDragEnd: (event, info) => {
-      if (info.offset.y > 200) {
-        onDragEnd()
-      }
-    },
-  }
-}
-
-const getDividerStyle = ({ showDivider, boxShadow }) =>
-  showDivider
-    ? {
-        boxShadow,
-      }
-    : {}
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
@@ -67,108 +53,133 @@ export const Drawer: React.FC<DrawerProps> = ({
   onClose,
   onCollapse,
   placement = 'right',
+  snapHeights,
+  snapDimensions,
+  disableEnterAnimation,
   ...props
 }) => {
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
+  const { snapPosition, handleSnap } = useSnap(snapHeights)
+  const SnapContainer = snapHeights ? motion.div : React.Fragment
+
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <DrawerWrapper
-          placement={isMobile ? 'bottom' : placement}
-          padding={isFloating ? 3 : 0}
-          maxHeight={isMobile ? ['290px', '400px', '480px', 'calc(100vh - 64px)'] : props.height ?? '100%'}
-          maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
-          width={isMobile ? '100%' : props.width}
-          {...props}
-          height={!isCollapsed && props.height ? props.height : 'fit-content'}
-        >
-          <DrawerRoot
-            data-testid='drawer'
-            isCollapsed={isCollapsed}
-            isFloating={isFloating}
-            key='drawer'
+    <SnapContainer
+      style={
+        // Note: Declaring a variable for the style triggers type errors related to motion.div intrinsic types
+        snapHeights && snapDimensions
+          ? {
+              position: 'absolute',
+              bottom: snapPosition,
+              width: snapDimensions.width,
+              height: snapDimensions.height,
+            }
+          : {}
+      }
+      transition={{ type: 'spring', bounce: 0 }}
+      drag='y'
+      dragConstraints={{ top: 0, bottom: 0 }}
+      onDragEnd={handleSnap}
+      data-testid='snap-container'
+    >
+      <AnimatePresence>
+        {isOpen && (
+          <DrawerWrapper
             placement={isMobile ? 'bottom' : placement}
-            {...enterAnimation[isMobile ? 'bottom' : placement]}
-            {...(isDraggable ? dragToDismissAnimation(onCollapse) : {})}
-            height='100%'
-            width='100%'
-            overflow='hidden'
+            padding={isFloating ? 3 : 0}
+            maxHeight={isMobile ? ['290px', '400px', '480px', 'calc(100vh - 64px)'] : props.height ?? '100%'}
+            maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
+            width={isMobile ? '100%' : props.width}
+            {...props}
+            height={!isCollapsed && props.height ? props.height : 'fit-content'}
           >
-            <Flex flexDirection='column'>
-              {(heading || onClose || onCollapse) && (
-                <Flex flexDirection='column'>
-                  <Flex flexDirection='row' p={3}>
-                    {typeof heading === 'string' ? (
-                      <Text width='100%' textStyle='heading4'>
-                        {heading}
-                      </Text>
-                    ) : (
-                      heading
-                    )}
-                    {onClose || onCollapse ? (
-                      <Flex flexDirection='row' ml='auto' style={{ columnGap: theme.space[2] }}>
-                        {onCollapse && (
-                          <motion.div
-                            animate={{
-                              rotate: isCollapsed ? 180 : 0,
-                              transition: { duration: 0.25 },
-                            }}
-                          >
+            <DrawerRoot
+              data-testid='drawer'
+              isCollapsed={isCollapsed}
+              isFloating={isFloating}
+              key='drawer'
+              placement={isMobile ? 'bottom' : placement}
+              {...getEnterAnimation({ disableEnterAnimation, isMobile, placement })}
+              {...getDragToDismissAnimation({ isDraggable, snapHeights, onCollapse })}
+              height='100%'
+              width='100%'
+              overflow='hidden'
+            >
+              <Flex flexDirection='column'>
+                {(heading || onClose || onCollapse) && (
+                  <Flex flexDirection='column'>
+                    <Flex flexDirection='row' p={3}>
+                      {typeof heading === 'string' ? (
+                        <Text width='100%' textStyle='heading4'>
+                          {heading}
+                        </Text>
+                      ) : (
+                        heading
+                      )}
+                      {onClose || onCollapse ? (
+                        <Flex flexDirection='row' ml='auto' style={{ columnGap: theme.space[2] }}>
+                          {onCollapse && (
+                            <motion.div
+                              animate={{
+                                rotate: isCollapsed ? 180 : 0,
+                                transition: { duration: 0.25 },
+                              }}
+                            >
+                              <HeaderButton
+                                data-testid='drawerCollapse'
+                                onClick={onCollapse}
+                                icon={<ChevronDown title='Dismiss' />}
+                              />
+                            </motion.div>
+                          )}
+                          {onClose && (
                             <HeaderButton
-                              data-testid='drawerCollapse'
-                              onClick={onCollapse}
-                              icon={<ChevronDown title='Dismiss' />}
+                              data-testid='drawerClose'
+                              onClick={onClose}
+                              icon={<Close title='Close' />}
                             />
-                          </motion.div>
-                        )}
-                        {onClose && (
-                          <HeaderButton
-                            data-testid='drawerClose'
-                            onClick={onClose}
-                            icon={<Close title='Close' />}
-                          />
-                        )}
-                      </Flex>
-                    ) : null}
+                          )}
+                        </Flex>
+                      ) : null}
+                    </Flex>
                   </Flex>
-                </Flex>
-              )}
-              <AnimatePresence initial={false}>
-                {!isCollapsed && (
-                  <motion.div
-                    key='content'
-                    {...{
-                      exit: { scaleY: 0, height: 0 },
-                      animate: { scaleY: 1, height: 'auto' },
-                      initial: { scaleY: 1, height: 'auto' },
-                    }}
-                  >
-                    {heading ? (
-                      <Box
-                        height='100%'
-                        maxHeight={`calc(${props.height ?? '100vh'} - 100px)`}
-                        overflow='scroll'
-                        onScroll={onScrollHandler}
-                        data-testid='drawer-divider'
-                        style={getDividerStyle({ showDivider, boxShadow })}
-                      >
+                )}
+                <AnimatePresence initial={false}>
+                  {!isCollapsed && (
+                    <motion.div
+                      key='content'
+                      {...{
+                        exit: { scaleY: 0, height: 0 },
+                        animate: { scaleY: 1, height: 'auto' },
+                        initial: { scaleY: 1, height: 'auto' },
+                      }}
+                    >
+                      {heading ? (
+                        <Box
+                          height='100%'
+                          maxHeight={`calc(${props.height ?? '100vh'} - 100px)`}
+                          overflow='scroll'
+                          onScroll={onScrollHandler}
+                          data-testid='drawer-divider'
+                          style={getDividerStyle({ showDivider, boxShadow })}
+                        >
+                          <Box py={2} px={3} height='100%'>
+                            {children}
+                          </Box>
+                        </Box>
+                      ) : (
                         <Box py={2} px={3} height='100%'>
                           {children}
                         </Box>
-                      </Box>
-                    ) : (
-                      <Box py={2} px={3} height='100%'>
-                        {children}
-                      </Box>
-                    )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </Flex>
-          </DrawerRoot>
-        </DrawerWrapper>
-      )}
-    </AnimatePresence>
+                      )}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </Flex>
+            </DrawerRoot>
+          </DrawerWrapper>
+        )}
+      </AnimatePresence>
+    </SnapContainer>
   )
 }
 

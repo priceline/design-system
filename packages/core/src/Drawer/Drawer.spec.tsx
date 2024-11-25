@@ -68,4 +68,26 @@ describe('Drawer', () => {
     const boxShadow = style?.boxShadow
     expect(boxShadow).toBeFalsy()
   })
+
+  test('Renders snappable container when snapHeights and snapDimensions are present', () => {
+    const { getByTestId } = render(
+      <Drawer
+        isOpen={true}
+        placement='right'
+        onClose={jest.fn}
+        onCollapse={jest.fn}
+        snapHeights={['0%', '20%', '50%']}
+        snapDimensions={{ width: '100%', height: '800px' }}
+        heading={<div>Custom Heading</div>}
+        showDivider={false} // Default true
+      >
+        Content
+      </Drawer>
+    )
+
+    const element = getByTestId('snap-container')
+    const style = window.getComputedStyle(element)
+    const boxShadow = style?.boxShadow
+    expect(boxShadow).toBeFalsy()
+  })
 })

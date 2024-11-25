@@ -8,6 +8,7 @@ import { Stamp } from '../Stamp/Stamp'
 import { ChatMessageContainer } from '../ChatMessageContainer/ChatMessageContainer'
 import { DrawerHandle } from './Drawer.styled'
 import { Button } from '../Button/Button'
+import styled from 'styled-components'
 
 function DrawerStory(props) {
   const [isOpen, setIsOpen] = useState(true)
@@ -211,4 +212,37 @@ export const WithContentOverflow = (args) => (
   <DrawerStory {...args} height='50vh' placement='right'>
     {CustomPennyContent}
   </DrawerStory>
+)
+
+/**
+ * Use case for Snap behavior
+ */
+const StyledContainer = styled(Box)`
+  position: relative;
+`
+
+function DrawerScrollable(props) {
+  return (
+    <StyledContainer
+      height='100vh'
+      style={{ backgroundColor: 'grey', height: '100vh', position: 'relative' }}
+    >
+      <Drawer heading='Header' isOpen={true} {...props}>
+        {props.children}
+      </Drawer>
+    </StyledContainer>
+  )
+}
+
+export const DrawerDragToSnap = () => (
+  <DrawerScrollable
+    snapHeights={['0%', '-30%', '-70%']}
+    snapDimensions={{ width: '100%', height: '800px' }}
+    disableEnterAnimation
+    isMobile
+    isFloating={false}
+    heading={NeighborhoodsHeader}
+  >
+    {CustomPennyContent}
+  </DrawerScrollable>
 )
