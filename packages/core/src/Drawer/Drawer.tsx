@@ -54,7 +54,6 @@ export const Drawer: React.FC<DrawerProps> = ({
   onCollapse,
   placement = 'right',
 
-  // neighborhood-related props:
   snapHeights,
   snapDimensions,
   disableEnterAnimation,
