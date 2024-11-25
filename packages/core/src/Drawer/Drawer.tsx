@@ -53,7 +53,6 @@ export const Drawer: React.FC<DrawerProps> = ({
   onClose,
   onCollapse,
   placement = 'right',
-
   snapHeights,
   snapDimensions,
   disableEnterAnimation,
