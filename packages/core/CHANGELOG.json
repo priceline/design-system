@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.24.0",
+      "tag": "pcln-design-system_v6.24.0",
+      "date": "Mon, 25 Nov 2024 19:58:47 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add snap and prop to disable enter animation",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "f7eb2b367e46d2d8fbb8ec9edbd242cbedd17e10"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.23.0",
       "tag": "pcln-design-system_v6.23.0",
       "date": "Fri, 08 Nov 2024 18:14:17 GMT",

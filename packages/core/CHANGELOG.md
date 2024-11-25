@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 08 Nov 2024 18:14:17 GMT and should not be manually modified.
+This log was last generated on Mon, 25 Nov 2024 19:58:47 GMT and should not be manually modified.
+
+## 6.24.0
+Mon, 25 Nov 2024 19:58:47 GMT
+
+### Minor changes
+
+- Add snap and prop to disable enter animation
 
 ## 6.23.0
 Fri, 08 Nov 2024 18:14:17 GMT
