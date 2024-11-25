@@ -28,9 +28,6 @@ export type DrawerProps = SpaceProps &
     placement?: PlacementOptions
     position?: string
 
-    /**
-     * Neighborhoods-related props
-     */
     // top, middle, bottom - 3 snap points required
     snapHeights?: [string, string, string]
 
