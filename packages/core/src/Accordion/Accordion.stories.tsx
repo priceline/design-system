@@ -141,6 +141,10 @@ export const ChevronClose = {
   render: (args) => <Accordion {...args} isAnimatedChevron items={items} />,
 }
 
+export const UseTextToggle = {
+  render: (args) => <Accordion {...args} items={items} useTextToggle itemsState={['item-1', 'item-2']} />,
+}
+
 export const TrackStateMultiple = {
   render: (args) => {
     const [itemsState, setItemsState] = useState(['item-1', 'item-3'])

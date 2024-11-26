@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "adding new prop useTextToggle to accordion component",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

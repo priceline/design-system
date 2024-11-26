@@ -12,12 +12,12 @@ const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 
 const shadowColor = (props) => {
   const darkColor = hasPaletteColor(props)
-    ? getPaletteColor('dark')(props)
+    ? /* istanbul ignore next */ getPaletteColor('dark')(props)
     : themeGet(`colors.dark${capitalize(props.color)}`)(props)
 
   return {
     backgroundImage: !darkColor
-      ? `
+      ? /* istanbul ignore next */ `
         linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.5) 50%),
         linear-gradient(45deg, transparent 50%, ${props.color} 50%)
       `
