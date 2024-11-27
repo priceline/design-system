@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.24.1",
+      "tag": "pcln-design-system_v6.24.1",
+      "date": "Wed, 27 Nov 2024 15:52:57 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add zindex to IconButton in PasswordInput",
+            "author": "Agustin Bautista <5533800+abautist@users.noreply.github.com>",
+            "commit": "2776d04658b33d3440c29c4da9a5638cef8359bf"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.24.0",
       "tag": "pcln-design-system_v6.24.0",
       "date": "Mon, 25 Nov 2024 19:58:47 GMT",

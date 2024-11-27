@@ -1,6 +1,6 @@
 {
   "name": "pcln-modal",
-  "version": "6.0.54",
+  "version": "6.0.55",
   "description": "React component for modal",
   "license": "MIT",
   "author": "Priceline",
@@ -52,7 +52,7 @@
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-    "pcln-design-system": "^6.24.0",
+    "pcln-design-system": "^6.24.1",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",
     "styled-components": ">=5.3.7 <6",

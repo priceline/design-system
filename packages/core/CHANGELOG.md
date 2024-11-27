@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Mon, 25 Nov 2024 19:58:47 GMT and should not be manually modified.
+This log was last generated on Wed, 27 Nov 2024 15:52:57 GMT and should not be manually modified.
+
+## 6.24.1
+Wed, 27 Nov 2024 15:52:57 GMT
+
+### Patches
+
+- add zindex to IconButton in PasswordInput
 
 ## 6.24.0
 Mon, 25 Nov 2024 19:58:47 GMT
