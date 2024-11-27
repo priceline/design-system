@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Change fragment to div to bypass type errors",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
