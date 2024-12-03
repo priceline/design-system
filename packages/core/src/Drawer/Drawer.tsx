@@ -60,7 +60,7 @@ export const Drawer: React.FC<DrawerProps> = ({
 }) => {
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
   const { snapPosition, handleSnap } = useSnap(snapHeights)
-  const SnapContainer = snapHeights ? motion.div : React.Fragment
+  const SnapContainer = snapHeights ? motion.div : 'div'
 
   return (
     <SnapContainer
