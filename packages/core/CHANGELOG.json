@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.25.0",
+      "tag": "pcln-design-system_v6.25.0",
+      "date": "Wed, 04 Dec 2024 16:48:35 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Change fragment to div to bypass type errors",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "1e915c3408752a85319c0da78ab682ecd2358a71"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.24.1",
       "tag": "pcln-design-system_v6.24.1",
       "date": "Wed, 27 Nov 2024 15:52:57 GMT",
