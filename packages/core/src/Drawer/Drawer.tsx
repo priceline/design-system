@@ -27,8 +27,9 @@ export type DrawerProps = SpaceProps &
     onCollapse?: () => void
     placement?: PlacementOptions
     position?: string
+    zIndex?: number
 
-    // top, middle, bottom - 3 snap points required
+    // 3 snap points relative to the bottom of the viewport
     snapHeights?: [string, string, string]
 
     // When snap enabled, lock-in drawer dimensions
@@ -38,7 +39,10 @@ export type DrawerProps = SpaceProps &
     }
 
     // Disable enter animation to eliminate side effects on viewport change
-    disableEnterAnimation?: false
+    disableEnterAnimation?: boolean
+
+    // Disable vertical length limit constraint to show variable height on smaller devices
+    disableMaxHeight?: boolean
   }
 
 export const Drawer: React.FC<DrawerProps> = ({
@@ -53,13 +57,15 @@ export const Drawer: React.FC<DrawerProps> = ({
   onClose,
   onCollapse,
   placement = 'right',
+  zIndex = 1,
   snapHeights,
   snapDimensions,
   disableEnterAnimation,
+  disableMaxHeight,
   ...props
 }) => {
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
-  const { snapPosition, handleSnap } = useSnap(snapHeights)
+  const { snapPosition, handleSnap } = useSnap(snapHeights, snapDimensions)
   const SnapContainer = snapHeights ? motion.div : 'div'
 
   return (
@@ -80,13 +86,18 @@ export const Drawer: React.FC<DrawerProps> = ({
       dragConstraints={{ top: 0, bottom: 0 }}
       onDragEnd={handleSnap}
       data-testid='snap-container'
+      z-index={zIndex}
     >
       <AnimatePresence>
         {isOpen && (
           <DrawerWrapper
             placement={isMobile ? 'bottom' : placement}
             padding={isFloating ? 3 : 0}
-            maxHeight={isMobile ? ['290px', '400px', '480px', 'calc(100vh - 64px)'] : props.height ?? '100%'}
+            maxHeight={
+              isMobile && !disableMaxHeight
+                ? ['290px', '400px', '480px', 'calc(100vh - 64px)']
+                : props.height ?? '100%'
+            }
             maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
             width={isMobile ? '100%' : props.width}
             {...props}

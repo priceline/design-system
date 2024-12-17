@@ -214,6 +214,18 @@ export const WithContentOverflow = (args) => (
   </DrawerStory>
 )
 
+export const WithNoMaxHeightConstraint = (args) => (
+  <DrawerStory {...args} height='50vh' disableMaxHeight isMobile isFloating={false}>
+    {CustomPennyContent}
+  </DrawerStory>
+)
+
+export const WithMaxHeightConstraint = (args) => (
+  <DrawerStory {...args} height='50vh' isMobile isFloating={false}>
+    {CustomPennyContent}
+  </DrawerStory>
+)
+
 /**
  * Use case for Snap behavior
  */
