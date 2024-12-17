@@ -215,7 +215,7 @@ export const WithContentOverflow = (args) => (
 )
 
 export const CustomMaxHeight = (args) => (
-  <DrawerStory {...args} height='800px' maxHeight={'100px'} isMobile isFloating={false}>
+  <DrawerStory {...args} height='800px' maxHeight='100px' isMobile isFloating={false}>
     {CustomPennyContent}
   </DrawerStory>
 )
