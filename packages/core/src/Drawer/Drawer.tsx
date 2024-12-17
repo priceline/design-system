@@ -29,7 +29,7 @@ export type DrawerProps = SpaceProps &
     position?: string
     zIndex?: number
 
-    // 3 snap points relative to the bottom of the viewport
+    // top, middle (initial position), bottom snap points relative to viewport
     snapHeights?: [string, string, string]
 
     // When snap enabled, lock-in drawer dimensions
