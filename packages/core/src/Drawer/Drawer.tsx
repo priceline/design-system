@@ -81,7 +81,6 @@ export const Drawer: React.FC<DrawerProps> = ({
       transition={{ type: 'spring', bounce: 0 }}
       drag='y'
       dragConstraints={{ top: 0, bottom: 0 }}
-      onDragEnd={handleSnap}
       {...(snapHeights ? { onDragEnd: handleSnap } : {})}
       data-testid='snap-container'
     >
