@@ -14,8 +14,9 @@ export function useSnap(snapHeights, snapDimensions) {
   }
 
   const [TOP, MIDDLE, BOTTOM] = snapHeights
+
   const SCROLL_THRESHOLD = 100
-  const [snapPosition, setSnapPosition] = useState(TOP)
+  const [snapPosition, setSnapPosition] = useState(MIDDLE) // Changed this line
 
   const handleSnap = (...args) => {
     const info = args?.[1]
@@ -26,7 +27,7 @@ export function useSnap(snapHeights, snapDimensions) {
 
     // Scroll down logic
     if (SCROLL_DOWN) {
-      if (snapPosition === TOP) setSnapPosition(MIDDLE)
+      if (snapPosition === TOP) setSnapPosition(MIDDLE) // Changed this line
       if (snapPosition === MIDDLE) setSnapPosition(BOTTOM)
     }
 
@@ -34,6 +35,7 @@ export function useSnap(snapHeights, snapDimensions) {
     else if (SCROLL_UP) {
       if (snapPosition === BOTTOM) setSnapPosition(MIDDLE)
       if (snapPosition === MIDDLE) setSnapPosition(TOP)
+      // Changed this line
     }
   }
 

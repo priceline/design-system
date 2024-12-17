@@ -249,11 +249,12 @@ function DrawerScrollable(props) {
 export const DrawerDragToSnap = () => (
   <DrawerScrollable
     snapHeights={['0%', '-30%', '-70%']}
-    snapDimensions={{ width: '100%', height: '800px' }}
+    snapDimensions={{ width: '100%', height: '400px' }}
     disableEnterAnimation
     isMobile
     isFloating={false}
     heading={NeighborhoodsHeader}
+    height='400px'
   >
     {CustomPennyContent}
   </DrawerScrollable>

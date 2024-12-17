@@ -78,6 +78,7 @@ export const Drawer: React.FC<DrawerProps> = ({
               bottom: snapPosition,
               width: snapDimensions.width,
               height: snapDimensions.height,
+              zIndex: zIndex,
             }
           : {}
       }
@@ -85,8 +86,8 @@ export const Drawer: React.FC<DrawerProps> = ({
       drag='y'
       dragConstraints={{ top: 0, bottom: 0 }}
       onDragEnd={handleSnap}
+      {...(snapHeights ? { onDragEnd: handleSnap } : {})}
       data-testid='snap-container'
-      z-index={zIndex}
     >
       <AnimatePresence>
         {isOpen && (
