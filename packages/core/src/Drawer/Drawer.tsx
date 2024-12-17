@@ -40,9 +40,6 @@ export type DrawerProps = SpaceProps &
 
     // Disable enter animation to eliminate side effects on viewport change
     disableEnterAnimation?: boolean
-
-    // Disable vertical length limit constraint to show variable height on smaller devices
-    disableMaxHeight?: boolean
   }
 
 export const Drawer: React.FC<DrawerProps> = ({
@@ -61,7 +58,6 @@ export const Drawer: React.FC<DrawerProps> = ({
   snapHeights,
   snapDimensions,
   disableEnterAnimation,
-  disableMaxHeight,
   ...props
 }) => {
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
@@ -95,7 +91,9 @@ export const Drawer: React.FC<DrawerProps> = ({
             placement={isMobile ? 'bottom' : placement}
             padding={isFloating ? 3 : 0}
             maxHeight={
-              isMobile && !disableMaxHeight
+              props?.maxHeight
+                ? props.maxHeight
+                : isMobile
                 ? ['290px', '400px', '480px', 'calc(100vh - 64px)']
                 : props.height ?? '100%'
             }

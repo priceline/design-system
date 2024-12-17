@@ -214,14 +214,8 @@ export const WithContentOverflow = (args) => (
   </DrawerStory>
 )
 
-export const WithNoMaxHeightConstraint = (args) => (
-  <DrawerStory {...args} height='50vh' disableMaxHeight isMobile isFloating={false}>
-    {CustomPennyContent}
-  </DrawerStory>
-)
-
-export const WithMaxHeightConstraint = (args) => (
-  <DrawerStory {...args} height='50vh' isMobile isFloating={false}>
+export const CustomMaxHeight = (args) => (
+  <DrawerStory {...args} height='800px' maxHeight={'100px'} isMobile isFloating={false}>
     {CustomPennyContent}
   </DrawerStory>
 )
@@ -248,7 +242,7 @@ function DrawerScrollable(props) {
 
 export const DrawerDragToSnap = () => (
   <DrawerScrollable
-    snapHeights={['0%', '-30%', '-70%']}
+    snapHeights={['20%', '0%', '-20%']}
     snapDimensions={{ width: '100%', height: '400px' }}
     disableEnterAnimation
     isMobile
