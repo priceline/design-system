@@ -8,10 +8,15 @@ import { useState } from 'react'
  *
  * Designed to support 3 snap points.
  */
-export function useSnap(snapHeights) {
-  const [TOP, MIDDLE, BOTTOM] = snapHeights || []
+export function useSnap(snapHeights, snapDimensions) {
+  if (!snapHeights || !snapDimensions) {
+    return { snapPosition: null, handleSnap: () => {} }
+  }
+
+  const [TOP, MIDDLE, BOTTOM] = snapHeights
+
   const SCROLL_THRESHOLD = 100
-  const [snapPosition, setSnapPosition] = useState(TOP)
+  const [snapPosition, setSnapPosition] = useState(MIDDLE)
 
   const handleSnap = (...args) => {
     const info = args?.[1]
