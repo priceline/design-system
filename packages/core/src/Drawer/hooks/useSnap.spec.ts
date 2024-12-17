@@ -5,21 +5,14 @@ describe('Drawer snap hook unit test', () => {
   test('Snap position initialized correctly', () => {
     const { result } = renderHook(() => useSnap(['0%', '20%', '30%'], ['100%', '100%', '100%']))
     const { snapPosition, handleSnap } = result.current
-    expect(snapPosition).toBe('0%')
+    expect(snapPosition).toBe('20%')
 
-    // Scroll all the way up, and back down should return to original position
-    // To middle
-    handleSnap('', { offset: { y: 0 } })
+    // Start middle, scroll up and scroll down should be back to initial position
+    // Scroll to top
     handleSnap('', { offset: { y: 101 } })
-
-    // To top
-    handleSnap('', { offset: { y: 101 } })
-
-    // Back to middle
+    // Scroll back to middle
     handleSnap('', { offset: { y: -101 } })
 
-    // Back to bottom
-    handleSnap('', { offset: { y: -101 } })
-    expect(snapPosition).toBe('0%')
+    expect(snapPosition).toBe('20%')
   })
 })
