@@ -1,6 +1,14 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 04 Dec 2024 16:48:35 GMT and should not be manually modified.
+This log was last generated on Wed, 18 Dec 2024 13:37:30 GMT and should not be manually modified.
+
+## 6.25.1
+Wed, 18 Dec 2024 13:37:30 GMT
+
+### Patches
+
+- Add prop to disable max height, add z-index to outer container, add error handling to snap hook
+- Remove old snap handler logic
 
 ## 6.25.0
 Wed, 04 Dec 2024 16:48:35 GMT
