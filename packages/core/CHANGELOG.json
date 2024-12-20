@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.25.2",
+      "tag": "pcln-design-system_v6.25.2",
+      "date": "Fri, 20 Dec 2024 16:49:46 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Differentiate pointer type on scroll vs drag action",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "4f0fa6adf6f28b57c6f29db26c2f63e93a29565a"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.25.1",
       "tag": "pcln-design-system_v6.25.1",
       "date": "Wed, 18 Dec 2024 13:37:30 GMT",

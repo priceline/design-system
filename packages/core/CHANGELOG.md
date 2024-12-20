@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 18 Dec 2024 13:37:30 GMT and should not be manually modified.
+This log was last generated on Fri, 20 Dec 2024 16:49:46 GMT and should not be manually modified.
+
+## 6.25.2
+Fri, 20 Dec 2024 16:49:46 GMT
+
+### Patches
+
+- Differentiate pointer type on scroll vs drag action
 
 ## 6.25.1
 Wed, 18 Dec 2024 13:37:30 GMT

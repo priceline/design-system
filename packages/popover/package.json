@@ -1,6 +1,6 @@
 {
   "name": "pcln-popover",
-  "version": "6.1.38",
+  "version": "6.1.39",
   "description": "React component for popover",
   "license": "MIT",
   "author": "Priceline",
@@ -61,7 +61,7 @@
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
-    "pcln-design-system": "^6.25.1",
+    "pcln-design-system": "^6.25.2",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",
     "styled-components": ">=5.3.7 <6",
