@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Differentiate pointer events to avoid drag/scroll conflicts on content vs container",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
