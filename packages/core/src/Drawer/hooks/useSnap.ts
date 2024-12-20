@@ -19,22 +19,43 @@ export function useSnap(snapHeights, snapDimensions) {
   const [snapPosition, setSnapPosition] = useState(MIDDLE)
 
   const handleSnap = (...args) => {
+    const pointerType = args?.[0]?.pointerType // mouse, touch, etc.
+    const type = args?.[0]?.type // click, pointerup (drag), pointercancel (scroll)
     const info = args?.[1]
     const scrollOffset = info.offset.y
 
     const SCROLL_DOWN = scrollOffset > SCROLL_THRESHOLD
     const SCROLL_UP = scrollOffset < -SCROLL_THRESHOLD
 
-    // Scroll down logic
-    if (SCROLL_DOWN) {
-      if (snapPosition === TOP) setSnapPosition(MIDDLE)
-      if (snapPosition === MIDDLE) setSnapPosition(BOTTOM)
-    }
+    /**
+     * Differentiating between content scrolling and container dragging on mobile:
+     *
+     * 1. Content scrolling:
+     *    - Triggered by touch events
+     *    - Has a 'pointercancel' event type
+     *
+     * 2. Container dragging:
+     *    - Should not occur accidentally during content scrolling
+     *    - Has a 'pointerup' event type
+     *
+     * To prevent unintended container dragging, we only allow
+     * dragging when the event type is specifically 'pointerup'.
+     * This ensures smooth content scrolling without accidental
+     * container movement.
+     */
 
-    // Scroll up logic
-    else if (SCROLL_UP) {
-      if (snapPosition === BOTTOM) setSnapPosition(MIDDLE)
-      if (snapPosition === MIDDLE) setSnapPosition(TOP)
+    if (pointerType === 'touch' && type === 'pointerup') {
+      // Scroll down logic
+      if (SCROLL_DOWN) {
+        if (snapPosition === TOP) setSnapPosition(MIDDLE)
+        if (snapPosition === MIDDLE) setSnapPosition(BOTTOM)
+      }
+
+      // Scroll up logic
+      else if (SCROLL_UP) {
+        if (snapPosition === BOTTOM) setSnapPosition(MIDDLE)
+        if (snapPosition === MIDDLE) setSnapPosition(TOP)
+      }
     }
   }
 
