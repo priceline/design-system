@@ -13,6 +13,11 @@ import { getDragToDismissAnimation, getDividerStyle, getEnterAnimation } from '.
 
 export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
 
+export interface SnapPositionChangeParams {
+  prevSnapPosition: string
+  currSnapPosition: string
+}
+
 export type DrawerProps = SpaceProps &
   LayoutProps & {
     children?: React.ReactNode
@@ -38,6 +43,9 @@ export type DrawerProps = SpaceProps &
       height?: string
     }
 
+    // Allow external apps to action on snap state change
+    onSnapPositionChange?: (params: SnapPositionChangeParams) => void
+
     // Disable enter animation to eliminate side effects on viewport change
     disableEnterAnimation?: boolean
   }
@@ -57,11 +65,12 @@ export const Drawer: React.FC<DrawerProps> = ({
   zIndex = 1,
   snapHeights,
   snapDimensions,
+  onSnapPositionChange = () => {},
   disableEnterAnimation,
   ...props
 }) => {
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
-  const { snapPosition, handleSnap } = useSnap(snapHeights, snapDimensions)
+  const { snapPosition, handleSnap } = useSnap(snapHeights, snapDimensions, onSnapPositionChange)
   const SnapContainer = snapHeights ? motion.div : 'div'
 
   return (
@@ -93,8 +102,8 @@ export const Drawer: React.FC<DrawerProps> = ({
               props?.maxHeight
                 ? props.maxHeight
                 : isMobile
-                ? ['290px', '400px', '480px', 'calc(100vh - 64px)']
-                : props.height ?? '100%'
+                  ? ['290px', '400px', '480px', 'calc(100vh - 64px)']
+                  : (props.height ?? '100%')
             }
             maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
             width={isMobile ? '100%' : props.width}

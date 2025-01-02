@@ -228,12 +228,27 @@ const StyledContainer = styled(Box)`
 `
 
 function DrawerScrollable(props) {
+  const [snapState, setSnapState] = useState({ prevSnapPosition: 'NONE', currSnapPosition: 'MIDDLE' })
+
+  const handleSnapStateChange = ({
+    prevSnapPosition,
+    currSnapPosition,
+  }: {
+    prevSnapPosition: string
+    currSnapPosition: string
+  }) => {
+    setSnapState({ prevSnapPosition, currSnapPosition })
+  }
+
   return (
     <StyledContainer
       height='100vh'
       style={{ backgroundColor: 'grey', height: '100vh', position: 'relative' }}
     >
-      <Drawer heading='Header' isOpen={true} {...props}>
+      <Text>Note: Mobile only feature - Please test on browser iOS/android device emulator</Text>
+      <Text>Previous position: {snapState.prevSnapPosition}</Text>
+      <Text>Current position: {snapState.currSnapPosition}</Text>
+      <Drawer heading='Header' isOpen={true} {...props} onSnapPositionChange={handleSnapStateChange}>
         {props.children}
       </Drawer>
     </StyledContainer>
