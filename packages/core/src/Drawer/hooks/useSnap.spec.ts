@@ -4,7 +4,7 @@ import { renderHook } from '@testing-library/react'
 describe('Drawer snap hook unit test', () => {
   const snapHeights = ['20%', '0%', '20%']
   const snapDimensions = ['100%', '100%', '100%']
-  const { result } = renderHook(() => useSnap(snapHeights, snapDimensions))
+  const { result } = renderHook(() => useSnap(snapHeights, snapDimensions, () => {}))
   const { snapPosition, handleSnap } = result.current
   test('Snap position initialized correctly', () => {
     // Start middle, scroll up and scroll down should be back to initial position

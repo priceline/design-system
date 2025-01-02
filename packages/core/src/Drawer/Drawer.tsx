@@ -13,7 +13,7 @@ import { getDragToDismissAnimation, getDividerStyle, getEnterAnimation } from '.
 
 export type PlacementOptions = 'top' | 'bottom' | 'right' | 'left'
 
-export interface SnapPositionChangeParams {
+export type SnapPositionChangeParams = {
   prevSnapPosition: string
   currSnapPosition: string
 }
