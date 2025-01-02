@@ -65,7 +65,7 @@ export const Drawer: React.FC<DrawerProps> = ({
   zIndex = 1,
   snapHeights,
   snapDimensions,
-  onSnapPositionChange = () => {},
+  onSnapPositionChange,
   disableEnterAnimation,
   ...props
 }) => {
