@@ -13,7 +13,7 @@ describe('useSnap', () => {
   it('should handle scrolling down from MIDDLE to TOP', () => {
     const { result } = renderHook(() => useSnap(snapHeights, snapDimensions, mockOnSnapPositionChange))
 
-    // First, scroll top bottom
+    // First, scroll to bottom
     act(() => {
       result.current.handleSnap(
         { pointerType: 'touch', type: 'pointerup' },
@@ -42,7 +42,7 @@ describe('useSnap', () => {
   it('should handle scrolling up from MIDDLE to BOTTOM', () => {
     const { result } = renderHook(() => useSnap(snapHeights, snapDimensions, mockOnSnapPositionChange))
 
-    // First, scroll to TOP
+    // First, scroll to top
     act(() => {
       result.current.handleSnap({ pointerType: 'touch', type: 'pointerup' }, { offset: { y: -101 } })
     })
