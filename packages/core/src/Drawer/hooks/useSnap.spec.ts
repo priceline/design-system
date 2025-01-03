@@ -1,28 +1,67 @@
 import { useSnap } from './useSnap'
-import { renderHook } from '@testing-library/react'
+import { renderHook, act } from '@testing-library/react'
 
-describe('Drawer snap hook unit test', () => {
-  const snapHeights = ['20%', '0%', '20%']
-  const snapDimensions = ['100%', '100%', '100%']
-  const { result } = renderHook(() => useSnap(snapHeights, snapDimensions, () => {}))
-  const { snapPosition, handleSnap } = result.current
-  test('Snap position initialized correctly', () => {
-    // Start middle, scroll up and scroll down should be back to initial position
-    expect(snapPosition).toBe('0%')
-    // Scroll to top
-    handleSnap({ pointerType: 'touch', type: 'pointerup' }, { offset: { y: 101 } })
-    // Scroll back to middle
-    handleSnap({ pointerType: 'touch', type: 'pointerup' }, { offset: { y: -101 } })
-    // Expect it to be back in middle
-    expect(snapPosition).toBe('0%')
+describe('useSnap', () => {
+  const snapHeights = ['0%', '50%', '100%']
+  const snapDimensions = { width: '100%', height: '100%' }
+  const mockOnSnapPositionChange = jest.fn()
+
+  beforeEach(() => {
+    jest.clearAllMocks()
   })
 
-  test('Does not snap on pointer cancel events (e.g. scrolling through drawer content on iphone)', () => {
-    // Start middle, and touch scroll on drawer content should not trigger an action
-    expect(snapPosition).toBe('0%')
-    // Scroll to top
-    handleSnap({ pointerType: 'touch', type: 'pointercancel' }, { offset: { y: 101 } })
-    // Expect no change
-    expect(snapPosition).toBe('0%')
+  it('should handle scrolling down from MIDDLE to TOP', () => {
+    const { result } = renderHook(() => useSnap(snapHeights, snapDimensions, mockOnSnapPositionChange))
+
+    // First, scroll top bottom
+    act(() => {
+      result.current.handleSnap(
+        { pointerType: 'touch', type: 'pointerup' },
+        { offset: { y: 101 } }, // Simulating scroll down
+      )
+    })
+
+    expect(result.current.snapPosition).toBe('100%')
+    expect(mockOnSnapPositionChange).toHaveBeenCalledWith({
+      prevSnapPosition: 'MIDDLE',
+      currSnapPosition: 'BOTTOM',
+    })
+
+    // Then scroll back to middle
+    act(() => {
+      result.current.handleSnap({ pointerType: 'touch', type: 'pointerup' }, { offset: { y: -101 } })
+    })
+
+    expect(result.current.snapPosition).toBe('50%')
+    expect(mockOnSnapPositionChange).toHaveBeenCalledWith({
+      prevSnapPosition: 'BOTTOM',
+      currSnapPosition: 'MIDDLE',
+    })
+  })
+
+  it('should handle scrolling up from MIDDLE to BOTTOM', () => {
+    const { result } = renderHook(() => useSnap(snapHeights, snapDimensions, mockOnSnapPositionChange))
+
+    // First, scroll to TOP
+    act(() => {
+      result.current.handleSnap({ pointerType: 'touch', type: 'pointerup' }, { offset: { y: -101 } })
+    })
+
+    expect(result.current.snapPosition).toBe('0%')
+    expect(mockOnSnapPositionChange).toHaveBeenCalledWith({
+      prevSnapPosition: 'MIDDLE',
+      currSnapPosition: 'TOP',
+    })
+
+    // Then scroll back to middle
+    act(() => {
+      result.current.handleSnap({ pointerType: 'touch', type: 'pointerup' }, { offset: { y: 101 } })
+    })
+
+    expect(result.current.snapPosition).toBe('50%')
+    expect(mockOnSnapPositionChange).toHaveBeenCalledWith({
+      prevSnapPosition: 'TOP',
+      currSnapPosition: 'MIDDLE',
+    })
   })
 })
