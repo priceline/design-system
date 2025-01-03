@@ -1,4 +1,4 @@
-/* c8 ignore next */
+/* c8 ignore file */
 import { useState } from 'react'
 
 /**
