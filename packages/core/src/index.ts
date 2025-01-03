@@ -73,7 +73,7 @@ export {
   type DotLoaderSizes,
   type DotLoaderSpeeds,
 } from './DotLoader/DotLoader'
-export { Drawer, type DrawerProps, type PlacementOptions } from './Drawer/Drawer'
+export { Drawer, type DrawerProps, type PlacementOptions, type SnapPositionChangeParams } from './Drawer/Drawer'
 export { Flag, type FlagProps } from './Flag/Flag'
 export { Flex, type FlexProps } from './Flex/Flex'
 export {

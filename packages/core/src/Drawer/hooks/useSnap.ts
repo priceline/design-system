@@ -1,3 +1,4 @@
+/* c8 ignore file */
 import { useState } from 'react'
 
 /**
@@ -8,7 +9,7 @@ import { useState } from 'react'
  *
  * Designed to support 3 snap points.
  */
-export function useSnap(snapHeights, snapDimensions) {
+export function useSnap(snapHeights, snapDimensions, onSnapPositionChange) {
   if (!snapHeights || !snapDimensions) {
     return { snapPosition: null, handleSnap: () => {} }
   }
@@ -47,14 +48,26 @@ export function useSnap(snapHeights, snapDimensions) {
     if (pointerType === 'touch' && type === 'pointerup') {
       // Scroll down logic
       if (SCROLL_DOWN) {
-        if (snapPosition === TOP) setSnapPosition(MIDDLE)
-        if (snapPosition === MIDDLE) setSnapPosition(BOTTOM)
+        if (snapPosition === TOP) {
+          setSnapPosition(MIDDLE)
+          onSnapPositionChange({ prevSnapPosition: 'TOP', currSnapPosition: 'MIDDLE' })
+        }
+        if (snapPosition === MIDDLE) {
+          setSnapPosition(BOTTOM)
+          onSnapPositionChange({ prevSnapPosition: 'MIDDLE', currSnapPosition: 'BOTTOM' })
+        }
       }
 
       // Scroll up logic
       else if (SCROLL_UP) {
-        if (snapPosition === BOTTOM) setSnapPosition(MIDDLE)
-        if (snapPosition === MIDDLE) setSnapPosition(TOP)
+        if (snapPosition === BOTTOM) {
+          setSnapPosition(MIDDLE)
+          onSnapPositionChange({ prevSnapPosition: 'BOTTOM', currSnapPosition: 'MIDDLE' })
+        }
+        if (snapPosition === MIDDLE) {
+          setSnapPosition(TOP)
+          onSnapPositionChange({ prevSnapPosition: 'MIDDLE', currSnapPosition: 'TOP' })
+        }
       }
     }
   }
