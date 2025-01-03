@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 20 Dec 2024 16:49:46 GMT and should not be manually modified.
+This log was last generated on Fri, 03 Jan 2025 17:58:07 GMT and should not be manually modified.
+
+## 6.25.3
+Fri, 03 Jan 2025 17:58:07 GMT
+
+### Patches
+
+- Add drawer snap state change event listener
 
 ## 6.25.2
 Fri, 20 Dec 2024 16:49:46 GMT

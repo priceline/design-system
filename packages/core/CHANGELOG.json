@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.25.3",
+      "tag": "pcln-design-system_v6.25.3",
+      "date": "Fri, 03 Jan 2025 17:58:07 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add drawer snap state change event listener",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "2c29662efc469553e941f1aadec3a019305300a3"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.25.2",
       "tag": "pcln-design-system_v6.25.2",
       "date": "Fri, 20 Dec 2024 16:49:46 GMT",

@@ -1,6 +1,11 @@
 # Change Log - pcln-autocomplete
 
-This log was last generated on Fri, 20 Dec 2024 16:49:46 GMT and should not be manually modified.
+This log was last generated on Fri, 03 Jan 2025 17:58:07 GMT and should not be manually modified.
+
+## 6.0.55
+Fri, 03 Jan 2025 17:58:07 GMT
+
+_Version update only_
 
 ## 6.0.54
 Fri, 20 Dec 2024 16:49:46 GMT
