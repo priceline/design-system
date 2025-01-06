@@ -4,11 +4,11 @@ import { LogoImage } from './LogoImage'
 export default {
   title: 'LogoImage',
   component: LogoImage,
-  argTypes: {
-    size: {
-      control: {
-        type: 'select',
-        options: ['small', 'medium'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Simple styled Image component that accepts an image url, alt text, and one of two preset sizes. Primarily used for Logos',
       },
     },
   },
