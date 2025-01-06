@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Create new LogoImage component",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
