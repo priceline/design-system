@@ -21,7 +21,10 @@ const ImageWrapper = styled(Image)`
   margin: auto;
 `
 
-type Size = 'small' | 'medium'
+/**
+ * @public
+ */
+export type Size = 'small' | 'medium'
 
 /**
  * @public

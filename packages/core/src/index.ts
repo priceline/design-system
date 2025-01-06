@@ -115,7 +115,7 @@ export {
   type ListListStyle,
   type ListProps,
 } from './List/List'
-export { LogoImage, type LogoImageProps } from './LogoImage/LogoImage'
+export { LogoImage, type LogoImageProps, type Size } from './LogoImage/LogoImage'
 export { Motion, type MotionProps } from './Motion/Motion'
 export { PasswordInput, type PasswordInputProps } from './PasswordInput/PasswordInput'
 export { PlaceholderImage, type PlaceholderImageProps } from './PlaceholderImage/PlaceholderImage'
