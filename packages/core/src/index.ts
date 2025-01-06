@@ -73,7 +73,12 @@ export {
   type DotLoaderSizes,
   type DotLoaderSpeeds,
 } from './DotLoader/DotLoader'
-export { Drawer, type DrawerProps, type PlacementOptions, type SnapPositionChangeParams } from './Drawer/Drawer'
+export {
+  Drawer,
+  type DrawerProps,
+  type PlacementOptions,
+  type SnapPositionChangeParams,
+} from './Drawer/Drawer'
 export { Flag, type FlagProps } from './Flag/Flag'
 export { Flex, type FlexProps } from './Flex/Flex'
 export {
@@ -110,6 +115,7 @@ export {
   type ListListStyle,
   type ListProps,
 } from './List/List'
+export { LogoImage, type LogoImageProps } from './LogoImage/LogoImage'
 export { Motion, type MotionProps } from './Motion/Motion'
 export { PasswordInput, type PasswordInputProps } from './PasswordInput/PasswordInput'
 export { PlaceholderImage, type PlaceholderImageProps } from './PlaceholderImage/PlaceholderImage'
