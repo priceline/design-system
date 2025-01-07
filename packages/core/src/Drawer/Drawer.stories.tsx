@@ -245,7 +245,6 @@ function DrawerScrollable(props) {
       height='100vh'
       style={{ backgroundColor: 'grey', height: '100vh', position: 'relative' }}
     >
-      <Text>Note: Mobile only feature - Please test on browser iOS/android device emulator</Text>
       <Text>Previous position: {snapState.prevSnapPosition}</Text>
       <Text>Current position: {snapState.currSnapPosition}</Text>
       <Drawer heading='Header' isOpen={true} {...props} onSnapPositionChange={handleSnapStateChange}>
