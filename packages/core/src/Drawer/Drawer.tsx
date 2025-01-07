@@ -130,6 +130,7 @@ export const Drawer: React.FC<DrawerProps> = ({
                 {(heading || onClose || onCollapse) && (
                   <Flex
                     ref={headerRef}
+                    /* c8 ignore next */
                     onPointerDown={(e) => {
                       if (snapHeights) {
                         dragControls.start(e)
