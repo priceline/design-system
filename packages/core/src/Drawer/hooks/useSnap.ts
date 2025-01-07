@@ -20,8 +20,6 @@ export function useSnap(snapHeights, snapDimensions, onSnapPositionChange) {
   const [snapPosition, setSnapPosition] = useState(MIDDLE)
 
   const handleSnap = (...args) => {
-    const pointerType = args?.[0]?.pointerType // mouse, touch, etc.
-    const type = args?.[0]?.type // click, pointerup (drag), pointercancel (scroll)
     const info = args?.[1]
     const scrollOffset = info.offset.y
 
@@ -45,29 +43,27 @@ export function useSnap(snapHeights, snapDimensions, onSnapPositionChange) {
      * container movement.
      */
 
-    if (pointerType === 'touch' && type === 'pointerup') {
-      // Scroll down logic
-      if (SCROLL_DOWN) {
-        if (snapPosition === TOP) {
-          setSnapPosition(MIDDLE)
-          onSnapPositionChange({ prevSnapPosition: 'TOP', currSnapPosition: 'MIDDLE' })
-        }
-        if (snapPosition === MIDDLE) {
-          setSnapPosition(BOTTOM)
-          onSnapPositionChange({ prevSnapPosition: 'MIDDLE', currSnapPosition: 'BOTTOM' })
-        }
+    // Scroll down logic
+    if (SCROLL_DOWN) {
+      if (snapPosition === TOP) {
+        setSnapPosition(MIDDLE)
+        onSnapPositionChange({ prevSnapPosition: 'TOP', currSnapPosition: 'MIDDLE' })
       }
+      if (snapPosition === MIDDLE) {
+        setSnapPosition(BOTTOM)
+        onSnapPositionChange({ prevSnapPosition: 'MIDDLE', currSnapPosition: 'BOTTOM' })
+      }
+    }
 
-      // Scroll up logic
-      else if (SCROLL_UP) {
-        if (snapPosition === BOTTOM) {
-          setSnapPosition(MIDDLE)
-          onSnapPositionChange({ prevSnapPosition: 'BOTTOM', currSnapPosition: 'MIDDLE' })
-        }
-        if (snapPosition === MIDDLE) {
-          setSnapPosition(TOP)
-          onSnapPositionChange({ prevSnapPosition: 'MIDDLE', currSnapPosition: 'TOP' })
-        }
+    // Scroll up logic
+    else if (SCROLL_UP) {
+      if (snapPosition === BOTTOM) {
+        setSnapPosition(MIDDLE)
+        onSnapPositionChange({ prevSnapPosition: 'BOTTOM', currSnapPosition: 'MIDDLE' })
+      }
+      if (snapPosition === MIDDLE) {
+        setSnapPosition(TOP)
+        onSnapPositionChange({ prevSnapPosition: 'MIDDLE', currSnapPosition: 'TOP' })
       }
     }
   }

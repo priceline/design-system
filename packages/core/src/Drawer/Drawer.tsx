@@ -4,7 +4,7 @@ import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
 import { DrawerRoot, DrawerWrapper, HeaderButton } from './Drawer.styled'
 import { ChevronDown, Close } from 'pcln-icons'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion, useDragControls } from 'framer-motion'
 import { SpaceProps, LayoutProps } from 'styled-system'
 import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
 import { theme } from '../theme'
@@ -72,6 +72,8 @@ export const Drawer: React.FC<DrawerProps> = ({
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
   const { snapPosition, handleSnap } = useSnap(snapHeights, snapDimensions, onSnapPositionChange)
   const SnapContainer = snapHeights ? motion.div : 'div'
+  const headerRef = React.useRef(null)
+  const dragControls = useDragControls()
 
   return (
     <SnapContainer
@@ -92,6 +94,8 @@ export const Drawer: React.FC<DrawerProps> = ({
       dragConstraints={{ top: 0, bottom: 0 }}
       {...(snapHeights ? { onDragEnd: handleSnap } : {})}
       data-testid='snap-container'
+      dragControls={dragControls}
+      dragListener={false}
     >
       <AnimatePresence>
         {isOpen && (
@@ -124,7 +128,17 @@ export const Drawer: React.FC<DrawerProps> = ({
             >
               <Flex flexDirection='column'>
                 {(heading || onClose || onCollapse) && (
-                  <Flex flexDirection='column'>
+                  <Flex
+                    ref={headerRef}
+                    onPointerDown={(e) => {
+                      if (snapHeights) {
+                        dragControls.start(e)
+                      }
+                    }}
+                    flexDirection='column'
+                    style={{ touchAction: 'none' }}
+                    data-testid='drawer-header-container'
+                  >
                     <Flex flexDirection='row' p={3}>
                       {typeof heading === 'string' ? (
                         <Text width='100%' textStyle='heading4'>
