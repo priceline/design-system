@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.25.4",
+      "tag": "pcln-design-system_v6.25.4",
+      "date": "Tue, 07 Jan 2025 16:55:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Drawer is now draggable when user only drags the header, not the content",
+            "author": "Kevin <83264008+coolestKev@users.noreply.github.com>",
+            "commit": "46130fed1ad43c2e3f8e86b2c68cd9ad1c630b07"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.25.3",
       "tag": "pcln-design-system_v6.25.3",
       "date": "Fri, 03 Jan 2025 17:58:07 GMT",

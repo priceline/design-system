@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Fri, 03 Jan 2025 17:58:07 GMT and should not be manually modified.
+This log was last generated on Tue, 07 Jan 2025 16:55:52 GMT and should not be manually modified.
+
+## 6.25.4
+Tue, 07 Jan 2025 16:55:52 GMT
+
+### Patches
+
+- Drawer is now draggable when user only drags the header, not the content
 
 ## 6.25.3
 Fri, 03 Jan 2025 17:58:07 GMT
